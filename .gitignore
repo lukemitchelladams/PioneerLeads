@@ -1,0 +1,11 @@
+# local secrets
+.env
+*.key
+# downloaded solicitation docs are fine to commit, but not huge binaries over 50MB
+# python
+__pycache__/
+*.pyc
+.venv/
+# os
+.DS_Store
+Thumbs.db
