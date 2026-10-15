@@ -1,0 +1,3999 @@
+REQUEST FOR PROPOSALS
+
+2027 HVAC Preventive Maintenance and Service
+
+Tuesday, September 1, 2026
+
+Proposals due by Thursday, September 24, 2026 @ 11:00am MT
+
+TABLE OF CONTENTS
+
+TABLE OF CONTENTS ............................................................................................................................................ 2 REQUEST FOR PROPOSALS .................................................................................................................................. 3 INSTRUCTIONS FOR BIDDERS ............................................................................................................................. 8 BID BOND ................................................................................................................. Error\! Bookmark not defined. BIDDER'S QUALIFICATIONS AND DATA ........................................................................................................ 20 SUBCONTRACTORS AND RELATED DATA .................................................................................................... 25 BID PROPOSAL ....................................................................................................................................................... 26 SERVICES CONTRACT (Template) ...................................................................................................................... 30 TOWN OF ESTES PARK, COLORADO SERVICES CONTRACT .................................................................. 30 GENERAL CONDITIONS ....................................................................................................................................... 40 SPECIAL CONDITIONS ......................................................................................................................................... 89
+
+Town of Estes Park Services Contract -- Page 2 of 89
+
+REQUEST FOR PROPOSALS
+
+PROJECT: 2027 HVAC Preventive Maintenance and Service
+
+SCOPE: The Contractor will supply professional services for the HVAC Maintenance and
+
+Service of 19 Town of Estes Park facilities in accordance with all applicable laws, rules,
+
+regulations and regulatory agencies, including but not limited to the United States Environmental
+
+Protection Agency (USEPA), and the Colorado Department of Public Health and Environment.
+
+See Scope of Services (Exhibit A) for detailed information.
+
+General Conditions (Division 01):
+
+• The Contractor will be responsible for the following:
+
+o Mobilization of equipment and personnel
+
+o Provide Performance, Labor/Materials Bonds, proof of insurance
+
+o Obtain all required permits; coordinate inspections as required, and address any
+
+corrective actions noted
+
+o Construction/Site Management (including safe working conditions)
+
+o Administrative duties
+
+o Warranty of materials and workmanship for one (1) year
+
+o Final site clean
+
+o Timely communications and status updates throughout the duration of the project
+
+o Overhead and Profit
+
+o All work to be performed in accordance with current local, state, and federal codes
+
+Terms of Contract
+
+The contract term resulting from this Request for Proposal shall commence on January 1, 2027,
+
+and shall continue through December 31, 2027. There will be an option of four (4) additional
+
+renewals, on an annual basis, as funding allows, upon agreement of both parties.
+
+The Town of Estes Park (TOEP) will generate the Services Contract in accordance with TOEP
+
+policy (See Services Contract template).
+
+Town of Estes Park Services Contract -- Page 3 of 89
+
+Funding / Permits
+
+This work will be funded as part of the 2027 General Funds Operating Budget.
+
+Any permits required will be the responsibility of the contractor to obtain. Any permit-
+
+related inspections, coordination or corrective actions will be the responsibility of the
+
+contractor.
+
+The Town of Estes Park, Colorado will receive sealed Proposals for the 2027 HVAC Preventive
+
+Maintenance and Service until Thursday, September 24, 2026.
+
+Bids may be submitted via one of the following methods:
+
+1\. ‘BidNet’: Response to the solicitation on Rocky Mountain E-Purchasing System
+
+(www.rockymountainbidsystem.com); or
+
+2\. Email to the Facilities Manager, Robert Schumake at rschumaker@estes.org
+
+Hand Delivered or Late bids will not be accepted or considered.
+
+The Bidding Documents are available on www.rockymountainbidsystem.com as well as on the
+
+Town’s website at www.estes.org/rfp. Interested bidders are responsible for verifying receipt of
+
+all applicable documentation, including any associated addenda. The Town of Estes Park cannot
+
+guarantee accurate information obtained from sources other than BidNet.
+
+Bid Schedule / Cost Proposal
+
+The contractor shall submit a lump sum cost proposal explaining the work to be performed for
+
+the locations, services and frequencies described in Attachment A – Scope of Services.
+
+Included in the proposal shall be a line item(s) for hourly rates for emergency/after-hours service
+
+calls.
+
+Town of Estes Park Services Contract -- Page 4 of 89
+
+SCHEDULE OF ACTIVITES: (subject to change)
+
+Event Start Date End Date
+
+Request for Proposal (ITB)
+
+Available Tuesday, September 1, 2026 Tuesday, September 1, 2026 Pre-Bid Conference (11:00AM
+
+MT) Tuesday, September 8, 2026 Tuesday, September 8, 2026 Deadline for Questions (5:00PM
+
+MT) Tuesday, September 15, 2026 Tuesday, September 15, 2026
+
+Final Addenda Issued Thursday, September 17, 2026 Thursday, September 17, 2026
+
+Proposals Due (11:00AM MT) Thursday, September 24, 2026 Thursday, September 24, 2026 Bid Evaluations & Contract
+
+Preparation (Notices of
+
+Award/Declination) Friday, September 25, 2026 Monday, November 2, 2026
+
+Town Board Approval (tentative) Tuesday, November 10, 2026 Tuesday, November 10, 2026
+
+Notice to Proceed Wednesday, November 11, 2026 Wednesday, November 11, 2026 Pre-Construction Meeting (TBD;
+
+if applicable) Thursday, November 12, 2026 Thursday, November 19, 2026
+
+PRE-BID MEETING
+
+A Mandatory PRE-BID CONFERENCE will be held IN-PERSON on-site at 11:00 a.m. (MT)
+
+on Tuesday, September 8, 2026.
+
+Estes Park Town Hall (Main Atrium)
+
+170 MacGregor Ave
+
+Estes Park, CO 80517
+
+During this pre-bid meeting, staff will take attendees to a few of the more complex sites for
+
+orientation. This will allow all interested parties the opportunity to see all existing interior and
+
+exterior conditions, ask any clarifying questions regarding the proposed scope of work, and gain a
+
+better comprehensive understanding of the desired outcome of this project.
+
+All comments, questions/answers and clarifications during this pre-bid meeting will be
+
+summarized and distributed (via BidNet and the Town website) in the form of an addendum.
+
+Town of Estes Park Services Contract -- Page 5 of 89
+
+Prospective offerors may also submit any additional written inquiries concerning the requirements
+
+of this solicitation to Robert Schumaker via BidNet or e-mail (rschumaker@estes.org) by 5:00 p.m
+
+Tuesday, September 15, 2026. Offerors are reminded that any changes to the Request for Proposal
+
+will be by written addenda only and nothing stated verbally shall change or qualify in any way any
+
+of the provisions in the Request for Proposal and shall not be binding on the TOEP.
+
+All proposals must be submitted to the Facilities Manager by 11:00 AM (MT) on Thursday,
+
+September 24, 2026. Proposals must be submitted through one of the following means:
+
+A. ‘BidNet’: Response to the solicitation on Rocky Mountain E-Purchasing System
+
+(www.rockymountainbidsystem.com); or
+
+B. Email to Robert Schumaker, Facilities Manager (rschumaker@estes.org)
+
+a. Subject line: Estes Park HVAC Service and Maintenance Proposal
+
+The successful Bidder shall provide the Town with a Certificate of Insurance naming the Town of
+
+Estes Park as an additional insured for all policies required in the General and Special Conditions,
+
+a Statement of Liability and Indemnity, and with proof of Workers' Compensation coverage.
+
+If awarded the Bid, a Performance Bond and a Labor and Material Payment Bond are required
+
+within ten days of the date the written Notice of Award, each for the total amount of the Contract
+
+Price.
+
+No Bidder may withdraw a proposal for a period of thirty days after the date of submission.
+
+The Town of Estes Park reserves the right to cancel this Request for Proposal; reject any Bid, in
+
+whole or in part; to adjust the quantity of Work to be done as mandated by budgetary requirements;
+
+and to waive informalities or irregularities in the Bids received, when it is in the Town's best
+
+interest to do so.
+
+Town of Estes Park Services Contract -- Page 6 of 89
+
+Document Accessibility Compliance Requirement
+
+In accordance with State of Colorado law (House Bill 21-1110 and Senate Bill 23-244), all vendors
+
+submitting proposals in response to this Request for Proposals (RFP) must ensure that any
+
+documents submitted as part of the proposal process, and any deliverables provided under any
+
+resulting contract, are fully compliant with the State of Colorado’s Technology Accessibility
+
+Standards.
+
+TOWN OF ESTES PARK
+
+Robert Schumaker
+
+Facilities Manager
+
+Town of Estes Park
+
+Public Works Department
+
+170 MacGregor Ave
+
+Estes Park, CO 80517
+
+970-577-3576
+
+rschumaker@estes.org
+
+Town of Estes Park Services Contract -- Page 7 of 89
+
+INSTRUCTIONS FOR BIDDERS
+
+SUBMISSION OF BIDS
+
+Attendance at the mandatory pre-bid meeting and the following documents are required to be
+
+submitted for a proposal to be considered:
+
+• Bid Bond Form
+
+• Bidder Qualifications and Data Form
+
+• Subcontractors and Related Data Form
+
+• Bid Proposal Form
+
+Sealed Bids will be received by the means listed in the Request for Proposal (BidNet, e-mail, and
+
+hand delivery). Timely delivery of Bids is the Bidder's responsibility and Bids received after the
+
+time and date indicated in the Request for Proposal will not be accepted.
+
+Hand delivered, late oral, telephone or fax Bids are invalid and will not receive consideration. On
+
+occasion, an exception to this procedure may be made. The Facilities Manager may make an
+
+exception under extreme circumstances, in the Manager's sole discretion.
+
+No Bid alterations or interlineations will be permitted, unless made before submission and
+
+initialed and dated. If initialed, the Town may require the Bidder to identify the alteration so
+
+initialed.
+
+In the Case of No Bid, please return your Bidding Documents indicating No Bid on the form and
+
+on the outside of the return envelope.
+
+BIDDING DOCUMENTS
+
+The following documents constitute the Bidding Documents for this project:
+
+1\. Request for Proposal
+
+2\. Instructions for Bidders
+
+3\. Bid Bond
+
+4\. Bidder’s Qualifications and Data
+
+Town of Estes Park Services Contract -- Page 8 of 89
+
+5\. Subcontractors and Related Data
+
+6\. Bid Proposal
+
+7\. Services Contract Template
+
+8\. General Conditions
+
+9\. Special Conditions
+
+10\. Addenda (if any)
+
+The Bidder will download the Bidding Documents as directed in the Request for Proposal. All
+
+forms associated with, bound with, or attached to the Bidding Documents are a necessary part
+
+thereof and must not be detached.
+
+The Bidding Documents will state the location and description of the proposed Work and will
+
+show the estimate of the various quantities of work to be performed and materials to be
+
+furnished, the time in which the work must be completed, and the due date and time of the
+
+proposals. It will also state any special provisions or requirements, which vary from or are not
+
+contained in the General Conditions.
+
+ADDITIONAL BID DETAILS
+
+Persons Submitting Bids: Each Bid must contain the full name(s) and U.S. Postal Service
+
+mailing address of the Bidder(s), and any person signing any Bid as agent of another, or of a
+
+firm, must furnish legal evidence of authority to do so.
+
+A person who submits a Bid and affixes "President," "Secretary," "Agent," or other designation
+
+to his or her signature, without disclosing the principal, may be personally held to the Bid.
+
+The Town will not consider more than one Bid from an individual, firm, partnership, or
+
+corporation under the same or different names. Evidence that any Bidder is interested in more
+
+than one Bid for the same work will be cause for rejection of all such Bids. Collusion between
+
+the Bidders will be considered sufficient cause for the rejection of all affected Bids. A party
+
+quoting prices to a Bidder is not thereby disqualified from quoting prices to other Bidders or
+
+from submitting a direct Bid on the Bidder's own behalf.
+
+Town of Estes Park Services Contract -- Page 9 of 89
+
+Bid Pricing: All prices shall be stated in words and numbers except where the forms provide for
+
+numbers only. Use of the provided bid schedule in MS Excel spreadsheet format is acceptable.
+
+Unit Price Bid Schedule: When the Town requests Unit Prices, the Bidder shall fully complete
+
+the schedule of unit prices included in the bid schedule.
+
+When the Town includes an additional amount on the bid schedule for minor contract revisions
+
+and the Town has estimated bid quantities on the schedule. Bidders shall include that add amount
+
+in the total Bid price.
+
+The total of all the unit prices bid multiplied by the estimated quantity of each item shall be the
+
+total Bid price. The Town will pay for the final measured, used, or delivered quantities at unit
+
+prices in the Bid.
+
+Discrepancies: In the event of a difference between extended price and unit price of the bid
+
+schedule, the unit price governs.
+
+Modifications: Modifications to Bids already submitted will be allowed if received prior to the
+
+time specified in the Request for Proposal. Modifications shall be submitted as such, and shall
+
+not reveal the total amount of either the original or revised Bids. The modifications shall be
+
+submitted via BidNet or in writing and shall be signed in the same manner and by the same
+
+person(s) who signed the Proposal.
+
+Withdrawal of Proposal: A Bidder may withdraw a Bid at any time prior to the time Bids are to
+
+be opened, via BidNet or by written request of the Bidder. Any such request shall be signed in
+
+the same manner as, and by the same person(s) who signed the Bid Proposal.
+
+Alternate Bids: Whenever Alternate Bids are called for specifying the use of several different
+
+classes of materials or types of improvements for the same work, all Bidders are requested to
+
+submit prices for use of each of the several classes of materials or types of improvements as
+
+specified. The material to be used or the type of improvement to be adopted will be selected by
+
+Town of Estes Park Services Contract -- Page 10 of 89
+
+the Town after the Bids have been opened and read. Unless otherwise specifically provided in
+
+the specifications for the improvement, Bids shall be made upon each and every item shown on
+
+the blank Bid Schedule.
+
+Variation in Estimated Quantities: The Contractor must reasonably expect a variation in the
+
+estimated quantities from the actual quantities and no claims will be allowed for anticipated
+
+profits, for loss of profits or for damage of any sort because of a difference between the estimate
+
+of any item and the amount of the item actually required. The Town reserves the right to
+
+eliminate items from the Bid Schedule when the Town deems it in its best interest.
+
+Cost of Bid Preparation: The total cost of bid preparation and submission shall be assumed by
+
+the Contractor.
+
+Taxes: The Town of Estes Park is exempt from paying sales or use taxes. Materials and
+
+equipment purchased solely for Town projects, that will become a permanent part of the
+
+final project, are tax exempt. The Town will furnish its tax exempt number, in lieu of requiring
+
+the Contractor and subcontractors to obtain their own certificates of exemption from the
+
+Colorado State Department of Revenue. Contractors and all subcontractors purchasing materials
+
+tax exempt must disclose the nature of the Town's project, the Town’s purchase order, and then
+
+provide the Town's tax exempt number to the supplier.
+
+FAMILIARIZATION WITH THE WORK AND SITE CONDITIONS
+
+Before submitting Bids, prospective Bidders shall familiarize themselves with the work, the site
+
+where the work is to be performed, local labor conditions and all laws, regulations and other
+
+factors affecting performance of the work. Bidders shall carefully correlate their observations
+
+with requirements of the Contract and otherwise satisfy themselves as to the expense and
+
+difficulties attending performance of the work. The submission of a Bid constitutes a
+
+representation of compliance by the Bidder. There will be no subsequent financial adjustment for
+
+lack of such familiarization.
+
+Town of Estes Park Services Contract -- Page 11 of 89
+
+Site Conditions: Bidders shall visit the site of the work and completely inform themselves
+
+relative to construction hazards and procedures, the availability of lands, the character and
+
+quantity of surface and sub-surface materials, and utilities to be encountered, the arrangement
+
+and condition of existing structures and facilities, the procedures necessary for maintenance of
+
+uninterrupted operation of existing sewers and other utilities, the character of construction
+
+equipment and facilities needed for performance of the work, and facilities for transportation,
+
+handling, and storage of materials and equipment. All such factors shall be properly investigated
+
+and considered in the preparation of Bids.
+
+REQUESTS FOR EXPLANATION
+
+Bidders should immediately notify the Town of any discrepancies in or omissions from the
+
+Drawings or Specifications, so that the Facilities Manager can publish an Addendum in response.
+
+Any Bidder may submit a written request for explanation or correction of any part of the Bidding
+
+or Contract Documents, as directed in the Request for Proposal. Questions and points of
+
+clarification are requested to be submitted via BidNet or email when possible. The deadline for
+
+submitting such requests is detailed in the Request for Proposal and/or Special Conditions. The
+
+Facilities Manager will also field phone calls, but written communication is preferred. Oral
+
+explanations and interpretations made prior to the proposal submission will not be binding.
+
+ADDENDA
+
+Any explanations or corrections to the Bidding Documents shall be furnished to all Bidders as
+
+Addenda via BidNet and the Town’s website. Final Addenda issuance shall be as directed in the
+
+Request for Proposal and/or the Special Conditions. All Bidders shall acknowledge receipt of
+
+Addenda in the Bid Proposal form.
+
+If there is to be a postponed proposal submission date, this will be communicated on BidNet as
+
+an Addendum (and an automatically generated notification will be sent to all who downloaded
+
+the original Bidding Documents).
+
+Town of Estes Park Services Contract -- Page 12 of 89
+
+BID GUARANTEE
+
+Each Bid shall be accompanied by a Bid Guarantee (typically a Bid Bond) as directed in the
+
+Request for Proposal. No Bid will be considered unless accompanied by the Bid Guarantee. No
+
+personal or business checks will be accepted as Bid Guarantees.
+
+When Alternate Bids are called for, providing for the use of several different classes of materials
+
+or types of improvements for the same work, one Bid Guarantee in the amount of five percent of
+
+the total amount of the highest Bid will be sufficient for all Bids.
+
+If the successful Bidder fails to enter into a contract according to the Bidder's accepted Bid or
+
+fails to furnish the required bonds within ten calendar days from Notice of Award, or by such
+
+time as modified by Special Conditions, the next lowest responsible Bid shall then be considered
+
+the successful Bid and, at the discretion of the Town, the contract may be awarded to the Bidder
+
+submitting that Bid.
+
+BONDS
+
+Bonds shall be executed on a form acceptable to the Town, as specified in the General
+
+Conditions, by a corporate bonding company licensed to do business in the State of Colorado and
+
+acceptable as Surety to the Town. The forms must be countersigned by the Colorado agent.
+
+A "Power of Attorney" authorizing the attorney-in-fact to bind the Surety company and certified
+
+to include the date of the bond shall accompany the bond.
+
+The Performance Bond and Labor and Material Payment Bond must remain in full force and
+
+effect during the entire period of the guarantee.
+
+The successful Bidder shall give a Performance Bond equal to the amount of the Contract Price.
+
+The Performance Bond shall guarantee: (a) the faithful performance and completion of the work
+
+in strict accordance with the terms of the Contract, and each and every covenant, condition and
+
+part thereof, according to the true intent and meaning of the Contract Documents, as defined in
+
+the Contract and (b) the repair or replacement where required, or the cost thereof, for a period of
+
+Town of Estes Park Services Contract -- Page 13 of 89
+
+two years after the issuance of the Notice of Construction Acceptance or until all warranty work
+
+is completed, whichever occurs last, of all work performed under the Contract.
+
+A separate Labor and Material Payment Bond equal to the amount of the Contract Price is
+
+required to ensure the payments of laborers, materialmen, suppliers, and subcontractors in
+
+connection with the work performed under the Contract and to satisfy the requirements of §38-
+
+26-105 and 38-26-106, C.R.S., as amended.
+
+The Town of Estes Park reserves the right to waive bond requirements if permitted by statute. In
+
+the event the Performance or Labor and Material Payment Bonds are waived, cost of the bonds
+
+shall be reflected as a deduction from the total Bid Price, when so indicated on the Bid Form.
+
+There will be a Unit Price deduction for the waiver indicated on the Bid Schedule, when
+
+necessary.
+
+PROPOSAL SUBMISSION
+
+All proposals must be submitted to the Facilities Manager by 11:00 AM (MT) on Thursday,
+
+September 24, 2026. Proposals must be submitted through one of the following means:
+
+A. ‘BidNet’: Response to the solicitation on Rocky Mountain E-Purchasing System
+
+(www.rockymountainbidsystem.com); or
+
+B. Email to Robert Schumaker, Facilities Manager (rschumaker@estes.org)
+
+Subject line: Estes Park HVAC Service and Maintenance Proposal
+
+EVALUATION OF BIDS
+
+Town Discretion: The Town reserves the right to cancel the Request for Proposal; reject any
+
+Bid, in whole or in part; to adjust the quantity of Work to be done as mandated by budgetary
+
+requirements; and to waive informalities or irregularities in the Bids received; when it is in the
+
+Town's best interest to do so.
+
+The Town of Estes Park reserves the right to accept the Bid which in the opinion of the Town
+
+will best suit the Town's purpose.
+
+Town of Estes Park Services Contract -- Page 14 of 89
+
+Contracts will be awarded only to responsible Bidders capable of performing the class of work
+
+contemplated. The Bidder shall furnish a complete statement of the Bidder's experience and of
+
+the amount of capital and equipment available for the proposed work on the Bidder's
+
+Qualification and Data form.
+
+Irregular Bids: Bids may be rejected if they show any omission, alteration of form, additions
+
+not called for, conditional Alternate Bids, or irregularities of any kind which, in the opinion of
+
+the Town, tend to make the Bid indefinite or ambiguous. The Town will reject bid schedules
+
+with prices which are obviously unbalanced, in the Town’s determination.
+
+Collusion: Bids will be rejected if there is reason for believing that collusion exists among the
+
+Bidders. Participants in such collusion are subject to suspension and debarment.
+
+Pre-qualification of Bidders: For certain projects, the Town may require potential bidders to
+
+submit information regarding the bidders' qualifications in addition to the Bidder’s Qualification
+
+and Data. The requirement for such information will be identified in the Request for Proposal or
+
+elsewhere in the Bid Documents. Any information requested by or on file with the Town may be
+
+used to qualify or disqualify potential bidders.
+
+Prior to the Award of Contract, the Town will notify the Bidder in writing if the Town,
+
+after due investigation, has reasonable objection to any person or organization on such list.
+
+If the Town, in its sole discretion, has a reasonable objection to any person or organization on
+
+such list, and refuses in writing to accept such person or organization, the Bidder shall submit an
+
+acceptable substitute Subcontractor, at no additional cost to the Town.
+
+AWARD OF CONTRACTS
+
+Any or all Bids may be rejected or informalities in bids may be waived at the option of the
+
+Town.
+
+Town of Estes Park Services Contract -- Page 15 of 89
+
+The award of the Contract is contingent upon securing an acceptable Bid which will fall within
+
+the amount of funds available for construction of the project, or the acquisition of contracted
+
+services.
+
+Lowest Responsive and Responsible Bidder: In determining Lowest Responsive and
+
+Responsible Bidder, in addition to price, the factors listed herein will be considered. A Bid may
+
+be rejected if, in the judgment of the Town, the Bidder does not comply with or meet the criteria
+
+defined in one or more of the following factors:
+
+1\. The ability, capacity and skill of the Bidder to perform the Contract or provide the
+
+services required.
+
+2\. The ability of the Bidder to perform the Contract or provide the service promptly or
+
+within the time specified, without delay or interference.
+
+3\. The character, integrity, reputation, judgment, experience and efficiency of the Bidder, to
+
+be determined at the sole and absolute discretion of the Town.
+
+4\. The quality of performance on previous Town contracts or services. Failure on the part of
+
+any Bidder to carry out a previous contract satisfactorily shall be deemed sufficient cause
+
+for disqualification.
+
+5\. The experience of the Bidder and the availability of equipment necessary to complete the
+
+current project. Sufficient cause for disqualification of the Bidder will exist if, in the
+
+Town's opinion, the Bidder does not have adequate experience or equipment to properly
+
+perform the Work under the Contract.
+
+6\. The sufficiency of the financial resources and ability of the Bidder to perform the
+
+Contract or provide the service.
+
+7\. The quality, availability, and adaptability of the supplies or contractual services to the
+
+particular use required.
+
+8\. The ability of the Bidder to provide future maintenance and service for the use of the
+
+subject of the contract.
+
+9\. Debarment or suspension pursuant to a prior Town determination.
+
+Town of Estes Park Services Contract -- Page 16 of 89
+
+ACCEPTANCY OF BIDS AND ITS EFFECT
+
+The Town will act upon the Bids with reasonable promptness after the evaluation of the Bids.
+
+The acceptance of a Bid will be a written Notice of Award signed by the duly authorized
+
+representative of the Town. No other act of the Town shall be necessary to constitute acceptance
+
+of a Bid. The acceptance of a Bid binds the successful Bidder to execute the required Services
+
+Contract and take all action necessary to fulfill the Contract.
+
+REQUIREMENTS FOLLOWING NOTICE OF AWARD
+
+The successful Bidder shall, within ten calendar days of receiving the Notice of Award, or by
+
+such time as modified by the Special Conditions, execute the Services Contract and furnish the
+
+Performance Bond and the Material and Labor Payment Bond. Acceptance of the Contract shall
+
+be subject to approval by the Town.
+
+Unless previously requested or waived by the Facilities Manager, the successful Bidder shall
+
+submit the following information to the Town’s Facilities Manager within ten calendar days of
+
+receiving the Notice of Award:
+
+1\. A designation of the work to be performed by the Bidder with the Bidder's own forces.
+
+2\. The proprietary names and the suppliers of principal items or systems of material and
+
+equipment proposed for the work.
+
+3\. A proposed schedule of construction and estimated monthly payments.
+
+4\. The Bidder will be required to establish to the satisfaction of the Town, the reliability and
+
+responsibility of the proposed Subcontractors to furnish and perform the Work described
+
+in the Sections of the Specifications pertaining to such proposed Subcontractor's
+
+respective trade.
+
+5\. If the Contract includes federal or grant funding, the Bidder will be required to show
+
+proof of registration with SAM.gov.
+
+6\. Proof of possession of a current Town of Estes Park Business License (and any other
+
+licenses required by the Bid Documents) for the Contractor and all subcontractors).
+
+Town of Estes Park Services Contract -- Page 17 of 89
+
+DAMAGES FOR FAILURE TO EXECUTE
+
+Any Bidder whose Bid is accepted will be required to execute the Contract and furnish the
+
+Performance Bond and Material and Labor Payment Bond within ten days after written notice
+
+that the Contract has been awarded to the Bidder, or by such time as modified by Special
+
+Conditions. Failure to do so shall constitute a breach of the Contract effected by the acceptance
+
+of the Bid.
+
+The damages to the Town for such breach will include loss from interference with the
+
+construction program and other items, the monetary values of which will be difficult or
+
+impossible to quantify. Where required, the amount of the Bid Guarantee accompanying the Bid
+
+shall be retained by the Town as reasonable liquidated damages and not as a penalty for such
+
+breach.
+
+The Town is authorized, the same as if the Bid Guarantee or Bid contained an expressed
+
+stipulation to that effect, to cause such work to be done, or complete the work in-house, or
+
+contract with some other Contractor to do so, and/or compute the difference between actual cost
+
+to the Town of such improvements and the sum which it would cost if the defaulting Bidder
+
+complied with the Bid.
+
+RIGHT TO INSPECT
+
+The Town may, at reasonable times, inspect the part of the plant, place of business or worksite of
+
+the Bidder or the Bidder's subcontractors at any tier which is pertinent to the performance of the
+
+award of the Contract.
+
+BID PROCESS SUBJECT TO PURCHASING CODE
+
+Bidding shall be conducted subject to state statutes and the Town of Estes Park Municipal Code
+
+and ordinances.
+
+Town of Estes Park Services Contract -- Page 18 of 89
+
+LAWS TO BE OBEYED
+
+Bidders shall familiarize themselves with the provisions of the laws of the State of Colorado and
+
+the Federal Government, and with all local laws and all regulations made which are pertinent to
+
+the proposed work and shall comply with the same.
+
+EQUAL OPPORTUNITY
+
+The Contractor will not discriminate against any employee or applicant for employment because
+
+of race, color, religion, age, sex, gender identity, sexual orientation, or national origin, or other
+
+reason prohibited by applicable federal, state or local law, ordinance or regulation. The
+
+Contractor shall abide by all federal laws in effect during the Contract period which govern
+
+Equal Opportunity Employment.
+
+LOCAL LABOR AND MATERIALS
+
+Preference shall be given to employment of Colorado labor pursuant to §8-17-101 and 102,
+
+C.R.S., as amended.
+
+Pursuant to statutory authority, preference shall be given to materials, supplies, and provisions
+
+produced, manufactured, or grown in Colorado, quality being equal to articles offered by
+
+competitor outside the state (§8-18-101 through 103, C.R.S., as amended).
+
+TIME OF COMPLETION
+
+TIME IS OF THE ESSENCE and the Bidder agrees to complete the project within the stated
+
+time, as defined in the Services Contract. The Bidder also agrees to comply with all completion
+
+dates specified in the Bidding and Contract Documents.
+
+Town of Estes Park Services Contract -- Page 19 of 89
+
+BIDDER'S QUALIFICATIONS AND DATA
+
+The signatory of this Statement guarantees the truth and accuracy of all statements and of
+
+answers to all questions herein. All questions must be answered clearly and comprehensively. If
+
+necessary, separate sheets may be attached. The Bidder may submit additional information.
+
+Failure to complete and return this Statement may render a bid non-responsive.
+
+Name of Bidding Firm:
+
+Main office address:
+
+Phone: Fax \#
+
+The Bidder is organized as a (corporation/partnership/other):
+
+in the state of:
+
+Bidder's federal tax identification number (TIN):
+
+General character of work performed by your organization and brief history of operations:
+
+Does your firm have any officer, director, or agent who is also an officer or employee of the
+
+Town of Estes Park?
+
+Are there any Town of Estes Park agents or employees who own, directly or indirectly an
+
+interest in the bidder’s firm or any of its branches?
+
+Bonding Limit: $
+
+Bonding Company: Phone \#
+
+Address:
+
+The Town has a right to request financial statement(s) and other relevant information. Are you
+
+willing to submit such information at the Town’s request?
+
+Submitted by: Date:
+
+(Person submitting bid)
+
+Qualifications
+
+1\. How many years have you been in business under your present firm or trade name?
+
+Town of Estes Park Services Contract -- Page 20 of 89
+
+a. Under other names?
+
+2\. Have you or your organization, or any office or partner thereof, failed to complete a contract?
+
+a. \_\_\_Yes \_\_\_No
+
+3\. Within the last five years, has your organization been assessed liquidated damages for failing to
+
+complete a contract within the time specified?
+
+a. \_\_\_Yes \_\_\_No
+
+4\. Has your organization been assessed any penalties for non-compliance violations of the Federal
+
+or State Labor laws and/or regulations within the last five years?
+
+a. \_\_\_Yes \_\_\_No
+
+5\. Does your organization have any outstanding judgments, demands, or liens resulting from
+
+violating State Labor laws, Colorado Revised Statutes, Civil or Criminal decisions?
+
+a. \_\_\_Yes \_\_\_No
+
+6\. Have there been any suits, liens, or surety claims against you or your organization over the past
+
+five years for non-payment of sums due subcontractors or suppliers for work completed?
+
+a. \_\_\_Yes \_\_\_No
+
+7\. Has your organization been cited for violations of OSHA standards and requirements within the
+
+past five years?
+
+a. \_\_\_Yes \_\_\_No
+
+8\. Is either the Bidder or its principals presently debarred, suspended, proposed for disbarment,
+
+declared ineligible, or voluntarily excluded from participation in this transaction by any
+
+department or agency?
+
+a. \_\_\_Yes \_\_\_No
+
+9\. Have you ever been debarred or suspended by a government from consideration for the award of
+
+contracts?
+
+a. \_\_\_Yes \_\_\_No
+
+Please explain all questions answered “yes” in the section above on a separate sheet of
+
+paper. Include where and why, if applicable. Note that your answers do not necessarily
+
+disqualify your bid. For example, it is not uncommon for contractors of large projects to be
+
+charged liquidated damages in certain cases.
+
+Town of Estes Park Services Contract -- Page 21 of 89
+
+Firm Background and Experience
+
+❖ Total number of employees:
+
+❖ Total number of licensed professionals:
+
+❖ Proposed Superintendent:
+
+Title:
+
+Relevant degrees and/or certifications:
+
+❖ Principals
+
+List directors, officers, owners, managerial employees, or partners, and identify the ownership
+
+interest of each:
+
+❖ Experience
+
+List the experience of the principal members of your organization. If preferred, resumes may be
+
+submitted in lieu of form entry.
+
+Name: Title:
+
+Background/ Years’ Experience:
+
+Relevant degrees and/or certifications:
+
+Town of Estes Park Services Contract -- Page 22 of 89
+
+Name: Title:
+
+Background/ Years’ Experience:
+
+Relevant degrees and/or certifications:
+
+❖ Similar Projects
+
+List three projects of similar scope and budget to this project that your organization has
+
+performed work on:
+
+Project Name:
+
+Cost: Location:
+
+Reference Name: Phone:
+
+Project Name:
+
+Cost: Location:
+
+Reference Name: Phone:
+
+Project Name:
+
+Cost: Location:
+
+Reference Name: Phone:
+
+❖ Contract(s) on Hand
+
+List projects your organization is undertaking that will be concurrent with the Town’s bid
+
+schedule. Include the anticipated completion date.
+
+Project Name:
+
+Schedule:
+
+Cost: Location:
+
+Subcontractor or Prime: Completion Date:
+
+Town of Estes Park Services Contract -- Page 23 of 89
+
+Project Name:
+
+Schedule:
+
+Cost: Location:
+
+Subcontractor or Prime: Completion Date:
+
+Town of Estes Park Services Contract -- Page 24 of 89
+
+SUBCONTRACTORS AND RELATED DATA
+
+For each Subcontractor to be utilized, please provide the following information (use additional
+
+sheets as necessary). Please indicate what percentage of the Work to be assigned.
+
+Firm Name: Town Business License \#
+
+Address:
+
+Proposed work and percentage of total work to be assigned:
+
+Percentage %
+
+Firm Name: Town Business License \#
+
+Address:
+
+Proposed work and percentage of total work to be assigned:
+
+Percentage %
+
+Firm Name: Town Business License \#
+
+Address:
+
+Proposed work and percentage of total work to be assigned:
+
+Percentage %
+
+Firm Name: Town Business License \#
+
+Address:
+
+Proposed work and percentage of total work to be assigned:
+
+Percentage %
+
+Firm Name: Town Business License \#
+
+Address:
+
+Proposed work and percentage of total work to be assigned:
+
+Percentage %
+
+Town of Estes Park Services Contract -- Page 25 of 89
+
+BID PROPOSAL
+
+PROJECT: 2027 HVAC Preventive Maintenance and Service
+
+1\. In compliance with the Request for Proposal, and subject to all conditions thereof, the
+
+undersigned: \[Select one\]
+
+a corporation incorporated in the State of
+
+\-OR-
+
+a partnership or limited partnership, registered in the State of ,
+
+whose general partner(s) is/are:
+
+\-OR-
+
+a sole proprietor, whose trade name is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+based in the City/Town of , State of \_\_\_\_\_,
+
+offers this Bid Proposal for the construction of all items listed at the prices shown on the
+
+following bid schedule.
+
+(The attached bid schedule lists the various divisions of construction contemplated in the Plans
+
+and Specifications, together with an estimate of the units of each. With these units as the basis,
+
+extend each item, using the cost inserted in the unit column. Any total cost found inconsistent
+
+with the unit cost when the Bids are examined will be deemed in error and corrected to agree
+
+with the unit cost. Alternate Bids are optional).
+
+2\. The undersigned Bidder declares and stipulates that this Bid is made in good faith,
+
+without collusion or connection with any other person or persons bidding for the same Work, and
+
+that it is made subject to all the terms and conditions of the Request for Proposal, Instructions for
+
+Bidders, Services Contract, General Conditions, Special Conditions, the Technical
+
+Specifications, and the Plans pertaining to the Work to be done, all of which have examined by
+
+the undersigned.
+
+Town of Estes Park Services Contract -- Page 26 of 89
+
+3\. Accompanying this Bid is a Bid Guarantee for 5% of the total Bid amount according to
+
+the Request for Proposal and Instructions for Bidders.
+
+4\. The undersigned Bidder agrees to execute the Services Contract, a Performance Bond
+
+and a Labor and Material Payment Bond within ten calendar days from the date when the written
+
+Notice of Award is delivered at the address given on this Bid Proposal. The Performance Bond
+
+and Labor and Material Payment Bond shall each be for the amount of the total of this Bid. The
+
+name and address of the corporate surety through which the Bidder proposes to furnish the
+
+specified Bonds is as follows: (Name and Address of Surety)
+
+5\. The submission of the Bid constitutes an agreement, and it shall not be withdrawn after
+
+submission for a period of thirty days.
+
+6\. All the various phases of work enumerated in the Contract with individual jobs and
+
+overhead, whether specifically mentioned or not, are included by implication or appurtenance in
+
+the Contract. The Contractor shall perform all the various phases of work under one of the items
+
+listed in the bid schedule, irrespective of whether it is named in the schedule.
+
+7\. Payment for the Work performed will be according to the bid schedule, subject to
+
+changes as provided in the Contract.
+
+8\. The undersigned Bidder hereby acknowledges receipt of addenda numbers \_\_\_ through
+
+\_\_\_.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Initials
+
+Town of Estes Park Services Contract -- Page 27 of 89
+
+The undersigned, being familiar with the existing conditions on the project area affecting the cost
+
+of the Work, the Bidding Documents and the Contract Documents, and having verified the
+
+quantities and the availability of materials and labor, hereby proposes to furnish all supervision,
+
+labor, materials, machinery, tools, appurtenances, equipment, supplies, and services, including
+
+utility and transportation service required to construct and complete the Project listed above,
+
+according to the Contract, within the time specified, and at the prices stated below. These prices
+
+are to cover all expenses incurred in performing the Work required under the Contract of which
+
+this Bid is a part.
+
+(The approximate quantities of Work to be completed in-place under the Contract are identified
+
+in the bid schedule and are for the purpose of comparing Bids. These quantities have been
+
+estimated and the quantities used are for the general information of the Bidder, representing the
+
+major items of the Work to be done. Minor details are not listed but shall be part of the complete
+
+Contract).
+
+9\. The undersigned Bidder hereby acknowledges reviewing the attached Service Contract
+
+template. Any concerns regarding the existing language or potential redlines from the Bidder are
+
+included in the proposal as a separate attachment.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Initials
+
+10\. The undersigned agrees to hold firm the Bid for thirty days for the purpose of the Town
+
+reviewing the Bids and investigating the qualifications of the Bidders prior to award of Contract.
+
+Extensions of time may be made if mutually agreed upon.
+
+11\. The undersigned hereby authorizes and requests any person, firm or corporation to
+
+furnish any information requested by the Town of Estes Park in verification of the recitals in this
+
+statement.
+
+This proposal is submitted by:
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Company Representative
+
+Town of Estes Park Services Contract -- Page 28 of 89
+
+By: Date
+
+Title:
+
+STATE OF )
+
+) ss:
+
+COUNTY OF )
+
+The foregoing instrument was acknowledged before me this \_\_\_\_\_\_\_\_\_\_ day of
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, 2026, by \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, as
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. (If by natural
+
+person or persons, insert name or names; if by person acting in representative or official capacity
+
+or as attorney-in-fact, insert name of person as an executor, attorney-in-fact, or other capacity or
+
+description; if by officer of corporation, insert name of such officer or officers as the President or
+
+other officers of such corporation, naming it.)
+
+Witness my hand and official seal.
+
+My Commission .
+
+Notary Public
+
+Town of Estes Park Services Contract -- Page 29 of 89
+
+SERVICES CONTRACT (Template)
+
+To be finalized upon award
+
+TOWN OF ESTES PARK, COLORADO SERVICES CONTRACT Project: 2027 HVAC Preventive Maintenance and Service
+
+The parties, the Town of Estes Park, Colorado (Town), a municipal corporation, and Contractor Name, legal entity (Contractor), whose address is (address, city, state, zip), make this Contract this \_\_\_\_\_\_\_\_\_\_ day of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, 2026, at the Town of Estes Park, Colorado, considering the following facts and circumstances:
+
+1 RECITALS:
+
+1.1Town desires to use the services of Contractor outlined in Contractor’s Proposal; and;
+
+1.2Contractor has agreed to provide the Services outlined in its Proposal, on the terms and
+
+conditions stated in this Contract.
+
+2 CONTRACT: This Agreement is a Contract, representing the entire and integrated
+
+agreement between the parties and supersedes any prior negotiations, written or oral representations and agreements. The Agreement incorporates the following Contract Documents. In resolving inconsistencies between two or more of the Contract Documents, they shall take precedence in the order enumerated, with the first listed Contract Document having highest precedence.
+
+The Contract Documents, except for amendments executed after execution of this Contract, are:
+
+2.1Change Orders;
+
+2.2Notice to Proceed;
+
+2.3This Contract;
+
+2.4The following Addenda, if any:
+
+Number Date Pages
+
+2.5The following Special Conditions of the Contract, if any:
+
+Document Title Pages
+
+2.6Notice of Award;
+
+2.7Request for Proposals, containing XX pages, dated XX;
+
+2.8Contractor’s Proposal, containing XX pages, dated XX; and
+
+2.9Insurance Certificates.
+
+Town of Estes Park Services Contract -- Page 30 of 89
+
+3 SCOPE OF SERVICES: Contractor shall provide and furnish at its own cost and expense all
+
+materials, machinery, equipment, tools, superintendence, labor, insurance and other accessories and services necessary to provide its Services in strict accordance with the conditions and prices stated in the Contract Documents.
+
+4 BEGINNING WORK AND COMPLETION SCHEDULE: The Contractor shall begin
+
+services under this Contract upon receiving Town’s notice to proceed. Contractor shall timely perform its Services, according to the Performance Schedule attached to and incorporated into this Contract or as otherwise directed by Town.
+
+5 PRICE: The Town will pay Contractor for the performance of this Contract, not to exceed
+
+XXX (and spelled out fully), as the Price for the total Services performed as stipulated in Contractor’s Proposal. This Contract does not create a multiple fiscal year direct or indirect debt or other financial obligation. Each request for service shall incur a concurrent debt for that request only. All financial obligations of the Town under this Contract are contingent upon appropriation, budgeting, and availability of specific funds to discharge such obligations.
+
+6 TIME OF PAYMENTS TO CONTRACTOR: The Contractor shall bill its charges to the
+
+Town periodically, but no more frequently than once a month. Each bill shall contain a statement of the time the primary employees spent on the Services since the previous bill, a brief description of the Services provided by each such employee, and an itemization of direct expenses. The Town will pay each such bill which it finds to be in accordance with this Contract within forty-five days of its receipt. If Town questions any part of a bill, finds any part of a bill does not conform to this Contract, or claims the right to withhold payment of any part of a bill, it will promptly notify Contractor of the question, nonconformity or reasons for withholding.
+
+7 QUALIFICATIONS ON OBLIGATIONS TO PAY: No partial payment shall be final
+
+acceptance or approval of that part of the Services paid for, or shall relieve Contractor of any of its obligations under this Contract. Notwithstanding any other terms of this Contract, Town may withhold any payment (whether a progress payment or final payment) to Contractor under the following conditions:
+
+7.1Contractor fails to promptly pay all bills for labor, material, or services of consultants
+
+furnished or performed by others to perform Services.
+
+7.2Contractor is in default of any of its obligations under this Contract or any of the Contract
+
+Documents.
+
+7.3Any part of such payment is attributable to Services not conforming to this Contract.
+
+(Town will pay for any part attributable to conforming Services).
+
+7.4Town, in its good faith judgment, determines that the compensation remaining unpaid will
+
+not be sufficient to complete the Services according to this Contract.
+
+Town of Estes Park Services Contract -- Page 31 of 89
+
+8 CHANGE ORDERS: Town reserves the right to order work changes in the nature of
+
+additions, deletions, or modifications, without invalidating this agreement, and agrees to make corresponding adjustments in the contract price and time for completion. All changes will be authorized by a written change order signed by Town. Work shall be changed, and the contract price and completion time shall be modified only as set out in the written change order.
+
+9 SERVICE OF NOTICES: The parties may give each other required notices in person or by
+
+first class mail or by email to their authorized representatives (or their successors) at the addresses listed below:
+
+TOWN OF ESTES PARK: Robert Schumaker Facilities Manager Town of Estes Park 170 MacGregor Ave Estes Park, CO 80517 Phone: 970-577-3576 E-mail: rschumaker@estes.org
+
+CONTRACTOR: TBD
+
+10 COMPLIANCE WITH LAW: Contractor will perform this Contract in strict compliance with applicable federal, state, and municipal laws, rules, statutes, charter provisions, ordinances, and regulations (including sections of the Occupational Safety and Health Administration \[OSHA\] regulations, latest revised edition, providing for job safety and health protection for workers) and all orders and decrees of bodies or tribunals applicable to work under this Contract. Contractor shall defend and indemnify Town against any claim or liability arising from or based on the violations of any such law, ordinance, regulation, order, or decrees by itself or by its subcontractors, agents, or employees. Town assumes no duty to ensure that Contractor follows the safety regulations issued by OSHA. The Contractor shall indemnify, hold harmless, and assume liability on behalf of the Town and its officers, employees, and agents, for all costs, expenses, claims, damages, liabilities, court awards, attorney fees and related costs, and any other amounts incurred by the Town in relation to the Contractor’s noncompliance with the accessibility standards for an individual with a disability adopted by the Colorado Office of Information Technology pursuant to section 24- 85-103, C.R.S.
+
+11 PERMITS AND LICENSES: The Contractor shall secure all permits and licenses, pay all
+
+charges, files, and taxes and give all notices necessary and incidental to the lawful prosecution of its Services. Anyone conducting business in the Town of Estes Park is required to have a business license which can be obtained from the Town Clerk’s Office.
+
+12 PATENTED DEVICES, MATERIALS AND PROCESSES: The Contractor shall hold and
+
+save harmless the Town from all claims for infringement, by reason of fee use of any patented design, device, material, process, or trademark or copyright and shall indemnify the Town for any costs, expenses, and damages, including court costs and attorney fees, incurred by reason of actual or alleged infringement during the prosecution or after completion of Services.
+
+Town of Estes Park Services Contract -- Page 32 of 89
+
+13 INSURANCE: Contractor shall, at its own costs, secure and continuously maintain through
+
+the term of this Contract the minimum insurance coverages listed below, with forms and insurers acceptable to Town. In addition, Contractor shall maintain such coverages for the insurance listed in Paragraphs \[13.1\], 13.3 and 13.4 for two additional years. For any claims- made policy, Contractor shall include the necessary retroactive dates and extended reporting periods to maintain continuous coverage.
+
+13.1 Professional Liability for at least $1,000,000.
+
+13.2 Workers' Compensation according to the Workers' Compensation Act of the State of
+
+Colorado and Employer's Liability with limits of at least $500,000. Contractor shall require any subcontractor hired by the Contractor to carry Workers’ Compensation and Employer’s Liability coverage.
+
+13.3 General liability, including contractual liability, of at least $1,000,000 per each
+
+occurrence plus an additional amount adequate to pay related attorney's fees and defense cost. Coverage shall include bodily injury, property damage, personal injury, and contractual liability.
+
+13.4 Comprehensive Automobile Liability with minimum limits for bodily injury and
+
+property damage coverage of at least $1,000,000 per each occurrence plus an additional amount adequate to pay related attorneys' fees and defense costs, for each of Contractor’s owned, hired or non-owned vehicles assigned to or used in performance of this Contract.
+
+13.5 The required general liability and comprehensive automobile liability policies shall contain endorsements to include Town and its officers and employees as additional insureds. The required professional liability and workers’ compensation policies or coverages shall not contain endorsements including the Town, its officers or employees as additional insureds. Every policy required above shall be primary insurance. Any insurance or self-insurance benefits carried by Town, its officers, or its employees, shall be in excess and not contributory to that provided by Contractor.
+
+13.6 Contractor shall, upon request, provide Town a certified copy of each required policy.
+
+13.7 As evidence of the insurance coverages required by this Contract, before beginning
+
+work under this Contract, Contractor shall furnish certificates of insurance certifying that at least the minimum coverages required here are in effect and specifying the liability coverages (except for professional liability) are written on an occurrence form to:
+
+Town of Estes Park 170 MacGregor Avenue PO Box 1200 Estes Park, CO 80517 Attention: Robert Schumaker
+
+Town of Estes Park Services Contract -- Page 33 of 89
+
+With the exception of professional liability and workers’ compensation, policy or policies providing insurance as required will defend and include the Town, its Board, officers, agents and employees as additional insureds on a primary basis for work performed under or incidental to this Contract. Required insurance policies shall be with companies qualified to do business in Colorado with a general policyholder’s financial rating acceptable to the Town. The policies shall not be cancelable or subject to reduction in coverage limits or other modification except after thirty days prior written notice to the Town. General liability and automobile policies shall be for the mutual and joint benefit and protection of the Contractor and the Town. These policies shall provide that the Town, although named as an additional insured, shall nevertheless be entitled to recover under said policies for any loss occasioned to it, its officers, employees, and agents by reason of acts or omissions of the Contractor, its officers, employees, agents, subcontractors, or business invitees. They shall be written as primary policies not contributing to and not in excess of coverage the Town may carry.
+
+13.8 If Contractor is self-insured under the laws of the State of Colorado, Contractor shall
+
+provide appropriate declarations and evidence of coverage.
+
+13.9 Contractor shall not cancel, change, or fail to renew required insurance coverages.
+
+Contractor shall notify Town's designated person responsible for risk management of any reduction or exhaustion of aggregate limits, which Town may deem to be a breach of this Contract.
+
+13.10 The Town relies on, and does not waive or intend to waive, by any provision of this
+
+Contract, the monetary limitations or any other rights, immunities, and protections provided by the Colorado Governmental Immunity Act, § 24-10-101 et seq., C.R.S., as from time to time amended, or otherwise available to the parties, their officers, or their employees.
+
+13.11 If any insurance required here is to be issued or renewed on a claims-made form as
+
+opposed to the occurrence form, the retroactive date for coverage will be no later than the commencement date of the Services and will state that in the event of cancellation or nonrenewal, the discovery period for insurance claims (tail coverage) will be at least 72 months.
+
+13.12 Contractor shall not cancel, non-renew or cause insurance to be materially changed or
+
+replaced by another policy without prior approval by Town.
+
+14 INDEMNIFICATION:
+
+14.1 Contractor and its agents, principals, officers, partners, employees, and subcontractors ("Indemnitors") shall and do agree to indemnify, protect, and hold harmless the Town, its officers, employees, and agents ("Indemnitees") from all claims, damages, losses, liens, causes of actions, suits, judgments, and expenses (including attorneys’ fees), of any nature, kind, or description ("Liabilities") by any third party arising out of, caused by, or resulting from any Services under this Contract if such Liabilities are: (1) attributable to bodily injury, personal injury, sickness, disease, or death of any
+
+Town of Estes Park Services Contract -- Page 34 of 89
+
+person, or to the injury or destruction of any tangible property (including resulting loss of use or consequential damages) and (2) caused, in whole or in part, by any error, omission or negligent act of the Contractor, anyone directly or indirectly employed by it, or anyone for whose acts Contractor may be liable.
+
+14.2 If more than one Indemnitor is liable for any error, omission or negligent act covered
+
+by this Agreement, each such Indemnitor shall be jointly and severally liable to the Indemnitees for indemnification and the Indemnitors may settle ultimate responsibility among themselves for the loss and expense of any such indemnification by separate proceedings and without jeopardy to any Indemnitee. This Agreement shall not eliminate or reduce any other right to indemnification or other remedy the Town, or any of the Indemnitees may have by law.
+
+14.3 As part of this indemnity obligation, the Contractor shall compensate the Town for
+
+any time the Town Attorney's Office and other counsel to the Town reasonably spend on such claims or actions at the rates generally prevailing among private practitioners in the Town of Estes Park for similar services. This obligation to indemnify the Town shall survive the termination or expiration of this Agreement.
+
+15 INDEPENDENT CONTRACTOR: Contractor shall perform all Services under this
+
+Agreement as an independent contractor, and not as an agent or employee of Town. No employee or official of Town shall supervise Contractor. Contractor shall exercise no supervision over any employee or official of Town. Contractor shall not represent that it is an employee or agent of the Town in any capacity. Contractor’s officers, employees and agents are not entitled to Workers' Compensation benefits from the Town, and Contractor is obligated to pay federal and state income tax on money earned under this Agreement. Except as this Agreement expressly states, Contractor shall, at its sole expense, supply all buildings, equipment and materials, machinery, tools, superintendence, personnel, insurance and other accessories and Services necessary. This Agreement is not exclusive; subject the terms of this Agreement, Town and Contractor may each contract with other parties.
+
+16 PROVISIONS CONSTRUED AS TO FAIR MEANING: Any tribunal enforcing this
+
+Agreement shall construe its terms as to their fair meaning, and not for or against any party based upon any attribution to either party.
+
+17 HEADINGS FOR CONVENIENCE: All headings, captions and titles are for convenience
+
+and reference only and of no meaning in the interpretation or effect of this Contract.
+
+18 NO THIRD-PARTY BENEFICIARIES: The parties intend no third-party beneficiaries
+
+under this Contract. Any person besides Town or Contractor receiving services or benefits under this Agreement is an incidental beneficiary only.
+
+19 TOWN’S RIGHT TO BAR PERSONNEL FROM WORK SITE: For conduct the Town (in
+
+its sole discretion) decides may violate applicable laws, ordinances rules or regulations, or may expose Town to liability or loss, Town may bar any person (including Contractor’s and subcontractors’ employees) from the Town's work sites. Such a bar shall not require any employee's discharge from employment, but shall merely prohibit the employee's presence at
+
+Town of Estes Park Services Contract -- Page 35 of 89
+
+Town’s work sites. Such a bar shall not warrant an increase in contract time or Price.
+
+20 WAIVER: No waiver of any breach or default under this Agreement shall waive any other
+
+or later breach or default.
+
+21 TERM: This Contract shall commence on the date specified in a forthcoming Notice to
+
+Proceed, and shall continue through XXX with the option of four (4) additional renewals, on an annual basis, as funding allows, upon agreement of both parties.
+
+22 TERMINATION:
+
+22.1 In addition to any other available remedies, either party may terminate this Contract if
+
+the other party fails to cure a specified default within seven (7) days of receiving written notice of the default. The notice shall specify each such material breach, in reasonable detail.
+
+22.2 Town may, at any time, terminate performance of the work, in whole or in part, for its own convenience. The Town may effect such termination by giving Contractor written Notice of Termination specifying the extent and effective date of termination. In case of termination, for convenience, Town shall pay Contractor for work satisfactorily completed, to the date of termination. The Town shall determine the portion of work completed.
+
+22.3 If either party so terminates, the Contractor shall promptly deliver to the Town all drawings, computer programs, computer input and output, analysis, plans, photographic images, tests, maps, surveys and writer’s materials of any kind generated in the performance of its Services under this Contract up to and including the date of termination.
+
+23 SUSPENSION: Without terminating or breaching this Contract, the Town may, at its
+
+pleasure, suspend fee services of the Contractor hereunder. Town may effect suspension by giving the Contractor written notice one (1) day in advance of the suspension date. Upon receipt of such notices the Contractor shall cease their work as efficiently as possible, to keep total charges to a minimum. The Town must specifically authorize any work performed during suspension. Since suspension and subsequent reactivation may inconvenience the Contractor, Town will endeavor to provide advance notice and minimize its use. After a suspension has been in effect for thirty days, the Contractor may terminate this Contract at will.
+
+24 ASSIGNMENT AND DELEGATION: Except as stated, neither party may assign its rights
+
+or delegate its duties under this Contract without the express written approval of the other.
+
+25 SUBCONTRACTING: Except subcontractor clearly identified and accepted in the
+
+Contractor's Proposal, Contractor may employ subcontractors to perform the Services only with Town's express prior written approval. Contractor is solely responsible for any compensation, insurance, and all clerical detail involved in employment of subcontractors.
+
+26 GOVERNING LAW AND VENUE: The laws of the State of Colorado shall govern
+
+Town of Estes Park Services Contract -- Page 36 of 89
+
+enforcement and interpretation of this Contract. Venue and jurisdiction for any court action filed regarding this agreement shall be only in Larimer County, Colorado.
+
+27 AUTHORITY: This instrument forms a contract only when executed in writing by duly
+
+authorized representatives of Town and Contractor. By their signatures on this document, the signatories represent that they have actual authority to enter this Contract for the respective parties.
+
+28 INTEGRATION: There are no other agreements on the same subject than expressly stated or
+
+incorporated in this Contract.
+
+29 DAMAGES FOR BREACH OF CONTRACT: In addition to any other legal or equitable remedy the Town may be entitled to for a breach of this Contract, if the Town terminates this Contract, in whole or in part, due to Contractor’s breach of any provision of this Contract, Contractor shall be liable for actual and consequential damages to the Town.
+
+Signature pages follow.
+
+Town of Estes Park Services Contract -- Page 37 of 89
+
+CONTRACTOR:
+
+By:
+
+Date Title: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+State of )
+
+) ss County of )
+
+The foregoing instrument was acknowledged before me this \_\_\_\_\_\_\_\_\_\_ day of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, 2026, by \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, as \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ of \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Contractor. (If by natural person or persons, insert name or names; if by person acting in representative or official capacity or as attorney-in-fact, insert name of person as an executor, attorney-in-fact, or other capacity or description; if by officer of corporation, insert name of such officer or officers as the President or other officers of such corporation, naming it.)
+
+Witness my hand and official Seal.
+
+My Commission expires .
+
+Notary Public
+
+Town of Estes Park Services Contract -- Page 38 of 89
+
+TOWN OF ESTES PARK:
+
+By:
+
+Date Title: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+State of ) ) ss County of )
+
+The foregoing instrument was acknowledged before me by ,
+
+as of the Town of Estes Park, a Colorado municipal
+
+corporation, on behalf of the corporation, this day of , 2026.
+
+Witness my hand and official Seal.
+
+My Commission expires .
+
+Notary Public
+
+APPROVED AS TO FORM:
+
+Town Attorney
+
+Town of Estes Park Services Contract -- Page 39 of 89
+
+GENERAL CONDITIONS
+
+Since the General Conditions are general, some conditions may not apply to a particular
+
+Project. Article 1- DEFINITIONS AND ABBREVIATIONS 1.1 Definitions: Whenever used in the Bidding Documents and Contract Documents, the
+
+following terms shall have the following meanings, applicable to both the singular and plural:
+
+1.1.1 Addenda: Written changes to the Bidding Documents issued at least two days before the
+
+Opening of Bids which modify or interpret the Contract or changes the date set for the Opening of
+
+Bids.
+
+1.1.2 Alternate Bid: An Alternate Bid is an amount stated in the Bid added to or deducted from
+
+the base amount of the Bid when the Town accepts a corresponding change in project scope,
+
+materials or method of construction described in the Contract.
+
+1.1.3 Bid: The proposal the Bidder submits on the prescribed Bid Forms stating the prices for
+
+the Work to be performed.
+
+1.1.4 Bid Forms: The Bid Proposal, Bid Bond, Bid Schedule, Bidder’s Qualifications and Data,
+
+and Subcontractors and Related Data.
+
+1.1.5 Bidder: The person, partnership, or corporation submitting a Proposal for the performance
+
+of the Work covered by the Contract.
+
+1.1.6 Bidding Documents: The Request for Proposal, Instructions for Bidders, Bid Forms,
+
+Specifications, Drawings, Construction Contract Template, Special and General Conditions and
+
+Addenda (if any).
+
+1.1.7 Bonds: Bid Bonds, Performance Bonds, and Labor and Material Payment Bonds or other
+
+instruments of security, furnished by the Contractor and its Surety according to the Contract.
+
+1.1.8 Calendar Days: Includes all days in a month including weekends and holidays.
+
+1.1.9 Change Order: A written modification of the Contract, issued after award to the
+
+Contractor, authorizing an addition, deletion or revision in the Work within the general scope of
+
+the Contract or authorizing an adjustment in the Contract Price or Contract Time, mutually agreed
+
+upon between the Town and the Contractor.
+
+Town of Estes Park Services Contract -- Page 40 of 89
+
+1.1.10 Town: The Town of Estes Park, in the State of Colorado, acting by and through its Mayor,
+
+Town Board of Trustees, Town Administrator, or other authorized representative.
+
+1.1.11 Completion Date: The date the Contract specifies the Work is to be completed.
+
+1.1.12 Contract: The Construction Contract consisting of the Agreement for a Construction
+
+Contract and the incorporated Contract Documents.
+
+1.1.13 Contract Coordinator: The authorized representative of the Town designated to act for
+
+the Town in processing the Award of Contracts, maintaining centralized official Contract
+
+documentation, providing administrative liaison/coordination, legal liaison/coordination via Town
+
+Attorney, and processing of Contract Payment authorizations as approved by the Facilities
+
+Manager. The Facilities Manager may also be the designated Contract Coordinator.
+
+1.1.14 Contract Documents: All the documents expressly incorporated into the Construction
+
+Contract, including but not limited to Exhibits to this Agreement, General Conditions, Special
+
+Conditions, Drawings, Supplemental Drawings and Schedules, Technical Specifications, Bidding
+
+Documents, Change Orders, Notice of Award, Notice of Final Acceptance, Notice of Construction
+
+Acceptance, Notice to Proceed, and Notice of Substantial Completion.
+
+1.1.15 Contract Price: The total monies payable to the Contractor under the terms and conditions
+
+of the Contract.
+
+1.1.16 Contract Time: The amount of time between beginning of Work as set out by the Notice
+
+to Proceed and the time set in the Contract for the Completion of Work
+
+1.1.17 Contractor: The person, company, firm or corporation contracting with the Town to
+
+construct, erect, alter, install or repair any work or construction project.
+
+1.1.18 Drawings: The part of the Contract prepared or approved by the Facilities Manager
+
+showing the characteristics and scope of the Work to be performed.
+
+1.1.19 Date of Contract: The execution date in the Agreement for a Construction Contract.
+
+1.1.20 Day: A calendar day of twenty-four hours each.
+
+1.1.21 Field Order: A written order directing a change in the Project issued by the Facilities
+
+Manager to the Contractor during construction.
+
+1.1.22 Inspector: The Town’s authorized representative assigned to make detailed inspection of
+
+the Work performed by the Contractor.
+
+Town of Estes Park Services Contract -- Page 41 of 89
+
+1.1.23 Notice of Award: The written notice of the acceptance of the Bid from the Town to the
+
+successful Bidder.
+
+1.1.24 Notice of Construction Acceptance: The written acknowledgment that construction is
+
+complete which starts the warranty period.
+
+1.1.25 Notice of Final Acceptance: The written acceptance of Work performed under the
+
+Contract, following satisfactory conclusion of the warranty period.
+
+1.1.26 Notice of Final Settlement: The notice published by the Town in a newspaper, in
+
+accordance with §38-26-107, C.R.S., prior to the Town’s final settlement with the Contractor for
+
+the Work.
+
+1.1.27 Notice to Proceed: The written notice by the Town to the Contractor authorizing it to
+
+proceed with the Work which establishes the Contract commencement and Contract Coordinator.
+
+1.1.28 Notice of Substantial Completion: The written notice of the date, as certified by the
+
+Facilities Manager, when the Project or a specified part is sufficiently completed, according to the
+
+Contract, so the Project or specified part can be used for the intended purposes.
+
+1.1.29 Owner: The Town; see 1.1.9.
+
+1.1.30 Project: The undertaking to be performed as provided in the Contract.
+
+1.1.31 Facilities Manager: The authorized representative of the Town, known as the Facilities
+
+Manager, assigned to the Project to ensure that all Work is performed according to the terms and
+
+conditions of the Contract. The Facilities Manager may serve as Contract Coordinator, and such
+
+titles may be used synonymously. Also see Article 10, “Facilities Manager’s Responsibilities.”
+
+1.1.32 Shop Drawings: All Drawings, diagrams, illustrations, brochures, schedules, and other
+
+data prepared by the Contractor, a Subcontractor, manufacturer, Supplier or distributor which
+
+illustrate how specific portions of the Work will be fabricated or installed.
+
+1.1.33 Special Conditions: Additions to the General Conditions containing instructions and
+
+conditions specific to an individual Project.
+
+1.1.34 Specifications: A part of the Contract Documents consisting of written technical
+
+description of materials, equipment, construction systems, standards, and workmanship.
+
+1.1.35 Subcontractor: Any person, company, firm or corporation, having a contract with the
+
+Contractor to furnish and perform on-site labor, with or without furnishing materials for the
+
+project.
+
+Town of Estes Park Services Contract -- Page 42 of 89
+
+1.1.36 Supplier: Any person or organization who supplies materials or equipment for the Work,
+
+including that fabricated to a special design, but who does not perform labor at the site.
+
+1.1.37 Surety: The entity which is bound with and for the Contractor for the Performance of the
+
+Work and for the Labor and Material Payment Bond.
+
+1.1.38 Unit Price: An amount stated in the Bid as a price per unit of measurement for materials
+
+or services as described in the Contract.
+
+1.1.39 Work: The construction and services required by the Contract, whether completed or
+
+partially completed, including all other labor, materials, equipment and services provided or to be
+
+provided by the Contractor to fulfill the Contractor’s obligations. The Work may be the whole or
+
+a part of the Project.
+
+1.1.40 Work Days: Includes all days in the month the Contractor is permitted to work; excludes
+
+weekends and holidays, unless otherwise specified in one of the Contract Documents.
+
+1.2 Abbreviations: When the following abbreviations appear in the documents, they are
+
+defined as follows:
+
+AASHTO American Association of State Highway and Transportation Officials
+
+ACI American Concrete Institute
+
+ADA Americans with Disabilities Act
+
+AISC American Institute of Steel Construction
+
+ANSI American National Standards Institute
+
+ASA American Standards Association
+
+ASCE American Society of Civil Engineers
+
+ASME American Society of Mechanical Engineers
+
+ASTM American Society for Testing and Materials
+
+AWS American Welding Society
+
+AWWA American Water Works Association
+
+CDOT Colorado Department of Transportation
+
+EPA Environmental Protection Agency
+
+MUTCD Manual on Uniform Traffic Control Devices
+
+OSHA Occupational Safety & Health Administration
+
+Town of Estes Park Services Contract -- Page 43 of 89
+
+WW-P Federal Specifications Prefix
+
+Article 2 – PRELIMINARY MATTERS 2.1 Notice to Proceed
+
+2.1.1 Following the execution of the Contract by the Parties, the Facilities Manager will give the
+
+Contractor written Notice to Proceed with the Work. The Contractor shall begin and continue the
+
+Work regularly and without interruption (unless otherwise directed in writing by the Facilities
+
+Manager) with the diligence and efficacy necessary to complete the Work within the time stated
+
+in the Contract.
+
+2.2 Contractor’s Understanding
+
+2.2.1 The Contractor agrees that, by careful examination, it is satisfied as to the nature and
+
+location of the Work, the conformation of the ground, the character, quality, and quantity of the
+
+materials to be encountered, the character of equipment and facilities needed before beginning and
+
+for the Project, the general and local conditions, and all other matters, which can in any way affect
+
+the Work under the Contract. No oral agreement with any officer, agent or employee of the Town
+
+either before or after the execution of the Contract shall affect or supersede any of the terms or
+
+obligations contained in the Contract. No portion of the Work shall be constructed under
+
+conditions that would affect adversely the quality or efficiency thereof unless special means or
+
+precautions are taken by the Contractor to perform the work in a proper and satisfactory manner.
+
+Any method of work suggested by the Town, but not specified, shall be used at the risk and
+
+responsibility of the Contractor, and the Town shall have no responsibility therefor. The
+
+Contractor alone shall be responsible for the safety, adequacy, and efficiency of the plan,
+
+equipment, and methods.
+
+2.3 Contractor’s Warranty
+
+2.3.1 The Contractor warrants that it has the knowledge, ability, experience, and expertise to
+
+perform the Work competently. The Contractor warrants the capacity of the Contractor’s
+
+construction plant, personnel, and its ability to complete the Project within the allotted time.
+
+2.4 Contractor’s License and Permits
+
+Town of Estes Park Services Contract -- Page 44 of 89
+
+2.4.1 The Contractor will obtain all licenses and permits required to do the Work. Whenever
+
+necessary, the Contractor will have a Building Contractor’s License with the Town by the time of
+
+Notice of Award. It will have all permits required by the Town, as well as those required by
+
+County, State and Federal agencies. Subcontractors shall also have a Town of Estes Park Building
+
+Contractor’s License and the proper permits.
+
+2.5 Schedules, Reports, and Records
+
+2.5.1 No later than the pre-construction meeting, the Contractor shall submit to the Facilities
+
+Manager a Construction Progress Schedule, on a form approved by the Facilities Manager,
+
+showing all Work the Contractor and all Subcontractors will perform. The Facilities Manager may
+
+require the Contractor to substitute a Critical Path Method schedule (CPM), or bar graph type
+
+schedule. The Special Conditions will state when a CPM network schedule is required.
+
+2.5.2 The schedule shall be in enough detail for the Facilities Manager to readily determine the
+
+Work to be performed each day. When requested by the Facilities Manager, the Contractor shall
+
+update the schedule.
+
+2.5.3 Before beginning construction, the Contractor shall give the Facilities Manager the dates
+
+it expects to submit Shop Drawings, manufacturers’ details, catalog cuts or other required special
+
+detail Drawings and also the dates of beginning manufacture, testing, delivery and installation of
+
+special equipment and materials. If at any time the Work is behind schedule, the Contractor shall
+
+immediately put into effect definite procedures for getting the Work back on schedule. The
+
+procedures shall be subject to review and modification by the Town. The Contractor shall not be
+
+allowed extra compensation for costs incurred because of accelerated operations required to
+
+maintain the schedule.
+
+2.6 Contractor’s Address
+
+2.6.1 The address in the Bid Proposal is designated as the place to which all communications to
+
+the Contractor will be delivered or mailed. The delivery at the listed address, in person or by
+
+certified mail, of any notice, letter or other communication to the Contractor, is adequate service
+
+upon the Contractor, and the date of the service is the date of delivery.
+
+2.7 Notification of Utility Owners
+
+2.7.1 The Contractor shall cooperate with Utility Owners to mitigate damage whenever the
+
+Contractor’s work affects their utilities.
+
+Town of Estes Park Services Contract -- Page 45 of 89
+
+2.7.2 The Contractor shall not excavate without first notifying the owners, operators or
+
+association of owners and operators having underground facilities in the area of such excavation.
+
+Notice may be given in person, by telephone or in writing. Notice to an association is notice to
+
+each member of the association. If the Contractor is digging deep or even just a few inches, the
+
+Contractor must contact Colorado 811 to have underground utilities marked, by calling 811.
+
+IDig811 is designed for residential and professional excavators to easily and quickly submit a
+
+utility request online.
+
+2.7.3 Contractor shall give notice of the commencement, extent, and duration of the excavation
+
+work at least two business days before beginning Work.
+
+2.7.4 If the Project affects fences, landscaping, mailboxes, driveways and other privately-owned
+
+improvements, the Contractor shall notify the affected property owners or occupants in writing at
+
+least two business days before beginning Work. The Contractor shall submit to the Facilities
+
+Manager written approval from the property owner if use of the property for storage or staging is
+
+requested. The Contractor shall cooperate with the owners or occupants to reduce inconvenience
+
+where reasonably possible.
+
+2.8 Department of Revenue Forms
+
+2.8.1 Materials and equipment purchased solely for Town projects, that will become a permanent
+
+part of the final project, are tax exempt. The Contractor and all subcontractors shall use the Town’s
+
+Tax Exemption Numbers when purchasing materials or supplies in connection with the Project.
+
+2.8.2 The Town’s Tax Exemption Numbers are as follows:
+
+a. Federal Tax Exemption Number: 84-6000661
+
+b. State of Colorado Tax Exemption Number: 98-00492
+
+Article 3 – DRAWINGS AND SPECIFICATIONS 3.1 Intent of Drawings and Specifications
+
+3.1.1 In the Drawings and Specifications, the Town intends that the Contractor furnish all
+
+superintendence, labor, materials, tools, equipment, supplies, machinery and transportation
+
+necessary for the proper execution of the Work unless specifically noted otherwise. The
+
+Contractor shall do all the Work shown on the Drawings and described in the Specifications and
+
+Town of Estes Park Services Contract -- Page 46 of 89
+
+all incidental Work reasonably necessary to complete the Project in a substantial and acceptable
+
+manner, and to complete fully the Work, ready for use, by the Town.
+
+3.1.2 The Contractor shall complete all Work according to the Specifications and Plans, and in
+
+compliance with applicable laws of Colorado and ordinances of the Town.
+
+3.1.3 In interpreting the Contract, words describing materials or work having a well-known
+
+technical or trade meaning, unless otherwise specifically defined, will be construed according to
+
+well-known meanings as recognized by engineers, architects, and the trades.
+
+3.1.4 When the Contract refers to a provision of the General Conditions or another Contract
+
+Document, the Contract means the provision as amended or supplemented by other provisions of
+
+the Contract.
+
+3.1.5 When the Specifications state the words “as directed,” or “as required,” or “as permitted,”
+
+or words of like meaning, it is understood that the direction, requirement or permission of the
+
+Facilities Manager is intended. Similarly, the words approved, acceptable or satisfactory shall
+
+refer to approval by the Facilities Manager.
+
+3.1.6 The Contract Documents are intended to be complementary, and Work called for on any
+
+Drawing and not mentioned in the Specifications, or Work described in the Specifications and not
+
+shown on any Drawing, is included under the Contract as if set forth in both the Specifications and
+
+Drawings.
+
+3.2 Copies of Drawings and Specifications Furnished
+
+3.2.1 The Facilities Manager will furnish to the Contractor, free of charge, up to four copies of
+
+Drawings and Specifications of the Work.
+
+3.3 Discrepancies in Drawings
+
+3.3.1 Contractor shall immediately report any discrepancies found between the Drawings and
+
+Specifications and site conditions or any errors or omissions in the Drawings or Specifications to
+
+the Facilities Manager, who shall promptly correct such error or omission in writing. Any affected
+
+Work done by the Contractor after discovery of such discrepancies, errors or omissions and
+
+affected by those is done at the Contractor’s risk. In all cases, the Facilities Manager shall decide
+
+the intent of the Drawings and Specifications. The decision is final.
+
+3.4 Dimensions
+
+Town of Estes Park Services Contract -- Page 47 of 89
+
+3.4.1 Figured dimensions shall govern over scaled dimensions.
+
+3.5 Drawings and Specifications at Job Site
+
+3.5.1 The Contractor shall keep one complete set of all Drawings and Specifications at the job
+
+site, available to the Facilities Manager or the Manager’s representative at all times.
+
+3.6 Shop Drawings
+
+3.6.1 The Contractor shall provide Shop Drawings, settings, schedules, and such other Drawings
+
+as may be necessary for the prosecution of the Work in the shop and in the field as required by the
+
+Drawings, Specifications or Facilities Manager’s instructions.
+
+3.6.2 The Contractor shall submit for approval electronic copies of all Shop Drawings and
+
+descriptive data as applicable showing all features not fully detailed on the Contract Plans but
+
+essential for a completely coordinated installation.
+
+3.6.3 The Town’s approval of Shop Drawings indicates only that the type and kind of equipment,
+
+general method of construction or detailing are satisfactory, but the Contractor may not construe
+
+the approval as a complete check. The Contractor has the responsibility for incorporating into the
+
+Work satisfactory materials and equipment meeting the requirements of the Contract Plans and
+
+Specifications, the proper dimensions, and the detailing of connections.
+
+3.6.4 The review of Shop Drawings is only to check for compliance with the design concept of
+
+the Project and general compliance with the Contract Documents. Approval does not indicate the
+
+waiver of any contract requirement. Changes in the Work are authorized only by separate written
+
+Change Order.
+
+Town of Estes Park Services Contract -- Page 48 of 89
+
+3.7 Record Documents
+
+3.7.1 The Contractor shall keep one record copy of all Addenda, Change Orders, Drawings, Field
+
+Orders, Modifications, and Shop Drawings and Specifications in good order. The Contractor shall
+
+record any changes made during construction on the record copies. The Contractor shall make a
+
+set of “Record Drawings” by marking this set of prints with all changes from the original Drawings
+
+as bid, including all Change Orders, alignment changes, depth changes of underground pipes and
+
+utilities, and all other items that are not the same as originally drawn. The Contractor shall keep
+
+the Record Drawings up to date as the Project progresses. The Facilities Manager may require, as
+
+a condition of the approval of the monthly progress payment, periodic inspection of the Record
+
+Drawings. The Contractor will deliver the Record Drawings to the Facilities Manager upon
+
+completion of the Project before Final Payment.
+
+3.8 Differing Site Conditions
+
+3.8.1 The Contractor shall promptly, before such conditions are further disturbed, notify the
+
+Facilities Manager in writing of:
+
+3.8.1.1 Subsurface or latent physical conditions at the job site differing materially from those
+
+indicated in the Contract; or
+
+3.8.1.2 Unknown physical conditions at the job site, of an unusual nature, differing materially from
+
+those ordinarily encountered and generally recognized as inherent in Work of the character
+
+provided for in the Contract.
+
+3.8.2 Upon receipt of written notification from the Contractor of alleged differing site conditions,
+
+the Facilities Manager shall promptly investigate the conditions and if it finds the conditions
+
+materially differ, and so cause an increase or decrease in the Contractor’s cost of or the time
+
+required for performance of any part of the Work under the Contract, an equitable adjustment will
+
+be made and the Contract modified in writing as provided for in Article 11 of these General
+
+Conditions.
+
+3.8.3 No claim will be allowed under this Article unless the Contractor has given the written
+
+notice required in Article 3.8.1.
+
+3.8.4 No claim will be allowed under this Article if Final Payment has been made.
+
+3.9 Surveys
+
+Town of Estes Park Services Contract -- Page 49 of 89
+
+3.9.1 The Facilities Manager has the option to develop and arrange for detail surveys through a
+
+separate contract if deemed desirable or necessary and if specifically noted as such in the Special
+
+Conditions, otherwise the Contractor shall provide all survey required to construct the Project
+
+according to the Project documents. The Contractor assumes full responsibility for construction
+
+according to the proposed lines and grades.
+
+3.9.2 The Contractor shall carefully protect all monuments and property markers from
+
+disturbance or damage.
+
+Article 4 – USE OF LAND AND RIGHT-OF-WAY 4.1 Acquisition of Right-of-Way
+
+4.1.1 Before issuance of Notice to Proceed, the Town shall obtain all land and right-of-way
+
+necessary for carrying out and completion of the Work to be performed pursuant to the Contract,
+
+unless otherwise mutually agreed.
+
+.1.2 The Town shall provide to the Contractor information which delineates and describes the
+
+lands owned and rights-of-way acquired, when necessary. The Contractor shall confine its
+
+operations within the areas designated by the Facilities Manager.
+
+4.2 Access to Right-of-Way
+
+4.2.1 The Town will provide right of access to all places necessary for the performance of the
+
+Work. Nothing contained in the Contract shall give the Contractor exclusive occupancy of the
+
+area provided by the Town. The Town, other Contractors of the Town and utility companies may
+
+enter upon or occupy portions of the land furnished by the Town for any purpose, but without
+
+unreasonably interfering with the completion of the Project. Joint occupancy or use of the territory
+
+shall not be the basis of any claim for delay or damages.
+
+4.2.2 The responsibility for protection and safekeeping of equipment and materials on or near
+
+the site is entirely that of the Contractor, and no claim shall be made against the Town by reason
+
+of any act of an employee or trespasser. It shall be further understood that should any occasion
+
+arise necessitating access to the sites occupied by these stored materials and equipment, the
+
+Contractor shall immediately move the same. No materials or equipment may be placed upon the
+
+Town’s property until the Town has agreed to the location contemplated by the Contractor to be
+
+used for storage.
+
+Town of Estes Park Services Contract -- Page 50 of 89
+
+4.3 State Highway Right-of-Way
+
+4.3.1 If any part of the Project is within the right-of-way of a roadway under the jurisdiction of
+
+the Colorado Division of Transportation (CDOT) the Town shall obtain the necessary permits from
+
+CDOT to perform such Work. The Contractor shall conform to all the requirements and
+
+restrictions indicated on the permit. The Contractor shall restore the area to its original condition,
+
+including reseeding if necessary, at the completion of the Project.
+
+4.4 Temporary Storage Facilities
+
+4.4.1 The Contractor may secure at its own expense and without liability to the Town, use of any
+
+additional land that the Contractor may desire for temporary construction activities, and facilities,
+
+or storage of materials.
+
+Article 5 – BONDS AND INSURANCE 5.1 Performance Bond and Labor and Material Payment Bond
+
+5.1.1 The Contractor shall, within ten days after receipt of the Notice of Award, and before the
+
+commencement of any operations hereunder execute the Contract and furnish the Town with
+
+separate Performance, and Labor and Material Payment Bonds each in a penal sum equal to the
+
+amount of the Contract Price, conditioned upon the Contractor’s performance of all undertakings,
+
+covenants, terms, conditions, and agreements of the Contract, and upon the Contractor’s prompt
+
+payment to all persons supplying labor and materials in the prosecution of the Work provided by
+
+the Contract. The Contractor and a corporate Bonding company, licensed to transact such business
+
+in the State of Colorado and acceptable to the Town, shall execute the Bonds. The Contractor
+
+bears the expense of these Bonds. If at any time the Surety on such Bonds becomes irresponsible
+
+or loses its right to do business in the State of Colorado, the Town may require another Surety,
+
+which the Contractor shall furnish within ten days after receipt of written notice to do so. Evidence
+
+of authority of an attorney-in-fact acting for the corporate Surety shall be provided in the form of
+
+a certificate as to its power of attorney and to the effect that it is not terminated and remains in full
+
+force and effect on the date of the Bonds. The form of the Bonds is subject to the Town’s approval.
+
+Town of Estes Park Services Contract -- Page 51 of 89
+
+5.2 Insurance
+
+5.2.1 The insurance requirements contained in the Contract shall not limit or redefine the
+
+obligations of the Contractor as provided elsewhere in the Contract.
+
+5.2.2 Only insurance companies with authority to issue policies in Colorado may provide
+
+insurance coverage under the Contract.
+
+5.3 Insurance Requirements
+
+5.3.1 The Contractor shall purchase and maintain, for the full period of the Contract, including
+
+any warranty period, at the Contractor’s or Subcontractor’s sole expense, insurance policies
+
+providing coverage as follows:
+
+5.3.1.1 Comprehensive Auto Liability: Comprehensive form, including owned, hired and non-
+
+owned automobiles. The limits of coverage shall be at least $1,000,000.00 per occurrence. The
+
+policy shall contain a severability of interests provision. The policy shall include coverage for
+
+uninsured/underinsured motorists.
+
+5.3.1.2 Comprehensive General Liability: Commercial general liability insurance covering
+
+personal injury, bodily injury and property damage; Explosion & Collapse; Underground Hazard;
+
+Products/Completed Operations; Contractual Liability; Broad Form Property Damage; and
+
+Town’s & Contractor’s Protective. The limits shall be at least $1,000,000/$1,000,000 if the
+
+Contract Price is $50,000 or less and $1,000,000/$2,000,000 if the Contract Price is over $50,000.
+
+All policies shall be of the occurrence form. Any deviation from the occurrence form shall be
+
+approved by the Town of Estes Park Risk Manager. A copy of each policy and endorsement must
+
+be submitted to the Risk Manager with each certificate of insurance when a deviation is requested.
+
+5.3.1.3 Workers’ Compensation and Employer’s Liability: as statutorily required for persons
+
+performing work under the Contract. Any Subcontractor hired by the Contractor shall also carry
+
+Workers’ Compensation and Employers’ Liability coverage. Employer’s liability insurance shall
+
+have a minimum coverage of $1,000,000 per occurrence.
+
+5.3.1.4 Builder’s Risk: a Builder’s Risk Policy is required in an amount not less than the Contract
+
+Price. The Contractor shall cause its insurance provider to name the Town as an additional insured.
+
+5.3.1.5 Installation Floater: an Installation Floater Policy is required for contracts involving the
+
+installation of unique or customized equipment and for contracts involving installations that in the
+
+Town of Estes Park Services Contract -- Page 52 of 89
+
+judgment of the Town threaten to damage existing structures. The Contractor shall cause its
+
+insurance provider to name the Town as an additional insured.
+
+5.3.2 Additional Insured Clause: The insurance coverage required for the performance of the
+
+Contract must be endorsed to name the Town of Estes Park, Colorado, a municipal corporation,
+
+its mayor and trustees, officers, agents, employees and volunteers, as additional insured with
+
+respect to the activities performed under the Contract.
+
+5.3.3 Primary Insurance Endorsement: Pursuant to an endorsement submitted to and
+
+approved by the Town, all coverage must specifically state the insurance coverage for the Project.
+
+In no event shall an additional endorsement in the form of GL20.09 (1973-01 ed.) or any similar
+
+form be submitted or accepted.
+
+5.3.4 Certificate of Insurance: As evidence of the insurance coverage required by the Contract,
+
+the Contractor shall furnish a certificate of insurance to the Facilities Manager. The certificate
+
+will specify parties who are additional insured. If the Contractor is self-insured under the laws of
+
+the State of Colorado, Contractor shall provide appropriate declarations of coverage.
+
+5.3.5 Continuance of Insurance: For the term of the Contract, which includes any warranty
+
+periods, the Contractor shall not cancel, materially change or fail to renew the insurance coverage,
+
+and agrees to notify the Contract Coordinator of any material reduction or exhaustion of aggregate
+
+policy limits. If the Contractor fails to purchase or maintain the insurance coverage set forth in
+
+these General Conditions, the Town may deem such failure to be breach of this Contract.
+
+5.3.6 Policy Details: Insurance required shall be with companies qualified to do business in the
+
+State of Colorado with a general policyholder’s financial rating of not less than A+3A as set forth
+
+in the most current edition of “Best’s Insurance Reports” and may provide for deductible amounts
+
+as the Contractor may deem to be reasonable for the Project, but in no event greater than Twenty
+
+Thousand Dollars ($20,000). No such policies shall be cancelable or subject to reduction in
+
+coverage limits or other modification. The Contractor shall not do or permit to be done anything
+
+that shall invalidate the insurance policies referred to in this paragraph.
+
+Article 6 – INDEMNIFICATION 6.1 Responsibility for Damage Claims: The Contractor shall indemnify, save harmless, and
+
+defend the Town, its officers and employees, from and in all suits, actions or claims of any
+
+character brought because of: any injuries or damage received or sustained by any person,
+
+Town of Estes Park Services Contract -- Page 53 of 89
+
+persons or property because of operations for the Town under the Contract; the Contractor’s
+
+failure to comply with the provisions of the Contract; the Contractor’s neglect of materials while
+
+constructing the Work; because of any act or omission, neglect or misconduct of the Contractor;
+
+because of any claims or amounts recovered from any infringements of patent, trademark, or
+
+copyright, unless the design, device, materials or process involved are specifically required by
+
+Contract; from any claims or amount arising or recovered under the “Workers’ Compensation
+
+Act,” by reason of the Contractor’s failure to comply with the act; pollution or environmental
+
+liability; or any failure of the Contractor to comply with any other law, ordinance, order or
+
+decree. The Town may retain so much of the money due the Contractor under the Contract, as
+
+the Town considers necessary for such purpose, for the Town’s use. If no money is due, the
+
+Contractor’s Surety may be held until such suits, actions, claims for injuries or damages have
+
+been settled. Money due the Contractor will not be withheld when the Contractor produces
+
+satisfactory evidence that it and the Town are adequately protected by commercial general
+
+liability and property damage insurance.
+
+6.1.1 The Contractor also agrees to pay the Town all expenses incurred to enforce this
+
+“Responsibility for Damage Claims” agreement and if the insurer of the Contractor fails to provide
+
+or pay for the defense of the Town of Estes Park, its officers and employees, as additional insured,
+
+the Contractor agrees to pay for the cost of that defense.
+
+6.1.2 Nothing in the INSURANCE PROVISIONS shall limit the Contractor’s responsibility
+
+for payment of claims, liabilities, damages, fines, penalties, and costs resulting from its
+
+performance or nonperformance under the Contract.
+
+Article 7 – CONTRACTOR’S RESPONSIBILITIES 7.1 Control of the Work
+
+Town of Estes Park Services Contract -- Page 54 of 89
+
+7.1.1 When the Contractor is not present on the Project it shall have a Superintendent or other
+
+representative acceptable to the Town present who shall, during the absence of the Contractor, be
+
+its representative and have immediate charge of the Project. The Superintendent or representative
+
+shall have the Contractor’s authority to act in its absence. The Superintendent shall ensure
+
+expeditious and competent handling of the work. A superintendent experienced in construction of
+
+the type specified and who is a permanent member of the Contractor’s organization shall be a
+
+resident at the Project throughout the construction. The superintendent shall be fully authorized
+
+to act for the Contractor and to receive whatever orders or notices may be given for the proper
+
+prosecution of the work. The Contractor’s field organization shall include an experienced staff of
+
+qualified technical personnel to handle on-site engineering, planning, and direction of all
+
+fieldwork.
+
+7.1.2 Any person employed on the Project who fails, refuses or neglects to obey the
+
+Superintendent or Contractor’s other designated representative, shall, upon the order of the
+
+Facilities Manager, be at once removed from the Project and not again employed on any part of
+
+the Project.
+
+7.2 General Use of Subcontractors
+
+7.2.1 The Contractor may utilize the services of specialty Subcontractors on those parts of the
+
+Work which, under normal contracting practices, are performed by specialty Subcontractors.
+
+7.2.2 The Contractor shall not sublet or subcontract any portion of the Work to be done under
+
+the Contract until approval of such action has been obtained from the Town.
+
+7.2.3 The Contractor is fully responsible to the Town for the acts and omissions of its
+
+Subcontractors, and of persons either directly or indirectly employed by them.
+
+7.2.4 Nothing contained in the Contract creates any contractual relationship between any
+
+Subcontractor and the Town.
+
+7.2.5 The Contractor shall put appropriate provisions in all Subcontracts relative to the Work to
+
+bind Subcontractors to the terms of the Contract insofar as applicable to the Work of
+
+Subcontractors, and to give the Contractor the same power to terminate any Subcontractor that the
+
+Town may exercise over the Contractor.
+
+Town of Estes Park Services Contract -- Page 55 of 89
+
+7.2.6 The Contractor shall make available to each proposed Subcontractor, before the execution
+
+of the subcontract agreement, copies of the Contract Documents to which the Subcontractor will
+
+be bound, and, upon written request of the Subcontractor, identify to the Subcontractor terms and
+
+conditions of the proposed subcontract agreement which may be at variance with the Contract
+
+Documents. Subcontractors shall similarly make copies of applicable portions of such documents
+
+available to their respective proposed Sub-Subcontractors.
+
+7.3 Materials and Equipment Furnished by the Contractor
+
+7.3.1 The Contractor shall furnish and pay the cost of all of the necessary materials not furnished
+
+by the Town, all the superintendence, labor, tools, equipment, installation, maintenance,
+
+dismantling and removal of materials, supplies, temporary facilities, machinery and transportation.
+
+The Contractor shall perform all the work required for the construction of all structures listed and
+
+itemized under the Bid Schedule of the Bid in strict accordance with the plans, Specifications and
+
+requirements and any amendments thereto and supplemental plans and Specifications hereafter
+
+approved.
+
+7.3.2 Unless otherwise provided for in the Specifications, all workmanship, equipment,
+
+materials, and articles incorporated in the Project are to be the best of their respective kinds, new
+
+and undamaged.
+
+7.3.3 Materials, supplies or equipment to be incorporated into the Project shall not be purchased
+
+by the Contractor or any Subcontractor subject to chattel mortgage or under a conditional sales
+
+contract or other agreement by which an interest is retained by the seller.
+
+7.3.4 The Contractor shall furnish the Facilities Manager, for the Manager’s approval, the name
+
+of the manufacturer of machinery and other equipment for materials the Contractor contemplates
+
+incorporating in the Project. The Contractor shall also furnish information on capacities,
+
+efficiencies, sizes, etc., and other information as may be required by the Facilities Manager. The
+
+Contractor shall submit samples for approval when requested. Machinery, equipment, materials,
+
+and articles installed or used without the Facilities Manager’s approval are at the risk of subsequent
+
+rejection.
+
+7.3.5 The Contractor shall give the Facilities Manager an electronic copy of all shop manuals,
+
+operating manuals, parts lists, classifications, catalog cuts, Specifications, warranties and
+
+guarantees for all equipment and machinery installed.
+
+Town of Estes Park Services Contract -- Page 56 of 89
+
+7.3.6 Consideration of a product as an “equal” by the Facilities Manager may require that the
+
+manufacturer of such product furnish guarantees that extend beyond the usual product warranty
+
+time. The refusal of a manufacturer to provide such guarantees is sufficient reason for rejecting
+
+the product.
+
+7.4 Patents and Copyrights
+
+7.4.1 The Contractor shall provide a suitable legal agreement with the patentee giving the
+
+Contractor the right to use any design, device, material, or process covered by letters patent or
+
+copyright, in the construction of the Project when the use has not been specified or required by the
+
+Drawings and Specifications. The Contractor shall file a copy of this agreement with the Town,
+
+if requested. The Contractor and the Surety shall indemnify, defend and save harmless the Town
+
+from all claims for infringements on patented design, devices, material, process or any trademark
+
+or copyright during the prosecution or after the completion of the Project.
+
+7.4.2 If any design, device, material, process or product of a particular manufacturer covered by
+
+letters patent or copyright is specified for use by the Drawings and Specifications, the Town is
+
+responsible for any claims for infringement by reason of the use of such design, device, material,
+
+process or product of a particular manufacturer; but the Contractor shall pay any royalties or
+
+license fees required.
+
+7.5 Existing Utilities
+
+7.5.1 The Town has collected and shown on the Drawings available information on the location
+
+of existing underground, surface and overhead structures and utilities. However, the Town does
+
+not guarantee the results of the investigations are accurate or complete. It is the Contractor’s
+
+responsibility to verify all locations of existing structures and utilities shown on the Drawings and
+
+to ascertain whether any other structures and utilities exist.
+
+7.5.2 The Contractor shall support, and protect from injury, existing power lines, telephone lines,
+
+water mains, gas mains, sewers, cables, conduits, ditches, curbs, walks, pavements, driveways,
+
+and other structures in the vicinity of the Project which are not authorized to be removed until
+
+completion of the Project. The Contractor shall protect, shore, brace, support, and maintain all
+
+underground pipes, conduits, drains, and other underground construction uncovered or otherwise
+
+affected by the construction work performed by the Contractor.
+
+7.6 Coordination with Town Departments
+
+Town of Estes Park Services Contract -- Page 57 of 89
+
+7.6.1 The Contractor shall always coordinate its Work with the Town of Estes Park Public Works
+
+and Utilities Departments. If it becomes necessary to close portions of any water system due to
+
+construction operations, a minimum of 48 hours notification shall be given the Utilities
+
+Department and whenever possible one week’s notice should be given. It is the Contractor’s
+
+responsibility to ensure continuity of the utilities.
+
+7.6.2 If Town owned electrical utilities are involved, the Contractor shall coordinate its Work
+
+with the Town of Estes Park Utilities Department. Contractors should make every effort to give
+
+the Utilities Department one week’s notice of upcoming construction involving the electric
+
+services; a minimum of 48 hours notification shall be given to the Utilities Department.
+
+7.6.3 All electrical power and water from Town owned utilities required for the Project will be
+
+provided at the Contractor’s expense.
+
+7.6.4 The Contractor shall cooperate with all other contractors who may be performing work on
+
+behalf of the Town and workers who may be employed by the Town in the vicinity of the work
+
+under the Contract and shall conduct operations to minimize interference with the work of such
+
+contractors or workers. The Contractor shall promptly make good, at the Contractor’s own
+
+expense, any injury or damage that may be sustained by other contractors or employees of the
+
+Town at the Contractor’s hands. Any difference or conflict that may arise between the Contractor
+
+and other contractors shall be resolved as determined by the Town. If the work of the Contractor
+
+is delayed because of any acts or omissions of any other contractor, the Contractor shall have no
+
+claim against the Town on that account other than an extension of time. If any part of the
+
+Contractor’s work is dependent upon the quality and completeness of work performed under
+
+another contract, the Contractor shall inspect the other contractor’s work and promptly report
+
+defects therein which render such work unsuitable for the proper execution of the work under this
+
+Contract. Failure to report such defects to the Town shall constitute the Contractor’s acceptance
+
+of such work as suitable to receive the Contractor’s work; provided, however, that the Contractor
+
+shall not be responsible for defects which develop after such inspection and which could not have
+
+been reasonably detected or foreseen.
+
+7.7 Laws and Ordinances
+
+Town of Estes Park Services Contract -- Page 58 of 89
+
+7.7.1 The Contractor shall perform all obligations under the Contract in strict compliance with
+
+all federal, state, and municipal laws, rules, statues, charter provisions, ordinances, and
+
+regulations, applicable to the performance of the Contractor under the Contract.
+
+7.7.2 The Contractor shall obtain all other permits and licenses required in the prosecution of
+
+the Work.
+
+7.7.3 It is unlawful and unethical for any person to offer, give or agree to give any Town
+
+employee, Town official or former Town employee, or for any Town employee, Town official or
+
+former Town employee to solicit, demand, accept or agree to accept from another person, a gratuity
+
+or an offer of employment in connection with any decision, approval, disapproval,
+
+recommendation or preparation of any part of a program requirement or a purchase request,
+
+influencing the content of any specification or procurement standard, rendering of advice,
+
+investigation, auditing or in any other advisory capacity in any proceeding or application, request
+
+for ruling, determination, claim or controversy, or other particular matter, pertaining to any
+
+program requirement or a contract or subcontract, or to any solicitation or proposal therefor.
+
+7.7.4 It is unlawful and unethical for any payment, gratuity or offer of employment to be made
+
+by or on behalf of a subcontractor under a contract to the prime contractor or higher tier
+
+subcontractor of any person associated therewith, as an inducement for the award of a subcontract
+
+or order.
+
+7.7.5 The Contractor shall indemnify, hold harmless, and assume liability on behalf of the Town
+
+and its officers, employees, and agents, for all costs, expenses, claims, damages, liabilities, court
+
+awards, attorney fees and related costs, and any other amounts incurred by the Town in relation to
+
+the Contractor’s noncompliance with the accessibility standards for an individual with a disability
+
+adopted by the Colorado Office of Information Technology pursuant to section 24-85-103, C.R.S.
+
+7.8 Protection of Persons
+
+7.8.1 It is a condition of the Contract, and the Contractor shall make a condition of each
+
+Subcontract entered into pursuant to the Contract, that the Contractor and any Subcontractor shall
+
+not require any laborer, mechanic or other person employed in performance of the Contract to
+
+work in surroundings or under working conditions which are unsanitary, hazardous or dangerous
+
+to health or safety. The Contractor shall comply with all applicable safety rules and regulations
+
+adopted by the United States Department of Labor Occupational Safety and Health Administration
+
+Town of Estes Park Services Contract -- Page 59 of 89
+
+(OSHA), the Industrial Commission of the State of Colorado or the Town of Estes Park, whichever
+
+is most restrictive. The Town assumes no duty to ensure that the Contractor follows the safety
+
+regulations issued by OSHA or the State of Colorado.
+
+7.8.2 For operations involving trenching, excavation or any other underground construction, the
+
+Contractor’s attention is specially directed to and its Work shall conform to the Construction
+
+Safety and Health Regulations, Part P Subparagraph 1926.650-653 by OSHA, latest revision.
+
+7.8.3 The Contractor shall always, whether or not so specifically directed by the Facilities
+
+Manager, take necessary precautions to ensure the protection of the public. The Contractor shall
+
+furnish, erect, and maintain at its own expense all necessary precautions for the protection of the
+
+Work and safety of the public through and around its construction operations.
+
+7.9 Protection of Property
+
+7.9.1 The Contractor shall continuously and adequately protect the Work from damage, injury
+
+or loss arising in connection with the Contract. It shall repair or replace at its expense any such
+
+damage, injury or loss, except such as may be directly due to error in the Contract or caused by
+
+agents or employees of the Town. It shall provide and maintain at its expense all passageways,
+
+barricades, guard fences, lights, and other protection facilities required by public authority or local
+
+conditions.
+
+7.9.2 The Contractor is responsible for protection of all public and private property on and
+
+adjacent to the site of the Work. It shall use every precaution necessary to prevent damage to
+
+curbs, sidewalks, driveways, trees, shrubs, sod, mailboxes, fences, and other private and public
+
+improvements. It shall protect carefully from disturbance or damage all land monuments and
+
+property markers until an authorized agent has witnessed or otherwise referenced their locations,
+
+and shall not remove them until directed.
+
+7.9.3 The Contractor shall carefully preserve all monuments, benchmarks, property pins,
+
+reference points, and stakes. The Contractor shall be charged with the expense of replacement of
+
+any such items destroyed and shall be responsible for any mistake or loss of time that may be
+
+caused. Permanent monuments or benchmarks which must be removed or disturbed shall be
+
+protected until they can be properly referenced for relocation. The Contractor shall furnish
+
+materials and assistance for the proper replacement of such monuments or benchmarks, but actual
+
+replacement shall be done by a licensed surveyor.
+
+Town of Estes Park Services Contract -- Page 60 of 89
+
+7.9.4 Whenever, in the opinion of the Town, the Contractor has not taken sufficient precaution
+
+for the safety of the public or the protection of the work to be constructed under the Contract or of
+
+adjacent structures or property, and whenever, in the opinion of the Town, an emergency has arisen
+
+and immediate action is considered necessary, then the Town, with or without notice to the
+
+Contractor, may provide suitable protection by causing work to be done and material to be
+
+furnished and placed. The cost of such work and material shall be borne by the Contractor and, if
+
+the same is not paid on presentation of the bills therefore, such costs may be deducted from any
+
+amounts due or to become due the Contractor. The performance of such emergency work shall
+
+not relieve the Contractor of responsibility for any damage that may occur.
+
+7.10 Protection of Historical Sites
+
+7.10.1 When the Contractor’s excavating operations encounter remains of prehistoric people’s
+
+dwelling sites or artifacts of historical or archeological significance, the Contractor shall
+
+temporarily discontinue the operations, and immediately advise the Facilities Manager. The
+
+Facilities Manager will contact archeological authorities to determine the disposition of the items
+
+in question. When directed, the Contractor shall excavate the site in such a manner as to preserve
+
+the artifacts encountered and remove them for delivery to the custody of the proper authorities.
+
+Such excavation is considered, and paid for, as extra Work.
+
+7.11 Responsibility to Repair
+
+7.11.1 Should any existing property be damaged, the Contractor shall immediately notify the
+
+Owner of such property. Unless authorized in writing by the owner of the property or directed by
+
+the Facilities Manager, the Contractor shall not attempt to make repairs. Written authorization
+
+from the owner to make repairs must be so worded as to save the Town harmless from any
+
+responsibility whatsoever relative to the sufficiency of the repairs, and to make the Town a
+
+beneficiary of that provision. The Contractor shall give the Facilities Manager a copy of the
+
+written authorization to make repairs.
+
+7.11.2 When any direct or indirect damage or injury is done to any public or private property or
+
+utility by or on account of any act, omission, neglect or misconduct in the execution of the Work,
+
+the Contractor shall restore the damaged property at its own expense to a condition equal to or
+
+better than that existing before such damage or injury.
+
+Town of Estes Park Services Contract -- Page 61 of 89
+
+7.11.3 The Contractor shall replace any materials and equipment lost, stolen, damaged or
+
+otherwise rendered useless during the performance of Work on the Project.
+
+7.12 Traffic Control
+
+7.12.1 The Contractor shall arrange Work to disrupt traffic as little as possible. All traffic Control
+
+Devices used shall conform to the latest edition of the Manual of Uniform Traffic Control Devices,
+
+(MUTCD). Except as otherwise permitted, two-way traffic shall be maintained at all times in
+
+public roadways. At least 72 hours before starting any Work in Town right-of-way, the Contractor
+
+shall submit a detailed traffic control plan for review from the Public Works Department. The
+
+approval shall establish the requirements for closures related to the number of lanes and time of
+
+day lanes or streets may be closed. The Traffic Control Plan (TC Plan) shall include the name of
+
+the contractor, the name and phone number of the person responsible for the traffic control, the
+
+date for beginning and ending construction activity and hours of operation expected. The TC Plan
+
+should show the widths of streets involved, traffic lanes, the size and location of the Work area
+
+with distances from the curb, distance to the nearest intersection and the type and location of traffic
+
+control devices. No changes to the TC Plan shall be permitted without prior approval by the Public
+
+Works Department.
+
+7.12.2 The Contractor shall furnish and maintain all necessary signs, barricades, lights, and
+
+flaggers necessary to control traffic and provide for safety of the public, all in compliance with the
+
+MUTCD with subsequent revisions and additions, and to the satisfaction of the Public Works
+
+Department.
+
+7.12.3 Whenever a police officer is necessary for traffic control, the Contractor shall hire and pay
+
+a uniformed off-duty police officer with authority in the Town to direct traffic. The police
+
+department will determine the rate of pay for the officers.
+
+7.12.4 The Contractor shall make its Traffic Control plans in concurrence with the Traffic Control
+
+requirements specifically stated in the Special Conditions.
+
+7.13 Sanitary Regulations
+
+7.13.1 The Contractor is responsible for providing proper health and sanitation facilities for its
+
+employees, in compliance with any rules and regulations of the State Board of Health or any other
+
+bodies having jurisdiction.
+
+Town of Estes Park Services Contract -- Page 62 of 89
+
+7.13.2 The Contractor shall always provide an abundant supply of safe drinking water for its
+
+employees and shall give orders against the drinking of any water known to be unsafe in the
+
+vicinity of the Project.
+
+7.13.3 At convenient places, the Contractor shall provide fly-proof outside toilets which are to be
+
+maintained in a sanitary condition. Toilets shall not be permitted in any reservoir area and shall
+
+not be permitted where they may pollute a water supply.
+
+7.14 Pollution Control
+
+7.14.1 The Contractor shall comply with all applicable Federal and State laws, orders, and
+
+regulations concerning the control, prevention, and abatement of water pollution, air pollution, and
+
+noise pollution in all operations pertaining to the Contract whether on right-of-way provided by
+
+the Town or elsewhere.
+
+7.14.2 The Contractor shall use construction methods that prevent release, entrance or accidental
+
+spillage of solid matter, contaminants, debris, and other objectionable pollutants and wastes
+
+including, but not restricted to refuse, garbage, cement, concrete, sewage effluent, industrial waste,
+
+radioactive substances, oil and other petroleum products, aggregate processing tailings, mineral
+
+salts, and thermal pollution. Non-regulated solid wastes shall be disposed of by methods approved
+
+under applicable laws and regulations, including, the Resource Conservation and Recovery Act
+
+(RCRA), Subtitle D, as administered by Colorado and local Health Departments and the EPA.
+
+Contaminated and hazardous materials are regulated by RCRA, Subtitles C and D. The Contractor
+
+shall notify the Colorado Department of Public Health and Environment, Larimer County Public
+
+Health, and the Estes Valley Fire Protection District if suspect materials are encountered.
+
+7.14.3 The Contractor shall utilize methods and devices that are reasonably available to control,
+
+prevent, and otherwise minimize atmospheric emissions or discharges of air contaminants
+
+including dust in its construction activities and operation of equipment.
+
+7.14.4 The Contractor shall not emit dust into the atmosphere during any operations, including
+
+but not limited to: grading; excavating; manufacturing, handling or storing of aggregates;
+
+trenching; or cement or pozzolans. The Contractor shall use the necessary methods and equipment
+
+to collect, deposit, and prevent dust from its operations from damaging crops, orchards, fields or
+
+dwellings or causing a nuisance to persons. The Contractor is liable for any damage resulting from
+
+dust.
+
+Town of Estes Park Services Contract -- Page 63 of 89
+
+7.14.5 The Contractor may not operate equipment and vehicles with excessive emission of
+
+exhaust gases due to improper mechanical adjustments, or other inefficient operating conditions,
+
+until repairs or adjustments are made.
+
+7.14.6 Burning trash, rubbish, trees, brush or other combustible construction materials is
+
+permitted only when the Contractor has any necessary burning permit from any authority having
+
+jurisdiction. Burning shall be conducted in strict conformance with the permit.
+
+7.14.7 De-watering for structure foundations or earthwork operations adjacent to or encroaching
+
+on lakes, streams or water courses shall be done in a manner which prevents muddy water and
+
+eroded materials from entering the lakes, streams or water courses, by construction of intercepting
+
+ditches, bypass channels, barriers, settling ponds or by other approved means. Excavated materials
+
+may not be deposited or stored in or alongside lakes or water courses where they can be washed
+
+away by high water or storm runoff.
+
+7.14.8 The Contractor may not allow waste water from aggregate processing, concrete batching
+
+or other construction operations to enter lakes, streams, water courses or other surface waters
+
+without turbidity control methods such as settling ponds, gravel-filter entrapment dikes, approved
+
+flocculation processes that are not harmful to fish, recirculation systems for washing of aggregates
+
+or other approved methods. Any waste waters discharged into surface waters shall conform to
+
+applicable discharge standards of the Colorado Department of Public Health and Environment and
+
+the Federal Government.
+
+7.15 Stormwater Quality
+
+7.15.1 The Contractor shall be responsible for the preservation and protection of storm water
+
+collection systems and other natural and developed drainage ways, which may be affected by Work
+
+done under the Contract. Any construction activity may be required to obtain a Stormwater
+
+Discharge Permit Associated with Construction Activity from the Colorado Department of Public
+
+Health and Environment (CDPHE). The Colorado Department of Public Health and Environment,
+
+Water Quality Control Division, can be reached at 303-692-3500
+
+http://www.cdphe.state.co.us/wq/PermitsUnit/wqcdpmt.html ). Unless otherwise indicated, the
+
+Contractor is responsible for obtaining this permit from the Colorado Department of Public Health
+
+and the Environment.
+
+Town of Estes Park Services Contract -- Page 64 of 89
+
+7.15.2 The Contractor shall satisfy all environmental quality standards imposed by law and take
+
+reasonable steps to minimize the environmental impact of the work. In compliance with applicable
+
+Town, state and federal law:
+
+1\. The Contractor shall not pollute the water of any pond, lake, stream, ditch, or other
+
+watercourse.
+
+2\. The Contractor will implement erosion control practices and stormwater best management
+
+practices.
+
+3\. The Contractor will comply with all appropriate groundwater discharge permits associated
+
+with this project.
+
+7.15.3 All permit requirements must be met throughout the warranty period and until Final
+
+Stabilization is reached.
+
+7.15.4 For purposes of this Contract, the Facilities Manager is authorized to enforce the Estes Park
+
+Municipal Code. Any direct costs, including assessed fines, will be charged to the Contractor and
+
+appropriate deduction will be made from the Contractor’s monthly payments.
+
+7.15.5 This work consists of constructing, installing, maintaining, and removing when required,
+
+erosion control measures during the life of the Contract or length of any permit, whichever is open
+
+longer, to prevent or minimize erosion, sedimentation, and pollution of any state waters including
+
+wetlands as defined in the Colorado Department of Transportation Standard Specifications Section
+
+208 or 107.25, or Urban Drainage and Flood Control District (UDFCD) Volume 3 Urban Storm
+
+Drainage Criteria Manual, or Town design standards.
+
+7.15.6 The Contractor shall coordinate the construction of temporary erosion control measures
+
+with the construction of permanent erosion control measures to assure economical, effective and
+
+continuous erosion control throughout the construction and warranty period.
+
+7.15.7 The materials for erosion control measures shall conform to Section 208 of the Colorado
+
+Department of Transportation Standard Specifications or Urban Drainage and Flood Control
+
+District (UDFCD) Volume 3 Urban Storm Drainage Criteria Manual.
+
+7.15.8 The Contractor is responsible for complying with the requirements of any Town
+
+development permit or approval and the Stormwater Discharges Permit associated with
+
+Construction Activity Permit from CDPHE until the permits have been formally inactivated.
+
+Contract requirements include:
+
+Town of Estes Park Services Contract -- Page 65 of 89
+
+a. Develop a Stormwater Management Plan (SWMP) and submit to the Town for review and
+
+approval.
+
+b. After Town approval of the SWMP, submit a permit application to CDPHE at least 10 days
+
+prior to the start of construction activities.
+
+c. Submit proof of issuance of a Town development permit or approval and proof of issuance
+
+of a Stormwater Discharge Permit Associated with Construction Activity to the Facilities
+
+Manager.
+
+During Construction:
+
+a. Keep a current copy of the SWMP on site at all times.
+
+b. Document any plan changes on the approved SWMP.
+
+c. Install Best Management Practices (BMPs) according to specifications outlined in the
+
+SWMP.
+
+d. Perform visual inspection daily.
+
+e. Perform written inspections of stormwater and erosion controls every 14 days and
+
+following each significant storm event.
+
+f. Maintain inspection records and maintenance records on-site with the SWMP at all times.
+
+g. Provide SWMP and inspection records to Town Inspector upon request.
+
+h. Maintain and modify BMPs to reflect current conditions of the job site until Final
+
+Stabilization is achieved.
+
+i. In accordance with project schedule, implement phasing of grading and temporary
+
+vegetation cover to properly manage site runoff during periods of construction inactivity.
+
+Post-Construction
+
+j. Facilities Manager or Designee will determine when final stabilization is reached. Final
+
+Stabilization, as defined by the State of Colorado, is reached when all soil disturbing
+
+activities at the site have been completed and a uniform vegetative cover has been
+
+established with a density of at least 70 percent or pre-disturbance levels or equivalent,
+
+permanent, physical erosion reduction methods have been employed.
+
+k. Remove all temporary BMPs.
+
+Town of Estes Park Services Contract -- Page 66 of 89
+
+l. Inactivate Town development permit and the Stormwater Discharge Permit Associated
+
+with Construction Activity through Inactivation Notice or Notice of Transfer or
+
+Reassignment as determined by the Facilities Manager.
+
+7.15.9 For more specific information about SWMP requirements, refer to state standards and
+
+specifications.
+
+7.15.10 Construction sites that discharge un-permitted stormwater are in violation of the Clean
+
+Water Act, and may be subject to fines of up to $25,000 a day per violation and subject to additional
+
+civil penalties.
+
+7.15.11 When included in the Special Conditions, the Contractor shall assign to the project an
+
+employee, or other person approved by the Facilities Manager to serve in the capacity of the
+
+Erosion Control Supervisor (ECS). The ECS shall be a person other than the Contractor’s
+
+superintendent, unless otherwise approved by the Facilities Manager. The ECS shall be
+
+experienced in all aspects of construction and have satisfactorily completed an ECS training
+
+program authorized by the Town. Certified Erosion Control Training is required for contractors
+
+responsible for installing and maintaining the BMPs. Call (303) 441-1439 to inquire about the next
+
+training opportunity. Proof that this requirement has been met shall be submitted to the Facilities
+
+Manager prior to start of any earth disturbance work.
+
+7.15.12 The ECS’s responsibilities shall be as follows:
+
+a. Ensure compliance with all water quality permits in effect during the construction work.
+
+b. Directly supervise the installation, construction, and maintenance of all erosion control
+
+measures specified in the Contract and coordinate the construction of erosion control
+
+measures with all other construction operations.
+
+c. Direct the implementation of suitable temporary erosion and sediment control features as
+
+necessary to correct unforeseen conditions or emergency situations. Direct the dismantling
+
+of those features when their purpose has been fulfilled unless the Facilities Manager directs
+
+that the features be left in place.
+
+d. Inspect all erosion control features implemented for the project. The written inspections
+
+shall take place at least once every 14 days and after each storm event that causes surface
+
+runoff and be available for review upon request. The appropriate form for this report will
+
+be supplied by the Facilities Manager. The inspections shall be made during the progress
+
+Town of Estes Park Services Contract -- Page 67 of 89
+
+of the work, during work suspensions, and until final stabilization acceptance of the work.
+
+During project suspensions, inspections shall take place at least once every 14 days, or as
+
+directed.
+
+e. Attend all project scheduling meetings as required by Facilities Manager.
+
+f. Upon the Facilities Manager or Inspector’s request, implement necessary actions to reduce
+
+anticipated or presently existing water quality or erosion problems resulting from
+
+construction activities. The criteria by which the Facilities Manager or Inspector initiates
+
+this action may be based on water quality data derived from monitoring operations or by
+
+any anticipated conditions (e.g., predicted storms) which the Facilities Manager or
+
+Inspector believes could lead to unsuitable water quality situations.
+
+7.15.13 All erosion control shall be performed in accordance with Sections 208 of the Colorado
+
+Department of Transportation’s Standard Specifications or Construction Best Management
+
+Practices of UDFCD Volume 3 Urban Storm Drainage Criteria Manual.
+
+7.15.14 Unless listed in the Bid Document, all erosion control features, including the Erosion
+
+Control Supervisor will not be measured, but will be paid for on a lump sum basis. The lump sum
+
+price bid will be full compensation for all work required to complete the item.
+
+7.15.15 Work to furnish, install, maintain, remove and dispose of erosion and sediment control
+
+features specified in the Bid document will be paid for at the contract unit price.
+
+7.16 Cleaning Up and Restoration
+
+7.16.1 The Contractor shall clean up all refuse or scrap materials so the site presents a neat,
+
+orderly, and workmanlike appearance at all times.
+
+7.16.2 Upon completion of the Project, and before Final Inspection, the Contractor shall remove
+
+from the construction site and any occupied adjoining property all plants, buildings, refuse, unused
+
+materials, forming lumber, sanitary facilities, and any other materials and equipment that belong
+
+to the Contractor or its Subcontractors.
+
+7.16.3 The Town may clean up and restore the construction site satisfactorily when the Contractor
+
+fails to do so. Any costs the Town incurs will be deducted from the Final Payment due the
+
+Contractor.
+
+Article 8 – OTHER WORK
+
+Town of Estes Park Services Contract -- Page 68 of 89
+
+8.1 The Town reserves the right to award other Contracts in connection with the Project. The
+
+Contractor shall cooperate with and afford other contractors reasonable opportunity for the
+
+introduction and storage of their materials and the execution of their work, and shall coordinate its
+
+Work with theirs.
+
+Article 9 – TOWN’S RESPONSIBILITIES 18.12 The Town will furnish the data required by the Contract and will make payments to the
+
+Contractor as provided by these General Conditions.
+
+Article 10 – FACILITIES MANAGER’S RESPONSIBILITIES 10.1 The Facilities Manager (Facilities Manager is a defined term meaning the Town’s
+
+authorized representative) shall maintain Owner’s authority over the Contractor relating to field
+
+direction and project administration, but does not assume liability for the Contractor’s work, nor
+
+control scheduling whenever such performance is located in or upon the Town’s property. The
+
+Facilities Manager will furnish or coordinate all explanations from consultants, field directions,
+
+horizontal and vertical control and inspections necessary to assure compliance with the Project
+
+documents, except as otherwise stated in the Project documents.
+
+10.2 Lines and Grades
+
+10.2.1 The Contractor shall survey and stake as specified in the Special Conditions.
+
+10.2.2 If the Special Conditions indicate the Facilities Manager is responsible for appointment
+
+and payment of a surveyor for construction staking. The Contractor shall give assistance, as
+
+required by the Surveyor, to aid in the staking, including clearing, improving access, exploratory
+
+excavations, and suspending operations to permit the surveyor to perform its work.
+
+10.2.3 If the Facilities Manager appoints a Surveyor, the Contractor shall give notice to the
+
+Surveyor at least five working days before initial lines and grades are needed. Thereafter, the
+
+Contractor shall give the Surveyor notice at least three working days before additional line and
+
+grade stakes are needed. The Facilities Manager is not responsible for providing lines and grades
+
+until the Contractor meets the notice requirements of this Article.
+
+10.2.4 If the Facilities Manager appoints a surveyor, the Contractor shall preserve all stakes,
+
+benchmarks, and any other survey points. If the Contractor damages them, the Contractor shall
+
+pay for their replacement. Contractor shall preserve, reset or reestablish all bench marks,
+
+monuments and other established control points as the Project warrants.
+
+Town of Estes Park Services Contract -- Page 69 of 89
+
+10.3 Inspection
+
+10.3.1 The Facilities Manager shall appoint Inspectors to inspect the Project. Inspection may
+
+extend to all or any part of the Project. The Inspectors are not authorized to alter the provisions of
+
+the Drawings or Specifications or to delay the fulfillment of the Contract by failure to inspect
+
+materials and Work with reasonable promptness.
+
+10.3.2 An Inspector has authority to reject defective materials and to suspend any Work that is
+
+being done improperly subject to the final decision of the Facilities Manager.
+
+10.3.3 The Contractor shall give the Facilities Manager due and timely notice of readiness when
+
+the Project is to be inspected, tested or approved by someone other than the Inspector. The
+
+Contractor shall give the Facilities Manager required certificates of inspection, testing or approval.
+
+Inspection, tests or approvals by the Facilities Manager or others does not relieve the Contractor
+
+from its obligations to perform the Work according to the requirements of the Contract.
+
+10.3.4 If the Facilities Manager considers it necessary or advisable that previously completed or
+
+covered Work be inspected or tested, the Contractor shall uncover, expose or otherwise make the
+
+Work available to the Facilities Manager for inspection and testing. The Contractor shall furnish
+
+all tools, labor, material, and equipment necessary to make the Work available. If the Facilities
+
+Manager finds the Work defective, the Contractor shall pay for the cost of satisfactory
+
+reconstruction and making the Work available. However, if the Work is not found defective, the
+
+Contractor will be allowed an increase in the Contract Price and/or an extension of the Contract
+
+Time for costs and time directly attributable to making the Work available and for reconstruction.
+
+10.3.5 If the Contractor’s operations require inspecting, testing or surveying to be done outside
+
+normal working hours or on Town holidays, it shall be at the Contractor’s expense.
+
+10.4 Stop Work Order
+
+10.4.1 The Facilities Manager has the authority to suspend Work on the Project either in whole or
+
+in part, for as long as the Facilities Manager deems necessary due to:
+
+a. Unsuitable weather;
+
+b. Faulty workmanship;
+
+c. Improper superintendence;
+
+d. Contractor’s failure to carry out orders or to perform any provision of the Contract;
+
+e. Conditions which may be considered unfavorable for the prosecution of Work on the
+
+Town of Estes Park Services Contract -- Page 70 of 89
+
+Project; or
+
+f. Work being carried on in an unsafe manner.
+
+10.4.2 If it is necessary to stop work for an indefinite period, the Contractor shall, if directed by
+
+the Facilities Manager, store all materials in such a manner that they will not become an obstruction
+
+or become damaged in any way. The Contractor shall take every precaution to prevent damage to
+
+or deterioration of the Work, providing suitable drainage and erecting temporary structures where
+
+necessary.
+
+10.4.3 The Facilities Manager will put the Stop Work order in writing and the Contractor may not
+
+proceed with Work on the suspended portion of the Project until notified in writing by the Facilities
+
+Manager.
+
+10.5 Disputes
+
+10.5.1 If the Contractor considers any Work directed by the Town to be outside the Contract
+
+requirements, or if it considers any ruling of the Facilities Manager to be unfair, it shall
+
+immediately ask for a written instruction or decision and shall perform the Work in conformance
+
+with the Facilities Manager’s ruling. If the Contractor considers such instructions unsatisfactory,
+
+it shall file a written protest with the Facilities Manager within ten days after their receipt.
+
+10.5.2 All claims, disputes and other matters in question arising out of or relating to the Contract
+
+shall be submitted to the Facilities Manager before the Contractor can begin litigation.
+
+10.5.3 The parties agree that any litigation by Contractor against the Town concerning this
+
+Contract shall be filed not more than 2 years after the date of the Notice of Construction
+
+Acceptance. The parties agree that any litigation filed by Town against Contractor concerning this
+
+Contract shall be filed not more than 2 years after the date of the Notice of Final Acceptance.
+
+Article 11 – CHANGES 11.1 General
+
+11.1.1 The Town may make alterations to the Project without the consent of the Surety at any
+
+time during the Work. The Contractor shall perform the Work as changed, as if originally specified.
+
+The alterations do not invalidate the Contract in any way.
+
+11.1.2 The Facilities Manager may, at any time, without notice to the Surety, by written notice to
+
+the Contractor, make any change in the Work to be performed within the general scope of the
+
+Contract, including but not limited to changes:
+
+Town of Estes Park Services Contract -- Page 71 of 89
+
+a. In the Specifications (including Drawings and designs);
+
+b. In the method or manner of the performance of the Work;
+
+c. In facilities, equipment, materials, services or site furnished by the Town; or
+
+d. Directing acceleration in the performance of the Work.
+
+11.1.3 Any written order (which terms as used in this Article shall include direction, instruction,
+
+interpretation or determination) from the Facilities Manager, which may warrant a time extension
+
+or increased or decreased costs) will be treated as a Change Order under this Article provided that
+
+the Contractor gives the Facilities Manager written notice within seven (7) calendar days of that
+
+condition, stating the date, circumstances, and source of the order and that the Contractor regards
+
+the order as a Change Order. However, the Town will not authorize a change in the Contract Price
+
+for work done before approving a Change Order authorizing the additional work. If the Town and
+
+the Contractor do not agree to the terms of a Change Order, including the amount of additional
+
+compensation, the Contractor shall proceed with the work under the terms of the Contract and shall
+
+maintain accurate records of the costs as described in the General Conditions, Article 11.
+
+11.1.4 The Contractor may not treat any order, statement or conduct of the Facilities Manager as
+
+a change under this Article nor become entitled to an equitable adjustment in the Contract Price or
+
+Performance Time, except as provided in this Article.
+
+11.1.5 If any change under this clause causes an increase or decrease in the Contractor’s cost or
+
+the time required for the performance of any part of the Work under the Contract, whether or not
+
+changed by any order, an equitable adjustment will be made and the Contract modified in writing
+
+accordingly. If no agreement is reached regarding the equitable value of additional work, it shall
+
+be determined as cost plus fifteen percent (15%) for overhead and profit. The amount of credit to
+
+be allowed by the Contractor to the Town for any such change that results in a net decrease in cost
+
+will be the amount of the actual net decrease as determined by the Town. When both additions
+
+and credits are involved in any one change, the combined overhead and profit shall be figured on
+
+the basis of the net increase, if any.
+
+In no case will the price adjustment change the original Contract Price to an amount not
+
+appropriated by the Town Board and approved by the appropriate Town representative per its
+
+purchasing policies.
+
+Town of Estes Park Services Contract -- Page 72 of 89
+
+11.1.6 Claims for changes in the Contract Price or Contract Time of Performance will not be
+
+considered after the Final Payment has been made.
+
+11.2 Compliance with §24-91-103.6
+
+11.2.1 Notwithstanding any other language in this contract, the issuance of any Change Order or
+
+other form of order or directive by the Town requiring additional compensable work to be
+
+performed which will cause the Contract Price to exceed the amount appropriated for the Work is
+
+prohibited unless the Contractor is given written assurance by the Town that lawful appropriations
+
+to cover the costs of the additional work have been made or unless the Contract contains a remedy
+
+granting provision.
+
+11.3 Field Orders
+
+11.3.1 The Facilities Manager may make changes in the details of the Project at any time, by
+
+issuing a Field Order. The Contractor shall proceed with the performance of any changes in the
+
+Project ordered by the Facilities Manager. If the Contractor believes that such Field Order entitles
+
+it to a change in Contract Price or Time, or both, it shall give the Facilities Manager written notice
+
+within ten (10) days after the receipt of the Field Order. Thereafter, the Contractor shall document
+
+the basis for the change in Contract Price or Time within thirty days.
+
+11.4 Change Orders
+
+11.4.1 Changes in the Contract Price are authorized only by Change Orders. Changes in contract
+
+time may be made by a Change Order or by other appropriate written authorization. Any requests
+
+for extension of time due to conditions outside of the Contractor’s control shall be made in writing
+
+within seven (7) calendar days of that condition.
+
+11.4.2 Any difference in cost from Change Orders shall be added to or deducted from the amount
+
+of the Contract, as the case may be. Adjustments in the amounts to be paid to the Contractor on
+
+account of changed Work will be determined by one of the following methods in the order listed:
+
+a. Unit Prices submitted in the Bid Schedule;
+
+b. Negotiated Unit Prices; and
+
+c. Negotiated lump sum.
+
+11.5 Extras and Force Account Work
+
+Town of Estes Park Services Contract -- Page 73 of 89
+
+11.5.1 The Contractor shall perform any Work and furnish materials and equipment necessary or
+
+desirable for proper completion of the Contract if the Facilities Manager believes it necessary to
+
+order Work or materials or equipment which, in the Facilities Manager’s opinion, are not
+
+susceptible to classification under the Unit Price items named in the Bid Schedule, and are not
+
+included in any lump sum bid item. The Facilities Manager will order such labor, material and
+
+equipment in writing before the extra Work is started. The labor, material and equipment will be
+
+classed as extra Work. The Town will not pay for extra Work unless the Town orders in extra
+
+work in writing. All claims for extra Work shall be submitted to the Facilities Manager,
+
+supplemented by any data the Facilities Manager requires.
+
+11.5.2 Extra Work and Work involving a combination of increases and decreases in the Work will
+
+ordinarily be paid for at a lump sum or Unit Price agreed upon in writing by the Facilities Manager
+
+and Contractor before the extra Work Order is issued. In the negotiation of lump sum or Unit
+
+Prices, the agreed estimated cost of the Work plus an allowance for overhead and profit, not to
+
+exceed the allowances stated in Section 11.5.3, shall be used.
+
+11.5.3 The allowance for overhead and profit will include full compensation for superintendence,
+
+bonds and insurance premiums, taxes (other than sales or use taxes included in the cost of
+
+materials), office expense, and all other items of expense or cost not included in the cost of labor,
+
+materials, or equipment provided under Sections 11.5.4, 11.5.5 and 11.5.6. The allowance for
+
+overhead and profit will be according to the following schedule:
+
+ACTUAL NECESSARY COST ALLOWANCE:
+
+Labor 20 percent
+
+Materials 15 percent
+
+Equipment 10 percent
+
+The Actual Necessary Cost for labor, materials, or equipment will be computed according to
+
+Sections 11.5.4, 11.5.5 and 11.5.6.
+
+Superintendence, bond and insurance premiums, taxes (other than sales or use taxes inclusive in
+
+the cost of materials), and other general expense will not be included in the computation of actual
+
+necessary cost. When all or any part of the extra Work is performed by a Subcontractor or specialty
+
+firm, the prime Contractor may add five percent of the Subcontractor’s total cost for the extra
+
+Town of Estes Park Services Contract -- Page 74 of 89
+
+Work. The Contractor shall give the Facilities Manager daily report sheets covering the direct cost
+
+of labor and materials and charges for equipment. The daily report sheets shall provide names or
+
+identifications and classifications of workers and hours worked, as well as size, type and
+
+identification number of equipment and hours operated. Material charges shall be substantiated
+
+by valid copies of vendors’ invoices. The Facilities Manager will make any necessary adjustments
+
+and compile the costs of cost-plus Work. When these reports are agreed upon and signed by both
+
+parties, they become the basis of payment for the Work performed.
+
+11.5.4 Labor: The cost of labor used in performing the Work by the Contractor, a Subcontractor,
+
+or other forces will be the sum of the actual wages paid plus any employer payments to, or on
+
+behalf of, workers for fringe benefits including health and welfare, pension, vacation, and similar
+
+purposes; all payments imposed by State and Federal laws including, but not limited to,
+
+compensation insurance, and social security payments; and the amount paid for subsistence and
+
+travel required in accordance with the regular practice of the employer.
+
+At the beginning of the contract or as later requested by the Facilities Manager, the Contractor
+
+shall furnish the Facilities Manager proof of labor compensation rates being paid or already paid.
+
+11.5.5 Materials: The cost of materials used in performing the Work, including transportation
+
+charges for delivery (exclusive of machinery rentals), will be the cost to the purchaser, whether
+
+Contractor, Subcontractor or other forces, from the Supplier thereof, inclusive of sales or use taxes,
+
+except if, in the opinion of the Facilities Manager, the cost of materials is excessive, or the
+
+Contractor does not furnish satisfactory evidence of the cost of such material. If the Facilities
+
+Manager finds the cost excessive or the Contractor has not furnished evidence of the cost, then the
+
+cost will be deemed to be the lowest current wholesale price for the quantity concerned delivered
+
+to the job-site less cash or trade discounts.
+
+The Town reserves the right to furnish materials for the Work and the Contractor may not claim
+
+costs and profit on materials furnished by the Town.
+
+The Town reserves the right to purchase from the Contractor any materials previously purchased
+
+for a project and not used. Payment for the materials will be based on the actual material cost as
+
+shown on the Supplier’s invoice, any transportation charges incurred, plus a fifteen percent
+
+handling fee.
+
+Town of Estes Park Services Contract -- Page 75 of 89
+
+11.5.6 Equipment: The Contractor will be paid according to the rental rates agreed upon in writing
+
+before extra or force account Work is begun, for any machinery or special equipment (other than
+
+small tools) authorized by the Facilities Manager. The Contractor may furnish cost data to assist
+
+the Facilities Manager in the establishment of the rental rate.
+
+The rental rates paid, as provided above, shall include the cost of fuel, oil, lubrication supplies,
+
+small tools, necessary attachments, repairs and maintenance of all kinds, depreciation, storage,
+
+insurance, and all incidentals. Operator wages will be paid separately, as provided in Section
+
+11.5.4.
+
+Individual pieces of equipment or tools having a replacement value of $100.00 or less, whether or
+
+not consumed by use, are considered small tools and no payment will be made for them.
+
+Rental time will not be allowed while equipment is inoperative due to breakdowns or storage on-
+
+site.
+
+11.5.7 Equipment on the Work: The rental time to be paid for equipment on the Work is the time
+
+the equipment is in productive operation on the extra Work being performed.
+
+11.5.8 Eliminating Items: The Facilities Manager shall notify the Contractor in writing to
+
+eliminate any items contained in the proposal unnecessary for the proper completion of the Work.
+
+Such action will not invalidate the contract. The Contractor, by Change Order, will be reimbursed
+
+for actual work done and all cost incurred, including mobilization of materials and equipment
+
+before the elimination of such items.
+
+Article 12 – CONTRACT TIME 12.1 General
+
+12.1.1 Time is of the essence in the performance of all Work contemplated in the Contract.
+
+Therefore, the Work shall be commenced no later than ten days from and including the date of
+
+Notice to Proceed and shall be fully completed in a satisfactory and acceptable manner within the
+
+time stated in the Contract.
+
+12.1.2 The capacity of the Contractor’s construction plant and force shall be sufficient as to insure
+
+completion of the Project within the allotted time. The Contractor shall use multiple crews if
+
+necessary to complete the Project within the allotted time.
+
+Town of Estes Park Services Contract -- Page 76 of 89
+
+12.2 Delays
+
+12.2.1 Delay claims fall into three categories: non-excusable, excusable, or compensable. Any
+
+payment for delays or the granting of time extensions require a properly executed Change Order
+
+per Article 11.
+
+12.2.1.1 Non-excusable delay is one caused by factors within the Contractor’s reasonable
+
+control. The delay is the Contractor’s fault; no additional time or additional compensation is
+
+allowed. Typical types of non-excusable delays are:
+
+a. Late submittal of Shop Drawings;
+
+b. Late procurement of materials or equipment;
+
+c. Insufficient personnel;
+
+d. Unqualified personnel;
+
+e. Inadequate coordination of Subcontractors or other contractors;
+
+f. Subcontractor delays;
+
+g. Late response to Town and Facilities Manager inquiries; or
+
+h. Construction not conforming to contract requirements making repeated re-working
+
+necessary.
+
+12.2.1.2 Excusable delay is caused by factors beyond the Contractor’s reasonable control,
+
+but is not the result of the Town’s actions or failure to act. An excusable delay entitles the
+
+Contractor to an extension of time but no additional compensation for the cost of the delay.
+
+12.2.1.3 Compensable delay is one where the Town has failed to meet an obligation stated
+
+or implied in the construction contract. If the Facilities Manager considers a delay as compensable,
+
+the Town will grant a time extension and reimburse the Contractor for the increased cost caused
+
+by the delay. No damages shall be payable for any delay not due to an act or neglect of the Town
+
+or an employee of the Town. Typical types of Town-caused delays are:
+
+a. Late approval of Shop Drawings and samples;
+
+b. Delays in answers to field inquiries by the Contractor;
+
+c. Interference with the Contractor during construction;
+
+d. Town-caused schedule changes;
+
+e. Design changes; or
+
+Town of Estes Park Services Contract -- Page 77 of 89
+
+f. Interference by other contractor’s or the Town’s forces.
+
+12.3 Failure to Complete Work on Time–Liquidated Damages
+
+12.3.1 The Town may permit the Contractor to proceed if the Contractor fails to substantially
+
+complete the Work on or before the original date set forth for Substantial Completion in the
+
+Contract, or on or before the corrected date of Substantial Completion. In such case, the Town
+
+will deduct the sum specified in the Contract for each day that the Work remains uncompleted.
+
+This sum shall not be a penalty but is liquidated damages.
+
+12.3.2 The parties agree that, under all of the circumstances, the daily basis and the amount set
+
+forth as liquidated damages is reasonable and equitable. The Town expends additional personnel
+
+effort in administrating the Contract or portions of it that are not completed on time, and such
+
+efforts and the costs thereof are impossible to accurately compute. In addition, some, if not all,
+
+citizens of Estes Park incur personal inconvenience and lose confidence in their government as a
+
+result of public projects or parts of them not being completed on time, and the impact and damages,
+
+certainly serious in monetary as well as other terms, are impossible to measure.
+
+12.3.3 The Contractor shall perform with due diligence, regardless of meeting the various
+
+scheduled deadlines. If, in the opinion of the Town’s Facilities Manager, or other authorized agent
+
+of the Town, the Contractor is not prosecuting the Work under the Contract, written notice will be
+
+given and the Contractor shall have seven days to resume the Work with due diligence. Failing a
+
+cure, liquidated damages will be charged until there is resumption of prosecution with due
+
+diligence.
+
+12.3.4 Permitting the Contractor to continue and finish the Work, or any part of it, after the time
+
+fixed for its completion, or after the date to which the time of completion may have been extended,
+
+shall not operate as a waiver on the part of the Town of liquidated damages or any of its rights
+
+under the Contract.
+
+Article 13 – WARRANTY AND GUARANTEE: SAMPLES AND TESTING; DEFECTIVE WORK AND MATERIALS 13.1 Warranty and Guarantees
+
+13.1.1 The Contractor and its Surety are jointly and severally responsible for the condition of all
+
+completed Work, maintenance (unless the Town is required by the Special Conditions to assume
+
+Town of Estes Park Services Contract -- Page 78 of 89
+
+responsibility for maintenance) and satisfactory operation of Work performed under the Contract
+
+for a period of two years following the Notice of Construction Acceptance or for one year after
+
+warranty work is fully satisfied. A notice of warranty work that requires repair or replacement
+
+under the warranty will be submitted to the Contractor on a Notice of Warranty Work. The
+
+Contractor and Surety are jointly and severally responsible for the satisfactory repair or
+
+replacement of any Work, materials or equipment which are found defective during this period,
+
+provided any failure results directly or indirectly from faulty workmanship or negligence by the
+
+Contractor, from faulty manufacturing or from faulty erection or improper handling of materials
+
+or equipment furnished or installed by the Contractor. Neither the Contractor nor Surety is liable
+
+for any failure resulting from the Town’s neglect or improper operation of facilities or the acts of
+
+third parties. If desired by the Town, portions of the work may be placed in service when
+
+completed, and the Contractor shall provide proper access for this purpose. Such use and operation
+
+shall not constitute an acceptance of the work, and the Contractor shall be liable for defects due to
+
+faulty construction throughout the duration of the Contract.
+
+13.2 Samples and Testing
+
+13.2.1 All materials and equipment used in the Project will be subject to sampling and testing
+
+according to generally accepted standards and as required in the Contract Documents. In the
+
+absence of direct references, the sampling and testing of materials will be done according to current
+
+Specifications of the American Society for Testing and Materials or the American Water Works
+
+Association. The Contractor shall cooperate with the Facilities Manager in collecting and
+
+forwarding required samples.
+
+13.2.2 The Contractor shall not incorporate any materials into the Project or cover any part of the
+
+Work until it has been inspected and approved according to the Contract Documents.
+
+13.2.3 The Contractor shall furnish all samples without charge. The Contractor will cooperate
+
+with the Facilities Manager in collecting, handling, storing, and forwarding required samples
+
+including the furnishing of manpower and equipment when necessary.
+
+13.2.4 The Town will pay the cost of the initial test except when the Contract Documents state
+
+otherwise. The Town will charge the Contractor for repeated tests due to failure of the initial test.
+
+13.3 Access to Work
+
+Town of Estes Park Services Contract -- Page 79 of 89
+
+13.3.1 The Facilities Manager and the Manager’s representatives shall have access to the Project
+
+at any time for purposes of inspection, sampling, and testing. Access shall extend to authorized
+
+representatives of participating federal or state agencies and to other public authorities having
+
+jurisdiction established by law. The Contractor shall provide proper facilities for access to the
+
+Project.
+
+13.3.2 Access to the Project shall mean wherever and whenever it is in manufacture, preparation
+
+or progress. It shall include access to payrolls, records of personnel, invoices of materials, terms
+
+and conditions of sale of materials and equipment to be incorporated in the Project, files, records,
+
+books, correspondence, instructions, Drawings, receipts, subcontracts, purchase orders, vouchers,
+
+memoranda and any other relevant data and records relating to the Contract.
+
+13.3.3 The Town may, at reasonable times, inspect the part of the plant, place of business or
+
+worksite of the Contractor or Subcontractor at any tier which is pertinent to the performance of the
+
+Contract.
+
+13.4 Defective Work and Materials
+
+13.4.1 Material and workmanship not conforming to the requirements of the Contract are deemed
+
+defective. Defective Work or material shall be removed immediately from the Project site and
+
+replaced with acceptable Work and material at the Contractor’s expense.
+
+13.4.2 If the Contractor fails to replace rejected materials or Work within ten days after receipt of
+
+written notice, the Town may replace or correct them and charge the cost to the Contractor and
+
+may terminate the right of the Contractor to proceed. Failure to detect previously installed
+
+defective materials or workmanship shall not impair the Town’s right to receive a completed
+
+project which is free of defects and meets all of the requirements of the Contract Documents.
+
+Article 14 – PAYMENTS TO CONTRACTOR AND COMPLETION 14.1 General
+
+14.1.1 Unless expressly provided otherwise, the prices shown in the Bid Schedule include the cost
+
+of all labor, materials, equipment, tools, forms, services, utilities, royalties, fees, and any other
+
+thing or expense necessary to complete the Project. Items not shown on the Plans, Specifications
+
+or Special Provisions but which are necessary to construct the Project will be considered a part of
+
+the Project whether specified or not and no separate payment will be made for these items.
+
+Town of Estes Park Services Contract -- Page 80 of 89
+
+[\#2](#2)   
+[\#3](#3)   
+[\#8](#8)   
+[\#20](#20)   
+[\#25](#25)   
+[\#26](#26)   
+[\#30](#30)   
+[\#30](#30)   
+[\#40](#40)   
+[\#89](#89)   
+<http://www.rockymountainbidsystem.com/>   
+<http://www.rockymountainbidsystem.com/>   
+<file://///172.26.20.4/dept/shared%20staff/Contracts,%20Prof%20Agreements,%20Etc/Templates/www.estes.org/rfp>   
+[mailto:rschumaker@estes.org](mailto:rschumaker@estes.org)   
+<http://www.rockymountainbidsystem.com/>   
+[mailto:rschumaker@estes.org](mailto:rschumaker@estes.org)   
+<http://www.rockymountainbidsystem.com/>   
+[mailto:rschumaker@estes.org](mailto:rschumaker@estes.org)   
+<http://www.cdphe.state.co.us/wq/PermitsUnit/wqcdpmt.html>   

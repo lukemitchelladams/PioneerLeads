@@ -2,12 +2,30 @@
 
 Append-only log plus a maintained "Current state" section. Read this first every session.
 
-## Current state (updated 2026-10-09)
+## Current state (updated 2026-10-15)
 
 **Company:** Brown Bison — government contracting (HVAC / mechanical on-call, municipal facilities).
 Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 
-**Active pursuit:** Town of Parker, Colorado — HVAC On-Call Services solicitation.
+**Active pursuits (priority order per Luke, 2026-10-15):**
+1. **DCSD (Douglas County School District RE-1) HVAC bid.** Luke: "do everything we can to be as competitive
+   as possible." Document NOT yet located (not in Drive; Gmail not connected). See bids/dcsd-hvac/.
+2. **Town of Estes Park — 2027 HVAC Preventive Maintenance and Service RFP.** This is the RFP that was
+   shared to Luke's Drive on 2026-09-18 ("RFP COMPLETE - HVAC Service.pdf"). 19 facilities, lump sum PM +
+   hourly after-hours rates, mandatory pre-bid 2026-09-08, due 2026-09-24 11:00 MT (passed), Town Board
+   award ~2026-11-10. Contact Robert Schumaker 970-577-3576 rschumaker@estes.org. Whether Brown Bison
+   attended/submitted and at what price is UNKNOWN. See bids/town-of-estes-park-2027-hvac-pm/.
+3. **Town of Parker, Colorado — HVAC On-Call Services.** Original pursuit from 2026-10-09. No document
+   in hand. NOTE: on 2026-10-15 the only bid PDF found was Estes Park, not Parker. Luke may have conflated
+   the two, or Parker is a separate bid still on BidNet. Confirm with Luke.
+
+**Relationships / vendors:**
+- **Alex Ditto** — sent "the bid and info" (per Luke 2026-10-15; Gmail not connected so the email is
+  unread here). **DECISION (Luke, 2026-10-15): route ALL landscaping jobs to Alex Ditto** because of the
+  relationship built. Contact info: not yet captured.
+- **Rich @ York (JCI)** — chiller parts/support. Open questions on model numbers and response time (see below).
+
+**Town of Parker detail (from 2026-10-09):**
 - Portal: BidNet Direct / Rocky Mountain E-Purchasing System (RMEPS).
   Agency page: https://www.bidnetdirect.com/colorado/town-of-parker
   Town procurement page: https://www.parkerco.gov/262/Procurement
@@ -45,6 +63,17 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
   record (id 17231012766, CO) with no contacts or notes attached.
 
 ## Log
+
+### 2026-10-15 — Session 2 (cloud)
+- Luke asked for "the bid and info Alex Ditto sent" + price-position analysis. Gmail plugin not authorized;
+  Gmail connector exists but is not connected. Searched Drive, HubSpot, web.
+- Found "RFP COMPLETE - HVAC Service.pdf" in Drive: Town of **Estes Park** 2027 HVAC PM RFP (not Parker).
+  Read all 89 pages. Attachment A (scope/19-facility list) is NOT in the PDF. No Brown Bison pricing anywhere.
+  Price position: cannot be determined until our number + bid tab + Attachment A are in hand.
+- Luke (mid-session): DCSD bid is the priority; go to Alex Ditto for all landscaping. No DCSD doc found
+  anywhere reachable. Built bids/dcsd-hvac/ with a competitiveness playbook pending the document.
+- Blocked hosts this session (in addition to earlier list): estes.org, estespark.colorado.gov,
+  dms.estes.org, dcsdk12.org.
 
 ### 2026-10-09 — Session 1 (cloud)
 - Searched local memory, Google Drive, HubSpot, and the web for Brown Bison + Parker HVAC bid.

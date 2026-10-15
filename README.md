@@ -13,6 +13,11 @@ agent how to behave here.
 CLAUDE.md                      Agent operating rules for this repo
 memory/MEMORY.md               Persistent project memory (update every session)
 bids/_template/                Copy this to start a new bid folder
+bids/dcsd-hvac/                PRIORITY: DCSD HVAC bid (doc pending) + competitiveness playbook
+bids/town-of-estes-park-2027-hvac-pm/
+  README.md                    Full requirements pulled from the 89-page RFP + price-position status
+  pricing.md                   Our price + competitor bid tab (fill in)
+  docs/                        Extracted RFP text
 bids/town-of-parker-hvac-on-call/
   README.md                    Bid brief: what we know, what we need, status
   vendor-questions-york.md     Rich @ York (JCI) questions + draft reply
@@ -28,7 +33,9 @@ docs/cloud-env-setup.md        Network allowlist needed for the cloud session to
 
 | Bid | Agency | Portal | Status |
 |-----|--------|--------|--------|
-| HVAC On-Call Services | Town of Parker, CO | BidNet Direct / Rocky Mountain E-Purchasing | Gathering docs; York Q&A open |
+| HVAC bid (title/number TBD) | Douglas County School District RE-1 | BidNet Direct | **PRIORITY.** Need the document |
+| 2027 HVAC Preventive Maintenance and Service | Town of Estes Park, CO | BidNet Direct / email | Due date passed 2026-09-24; need our price + bid tab |
+| HVAC On-Call Services | Town of Parker, CO | BidNet Direct | Unconfirmed; may be conflated with Estes Park |
 
 ## Quick start (cloud session)
 
