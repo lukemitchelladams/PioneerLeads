@@ -27,11 +27,13 @@ Full extracted text: `docs/RFP-COMPLETE-HVAC-Service.extracted.txt`. Every fact 
 | Award basis | "Lowest Responsive and Responsible Bidder," price plus 9 qualitative factors (capability, timeliness, reputation, past Town performance, equipment, finances, adaptability, future service ability, debarment). Town may reject "obviously unbalanced" bid schedules |
 | Accessibility | All submitted docs must meet Colorado Technology Accessibility Standards (HB21-1110 / SB23-244) |
 | Required forms | Bid Bond, Bidder Qualifications & Data, Subcontractors & Related Data, Bid Proposal (with addenda acknowledgment) |
-| Status | **UNKNOWN whether Brown Bison attended the mandatory pre-bid or submitted.** Due date has passed. |
+| Status | **NO BID. Brown Bison did not attend the 2026-09-08 mandatory pre-bid (Luke, 2026-10-15), which the RFP makes a condition for a proposal to be considered.** Keep for the rebid: 1-year term + 4 optional renewals, so the next opening is 2027 at the earliest, or sooner if the Town gets no responsive bids. |
 
-## Where we stand on price — honest answer (2026-10-15)
+## Where we stand on price (2026-10-15)
 
-**Cannot be determined from what is in hand.** Three things are missing:
+**Moot. We were not eligible to submit.** Still worth requesting the bid tab from Schumaker: it shows what Front Range and Estes-area competitors charge per facility and per hour for municipal PM, which is directly useful for pricing DCSD.
+
+For the record, three things were missing anyway:
 
 1. **Our submitted number.** Nothing in Drive, HubSpot, or this repo shows a Brown Bison proposal or price for this RFP.
 2. **Attachment A (Scope of Services).** The PDF references it but does not contain it. Without the 19-facility list, equipment, and PM frequencies, there is no basis to sanity-check any lump sum.
@@ -51,8 +53,7 @@ Full extracted text: `docs/RFP-COMPLETE-HVAC-Service.extracted.txt`. Every fact 
 - The Town is tax exempt. Do not carry sales tax on materials in the price.
 
 ## Open items
-- [ ] Confirm: did we attend the 2026-09-08 mandatory pre-bid? Did we submit by 2026-09-24? Via BidNet or email?
-- [ ] Record our submitted price in `pricing.md`
-- [ ] Request bid tab from Schumaker
-- [ ] Pull Attachment A + addenda into `docs/`
-- [ ] Watch for 2026-11-10 Town Board agenda (award item)
+- [x] Confirm pre-bid attendance → did NOT attend. No bid. (2026-10-15)
+- [ ] Request bid tab from Schumaker as competitor pricing intel for DCSD
+- [ ] Pull Attachment A + addenda into `docs/` as a scope template for future municipal PM bids
+- [ ] Calendar: watch BidNet for Estes Park HVAC PM rebid (late summer 2027 if renewal not exercised)

@@ -34,7 +34,7 @@ docs/cloud-env-setup.md        Network allowlist needed for the cloud session to
 | Bid | Agency | Portal | Status |
 |-----|--------|--------|--------|
 | HVAC bid (title/number TBD) | Douglas County School District RE-1 | BidNet Direct | **PRIORITY.** Need the document |
-| 2027 HVAC Preventive Maintenance and Service | Town of Estes Park, CO | BidNet Direct / email | Due date passed 2026-09-24; need our price + bid tab |
+| 2027 HVAC Preventive Maintenance and Service | Town of Estes Park, CO | BidNet Direct / email | No bid (missed mandatory pre-bid). Request bid tab as pricing intel |
 | HVAC On-Call Services | Town of Parker, CO | BidNet Direct | Unconfirmed; may be conflated with Estes Park |
 
 ## Quick start (cloud session)

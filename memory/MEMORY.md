@@ -13,8 +13,8 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 2. **Town of Estes Park — 2027 HVAC Preventive Maintenance and Service RFP.** This is the RFP that was
    shared to Luke's Drive on 2026-09-18 ("RFP COMPLETE - HVAC Service.pdf"). 19 facilities, lump sum PM +
    hourly after-hours rates, mandatory pre-bid 2026-09-08, due 2026-09-24 11:00 MT (passed), Town Board
-   award ~2026-11-10. Contact Robert Schumaker 970-577-3576 rschumaker@estes.org. Whether Brown Bison
-   attended/submitted and at what price is UNKNOWN. See bids/town-of-estes-park-2027-hvac-pm/.
+   award ~2026-11-10. Contact Robert Schumaker 970-577-3576 rschumaker@estes.org. **NO BID: Brown Bison did
+   not attend the mandatory pre-bid (Luke, 2026-10-15). Not eligible. Use its bid tab as pricing intel.** See bids/town-of-estes-park-2027-hvac-pm/.
 3. **Town of Parker, Colorado — HVAC On-Call Services.** Original pursuit from 2026-10-09. No document
    in hand. NOTE: on 2026-10-15 the only bid PDF found was Estes Park, not Parker. Luke may have conflated
    the two, or Parker is a separate bid still on BidNet. Confirm with Luke.
@@ -65,6 +65,7 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 ## Log
 
 ### 2026-10-15 — Session 2 (cloud)
+- Luke confirmed we did NOT attend the Estes Park mandatory pre-bid → no bid, folder kept for intel/rebid.
 - Luke asked for "the bid and info Alex Ditto sent" + price-position analysis. Gmail plugin not authorized;
   Gmail connector exists but is not connected. Searched Drive, HubSpot, web.
 - Found "RFP COMPLETE - HVAC Service.pdf" in Drive: Town of **Estes Park** 2027 HVAC PM RFP (not Parker).
