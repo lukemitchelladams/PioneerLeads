@@ -9,7 +9,7 @@
 | District purchasing | https://www.dcsdk12.org (Purchasing dept) |
 | Solicitation number / title | **NOT IN HAND** |
 | Due date | **NOT IN HAND** |
-| Status | Document not yet located. Not in Drive. Gmail not connected to this workspace. |
+| Status | **Alex Ditto is sending the solicitation Monday 2026-10-20** (Luke, 2026-10-18). Not yet received as of 2026-10-19. |
 
 ## What I could verify (2026-10-15)
 - No DCSD HVAC/mechanical solicitation surfaced in public search indexes. BidNet's DCSD page only shows a networking RFP (closes 2026-10-28) without login.

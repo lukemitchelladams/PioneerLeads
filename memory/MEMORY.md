@@ -20,8 +20,10 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
    the two, or Parker is a separate bid still on BidNet. Confirm with Luke.
 
 **Relationships / vendors:**
-- **Alex Ditto** — sent "the bid and info" (per Luke 2026-10-15; Gmail not connected so the email is
-  unread here). **DECISION (Luke, 2026-10-15): route ALL landscaping jobs to Alex Ditto** because of the
+- **Alex Ditto** — per Luke (relayed from his portfolio-orchestrator session, 2026-10-18): Luke has spoken
+  with Alex and **Alex is sending the DCSD HVAC bid on Monday 2026-10-20.** Gmail is no longer the blocker;
+  the document simply has not been sent yet. When it lands in bids/dcsd-hvac/docs/ (or Luke pastes it),
+  build the full requirements matrix + pricing model. Do not email anyone or touch any portal. **DECISION (Luke, 2026-10-15): route ALL landscaping jobs to Alex Ditto** because of the
   relationship built. Contact info: not yet captured.
 - **Rich @ York (JCI)** — chiller parts/support. Open questions on model numbers and response time (see below).
 
@@ -63,6 +65,10 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
   record (id 17231012766, CO) with no contacts or notes attached.
 
 ## Log
+
+### 2026-10-19 — Session 3 (cloud, check-in)
+- Cross-session message from Luke's orchestrator session: Alex Ditto sends the DCSD bid Mon 2026-10-20.
+  Checked repo and Drive: nothing new yet. No outward action taken.
 
 ### 2026-10-15 — Session 2 (cloud)
 - Luke confirmed we did NOT attend the Estes Park mandatory pre-bid → no bid, folder kept for intel/rebid.
