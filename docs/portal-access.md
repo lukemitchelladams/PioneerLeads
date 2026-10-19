@@ -6,9 +6,13 @@
    `www.parkerco.gov`, `www.dcsdk12.org`, `estespark.colorado.gov`, `dms.estes.org`, `bouldercounty.gov`,
    `coloradosprings.gov`, `www.douglas.co.us`, `www.denvergov.org`, `www.arapahoegov.com`.
 2. Same screen → Environment variables: `BIDNET_USER`, `BIDNET_PASS` (rotate the password first), `SAM_API_KEY`.
-3. BidNet → vendor profile: contact email = luke@brownbisonco.com; enable new-solicitation + addendum
-   notifications; follow Town of Parker, DCSD RE-1, Town of Estes Park, Douglas County, Castle Rock,
-   Lone Tree, Colorado Springs, Arapahoe County, Jefferson County; commodity codes HVAC + landscaping.
+3. BidNet → vendor profile (login already luke@brownbisonco.com). Free accounts have NO "email me every
+   bid" setting (Luke confirmed 2026-10-19). What exists: (a) NIGP commodity codes on the profile, which
+   agencies use to send invitations; set HVAC (910-xx mechanical maintenance, 031 air conditioning),
+   plumbing (910-xx), electrical (910-xx), landscaping/grounds (988), snow (968); (b) BidNet's PAID
+   notification subscription, which emails matching bids automatically, price shown at checkout. Either
+   buy (b), or rely on our scraper once step 1 is done. Addenda for bids you have downloaded are emailed
+   automatically on any account.
 Then tell me "go". I run the live scan, fix selectors against the real pages, and create the 4-hour
 scan Routine. From then on: BidNet emails land in the monitored inbox within the hour, the scraper
 cross-checks every 4 hours, new matches get a bid folder and a requirements matrix automatically, and
@@ -19,6 +23,10 @@ Luke's requirement (2026-10-19): be logged into SAM.gov and BidNet at all times,
 addenda on bids we're pursuing, pull documents for subs, with 24/7 email access. No manual logins.
 
 ## Two companies, one scan
+Dad's company is a **manufacturer** (Jones Bearing / American Pulley / ConveyMor, Pelham & Leeds, AL). We
+hunt product-purchase solicitations for it, not service contracts. Primary federal source is **DLA DIBBS**
+(dibbs.bsm.dla.mil), searchable by FSC 3110/3130/3020/3910 without login; quoting needs a CAGE code. Paper
+mills are private buyers and never post on bid portals; that is sales prospecting via Apollo/HubSpot.
 `bids/_watch/watch_profiles.json` holds a profile per company. `brownbison`: HVAC, plumbing, electrical,
 landscaping, janitorial, facilities (CO for BidNet; federal via SAM.gov). `dads-company`: pillow-block
 bearings, pulleys, conveyors, paper-mill power transmission (federal PSC/NAICS codes, nationwide until

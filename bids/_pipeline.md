@@ -34,3 +34,8 @@ That is the single hoop. Everything after it is automated.
 - Arapahoe County: bid tab for HVAC Mechanical Services (due 2026-10-09)
 - Jefferson County Public Library: bid tab for HVAC Mechanical Services RFP 2026
 - Town of Estes Park: bid tab for 2027 HVAC PM (Robert Schumaker, rschumaker@estes.org)
+
+## Jones Bearing / American Pulley / ConveyMor (dad) — product purchases
+Nothing verified yet; DIBBS and SAM.gov are blocked from this environment. Once the allowlist includes
+`api.sam.gov` and `www.dibbs.bsm.dla.mil`, the `jones-bearing` profile runs nationwide on PSC 3110/3130/3020/
+3030/3910/3920/3950. Need from dad: CAGE/UEI, and whether he is DIBBS-registered.

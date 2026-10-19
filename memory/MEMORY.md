@@ -20,13 +20,18 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
    2026-10-20.** No document in hand yet. When it lands, answer the chiller model / response-time
    questions from it (see vendor-questions-york.md).
 
-**Second company to bid for: Luke's dad's company (Luke, 2026-10-19).** Name, UEI/CAGE, and travel radius
-NOT yet captured. Trade: pillow-block mounted roller bearings, pulley/sheave systems, conveyor systems,
-power-transmission maintenance inside paper mills and similar industrial plants. Luke says he told me
-before; nothing about it exists in this workspace, so this is the first record here. Watch profile
-"dads-company" in bids/_watch/watch_profiles.json covers PSC 3110/3130/3020/3030/3910/3950 and NAICS
-333922/333613/423840/811310/322121, nationwide until Luke sets states. Federal scope for Brown Bison
-also widened to plumbing, electrical, landscaping, janitorial, facilities maintenance.
+**Second company to bid for: Luke's dad — Jones Bearing Co. / American Pulley / ConveyMor (Luke, 2026-10-19).**
+Pelham, AL HQ; manufacturing in Leeds, AL. **Manufacturer, not a service business.** Jones Bearing = mounted
+spherical roller bearings, take-ups, tapered-roller pillow blocks. American Pulley = conveyor pulleys, shafting,
+bushings. ConveyMor = bucket elevators, drag/apron conveyors, lump breakers, lime proportioners, kiln feed
+screws. Target = product PURCHASE solicitations (DLA DIBBS by FSC 3110/3130/3020/3910 is the main source;
+SAM.gov secondary). Paper mills themselves are private buyers → sales prospecting, not bid portals.
+UEI/CAGE unknown; needed to quote federally. Profile "jones-bearing" in bids/_watch/watch_profiles.json.
+Brown Bison federal scope widened to plumbing, electrical, landscaping, janitorial, facilities maintenance.
+- **BidNet notifications (Luke, 2026-10-19): free BidNet accounts have NO "email me all bids" setting.**
+  Automatic matching alerts are BidNet's paid notification subscription; free accounts only get agency-sent
+  invitations matched on NIGP commodity codes in the vendor profile. So: set NIGP codes in the profile, and
+  rely on our scraper (needs the network allowlist) or buy the subscription.
 
 **Relationships / vendors:**
 - **Alex Ditto** — per Luke (relayed from his portfolio-orchestrator session, 2026-10-18): Luke has spoken
@@ -111,6 +116,9 @@ also widened to plumbing, electrical, landscaping, janitorial, facilities mainte
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Dad's company identified: Jones Bearing / American Pulley / ConveyMor, Pelham/Leeds AL, manufacturer.
+  Rewired profile to supply-side PSC/NAICS, flagged DLA DIBBS as primary source. BidNet has no free
+  all-bids email alert; scraper is the path.
 - Added two-company watch profiles (Brown Bison + dad's bearings/conveyor business) to both watchers;
   SAM.gov queries now 45 across both. Need dad's company name + states.
 - Luke: 5+ new bids in work by Mon AM, due 7+ days out; find walkthrough people; hands-off portal access.
