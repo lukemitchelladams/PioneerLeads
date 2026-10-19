@@ -56,6 +56,7 @@ Traffic is thin and activation is broken at two points. First, Connect: as of Se
 ## Watch list
 
 - Deploys depend on a laptop. #136 stalled in sleep on Oct 2; #155 is blocked on Oct 16 because the gate times out under CI and other sessions on the same Mac. The deploy lane needs its own machine or CI.
+- The Mac froze and rebooted at about 18:30 MDT on Oct 18. Cause, from the Blaze session transcript: after "keep moving, I don't want to see you sitting" at 18:19 MDT it ran eight engineer agents at once, each in its own worktree on the Mac running `bun install`, lint and tests, on top of the gate and the browser. At 18:33 MDT, two minutes after the reboot, it resumed all eight with `bun install --frozen-lockfile` each. The orchestrator sent that session a throttle note at 18:36 MDT: at most two engineers at a time, one shared install, `nice -n 19`, hold while load exceeds the core count. Until the session confirms, a second freeze is likely. Oct 15 Luke had already opened a Mac performance session because the machine was slow.
 - The week's output was SEO and comparison pages. None of the three funnel items moved. The page work is good but it feeds a funnel that still cannot connect a channel.
 
 - The other lane's uncommitted work was shelved to branch wip/other-lane-2026-10-14 on Oct 14. No longer at risk; decide whether any of it is wanted.

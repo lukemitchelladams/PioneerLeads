@@ -7,7 +7,7 @@ Updated: 2026-10-12 (Monday brief). One page. Read this first; the per-venture s
 
 | Venture | What it is | Stage | North star | Status today |
 | --- | --- | --- | --- | --- |
-| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | Healthy, billing live, shipping daily again (#147 to #154 since Oct 14); seven free workspaces hit the paywall Oct 20 to 27; deploy lane blocked by Mac load |
+| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | Healthy, billing live, shipping daily again (#147 to #154 since Oct 14); seven free workspaces hit the paywall Oct 20 to 27; the Mac froze Oct 18 under eight parallel build agents, throttle requested |
 | [POE](poe-radius.md) | Partner Orchestration Engine for Radius Channels (Cole), on top of HubSpot | v1 build, in production use | Booked Meaningful Meetings for Radius reps | Moved to Radius's main HubSpot portal Oct 9; ZoomInfo free enrichment on every account; System Map totals for Luke's map; 6 decisions still parked on Cole |
 | [Brown Bison govcon](govcon.md) | Municipal HVAC and facilities contracts; Town of Parker HVAC on-call bid in progress; local CRM sending gov intro emails | Bidding | Awarded contracts | Active daily on Luke's Mac (CRM dashboard build, intro emails); Parker bid document still not in hand; Rich at York's two questions open since Oct 9 |
 
