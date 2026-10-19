@@ -20,7 +20,10 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 5. One folder per bid under `bids/<agency>-<short-title>/`. Start from `bids/_template/`.
 6. Keep the status table in each bid `README.md` current.
 7. Dates: write ISO (2026-10-09). Money: write with units.
-8. Supply/commodity bids: do not rank as GO unless the document states quantities or annual spend. Small-margin
+8. No excavation, earthwork, or heavy-civil bids (ponds, pump stations, roadwork, drainage). Our trades are
+   HVAC, plumbing, electrical, facilities maintenance, landscaping/grounds/snow, janitorial. Keep it simple
+   (Luke, 2026-10-19).
+9. Supply/commodity bids: do not rank as GO unless the document states quantities or annual spend. Small-margin
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke

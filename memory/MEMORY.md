@@ -147,6 +147,8 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke: no excavation/heavy-civil jobs right now, especially through Alex. Dropped CO Springs pond rebuild and
+  CSU pump station. Trades we bid: HVAC, plumbing, electrical, facilities, landscaping/grounds/snow, janitorial.
 - Luke killed Boulder filters: no quantities, thin margin on $15 filters, not worth it. Lesson: before listing a supply bid, check for quantities/annual spend; if absent, flag it as unknown-volume, don't rank it as GO.
 - Luke: "that is YOUR to-do list." Produced: Littleton response draft, Thornton checklist + Exhibit C rate
   sheet, Boulder distributor call list + script (AAF Denver 720-507-0120, Camfil Denver 303-893-3030,
