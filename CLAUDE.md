@@ -21,6 +21,11 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 - Inbox monitoring runs hourly via Routine into the main session; Gmail is read-only for the agent. Never
   send/reply/forward/trash/label email without Luke's explicit instruction in the moment.
 
+## Portal access
+- Bid-portal scanning = `python3 scripts/scan_bids.py` (BidNet scraper + SAM.gov API). Needs allowed
+  domains + SAM_API_KEY/BIDNET_USER/BIDNET_PASS env vars. See docs/portal-access.md. Credentials come
+  from the environment only; never ask Luke to paste them in chat, never write them to the repo.
+
 ## Known blocked hosts in cloud sessions
 bidnetdirect.com, rockymountainbidsystem.com, sam.gov, api.sam.gov, parkerco.gov.
 Ask the user to add them under Network access → Allowed domains (see docs/cloud-env-setup.md),

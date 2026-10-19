@@ -74,6 +74,13 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 - Landscaping → Alex Ditto, always.
 - Never state a bid requirement that is not quoted from the solicitation document.
 
+- **Always-on portal access (Luke, 2026-10-19):** wants 24/7 login to SAM.gov + BidNet, scans for new bids,
+  addenda tracking, docs for subs. Reality: SAM.gov has an API (federal only; never had access, host blocked,
+  no key). BidNet has NO API/MCP. Built scripts/bidnet_watch.py (Playwright scraper), samgov_watch.py,
+  scan_bids.py. Blocked on Luke: allow domains, set SAM_API_KEY/BIDNET_USER/BIDNET_PASS, register
+  brownbisonco email on BidNet with notifications. GovTribe MCP exists for federal. See docs/portal-access.md.
+  Create the scan Routine only after the hosts are allowed.
+
 ## Blockers
 - **lukemitchelladams@gmail.com not connected.** Past vendor threads (Alex Ditto, Rich Carroll) are there.
   If Alex/Rich send Monday's bid docs to that address, the monitor will not see them unless Luke forwards
@@ -91,6 +98,8 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Built bid-portal watchers (BidNet scraper validated on fixture only; SAM.gov watcher). Live run blocked
+  by network policy. Wrote docs/portal-access.md with Luke's to-do list.
 - Gmail connected (luke@brownbisonco.com only; 6 test emails, nothing from vendors). Created hourly
   inbox-check Routine into this session; disabled the fresh-session variant (no Gmail there).
   Logged Luke's signature feedback (pink text, Denver not Broomfield).

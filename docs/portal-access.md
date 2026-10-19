@@ -1,0 +1,48 @@
+# Always-on portal access: what exists, what I built, what Luke must do
+
+Luke's requirement (2026-10-19): be logged into SAM.gov and BidNet at all times, scan for new bids, catch
+addenda on bids we're pursuing, pull documents for subs, with 24/7 email access. No manual logins.
+
+## Reality check
+| Source | API / connector? | What "always connected" looks like |
+|---|---|---|
+| **SAM.gov** (federal only) | Yes: public Opportunities API (free key from your SAM.gov account). Also **GovTribe** MCP connector in the claude.ai directory covers federal opportunities with no key. | `scripts/samgov_watch.py` on a Routine. Parker/DCSD/Estes Park are local and will **never** be on SAM.gov. |
+| **BidNet Direct / RMEPS** (Parker, DCSD, Estes Park, Douglas County) | **No API, no MCP, nothing in the registry.** Login-gated vendor portal. | Two paths, use both: (1) BidNet already emails registered vendors every new match and every addendum. Register **luke@brownbisonco.com** as the vendor contact and the hourly inbox check sees everything. (2) `scripts/bidnet_watch.py`, our own Playwright scraper: public agency pages for new/changed/closed listings, plus logged-in document download when credentials are supplied. |
+| **Email** | Gmail connector, connected to luke@brownbisonco.com | Hourly inbox check Routine (docs/inbox-monitor-routine.md). |
+
+## What I built (in this repo)
+- `scripts/bidnet_watch.py` — watches 6 Colorado agencies on BidNet, keyword-filters (HVAC, mechanical,
+  chiller, boiler, landscaping, grounds, on-call, facilities...), diffs against last run, downloads documents
+  when logged in. Extractor validated on a fixture page; **not yet validated against the live site** because
+  bidnetdirect.com is blocked from the cloud environment. It saves raw HTML on a parse miss so selectors can
+  be fixed from a real sample in one pass.
+- `scripts/samgov_watch.py` — HVAC/chiller/boiler/mechanical + NAICS 238220/561210/561730 in Colorado,
+  diffs by notice ID.
+- `scripts/scan_bids.py` — runs both, writes `bids/_watch/REPORT.md` with a one-line headline.
+- Session hook installs Playwright so a cloud session can run the scraper.
+
+## What Luke must do (none of this can be done from inside a session)
+1. **Network access** for the cloud environment (session title bar → cloud environment → Edit → Network
+   access → Allowed domains). Add:
+   `www.bidnetdirect.com`, `bidnetdirect.com`, `www.rockymountainbidsystem.com`, `api.sam.gov`, `sam.gov`,
+   `www.parkerco.gov`, `www.dcsdk12.org`, `estespark.colorado.gov`, `dms.estes.org`.
+2. **Secrets** in the same environment settings (Environment variables):
+   `SAM_API_KEY` (SAM.gov → Account Details → API Key), `BIDNET_USER`, `BIDNET_PASS`.
+   Never paste these in chat. The scripts read them from the environment only.
+3. **BidNet vendor profile**: set contact email to luke@brownbisonco.com, turn on email notifications,
+   follow Town of Parker, DCSD RE-1, Town of Estes Park, Douglas County, and add commodity codes for HVAC
+   (NIGP 031, 910-xx mechanical maintenance) and landscaping (988). This alone makes BidNet push to us.
+4. Optional: connect **GovTribe** in claude.ai connectors for federal search without an API key.
+5. Tell me when 1–3 are done. I will then run `scan_bids.py` live, fix the BidNet selectors from the real
+   page, and create the scanning Routine (every 4 hours for BidNet, daily for SAM.gov).
+
+## Risk Luke should know
+BidNet's terms of use restrict automated access. Polling public pages a few times a day is low-risk.
+Logged-in scraping with your credentials is your call; if BidNet objects, fall back to path (1), email
+notifications, which is fully within their rules and catches the same events.
+
+## Routine plan (create after steps 1–3)
+- "Bid portal scan" every 4h 06:00–20:00 MT: `python3 scripts/scan_bids.py`, commit REPORT.md + state,
+  reply with the headline only if there are NEW/CHANGED items; otherwise "Portal scan: no changes."
+- On a NEW keyword match: create `bids/<agency>-<slug>/` from `bids/_template/`, drop downloaded docs in
+  `docs/`, build `requirements.md`, and flag it to Luke.

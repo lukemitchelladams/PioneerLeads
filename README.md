@@ -23,7 +23,11 @@ bids/town-of-parker-hvac-on-call/
   vendor-questions-york.md     Rich @ York (JCI) questions + draft reply
   equipment-schedule.md        Chiller / mechanical equipment inventory (fill from bid docs)
   checklist.md                 Submission checklist
-scripts/samgov_search.py       Search SAM.gov opportunities API (needs free API key)
+scripts/scan_bids.py           Run all portal watchers -> bids/_watch/REPORT.md
+scripts/bidnet_watch.py        BidNet Direct scraper (6 CO agencies; login optional for docs)
+scripts/samgov_watch.py        SAM.gov federal watcher with diffing
+scripts/samgov_search.py       One-off SAM.gov search
+docs/portal-access.md          What Luke must configure for always-on portal access
 scripts/bid_lookup.md          Where to find Town of Parker bids (BidNet / RMEPS)
 docs/cloud-env-setup.md        Network allowlist needed for the cloud session to reach bid portals
 .claude/                       SessionStart hook + settings for cloud sessions

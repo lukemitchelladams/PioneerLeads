@@ -9,10 +9,12 @@ fi
 
 cd "${CLAUDE_PROJECT_DIR:-.}"
 
-# PDF text extraction for solicitation documents (idempotent)
-if ! python3 -c "import pypdf" 2>/dev/null; then
-  python3 -m pip install --quiet --disable-pip-version-check pypdf >/dev/null 2>&1 || true
-fi
+# PDF text extraction + Playwright (browsers pre-installed at /opt/pw-browsers); idempotent
+for mod in pypdf playwright; do
+  if ! python3 -c "import $mod" 2>/dev/null; then
+    python3 -m pip install --quiet --disable-pip-version-check "$mod" >/dev/null 2>&1 || true
+  fi
+done
 
 echo "== Brown Bison workspace =="
 echo "Read memory/MEMORY.md before doing anything."
