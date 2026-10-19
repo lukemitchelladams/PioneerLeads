@@ -93,13 +93,16 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
   addenda tracking, docs for subs. Reality: SAM.gov has an API (federal only; never had access, host blocked,
   no key). BidNet has NO API/MCP. Built scripts/bidnet_watch.py (Playwright scraper), samgov_watch.py,
   scan_bids.py. Blocked on Luke: allow domains, set SAM_API_KEY/BIDNET_USER/BIDNET_PASS, register
-  brownbisonco email on BidNet with notifications. GovTribe MCP exists for federal. See docs/portal-access.md.
+  brownbisonco email on BidNet with notifications. GovTribe MCP: Luke created an account 2026-10-19 but the connector shows connect_incomplete (OAuth not finished); tools not available until he completes it and a new session starts. See docs/portal-access.md.
   Create the scan Routine only after the hosts are allowed.
 
 - **BidNet account (2026-10-19, updated same night):** login email changed to **luke@brownbisonco.com** (was lukeadams55@icloud.com). BidNet notifications now reach the monitored inbox. Luke pasted the password in chat;
   it is NOT stored here and must be rotated. Credentials belong in the cloud environment's Environment
   variables as BIDNET_USER / BIDNET_PASS, nowhere else. BidNet notifications currently go to the iCloud
   address, which no monitor sees: change the BidNet vendor contact email to luke@brownbisonco.com.
+
+## Last scan headline
+(none yet — no scan has run with portal access)
 
 ## Blockers
 - **lukemitchelladams@gmail.com not connected.** Past vendor threads (Alex Ditto, Rich Carroll) are there.
