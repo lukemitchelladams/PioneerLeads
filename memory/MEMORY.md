@@ -81,6 +81,11 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
   brownbisonco email on BidNet with notifications. GovTribe MCP exists for federal. See docs/portal-access.md.
   Create the scan Routine only after the hosts are allowed.
 
+- **BidNet account (2026-10-19):** login email is lukeadams55@icloud.com. Luke pasted the password in chat;
+  it is NOT stored here and must be rotated. Credentials belong in the cloud environment's Environment
+  variables as BIDNET_USER / BIDNET_PASS, nowhere else. BidNet notifications currently go to the iCloud
+  address, which no monitor sees: change the BidNet vendor contact email to luke@brownbisonco.com.
+
 ## Blockers
 - **lukemitchelladams@gmail.com not connected.** Past vendor threads (Alex Ditto, Rich Carroll) are there.
   If Alex/Rich send Monday's bid docs to that address, the monitor will not see them unless Luke forwards
