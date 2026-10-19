@@ -25,7 +25,8 @@ Brent.Haase@lminc.net, 720-456-9191 office, 303-968-8772 cell; cc Office@lminc.n
 2. Price: not yet. Asked for "a spreadsheet or listing of the 42 bus shelters plus the transfer centers indicating
    the frequency and SOW for each." **Built: docs/RTD-126DM016-Shelter-List.xlsx** ("What to price" tab mirrors RTD's
    pricing form: per shelter service x 210/week, plus daily custodial at each transfer center; shelter list tab).
-3. COIs: Brent asked "Vanessa" (their office) to send them. Not received yet.
+3. COIs: **RECEIVED 2026-10-19 15:03 MT** from Lightning Mobile's office: "Master COI 2026.pdf" (in Luke's inbox).
+   Not downloadable from this session; Luke to save it. Limits not yet checked against RTD's insurance requirements.
 4. Small business: "certified as an Emerging Small Business (ESB) through CDOT." **Does NOT count toward RTD's 15% SBE
    goal**: RTD only counts its own SBE certification (README, SBE section). Ask if they are also RTD SBE-certified.
 

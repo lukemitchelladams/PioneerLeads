@@ -27,3 +27,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-19 12:58 MT REPLY: Brent Haase, Lightning Mobile Services (RTD bus shelters): YES to 42 shelters; wants shelter list +
   frequency + SOW before pricing; COIs coming from their office; CDOT ESB certified (not RTD SBE). Shelter list xlsx built.
 - 2026-10-19 14:00 MT BidNet: El Paso County 26-058 On-Call General Facilities Trade Services, addendum 2 (tracked by Luke's CRM). Brown Bison brief 08:37 read: 13 live bids, see _pipeline.md.
+- 2026-10-19 15:03 MT Lightning Mobile office: COI attached (Master COI 2026.pdf). Luke to save to the RTD bid folder.
