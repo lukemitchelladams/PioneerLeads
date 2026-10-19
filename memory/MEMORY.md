@@ -147,6 +147,9 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke authorized sub outreach for Littleton plumbing. Sent 5 emails (Drain Terrier, Beattie, Master Drains,
+  Balkan, Simply Sewers). 3 shops phone-only. Hourly check must watch for replies and capture license/rates.
+- Boulder filters: Luke reconsidering; the unknown is annual quantity. Offered to email procurement for volume.
 - Luke: no excavation/heavy-civil jobs right now, especially through Alex. Dropped CO Springs pond rebuild and
   CSU pump station. Trades we bid: HVAC, plumbing, electrical, facilities, landscaping/grounds/snow, janitorial.
 - Luke killed Boulder filters: no quantities, thin margin on $15 filters, not worth it. Lesson: before listing a supply bid, check for quantities/annual spend; if absent, flag it as unknown-volume, don't rank it as GO.

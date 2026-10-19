@@ -27,6 +27,6 @@ Qualifications-based, not low-bid. Small annual budget means big shops won't cha
 - [ ] Download Attachments A, B, C from RMEPS (login luke@brownbisonco.com) → `docs/`
 - [ ] Read the 10/21 Q&A addendum the day it posts; acknowledge in submission
 - [ ] Line up $100k performance/payment bond capacity with surety (ask agent for a bond letter to include)
-- [ ] Plumbing license: confirm Littleton/Arapahoe + state plumbing contractor license in hand or via sub
+- [x] Sub outreach sent 10/19 to 5 Littleton plumbers (see sub-outreach.md); 3 more need a phone call. Pick the sub by Thu 10/23.
 - [ ] Write Section 3 submission: firm profile, licenses, insurance, key personnel, 3 references, response-time commitment, sample rate sheet
 - [ ] Submit via RMEPS by 2026-10-28 14:00 MT. Target 10/27.
