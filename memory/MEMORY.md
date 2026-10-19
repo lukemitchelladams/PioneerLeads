@@ -270,3 +270,4 @@ CMC custodial (pricing, not dead), Colorado Springs (no-bid there), plus 7 bids 
 _pipeline.md. My 10/19 sub emails (3 RTD sent) may conflict with its touch rules; RTD/Brighton/Adams/Metro Water
 are not in its list, so no duplicate outreach found. Ask Luke which system is the source of truth.
 New BidNet email: El Paso County 26-058 addendum 2. Luke replied to Brent (Lightning Mobile) with files 13:40 MT.
+- 2026-10-19 15:05 MT hourly: nothing new (GovTribe CO none after 10/14; federal CO and PSC same as 14:05; inbox no new threads).
