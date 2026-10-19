@@ -21,7 +21,9 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
    questions from it (see vendor-questions-york.md).
 
 **Second company to bid for: Luke's dad — Jones Bearing Co. / American Pulley / ConveyMor (Luke, 2026-10-19).**
-Pelham, AL HQ; manufacturing in Leeds, AL. **Manufacturer, not a service business.** Jones Bearing = mounted
+1062A Highway 72, Pelham, AL 35124; manufacturing in Leeds, AL; principal Andrew Adams per D&B; ~11 employees.
+**Manufacturer, not a service business. Core per Luke (2026-10-19): bucket elevators and hot lime handling
+equipment** (Luke typed 'hot line'; read as hot lime, matches ConveyMor's lime proportioners/kiln feed screws; confirm). Jones Bearing = mounted
 spherical roller bearings, take-ups, tapered-roller pillow blocks. American Pulley = conveyor pulleys, shafting,
 bushings. ConveyMor = bucket elevators, drag/apron conveyors, lump breakers, lime proportioners, kiln feed
 screws. Target = product PURCHASE solicitations (DLA DIBBS by FSC 3110/3130/3020/3910 is the main source;
@@ -116,6 +118,10 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Searched federal sources for dad's products: DIBBS, SAM.gov, DLA, and 7 aggregators all blocked. Web index
+  shows DLA bearing RFQs closed early Oct; one fairlead/bearing set-aside due 2026-10-23 (poor fit). Profile
+  now leads with bucket elevators + hot lime handling, adds PSC 4610 (water treatment lime equipment).
+  GovTribe MCP connector = federal search that works from inside the session without network changes.
 - Dad's company identified: Jones Bearing / American Pulley / ConveyMor, Pelham/Leeds AL, manufacturer.
   Rewired profile to supply-side PSC/NAICS, flagged DLA DIBBS as primary source. BidNet has no free
   all-bids email alert; scraper is the path.

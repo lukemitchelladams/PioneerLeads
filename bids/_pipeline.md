@@ -36,6 +36,9 @@ That is the single hoop. Everything after it is automated.
 - Town of Estes Park: bid tab for 2027 HVAC PM (Robert Schumaker, rschumaker@estes.org)
 
 ## Jones Bearing / American Pulley / ConveyMor (dad) — product purchases
-Nothing verified yet; DIBBS and SAM.gov are blocked from this environment. Once the allowlist includes
+Core products: bucket elevators, hot lime handling, mounted bearings, pulleys. Nothing actionable found via
+the web index tonight: DLA bearing RFQs seen (SPE4A6-26-T-36XC, -33VG, -11AY) all closed by 2026-10-07; a DLA
+fairlead-section set-aside citing bearing NSN 3120-01-254-4454 is due 2026-10-23 but is a fabricated assembly,
+not a stock bearing. DIBBS and SAM.gov are blocked from this environment. Once the allowlist includes
 `api.sam.gov` and `www.dibbs.bsm.dla.mil`, the `jones-bearing` profile runs nationwide on PSC 3110/3130/3020/
 3030/3910/3920/3950. Need from dad: CAGE/UEI, and whether he is DIBBS-registered.

@@ -99,7 +99,7 @@
       ]
     },
     "jones-bearing": {
-      "label": "Jones Bearing Co. / American Pulley / ConveyMor (Luke's dad) \u2014 MANUFACTURER, product purchases only",
+      "label": "Jones Bearing Co. dba American Pulley / ConveyMor (Luke's dad) \u2014 MANUFACTURER: bucket elevators, hot lime handling, bearings, pulleys",
       "company_facts": {
         "legal_name": "Jones Bearing Company (trade names American Pulley, ConveyMor)",
         "hq": "Pelham, Alabama; manufacturing in Leeds, Alabama",
@@ -115,31 +115,35 @@
           "ConveyMor": "bucket elevators, drag and apron conveyors, lump breakers, lime proportioners, kiln feed screws"
         },
         "model": "Build and sell product. NOT a service/maintenance contractor. Target supply/purchase solicitations and parts buys, not repair contracts.",
-        "uei_cage": "UNKNOWN \u2014 ask Luke/dad. Required to quote on SAM.gov and DLA DIBBS."
+        "uei_cage": "UNKNOWN \u2014 ask Luke/dad. Required to quote on SAM.gov and DLA DIBBS.",
+        "address": "1062A Highway 72, Pelham, AL 35124 (D&B/Manta directory listings)",
+        "principal": "Andrew Adams (D&B listing; confirm)",
+        "core_per_luke_2026-10-19": "Bucket elevators and hot lime handling equipment are the core. (Luke wrote 'hot line'; read as hot LIME, consistent with ConveyMor lime proportioners and kiln feed screws. Confirm.)",
+        "size": "~11 employees (directory estimate)"
       },
       "states": [],
       "_states_note": "Nationwide: products ship. Place of performance is irrelevant for supply buys.",
       "samgov": [
         {
-          "title": "pillow block"
-        },
-        {
-          "title": "mounted bearing"
-        },
-        {
-          "title": "spherical roller bearing"
-        },
-        {
-          "title": "take-up bearing"
-        },
-        {
-          "title": "conveyor pulley"
-        },
-        {
-          "title": "conveyor"
-        },
-        {
           "title": "bucket elevator"
+        },
+        {
+          "title": "lime handling"
+        },
+        {
+          "title": "lime feeder"
+        },
+        {
+          "title": "lime slaker"
+        },
+        {
+          "title": "lime silo"
+        },
+        {
+          "title": "kiln feed"
+        },
+        {
+          "title": "bulk material handling"
         },
         {
           "title": "drag conveyor"
@@ -154,10 +158,25 @@
           "title": "lump breaker"
         },
         {
-          "title": "pulley"
+          "title": "conveyor"
         },
         {
-          "title": "sheave"
+          "title": "conveyor pulley"
+        },
+        {
+          "title": "pillow block"
+        },
+        {
+          "title": "mounted bearing"
+        },
+        {
+          "title": "spherical roller bearing"
+        },
+        {
+          "title": "take-up bearing"
+        },
+        {
+          "title": "pulley"
         },
         {
           "title": "idler"
@@ -166,10 +185,16 @@
           "title": "shafting"
         },
         {
-          "ccode": "3110"
+          "ccode": "3910"
+        },
+        {
+          "ccode": "3920"
         },
         {
           "ccode": "3130"
+        },
+        {
+          "ccode": "3110"
         },
         {
           "ccode": "3020"
@@ -178,16 +203,10 @@
           "ccode": "3030"
         },
         {
-          "ccode": "3910"
-        },
-        {
-          "ccode": "3920"
-        },
-        {
           "ccode": "3950"
         },
         {
-          "ncode": "332991"
+          "ccode": "4610"
         },
         {
           "ncode": "333922"
@@ -196,28 +215,37 @@
           "ncode": "333613"
         },
         {
+          "ncode": "332991"
+        },
+        {
           "ncode": "423840"
         }
       ],
-      "_codes_note": "PSC 3110 antifriction bearings; 3130 mounted bearings (pillow blocks, take-ups); 3020 gears/pulleys/sprockets; 3030 belting/drive belts; 3910 conveyors; 3920 material handling equipment (non-self-propelled); 3950 winches/hoists/cranes. NAICS 332991 ball & roller bearing mfg; 333922 conveyor & conveying equipment mfg; 333613 mechanical power transmission equipment mfg; 423840 industrial supplies wholesalers.",
+      "_codes_note": "PSC 3110 antifriction bearings; 3130 mounted bearings (pillow blocks, take-ups); 3020 gears/pulleys/sprockets; 3030 belting/drive belts; 3910 conveyors; 3920 material handling equipment (non-self-propelled); 3950 winches/hoists/cranes. NAICS 332991 ball & roller bearing mfg; 333922 conveyor & conveying equipment mfg; 333613 mechanical power transmission equipment mfg; 423840 industrial supplies wholesalers. PSC 4610 water purification equipment (lime slakers/feeders at water & wastewater plants, a federal buyer of lime handling gear: Corps of Engineers, Bureau of Reclamation, military installations).",
       "other_sources": {
         "DLA DIBBS": "https://www.dibbs.bsm.dla.mil \u2014 where most DLA bearing/pulley/conveyor-part buys post (RFQs by FSC 3110/3130/3020/3910). Viewable without login; quoting needs CAGE + DIBBS registration. Primary source for this profile, not SAM.gov.",
         "GSA eBuy": "Needs a MAS contract. Longer play.",
-        "Paper mills (commercial, not government)": "Paper mills are private; their bearing/conveyor buys are not on bid portals. That is a sales-prospecting job (Apollo/HubSpot), not a bid-watch job."
+        "Paper mills (commercial, not government)": "Paper mills are private; their bearing/conveyor buys are not on bid portals. That is a sales-prospecting job (Apollo/HubSpot), not a bid-watch job.",
+        "Water/wastewater plants": "Hot lime handling buyers are water & wastewater utilities (lime softening, slaking), cement/lime plants, steel mills, pulp & paper. Municipal utilities DO post on BidNet/RMEPS and state portals: add 'lime' keyword to all municipal watches."
       },
       "bidnet_keywords": [
+        "bucket elevator",
+        "lime",
+        "kiln",
+        "bulk material",
+        "conveyor",
+        "drag conveyor",
+        "screw conveyor",
+        "apron",
+        "lump breaker",
         "bearing",
         "pillow block",
         "take-up",
-        "conveyor",
         "pulley",
         "sheave",
         "idler",
-        "bucket elevator",
-        "screw conveyor",
-        "material handling",
-        "lump breaker",
         "shafting",
+        "material handling",
         "power transmission"
       ]
     }
