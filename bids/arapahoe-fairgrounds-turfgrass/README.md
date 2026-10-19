@@ -6,7 +6,7 @@ Source: GovTribe → BidNet. Document: `docs/RFP-26-52-Fairgrounds-Turfgrass-Con
 |-------|-------|
 | Agency | Arapahoe County Purchasing, 5334 S Prince St, Littleton |
 | Issued | 2026-10-01 |
-| **MANDATORY pre-solicitation meeting** | **Monday 2026-10-19 13:30 MDT via Microsoft Teams. Details on page 12 of the RFP. Attendance required to be eligible.** |
+| **MANDATORY pre-solicitation meeting** | **Monday 2026-10-19 13:30 MDT via Microsoft Teams. Link is NOT public: vendors had to email KSchwindt@arapahoegov.com (attendee name, company, phone, email) by 2026-10-16 16:00; links went out 10/16 17:00. We missed the registration window. A late invitation request is drafted in Luke's Gmail (Drafts) ready to send first thing Monday. If no link arrives by 13:00, this bid is dead.** |
 | Questions due | 2026-10-21 12:00 on bidnetdirect.com/colorado, one question per line |
 | **Proposals due** | **2026-11-04 14:00 on bidnetdirect.com/colorado; single PDF, contractor name first word of filename** |
 | Site | Arapahoe County Fairgrounds, 25690 E Quincy Ave, Aurora 80016; Central Greens north of Event Center; expands 1.15-ac pilot |
@@ -20,7 +20,7 @@ Source: GovTribe → BidNet. Document: `docs/RFP-26-52-Fairgrounds-Turfgrass-Con
 | Status | **GO ONLY IF Alex or Luke is on the Teams call Monday 1:30 PM MDT.** Otherwise dead. |
 
 ## To do
-- [ ] **MONDAY 13:30 MDT: join the mandatory Teams meeting (page 12 of PDF has the link). Alex preferred, Luke as backup.**
+- [ ] **MONDAY 07:00: send the drafted invitation-request email to KSchwindt@arapahoegov.com (in Gmail Drafts). Call (303) 738-7871 at 08:00 to ask the same. If admitted, join at 13:30 MDT.**
 - [ ] Questions in by 10/21 noon (sod source approval? irrigation changes? schedule windows?)
 - [ ] Alex: Tahoma 31 big-roll sod source and price; Davis-Bacon wage rates for landscape laborers in Arapahoe County
 - [ ] Submit single PDF on BidNet by 11/4 14:00

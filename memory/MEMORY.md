@@ -139,6 +139,12 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke: "that is YOUR to-do list." Produced: Littleton response draft, Thornton checklist + Exhibit C rate
+  sheet, Boulder distributor call list + script (AAF Denver 720-507-0120, Camfil Denver 303-893-3030,
+  Comfort Air 303-399-1752), RTD SBE path, Arapahoe late-invite email DRAFTED in Gmail (not sent: Luke
+  reviews/sends). Arapahoe meeting link was invite-only with a 10/16 registration deadline we missed.
+- No browser/computer-control tools exist in this cloud session; Luke's grant lives in the Desktop app /
+  `claude remote-control` sessions, not here.
 - Opened 5 bid folders with requirements from the actual documents (pulled via GovTribe): Littleton plumbing
   RFQ (GO, due 10/28), Thornton landscape RFP (GO w/ Alex, 10/28), Boulder filters (GO, sample 10/28, bid
   10/29), RTD bus shelters (GO, 11/16), Arapahoe turfgrass (GO only if someone joins MANDATORY Teams meeting

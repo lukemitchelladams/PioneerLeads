@@ -19,6 +19,15 @@ Source: GovTribe → OpenGov. Documents: `docs/126DM016-RFP.pdf`, `docs/126DM016
 | Contact | Marla Bainbridge, marla.bainbridge@rtd-denver.com, (303) 299-2411 |
 | Status | **GO. Longest runway in the pipeline. Alex Ditto = snow sub; custodial crew = ours or a janitorial sub.** |
 
+## SBE certification (RTD Small Business Opportunity Office)
+- Apply with RTD's own SBE Certification Application + Personal Financial Statement forms to SBO@RTD-Denver.com.
+  Review takes up to 45 days, first-come first-served; incomplete packets get 14 days to cure. Personal net
+  worth cap ~$2.047M excluding primary residence and the business. Other agencies' certifications do not
+  transfer. Forms: https://cdn.rtd-denver.com/image/upload/v1736976022/SBE_New_Certification_Application_Packet_ni1mot.pdf
+- 45 days from 10/20 is ~12/4, the same day RTD selects. So for THIS bid, meet the 15% with an RTD-certified
+  SBE sub (search RTD's SBE directory for snow/janitorial firms; ask Alex if he is certified) or document
+  good-faith efforts per 49 CFR 26.53. Apply anyway: it pays on every future RTD bid.
+
 ## To do
 - [ ] Attend 10/26 briefing (non-mandatory, but go)
 - [ ] Check RTD SBE certification eligibility for Brown Bison (Small Business Opportunity Office). If certifiable, apply now; it's worth 15% of every RTD bid.
