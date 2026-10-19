@@ -56,6 +56,6 @@
 - Rec Center RTU job: https://holbrookservice.com/portfolio/town-of-parker-rec-center/
 
 ## Sub pricing received
-- **2026-10-19 (phone, Rich Carroll, York/JCI):** $100/hr regular labor, $140/hr after-hours, quoted to Brown Bison. Our bid rate = Rich's rate + our markup. Open questions for Rich: parts markup %, trip/truck charge, holiday rate, whether $100 is lead tech or helper, minimum call-out hours, whether after-hours starts at 5pm or 4pm.
+- **2026-10-19 (phone, Rich Carroll, York/JCI):** $100/hr regular labor, $140/hr after-hours, quoted to Brown Bison. Our bid rate = Rich's rate + 10% (Luke, 2026-10-19): **$110.00/hr regular, $154.00/hr after-hours.** Sub background and evidence: sub-air-comfort-york.md. Open questions for Rich: parts markup %, trip/truck charge, holiday rate, whether $100 is lead tech or helper, minimum call-out hours, whether after-hours starts at 5pm or 4pm.
 - Comps on file (no Colorado municipal HVAC tab in hand yet): Bernards Twp NJ 2026 municipal HVAC tab $130 and $155/hr regular, $195 OT; Denver commercial labor market guides $110–$190/hr regular, 1.5–2x after hours; a Parker/Aurora contractor's public rate card $120/hr and $180/hr after hours. Denver HVAC mechanic wages $27–$39/hr (Salary.com 2026), so $100/hr billed is ~2.5–3.5x wage, a normal shop multiplier.
 - Best comp still missing: Town of Parker's last HVAC on-call award rates (public record). Ask Procurement 303-805-3188 / BidNet. Draft email in Gmail Drafts.
