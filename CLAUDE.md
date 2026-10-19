@@ -22,7 +22,12 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 7. Dates: write ISO (2026-10-09). Money: write with units.
 
 ## Standing rules from Luke
-- All landscaping work goes through Alex Ditto. No exceptions, no need for his phone number on file.
+- **BROWN BISON IS ALWAYS THE BIDDER.** Every bid, every trade. Subcontractors (Alex Ditto for landscaping,
+  Jones Bearing for equipment, any HVAC/plumbing/electrical sub) give us their pricing; we add our markup
+  and fees, we submit, we hold the contract, we manage the sub. NEVER describe a bid as "for" a sub, never
+  suggest a sub bid directly, never offer a "sub primes" option. (Luke, 2026-10-19, emphatic.)
+- All landscaping work is performed by Alex Ditto as OUR sub. Luke handles all communication with Alex;
+  the agent only surfaces Alex's emails and flags landscaping bids worth getting his pricing on.
 - All business email goes out from luke@brownbisonco.com. Never use lukemitchelladams@gmail.com for business.
 - Inbox monitoring runs hourly via Routine into the main session; Gmail is read-only for the agent. Never
   send/reply/forward/trash/label email without Luke's explicit instruction in the moment.

@@ -77,6 +77,10 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
   Chiller make/model/tonnage per building: unknown until the bid's equipment schedule is read.
 
 ## Standing instructions from Luke
+- **BROWN BISON ALWAYS PRIMES (Luke, 2026-10-19, after I framed Thornton as "Alex's bid").** We are the bidder
+  on every solicitation. Subs give pricing → we add markup/fees → we submit → we hold the contract. Never
+  suggest a sub bid on its own. Luke owns all communication with Alex; I only surface Alex's emails and
+  flag bids where we need his pricing.
 - **Mandatory pre-bid walkthroughs are a HUGE deal (Luke, 2026-10-19).** Not every bid has one, but when it
   does, someone must be there or we are ineligible. Rule: the moment a bid is opened, extract the pre-bid
   date and whether it is mandatory, put it at the top of the README, and flag Luke immediately if it is

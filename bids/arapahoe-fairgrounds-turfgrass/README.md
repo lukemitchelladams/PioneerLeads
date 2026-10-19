@@ -17,10 +17,10 @@ Source: GovTribe → BidNet. Document: `docs/RFP-26-52-Fairgrounds-Turfgrass-Con
 | Federal funds | **Yes → Davis-Bacon prevailing wage, Clean Air Act, FWPCA, federal terms** |
 | Evaluation | Experience/team 25, schedule/capacity 25, technical approach 30, cost 20 |
 | Contact | Katie Schwindt, NIGP-CPP, PPA, Sr. Purchasing Agent, (303) 738-7871, kschwindt@arapahoegov.com. Contacting the requesting department = possible disqualification. |
-| Status | **GO ONLY IF Alex or Luke is on the Teams call Monday 1:30 PM MDT.** Otherwise dead. |
+| Status | **GO only if Brown Bison gets into the Monday 1:30 PM MDT meeting (late-invite email drafted). Brown Bison submits; Alex performs as sub at his price + our markup.** |
 
 ## To do
 - [ ] **MONDAY 07:00: send the drafted invitation-request email to KSchwindt@arapahoegov.com (in Gmail Drafts). Call (303) 738-7871 at 08:00 to ask the same. If admitted, join at 13:30 MDT.**
 - [ ] Questions in by 10/21 noon (sod source approval? irrigation changes? schedule windows?)
-- [ ] Alex: Tahoma 31 big-roll sod source and price; Davis-Bacon wage rates for landscape laborers in Arapahoe County
+- [ ] Get Alex's price (sod source, labor, equipment) for 3.5 acres; add Brown Bison markup; confirm Davis-Bacon landscape laborer rates for Arapahoe County
 - [ ] Submit single PDF on BidNet by 11/4 14:00

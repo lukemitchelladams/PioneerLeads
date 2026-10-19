@@ -17,13 +17,15 @@ Source: GovTribe → BidNet. Document: `docs/RFP-324-26-Landscape-Construction-S
 | Bonds | Exhibits F/G Labor & Material Payment Bond and Performance Bond forms (per task, confirm thresholds in Exhibit E) |
 | Evaluation | Responsiveness, firm responsibility/financial capacity, municipal experience, key personnel, references, rates and markups. **Qualifications and experience weighted substantially more than price.** |
 | Contact | Keith Griess, keith.griess@cityofthornton.net |
-| Status | **GO with Alex Ditto as the performing partner.** Decide prime structure by Tuesday. |
+| Status | **GO. Brown Bison submits. Alex Ditto performs as our listed sub (Exhibit B); his rates + our markup = Exhibit C.** |
 
-## Structure decision for Luke + Alex
-Option A: Alex's company primes, Brown Bison not involved. Option B: Brown Bison primes, Alex subs (Brown Bison carries the $2M/$4M CGL and bonds). Option C: joint submission listing Alex as key subcontractor in Exhibit B. The RFP weights municipal experience and key personnel heavily, so whoever has the municipal references should prime.
+## Structure
+Brown Bison primes and submits. Alex Ditto is listed in Exhibit B as the landscape construction subcontractor.
+Exhibit C billable rates = Alex's burdened rates plus Brown Bison markup; Brown Bison carries the $2M/$4M CGL,
+auto, and bonds, and is the City's single point of contact.
 
 ## To do
-- [ ] Luke + Alex call Monday: pick structure, confirm Alex's CGL limits and bonding
+- [ ] Get Alex's crew/equipment rate sheet (Luke handles the ask); apply Brown Bison markup in Exhibit C
 - [ ] Fill Exhibit C rates (crew, foreman, operator, laborer; equipment list; markup %)
 - [ ] Exhibit B key personnel + subs; Exhibit 3 reference releases (3 municipal refs)
 - [ ] Acknowledge all addenda (check BidNet daily)
