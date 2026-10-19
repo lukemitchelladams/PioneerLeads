@@ -25,7 +25,7 @@ the pipeline gets a named person for the walk before the date is 48 hours out.
 | RTD 126DM016 Bus Shelters | 2026-10-26 14:00 MT, Teams | No (attend anyway) | Luke | Alex |
 | Littleton RFQ 2126 Plumbing | 2026-10-09 (passed, optional) | No | — | — |
 | Thornton RFP 324-26 Landscape | none | No | — | — |
-| Boulder BID-313-26 Filters | none; sample drop by 10/28 | No | Luke (sample delivery) | — |
+| Boulder BID-313-26 Filters | — | — | NO BID | — |
 
 ## Older per-bid assignments
 | Bid | Walk date | Mandatory? | Assigned | Backup |

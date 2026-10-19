@@ -143,6 +143,7 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke killed Boulder filters: no quantities, thin margin on $15 filters, not worth it. Lesson: before listing a supply bid, check for quantities/annual spend; if absent, flag it as unknown-volume, don't rank it as GO.
 - Luke: "that is YOUR to-do list." Produced: Littleton response draft, Thornton checklist + Exhibit C rate
   sheet, Boulder distributor call list + script (AAF Denver 720-507-0120, Camfil Denver 303-893-3030,
   Comfort Air 303-399-1752), RTD SBE path, Arapahoe late-invite email DRAFTED in Gmail (not sent: Luke

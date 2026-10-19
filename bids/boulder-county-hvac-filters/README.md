@@ -11,7 +11,7 @@ Source: GovTribe → Bonfire. Documents: `docs/BID-313-26-Specifications-and-Bid
 | Specs | UL900; ASHRAE 52.2 MERV ratings; beverage-board frame with galvanized backing for pleats; 26-ga galvanized rigid cells; minipleat 2000 CFM @ 500 FPM, initial resistance ≤0.36" w.g. |
 | Terms | **Complete bid only, no partials.** Free delivery, no minimums, Boulder + Longmont locations. 1/2/4" within 7 business days; 12" within 30 days. No card/merchant fees. Must be able to custom-make high-capacity MERV8 1" and 2". |
 | Forms | 1-Vendor Information (fillable), 3-Bid Tabulation (fillable), PO terms, Public Opening info |
-| Status | **GO if we can get distributor pricing this week (Camfil, AAF/Flanders, Koch, Tri-Dim via Johnstone/Ferguson/Grainger).** Sample must physically arrive by 10/28. |
+| Status | **NO BID (Luke, 2026-10-19).** No quantities published, free delivery with no minimums, ~25% on $15 filters. Not worth the logistics. Kept for the 10/29 bid-tab opening (pricing intel only). |
 
 ## Why bother
 Low effort, recurring POs, a county award and bid tab for the resume, and the bid tab itself tells us what filter margins look like in this market.

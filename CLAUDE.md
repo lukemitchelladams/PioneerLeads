@@ -20,6 +20,8 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 5. One folder per bid under `bids/<agency>-<short-title>/`. Start from `bids/_template/`.
 6. Keep the status table in each bid `README.md` current.
 7. Dates: write ISO (2026-10-09). Money: write with units.
+8. Supply/commodity bids: do not rank as GO unless the document states quantities or annual spend. Small-margin
+   product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
 - **BROWN BISON IS ALWAYS THE BIDDER.** Every bid, every trade. Subcontractors (Alex Ditto for landscaping,
