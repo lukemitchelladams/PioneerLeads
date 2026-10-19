@@ -1,0 +1,543 @@
+ 
+1 
+ 
+ 
+ 
+ 
+Request for Proposal 
+ 
+#B-26-019 
+ 
+Switchgear and Protective Relay 
+Maintenance Services 
+ 
+ 
+October 13, 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Metro Water Recovery 
+6450 York Street 
+Denver, CO 80229-7499 
+www.MetroWaterRecovery.com 
+
+ 
+2 
+ 
+ 
+ 
+RFP Number:  B-26-019 
+ 
+Title:    Switchgear and Protective Relay Maintenance Services 
+ 
+Proposal Due Date:  November 12, 2026    Time: 2:00 PM MT 
+ 
+Issuing Office:  Metro Water Recovery 
+    Attn: Brian Sward 
+    Purchasing Division 
+    6450 York Street 
+    Denver, CO 80229-7499 
+    Bsward@metrowaterrecovery.com 
+ 
+Vendors must ensure proposals are submitted in accordance with this request for proposal (“RFP”) 
+by the due date and time stated herein. 
+ 
+Late proposals will not be accepted nor evaluated. 
+ 
+Proposals that do not comply with the requirements of this RFP may be rejected. 
+ 
+Vendors are encouraged to read the entire RFP prior to submitting a proposal.  Metro Water 
+Recovery (“Metro”) reserves the right to make award without discussions, based on initial proposals 
+received. Therefore, Vendors should ensure their best terms and pricing are included with  initial 
+proposals. Likewise, Metro may conduct discussions with one, some, or all Vendors as determined, 
+in their sole discretion, to be in Metro’s best interest. Metro further reserves the right to cancel this 
+RFP and/or reject offers, without obligation, as determined in the best interest of Metro. Any 
+proposal that takes exception to any terms and conditions, including the Short Form Agreement 
+(“SFA”) may, at the sole discretion of Metro, be excluded from further consideration. 
+ 
+ 
+ 
+ 
+ 
+General Information 
+ 
+3 
+ 
+Table of Contents 
+Section 1 Introduction and Background ................................................................................. 5 
+1.1 Introduction ........................................................................................................................ 5 
+1.2 Summary of Project Objective ........................................................................................... 5 
+1.3 About Metro Water Recovery ............................................................................................ 5 
+Section 2 Instructions to Vendors ............................................................................................ 6 
+2.1 Schedule of Events ............................................................................................................. 6 
+2.2 Administrative Information ................................................................................................ 6 
+Section 3 Scope of Project ......................................................................................................... 9 
+3.1 Statement of Work ............................................................................................................. 9 
+3.2 Scope of Services ............................................................................................................... 9 
+Section 4 Miscellaneous Provisions ........................................................................................ 10 
+4.1 Confidentiality/Open Records .......................................................................................... 10 
+4.2 Arrears Vendor ................................................................................................................. 10 
+4.3 Independent Proposal ....................................................................................................... 10 
+4.4 Work Quality .................................................................................................................... 10 
+4.5 Incurred Costs .................................................................................................................. 10 
+4.6 Taxes ................................................................................................................................ 11 
+4.7 Media Release .................................................................................................................. 11 
+4.8 Gifts and Gratuities .......................................................................................................... 11 
+4.9 Reservation of Rights, No Obligation, Right of Rejection, and Multiple Award ............ 11 
+Section 5 Proposal Evaluation ................................................................................................ 12 
+5.1 Evaluation......................................................................................................................... 12 
+5.2 Contract Negotiation ........................................................................................................ 12 
+5.3 Dissemination of Evaluation and/or Award Information ................................................. 12 
+Section 6 Proposal Response Requirements ......................................................................... 13 
+6.1 Transmittal Letter and Executive Summary..................................................................... 13 
+6.2 Company Background and References ............................................................................ 13 
+6.3 Proposed Product(s) and Services .................................................................................... 14 
+6.4 Proposed Team Resources ............................................................................................... 14 
+6.5 Price Proposal ................................................................................................................... 15 
+ 
+ 
+ 
+4 
+ 
+ 
+Attachment 1:   RFP B-26-019 Scope of Services 
+ 
+Attachment 2:   RFP B-26-019 Price Proposal 
+ 
+Attachment 3:  Short Form Agreement (“SFA”) 
+   SFA Exhibit A, Scope of Services 
+   SFA Exhibit C, Fee Schedule  
+ 
+NOTE: Attachment 3 is the standard  Metro contract.  Metro will only consider exceptions to 
+section  1.0 Services ; 2.0 Payment ; and 3.0 Insurance . Any exceptions must be specifically 
+stated with initial proposals.  Metro may accept or reject such exceptions at its sole discretion. 
+Other than these limited enumerated exceptions, non-acceptance of the standard Metro’s 
+contract will render a Vendor non-responsive and ineligible for award, at Metro’s sole 
+discretion. By submitting a proposal, Vendors  agree to these terms.  
+ 
+ 
+5 
+ 
+Section 1 Introduction and Background 
+ 
+1.1 Introduction 
+ 
+This RFP is to solicit proposals from Vendors capable of satisfying the needs of Metro Water 
+Recovery (Metro) as stated herein. In addition to soliciting written responses, this document 
+provides information to assist Vendors in preparing their responses and facilitates the evaluation 
+process.  
+ 
+1.2 Summary of Project Objective 
+ 
+Metro is seeking qualified and experienced firms capable of providing  preventive maintenance, 
+inspection, testing, and servicing of critical electrical distribution equipment at the Robert W. Hite 
+Treatment Facility and the South Thornton Lift Station. The expected outcome is reliable, properly 
+maintained electrical equipment supported by consistent testing and maintenance documentation 
+throughout the 2027–2031 contract term. 
+ 
+1.3 About Metro Water Recovery 
+ 
+Metro is the wastewater treatment authority for most of Metropolitan Denver and parts of Northern 
+Colorado. Metro is a Metropolitan sewage disposal district formed in 1961 and is a political 
+subdivision of the State of Colorado.  
+ 
+Metro is committed to protecting the environment and providing for the community’s future needs.  
+ 
+• Metro operates and maintains two treatment plants – the Robert W. Hite Treatment Facility 
+(RWHTF) and the Northern Treatment Plant (NTP) – the METROGRO Farm, and its 251-
+mile Interceptor System.  
+• Metro serves more than 2 million people within the 817-square mile service area. 
+• Metro Water Recovery treats on average 130 million gallons of wastewater per day from 
+neighborhood sewer lines and removes more than 95% of the pollutants before discharging 
+it into the South Platte River. 
+ 
+Metro Water Recovery’s mission is  to protect the region’s health and environment by cleaning 
+water and recovering resources. 
+ 
+Visit at www.MetroWaterRecovery.com 
+ 
+ 
+ 
+6 
+ 
+Section 2 Instructions to Vendors 
+ 
+2.1 Schedule of Events 
+ 
+The following RFP Schedule of Events represents the best estimate of the schedule Metro will 
+follow, which is subject to change at Metro’s discretion. Metro reserves the right to add or delete 
+events as may be necessary. 
+  
+ 
+2.2 Administrative Information 
+ 
+All official communication with Vendor will be via the Rocky Mountain E -Purchasing System 
+(Bidnet Direct) at https://www.bidnetdirect.com/colorado/metro-water-recovery prior to the 
+Proposal Due Date. Notices may include RFP addendums, modifications, questions and answers, 
+clarifications to requirements, and award announcements. It is the responsibility of the Vendor to 
+monitor Bid net for any such notices.  Communications outside of the Bid net system must be 
+approved by Metro’s issuing office. Vendors are required to acknowledge receipt of all addendums 
+in the cover letter of their proposal. 
+ 
+Metro is requesting Vendor proposals for the items or services described herein. All proposals must 
+Event 
+ 
+Date and Time 
+RFP Posted on Bidnet 
+(https://www.bidnetdirect.com/colorado/metro-water-
+recovery) 
+October 13, 2026 
+Pre-Proposal Conference/Site Visit 
+ 
+RSVP to Issuing Office by October 23, 2026, 2pm MT 
+ Please limit attendance to no more than two 
+representatives per Vendor. 
+ 
+  October 27, 2026, 9am MT 
+  (not mandatory) 
+ 
+  
+ 
+ 
+ Written Inquiry Deadline (must be submitted in 
+Bidnet) November 2, 2026, 2pm MT 
+Response to Written Inquiries November 6, 2026  
+Proposal Due Date (must be submitted in Bidnet)   November 12, 2026, 2pm MT 
+Oral Presentations (at Metro’s sole discretion) TBD, if necessary 
+Estimated Notice of Award January 2027 (estimated) 
+ 
+7 
+ 
+be clear, concise, accurate, and legible . There must be  no doubt as to the intent and scope of the 
+proposal. Proposals may be withdrawn, in writing, at any time prior to the Proposal Due Date and 
+time. 
+ 
+Proposals shall be submitted as follows: 
+ 
+1. Proposals are due on or before the Proposal Due Date enumerated in the Event table 
+included herein. 
+2. Unnecessarily elaborate proposals are not desired. Font size for basic narrative descriptions 
+must be no smaller than 12 characters per inch.  Limit of 12 pages (excluding cover page, 
+page separators, table of contents, appendices) 
+3. Proposals should include all requirements as identified in Section 3 and Section 6. 
+4. The proposal shall present a full and complete description of how the Vendor proposes to 
+meet the scope requirements of this RFP. 
+5. Recent and relevant references for projects/contracts of similar size and scope. 
+6. A valid IRS Form W-9 
+ 
+Vendor and its employees will not disclose any written, printed, graphic, or electronically or 
+magnetically recorded information furnished by Metro for the proposer’s use to any person except 
+with Metro approval, and only to the extent necessary to perform the work under the Agreement.  
+This also applies to Vendor’s employees, agents, and subcontractors.   
+ 
+All proposals should be valid for a minimum of 60 calendar days from the Proposal Due Date. All 
+proposals and accompanying documentation will become the property of Metro at the Proposal Due 
+Date. 
+ 
+Any person, Vendor, corporation, or association submitting a proposal shall be deemed to have read 
+and understood all the terms, conditions, and requirements in the RFP and SFA. 
+ 
+Vendors may make written inquiries concerning this RFP to obtain clarification of requirements.  
+No inquiries will be accepted after the Written Inquiry Deadline indicated in the Schedule of Events 
+and no phone calls will be accepted. Metro requires that all inquiries be sent through Bidnet unless 
+otherwise approved. Please ensure the RFP number and title is included in the subject line of all 
+communications. Responses to inquiries may be published as addendums on Bidnet in accordance 
+with the Schedule of Events. Vendors should not rely on any other statements, either written or oral 
+during the open solicitation period.  
+ 
+During an active solicitation, all communication shall be with the issuing office. Vendors should 
+not contact and/or discuss this solicitation with any other Metro office or individual. 
+ 
+A Pre -Proposal Conference/Site Visit will be held in accordance with the Schedule of Events. 
+Although attendance is not mandatory, participation is highly encouraged. The event will include 
+an overview of the RFP followed by questions and answers related to the requirement s, the RFP, 
+ 
+8 
+ 
+and the overall process. Metro will attempt to answer questions during the event; however, the Pre-
+Proposal Conference/Site Visit is not a substitute for submitting written questions by the deadline 
+in the Schedule of Events. Following the event, Metro may post questions and answers on Bid net 
+Direct and make any necessary changes to the RFP through a formal addendum. 
+ 
+ 
+ 
+9 
+ 
+Section 3 Scope of Project 
+ 
+3.1 Statement of Work 
+ 
+Metro Water Recovery is seeking a qualified Vendor to provide scheduled inspection, preventive 
+maintenance, testing, and servicing of designated electrical distribution equipment located at the 
+Robert W. Hite Treatment Facility (RWHTF) and South Thornton Lift Station (STL). Services will 
+support Metro’s preventive maintenance program for the 2027 –2031 contract period and will be 
+performed in accordance with the applicable annual equipment schedules and detailed Scope of 
+Work. 
+ 
+3.2 Scope of Services 
+ 
+Attachment 1 - RFP B-26-019 Scope of Services 
+ 
+Attachment 2 - RFP B-26-019 Price Proposal 
+ 
+Vendor to be required to provide all services included on referenced Attachment 1 and enter 
+pricing in Attachment 2. 
+ 
+ 
+10 
+ 
+ 
+ 
+Section 4 Miscellaneous Provisions 
+ 
+4.1 Confidentiality/Open Records 
+ 
+The Vendor acknowledges that Metro is a public entity subject to the Colorado Open Records Act, 
+§ 24-72-201, et. seq., C.R.S. (“CORA”). Consequently, the proposal, including any accompanying 
+information and/or documentation that the Vendor submits in conjunction therewith is public 
+records available for public review under CORA.  
+ 
+By submitting a proposal, the Vendor certifies that the proposal and any accompanying materials 
+do not contain trade secrets or other information that is exempt from public inspection under CORA. 
+  
+4.2 Arrears Vendor 
+ 
+No proposal shall be accepted from, nor any purchase order/contract be awarded to, any Vendor 
+that is in arrears upon any obligations to Metro, or that otherwise may be deemed irresponsible or 
+unreliable. 
+ 
+4.3 Independent Proposal 
+ 
+By submission of a proposal, Vendor certifies that the proposal has been arrived at independently 
+and submitted without collusion with any other Vendor, and that the contents of the proposal have 
+not been communicated to any person not an employee or agent of the Vendor, or its surety on any 
+bond furnished herewith, and will not be communicated to any person prior to the Proposal Due 
+Date. 
+ 
+4.4 Work Quality 
+ 
+The apparent silence of any specification and any supplemental specifications as to any details or 
+the omission from it of a detailed description concerning any point shall be regarded as meaning 
+that only the best commercial practices are to prevail and t hat only materials of first quality and 
+correct type, size, and design are to be used.  All workmanship is to be first quality.  All 
+interpretations of the specification shall be made upon the basis of this statement and as determined 
+solely by Metro. 
+ 
+4.5 Incurred Costs 
+ 
+All costs related to the preparation of the proposal, incurred by the Vendor, shall be the sole 
+responsibility of the Vendor. Metro will not consider and/or reimburse Vendors for any costs or 
+expenses incurred  in preparing and/or submitting proposals in response to this RFP, attending 
+meetings, presentations, or other necessary requirements.  
+ 
+ 
+11 
+ 
+4.6 Taxes 
+ 
+Metro is exempt from federal taxes and Colorado state and local government sales and use taxes. 
+Where applicable, Vendors are responsible for payment of use taxes. 
+ 
+4.7 Media Release 
+ 
+News releases, including social media, pertaining to this RFP and/or resultant award shall not be 
+made without Metro’s written approval. 
+ 
+4.8 Gifts and Gratuities 
+ 
+Metro will not accept gifts or gratuities from Vendors. Metro may request product samples from 
+Vendors for evaluation purposes with disposition of those samples to be at the discretion of Metro. 
+ 
+4.9 Reservation of Rights, No Obligation, Right of Rejection, and Multiple Award 
+ 
+The solicitation made through this RFP implies no obligation on the part of Metro. Metro reserves 
+the right to cancel this RFP in whole or in part, at any time, without penalty. 
+ 
+This RFP does not constitute an offer or a contract with any proposed Vendor or other party.  
+ 
+The decision to reject a proposal is solely that of Metro. Metro reserves the right to reject or accept 
+any or all proposals, in whole or in part. Proposals received from debarred or suspended Vendors 
+will be rejected. Metro may reject any proposal that is not responsive to all of the material and 
+substantial terms, conditions, and performance requirements of this RFP. Metro further reserves the 
+right to award all, some, or none of the components/functional areas included in this RFP. Metro 
+further reserves the right to make one or more awards to competing Vendors for all or subsets of 
+functionality as a result of this  RFP or as otherwise determined in Metro’s best interests. Metro 
+further reserves the right to reject any proposal determined to be nonresponsive, negotiate with any 
+or all Vendors with respect to any or all terms of a proposal or contract , refrain from making an 
+award if it determines it to be in its best interest , abandon the project , and/or to re -advertise and 
+solicit other proposals at its discretion. 
+ 
+Metro reserves the right to award without discussions or to conduct discussions with one, some, or 
+all Vendors as it determines in its best interests. 
+ 
+ 
+12 
+ 
+Section 5 Proposal Evaluation 
+ 
+5.1 Evaluation 
+ 
+For proposals to be evaluated and considered for award, they must be deemed responsive to this 
+RFP in the sole discretion of Metro. To be determined responsive, submitted documents shall 
+conform in all material respects to the requirements stated herein and Vendors shall document and 
+validate the capability to fully perform all requirements defined by the RFP. Factors to  be 
+considered in connection with a Vendor’s capability to fully perform all requirements of the RFP 
+include, and not limited to, qualifications, experience, innovation, creativity, functionality, value -
+added services, project approach, and other factors required to provide the products and/or services 
+defined herein. 
+ 
+Metro will evaluate proposals received in response to this RFP that are determined to be responsive. 
+The objective of the evaluation is to determine the proposal that most effectively meets Metro’s 
+needs. Vendors should not assume they will have an opportunity for oral presentations or revisions 
+of proposals, so they should submit their most favorable proposal as the initial proposal.  Vendors 
+may be provided an opportunity to make an oral presentation as part of the evaluation process at 
+Metro’s sole discretion. 
+ 
+5.2 Contract Negotiation 
+ 
+In the event Metro and a Vendor are unable to agree upon all contract provisions, Metro reserves 
+the right to cease negotiations and negotiate with one or more other Vendors, or to reject all 
+proposals with no obligation. 
+ 
+5.3 Dissemination of Evaluation and/or Award Information 
+ 
+Before contract award, information shared concerning the proposal evaluation may only include: 
+ 
+• The number of proposals received 
+• The company name of the Vendor participating.  
+ 
+Vendor will be notified of selection on Bidnet after Metro after award of the contract.  
+ 
+ 
+13 
+ 
+Section 6 Proposal Response Requirements 
+ 
+6.1 Transmittal Letter and Executive Summary 
+ 
+SECTION 1 should contain the transmittal letter and executive summary and be limited to four 
+pages.  
+ 
+The transmittal letter shall be signed by an authorized representative of the Vendor such as the 
+owner, partner, or in the case of a corporation, the president, vice president, secretary, or other 
+corporate officer(s) responsible for binding the Vendor. 
+ 
+The transmittal letter must provide the Vender’s primary contact information, including the 
+following: 
+1. Name of the Vendor representative 
+2. Title 
+3. Name of company 
+4. Address 
+5. Telephone number 
+6. E-mail address 
+7. Signature of authorized officer of the Vendor 
+The transmittal letter must acknowledge all addendums, if applicable.  A signature on the 
+transmittal letter provides Metro with the Vendor’s acknowledgement and acceptance of the RFP 
+and execution of it during the discharge of any subsequent contract. It shall  be clearly understood 
+that by submitting a proposal in response to this solicitation the Vendor shall be deemed to have 
+accepted all specifications, terms, general conditions, and requirements  set forth  unless 
+otherwise clearly noted and explained in the Vendor’s proposal. Any exceptions or exclusions 
+may render the proposal non-responsive in the sole discretion of Metro. 
+ 
+The executive summary may be incorporated as part of the transmittal letter and should include the 
+following: 
+ 
+1. A brief summary of the proposal contents 
+2. Discussion of unique aspects, strengths, or value-added components being offered 
+ 
+6.2 Company Background and References 
+ 
+SECTION 2 of the proposal shall include company background information and client 
+references.  
+ 
+Vendor should identify and include detailed client references that may be contacted by Metro for 
+evaluation purposes. Vendor shall provide at least three references of similar clients  with whom 
+the Vendor has worked during the past five years that are of similar size and scope to this 
+requirement. Metro reserves the right to contact any reference, whether provided by the Vendor 
+ 
+14 
+ 
+or obtained by Metro, in connection with evaluation of this RFP.  
+ 
+6.3 Proposed Product(s) and Services 
+ 
+SECTION 3  of the proposal must include a summarized narrative describing the Vendor’s 
+approach and capabilities for meeting each requirement presented throughout the RFP . The 
+narrative must provide Metro with a clear understanding of the proposed services, work methods, 
+scheduling, testing, maintenance, documentation, quality control, safety practices, and use of 
+subcontractors or other third parties necessary to perform the Scope of Work. 
+ 
+6.4 Proposed Team Resources 
+ 
+SECTION 4 of the proposal shall describe the organizational structure and personnel proposed to 
+support Metro’s Switchgear and Protective Relay Maintenance program. The proposal shall identify 
+the roles, responsibilities, qualifications, certifications, and relevant experience of all key personnel 
+who will perform, supervise, manage, or support the services. 
+At a minimum, the proposed team shall identify, as applicable: 
+• Program/Project Manager responsible for overall coordination, scheduling, communication, 
+reporting, and contract performance; 
+• Field Supervisor or Lead Technician responsible for directing and overseeing field 
+activities; 
+• Qualified electrical technicians and testing personnel who will perform inspections, 
+preventive maintenance, testing, troubleshooting, and related services; 
+• Safety personnel or other individuals responsible for compliance with applicable electrical 
+safety requirements and Metro site-specific safety procedures; 
+• Engineering or technical support resources available to evaluate identified deficiencies, 
+equipment condition, test results, and other technical issues; and 
+• Subcontractors or other third -party resources proposed to perform any portion of the 
+services. 
+Resumes or qualifications shall be provided for key personnel proposed for primary roles and shall 
+identify experience relevant to the inspection, testing, preventive maintenance, troubleshooting, and 
+servicing of electrical distribution systems and associated equipment. 
+ 
+The proposal shall identify all applicable professional licenses, technical certifications, safety 
+training, manufacturer-specific training, and other qualifications held by proposed personnel. As 
+applicable to the services being performed, these qualifica tions should include NETA Certified 
+Electrical Testing Technician credentials, Qualified Electrical Equipment Maintenance Worker 
+(QEMW) qualifications, or equivalent industry -recognized credentials. NETA certification 
+establishes competency levels for elec trical testing technicians based on examinations, training, 
+continuing education, and experience requirements.  
+ 
+Personnel performing electrical maintenance, testing, or other work involving electrical hazards 
+shall have documented training and qualifications appropriate to the work being performed. 
+Proposers shall identify personnel with applicable electrical safety  training, including NFPA 70E 
+training where required for the assigned work, and shall describe how required qualifications and  
+ 
+15 
+ 
+ 
+ 
+training are maintained throughout the contract term. 
+ 
+For specialized testing or maintenance activities, the proposal shall identify the certification or 
+qualification level of the personnel proposed to perform the work. Metro may require 
+documentation verifying licenses, certifications, training, and qualifi cations prior to 
+commencement of work and throughout the contract term. 
+ 
+A clear distinction shall be made between Vendor personnel, subcontractor or third-party personnel, 
+and Metro personnel, including the respective roles and responsibilities of each. The Vendor shall 
+identify any services anticipated to be performed by subc ontractors and describe how those 
+resources will be managed and coordinated. 
+ 
+The Vendor shall also describe its approach for maintaining adequate staffing and qualified 
+personnel throughout the term of the program, including how personnel substitutions, emergency 
+support, and specialized technical needs will be addressed. Replacement personnel assigned to key 
+roles shall possess qualifications and experience comparable to or greater than those of the 
+personnel originally proposed. 
+ 
+Metro reserves the right to require background checks for individuals performing services on 
+Metro’s behalf or accessing Metro facilities, including Vendor employees, independent contractors, 
+subcontractors, and personnel of any third-party companies utilized in connection with the services. 
+ 
+6.5 Price Proposal  
+ 
+SECTION 5 of the proposal shall contain the completed price proposal in the format provided in  
+Attachment 2 - RFP B-26-019 Price Proposal. 
+ 
+Pricing should be submitted as an itemized annual lump sum for each year of the 5-year life of the 
+contract term. 
+ 

@@ -223,3 +223,12 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 - Round-2 plumber search (subagent, ~55 web queries): only 1 new email (Centennial Plumbing Heating & AC, sent). 12 phone-only shops logged in sub-outreach.md; best fits Mile High Drain 303-726-3888, Cronen 303-937-8369, Colorado Water Works (720) 320-6981. Small-business websites are DNS-blocked here, so emails can't be harvested from contact pages.
 - Pipeline sweep: GovTribe has only 51 open CO local solicitations in window, all triaged. All 60+ Colorado procurement/aggregator hosts blocked (curl and WebFetch). Luke: "we need to do much much better than this" — the lever is the network allowlist or the local runner; told him plainly.
 - Boulder filters: still PENDING on procurement's reply to the volume question.
+
+## 2026-10-18 late night (MT) — wide GovTribe sweep, 4 new CO folders, Luke's scope change
+- Luke: no web search for bids; search BidNet, SAM.gov, GovTribe, DIBBS. Colorado ideal but other states fine; other trades fine. BidNet/SAM/DIBBS remain DNS-blocked here (re-verified); GovTribe is the proxy for both. Told Luke the allowlist path again.
+- GovTribe query behavior: single-word keyword + state_ids works; OR-queries silently drop all filters (returned Hawaii etc). Use one term per call.
+- NEW CO folders: westminster-ps-facility-improvements (**mandatory walk Mon 10/19 14:00 Sherrelwood Elem; RSVP was due 10/16**), adams-county-airport-streetlights (**mandatory pre-bid Wed 10/21 10:00 Watkins**), brighton-as-needed-construction (due 11/09, no meeting, GO), metro-water-switchgear-maintenance (due 11/12, NETA sub needed). Docs downloaded from GovTribe S3.
+- Corrections: "Garfield County custodial" is Colorado Mountain College Breckenridge; mandatory walk 10/12 missed. Broomfield fencing mandatory 9/30 missed.
+- Out-of-state: only KS Dept of Revenue Manhattan janitorial (11/19) and Phoenix Fire custodial (11/05) are even plausible; both need local subs. Wichita HVAC needs Tue 10/20 10:00 CT pre-bid; can't.
+- Dad: USCG 60× SKF 21318E bearings due 12/16 (dealer quote possible); Navy groove pulley due 11/16. Ask Andrew.
+- Plumber round 2: Knight Plumbing emailed (knightplumbing01@gmail.com). Total emailed now 7.

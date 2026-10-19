@@ -1,4 +1,4 @@
-# Bid pipeline — updated 2026-10-19 (Mon, 2nd sweep)
+# Bid pipeline — updated 2026-10-18 late night (3rd sweep: wide GovTribe, 7 states, all service trades)
 
 **Sweep note 2026-10-19 (2nd):** GovTribe holds only 51 Colorado state/local solicitations due 2026-10-27 → 2027-01-31; all 51 triaged below or rejected (civil, IT, design, far away). Every Colorado portal and aggregator host (BidNet, RMEPS, Bonfire, OpenGov, VSS, denvergov, constructionbidsource, coloradobids.net, bidsparq, publicbidsearch, every city/county/school site tested, 60+ hosts) is DNS-blocked from this cloud session, and WebFetch is blocked the same way. Pipeline growth beyond GovTribe + email alerts needs the network allowlist (docs/cloud-env-setup.md) or the local runner. Web search alone finds almost nothing open.
 
@@ -25,7 +25,13 @@ plus SAM.gov. Daily email alerts to luke@brownbisonco.com are now set (see "Aler
 | — | City of Colorado Springs | Q26-096MZ Valley Hi Irrigation Pond rebuild ($600k, 3,000 CY excavation, liner, riprap) | 2026-10-28 | Civil/earthwork | — | — | Mike Zeller | **NO BID (Luke, 2026-10-19): no excavation/heavy civil jobs right now. Keep it simple.** |
 | — | Colorado DOC | IFB 2027000036 DRDC Fire Protection System Replacement, $17.7M | 2026-11-05 | Security electronics GC | — | **Mandatory pre-bid was 10/7. Requires 3 projects >$13M, $17.5M bonding, security-electronics specialty.** | Robyn Ventura | No bid. Way out of scale. |
 | 10 | CSU Facilities | DQ2026028BC SPUR HYDRO Stormwater Pump Station (electrical, paving, landscaping repair) | 2026-11-03 | Electrical/landscape | Us + Alex sub | Unknown | CSU Facilities | Evaluate. |
-| — | Garfield County | 117826P Professional Custodial Services (Glenwood Springs area) | 2026-11-02 | Janitorial | Us + janitorial sub | Unknown | via constructionbidsource / county | Evaluate only if a Western Slope janitorial sub exists; 2.5h+ from Denver. Doc not in hand. |
+| **NEW** | Westminster Public Schools | RFP 26-002 Summer 2027 Facility Improvements, 6 schools, 6 packages (electrical, lighting, casework, flooring, windows) | 2026-12-01 14:00 via RMEPS | GC/electrical | Brown Bison + GC/elec sub | **YES: MON 2026-10-19 14:00 MPT, Sherrelwood Elem, 8095 Kalamath St, Denver. RSVP was due 10/16 (late).** | Kristen Hernandez, khernandez@wps.org | **GO only if we attend Monday. Folder: bids/westminster-ps-facility-improvements/** |
+| **NEW** | Adams County | IFB-2026.766 Street Light Repair & Replacement, Colorado Air & Space Port (14 LED heads, boring, 2 poles) | 2026-11-12 15:00 via BidNet | Electrical | Brown Bison + electrical sub | **YES: WED 2026-10-21 10:00 MT, 5200 Front Range Pkwy, Watkins** | Joe Lachermeier, jlachermeier@adcogov.org | **GO if we attend Wednesday. Folder: bids/adams-county-airport-streetlights/** |
+| **NEW** | City of Brighton | RFP 26-500209-MV2 As-Needed General Construction (handyman/carpentry on-call, $80–100k/yr, 3-hr emergency) | 2026-11-09 14:00 via BidNet | Facilities/GC | Brown Bison + handyman/GC sub | **No** | Kelsey Archuleta, procurement@brightonco.gov | **GO. Folder: bids/brighton-as-needed-construction/** |
+| **NEW** | Metro Water Recovery | RFP B26019 Switchgear & Protective Relay Maintenance, 2 plants, 5 yrs | 2026-11-12 14:00 via BidNet | Electrical testing | Brown Bison + NETA sub | No (optional visit 10/27 09:00, RSVP by 10/23) | Brian Sward, bsward@metrowaterrecovery.com | Evaluate. Folder: bids/metro-water-switchgear-maintenance/ |
+| — | Colorado Mountain College (Breckenridge) | 117826P Professional Custodial Services | 2026-11-02 | Janitorial | — | **Mandatory walkthrough was 2026-10-12. MISSED.** | Julie Hanson | No bid. (Corrects earlier "Garfield County" row.) |
+| — | City & County of Broomfield PD | 26RFPPD002 Detention Center perimeter fence, ~4,000 LF | 2026-10-30 | Fencing | — | **Mandatory pre-proposal was 2026-09-30. MISSED.** | solicitations@broomfield.org | No bid. |
+| — | City of Grand Junction | RFP-5996-26-KF On-Call Encampment Cleanup / Biohazard / Abandoned Vehicles | 2026-11-10 | Hauling/remediation | — | None | Kathleen Franklin | No bid: Grand Junction, 4h away, incumbent in place. |
 | — | Boulder County | 2649 Contracted Rooftop Solar PV Services | 2026-10-30 | Electrical/solar | — | Unknown | Boulder County Purchasing | No bid: solar PV install is not our trade and no electrical sub lined up. |
 | — | City of Lafayette | RFP-26-30-FM Library gas boiler replacement; RFP-26-31-FM Police boiler replacement; RFP-26-32-FM Fire Station #1 generator + ATS | 2026-10-30 | Boiler/Electrical | Brown Bison | **Mandatory walks were Oct 8 and Oct 9. MISSED.** | Elizabeth Messner, elizabeth.messner@lafayetteco.gov | No bid. Ask for bid tabs after award: perfect boiler-replacement pricing comps. |
 
@@ -52,3 +58,34 @@ These emails land in the inbox the hourly Routine reads, so new matches get file
 ## Pricing intel to request by email (free)
 Arapahoe County HVAC Mechanical Services (due 10/09) bid tab; Jefferson County Public Library HVAC RFP 2026 bid
 tab; Town of Estes Park 2027 HVAC PM bid tab (rschumaker@estes.org); Lafayette boiler RFPs after award.
+
+
+## Out-of-state (GovTribe sweep 2026-10-18: WY, NE, KS, NM, UT, AZ; service trades, due ≥ 10/27)
+Luke (2026-10-19): Colorado is ideal, other states are fine, other trades are fine. Every one of these needs a local sub.
+
+| Agency | Solicitation | Due | Mandatory? | Verdict |
+|---|---|---|---|---|
+| City of Wichita, KS | RFB 260258 HVAC replacement at 13 residential sites (HUD, Davis-Bacon) | 2026-10-30 | **Mandatory pre-bid Tue 2026-10-20 10:00 CT in Wichita** | No bid: can't be in Wichita Tuesday morning. |
+| Kansas Dept of Revenue | EVT0010962 Janitorial Services, Manhattan DLEX | 2026-11-19 | No (site visits encouraged) | **Evaluate.** Small single facility, incumbent has a formal complaint on file. Needs a Manhattan KS janitorial sub. |
+| City of Phoenix | RFP GGS 26-0368 Custodial Services, 24 Fire Dept facilities, 2+3 yrs | 2026-11-05 14:00 | No (optional conf 10/8, site visits 10/15) | Evaluate only with a Phoenix janitorial sub. Needs 5 yrs in operation + $1M performance bond. Heavy. |
+| Town of Oro Valley, AZ | 27022 Janitorial, 22 facilities | 2026-11-04 | **Mandatory walk-throughs 10/14–15. MISSED.** | No bid. |
+| City of Mesa, AZ | Weed abatement & landscaping as-needed | 2026-10-28 | Pre-proposal 10/13 | No bid: AZ pest license, due in 9 days. |
+| City of Peoria, AZ | P27-0006 City Campus Landscape Maintenance | 2026-10-30 | Unknown | No bid: 11 days, no AZ sub. |
+| UDOT Region 1 | Electric gate sales/install/repair, 5 yrs | 2026-10-28 | No | No bid: prior government experience mandatory, 9 days. |
+| Snow College, UT | Pest control, 34 buildings | 2026-10-29 | No | No bid: Utah applicator license. |
+| Salt Lake City | SLCI27027 CNG time-fill site maintenance | 2026-11-04 | No | No bid: RMGA gas certification. |
+| Granite SD, UT / First Step House SLC | Irrigation system; siding & gutters (CDBG) | 10/29, 11/04 | **Mandatory pre-bids 10/20 and 10/21 in SLC** | No bid. |
+| Utah DFCM "Invitational" / "Prequalified" | several mechanical/electrical jobs | various | — | No bid: invited or prequalified contractors only. |
+
+## Federal (GovTribe, 2026-10-18 sweep)
+- **FAA 697DCK-26-R-00432 Consolidated Weed Control, KC District west (ICT, SLN, IXD, MKC, SGF, TUL, MCI).** Total Small Business, LPTA, FFP 2027–2031, due 2026-11-06 17:00 ET. Requires 3 past weed-control projects + 3 customer surveys + licensed applicators. We have none of that history → no bid unless a licensed KS/MO applicator sub brings the past performance.
+- Bureau of Reclamation 140R4026Q0141 pumping-plant roof, Mosca CO: **mandatory site visit was 10/14. MISSED.**
+- VA Sheridan WY Trane BAS: sole-source intent to R.L. Armacost. No.
+- VA Omaha chillers, VA Aurora concrete: SDVOSB set-asides. Not eligible.
+- Nationwide facilities (56 open, NAICS 561210/561720/561730/238220/238210/811310): almost all are base-ops, overseas, or SDVOSB/8(a). Only plausible with a local sub: Army IL051 SNOW, Homewood IL (Total SB, due 11/30); USACE De Queen AR janitorial (Total SB, due 11/04); Forest Service Star Meadows MEP repairs, Whitefish MT (Total SB, due 12/08). Parked.
+
+## Jones Bearing (dad) — federal buys found 2026-10-18
+- **USCG 70Z08026Q-AK017 BEARING ROLLER: 60 × SKF 21318E cylindrical roller bearings (NSN 3110-01-512-5534), commercial item, "all responsible sources," due 2026-12-16, deliver Baltimore by 2027-03-10.** MIL-DTL-197 packaging + MIL-STD-129 marking required. Brown Bison can quote as dealer if Andrew can source SKF 21318E and handle mil-spec packaging. Contact nina.m.crosby@uscg.mil. **Ask Andrew.**
+- Navy NAVSUP N0038326QPD29 PULLEY, GROOVE, due 2026-11-16, PSC 3020, no set-aside. NSN/drawing not in the notice; ask Andrew if American Pulley makes groove pulleys to Navy drawing. Contact andrew.n.phillips10.civ@us.navy.mil.
+- 27 other PSC 3110/3130/3020/3010/3040 hits are NSN-specific aerospace/marine parts (DLA Aviation, NAVSUP). Not his product.
+- DLA DIBBS itself (dibbs.bsm.dla.mil) is blocked from this cloud session; GovTribe only sees the DIBBS buys that also post to SAM.gov.
