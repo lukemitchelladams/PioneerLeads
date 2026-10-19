@@ -33,6 +33,9 @@ docs/cloud-env-setup.md        Network allowlist needed for the cloud session to
 .claude/                       SessionStart hook + settings for cloud sessions
 ```
 
+## Pipeline
+See `bids/_pipeline.md` (all candidates, due dates, go/no-go) and `team/walkthrough-roster.md`.
+
 ## Active bids
 
 | Bid | Agency | Portal | Status |

@@ -1,5 +1,20 @@
 # Always-on portal access: what exists, what I built, what Luke must do
 
+## Luke's 10-minute setup (this is the whole hoop; after it, nothing needs you)
+1. Cloud environment → Edit → Network access. Either pick the broader access level, or add Allowed domains:
+   `www.bidnetdirect.com`, `bidnetdirect.com`, `www.rockymountainbidsystem.com`, `api.sam.gov`, `sam.gov`,
+   `www.parkerco.gov`, `www.dcsdk12.org`, `estespark.colorado.gov`, `dms.estes.org`, `bouldercounty.gov`,
+   `coloradosprings.gov`, `www.douglas.co.us`, `www.denvergov.org`, `www.arapahoegov.com`.
+2. Same screen → Environment variables: `BIDNET_USER`, `BIDNET_PASS` (rotate the password first), `SAM_API_KEY`.
+3. BidNet → vendor profile: contact email = luke@brownbisonco.com; enable new-solicitation + addendum
+   notifications; follow Town of Parker, DCSD RE-1, Town of Estes Park, Douglas County, Castle Rock,
+   Lone Tree, Colorado Springs, Arapahoe County, Jefferson County; commodity codes HVAC + landscaping.
+Then tell me "go". I run the live scan, fix selectors against the real pages, and create the 4-hour
+scan Routine. From then on: BidNet emails land in the monitored inbox within the hour, the scraper
+cross-checks every 4 hours, new matches get a bid folder and a requirements matrix automatically, and
+you get a headline, not a to-do.
+
+
 Luke's requirement (2026-10-19): be logged into SAM.gov and BidNet at all times, scan for new bids, catch
 addenda on bids we're pursuing, pull documents for subs, with 24/7 email access. No manual logins.
 

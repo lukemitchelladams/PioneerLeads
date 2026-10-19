@@ -103,6 +103,10 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke: 5+ new bids in work by Mon AM, due 7+ days out; find walkthrough people; hands-off portal access.
+  Probed 39 CO procurement/aggregator hosts: ALL blocked. Web index yielded 3 live leads beyond Parker/DCSD
+  (Boulder County BID-313-26 air filters due 10/29; Colorado Springs R26-032MZ + R26-034MZ landscaping).
+  Wrote bids/_pipeline.md, team/walkthrough-roster.md, and the 10-minute setup at top of docs/portal-access.md.
 - Built bid-portal watchers (BidNet scraper validated on fixture only; SAM.gov watcher). Live run blocked
   by network policy. Wrote docs/portal-access.md with Luke's to-do list.
 - Gmail connected (luke@brownbisonco.com only; 6 test emails, nothing from vendors). Created hourly
