@@ -34,6 +34,9 @@ Ask the user to add them under Network access → Allowed domains (see docs/clou
 or ask the user to download the solicitation PDFs and drop them in the bid folder under `docs/`.
 
 ## Key facts (see memory/MEMORY.md for detail)
+- Brown Bison Holdings LLC: UEI EV9QPAPM4C47, CAGE 20VU2, SAM active to 2027-05-21, NAICS 238220.
+- GovTribe connector = bid search for BidNet/RMEPS + SAM.gov. Use it first, every session. State/local CO
+  search covers Parker, DCSD, Estes Park, Douglas County and the whole Front Range.
 - Town of Parker, CO posts solicitations on BidNet Direct (Rocky Mountain E-Purchasing System).
   Procurement: 303-805-3188. Bid docs usually require vendor login to download.
 - Town of Parker is a Town, not a City. Use "Town of Parker" on all submittals.

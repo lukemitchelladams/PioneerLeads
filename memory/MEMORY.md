@@ -4,8 +4,10 @@ Append-only log plus a maintained "Current state" section. Read this first every
 
 ## Current state (updated 2026-10-19)
 
-**Company:** Brown Bison — government contracting (HVAC / mechanical on-call, municipal facilities).
-Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
+**Company:** Brown Bison Holdings LLC — government contracting (HVAC / plumbing / electrical / landscaping /
+facilities). **UEI EV9QPAPM4C47. CAGE 20VU2.** SAM registered 2026-05-21, expires 2027-05-21 (renew April 2027).
+NAICS 238220. 3832 Rabbit Mountain Rd, Broomfield, CO 80020. Owner: Luke Adams, luke@brownbisonco.com,
+(720) 275-1554. Signature location should read Denver, CO.
 
 **Active pursuits (priority order per Luke, 2026-10-15):**
 1. **DCSD (Douglas County School District RE-1) HVAC bid.** Luke: "do everything we can to be as competitive
@@ -28,7 +30,8 @@ spherical roller bearings, take-ups, tapered-roller pillow blocks. American Pull
 bushings. ConveyMor = bucket elevators, drag/apron conveyors, lump breakers, lime proportioners, kiln feed
 screws. Target = product PURCHASE solicitations (DLA DIBBS by FSC 3110/3130/3020/3910 is the main source;
 SAM.gov secondary). Paper mills themselves are private buyers → sales prospecting, not bid portals.
-UEI/CAGE unknown; needed to quote federally. **Bid model (Luke, 2026-10-19): Brown Bison primes, Jones Bearing subcontracts/supplies the equipment.** Profile "jones-bearing" in bids/_watch/watch_profiles.json.
+**No SAM registration / UEI / CAGE exists (verified via GovTribe 2026-10-19).** Bid model (Luke): Brown Bison primes
+or quotes as dealer; Jones Bearing is the sub/supplier. If a perfect product buy can't be subbed, register him then. Profile "jones-bearing" in bids/_watch/watch_profiles.json.
 Brown Bison federal scope widened to plumbing, electrical, landscaping, janitorial, facilities maintenance.
 - **BidNet notifications (Luke, 2026-10-19): free BidNet accounts have NO "email me all bids" setting.**
   Automatic matching alerts are BidNet's paid notification subscription; free accounts only get agency-sent
@@ -93,7 +96,11 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
   addenda tracking, docs for subs. Reality: SAM.gov has an API (federal only; never had access, host blocked,
   no key). BidNet has NO API/MCP. Built scripts/bidnet_watch.py (Playwright scraper), samgov_watch.py,
   scan_bids.py. Blocked on Luke: allow domains, set SAM_API_KEY/BIDNET_USER/BIDNET_PASS, register
-  brownbisonco email on BidNet with notifications. GovTribe MCP: Luke created an account 2026-10-19 but the connector shows connect_incomplete (OAuth not finished); tools not available until he completes it and a new session starts. See docs/portal-access.md.
+  brownbisonco email on BidNet with notifications. **GovTribe MCP connected 2026-10-19 (account luke@brownbisonco.com).** It indexes BidNet/RMEPS, Bonfire, OpenGov,
+CO VSS and SAM.gov, so it IS the portal access we lacked. Six daily saved-search alerts created (see
+bids/_pipeline.md). Use Search_State_And_Local_Contract_Opportunities (state_ids ["CO"]) and
+Search_Federal_Contract_Opportunities (place id ChIJt1YYm3QUQIcR_6eQSTGDVMc = Colorado) every session.
+Bid documents are retrievable via Search_Government_Files / Show_Document. See docs/portal-access.md.
   Create the scan Routine only after the hosts are allowed.
 
 - **BidNet account (2026-10-19, updated same night):** login email changed to **luke@brownbisonco.com** (was lukeadams55@icloud.com). BidNet notifications now reach the monitored inbox. Luke pasted the password in chat;
@@ -121,6 +128,11 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- GovTribe live. Found Brown Bison UEI/CAGE. Jones Bearing has none. Built 10-candidate Colorado pipeline
+  (bids/_pipeline.md): Littleton on-call plumbing (10/28), Thornton on-call landscape (10/28), DOC boiler
+  chemicals (10/29), Boulder filters (10/29), Arapahoe fire alarm (10/30) + turfgrass (11/4), RTD bus shelters
+  (11/16), CO Springs irrigation pond (10/28), DOC fire protection (11/5), CSU pump station (11/3). Lafayette
+  boiler/generator RFPs missed mandatory walks. Created 6 GovTribe daily alerts.
 - Luke demanded a workaround for the network wall. Built the legitimate one: local scheduled runner
   (scripts/local_runner.sh/.ps1 + docs/local-runner.md) that scans BidNet/SAM/DIBBS from his computer and
   pushes results to the repo; added scripts/dibbs_watch.py (fixture-tested). Declined to tunnel around the
