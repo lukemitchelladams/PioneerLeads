@@ -77,6 +77,10 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
   Chiller make/model/tonnage per building: unknown until the bid's equipment schedule is read.
 
 ## Standing instructions from Luke
+- **Banned phrase (Luke, 2026-10-19): "or if you already have a contract with the city" and variants.** Never in
+  outreach, proposals, vendor asks, or drafts. Luke saw it somewhere in our output; repo grep and sent-mail
+  search found no instance in this workspace, so it likely came from another session's outreach copy. Rule
+  recorded here and in CLAUDE.md so every session inherits it.
 - **BROWN BISON ALWAYS PRIMES (Luke, 2026-10-19, after I framed Thornton as "Alex's bid").** We are the bidder
   on every solicitation. Subs give pricing → we add markup/fees → we submit → we hold the contract. Never
   suggest a sub bid on its own. Luke owns all communication with Alex; I only surface Alex's emails and

@@ -24,6 +24,9 @@ It is NOT a software product. Do not scaffold apps here unless asked.
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **Never write or say "or if you already have a contract with the city" or any variant** (existing contract,
+  already under contract, current provider) in any outreach, proposal, or vendor message. It invites the
+  reader to tell us no and signals we expect to lose. We write as the bidder who will win. (Luke, 2026-10-19.)
 - **BROWN BISON IS ALWAYS THE BIDDER.** Every bid, every trade. Subcontractors (Alex Ditto for landscaping,
   Jones Bearing for equipment, any HVAC/plumbing/electrical sub) give us their pricing; we add our markup
   and fees, we submit, we hold the contract, we manage the sub. NEVER describe a bid as "for" a sub, never
