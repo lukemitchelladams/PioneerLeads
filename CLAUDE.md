@@ -17,7 +17,9 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 
 ## Standing rules from Luke
 - All landscaping work goes through Alex Ditto. No exceptions, no need for his phone number on file.
-- Luke wants inbox monitoring. Gmail must be connected first; then run an hourly Routine (see memory).
+- All business email goes out from luke@brownbisonco.com. Never use lukemitchelladams@gmail.com for business.
+- Inbox monitoring runs hourly via Routine into the main session; Gmail is read-only for the agent. Never
+  send/reply/forward/trash/label email without Luke's explicit instruction in the moment.
 
 ## Known blocked hosts in cloud sessions
 bidnetdirect.com, rockymountainbidsystem.com, sam.gov, api.sam.gov, parkerco.gov.

@@ -59,18 +59,25 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
   Chiller make/model/tonnage per building: unknown until the bid's equipment schedule is read.
 
 ## Standing instructions from Luke
-- **Email monitoring (2026-10-19):** Luke wants to be alerted on every inbound email, not periodic scans.
-  Reality: Gmail connector is NOT connected (requires Luke to authorize in claude.ai connector settings).
-  Per-email push into a Claude session does not exist. Closest available: once Gmail is connected, create
-  a Routine (create_trigger, hourly, connectors ["Gmail"]) that checks the inbox, flags mail from Alex
-  Ditto / Rich Carroll / DCSD / Town of Parker / BidNet, and files attachments into the bid folders.
-  STATUS: blocked on Gmail authorization. Set up the Routine the moment the connector shows connected.
+- **Business email = luke@brownbisonco.com (Luke, 2026-10-19).** All business communications go through
+  the Brown Bison Workspace mailbox from now on. Historical vendor mail is on lukemitchelladams@gmail.com,
+  which is NOT connected; Luke suggested Chrome/computer-use connectors to read it (not available in this
+  cloud session). Simplest fix: forward/import that Gmail into brownbisonco (see docs/inbox-monitor-routine.md).
+- **Email monitoring (2026-10-19):** Gmail connector IS connected (luke@brownbisonco.com). Hourly Routine
+  "Brown Bison inbox check" fires into this session 06:00–20:00 MT. A fresh-session Routine
+  (trig_01AA1wwU52PmYHxm1UWHBozq) was created then DISABLED because this org cannot pass connectors to
+  Routines, so its sessions have no Gmail. Per-email push does not exist; hourly is the floor. See
+  docs/inbox-monitor-routine.md for limits and the prompt.
+- **Signature feedback (Luke's reply 2026-10-19 on "Sender test 2"):** signature text renders pink; location
+  should say Denver, CO, not Broomfield, CO; everything else looks good. Whoever owns the brownbisonco
+  sending setup (another session) needs to fix those two things.
 - Landscaping → Alex Ditto, always.
 - Never state a bid requirement that is not quoted from the solicitation document.
 
 ## Blockers
-- **Gmail not connected.** Blocks: reading the email Luke replied to on 2026-10-19, receiving Alex's DCSD
-  bid and Rich Carroll's Parker bid docs by email, and the inbox-monitoring Routine.
+- **lukemitchelladams@gmail.com not connected.** Past vendor threads (Alex Ditto, Rich Carroll) are there.
+  If Alex/Rich send Monday's bid docs to that address, the monitor will not see them unless Luke forwards
+  that mailbox into brownbisonco or saves the files to Drive/repo.
 - Cloud session network policy denies: bidnetdirect.com, rockymountainbidsystem.com, sam.gov,
   api.sam.gov, parkerco.gov. Fix: environment settings → Network access → add those hosts to
   Allowed domains. Until then, download the solicitation PDFs locally and commit them under
@@ -84,6 +91,9 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Gmail connected (luke@brownbisonco.com only; 6 test emails, nothing from vendors). Created hourly
+  inbox-check Routine into this session; disabled the fresh-session variant (no Gmail there).
+  Logged Luke's signature feedback (pink text, Denver not Broomfield).
 - Luke: wants push-style email alerts; corrected him that Gmail is not connected at all and that true push
   is unavailable (hourly Routine is the closest). Alex Ditto phone not needed; landscaping goes through Alex.
   Town of Parker on-call bid is real; Rich Carroll sends docs Mon 2026-10-20.
