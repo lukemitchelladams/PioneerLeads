@@ -247,7 +247,8 @@
         "shafting",
         "material handling",
         "power transmission"
-      ]
+      ],
+      "bid_model": "Brown Bison primes where a bid needs a registered contractor; Jones Bearing supplies/subcontracts the equipment (bucket elevators, lime handling, bearings, pulleys). Flag any Brown Bison-profile bid whose scope includes conveyors, elevators, or lime systems as a joint pursuit."
     }
   }
 }

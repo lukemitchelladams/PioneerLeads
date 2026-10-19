@@ -28,7 +28,7 @@ spherical roller bearings, take-ups, tapered-roller pillow blocks. American Pull
 bushings. ConveyMor = bucket elevators, drag/apron conveyors, lump breakers, lime proportioners, kiln feed
 screws. Target = product PURCHASE solicitations (DLA DIBBS by FSC 3110/3130/3020/3910 is the main source;
 SAM.gov secondary). Paper mills themselves are private buyers → sales prospecting, not bid portals.
-UEI/CAGE unknown; needed to quote federally. Profile "jones-bearing" in bids/_watch/watch_profiles.json.
+UEI/CAGE unknown; needed to quote federally. **Bid model (Luke, 2026-10-19): Brown Bison primes, Jones Bearing subcontracts/supplies the equipment.** Profile "jones-bearing" in bids/_watch/watch_profiles.json.
 Brown Bison federal scope widened to plumbing, electrical, landscaping, janitorial, facilities maintenance.
 - **BidNet notifications (Luke, 2026-10-19): free BidNet accounts have NO "email me all bids" setting.**
   Automatic matching alerts are BidNet's paid notification subscription; free accounts only get agency-sent
