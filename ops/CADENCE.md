@@ -32,9 +32,10 @@ A Routine fires into the orchestrator session each weekday morning, Mountain tim
 
 | Thing | Location |
 | --- | --- |
+| Live home of this folder | `lukemitchelladams/PioneerLeads`, branch `claude/portfolio-ops`, path `ops/`. Published through the GitHub API each check-in; the copy in the retired portfolio repo is a local working tree only. |
 | Portfolio brief and weekly top 3 | `ops/PORTFOLIO.md` |
 | Scorecards | `ops/speedrun-social.md`, `ops/poe-radius.md`, `ops/govcon.md` |
 | Decisions and open questions | `ops/DECISIONS.md` |
 | SpeedRun Social product state | `autosocial-ai` repo: `.autonomy/`, `docs/research/`, `docs/sales/` |
 | POE product state | `ROE` repo: `CLAUDE.md`, `docs/project-context.md`, `supabase/APPLIED.md` |
-| Govcon documents | Google Drive (RFP) and this folder until a repo exists |
+| Govcon documents | `lukemitchelladams/PioneerLeads` (`bids/`), the Brown Bison repo on Luke's Mac, and the CRM at crm.brownbisonco.com |
