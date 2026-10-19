@@ -1,4 +1,6 @@
-# Bid pipeline — updated 2026-10-19 (Sun night, after GovTribe connected)
+# Bid pipeline — updated 2026-10-19 (Mon, 2nd sweep)
+
+**Sweep note 2026-10-19 (2nd):** GovTribe holds only 51 Colorado state/local solicitations due 2026-10-27 → 2027-01-31; all 51 triaged below or rejected (civil, IT, design, far away). Every Colorado portal and aggregator host (BidNet, RMEPS, Bonfire, OpenGov, VSS, denvergov, constructionbidsource, coloradobids.net, bidsparq, publicbidsearch, every city/county/school site tested, 60+ hosts) is DNS-blocked from this cloud session, and WebFetch is blocked the same way. Pipeline growth beyond GovTribe + email alerts needs the network allowlist (docs/cloud-env-setup.md) or the local runner. Web search alone finds almost nothing open.
 
 Source: GovTribe (connected 2026-10-19). It indexes BidNet/RMEPS, Bonfire, OpenGov and Colorado VSS postings,
 plus SAM.gov. Daily email alerts to luke@brownbisonco.com are now set (see "Alerts" below).
@@ -23,6 +25,8 @@ plus SAM.gov. Daily email alerts to luke@brownbisonco.com are now set (see "Aler
 | — | City of Colorado Springs | Q26-096MZ Valley Hi Irrigation Pond rebuild ($600k, 3,000 CY excavation, liner, riprap) | 2026-10-28 | Civil/earthwork | — | — | Mike Zeller | **NO BID (Luke, 2026-10-19): no excavation/heavy civil jobs right now. Keep it simple.** |
 | — | Colorado DOC | IFB 2027000036 DRDC Fire Protection System Replacement, $17.7M | 2026-11-05 | Security electronics GC | — | **Mandatory pre-bid was 10/7. Requires 3 projects >$13M, $17.5M bonding, security-electronics specialty.** | Robyn Ventura | No bid. Way out of scale. |
 | 10 | CSU Facilities | DQ2026028BC SPUR HYDRO Stormwater Pump Station (electrical, paving, landscaping repair) | 2026-11-03 | Electrical/landscape | Us + Alex sub | Unknown | CSU Facilities | Evaluate. |
+| — | Garfield County | 117826P Professional Custodial Services (Glenwood Springs area) | 2026-11-02 | Janitorial | Us + janitorial sub | Unknown | via constructionbidsource / county | Evaluate only if a Western Slope janitorial sub exists; 2.5h+ from Denver. Doc not in hand. |
+| — | Boulder County | 2649 Contracted Rooftop Solar PV Services | 2026-10-30 | Electrical/solar | — | Unknown | Boulder County Purchasing | No bid: solar PV install is not our trade and no electrical sub lined up. |
 | — | City of Lafayette | RFP-26-30-FM Library gas boiler replacement; RFP-26-31-FM Police boiler replacement; RFP-26-32-FM Fire Station #1 generator + ATS | 2026-10-30 | Boiler/Electrical | Brown Bison | **Mandatory walks were Oct 8 and Oct 9. MISSED.** | Elizabeth Messner, elizabeth.messner@lafayetteco.gov | No bid. Ask for bid tabs after award: perfect boiler-replacement pricing comps. |
 
 Still inbound Monday: Town of Parker HVAC On-Call (Rich Carroll) and DCSD HVAC (Alex Ditto). Neither is on

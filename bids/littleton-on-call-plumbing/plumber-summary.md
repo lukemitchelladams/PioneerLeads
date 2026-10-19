@@ -13,8 +13,8 @@ Luke's instruction (2026-10-19): keep it to the bare minimum, these are plumbers
 - Work comes as work orders. Emergencies are billed hourly. Hourly rate includes drive time. Parts billed on top.
 - 12-month warranty on parts and labor. Before-and-after photos on each job.
 
-## The four things we need from the plumber
-1. **Can you be on site anywhere in Littleton within 2 hours of a call, nights and weekends included?** Yes or no.
+## The four things we need from the plumber (send Littleton-Plumbing-Partner-Summary.pdf, same content)
+1. **Can you be on site at one of those City buildings within 2 hours of a call, nights and weekends included?** Yes or no.
 2. **Your hourly rates:** regular hours, after-hours/weekend, and holiday. Plus your parts markup if you charge one.
 3. **Your Colorado plumbing license number** (Master or Journeyman) and the name on it. The City requires it.
 4. **A copy of your insurance certificate** (general liability, auto, workers' comp). Whatever you already carry.

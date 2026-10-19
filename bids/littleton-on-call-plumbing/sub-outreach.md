@@ -21,3 +21,24 @@ master license number, Littleton registration, insurance, and rates wins the slo
 1. Interest 2. Master plumber name + CO State Plumbing Board license # 3. Littleton contractor registration y/n
 4. Insurance carrier + GL limits 5. Hourly rates reg/after-hours/holiday + parts markup 6. Trucks + licensed plumbers
 7. 2–3 commercial/municipal references
+
+## Round 2 candidates (found 2026-10-19, second search; small-business sites are unreachable from the cloud so emails are scarce)
+
+| Shop | Location | Email | Phone | Evidence | Status |
+|------|----------|-------|-------|----------|--------|
+| Centennial Plumbing Heating & Air Conditioning (Samuel Hampton) | Centennial 80111 | hvacplumbingcentennial@gmail.com (directory-sourced, unverified) | 720-735-8761 | 20+ yrs plumbing/heating; commercial and 24/7 not confirmed | Emailed 10/19 (short 4-item ask) |
+| Mile High Drain Cleaning Inc | Littleton 80160 / Highlands Ranch | — | 303-726-3888 | Licensed, bonded, insured commercial plumbing contractor, 20+ yrs, 24-hr emergency | **Call** (best fit of the phone-only list) |
+| Cronen Plumbing & Heating Inc (Joseph Cronen, pres.) | Englewood 80113 | — | 303-937-8369 / (720) 370-5227 | Commercial, AAMD supplier | **Call** |
+| Colorado Water Works | Littleton 80127 | — | (720) 320-6981 | Since 2020, commercial + 24/7 emergency, license active | **Call** |
+| Josh's Plumbing Services | Highlands Ranch 80129 | — | 720-837-1729 | 7 days 7:30–22:00 | Call |
+| EC Plumbing (Eric Jensen) | Highlands Ranch 80129 | — | 303-710-7806 | License active | Call |
+| A Mile Hi Sewer & Drain (Jeremy Wright) | Englewood 80110 | — | 303-876-0019 | Owner-operator, residential + commercial, 2 employees | Call |
+| Pristine Plumbing | Englewood 80110 | — | 720-743-6419 | Family-owned, 24 hrs per directory | Call |
+| Ace High Plumbing Inc | Centennial 80112 | — | — | 2-person shop since 1997, small commercial, 24/7 | Look up number |
+| Elkhorn Heating, Air, Plumbing & Electrical | Littleton 80125 | — | 303-975-8809 | Commercial 24/7, but larger than owner-operator | Backup |
+| Plumbing Unlimited Inc | Littleton 80127 | — | 303-972-0287 | Littleton office | Call |
+| Priority Drain & Sewer (Amanda Barnes) | Littleton 80120 | — | 720-379-6499 | Commercial not confirmed | Call |
+
+## What we ask for now (simplified 2026-10-19 per Luke)
+1. Can you be on site at one of the ~38 City buildings within 2 hours, nights/weekends included? 2. Hourly rates (reg / after-hours / holiday) + parts markup.
+3. CO plumbing license # and name. 4. Insurance certificate. Nice-to-have: 1–2 commercial references. Document to send: Littleton-Plumbing-Partner-Summary.pdf in this folder.

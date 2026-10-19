@@ -217,3 +217,9 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 - Could not fetch the solicitation: all bid portals blocked by network policy.
 - Built this workspace: bid folder, York Q&A draft, equipment schedule template, SAM.gov
   search script, cloud-session hook.
+
+## 2026-10-19 (Mon, later) — Littleton plumber doc, round-2 outreach, pipeline sweep
+- Luke: plumber ask must be bare-minimum (2-hr response to one of the ~38 City buildings, hourly rates, license #, insurance cert); "these are plumbers". Delivered as a real file: bids/littleton-on-call-plumbing/Littleton-Plumbing-Partner-Summary.pdf (+ .docx), one page. Gmail draft to self updated to match. Wording rule: "on site at one of those City buildings within 2 hours", never "anywhere in Littleton".
+- Round-2 plumber search (subagent, ~55 web queries): only 1 new email (Centennial Plumbing Heating & AC, sent). 12 phone-only shops logged in sub-outreach.md; best fits Mile High Drain 303-726-3888, Cronen 303-937-8369, Colorado Water Works (720) 320-6981. Small-business websites are DNS-blocked here, so emails can't be harvested from contact pages.
+- Pipeline sweep: GovTribe has only 51 open CO local solicitations in window, all triaged. All 60+ Colorado procurement/aggregator hosts blocked (curl and WebFetch). Luke: "we need to do much much better than this" — the lever is the network allowlist or the local runner; told him plainly.
+- Boulder filters: still PENDING on procurement's reply to the volume question.
