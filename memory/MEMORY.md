@@ -128,6 +128,10 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Opened 5 bid folders with requirements from the actual documents (pulled via GovTribe): Littleton plumbing
+  RFQ (GO, due 10/28), Thornton landscape RFP (GO w/ Alex, 10/28), Boulder filters (GO, sample 10/28, bid
+  10/29), RTD bus shelters (GO, 11/16), Arapahoe turfgrass (GO only if someone joins MANDATORY Teams meeting
+  Mon 10/19 13:30 MDT). Dropped Arapahoe fire alarm (missed 10/16 walk) and DOC fire protection ($17.7M).
 - GovTribe live. Found Brown Bison UEI/CAGE. Jones Bearing has none. Built 10-candidate Colorado pipeline
   (bids/_pipeline.md): Littleton on-call plumbing (10/28), Thornton on-call landscape (10/28), DOC boiler
   chemicals (10/29), Boulder filters (10/29), Arapahoe fire alarm (10/30) + turfgrass (11/4), RTD bus shelters
