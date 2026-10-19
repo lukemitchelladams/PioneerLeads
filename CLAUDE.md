@@ -7,6 +7,10 @@ It also hunts bids for Luke's dad's industrial bearings/conveyor/paper-mill busi
 It is NOT a software product. Do not scaffold apps here unless asked.
 
 ## Operating rules (non-negotiable)
+0. FIRST thing on any new bid: find the pre-bid meeting / site walk date and whether attendance is
+   MANDATORY. Put it in the README status table and bids/_pipeline.md. If mandatory and <72h away or past,
+   tell Luke in the first line of your reply. Missing a mandatory walk kills the bid (Estes Park, Lafayette,
+   Arapahoe fire alarm, DOC fire protection all died this way).
 1. Correct misconceptions. If the user is wrong about a bid detail, say so with the source.
 2. Never state a bid requirement (response time, due date, insurance limit, equipment model)
    unless it is quoted from the actual solicitation document. If we don't have the document,

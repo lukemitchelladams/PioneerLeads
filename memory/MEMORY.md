@@ -77,6 +77,17 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
   Chiller make/model/tonnage per building: unknown until the bid's equipment schedule is read.
 
 ## Standing instructions from Luke
+- **Mandatory pre-bid walkthroughs are a HUGE deal (Luke, 2026-10-19).** Not every bid has one, but when it
+  does, someone must be there or we are ineligible. Rule: the moment a bid is opened, extract the pre-bid
+  date and whether it is mandatory, put it at the top of the README, and flag Luke immediately if it is
+  within 72 hours or already passed. Assign a person in team/walkthrough-roster.md before the date is 48h out.
+- **SAM.gov account:** login email lukeadams55@icloud.com (different from BidNet, which is now
+  luke@brownbisonco.com). Luke generated a public API key on 2026-10-19 and pasted it in chat; it is NOT
+  stored here. It belongs in the cloud environment's Environment variables as SAM_API_KEY (and in .env on
+  his computer for the local runner). SAM public API keys expire every 90 days: calendar a renewal ~2027-01-15.
+  api.sam.gov is still blocked from the cloud sandbox, so the key is unusable from a session until the
+  network allowlist changes; GovTribe covers SAM.gov opportunities in the meantime.
+- Chrome / computer-use connectors are not available in cloud sessions; cannot drive Luke's browser.
 - **Business email = luke@brownbisonco.com (Luke, 2026-10-19).** All business communications go through
   the Brown Bison Workspace mailbox from now on. Historical vendor mail is on lukemitchelladams@gmail.com,
   which is NOT connected; Luke suggested Chrome/computer-use connectors to read it (not available in this

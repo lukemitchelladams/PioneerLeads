@@ -18,7 +18,16 @@ the pipeline gets a named person for the walk before the date is 48 hours out.
 3. Post a short 1099 "pre-bid site walk + nameplate inventory" gig: $150–250 per walk, photos + equipment
    list delivered same day. I can draft the post.
 
-## Per-bid assignments
+## Per-bid assignments (update the moment a bid folder is opened)
+| Bid | Walk date | Mandatory? | Assigned | Backup |
+|-----|-----------|------------|----------|--------|
+| Arapahoe RFP 26-52 Turfgrass | **Mon 2026-10-19 13:30 MDT, Teams** | **YES** | Alex Ditto | Luke |
+| RTD 126DM016 Bus Shelters | 2026-10-26 14:00 MT, Teams | No (attend anyway) | Luke | Alex |
+| Littleton RFQ 2126 Plumbing | 2026-10-09 (passed, optional) | No | — | — |
+| Thornton RFP 324-26 Landscape | none | No | — | — |
+| Boulder BID-313-26 Filters | none; sample drop by 10/28 | No | Luke (sample delivery) | — |
+
+## Older per-bid assignments
 | Bid | Walk date | Mandatory? | Assigned | Backup |
 |-----|-----------|------------|----------|--------|
 | Town of Parker HVAC On-Call | TBD from docs | TBD | | |
