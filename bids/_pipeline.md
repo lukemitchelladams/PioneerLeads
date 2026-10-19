@@ -92,3 +92,25 @@ Luke (2026-10-19): Colorado is ideal, other states are fine, other trades are fi
 - Navy NAVSUP N0038326QPD29 PULLEY, GROOVE, due 2026-11-16, PSC 3020, no set-aside. NSN/drawing not in the notice; ask Andrew if American Pulley makes groove pulleys to Navy drawing. Contact andrew.n.phillips10.civ@us.navy.mil.
 - 27 other PSC 3110/3130/3020/3010/3040 hits are NSN-specific aerospace/marine parts (DLA Aviation, NAVSUP). Not his product.
 - DLA DIBBS itself (dibbs.bsm.dla.mil) is blocked from this cloud session; GovTribe only sees the DIBBS buys that also post to SAM.gov.
+
+## Luke's local CRM system: bids it tracks (from the "Brown Bison brief" email, 2026-10-19 08:37 MT)
+Source: brief emailed from luke@brownbisonco.com to Luke's Gmail (dashboard crm.brownbisonco.com). Dates below are
+**per that brief, not quoted from solicitations in this repo**. That system is running these bids; do not duplicate
+its sub outreach (it enforces a 2-touch cap per company and an interest-check first touch).
+
+| Bid | Agency | Due (per brief) | Stage (per brief) | Conflict with this repo |
+|---|---|---|---|---|
+| RFP 26-028 HVAC preventive maintenance | Town of Parker | **2026-10-22** | Pricing (Rich Carroll per-building PM + hourly) | Repo said "docs not in hand"; the CRM has the RFP number and due date |
+| 003-27 Mowing (19 sites) | DCSD | **2026-10-23** (Luke signs AM, uploads by 2 PM) | Proposal (Alex pricing, 5% markup) | Repo treated DCSD as an HVAC bid |
+| IFB 27-702-002 Livermore Elem snow | Poudre SD | 2026-10-26 | Sub outreach (rates by 10/19 or no-bid) | Not in repo |
+| W911WN26QA062 Mosquito Lake tower metal roof | USACE Pittsburgh | 2026-10-26 | Qualifying | Not in repo |
+| Bunkhouse asbestos mitigation | USDA | 2026-10-28 | Sub outreach | Not in repo |
+| IFB 27-701-002 kitchen hood cleaning (46 kitchens) | Poudre SD | 2026-10-29 | Pricing (HOODZ $675/kitchen) | Not in repo |
+| 1178-26P custodial, Breckenridge | Colorado Mountain College | 2026-11-02 | Pricing (A&A $5,600/mo) | **Repo marked NO BID (mandatory walk 10/12 missed)**: confirm with Luke |
+| 036-26 janitorial | Douglas County Government | 2026-11-02 | Qualifying | Not in repo |
+| RFP 26-058 on-call facilities trade services | El Paso County | 2026-11-04 | Qualifying (3-yr experience question) | Not in repo; addendum 2 issued 2026-10-19 (BidNet email) |
+| 26-18629AP-FM asbestos abatement | Jefferson County | 2026-10-06 | Submitted | Not in repo |
+| R26-077MZ Parks Maintenance On-Call | City of Colorado Springs | 2026-10-20 | **CRM: "already a no-bid"** | **Repo has GO + proposal draft**: Luke decides |
+
+Not pursued (2026-10-19): USPS Denver P&DC Roof Replacement 089495-27-A-0001, $12M-$13M, 100% P&P bonds,
+due 2026-11-20, optional pre-proposal 2026-11-04 09:00 on site. Out of scale.

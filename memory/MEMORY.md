@@ -261,3 +261,12 @@ centers) and reply text in sub-outreach.md for Luke. Their CDOT ESB cert does no
 Re-downloaded RTD RFP (old copy was an S3 error page) and pricing sheet. GovTribe CO: still nothing posted after
 10/14. Federal PSC 3920: one new buy, "Ergonomic Drum Handlers" 2031ZA27N00002 (Total SB, due 11/07): not a
 Jones Bearing product, skipped.
+
+### 2026-10-19 14:05 MT hourly check: TWO SYSTEMS
+Found the "Brown Bison brief" (sent 08:37 from luke@ to his Gmail): Luke runs a local Claude-driven CRM
+(crm.brownbisonco.com, Mac, Mail.app outbox with a send gate: 2-touch cap per company, interest-check first touch)
+that tracks 13 live bids. It is ahead of this repo on Parker (RFP 26-028, due 10/22), DCSD (003-27 mowing, due 10/23),
+CMC custodial (pricing, not dead), Colorado Springs (no-bid there), plus 7 bids not in this repo. Logged in
+_pipeline.md. My 10/19 sub emails (3 RTD sent) may conflict with its touch rules; RTD/Brighton/Adams/Metro Water
+are not in its list, so no duplicate outreach found. Ask Luke which system is the source of truth.
+New BidNet email: El Paso County 26-058 addendum 2. Luke replied to Brent (Lightning Mobile) with files 13:40 MT.
