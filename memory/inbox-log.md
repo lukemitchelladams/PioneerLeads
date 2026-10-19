@@ -24,3 +24,5 @@ One line per relevant inbound email. Written by the hourly inbox check.
   Brighton x6 (handilyhomeservices, rocksolidhs, westpro64, bleekerco, ceresconstruction, vtradesman);
   Adams County x2 (amcnitt@hksutil.com, mbeggs@cecfg.com); Metro Water x3 (info.denver@resapower.com, info@voltyx.com,
   contact@powersolutionsgroup.com).
+- 2026-10-19 12:58 MT REPLY: Brent Haase, Lightning Mobile Services (RTD bus shelters): YES to 42 shelters; wants shelter list +
+  frequency + SOW before pricing; COIs coming from their office; CDOT ESB certified (not RTD SBE). Shelter list xlsx built.

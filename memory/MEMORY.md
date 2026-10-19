@@ -253,3 +253,11 @@ so outreach goes out as Gmail drafts for Luke to send unless he grants send perm
 Today: Westminster walk (14:00) and Arapahoe Teams (13:30) lost for subs; Luke could still attend himself.
 DOC Trinidad boiler = no bid (mandatory 10/21 10:00 conflicts with Adams County; RSVP was due 10/19).
 CSU SPUR HYDRO pump station = no bid (rule 8). Sub-outreach.md written for RTD, Brighton, Adams, Metro Water.
+
+### 2026-10-19 13:05 MT hourly check
+First sub reply: Lightning Mobile (Brent Haase) says yes on RTD shelters; needs shelter list before pricing. Built
+bids/rtd-bus-shelter-maintenance/docs/RTD-126DM016-Shelter-List.xlsx (42 shelters, 210 services/week, transfer
+centers) and reply text in sub-outreach.md for Luke. Their CDOT ESB cert does not count toward RTD's 15% SBE goal.
+Re-downloaded RTD RFP (old copy was an S3 error page) and pricing sheet. GovTribe CO: still nothing posted after
+10/14. Federal PSC 3920: one new buy, "Ergonomic Drum Handlers" 2031ZA27N00002 (Total SB, due 11/07): not a
+Jones Bearing product, skipped.
