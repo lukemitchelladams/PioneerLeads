@@ -238,3 +238,4 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 - GovTribe daily alert: Jones Bearing new hits are DLA Aviation rod-end bearings (aerospace). Not his product. Nothing new in CO state/local or federal CO since 10/18.
 - bids/_watch/REPORT.md is still my cloud test run (BidNet tunnel errors, no SAM key). Luke's local runner has not run.
 - inbox-seen.json now holds 6 thread ids.
+- 2026-10-19 09:45 MT: Rich Carroll (York) will quote Brown Bison $100/hr regular, $140/hr after-hours for Parker HVAC on-call. Logged in bids/town-of-parker-hvac-on-call/README.md with comps. Parker bid docs still not received from Rich. Recommendation given: rates are mid-market; keep our labor markup ≤15%; get parts markup and trip charge from Rich; get Parker's prior award rates as the real comp.
