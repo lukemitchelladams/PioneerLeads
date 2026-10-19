@@ -34,3 +34,7 @@ the pipeline gets a named person for the walk before the date is 48 hours out.
 | DCSD HVAC | TBD from docs | TBD | | |
 | Colorado Springs R26-032MZ landscaping | TBD | TBD | Alex Ditto | |
 | Colorado Springs R26-034MZ landscape beds | TBD | TBD | Alex Ditto | |
+
+| Colorado Springs R26-077MZ Parks On-Call | none mandatory | due Tue 10/20 14:00 via BidNet | Luke submits |
+| Westminster PS RFP 26-002 | **Mon 10/19 14:00 Sherrelwood Elem (MANDATORY)** | due 12/01 | Luke |
+| Adams County IFB-2026.766 streetlights | **Wed 10/21 10:00 Watkins (MANDATORY)** | due 11/12 | Luke + electrical sub |

@@ -232,3 +232,9 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 - Out-of-state: only KS Dept of Revenue Manhattan janitorial (11/19) and Phoenix Fire custodial (11/05) are even plausible; both need local subs. Wichita HVAC needs Tue 10/20 10:00 CT pre-bid; can't.
 - Dad: USCG 60× SKF 21318E bearings due 12/16 (dealer quote possible); Navy groove pulley due 11/16. Ask Andrew.
 - Plumber round 2: Knight Plumbing emailed (knightplumbing01@gmail.com). Total emailed now 7.
+
+## 2026-10-19 06:10 MT hourly check
+- NEW: Colorado Springs R26-077MZ Parks Maintenance On-Call, due Tue 2026-10-20 14:00 MDT via BidNet. Luke downloaded it on BidNet himself Sunday night. $3M/yr IDIQ pool, 5 yrs, hourly rates NOT evaluated. Folder + proposal-draft.md written. Luke must fill Exhibit 1, references, Appendix A Excel (he has it), sign, upload.
+- GovTribe daily alert: Jones Bearing new hits are DLA Aviation rod-end bearings (aerospace). Not his product. Nothing new in CO state/local or federal CO since 10/18.
+- bids/_watch/REPORT.md is still my cloud test run (BidNet tunnel errors, no SAM key). Luke's local runner has not run.
+- inbox-seen.json now holds 6 thread ids.
