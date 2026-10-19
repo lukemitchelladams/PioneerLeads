@@ -89,7 +89,7 @@ also widened to plumbing, electrical, landscaping, janitorial, facilities mainte
   brownbisonco email on BidNet with notifications. GovTribe MCP exists for federal. See docs/portal-access.md.
   Create the scan Routine only after the hosts are allowed.
 
-- **BidNet account (2026-10-19):** login email is lukeadams55@icloud.com. Luke pasted the password in chat;
+- **BidNet account (2026-10-19, updated same night):** login email changed to **luke@brownbisonco.com** (was lukeadams55@icloud.com). BidNet notifications now reach the monitored inbox. Luke pasted the password in chat;
   it is NOT stored here and must be rotated. Credentials belong in the cloud environment's Environment
   variables as BIDNET_USER / BIDNET_PASS, nowhere else. BidNet notifications currently go to the iCloud
   address, which no monitor sees: change the BidNet vendor contact email to luke@brownbisonco.com.

@@ -50,7 +50,7 @@ Luke sets states). Add a profile = add a company. Every report row is tagged wit
 2. **Secrets** in the same environment settings (Environment variables):
    `SAM_API_KEY` (SAM.gov → Account Details → API Key), `BIDNET_USER`, `BIDNET_PASS`.
    Never paste these in chat. The scripts read them from the environment only.
-3. **BidNet vendor profile** (account login is currently lukeadams55@icloud.com): change the contact email to luke@brownbisonco.com, turn on email notifications,
+3. **BidNet vendor profile** (login now luke@brownbisonco.com, done 2026-10-19): confirm the contact/notification email also shows luke@brownbisonco.com, turn on email notifications,
    follow Town of Parker, DCSD RE-1, Town of Estes Park, Douglas County, and add commodity codes for HVAC
    (NIGP 031, 910-xx mechanical maintenance) and landscaping (988). This alone makes BidNet push to us.
 4. Optional: connect **GovTribe** in claude.ai connectors for federal search without an API key.
