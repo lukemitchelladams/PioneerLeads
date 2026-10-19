@@ -16,6 +16,24 @@ Research date 2026-10-19. Small-business sites, BBB, Porch, Birdeye and parkerco
 
 **Not found online:** any Town of Parker contract, purchase order, council action, or check-register payment to Air Comfort York. The Town's check registers are not indexed by search engines. The permit above is the only Town document found. Rich's statement that they have worked "for the city for a long long time" needs Town facility names and a Town contact from him to be usable.
 
+
+## Town of Parker permit history found (parkerco.gov monthly permit reports, via search index, 2026-10-19)
+All four are Town-ISSUED permits naming "Air Comfort York" as mechanical contractor. All four are PRIVATE commercial buildings inside Town limits, not Town-owned facilities. Total permitted mechanical value 2023–2026 ≈ $526,000.
+
+| Permit | Issued | Address / project | Parcel | Scope per report | Value |
+|---|---|---|---|---|---|
+| MECH26-0066 | 2026-04-20 | 19865 Mainstreet, Parker Town Center, unit 160 (commercial tenant-finish center; Town Hall is 20120 E Mainstreet, a different building) | 2233-221-25-001 | Commercial mechanical | $180,000 |
+| MECH24-0214 | 2024-12-19 | 10262 Dransfeldt Place (light-industrial flex park) | 2233-152-13-001 | Furnace and air conditioner replacement | $136,368 |
+| MECH24-0114 | 2024-07-22 | 10264 Dransfeldt Place | 2233-152-13-001 | Furnaces and air conditioners | $125,000 |
+| MECH23-0016 | 2023-02-03 | Lincoln Meadows, Bldg #2 (commercial development off Lincoln Ave) | 2233-161-05-008 | Mechanical | $85,000 |
+| Permit #8842 | 1996 | A/C unit, Parker (per Porch permit history) | — | Electrical/mechanical | — |
+
+Self-reported on aircomfortyork.com (not verified): Culver's Castle Rock restaurant buildout (hoods, ductwork); Blu Note jazz bar, Parker (ductwork around stage); "hundreds of commercial jobs"; crane-set rooftop units and tenant finishes.
+Not found: any permit at a Town facility (Town Hall 20120 E Mainstreet, PACE Center 20000 Pikes Peak Ave, Recreation Center 17301 E Lincoln Ave, Fieldhouse 18700 E Plaza Dr, Police 18600 E Lincoln Meadows Pkwy). Town facility work is often done without a separate permit record or under the Town's own name, so absence here does not disprove Rich's claim. It does mean we cannot cite it without his facility names and a Town contact.
+Caution: "Air Comfort Inc." (Crown Point tenant finish, contact Sean Rogers; also a Fort Collins company) is a different firm. Do not attribute its permits to Air Comfort York.
+
+**How to use this in the proposal:** "Air Comfort York has held Town of Parker mechanical permits on four commercial projects since 2023 totaling more than $525,000 in permitted work, including the Parker Town Center tenant finish at 19865 Mainstreet (2026) and the Lincoln Meadows and Dransfeldt Place buildings. The firm has pulled mechanical permits in Parker since at least 1996." Then add the Town facility references Rich supplies.
+
 ## Reviews found (do NOT submit these as-is)
 | Platform | Rating | Notes |
 |---|---|---|
