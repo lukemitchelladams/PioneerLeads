@@ -11,6 +11,12 @@ It is NOT a software product. Do not scaffold apps here unless asked.
    MANDATORY. Put it in the README status table and bids/_pipeline.md. If mandatory and <72h away or past,
    tell Luke in the first line of your reply. Missing a mandatory walk kills the bid (Estes Park, Lafayette,
    Arapahoe fire alarm, DOC fire protection all died this way).
+0b. Sub outreach starts the day a bid goes GO, not 72 hours out (Luke, 2026-10-19). Subs need at least a
+   week's notice before a site walk or our pricing deadline. Same day a bid is opened: find 5-8 local subs
+   with public emails, write bids/<bid>/sub-outreach.md with the pricing-request email, and put it in front
+   of Luke that day. Ask subs for answers 7+ days before our submission. If a mandatory walk is under 7
+   days out, Luke attends for Brown Bison and subs price from our photos and notes. Every hourly check
+   lists GO bids with no sub pricing in hand and the days remaining.
 1. Correct misconceptions. If the user is wrong about a bid detail, say so with the source.
 2. Never state a bid requirement (response time, due date, insurance limit, equipment model)
    unless it is quoted from the actual solicitation document. If we don't have the document,

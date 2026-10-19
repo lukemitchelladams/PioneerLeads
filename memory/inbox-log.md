@@ -16,3 +16,11 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - RELEVANT: BidNet noreply 2026-10-19 05:26 MT: "Approaching closing date" — Luke downloaded docs for **City of Colorado Springs R26-077MZ Parks Maintenance On-Call, closing 2026-10-20 14:00 MDT**. Not in pipeline before. Thread 1a153ea06f69c3ce.
 - RELEVANT: GovTribe daily saved-search 2026-10-19 04:04 MT: Jones Bearing PSC search 1 new, keyword search 3 new. Thread 1a1539ec987bc502.
 - Not relevant: BidNet confirmation codes (Luke logged in Sun 21:59 MT), GovTribe verification + welcome, DMARC report.
+
+## 2026-10-19 13:00 MT: sub pricing requests (Luke: "be sending emails out to local companies way before")
+- SENT from luke@brownbisonco.com (RTD bus shelters): info@lminc.net, info@coloradopowerwash.com, Info@platinumpressurewash.com.
+- Send of the other 4 RTD emails was blocked by the session's permission check; created as Gmail drafts instead.
+- Gmail DRAFTS awaiting Luke's send (15): RTD x4 (washonwheels, thewashsquad, avalanchepowerclean, milehighmobilewash);
+  Brighton x6 (handilyhomeservices, rocksolidhs, westpro64, bleekerco, ceresconstruction, vtradesman);
+  Adams County x2 (amcnitt@hksutil.com, mbeggs@cecfg.com); Metro Water x3 (info.denver@resapower.com, info@voltyx.com,
+  contact@powersolutionsgroup.com).

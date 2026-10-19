@@ -1,0 +1,276 @@
+                              EXHIBIT A (Complete and Return)
+      STATEMENT OF WORK, SPECIFICATIONS, BIDDER(S) RESPONSE
+              COLORADO DEPARTMENT OF CORRECTIONS (CDOC)
+       DQ CAAA 2027000037 – Boiler Chemicals & Treatment Services at TCF
+
+1.   STATEMENT OF WORK: This Statement of Work (SOW) describes the services and
+     deliverables sought through this DQ and the scope of what the awarded Bidder(s) will be expected
+     to offer through the Purchase Order resulting from this DQ. The SOW is intended to provide
+     interested Bidder(s) with sufficient basic information to submit a Quote. It is not intended to limit a
+     quote’s content or exclude any relevant or essential data. CDOC is seeking Quotes from qualified
+     bidder(s) that can provide Boiler Chemicals and Treatment services on site at Trinidad Correctional
+     Facility.
+          Boiler Water Treatment services to include: Maintain the appropriate water chemical levels for
+          optimal performance of steam boiler system, condenser, condensate, and chiller water of
+          closed system. Implement a treatment program which protects boilers from water scales and
+          corrosion to prevent any malfunction or system issues. Monthly testing of water chemical
+          composition, adding or adjusting water concentration levels, inspection of boiler functions and
+          controls.
+          Consult with facility staff on operational practices, provide technical guidance and support of
+          chemical handling, and make recommendations for system care.
+          The awarded Bidder(s) will be expected to provide all necessary chemicals, materials,
+          equipment, testing supplies, and tools to perform treatment services on site.
+          Monthly schedule of services: Services must be prescheduled, one day per month, based on
+          Trinidad Correctional Facility Physical Plant staff agreed upon date and time. Additional calls
+          for testing and treatment may be requested prior to the regular monthly schedule.
+          Urgent service calls: Must be able and prepared to respond within 24 hours for urgent or
+          emergency service calls. It is critical for the daily operations of the facility that the Boiler
+          System be fully operational at all times.
+          Please be advised that all bidder(s) interested in submitting a quote for these services must attend
+          the Mandatory Site Visit scheduled for 10:00am Wednesday, October 21, 2026. See section 4
+          of the Document Quote for additional instructions and information.
+2.   SPECIFICATIONS OF BOILERS:
+          Trinidad Correctional Facility currently has two (2) Cleaver Brooks model #CBW700-150 in
+          the program’s unit and T Building, built in 1998.
+          Steam capacity is 5,277,000 BTU’s providing heat to 38,900 square feet.
+          There are two (2) additional Cleaver Brooks model #CBW700-100 in the admin building, built
+          in 1998.
+          Steam capacity is 4,200,000 BTU’s providing heat to 37,590 square feet.
+          The system is non-continuous with blowdowns and condensate, hydronic closed loop.
+          Natural gas is the heat source for the water tubes.
+
+
+                                                      1
+        Automatic controls: chemicals are administered through feed pumps which operate on an
+        automatic basis as the boilers call for water.
+        Water Source: Feed water is pretreated in house by facility staff with water softeners and are
+        not part of the requested chemicals or services in this solicitation. Facility water is tested
+        monthly by staff or a third-party contacted vendor.
+        The boiler(s) water pH in condensate, softness and hardness, sulfate levels and raw water
+        harness must be tested monthly and include lab reports sent to physical plant staff.
+        There are two (2) York Scroll Chillers model #YLAA. Maintenance for Chillers is contacted
+        through a third-party vendor; however, any visible or chemical concerns must be reported to
+        facility staff at time of service as part of the monthly consultation.
+        Historical data: new gas trains are on all boilers. Electronic air fuel mixture controls will be
+        needed in the future.
+3.   DELIVERABLES:
+        Boiler Water Treatment Chemicals List:
+        i.     Boiler Water Treatment - APC2102
+               a.   Sodium Sulfate Air Scavenger to take oxygen out of the water.
+        ii.    Hydronic Lines Water Treatment - Econmine 3130G
+               a.   Iconamine – Polyamine water treatment to remove sludge.
+        iii.   Steam Boiler Treatment – APC2412
+               a.   Phosphate Scale inhibitor, to remove scale out of boiler.
+        iv.    Steam Boiler Treatment – APC3320
+               a.   Trisodium Phosphate, pH balancer.
+        v.     Microbiological Treatment – JUSTEQ
+               a.   Chlorine, Biocide, for alae and slim control.
+        vi.    Phosphonate – APC5358
+               a.   Anti-scalant and Corrosion Inhibitor
+        vii. Sodium Hydroxide – APC2027
+               a.   Caustic Alkalinity Builder
+        Water Balancing Reagent Chemicals, Testing Kits & Supplies:
+        i.     Phenolphthalein, pH Inhibitor.
+        ii.    Conductivity Neutralizing Solution.
+        iii.   Trace Hardness Titrant.
+        iv.    Potassium Iodide – Iodate.
+        v.     Sulfuric Acid 1n Reagent Solution.
+        vi.    Molybdate Reagent Solution.
+        vii. Total Alkalinity Indicator.
+        viii. Hardness Indicator Powder.
+
+                                                    2
+          ix.    Trace Hardness Buffer.
+          x.     Starch Acid Inhibitor Powder.
+          xi.    Stannous Chloride.
+          xii. Coliform Test Kits (if needed).
+          xiii. Fluorescent Red Tracer Dye Tablets (in needed).
+          Technical and Training Support Requirements:
+          i.     Service representatives possess a technical degree(s), certifications, knowledge or
+                 experience, and expertise in boiler water treatment systems.
+          ii.    Provide formal training on the handling of chemicals, installation, care, maintenance,
+                 testing, and operation of water treatment systems.
+          iii.   Regular consulting services upon request and at least monthly.
+          iv.    24-Hour response time to service calls.
+4.   ON SITE SERVICE LOCATION
+     A.   Trinidad Correctional Facility, located at 2100 Hwy 350 East, Model, CO. 81059, is a medium
+          security facility. Some interaction or verbal contact with offenders that work in the same area
+          may occur.
+     B.   Service Technicians must have the ability to work in the space, area, near and around where
+          the boiler system is located on the facility property to perform services.
+     C.   Any employee(s) or assistant(s) of the Awarded bidder(s) working with Service Technicians
+          that will be entering a State of Colorado Correctional Facility, must be able to pass a
+          background check.
+     D.   Performance Standards: Any failure to deliver (non-delivery) of awarded goods or services
+          on three (3) separate occasions within the agreed-upon timeframe or as specified may result in
+          the Bidder(s) being deemed a non-responsible bidder(s), leading to disqualification from
+          participating in all future solicitations for a period of three (3) years or indefinitely.
+5.   CDOC RESPONSIBILITIES
+          Facility staff will escort technicians and assistants through the facility while performing the
+          monthly Boiler water treatment services.
+          Facility staff will coordinate schedule for monthly services with the Awarded bidder(s).
+          Reasonable time will be provided for services based on the necessary services; additional work
+          may require another service date to be scheduled.
+          Training and consulting services provided by awarded bidder(s) will be received by facility
+          staff to care for and maintain Boiler system.
+6.   PRICING
+     A.   Pricing must be provided on an itemized quote document or on Exhibit D-Price Quote. Price
+          per container size (55-gallon drum preferred or largest available) of chemical, treatment
+          services, testing, training, support and any additional service call pricing must be provided.
+     B.   Pricing of all goods and services will be considered all inclusive, no additional shipping,
+          surcharges, or taxes will be paid. Bidders should take shipping costs into consideration when
+          submitting a bid response to this solicitation.
+
+
+                                                     3
+     C.  Per diem, lodging and travel expenses are not authorized for these services and will not be
+         considered for award during the evaluation process. Any such charges listed on an invoice
+         from the awarded bidder(s) will not be paid, travel costs must be taken into consideration
+         when submitting a bid response to this solicitation.
+     D. All pricing shall remain firm during the first-year term of the Purchase Order.
+     E. The CDOC may at its sole discretion elect to include a provision in the CDOC Purchase Order
+         that allows the CDOC to consider an annual price increase not to exceed 2.5% for each fiscal
+         year of the Purchase Order if awarded. Any price increase(s) must be agreed upon between
+         CDOC and the awarded bidder(s).
+7.   INVOICING
+     A. All invoices will need to be submitted via email to: DOC Accounts Payable office,
+         doc_accountspayable@state.co.us
+     B. All invoices will be sent each month after scheduled water, testing, and chemical services have
+         been completed within 15 business days to the above-mentioned departments/staff via email.
+8.   EQUAL SPECIFICATIONS
+     A.   Brand names and specifications used herein are intended to aid in establishing the desired
+          standard of quality needed to meet state requirements, and not to unduly restrict competition.
+          Unless a specific item’s description states otherwise, you may submit a bid for a product of
+          equal specifications and quality.
+
+
+
+               THIS SPACE HAS BEEN LEFT BLANK INTENTIONALLY
+
+
+
+
+                                                   4
+9.   BIDDER QUESTIONS (please provide response)
+
+              INFORMATION SOUGHT                           BIDDER(S) RESPONSE
+
+     Bidder(s) name (company)
+
+     Number of years in business
+
+     Number of employees
+
+     Services Outside of Colorado or the United
+     States. Bidder(s) must disclose services
+     performed outside of Colorado or the United
+     States as required by C.R.S. §24-102-206.
+     Please sign and return Exhibit E.
+
+     Is the bidder(s) a nonresident bidder(s) from a
+     state that provides a bidding preference to
+     bidder(s) from that state, YES or NO and what
+     state.
+
+     Please confirm that your proposal is fully
+     compliant with Section 3.A Accessibility
+     Requirement of the DQ. YES or NO
+
+     Secretary of State (SOS) registration. Before
+     contract execution, the awarded bidder(s) must
+     be registered to do business in the state of
+     Colorado. If a bidder(s) is a foreign corporation
+     (formed under a statute or common law in a
+     jurisdiction other than Colorado) or other
+     foreign entity transacting business in the state
+     of Colorado, it shall warrant that it currently has
+     obtained and shall maintain any applicable
+     certificate of authority to transact business in
+     the state of Colorado and has designated a
+     registered agent in Colorado to accept service
+     of process. Are you registered with Colorado
+     SOS? YES or NO.
+
+     Bidder(s) must affirm agreement with the PO
+     Terms and Conditions. If not in agreement,
+     written exceptions in accordance with Section
+     9.A.xviii.v of the DQ (Attachment 1). Any
+     changes must be made with Bidder(s) Bid.
+     Please confirm YES or NO
+
+     Have you spoken with anyone other than the
+     Single Point of Contact listed in this DQ? YES
+     or NO
+
+
+                                                     5
+               INFORMATION SOUGHT                              BIDDER(S) RESPONSE
+
+Service-Disabled Veteran Owned Small Businesses
+(SDVOSB). Reference §24-103-905, C.R.S., et. seq.
+SDVOSB Bidder(s) must submit documentation of
+certification issued through the U.S. Department of
+veteran’s affairs in their Proposal. §24-103-905 C.R.S. sets
+a SDVOSB goal of at least 3% of all contracts by dollar
+value be awarded to SDVOSBs who must be incorporated
+or organized in Colorado, or they must maintain a place of
+business or have an office in Colorado and must be
+officially registered and verified as a SDVOSB by the
+Center for Verification and Evaluation within the United
+States department of veteran’s affairs. Are you a Service-
+Disabled Veteran Owned Small Business? Yes or No. If
+you answered “Yes” please submit documentation of
+certification with your proposal.
+
+Within the last 5 years, has your company (or any
+affiliates) defaulted on a Purchase order or Contract or had
+a Purchase Order or Contract terminated for cause? If yes,
+provide the date, contracting entity, type of contract,
+and details about the termination or default.
+
+Has your company (or any affiliates) been a party to
+litigation against the State of Colorado? If the answer is
+Yes, then state the date of initial filing, case name and
+court number, and jurisdiction.
+
+State of CO debt/tax payment. I certify that all applicable
+state of Colorado taxes are paid, and that no outstanding
+debt is owed to the state of Colorado. Please Confirm YES
+or NO
+
+Does your company use Subcontractors? YES or NO
+
+Have you filled out Exhibits A-E and returned with your
+Quote?    YES or NO
+
+
+
+
+                                              6
+                        FOR PROCUREMENT USE                                YES   NO
+
+Did Bidder(s) Return Exhibit A?
+
+
+Did Bidder(s) Return Exhibit B?
+
+Did Bidder(s) Return Exhibit C?
+
+Did Bidder(s) Return Exhibit D?
+
+Did Bidder(s) Return Exhibit E?
+
+Did Bidder(s) Return Exhibit F?
+
+Did Bidder(s) Return Exhibit G? (For Mandatory Site Visit)
+
+Did Bidder(s) Return Attachment 1 with changes?
+
+Does Bidder(s) have all required licenses, certifications, and insurance
+coverage?
+
+
+
+
+                                              7
+
