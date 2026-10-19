@@ -118,6 +118,11 @@ Brown Bison federal scope widened to plumbing, electrical, landscaping, janitori
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Luke demanded a workaround for the network wall. Built the legitimate one: local scheduled runner
+  (scripts/local_runner.sh/.ps1 + docs/local-runner.md) that scans BidNet/SAM/DIBBS from his computer and
+  pushes results to the repo; added scripts/dibbs_watch.py (fixture-tested). Declined to tunnel around the
+  org network policy or route his credentials through third parties. "10 contracts to bid this week" is
+  not deliverable until either the local runner or the cloud allowlist is live.
 - Searched federal sources for dad's products: DIBBS, SAM.gov, DLA, and 7 aggregators all blocked. Web index
   shows DLA bearing RFQs closed early Oct; one fairlead/bearing set-aside due 2026-10-23 (poor fit). Profile
   now leads with bucket elevators + hot lime handling, adds PSC 4610 (water treatment lime equipment).

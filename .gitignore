@@ -9,3 +9,7 @@ __pycache__/
 # os
 .DS_Store
 Thumbs.db
+
+# scanner scratch
+bids/_watch/raw-*.html
+.venv/

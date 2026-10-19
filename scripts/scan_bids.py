@@ -2,7 +2,7 @@
 """Run every bid-portal watcher and write bids/_watch/REPORT.md.
 
 Usage: python3 scripts/scan_bids.py            # all sources
-       python3 scripts/scan_bids.py --no-bidnet # skip Playwright
+       python3 scripts/scan_bids.py --no-bidnet --no-dibbs   # skip Playwright sources
 Exit code 0 always; the report carries the errors so a Routine can relay them.
 """
 from __future__ import annotations
@@ -34,6 +34,19 @@ def main() -> int:
         except Exception as e:  # noqa: BLE001
             parts.append(f"## BidNet Direct\n**Failed to run:** {type(e).__name__}: {e}")
             headline.append("BidNet: failed to run")
+
+    if "--no-dibbs" not in sys.argv:
+        try:
+            import dibbs_watch
+            d = dibbs_watch.run()
+            parts.append(dibbs_watch.render(d))
+            if d["new"]:
+                headline.append(f"DIBBS: {len(d['new'])} new ({sum(1 for v in d['new'].values() if v['match'])} matches)")
+            if d["errors"]:
+                headline.append(f"DIBBS: {len(d['errors'])} error(s)")
+        except Exception as e:  # noqa: BLE001
+            parts.append(f"## DLA DIBBS\n**Failed to run:** {type(e).__name__}: {e}")
+            headline.append("DIBBS: failed to run")
 
     r = samgov_watch.run()
     parts.append(samgov_watch.render(r))
