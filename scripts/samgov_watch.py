@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """SAM.gov opportunities watcher (federal only) with state diffing.
 
+Queries come from bids/_watch/watch_profiles.json: one profile per company (Brown Bison; Luke's dad's
+industrial bearings/conveyor business). Each notice is tagged with the profile(s) that matched it.
+
 Env: SAM_API_KEY (free, from your SAM.gov account page). Network: api.sam.gov must be reachable.
 Searches HVAC/mechanical-relevant notices with place of performance in Colorado, plus the NAICS
 codes we can perform, and reports NEW notices and CHANGED response deadlines since the last run.
@@ -17,17 +20,23 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 STATE_FILE = REPO / "bids" / "_watch" / "samgov_state.json"
+PROFILES_FILE = REPO / "bids" / "_watch" / "watch_profiles.json"
 API = "https://api.sam.gov/opportunities/v2/search"
 
-QUERIES = [
-    {"title": "HVAC", "state": "CO"},
-    {"title": "chiller", "state": "CO"},
-    {"title": "boiler", "state": "CO"},
-    {"title": "mechanical", "state": "CO"},
-    {"ncode": "238220", "state": "CO"},   # plumbing, heating, AC contractors
-    {"ncode": "561210", "state": "CO"},   # facilities support services
-    {"ncode": "561730", "state": "CO"},   # landscaping services
-]
+
+def load_queries() -> list[tuple[str, dict]]:
+    """Expand watch_profiles.json into (profile_name, params) pairs. A profile with no states runs nationwide."""
+    cfg = json.loads(PROFILES_FILE.read_text())
+    out: list[tuple[str, dict]] = []
+    for name, prof in cfg["profiles"].items():
+        states = prof.get("states") or [None]
+        for q in prof["samgov"]:
+            for st in states:
+                params = dict(q)
+                if st:
+                    params["state"] = st
+                out.append((name, params))
+    return out
 
 
 def fetch(params: dict, key: str, days: int) -> list[dict]:
@@ -54,20 +63,25 @@ def run(days: int = 45) -> dict:
         return {"now": now, "error": "SAM_API_KEY not set", "new": {}, "changed": {}, "all": prev}
     found: dict[str, dict] = {}
     errors = []
-    for params in QUERIES:
+    for profile, params in load_queries():
         try:
             for o in fetch(params, key, days):
                 nid = o.get("noticeId")
                 if not nid:
                     continue
-                found[nid] = {
+                rec = found.get(nid) or {
                     "title": o.get("title"), "sol": o.get("solicitationNumber"),
                     "agency": o.get("fullParentPathName"), "posted": o.get("postedDate"),
                     "due": o.get("responseDeadLine"), "type": o.get("type"), "url": o.get("uiLink"),
-                    "naics": o.get("naicsCode"), "seen": now,
+                    "naics": o.get("naicsCode"), "psc": o.get("classificationCode"),
+                    "pop_state": (o.get("placeOfPerformance") or {}).get("state", {}).get("code"),
+                    "seen": now, "profiles": [],
                 }
+                if profile not in rec["profiles"]:
+                    rec["profiles"].append(profile)
+                found[nid] = rec
         except Exception as e:  # noqa: BLE001
-            errors.append(f"{params}: {type(e).__name__}: {str(e)[:160]}")
+            errors.append(f"{profile} {params}: {type(e).__name__}: {str(e)[:160]}")
     new = {k: v for k, v in found.items() if k not in prev}
     changed = {k: v for k, v in found.items() if k in prev and prev[k].get("due") != v.get("due")}
     state["notices"] = {**prev, **found}
@@ -89,10 +103,10 @@ def render(r: dict) -> str:
         if not items:
             return
         out.append(f"\n**{title}**\n")
-        out.append("| Title | Sol # | Agency | Due | Link |")
-        out.append("|---|---|---|---|---|")
-        for v in items.values():
-            out.append(f"| {v['title']} | {v['sol'] or ''} | {v['agency'] or ''} | {v['due'] or ''} | {v['url'] or ''} |")
+        out.append("| Profile | Title | Sol # | Agency | State | Due | Link |")
+        out.append("|---|---|---|---|---|---|---|")
+        for v in sorted(items.values(), key=lambda x: (",".join(x.get("profiles", [])), x.get("due") or "")):
+            out.append(f"| {','.join(v.get('profiles', []))} | {v['title']} | {v['sol'] or ''} | {v['agency'] or ''} | {v.get('pop_state') or ''} | {v['due'] or ''} | {v['url'] or ''} |")
 
     table("NEW notices", r["new"])
     table("CHANGED response deadline", r["changed"])

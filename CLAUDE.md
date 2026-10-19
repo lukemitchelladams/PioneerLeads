@@ -2,6 +2,8 @@
 
 ## What this repo is
 Brown Bison's government-contracting workspace. Bids, proposals, vendor Q&A, and project memory.
+It also hunts bids for Luke's dad's industrial bearings/conveyor/paper-mill business (profile
+`dads-company` in bids/_watch/watch_profiles.json). Every scan covers both companies.
 It is NOT a software product. Do not scaffold apps here unless asked.
 
 ## Operating rules (non-negotiable)

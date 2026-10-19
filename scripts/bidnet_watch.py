@@ -45,12 +45,18 @@ AGENCIES = {
     "City of Lone Tree": "https://www.bidnetdirect.com/colorado/city-of-lone-tree",
 }
 
-KEYWORDS = [
-    "hvac", "mechanical", "chiller", "boiler", "heating", "cooling", "air condition", "rtu",
-    "refrigerat", "building automation", "controls", "preventive maintenance", "preventative",
-    "on-call", "on call", "as-needed", "facilit", "landscap", "grounds", "irrigation", "snow",
-    "mowing", "tree", "janitorial",
-]
+PROFILES_FILE = STATE_DIR / "watch_profiles.json"
+
+
+def load_keyword_profiles() -> dict[str, list[re.Pattern]]:
+    cfg = json.loads(PROFILES_FILE.read_text())
+    return {
+        name: [re.compile(r"\b" + re.escape(k.lower())) for k in prof.get("bidnet_keywords", [])]
+        for name, prof in cfg["profiles"].items()
+    }
+
+
+KEYWORD_PROFILES = load_keyword_profiles()
 
 LOGIN_URL = "https://www.bidnetdirect.com/public/authentication/login"
 DATE_RX = re.compile(r"\b(\d{1,2}/\d{1,2}/\d{2,4})\b")
@@ -60,12 +66,14 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")[:80]
 
 
-KEYWORD_RX = [re.compile(r"\b" + re.escape(k)) for k in KEYWORDS]  # word-start match: "tree" != "Street"
+def keyword_profiles_hit(title: str) -> list[str]:
+    """Word-start matching ("trees" does not match "Street"). Returns the profile names that match."""
+    t = title.lower()
+    return [name for name, rxs in KEYWORD_PROFILES.items() if any(rx.search(t) for rx in rxs)]
 
 
 def keyword_hit(title: str) -> bool:
-    t = title.lower()
-    return any(rx.search(t) for rx in KEYWORD_RX)
+    return bool(keyword_profiles_hit(title))
 
 
 def load_state() -> dict:
@@ -206,7 +214,8 @@ def run(fixture: str | None = None) -> dict:
                     errors.append(f"{agency}: 0 solicitations parsed; raw HTML saved for selector fixes")
                 for s in sols:
                     key = s["url"]
-                    found[key] = {**s, "agency": agency, "match": keyword_hit(s["title"]), "seen": now}
+                    profiles = keyword_profiles_hit(s["title"])
+                    found[key] = {**s, "agency": agency, "match": bool(profiles), "profiles": profiles, "seen": now}
             except Exception as e:  # noqa: BLE001
                 errors.append(f"{agency}: {type(e).__name__}: {str(e)[:200]}")
 
@@ -245,10 +254,10 @@ def render(r: dict) -> str:
         if not items:
             return
         out.append(f"\n**{title}**\n")
-        out.append("| Match | Agency | Title | Closing | Link |")
+        out.append("| Match (profile) | Agency | Title | Closing | Link |")
         out.append("|---|---|---|---|---|")
         for v in sorted(items.values(), key=lambda x: (not x.get("match"), x.get("agency", ""))):
-            out.append(f"| {'YES' if v.get('match') else ''} | {v.get('agency','')} | {v['title']} | {v.get('closing') or ''} | {v['url']} |")
+            out.append(f"| {','.join(v.get('profiles', [])) if v.get('match') else ''} | {v.get('agency','')} | {v['title']} | {v.get('closing') or ''} | {v['url']} |")
 
     table("NEW since last run", r["new"])
     table("CHANGED closing date", r["changed"])

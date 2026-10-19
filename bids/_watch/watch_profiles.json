@@ -1,0 +1,41 @@
+{
+  "_comment": "Search profiles for scripts/samgov_watch.py and keyword lists for scripts/bidnet_watch.py. Edit here, not in code. SAM.gov fields: title (keyword), ncode (NAICS), ccode (PSC/FSC), state (place of performance).",
+  "profiles": {
+    "brownbison": {
+      "label": "Brown Bison Holdings — HVAC / plumbing / electrical / landscaping / facilities",
+      "states": ["CO"],
+      "samgov": [
+        {"title": "HVAC"}, {"title": "chiller"}, {"title": "boiler"}, {"title": "mechanical"},
+        {"title": "plumbing"}, {"title": "electrical"}, {"title": "landscaping"}, {"title": "grounds maintenance"},
+        {"title": "snow removal"}, {"title": "facilities maintenance"}, {"title": "preventive maintenance"},
+        {"title": "janitorial"},
+        {"ncode": "238220"}, {"ncode": "238210"}, {"ncode": "238990"}, {"ncode": "561210"}, {"ncode": "561730"},
+        {"ncode": "561720"}, {"ncode": "811310"}
+      ],
+      "bidnet_keywords": [
+        "hvac", "mechanical", "chiller", "boiler", "heating", "cooling", "air condition", "rtu", "refrigerat",
+        "building automation", "controls", "preventive maintenance", "preventative", "on-call", "on call",
+        "as-needed", "facilit", "plumbing", "electrical", "lighting", "generator", "landscap", "grounds",
+        "irrigation", "snow", "mowing", "trees", "tree trimming", "janitorial", "custodial"
+      ]
+    },
+    "dads-company": {
+      "label": "Luke's dad's company (NAME TBD) — industrial bearings, pulleys, conveyors, paper-mill power transmission",
+      "states": [],
+      "_states_note": "Empty = nationwide. Luke to confirm travel radius.",
+      "samgov": [
+        {"title": "bearing"}, {"title": "pillow block"}, {"title": "roller bearing"}, {"title": "conveyor"},
+        {"title": "pulley"}, {"title": "sheave"}, {"title": "power transmission"}, {"title": "paper mill"},
+        {"title": "paper machine"}, {"title": "material handling"}, {"title": "belt drive"}, {"title": "gearbox"},
+        {"title": "conveyor maintenance"}, {"title": "rotating equipment"},
+        {"ccode": "3110"}, {"ccode": "3130"}, {"ccode": "3020"}, {"ccode": "3030"}, {"ccode": "3910"}, {"ccode": "3950"},
+        {"ncode": "333922"}, {"ncode": "333613"}, {"ncode": "423840"}, {"ncode": "811310"}, {"ncode": "322121"}, {"ncode": "238290"}
+      ],
+      "_codes_note": "PSC 3110 antifriction bearings, 3130 mounted bearings (pillow blocks), 3020 gears/pulleys/sprockets, 3030 belting & drive belts, 3910 conveyors, 3950 winches/hoists. NAICS 333922 conveyor mfg, 333613 mechanical power transmission equipment, 423840 industrial supplies, 811310 industrial machinery repair, 322121 paper mills, 238290 other building equipment contractors.",
+      "bidnet_keywords": [
+        "bearing", "pillow block", "conveyor", "pulley", "sheave", "power transmission", "paper mill",
+        "material handling", "gearbox", "belt", "rotating equipment", "mill maintenance", "industrial maintenance"
+      ]
+    }
+  }
+}

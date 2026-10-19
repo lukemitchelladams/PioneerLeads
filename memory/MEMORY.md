@@ -20,6 +20,14 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
    2026-10-20.** No document in hand yet. When it lands, answer the chiller model / response-time
    questions from it (see vendor-questions-york.md).
 
+**Second company to bid for: Luke's dad's company (Luke, 2026-10-19).** Name, UEI/CAGE, and travel radius
+NOT yet captured. Trade: pillow-block mounted roller bearings, pulley/sheave systems, conveyor systems,
+power-transmission maintenance inside paper mills and similar industrial plants. Luke says he told me
+before; nothing about it exists in this workspace, so this is the first record here. Watch profile
+"dads-company" in bids/_watch/watch_profiles.json covers PSC 3110/3130/3020/3030/3910/3950 and NAICS
+333922/333613/423840/811310/322121, nationwide until Luke sets states. Federal scope for Brown Bison
+also widened to plumbing, electrical, landscaping, janitorial, facilities maintenance.
+
 **Relationships / vendors:**
 - **Alex Ditto** — per Luke (relayed from his portfolio-orchestrator session, 2026-10-18): Luke has spoken
   with Alex and **Alex is sending the DCSD HVAC bid on Monday 2026-10-20.** Gmail is no longer the blocker;
@@ -103,6 +111,8 @@ Owner/contact: Luke Mitchell Adams (lukemitchelladams@gmail.com).
 ## Log
 
 ### 2026-10-19 — Session 3 (cloud, check-in)
+- Added two-company watch profiles (Brown Bison + dad's bearings/conveyor business) to both watchers;
+  SAM.gov queries now 45 across both. Need dad's company name + states.
 - Luke: 5+ new bids in work by Mon AM, due 7+ days out; find walkthrough people; hands-off portal access.
   Probed 39 CO procurement/aggregator hosts: ALL blocked. Web index yielded 3 live leads beyond Parker/DCSD
   (Boulder County BID-313-26 air filters due 10/29; Colorado Springs R26-032MZ + R26-034MZ landscaping).

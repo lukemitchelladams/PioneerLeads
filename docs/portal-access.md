@@ -18,6 +18,12 @@ you get a headline, not a to-do.
 Luke's requirement (2026-10-19): be logged into SAM.gov and BidNet at all times, scan for new bids, catch
 addenda on bids we're pursuing, pull documents for subs, with 24/7 email access. No manual logins.
 
+## Two companies, one scan
+`bids/_watch/watch_profiles.json` holds a profile per company. `brownbison`: HVAC, plumbing, electrical,
+landscaping, janitorial, facilities (CO for BidNet; federal via SAM.gov). `dads-company`: pillow-block
+bearings, pulleys, conveyors, paper-mill power transmission (federal PSC/NAICS codes, nationwide until
+Luke sets states). Add a profile = add a company. Every report row is tagged with the profile that matched.
+
 ## Reality check
 | Source | API / connector? | What "always connected" looks like |
 |---|---|---|
