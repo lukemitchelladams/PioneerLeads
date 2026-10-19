@@ -13,7 +13,7 @@
 | Due date | unknown |
 | Contract type | On-call / as-needed HVAC service (assumed from title; confirm) |
 | Required response time | **unknown — see vendor-questions-york.md** |
-| Status | Gathering documents |
+| Status | Waiting on Rich Carroll, who is sending the bid docs Monday 2026-10-20 (Luke, 2026-10-19) |
 
 ## What we need from the solicitation (in priority order)
 

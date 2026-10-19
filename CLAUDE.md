@@ -15,6 +15,10 @@ It is NOT a software product. Do not scaffold apps here unless asked.
 6. Keep the status table in each bid `README.md` current.
 7. Dates: write ISO (2026-10-09). Money: write with units.
 
+## Standing rules from Luke
+- All landscaping work goes through Alex Ditto. No exceptions, no need for his phone number on file.
+- Luke wants inbox monitoring. Gmail must be connected first; then run an hourly Routine (see memory).
+
 ## Known blocked hosts in cloud sessions
 bidnetdirect.com, rockymountainbidsystem.com, sam.gov, api.sam.gov, parkerco.gov.
 Ask the user to add them under Network access → Allowed domains (see docs/cloud-env-setup.md),
