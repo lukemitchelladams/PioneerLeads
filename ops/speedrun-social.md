@@ -1,13 +1,15 @@
 # SpeedRun Social scorecard
 
 Entity: Brown Bison LLC, Broomfield, Colorado. Product: AI social media on autopilot for small businesses, the Blaze.ai replacement.
-Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-18, 23:20 MDT.
+Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-19, 07:00 MDT.
 
 ## Where it stands
 
 | Signal | Value | Source |
 | --- | --- | --- |
-| Site | 200, health ok, db ok | `/api/health`, 2026-10-01 |
+| Site | ok, db ok, billing live | `/api/health`, 2026-10-19 07:00 MDT |
+| Scoreboard, Oct 18 | Signups 0 in 24h, 6 in 7 days, 45 in 30 days (sources: direct 3, ChatGPT 1, Google Ads 1, other search 1). 15 accounts connected. 2 posts published in 7 days. 6 active workspaces. 0 paying, $0 MRR, 0 packs. Break-even 0% of the $400 a month the loop counts as cost. First-party visit counter live since #163. | docs/ops/autonomy/scoreboard.md, commit 70c56169 |
+| Deploy #169, Oct 19 06:10 MDT | Approving a post now adds every connected platform its format allows (22 review posts across 5 workspaces had sat on Facebook alone while Instagram was connected; ayurvedashri the live case). E8 closed as a no-op by design. The overnight loop ran this on the Mac after the Blaze session went idle. | commits d2b47e95, cb17c651 |
 | Billing | **live** since Oct 1; annual prices not yet purchasable, copy now gated | `/api/health`; commit e8c7ebcb |
 | Paying customers | 0 | Sept 18 audit; no later data |
 | Funnel, 28 days to Oct 15 | 41 workspaces, 29 got posts, 12 empty (5 of those typed an unreadable site and left). Seven active free workspaces cross the 30-day light-use line between Oct 20 and Oct 27: the first paid customer comes from this group or not at all this month. The referral badge on free posts produced 0 signups from 43 posts. | commits ebfc9035, bf20f1ed, da7d2692 |
@@ -15,7 +17,7 @@ Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. U
 | Search | 18 clicks, 11K impressions, CTR 0.2%, avg position 48.9 (28 days to Sept 15) | docs/research/2026-09-18-gsc-28d.md |
 | Fixed cost | $46 a month core (Vercel 20, Supabase 25, KMS 1); Google Ads was $20 a day on top | docs/sales/2026-09-03-first-customers/burn-and-breakeven.md |
 | Break-even | 2 Starter customers at $49.99 cover the core bill | same |
-| Production branch | `overnight-overhaul-20260630` at 183f3dfe; `main` stale since June 3 | PR #1, open since Sept 9 |
+| Production branch | `overnight-overhaul-20260630` at cb17c651; `main` stale since June 3 | PR #1, open since Sept 9, still open Oct 19 |
 | Deploys, Oct 18 evening | #163 to #168 landed between 19:14 and 20:18 MDT, all through the Mac gate (19,183 then 19,186 tests, 0 failures). #166 customer showcase: "Posts our customers published", 4 posts on the home page and 9 on /examples from 5 businesses, each labelled and linked, with an opt-out line. #167: 40 dead "View post" links (23 Instagram, 15 TikTok, 2 Facebook) now point at the real post, and the "your post is live" email no longer goes out without a link. #168: resuming a saved onboarding step threw React error #418 on 3 of 3 loads, now 0 of 3. Earlier in the batch: redirect fix, TikTok and YouTube in E7, engagement numbers from Zernio, visit counter, review-import and audit-log fixes, indexes, cron stagger, two live migrations. Session idle since 21:41 MDT. | Blaze session transcript, Oct 18 |
 | Incident, found Oct 18 | On Sept 21 two Sealis posts were published to Crypto Deposit Tracker's Facebook page by the shared-connection bug fixed Sept 25; both still live there. No other page affected. Sealis's connection was cut that night; 9 approved Sealis posts wait on a reconnect. Luke typed "Send" at 21:37 MDT and two apology notes went out at 21:40 through the owner-note tool (replies land in Luke's Gmail). Crypto Deposit Tracker has to delete the two posts itself; no session deletes on a customer's page. | same |
 | Deploys | #154 deployed Oct 15: onboarding routes a bare business name straight to the describe form; the soft trial prompt now says what ending means; the free-plan badge scales to read on a phone and avoids the headline. #155 (phone layout of the Approvals page, lazy video posters) is BLOCKED: the gate times out because CI and other sessions share the Mac. Before that, #150 to #153 on Oct 14: hero and pricing now say "Free to start" (the weekly-free claim was false for anyone who used it weekly after #144's light-use rule); a read-only Stripe check endpoint after the owner's Apple Pay payment failed on live Checkout while the typed card worked; six ranked lists linked a never-built page, fixed with redirects and a guard test. Earlier Oct 14, #147 and #148: 12 customer images remade after the storage lockout; Stripe embedded checkout inside the trial prompt, dark until the publishable key is set in Vercel | commits e2de8f26, 576f0156 |

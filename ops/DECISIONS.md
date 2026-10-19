@@ -6,6 +6,8 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date raised | Venture | Decision needed | Orchestrator's recommendation |
 | --- | --- | --- | --- |
+| 2026-10-19 | Govcon | Submit Colorado Springs Parks Maintenance On-Call R26-077MZ by Tue Oct 20, 2pm | Do it; the narrative is drafted, three hours of your time: Exhibit 1, references, rates, sign, upload |
+| 2026-10-19 | Govcon | Send the two RSVP drafts (Westminster walk 2pm today, Arapahoe turfgrass Teams 1:30pm today) and attend; Adams County walk Wed 10am | Send both before 1pm; no Teams link by 1pm means the Arapahoe bid is dead |
 | 2026-10-15 | Govcon | Get Alex Ditto's DCSD bid into the repo when it lands Monday Oct 19 (Luke confirmed with Alex, Oct 18) | Drop the files in `bids/dcsd-hvac/docs/`; connecting Gmail would also let every future emailed bid be read without a hand-off |
 | 2026-10-15 | Govcon | The Breckenridge summit company price reply: was it sent? | Answer in the loop session or here; the loop was archived with the question open |
 | 2026-10-15 | SpeedRun Social | Apple Pay failure on live Checkout | Read the Stripe check endpoint output and fix the wallet config |
@@ -18,7 +20,7 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 | 2026-10-14 | Govcon | Commit the send_gov_intros.py import guard | Do it; uncommitted safety fix on a script that sends real mail |
 | 2026-10-01 | Govcon | Parker bid due date | One line |
 | 2026-10-01 | POE | Commercial terms with Radius | Write them down so the venture can be prioritised honestly |
-| 2026-09-25 | POE | Six parked decisions (territory map, merge 91 duplicates, delete 9 files, subject line, Partner vs Pipeline, CDW domains) | Defaults in `poe-radius.md`; send to Cole as one message |
+| 2026-09-25 | POE | Five parked decisions (territory map, merge 91 duplicates, delete 9 files, subject line, Partner vs Pipeline); CDW merge closed Oct 16 | Defaults in `poe-radius.md`; send to Cole as one message |
 | 2026-09-18 | SpeedRun Social | Google Ads on or off | Off until a stranger can Connect |
 | 2026-06-04 | SpeedRun Social | Vercel Pro for 5-minute cron | Upgrade once there is one paying customer |
 
@@ -26,6 +28,7 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date | Venture | Decision | By | Why |
 | --- | --- | --- | --- | --- |
+| 2026-10-16 | POE | CDW LOGISTICS merged into CDW; cdwg.com and cdw.ca left open | Cole | Commits 066e1b91 and a97baf38 |
 | 2026-10-18 | SpeedRun Social | The green gate runs in a cloud container; the laptop is not required | Orchestrator proof session | Install, tsc, eslint and build all green on 4 cores; two real defects found (64 leaking tests, `.next/dev` corruption from the security-headers test) |
 | 2026-10-18 | Govcon | brownbisonco.com mail runs on Google Workspace, tenant verified and DKIM-signed | Luke (signup between Oct 14 and 18) | Public DNS shows MX smtp.google.com, verification TXT, SPF, DKIM, DMARC |
 | 2026-10-19 | Portfolio | Ops docs live in `lukemitchelladams/PioneerLeads` under `ops/` | Orchestrator, on Luke's "get the push to work" | The portfolio repo was retired Sept 30; PioneerLeads is the Brown Bison workspace and writable |
