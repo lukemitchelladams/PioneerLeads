@@ -1440,6 +1440,36 @@
   "url": "https://sam.gov/workspace/contract/opp/0aec98bf822b4a21a1ea2489dce286bf/view"
  },
  {
+  "key": "samgov:f8f372d5a7b34b5cbcb71441aeaaac2b",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE7LX27U0060",
+  "closing": "2026-10-21",
+  "posted": "2026-10-06",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/f8f372d5a7b34b5cbcb71441aeaaac2b/view"
+ },
+ {
+  "key": "samgov:fd4cc84dec2c44c1ac9b80d5c0f777b5",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
+  "title": "16--PILLOW BLOCK",
+  "sol": "SPE4A527T1016",
+  "closing": "2026-10-21",
+  "posted": "2026-10-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/fd4cc84dec2c44c1ac9b80d5c0f777b5/view"
+ },
+ {
   "key": "samgov:ff05372bd4014de685c91fb488a7d89a",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
@@ -1453,6 +1483,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/ff05372bd4014de685c91fb488a7d89a/view"
+ },
+ {
+  "key": "samgov:ff6fd0a5da944d9fb4500f065b27029c",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "25--ARM ASSEMBLY,IDLER",
+  "sol": "SPE7L427U0029",
+  "closing": "2026-10-21",
+  "posted": "2026-10-06",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/ff6fd0a5da944d9fb4500f065b27029c/view"
  },
  {
   "key": "bidnet:0000438103",
@@ -1723,6 +1768,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4333"
+ },
+ {
+  "key": "samgov:50214e18baae4028a7fc4b3993ea0a6d",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+  "title": "S--BGNDRF CUSTODIAL SERVICES",
+  "sol": "140RR027Q0001",
+  "closing": "2026-10-22",
+  "posted": "2026-10-07",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/50214e18baae4028a7fc4b3993ea0a6d/view"
  },
  {
   "key": "samgov:a52ea596b0454511a86648481ad71505",
@@ -2445,6 +2505,21 @@
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0133"
  },
  {
+  "key": "samgov:03b28af220694b01ba8ebc7e82d9e678",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA TROOP SUPPORT",
+  "title": "39--TENSIONER PULLEY ASSEM",
+  "sol": "SPE8EE27T0133",
+  "closing": "2026-10-23",
+  "posted": "2026-10-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/03b28af220694b01ba8ebc7e82d9e678/view"
+ },
+ {
   "key": "samgov:38f3db1630cb43b1ba53b1e80e1ffaa9",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
@@ -2458,6 +2533,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/38f3db1630cb43b1ba53b1e80e1ffaa9/view"
+ },
+ {
+  "key": "samgov:691ffef7e0df452289e40d1ed8f05042",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY ASSEMBLY,GROOVE",
+  "sol": "SPE7M427T0731",
+  "closing": "2026-10-23",
+  "posted": "2026-10-12",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/691ffef7e0df452289e40d1ed8f05042/view"
  },
  {
   "key": "samgov:cdf492db2fdd4441888644e58a799af9",
@@ -2925,6 +3015,21 @@
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0181"
  },
  {
+  "key": "samgov:02d87e106590410fbc85be161ebe68a9",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,FLAT",
+  "sol": "SPE7M427T1169",
+  "closing": "2026-10-26",
+  "posted": "2026-10-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/02d87e106590410fbc85be161ebe68a9/view"
+ },
+ {
   "key": "samgov:1a17809e0929401bb214e6a23ca4770d",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
@@ -2955,6 +3060,36 @@
   "url": "https://sam.gov/workspace/contract/opp/3e9d47ad4ab54b0cb8f5490153f09982/view"
  },
  {
+  "key": "samgov:79be5e235b944235bb34559d96243e42",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "10--CONVEYOR,AMMUNITION",
+  "sol": "SPE7L127T1576",
+  "closing": "2026-10-26",
+  "posted": "2026-10-14",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/79be5e235b944235bb34559d96243e42/view"
+ },
+ {
+  "key": "samgov:8ae53e6a33344f4d9333c7e33c113f09",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "BALL,BEARING",
+  "sol": "N0010426QYAJC",
+  "closing": "2026-10-26",
+  "posted": "2026-09-24",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/8ae53e6a33344f4d9333c7e33c113f09/view"
+ },
+ {
   "key": "samgov:b6e91ee3debc4d8089be1512706d0f46",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
@@ -2968,6 +3103,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/b6e91ee3debc4d8089be1512706d0f46/view"
+ },
+ {
+  "key": "samgov:ce96fcd8c90945a5925bdcb5c4a6fe68",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE7L127T1451",
+  "closing": "2026-10-26",
+  "posted": "2026-10-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/ce96fcd8c90945a5925bdcb5c4a6fe68/view"
  },
  {
   "key": "bidnet:0000437338",
@@ -3450,6 +3600,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Speaker-Cabling-Installation/0000440182?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "samgov:8f0e3b72596a4714a555ecd5eb0e899b",
+  "source": "samgov",
+  "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA-FS, CSA INTERMOUNTAIN 8",
+  "title": "Bunkhouse Asbestos Mitigation",
+  "sol": "1240LT27Q0010",
+  "closing": "2026-10-28",
+  "posted": "2026-10-14",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": true,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/8f0e3b72596a4714a555ecd5eb0e899b/view"
+ },
+ {
   "key": "samgov:db84deebdb884ada854ec83ee9a6235c",
   "source": "samgov",
   "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
@@ -3463,6 +3628,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/db84deebdb884ada854ec83ee9a6235c/view"
+ },
+ {
+  "key": "samgov:eb19e0c129334ba3adb062afc3c5c764",
+  "source": "samgov",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+  "title": "J041--Trane BAS HVAC Services",
+  "sol": "36C25927Q0008",
+  "closing": "2026-10-28",
+  "posted": "2026-10-07",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/eb19e0c129334ba3adb062afc3c5c764/view"
  },
  {
   "key": "bidnet:0000437804",
@@ -3583,6 +3763,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7LX27U0227"
+ },
+ {
+  "key": "samgov:d20097c1616d47c7833927894d6850b7",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE7LX27U0227",
+  "closing": "2026-10-29",
+  "posted": "2026-10-14",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/d20097c1616d47c7833927894d6850b7/view"
  },
  {
   "key": "bidnet:0000426883",
@@ -3780,6 +3975,21 @@
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0466"
  },
  {
+  "key": "samgov:2418a9db688d494abb607d1a8fe88058",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE7L127U0080",
+  "closing": "2026-10-30",
+  "posted": "2026-10-15",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/2418a9db688d494abb607d1a8fe88058/view"
+ },
+ {
   "key": "samgov:33bd86866d1946769ed093ca7a1ec653",
   "source": "samgov",
   "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
@@ -3793,6 +4003,36 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view"
+ },
+ {
+  "key": "samgov:9ede66cb08524a8a8c18d5308544eafd",
+  "source": "samgov",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+  "title": "Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Nerve Stimulation (TENS) Procurement Program",
+  "sol": "36C79126R0011",
+  "closing": "2026-10-30",
+  "posted": "2026-10-15",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/9ede66cb08524a8a8c18d5308544eafd/view"
+ },
+ {
+  "key": "samgov:dccd5b89612545bf88341d486f74a396",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE7L427T0466",
+  "closing": "2026-10-30",
+  "posted": "2026-10-19",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/dccd5b89612545bf88341d486f74a396/view"
  },
  {
   "key": "samgov:fc84984eaeee410897734ba17d6782ed",
@@ -4067,7 +4307,7 @@
  {
   "key": "samgov:498039a792b2415ca237b1f25185acfd",
   "source": "samgov",
-  "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY ADDIS ABABA",
+  "agency": "STATE, DEPARTMENT OF / STATE, DEPARTMENT OF / U.S. EMBASSY ADDIS ABABA",
   "title": "Nanotechnology Certified Replacement Filter",
   "sol": "PR16340639",
   "closing": "2026-11-05",
@@ -4245,6 +4485,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "samgov:b240a8fc08d548528f9f1352d779d9ad",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
+  "title": "Low Level Cranes",
+  "sol": "W911KF25SC002A0018",
+  "closing": "2026-11-09",
+  "posted": "2026-10-07",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/b240a8fc08d548528f9f1352d779d9ad/view"
+ },
+ {
   "key": "samgov:d2d51b2fbfc1498dae68cd611c30064a",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
@@ -4365,6 +4620,36 @@
   "url": "https://sam.gov/workspace/contract/opp/02fdc748f70d471abfba3cc6f8ac5a06/view"
  },
  {
+  "key": "samgov:2fa822e893384a93bccb65cb8ac7aea4",
+  "source": "samgov",
+  "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+  "title": "Design-Build Services \u2013 STM Security Fencing - North Boundary",
+  "sol": "RFP-2027-27107",
+  "closing": "2026-11-11",
+  "posted": "2026-10-07",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/2fa822e893384a93bccb65cb8ac7aea4/view"
+ },
+ {
+  "key": "samgov:5bf1391766b64cec84fbea012633435f",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+  "title": "Y--Friant Dam HVAC Replacement - Letter Contract",
+  "sol": "DOIDSAM27R001",
+  "closing": "2026-11-11",
+  "posted": "2026-10-12",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/5bf1391766b64cec84fbea012633435f/view"
+ },
+ {
   "key": "samgov:c197c44e343742a5adde5688821f5075",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
@@ -4457,7 +4742,7 @@
  {
   "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-APG",
   "title": "Individual Water Treatment Device (IWTD) Laboratory Testing",
   "sol": "IWTD_LaboratoryTesting",
   "closing": "2026-11-12",
@@ -4472,7 +4757,7 @@
  {
   "key": "samgov:db1cb44b650f4cdc892299917c04adf9",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-APG",
   "title": "Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemicals and Materials",
   "sol": "IWTD_Reduction_TICs_TIMs",
   "closing": "2026-11-12",
@@ -4590,6 +4875,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "samgov:6ab91dd8bf824b2fbfa32476c810d7be",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+  "title": "SACN Replace Fire Alarms and Intrusions Systems",
+  "sol": "140PP027B0002",
+  "closing": "2026-11-23",
+  "posted": "2026-10-19",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view"
+ },
+ {
   "key": "samgov:0f9b38e12f184fadbb459e087e00963d",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
@@ -4648,6 +4948,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view"
+ },
+ {
+  "key": "samgov:c99d773036a64c7d86fbd42c65a1a4d6",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / SPRMM1 DLA MECHANICSBURG",
+  "title": "SHELL AY(PRT SIDE)",
+  "sol": "SPRMM126QGE59",
+  "closing": "2026-12-14",
+  "posted": "2026-10-19",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view"
  },
  {
   "key": "samgov:eea50eb876044089a54c01f641e9c9be",
@@ -4710,6 +5025,36 @@
   "url": "https://sam.gov/workspace/contract/opp/7872b54a0d4547a78d839266d5c8fba5/view"
  },
  {
+  "key": "samgov:62a1e06ab30245fe93fc3e0c4caaf443",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "Noise Tested Bearings IDIQ",
+  "sol": "N0010426RY001",
+  "closing": "2027-07-24",
+  "posted": "2026-06-24",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view"
+ },
+ {
+  "key": "samgov:d9fd453b9fd045f8b78e1bb9d511d1cd",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "Noise Tested Bearings IDIQ",
+  "sol": "N0010426RY001",
+  "closing": "2027-07-29",
+  "posted": "2026-06-24",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view"
+ },
+ {
   "key": "samgov:e7220f8924254f4fac1a83a72708bba1",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
@@ -4723,5 +5068,110 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view"
+ },
+ {
+  "key": "samgov:ef42fcf29ca7449db6a4146acf468d19",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "Noise Tested Bearings IDIQ- Amendment 0001",
+  "sol": "",
+  "closing": "2027-07-29",
+  "posted": "2026-07-01",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/ef42fcf29ca7449db6a4146acf468d19/view"
+ },
+ {
+  "key": "samgov:031da2a2b09f4488ae95045518da7098",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE / BUREAU OF RECLAMATION / GREAT PLAINS REGIONAL OFFICE",
+  "title": "46--EC - LMDT MEMBRANE FILTERS",
+  "sol": "140R6020R0025",
+  "closing": "",
+  "posted": "2021-01-08",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/031da2a2b09f4488ae95045518da7098/view"
+ },
+ {
+  "key": "samgov:18cf8e050c6a40bca486f7516b646cfc",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W072 ENDIST NASHVILLE",
+  "title": "PRESOLICITATION SYNOPSIS - Pickwick Lock Sector Gear Fabrication",
+  "sol": "W912P521QXX36",
+  "closing": "",
+  "posted": "2021-06-23",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/18cf8e050c6a40bca486f7516b646cfc/view"
+ },
+ {
+  "key": "samgov:54da6291bed54524833884f578079494",
+  "source": "samgov",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+  "title": "4520--Radiant Panel Replacement RMR VAMC",
+  "sol": "36C25927Q0019",
+  "closing": "",
+  "posted": "2026-10-09",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/54da6291bed54524833884f578079494/view"
+ },
+ {
+  "key": "samgov:5bccbbc922a04630af786e240403e306",
+  "source": "samgov",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+  "title": "6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Center (SLCVAMC)",
+  "sol": "36C25926Q0704",
+  "closing": "",
+  "posted": "2026-10-01",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view"
+ },
+ {
+  "key": "samgov:6ca3b23ebf3b46babe2a7cab9a925893",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION AT OKLAHOMA CITY, OK",
+  "title": "BEARING, BALL, ANNULA.",
+  "sol": "SPRTA126Q0057",
+  "closing": "",
+  "posted": "2025-10-08",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view"
+ },
+ {
+  "key": "samgov:a5a251d4a06b421cbc48f7e23692ae11",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+  "title": "W--YAO DREDGE CRANE SERVICE",
+  "sol": "140RR027Q0009",
+  "closing": "",
+  "posted": "2026-10-16",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view"
  }
 ]
