@@ -548,3 +548,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-20 10:30Z dashboard blobs: bids 9f2202ee823d03a765f06fb747cd31f7 (v11), events 8fc1d5911f4838b6610f44a23f142444 (v10); sources/doc_gaps/portal_feed unchanged. GovTribe saved-search email 'Jones keyword 20 new' = DLA bearing RFQs the DIBBS scan already lists; the hourly keyword sweep is not needed beyond the PSC search unless the email count spikes.
 - 2026-10-20 11:26Z dashboard blobs: bids 37bce0675a2932b4894bf602143ee890 (v12), events b8c8cdcd9ffbb695f941afa6c69b0835 (v11).
 - 2026-10-20 12:27Z dashboard blobs: bids f09e67a45ee1fd9c6bc43d95ef75cf37 (v13), events 810cb4fbe8df20252c647391547f5e0f (v12).
+- 2026-10-20 daily CEO plan (ops/plan_ceo/2026-10-20.md): outcomes = Parker 26-028 submit Thu 15:00 (Luke + CRM), sub
+  pricing for the 10/28 GO bids (WORKER: Littleton 7 emailed / 0 replies; SD27J outreach never sent -> Luke), Adams walk
+  kit (MAIN subagent: bids/adams-county-airport-streetlights/walk-kit.md; sub-outreach now 8 subs with public emails +
+  pricing email). Adams IFB conflict: 12.1 "A representative of the Contractor is recommended to attend" vs cover/heading
+  MANDATORY -> treat as mandatory, ask in writing by 10/27. 12.2 lists "camera" among secure-facility precautions (photos
+  may be barred). Exhibits B/C (HUD) not in our PDF. Scanner improvement shipped: RSVP flag on BidNet walks (741e3b6).
