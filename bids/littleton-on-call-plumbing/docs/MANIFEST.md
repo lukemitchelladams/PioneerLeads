@@ -5,6 +5,10 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- Attachment A - Contract Certification Form.pdf
+- Attachment B - Sample Contract.pdf
+- Attachment C - RMEPS Bid Question Response Guide.pdf
+- Pricing-Items-RMEPS.md
 - RFQ-2126-On-Call-Commercial-Plumbing.pdf
 - RFQ-2126.extracted.txt
 
@@ -12,14 +16,15 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
-| Attachment A |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | **MISSING** |
-| Attachment B |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | **MISSING** |
-| Attachment C |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | **MISSING** |
+| Attachment A |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | IN HAND: Attachment A - Contract Certification Form.pdf |
+| Attachment B |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | IN HAND: Attachment B - Sample Contract.pdf |
+| Attachment C |  | RFQ-2126-On-Call-Commercial-Plumbing.pdf | IN HAND: Attachment C - RMEPS Bid Question Response Guide.pdf |
+| Exhibit A |  | Attachment B - Sample Contract.pdf | INSIDE Attachment B - Sample Contract.pdf (heading found; verify pages) |
+| Exhibit B |  | Attachment B - Sample Contract.pdf | INSIDE Attachment B - Sample Contract.pdf (heading found; verify pages) |
+| Exhibit C |  | Attachment B - Sample Contract.pdf | INSIDE Attachment B - Sample Contract.pdf (heading found; verify pages) |
+| Exhibit D |  | Attachment B - Sample Contract.pdf | **MISSING** |
 
 ## Pricing forms / templates mentioned (check each is in hand)
 
 - ...Pricing: • Submit your pricing directly in RMEPS using the template provided in RMEPS.  o Proposers have the option to include an annual...
 - ...Pricing:  • Submit your pricing directly in RMEPS using the template provided in RMEPS.  o Proposers have the option to include an annual...
-
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Littleton RFQ 2126 on-call plumbing | 2026-10-28 14:00 | RFQ (12 pp) | **Attachment A Contract Certification Form; Attachment B Sample Contract; Attachment C RMEPS Bid Question Response Guide; the RMEPS pricing template; Q&A/meeting notes posting 10/21** (Rocky Mountain E-Purchasing / BidNet, search "2126", Documents tab) |

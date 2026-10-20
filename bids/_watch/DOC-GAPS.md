@@ -6,7 +6,7 @@ Every MISSING item below lives only on the agency portal, which this cloud sessi
 
 | Bid | Due | In hand | MISSING (download from) |
 |---|---|---|---|
-| Littleton RFQ 2126 on-call plumbing | 2026-10-28 14:00 | RFQ (12 pp) | **Attachment A Contract Certification Form; Attachment B Sample Contract; Attachment C RMEPS Bid Question Response Guide; the RMEPS pricing template; Q&A/meeting notes posting 10/21** (Rocky Mountain E-Purchasing / BidNet, search "2126", Documents tab) |
+| Littleton RFQ 2126 (BidNet sol 21-26) on-call plumbing | 2026-10-28 14:00 | RFQ (12 pp); **Attachment A Contract Certification Form; Attachment B Sample Contract (18 pp); Attachment C RMEPS Bid Question Response Guide — all downloaded logged in 2026-10-20**; pricing = 6 RMEPS line items (Pricing-Items-RMEPS.md; there is no separate template file) | Q&A posting 10/21 (BidNet Q & A tab; the scanner re-checks it hourly) |
 | Town of Parker RFP 26-028 HVAC PM | 2026-10-22 15:00 | RFP; Price Sheet workbook; Appendix A asset inventory; sample PSA incl. Exhibits A Scope, B Rate Sheet, C Insurance Requirements, D COI | Nothing listed is missing. Check the Euna portal for a Q&A addendum (questions closed 10/16). |
 | RTD 126DM016 bus shelters | 2026-11-16 14:00 | RFP; Attachment A SOW; Attachment B Form of Contract; Attachment C Pricing Sheet; **SBE Required Enclosures + SBE Contract Requirements (downloaded 2026-10-20, public rtd-denver.com links)** | **W-9 (02.12_W9_updated_1822.pdf) and Key_Personnel.docx** (OpenGov portal, section 7.1.12-7.1.13; Cloudflare-blocked from cloud) |
 | Brighton RFP 26-500209-MV2 as-needed GC | 2026-11-09 14:00 | RFP (10 pp) incl. cover sheet | **City forms: Subcontractor & Material Supplier List; Qualification Statement; DBE Self-Certification; Affidavit of Residency; Generative AI Usage Disclosure** (BidNet, Documents tab) |
@@ -30,3 +30,8 @@ Every MISSING item below lives only on the agency portal, which this cloud sessi
 - RTD: SBE Required Enclosures and SBE Contract Requirements downloaded (public). W-9 and Key Personnel
   forms are inside OpenGov, which serves a Cloudflare bot challenge to this network.
 - Euna/Bonfire (Parker) opportunity pages serve the same Cloudflare challenge; Parker's list is readable.
+
+## 2026-10-20 04:26 UTC: first logged-in BidNet pull
+Logged in to BidNet from the cloud scanner (no device code requested). Littleton's Documents & Items tab
+lists exactly four files; all four are now in bids/littleton-on-call-plumbing/docs/ (the RFQ was identical to
+the copy in hand). The "pricing template" is the RMEPS Items list (6 lines), copied to Pricing-Items-RMEPS.md.
