@@ -534,3 +534,13 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   2026-11-06. Arapahoe 26-52 Fairgrounds: mandatory Teams prebid 10/19 confirmed by BidNet fields (dead unless
   attended). DCSD 003-27: BidNet says the 10/14 walk was "Recommended"; the RFP's sign-in clause is conditional.
   08:35 scan: logged in attempt 1 (session lapsed ~1 h), all sources fresh.
+
+### 2026-10-20 09:00 UTC: Cherry Creek SD #5 RFP 27-007 District Wide Custodial = NO
+HQ flagged that the 10/13 walk was not mandatory (parser bug "you must RSVP" → fixed 874ebb3) and questions are due
+10/21 14:00. Read the whole RFP (45 pp) + Exhibit D: full outsourced custodial, 90 sites / 7,547,412 sq ft, start
+2027-07-01, Exhibit A §2 wants 7 yrs managed custodial, 5 yrs K-12, three districts >3M sq ft, APPA L2 history;
+§5.2 three similar-size references; $3M claims-made professional liability. Verdict NO (national custodial firms
+prime this themselves). Folder bids/cherrycreek-custodial-27-007/README.md. Luke can override before 10/21 14:00.
+DCSD 003-27: BidNet says "Attendance Recommended" for the 10/14 walk; RFP boilerplate says no sign-in = rejected if
+a walkthrough is required. If Luke did not sign in, ask Rich Harley before pricing. Arapahoe 26-52: BidNet confirms
+mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.

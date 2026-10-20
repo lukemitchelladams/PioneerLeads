@@ -205,11 +205,11 @@
    "govtribe_ids": []
   },
   {
-   "name": "District Wide Custodial Services (EVALUATE; agency unknown)",
+   "name": "Cherry Creek SD #5 RFP 27-007 District Wide Custodial (NO: 7.5M sq ft, 7-yr custodial history required)",
    "source": "bidnet",
    "id": "0000437813",
    "match": "district wide custodial",
-   "folder": null,
+   "folder": "bids/cherrycreek-custodial-27-007",
    "govtribe_ids": []
   },
   {

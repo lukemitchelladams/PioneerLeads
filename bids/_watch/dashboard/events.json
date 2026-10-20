@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -24.57
+  "days_left": -24.58
  },
  {
   "key": "littleton-2126|Pre-bid (optional)|2026-10-09T10:00:00-06:00",
@@ -25,7 +25,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.69
+  "days_left": -10.7
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -53,7 +53,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -4.69
+  "days_left": -4.7
  },
  {
   "key": "arapahoe-26-52|MANDATORY pre-bid|2026-10-19T13:30:00-06:00",
@@ -67,7 +67,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -0.55
+  "days_left": -0.56
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": false,
-  "days_left": 0.31
+  "days_left": 0.3
  },
  {
   "key": "elbert-2026-006|Questions due|2026-10-20T13:00:00-06:00",
@@ -109,7 +109,7 @@
   "note": "Elbert fencing questions close",
   "critical": false,
   "past": false,
-  "days_left": 0.43
+  "days_left": 0.42
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -123,7 +123,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": false,
-  "days_left": 1.31
+  "days_left": 1.3
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": false,
-  "days_left": 1.31
+  "days_left": 1.3
  },
  {
   "key": "littleton-2126|Addendum|2026-10-21T12:00:00-06:00",
@@ -151,7 +151,7 @@
   "note": "Littleton Q&A / meeting notes post in RMEPS",
   "critical": false,
   "past": false,
-  "days_left": 1.39
+  "days_left": 1.38
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -221,7 +221,7 @@
   "note": "Plumber pricing/answers",
   "critical": false,
   "past": false,
-  "days_left": 3.6
+  "days_left": 3.59
  },
  {
   "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -235,7 +235,7 @@
   "note": "Low-voltage sub pricing",
   "critical": false,
   "past": false,
-  "days_left": 3.6
+  "days_left": 3.59
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -249,7 +249,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.31
+  "days_left": 6.3
  },
  {
   "key": "poudre-27-702-002|Submission|2026-10-26T14:00:00-06:00",
@@ -319,7 +319,7 @@
   "note": "Hard copy + email",
   "critical": true,
   "past": false,
-  "days_left": 7.41
+  "days_left": 7.4
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -333,7 +333,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 7.6
+  "days_left": 7.59
  },
  {
   "key": "sd27j-2021brrhs|Submission|2026-10-28T10:00:00-06:00",
@@ -347,7 +347,7 @@
   "note": "Email emorales@sd27j.net",
   "critical": true,
   "past": false,
-  "days_left": 8.31
+  "days_left": 8.3
  },
  {
   "key": "littleton-2126|Submission|2026-10-28T14:00:00-06:00",
@@ -431,7 +431,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 13.56
+  "days_left": 13.55
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T00:00:00-07:00",
@@ -445,7 +445,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 13.93
+  "days_left": 13.92
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -459,7 +459,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 15.35
+  "days_left": 15.34
  },
  {
   "key": "arapahoe-26-52|Submission|2026-11-04T14:00:00-07:00",
@@ -501,7 +501,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 16.64
+  "days_left": 16.63
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -512,20 +512,6 @@
   "agency": "Town of Parker",
   "sol": "RFP (number not in hand)",
   "decision": "GO",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 17.51
- },
- {
-  "key": "district-custodial|Submission|2026-11-06T14:00:00-07:00",
-  "bid": "district-custodial",
-  "when": "2026-11-06T14:00:00-07:00",
-  "date": "2026-11-06",
-  "kind": "Submission",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 0000437813",
-  "decision": "EVALUATE",
   "note": "BidNet",
   "critical": true,
   "past": false,
@@ -571,7 +557,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.56
+  "days_left": 23.55
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -613,7 +599,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 30.58
+  "days_left": 30.57
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -627,7 +613,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 40.93
+  "days_left": 40.92
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
