@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-20T11:36:25+00:00",
+  "checked_at": "2026-10-20T12:36:33+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -10,11 +10,11 @@
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-20T11:36:25+00:00",
+      "last_success": "2026-10-20T12:36:33+00:00",
       "logged_in": true,
-      "login_note": "logged in (attempt 1, confirmed on re-check; first read: Error: Page.evaluate: Error: login form not found\n    at eval (eval at evaluate (:370:30), <anonymous>:3:27)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n)",
+      "login_note": "logged in (attempt 1)",
       "matches": 80,
-      "reach_note": "HTTP 200",
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 187,
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-10-20T11:36:25+00:00",
+      "last_success": "2026-10-20T12:36:33+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -67,7 +67,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-20T11:36:25+00:00",
+      "last_success": "2026-10-20T12:36:33+00:00",
       "logged_in": true,
       "login_note": "API key; +30 from the nightly bulk file",
       "matches": 68,
