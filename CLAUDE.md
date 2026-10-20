@@ -6,6 +6,21 @@ It also hunts bids for Luke's dad's industrial bearings/conveyor/paper-mill busi
 `dads-company` in bids/_watch/watch_profiles.json). Every scan covers both companies.
 It is NOT a software product. Do not scaffold apps here unless asked.
 
+## Updates to Luke = board updates: 8 lines max (Luke, 2026-10-20, emphatic)
+Every status message, morning brief, evening update and hourly reply to Luke uses THIS format and nothing
+longer. No narrative, no "landed today" essays, no lists of everything read. Details live in the repo and the
+dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links there.
+
+    BROWN BISON <date> <AM|PM>
+    1. #1 TODAY: <the single most important outcome today, and who owns it>
+    2. DUE ≤72h: <bid / deadline / mandatory walk, date-time>  (max 3, most urgent first)
+    3. LUKE MUST DO: <action only Luke can do, by when>  (or "nothing")
+    4. DECIDE: <yes/no question for Luke>  (or "nothing")
+    5. BLOCKED/RISK: <what is stuck and why>  (or "nothing")
+    6. NUMBERS: sources live x/4 | open matches | GO bids | sub pricing in hand x/y
+    7. DONE SINCE LAST: <one line, the biggest result>
+    8. Dashboard: <link>
+
 ## Operating rules (non-negotiable)
 0. FIRST thing on any new bid: find the pre-bid meeting / site walk date and whether attendance is
    MANDATORY. Put it in the README status table and bids/_pipeline.md. If mandatory and <72h away or past,

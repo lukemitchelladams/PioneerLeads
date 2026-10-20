@@ -53,7 +53,11 @@ class PortalSession:
         kw = {"user_agent": UA, "accept_downloads": True, "viewport": {"width": 1400, "height": 1000}}
         if self.state_path.exists():
             kw["storage_state"] = str(self.state_path)
-        self.ctx = browser.browser.new_context(**kw)
+        try:
+            self.ctx = browser.browser.new_context(**kw)
+        except Exception:  # noqa: BLE001 - unreadable/corrupt saved session: start clean, ensure_login re-logs
+            kw.pop("storage_state", None)
+            self.ctx = browser.browser.new_context(**kw)
         self.ctx.set_default_timeout(45000)
         self.page = self.ctx.new_page()
         self.login_fn = login_fn
@@ -107,8 +111,11 @@ class PortalSession:
     def save(self) -> None:
         SESSION_DIR.mkdir(parents=True, exist_ok=True)
         try:
-            self.ctx.storage_state(path=str(self.state_path))
-            os.chmod(self.state_path, 0o600)
+            # atomic: two runs (hourly scan + a test) can save at the same moment; never leave a torn file
+            tmp = self.state_path.with_suffix(f".{os.getpid()}.tmp")
+            self.ctx.storage_state(path=str(tmp))
+            os.chmod(tmp, 0o600)
+            os.replace(tmp, self.state_path)
         except Exception:  # noqa: BLE001
             pass
 

@@ -457,3 +457,19 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - ARCHITECTURE (Luke rejected the background loop; it died with container restarts): engine = trig_01792tC1P3WZhukYJtGaroxc,
   fires INTO the HQ session hourly at :35 MT: one logged-in scan with --push in the foreground, docs copied to bid folders.
   My :50 heartbeat trig_01PrBNrQswzothmXa4rqo56V was disabled by HQ. This WORKER keeps :21 (GovTribe/inbox/dashboard/triage).
+
+### 2026-10-20 04:40 UTC: endurance test, research swarm, CEO cadence (Luke's orders)
+- Luke: prove BidNet stays logged in for 1h+, 10/10; run a research swarm for a smarter architecture; act as the
+  orchestrating CEO (daily plan, workers); updates to Luke are 8-line board updates (now at the TOP of CLAUDE.md;
+  the CRM agent's ~110 KB morning brief / evening update emails violate it).
+- Endurance run E1 failed check 1 on MY bugs (selector mixing css+text= in the docs-tab wait; logged-in aggregate
+  rows link /private/supplier/interception/open-notice/<id>, which the parser did not know). Fixed; run E2 started
+  04:37Z: 12 checks x 6 min, fresh browser per check from the saved session, forced app-session expiry at
+  check 4 and full SSO expiry at check 8. E2 check 1 PASS (session reused, 50 rows, 4 docs).
+- BidNet auth = Shibboleth SSO: www JSESSIONID + mets.AuthenticationMode + idp JSESSIONID + shib_idp_session
+  (all session-scope), aws-waf-token (~96 h), AWSALB (7 d). Session saves are now atomic.
+- Research swarm (5 agents: BidNet official access, SAM.gov/DIBBS bulk, Colorado portal map, commercial
+  aggregators, opus architecture) running; results -> ops/research/.
+- New triggers: trig_01Df7nVGVQw7pddo2JSmdNBR daily 06:44 MT CEO plan into MAIN (ops/plan_ceo/<date>.md + dispatch
+  + 8-line update). Hourly logged-in scan trig_01792tC1P3WZhukYJtGaroxc (:35). Watchdogs for E2 at 05:07Z/05:49Z
+  (they reference run id E1: use E2).

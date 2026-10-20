@@ -40,6 +40,7 @@ REGION_STATE = {"colorado": "CO", "wyoming": "WY"}
 BOT_RX = re.compile(r"verify that you.re not a robot|JavaScript is disabled", re.I)
 LOCKED_RX = re.compile(r"registered members only|log ?in to (view|download)|register to (view|download)", re.I)
 
+OPEN_NOTICE_HREF = re.compile(r"/open-notice/(\d{6,})(?:[/?#]|$)")
 SOL_HREF = re.compile(r"/solicitations/[^?#]*?/(\d{5,})(?:[/?#]|$)")
 FILE_HREF = re.compile(r"\.(pdf|docx?|xlsx?|zip|dwg)(\?|$)|/document|/download|attachment", re.I)
 
@@ -234,15 +235,18 @@ def parse_listing(html: str, base_url: str = BASE) -> tuple[list[dict], str | No
     rows, seen = [], set()
     for tr in soup.select("tr.mets-table-row"):
         a = tr.select_one("a.solicitation-link[href]")
-        m = SOL_HREF.search(a["href"]) if a else None
-        if not m or m.group(1) in seen:
+        # public rows link /solicitations/.../<id>; LOGGED-IN aggregate rows link
+        # /private/supplier/interception/open-notice/<id>?target=view (same id, also on a@id), seen 2026-10-20
+        m = (SOL_HREF.search(a["href"]) or OPEN_NOTICE_HREF.search(a["href"])) if a else None
+        sid = m.group(1) if m else ((a.get("id") or "") if a is not None and (a.get("id") or "").isdigit() else "")
+        if not sid or sid in seen:
             continue
-        seen.add(m.group(1))
+        seen.add(sid)
         region = _txt(tr.select_one(".sol-region-item"))
         # keyword-search pages wrap hits in <span class="iris-highlight">; joining with " " would turn
         # "On-<span>Call</span>" into "On - Call", so join without a separator
         title = " ".join(a.get_text().split())
-        rows.append({"id": m.group(1), "title": title, "url": urljoin(base_url, a["href"]),
+        rows.append({"id": sid, "title": title, "url": urljoin(base_url, a["href"]),
                      "agency": "", "region": region, "state": REGION_STATE.get(region.lower()),
                      "closing": parse_date(_txt(tr.select_one(".sol-closing-date .date-value"))),
                      "published": parse_date(_txt(tr.select_one(".sol-publication-date .date-value"))),
@@ -468,7 +472,10 @@ def enrich(session, bid: dict) -> dict:
         try:
             if page.locator(DOCS_TAB_SEL).count():
                 page.locator(DOCS_TAB_SEL).first.click()
-                page.wait_for_selector(ATTACH_SEL + ", text=No Files", timeout=15000)
+                try:  # attachments arrive by XHR; a bid with no files never shows one, so time out quietly
+                    page.wait_for_selector(ATTACH_SEL, timeout=15000)
+                except Exception:  # noqa: BLE001
+                    pass
                 page.wait_for_timeout(800)
                 t = parse_docs_tab(_content(page), bid["url"])
                 if t["documents"]:

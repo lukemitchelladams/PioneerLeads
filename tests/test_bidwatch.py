@@ -133,6 +133,13 @@ check("logged-in Documents tab: attachment links (real markup, Littleton 2026-10
       and _t["documents"][0]["url"].endswith("/9747910258/attachment-download"), _t)
 check("logged-in Documents tab: RMEPS pricing items captured", (_t["items_text"] or "").startswith("Items No Description")
       and "Hourly Rate" in _t["items_text"], _t)
+_li = ("<table><tr class='mets-table-row'><td><a class='solicitation-link mets-command-link' id='444202844454' "
+       "href='/private/supplier/interception/open-notice/444202844454?target=view'>Housing Action Plan</a>"
+       "<span class='sol-region-item'>Colorado</span><span class='sol-closing-date'><span class='date-value'>11/10/2026</span></span>"
+       "</td></tr></table>")
+_lr = bidnet.parse_listing(_li)[0]
+check("logged-in aggregate rows (open-notice links) parse with the same id", len(_lr) == 1 and _lr[0]["id"] == "444202844454"
+      and _lr[0]["closing"] == "2026-11-10", _lr)
 check("bidnet page_url keeps query", bidnet.page_url(bidnet.CO_OPEN + "?keywords=hvac", 2)
       == bidnet.CO_OPEN + "/page2?keywords=hvac")
 d = bidnet.parse_detail((FX / "bidnet_detail_littleton_2126.html").read_text())
