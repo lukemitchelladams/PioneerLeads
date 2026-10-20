@@ -556,13 +556,17 @@ def enrich(session, bid: dict) -> dict:
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}
 
 
-def download_docs(session, bid: dict) -> list[str]:
-    """Logged-in only. Saves each document; returns repo-relative paths."""
+def download_docs(session, bid: dict, skip_existing: bool = True) -> list[str]:
+    """Logged-in only. Saves each document not already on disk; returns the paths saved this call. Checking the
+    disk (not the previous scan's document list) also fetches the files of a bid that became watched after its
+    documents were first listed, and any addendum."""
     saved = []
     dest = DOWNLOAD_DIR / "bidnet" / bid["id"]
     dest.mkdir(parents=True, exist_ok=True)
     for d in bid.get("documents", [])[:60]:
         safe = re.sub(r"[^\w.\- ]", "_", d.get("name") or "").strip()
+        if skip_existing and safe and (dest / safe).is_file() and (dest / safe).stat().st_size > 0:
+            continue
         try:
             with session.page.expect_download(timeout=45000) as dl:
                 try:

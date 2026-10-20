@@ -230,7 +230,8 @@ class H(http.server.BaseHTTPRequestHandler):
         if p.startswith("/dl/"):
             if not self._authed():
                 return self._send("login required", 403)
-            return self._send(b"%PDF-1.4 fake", headers={"Content-Disposition": f"attachment; filename={p.rsplit('/', 1)[-1]}"},
+            body = b"%PDF-1.4 fake " + p.rsplit("/", 1)[-1].encode() + (b" rev2" if os.environ.get("FAKE_REV") else b"")
+            return self._send(body, headers={"Content-Disposition": f"attachment; filename={p.rsplit('/', 1)[-1]}"},
                               ctype="application/pdf")
         return self._send("not found", 404)
 
@@ -412,6 +413,36 @@ check("during cool-down BidNet is not contacted and its rows are carried forward
       (r5["health"]["bidnet"].get("login_note"), list(r5["closed"]), _cd_before, bidnet.__file__, run.bidnet is bidnet))
 common.BIDNET_COOLDOWN_FILE.unlink()
 check("cool-down cleared", bidnet.cooldown_until() is None)
+
+# A bid that became watched after its documents were first listed: its files are fetched because they are
+# missing on disk, then filed into the bid folder the watchlist names (CLAUDE.md rule 0c).
+_REPO0 = run.REPO
+run.REPO = TMP / "repo"
+_bf = run.REPO / "bids/littleton-2126"
+(_bf / "docs").mkdir(parents=True)
+(_bf / "docs/RFQ-saved-by-Luke.pdf").write_bytes(b"%PDF-1.4 fake rfq.pdf")  # same bytes as the portal's RFQ.pdf
+(TMP / "WATCHLIST_FILE.json").write_text(json.dumps({"bids": [{"name": "Littleton 2126", "source": "bidnet",
+                                                               "match": "\\b2126\\b", "folder": "bids/littleton-2126"}]}))
+import shutil as _sh  # noqa: E402
+
+_sh.rmtree(TMP / "downloads" / "bidnet", ignore_errors=True)
+r8 = run.scan(["bidnet"])
+_got = sorted(Path(f).name for fs in r8["downloads"].values() for f in fs)
+check("watched bid: documents missing on disk are downloaded although the document list did not change",
+      _got == ["Addendum 1.pdf", "RFQ.pdf"], r8["downloads"])
+check("filed into the bid folder; bytes already there under another name are not copied again",
+      sorted(x.name for x in (_bf / "docs").iterdir()) == ["Addendum 1.pdf", "RFQ-saved-by-Luke.pdf"]
+      and r8["filed"] == ["bids/littleton-2126/docs/Addendum 1.pdf"], (r8["filed"], sorted((_bf / "docs").iterdir())))
+check("report lists what was filed", "## Filed into bid folders" in (TMP / "REPORT_FILE.json").read_text())
+r9 = run.scan(["bidnet"])
+check("next scan: nothing downloaded or filed twice", not r9["downloads"] and not r9["filed"], (r9["downloads"], r9["filed"]))
+os.environ["FAKE_REV"] = "1"
+[Path(f) for fs in r8["downloads"].values() for f in fs if f.endswith("Addendum 1.pdf")][0].unlink()
+r10 = run.scan(["bidnet"])
+check("a revised file with the same name is filed next to the original, dated",
+      any(f.startswith("bids/littleton-2126/docs/Addendum 1 (rev ") for f in r10["filed"]), r10["filed"])
+del os.environ["FAKE_REV"]
+run.REPO = _REPO0
 # a stale code-needed marker expires so a new attempt is allowed (max one code email per 6 h)
 common.CODE_NEEDED_MARKER.write_text("2026-01-01T00:00:00+00:00")
 os.utime(common.CODE_NEEDED_MARKER, (time.time() - 7 * 3600,) * 2)

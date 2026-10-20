@@ -29,6 +29,8 @@ import sys
 import time
 import traceback
 import re
+import hashlib
+import shutil
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -78,20 +80,25 @@ class _WatchSet:
     entry's `match` regex (we usually know the solicitation number, not the portal's internal id)."""
 
     def __init__(self, watch: list[dict]):
-        self.ids = {f"{w['source']}:{w['id']}" for w in watch if w.get("id") and w.get("source")}
+        self.by_id = {f"{w['source']}:{w['id']}": w for w in watch if w.get("id") and w.get("source")}
+        self.ids = set(self.by_id)
         self.rx = [(w, re.compile(w["match"], re.I)) for w in watch if w.get("match")]
         self.hits: dict[str, str] = {}
 
-    def check(self, b: dict) -> bool:
+    def entry(self, b: dict) -> dict | None:
+        """The watchlist entry that covers bid `b`, or None."""
         k = f"{b['source']}:{b['id']}"
-        if k in self.ids:
-            return True
+        if k in self.by_id:
+            return self.by_id[k]
         hay = f"{b.get('title', '')} {b.get('sol') or ''} {b.get('url') or ''}"
         for w, rx in self.rx:
             if (not w.get("source") or w["source"] == b["source"]) and rx.search(hay):
                 self.hits[w.get("name", w["match"])] = k
-                return True
-        return False
+                return w
+        return None
+
+    def check(self, b: dict) -> bool:
+        return self.entry(b) is not None
 
 
 def key(b: dict) -> str:
@@ -262,10 +269,56 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     health_all = {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items() if s not in health},
                   **health}
     save_json(HEALTH_FILE, {"checked_at": started, "scanned_by": SCANNED_BY, "sources": health_all})
+    filed = _file_watched_docs(downloads, found, watched_keys)
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
-              "closed": closed, "downloads": downloads, "missing_watch": missing_watch}
+              "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed}
     REPORT_FILE.write_text(render(result))
     return result
+
+
+def _sha1(p: Path) -> str:
+    return hashlib.sha1(p.read_bytes()).hexdigest()
+
+
+def _file_watched_docs(downloads: dict, found: dict, watched_keys) -> list[str]:
+    """Copy each watched bid's newly downloaded documents into its bid folder's docs/ (the watchlist entry's
+    `folder`), skipping files whose content is already there under any name, then refresh that folder's
+    MANIFEST.md (CLAUDE.md rule 0c: complete packages). Returns repo-relative paths written, for the push."""
+    out: list[str] = []
+    for k, paths in downloads.items():
+        b = found.get(k)
+        w = watched_keys.entry(b) if b else None
+        folder = (w or {}).get("folder")
+        if not folder or not (REPO / folder).is_dir():
+            continue  # no bid folder yet: the files stay in bids/_watch/downloads/<source>/<id>/
+        dest = REPO / folder / "docs"
+        dest.mkdir(exist_ok=True)
+        have = {}
+        for f in dest.iterdir():
+            if f.is_file():
+                have.setdefault(f.stat().st_size, []).append(f)
+        wrote = False
+        for p in map(Path, paths):
+            if not p.is_file():
+                continue
+            if any(_sha1(f) == _sha1(p) for f in have.get(p.stat().st_size, [])):
+                continue  # same bytes already filed (perhaps under the name a person gave it)
+            tgt = dest / p.name
+            if tgt.exists():  # same name, different bytes: a revised document; keep both
+                tgt = dest / f"{p.stem} (rev {iso()[:10]}){p.suffix}"
+            shutil.copy2(p, tgt)
+            have.setdefault(tgt.stat().st_size, []).append(tgt)
+            out.append(str(tgt.relative_to(REPO)))
+            wrote = True
+        if wrote:
+            try:
+                subprocess.run([sys.executable, str(REPO / "scripts/doc_manifest.py"), Path(folder).name], cwd=REPO,
+                               capture_output=True, text=True, timeout=300)
+                if (dest / "MANIFEST.md").exists():
+                    out.append(str((dest / "MANIFEST.md").relative_to(REPO)))
+            except Exception:  # noqa: BLE001 - a manifest refresh never fails the scan
+                pass
+    return out
 
 
 def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
@@ -337,9 +390,9 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 continue
             h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
         if is_w and ses.logged_in and hasattr(mod, "download_docs"):
-            new_docs = {d["name"] for d in found[k].get("documents", [])} - {d["name"] for d in old.get("documents", [])}
-            if new_docs or not old:
-                downloads[k] = mod.download_docs(ses, found[k])
+            got = mod.download_docs(ses, found[k])  # only files not already on disk
+            if got:
+                downloads[k] = got
 
 
 def _diff(old: dict, new: dict) -> list[str]:
@@ -452,6 +505,8 @@ def render(r: dict) -> str:
         lines += ["", "## Documents downloaded", ""]
         for k, files in r["downloads"].items():
             lines += [f"- {k}: {f}" for f in files]
+    if r.get("filed"):
+        lines += ["", "## Filed into bid folders", ""] + [f"- {f}" for f in r["filed"]]
     errs = [(s, e) for s, v in h.items() for e in v["errors"]]
     if errs:
         lines += ["", "## Errors", ""] + [f"- {s}: {e}" for s, e in errs[:60]]
@@ -498,13 +553,13 @@ def git_sync(note: str = "") -> str:
         return f"sync failed: {type(e).__name__}"
 
 
-def git_push_results(when: str) -> str:
+def git_push_results(when: str, extra_paths: list[str] | None = None) -> str:
     """After a cycle: rebuild dashboard data, commit the generated files, rebase onto upstream keeping OUR
     freshly generated versions on conflict, push with backoff. Returns a one-line result. Never raises."""
     try:
         subprocess.run([sys.executable, str(REPO / "scripts/build_dashboard_data.py")], cwd=REPO,
                        capture_output=True, text=True, timeout=300)
-        _git("add", "-A", "--", *PUSH_PATHS)
+        _git("add", "-A", "--", *PUSH_PATHS, *(extra_paths or []))
         if _git("diff", "--cached", "--quiet", check=False).returncode == 0:
             return "nothing new to push"
         trailer = os.environ.get("BIDWATCH_COMMIT_TRAILER", "Co-Authored-By: Claude <noreply@anthropic.com>").replace("\\n", "\n")
@@ -618,7 +673,9 @@ def main() -> int:
         sync = git_sync() if a.push else "no sync (--push not set)"
         ping("scan", "/start")
         try:
+            filed = []
             r = scan(sources, enrich_details=not a.no_detail)
+            filed = r.get("filed", [])
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
             ok = any(v["count"] for v in r["health"].values())
             # sources that returned nothing fresh this run (blind, carried forward, cool-down): exit 3 so a
@@ -629,7 +686,7 @@ def main() -> int:
         except Exception:  # noqa: BLE001 - never let the loop die
             traceback.print_exc()
             ok, logins, degraded = False, {}, ["scan crashed"]
-        push = git_push_results(started) if a.push else "not pushed (--push not set)"
+        push = git_push_results(started, filed) if a.push else "not pushed (--push not set)"
         print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} sync={sync} push={push} logins={logins}", flush=True)
         summary = f"ok={ok} degraded={degraded} push={push} logins={logins}"
         ping("scan", "" if ok and not degraded and not str(push).startswith("push FAILED") else "/fail", summary)
