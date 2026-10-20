@@ -571,3 +571,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   15:36 UTC scan clean (BidNet logged in attempt 1). New mandatory walk to decide: DPS fire alarm 10/27 10:00.
 - 2026-10-20 10:03 MT (MAIN): Parker rough-draft pricing EMAILED to Rich (big-type PDF, verified) and filter question EMAILED to Charles Ellis cellis@parkeronline.org, both on Luke's explicit instruction. Watch inbox for both replies. Rich approval due Wed noon.
 - 2026-10-20 11:25 MT (Luke): **Alex Ditto's company is YMS Landscaping.** Use it on every landscaping bid (exact legal entity name still to confirm).
+- 2026-10-20 11:35 MT (Luke): YMS Landscaping (Alex) also does concrete, retaining walls, snow removal, landscape enhancements, carpentry, water features, sod/turf install, pressure washing. Luke reopened Colorado Springs Valley Hi pond (Q26-096MZ, due 10/28; bonds required). Pressure washing + snow = RTD shelters fit.
