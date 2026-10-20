@@ -71,6 +71,15 @@ def fetch_open(key: str, extra: dict, max_records: int = 3000) -> list[dict]:
     return out
 
 
+def _doc_name(url: str) -> str:
+    """SAM.gov resource links end in '/<fileId>/download', so the last segment is 'download' for every file;
+    naming documents by it made new amendments invisible to the diff. Use the file id instead."""
+    parts = [p for p in url.rstrip("/").split("/") if p]
+    if len(parts) >= 2 and parts[-1].lower() in ("download", "view"):
+        return parts[-2]
+    return parts[-1] if parts else url
+
+
 def normalize(o: dict) -> dict:
     pop = o.get("placeOfPerformance") or {}
     return {
@@ -82,7 +91,7 @@ def normalize(o: dict) -> dict:
         "set_aside": o.get("typeOfSetAsideDescription"),
         "state": (pop.get("state") or {}).get("code"), "city": (pop.get("city") or {}).get("name"),
         "url": o.get("uiLink"), "description_url": o.get("description"),
-        "documents": [{"name": u.rsplit("/", 1)[-1], "url": u} for u in (o.get("resourceLinks") or [])],
+        "documents": [{"name": _doc_name(u), "url": u} for u in (o.get("resourceLinks") or [])],
     }
 
 
@@ -111,6 +120,8 @@ def collect(profiles: dict) -> tuple[dict, list[str]]:
                     rec = normalize(o)
                     if not rec["id"] or not _keep(rec, prof):
                         continue
+                    if q.get("state") and rec.get("state") and rec["state"] != q["state"]:
+                        continue  # the API's state filter is loose; a profile state query keeps only that state
                     cur = found.setdefault(rec["id"], {**rec, "profiles": []})
                     if name not in cur["profiles"]:
                         cur["profiles"].append(name)

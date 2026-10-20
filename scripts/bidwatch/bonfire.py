@@ -73,7 +73,12 @@ def login(page, user: str, pw: str, org: str = "parkeronline") -> None:
 def is_logged_in(page, org: str = "parkeronline") -> bool:
     page.goto(base(org) + "/portal/?tab=openOpportunities", wait_until="domcontentloaded")
     page.wait_for_timeout(2000)
-    return bool(re.search(r"log ?out|sign ?out|my submissions", page.content(), re.I))
+    # Positive signal only: a real logout/sign-out link and no login form on the page. Matching words like
+    # "my submissions" anywhere in the HTML reported logged-out portals as logged in (same bug class BidNet had).
+    html = page.content()
+    has_logout = bool(re.search(r'href="[^"]*(logout|log-out|sign[-_]?out)', html, re.I)) or \
+        page.locator("a:has-text('Log Out'), a:has-text('Logout'), button:has-text('Log Out')").count() > 0
+    return has_logout and page.locator("input[type='password']").count() == 0
 
 
 def parse_list_json(payload: dict, org: str) -> list[dict]:

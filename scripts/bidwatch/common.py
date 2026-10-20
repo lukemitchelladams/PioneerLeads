@@ -177,23 +177,56 @@ MANDATORY_RX = re.compile(r"\bmandatory\b|\bshall attend\b|\bmust attend\b|\breq
 NOT_MANDATORY_RX = re.compile(r"\bnon[- ]?mandatory\b|\bnot mandatory\b|\boptional\b|\bnot required\b", re.I)
 
 
+NONE_AFTER_RX = re.compile(r"^\s*(?:meeting|conference|walk(?:through)?|visit)?\s*[:\-–—]?\s*(none|n/?a\b|not applicable|"
+                           r"no pre[- ]?(bid|proposal)|will not be held|not scheduled|not required for this)", re.I)
+_BOUNDARY = re.compile(r"[.!?;]\s")
+
+
+def _scope(flat: str, start: int, end: int, date_at: int | None) -> str:
+    """The sentence holding the pre-bid phrase plus the sentence that finishes its date/attendance clause.
+    Keeping 'optional'/'mandatory' detection inside this scope stops a word elsewhere in the paragraph
+    (e.g. 'questions are optional') from flipping a MANDATORY walk to optional, or the reverse."""
+    a = max(0, start - 100)
+    prev = [m.end() for m in _BOUNDARY.finditer(flat, a, start)]
+    a = prev[-1] if prev else a
+    anchor = max(end, date_at or end)
+    b = min(len(flat), anchor + 220)
+    bounds = [m.start() for m in _BOUNDARY.finditer(flat, anchor, b)]
+    if len(bounds) >= 2:
+        b = bounds[1] + 1
+    return flat[a:b]
+
+
 def extract_prebid(text: str) -> dict | None:
     """Find the pre-bid meeting / site walk in free text. Returns {date, mandatory, quote} or None.
-    mandatory is True / False / None (unknown). The quote is kept so a human can verify it."""
+    mandatory is True / False / None (unknown). The quote is kept so a human can verify it.
+    A phrase followed by 'None' / 'N/A' / 'will not be held' is skipped so a later real walk is found;
+    a candidate with a date beats one without."""
     if not text:
         return None
     flat = re.sub(r"\s+", " ", text)
+    best = None
     for m in PREBID_RX.finditer(flat):
-        window = flat[max(0, m.start() - 160): m.end() + 260]
-        date = parse_date(flat[m.start(): m.end() + 260]) or parse_date(window)
-        if NOT_MANDATORY_RX.search(window):
+        if NONE_AFTER_RX.search(flat[m.end(): m.end() + 60]):
+            continue
+        ahead = flat[m.start(): m.end() + 260]
+        date = parse_date(ahead)
+        date_at = None
+        if date:
+            dm = re.search(r"\d{1,2}/\d{1,2}/\d{2,4}|\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{1,2}", ahead, re.I)
+            date_at = m.start() + dm.start() if dm else None
+        scope = _scope(flat, m.start(), m.end(), date_at)
+        if NOT_MANDATORY_RX.search(scope):
             mand = False
-        elif MANDATORY_RX.search(window):
+        elif MANDATORY_RX.search(scope):
             mand = True
         else:
             mand = None
-        return {"date": date, "mandatory": mand, "quote": window.strip()[:400]}
-    return None
+        cand = {"date": date, "mandatory": mand, "quote": scope.strip()[:400]}
+        if date:
+            return cand
+        best = best or cand
+    return best
 
 
 def days_until(iso_date: str | None) -> int | None:

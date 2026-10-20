@@ -23,6 +23,7 @@ import email.utils
 import imaplib
 import os
 import re
+import ssl
 import time
 from email.message import Message
 
@@ -73,7 +74,7 @@ def fetch_code(since: dt.datetime, imap_factory=None) -> str | None:
     if not pw:
         return None
     since = since if since.tzinfo else since.replace(tzinfo=dt.timezone.utc)
-    conn = (imap_factory or IMAP_FACTORY)(host)
+    conn = (imap_factory or IMAP_FACTORY)(host, ssl_context=ssl.create_default_context())  # verified TLS
     try:
         conn.login(user, pw)
         conn.select("INBOX", readonly=True)

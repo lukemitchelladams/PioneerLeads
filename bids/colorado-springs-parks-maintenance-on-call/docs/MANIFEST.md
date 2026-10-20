@@ -23,6 +23,3 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 | Exhibit 4 |  | COS-R26-077MZ-Parks-Maintenance-On-Call.pdf | INSIDE COS-R26-077MZ-Parks-Maintenance-On-Call.pdf (heading found; verify pages) |
 | Form I |  | COS-R26-077MZ-Parks-Maintenance-On-Call.pdf | **MISSING** |
 | Schedule A |  | COS-R26-077MZ-Parks-Maintenance-On-Call.pdf | **MISSING** |
-
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Colorado Springs R26-077MZ parks on-call | 2026-10-20 14:00 | RFP (99 pp) incl. Appendices A-E text, Exhibits 1-4 | **Appendix A Specialty Submission EXCEL file** (Luke downloaded it on BidNet; not in repo) |

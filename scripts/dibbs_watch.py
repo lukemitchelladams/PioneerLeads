@@ -78,6 +78,9 @@ def iso_date(s: str | None) -> str | None:
         return None
 
 
+CLOSED_STATUS_RX = re.compile(r"award|cancel|remov|withdraw|closed|expired", re.I)
+
+
 def parse_rows(html: str) -> list[dict]:
     """Rows of the DIBBS RFQ GridView. Pure function (tested against tests/fixtures/dibbs_rfq_3110.html)."""
     from bs4 import BeautifulSoup
@@ -101,14 +104,20 @@ def parse_rows(html: str) -> list[dict]:
         pr, _ = cell(tr, "_lblPr")
         issued, _ = cell(tr, "_lblIssued")
         ret, _ = cell(tr, "_lblReturnBy")
-        links = {a.get("title", ""): a["href"] for a in sol_el.find_all("a", href=True)}
+        anchors = sol_el.find_all("a", href=True)
+        links = {a.get("title", ""): a["href"] for a in anchors}
+        # anchors without a title attribute (seen on RFQs with attachments): fall back on the href itself
+        pdf_href = next((a["href"] for a in anchors if a["href"].lower().endswith(".pdf")), None)
+        rec_href = next((a["href"] for a in anchors if "rfqrec" in a["href"].lower()), None)
         qty = re.search(r"QTY:\s*([\d,]+)", pr)
         out.append({
             "sol": m.group(0), "nsn": (NSN_RX.search(nsn) or [None])[0] if NSN_RX.search(nsn) else nsn or None,
             "nomenclature": nomen, "status": status.replace(" uote", "").replace("Quote", "").strip(),
             "pr": pr.split(" ")[0] if pr else None, "qty": int(qty.group(1).replace(",", "")) if qty else None,
             "issued": iso_date(issued), "return_by": iso_date(ret),
-            "pdf": links.get("RFQ document"), "url": links.get("Package View") or links.get("RFQ document"),
+            "pdf": links.get("RFQ document") or pdf_href,
+            "url": links.get("Package View") or rec_href or links.get("RFQ document") or pdf_href,
+            "closed": bool(CLOSED_STATUS_RX.search(status)),
             "text": f"{nsn} {nomen} {sol_txt} {status} {pr} {issued} {ret}"[:400],
         })
     return out
@@ -144,7 +153,7 @@ def collect_fsc(page, url: str, today: str) -> tuple[list[dict], int | None]:
                 break
             _postback(page, f"Page${n}")
         batch = parse_rows(page.content())
-        rows += [r for r in batch if (r["return_by"] or "") >= today]
+        rows += [r for r in batch if (r["return_by"] or "") >= today and not r.get("closed")]
         if not batch or (batch[-1]["return_by"] or "") < today:
             break
     return rows, total
@@ -157,7 +166,7 @@ def run(fixture: str | None = None) -> dict:
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     today = dt.date.today().isoformat()
     state = json.loads(STATE_FILE.read_text()) if STATE_FILE.exists() else {"rfqs": {}}
-    prev = {k: v for k, v in state.get("rfqs", {}).items() if (v.get("return_by") or "") >= today}
+    prev = {k: v for k, v in state.get("rfqs", {}).items() if (v.get("return_by") or "") >= today and not v.get("closed")}
     found: dict[str, dict] = {}
     errors: list[str] = []
     totals: dict[str, int | None] = {}

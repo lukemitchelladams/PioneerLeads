@@ -56,6 +56,15 @@ lit = "A pre-proposal meeting will be held 10/09/2026 at 10:00 AM via Teams. Att
 pb2 = common.extract_prebid(lit)
 check("prebid optional detected", pb2 and pb2["mandatory"] is False and pb2["date"] == "2026-10-09", pb2)
 check("no prebid in plain text", common.extract_prebid("Proposals due 10/28/2026 2:00 PM.") is None)
+pb3 = common.extract_prebid("Pre-Bid Conference: None. Site Visit: Mandatory, 10/21/2026 9:00 AM at Town Hall. Questions due 10/23.")
+check("prebid: 'None' phrase skipped, later mandatory walk found", pb3 and pb3["date"] == "2026-10-21" and pb3["mandatory"] is True, pb3)
+pb4 = common.extract_prebid("MANDATORY pre-bid meeting on 10/21/2026 at 10:00 AM at the site. Attendance is required. "
+                            "Questions are optional and may be submitted by email until 10/23/2026.")
+check("prebid: 'optional' elsewhere does not flip a mandatory walk", pb4 and pb4["mandatory"] is True and pb4["date"] == "2026-10-21", pb4)
+pb5 = common.extract_prebid("Prebid Conference 10/01/2026 01:00 PM MDT Location CU Boulder Attendance Mandatory Contact ...")
+check("prebid: BidNet detail style 'Attendance Mandatory' after the date", pb5 and pb5["mandatory"] is True and pb5["date"] == "2026-10-01", pb5)
+check("samgov document name = file id, not 'download'",
+      samgov.normalize({"noticeId": "n1", "resourceLinks": ["https://api.sam.gov/prod/opportunities/v3/opportunities/resources/files/abc123def/download"]})["documents"][0]["name"] == "abc123def")
 
 profiles = common.load_profiles()
 check("profile match hvac", "brownbison" in common.match_profiles("Town of Parker HVAC Preventive Maintenance", profiles))
@@ -476,8 +485,8 @@ class FakeIMAP:
     """Stands in for imaplib.IMAP4_SSL: three BidNet code emails, only #8 is newer than this login."""
     calls = []
 
-    def __init__(self, host):
-        FakeIMAP.calls.append(("connect", host))
+    def __init__(self, host, **kw):
+        FakeIMAP.calls.append(("connect", host, "tls" if kw.get("ssl_context") is not None else "plain"))
 
     def login(self, user, secret):
         FakeIMAP.calls.append(("login", user))
@@ -506,6 +515,7 @@ os.environ[mailcode.ENV_PASS] = "fake-test-token"
 mailcode.IMAP_FACTORY = FakeIMAP
 got = mailcode.fetch_code(_now - _dt.timedelta(seconds=60))
 check("fetch_code picks the code emailed after this login", got == "654321", got)
+check("mailbox connection uses a verified TLS context", any(c[0] == "connect" and c[2] == "tls" for c in FakeIMAP.calls), FakeIMAP.calls[:1])
 check("mailbox opened read-only, bodies peeked", any(c[0] == "select" and c[2] is True for c in FakeIMAP.calls)
       and all("PEEK" in c[2] for c in FakeIMAP.calls if c[0] == "fetch"), FakeIMAP.calls)
 check("search limited to BidNet sender + subject", any(c[0] == "search" and "noreply@bidnet.com" in c[1]
