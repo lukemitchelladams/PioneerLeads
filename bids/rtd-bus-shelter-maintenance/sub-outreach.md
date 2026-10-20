@@ -67,6 +67,23 @@ the same corridor.** See README "What RTD pays now". Not competitive as quoted.
 > certified before the proposal goes in (RFP section 2.6), and its review can take up to 45 days, so please file the
 > RTD SBE application this week (SBO@RTD-Denver.com).
 
+### Colorado Power Wash: Jake's 10 questions (2026-10-20 12:27 MT) and our draft answers
+Jake Pavelle (GM, jake@coloradopowerwash.com, cc leann@coloradopowerwash.com) asked about:
+1. the shelter list and visit frequency;
+2. what counts as a "small fix" and the current call volume;
+3. trash disposal;
+4. graffiti products and colors;
+5. the GPS system;
+6. the incumbent and why RTD is rebidding;
+7. the type of power washing;
+8. which areas get washed;
+9. what we want in a partner;
+10. water reclamation.
+He also asked who the COI should be made out to, and will send it this week.
+**Answer drafted in Gmail (2026-10-20 12:41 MT, draft r8641098935225056154), NOT sent; it waits for Luke.** It answers all 10 from the SOW,
+attaches docs/RTD-126DM016-Shelter-List.xlsx, and gives RTD's insurance limits for subs ($5M umbrella included). It also shows the incumbent's
+public RTD figures, so he prices against the real market. The attachment's bytes are not verified yet; check them before sending.
+
 ### Colorado Power Wash (2026-10-19 17:33 MT)
 Interested ("good work we want to learn more about"). Has questions before pricing; asked "Is tomorrow a bad day to talk?"
 Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send the same shelter list + SOW sent to Lightning Mobile.
