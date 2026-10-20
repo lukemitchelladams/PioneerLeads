@@ -430,3 +430,7 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   the WORKER trigger scans at :50). To stop it: `for p in $(pgrep -f '^python3 scripts/bidwatch/run.py'); do
   kill $p; done` — never `pkill -f 'run.py --loop'` from a shell whose own command line contains that text
   (it kills the shell first; happened twice tonight). Commit before any restart: a dirty tree breaks its push.
+- 2026-10-19 22:25 MT: fresh-container trigger sessions CANNOT push (git proxy 403: repo not in the triggered session's
+  sources; create_trigger has no source param). trig_014jsVKh8JXD8hBPctBHbDu4 DISABLED. New trig_01PrBNrQswzothmXa4rqo56V
+  fires at :50 INTO the HQ session (persistent_session_id) as a heartbeat: restart loop if dead/stale, fix failed push,
+  diagnose blind/login-blocked sources, run first real login when creds appear, message this session. HQ loop remains primary.
