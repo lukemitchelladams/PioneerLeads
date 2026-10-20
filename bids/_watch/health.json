@@ -1,24 +1,29 @@
 {
-  "checked_at": "2026-10-20T20:36:37+00:00",
+  "checked_at": "2026-10-20T21:36:06+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
-      "count": 591,
+      "carried_forward": true,
+      "complete": false,
+      "count": 193,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [],
-      "last_success": "2026-10-20T20:36:37+00:00",
-      "logged_in": true,
-      "login_note": "logged in (attempt 1)",
-      "matches": 82,
-      "reach_note": "HTTP 202",
+      "errors": [
+        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER\nCall log:\n  - navigating to \"https:",
+        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-10-20T21:36:06+00:00",
+      "logged_in": false,
+      "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
+      "matches": 9,
+      "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 193,
-        "statewide BUYER": 399
+        "statewide AGGREGATE": 194,
+        "statewide BUYER": null
       }
     },
     "bonfire": {
@@ -30,7 +35,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-10-20T20:36:37+00:00",
+      "last_success": "2026-10-20T21:36:06+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -62,15 +67,15 @@
     "samgov": {
       "bulk_added": 31,
       "bulk_note": "bulk file cached 2026-10-20T05:28:39+00:00; 68 matching (parsed earlier)",
-      "count": 73,
+      "count": 75,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-20T20:36:37+00:00",
+      "last_success": "2026-10-20T21:36:06+00:00",
       "logged_in": true,
       "login_note": "API key; +31 from the nightly bulk file",
-      "matches": 73,
+      "matches": 75,
       "reach_note": "HTTP 404",
       "reachable": true
     }

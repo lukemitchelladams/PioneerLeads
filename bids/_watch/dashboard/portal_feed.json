@@ -1527,7 +1527,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444181730937?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444181730937/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bonfire:parkeronline-256465",
@@ -1827,7 +1827,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444197459901?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444197459901/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE4A0-27-T-0208:7018661344",
@@ -2712,7 +2712,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444202822731?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444202822731/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE4A0-27-T-0210:7018558616",
@@ -3687,7 +3687,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444166507433/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE7L5-27-T-0248:7018672201",
@@ -3882,7 +3882,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2717427692/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE7L0-27-T-0035:7018767380",
@@ -4017,7 +4017,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000438817",
@@ -4485,6 +4485,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "samgov:66f6d2a7bd984472b9e573b3df0e56f7",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "title": "56--PGMB Security Gate",
+  "sol": "140RR027R0010",
+  "closing": "2026-11-09",
+  "posted": "2026-10-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/66f6d2a7bd984472b9e573b3df0e56f7/view"
+ },
+ {
   "key": "samgov:b240a8fc08d548528f9f1352d779d9ad",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
@@ -4528,21 +4543,6 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view"
- },
- {
-  "key": "samgov:f09596ebe7514beda8c1522bd0d664fb",
-  "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
-  "title": "56--PGMB Security Gate",
-  "sol": "140RR027R0010",
-  "closing": "2026-11-09",
-  "posted": "2026-10-20",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view"
  },
  {
   "key": "bidnet:0000435410",
@@ -4767,7 +4767,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204361081/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
@@ -4842,7 +4842,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:2b0011c68733402aace4b0a7d9dd8487",
@@ -4933,6 +4933,36 @@
   "watched": false,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "samgov:5eab430c39444c279a8cc451a662092d",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "30--GEAR, PINION",
+  "sol": "N0010426QFC50",
+  "closing": "2026-11-19",
+  "posted": "2026-10-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/5eab430c39444c279a8cc451a662092d/view"
+ },
+ {
+  "key": "samgov:769e7021c09444ef942325ad392d8628",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "30--GEAR, PINION",
+  "sol": "N0010426QFC50",
+  "closing": "2026-11-19",
+  "posted": "2026-10-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view"
  },
  {
   "key": "samgov:6ab91dd8bf824b2fbfa32476c810d7be",
@@ -5067,7 +5097,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
