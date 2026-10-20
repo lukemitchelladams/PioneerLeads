@@ -123,6 +123,12 @@ def build(now: datetime) -> dict[str, list[dict]]:
     feed.sort(key=lambda r: (r["closing"] or "9999"))
 
     health = load("health.json", {})
+    in_file: dict[str, int] = {}
+    in_file_matches: dict[str, int] = {}
+    for b in scan.get("bids", {}).values():
+        in_file[b.get("source", "")] = in_file.get(b.get("source", ""), 0) + 1
+        if b.get("profiles"):
+            in_file_matches[b.get("source", "")] = in_file_matches.get(b.get("source", ""), 0) + 1
     sources = []
     names = {"bidnet": "BidNet / RMEPS (Colorado)", "bonfire": "Euna / Bonfire (Town of Parker)",
              "samgov": "SAM.gov", "dibbs": "DLA DIBBS (Jones Bearing)"}
@@ -132,7 +138,11 @@ def build(now: datetime) -> dict[str, list[dict]]:
             sources.append({"source": label, "status": "Not run", "detail": "Scanner has not run against this source yet",
                             "open_count": 0, "matches": 0, "last_success": ""})
             continue
-        if not h.get("reachable"):
+        carried = h.get("carried_forward") or (not h.get("count") and in_file.get(s, 0) > 0)
+        if carried:
+            # the scanner could not read this source this run; open_bids.json still holds its last good rows
+            status = "Blind this run (last good data shown)"
+        elif not h.get("reachable"):
             status = "Blocked"
         elif h.get("count"):
             status = "Live" if (h.get("logged_in") or s in ("dibbs",)) else "Live (public, not logged in)"
@@ -140,9 +150,12 @@ def build(now: datetime) -> dict[str, list[dict]]:
             status = "Blind: credentials not set"
         else:
             status = "Reachable, 0 parsed"
+        detail = [h.get("login_note") or "", *(h.get("errors") or [])[:2]]
+        if carried:
+            detail.insert(0, f"{h.get('reach_note') or 'not read this run'}; showing {in_file.get(s, 0)} rows from the last good read")
         sources.append({"source": label, "status": status,
-                        "detail": "; ".join([h.get("login_note") or "", *(h.get("errors") or [])[:2]]).strip("; ")[:240],
-                        "open_count": h.get("count", 0), "matches": h.get("matches", 0),
+                        "detail": "; ".join(x for x in detail if x)[:240],
+                        "open_count": h.get("count") or in_file.get(s, 0), "matches": h.get("matches") or in_file_matches.get(s, 0),
                         "last_success": h.get("last_success") or ""})
     led = load("govtribe_ledger.json", {})
     if led:

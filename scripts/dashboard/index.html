@@ -197,7 +197,7 @@ window.bb = {
   pillClass(v) {
     v = String(v || '');
     if (/^GO$|^Live$|^In hand/.test(v)) return 'ok';
-    if (/EVALUATE|Partial|Unknown|lags|public|0 parsed|Unclear/i.test(v)) return 'warn';
+    if (/EVALUATE|Partial|Unknown|lags|public|0 parsed|Unclear|Blind this run/i.test(v)) return 'warn';
     if (/AT RISK|^None$|Blocked|Blind|Mandatory|not logged/i.test(v)) return 'bad';
     return 'mute';
   },
