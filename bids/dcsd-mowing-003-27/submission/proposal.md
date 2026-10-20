@@ -38,7 +38,7 @@ Groups 2, 5, 7 and 8 in Parker, Castle Rock and Highlands Ranch for the 27-week 
 We understand the District needs every site mowed at 3 inches each week, fields finished by 2:30 PM on school days,
 work that never interferes with students, classes or athletics, monthly native mowing completed by month-end, and
 one clear point of contact who answers for the work. Brown Bison will hold the contract and be accountable for every
-site, every week. Our grounds partner, ⟦ALEX: company name⟧, led by Alex Ditto, performs the field work under Brown
+site, every week. Our grounds partner, YMS Landscaping ⟦ALEX: exact legal name, e.g. LLC⟧, led by Alex Ditto, performs the field work under Brown
 Bison's management with ⟦ALEX: number⟧ crews and its own equipment.
 
 Brown Bison acknowledges Addenda ⟦LUKE: list, e.g. Q&A Document 1 and the price-sheet addendum⟧. Our proposal,
@@ -49,7 +49,7 @@ Persons authorized to present on Brown Bison's behalf:
 | Name | Title | Address | Telephone | Email |
 |---|---|---|---|---|
 | Luke Adams | ⟪Owner⟫, Brown Bison Holdings LLC | 3832 Rabbit Mountain Rd, Broomfield, CO 80020 | (720) 275-1554 | luke@brownbisonco.com |
-| Alex Ditto | ⟦ALEX: title⟧, ⟦ALEX: company⟧ | ⟦ALEX: address⟧ | ⟦ALEX: phone⟧ | ⟦ALEX: email⟧ |
+| Alex Ditto | ⟦ALEX: title⟧, YMS Landscaping | ⟦ALEX: address⟧ | ⟦ALEX: phone⟧ | ⟦ALEX: email⟧ |
 
 Respectfully,
 
@@ -64,7 +64,7 @@ Luke Adams\
 (UEI EV9QPAPM4C47, CAGE 20VU2), facilities-services contractor. Brown Bison holds the contract, schedules and
 coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
 
-**⟦ALEX: company name⟧ (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
+**YMS Landscaping ⟦ALEX: exact legal name, e.g. LLC⟧ (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
 ⟦ALEX: years in business; commercial and public mowing experience; number of employees; licenses, including the
 Colorado Department of Agriculture commercial pesticide applicator license and its holder; equipment fleet⟧.
 
@@ -73,7 +73,7 @@ Colorado Department of Agriculture commercial pesticide applicator license and i
 | Person | Role on this contract | Credentials | Share of contract |
 |---|---|---|---|
 | Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | ⟦LUKE⟧ | ⟪10%⟫ |
-| Alex Ditto, ⟦ALEX: company⟧ | Field operations manager: crews, routes, equipment, chemical applications | ⟦ALEX⟧ | ⟪90%, shared with the crew leads below⟫ |
+| Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, chemical applications | ⟦ALEX⟧ | ⟪90%, shared with the crew leads below⟫ |
 | ⟦ALEX: crew lead 1⟧ | Crew lead | ⟦ALEX⟧ | |
 | ⟦ALEX: crew lead 2⟧ | Crew lead | ⟦ALEX⟧ | |
 
@@ -86,7 +86,7 @@ DCSD Grounds Manager (James Korth)
           |
 Luke Adams, Contract Manager, Brown Bison Holdings LLC  (single point of contact)
           |
-Alex Ditto, Field Operations Manager, ⟦ALEX: company⟧
+Alex Ditto, Field Operations Manager, YMS Landscaping
           |
    +------+------+
    |             |
