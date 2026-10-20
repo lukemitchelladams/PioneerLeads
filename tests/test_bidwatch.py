@@ -320,5 +320,73 @@ check("second scan detects addendum on watched bid", bool(ch), r2["changed"])
 check("second scan: nothing falsely NEW", not r2["new"], list(r2["new"]))
 srv.shutdown()
 
+# ---------------------------------------------------------------- part 3: BidNet confirmation code from the mailbox
+print("mailbox confirmation-code reader (mailcode.py, fake IMAP)")
+import datetime as _dt  # noqa: E402
+import email.utils as _eu  # noqa: E402
+from scripts.bidwatch import mailcode  # noqa: E402
+
+check("extract_code: BidNet sentence", mailcode.extract_code("Your confirmation code for BidNet Direct is: 482910 .") == "482910")
+check("extract_code: html body", mailcode.extract_code("<p>Your confirmation code for BidNet Direct is:</p><b>113355</b>") == "113355")
+check("extract_code: none", mailcode.extract_code("Thanks for registering") is None)
+
+_now = _dt.datetime.now(_dt.timezone.utc)
+
+
+def _raw(code, when):
+    return (f"From: BidNet Direct <noreply@bidnet.com>\r\nTo: luke@brownbisonco.com\r\n"
+            f"Subject: Your BidNet Direct confirmation code\r\nDate: {_eu.format_datetime(when)}\r\n"
+            f"Content-Type: text/plain; charset=utf-8\r\n\r\nLuke Adams, Your confirmation code for BidNet Direct is: {code}\r\n"
+            ).encode()
+
+
+class FakeIMAP:
+    """Stands in for imaplib.IMAP4_SSL: three BidNet code emails, only #8 is newer than this login."""
+    calls = []
+
+    def __init__(self, host):
+        FakeIMAP.calls.append(("connect", host))
+
+    def login(self, user, secret):
+        FakeIMAP.calls.append(("login", user))
+        if secret != "fake-test-token":
+            raise RuntimeError("mailbox refused the login")
+
+    def select(self, box, readonly=False):
+        FakeIMAP.calls.append(("select", box, readonly))
+
+    def search(self, charset, query):
+        FakeIMAP.calls.append(("search", query))
+        return "OK", [b"7 8 9"]
+
+    def fetch(self, num, what):
+        FakeIMAP.calls.append(("fetch", num, what))
+        msgs = {b"7": _raw("111111", _now - _dt.timedelta(hours=5)),     # yesterday's dead code
+                b"8": _raw("654321", _now - _dt.timedelta(seconds=20)),  # this login's code
+                b"9": _raw("777777", _now - _dt.timedelta(minutes=30))}  # an older login's code
+        return "OK", [(b"%s (BODY[] {%d}" % (num, len(msgs[num])), msgs[num]), b")"]
+
+    def logout(self):
+        FakeIMAP.calls.append(("logout",))
+
+
+os.environ[mailcode.ENV_PASS] = "fake-test-token"
+mailcode.IMAP_FACTORY = FakeIMAP
+got = mailcode.fetch_code(_now - _dt.timedelta(seconds=60))
+check("fetch_code picks the code emailed after this login", got == "654321", got)
+check("mailbox opened read-only, bodies peeked", any(c[0] == "select" and c[2] is True for c in FakeIMAP.calls)
+      and all("PEEK" in c[2] for c in FakeIMAP.calls if c[0] == "fetch"), FakeIMAP.calls)
+check("search limited to BidNet sender + subject", any(c[0] == "search" and "noreply@bidnet.com" in c[1]
+                                                        and "confirmation code" in c[1] for c in FakeIMAP.calls))
+check("fetch_code: nothing new -> None", mailcode.fetch_code(_now + _dt.timedelta(minutes=5)) is None)
+os.environ[mailcode.ENV_PASS] = "not-the-token"
+check("poll_code survives a mailbox error and times out to None",
+      mailcode.poll_code(_now, timeout=0, sleep=lambda s: None) is None)
+os.environ[mailcode.ENV_PASS] = "fake-test-token"
+check("bidnet.wait_for_code reads the mailbox when configured",
+      bidnet.wait_for_code(5, since=_now - _dt.timedelta(seconds=60)) == "654321")
+del os.environ[mailcode.ENV_PASS]
+check("wait_for_code without mailbox access times out to None", bidnet.wait_for_code(0) is None)
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

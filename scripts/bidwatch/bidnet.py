@@ -18,10 +18,11 @@ from urllib.parse import urlencode, urljoin
 
 from bs4 import BeautifulSoup
 
+import datetime as dt
 import os
-
 import time
 
+from . import mailcode
 from .common import CODE_FILE, CODE_NEEDED_MARKER, DOWNLOAD_DIR, LoginBlocked, extract_prebid, iso, parse_date
 
 BASE = "https://www.bidnetdirect.com"
@@ -89,6 +90,7 @@ def login(page, user: str, pw: str) -> None:
         raise RuntimeError("BidNet robot check served on the login page; try again later")
     _fill_first(page, LOGIN_USER_SEL, user)
     _fill_first(page, LOGIN_PASS_SEL, pw)
+    started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
     _click_first(page, LOGIN_BTN_SEL)
     page.wait_for_load_state("domcontentloaded")
     page.wait_for_timeout(3000)
@@ -96,7 +98,7 @@ def login(page, user: str, pw: str) -> None:
     if BOT_RX.search(html) and not total_count(html):
         raise LoginBlocked("BidNet robot check right after the login form; try again later")
     if CODE_PROMPT_RX.search(visible_text(html)):
-        code = wait_for_code(float(os.environ.get("BIDNET_CODE_WAIT", "300")))
+        code = wait_for_code(float(os.environ.get("BIDNET_CODE_WAIT", "300")), since=started)
         if not code:
             try:
                 CODE_NEEDED_MARKER.parent.mkdir(parents=True, exist_ok=True)
@@ -124,11 +126,21 @@ def visible_text(html: str) -> str:
     return " ".join(soup.get_text(" ").split())
 
 
-def wait_for_code(timeout: float) -> str | None:
-    """Poll for a code while the browser sits on the prompt (the code is only valid in this session)."""
+def wait_for_code(timeout: float, since: dt.datetime | None = None) -> str | None:
+    """Poll for a code while the browser sits on the prompt (the code is only valid in this session).
+    Sources, in order: BIDNET_CODE env, ~/.brownbison/bidnet_code (set_code.py), and the inbox over IMAP
+    (mailcode.py, when BIDNET_CODE_IMAP_PASS is set) for a code emailed after `since`."""
     deadline = time.time() + max(0.0, timeout)
+    since = since or dt.datetime.now(dt.timezone.utc) - dt.timedelta(minutes=2)
+    next_mail_check = 0.0
     while True:
         code = read_code()
+        if not code and mailcode.configured() and time.time() >= next_mail_check:
+            next_mail_check = time.time() + 10
+            try:
+                code = mailcode.fetch_code(since)
+            except Exception:  # noqa: BLE001 - a mailbox hiccup must not abandon the login window
+                code = None
         if code or time.time() >= deadline:
             return code
         time.sleep(2)
