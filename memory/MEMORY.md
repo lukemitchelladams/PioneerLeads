@@ -374,3 +374,21 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - Luke's question "where is it displayed / how does it find new jobs": REPORT.md + open_bids.json in repo,
   dashboard https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3; full statewide list every scan matched
   against watch_profiles keywords, diffed vs last scan. Still blocked only by credentials not in env vars.
+
+### 2026-10-20 03:00 UTC: SAM.gov live; BidNet new-device code is real; persistent loop
+- Luke gave the SAM.gov API key in chat (02:44 UTC). Stored ONLY in ~/.brownbison/env in this container (mode
+  600, outside the repo); never in git, never printed. First live SAM.gov pull: 38 open matching notices
+  (7 Brown Bison incl. VA Trane BAS 36C25927Q0008 due 10/28 and NPS fire alarms 140PP027B0002 due 11/30;
+  31 Jones Bearing). Hourly WORKER sessions still lack the key until it is in the environment settings.
+- BidNet new-device check CONFIRMED from the inbox (read-only): noreply@bidnet.com, subject "Your BidNet
+  Direct confirmation code", body "Your confirmation code for BidNet Direct is: <6 digits>"; two sent
+  2026-10-19 03:59 and 04:01 UTC. Scanner now stops at that prompt without retrying (health shows
+  "login BLOCKED: ... confirmation code"), and takes the code from ~/.brownbison/bidnet_code (write it with
+  scripts/bidwatch/set_code.py) or BIDNET_CODE; the confirmed-device cookie persists with the saved session,
+  so one code per container. The MAIN session (this one) can read the code from Gmail and complete the login
+  itself; fresh worker sessions have no Gmail.
+- run.py --loop --interval 60 --push: rebase, scan, rebuild dashboard JSON, commit "bidwatch: live scan
+  <UTC>", rebase (-X theirs), push with backoff; heartbeat in bids/_watch/debug/loop.status. Started in this
+  container (see loop.status); the :50 hourly WORKER trigger stays on as the safety net that outlives the
+  container. Two full BidNet scans an hour is within what the WAF tolerated; the robot-check guard stops a
+  scan and keeps prior results if not.

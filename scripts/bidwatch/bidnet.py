@@ -18,7 +18,11 @@ from urllib.parse import urlencode, urljoin
 
 from bs4 import BeautifulSoup
 
-from .common import DOWNLOAD_DIR, extract_prebid, parse_date
+import os
+
+import time
+
+from .common import CODE_FILE, CODE_NEEDED_MARKER, DOWNLOAD_DIR, LoginBlocked, extract_prebid, iso, parse_date
 
 BASE = "https://www.bidnetdirect.com"
 LOGIN_URL = BASE + "/public/authentication/login"
@@ -52,6 +56,20 @@ LOGIN_PASS_SEL = ["#loginBox_j_password", "input[name='j_password']", "input[nam
 LOGIN_BTN_SEL = ["#loginWindowButton", "#loginWindowForm button[type='submit']", "button[type='submit']",
                  "input[type='submit']", "button:has-text('Login')", "button:has-text('Log in')"]
 LOGIN_FORM_SEL = "input[name='j_username']"
+# New-device check (confirmed 2026-10-20 from the inbox): after a password login from a device BidNet has not
+# seen, it emails "Your BidNet Direct confirmation code" (noreply@bidnet.com, 6 digits) and shows a code
+# prompt. EVERY password login issues a NEW code, so the code is only good inside the browser session that
+# triggered it. We therefore stay on the prompt and wait up to BIDNET_CODE_WAIT seconds (default 300) for
+# ~/.brownbison/bidnet_code (scripts/bidwatch/set_code.py) or BIDNET_CODE. If nobody supplies it, we write
+# CODE_NEEDED_MARKER and make no further password logins until it is deleted, so Luke is not emailed a code
+# every cycle. The confirmed-device cookie is saved with the session, so this happens once per container.
+CODE_PROMPT_RX = re.compile(r"confirmation code|verification code|security code|one[- ]time (code|passcode)|"
+                            r"code (we |that was |was )?(sent|emailed)|enter the code", re.I)
+CODE_INPUT_SEL = ["input[autocomplete='one-time-code']", "input[name*='code' i]", "input[id*='code' i]",
+                  "input[name*='token' i]", "input[type='tel']", "form input[type='text']"]
+CODE_BTN_SEL = ["form:has(input[name*='code' i]) button[type='submit']", "button:has-text('Confirm')",
+                "button:has-text('Verify')", "button:has-text('Submit')", "button:has-text('Continue')",
+                "button[type='submit']", "input[type='submit']"]
 
 
 def _home() -> str:
@@ -59,6 +77,11 @@ def _home() -> str:
 
 
 def login(page, user: str, pw: str) -> None:
+    if CODE_NEEDED_MARKER.exists():
+        raise LoginBlocked("waiting for the emailed confirmation code since "
+                           f"{CODE_NEEDED_MARKER.read_text().strip() or '?'}: no new login attempted (each one emails a new "
+                           "code). When ready to supply the code within the wait window, delete ~/.brownbison/bidnet_code_needed")
+    clear_code()  # any code on disk predates this login and is therefore dead
     page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1000)
     html = page.content()
@@ -69,6 +92,61 @@ def login(page, user: str, pw: str) -> None:
     _click_first(page, LOGIN_BTN_SEL)
     page.wait_for_load_state("domcontentloaded")
     page.wait_for_timeout(3000)
+    html = page.content()
+    if BOT_RX.search(html) and not total_count(html):
+        raise LoginBlocked("BidNet robot check right after the login form; try again later")
+    if CODE_PROMPT_RX.search(visible_text(html)):
+        code = wait_for_code(float(os.environ.get("BIDNET_CODE_WAIT", "300")))
+        if not code:
+            try:
+                CODE_NEEDED_MARKER.parent.mkdir(parents=True, exist_ok=True)
+                CODE_NEEDED_MARKER.write_text(iso())
+            except OSError:
+                pass  # still BLOCKED below; never let a filesystem hiccup turn into a retried login
+            raise LoginBlocked("BidNet asked for an emailed confirmation code (new device) and none was supplied in "
+                               f"{os.environ.get('BIDNET_CODE_WAIT', '300')} s. No further logins until "
+                               "~/.brownbison/bidnet_code_needed is deleted; then supply the code from the next "
+                               "'Your BidNet Direct confirmation code' email with scripts/bidwatch/set_code.py while the "
+                               "scanner waits on the prompt")
+        _fill_first(page, CODE_INPUT_SEL, code)
+        _click_first(page, CODE_BTN_SEL)
+        page.wait_for_load_state("domcontentloaded")
+        page.wait_for_timeout(3000)
+        clear_code()
+        if CODE_PROMPT_RX.search(visible_text(page.content())):
+            raise LoginBlocked("BidNet rejected the confirmation code (expired or mistyped); get a fresh one")
+
+
+def visible_text(html: str) -> str:
+    soup = BeautifulSoup(html, "lxml")
+    for t in soup(["script", "style", "noscript"]):
+        t.decompose()
+    return " ".join(soup.get_text(" ").split())
+
+
+def wait_for_code(timeout: float) -> str | None:
+    """Poll for a code while the browser sits on the prompt (the code is only valid in this session)."""
+    deadline = time.time() + max(0.0, timeout)
+    while True:
+        code = read_code()
+        if code or time.time() >= deadline:
+            return code
+        time.sleep(2)
+
+
+def read_code() -> str | None:
+    code = os.environ.get("BIDNET_CODE", "").strip()
+    if not code and CODE_FILE.exists():
+        code = CODE_FILE.read_text().strip()
+    return re.sub(r"\s+", "", code) or None
+
+
+def clear_code() -> None:
+    os.environ.pop("BIDNET_CODE", None)
+    try:
+        CODE_FILE.unlink()
+    except FileNotFoundError:
+        pass
 
 
 def is_logged_in(page) -> bool:

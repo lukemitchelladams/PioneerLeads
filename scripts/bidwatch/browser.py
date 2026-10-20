@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 from typing import Callable
 
-from .common import DEBUG_DIR, SESSION_DIR, iso, slug
+from .common import DEBUG_DIR, SESSION_DIR, LoginBlocked, iso, slug
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 BrownBisonBidWatch/2.0"
 
@@ -93,6 +93,10 @@ class PortalSession:
                     self.save()
                     return True
                 last = "login submitted but logged-in check failed"
+            except LoginBlocked as e:
+                self.debug_dump("login-blocked")
+                self.logged_in, self.login_note = False, f"login BLOCKED: {e}"
+                return False
             except Exception as e:  # noqa: BLE001
                 last = f"{type(e).__name__}: {str(e)[:160]}"
             self.debug_dump(f"login-fail-{i + 1}")

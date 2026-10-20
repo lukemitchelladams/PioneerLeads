@@ -28,6 +28,18 @@ DEBUG_DIR = WATCH_DIR / "debug"  # gitignored: screenshots + raw HTML when a par
 STATE_HOME = Path(os.environ.get("BB_STATE_DIR", Path.home() / ".brownbison"))
 SESSION_DIR = STATE_HOME / "sessions"
 ENV_FILE = STATE_HOME / "env"
+# One-time code for a portal's "confirm this new device" step (BidNet emails one on the first login from a
+# new container). An operator or a session with Gmail access writes the code here; login() uses it once.
+CODE_FILE = STATE_HOME / "bidnet_code"
+# Written when a login stalled on the code prompt and nobody supplied a code in time. While it exists the
+# scanner makes NO further password logins (each one would email a fresh code). Delete it when someone is
+# ready to supply the code within the wait window.
+CODE_NEEDED_MARKER = STATE_HOME / "bidnet_code_needed"
+
+
+class LoginBlocked(RuntimeError):
+    """Login cannot proceed without outside help (emailed confirmation code, robot check). Never retried,
+    so a portal is not hit three times and three code emails are not sent."""
 
 
 def now_utc() -> dt.datetime:

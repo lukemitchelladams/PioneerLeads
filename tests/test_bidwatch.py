@@ -155,6 +155,7 @@ USER, PW = "luke@brownbisonco.com", "s3cret-test-only"
 
 
 KW_HITS = {"n": 0}
+CODES = {"sent": 0, "last": ""}
 
 
 class H(http.server.BaseHTTPRequestHandler):
@@ -168,7 +169,7 @@ class H(http.server.BaseHTTPRequestHandler):
     def _send(self, body, code=200, headers=None, ctype="text/html"):
         self.send_response(code)
         self.send_header("Content-Type", ctype)
-        for k, v in (headers or {}).items():
+        for k, v in (headers.items() if isinstance(headers, dict) else (headers or [])):
             self.send_header(k, v)
         self.end_headers()
         self.wfile.write(body.encode() if isinstance(body, str) else body)
@@ -216,9 +217,24 @@ class H(http.server.BaseHTTPRequestHandler):
         f = parse_qs(self.rfile.read(n).decode())
         if f.get("j_username") == [USER] and f.get("j_password") == [PW]:
             LOGINS["n"] += 1
+            if "device_ok=1" not in (self.headers.get("Cookie") or ""):
+                # like BidNet on a new device: password accepted, now an emailed confirmation code
+                CODES["sent"] += 1
+                CODES["last"] = f"{100000 + CODES['sent'] * 7919:06d}"  # a NEW code every time, like BidNet
+                return self._send("<html><head><title>Fake BidNet Direct</title></head><body><h1>Confirm your device</h1>"
+                                  "<p>Enter the confirmation code we emailed you.</p>"
+                                  "<form method='post' action='/public/authentication/code'><input name='code'>"
+                                  "<button type='submit'>Confirm</button></form></body></html>")
             sid = f"s{LOGINS['n']}"
             SESSIONS.add(sid)
             return self._send("", 302, {"Location": "/colorado", "Set-Cookie": f"sid={sid}; Path=/"})
+        if self.path.startswith("/public/authentication/code"):
+            if f.get("code") == [CODES["last"]]:
+                sid = f"s{LOGINS['n']}"
+                SESSIONS.add(sid)
+                return self._send("", 302, [("Location", "/colorado"), ("Set-Cookie", f"sid={sid}; Path=/"),
+                                            ("Set-Cookie", "device_ok=1; Path=/")])
+            return self._send("<p>Enter the confirmation code we emailed you. That code was wrong.</p>", 401)
         return self._send("bad login", 401)
 
 
@@ -232,15 +248,39 @@ from scripts.bidwatch.browser import Browser, PortalSession  # noqa: E402
 
 b = Browser()
 s1 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
-check("first run logs in", s1.ensure_login() and LOGINS["n"] == 1, s1.login_note)
+os.environ["BIDNET_CODE_WAIT"] = "1"
+check("new device: login waits on the code prompt, then reports BLOCKED, no retry (one code email)",
+      not s1.ensure_login() and "confirmation code" in s1.login_note and LOGINS["n"] == 1 and CODES["sent"] == 1,
+      (s1.login_note, LOGINS, CODES))
+marker = TMP / "state" / "bidnet_code_needed"
+check("marker written: no more password logins until someone can supply a code", marker.exists())
+check("with the marker present, ensure_login does not touch the portal",
+      not s1.ensure_login() and LOGINS["n"] == 1 and CODES["sent"] == 1 and "no new login attempted" in s1.login_note, s1.login_note)
+marker.unlink()
+os.environ["BIDNET_CODE_WAIT"] = "20"
+
+
+def _code_reader():  # what the MAIN session does: see the prompt, read the email, write the one-time file
+    import time as _t
+    while CODES["sent"] < 2:
+        _t.sleep(0.2)
+    _t.sleep(1)
+    (TMP / "state" / "bidnet_code").write_text(CODES["last"] + "\n")
+
+
+threading.Thread(target=_code_reader, daemon=True).start()
+check("code supplied while the scanner waits on the prompt completes the login",
+      s1.ensure_login() and LOGINS["n"] == 2 and CODES["sent"] == 2, (s1.login_note, LOGINS, CODES))
+check("code file is single-use", not (TMP / "state" / "bidnet_code").exists())
 s1.close()
 check("session saved outside repo", (TMP / "state/sessions/bidnet.json").exists())
 s2 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
-check("second run reuses session (no new login)", s2.ensure_login() and LOGINS["n"] == 1, s2.login_note)
+check("second run reuses session (no new login)", s2.ensure_login() and LOGINS["n"] == 2, s2.login_note)
 s2.close()
 SESSIONS.clear()  # server expires every session (timeout)
 s3 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
-check("expired session -> automatic re-login", s3.ensure_login() and LOGINS["n"] == 2, s3.login_note)
+check("expired session -> automatic re-login, device already confirmed (no third code)",
+      s3.ensure_login() and LOGINS["n"] == 3 and CODES["sent"] == 2, (s3.login_note, LOGINS, CODES))
 rows, errs, _ = bidnet.collect_open(s3, ["hvac"])
 check("collect follows pagination", len(rows) == 3, (len(rows), errs))
 check("complete statewide list -> no keyword searches", KW_HITS["n"] == 0, KW_HITS)

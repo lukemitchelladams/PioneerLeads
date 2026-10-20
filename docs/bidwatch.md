@@ -27,6 +27,29 @@ mid-scan, it re-logs in and re-reads. `--loop` keeps doing this forever:
 A failed login or a page that parses to nothing saves a screenshot + HTML to `bids/_watch/debug/`
 (gitignored) so the selectors can be fixed from the real page.
 
+### New-device confirmation code (BidNet)
+BidNet emails "Your BidNet Direct confirmation code" (noreply@bidnet.com, 6 digits) after a password login
+from a device it has not seen (Luke's inbox got two on 2026-10-19), and shows a code prompt. Every password
+login issues a NEW code, so a code is only good inside the browser session that asked for it. The scanner
+therefore stays on the prompt and waits up to `BIDNET_CODE_WAIT` seconds (default 300) for the code:
+`python3 scripts/bidwatch/set_code.py <code or pasted email text>` writes it to `~/.brownbison/bidnet_code`
+(single use; `BIDNET_CODE` env var also works). If nobody supplies it in time, the health table shows
+`login BLOCKED: ... confirmation code`, a screenshot lands in `bids/_watch/debug/`, and
+`~/.brownbison/bidnet_code_needed` is written: while that marker exists the scanner makes NO further
+password logins (each would email another code). Delete the marker when someone can supply the code within
+the window; the confirmed-device cookie is then saved with the session, so this happens at most once per
+container. The MAIN session has read-only Gmail and can do the whole exchange itself; fresh worker
+sessions cannot, so the durable fix is one long-lived container running the loop below.
+
+### Persistent loop with publishing
+    nohup python3 scripts/bidwatch/run.py --loop --interval 60 --push > bids/_watch/debug/loop.log 2>&1 &
+
+`--push` makes every cycle: `git rebase` onto the branch first, scan, rebuild `bids/_watch/dashboard/*.json`,
+commit `bids/_watch/{REPORT.md,open_bids.json,health.json,dibbs_state.json,dashboard/,downloads/}` as
+"bidwatch: live scan <UTC>", rebase again (our freshly generated files win a conflict), push with backoff.
+Heartbeat: `bids/_watch/debug/loop.status` (pid, cycle, last sync/push result, login notes). The loop
+dies with its container; the hourly WORKER scheduled task is the safety net that outlives it.
+
 ## What Luke sets up (once)
 **Cloud (this Claude environment; runs 24/7, no computer needed):**
 1. Session title bar -> environment menu -> Edit -> Network access. Choose the broader access level, or add

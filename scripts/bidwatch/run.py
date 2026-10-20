@@ -22,6 +22,8 @@ Credentials: env vars only (see docs/bidwatch.md). Nothing secret is printed or 
 from __future__ import annotations
 
 import argparse
+import os
+import subprocess
 import sys
 import time
 import traceback
@@ -34,8 +36,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.bidwatch import bidnet, bonfire, samgov  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
-    HEALTH_FILE, OPEN_BIDS_FILE, REPORT_FILE, WATCHLIST_FILE, cred_status, days_until, iso, load_env_file,
-    load_json, load_profiles, match_profiles, save_json,
+    DEBUG_DIR, HEALTH_FILE, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
+    iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
 )
 
 HOSTS = {
@@ -387,6 +389,77 @@ def render(r: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+# ---------------- --push: publish each cycle's results to the repo branch ----------------
+
+PUSH_PATHS = ["bids/_watch/REPORT.md", "bids/_watch/open_bids.json", "bids/_watch/health.json",
+              "bids/_watch/dibbs_state.json", "bids/_watch/dashboard", "bids/_watch/downloads"]
+STATUS_FILE = DEBUG_DIR / "loop.status"  # gitignored heartbeat: pid, last cycle, last push result
+
+
+def _git(*args: str, check: bool = True, timeout: int = 120) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, timeout=timeout, check=check)
+
+
+def _branch() -> str:
+    return _git("rev-parse", "--abbrev-ref", "HEAD").stdout.strip()
+
+
+def git_sync(note: str = "") -> str:
+    """Before a cycle: bring in what the hourly workers pushed. Regenerated files that conflict resolve to
+    upstream (ours are rebuilt right after). Never raises."""
+    try:
+        _git("fetch", "-q", "origin", _branch())
+        _git("rebase", "-q", "-X", "ours", f"origin/{_branch()}")
+        return "synced"
+    except subprocess.CalledProcessError as e:
+        try:
+            _git("rebase", "--abort", check=False)
+        except Exception:  # noqa: BLE001
+            pass
+        return f"sync failed: {(e.stderr or e.stdout)[-200:]}"
+    except Exception as e:  # noqa: BLE001
+        return f"sync failed: {type(e).__name__}"
+
+
+def git_push_results(when: str) -> str:
+    """After a cycle: rebuild dashboard data, commit the generated files, rebase onto upstream keeping OUR
+    freshly generated versions on conflict, push with backoff. Returns a one-line result. Never raises."""
+    try:
+        subprocess.run([sys.executable, str(REPO / "scripts/build_dashboard_data.py")], cwd=REPO,
+                       capture_output=True, text=True, timeout=300)
+        _git("add", "-A", "--", *PUSH_PATHS)
+        if _git("diff", "--cached", "--quiet", check=False).returncode == 0:
+            return "nothing new to push"
+        trailer = os.environ.get("BIDWATCH_COMMIT_TRAILER", "Co-Authored-By: Claude <noreply@anthropic.com>").replace("\\n", "\n")
+        _git("commit", "-q", "-m", f"bidwatch: live scan {when}\n\n{trailer}")
+        br = _branch()
+        last = ""
+        for i in range(4):
+            try:
+                _git("fetch", "-q", "origin", br)
+                # rebase: "theirs" = the commit being replayed = our regenerated files
+                _git("rebase", "-q", "-X", "theirs", f"origin/{br}")
+                _git("push", "-q", "origin", br)
+                return f"pushed {_git('rev-parse', '--short', 'HEAD').stdout.strip()}"
+            except subprocess.CalledProcessError as e:
+                last = (e.stderr or e.stdout or "")[-200:]
+                _git("rebase", "--abort", check=False)
+                time.sleep(2 ** (i + 1))
+        return f"push FAILED after 4 tries: {last}"
+    except Exception as e:  # noqa: BLE001
+        return f"push FAILED: {type(e).__name__}: {str(e)[:150]}"
+
+
+def _heartbeat(**kw) -> None:
+    try:
+        DEBUG_DIR.mkdir(parents=True, exist_ok=True)
+        cur = load_json(STATUS_FILE, {})
+        cur.update(kw, pid=os.getpid(), updated_at=iso())
+        save_json(STATUS_FILE, cur)
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--loop", action="store_true")
@@ -394,6 +467,8 @@ def main() -> int:
     ap.add_argument("--sources", default=",".join(ALL_SOURCES))
     ap.add_argument("--health", action="store_true")
     ap.add_argument("--no-detail", action="store_true")
+    ap.add_argument("--push", action="store_true",
+                    help="after each scan: rebuild dashboard data, commit the generated files, rebase, push")
     a = ap.parse_args()
     sources = [s for s in a.sources.split(",") if s in ALL_SOURCES]
     if a.health:
@@ -401,14 +476,23 @@ def main() -> int:
         for s, v in health_check(sources).items():
             print(f"{s:8} reachable={v['reachable']} ({v['reach_note']}) creds={v['creds']}")
         return 0
+    cycle = 0
     while True:
+        cycle += 1
+        started = iso()
+        sync = git_sync() if a.push else "no sync (--push not set)"
         try:
             r = scan(sources, enrich_details=not a.no_detail)
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
             ok = any(v["count"] for v in r["health"].values())
+            logins = {s: v.get("login_note") for s, v in r["health"].items()}
         except Exception:  # noqa: BLE001 - never let the loop die
             traceback.print_exc()
-            ok = False
+            ok, logins = False, {}
+        push = git_push_results(started) if a.push else "not pushed (--push not set)"
+        print(f"[{iso()}] cycle {cycle}: ok={ok} sync={sync} push={push} logins={logins}", flush=True)
+        _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
+                   next_at=iso() if not a.loop else None, interval_min=a.interval)
         if not a.loop:
             return 0 if ok else 2
         time.sleep(max(5, a.interval) * 60)
