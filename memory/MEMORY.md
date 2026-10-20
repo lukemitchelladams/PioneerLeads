@@ -569,3 +569,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Luke's flow: Rich approves no-markup copy -> add 10% -> submit. Fall visit = spring (Luke), Town Hall fall
   $1,057.97 computed. RTD: incumbent UFS 121DH027 $231K-$259K/yr (RTD Feb-2026 report) vs LM $1.905M yr1 -> 7x.
   15:36 UTC scan clean (BidNet logged in attempt 1). New mandatory walk to decide: DPS fire alarm 10/27 10:00.
+- 2026-10-20 10:03 MT (MAIN): Parker rough-draft pricing EMAILED to Rich (big-type PDF, verified) and filter question EMAILED to Charles Ellis cellis@parkeronline.org, both on Luke's explicit instruction. Watch inbox for both replies. Rich approval due Wed noon.

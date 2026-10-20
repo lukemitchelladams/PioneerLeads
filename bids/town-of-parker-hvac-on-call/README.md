@@ -102,3 +102,13 @@ Luke's CRM is also building this proposal (brief 10/19); coordinate so only one 
   (42 of 46 assets sized from AFF's lists; RC RTU 6, RC PDU 1/2 and TH RTU 7 still unknown).
 - Build: `submission/build_price_workbook.py` fills the Town's own workbook from `private/bid_inputs.json` (Rich's
   numbers + 10%) and lists every blank; `submission/6.1.2-supplier-questions-response.md` is the Q1-Q10 draft.
+
+## 2026-10-20 10:03 MT: sent (Luke's instruction)
+- To Rich (CARROLL14@msn.com, cc dawn@aircomfortyork.com) from luke@brownbisonco.com, "Town of Parker HVAC - rough
+  draft pricing": short note in 20px type + one big-type PDF (private/Rough Draft Pricing - Town of Parker HVAC.pdf):
+  visit prices without filters, filters at cost + 15%, his rates and terms, what we still need, filter sizes by unit.
+  Asked for his answer by Wed 10/21 noon. Gave him the Town contact to call about filters. Attachment verified
+  byte-identical after sending (sha256).
+- To the Town (Charles Ellis, cellis@parkeronline.org, the contact on the EUNA posting): filter question (are filters
+  in the visit prices; how many changes; filter list; or a separate line on Labor & Charges). Noted that questions
+  closed 10/16 and that we will state our assumption if the Town prefers not to answer.
