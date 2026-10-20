@@ -22,6 +22,7 @@ Credentials: env vars only (see docs/bidwatch.md). Nothing secret is printed or 
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import subprocess
 import sys
@@ -486,6 +487,33 @@ def git_push_results(when: str) -> str:
         return f"push FAILED: {type(e).__name__}: {str(e)[:150]}"
 
 
+def ping(name: str, suffix: str = "", note: str = "") -> None:
+    """Dead-man-switch ping (healthchecks.io style): env HC_PING_<NAME> holds the check URL. suffix "" = success,
+    "/start", "/fail". Silent no-op when not configured; never raises."""
+    url = os.environ.get(f"HC_PING_{name.upper()}")
+    if not url:
+        return
+    try:
+        req = urllib.request.Request(url.rstrip("/") + suffix, data=note[:9000].encode() or None,
+                                     headers={"User-Agent": "BrownBisonBidWatch/2.0"})
+        urllib.request.urlopen(req, timeout=10).read()
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def origin_health_age_min() -> float | None:
+    """Minutes since the scan whose health.json is on origin (used by a failover host to stay idle while the
+    primary is healthy)."""
+    try:
+        _git("fetch", "-q", "origin", _branch())
+        raw = _git("show", f"origin/{_branch()}:bids/_watch/health.json").stdout
+        import datetime as _dt
+        t = _dt.datetime.fromisoformat(json.loads(raw)["checked_at"])
+        return (_dt.datetime.now(_dt.timezone.utc) - t).total_seconds() / 60
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def _heartbeat(**kw) -> None:
     try:
         DEBUG_DIR.mkdir(parents=True, exist_ok=True)
@@ -505,6 +533,8 @@ def main() -> int:
     ap.add_argument("--no-detail", action="store_true")
     ap.add_argument("--push", action="store_true",
                     help="after each scan: rebuild dashboard data, commit the generated files, rebase, push")
+    ap.add_argument("--only-if-stale", type=int, default=0, metavar="MIN",
+                    help="failover mode: do nothing unless origin's health.json is older than MIN minutes")
     ap.add_argument("--start-in", type=int, default=0,
                     help="minutes to wait before the first scan (space a restarted loop away from the hourly worker)")
     a = ap.parse_args()
@@ -518,6 +548,12 @@ def main() -> int:
         sources.remove("dibbs")
         print("DIBBS skipped: cloud/proxy access is prohibited by the DIBBS user agreement (FAQ #45); "
               "set BIDWATCH_ALLOW_DIBBS=1 only on Luke's own computer", flush=True)
+    if a.only_if_stale:
+        age = origin_health_age_min()
+        if age is not None and age < a.only_if_stale:
+            print(f"[{iso()}] primary is healthy (last scan {age:.0f} min ago < {a.only_if_stale}); failover idle", flush=True)
+            return 0
+        print(f"[{iso()}] last scan {'unknown' if age is None else f'{age:.0f} min'} ago: failover scanning", flush=True)
     if a.health:
         load_env_file()
         for s, v in health_check(sources).items():
@@ -540,6 +576,7 @@ def main() -> int:
         cycle += 1
         started = iso()
         sync = git_sync() if a.push else "no sync (--push not set)"
+        ping("scan", "/start")
         try:
             r = scan(sources, enrich_details=not a.no_detail)
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
@@ -554,6 +591,11 @@ def main() -> int:
             ok, logins, degraded = False, {}, ["scan crashed"]
         push = git_push_results(started) if a.push else "not pushed (--push not set)"
         print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} sync={sync} push={push} logins={logins}", flush=True)
+        summary = f"ok={ok} degraded={degraded} push={push} logins={logins}"
+        ping("scan", "" if ok and not degraded and not str(push).startswith("push FAILED") else "/fail", summary)
+        for src in ("bidnet", "samgov", "bonfire", "dibbs"):
+            if src in sources and ok and src not in degraded:
+                ping(src, "", summary)
         _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
                    next_at=iso() if not a.loop else None, interval_min=a.interval)
         if not a.loop:

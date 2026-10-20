@@ -17,3 +17,6 @@ bids/_watch/raw-*.html
 # bidwatch: debug dumps (may contain page HTML) and nothing session-related ever in repo
 bids/_watch/debug/
 bids/_watch/samgov_budget.json
+
+# Actions failover: encrypted BidNet session restored from the cache, never committed
+state.enc

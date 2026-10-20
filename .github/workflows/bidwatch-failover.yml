@@ -1,0 +1,88 @@
+# Failover scanner: idle unless the primary (VPS) has not pushed health.json for 80+ minutes.
+# DORMANT until the repo variable BIDWATCH_FAILOVER is set to "on" (Settings -> Secrets and variables -> Actions ->
+# Variables) AND the repo is PRIVATE (run logs and caches of a public repo are public).
+# Secrets: BIDNET_USER, BIDNET_PASS, SAM_API_KEY, STATE_PASSPHRASE (encrypts the saved BidNet session in the cache),
+# optional BIDNET_CODE_IMAP_PASS (Google app password, so a login from a new runner can read BidNet's emailed code).
+# Optional variable: HC_PING_SCAN (healthchecks.io URL).
+name: bidwatch-failover
+on:
+  schedule:
+    - cron: "15 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: bidwatch
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  failover:
+    if: vars.BIDWATCH_FAILOVER == 'on'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/zealous-cerf-el4iek
+          fetch-depth: 1
+      # cheap gate first: an idle hour costs one billed runner minute, not a browser install
+      - name: Is the primary stale?
+        id: stale
+        run: |
+          age=$(python3 -c 'import json,datetime as d; t=d.datetime.fromisoformat(json.load(open("bids/_watch/health.json"))["checked_at"]); print(int((d.datetime.now(d.timezone.utc)-t).total_seconds()//60))' 2>/dev/null || echo 9999)
+          echo "minutes since the last pushed scan: $age"
+          if [ "$age" -ge 80 ]; then echo "run=yes" >> "$GITHUB_OUTPUT"; else echo "run=no" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-python@v5
+        if: steps.stale.outputs.run == 'yes'
+        with:
+          python-version: "3.12"
+      - name: Install
+        if: steps.stale.outputs.run == 'yes'
+        run: |
+          git fetch -q --unshallow origin claude/zealous-cerf-el4iek || true
+          pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Restore encrypted BidNet session
+        if: steps.stale.outputs.run == 'yes'
+        uses: actions/cache/restore@v4
+        with:
+          path: state.enc
+          key: bidwatch-session-${{ github.run_id }}
+          restore-keys: bidwatch-session-
+      - name: Decrypt session
+        if: steps.stale.outputs.run == 'yes'
+        env:
+          STATE_PASSPHRASE: ${{ secrets.STATE_PASSPHRASE }}
+        run: |
+          mkdir -p -m 0700 ~/.brownbison/sessions
+          if [ -f state.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:STATE_PASSPHRASE \
+              -in state.enc -out ~/.brownbison/sessions/bidnet.json || rm -f ~/.brownbison/sessions/bidnet.json
+          fi
+      - name: Scan (run.py re-checks staleness)
+        if: steps.stale.outputs.run == 'yes'
+        env:
+          BIDNET_USER: ${{ secrets.BIDNET_USER }}
+          BIDNET_PASS: ${{ secrets.BIDNET_PASS }}
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+          BIDNET_CODE_IMAP_PASS: ${{ secrets.BIDNET_CODE_IMAP_PASS }}
+          BIDWATCH_HOST: github-actions-failover
+          HC_PING_SCAN: ${{ vars.HC_PING_SCAN }}
+        run: |
+          git config user.name "Brown Bison bidwatch (Actions failover)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rc=0; python scripts/bidwatch/run.py --push --only-if-stale 80 || rc=$?
+          echo "scan exit $rc (0 = clean or idle, 3 = degraded but pushed)"
+          [ "$rc" -eq 0 ] || [ "$rc" -eq 3 ]
+      - name: Encrypt session
+        if: always() && steps.stale.outputs.run == 'yes'
+        env:
+          STATE_PASSPHRASE: ${{ secrets.STATE_PASSPHRASE }}
+        run: |
+          if [ -s ~/.brownbison/sessions/bidnet.json ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -pass env:STATE_PASSPHRASE \
+              -in ~/.brownbison/sessions/bidnet.json -out state.enc
+          fi
+      - uses: actions/cache/save@v4
+        if: always() && steps.stale.outputs.run == 'yes'
+        with:
+          path: state.enc
+          key: bidwatch-session-${{ github.run_id }}

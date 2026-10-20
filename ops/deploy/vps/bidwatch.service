@@ -1,0 +1,28 @@
+# /etc/systemd/system/bidwatch.service  (oneshot; started by bidwatch.timer)
+[Unit]
+Description=Brown Bison bid scanner (BidNet logged in, SAM.gov, Parker; DIBBS only if allowed)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=bidwatch
+Group=bidwatch
+WorkingDirectory=/opt/bidwatch/repo
+# Secrets: one file each in /etc/brownbison/creds (root:root 0600), handed to the service only.
+LoadCredential=BIDNET_USER:/etc/brownbison/creds/BIDNET_USER
+LoadCredential=BIDNET_PASS:/etc/brownbison/creds/BIDNET_PASS
+LoadCredential=SAM_API_KEY:/etc/brownbison/creds/SAM_API_KEY
+# optional: Google app password so the scanner reads BidNet's emailed login code itself (empty file = off)
+LoadCredential=BIDNET_CODE_IMAP_PASS:/etc/brownbison/creds/BIDNET_CODE_IMAP_PASS
+EnvironmentFile=-/etc/brownbison/bidwatch.env
+Environment=BIDWATCH_HOST=vps-primary
+Environment=PLAYWRIGHT_BROWSERS_PATH=/opt/bidwatch/pw-browsers
+ExecStart=/opt/bidwatch/run-scan.sh
+TimeoutStartSec=40min
+# 3 = degraded run (one source blind); healthchecks.io alerts on it, systemd should not mark the unit failed
+SuccessExitStatus=3
+Nice=5
+
+[Install]
+WantedBy=multi-user.target

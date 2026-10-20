@@ -440,5 +440,112 @@ check("bidnet.wait_for_code reads the mailbox when configured",
 del os.environ[mailcode.ENV_PASS]
 check("wait_for_code without mailbox access times out to None", bidnet.wait_for_code(0) is None)
 
+# ---------------------------------------------------------------- part 4: dead-man pings + failover idle check
+print("health pings (healthchecks.io style) and the failover's stay-idle check")
+HITS = []
+
+
+class _PingHandler(http.server.BaseHTTPRequestHandler):
+    def _record(self):
+        n = int(self.headers.get("Content-Length") or 0)
+        HITS.append((self.command, self.path, self.rfile.read(n).decode() if n else ""))
+        self.send_response(200)
+        self.end_headers()
+        self.wfile.write(b"OK")
+
+    do_GET = do_POST = _record
+
+    def log_message(self, *a):
+        pass
+
+
+_ps = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _PingHandler)
+threading.Thread(target=_ps.serve_forever, daemon=True).start()
+_mon = f"http://127.0.0.1:{_ps.server_address[1]}"
+for _k in [k for k in os.environ if k.startswith("HC_PING_")]:
+    del os.environ[_k]
+run.ping("scan", "/start")
+check("ping without HC_PING_SCAN is a silent no-op", HITS == [], HITS)
+os.environ["HC_PING_SCAN"] = _mon + "/uuid-1/"
+run.ping("scan", "/start")
+run.ping("scan", "", "ok=True degraded=[]")
+run.ping("scan", "/fail", "ok=False")
+check("ping hits /start, the check URL, /fail", [h[1] for h in HITS] == ["/uuid-1/start", "/uuid-1", "/uuid-1/fail"], HITS)
+check("success ping carries the run summary as its body", HITS[1][0] == "POST" and "degraded=[]" in HITS[1][2], HITS)
+os.environ["HC_PING_SCAN"] = "http://127.0.0.1:9/nobody-listens"
+_t0 = time.time()
+run.ping("scan", "/fail", "x")
+check("ping to a dead monitor never raises or stalls the scan", time.time() - _t0 < 11)
+del os.environ["HC_PING_SCAN"]
+
+import datetime as _dtm  # noqa: E402
+
+
+class _Proc:
+    def __init__(self, out=""):
+        self.stdout = out
+
+
+class _ScanCalled(BaseException):
+    """Escapes main()'s 'except Exception' so the test sees that a scan started."""
+
+
+def _git_with_health(minutes_ago):
+    def fake(*args, **kw):
+        GIT_CALLS.append(args)
+        if args[0] == "show":
+            if minutes_ago is None:
+                raise RuntimeError("fatal: path not in origin")
+            return _Proc(json.dumps({"checked_at": common.iso(common.now_utc() - _dtm.timedelta(minutes=minutes_ago))}))
+        return _Proc()
+    return fake
+
+
+def _start_scan(*a, **k):
+    raise _ScanCalled()
+
+
+GIT_CALLS = []
+_saved = (run._git, run._branch, run.scan, run._heartbeat, sys.argv)
+run._branch = lambda: "test-branch"
+run._heartbeat = lambda **kw: None
+run.scan = _start_scan
+run._git = _git_with_health(25)
+_age = run.origin_health_age_min()
+check("failover reads the primary's last scan time from origin/<branch>:health.json",
+      _age is not None and 24 < _age < 26 and ("show", "origin/test-branch:bids/_watch/health.json") in GIT_CALLS,
+      (_age, GIT_CALLS))
+
+
+def _main_rc(argv):
+    sys.argv = ["run.py"] + argv
+    try:
+        return run.main(), False
+    except _ScanCalled:
+        return None, True
+
+
+check("failover stays idle while the primary scanned < 80 min ago",
+      _main_rc(["--only-if-stale", "80", "--sources", "samgov"]) == (0, False))
+run._git = _git_with_health(200)
+check("failover scans when the primary's last scan is > 80 min old",
+      _main_rc(["--only-if-stale", "80", "--sources", "samgov"]) == (None, True))
+run._git = _git_with_health(None)
+check("failover scans when the primary's health.json cannot be read",
+      _main_rc(["--only-if-stale", "80", "--sources", "samgov"]) == (None, True))
+
+HITS.clear()
+os.environ.update({"HC_PING_SCAN": _mon + "/scan", "HC_PING_SAMGOV": _mon + "/samgov", "HC_PING_BONFIRE": _mon + "/bonfire"})
+run.scan = lambda sources, enrich_details=True: {"health": {
+    "samgov": {"count": 0, "reachable": False, "carried_forward": True},
+    "bonfire": {"count": 5, "reachable": True}}}
+_rc, _ = _main_rc(["--sources", "samgov,bonfire"])
+check("degraded scan exits 3, pings /fail; the healthy source still pings, the blind one does not",
+      _rc == 3 and [h[1] for h in HITS] == ["/scan/start", "/scan/fail", "/bonfire"], (_rc, HITS))
+for _k in ("HC_PING_SCAN", "HC_PING_SAMGOV", "HC_PING_BONFIRE"):
+    del os.environ[_k]
+run._git, run._branch, run.scan, run._heartbeat, sys.argv = _saved
+_ps.shutdown()
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

@@ -1,0 +1,12 @@
+# /etc/systemd/system/bidwatch.timer: hourly at :35 (+0-4 min jitter); Persistent=true runs a missed scan
+# right after a reboot or outage. A oneshot service never overlaps itself, and run.py also holds a lock.
+[Unit]
+Description=Hourly Brown Bison bid scan
+
+[Timer]
+OnCalendar=*-*-* *:35:00
+RandomizedDelaySec=240
+Persistent=true
+
+[Install]
+WantedBy=timers.target
