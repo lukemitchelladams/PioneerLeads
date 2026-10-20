@@ -392,3 +392,23 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   container (see loop.status); the :50 hourly WORKER trigger stays on as the safety net that outlives the
   container. Two full BidNet scans an hour is within what the WAF tolerated; the robot-check guard stops a
   scan and keeps prior results if not.
+
+## 2026-10-19 21:05 MT — scanner architecture, as built (session roles renamed by Luke)
+- Sessions: "MAIN — Brown Bison HQ (Luke talks here)" = session_019uSEKHU1Qyo6YGinn8hySB in the pioneer full-network env
+  (runs `run.py --loop --interval 60 --push`, PID 13686, log bids/_watch/debug/loop.log, heartbeat loop.status; each cycle
+  rebases, scans, rebuilds dashboard JSON, commits "bidwatch: live scan <UTC>", pushes). THIS session = "WORKER — Brown Bison
+  hourly routine" (GovTribe review, inbox, dashboard upload, triage at :21). trig_014jsVKh8JXD8hBPctBHbDu4 = "WORKER — hourly
+  LIVE portal scan" at :50 (fresh container; safety net that survives the HQ container).
+- BidNet login (real form, verified by HQ 2026-10-20): form#loginWindowForm on every public page; input#loginBox_j_username,
+  input#loginBox_j_password, hidden _csrf, button#loginWindowButton → POST /public/authentication/login. is_logged_in =
+  BidNet page title + no j_username input (old version matched "my account" on logged-out pages → never true).
+- **BidNet sends an emailed 6-digit confirmation code on EVERY password login from a new device** (noreply@bidnet.com,
+  "Your BidNet Direct confirmation code"). Code valid only for the browser session that triggered it. Scanner waits
+  BIDNET_CODE_WAIT s (300) for ~/.brownbison/bidnet_code (scripts/bidwatch/set_code.py) or BIDNET_CODE; on timeout writes
+  ~/.brownbison/bidnet_code_needed and stops password logins (no email spam) until that marker is deleted; health shows
+  "login BLOCKED". Confirmed-device cookie persists in storage_state → one code per container. Real login still UNTESTED:
+  no BIDNET creds in any environment. Luke must add BIDNET_USER/PASS, BONFIRE_USER/PASS, SAM_API_KEY to the pioneer env settings.
+- SAM.gov live in the HQ container only (key in ~/.brownbison/env there; 38 matches: 7 Brown Bison, 31 Jones Bearing).
+- BidNet WAF: ~3 full scans in 15 min → robot check; scanner stops and keeps prior results. Cadence: loop 60 min + :50 trigger.
+  curl (non-browser) hits the WAF immediately; keep every BidNet request inside Playwright.
+- Bonfire/OpenGov opportunity pages: Cloudflare bot challenge to cloud IPs (list JSON works; details don't).
