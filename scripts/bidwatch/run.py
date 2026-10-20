@@ -125,6 +125,9 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         errs += errs2
                     h["errors"] += errs
                     h["site_totals"] = {k: v for k, v in totals.items() if k.startswith("statewide")}
+                    h["complete"] = bool(totals.get("_complete"))
+                    if totals.get("_bot_check"):
+                        h["login_note"] = (h["login_note"] + "; " if h["login_note"] else "") + "ROBOT CHECK (rate-limited)"
                     for r in rows.values():
                         found[key(r)] = r
                     h["count"] = len(rows)
@@ -191,7 +194,15 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     for s in sources:
         health[s]["matches"] = sum(1 for b in found.values() if b["source"] == s and b["profiles"])
 
-    scanned_sources = {s for s in sources if health[s]["count"] > 0}
+    # A source whose list came back incomplete (BidNet robot check, short statewide list) must not make
+    # bids look closed: carry its previous open bids forward, flagged, and skip closed-detection for it.
+    incomplete = {s for s in sources if health[s].get("complete") is False}
+    for k, v in prev.items():
+        if v.get("source") in incomplete and k not in found and (days_until(v.get("closing")) or 0) >= 0:
+            found[k] = {**v, "carried_forward": True}
+    for s in incomplete:
+        health[s]["errors"].append(f"{s} list incomplete this scan: previous open bids carried forward, none marked closed")
+    scanned_sources = {s for s in sources if health[s]["count"] > 0 and s not in incomplete}
     new = {k: v for k, v in found.items() if k not in prev and v["profiles"]}
     changed = {}
     for k, v in found.items():

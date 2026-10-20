@@ -115,6 +115,12 @@ check("real bidnet list: next page link", nxt == bidnet.BASE + "/colorado/solici
 check("real bidnet list: site total 400", bidnet.total_count((FX / "bidnet_open_bids_co.html").read_text()) == 400)
 check("bidnet zero-result page = 0, not a parse failure",
       bidnet.total_count("<p>We can't find any current bids with your keywords. Get notified</p>") == 0)
+check("bidnet robot-check page recognised", bool(bidnet.BOT_RX.search((FX / "bidnet_robot_check.html").read_text()))
+      and not bidnet.parse_listing((FX / "bidnet_robot_check.html").read_text())[0])
+_hl = ("<table><tr class='mets-table-row'><td><a class='solicitation-link' href='/colorado/solicitations/open-bids/x/0000438328'>"
+       "<span class='iris-highlight'>On</span>-<span class='iris-highlight'>Call</span> Commercial Plumbing Services</a></td></tr></table>")
+check("bidnet highlighted title not split", bidnet.parse_listing(_hl)[0][0]["title"] == "On-Call Commercial Plumbing Services",
+      bidnet.parse_listing(_hl)[0])
 check("bidnet page_url keeps query", bidnet.page_url(bidnet.CO_OPEN + "?keywords=hvac", 2)
       == bidnet.CO_OPEN + "/page2?keywords=hvac")
 d = bidnet.parse_detail((FX / "bidnet_detail_littleton_2126.html").read_text())

@@ -30,6 +30,9 @@ CO_TABS = ["BUYER", "AGGREGATE"]
 CREDS = ("BIDNET_USER", "BIDNET_PASS")
 MAX_PAGES = 40
 REGION_STATE = {"colorado": "CO", "wyoming": "WY"}
+# After a few full scans in a short time BidNet answers with a JavaScript robot check instead of the list
+# (seen 2026-10-20 on the 3rd scan in ~15 min). We stop and report it; we do not try to get around it.
+BOT_RX = re.compile(r"verify that you.re not a robot|JavaScript is disabled", re.I)
 LOCKED_RX = re.compile(r"registered members only|log ?in to (view|download)|register to (view|download)", re.I)
 
 SOL_HREF = re.compile(r"/solicitations/[^?#]*?/(\d{5,})(?:[/?#]|$)")
@@ -92,7 +95,10 @@ def parse_listing(html: str, base_url: str = BASE) -> tuple[list[dict], str | No
             continue
         seen.add(m.group(1))
         region = _txt(tr.select_one(".sol-region-item"))
-        rows.append({"id": m.group(1), "title": _txt(a), "url": urljoin(base_url, a["href"]),
+        # keyword-search pages wrap hits in <span class="iris-highlight">; joining with " " would turn
+        # "On-<span>Call</span>" into "On - Call", so join without a separator
+        title = " ".join(a.get_text().split())
+        rows.append({"id": m.group(1), "title": title, "url": urljoin(base_url, a["href"]),
                      "agency": "", "region": region, "state": REGION_STATE.get(region.lower()),
                      "closing": parse_date(_txt(tr.select_one(".sol-closing-date .date-value"))),
                      "published": parse_date(_txt(tr.select_one(".sol-publication-date .date-value"))),
@@ -220,6 +226,11 @@ def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict,
         except Exception as e:  # noqa: BLE001
             errors.append(f"BidNet list {url}: {type(e).__name__}: {str(e)[:150]}")
             return
+        if not rows and BOT_RX.search(html) and not total_count(html):
+            totals["_bot_check"] = True
+            session.debug_dump("bot-check")
+            errors.append(f"BidNet robot check (rate limit) on {url}: scan stopped; previous BidNet results kept")
+            return
         if n == 1:
             totals[name] = total_count(html)
             if not rows and totals[name] != 0:
@@ -240,12 +251,18 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
     Returns ({id: row}, errors, {list name: count the site reports})."""
     out, errors, totals = {}, [], {}
     for t in CO_TABS:
-        _walk(session, f"statewide {t}", f"{CO_OPEN}?{urlencode({'selectedContent': t})}", out, errors, totals, max_pages)
-    expected = sum(v for k, v in totals.items() if v)
+        if not totals.get("_bot_check"):
+            _walk(session, f"statewide {t}", f"{CO_OPEN}?{urlencode({'selectedContent': t})}", out, errors, totals, max_pages)
+    expected = sum(v for k, v in totals.items() if k.startswith("statewide") and v)
+    totals["_complete"] = bool(expected) and len(out) >= expected and not totals.get("_bot_check")
+    if totals.get("_bot_check"):
+        return out, errors, totals
     if force_keywords or not expected or len(out) < expected:
         if not force_keywords:
             errors.append(f"BidNet statewide list short ({len(out)} of {expected or '?'}); ran keyword searches")
         for k in keywords:
+            if totals.get("_bot_check"):
+                break
             _walk(session, f"kw {k}", f"{CO_OPEN}?{urlencode({'keywords': k})}", out, errors, totals, max_pages)
     return out, errors, totals
 
