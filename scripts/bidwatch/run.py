@@ -101,6 +101,13 @@ class _WatchSet:
         return self.entry(b) is not None
 
 
+def _is_open(b: dict) -> bool:
+    """BidNet's AGGREGATE tab keeps some long-closed bids listed (a 2021 Pagosa Ranger District notice showed up
+    as NEW on 2026-10-20): a past closing date is not open. No closing date counts as open."""
+    d = days_until(b.get("closing"))
+    return d is None or d >= 0
+
+
 def key(b: dict) -> str:
     return f"{b['source']}:{b['id']}"
 
@@ -245,7 +252,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         if v.get("source") not in sources and k not in found and (days_until(v.get("closing")) or 0) >= 0:
             found[k] = {**v, "carried_forward": True}
     scanned_sources = {s for s in sources if health[s]["count"] > 0 and s not in incomplete}
-    new = {k: v for k, v in found.items() if k not in prev and v["profiles"]}
+    new = {k: v for k, v in found.items() if k not in prev and v["profiles"] and _is_open(v)}
     changed = {}
     for k, v in found.items():
         if k in prev:
@@ -484,9 +491,8 @@ def render(r: dict) -> str:
     if upcoming:
         lines += ["", "## UPCOMING (presolicitations, sources sought, special notices)", "", HDR]
         lines += [_row(b) for b in sorted(upcoming, key=lambda x: x.get("closing") or "9")]
-    # BidNet's AGGREGATE tab occasionally keeps long-closed bids listed; a past closing date is not open
     open_m = [b for b in r["found"].values() if b.get("profiles") and not b.get("upcoming") and b["source"] != "dibbs"
-              and (days_until(b.get("closing")) is None or days_until(b.get("closing")) >= 0)]
+              and _is_open(b)]
     lines += ["", f"## All open matching bids, excluding DIBBS parts RFQs ({len(open_m)})", "", HDR]
     lines += [_row(b) for b in sorted(open_m, key=lambda x: x.get("closing") or "9")]
     dib = sorted((b for b in r["found"].values() if b["source"] == "dibbs"),

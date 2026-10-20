@@ -80,7 +80,8 @@
    "match": "003-27|mowing services",
    "govtribe_ids": [
     "6abfa513de90cc3d3c036716"
-   ]
+   ],
+   "folder": "bids/dcsd-mowing-003-27"
   },
   {
    "name": "Poudre SD 27-702-002 Livermore snow (CRM-tracked)",
@@ -106,7 +107,7 @@
   {
    "name": "Douglas County 036-26 Janitorial (CRM-tracked)",
    "source": "bidnet",
-   "match": "036-26|janitorial"
+   "match": "036-26|janitorial services for douglas county"
   },
   {
    "name": "CMC 1178-26P Custodial Breckenridge (CRM-tracked)",
@@ -240,7 +241,7 @@
    "source": "bidnet",
    "id": "0000437804",
    "match": "003-27",
-   "folder": null,
+   "folder": "bids/dcsd-mowing-003-27",
    "govtribe_ids": []
   },
   {

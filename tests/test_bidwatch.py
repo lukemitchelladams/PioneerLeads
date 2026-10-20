@@ -376,6 +376,8 @@ check("scan sees 3 open bids", r1["health"]["bidnet"]["count"] == 3, r1["health"
 check("scan matches HVAC + plumbing, excludes paving", r1["health"]["bidnet"]["matches"] == 2, r1["health"]["bidnet"]["matches"])
 check("mandatory walk extracted", any((x.get("prebid") or {}).get("mandatory") for x in r1["found"].values()))
 check("watched bid flagged", any(x.get("watched") for x in r1["found"].values()))
+check("a long-closed bid that BidNet still lists is not open (never reported as NEW)",
+      not run._is_open({"closing": "2021-12-15"}) and run._is_open({"closing": "2099-01-01"}) and run._is_open({"closing": None}))
 check("watched bid docs downloaded when logged in", any(r1["downloads"].values()), r1["downloads"])
 check("report has source health + all open", "## Source health" in rep and "All open matching bids" in rep)
 os.environ["FAKE_ADDENDUM"] = "1"
