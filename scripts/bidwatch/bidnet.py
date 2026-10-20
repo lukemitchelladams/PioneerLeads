@@ -431,6 +431,9 @@ def _parse_listing_generic(soup, base_url: str, seen: set) -> list[dict]:
     return rows
 
 
+EVENT_LABELS = ("event type", "attendance", "event date", "location", "event note")
+
+
 def parse_prebid_events(soup) -> list[dict]:
     """BidNet's own "Pre-Bidding Events" block (verified 2026-10-20 on CU UCB001284 and Jeffco's Boettcher chiller):
     one li per event, labelled fields Event Type / Attendance (Mandatory, Recommended, ...) / Event date / Location /
@@ -442,7 +445,10 @@ def parse_prebid_events(soup) -> list[dict]:
             body = fld.select_one(".mets-field-body")
             for sc in (body.select("script") if body else []):
                 sc.decompose()
-            f[_txt(fld.select_one(".mets-field-label")).lower()] = _txt(body)
+            lab = _txt(fld.select_one(".mets-field-label")).lower()
+            # an event changed by an addendum carries its marker in every label ("Event date A - Previous Addendum")
+            lab = next((k for k in EVENT_LABELS if lab.startswith(k)), lab)
+            f[lab] = _txt(body)
         if not f.get("event date") and not f.get("attendance"):
             continue
         att = (f.get("attendance") or "").strip()

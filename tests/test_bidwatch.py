@@ -168,6 +168,9 @@ check("BidNet events block: 'Attendance Mandatory' is MANDATORY even when the te
 _ev_bo = bidnet.parse_detail((FX / "bidnet_prebid_events_boettcher.html").read_text())["prebid"]
 check("BidNet events block: 'Attendance Recommended' is not mandatory", _ev_bo and _ev_bo["mandatory"] is False
       and _ev_bo["date"] == "2026-10-26" and "Recommended" in _ev_bo["quote"], _ev_bo)
+_ev_ad = bidnet.parse_detail((FX / "bidnet_prebid_events_addendum_label.html").read_text())["prebid"]
+check("BidNet events block changed by an addendum ('Attendance A - Previous Addendum') still parses: not mandatory",
+      _ev_ad and _ev_ad["source"] == "bidnet events" and _ev_ad["mandatory"] is False and _ev_ad["date"] == "2026-10-13", _ev_ad)
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
