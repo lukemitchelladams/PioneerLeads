@@ -1,5 +1,19 @@
 [
  {
+  "key": "cos-r26-069mz-bas|Pre-bid (optional)|2026-09-25T13:00:00-06:00",
+  "bid": "cos-r26-069mz-bas",
+  "when": "2026-09-25T13:00:00-06:00",
+  "date": "2026-09-25",
+  "kind": "Pre-bid (optional)",
+  "agency": "City of Colorado Springs",
+  "sol": "R26-069MZ",
+  "decision": "EVALUATE",
+  "note": "",
+  "critical": false,
+  "past": true,
+  "days_left": -24.31
+ },
+ {
   "key": "littleton-2126|Pre-bid (optional)|2026-10-09T10:00:00-06:00",
   "bid": "littleton-2126",
   "when": "2026-10-09T10:00:00-06:00",
@@ -11,7 +25,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.43
+  "days_left": -10.44
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -39,7 +53,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -4.43
+  "days_left": -4.44
  },
  {
   "key": "arapahoe-26-52|MANDATORY pre-bid|2026-10-19T13:30:00-06:00",
@@ -81,7 +95,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": false,
-  "days_left": 0.57
+  "days_left": 0.56
  },
  {
   "key": "elbert-2026-006|Questions due|2026-10-20T13:00:00-06:00",
@@ -109,7 +123,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": false,
-  "days_left": 1.57
+  "days_left": 1.56
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -123,7 +137,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": false,
-  "days_left": 1.57
+  "days_left": 1.56
  },
  {
   "key": "littleton-2126|Addendum|2026-10-21T12:00:00-06:00",
@@ -319,7 +333,7 @@
   "note": "Email emorales@sd27j.net",
   "critical": true,
   "past": false,
-  "days_left": 8.57
+  "days_left": 8.56
  },
  {
   "key": "littleton-2126|Submission|2026-10-28T14:00:00-06:00",
@@ -348,6 +362,34 @@
   "critical": true,
   "past": false,
   "days_left": 8.77
+ },
+ {
+  "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
+  "bid": "cos-r26-069mz-bas",
+  "when": "2026-10-30T14:00:00-06:00",
+  "date": "2026-10-30",
+  "kind": "Submission",
+  "agency": "City of Colorado Springs",
+  "sol": "R26-069MZ",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 10.73
+ },
+ {
+  "key": "cu-ucb001284-lighting|Submission|2026-10-30T14:00:00-06:00",
+  "bid": "cu-ucb001284-lighting",
+  "when": "2026-10-30T14:00:00-06:00",
+  "date": "2026-10-30",
+  "kind": "Submission",
+  "agency": "University of Colorado Boulder",
+  "sol": "UCB001284",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 10.73
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -383,13 +425,13 @@
   "when": "2026-11-02T15:00:00-07:00",
   "date": "2026-11-02",
   "kind": "Submission",
-  "agency": "Douglas County (per CRM: 036-26, unverified)",
-  "sol": "BidNet 0000440236",
+  "agency": "Douglas County Government",
+  "sol": "036-26",
   "decision": "EVALUATE",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 13.82
+  "days_left": 13.81
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -418,34 +460,6 @@
   "critical": true,
   "past": false,
   "days_left": 15.77
- },
- {
-  "key": "elpaso-26-058|Submission|2026-11-04T14:00:00-07:00",
-  "bid": "elpaso-26-058",
-  "when": "2026-11-04T14:00:00-07:00",
-  "date": "2026-11-04",
-  "kind": "Submission",
-  "agency": "El Paso County",
-  "sol": "26-058",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 15.77
- },
- {
-  "key": "dougco-generator-pm|Submission|2026-11-05T14:00:00-07:00",
-  "bid": "dougco-generator-pm",
-  "when": "2026-11-05T14:00:00-07:00",
-  "date": "2026-11-05",
-  "kind": "Submission",
-  "agency": "Douglas County (unverified)",
-  "sol": "not in hand",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 16.77
  },
  {
   "key": "parks-oncall-mowing|Submission|2026-11-05T14:00:00-07:00",
@@ -483,7 +497,7 @@
   "kind": "Submission",
   "agency": "Town of Parker",
   "sol": "RFP (number not in hand)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
@@ -543,7 +557,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.82
+  "days_left": 23.81
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",

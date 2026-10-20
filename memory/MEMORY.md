@@ -350,3 +350,13 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   re-enabled at :50, prompt capped at 2 scans/session, rebuilds dashboard JSON and messages this session).
 - DCSD 003-27 mowing: BidNet closing 2026-10-29 vs CRM brief 2026-10-23 — being verified from the document.
 - 30-min check-in loop stopped (conditions met: BidNet 584 ≥ 100; Littleton confirmed login-only).
+
+## 2026-10-19 20:45 MT — Luke's CRM system is running the same bids (read before acting)
+- Luke's other agent ("evening update" emails from luke@brownbisonco.com to his Gmail, subject "Brown Bison evening update")
+  reads BidNet through Luke's signed-in Chrome, with a 15-min keep-alive. It had already read Littleton's full package, Parker
+  generator (conditional GO, Generator Source contacted), El Paso 26-058 (no-go), Douglas Co generators (no-go), Douglas Co
+  janitorial 036-26 (no-go unless sub staff allowed; BidNet question by Wed 15:00), DCSD mowing (Alex final $389,989.59, ours
+  $409,489.07 at 5%), RTD (Lightning Mobile yes to 42 shelters, prices Fri), Parker HVAC (Rich pricing).
+- The hourly inbox query excludes from:luke@brownbisonco.com, so it MISSES these updates. Search `"evening update" OR "Brown Bison brief"`
+  every hour and fold them into pipeline.json.
+- DCSD 003-27 RFP §2.1: no sign-in at the 2026-10-14 walkthrough = rejected. The CRM update doesn't mention the walk. Flagged to Luke.

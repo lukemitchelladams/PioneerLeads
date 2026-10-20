@@ -28,7 +28,9 @@
   "bidnet:fire-alarm-troubleshoot": "EVALUATE-lean-NO: annual fire alarm troubleshooting 11/02 (NICET/Notifier)",
   "bidnet:access-control": "EVALUATE: on-call security access control 11/19 (low-voltage sub)",
   "bidnet:hvac-staged-upgrade": "EVALUATE: staged HVAC system upgrade, closes 2027-02-26",
-  "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)"
+  "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)",
+  "bidnet:broomfield-26-rfp-pd-002": "NO: Broomfield PD detention fence, mandatory pre-proposal 2026-09-30 missed",
+  "bidnet:dougco-fencing": "EVALUATE-lean-NO: Douglas County commercial/residential fencing 11/05, outside core trades"
  },
  "watched": {
   "6ac78e133e2326616e082a75": {
