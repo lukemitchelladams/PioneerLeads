@@ -39,7 +39,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -5.5
+  "days_left": -5.51
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -67,7 +67,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -0.31
+  "days_left": -0.32
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -0.29
+  "days_left": -0.3
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -165,7 +165,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": false,
-  "days_left": 2.75
+  "days_left": 2.74
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-23T14:00:00-06:00",
@@ -179,7 +179,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 3.71
+  "days_left": 3.7
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -193,7 +193,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": false,
-  "days_left": 3.71
+  "days_left": 3.7
  },
  {
   "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
@@ -207,7 +207,7 @@
   "note": "27J speaker cabling",
   "critical": false,
   "past": false,
-  "days_left": 3.75
+  "days_left": 3.74
  },
  {
   "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -249,7 +249,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 6.71
+  "days_left": 6.7
  },
  {
   "key": "landscaping-mgmt-2027|Submission|2026-10-26T14:00:00-06:00",
@@ -263,7 +263,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 6.71
+  "days_left": 6.7
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -277,7 +277,7 @@
   "note": "Teams",
   "critical": false,
   "past": false,
-  "days_left": 6.71
+  "days_left": 6.7
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -291,7 +291,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": false,
-  "days_left": 7.5
+  "days_left": 7.49
  },
  {
   "key": "elbert-2026-006|Submission|2026-10-27T12:30:00-06:00",
@@ -347,7 +347,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 8.71
+  "days_left": 8.7
  },
  {
   "key": "thornton-324-26|Submission|2026-10-28T15:00:00-06:00",
@@ -361,7 +361,7 @@
   "note": "BidNet or hand delivery",
   "critical": true,
   "past": false,
-  "days_left": 8.75
+  "days_left": 8.74
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -375,7 +375,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 10.71
+  "days_left": 10.7
  },
  {
   "key": "cu-ucb001284-lighting|Submission|2026-10-30T14:00:00-06:00",
@@ -389,7 +389,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 10.71
+  "days_left": 10.7
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -403,7 +403,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 13.75
+  "days_left": 13.74
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -417,7 +417,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 13.75
+  "days_left": 13.74
  },
  {
   "key": "dougco-janitorial|Submission|2026-11-02T15:00:00-07:00",
@@ -459,7 +459,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.75
+  "days_left": 15.74
  },
  {
   "key": "parks-oncall-mowing|Submission|2026-11-05T14:00:00-07:00",
@@ -473,7 +473,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.75
+  "days_left": 16.74
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -501,7 +501,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 17.75
+  "days_left": 17.74
  },
  {
   "key": "district-custodial|Submission|2026-11-06T14:00:00-07:00",
@@ -515,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 17.75
+  "days_left": 17.74
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -529,7 +529,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.75
+  "days_left": 20.74
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -543,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.75
+  "days_left": 23.74
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -571,7 +571,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 27.75
+  "days_left": 27.74
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -585,7 +585,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.75
+  "days_left": 27.74
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -599,6 +599,6 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 42.75
+  "days_left": 42.74
  }
 ]
