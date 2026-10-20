@@ -528,3 +528,9 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   Recommended". Robot checks on detail/download/login pages stop the pass + start the cool-down; failed tab = no
   keyword fallback (max 12 otherwise); per-source crash isolation; download failures reported; files > 95 MB held
   back from the push. 07:35 scan: session reused, BidNet 586 open / 80 match, 23 docs for 4 EVALUATE bids.
+- 08:47 UTC: BidNet event labels carry an addendum marker when an addendum changed the event ("Attendance A -
+  Previous Addendum"); parser now matches label prefixes (874ebb3). Cherry Creek SD District Wide Custodial
+  (0000437813) walk 10/13 was NOT mandatory (RFP 27-007 section 2.9) -> still biddable; questions due 2026-10-21, proposals
+  2026-11-06. Arapahoe 26-52 Fairgrounds: mandatory Teams prebid 10/19 confirmed by BidNet fields (dead unless
+  attended). DCSD 003-27: BidNet says the 10/14 walk was "Recommended"; the RFP's sign-in clause is conditional.
+  08:35 scan: logged in attempt 1 (session lapsed ~1 h), all sources fresh.
