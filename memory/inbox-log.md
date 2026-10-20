@@ -37,3 +37,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-20 02:22 MT hourly: inbox 0 new (10 threads/24h all seen).
 - 2026-10-20 03:22 MT hourly: inbox 1 new, noise (Google Workspace terms notice). Second Gmail DELAY notices for Beattie (05:46Z) and Simply Sewers (06:53Z): still retrying ~46-47 h more (to ~2026-10-22 05:00Z). Colorado Power Wash / LM Inc RTD threads already seen.
 - 2026-10-20 04:23 MT hourly: inbox 2 new: GovTribe saved-search daily (PSC 1 new = BEP drum handlers, already NO; Brown Bison federal CO 2 new = USPS roof + USAF J&A, already NO; Jones keyword search 20 new, pulled and triaged this hour); DMARC report (noise). Littleton delay notices unchanged.
+- 2026-10-20 05:23 MT hourly: inbox 0 new (11 threads/24h all seen). Littleton delay notices unchanged; no new CRM update.
