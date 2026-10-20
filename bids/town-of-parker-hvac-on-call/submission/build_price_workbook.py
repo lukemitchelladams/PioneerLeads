@@ -127,9 +127,8 @@ def main() -> int:
         ws.column_dimensions["A"].width = 120
         ws["A1"] = "FOR RICH CARROLL TO REVIEW: NOT FOR SUBMISSION"
         ws["A1"].font = Font(bold=True, size=14)
-        ws["A2"] = ("These are your prices exactly as you wrote them, with no Brown Bison markup, typed into the Town's own "
-                    "form. Yellow cells are still blank. Please check every number, fill the yellow cells, answer the "
-                    "questions below, and reply 'approved'.")
+        ws["A2"] = ("Here is what we think would be good to submit, at your cost, in the Town's own form. "
+                    "Reply 'approved' or tell us what to change.")
         ws["A2"].alignment = Alignment(wrap_text=True)
         for i, q in enumerate(cfg.get("questions_for_sub", []), start=4):
             ws[f"A{i}"] = f"{i - 3}. {q}"
