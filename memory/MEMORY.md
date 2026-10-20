@@ -562,3 +562,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   decode with scratchpad extract_att.py. Rich's Parker packet transcribed to
   bids/town-of-parker-hvac-on-call/private/ (git-ignored, prices). New rule of thumb: sub prices and quotes go in
   bids/*/private/ while the repo is public. Lightning Mobile RTD pricing received (figures off-repo).
+- 2026-10-20 09:45 MT (MAIN): Parker 26-028 approval packet for Rich built (private/, git-ignored): Town workbook at
+  Rich's prices with every blank PROPOSED (orange) except reference contacts; Q1-Q10 + company page drafts (green =
+  proposed, yellow = only Rich/Luke); filter schedule all units (AFF lists + Trane/Valent manuals; Innovent pool units
+  job-specific, Innovent 1-800-789-8550 by serial); sample reports (Q10); assemble_final.py refuses until approved.
+  Luke's flow: Rich approves no-markup copy -> add 10% -> submit. Fall visit = spring (Luke), Town Hall fall
+  $1,057.97 computed. RTD: incumbent UFS 121DH027 $231K-$259K/yr (RTD Feb-2026 report) vs LM $1.905M yr1 -> 7x.
+  15:36 UTC scan clean (BidNet logged in attempt 1). New mandatory walk to decide: DPS fire alarm 10/27 10:00.
