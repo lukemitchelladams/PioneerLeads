@@ -522,3 +522,9 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   re-check before retry, mid-cycle re-validation, watch regex on title+sol only (HQ 2b45cba). 133/133 tests. Summary:
   ops/research/2026-10-20-code-review.md. Open UNVERIFIED items listed there for a second pass.
 - Replies to Luke now use the 8-line board format in CLAUDE.md (hourly routine prompt updated 07:15Z).
+- 07:56 UTC: second review pass, 373db8c (144/144): BidNet pre-bid now read from the portal's structured
+  "Pre-Bidding Events" block (Attendance Mandatory/Recommended) before any text heuristic; the worker's re-scoped
+  extract_prebid had turned CU UCB001284 mandatory -> unknown. Boettcher chiller 10/26 visit = "Attendance
+  Recommended". Robot checks on detail/download/login pages stop the pass + start the cool-down; failed tab = no
+  keyword fallback (max 12 otherwise); per-source crash isolation; download failures reported; files > 95 MB held
+  back from the push. 07:35 scan: session reused, BidNet 586 open / 80 match, 23 docs for 4 EVALUATE bids.
