@@ -229,6 +229,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     # a source that was unreachable keeps its previous rows: count them so the report is not misread as empty
     for s in incomplete:
         if health[s]["count"] == 0:
+            health[s]["blind"] = True  # nothing fresh at all this run (vs. a partial list): last_success stays old
             health[s]["count"] = sum(1 for b in found.values() if b["source"] == s)
             health[s]["matches"] = sum(1 for b in found.values() if b["source"] == s and b["profiles"])
     # Sources not scanned this run (a --sources subset, e.g. a SAM.gov-only pull) keep their last results,
@@ -253,7 +254,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     save_json(OPEN_BIDS_FILE, {"scanned_at": started, "bids": found})
     prev_health = load_json(HEALTH_FILE, {}).get("sources", {})
     for s in sources:
-        if health[s]["count"]:
+        if health[s]["count"] and not health[s].get("blind"):
             health[s]["last_success"] = started
         else:
             health[s]["last_success"] = prev_health.get(s, {}).get("last_success")
@@ -379,7 +380,7 @@ def render(r: dict) -> str:
     h = r["health"]
     lines = [f"# Bid watch report — {r['started']}", ""]
     blind = [s for s, v in h.items() if not v.get("not_scanned_this_run")
-             and (not v["reachable"] or (not v["count"] and s != "dibbs"))]
+             and (not v["reachable"] or v.get("blind") or (not v["count"] and s != "dibbs"))]
     carried = [s for s, v in h.items() if v.get("not_scanned_this_run")]
     head = []
     if r["new"]:
@@ -399,7 +400,9 @@ def render(r: dict) -> str:
         creds = ", ".join(f"{k}={'yes' if ok else 'NO'}" for k, ok in v["creds"].items()) or "n/a"
         tot = ", ".join(f"{k.replace('statewide ', '')} {n}" for k, n in (v.get("site_totals") or {}).items() if n is not None)
         note = ("NOT SCANNED THIS RUN; " if v.get("not_scanned_this_run") else "") \
-            + (f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("carried_forward") else "") \
+            + ((f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("blind")
+                else "PARTIAL this run (part of the source failed): earlier rows kept, none closed; ")
+               if v.get("carried_forward") else "") \
             + (v['login_note'] or ('yes' if v['logged_in'] else 'no'))
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
                      f"{note} | {v['count']} | {tot} | {v['matches']} | "

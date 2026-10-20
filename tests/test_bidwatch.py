@@ -393,6 +393,9 @@ r3 = run.scan(["bidnet", "samgov"])
 check("unreachable source: previous rows carried forward, none closed",
       "samgov:seed1" in r3["found"] and not any(k.startswith("samgov") for k in r3["closed"])
       and r3["health"]["samgov"]["count"] == 1, (list(r3["closed"]), r3["health"]["samgov"]))
+check("fully blind source: report says BLIND and last_success keeps its old time",
+      r3["health"]["samgov"].get("blind") is True and r3["health"]["samgov"].get("last_success") != r3["started"]
+      and "BLIND this run" in (TMP / "REPORT_FILE.json").read_text(), r3["health"]["samgov"])
 r4 = run.scan(["bidnet"])
 check("source not in this run: rows kept and health row marked not scanned",
       "samgov:seed1" in r4["found"] and r4["health"]["samgov"].get("not_scanned_this_run") is True
@@ -695,6 +698,9 @@ check("API down: the API's earlier rows are carried forward, nothing closed",
       "samgov:api-today" in r6["found"] and not any(k.startswith("samgov") for k in r6["closed"]), list(r6["closed"]))
 check("report labels a notice whose place of performance is not stated",
       "place of performance not stated; CO buying office" in (TMP / "REPORT_FILE.json").read_text())
+check("API down but the file answered: PARTIAL, not BLIND, and last_success is this run",
+      _h6.get("carried_forward") and not _h6.get("blind") and _h6.get("last_success") == r6["started"]
+      and "PARTIAL this run" in (TMP / "REPORT_FILE.json").read_text(), _h6)
 _ss.shutdown()
 samgov_bulk.URL = "http://127.0.0.1:1/gone"
 for _f in (samgov_bulk.CSV_FILE, samgov_bulk.KEPT_FILE):
