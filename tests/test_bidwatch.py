@@ -553,6 +553,11 @@ check("BidNet 'Closed Bid' rows are parsed, counted, then dropped", len(_rows) =
 
 # (e) watch patterns match the title and solicitation number, never the URL
 _ws = run._WatchSet([{"name": "Jeffco 26-18863AP", "source": "bidnet", "match": "18863|dome glass"}])
+_ws3 = run._WatchSet([{"name": "by id", "source": "bidnet", "id": "1", "match": "zzz-no-match", "folder": "bids/x"},
+                      {"name": "by pattern", "source": "bidnet", "match": "003-27|mowing services"}])
+_e3 = _ws3.entry({"source": "bidnet", "id": "1", "title": "003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8"})
+check("a bid watched twice (id and pattern): the id entry wins, the pattern entry still counts as seen",
+      _e3 and _e3["name"] == "by id" and "by pattern" in _ws3.hits, (_e3, _ws3.hits))
 check("a short solicitation number no longer matches a BidNet id inside a URL",
       not _ws.check({"source": "bidnet", "id": "444188638946", "title": "Flood Assessment and Preliminary Design Services",
                      "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188638946?target=view"})

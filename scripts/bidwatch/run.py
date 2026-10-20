@@ -86,18 +86,18 @@ class _WatchSet:
         self.hits: dict[str, str] = {}
 
     def entry(self, b: dict) -> dict | None:
-        """The watchlist entry that covers bid `b`, or None."""
+        """The watchlist entry that covers bid `b` (an id match first), or None. Every pattern entry that matches is
+        recorded as seen, so a bid listed twice (by id and by pattern) is never reported as 'not seen'."""
         k = f"{b['source']}:{b['id']}"
-        if k in self.by_id:
-            return self.by_id[k]
+        first = self.by_id.get(k)
         # title + solicitation number only: matching the URL let "18863" (Jeffco 26-18863AP) hit BidNet's id
         # 444188638946 on an unrelated bid (2026-10-20)
         hay = f"{b.get('title', '')} {b.get('sol') or ''}"
         for w, rx in self.rx:
             if (not w.get("source") or w["source"] == b["source"]) and rx.search(hay):
                 self.hits[w.get("name", w["match"])] = k
-                return w
-        return None
+                first = first or w
+        return first
 
     def check(self, b: dict) -> bool:
         return self.entry(b) is not None
