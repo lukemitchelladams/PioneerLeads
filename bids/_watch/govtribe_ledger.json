@@ -19,7 +19,16 @@
   "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
   "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19",
   "fed:d25cf386f88c43619ddbc95a424ead75": "NO: USPS Denver P&DC roof replacement (roofing, NAICS 236220), due 2026-11-20",
-  "fed:24ffa6d27a674212a41ade72d91ec106": "NO (Jones Bearing): BEP ergonomic drum handlers, not bearings/conveyor product"
+  "fed:24ffa6d27a674212a41ade72d91ec106": "NO (Jones Bearing): BEP ergonomic drum handlers, not bearings/conveyor product",
+  "bidnet:montezuma-2027-janitorial": "NO: Montezuma County 2027 janitorial (7 bldgs, Cortez); new-bidder walk 2026-10-12 missed; 7h away",
+  "bidnet:ppsc-dq27-005": "NO: PPSC flooring re-bid, not our trade, closes 10/23",
+  "bidnet:detention-kiosks": "NO: detention security desk kiosks, closes 10/23, outside trades",
+  "bidnet:redstone-snow": "NO (likely): Redstone/Pitkin snow removal, 3.5h away; reconsider only with docs",
+  "bidnet:fire-alarm-inspection": "EVALUATE-lean-NO: fire alarm inspection & testing 11/12 (NICET)",
+  "bidnet:fire-alarm-troubleshoot": "EVALUATE-lean-NO: annual fire alarm troubleshooting 11/02 (NICET/Notifier)",
+  "bidnet:access-control": "EVALUATE: on-call security access control 11/19 (low-voltage sub)",
+  "bidnet:hvac-staged-upgrade": "EVALUATE: staged HVAC system upgrade, closes 2027-02-26",
+  "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)"
  },
  "watched": {
   "6ac78e133e2326616e082a75": {
