@@ -270,15 +270,27 @@ def _submit_login_window(page, user: str, pw: str) -> None:
         return
     except Exception:  # noqa: BLE001 - fall back to a scripted submit of the same form
         pass
-    page.evaluate(
-        """([u, p]) => {
-            const f = document.getElementById('loginWindowForm') || document.querySelector("form[action*='authentication/login']");
-            if (!f) throw new Error('login form not found');
-            const uf = f.querySelector("input[name='j_username']"), pf = f.querySelector("input[name='j_password']");
-            if (!uf || !pf) throw new Error('login fields not found');
-            uf.value = u; pf.value = p;
-            if (typeof f.requestSubmit === 'function') f.requestSubmit(); else f.submit();
-        }""", [user, pw])
+    try:
+        page.evaluate(
+            """([u, p]) => {
+                const f = document.getElementById('loginWindowForm') || document.querySelector("form[action*='authentication/login']");
+                if (!f) throw new Error('login form not found');
+                const uf = f.querySelector("input[name='j_username']"), pf = f.querySelector("input[name='j_password']");
+                if (!uf || !pf) throw new Error('login fields not found');
+                uf.value = u; pf.value = p;
+                if (typeof f.requestSubmit === 'function') f.requestSubmit(); else f.submit();
+            }""", [user, pw])
+    except Exception as e:  # noqa: BLE001
+        # 2026-10-20 11:36 UTC: single sign-on restored the session while the login window was being opened, so the
+        # form was gone. Logged in is logged in: nothing to submit.
+        if "not found" not in str(e):
+            raise
+        try:
+            page.wait_for_load_state("load", timeout=8000)
+        except Exception:  # noqa: BLE001
+            pass
+        if not _page_logged_in(page):
+            raise
 
 
 def visible_text(html: str) -> str:

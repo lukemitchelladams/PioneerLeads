@@ -534,7 +534,7 @@ def render(r: dict) -> str:
             + ((f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("blind")
                 else "PARTIAL this run (part of the source failed): earlier rows kept, none closed; ")
                if v.get("carried_forward") else "") \
-            + (v['login_note'] or ('yes' if v['logged_in'] else 'no'))
+            + " ".join(str(v['login_note'] or ('yes' if v['logged_in'] else 'no')).split()).replace("|", "/")
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
                      f"{note} | {v['count']} | {tot} | {v['matches']} | "
                      f"{v.get('last_success') or 'never'} | {len(v['errors'])} |")

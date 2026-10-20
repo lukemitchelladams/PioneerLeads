@@ -112,7 +112,8 @@ class PortalSession:
                 return False
             except Exception as e:  # noqa: BLE001
                 # the note lands in health.json (committed): never let a credential ride along in an error text
-                last = _scrub(f"{type(e).__name__}: {e}", creds)[:160]
+                # one line (a JS stack trace broke the report's health table on 2026-10-20), credentials masked
+                last = " ".join(_scrub(f"{type(e).__name__}: {e}", creds).split())[:160]
             self.debug_dump(f"login-fail-{i + 1}")
             time.sleep(5 * (2 ** i))
             try:  # a slow sign-on redirect may have finished the login after all: never re-submit a password needlessly

@@ -408,6 +408,45 @@ def _flaky_login(page, u, p):
         raise RuntimeError("Unable to retrieve content because the page is navigating")
 
 
+class _SsoRestoredPage:
+    """Stands in for a page where single sign-on restored the session while the login window was being opened."""
+
+    def locator(self, sel):
+        logged_in_sel = sel == bidnet.LOGGED_IN_SEL
+        return type("L", (), {"count": lambda self_: 1 if logged_in_sel else 0})()
+
+    def click(self, *a, **k):
+        raise RuntimeError("not clickable")
+
+    def wait_for_selector(self, *a, **k):
+        raise RuntimeError("Timeout 5000ms exceeded")
+
+    def wait_for_timeout(self, ms):
+        pass
+
+    def wait_for_load_state(self, *a, **k):
+        pass
+
+    def evaluate(self, *a, **k):
+        raise RuntimeError("Error: Page.evaluate: Error: login form not found\n    at eval (eval at evaluate (:370:30))")
+
+
+try:
+    bidnet._submit_login_window(_SsoRestoredPage(), USER, PW)
+    _sso_ok = True
+except Exception as _e:  # noqa: BLE001
+    _sso_ok = repr(_e)
+check("login form gone because single sign-on already restored the session: treated as logged in, no error", _sso_ok is True, _sso_ok)
+
+
+def _multiline_fail(page, u, p):
+    raise RuntimeError("Error: login form not found\n    at eval (eval at evaluate (:370:30))\n    at UtilityScript")
+
+
+s6b = PortalSession(b, "multiline", _multiline_fail, lambda page: False, bidnet.CREDS)
+s6b.ensure_login(attempts=1)
+check("login notes are one line (a stack trace broke the report table)", "\n" not in s6b.login_note, s6b.login_note)
+s6b.close()
 s6 = PortalSession(b, "retrytest", _flaky_login, lambda page: _tries["n"] >= 2, bidnet.CREDS)
 check("a retried login records why the previous attempt failed",
       s6.ensure_login() and s6.login_note.startswith("logged in (attempt 2); previous attempt: RuntimeError: Unable"),
