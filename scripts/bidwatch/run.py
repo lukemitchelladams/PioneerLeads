@@ -190,6 +190,9 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             b["profiles"] = profile_hits(b, profiles)
         b["watched"] = watched_keys.check(b)
         b.setdefault("first_seen", prev.get(key(b), {}).get("first_seen", started))
+        if b.get("carried_forward") and b.get("last_seen"):
+            continue  # not seen this run; keep the real last_seen
+        b.pop("carried_forward", None)
         b["last_seen"] = started
     for s in sources:
         health[s]["matches"] = sum(1 for b in found.values() if b["source"] == s and b["profiles"])
@@ -202,6 +205,11 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             found[k] = {**v, "carried_forward": True}
     for s in incomplete:
         health[s]["errors"].append(f"{s} list incomplete this scan: previous open bids carried forward, none marked closed")
+    # Sources not scanned this run (a --sources subset, e.g. a SAM.gov-only pull) keep their last results,
+    # so open_bids.json and the dashboard never lose the BidNet/DIBBS rows because one source was refreshed.
+    for k, v in prev.items():
+        if v.get("source") not in sources and k not in found and (days_until(v.get("closing")) or 0) >= 0:
+            found[k] = {**v, "carried_forward": True}
     scanned_sources = {s for s in sources if health[s]["count"] > 0 and s not in incomplete}
     new = {k: v for k, v in found.items() if k not in prev and v["profiles"]}
     changed = {}
@@ -217,12 +225,16 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                      and (not w.get("source") or w["source"] in scanned_sources)]
 
     save_json(OPEN_BIDS_FILE, {"scanned_at": started, "bids": found})
+    prev_health = load_json(HEALTH_FILE, {}).get("sources", {})
     for s in sources:
         if health[s]["count"]:
             health[s]["last_success"] = started
         else:
-            health[s]["last_success"] = load_json(HEALTH_FILE, {}).get("sources", {}).get(s, {}).get("last_success")
-    save_json(HEALTH_FILE, {"checked_at": started, "sources": health})
+            health[s]["last_success"] = prev_health.get(s, {}).get("last_success")
+    # health.json keeps the last known state of sources that were not part of this run
+    save_json(HEALTH_FILE, {"checked_at": started,
+                            "sources": {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items()
+                                           if s not in health}, **health}})
     result = {"started": started, "health": health, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch}
     REPORT_FILE.write_text(render(result))

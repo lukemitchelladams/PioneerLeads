@@ -41,25 +41,47 @@ FILE_HREF = re.compile(r"\.(pdf|docx?|xlsx?|zip|dwg)(\?|$)|/document|/download|a
 
 # ---------------- login ----------------
 
+# Every public BidNet page carries the login window (form#loginWindowForm, verified 2026-10-20):
+#   input#loginBox_j_username (name=j_username), input#loginBox_j_password (name=j_password),
+#   hidden _csrf, button#loginWindowButton -> POST /public/authentication/login.
+# A GET of that URL answers 202/302 (not a page), so we submit the window on the home page instead.
+LOGIN_USER_SEL = ["#loginBox_j_username", "input[name='j_username']", "input[name='username']", "input#username",
+                  "input[type='email']", "input[name='email']"]
+LOGIN_PASS_SEL = ["#loginBox_j_password", "input[name='j_password']", "input[name='password']", "input#password",
+                  "input[type='password']"]
+LOGIN_BTN_SEL = ["#loginWindowButton", "#loginWindowForm button[type='submit']", "button[type='submit']",
+                 "input[type='submit']", "button:has-text('Login')", "button:has-text('Log in')"]
+LOGIN_FORM_SEL = "input[name='j_username']"
+
+
+def _home() -> str:
+    return BASE + "/colorado"  # derived at call time so tests can point BASE at a fake portal
+
+
 def login(page, user: str, pw: str) -> None:
-    page.goto(LOGIN_URL, wait_until="domcontentloaded")
-    _fill_first(page, ["input[name='j_username']", "input[name='username']", "input#username",
-                       "input[type='email']", "input[name='email']"], user)
-    _fill_first(page, ["input[name='j_password']", "input[name='password']", "input#password",
-                       "input[type='password']"], pw)
-    _click_first(page, ["button[type='submit']", "input[type='submit']", "button:has-text('Log in')",
-                        "button:has-text('Login')", "button:has-text('Sign in')"])
+    page.goto(_home(), wait_until="domcontentloaded")
+    page.wait_for_timeout(1000)
+    html = page.content()
+    if BOT_RX.search(html) and not total_count(html):
+        raise RuntimeError("BidNet robot check served on the login page; try again later")
+    _fill_first(page, LOGIN_USER_SEL, user)
+    _fill_first(page, LOGIN_PASS_SEL, pw)
+    _click_first(page, LOGIN_BTN_SEL)
     page.wait_for_load_state("domcontentloaded")
     page.wait_for_timeout(3000)
 
 
 def is_logged_in(page) -> bool:
-    page.goto(BASE + "/colorado", wait_until="domcontentloaded")
+    """Logged in = a normal BidNet page WITHOUT the login window. (Text like 'my account' is useless:
+    the logged-out page has aria-label="my account" on the mobile avatar button.)"""
+    page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1500)
-    html = page.content().lower()
-    if re.search(r"log ?out|sign ?out|my account|my profile", html) and "authentication/login" not in page.url:
-        return True
-    return False
+    html = page.content()
+    if "authentication/login" in page.url or (BOT_RX.search(html) and not total_count(html)):
+        return False
+    if "bidnet" not in (page.title() or "").lower():
+        return False  # not a BidNet page at all (blank, error, proxy page)
+    return page.locator(LOGIN_FORM_SEL).count() == 0
 
 
 def _fill_first(page, sels, value):

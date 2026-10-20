@@ -179,7 +179,13 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send("<form method=post action='/public/authentication/login'><input name='j_username'>"
                               "<input name='j_password' type='password'><button type='submit'>Log in</button></form>")
         if p == "/colorado":
-            return self._send("<a href='/logout'>Logout</a>" if self._authed() else "<a href='/public/authentication/login'>Login</a>")
+            # mirrors the real site: the login window sits on every page until you are logged in
+            form = ("<form id='loginWindowForm' method='post' action='/public/authentication/login'>"
+                    "<input id='loginBox_j_username' name='j_username'><input id='loginBox_j_password' name='j_password' type='password'>"
+                    "<input type='hidden' name='_csrf' value='x'><button id='loginWindowButton' type='submit'>Login</button></form>")
+            body = "<a href='/logout'>Logout</a>" if self._authed() else form
+            return self._send(f"<html><head><title>Colorado Bids | Fake BidNet Direct</title></head><body>"
+                              f"<a aria-label='my account' href='#'>avatar</a>{body}</body></html>")
         if p.startswith("/colorado/solicitations/open-bids"):
             if "/page2" in p:
                 return self._send("<table><tr><td><a href='/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000500002'>"

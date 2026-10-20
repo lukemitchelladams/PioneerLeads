@@ -360,3 +360,17 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - The hourly inbox query excludes from:luke@brownbisonco.com, so it MISSES these updates. Search `"evening update" OR "Brown Bison brief"`
   every hour and fold them into pipeline.json.
 - DCSD 003-27 RFP §2.1: no sign-in at the 2026-10-14 walkthrough = rejected. The CRM update doesn't mention the walk. Flagged to Luke.
+
+### 2026-10-20 02:45 UTC: Luke's session rules + login-check bug
+- **Session naming (Luke, emphatic):** this session = "MAIN — Brown Bison HQ (Luke talks here)" (session_019uSEKHU1Qyo6YGinn8hySB,
+  Fable max). Every other session is a WORKER and its title must start with "WORKER — ". The hourly live-scan
+  trigger (trig_014jsVKh8JXD8hBPctBHbDu4, :50 every hour, fresh session in the full-network env) now titles its
+  own session that way. The old parent session_01Wdn9F9pC6qWBjY4QwM8Bsw is retitled "WORKER — hourly routine".
+  Big tasks run here; menial tasks get spawned into labeled worker sessions.
+- **Bug found and fixed before any live login ever ran:** bidnet.is_logged_in matched "my account" on the
+  LOGGED-OUT page (aria-label on the mobile avatar button) and would have reported "session reused" forever
+  without logging in. Now: logged in = BidNet page title + login window (input[name=j_username]) absent.
+  login() submits the login window on /colorado (GET /public/authentication/login is not a page: 202/302).
+- Luke's question "where is it displayed / how does it find new jobs": REPORT.md + open_bids.json in repo,
+  dashboard https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3; full statewide list every scan matched
+  against watch_profiles keywords, diffed vs last scan. Still blocked only by credentials not in env vars.

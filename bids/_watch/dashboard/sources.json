@@ -17,11 +17,11 @@
  },
  {
   "source": "SAM.gov",
-  "status": "Blind: credentials not set",
-  "detail": "SAM_API_KEY not set; SAM_API_KEY not set",
-  "open_count": 0,
-  "matches": 0,
-  "last_success": ""
+  "status": "Live",
+  "detail": "API key",
+  "open_count": 38,
+  "matches": 38,
+  "last_success": "2026-10-20T02:45:13+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",

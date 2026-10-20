@@ -118,7 +118,11 @@ def collect(profiles: dict) -> tuple[dict, list[str]]:
                 errors.append(str(e))
                 return found, errors
             except urllib.error.HTTPError as e:
-                errors.append(f"SAM.gov {q}: HTTP {e.code} {e.reason}")
+                try:  # SAM.gov explains rejected parameters and rate limits in the JSON body (no key in it)
+                    body = e.read(400).decode("utf-8", "ignore")
+                except Exception:  # noqa: BLE001
+                    body = ""
+                errors.append(f"SAM.gov {q}: HTTP {e.code} {e.reason} {body.strip()[:200]}")
             except Exception as e:  # noqa: BLE001
                 errors.append(f"SAM.gov {q}: {type(e).__name__}: {str(e)[:150]}")
     return found, errors
