@@ -39,7 +39,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -0.26
+  "days_left": -0.27
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -53,7 +53,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -0.24
+  "days_left": -0.25
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "Elbert fencing questions close",
   "critical": false,
   "past": false,
-  "days_left": 0.72
+  "days_left": 0.71
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -151,7 +151,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 3.76
+  "days_left": 3.75
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -165,7 +165,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": false,
-  "days_left": 3.76
+  "days_left": 3.75
  },
  {
   "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
@@ -196,6 +196,20 @@
   "days_left": 3.88
  },
  {
+  "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
+  "bid": "sd27j-2021brrhs",
+  "when": "2026-10-23T17:00:00-06:00",
+  "date": "2026-10-23",
+  "kind": "Sub answers due",
+  "agency": "School District 27J",
+  "sol": "2021BRRHS",
+  "decision": "GO",
+  "note": "Low-voltage sub pricing",
+  "critical": false,
+  "past": false,
+  "days_left": 3.88
+ },
+ {
   "key": "poudre-27-702-002|Submission|2026-10-26T14:00:00-06:00",
   "bid": "poudre-27-702-002",
   "when": "2026-10-26T14:00:00-06:00",
@@ -207,7 +221,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 6.76
+  "days_left": 6.75
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -221,7 +235,7 @@
   "note": "Teams",
   "critical": false,
   "past": false,
-  "days_left": 6.76
+  "days_left": 6.75
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -249,7 +263,7 @@
   "note": "Hard copy + email",
   "critical": true,
   "past": false,
-  "days_left": 7.7
+  "days_left": 7.69
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -291,7 +305,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 8.76
+  "days_left": 8.75
  },
  {
   "key": "thornton-324-26|Submission|2026-10-28T15:00:00-06:00",

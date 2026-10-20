@@ -102,11 +102,11 @@
    "due": "2026-10-28T10:00:00-06:00",
    "portal": "Email emorales@sd27j.net",
    "decision": "GO",
-   "decision_note": "Questions due 2026-10-23 15:00. Sub outreach not written yet.",
+   "decision_note": "Questions due 2026-10-23 15:00. Luke: call Wire to Wire and Becks, email 303 Technologies; quotes by 10/23.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Low-voltage sub",
-   "subs": "NONE YET",
+   "subs": "Outreach written 10/19 (6 candidates); pricing asked by 10/23 17:00",
    "folder": "bids/sd27j-speaker-cabling",
    "contact": "emorales@sd27j.net",
    "sub_pricing": "None"
@@ -395,6 +395,12 @@
    "when": "2026-11-05T17:00:00-07:00",
    "kind": "Questions due",
    "note": ""
+  },
+  {
+   "bid": "sd27j-2021brrhs",
+   "when": "2026-10-23T17:00:00-06:00",
+   "kind": "Sub answers due",
+   "note": "Low-voltage sub pricing"
   }
  ],
  "doc_gaps": [
