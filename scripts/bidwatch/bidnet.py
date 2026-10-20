@@ -23,7 +23,8 @@ import os
 import time
 
 from . import mailcode
-from .common import CODE_FILE, CODE_NEEDED_MARKER, DOWNLOAD_DIR, LoginBlocked, extract_prebid, iso, parse_date
+from .common import (BIDNET_COOLDOWN_FILE, BIDNET_COOLDOWN_H, CODE_FILE, CODE_MARKER_TTL_H, CODE_NEEDED_MARKER,
+                     DOWNLOAD_DIR, LoginBlocked, extract_prebid, iso, parse_date)
 
 BASE = "https://www.bidnetdirect.com"
 LOGIN_URL = BASE + "/public/authentication/login"
@@ -58,6 +59,18 @@ LOGIN_PASS_SEL = ["#loginBox_j_password", "input[name='j_password']", "input[nam
 LOGIN_BTN_SEL = ["#loginWindowButton", "#loginWindowForm button[type='submit']", "button[type='submit']",
                  "input[type='submit']", "button:has-text('Login')", "button:has-text('Log in')"]
 LOGIN_FORM_SEL = "input[name='j_username']"
+# Logged-in pages carry a#supplier_logout_link (href /public/authentication/logout) and a filled
+# input[name=session_username]; logged-out pages carry the login window instead (verified 2026-10-20).
+LOGGED_IN_SEL = "#supplier_logout_link, a[href*='authentication/logout'], a[href*='logout' i]"
+
+
+def _page_logged_in(page) -> bool:
+    """Decide from the page itself, never from the URL: after a single-sign-on restore the URL can still
+    contain authentication/login while the page is fully logged in (seen 2026-10-20 04:55, endurance check 4)."""
+    try:
+        return page.locator(LOGGED_IN_SEL).count() > 0 and page.locator(LOGIN_FORM_SEL).count() == 0
+    except Exception:  # noqa: BLE001
+        return False
 # New-device check (confirmed 2026-10-20 from the inbox): after a password login from a device BidNet has not
 # seen, it emails "Your BidNet Direct confirmation code" (noreply@bidnet.com, 6 digits) and shows a code
 # prompt. EVERY password login issues a NEW code, so the code is only good inside the browser session that
@@ -78,7 +91,36 @@ def _home() -> str:
     return BASE + "/colorado"  # derived at call time so tests can point BASE at a fake portal
 
 
+def _marker_expired() -> bool:
+    try:
+        return time.time() - CODE_NEEDED_MARKER.stat().st_mtime > CODE_MARKER_TTL_H * 3600
+    except FileNotFoundError:
+        return False
+
+
+def cooldown_until() -> str | None:
+    """ISO time BidNet is on cool-down until (after a robot check), or None."""
+    try:
+        until = BIDNET_COOLDOWN_FILE.read_text().strip()
+    except FileNotFoundError:
+        return None
+    return until if until > iso() else None
+
+
+def start_cooldown() -> str:
+    import datetime as _dt
+    until = (_dt.datetime.now(_dt.timezone.utc) + _dt.timedelta(hours=BIDNET_COOLDOWN_H)).isoformat(timespec="seconds")
+    try:
+        BIDNET_COOLDOWN_FILE.parent.mkdir(parents=True, exist_ok=True)
+        BIDNET_COOLDOWN_FILE.write_text(until)
+    except OSError:
+        pass
+    return until
+
+
 def login(page, user: str, pw: str) -> None:
+    if _marker_expired():
+        CODE_NEEDED_MARKER.unlink(missing_ok=True)  # stale: allow one fresh attempt (at most one code email per 6 h)
     if CODE_NEEDED_MARKER.exists():
         raise LoginBlocked("waiting for the emailed confirmation code since "
                            f"{CODE_NEEDED_MARKER.read_text().strip() or '?'}: no new login attempted (each one emails a new "
@@ -89,6 +131,8 @@ def login(page, user: str, pw: str) -> None:
     html = page.content()
     if BOT_RX.search(html) and not total_count(html):
         raise RuntimeError("BidNet robot check served on the login page; try again later")
+    if _page_logged_in(page):
+        return  # single sign-on already restored the session (IdP session still alive): nothing to type
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
     _submit_login_window(page, user, pw)
     page.wait_for_load_state("domcontentloaded")
@@ -195,16 +239,17 @@ def clear_code() -> None:
 
 
 def is_logged_in(page) -> bool:
-    """Logged in = a normal BidNet page WITHOUT the login window. (Text like 'my account' is useless:
-    the logged-out page has aria-label="my account" on the mobile avatar button.)"""
+    """Logged in = a normal BidNet page showing the logout link and no login window. (Text like 'my account'
+    is useless: the logged-out page has aria-label="my account" on the mobile avatar button; the URL is
+    useless after an SSO redirect.)"""
     page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1500)
     html = page.content()
-    if "authentication/login" in page.url or (BOT_RX.search(html) and not total_count(html)):
+    if BOT_RX.search(html) and not total_count(html):
         return False
     if "bidnet" not in (page.title() or "").lower():
         return False  # not a BidNet page at all (blank, error, proxy page)
-    return page.locator(LOGIN_FORM_SEL).count() == 0
+    return _page_logged_in(page)
 
 
 def _fill_first(page, sels, value):
@@ -394,6 +439,7 @@ def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict,
             return
         if not rows and BOT_RX.search(html) and not total_count(html):
             totals["_bot_check"] = True
+            totals["_cooldown_until"] = start_cooldown()
             session.debug_dump("bot-check")
             errors.append(f"BidNet robot check (rate limit) on {url}: scan stopped; previous BidNet results kept")
             return

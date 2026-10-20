@@ -17,6 +17,7 @@ import os
 import sys
 import tempfile
 import threading
+import time
 from pathlib import Path
 from urllib.parse import parse_qs
 
@@ -352,6 +353,23 @@ r4 = run.scan(["bidnet"])
 check("source not in this run: rows kept and health row marked not scanned",
       "samgov:seed1" in r4["found"] and r4["health"]["samgov"].get("not_scanned_this_run") is True
       and "NOT SCANNED THIS RUN" in (TMP / "REPORT_FILE.json").read_text(), r4["health"].get("samgov"))
+# robot-check cool-down: BidNet skipped, previous rows kept, nothing closed
+until = bidnet.start_cooldown()
+check("cool-down recorded", bidnet.cooldown_until() == until, until)
+_cd_before = (bidnet.cooldown_until(), str(common.BIDNET_COOLDOWN_FILE), common.BIDNET_COOLDOWN_FILE.exists(),
+              run.health_check(["bidnet"])["bidnet"]["reachable"])
+r5 = run.scan(["bidnet"])
+check("during cool-down BidNet is not contacted and its rows are carried forward",
+      "COOL-DOWN" in (r5["health"]["bidnet"]["login_note"] or "") and not r5["closed"]
+      and any(k.startswith("bidnet:") for k in r5["found"]),
+      (r5["health"]["bidnet"].get("login_note"), list(r5["closed"]), _cd_before, bidnet.__file__, run.bidnet is bidnet))
+common.BIDNET_COOLDOWN_FILE.unlink()
+check("cool-down cleared", bidnet.cooldown_until() is None)
+# a stale code-needed marker expires so a new attempt is allowed (max one code email per 6 h)
+common.CODE_NEEDED_MARKER.write_text("2026-01-01T00:00:00+00:00")
+os.utime(common.CODE_NEEDED_MARKER, (time.time() - 7 * 3600,) * 2)
+check("code-needed marker older than 6 h is expired", bidnet._marker_expired())
+common.CODE_NEEDED_MARKER.unlink()
 srv.shutdown()
 
 # ---------------------------------------------------------------- part 3: BidNet confirmation code from the mailbox

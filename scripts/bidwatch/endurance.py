@@ -89,7 +89,7 @@ def one_check(n: int, seen: set, force: str | None) -> dict:
                 rec["docs"] = len(d.get("documents") or [])
                 rec["sol"] = d.get("sol")
             # still logged in after all that?
-            rec["still_logged_in"] = bool(ok and ses.page.locator(bidnet.LOGIN_FORM_SEL).count() == 0)
+            rec["still_logged_in"] = bool(ok and bidnet._page_logged_in(ses.page))
             ses.save()
         finally:
             ses.close()

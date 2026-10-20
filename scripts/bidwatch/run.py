@@ -36,9 +36,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.bidwatch import bidnet, bonfire, samgov  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
-    DEBUG_DIR, HEALTH_FILE, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
+    DEBUG_DIR, HEALTH_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
     iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
 )
+
+SCANNED_BY = os.environ.get("BIDWATCH_HOST") or __import__("socket").gethostname()
 
 HOSTS = {
     "bidnet": "https://www.bidnetdirect.com/",
@@ -108,6 +110,11 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
 
     keywords = sorted({k for p in profiles.values() for k in p.get("bidnet_keywords", [])})
     browser_sources = [s for s in ("bidnet", "bonfire") if s in sources and health[s]["reachable"]]
+    if "bidnet" in browser_sources and bidnet.cooldown_until():
+        # BidNet served its robot check recently: leave it alone, keep the last good data (carried forward below)
+        browser_sources.remove("bidnet")
+        health["bidnet"]["complete"] = False
+        health["bidnet"]["login_note"] = f"COOL-DOWN after a robot check, until {bidnet.cooldown_until()}"
 
     if browser_sources:
         from scripts.bidwatch.browser import Browser, PortalSession
@@ -250,7 +257,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     # health.json keeps the last known state of sources that were not part of this run
     health_all = {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items() if s not in health},
                   **health}
-    save_json(HEALTH_FILE, {"checked_at": started, "sources": health_all})
+    save_json(HEALTH_FILE, {"checked_at": started, "scanned_by": SCANNED_BY, "sources": health_all})
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch}
     REPORT_FILE.write_text(render(result))
@@ -511,6 +518,14 @@ def main() -> int:
         print(f"[{iso()}] first scan in {a.start_in} min", flush=True)
         _heartbeat(cycle=0, next_at=iso(), interval_min=a.interval, note=f"first scan in {a.start_in} min")
         time.sleep(a.start_in * 60)
+    import fcntl
+    RUN_LOCK.parent.mkdir(parents=True, exist_ok=True)
+    lock = open(RUN_LOCK, "w")
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        print(f"[{iso()}] another scan holds {RUN_LOCK}; not starting a second one", flush=True)
+        return 4
     cycle = 0
     while True:
         cycle += 1
@@ -520,16 +535,20 @@ def main() -> int:
             r = scan(sources, enrich_details=not a.no_detail)
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
             ok = any(v["count"] for v in r["health"].values())
+            # sources that returned nothing fresh this run (blind, carried forward, cool-down): exit 3 so a
+            # scheduler/monitor sees a degraded run instead of a green one
+            degraded = [s for s, v in r["health"].items() if not v.get("not_scanned_this_run")
+                        and (v.get("carried_forward") or not v["reachable"] or (not v["count"] and s != "dibbs"))]
             logins = {s: v.get("login_note") for s, v in r["health"].items()}
         except Exception:  # noqa: BLE001 - never let the loop die
             traceback.print_exc()
-            ok, logins = False, {}
+            ok, logins, degraded = False, {}, ["scan crashed"]
         push = git_push_results(started) if a.push else "not pushed (--push not set)"
-        print(f"[{iso()}] cycle {cycle}: ok={ok} sync={sync} push={push} logins={logins}", flush=True)
+        print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} sync={sync} push={push} logins={logins}", flush=True)
         _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
                    next_at=iso() if not a.loop else None, interval_min=a.interval)
         if not a.loop:
-            return 0 if ok else 2
+            return (0 if not degraded else 3) if ok else 2
         time.sleep(max(5, a.interval) * 60)
 
 

@@ -35,6 +35,11 @@ CODE_FILE = STATE_HOME / "bidnet_code"
 # scanner makes NO further password logins (each one would email a fresh code). Delete it when someone is
 # ready to supply the code within the wait window.
 CODE_NEEDED_MARKER = STATE_HOME / "bidnet_code_needed"
+CODE_MARKER_TTL_H = 6  # a stale "waiting for a code" marker expires so the scanner tries again (one email per 6 h max)
+# After BidNet serves its AWS WAF robot check, skip BidNet until this time (ISO UTC) and keep the last good data.
+BIDNET_COOLDOWN_FILE = STATE_HOME / "bidnet_cooldown_until"
+BIDNET_COOLDOWN_H = 2
+RUN_LOCK = STATE_HOME / "bidwatch.lock"  # one scan at a time on a machine
 
 
 class LoginBlocked(RuntimeError):
