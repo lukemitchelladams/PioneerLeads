@@ -426,3 +426,7 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   always carries a note + error; a partial --sources run marks untouched sources NOT SCANNED THIS RUN; the
   loop's git steps retry on index.lock. Container restart at ~03:14 killed the loop (restarted); the hourly
   WORKER trigger is the safety net. Tests: 76+.
+- 03:30 UTC: loop runs `run.py --loop --interval 60 --push --start-in 50` (first scan ~04:19Z, then hourly;
+  the WORKER trigger scans at :50). To stop it: `for p in $(pgrep -f '^python3 scripts/bidwatch/run.py'); do
+  kill $p; done` — never `pkill -f 'run.py --loop'` from a shell whose own command line contains that text
+  (it kills the shell first; happened twice tonight). Commit before any restart: a dirty tree breaks its push.
