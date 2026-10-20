@@ -1,4 +1,4 @@
-# Document packages: verified by hand 2026-10-19 20:10 MT (CLAUDE.md rule 0c)
+# Document packages: verified by hand 2026-10-19 20:10 MT, Littleton updated 2026-10-19 22:30 MT (CLAUDE.md rule 0c)
 
 Checked each solicitation's attachment list / table of contents line by line against the files in
 bids/<bid>/docs/, and against the PDF pages (an exhibit printed inside the main PDF counts as in hand).

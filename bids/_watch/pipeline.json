@@ -66,7 +66,7 @@
    "due": "2026-10-28T14:00:00-06:00",
    "portal": "RMEPS (BidNet)",
    "decision": "GO",
-   "decision_note": "CRM read the full RMEPS package via Luke's BidNet (10/19): 6 price lines, $100k bond, $1M/$2M professional liability. Plumber replies due Thu. Attachments are on Luke's machine, not in this repo.",
+   "decision_note": "Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
    "prebid": "2026-10-09T10:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Plumbing sub",
@@ -594,26 +594,6 @@
   }
  ],
  "doc_gaps": [
-  {
-   "bid": "littleton-2126",
-   "item": "Attachment A Contract Certification Form",
-   "where": "RMEPS/BidNet, search 2126, Documents tab"
-  },
-  {
-   "bid": "littleton-2126",
-   "item": "Attachment B Sample Contract",
-   "where": "RMEPS/BidNet, Documents tab"
-  },
-  {
-   "bid": "littleton-2126",
-   "item": "Attachment C RMEPS Bid Question Response Guide",
-   "where": "RMEPS/BidNet, Documents tab"
-  },
-  {
-   "bid": "littleton-2126",
-   "item": "RMEPS pricing template",
-   "where": "RMEPS/BidNet, Documents tab"
-  },
   {
    "bid": "littleton-2126",
    "item": "Q&A / meeting notes (posts 10/21)",

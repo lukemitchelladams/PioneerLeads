@@ -447,3 +447,13 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - The background loop is retired (it dies with every container restart). Engine now: scheduled task
   trig_01792tC1P3WZhukYJtGaroxc fires INTO THIS SESSION hourly at :35 MT (logged-in scan, code from Gmail if
   ever asked, push); the :50 WORKER trigger stays as the public-data safety net.
+## 2026-10-19 22:30 MT — BIDNET LOGIN WORKS (HQ session, first real login 04:2x UTC)
+- Luke supplied BIDNET_USER/PASS to the HQ session (stored in ~/.brownbison/env in that container only). Fix: the login window
+  is collapsed until the header Login button (#header_btnLogin) opens it. Logged in first try, NO confirmation code was asked.
+  Session saved to ~/.brownbison/sessions/bidnet.json. Documents load only after clicking the "Documents & Items" tab
+  (a#attachmentDownloadLnk_<id> → .../docs-items/<id>/attachment-download); enrich()/download_docs() handle it.
+- Littleton RFQ 21-26 Attachments A, B, C now in bids/littleton-on-call-plumbing/docs/ (5bd5ef6). The "pricing template" is
+  the RMEPS Items list (6 lines, entered in-portal), saved as Pricing-Items-RMEPS.md.
+- ARCHITECTURE (Luke rejected the background loop; it died with container restarts): engine = trig_01792tC1P3WZhukYJtGaroxc,
+  fires INTO the HQ session hourly at :35 MT: one logged-in scan with --push in the foreground, docs copied to bid folders.
+  My :50 heartbeat trig_01PrBNrQswzothmXa4rqo56V was disabled by HQ. This WORKER keeps :21 (GovTribe/inbox/dashboard/triage).
