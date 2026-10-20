@@ -188,6 +188,8 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send(f"<html><head><title>Colorado Bids | Fake BidNet Direct</title></head><body>"
                               f"<a aria-label='my account' href='#'>avatar</a>{body}</body></html>")
         if p.startswith("/colorado/solicitations/open-bids"):
+            if "selectedContent=BROKEN" in p:
+                return self._send("<h1>Service unavailable</h1>", 503)
             if "/page2" in p:
                 return self._send("<table><tr><td><a href='/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000500002'>"
                                   "On-Call Commercial Plumbing Services RFQ 2126</a></td><td>Closing 10/28/2026</td></tr></table>")
@@ -286,6 +288,12 @@ check("collect follows pagination", len(rows) == 3, (len(rows), errs))
 check("complete statewide list -> no keyword searches", KW_HITS["n"] == 0, KW_HITS)
 bidnet.collect_open(s3, ["hvac"], force_keywords=True)
 check("force_keywords runs keyword searches", KW_HITS["n"] == 1, KW_HITS)
+_tabs = bidnet.CO_TABS
+bidnet.CO_TABS = ["BUYER", "BROKEN"]  # second tab 404s on the fake site, like a list page that failed to load
+_r, _e, _t = bidnet.collect_open(s3, [])
+check("a statewide tab that fails marks the scan incomplete (previous bids are carried forward, none closed)",
+      _t.get("_complete") is False and "statewide BROKEN" in _t.get("_failed", []) and len(_r) == 3, (_t, len(_r), _e))
+bidnet.CO_TABS = _tabs
 s3.close()
 b.close()
 

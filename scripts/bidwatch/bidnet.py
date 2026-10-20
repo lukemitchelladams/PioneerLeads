@@ -314,6 +314,21 @@ def page_url(start: str, n: int) -> str:
     return f"{path}/page{n}" + (f"?{q}" if q else "")
 
 
+def _content(page, tries: int = 4) -> str:
+    """page.content() fails with 'page is navigating' when BidNet's scripts reload the page right after
+    load (seen 2026-10-20 03:01 on the statewide list). Wait for the navigation to settle and retry."""
+    last: Exception | None = None
+    for i in range(tries):
+        try:
+            page.wait_for_load_state("load", timeout=20000)
+            return page.content()
+        except Exception as e:  # noqa: BLE001
+            last = e
+            page.wait_for_timeout(1500 * (i + 1))
+    assert last is not None
+    raise last
+
+
 def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict, max_pages: int) -> None:
     page, url, n = session.page, start, 0
     while url and n < max_pages:
@@ -321,10 +336,12 @@ def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict,
         try:
             page.goto(url, wait_until="domcontentloaded")
             page.wait_for_timeout(800)
-            html = page.content()
+            html = _content(page)
             rows, nxt = parse_listing(html, url)
         except Exception as e:  # noqa: BLE001
             errors.append(f"BidNet list {url}: {type(e).__name__}: {str(e)[:150]}")
+            totals.setdefault(name, None)  # this list did not finish: the scan is incomplete
+            totals.setdefault("_failed", []).append(name)
             return
         if not rows and BOT_RX.search(html) and not total_count(html):
             totals["_bot_check"] = True
@@ -333,9 +350,11 @@ def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict,
             return
         if n == 1:
             totals[name] = total_count(html)
-            if not rows and totals[name] != 0:
+            if not rows and totals[name] != 0:  # not a list page at all (error page, redirect, WAF interstitial)
                 session.debug_dump("empty-list")
                 errors.append(f"BidNet list parsed 0 rows: {url} (debug HTML saved)")
+                totals.setdefault("_failed", []).append(name)
+                return
         for r in rows:
             r["list"] = "aggregate" if "AGGREGATE" in name else "rmeps"
             out.setdefault(r["id"], {**r, "source": "bidnet"})
@@ -353,8 +372,12 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
     for t in CO_TABS:
         if not totals.get("_bot_check"):
             _walk(session, f"statewide {t}", f"{CO_OPEN}?{urlencode({'selectedContent': t})}", out, errors, totals, max_pages)
-    expected = sum(v for k, v in totals.items() if k.startswith("statewide") and v)
-    totals["_complete"] = bool(expected) and len(out) >= expected and not totals.get("_bot_check")
+    statewide = {k: v for k, v in totals.items() if k.startswith("statewide")}
+    expected = sum(v for v in statewide.values() if v)
+    # complete only when EVERY statewide tab reported its total and we read at least that many rows;
+    # a tab that errored out (total None) means the previous results must be carried forward
+    totals["_complete"] = (len(statewide) == len(CO_TABS) and all(v is not None for v in statewide.values())
+                           and bool(expected) and len(out) >= expected and not totals.get("_bot_check"))
     if totals.get("_bot_check"):
         return out, errors, totals
     if force_keywords or not expected or len(out) < expected:
