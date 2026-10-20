@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-20T02:15:34+00:00",
+  "sources": {
+    "bidnet": {
+      "complete": true,
+      "count": 584,
+      "creds": {
+        "BIDNET_PASS": false,
+        "BIDNET_USER": false
+      },
+      "errors": [],
+      "last_success": "2026-10-20T02:15:34+00:00",
+      "logged_in": false,
+      "login_note": "BIDNET_USER/BIDNET_PASS not set",
+      "matches": 81,
+      "reach_note": "HTTP 202",
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 184,
+        "statewide BUYER": 400
+      }
+    },
+    "bonfire": {
+      "count": 4,
+      "creds": {
+        "BONFIRE_PASS": false,
+        "BONFIRE_USER": false
+      },
+      "errors": [
+        "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
+      ],
+      "last_success": "2026-10-20T02:15:34+00:00",
+      "logged_in": false,
+      "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
+      "matches": 1,
+      "reach_note": "HTTP 200",
+      "reachable": true
+    },
+    "dibbs": {
+      "count": 307,
+      "creds": {},
+      "errors": [],
+      "last_success": "2026-10-20T02:15:34+00:00",
+      "logged_in": false,
+      "login_note": "",
+      "matches": 189,
+      "reach_note": "HTTP 200",
+      "reachable": true,
+      "site_totals": {
+        "3020": 1246,
+        "3030": 309,
+        "3110": 2675,
+        "3130": 338,
+        "3910": 24,
+        "3920": 40,
+        "3950": 324,
+        "4610": 234
+      }
+    },
+    "samgov": {
+      "count": 0,
+      "creds": {
+        "SAM_API_KEY": false
+      },
+      "errors": [
+        "SAM_API_KEY not set"
+      ],
+      "last_success": null,
+      "logged_in": false,
+      "login_note": "SAM_API_KEY not set",
+      "matches": 0,
+      "reach_note": "HTTP 404",
+      "reachable": true
+    }
+  }
+}
