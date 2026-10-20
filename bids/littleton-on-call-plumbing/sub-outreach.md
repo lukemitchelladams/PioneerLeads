@@ -46,3 +46,5 @@ master license number, Littleton registration, insurance, and rates wins the slo
 ## Delivery status (from mailer-daemon, read 2026-10-20 07:20 UTC)
 - info@beattieplumbing.com: **delayed** (4.4.1, recipient mail server not accepting connections); Gmail retries until Wed 2026-10-21 ~23:40 PT. Also cc'd beattieplumbingsvc@gmail.com (no bounce on that address). If no reply by Wed, call.
 - info@simplysewersdenver.com: **delayed** (4.4.1, same cause); Gmail retries until Wed 2026-10-21 ~23:40 PT. Call if silent.
+
+- 2026-10-20 ~06:00Z: SECOND delay notices from Gmail for info@beattieplumbing.com (05:46Z) and info@simplysewersdenver.com (06:53Z): 'temporary problem ... will retry for 46-47 more hours' (to about 2026-10-22 05:00Z). Treat both as unreached; Luke to call.

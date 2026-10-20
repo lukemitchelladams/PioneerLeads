@@ -35,3 +35,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-19 23:23 MT hourly: inbox 1 new (GovTribe sales 'Set up notifications', promo; saved searches already exist). 7 others seen.
 - 2026-10-20 01:20 MT hourly: inbox 3 new: DMARC report (noise); Gmail DELAY notices for Littleton plumber outreach to info@beattieplumbing.com and info@simplysewersdenver.com (4.4.1, retrying until Wed 10/21 PM) — logged in sub-outreach.md.
 - 2026-10-20 02:22 MT hourly: inbox 0 new (10 threads/24h all seen).
+- 2026-10-20 03:22 MT hourly: inbox 1 new, noise (Google Workspace terms notice). Second Gmail DELAY notices for Beattie (05:46Z) and Simply Sewers (06:53Z): still retrying ~46-47 h more (to ~2026-10-22 05:00Z). Colorado Power Wash / LM Inc RTD threads already seen.
