@@ -1,23 +1,177 @@
 {
-  "_comment": "GovTribe open-bid review ledger for the hourly check. baseline: every open Colorado state/local record (165, due >= 2026-10-20) was reviewed 2026-10-19 19:30 MT; newest posting GovTribe held was 2026-10-14. Each hour: triage any open CO record posted after last_posted_reviewed or not in `triaged`, then add it here. `watched` holds updated_at/due/file names per watched govtribe_id for addendum detection.",
-  "baseline_reviewed_at": "2026-10-19T19:30:00-06:00",
-  "baseline_count": 165,
-  "last_posted_reviewed": "2026-10-14",
-  "triaged": {
-    "6ad21a4444ea9a49cf0994bf": "GO: 27J Speaker Cabling (low-voltage), due 2026-10-28 10:00 by email emorales@sd27j.net, no walk found",
-    "6ac78e093e2326616e082a6f": "EVALUATE: Jeffco Dome Glass, pre-bid 10/15 passed ('should attend'), ask Pulford before 10/21 10:00 questions deadline",
-    "6a2173ec20564a33670a0399": "EVALUATE: Elbert County fencing, due 10/27 12:30, questions due 10/20 13:00",
-    "6abfa4f2de90cc3d3c036702": "EVALUATE-low: DPS BD2730 GC prequal, due 10/21 10:00, possible Round 2",
-    "6abfa500de90cc3d3c036710": "NO: Westminster golf bunker (earthwork), mandatory walk 10/20 10:30",
-    "6ac63c7125a3b08d0b072bf7": "NO: Aspen Cozy Point cabin, mandatory walk 10/20 13:00 Pitkin County",
-    "6ac78dfb3e2326616e082a68": "NO: window/curtain wall replacement + abatement, outside trades",
-    "6ac78e063e2326616e082a6d": "NO: School of Mines, A/E qualifications",
-    "6ac63c7625a3b08d0b072bf9": "NO: Poudre GC on-demand, due 10/22, needs 3 K-12 projects",
-    "6ab276ceb4ab33ea4809d590": "NO: Aspen waste hauling",
-    "6abfa4ecde90cc3d3c036700": "NO: Jeffco jail door hardware, specialty, conference passed",
-    "6abf8798b960f0c48a0793b6": "NO: CBI GJ HVAC/lighting, mandatory walk 10/12 missed, $3.1M, 2 projects >$3M",
-    "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
-    "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19"
+ "_comment": "GovTribe open-bid review ledger for the hourly check. baseline: every open Colorado state/local record (165, due >= 2026-10-20) was reviewed 2026-10-19 19:30 MT; newest posting GovTribe held was 2026-10-14. Each hour: triage any open CO record posted after last_posted_reviewed or not in `triaged`, then add it here. `watched` holds updated_at/due/file names per watched govtribe_id for addendum detection.",
+ "baseline_reviewed_at": "2026-10-19T19:30:00-06:00",
+ "baseline_count": 165,
+ "last_posted_reviewed": "2026-10-14",
+ "triaged": {
+  "6ad21a4444ea9a49cf0994bf": "GO: 27J Speaker Cabling (low-voltage), due 2026-10-28 10:00 by email emorales@sd27j.net, no walk found",
+  "6ac78e093e2326616e082a6f": "EVALUATE: Jeffco Dome Glass, pre-bid 10/15 passed ('should attend'), ask Pulford before 10/21 10:00 questions deadline",
+  "6a2173ec20564a33670a0399": "EVALUATE: Elbert County fencing, due 10/27 12:30, questions due 10/20 13:00",
+  "6abfa4f2de90cc3d3c036702": "EVALUATE-low: DPS BD2730 GC prequal, due 10/21 10:00, possible Round 2",
+  "6abfa500de90cc3d3c036710": "NO: Westminster golf bunker (earthwork), mandatory walk 10/20 10:30",
+  "6ac63c7125a3b08d0b072bf7": "NO: Aspen Cozy Point cabin, mandatory walk 10/20 13:00 Pitkin County",
+  "6ac78dfb3e2326616e082a68": "NO: window/curtain wall replacement + abatement, outside trades",
+  "6ac78e063e2326616e082a6d": "NO: School of Mines, A/E qualifications",
+  "6ac63c7625a3b08d0b072bf9": "NO: Poudre GC on-demand, due 10/22, needs 3 K-12 projects",
+  "6ab276ceb4ab33ea4809d590": "NO: Aspen waste hauling",
+  "6abfa4ecde90cc3d3c036700": "NO: Jeffco jail door hardware, specialty, conference passed",
+  "6abf8798b960f0c48a0793b6": "NO: CBI GJ HVAC/lighting, mandatory walk 10/12 missed, $3.1M, 2 projects >$3M",
+  "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
+  "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19",
+  "fed:d25cf386f88c43619ddbc95a424ead75": "NO: USPS Denver P&DC roof replacement (roofing, NAICS 236220), due 2026-11-20",
+  "fed:24ffa6d27a674212a41ade72d91ec106": "NO (Jones Bearing): BEP ergonomic drum handlers, not bearings/conveyor product"
+ },
+ "watched": {
+  "6ac78e133e2326616e082a75": {
+   "due": "2026-11-09T07:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
   },
-  "watched": {}
+  "6abfa513de90cc3d3c036716": {
+   "due": "2026-10-23T06:00:00Z",
+   "updated_at": "2026-09-29T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac78e3a3e2326616e082a81": {
+   "due": "2026-10-28T06:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6a2173ec20564a33670a0399": {
+   "due": "2026-10-27T06:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf",
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac78e093e2326616e082a6f": {
+   "due": "2026-11-04T07:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ad21b8444ea9a49cf0994d3": {
+   "due": "2026-11-12T07:00:00Z",
+   "updated_at": "2026-10-10T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ad21a4444ea9a49cf0994bf": {
+   "due": "2026-10-28T06:00:00Z",
+   "updated_at": "2026-10-14T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac78dcf3e2326616e082a59": {
+   "due": "2026-11-02T07:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ace253950b3706c0b0fa828": {
+   "due": "2026-10-23T03:00:00Z",
+   "updated_at": "2026-10-02T03:00:00Z",
+   "files": [
+    "3-HVAC PM Appendix A.pdf",
+    "1-Professional Services Agreement-SAMPLE 9.27.24.pdf",
+    "2-Town of Parker HVAC Preventive Maintenance Price Sheet Forms.xlsx"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6abfa4d2de90cc3d3c0366f2": {
+   "due": "2026-10-28T06:00:00Z",
+   "updated_at": "2026-09-30T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac78dd93e2326616e082a61": {
+   "due": "2026-10-26T06:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6aba3fe8b2e0f86b0e00dc39": {
+   "due": "2026-11-16T21:00:00Z",
+   "updated_at": "2026-10-06T14:56:48Z",
+   "files": [
+    "126DM016_Pricing_Sheet.xlsx",
+    "Bus_Shelter_Maintenance_Services_(15%_SBE_Goal).pdf",
+    "Bus_Shelter_Maintenance_Services_SOW_2026.pdf",
+    "126DM006_Form_of_Contract.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ad21a1f44ea9a49cf0994b7": {
+   "due": "2026-11-12T07:00:00Z",
+   "updated_at": "2026-10-14T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac63c5225a3b08d0b072be8": {
+   "due": "2026-11-04T07:00:00Z",
+   "updated_at": "2026-10-05T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac78e1e3e2326616e082a79": {
+   "due": "2026-10-29T06:00:00Z",
+   "updated_at": "2026-10-07T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ad219dd44ea9a49cf0994a2": {
+   "due": "2026-10-28T06:00:00Z",
+   "updated_at": "2026-10-14T06:00:00Z",
+   "files": [
+    "C05_1240LT27Q0010_Final.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ac63c5925a3b08d0b072bed": {
+   "due": "2026-10-22T06:00:00Z",
+   "updated_at": "2026-10-05T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  },
+  "6ad21a0944ea9a49cf0994ae": {
+   "due": "2026-12-01T07:00:00Z",
+   "updated_at": "2026-10-14T06:00:00Z",
+   "files": [
+    "biddoc.pdf"
+   ],
+   "snap_at": "2026-10-20T02:25:00Z"
+  }
+ },
+ "last_hourly_check": "2026-10-20T02:30:00Z: 0 new CO state/local since 2026-10-14; federal CO 1 new (NO); PSC 1 new (NO); 18 watched snapshotted"
 }
