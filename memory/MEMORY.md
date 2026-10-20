@@ -592,3 +592,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   rejected by Gmail (no send). The 11:54 DCSD price-sheet attachment could not be verified afterwards: its RAW came back inline,
   not as a file. Do this instead: create_draft with the attachment → get_draft RAW (saved to tool-results when large) →
   scratchpad extract_att.py + sha256 vs the local file → send the draft by draftId. Keep attachments small (one file when possible).
+- 2026-10-20 12:55 MT (MAIN): NEW Town of Parker RFP 26-021-1 Generator Maintenance & Repair (7 diesel gensets + ATS, 6 sites). No site walk (RFP §1.2). Questions 10/30 10:00; due 11/06 14:00 via RMEPS + Bonfire. Pricing sheets/forms not in hand. Folder bids/parker-generator-maintenance/; pushed 388d6ab. Awaiting Luke GO; sub candidate research running (scratchpad parker_gen_subs.md). Inbox 12:45 MT: no reply yet from Alex/Rich/Town; Jake draft r8641098935225056154 still unsent.
