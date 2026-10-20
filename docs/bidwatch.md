@@ -6,7 +6,7 @@
 |---|---|---|
 | BidNet Direct / Rocky Mountain E-Purchasing (all Colorado agencies on BidNet) | Statewide Colorado open-bids list (every page) + a search per profile keyword; detail page of every match and every watched bid: closing date, questions deadline, pre-bid / site walk (MANDATORY or not, with the quoted text), document list | `BIDNET_USER`, `BIDNET_PASS` (documents need it; lists are public) |
 | Euna Procurement, formerly Bonfire (Town of Parker; add others in `watch_profiles.json` -> `bonfire_orgs`) | Open opportunities + each opportunity's Events table (questions, site visit, close) | `BONFIRE_USER`, `BONFIRE_PASS` (documents only) |
-| SAM.gov (federal) | Everything still open in Colorado, all types: solicitations plus UPCOMING presolicitations, sources sought, special notices; Jones Bearing PSC codes nationwide | `SAM_API_KEY` |
+| SAM.gov (federal) | API: everything still open in Colorado, all types: solicitations plus UPCOMING presolicitations, sources sought, special notices; Jones Bearing PSC codes nationwide. Nightly bulk file (`samgov_bulk.py`, no key): adds notices with a blank place of performance and a Colorado buying office, and keeps SAM.gov discovery working when the API is down or the key is missing | `SAM_API_KEY` (API only) |
 | DLA DIBBS (Jones Bearing) | Open RFQs by FSC 3110/3130/3020/3910/3920 | none to view |
 
 Each scan writes:
@@ -82,16 +82,18 @@ devices ... are, therefore, prohibited." The cloud scanner therefore never reads
 | BidNet Colorado | Statewide list read completely: BUYER tab (RMEPS member agencies) 400 + AGGREGATE tab 184 = 584, equal to the counts the site prints. Pages are `/open-bids/page2?...` (25 rows), rows are `tr.mets-table-row`. Keyword searches (`?keywords=`) now run only if the statewide pass comes back short. |
 | BidNet detail / documents | Public visitors see only location, publication date and closing date+time. Issuing org, solicitation #, description, **documents** and buyer contact are "Registered members only": BIDNET_USER/BIDNET_PASS are required for documents and pre-bid text. Without a login only watched bids' detail pages are opened. |
 | Euna/Bonfire (Parker) | Open list read from `/PublicPortal/getOpenPublicOpportunitiesSectionData` (JSON, DateClose is UTC; converted to Mountain time). Opportunity pages (`/opportunities/<id>`) return a **Cloudflare bot challenge** to this network (HTTP 403, `cf-mitigated: challenge`); the scanner reports that instead of guessing. RTD's OpenGov portal does the same. |
-| SAM.gov | Needs `SAM_API_KEY` (not set). |
-| DLA DIBBS | Works without login. RFQ grid sorted by Return By descending and paged until expired; ~300 open RFQs across the Jones Bearing FSCs. Solicitation numbers are `SPE4A0-26-T-2395` style (3-char suffix after SPE: the old regex missed every row). |
+| SAM.gov | API key set and working. Nightly bulk file verified 2026-10-20 05:28 UTC: 205 MB in 3 s, 14,033 open notices, 68 matching (17 Brown Bison, 51 Jones Bearing), 30 of them not found by the API path, e.g. a Rocky Mountain Regional VA radiant panel replacement with no stated place of performance. |
+| DLA DIBBS | From Luke's own computer only (user agreement FAQ #45 prohibits cloud and proxy access). Works without login. RFQ grid sorted by Return By descending and paged until expired; ~300 open RFQs across the Jones Bearing FSCs. Solicitation numbers are `SPE4A0-26-T-2395` style (3-char suffix after SPE: the old regex missed every row). |
 
 Real-page fixtures for all of the above: `tests/fixtures/`, exercised by `python3 tests/test_bidwatch.py`.
 
 ## Honest limits
-- List selectors are verified against the live sites (2026-10-20). The BidNet and Bonfire LOGIN flows are
-  still only tested against the simulated site, because no credentials were set during the live run.
-- A `--sources` run limited to some sources rewrites open_bids.json with only those sources; run all
-  sources for the hourly check.
+- List selectors are verified against the live sites (2026-10-20). The BidNet login is verified live
+  (2026-10-20: saved-session reuse, recovery after forced session expiry, documents on Littleton 21-26);
+  the Bonfire login is still only tested against the simulated site.
+- A `--sources` run limited to some sources keeps the other sources' last rows, marked NOT SCANNED THIS RUN.
+- The SAM.gov bulk file has no attachments and lags by up to a day (rebuilt nightly around 03:30 UTC); the API
+  stays first for same-day postings and documents.
 - SAM.gov caps API calls (about 10/day without an entity role, 1,000/day with one). The scanner tracks a
   daily budget (`SAM_DAILY_BUDGET`, default 900) and uses ~2-6 calls per scan.
 - RTD (OpenGov) is not scraped yet; it is on the watchlist for the hourly GovTribe check.

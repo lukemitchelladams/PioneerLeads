@@ -35,7 +35,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from scripts.bidwatch import bidnet, bonfire, samgov  # noqa: E402
+from scripts.bidwatch import bidnet, bonfire, samgov, samgov_bulk  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
     iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
@@ -175,6 +175,8 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["samgov"]["login_note"] = "API key" if health["samgov"]["creds"]["SAM_API_KEY"] else "SAM_API_KEY not set"
         for r in rows.values():
             found[key(r)] = r
+    if "samgov" in sources:
+        _merge_sam_bulk(found, prev, health["samgov"], profiles)
     if "samgov" in sources and health["samgov"]["count"] == 0:
         # never a silent zero: say why (no key, probe/API down) so a reader does not mistake it for 'no bids'
         h = health["samgov"]
@@ -265,6 +267,38 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     return result
 
 
+def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
+    """Add the nightly SAM.gov bulk file's matches (no API key needed; samgov_bulk.py) under the API's rows.
+    The API stays first: it has attachments and today's postings. The file adds notices the API's state query
+    cannot see (blank place of performance, Colorado buying office) and keeps SAM.gov alive without the API."""
+    api_rows = [b for b in found.values() if b["source"] == "samgov"]
+    api_ok = bool(api_rows) and not h["errors"]
+    for b in api_rows:
+        b.setdefault("via", "api")
+    bulk, note = samgov_bulk.collect(profiles)
+    h["bulk_note"] = note
+    added = 0
+    for r in bulk.values():
+        k = key(r)
+        if k in found:
+            found[k]["via"] = "api+bulk"
+        else:
+            found[k] = r
+            added += 1
+    h["bulk_added"] = added
+    if bulk:
+        h["count"] += added
+        if not api_ok:  # last night's file lacks today's postings: keep the API's earlier rows, close nothing
+            h["complete"] = False
+        h["login_note"] = "; ".join(x for x in (h.get("login_note"), f"+{added} from the nightly bulk file") if x)
+        return
+    h["errors"].append(note)
+    for k, v in prev.items():  # file unavailable: keep the rows only it had found instead of reading them as closed
+        if v.get("source") == "samgov" and v.get("via") == "bulk" and k not in found \
+                and (days_until(v.get("closing")) or 0) >= 0:
+            found[k] = {**v, "carried_forward": True}
+
+
 def profile_hits(b: dict, profiles: dict) -> list[str]:
     """Keyword match, minus profiles tied to states the bid is not in (BidNet's list mixes in Wyoming)."""
     hits = match_profiles(f"{b.get('title', '')} {b.get('agency', '')}", profiles)
@@ -331,8 +365,11 @@ def _row(b: dict) -> str:
         walk = f"{pb.get('date') or '?'} {'MANDATORY' if pb.get('mandatory') else ('optional' if pb.get('mandatory') is False else 'check')}"
     d = days_until(b.get("closing"))
     due = f"{b.get('closing') or '?'}" + (f" ({d}d)" if d is not None else "")
+    where = ""
+    if b.get("source") == "samgov" and not b.get("state") and b.get("office_state"):
+        where = f" (place of performance not stated; {b['office_state']} buying office)"
     return (f"| {','.join(b.get('profiles', []))}{' WATCHED' if b.get('watched') else ''} | {b['source']} | "
-            f"{(b.get('agency') or '')[:40]} | {(b.get('title') or '')[:90]} | {due} | {walk} | {b.get('url') or ''} |")
+            f"{(b.get('agency') or '')[:40]} | {(b.get('title') or '')[:90]}{where} | {due} | {walk} | {b.get('url') or ''} |")
 
 
 HDR = "| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |\n|---|---|---|---|---|---|---|"

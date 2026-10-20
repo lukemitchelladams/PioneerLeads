@@ -363,6 +363,7 @@ b.close()
 # full scan against the fake site, with temp state files
 from scripts.bidwatch import run  # noqa: E402
 
+run.samgov_bulk.URL = "http://127.0.0.1:1/no-bulk-file-in-tests"  # part 5 serves a fake one
 for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE"]:
     setattr(run, name, TMP / f"{name}.json")
 (TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
@@ -589,6 +590,119 @@ for _k in ("HC_PING_SCAN", "HC_PING_SAMGOV", "HC_PING_BONFIRE"):
     del os.environ[_k]
 run._git, run._branch, run.scan, run._heartbeat, sys.argv = _saved
 _ps.shutdown()
+
+# ---------------------------------------------------------------- part 5: SAM.gov nightly bulk file (no key)
+print("SAM.gov nightly bulk file: download, cache, filters, merge into the scan")
+from scripts.bidwatch import samgov_bulk  # noqa: E402
+
+_today = _dtm.date.today()
+_fut, _past = (_today + _dtm.timedelta(days=20)).isoformat(), (_today - _dtm.timedelta(days=1)).isoformat()
+_COLS = ["NoticeId", "Title", "Sol#", "Department/Ind.Agency", "Sub-Tier", "Office", "PostedDate", "Type", "ArchiveDate",
+         "SetASide", "ResponseDeadLine", "NaicsCode", "ClassificationCode", "PopCity", "PopState", "Active", "State", "Link",
+         "Description"]
+
+
+def _sam_row(nid, title, typ="Solicitation", pop="CO", office="CO", naics="", psc="", deadline=_fut, archive=""):
+    return {"NoticeId": nid, "Title": title, "Sol#": "S-" + nid, "Department/Ind.Agency": "VETERANS AFFAIRS, DEPARTMENT OF",
+            "Sub-Tier": "VETERANS AFFAIRS", "Office": "NETWORK CONTRACT OFFICE 19", "PostedDate": f"{_today} 08:00:00",
+            "Type": typ, "ArchiveDate": archive, "SetASide": "", "ResponseDeadLine": f"{deadline}T16:00:00-06:00" if deadline else "",
+            "NaicsCode": naics, "ClassificationCode": psc, "PopCity": "", "PopState": pop, "Active": "Yes", "State": office,
+            "Link": f"https://sam.gov/workspace/contract/opp/{nid}/view", "Description": "Long text, with \"quotes\", commas\nand lines."}
+
+
+_rows = [
+    _sam_row("a1", "Boiler replacement, Building 2", naics="238220"),                                  # keep: PoP CO + NAICS
+    _sam_row("b2", "HVAC Preventive Maintenance \u2013 RMR VAMC", pop="", office="CO"),                 # keep: blank PoP, CO office
+    _sam_row("c3", "HVAC Preventive Maintenance", pop="WY", office="CO"),                               # drop: PoP decides
+    _sam_row("d4", "Asphalt paving and HVAC upgrade", naics="237310"),                                  # drop: exclude keyword
+    _sam_row("e5", "HVAC service award", typ="Award Notice", naics="238220"),                          # drop: not a bid
+    _sam_row("f6", "HVAC service", naics="238220", deadline=_past),                                     # drop: deadline passed
+    _sam_row("g7", "BEARING,BALL", pop="TX", office="PA", psc="3110"),                                  # keep JB: PSC 3110
+    _sam_row("h8", "31--WASHER,THRUST,FREE", pop="TX", office="PA", naics="332991", psc="31"),          # drop: NAICS-only nationwide
+    _sam_row("i9", "Radiant Panel Replacement", typ="Sources Sought", pop="", naics="238220", deadline="", archive=_fut),
+    _sam_row("j10", "Screw Conveyor Replacement", pop="FL", office="FL", psc="3990"),                   # keep JB: title phrase
+    _sam_row("k11", "Aircraft Apron Paving", pop="AZ", office="AZ", psc="Y1LB"),                        # drop: 'apron' alone
+]
+import csv as _csv  # noqa: E402
+import io as _io  # noqa: E402
+
+_buf = _io.StringIO()
+_w = _csv.DictWriter(_buf, fieldnames=_COLS, quoting=_csv.QUOTE_ALL)
+_w.writeheader()
+_w.writerows(_rows)
+SAM_CSV = _buf.getvalue().encode("cp1252")
+SAM_HITS = {"download": 0, "s3": 0}
+
+
+class _SamHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path.startswith("/download"):
+            SAM_HITS["download"] += 1
+            self.send_response(303)
+            self.send_header("Location", "/s3/ContractOpportunitiesFullCSV.csv?X-Amz-Signature=fake")
+            self.end_headers()
+            return
+        SAM_HITS["s3"] += 1
+        self.send_response(200)
+        self.send_header("Content-Type", "application/octet-stream")
+        self.send_header("Content-Length", str(len(SAM_CSV)))
+        self.end_headers()
+        self.wfile.write(SAM_CSV)
+
+    def log_message(self, *a):
+        pass
+
+
+_ss = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _SamHandler)
+threading.Thread(target=_ss.serve_forever, daemon=True).start()
+samgov_bulk.URL = f"http://127.0.0.1:{_ss.server_address[1]}/download?privacy=Public"
+samgov_bulk.MIN_BYTES = 100
+_p, _note = samgov_bulk.refresh()
+check("bulk file downloaded through the 303 redirect, outside the repo",
+      _p == samgov_bulk.CSV_FILE and SAM_HITS == {"download": 1, "s3": 1} and str(TMP) in str(_p), (_p, _note, SAM_HITS))
+samgov_bulk.refresh()
+check("same nightly file is not downloaded twice", SAM_HITS["download"] == 1, SAM_HITS)
+_old = time.time() - 30 * 3600
+os.utime(samgov_bulk.CSV_FILE, (_old, _old))
+samgov_bulk.refresh()
+check("a copy older than the latest nightly rebuild is refreshed", SAM_HITS["download"] == 2, SAM_HITS)
+_bulk, _bnote = samgov_bulk.collect(profiles)
+_bp = {k: v["profiles"] for k, v in _bulk.items()}
+check("bulk filters: CO place of performance + trade NAICS kept", _bp.get("a1") == ["brownbison"], _bp)
+check("bulk filters: blank place of performance + Colorado buying office kept, en dash decoded",
+      _bp.get("b2") == ["brownbison"] and _bulk["b2"]["office_state"] == "CO" and "\u2013" in _bulk["b2"]["title"], _bulk.get("b2"))
+check("bulk filters: a stated place of performance outside CO drops it, even with a CO office", "c3" not in _bp, _bp)
+check("bulk filters: exclude keywords, award notices and past deadlines drop", not {"d4", "e5", "f6"} & set(_bp), _bp)
+check("bulk filters: nationwide profile takes PSC 3110 and product phrases, not NAICS-only or 'apron' paving",
+      _bp.get("g7") == ["jones-bearing"] and _bp.get("j10") == ["jones-bearing"] and not {"h8", "k11"} & set(_bp), _bp)
+check("bulk filters: upcoming notice without a deadline kept until it archives",
+      "i9" in _bp and _bulk["i9"]["upcoming"] and _bulk["i9"]["closing"] is None, _bulk.get("i9"))
+check("bulk note says what it did", "matching of" in _bnote, _bnote)
+_ = samgov_bulk.collect(profiles)
+check("filtered rows cached until the file, profiles or date change", "parsed earlier" in _[1], _[1])
+
+# merge into a scan: API unreachable and no key -> the file carries SAM.gov, earlier API rows are kept
+_ob = json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())
+_ob["bids"]["samgov:api-today"] = {"source": "samgov", "id": "api-today", "title": "HVAC controls, posted today",
+                                   "closing": "2099-01-01", "profiles": ["brownbison"], "via": "api"}
+(TMP / "OPEN_BIDS_FILE.json").write_text(json.dumps(_ob))
+r6 = run.scan(["samgov"])
+_h6 = r6["health"]["samgov"]
+check("scan with the API down: SAM.gov rows come from the bulk file",
+      all(f"samgov:{i}" in r6["found"] for i in ("a1", "b2", "g7", "i9", "j10")) and r6["found"]["samgov:a1"]["via"] == "bulk"
+      and _h6["bulk_added"] == 5, (_h6.get("bulk_note"), _h6.get("bulk_added")))
+check("API down: the API's earlier rows are carried forward, nothing closed",
+      "samgov:api-today" in r6["found"] and not any(k.startswith("samgov") for k in r6["closed"]), list(r6["closed"]))
+check("report labels a notice whose place of performance is not stated",
+      "place of performance not stated; CO buying office" in (TMP / "REPORT_FILE.json").read_text())
+_ss.shutdown()
+samgov_bulk.URL = "http://127.0.0.1:1/gone"
+for _f in (samgov_bulk.CSV_FILE, samgov_bulk.KEPT_FILE):
+    _f.unlink(missing_ok=True)
+r7 = run.scan(["samgov"])
+check("bulk file unavailable: rows only it had found are carried forward, not closed",
+      "samgov:b2" in r7["found"] and r7["found"]["samgov:b2"].get("carried_forward")
+      and not any(k.startswith("samgov") for k in r7["closed"]), (list(r7["closed"]), r7["health"]["samgov"]["errors"]))
 
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)
