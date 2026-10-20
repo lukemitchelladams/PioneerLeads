@@ -544,3 +544,4 @@ prime this themselves). Folder bids/cherrycreek-custodial-27-007/README.md. Luke
 DCSD 003-27: BidNet says "Attendance Recommended" for the 10/14 walk; RFP boilerplate says no sign-in = rejected if
 a walkthrough is required. If Luke did not sign in, ask Rich Harley before pricing. Arapahoe 26-52: BidNet confirms
 mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
+- 2026-10-20 09:30Z dashboard blobs now: bids 40e27c9c6b3fceee594b4e0a5776744e (v10), events 3969f425543721b6c9152dea2ff678a2 (v9), sources 4cd3de048a9defc3fe42543ff8aa8fd2 (v8), doc_gaps 3c6254b8d48ffc0ea1c1cc42e3dac119 (v5), portal_feed f55ed21086e724f1c6333c86efb6db5b (v6). Ledger `triaged` now keys every CO record posted ≥ 10/14 (baseline rows keyed with verdicts) so the hourly "untriaged" check is deterministic.
