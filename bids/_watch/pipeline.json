@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-19T19:50:00-06:00",
+ "updated": "2026-10-20T09:01-06:00",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -232,10 +232,10 @@
    "prebid": "2026-10-26T14:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Brown Bison + Alex (snow) + custodial sub",
-   "subs": "Lightning Mobile: yes to all 42, COI in ($1M/$2M + $5M umbrella), prices due Fri 10/23; Colorado Power Wash call 10/20",
+   "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending.",
    "folder": "bids/rtd-bus-shelter-maintenance",
    "contact": "Marla Bainbridge, (303) 299-2411",
-   "sub_pricing": "Partial"
+   "sub_pricing": "In hand (Lightning Mobile)"
   },
   {
    "id": "westminster-26-002",
@@ -633,17 +633,20 @@
   {
    "bid": "littleton-2126",
    "when": "2026-10-23T17:00:00-06:00",
-   "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far"
+   "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far",
+   "kind": "Sub answers due"
   },
   {
    "bid": "sd27j-2021brrhs",
    "when": "2026-10-23T15:00:00-06:00",
-   "note": "Email emorales@sd27j.net; 4 questions drafted"
+   "note": "Email emorales@sd27j.net; 4 questions drafted",
+   "kind": "Questions due"
   },
   {
    "bid": "sd27j-2021brrhs",
    "when": "2026-10-23T17:00:00-06:00",
-   "note": "Cabling sub price; outreach not sent as of 10/20"
+   "note": "Cabling sub price; outreach not sent as of 10/20",
+   "kind": "Sub answers due"
   }
  ],
  "doc_gaps": [

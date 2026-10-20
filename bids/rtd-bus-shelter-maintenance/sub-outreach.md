@@ -39,6 +39,30 @@ Brent.Haase@lminc.net, 720-456-9191 office, 303-968-8772 cell; cc Office@lminc.n
 > you also certified as an SBE with RTD's Small Business Office? RTD only counts its own certification toward the
 > 15% goal.
 
+### Lightning Mobile Services: PRICING RECEIVED (2026-10-20 08:45 MT)
+Brent Haase: "Attached is the completed pricing spreadsheet. Please let us know if the pricing is in line with
+budget/expectations. We can apply for RTD SBE certification as we meet the requirements."
+- File: `RTD_126DM016_Attachment_C_Pricing_Sheet.xlsx`, in Luke's inbox (luke@brownbisonco.com, thread "RE: RTD bus
+  shelter cleaning contract", 2026-10-20 14:45 UTC). It is RTD's own Attachment C with every label unchanged (checked
+  cell by cell against docs/126DM016-Pricing-Sheet.xlsx). All four unit types are priced (shelter cleaning, shelter
+  snow per event, transfer-center custodial per day, transfer-center snow per month) for all 5 years, with escalation
+  built in.
+- **Unit prices and totals are NOT written in this repo while it is public** (a competitor could read our cost basis
+  before 11/16). Luke has them in the MAIN chat 2026-10-20 and in the email.
+- Luke's 10/19 email asked LM to price snow too, so snow now has a price from LM to compare with Alex's.
+- **SBE timing:** RFP §2.6: "All SBEs must be certified prior to the proposal submission". SBE Contract Requirements
+  §C: certified "as of the date that RTD receives this bid/proposal". RTD's review can take up to 45 days and the
+  proposal is due 11/16 (27 days). LM only counts toward the 15% if it applies now and RTD finishes in time;
+  otherwise we document good-faith efforts.
+
+**Reply for Luke to send (nothing sent by the agent):**
+
+> Brent, thank you. This is exactly the format we need, and we are checking it against RTD's past contracts now;
+> we will come back to you by Friday. One time-sensitive item: RTD only counts SBE firms that are certified before
+> the proposal goes in (RFP section 2.6), and its review can take up to 45 days. Please file the RTD SBE
+> application this week (SBO@RTD-Denver.com). If your certification lands before November 16, your share of the
+> work counts toward the 15% goal.
+
 ### Colorado Power Wash (2026-10-19 17:33 MT)
 Interested ("good work we want to learn more about"). Has questions before pricing; asked "Is tomorrow a bad day to talk?"
 Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send the same shelter list + SOW sent to Lightning Mobile.
