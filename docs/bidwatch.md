@@ -68,6 +68,14 @@ dies with its container; the hourly WORKER scheduled task is the safety net that
     python3 scripts/bidwatch/run.py --health      # reachability + which credentials are set (never prints values)
     python3 tests/test_bidwatch.py                # 57 offline tests: real-page fixtures + a fake portal with login/expiry
 
+## DIBBS: only from Luke's own computer
+DIBBS FAQ #45 (verified 2026-10-20): "the DIBBS and cFolders User Agreements prohibits the use of any service or device
+that masks a user's access ... VPNs, proxy servers, TOR nodes, cloud hosting services, and other similar services or
+devices ... are, therefore, prohibited." The cloud scanner therefore never reads DIBBS. On Luke's own machine set
+`BIDWATCH_ALLOW_DIBBS=1` in `.env` (docs/local-runner.md). Better than page scraping there: the daily index file
+`https://dibbs2.bsm.dla.mil/Downloads/RFQ/Archive/in{YYMMDD}.txt` (fixed-width, ~1,700 lines/day) plus RFQ PDFs at
+`https://dibbs2.bsm.dla.mil/Downloads/RFQ/<last char of solicitation>/<SOL>.PDF`.
+
 ## Live status (verified 2026-10-20 from a cloud session with full network access, no portal logins)
 | Source | Result |
 |---|---|
