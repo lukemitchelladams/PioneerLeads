@@ -34,3 +34,16 @@ Source: GovTribe → OpenGov. Documents: `docs/126DM016-RFP.pdf`, `docs/126DM016
 - [ ] Price: 42 shelters × frequency table from SOW → monthly lump sum; separate per-service and hourly rates for emergency/extra work on the pricing sheet
 - [ ] GPS fleet tracking quote (Samsara/Verizon Connect), pressure washer, anti-ice material plan
 - [ ] Questions in by 11/2; submit on OpenGov by 11/16 14:00
+
+## What RTD pays now (public RTD purchase reports, verified 2026-10-20)
+| Contract | Vendor | Scope (RTD's wording) | Amounts | Source |
+|---|---|---|---|---|
+| 121DH027, PO 219051 (2022-01-04) | United Facility Solutions | "Shelter Maintenance Services Aurora & Federal Blvd Shelters" ("Aurora Grp 3 and Federal Blvd") | Initial year $231,339.00; option 1 $240,927.00; option 2 $245,265.00; option 3 $127,426.50; option 4 $259,191.00 (added 2026-02) | RTD Part II Monthly Purchase Activity Report, February 2026: https://cdn.rtd-denver.com/image/upload/v1773943929/Part_II_FEBRUARY_2026_MONTHLY_PURCHASE_ACTIVITY_REPORT_FOR_NEW_PURCHASES_yiyblv.pdf |
+| 18DM007 (PO 2021-07-06) | United Facility Solutions | "N&S Federal & Group 3" | $169,096.35 | RTD Board Briefing, September 2021 |
+| 124DM011, PO 248173 (2025-01-06) | Front Range Services Inc | 182 shelters, Groups 1/2/4 and E/W Colfax; 775 cleanings a week; snow 70 events a year | $2,067,483.97 "New RFP" line (+$21,240, +$15,600) | RTD Part II report, October 2025 |
+
+United Facility Solutions holds the current Federal Blvd / Group 3 contract and is the likely incumbent bidder.
+Whether its contract includes the two transfer centers and shelter snow is not stated in the reports. Per-unit
+prices: not public; a CORA request (https://rtd-denver.justfoia.com/publicportal/home/newrequest) or a question
+by 11/02 would get them. Other agencies' per-cleaning bid prices: El Paso Sun Metro 2025 $8.00-$41.88 (winner $9.00);
+NCTD 2016 $14.98.

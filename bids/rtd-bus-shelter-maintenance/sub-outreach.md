@@ -55,13 +55,17 @@ budget/expectations. We can apply for RTD SBE certification as we meet the requi
   proposal is due 11/16 (27 days). LM only counts toward the 15% if it applies now and RTD finishes in time;
   otherwise we document good-faith efforts.
 
+**Price check (2026-10-20, RTD's own public purchase reports): LM's sheet is about 7 times what RTD pays today for
+the same corridor.** See README "What RTD pays now". Not competitive as quoted.
+
 **Reply for Luke to send (nothing sent by the agent):**
 
-> Brent, thank you. This is exactly the format we need, and we are checking it against RTD's past contracts now;
-> we will come back to you by Friday. One time-sensitive item: RTD only counts SBE firms that are certified before
-> the proposal goes in (RFP section 2.6), and its review can take up to 45 days. Please file the RTD SBE
-> application this week (SBO@RTD-Denver.com). If your certification lands before November 16, your share of the
-> work counts toward the 15% goal.
+> Brent, thank you for the fast turnaround. Straight answer: it is well above budget. RTD's public purchase reports
+> show the current contract for these same shelters (Federal Blvd and Group 3, held by United Facility Solutions)
+> at $231,339 for its first year and about $259,000 in its latest option year. Your sheet comes to about $1.9 million
+> for year one. Can you take another pass and get closer to that range? Separately, RTD only counts SBE firms that are
+> certified before the proposal goes in (RFP section 2.6), and its review can take up to 45 days, so please file the
+> RTD SBE application this week (SBO@RTD-Denver.com).
 
 ### Colorado Power Wash (2026-10-19 17:33 MT)
 Interested ("good work we want to learn more about"). Has questions before pricing; asked "Is tomorrow a bad day to talk?"
