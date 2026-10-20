@@ -3,6 +3,24 @@
  "updated": "2026-10-20T10:07-06:00",
  "bids": [
   {
+   "id": "parker-26-021-1",
+   "agency": "Town of Parker",
+   "title": "Generator Maintenance & Repair Services (7 standby diesel gensets + ATS, 6 sites)",
+   "sol": "RFP 26-021-1",
+   "trade": "Electrical/generator",
+   "due": "2026-11-06T14:00:00-07:00",
+   "portal": "RMEPS (BidNet 0000440494) + Bonfire",
+   "decision": "PENDING",
+   "decision_note": "Found 10/20 via GovTribe + BidNet listing. No pre-proposal meeting or site visit in RFP \u00a71.2. Questions due 10/30 10:00. Scored: price 30, technical 20, experience 20, emergency response 20, reporting 10. Pricing sheets/forms not in hand (Bonfire/BidNet login). Awaiting Luke GO.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Generator-service sub",
+   "subs": "Candidate list being researched 10/20; outreach starts on GO",
+   "folder": "bids/parker-generator-maintenance",
+   "contact": "Charles Ellis, cellis@parkeronline.org",
+   "sub_pricing": "None"
+  },
+  {
    "id": "cos-parks-r26-077mz",
    "agency": "City of Colorado Springs",
    "title": "Parks Maintenance On-Call pool (landscape, janitorial, striping)",
