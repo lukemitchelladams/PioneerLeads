@@ -325,3 +325,16 @@ and acts on REPORT.md. Credentials still go in that environment's env vars (Luke
 - Hourly routine trig_01PXEWJ1rzGbpACou7gVxcmw got PART F (keep pipeline.json current, rebuild, re-upload, update datasets).
 - Live scanner session_019uSEKHU1Qyo6YGinn8hySB: BidNet parser working on real pages (400 open CO bids), Bonfire working
   (Parker 26-028 closes 2026-10-22 15:00 MDT, matches docs), DIBBS rewrite in progress. Not pushed yet at 19:55 MT.
+
+### 2026-10-20 02:15 UTC: live scanner session (full network, NO portal creds set)
+Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tests pass.
+- BidNet CO: 584 open (BUYER/RMEPS 400 + AGGREGATE 184 = site counts). Fixed: pagination (`a.next`, /pageN),
+  real row markup. Public detail = closing date/time only; agency, sol #, description, DOCUMENTS are members-only.
+  BIDNET_USER/PASS not set, so no BidNet document can be downloaded and pre-bid text is not visible.
+- Bonfire/Euna Parker: list JSON works (4 open; 26-028 closes 2026-10-22 15:00 MDT). Opportunity pages and RTD
+  OpenGov return a Cloudflare bot challenge to cloud IPs; not circumvented, reported as blocked.
+- DIBBS: old regex missed every row (SPE4A0-26-T-2395 has 3 chars after SPE). Now sorted by Return By desc,
+  307 open RFQs across Jones Bearing FSCs (3110: 176, 3020: 67, 3130: 23, 3950: 17, 3030: 16, 4610: 6, 3920: 2).
+- SAM.gov: SAM_API_KEY not set.
+- Docs: RTD SBE Enclosures + SBE Contract Requirements downloaded (public). Littleton A/B/C + pricing template and
+  every other BidNet gap still need a logged-in BidNet download; RTD W-9 + Key Personnel need OpenGov.

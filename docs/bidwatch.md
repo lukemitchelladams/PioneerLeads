@@ -43,12 +43,24 @@ A failed login or a page that parses to nothing saves a screenshot + HTML to `bi
 
 ## Check it
     python3 scripts/bidwatch/run.py --health      # reachability + which credentials are set (never prints values)
-    python3 tests/test_bidwatch.py                # 38 offline tests incl. a fake portal with login/expiry
+    python3 tests/test_bidwatch.py                # 57 offline tests: real-page fixtures + a fake portal with login/expiry
+
+## Live status (verified 2026-10-20 from a cloud session with full network access, no portal logins)
+| Source | Result |
+|---|---|
+| BidNet Colorado | Statewide list read completely: BUYER tab (RMEPS member agencies) 400 + AGGREGATE tab 184 = 584, equal to the counts the site prints. Pages are `/open-bids/page2?...` (25 rows), rows are `tr.mets-table-row`. Keyword searches (`?keywords=`) now run only if the statewide pass comes back short. |
+| BidNet detail / documents | Public visitors see only location, publication date and closing date+time. Issuing org, solicitation #, description, **documents** and buyer contact are "Registered members only": BIDNET_USER/BIDNET_PASS are required for documents and pre-bid text. Without a login only watched bids' detail pages are opened. |
+| Euna/Bonfire (Parker) | Open list read from `/PublicPortal/getOpenPublicOpportunitiesSectionData` (JSON, DateClose is UTC; converted to Mountain time). Opportunity pages (`/opportunities/<id>`) return a **Cloudflare bot challenge** to this network (HTTP 403, `cf-mitigated: challenge`); the scanner reports that instead of guessing. RTD's OpenGov portal does the same. |
+| SAM.gov | Needs `SAM_API_KEY` (not set). |
+| DLA DIBBS | Works without login. RFQ grid sorted by Return By descending and paged until expired; ~300 open RFQs across the Jones Bearing FSCs. Solicitation numbers are `SPE4A0-26-T-2395` style (3-char suffix after SPE: the old regex missed every row). |
+
+Real-page fixtures for all of the above: `tests/fixtures/`, exercised by `python3 tests/test_bidwatch.py`.
 
 ## Honest limits
-- Selectors were built and tested against fixture pages and a simulated login site, because the real
-  portals are blocked from the build environment. The first live run may need a selector fix; the debug
-  dumps make that a quick job.
+- List selectors are verified against the live sites (2026-10-20). The BidNet and Bonfire LOGIN flows are
+  still only tested against the simulated site, because no credentials were set during the live run.
+- A `--sources` run limited to some sources rewrites open_bids.json with only those sources; run all
+  sources for the hourly check.
 - SAM.gov caps API calls (about 10/day without an entity role, 1,000/day with one). The scanner tracks a
   daily budget (`SAM_DAILY_BUDGET`, default 900) and uses ~2-6 calls per scan.
 - RTD (OpenGov) is not scraped yet; it is on the watchlist for the hourly GovTribe check.

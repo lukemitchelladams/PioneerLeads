@@ -5,8 +5,9 @@ Part 1: parsers (dates, pre-bid detection, BidNet listing/detail, Bonfire JSON/d
 Part 2: a fake BidNet-style site on localhost with a real login form and cookie session, to prove that
         PortalSession logs in, saves the session, reuses it on the next run, and logs in again by itself
         after the server expires the session. Then a full scan() against the fake site.
-The live portals are NOT reachable from the build environment; selectors are verified against these
-fixtures only. The first live run saves debug HTML for any page that parses to nothing.
+Part 1b: trimmed copies of the REAL pages (tests/fixtures/, saved 2026-10-20 from the live sites):
+        BidNet Colorado open-bids list + a public detail page, Bonfire Parker list JSON + the Cloudflare
+        challenge its opportunity pages return to cloud IPs, DIBBS RFQ grid for FSC 3110.
 """
 from __future__ import annotations
 
@@ -101,11 +102,53 @@ check("sam keep by naics", samgov._keep(n, profiles["brownbison"]))
 check("sam drop unrelated", not samgov._keep(samgov.normalize({**sam, "title": "Actuarial services", "naicsCode": "524298",
                                                                      "classificationCode": "R499"}), profiles["brownbison"]))
 
+# ---------------------------------------------------------------- part 1b: real-page fixtures
+print("real-page fixtures (tests/fixtures, live 2026-10-20)")
+import json as _json  # noqa: E402
+FX = ROOT / "tests" / "fixtures"
+rows, nxt = bidnet.parse_listing((FX / "bidnet_open_bids_co.html").read_text(), bidnet.CO_OPEN)
+check("real bidnet list: 3 rows", len(rows) == 3, len(rows))
+check("real bidnet list: id/title/dates", rows and rows[0]["id"] == "0000440693" and rows[0]["title"] == "DTD Freight Planning Support"
+      and rows[0]["closing"] == "2026-11-10" and rows[0]["published"] == "2026-10-19", rows[:1])
+check("real bidnet list: region -> state", rows and rows[0]["state"] == "CO", rows[:1])
+check("real bidnet list: next page link", nxt == bidnet.BASE + "/colorado/solicitations/open-bids/page2", nxt)
+check("real bidnet list: site total 400", bidnet.total_count((FX / "bidnet_open_bids_co.html").read_text()) == 400)
+check("bidnet zero-result page = 0, not a parse failure",
+      bidnet.total_count("<p>We can't find any current bids with your keywords. Get notified</p>") == 0)
+check("bidnet page_url keeps query", bidnet.page_url(bidnet.CO_OPEN + "?keywords=hvac", 2)
+      == bidnet.CO_OPEN + "/page2?keywords=hvac")
+d = bidnet.parse_detail((FX / "bidnet_detail_littleton_2126.html").read_text())
+check("real bidnet detail: closing + time", d["closing"] == "2026-10-28" and d["closing_text"] == "10/28/2026 02:00 PM MDT", d)
+check("real bidnet detail: locked fields not invented", d["login_required_for_docs"] and d["agency"] is None and d["sol"] is None, d)
+bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
+p28 = [r for r in bf if r["sol"] == "26-028"]
+check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
+check("real bonfire 26-028 close in Mountain time", p28 and p28[0]["closing"] == "2026-10-22"
+      and p28[0]["closing_text"].startswith("2026-10-22 15:00"), p28)
+check("real bonfire: UTC midnight rolls back to MT date", any(r["sol"] == "26-027" and r["closing"] == "2026-11-13" for r in bf))
+try:
+    bonfire.parse_detail((FX / "bonfire_opportunity_cloudflare.html").read_text())
+    check("bonfire Cloudflare challenge detected", False)
+except bonfire.Challenged:
+    check("bonfire Cloudflare challenge detected", True)
+sys.path.insert(0, str(ROOT / "scripts"))
+import dibbs_watch  # noqa: E402
+dh = (FX / "dibbs_rfq_3110.html").read_text()
+dr = dibbs_watch.parse_rows(dh)
+check("real dibbs grid: 6 rows", len(dr) == 6, len(dr))
+check("real dibbs row fields", dr and dr[0]["sol"] == "SPE4A6-27-Q-0037" and dr[0]["nsn"] == "3110-01-341-6408"
+      and dr[0]["qty"] == 11 and dr[0]["return_by"] == "2026-10-27" and dr[0]["pdf"].endswith(".PDF"), dr[:1])
+check("real dibbs records found", dibbs_watch.records_found(dh) == 2675, dibbs_watch.records_found(dh))
+check("dibbs sol regex: 3-char activity code", bool(dibbs_watch.SOL_RX.search("SPE4A0-26-T-2395")))
+
 # ---------------------------------------------------------------- part 2: fake portal with real login
 print("fake BidNet site: login, session reuse, auto re-login, full scan")
 SESSIONS = set()
 LOGINS = {"n": 0}
 USER, PW = "luke@brownbisonco.com", "s3cret-test-only"
+
+
+KW_HITS = {"n": 0}
 
 
 class H(http.server.BaseHTTPRequestHandler):
@@ -132,14 +175,20 @@ class H(http.server.BaseHTTPRequestHandler):
         if p == "/colorado":
             return self._send("<a href='/logout'>Logout</a>" if self._authed() else "<a href='/public/authentication/login'>Login</a>")
         if p.startswith("/colorado/solicitations/open-bids"):
-            if "pageNumber=2" in p:
+            if "/page2" in p:
                 return self._send("<table><tr><td><a href='/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000500002'>"
                                   "On-Call Commercial Plumbing Services RFQ 2126</a></td><td>Closing 10/28/2026</td></tr></table>")
+            if "/page3" in p:
+                return self._send("<span class='simpleResultsNumResults'>3 Open Solicitations</span>")
+            if "AGGREGATE" in p:
+                return self._send("<p>We can't find any current bids with your keywords.</p>")
             if "keywords=" in p:
-                return self._send("<p>no results</p>")
-            return self._send("<table><tr><td><a href='/colorado/town-of-castle-rock/solicitations/HVAC-Maintenance/0000500001'>HVAC Maintenance Services</a>"
+                KW_HITS["n"] += 1
+                return self._send("<span class='simpleResultsNumResults'>0 Open Solicitations</span>")
+            return self._send("<span class='simpleResultsNumResults'>3 Open Solicitations</span>"
+                              "<table><tr><td><a href='/colorado/town-of-castle-rock/solicitations/HVAC-Maintenance/0000500001'>HVAC Maintenance Services</a>"
                               "</td><td>Closing 11/20/2026</td></tr><tr><td><a href='/colorado/x/solicitations/Road-Paving/0000500003'>Road Paving 2027</a></td>"
-                              "<td>Closing 11/01/2026</td></tr></table><a rel='next' href='/colorado/solicitations/open-bids?pageNumber=2'>Next</a>")
+                              "<td>Closing 11/01/2026</td></tr></table><a class='next' href='/colorado/solicitations/open-bids/page2'>Next</a>")
         if "/solicitations/" in p:
             docs = "<a href='/dl/rfq.pdf'>RFQ.pdf</a>" + ("<a href='/dl/addendum1.pdf'>Addendum 1.pdf</a>" if os.environ.get("FAKE_ADDENDUM") else "")
             return self._send(f"<h1>Bid</h1><div>Closing Date 11/20/2026</div><p>MANDATORY pre-bid site walk on 11/02/2026 at 9 AM.</p>{docs}")
@@ -180,8 +229,11 @@ s2.close()
 SESSIONS.clear()  # server expires every session (timeout)
 s3 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
 check("expired session -> automatic re-login", s3.ensure_login() and LOGINS["n"] == 2, s3.login_note)
-rows, errs = bidnet.collect_open(s3, ["hvac"])
+rows, errs, _ = bidnet.collect_open(s3, ["hvac"])
 check("collect follows pagination", len(rows) == 3, (len(rows), errs))
+check("complete statewide list -> no keyword searches", KW_HITS["n"] == 0, KW_HITS)
+bidnet.collect_open(s3, ["hvac"], force_keywords=True)
+check("force_keywords runs keyword searches", KW_HITS["n"] == 1, KW_HITS)
 s3.close()
 b.close()
 

@@ -104,7 +104,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     found: dict[str, dict] = {}
     downloads: dict[str, list[str]] = {}
 
-    keywords = sorted({k for p in profiles.values() for k in p.get("bidnet_keywords", [])})[:40]
+    keywords = sorted({k for p in profiles.values() for k in p.get("bidnet_keywords", [])})
     browser_sources = [s for s in ("bidnet", "bonfire") if s in sources and health[s]["reachable"]]
 
     if browser_sources:
@@ -117,13 +117,14 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                 try:
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
-                    rows, errs = bidnet.collect_open(ses, keywords)
+                    rows, errs, totals = bidnet.collect_open(ses, keywords)
                     if ses.creds() and "authentication/login" in ses.page.url:  # bounced mid-scan
                         ses.ensure_login()
-                        rows2, errs2 = bidnet.collect_open(ses, keywords)
+                        rows2, errs2, _ = bidnet.collect_open(ses, keywords)
                         rows.update(rows2)
                         errs += errs2
                     h["errors"] += errs
+                    h["site_totals"] = {k: v for k, v in totals.items() if k.startswith("statewide")}
                     for r in rows.values():
                         found[key(r)] = r
                     h["count"] = len(rows)
@@ -168,11 +169,13 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             import dibbs_watch  # existing watcher, keeps its own state file
             d = dibbs_watch.run()
             health["dibbs"]["errors"] += d.get("errors", [])
+            health["dibbs"]["site_totals"] = d.get("totals", {})
             for k, v in d.get("all", {}).items():
                 found[f"dibbs:{k}"] = {"source": "dibbs", "id": k,
-                                       "title": v.get("nomenclature") or v.get("title") or v.get("text", "")[:120],
-                                       "closing": v.get("return_by") or v.get("closing") or v.get("date"),
-                                       "url": v.get("url"), "sol": k,
+                                       "title": f"{v.get('nomenclature') or v.get('text', '')[:80]} (NSN {v.get('nsn')}, qty {v.get('qty')})",
+                                       "closing": v.get("return_by"), "published": v.get("issued"),
+                                       "url": v.get("url"), "pdf": v.get("pdf"), "sol": v.get("sol"), "fsc": v.get("fsc"),
+                                       "nsn": v.get("nsn"), "qty": v.get("qty"),
                                        "agency": "DLA", "profiles": ["jones-bearing"] if v.get("match") else []}
             health["dibbs"]["count"] = len(d.get("all", {}))
         except Exception as e:  # noqa: BLE001
@@ -181,7 +184,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     # profile matching for anything not yet tagged
     for b in found.values():
         if "profiles" not in b or not b["profiles"]:
-            b["profiles"] = match_profiles(f"{b.get('title', '')} {b.get('agency', '')}", profiles)
+            b["profiles"] = profile_hits(b, profiles)
         b["watched"] = watched_keys.check(b)
         b.setdefault("first_seen", prev.get(key(b), {}).get("first_seen", started))
         b["last_seen"] = started
@@ -215,26 +218,42 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     return result
 
 
+def profile_hits(b: dict, profiles: dict) -> list[str]:
+    """Keyword match, minus profiles tied to states the bid is not in (BidNet's list mixes in Wyoming)."""
+    hits = match_profiles(f"{b.get('title', '')} {b.get('agency', '')}", profiles)
+    st = b.get("state")
+    return [n for n in hits if not (st and profiles[n].get("states") and st not in profiles[n]["states"])]
+
+
 def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h):
     if not enrich_details:
         return
+    blocked = None
     for k, b in list(found.items()):
         if b["source"] != source:
             continue
-        b["profiles"] = match_profiles(f"{b.get('title', '')} {b.get('agency', '')}", profiles)
+        b["profiles"] = profile_hits(b, profiles)
         old = prev.get(k, {})
         is_w = watched_keys.check(b)
         recently = old.get("detail_checked") and old.get("closing") == b.get("closing") and not is_w \
             and old.get("detail_at", "")[:10] == iso()[:10]
         if not (b["profiles"] or is_w):
             continue
-        if recently:
-            found[k] = {**old, **b}
+        # Public BidNet detail pages add nothing but the closing time (everything else is members-only),
+        # so without a login only watched bids get opened.
+        if source == "bidnet" and not ses.logged_in and not is_w:
+            continue
+        if recently or blocked:
+            found[k] = {**{f: v for f, v in old.items() if f not in ("last_seen",)}, **b}
             continue
         try:
             found[k] = {**mod.enrich(ses, b), "detail_at": iso()}
         except Exception as e:  # noqa: BLE001
-            h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}")
+            if type(e).__name__ == "Challenged":  # Cloudflare: every other detail page will fail the same way
+                blocked = str(e)
+                h["errors"].append(f"detail pages blocked: {e}")
+                continue
+            h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
         if is_w and ses.logged_in and hasattr(mod, "download_docs"):
             new_docs = {d["name"] for d in found[k].get("documents", [])} - {d["name"] for d in old.get("documents", [])}
             if new_docs or not old:
@@ -286,13 +305,17 @@ def render(r: dict) -> str:
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
 
     lines.append("## Source health\n")
-    lines.append("| Source | Reachable | Credentials set | Logged in | Open bids seen | Matches | Last success | Errors |")
-    lines.append("|---|---|---|---|---|---|---|---|")
+    lines.append("| Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |")
+    lines.append("|---|---|---|---|---|---|---|---|---|")
     for s, v in h.items():
         creds = ", ".join(f"{k}={'yes' if ok else 'NO'}" for k, ok in v["creds"].items()) or "n/a"
+        tot = ", ".join(f"{k.replace('statewide ', '')} {n}" for k, n in (v.get("site_totals") or {}).items() if n is not None)
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
-                     f"{v['login_note'] or ('yes' if v['logged_in'] else 'no')} | {v['count']} | {v['matches']} | "
+                     f"{v['login_note'] or ('yes' if v['logged_in'] else 'no')} | {v['count']} | {tot} | {v['matches']} | "
                      f"{v.get('last_success') or 'never'} | {len(v['errors'])} |")
+    if "dibbs" in h and h["dibbs"].get("site_totals"):
+        lines.append("\nDIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; "
+                     "'Open bids seen' = RFQs with a return-by date today or later.")
 
     walks = [b for b in r["found"].values() if (b.get("profiles") or b.get("watched")) and (b.get("prebid") or {}).get("date")
              and (days_until(b["prebid"]["date"]) or 99) <= 7 and (days_until(b["prebid"]["date"]) or -1) >= 0]
@@ -314,9 +337,23 @@ def render(r: dict) -> str:
     if upcoming:
         lines += ["", "## UPCOMING (presolicitations, sources sought, special notices)", "", HDR]
         lines += [_row(b) for b in sorted(upcoming, key=lambda x: x.get("closing") or "9")]
-    open_m = [b for b in r["found"].values() if b.get("profiles") and not b.get("upcoming")]
-    lines += ["", f"## All open matching bids ({len(open_m)})", "", HDR]
+    # BidNet's AGGREGATE tab occasionally keeps long-closed bids listed; a past closing date is not open
+    open_m = [b for b in r["found"].values() if b.get("profiles") and not b.get("upcoming") and b["source"] != "dibbs"
+              and (days_until(b.get("closing")) is None or days_until(b.get("closing")) >= 0)]
+    lines += ["", f"## All open matching bids, excluding DIBBS parts RFQs ({len(open_m)})", "", HDR]
     lines += [_row(b) for b in sorted(open_m, key=lambda x: x.get("closing") or "9")]
+    dib = sorted((b for b in r["found"].values() if b["source"] == "dibbs"),
+                 key=lambda x: (-(x.get("qty") or 0), x.get("closing") or "9"))
+    if dib:
+        by_fsc: dict[str, int] = {}
+        for b in dib:
+            by_fsc[b.get("fsc") or "?"] = by_fsc.get(b.get("fsc") or "?", 0) + 1
+        lines += ["", f"## DLA DIBBS open RFQs for Jones Bearing FSCs ({len(dib)}; "
+                  + ", ".join(f"FSC {f}: {n}" for f, n in sorted(by_fsc.items())) + ")", "",
+                  "Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jones Bearing has neither yet).", "",
+                  "| FSC | Solicitation | Item | Qty | Return by | Link |", "|---|---|---|---|---|---|"]
+        lines += [f"| {b.get('fsc')} | {b.get('sol')} | {(b.get('title') or '')[:70]} | {b.get('qty')} | {b.get('closing')} | {b.get('url')} |"
+                  for b in dib[:60]]
     if r["downloads"]:
         lines += ["", "## Documents downloaded", ""]
         for k, files in r["downloads"].items():

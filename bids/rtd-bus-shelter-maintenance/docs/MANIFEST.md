@@ -13,12 +13,15 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - 126DM016-SOW.pdf
 - 126DM016-SOW.txt
 - RTD-126DM016-Shelter-List.xlsx
+- RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf
+- RTD-SBE-Enclosures-Rev-2025-11-13.pdf
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
-| Appendix A |  | 126DM016-RFP.txt | **MISSING** |
+| Appendix A |  | 126DM016-RFP.txt | INSIDE RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf (heading found; verify pages) |
+| Attachment E |  | RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf | **MISSING** |
 | Schedule A |  | 126DM006-Form-of-Contract.txt | **MISSING** |
 
 ## Pricing forms / templates mentioned (check each is in hand)
@@ -29,5 +32,12 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - ...l submit a proposal based on the listed items found on the  bid schedule. Proposals shall include all labor, materials, and necessar...
 - .... This service is reimbursable at the rate included in  the bid schedule. 9. QUALITY CONTROL PLAN  The Contractor must perform quali...
 
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| RTD 126DM016 bus shelters | 2026-11-16 14:00 | RFP; Attachment A SOW; Attachment B Form of Contract; Attachment C Pricing Sheet | **SBE Required Enclosures** (rtd-denver.com/downloads/sbe-enclosures); **SBE Contract Requirements Certification**; **W-9 and Key Personnel forms** (download in the OpenGov portal, section 7) |
+## Verified by hand 2026-10-20 (authoritative; overrides the automatic table above)
+| Item (RFP section) | Status |
+|---|---|
+| Attachment A SOW, B Form of Contract, C Pricing Sheet | In hand |
+| 7.1.10 SBE Required Enclosures (rtd-denver.com/downloads/sbe-enclosures) | **In hand 2026-10-20**: RTD-SBE-Enclosures-Rev-2025-11-13.pdf (19 pp, Enclosures 1A-7 + checklist) |
+| 7.1.9 SBE Contract Requirements Certification | A checkbox answered in OpenGov. The document it certifies (rtd-denver.com/downloads/sbe-contract-requirements) is **in hand**: RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf (50 pp). Its "Attachment E" / "Appendix A" hits are self-references inside that document, not separate files. |
+| 7.1.12 Current W9 (02.12_W9_updated_1822.pdf) | **MISSING**: OpenGov portal only (procurement.opengov.com/portal/rtd-denver, section 7); portal is behind a Cloudflare bot check from cloud sessions |
+| 7.1.13 Key Personnel (Key_Personnel.docx) | **MISSING**: OpenGov portal only, same as above |
+| Schedule A (Form of Contract) | Check inside 126DM006-Form-of-Contract.pdf / OpenGov |
