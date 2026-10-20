@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-20T14:36:10+00:00
+# Bid watch report — 2026-10-20T15:36:11+00:00
 
-**Headline:** 4 NEW matching bids; 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 589 | BUYER 401, AGGREGATE 189 | 82 | 2026-10-20T14:36:10+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T14:36:10+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 72 |  | 72 | 2026-10-20T14:36:10+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 590 | BUYER 402, AGGREGATE 189 | 82 | 2026-10-20T15:36:11+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T15:36:11+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 72 |  | 72 | 2026-10-20T15:36:11+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,19 +26,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Elevator Preventative Maintenance, Repairs and Capital Improvements | 2026-11-12 (23d) | 2026-10-27 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1 |
 |  WATCHED | bidnet | Metro Water Recovery | Switchgear and Protective Relay Maintenance | 2026-11-12 (23d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (30d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SPE4A627Q0128, 3110-013503674, Bearing, Ball, Annular, PN: 145DC011-11 | 2026-10-25 (5d) |  | https://sam.gov/workspace/contract/opp/e32221b53b0b4619a2d5bafc718cdd48/view |
-| jones-bearing | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | Sheave | 2026-11-02 (13d) |  | https://sam.gov/workspace/contract/opp/83f8e4293685404da1e09c1d43a81204/view |
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-09 (20d) |  | https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view |
-| brownbison | bidnet | Adams County | On-Call Employment Investigations | 2026-11-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1 |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Professional Custodial Services** (bidnet): NEW DOCUMENTS (addendum?): 1178-26P Addendum 001.docx, 1178-26P Addendum 002.pdf — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Professional-Custodial-Services/0000439180?purchasingGroupId=8409951&origin=1
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -271,11 +258,6 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 | 3020 | SPE7L4-27-T-0323 | SPROCKET WHEEL SEGMENT (NSN 3020-01-589-2402, qty 72) | 72 | 2026-10-23 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0323 |
 | 3110 | SPE4A6-27-T-1941 | BEARING, BALL, ANNULAR (NSN 3110-00-812-7805, qty 71) | 71 | 2026-10-20 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T1941 |
 | 3110 | SPE4A6-27-T-4398 | BEARING, BALL, ANNULAR (NSN 3110-00-134-0190, qty 71) | 71 | 2026-10-23 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4398 |
-
-## Documents downloaded
-
-- bidnet:0000439180: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000439180/1178-26P Addendum 002.pdf
-- bidnet:0000439180: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000439180/1178-26P Addendum 001.docx
 
 ## Errors
 
