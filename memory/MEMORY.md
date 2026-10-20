@@ -473,3 +473,11 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - New triggers: trig_01Df7nVGVQw7pddo2JSmdNBR daily 06:44 MT CEO plan into MAIN (ops/plan_ceo/<date>.md + dispatch
   + 8-line update). Hourly logged-in scan trig_01792tC1P3WZhukYJtGaroxc (:35). Watchdogs for E2 at 05:07Z/05:49Z
   (they reference run id E1: use E2).
+- 05:00 UTC: research swarm results in ops/research/ (README index). REPO IS PUBLIC (verified via api.github.com):
+  Luke must make it private (Settings -> General -> Danger Zone -> Change visibility). Endurance E2 check 4 (forced
+  site-session expiry) FAILED on my bug: BidNet SSO silently restored the session but is_logged_in trusted the URL
+  (still contained authentication/login). Fix: logged in = #supplier_logout_link present and no j_username form;
+  login() returns early after an SSO restore. E3 started 04:57:52Z on the fixed code (check 1 PASS). Hardening also
+  added: run lock, 2 h robot-check cool-down (carry forward), 6 h code-marker expiry, exit 3 on degraded runs,
+  scanned_by in health.json. BidNet alerts: free tier emails real-time NIGP matches but the inbox got none:
+  Luke's BidNet matching profile (categories, "Stay Ahead", notification email) must be set (account setting: Luke).
