@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-20T15:36:11+00:00
+# Bid watch report — 2026-10-20T16:36:08+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 590 | BUYER 402, AGGREGATE 189 | 82 | 2026-10-20T15:36:11+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T15:36:11+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 72 |  | 72 | 2026-10-20T15:36:11+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 592 | BUYER 404, AGGREGATE 189 | 83 | 2026-10-20T16:36:08+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 3 |  | 1 | 2026-10-20T16:36:08+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 72 |  | 72 | 2026-10-20T16:36:08+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,6 +26,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Elevator Preventative Maintenance, Repairs and Capital Improvements | 2026-11-12 (23d) | 2026-10-27 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1 |
 |  WATCHED | bidnet | Metro Water Recovery | Switchgear and Protective Relay Maintenance | 2026-11-12 (23d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (30d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (30d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -58,7 +64,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (129)
+## All open matching bids, excluding DIBBS parts RFQs (130)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -179,6 +185,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (27d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | brownbison | bidnet | Adams County | On-Call Employment Investigations | 2026-11-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Request for Interest: San Luis Valley Potato Research Facility | 2026-11-18 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-San-Luis-Valley-Potato-Research-Facility/0000440491?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (30d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (30d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (30d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | SACN Replace Fire Alarms and Intrusions Systems (place of performance not stated; CO buying office) | 2026-11-23 (34d) |  | https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view |

@@ -4935,6 +4935,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000440763",
+  "source": "bidnet",
+  "agency": "Weld County",
+  "title": "Jail 1 East Gym RTU Replacement",
+  "sol": "B2600111",
+  "closing": "2026-11-19",
+  "posted": "2026-10-20",
+  "prebid_date": "2026-11-05",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "samgov:6ab91dd8bf824b2fbfa32476c810d7be",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
