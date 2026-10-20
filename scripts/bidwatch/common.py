@@ -205,7 +205,7 @@ def extract_prebid(text: str) -> dict | None:
     if not text:
         return None
     flat = re.sub(r"\s+", " ", text)
-    best = None
+    cands = []
     for m in PREBID_RX.finditer(flat):
         if NONE_AFTER_RX.search(flat[m.end(): m.end() + 60]):
             continue
@@ -222,11 +222,12 @@ def extract_prebid(text: str) -> dict | None:
             mand = True
         else:
             mand = None
-        cand = {"date": date, "mandatory": mand, "quote": scope.strip()[:400]}
-        if date:
-            return cand
-        best = best or cand
-    return best
+        cands.append({"date": date, "mandatory": mand, "quote": scope.strip()[:400]})
+    if not cands:
+        return None
+    # Prefer a mention that carries a date AND says whether attendance is mandatory (portal pages often repeat
+    # the walk in a structured "Pre-Bidding Events" block after a bare first mention); earliest mention wins ties.
+    return max(cands, key=lambda c: (c["date"] is not None, c["mandatory"] is not None, -cands.index(c)))
 
 
 def days_until(iso_date: str | None) -> int | None:

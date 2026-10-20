@@ -63,6 +63,12 @@ pb4 = common.extract_prebid("MANDATORY pre-bid meeting on 10/21/2026 at 10:00 AM
 check("prebid: 'optional' elsewhere does not flip a mandatory walk", pb4 and pb4["mandatory"] is True and pb4["date"] == "2026-10-21", pb4)
 pb5 = common.extract_prebid("Prebid Conference 10/01/2026 01:00 PM MDT Location CU Boulder Attendance Mandatory Contact ...")
 check("prebid: BidNet detail style 'Attendance Mandatory' after the date", pb5 and pb5["mandatory"] is True and pb5["date"] == "2026-10-01", pb5)
+pb6 = common.extract_prebid("Prebid Conference 10/01/2026 01:00 PM MDT Contact Information Procurement Office 1234 Main St Boulder CO "
+                            "80309 Phone 303-555-0100 Email procurement@example.edu Pre-Bidding Events Event Type Prebid Conference "
+                            "Attendance Mandatory Event date 10/01/2026 01:00 PM MDT Location Regent Hall Note Sign in required")
+check("prebid: BidNet flattened page, mandatory read from the later structured block", pb6 and pb6["mandatory"] is True and pb6["date"] == "2026-10-01", pb6)
+pb7 = common.extract_prebid("Pre-Bidding Events Event Type Onsite Visit Attendance Recommended Event date 10/26/2026 10:00 AM MDT Location 900 Colorow Road, Golden")
+check("prebid: 'Attendance Recommended' is not mandatory", pb7 and pb7["date"] == "2026-10-26" and pb7["mandatory"] is not True, pb7)
 check("samgov document name = file id, not 'download'",
       samgov.normalize({"noticeId": "n1", "resourceLinks": ["https://api.sam.gov/prod/opportunities/v3/opportunities/resources/files/abc123def/download"]})["documents"][0]["name"] == "abc123def")
 
