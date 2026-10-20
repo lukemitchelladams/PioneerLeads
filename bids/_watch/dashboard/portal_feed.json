@@ -15,36 +15,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Replacement-at-the-MAC-Facility/0000421903?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000435561",
-  "source": "bidnet",
-  "agency": "",
-  "title": "STRASBURG TOWER ELECTRICAL WORK",
-  "sol": "",
-  "closing": "2026-10-20",
-  "posted": "2026-09-01",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/STRASBURG-TOWER-ELECTRICAL-WORK/0000435561?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:0000435713",
-  "source": "bidnet",
-  "agency": "",
-  "title": "Parks Maintenance On-Call",
-  "sol": "",
-  "closing": "2026-10-20",
-  "posted": "2026-09-02",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-Maintenance-On-Call/0000435713?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000437839",
   "source": "bidnet",
   "agency": "",
@@ -1557,7 +1527,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444181730937/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444181730937?target=view"
  },
  {
   "key": "bonfire:parkeronline-256465",
@@ -1857,7 +1827,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444197459901/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444197459901?target=view"
  },
  {
   "key": "dibbs:SPE4A0-27-T-0208:7018661344",
@@ -2742,7 +2712,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444202822731/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444202822731?target=view"
  },
  {
   "key": "dibbs:SPE4A0-27-T-0210:7018558616",
@@ -3717,7 +3687,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444166507433/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view"
  },
  {
   "key": "dibbs:SPE7L5-27-T-0248:7018672201",
@@ -3912,7 +3882,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2717427692/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view"
  },
  {
   "key": "dibbs:SPE7L0-27-T-0035:7018767380",
@@ -4047,7 +4017,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
  },
  {
   "key": "bidnet:0000438817",
@@ -4785,6 +4755,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:444204361081",
+  "source": "bidnet",
+  "agency": "",
+  "title": "As-Needed Consulting Services for Design",
+  "sol": "",
+  "closing": "2026-11-12",
+  "posted": "2026-10-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view"
+ },
+ {
   "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
@@ -4857,7 +4842,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
  },
  {
   "key": "samgov:2b0011c68733402aace4b0a7d9dd8487",
@@ -4965,7 +4950,7 @@
   "url": "https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view"
  },
  {
-  "key": "samgov:9a80372ece404f7a91ca3e9e5646e62d",
+  "key": "samgov:be527e8411824dd29e4a764a91ab32a6",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
   "title": "Vandenberg Crane Replacement",
@@ -4977,7 +4962,7 @@
   "profiles": "jones-bearing",
   "watched": false,
   "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/9a80372ece404f7a91ca3e9e5646e62d/view"
+  "url": "https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view"
  },
  {
   "key": "samgov:0f9b38e12f184fadbb459e087e00963d",
@@ -5082,7 +5067,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
