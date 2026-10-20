@@ -42,3 +42,7 @@ master license number, Littleton registration, insurance, and rates wins the slo
 ## What we ask for now (simplified 2026-10-19 per Luke)
 1. Can you be on site at one of the ~38 City buildings within 2 hours, nights/weekends included? 2. Hourly rates (reg / after-hours / holiday) + parts markup.
 3. CO plumbing license # and name. 4. Insurance certificate. Nice-to-have: 1–2 commercial references. Document to send: Littleton-Plumbing-Partner-Summary.pdf in this folder.
+
+## Delivery status (from mailer-daemon, read 2026-10-20 07:20 UTC)
+- info@beattieplumbing.com: **delayed** (4.4.1, recipient mail server not accepting connections); Gmail retries until Wed 2026-10-21 ~23:40 PT. Also cc'd beattieplumbingsvc@gmail.com (no bounce on that address). If no reply by Wed, call.
+- info@simplysewersdenver.com: **delayed** (4.4.1, same cause); Gmail retries until Wed 2026-10-21 ~23:40 PT. Call if silent.
