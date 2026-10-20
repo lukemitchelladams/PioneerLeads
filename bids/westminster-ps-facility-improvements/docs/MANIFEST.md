@@ -5,6 +5,19 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf
+- Attachment F-1 - Package A - International School at Harris Park Drawings.pdf
+- Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf
+- Attachment F-3 - Package C - Early Learning Center at Gregory Hill Drawings.pdf
+- Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf
+- Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf
+- Attachment F-6 - Package F - Tennyson Knolls Preparatory School Drawings.pdf
+- Attachment G-1 - Package A - International School at Harris Park Specifications.pdf
+- Attachment G-2 - Package B - Sherrelwood Elementary Specifications.pdf
+- Attachment G-3 - Package C - Early Learning Center at Gregory Hill Specifications.pdf
+- Attachment G-4 - Package D - Hodgkins Leadership Academy Specifications.pdf
+- Attachment G-5 - Package E - Fairview PK-8 Specifications.pdf
+- Attachment G-6 - Package F - Tennyson Knolls Preparatory School Specifications.pdf
 - WPS-RFP26002-Facility-Improvements.extracted.txt
 - WPS-RFP26002-Facility-Improvements.pdf
 
@@ -12,14 +25,41 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
-| Attachment A | Respondent Certification and Signature Page 37 | WPS-RFP26002-Facility-Improvements.extracted.txt | INSIDE WPS-RFP26002-Facility-Improvements.extracted.txt (heading found; verify pages) |
+| Appendix B |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
+| Appendix X1 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
+| Attachment A | Respondent Certification and Signature Page 37 | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf |
 | Attachment B | Certification Regarding Debarment and Suspension 38 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
 | Attachment C | Criminal Records Check Certification Statement 39 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
 | Attachment D | Pricing Proposal 40 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
-| Attachment E | WPS General Conditions of the Construction Agreement Separate File | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
-| Attachment F | Drawings | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
-| Attachment G | Technical Specifications | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
+| Attachment E | WPS General Conditions of the Construction Agreement Separate File | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf |
+| Attachment F | Drawings | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf |
+| Attachment G | Technical Specifications | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment G-1 - Package A - International School at Harris Park Specifications.pdf |
+| Form 1 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
+| Form 2 |  | Attachment G-4 - Package D - Hodgkins Leadership Academy Specifications.pdf | **MISSING** |
+| Schedule 1 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule 2 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule 3 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule 4 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | INSIDE Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf (heading found; verify pages) |
+| Schedule 40 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
+| Schedule 5 |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
+| Schedule 79 |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
+| Schedule 8 |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
 | Schedule 9 |  | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
+| Schedule A6 |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
+| Schedule C |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
+| Schedule D1 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
+| Schedule E |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
+| Schedule H |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
+| Schedule I |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule J |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
+| Schedule KN2 |  | Attachment F-6 - Package F - Tennyson Knolls Preparatory School Drawings.pdf | **MISSING** |
+| Schedule LA |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule P |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule T5 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
+| Schedule X1 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
 
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Westminster PS RFP 26-002 facility improvements | 2026-12-01 14:00 | RFP incl. Attachments A-D (pp. 37-40) | **Attachment E General Conditions (separate file); Attachment F Drawings; Attachment G Technical Specifications** (RMEPS/BidNet) |
+## Pricing forms / templates mentioned (check each is in hand)
+
+- ...stimating worksheets, Subcontractor and supplier proposals, bid tabulations, subcontracts, purchase orders, invoices, payroll r...
+- ...IDE UNIT PRICING FOR ALL LUMINAIRES BY TYPE AND SUBMIT WITH BID FORM.  D. PROVIDE AN EMERGENCY BALLAST TEST SWITCH FOR RECESSED...
+- ...ce.  8. Performance and payment bonds if required.  9. Unit price schedule.   D. Before final payment application, provide and complet...

@@ -5,6 +5,9 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- Attachment 1 - Scope of Services.pdf
+- Attachment 2 - Price Proposal.xlsx
+- Attachment 3 - Sample Metro Agreement.pdf
 - MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt
 - MWR-B26019-Switchgear-Relay-Maintenance.pdf
 
@@ -12,12 +15,11 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
-| Attachment 1 | RFP B-26-019 Scope of Services | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | INSIDE MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt (heading found; verify pages) |
-| Attachment 2 | RFP B-26-019 Price Proposal | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | INSIDE MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt (heading found; verify pages) |
-| Attachment 3 | Short Form Agreement ( | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | INSIDE MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt (heading found; verify pages) |
-| Exhibit A |  | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | **MISSING** |
-| Exhibit C |  | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | **MISSING** |
+| Appendix A | Five-Year Maintenance Schedule, 2027-2031 | Attachment 1 - Scope of Services.pdf | **MISSING** |
+| Appendix B | RWHTF and South Thornton Lift Station Equipment Schedule | Attachment 1 - Scope of Services.pdf | **MISSING** |
+| Attachment 1 | RFP B-26-019 Scope of Services | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | IN HAND: Attachment 1 - Scope of Services.pdf |
+| Attachment 2 | RFP B-26-019 Price Proposal | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | IN HAND: Attachment 2 - Price Proposal.xlsx |
+| Attachment 3 | Short Form Agreement ( | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | IN HAND: Attachment 3 - Sample Metro Agreement.pdf |
+| Exhibit A |  | Attachment 3 - Sample Metro Agreement.pdf | INSIDE Attachment 3 - Sample Metro Agreement.pdf (heading found; verify pages) |
+| Exhibit C |  | Attachment 3 - Sample Metro Agreement.pdf | INSIDE Attachment 3 - Sample Metro Agreement.pdf (heading found; verify pages) |
 | Form W |  | MWR-B26019-Switchgear-Relay-Maintenance.extracted.txt | **MISSING** |
-
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Metro Water RFP B26019 switchgear | 2026-11-12 14:00 | RFP (15 pp) | **Attachment 1 Scope of Services; Attachment 2 Price Proposal (pricing goes here); Attachment 3 Short Form Agreement** (BidNet) |

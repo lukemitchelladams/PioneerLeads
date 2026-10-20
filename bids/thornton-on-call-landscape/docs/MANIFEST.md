@@ -22,6 +22,3 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 | Exhibit E |  | RFP-324-26-Landscape-Construction-Services.pdf | INSIDE RFP-324-26-Landscape-Construction-Services.pdf (heading found; verify pages) |
 | Exhibit F |  | RFP-324-26-Landscape-Construction-Services.pdf | INSIDE RFP-324-26-Landscape-Construction-Services.pdf (heading found; verify pages) |
 | Exhibit G |  | RFP-324-26-Landscape-Construction-Services.pdf | INSIDE RFP-324-26-Landscape-Construction-Services.pdf (heading found; verify pages) |
-
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Thornton RFP 324-26 on-call landscape | 2026-10-28 15:00 | RFP incl. Exhibits 1-3 and A-G | Nothing listed is missing. Check BidNet for addenda. |

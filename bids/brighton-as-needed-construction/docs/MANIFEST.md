@@ -5,13 +5,23 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 26500209M Addendum 1.docx
+- 26500209M Fee Schedule.xlsx
+- 26500209M Questions and Answers.docx
+- 26500290M Required Solicitation Documents.docx
 - Brighton-26500209MV2-As-Needed-GC.extracted.txt
 - Brighton-26500209MV2-As-Needed-GC.pdf
+- Sample MPA_Services Contract.pdf
+- Solicitation General Terms_2026.pdf
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
+| Exhibit A |  | Sample MPA_Services Contract.pdf | INSIDE Sample MPA_Services Contract.pdf (heading found; verify pages) |
+| Exhibit B |  | Sample MPA_Services Contract.pdf | INSIDE Sample MPA_Services Contract.pdf (heading found; verify pages) |
+| Exhibit C |  | Sample MPA_Services Contract.pdf | **MISSING** |
 
-## Verified by hand 2026-10-19 (authoritative; overrides the automatic table above)
-| Brighton RFP 26-500209-MV2 as-needed GC | 2026-11-09 14:00 | RFP (10 pp) incl. cover sheet | **City forms: Subcontractor & Material Supplier List; Qualification Statement; DBE Self-Certification; Affidavit of Residency; Generative AI Usage Disclosure** (BidNet, Documents tab) |
+## Pricing forms / templates mentioned (check each is in hand)
+
+- ...and the extension of  prices, the unit price shall prevail. Pricing form must be submitted with the Response.   4. Alternate Respons...
