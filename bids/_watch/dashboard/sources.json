@@ -1,0 +1,42 @@
+[
+ {
+  "source": "BidNet / RMEPS (Colorado)",
+  "status": "Not run",
+  "detail": "Scanner has not run against this source yet",
+  "open_count": 0,
+  "matches": 0,
+  "last_success": ""
+ },
+ {
+  "source": "Euna / Bonfire (Town of Parker)",
+  "status": "Not run",
+  "detail": "Scanner has not run against this source yet",
+  "open_count": 0,
+  "matches": 0,
+  "last_success": ""
+ },
+ {
+  "source": "SAM.gov",
+  "status": "Not run",
+  "detail": "Scanner has not run against this source yet",
+  "open_count": 0,
+  "matches": 0,
+  "last_success": ""
+ },
+ {
+  "source": "DLA DIBBS (Jones Bearing)",
+  "status": "Not run",
+  "detail": "Scanner has not run against this source yet",
+  "open_count": 0,
+  "matches": 0,
+  "last_success": ""
+ },
+ {
+  "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
+  "status": "Live (index lags)",
+  "detail": "Newest posting indexed: 2026-10-14. 165 open CO records reviewed 2026-10-19T19:30.",
+  "open_count": 165,
+  "matches": 14,
+  "last_success": "2026-10-19T19:30:00-06:00"
+ }
+]

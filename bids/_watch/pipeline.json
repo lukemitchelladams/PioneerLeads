@@ -1,0 +1,487 @@
+{
+ "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
+ "updated": "2026-10-19T19:50:00-06:00",
+ "bids": [
+  {
+   "id": "cos-parks-r26-077mz",
+   "agency": "City of Colorado Springs",
+   "title": "Parks Maintenance On-Call pool (landscape, janitorial, striping)",
+   "sol": "R26-077MZ",
+   "trade": "Landscape / janitorial",
+   "due": "2026-10-20T14:00:00-06:00",
+   "portal": "BidNet",
+   "decision": "NO",
+   "decision_note": "Luke's CRM marks it no-bid; Appendix A Excel not in repo",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Alex Ditto (landscape) + subs",
+   "subs": "n/a",
+   "folder": "bids/colorado-springs-parks-maintenance-on-call",
+   "contact": "Mike Zeller, michael.zeller@coloradosprings.gov",
+   "sub_pricing": "n/a"
+  },
+  {
+   "id": "parker-26-028",
+   "agency": "Town of Parker",
+   "title": "HVAC Preventive Maintenance & On-Call",
+   "sol": "RFP 26-028",
+   "trade": "HVAC",
+   "due": "2026-10-22T15:00:00-06:00",
+   "portal": "Euna (Bonfire)",
+   "decision": "GO",
+   "decision_note": "Pricing from Rich Carroll (Air Comfort York): $100/$140 per hr + 10% = $110/$154. Per-facility PM prices still needed.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Air Comfort York (Rich Carroll)",
+   "subs": "Rate in hand; per-facility PM pricing outstanding",
+   "folder": "bids/town-of-parker-hvac-on-call",
+   "contact": "Town of Parker Procurement, 303-805-3188",
+   "sub_pricing": "Partial"
+  },
+  {
+   "id": "dcsd-003-27",
+   "agency": "Douglas County School District",
+   "title": "Mowing, 19 sites",
+   "sol": "003-27",
+   "trade": "Landscape",
+   "due": "2026-10-23T14:00:00-06:00",
+   "due_source": "Luke's CRM brief (solicitation not in repo)",
+   "portal": "BidNet",
+   "decision": "GO",
+   "decision_note": "Alex Ditto pricing + 5% markup; Luke signs AM, uploads by 14:00. Run by Luke's CRM.",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "performer": "Alex Ditto",
+   "subs": "Alex pricing (via Luke)",
+   "folder": "bids/dcsd-hvac",
+   "contact": "DCSD Purchasing",
+   "sub_pricing": "Unknown"
+  },
+  {
+   "id": "littleton-2126",
+   "agency": "City of Littleton",
+   "title": "On-Call Commercial Plumbing (~38 buildings, ~$100k/yr pool)",
+   "sol": "RFQ 2126",
+   "trade": "Plumbing",
+   "due": "2026-10-28T14:00:00-06:00",
+   "portal": "RMEPS (BidNet)",
+   "decision": "GO",
+   "decision_note": "Plumber answers due 2026-10-23 17:00. Q&A posts 2026-10-21.",
+   "prebid": "2026-10-09T10:00:00-06:00",
+   "prebid_mandatory": false,
+   "performer": "Plumbing sub",
+   "subs": "Outreach out; answers due 10/23",
+   "folder": "bids/littleton-on-call-plumbing",
+   "contact": "Sam Traylor, straylor@littletonco.gov",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "thornton-324-26",
+   "agency": "City of Thornton",
+   "title": "On-Call Landscape Construction (GSA through 2032)",
+   "sol": "RFP 324-26",
+   "trade": "Landscape",
+   "due": "2026-10-28T15:00:00-06:00",
+   "portal": "BidNet or hand delivery",
+   "decision": "GO",
+   "decision_note": "Alex Ditto as listed sub; his rates + markup on Exhibit C.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Alex Ditto",
+   "subs": "Alex rates (via Luke)",
+   "folder": "bids/thornton-on-call-landscape",
+   "contact": "Keith Griess, keith.griess@cityofthornton.net",
+   "sub_pricing": "Unknown"
+  },
+  {
+   "id": "sd27j-2021brrhs",
+   "agency": "School District 27J",
+   "title": "Riverdale Ridge HS Speaker Cabling (~49-59 speakers)",
+   "sol": "2021BRRHS",
+   "trade": "Low-voltage electrical",
+   "due": "2026-10-28T10:00:00-06:00",
+   "portal": "Email emorales@sd27j.net",
+   "decision": "GO",
+   "decision_note": "Questions due 2026-10-23 15:00. Sub outreach not written yet.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Low-voltage sub",
+   "subs": "NONE YET",
+   "folder": "bids/sd27j-speaker-cabling",
+   "contact": "emorales@sd27j.net",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "elbert-2026-006",
+   "agency": "Elbert County",
+   "title": "Fencing, Kiowa and Simla (~2,963 LF chain-link)",
+   "sol": "IFB 2026-006",
+   "trade": "Fencing",
+   "due": "2026-10-27T12:30:00-06:00",
+   "portal": "Hard copy + email",
+   "decision": "EVALUATE",
+   "decision_note": "Questions due 2026-10-20 13:00. Needs a fence sub quote in ~2 days.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Fence sub",
+   "subs": "NONE",
+   "folder": null,
+   "contact": "Elbert County",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "jeffco-dome-glass",
+   "agency": "Jefferson County Facilities",
+   "title": "Dome Glass Replacement",
+   "sol": "26-18863AP-FM",
+   "trade": "Glazing",
+   "due": "2026-11-04T10:00:00-07:00",
+   "portal": "Jeffco",
+   "decision": "EVALUATE",
+   "decision_note": "Site visit 10/15 passed ('should attend', not stated mandatory). Ask Andrew Pulford before questions close 2026-10-21 10:00.",
+   "prebid": "2026-10-15T10:00:00-06:00",
+   "prebid_mandatory": null,
+   "performer": "Glazing sub",
+   "subs": "NONE",
+   "folder": null,
+   "contact": "Andrew Pulford",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "arapahoe-26-52",
+   "agency": "Arapahoe County",
+   "title": "Fairgrounds Turfgrass Conversion (3.45 ac, Davis-Bacon)",
+   "sol": "RFP 26-52",
+   "trade": "Landscape",
+   "due": "2026-11-04T14:00:00-07:00",
+   "portal": "BidNet",
+   "decision": "AT RISK",
+   "decision_note": "Mandatory Teams meeting was 2026-10-19 13:30, invite-only. Attendance not confirmed; dead if we were not in it.",
+   "prebid": "2026-10-19T13:30:00-06:00",
+   "prebid_mandatory": true,
+   "performer": "Alex Ditto",
+   "subs": "Alex (via Luke)",
+   "folder": "bids/arapahoe-fairgrounds-turfgrass",
+   "contact": "Katie Schwindt, kschwindt@arapahoegov.com",
+   "sub_pricing": "Unknown"
+  },
+  {
+   "id": "brighton-26-500209",
+   "agency": "City of Brighton",
+   "title": "As-Needed General Construction (handyman on-call, $80-100k/yr)",
+   "sol": "RFP 26-500209-MV2",
+   "trade": "Facilities / GC",
+   "due": "2026-11-09T14:00:00-07:00",
+   "portal": "BidNet",
+   "decision": "GO",
+   "decision_note": "No meeting. Need handyman/GC sub rates.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Handyman/GC sub",
+   "subs": "6 drafts written 10/19, none sent/answered",
+   "folder": "bids/brighton-as-needed-construction",
+   "contact": "Kelsey Archuleta, procurement@brightonco.gov",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "adams-2026-766",
+   "agency": "Adams County",
+   "title": "Street Light Repair & Replacement, Colorado Air & Space Port",
+   "sol": "IFB-2026.766",
+   "trade": "Electrical",
+   "due": "2026-11-12T15:00:00-07:00",
+   "portal": "BidNet",
+   "decision": "GO",
+   "decision_note": "MANDATORY pre-bid Wed 2026-10-21 10:00, 5200 Front Range Pkwy, Watkins. Luke attends.",
+   "prebid": "2026-10-21T10:00:00-06:00",
+   "prebid_mandatory": true,
+   "performer": "Electrical sub (boring + poles)",
+   "subs": "2 drafts + call list 10/19; no pricing",
+   "folder": "bids/adams-county-airport-streetlights",
+   "contact": "Joe Lachermeier, jlachermeier@adcogov.org",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "metro-water-b26019",
+   "agency": "Metro Water Recovery",
+   "title": "Switchgear & Protective Relay Maintenance, 5 yrs",
+   "sol": "RFP B26019",
+   "trade": "Electrical testing",
+   "due": "2026-11-12T14:00:00-07:00",
+   "portal": "BidNet",
+   "decision": "EVALUATE",
+   "decision_note": "Optional site visit 2026-10-27 09:00; RSVP by 2026-10-23 14:00. Needs NETA sub.",
+   "prebid": "2026-10-27T09:00:00-06:00",
+   "prebid_mandatory": false,
+   "performer": "NETA testing sub",
+   "subs": "3 drafts 10/19; no pricing",
+   "folder": "bids/metro-water-switchgear-maintenance",
+   "contact": "Brian Sward, bsward@metrowaterrecovery.com",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "rtd-126dm016",
+   "agency": "RTD Denver",
+   "title": "Bus Shelter Maintenance, 42 shelters (15% SBE goal)",
+   "sol": "RFP 126DM016",
+   "trade": "Custodial / snow",
+   "due": "2026-11-16T14:00:00-07:00",
+   "portal": "OpenGov",
+   "decision": "GO",
+   "decision_note": "Optional briefing 2026-10-26 14:00 Teams. Colorado Power Wash call 2026-10-20.",
+   "prebid": "2026-10-26T14:00:00-06:00",
+   "prebid_mandatory": false,
+   "performer": "Brown Bison + Alex (snow) + custodial sub",
+   "subs": "3 sent, 4 drafts; Colorado Power Wash replied",
+   "folder": "bids/rtd-bus-shelter-maintenance",
+   "contact": "Marla Bainbridge, (303) 299-2411",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "westminster-26-002",
+   "agency": "Westminster Public Schools",
+   "title": "Summer 2027 Facility Improvements, 6 packages",
+   "sol": "RFP 26-002",
+   "trade": "GC / electrical",
+   "due": "2026-12-01T14:00:00-07:00",
+   "portal": "RMEPS (BidNet)",
+   "decision": "AT RISK",
+   "decision_note": "Mandatory walk was 2026-10-19 14:00 at Sherrelwood Elem. Attendance not confirmed; dead if missed.",
+   "prebid": "2026-10-19T14:00:00-06:00",
+   "prebid_mandatory": true,
+   "performer": "GC / electrical sub",
+   "subs": "NONE",
+   "folder": "bids/westminster-ps-facility-improvements",
+   "contact": "Kristen Hernandez, khernandez@wps.org",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "codoc-trinidad-boiler",
+   "agency": "Colorado DOC",
+   "title": "Boiler Chemicals & Treatment, Trinidad CF",
+   "sol": "DQ CAAA 2027000037",
+   "trade": "Boiler",
+   "due": "2026-10-29T17:00:00-06:00",
+   "portal": "BidNet",
+   "decision": "NO",
+   "decision_note": "Mandatory visit 10/21 10:00 conflicts with Adams County; RSVP closed 10/19.",
+   "prebid": "2026-10-21T10:00:00-06:00",
+   "prebid_mandatory": true,
+   "performer": "-",
+   "subs": "n/a",
+   "folder": "bids/codoc-trinidad-boiler-chemicals",
+   "contact": "Jennifer Garvin",
+   "sub_pricing": "n/a"
+  },
+  {
+   "id": "boulder-313-26",
+   "agency": "Boulder County",
+   "title": "HVAC Air Filters (supply)",
+   "sol": "BID-313-26",
+   "trade": "HVAC supply",
+   "due": "2026-10-29T15:00:00-06:00",
+   "portal": "Bonfire",
+   "decision": "NO",
+   "decision_note": "Killed by Luke: no quantities, thin margin (rule 9).",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "-",
+   "subs": "n/a",
+   "folder": "bids/boulder-county-hvac-filters",
+   "contact": "procurement@bouldercounty.gov",
+   "sub_pricing": "n/a"
+  },
+  {
+   "id": "poudre-27-702-002",
+   "agency": "Poudre School District",
+   "title": "Livermore Elementary snow removal",
+   "sol": "IFB 27-702-002",
+   "trade": "Snow",
+   "due": "2026-10-26T14:00:00-06:00",
+   "due_source": "Luke's CRM brief (time not stated; solicitation not in repo)",
+   "portal": "BidNet",
+   "decision": "GO",
+   "decision_note": "Run by Luke's CRM: sub rates by 10/19 or no-bid.",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "performer": "Snow sub",
+   "subs": "Per CRM",
+   "folder": null,
+   "contact": "Poudre SD Purchasing",
+   "sub_pricing": "Unknown"
+  }
+ ],
+ "events": [
+  {
+   "bid": "elbert-2026-006",
+   "when": "2026-10-20T13:00:00-06:00",
+   "kind": "Questions due",
+   "note": "Elbert fencing questions close"
+  },
+  {
+   "bid": "rtd-126dm016",
+   "when": "2026-10-20T10:00:00-06:00",
+   "kind": "Sub call",
+   "note": "Colorado Power Wash call (time TBD)"
+  },
+  {
+   "bid": "littleton-2126",
+   "when": "2026-10-21T12:00:00-06:00",
+   "kind": "Addendum",
+   "note": "Littleton Q&A / meeting notes post in RMEPS"
+  },
+  {
+   "bid": "jeffco-dome-glass",
+   "when": "2026-10-21T10:00:00-06:00",
+   "kind": "Questions due",
+   "note": "Ask Andrew Pulford whether we can still bid"
+  },
+  {
+   "bid": "adams-2026-766",
+   "when": "2026-10-21T10:00:00-06:00",
+   "kind": "MANDATORY pre-bid",
+   "note": "5200 Front Range Pkwy, Watkins. Luke attends."
+  },
+  {
+   "bid": "littleton-2126",
+   "when": "2026-10-23T17:00:00-06:00",
+   "kind": "Sub answers due",
+   "note": "Plumber pricing/answers"
+  },
+  {
+   "bid": "sd27j-2021brrhs",
+   "when": "2026-10-23T15:00:00-06:00",
+   "kind": "Questions due",
+   "note": "27J speaker cabling"
+  },
+  {
+   "bid": "metro-water-b26019",
+   "when": "2026-10-23T14:00:00-06:00",
+   "kind": "RSVP due",
+   "note": "Site visit RSVP (max 2 reps)"
+  },
+  {
+   "bid": "rtd-126dm016",
+   "when": "2026-10-26T14:00:00-06:00",
+   "kind": "Briefing (optional)",
+   "note": "Teams"
+  },
+  {
+   "bid": "metro-water-b26019",
+   "when": "2026-10-27T09:00:00-06:00",
+   "kind": "Site visit (optional)",
+   "note": "Hite facility"
+  },
+  {
+   "bid": "adams-2026-766",
+   "when": "2026-10-27T17:00:00-06:00",
+   "kind": "Questions due",
+   "note": ""
+  },
+  {
+   "bid": "rtd-126dm016",
+   "when": "2026-11-02T14:00:00-07:00",
+   "kind": "Questions due",
+   "note": ""
+  },
+  {
+   "bid": "metro-water-b26019",
+   "when": "2026-11-02T14:00:00-07:00",
+   "kind": "Questions due",
+   "note": ""
+  },
+  {
+   "bid": "westminster-26-002",
+   "when": "2026-11-05T17:00:00-07:00",
+   "kind": "Questions due",
+   "note": ""
+  }
+ ],
+ "doc_gaps": [
+  {
+   "bid": "littleton-2126",
+   "item": "Attachment A Contract Certification Form",
+   "where": "RMEPS/BidNet, search 2126, Documents tab"
+  },
+  {
+   "bid": "littleton-2126",
+   "item": "Attachment B Sample Contract",
+   "where": "RMEPS/BidNet, Documents tab"
+  },
+  {
+   "bid": "littleton-2126",
+   "item": "Attachment C RMEPS Bid Question Response Guide",
+   "where": "RMEPS/BidNet, Documents tab"
+  },
+  {
+   "bid": "littleton-2126",
+   "item": "RMEPS pricing template",
+   "where": "RMEPS/BidNet, Documents tab"
+  },
+  {
+   "bid": "littleton-2126",
+   "item": "Q&A / meeting notes (posts 10/21)",
+   "where": "RMEPS/BidNet"
+  },
+  {
+   "bid": "rtd-126dm016",
+   "item": "SBE Required Enclosures",
+   "where": "rtd-denver.com/downloads/sbe-enclosures"
+  },
+  {
+   "bid": "rtd-126dm016",
+   "item": "SBE Contract Requirements Certification",
+   "where": "OpenGov portal, section 7"
+  },
+  {
+   "bid": "rtd-126dm016",
+   "item": "W-9 and Key Personnel forms",
+   "where": "OpenGov portal, section 7"
+  },
+  {
+   "bid": "brighton-26-500209",
+   "item": "City forms: Sub & Supplier List, Qualification Statement, DBE Self-Cert, Affidavit of Residency, Gen-AI Disclosure",
+   "where": "BidNet, Documents tab"
+  },
+  {
+   "bid": "adams-2026-766",
+   "item": "Exhibits B and C to sample agreement (HUD/federal)",
+   "where": "BidNet"
+  },
+  {
+   "bid": "metro-water-b26019",
+   "item": "Attachment 1 Scope of Services",
+   "where": "BidNet"
+  },
+  {
+   "bid": "metro-water-b26019",
+   "item": "Attachment 2 Price Proposal",
+   "where": "BidNet"
+  },
+  {
+   "bid": "metro-water-b26019",
+   "item": "Attachment 3 Short Form Agreement",
+   "where": "BidNet"
+  },
+  {
+   "bid": "westminster-26-002",
+   "item": "Attachment E General Conditions",
+   "where": "RMEPS/BidNet"
+  },
+  {
+   "bid": "westminster-26-002",
+   "item": "Attachment F Drawings",
+   "where": "RMEPS/BidNet"
+  },
+  {
+   "bid": "westminster-26-002",
+   "item": "Attachment G Technical Specifications",
+   "where": "RMEPS/BidNet"
+  },
+  {
+   "bid": "cos-parks-r26-077mz",
+   "item": "Appendix A Specialty Submission (Excel)",
+   "where": "BidNet (Luke downloaded it)"
+  }
+ ]
+}

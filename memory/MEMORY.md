@@ -313,3 +313,15 @@ pages, pull Littleton A/B/C + all DOC-GAPS items, push results to this branch) a
 live scan hourly at :50 in that environment, fresh session each time. This session's hourly check at :21 git-pulls
 and acts on REPORT.md. Credentials still go in that environment's env vars (Luke).
 - 2026-10-19 19:42 MT: live hourly trigger trig_014jsVKh8JXD8hBPctBHbDu4 PAUSED until session_019uSEKHU1Qyo6YGinn8hySB finishes selector fixes; RE-ENABLE it at the 20:02 MT check-in (trig_01JM8pMRPmjVPD5r5Ji78skW).
+
+## 2026-10-19 20:00 MT — Bid Command dashboard live
+- Dashboard: https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3 (Dashboard artifact type; private until Luke shares it).
+  Shows headline counts, next-21-days event chart, upcoming agenda, full pipeline table (decision, due, walk, sub pricing,
+  docs missing, next action), missing documents, source health, live portal feed (searchable).
+- Data: bids/_watch/pipeline.json (canonical tracked-bid registry: bids, events, doc_gaps, sub_pricing) +
+  open_bids.json/health.json from the scanner → `python3 scripts/build_dashboard_data.py` → bids/_watch/dashboard/*.json →
+  uploaded as artifact assets; datasets/<id> point at them. Page source mirrored at scripts/dashboard/index.html
+  (store doc files/index.html). Empty-array files fail to load in the dashboard: never upload one.
+- Hourly routine trig_01PXEWJ1rzGbpACou7gVxcmw got PART F (keep pipeline.json current, rebuild, re-upload, update datasets).
+- Live scanner session_019uSEKHU1Qyo6YGinn8hySB: BidNet parser working on real pages (400 open CO bids), Bonfire working
+  (Parker 26-028 closes 2026-10-22 15:00 MDT, matches docs), DIBBS rewrite in progress. Not pushed yet at 19:55 MT.

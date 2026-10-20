@@ -1,0 +1,439 @@
+<style>
+.bb { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.bb-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.bb-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.bb-take { margin: 0; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); max-width: 70ch; }
+.bb-take .k { color: var(--color-fg); }
+.bb-take .crit { color: var(--color-bad); }
+.bb-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-md); }
+.bb-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+.bb-kpi .v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.bb-kpi .l { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bb-kpi.hot .v { color: var(--color-bad); }
+.bb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+.bb-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.bb-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.bb-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+.bb-empty { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; padding: var(--cds-pad-md) 0; }
+.bb-scroll { overflow: auto; max-height: 34rem; }
+.bb table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.bb th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; background: var(--color-panel); white-space: nowrap; }
+.bb td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.bb td.num { text-align: right; }
+.bb th.num { text-align: right; }
+.bb tr.dead td { color: var(--color-fg-muted); }
+.bb .sub { display: block; color: var(--color-fg-muted); }
+.pill { display: inline-block; padding: 0 var(--cds-pad-xs); border: 1px solid currentColor; border-radius: 999px; white-space: nowrap; font-size: var(--cds-font-size-caption); line-height: 1.5; }
+.pill.ok { color: var(--color-ok); }
+.pill.warn { color: var(--color-warn); }
+.pill.bad { color: var(--color-bad); }
+.pill.mute { color: var(--color-fg-muted); }
+.bb-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.bb-chips button { font: inherit; font-size: var(--cds-font-size-caption); padding: 2px var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); background: transparent; color: var(--color-fg); cursor: pointer; }
+.bb-chips button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.bb-chips button:focus-visible, .bb input:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.bb input[type="search"] { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); width: min(100%, 22rem); }
+.bb-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bb-legend span::before { content: ""; display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 2px; margin-right: 0.35rem; background: var(--sw); vertical-align: baseline; }
+.bb-chart { position: relative; min-height: 170px; }
+.bb-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 18rem; z-index: 2; }
+.bb-tip .d { color: var(--cds-text-secondary); margin-bottom: 2px; }
+.bb a { color: inherit; }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.bb-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 4rem; }
+.bb-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+@media (max-width: 640px) { .bb .wide { display: none; } }
+</style>
+
+<div class="bb">
+  <header class="bb-head" id="top">
+    <h1>Brown Bison Bid Command</h1>
+    <p class="bb-take" id="takeaway" data-source="next_up"><span class="dash-skeleton">—</span></p>
+  </header>
+
+  <section class="bb-kpis" id="kpis" aria-label="Headline figures">
+    <div class="bb-kpi"><span class="v dash-skeleton" data-source="kpis" data-field="live_go" data-row="0">—</span><span class="l">GO bids open</span></div>
+    <div class="bb-kpi"><span class="v dash-skeleton" data-source="kpis" data-field="due_7d" data-row="0">—</span><span class="l">Submissions due in 7 days</span></div>
+    <div class="bb-kpi hot"><span class="v dash-skeleton" data-source="kpis" data-field="mandatory_72h" data-row="0">—</span><span class="l">Mandatory walks in 72 hours</span></div>
+    <div class="bb-kpi"><span class="v dash-skeleton" data-source="kpis" data-field="no_sub_pricing" data-row="0">—</span><span class="l">GO bids with no sub pricing</span></div>
+    <div class="bb-kpi"><span class="v dash-skeleton" data-source="kpis" data-field="docs_missing" data-row="0">—</span><span class="l">Solicitation documents missing</span></div>
+  </section>
+
+  <section class="bb-grid">
+    <article class="bb-card" id="calendar">
+      <h2>Next 21 days</h2>
+      <p class="bb-note">Every dated event on live bids, per day. Hover a day for the list.</p>
+      <div class="bb-legend" id="legend"></div>
+      <div class="bb-chart" id="daychart" data-source="by_day"></div>
+    </article>
+    <article class="bb-card" id="agenda">
+      <h2>Coming up</h2>
+      <p class="bb-note">Next 12 events. Mountain time.</p>
+      <div class="bb-scroll">
+        <table data-source="events" data-row-key="key" id="agenda-table">
+          <thead><tr><th data-field="when">When</th><th data-field="kind">Event</th><th data-field="agency">Agency</th><th data-field="sol" class="wide">Solicitation</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <article class="bb-card" id="pipeline">
+    <h2>Pipeline</h2>
+    <p class="bb-note">Every tracked bid, soonest first. Brown Bison submits every one; the performer is our sub.</p>
+    <div class="bb-chips" id="decision-chips" role="group" aria-label="Filter by decision"></div>
+    <div class="bb-scroll">
+      <table data-source="bids" data-row-key="id" id="pipeline-table">
+        <thead><tr>
+          <th data-field="decision">Decision</th>
+          <th data-field="agency">Agency</th>
+          <th data-field="title" class="wide">Bid</th>
+          <th data-field="sol">Solicitation</th>
+          <th data-field="due">Due (MT)</th>
+          <th>Time left</th>
+          <th data-field="walk">Pre-bid / walk</th>
+          <th data-field="sub_pricing">Sub pricing</th>
+          <th data-field="docs_missing" class="num">Docs missing</th>
+          <th data-field="decision_note" class="wide">Next action</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </article>
+
+  <section class="bb-grid">
+    <article class="bb-card" id="documents">
+      <h2>Missing documents</h2>
+      <p class="bb-note">Referenced in the solicitation but not in the bid folder. Live bids only.</p>
+      <div class="bb-scroll">
+        <table data-source="doc_gaps" data-row-key="key" id="gaps-table">
+          <thead><tr><th data-field="agency">Agency</th><th data-field="item">Missing item</th><th data-field="where" class="wide">Get it from</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </article>
+    <article class="bb-card" id="sources">
+      <h2>Bid sources</h2>
+      <p class="bb-note">Is each portal being read right now, and how many open bids it returned.</p>
+      <div class="bb-scroll">
+        <table data-source="sources" data-row-key="source" id="sources-table">
+          <thead><tr><th data-field="source">Source</th><th data-field="status">Status</th><th data-field="open_count" class="num">Open</th><th data-field="matches" class="num">Ours</th><th data-field="last_success" class="wide">Last good read</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <article class="bb-card" id="feed">
+    <h2>Live portal feed</h2>
+    <p class="bb-note">Open bids on BidNet, Euna/Bonfire, SAM.gov and DIBBS that match Brown Bison or Jones Bearing trades. Refreshed by the hourly scan.</p>
+    <input type="search" id="feed-search" placeholder="Search title, agency, trade" aria-label="Search the portal feed">
+    <p class="bb-empty" id="feed-empty" hidden>No portal scan has landed yet. The live scanner fills this table on its next run.</p>
+    <div class="bb-scroll">
+      <table data-source="portal_feed" data-row-key="key" id="feed-table">
+        <thead><tr><th data-field="source">Source</th><th data-field="agency">Agency</th><th data-field="title">Title</th><th data-field="closing">Closes</th><th data-field="prebid_mandatory" class="wide">Pre-bid</th><th data-field="profiles" class="wide">Matches</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </article>
+</div>
+
+<script>
+dash.calc('kpis', {
+  inputs: ['bids', 'events', 'doc_gaps'],
+  title: 'Headline counts',
+  description: 'Counts of open GO bids, submissions due within 7 days, mandatory walks within 72 hours, GO bids with no sub pricing, and missing documents on live bids, as of the last scan.',
+  fn: (bids, events, doc_gaps) => {
+    const live = bids.filter((b) => b.status === 'Open' && b.decision !== 'NO');
+    return [{
+      live_go: live.filter((b) => b.decision === 'GO').length,
+      due_7d: live.filter((b) => b.days_left >= 0 && b.days_left <= 7).length,
+      mandatory_72h: events.filter((e) => e.kind.startsWith('MANDATORY') && !e.past && e.days_left <= 3).length,
+      no_sub_pricing: live.filter((b) => b.decision === 'GO' && b.sub_pricing === 'None').length,
+      docs_missing: doc_gaps.filter((g) => g.decision !== 'NO').length,
+    }];
+  },
+});
+
+dash.calc('next_up', {
+  inputs: ['events'],
+  title: 'Next critical dates',
+  description: 'The next three submissions or mandatory walks that have not passed.',
+  fn: (events) => events.filter((e) => e.critical && !e.past).slice(0, 3)
+    .map((e) => ({ key: e.key, kind: e.kind, agency: e.agency, sol: e.sol, when: e.when })),
+});
+
+dash.calc('by_day', {
+  inputs: ['events'],
+  title: 'Events per day',
+  description: 'Upcoming events on live bids grouped by day: submissions, mandatory walks, and everything else.',
+  fn: (events) => {
+    const days = new Map();
+    for (const e of events) {
+      if (e.past || e.days_left > 21) continue;
+      const d = days.get(e.date) || { date: e.date, submissions: 0, mandatory: 0, other: 0, items: [] };
+      if (e.kind === 'Submission') d.submissions += 1;
+      else if (e.kind.startsWith('MANDATORY')) d.mandatory += 1;
+      else d.other += 1;
+      d.items.push(e.kind + ': ' + e.agency + (e.sol ? ' ' + e.sol : ''));
+      days.set(e.date, d);
+    }
+    return [...days.values()];
+  },
+});
+
+window.bb = {
+  fmtWhen: new Intl.DateTimeFormat('en-US', { timeZone: 'America/Denver', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }),
+  fmtDay: new Intl.DateTimeFormat('en-US', { timeZone: 'America/Denver', weekday: 'short', month: 'short', day: 'numeric' }),
+  when(s) { return s ? window.bb.fmtWhen.format(new Date(s)) : ''; },
+  left(s) {
+    if (!s) return '';
+    const h = (new Date(s) - Date.now()) / 36e5;
+    if (h < 0) return 'passed';
+    if (h < 48) return Math.round(h) + ' h';
+    return Math.floor(h / 24) + ' d ' + Math.round(h % 24) + ' h';
+  },
+  pillClass(v) {
+    v = String(v || '');
+    if (/^GO$|^Live$|^In hand/.test(v)) return 'ok';
+    if (/EVALUATE|Partial|Unknown|lags|public|0 parsed|Unclear/i.test(v)) return 'warn';
+    if (/AT RISK|^None$|Blocked|Mandatory|not logged/i.test(v)) return 'bad';
+    return 'mute';
+  },
+  pill(v) { const s = document.createElement('span'); s.className = 'pill ' + window.bb.pillClass(v); s.textContent = v; return s; },
+  td(content, cls) {
+    const td = document.createElement('td');
+    if (cls) td.className = cls;
+    if (content instanceof Node) td.append(content); else td.textContent = content ?? '';
+    return td;
+  },
+  fail(el) { const p = document.createElement('div'); p.className = 'bb-fail'; p.textContent = 'Failed to load'; el.replaceChildren(p); },
+};
+</script>
+
+<script>
+const take = document.getElementById('takeaway');
+dash.onData(() => {
+  const d = dash.data('next_up');
+  if (d.status === 'error') { take.textContent = 'Failed to load'; return; }
+  if (d.status !== 'ok') return;
+  take.classList.remove('dash-skeleton');
+  const parts = [];
+  d.data.forEach((r, i) => {
+    const wrap = document.createElement('span');
+    const k = document.createElement('span');
+    k.className = r.kind.startsWith('MANDATORY') ? 'k crit' : 'k';
+    k.dataset.source = 'next_up'; k.dataset.row = i; k.dataset.field = 'kind'; k.textContent = r.kind;
+    const a = document.createElement('span');
+    a.className = 'k'; a.dataset.source = 'next_up'; a.dataset.row = i; a.dataset.field = 'agency'; a.textContent = r.agency;
+    const w = document.createElement('span');
+    w.dataset.source = 'next_up'; w.dataset.row = i; w.dataset.field = 'when'; w.textContent = bb.when(r.when);
+    wrap.append(i === 0 ? 'Next: ' : 'Then ', k, ', ', a, ', ', w, ' (' + bb.left(r.when) + '). ');
+    parts.push(wrap);
+  });
+  take.replaceChildren(...(parts.length ? parts : ['Nothing critical on the calendar.']));
+});
+
+for (const el of document.querySelectorAll('#kpis .v')) {
+  dash.onData(() => {
+    const d = dash.data('kpis');
+    if (d.status === 'ok') { el.classList.remove('dash-skeleton'); el.textContent = d3.format(',')(d.data[0][el.dataset.field]); }
+    else if (d.status === 'error') { el.classList.remove('dash-skeleton'); el.textContent = '—'; }
+  });
+}
+</script>
+
+<script>
+const chartEl = document.getElementById('daychart');
+const series = [
+  { key: 'submissions', label: 'Submission', color: () => dash.colors[0] },
+  { key: 'mandatory', label: 'Mandatory walk', color: () => 'var(--cds-chart-status-critical)' },
+  { key: 'other', label: 'Questions, RSVPs, briefings', color: () => 'var(--cds-chart-muted)' },
+];
+const legend = document.getElementById('legend');
+legend.replaceChildren(...series.map((s) => { const x = document.createElement('span'); x.style.setProperty('--sw', s.color()); x.textContent = s.label; return x; }));
+
+dash.onData(() => {
+  const d = dash.data('by_day');
+  if (d.status === 'error') { bb.fail(chartEl); return; }
+  if (d.status !== 'ok') { chartEl.replaceChildren(); return; }
+  const W = Math.max(280, chartEl.clientWidth), H = 170, m = { t: 18, r: 4, b: 26, l: 4 };
+  const dayKey = d3.utcFormat('%Y-%m-%d');
+  const todayMT = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Denver' }));
+  const start = new Date(Date.UTC(todayMT.getFullYear(), todayMT.getMonth(), todayMT.getDate()));
+  const days = d3.range(21).map((i) => dayKey(d3.utcDay.offset(start, i)));
+  const byDate = new Map(d.data.map((r) => [r.date, r]));
+  const rows = days.map((k) => byDate.get(k) || { date: k, submissions: 0, mandatory: 0, other: 0, items: [] });
+  const stack = d3.stack().keys(series.map((s) => s.key))(rows);
+  const x = d3.scaleBand(days, [m.l, W - m.r]).paddingInner(0.25);
+  const maxN = d3.max(rows, (r) => r.submissions + r.mandatory + r.other) || 1;
+  const y = d3.scaleLinear([0, Math.max(3, maxN)], [H - m.b, m.t]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Events per day for the next 21 days');
+  svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', H - m.b).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-axis)');
+  stack.forEach((layer, i) => {
+    svg.append('g').selectAll('rect').data(layer.filter((p) => p[1] > p[0])).join('rect')
+      .attr('x', (p) => x(p.data.date)).attr('width', x.bandwidth())
+      .attr('y', (p) => y(p[1])).attr('height', (p) => Math.max(0, y(p[0]) - y(p[1]) - 1))
+      .attr('rx', 3).attr('fill', series[i].color());
+  });
+  svg.append('g').selectAll('text').data(rows.filter((r) => r.submissions + r.mandatory + r.other)).join('text')
+    .attr('x', (r) => x(r.date) + x.bandwidth() / 2).attr('y', (r) => y(r.submissions + r.mandatory + r.other) - 4)
+    .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)')
+    .text((r) => r.submissions + r.mandatory + r.other);
+  const every = Math.max(1, Math.ceil(21 * 46 / W));
+  const fmtTick = d3.utcFormat('%b %-d');
+  svg.append('g').selectAll('text').data(days.filter((_, i) => i % every === 0)).join('text')
+    .attr('x', (k) => x(k) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle')
+    .attr('font-size', 11).attr('fill', 'var(--color-fg-muted)')
+    .text((k, i) => (i === 0 ? 'Today' : fmtTick(new Date(k + 'T12:00:00Z'))));
+  const tip = document.createElement('div');
+  tip.className = 'bb-tip'; tip.hidden = true;
+  svg.append('g').selectAll('rect').data(rows).join('rect')
+    .attr('x', (r) => x(r.date) - x.step() * x.paddingInner() / 2).attr('width', x.step())
+    .attr('y', m.t).attr('height', H - m.t - m.b).attr('fill', 'transparent')
+    .on('pointerenter pointermove', (ev, r) => {
+      if (!r.items.length) { tip.hidden = true; return; }
+      const head = document.createElement('div'); head.className = 'd';
+      head.textContent = bb.fmtDay.format(new Date(r.date + 'T18:00:00Z'));
+      tip.replaceChildren(head, ...r.items.map((t) => { const l = document.createElement('div'); l.textContent = t; return l; }));
+      tip.hidden = false;
+      const box = chartEl.getBoundingClientRect();
+      const px = ev.clientX - box.left;
+      tip.style.left = Math.min(Math.max(0, px - 90), box.width - tip.offsetWidth) + 'px';
+      tip.style.top = '0px';
+    })
+    .on('pointerleave', () => { tip.hidden = true; });
+  chartEl.replaceChildren(svg.node(), tip);
+});
+</script>
+
+<script>
+const agendaBody = document.querySelector('#agenda-table tbody');
+dash.onData(() => {
+  const d = dash.data('events');
+  if (d.status === 'error') { bb.fail(agendaBody); return; }
+  if (d.status !== 'ok') return;
+  const rows = d.data.filter((e) => !e.past && new Date(e.when) > Date.now()).slice(0, 12);
+  agendaBody.replaceChildren(...rows.map((e) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = e.key;
+    const when = document.createElement('span'); when.textContent = bb.when(e.when);
+    const left = document.createElement('span'); left.className = 'sub'; left.textContent = 'in ' + bb.left(e.when);
+    const w = document.createElement('div'); w.append(when, left);
+    const kind = e.kind.startsWith('MANDATORY') ? bb.pill(e.kind) : (e.kind === 'Submission' ? (() => { const s = bb.pill(e.kind); s.className = 'pill ok'; return s; })() : document.createTextNode(e.kind));
+    tr.append(bb.td(w), bb.td(kind), bb.td(e.agency), bb.td(e.sol, 'wide'));
+    return tr;
+  }));
+});
+</script>
+
+<script>
+const pipeBody = document.querySelector('#pipeline-table tbody');
+const chips = document.getElementById('decision-chips');
+const choices = [['all', 'All'], ['GO', 'GO'], ['EVALUATE', 'Evaluate'], ['AT RISK', 'At risk'], ['NO', 'No-bid']];
+chips.replaceChildren(...choices.map(([v, label]) => {
+  const b = document.createElement('button');
+  b.type = 'button'; b.dataset.v = v; b.textContent = label;
+  b.addEventListener('click', () => dash.setParams({ decision: v === 'all' ? null : v }));
+  return b;
+}));
+const rank = { 'GO': 0, 'AT RISK': 1, 'EVALUATE': 2, 'NO': 3 };
+dash.onData(() => {
+  const pick = dash.params().decision || 'all';
+  for (const b of chips.children) b.setAttribute('aria-pressed', String(b.dataset.v === pick));
+  const d = dash.data('bids');
+  if (d.status === 'error') { bb.fail(pipeBody); return; }
+  if (d.status !== 'ok') return;
+  const rows = d.data.filter((b) => pick === 'all' || b.decision === pick)
+    .sort((a, b) => ((a.decision === 'NO') - (b.decision === 'NO')) || (new Date(a.due) - new Date(b.due)) || (rank[a.decision] - rank[b.decision]));
+  pipeBody.replaceChildren(...rows.map((b) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = b.id;
+    if (b.decision === 'NO' || b.status === 'Closed') tr.className = 'dead';
+    const due = document.createElement('div');
+    const dd = document.createElement('span'); dd.textContent = bb.when(b.due); due.append(dd);
+    if (b.due_source && b.due_source !== 'Solicitation') { const s = document.createElement('span'); s.className = 'sub'; s.textContent = 'per ' + b.due_source; due.append(s); }
+    const walk = /Mandatory, (in|upcoming)/.test(b.walk) ? bb.pill(b.walk) : document.createTextNode(b.walk);
+    const subp = b.sub_pricing === 'n/a' ? document.createTextNode('n/a') : bb.pill(b.sub_pricing);
+    tr.append(
+      bb.td(bb.pill(b.decision)), bb.td(b.agency), bb.td(b.title, 'wide'), bb.td(b.sol), bb.td(due),
+      bb.td(bb.left(b.due)), bb.td(walk), bb.td(subp), bb.td(d3.format(',')(b.docs_missing), 'num'), bb.td(b.decision_note, 'wide'),
+    );
+    return tr;
+  }));
+});
+</script>
+
+<script>
+const gapsBody = document.querySelector('#gaps-table tbody');
+dash.onData(() => {
+  const d = dash.data('doc_gaps');
+  if (d.status === 'error') { bb.fail(gapsBody); return; }
+  if (d.status !== 'ok') return;
+  const rows = d.data.filter((g) => g.decision !== 'NO').sort((a, b) => new Date(a.due) - new Date(b.due));
+  gapsBody.replaceChildren(...rows.map((g) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = g.key;
+    const a = document.createElement('div');
+    const n = document.createElement('span'); n.textContent = g.agency;
+    const s = document.createElement('span'); s.className = 'sub'; s.textContent = g.sol + ' · due ' + bb.left(g.due);
+    a.append(n, s);
+    tr.append(bb.td(a), bb.td(g.item), bb.td(g.where, 'wide'));
+    return tr;
+  }));
+});
+
+const srcBody = document.querySelector('#sources-table tbody');
+dash.onData(() => {
+  const d = dash.data('sources');
+  if (d.status === 'error') { bb.fail(srcBody); return; }
+  if (d.status !== 'ok') return;
+  srcBody.replaceChildren(...d.data.map((s) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = s.source;
+    const name = document.createElement('div');
+    const n = document.createElement('span'); n.textContent = s.source;
+    const det = document.createElement('span'); det.className = 'sub'; det.textContent = s.detail;
+    name.append(n, det);
+    tr.append(bb.td(name), bb.td(bb.pill(s.status)), bb.td(d3.format(',')(s.open_count), 'num'),
+      bb.td(d3.format(',')(s.matches), 'num'), bb.td(s.last_success ? bb.when(s.last_success) : 'never', 'wide'));
+    return tr;
+  }));
+});
+</script>
+
+<script>
+const feedBody = document.querySelector('#feed-table tbody');
+const feedEmpty = document.getElementById('feed-empty');
+const feedSearch = document.getElementById('feed-search');
+const drawFeed = () => {
+  const d = dash.data('portal_feed');
+  if (d.status === 'error') {
+    const s = dash.data('sources');
+    const scanned = s.status === 'ok' && s.data.some((r) => !/GovTribe/.test(r.source) && r.status !== 'Not run');
+    if (scanned) bb.fail(feedBody); else { feedEmpty.hidden = false; feedSearch.hidden = true; feedBody.replaceChildren(); }
+    return;
+  }
+  if (d.status !== 'ok') return;
+  feedEmpty.hidden = d.data.length > 0;
+  feedSearch.hidden = d.data.length === 0;
+  const q = feedSearch.value.trim().toLowerCase();
+  const rows = d.data.filter((r) => !q || [r.title, r.agency, r.profiles, r.source, r.sol].join(' ').toLowerCase().includes(q));
+  feedBody.replaceChildren(...rows.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = r.key;
+    let title = document.createTextNode(r.title);
+    if (/^https:\/\//.test(r.url)) { title = document.createElement('a'); title.href = r.url; title.target = '_blank'; title.rel = 'noopener'; title.textContent = r.title; }
+    const t = document.createElement('div'); t.append(title);
+    if (r.new_24h) { t.append(' '); const p = bb.pill('New'); p.className = 'pill ok'; t.append(p); }
+    if (r.watched) { t.append(' '); const p = bb.pill('Watched'); p.className = 'pill warn'; t.append(p); }
+    const pre = r.prebid_mandatory ? bb.pill(r.prebid_mandatory + (r.prebid_date ? ' ' + r.prebid_date : '')) : document.createTextNode(r.prebid_date || '');
+    if (r.prebid_mandatory === 'Optional') pre.className = 'pill mute';
+    tr.append(bb.td(r.source), bb.td(r.agency), bb.td(t), bb.td(r.closing), bb.td(pre, 'wide'), bb.td(r.profiles, 'wide'));
+    return tr;
+  }));
+};
+feedSearch.addEventListener('input', drawFeed);
+dash.onData(drawFeed);
+</script>
