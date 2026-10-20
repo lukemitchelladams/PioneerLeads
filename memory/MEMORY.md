@@ -585,3 +585,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   UFS and Front Range Services are RTD-certified SBEs and count themselves; we need certified SBE subs or a full good-faith file.
   15 SBE candidates with emails from RTD's own directory: bids/rtd-bus-shelter-maintenance/sbe-research.md. Graffiti deduction is $200 per
   tag not removed in the daily visit, every 8 hours. Lightning Mobile's quote is ~7x what RTD pays United Facility Solutions today.
+- 2026-10-20 12:32 MT (MAIN): Luke: send Alex the bid docs with HIS original prices (no markup) for sign-off, plus safety/QC info and
+  suggestions, kept short. Sent: proposal draft (Sections 1-8 + Appendices A-C, his prices in Section 5) with a 5-bullet email; reply
+  due Wed 10/21 5 PM. Builders: bids/dcsd-mowing-003-27/submission/build_proposal.py (--draft, --for-sub) and build_price_sheet.py (--for-sub).
+- 2026-10-20 (MAIN) EMAIL ATTACHMENT RULE: never hand-send an attachment straight from send_message. A hand-copied base64 attachment was
+  rejected by Gmail (no send). The 11:54 DCSD price-sheet attachment could not be verified afterwards: its RAW came back inline,
+  not as a file. Do this instead: create_draft with the attachment → get_draft RAW (saved to tool-results when large) →
+  scratchpad extract_att.py + sha256 vs the local file → send the draft by draftId. Keep attachments small (one file when possible).

@@ -1,7 +1,8 @@
 """Fill DCSD's own "Mowing Sites Price Sheet.xlsx" (RFP 003-27) from YMS Landscaping's per-site prices plus Brown
 Bison's markup.
 
-    python3 bids/dcsd-mowing-003-27/submission/build_price_sheet.py
+    python3 bids/dcsd-mowing-003-27/submission/build_price_sheet.py              # submission copy, with markup
+    python3 bids/dcsd-mowing-003-27/submission/build_price_sheet.py --for-sub    # YMS's own prices, for YMS sign-off
 
 Input: private/alex_prices.json (git-ignored), YMS's numbers split into the District's columns:
   {"markup": 0.05, "weeks": 27, "months": 7,
@@ -32,6 +33,8 @@ BID = Path(__file__).resolve().parents[1]
 FORM = BID / "docs" / "Mowing Sites Price Sheet.xlsx"
 INPUTS = BID / "private" / "alex_prices.json"
 OUT = BID / "private" / "Brown Bison Holdings LLC - DCSD 003-27 Price Sheet.xlsx"
+SUB_OUT = BID / "private" / "FOR YMS APPROVAL - DCSD 003-27 Price Sheet (YMS prices).xlsx"
+FOR_SUB = "--for-sub" in sys.argv
 FORM_COLS = {"turf_weekly": "D", "rock_weekly": "F", "mulch_weekly": "H", "native_monthly": "J"}
 PARTS = ["turf_weekly", "rock_weekly", "mulch_weekly", "edging_monthly", "native_monthly", "aeration",
          "fertilization", "broadleaf", "extra_athletic_mow"]
@@ -66,7 +69,8 @@ def put(ws, ref, value, fmt=MONEY, bold=False):
 
 def main() -> int:
     cfg = json.loads(INPUTS.read_text())
-    m, weeks, months = cfg["markup"], cfg["weeks"], cfg["months"]
+    m, weeks, months = (0 if FOR_SUB else cfg["markup"]), cfg["weeks"], cfg["months"]
+    who = "YMS Landscaping prices for approval" if FOR_SUB else "Brown Bison Holdings LLC"
     base_total, priced = Decimal(0), {}
     for name, site in cfg["sites"].items():
         missing = [k for k in PARTS if site.get(k) is None]
@@ -114,7 +118,9 @@ def main() -> int:
                           "sheet). Monthly total = seasonal total / 7 monthly billing cycles. Weeks the District "
                           "adds beyond the 27-week basis (Q&A 1, Q9) are billed at each site's weekly prices above. "
                           "Additional mows and additional services are priced separately on the 'Additional "
-                          "Pricing' sheet (Q&A 1, Q9 and Q11). Respondent: Brown Bison Holdings LLC.")
+                          "Pricing' sheet (Q&A 1, Q9 and Q11). "
+                          + ("FOR YMS APPROVAL: YMS Landscaping's own prices on the District's form, before Brown "
+                             "Bison's markup." if FOR_SUB else "Respondent: Brown Bison Holdings LLC."))
             note.alignment = Alignment(wrap_text=True, vertical="top")
             ws.merge_cells(start_row=row + 2, start_column=1, end_row=row + 4, end_column=12)
     missing = set(priced) ^ seen
@@ -127,12 +133,12 @@ def main() -> int:
         del ws._cells[key]
     # Each part is marked up and rounded to the cent before it is multiplied out, so the total can drift from
     # base x (1 + markup) by up to about $0.50 a site.
-    expect = d(cfg["expected_seasonal_grand_total_with_markup"])
+    expect = d(cfg["expected_base_total"] if FOR_SUB else cfg["expected_seasonal_grand_total_with_markup"])
     if abs(grand_l - expect) > d("0.50") * len(priced):
         sys.exit(f"seasonal grand total {grand_l} does not match the expected {expect}")
 
     det = wb.create_sheet("Site Services Detail")
-    det.append(["Brown Bison Holdings LLC - RFP 003-27 Mowing Services: each site and its services (27-week season)"])
+    det.append([f"{who} - RFP 003-27 Mowing Services: each site and its services (27-week season)"])
     det["A1"].font = BOLD
     det.append([])
     heads = ["Group", "Site", "Turf, weekly", "Rock beds, weekly", "Mulch beds, weekly", "Edging, monthly",
@@ -179,7 +185,7 @@ def main() -> int:
         det.column_dimensions[col].width = 15
 
     extra = wb.create_sheet("Additional Pricing")
-    extra.append(["Brown Bison Holdings LLC - RFP 003-27: additional pricing, separate from the seasonal total"])
+    extra.append([f"{who} - RFP 003-27: additional pricing, separate from the seasonal total"])
     extra["A1"].font = BOLD
     extra.append([])
     extra.append(["Additional mows, priced per school (Q&A 1, Q11)", "Group", "Turf acres",
@@ -209,8 +215,9 @@ def main() -> int:
     extra.column_dimensions["B"].width = 18
     for col in "CDE":
         extra.column_dimensions[col].width = 18
-    wb.save(OUT)
-    print(f"wrote {OUT.relative_to(BID.parents[1])}")
+    out = SUB_OUT if FOR_SUB else OUT
+    wb.save(out)
+    print(f"wrote {out.relative_to(BID.parents[1])}")
     print(f"YMS base ${base_total:,.2f}; with {d(m) * 100:.0f}% markup: seasonal grand total ${grand_l:,.2f} "
           f"(expected ${expect:,.2f}), monthly ${grand_k:,.2f}")
     return 0

@@ -39,3 +39,12 @@
   seasonal total, broken out on the "Site Services Detail" sheet, and explained in a note under Grand Totals.
 - Additional mows are priced per school, outside the total (Q&A 1, Q11), with YMS's unit rates + 5% on "Additional Pricing".
 - The season basis is 27 weeks. Q&A 1, Q9 says this season ran 29. The sheet note bills added weeks at each site's weekly prices.
+
+## Sends log
+- 2026-10-20 11:54 MT: reply to Alex's 10/19 email: changes accepted, final price, scoring, 10 asks (figures only in private/).
+  The attached price sheet already included Brown Bison's 5%. Its bytes could not be verified afterwards (see memory 2026-10-20).
+- 2026-10-20 12:32 MT: bid package for Alex's sign-off, per Luke: one Word file, `private/DRAFT for YMS review - DCSD 003-27 Proposal
+  (your prices).docx`, built by `submission/build_proposal.py --draft --for-sub`. It holds the full proposal with YMS's own prices
+  (no markup) in Section 5, plus Appendix A (safety), B (quality control) and C (crews and route). The email carries 5 short safety/QC
+  suggestions. Sent as a Gmail draft first; the attachment was checked byte-identical (sha256 089a85bd…) before and after sending.
+  Asked for "approved" or changes, plus the sign-in name, by **Wed 10/21 5 PM**.

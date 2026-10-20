@@ -17,7 +17,7 @@ subtitle: "Douglas County School District RE-1 · Submitted by Brown Bison Holdi
 6. Exceptions (Attachment B)
 7. Debarment Certification (Attachment C)
 8. Appendices: A. Safety and Student Protection Plan · B. Quality Control and Responsiveness Plan ·
-   C. Crew, Equipment and Weekly Route Plan · D. Licenses, Insurance and Acknowledgements
+   C. Crews, Equipment and Weekly Route · D. Licenses, Insurance and Acknowledgements
 
 *(Page numbers are added when the final PDF is assembled; every page is numbered consecutively.)*
 
@@ -31,25 +31,31 @@ Douglas County School District RE-1
 
 Re: RFP 003-27, Mowing Services, Groups 2, 5, 7 & 8
 
-Brown Bison Holdings LLC submits this proposal to provide mowing services (mowing, trimming, edging, cleaning,
-weed control, aeration, fertilization and broadleaf control) at the nineteen high school and middle school sites in
-Groups 2, 5, 7 and 8 in Parker, Castle Rock and Highlands Ranch for the 27-week growing season.
+Brown Bison Holdings LLC submits this proposal to provide mowing services at the nineteen high school and middle school sites
+in Groups 2, 5, 7 and 8 in Parker, Castle Rock and Highlands Ranch for the 27-week growing season. The services are mowing,
+trimming, edging, cleaning, weed control, aeration, fertilization and broadleaf control.
 
-We understand the District needs every site mowed at 3 inches each week, fields finished by 2:30 PM on school days,
-work that never interferes with students, classes or athletics, monthly native mowing completed by month-end, and
-one clear point of contact who answers for the work. Brown Bison will hold the contract and be accountable for every
-site, every week. Our grounds partner, YMS Landscaping ⟦ALEX: exact legal name, e.g. LLC⟧, led by Alex Ditto, performs the field work under Brown
-Bison's management with ⟦ALEX: number⟧ crews and its own equipment.
+We understand what the District needs:
 
-Brown Bison acknowledges Addenda ⟦LUKE: list, e.g. Q&A Document 1 and the price-sheet addendum⟧. Our proposal,
-including pricing, remains valid for ninety (90) days after the submission deadline.
+- every site mowed at 3 inches each week;
+- fields finished by 2:30 PM on school days;
+- work that never interferes with students, classes or athletics;
+- monthly native mowing done by month-end;
+- one clear point of contact who answers for the work.
+
+Brown Bison will hold the contract and be accountable for every site, every week. Our grounds partner, AWalk LLC d/b/a YMS
+Landscaping of Castle Rock, performs the field work under Brown Bison's management with two four-person crews and its own
+equipment.
+
+Brown Bison acknowledges Addenda ⟦LUKE: list, e.g. Q&A Document 1 and the price-sheet addendum⟧. Our proposal, including
+pricing, remains valid for ninety (90) days after the submission deadline.
 
 Persons authorized to present on Brown Bison's behalf:
 
 | Name | Title | Address | Telephone | Email |
 |---|---|---|---|---|
 | Luke Adams | ⟪Owner⟫, Brown Bison Holdings LLC | 3832 Rabbit Mountain Rd, Broomfield, CO 80020 | (720) 275-1554 | luke@brownbisonco.com |
-| Alex Ditto | ⟦ALEX: title⟧, YMS Landscaping | ⟦ALEX: address⟧ | ⟦ALEX: phone⟧ | ⟦ALEX: email⟧ |
+| Alex Ditto | Account Manager, YMS Landscaping | ⟦ALEX: 115 Wilcox St #220, Castle Rock?⟧ | ⟦ALEX: 805-551-0539 or (719) 748-6562?⟧ | alex@ymslandscaping.com |
 
 Respectfully,
 
@@ -60,22 +66,30 @@ Luke Adams\
 
 ## The team
 
-**Brown Bison Holdings LLC (Respondent and contract holder).** Colorado limited liability company, SAM-registered
-(UEI EV9QPAPM4C47, CAGE 20VU2), facilities-services contractor. Brown Bison holds the contract, schedules and
-coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
+**Brown Bison Holdings LLC (Respondent and contract holder).** A Colorado limited liability company and facilities-services
+contractor, registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). Brown Bison holds the contract, schedules and coordinates with the
+District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
 
-**YMS Landscaping ⟦ALEX: exact legal name, e.g. LLC⟧ (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
-⟦ALEX: years in business; commercial and public mowing experience; number of employees; licenses, including the
-Colorado Department of Agriculture commercial pesticide applicator license and its holder; equipment fleet⟧.
+**AWalk LLC d/b/a YMS Landscaping (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
+
+- **Company:** Castle Rock-based commercial landscape maintenance firm serving Castle Rock, Castle Pines, Parker, Highlands
+  Ranch, Littleton and Centennial. ⟦ALEX: one line of history, e.g. "operating since 2006; organized as AWalk LLC in 2024"⟧.
+- **Commercial services:** weekly mowing, trimming and edging; aeration, fertilization and weed control; native mowing; and
+  snow removal.
+- **Standing:** Better Business Bureau A+ rating with no complaints.
+- **Safety:** no recordable employee injuries or property-damage claims in the past three years.
+- **Pesticide applications:** made by ⟦ALEX: licensed firm, Colorado Department of Agriculture business license number, and
+  Qualified Supervisor, e.g. Adam Perrigoue, license 34548⟧.
 
 ## Day-to-day management and share of the work
 
 | Person | Role on this contract | Credentials | Share of contract |
-|---|---|---|---|
+|----------|--------------------|------------|-----|
 | Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | ⟦LUKE⟧ | ⟪10%⟫ |
-| Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, chemical applications | ⟦ALEX⟧ | ⟪90%, shared with the crew leads below⟫ |
-| ⟦ALEX: crew lead 1⟧ | Crew lead | ⟦ALEX⟧ | |
-| ⟦ALEX: crew lead 2⟧ | Crew lead | ⟦ALEX⟧ | |
+| Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, field quality checks | ⟦ALEX: years in the trade, certifications⟧ | ⟪15%⟫ |
+| Greg Hitchcock, YMS Landscaping | Crew lead, primary crew | Seven years with YMS, several as crew lead | ⟪35%⟫ |
+| Luis Chavez, YMS Landscaping | Crew lead, second crew; bilingual | Two years with YMS; runs large and small crews | ⟪25%⟫ |
+| Garrett Sission, YMS Landscaping | Maintenance operations and daily crew coordination | One year with YMS | ⟪15%⟫ |
 
 Key personnel will not change without the District's prior written approval.
 
@@ -88,43 +102,60 @@ Luke Adams, Contract Manager, Brown Bison Holdings LLC  (single point of contact
           |
 Alex Ditto, Field Operations Manager, YMS Landscaping
           |
-   +------+------+
-   |             |
-Crew Lead 1   Crew Lead 2        (+ backup crew: ⟦ALEX⟧)
-   |             |
- Crew          Crew
+Garrett Sission, Maintenance Operations (daily crew coordination)
+          |
+   +------+-------------------+
+   |                          |
+Greg Hitchcock             Luis Chavez
+Crew lead, primary crew    Crew lead, second crew
+   |                          |
+ 3 crew members             3 crew members
 ```
 
-Resumes for Luke Adams, Alex Ditto and both crew leads follow this section. ⟦LUKE + ALEX: resumes⟧
+Resumes for Luke Adams, Alex Ditto, Greg Hitchcock, Luis Chavez and Garrett Sission follow this section.
+⟦LUKE + ALEX: short resumes⟧
 
 # 3. References
 
 Three references (Q&A 1, Q10: references from outside the K-12 market are welcome):
 
 | # | Customer | Address | Contact name | Telephone | Email | Work performed |
-|---|---|---|---|---|---|---|
-| 1 | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
-| 2 | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
-| 3 | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
+|--|----------|----------|--------|--------|-----------|----------|
+| 1 | Castle Rock Christian Academy (K-8) | 4881 Cherokee Dr, Castle Rock, CO 80109 | Andrew Nemeth | 303-688-0777 | andrew@therock.org | ⟦ALEX: work performed⟧ (1 year) |
+| 2 | City of Castle Rock Water | ⟦ALEX⟧ | Mike Murphree | 720-434-4873 | mmurphree@crgov.com | ⟦ALEX: work performed, since when⟧ |
+| 3 | Mountain Shadow HOA | ⟦ALEX⟧ | Patricia Tolini | ⟦ALEX⟧ | ptolini@icloud.com | ⟦ALEX: work performed⟧ (since 2026-08-01) |
 
 Contracts of similar size and scope in the past three years:
 
-| Project | Agency / customer | Contract dates | Contract value | Contact |
+| Project | Customer | Start | Contract value | Contact |
 |---|---|---|---|---|
-| ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
+| Grounds maintenance | Deer Creek Church | 2026-04-04 | $9,960 | Amber Brinks, amber@deercreekchurch.com |
+| Grounds maintenance | Sky Pointe Retirement Resort | 2026-07-01 | $10,710 | David Diffenderfer, 406-871-0774 |
+| ⟦ALEX: your two or three largest contracts⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
 
 # 4. Response to Scope
 
 ## Our approach
 
-⟦RESEARCH + ALEX: two-crew, ⟦ALEX: n⟧-day weekly route plan finishing fields by 2:30 PM on school days; crew and
-equipment math; spring-flush and May/August surge plan; turf-health practices (3-inch height, weekly blade
-sharpening, alternating patterns, mulched clippings); native-mow week; aeration/fertilization/broadleaf on
-no-contact days. Detail in Appendix C.⟧
+- **Crews:** two four-person crews. The primary crew runs a six-day weekly route. The second crew covers weather recovery, the
+  May and August extra athletic-field mows, monthly native mowing and heavy weeks.
+- **Capacity:** the District's sites total about 151 acres of bluegrass. At roughly 3 acres an hour per commercial zero-turn
+  mower, that is about 50 mower-hours a week, under 3 hours per machine per day across three large mowers. That leaves room to
+  finish every playing field by 2:30 PM.
+- **Daily order:** fields first, building areas after dismissal (Q&A 1, Q4).
+- **Turf health:** 3-inch height, blades sharpened weekly, mowing direction changed every cut, never more than one-third of the
+  blade at a time.
+- **Monthly and spring work:** edging and native mowing are done by area each month and finished before month-end. Aeration,
+  fertilization and broadleaf are booked on no-contact days.
+- **Detail:** crews, equipment and route are in Appendix C; quality control in Appendix B; safety in Appendix A.
 
-Special considerations: the District's schedule (Q&A 1, Q4) asks that all weekday services, especially playing
-fields, be done by 2:30 PM, with work around buildings after classes end; chemical applications occur only on
-no-contact days (Q&A 1, Q5); clippings may be mulched when no accumulation is visible (Q&A 1, Q8).
+Special considerations:
+
+- The District's schedule (Q&A 1, Q4) asks that all weekday services, especially playing fields, be done by 2:30 PM, with work
+  around buildings after classes end.
+- Chemical applications occur only on no-contact days (Q&A 1, Q5).
+- Clippings may be mulched when no accumulation is visible (Q&A 1, Q8).
+- The pricing basis is 27 weeks. Weeks the District adds (Q&A 1, Q9) are billed at each site's weekly price.
 
 ## Acknowledgement of each Section 4.0 requirement
 
@@ -132,11 +163,16 @@ SCOPE_RESPONSE_TABLE
 
 # 5. Pricing
 
-Pricing is provided on the District's Mowing Services Price Sheet: per site, broken out by turf (weekly), rock beds
-(weekly), mulch beds (weekly) and native mowing (monthly), with monthly and 27-week seasonal totals per site, group
-totals and a grand total (Q&A 1, Q9). Additional mows are priced per school, separately from the total (Q&A 1, Q11),
-together with the additional services, on the "Additional Pricing" sheet. Prices exclude taxes from which DCSD is
-exempt.
+Pricing is provided on the District's Mowing Services Price Sheet:
+
+- **Per site:** turf (weekly), rock beds (weekly), mulch beds (weekly) and native mowing (monthly), with monthly and 27-week
+  seasonal totals per site, group totals and a grand total (Q&A 1, Q9).
+- **Site Services Detail sheet:** monthly edging and the one-time spring aeration, fertilization and broadleaf application for
+  each site. These are included in the seasonal totals.
+- **Additional Pricing sheet:** additional mows, priced per school and separately from the total (Q&A 1, Q11), together with the
+  additional services.
+
+Prices exclude taxes from which DCSD is exempt.
 
 # 6. Exceptions (Attachment B)
 
@@ -150,6 +186,6 @@ Attachment C, Certification Regarding Debarment and Suspension, completed and si
 
 A. Safety and Student Protection Plan\
 B. Quality Control and Responsiveness Plan\
-C. Crew, Equipment and Weekly Route Plan\
-D. Licenses (Colorado Department of Agriculture applicator license), certificate of insurance naming DCSD as
+C. Crews, Equipment and Weekly Route\
+D. Licenses (Colorado Department of Agriculture commercial applicator license), certificate of insurance naming DCSD as
 additional insured, Colorado good-standing certificate, background-check policy
