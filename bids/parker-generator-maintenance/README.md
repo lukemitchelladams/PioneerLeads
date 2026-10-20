@@ -12,7 +12,7 @@
 | Contract type | Service agreement: scheduled PM priced per schedule + emergency/corrective repair (labor rates, parts pricing) |
 | Term / renewals | Not stated; "established in the resulting agreement and any solicitation addenda" (RFP §2.1) |
 | Evaluation method | RFP (scored, best value): Price 30, Technical 20, Experience 20, Emergency Response 20, Reporting/Compliance 10 (RFP §6.1) |
-| Status | Identified 2026-10-20 (MAIN, from GovTribe + BidNet listing). **Awaiting Luke GO/NO.** |
+| Status | **Conditional GO (Luke's CRM, 2026-10-19).** RFP pulled 2026-10-20 (MAIN). Sub: Generator Source emailed 10/19 by the CRM, no reply at 10/20 13:00; drafts for 9 more firms in sub-outreach.md (not sent). |
 
 ## Scope summary
 
@@ -54,12 +54,11 @@ guaranteed response time we state; corrective repairs with written estimates; di
   **Those sheets/forms are NOT in hand** (GovTribe only carries the 8-page RFP).
 
 ## Open items
-- [ ] Luke: GO / NO.
 - [ ] Download the attached pricing sheets & proposal forms (and any addenda) from Bonfire
       (parkeronline.bonfirehub.com, Town of Parker) or BidNet 0000440494. Both need Luke's vendor login; both hosts
       are blocked in cloud sessions.
-- [ ] On GO, same day: generator-service sub outreach (multi-brand: Cummins/Onan, Kohler, Detroit/MTU,
-      Rolls-Royce/MTU; load-bank testing; 24/7 dispatch near Parker). Write sub-outreach.md.
+- [ ] Sub: Generator Source (emailed 10/19, no reply). Luke decides whether to widen: the 10/19 email told it "You are
+      the only generator firm I am asking." Drafts and 9 more candidates: sub-outreach.md; sources: sub-research.md.
 - [ ] Ask the Town (by 10/30 10:00) for insurance limits, contract term, and whether the PM schedule is priced per
       unit per visit.
 
