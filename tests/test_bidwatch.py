@@ -461,6 +461,11 @@ def _multiline_fail(page, u, p):
 s6b = PortalSession(b, "multiline", _multiline_fail, lambda page: False, bidnet.CREDS)
 s6b.ensure_login(attempts=1)
 check("login notes are one line (a stack trace broke the report table)", "\n" not in s6b.login_note, s6b.login_note)
+from scripts.bidwatch import run as _run_ol  # noqa: E402
+
+check("report cells and error bullets stay on one line (a 504 page's HTML broke the Errors list)",
+      _run_ol._one_line("HTTP 504 <html>\n<head><title>504 Gateway Time-out</title></head>\n</html>") ==
+      "HTTP 504 <html> <head><title>504 Gateway Time-out</title></head> </html>" and _run_ol._one_line("a | b") == "a / b")
 s6b.close()
 s6 = PortalSession(b, "retrytest", _flaky_login, lambda page: _tries["n"] >= 2, bidnet.CREDS)
 check("a retried login records why the previous attempt failed",

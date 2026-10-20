@@ -490,6 +490,12 @@ def _diff(old: dict, new: dict) -> list[str]:
     return out
 
 
+def _one_line(text, limit: int = 400) -> str:
+    """A report cell or bullet on one line: an error body (a 504 page's HTML) or a JS stack trace must not break the
+    markdown table or list."""
+    return " ".join(str(text).split()).replace("|", "/")[:limit]
+
+
 def _row(b: dict) -> str:
     pb = b.get("prebid") or {}
     walk = ""
@@ -536,7 +542,7 @@ def render(r: dict) -> str:
             + ((f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("blind")
                 else "PARTIAL this run (part of the source failed): earlier rows kept, none closed; ")
                if v.get("carried_forward") else "") \
-            + " ".join(str(v['login_note'] or ('yes' if v['logged_in'] else 'no')).split()).replace("|", "/")
+            + _one_line(v['login_note'] or ('yes' if v['logged_in'] else 'no'))
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
                      f"{note} | {v['count']} | {tot} | {v['matches']} | "
                      f"{v.get('last_success') or 'never'} | {len(v['errors'])} |")
@@ -588,7 +594,7 @@ def render(r: dict) -> str:
         lines += ["", "## Filed into bid folders", ""] + [f"- {f}" for f in r["filed"]]
     errs = [(s, e) for s, v in h.items() for e in v["errors"]]
     if errs:
-        lines += ["", "## Errors", ""] + [f"- {s}: {e}" for s, e in errs[:60]]
+        lines += ["", "## Errors", ""] + [f"- {s}: {_one_line(e, 300)}" for s, e in errs[:60]]
     return "\n".join(lines) + "\n"
 
 
