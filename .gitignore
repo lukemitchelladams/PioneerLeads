@@ -13,3 +13,7 @@ Thumbs.db
 # scanner scratch
 bids/_watch/raw-*.html
 .venv/
+
+# bidwatch: debug dumps (may contain page HTML) and nothing session-related ever in repo
+bids/_watch/debug/
+bids/_watch/samgov_budget.json

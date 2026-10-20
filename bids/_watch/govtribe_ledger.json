@@ -1,0 +1,23 @@
+{
+  "_comment": "GovTribe open-bid review ledger for the hourly check. baseline: every open Colorado state/local record (165, due >= 2026-10-20) was reviewed 2026-10-19 19:30 MT; newest posting GovTribe held was 2026-10-14. Each hour: triage any open CO record posted after last_posted_reviewed or not in `triaged`, then add it here. `watched` holds updated_at/due/file names per watched govtribe_id for addendum detection.",
+  "baseline_reviewed_at": "2026-10-19T19:30:00-06:00",
+  "baseline_count": 165,
+  "last_posted_reviewed": "2026-10-14",
+  "triaged": {
+    "6ad21a4444ea9a49cf0994bf": "GO: 27J Speaker Cabling (low-voltage), due 2026-10-28 10:00 by email emorales@sd27j.net, no walk found",
+    "6ac78e093e2326616e082a6f": "EVALUATE: Jeffco Dome Glass, pre-bid 10/15 passed ('should attend'), ask Pulford before 10/21 10:00 questions deadline",
+    "6a2173ec20564a33670a0399": "EVALUATE: Elbert County fencing, due 10/27 12:30, questions due 10/20 13:00",
+    "6abfa4f2de90cc3d3c036702": "EVALUATE-low: DPS BD2730 GC prequal, due 10/21 10:00, possible Round 2",
+    "6abfa500de90cc3d3c036710": "NO: Westminster golf bunker (earthwork), mandatory walk 10/20 10:30",
+    "6ac63c7125a3b08d0b072bf7": "NO: Aspen Cozy Point cabin, mandatory walk 10/20 13:00 Pitkin County",
+    "6ac78dfb3e2326616e082a68": "NO: window/curtain wall replacement + abatement, outside trades",
+    "6ac78e063e2326616e082a6d": "NO: School of Mines, A/E qualifications",
+    "6ac63c7625a3b08d0b072bf9": "NO: Poudre GC on-demand, due 10/22, needs 3 K-12 projects",
+    "6ab276ceb4ab33ea4809d590": "NO: Aspen waste hauling",
+    "6abfa4ecde90cc3d3c036700": "NO: Jeffco jail door hardware, specialty, conference passed",
+    "6abf8798b960f0c48a0793b6": "NO: CBI GJ HVAC/lighting, mandatory walk 10/12 missed, $3.1M, 2 projects >$3M",
+    "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
+    "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19"
+  },
+  "watched": {}
+}

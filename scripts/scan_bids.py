@@ -1,66 +1,12 @@
 #!/usr/bin/env python3
-"""Run every bid-portal watcher and write bids/_watch/REPORT.md.
+"""Back-compat entry point: runs the full bid watcher once (scripts/bidwatch/run.py).
 
-Usage: python3 scripts/scan_bids.py            # all sources
-       python3 scripts/scan_bids.py --no-bidnet --no-dibbs   # skip Playwright sources
-Exit code 0 always; the report carries the errors so a Routine can relay them.
+  python3 scripts/scan_bids.py            # one full scan of every source, writes bids/_watch/REPORT.md
+  python3 scripts/scan_bids.py --loop     # keep scanning every 60 minutes, re-login as needed
 """
-from __future__ import annotations
-
-import datetime as dt
+import runpy
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import samgov_watch  # noqa: E402
-
-REPO = Path(__file__).resolve().parents[1]
-REPORT = REPO / "bids" / "_watch" / "REPORT.md"
-
-
-def main() -> int:
-    parts = [f"# Bid watch report — {dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}\n"]
-    headline = []
-
-    if "--no-bidnet" not in sys.argv:
-        try:
-            import bidnet_watch
-            r = bidnet_watch.run()
-            parts.append(bidnet_watch.render(r))
-            if r["new"]:
-                headline.append(f"BidNet: {len(r['new'])} new ({sum(1 for v in r['new'].values() if v['match'])} keyword matches)")
-            if r["errors"]:
-                headline.append(f"BidNet: {len(r['errors'])} error(s)")
-        except Exception as e:  # noqa: BLE001
-            parts.append(f"## BidNet Direct\n**Failed to run:** {type(e).__name__}: {e}")
-            headline.append("BidNet: failed to run")
-
-    if "--no-dibbs" not in sys.argv:
-        try:
-            import dibbs_watch
-            d = dibbs_watch.run()
-            parts.append(dibbs_watch.render(d))
-            if d["new"]:
-                headline.append(f"DIBBS: {len(d['new'])} new ({sum(1 for v in d['new'].values() if v['match'])} matches)")
-            if d["errors"]:
-                headline.append(f"DIBBS: {len(d['errors'])} error(s)")
-        except Exception as e:  # noqa: BLE001
-            parts.append(f"## DLA DIBBS\n**Failed to run:** {type(e).__name__}: {e}")
-            headline.append("DIBBS: failed to run")
-
-    r = samgov_watch.run()
-    parts.append(samgov_watch.render(r))
-    if r.get("error"):
-        headline.append(f"SAM.gov: {r['error']}")
-    elif r["new"]:
-        headline.append(f"SAM.gov: {len(r['new'])} new")
-
-    parts.insert(1, "**Headline:** " + ("; ".join(headline) if headline else "no changes") + "\n")
-    REPORT.parent.mkdir(parents=True, exist_ok=True)
-    REPORT.write_text("\n\n".join(parts) + "\n")
-    print("\n\n".join(parts))
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+sys.argv[0] = str(Path(__file__).resolve().parent / "bidwatch" / "run.py")
+runpy.run_path(sys.argv[0], run_name="__main__")

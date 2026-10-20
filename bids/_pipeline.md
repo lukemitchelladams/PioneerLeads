@@ -93,6 +93,21 @@ Luke (2026-10-19): Colorado is ideal, other states are fine, other trades are fi
 - 27 other PSC 3110/3130/3020/3010/3040 hits are NSN-specific aerospace/marine parts (DLA Aviation, NAVSUP). Not his product.
 - DLA DIBBS itself (dibbs.bsm.dla.mil) is blocked from this cloud session; GovTribe only sees the DIBBS buys that also post to SAM.gov.
 
+
+## Full open-bid review 2026-10-19 19:30 MT (all 165 open Colorado records in GovTribe)
+Ledger: bids/_watch/govtribe_ledger.json. New verdicts this pass (pre-bid status quoted from documents where found):
+
+| Verdict | Agency | Solicitation | Due (MT) | Pre-bid / walk | Note |
+|---|---|---|---|---|---|
+| **GO** | School District 27J (Riverdale Ridge HS) | 2021BRRHS Speaker Cabling Installation | 2026-10-28 10:00, email to emorales@sd27j.net | None found in text read | Low-voltage cabling, ~49-59 classroom speakers. Questions due 10/23 15:00. Sub outreach now. |
+| EVALUATE | Jefferson County Facilities | 26-18863AP-FM Dome Glass Replacement | 2026-11-04 10:00 | In-person 10/15 PASSED, "should attend" (not stated mandatory) | Ask Andrew Pulford before questions deadline 10/21 10:00 whether we can still bid. Glazing sub. |
+| EVALUATE | Elbert County | IFB 2026-006 Fencing (Kiowa, Simla) | 2026-10-27 12:30, hard copy + email | None listed | ~2,963 LF chain-link. Questions due 10/20 13:00. Fence sub quote needed in ~2 days. |
+| EVALUATE (low) | Denver Public Schools | BD2730 GC Prequalification / Open Enrollment | 2026-10-21 10:00 via BidNet | None | Prequal only; possible Round 2. |
+| NO | City of Westminster | IFB-PRL-26-719 Walnut Creek golf bunkers | 11/10 | MANDATORY 10/20 10:30 | Earthwork (rule 8). |
+| NO | City of Aspen | 2026-300 Cozy Point cabin | 11/05 | MANDATORY 10/20 13:00, Pitkin County | Log specialty, Aspen. |
+| NO | CDPS / State Public Works | CBI Grand Junction HVAC/Lighting | 10/22 | MANDATORY 10/12 MISSED | $3.1M, needs 2 projects >$3M. |
+| NO | others | Poudre GC on-demand (K-12 history), Aspen waste hauling, Jeffco jail doors, School of Mines A/E, window/curtain wall replacement | | | Outside trades or requirements. |
+
 ## Luke's local CRM system: bids it tracks (from the "Brown Bison brief" email, 2026-10-19 08:37 MT)
 Source: brief emailed from luke@brownbisonco.com to Luke's Gmail (dashboard crm.brownbisonco.com). Dates below are
 **per that brief, not quoted from solicitations in this repo**. That system is running these bids; do not duplicate

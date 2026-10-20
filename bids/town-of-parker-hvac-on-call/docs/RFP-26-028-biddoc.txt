@@ -1,0 +1,634 @@
+   Town of Parker HVAC
+ Preventive Maintenance &
+     Repair Services
+
+
+
+
+Oct 1st 2026, 3:00PM MDT - Oct 22nd 2026, 3:00PM MDT
+
+
+
+
+                         1
+Table of Contents
+
+Contents                                         Page #
+
+
+
+Project Details                                    3
+
+
+1. Solicitation Overview                           4
+2. Bid Instructions                                5
+3. Contract Framework                              6
+4. Facilities and Equipment                        7
+ 4.1. Appendix A                                   7
+5. Scope of Services & Other Requirements          8
+6. Supplier Response Requirements                 12
+ 6.1. Response Files                              13
+7. Evaluation Process & Selection Criteria        14
+ 7.1. Cover Sheet                                 15
+8. Terms & Conditions                             16
+ 8.1. Sample Professional Services Agreement      16
+
+
+
+
+                                             2
+Project Details
+
+Project                 Town of Parker HVAC Preventive Maintenance & Repair
+                        Services
+
+Ref. #                  26-028
+
+Type                    RFP
+
+Description
+                        The Town of Parker, Colorado (Town) is soliciting proposals
+                        from qualified commercial HVAC contractors to provide
+                        scheduled preventive maintenance, seasonal inspections,
+                        testing, documentation, emergency response, and
+                        corrective repair services for heating, cooling, ventilation,
+                        chiller, and pool dehumidification equipment at Town
+                        facilities. The current inventory includes 46 assets: 40
+                        rooftop units, four DX chillers, and two pool dehumidification
+                        units. The objective is to improve reliability, safety, energy
+                        performance, service continuity, and equipment life while
+                        minimizing disruption to Town operations.
+
+
+Open Date               Oct 1st 2026, 3:00PM MDT
+
+Questions Due Date      Oct 16th 2026, 10:00AM MDT
+
+Close Date              Oct 22nd 2026, 3:00PM MDT
+
+Project Owner           Charles Ellis
+
+
+Events
+
+Event Name           Duration                       Description
+
+Open Date            Oct 1st 2026, 3:00PM MDT       Posting date for the Opportunity
+Questions Due Date Oct 16th 2026, 10:00AM MDT Deadline to submit Questions
+Close Date           Oct 22nd 2026, 3:00PM MDT      Deadline for Submissions
+
+
+
+
+                                        3
+1. Solicitation Overview
+The Town of Parker, Colorado (Town) is soliciting proposals from qualified commercial
+HVAC contractors to provide scheduled preventive maintenance, seasonal inspections,
+testing, documentation, emergency response, and corrective repair services for heating,
+cooling, ventilation, chiller, and pool dehumidification equipment at Town facilities. The
+current inventory includes 46 assets: 40 rooftop units, four DX chillers, and two pool
+dehumidification units. The objective is to improve reliability, safety, energy
+performance, service continuity, and equipment life while minimizing disruption to Town
+operations.
+
+
+
+
+                                            4
+2. Bid Instructions
+SUBMISSION OF OFFERS: The Town of Parker will accept electronic bid proposals
+submitted through Town of Parker EUNA Procurement Portal (formerly Bonfire). A
+Submittal Log will be posted after the opening of responses and after the Town has had
+an opportunity to review and verify the submittals.
+
+The original Offer must be received before the due date and time through an electronic
+package transmitted to Town of Parker EUNA Procurement Portal (formerly Bonfire).
+The Consultant is responsible for ensuring its proposal is posted by the due date and
+time outlined in the solicitation document.
+
+If the submittal arrives late, it will not be included.
+
+TERM OF CONTRACT: An initial contract of three years is anticipated.
+
+RESPONSE TO QUESTIONS: QUESTIONS REGARDING THIS SOLICITATION
+MUST BE SUMBITTED ELECTRONICALLY VIA Town of Parker EUNA Procurement
+Portal (formerly Bonfire).
+
+The consultant submitting the question(s) shall be responsible for ensuring that the
+question(s) is received by the date and time listed above in the schedule of activities for
+submitting the question(s). Questions are to be submitted one question per question
+field in the EUNA platform.
+
+Any official interpretation of this Solicitation must be made by an agent of the Town’s
+Procurement Division who is authorized to act on behalf of the Town. The Town shall
+not be responsible for interpretations offered by employees of the Town who are not
+agents of the Town’s Procurement Division.
+
+SOLICITATION DOCUMENTS: The Town of Parker officially distributes solicitation
+documents through Town of Parker EUNA Procurement Portal (formerly Bonfire).
+Copies of solicitations obtained from any other source are not considered official
+copies. Only those Consultants who obtain solicitation documents from the EUNA
+Procurement platform will be in receipt of officially posted and relevant information
+regarding solicitations issued by the Town of Parker. The Town cannot be held
+responsible for incorrect information, nor can it attest to the accuracy of information
+found on websites other than the EUNA Procurement platform.
+
+
+
+
+                                                5
+3. Contract Framework
+3.1 Anticipated Agreement and Term
+The selected contractor will be required to execute a written agreement acceptable to
+the Town. The anticipated initial term is three years. The Town may exercise renewal
+options in one-year increments, subject to satisfactory performance, available
+appropriations, mutual agreement, and the terms of the resulting agreement. No work
+may begin until the agreement is fully executed and the Town issues written
+authorization or a purchase order, as applicable.
+
+3.2 Pricing and Changes
+Pricing shall remain firm for the period stated in the proposal and resulting agreement.
+Any requested adjustment for a renewal period must be submitted in writing with
+supporting documentation and is subject to Town approval. No surcharge, travel fee,
+fuel fee, environmental fee, disposal fee, refrigerant fee, or other cost will be paid
+unless specifically identified in the accepted pricing and authorized in writing.
+
+3.3 Contractor Status and Compliance
+The contractor will act as an independent contractor and shall provide all labor,
+supervision, tools, vehicles, equipment, access equipment, testing instruments, permits,
+licenses, safety controls, and incident reporting necessary to perform the work. The
+contractor shall comply with applicable federal, state, and local laws, codes,
+regulations, manufacturer requirements, and site rules.
+
+3.4 Insurance Security and Background Requirements
+Before commencing work, the selected contractor shall provide certificates of insurance
+and endorsements meeting the Town’s then-current requirements and comply with the
+indemnification provisions of the final agreement. Personnel assigned to secure or
+sensitive facilities may be subject to identification requirements, escorts, access
+controls, or background screening established by the Town.
+
+
+
+
+                                            6
+4. Facilities and Equipment
+The current inventory is summarized below and detailed in Appendix A. Quantities and
+service designations are provided for proposal development and shall be verified by the
+selected contractor during implementation. Town Hall and the Town Hall Addition are
+separate inventory groupings at the same physical campus. The Town may add,
+remove, or replace equipment through written amendment or authorized change.
+ Inventory       Assets          Cooling Service   Heating Service
+ Grouping
+
+ Fieldhouse      5               5                 5
+
+ Mots Bldg A     5               5                 5
+
+ Pace Center     7               7                 7
+
+ Police          7               7                 0
+ Department
+
+ Public Works    1               1                 1
+
+ Recreation      10              10                10
+ Center
+
+ School House    3               3                 3
+
+ Town Hall       4               4                 2
+
+ Town Hall       4               4                 4
+ Addition
+
+ Total           46              46                37
+
+The inventory includes 40 rooftop units, 4 DX chillers, and 2 pool dehumidification units.
+All 46 assets are marked for cooling-season service, and 37 assets are marked for
+heating-season service. Offerors shall clearly identify any equipment for which
+specialized manufacturer support, additional labor, or a different service approach is
+proposed.
+
+
+4.1 Appendix A
+
+Attachments (Documentation): HVAC_PM_Appendix_A.pdf
+
+
+
+
+                                              7
+5. Scope of Services & Other Requirements
+5.1 General Requirements
+The contractor shall furnish all labor, supervision, tools, testing instruments, equipment,
+transportation, reports, and routine consumables necessary to perform scheduled and
+unscheduled HVAC service. Work shall be performed by qualified commercial HVAC
+technicians familiar with the makes, models, controls, refrigerants, and configurations in
+Appendix A.
+  • Coordinate all visits with the Town’s designated representative and comply with
+    site access, security, roof access, shutdown, noise, and restoration requirements.
+  • Schedule work to minimize disruption to occupied facilities, public safety
+    operations, recreation programming, cultural events, and other Town services.
+  • Protect roofs, finishes, equipment, occupants, and Town property. Immediately
+    report unsafe conditions, leaks, spills, damage, alarms, or equipment conditions
+    that could impair operation.
+  • Maintain clean work areas and legally manage refrigerants, oils, cleaning
+    solutions, contaminated materials, and other service waste.
+  • Do not disable, bypass, shut down, restart, or return equipment to service without
+    required coordination and authorization.
+  • Use calibrated instruments and follow manufacturer instructions and applicable
+    codes. ANSI ASHRAE ACCA Standard 180 may be used as reference guidance
+    where appropriate but is not incorporated as a mandatory contractual requirement.
+ •​
+5.2 Initial Verification and Baseline Record
+Within 30 calendar days after notice to proceed, unless another timeframe is approved
+in writing, the contractor shall verify the inventory and submit a baseline electronic
+record for each asset. At minimum, the record shall include:
+  • Facility, equipment identifier, exact location, access requirements, and applicable
+    service season.
+  • Equipment type, manufacturer, model, serial number, date or approximate age,
+    capacity, voltage, phase, refrigerant type and charge when available, belts, and
+    associated controls.
+  • Apparent condition, active alarms, operational status, photographs, identified
+    deficiencies, and recommended priority.
+  • Corrections to Appendix A and any information that could not be verified.
+
+5.3 Annual Schedule and Service Frequency
+The contractor shall submit a coordinated annual schedule for all covered assets.
+Cooling-season service is anticipated during March or April, and heating-season service
+is anticipated during September for the assets marked in Appendix A. The final
+schedule may be adjusted by the Town to reflect weather, facility operations, equipment
+replacement, and event calendars. The schedule shall identify the proposed date,
+equipment, estimated duration, staffing, access needs, expected shutdowns, and any
+work outside normal hours.
+
+5.4 Cooling Season Preventive Maintenance
+Perform the following tasks on each applicable asset, as dictated by equipment type,
+configuration, and manufacturer requirements:
+ • Inspect and clean accessible evaporator and condenser coils on rooftop units
+   using methods and cleaning agents compatible with the equipment, roof system,
+   occupants, and surrounding materials. Protect drains and prevent chemical
+   discharge or overspray.
+
+
+
+                                             8
+ • Inspect condensate pans, traps, drains, pumps, and lines; clear obstructions,
+   prime traps, and verify proper drainage without leaks or overflow.
+ • Visually inspect for refrigerant leaks. Check refrigerant pressures, superheat, and
+   subcooling when conditions permit and when readings are necessary to evaluate
+   operation. Document refrigerant additions and leak findings.
+ • Inspect disconnects, fuses, contactors, relays, wiring, and electrical components.
+   Tighten accessible connections in accordance with manufacturer requirements.
+ • Measure and record voltage and amperage for applicable motors and
+   compressors; compare readings with nameplate and expected operating
+   conditions.
+ • Inspect belts, blowers, sheaves, pulleys, bearings, motors, vibration, alignment,
+   and tension. Lubricate motors and bearings only where required by the
+   manufacturer.
+ • Record return-air and supply-air temperatures and calculate temperature
+   differential. When readings are abnormal, perform appropriate diagnostics and
+   document findings.
+ • Inspect economizers, outdoor-air dampers, actuators, valves, and linkages; verify
+   proper operation and positioning.
+ • Verify thermostat, sensor, alarm, safety, and BAS setpoint operation. Document
+   any changes and obtain authorization before altering control sequences or
+   occupied setpoints.
+ • Secure all panels, remove service materials, confirm normal operation, and leave
+   the unit in the proper operating mode.
+ •​
+5.5 Heating Season Preventive Maintenance
+Perform the following tasks on every asset marked for heating service, as applicable to
+its heating source and configuration:
+  • Inspect gas piping, fittings, valves, regulators, and accessible connections for
+    leaks using appropriate instruments or approved leak-detection methods.
+  • Measure and document inlet and manifold gas pressure when applicable.
+  • Inspect and clean burners and pilot assemblies. Inspect ignition systems, flame
+    sensors, thermocouples, combustion motors, venting, and related safeties.
+  • Inspect heat exchangers for visible cracks, corrosion, separation, flame
+    disturbance, or other indications of failure. Immediately report any condition that
+    may present a carbon-monoxide or combustion-safety risk.
+  • Perform combustion analysis and carbon-monoxide testing on applicable fuel-
+    fired equipment and document oxygen, carbon dioxide, carbon monoxide, stack
+    temperature, draft, combustion efficiency, and other available readings.
+  • Inspect electrical wiring and connections; measure and record voltage and
+    amperage for applicable motors.
+  • Inspect blowers, belts, bearings, motors, pulleys, alignment, and tension.
+    Lubricate only where required by the manufacturer.
+  • Verify thermostats, sensors, alarms, safeties, and BAS setpoints. Secure panels
+    and confirm proper heating operation before leaving the site.
+
+5.6 Chiller Hydronic and Pool Dehumidification Equipment
+For DX chillers, pool dehumidification units, and associated hydronic components
+included in the inventory, perform the applicable seasonal tasks above plus equipment-
+specific maintenance recommended by the manufacturer. At minimum, the contractor
+shall:
+  • Inspect compressors, refrigerant circuits, fans, coils, safeties, crankcase heaters,
+    controls, alarms, and staged operation.
+
+
+
+
+                                            9
+ • Inspect pumps, seals, couplings, strainers, expansion tanks, valves, actuators,
+   flow devices, accessible piping, and insulation for leaks, corrosion, vibration,
+   blockage, or abnormal operation.
+ • Record applicable entering and leaving fluid or air temperatures, pressures,
+   temperature differential, flow indication, refrigerant readings, electrical readings,
+   and controller status.
+ • Coordinate specialized inspection or manufacturer support when required and
+   clearly identify work excluded from routine pricing.
+
+5.7 Belts Lubricants and Routine Consumables
+Offerors shall identify all belts, lubricants, cleaners, drain-treatment materials, gaskets,
+fuses, and other routine consumables included in the preventive-maintenance price.
+Products shall meet or exceed manufacturer requirements and be compatible with the
+equipment. Reports shall document part numbers, sizes, quantities, and parts used.
+Non-routine parts require Town authorization before installation unless immediate action
+is expressly authorized to protect life, safety, or property.
+
+5.8 Refrigerant Management
+The contractor shall comply with applicable refrigerant-management requirements and
+use appropriately certified technicians. Refrigerant shall not be added solely to restore
+operation without evaluating the cause of loss. The contractor shall document
+refrigerant type, quantity recovered or added, leak-detection findings, repair
+recommendations, cylinder tracking, and required records. Recovery, recycling,
+reclamation, and disposal shall be performed legally and safely.
+
+5.9 Emergency and Corrective Repair Services
+Provide 24-hour, seven-day-per-week emergency response, including after-hours,
+weekends, and holidays. The contractor shall state and honor a guaranteed response
+time, maintain qualified staffing and diagnostic resources, and prioritize critical public
+safety and occupied facilities.
+  • Notify the Town promptly of any condition that prevents reliable operation,
+    presents a safety risk, or requires an extended outage.
+  • Provide a written estimate and obtain Town authorization before non-routine
+    repairs, parts replacement, or work exceeding an approved limit, except when
+    immediate action is expressly authorized to protect life, safety, or property.
+  • Provide new, genuine, or manufacturer-approved parts unless an alternative is
+    authorized. Identify expected lead times, warranties, and temporary measures
+    when parts are delayed.
+  • Return equipment to its proper operating state, remove temporary connections,
+    confirm alarms and setpoints, and verify status with the Town before leaving.
+
+5.10 Reporting and Asset History
+Submit searchable digital reports to the Town’s designated representative within five
+business days after each scheduled visit and within one business day after an
+emergency call, unless otherwise approved. Reports shall be organized by facility and
+asset and include:
+ • Date, arrival and departure times, technician, equipment identification, reason for
+   service, and operating status when work concluded.
+ • Completed checklist, work performed, consumables used, readings, setpoints,
+   alarms, photographs, and applicable combustion and carbon-monoxide results.
+ • Clear deficiency descriptions, severity or priority, immediate actions,
+   recommended corrective work, parts required, estimated urgency, and follow-up
+   responsibility.
+
+
+
+                                             10
+ • Maintenance history sufficient to track recurring failures, trends, repair decisions,
+   and continuity across the contract term.
+
+Any finding that could impair safe operation or materially affect facility service shall be
+communicated immediately by telephone or another approved real-time method and
+shall not wait for the written report.
+
+5.11 Quality Control and Callback Work
+The contractor shall review service reports for completeness and technical accuracy
+before submission. Work that is incomplete, incorrectly performed, or results in a
+callback attributable to contractor workmanship shall be corrected promptly at no
+additional cost to the Town. The contractor shall identify its escalation process for
+unresolved or recurring issues.
+
+5.12 Warranty
+The contractor shall warrant parts and workmanship for the period stated in its proposal
+and the resulting agreement. Warranty service shall include diagnosis, labor, travel,
+removal, replacement, and reinstallation necessary to correct covered defects, unless
+an exclusion is expressly accepted by the Town. Manufacturer warranties shall be
+passed through to the Town and administered by the contractor.
+
+
+
+
+                                             11
+6. Supplier Response Requirements
+In this section, please provide your response including company information,
+responses to the Supplier Questions, and a completed Price Sheet.
+
+Vendor Response Questions-These questions are required and are being
+separated for the response. Please provide the response in a separate file below.
+
+Respond to each question in the order presented. Restate the question or clearly
+label each response by question number. Cross-references shall identify the
+exact proposal section and page. “See website” responses are not sufficient.
+
+1. Describe comparable multisite commercial HVAC preventive maintenance and repair
+experience and provide three references, including facility types, number of locations,
+and contract duration.
+2. Identify the technicians and service resources available to Parker, including licenses,
+refrigerant certifications, relevant training, and qualifications for the listed equipment.
+3. Explain your timeline for verifying the 46-asset inventory, establishing baseline
+records, and submitting the annual cooling-season and heating-season service
+schedule.
+4. Describe how you will coordinate planned work, access, roof activities, and
+necessary shutdowns at occupied and critical Town facilities.
+5. Summarize your preventive-maintenance approach for rooftop and other HVAC units,
+including coils, condensate systems, mechanical and electrical components, refrigerant
+circuits, and controls.
+6. Explain your heating-system safety inspections, combustion analysis, gas-leak
+checks, and carbon-monoxide testing.
+7. Describe your qualifications and service approach for DX chillers, hydronic systems,
+and pool dehumidification equipment, including specialized manufacturer support.
+8. State your guaranteed 24/7 emergency response time, how calls will be staffed, and
+how critical facilities will be prioritized.
+9. Describe how you diagnose non-routine repairs, submit written estimates, obtain
+Town authorization, source parts, and limit equipment downtime.
+10. Provide a sample completed preventive-maintenance, combustion-analysis, and
+emergency-service report; state the digital report turnaround time and identify any
+exceptions to the scope or contract requirements.
+
+Pricing Schedules
+Offerors shall complete the attached HVAC Preventive Maintenance Price Sheet &
+Forms workbook, including all nine facility rows, labor rates, other charges, references,
+and assumptions or exclusions. Prices shall include all costs unless a separate line item
+is expressly provided in the workbook.
+
+1. Scheduled Preventive Maintenance
+Provide cooling-season and heating-season prices and the annual total for each facility
+in the Scheduled Services tab. Include all equipment and specialized tasks applicable
+to each site.
+
+2. Hourly Labor and Emergency Rates
+Complete regular-hours, after-hours, weekend, and holiday labor rates and any
+minimum or trip charge in the Labor & Charges tab.
+
+3. Parts Consumables and Other Charges
+
+
+                                            12
+Identify separately priced parts, consumables, refrigerant, subcontracted support,
+travel, disposal, and other fees in the Labor & Charges tab.
+
+4. Renewal Pricing
+State the proposed method and maximum adjustment for each renewal year, including
+the index, reference period, documentation, or fixed percentage used. Any adjustment
+remains subject to Town approval and the resulting agreement.
+
+
+6.1 Response Files
+
+Attachments (Documentation):
+Town_of_Parker_HVAC_Preventive_Maintenance_Price_Sheet__Forms.xlsx
+
+
+ 6.1.1 RFP Response (information regarding the company) [Required] [PDF]
+
+
+ (Vendor file upload)
+
+
+
+ 6.1.2 Supplier Questions Response [Required] [PDF]
+
+
+ (Vendor file upload)
+
+
+
+ 6.1.3 HVAC PM Price Workbook (include company name in file name)
+  [Required] [Excel]
+
+
+ (Vendor file upload)
+
+
+
+
+                                           13
+7. Evaluation Process & Selection Criteria
+1. GENERAL FORMAT: The Consultant shall submit a response electronically via
+   the Town of Parker EUNA Procurement Portal.
+
+2. INITIAL REVIEW OF RESPONSES BY PROCUREMENT: Only a complete
+   response with the listed required submittal documents and meeting minimum
+   qualifications will be considered. Failure to meet the minimum qualifications and
+   submit the required documents will result in a response being declared non-
+   responsive.
+
+3. EVALUATION CRITERIA AND COMMITTEE REVIEW: A Town evaluation
+   committee comprised of Town staff will evaluate and score each response based
+   on established criteria. Consultants shall not contact members of the evaluation
+   committee. Responses will be evaluated according to the Consultant’s ability to
+   best satisfy the Town requirements. Consultant submissions are evaluated and
+   scored on a weighted system to determine the best value as follows:
+
+The evaluation committee will score Responses based on the following criteria listed in
+order of importance:
+ Criterion                  Points       Evaluation Focus
+
+ Pricing                    35           Completeness and reasonableness of scheduled-service
+                                         pricing, emergency labor rates, consumables, parts
+                                         pricing, renewal adjustments, and total evaluated cost.
+
+ Technical Approach and     25           Seasonal maintenance methods, scheduling, equipment-
+ Preventive Maintenance                  specific capability, quality control, safety, and ability to
+ Methodology                             minimize disruption.
+
+ Emergency Repair           15           Guaranteed response, 24/7 staffing, proximity, diagnostic
+ Response Capability                     resources, authorization process, and prioritization of
+                                         critical facilities.
+
+ Qualifications Licensing   15           Comparable experience, assigned team, required
+ and Experience                          licenses and certifications, multi-brand capability, safety
+                                         program, and references.
+
+ Documentation and          10           Report quality and timeliness, combustion
+ Reporting                               documentation, deficiency prioritization, asset history,
+                                         and record continuity.
+
+
+4. INTERVIEWS: To be determined
+
+5. NEGOTIATIONS: Upon completion of evaluation scoring, the Town reserves the
+   right to enter into negotiations with one or more selected Consultants.
+
+6. AWARD: The Town reserves the right to award a contract(s) and purchase
+   order(s) to the Consultant that provides the best value in the performance of this
+   service. The Town will make the final determination on the best value and award.
+
+
+
+
+                                            14
+7.1 Cover Sheet
+The undersigned hereby affirms that (1) he/she is a duly authorized agent of the
+Consultant, (2) he/she has read all terms and conditions and technical specifications
+which were made available in conjunction with this solicitation and fully understands
+and accepts them unless specific variations have been expressly listed in his/her offer,
+(3) that the offer is being submitted on behalf of the Consultant in accordance with any
+terms and conditions set forth in this document, and (4) that the Consultant will accept
+any awards made to it as a result of the offer submitted herein for a minimum of ninety
+calendar days following the date of submission.
+
+
+ 7.1.1 Company Name - Legal Name [Required] [Text]
+
+
+ (Vendor text input)
+
+
+
+ 7.1.2 Company Address - Full Address [Required] [Text]
+
+
+ (Vendor text input)
+
+
+
+ 7.1.3 Authorized Representative's Name / Title / Email Address - (must be an Officer of the
+ Company or Designated Signer) [Required] [Text]
+
+
+ (Vendor text input)
+
+
+
+ 7.1.4 Contact Name-Project Manager / Title / Email Address [Required] [Text]
+
+
+ (Vendor text input)
+
+
+
+
+                                             15
+8. Terms & Conditions
+Sample Professional Services Agreement for Review for informational purposes only.
+
+
+8.1 Sample Professional Services Agreement
+Sample Professional Services Agreement for informational purposes only.
+
+Attachments (Documentation): Professional_Services_Agreement-
+SAMPLE_9.27.24.pdf
+
+
+ 8.1.1 Acknowledgement of Terms & Conditions in General [Required] [Single Choice]
+
+
+ (Yes) / (No)
+
+
+
+ 8.1.2 Acknowledgement of Exhibit C - Insurance Requirements [Required] [Single
+ Choice]
+
+
+ (Yes) / (No)
+
+
+
+
+                                          16
+

@@ -1,5 +1,5 @@
 {
-  "_comment": "Search profiles for scripts/samgov_watch.py and keyword lists for scripts/bidnet_watch.py. Edit here, not in code. SAM.gov fields: title (keyword), ncode (NAICS), ccode (PSC/FSC), state (place of performance).",
+  "_comment": "Search profiles for scripts/samgov_watch.py and keyword lists for scripts/bidnet_watch.py. Edit here, not in code. SAM.gov fields: title (keyword), ncode (NAICS), ccode (PSC/FSC), state (place of performance). exclude_keywords veto a match. bonfire_orgs = Euna/Bonfire portal subdomains (<org>.bonfirehub.com) to scan.",
   "profiles": {
     "brownbison": {
       "label": "Brown Bison Holdings \u2014 HVAC / plumbing / electrical / landscaping / facilities",
@@ -95,7 +95,54 @@
         "trees",
         "tree trimming",
         "janitorial",
-        "custodial"
+        "custodial",
+        "handyman",
+        "carpentry",
+        "general repair",
+        "repair services",
+        "maintenance services",
+        "fencing",
+        "graffiti",
+        "pressure wash",
+        "bus shelter",
+        "low voltage",
+        "cabling",
+        "fire alarm",
+        "backflow",
+        "water heater",
+        "roof maintenance",
+        "painting",
+        "flooring",
+        "door",
+        "window cleaning",
+        "pest control",
+        "hood cleaning",
+        "pool",
+        "asbestos",
+        "abatement"
+      ],
+      "exclude_keywords": [
+        "excavation",
+        "earthwork",
+        "pond",
+        "pump station",
+        "roadway",
+        "paving",
+        "asphalt",
+        "bridge",
+        "culvert",
+        "storm sewer",
+        "sanitary sewer",
+        "interceptor",
+        "water main",
+        "pipeline",
+        "engineering services",
+        "design services",
+        "architect",
+        "feasibility study",
+        "software",
+        "consultant",
+        "actuarial"
       ]
     },
     "jones-bearing": {
@@ -248,7 +295,15 @@
         "material handling",
         "power transmission"
       ],
-      "bid_model": "Brown Bison primes where a bid needs a registered contractor; Jones Bearing supplies/subcontracts the equipment (bucket elevators, lime handling, bearings, pulleys). Flag any Brown Bison-profile bid whose scope includes conveyors, elevators, or lime systems as a joint pursuit."
+      "bid_model": "Brown Bison primes where a bid needs a registered contractor; Jones Bearing supplies/subcontracts the equipment (bucket elevators, lime handling, bearings, pulleys). Flag any Brown Bison-profile bid whose scope includes conveyors, elevators, or lime systems as a joint pursuit.",
+      "exclude_keywords": [
+        "bearing wall",
+        "load bearing",
+        "ball bearing assembly, aircraft"
+      ]
     }
-  }
+  },
+  "bonfire_orgs": [
+    "parkeronline"
+  ]
 }

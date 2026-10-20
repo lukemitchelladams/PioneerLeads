@@ -59,3 +59,26 @@
 - **2026-10-19 (phone, Rich Carroll, York/JCI):** $100/hr regular labor, $140/hr after-hours, quoted to Brown Bison. Our bid rate = Rich's rate + 10% (Luke, 2026-10-19): **$110.00/hr regular, $154.00/hr after-hours.** Sub background and evidence: sub-air-comfort-york.md. Open questions for Rich: parts markup %, trip/truck charge, holiday rate, whether $100 is lead tech or helper, minimum call-out hours, whether after-hours starts at 5pm or 4pm.
 - Comps on file (no Colorado municipal HVAC tab in hand yet): Bernards Twp NJ 2026 municipal HVAC tab $130 and $155/hr regular, $195 OT; Denver commercial labor market guides $110–$190/hr regular, 1.5–2x after hours; a Parker/Aurora contractor's public rate card $120/hr and $180/hr after hours. Denver HVAC mechanic wages $27–$39/hr (Salary.com 2026), so $100/hr billed is ~2.5–3.5x wage, a normal shop multiplier.
 - Best comp still missing: Town of Parker's last HVAC on-call award rates (public record). Ask Procurement 303-805-3188 / BidNet. Draft email in Gmail Drafts.
+
+## SOLICITATION IN HAND (pulled from GovTribe 2026-10-19 19:20 MT): RFP 26-028
+Docs: docs/RFP-26-028-biddoc.pdf (16 pp), docs/2-HVAC-PM-Price-Sheet-Forms.xlsx, docs/3-HVAC-PM-Appendix-A.pdf
+(asset inventory), docs/1-Professional-Services-Agreement-SAMPLE.pdf. Quoted from the RFP:
+
+| Item | Value |
+|---|---|
+| Title | Town of Parker HVAC Preventive Maintenance & Repair Services, Ref. 26-028, RFP |
+| Pre-bid / site walk | **None listed** (Events: Open 10/1, Questions 10/16, Close 10/22) |
+| Questions due | Oct 16th 2026, 10:00AM MDT (passed) |
+| **Close** | **Thu 2026-10-22, 3:00 PM MDT, electronic via Town of Parker EUNA Procurement Portal (formerly Bonfire)**. Not BidNet. |
+| Scope | PM, seasonal inspections, testing, documentation, emergency response, corrective repair. 46 assets: 40 RTUs, 4 DX chillers, 2 pool dehumidification units; 9 facility rows |
+| Term | Initial three years; renewals by mutual agreement |
+| Required uploads | 6.1.1 RFP Response (company info) PDF; 6.1.2 Supplier Questions Response PDF (10 questions); 6.1.3 HVAC PM Price Workbook (company name in file name) Excel |
+| Pricing | Scheduled Services tab: cooling + heating season price and annual total per facility; Labor & Charges tab: regular, after-hours, weekend, holiday rates, min/trip charge; parts, refrigerant, subcontracted support, travel, disposal; renewal adjustment method |
+| Scoring | Pricing 35, Technical approach 25, Emergency response 15, Qualifications/licensing 15 (remainder in RFP section 7) |
+| Insurance | COIs + endorsements per Town requirements before work; background screening at sensitive facilities |
+| Contact | Charles Ellis, cellis@parkeronline.org (Project Owner) |
+
+Rich Carroll's $100/$140 rates go into the Labor & Charges tab at +10% ($110/$154). Still needed from Rich:
+per-facility seasonal PM prices (9 rows), weekend and holiday rates, trip charge, parts markup, refrigerant
+pricing, 3 references, tech licenses/EPA 608 certs, guaranteed emergency response time.
+Luke's CRM is also building this proposal (brief 10/19); coordinate so only one submission goes in.

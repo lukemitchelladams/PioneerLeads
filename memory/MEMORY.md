@@ -284,3 +284,16 @@ newest Colorado posting is 2026-10-14 (stale). So the hourly checks were reading
 Fix applied: routine prompt now starts with a source-health line and may not say "nothing new" unless BidNet or
 SAM.gov was scanned live. Real fix needs Luke: (A) environment Network access + env vars, or (B) run
 scripts/local_runner.sh hourly on his always-on computer (his CRM Mac already runs a 7:17 launchd scan).
+
+### 2026-10-19 19:40 MT: built scripts/bidwatch (live portal scanner) + full hourly review
+Luke demanded full 24/7 visibility, logged in, auto-refresh. Built scripts/bidwatch/ (common, browser, bidnet,
+bonfire, samgov, run): statewide BidNet CO list + keyword searches, Euna/Bonfire (Parker), SAM.gov open + upcoming
+via API (budgeted), DIBBS; persistent sessions in ~/.brownbison/sessions, auto re-login with backoff, mid-scan
+re-login, detail pages (closing, questions, pre-bid MANDATORY detection), watchlist (bids/_watch/watchlist.json)
+addendum detection + doc downloads, REPORT.md with source-health table. tests/test_bidwatch.py: 38 pass incl. a
+fake portal on localhost (login, reuse, expiry re-login, pagination, addendum). Live run blocked: all four hosts
+return proxy 403; no env vars set. Luke pasted BIDNET/SAM creds in chat 19:35 MT: NOT stored; told him to rotate
+and enter them in environment settings. Routine now: runs scanner, full GovTribe open-bid review against
+bids/_watch/govtribe_ledger.json (baseline 165 reviewed), re-checks 17 watched bids, inbox; runs 24/7 hourly.
+Parker RFP 26-028 found in GovTribe with docs (Euna/Bonfire portal, due 10/22 15:00, no walk); CLAUDE.md corrected.
+New GO: 27J Speaker Cabling (due 10/28). EVALUATE: Jeffco Dome Glass, Elbert fencing, DPS prequal.

@@ -1,0 +1,83 @@
+ REQUEST FOR PROPOSALS                                              HVAC PREVENTIVE MAINTENANCE & REPAIR SERVICES
+
+
+
+Appendix A Equipment Inventory
+This inventory is provided for proposal development and is subject to field verification. A Y indicates the asset is currently designated for that seasonal
+service. Blank cells indicate that service is not presently scheduled in the source inventory and do not relieve the contractor from identifying equipment
+needs or unsafe conditions observed during other work.
+ Location                Equipment                  Type                   Date in Service   Make            Model                       Cooling   Heating
+
+ Fieldhouse              FH RTU 1 - 2024            Roof Top Unit          2024-04-01        DAIKIN          DPSA035A                    Y         Y
+ Fieldhouse              FH RTU 2 - 2024            Roof Top Unit          2024-04-01        DAIKIN          DPSA050A                    Y         Y
+ Fieldhouse              FH RTU 3 - 2026            Roof Top Unit          2026-08-27        DAIKIN          DPSA050B                    Y         Y
+ Fieldhouse              FH RTU 4 - 2024            Roof Top Unit          2024-04-01        DAIKIN          DPSA020A                    Y         Y
+ Fieldhouse              FH RTU 5 - 2025            Roof Top Unit          2007-07-01        DAIKIN          DPSA050A                    Y         Y
+ Mots Bldg A             MOTS A RTU 1-2017          Roof Top Unit          2017-12-01        TRANE           YHC036E1RHB1                Y         Y
+ Mots Bldg A             MOTS A RTU 2-2017          Roof Top Unit          1996-09-24        TRANE           YHC035E                     Y         Y
+ Mots Bldg A             MOTS A RTU 3-2018          Roof Top Unit          2018-09-01        TRANE           YHC048F1RHB                 Y         Y
+ Mots Bldg A             MOTS A RTU 4-2018          Roof Top Unit          2018-09-01        TRANE           YHC048F1RHB                 Y         Y
+ Mots Bldg A             MOTS A RTU 5-2017          Roof Top Unit          2017-12-01        TRANE           YZC060E3RHA06DE01           Y         Y
+ Pace Center             PAC RTU 1                  Roof Top Unit          2011-10-01        CARRIER         48A2E030-PG61AJC            Y         Y
+ Pace Center             PAC RTU 2                  Roof Top Unit          2011-10-01        CARRIER         48A3T027-PV61AJC            Y         Y
+ Pace Center             PAC RTU 3                  Roof Top Unit          2011-10-01        CARRIER         48A3T035-PV61AJC            Y         Y
+ Pace Center             PAC RTU 4                  Roof Top Unit          2011-10-03        CARRIER         48A3T035-PV61AJC            Y         Y
+ Pace Center             PAC RTU 5                  Roof Top Unit          2011-10-01        CARRIER         48TCED17                    Y         Y
+ Pace Center             PAC RTU 6                  Roof Top Unit          2011-10-01        CARRIER         48TCED17                    Y         Y
+ Pace Center             PAC RTU 7                  Roof Top Unit          2011-10-01        CARRIER         48TCED20                    Y         Y
+
+ Police Department       PD RTU 1                   Roof Top Unit          2010-10-01        TRANE           TSCB050U0F                  Y
+
+ Police Department       PD RTU 2                   Roof Top Unit          2010-10-01        TRANE           TSCB012U0F                  Y
+
+ Police Department       PD RTU 3                   Roof Top Unit          2010-10-01        ANNEXAIR        ERP-09-HP-C-H               Y
+
+ Police Department       PD RTU 4                   Roof Top Unit          2010-10-01        ANNEXAIR        ERP-03-HP-C-H               Y
+
+ Police Department       PD CHILLER 1               Dx Chiller             2010-10-01        AIRSTACK        ASP15X2H2A1-410             Y
+
+ Police Department       PD CHILLER 2               Dx Chiller             2010-10-01        AIRSTACK        ASP15X2H2A1-410             Y
+
+ Police Department       PD CHILLER 3               Dx Chiller             2010-10-01        AIRSTACK        ASP15X2H2A1-410             Y
+
+ Public Works            PWOC RTU1                  Roof Top Unit          2015-06-01        TRANE           TTA180E400AA                Y         Y
+ Recreation Center       RC RTU 1                   Roof Top Unit          2012-06-01        TRANE           YCH240E4HBBC                Y         Y
+ Recreation Center       RC RTU 10                  Roof Top Unit          2015-04-01        TRANE           SIHLF 404PLPGC6BD80010      Y         Y
+ Recreation Center       RC RTU 11                  Roof Top Unit          2015-04-01        TRANE           YHH180F4RVA 030 HBI         Y         Y
+
+
+
+
+                                             Town of Parker, Colorado | HVAC Preventive Maintenance & Repair Services | Page 11
+REQUEST FOR PROPOSALS                                           HVAC PREVENTIVE MAINTENANCE & REPAIR SERVICES
+
+Location                Equipment               Type                   Date in Service   Make            Model                        Cooling   Heating
+
+Recreation Center       RC RTU 2                Roof Top Unit          2013-06-01        TRANE           YFD150F4HCBA                 Y         Y
+Recreation Center       RC RTU 3                Roof Top Unit          2014-05-15        TRANE           YSC060E4RLA1NC0010002        Y         Y
+Recreation Center       RC RTU 4                Roof Top Unit          2015-06-01        TRANE           YSC072E4LA0W101              Y         Y
+Recreation Center       RC RTU 5                Roof Top Unit          2014-06-15        TRANE           YSC090F4RLA08COO1            Y         Y
+Recreation Center       RC RTU 6                Roof Top Unit          1999-05-15        TRANE           YCDO75C4LA6A                 Y         Y
+Recreation Center       RC PDU 1 2022           Pool Dehum Unit        2022-08-15        INNOVENT        NDHU-OU-PL-18000-IF-AC-460   Y         Y
+Recreation Center       RC PDU 2 2015           Pool Dehum Unit        2015-08-01        INNOVENT        NDHU-OU-PL-21000-IF-AC-460   Y         Y
+School House            SCH RTU 1-2018          Roof Top Unit          2018-09-01        CARRIER         48VL-C6013030                Y         Y
+School House            SCH RTU 2-2018          Roof Top Unit          2018-09-01        CARRIER         48VL-C6013030                Y         Y
+School House            SCH RTU 3-2018          Roof Top Unit          2018-09-01        CARRIER         48VL-C6013030                Y         Y
+
+Town Hall               TH RTU 1-2015           Roof Top Unit          2001-08-01        McQUAY          RDS800CYY                    Y
+
+Town Hall               TH RTU 2-2015           Roof Top Unit          2001-08-01        McQUAY          RAH047 CSA                   Y         Y
+Town Hall               TH RTU 3-2015           Roof Top Unit          2001-08-01        McQUAY          RAH047 CSA                   Y         Y
+
+Town Hall               TH CHLR-2021            Dx Chiller             2021-04-01        DAIKIN          AGZ110EDHEDHEMNNOA           Y
+
+Town Hall Addition      TH RTU 4                Roof Top Unit          2025-08-01        DAIKIN          DPSA030B4BBPP                Y         Y
+Town Hall Addition      TH RTU 5                Roof Top Unit          2025-08-01        DAIKIN          DPSA020B4BPBV                Y         Y
+Town Hall Addition      TH RTU 6                Roof Top Unit          2025-08-01        DAIKIN          DPSC10BBPB44A                Y         Y
+Town Hall Addition      TH RTU 7                Roof Top Unit          2026-07-01        VALENT          VX-112-10L-J-J2              Y         Y
+
+
+
+
+                                         Town of Parker, Colorado | HVAC Preventive Maintenance & Repair Services | Page 12
+
