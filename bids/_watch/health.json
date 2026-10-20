@@ -1,19 +1,19 @@
 {
-  "checked_at": "2026-10-20T07:02:43+00:00",
+  "checked_at": "2026-10-20T07:35:57+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 587,
+      "count": 586,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-20T07:02:43+00:00",
+      "last_success": "2026-10-20T07:35:57+00:00",
       "logged_in": true,
-      "login_note": "logged in (attempt 1)",
-      "matches": 81,
+      "login_note": "session reused",
+      "matches": 80,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-10-20T07:02:43+00:00",
+      "last_success": "2026-10-20T07:35:57+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -61,13 +61,18 @@
     },
     "samgov": {
       "bulk_added": 30,
-      "bulk_note": "bulk file cached 2026-10-20T05:28:39+00:00; 68 matching of 14033 open notices",
+      "bulk_note": "bulk file cached 2026-10-20T05:28:39+00:00; 68 matching (parsed earlier)",
+      "carried_forward": true,
+      "complete": false,
       "count": 68,
       "creds": {
         "SAM_API_KEY": true
       },
-      "errors": [],
-      "last_success": "2026-10-20T07:02:43+00:00",
+      "errors": [
+        "SAM.gov {'ccode': '3910'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>",
+        "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-10-20T07:35:57+00:00",
       "logged_in": true,
       "login_note": "API key; +30 from the nightly bulk file",
       "matches": 68,
