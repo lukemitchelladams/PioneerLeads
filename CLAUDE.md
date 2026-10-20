@@ -17,6 +17,12 @@ It is NOT a software product. Do not scaffold apps here unless asked.
    of Luke that day. Ask subs for answers 7+ days before our submission. If a mandatory walk is under 7
    days out, Luke attends for Brown Bison and subs price from our photos and notes. Every hourly check
    lists GO bids with no sub pricing in hand and the days remaining.
+0c. COMPLETE DOCUMENT PACKAGES, EVERY TIME (Luke, 2026-10-19, after Littleton went out without Attachments
+   A/B/C). When Luke asks for the docs for a job, deliver 100% of the package: the solicitation PLUS every
+   attachment, exhibit, appendix, form, price sheet/template and addendum it lists. Before sending, read the
+   solicitation's table of contents / attachment list and check each item against bids/<bid>/docs/MANIFEST.md
+   (run `python3 scripts/doc_manifest.py`). Send everything in hand in one go and, in the same message, list
+   every missing item by name with exactly where to download it. Never send just the main PDF.
 1. Correct misconceptions. If the user is wrong about a bid detail, say so with the source.
 2. Never state a bid requirement (response time, due date, insurance limit, equipment model)
    unless it is quoted from the actual solicitation document. If we don't have the document,

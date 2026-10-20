@@ -297,3 +297,11 @@ and enter them in environment settings. Routine now: runs scanner, full GovTribe
 bids/_watch/govtribe_ledger.json (baseline 165 reviewed), re-checks 17 watched bids, inbox; runs 24/7 hourly.
 Parker RFP 26-028 found in GovTribe with docs (Euna/Bonfire portal, due 10/22 15:00, no walk); CLAUDE.md corrected.
 New GO: 27J Speaker Cabling (due 10/28). EVALUATE: Jeffco Dome Glass, Elbert fencing, DPS prequal.
+
+### 2026-10-19 20:10 MT: rule 0c: complete document packages
+Luke: Littleton RFQ went to his plumber without Attachments A/B/C + pricing template. NEVER AGAIN: when asked for
+a job's docs, deliver 100% (every attachment/exhibit/form/price sheet/addendum) or name each missing item + where
+to get it. Built scripts/doc_manifest.py (writes docs/MANIFEST.md per bid; heuristics, then verified by hand).
+Verified gaps in bids/_watch/DOC-GAPS.md: Littleton A/B/C + pricing template; RTD SBE enclosures/W-9/key personnel
+forms; Brighton city forms; Adams Exhibits B/C; Metro Water Attachments 1-3; Westminster E/F/G; COS Appendix A
+Excel. Parker, Thornton, 27J complete. Pulled RTD Form of Contract and 27J bid doc (bids/sd27j-speaker-cabling/docs).
