@@ -1,0 +1,3326 @@
+              THE CITY OF COLORADO SPRINGS
+
+                  REQUEST FOR PROPOSAL
+
+                           Services
+
+                          R26-069MZ
+
+                Date Issued: September 15, 2026
+
+
+        CITY ADMINISTRATION BUILDING (CAB) BUILDING
+         AUTOMATION SYSTEM (BAS) MODERNIZATION
+            THE CITY OF COLORADO SPRINGS
+
+
+
+
+R26-069MZ                                             1
+The City of Colorado Springs requests Firm Fixed Price (FFP) as detailed in this Request
+       for Proposal (RFP), for CITY ADMINISTRATION BUILDING (CAB) BUILDING
+                    AUTOMATION SYSTEM (BAS) MODERNIZATION.
+
+   This RFP is posted to Rocky Mountain E-Purchasing BidNet Direct and the City of
+ Colorado Springs’ Procurement Services Website. It is available for all vendors free of
+ charge, following free registration, at the Rocky Mountain E-Purchasing BidNet Direct
+                                          website.
+
+     SUBMITTALS FOR THIS PROJECT WILL ONLY BE ACCEPTED ON THE ROCKY
+             MOUNTAIN E-PURCHASING BIDNET DIRECT PLATFORM.
+
+  Please login to the following website to register (Free Registration) to submit a bid for
+           this project. All required documents will be uploaded to the website.
+
+                              https://www.bidnetdirect.com/
+
+                                     BIDNET Support
+
+                                       800-835-4603
+
+
+
+
+R26-069MZ                                                                                     2
+                           SECTION INDEX
+
+SECTION I     PROPOSAL INFORMATION
+
+SECTION II    PROPOSAL CONTENT
+
+SECTION III   EVALUATION FACTORS
+
+SECTION IV    RESERVED
+
+SECTION V     EXHIBITS
+
+SECTION VI    APPENDICES
+
+
+
+
+R26-069MZ                                  3
+                             SECTION I – PROPOSAL INFORMATION
+
+1.0     PROPOSAL INFORMATION
+
+Section I provides general information to potential Offerors, such as proposal submission
+instructions and other similar administrative elements. This RFP is available on BidNet
+(www.bidnetdirect.com). All addenda or amendments shall be issues through BidNet and may not
+be available through any other source.
+
+1.1     RFP SCHEDULE OF EVENTS
+
+The upcoming schedule of events is as follows:
+
+Event                                              Date
+
+Issue Request for Proposal                         September 15, 2026
+
+Pre-Proposal Conference                            September 25, 2026 1:00PM MDT
+
+We will hold a pre-proposal conference at City Administration Building 30 S Nevada Ave Suite
+102 Colorado Springs, CO 80903. This meeting is not mandatory. However, all Offerors are
+encouraged to attend.
+
+Cut Off Date for Question                          October 2, 2026 1:00PM MDT
+
+Questions about the RFP must be submitted via email to the following email address:
+michael.zeller@coloradosprings.gov. A written response to any inquiry may be provided in the
+form of an Amendment to the solicitation. See 1.7 Amendments. Questions must be received no
+later than 1:00PM MDT October 2, 2026.
+
+Requests for information or support shall be addressed to:
+
+Mike Zeller
+719-385-5264
+Michael.zeller@coloradosprings.gov
+
+  DO NOT CONTACT ANY OTHER INDIVIDUAL AT THE CITY OF COLORADO SPRINGS
+                     REGARDING THIS SOLICITATION.
+
+The only acceptable method of submitting questions is via BidNet to the Contracting
+Specialist named above. Faxes, email or physical mail delivery are not acceptable.
+
+Proposal Due Date                                  October 15, 2026 2:00PM MDT
+
+Interviews (if applicable)                         TBD
+
+Award of Contract                                  EST November 1, 2026
+
+Notice to Proceed                                  EST November 30, 2026
+
+
+
+
+R26-069MZ                                                                                  4
+1.2    SUBMISSION OF PROPOSALS
+
+Proposals are to be submitted electronically on the BidNet Website (www.bidnetdirect.com).
+Please review the submission requirements well in advance of submission date and time; and
+allow for ample time to upload each required document.
+
+It is recommended that Offerors begin the submission process at least one (1) day in advance of
+the proposal deadline.
+
+Offerors are solely responsible to ensure their bid documents are uploaded and submitted
+correctly, and that a confirmation number is obtained upon successful submission.
+
+Customer Support Team for www.bidnetdirect.com can be reached 1-800-835-4603.
+
+1.3    NUMBER OF COPIES
+
+One electronic proposal is to be submitted electronically on the BidNet Website
+(www.bidnetdirect.com).
+
+1.4    SPECIAL TERMS
+
+Please note the following definitions of terms as used herein:
+
+The term “City” means the City of Colorado Springs.
+
+The term “Contractor” or “Consultant” means the Offeror whose offer is accepted and is awarded
+the contract to provide the products or services specified in the RFP.
+
+The term “Offer” means the proposal.
+
+The term “Offeror” means the person, firm, or corporation that submits a formal proposal or offer
+and that may or may not be successful in being awarded the contract.
+
+The term “Project” refers to City Administration Building (CAB) Building Automation System (BAS)
+Modernization.
+
+The term “Request for Proposal” or “RFP” means this solicitation of a formal, negotiable
+proposal/offer. Any offer that is accepted will be the offer that is deemed by the City of Colorado
+Springs to be most advantageous in terms of the criteria designated in the RFP.
+
+1.5    RFP OBJECTIVE
+
+The objective of this RFP is to provide sufficient information to enable qualified Offerors to submit
+written proposals to the City of Colorado Springs. The RFP is not a contractual offer or
+commitment to purchase products or services. The Offeror may present options and variables to
+the scope while still meeting the minimum requirements of this solicitation. Innovative
+proposals/solutions are encouraged and considered in the selection and/or award.
+
+All information included in proposals must be legible. Any and all corrections and or erasures
+must be initialed by Offeror. Each proposal shall be accompanied by a cover letter signed by an
+
+
+
+
+R26-069MZ                                                                                           5
+authorized representative of the Offeror. The contents of the proposal submitted by the successful
+Offeror may become part of any contract awarded as a result of this solicitation.
+
+1.6    CONFIDENTIAL OR PROPRIETARY INFORMATION
+
+If an Offeror believes that parts of an offer are confidential, then the Offeror must so specify. The
+Offeror must include in bold letters the term “CONFIDENTIAL” on that part of the offer which the
+Offeror believes to be confidential. The Offeror must submit in writing specific detailed reasons,
+including any relevant legal authority, stating why the Offeror believes the material to be
+confidential. Vague and general claims as to confidentiality will not be accepted. The City of
+Colorado Springs will be the sole judge as to whether a claim is acceptable. Decisions regarding
+the confidentiality of information will be made when requests are made to make the information
+public. All offers and parts of offers, which are not marked as confidential, will automatically be
+considered public information after the contract is awarded. The successful offer may be
+considered public information even though parts are marked confidential.
+
+1.7    AMENDMENTS
+
+Amendments to this RFP may be issued at any time prior to the time set for receipt of proposals.
+Offerors are required to acknowledge receipt of any amendments issued to this RFP by returning
+a signed copy of each amendment issued. Signed copies of each amendment must be received
+on or before the time set for receipt of offers.
+
+The City of Colorado Springs will post all amendments on the BidNet Website
+(www.bidnetdirect.com). It is the Offeror's responsibility to check the website for posted
+amendments or contact the Contracts Specialist listed to confirm the number of amendments
+which have been issued.
+
+1.8    WITHDRAWAL OR MODIFICATION OF OFFERS
+
+Any Offeror may modify or withdraw an offer in writing at any time prior to the deadline for
+submission of an offer.
+
+1.9    ACCEPTANCE
+
+Any offer received and not withdrawn shall be considered an offer, which may be accepted by the
+City of Colorado Springs based on initial submission without discussions or negotiations.
+
+By submitting an offer in response to this solicitation, the Offeror agrees that any offer it submits
+may be accepted by the City of Colorado Springs at any time within 90 calendar days from the
+date of submission deadline.
+
+The City of Colorado Springs reserves the right (a) to reject any or all offers,(b) to waive
+informalities and minor irregularities in offers received, and/or (c) to accept any portion of an offer
+if deemed in the best interest of the City of Colorado Springs. Failure of the Offeror to provide in
+its offer any information requested in the RFP may result in rejection of the offer for non-
+responsiveness.
+
+1.10   PROPOSAL PREPARATION COST
+
+The cost of proposal preparation is not a reimbursable cost. Proposal preparation shall be at the
+
+
+
+R26-069MZ                                                                                            6
+Offeror’s sole expense and is the Offeror’s total and sole responsibility.
+
+1.11   AWARD
+
+The City of Colorado Springs intends to make one award, using the evaluation criteria listed in
+this RFP, to determine the best value, considering all factors and criteria in the proposals
+submitted. Best value means the expected outcome of an acquisition that, in the City’s estimation,
+provides the greatest overall benefit in response to the requirements detailed in the RFP. The
+City of Colorado Springs reserves the right to reject any or all offers and to not make an award.
+
+1.12   PERFORMANCE PERIOD
+
+The performance period for the project detailed in this RFP will be established as:
+NOTICE TO PROCEED THROUGH DECEMBER 31, 2027.
+
+1.13   DEBRIEFING
+
+Offerors not selected may request a debriefing on the selection process as well as discussion of
+the strengths and weaknesses of their proposal upon receipt of notification that their offer was not
+selected.
+
+A debriefing may be scheduled by contacting the Contracts Specialist listed above. The Contracts
+Specialist must receive a written request for debriefing no later than ten (10) calendar days after
+issuance of a notification that the Offeror’s offer was not selected.
+
+1.14   SUBSTANTIVE PROPOSALS
+
+By responding to this RFP, the Offeror certifies (a) that Offeror's proposal is genuine and is not
+made in the interest of, or on behalf of, an undisclosed person, firm, or corporation; (b) that Offeror
+has not directly or indirectly induced or solicited any other Offerors to put in a false or sham
+proposal; (c) that Offeror has not solicited or induced any other person, firm, or corporation to
+refrain or abstain from proposing an offer or proposal; (d) that Offeror has not sought by collusion
+to obtain for themselves any advantage over any other Offerors or over the City of Colorado
+Springs; and (e) that Offeror has not violated or caused any person to violate, and shall not violate
+or cause any person to violate, the City’s Code of Ethics contained in Article 3, of Chapter 1 of
+the City Code and in the City's Procurement Rules and Regulations.
+
+1.15   OFFEROR'S QUALIFICATIONS
+
+Each Offeror must complete Exhibit 1 – Qualification Statement.
+
+No contract will be awarded to any Offeror who is in arrears to the City, upon any debt or contract,
+or who is in default, in any capacity, upon any obligation to the City or is deemed to be
+irresponsible or unreliable by the City based on past performance.
+
+1.16   NON-COLORADO ENTITIES
+
+If Offeror is a foreign entity, Offeror shall comply with C.R.S. section 7-90-801, “Authority to
+transact business or conduct activities required,” and section 7-90-802, “Consequences of
+transacting business or conducting activities without authority.”
+
+
+
+
+R26-069MZ                                                                                            7
+Before or at the time that the contract is awarded to an entity organized or operating outside the
+State of Colorado, such entity shall obtain authorization to do business in the State of Colorado,
+designate a place of business herein, and appoint an agent for service of process.
+
+Such entity must furnish the City of Colorado Springs with a certificate from the Secretary of the
+State of Colorado to the effect that a certificate of authority to do business in the State of Colorado
+has been issued by that office and is still valid. The entity shall also provide the City with a certified
+copy of the designation of place of business and appointment of agent for service of process from
+the Colorado Secretary of State, or a letter from the Colorado Secretary of State that such
+designation of place of business and agent for service of process has been made.
+
+1.17    PROCUREMENT RULES AND REGULATIONS
+
+All projects advertised by the City of Colorado Springs are solicited in accordance with the City's
+Procurement Rules and Regulations. The City's Procurement Rules and Regulations can be
+reviewed and/or downloaded from the City website https://www.coloradosprings.gov. The
+Contracts Specialist may also provide a soft copy of the Rules and Regulations upon request.
+Any discrepancies regarding conflicting statements, decisions, irregularities, clauses, or
+specifications will be rectified utilizing the City’s Procurement Rules and Regulations, when
+applicable. It is the Offeror’s responsibility to advise the Contracts Specialist listed in this RFP of
+any perceived discrepancies prior to the date and time the offer is due.
+
+1.18    FAIR TREATMENT OF OFFERORS
+
+The City Procurement Services Division shall be responsible for ensuring the procurement of
+products, commodities, and services in a manner that affords all responsible businesses a fair
+and equal opportunity to compete. If an Offeror believes that a procurement is not conducted in a
+fair and equitable manner, the Offeror is encouraged to inform the City Procurement Services
+Manager as soon as possible.
+
+1.19    ORDER OF PRECEDENCE
+
+Any inconsistency in this solicitation shall be resolved by giving precedence in the following order:
+
+A. Sections I-IV of this Solicitation
+B. Statement of Work
+C. Other Appendices, Schedules, Exhibits, or Attachments
+
+1.20    SALES TAX
+
+The successful Offeror, if awarded a contract, shall apply to the Colorado Department of Revenue
+for a tax-exempt certificate for this project. The certificate does not apply to City of Colorado
+Springs Sales and Use Tax which shall be applicable and should be included in all proposals.
+The tax-exempt project number and the exemption certificate only apply to County, PPRTA (Pikes
+Peak Rural Transportation Authority), and State taxes when purchasing construction and building
+materials to be incorporated into this project.
+
+Furthermore, the exemption does not include or apply to the purchase or rental of equipment,
+supplies or materials that do not become a part of the completed project or structure. In these
+instances, the purchase or rental is subject to full taxation at the current taxation rate.
+
+
+
+
+R26-069MZ                                                                                               8
+The Offeror and all subcontractors shall include in their Offer City of Colorado Springs Sales and
+Use Tax on the work covered by the offer, and all other applicable taxes.
+
+Forms and instructions can be downloaded at https://coloradosprings.gov/sales-tax. Questions
+can be directed to the City Sales Tax Division at (719) 385-5903 or
+SalesTax@coloradosprings.gov.
+
+Our Registration Numbers are as follows:
+City of Colorado Springs
+Federal I.D.: 84-6000573
+Federal Excise: A-138557
+State Sales Tax: 98-03479
+
+1.21   INTERPRETATION OF PLANS AND SPECIFICATIONS
+
+Any change to proposal forms, plans, or specifications prior to the opening of proposals will be
+issued by the City in the form of an Amendment. Certain individuals may be named in the RFP
+that have authority to provide information, clarification or interpretation to Offerors prior to opening
+of proposals. Information obtained from persons other than those named individuals is invalid and
+shall not be used for proposal purposes.
+
+1.22   COMBINATION OR CONDITIONAL PROPOSALS
+
+If an RFP is issued for projects in combination and separately, the Offeror may submit proposals
+either on the combination or on separate units of the combination. The City reserves the right to
+make awards on combination or separate proposals to the advantage of the City. Combination
+proposals will be considered, only when specified.
+
+1.23   ANTI-COLLUSION AFFIDAVIT
+
+The Offeror by signing their proposal submitted to the City is certifying that the Offeror has not
+participated in any collusion or taken any action in restraint of free competitive bidding. This
+statement may also be in the form of an affidavit provided by the City and signed by the Offeror.
+The original of the signed anti-collusion affidavit, if separately required and provided with the RFP,
+shall be submitted with the proposal. The proposal will be rejected if it does not contain the
+completed anti-collusion affidavit.
+
+
+
+
+R26-069MZ                                                                                             9
+                              SECTION II – PROPOSAL CONTENT
+
+2.0    PROPOSAL CONTENT
+
+Section II provides instructions regarding the format and content required for proposals submitted
+in response to this solicitation.
+
+2.1    PROPOSAL FORMAT
+
+Offeror’s written proposal should include concise, but complete, information, emphasizing why
+the Offeror is best or best qualified to provide the required services. The Offeror’s written proposal
+should include the information in the format outlined below and must be limited to no more than
+twenty-five (25) pages. A page shall be defined as 8-1/2" x 11"; single sided, with one inch
+margins, and a minimum font of Times New Roman 10. The only exception to the 8-1/2” x 11”
+paper size is the proposed project schedule. It may be submitted on 11” x 17” paper. Each 11” x
+17” page for the schedule shall be counted in the overall page limitations above. Each section of
+the proposal should be labeled to clearly follow the requirements sections identified in this section
+of the RFP. The following listed Exhibits must be filled out and returned with the proposal and are
+not counted against the page limit:
+
+Exhibit 1   Solicitation Qualifications Document
+Appendix A Price Sheet
+Signed Addenda, if applicable
+
+2.2    COVER LETTER
+
+The cover letter shall be no more than three pages. The cover letter shall contain at least the
+following information.
+
+A. RFP Number and Project Name.
+B. Statement that the Offeror is qualified to perform the work.
+C. Certification Statement that the information and data submitted are true and complete to the
+   best knowledge of the individual signing the letter.
+D. Name, telephone number, email address, and physical address of the individual to contact
+   regarding the proposal.
+E. The signature of an authorized principal, partner, or officer of the Offeror.
+
+2.3    PROPOSAL CERTIFICATION
+
+The Offeror must fill out and submit Exhibit 1, Solicitation Qualifications Document, with its
+Proposal.
+
+2.4    ORGANIZATIONAL BACKGROUND AND OVERVIEW
+
+The Offeror must provide a brief history and overview of its company and its organizational
+structure, with special emphasis on how this project will fit within that structure. Also include
+principal place of business location(s), office locations, and size of firm. Financial stability
+information (annual public reports or private financial statements shall be included in an appendix
+or under separate cover; private financial information will be kept confidential by the City) may be
+requested during the proposal evaluation and award process.
+
+
+
+
+R26-069MZ                                                                                          10
+2.5      PROPOSAL NARRATIVE/TECHNICAL AND MANAGEMENT APPROACH
+
+In the proposal narrative/technical and management approach section, the Offeror should explain
+what the Offeror will do and how it will perform if awarded a contract.
+
+2.5.1    TECHNICAL AREA
+
+The Offeror must explain its overall solution, considering the scope of work or statement of work
+provided. The content must include, but not necessarily be limited to, the following information.
+
+A. Understanding of and Compliance with Technical Requirements
+
+In the Technical Area, the Offeror should address each work area in sufficient detail to
+demonstrate a clear and full understanding of the work necessary to complete the project. The
+proposal should not merely parrot the requirements of the RFP. Further, the Offeror should
+provide evidence of sufficient planning to ensure the work is completed on schedule and within
+budget. It is highly recommended that the Offeror provide sufficient content and detail to answer
+completely the following questions:
+
+      1. Does the proposal demonstrate a firm understanding of the requirements and goals of the
+         Statement of Work, as well as industry standards and reasonable expectations for a
+         company in the industry?
+      2. Does the proposal fully and completely address each requirement and goal of the
+         Statement of Work?
+      3. Does the proposal provide solutions to indicate that requirements and goals will be met
+         on schedule?
+      4. Does the technical solution seem realistic?
+      5. Does it generally appear that the Offeror knows and thoroughly understands the business
+         and the RFP requirements?
+
+B. Project Approach
+
+In the Technical Area, the Offeror should clearly present proposed solutions and indicate that it
+has performed adequate planning to accomplish project tasks as defined in the Statement of
+Work. Innovations, efficiencies, and detailed specifics are all encouraged.
+
+The Offeror must at least address the following areas:
+   1. Schedule Management. Discuss Offeror’s approach to schedule management including
+       updating and reporting progress of the work.
+   2. Quality Control. Discuss Offeror’s quality control plan, processes and approach to ensure
+       that the City receives a quality product.
+   3. Safety. Discuss Offeror’s approach and commitment to safety for its workers, the public,
+       and City employees, if services are accomplished on a City site.
+   4. Potential issues that Offeror foresees with this project and how Offeror would make
+       adjustments if encountered.
+
+It is highly recommended that the Offeror provides sufficient content and detail to answer
+completely the following questions.
+
+      1. Does the proposal include a complete plan to accomplish each requirement, including
+         subcontracting (if applicable)?
+
+
+
+R26-069MZ                                                                                      11
+   2. Does the proposal demonstrate that appropriate and qualified personnel and equipment
+      will be provided to carry out the requirement?
+   3. Is the proper level of effort directed toward each requirement? Does the level of effort look
+      unrealistically low or unreasonably high?
+
+2.5.2   MANAGEMENT AREA
+
+Offeror must explain its method of managing the work to be performed. The content must include,
+but no necessarily be limited to, the following information.
+
+A. Program Management Controls
+
+In the Management Area, the Offeror should provide:
+
+   1. A plan of operation, to include management of personnel, workload, schedule, and budget
+   2. An organization chart which demonstrates clear and effective lines of authority,
+      responsibility, and communication for management, supervisory, and technical personnel.
+      The plan should address which job classification or personnel will be assigned to each
+      task and how that determination is made. Basic human resource management concepts
+      should be addressed, including hiring, firing, discipline, incentive plans, etc.
+   3. If the Offeror plans to subcontract more than 10% of the work, include information on how
+      the Offeror plans to manage its subcontractors.
+   4. A detailed schedule for the project showing the key activities and how they will meet or
+      improve the City’s timeframe and maximize efficiency to provide the best value to the City
+      and minimize impacts to the public. The schedule shall be based on the Offeror’s
+      understanding and approach to the work as addressed above. Schedules should address
+      controls to ensure the project will remain on schedule and on budget.
+
+It is highly recommended that the Offeror provide sufficient content and detail to answer
+completely the following questions.
+
+   1. Does the proposal address the issues above in sufficient detail to demonstrate a
+      sophisticated and mature management control system?
+   2. Are program management controls consistent with the technical portion of the proposal,
+      especially regarding schedule and level of effort?
+   3. Do the plan and controls indicate that the Offeror will obtain, keep, and efficiently utilize
+      high-quality personnel?
+   4. Does the proposal explain how the Offeror will address corrective actions in case of delays
+      (e.g. expediting materials, additional resources, etc.)?
+   5. Does the proposal explain how the Offeror will remain within schedule and budget and
+      provide a project timeline and implementation plan?
+   6. Does the proposal show that the Offeror has ability for alarm detection and City notification
+      as shown in SOW?
+   7. Does the proposal show that the Offeror has the proper customer service and response
+      as shown in SOW?
+
+B. Past Performance/Relevant Experience
+
+In the Management Area, the Offeror should provide at least three references or name contracts
+demonstrating that it successfully provided services/products that are the same or similar to those
+required in the RFP. The proposal should adequately explain how the projects were completed
+
+
+
+R26-069MZ                                                                                        12
+on schedule and within budget. It is highly recommended that the Offeror provides sufficient
+content and detail to answer completely the following questions.
+
+      1. Does the proposal include at least three references or past performance citations?
+      2. Are the references or past performance citations relevant to the requirements of the
+         Statement of Work of the RFP?
+      3. Does the Offeror explain how they were successful on the projects provided as past
+         performance?
+      4. Does the Offeror apply the past performance to the City requirement in such a way as to
+         demonstrate added value due to experience?
+
+C. Key Personnel
+
+In the Management Area, resumes must be provided for all personnel considered key, as required
+by the RFP. Resumes do not count toward the page limit. It is highly recommended that the
+Offeror provide sufficient content and detail to answer completely the following questions. Explain
+how the key personnel were related to the projects cited as relevant past performance.
+
+      1. Does the Offeror provide complete resumes, including education, experience, background
+         information, accomplishments, and other pertinent information?
+      2. Does the Offeror provide resumes for all key personnel, as required by the RFP?
+      3. Do the resumes demonstrate adequate professional, technical, and management levels
+         to accomplish the work effectively and efficiently?
+
+2.6        PRICE AREA
+
+In the Price Area, the Offeror should provide a detailed breakdown of the price for each year of
+performance. The price must be all-inclusive and include all unit costs for material, labor, other
+direct costs (e.g. travel), indirect costs (i.e. overhead and general and administrative costs), and
+profit/fee. Offers must include sufficient detail to allow insight into the fairness and reasonableness
+of the price. If the contract type will be Time and Material (T&M) labor categories, labor rates,
+separated profit, and estimated material costs must be included in detail.
+
+In addition, although price may not be the most important factor, it is still very important to the City
+of Colorado Springs. The Offeror’s pricing must be competitive as compared to the budget
+amount, market pricing in the industry, and the pricing of other Offerors. It is highly recommended
+that the Offeror provide sufficient content and detail to answer completely the following questions.
+
+      1. How does the price compare to the industry competition?
+      2. If low, is it unrealistically low?
+      3. If high, is there demonstrated added value for the additional cost?
+      4. Is the price itemized, so that it is clear how the cost was built? If so, do the costs look
+         appropriate for the task?
+      5. Does the Offeror leave applicable costs out of the calculations? For instance, some will
+         say travel is not included and will be an extra cost. This should be considered when
+         comparing to other Offerors.
+      6. Are there additional costs not addressed that the City would incur if the Offeror were
+         awarded the contract? If so, include those costs when comparing to the budget amount
+         and the competition.
+
+
+
+
+R26-069MZ                                                                                            13
+2.7    PROPOSAL PRESENTATION
+
+Presentation is an important factor. Offerors should provide a highly professional product, which
+is complete, accurate, easily understood, and effectively presented.
+
+2.8    EXCEPTIONS
+
+All Offerors must complete Exhibit 1, Exceptions Form, found in the Solicitation Qualifications
+Document, and return it with their proposal. Some terms and conditions are not negotiable.
+Exceptions may be grounds for rendering the proposal unacceptable without further discussions.
+
+2.9    INSURANCE REQUIREMENTS
+
+All Offerors must complete Exhibit 1, Minimum Insurance Requirements, found in the Solicitation
+Qualifications Document, and return with their proposal. Lack of responsiveness in this area may
+be grounds for rendering the proposal unacceptable without further discussions.
+
+
+
+
+R26-069MZ                                                                                      14
+                           SECTION III – EVALUATION FACTORS
+
+3.0    EVALUATION AND AWARD
+
+Section III provides information regarding evaluation criteria and scoring. It also includes
+information regarding proposal selection and award of the resultant contract.
+
+3.1    EVALUATION CRITERIA
+
+3.1.1 TECHNICAL AREA – UNDERSTANDING OF AND COMPLIANCE WITH TECHNICAL
+REQUIREMENTS
+See Section II – Item 2.5.1A
+
+3.1.2 TECHNICAL AREA – PROJECT APPROACH
+See Section II - Item 2.5.1B
+
+3.1.3 MANAGEMENT AREA – PROGRAM MANAGEMENT CONTROLS
+See Section II – Item 2.5.2A
+
+3.1.4 MANAGEMENT AREA – PAST PERFORMANCE/RELEVANT EXPERIENCE
+See Section II – Item 2.5.2B
+
+3.1.5 MANAGEMENT AREA – KEY PERSONNEL
+See Section II – Item 2.5.2C
+
+3.1.6 PRICE/COST AREA – PRICE/COST
+See Section II – Item 2.6
+
+3.1.7 PROPOSAL PRESENTATION AREA – PROPOSAL PRESENTATION
+See Section II – Item 2.7
+
+3.1.8 EXCEPTIONS AND INSURANCE
+See Section II – Items 2.8 and 2.9
+
+3.2    RANKING
+
+A. The order of ranking or importance in the evaluation shall be as follows per grouping:
+
+First: Price/Cost Area
+Second: Technical Area
+Third: Management Area
+Fourth: Proposal Presentation Area
+
+B. Definitions for scoring are as follows and apply to each grouping:
+
+Exceptional – The proposal meets all and exceeds many of the requirements of the RFP to the
+benefit of the City, and the information provided is of such a nature as to answer all questions
+without need for further inquiry. There are no corrective actions required, and no compromise of
+requirements is needed.
+
+
+
+
+R26-069MZ                                                                                     15
+Very Good – The proposal meets all and exceeds some of the requirements of the RFP to the
+benefit of the City, and the information provided is of such a nature as to answer most questions
+without need for further inquiry. There are no corrective actions required, and no compromise of
+requirements is needed.
+
+Satisfactory – The proposal meets the requirements of the RFP, and the information provided is
+of such a nature as to answer many questions without need for further inquiry. There are very few
+corrective actions required, and no substantive compromise of requirements is needed.
+
+Marginal – The proposal does not meet some of the requirements of the RFP, and the information
+provided is of such a nature as to require some clarification. There are some corrective actions
+required, and some non-substantive compromise of requirements is needed.
+
+Unacceptable – The proposal does not meet many of the requirements of the RFP, and the
+information provided is of such a nature as to require much clarification. There are many corrective
+actions required, and substantive compromise of requirements is needed.
+
+C. Area Scoring
+
+The score for each area will be determined by multiplying the sum of the criteria in each area by
+the area evaluation factor. The area evaluation factors are as follows:
+
+Price/Cost Area: 40 Points
+Technical Area: 30 Points
+Management Area: 25 Points
+Proposal Presentation: 5 Points
+D. Final/Overall scoring
+The final proposal score will be determined by adding the area scoring. The sum of the area
+scores will be the final/overall score.
+3.3    SELECTION COMMITTEE
+
+A selection committee will review all proposals. Through this process, the City will determine
+which proposals are acceptable or unacceptable. The City will notify, in writing, the Offerors
+whose proposals are deemed to be unacceptable. Those Offerors offering proposals deemed to
+be acceptable by the City will be evaluated by grouping and scored by grouping by the selection
+committee. This scoring will determine which Offerors are considered to be in the competitive
+range and may be the basis for an award decision without further steps.
+
+If the selection committee elects not to award based upon evaluation scoring, it may engage in a
+forced elimination process. To inform this process, it may require oral presentations or interviews
+with the Offerors considered to be in the competitive range. If oral presentations or interviews are
+conducted, they may also be scored, or they may simply be considered as information supporting
+the forced elimination process. The selection committee may request revisions to the proposal
+from each of the Offerors at the conclusion of the interviews. The intent of the forced elimination
+process is to reach consensus. The decision will be based on all relevant factors and based upon
+perception of best value. The final decision may or may not exactly reflect scoring ranking.
+
+The City also reserves the right to request best and final offers from all Offerors at any point in
+the proposal evaluation process.
+
+
+
+
+R26-069MZ                                                                                         16
+3.4    AWARD OF CONTRACT
+
+It is anticipated that there will be negotiations or discussions with Offerors. However, the City
+reserves the right to award without negotiations or discussions. The City also reserves the right
+to award a contract not necessarily or merely to the Offeror with the most advantageous price.
+The City intends to award each grouping to the Offeror that demonstrates the best value to the
+City and the most substantiated ability to fulfill the requirements contained in this Request for
+Proposal. A contract or contracts prepared by the City will be finalized and/or negotiated with the
+successful Offeror(s). In the event a contract cannot be negotiated with the top-ranked Offeror,
+the City may enter into negotiations with the second highest-ranked Offeror, or the City may
+decide to call for new proposals. Immediately after the notice of award, the successful Offeror(s)
+will begin planning in conjunction with the City of Colorado Springs staff (to be designated by the
+City) to ensure fulfillment of all its obligations. The successful Offeror may be expected to attend
+regular meetings as required by the City to assist in the preparation for startup.
+
+
+
+
+R26-069MZ                                                                                         17
+            SECTION IV – RESERVED
+
+
+
+
+R26-069MZ                           18
+                                SECTION V – EXHIBITS
+
+5.0    EXHIBITS
+
+Exhibit 1   Solicitation Qualifications Document
+Exhibit 2   Sample Contract
+Exhibit 3   Sample Evaluation Scoresheet
+
+
+
+
+R26-069MZ                                              19
+EXHIBIT 1   SOLICITATION QUALIFICATIONS DOCUMENTS
+
+FOLLOWS THIS PAGE.
+
+
+
+
+R26-069MZ                                           20
+                      SOLICITATION QUALIFICATIONS DOCUMENTS
+Please complete all sections of this document including the Solicitation Certification,
+Representations and Certifications, Qualification Statement, Exceptions, Minimum Insurance
+Requirements, and Signature Page.
+Please submit all completed documents with your bid/ proposal and sign the Minimum
+Insurance Requirements and Signature Page.
+
+
+Solicitation:
+
+
+Solicitation Number:
+
+
+Firm Name:                                                  Date:
+
+
+Address:
+
+
+
+Federal Tax ID #:
+Tax Classification:
+   Sole Proprietorship                Partnership                   C Corporation
+   S Corporation                      LLC                           Nonprofit
+
+
+DUNS Number:
+
+
+OFFEROR REPRESENTATIVE
+
+
+Offeror has appointed the following as the offeror’s representative and contact for all questions
+or clarifications in regard to this offeror.
+
+
+        Name:
+
+    Telephone:
+
+        E-mail:
+
+
+
+
+R26-069MZ                                                                                           21
+                               SOLICITATION CERTIFICATION
+
+PLACE OF BUSINESS
+
+
+Company’s Principal Place of Business
+
+
+
+
+Does Offeror Have an established office or facility in Colorado Springs?        YES        NO
+
+
+If Yes, Indicate address below if different from principal place of business.
+
+
+
+
+Year Facility Was Established
+
+
+Percent of Work to be performed from principal place of business.
+
+
+Percent of Work to be performed from Colorado Springs Facility
+
+
+INSURANCE
+
+
+Indicate your ability to provide a certificate of insurance evidencing the required coverage types
+and limits specified in Minimum Insurance Requirements Exhibit. (The certificate of insurance
+must reflect the City of Colorado Springs as an Additional Insured, as applicable.)
+
+
+Initial Here
+
+
+Indicate your Ability to Comply with the following requirements:
+
+
+The City shall be added as an Additional Insured to all liability policies
+
+
+        YES                    NO
+
+
+
+
+R26-069MZ                                                                                        22
+Your property and liability insurance company is licensed to do business in Colorado
+
+
+        YES                    NO
+
+
+Your property and liability insurance company has an AM best rating of not less than B+ and/or
+
+
+
+        YES                    NO
+
+
+Worker’s Compensation Insurance is carried for all employees and covers work done in
+Colorado.
+
+
+        YES                    NO
+
+
+Provide the name of your property and liability insurance company here:
+
+
+FINANCIAL STATEMENTS
+
+
+       Current Financial Statements are not required for this solicitation.
+
+
+      Current Financial Statements are required for this solicitation. Please include financial
+      statements as a separate document with your proposal.
+
+
+
+Initial Here
+
+
+COMPLETED PROPOSAL
+
+
+Provide the completed and signed proposal. (Proposals must be identified as specified in this
+RFP document). All required Exhibits are attached.
+
+
+
+Initial Here
+
+
+
+
+R26-069MZ                                                                                         23
+ACKNOWLEDGE ADDENDUM
+
+
+Offeror hereby acknowledges receipt of the following amendments, if applicable Offeror agrees
+that it is bound by all Amendments identified herein.
+
+
+Addendum #1                                        Dated:
+                                    Initial Here
+
+
+Addendum #2                                        Dated:
+                                    Initial Here
+
+
+Addendum #3                                        Dated:
+                                    Initial Here
+
+
+Additional Addendum, if issued      Initial Here   Dated:
+
+
+
+
+R26-069MZ                                                                                   24
+                      REPRESENTATIONS AND CERTIFICATIONS
+
+1. INSURANCE REQUIREMENTS
+
+
+   Offeror shall comply with all insurance requirements and will submit the Insurance
+   Certificates prior to performance start date. If limits are different from the stated amounts,
+   Offeror shall explain variance. Certain endorsements and “additionally insured” statements
+   may require further clarification and specific statements on a project specific basis and
+   should have been described in the Offeror’s proposal.
+
+
+   Initial Here #1
+2. ETHICS VIOLATIONS
+
+   a) The Offeror shall have in place and follow reasonable procedures designed to prevent and
+      detect possible violations described in this clause in its own operations and direct business
+      relationships.
+   b) Offeror certifies the Offeror has not violated or caused any person to violate, and shall not
+      violate or cause any person to violate, the City’s Code of Ethics contained in Article 3, of
+      Chapter 1 of the City Code and in the City's Procurement Rules and Regulations
+   c) When the Offeror has reasonable grounds to believe that a violation described in this
+      clause may have occurred, the Offeror shall promptly report the possible violation to the
+      City Contracts Specialist in writing.
+   d) The Offeror must disclose with the signing of this proposal, the name of any officer,
+      director, or agent who is also an employee of the City and any City employee who owns,
+      directly or indirectly, an interest of ten percent (10%) or more in the Offeror’s firm or any
+      of its branches.
+   e) In addition, the Offeror must report any conflict or apparent conflict, current or discovered
+      during the performance of the Contract, to the City Contracts Specialist.
+   f) The Offeror shall not engage in providing gifts, meals or other amenities to City employees.
+      The right of the Offeror to proceed may be terminated by written notice issued by City
+      Contracts Specialist if Offeror offered or gave a gratuity to an officer, official, or employee
+      of the City and intended by the gratuity to obtain a contract or favorable treatment under a
+      contract.
+   g) The Offeror shall cooperate fully with the City or any agency investigating a possible
+      violation on behalf of the City. If any violation is determined, the Offeror will properly
+      compensate the City.
+   h) The Offeror agrees to incorporate the substance of this clause (after substituting
+      “Contractor” for “Offeror”) in all subcontracts under this offer.
+
+
+   Initial Here #2
+
+
+
+
+R26-069MZ                                                                                           25
+3. COOPERATION WITH OTHER CONTRACTORS
+
+
+   Other City activities/contracts may be in progress or start during the performance of this
+   contract. The Offeror shall coordinate the work harmoniously with the other contractors or
+   City personnel, if applicable.
+
+
+   Initial Here #3
+
+
+4. INTERNET USE
+
+
+   Should the Offeror require access to City Internet resources in the performance of this
+   requirement, a “Contractor’s Internet Use Agreement” form must be separately signed by each
+   individual having access to the City Network. The completed Contractor’s Internet Use
+   Agreement will be maintained with this agreement. Inappropriate use of the City Network will be
+   grounds for immediate termination of any awarded contact.
+
+
+   Initial Here #4
+
+5. LITIGATION
+
+
+   If awarded a contract, Offeror shall notify the City within five (5) calendar days after being
+   served with a summons, complaint, or other pleading in any matter which has been filed in
+   any federal or state court or administrative agency. The Offeror shall deliver copies of such
+   document(s) to the City's Procurement Services Manager. The term "litigation" includes an
+   assignment for the benefit of creditors, and filings of bankruptcy, reorganization and/or
+   foreclosure.
+
+
+   Initial Here #5
+
+6. CONTRACTOR’S REGISTRATION INFORMATION
+
+
+   Offeror’s firm verifies and states that they are (check all that apply):
+
+       Large Business (i.e. do not qualify as a small business or non-profit)
+
+       Nonprofit
+
+       Small Business
+
+       Minority Owned Business/Small Disadvantaged Business
+
+       Woman Owned Business
+
+
+
+R26-069MZ                                                                                       26
+       Veteran Owned Business
+
+       Service-Disabled Veteran Owned Business
+
+       HUBZone Business
+
+
+Note: The City accepts self-certification for these categories in accordance with Small Business
+Administration (SBA) standards. The SBA size standards are found on the SBA website
+https://www.sba.gov/content/am-i-small-business-concern.
+
+
+Initial Here #6
+
+7. CONTRACTOR PERSONNEL
+
+
+   a) The Offeror shall appoint one of its key personnel as the “Authorized Representative” who
+      shall have the power and authority to interface with the City and represent the Offeror in
+      all administrative matters concerning this proposal and any awarded contract, including
+      without limitation such administrative matters as correction of problems modifications, and
+      reduction of costs.
+   b) The Authorized Representative shall be the person identified in the Offeror’s proposal,
+      unless the Offeror provides written notice to the City naming another person to serve as
+      its Authorized Representative. Communications received by the City Contracts Specialist
+      from the Authorized Representative shall be deemed to have been received from the
+      Offeror.
+
+       Name:
+
+   Telephone:
+
+
+       E-mail:
+
+
+   Initial Here #7
+
+8. OFFEROR’S CERTIFICATION
+
+
+   The undersigned hereby affirms that:
+   a) He/She is a duly authorized agent of the Offeror;
+   b) He/She has read and agrees to the City’s standard terms and conditions attached.
+   c) The offer is presented in full compliance with the collusive prohibitions of the City of
+      Colorado Springs. The Offeror certifies that no employee of its firm has discussed, or
+
+
+
+
+R26-069MZ                                                                                      27
+      compared the offer with any other offeror or City employee and has not colluded with any
+      other offeror or City employee.
+   d) The Offeror certifies that it has checked all of its figures, and understands that the City will
+      not be responsible for any errors or omissions on the part of the Offeror in preparing its
+      proposal.
+   e) By submitting an offer the Offeror certifies that it has complied and will comply with all
+      requirements of local, state, and federal laws, and that no legal requirements have been
+      or will be violated in making or accepting this solicitation.
+
+
+   I hereby certify that I am submitting the proposal based on my company's capabilities to
+   provide quality products and/or services on time.
+
+
+   Initial Here #8
+
+
+9. OFFEROR CERTIFICATION REGARDING DEBARMENT, SUSPENSION, PROPOSED
+   DEBARMENT, AND OTHER RESPONSIBILITY MATTERS:
+
+
+   1. The Offeror certifies to the best of its knowledge and belief, that (i) the Offeror and/or any
+      of its Principals
+
+              Are             Are Not
+
+       Presently debarred, suspended, proposed for debarment, or declared ineligible for the
+       award of contracts by any Federal agency.
+
+
+              Have            Have Not
+
+       Within a three year period preceding this offer, been convicted of or had a civil judgment
+       rendered against them for: commission of fraud or a criminal offense in connection with
+       obtaining, attempting to obtain, or performing a public (federal, state, local) contract or
+       subcontract; violation of Federal or state antitrust statutes relation to the submission of
+       offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction
+       of records, making false statement, tax evasion, or receiving stolen property; and
+
+              Are             Are Not
+
+       presently indicated for, or otherwise criminally or civilly charged by a governmental entity
+       with commission of any of the offenses enumerated in any paragraphs above.
+
+   2. The Offeror shall provide immediate written notice to the City Contracts Specialist if, at
+      any time prior to contract award, the Offeror learns that its certification was erroneous
+      when submitted or has become erroneous by reasons of changed circumstances.
+   3. The certification in paragraph 1. above, is a material representation of fact upon which
+      reliance was placed when making award. If it is later determined that the Offeror knowingly
+      rendered an erroneous certification, in addition to other remedies available to the City, the
+
+
+
+R26-069MZ                                                                                           28
+       City Contracts Specialist may terminate the contract resulting from this solicitation for
+       default. Termination for default may result in additional charges being levied for the costs
+       incurred by the City to initiate activities to replace the awarded Contractor.
+
+
+   Initial Here #9
+
+10. ACCEPTANCE OF CITY CONTRACTS SPECIALIST’S SOLE AUTHORITY FOR
+    CHANGES
+
+
+   Unless otherwise specified in the Contract, the Offeror hereby agrees that any changes to the
+   scope of work, subsequent to the original contract signing, shall be generated in writing and
+   an approval signature shall be obtained from the City Contracts Specialist prior to additional
+   work performance.
+
+
+   Initial Here #10
+
+
+11. CITY CONTRACTOR SAFETY PROGRAM
+
+   The Offeror hereby agrees to adhere to a worker safety program for contractor employees
+   on a City job site or location. By initialing below, the Offeror has reviewed the information
+   and will abide by the City Policy which is available for review:
+
+
+   https://coloradosprings.gov/finance/page/procurement-regulations-and-documents
+
+
+
+   Initial Here #11
+
+
+12. ACCEPTANCE OF CITY ENVIRONMENTALLY PREFERRED PURCHASING (EPP)
+    POLICY
+
+
+   The City of Colorado Springs is committed to buying more environmentally preferable goods
+   and services, as long as they meet performance needs, are available within a reasonable
+   time and at a reasonable cost. The Offeror hereby acknowledges review of this policy by
+   initialing below.
+
+
+   https://coloradosprings.gov/finance/page/procurement-regulations-and-documents
+
+
+
+   Initial Here #12
+
+
+
+R26-069MZ                                                                                          29
+13. FRAUD, WASTE, AND ABUSE
+
+
+   Everyone has a duty to report any suspected unlawful act impacting the City of Colorado
+   Springs operations and its enterprises. Anyone who becomes aware of the existence or
+   apparent existence of fraud, waste, and abuse in City of Colorado Springs is encouraged to
+   report such matters to the City Auditor’s Office in writing or on the telephone hotline 385-
+   2387 (ADTR). Written correspondence can be mailed to:
+
+
+   City Auditor
+   P.O. Box 2241
+   Colorado Springs CO 80901
+
+
+   Or via email FraudHotline@ColoradoSprings.gov. Any of these mechanisms allow for
+   anonymous reporting. For more information, please go to the website
+   https://coloradosprings.gov/cityfraud.
+
+
+
+Initial Here #13
+
+
+
+
+R26-069MZ                                                                                     30
+                                 QUALIFICATION STATEMENT
+This statement will provide information which will enable the City to evaluate the qualifications of
+your firm and staff with regard to the requirements of this solicitation. Please complete this form
+in its entirety. If a request in the Qualification Statement is contained in the proposal, indicate
+the section in the proposal where that information can be found.
+
+
+   1. TYPE OF LICENSE(S) HELD
+
+
+
+
+   2. TYPE OF SERVICE TO BE PROVIDED FOR THIS SOLICITATION
+
+
+
+   3. NUMBER OF YEARS IN BUISNESS
+
+
+   4. FIRM HSITORY & STAFF QUALIFICATIONS
+       In your proposal provide a brief history of your firm, staff size, and experience. Submit a
+       resume for the project manager and each key personnel assigned to this project.
+
+
+   5. WHAT OTHER NAME(S) HAS YOUR COMPANY OPERATED UNDER
+
+
+               My Firm has not operated under any other names
+
+
+   6. HAVE YOU OR YOUR FIRM EVER FAILED TO COMPELTE ANY WORK AWARDED
+      TO YOU?
+
+               Yes              No
+       If Yes, Please Explain
+
+
+
+
+R26-069MZ                                                                                         31
+   7. HAS ANY OFFICER OF PARTNER OF YOUR ORGANIZATION EVER BEEN AN
+      OFFICER OR PARTNER OF ANOTHER ORGANIZATION THAT FIALED TO
+      COMPLETE A CONTRACT WITHIN THE LAST FIVE (5) YEARS?
+                 Yes            No
+       If Yes, Please Explain
+
+
+
+
+   8. HAS YOUR FIRM OR ANY PARTNERS OR OFFICERS EVER BEEN INVOVLED IN
+      ANY BANKRUPTCY ACTION?
+
+                 Yes            No
+       If Yes, Please Explain
+
+
+
+
+   9. ARE YOU PRESENTLY INVOVLED IN ANY LITIGATION WITH ANY GOVERNMENT
+      AGENCY?
+
+                 Yes            No
+
+       If Yes, Please Explain Type, Kind, Plaintiff, Defendant, etc. and state the current status:
+
+
+
+
+   10. BANK REFERENCE
+
+       Bank Name:
+
+        Address:
+
+       Contact:
+
+       Phone #:
+
+       E-mail:
+
+
+
+
+R26-069MZ                                                                                            32
+   11. SIMILAR PROJECTS
+       List Three similar projects (local or state-wide) from the last five (5) years. Include the
+       location of the project, size of project (contract amount), contract name and information.
+       NOTE: Detailed information on these projects may also be requested in the solicitation
+       package
+
+               Indicate here if this information is provided within your proposal and
+               Identify where in the proposal it is located.
+
+
+
+
+       1. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided and how your firm was successful
+            carrying out the scope of work of the contract.
+
+
+
+
+       2. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+
+
+
+R26-069MZ                                                                                        33
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided and how your firm was successful
+            carrying out the scope of work of the contract.
+
+
+
+
+       3. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided and how your firm was successful
+            carrying out the scope of work of the contract.
+
+
+
+
+R26-069MZ                                                                                  34
+   12. SIMILAR PROJECTS CURRENTLY UNDER CONTRACT
+
+       list three projects currently under contract and in progress (local or state-wide) from the
+       last five (5) years. Include the location of the project, size of project (contract amount),
+       contract name and information. NOTE: Detailed information on these projects may also
+       be requested in the solicitation package
+
+               Indicate here if this information is provided within your proposal and
+               Identify where in the proposal it is located.
+
+
+
+       1. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided.
+
+
+
+
+       2. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+
+
+
+R26-069MZ                                                                                         35
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided.
+
+
+
+
+       3. Company:
+
+            Location of Project:
+
+            Contract Amount:
+
+            Contract Period of Performance:
+
+            Company Representative:
+
+            Representative’s Title:
+
+            Representative’s Address:
+
+            Representative’s Phone #:
+
+            Representative’s E-mail:
+
+            Brief Description of service/goods provided.
+
+
+
+
+R26-069MZ                                                  36
+   13. ADDITIONAL QUALIFICATION REQUIREMENTS
+
+
+            There are no additional qualification requirements for this solicitation.
+
+
+             There are additional qualification requirements as follows:
+
+
+
+
+R26-069MZ                                                                               37
+                                          EXCEPTIONS
+Please Indicate below if there are any exceptions taken to any of the terms, conditions, or
+specifications of these proposal documents or contract.
+
+If there are exceptions taken to any of the terms, conditions, or specifications of the proposal
+document or contract, they must be clearly stated on an additional document attached to this
+exhibit and returned with your proposal.
+
+NOTE: All potential Offerors are hereby advised that exceptions taken may be considered
+during the evaluation phase which may affect the final scoring of proposals. Offerors
+stipulating that the City must use their contract or agreement may be determined non-
+responsive and their Proposal determined unacceptable.
+
+
+Please indicate below:
+
+
+       My Firm has no exceptions.
+
+
+       My Firm does have exceptions. (Attach Exceptions to this exhibit)
+
+
+
+
+R26-069MZ                                                                                          38
+                           MINIMUM INSURANCE REQUIREMENTS
+The following listed minimum insurance requirements shall be carried by all contractors and
+consultants unless otherwise specified in the City’s solicitation package, Special Provisions or
+Standard Specifications.
+
+
+   1. Commercial General Liability for limits not less than $1,000,000 combined single limit for
+      bodily injury and property damage for each occurrence. Coverage shall include blanket
+      contractual, broad form property damage, products and completed operations.
+
+   2. Workers’ Compensation and Employers Liability as required by statute. Workers’
+      Compensation and Employers Liability coverage is to be carried for a minimum limit of
+      $1,000,000.
+
+   3. Automobile Liability covering any auto (including owned, hired, and non-owned autos)
+      with a minimum of $1,000,000 each accident combined single limit.
+
+
+
+
+Except for workers’ compensation and employer’s liability insurance and Professional Liability,
+the City of Colorado Springs must be named as an additional insured. Certificates of Insurance
+must be submitted before commencing the work and provide 30 days’ notice prior to any
+cancellation, non-renewal, or material changes to policies required under the contract.
+
+
+
+
+Name of Company
+
+
+
+
+Signature                                            Date
+
+
+
+R26-069MZ                                                                                          39
+                                         SIGNATURE PAGE
+By signing below, the Offeror certifies that no person or firm other than the Offeror or as
+otherwise indicated has any interest whatsoever in this offer or any Contract that may be
+entered into as a result of this offer and that in all respects the offer is legal and firm, submitted
+in good faith without collusion or fraud.
+
+
+The undersigned additionally declares that it has carefully examined the Bid/Proposal
+information and the complete Solicitation prior to submitting a Bid / Proposal. The Offeror’s
+signature will be considered the Offeror’s acknowledgement of understanding and ability to
+comply with all items in the solicitation.
+
+
+The undersigned acknowledges and understands the terms, conditions, Specifications and all
+Requirements contained and/or referenced and are legally authorized by the Offeror to make
+the above statements or representations.
+
+
+
+
+Signature
+
+
+Name (Printed)
+
+
+Company Name
+
+
+Title
+
+
+Date
+
+
+
+
+R26-069MZ                                                                                            40
+ EXHIBIT 2         SAMPLE CONTRACT
+
+                                       SERVICES CONTRACT
+
+                                          Project
+Contract Number:
+                                          Name/Title
+
+Vendor/Contractor
+Contact Name:                                                  Telephone:
+Email Address:
+Address:
+
+City Contracting                          City Dept
+Specialist                                Rep
+NOT TO EXCEED                             City Account
+Contract Amount:                          #
+                                          Period of
+Contract Type:
+                                          Performance
+
+ 1. INTRODUCTION
+
+ THIS TYPE CONTRACT (“Contract”) is made and entered into this ___ day of__________, 2025
+ by and between the City of Colorado Springs, a Colorado municipal corporation and home rule
+ city, in the County of El Paso, State of Colorado, (the "City"), and ________________________
+ (the "Contractor").
+
+ THE CITY AND THE CONTRACTOR HEREBY AGREE AS FOLLOWS:
+
+ The City has heretofore prepared the necessary Contract Documents for the following Activity:
+
+ The Contractor did on the ___ day of ________, 2025 submit to the City the Contractor's written
+ offer and proposal to do the work therein described under the terms and conditions therein set
+ forth and furnish all materials, supplies, labor, services, transportation, tools, equipment, and parts
+ for said work in strict conformity with the accompanying Contract Documents, which are attached
+ hereto and incorporated herein by this reference, including the following:
+
+ 1.   This Contract Document
+ 2.   Appendix A – Additional Terms and Conditions
+ 3.   Appendix B – Contractor’s Proposal
+ 4.   Appendix C – Statement of Work
+ 5.   Appendix D – Project Schedule
+ 6.   Appendix E – Insurance Requirements
+
+ 2. COMPENSATION/CONSIDERATION
+
+ If FFP/FUP:
+
+ THIS FIRM FIXED PRICE/FIXED UNIT PRICE CONTRACT is established at firm fixed amount
+ of $xxxxxxxx.
+
+
+
+ R26-069MZ                                                                                            41
+Subject to the terms and conditions of the Contract Documents, Contractor shall provide all
+materials, supplies, labor, services, transportation, tools, equipment, and parts to perform XXXX
+services for the City of Colorado Springs in a good and workmanlike manner to the satisfaction of
+the City for the total contract amount designated above and in the Notice of Award, to be paid by
+the City to the Contractor.
+
+If T&M
+
+Subject to the terms and conditions of the Contract Documents, Contractor shall provide all
+materials, supplies, labor, services, transportation, tools, equipment, and parts to perform
+______________ services for the City of Colorado Springs in a good and workmanlike manner to
+the       satisfaction    of     the      City       for      the        estimated      price    of
+_______________________________________ , not to exceed $_____________ (“Not to
+Exceed estimate”). If the performance of this Contract involves the services of others or the
+furnishing of equipment, supplies, or materials, the Contractor agrees to pay for the same in full.
+At the time of payment by the City, the Contractor shall certify in writing that said payments have
+been so made.
+
+This is a Time and Material (T&M) type contract. The Not to Exceed estimate is in accordance
+with the Contractor’s T&M proposal and rates, as included in the attached proposal, dated
+XXXXXX. All labor charges shall be in accordance with the T&M rates provided therein. Invoiced
+hours shall be subject to City review and approval before payable.
+
+The parties estimate that performance of this Contract will not exceed the Not to Exceed estimate.
+The Contractor shall notify the City Contracts Specialist in writing whenever it has reason to
+believe that the costs the Contractor expects to incur under this Contract in the following 60 days,
+when added to all costs previously incurred, will exceed 75 percent of the estimated cost specified
+herein; or the total cost for the performance of this Contract will be either greater or substantially
+less than had been previously estimated. As part of the notification, the Contractor shall provide
+the Contracts Specialist a revised estimate of the total cost of performing this Contract.
+
+The City is not liable for any costs above the Not to Exceed estimate, and the Contractor is not
+obligated to continue performance under this Contract (including actions under the Termination
+clause of this Contract) or otherwise incur costs in excess of the Not to Exceed estimate specified
+herein, until the City Contracts Specialist
+
+Notifies the Contractor in writing that the estimated cost has been increased and provides a
+revised estimated total not to exceed price of performing this Contract.
+
+3. TERM OF CONTRACT
+
+It is further agreed that the Contractor will start work promptly and continue to work diligently until
+completed. The Contract Period of Performance shall be as follows:
+
+Performance Period                     Dates                                   Price
+
+Base Year:
+Option Year One:
+Option Year Two:
+Option Year Three:
+
+
+
+R26-069MZ                                                                                            42
+Option Year Four:
+
+Option years may be exercised unilaterally by the City at the City’s sole discretion. Pricing for
+option years shall be as indicated above. The City may elect not to exercise an option at any time
+before start of an option at no additional cost to the City. Further, the City shall have the unilateral
+option of extending services beyond the term of the Contract, including all options, for a period
+not to exceed a total of six (6) months if additional time is necessary to solicit and award a new
+Contract. Options to extend services shall be exercised upon written notification (mailed or
+otherwise furnished) to the Contractor at least fifteen (15) days prior to the expiration date of the
+Contract, or to extend Contract for up to four additional one year option periods at the City’s sole
+discretion.
+
+The total value of this Contract for all years shall not exceed $XXXXXXX. The value and current
+funding is $XXXXXXXX for the base year.
+
+OR
+
+Contractor will start work promptly after the Notice to Proceed and continue to work diligently until
+completed. The Contractor shall complete all work on an as ordered basis throughout the Contract
+period which is _____ Calendar Days after the Notice-to-Proceed (“Period of Performance”) as
+per the specifications and drawings. The Contractor shall provide a two-year guarantee on all
+work performed under this Contract after the job has been completed and accepted.
+
+4. INSURANCE
+
+The Contractor shall provide and maintain acceptable Insurance Policy(s) consistent with the
+Minimum Insurance Requirements attached as Appendix E, which includes Property, Liability and
+Professional Errors and Omissions coverage, and as otherwise listed in Appendix E. The City of
+Colorado Springs shall be reflected as an additional insured on the Property and Liability policy(s).
+
+Further, Contractor understands and agrees that Contractor shall have no right of coverage under
+any existing or future City comprehensive, self, or personal injury policies. Contractor shall provide
+insurance coverage for and on behalf of Contract that will sufficiently protect Contractor, or
+Contractor's agents, employees, servants or other personnel, in connection with the services
+which are to be provided by Contractor pursuant to this Contract, including protection from claims
+for bodily injury, death, property damage, and lost income. Contractor shall provide worker's
+compensation insurance coverage for Contractor and all Contractor personnel. Contractor shall
+file applicable insurance certificates with the City and shall also provide additional insurance as
+indicated in this Contract. A CURRENT CERTIFICATE OF INSURANCE IS REQUIRED PRIOR
+TO COMMENCEMENT OF SERVICES LISTING THE CITY AS ADDITIONALLY INSURED.
+
+5. RESPONSIBILITY OF THE CONTRACTOR
+
+A. The Contractor shall be responsible for the professional quality, technical accuracy, and the
+   coordination of all Scope of Work services furnished by the Contractor under this Contract.
+   The Contractor shall, without additional compensation, correct or revise any errors or
+   deficiencies in services provided under this Contract to the satisfaction of the City.
+
+B. The City's review, approval of, acceptance of, or payment for the services required under this
+   Contract shall not be construed to operate as a waiver of any rights under this Contract or of
+   any cause of action arising out of the performance of this Contract, and the Contractor shall
+
+
+
+R26-069MZ                                                                                            43
+   be and remain liable to the City for any and all damages to the City caused by the Contractor's
+   negligent performance of any of the services furnished under this Contract.
+
+C. The rights and remedies of the City provided for under this Contract are in addition to any
+   other rights and remedies provided by law.
+
+D. If the Contractor is comprised of more than one legal entity, each such entity shall be jointly
+   and severally liable hereunder.
+
+6. WORK OVERSIGHT
+
+A. The extent and character of the work to be done by the Contractor shall be subject to the
+   general approval of the City’s delegated Project Manager.
+
+B. If any of the work or services being performed does not conform with Contract requirements,
+   the City may require the Contractor to perform the work or services again in conformity with
+   Contract requirements, at no increase in Contract amount. When defects in work or services
+   cannot be corrected by re-performance, the City may (1) require the Contractor to take
+   necessary action to ensure that future performance conforms to Contract requirements and
+   (2) reduce the Contract price to reflect the reduced value of the work or services performed.
+
+C. If the Contractor fails to promptly perform the defective work or services again or to take the
+   necessary action to ensure future performance is in conformity with Contract requirements,
+   the City may (1) by Contract or otherwise, perform the services and charge to the Contractor
+   any cost incurred by the City that is directly related to the performance of such work or service
+   or (2) terminate the Contract for breach of contract.
+
+7. SUBCONTRACTORS, ASSOCIATES, AND OTHER CONTRACTORS
+
+A. Any subcontractor, outside associates, or other contractors used by the Contractor in
+   connection with Contractor's work under this Contract shall be limited to individuals or firms
+   that are specifically identified by the Contractor in the Contractor's proposal and agreed to by
+   the City. The Contractor shall obtain the City’s Project Manager’s written consent before
+   making any substitution of these subcontractors, associates, or other contractors.
+
+B. The Contractor shall include a flow down clause in all of its subcontracts, agreements with
+   outside associates, and agreements with other contractors. The flow down clause shall cause
+   all of the terms and conditions of this Contract, including all of the applicable parts of the
+   Contract Documents, to be incorporated into all subcontracts, agreements with outside
+   associates, and agreements with other contractors. The flow down clause shall provide clearly
+   that there is no privity of contract between the City and the Contractor's subcontractors,
+   outside associates, and other contractors.
+
+8. KEY PERSONNEL
+
+The key personnel listed in the proposal and/or below will be the individuals used in the
+performance of the work. If any of the listed key personnel leave employment or are otherwise
+not utilized in the performance of the work, approval to substitute must be obtained by the
+Contractor from the City’s Project Manager. Any substitute shall have the same or a higher
+standard of qualifications that the key personnel possessed at the time of Contract award.
+
+
+
+
+R26-069MZ                                                                                         44
+9. START AND CONTINUANCE OF WORK
+
+It is further agreed that the Contractor will start work promptly and continue to work diligently until
+this Contract is completed.
+
+10. APPROPRIATION OF FUNDS
+
+This Contract is expressly made subject to the limitations of the Colorado Constitution and Section
+7-60 of the Charter of the City of Colorado Springs. Nothing herein shall constitute, nor be deemed
+to constitute, the creation of a debt or multi-year fiscal obligation or an obligation of future
+appropriations by the City Council of Colorado Springs, contrary to Article X, § 20, Colo. Const.,
+or any other constitutional, statutory, or charter debt limitation. Notwithstanding any other
+provision of this Contract, with respect to any financial obligation of the City which may arise under
+this Agreement in any fiscal year after the year of execution, in the event the budget or other
+means of appropriation for any such year fails to provide funds in sufficient amounts to discharge
+such obligation, such failure (i) shall act to terminate this Contract at such time as the then-existing
+and available appropriations are depleted, and (ii) neither such failure nor termination shall
+constitute a default or breach of this Contract, including any sub-agreement, attachment,
+schedule, or exhibit thereto, by the City. As used herein, the term “appropriation” shall mean and
+include the due adoption of an appropriation ordinance and budget and the approval of a Budget
+Detail Report (Resource Allocations) which contains an allocation of sufficient funds for the
+performance of fiscal obligations arising under this Contract.
+
+11. CHANGES
+
+The Contractor and the City agree and acknowledge as a part of this Contract that no change
+order or other form or order or directive may be issued by the City which requires additional
+compensable work to be performed, which work causes the aggregate amount payable under the
+Contract to exceed the amount appropriated for this Contract as listed above, unless the
+Contractor has been given a written assurance by the City that lawful appropriations to cover the
+costs of the additional work have been made or unless such work is covered under a remedy-
+granting provision of this Contract. The Contractor and the City further agree and acknowledge
+as a part of this Contract that no change order or other form or order or directive which requires
+additional compensable work to be performed under this Contract shall be issued by the City
+unless funds are available to pay such additional costs, and, regardless of any remedy-granting
+provision included within this Contract, the Contractor shall not be entitled to any additional
+compensation for any change which increases or decreases the Contract completion date, or for
+any additional compensable work performed under this Contract, and expressly waives any rights
+to additional compensation, whether by law or equity, unless, prior to commencing the additional
+work, the Contractor is given a written change order describing the change in Contract completion
+date or the additional compensable work to be performed, and setting forth the amount of
+compensation to be paid, and such change order is signed by the authorized City representative,
+as defined below. The amount of compensation to be paid, if any, shall be deemed to cover any
+and all additional, direct, indirect or other cost or expense or profit of the Contractor whatsoever.
+It is the Contractor's sole responsibility to know, determine, and ascertain the authority of the City
+representative signing any change order under this Contract.
+
+No change, amendment, or modification to this Contract shall be valid unless duly approved and
+issued in writing by the City of Colorado Springs Procurement Services Division. The City shall
+not be liable for any costs incurred by the Contractor resulting from work performed for changes
+not issued in writing by the City of Colorado Springs Procurement Services Division.
+
+
+
+R26-069MZ                                                                                            45
+The following personnel are authorized to sign changes, amendments, or modifications to this
+Contract.
+
+The Department Manager: up to $149,999.99
+The City of Colorado Springs Deputy Chief of Staff: $150,000.00 to $499,999.99
+The City of Colorado Springs Chief of Staff: $500,000.00 to $1,999,999.99
+The Mayor of Colorado Springs: Unlimited
+
+12. ASSIGNMENT
+
+No assignment or transfer by the Contractor of this Contract or any part thereof or of the funds to
+be received thereunder by the Contractor will be recognized unless such assignment has had the
+prior written approval of the City and the surety has been given due notice of such assignment.
+Such written approval by the City shall not relieve the Contractor of the obligations under the
+terms of this Contract. In addition to the usual recitals in assignment contracts, the following
+language must be included in the assignment:
+
+It is agreed that the funds to be paid to the assignee under this assignment are subject to a prior
+lien for services rendered or materials supplied for the performance of the work called for in said
+contract in favor of all persons, firms, or corporations rendering such services or supplying such
+materials.
+
+13. CHOICE OF LAW
+
+This Contract is subject to and shall be interpreted under the law of the State of Colorado, and
+the Charter, City Code, Ordinances, Rules and Regulations of the City of Colorado Springs,
+Colorado, a Colorado home rule city. Court venue and jurisdiction shall be exclusively in the
+Colorado District Court for El Paso County, Colorado. The Parties agree that the place of
+performance for this Contract is deemed to be in the City of Colorado Springs, El Paso County,
+State of Colorado. The Contractor shall ensure that the Contractor and the Contractor's
+employees, agents, officers and subcontractors are familiar with, and comply with, applicable
+Federal, State, and Local laws and regulations as now written or hereafter amended.
+
+14. WORKERS’ COMPENSATION INSURANCE
+
+Contractor shall take out and maintain during the Period of Performance, Colorado Worker's
+Compensation Insurance for the Contractor and all employees of the Contractor. If any service is
+sublet by the Contractor, the Contractor shall require the subcontractor to provide the same
+coverage for the subcontractor and subcontractor’s employees. Workers’ Compensation
+Insurance shall include occupational disease provisions covering any obligations of the Contractor
+in accord with the provisions of the Workers’ Compensation Act of Colorado.
+
+15. INDEMNIFICATION
+
+Contractor agrees that the Contractor shall indemnify, defend and hold harmless the City, its
+officers, employees and agents, from and against any and all loss, damage, injuries, claims,
+cause or causes of action, or any liability whatsoever resulting from, or arising out of, or in
+connection with the Contractor's obligations or actions under this Contract caused by any willful
+or negligent error, omission or act or a failure to observe any applicable standard of care by the
+Contractor or any person employed by it or anyone for whose acts the Contractor is legally liable.
+
+
+
+R26-069MZ                                                                                        46
+In consideration of the award of this Contract, to the extent damages are covered by insurance,
+the Contractor agrees to waive all rights of subrogation against the City, its subsidiary, parent,
+associated and/or affiliated entities, successors, or assigns, its elected officials, trustees,
+employees, agents, and volunteers for losses arising from the work performed by the Contractor
+for the City. The indemnification obligation shall survive the expiration or termination of this
+Contract
+
+16. INDEPENDENT CONTRACTOR
+
+In the performance of the Contractor's obligations under this Contract, it is understood,
+acknowledged and agreed between the parties that the Contractor is at all times acting and
+performing as an independent contractor, and the City shall neither have nor exercise any control
+or direction over the manner and means by which the Contractor performs the Contractor's
+obligations under this Contract, except as otherwise stated within the Contract terms. The City
+shall not provide any direction to the Contractor on the work necessary to complete the project.
+Contractor understands that it is an independent contractor responsible for knowing how to
+perform all work or tasks necessary to complete project. The Contractor understands and agrees
+that the Contractor and the Contractor's employees, agents, servants, or other personnel are not
+City employees. The Contractor shall be solely responsible for payment of salaries, wages, payroll
+taxes, unemployment benefits or any other form of compensation or benefit to the Contractor or
+any of the Contractor's employees, agents, servants or other personnel performing services or
+work under this Contract, whether it is of a direct or indirect nature. Further in that regard, it is
+expressly understood and agreed that for such purposes neither the Contractor nor the
+Contractor's employees, agents, servants or other personnel shall be entitled to any City payroll,
+insurance, unemployment, worker's compensation, retirement or any other benefits whatsoever.
+
+17. APPLICABLE LAW AND LICENSES
+
+In the conduct of the services or work contemplated in this Contract, the Contractor shall ensure
+that the Contractor and all subcontractors comply with all applicable state, federal and City and
+local law, rules and regulations, technical standards or specifications. The Contractor shall qualify
+for and obtain any required licenses prior to commencement of work.
+
+18. PRIOR AGREEMENTS
+
+This is a completely integrated Contract and contains the entire agreement between the parties.
+Any prior written or oral agreements or representations regarding this Contract shall be of no
+effect and shall not be binding on the City. This Contract may only be amended in writing, and
+executed by duly authorized representatives of the parties hereto.
+
+19. INTELLECTUAL PROPERTY
+
+The Parties hereby agree, and acknowledge, that all products, items writings, designs, models,
+examples, or other work product of the Contractor produced pursuant to this Contract are works
+made for hire, and that the City owns, has, and possesses any and all ownership rights and
+interests to any work products of the Contractor made under this Contract, including any and all
+copyright, trademark, or patent rights, and that compensation to the Contractor for Agreement
+and acknowledgment of this intellectual property right section of this Contract is included in any
+compensation or price whatsoever paid to the Contractor under this Contract. It is the intent of
+the parties that the City shall have full ownership and control of the Contractor's work products
+produced pursuant to this Contract, and the Contractor specifically waives and assigns to the City
+
+
+
+R26-069MZ                                                                                          47
+all rights which Contractor may have under the 1990 Visual Artists Rights Act, federal, and state
+law, as now written or later amended or provided. In the event any products, items writings,
+designs, models, examples, or other work product produced pursuant to this Contract is deemed
+by a court of competent jurisdiction not to be a work for hire under federal copyright laws, this
+intellectual property rights provision shall act as an irrevocable assignment to the City by the
+Contractor of any and all copyrights, trademark rights, or patent rights in the Contractor's products,
+items writings, designs, models, examples, or other work product produced pursuant to this
+Contract, including all rights in perpetuity. Under this irrevocable assignment, the Contractor
+hereby assigns to the City the sole and exclusive right, title, and interest in and to the Contractor's
+products, items writings, designs, models, examples, or other work product produced pursuant to
+this Contract, without further consideration, and agrees to assist the City in registering and from
+time to time enforcing all copyrights and other rights and protections relating to the Contractor's
+products, items writings, designs, models, examples, or other work product in any and all
+countries. It is the Contractor's specific intent to assign all right, title, and interest whatsoever in
+any and all copyright rights in the Contractor's products, items writings, designs, models,
+examples, or other work product produced pursuant to this Contract, in any media and for any
+purpose, including all rights of renewal and extension, to the City. To that end, the Contractor
+agrees to execute and deliver all necessary documents requested by the City in connection
+therewith and appoints the City as Contractor's agent and attorney-in-fact to act for and in
+Contractor's behalf and stead to execute, register, and file any such applications, and to do all
+other lawfully permitted acts to further the registration, prosecution, issuance, renewals, and
+extensions of copyrights or other protections with the same legal force and effect as if executed
+by the Contractor; further, the parties expressly agree that the provisions of this intellectual
+property rights section shall be binding upon the parties and their heirs, legal representatives,
+successors, and assigns.
+
+20. WAIVERS
+
+No waiver of default by the City of any of the terms, covenants, and conditions hereof to be
+performed, kept, and observed by the Contractor shall be construed, or shall operate, as a waiver
+of any subsequent default of any of the terms, covenants, or conditions herein contained to be
+performed, kept, and observed by the Contractor.
+
+21. THIRD PARTIES
+
+It is expressly understood and agreed that enforcement of the terms and conditions of this
+Contract, and all rights of action relating to such enforcement, shall be strictly reserved to the
+Parties hereto, and nothing contained in this Contract shall give or allow any such claim or right
+of action by any other or third person or entity on such Contract. It is the express intention of the
+Parties hereto that any person or entity, other than the Parties to this Contract, receiving services
+or benefits under this Contract shall be deemed to be incidental beneficiaries only.
+
+22. TERMINATION
+
+A. Termination for Convenience.
+   By signing this Contract, Contractor represents that it is a sophisticated business and enters
+   into the Contract voluntarily, has calculated all business risks associated with this Contract,
+   and understands and assumes all risks of being terminated for convenience, whether such
+   risks are known or not known. Contractor agrees that the City may terminate this Contract at
+   any time for convenience of the City, upon written notice to the Contractor. Contractor
+   expressly agrees to and assumes the risk that the City shall not be liable for any costs or fees
+
+
+
+R26-069MZ                                                                                            48
+    of whatsoever kind and nature if termination for convenience occurs before Contractor begins
+    any work or portion of the work. Contractor further expressly agrees and assumes the risks
+    that the City shall not be liable for any unperformed work, anticipated profits, overhead,
+    mobilizations costs, set-up, demobilization costs, relocation costs of employees, layoffs or
+    severance costs, administrative costs, productivity costs, losses on disposal of equipment or
+    materials, cost associated with the termination of subcontractors, costs associated with
+    purchase orders or purchases, or any other costs or fees of any kind and nature, if Contractor
+    has started or performed portions of the Contract prior to receiving notice from the City. The
+    City shall be liable only for the portions of work Contractor actually satisfactorily completed up
+    to the point of the issuance of the Notice of Termination for convenience. Upon receipt of this
+    notice the Contractor shall immediately: discontinue all services affected (unless the notice
+    directs otherwise), and deliver to the City all data, drawings, specifications, reports, estimates,
+    summaries, and other information and materials accumulated in performing this Contract,
+    whether completed or in process.
+
+B. Termination for Cause: The occurrence of any one or more of the following events (“Event of
+      Default”) will justify termination for cause:
+    i. Contractor’s failure to perform the work in accordance with the Contract Documents
+       (including, but not limited to, failure to supply sufficient skilled workers or suitable materials
+       or equipment or failure to adhere to the progress schedule as adjusted from time to time.
+   ii. Contractor’s disregard of the laws or regulations of any public body having jurisdiction.
+  iii. Contractor’s disregard of the authority of Project Manager.
+ iv. Contractor’s violation in any material provision of the Contract Documents.
+   v. Contractor’s failure to make prompt payments to its subcontractors, and suppliers of any
+       tier, or laborers or any person working on the work by, through, or under the Contractor or
+       any of them, any all of their employees, officers, servants, members, and agents.
+ vi. Contractor files a petition commencing a voluntary case under the U.S. Bankruptcy Code,
+       or for liquidation, reorganization, or an arrangement pursuant to any other U.S. or state
+       bankruptcy Laws, or shall be adjudicated a debtor or be declared bankrupt or insolvent
+       under the U.S. Bankruptcy Code, or any other federal or state laws relating to bankruptcy,
+       insolvency, winding-up, or adjustment of debts, or makes a general assignment for the
+       benefit of creditors, or admits in writing its inability to pay its debts generally as they become
+       due, or if a petition commencing an involuntary case under the U.S. Bankruptcy Code or an
+       answer proposing the adjudication of Contractor as a debtor or bankrupt or proposing its
+       liquidation or reorganization pursuant to the Bankruptcy Code or any other U.S. federal or
+       state bankruptcy laws is filed in any court and Contractor consents to or acquiesces in the
+       filing of that pleading or the petition or answer is not discharged or denied within sixty (60)
+       Calendar Days after it is filed.
+ vii. A custodian, receiver, trustee or liquidator of Contractor, all or substantially all of the assets
+       or business of Contractor, or of Contractor’s interest in the Work or the Contract, is appointed
+       in any proceeding brought against Contractor and not discharged within sixty (60) Calendar
+       Days after that appointment, or if Contractor shall consent to or acquiesces in that
+       appointment.
+viii. Contractor fails to commence correction of defective work or fails to correct defective work
+       within a reasonable period of time after written notice.
+
+If one or more of the events identified in Paragraphs i-viii above occur, City may give Contractor
+written notice of the event and direct the event be cured. Any such Notice to Cure will provide
+Contractor a minimum of ten (10) calendar days to prepare and submit to the Project Manager a
+plan to correct the Event of Default. If such plan to correct the Event of Default is not submitted
+to the Project Manager within ten (10) days after the date of the written notice or such plan is
+
+
+
+R26-069MZ                                                                                             49
+unacceptable to the City, the City may, give Contractor (and the Surety, if any) written notice that
+Contractor’s services are being terminated for cause. Upon delivery of the termination notice, City
+may terminate the services of Contractor in whole or in part, exclude Contractor from the site, and
+take possession of the work and of all Contractor’s tools, appliances, equipment, and machinery
+at the project site, and use the same to the full extent they could be used by Contractor (without
+liability to Contractor for trespass or conversion), incorporate in the work all materials and
+equipment stored at the site or for which City has paid Contractor but which are stored elsewhere,
+and finish the work as City may deem expedient. In such case, Contractor shall not be entitled to
+receive any further payment until Certificate of Completion of the work. In the event City
+terminates this Contract for Cause and the cost of completing the work exceeds the unpaid
+balance of the Contract price, Contractor shall pay City for any costs of completion which exceed
+the Contract price when combined with all amounts previously paid to Contractor. When
+exercising any rights or remedies under this paragraph City shall not be required to obtain the
+lowest price for the work performed. Should the cost of such completion, including all proper
+charges, be less than the original Contract price, the amount so saved shall accrue to the City.
+Neither the City nor any officer, agent or employee of the City shall be in any way liable or
+accountable to the Contractor or the Surety for the method by which the completion of the said
+work, or any portion thereof, may be accomplished or for the price paid.
+
+Where Contractor’s services have been so terminated by City, the termination will not affect any
+rights or remedies of City against Contractor or Surety then existing or which may thereafter
+accrue. Any retention or payment of moneys due Contractor by City will not release Contractor
+from liability.
+
+C. Termination Notice. Upon receipt of a termination notice, whether for convenience or cause,
+   the Contractor shall immediately: discontinue all services affected (unless the notice directs
+   otherwise), and deliver to the City all data, drawings, specifications, reports, estimates,
+   summaries, and other information and materials accumulated in performing this Contract,
+   whether completed or in process.
+
+D. Removal of Equipment. Except as provided above, in the case of termination of this Contract
+   before completion from any cause whatever, the Contractor, if notified to do so by the City,
+   shall promptly remove any part or all of Contractor's equipment and supplies from the property
+   of the City, failing which the City shall have the right to remove such equipment and supplies
+   at the expense of the Contractor.
+
+23. BOOKS OF ACCOUNT AND AUDITING
+
+The Contractor shall make available to the City if requested, true and complete records, which
+support billing statements, reports, performance indices, and all other related documentation. The
+City’s authorized representatives shall have access during reasonable hours to all records, which
+are deemed appropriate to auditing billing statements, reports, performance indices, and all other
+related documentation. The Contractor agrees that it will keep and preserve for at least seven
+years all documents related to the Contract which are routinely prepared, collected or compiled
+by the Contractor during the performance of this Contract.
+
+The City’s Auditor and the Auditor’s authorized representatives shall have the right at any time to
+audit all of the related documentation. The Contractor shall make all documentation available for
+examination at the Auditor’s request at either the Auditor’s or Contractor's offices, and without
+expense to the City.
+
+
+
+
+R26-069MZ                                                                                         50
+24. COMPLIANCE WITH IMMIGRATION REFORM AND CONTROL ACT OF 1986
+
+Contractor certifies that Contractor has complied with the United States Immigration Reform and
+Control Act of 1986. All persons employed by Contractor for performance of this Contract have
+completed and signed Form I-9 verifying their identities and authorization for employment.
+
+25. LABOR
+
+The Contractor shall employ only competent and skilled workmen and foremen in the conduct of
+work on this Contract. The Contractor shall at all times enforce strict discipline and good order
+among Contractor's employees. The Project Manager shall have the authority to order the
+removal from the work of any person, including Contractor's or any subcontractor’s employees,
+who refuses or neglects to observe any of the provisions of these Plans or Specifications, or who
+is incompetent, abusive, threatening, or disorderly in conduct and any such person shall not again
+be employed on the Project.
+
+In no event shall the City be responsible for overtime pay.
+
+26. GRATUITIES
+
+A. This Contract may be terminated if the Mayor, the Mayor’s designee, and/or the Procurement
+   Services Manager determine, in their sole discretion, that the Contractor or any officer,
+   employee, agent, or other representative whatsoever, of the Contractor offered or gave a gift
+   or hospitality to a City officer, employee, agent or Contractor for the purpose of influencing
+   any decision to grant a City contract or to obtain favorable treatment under any City contract.
+
+B. The terms "hospitality" and "gift" include, but are not limited to, any payment, subscription,
+   advance, forbearance, acceptance, rendering or deposit of money, services, or anything of
+   value given or offered, including but not limited to food, lodging, transportation, recreation or
+   entertainment, token or award.
+
+C. Contract termination under this provision shall constitute a breach of contract by the
+   Contractor, and the Contractor shall be liable to the City for all costs of reletting the contract
+   or completion of the project. Further, if the Contractor is terminated under this provision, or
+   violates this provision but is not terminated, the Contractor shall be subject to debarment
+   under the City's Procurement Regulations. The rights and remedies of the City provided in
+   this clause shall not be exclusive and are in addition to any other rights and remedies provided
+   by law or under this Contract.
+
+27. NON-DISCRIMINATION
+
+A. In accord with section 24-34-402, C.R.S., Title VII of the Civil Rights Act of 1964, Americans
+   with Disabilities Act of 1990 as amended, all applicable federal and state laws, the Contractor
+   will not discriminate against any employee or applicant for employment because of disability,
+   race, creed, color, sex, sexual orientation, gender identity, gender expression, religion, age,
+   national origin, or ancestry.
+
+B. The Contractor agrees to post in conspicuous places, available to employees and applicants
+   for employment, notices to be provided setting forth the provisions of this nondiscrimination
+   clause.
+
+
+
+
+R26-069MZ                                                                                          51
+C. The Contractor will, in all solicitations or advertisements for employees placed by or on behalf
+   of the Contractor, state that all qualified applicants will receive consideration for employment
+   without regard to disability, race, creed, color, sex, sexual orientation, gender identity, gender
+   expression, religion, age, national origin, or ancestry.
+
+28. TECHNOLOGY ACCESSIBILITY
+
+Contractor hereby certifies and guarantees that the products and services, including but not
+limited to any software-as-a-service or online platform, being purchased by City are compliant
+with: (i) the accessibility standards established by the chief information officer of the State of
+Colorado in accord with Section 24-85-103, C.R.S., as may be amended, including Web Content
+Accessibility Guidelines (“WCAG”) 2.1 “Level A” and “Level AA,” or other applicable accessibility
+standards required by the State of Colorado pertaining to those with disabilities, and (ii) any
+federally adopted law or regulation pertaining to technology accessibility for those with disabilities,
+including but not limited to the final rule published by the Department of Justice in the Federal
+Register on April 24, 2024, updating regulations for Title II of the Americans with Disabilities Act
+(ADA), “Nondiscrimination on the Basis of Disability; Accessibility of Web Information and
+Services of State and Local Government Entities,” 28 CFR Part 35, [CRT Docket No. 144; AG
+Order No. 5919-2024], RIN 1190-AA79, as such laws may be amended (together the
+“Accessibility Laws”). Contractor shall provide the City with a completed Voluntary Product
+Accessibility Template (“VPAT”), WCAG Edition, attached hereto as Exhibit __ and incorporated
+herein, that demonstrates compliance with applicable WCAG standards and the Accessibility
+Laws. Contractor shall immediately, or within the timeframe designated by City, resolve and
+remediate all accessibility issues discovered in Contractor’s products and services. All of
+Contractor’s ongoing maintenance, updates, upgrades, fixes, and other changes to the products
+or services shall conform to these requirements and comply with the Accessibility Laws. During
+all periods where Contractor’s products and services do not conform to the Accessibility Laws or
+otherwise have accessibility issues, Contractor shall provide all reasonable accommodations for
+users of the products and services as directed by the City and at no additional charge.
+
+Failure to comply with the Accessibility Laws and accessibility standards or to provide the
+necessary documentation may result in the City, in its sole discretion, terminating the Agreement,
+Statement of Work, Order Form, or other agreement for material breach, without Contractor
+recourse. In the event of such termination by City, Contractor shall refund all amounts paid to
+Contractor under the Agreement or other terminated document. Contractor shall indemnify,
+defend, and hold harmless City and its representatives for any failure, or allegation of failure, of
+the products or services to conform with the applicable accessibility standards and Accessibility
+Laws, including but not limited to any civil claim or suit filed by a person with a disability pursuant
+to Section 24-34-802, C.R.S., as may be amended.
+
+29. ORDER OF PRECEDENCE
+
+Any inconsistency in this Contract shall be resolved by giving precedence in the following order:
+
+A. This Contract document with its terms and conditions
+B. The Statement of Work
+C. Other Appendices, Attachments, Exhibits, or Schedules
+
+30. HEADINGS
+
+
+
+
+R26-069MZ                                                                                            52
+The section headings contained in this Contract are for reference purposes only and shall not
+affect the meaning or interpretation of this Contract.
+
+31. DISPUTES
+
+A. All administrative and contractual disputes arising from or related to this Contract shall be
+      addressed in the following manner:
+   i.    If either Party disputes or disagrees with a Contract term or the other Party’s interpretation
+         of a Contract term or has any other administrative or contractual dispute not addressed in
+         the Unanticipated Circumstances provisions, such Party shall promptly give the other
+         Party written notice of said dispute.
+  ii.    The Parties shall hold a meeting as soon as reasonably possible, but in no event later
+         than thirty (30) calendar days from the initial written notice of the dispute, attended by
+         persons with decision-making authority regarding the dispute, to attempt in good faith to
+         negotiate a resolution of the dispute; provided, however, that no such meeting shall be
+         deemed to vitiate or reduce the obligations and liabilities of the Parties or be deemed a
+         waiver by a Party of any remedies to which such Party would otherwise be entitled unless
+         otherwise agreed to by the Parties in writing.
+ iii.    If, within thirty (30) calendar days after such meeting, the Parties have not succeeded in
+         negotiating a resolution of the dispute, they agree to submit the dispute to non-binding
+         mediation and to bear equally the costs of the mediation.
+ iv.     The Parties will jointly appoint a mutually acceptable mediator. If they fail to do so within
+         twenty (20) calendar days from the conclusion of the negotiation period, they shall each
+         select a mediator. The two mediators will then appoint a third mediator who shall conduct
+         mediation for the Parties as the sole mediator.
+  v.     The Parties agree to participate in good faith in the mediation and negotiations for a period
+         of thirty (30) calendar days. The substantive and procedural law of the State of Colorado
+         shall apply to the proceedings. If the Parties are not successful in resolving the dispute
+         through mediation, then the Parties shall be free to pursue any other remedy afforded by
+         the laws of the State of Colorado.
+ vi.     Until final resolution of any dispute hereunder, the Contractor shall diligently proceed with
+         the performance of this Contract as directed by the City. For purposes of this Contract,
+         termination for convenience shall not be deemed a dispute. The City of Colorado Springs
+         and the Contractor agree to notify each other in a timely manner of any claim, dispute, or
+         cause of action arising from or related to this Contract, and to negotiate in good faith to
+         resolve any such claim, dispute, or cause of action. To the extent that such negotiations
+         fail, the City of Colorado Springs and the Contractor agree that any lawsuit or cause of
+         action that arises from or is related to this Contract shall be filed with and litigated only by
+         the Colorado District Court for El Paso County, CO.
+
+32. DELIVERY
+
+The City may cancel this Contract or any portion thereof if delivery is not made when and as
+specified, time being of the essence in this Contract. Contractor shall pay the City for any loss or
+damage sustained by the City because of failure to perform in accordance with this Contract.
+
+33. PAYMENTS
+
+All invoices shall be sent to the Project Manager identified in this Contract.
+
+
+
+
+R26-069MZ                                                                                             53
+The City will pay the Contractor, upon submission of proper invoices, the prices stipulated in the
+Contract for services rendered and accepted, less any deductions provided in this Contract within
+30 days (Net 30). The City will not pay late fees or interest. Any discount payment terms offered
+on the invoice may be taken by the City.
+
+Each invoice must contain at least the following information:
+
+Contract number, issued purchase order number, invoice number, invoice date, timeframe
+covered by invoice, type and amount of labor and materials used for that time period, dollar
+amount in unit price, extended price, and total value of invoice.
+
+If T&M
+
+The City will make payments for services on a monthly basis for services performed during the
+previous month in accordance with this Contract. All labor Invoices shall include labor categories,
+rates, hours worked, and total amounts per category. All labor categories and rates charged must
+be included in this Contract. No other categories or rates will be allowed or payable. All labor
+invoices are subject to City approval.
+
+Materials will be payable on a reimbursable basis with no additional profit, fee, overhead,
+handling, or General and Administrative (G&A) costs. All costs for materials shall be approved by
+the City Contracts Specialist before the costs are incurred and payable.
+
+The City will pay the Contractor, upon submission of proper invoices, the prices stipulated in the
+Contract for services rendered and accepted, less any deductions provided in this Contract within
+30 days (Net 30). The City will not pay late fees or interest. Any discount payment terms offered
+on the invoice may be taken by the City.
+
+34. INSPECTION OF SERVICES
+
+The Contractor is responsible for performing or having performed all inspections and tests
+necessary to substantiate that the services furnished under this Contract conform to Contract
+requirements, including any applicable technical requirements for specified manufacturers’ parts.
+This clause takes precedence over any City inspection and testing required in the Contract’s
+specifications, except for specialized inspections or tests specified to be performed solely by the
+City.
+
+A. Definition of “services”, as used in this clause, includes services performed, workmanship,
+   and material furnished or utilized in the performance of services.
+
+B. The Contractor shall provide and maintain an inspection system acceptable to the City
+   covering the services under this Contract. Complete records of all inspection work performed
+   by the Contractor shall be maintained and made available to the City during Contract
+   performance and for as long afterwards as the Contract requires.
+
+C. The City has the right to inspect and test all services called for by the Contract, to the extent
+   practicable at all times and places during the term of the Contract. The City will perform
+   inspections and tests in a manner that will not unduly delay the work.
+
+D. If the City performs inspections or test on the premises of the Contractor or a subcontractor,
+   the Contractor shall furnish, and shall require subcontractors to furnish, at no increase in
+
+
+
+R26-069MZ                                                                                         54
+   Contract price, all reasonable facilities and assistance for the safe and convenient
+   performance of these duties.
+
+35. SECURITY
+
+The City maintains security requirements regarding access to City buildings and other City
+workplaces and worksites on City property. All Contractor personnel accessing City buildings,
+workplaces, or worksites, may be required to produce a valid, Government issued picture
+identification. Contractor personnel lacking such identification may not be allowed access to such
+sites. No costs incurred by the Contractor due to City security requirements shall be allowable or
+payable under this Contract.
+
+36. TIME IS OF THE ESSENCE
+
+In as much as the Contract concerns a needed or required service, the terms, conditions, and
+provisions of the Contract relating to the time of performance and completion of work are of the
+essence of this Contract. The Contractor shall begin work on the day specified and shall prosecute
+the work diligently so as to assure completion of the work within the number of calendar days or
+date specified, or the date to which the time for completion may have been extended.
+
+
+37. EMPLOYMENT OF LABOR
+
+The Contractor shall comply with and defend and hold the City harmless from any violation of all
+laws and lawful rules and regulations, both of the State of Colorado and of the United States,
+relating to Workmen's Compensation, unemployment compensation, Social Security, payment for
+overtime, and all other expenses and conditions of employment under this Contract.
+
+38. SALES TAX
+
+The Contractor must have a tax-exemption certificate from the Colorado Department of Revenue
+for this project. The certificate does not apply to City of Colorado Springs Sales and Use Tax
+which shall be applicable. The tax-exempt project number and the exemption certificate only
+applies to County, PPRTA (Pikes Peak Rural Transportation Authority), and State taxes when
+purchasing construction and building materials to be incorporated into this project.
+
+Furthermore, the exemption does not include or apply to the purchase or rental of equipment,
+supplies or materials that do not become a part of the completed project or structure. Such
+purchases and rentals are subject to full applicable taxation.
+
+All contracts with subcontractors must include the City of Colorado Springs Sales and Use Tax
+on the work covered by the Contract, and other taxes as applicable.
+
+Note: For all equipment, materials and supplies incorporated into the work purchased from
+vendors or suppliers not licensed to collect City Sales Tax (i.e. out of state suppliers, etc.), City
+Use Tax is due and payable to the City. The Contractor shall execute and deliver and shall cause
+the Contractor’s subcontractors to execute and deliver to the City Sales Tax Office, the
+appropriate ST forms as designated by the City Sales Tax Office. These forms shall list all said
+equipment, materials and supplies and the corresponding use tax due, along with payment for
+said taxes. Any outstanding taxes due may be withheld from the final payment due the Contractor
+and may result in suspension of Contractor from bidding on City projects.
+
+
+
+R26-069MZ                                                                                          55
+Forms and instructions can be downloaded at https://coloradosprings.gov/sales-tax. Questions
+can be directed to the City Sales Tax Division at (719) 385-5903 or
+SalesTax@coloradosprings.gov.
+Our Registration Numbers are as follows:
+City of Colorado Springs
+Federal I.D.: 84-6000573
+Federal Excise: A-138557
+State Sales Tax: 98-03479
+
+The Contractor's payment or exemption of State of Colorado, El Paso County and City Sales and
+Use Taxes shall be as specified herein.
+
+39. SEVERABILITY
+
+If any terms, conditions, or provisions of this Contract shall be held unconstitutional, illegal, or
+void, such finding shall not affect any other terms, conditions, or provisions of this Contract.
+
+40. LIABILITY OF CITY EMPLOYEES
+
+All authorized representatives of the City are acting solely as agents and representatives of the
+City when carrying out and exercising the power or authority granted to them under the Contract.
+There shall not be any liability on them either personally or as employees of the City.
+
+41. USE OF CITY NAME OR LOGO
+
+Except as otherwise provided in this Contract, the Contractor shall not refer to this Contract or the
+City of Colorado Springs in any advertising or promotions in such a manner as to state or imply
+that the product or service provided is endorsed or preferred by the City of Colorado Springs, its
+employees, or its Departments, or is considered by these entities to be superior to other products
+or services. Any use of the name or logo of the City of Colorado Springs in advertising or
+promotions must be approved in writing by the City of Colorado Springs Contracts Specialist
+assigned to the Contract prior to such use.
+
+42. TRAVEL
+
+If travel expenses are included as a line item in this Contract, all travel expenses incurred and
+billable by the Contractor are subject to City approval. Air travel shall be limited to the round trip
+"economy coach" fare. Travel from the Colorado Springs Airport is encouraged. Unless there are
+extenuating circumstances, the Contract should take advantage of lower airfares by purchasing
+tickets more than 14 days in advance of travel. In-state travel by air must be more economical
+than travel by private vehicle. Use of a private vehicle may be reimbursed per mile at the current
+rate published by the IRS annually. Short-term parking, long-term parking or cab fare associated
+with airport departure and arrival may be allowable expenses. Valet parking will not be allowed
+unless it is the least expensive or only option. Car rental rates may be reimbursed for car rentals
+no greater than the intermediate or standard classification. The City will not reimburse any other
+travel methods or expenses. The City will pay for lodging, meals, and miscellaneous expenses
+on a per diem basis only, in accordance with the current per diem rates published by the IRS
+annually. The City will not pay for Contractor expenses exceeding the per diem rates. Receipts
+for all reimbursable expenses must be provided with the Contractor’s invoice.
+
+
+
+
+R26-069MZ                                                                                           56
+43. ELECTRONIC SIGNATURES
+
+This Agreement and all other documents contemplated hereunder may be executed using
+electronic signatures with delivery via facsimile transmission, by scanning and transmission of
+electronic files in Portable Document Format (PDF) or other readily available file format, or by
+copy transmitted via email, or by other electronic means and in one or more counterparts, each
+of which shall be (i) an original, and all of which taken together shall constitute one and the same
+agreement, (ii) a valid and binding agreement and fully admissible under state and federal rules
+of evidence and (iii) enforceable in accordance with its terms.
+
+44. APPENDICES
+
+The following Appendices are made a part of this Agreement:
+
+1.   Appendix A – Additional Terms and Conditions
+2.   Appendix B – Contractor’s Proposal,
+3.   Appendix C – Statement of Work.
+4.   Appendix D – Project Schedule
+5.   Appendix E – Insurance Requirements
+
+
+
+
+R26-069MZ                                                                                         57
+CONTRACT SIGNATURE PAGE
+
+IN WITNESS WHEREOF, the parties have caused these presents to be executed on the day and
+the year first above written.
+
+This Contract is executed in one (1) original copy.
+
+ THE CITY OF COLORADO SPRINGS, COLORADO:
+
+
+
+
+ SECOND PARTY:
+
+ SAMPLE CONTRACT ONLY
+ Corporate Name
+
+
+ Signature                                    Date
+
+
+ Title
+
+
+
+
+R26-069MZ                                                                             58
+EXHIBIT 3      SAMPLE EVALUATION SCORESHEET
+
+Proposer’s Name:              ________________________________
+
+Evaluator’s Name:             ________________________________
+
+Project Name/RFP#:            ________________________________
+
+
+                   RFP EVALUATION CRITERIA DESCRIPTION                                   SCORE
+
+ 1.     TECHNICAL AREA
+
+ The Offeror must explain its overall solution, considering the scope of work or
+ statement of work provided. The content must include, but not necessarily be
+ limited to, the following information.
+ A.      UNDERSTANDING OF AND COMPLIANCE WITH TECHNICAL
+ REQUIREMENTS
+ In the Technical Area, the Offeror should address each work area in sufficient detail
+ to demonstrate a clear and full understanding of the work. The proposal should not
+ merely parrot the requirements of the RFP. Further, the Offeror should provide
+ evidence of sufficient planning to ensure the work is completed on schedule and
+ within budget.
+
+ Consider the following questions.
+
+ 1. Does the proposal demonstrate a firm understanding of the requirements and
+ goals of the Statement of Work, as well as industry standards and reasonable
+ expectations for a company in the industry?
+ 2. Does the proposal fully and completely address each requirement and goal of
+ the Statement of Work?
+ 3. Does the proposal provide solutions to indicate that requirements and goals will
+ be met on schedule?
+ 4. Does the technical solution seem realistic?
+ 5. Does it generally appear that the Offeror knows and thoroughly understands the
+ business and requirement?
+
+
+ COMMENTS:
+
+ B.     PROJECT APPROACH
+ In the Technical Area, the Offeror should clearly present proposed solutions and
+ indicate that it has performed adequate planning to accomplish tasks as defined in
+ the Statement of Work. Innovations, efficiencies, and detailed specifics are all
+ encouraged.
+
+ The Offeror must at least address the following areas:
+
+ 1. Schedule Management. Offeror must approach to schedule management
+ including updating and reporting progress of the work.
+
+
+
+R26-069MZ                                                                                  59
+ 2. Quality Control. Offeror must discuss quality control plan, processes and
+ approach to ensure that the City receives a quality product.
+ 3. Safety. Offeror must discuss approach and commitment to safety for its workers,
+ the public, and City employees, if services are accomplished on a City site.
+ 4. Offeror must discuss potential issues it foresees with this project and how Offeror
+ would make adjustments if encountered.
+
+ Consider the following questions.
+
+ 1. Does the proposal include a complete plan to accomplish each requirement,
+ including subcontracting (if applicable)?
+ 2. Does the proposal demonstrate that appropriate and qualified personnel and
+ equipment will be provided to carry out the requirement?
+ 3. Is the proper level of effort directed toward each requirement? Does the level of
+ effort look unrealistically low or unreasonably high?
+
+ COMMENTS
+
+ Sum of Ratings in Management Area (Add numbers in Sections 1.A. and 1.B.)
+ 2.     MANAGEMENT AREA
+
+The Offeror must explain its method of managing the work to be performed. The
+content must include, but no necessarily be limited to, the following information.
+A.      PROJECT MANAGEMENT CONTROLS
+In In the Management Area, the Offeror should provide a plan of operation, to
+include management of personnel, workload, schedule, and budget. It should also
+include an organization chart which demonstrates clear and effective lines of
+authority, responsibility, and communication for management, supervisory, and
+technical personnel. The plan should address which job classification or personnel
+will be assigned to each task and how that determination is made. Basic human
+resource management concepts should be addressed, including hiring, firing,
+discipline, incentive plans, etc. If the Offeror plans to subcontract more than 10%
+of the work, include information on how the Offeror plans to manage its
+subcontractors.
+
+ The Offeror shall provide a detailed schedule for the project showing the key
+ activities and how they will meet or better the County’s timeframe and maximize
+ efficiency to provide the best value to the City and minimize impacts to the public.
+ The schedule shall be based on the Offeror’s understanding and approach to the
+ work as addressed above.
+
+ Consider the following questions.
+
+ 1. Does the proposal address the issues above in sufficient detail to demonstrate a
+ sophisticated and mature management control system?
+ 2. Are program management controls consistent with the technical portion of the
+ proposal, especially regarding schedule and level of effort?
+ 3. Does the plan and controls indicate that the Offeror will obtain, keep, and
+ efficiently utilize high quality personnel?
+ 4. Does the offer address corrective actions?
+
+
+
+R26-069MZ                                                                                 60
+ 5.      Does the proposal explain how the Offeror will remain within schedule and
+ budget and provide a project timeline and implementation plan?
+ 6.      Does the proposal show that the Offeror has ability for alarm detection and
+ City notification as shown in SOW?
+ 7.      Does the proposal show that the Offeror has the proper customer service
+ and response as shown in SOW?
+
+COMMENTS:
+B.      PAST PERFORMANCE/RELEVANT EXPERIENCE
+In the Management Area, the Offeror should provide at least three references or
+contracts demonstrating that it successfully provided services/products same or
+similar to those required in the RFP. The proposal should adequately explain how
+the projects were completed on schedule and within budget.
+
+ Consider the following questions.
+
+ 1. Does the proposal include at least three references or past performance
+ citations?
+ 2. Are the references or past performance citations relevant to the requirements of
+ the Statement of Work of the RFP?
+ 3. Does the Offeror explain how they were successful on the projects provided as
+ past performance?
+ 4. Does the Offeror apply the past performance to the City requirement in such a
+ way as to demonstrate added value due to experience?
+
+ COMMENTS
+
+C.      KEY PERSONNEL
+In the Management Area, resumes must be provided for all personnel considered
+key, as required by the RFP. It is highly recommended that the Offeror provide
+sufficient content and detail to answer completely the following questions.
+Resumes do not count toward the page limitation. Explain how the key personnel
+were related to the projects cited as relevant past performance.
+
+ Consider the following questions.
+
+ 1. Does the Offeror provide complete resumes, including education, experience,
+ background information, accomplishments, and other pertinent information?
+ 2. Does the Offeror provide resumes for all key personnel, as required by the RFP?
+ 3. Do the resumes demonstrate adequate professional, technical, and
+ management levels to accomplish the work effectively and efficiently?
+
+
+ COMMENTS:
+
+ Sum of Ratings in Management Area (Add numbers in Sections 2.A., 2.B and 2.
+ C.)
+ 3.      PRICE/COST AREA
+ In the Price Area, the Offeror should provide a detailed breakdown of the price for
+ each year of performance. The price must be fully loaded/all-inclusive and include
+
+
+
+R26-069MZ                                                                              61
+ unit cost for material, labor, other direct costs (e.g. travel), indirect costs (i.e.
+ overhead and general and administrative costs), and profit/fee. Offers must include
+ sufficient detail to allow insight into the fairness and reasonableness of the price. If
+ the contract type will be T&M, labor categories, labor rates, separated profit, and
+ estimated material costs must be included in detail.
+
+ In addition, although price may not be the most important factor, it is still very
+ important to the City of Colorado Springs. The Offeror’s pricing must be competitive
+ as compared to the budget amount, market pricing in the industry, and the pricing
+ of the other Offerors.
+
+ Consider the following questions:
+
+ 1. How does the price compare to the industry competition?
+ 2. If low, is it unrealistically low?
+ 3. If high, is there demonstrated added value for the additional cost?
+ 4. Can you see how the price was built? If so, do the costs look appropriate for the
+ task?
+ 5. Does the Offeror leave applicable costs out of the calculations? For instance,
+ some will say travel is not included and will be an extra cost. This should be
+ considered when comparing to other Offerors.
+ 6. Are there additional costs not addressed that the City would incur if the Offeror
+ were awarded the contract? If so, include those costs when comparing to the
+ budget amount and the competition.
+
+ COMMENTS:
+
+ Total Price/Cost Area (Insert number from Section 3 evaluation above):
+ 4.     PROPOSAL PRESENTATION
+ Presentation is an important factor. Offerors should provide a highly professional
+ product, which is complete, accurate, easily understood, and effectively presented.
+
+ COMMENTS:
+ EXCEPTIONS PROPOSED
+ What (if any) exceptions (redlines to our terms and conditions) were proposed? Are
+ they acceptable?
+                                                                                            Pass/Fail
+ COMMENTS:
+ INSURANCE EXCEPTIONS PROPOSED
+ What (if any) exceptions (redlines to our insurance terms and conditions) were
+ proposed? Are they acceptable?
+                                                                                            Pass/Fail
+ COMMENTS:
+
+
+
+ TOTAL SCORE – Add Evaluation Scores from Sections 1-4. The sum is the
+                                                                       Total Score:
+ total score.
+
+
+
+
+R26-069MZ                                                                                        62
+                             SECTION VI – APPENDICES
+
+6.0    APPENDICES
+
+Appendix A   Price Sheet
+Appendix B   Scope of Work
+
+
+
+
+R26-069MZ                                              63
+APPENDIX A – PRICE SHEET
+
+PLEASE SUBMIT APPENDIX A – PRICE SHEET IN EXCEL FORMAT
+
+PLEASE ENTER TOTAL COST IN BIDNET PRICE SHEET
+
+
+
+
+R26-069MZ                                                64
+APPENDIX B – SCOPE OF WORK
+
+B.1    PURPOSE AND INTENT
+
+Provide a complete, operational, and maintainable building automation system (BAS)
+modernization for the central heating-water system, chilled-water system, principal air-handling
+unit, supervisory network, and associated field devices. The work shall migrate obsolete controls
+toward current, supported, open-protocol technology while preserving serviceable equipment
+designated for reuse.
+
+The successful controls contractor shall furnish all labor, supervision, design, engineering, project
+management, submittals, controllers, input/output modules, sensors, actuators, interfaces,
+licenses, programming, graphics, low-voltage wiring, startup, functional testing, documentation,
+training, and warranty necessary for a complete system, whether or not every incidental item is
+individually listed.
+
+B.2    PRICE STRUCTURE
+
+ Price Structure                                   Required Treatment
+ Base                                              Supervisory/network modernization; heating-
+                                                   water controls; chilled-water controls; AHU
+                                                   controls; graphics, programming,
+                                                   commissioning, training, and closeout.
+ Alternate One (1)                                 Replace three existing legacy supervisory
+                                                   JACEs with current Niagara N4-compatible
+                                                   supervisory controllers, if not included in the
+                                                   bidder’s base architecture.
+ Alternate Two (2)                                 VAV controller modernization by floor,
+                                                   separately priced for basement and Floors 1
+                                                   through 7.
+ Unit Prices                                       Hourly labor rates, material markup, individual
+                                                   controller/device replacement prices and after
+                                                   hours rate
+
+B.3    EXISTING CONDITIONS AND VERIFICATION
+
+A. Existing BAS components may include a Johnson Controls Metasys front end, Tridium
+Niagara/R2 or N4 supervisory devices, legacy TAC controllers, LonWorks field controllers,
+BACnet devices, and existing hardwired controls. The owner shall confirm the authoritative
+supervisory platform during design review.
+
+B. Perform a detailed field survey before submittals. Verify controller quantities, point counts,
+device condition, actuator type, available transformer capacity, communication topology, wiring
+condition, valve/damper operation, VFD and equipment interface compatibility, and available
+panel space.
+
+C. Review existing control drawings, sequences, graphics, databases, and network information
+made available by the owner.
+
+
+
+
+R26-069MZ                                                                                          65
+D. Identify discrepancies before fabrication. Proposal allowances shall not relieve the contractor
+from providing a functional system for the defined equipment and sequences.
+
+E. Test devices and wiring designated for reuse. Notify the owner in writing of failed items before
+replacement; replace only through approved change order unless expressly included.
+
+B.4    OPEN-SYSTEM AND INTEROPERABILITY REQUIREMENTS
+
+A. New field controllers shall be current-production, freely programmable BACnet controllers
+using BACnet/IP or BACnet MS/TP. BACnet Testing Laboratories (BTL) listing is preferred.
+
+B. New supervisory equipment shall communicate with the owner’s selected enterprise front end
+using
+documented, non-proprietary protocols. Gateway use shall be disclosed and minimized.
+
+C. The completed installation shall not depend on unsupported LonWorks communications for
+new work. Existing LonWorks segments may remain temporarily only where expressly approved
+by the owner and separately identified.
+
+D. Provide all required device, point, driver, supervisor, graphics, history, alarm, and integration
+licenses. Disclose license limits and all future subscription or renewal costs.
+
+E. Provide owner-level credentials, editable controller programs, graphics source files, databases,
+backups, and all project-specific intellectual property at closeout.
+
+F. The owner shall have unrestricted access to schedules, alarms, trends, setpoints, graphics,
+and authorized overrides without a mandatory service agreement.
+
+B.5    SUPERVISORY AND NETWORK ARCHITECTURE
+
+A. Provide one or more current, supported supervisory controllers sized for the Base Bid and
+identified future expansion. Mount new equipment in listed enclosures adjacent to existing control
+panels where practical.
+
+B. Maintain the existing JACE panel or other supervisory equipment in service unless replacement
+is included in the accepted bid or alternate.
+
+C. Integrate the new controls with the owner-designated Metasys, Niagara N4, or other enterprise
+front end confirmed during design review.
+
+D. Provide BACnet routers, switches, network power supplies, repeaters, and communication
+wiring required for a reliable system.
+
+E. Provide browser-based user access, scheduling, alarm management, historical trending,
+adjustable setpoints, equipment summaries, and operator overrides.
+
+F. Configure email alarm routing when the owner supplies an accessible mail service. Coordinate
+network addressing and cybersecurity requirements with owner IT.
+
+
+
+
+R26-069MZ                                                                                         66
+G. Owner/IT shall provide network drops, IP addresses, internet/VPN service, firewall rules, and
+external remote access infrastructure. The controls contractor shall provide and document BAS-
+side configuration.
+
+H. Existing and new floor-plan graphics shall be migrated or recreated as necessary. All new
+system graphics shall display live data, operating mode, commands, statuses, alarms, schedules,
+trends, and setpoints.
+
+B.6    HEATING WATER SYSTEM – BASE AWARD
+
+B.6.1 Controller and Panel
+
+A. Remove the existing TAC MNL-800 or equivalent legacy controller in the penthouse and install
+a new programmable BACnet controller with sufficient input/output capacity and spare capacity
+for the defined system.
+
+B. Reuse the existing enclosure and transformer only after verifying condition, listing, capacity,
+and code compliance. Reconfigure the panel and provide relays, terminal blocks, power supplies,
+labels, and accessories as required.
+
+C. Identify, disconnect, test, and re-terminate existing field wiring. Provide new wiring where
+required for new devices or interfaces.
+
+B.6.2 Controlled and Monitored Equipment
+
+A. Reuse and verify start/stop commands, status relays/current switches, and associated wiring
+for four boiler pumps and two heating-water primary pumps.
+
+B. Repair or replace the boiler enable relay where specifically identified in the accepted bid;
+provide BAS enable/disable control and proof/alarm monitoring.
+
+C. Replace six existing well-mounted water-temperature sensors. Reuse serviceable thermowells
+and control wiring.
+
+D. Provide one new outdoor-air temperature and relative-humidity sensor with weather shield and
+appropriate mounting.
+
+E. Remove the existing boiler LonWorks interface and provide a compatible BACnet interface.
+Include manufacturer coordination and new communication wiring. Integrate available operating
+status, enable, alarm, temperature, setpoint, and diagnostic points.
+
+F. Remove four existing pneumatic boiler-valve actuators and install new electric actuators on the
+existing valve bodies. Verify torque, stroke, close-off, linkage, signal, power, and fail position. Cap
+abandoned pneumatic tubing and provide new control and low-voltage power wiring.
+
+B.6.3 Heating Water Sequence
+
+A. Provide schedules, outdoor-air lockout, lead/lag rotation, pump staging, proof-of-flow/status
+logic, boiler enable, valve control, minimum run/off timers, alarm handling, and failure recovery
+appropriate to the installed plant.
+
+
+
+
+R26-069MZ                                                                                            67
+B. Trend supply/return temperatures, outdoor conditions, pump commands/statuses, boiler
+enable/status/alarm, valve commands/feedback where available, and operator-adjustable
+setpoints.
+
+B.7    CHILLED WATER SYSTEM – BASE AWARD
+
+B.7.1 Controller and Panel
+
+A. Provide a dedicated programmable BACnet controller or approved input/output expansion
+connected to the heating-water controller. The selected arrangement shall provide adequate
+capacity, serviceability, isolation, and spare points.
+
+B. Reuse the existing enclosure, transformer, relays, current switches, and serviceable wiring
+after verification; provide all additional panel components required.
+
+B.7.2 Controlled and Monitored Equipment
+
+A. Reuse and verify the start/stop command, status relay/current switch, and associated wiring
+for one condenser-water pump and one chilled-water pump.
+
+B. Replace four well-mounted temperature sensors: chilled-water supply and return and
+condenser-water supply and return. Reuse serviceable wells and wiring.
+
+C. Remove the LonWorks interface from each of three chillers and provide one compatible
+BACnet interface per chiller. Include new communication wiring and manufacturer coordination.
+Integrate available command, status, alarm, temperature, pressure, capacity, setpoint, and
+diagnostic points.
+
+D. Remove one pneumatic cooling-tower valve actuator and install a new electric actuator on the
+existing valve body. Verify torque, stroke, close-off, linkage, signal, power, and fail position. Cap
+pneumatic tubing and provide control and low-voltage power wiring.
+
+B.7.3 Chiller Optimization
+
+A. Provide a digital optimization sequence coordinating chillers, chilled-water pump, condenser-
+water pump, cooling-tower valve, and available plant data.
+
+B. Include adjustable staging thresholds and delays, lead/lag rotation, minimum run/off times,
+demand limiting, equipment availability, alarm-based failure recovery, and orderly
+shutdown/restart.
+
+C. Submit the detailed sequence for owner review before programming. Provide a plant graphic
+with live data, setpoints, schedules, trends, alarms, and optimization status.
+
+B.8    AIR HANDLING UNIT – BASE AWARD
+
+B.8.1 Controller and Panel
+
+A. Remove the existing TAC MNL-800 or equivalent controller and provide a programmable
+BACnet controller with input/output modules sufficient for all listed points, interlocks, and
+sequences.
+
+
+
+R26-069MZ                                                                                          68
+B. Reuse the existing panel, transformer, relays, current switches, and serviceable field wiring
+after verification. Reconfigure and label the panel as required.
+
+B.8.2 Sensors, Safeties and Status Points
+
+A. Replace return-air, mixed-air, preheat-coil discharge-air, and discharge/supply-air temperature
+sensors; reuse serviceable wiring.
+
+B. Replace the return-air humidity sensor and reuse serviceable wiring.
+
+C. Reuse, test, and calibrate the supply-air static-pressure transmitter and the building-pressure
+sensing arrangement, including indoor and atmospheric references.
+
+D. Reuse and verify nine existing CO₂ sensors: one in the supply-air duct and one on each level
+from basement through seventh floor.
+
+E. Reuse and functionally test the supply-air high-pressure limit, return-air high-pressure limit,
+filter differential pressure switch, and low-temperature limit. Verify alarm and shutdown/interlock
+actions.
+
+F. Monitor the existing supply- and return-air smoke-detector dry contacts and verify required
+AHU shutdown interlocks. Fire-alarm certification and life-safety testing remain by the licensed
+fire-alarm contractor unless specifically included.
+
+B.8.3 Actuators and Equipment Interfaces
+
+A. Remove eight pneumatic damper actuators and install new electric actuators on the existing
+dampers. Verify damper condition, torque, stroke, linkage, signal, power, and fail position. Cap
+abandoned pneumatic tubing.
+
+B. Remove one pneumatic AHU heating-water valve actuator and two pneumatic unit-heater valve
+actuators; install new electric actuators on existing valve bodies and cap abandoned pneumatic
+tubing.
+
+C. Reuse and verify command/status relays and wiring for two unit-heater fans.
+
+D. Reuse four existing VFDs. Remove each VFD LonWorks card and provide a compatible
+BACnet interface for each VFD, including new communication wiring and integration of start/stop,
+speed command, speed feedback, status, alarm, current, frequency, and available diagnostics.
+
+E. Hardwired VFD command, safety, or fallback control may be provided where appropriate, but
+shall not replace the required BACnet integration unless approved as a listed alternate.
+
+B.8.4 AHU Sequence and Optimization
+
+A. Provide occupied/unoccupied schedules, optimal start/stop, morning warm-up, temperature
+control, economizer/mixed-air control, ventilation/CO₂ logic, building-pressure control, duct-static-
+pressure control, filter alarms, freeze protection, smoke shutdown, pressure-limit shutdown, and
+alarm/failure recovery.
+
+
+
+
+R26-069MZ                                                                                          69
+B. Provide supply/discharge-air temperature reset and duct-static-pressure reset based on VAV
+demand where sufficient terminal data are available. If VAV data are not available under the Base
+Award, provide an approved fallback strategy and enable full reset logic when the VAV alternate
+is implemented.
+
+C. Provide an AHU diagrammatic graphic with live values, setpoints, schedules, trends, alarms,
+operating mode, and manual overrides.
+
+B.9    ALTERNATE ONE (1) LEGACY SUPERVISORY CONTROLLER REPLACEMENT
+
+Provide a separate price to replace three existing Tridium R2 JACEs or other identified obsolete
+supervisory controllers with current, supported Niagara N4-compatible supervisory controllers,
+sized for all existing connected systems and planned BACnet expansion.
+
+A. Recreate or migrate existing control logic, schedules, alarms, trends, graphics, users, and
+integrations.
+
+B. Connect the new supervisory controllers to the owner-designated N4 Supervisor or enterprise
+platform.
+
+C. Provide all required licenses, routers, switches, drivers, database work, testing, backups, and
+owner credentials.
+
+D. Sequence replacements to maintain building operation; coordinate any required outages with
+the owner.
+
+E. Identify whether these alternate duplicates any supervisory equipment included in the Base
+Award and provide a clear deduct/add relationship.
+
+B.10   ALTERNATE TWO (2) VAV CONTROLLER MODERNIZATION
+
+Provide separate, additive prices by floor for replacement of legacy VAV controllers. Quantities
+are subject to field verification. Pricing shall be separable so the owner may award any
+combination of floors.
+
+ Area                                             Reference Quantity
+ Basement                                         14
+ Floor 1                                          23
+ Floor 2                                          27
+ Floor 3                                          22
+ Floor 4                                          23
+ Floor 5                                          23
+ Floor 6                                          25
+ Floor 7                                          24
+
+A. Provide one new BACnet controller for each VAV, with a new space-temperature sensor, local
+setpoint adjustment, timed override button, airflow measurement and setpoint, damper
+command/position, and new discharge-air temperature sensor.
+
+B. Reuse existing control transformers where serviceable and adequately sized.
+
+
+
+
+R26-069MZ                                                                                       70
+C. Reuse and control existing baseboard heating valves where applicable. Reference quantity:
+26 VAVs, subject to field verification.
+
+D. Reuse existing return-air CO₂ sensors where applicable. Reference quantity: eight VAVs,
+subject to field verification.
+
+E. Provide BACnet communication wiring along practical existing routes. Bidder shall identify
+whether BACnet/IP, BACnet MS/TP, or an approved hybrid topology is proposed and include all
+switches, routers, power supplies, and licenses.
+
+F. Provide graphical floor plans with room temperature, setpoint, occupancy, airflow, damper
+position, heating command, CO₂ where applicable, alarms, and trends.
+
+G. Use terminal damper position and space-temperature deviation to support AHU discharge-
+temperature and static-pressure reset optimization.
+
+H. Controllers removed from completed floors shall be turned over to the owner as serviceable
+spare parts unless the owner directs otherwise.
+
+B.11   PROGRAMMING, GRAPHICS, ALARMS AND TRENDS
+
+A. Submit written sequences of operation and a complete point list for approval before
+programming.
+
+B. Clearly distinguish measured values, commanded values, network values, and software-
+calculated points.
+
+C. Provide adjustable setpoints, alarm limits, delays, deadbands, schedules, lead/lag selections,
+and reset parameters appropriate for owner operation.
+
+D. Configure trends for critical temperatures, humidity, pressures, CO₂, commands, statuses,
+speeds, alarms, plant staging, and energy-optimization variables. Submit proposed sample
+intervals and retention periods.
+
+E. Provide operator graphics for the network, HWS, CHWS, AHU, and awarded VAV floors.
+Graphics shall use consistent navigation, naming, units, colors, and alarm conventions.
+
+F. Provide safe response to loss of power, loss of communication, failed sensors, failed proof,
+equipment alarms, and supervisory-controller restart.
+
+G. Configure email alarm routing when the owner supplies an accessible mail service. Coordinate
+network addressing and cybersecurity requirements with owner IT.
+
+B.12   ELECTRICAL AND INSTALLATION REQUIREMENTS
+
+A. Provide all Class 2/low-voltage control wiring and low-voltage actuator power wiring. Provide
+transformers and power supplies required for controls equipment.
+
+B. New 120-volt branch circuits, disconnects, and full line-voltage power wiring are by the
+electrical contractor unless expressly included. The controls bidder shall identify every required
+line-voltage connection.
+
+
+
+R26-069MZ                                                                                       71
+C. Interior exposed wiring shall be installed in EMT. Concealed wiring may use code-compliant
+plenum-rated cable where permitted. Wiring above accessible ceilings shall be independently
+supported and installed neatly.
+
+D. Provide grounding, bonding, surge protection recommended by the controls manufacturer, and
+network isolation required for reliable operation. Identify UPS or enhanced lightning protection as
+a separately priced option if not included.
+
+E. Provide permanent labels for panels, controllers, devices, terminals, cables, and network
+segments. Update panel directories and drawings.
+
+F. Comply with applicable electrical, mechanical, building, fire, energy, and cybersecurity
+requirements.
+
+B.13   COORDINATION AND WORK BY OTHERS
+
+A. Coordinate equipment-interface installation with boiler, chiller, VFD, mechanical, electrical, fire-
+alarm, IT, and test-and-balance representatives as applicable.
+
+B. Mechanical contractor shall install new piping accessories, valve bodies, thermowells, pressure
+taps, flow meters, and similar hydronic components unless specifically included in the controls
+bid.
+
+C. Electrical contractor shall provide new line-voltage branch circuits and connections unless
+specifically included.
+
+D. Licensed fire-alarm contractor shall provide, certify, and test life-safety devices and fire-alarm
+programming. Controls contractor shall provide the specified monitoring and HVAC interlocks.
+
+E. Owner shall provide reasonable equipment access, existing documentation in its possession,
+network information, and timely review of submittals and sequences.
+
+B.14   SUBMITTALS
+
+A. Control drawings showing panel layouts, controller architecture, communication risers, device
+locations, wiring diagrams, control schematics, and termination details.
+
+B. Complete point lists identifying physical/network points, ranges, units, alarm requirements,
+trend requirements, and graphic assignment.
+
+C. Product data for supervisory controllers, field controllers, I/O modules, sensors, actuators,
+communication interfaces, transformers, routers, and switches.
+
+D. Actuator selection calculations confirming torque, close-off, stroke, linkage, signal, power, and
+fail position.
+
+E. Detailed sequences of operation and a list of owner-adjustable parameters.
+
+F. Software architecture, license schedule, cybersecurity/network requirements, and disclosure
+of recurring fees.
+
+
+
+
+R26-069MZ                                                                                            72
+G. Proposed outage plan, project schedule, and commissioning plan.
+
+B.15   TESTING AND COMMISSIONING
+
+A. Perform point-to-point verification of every physical and network input/output.
+
+B. Calibrate sensors and document final values. Stroke actuators through their full range and
+verify normal and fail positions.
+
+C. Verify pump, fan, VFD, boiler, chiller, valve, damper, safety, smoke, pressure-limit, freeze-
+protection, alarm, schedule, trend, and restart functions.
+
+D. Functionally test each sequence under simulated or actual operating conditions, including
+lead/lag rotation, staging, failure recovery, and optimization logic.
+
+E. Mechanical equipment factory startup remains by others unless listed, but the controls
+contractor shall participate in integrated controls startup and prove BAS commands, feedback,
+and interlocks.
+
+F. Provide a commissioning report listing tests, results, deficiencies, corrections, and final
+acceptance status.
+
+B.16   CLOSEOUT DOCUMENTATION AND TRAINING
+
+A. Provide as-built control drawings, final point lists, final sequences, network addressing, device
+inventory, licenses, product manuals, warranty information, and commissioning reports.
+
+B. Provide editable source programs, supervisor databases, graphic files, backups, passwords,
+and recovery instructions in native and PDF formats as applicable.
+
+C. Provide at least two hours of on-site owner/operator training after substantial completion. Cover
+navigation, schedules, setpoints, alarms, trends, overrides, optimization, basic troubleshooting,
+and backup/restore procedures.
+
+D. Record the training session or provide supplemental training material if requested as an
+alternate.
+
+B.17   WARRANTY
+
+A. Provide a one-year parts-and-labor warranty beginning at owner acceptance of substantial
+completion.
+
+B. Correct defective workmanship, failed furnished components, programming errors, graphic
+errors, and integration deficiencies at no additional cost during the warranty period.
+
+C. State normal and emergency response times, remote-support availability, shipping limitations,
+and exclusions in the bid.
+
+D. Warranty completion shall not require execution of a continuing service agreement.
+
+
+
+
+R26-069MZ                                                                                         73
+B.18   GENERAL CLARIFICATIONS AND EXCLUSIONS
+
+Unless expressly included by the bidder, the following are excluded from the Base Bid:
+
+A. New control dampers, louvers, backdraft dampers, valve bodies, thermowells, airflow stations,
+meters, flow meters, and piping modifications, except actuator and sensor work specifically
+identified.
+
+B. New smoke detectors, smoke dampers, fire dampers, combination fire/smoke dampers, and
+fire-alarm programming or certification.
+
+C. Cutting, patching, painting, hazardous-material remediation, structural work, and access doors.
+
+D. New line-voltage branch circuits and equipment power wiring above controls-level wiring
+defined in this scope.
+
+E. Independent third-party commissioning and test-and-balance work.
+
+F. Repair or replacement of failed existing devices or wiring designated for reuse, except where
+specifically included or authorized by change order.
+
+G. Overtime, after-hours, weekend, and holiday work unless separately priced.
+
+H. Exclusions shall not eliminate incidental controls work reasonably necessary to deliver the
+specified functional result. Any bidder exclusion that conflicts with a specific requirement above
+shall be identified as a deviation.
+
+B.19   PROPOSAL REQUIREMENTS
+
+A. Provide a lump-sum Base Award and separate prices for each alternate and each VAV floor.
+
+B. Identify the proposed controls manufacturer, controller families, supervisory architecture,
+BACnet topology, and enterprise front-end integration method.
+
+C. Provide an equipment list with quantities and a licensing schedule.
+
+D. Provide a preliminary schedule, anticipated outages, lead times, and project duration.
+
+E. List assumptions, exclusions, substitutions, deviations, work by others, taxes, bonds, wage
+assumptions, and proposal validity period.
+
+F. Disclose proprietary tools, mandatory cloud services, subscriptions, recurring license fees, and
+service agreements.
+
+G. State warranty terms, service response, hourly rates, material markup, and after-hours rates.
+
+H. Complete the compliance schedule below. Blank responses will be interpreted as exceptions
+requiring clarification.
+
+I. Alarm detection and City notification – Ability to detect configurable temperature, pressure,
+humidity, equipment-status, and communication changes and automatically email designated City
+
+
+
+R26-069MZ                                                                                        74
+personnel. Evaluate adjustable thresholds, time delays, escalation, repeat notifications,
+restoration-to-normal messages, alarm history, testing, and owner administration.
+
+J. Customer Service and response – Availability of local support, normal and emergency response
+times, remote diagnostic capability, after-hours support, technician qualifications, warranty
+support, escalation procedures, and references from comparable BAS projects.
+
+K. Project timeline and implementation plan – Proposed start and completion dates, equipment
+lead times, major milestones, outage planning, sequencing, commissioning duration, schedule
+risks, and the contractor’s ability to maintain building operation during the work
+
+
+
+
+R26-069MZ                                                                                    75
+
