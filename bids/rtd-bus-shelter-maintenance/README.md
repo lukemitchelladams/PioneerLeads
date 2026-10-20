@@ -47,3 +47,24 @@ Whether its contract includes the two transfer centers and shelter snow is not s
 prices: not public; a CORA request (https://rtd-denver.justfoia.com/publicportal/home/newrequest) or a question
 by 11/02 would get them. Other agencies' per-cleaning bid prices: El Paso Sun Metro 2025 $8.00-$41.88 (winner $9.00);
 NCTD 2016 $14.98.
+
+## SBE goal and portal: verified 2026-10-20 (details and sources: sbe-research.md)
+- **Follow the project on OpenGov (RFP §3.5):** "Respondents that fail to Follow this project will not receive automated Addenda
+  notifications, nor will they be able to submit a Response". Luke must log in, click Follow, and check the Addenda tab (OpenGov
+  returns 403 to cloud sessions). GovTribe shows no addenda as of 2026-10-20.
+- **The incumbents count themselves.** United Facility Solutions (current Federal Blvd / Group 3 holder) and Front Range Services are
+  both RTD-certified SBEs; SBE Contract Requirements §3.G.i lets a certified prime count its own forces. Brown Bison is not certified,
+  so we need RTD-certified SBE subs for 15% or a full good-faith-efforts file (Enclosures 6 and 7, sent with the proposal).
+- **RTD's SBE directory (October 2026 spreadsheet)** lists 76 firms with fitting codes; 15 recommended in sbe-research.md, led by
+  Maintenance Resources (MCS Inc.), Denver: custodial + pressure washing + snow, already on our call list. None of our current outreach
+  firms (Lightning Mobile, Colorado Power Wash, etc.) are RTD SBEs.
+- **Good-faith file** (49 CFR 26 App. A, RTD SBE Contract Requirements): ask RTD's Small Business Office for help, solicit every capable
+  certified SBE and follow up, split the work into pieces SBEs can price, keep every quote. Enclosure 7 asks whether we attended the
+  pre-proposal briefing, so attend 10/26 14:00.
+- **Ask RTD by 11/02 14:00:** whether City and County of Denver SBE certifications count on this RFP (RTD FAQ v3, 2025-11-24, Q13 says
+  "only RTD SBE and CCD's SBE-certifications"; RFP §2.6 names RTD only).
+- **Deductions (Form of Contract, Deduction Schedule):** $200 per graffiti tag "not removed during the daily servicing", repeatable every
+  eight hours; $250 per missed response time (1-hour requests) and per unsafe condition; $100 per missed trash/debris; $70 per can not
+  emptied and sanitized; $50 per person or vehicle not on GPS. Subs must price same-visit graffiti removal, not 72 hours.
+- **MANIFEST corrections:** "Attachment E" is the SBE Contract Requirements document itself (in hand). "Schedule A" is a false hit by the
+  manifest script ("Deduction Schedule" followed by item "A."). Nothing is missing.

@@ -62,7 +62,7 @@ the same corridor.** See README "What RTD pays now". Not competitive as quoted.
 
 > Brent, thank you for the fast turnaround. Straight answer: it is well above budget. RTD's public purchase reports
 > show the current contract for these same shelters (Federal Blvd and Group 3, held by United Facility Solutions)
-> at $231,339 for its first year and about $259,000 in its latest option year. Your sheet comes to about $1.9 million
+> at $231,339 for its first year and about $259,000 in its latest option year. Your sheet comes to about seven times that
 > for year one. Can you take another pass and get closer to that range? Separately, RTD only counts SBE firms that are
 > certified before the proposal goes in (RFP section 2.6), and its review can take up to 45 days, so please file the
 > RTD SBE application this week (SBO@RTD-Denver.com).

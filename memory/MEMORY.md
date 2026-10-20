@@ -238,8 +238,8 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
 - GovTribe daily alert: Jones Bearing new hits are DLA Aviation rod-end bearings (aerospace). Not his product. Nothing new in CO state/local or federal CO since 10/18.
 - bids/_watch/REPORT.md is still my cloud test run (BidNet tunnel errors, no SAM key). Luke's local runner has not run.
 - inbox-seen.json now holds 6 thread ids.
-- 2026-10-19 09:45 MT: Rich Carroll (York) will quote Brown Bison $100/hr regular, $140/hr after-hours for Parker HVAC on-call. Logged in bids/town-of-parker-hvac-on-call/README.md with comps. Parker bid docs still not received from Rich. Recommendation given: rates are mid-market; keep our labor markup ≤15%; get parts markup and trip charge from Rich; get Parker's prior award rates as the real comp.
-- 2026-10-19 10:05 MT: Luke set markup at 10% on Rich's rates → bid $110/$154. Rich's company is Air Comfort York Heating and Air, Inc., Parker (est. 1972). Evidence file: bids/town-of-parker-hvac-on-call/sub-air-comfort-york.md. Online reviews thin/mixed (Yelp 3.0, Porch 3.67, BBB A+ 0 complaints); do not submit star ratings; get Town facility references from Rich. Found Town permit MECH24-0214 (2024-12, Dransfeldt Place, ~$136k) naming Air Comfort York.
+- 2026-10-19 09:45 MT: Rich Carroll (York) sent his hourly rates for Parker HVAC on-call (figures in bids/town-of-parker-hvac-on-call/private/; repo is public). Logged in bids/town-of-parker-hvac-on-call/README.md with comps. Parker bid docs still not received from Rich. Recommendation given: rates are mid-market; keep our labor markup ≤15%; get parts markup and trip charge from Rich; get Parker's prior award rates as the real comp.
+- 2026-10-19 10:05 MT: Luke set Brown Bison's markup on Rich's rates (figures in private/). Rich's company is Air Comfort York Heating and Air, Inc., Parker (est. 1972). Evidence file: bids/town-of-parker-hvac-on-call/sub-air-comfort-york.md. Online reviews thin/mixed (Yelp 3.0, Porch 3.67, BBB A+ 0 complaints); do not submit star ratings; get Town facility references from Rich. Found Town permit MECH24-0214 (2024-12, Dransfeldt Place, ~$136k) naming Air Comfort York.
 - 2026-10-19 11:20 MT: Found 4 Town-of-Parker-issued mechanical permits naming Air Comfort York (2023–2026, ≈$526k): 19865 Mainstreet/Parker Town Center 2026 $180k; Dransfeldt Place 2024 ×2; Lincoln Meadows Bldg 2 2023. All private commercial, none Town facilities. Logged in sub-air-comfort-york.md with proposal wording.
 
 ### 2026-10-19 12:05 MT hourly check
@@ -355,8 +355,8 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - Luke's other agent ("evening update" emails from luke@brownbisonco.com to his Gmail, subject "Brown Bison evening update")
   reads BidNet through Luke's signed-in Chrome, with a 15-min keep-alive. It had already read Littleton's full package, Parker
   generator (conditional GO, Generator Source contacted), El Paso 26-058 (no-go), Douglas Co generators (no-go), Douglas Co
-  janitorial 036-26 (no-go unless sub staff allowed; BidNet question by Wed 15:00), DCSD mowing (Alex final $389,989.59, ours
-  $409,489.07 at 5%), RTD (Lightning Mobile yes to 42 shelters, prices Fri), Parker HVAC (Rich pricing).
+  janitorial 036-26 (no-go unless sub staff allowed; BidNet question by Wed 15:00), DCSD mowing (Alex final sheet in; our price
+  = his + markup, figures in bids/dcsd-mowing-003-27/private/), RTD (Lightning Mobile yes to 42 shelters, prices Fri), Parker HVAC (Rich pricing).
 - The hourly inbox query excludes from:luke@brownbisonco.com, so it MISSES these updates. Search `"evening update" OR "Brown Bison brief"`
   every hour and fold them into pipeline.json.
 - DCSD 003-27 RFP §2.1: no sign-in at the 2026-10-14 walkthrough = rejected. The CRM update doesn't mention the walk. Flagged to Luke.
@@ -572,3 +572,16 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-20 10:03 MT (MAIN): Parker rough-draft pricing EMAILED to Rich (big-type PDF, verified) and filter question EMAILED to Charles Ellis cellis@parkeronline.org, both on Luke's explicit instruction. Watch inbox for both replies. Rich approval due Wed noon.
 - 2026-10-20 11:25 MT (Luke): **Alex Ditto's company is YMS Landscaping.** Use it on every landscaping bid (exact legal entity name still to confirm).
 - 2026-10-20 11:35 MT (Luke): YMS Landscaping (Alex) also does concrete, retaining walls, snow removal, landscape enhancements, carpentry, water features, sod/turf install, pressure washing. Luke reopened Colorado Springs Valley Hi pond (Q26-096MZ, due 10/28; bonds required). Pressure washing + snow = RTD shelters fit.
+- 2026-10-20 11:54 MT (MAIN): DCSD 003-27 final District price sheet built from YMS's 10/19 revised sheet + 5%
+  (bids/dcsd-mowing-003-27/submission/build_price_sheet.py; figures only in private/) and sent to Alex from luke@brownbisonco.com
+  (Luke's instruction), threaded on his forward. Email covers each change he made, the final price, the 100-point scoring, the proposal
+  contents and 10 asks due Wed 10/21 5 PM (sign-in name and photo first). YMS = AWalk LLC d/b/a YMS Landscaping (CO LLC 20241544949,
+  formed 2024-05-21), 115 Wilcox St #220, Castle Rock; President & CEO Aaron Walker; Alex Ditto is Commercial Accounts Manager.
+  The Department of Agriculture's license search shows no pesticide business license for YMS or AWalk (Alex's sheet lists Adam Perrigoue, license 34548).
+- 2026-10-20 (MAIN): **The GitHub repo is PUBLIC (visibility checked via the GitHub API).** DCSD totals, Rich's Parker rates and our markups had
+  been written into MEMORY.md, the Parker README and sub file, and pipeline.json/bids.json; redacted today, but git history still has them.
+  Asked Luke to make the repo private. Rule: no sub prices, bid prices or markups in any tracked file; use bids/<bid>/private/.
+- 2026-10-20 (MAIN): RTD 126DM016: Luke must Follow the project on OpenGov (RFP §3.5) or he gets no addenda and can't submit. Incumbent
+  UFS and Front Range Services are RTD-certified SBEs and count themselves; we need certified SBE subs or a full good-faith file.
+  15 SBE candidates with emails from RTD's own directory: bids/rtd-bus-shelter-maintenance/sbe-research.md. Graffiti deduction is $200 per
+  tag not removed in the daily visit, every 8 hours. Lightning Mobile's quote is ~7x what RTD pays United Facility Solutions today.

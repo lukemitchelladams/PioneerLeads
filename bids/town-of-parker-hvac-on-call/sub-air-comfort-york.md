@@ -53,12 +53,9 @@ Takeaway: the online review footprint is small and mixed, mostly residential and
 4. Equipment they are factory-trained on (York/JCI, plus Trane/Carrier/Lennox as applicable), EPA 608 cards, NATE certs. Fits the chiller/model-number questions in vendor-questions-york.md.
 5. Number of service techs and trucks based in Parker, and their guaranteed emergency response time to Town buildings.
 
-## Pricing (Luke, 2026-10-19): markup 10% on Rich's rates
-| Item | Rich to us | Our bid (10%) |
-|---|---|---|
-| Regular hours labor | $100.00/hr | **$110.00/hr** |
-| After-hours labor | $140.00/hr | **$154.00/hr** |
-| Holiday, parts markup, trip charge | not yet quoted | get from Rich, same 10% rule |
+## Pricing (Luke, 2026-10-19)
+Rich's rates and Brown Bison's markup are kept in private/ (git-ignored) because this repository is public.
+Current figures: private/bid_inputs.json and the price workbooks in private/.
 
 ## Proposal paragraph (draft, fill brackets)
 Brown Bison Holdings LLC will perform this contract with Air Comfort York Heating and Air, Inc. of Parker as our HVAC service partner under Brown Bison's management. Air Comfort York has operated from Parker since 1972, holds an active Colorado contractor license, carries an A+ Better Business Bureau rating with no complaints on file, and most recently completed a Town-permitted commercial mechanical project at [Dransfeldt Place, permit MECH24-0214, December 2024]. Their technicians are based [N] minutes from Town facilities, with [N] service trucks, and have serviced Town of Parker buildings including [facility 1] and [facility 2] (Town contact: [name, phone]). Brown Bison provides the single point of contact, scheduling, quality control, documentation, and invoicing; Air Comfort York provides factory-trained technicians on [York/JCI, Trane, Carrier] equipment.
