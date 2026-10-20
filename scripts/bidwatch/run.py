@@ -90,7 +90,9 @@ class _WatchSet:
         k = f"{b['source']}:{b['id']}"
         if k in self.by_id:
             return self.by_id[k]
-        hay = f"{b.get('title', '')} {b.get('sol') or ''} {b.get('url') or ''}"
+        # title + solicitation number only: matching the URL let "18863" (Jeffco 26-18863AP) hit BidNet's id
+        # 444188638946 on an unrelated bid (2026-10-20)
+        hay = f"{b.get('title', '')} {b.get('sol') or ''}"
         for w, rx in self.rx:
             if (not w.get("source") or w["source"] == b["source"]) and rx.search(hay):
                 self.hits[w.get("name", w["match"])] = k
@@ -142,11 +144,14 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
                     rows, errs, totals = bidnet.collect_open(ses, keywords)
-                    if ses.creds() and "authentication/login" in ses.page.url:  # bounced mid-scan
+                    # the lists are public, but documents are members-only: if the session lapsed during the list
+                    # walk, log in again before the detail pass (the URL is no signal after a sign-on redirect)
+                    if ses.creds() and ses.logged_in and not bidnet._page_logged_in(ses.page):
+                        ses.logged_in = False
                         ses.ensure_login()
-                        rows2, errs2, _ = bidnet.collect_open(ses, keywords)
-                        rows.update(rows2)
-                        errs += errs2
+                        h["logged_in"] = ses.logged_in
+                        h["login_note"] = ses.login_note if ses.login_note == "session reused" \
+                            else f"{ses.login_note} (re-login mid-scan)"
                     h["errors"] += errs
                     h["site_totals"] = {k: v for k, v in totals.items() if k.startswith("statewide")}
                     h["complete"] = bool(totals.get("_complete"))
@@ -367,6 +372,9 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
     return [n for n in hits if not (st and profiles[n].get("states") and st not in profiles[n]["states"])]
 
 
+DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description")
+
+
 def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h):
     if not enrich_details:
         return
@@ -388,9 +396,18 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if recently or blocked:
             found[k] = {**{f: v for f, v in old.items() if f not in ("last_seen",)}, **b}
             continue
+        kept = {f: v for f, v in old.items() if f not in ("last_seen",)}
         try:
-            found[k] = {**mod.enrich(ses, b), "detail_at": iso()}
+            got = mod.enrich(ses, b)
+            # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
+            # session expiry) must not erase what an earlier scan read, or the next scan reports every document
+            # as a new addendum
+            for f in DETAIL_FIELDS:
+                if not got.get(f) and old.get(f):
+                    got[f] = old[f]
+            found[k] = {**got, "detail_at": iso()}
         except Exception as e:  # noqa: BLE001
+            found[k] = {**kept, **b}
             if type(e).__name__ == "Challenged":  # Cloudflare: every other detail page will fail the same way
                 blocked = str(e)
                 h["errors"].append(f"detail pages blocked: {e}")

@@ -185,6 +185,7 @@ USER, PW = "luke@brownbisonco.com", "s3cret-test-only"
 
 KW_HITS = {"n": 0}
 CODES = {"sent": 0, "last": ""}
+BAD = {"n": 0}
 
 
 class H(http.server.BaseHTTPRequestHandler):
@@ -274,6 +275,12 @@ class H(http.server.BaseHTTPRequestHandler):
                 return self._send("", 302, [("Location", "/colorado"), ("Set-Cookie", f"sid={sid}; Path=/"),
                                             ("Set-Cookie", "device_ok=1; Path=/")])
             return self._send("<p>Enter the confirmation code we emailed you. That code was wrong.</p>", 401)
+        if "j_password" in f:  # wrong password: back to a login form with an error, like BidNet's sign-on server
+            BAD["n"] += 1
+            return self._send("<html><head><title>Login | Fake BidNet Direct</title></head><body>"
+                              "<p class='error'>Invalid username or password.</p><form method='post' action='/public/authentication/login'>"
+                              "<input name='j_username'><input name='j_password' type='password'><button type='submit'>Log in</button>"
+                              "</form></body></html>", 401)
         if self.path.startswith("/sso/acs"):
             sid = (f.get("SAMLResponse") or [""])[0]
             SESSIONS.add(sid)
@@ -454,6 +461,81 @@ check("a revised file with the same name is filed next to the original, dated",
       any(f.startswith("bids/littleton-2126/docs/Addendum 1 (rev ") for f in r10["filed"]), r10["filed"])
 del os.environ["FAKE_REV"]
 run.REPO = _REPO0
+
+# code-review fixes (2026-10-20 07:30 UTC)
+# (c) a stale password is submitted once, then held back; new credentials are tried at once
+SESSIONS.clear()
+os.environ["BIDNET_PASS"] = "stale-password"
+b2 = Browser()
+s7 = PortalSession(b2, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+check("rejected password: one submission, no retries, BLOCKED with the reason",
+      not s7.ensure_login() and BAD["n"] == 1 and "rejected" in s7.login_note and "stale-password" not in s7.login_note,
+      (BAD, s7.login_note))
+s7.close()
+s8 = PortalSession(b2, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+check("same rejected password next run: not submitted again", not s8.ensure_login() and BAD["n"] == 1
+      and "not submitting them again" in s8.login_note, (BAD, s8.login_note))
+s8.close()
+check("the hold stores a hash, never the password", "stale-password" not in bidnet.BAD_CREDS_MARKER.read_text())
+os.environ["BIDNET_PASS"] = PW
+s9 = PortalSession(b2, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+check("new password: tried at once and the hold is cleared",
+      s9.ensure_login() and not bidnet.BAD_CREDS_MARKER.exists() and BAD["n"] == 1, (s9.login_note, BAD))
+s9.close()
+# (c) a failed attempt whose page turns out logged in is not followed by a second password submission
+_calls = {"login": 0, "check": 0}
+
+
+def _slow_login(page, u, p):
+    _calls["login"] += 1
+    raise RuntimeError("Timeout 30000ms exceeded while the sign-on redirect was still running")
+
+
+def _late_check(page):
+    _calls["check"] += 1
+    return _calls["check"] >= 2  # logged out before the attempt, logged in once the redirect finished
+
+
+s10 = PortalSession(b2, "recheck", _slow_login, _late_check, bidnet.CREDS)
+check("a login that finished late is confirmed on re-check, password submitted once",
+      s10.ensure_login() and _calls["login"] == 1 and "confirmed on re-check" in s10.login_note, (_calls, s10.login_note))
+s10.close()
+b2.close()
+
+# (a) a row BidNet labels closed counts toward the site's total but is never returned as open
+_closed_html = ("""<table><tr class="mets-table-row"><td><a class="solicitation-link" href="/colorado/solicitations/open-bids/A/0000700001">Open HVAC job</a>
+<span class="sol-closing-date open"><span class="date-label">Closing</span><span class="date-value">11/10/2026</span></span></td></tr>
+<tr class="mets-table-row"><td><a class="solicitation-link" id="2289300002" href="/private/supplier/interception/open-notice/2289300002?target=view">Janitorial Services for the Pagosa Ranger District</a>
+<span class="sol-closing-date closed"><span class="date-label">Closed Bid</span><span class="date-value">12/15/2021</span></span></td></tr></table>""")
+_rows, _ = bidnet.parse_listing(_closed_html, bidnet.BASE)
+_t = {}
+_kept = bidnet._drop_closed({r["id"]: r for r in _rows}, _t)
+check("BidNet 'Closed Bid' rows are parsed, counted, then dropped", len(_rows) == 2 and list(_kept) == ["0000700001"]
+      and _t.get("_closed_listed") == 1, (_rows, _t))
+
+# (e) watch patterns match the title and solicitation number, never the URL
+_ws = run._WatchSet([{"name": "Jeffco 26-18863AP", "source": "bidnet", "match": "18863|dome glass"}])
+check("a short solicitation number no longer matches a BidNet id inside a URL",
+      not _ws.check({"source": "bidnet", "id": "444188638946", "title": "Flood Assessment and Preliminary Design Services",
+                     "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188638946?target=view"})
+      and _ws.check({"source": "bidnet", "id": "1", "title": "26-18863AP-FM Dome Glass Replacement", "url": ""}))
+
+# (b) a failed or thin detail page keeps the documents and pre-bid an earlier scan read
+import types as _types  # noqa: E402
+
+_old = {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77", "documents": [{"name": "RFP.pdf", "url": "u"}],
+        "prebid": {"date": "2026-11-01", "mandatory": True}, "sol": "26-77", "last_seen": "x"}
+_ws2 = run._WatchSet([{"name": "w", "source": "bidnet", "match": "26-77"}])
+_ses = _types.SimpleNamespace(logged_in=False)
+_h = {"errors": []}
+for _label, _enrich in (("thin page", lambda ses, b: {**b, "documents": [], "prebid": None}),
+                        ("failed page", lambda ses, b: (_ for _ in ()).throw(RuntimeError("docs tab did not load")))):
+    _found = {"bidnet:9": {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77", "url": "u"}}
+    run._enrich_and_download(_ses, _types.SimpleNamespace(enrich=_enrich), _found, "bidnet", profiles, _ws2,
+                             {"bidnet:9": _old}, True, {}, _h)
+    _r = _found["bidnet:9"]
+    check(f"{_label}: earlier documents and pre-bid are kept (no false addendum next scan)",
+          _r.get("documents") == _old["documents"] and _r.get("prebid") == _old["prebid"], _r)
 # a stale code-needed marker expires so a new attempt is allowed (max one code email per 6 h)
 common.CODE_NEEDED_MARKER.write_text("2026-01-01T00:00:00+00:00")
 os.utime(common.CODE_NEEDED_MARKER, (time.time() - 7 * 3600,) * 2)

@@ -19,12 +19,13 @@ from urllib.parse import urlencode, urljoin
 from bs4 import BeautifulSoup
 
 import datetime as dt
+import hashlib
 import os
 import time
 
 from . import mailcode
 from .common import (BIDNET_COOLDOWN_FILE, BIDNET_COOLDOWN_H, CODE_FILE, CODE_MARKER_TTL_H, CODE_NEEDED_MARKER,
-                     DOWNLOAD_DIR, LoginBlocked, extract_prebid, iso, parse_date)
+                     DOWNLOAD_DIR, STATE_HOME, LoginBlocked, extract_prebid, iso, parse_date)
 
 BASE = "https://www.bidnetdirect.com"
 LOGIN_URL = BASE + "/public/authentication/login"
@@ -59,6 +60,16 @@ LOGIN_PASS_SEL = ["#loginBox_j_password", "input[name='j_password']", "input[nam
 LOGIN_BTN_SEL = ["#loginWindowButton", "#loginWindowForm button[type='submit']", "button[type='submit']",
                  "input[type='submit']", "button:has-text('Login')", "button:has-text('Log in')"]
 LOGIN_FORM_SEL = "input[name='j_username']"
+# A login whose page settles back on the login form was rejected (wrong or stale password). Re-submitting the
+# same credentials every attempt and every hour risks an account lockout, so a rejection is recorded (a hash of
+# user+password, never the password) and those exact credentials are not tried again for BAD_CREDS_TTL_H hours;
+# new credentials are tried at once.
+BAD_CREDS_MARKER = STATE_HOME / "bidnet_bad_creds"
+BAD_CREDS_TTL_H = 6
+REJECT_RX = re.compile(r"(invalid|incorrect|wrong|not recogni[sz]ed|failed|locked|disabled)[^.]{0,80}"
+                       r"(password|user ?name|credential|log ?in|account)|"
+                       r"(password|user ?name|credential|log ?in|account)[^.]{0,80}(invalid|incorrect|wrong|failed|locked)",
+                       re.I)
 # Logged-in pages carry a#supplier_logout_link (href /public/authentication/logout) and a filled
 # input[name=session_username]; logged-out pages carry the login window instead (verified 2026-10-20).
 LOGGED_IN_SEL = "#supplier_logout_link, a[href*='authentication/logout'], a[href*='logout' i]"
@@ -125,6 +136,7 @@ def login(page, user: str, pw: str) -> None:
         raise LoginBlocked("waiting for the emailed confirmation code since "
                            f"{CODE_NEEDED_MARKER.read_text().strip() or '?'}: no new login attempted (each one emails a new "
                            "code). When ready to supply the code within the wait window, delete ~/.brownbison/bidnet_code_needed")
+    _check_bad_creds(user, pw)
     clear_code()  # any code on disk predates this login and is therefore dead
     page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1000)
@@ -134,10 +146,22 @@ def login(page, user: str, pw: str) -> None:
     if _page_logged_in(page):
         return  # single sign-on already restored the session (IdP session still alive): nothing to type
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
+    before = page.url
     _submit_login_window(page, user, pw)
     html = _settle_after_submit(page)
     if BOT_RX.search(html) and not total_count(html):
         raise LoginBlocked("BidNet robot check right after the login form; try again later")
+    if not _page_logged_in(page) and not CODE_PROMPT_RX.search(visible_text(html)) and _login_form_visible(page):
+        # Every logged-out page carries the (collapsed) login form, so the form alone proves nothing: it is a
+        # rejection when the page says so, or when the submit went somewhere and came back to a login form.
+        said = REJECT_RX.search(visible_text(html))
+        if not said and page.url == before:
+            raise RuntimeError("login form still showing and the page never navigated: the submit did not go through")
+        _mark_bad_creds(user, pw)
+        raise LoginBlocked("BidNet returned a login form after the password was submitted"
+                           + (f' ("{said.group(0)[:120]}")' if said else "") + ": the credentials were rejected. Not "
+                           f"retrying (account lockout risk); these credentials are skipped for {BAD_CREDS_TTL_H} h. "
+                           "Set the current BidNet password in BIDNET_PASS.")
     if CODE_PROMPT_RX.search(visible_text(html)):
         code = wait_for_code(float(os.environ.get("BIDNET_CODE_WAIT", "300")), since=started)
         if not code:
@@ -157,6 +181,38 @@ def login(page, user: str, pw: str) -> None:
         clear_code()
         if CODE_PROMPT_RX.search(visible_text(html)):
             raise LoginBlocked("BidNet rejected the confirmation code (expired or mistyped); get a fresh one")
+
+
+def _creds_sig(user: str, pw: str) -> str:
+    return hashlib.sha256(f"{user}\0{pw}".encode()).hexdigest()[:16]
+
+
+def _check_bad_creds(user: str, pw: str) -> None:
+    try:
+        sig, when = BAD_CREDS_MARKER.read_text().split()[:2]
+    except (FileNotFoundError, ValueError):
+        return
+    fresh = time.time() - BAD_CREDS_MARKER.stat().st_mtime < BAD_CREDS_TTL_H * 3600
+    if sig == _creds_sig(user, pw) and fresh:
+        raise LoginBlocked(f"BidNet rejected these credentials at {when}; not submitting them again until "
+                           f"{BAD_CREDS_TTL_H} h have passed or BIDNET_PASS changes (account lockout risk)")
+    BAD_CREDS_MARKER.unlink(missing_ok=True)  # new credentials, or the hold expired: one fresh attempt
+
+
+def _mark_bad_creds(user: str, pw: str) -> None:
+    try:
+        BAD_CREDS_MARKER.parent.mkdir(parents=True, exist_ok=True)
+        BAD_CREDS_MARKER.write_text(f"{_creds_sig(user, pw)} {iso()}\n")
+        os.chmod(BAD_CREDS_MARKER, 0o600)
+    except OSError:
+        pass
+
+
+def _login_form_visible(page) -> bool:
+    try:
+        return page.locator(LOGIN_FORM_SEL).count() > 0 and page.locator("input[name='j_password']").count() > 0
+    except Exception:  # noqa: BLE001
+        return False
 
 
 def _settle_after_submit(page, timeout_s: float = 25.0, code_prompt_is_final: bool = True) -> str:
@@ -311,6 +367,10 @@ def parse_listing(html: str, base_url: str = BASE) -> tuple[list[dict], str | No
             continue
         seen.add(sid)
         region = _txt(tr.select_one(".sol-region-item"))
+        # BidNet's AGGREGATE tab still lists some closed bids: the date cell reads "Closed Bid 12/15/2021" instead
+        # of "Closing 11/10/2026" (class "open"); seen 2026-10-20 on a 2021 Pagosa Ranger District notice
+        cd = tr.select_one(".sol-closing-date")
+        closed = cd is not None and ("closed" in (cd.get("class") or []) or bool(re.search(r"\bclosed\b", _txt(cd), re.I)))
         # keyword-search pages wrap hits in <span class="iris-highlight">; joining with " " would turn
         # "On-<span>Call</span>" into "On - Call", so join without a separator
         title = " ".join(a.get_text().split())
@@ -318,7 +378,7 @@ def parse_listing(html: str, base_url: str = BASE) -> tuple[list[dict], str | No
                      "agency": "", "region": region, "state": REGION_STATE.get(region.lower()),
                      "closing": parse_date(_txt(tr.select_one(".sol-closing-date .date-value"))),
                      "published": parse_date(_txt(tr.select_one(".sol-publication-date .date-value"))),
-                     "context": _txt(tr)[:400]})
+                     "context": _txt(tr)[:400], **({"closed": True} if closed else {})})
     if not rows:
         rows = _parse_listing_generic(soup, base_url, seen)
     nxt = None
@@ -497,7 +557,7 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
     totals["_complete"] = (len(statewide) == len(CO_TABS) and all(v is not None for v in statewide.values())
                            and bool(expected) and len(out) >= expected and not totals.get("_bot_check"))
     if totals.get("_bot_check"):
-        return out, errors, totals
+        return _drop_closed(out, totals), errors, totals
     if force_keywords or not expected or len(out) < expected:
         if not force_keywords:
             errors.append(f"BidNet statewide list short ({len(out)} of {expected or '?'}); ran keyword searches")
@@ -505,7 +565,18 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
             if totals.get("_bot_check"):
                 break
             _walk(session, f"kw {k}", f"{CO_OPEN}?{urlencode({'keywords': k})}", out, errors, totals, max_pages)
-    return out, errors, totals
+    return _drop_closed(out, totals), errors, totals
+
+
+def _drop_closed(out: dict, totals: dict) -> dict:
+    """Rows BidNet itself labels closed are counted toward the site's total (so the list still reads as complete)
+    but never returned as open bids."""
+    closed = [k for k, v in out.items() if v.get("closed")]
+    for k in closed:
+        out.pop(k)
+    if closed:
+        totals["_closed_listed"] = len(closed)
+    return out
 
 
 DOCS_TAB_SEL = "a[href*='innerTabId=docs-items']"

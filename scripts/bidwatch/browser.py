@@ -115,6 +115,14 @@ class PortalSession:
                 last = _scrub(f"{type(e).__name__}: {e}", creds)[:160]
             self.debug_dump(f"login-fail-{i + 1}")
             time.sleep(5 * (2 ** i))
+            try:  # a slow sign-on redirect may have finished the login after all: never re-submit a password needlessly
+                if self.is_logged_in_fn and self.is_logged_in_fn(self.page):
+                    self.logged_in = True
+                    self.login_note = f"logged in (attempt {i + 1}, confirmed on re-check; first read: {last})"
+                    self.save()
+                    return True
+            except Exception:  # noqa: BLE001
+                pass
         self.logged_in, self.login_note = False, f"login FAILED after {attempts} tries: {last}"
         return False
 
