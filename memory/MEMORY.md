@@ -487,3 +487,23 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   open_bids.json marked NOT SCANNED THIS RUN. Better DIBBS method for the local runner: daily in{YYMMDD}.txt index.
   SAM.gov: nightly full CSV (no key) at sam.gov/api/prod/fileextractservices/.../ContractOpportunitiesFullCSV.csv.
   Luke's key handled ~27 calls today without a 429, so it is the 1,000/day entity-role tier.
+
+### 2026-10-20 07:20 UTC: endurance 12/12, deploy kit, SAM bulk file, docs file themselves (MAIN)
+- Endurance E3: 12/12 PASS over 66 min (04:57-06:04 UTC), fresh browser per check from the saved session. Forced
+  site-session expiry (check 4) and full SSO expiry (check 8) both recovered with no code. Their second-attempt
+  logins were a race (page read mid SSO redirect); fixed in fe4cbfc, regression test with a scripted IdP hop.
+  bids/_watch/ENDURANCE.md committed. After ~1 h idle the 07:02 scan had to log in fresh (attempt 1, no code):
+  BidNet's app session times out within the hour; the saved device cookie keeps the code prompt away.
+- Deploy kit built, NOT deployed (needs Luke's yes, ~$12/mo): ops/deploy/README.md (20-min steps), VPS systemd
+  timer at :35, healthchecks.io pings (HC_PING_SCAN), GitHub Actions failover dormant unless
+  vars.BIDWATCH_FAILOVER=on (repo must be private first), session cached openssl-encrypted.
+- SAM.gov nightly bulk file (scripts/bidwatch/samgov_bulk.py; no key; 205 MB in 3 s; UTF-8 with stray cp1252):
+  adds notices with a blank place of performance and a Colorado buying office; 68 matching vs 38 from the API.
+  Found VA NCO 19 36C25927Q0019 radiant panel replacement at RMR VAMC (sources sought closed 10/16; watched).
+- Scanner: downloads any watched-bid document missing on disk; files new docs into the watchlist `folder`
+  (content-deduped, MANIFEST refreshed, pushed); BLIND vs PARTIAL source reporting; NEW skips long-closed bids.
+- Watchlist: DCSD 003-27 folder set, price sheet + Q&A 1 + RFP Rev 4 filed (Rev 4 still says due
+  "October 23, 2026, 2:00 PM MT"; walkthrough sign-in required). Bare "janitorial" watch narrowed.
+- Pre-bid facts (BidNet detail): CU UCB001284 mandatory prebid 10/01 missed = dead. DPS BD2733 fire alarm
+  mandatory job walk 10/27 10:00 (worker leans NO). Adams Co. street lights mandatory walk 10/21 10:00 (GO).
+- Hourly :35 scan: 05:34 ran SAM.gov + Parker only (BidNet deferred so E3 stayed clean); 07:02 full scan.
