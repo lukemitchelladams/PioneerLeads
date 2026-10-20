@@ -444,6 +444,11 @@ def _parse_listing_generic(soup, base_url: str, seen: set) -> list[dict]:
 
 
 EVENT_LABELS = ("event type", "attendance", "event date", "location", "event note")
+# an event that needs an RSVP or advance registration (Cherry Creek SD, 2026-10-13: "you must RSVP"): missing the RSVP
+# can keep Brown Bison out of the walk, so the report shows it next to the walk date
+RSVP_RX = re.compile(r"\bRSVP\b|\bmust (?:register|sign up|pre-?register)\b|\bregistration (?:is )?required\b|"
+                     r"\bregister (?:in advance|by|before|no later than)\b", re.I)
+RSVP_BY_RX = re.compile(r"(?:RSVP|regist\w*|sign up)[^.;]{0,60}?\b(?:by|before|no later than)\b\s*([^.;]{0,40})", re.I)
 
 
 def parse_prebid_events(soup) -> list[dict]:
@@ -465,9 +470,11 @@ def parse_prebid_events(soup) -> list[dict]:
             continue
         att = (f.get("attendance") or "").strip()
         mand = True if re.search(r"mandatory|required", att, re.I) else (False if att else None)
+        note = f.get("event note") or ""
+        by = RSVP_BY_RX.search(note)
         out.append({"type": f.get("event type") or "", "attendance": att, "date": parse_date(f.get("event date") or ""),
-                    "when": f.get("event date") or "", "location": f.get("location") or "", "note": f.get("event note") or "",
-                    "mandatory": mand})
+                    "when": f.get("event date") or "", "location": f.get("location") or "", "note": note,
+                    "mandatory": mand, "rsvp": bool(RSVP_RX.search(note)), "rsvp_by": parse_date(by.group(1)) if by else None})
     return out
 
 
@@ -478,6 +485,7 @@ def _events_prebid(soup) -> dict | None:
         return None
     e = sorted(ev, key=lambda x: (x["mandatory"] is not True, x["date"] or "9999"))[0]
     return {"date": e["date"], "mandatory": e["mandatory"], "source": "bidnet events",
+            "rsvp": e["rsvp"], "rsvp_by": e["rsvp_by"],
             "quote": (f"Pre-Bidding Events: Event Type {e['type']}, Attendance {e['attendance']}, Event date {e['when']}, "
                       f"Location {e['location']}" + (f", Note: {e['note']}" if e["note"] else ""))[:420]}
 

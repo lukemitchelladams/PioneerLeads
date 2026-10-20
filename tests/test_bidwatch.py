@@ -169,6 +169,21 @@ _ev_bo = bidnet.parse_detail((FX / "bidnet_prebid_events_boettcher.html").read_t
 check("BidNet events block: 'Attendance Recommended' is not mandatory", _ev_bo and _ev_bo["mandatory"] is False
       and _ev_bo["date"] == "2026-10-26" and "Recommended" in _ev_bo["quote"], _ev_bo)
 _ev_ad = bidnet.parse_detail((FX / "bidnet_prebid_events_addendum_label.html").read_text())["prebid"]
+check("RSVP in an event note is flagged (Cherry Creek: 'you must RSVP'); none on CU's event",
+      _ev_ad and _ev_ad.get("rsvp") is True and _ev_ad.get("rsvp_by") is None and _ev_cu.get("rsvp") is False, (_ev_ad, _ev_cu))
+_rsvp_html = ('<div class="preBidEventList"><ul><li>'
+              '<div class="mets-field"><span class="mets-field-label">Event Type</span><div class="mets-field-body"><p>Site Visit</p></div></div>'
+              '<div class="mets-field"><span class="mets-field-label">Attendance</span><div class="mets-field-body"><p>Recommended</p></div></div>'
+              '<div class="mets-field"><span class="mets-field-label">Event date</span><div class="mets-field-body"><p>10/27/2026 09:00 AM MDT</p></div></div>'
+              '<div class="mets-field"><span class="mets-field-label">Event Note</span><div class="mets-field-body"><p>Please RSVP by October 23, 2026 to the buyer.</p></div></div>'
+              '</li></ul></div>')
+_ev_rs = bidnet.parse_detail(_rsvp_html)["prebid"]
+from scripts.bidwatch import run as _run_early  # noqa: E402  (same module object part 2 patches later)
+
+check("RSVP deadline read from the note and shown in the walk column",
+      _ev_rs and _ev_rs["rsvp_by"] == "2026-10-23"
+      and "RSVP by 2026-10-23" in _run_early._row({"source": "bidnet", "id": "1", "prebid": _ev_rs}),
+      _ev_rs)
 check("BidNet events block changed by an addendum ('Attendance A - Previous Addendum') still parses: not mandatory",
       _ev_ad and _ev_ad["source"] == "bidnet events" and _ev_ad["mandatory"] is False and _ev_ad["date"] == "2026-10-13", _ev_ad)
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")

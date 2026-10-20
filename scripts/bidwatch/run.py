@@ -495,6 +495,8 @@ def _row(b: dict) -> str:
     walk = ""
     if pb:
         walk = f"{pb.get('date') or '?'} {'MANDATORY' if pb.get('mandatory') else ('optional' if pb.get('mandatory') is False else 'check')}"
+        if pb.get("rsvp"):
+            walk += " + RSVP" + (f" by {pb['rsvp_by']}" if pb.get("rsvp_by") else " required")
     d = days_until(b.get("closing"))
     due = f"{b.get('closing') or '?'}" + (f" ({d}d)" if d is not None else "")
     where = ""
