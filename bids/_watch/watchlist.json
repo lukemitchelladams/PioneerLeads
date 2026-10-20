@@ -258,6 +258,13 @@
    "match": "2027 landscaping management",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "VA RMR VAMC hydronic radiant panel replacement 36C25927Q0019 (Aurora CO; EVALUATE; sources sought closed 2026-10-16, watch for the solicitation)",
+   "source": "samgov",
+   "match": "36C25927Q0019|radiant panel replacement rmr",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

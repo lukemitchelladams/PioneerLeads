@@ -2,7 +2,7 @@
 
     https://sam.gov/api/prod/fileextractservices/v1/api/download/Contract%20Opportunities/datagov/
         ContractOpportunitiesFullCSV.csv?privacy=Public
-    (303 to a signed S3 URL; ~205 MB; Windows-1252 text; rebuilt nightly around 03:30 UTC.)
+    (303 to a signed S3 URL; ~205 MB; UTF-8 with stray Windows-1252 bytes; rebuilt nightly around 03:30 UTC.)
 
 Why, next to the API (samgov.py):
   * the API's place-of-performance `state` filter cannot see notices whose PoP state is blank: 63 of 147
@@ -17,6 +17,7 @@ result is cached until the file, the profiles or the date change. Never raises: 
 """
 from __future__ import annotations
 
+import codecs
 import csv
 import datetime as dt
 import hashlib
@@ -75,9 +76,19 @@ def refresh(now: dt.datetime | None = None, timeout: int = 120) -> tuple[Path | 
         return None, f"bulk download failed ({why}); no cached copy"
 
 
+def _cp1252_fallback(err: UnicodeError):
+    """The file is mostly UTF-8 (TRANE\u00ae arrives as C2 AE) with stray Windows-1252 bytes (0x96 en dash):
+    decode as UTF-8 and read only the invalid bytes as Windows-1252."""
+    bad = err.object[err.start:err.end]
+    return bad.decode("cp1252", errors="replace"), err.end
+
+
+codecs.register_error("bidwatch_cp1252_fallback", _cp1252_fallback)
+
+
 def iter_rows(path: Path):
     csv.field_size_limit(2**31 - 1)  # Description cells run to tens of KB
-    with open(path, encoding="cp1252", errors="replace", newline="") as f:
+    with open(path, encoding="utf-8", errors="bidwatch_cp1252_fallback", newline="") as f:
         yield from csv.DictReader(f)
 
 

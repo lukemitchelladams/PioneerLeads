@@ -614,7 +614,7 @@ def _sam_row(nid, title, typ="Solicitation", pop="CO", office="CO", naics="", ps
 
 
 _rows = [
-    _sam_row("a1", "Boiler replacement, Building 2", naics="238220"),                                  # keep: PoP CO + NAICS
+    _sam_row("a1", "Boiler replacement, Building 2, TRANE@REG@ controls", naics="238220"),             # keep: PoP CO + NAICS
     _sam_row("b2", "HVAC Preventive Maintenance \u2013 RMR VAMC", pop="", office="CO"),                 # keep: blank PoP, CO office
     _sam_row("c3", "HVAC Preventive Maintenance", pop="WY", office="CO"),                               # drop: PoP decides
     _sam_row("d4", "Asphalt paving and HVAC upgrade", naics="237310"),                                  # drop: exclude keyword
@@ -633,7 +633,7 @@ _buf = _io.StringIO()
 _w = _csv.DictWriter(_buf, fieldnames=_COLS, quoting=_csv.QUOTE_ALL)
 _w.writeheader()
 _w.writerows(_rows)
-SAM_CSV = _buf.getvalue().encode("cp1252")
+SAM_CSV = _buf.getvalue().encode("cp1252").replace(b"@REG@", "\u00ae".encode("utf-8"))  # mixed, like the real file
 SAM_HITS = {"download": 0, "s3": 0}
 
 
@@ -672,6 +672,8 @@ check("a copy older than the latest nightly rebuild is refreshed", SAM_HITS["dow
 _bulk, _bnote = samgov_bulk.collect(profiles)
 _bp = {k: v["profiles"] for k, v in _bulk.items()}
 check("bulk filters: CO place of performance + trade NAICS kept", _bp.get("a1") == ["brownbison"], _bp)
+check("mixed encoding decoded: UTF-8 \u00ae and a Windows-1252 en dash in one file",
+      "TRANE\u00ae controls" in _bulk["a1"]["title"] and "\u00c2" not in _bulk["a1"]["title"], _bulk["a1"]["title"])
 check("bulk filters: blank place of performance + Colorado buying office kept, en dash decoded",
       _bp.get("b2") == ["brownbison"] and _bulk["b2"]["office_state"] == "CO" and "\u2013" in _bulk["b2"]["title"], _bulk.get("b2"))
 check("bulk filters: a stated place of performance outside CO drops it, even with a CO office", "c3" not in _bp, _bp)
