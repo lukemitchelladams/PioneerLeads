@@ -248,6 +248,13 @@ class H(http.server.BaseHTTPRequestHandler):
                                   "<form method='post' action='/public/authentication/code'><input name='code'>"
                                   "<button type='submit'>Confirm</button></form></body></html>")
             sid = f"s{LOGINS['n']}"
+            hop = int(os.environ.get("FAKE_SSO_HOP_MS") or 0)
+            if hop:
+                # like BidNet's Shibboleth hop: an IdP page that posts the SAML response back by script, later
+                return self._send("<html><head><title>Fake BidNet IdP</title></head>"
+                                  f"<body onload=\"setTimeout(function(){{document.forms[0].submit()}}, {hop})\">"
+                                  "<p>Signing you in...</p><form method='post' action='/sso/acs'>"
+                                  f"<input type='hidden' name='SAMLResponse' value='{sid}'></form></body></html>")
             SESSIONS.add(sid)
             return self._send("", 302, {"Location": "/colorado", "Set-Cookie": f"sid={sid}; Path=/"})
         if self.path.startswith("/public/authentication/code"):
@@ -257,6 +264,10 @@ class H(http.server.BaseHTTPRequestHandler):
                 return self._send("", 302, [("Location", "/colorado"), ("Set-Cookie", f"sid={sid}; Path=/"),
                                             ("Set-Cookie", "device_ok=1; Path=/")])
             return self._send("<p>Enter the confirmation code we emailed you. That code was wrong.</p>", 401)
+        if self.path.startswith("/sso/acs"):
+            sid = (f.get("SAMLResponse") or [""])[0]
+            SESSIONS.add(sid)
+            return self._send("", 302, {"Location": "/colorado", "Set-Cookie": f"sid={sid}; Path=/"})
         return self._send("bad login", 401)
 
 
@@ -315,6 +326,38 @@ check("a statewide tab that fails marks the scan incomplete (previous bids are c
       _t.get("_complete") is False and "statewide BROKEN" in _t.get("_failed", []) and len(_r) == 3, (_t, len(_r), _e))
 bidnet.CO_TABS = _tabs
 s3.close()
+SESSIONS.clear()  # the session times out again; this time the login goes through a slow single-sign-on hop
+os.environ["FAKE_SSO_HOP_MS"] = "4500"
+s4 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+check("slow SSO redirect chain (IdP posts back by script after 4.5 s): login waits for it, attempt 1 succeeds",
+      s4.ensure_login() and s4.login_note == "logged in (attempt 1)", s4.login_note)
+del os.environ["FAKE_SSO_HOP_MS"]
+s4.close()
+
+
+def _leaky_login(page, u, p):
+    raise RuntimeError(f"fill('#loginBox_j_password', '{p}') timed out for {u}")
+
+
+s5 = PortalSession(b, "scrubtest", _leaky_login, lambda page: False, bidnet.CREDS)
+check("a login error never carries the password or user into the note (health.json is committed)",
+      not s5.ensure_login(attempts=1) and PW not in s5.login_note and USER not in s5.login_note
+      and "***" in s5.login_note, s5.login_note)
+s5.close()
+_tries = {"n": 0}
+
+
+def _flaky_login(page, u, p):
+    _tries["n"] += 1
+    if _tries["n"] == 1:
+        raise RuntimeError("Unable to retrieve content because the page is navigating")
+
+
+s6 = PortalSession(b, "retrytest", _flaky_login, lambda page: _tries["n"] >= 2, bidnet.CREDS)
+check("a retried login records why the previous attempt failed",
+      s6.ensure_login() and s6.login_note.startswith("logged in (attempt 2); previous attempt: RuntimeError: Unable"),
+      s6.login_note)
+s6.close()
 b.close()
 
 # full scan against the fake site, with temp state files

@@ -25,6 +25,14 @@ def chromium_path() -> str | None:
     return None
 
 
+def _scrub(text: str, secrets) -> str:
+    """Mask credential values that an error message might echo (the login note is committed in health.json)."""
+    for v in secrets or ():
+        if v and len(v) >= 4:
+            text = text.replace(v, "***")
+    return text
+
+
 class Browser:
     """One Chromium for the whole scan; each portal gets its own context (cookie jar)."""
 
@@ -93,7 +101,8 @@ class PortalSession:
             try:
                 self.login_fn(self.page, *creds)
                 if not self.is_logged_in_fn or self.is_logged_in_fn(self.page):
-                    self.logged_in, self.login_note = True, f"logged in (attempt {i + 1})"
+                    self.logged_in = True
+                    self.login_note = f"logged in (attempt {i + 1})" + (f"; previous attempt: {last}" if last else "")
                     self.save()
                     return True
                 last = "login submitted but logged-in check failed"
@@ -102,7 +111,8 @@ class PortalSession:
                 self.logged_in, self.login_note = False, f"login BLOCKED: {e}"
                 return False
             except Exception as e:  # noqa: BLE001
-                last = f"{type(e).__name__}: {str(e)[:160]}"
+                # the note lands in health.json (committed): never let a credential ride along in an error text
+                last = _scrub(f"{type(e).__name__}: {e}", creds)[:160]
             self.debug_dump(f"login-fail-{i + 1}")
             time.sleep(5 * (2 ** i))
         self.logged_in, self.login_note = False, f"login FAILED after {attempts} tries: {last}"

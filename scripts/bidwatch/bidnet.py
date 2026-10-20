@@ -128,16 +128,14 @@ def login(page, user: str, pw: str) -> None:
     clear_code()  # any code on disk predates this login and is therefore dead
     page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1000)
-    html = page.content()
+    html = _content(page)
     if BOT_RX.search(html) and not total_count(html):
         raise RuntimeError("BidNet robot check served on the login page; try again later")
     if _page_logged_in(page):
         return  # single sign-on already restored the session (IdP session still alive): nothing to type
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
     _submit_login_window(page, user, pw)
-    page.wait_for_load_state("domcontentloaded")
-    page.wait_for_timeout(3000)
-    html = page.content()
+    html = _settle_after_submit(page)
     if BOT_RX.search(html) and not total_count(html):
         raise LoginBlocked("BidNet robot check right after the login form; try again later")
     if CODE_PROMPT_RX.search(visible_text(html)):
@@ -155,11 +153,36 @@ def login(page, user: str, pw: str) -> None:
                                "scanner waits on the prompt")
         _fill_first(page, CODE_INPUT_SEL, code)
         _click_first(page, CODE_BTN_SEL)
-        page.wait_for_load_state("domcontentloaded")
-        page.wait_for_timeout(3000)
+        html = _settle_after_submit(page, code_prompt_is_final=False)
         clear_code()
-        if CODE_PROMPT_RX.search(visible_text(page.content())):
+        if CODE_PROMPT_RX.search(visible_text(html)):
             raise LoginBlocked("BidNet rejected the confirmation code (expired or mistyped); get a fresh one")
+
+
+def _settle_after_submit(page, timeout_s: float = 25.0, code_prompt_is_final: bool = True) -> str:
+    """After the login (or code) POST, BidNet hops www -> idp -> SAML post back -> www: several navigations,
+    some started by script after a page has loaded. A fixed 3 s wait read the page mid-hop (2026-10-20 05:16,
+    endurance E3 check 4: attempt 1 failed although its saved page was already logged in). Wait for a final
+    state instead: logged in, the code prompt (when it counts as final), or a robot check. At the deadline,
+    return whatever is there and let the caller decide."""
+    deadline = time.time() + timeout_s
+    html = ""
+    while True:
+        try:
+            page.wait_for_load_state("load", timeout=5000)
+            html = page.content()
+        except Exception:  # noqa: BLE001 - still navigating; look again
+            html = ""
+        if html:
+            if _page_logged_in(page):
+                return html
+            if code_prompt_is_final and CODE_PROMPT_RX.search(visible_text(html)):
+                return html
+            if BOT_RX.search(html) and not total_count(html):
+                return html
+        if time.time() >= deadline:
+            return html
+        page.wait_for_timeout(1000)
 
 
 LOGIN_TOGGLE_SEL = ["#header_btnLogin", "#loginLinkCustom", "button.loginButton", "a[href='/public/authentication/login']"]
@@ -244,7 +267,7 @@ def is_logged_in(page) -> bool:
     useless after an SSO redirect.)"""
     page.goto(_home(), wait_until="domcontentloaded")
     page.wait_for_timeout(1500)
-    html = page.content()
+    html = _content(page)
     if BOT_RX.search(html) and not total_count(html):
         return False
     if "bidnet" not in (page.title() or "").lower():
