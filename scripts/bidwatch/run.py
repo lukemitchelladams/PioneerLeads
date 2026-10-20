@@ -133,14 +133,22 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["bidnet"]["complete"] = False
         health["bidnet"]["login_note"] = f"COOL-DOWN after a robot check, until {bidnet.cooldown_until()}"
 
+    br = None
     if browser_sources:
         from scripts.bidwatch.browser import Browser, PortalSession
-        br = Browser()
+        try:
+            br = Browser()
+        except Exception as e:  # noqa: BLE001 - Chromium missing or broken: SAM.gov still runs
+            for s in browser_sources:
+                health[s]["errors"].append(f"browser did not start: {type(e).__name__}: {str(e)[:150]}")
+                health[s]["complete"] = False
+    if br:
         try:
             if "bidnet" in browser_sources:
                 h = health["bidnet"]
-                ses = PortalSession(br, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+                ses = None
                 try:
+                    ses = PortalSession(br, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
                     rows, errs, totals = bidnet.collect_open(ses, keywords)
@@ -160,17 +168,28 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                     for r in rows.values():
                         found[key(r)] = r
                     h["count"] = len(rows)
-                    _enrich_and_download(ses, bidnet, found, "bidnet", profiles, watched_keys, prev,
-                                         enrich_details, downloads, h)
+                    if totals.get("_bot_check"):
+                        # BidNet is refusing pages: every detail page would be refused too (and prolong the block)
+                        h["errors"].append("detail pages and downloads skipped: BidNet robot check this scan")
+                        _restore_detail(found, prev, "bidnet")
+                    else:
+                        _enrich_and_download(ses, bidnet, found, "bidnet", profiles, watched_keys, prev,
+                                             enrich_details, downloads, h)
+                except Exception as e:  # noqa: BLE001 - one source failing must not cost the others their scan
+                    h["errors"].append(f"BidNet scan stopped: {type(e).__name__}: {str(e)[:150]}")
+                    h["complete"] = False
+                    _restore_detail(found, prev, "bidnet")
                 finally:
-                    ses.close()
+                    if ses:
+                        ses.close()
             if "bonfire" in browser_sources:
                 h = health["bonfire"]
                 orgs = load_json(Path(__file__).resolve().parents[2] / "bids/_watch/watch_profiles.json", {}) \
                     .get("bonfire_orgs", ["parkeronline"])
-                ses = PortalSession(br, "bonfire", lambda p, u, pw: bonfire.login(p, u, pw, orgs[0]),
-                                    lambda p: bonfire.is_logged_in(p, orgs[0]), bonfire.CREDS)
+                ses = None
                 try:
+                    ses = PortalSession(br, "bonfire", lambda p, u, pw: bonfire.login(p, u, pw, orgs[0]),
+                                        lambda p: bonfire.is_logged_in(p, orgs[0]), bonfire.CREDS)
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
                     for org in orgs:
@@ -181,8 +200,13 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                             found[key(r)] = r
                     _enrich_and_download(ses, bonfire, found, "bonfire", profiles, watched_keys, prev,
                                          enrich_details, downloads, h)
+                except Exception as e:  # noqa: BLE001
+                    h["errors"].append(f"Bonfire scan stopped: {type(e).__name__}: {str(e)[:150]}")
+                    h["complete"] = False
+                    _restore_detail(found, prev, "bonfire")
                 finally:
-                    ses.close()
+                    if ses:
+                        ses.close()
         finally:
             br.close()
 
@@ -375,6 +399,23 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
 DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description")
 
 
+def _keep_detail(row: dict, old: dict) -> dict:
+    """The listing row's fresh facts over an earlier detail read, without letting the row's blanks (agency "",
+    no documents) erase what a detail page said."""
+    out = {**{f: v for f, v in old.items() if f != "last_seen"}, **row}
+    for f in DETAIL_FIELDS:
+        if not row.get(f) and old.get(f):
+            out[f] = old[f]
+    return out
+
+
+def _restore_detail(found: dict, prev: dict, source: str) -> None:
+    """After a skipped or broken detail pass, give each listed bid back the detail an earlier scan read."""
+    for k, b in list(found.items()):
+        if b.get("source") == source and k in prev and not b.get("detail_at"):
+            found[k] = _keep_detail(b, prev[k])
+
+
 def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h):
     if not enrich_details:
         return
@@ -394,9 +435,8 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if source == "bidnet" and not ses.logged_in and not is_w:
             continue
         if recently or blocked:
-            found[k] = {**{f: v for f, v in old.items() if f not in ("last_seen",)}, **b}
+            found[k] = _keep_detail(b, old)
             continue
-        kept = {f: v for f, v in old.items() if f not in ("last_seen",)}
         try:
             got = mod.enrich(ses, b)
             # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
@@ -407,16 +447,30 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                     got[f] = old[f]
             found[k] = {**got, "detail_at": iso()}
         except Exception as e:  # noqa: BLE001
-            found[k] = {**kept, **b}
-            if type(e).__name__ == "Challenged":  # Cloudflare: every other detail page will fail the same way
+            found[k] = _keep_detail(b, old)
+            if type(e).__name__ == "Challenged":  # robot check / Cloudflare: every other page will fail the same way
                 blocked = str(e)
                 h["errors"].append(f"detail pages blocked: {e}")
                 continue
             h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
         if is_w and ses.logged_in and hasattr(mod, "download_docs"):
-            got = mod.download_docs(ses, found[k])  # only files not already on disk
+            try:
+                got = mod.download_docs(ses, found[k])  # only files not already on disk
+            except Exception as e:  # noqa: BLE001
+                got = []
+                if type(e).__name__ == "Challenged":
+                    blocked = str(e)
+                    h["errors"].append(f"downloads stopped: {e}")
+                else:
+                    h["errors"].append(f"download {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
             if got:
                 downloads[k] = got
+            if hasattr(mod, "doc_path"):
+                docs = (found[k].get("documents") or [])[:60]
+                missing = [d for d in docs if not ((pth := mod.doc_path(found[k], d)) and pth.is_file())]
+                if missing:
+                    h["errors"].append(f"{b.get('title', '')[:60]}: {len(missing)} of {len(docs)} documents not "
+                                       "downloaded yet (tried again next scan)")
 
 
 def _diff(old: dict, new: dict) -> list[str]:
@@ -576,6 +630,20 @@ def git_sync(note: str = "") -> str:
         return f"sync failed: {type(e).__name__}"
 
 
+MAX_PUSH_BYTES = 95 * 1024 * 1024  # GitHub refuses files over 100 MB, and one such commit would block every push
+
+
+def _hold_back_large() -> list[str]:
+    """Unstage any staged file over MAX_PUSH_BYTES (a huge drawing set, say): it stays on disk, the push goes on."""
+    held = []
+    for n in filter(None, _git("diff", "--cached", "--name-only", "-z", check=False).stdout.split("\0")):
+        p = REPO / n
+        if p.is_file() and p.stat().st_size > MAX_PUSH_BYTES:
+            _git("reset", "-q", "--", n, check=False)
+            held.append(n)
+    return held
+
+
 def git_push_results(when: str, extra_paths: list[str] | None = None) -> str:
     """After a cycle: rebuild dashboard data, commit the generated files, rebase onto upstream keeping OUR
     freshly generated versions on conflict, push with backoff. Returns a one-line result. Never raises."""
@@ -583,8 +651,9 @@ def git_push_results(when: str, extra_paths: list[str] | None = None) -> str:
         subprocess.run([sys.executable, str(REPO / "scripts/build_dashboard_data.py")], cwd=REPO,
                        capture_output=True, text=True, timeout=300)
         _git("add", "-A", "--", *PUSH_PATHS, *(extra_paths or []))
+        held = _hold_back_large()
         if _git("diff", "--cached", "--quiet", check=False).returncode == 0:
-            return "nothing new to push"
+            return "nothing new to push" + (f" (held back {len(held)} file(s) over 95 MB: {held[:3]})" if held else "")
         trailer = os.environ.get("BIDWATCH_COMMIT_TRAILER", "Co-Authored-By: Claude <noreply@anthropic.com>").replace("\\n", "\n")
         _git("commit", "-q", "-m", f"bidwatch: live scan {when}\n\n{trailer}")
         br = _branch()
@@ -595,7 +664,8 @@ def git_push_results(when: str, extra_paths: list[str] | None = None) -> str:
                 # rebase: "theirs" = the commit being replayed = our regenerated files
                 _git("rebase", "-q", "-X", "theirs", f"origin/{br}")
                 _git("push", "-q", "origin", br)
-                return f"pushed {_git('rev-parse', '--short', 'HEAD').stdout.strip()}"
+                return f"pushed {_git('rev-parse', '--short', 'HEAD').stdout.strip()}" + \
+                    (f" (held back {len(held)} file(s) over 95 MB: {held[:3]})" if held else "")
             except subprocess.CalledProcessError as e:
                 last = (e.stderr or e.stdout or "")[-200:]
                 _git("rebase", "--abort", check=False)

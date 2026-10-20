@@ -59,6 +59,10 @@ LOGIN_PASS_SEL = ["#loginBox_j_password", "input[name='j_password']", "input[nam
                   "input[type='password']"]
 LOGIN_BTN_SEL = ["#loginWindowButton", "#loginWindowForm button[type='submit']", "button[type='submit']",
                  "input[type='submit']", "button:has-text('Login')", "button:has-text('Log in')"]
+class Challenged(RuntimeError):
+    """BidNet served its AWS WAF robot check instead of a page: stop the detail pass (run.py matches the name)."""
+
+
 LOGIN_FORM_SEL = "input[name='j_username']"
 # A login whose page settles back on the login form was rejected (wrong or stale password). Re-submitting the
 # same credentials every attempt and every hour risks an account lockout, so a rejection is recorded (a hash of
@@ -142,7 +146,8 @@ def login(page, user: str, pw: str) -> None:
     page.wait_for_timeout(1000)
     html = _content(page)
     if BOT_RX.search(html) and not total_count(html):
-        raise RuntimeError("BidNet robot check served on the login page; try again later")
+        start_cooldown()
+        raise LoginBlocked("BidNet robot check on the login page: no login attempted, cool-down started")
     if _page_logged_in(page):
         return  # single sign-on already restored the session (IdP session still alive): nothing to type
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
@@ -150,7 +155,8 @@ def login(page, user: str, pw: str) -> None:
     _submit_login_window(page, user, pw)
     html = _settle_after_submit(page)
     if BOT_RX.search(html) and not total_count(html):
-        raise LoginBlocked("BidNet robot check right after the login form; try again later")
+        start_cooldown()
+        raise LoginBlocked("BidNet robot check right after the login form: cool-down started")
     if not _page_logged_in(page) and not CODE_PROMPT_RX.search(visible_text(html)) and _login_form_visible(page):
         # Every logged-out page carries the (collapsed) login form, so the form alone proves nothing: it is a
         # rejection when the page says so, or when the submit went somewhere and came back to a login form.
@@ -425,6 +431,39 @@ def _parse_listing_generic(soup, base_url: str, seen: set) -> list[dict]:
     return rows
 
 
+def parse_prebid_events(soup) -> list[dict]:
+    """BidNet's own "Pre-Bidding Events" block (verified 2026-10-20 on CU UCB001284 and Jeffco's Boettcher chiller):
+    one li per event, labelled fields Event Type / Attendance (Mandatory, Recommended, ...) / Event date / Location /
+    Event Note. These are the portal's structured fields, so they beat any reading of the description text."""
+    out = []
+    for li in soup.select(".preBidEventList li"):
+        f = {}
+        for fld in li.select(".mets-field"):
+            body = fld.select_one(".mets-field-body")
+            for sc in (body.select("script") if body else []):
+                sc.decompose()
+            f[_txt(fld.select_one(".mets-field-label")).lower()] = _txt(body)
+        if not f.get("event date") and not f.get("attendance"):
+            continue
+        att = (f.get("attendance") or "").strip()
+        mand = True if re.search(r"mandatory|required", att, re.I) else (False if att else None)
+        out.append({"type": f.get("event type") or "", "attendance": att, "date": parse_date(f.get("event date") or ""),
+                    "when": f.get("event date") or "", "location": f.get("location") or "", "note": f.get("event note") or "",
+                    "mandatory": mand})
+    return out
+
+
+def _events_prebid(soup) -> dict | None:
+    """The pre-bid record from BidNet's events block: a mandatory event first, then the earliest."""
+    ev = parse_prebid_events(soup)
+    if not ev:
+        return None
+    e = sorted(ev, key=lambda x: (x["mandatory"] is not True, x["date"] or "9999"))[0]
+    return {"date": e["date"], "mandatory": e["mandatory"], "source": "bidnet events",
+            "quote": (f"Pre-Bidding Events: Event Type {e['type']}, Attendance {e['attendance']}, Event date {e['when']}, "
+                      f"Location {e['location']}" + (f", Note: {e['note']}" if e["note"] else ""))[:420]}
+
+
 def parse_detail(html: str, url: str = "") -> dict:
     soup = BeautifulSoup(html, "lxml")
     text = " ".join(soup.get_text(" ").split())
@@ -439,7 +478,7 @@ def parse_detail(html: str, url: str = "") -> dict:
         "closing": _labeled_date(text, r"closing date|clos\w* date|due date|submission deadline|bid due"),
         "published": _labeled_date(text, r"publication date|published|issue date|posted"),
         "questions_due": _labeled_date(text, r"question\w* (due|deadline)|deadline for questions"),
-        "prebid": extract_prebid(text),
+        "prebid": _events_prebid(soup) or extract_prebid(text),
         "documents": sorted(uniq.values(), key=lambda d: d["name"]),
         "closing_text": _labeled_text(text, r"Closing Date", r"\d{1,2}/\d{1,2}/\d{4}(?: \d{1,2}:\d{2} [AP]M(?: [A-Z]{3})?)?"),
         "agency": _field(text, "Issuing Organization"),
@@ -508,6 +547,7 @@ def _content(page, tries: int = 4) -> str:
 
 def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict, max_pages: int) -> None:
     page, url, n = session.page, start, 0
+    walk_ids: set[str] = set()
     while url and n < max_pages:
         n += 1
         try:
@@ -533,11 +573,18 @@ def _walk(session, name: str, start: str, out: dict, errors: list, totals: dict,
                 errors.append(f"BidNet list parsed 0 rows: {url} (debug HTML saved)")
                 totals.setdefault("_failed", []).append(name)
                 return
+        fresh = {r["id"] for r in rows} - walk_ids
+        walk_ids |= fresh
         for r in rows:
             r["list"] = "aggregate" if "AGGREGATE" in name else "rmeps"
             out.setdefault(r["id"], {**r, "source": "bidnet"})
+        if n > 1 and not fresh:
+            break  # the site served a page this walk already had (a disabled Next link on the last page)
         # the next link carries no query string; keep ours so the tab/keyword filter sticks
         url = page_url(start, n + 1) if (nxt and rows) else None
+
+
+KW_FALLBACK_MAX = 12
 
 
 def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
@@ -558,9 +605,18 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
                            and bool(expected) and len(out) >= expected and not totals.get("_bot_check"))
     if totals.get("_bot_check"):
         return _drop_closed(out, totals), errors, totals
+    if totals.get("_failed") and not force_keywords:
+        # a tab that failed means BidNet is struggling: dozens of keyword searches would only add load. The scan
+        # is marked incomplete, so the previous results are carried forward instead.
+        errors.append("BidNet statewide tab failed; keyword searches skipped, previous results carried forward")
+        return _drop_closed(out, totals), errors, totals
     if force_keywords or not expected or len(out) < expected:
         if not force_keywords:
             errors.append(f"BidNet statewide list short ({len(out)} of {expected or '?'}); ran keyword searches")
+            # at most KW_FALLBACK_MAX searches per scan, rotating hourly so every keyword is covered each day
+            if len(keywords) > KW_FALLBACK_MAX:
+                off = (time.gmtime().tm_hour * KW_FALLBACK_MAX) % len(keywords)
+                keywords = (keywords[off:] + keywords[:off])[:KW_FALLBACK_MAX]
         for k in keywords:
             if totals.get("_bot_check"):
                 break
@@ -605,8 +661,12 @@ def enrich(session, bid: dict) -> dict:
     page = session.page
     page.goto(bid["url"], wait_until="domcontentloaded")
     page.wait_for_timeout(1200)
-    d = parse_detail(_content(page), bid["url"])
-    if d.get("login_required_for_docs") and not session.logged_in:
+    html = _content(page)
+    if BOT_RX.search(html) and not total_count(html):
+        start_cooldown()
+        raise Challenged("BidNet robot check on a detail page: detail pass stopped, cool-down started")
+    d = parse_detail(html, bid["url"])
+    if d.get("login_required_for_docs") and not session.logged_in and (d.get("prebid") or {}).get("source") != "bidnet events":
         d["prebid"] = None  # the description is locked, so any 'pre-bid' hit came from page chrome
     if session.logged_in:
         try:
@@ -627,6 +687,12 @@ def enrich(session, bid: dict) -> dict:
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}
 
 
+def doc_path(bid: dict, d: dict):
+    """Where download_docs saves document `d` of `bid` (None when the name is unusable)."""
+    safe = re.sub(r"[^\w.\- ]", "_", d.get("name") or "").strip()
+    return (DOWNLOAD_DIR / "bidnet" / bid["id"] / safe) if safe else None
+
+
 def download_docs(session, bid: dict, skip_existing: bool = True) -> list[str]:
     """Logged-in only. Saves each document not already on disk; returns the paths saved this call. Checking the
     disk (not the previous scan's document list) also fetches the files of a bid that became watched after its
@@ -639,7 +705,7 @@ def download_docs(session, bid: dict, skip_existing: bool = True) -> list[str]:
         if skip_existing and safe and (dest / safe).is_file() and (dest / safe).stat().st_size > 0:
             continue
         try:
-            with session.page.expect_download(timeout=45000) as dl:
+            with session.page.expect_download(timeout=20000) as dl:  # the wait for the download to start
                 try:
                     session.page.goto(d["url"])
                 except Exception:  # noqa: BLE001 - Chromium aborts navigation when a download starts
@@ -659,6 +725,11 @@ def download_docs(session, bid: dict, skip_existing: bool = True) -> list[str]:
                 target = dest / (safe or d["url"].rstrip("/").rsplit("/", 1)[-1])
                 target.write_bytes(body)
                 saved.append(str(target))
+            elif "text/html" in ctype and BOT_RX.search(body[:200000].decode("utf-8", "ignore")):
+                start_cooldown()
+                raise Challenged("BidNet robot check instead of a document: downloads stopped, cool-down started")
+        except Challenged:
+            raise
         except Exception:  # noqa: BLE001
             continue
     return saved

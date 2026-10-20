@@ -155,6 +155,13 @@ check("bidnet page_url keeps query", bidnet.page_url(bidnet.CO_OPEN + "?keywords
 d = bidnet.parse_detail((FX / "bidnet_detail_littleton_2126.html").read_text())
 check("real bidnet detail: closing + time", d["closing"] == "2026-10-28" and d["closing_text"] == "10/28/2026 02:00 PM MDT", d)
 check("real bidnet detail: locked fields not invented", d["login_required_for_docs"] and d["agency"] is None and d["sol"] is None, d)
+_ev_cu = bidnet.parse_detail((FX / "bidnet_prebid_events_cu_ucb001284.html").read_text()
+                             + "<p>Site visit optional for returning vendors.</p>")["prebid"]
+check("BidNet events block: 'Attendance Mandatory' is MANDATORY even when the text elsewhere says optional",
+      _ev_cu and _ev_cu["mandatory"] is True and _ev_cu["date"] == "2026-10-01" and _ev_cu["source"] == "bidnet events", _ev_cu)
+_ev_bo = bidnet.parse_detail((FX / "bidnet_prebid_events_boettcher.html").read_text())["prebid"]
+check("BidNet events block: 'Attendance Recommended' is not mandatory", _ev_bo and _ev_bo["mandatory"] is False
+      and _ev_bo["date"] == "2026-10-26" and "Recommended" in _ev_bo["quote"], _ev_bo)
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -186,6 +193,8 @@ USER, PW = "luke@brownbisonco.com", "s3cret-test-only"
 KW_HITS = {"n": 0}
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
+HITS2 = {"home": 0, "list": 0, "detail": 0}
+ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
 
 
 class H(http.server.BaseHTTPRequestHandler):
@@ -210,6 +219,9 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send("<form method=post action='/public/authentication/login'><input name='j_username'>"
                               "<input name='j_password' type='password'><button type='submit'>Log in</button></form>")
         if p == "/colorado":
+            HITS2["home"] += 1
+            if os.environ.get("FAKE_ROBOT_HOME"):
+                return self._send(ROBOT)
             # mirrors the real site: the login window sits on every page until you are logged in
             form = ("<form id='loginWindowForm' method='post' action='/public/authentication/login'>"
                     "<input id='loginBox_j_username' name='j_username'><input id='loginBox_j_password' name='j_password' type='password'>"
@@ -218,6 +230,14 @@ class H(http.server.BaseHTTPRequestHandler):
             return self._send(f"<html><head><title>Colorado Bids | Fake BidNet Direct</title></head><body>"
                               f"<a aria-label='my account' href='#'>avatar</a>{body}</body></html>")
         if p.startswith("/colorado/solicitations/open-bids"):
+            HITS2["list"] += 1
+            if os.environ.get("FAKE_ROBOT_LIST"):
+                return self._send(ROBOT)
+            if "selectedContent=STUCK" in p:  # every page the same rows plus a Next link, like a disabled last-page link
+                return self._send("<span class='simpleResultsNumResults'>2 Open Solicitations</span><table>"
+                                  "<tr><td><a href='/colorado/x/solicitations/A/0000600001'>Stuck A</a></td><td>Closing 11/20/2026</td></tr>"
+                                  "<tr><td><a href='/colorado/x/solicitations/B/0000600002'>Stuck B</a></td><td>Closing 11/20/2026</td></tr>"
+                                  "</table><a class='next' href='javascript:;'>Next</a>")
             if "selectedContent=BROKEN" in p:
                 return self._send("<h1>Service unavailable</h1>", 503)
             if "/page2" in p:
@@ -235,8 +255,14 @@ class H(http.server.BaseHTTPRequestHandler):
                               "</td><td>Closing 11/20/2026</td></tr><tr><td><a href='/colorado/x/solicitations/Road-Paving/0000500003'>Road Paving 2027</a></td>"
                               "<td>Closing 11/01/2026</td></tr></table><a class='next' href='/colorado/solicitations/open-bids/page2'>Next</a>")
         if "/solicitations/" in p:
-            docs = "<a href='/dl/rfq.pdf'>RFQ.pdf</a>" + ("<a href='/dl/addendum1.pdf'>Addendum 1.pdf</a>" if os.environ.get("FAKE_ADDENDUM") else "")
+            HITS2["detail"] += 1
+            if os.environ.get("FAKE_ROBOT_DETAIL"):
+                return self._send(ROBOT)
+            docs = "<a href='/dl/rfq.pdf'>RFQ.pdf</a>" + ("<a href='/dl/addendum1.pdf'>Addendum 1.pdf</a>" if os.environ.get("FAKE_ADDENDUM") else "") \
+                + ("<a href='/dl/missing.pdf'>Missing.pdf</a>" if os.environ.get("FAKE_MISSING_DOC") else "")
             return self._send(f"<h1>Bid</h1><div>Closing Date 11/20/2026</div><p>MANDATORY pre-bid site walk on 11/02/2026 at 9 AM.</p>{docs}")
+        if p.startswith("/dl/missing"):
+            return self._send("not found", 404)
         if p.startswith("/dl/"):
             if not self._authed():
                 return self._send("login required", 403)
@@ -295,6 +321,9 @@ bidnet.BASE, bidnet.LOGIN_URL, bidnet.CO_OPEN = BASE, BASE + "/public/authentica
 os.environ["BIDNET_USER"], os.environ["BIDNET_PASS"] = USER, PW
 
 from scripts.bidwatch.browser import Browser, PortalSession  # noqa: E402
+import scripts.bidwatch.browser as _brmod  # noqa: E402
+
+_brmod.DEBUG_DIR = TMP / "debug"  # fake-portal debug dumps stay out of the real bids/_watch/debug
 
 b = Browser()
 s1 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
@@ -536,6 +565,102 @@ for _label, _enrich in (("thin page", lambda ses, b: {**b, "documents": [], "pre
     _r = _found["bidnet:9"]
     check(f"{_label}: earlier documents and pre-bid are kept (no false addendum next scan)",
           _r.get("documents") == _old["documents"] and _r.get("prebid") == _old["prebid"], _r)
+
+# second review pass (2026-10-20 07:50 UTC)
+(TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+os.environ["FAKE_ROBOT_DETAIL"] = "1"
+_d0 = HITS2["detail"]
+r11 = run.scan(["bidnet"])
+_h11 = r11["health"]["bidnet"]
+check("robot check on a detail page: the pass stops at the first one, cool-down starts, stored detail kept",
+      HITS2["detail"] - _d0 == 1 and bidnet.cooldown_until() and any("blocked" in e for e in _h11["errors"])
+      and r11["found"]["bidnet:0000500002"].get("documents"), (HITS2, _d0, _h11["errors"]))
+del os.environ["FAKE_ROBOT_DETAIL"]
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+os.environ["FAKE_ROBOT_LIST"] = "1"
+_d0 = HITS2["detail"]
+r12 = run.scan(["bidnet"])
+check("robot check on the list: no detail pages or downloads; earlier rows and their detail carried forward",
+      HITS2["detail"] == _d0 and r12["found"].get("bidnet:0000500002", {}).get("documents") and not r12["closed"],
+      (r12["health"]["bidnet"]["errors"], list(r12["closed"])))
+del os.environ["FAKE_ROBOT_LIST"]
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+
+SESSIONS.clear()
+os.environ["FAKE_ROBOT_HOME"] = "1"
+_hh0, _bad0 = HITS2["home"], BAD["n"]
+b3 = Browser()
+s11 = PortalSession(b3, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+check("robot check on the login page: BLOCKED at once, no password sent, no retries, cool-down",
+      not s11.ensure_login() and "robot check" in s11.login_note and HITS2["home"] - _hh0 == 2 and BAD["n"] == _bad0
+      and bidnet.cooldown_until(), (s11.login_note, HITS2))
+s11.close()
+del os.environ["FAKE_ROBOT_HOME"]
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+
+s12 = PortalSession(b3, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+_o, _e, _tt = {}, [], {}
+_l0 = HITS2["list"]
+bidnet._walk(s12, "statewide STUCK", f"{bidnet.CO_OPEN}?selectedContent=STUCK", _o, _e, _tt, 40)
+check("paging stops when the site serves a page this walk already had", HITS2["list"] - _l0 == 2 and len(_o) == 2,
+      (HITS2["list"] - _l0, len(_o)))
+_tabs = bidnet.CO_TABS
+bidnet.CO_TABS = ["BUYER", "BROKEN"]
+_k0 = KW_HITS["n"]
+_r2, _e2, _t2 = bidnet.collect_open(s12, ["hvac", "boiler"])
+check("a failed statewide tab skips the keyword searches (carry-forward covers it)",
+      KW_HITS["n"] == _k0 and _t2.get("_complete") is False, (KW_HITS["n"] - _k0, _e2))
+bidnet.CO_TABS = ["BUYER"]
+_tc = bidnet.total_count
+bidnet.total_count = lambda html: 99 if "Open Solicitations" in html else _tc(html)
+_k0 = KW_HITS["n"]
+bidnet.collect_open(s12, [f"kw{i}" for i in range(20)])
+bidnet.total_count = _tc
+bidnet.CO_TABS = _tabs
+check("a short list runs at most 12 keyword searches per scan", KW_HITS["n"] - _k0 == 12, KW_HITS["n"] - _k0)
+s12.close()
+b3.close()
+
+os.environ["FAKE_MISSING_DOC"] = "1"
+r13 = run.scan(["bidnet"])
+check("a document that does not download is reported (and tried again next scan)",
+      any("not downloaded yet" in e for e in r13["health"]["bidnet"]["errors"]), r13["health"]["bidnet"]["errors"])
+del os.environ["FAKE_MISSING_DOC"]
+
+_B = _brmod.Browser
+
+
+def _no_browser(*a, **k):
+    raise RuntimeError("Executable doesn't exist at /opt/pw-browsers/chromium")
+
+
+_brmod.Browser = _no_browser
+r14 = run.scan(["bidnet"])
+_brmod.Browser = _B
+check("browser fails to start: the scan still finishes, BidNet marked incomplete and its rows kept",
+      any("browser did not start" in e for e in r14["health"]["bidnet"]["errors"])
+      and r14["health"]["bidnet"].get("carried_forward") and "bidnet:0000500002" in r14["found"], r14["health"]["bidnet"]["errors"])
+
+import subprocess as _sp  # noqa: E402
+
+_gr = TMP / "gitrepo"
+_gr.mkdir()
+for _cmd in (["git", "init", "-q"], ["git", "config", "user.email", "t@example.invalid"], ["git", "config", "user.name", "t"]):
+    _sp.run(_cmd, cwd=_gr, check=True)
+(_gr / "README").write_text("x")
+_sp.run(["git", "add", "-A"], cwd=_gr, check=True)
+_sp.run(["git", "commit", "-q", "-m", "init"], cwd=_gr, check=True)
+(_gr / "small.txt").write_text("ok")
+(_gr / "big.bin").write_bytes(b"x" * 64)
+_sp.run(["git", "add", "-A"], cwd=_gr, check=True)
+_REPO1, _MAX = run.REPO, run.MAX_PUSH_BYTES
+run.REPO, run.MAX_PUSH_BYTES = _gr, 32
+_held = run._hold_back_large()
+_staged = _sp.run(["git", "diff", "--cached", "--name-only"], cwd=_gr, capture_output=True, text=True).stdout.split()
+run.REPO, run.MAX_PUSH_BYTES = _REPO1, _MAX
+check("a file over the push limit is held back; the rest is still committed", _held == ["big.bin"] and _staged == ["small.txt"],
+      (_held, _staged))
 # a stale code-needed marker expires so a new attempt is allowed (max one code email per 6 h)
 common.CODE_NEEDED_MARKER.write_text("2026-01-01T00:00:00+00:00")
 os.utime(common.CODE_NEEDED_MARKER, (time.time() - 7 * 3600,) * 2)
