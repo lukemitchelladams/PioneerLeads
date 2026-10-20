@@ -4313,7 +4313,7 @@
   "closing": "2026-11-06",
   "posted": "2026-09-21",
   "prebid_date": "2026-10-13",
-  "prebid_mandatory": "Mandatory",
+  "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,

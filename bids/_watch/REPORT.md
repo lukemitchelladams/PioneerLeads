@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-20T08:35:50+00:00
+# Bid watch report — 2026-10-20T09:36:03+00:00
 
-**Headline:** 12 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 586 | BUYER 400, AGGREGATE 187 | 80 | 2026-10-20T08:35:50+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T08:35:50+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 68 |  | 68 | 2026-10-20T08:35:50+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 586 | BUYER 400, AGGREGATE 187 | 80 | 2026-10-20T09:36:03+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T09:36:03+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 68 |  | 68 | 2026-10-20T09:36:03+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -29,23 +29,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **On-Call Security Access Control Services** (bidnet): pre-bid now 2026-11-03 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1
-- **Boettcher Mansion Chiller Replacement Project** (bidnet): pre-bid now 2026-10-26 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1
-- **Switchgear and Protective Relay Maintenance** (bidnet): pre-bid now 2026-10-27 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1
-- **Parks On-Call Mowing Services** (bidnet): pre-bid now 2026-10-15 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1
-- **Dome Glass Replacement** (bidnet): pre-bid now 2026-10-15 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Dome-Glass-Replacement/0000439360?purchasingGroupId=8409951&origin=1
-- **On-Call General Facilities Trade Services** (bidnet): pre-bid now 2026-10-12 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1
-- **Fairgrounds Turfgrass Conversion** (bidnet): pre-bid now 2026-10-19 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fairgrounds-Turfgrass-Conversion/0000438945?purchasingGroupId=8409951&origin=1
-- **003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8** (bidnet): pre-bid now 2026-10-14 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1
-- **On-Call Commercial Plumbing Services** (bidnet): pre-bid now 2026-10-09 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1
-- **CU Boulder-UCB001284-RL2-Lighting Upgrades-Hard Lids and Emergency Lighting** (bidnet): pre-bid now 2026-10-01 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1
-- **District Wide Custodial Services** (bidnet): pre-bid now 2026-10-13 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1
-- **City Admin Building (CAB) Building Automation System (BAS) Modernization** (bidnet): pre-bid now 2026-09-25 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1
-
-## Watched bids NOT seen this scan (closed, moved, or source blind)
-
-- DCSD 003-27 Mowing (CRM-tracked) (bidnet)
-- Douglas County 036-26 Janitorial (CRM-tracked) (bidnet)
+- **District Wide Custodial Services** (bidnet): pre-bid now 2026-10-13 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -169,7 +153,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | STATE, DEPARTMENT OF.STATE, DEPARTMENT O | Nanotechnology Certified Replacement Filter | 2026-11-05 (16d) |  | https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view |
 | brownbison | bidnet |  | RFP Town of Parker Generator Maintenance & Repair Services | 2026-11-06 (17d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-Town-of-Parker-Generator-Maintenance-Repair-Services/0000440494?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Hazardous Materials Spill Response Services | 2026-11-06 (17d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Hazardous-Materials-Spill-Response-Services/0000439736?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Cherry Creek School District #5 | District Wide Custodial Services | 2026-11-06 (17d) | 2026-10-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Cherry Creek School District #5 | District Wide Custodial Services | 2026-11-06 (17d) | 2026-10-13 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | PROPL GEAR REDUCE | 2026-11-06 (17d) |  | https://sam.gov/workspace/contract/opp/10b03ac3597744dd9017bde2032a1fe3/view |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder-UCB001622-SITE-NBC-Irrigation System & Landscape Improvements | 2026-11-09 (20d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Roof Repair Services | 2026-11-09 (20d) | 2026-10-21 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Roof-Repair-Services/0000440260?purchasingGroupId=8409951&origin=1 |
