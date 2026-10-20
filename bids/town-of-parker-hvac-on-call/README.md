@@ -13,7 +13,7 @@
 | Due date | unknown |
 | Contract type | On-call / as-needed HVAC service (assumed from title; confirm) |
 | Required response time | **unknown — see vendor-questions-york.md** |
-| Status | Waiting on Rich Carroll, who is sending the bid docs Monday 2026-10-20 (Luke, 2026-10-19) |
+| Status | **RFP 26-028, closes Thu 2026-10-22 15:00 MDT on EUNA.** Rich's filled-in packet received 2026-10-20 (spring prices, rates, charges); fall prices, references, techs/EPA 608, license numbers, disposal and the renewal % still missing. See section 2026-10-20 below. |
 
 ## What we need from the solicitation (in priority order)
 
@@ -82,3 +82,23 @@ Rich Carroll's $100/$140 rates go into the Labor & Charges tab at +10% ($110/$15
 per-facility seasonal PM prices (9 rows), weekend and holiday rates, trip charge, parts markup, refrigerant
 pricing, 3 references, tech licenses/EPA 608 certs, guaranteed emergency response time.
 Luke's CRM is also building this proposal (brief 10/19); coordinate so only one submission goes in.
+
+## 2026-10-20: Rich's filled-in packet (MAIN)
+- Rich sent the 3-page fill-in packet back by hand (to Luke's personal Gmail; Luke forwarded it to luke@brownbisonco.com)
+  plus Air Force Filter and Supply's filter quotes for every Town building. Full transcription with numbers:
+  `private/RICH-PACKET-TRANSCRIBED.md` (git-ignored: prices stay off the public repo until the bid closes).
+- In hand: spring cooling-visit price for all 9 buildings; labor rates (one rate for tech and senior, no helper);
+  1-hour minimum; parts markup; refrigerant per lb; no call-out fee; travel included; lifts at cost; 12-month labor
+  warranty, manufacturer parts warranty; **4-hour guaranteed on-site emergency response**; regular hours 8:00-4:30.
+- Missing: fall heating-visit prices (8 buildings), disposal fees, number of techs and EPA 608 cards, license numbers
+  (he wrote "multiple: Parker, Aurora"), all 3 references, exclusions, and the renewal increase (he wrote "20" % per
+  year: confirm 20% or 2.0%).
+- **Shop address:** Rich wrote "Air Comfort York, Vista Drive, Larkspur". Public listings say 10290 S Progress Way,
+  Parker. The proposal now says Larkspur; get the street number.
+- **Filters:** the RFP and Appendix A never mention filters. AFF supplies the Town filters quarterly; one full AFF
+  change-out is 542 filters, more than half of the cost in MERV-15 "annual" filters at Police and Town Hall, and it
+  includes equipment outside Appendix A. Rich included filters in his visit prices and offered to break them out.
+  Recommendation to Luke: bid visits without filters, filters as a separate priced line. Schedule: `filter-schedule.md`
+  (42 of 46 assets sized from AFF's lists; RC RTU 6, RC PDU 1/2 and TH RTU 7 still unknown).
+- Build: `submission/build_price_workbook.py` fills the Town's own workbook from `private/bid_inputs.json` (Rich's
+  numbers + 10%) and lists every blank; `submission/6.1.2-supplier-questions-response.md` is the Q1-Q10 draft.

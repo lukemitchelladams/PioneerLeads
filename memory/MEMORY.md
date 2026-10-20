@@ -554,3 +554,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   pricing email). Adams IFB conflict: 12.1 "A representative of the Contractor is recommended to attend" vs cover/heading
   MANDATORY -> treat as mandatory, ask in writing by 10/27. 12.2 lists "camera" among secure-facility precautions (photos
   may be barred). Exhibits B/C (HUD) not in our PDF. Scanner improvement shipped: RSVP flag on BidNet walks (741e3b6).
+
+- 2026-10-20 09:30 MT (MAIN): **Vendors still email Luke's PERSONAL Gmail (lukemitchelladams@gmail.com), which the session
+  cannot read: the Gmail connector here is luke@brownbisonco.com only; Google Drive is the personal account.** Luke
+  forwards (or add the personal Gmail at claude.ai/customize/connectors). Rich Carroll writes from CARROLL14@msn.com,
+  cc dawn@aircomfortyork.com; cell 303-345-4331. Gmail attachments: get_message RAW is saved to a tool-results file;
+  decode with scratchpad extract_att.py. Rich's Parker packet transcribed to
+  bids/town-of-parker-hvac-on-call/private/ (git-ignored, prices). New rule of thumb: sub prices and quotes go in
+  bids/*/private/ while the repo is public. Lightning Mobile RTD pricing received (figures off-repo).

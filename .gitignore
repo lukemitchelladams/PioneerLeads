@@ -20,3 +20,6 @@ bids/_watch/samgov_budget.json
 
 # Actions failover: encrypted BidNet session restored from the cache, never committed
 state.enc
+
+# pricing and sub quotes stay off the public repo until the bid closes
+bids/*/private/
