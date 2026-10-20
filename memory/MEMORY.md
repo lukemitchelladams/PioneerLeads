@@ -273,3 +273,4 @@ New BidNet email: El Paso County 26-058 addendum 2. Luke replied to Brent (Light
 - 2026-10-19 15:05 MT hourly: nothing new (GovTribe CO none after 10/14; federal CO and PSC same as 14:05; inbox no new threads).
 - 2026-10-19 16:05 MT hourly: Lightning Mobile COI received (RTD). GovTribe/federal unchanged.
 - 2026-10-19 17:05 MT hourly: nothing new.
+- 2026-10-19 18:05 MT hourly: Colorado Power Wash replied on RTD (wants call 10/20). GovTribe unchanged.

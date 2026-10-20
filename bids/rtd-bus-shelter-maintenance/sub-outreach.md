@@ -7,7 +7,7 @@ Emails were found via search snippets and are NOT verified; expect some bounces.
 | Company | City | Email | Phone | Status |
 |---|---|---|---|---|
 | Lightning Mobile Services / Colorado Graffiti Blasters | Commerce City | info@lminc.net | 720-456-9191 | **REPLIED 2026-10-19: YES, interested** (see below) |
-| Colorado Power Wash | Denver area | info@coloradopowerwash.com | 720-675-7059 | **Sent 2026-10-19** |
+| Colorado Power Wash | Denver area | info@coloradopowerwash.com | 720-675-7059 | **REPLIED 2026-10-19: interested, wants a call Tue 10/20** |
 | Platinum Pressure Washing & Window Cleaning | Denver | Info@platinumpressurewash.com | 303-931-7300 | **Sent 2026-10-19** |
 | Wash On Wheels (since 1985) | Englewood | info@washonwheels.net | 303-937-7181 | Gmail draft, Luke to send |
 | The Wash Squad (franchise) | Centennial | colorado@thewashsquad.com | 303-900-8774 | Gmail draft, Luke to send |
@@ -38,3 +38,7 @@ Brent.Haase@lminc.net, 720-456-9191 office, 303-968-8772 cell; cc Office@lminc.n
 > Snow removal is not in your scope. Please send prices by Friday, November 6, along with the COIs. One question: are
 > you also certified as an SBE with RTD's Small Business Office? RTD only counts its own certification toward the
 > 15% goal.
+
+### Colorado Power Wash (2026-10-19 17:33 MT)
+Interested ("good work we want to learn more about"). Has questions before pricing; asked "Is tomorrow a bad day to talk?"
+Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send the same shelter list + SOW sent to Lightning Mobile.
