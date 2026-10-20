@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-20T07:35:57+00:00
+# Bid watch report — 2026-10-20T08:35:50+00:00
 
-**Headline:** 17 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 12 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 586 | BUYER 400, AGGREGATE 187 | 80 | 2026-10-20T07:35:57+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T07:35:57+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | PARTIAL this run (part of the source failed): earlier rows kept, none closed; API key; +30 from the nightly bulk file | 68 |  | 68 | 2026-10-20T07:35:57+00:00 | 2 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 586 | BUYER 400, AGGREGATE 187 | 80 | 2026-10-20T08:35:50+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 4 |  | 1 | 2026-10-20T08:35:50+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 68 |  | 68 | 2026-10-20T08:35:50+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -22,39 +22,30 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Boiler Chemicals & Treatment Services - TCF | 2026-10-29 (9d) | 2026-10-21 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Environmental Consulting Services | 2026-11-05 (16d) | 2026-10-22 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Environmental-Consulting-Services/0000435118?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Town of Superior - Irrigation tank floating cover replacement | 2026-11-13 (24d) | 2026-10-22 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (27d) | 2026-10-26 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (27d) | 2026-10-26 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Elevator Preventative Maintenance, Repairs and Capital Improvements | 2026-11-12 (23d) | 2026-10-27 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1 |
-|  WATCHED | bidnet | Metro Water Recovery | Switchgear and Protective Relay Maintenance | 2026-11-12 (23d) | 2026-10-27 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1 |
+|  WATCHED | bidnet | Metro Water Recovery | Switchgear and Protective Relay Maintenance | 2026-11-12 (23d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (30d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **CU Boulder-UCB001284-RL2-Lighting Upgrades-Hard Lids and Emergency Lighting** (bidnet): pre-bid now 2026-10-01 mandatory=None — https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1
-- **PGMB Security Gate** (samgov): NEW DOCUMENTS (addendum?): 74d6e47f7ada4f2ca4b51fb29e83162d — https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view
-- **S--BGNDRF CUSTODIAL SERVICES** (samgov): NEW DOCUMENTS (addendum?): 33eba5e2bba944ec8e1b62d216f8e165 — https://sam.gov/workspace/contract/opp/a52ea596b0454511a86648481ad71505/view
-- **Z--SACN Replace Fire Alarms and Intrusions Systems** (samgov): NEW DOCUMENTS (addendum?): 5862074b02a5401ea367916e9374f784, 588f4801ddc74d6589ca69f9ff3fddff, 7eecfc7c55494b97b3450e8792d39b63, 9bc0b40ad10e43db9047284cb8e9d01d, aeb09898df5247238254d64d282c5d58, b68a1dcbc9d040a5ba42ed155b3ef241, c206e1a5793d4632956698d3927e1b78, c27759f36de247a2a12d88176b072987, c49f1e87db984e7baec8261b7b4f — https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view
-- **J041--Trane BAS HVAC  Control System Inspection, Maintenance, Upgrades, and Repair** (samgov): NEW DOCUMENTS (addendum?): 408e6f81202440919bb310a7d9a4bf0d, b86fc264dbc84a149fdfc845edb67730, e34365b2d83749bab5d6ce7b8c3524fa — https://sam.gov/workspace/contract/opp/db84deebdb884ada854ec83ee9a6235c/view
-- **Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner** (samgov): NEW DOCUMENTS (addendum?): 1523223dcdf84aa9a1b0988742346652, 2435e3b38f4e44c2b5f93b2f667d26ed, 3fe43633ddb642dfb610827d95d60710, 49f236646d3e4e19b2e4c0d81df2a026, 53d132abbc014d10ab939a742486e36c, 772ee2df818f4a7e987d8b7148535c47, 9ea4ffc7e3334085aea14bd852559371, b30b18c43bad45c587f5673d88db5246, c68abb8a31c740e88f7ee126dff1 — https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view
-- **Y--Friant Dam HVAC Replacement - JOTFOC** (samgov): NEW DOCUMENTS (addendum?): 2ac7ddffb42e4c899466e9c63cf80bb4 — https://sam.gov/workspace/contract/opp/c197c44e343742a5adde5688821f5075/view
-- **Design-Build Services – STM Security Fencing - North Boundary** (samgov): NEW DOCUMENTS (addendum?): 2535990e4cdd4bad85c4cdd343e5ada0, d284a2e1323e457d9d722d292b355d44 — https://sam.gov/workspace/contract/opp/02fdc748f70d471abfba3cc6f8ac5a06/view
-- **Ergonomic Drum Handlers** (samgov): NEW DOCUMENTS (addendum?): e9c338fa5ab8421a8e463e0ec5e3052c — https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view
-- **BEARING,ROLLER,CYLI** (samgov): NEW DOCUMENTS (addendum?): 404ac666c1244329ac429ca3722e55eb — https://sam.gov/workspace/contract/opp/fc84984eaeee410897734ba17d6782ed/view
-- **Noise Tested Bearings IDIQ- Amendment 0001** (samgov): NEW DOCUMENTS (addendum?): 3de4ebea2af94eed96481bc25b8c2a85 — https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view
-- **BEARING ROLLER** (samgov): NEW DOCUMENTS (addendum?): f71274a92f504e959973a64b8e5995cc — https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view
-- **SPRMM1-26-Q-GC63-CHAIN HOIST** (samgov): NEW DOCUMENTS (addendum?): f6ef146052674a6c9f58bdf45d397782 — https://sam.gov/workspace/contract/opp/38f3db1630cb43b1ba53b1e80e1ffaa9/view
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389 — https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view
-- **Nanotechnology Certified Replacement Filter** (samgov): NEW DOCUMENTS (addendum?): 9b7b6d45d5b04e2899fd8e88b1e68713 — https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view
-- **Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemica** (samgov): NEW DOCUMENTS (addendum?): 9a414e3f08044300b507405ab61a13d4, ad8f7e403f7f411a9ef3e60c70ddde76, e07fc021a81b45899e1e1b3e0f7f7915 — https://sam.gov/workspace/contract/opp/db1cb44b650f4cdc892299917c04adf9/view
-- **Individual Water Treatment Device (IWTD) Laboratory Testing** (samgov): NEW DOCUMENTS (addendum?): 5803d015d05c4b27ae41a4ce09006121 — https://sam.gov/workspace/contract/opp/156ee7b93b084524895a20bab5d2ad6e/view
+- **On-Call Security Access Control Services** (bidnet): pre-bid now 2026-11-03 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1
+- **Boettcher Mansion Chiller Replacement Project** (bidnet): pre-bid now 2026-10-26 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1
+- **Switchgear and Protective Relay Maintenance** (bidnet): pre-bid now 2026-10-27 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1
+- **Parks On-Call Mowing Services** (bidnet): pre-bid now 2026-10-15 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1
+- **Dome Glass Replacement** (bidnet): pre-bid now 2026-10-15 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Dome-Glass-Replacement/0000439360?purchasingGroupId=8409951&origin=1
+- **On-Call General Facilities Trade Services** (bidnet): pre-bid now 2026-10-12 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1
+- **Fairgrounds Turfgrass Conversion** (bidnet): pre-bid now 2026-10-19 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fairgrounds-Turfgrass-Conversion/0000438945?purchasingGroupId=8409951&origin=1
+- **003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8** (bidnet): pre-bid now 2026-10-14 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1
+- **On-Call Commercial Plumbing Services** (bidnet): pre-bid now 2026-10-09 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1
+- **CU Boulder-UCB001284-RL2-Lighting Upgrades-Hard Lids and Emergency Lighting** (bidnet): pre-bid now 2026-10-01 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1
+- **District Wide Custodial Services** (bidnet): pre-bid now 2026-10-13 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1
+- **City Admin Building (CAB) Building Automation System (BAS) Modernization** (bidnet): pre-bid now 2026-09-25 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
 - DCSD 003-27 Mowing (CRM-tracked) (bidnet)
 - Douglas County 036-26 Janitorial (CRM-tracked) (bidnet)
-
-## No longer listed (closed/awarded)
-
-- Janitorial Services for the Pagosa Ranger District (bidnet, due 2021-12-15)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -138,11 +129,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | School District 27J | Speaker Cabling Installation | 2026-10-28 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Speaker-Cabling-Installation/0000440182?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Thornton | On-Call Landscape Construction Services | 2026-10-28 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Landscape-Construction-Services/0000439444?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Asbestos Abatement and Historic Artifact Preservation at 575 Bush Street | 2026-10-28 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Asbestos-Abatement-and-Historic-Artifact-Preservation-at-575-Bush-Street/0000438484?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | City of Littleton | On-Call Commercial Plumbing Services | 2026-10-28 (8d) | 2026-10-09 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | City of Littleton | On-Call Commercial Plumbing Services | 2026-10-28 (8d) | 2026-10-09 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Bunkhouse Asbestos Mitigation | 2026-10-28 (8d) |  | https://sam.gov/workspace/contract/opp/8f0e3b72596a4714a555ecd5eb0e899b/view |
 | brownbison | bidnet |  | Boiler Chemicals & Treatment Services - TCF | 2026-10-29 (9d) | 2026-10-21 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Town of Hudson: Wastewater Treatment Facility Expansion Design | 2026-10-29 (9d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Hudson-Wastewater-Treatment-Facility-Expansion-Design/0000439007?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Douglas County School District RE-1 | 003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8 | 2026-10-29 (9d) | 2026-10-14 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Douglas County School District RE-1 | 003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8 | 2026-10-29 (9d) | 2026-10-14 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | bidnet |  | Courthouse Limestone Repairs | 2026-10-29 (9d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-Limestone-Repairs/0000438220?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | HVAC Air Filters | 2026-10-29 (9d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-29 (9d) |  | https://sam.gov/workspace/contract/opp/d20097c1616d47c7833927894d6850b7/view |
@@ -151,9 +142,9 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Lafayette Police Department Boiler Replacement | 2026-10-30 (10d) | 2026-10-08 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Police-Department-Boiler-Replacement/0000439061?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Lafayette Public Library Gas Boiler Replacement | 2026-10-30 (10d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Public-Library-Gas-Boiler-Replacement/0000439034?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Control Panel Replacement and Device Upgrade | 2026-10-30 (10d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Control-Panel-Replacement-and-Device-Upgrade/0000437963?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder-UCB001284-RL2-Lighting Upgrades-Hard Lids and Emergency Lighting | 2026-10-30 (10d) | 2026-10-01 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder-UCB001284-RL2-Lighting Upgrades-Hard Lids and Emergency Lighting | 2026-10-30 (10d) | 2026-10-01 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Waste Hauling Services for City Facilities | 2026-10-30 (10d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Waste-Hauling-Services-for-City-Facilities/0000437533?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | City of Colorado Springs | City Admin Building (CAB) Building Automation System (BAS) Modernization | 2026-10-30 (10d) | 2026-09-25 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | City of Colorado Springs | City Admin Building (CAB) Building Automation System (BAS) Modernization | 2026-10-30 (10d) | 2026-09-25 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | FENCING PROJECT AT 11600 RIDGE PARKWAY | 2026-10-30 (10d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/FENCING-PROJECT-AT-11600-RIDGE-PARKWAY/0000436792?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (10d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (10d) |  | https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view |
@@ -168,17 +159,17 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | TRUCK,HAND | 2026-11-02 (13d) |  | https://sam.gov/workspace/contract/opp/97d4df5ffe0f47ce9a9e19bf923de773/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | GEAR SET,LOW PRESSU | 2026-11-02 (13d) |  | https://sam.gov/workspace/contract/opp/9eb8d0f698424e2e8a46b5475dcf4d7c/view |
 | brownbison | bidnet |  | Palmer Renovation Abatement Project | 2026-11-04 (15d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Palmer-Renovation-Abatement-Project/0000439805?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | El Paso County | On-Call General Facilities Trade Services | 2026-11-04 (15d) | 2026-10-12 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | El Paso County | On-Call General Facilities Trade Services | 2026-11-04 (15d) | 2026-10-12 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Environmental Consulting Services | 2026-11-05 (16d) | 2026-10-22 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Environmental-Consulting-Services/0000435118?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Douglas County Government | Commercial/Residential Fencing for Douglas County Facilities | 2026-11-05 (16d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Commercial-Residential-Fencing-for-Douglas-County-Facilities/0000439657?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | City of Colorado Springs | Parks On-Call Mowing Services | 2026-11-05 (16d) | 2026-10-15 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | City of Colorado Springs | Parks On-Call Mowing Services | 2026-11-05 (16d) | 2026-10-15 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Generator Preventative Maintenance & Repairs for Douglas County Facilities | 2026-11-05 (16d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Preventative-Maintenance-Repairs-for-Douglas-County-Facilities/0000439630?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Aztlan Outdoor Pool Replacement CM/GC | 2026-11-05 (16d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Aztlan-Outdoor-Pool-Replacement-CM-GC/0000437685?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING, BALL, DX | 2026-11-05 (16d) |  | https://sam.gov/workspace/contract/opp/b05bd8d70d204cf3a0903cc3a05934a6/view |
 | jones-bearing | samgov | STATE, DEPARTMENT OF.STATE, DEPARTMENT O | Nanotechnology Certified Replacement Filter | 2026-11-05 (16d) |  | https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view |
 | brownbison | bidnet |  | RFP Town of Parker Generator Maintenance & Repair Services | 2026-11-06 (17d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-Town-of-Parker-Generator-Maintenance-Repair-Services/0000440494?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Hazardous Materials Spill Response Services | 2026-11-06 (17d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Hazardous-Materials-Spill-Response-Services/0000439736?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Cherry Creek School District #5 | District Wide Custodial Services | 2026-11-06 (17d) | 2026-10-13 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Cherry Creek School District #5 | District Wide Custodial Services | 2026-11-06 (17d) | 2026-10-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | PROPL GEAR REDUCE | 2026-11-06 (17d) |  | https://sam.gov/workspace/contract/opp/10b03ac3597744dd9017bde2032a1fe3/view |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder-UCB001622-SITE-NBC-Irrigation System & Landscape Improvements | 2026-11-09 (20d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Roof Repair Services | 2026-11-09 (20d) | 2026-10-21 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Roof-Repair-Services/0000440260?purchasingGroupId=8409951&origin=1 |
@@ -198,11 +189,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Fire Alarm Inspection & Testing | 2026-11-12 (23d) | 2026-10-20 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Inspection-Testing/0000439558?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Planner Professional Services for Community Development Department | 2026-11-12 (23d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Town of Superior - Irrigation tank floating cover replacement | 2026-11-13 (24d) | 2026-10-22 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (27d) | 2026-10-26 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (27d) | 2026-10-26 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (27d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (27d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | brownbison | bidnet |  | Request for Interest: San Luis Valley Potato Research Facility | 2026-11-18 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-San-Luis-Valley-Potato-Research-Facility/0000440491?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (30d) | 2026-11-03 check | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (30d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (30d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | SACN Replace Fire Alarms and Intrusions Systems (place of performance not stated; CO buying office) | 2026-11-23 (34d) |  | https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--SACN Replace Fire Alarms and Intrusions Systems | 2026-11-30 (41d) |  | https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view |
@@ -282,39 +273,6 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 | 3110 | SPE4A6-27-T-1941 | BEARING, BALL, ANNULAR (NSN 3110-00-812-7805, qty 71) | 71 | 2026-10-20 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T1941 |
 | 3110 | SPE4A6-27-T-4398 | BEARING, BALL, ANNULAR (NSN 3110-00-134-0190, qty 71) | 71 | 2026-10-23 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4398 |
 
-## Documents downloaded
-
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/RFQ.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix A.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix B-SC-5.1.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix C-Attestation.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix D-SOW.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix E-CU DRB Processes _ Procedures _updated 2022_.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix F-2015 Raw Water Irrigation System Master Plan.pdf
-- bidnet:0000440456: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440456/Appendix G-2017 Newton _ Athens Raw Water Schematic Design.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/2026 Access Control RFP.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 1 - Proposal Certification _ Checklist.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 2 - Proposal Narrative.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 3 - Proposed Budget Template.xlsx
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 4 - Debarment _ Suspension.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 5 - Insurance Compliance.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 6 - Contract Compliance _ Insurance Certification.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 7 - Sample Agreement.pdf
-- bidnet:0000437039: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000437039/Access Control RFP Attachment 8 - NDA Template.pdf
-- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/ITB 26-19289AP-FM - Boettcher Mansion Chiller Replacement Project.docx
-- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/Ins. Reqs. - General _ Umbrella _ Pollution _ Professional.pdf
-- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf
-- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/Jeffco Beottcher Mansion Chiller Replacement MEP DWGs _100_ CDs__Sealed.pdf
-- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf
-- bidnet:0000439657: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000439657/038-26 IFB.pdf
-
 ## Errors
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
-- samgov: SAM.gov {'ccode': '3910'}: HTTP 504 Gateway Time-out <html>
-<head><title>504 Gateway Time-out</title></head>
-<body>
-<center><h1>504 Gateway Time-out</h1></center>
-</body>
-</html>
-- samgov: samgov list incomplete this scan: previous open bids carried forward, none marked closed
