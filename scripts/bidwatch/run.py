@@ -509,6 +509,15 @@ def main() -> int:
                     help="minutes to wait before the first scan (space a restarted loop away from the hourly worker)")
     a = ap.parse_args()
     sources = [s for s in a.sources.split(",") if s in ALL_SOURCES]
+    load_env_file()
+    if "dibbs" in sources and not os.environ.get("BIDWATCH_ALLOW_DIBBS"):
+        # DIBBS FAQ #45 (verified 2026-10-20): "VPNs, proxy servers, TOR nodes, cloud hosting services, and other
+        # similar services or devices, mask the user's IP address and are, therefore, prohibited." DIBBS is read
+        # ONLY from Luke's own machine (BIDWATCH_ALLOW_DIBBS=1 in its .env). Elsewhere its last rows are kept and
+        # marked NOT SCANNED THIS RUN; SAM.gov carries part of DLA's RFQs meanwhile.
+        sources.remove("dibbs")
+        print("DIBBS skipped: cloud/proxy access is prohibited by the DIBBS user agreement (FAQ #45); "
+              "set BIDWATCH_ALLOW_DIBBS=1 only on Luke's own computer", flush=True)
     if a.health:
         load_env_file()
         for s, v in health_check(sources).items():
