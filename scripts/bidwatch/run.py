@@ -498,6 +498,8 @@ def main() -> int:
     ap.add_argument("--no-detail", action="store_true")
     ap.add_argument("--push", action="store_true",
                     help="after each scan: rebuild dashboard data, commit the generated files, rebase, push")
+    ap.add_argument("--start-in", type=int, default=0,
+                    help="minutes to wait before the first scan (space a restarted loop away from the hourly worker)")
     a = ap.parse_args()
     sources = [s for s in a.sources.split(",") if s in ALL_SOURCES]
     if a.health:
@@ -505,6 +507,10 @@ def main() -> int:
         for s, v in health_check(sources).items():
             print(f"{s:8} reachable={v['reachable']} ({v['reach_note']}) creds={v['creds']}")
         return 0
+    if a.start_in > 0:
+        print(f"[{iso()}] first scan in {a.start_in} min", flush=True)
+        _heartbeat(cycle=0, next_at=iso(), interval_min=a.interval, note=f"first scan in {a.start_in} min")
+        time.sleep(a.start_in * 60)
     cycle = 0
     while True:
         cycle += 1
