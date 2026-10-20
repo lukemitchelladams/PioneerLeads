@@ -16167,6 +16167,1186 @@
       "title": "TRUCK, HAND (NSN 3920-01-629-8728, qty 5)",
       "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EF27T0081",
       "watched": false
+    },
+    "samgov:02fdc748f70d471abfba3cc6f8ac5a06": {
+      "agency": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+      "carried_forward": true,
+      "city": "Golden",
+      "closing": "2026-11-11",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=02fdc748f70d471abfba3cc6f8ac5a06",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2535990e4cdd4bad85c4cdd343e5ada0/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d284a2e1323e457d9d722d292b355d44/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "02fdc748f70d471abfba3cc6f8ac5a06",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "238990",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "5660",
+      "published": "2026-10-08",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "RFP-2027-27107",
+      "source": "samgov",
+      "state": "CO",
+      "title": "Design-Build Services \u2013 STM Security Fencing - North Boundary",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/02fdc748f70d471abfba3cc6f8ac5a06/view",
+      "watched": false
+    },
+    "samgov:0aec98bf822b4a21a1ea2489dce286bf": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA WEAPONS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-21",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0aec98bf822b4a21a1ea2489dce286bf",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "0aec98bf822b4a21a1ea2489dce286bf",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333613",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-09-03",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "SPE7M226R0014",
+      "source": "samgov",
+      "state": null,
+      "title": "PULLEY, GROOVE",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/0aec98bf822b4a21a1ea2489dce286bf/view",
+      "watched": false
+    },
+    "samgov:0f9b38e12f184fadbb459e087e00963d": {
+      "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-30",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0f9b38e12f184fadbb459e087e00963d",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5862074b02a5401ea367916e9374f784/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/588f4801ddc74d6589ca69f9ff3fddff/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7eecfc7c55494b97b3450e8792d39b63/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9bc0b40ad10e43db9047284cb8e9d01d/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeb09898df5247238254d64d282c5d58/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b68a1dcbc9d040a5ba42ed155b3ef241/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c206e1a5793d4632956698d3927e1b78/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c27759f36de247a2a12d88176b072987/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c49f1e87db984e7baec8261b7b4f4f55/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de10bb7d4c26430d977b4815c2e52159/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3beeb14e4524ee797de1b6fd240e218/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc2397052d034f6f93e543c7ba5b6c2c/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "0f9b38e12f184fadbb459e087e00963d",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "238210",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "Z2QA",
+      "published": "2026-10-19",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "140PP027B0002",
+      "source": "samgov",
+      "state": null,
+      "title": "Z--SACN Replace Fire Alarms and Intrusions Systems",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view",
+      "watched": false
+    },
+    "samgov:10b03ac3597744dd9017bde2032a1fe3": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-06",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=10b03ac3597744dd9017bde2032a1fe3",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "10b03ac3597744dd9017bde2032a1fe3",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333612",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-10-07",
+      "set_aside": null,
+      "sol": "N0010427QBA32",
+      "source": "samgov",
+      "state": null,
+      "title": "PROPL GEAR REDUCE",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/10b03ac3597744dd9017bde2032a1fe3/view",
+      "watched": false
+    },
+    "samgov:156ee7b93b084524895a20bab5d2ad6e": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "carried_forward": true,
+      "city": "Natick",
+      "closing": "2026-11-12",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=156ee7b93b084524895a20bab5d2ad6e",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5803d015d05c4b27ae41a4ce09006121/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "156ee7b93b084524895a20bab5d2ad6e",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "2213",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "4610",
+      "published": "2026-10-08",
+      "set_aside": "No Set aside used",
+      "sol": "IWTD_LaboratoryTesting",
+      "source": "samgov",
+      "state": "MA",
+      "title": "Individual Water Treatment Device (IWTD) Laboratory Testing",
+      "type": "Sources Sought",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/156ee7b93b084524895a20bab5d2ad6e/view",
+      "watched": false
+    },
+    "samgov:1a17809e0929401bb214e6a23ca4770d": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-26",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a17809e0929401bb214e6a23ca4770d",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "1a17809e0929401bb214e6a23ca4770d",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-09-28",
+      "set_aside": null,
+      "sol": "N0010426QYAJC",
+      "source": "samgov",
+      "state": null,
+      "title": "BALL,BEARING",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/1a17809e0929401bb214e6a23ca4770d/view",
+      "watched": false
+    },
+    "samgov:24ffa6d27a674212a41ade72d91ec106": {
+      "agency": "TREASURY, DEPARTMENT OF THE.BUREAU OF ENGRAVING AND PRINTING.OFFICE OF CURRENCY MANU (WCF)",
+      "carried_forward": true,
+      "city": "Washington",
+      "closing": "2026-11-07",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24ffa6d27a674212a41ade72d91ec106",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9c338fa5ab8421a8e463e0ec5e3052c/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "24ffa6d27a674212a41ade72d91ec106",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333998",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3920",
+      "published": "2026-10-19",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "2031ZA27N00002",
+      "source": "samgov",
+      "state": "DC",
+      "title": "Ergonomic Drum Handlers",
+      "type": "Sources Sought",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view",
+      "watched": false
+    },
+    "samgov:2b0011c68733402aace4b0a7d9dd8487": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-16",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b0011c68733402aace4b0a7d9dd8487",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "2b0011c68733402aace4b0a7d9dd8487",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333612",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-10-15",
+      "set_aside": null,
+      "sol": "N0038326QPD29",
+      "source": "samgov",
+      "state": null,
+      "title": "30--PULLEY,GROOVE",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view",
+      "watched": true
+    },
+    "samgov:2c6baa53c8054e3298082a09ae3a7b5f": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-02",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2c6baa53c8054e3298082a09ae3a7b5f",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "2c6baa53c8054e3298082a09ae3a7b5f",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": null,
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-09-17",
+      "set_aside": null,
+      "sol": "N0038326QSC31",
+      "source": "samgov",
+      "state": null,
+      "title": "31--BEARING,ROLLER,CYLI",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/2c6baa53c8054e3298082a09ae3a7b5f/view",
+      "watched": false
+    },
+    "samgov:33bd86866d1946769ed093ca7a1ec653": {
+      "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+      "carried_forward": true,
+      "city": "Golden",
+      "closing": "2026-10-30",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33bd86866d1946769ed093ca7a1ec653",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1523223dcdf84aa9a1b0988742346652/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2435e3b38f4e44c2b5f93b2f667d26ed/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fe43633ddb642dfb610827d95d60710/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49f236646d3e4e19b2e4c0d81df2a026/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d132abbc014d10ab939a742486e36c/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/772ee2df818f4a7e987d8b7148535c47/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ea4ffc7e3334085aea14bd852559371/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b30b18c43bad45c587f5673d88db5246/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c68abb8a31c740e88f7ee126dff1fea7/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d07a64bf62824e9483c3e874b83ce16e/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dbf52884b8604866ba1aa30ba28325f9/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1338b2340d84124a13ce3854bdf957e/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8a98ad68a334ad58dc9bb4c4532b7f3/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "33bd86866d1946769ed093ca7a1ec653",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "334510",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "6515",
+      "published": "2026-10-16",
+      "set_aside": "No Set aside used",
+      "sol": "36C79126R0011",
+      "source": "samgov",
+      "state": "CO",
+      "title": "Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Nerve Stimulation (TENS) Procurement Program",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view",
+      "watched": false
+    },
+    "samgov:38f3db1630cb43b1ba53b1e80e1ffaa9": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-23",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38f3db1630cb43b1ba53b1e80e1ffaa9",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6ef146052674a6c9f58bdf45d397782/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "38f3db1630cb43b1ba53b1e80e1ffaa9",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333923",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3950",
+      "published": "2026-10-19",
+      "set_aside": null,
+      "sol": "SPRMM1-26-Q-GC63",
+      "source": "samgov",
+      "state": null,
+      "title": "SPRMM1-26-Q-GC63-CHAIN HOIST",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/38f3db1630cb43b1ba53b1e80e1ffaa9/view",
+      "watched": false
+    },
+    "samgov:3e9d47ad4ab54b0cb8f5490153f09982": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-26",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e9d47ad4ab54b0cb8f5490153f09982",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "3e9d47ad4ab54b0cb8f5490153f09982",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333612",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-09-24",
+      "set_aside": null,
+      "sol": "N0038326QTD01",
+      "source": "samgov",
+      "state": null,
+      "title": "PULLEY,GROOVE",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/3e9d47ad4ab54b0cb8f5490153f09982/view",
+      "watched": false
+    },
+    "samgov:463e2a5bc1914bc9927e6fc663c61e2a": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-30",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=463e2a5bc1914bc9927e6fc663c61e2a",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "463e2a5bc1914bc9927e6fc663c61e2a",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-10-06",
+      "set_aside": null,
+      "sol": "N0010426QYA9P",
+      "source": "samgov",
+      "state": null,
+      "title": "31--BALL,BEARING",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view",
+      "watched": false
+    },
+    "samgov:498039a792b2415ca237b1f25185acfd": {
+      "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY ADDIS ABABA",
+      "carried_forward": true,
+      "city": "Addis Ababa",
+      "closing": "2026-11-05",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=498039a792b2415ca237b1f25185acfd",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b7b6d45d5b04e2899fd8e88b1e68713/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "498039a792b2415ca237b1f25185acfd",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "33399",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "4610",
+      "published": "2026-10-19",
+      "set_aside": null,
+      "sol": "PR16340639",
+      "source": "samgov",
+      "state": null,
+      "title": "Nanotechnology Certified Replacement Filter",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view",
+      "watched": false
+    },
+    "samgov:6ef9cebf1ae54094b375118b99c31867": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-10",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ef9cebf1ae54094b375118b99c31867",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "6ef9cebf1ae54094b375118b99c31867",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": null,
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-09-25",
+      "set_aside": null,
+      "sol": "N0038326QPD29",
+      "source": "samgov",
+      "state": null,
+      "title": "30--PULLEY,GROOVE",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/6ef9cebf1ae54094b375118b99c31867/view",
+      "watched": true
+    },
+    "samgov:7534801e9e1940b4a1ce3bda0bc642a5": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
+      "city": "Richmond",
+      "closing": "2026-10-27",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7534801e9e1940b4a1ce3bda0bc642a5",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "7534801e9e1940b4a1ce3bda0bc642a5",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-10-13",
+      "set_aside": null,
+      "sol": "SPE4A627Q0045",
+      "source": "samgov",
+      "state": "VA",
+      "title": "SPE4A627Q0045, 3110-004556188, Bearing, Roller, Needle, PN: 114RS214-5",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/7534801e9e1940b4a1ce3bda0bc642a5/view",
+      "watched": false
+    },
+    "samgov:7872b54a0d4547a78d839266d5c8fba5": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2027-06-15",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7872b54a0d4547a78d839266d5c8fba5",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "7872b54a0d4547a78d839266d5c8fba5",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-06-15",
+      "set_aside": null,
+      "sol": "FD2030-26-01038",
+      "source": "samgov",
+      "state": null,
+      "title": "FD2030-26-01038",
+      "type": "Special Notice",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/7872b54a0d4547a78d839266d5c8fba5/view",
+      "watched": false
+    },
+    "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2027-03-03",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a6f641b2ccc4be7aa8e283cb9a2e90b",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "7a6f641b2ccc4be7aa8e283cb9a2e90b",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-03-03",
+      "set_aside": null,
+      "sol": "FD2030-26-01079",
+      "source": "samgov",
+      "state": null,
+      "title": "FD2030-26-01079",
+      "type": "Special Notice",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/7a6f641b2ccc4be7aa8e283cb9a2e90b/view",
+      "watched": false
+    },
+    "samgov:97d4df5ffe0f47ce9a9e19bf923de773": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-02",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97d4df5ffe0f47ce9a9e19bf923de773",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "97d4df5ffe0f47ce9a9e19bf923de773",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333924",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3920",
+      "published": "2026-10-01",
+      "set_aside": null,
+      "sol": "N0010426QNE81",
+      "source": "samgov",
+      "state": null,
+      "title": "TRUCK,HAND",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/97d4df5ffe0f47ce9a9e19bf923de773/view",
+      "watched": false
+    },
+    "samgov:9eb8d0f698424e2e8a46b5475dcf4d7c": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-02",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9eb8d0f698424e2e8a46b5475dcf4d7c",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "9eb8d0f698424e2e8a46b5475dcf4d7c",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333612",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-09-04",
+      "set_aside": null,
+      "sol": "SPRMM126QMH61",
+      "source": "samgov",
+      "state": null,
+      "title": "GEAR SET,LOW PRESSU",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/9eb8d0f698424e2e8a46b5475dcf4d7c/view",
+      "watched": false
+    },
+    "samgov:a52ea596b0454511a86648481ad71505": {
+      "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-22",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a52ea596b0454511a86648481ad71505",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33eba5e2bba944ec8e1b62d216f8e165/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "a52ea596b0454511a86648481ad71505",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "561720",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "S201",
+      "published": "2026-10-19",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "140RR027Q0001",
+      "source": "samgov",
+      "state": null,
+      "title": "S--BGNDRF CUSTODIAL SERVICES",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/a52ea596b0454511a86648481ad71505/view",
+      "watched": false
+    },
+    "samgov:b05bd8d70d204cf3a0903cc3a05934a6": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-05",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b05bd8d70d204cf3a0903cc3a05934a6",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "b05bd8d70d204cf3a0903cc3a05934a6",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-10-06",
+      "set_aside": null,
+      "sol": "N0010426QEH59",
+      "source": "samgov",
+      "state": null,
+      "title": "31--BEARING, BALL, DX",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/b05bd8d70d204cf3a0903cc3a05934a6/view",
+      "watched": false
+    },
+    "samgov:b102b927e1eb45a099793120873e02d1": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
+      "city": "Richmond",
+      "closing": "2026-10-27",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b102b927e1eb45a099793120873e02d1",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "b102b927e1eb45a099793120873e02d1",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3130",
+      "published": "2026-10-13",
+      "set_aside": "No Set aside used",
+      "sol": "SPE4A627Q0043",
+      "source": "samgov",
+      "state": "VA",
+      "title": "SPE4A627Q0043, 3130-012935830, Bearing Unit, Plain, PN: C7547-5",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/b102b927e1eb45a099793120873e02d1/view",
+      "watched": false
+    },
+    "samgov:b6e91ee3debc4d8089be1512706d0f46": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-26",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6e91ee3debc4d8089be1512706d0f46",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "b6e91ee3debc4d8089be1512706d0f46",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-09-09",
+      "set_aside": null,
+      "sol": "SPRMM126QHE23",
+      "source": "samgov",
+      "state": null,
+      "title": "ACTR ASSY, ANT AZ",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/b6e91ee3debc4d8089be1512706d0f46/view",
+      "watched": false
+    },
+    "samgov:b8d42df049264aef86019c9aa4e691c8": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-12-14",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8d42df049264aef86019c9aa4e691c8",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "b8d42df049264aef86019c9aa4e691c8",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3130",
+      "published": "2026-10-19",
+      "set_aside": null,
+      "sol": "SPRMM126QGE59",
+      "source": "samgov",
+      "state": null,
+      "title": "SHELL AY(PRT SIDE)",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view",
+      "watched": false
+    },
+    "samgov:c197c44e343742a5adde5688821f5075": {
+      "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-11",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c197c44e343742a5adde5688821f5075",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ac7ddffb42e4c899466e9c63cf80bb4/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "c197c44e343742a5adde5688821f5075",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "238220",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "Y1NB",
+      "published": "2026-10-13",
+      "set_aside": null,
+      "sol": "DOIDSAM27R001",
+      "source": "samgov",
+      "state": null,
+      "title": "Y--Friant Dam HVAC Replacement - JOTFOC",
+      "type": "Special Notice",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/c197c44e343742a5adde5688821f5075/view",
+      "watched": false
+    },
+    "samgov:cdf492db2fdd4441888644e58a799af9": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA WEAPONS SUPPORT",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-23",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cdf492db2fdd4441888644e58a799af9",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "cdf492db2fdd4441888644e58a799af9",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333613",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3020",
+      "published": "2026-10-08",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "SPE7L127R0011",
+      "source": "samgov",
+      "state": "OH",
+      "title": "30--GEAR,SPUR",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/cdf492db2fdd4441888644e58a799af9/view",
+      "watched": false
+    },
+    "samgov:d2d51b2fbfc1498dae68cd611c30064a": {
+      "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-09",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d2d51b2fbfc1498dae68cd611c30064a",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74d6e47f7ada4f2ca4b51fb29e83162d/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "d2d51b2fbfc1498dae68cd611c30064a",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "238990",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "5660",
+      "published": "2026-10-19",
+      "set_aside": "Small Business Set Aside - Total",
+      "sol": "140RR027R0010",
+      "source": "samgov",
+      "state": null,
+      "title": "PGMB Security Gate",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view",
+      "watched": false
+    },
+    "samgov:d482864e35ad486a91225ac6bba8ff8e": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+      "carried_forward": true,
+      "city": "Anniston",
+      "closing": "2026-11-09",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d482864e35ad486a91225ac6bba8ff8e",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e718a900f854706a1345bdf0fe0c389/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "d482864e35ad486a91225ac6bba8ff8e",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "333923",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3950",
+      "published": "2026-10-07",
+      "set_aside": null,
+      "sol": "W911KF25SC002A0018",
+      "source": "samgov",
+      "state": "AL",
+      "title": "Low Level Cranes- CSO",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view",
+      "watched": false
+    },
+    "samgov:db1cb44b650f4cdc892299917c04adf9": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "carried_forward": true,
+      "city": "Natick",
+      "closing": "2026-11-12",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db1cb44b650f4cdc892299917c04adf9",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a414e3f08044300b507405ab61a13d4/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad8f7e403f7f411a9ef3e60c70ddde76/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e07fc021a81b45899e1e1b3e0f7f7915/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "db1cb44b650f4cdc892299917c04adf9",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "2213",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "4610",
+      "published": "2026-10-08",
+      "set_aside": "No Set aside used",
+      "sol": "IWTD_Reduction_TICs_TIMs",
+      "source": "samgov",
+      "state": "MA",
+      "title": "Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemicals and Materials",
+      "type": "Sources Sought",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/db1cb44b650f4cdc892299917c04adf9/view",
+      "watched": false
+    },
+    "samgov:db84deebdb884ada854ec83ee9a6235c": {
+      "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+      "carried_forward": true,
+      "city": "Sheridan",
+      "closing": "2026-10-28",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db84deebdb884ada854ec83ee9a6235c",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408e6f81202440919bb310a7d9a4bf0d/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b86fc264dbc84a149fdfc845edb67730/download"
+        },
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e34365b2d83749bab5d6ce7b8c3524fa/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "db84deebdb884ada854ec83ee9a6235c",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "238220",
+      "profiles": [
+        "brownbison"
+      ],
+      "psc": "J041",
+      "published": "2026-10-16",
+      "set_aside": null,
+      "sol": "36C25927Q0008",
+      "source": "samgov",
+      "state": null,
+      "title": "J041--Trane BAS HVAC  Control System Inspection, Maintenance, Upgrades, and Repair",
+      "type": "Special Notice",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/db84deebdb884ada854ec83ee9a6235c/view",
+      "watched": false
+    },
+    "samgov:dc0e53346b5741ce9773943e955d2793": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-10-23",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc0e53346b5741ce9773943e955d2793",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "dc0e53346b5741ce9773943e955d2793",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "336413",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-10-09",
+      "set_aside": "No Set aside used",
+      "sol": "SPE4AX-26-R-HON7-2",
+      "source": "samgov",
+      "state": null,
+      "title": "Add-on project to the Honeywell Supplier Capability Contract (SCC) SPE4AX-22-D-0003",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/dc0e53346b5741ce9773943e955d2793/view",
+      "watched": false
+    },
+    "samgov:e7220f8924254f4fac1a83a72708bba1": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2027-07-29",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7220f8924254f4fac1a83a72708bba1",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3de4ebea2af94eed96481bc25b8c2a85/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "e7220f8924254f4fac1a83a72708bba1",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-07-01",
+      "set_aside": null,
+      "sol": "",
+      "source": "samgov",
+      "state": null,
+      "title": "Noise Tested Bearings IDIQ- Amendment 0001",
+      "type": "Special Notice",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view",
+      "watched": false
+    },
+    "samgov:eea50eb876044089a54c01f641e9c9be": {
+      "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-12-16",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eea50eb876044089a54c01f641e9c9be",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f71274a92f504e959973a64b8e5995cc/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "eea50eb876044089a54c01f641e9c9be",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2025-12-11",
+      "set_aside": null,
+      "sol": "70Z08026Q-AK017",
+      "source": "samgov",
+      "state": null,
+      "title": "BEARING ROLLER",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view",
+      "watched": true
+    },
+    "samgov:f421756d4dbd482bae39b05d4208ff7d": {
+      "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
+      "city": null,
+      "closing": "2026-11-02",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f421756d4dbd482bae39b05d4208ff7d",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "f421756d4dbd482bae39b05d4208ff7d",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": null,
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-09-18",
+      "set_aside": null,
+      "sol": "N0010426QEH59",
+      "source": "samgov",
+      "state": null,
+      "title": "31--BEARING, BALL, DX",
+      "type": "Presolicitation",
+      "upcoming": true,
+      "url": "https://sam.gov/workspace/contract/opp/f421756d4dbd482bae39b05d4208ff7d/view",
+      "watched": false
+    },
+    "samgov:f559aac3b6c24f9e8cafa16f94df8be1": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
+      "city": "Richmond",
+      "closing": "2026-10-27",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f559aac3b6c24f9e8cafa16f94df8be1",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "f559aac3b6c24f9e8cafa16f94df8be1",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-10-13",
+      "set_aside": null,
+      "sol": "SPE4A627Q0037",
+      "source": "samgov",
+      "state": "VA",
+      "title": "SPE4A627Q0037, 3110-013416408, Bearing, Sleeve Line, Part# 012-63499-54",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/f559aac3b6c24f9e8cafa16f94df8be1/view",
+      "watched": false
+    },
+    "samgov:fc84984eaeee410897734ba17d6782ed": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+      "carried_forward": true,
+      "city": "0",
+      "closing": "2026-10-30",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc84984eaeee410897734ba17d6782ed",
+      "documents": [
+        {
+          "name": "download",
+          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/404ac666c1244329ac429ca3722e55eb/download"
+        }
+      ],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "fc84984eaeee410897734ba17d6782ed",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "336412",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3110",
+      "published": "2026-09-30",
+      "set_aside": null,
+      "sol": "SPRTA126Q",
+      "source": "samgov",
+      "state": "OK",
+      "title": "BEARING,ROLLER,CYLI",
+      "type": "Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/fc84984eaeee410897734ba17d6782ed/view",
+      "watched": false
+    },
+    "samgov:ff05372bd4014de685c91fb488a7d89a": {
+      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
+      "city": "Richmond",
+      "closing": "2026-10-21",
+      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff05372bd4014de685c91fb488a7d89a",
+      "documents": [],
+      "first_seen": "2026-10-20T02:45:13+00:00",
+      "id": "ff05372bd4014de685c91fb488a7d89a",
+      "last_seen": "2026-10-20T02:45:13+00:00",
+      "naics": "332991",
+      "profiles": [
+        "jones-bearing"
+      ],
+      "psc": "3130",
+      "published": "2026-10-07",
+      "set_aside": null,
+      "sol": "SPE4A627RX033",
+      "source": "samgov",
+      "state": "VA",
+      "title": "HOUSING, BEARING UNIT",
+      "type": "Combined Synopsis/Solicitation",
+      "upcoming": false,
+      "url": "https://sam.gov/workspace/contract/opp/ff05372bd4014de685c91fb488a7d89a/view",
+      "watched": false
     }
   },
   "scanned_at": "2026-10-20T03:14:39+00:00"

@@ -12,6 +12,7 @@ Part 1b: trimmed copies of the REAL pages (tests/fixtures/, saved 2026-10-20 fro
 from __future__ import annotations
 
 import http.server
+import json
 import os
 import sys
 import tempfile
@@ -318,6 +319,21 @@ r2 = run.scan(["bidnet"])
 ch = [c for c in r2["changed"].values() if any("NEW DOCUMENTS" in d for d in c["diffs"])]
 check("second scan detects addendum on watched bid", bool(ch), r2["changed"])
 check("second scan: nothing falsely NEW", not r2["new"], list(r2["new"]))
+# an unreachable source (SAM.gov API down, no key) must keep its previous rows and close nothing
+ob = json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())
+ob["bids"]["samgov:seed1"] = {"source": "samgov", "id": "seed1", "title": "HVAC maintenance seed", "closing": "2099-01-01",
+                             "profiles": ["brownbison"], "url": "https://sam.gov/x", "first_seen": "2026-01-01", "last_seen": "2026-01-01"}
+(TMP / "OPEN_BIDS_FILE.json").write_text(json.dumps(ob))
+run.HOSTS["samgov"] = "http://127.0.0.1:1/"
+os.environ.pop("SAM_API_KEY", None)
+r3 = run.scan(["bidnet", "samgov"])
+check("unreachable source: previous rows carried forward, none closed",
+      "samgov:seed1" in r3["found"] and not any(k.startswith("samgov") for k in r3["closed"])
+      and r3["health"]["samgov"]["count"] == 1, (list(r3["closed"]), r3["health"]["samgov"]))
+r4 = run.scan(["bidnet"])
+check("source not in this run: rows kept and health row marked not scanned",
+      "samgov:seed1" in r4["found"] and r4["health"]["samgov"].get("not_scanned_this_run") is True
+      and "NOT SCANNED THIS RUN" in (TMP / "REPORT_FILE.json").read_text(), r4["health"].get("samgov"))
 srv.shutdown()
 
 # ---------------------------------------------------------------- part 3: BidNet confirmation code from the mailbox

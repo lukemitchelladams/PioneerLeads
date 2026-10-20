@@ -419,3 +419,10 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   scripts/bidwatch/mailcode.py (2ba9bc3): opt-in read-only IMAP reader for the BidNet code when
   BIDNET_CODE_IMAP_PASS (Google app password) is set. Loop restarted on that code (PID in debug/loop.status).
   Rule: never leave uncommitted files in this tree; the loop's rebase/push fails on a dirty tree.
+- 03:25 UTC: second data-loss class fixed. Loop cycle 83fb99d: the api.sam.gov reachability probe timed out,
+  SAM.gov was skipped silently (count 0, no note, no error) and its 38 rows were DROPPED from open_bids.json.
+  Now: any source with 0 rows that was unreachable or errored keeps its previous rows (carried_forward, last
+  good data shown in the health row, nothing closed); SAM.gov is attempted whenever the key exists; a SAM zero
+  always carries a note + error; a partial --sources run marks untouched sources NOT SCANNED THIS RUN; the
+  loop's git steps retry on index.lock. Container restart at ~03:14 killed the loop (restarted); the hourly
+  WORKER trigger is the safety net. Tests: 76+.

@@ -50,7 +50,7 @@ CRED_NAMES = {"bidnet": list(bidnet.CREDS), "samgov": ["SAM_API_KEY"], "bonfire"
 ALL_SOURCES = ["bidnet", "bonfire", "samgov", "dibbs"]
 
 
-def reachable(url: str, timeout: int = 15) -> tuple[bool, str]:
+def reachable(url: str, timeout: int = 30) -> tuple[bool, str]:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "BrownBisonBidWatch/2.0"})
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -159,7 +159,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         finally:
             br.close()
 
-    if "samgov" in sources and health["samgov"]["reachable"]:
+    if "samgov" in sources and (health["samgov"]["reachable"] or health["samgov"]["creds"].get("SAM_API_KEY")):
         rows, errs = samgov.collect(profiles)
         health["samgov"]["errors"] += errs
         health["samgov"]["count"] = len(rows)
@@ -167,6 +167,13 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["samgov"]["login_note"] = "API key" if health["samgov"]["creds"]["SAM_API_KEY"] else "SAM_API_KEY not set"
         for r in rows.values():
             found[key(r)] = r
+    if "samgov" in sources and health["samgov"]["count"] == 0:
+        # never a silent zero: say why (no key, probe/API down) so a reader does not mistake it for 'no bids'
+        h = health["samgov"]
+        h["login_note"] = h["login_note"] or ("API key" if h["creds"].get("SAM_API_KEY") else "SAM_API_KEY not set")
+        if not h["errors"]:
+            h["errors"].append(f"SAM.gov returned no rows: reachability {h['reach_note']}; "
+                               f"key {'set' if h['creds'].get('SAM_API_KEY') else 'NOT set'}")
 
     if "dibbs" in sources and health["dibbs"]["reachable"]:
         try:
@@ -201,12 +208,19 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
 
     # A source whose list came back incomplete (BidNet robot check, short statewide list) must not make
     # bids look closed: carry its previous open bids forward, flagged, and skip closed-detection for it.
-    incomplete = {s for s in sources if health[s].get("complete") is False}
+    incomplete = {s for s in sources if health[s].get("complete") is False
+                  or (health[s]["count"] == 0 and (not health[s]["reachable"] or health[s]["errors"]))}
     for k, v in prev.items():
         if v.get("source") in incomplete and k not in found and (days_until(v.get("closing")) or 0) >= 0:
             found[k] = {**v, "carried_forward": True}
     for s in incomplete:
+        health[s]["carried_forward"] = True
         health[s]["errors"].append(f"{s} list incomplete this scan: previous open bids carried forward, none marked closed")
+    # a source that was unreachable keeps its previous rows: count them so the report is not misread as empty
+    for s in incomplete:
+        if health[s]["count"] == 0:
+            health[s]["count"] = sum(1 for b in found.values() if b["source"] == s)
+            health[s]["matches"] = sum(1 for b in found.values() if b["source"] == s and b["profiles"])
     # Sources not scanned this run (a --sources subset, e.g. a SAM.gov-only pull) keep their last results,
     # so open_bids.json and the dashboard never lose the BidNet/DIBBS rows because one source was refreshed.
     for k, v in prev.items():
@@ -234,10 +248,10 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         else:
             health[s]["last_success"] = prev_health.get(s, {}).get("last_success")
     # health.json keeps the last known state of sources that were not part of this run
-    save_json(HEALTH_FILE, {"checked_at": started,
-                            "sources": {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items()
-                                           if s not in health}, **health}})
-    result = {"started": started, "health": health, "found": found, "new": new, "changed": changed,
+    health_all = {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items() if s not in health},
+                  **health}
+    save_json(HEALTH_FILE, {"checked_at": started, "sources": health_all})
+    result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch}
     REPORT_FILE.write_text(render(result))
     return result
@@ -319,7 +333,9 @@ HDR = "| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |\n|---
 def render(r: dict) -> str:
     h = r["health"]
     lines = [f"# Bid watch report — {r['started']}", ""]
-    blind = [s for s, v in h.items() if not v["reachable"] or (not v["count"] and s != "dibbs")]
+    blind = [s for s, v in h.items() if not v.get("not_scanned_this_run")
+             and (not v["reachable"] or (not v["count"] and s != "dibbs"))]
+    carried = [s for s, v in h.items() if v.get("not_scanned_this_run")]
     head = []
     if r["new"]:
         head.append(f"{len(r['new'])} NEW matching bids")
@@ -327,6 +343,8 @@ def render(r: dict) -> str:
         head.append(f"{len(r['changed'])} changed (addenda/dates)")
     if blind:
         head.append("BLIND: " + ", ".join(blind))
+    if carried:
+        head.append("not scanned this run (previous results kept): " + ", ".join(carried))
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
 
     lines.append("## Source health\n")
@@ -335,8 +353,11 @@ def render(r: dict) -> str:
     for s, v in h.items():
         creds = ", ".join(f"{k}={'yes' if ok else 'NO'}" for k, ok in v["creds"].items()) or "n/a"
         tot = ", ".join(f"{k.replace('statewide ', '')} {n}" for k, n in (v.get("site_totals") or {}).items() if n is not None)
+        note = ("NOT SCANNED THIS RUN; " if v.get("not_scanned_this_run") else "") \
+            + (f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("carried_forward") else "") \
+            + (v['login_note'] or ('yes' if v['logged_in'] else 'no'))
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
-                     f"{v['login_note'] or ('yes' if v['logged_in'] else 'no')} | {v['count']} | {tot} | {v['matches']} | "
+                     f"{note} | {v['count']} | {tot} | {v['matches']} | "
                      f"{v.get('last_success') or 'never'} | {len(v['errors'])} |")
     if "dibbs" in h and h["dibbs"].get("site_totals"):
         lines.append("\nDIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; "
@@ -397,7 +418,15 @@ STATUS_FILE = DEBUG_DIR / "loop.status"  # gitignored heartbeat: pid, last cycle
 
 
 def _git(*args: str, check: bool = True, timeout: int = 120) -> subprocess.CompletedProcess:
-    return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, timeout=timeout, check=check)
+    """git in the repo; a held index.lock (another session committing at the same moment) is retried."""
+    for i in range(6):
+        r = subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, timeout=timeout)
+        if r.returncode == 0 or "index.lock" not in (r.stderr or ""):
+            break
+        time.sleep(3 * (i + 1))
+    if check and r.returncode != 0:
+        raise subprocess.CalledProcessError(r.returncode, r.args, r.stdout, r.stderr)
+    return r
 
 
 def _branch() -> str:
