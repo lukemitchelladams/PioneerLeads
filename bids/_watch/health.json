@@ -1,30 +1,25 @@
 {
-  "checked_at": "2026-10-20T21:36:06+00:00",
+  "checked_at": "2026-10-20T22:36:27+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
+      "blind": true,
       "carried_forward": true,
       "complete": false,
-      "count": 193,
+      "count": 592,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [
-        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER\nCall log:\n  - navigating to \"https:",
-        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
         "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
       "last_success": "2026-10-20T21:36:06+00:00",
       "logged_in": false,
-      "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
-      "matches": 9,
+      "login_note": "COOL-DOWN after a robot check, until 2026-10-20T23:36:22+00:00",
+      "matches": 82,
       "reach_note": "HTTP 200",
-      "reachable": true,
-      "site_totals": {
-        "statewide AGGREGATE": 194,
-        "statewide BUYER": null
-      }
+      "reachable": true
     },
     "bonfire": {
       "count": 3,
@@ -35,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-10-20T21:36:06+00:00",
+      "last_success": "2026-10-20T22:36:27+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -67,15 +62,15 @@
     "samgov": {
       "bulk_added": 31,
       "bulk_note": "bulk file cached 2026-10-20T05:28:39+00:00; 68 matching (parsed earlier)",
-      "count": 75,
+      "count": 76,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-20T21:36:06+00:00",
+      "last_success": "2026-10-20T22:36:27+00:00",
       "logged_in": true,
       "login_note": "API key; +31 from the nightly bulk file",
-      "matches": 75,
+      "matches": 76,
       "reach_note": "HTTP 404",
       "reachable": true
     }
