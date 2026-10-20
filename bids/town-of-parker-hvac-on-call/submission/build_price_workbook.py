@@ -6,7 +6,7 @@
 Reads the Town's blank form (docs/2-HVAC-PM-Price-Sheet-Forms.xlsx), writes only the blue vendor-input cells, keeps the
 Town's formulas, and saves into private/ (git-ignored: prices stay off the public repo until the bid closes). Dollar
 numbers in bid_inputs.json are Rich's; the submission copy raises each by "markup", the --for-sub copy writes them
-unchanged, paints every missing cell yellow and adds a "FOR RICH" sheet with the open questions, so it can never be
+unchanged, paints every missing cell yellow (and every cell we filled on an assumption orange) and adds a "FOR RICH" sheet with the open questions, so it can never be
 mistaken for the upload. Anything still null is listed at the end and the exit code is 1.
 """
 from __future__ import annotations
@@ -35,7 +35,8 @@ def money(x: float, markup: float) -> float:
     return float((Decimal(str(x)) * (Decimal(1) + Decimal(str(markup)))).quantize(Decimal("0.01"), ROUND_HALF_UP))
 
 
-YELLOW = PatternFill("solid", fgColor="FFFF00")
+YELLOW = PatternFill("solid", fgColor="FFFF00")   # blank: the sub must fill it
+ORANGE = PatternFill("solid", fgColor="FFC000")   # filled by us on an assumption: the sub must confirm it
 
 
 def main() -> int:
@@ -45,11 +46,15 @@ def main() -> int:
     wb = openpyxl.load_workbook(FORM)
     missing: list[str] = []
     holes: list[tuple[str, str]] = []  # (sheet, cell) left blank, painted yellow in the sub's copy
+    assumed: list[tuple[str, str, str]] = []  # (sheet, cell, label) filled on an assumption, painted orange
 
     ws = wb["Scheduled Services"]
     for fac, row in FACILITY_ROWS.items():
         for col, season in (("C", "cooling"), ("D", "heating")):
             v = cfg["scheduled"][fac][season]
+            if isinstance(v, dict):  # {"value": 1703.70, "assumed": "same as spring"}
+                assumed.append(("Scheduled Services", f"{col}{row}", f"{fac} {season}: {v['assumed']}"))
+                v = v["value"]
             if v is None:
                 missing.append(f"Scheduled Services {fac} {season}")
                 holes.append(("Scheduled Services", f"{col}{row}"))
@@ -108,6 +113,8 @@ def main() -> int:
     if for_sub:
         for sheet, cell in holes:
             wb[sheet][cell].fill = YELLOW
+        for sheet, cell, _ in assumed:
+            wb[sheet][cell].fill = ORANGE
         ws = wb.create_sheet("FOR RICH", 0)
         ws.column_dimensions["A"].width = 120
         ws["A1"] = "FOR RICH CARROLL TO REVIEW: NOT FOR SUBMISSION"
@@ -127,7 +134,11 @@ def main() -> int:
     print("STILL MISSING:" if missing else "complete: every vendor cell filled")
     for m in missing:
         print(f"  - {m}")
-    return 1 if missing else 0
+    if assumed:
+        print("ASSUMED, NOT YET CONFIRMED BY THE SUB (orange in the sub's copy):")
+        for _, _, label in assumed:
+            print(f"  - {label}")
+    return 1 if missing or assumed else 0
 
 
 if __name__ == "__main__":
