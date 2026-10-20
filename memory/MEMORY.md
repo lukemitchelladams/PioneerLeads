@@ -481,3 +481,9 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   added: run lock, 2 h robot-check cool-down (carry forward), 6 h code-marker expiry, exit 3 on degraded runs,
   scanned_by in health.json. BidNet alerts: free tier emails real-time NIGP matches but the inbox got none:
   Luke's BidNet matching profile (categories, "Stay Ahead", notification email) must be set (account setting: Luke).
+- 05:06 UTC: DIBBS FAQ #45 (verified verbatim): cloud hosting/VPN/proxy access is PROHIBITED by the DIBBS user
+  agreement. Our cloud scanner had read DIBBS hourly since 10/20 01:55 UTC (plus research probes). Stopped in f6abd0c:
+  DIBBS runs only with BIDWATCH_ALLOW_DIBBS=1 (Luke's own computer, .env.example). Last DIBBS rows stay in
+  open_bids.json marked NOT SCANNED THIS RUN. Better DIBBS method for the local runner: daily in{YYMMDD}.txt index.
+  SAM.gov: nightly full CSV (no key) at sam.gov/api/prod/fileextractservices/.../ContractOpportunitiesFullCSV.csv.
+  Luke's key handled ~27 calls today without a 429, so it is the 1,000/day entity-role tier.
