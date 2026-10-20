@@ -58,5 +58,23 @@ Luke Adams
 Brown Bison Holdings LLC
 luke@brownbisonco.com
 
+## Status check 2026-10-20 06:50 MT (sent folder + inbox, read-only)
+**No outreach email has gone out.** The sent folder has no message to any of the six candidates (searched Riverdale /
+cabling / 2021BRRHS / Becks / 303 Technologies / Wire to Wire since 10/17), and there are no inbound cabling replies.
+Clock: sub pricing needed by **Fri 2026-10-23 17:00** (3 days); questions to the District by **Thu 2026-10-23 15:00**;
+proposal **Tue 2026-10-28 10:00** (8 days). Without a sub price by Friday this bid cannot be priced.
+
+### Luke, today (in this order)
+1. Call Wire to Wire, (303) 429-9262, and Becks Communications, (303) 287-1001 (closest to Thornton; cabling shops answer the phone, not email).
+2. Email the text above to kthomas@303technologies.com and beckon7165@msn.com (from luke@brownbisonco.com).
+3. Web forms: wiretowirecabling.com, theelectriciansco.com, highcountryllc.com/contact-us (paste the same text).
+4. Reply "yes, send it" gets the RFP PDF, the Exhibit A drawings and the Bogen spec (all in docs/2021BRRHS-Speaker-Cabling-biddoc.pdf).
+
+### Questions to send to emorales@sd27j.net by Thu 10/23 15:00 (Luke sends; one email, numbered)
+1. Can a walk-through of Riverdale Ridge HS be arranged before 10/28 so our installer can verify MDF/IDF locations and cable paths?
+2. Please confirm the classroom count in Exhibit A (we read 49-59 speakers) and whether any non-classroom spaces are included.
+3. Is removal of the existing daisy-chain wiring required in every room, or only where the District directs during the work?
+4. On work Mondays, what are the earliest start and latest stop times, and is a District escort required?
+
 ## Replies
-(none yet)
+(none; nothing sent as of 2026-10-20 06:50 MT)

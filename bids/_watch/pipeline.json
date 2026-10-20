@@ -70,7 +70,7 @@
    "prebid": "2026-10-09T10:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Plumbing sub",
-   "subs": "Outreach out; answers due 10/23",
+   "subs": "7 emailed 10/19 (Beattie + Simply Sewers undeliverable); 0 replies at 10/20 12:50Z; follow-up email + 8-shop call list in sub-outreach.md; answers due Thu 10/23 17:00",
    "folder": "bids/littleton-on-call-plumbing",
    "contact": "Sam Traylor, straylor@littletonco.gov",
    "sub_pricing": "None"
@@ -88,7 +88,7 @@
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Alex Ditto",
-   "subs": "Alex rates (via Luke)",
+   "subs": "Alex Ditto rates via Luke; nothing in the repo as of 10/20; 8 days to submission",
    "folder": "bids/thornton-on-call-landscape",
    "contact": "Keith Griess, keith.griess@cityofthornton.net",
    "sub_pricing": "Unknown"
@@ -102,11 +102,11 @@
    "due": "2026-10-28T10:00:00-06:00",
    "portal": "Email emorales@sd27j.net",
    "decision": "GO",
-   "decision_note": "Questions due 2026-10-23 15:00. Luke: call Wire to Wire and Becks, email 303 Technologies; quotes by 10/23.",
+   "decision_note": "Questions due 2026-10-23 15:00 (4 drafted in sub-outreach.md). Sub outreach has not gone out; 8 days to submission.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Low-voltage sub",
-   "subs": "Outreach written 10/19 (6 candidates); pricing asked by 10/23 17:00",
+   "subs": "NOT SENT as of 10/20 12:50Z (no sent-mail record). Luke today: call Wire to Wire + Becks, email 303 Technologies/Becks; pricing by Fri 10/23 17:00; questions to District by Thu 10/23 15:00",
    "folder": "bids/sd27j-speaker-cabling",
    "contact": "emorales@sd27j.net",
    "sub_pricing": "None"
@@ -629,6 +629,21 @@
    "when": "2026-10-23T17:00:00-06:00",
    "kind": "Sub answers due",
    "note": "Low-voltage sub pricing"
+  },
+  {
+   "bid": "littleton-2126",
+   "when": "2026-10-23T17:00:00-06:00",
+   "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far"
+  },
+  {
+   "bid": "sd27j-2021brrhs",
+   "when": "2026-10-23T15:00:00-06:00",
+   "note": "Email emorales@sd27j.net; 4 questions drafted"
+  },
+  {
+   "bid": "sd27j-2021brrhs",
+   "when": "2026-10-23T17:00:00-06:00",
+   "note": "Cabling sub price; outreach not sent as of 10/20"
   }
  ],
  "doc_gaps": [

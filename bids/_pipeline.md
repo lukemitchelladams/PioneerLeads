@@ -17,7 +17,7 @@ plus SAM.gov. Daily email alerts to luke@brownbisonco.com are now set (see "Aler
 
 | # | Agency | Solicitation | Due (MT) | Trade | Performs (we always submit) | Mandatory walk? | Contact | Status |
 |---|--------|--------------|----------|-------|------|-----------------|---------|--------|
-| 1 | City of Littleton | RFQ #2126 On-Call Commercial Plumbing Services, ~38 city buildings, $100k/yr pool, 2+1 yrs | 2026-10-28 14:00 via RMEPS | Plumbing/HVAC | Brown Bison | **No** (10/9 meeting was optional; Q&A posts 10/21) | Sam Traylor, straylor@littletonco.gov | **GO. Folder: bids/littleton-on-call-plumbing/** |
+| 1 | City of Littleton | RFQ #2126 On-Call Commercial Plumbing Services, ~38 city buildings, $100k/yr pool, 2+1 yrs | 2026-10-28 14:00 via RMEPS | Plumbing/HVAC | Brown Bison | **No** (10/9 meeting was optional; Q&A posts 10/21) | Sam Traylor, straylor@littletonco.gov | **GO. Folder: bids/littleton-on-call-plumbing/** Sub: 7 plumbers emailed 10/19, 0 replies 10/20; follow-up + call list in sub-outreach.md |
 | 2 | City of Thornton | RFP 324-26 On-Call Landscape Construction Services, GSA through 2032, multi-award | 2026-10-28 15:00 via BidNet or hand delivery | Landscape | Alex Ditto as our sub | **No** | Keith Griess, keith.griess@cityofthornton.net | **GO. We submit; Alex's rates + markup. Folder: bids/thornton-on-call-landscape/** |
 | — | Colorado DOC | DQ CAAA 2027000037 Boiler Chemicals & Treatment Services, Trinidad Correctional Facility (via BidNet) | 2026-10-29 17:00 | Boiler/HVAC | — | **YES: Wed 2026-10-21 10:00 at TCF; RSVP + consent/ID was due 2026-10-19. Same hour as Adams County.** | Jennifer Garvin | **No bid (conflict + RSVP deadline). Folder: bids/codoc-trinidad-boiler-chemicals/** |
 | — | Boulder County | BID-313-26 HVAC Air Filters | 2026-10-29 | HVAC supply | — | No | procurement@bouldercounty.gov | **PENDING: volume question emailed to procurement 10/19. GO if ≥$30k/yr + term (math.md); else no bid.** |
@@ -99,7 +99,7 @@ Ledger: bids/_watch/govtribe_ledger.json. New verdicts this pass (pre-bid status
 
 | Verdict | Agency | Solicitation | Due (MT) | Pre-bid / walk | Note |
 |---|---|---|---|---|---|
-| **GO** | School District 27J (Riverdale Ridge HS) | 2021BRRHS Speaker Cabling Installation | 2026-10-28 10:00, email to emorales@sd27j.net | None found in text read | Low-voltage cabling, ~49-59 classroom speakers. Questions due 10/23 15:00. Sub outreach now. |
+| **GO** | School District 27J (Riverdale Ridge HS) | 2021BRRHS Speaker Cabling Installation | 2026-10-28 10:00, email to emorales@sd27j.net | None found in text read | Low-voltage cabling, ~49-59 classroom speakers. Questions due 10/23 15:00. Sub outreach NOT sent as of 10/20; Luke to call Wire to Wire + Becks today. |
 | EVALUATE | Jefferson County Facilities | 26-18863AP-FM Dome Glass Replacement | 2026-11-04 10:00 | In-person 10/15 PASSED, "should attend" (not stated mandatory) | Ask Andrew Pulford before questions deadline 10/21 10:00 whether we can still bid. Glazing sub. |
 | EVALUATE | Elbert County | IFB 2026-006 Fencing (Kiowa, Simla) | 2026-10-27 12:30, hard copy + email | None listed | ~2,963 LF chain-link. Questions due 10/20 13:00. Fence sub quote needed in ~2 days. |
 | EVALUATE (low) | Denver Public Schools | BD2730 GC Prequalification / Open Enrollment | 2026-10-21 10:00 via BidNet | None | Prequal only; possible Round 2. |
