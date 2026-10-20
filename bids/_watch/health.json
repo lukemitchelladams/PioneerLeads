@@ -1,25 +1,25 @@
 {
-  "checked_at": "2026-10-20T22:36:27+00:00",
+  "checked_at": "2026-10-20T23:37:11+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
-      "count": 592,
+      "complete": true,
+      "count": 582,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-10-20T21:36:06+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-10-20T23:36:22+00:00",
-      "matches": 82,
+      "errors": [],
+      "last_success": "2026-10-20T23:37:11+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
+      "matches": 83,
       "reach_note": "HTTP 200",
-      "reachable": true
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 193,
+        "statewide BUYER": 390
+      }
     },
     "bonfire": {
       "count": 3,
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-10-20T22:36:27+00:00",
+      "last_success": "2026-10-20T23:37:11+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -67,7 +67,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-20T22:36:27+00:00",
+      "last_success": "2026-10-20T23:37:11+00:00",
       "logged_in": true,
       "login_note": "API key; +31 from the nightly bulk file",
       "matches": 76,
