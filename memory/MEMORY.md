@@ -434,3 +434,16 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   sources; create_trigger has no source param). trig_014jsVKh8JXD8hBPctBHbDu4 DISABLED. New trig_01PrBNrQswzothmXa4rqo56V
   fires at :50 INTO the HQ session (persistent_session_id) as a heartbeat: restart loop if dead/stale, fix failed push,
   diagnose blind/login-blocked sources, run first real login when creds appear, message this session. HQ loop remains primary.
+
+### 2026-10-20 04:26 UTC: FIRST LOGGED-IN BIDNET PULL WORKS
+- Luke gave BIDNET_USER/BIDNET_PASS in chat (04:15); stored only in ~/.brownbison/env (mode 600, outside the repo).
+- Login fix: BidNet's login window is collapsed until the header Login button (#header_btnLogin) opens it;
+  login() now opens it, fills, submits (JS submit fallback). Logged in on the first try, NO device code asked.
+  Saved session: ~/.brownbison/sessions/bidnet.json (reused hourly; re-login only when BidNet expires it).
+- Logged in, the detail page shows sol #, agency, description, pre-bid; documents load only after clicking the
+  "Documents & Items" tab (a#attachmentDownloadLnk_<id> -> .../docs-items/<id>/attachment-download). The pricing
+  "template" is the RMEPS Items list. enrich() now clicks that tab; download_docs() downloads each link.
+- Littleton RFQ 21-26: Attachments A, B, C downloaded and committed (5bd5ef6) + Pricing-Items-RMEPS.md.
+- The background loop is retired (it dies with every container restart). Engine now: scheduled task
+  trig_01792tC1P3WZhukYJtGaroxc fires INTO THIS SESSION hourly at :35 MT (logged-in scan, code from Gmail if
+  ever asked, push); the :50 WORKER trigger stays as the public-data safety net.

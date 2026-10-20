@@ -122,6 +122,17 @@ _hl = ("<table><tr class='mets-table-row'><td><a class='solicitation-link' href=
        "<span class='iris-highlight'>On</span>-<span class='iris-highlight'>Call</span> Commercial Plumbing Services</a></td></tr></table>")
 check("bidnet highlighted title not split", bidnet.parse_listing(_hl)[0][0]["title"] == "On-Call Commercial Plumbing Services",
       bidnet.parse_listing(_hl)[0])
+_docs = ("<div id='docs'><table><tr><td><a class='mets-command-link' id='attachmentDownloadLnk_9747910258' "
+         "href='/public/solicitations/9745843859/abstract/docs-items/9747910258/attachment-download'>"
+         "Attachment A - Contract Certification Form.pdf</a></td><td>198 Kb</td></tr></table>"
+         "<p>Items No Description UOM Qty 1 Non-Emergency Normal Business Hours Rate Hourly Rate 1</p>"
+         "<p>There are no items associated with this solicitation.</p></div>")
+_t = bidnet.parse_docs_tab(_docs, bidnet.BASE + "/colorado/solicitations/open-bids/x/0000438328")
+check("logged-in Documents tab: attachment links (real markup, Littleton 2026-10-20)",
+      len(_t["documents"]) == 1 and _t["documents"][0]["name"].startswith("Attachment A")
+      and _t["documents"][0]["url"].endswith("/9747910258/attachment-download"), _t)
+check("logged-in Documents tab: RMEPS pricing items captured", (_t["items_text"] or "").startswith("Items No Description")
+      and "Hourly Rate" in _t["items_text"], _t)
 check("bidnet page_url keeps query", bidnet.page_url(bidnet.CO_OPEN + "?keywords=hvac", 2)
       == bidnet.CO_OPEN + "/page2?keywords=hvac")
 d = bidnet.parse_detail((FX / "bidnet_detail_littleton_2126.html").read_text())

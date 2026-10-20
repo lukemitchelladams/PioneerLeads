@@ -88,10 +88,8 @@ def login(page, user: str, pw: str) -> None:
     html = page.content()
     if BOT_RX.search(html) and not total_count(html):
         raise RuntimeError("BidNet robot check served on the login page; try again later")
-    _fill_first(page, LOGIN_USER_SEL, user)
-    _fill_first(page, LOGIN_PASS_SEL, pw)
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
-    _click_first(page, LOGIN_BTN_SEL)
+    _submit_login_window(page, user, pw)
     page.wait_for_load_state("domcontentloaded")
     page.wait_for_timeout(3000)
     html = page.content()
@@ -117,6 +115,40 @@ def login(page, user: str, pw: str) -> None:
         clear_code()
         if CODE_PROMPT_RX.search(visible_text(page.content())):
             raise LoginBlocked("BidNet rejected the confirmation code (expired or mistyped); get a fresh one")
+
+
+LOGIN_TOGGLE_SEL = ["#header_btnLogin", "#loginLinkCustom", "button.loginButton", "a[href='/public/authentication/login']"]
+
+
+def _submit_login_window(page, user: str, pw: str) -> None:
+    """The login window (div#loginWindow) is collapsed until the header Login button opens it (seen
+    2026-10-20: filling the hidden fields timed out and nothing was submitted). Open it and fill; if the
+    fields still are not visible, set the values and submit the form from JavaScript (same POST, same _csrf)."""
+    for sel in LOGIN_TOGGLE_SEL:
+        try:
+            if page.locator(sel).count():
+                page.click(sel, timeout=5000)
+                page.wait_for_timeout(1200)
+                break
+        except Exception:  # noqa: BLE001
+            continue
+    try:
+        page.wait_for_selector("#loginBox_j_username, input[name='j_username']", state="visible", timeout=5000)
+        _fill_first(page, LOGIN_USER_SEL, user)
+        _fill_first(page, LOGIN_PASS_SEL, pw)
+        _click_first(page, LOGIN_BTN_SEL)
+        return
+    except Exception:  # noqa: BLE001 - fall back to a scripted submit of the same form
+        pass
+    page.evaluate(
+        """([u, p]) => {
+            const f = document.getElementById('loginWindowForm') || document.querySelector("form[action*='authentication/login']");
+            if (!f) throw new Error('login form not found');
+            const uf = f.querySelector("input[name='j_username']"), pf = f.querySelector("input[name='j_password']");
+            if (!uf || !pf) throw new Error('login fields not found');
+            uf.value = u; pf.value = p;
+            if (typeof f.requestSubmit === 'function') f.requestSubmit(); else f.submit();
+        }""", [user, pw])
 
 
 def visible_text(html: str) -> str:
@@ -177,7 +209,7 @@ def is_logged_in(page) -> bool:
 def _fill_first(page, sels, value):
     for s in sels:
         if page.locator(s).count():
-            page.fill(s, value)
+            page.fill(s, value, timeout=8000)
             return
     raise RuntimeError(f"no field matched {sels[0]}…")
 
@@ -185,7 +217,7 @@ def _fill_first(page, sels, value):
 def _click_first(page, sels):
     for s in sels:
         if page.locator(s).count():
-            page.click(s)
+            page.click(s, timeout=8000)
             return
     raise RuntimeError(f"no button matched {sels[0]}…")
 
@@ -285,6 +317,7 @@ def parse_detail(html: str, url: str = "") -> dict:
 
 
 _FIELDS = r"Location|Publication Date|Closing Date|Issuing Organization|Owner Organization|Solicitation Number|" \
+    r"Title|Source ID|Reference Number|Purchase Type|Piggyback Contract|Details|" \
     r"Solicitation Type|Description|Bid Documents|Buyer Contact|Get instant access"
 
 
@@ -402,14 +435,48 @@ def collect_open(session, keywords: list[str], max_pages: int = MAX_PAGES,
     return out, errors, totals
 
 
+DOCS_TAB_SEL = "a[href*='innerTabId=docs-items']"
+ATTACH_SEL = "a[id^='attachmentDownloadLnk_']"
+
+
+def parse_docs_tab(html: str, url: str = "") -> dict:
+    """The logged-in 'Documents & Items' tab (verified 2026-10-20 on Littleton 0000438328): one
+    a#attachmentDownloadLnk_<id> per file, href .../abstract/docs-items/<id>/attachment-download, and an Items
+    list (the RMEPS pricing lines bidders fill in). Loaded by XHR only after the tab is clicked."""
+    soup = BeautifulSoup(html, "lxml")
+    docs = [{"name": _txt(a), "url": urljoin(url or BASE, a["href"])} for a in soup.select(ATTACH_SEL + "[href]")]
+    text = " ".join(soup.get_text(" ").split())
+    i = text.find("Items No Description")
+    items = None
+    if i >= 0:
+        j = min(k for k in (text.find("There are no items", i), text.find("Print Options", i), len(text)) if k > i)
+        items = text[i:j].strip()[:3000]
+    return {"documents": docs, "items_text": items}
+
+
 def enrich(session, bid: dict) -> dict:
     """Detail page. Public visitors see only location + publication/closing date (and closing time);
-    issuing org, solicitation #, description, documents and buyer contact are 'Registered members only'."""
-    session.page.goto(bid["url"], wait_until="domcontentloaded")
-    session.page.wait_for_timeout(1200)
-    d = parse_detail(session.page.content(), bid["url"])
+    issuing org, solicitation #, description, documents and buyer contact are 'Registered members only'.
+    Logged in, the documents live on the 'Documents & Items' tab, which loads only when clicked."""
+    page = session.page
+    page.goto(bid["url"], wait_until="domcontentloaded")
+    page.wait_for_timeout(1200)
+    d = parse_detail(_content(page), bid["url"])
     if d.get("login_required_for_docs") and not session.logged_in:
         d["prebid"] = None  # the description is locked, so any 'pre-bid' hit came from page chrome
+    if session.logged_in:
+        try:
+            if page.locator(DOCS_TAB_SEL).count():
+                page.locator(DOCS_TAB_SEL).first.click()
+                page.wait_for_selector(ATTACH_SEL + ", text=No Files", timeout=15000)
+                page.wait_for_timeout(800)
+                t = parse_docs_tab(_content(page), bid["url"])
+                if t["documents"]:
+                    d["documents"] = t["documents"]
+                if t["items_text"]:
+                    d["items_text"] = t["items_text"]
+        except Exception:  # noqa: BLE001 - keep the main-tab facts even if the docs tab misbehaves
+            session.debug_dump("docs-tab")
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}
 
 
@@ -419,6 +486,7 @@ def download_docs(session, bid: dict) -> list[str]:
     dest = DOWNLOAD_DIR / "bidnet" / bid["id"]
     dest.mkdir(parents=True, exist_ok=True)
     for d in bid.get("documents", [])[:60]:
+        safe = re.sub(r"[^\w.\- ]", "_", d.get("name") or "").strip()
         try:
             with session.page.expect_download(timeout=45000) as dl:
                 try:
@@ -426,9 +494,20 @@ def download_docs(session, bid: dict) -> list[str]:
                 except Exception:  # noqa: BLE001 - Chromium aborts navigation when a download starts
                     pass
             f = dl.value
-            target = dest / f.suggested_filename
+            target = dest / (safe or f.suggested_filename)
             f.save_as(target)
             saved.append(str(target))
+            continue
+        except Exception:  # noqa: BLE001 - fall back to a plain GET with the same logged-in cookies
+            pass
+        try:
+            r = session.ctx.request.get(d["url"], timeout=60000)
+            body = r.body()
+            ctype = (r.headers.get("content-type") or "").lower()
+            if r.ok and body and "text/html" not in ctype:
+                target = dest / (safe or d["url"].rstrip("/").rsplit("/", 1)[-1])
+                target.write_bytes(body)
+                saved.append(str(target))
         except Exception:  # noqa: BLE001
             continue
     return saved
