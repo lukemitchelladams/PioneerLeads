@@ -507,3 +507,9 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - Pre-bid facts (BidNet detail): CU UCB001284 mandatory prebid 10/01 missed = dead. DPS BD2733 fire alarm
   mandatory job walk 10/27 10:00 (worker leans NO). Adams Co. street lights mandatory walk 10/21 10:00 (GO).
 - Hourly :35 scan: 05:34 ran SAM.gov + Parker only (BidNet deferred so E3 stayed clean); 07:02 full scan.
+- 07:26 UTC: the hourly worker's adversarial code review (ops/research/2026-10-20-code-review.md) found 5 bugs in
+  MAIN's files; all fixed in 2b45cba: BidNet lockout risk (a stale password was submitted 3x per run; now one
+  submission, then a 6 h hold on those exact credentials, stored as a hash); "Closed Bid" aggregate rows dropped
+  after the completeness count; thin/failed detail pages keep earlier documents and pre-bid; login re-checked
+  before the detail pass; watch patterns no longer match URLs. Worker fixed extract_prebid, IMAP TLS, Bonfire,
+  DIBBS statuses, SAM attachment names (6f905be). Suite 133/133.
