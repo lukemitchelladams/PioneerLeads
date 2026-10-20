@@ -412,3 +412,10 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - BidNet WAF: ~3 full scans in 15 min → robot check; scanner stops and keeps prior results. Cadence: loop 60 min + :50 trigger.
   curl (non-browser) hits the WAF immediately; keep every BidNet request inside Playwright.
 - Bonfire/OpenGov opportunity pages: Cloudflare bot challenge to cloud IPs (list JSON works; details don't).
+- 03:10 UTC: loop cycle 1 (7c8d8fa) lost the 400 RMEPS rows: BidNet's statewide page reloads itself right after
+  load, page.content() failed, and the aggregate tab alone passed the completeness check -> ~70 matches falsely
+  "no longer listed". Fixed in 2368718 (re-read content while the page settles; any failed statewide tab =
+  incomplete scan = carry forward, close nothing); corrected data pushed in 2595eea. WORKER session added
+  scripts/bidwatch/mailcode.py (2ba9bc3): opt-in read-only IMAP reader for the BidNet code when
+  BIDNET_CODE_IMAP_PASS (Google app password) is set. Loop restarted on that code (PID in debug/loop.status).
+  Rule: never leave uncommitted files in this tree; the loop's rebase/push fails on a dirty tree.
