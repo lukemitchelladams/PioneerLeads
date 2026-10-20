@@ -1,12 +1,13 @@
 """Fill the Town of Parker's own price workbook (RFP 26-028, upload 6.1.3) from private/bid_inputs.json.
 
-    python3 bids/town-of-parker-hvac-on-call/submission/build_price_workbook.py
+    python3 bids/town-of-parker-hvac-on-call/submission/build_price_workbook.py            # submission copy
+    python3 bids/town-of-parker-hvac-on-call/submission/build_price_workbook.py --for-sub  # Rich's approval copy
 
 Reads the Town's blank form (docs/2-HVAC-PM-Price-Sheet-Forms.xlsx), writes only the blue vendor-input cells, keeps the
-Town's formulas, and saves "<company> - Town of Parker HVAC PM Price Workbook.xlsx" into private/ (git-ignored: prices
-stay off the public repo until the bid closes). Sub prices in bid_inputs.json are Rich's numbers; every dollar figure
-marked "sub" is raised by the markup before it is written. Anything still null is left blank and listed at the end, so
-an incomplete workbook is never mistaken for a finished one.
+Town's formulas, and saves into private/ (git-ignored: prices stay off the public repo until the bid closes). Dollar
+numbers in bid_inputs.json are Rich's; the submission copy raises each by "markup", the --for-sub copy writes them
+unchanged, paints every missing cell yellow and adds a "FOR RICH" sheet with the open questions, so it can never be
+mistaken for the upload. Anything still null is listed at the end and the exit code is 1.
 """
 from __future__ import annotations
 
@@ -16,6 +17,7 @@ from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
 import openpyxl
+from openpyxl.styles import Alignment, Font, PatternFill
 
 BID = Path(__file__).resolve().parents[1]
 FORM = BID / "docs" / "2-HVAC-PM-Price-Sheet-Forms.xlsx"
@@ -33,11 +35,16 @@ def money(x: float, markup: float) -> float:
     return float((Decimal(str(x)) * (Decimal(1) + Decimal(str(markup)))).quantize(Decimal("0.01"), ROUND_HALF_UP))
 
 
+YELLOW = PatternFill("solid", fgColor="FFFF00")
+
+
 def main() -> int:
+    for_sub = "--for-sub" in sys.argv
     cfg = json.loads(INPUTS.read_text())
-    markup = cfg["markup"]
+    markup = 0.0 if for_sub else cfg["markup"]
     wb = openpyxl.load_workbook(FORM)
     missing: list[str] = []
+    holes: list[tuple[str, str]] = []  # (sheet, cell) left blank, painted yellow in the sub's copy
 
     ws = wb["Scheduled Services"]
     for fac, row in FACILITY_ROWS.items():
@@ -45,6 +52,7 @@ def main() -> int:
             v = cfg["scheduled"][fac][season]
             if v is None:
                 missing.append(f"Scheduled Services {fac} {season}")
+                holes.append(("Scheduled Services", f"{col}{row}"))
             elif isinstance(v, (int, float)):
                 ws[f"{col}{row}"] = money(v, markup)
                 ws[f"{col}{row}"].number_format = '"$"#,##0.00'
@@ -60,6 +68,7 @@ def main() -> int:
             v = rates.get(key) if isinstance(rates, dict) else rates
             if v is None:
                 missing.append(f"Labor {who} {key}")
+                holes.append(("Labor & Charges", f"{col}{row}"))
             elif isinstance(v, (int, float)):
                 ws[f"{col}{row}"] = money(v, markup)
                 ws[f"{col}{row}"].number_format = '"$"#,##0.00'
@@ -69,10 +78,14 @@ def main() -> int:
         vals = cfg["charges"].get(item)
         if vals is None:
             missing.append(f"Charges {item}")
+            holes.extend(("Labor & Charges", f"{c}{row}") for c in CHARGE_COLS)
             continue
         for col, v in zip(CHARGE_COLS, vals):
             if v is None:
                 missing.append(f"Charges {item} column {col}")
+                holes.append(("Labor & Charges", f"{col}{row}"))
+            elif isinstance(v, dict):  # text carrying sub dollar amounts: {"fmt": "R-410A ${}/lb", "values": [70]}
+                ws[f"{col}{row}"] = v["fmt"].format(*(f"{money(x, markup):,.2f}" for x in v["values"]))
             else:
                 ws[f"{col}{row}"] = v
 
@@ -83,14 +96,32 @@ def main() -> int:
     for i, ref in enumerate(cfg["references"][:3]):
         if not any(ref):
             missing.append(f"Reference {i + 1}")
+            holes.extend(("Proposal Forms", f"{c}{12 + i}") for c in "ABCDEF")
         for col, v in zip("ABCDEF", ref):
             ws[f"{col}{12 + i}"] = v
     if cfg.get("assumptions"):
         ws["A17"] = cfg["assumptions"]
     else:
         missing.append("Assumptions, exceptions, and renewal terms")
+        holes.append(("Proposal Forms", "A17"))
 
-    out = BID / "private" / f"{cfg['company']} - Town of Parker HVAC PM Price Workbook.xlsx"
+    if for_sub:
+        for sheet, cell in holes:
+            wb[sheet][cell].fill = YELLOW
+        ws = wb.create_sheet("FOR RICH", 0)
+        ws.column_dimensions["A"].width = 120
+        ws["A1"] = "FOR RICH CARROLL TO REVIEW: NOT FOR SUBMISSION"
+        ws["A1"].font = Font(bold=True, size=14)
+        ws["A2"] = ("These are your prices exactly as you wrote them, with no Brown Bison markup, typed into the Town's own "
+                    "form. Yellow cells are still blank. Please check every number, fill the yellow cells, answer the "
+                    "questions below, and reply 'approved'.")
+        ws["A2"].alignment = Alignment(wrap_text=True)
+        for i, q in enumerate(cfg.get("questions_for_sub", []), start=4):
+            ws[f"A{i}"] = f"{i - 3}. {q}"
+            ws[f"A{i}"].alignment = Alignment(wrap_text=True)
+        out = BID / "private" / f"FOR RICH REVIEW - {cfg['sub_company']} prices in Town of Parker form.xlsx"
+    else:
+        out = BID / "private" / f"{cfg['company']} - Town of Parker HVAC PM Price Workbook.xlsx"
     wb.save(out)
     print(f"wrote {out.relative_to(BID.parents[1])}")
     print("STILL MISSING:" if missing else "complete: every vendor cell filled")
