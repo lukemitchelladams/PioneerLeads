@@ -513,3 +513,12 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
   after the completeness count; thin/failed detail pages keep earlier documents and pre-bid; login re-checked
   before the detail pass; watch patterns no longer match URLs. Worker fixed extract_prebid, IMAP TLS, Bonfire,
   DIBBS statuses, SAM attachment names (6f905be). Suite 133/133.
+
+## 2026-10-20 01:45 MT — adversarial code review of the scanner (Workflow, 8 reviewers x 3 refuters)
+- 61 findings, 23 reached a verdict (agent pool hit its limit). CONFIRMED + fixed: pre-bid parser scope (common.extract_prebid:
+  'optional' elsewhere no longer flips a MANDATORY walk; 'Pre-Bid: None' skipped), IMAP verified TLS, bonfire.is_logged_in positive
+  signal, DIBBS closed statuses excluded + untitled anchors, SAM attachment names by file id (amendments now diff), SAM state filter
+  (WORKER 6f905be); BidNet 'Closed Bid' rows dropped, thin detail keeps document baseline, bad-password lockout guard + is_logged_in
+  re-check before retry, mid-cycle re-validation, watch regex on title+sol only (HQ 2b45cba). 133/133 tests. Summary:
+  ops/research/2026-10-20-code-review.md. Open UNVERIFIED items listed there for a second pass.
+- Replies to Luke now use the 8-line board format in CLAUDE.md (hourly routine prompt updated 07:15Z).
