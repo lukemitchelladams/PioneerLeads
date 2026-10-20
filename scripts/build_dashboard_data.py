@@ -139,7 +139,10 @@ def build(now: datetime) -> dict[str, list[dict]]:
                             "open_count": 0, "matches": 0, "last_success": ""})
             continue
         carried = h.get("carried_forward") or (not h.get("count") and in_file.get(s, 0) > 0)
-        if carried:
+        if s == "dibbs":
+            # DIBBS FAQ #45 forbids cloud-hosted/proxy access; the cloud scanner keeps the last local read
+            status = "Local runner only (DIBBS bars cloud access); last good data shown"
+        elif carried:
             # the scanner could not read this source this run; open_bids.json still holds its last good rows
             status = "Blind this run (last good data shown)"
         elif not h.get("reachable"):

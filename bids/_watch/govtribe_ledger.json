@@ -24,13 +24,18 @@
   "bidnet:ppsc-dq27-005": "NO: PPSC flooring re-bid, not our trade, closes 10/23",
   "bidnet:detention-kiosks": "NO: detention security desk kiosks, closes 10/23, outside trades",
   "bidnet:redstone-snow": "NO (likely): Redstone/Pitkin snow removal, 3.5h away; reconsider only with docs",
-  "bidnet:fire-alarm-inspection": "EVALUATE-lean-NO: fire alarm inspection & testing 11/12 (NICET)",
-  "bidnet:fire-alarm-troubleshoot": "EVALUATE-lean-NO: annual fire alarm troubleshooting 11/02 (NICET/Notifier)",
+  "bidnet:fire-alarm-inspection": "NO: pre-bid 10/20 passed per BidNet detail (was EVALUATE-lean-NO)",
+  "bidnet:fire-alarm-troubleshoot": "NO: MANDATORY pre-bid 10/15 passed per BidNet detail",
   "bidnet:access-control": "EVALUATE: on-call security access control 11/19 (low-voltage sub)",
   "bidnet:hvac-staged-upgrade": "EVALUATE: staged HVAC system upgrade, closes 2027-02-26",
   "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)",
   "bidnet:broomfield-26-rfp-pd-002": "NO: Broomfield PD detention fence, mandatory pre-proposal 2026-09-30 missed",
-  "bidnet:dougco-fencing": "EVALUATE-lean-NO: Douglas County commercial/residential fencing 11/05, outside core trades"
+  "bidnet:dougco-fencing": "EVALUATE-lean-NO: Douglas County commercial/residential fencing 11/05, outside core trades",
+  "bidnet:0000440260-roof-repair": "NO: Roof Repair Services, mandatory pre-bid 10/21, roofing is not our trade",
+  "bidnet:elevator-pm": "NO: Elevator PM/repairs, pre-bid 10/27, not our trade",
+  "bidnet:superior-irrigation-tank-cover": "NO: Town of Superior irrigation tank floating cover, pre-bid 10/22, not our trade",
+  "bidnet:environmental-consulting": "NO: On-call environmental consulting, not our trade",
+  "bidnet:fire-alarm-replacement-2027": "NO-lean: Fire Alarm Replacement 2027/2028, MANDATORY pre-bid 10/27 per BidNet detail; NICET sub + 7-day sub notice not met"
  },
  "watched": {
   "6ac78e133e2326616e082a75": {
@@ -184,5 +189,5 @@
    "snap_at": "2026-10-20T04:23:00Z"
   }
  },
- "last_hourly_check": "2026-10-20T04:23:00Z: 0 new CO state/local since 2026-10-14; federal CO 0 new; PSC 0 new; 18 watched unchanged; inbox 0 new; last live scan 03:14Z (loop restarted, first scan ~04:17Z)"
+ "last_hourly_check": "2026-10-20T05:15:00Z: logged-in scan 04:40Z read pre-bid dates on 19 bids; 7 verdicts recorded; 12 bids added to watchlist for doc download"
 }

@@ -174,7 +174,7 @@
    "due": "2026-11-09T14:00:00-07:00",
    "portal": "BidNet",
    "decision": "GO",
-   "decision_note": "No meeting. Need handyman/GC sub rates.",
+   "decision_note": "Full package in hand 10/20 (Addendum 1, Q&A, Fee Schedule, Required Solicitation Documents, Sample MPA, General Terms). Need handyman/GC sub rates.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Handyman/GC sub",
@@ -210,7 +210,7 @@
    "due": "2026-11-12T14:00:00-07:00",
    "portal": "BidNet",
    "decision": "EVALUATE",
-   "decision_note": "Optional site visit 2026-10-27 09:00; RSVP by 2026-10-23 14:00. Needs NETA sub.",
+   "decision_note": "Attachments 1-3 in hand 10/20 (Att 2 = price proposal xlsx). Optional site visit 10/27 09:00, RSVP by 10/23 14:00. Needs NETA sub.",
    "prebid": "2026-10-27T09:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "NETA testing sub",
@@ -246,7 +246,7 @@
    "due": "2026-12-01T14:00:00-07:00",
    "portal": "RMEPS (BidNet)",
    "decision": "AT RISK",
-   "decision_note": "Mandatory walk was 2026-10-19 14:00 at Sherrelwood Elem. Attendance not confirmed; dead if missed.",
+   "decision_note": "Mandatory walk was 2026-10-19 14:00 Sherrelwood; attendance not confirmed. Attachments E, F-1..6, G-1..6 in hand 10/20.",
    "prebid": "2026-10-19T14:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "GC / electrical sub",
@@ -434,8 +434,8 @@
    "due_source": "BidNet listing (date only where time shown as 14:00 is a placeholder)",
    "portal": "BidNet",
    "decision": "EVALUATE",
-   "decision_note": "Solicitation not in hand (BidNet docs login-only; not in GovTribe). Live scanner hunting agency copy; check walk date first.",
-   "prebid": null,
+   "decision_note": "BidNet detail (logged in) shows a pre-bid on 2026-10-26; time and mandatory status not parsed. Docs queued for the next :35 scan (watchlist). Decide by 10/23.",
+   "prebid": "2026-10-26T00:00:00-06:00",
    "prebid_mandatory": null,
    "performer": "Sub TBD",
    "subs": "Not started",
@@ -495,6 +495,25 @@
    "prebid": null,
    "prebid_mandatory": null,
    "performer": "Electrical sub TBD",
+   "subs": "Not started",
+   "sub_pricing": "None",
+   "folder": null,
+   "contact": "not in hand"
+  },
+  {
+   "id": "access-control-oncall",
+   "agency": "Agency not in hand",
+   "title": "On-Call Security Access Control Services",
+   "sol": "BidNet 0000437039",
+   "trade": "Low-voltage electrical",
+   "due": "2026-11-19T15:30:00-07:00",
+   "due_source": "BidNet listing",
+   "portal": "BidNet",
+   "decision": "EVALUATE",
+   "decision_note": "BidNet detail shows a pre-bid 2026-11-03 (mandatory status not parsed). Docs queued for the next :35 scan. Needs manufacturer-certified sub check.",
+   "prebid": "2026-11-03T00:00:00-07:00",
+   "prebid_mandatory": null,
+   "performer": "Low-voltage sub TBD",
    "subs": "Not started",
    "sub_pricing": "None",
    "folder": null,
@@ -615,44 +634,9 @@
    "where": "OpenGov portal, section 7"
   },
   {
-   "bid": "brighton-26-500209",
-   "item": "City forms: Sub & Supplier List, Qualification Statement, DBE Self-Cert, Affidavit of Residency, Gen-AI Disclosure",
-   "where": "BidNet, Documents tab"
-  },
-  {
    "bid": "adams-2026-766",
    "item": "Exhibits B and C to sample agreement (HUD/federal)",
    "where": "BidNet"
-  },
-  {
-   "bid": "metro-water-b26019",
-   "item": "Attachment 1 Scope of Services",
-   "where": "BidNet"
-  },
-  {
-   "bid": "metro-water-b26019",
-   "item": "Attachment 2 Price Proposal",
-   "where": "BidNet"
-  },
-  {
-   "bid": "metro-water-b26019",
-   "item": "Attachment 3 Short Form Agreement",
-   "where": "BidNet"
-  },
-  {
-   "bid": "westminster-26-002",
-   "item": "Attachment E General Conditions",
-   "where": "RMEPS/BidNet"
-  },
-  {
-   "bid": "westminster-26-002",
-   "item": "Attachment F Drawings",
-   "where": "RMEPS/BidNet"
-  },
-  {
-   "bid": "westminster-26-002",
-   "item": "Attachment G Technical Specifications",
-   "where": "RMEPS/BidNet"
   },
   {
    "bid": "cos-parks-r26-077mz",

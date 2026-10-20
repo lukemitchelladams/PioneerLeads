@@ -1,167 +1,263 @@
 {
-  "_comment": "Bids we are pursuing. Every scan re-opens each one and reports date changes and new documents (addenda). Match by source+id, or by `match` regex on title / solicitation # / URL. govtribe_ids: the hourly check re-pulls these from GovTribe and diffs updated_at / due date / files against bids/_watch/govtribe_ledger.json.",
-  "bids": [
-    {
-      "name": "Littleton RFQ 2126 On-Call Commercial Plumbing",
-      "source": "bidnet",
-      "match": "\\b2126\\b.*plumb|on-call commercial plumbing",
-      "folder": "bids/littleton-on-call-plumbing",
-      "govtribe_ids": [
-        "6abfa4d2de90cc3d3c0366f2"
-      ]
-    },
-    {
-      "name": "Thornton RFP 324-26 On-Call Landscape Construction",
-      "source": "bidnet",
-      "match": "324-26|on-call landscape construction",
-      "folder": "bids/thornton-on-call-landscape",
-      "govtribe_ids": [
-        "6ac78e3a3e2326616e082a81"
-      ]
-    },
-    {
-      "name": "Town of Parker RFP 26-028 HVAC PM & Repair",
-      "source": "bonfire",
-      "match": "26-028|HVAC Preventive Maintenance",
-      "folder": "bids/town-of-parker-hvac-on-call",
-      "govtribe_ids": [
-        "6ace253950b3706c0b0fa828",
-        "6ac63c5925a3b08d0b072bed"
-      ]
-    },
-    {
-      "name": "Brighton RFP 26-500209-MV2 As-Needed General Construction",
-      "source": "bidnet",
-      "match": "26-500209|as-needed general construction",
-      "folder": "bids/brighton-as-needed-construction",
-      "govtribe_ids": [
-        "6ac78e133e2326616e082a75"
-      ]
-    },
-    {
-      "name": "Adams County IFB-2026.766 Street Light Repair (CASP)",
-      "source": "bidnet",
-      "match": "2026\\.766|street light repair",
-      "folder": "bids/adams-county-airport-streetlights",
-      "govtribe_ids": [
-        "6ad21b8444ea9a49cf0994d3"
-      ]
-    },
-    {
-      "name": "Metro Water Recovery RFP B26019 Switchgear & Relay",
-      "source": "bidnet",
-      "match": "B26019|switchgear and protective relay",
-      "folder": "bids/metro-water-switchgear-maintenance",
-      "govtribe_ids": [
-        "6ad21a1f44ea9a49cf0994b7"
-      ]
-    },
-    {
-      "name": "Arapahoe County RFP 26-52 Fairgrounds Turfgrass",
-      "source": "bidnet",
-      "match": "26-52|fairgrounds turfgrass",
-      "folder": "bids/arapahoe-fairgrounds-turfgrass",
-      "govtribe_ids": [
-        "6ac63c5225a3b08d0b072be8"
-      ]
-    },
-    {
-      "name": "Westminster PS RFP 26-002 Facility Improvements",
-      "source": "bidnet",
-      "match": "26-002|facility improvements.*multiple",
-      "folder": "bids/westminster-ps-facility-improvements",
-      "govtribe_ids": [
-        "6ad21a0944ea9a49cf0994ae"
-      ]
-    },
-    {
-      "name": "DCSD 003-27 Mowing (CRM-tracked)",
-      "source": "bidnet",
-      "match": "003-27|mowing services",
-      "govtribe_ids": [
-        "6abfa513de90cc3d3c036716"
-      ]
-    },
-    {
-      "name": "Poudre SD 27-702-002 Livermore snow (CRM-tracked)",
-      "source": "bidnet",
-      "match": "27-702-002|livermore",
-      "govtribe_ids": [
-        "6ac78dd93e2326616e082a61"
-      ]
-    },
-    {
-      "name": "Poudre SD 27-701-002 Kitchen hood cleaning (CRM-tracked)",
-      "source": "bidnet",
-      "match": "27-701-002|kitchen hood",
-      "govtribe_ids": [
-        "6ac78e1e3e2326616e082a79"
-      ]
-    },
-    {
-      "name": "El Paso County 26-058 On-Call General Facilities Trade Services (CRM-tracked)",
-      "source": "bidnet",
-      "match": "26-058|general facilities trade"
-    },
-    {
-      "name": "Douglas County 036-26 Janitorial (CRM-tracked)",
-      "source": "bidnet",
-      "match": "036-26|janitorial"
-    },
-    {
-      "name": "CMC 1178-26P Custodial Breckenridge (CRM-tracked)",
-      "source": "bidnet",
-      "match": "1178-26P|117826P|professional custodial",
-      "govtribe_ids": [
-        "6ac78dcf3e2326616e082a59"
-      ]
-    },
-    {
-      "name": "27J Speaker Cabling Installation (2021BRRHS)",
-      "match": "speaker cabling",
-      "govtribe_ids": [
-        "6ad21a4444ea9a49cf0994bf"
-      ]
-    },
-    {
-      "name": "RTD 126DM016 Bus Shelter Maintenance (OpenGov, not scraped yet)",
-      "source": "opengov",
-      "match": "126DM016",
-      "govtribe_ids": [
-        "6aba3fe8b2e0f86b0e00dc39"
-      ]
-    },
-    {
-      "name": "USCG 70Z08026Q-AK017 SKF 21318E bearings (Jones Bearing)",
-      "source": "samgov",
-      "match": "70Z08026Q-AK017"
-    },
-    {
-      "name": "Navy N0038326QPD29 Pulley, Groove (Jones Bearing)",
-      "source": "samgov",
-      "match": "N0038326QPD29"
-    },
-    {
-      "name": "USDA Bunkhouse Asbestos Mitigation 1240LT27Q001 (CRM-tracked)",
-      "match": "1240LT27Q001|bunkhouse",
-      "govtribe_ids": [
-        "6ad219dd44ea9a49cf0994a2"
-      ]
-    },
-    {
-      "name": "Jeffco 26-18863AP-FM Dome Glass Replacement (EVALUATE)",
-      "source": "bidnet",
-      "match": "18863|dome glass",
-      "govtribe_ids": [
-        "6ac78e093e2326616e082a6f"
-      ]
-    },
-    {
-      "name": "Elbert County IFB 2026-006 Fencing (EVALUATE)",
-      "match": "2026-006|fencing.*kiowa|kiowa",
-      "govtribe_ids": [
-        "6a2173ec20564a33670a0399"
-      ]
-    }
-  ]
+ "_comment": "Bids we are pursuing. Every scan re-opens each one and reports date changes and new documents (addenda). Match by source+id, or by `match` regex on title / solicitation # / URL. govtribe_ids: the hourly check re-pulls these from GovTribe and diffs updated_at / due date / files against bids/_watch/govtribe_ledger.json.",
+ "bids": [
+  {
+   "name": "Littleton RFQ 2126 On-Call Commercial Plumbing",
+   "source": "bidnet",
+   "match": "\\b2126\\b.*plumb|on-call commercial plumbing",
+   "folder": "bids/littleton-on-call-plumbing",
+   "govtribe_ids": [
+    "6abfa4d2de90cc3d3c0366f2"
+   ]
+  },
+  {
+   "name": "Thornton RFP 324-26 On-Call Landscape Construction",
+   "source": "bidnet",
+   "match": "324-26|on-call landscape construction",
+   "folder": "bids/thornton-on-call-landscape",
+   "govtribe_ids": [
+    "6ac78e3a3e2326616e082a81"
+   ]
+  },
+  {
+   "name": "Town of Parker RFP 26-028 HVAC PM & Repair",
+   "source": "bonfire",
+   "match": "26-028|HVAC Preventive Maintenance",
+   "folder": "bids/town-of-parker-hvac-on-call",
+   "govtribe_ids": [
+    "6ace253950b3706c0b0fa828",
+    "6ac63c5925a3b08d0b072bed"
+   ]
+  },
+  {
+   "name": "Brighton RFP 26-500209-MV2 As-Needed General Construction",
+   "source": "bidnet",
+   "match": "26-500209|as-needed general construction",
+   "folder": "bids/brighton-as-needed-construction",
+   "govtribe_ids": [
+    "6ac78e133e2326616e082a75"
+   ]
+  },
+  {
+   "name": "Adams County IFB-2026.766 Street Light Repair (CASP)",
+   "source": "bidnet",
+   "match": "2026\\.766|street light repair",
+   "folder": "bids/adams-county-airport-streetlights",
+   "govtribe_ids": [
+    "6ad21b8444ea9a49cf0994d3"
+   ]
+  },
+  {
+   "name": "Metro Water Recovery RFP B26019 Switchgear & Relay",
+   "source": "bidnet",
+   "match": "B26019|switchgear and protective relay",
+   "folder": "bids/metro-water-switchgear-maintenance",
+   "govtribe_ids": [
+    "6ad21a1f44ea9a49cf0994b7"
+   ]
+  },
+  {
+   "name": "Arapahoe County RFP 26-52 Fairgrounds Turfgrass",
+   "source": "bidnet",
+   "match": "26-52|fairgrounds turfgrass",
+   "folder": "bids/arapahoe-fairgrounds-turfgrass",
+   "govtribe_ids": [
+    "6ac63c5225a3b08d0b072be8"
+   ]
+  },
+  {
+   "name": "Westminster PS RFP 26-002 Facility Improvements",
+   "source": "bidnet",
+   "match": "26-002|facility improvements.*multiple",
+   "folder": "bids/westminster-ps-facility-improvements",
+   "govtribe_ids": [
+    "6ad21a0944ea9a49cf0994ae"
+   ]
+  },
+  {
+   "name": "DCSD 003-27 Mowing (CRM-tracked)",
+   "source": "bidnet",
+   "match": "003-27|mowing services",
+   "govtribe_ids": [
+    "6abfa513de90cc3d3c036716"
+   ]
+  },
+  {
+   "name": "Poudre SD 27-702-002 Livermore snow (CRM-tracked)",
+   "source": "bidnet",
+   "match": "27-702-002|livermore",
+   "govtribe_ids": [
+    "6ac78dd93e2326616e082a61"
+   ]
+  },
+  {
+   "name": "Poudre SD 27-701-002 Kitchen hood cleaning (CRM-tracked)",
+   "source": "bidnet",
+   "match": "27-701-002|kitchen hood",
+   "govtribe_ids": [
+    "6ac78e1e3e2326616e082a79"
+   ]
+  },
+  {
+   "name": "El Paso County 26-058 On-Call General Facilities Trade Services (CRM-tracked)",
+   "source": "bidnet",
+   "match": "26-058|general facilities trade"
+  },
+  {
+   "name": "Douglas County 036-26 Janitorial (CRM-tracked)",
+   "source": "bidnet",
+   "match": "036-26|janitorial"
+  },
+  {
+   "name": "CMC 1178-26P Custodial Breckenridge (CRM-tracked)",
+   "source": "bidnet",
+   "match": "1178-26P|117826P|professional custodial",
+   "govtribe_ids": [
+    "6ac78dcf3e2326616e082a59"
+   ]
+  },
+  {
+   "name": "27J Speaker Cabling Installation (2021BRRHS)",
+   "match": "speaker cabling",
+   "govtribe_ids": [
+    "6ad21a4444ea9a49cf0994bf"
+   ]
+  },
+  {
+   "name": "RTD 126DM016 Bus Shelter Maintenance (OpenGov, not scraped yet)",
+   "source": "opengov",
+   "match": "126DM016",
+   "govtribe_ids": [
+    "6aba3fe8b2e0f86b0e00dc39"
+   ]
+  },
+  {
+   "name": "USCG 70Z08026Q-AK017 SKF 21318E bearings (Jones Bearing)",
+   "source": "samgov",
+   "match": "70Z08026Q-AK017"
+  },
+  {
+   "name": "Navy N0038326QPD29 Pulley, Groove (Jones Bearing)",
+   "source": "samgov",
+   "match": "N0038326QPD29"
+  },
+  {
+   "name": "USDA Bunkhouse Asbestos Mitigation 1240LT27Q001 (CRM-tracked)",
+   "match": "1240LT27Q001|bunkhouse",
+   "govtribe_ids": [
+    "6ad219dd44ea9a49cf0994a2"
+   ]
+  },
+  {
+   "name": "Jeffco 26-18863AP-FM Dome Glass Replacement (EVALUATE)",
+   "source": "bidnet",
+   "match": "18863|dome glass",
+   "govtribe_ids": [
+    "6ac78e093e2326616e082a6f"
+   ]
+  },
+  {
+   "name": "Elbert County IFB 2026-006 Fencing (EVALUATE)",
+   "match": "2026-006|fencing.*kiowa|kiowa",
+   "govtribe_ids": [
+    "6a2173ec20564a33670a0399"
+   ]
+  },
+  {
+   "name": "Boettcher Mansion Chiller Replacement (EVALUATE; pre-bid 10/26)",
+   "source": "bidnet",
+   "id": "0000440224",
+   "match": "boettcher mansion chiller",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "On-Call Security Access Control Services (EVALUATE; pre-bid 11/03)",
+   "source": "bidnet",
+   "id": "0000437039",
+   "match": "on-call security access control",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "CU Boulder UCB001284 RL2 Lighting Upgrades (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000438184",
+   "match": "UCB001284",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "CU Boulder UCB001622 Irrigation & Landscape (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000440456",
+   "match": "UCB001622",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County 036-26 Janitorial Services (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000440236",
+   "match": "janitorial services for douglas county",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "District Wide Custodial Services (EVALUATE; agency unknown)",
+   "source": "bidnet",
+   "id": "0000437813",
+   "match": "district wide custodial",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Colorado Springs R26-091MZ Parks On-Call Mowing (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000439641",
+   "match": "parks on-call mowing",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Colorado Springs R26-069MZ CAB BAS Modernization (EVALUATE; amendments + Appendix A xlsx)",
+   "source": "bidnet",
+   "id": "0000437173",
+   "match": "\\(CAB\\) Building Automation",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County Fencing (EVALUATE-lean-NO)",
+   "source": "bidnet",
+   "id": "0000439657",
+   "match": "fencing for douglas county",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "DCSD RFP 003-27 Mowing (addendum + pricing schedule)",
+   "source": "bidnet",
+   "id": "0000437804",
+   "match": "003-27",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Staged System Upgrade of the Current HVAC System (EVALUATE; agency unknown)",
+   "source": "bidnet",
+   "id": "444196018422",
+   "match": "staged system upgrade of the current hvac",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "2027 Landscaping Management Services (EVALUATE; due 10/26; agency unknown)",
+   "source": "bidnet",
+   "id": "444202822731",
+   "match": "2027 landscaping management",
+   "folder": null,
+   "govtribe_ids": []
+  }
+ ]
 }

@@ -40,16 +40,6 @@
   "where": "OpenGov portal, section 7"
  },
  {
-  "key": "brighton-26-500209|City forms: Sub & Supplier List, Qualification Statement, DBE Self-Cert, Affidavit of Residency, Gen-AI Disclosure",
-  "bid": "brighton-26-500209",
-  "agency": "City of Brighton",
-  "sol": "RFP 26-500209-MV2",
-  "due": "2026-11-09T14:00:00-07:00",
-  "decision": "GO",
-  "item": "City forms: Sub & Supplier List, Qualification Statement, DBE Self-Cert, Affidavit of Residency, Gen-AI Disclosure",
-  "where": "BidNet, Documents tab"
- },
- {
   "key": "adams-2026-766|Exhibits B and C to sample agreement (HUD/federal)",
   "bid": "adams-2026-766",
   "agency": "Adams County",
@@ -58,66 +48,6 @@
   "decision": "GO",
   "item": "Exhibits B and C to sample agreement (HUD/federal)",
   "where": "BidNet"
- },
- {
-  "key": "metro-water-b26019|Attachment 1 Scope of Services",
-  "bid": "metro-water-b26019",
-  "agency": "Metro Water Recovery",
-  "sol": "RFP B26019",
-  "due": "2026-11-12T14:00:00-07:00",
-  "decision": "EVALUATE",
-  "item": "Attachment 1 Scope of Services",
-  "where": "BidNet"
- },
- {
-  "key": "metro-water-b26019|Attachment 2 Price Proposal",
-  "bid": "metro-water-b26019",
-  "agency": "Metro Water Recovery",
-  "sol": "RFP B26019",
-  "due": "2026-11-12T14:00:00-07:00",
-  "decision": "EVALUATE",
-  "item": "Attachment 2 Price Proposal",
-  "where": "BidNet"
- },
- {
-  "key": "metro-water-b26019|Attachment 3 Short Form Agreement",
-  "bid": "metro-water-b26019",
-  "agency": "Metro Water Recovery",
-  "sol": "RFP B26019",
-  "due": "2026-11-12T14:00:00-07:00",
-  "decision": "EVALUATE",
-  "item": "Attachment 3 Short Form Agreement",
-  "where": "BidNet"
- },
- {
-  "key": "westminster-26-002|Attachment E General Conditions",
-  "bid": "westminster-26-002",
-  "agency": "Westminster Public Schools",
-  "sol": "RFP 26-002",
-  "due": "2026-12-01T14:00:00-07:00",
-  "decision": "AT RISK",
-  "item": "Attachment E General Conditions",
-  "where": "RMEPS/BidNet"
- },
- {
-  "key": "westminster-26-002|Attachment F Drawings",
-  "bid": "westminster-26-002",
-  "agency": "Westminster Public Schools",
-  "sol": "RFP 26-002",
-  "due": "2026-12-01T14:00:00-07:00",
-  "decision": "AT RISK",
-  "item": "Attachment F Drawings",
-  "where": "RMEPS/BidNet"
- },
- {
-  "key": "westminster-26-002|Attachment G Technical Specifications",
-  "bid": "westminster-26-002",
-  "agency": "Westminster Public Schools",
-  "sol": "RFP 26-002",
-  "due": "2026-12-01T14:00:00-07:00",
-  "decision": "AT RISK",
-  "item": "Attachment G Technical Specifications",
-  "where": "RMEPS/BidNet"
  },
  {
   "key": "cos-parks-r26-077mz|Appendix A Specialty Submission (Excel)",
