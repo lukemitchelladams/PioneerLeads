@@ -48,13 +48,17 @@ def main() -> int:
     holes: list[tuple[str, str]] = []  # (sheet, cell) left blank, painted yellow in the sub's copy
     assumed: list[tuple[str, str, str]] = []  # (sheet, cell, label) filled on an assumption, painted orange
 
+    def unwrap(v, sheet: str, cell: str, label: str):
+        """{"value": x, "assumed": why} -> x, recording the cell as an assumption the sub must confirm."""
+        if isinstance(v, dict) and "assumed" in v:
+            assumed.append((sheet, cell, f"{label}: {v['assumed']}"))
+            return v["value"]
+        return v
+
     ws = wb["Scheduled Services"]
     for fac, row in FACILITY_ROWS.items():
         for col, season in (("C", "cooling"), ("D", "heating")):
-            v = cfg["scheduled"][fac][season]
-            if isinstance(v, dict):  # {"value": 1703.70, "assumed": "same as spring"}
-                assumed.append(("Scheduled Services", f"{col}{row}", f"{fac} {season}: {v['assumed']}"))
-                v = v["value"]
+            v = unwrap(cfg["scheduled"][fac][season], "Scheduled Services", f"{col}{row}", f"{fac} {season}")
             if v is None:
                 missing.append(f"Scheduled Services {fac} {season}")
                 holes.append(("Scheduled Services", f"{col}{row}"))
@@ -86,6 +90,7 @@ def main() -> int:
             holes.extend(("Labor & Charges", f"{c}{row}") for c in CHARGE_COLS)
             continue
         for col, v in zip(CHARGE_COLS, vals):
+            v = unwrap(v, "Labor & Charges", f"{col}{row}", f"Charges {item}")
             if v is None:
                 missing.append(f"Charges {item} column {col}")
                 holes.append(("Labor & Charges", f"{col}{row}"))
@@ -99,13 +104,16 @@ def main() -> int:
         for col, v in zip("ABCDEF", sub):
             ws[f"{col}{5 + i}"] = v
     for i, ref in enumerate(cfg["references"][:3]):
-        if not any(ref):
-            missing.append(f"Reference {i + 1}")
-            holes.extend(("Proposal Forms", f"{c}{12 + i}") for c in "ABCDEF")
         for col, v in zip("ABCDEF", ref):
-            ws[f"{col}{12 + i}"] = v
+            v = unwrap(v, "Proposal Forms", f"{col}{12 + i}", f"Reference {i + 1}")
+            if v is None:
+                missing.append(f"Reference {i + 1} column {col}")
+                holes.append(("Proposal Forms", f"{col}{12 + i}"))
+            else:
+                ws[f"{col}{12 + i}"] = v
     if cfg.get("assumptions"):
-        ws["A17"] = cfg["assumptions"]
+        ws["A17"] = unwrap(cfg["assumptions"], "Proposal Forms", "A17", "Assumptions")
+        ws["A17"].alignment = Alignment(wrap_text=True, vertical="top")
     else:
         missing.append("Assumptions, exceptions, and renewal terms")
         holes.append(("Proposal Forms", "A17"))
