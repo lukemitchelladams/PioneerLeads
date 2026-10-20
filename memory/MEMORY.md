@@ -275,3 +275,12 @@ New BidNet email: El Paso County 26-058 addendum 2. Luke replied to Brent (Light
 - 2026-10-19 17:05 MT hourly: nothing new.
 - 2026-10-19 18:05 MT hourly: Colorado Power Wash replied on RTD (wants call 10/20). GovTribe unchanged.
 - 2026-10-19 19:05 MT hourly: nothing new. (Luke asked for the Littleton RFQ 2126 PDF for a plumber; sent.)
+
+### 2026-10-19 19:10 MT: Luke angry: "hourly check: nothing new" while sources were blind
+Verified live: bidnetdirect.com, rockymountainbidsystem.com, sam.gov, api.sam.gov, dibbs, govtribe.com all
+unreachable from this cloud container (network policy). No SAM_API_KEY/BIDNET_USER/BIDNET_PASS env vars.
+Luke's browser-saved passwords live on his computer and never reach this container. GovTribe MCP works but its
+newest Colorado posting is 2026-10-14 (stale). So the hourly checks were reading a 5-day-stale feed plus email.
+Fix applied: routine prompt now starts with a source-health line and may not say "nothing new" unless BidNet or
+SAM.gov was scanned live. Real fix needs Luke: (A) environment Network access + env vars, or (B) run
+scripts/local_runner.sh hourly on his always-on computer (his CRM Mac already runs a 7:17 launchd scan).
