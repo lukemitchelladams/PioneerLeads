@@ -198,7 +198,7 @@ window.bb = {
     v = String(v || '');
     if (/^GO$|^Live$|^In hand/.test(v)) return 'ok';
     if (/EVALUATE|Partial|Unknown|lags|public|0 parsed|Unclear/i.test(v)) return 'warn';
-    if (/AT RISK|^None$|Blocked|Mandatory|not logged/i.test(v)) return 'bad';
+    if (/AT RISK|^None$|Blocked|Blind|Mandatory|not logged/i.test(v)) return 'bad';
     return 'mute';
   },
   pill(v) { const s = document.createElement('span'); s.className = 'pill ' + window.bb.pillClass(v); s.textContent = v; return s; },

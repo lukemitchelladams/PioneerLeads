@@ -108,6 +108,8 @@ def build(now: datetime) -> dict[str, list[dict]]:
     for k, b in scan.get("bids", {}).items():
         if not b.get("profiles") and not b.get("watched"):
             continue
+        if b.get("closing") and b["closing"] < now.date().isoformat():
+            continue
         pre = b.get("prebid") or {}
         first = ts(b.get("first_seen"))
         feed.append({
@@ -134,6 +136,8 @@ def build(now: datetime) -> dict[str, list[dict]]:
             status = "Blocked"
         elif h.get("count"):
             status = "Live" if (h.get("logged_in") or s in ("dibbs",)) else "Live (public, not logged in)"
+        elif any(v is False for v in (h.get("creds") or {}).values()):
+            status = "Blind: credentials not set"
         else:
             status = "Reachable, 0 parsed"
         sources.append({"source": label, "status": status,

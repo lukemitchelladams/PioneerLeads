@@ -17,7 +17,7 @@
  },
  {
   "source": "SAM.gov",
-  "status": "Reachable, 0 parsed",
+  "status": "Blind: credentials not set",
   "detail": "SAM_API_KEY not set; SAM_API_KEY not set",
   "open_count": 0,
   "matches": 0,

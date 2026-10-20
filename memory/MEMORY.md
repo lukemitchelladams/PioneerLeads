@@ -338,3 +338,15 @@ Scanner now verified against the REAL sites; fixtures in tests/fixtures/, 57 tes
 - SAM.gov: SAM_API_KEY not set.
 - Docs: RTD SBE Enclosures + SBE Contract Requirements downloaded (public). Littleton A/B/C + pricing template and
   every other BidNet gap still need a logged-in BidNet download; RTD W-9 + Key Personnel need OpenGov.
+
+## 2026-10-19 20:25 MT — first live scan landed
+- Live scanner (pioneer env) pushed 4010e7d/e3fd115/95c04a9: BidNet CO 584 open (400 buyer + 184 aggregate), 81 matches;
+  Bonfire Parker 4 open (Cloudflare blocks opportunity pages from cloud IPs); DIBBS 307 open RFQs in Jones Bearing FSCs
+  (189 keyword matches); SAM.gov blind (no SAM_API_KEY). 59 tests pass. Not logged in anywhere (no env creds set).
+- **Littleton RFQ 2126 Documents tab is LOGIN-ONLY on BidNet** ("Bid Documents: Locked, Registered members only").
+  Attachments A/B/C + pricing template need Luke's logged-in download or BIDNET_USER/PASS on the pioneer env.
+- RTD SBE Enclosures + SBE Contract Requirements downloaded (public). RTD W-9/Key Personnel inside OpenGov (Cloudflare).
+- BidNet serves an AWS WAF robot check after ~3 full scans in 15 min → keep live scans hourly (trig_014jsVKh8JXD8hBPctBHbDu4
+  re-enabled at :50, prompt capped at 2 scans/session, rebuilds dashboard JSON and messages this session).
+- DCSD 003-27 mowing: BidNet closing 2026-10-29 vs CRM brief 2026-10-23 — being verified from the document.
+- 30-min check-in loop stopped (conditions met: BidNet 584 ≥ 100; Littleton confirmed login-only).
