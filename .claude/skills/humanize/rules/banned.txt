@@ -1,0 +1,350 @@
+# /humanize banned list. Read by scripts/hz.py lint (case-insensitive).
+# One entry per line. Plain text matches as a phrase with word boundaries; prefix "re:" for a raw regex.
+# [error] = must never ship. [warn] = rewrite unless the word carries real meaning in that sentence.
+# Personal additions go in <data home>/rules/banned.local.txt (same format), so skill updates never overwrite them.
+
+[error]
+# --- acknowledging / apologizing / narrating the correction: give the corrected fact, nothing else
+you're right
+you are right
+you're absolutely right
+you are correct
+good catch
+great catch
+nice catch
+thanks for catching
+thank you for catching
+thanks for flagging
+thanks for pointing
+my mistake
+my apologies
+my bad
+I apologize
+apologies for
+sorry for
+sorry about
+that's on me
+that is on me
+I misspoke
+I made an error
+I made a mistake
+I was wrong
+re:\bcorrected (info|information|version|details|config|numbers?)\b
+here is the corrected
+here's the corrected
+here are the corrected
+to clarify
+let me clarify
+to correct
+upon review
+after reviewing
+after further review
+I double-checked
+I've double-checked
+# --- throat-clearing openers
+I hope this finds you
+hope this finds you
+I hope you're well
+hope you're doing well
+hope all is well
+I wanted to reach out
+I'm reaching out
+reaching out to
+I wanted to follow up
+just wanted to
+I just wanted
+I wanted to let you know
+I wanted to share
+re:(^|[.!?]\s+)as requested\b
+as per your request
+per your request
+thanks for your patience
+thank you for your patience
+great question
+good question
+excellent question
+# --- signposting
+please see below
+see below
+please find attached
+please find below
+below is
+below are
+here is a summary
+here's a summary
+here's what
+here is what you need
+here's the breakdown
+to summarize
+in summary
+in short
+bottom line
+the short answer
+short answer
+long story short
+TL;DR
+# --- chatbot closers
+hope this helps
+I hope this helps
+happy to help
+happy to discuss
+happy to jump on
+feel free to
+don't hesitate
+do not hesitate
+let me know if you'd like me to
+I'd be happy to
+I would be happy to
+anything else I can
+# --- framing / commentary
+worth noting
+it's worth
+it is worth
+that said
+either way
+where it stands
+why this matters
+why this one matters
+the thing to understand
+the part that matters
+what matters here
+the key here
+the key is
+the good news
+the bad news
+the real question
+at its core
+at the end of the day
+important to note
+keep in mind
+bear in mind
+it's important
+it is important
+for context
+just for context
+quick note
+one thing to be clear about
+one thing to note
+the right call
+the good one
+nicely specced
+re:\bthe kind of (thing|setup|build) that
+is worth an open conversation
+# --- phrases the AI wrote that the seller deleted every time (learn pass over 41 sent emails)
+worth knowing
+two asks
+three asks
+short version
+that covers it
+where we land
+back to you on
+more soon
+no silent substitutions
+pick the right parts blind
+where I need your help
+any questions, just call me
+before I take it further
+question go away
+I expect it's clean
+the first thing I would put in front of
+here's where things stand
+re:^\s*on why\b
+# --- chat-tool residue and unfilled placeholders (Wikipedia: Signs of AI writing, markup / citations / templates)
+re:contentReference\[|oaicite|citeturn|\[cite:\s*\d
+re:utm_source=(chatgpt|openai|copilot|perplexity|claude)|referrer=grok
+re:^\s*(claude|chatgpt|gemini|copilot)\s+(responded|said|replied)\s*:
+re:\[(your|insert|link|add|paste|enter|company|recipient|date)\b[^\]]*\]
+re:\bPASTE_\w+_HERE\b
+re:\b\d{4}-\d{2}-XX\b
+re:^\s*(-{3,}|\*\s*\*\s*\*|_{3,})\s*$
+re:\[[^\]]+\]\(https?://
+# --- letter-template openers and closers
+I am writing to
+I'm writing to
+I trust this message finds you
+I hope this message finds you
+I understand the concern
+is there anything else
+a more detailed breakdown
+let's connect
+# --- AI vocabulary
+delve
+leverage
+leveraging
+robust
+comprehensive
+seamless
+seamlessly
+elevate
+navigate
+realm
+foster
+tapestry
+testament
+underscore
+underscores
+pivotal
+crucial
+intricate
+myriad
+plethora
+bolster
+spearhead
+resonate
+revolutionize
+facilitate
+underpin
+nuanced
+multifaceted
+cutting-edge
+landscape
+embrace
+holistic
+streamline
+ensure
+ensuring
+enhance
+enhanced
+showcase
+vibrant
+additionally
+moreover
+furthermore
+in order to
+due to the fact
+serves as
+stands as
+boasts
+rest assured
+I understand your concern
+# --- more AI vocabulary and stock phrases (Wikipedia word lists)
+deep dive
+valuable insights
+meticulous
+meticulously
+bolstered
+garner
+interplay
+intricacies
+showcasing
+underscoring
+highlighting
+emphasizing
+fostering
+enduring
+vital role
+setting the stage
+focal point
+indelible mark
+deeply rooted
+marks a shift
+represents a shift
+key turning point
+nestled
+in the heart of
+groundbreaking
+renowned
+diverse array
+exemplifies
+commitment to
+functions as
+operates as
+utilize
+utilized
+utilizing
+not widely documented
+not widely available
+details are limited
+based on available information
+in the provided sources
+important to remember
+quick-ship
+fast-ship
+# --- units: TB, never TiB (convert x1.0995)
+re:\bTiB\b
+
+[warn]
+# placeholders never reach a sent email: fill from the incoming email or recipients.md, else flag to the user
+re:\[(name|signature|your name)\]
+# --- qualifiers and adverbs: state facts flat
+just
+really
+very
+actually
+basically
+simply
+quite
+rather
+somewhat
+fairly
+pretty much
+definitely
+certainly
+truly
+totally
+completely
+absolutely
+literally
+essentially
+extremely
+incredibly
+highly
+hopefully
+honestly
+unfortunately
+fortunately
+obviously
+clearly
+of course
+kind of
+sort of
+a bit
+a little
+perhaps
+possibly
+potentially
+I think
+I believe
+I feel
+I'm guessing
+I am guessing
+it seems
+seems like
+should be able to
+might be able to
+not sure
+I'm not sure
+I am not sure
+sorry
+thank you so much
+thanks so much
+awesome
+amazing
+perfect
+great news
+excited
+love to
+would love
+please note
+note that
+also note
+would you like me to
+want me to
+should I
+thanks for reaching out
+thank you for reaching out
+# vague association and stiff swaps: say the direct relationship, use the plain verb
+in connection with
+associated with
+in association with
+connected with
+as a result of
+the fact that
+attempted
+relocated
+notably
+consequently
+align with
+rather than
+a part of
+all of the

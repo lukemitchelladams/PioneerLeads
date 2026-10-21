@@ -54,6 +54,9 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **Use the humanize skill (.claude/skills/humanize) for every email, message and reply, going forward. Be concise:
+  no walls of text** (Luke, 2026-10-21). If ~/.claude/skills/humanize is missing in a new container, copy it from
+  .claude/skills/humanize and run `python3 ~/.claude/skills/humanize/scripts/hz.py init`.
 - **Never write or say "or if you already have a contract with the city" or any variant** (existing contract,
   already under contract, current provider) in any outreach, proposal, or vendor message. It invites the
   reader to tell us no and signals we expect to lose. We write as the bidder who will win. (Luke, 2026-10-19.)
