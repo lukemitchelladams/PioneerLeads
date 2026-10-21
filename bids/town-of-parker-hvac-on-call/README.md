@@ -112,3 +112,10 @@ Luke's CRM is also building this proposal (brief 10/19); coordinate so only one 
 - To the Town (Charles Ellis, cellis@parkeronline.org, the contact on the EUNA posting): filter question (are filters
   in the visit prices; how many changes; filter list; or a separate line on Labor & Charges). Noted that questions
   closed 10/16 and that we will state our assumption if the Town prefers not to answer.
+
+## 2026-10-21: Luke's decisions
+- **Filters: separate line (Luke, 2026-10-21 AM).** Visit prices on Scheduled Services exclude air filters; filters go on
+  Labor & Charges "Other charges": supplied at cost + 15%, installed at no added labor. Compliance basis: RFP pricing §3
+  "Identify separately priced parts, consumables, refrigerant, subcontracted support, travel, disposal, and other fees in
+  the Labor & Charges tab." Risk: the workbook's Scheduled Services tab says "Include the full applicable scope and routine
+  consumables." The Town has not answered the 10/20 filter email. Rich must still confirm the filter-free visit prices.
