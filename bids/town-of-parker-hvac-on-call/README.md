@@ -119,3 +119,13 @@ Luke's CRM is also building this proposal (brief 10/19); coordinate so only one 
   "Identify separately priced parts, consumables, refrigerant, subcontracted support, travel, disposal, and other fees in
   the Labor & Charges tab." Risk: the workbook's Scheduled Services tab says "Include the full applicable scope and routine
   consumables." The Town has not answered the 10/20 filter email. Rich must still confirm the filter-free visit prices.
+
+## 2026-10-21 09:55 MT: sent (Luke's instruction)
+- To Rich (CARROLL14@msn.com, cc dawn@aircomfortyork.com), reply in the 10/20 pricing thread: revised pricing for approval
+  in the email body (his own prices, no markup): fall heating visit = spring price (Luke), Police no heating visit and
+  Town Hall half (Appendix A heating units), filters as their own line at cost + 15%, disposal included, renewal 3% cap,
+  shop 2129 Vista Dr, Larkspur (Colorado SOS registry). Asked for license numbers, EPA 608 cards and 3 references by
+  Thu 10:00; told him we submit on receipt. Gmail message 1a15f8b1d2d329a8.
+- Filled from public records: Brown Bison Colorado SOS ID 20261543928 (Good Standing); Air Comfort York, Inc. SOS ID
+  19871291268, Colorado corporation since 1975. Travelers policy bound (Luke). Only Rich's items remain: license numbers,
+  EPA 608 cards, 3 references (12 cells). Then run private/assemble_final.py and upload on EUNA by Thu 15:00.
