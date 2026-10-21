@@ -58,3 +58,11 @@ Third contracts row dropped. build_proposal.py now dates the cover letter at bui
 **Still needed from Alex (5 open blanks):** (1) OK on his prices; (2) who does the spraying + Colorado Dept of
 Agriculture business license number (none found for YMS/AWalk); (3) Mountain Shadow HOA address and Patricia Tolini's
 phone (RFP 8.4 requires both). Addenda acknowledged: Q&A Document 1; check BidNet for any later addendum before upload.
+- 2026-10-21 ~12:15 MT: email to Alex (Luke's OK), reply in the 10/20 package thread: District scoring (RFP 13.2: price 40,
+  qualifications 20, safety 20, QC 10, technical 5, staffing 5), the safety and QC commitments written under YMS's name
+  for him to confirm, and 5 asks (prices OK, commitments OK, spraying license, Mountain Shadow HOA address/phone, 2-3
+  biggest or public contracts). Gmail 1a15fa8b7a107e9c.
+- 2026-10-21 ~12:20 MT: follow-up with "why we're asking" (strongest bid; 60 of 100 points are not price) and a Word
+  fill-in sheet (private/DCSD 003-27 - YMS fill-in sheet.docx; attachment verified byte-identical in the draft before
+  sending). Gmail 1a15fb5215046788. Answers requested by 5 PM today.
+
