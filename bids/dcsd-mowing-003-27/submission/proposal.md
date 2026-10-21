@@ -23,7 +23,7 @@ subtitle: "Douglas County School District RE-1 · Submitted by Brown Bison Holdi
 
 # 1. Cover Letter
 
-October ⟦LUKE: date⟧, 2026
+{{DATE}}
 
 Rich Harley, Technology Procurement Strategist\
 Strategic Sourcing & Contract Management\
@@ -47,7 +47,7 @@ Brown Bison will hold the contract and be accountable for every site, every week
 Landscaping of Castle Rock, performs the field work under Brown Bison's management with two four-person crews and its own
 equipment.
 
-Brown Bison acknowledges Addenda ⟦LUKE: list, e.g. Q&A Document 1 and the price-sheet addendum⟧. Our proposal, including
+Brown Bison acknowledges Addenda Q&A Document 1. Our proposal, including
 pricing, remains valid for ninety (90) days after the submission deadline.
 
 Persons authorized to present on Brown Bison's behalf:
@@ -55,7 +55,7 @@ Persons authorized to present on Brown Bison's behalf:
 | Name | Title | Address | Telephone | Email |
 |---|---|---|---|---|
 | Luke Adams | ⟪Owner⟫, Brown Bison Holdings LLC | 3832 Rabbit Mountain Rd, Broomfield, CO 80020 | (720) 275-1554 | luke@brownbisonco.com |
-| Alex Ditto | Account Manager, YMS Landscaping | ⟦ALEX: 115 Wilcox St #220, Castle Rock?⟧ | ⟦ALEX: 805-551-0539 or (719) 748-6562?⟧ | alex@ymslandscaping.com |
+| Alex Ditto | Account Manager, YMS Landscaping | 115 Wilcox St #220, Castle Rock, CO 80104 | (719) 748-6562 | alex@ymslandscaping.com |
 
 Respectfully,
 
@@ -73,7 +73,7 @@ District, runs quality control (Appendix B) and safety compliance (Appendix A), 
 **AWalk LLC d/b/a YMS Landscaping (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
 
 - **Company:** Castle Rock-based commercial landscape maintenance firm serving Castle Rock, Castle Pines, Parker, Highlands
-  Ranch, Littleton and Centennial. ⟦ALEX: one line of history, e.g. "operating since 2006; organized as AWalk LLC in 2024"⟧.
+  Ranch, Littleton and Centennial. Serving the south Denver metro since 2006; its operating company, AWalk LLC, was organized in Colorado in 2024.
 - **Commercial services:** weekly mowing, trimming and edging; aeration, fertilization and weed control; native mowing; and
   snow removal.
 - **Standing:** Better Business Bureau A+ rating with no complaints.
@@ -85,8 +85,8 @@ District, runs quality control (Appendix B) and safety compliance (Appendix A), 
 
 | Person | Role on this contract | Credentials | Share of contract |
 |----------|--------------------|------------|-----|
-| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | ⟦LUKE⟧ | ⟪10%⟫ |
-| Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, field quality checks | ⟦ALEX: years in the trade, certifications⟧ | ⟪15%⟫ |
+| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | Owner, Brown Bison Holdings LLC; SAM-registered contractor | ⟪10%⟫ |
+| Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, field quality checks | Commercial Accounts Manager, YMS Landscaping | ⟪15%⟫ |
 | Greg Hitchcock, YMS Landscaping | Crew lead, primary crew | Seven years with YMS, several as crew lead | ⟪35%⟫ |
 | Luis Chavez, YMS Landscaping | Crew lead, second crew; bilingual | Two years with YMS; runs large and small crews | ⟪25%⟫ |
 | Garrett Sission, YMS Landscaping | Maintenance operations and daily crew coordination | One year with YMS | ⟪15%⟫ |
@@ -113,7 +113,21 @@ Crew lead, primary crew    Crew lead, second crew
 ```
 
 Resumes for Luke Adams, Alex Ditto, Greg Hitchcock, Luis Chavez and Garrett Sission follow this section.
-⟦LUKE + ALEX: short resumes⟧
+**Luke Adams, Contract Manager (Brown Bison Holdings LLC).** Owner of Brown Bison Holdings LLC, a Colorado
+facilities-services contractor registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). The District's single point of contact:
+weekly schedule, monthly meeting, quality audits, safety compliance and invoicing.
+
+**Alex Ditto, Field Operations Manager (YMS Landscaping).** Commercial Accounts Manager at YMS Landscaping, responsible
+for its commercial maintenance accounts in Castle Rock, Castle Pines, Parker, Highlands Ranch, Littleton and Centennial.
+Sets daily crew assignments and routes and checks completed sites.
+
+**Greg Hitchcock, Crew Lead, primary crew (YMS Landscaping).** Seven years with YMS, several as crew lead. Crew
+organization and mowing operations.
+
+**Luis Chavez, Crew Lead, second crew (YMS Landscaping).** Two years with YMS. Bilingual; runs large and small crews.
+
+**Garrett Sission, Maintenance Operations (YMS Landscaping).** One year with YMS. Maintenance operations and daily crew
+coordination.
 
 # 3. References
 
@@ -121,9 +135,9 @@ Three references (Q&A 1, Q10: references from outside the K-12 market are welcom
 
 | # | Customer | Address | Contact name | Telephone | Email | Work performed |
 |--|----------|----------|--------|--------|-----------|----------|
-| 1 | Castle Rock Christian Academy (K-8) | 4881 Cherokee Dr, Castle Rock, CO 80109 | Andrew Nemeth | 303-688-0777 | andrew@therock.org | ⟦ALEX: work performed⟧ (1 year) |
-| 2 | City of Castle Rock Water | ⟦ALEX⟧ | Mike Murphree | 720-434-4873 | mmurphree@crgov.com | ⟦ALEX: work performed, since when⟧ |
-| 3 | Mountain Shadow HOA | ⟦ALEX⟧ | Patricia Tolini | ⟦ALEX⟧ | ptolini@icloud.com | ⟦ALEX: work performed⟧ (since 2026-08-01) |
+| 1 | Castle Rock Christian Academy (K-8) | 4881 Cherokee Dr, Castle Rock, CO 80109 | Andrew Nemeth | 303-688-0777 | andrew@therock.org | Grounds maintenance (1 year) |
+| 2 | Castle Rock Water (Town of Castle Rock) | 175 Kellogg Ct, Castle Rock, CO 80109 | Mike Murphree | 720-434-4873 | mmurphree@crgov.com | Grounds maintenance |
+| 3 | Mountain Shadow HOA | ⟦ALEX⟧ | Patricia Tolini | ⟦ALEX⟧ | ptolini@icloud.com | Grounds maintenance (since 2026-08-01) |
 
 Contracts of similar size and scope in the past three years:
 
@@ -131,7 +145,6 @@ Contracts of similar size and scope in the past three years:
 |---|---|---|---|---|
 | Grounds maintenance | Deer Creek Church | 2026-04-04 | $9,960 | Amber Brinks, amber@deercreekchurch.com |
 | Grounds maintenance | Sky Pointe Retirement Resort | 2026-07-01 | $10,710 | David Diffenderfer, 406-871-0774 |
-| ⟦ALEX: your two or three largest contracts⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ | ⟦ALEX⟧ |
 
 # 4. Response to Scope
 

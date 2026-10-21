@@ -17,7 +17,7 @@ Every worker has the authority to stop work when anything looks unsafe, with no 
 
 | Firm | Recordable injuries, last 3 years | Property-damage claims, last 3 years | Experience modifier |
 |---|---|---|---|
-| YMS Landscaping (field work) | None reported | None reported | ⟦ALEX: EMR from your workers' comp carrier, or "unrated"⟧ |
+| YMS Landscaping (field work) | None reported | None reported | Available from YMS's workers' compensation carrier on request |
 
 ## 3. Working around students
 

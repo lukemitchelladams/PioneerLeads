@@ -2,7 +2,7 @@
 
 | Item | Value (quoted from docs/RFP-003-27-Mowing-biddoc.pdf unless noted) |
 |------|------|
-| **Site walkthrough (sign-in required)** | **"Pre-proposal site walkthrough with James Korth - Grounds Manager — October 14, 2026, 9AM, Mountain Vista High School - 10585 Mountain Vista Ridge, Highlands Ranch". §2.1: "A Proposal from a Respondent that did not sign in at the walkthrough will be rejected as non-responsive." PASSED. Did Brown Bison or Alex sign in?** |
+| **Site walkthrough (sign-in required)** | **"Pre-proposal site walkthrough with James Korth - Grounds Manager — October 14, 2026, 9AM, Mountain Vista High School - 10585 Mountain Vista Ridge, Highlands Ranch". §2.1: "A Proposal from a Respondent that did not sign in at the walkthrough will be rejected as non-responsive." PASSED. Alex attended and signed in as Luke / Brown Bison (Luke, 2026-10-21): requirement met.** |
 | **Proposals due** | **"October 23, 2026, at 2:00 PM Mountain Time" via Rocky Mountain e-Purchasing (BidNet).** BidNet's live listing (scan 2026-10-20) shows 10/29/2026 02:00 PM MDT → likely an extension addendum, **not in hand yet**. Treat 10/23 14:00 as controlling until the addendum is read. |
 | Questions | Through BidNet; deadline not stated in the §2.0 table. Mowing-area questions: James Korth, jpkorth@dcsdk12.org |
 | Scope | Weekly mowing at 3", trimming, monthly edging, cleanup, weed control, monthly native mow, annual spring aeration/fertilization/broadleaf spray; 19 HS/MS sites (Parker, Castle Rock, Highlands Ranch); ~6.58M sq ft turf (agent's sum of the site table) |
@@ -13,7 +13,7 @@
 | Attachments | A Master Services Agreement (in PDF), B Exceptions Form (in PDF), C Debarment Certification (in PDF). **Pricing schedule: RFP says "Provide pricing in the format required by this RFP" but no price sheet is in the PDF — check BidNet Documents tab + addenda.** |
 | Contact | Rich Harley, Technology Procurement Strategist, rharley@dcsdk12.org |
 | Performer | Brown Bison submits and holds the contract. Field work: **AWalk LLC d/b/a YMS Landscaping** (Colorado LLC 20241544949, formed 2024-05-21, good standing; 115 Wilcox St #220, Castle Rock; President & CEO Aaron Walker; our contact Alex Ditto, Commercial Accounts Manager, alex@ymslandscaping.com). Price = YMS's 10/19 revised sheet + 5%. |
-| Status | **GO, pending the sign-in answer.** Final District price sheet built from YMS's 10/19 sheet + 5% (`submission/build_price_sheet.py`; figures only in `private/`). Sent to Alex 2026-10-20 11:54 MT with the scoring breakdown and 10 asks, answers due **Wed 10/21 5 PM**. |
+| Status | **GO.** Walkthrough sign-in confirmed 2026-10-21. Final District price sheet built from YMS's 10/19 sheet + 5% (`submission/build_price_sheet.py`; figures only in `private/`). Sent to Alex 2026-10-20 11:54 MT with the scoring breakdown and 10 asks, answers due **Wed 10/21 5 PM**. |
 
 ## Open items from YMS (asked 2026-10-20, due Wed 10/21 5 PM)
 1. **Walkthrough sign-in:** which company name Alex wrote on the 10/14 sheet, plus a photo. §2.1 rejects a Respondent that did not sign in.
@@ -48,3 +48,13 @@
   (no markup) in Section 5, plus Appendix A (safety), B (quality control) and C (crews and route). The email carries 5 short safety/QC
   suggestions. Sent as a Gmail draft first; the attachment was checked byte-identical (sha256 089a85bd…) before and after sending.
   Asked for "approved" or changes, plus the sign-in name, by **Wed 10/21 5 PM**.
+
+## 2026-10-21 (MAIN): YMS asks cut from 10 to 3 (Luke: "10 questions seems like a lot")
+Filled ourselves from Alex's sheet and public records: Alex's address (AWalk LLC, SOS) and phone ((719) 748-6562, his
+email signature), company history, credentials, short resumes, reference work descriptions, Castle Rock Water address
+(175 Kellogg Ct, Castle Rock 80109, Town contact page), EMR (on request), QC app (dropped), trucks (one per crew),
+native mowing equipment, rental source, Saturday sites (only with no games/events, else Friday after dismissal).
+Third contracts row dropped. build_proposal.py now dates the cover letter at build time and accepts our green wording.
+**Still needed from Alex (5 open blanks):** (1) OK on his prices; (2) who does the spraying + Colorado Dept of
+Agriculture business license number (none found for YMS/AWalk); (3) Mountain Shadow HOA address and Patricia Tolini's
+phone (RFP 8.4 requires both). Addenda acknowledged: Q&A Document 1; check BidNet for any later addendum before upload.

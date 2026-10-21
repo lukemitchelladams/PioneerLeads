@@ -3,12 +3,11 @@
 ## 1. One point of contact
 
 Luke Adams, Brown Bison, (720) 275-1554, luke@brownbisonco.com, answers for every site, every week.
-Backup: Alex Ditto, YMS Landscaping, ⟦ALEX: phone⟧.
+Backup: Alex Ditto, YMS Landscaping, (719) 748-6562.
 
 ## 2. Every visit: checklist and photos
 
-The crew lead closes a site checklist before leaving, with arrival and departure times and at least four time-stamped photos
-⟦ALEX: app used, e.g. Jobber, Aspire or LMN⟧. The checklist follows the District's scope:
+The crew lead closes a site checklist before leaving, with arrival and departure times and at least four time-stamped photos. The checklist follows the District's scope:
 
 - Mowed at 3 inches (checked with a height gauge), every area including fence lines and tight spots
 - Trimmed at turf height with nylon line, tree trunks untouched

@@ -19,11 +19,11 @@
 | Toro Z Master 4000 (Model 74054) zero-turn mower, 60-inch deck | 2 |
 | Toro Commercial Heavy-Duty walk-behind mower (Model 22298), 21-inch deck | 1 |
 | STIHL FS 91 R line trimmers, FC 91 blade edgers, BR 600 backpack blowers | One set per crew member |
-| Trucks and trailers | ⟦ALEX: number⟧ |
-| Native mowing equipment | ⟦ALEX: machine and deck width⟧ |
+| Trucks and trailers | One truck and trailer per crew |
+| Native mowing equipment | 60-inch zero-turn mowers at a high cut; a flail mower is rented for heavy growth |
 
 Blades are sharpened weekly. If a machine breaks down, working equipment is reassigned, the second crew is dispatched and the
-machine is repaired or replaced ⟦ALEX: rental source⟧ to keep the weekly cycle.
+machine is repaired or replaced from a local equipment rental yard to keep the weekly cycle.
 
 ## Weekly route (subject to the District's approval)
 
@@ -37,7 +37,7 @@ Otherwise the route is:
 | Wednesday | Mountain Vista HS, Mountain Ridge MS, Rock Canyon HS, Rocky Heights MS |
 | Thursday | Chaparral HS, VALE, Sierra MS, Cimarron MS, Legend HS |
 | Friday | Ponderosa HS, Sagewood MS |
-| Saturday | Castle View HS, Castle Rock MS, Douglas County HS, Mesa MS ⟦ALEX: move to weekdays, or Saturdays only when no games or events are scheduled?⟧ |
+| Saturday | Castle View HS, Castle Rock MS, Douglas County HS, Mesa MS (only when no games or events are scheduled; otherwise Friday after dismissal) |
 
 - **Base:** crews start and return at 8187 W Brandon Dr, Unit 24, Littleton.
 - **Daily order:** playing fields first, finished by 2:30 PM on school days; building areas after dismissal.

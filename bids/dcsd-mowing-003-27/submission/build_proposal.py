@@ -4,7 +4,8 @@
     python3 bids/dcsd-mowing-003-27/submission/build_proposal.py --draft --for-sub   # same, plus YMS's own prices
     python3 bids/dcsd-mowing-003-27/submission/build_proposal.py           # submission copy; refuses while markers remain
 
-Markers: ⟦...⟧ = only YMS or Luke can supply (yellow), ⟪...⟫ = our proposed wording or number (green).
+Markers: ⟦...⟧ = only YMS or Luke can supply (yellow), ⟪...⟫ = our proposed wording or number (green; accepted
+and unmarked in the submission copy). {{DATE}} becomes the build date (Mountain Time).
 Output goes to private/ (git-ignored).
 """
 from __future__ import annotations
@@ -13,6 +14,8 @@ import re
 import subprocess
 import sys
 import tempfile
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 import docx
@@ -91,6 +94,7 @@ def main() -> int:
         assert body.count(marker) == 1
         body = body.replace(marker, marker + sub_prices())
     body = re.sub(r"<!--.*?-->\n*", "", body, flags=re.S)
+    body = body.replace("{{DATE}}", datetime.now(ZoneInfo("America/Denver")).strftime("%B %-d, %Y"))
     body = body.replace("SCOPE_RESPONSE_TABLE", (HERE / "scope_response_table.md").read_text().strip())
     for part in PARTS:
         body += PAGE_BREAK + (HERE / part).read_text().strip() + "\n"
@@ -98,12 +102,14 @@ def main() -> int:
         head, sep, rest = body.partition("---\n\n")
         body = head + sep + BANNER + rest if sep and body.startswith("---") else BANNER + body
     else:
-        left = re.findall(r"⟦[^⟧]*⟧|⟪[^⟫]*⟫", body)
+        left = re.findall(r"⟦[^⟧]*⟧", body)
         if left:
             print(f"{len(left)} open items still marked; not building the submission copy:")
             for x in left:
                 print("  ", x)
             return 1
+    if not DRAFT:
+        body = body.replace("⟪", "").replace("⟫", "")  # our proposed wording, accepted
     with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as f:
         f.write(body)
     subprocess.run(["pandoc", f.name, "-f", "markdown", "-o", str(OUT)], check=True)
