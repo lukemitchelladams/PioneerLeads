@@ -18,7 +18,7 @@ subtitle: "Douglas County School District RE-1 · Submitted by Brown Bison Holdi
 | 5. Pricing | 11 |
 | 6. Exceptions (Attachment B) | 28 |
 | 7. Debarment Certification (Attachment C) | 29 |
-| 8. Appendices | 11 |
+| 8. Appendices | 12 |
 | A. Safety and Student Protection Plan | 13 |
 | B. Quality Control and Responsiveness Plan | 16 |
 | C. Crews, Equipment and Weekly Route | 18 |
@@ -81,6 +81,11 @@ District, runs quality control (Appendix B) and safety compliance (Appendix A), 
   snow removal.
 - **Standing:** Better Business Bureau A+ rating with no complaints.
 - **Safety:** no recordable employee injuries or property-damage claims in the past three years.
+- **Insurance:** general liability through Westfield, $1,000,000 per occurrence, $2,000,000 general aggregate and
+  $2,000,000 products/completed operations; automobile liability through Westfield, $1,000,000 combined single limit;
+  workers' compensation through The Hartford, statutory limits.
+- **Disclosures:** no relationship between YMS or its owners and any DCSD employee; YMS is not submitting its own
+  proposal on this RFP. Alex Ditto attended the October 14 walkthrough for Brown Bison.
 - **Pesticide applications:** made by a licensed applicator: Adam Perrigoue, Colorado Department of Agriculture license #34548.
 
 ## Day-to-day management and share of the work
