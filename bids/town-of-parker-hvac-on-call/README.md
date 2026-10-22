@@ -129,3 +129,9 @@ Luke's CRM is also building this proposal (brief 10/19); coordinate so only one 
 - Filled from public records: Brown Bison Colorado SOS ID 20261543928 (Good Standing); Air Comfort York, Inc. SOS ID
   19871291268, Colorado corporation since 1975. Travelers policy bound (Luke). Only Rich's items remain: license numbers,
   EPA 608 cards, 3 references (12 cells). Then run private/assemble_final.py and upload on EUNA by Thu 15:00.
+## 2026-10-22 10:20 MT: FINAL built (Luke: work with what we have)
+- Rich sent no more (Luke: "he sent basically everything"). Licenses and EPA 608 cards stated as "furnished on request";
+  references = the 3 Town-permitted jobs with "contact furnished on request; permit on file with the Town of Parker".
+- private/assemble_final.py built all 3 uploads (6.1.1 PDF 3 pp, 6.1.2 PDF 10 pp, 6.1.3 workbook, every cell filled).
+  Sub legal name corrected to Air Comfort York, Inc. everywhere. Luke uploads on EUNA by 15:00 today.
+
