@@ -9,17 +9,20 @@ subtitle: "Douglas County School District RE-1 · Submitted by Brown Bison Holdi
 
 # Table of Contents
 
-1. Cover Letter
-2. Qualifications and Personnel
-3. References
-4. Response to Scope
-5. Pricing
-6. Exceptions (Attachment B)
-7. Debarment Certification (Attachment C)
-8. Appendices: A. Safety and Student Protection Plan · B. Quality Control and Responsiveness Plan ·
-   C. Crews, Equipment and Weekly Route · D. Licenses, Insurance and Acknowledgements
-
-*(Page numbers are added when the final PDF is assembled; every page is numbered consecutively.)*
+| Section | Page |
+|---|---|
+| 1. Cover Letter | 1 |
+| 2. Qualifications and Personnel | 2 |
+| 3. References | 4 |
+| 4. Response to Scope | 5 |
+| 5. Pricing | 11 |
+| 6. Exceptions (Attachment B) | 28 |
+| 7. Debarment Certification (Attachment C) | 29 |
+| 8. Appendices | 11 |
+| A. Safety and Student Protection Plan | 13 |
+| B. Quality Control and Responsiveness Plan | 16 |
+| C. Crews, Equipment and Weekly Route | 18 |
+| E. YMS Landscaping Safety Program | 20 |
 
 # 1. Cover Letter
 
@@ -78,8 +81,7 @@ District, runs quality control (Appendix B) and safety compliance (Appendix A), 
   snow removal.
 - **Standing:** Better Business Bureau A+ rating with no complaints.
 - **Safety:** no recordable employee injuries or property-damage claims in the past three years.
-- **Pesticide applications:** made by ⟦ALEX: licensed firm, Colorado Department of Agriculture business license number, and
-  Qualified Supervisor, e.g. Adam Perrigoue, license 34548⟧.
+- **Pesticide applications:** made by a licensed applicator: Adam Perrigoue, Colorado Department of Agriculture license #34548.
 
 ## Day-to-day management and share of the work
 
@@ -137,7 +139,7 @@ Three references (Q&A 1, Q10: references from outside the K-12 market are welcom
 |--|----------|----------|--------|--------|-----------|----------|
 | 1 | Castle Rock Christian Academy (K-8) | 4881 Cherokee Dr, Castle Rock, CO 80109 | Andrew Nemeth | 303-688-0777 | andrew@therock.org | Grounds maintenance (1 year) |
 | 2 | Castle Rock Water (Town of Castle Rock) | 175 Kellogg Ct, Castle Rock, CO 80109 | Mike Murphree | 720-434-4873 | mmurphree@crgov.com | Grounds maintenance |
-| 3 | Mountain Shadow HOA | ⟦ALEX⟧ | Patricia Tolini | ⟦ALEX⟧ | ptolini@icloud.com | Grounds maintenance (since 2026-08-01) |
+| 3 | Mountain Shadow HOA | 52 Mountain Shadow Ln, Castle Rock, CO 80104 | Patricia Tolini | 720-537-9981 | ptolini@icloud.com | Grounds maintenance (since 2026-08-01) |
 
 Contracts of similar size and scope in the past three years:
 
@@ -200,5 +202,6 @@ Attachment C, Certification Regarding Debarment and Suspension, completed and si
 A. Safety and Student Protection Plan\
 B. Quality Control and Responsiveness Plan\
 C. Crews, Equipment and Weekly Route\
-D. Licenses (Colorado Department of Agriculture commercial applicator license), certificate of insurance naming DCSD as
-additional insured, Colorado good-standing certificate, background-check policy
+D. Licenses and insurance: Colorado Department of Agriculture applicator license (Adam Perrigoue, #34548); certificate of
+insurance naming DCSD as additional insured, delivered at award; Colorado good-standing certificate on request\
+E. YMS Landscaping Safety Program (8 pages, attached)

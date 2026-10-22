@@ -42,7 +42,7 @@ Every worker has the authority to stop work when anything looks unsafe, with no 
 ## 4. Fertilizer and weed control
 
 1. Every application is made by a Colorado Department of Agriculture licensed commercial applicator:
-   ⟦ALEX: licensed firm, business license number, Qualified Supervisor and Turf category⟧. Brown Bison does not apply
+   Adam Perrigoue, Colorado Department of Agriculture license #34548. YMS's written Safety Program is attached as Appendix E. Brown Bison does not apply
    pesticides itself.
 2. Every product is approved by the Grounds Manager before use, and its safety data sheet is emailed to him before the season.
 3. Fertilization and the broadleaf application happen only on no-contact days, on dates the Grounds Manager sets.
