@@ -50,7 +50,7 @@ Brown Bison will hold the contract and be accountable for every site, every week
 Landscaping of Castle Rock, performs the field work under Brown Bison's management with two four-person crews and its own
 equipment.
 
-Brown Bison acknowledges Addenda Q&A Document 1. Our proposal, including
+Brown Bison acknowledges Q&A Document 1 and Q&A Document 2. Our proposal, including
 pricing, remains valid for ninety (90) days after the submission deadline.
 
 Persons authorized to present on Brown Bison's behalf:

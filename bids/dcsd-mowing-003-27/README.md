@@ -3,7 +3,7 @@
 | Item | Value (quoted from docs/RFP-003-27-Mowing-biddoc.pdf unless noted) |
 |------|------|
 | **Site walkthrough (sign-in required)** | **"Pre-proposal site walkthrough with James Korth - Grounds Manager — October 14, 2026, 9AM, Mountain Vista High School - 10585 Mountain Vista Ridge, Highlands Ranch". §2.1: "A Proposal from a Respondent that did not sign in at the walkthrough will be rejected as non-responsive." PASSED. Alex attended and signed in as Luke / Brown Bison (Luke, 2026-10-21): requirement met.** |
-| **Proposals due** | **"October 23, 2026, at 2:00 PM Mountain Time" via Rocky Mountain e-Purchasing (BidNet).** BidNet's live listing (scan 2026-10-20) shows 10/29/2026 02:00 PM MDT → likely an extension addendum, **not in hand yet**. Treat 10/23 14:00 as controlling until the addendum is read. |
+| **Proposals due** | **Extended to 2026-10-29 14:00 MT (BidNet listing, confirmed by Luke 10/23).** Original RFP date "October 23, 2026, at 2:00 PM Mountain Time". Q&A Document 2 (Q14, no incumbent pricing) received 10/23. |
 | Questions | Through BidNet; deadline not stated in the §2.0 table. Mowing-area questions: James Korth, jpkorth@dcsdk12.org |
 | Scope | Weekly mowing at 3", trimming, monthly edging, cleanup, weed control, monthly native mow, annual spring aeration/fertilization/broadleaf spray; 19 HS/MS sites (Parker, Castle Rock, Highlands Ranch); ~6.58M sq ft turf (agent's sum of the site table) |
 | Season / term | ~April to ~end of October; MSA until terminated; ≤3% increase on renewals |
