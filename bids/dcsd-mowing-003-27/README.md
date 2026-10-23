@@ -13,7 +13,7 @@
 | Attachments | A Master Services Agreement (in PDF), B Exceptions Form (in PDF), C Debarment Certification (in PDF). **Pricing schedule: RFP says "Provide pricing in the format required by this RFP" but no price sheet is in the PDF — check BidNet Documents tab + addenda.** |
 | Contact | Rich Harley, Technology Procurement Strategist, rharley@dcsdk12.org |
 | Performer | Brown Bison submits and holds the contract. Field work: **AWalk LLC d/b/a YMS Landscaping** (Colorado LLC 20241544949, formed 2024-05-21, good standing; 115 Wilcox St #220, Castle Rock; President & CEO Aaron Walker; our contact Alex Ditto, Commercial Accounts Manager, alex@ymslandscaping.com). Price = YMS's 10/19 revised sheet + 5%. |
-| Status | **GO.** Walkthrough sign-in confirmed 2026-10-21. Final District price sheet built from YMS's 10/19 sheet + 5% (`submission/build_price_sheet.py`; figures only in `private/`). Sent to Alex 2026-10-20 11:54 MT with the scoring breakdown and 10 asks, answers due **Wed 10/21 5 PM**. |
+| Status | **SUBMITTED 2026-10-23 on BidNet by Luke** (signed 31-page proposal + price sheet $409,490.13; no prompt-payment discount). Due date was 2026-10-29 14:00. |
 
 ## Open items from YMS (asked 2026-10-20, due Wed 10/21 5 PM)
 1. **Walkthrough sign-in:** which company name Alex wrote on the 10/14 sheet, plus a photo. §2.1 rejects a Respondent that did not sign in.
