@@ -1,32 +1,55 @@
 # Appendix B. Quality Control and Responsiveness Plan
 
-## 1. One point of contact
+Quality is checked three times: by the crew before it leaves each site, by the YMS field supervisor, and independently by
+Brown Bison. Every check is recorded, every defect is tracked to a fix, and the District sees the results every week and
+every month.
 
-Luke Adams, Brown Bison, (720) 275-1554, luke@brownbisonco.com, answers for every site, every week.
-Backup: Alex Ditto, YMS Landscaping, (719) 748-6562.
+## 1. Quality organization
 
-## 2. Every visit: checklist and photos
+| Role | Person | Responsibility |
+|---|---|---|
+| Quality manager and single point of contact | Luke Adams, Brown Bison, (720) 275-1554, luke@brownbisonco.com | Independent audits; complaint log; weekly and monthly reporting; corrective actions |
+| Field quality supervisor (backup contact) | Alex Ditto, YMS Landscaping, (719) 748-6562 | Spot-checks completed sites; assigns rework; equipment and blade condition |
+| Crew leads | Greg Hitchcock, Luis Chavez | Close the site checklist and photos before leaving each site |
 
-The crew lead closes a site checklist before leaving, with arrival and departure times and at least four time-stamped photos. The checklist follows the District's scope:
+## 2. Every visit: site checklist and photos
 
-- Mowed at 3 inches (checked with a height gauge), every area including fence lines and tight spots
-- Trimmed at turf height with nylon line, tree trunks untouched
-- Edged with a blade edger (monthly), debris removed
-- Clippings off every sidewalk, curb, gutter and parking lot
-- Rock and mulch beds and warning tracks checked for weeds; sprayed or pulled
-- Damage, hazards and irrigation problems noted and reported the same day
+The crew lead closes a site checklist before leaving. It records arrival and departure times and has at least four
+time-stamped photos. Each line follows the District's scope:
+
+| Check | Standard | Done |
+|---|---|---|
+| Mowing height | 3 inches, verified with a height gauge | ☐ |
+| Coverage | Every area mowed, fence lines and tight spots included | ☐ |
+| Trimming | At turf height with nylon line; tree trunks untouched | ☐ |
+| Edging (monthly) | Blade edger on walks and curbs; debris removed | ☐ |
+| Clean-up | No clippings on sidewalks, curbs, gutters or parking lots | ☐ |
+| Beds and warning tracks | Checked for weeds; sprayed or pulled | ☐ |
+| Site condition | Damage, hazards and irrigation problems noted and reported the same day | ☐ |
+| Photos | At least four, time-stamped | ☐ |
 
 ## 3. Inspections
 
 | Who | What | How often |
 |---|---|---|
 | YMS field supervisor | Spot-checks completed sites against the checklist | ⟪5 sites a week, every site at least monthly⟫ |
-| Brown Bison | Audits sites against the District's scope | ⟪4 sites a month⟫ |
+| Brown Bison | Independent audit against the District's scope, scored on the same checklist | ⟪4 sites a month⟫ |
 | Brown Bison and the Grounds Manager | Walk one or two sites the District picks, at the monthly meeting | Monthly |
 
-Target: at least 95% of inspected sites pass on the first visit.
+A site passes when every checklist line meets the standard. Any failed line is corrected within 24 hours and re-inspected.
 
-## 4. Response times
+## 4. Performance targets
+
+| Measure | Target | Reported |
+|---|---|---|
+| Sites serviced inside their Monday-Sunday week | 100% | Weekly |
+| Playing fields finished by 2:30 PM on school days | 100% | Weekly |
+| Inspected sites passing on the first visit | At least 95% | Monthly |
+| Complaints acknowledged within 2 business hours | 100% | Monthly |
+| Complaints fixed within 24 hours | At least 95% | Monthly |
+| Repeat complaint at the same site within 30 days | Zero | Monthly |
+
+## 5. Response times
 
 | Issue | Acknowledged | Fixed |
 |---|---|---|
@@ -34,18 +57,27 @@ Target: at least 95% of inspected sites pass on the first visit.
 | Safety hazard or spill | Immediately | Same day |
 | Defect on a playing field | Within 2 business hours | Before the field's next scheduled use |
 
-The person who reported it gets a photo of the fix. If the same problem happens twice at one site within 30 days, we send the
-Grounds Manager the cause and the fix in writing within 5 business days.
+The person who reported it gets a photo of the fix.
 
-## 5. Reporting
+## 6. Corrective action
+
+1. **Log.** Every complaint, failed inspection and missed service is logged with the date, site, issue and who reported it.
+2. **Fix.** Rework is assigned the same day and closed with a photo.
+3. **Find the cause.** If the same problem happens twice at one site within 30 days, Brown Bison sends the Grounds Manager the
+   cause and the permanent fix in writing within 5 business days. Examples: a route change, retraining, or an equipment repair.
+4. **Verify.** Brown Bison re-inspects that site on the next visit and reports the result.
+
+## 7. Reporting and communication
 
 - **Every Monday:** a service log for the prior week, with each site, date, arrival and departure times, services done, issues
   and photos.
-- **With each monthly invoice:** a one-page scorecard. It covers sites serviced inside their Monday-Sunday week, fields done by
-  2:30 PM, inspection pass rate, complaints and time to fix, and next month's native mowing, extra mows and no-contact dates.
-- **Monthly meeting:** Brown Bison leads it with the Grounds Supervisor and follows up with a written summary.
+- **With each monthly invoice:** a one-page scorecard against the targets in Section 4. It also lists the complaint log and
+  next month's native mowing, extra mows and no-contact dates.
+- **Monthly meeting:** Brown Bison leads it with the Grounds Supervisor and follows up with a written summary and action list.
+- **Records:** checklists, photos, inspection results and the complaint log are kept for the life of the contract and given to
+  the District on request.
 
-## 6. Weather
+## 8. Weather
 
 1. No mowing while rain is falling or on saturated turf.
 2. The go/no-go call is made by 6:00 AM.
@@ -53,7 +85,7 @@ Grounds Manager the cause and the fix in writing within 5 business days.
    his approval.
 4. If two or more days are lost, the whole week is re-sequenced and sent the same day. The second crew is added to catch up.
 
-## 7. Turf health
+## 9. Turf health
 
 - 3-inch height. Blades sharpened every week and logged.
 - Mowing direction changes every cut to prevent ruts and matting.

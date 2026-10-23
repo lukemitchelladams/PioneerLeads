@@ -70,8 +70,14 @@ Luke Adams\
 ## The team
 
 **Brown Bison Holdings LLC (Respondent and contract holder).** A Colorado limited liability company and facilities-services
-contractor, registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). Brown Bison holds the contract, schedules and coordinates with the
-District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
+contractor, registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). Brown Bison manages public-sector maintenance and repair
+contracts. It currently delivers HVAC, plumbing and electrical maintenance and repair for the City of Birmingham Department of
+Public Works and the City of Hoover, Alabama (Section 3). On this contract Brown Bison holds the agreement, schedules and
+coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
+
+Brown Bison is led by Luke Adams, who previously served as Operations Manager of Mighty Plumbing Heating Electric. There he
+directed more than 50 technicians and staff and managed municipal and local-government contracts of more than $1 million
+each through permitting, inspection and close-out.
 
 **AWalk LLC d/b/a YMS Landscaping (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
 
@@ -92,7 +98,7 @@ District, runs quality control (Appendix B) and safety compliance (Appendix A), 
 
 | Person | Role on this contract | Credentials | Share of contract |
 |----------|--------------------|------------|-----|
-| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | Owner, Brown Bison Holdings LLC; SAM-registered contractor | ⟪10%⟫ |
+| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | Owner, Brown Bison Holdings LLC; former Operations Manager (50+ technicians); project manager on $1M+ municipal contracts | ⟪10%⟫ |
 | Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, field quality checks | Commercial Accounts Manager, YMS Landscaping | ⟪15%⟫ |
 | Greg Hitchcock, YMS Landscaping | Crew lead, primary crew | Seven years with YMS, several as crew lead | ⟪35%⟫ |
 | Luis Chavez, YMS Landscaping | Crew lead, second crew; bilingual | Two years with YMS; runs large and small crews | ⟪25%⟫ |
@@ -120,9 +126,16 @@ Crew lead, primary crew    Crew lead, second crew
 ```
 
 Resumes for Luke Adams, Alex Ditto, Greg Hitchcock, Luis Chavez and Garrett Sission follow this section.
-**Luke Adams, Contract Manager (Brown Bison Holdings LLC).** Owner of Brown Bison Holdings LLC, a Colorado
-facilities-services contractor registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). The District's single point of contact:
-weekly schedule, monthly meeting, quality audits, safety compliance and invoicing.
+**Luke Adams, Contract Manager (Brown Bison Holdings LLC).**
+
+- **Owner, Brown Bison Holdings LLC.** Manages the company's municipal maintenance contracts. These include HVAC, plumbing
+  and electrical maintenance and repair for the City of Birmingham Department of Public Works and the City of Hoover, Alabama.
+- **Operations Manager, Mighty Plumbing Heating Electric** ⟦LUKE: years, e.g. 2019-2024⟧. Directed daily operations for a
+  team of more than 50 technicians and support staff. Served as project manager on city and local-government contracts of
+  more than $1 million. Accountable for building to code and to specification, securing and maintaining every permit, passing
+  inspections, and keeping municipal documentation complete and current.
+- **On this contract:** the District's single point of contact. Owns the weekly schedule, the monthly meeting, quality audits
+  (Appendix B), safety compliance (Appendix A) and invoicing.
 
 **Alex Ditto, Field Operations Manager (YMS Landscaping).** Commercial Accounts Manager at YMS Landscaping, responsible
 for its commercial maintenance accounts in Castle Rock, Castle Pines, Parker, Highlands Ranch, Littleton and Centennial.
@@ -152,6 +165,13 @@ Contracts of similar size and scope in the past three years:
 |---|---|---|---|---|
 | Grounds maintenance | Deer Creek Church | 2026-04-04 | $9,960 | Amber Brinks, amber@deercreekchurch.com |
 | Grounds maintenance | Sky Pointe Retirement Resort | 2026-07-01 | $10,710 | David Diffenderfer, 406-871-0774 |
+
+Brown Bison public-sector maintenance contracts:
+
+| Project | Agency | Start | Contract value | Contact |
+|---|---|---|---|---|
+| HVAC, plumbing and electrical maintenance and repair | City of Birmingham, Department of Public Works (AL) | ⟦LUKE: start date⟧ | ⟦LUKE: value⟧ | ⟦LUKE: name, phone, email⟧ |
+| HVAC, plumbing and electrical maintenance and repair | City of Hoover (AL) | ⟦LUKE: start date⟧ | ⟦LUKE: value⟧ | ⟦LUKE: name, phone, email⟧ |
 
 # 4. Response to Scope
 
