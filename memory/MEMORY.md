@@ -603,5 +603,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ## 2026-10-23 — Luke's background (for every proposal's qualifications section)
 - Luke says Brown Bison won HVAC/plumbing/electrical maintenance and repair contracts with City of Birmingham Public Works and City of Hoover, AL "in the past 2 years".
   CONFLICT: Brown Bison Holdings LLC was formed in Colorado 2026-05-04 (SOS 20261543928); SAM 2026-05-21. GovTribe shows no AL awards to "Brown Bison". Asked Luke which entity held them and for dates, values and contacts.
-- Previously Operations Manager at Mighty Plumbing Heating Electric: ran 50+ technicians and staff; project manager on $1M+ city and local-government contracts (code, permits, inspections). Years not given yet.
+- Previously Operations Manager at Mighty Plumbing Heating Air Electric LLC, 2021-2025: ran 50+ technicians and staff; project manager on $1M+ city and local-government contracts (code, permits, inspections).
 - DCSD 003-27 proposal now carries this (commit bb34d0f) with ⟦LUKE⟧ markers on years, dates, values and contacts. The final build refuses until they're filled.

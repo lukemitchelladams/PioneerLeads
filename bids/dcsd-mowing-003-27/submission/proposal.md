@@ -75,7 +75,7 @@ contracts. It currently delivers HVAC, plumbing and electrical maintenance and r
 Public Works and the City of Hoover, Alabama (Section 3). On this contract Brown Bison holds the agreement, schedules and
 coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
 
-Brown Bison is led by Luke Adams, who previously served as Operations Manager of Mighty Plumbing Heating Electric. There he
+Brown Bison is led by Luke Adams, who previously served as Operations Manager of Mighty Plumbing Heating Air Electric LLC from 2021 to 2025. There he
 directed more than 50 technicians and staff and managed municipal and local-government contracts of more than $1 million
 each through permitting, inspection and close-out.
 
@@ -130,7 +130,7 @@ Resumes for Luke Adams, Alex Ditto, Greg Hitchcock, Luis Chavez and Garrett Siss
 
 - **Owner, Brown Bison Holdings LLC.** Manages the company's municipal maintenance contracts. These include HVAC, plumbing
   and electrical maintenance and repair for the City of Birmingham Department of Public Works and the City of Hoover, Alabama.
-- **Operations Manager, Mighty Plumbing Heating Electric** ⟦LUKE: years, e.g. 2019-2024⟧. Directed daily operations for a
+- **Operations Manager, Mighty Plumbing Heating Air Electric LLC (2021-2025).** Directed daily operations for a
   team of more than 50 technicians and support staff. Served as project manager on city and local-government contracts of
   more than $1 million. Accountable for building to code and to specification, securing and maintaining every permit, passing
   inspections, and keeping municipal documentation complete and current.
