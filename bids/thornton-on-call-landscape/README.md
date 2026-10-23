@@ -17,7 +17,7 @@ Source: GovTribe → BidNet. Document: `docs/RFP-324-26-Landscape-Construction-S
 | Bonds | Exhibits F/G Labor & Material Payment Bond and Performance Bond forms (per task, confirm thresholds in Exhibit E) |
 | Evaluation | Responsiveness, firm responsibility/financial capacity, municipal experience, key personnel, references, rates and markups. **Qualifications and experience weighted substantially more than price.** |
 | Contact | Keith Griess, keith.griess@cityofthornton.net |
-| Status | **GO. Brown Bison submits. Alex Ditto performs as our listed sub (Exhibit B); his rates + our markup = Exhibit C.** |
+| Status | **NO-GO per Luke 2026-10-23.** Was: **GO. Brown Bison submits. Alex Ditto performs as our listed sub (Exhibit B); his rates + our markup = Exhibit C.** |
 
 ## Structure
 Brown Bison primes and submits. Alex Ditto is listed in Exhibit B as the landscape construction subcontractor.

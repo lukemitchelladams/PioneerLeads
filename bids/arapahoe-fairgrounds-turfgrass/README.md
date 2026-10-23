@@ -17,7 +17,7 @@ Source: GovTribe → BidNet. Document: `docs/RFP-26-52-Fairgrounds-Turfgrass-Con
 | Federal funds | **Yes → Davis-Bacon prevailing wage, Clean Air Act, FWPCA, federal terms** |
 | Evaluation | Experience/team 25, schedule/capacity 25, technical approach 30, cost 20 |
 | Contact | Katie Schwindt, NIGP-CPP, PPA, Sr. Purchasing Agent, (303) 738-7871, kschwindt@arapahoegov.com. Contacting the requesting department = possible disqualification. |
-| Status | **GO only if Brown Bison gets into the Monday 1:30 PM MDT meeting (late-invite email drafted). Brown Bison submits; Alex performs as sub at his price + our markup.** |
+| Status | **NO-GO per Luke 2026-10-23.** Was: **GO only if Brown Bison gets into the Monday 1:30 PM MDT meeting (late-invite email drafted). Brown Bison submits; Alex performs as sub at his price + our markup.** |
 
 ## To do
 - [ ] **MONDAY 07:00: send the drafted invitation-request email to KSchwindt@arapahoegov.com (in Gmail Drafts). Call (303) 738-7871 at 08:00 to ask the same. If admitted, join at 13:30 MDT.**

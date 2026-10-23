@@ -17,7 +17,7 @@ Source: GovTribe → OpenGov. Documents: `docs/126DM016-RFP.pdf`, `docs/126DM016
 | **SBE goal** | **15% SBE participation (RTD-certified SBE under matching NAICS) or documented good-faith efforts per 49 CFR 26.53.** If Brown Bison itself is RTD SBE-certified, we are the 15%. |
 | Evaluation | Approach/scope completeness 30, past relevant experience 30, cost 40 |
 | Contact | Marla Bainbridge, marla.bainbridge@rtd-denver.com, (303) 299-2411 |
-| Status | **GO. Longest runway in the pipeline. Alex Ditto = snow sub; custodial crew = ours or a janitorial sub.** |
+| Status | **NO-GO per Luke 2026-10-23.** Was: **GO. Longest runway in the pipeline. Alex Ditto = snow sub; custodial crew = ours or a janitorial sub.** |
 
 ## SBE certification (RTD Small Business Opportunity Office)
 - Apply with RTD's own SBE Certification Application + Personal Financial Statement forms to SBO@RTD-Denver.com.
