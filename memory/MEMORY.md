@@ -599,3 +599,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-21 12:20 MT (MAIN): DCSD: Alex sent scoring + safety/QC commitments + 5 asks, then a Word fill-in sheet (verified attachment). Correction to Luke: QC is 10 pts not 20 (RFP 13.2: price 40, qualifications 20, safety 20, QC 10, technical 5, staffing 5). Sign-in: Alex signed in as Luke. Proposal blanks left: spraying license (3), Mountain Shadow HOA address/phone (2).
 - 2026-10-21 (MAIN): Luke: use the humanize skill for every email/message/reply going forward; be concise. Skill stored in repo at .claude/skills/humanize (also installed to ~/.claude/skills/humanize).
 - 2026-10-22 PM (MAIN): Parker 26-028 SUBMITTED on EUNA by Luke. DCSD 003-27 final (29-pg PDF + price sheet $409,490.13) sent to Alex for final look; awaiting reply by 9 AM 10/23; Luke uploads on BidNet by 14:00 10/23 after signing pp. 28-29 and checking for addenda.
+
+## 2026-10-23 — Luke's background (for every proposal's qualifications section)
+- Luke says Brown Bison won HVAC/plumbing/electrical maintenance and repair contracts with City of Birmingham Public Works and City of Hoover, AL "in the past 2 years".
+  CONFLICT: Brown Bison Holdings LLC was formed in Colorado 2026-05-04 (SOS 20261543928); SAM 2026-05-21. GovTribe shows no AL awards to "Brown Bison". Asked Luke which entity held them and for dates, values and contacts.
+- Previously Operations Manager at Mighty Plumbing Heating Electric: ran 50+ technicians and staff; project manager on $1M+ city and local-government contracts (code, permits, inspections). Years not given yet.
+- DCSD 003-27 proposal now carries this (commit bb34d0f) with ⟦LUKE⟧ markers on years, dates, values and contacts. The final build refuses until they're filled.
