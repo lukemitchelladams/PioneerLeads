@@ -605,3 +605,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   CONFLICT: Brown Bison Holdings LLC was formed in Colorado 2026-05-04 (SOS 20261543928); SAM 2026-05-21. GovTribe shows no AL awards to "Brown Bison". Asked Luke which entity held them and for dates, values and contacts.
 - Previously Operations Manager at Mighty Plumbing Heating Air Electric LLC, 2021-2025: ran 50+ technicians and staff; project manager on $1M+ city and local-government contracts (code, permits, inspections).
 - DCSD 003-27 proposal now carries this (commit bb34d0f) with ⟦LUKE⟧ markers on years, dates, values and contacts. The final build refuses until they're filled.
+- 2026-10-23 RESOLVED: Birmingham DPW (2018-01-20 to 2019-01-20, ~$1.35M) and Hoover (2019-03-13 to 2020-03-13, ~$1.75M) were HVAC/plumbing/electrical
+  maintenance and repair contracts that Luke managed as PROJECT MANAGER. Luke does not want the holding company named. They predate the LLC, so NEVER
+  list them as Brown Bison contracts or references; use them as Luke's resume lines only. DCSD final rebuilt: 31 pages, signatures on pp. 30-31.

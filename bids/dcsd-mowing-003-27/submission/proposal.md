@@ -13,16 +13,16 @@ subtitle: "Douglas County School District RE-1 · Submitted by Brown Bison Holdi
 |---|---|
 | 1. Cover Letter | 1 |
 | 2. Qualifications and Personnel | 2 |
-| 3. References | 4 |
+| 3. References | 5 |
 | 4. Response to Scope | 5 |
 | 5. Pricing | 11 |
-| 6. Exceptions (Attachment B) | 28 |
-| 7. Debarment Certification (Attachment C) | 29 |
+| 6. Exceptions (Attachment B) | 30 |
+| 7. Debarment Certification (Attachment C) | 31 |
 | 8. Appendices | 12 |
 | A. Safety and Student Protection Plan | 13 |
-| B. Quality Control and Responsiveness Plan | 16 |
-| C. Crews, Equipment and Weekly Route | 18 |
-| E. YMS Landscaping Safety Program | 20 |
+| B. Quality Control and Responsiveness Plan | 17 |
+| C. Crews, Equipment and Weekly Route | 20 |
+| E. YMS Landscaping Safety Program | 22 |
 
 # 1. Cover Letter
 
@@ -70,14 +70,14 @@ Luke Adams\
 ## The team
 
 **Brown Bison Holdings LLC (Respondent and contract holder).** A Colorado limited liability company and facilities-services
-contractor, registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). Brown Bison manages public-sector maintenance and repair
-contracts. It currently delivers HVAC, plumbing and electrical maintenance and repair for the City of Birmingham Department of
-Public Works and the City of Hoover, Alabama (Section 3). On this contract Brown Bison holds the agreement, schedules and
-coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
+contractor, registered in SAM (UEI EV9QPAPM4C47, CAGE 20VU2). On this contract Brown Bison holds the agreement, schedules
+and coordinates with the District, runs quality control (Appendix B) and safety compliance (Appendix A), and invoices.
 
-Brown Bison is led by Luke Adams, who previously served as Operations Manager of Mighty Plumbing Heating Air Electric LLC from 2021 to 2025. There he
-directed more than 50 technicians and staff and managed municipal and local-government contracts of more than $1 million
-each through permitting, inspection and close-out.
+Brown Bison is led by Luke Adams, who has managed municipal maintenance and construction contracts since 2018. He was project
+manager for HVAC, plumbing and electrical maintenance and repair contracts with the City of Birmingham Department of Public
+Works and the City of Hoover, Alabama. From 2021 to 2025 he was Operations Manager of Mighty Plumbing Heating Air Electric
+LLC, where he directed more than 50 technicians and staff. There he managed municipal and local-government contracts of more
+than $1 million each through permitting, inspection and close-out.
 
 **AWalk LLC d/b/a YMS Landscaping (grounds subcontractor, subject to DCSD's written consent per Master Agreement §7).**
 
@@ -96,9 +96,9 @@ each through permitting, inspection and close-out.
 
 ## Day-to-day management and share of the work
 
-| Person | Role on this contract | Credentials | Share of contract |
+| Person | Role on this contract | Credentials | Share |
 |----------|--------------------|------------|-----|
-| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | Owner, Brown Bison Holdings LLC; former Operations Manager (50+ technicians); project manager on $1M+ municipal contracts | ⟪10%⟫ |
+| Luke Adams, Brown Bison | Contract manager: single point of contact, weekly schedule, monthly meeting, QC audits, safety compliance, invoicing | Owner, Brown Bison Holdings LLC; Operations Manager 2021-2025 (50+ technicians); project manager on $1M+ municipal contracts since 2018 | ⟪10%⟫ |
 | Alex Ditto, YMS Landscaping | Field operations manager: crews, routes, equipment, field quality checks | Commercial Accounts Manager, YMS Landscaping | ⟪15%⟫ |
 | Greg Hitchcock, YMS Landscaping | Crew lead, primary crew | Seven years with YMS, several as crew lead | ⟪35%⟫ |
 | Luis Chavez, YMS Landscaping | Crew lead, second crew; bilingual | Two years with YMS; runs large and small crews | ⟪25%⟫ |
@@ -126,14 +126,18 @@ Crew lead, primary crew    Crew lead, second crew
 ```
 
 Resumes for Luke Adams, Alex Ditto, Greg Hitchcock, Luis Chavez and Garrett Sission follow this section.
+
 **Luke Adams, Contract Manager (Brown Bison Holdings LLC).**
 
-- **Owner, Brown Bison Holdings LLC.** Manages the company's municipal maintenance contracts. These include HVAC, plumbing
-  and electrical maintenance and repair for the City of Birmingham Department of Public Works and the City of Hoover, Alabama.
+- **Owner, Brown Bison Holdings LLC (2026-present).** Leads the company's public-sector maintenance contracts.
 - **Operations Manager, Mighty Plumbing Heating Air Electric LLC (2021-2025).** Directed daily operations for a
   team of more than 50 technicians and support staff. Served as project manager on city and local-government contracts of
   more than $1 million. Accountable for building to code and to specification, securing and maintaining every permit, passing
   inspections, and keeping municipal documentation complete and current.
+- **Project manager, City of Hoover, Alabama (2019-2020).** HVAC, plumbing and electrical maintenance and repair; contract
+  value approximately $1.75 million.
+- **Project manager, City of Birmingham Department of Public Works, Alabama (2018-2019).** HVAC, plumbing and electrical
+  maintenance and repair; contract value approximately $1.35 million.
 - **On this contract:** the District's single point of contact. Owns the weekly schedule, the monthly meeting, quality audits
   (Appendix B), safety compliance (Appendix A) and invoicing.
 
@@ -166,12 +170,6 @@ Contracts of similar size and scope in the past three years:
 | Grounds maintenance | Deer Creek Church | 2026-04-04 | $9,960 | Amber Brinks, amber@deercreekchurch.com |
 | Grounds maintenance | Sky Pointe Retirement Resort | 2026-07-01 | $10,710 | David Diffenderfer, 406-871-0774 |
 
-Brown Bison public-sector maintenance contracts:
-
-| Project | Agency | Start | Contract value | Contact |
-|---|---|---|---|---|
-| HVAC, plumbing and electrical maintenance and repair | City of Birmingham, Department of Public Works (AL) | ⟦LUKE: start date⟧ | ⟦LUKE: value⟧ | ⟦LUKE: name, phone, email⟧ |
-| HVAC, plumbing and electrical maintenance and repair | City of Hoover (AL) | ⟦LUKE: start date⟧ | ⟦LUKE: value⟧ | ⟦LUKE: name, phone, email⟧ |
 
 # 4. Response to Scope
 
