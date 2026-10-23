@@ -266,6 +266,13 @@
    "match": "36C25927Q0019|radiant panel replacement rmr",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "DCSD 005-27 RFP High-Speed, Reliable Internet Access Services (EVALUATE; likely E-Rate)",
+   "source": "bidnet",
+   "match": "005-27|high-speed, reliable internet",
+   "folder": "bids/dcsd-internet-005-27",
+   "govtribe_ids": []
   }
  ]
 }
