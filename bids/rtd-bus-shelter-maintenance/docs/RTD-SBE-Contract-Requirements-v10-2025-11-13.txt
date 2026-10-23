@@ -1,0 +1,2080 @@
+         Small Business Enterprise (SBE)
+            Contract Requirements
+         Civil Rights: Equal Employment Opportunity and
+                           SBE Program Requirements
+                                              RFP/IFB
+
+
+
+
+                                                        Page 1 of 49
+Civil Rights Version 10.0 November 13, 2025
+`
+
+                                    (page intentionally left blank)
+
+
+
+
+                                                                      Page 2 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                                            CONTENTS
+
+
+Section                                                                                                                                    Page
+
+PART A     SPECIFIED FEDERAL REQUIREMENTS
+1.   APPLICABLE CIVIL RIGHTS REQUIREMENTS ...................................................5
+1.1     CIVIL RIGHTS ...................................................................................................5
+PART B SMALL BUSINESS ENTERPRISE PROGRAM REQUIREMENTS ..........................7
+1.      DEFINITIONS ...................................................................................................7
+2.      OVERVIEW OF RTD’s SBE PROGRAM POLICY……………………………………………10
+3.      GENERAL REQUIREMENTS …………………………………………………………………11
+        A.       SBE GOALS AND GOOD FAITH EFFORTS ……………………………………………...11
+        B.       MULTI-YEAR AND DESIGN BUILD PROJECT REQUIREMENTS …………………………16
+        C.       OTHER MULTI-YEAR OR ALTERNATIVE METHOD (CMGC, CM AT RISK, ETC.)
+                 SBE PROJECT REQUIREMENTS ………………………………………………………………..19
+        D.       TASK ORDER OR ON-CALL SBE CONTRACT REQUIREMENTS ...................................20
+        E.       SBE PLAN ........................................................................................................................ 21
+        F.       SBE LIAISON .................................................................................................................. 22
+        G.       COUNTING SBE PARTICIPATION..................................................................23
+        H.       JOINT VENTURES ......................................................................................26
+4.      FLOW-DOWN PROVISIONS .............................................................................26
+5.      PROMPT PAYMENT OF SBE SUBCONTRACTORS ..............................................27
+6.      JOINT CHECK UTILIZATION ............................................................................28
+7.      SBE REMOVAL/TERMINATION/SUBSTITUTION/REDUCTION OF SCOPE FROM
+        CONTRACT ......................................................................................................28
+8.      CHANGES ........................................................................................................30
+9.      REQUIREMENTS OF SBE CONTRACT REQUIREMENTS ENCLOSURES ...............30
+10.     REPORTING, AUDITS, REVIEWS AND ORIENTATION REQUIREMENTS ...........31
+
+
+
+
+                                                                                                                               Page 3 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                               APPENDICES
+
+SBE Contract Requirements – SBE Enclosure Checklist
+Enclosure 1A      SBE Affidavit
+Enclosure 1B      SBE Prime Affidavit
+Enclosure 2A      Schedule of SBE Participation
+Enclosure 2B      SBE Open-Ended Performance Plan (OEPP)
+Enclosure 3       Letter of Intent to Perform as a SBE Subcontractor
+Enclosure 4       Bidders List Information (Information Regarding Subcontractors Seeking to
+                  Work)
+Enclosure 5       Employer Certification of Workforce
+Enclosure 6       Small Business Outreach
+Enclosure 7       SBE Unavailability Certification
+Enclosure 8       Introduction to Access RTD’s Diversity and Compliance Solution B2GNow
+
+
+
+
+                                                                          Page 4 of 49
+ Civil Rights Version 10.0 November 13, 2025
+                                              PART A
+
+                             SPECIFIED FEDERAL REQUIREMENTS
+
+The Contractor/Consultant shall perform its obligations and shall require each Subcontractor
+regardless of the tier to perform its respective obligations under the Contract and the
+Subcontract(s) in accordance with the following requirements. The Contractor shall insert this
+Part A, SBE Contract Requirements and all flow-down provisions as detailed in this SBE Contract
+Requirements into each Subcontract regardless of the tier.
+
+1.      CIVIL RIGHTS REQUIREMENTS APPLICABLE TO THE CONTRACT
+
+1.1     CIVIL RIGHTS
+        Nondiscrimination - In accordance with Title VI of the Civil Rights Act, as amended, 42
+        U.S.C. § 2000d, section 303 of the Age Discrimination Act of 1975, as amended, 42 U.S.C.
+        § 6102, section 202 of the Americans with Disabilities Act of 1990, 42 U.S.C. § 12132, and
+        Federal transit law at 49 U.S.C. § 5332, Contractor agrees that it will not discriminate
+        against any employee or applicant for employment because of race, color, religion,
+        national origin, sex, age, or disability. In addition, Contractor agrees to comply with
+        applicable Federal implementing regulations and other implementing requirements FTA
+        may issue.
+        Equal Employment Opportunity – RTD is an equal opportunity employer. The following
+        equal employment opportunity requirements apply to the underlying Contract:
+        Race, Color, Religion, Sex, Sexual Orientation, Gender Identity, Or National Origin - In
+        accordance with Title VII of the Civil Rights Act, as amended, 42 U.S.C. § 2000e, and
+        Federal transit laws at 49 U.S.C. § 5332, Contractor will not (1) fail or refuse to hire or
+        to discharge any individual, or otherwise to discriminate against any individual with
+        respect to his compensation, terms, conditions, or privileges of employment, because of
+        such individual’s race, color, religion, sex, or national origin; or (2) limit, segregate, or
+        classify his employees or applicants for employment in any way which would deprive or
+        tend to deprive any individual of employment opportunities or otherwise adversely affect
+        his status as an employee, because of such individual’s race, color, religion, sex, or
+        national origin. Contractor will comply with Title VII of the Civil Rights Act of 1964, as
+        amended, 42 U.S.C. § 2000e, et seq., 49 U.S.C. § 5332, FTA Circular 4704.1A “Equal
+        Employment Opportunity (EEO) Requirements and Guidelines for Federal Transit
+        Administration Recipients;” and other federal guidance pertaining to EEO laws,
+        regulations, and requirements. In addition, Contractor agrees to comply with any
+        implementing requirements FTA may issue.
+        Age - In accordance with section 4 of the Age Discrimination in Employment Act of 1967,
+        as amended, 29 U.S.C. § 623 and Federal transit law at 49 U.S.C. § 5332, Contractor
+        agrees to refrain from discrimination against present and prospective employees for
+        reason of age. In addition, Contractor agrees to comply with any implementing
+        requirements FTA may issue.
+        Disabilities - In accordance with section 102 of the Americans with Disabilities Act, as
+        amended, 42 U.S.C. § 12112, Contractor agrees that it will comply with the requirements
+
+
+                                                                                       Page 5 of 49
+Civil Rights Version 10.0 November 13, 2025
+        of U.S. Equal Employment Opportunity Commission, "Regulations to Implement the Equal
+        Employment Provisions of the Americans with Disabilities Act," 29 CFR Part 1630,
+        pertaining to employment of persons with disabilities. In addition, Contractor agrees to
+        comply with any implementing requirements FTA may issue.
+        Contractor also agrees to include these requirements in each subcontract regardless of
+        the tier financed in whole or in part with Federal assistance provided by FTA, modified
+        only if necessary to identify the affected parties.
+        During the performance of the Contract, the Contractor or subcontractor:
+        (i)     The Contractor will ensure that equal employment opportunity is afforded to all
+                applicants in recruitment and employment, and that employees are treated fairly,
+                during employment, without regard to their race, color, religion, national origin,
+                sex, disability or age. Such equal employment opportunity shall include, but not
+                be limited to the following: employment, upgrading, demotion, or transfer;
+                recruitment or recruitment advertising; layoff or termination; rates of pay or other
+                forms of compensation; and selection for training, including apprenticeship. The
+                Contractor agrees to post in conspicuous places, available to employees and
+                applicants for employment, notices to setting forth provisions of this
+                nondiscrimination clause.
+        (ii)    The Contractor will not indicate in any solicitations or advertisements for
+                employees placed by or on behalf of the Contractor, any preference, limitation,
+                specification, or discrimination, based on race, color, religion, sex, or national
+                origin, except that such a notice or advertisement may indicate a preference,
+                limitation, specification, or discrimination based on religion, sex, or national origin
+                when religion, sex, or national origin is a bona fide occupational qualification for
+                employment. The Contractor agrees to comply with any regulations promulgated
+                by the EEOC, OFCCP, Department of Labor, Department of Justice; the Regional
+                Transportation District, Colorado Revised Statutes and all other relevant state and
+                local laws.
+
+
+
+
+                                                                                        Page 6 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                           PART B
+                                 SMALL BUSINESS ENTERPRISE
+                                  PROGRAM REQUIREMENTS
+
+RTD has adopted and may use some of the standards of Subpart A, B, C and F of 49 CFR Part 26
+to determine the SBE Goals, Good Faith Efforts, Counting, Compliance and Enforcement in RTD’s
+locally funded contracts.
+
+1.      DEFINITIONS
+Unless the context requires otherwise, capitalized terms used in this SBE Contract Requirements
+shall have the meanings given to them in the Instructions to Proposers. However, if there is a
+conflict, the definitions in this section shall prevail. In addition, the following capitalized terms
+shall have the meanings set out below:
+Bidder/Proposer means a firm or a person submitting a bid or proposal in response to a
+solicitation by RTD.
+Contract Goal (SBE goal) means a goal determined by such factors as the type of work
+involved, the location of the work and the availability of the SBEs for the work of the particular
+contract.
+Contractor means any Project Contractor that subcontracts with a SBE for performance of the
+Work, as applicable.
+Commercially Useful Function occurs when a SBE firm is responsible for execution of the work of
+the Contract and is carrying out its responsibilities by actually performing, managing and
+supervising the work involved in substance as defined under the DBE federal regulations, 49 CFR
+Part 26. The SBE firm must also be responsible for materials and supplies used on the Contract,
+for negotiating price, determining quality and quantity, ordering the material, installing (where
+applicable) and paying for the materials itself. Additionally, for an SBE to be considered as
+performing a commercially useful function, an SBE must perform or exercise responsibility for at
+least 30 percent of the total cost of its contract with its own work force.
+
+Small Business Enterprise (SBE) means a firm that is currently certified as a “Small Business
+Enterprise” by the RTD Small Business Opportunity Office. Additionally:
+        (a)     The average annual gross sales for the past 3 years cannot exceed $31.84 million.
+                This amount includes any affiliate businesses owned in whole or part by any
+                applicant owner or stockholder regardless of their ownership interest.
+        (b)     The personal net worth of the qualifying owner(s) / stockholders of an SBE must
+                be less than $2,047,000 (on an individual basis) - not including the equity in their
+                primary residence or in the business being certified. At least 51% of the
+                owners/stockholders must meet the personal net worth criteria for the business to
+                be eligible. Applicants cannot transfer ownership solely for the purpose of
+                qualifying for the SBE Program. RTD will evaluate transfers of ownership within
+                the past two years to determine compliance with the personal net worth
+                requirements.
+        (c)     To count a small business’ participation toward the goal established for the
+                Contract, the firm must be certified as an SBE with RTD Small Business Opportunity
+
+
+                                                                                      Page 7 of 49
+Civil Rights Version 10.0 November 13, 2025
+                Office and perform a “commercially useful function” as defined in this SBE Contract
+                Requirements. Prime contractors should also be sure that the SBE is certified as
+                of the date that RTD receives this bid/proposal.
+SBE Category means each of the following:
+        (a) SBE Category 1: SBEs with gross receipts less than $1 Million;
+        (b) SBE Category 2: SBEs with gross receipts between $1 Million and $5 Million;
+        (c) SBE Category 3: SBEs with gross receipts between $5 Million and $10 Million; and
+        (d) SBE Category 4: SBEs with gross receipts in excess of $10 Million and less than $31.84
+            Million
+SBE Enclosures means the certificates and forms provided in the enclosures to these SBE
+Contract Requirements.
+SBE Goals has the meaning given to it in Section 3.1 of this SBE Contract Requirements.
+SBE Liaison means a representative of the Contractor with direct and independent access to the
+Contractor’s project manager and/or chief operating officer. This can be a collateral duty. The
+SBE Liaison has management responsibility for implementing, managing and reporting on
+achievement of the SBE Goals, ensuring compliance monitoring in accordance with the DBE
+regulations as defined under 49 CFR Part 26, communicating to subcontracting businesses and
+developing supportive service activities at all tiers. The SBE liaison is also responsible for serving
+as the point of contact with RTD’s Small Business Opportunity Office for all reporting, submission
+of properly completed forms/documents, and for responding to any compliance issues/matters.
+SBE Participation Report has the meaning given to it in Section 3.10 of this SBE Contract
+Requirements.
+SBE Plan means a required plan, prepared by or on behalf of the Contractor as required by RTD
+in the procurement documents that describes how the Contractor plans to satisfy requirements
+set forth in this Part B of the SBE Contract Requirements.
+Small Business Opportunity Office or SBO means the RTD Department responsible for
+administering the SBE Programs.
+
+
+
+
+                                                                                       Page 8 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                              Page 9 of 49
+Civil Rights Version 10.0 November 13, 2025
+2.      OVERVIEW OF RTD’S SBE PROGRAM POLICY
+        RTD’s policy is to ensure nondiscrimination in the award and administration of the District’s
+        construction contracts, professional service contracts, and in the procurement of common
+        goods and services. The RTD Small Business Enterprise (SBE) program was created by
+        RTD and adopted by its Board of Directors to ensure local participation of small businesses
+        on locally funded projects. It is a race and gender-neutral program. The Contractor shall
+        comply with and implement requirements of RTD’s SBE Program and 49 CFR Part 26 in
+        the award and administration of Subcontracts under this Agreement. The Contractor shall
+        not discriminate on the basis of race, color, religion, national origin, sex, age, or disability
+        in the administration and performance of the Contract. The Contractor shall ensure that
+        the nondiscrimination clause(s) and flow-down provisions found in Section 4 of this SBE
+        Contract Requirements are incorporated in all SBE subcontract agreements regardless of
+        tier. It is RTD’s intention to create a level playing field on which SBEs can compete fairly
+        for locally funded contracts. Failure by the Contractor to comply with or implement these
+        requirements is a material breach of the Contract, which may result in the termination of
+        the Contract or such other remedy as RTD deems appropriate. These legal remedies may
+        include but are not limited to: withholding monthly progress payments, assessing
+        sanctions, liquidated damages, and/or disqualifying the Contractor from future bidding as
+        non-responsible (see 49 CFR Part 26.13). RTD's commitment to the SBE Goals is not
+        intended to and shall not be used as a justification to discriminate against any qualified
+        company or group of companies.
+        Additionally, it is important to note and restate applicable requirements of SBE
+        firms:
+        To be certified as an SBE, a firm must meet the business size eligibility requirements,
+        personal net worth requirements and at least be 51% owned and controlled by individuals
+        who are US citizens or permanent alien residents. The qualifying applicant(s) are required
+        to submit proof of the owner (s) capability to perform the services for which they are
+        requesting certification as well as execute the application and the Personal financial
+        statement in the presence of a notary. RTD will make SBE certification decisions based
+        on the facts as a whole.
+        The RTD SBE Certification Program is open to all businesses regardless of the race or
+        gender of the owner(s) of the business. Eligible firms will be classified in one of the four
+        categories of eligibility depending on their three (3) year average gross receipts, as
+        follows:
+        Category 1: Approved firms with gross receipts less than $1 Million.
+        Category 2: Approved firms with gross receipts between $1 Million and $5 Million.
+        Category 3: Approved firms with gross receipts between $5 Million and $10 Million.
+        Category 4: Approved firms with gross receipts in excess of $10 Million and less than
+        $31.84 Million.
+
+        A. The average annual gross sales for the past 3 years cannot exceed $31.84 million.
+           This amount includes any affiliate businesses owned in whole or part by any applicant
+           owner or stockholder regardless of their ownership interest.
+
+
+
+                                                                                         Page 10 of 49
+Civil Rights Version 10.0 November 13, 2025
+        B. The personal net worth of the qualifying owner(s) / stockholders of a SBE must be less
+           than $2,047,000 (on an individual basis) - excluding the equity of the qualifying
+           owner’s primary residence and the equity of the qualifying owner’s firm. At least 51%
+           of the owners/stockholders must meet the personal net worth criteria for the business
+           to be eligible. Applicants cannot transfer ownership solely for the purpose of qualifying
+           for the SBE Program. RTD will evaluate transfers of ownership within the past two
+           years to determine compliance with the personal net worth requirements. Additionally,
+           the qualifying owner may be disqualified if there is evidence that he or she is not
+           economically Small due to assets and resources that indicate an ability to accumulate
+           substantial wealth based on specific factors, similar to those used by the Small
+           Business Administration (SBA), that are set out in the SBESBE SBE regulations. (see
+           49 CFR Part 26.67(b).
+
+        C. To count a small business’ participation toward the goal established for the Contract,
+           the firm must be certified as a SBE and perform a “commercially useful function” as
+           defined in this SBE Contract Requirements. The proposed SBE(s) must be certified as
+           a SBE with RTD Small Business Opportunity Office under the proper NAICS code that
+           coincides with the scope of work that they will execute in the project. Prime contractors
+           should also be sure that the SBE is certified as of the date that RTD receives this
+           bid/proposal unless some other time frame is required by the nature of the project
+           delivery method, project duration or when the SBE is approved by RTD to be added to
+           the Contractor’s Schedule of Participation.
+
+3.      GENERAL REQUIREMENTS
+        A.      SBE GOALS AND GOOD FAITH EFFORTS
+        i)      Unless otherwise indicated in the Contract or an addendum to the Contract, for
+                Invitations for Bids (IFB), the Contract will be awarded to the lowest responsive
+                and responsible bidder. For Request for Proposals (RFP) with best value criteria,
+                the Contract will be awarded to the responsive and responsible proposer or
+                proposers who best meet the Evaluation Criteria, cost and other factors considered
+                (including SBE Program requirements). A bidder/proposer who fails or refuses to
+                complete and return the required enclosures to this SBE Contract Requirements
+                may be deemed non-responsive. For the purposes of the RTD SBE program, at
+                times the SBE goal is dispersed amongst the 4 SBE categories to ensure equitable
+                opportunities. Consequently, SBEs are able to compete with other SBEs of the same
+                business size. The specified SBE participation goal applies to all post selection
+                negotiations. The Contractor’s commitment to the percentage of certified SBE
+                utilization during the term of the Contract will be stated in the SBE Affidavit
+                (Enclosure 1A). All extensions, amendments, change orders and options of the
+                Contract are subject to review by RTD’s SBO. The SBO may determine that a
+                modification may impact the Contractor’s ability to comply with its initial
+                commitment. However, a partial waiver of the goal will not be considered until the
+                end of the Contract and the totality of the Contractor’s compliance efforts are
+                assessed to determine its ability to comply with the initial commitment. The SBO
+                will evaluate all decisions to self- perform scopes of work where SBE availability
+                was present, yet not solicited, not utilized or disregarded.
+
+
+
+                                                                                      Page 11 of 49
+Civil Rights Version 10.0 November 13, 2025
+        ii)     RTD has specified the SBE Participation goal on this project as found on Enclosure
+                1A - SBE Affidavit. If the SBE goal is dispersed amongst the 4 categories, the
+                bidder/proposer must find SBEs certified in specific categories to meet the goal
+                identified for that particular category. It is permissible for bidders/proposers to
+                utilize SBEs in lower categories to meet the goal on the higher categories, however,
+                bidders/proposers are not able to use SBEs from higher categories to meet the
+                goal on lower categories, (ie. SBE category 4 goal can be met with SBEs certified
+                in categories 1 through 4, yet SBE category 2 goal can only be met with SBEs
+                certified in categories 1 and 2). Bidders/proposers must make adequate good faith
+                efforts to meet this goal in order to be deemed as a responsive and responsible
+                bidder. Award of the Contract will be conditioned on meeting the requirements of
+                this section. 49 CFR Part 26.53 and Appendix A of 49 CFR Part 26 shall serve as
+                the criteria for evaluating compliance with the good faith efforts requirements.
+                Additionally, bidders/proposers are required to solicit the support and assistance
+                of RTD’s SBO if they are unable to meet the SBE participation goal assigned to the
+                Contract. The bidders/proposers can meet this requirement in one of two ways:
+
+        iii)    First, the bidder/proposer can meet this goal by demonstrating and documenting
+                their commitments for participation by SBEs for at least the total percentage
+                identified above, or a percentage that exceeds the goal for the project. 49 CFR
+                Part 26.53 explains the procedures that recipients/agencies such as RTD should
+                follow in this situation. For purposes of this section, RTD will only accept SBE(s)
+                that are currently certified with RTD as a SBE under the NAICS code(s) that
+                coincides with the scope of work that they will execute in this project. RTD reserve
+                the right to accept other certification programs, such as DBE under the Colorado
+                Unified Certification Program, or SBEs under the City and County of Denver
+                Certification Program. The acceptance of these other certifications will be
+                announced by SBO and will have to be included as part of solicitation or
+                advertisement process of any IFB or RFP. All certified firms (same as for any other
+                certification accepted for a particular period) must be certified prior to the
+                bid/proposal submission, except in a “design-build” or “turnkey” contracting
+                situation where RTD will explain its procedure in section 3 of this document. RTD
+                requires that all bidders/proposers submit the following information to RTD, under
+                sealed bid procedures, as a matter of responsiveness, or with initial proposals,
+                under contract negotiation procedures:
+                a. The names and addresses of SBE firms that will participate in the Contract;
+                   (please include SBE current certification letters issued by RTD);
+                b. Description of the work that each SBE will perform. To count toward meeting
+                   a goal, each SBE firm must be certified in a NAICS code applicable to the kind
+                   of work the firm would perform on the Contract; (this is RTD Enclosure 2A – SBE
+                   Schedule of Participation and Enclosure 3 - SBE Letter of Intent, also please
+                   include SBE current certification letters issued by RTD);
+                c. The dollar amount of the participation of each SBE firm participating; (This is
+                   included on RTD Enclosure 2A - SBE Schedule of Participation and Enclosure 3
+                   - SBE Letter of Intent);
+
+
+
+                                                                                      Page 12 of 49
+Civil Rights Version 10.0 November 13, 2025
+                d. Written documentation of the bidder/proposer’s commitment to use a SBE
+                   subcontractor whose participation it submitted to meet a contract goal; (this is
+                   covered under RTD Enclosure 1A or 1B – SBE Affidavit as well as Enclosure 3
+                   - SBE Letter of Intent);
+                e. Written confirmation from each listed SBE firm that it is participating in the
+                   Contract in the kind and amount of work provided in the bidders’/proposers’
+                   commitment. (This is included on RTD Enclosure 3 - SBE Letter of Intent).
+        iv)     Second, if the bidder/proposer does not meet the SBE goal identified in the
+                Contract, or is able to only meet part of this goal, they must document adequate
+                good faith efforts. RTD’s SBE program follows the DBE Program, Appendix A to
+                49 CFR part 26 which clearly states that the bidder/proposer must show that it
+                took all necessary and reasonable steps to achieve a DBE goal or other requirement
+                of this part which, by their scope, intensity, and appropriateness to the objective,
+                could reasonably be expected to obtain sufficient DBE participation, even if they
+                were not fully successful. Additionally, 49 CFR Part 26.53 explains the good faith
+                efforts procedures that recipients/agencies such as RTD should follow when a
+                bidder/proposer does not meet the goal.
+
+                The following are a list of information that bidders/proposers must submit as proof
+                of good faith efforts along with RTD Enclosure 6 – Small Business Outreach and
+                Enclosure 7 – SBE Unavailability Certification form. Bidders/proposers are expected
+                to document adequate/sufficient good faith efforts to meet the SBE goal.
+                The kinds of efforts that are considered demonstrative of a “good faith” effort
+                include, but are not limited to, the following:
+                a. Whether the bidders/proposers solicited through all reasonable and available
+                   means (e.g. attendance at pre-bid meetings, advertising and/or written
+                   notices) the interest of all certified SBEs who have the capability to perform
+                   the work of the Contract. The bidders/proposers must solicit this interest within
+                   sufficient time to allow the SBEs to respond to the solicitation. The
+                   bidders/proposers must determine with certainty if the SBEs are interested by
+                   taking appropriate steps to follow up initial solicitations.
+                b. Whether the bidders/proposers selected portions of the work to be performed
+                   by SBEs in order to increase the likelihood that the SBE goals will be achieved.
+                   This includes, where appropriate, breaking out contract work items into
+                   economically feasible units to facilitate SBE participation, even when the prime
+                   contractor might otherwise prefer to perform these work items with its own
+                   forces.
+                c. Whether the bidders/proposers provided interested SBEs with adequate
+                   information about the plans, specifications, and requirements of the Contract
+                   in a timely manner to assist them in responding to a solicitation.
+                d. Whether the bidders/proposers negotiated in good faith with interested SBEs.
+                   It is the bidder’s responsibility to make a portion of the work available to SBE
+                   subcontractors and suppliers and to select those portions of the work or
+                   material needs consistent with the available SBE subcontractors and suppliers,
+                   so as to facilitate SBE participation. The fact that a bidder/proposer may
+
+
+                                                                                      Page 13 of 49
+Civil Rights Version 10.0 November 13, 2025
+                     perform 100% of the work with its own workforce is not sufficient justification
+                     to fail to negotiate with SBEs or not to meet the SBE participation goal assigned
+                     to a project.
+                e. Evidence of such negotiation includes the names, addresses, and telephone
+                   numbers of SBEs that were considered; a description of the information
+                   provided regarding the plans and specifications for the work selected for
+                   subcontracting; and evidence as to why additional agreements could not be
+                   reached for SBEs to perform the work.
+                f.   Whether the bidders/proposers made efforts to assist interested SBEs in
+                     obtaining bonding, lines of credit, or insurance as required by the recipient or
+                     contractor.
+                g. Whether the bidders/proposers made efforts to assist interested SBEs in
+                   obtaining necessary equipment, supplies, materials, or related assistance or
+                   services.
+                h. Whether the bidders/proposers effectively used the services of available
+                   community organizations, contractors’ groups and other organizations to
+                   provide assistance in the recruitment and placement of SBEs, including RTD’s
+                   SBO.
+                i.   Whether other bidders/proposers on the procurement met the SBE goals and
+                     submitted an acceptable SBE Plan demonstrating compliance with the SBE
+                     Program requirements for a turnkey, multi-year design-build project,
+                     alternative method contracts, other multi-year projects, On-Call or Task-Order
+                     projects.
+                j.   Bidders/proposers are required to submit copies of each SBE and non-SBE
+                     subcontractor quote submitted to them when a non-SBE subcontractor was
+                     selected over a SBE for work on the Contract so RTD SBO can review whether
+                     SBE prices were substantially higher; and contact the SBEs listed on a
+                     contractor's solicitation to inquire as to whether they were contacted by the
+                     prime. Pro forma mailings to SBEs requesting bids are not alone sufficient to
+                     satisfy good faith efforts. A bidder/proposer will not be deemed to demonstrate
+                     good faith if it rejects a SBE simply because it is not the low bidder, or if it is
+                     unable to find a replacement SBE at the original price. It is important to note
+                     that a complete good faith efforts procedure is described under 49 C.F.R.
+                     §26.53 for further guidance and review.
+            v) All good faith efforts information must be complete and accurate and adequately
+               documented by the bidders/proposers and shall be submitted with the
+               bid/proposal.
+               To award a contract to a bidder/proposer that has failed to meet the SBE contract
+               goals, the RTD SBO Office Manager will decide whether the Contractor made a
+               “good faith” effort to actively, effectively and aggressively seek SBEs to meet those
+               goals prior to bid/proposal submission and in its commitments as set forth in their
+               Schedule of Participation or SBE Plan to continue its efforts to meet the SBE
+               participation goals for subsequent phases of the project. Contractors are also
+               responsible for collecting good faith effort documentation of all major non-SBE
+
+
+                                                                                         Page 14 of 49
+Civil Rights Version 10.0 November 13, 2025
+               subcontractors/suppliers as part of their responsibility to implement the SBE
+               Program. If, after reviewing the “good faith efforts” documentation submitted by
+               the bidder/proposer, the RTD SBO O f f i c e Manager determines that good faith
+               efforts were met, the Contract will be recommended for award to the responsive
+               and or responsible bidder/proposer.
+        vi)     If RTD determines that the apparent successful bidder/proposer has failed to meet
+                the SBE goal or make adequate/sufficient good faith efforts, before awarding the
+                contract, RTD will provide the bidder/proposer an opportunity for administrative
+                reconsideration.
+                a. The bidder/proposer will be informed in writing that their submittal was
+                   deemed non-responsive to the SBE Contract Requirements and will not be
+                   considered for contract award. The bidder/proposer may appeal the decision
+                   of the RTD SBO Office Manager to the reconsideration official(s). If the
+                   bidder/proposer wishes to appeal, they must do so in writing to the RTD
+                   Contracting and Procurement Director within 5 business days of being informed
+                   of the decision of the RTD SBO Office Manager that their submission was non-
+                   compliant. As part of this reconsideration, the bidder/proposer must have the
+                   opportunity to provide written documentation or argument concerning the
+                   issue of whether it met the goal or made adequate good faith efforts to do so.
+                b. If the decision of the SBO Office Manager is appealed in writing, within the 5
+                   day submission window, the reconsideration official(s) will review the
+                   documentation submitted by the Contractor as part of Contractor’s
+                   bid/proposal– and no other information under this Section, including any
+                   additional information provided with Contractor’s request for administrative
+                   reconsideration, to decide whether the SBE requirements have been satisfied
+                   through “good faith efforts”.
+                c. The reconsideration official will be a member of RTD staff who did not take
+                   part in the initial “good faith efforts” decision. If the written appeal request is
+                   received after the 5-business day submission window, it will be disallowed and
+                   the determination of the RTD SBO Office Manager that the submission was
+                   non-compliant will stand.
+
+                d. The bidder/proposer will have the opportunity to meet in person with RTD’s
+                   reconsideration official to discuss the issue of whether it met the goal or made
+                   adequate good faith efforts to do so.
+                e. If the reconsideration official(s) determines that “good faith efforts” were met,
+                   the contract will be recommended for award to the Contractor. If the
+                   reconsideration official(s) determines that the Contractor has failed to meet the
+                   good faith effort requirements, the Contractor will be informed in writing. RTD
+                   will send the bidder/proposer a written decision on reconsideration, explaining
+                   the basis for finding that the bidder did or did not meet the goal or make
+                   adequate good faith efforts to do so.
+                f.   The result of the reconsideration process is not administratively appealable to
+                     the Department of Transportation.
+
+
+
+                                                                                       Page 15 of 49
+Civil Rights Version 10.0 November 13, 2025
+                g. The reconsideration official will review the documentation submitted as part of
+                   Contractor’s bid/proposal– and no other information, including any additional
+                   information provided with Contractor’s request for administrative
+                   reconsideration - under this Section to decide whether the SBE requirements
+                   have been satisfied through good faith efforts.
+
+B.      MULTI-YEAR DESIGN BUILD PROJECT REQUIREMENTS
+
+                a. In a design-build, unless different and specific instructions are provided for
+                   alternative delivery method procurements, the Bidder/Proposer must make the
+                   good faith efforts to meet or exceed the specified project SBE Goal at the time
+                   of bid or proposal submission. To be considered a responsive bidder/proposer,
+                   when a SBE Goal is specified for design-build, a Bidder/Proposer must meet
+                   the goal referred to in the bid specification by committing to meet the SBE Goal
+                   for each phase of the design build or other alternative delivery method project
+                   process by specifically identifying certified SBE firms that will be performing
+                   services. Bidder/Proposer is required to submit two sets of SBE Enclosures.
+                   One for “design phase”, and one related to the “construction phase”.
+
+                  (i) For the “design phase”:
+
+                           a. Award of the Contract will be conditioned on meeting the
+                              requirements of this section. 49 CFR Part 26.53 and Appendix A of
+                              49 CFR Part 26 shall serve as the criteria for evaluating compliance
+                              with the good faith efforts requirements.
+                           b. Proposers can meet the SBE requirements of this section in one of
+                              two ways. First, and for the "design phase" only, Proposer can
+                              meet the SBE goal by demonstrating and documenting its
+                              commitments for participation by SBEs for at least the total
+                              percentage identified above or a percentage that exceeds the goal
+                              for the "design phase". The SBE Contract Requirements provided in
+                              the Attachment E of RFP/IFB (the "SBE Contract Requirements") as
+                              well as 49 CFR Part 26.53 explain the procedures that RTD will
+                              follow in this situation.
+
+                           c. Second, in the rare event, a Proposer does not meet the SBE goals
+                              identified in this contract or is able to only meet part of this goal, it
+                              must document adequate good faith efforts (GFE). Appendix A to
+                              49 CFR part 26 clearly states, "This means that the proposer must
+                              show that it took all necessary and reasonable steps to achieve a
+                              SBE goal or other requirement of this part which, by their scope,
+                              intensity, and appropriateness to the objective, could reasonably be
+                              expected to obtain sufficient SBE participation, even if they were
+                              not fully successful." Additionally, the SBE Contract Requirements
+                              as well as 49 CFR Part 26.53 explain the good faith efforts
+                              procedures that recipients/agencies such as RTD should follow
+                              when a Proposer does not meet the goal.
+
+
+                                                                                         Page 16 of 49
+Civil Rights Version 10.0 November 13, 2025
+                           d. By the proposal due date, and for the "design phase" only,
+                              proposer is required to submit the following Enclosures:
+
+                                    i.   Enclosure 1A - SBE Affidavit
+                                   ii.   Enclosure 1B - SBE Prime Affidavit (only when proposer is
+                                         a certified SBE)
+                                  iii.   Enclosure 2A - Schedule of SBE Participation
+                                  iv.    Enclosure 3 - Letter of Intent to Perform as a SBE
+                                         Subcontractor
+                                   v.    Enclosure 4 - Bidders List Information (Information of
+                                         Subcontractors Seeking to Work) (one for each
+                                         subcontractor (SBE and non-SBE)
+                                  vi.    Enclosure 5 - Employer Certification Workforce
+                                 vii.    Enclosure 6 - Small Business Outreach
+                                 viii.   Enclosure 7 - SBE Unavailability Certification
+
+                           e. Regarding the SBE Enclosure 4 (Bidders List Information
+                              (Information of Subcontractors Seeking to Work), Bidder/Proposer
+                              is required to submit certain information for those firms (SBEs and
+                              non-SBEs) that are interested in working on the Contract. The
+                              required information applies to all firms that has submitted quotes,
+                              or bids for a subcontract amount, specifically related to the project
+                              you are bidding or submitting proposal. Information applies to all
+                              firms submitting quotes or bids and not limited to the ones
+                              preliminary selected as the best bid or quote. For this purpose,
+                              please refer to SBE Enclosure 4 – (Bidders Information of
+                              Subcontractors Seeking to Work).
+                           f. Contractor is required to make good faith efforts to fulfill their
+                              commitment to SBE participation/utilization throughout the duration
+                              of the "design phase" contract.
+
+                  (ii) For the “construction phase”:
+                           a. Bidder/Proposer is required to submit different sets of SBE
+                              Enclosures at different stages throughout the Contract.
+
+                           b. By the proposal due date, and for "construction phase" only,
+                              Proposer is required to submit:
+
+                                    i.   SBE Enclosure 1A (SBE Affidavit);
+                                   ii.   SBE Enclosure 1B (SBE Prime Affidavit – when
+                                         bidder/proposer is a certified SBE); and
+                                  iii.   SBE Enclosure 2B Open-Ended Performance Plan (SBE
+                                         OEPP). The SBE Open-Ended Performance Plan (OEPP)
+                                         must include a commitment to meet the SBE goal for the
+                                         construction phase and provide details of the types of
+                                         subcontracting work or services, with projected dollar
+                                         amount that the bidders/proposer will solicit SBEs to
+
+
+                                                                                     Page 17 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                           perform. The OEPP must also include an estimated time
+                                           frame in which actual SBE subcontracts would be
+                                           executed. A Contractor must submit an updated OEPP
+                                           every month of the construction phase to ensure
+                                           compliance with the original submitted OEPP and
+                                           scheduled timeframe. Unless otherwise specified, a
+                                           Bidder/Proposer is required to submit the OEPP along with
+                                           the bid or proposal to be considered responsive.
+
+                               c. Within seven (7) days after the first Notice to Proceed (NTP)
+                                  related to "construction phase", is issued, the awarded Contractor
+                                  will submit the following SBE Enclosures required for the
+                                  "construction phase":
+
+                          i.      SBE Enclosure 2A (Schedule of SBE Participation);
+                         ii.      SBE Enclosure 3 (Letters of Intent to Perform as a SBE
+                                  Subcontractor);
+                        iii.      SBE Enclosure 4 – (Bidders List Information (Information Regarding
+                                  Subcontractors Seeking to Work);
+                        iv.       SBE Enclosure 5 (Employer Certification of Workforce);
+                         v.       SBE Enclosure 6 (Small Business Outreach); and
+
+                               d. Once each SBE have been identified and selected, Contractor will
+                                  update Enclosure 2A (Schedule of SBE Participation), and provide
+                                  Enclosure 3 (Letter of Intent to Perform as SBE Subcontractor) for
+                                  each SBE added to the updated Enclosure 2A. Contractor will
+                                  submit to RTD an update Enclosure 2A each time a SBE is added,
+                                  to satisfy SBE participation committed on Enclosure 2B (Open-
+                                  Ended Performance Plan), along with an Enclosure 3 (Letter of
+                                  Intent to Perform as SBE Subcontractor).
+
+                               e. For the "construction phase", Contractor will be conditioned on
+                                  meeting the requirements of section 49 CFR Part 26.53 and
+                                  Appendix A of 49 CFR Part 26 which shall serve as the criteria for
+                                  evaluating compliance with the good faith efforts requirements.
+                                  Contractor will provide updates on the OEPP on monthly basis and
+                                  perform and/or adjust the proposed schedule, as long as the
+                                  Contractor continues to use good faith efforts to meet the goal.
+
+                  (iii) The bidder/proposer must submit a SBE Plan as described in Section 3 Part
+                        E of these SBE Contract Requirements explaining how the bidder/proposer
+                        intends to fulfill their SBE requirements and commitments throughout the
+                        duration of the Contract. Areas that need to be included in the SBE Plan
+                        include, but are not limited to: mechanisms to comply with prompt
+                        payment provisions, release of retainage, outreach efforts, outreach
+                        efforts, reporting, among other SBE requirements.
+
+                  (iv) The successful Contractor/consultant is expected to make good faith
+
+                                                                                        Page 18 of 49
+Civil Rights Version 10.0 November 13, 2025
+                       efforts to engage and utilize SBEs on an ongoing basis throughout the
+                       duration of the Contract. It should be noted that each time a Contractor
+                       adds a SBE to the project, the RTD SBO must review the SBE’s certification
+                       with RTD SBE database to ensure that the NAICS code/s coincides with the
+                       scope of work that the SBE is expected to perform on the project. The SBE
+                       utilization/good faith efforts will be reviewed to determine if they are in
+                       compliance with 49 CFR Part 26 as well as the terms of these SBE Contract
+                       Requirements. Additionally, the successful Contractor/consultant is
+                       required to make good faith efforts to fulfill their initial commitment to
+                       SBE/s participation/utilization throughout the entire Contract duration, as
+                       well to comply with the SBE Open-Ended Performance Plan, applicable for
+                       the “construction phase”.
+
+        C.      OTHER MULTI-YEAR SBE AND ALTERNATIVE METHODS SBE (CMGC, CM AT
+                RISK, ETC.) PROJECT REQUIREMENTS
+
+        In other multi-year procurement with base contract scope and base contract value as well
+        as optional scope of work and optional additional years of performance, the
+        Bidder/Proposer must make the good faith efforts to meet or exceed the specified project
+        SBE Goal at the time of bid or proposal submission. To be considered a responsive
+        bidder/proposer, when a SBE Goal is specified for these types of multi-year projects, a
+        bidder/proposer must meet the goal referred to in the bid specification by committing to
+        meet the SBE Goal for the base contract value and the base scope of work, specifically
+        identifying certified SBE firms that will be performing services or providing supplies within
+        the allotted defined base contract and submit the SBE Contract Requirements enclosures
+        or document its good faith efforts to attain the goal.
+
+        The bidder/proposer is also expected to submit a SBE Plan as described in Section 3 Part
+        E of these SBE Contract Requirements explaining how the bidder/proposer intends to fulfill
+        their SBE requirements and commitments if the optional year/s and optional scopes of
+        work are exercised/awarded in the future. The SBE Plan will be evaluated and may be
+        accepted or required to be modified/updated to include critical missing components.
+
+        The successful Contractor/consultant is expected to make good faith efforts to engage
+        and utilize SBEs for optional renewal years, prior to any of the optional year/s and optional
+        scopes of work being exercised/awarded. The Contractor must also revise and submit to
+        RTD’s SBO, updated Enclosure 2A and Enclosure 3A with each optional year/s and each
+        optional scopes of work that are exercised, prior to the start of any option year/s. Also, it
+        should be noted that each time a Contractor adds a SBE to the project, the RTD SBO must
+        review the SBE’s certification to ensure that the NAICS code/s coincide/s with the scope
+        of work that the SBE is expected to perform on the project. Additionally, the SBE
+        utilization/good faith efforts will be reviewed each time an optional year/s is exercised and
+        each time optional scopes of work are awarded to determine if they are in compliance
+        with 49CFR Part 26 as well as the terms of these SBE Contract Requirements. The
+        successful Contractor/consultant is required to make good faith efforts to fulfill their initial
+        commitment to SBE/s participation/utilization throughout the entire Contract duration.
+
+
+
+                                                                                         Page 19 of 49
+Civil Rights Version 10.0 November 13, 2025
+        D.      TASK ORDER OR ON-CALL SBE CONTRACT REQUIREMENTS
+
+        In task order or on-call procurements, the bidder/proposer must make the good faith
+        efforts to meet or exceed the specified project SBE goal at the time of bid or proposal
+        submission. To be considered a responsive bidder/proposer, when a SBE goal is specified
+        for a task order or on-call project, a bidder/proposer is required to make the good faith
+        efforts to meet the SBE goal identified in the bid solicitation by committing to meet the
+        SBE participation goal for the project and identifying some of the certified SBE firms that
+        will be performing services or providing supplies for the initial projects that were identified
+        in the RFP/IFB or documenting good faith efforts to attain the goal as referenced in section
+        3 of this document under ‘general requirements – SBE goals and good faith efforts’. 49
+        CFR part 26.53 and Appendix A of 49 CFR part 26 shall serve as the criteria for evaluating
+        compliance with the good faith efforts requirements. The documentation evidencing good
+        faith efforts shall be submitted with the bid/proposal.
+
+        The bidder/proposer should only specify the scope of work that the SBE/s will perform in
+        the project if RTD has determined and confirmed those specific initial tasks or projects will
+        be awarded. Otherwise, if RTD cannot confirm that a particular task or project will be
+        awarded, then the bidder/proposer should indicate ‘to be determined/TBD’ under the
+        scope of work that the SBE/s will perform. The bidder/proposer should never specify dollar
+        values or make commitments to utilize SBEs for a specific contractual amount on a task
+        order or on-call projects as it is not known at the time of the bid/proposal by RTD which
+        tasks or projects will be awarded and what values will be associated with those tasks.
+        Therefore, the bidder/proposer should indicate ‘to be determined/TBD’ under the agreed
+        price to be paid to the SBE/s.
+
+        The bidder/proposer is required to submit a SBE Program Plan explaining how they will do
+        outreach and engage SBEs, specific to each individual task, and describe how they intend
+        to fulfill their SBE commitments throughout the life of the task order/on-call contract.
+        Section 3 Part E of this SBE Contract Requirements shall serve as a guide of what a SBE
+        Plan should include. Please note that your answers to specific questions related to the SBE
+        Program Plan will be evaluated. The bidder/proposer must explain how they intend to fulfill
+        their SBE requirements and commitments if any tasks are exercised/awarded in the future.
+
+        The successful contractor/consultant is expected to make good faith efforts to engage and
+        utilize SBEs if any of the tasks are exercised/awarded. They will also be expected to revise
+        and submit updated Enclosures 2A and Enclosures 3A if SBEs are added to the project or
+        if additional scope of work are assigned to the original SBEs on the project. All good faith
+        efforts documentations for each task order must be submitted to RTD and will be reviewed
+        on each task awarded to determine if they are in compliance with 49 CFR Part 26 and
+        terms of this SBE Contract Requirements. Additionally, the Contractor/consultant is
+        required to make good faith efforts to fulfill their initial commitment to SBE/s
+        participation/utilization throughout the entire Contract duration.
+
+        E.      SBE PLAN
+        The SBE Plan is the Proposer’s written approach and strategy to the overall administration
+        of their SBE commitment on this project (including the expectations of the lower tier SBE
+
+                                                                                        Page 20 of 49
+Civil Rights Version 10.0 November 13, 2025
+        Subcontractors). Proposers will be required on all turnkey, Multi-Year Design/Build
+        projects, other multi-year /Alternative Delivery Method projects, On-Call or Task-Order
+        Contracts as well as other specified projects to submit a comprehensive detailed SBE Plan
+        with their proposal. For design/build contracts, Contractor will also be required to explain
+        how its SBE Open-Ended Performance Plan (OEPP) will be updated and submitted to
+        comply with the monthly update’s requirement. SBE Plan is subject to the RTD’s SBO’s
+        approval and must comply with several provisions as defined under 49 CFR Part 26
+        requirements. The SBE Plan must minimally incorporate the first two years of the Contract
+        and will be required to cover each phase (i.e. design and construction phases, base
+        contract) of the project.
+        If the Proposer is selected, upon NTP the successful Contractor/Consultant will be required
+        to formalize and use as basis the proposed SBE plan submitted with their RFP to implement
+        their official Contractor SBE Plan & Program. The SBE Plan & Program must be reviewed
+        and approved by the RTD SBO. Thereafter, the Contractor/consultant is required to
+        prepare and submit to the SBO an updated SBE Plan & Program, on an annual basis
+        throughout the project duration.
+        As it relates to the Proposer/Contractor, the SBE Plan & Program should be innovative and
+        comprehensive and include the following program fundamentals listed below. It should
+        be noted that the following is not an exhausted list as creativity, diversity and originality
+        may cause change within the plan.
+        i)      Submitting their overall subcontracting process and program including how they
+                will communicate and coordinate the scheduling with the SBEs;
+        ii)     Describing how SBE participation will be solicited and incorporated into the
+                Proposer’s overall procurement process;
+        iii)    Describing the SBE project goal and the Proposer’s SBE commitment/utilization;
+        iv)     Promoting a level playing field and non-discrimination, by providing an open and
+                transparent process;
+        v)      Identifying how the SBE Liaison Officer will be incorporated into the procurement
+                process;
+        vi)     Incorporating mandatory federal non-discrimination clauses into each subcontract
+                regardless of the tier (Must include the entire clauses included in Part A of these SBE
+                Contract Requirements and cannot simply be a reference to another document);
+        vii)    Describing a positive approach to business initiatives, support services, bonding
+                assistance, mentoring programs, joint ventures, etc.;
+        viii)   Defining Good Faith Efforts requirements and evaluation criteria for post award solicitation
+                process;
+        ix)     Identifying the SBE Plan Annual Update Process, as well SBE OEPP monthly updates
+                submission plan (when applicable);
+        x)      Describing the debriefing process, how bid selections are made and keeping record
+                of each;
+        xi)     Describing Contract’s proactive prompt payment and release of retainage
+                provisions and ensure compliance with RTD requirements regardless of tier;
+        xii)    Describing compliance with the removal, replacement, substitution and termination
+                of SBEs as it relates to SBE regulations defined under 49 CFR Part
+                26.53 (f) and the commitment to not include termination for convenience clauses
+                in any subcontract agreements, regardless of the tier, as this is inconsistent with
+
+
+                                                                                        Page 21 of 49
+Civil Rights Version 10.0 November 13, 2025
+                the DBE federal regulations;
+        xiii)   Ensuring that the SBE Plan is Signed and dated by the Prime contractor; and
+        xiv)    Describing the monthly reporting relationship with RTD’s SBO and compliance with
+                overall reporting requirements.
+
+        F.      CONTRACTOR’S/CONSULTANT’S   SBE   LIAISON  OFFICER/COMPLIANCE
+                OFFICER/DIVERSITY MANAGER/COMPLIANCE MANAGER, ETC.
+
+        On a Multi-year project such as Design Build projects and other larger projects, RTD will
+        require in the RFP that a Contractor designate a SBE Liaison. In lower value or shorter
+        duration contracts, the SBE Liaison responsibilities may be a collateral responsibility. The
+        SBE Liaison shall be responsible for the following:
+        i)      Day-to-day operational components of the SBE Program;
+        ii)     Effectively responding to and reporting to the RTD SBO on the status of any SBE
+                contractor/supplier;
+        iii)    Submitting executed SBE subcontracts/purchase orders and any subsequent
+                material amendments thereto to the SBO within thirty (30) days of the
+                Subcontractor Agreement Execution (however, no SBE shall commence any work
+                or provide any material/supply without an executed subcontract/purchase order);
+        iv)     Submitting a written monthly report detailing the activities and documentation of
+                good faith efforts of the previous month;
+
+        v)      Interfacing with the RTD SBO regarding SBEs’ issues and obtaining approvals for
+                all SBE replacements, substitutions or terminations;
+        vi)     Preparing, completing and submitting all required compliance documentation,
+                inclusive of subcontract agreements, schedule of participation enclosure, monthly
+                payment entries in RTD’s Diversity and Compliance solution, B2GNow, as well as
+                submitting any SBE Participation Reports;
+        vii)    Ensuring that all SBE subcontracts regardless of tier include flow-down provisions
+                as described in the SBE Contract Requirements which contains non-discrimination
+                clause, prompt payment provisions, termination / substitution / replacement /
+                reduction of scope, changes, etc.;
+        viii)   Carrying out or implementing technical assistance activities;
+        ix)     Implementing, managing and reporting on achievement of the SBE
+                Goal/commitment, communicating subcontracting, business development and
+                supportive services activity at all tiers, ensuring compliance with the non-
+                discrimination provisions and the affirmative action and equal employment
+                opportunity provisions;
+        x)      Monitoring lower tier subcontractors and suppliers to ensure that they comply with
+                the SBE Program requirements and the SBE Plan submitted by the prime
+                contractor; and
+        xi)     Scheduling monthly meetings between the Contractor and the RTD SBO to provide
+                status updates and address goal attainment, issues or concerns.
+
+
+                                                                                      Page 22 of 49
+Civil Rights Version 10.0 November 13, 2025
+        G.        COUNTING SBE PARTICIPATION
+        The SBE participation goal applies to the total value of all work performed under the
+        Contract which includes the value of all change orders, amendments and modifications.
+        Any partial waiver determination will be made at or near the conclusion of the Contract
+        when the totality of the circumstances can be taken into consideration and the Contractor’s
+        efforts can be objectively evaluated. To count SBE participation toward the goal
+        established for the Contract, the proposed SBE(s) must be certified as a SBE with RTD
+        under the appropriate NAICS code(s) that coincides with the scope of work that they will
+        execute on the project/contract. Additionally, the SBE firm must be certified as a SBE and
+        will be subject to a “commercially useful function” performed by SBO as defined in this
+        SBE Contract Requirements. SBE certification does not, however, constitute a
+        representation or warranty by RTD as to the qualification of any listed firm. In accordance
+        with DBE federal regulations as defined under 49 CFR Part 26, RTD will require the total
+        SBE participation commitment to be achieved in accordance with the following:
+
+        i)        SBE proposers can count themselves for self-performance toward meeting the SBE
+                  goal, but only for the scope of work that they are certified in as a SBE and at a
+                  percentage level they will be actually performing themselves with their own forces;
+        ii)       Work performed by SBEs is deemed to include the cost of materials and supplies
+                  purchased and equipment leased by the SBE/s from non-SBE sources. Work
+                  subcontracted can only count if the subcontractor is another SBE;
+        iii)      The entire fee or commission charged by a SBE, if reasonable and not excessive,
+                  will be counted;
+        iv)       Each SBE within a project is subject to a "commercially useful function" in order for their
+                  work or supplies to be counted toward the goal and at least 30% of the work must
+                  be performed by a SBE of the total cost of its contract for the SBE to be presumed
+                  to be performing a "commercially useful function”;
+        v) Use the following factors in determining whether a SBE trucking company is
+           performing a commercially useful function:
+
+               (1) The SBE must be responsible for the management and supervision of the entire
+               trucking operation for which it is responsible on a particular contract, and there cannot
+               be a contrived arrangement for the purpose of meeting SBE goals.
+
+               (2) The SBE must itself own and operate at least one fully licensed, insured, and
+               operational truck used on the Contract.
+
+               (3) The SBE receives credit for the total value of the transportation services it provides
+               on the Contract using trucks it owns, insures, and operates using drivers it employs.
+
+               (4) The SBE may lease trucks from another SBE firm, including an owner-operator
+               who is certified as a SBE. The SBE who leases trucks from another SBE receives credit
+               for the total value of the transportation services the lessee SBE provides on the
+               Contract.
+
+
+                                                                                             Page 23 of 49
+Civil Rights Version 10.0 November 13, 2025
+            (5) The SBE may also lease trucks from a non-SBE firm, including from an owner-
+            operator. The SBE that leases trucks equipped with drivers from a non-SBE is entitled
+            to credit for the total value of transportation services provided by non-SBE leased
+            trucks equipped with drivers not to exceed the value of transportation services on the
+            Contract provided by SBE-owned trucks or leased trucks with SBE employee drivers.
+        vi) Count expenditures with SBEs for materials or supplies toward SBE goals as provided
+            in the following:
+
+           (1) If the materials or supplies are obtained from a SBE manufacturer, count 100
+               percent of the cost of the materials or supplies.
+
+              (A) For purposes of this paragraph (c)(1), a manufacturer is a firm that owns (or
+                  leases) and operates a factory or establishment that produces, on the premises,
+                  the materials, supplies, articles, or equipment required under the Contract and
+                  of the general character described by the specifications. Manufacturing includes
+                  blending or modifying raw materials or assembling components to create the
+                  product to meet contract specifications. When a SBE makes minor modifications
+                  to the materials, supplies, articles, or equipment, the SBE is not a
+                  manufacturer. Minor modifications are additional changes to a manufactured
+                  product that are small in scope and add minimal value to the final product.
+
+           (2) For materials and supplies supplied by a regular dealer or a distributor, as those
+               terms are defined below:
+
+             (A) If the materials or supplies are purchased from a SBE regular dealer, which is
+               consistent with the DBE Regulation §26.55(e)(2)(iv)(A), (B), and (C), count 60
+               percent of the cost of the materials or supplies (including transportation costs).
+
+              (i) For purposes of this section, a regular dealer is a firm that owns (or leases) and-
+              operates, a store, warehouse, or other establishment in which the materials,
+              supplies, articles or equipment of the general character described by the
+              specifications and required under the contract are bought, kept in sufficient
+              quantities, and regularly sold or leased to the public in the usual course of business.
+
+              (ii)Items kept and regularly sold by the SBE are of the “general character” when
+              they share the same material characteristics and application as the items specified
+              by the Contract.
+
+              (ii)SBE regular dealers, per paragraph (c)(2)(iv)(A) of this section, must operate
+              over a reasonable period of time, keeps sufficient quantities, and regularly sells the
+              items in question. Regular dealer of bulk items per (c)(2)(iv)(B) of this section must
+              own/lease and operates distribution equipment for the products it sells.
+
+                      (a) To be a regular dealer, the firm must be an established business that
+                engages, as its principal business and under its own name, in the purchase and
+                sale or lease of the products in question. A SBE supplier performs a CUF as a
+                regular dealer and receives credit for 60 percent of the cost of materials or
+                supplies (including transportation cost) when all, or at least 51 percent of, the
+
+
+                                                                                        Page 24 of 49
+Civil Rights Version 10.0 November 13, 2025
+                items under a purchase order or subcontract are provided from the SBE's
+                inventory, and when necessary, any minor quantities delivered from and by other
+                sources are of the general character as those provided from the SBE's inventory.
+
+                       (b) A SBE may be a regular dealer in such bulk items as petroleum products,
+                steel, concrete or concrete products, gravel, stone, or asphalt without owning,
+                operating, or maintaining a place of business as provided in paragraph (c)(2)(ii)
+                of this section if the firm both owns and operates distribution equipment used to
+                deliver the products. Any supplementing of regular dealers' own distribution
+                equipment must be by a long-term operating lease and not on an ad hoc or
+                contract-by-contract basis.
+
+                      (c) A SBE supplier of items that are not typically stocked due to their unique
+                characteristics (e.g., limited shelf life or items ordered to specification) should be
+                considered in the same manner as a regular dealer of bulk items per paragraph
+                (c)(2)(iv)(B) of this section. If the SBE supplier of these items does not own or
+                lease distribution equipment, as descried above, it is not a regular dealer.
+
+                     (d) Packagers, brokers, manufacturers' representatives, or other persons
+                who arrange, facilitate, or expedite transactions are not regular dealers within
+                the meaning of paragraph (c)(2) of this section.
+
+           (B) If the materials or supplies are purchased from a SBE distributor, which is
+               consistent with the DBE Regulation §26.55(e)(3), that neither maintains sufficient
+               inventory nor uses its own distribution equipment for the products in question,
+               count 40 percent of the cost of materials or supplies (including transportation
+               costs).
+
+               (i) A SBE distributor is an established business that engages in the regular sale or
+               lease of the items specified by the Contract. A SBE distributor assumes
+               responsibility for the items it purchases once they leave the point of origin (e.g.,
+               a manufacturer's facility), making it liable for any loss or damage not covered by
+               the carrier's insurance. A SBE distributor performs a CUF when it demonstrates
+               ownership of the items in question and assumes all risk for loss or damage during
+               transportation, evidenced by the terms of the purchase order or a bill of lading
+               (BOL) from a third party, indicating Free on Board (FOB) at the point of origin or
+               similar terms that transfer responsibility of the items in question to the SBE
+               distributor. If these conditions are met, SBE distributors may receive 40 percent
+               for drop-shipped items. Terms that transfer liability to the distributor at the
+               delivery destination (e.g., FOB destination), or deliveries made or arranged by the
+               manufacturer or another seller do not satisfy this requirement.
+
+           (C) With respect to materials or supplies purchased from a SBE that is neither a
+               manufacturer, a regular dealer, nor a distributor, count the entire amount of fees
+               or commissions charged that you deem to be reasonable, including transportation
+               charges for the delivery of materials or supplies. Do not count any portion of the
+               cost of the materials and supplies themselves.
+
+         vii) RTD will determine the amount of credit awarded to a firm for the provisions of
+              materials and supplies (e.g., whether a firm is acting as a regular dealer,
+
+
+                                                                                        Page 25 of 49
+Civil Rights Version 10.0 November 13, 2025
+               distributor, or a transaction facilitator) on a contract-by-contract basis.
+
+          viii) RTD will not count the participation of a SBE subcontractor toward a Contractor's
+                final compliance with its SBE obligations on a contract until the amount being
+                counted has actually been paid to the SBE.
+
+
+        H.      JOINT VENTURES
+        i)      A Joint Venture is an association of a SBE firm and one or more other firms to carry
+                out a single, for-profit business enterprise, for which the parties combine their
+                property, capital, efforts, skills and knowledge, and in which the SBE is responsible
+                for a distinct, clearly defined portion of the work of the Contract and whose share
+                in the capital contribution, control, management, risks, and profits of the joint
+                venture are commensurate with its ownership interest.
+        ii)     RTD will count toward its SBE goal a portion of the total dollar value of a contract
+                with a joint venture equal to the distinct, clearly defined portion of the work of the
+                Contract that the SBE performs with its own forces toward the SBE goal(s) and
+                such services/supplies/NAICS codes are approved for SBE participation credit. The
+                joint venture agreement MUST specify the services, dollar value, reporting
+                structure and details of the SBEs’ performance requirements associated with the
+                percentage of the joint venture ownership.
+
+4.      FLOW-DOWN PROVISIONS
+        While no subcontractor will be considered a third-party beneficiary to the
+        Contract between RTD and the prime Contractor, RTD considers all
+        subcontractors of every tier to be agents of the Contractor. Therefore, every
+        contractor of every tier will be held to all the requirements of the Contract.
+        With that understanding, the Contractor is well advised to conform all
+        subcontracts to the terms and conditions found in the RTD Contract. Also, it
+        would be wise to make the RTD Contract available to all subcontractors
+        wanting to review it. At the very least, the Contractor must include the
+        following provisions in their subcontract agreements with their SBE
+        subcontractors as well as ensure that all tiered-subcontractors comply with
+        this Section and insert the provisions of Part A - the Non-discrimination clause,
+        Sections 5., Prompt Payment provisions; 6., Joint Check Utilization; 7., SBE
+        Removal/Termination/Substitution/Reduction of Scope provisions; and 8.,
+        Changes.
+
+        The Contractor will be required to submit to the RTD Small Business Opportunity Office all
+        SBE subcontracts/purchase orders within 30 days of the execution of its contract with RTD
+        or issuance of the notice to proceed (whichever occurs first). Throughout any contract or
+        after the award of any RTD contract, including the Contract, if the Contractor makes good
+        faith efforts and engages or subcontracts with additional SBEs, the Contractor must get
+        approval from RTD if the Contractor intends to count SBE participation from those
+        additional SBEs. To count SBE participation toward the goal established for the Contract
+        or commitments made by the Contractor for SBE utilization, the RTD SBO must ensure
+        that those additional SBEs are properly certified as a SBE(s) with the RTD SBO under the
+
+
+
+                                                                                        Page 26 of 49
+Civil Rights Version 10.0 November 13, 2025
+        appropriate NAICS code that coincides with the scope of work that they will execute on
+        the project/contract. Notwithstanding, RTD SBO shall also request any appropriate
+        documents it deems necessary including subcontract agreements for review. The
+        Contractor shall ensure that this information flows down to all tier contractors that intends
+        to subcontract or subcontracts with SBEs.
+
+5.      PROMPT PAYMENT OF SBE SUBCONTRACTORS
+        The Contractor agrees that:
+
+        i) It shall pay its SBE subcontractor(s) any undisputed amounts for the satisfactory
+        performance of their work within 30 days of the Contractor’s receipt of the subcontractor’s
+        invoice, regardless of whether RTD has paid the Contractor for such invoice;
+
+        ii) Its approval of SBE subcontractor invoices shall not be unreasonably delayed, and it shall
+        approve or reject them with written notice of deficiency or dispute to the payee SBE
+        subcontractor within ten days of the Contractor’s receipt of invoice;
+
+        iii) Within 30 days after a SBE subcontractor’s work has been satisfactorily completed and
+        accepted by the Contractor or by RTD’s Project Manager, whichever is earlier, the Contractor
+        shall make full payment to the subcontractor of any retainage the Contractor has kept related
+        to such work, unless a claim is filed against the subcontractor related to such work. In the
+        case of a dispute regarding satisfactory completion between a Contractor and its
+        subcontractor, within the first ten (10) days after work has been completed, the Contractor
+        must notify RTD in writing of the dispute; RTD, in its sole discretion, shall review the dispute
+        submitted and make a final determination with respect to whether the work was satisfactorily
+        completed.
+
+        iv) Failure to comply with the above may give RTD just cause to impose one or more of the
+        following penalties, until the required payment(s) to the Contractor’s SBE subcontractor(s)
+        is satisfied, unless RTD has given prior written approval to the Contractor for the delay or
+        postponement of payment(s): (1) withhold payments to the Contractor; (2) assess sanctions
+        against the Contractor; (3) assess the SBE subcontractor’s indirect or consequential
+        damages against the Contractor; (4) disqualify the Contractor from future bidding on RTD
+        contracts as non-responsible; (5) enforce the payment bond against the Contractor; (6) pay
+        the SBE subcontractor(s) directly and deduct this amount from any retainage owed to the
+        Contractor; (7) provide notice of default to the Contractor, stating the potential for
+        termination or suspension of the Contract, in whole or in part; (8) issue a stop-work order
+        until the SBE subcontractor(s) is paid, which order shall constitute an unauthorized delay
+        under the Contract that could result in liquidated damages against the Contractor. Unless
+        approved by RTD, the Contractor’s failure to comply with this Section is a material breach
+        of the Contract;
+
+        v) It shall ensure that tiered subcontractors comply with this Section and that they insert
+        provisions (i), (ii), and (iii) of this Section into all lower-tiered subcontractor agreements
+        with SBE firms; and
+
+        vi) On a monthly basis, it shall submit a report of its payments to its SBE subcontractors
+        using RTD’s Diversity and Compliance solution, B2GNow. The Contractor shall ensure that
+
+
+                                                                                       Page 27 of 49
+Civil Rights Version 10.0 November 13, 2025
+        its SBE subcontractors at every tier also report monthly payments made or received through
+        B2GNow. All payments made will be entered in B2GNow by or before the 5th of every month.
+        If Contractor has issues accessing B2GNow, Contractor must immediately request support
+        from the B2GNow support line, and notify by email the RTD SBO’s designated Compliance
+        Officer/Specialist for the contract. RTD’s Diversity and Compliance Solution (B2GNow) can
+        be accessed through this link https://rtd-denver.gob2g.com/
+
+6.      JOINT CHECK UTILIZATION
+        A joint check is a two-party check between an SBE, a prime contractor and a regular dealer
+        of materials/supplies. All joint check arrangements with SBE subs must be pre-approved
+        by the RTD SBO and must strictly adhere to the joint check requirements set forth in
+        USDOT guidance regarding same. At a minimum, the request must be initiated by the
+        SBE to remedy a financial hardship for a specific period. There are monthly reporting
+        requirements that must be complied with to receive SBE participation credit. The SBO will
+        closely monitor the use of joint checks to ensure that the independence of the SBE firm is
+        not compromised. Joint check usage will not be approved merely for the convenience of
+        the prime contractor. Please note, if Joint Checks are applicable, monthly reporting as
+        defined by the RTD SBO will also be required.
+
+7.      SBE REMOVAL/TERMINATION/SUBSTITUTION/REDUCTION OF SCOPE FROM
+        CONTRACT
+        A Contractor must have good cause to remove/terminate/substitute/replace a SBE
+        contractor and such removal/termination/substitution requires the consent and approval
+        of RTD’s SBO. This section also includes reductions to the SBEs scope of services and/or
+        commitment values. No SBE subcontract agreement may contain a “termination for
+        convenience” clause/provision because any termination for convenience provision/clause
+        is contrary to the objectives of this part and the objectives of the DBE Program
+        requirements as defined under 49 CFR Part 26. To initiate the termination, substitution,
+        removal or replacement process with a SBE contractor/supplier (regardless of the tier),
+        the Contractor or lower tier contractor/subcontractor must do the following:
+        i)      Before transmitting to RTD’s SBO its request to terminate and/or substitute a SBE
+                contractor, the Contractor must give notice in writing to the SBE contractor and
+                RTD SBO. The notice must include its request to terminate and/or substitute,
+                replace and/or remove the SBE, the reason for the request and all documentation
+                to support its claim. The Contractor must submit a copy of the notice and support
+                documentation to RTD’s SBO at the time the original letter is sent to the SBE
+                contractor.
+        ii)     The Contractor must give the SBE contractor five (5) business days to respond to
+                the notice and provide the SBO with reasons, if any, why it objects to the proposed
+                termination of its SBE contract and why the SBO should not consent the
+                Contractor’s action.
+        iii)    RTD’s SBO will then open a formal investigation inclusive of review of all
+                documentation, conduct interviews and site visits, if necessary. The Contractor
+                carries the burden of proof to demonstrate good cause for the termination and/or
+                substitution.
+
+
+                                                                                     Page 28 of 49
+Civil Rights Version 10.0 November 13, 2025
+        iv)     If RTD’s SBO determines the Contractor has good cause to terminate the SBE firm,
+                the SBO will provide written consent of SBE removal and the requirements to
+                substitute work to another SBE firm. If RTD’s SBO finds that good cause does not
+                exist to terminate the SBE firm, the SBO will provide a written denial of the request
+                to terminate/replace the SBE contractor and will immediately request a corrective
+                action plan from the Contractor. Please note that if a contractor elects to terminate,
+                substitute and or reduce the scope of work initially committed to a SBE without
+                the approval or consent of the RTD SBO, this constitutes a material breach of a
+                contract as set forth in the DBE Regulation as defined under 49 C.F.R. §26.13. This
+                legal remedy may include but is not limited to withholding monthly progress
+                payments, assessing sanctions, liquidated damages, and/or disqualifying the
+                Contractor from future bidding as non-responsible.
+        v)      For purposes of good cause to remove, replace or terminate a SBE the following
+                circumstances should exist: (1) failure or refusal by the SBE subcontractor to
+                execute a written contract without good cause, (2) failure or refusal by the SBE
+                subcontractor to perform the work of its subcontract in a way consistent with
+                normal industry practice and the Contractor has not acted in bad faith, (3) failure
+                by the SBE subcontractor to meet the Contractor’s reasonable bonding or insurance
+                requirements, (4) insolvency, bankruptcy or credit unworthiness by the SBE
+                subcontractor that creates a risk for the Contract, (5) ineligibility by the SBE
+                subcontractor to work on public works project because of suspension or debarment
+                proceedings, (6) a determination by RTD that the SBE is not a responsible
+                contractor, (7) voluntary withdrawal from the project by written notification that
+                has been verified, (8) ineligibility to receive SBE participation credit for the type of
+                work to be performed, (9) other documented good cause that compels the
+                replacement of the SBE.
+        vi)     When a SBE subcontractor is terminated with the approval of RTD SBO or fails to
+                complete its work on the Contract for any reason, prime contractors are required
+                to make good faith efforts to find another SBE subcontractor to substitute for the
+                original SBE.
+        vii)    Prime contractors must show that it took all necessary and reasonable steps to
+                find another SBE to perform at least the same amount of work under the Contract
+                as the SBE that was terminated, to the extent needed to meet the Contract goal
+                RTD SBO has established for this project. The DBE regulations as defined under
+                49 CFR Part 26.53 shall serve as the criteria for evaluating compliance with the
+                good faith efforts requirements. Additionally, bidders/proposers are required to
+                solicit the support and assistance of RTD’s SBO if they are unable to meet the SBE
+                participation goal assigned to the Contract.
+        viii)   The good faith efforts shall be documented by the Contractor. If RTD SBO requests
+                documentation under this provision, the Contractor shall submit the documentation
+                to RTD SBO Compliance Officer/Specialist within 7 days, which may be extended
+                for an additional 7 days if necessary, at the request of the Contractor, and RTD
+                SBO shall provide a written determination to the Contractor stating whether good
+                faith efforts have been demonstrated.
+        ix)     Prime contractors are required to comply with Good Faith Efforts procedures as
+                defined in the DBE regulation under 49 CFR Part 26.53 and detailed under this SBE
+
+                                                                                         Page 29 of 49
+Civil Rights Version 10.0 November 13, 2025
+                Program Requirements. Prime contractors are required to comply with this section
+                of the SBE requirements or any SBE program requirements and failure by the
+                Contractor to carry out the requirements of this part as they administer the
+                Contract is a material breach of contract, which may result in the termination of
+                the Contract or such other remedy as RTD deems necessary as set forth in the BE
+                regulations under 49 C.F.R. §26.13. The legal remedies include but is not limited
+                to: withholding monthly progress payments, assessing sanctions, liquidated
+                damages, and/or disqualifying the Contractor from future bidding as non-
+                responsible.
+        The Contractor shall ensure that SBE tiered subcontractors comply with this Section and
+        insert the provisions of this Section into all SBE lower tiered subcontractor agreements,
+        regardless of their certification status.
+
+8.      CHANGES
+        i)      The SBE participation goal shall apply to the performance/dollar value of all
+                obligations under the Contract, including any Changes, Modifications, Amendments
+                and Change Orders whether initiated by the Contractor or RTD. Post award
+                requests for partial waivers may be considered by RTD’s SBO, but a final
+                determination shall not be rendered until the contract has been substantially
+                completed and the Contractor demonstrates lack of ability to satisfy the SBE
+                participation goal.
+        ii)     Changes to the value or scope of work committed to a SBE must be pre-approved
+                by the RTD SBO and must be for good cause as set forth in the termination,
+                substitution, replacement provisions set forth in this SBE Contract Requirements.
+
+9.      REQUIREMENTS OF SBE CONTRACT REQUIREMENTS ENCLOSURES
+The Contractor must complete and return all applicable Enclosures in the forms set out in this SBE
+Contract Requirements with bid/proposal. All enclosures must also be submitted with the
+bid/proposal.
+        i)      The Enclosure 2A, Schedule of SBE Participation must be submitted with the initial
+                bid/proposal. Subsequent to the award of the contract, the prime contractor will
+                be responsible for revising the initial Schedule of SBE Participation any time a new
+                SBE is added to the project. The prime Contractor must also submit a copy of the
+                SBE certification letter to RTD SBO with any new SBE(s) added to the project. RTD
+                will only accept and approve new SBE(s) that are currently certified with RTD under
+                the NAICS code(s) that coincides with the scope of work that they will execute in
+                this project.
+        ii)     The Enclosure 3, SBE Letter of Intent (LOI) must be submitted with the initial
+                bid/proposal. Subsequent to the award of the Contract, the prime contractor will
+                also be responsible for submitting to RTD SBO individual SBE Letters of Intent for
+                each new SBE that is added to the project after the award of the Contract.
+        iii)    The Contractor completing the SBE Contract Requirements Enclosures is advised
+                to contact the RTD’s SBO main office at (303) 299-2111 if they have any questions
+                or concerns prior to submitting bid/proposal documentation, unless otherwise
+                specified in the bid/proposal that all questions must be submitted through RTD
+
+                                                                                      Page 30 of 49
+Civil Rights Version 10.0 November 13, 2025
+                designated Procurement Officer. Additional SBE Contract Requirements
+                documentation will not be accepted after the Contractor submits their bid/proposal
+                to RTD, unless otherwise stated in the bid or proposal.
+        As a condition of the award, the Contractor must use those SBEs listed to
+        perform the specific work items or supply the materials as committed in the
+        Enclosure 2A Schedule of SBE Participation and Enclosure 3 SBE Letter(s) of
+        Intent (LOI) and the Contractor is not entitled to any payment for work or
+        materials performed by its own or any other forces if the work or supplies were
+        committed to a SBE, unless it receives prior written consent by RTD Small
+        Business Opportunity Office for a replacement of the SBE for good cause.
+        Failure to submit all required SBE Enclosures may result in your bid or proposal
+        being deemed non-responsive. Failure to submit all completed Enclosures
+        within the SBE Contract Requirements may result in your proposal being
+        deemed non-responsive. Modification of any SBE Contract Requirements
+        Enclosures prior to the official award of the Contract will result in your proposal
+        being deemed non-responsive. Inconsistencies within the following
+        Enclosures: Enclosure 1A, Enclosure 1B, Enclosure 2A and Enclosure 3A may
+        also result in your proposal being deemed non-responsive. All Enclosures must
+        be submitted with the bid/proposal. Modification of any SBE Enclosure
+        documentation after the bid due date without prior approval or consent from
+        the RTD SBO may result in your bid/proposal being deemed non-responsive.
+        Periodically, after award of the Contract, RTD’s SBO in conjunction with the
+        Contractor may determine that an enclosure is more beneficial with
+        modifications or that an additional enclosure is necessary to more effectively
+        report the status of SBE participation or performance and resolution of SBE
+        concerns/issues. RTD has the right to ask for a modification. Such a revised
+        enclosure shall be incorporated into the Contract as an additional requirement.
+
+10.     REPORTING, AUDITS, REVIEWS AND ORIENTATION REQUIREMENTS
+        i)      The Contractor(s) are required to submit a report to RTD SBO on a monthly basis,
+                on a form designated as the SBE Participation Report. The Contractor shall submit
+                each completed SBE Participation Report to RTD’s SBO.
+        ii)     The Contractor acknowledges that the RTD SBO has the right to independently
+                confirm the information contained in the submitted SBE Participation Reports by
+                soliciting such information from each SBE Subcontractor as may be required to
+                verify payments received, distribution of payments received, subcontracting
+                practices, participation credit, and sharing of resources/personnel. The Contractor
+                shall not attempt to dissuade any such SBE contractor from disclosing any such
+                information or cooperating in any investigation initiated by the SBO.
+        iii)    The Contractor shall submit to RTD’s SBO a Subcontractors’ Participation and
+                Payment Form documenting all payments made to all SBEs and non-SBEs on a
+                form provided/approved by RTD’s SBO.
+        iv)     The SBE contractor shall submit to RTD’s SBO a summary of payments received
+                from its contractor, regardless of their lower tier, on a form approved by RTD’s
+                SBO.
+
+                                                                                     Page 31 of 49
+Civil Rights Version 10.0 November 13, 2025
+        v)      By committing to working on this RTD project which is subjected to SBE
+                requirements set forth in the DBE regulations as defined under 49 CFR Part 26, all
+                SBE subcontractors participating in this project are therefore required to undergo
+                a commercially useful function review or a SBE compliance review before their
+                contract can be closed by RTD SBO. SBEs are required to fully cooperate with
+                RTD’s SBO or its designee in the compliance review process. The commercially
+                useful function review process will be initiated with a request for documents
+                relating to contract performance and management of the actual work performed
+                on the Contract. The scope and intensity of each commercially useful function
+                review will depend on the specific facts and circumstances. The commercially
+                useful function is purposed to verify the amount of SBE participation credit, to
+                ensure that work is performed by the SBE consistent with the SBE Program
+                requirements and/or to ensure that there is no activity engaged in by the SBE that
+                would be inconsistent with the intent and objectives of the SBE Program. The
+                commercially useful function review is more formal and will be initiated with an
+                orientation/explanation process and closed out with a briefing and determination.
+                The SBE subcontractor may be subjected to an informal compliance review by
+                RTD’s SBO or its designee with or without notice. The informal compliance review
+                will generally be conducted at the work site where RTD observes and assesses the
+                services/supplies being provided by the SBE.
+        vi)     The Prime contractor or any of its lower tier non-SBE subcontractors that is utilizing
+                a SBE subcontractor may be selected for SBE compliance review to ensure that
+                they are in compliance with the SBE Program requirements. This process will be
+                initiated in a formal manner with written notice and instructions sent to the prime
+                contractor or its major subcontractor. The process will conclude with a close-out
+                interview or debriefing where the prime contractor or non-SBE subcontractor firm
+                will be given an opportunity to refute the determination or add to any corrective
+                action requested by RTD SBO. The Contractor must cooperate with any SBE
+                Program audit or compliance review. Failure to cooperate can result in part or all
+                of the SBE participation credit being denied / removed from counting toward the
+                SBE participation goal for the Contract.
+        vii)    All SBEs are required to participate in the RTD’s SBO SBE Orientation Program if
+                awarded an RTD contract, subcontract or purchase order before commencing work
+                or providing supplies on the Contract. Failure to participate in the SBE orientation
+                program may result in a denial of SBE participation credit for the project/contract.
+                For good cause, the orientation may be delayed if pre-approved by RTD. SBEs
+                may be required to repeat the orientation if there are changes to the SBE Program
+                requirements, changes in the SBE regulations, changes in the SBE personnel, or if
+                the SBE is experiencing challenges in complying with the reporting requirements.
+        viii)   Please note, if the Contract is subject to Davis Bacon requirements and RTD SPSP
+                Program, monthly reporting to RTD SBO will be required. The RTD SBO will
+                communicate and describe the reporting provisions. Additionally, if Joint Checks
+                are applicable, monthly reporting as stipulated by the RTD SBO will also be
+                required.
+        ix)     All contractors that perform under the Contract are required to retain all records
+                of participation on this project for seven (7) years from the completion of the
+
+
+                                                                                       Page 32 of 49
+Civil Rights Version 10.0 November 13, 2025
+                project. This requirement flows down to all lower tier contractors and must be
+                within their subcontract agreements.
+
+
+
+
+                                                                                 Page 33 of 49
+Civil Rights Version 10.0 November 13, 2025
+           SBE CONTRACT REQUIREMENTS - SBE ENCLOSURE CHECKLIST
+
+This checklist will help you verify that all the required enclosures are complete and
+submitted as required. Submit this checklist as the front page of your SBE Contract
+Requirements Enclosures. SBE Contract Requirements Enclosures are to be submitted
+with bid/proposal. Failure to submit all completed Enclosures within the SBE Contract
+Requirements may result in your proposal being deemed non-responsive. Modification of any SBE
+Contract Requirements Enclosures prior to the official award of the contract will result in your
+proposal being deemed non-responsive. Inconsistencies within the following Enclosures:
+Enclosure 1A, Enclosure 1B, Enclosure 2A and Enclosure 3A may also result in your proposal being
+deemed non-responsive. All Enclosures must be submitted with the bid/proposal. If you
+have any questions concerning the completion of any of the Enclosures, please contact
+RTD’s SBO main office at (303) 299-2111, unless otherwise specified in the bid/proposal
+that all questions must be submitted through RTD designated Procurement Officer.
+SBESBE SBE
+      The following Enclosures (Enclosure 1A through Enclosure 7) must be submitted
+      with your bid or proposal as a matter of responsiveness.
+
+      [ ] Enclosure 1A: SBE Affidavit
+      This form must be completed, signed and notarized by all Prime Contractors, whether SBE
+      or not, to acknowledge the percentage of SBE utilization and SBE Goal commitment in this
+      project.
+
+      [ ] Enclosure 1B: SBE Prime Affidavit
+      This form must be completed, notarized and signed only if the bidder/proposer is a SBE
+      submitting a proposal/bid as a Prime Contractor. This form, if applicable, must be submitted
+      with a current SBE certification letter from RTD SBE Certification Program.
+
+      [ ] Enclosure 2A: Schedule of SBE Participation
+      This form must be submitted by all bidders/proposers including SBE prime Contractors. This
+      form must include a list of SBEs that the bidder/proposer intents to do business with if
+      awarded the Contract. It must contain the following information: names and addresses of
+      certified SBE firms, the scope of work they are to perform in the Contract, the applicable
+      NAICS codes (found in their SBE Certification, from RTD SBE Certification Program, that
+      coincides with the scope of work they will be performing in the Contract, their projected
+      start and finish date for work in this project as well as the dollar value of each proposed
+      certified SBE contract. Subsequent to the award of the Contract, the prime Contractor will
+      be responsible for revising the initial Schedule of SBE Participation any time a new SBE is
+      added to the project. The prime Contractor must also submit a copy of the SBE certification
+      letter to RTD SBO with any new SBE(s) added to the project. RTD will only accept and
+      approve new SBE(s) that are currently certified with RTD SBE Certification Program, under
+      the NAICS code that coincides with the scope of work that they will execute in this project.
+      The SBE firms listed on this schedule of SBE Participation cannot be terminated, substituted
+      nor does RTD allow reduction of work without the final approval of RTD SBO. This form
+      must be signed by the proposer/bidder. Subsequent to the award of the Contract, the prime
+
+
+                                                                                   Page 34 of 49
+Civil Rights Version 10.0 November 13, 2025
+      Contractor must submit this form with each additional new SBEs added to the Contract.
+
+      [ ] Enclosure 2B: SBE Open Ended Performance Plan (OEPP)
+      This form must be completed by bidder/proposer only on Design/Build contracts. The OEPP
+      will apply only to the “construction phase” of a design/build contract. Bidder/Proposers are
+      required to include the expected total contract amount, for the “construction phase”, and
+      fill the table listing all SBE activities or scopes intended to be subcontracted to SBE firms.
+      Next to each listed scope, bidders/proposers are required to specify the time frame when
+      each scope is expected to be performed; NAICS code(s) applicable for each scope/task,
+      estimated dollar value and anticipated percentage of the total “construction phase” value
+      each task represents.
+
+      [ ] Enclosure 3: Letter of Intent to Perform as a SBE Subcontractor
+      This form must be submitted by all bidders/proposers. It must contain the following
+      information: names and addresses of each individual certified SBE firm listed on the SBE
+      Schedule of Participation, the scope of work the SBE is expected to perform in the Contract,
+      the applicable NAICS codes (found in their SBE certification with RTD SBE Certification
+      Program, that coincides with the scope of work the SBE will be performing in the Contract,
+      the SBE’s projected start and finish date for work in this project and the dollar value for the
+      proposed certified SBE contract. This form must be signed by both the proposer/bidder and
+      the SBE subcontractor. Subsequent to the award of the Contract, the prime Contractor must
+      submit this form with each additional new SBEs added to the Contract.
+
+      [ ] Enclosure 4: Bidders List Information (List of Subcontractors Seeking to Work)
+      This form is for statistical purposes only. All bidders/proposers along with all their proposed
+      subcontractors, SBEs and non-SBEs must complete this form.
+
+      [ ] Enclosure 5: Employer Certification of Workforce
+      This form defines the make-up of the company’s workforce broken down by job categories, race
+      and gender. This must be completed by every bidder/proposer as well as their subcontractors.
+
+      [ ] Enclosure 6: Small Business Outreach
+      This form provides current outreach program information for contracted prime and subcontractors.
+
+      [ ] Enclosure 7: Unavailability Certification
+      Bidders/proposers that did not meet the specified SBE Goal identified in this bid/proposal or
+      were only able to meet part of the SBE Goal in this bid/proposal are required to complete
+      this form. In addition to this form, bidders/proposers are required to document and submit
+      adequate and sufficient good faith efforts as required under 49 CFR Part 26.53. If the SBE
+      Goal is met or exceed by the bidder/proposer, please indicate N/A.
+
+      RTD’s Diversity and Compliance Solution will track prompt payment and
+      retainage to SBEs. Please note that Failure to comply with the prompt payment provisions
+      of SBE subcontractors may give RTD just cause to impose one or more of the following
+      penalties, until the required payment(s) to the Contractor’s subcontractor(s) is satisfied,
+
+
+
+                                                                                      Page 35 of 49
+Civil Rights Version 10.0 November 13, 2025
+      unless RTD has given prior written approval to the Contractor for the delay or postponement
+      of payment(s): (1) withhold payments to the Contractor; (2) assess sanctions against the
+      Contractor; (3) assess the SBE indirect or consequential damages against the Contractor;
+      (4) disqualify the Contractor from future bidding on RTD contracts as non-responsible; (5)
+      enforce the payment bond against the Contractor; (6) pay the SBE(s) directly and deduct
+      this amount from any retainage owed to the Contractor; (7) provide notice of default to
+      the Contractor, stating the potential for termination or suspension of the Contract, in
+      whole or in part;
+      (8) issue a stop-work order until the SBE subcontractor(s) is paid, which order shall
+      constitute an unauthorized delay under the Contract that could result in liquidated damages
+      against the Contractor. Unless approved by RTD, the Contractor’s failure to comply with this
+      Section is a material breach of the contract;
+
+      [ ] Enclosure 8 - Instructions on SBE Participation and Payment Reporting
+      Requirements through RTD’s Diversity and Compliance Solution (B2GNow)
+
+      Contracting reporting requirements related to payments and release of retainage to
+      subcontractors SBEs and non-SBEs will be accomplished through RTD’s Diversity and
+      Compliance Solution – B2GNow. After the award of the Contract, and by the 5th of every
+      month, Contractor/s is required to report its payments to its SBE and non-SBE
+      subcontractors, through RTD’s Diversity and Compliance Solution (B2GNow). All payments
+      should be entered by the 5th of the month, regardless of the tier of participation in the
+      Contract and throughout the entire duration of the contract. The Contractor shall also ensure
+      that its SBE subcontractors at every tier confirm or deny payments from the Contractor,
+      using RTD’s Diversity and Compliance Solution (B2GNow). You may access B2Gnow through
+      this link https://rtd-denver.gob2g.com/ This will not be required to be submitted with
+      your bid/proposal.
+
+
+
+
+                                                                                    Page 36 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                     ENCLOSURE 1A - SBE AFFIDAVIT
+THIS PAGE MUST BE COMPLETED BY ALL PRIME PROPOSERS/BIDDERS TO INDICATE
+THEIR PERCENTAGE OF SMALL BUSINESS ENTERPRISE (SBE) PARTICIPATION
+COMMITMENT.
+RTD has specified a         % SBE Participation goal on this project.
+
+         Category 1 Recommended percentage:                %
+
+         Category 2 Recommended percentage:                %
+
+         Category 3 Recommended percentage:                %
+
+         Category 4 Recommended percentage:                %
+
+THIS BIDDER/PROPOSER IS COMMITED TO MEETING                             % - SBE (Small Business Enterprise)
+PARTICIPATION IN THE CONTRACT
+         Category 1 Recommended percentage:                %
+
+         Category 2 Recommended percentage:                %
+
+         Category 3 Recommended percentage:                %
+
+         Category 4 Recommended percentage:                %
+
+Per 49 CFR Part 26 bidders/proposers must make adequate good faith efforts to meet this goal in order to
+be deemed as a responsive and responsible bidder. Award of the Contract will be conditioned on meeting
+the requirements of this section.
+
+The undersigned contractor hereby agrees and understands that they must comply with their
+SBE commitments in this project in conformity with the Requirements, Terms, and Conditions
+of this SBE Contract Requirements.
+
+Business Name:
+
+Contact Name:
+
+Address:
+
+City, State, ZIP:
+
+Phone:                                              Fax:
+
+I DO SOLEMNLY DECLARE AND AFFIRM UNDER THE PENALTIES OF PERJURY THAT THE CONTENTS OF THE
+FOREGOING STATEMENTS ARE TRUE AND CORRECT, AND THAT I AM AUTHORIZED, ON BEHALF OF
+                                                   TO MAKE THIS AFFIDAVIT.
+(Name of Business Entity)
+
+
+(Date)                      (Affiant Print Name)                   (Title)
+
+
+
+
+                                                                                             Page 37 of 49
+Civil Rights Version 10.0 November 13, 2025
+                  (Affiant’s Signature)
+
+State of                                                  :
+
+City and County of                                              :
+On this                      day of                             ,           , before me, the undersigned
+officer, personally appeared                                      , known to me to be the person described
+in the foregoing Affidavit, and acknowledged that he (she) executed the same in the capacity therein stated
+and for the purposes therein contained.
+In witness thereof, I hereunto set my hand and official seal.
+My Commission Expires:
+                                                                    (Notary Public) (SEAL)
+
+
+
+
+                                                                                             Page 38 of 49
+Civil Rights Version 10.0 November 13, 2025
+                                    ENCLOSURE 1B- SBE PRIME AFFIDAVIT
+
+THIS PAGE MUST BE COMPLETED BY THE SMALL BUSINESS ENTERPRISE PRIME CONTRACTOR
+(PROPOSER/BIDDER)
+
+I HEREBY DECLARE AND AFFIRM that I am the
+                                                                            (Title)
+
+And duly authorized representative of (the firm of)
+                                                  (Name of Corporation or Joint Venture)
+
+whose address is
+
+                                                                        .
+                         (Telephone No.)
+
+I hereby declare and affirm that I am a Small Business Enterprise (SBE) and am certified as of the date
+that the RTD receives this bid/proposal and as defined by the Regional Transportation District in SBE
+Contract Requirements for
+
+
+                                                                             and that I will provide information
+and/or the
+(Contract number and name)
+
+certification to document this fact with this enclosure.
+
+I DO SOLEMNLY DECLARE AND AFFIRM UNDER THE PENALTIES OF PERJURY THAT THE CONTENTS OF
+THE FOREGOING STATEMENTS ARE TRUE AND CORRECT, AND THAT I AM AUTHORIZED, ON BEHALF OF
+THE ABOVE FIRM, TO MAKE THIS AFFIDAVIT.
+
+
+(Date)                   (Affiant Print Name)                                          (Title)
+
+
+
+(Affiant’s Signature)
+
+State of                                                            :
+
+City and County of                                              :
+
+On this                    day of                                   ,                   , before me, the
+
+Undersigned officer, personally appeared                                   , known to me to be the
+person described in the foregoing Affidavit, and acknowledged that he (she)executed the same in the
+capacity therein stated and for the purposes therein contained.
+In witness thereof, I hereunto set my hand and official seal.
+
+
+My Commission Expires:
+
+                                                                                      (Notary Public) (SEAL)
+
+
+
+
+                                                                                                           Page 39 of 49
+Civil Rights Version 10.0 November 13, 2025
+                             ENCLOSURE 2A – SCHEDULE OF SBE PARTICIPATION
+
+
+   NAME OF CONTRACTOR:
+
+   RTD Contract No.
+
+   Total Proposed Contract Cost: US $
+
+            SBE            ADDRESS            TYPE OF WORK          NAICS        PROJECTED          AGREED
+         FIRM NAME                             (ELECTRICAL,        code(s)        START &         PRICE TO BE
+                                               PAVING, ETC.)                    COMPLETION        PAID TO SBE
+                                              AND CONTRACT                       DATES FOR
+                                              ITEMS OR PART                         SBE
+                                              THEREOF TO BE
+                                                PERFORMED
+
+
+
+
+   1. Please list all SBEs involved on the Contract including the Prime Contractor if it is a SBE. All SBEs listed
+   on this enclosure must be properly certified under the NAICS code(s) that coincides with the scope of work
+   they will execute in this project. Work performed by SBEs for which they are not certified to perform will
+   not count towards the SBE participation goal. A current RTD SBE certification for each listed SBE recorded
+   on this schedule must accompany this enclosure. Failure to provide proof of current RTD SBE certification
+   for any or all listed SBEs will eliminate such listed SBE’s participation, and work performed by such SBE will
+   not count towards satisfaction of the SBE Goal. If additional pages are required to list all contracted SBE,
+   photocopy this enclosure as required to make a complete list.
+
+   2. Contracts with SBEs for materials or supplies will be counted toward the SBE Goal as follows:
+   (i)       Materials or supplies obtained from a SBE manufacturer will be counted at 100% toward the SBE
+             Goal;
+   (ii)      Materials or supplies obtained from a SBE regular dealer will be counted at 60% toward the SBE
+             Goals. Please refer to the DBE regulations as defined under 49 CFR §26.55 for specifics with respect
+             to how SBE participation is counted toward SBE Goal;
+   (iii)     Materials or supplies obtained from a SBE Distributor will be counted at 40% of the cost of materials
+             or supplies (including transportation costs), toward the SBE Goal; and
+   (iv)      Materials or supplies obtained from a SBE broker firm only fees/commission will be counted toward
+             the SBE Goal
+   Contractor must submit copies of all SBE subcontracts, purchase orders or change orders within 30 Days
+   of execution of the notice to proceed. There may be exceptions to Design Build contracts, multi-year
+   contracts and other alternative method contracts as SBEs are added throughout the course of the contracts
+   and in some instances at different phases of the contracts. SBE subs should not commence any work on
+   this project without an executed subcontract agreement or purchase order. Failure to submit a copy of the
+   subcontract agreement with a SBE sub to RTD may result in RTD not counting SBE participation towards
+   the SBE goal.
+
+
+
+
+   NAME OF CONTRACTOR                                          SIGNATURE OF CONTRACTOR & DATE
+Civil Rights Version 10.0 November 13, 2025                                                      Page 40 of 49
+                                                                                                 50
+                       ENCLOSURE 2B – SBE OPEN-ENDED PERFORMANCE PLAN (OEPP)
+                                   FOR DESIGN-BUILD CONTRACTS ONLY
+
+ NAME OF CONTRACTOR:
+ RTD Contract No.
+ Total Proposed Contract Cost (CONSTRUCTION PHASE ONLY):
+ US $__________________________________
+
+
+
+
+ 1. Please list all work activities or scopes expected to be subcontracted to SBEs, for the construction phase
+ of this contract, including the Prime Contractor if it is a SBE. All listed tasks should include the year and the
+ quarter of the year (i.e. Q-1 for work expected to initiate between January and March of any given year) of
+ when each task is expected to initiate. Also, identified NAICS code(s) applicable for each listed task and the
+ estimated dollar value dedicated for each of the listed tasks. The anticipated SBE percentage expected to be
+ credited toward the SBE goal, should be based on 49 CFR Part 26.55 – How is DBE Counted Toward the
+ Goal. Although all expected SBE subcontracted amount should be listed under the Estimated dollar value
+ for SBE Participation column, only the applicable and allowed SBE participation credit percentage should be
+ recorded under the Anticipated SBE % column.
+ Awarded bidder or proposer will be required to submit to RTD’s SBO a signed SBE Enclosure 3 (Letter of Intent
+ to use Subcontractors SBEs), for each SBE participant, prior to the execution of each subcontract agreement.
+ RTD’s SBO will confirm whether selected firms are properly certified as a SBE and under the appropriate NAICS
+ code(s). Also, RTD’s SBO will confirm how much SBE participation could be credited toward the SBE goal.
+ Upon execution of each subcontract agreement, Prime Contractor will be required to submit a copy of the
+ executed subcontract agreement to RTD’s SBO, within 30 days of subcontract execution date. SBE
+ subcontractors should not commence any work on this project without an executed subcontract agreement or
+
+Civil Rights Version 10.0 November 13, 2025                                                   Page 41 of 49
+                                                                                              50
+ purchase order. Failure to submit a copy of the subcontract agreement with a SBE subcontractor to RTD’s SBO
+ may result in RTD not counting SBE participation towards the SBE goal.
+
+ Expected subcontracted SBEs must be certified under RTD’s SBE Program (or any other allowed certification
+ program as included in the IFB or RFP), and specifically under the appropriate NAICS code(s), at the time of
+ subcontract execution, and based on the Open Ended SBE Performance Plan (OEPP). Please photocopy this
+ enclosure as required to make a complete list.
+
+ 2. Expected tasks to be subcontracted to SBEs for materials or supplies will be counted toward the SBE Goal as
+ follows:
+ (i)     Materials or supplies obtained from SBE manufacturer will be counted at 100% toward the SBE Goal;
+ (ii)    Materials or supplies obtained from a SBE regular dealer will be counted at 60% toward the SBE Goal;
+ (iii)   Materials or supplies obtained from a SBE Distributor will be counted at 40% of the cost of materials or
+         supplies (including transportation costs), toward the SBE Goal, and
+ (iv)    Materials or supplies obtained from a SBE broker firm only fees/commission will be counted toward the
+         SBE Goal.
+
+
+
+
+ ______________________________                            ____________________________________
+
+ NAME OF CONTRACTOR                                        SIGNATURE OF CONTRACTOR & DATE
+
+
+
+
+Civil Rights Version 10.0 November 13, 2025                                                 Page 42 of 49
+                                                                                            50
+             ENCLOSURE 3 – LETTER OF INTENT TO PERFORM AS AN SBE SUBCONTRACTOR
+
+   Contract No.
+
+   The undersigned [] (the Contractor) intends to engage the undersigned SBE to perform work in
+   connection with the Project pursuant to a contract (the SBE Contract) between the Contractor and the
+   SBE as [check one]:
+
+                    an individual                            a corporation
+
+                    a partnership                            a joint venture
+
+   The SBE status of the undersigned SBE is confirmed on the attached schedule of SBE participation and
+   represents a company that is certified as of the date on which the SBE Contract is executed.
+
+       TYPE OF WORK AND
+                                                                 Projected         Projected      Agreed Price to
+       CONTRACT ITEMS OR
+                                         NAICS Codes              Starting        Completion      be Paid to SBE
+       PART THEREOF TO BE
+                                                                   Date              Date
+          PERFORMED
+
+
+
+
+        % of the Dollar value of the SBE Contract will be sublet and/or awarded to non-SBE contractors and/or
+   non-SBE suppliers. The undersigned Proposer and the undersigned SBE will enter into the SBE Contract for
+   the above work conditioned upon the Proposer’s execution of the Contract with RTD.
+
+
+   NAME OF CONTRACTOR                                       NAME OF SBE FIRM
+
+
+   OWNER/REPRESENTATIVE                                     OWNER/REPRESENTATIVE
+
+
+   ADDRESS                                                  ADDRESS
+
+
+   EMAIL ADDRESS                                            EMAIL ADDRESS
+
+
+   SIGNATURE                                                SIGNATURE
+
+
+   TITLE                   DATE                             TITLE                   DATE
+
+
+
+
+Civil Rights Version 10.0 November 13, 2025                                                 Page 43 of 49
+                                                                                            50
+   ENCLOSURE 4 – BIDDERS LIST INFORMATION (INFORMATION REGARDING SUBCONTRACTORS SEEKING TO WORK)
+
+ RTD is required to create and maintain bidder statistics for all firms bidding on prime contracts and bidding or quoting Subcontracts on
+ USDOT-assisted projects per 49 CFR Part 26.11.
+ Instructions: The bidder/proposer is required to make copies of this form and have all bidders for subcontracting opportunities complete
+ and return the form, along with their bid or quote. The form is required for all bidders or firms submitting bids or quotes, regardless of
+ whether they are certified as SBE or not. Information required to be submitted includes Type of Scope work; NAICS code related to the
+ type of work; firm’s name; address; firm’s certification status (whether SBE or non-SBE); age of firm (how long firm have been in
+ business); annual gross receipt. Bidder/proposer is required to submit copy of all completed forms to RTD’s SBO, along with
+ other DBE Enclosures.
+
+ RTD RFP/IFB Project Name: ______________________________________________________ RFP/IFB Number ________________
+
+ Bid or Quote Description: ________________________________________________________ NAICS Code ____________________
+
+ Firm’s Name: ___________________________________________________________________ Age of Firm ____________________
+
+ Firm’s Address (Office Reporting): __________________________________________________ Zip Code                        ____________________
+
+ Status as a SBE or Non-SBE (check one):      SBE _______        Non-SBE _______
+
+
+ Annual Gross Receipts of the Firm: (check one of the brackets below):
+
+ U.S. $0 to U.S. $500,000                     U.S. $500,000 to U.S. $1,000,000                     U.S. $1 Million to U.S. $5 Million
+
+U.S. $5 Million to U.S. $10 Million            U.S. $10 Million to U.S. $31.84 Million              Above U.S. $31.84 Million
+asasas
+
+Name:____________________________________________________ Signature: ______________________________________
+
+Title:_____________________________________________________              Date:     ______________________________________
+                                        ENCLOSURE 5 – EMPLOYER CERTIFICATION OF WORKFORCE
+
+                         Total Employees in Establishment                       M = Male                                   F = Female
+    Job Categories
+                            Total     Total Male      Total      White      Black /    Hispanic /   American   Asian           Native       Multiracial
+                         Employees    Employees      Female       (non-     African    Latino       Indian /                 Hawaiian /
+                          Including    Including   Employees    Hispanic)   American                Alaskan                  Hawaiian/
+                         Minorities   Minorities    Including                                       Native                  Other Pacific
+                                                   Minorities                                                                 Islander
+                                                                M     F     M    F         M   F    M     F    M       F      M       F     M       F
+
+Officials &
+Administrators
+Professionals
+
+Technicians
+
+Administrative Support
+
+
+Skilled Craft Workers
+
+Paraprofessionals
+
+
+Service & Maintenance
+
+Protective Service
+Workers
+
+TOTAL
+
+
+
+
+                                                                                                                           Page 44 of 49
+     DESCRIPTION OF JOB CATEGORIES
+     Officials and Administrators – Occupations in which employees set broad policies, exercise overall
+     responsibility for execution of these policies, or direct individual departments or special phases of
+     the agency's operations, or provide specialized consultation on a regional, district or area basis.
+     Professionals – Occupations which require specialized and theoretical knowledge which is usually
+     acquired through college training or through work experience and other training which provides
+     comparable knowledge..
+     Technicians – Occupations which require a combination of basic scientific or technical knowledge
+     and manual skill which can be obtained through specialized post-secondary school education or
+     through equivalent on-the-job training. .
+     Administrative Support – Occupations in which workers are responsible for internal and external
+     communication, recording and retrieval of data and/or information and other paperwork required
+     in an office..
+     Skilled Craft Worker – Occupations in which workers perform jobs which require special manual
+     skill and a thorough and comprehensive knowledge of the process involved in the work which is
+     acquired through on-the-job training and experience or through apprenticeship or other formal
+     training programs. .
+     Service-Maintenance – Occupations in which workers perform duties which result in or contribute
+     to the comfort, convenience, hygiene or safety of the general public or which contribute to the
+     upkeep and care of buildings, facilities or grounds of public property. Workers in this group may
+     operate machinery.
+     Paraprofessionals – Occupations in which workers perform some of the duties of a professional
+     or technician in a supportive role, which usually require less formal training and/or experience
+     normally required for professional or technical status. Such positions may fall within an identified
+     pattern of staff development and promotion under a "New Careers" concept.
+     Protective Service Workers – Occupations in which workers are entrusted with public safety, security and
+     protection from destructive forces.
+     RACE/ETHNIC IDENTIFICATION
+     White (not Hispanic origin), which refers to people who identify their race as white, but are not
+     of Hispanic, Latino, or Spanish culture or origin
+     Black or African American, which refers to people having origins in any of the Black racial groups
+     of Africa
+     Hispanic or Latino, which includes people of Cuban, Mexican, Puerto Rican, South American, Central
+     American, or other Spanish culture or origin, regardless of race
+     Native Hawaiian or Other Pacific Islander, which refers to people having origins in any of the
+     original peoples of Hawaii, Guam, Samoa, or other Pacific Islands
+     Asian, which refers to people having origins in any of the original peoples of the Far East,
+     Southeast Asia or the Indian subcontinent, including, for example, Cambodia, China, India,
+     Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam
+     American Indian and Alaska Native,which refers to people having origins in any of the original
+     peoples of North and South America (including Central America) and who maintain tribal affiliation
+     or community
+Civil Rights Version 10.0 November 13, 2025
+                                  ENCLOSURE 6 – SMALL BUSINESS OUTREACH
+
+     As part of RTD's ongoing outreach activities to the Denver-metro Small Business community, it is
+     our goal to identify and to establish a relationship with the Small Business outreach programs
+     sponsored by the prime and subcontractors we partner with.
+
+     The prime and all contracted subcontractors are requested to provide the following information
+     pertaining to their current SBE outreach efforts – additional sheets may be used if necessary:
+
+     RTD Contract Name and Number:
+
+     Contract No. (the Contract).
+
+     Proposer:
+
+
+     Subcontractor – if applicable:
+
+
+     Small Business Outreach Contact (if none, list contact for the Contract):
+
+
+     Phone:                                     Fax:
+
+     Email:
+
+     Website:
+
+     Currently Sponsored Small Business Outreach Activities:
+
+
+
+
+     How can RTD assist you in your current Small Business outreach efforts?
+
+
+
+
+     Would you be interested becoming involved in current and future RTD-sponsored outreach
+     activities and committees: [ ] Yes [ ] No
+
+     If so, how?
+
+
+
+
+Civil Rights Version 10.0 November 13, 2025                                           Page 46 of 49
+                          ENCLOSURE 7– SBE UNAVAILABILITY CERTIFICATION
+
+I,                                                          ,                                   ,
+Name                                            Title
+
+of                                                      , certify that [the Contractor}, made the
+following efforts to meet the SBE Goals on Regional Transportation District Contract No. for the Project:
+
+[Please attach any additional efforts that do not fit on this form]
+
+▪   A Contractor representative attended the pre-bid meeting. Yes                 No
+
+▪   Newspaper Advertisement Log: (attach copies of ads)
+
+    Newspaper/Publication            Type of Publication                  Dates of Advertisement
+                                   Chamber/General/Trade
+
+
+
+
+▪   Selected portions of the work to be performed by [SBEs]
+     Work Categories              Type of Bid           Contractor's Estimated    Additional Comments
+                               (Subcontractor or               Budget
+                                   Supplier)
+
+
+
+
+▪   Made efforts to assist interested SBEs in obtaining bonding, lines of credit, insurance or any necessary
+    equipment, supplies, materials, etc.
+▪   [List any specific offers made by Contractor]
+
+
+
+
+                                                                                            Page 47 of 49
+    ▪     Solicited the following SBEs
+        Date                 Name of SBE      Contact Person   Phone #           Work Category
+        Contacted                Firm
+
+
+
+
+    ▪     Followed up with initial contacts
+        Date              Name of SBE       Phone #            Bidding           Additional
+                                                               (Yes or No)       Comments
+
+
+
+
+    ▪     Contacted the following other agencies, organizations in recruitment of SBE including RTD:
+
+                   Date                        Organization            Phone #
+
+
+
+
+    As shown by the documentation provided to RTD, we feel that we have made good faith effort to
+    attain the SBE Goals.
+
+
+    Signature: _____________________________________
+
+    Date:
+
+
+
+
+                                                                                      Page 48 of 49
+Civil Rights Version 10.0 November 13, 2025
+    ENCLOSURE 8 - INSTRUCTIONS ON SBE PARTICIPATION AND PAYMENT REPORTING
+    REQUIREMENTS THROUGH RTD’S DIVERSITY AND COMPLIANCE SOLUTION (B2GNOW)
+
+  The use of RTD’s Diversity and Compliance System B2GNow will be mandatory, as the system will
+  assist in tracking SBE participation and payments requirements, specifically regarding the Prompt
+  Payment Provisions.
+
+  The Contractor must complete a mandatory Contract Compliance Reporting training class. This
+  training will be held via a recorded webinar. To access the system, visit      https://rtd-
+  denver.gob2g.com/. If you have never logged on or do not know your username and password,
+  click the Account Lookup link on the right side of the Login button.
+
+  On the left-hand side, please click on Help & Support>>>Video Library >>>>>and select – Vendor
+  Trainings. Vendors (Primes) can also sign up for the training class without logging in. See below for
+  a print screen that includes the title of the two classes your team needs to complete.
+
+  RTD SBO requires Contactor/Prime to make sure all SBE are aware of and complete their training
+  sessions and confirm payments or no payments from Prime in a monthly basis. However, RTD’s
+  Small Business Opportunity Office (SBO) will directly notify to all vendors or subcontractors about
+  the B2GNow.
+
+
+
+
+Civil Rights Version 10.0 November 13, 2025
+
