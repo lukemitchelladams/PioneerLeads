@@ -1,575 +1,5 @@
 [
  {
-  "key": "bidnet:0000434820",
-  "source": "bidnet",
-  "agency": "City of Colorado Springs",
-  "title": "On-Call Transit Campus Fire Suppression Systems Services",
-  "sol": "R26-065PB",
-  "closing": "2026-10-21",
-  "posted": "2026-08-24",
-  "prebid_date": "2026-09-17",
-  "prebid_mandatory": "Optional",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Transit-Campus-Fire-Suppression-Systems-Services/0000434820?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "dibbs:SPE4A6-27-Q-0088:7017571808",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "HOUSING, BEARING UNIT (NSN 3130-01-616-4011, qty 10)",
-  "sol": "SPE4A6-27-Q-0088",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0088"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-0822:7018664576",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-01-235-5974, qty 7)",
-  "sol": "SPE4A6-27-T-0822",
-  "closing": "2026-10-21",
-  "posted": "2026-10-08",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T0822"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3689:7018683716",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-00-142-7104, qty 13)",
-  "sol": "SPE4A6-27-T-3689",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3689"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3717:7018661577",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, TAPERED (NSN 3110-00-897-2947, qty 18)",
-  "sol": "SPE4A6-27-T-3717",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3717"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3745:7018680558",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "SHIELD, BEARING, REPLACE (NSN 3110-01-506-0614, qty 68)",
-  "sol": "SPE4A6-27-T-3745",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3745"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3791:7018625917",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-01-642-5747, qty 1)",
-  "sol": "SPE4A6-27-T-3791",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3791"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3799:7018579033",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING UNIT, PLAIN (NSN 3130-01-533-4139, qty 1)",
-  "sol": "SPE4A6-27-T-3799",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3799"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3809:7018659830",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, NEEDLE (NSN 3110-99-785-9921, qty 12)",
-  "sol": "SPE4A6-27-T-3809",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3809"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3884:7018663334",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, NEEDLE (NSN 3110-00-151-9635, qty 25)",
-  "sol": "SPE4A6-27-T-3884",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3884"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3997:7018680007",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-01-707-3348, qty 3)",
-  "sol": "SPE4A6-27-T-3997",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3997"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-3998:7018680557",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "SHIELD, BEARING, REPLACE (NSN 3110-01-506-0607, qty 49)",
-  "sol": "SPE4A6-27-T-3998",
-  "closing": "2026-10-21",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T3998"
- },
- {
-  "key": "dibbs:SPE7LX-27-U-0060:1000246101",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "PULLEY, GROOVE (NSN 3020-00-534-3151, qty 36)",
-  "sol": "SPE7LX-27-U-0060",
-  "closing": "2026-10-21",
-  "posted": "2026-10-07",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7LX27U0060"
- },
- {
-  "key": "samgov:0aec98bf822b4a21a1ea2489dce286bf",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA WEAPONS SUPPORT",
-  "title": "PULLEY, GROOVE",
-  "sol": "SPE7M226R0014",
-  "closing": "2026-10-21",
-  "posted": "2026-09-03",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/0aec98bf822b4a21a1ea2489dce286bf/view"
- },
- {
-  "key": "samgov:f8f372d5a7b34b5cbcb71441aeaaac2b",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--PULLEY,GROOVE",
-  "sol": "SPE7LX27U0060",
-  "closing": "2026-10-21",
-  "posted": "2026-10-06",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/f8f372d5a7b34b5cbcb71441aeaaac2b/view"
- },
- {
-  "key": "samgov:fd4cc84dec2c44c1ac9b80d5c0f777b5",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
-  "title": "16--PILLOW BLOCK",
-  "sol": "SPE4A527T1016",
-  "closing": "2026-10-21",
-  "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/fd4cc84dec2c44c1ac9b80d5c0f777b5/view"
- },
- {
-  "key": "samgov:ff05372bd4014de685c91fb488a7d89a",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-  "title": "HOUSING, BEARING UNIT",
-  "sol": "SPE4A627RX033",
-  "closing": "2026-10-21",
-  "posted": "2026-10-07",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/ff05372bd4014de685c91fb488a7d89a/view"
- },
- {
-  "key": "samgov:ff6fd0a5da944d9fb4500f065b27029c",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "25--ARM ASSEMBLY,IDLER",
-  "sol": "SPE7L427U0029",
-  "closing": "2026-10-21",
-  "posted": "2026-10-06",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/ff6fd0a5da944d9fb4500f065b27029c/view"
- },
- {
-  "key": "bidnet:0000438103",
-  "source": "bidnet",
-  "agency": "United Power, Inc.",
-  "title": "Generator Management Contractor",
-  "sol": "RFQ 2026-019",
-  "closing": "2026-10-22",
-  "posted": "2026-09-24",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Management-Contractor/0000438103?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:0000438390",
-  "source": "bidnet",
-  "agency": "Adams County",
-  "title": "AUTOMOTIVE BODY REPAIR SERVICES",
-  "sol": "RFP-KD-2026.341",
-  "closing": "2026-10-22",
-  "posted": "2026-09-25",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/AUTOMOTIVE-BODY-REPAIR-SERVICES/0000438390?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:0000438970",
-  "source": "bidnet",
-  "agency": "Town of Parker",
-  "title": "Town of Parker HVAC Preventive Maintenance & Repair Services",
-  "sol": "26-028",
-  "closing": "2026-10-22",
-  "posted": "2026-10-01",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Parker-HVAC-Preventive-Maintenance-Repair-Services/0000438970?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:444181730937",
-  "source": "bidnet",
-  "agency": "",
-  "title": "Replace HVAC Units, Upgrade Lighting Systems, CBI Grand Junction",
-  "sol": "",
-  "closing": "2026-10-22",
-  "posted": "2026-10-02",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444181730937?target=view"
- },
- {
-  "key": "bonfire:parkeronline-256465",
-  "source": "bonfire",
-  "agency": "Town of Parker",
-  "title": "Town of Parker HVAC Preventive Maintenance & Repair Services",
-  "sol": "26-028",
-  "closing": "2026-10-22",
-  "posted": "",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": true,
-  "url": "https://parkeronline.bonfirehub.com/opportunities/256465"
- },
- {
-  "key": "dibbs:SPE4A6-26-T-25BU:7017035637",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING CONE TRUNNI (NSN 3110-01-502-7713, qty 1)",
-  "sol": "SPE4A6-26-T-25BU",
-  "closing": "2026-10-22",
-  "posted": "2026-09-01",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A626T25BU"
- },
- {
-  "key": "dibbs:SPE4A6-27-Q-0022:7011973172",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, CYLINDR (NSN 3110-01-147-4488, qty 228)",
-  "sol": "SPE4A6-27-Q-0022",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0022"
- },
- {
-  "key": "dibbs:SPE4A6-27-Q-0050:7018390772",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, CYLINDR (NSN 3110-01-155-5371, qty 12)",
-  "sol": "SPE4A6-27-Q-0050",
-  "closing": "2026-10-22",
-  "posted": "2026-10-08",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0050"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-1514:7018620377",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, RADIAL (NSN 3110-01-524-8757, qty 1)",
-  "sol": "SPE4A6-27-T-1514",
-  "closing": "2026-10-22",
-  "posted": "2026-10-09",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T1514"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4112:7008785094",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, NEEDLE (NSN 3110-00-183-6730, qty 14)",
-  "sol": "SPE4A6-27-T-4112",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4112"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4144:7018680655",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BALL, BEARING (NSN 3110-01-619-2543, qty 3)",
-  "sol": "SPE4A6-27-T-4144",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4144"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4151:7018683046",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING UNIT, PLAIN (NSN 3130-01-435-6142, qty 14)",
-  "sol": "SPE4A6-27-T-4151",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4151"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4272:7014068598",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "RING, BEARING, INNER (NSN 3110-01-147-0338, qty 54)",
-  "sol": "SPE4A6-27-T-4272",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4272"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4292:7018674043",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "HOUSING, BEARING UNIT (NSN 3130-01-616-4014, qty 2)",
-  "sol": "SPE4A6-27-T-4292",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4292"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4306:7018675131",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, CYLINDR (NSN 3110-01-513-9715, qty 22)",
-  "sol": "SPE4A6-27-T-4306",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4306"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4316:7018676197",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, JOURNAL (NSN 3110-01-468-1124, qty 4)",
-  "sol": "SPE4A6-27-T-4316",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4316"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4323:7018680602",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BALL, BEARING (NSN 3110-66-161-8506, qty 2)",
-  "sol": "SPE4A6-27-T-4323",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4323"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-4333:7018673195",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, NEEDLE (NSN 3110-00-463-4817, qty 197)",
-  "sol": "SPE4A6-27-T-4333",
-  "closing": "2026-10-22",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4333"
- },
- {
-  "key": "samgov:50214e18baae4028a7fc4b3993ea0a6d",
-  "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
-  "title": "S--BGNDRF CUSTODIAL SERVICES",
-  "sol": "140RR027Q0001",
-  "closing": "2026-10-22",
-  "posted": "2026-10-07",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/50214e18baae4028a7fc4b3993ea0a6d/view"
- },
- {
-  "key": "samgov:a52ea596b0454511a86648481ad71505",
-  "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
-  "title": "S--BGNDRF CUSTODIAL SERVICES",
-  "sol": "140RR027Q0001",
-  "closing": "2026-10-22",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/a52ea596b0454511a86648481ad71505/view"
- },
- {
   "key": "bidnet:0000435031",
   "source": "bidnet",
   "agency": "Adams County",
@@ -581,7 +11,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-RZA-2026-590-FOOD-SERVICES-AT-ADAMS-COUNTY-DETENTION-FACILITY/0000435031?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -596,7 +26,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Detention-Facility-Modules-B-C-Security-Desk-Kiosks/0000438102?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -611,7 +41,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-call-Planning-Services/0000439187?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -626,7 +56,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444197459901?target=view"
  },
  {
@@ -641,7 +71,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A027T0208"
  },
  {
@@ -656,7 +86,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A626Q1506"
  },
  {
@@ -671,7 +101,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0120"
  },
  {
@@ -686,7 +116,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4373"
  },
  {
@@ -701,7 +131,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4375"
  },
  {
@@ -716,7 +146,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4379"
  },
  {
@@ -731,7 +161,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4381"
  },
  {
@@ -746,7 +176,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4382"
  },
  {
@@ -761,7 +191,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4383"
  },
  {
@@ -776,7 +206,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4389"
  },
  {
@@ -791,7 +221,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4394"
  },
  {
@@ -806,7 +236,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4395"
  },
  {
@@ -821,7 +251,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4398"
  },
  {
@@ -836,7 +266,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4400"
  },
  {
@@ -851,7 +281,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4413"
  },
  {
@@ -866,7 +296,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4418"
  },
  {
@@ -881,7 +311,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4423"
  },
  {
@@ -896,7 +326,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4433"
  },
  {
@@ -911,7 +341,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4441"
  },
  {
@@ -926,7 +356,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4453"
  },
  {
@@ -941,7 +371,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4456"
  },
  {
@@ -956,7 +386,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4458"
  },
  {
@@ -971,7 +401,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4500"
  },
  {
@@ -986,7 +416,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4506"
  },
  {
@@ -1001,7 +431,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4514"
  },
  {
@@ -1016,7 +446,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4545"
  },
  {
@@ -1031,7 +461,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4552"
  },
  {
@@ -1046,7 +476,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4554"
  },
  {
@@ -1061,7 +491,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4608"
  },
  {
@@ -1076,7 +506,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4621"
  },
  {
@@ -1091,7 +521,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4624"
  },
  {
@@ -1106,7 +536,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4643"
  },
  {
@@ -1121,7 +551,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4653"
  },
  {
@@ -1136,7 +566,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4701"
  },
  {
@@ -1151,7 +581,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4715"
  },
  {
@@ -1166,7 +596,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4722"
  },
  {
@@ -1181,7 +611,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4747"
  },
  {
@@ -1196,7 +626,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T4884"
  },
  {
@@ -1211,7 +641,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0355"
  },
  {
@@ -1226,7 +656,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T0704"
  },
  {
@@ -1241,7 +671,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T0721"
  },
  {
@@ -1256,7 +686,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T0731"
  },
  {
@@ -1271,7 +701,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0133"
  },
  {
@@ -1286,7 +716,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/03b28af220694b01ba8ebc7e82d9e678/view"
  },
  {
@@ -1301,7 +731,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/38f3db1630cb43b1ba53b1e80e1ffaa9/view"
  },
  {
@@ -1316,7 +746,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/691ffef7e0df452289e40d1ed8f05042/view"
  },
  {
@@ -1331,7 +761,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/cdf492db2fdd4441888644e58a799af9/view"
  },
  {
@@ -1346,7 +776,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/dc0e53346b5741ce9773943e955d2793/view"
  },
  {
@@ -1361,7 +791,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e32221b53b0b4619a2d5bafc718cdd48/view"
  },
  {
@@ -1376,7 +806,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Snow-Blower-Rental/0000437990?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1391,7 +821,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Administration-Janitorial-Services/0000438177?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1406,7 +836,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MCCC-Janitorial-Services/0000438198?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1421,7 +851,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Annex-1-Janitorial-Services/0000438201?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1436,7 +866,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Annex-3-Janitorial-Services/0000438203?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1451,7 +881,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MCSO-Janitorial-Services/0000438205?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1466,7 +896,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MOCO-Janitorial-Services/0000438207?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1481,7 +911,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Snow-Removal-Services-Livermore-Elementary-School/0000439206?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1496,7 +926,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Final-Settlement-ACJC-Courthouse-1-Inmate-Elevators-Mechanical-Upgrades-Phase-1/0000440055?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1511,7 +941,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444202822731?target=view"
  },
  {
@@ -1526,7 +956,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A027T0210"
  },
  {
@@ -1541,7 +971,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5017"
  },
  {
@@ -1556,7 +986,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5059"
  },
  {
@@ -1571,7 +1001,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5079"
  },
  {
@@ -1586,7 +1016,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5080"
  },
  {
@@ -1601,7 +1031,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5090"
  },
  {
@@ -1616,7 +1046,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5115"
  },
  {
@@ -1631,7 +1061,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
  },
  {
@@ -1646,7 +1076,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
  },
  {
@@ -1661,7 +1091,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
  },
  {
@@ -1676,7 +1106,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L127T1451"
  },
  {
@@ -1691,7 +1121,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0417"
  },
  {
@@ -1706,7 +1136,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L527T0213"
  },
  {
@@ -1721,7 +1151,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M127T0972"
  },
  {
@@ -1736,7 +1166,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T1169"
  },
  {
@@ -1751,7 +1181,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T1216"
  },
  {
@@ -1766,7 +1196,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0180"
  },
  {
@@ -1781,7 +1211,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0181"
  },
  {
@@ -1796,7 +1226,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/02d87e106590410fbc85be161ebe68a9/view"
  },
  {
@@ -1811,7 +1241,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/1a17809e0929401bb214e6a23ca4770d/view"
  },
  {
@@ -1826,7 +1256,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/3e9d47ad4ab54b0cb8f5490153f09982/view"
  },
  {
@@ -1841,7 +1271,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/79be5e235b944235bb34559d96243e42/view"
  },
  {
@@ -1856,7 +1286,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/8ae53e6a33344f4d9333c7e33c113f09/view"
  },
  {
@@ -1871,7 +1301,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/b6e91ee3debc4d8089be1512706d0f46/view"
  },
  {
@@ -1886,7 +1316,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/ce96fcd8c90945a5925bdcb5c4a6fe68/view"
  },
  {
@@ -1901,7 +1331,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ADA27-001-Dementia-Unit-Improvements-San-Carlos-Correctional-Facility-SCCF/0000437338?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1916,7 +1346,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Secure-Electronic-Media-Destruction-Services/0000438944?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1931,7 +1361,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-006-Fencing/0000439353?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1946,7 +1376,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Janitorial-Supplies/0000439728?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1961,7 +1391,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0037"
  },
  {
@@ -1976,7 +1406,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": null
  },
  {
@@ -1991,7 +1421,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": null
  },
  {
@@ -2006,7 +1436,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627Q0048"
  },
  {
@@ -2021,7 +1451,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5158"
  },
  {
@@ -2036,7 +1466,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5272"
  },
  {
@@ -2051,7 +1481,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5318"
  },
  {
@@ -2066,7 +1496,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5320"
  },
  {
@@ -2081,7 +1511,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5322"
  },
  {
@@ -2096,7 +1526,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5330"
  },
  {
@@ -2111,7 +1541,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5338"
  },
  {
@@ -2126,7 +1556,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5357"
  },
  {
@@ -2141,7 +1571,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5368"
  },
  {
@@ -2156,7 +1586,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5377"
  },
  {
@@ -2171,7 +1601,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5378"
  },
  {
@@ -2186,7 +1616,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5381"
  },
  {
@@ -2201,7 +1631,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5382"
  },
  {
@@ -2216,7 +1646,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5385"
  },
  {
@@ -2231,7 +1661,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5386"
  },
  {
@@ -2246,7 +1676,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5387"
  },
  {
@@ -2261,7 +1691,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/7534801e9e1940b4a1ce3bda0bc642a5/view"
  },
  {
@@ -2276,7 +1706,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/b102b927e1eb45a099793120873e02d1/view"
  },
  {
@@ -2291,7 +1721,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/f559aac3b6c24f9e8cafa16f94df8be1/view"
  },
  {
@@ -2306,7 +1736,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2321,7 +1751,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Asbestos-Abatement-and-Historic-Artifact-Preservation-at-575-Bush-Street/0000438484?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2336,7 +1766,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Landscape-Construction-Services/0000439444?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2351,8 +1781,23 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Speaker-Cabling-Installation/0000440182?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:2720624627",
+  "source": "bidnet",
+  "agency": "",
+  "title": "J065--Full-service Preventative Maintenance on Siemens Symbia S",
+  "sol": "",
+  "closing": "2026-10-28",
+  "posted": "2026-10-22",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720624627?target=view"
  },
  {
   "key": "samgov:8f0e3b72596a4714a555ecd5eb0e899b",
@@ -2366,7 +1811,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/8f0e3b72596a4714a555ecd5eb0e899b/view"
  },
  {
@@ -2381,7 +1826,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/db84deebdb884ada854ec83ee9a6235c/view"
  },
  {
@@ -2396,7 +1841,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/eb19e0c129334ba3adb062afc3c5c764/view"
  },
  {
@@ -2411,7 +1856,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2426,7 +1871,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-Limestone-Repairs/0000438220?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2441,7 +1886,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Hudson-Wastewater-Treatment-Facility-Expansion-Design/0000439007?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2456,7 +1901,7 @@
   "prebid_mandatory": "",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Hood-Inspection-and-Cleaning-Services/0000439455?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2471,7 +1916,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2486,7 +1931,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view"
  },
  {
@@ -2501,7 +1946,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L527T0248"
  },
  {
@@ -2516,7 +1961,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7LX27U0227"
  },
  {
@@ -2531,7 +1976,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/d20097c1616d47c7833927894d6850b7/view"
  },
  {
@@ -2546,7 +1991,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Engineering-On-Call-Services-for-Water-Wastewater-and-Stormwater-Projects/0000426883?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2561,7 +2006,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/FENCING-PROJECT-AT-11600-RIDGE-PARKWAY/0000436792?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2576,7 +2021,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2591,7 +2036,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Waste-Hauling-Services-for-City-Facilities/0000437533?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2606,7 +2051,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Control-Panel-Replacement-and-Device-Upgrade/0000437963?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2621,7 +2066,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001284-RL2-Lighting-Upgrades-Hard-Lids-and-Emergency-Lighting/0000438184?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2636,7 +2081,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Public-Library-Gas-Boiler-Replacement/0000439034?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2651,7 +2096,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Police-Department-Boiler-Replacement/0000439061?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2666,7 +2111,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Fire-Station-1-Generator-and-Transfer-Switch-Upgrade-Replacements/0000439104?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2681,7 +2126,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view"
  },
  {
@@ -2696,7 +2141,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L027T0035"
  },
  {
@@ -2711,7 +2156,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L127U0080"
  },
  {
@@ -2726,7 +2171,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0466"
  },
  {
@@ -2741,7 +2186,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2418a9db688d494abb607d1a8fe88058/view"
  },
  {
@@ -2756,7 +2201,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view"
  },
  {
@@ -2771,7 +2216,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/9ede66cb08524a8a8c18d5308544eafd/view"
  },
  {
@@ -2786,7 +2231,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/dccd5b89612545bf88341d486f74a396/view"
  },
  {
@@ -2801,7 +2246,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/fc84984eaeee410897734ba17d6782ed/view"
  },
  {
@@ -2816,7 +2261,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
  },
  {
@@ -2831,7 +2276,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-Door-Slider-Replacement/0000438817?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2846,7 +2291,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Professional-Custodial-Services/0000439180?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2861,7 +2306,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Annual-Fire-Alarm-System-Troubleshooting-and-Repair/0000439739?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2876,7 +2321,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/JANITORIAL-SERVICES-FOR-DOUGLAS-COUNTY-FACILITIES/0000440236?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2891,7 +2336,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2c6baa53c8054e3298082a09ae3a7b5f/view"
  },
  {
@@ -2906,7 +2351,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/83f8e4293685404da1e09c1d43a81204/view"
  },
  {
@@ -2921,7 +2366,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/97d4df5ffe0f47ce9a9e19bf923de773/view"
  },
  {
@@ -2936,7 +2381,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/9eb8d0f698424e2e8a46b5475dcf4d7c/view"
  },
  {
@@ -2951,7 +2396,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/f421756d4dbd482bae39b05d4208ff7d/view"
  },
  {
@@ -2966,7 +2411,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/22eaa5d5e7164f03802e778ff9432ce1/view"
  },
  {
@@ -2981,7 +2426,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fairgrounds-Turfgrass-Conversion/0000438945?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2996,7 +2441,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3011,7 +2456,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Dome-Glass-Replacement/0000439360?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3026,7 +2471,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Palmer-Renovation-Abatement-Project/0000439805?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3041,8 +2486,23 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Pueblo-Water-ANNUAL-CONTRACT-FOR-MECHANICAL-JOINT-RESTRAINTS-2026/0000440856?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:2720568272",
+  "source": "bidnet",
+  "agency": "",
+  "title": "S--Sources Sought, Janitorial Services at Hoover Dam",
+  "sol": "",
+  "closing": "2026-11-04",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720568272?target=view"
  },
  {
   "key": "bidnet:0000435118",
@@ -3056,7 +2516,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Environmental-Consulting-Services/0000435118?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3071,7 +2531,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Aztlan-Outdoor-Pool-Replacement-CM-GC/0000437685?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3086,7 +2546,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Preventative-Maintenance-Repairs-for-Douglas-County-Facilities/0000439630?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3101,7 +2561,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3116,8 +2576,23 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Commercial-Residential-Fencing-for-Douglas-County-Facilities/0000439657?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:444205418920",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Sheriffs Head Quarters Lighting Upgrades",
+  "sol": "",
+  "closing": "2026-11-05",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205418920?target=view"
  },
  {
   "key": "samgov:498039a792b2415ca237b1f25185acfd",
@@ -3131,7 +2606,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view"
  },
  {
@@ -3146,7 +2621,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/b05bd8d70d204cf3a0903cc3a05934a6/view"
  },
  {
@@ -3161,7 +2636,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3176,7 +2651,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Hazardous-Materials-Spill-Response-Services/0000439736?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3191,7 +2666,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-Town-of-Parker-Generator-Maintenance-Repair-Services/0000440494?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3206,7 +2681,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/10b03ac3597744dd9017bde2032a1fe3/view"
  },
  {
@@ -3221,7 +2696,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view"
  },
  {
@@ -3236,7 +2711,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-General-Construction-Services/0000439531?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3251,7 +2726,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Redstone-Area-Snow-Removal-Services/0000439654?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3266,7 +2741,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/SMFR-26-1015-JOINT-SERVICES-TRAINING-FACILITY-BURN-BUILDING/0000439824?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3281,7 +2756,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Roof-Repair-Services/0000440260?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3296,7 +2771,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3311,7 +2786,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/66f6d2a7bd984472b9e573b3df0e56f7/view"
  },
  {
@@ -3326,7 +2801,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/b240a8fc08d548528f9f1352d779d9ad/view"
  },
  {
@@ -3341,7 +2816,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view"
  },
  {
@@ -3356,7 +2831,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view"
  },
  {
@@ -3367,11 +2842,11 @@
   "sol": "",
   "closing": "2026-11-10",
   "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
+  "prebid_date": "2026-10-27",
+  "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CIP25-025-Public-Works-Operation-Center-Decant-Facility-Expansion/0000435410?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3386,7 +2861,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/AIRPORT-MASTER-PLAN-ON-CALL-PLANNING-SERVICES-FEDERAL/0000438927?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3401,7 +2876,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Encampment-Cleanup-Biohazard-Remediation-and-Abandoned-Vehicle-Removal/0000439994?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3416,7 +2891,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Property-Management-Services/0000440115?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3431,7 +2906,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/6ef9cebf1ae54094b375118b99c31867/view"
  },
  {
@@ -3446,7 +2921,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/02fdc748f70d471abfba3cc6f8ac5a06/view"
  },
  {
@@ -3461,7 +2936,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2fa822e893384a93bccb65cb8ac7aea4/view"
  },
  {
@@ -3476,7 +2951,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/5bf1391766b64cec84fbea012633435f/view"
  },
  {
@@ -3491,7 +2966,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c197c44e343742a5adde5688821f5075/view"
  },
  {
@@ -3506,7 +2981,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3521,7 +2996,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Inspection-Testing/0000439558?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3536,7 +3011,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Switchgear-and-Protective-Relay-Maintenance/0000439732?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3551,7 +3026,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/STREET-LIGHT-REPAIR-AND-REPLACEMENT-AT-THE-COLORADO-AIR-AND-SPACE-PORT/0000439853?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3566,7 +3041,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3581,7 +3056,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view"
  },
  {
@@ -3596,7 +3071,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/156ee7b93b084524895a20bab5d2ad6e/view"
  },
  {
@@ -3611,7 +3086,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/db1cb44b650f4cdc892299917c04adf9/view"
  },
  {
@@ -3626,7 +3101,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3641,7 +3116,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3656,7 +3131,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
  },
  {
@@ -3671,7 +3146,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view"
  },
  {
@@ -3686,8 +3161,53 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440948",
+  "source": "bidnet",
+  "agency": "City of Arvada",
+  "title": "On-Call Traffic Control Services Citywide - REISSUE",
+  "sol": "26-PWT-061",
+  "closing": "2026-11-17",
+  "posted": "2026-10-22",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440975",
+  "source": "bidnet",
+  "agency": "City of Cortez",
+  "title": "RFQ \u2013 City of Cortez On-Call Planning Services",
+  "sol": "GS-26-OCPS",
+  "closing": "2026-11-17",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-City-of-Cortez-On-Call-Planning-Services/0000440975?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000441130",
+  "source": "bidnet",
+  "agency": "La Plata County",
+  "title": "On-Call Services - Various Trades",
+  "sol": "26-053-1215",
+  "closing": "2026-11-17",
+  "posted": "2026-10-22",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Services-Various-Trades/0000441130?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000440491",
@@ -3701,8 +3221,38 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-San-Luis-Valley-Potato-Research-Facility/0000440491?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440968",
+  "source": "bidnet",
+  "agency": "Morgan County",
+  "title": "2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities",
+  "sol": "2026-1119-001",
+  "closing": "2026-11-18",
+  "posted": "2026-10-21",
+  "prebid_date": "2026-10-29",
+  "prebid_mandatory": "Optional",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:444206990087",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Roof Replacement and Gutter Project - Multiple County Facilities",
+  "sol": "",
+  "closing": "2026-11-18",
+  "posted": "2026-10-22",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view"
  },
  {
   "key": "bidnet:0000437039",
@@ -3716,7 +3266,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3731,7 +3281,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3746,8 +3296,23 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:444205093628",
+  "source": "bidnet",
+  "agency": "",
+  "title": "MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION",
+  "sol": "",
+  "closing": "2026-11-19",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
  },
  {
   "key": "samgov:5eab430c39444c279a8cc451a662092d",
@@ -3761,7 +3326,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/5eab430c39444c279a8cc451a662092d/view"
  },
  {
@@ -3776,7 +3341,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view"
  },
  {
@@ -3791,7 +3356,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view"
  },
  {
@@ -3806,7 +3371,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view"
  },
  {
@@ -3821,7 +3386,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-COMMERCIAL-PEDESTRIAN-DOOR-REPAIRS/0000440813?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3836,7 +3401,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -3851,7 +3416,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view"
  },
  {
@@ -3866,7 +3431,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view"
  },
  {
@@ -3881,8 +3446,38 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440953",
+  "source": "bidnet",
+  "agency": "Town of Windsor",
+  "title": "RFQ-CIVIL ENGINEERING ON-CALL SERVICES",
+  "sol": "EN-26-018",
+  "closing": "2026-12-08",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-CIVIL-ENGINEERING-ON-CALL-SERVICES/0000440953?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440926",
+  "source": "bidnet",
+  "agency": "El Paso County",
+  "title": "On-Call Professional Services Program",
+  "sol": "SOQ-26-104",
+  "closing": "2026-12-09",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Services-Program/0000440926?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:b8d42df049264aef86019c9aa4e691c8",
@@ -3896,7 +3491,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view"
  },
  {
@@ -3911,7 +3506,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view"
  },
  {
@@ -3926,7 +3521,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view"
  },
  {
@@ -3941,7 +3536,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
  },
  {
@@ -3956,7 +3551,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/7a6f641b2ccc4be7aa8e283cb9a2e90b/view"
  },
  {
@@ -3971,7 +3566,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/7872b54a0d4547a78d839266d5c8fba5/view"
  },
  {
@@ -3986,7 +3581,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view"
  },
  {
@@ -4001,7 +3596,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view"
  },
  {
@@ -4016,7 +3611,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view"
  },
  {
@@ -4031,7 +3626,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/ef42fcf29ca7449db6a4146acf468d19/view"
  },
  {
@@ -4046,7 +3641,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/031da2a2b09f4488ae95045518da7098/view"
  },
  {
@@ -4061,7 +3656,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/18cf8e050c6a40bca486f7516b646cfc/view"
  },
  {
@@ -4076,7 +3671,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/54da6291bed54524833884f578079494/view"
  },
  {
@@ -4091,7 +3686,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view"
  },
  {
@@ -4106,7 +3701,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view"
  },
  {
@@ -4121,7 +3716,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view"
  }
 ]

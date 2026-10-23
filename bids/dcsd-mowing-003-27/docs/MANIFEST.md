@@ -8,6 +8,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - 003-27 RFP Mowing Services Template Rev 4.docx
 - Mowing Sites Price Sheet.xlsx
 - Q_A Document 1.pdf
+- Q_A Document 2.pdf
 - RFP-003-27-Mowing-biddoc.pdf
 - RFP-003-27-Mowing-biddoc.txt
 

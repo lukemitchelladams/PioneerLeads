@@ -5,6 +5,9 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 26-52 Mandatory Pre-Bid Meeting Agenda.pdf
+- Question and Answer.pdf
+- RFP 26-52 Mandatory Attendance List.pdf
 - RFP-26-52-Fairgrounds-Turfgrass-Conversion.pdf
 
 ## Referenced in the solicitation
