@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-26T18:36:34+00:00
+# Bid watch report — 2026-10-26T19:36:04+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 607 | BUYER 405, AGGREGATE 203 | 89 | 2026-10-26T18:36:34+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T18:36:34+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 91 |  | 91 | 2026-10-26T18:36:34+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 608 | BUYER 406, AGGREGATE 203 | 89 | 2026-10-26T19:36:04+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T19:36:04+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 91 |  | 91 | 2026-10-26T19:36:04+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -22,12 +22,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Town of Parker | CIP25-025 – Public Works Operation Center Decant Facility Expansion | 2026-11-10 (15d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CIP25-025-Public-Works-Operation-Center-Decant-Facility-Expansion/0000435410?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (24d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Morgan County | 2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities | 2026-11-18 (23d) | 2026-10-29 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | HOUSING, BEARING UNI | 2026-11-26 (31d) |  | https://sam.gov/workspace/contract/opp/8ccf3c647f414b7ea5cbb513ccfb51c9/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -291,7 +285,3 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 | 3020 | SPE7L5-27-T-0248 | PULLEY, GROOVE (NSN 3020-01-737-7088, qty 5) | 5 | 2026-10-29 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L527T0248 |
 | 3110 | SPE4A6-27-T-5090 | BEARING, BALL, ANNULA (NSN 3110-01-363-6021, qty 4) | 4 | 2026-10-26 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5090 |
 | 3020 | SPE7L1-27-T-1626 | GEAR, SPUR (NSN 3020-01-721-6549, qty 4) | 4 | 2026-10-26 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L127T1626 |
-
-## Documents downloaded
-
-- bidnet:0000441328: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441328/IFB 042-26 HVAC Filters and Belts.pdf
