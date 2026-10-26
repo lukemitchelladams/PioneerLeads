@@ -26,7 +26,7 @@ Log every send, follow-up and reply in the table.
 | 2 | Smith Power Products | Frederick | generators@smithppi.com | 303-833-0416 (24/7) | Factory distributor for MTU and Detroit | Rolls-Royce/MTU set + both Detroit sets (3 of 7) | | 10/26 | |
 | 3 | DVL (Denver office) | Centennial | GenService@DVLnet.com | 303-771-5000; generator emergencies 303-953-3128 | Generac Industrial dealer; names CAT, Cummins, Kohler, MTU | Closest firm; ask about Onan, Detroit, load-bank size | | 10/26 | |
 | 4 | Rocky Mountain Generator Supply | Denver | sales@rmgsco.com (in page source only) | 303-777-6778 | Cummins authorized dealer; "all generator manufacturers" | Backup for the Onan/Cummins sets | | 10/26 | |
-| 5 | Colorado Standby | Colorado Springs | info@coloradostandby.com | 719-624-8100 | Sells Cummins/Kohler; new owner | Last resort | | 10/26 | |
+| 5 | Colorado Standby | Colorado Springs | info@coloradostandby.com | 719-624-8100 | Sells Cummins/Kohler; new owner | Last resort | | 10/26 | 10/26 17:16 Brad Orgill (brad_orgill@coloradostandby.com): interested, asked for the RFP. RFP PDF sent to Luke to forward (too large to attach from cloud). |
 | 6 | Power Systems West | Aurora | none (call) | (303) 360-7110 | Rehlko/Kohler factory distributor; "all makes"; load bank in its PM agreements | Strong; nearest full-service shop | | | |
 | 7 | Gen-Tech | Commerce City | none (form: gentechusa.com/contact) | (303) 428-2517; 24/7 (800) 625-8324 | "All brands"; load-bank trucks; 5 branches | Strong multi-brand option | | | |
 | 8 | Cummins Sales and Service | Henderson | none (call) | (303) 287-0201 | Cummins/Onan factory | 3 of 7 units only | | | |
