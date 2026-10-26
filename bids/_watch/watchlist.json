@@ -273,6 +273,20 @@
    "match": "005-27|high-speed, reliable internet",
    "folder": "bids/dcsd-internet-005-27",
    "govtribe_ids": []
+  },
+  {
+   "name": "Colorado Springs On-Call Janitorial Services",
+   "source": "bidnet",
+   "match": "On-Call Janitorial Services",
+   "folder": "bids/cos-oncall-janitorial",
+   "govtribe_ids": []
+  },
+  {
+   "name": "Colorado Springs On-Call Snow Removal Services",
+   "source": "bidnet",
+   "match": "On-Call Snow Removal Services",
+   "folder": "bids/cos-oncall-snow",
+   "govtribe_ids": []
   }
  ]
 }

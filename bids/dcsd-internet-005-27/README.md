@@ -6,13 +6,13 @@
 | Portal | BidNet 0000439271 |
 | Solicitation number | RFP 005-27 |
 | Release date | |
-| Pre-bid / site visit | not in hand yet (documents queued for the next logged-in BidNet scan) |
+| Pre-bid / site visit | N/A (RFP schedule) |
 | Q&A deadline | |
 | Due date | |
 | Contract type | |
 | Term / renewals | |
 | Evaluation method | RFB (low bid) / RFP (scored) |
-| Status | Identified 2026-10-23 (Luke). EVALUATE: school internet is usually E-Rate funded; provider needs an FCC/USAC SPIN (498 ID). |
+| Status | **NO-GO 2026-10-26: RFP requires the bidder to hold an active FCC/USAC SPIN; Brown Bison has none.** Due 2026-11-09 14:00; no walkthrough. |
 
 ## Scope summary
 
