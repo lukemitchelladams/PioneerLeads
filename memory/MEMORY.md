@@ -608,3 +608,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-23 RESOLVED: Birmingham DPW (2018-01-20 to 2019-01-20, ~$1.35M) and Hoover (2019-03-13 to 2020-03-13, ~$1.75M) were HVAC/plumbing/electrical
   maintenance and repair contracts that Luke managed as PROJECT MANAGER. Luke does not want the holding company named. They predate the LLC, so NEVER
   list them as Brown Bison contracts or references; use them as Luke's resume lines only. DCSD final rebuilt: 31 pages, signatures on pp. 30-31.
+
+## 2026-10-26 — Govly (Luke found it)
+- Govly (govly.com) is a search/alert platform, not a bidding portal. Bids still go through each agency's portal (BidNet, OpenGov, Bonfire/EUNA, SAM).
+- Free plan: last 30 days of SAM.gov + "6,000+" state/local sources. Paid plans (custom pricing) add contract-vehicle opportunities (GSA schedules, SEWP, ITES), which need a seat on those vehicles; Brown Bison holds none.
+- Aimed at IT resellers/OEMs/integrators. Overlaps GovTribe for our trades; may fit the IT-consulting side.
+- No Govly MCP connector exists (registry checked), so the agent cannot search it. Luke signs up for the free plan himself; send its alert emails to luke@brownbisonco.com so the inbox check sees them.
