@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-26T20:36:08+00:00
+# Bid watch report — 2026-10-26T21:36:25+00:00
 
-**Headline:** 2 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 599 | BUYER 401, AGGREGATE 199 | 87 | 2026-10-26T20:36:08+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T20:36:08+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 92 |  | 92 | 2026-10-26T20:36:08+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 596 | BUYER 400, AGGREGATE 197 | 87 | 2026-10-26T21:36:25+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T21:36:25+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 92 |  | 92 | 2026-10-26T21:36:25+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -23,25 +23,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (24d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Morgan County | 2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities | 2026-11-18 (23d) | 2026-10-29 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-11-02 (7d) |  | https://sam.gov/workspace/contract/opp/52b4c80711934b99835162c13180bf40/view |
-| brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (24d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
-
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
 - Town of Parker RFP 26-028 HVAC PM & Repair (bonfire)
 - Poudre SD 27-702-002 Livermore snow (CRM-tracked) (bidnet)
 - 2027 Landscaping Management Services (EVALUATE; due 10/26; agency unknown) (bidnet)
 - Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9) (bonfire)
-
-## No longer listed (closed/awarded)
-
-- Snow Blower Rental (bidnet, due 2026-10-26)
-- Snow Removal Services - Livermore Elementary School (bidnet, due 2026-10-26)
-- Final Settlement: ACJC Courthouse 1 Inmate Elevators Mechanical Upgrades-Phase 1 (bidnet, due 2026-10-26)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
