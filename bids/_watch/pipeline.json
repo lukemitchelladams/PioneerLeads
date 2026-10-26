@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-26T20:28:00Z",
+ "updated": "2026-10-26T20:50:00Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -551,8 +551,8 @@
    "prebid": "2026-10-27T10:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "Water-treatment sub TBD",
-   "subs": "7 water-treatment firms emailed 2026-10-26 16:30-16:47Z (Summit Laboratories, H2 Global Solutions, TJ's Mechanical, TRS, Loren & Associates, Aqua-Chem, RK Water); 1 reply: H2 Global Solutions (Silas Norwood, COO) 19:23Z 'I reviewed the documents. Give me a shout when you can' (office 719-694-0515); Luke to call him today to confirm a tech for tomorrow's 10:00 walk and the consent form + ID. TRS (Mark) also called Luke. Others silent. Walk Tue 10/27 10:00 at TCF (Model, CO): whoever goes must write 'Brown Bison Holdings LLC' on the attendance log and first email a signed Exhibit G Consent to Search + ID copy to the solicitation's address (Garvin 16:56Z, sec. 4 p. 2). Quote due Thu 10/29 17:00.",
-   "sub_pricing": "None",
+   "subs": "H2 Global Solutions CONFIRMED (Luke + Silas Norwood by phone 10/26 ~14:45 MT): H2 sends a tech to the Tue 10/27 10:00 walk. Luke emailed Silas the Exhibit G Consent to Search 14:39 MT; signed form + photo ID copy must go to kimberly.rusgrove@state.co.us (DQ sec. 4; MOD 2 set the request deadline at 10/23, Garvin is accepting it late) so TCF security can run the background check before 10:00. Worker watches the inbox and forwards it on arrival (Luke's instruction 10/26). Verbal price range in private/notes.md; written quote pending by 10/28 noon. 6 other firms emailed 10/26, no reply (TRS called).",
+   "sub_pricing": "Partial (verbal range from H2, in private/)",
    "folder": "bids/cdoc-tcf-boiler-water",
    "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
   },

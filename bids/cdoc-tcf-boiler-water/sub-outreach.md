@@ -6,7 +6,7 @@ represent Brown Bison (asked CDOC, Jennifer Garvin, whether that counts). Brown 
 | Firm | City | Email | Phone | Sent | Reply |
 |---|---|---|---|---|---|
 | Summit Laboratories | Denver | info@summitlaboratories.com | 303-293-9862 | 10/26 | |
-| H2 Global Solutions | Colo. Springs / Goddard KS | sales@h2gs.com | 719-694-0515; 800-234-7899 | 10/26 | 10/26 13:23 MT Silas Norwood (COO, snorwood@h2gs.com): reviewed the docs, asks Luke to call. |
+| H2 Global Solutions | Colo. Springs / Goddard KS | sales@h2gs.com | 719-694-0515; 800-234-7899 | 10/26 | 10/26 13:23 MT Silas Norwood (COO, snorwood@h2gs.com) replied; Luke called ~14:45 MT: **H2 sends a tech to the 10/27 10:00 walk**; Luke sent Exhibit G 14:39 MT, awaiting the signed form + ID to forward to kimberly.rusgrove@state.co.us. Price range in private/. |
 | TJ's Mechanical | Trinidad | tjsmechanicalinc@gmail.com | 719-941-4967 | 10/26 | |
 | TRS Incorporated | Golden | info@trsinc.us | 303-499-6722 | 10/26 | Mark called Luke 10/26 (per HQ). |
 | Loren & Associates | Denver | web@lorenandassociates.com | 303-755-1415 | 10/26 | |
@@ -15,3 +15,7 @@ represent Brown Bison (asked CDOC, Jennifer Garvin, whether that counts). Brown 
 
 Not contacted (no public email): Thomas B. Mansfield (Cleaver-Brooks rep, Castle Rock, 303-781-7878), Fact Water (970-300-1237),
 Nielsen Mechanical (general@nielsenmechanical.net), R&R Heating Pueblo, Harmon-Bonded, Excellent PHM, BlueBird, Colorado Springs Boilers.
+
+
+## Attendee clearance (DQ 2027000037 sec. 4, MOD 2)
+"Attendees will be required to sign and return the Consent to Search form (Exhibit G), with a copy of their current photo identification card (ID) and pass a background check before being added to the facility access list." "Please email your request to attend the Site Visit to: kimberly.rusgrove@state.co.us no later than October 23, 2026, with a sign consent form (Exhibit G) and photo ID copy for all attendees. Admittance is at the sole discretion and consent of Trinidad Correctional Facility Security staff." Our request went in late (10/26, via Jennifer Garvin, who answered with the attendance-log + consent-form route). Forward H2's signed Exhibit G + ID to Kimberly Rusgrove, cc Jennifer Garvin, the moment it lands.

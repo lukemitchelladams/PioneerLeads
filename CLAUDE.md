@@ -68,6 +68,8 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
   the agent only surfaces Alex's emails and flags landscaping bids worth getting his pricing on.
 - **NEVER put links in emails to subs or anyone outside (Luke, 2026-10-26, emphatic)**: no GitHub/raw links, no portal links to the
   bid. Attach files, or have Luke forward them. If a file is too big to attach from here, send Luke the file to forward.
+- **H2 Global Solutions = go-to sub for boiler / water-treatment and similar mechanical-service jobs** (Luke, 2026-10-26: Silas Norwood, COO,
+  snorwood@h2gs.com, office 719-694-0515, was fast and helpful on the TCF boiler DQ; run future jobs in their wheelhouse by them first).
 - All business email goes out from luke@brownbisonco.com. Never use lukemitchelladams@gmail.com for business.
 - Gmail (Luke, 2026-10-26): Luke gave blanket permission for his mailbox and wants the agent to act on its own:
   send sub outreach, follow-ups, buyer questions and site-visit RSVPs from luke@brownbisonco.com without asking.
