@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-26T20:50:00Z",
+ "updated": "2026-10-26T21:12:00Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -551,7 +551,7 @@
    "prebid": "2026-10-27T10:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "Water-treatment sub TBD",
-   "subs": "H2 Global Solutions CONFIRMED (Luke + Silas Norwood by phone 10/26 ~14:45 MT): H2 sends a tech to the Tue 10/27 10:00 walk. Luke emailed Silas the Exhibit G Consent to Search 14:39 MT; signed form + photo ID copy must go to kimberly.rusgrove@state.co.us (DQ sec. 4; MOD 2 set the request deadline at 10/23, Garvin is accepting it late) so TCF security can run the background check before 10:00. Worker watches the inbox and forwards it on arrival (Luke's instruction 10/26). Verbal price range in private/notes.md; written quote pending by 10/28 noon. 6 other firms emailed 10/26, no reply (TRS called).",
+   "subs": "H2 Global Solutions CONFIRMED (Luke + Silas Norwood by phone 10/26 ~14:45 MT): H2 sends a tech to the Tue 10/27 10:00 walk. Luke emailed Silas the Exhibit G Consent to Search 14:39 MT; signed form + photo ID copy must go to kimberly.rusgrove@state.co.us (DQ sec. 4; MOD 2 set the request deadline at 10/23, Garvin is accepting it late) so TCF security can run the background check before 10:00. Silas returned '7. Exhibit G - Consent to Search copy.pdf' 15:01 MT ('this look right?'); WORKER forwarded it to kimberly.rusgrove@state.co.us cc jennifer.garvin@state.co.us at 15:09 MT (Gmail msg 1a17a0bd728502f9) per Luke's instruction. No separate photo-ID file was attached; Luke to confirm with Silas that the ID copy is inside the PDF or send it separately. Verbal price range in private/notes.md; written quote pending by 10/28 noon. 6 other firms emailed 10/26, no reply (TRS called).",
    "sub_pricing": "Partial (verbal range from H2, in private/)",
    "folder": "bids/cdoc-tcf-boiler-water",
    "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
@@ -879,6 +879,12 @@
    "when": "2026-10-29T17:00:00-06:00",
    "kind": "Due",
    "note": "TCF boiler DQ quote due on BidNet"
+  },
+  {
+   "bid": "cdoc-tcf-boiler-water",
+   "when": "2026-10-26T15:09:00-06:00",
+   "kind": "Sub clearance sent",
+   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk"
   }
  ],
  "doc_gaps": [

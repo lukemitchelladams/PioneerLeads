@@ -6,7 +6,7 @@ represent Brown Bison (asked CDOC, Jennifer Garvin, whether that counts). Brown 
 | Firm | City | Email | Phone | Sent | Reply |
 |---|---|---|---|---|---|
 | Summit Laboratories | Denver | info@summitlaboratories.com | 303-293-9862 | 10/26 | |
-| H2 Global Solutions | Colo. Springs / Goddard KS | sales@h2gs.com | 719-694-0515; 800-234-7899 | 10/26 | 10/26 13:23 MT Silas Norwood (COO, snorwood@h2gs.com) replied; Luke called ~14:45 MT: **H2 sends a tech to the 10/27 10:00 walk**; Luke sent Exhibit G 14:39 MT, awaiting the signed form + ID to forward to kimberly.rusgrove@state.co.us. Price range in private/. |
+| H2 Global Solutions | Colo. Springs / Goddard KS | sales@h2gs.com | 719-694-0515; 800-234-7899 | 10/26 | 10/26 13:23 MT Silas Norwood (COO, snorwood@h2gs.com) replied; Luke called ~14:45 MT: **H2 sends a tech to the 10/27 10:00 walk**; Luke sent Exhibit G 14:39 MT; Silas returned the signed form 15:01 MT; forwarded to kimberly.rusgrove@state.co.us cc jennifer.garvin@state.co.us 15:09 MT. Photo-ID copy not seen as a separate file: confirm with Silas. Price range in private/. |
 | TJ's Mechanical | Trinidad | tjsmechanicalinc@gmail.com | 719-941-4967 | 10/26 | |
 | TRS Incorporated | Golden | info@trsinc.us | 303-499-6722 | 10/26 | Mark called Luke 10/26 (per HQ). |
 | Loren & Associates | Denver | web@lorenandassociates.com | 303-755-1415 | 10/26 | |
