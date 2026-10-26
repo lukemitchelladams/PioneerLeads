@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-26T19:30:00Z",
+ "updated": "2026-10-26T20:28:00Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -551,7 +551,7 @@
    "prebid": "2026-10-27T10:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "Water-treatment sub TBD",
-   "subs": "7 water-treatment firms emailed 2026-10-26 16:30-16:47Z (Summit Laboratories, H2 Global Solutions, TJ's Mechanical, TRS, Loren & Associates, Aqua-Chem, RK Water); 0 replies at 17:30Z. Walk Tue 10/27 10:00 at TCF (Model, CO): whoever goes must write 'Brown Bison Holdings LLC' on the attendance log and first email a signed Exhibit G Consent to Search + ID copy to the solicitation's address (Garvin 16:56Z, sec. 4 p. 2). Quote due Thu 10/29 17:00.",
+   "subs": "7 water-treatment firms emailed 2026-10-26 16:30-16:47Z (Summit Laboratories, H2 Global Solutions, TJ's Mechanical, TRS, Loren & Associates, Aqua-Chem, RK Water); 1 reply: H2 Global Solutions (Silas Norwood, COO) 19:23Z 'I reviewed the documents. Give me a shout when you can' (office 719-694-0515); Luke to call him today to confirm a tech for tomorrow's 10:00 walk and the consent form + ID. TRS (Mark) also called Luke. Others silent. Walk Tue 10/27 10:00 at TCF (Model, CO): whoever goes must write 'Brown Bison Holdings LLC' on the attendance log and first email a signed Exhibit G Consent to Search + ID copy to the solicitation's address (Garvin 16:56Z, sec. 4 p. 2). Quote due Thu 10/29 17:00.",
    "sub_pricing": "None",
    "folder": "bids/cdoc-tcf-boiler-water",
    "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
