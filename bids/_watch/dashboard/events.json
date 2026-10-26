@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -27.82
+  "days_left": -30.91
  },
  {
   "key": "littleton-2126|Pre-bid (optional)|2026-10-09T10:00:00-06:00",
@@ -25,7 +25,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -13.94
+  "days_left": -17.03
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -35,11 +35,11 @@
   "kind": "MANDATORY pre-bid",
   "agency": "Douglas County School District",
   "sol": "003-27",
-  "decision": "GO",
+  "decision": "SUBMITTED",
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -8.99
+  "days_left": -12.08
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -53,21 +53,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -7.94
- },
- {
-  "key": "arapahoe-26-52|MANDATORY pre-bid|2026-10-19T13:30:00-06:00",
-  "bid": "arapahoe-26-52",
-  "when": "2026-10-19T13:30:00-06:00",
-  "date": "2026-10-19",
-  "kind": "MANDATORY pre-bid",
-  "agency": "Arapahoe County",
-  "sol": "RFP 26-52",
-  "decision": "AT RISK",
-  "note": "",
-  "critical": true,
-  "past": true,
-  "days_left": -3.8
+  "days_left": -11.03
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -81,7 +67,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -3.78
+  "days_left": -6.87
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -95,7 +81,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -2.94
+  "days_left": -6.03
  },
  {
   "key": "elbert-2026-006|Questions due|2026-10-20T13:00:00-06:00",
@@ -109,7 +95,7 @@
   "note": "Elbert fencing questions close",
   "critical": false,
   "past": true,
-  "days_left": -2.82
+  "days_left": -5.91
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -123,7 +109,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -1.94
+  "days_left": -5.03
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -137,7 +123,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -1.94
+  "days_left": -5.03
  },
  {
   "key": "littleton-2126|Addendum|2026-10-21T12:00:00-06:00",
@@ -151,7 +137,7 @@
   "note": "Littleton Q&A / meeting notes post in RMEPS",
   "critical": false,
   "past": true,
-  "days_left": -1.86
+  "days_left": -4.95
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -165,21 +151,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -0.74
- },
- {
-  "key": "dcsd-003-27|Submission|2026-10-23T14:00:00-06:00",
-  "bid": "dcsd-003-27",
-  "when": "2026-10-23T14:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Submission",
-  "agency": "Douglas County School District",
-  "sol": "003-27",
-  "decision": "GO",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 0.22
+  "days_left": -3.83
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -192,8 +164,8 @@
   "decision": "EVALUATE",
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
-  "past": false,
-  "days_left": 0.22
+  "past": true,
+  "days_left": -2.87
  },
  {
   "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
@@ -206,8 +178,8 @@
   "decision": "GO",
   "note": "27J speaker cabling",
   "critical": false,
-  "past": false,
-  "days_left": 0.26
+  "past": true,
+  "days_left": -2.83
  },
  {
   "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
@@ -220,8 +192,8 @@
   "decision": "GO",
   "note": "Email emorales@sd27j.net; 4 questions drafted",
   "critical": false,
-  "past": false,
-  "days_left": 0.26
+  "past": true,
+  "days_left": -2.83
  },
  {
   "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -234,8 +206,8 @@
   "decision": "GO",
   "note": "Plumber pricing/answers",
   "critical": false,
-  "past": false,
-  "days_left": 0.35
+  "past": true,
+  "days_left": -2.74
  },
  {
   "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -248,8 +220,8 @@
   "decision": "GO",
   "note": "Low-voltage sub pricing",
   "critical": false,
-  "past": false,
-  "days_left": 0.35
+  "past": true,
+  "days_left": -2.74
  },
  {
   "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -262,8 +234,8 @@
   "decision": "GO",
   "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far",
   "critical": false,
-  "past": false,
-  "days_left": 0.35
+  "past": true,
+  "days_left": -2.74
  },
  {
   "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -276,8 +248,8 @@
   "decision": "GO",
   "note": "Cabling sub price; outreach not sent as of 10/20",
   "critical": false,
-  "past": false,
-  "days_left": 0.35
+  "past": true,
+  "days_left": -2.74
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -290,36 +262,8 @@
   "decision": "EVALUATE",
   "note": "",
   "critical": false,
-  "past": false,
-  "days_left": 3.06
- },
- {
-  "key": "poudre-27-702-002|Submission|2026-10-26T14:00:00-06:00",
-  "bid": "poudre-27-702-002",
-  "when": "2026-10-26T14:00:00-06:00",
-  "date": "2026-10-26",
-  "kind": "Submission",
-  "agency": "Poudre School District",
-  "sol": "IFB 27-702-002",
-  "decision": "GO",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 3.22
- },
- {
-  "key": "landscaping-mgmt-2027|Submission|2026-10-26T14:00:00-06:00",
-  "bid": "landscaping-mgmt-2027",
-  "when": "2026-10-26T14:00:00-06:00",
-  "date": "2026-10-26",
-  "kind": "Submission",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 444202822731",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 3.22
+  "past": true,
+  "days_left": -0.03
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -333,7 +277,7 @@
   "note": "Teams",
   "critical": false,
   "past": false,
-  "days_left": 3.22
+  "days_left": 0.13
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -347,7 +291,21 @@
   "note": "Hite facility",
   "critical": false,
   "past": false,
-  "days_left": 4.01
+  "days_left": 0.92
+ },
+ {
+  "key": "cdoc-tcf-boiler-water|MANDATORY pre-bid|2026-10-27T10:00:00-06:00",
+  "bid": "cdoc-tcf-boiler-water",
+  "when": "2026-10-27T10:00:00-06:00",
+  "date": "2026-10-27",
+  "kind": "MANDATORY pre-bid",
+  "agency": "Colorado Department of Corrections",
+  "sol": "DQ CAAA 2027000037",
+  "decision": "GO (walk)",
+  "note": "",
+  "critical": true,
+  "past": false,
+  "days_left": 0.97
  },
  {
   "key": "elbert-2026-006|Submission|2026-10-27T12:30:00-06:00",
@@ -361,7 +319,7 @@
   "note": "Hard copy + email",
   "critical": true,
   "past": false,
-  "days_left": 4.16
+  "days_left": 1.07
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -375,7 +333,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 4.35
+  "days_left": 1.26
  },
  {
   "key": "sd27j-2021brrhs|Submission|2026-10-28T10:00:00-06:00",
@@ -389,7 +347,7 @@
   "note": "Email emorales@sd27j.net",
   "critical": true,
   "past": false,
-  "days_left": 5.06
+  "days_left": 1.97
  },
  {
   "key": "littleton-2126|Submission|2026-10-28T14:00:00-06:00",
@@ -403,21 +361,35 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 5.22
+  "days_left": 2.13
  },
  {
-  "key": "thornton-324-26|Submission|2026-10-28T15:00:00-06:00",
-  "bid": "thornton-324-26",
-  "when": "2026-10-28T15:00:00-06:00",
-  "date": "2026-10-28",
+  "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
+  "bid": "dcsd-003-27",
+  "when": "2026-10-29T14:00:00-06:00",
+  "date": "2026-10-29",
   "kind": "Submission",
-  "agency": "City of Thornton",
-  "sol": "RFP 324-26",
-  "decision": "GO",
-  "note": "BidNet or hand delivery",
+  "agency": "Douglas County School District",
+  "sol": "003-27",
+  "decision": "SUBMITTED",
+  "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 5.26
+  "days_left": 3.13
+ },
+ {
+  "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
+  "bid": "cdoc-tcf-boiler-water",
+  "when": "2026-10-29T17:00:00-06:00",
+  "date": "2026-10-29",
+  "kind": "Submission",
+  "agency": "Colorado Department of Corrections",
+  "sol": "DQ CAAA 2027000037",
+  "decision": "GO (walk)",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 3.26
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -431,7 +403,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 7.22
+  "days_left": 4.13
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -445,7 +417,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 10.26
+  "days_left": 7.17
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -459,7 +431,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 10.26
+  "days_left": 7.17
  },
  {
   "key": "dougco-janitorial|Submission|2026-11-02T15:00:00-07:00",
@@ -473,7 +445,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 10.31
+  "days_left": 7.22
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T00:00:00-07:00",
@@ -487,7 +459,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 10.68
+  "days_left": 7.59
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -501,35 +473,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 12.1
- },
- {
-  "key": "arapahoe-26-52|Submission|2026-11-04T14:00:00-07:00",
-  "bid": "arapahoe-26-52",
-  "when": "2026-11-04T14:00:00-07:00",
-  "date": "2026-11-04",
-  "kind": "Submission",
-  "agency": "Arapahoe County",
-  "sol": "RFP 26-52",
-  "decision": "AT RISK",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 12.26
- },
- {
-  "key": "parks-oncall-mowing|Submission|2026-11-05T14:00:00-07:00",
-  "bid": "parks-oncall-mowing",
-  "when": "2026-11-05T14:00:00-07:00",
-  "date": "2026-11-05",
-  "kind": "Submission",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 0000439641",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 13.26
+  "days_left": 9.01
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -543,7 +487,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 13.39
+  "days_left": 10.3
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -557,7 +501,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 14.26
+  "days_left": 11.17
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -571,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 17.26
+  "days_left": 14.17
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -585,7 +529,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.26
+  "days_left": 17.17
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -599,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.31
+  "days_left": 17.22
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -613,7 +557,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 24.26
+  "days_left": 21.17
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -627,7 +571,35 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 24.26
+  "days_left": 21.17
+ },
+ {
+  "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
+  "bid": "laplata-oncall-trades",
+  "when": "2026-11-17T10:00:00-07:00",
+  "date": "2026-11-17",
+  "kind": "Submission",
+  "agency": "La Plata County",
+  "sol": "BidNet 0000441130",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 22.01
+ },
+ {
+  "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
+  "bid": "carpet-upholstery-fiber",
+  "when": "2026-11-19T14:00:00-07:00",
+  "date": "2026-11-19",
+  "kind": "Submission",
+  "agency": "Agency not in hand",
+  "sol": "BidNet 0000441156",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 24.17
  },
  {
   "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
@@ -641,7 +613,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.33
+  "days_left": 24.24
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -655,7 +627,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 37.68
+  "days_left": 34.59
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -669,6 +641,6 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 39.26
+  "days_left": 36.17
  }
 ]
