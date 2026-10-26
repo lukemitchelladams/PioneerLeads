@@ -633,3 +633,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-26 16:28 MT (WORKER hourly): nothing new on GovTribe/BidNet/SAM; watched unchanged; no CDOC confirmation yet for H2's tech (7:30 AM check scheduled, trig_01VMf7RMWddyg8zD1BzRcBVV). HQ rewrote the TCF subs line (sub_pricing 'None (due 10/28 noon)').
 - 2026-10-26 16:31 MT dashboard blobs: bids 6dc2b054… (v20), events 3188a1ee… (v19), sources 20fd331c… (v14), doc_gaps 5725c493… (v6), portal_feed 074d7c58… (v8).
 - 2026-10-26 17:28 MT (WORKER hourly): Colorado Standby (Brad Orgill) wants the Parker generator RFP; asked HQ to send the package (attachments, no links). GovTribe 0 new; watched unchanged; still no CDOC confirmation for H2's tech.
+- 2026-10-26 17:31 MT dashboard blobs: bids 1231341d… (v21), events a9096e12… (v20), sources 20fd331c… (v14), doc_gaps 5725c493… (v6), portal_feed 074d7c58… (v8).
