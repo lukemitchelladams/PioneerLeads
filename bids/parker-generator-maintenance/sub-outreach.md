@@ -104,3 +104,7 @@ Subject: Generator service pricing: Town of Parker RFP 26-021-1 (7 units, 6 site
 > Brown Bison Holdings LLC
 > (720) 275-1554
 > luke@brownbisonco.com
+
+
+## Replies
+- 2026-10-26 17:16 MT: Colorado Standby, Brad Orgill (brad_orgill@coloradostandby.com, 719-624-8100): "We would be interested in taking a look. Please send over the RFP." Next: send the full RFP 26-021-1 package as attachments (no links); pricing asked for by Fri 10/30.

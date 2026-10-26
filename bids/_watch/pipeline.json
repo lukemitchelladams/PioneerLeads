@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-26T21:12:00Z",
+ "updated": "2026-10-26T23:28:00Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -362,8 +362,8 @@
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
-   "subs": "2026-10-26 16:36Z (HQ, Luke-authorized): follow-up to Generator Source + first contact to Colorado Standby (info@coloradostandby.com), RMGS (sales@rmgsco.com), DVL (GenService@dvlnet.com), Smith Power Products (generators@smithppi.com). 0 replies at 17:30Z. Questions to Town due 10/30 10:00; pricing wanted by 10/30.",
-   "sub_pricing": "None",
+   "subs": "2026-10-26 16:36Z (HQ, Luke-authorized): follow-up to Generator Source + first contact to Colorado Standby (info@coloradostandby.com), RMGS (sales@rmgsco.com), DVL (GenService@dvlnet.com), Smith Power Products (generators@smithppi.com). 0 replies at 17:30Z. Questions to Town due 10/30 10:00; pricing wanted by 10/30. | 10/26 17:16 MT: Colorado Standby (Brad Orgill, brad_orgill@coloradostandby.com, 719-624-8100) replied 'We would be interested in taking a look. Please send over the RFP.' HQ asked to send the full RFP 26-021-1 package (attachments, no links). First generator-sub reply.",
+   "sub_pricing": "None (Colorado Standby engaged 10/26; pricing asked for by 10/30)",
    "folder": "bids/parker-generator-maintenance",
    "contact": "Charles Ellis, cellis@parkeronline.org"
   },
