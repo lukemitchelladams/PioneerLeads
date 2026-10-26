@@ -232,10 +232,10 @@
    "prebid": "2026-10-26T14:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Brown Bison + Alex (snow) + custodial sub",
-   "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending.",
+   "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending. | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price.",
    "folder": "bids/rtd-bus-shelter-maintenance",
    "contact": "Marla Bainbridge, (303) 299-2411",
-   "sub_pricing": "In hand (Lightning Mobile)"
+   "sub_pricing": "Partial (Lightning only, too high)"
   },
   {
    "id": "westminster-26-002",
@@ -546,12 +546,12 @@
    "trade": "HVAC (water treatment)",
    "due": "2026-10-29T17:00:00-06:00",
    "portal": "BidNet",
-   "decision": "DECIDE",
-   "decision_note": "GovTribe summary: MANDATORY site visit Tue 2026-10-27 10:00 at 21000 Hwy 350 E, Model CO (Oct 21 option passed). 1 yr + 4 renewals; price primary. Needs a water-treatment chemical vendor as sub. Dies if nobody attends 10/27.",
+   "decision": "GO (walk)",
+   "decision_note": "Luke 2026-10-26: pursue. Attendance email sent to Jennifer Garvin 2026-10-26 (Luke attending Tue 10/27 10:00, Model CO; asked for clearance requirements). Mandatory walk; quote due 10/29 17:00. Sub candidates: H2 Global Solutions, Colorado Springs (719) 694-0515; national: ChemTreat, Chem-Aqua, Nalco Water, Garratt-Callahan.",
    "prebid": "2026-10-27T10:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "Water-treatment sub TBD",
-   "subs": "Not started",
+   "subs": "Candidates listed; none contacted yet",
    "sub_pricing": "None",
    "folder": null,
    "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
