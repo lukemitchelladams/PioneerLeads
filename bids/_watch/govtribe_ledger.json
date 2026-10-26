@@ -849,10 +849,10 @@
    "at": "2026-10-26T17:35:00Z"
   },
   "bidnet:0000441328": {
-   "name": "Douglas County 0000441328 HVAC Filters & Belts (due 2026-11-18)",
-   "verdict": "EVALUATE",
-   "why": "WATCH only: supply bid; rule 9 = not GO unless quantities/annual spend are stated in the document",
-   "at": "2026-10-26T17:35:00Z"
+   "name": "Douglas County IFB 042-26 HVAC Filters & Belts (BidNet 0000441328, due 2026-11-18)",
+   "verdict": "NO",
+   "why": "NO (rule 9): IFB states no guaranteed volume: 'The Blanket Purchase Agreement authorizes, but does not obligate, the County to order any minimum or maximum, dollar amount or quantity of filters and/or belts.'",
+   "at": "2026-10-26T19:33:00Z"
   },
   "8ccf3c647f414b7ea5cbb513ccfb51c9": {
    "name": "DLA Aviation OKC SPRTA1-27-Q-0031 Housing, Bearing Unit (PSC 3130)",
@@ -871,6 +871,18 @@
    "verdict": "NO",
    "why": "NO: Navy NSN part RFQ; not a Jones Bearing product line",
    "at": "2026-10-26T19:30:00Z"
+  },
+  "db84deebdb884ada854ec83ee9a6235c": {
+   "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
+   "verdict": "NO",
+   "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
+   "at": "2026-10-26T19:33:00Z"
+  },
+  "eb19e0c129334ba3adb062afc3c5c764": {
+   "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
+   "verdict": "NO",
+   "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
+   "at": "2026-10-26T19:33:00Z"
   }
  },
  "watched": {

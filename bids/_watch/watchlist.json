@@ -317,7 +317,7 @@
    "govtribe_ids": []
   },
   {
-   "name": "Douglas County HVAC Filters & Belts (WATCH, rule 9)",
+   "name": "Douglas County IFB 042-26 HVAC Filters & Belts (NO, rule 9: no guaranteed quantity)",
    "source": "bidnet",
    "id": "0000441328",
    "match": "hvac filters.*belts",
