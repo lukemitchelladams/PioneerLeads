@@ -624,3 +624,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-10-26 13:30 MT (WORKER hourly): Alex (YMS) engaged on RTD (reply needed from Luke: invite, deadline, scope). New SAM matches keyed NO: DLA Aviation bearing housing (aircraft part), VA Trane BAS J041 due 10/28 (2-day fuse), 2 NAVSUP bearings. Scanner filed Douglas County IFB 042-26 HVAC Filters & Belts (rule 9 WATCH).
 - 2026-10-26 13:35 MT dashboard blobs: bids ea3ebc52… (v17), events 15366d58… (v16), sources ddd68510… (v11), doc_gaps 5725c493… (v6), portal_feed 074d7c58… (v8).
 - 2026-10-26 14:28 MT (WORKER hourly): H2 Global Solutions (Silas Norwood) replied on TCF, wants a call from Luke; walk tomorrow 10:00. USFS bunkhouse asbestos federal record keyed WATCH (CRM-tracked). GovTribe CO 0 new, watched unchanged.
+- 2026-10-26 14:32 MT dashboard blobs: bids 9dd4adcb… (v18), events 7fe20990… (v17), sources 95513237… (v12), doc_gaps 5725c493… (v6), portal_feed 074d7c58… (v8).
