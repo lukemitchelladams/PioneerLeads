@@ -895,6 +895,18 @@
    "verdict": "NO",
    "why": "NO: sole-source justification for a lease extension",
    "at": "2026-10-26T20:28:00Z"
+  },
+  "bidnet:0000441227": {
+   "name": "Mesa County 0000441227 Storage Facility Fire Protection System (due 2026-11-19)",
+   "verdict": "NO",
+   "why": "NO: fire-sprinkler/suppression system install is a licensed specialty outside our trades; Grand Junction (4+ h). Rule 0 record: BidNet events: 'Onsite Visit, Attendance Mandatory, Event date 11/03/2026 10:00 AM MST, Location Mesa County Fairgrounds Storage Building B, 2785 US Hwy 50, Grand Junction, CO'.",
+   "at": "2026-10-26T21:30:00Z"
+  },
+  "52b4c80711934b99835162c13180bf40": {
+   "name": "VA Electro-Therapeutic Modalities for Pain Management TENS units (SAM match)",
+   "verdict": "NO",
+   "why": "NO: medical equipment supply",
+   "at": "2026-10-26T21:30:00Z"
   }
  },
  "watched": {
@@ -904,7 +916,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6abfa513de90cc3d3c036716": {
    "due": "2026-10-23T06:00:00Z",
@@ -912,7 +924,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac78e3a3e2326616e082a81": {
    "due": "2026-10-28T06:00:00Z",
@@ -920,7 +932,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6a2173ec20564a33670a0399": {
    "due": "2026-10-27T06:00:00Z",
@@ -929,7 +941,7 @@
     "biddoc.pdf",
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac78e093e2326616e082a6f": {
    "due": "2026-11-04T07:00:00Z",
@@ -937,7 +949,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ad21b8444ea9a49cf0994d3": {
    "due": "2026-11-12T07:00:00Z",
@@ -945,7 +957,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ad21a4444ea9a49cf0994bf": {
    "due": "2026-10-28T06:00:00Z",
@@ -953,7 +965,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac78dcf3e2326616e082a59": {
    "due": "2026-11-02T07:00:00Z",
@@ -961,7 +973,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ace253950b3706c0b0fa828": {
    "due": "2026-10-23T03:00:00Z",
@@ -971,7 +983,7 @@
     "1-Professional Services Agreement-SAMPLE 9.27.24.pdf",
     "2-Town of Parker HVAC Preventive Maintenance Price Sheet Forms.xlsx"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6abfa4d2de90cc3d3c0366f2": {
    "due": "2026-10-28T06:00:00Z",
@@ -979,7 +991,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac78dd93e2326616e082a61": {
    "due": "2026-10-26T06:00:00Z",
@@ -987,7 +999,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6aba3fe8b2e0f86b0e00dc39": {
    "due": "2026-11-16T21:00:00Z",
@@ -998,7 +1010,7 @@
     "Bus_Shelter_Maintenance_Services_SOW_2026.pdf",
     "126DM006_Form_of_Contract.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ad21a1f44ea9a49cf0994b7": {
    "due": "2026-11-12T07:00:00Z",
@@ -1006,7 +1018,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac63c5225a3b08d0b072be8": {
    "due": "2026-11-04T07:00:00Z",
@@ -1014,7 +1026,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac78e1e3e2326616e082a79": {
    "due": "2026-10-29T06:00:00Z",
@@ -1022,7 +1034,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ad219dd44ea9a49cf0994a2": {
    "due": "2026-10-28T06:00:00Z",
@@ -1030,7 +1042,7 @@
    "files": [
     "C05_1240LT27Q0010_Final.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ac63c5925a3b08d0b072bed": {
    "due": "2026-10-22T06:00:00Z",
@@ -1038,7 +1050,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6ad21a0944ea9a49cf0994ae": {
    "due": "2026-12-01T07:00:00Z",
@@ -1046,7 +1058,7 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z"
+   "snap_at": "2026-10-26T21:30:00Z"
   },
   "6adf1b88efc83d79cb01775a": {
    "due": "2026-10-29T06:00:00Z",
@@ -1067,7 +1079,7 @@
     "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 2.pdf",
     "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 1.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z",
+   "snap_at": "2026-10-26T21:30:00Z",
    "pipeline": "cdoc-tcf-boiler-water"
   },
   "6ad75fe3c20d55063f0581a2": {
@@ -1076,9 +1088,9 @@
    "files": [
     "biddoc.pdf"
    ],
-   "snap_at": "2026-10-26T20:28:00Z",
+   "snap_at": "2026-10-26T21:30:00Z",
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-10-26T20:28:00Z: 0 new CO state/local posted 2026-10-26; federal CO since 10/25: 3 (USFS bunkhouse asbestos federal record = WATCH/CRM-tracked, GSA J&A NO, nurse keyed); PSC since 10/26: 4, all keyed; 20 watched re-pulled, unchanged; REPORT 19:36Z: 0 NEW, 0 changes, live scan logged in (BidNet 608/89, SAM 91, Bonfire no creds, DIBBS last-good 10/20); inbox 11 threads/24h, 1 new: H2 Global Solutions (Silas Norwood, COO) 19:23Z on CDOC TCF: reviewed the documents, asks Luke to call; CRM no update"
+ "last_hourly_check": "2026-10-26T21:30:00Z: 0 new CO state/local posted 2026-10-26; federal CO since 10/25: 3 (all keyed); PSC since 10/26: 4 (all keyed); 20 watched re-pulled, unchanged; REPORT 20:36Z: 2 NEW (Mesa County storage fire protection = NO, mandatory walk 11/03 10:00 Grand Junction recorded; VA TENS units = NO), 0 changes; live scan logged in (BidNet 599/87, SAM 92, Bonfire no creds, DIBBS last-good 10/20); inbox 11 threads/24h, 0 new beyond the TCF thread (Silas's signed Exhibit G 15:01 MT, forwarded to CDOC 15:09 MT on Luke's instruction); CRM no update"
 }
