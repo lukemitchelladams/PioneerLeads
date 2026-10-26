@@ -1,20 +1,5 @@
 [
  {
-  "key": "bidnet:0000437990",
-  "source": "bidnet",
-  "agency": "CDOT CPCS & PROPERTY MANAGEMENT",
-  "title": "Snow Blower Rental",
-  "sol": "DQ 27 203994 RM",
-  "closing": "2026-10-26",
-  "posted": "2026-09-23",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Snow-Blower-Rental/0000437990?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000438177",
   "source": "bidnet",
   "agency": "Montezuma County",
@@ -103,36 +88,6 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MOCO-Janitorial-Services/0000438207?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:0000439206",
-  "source": "bidnet",
-  "agency": "Poudre School District",
-  "title": "Snow Removal Services - Livermore Elementary School",
-  "sol": "27-702-002",
-  "closing": "2026-10-26",
-  "posted": "2026-10-05",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Snow-Removal-Services-Livermore-Elementary-School/0000439206?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:0000440055",
-  "source": "bidnet",
-  "agency": "Arapahoe County",
-  "title": "Final Settlement: ACJC Courthouse 1 Inmate Elevators Mechanical Upgrades-Phase 1",
-  "sol": "NFS: Omnia Cooperative",
-  "closing": "2026-10-26",
-  "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Final-Settlement-ACJC-Courthouse-1-Inmate-Elevators-Mechanical-Upgrades-Phase-1/0000440055?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE4A0-27-T-0210:7018558616",
@@ -1427,7 +1382,7 @@
  {
   "key": "samgov:33bd86866d1946769ed093ca7a1ec653",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
   "title": "Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Nerve Stimulation (TENS) Procurement Program",
   "sol": "36C79126R0011",
   "closing": "2026-10-30",
@@ -1588,6 +1543,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2c6baa53c8054e3298082a09ae3a7b5f/view"
+ },
+ {
+  "key": "samgov:52b4c80711934b99835162c13180bf40",
+  "source": "samgov",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+  "title": "Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Nerve Stimulation (TENS) Procurement Program",
+  "sol": "36C79126R0011",
+  "closing": "2026-11-02",
+  "posted": "2026-10-26",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/52b4c80711934b99835162c13180bf40/view"
  },
  {
   "key": "samgov:83f8e4293685404da1e09c1d43a81204",
@@ -2893,6 +2863,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000441227",
+  "source": "bidnet",
+  "agency": "Mesa County",
+  "title": "Mesa County Storage Facility Fire Protection System",
+  "sol": "",
+  "closing": "2026-11-19",
+  "posted": "2026-10-26",
+  "prebid_date": "2026-11-03",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444205093628",
