@@ -287,6 +287,15 @@
    "match": "On-Call Snow Removal Services",
    "folder": "bids/cos-oncall-snow",
    "govtribe_ids": []
+  },
+  {
+   "name": "CDOC TCF Boiler Chemicals & Treatment DQ 2027000037",
+   "source": "bidnet",
+   "match": "Boiler Chemicals",
+   "folder": "bids/cdoc-tcf-boiler-water",
+   "govtribe_ids": [
+    "6adf1b88efc83d79cb01775a"
+   ]
   }
  ]
 }
