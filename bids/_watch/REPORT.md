@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-26T21:36:25+00:00
+# Bid watch report — 2026-10-26T22:35:46+00:00
 
 **Headline:** not scanned this run (previous results kept): dibbs
 
@@ -7,9 +7,9 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 596 | BUYER 400, AGGREGATE 197 | 87 | 2026-10-26T21:36:25+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T21:36:25+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 92 |  | 92 | 2026-10-26T21:36:25+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 592 | BUYER 396, AGGREGATE 197 | 81 | 2026-10-26T22:35:46+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-26T22:35:46+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 92 |  | 92 | 2026-10-26T22:35:46+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -29,6 +29,15 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Poudre SD 27-702-002 Livermore snow (CRM-tracked) (bidnet)
 - 2027 Landscaping Management Services (EVALUATE; due 10/26; agency unknown) (bidnet)
 - Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9) (bonfire)
+
+## No longer listed (closed/awarded)
+
+- 2027 Administration Janitorial Services (bidnet, due 2026-10-26)
+- 2027 MCCC Janitorial Services (bidnet, due 2026-10-26)
+- 2027 Annex 1 Janitorial Services (bidnet, due 2026-10-26)
+- 2027 Annex 3 Janitorial Services (bidnet, due 2026-10-26)
+- 2027 MCSO Janitorial Services (bidnet, due 2026-10-26)
+- 2027 MOCO Janitorial Services (bidnet, due 2026-10-26)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -62,16 +71,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (152)
+## All open matching bids, excluding DIBBS parts RFQs (146)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet | Montezuma County | 2027 MOCO Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MOCO-Janitorial-Services/0000438207?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Montezuma County | 2027 MCSO Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MCSO-Janitorial-Services/0000438205?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Montezuma County | 2027 Annex 3 Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Annex-3-Janitorial-Services/0000438203?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Montezuma County | 2027 Annex 1 Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Annex-1-Janitorial-Services/0000438201?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Montezuma County | 2027 MCCC Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-MCCC-Janitorial-Services/0000438198?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Montezuma County | 2027 Administration Janitorial Services | 2026-10-26 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Administration-Janitorial-Services/0000438177?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA. | Roller Tracks | 2026-10-26 (0d) |  | https://sam.gov/workspace/contract/opp/f68b42c6a60744628785318d4593ddf0/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | BALL,BEARING | 2026-10-26 (0d) |  | https://sam.gov/workspace/contract/opp/1a17809e0929401bb214e6a23ca4770d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | ACTR ASSY, ANT AZ | 2026-10-26 (0d) |  | https://sam.gov/workspace/contract/opp/b6e91ee3debc4d8089be1512706d0f46/view |
