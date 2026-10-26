@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -30.94
+  "days_left": -30.95
  },
  {
   "key": "littleton-2126|Pre-bid (optional)|2026-10-09T10:00:00-06:00",
@@ -82,20 +82,6 @@
   "critical": false,
   "past": true,
   "days_left": -6.07
- },
- {
-  "key": "elbert-2026-006|Questions due|2026-10-20T13:00:00-06:00",
-  "bid": "elbert-2026-006",
-  "when": "2026-10-20T13:00:00-06:00",
-  "date": "2026-10-20",
-  "kind": "Questions due",
-  "agency": "Elbert County",
-  "sol": "IFB 2026-006",
-  "decision": "EVALUATE",
-  "note": "Elbert fencing questions close",
-  "critical": false,
-  "past": true,
-  "days_left": -5.94
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -294,32 +280,18 @@
   "days_left": 0.89
  },
  {
-  "key": "cdoc-tcf-boiler-water|MANDATORY pre-bid|2026-10-27T10:00:00-06:00",
+  "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
   "bid": "cdoc-tcf-boiler-water",
   "when": "2026-10-27T10:00:00-06:00",
   "date": "2026-10-27",
-  "kind": "MANDATORY pre-bid",
+  "kind": "Mandatory site visit",
   "agency": "Colorado Department of Corrections",
   "sol": "DQ CAAA 2027000037",
   "decision": "GO (walk)",
-  "note": "",
-  "critical": true,
+  "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
+  "critical": false,
   "past": false,
   "days_left": 0.93
- },
- {
-  "key": "elbert-2026-006|Submission|2026-10-27T12:30:00-06:00",
-  "bid": "elbert-2026-006",
-  "when": "2026-10-27T12:30:00-06:00",
-  "date": "2026-10-27",
-  "kind": "Submission",
-  "agency": "Elbert County",
-  "sol": "IFB 2026-006",
-  "decision": "EVALUATE",
-  "note": "Hard copy + email",
-  "critical": true,
-  "past": false,
-  "days_left": 1.03
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -392,6 +364,20 @@
   "days_left": 3.22
  },
  {
+  "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
+  "bid": "cdoc-tcf-boiler-water",
+  "when": "2026-10-29T17:00:00-06:00",
+  "date": "2026-10-29",
+  "kind": "Due",
+  "agency": "Colorado Department of Corrections",
+  "sol": "DQ CAAA 2027000037",
+  "decision": "GO (walk)",
+  "note": "TCF boiler DQ quote due on BidNet",
+  "critical": false,
+  "past": false,
+  "days_left": 3.22
+ },
+ {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
   "bid": "cos-r26-069mz-bas",
   "when": "2026-10-30T14:00:00-06:00",
@@ -459,7 +445,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 7.56
+  "days_left": 7.55
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -518,6 +504,20 @@
   "days_left": 14.14
  },
  {
+  "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
+  "bid": "psd-27-701-002-hood",
+  "when": "2026-11-10T13:30:00-07:00",
+  "date": "2026-11-10",
+  "kind": "Mandatory site visit",
+  "agency": "Poudre School District R-1",
+  "sol": "IFB 27-701-002 (BidNet 0000439455)",
+  "decision": "EVALUATE",
+  "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
+  "critical": false,
+  "past": false,
+  "days_left": 15.12
+ },
+ {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
   "bid": "metro-water-b26019",
   "when": "2026-11-12T14:00:00-07:00",
@@ -544,6 +544,20 @@
   "critical": true,
   "past": false,
   "days_left": 17.18
+ },
+ {
+  "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
+  "bid": "psd-27-701-002-hood",
+  "when": "2026-11-13T14:00:00-07:00",
+  "date": "2026-11-13",
+  "kind": "Questions due",
+  "agency": "Poudre School District R-1",
+  "sol": "IFB 27-701-002 (BidNet 0000439455)",
+  "decision": "EVALUATE",
+  "note": "Poudre SD hood IFB questions via BidNet",
+  "critical": false,
+  "past": false,
+  "days_left": 18.14
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -616,6 +630,34 @@
   "days_left": 24.2
  },
  {
+  "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
+  "bid": "psd-27-701-002-hood",
+  "when": "2026-11-20T14:00:00-07:00",
+  "date": "2026-11-20",
+  "kind": "Submission",
+  "agency": "Poudre School District R-1",
+  "sol": "IFB 27-701-002 (BidNet 0000439455)",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 25.14
+ },
+ {
+  "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
+  "bid": "psd-27-701-002-hood",
+  "when": "2026-11-20T14:00:00-07:00",
+  "date": "2026-11-20",
+  "kind": "Due",
+  "agency": "Poudre School District R-1",
+  "sol": "IFB 27-701-002 (BidNet 0000439455)",
+  "decision": "EVALUATE",
+  "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
+  "critical": false,
+  "past": false,
+  "days_left": 25.14
+ },
+ {
   "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
   "bid": "cos-oncall-janitorial",
   "when": "2026-11-23T14:00:00-07:00",
@@ -655,7 +697,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 34.56
+  "days_left": 34.55
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",

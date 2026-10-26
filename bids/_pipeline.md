@@ -17,9 +17,9 @@ plus SAM.gov. Daily email alerts to luke@brownbisonco.com are now set (see "Aler
 
 | # | Agency | Solicitation | Due (MT) | Trade | Performs (we always submit) | Mandatory walk? | Contact | Status |
 |---|--------|--------------|----------|-------|------|-----------------|---------|--------|
-| 1 | City of Littleton | RFQ #2126 On-Call Commercial Plumbing Services, ~38 city buildings, $100k/yr pool, 2+1 yrs | 2026-10-28 14:00 via RMEPS | Plumbing/HVAC | Brown Bison | **No** (10/9 meeting was optional; Q&A posts 10/21) | Sam Traylor, straylor@littletonco.gov | **GO. Folder: bids/littleton-on-call-plumbing/** Sub: 7 plumbers emailed 10/19, 0 replies 10/20; follow-up + call list in sub-outreach.md |
+| 1 | City of Littleton | RFQ #2126 On-Call Commercial Plumbing Services, ~38 city buildings, $100k/yr pool, 2+1 yrs | 2026-10-28 14:00 via RMEPS | Plumbing/HVAC | Brown Bison | **No** (10/9 meeting was optional; Q&A posts 10/21) | Sam Traylor, straylor@littletonco.gov | **GO. Folder: bids/littleton-on-call-plumbing/** Sub: 7 plumbers emailed 10/19 (2 bounced), 0 replies as of 10/26; follow-up + call list in sub-outreach.md |
 | 2 | City of Thornton | RFP 324-26 On-Call Landscape Construction Services, GSA through 2032, multi-award | 2026-10-28 15:00 via BidNet or hand delivery | Landscape | Alex Ditto as our sub | **No** | Keith Griess, keith.griess@cityofthornton.net | **NO-GO (Luke, 2026-10-23).** |
-| — | Colorado DOC | DQ CAAA 2027000037 Boiler Chemicals & Treatment Services, Trinidad Correctional Facility (via BidNet) | 2026-10-29 17:00 | Boiler/HVAC | — | **YES: Wed 2026-10-21 10:00 at TCF; RSVP + consent/ID was due 2026-10-19. Same hour as Adams County.** | Jennifer Garvin | **No bid (conflict + RSVP deadline). Folder: bids/codoc-trinidad-boiler-chemicals/** |
+| — | Colorado DOC | DQ CAAA 2027000037 Boiler Chemicals & Treatment Services, Trinidad Correctional Facility (via BidNet) | 2026-10-29 17:00 | Boiler/HVAC | — | **YES: Wed 2026-10-21 10:00 at TCF; RSVP + consent/ID was due 2026-10-19. Same hour as Adams County.** | Jennifer Garvin | **GO (walk) per Luke 10/26: walk moved to Tue 10/27 10:00 (MOD 2); sub tech represents Brown Bison; 7 water-treatment firms emailed 10/26, 0 replies. Folders: bids/cdoc-tcf-boiler-water/ (sub outreach), bids/codoc-trinidad-boiler-chemicals/ (docs)** |
 | — | Boulder County | BID-313-26 HVAC Air Filters | 2026-10-29 | HVAC supply | — | No | procurement@bouldercounty.gov | **PENDING: volume question emailed to procurement 10/19. GO if ≥$30k/yr + term (math.md); else no bid.** |
 | — | Arapahoe County | RFP 26-51 Fire Alarm Control Panel Replacement, Sheriff's Office | 2026-10-30 | Fire alarm | — | **Mandatory meeting was 10/16. MISSED.** NICET II–IV required anyway. | Sarah Huerta | No bid. |
 | 6 | Arapahoe County | RFP 26-52 Fairgrounds Turfgrass Conversion, 3.45 ac Tahoma 31, federal funds (Davis-Bacon) | 2026-11-04 14:00 via BidNet | Landscape | Alex Ditto as our sub | **YES: Teams meeting MON 2026-10-19 13:30 MDT, invite-only (RFP p.12)** | Katie Schwindt, (303) 738-7871 | **NO-GO (Luke, 2026-10-23).** |
@@ -100,9 +100,9 @@ Ledger: bids/_watch/govtribe_ledger.json. New verdicts this pass (pre-bid status
 
 | Verdict | Agency | Solicitation | Due (MT) | Pre-bid / walk | Note |
 |---|---|---|---|---|---|
-| **GO** | School District 27J (Riverdale Ridge HS) | 2021BRRHS Speaker Cabling Installation | 2026-10-28 10:00, email to emorales@sd27j.net | None found in text read | Low-voltage cabling, ~49-59 classroom speakers. Questions due 10/23 15:00. Sub outreach NOT sent as of 10/20; Luke to call Wire to Wire + Becks today. |
+| **GO** | School District 27J (Riverdale Ridge HS) | 2021BRRHS Speaker Cabling Installation | 2026-10-28 10:00, email to emorales@sd27j.net | None found in text read | Low-voltage cabling, ~49-59 classroom speakers. Questions due 10/23 15:00. Sub outreach still NOT sent as of 10/26 17:30Z; due in 41 h. |
 | EVALUATE | Jefferson County Facilities | 26-18863AP-FM Dome Glass Replacement | 2026-11-04 10:00 | In-person 10/15 PASSED, "should attend" (not stated mandatory) | Ask Andrew Pulford before questions deadline 10/21 10:00 whether we can still bid. Glazing sub. |
-| EVALUATE | Elbert County | IFB 2026-006 Fencing (Kiowa, Simla) | 2026-10-27 12:30, hard copy + email | None listed | ~2,963 LF chain-link. Questions due 10/20 13:00. Fence sub quote needed in ~2 days. |
+| **NO (lapsed 10/26)** | Elbert County | IFB 2026-006 Fencing (Kiowa, Simla) | 2026-10-27 12:30, hard copy + email | None listed | No fence sub quote was obtained; nothing to price by the deadline. |
 | EVALUATE (low) | Denver Public Schools | BD2730 GC Prequalification / Open Enrollment | 2026-10-21 10:00 via BidNet | None | Prequal only; possible Round 2. |
 | NO | City of Westminster | IFB-PRL-26-719 Walnut Creek golf bunkers | 11/10 | MANDATORY 10/20 10:30 | Earthwork (rule 8). |
 | NO | City of Aspen | 2026-300 Cozy Point cabin | 11/05 | MANDATORY 10/20 13:00, Pitkin County | Log specialty, Aspen. |
@@ -121,7 +121,7 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | IFB 27-702-002 Livermore Elem snow | Poudre SD | 2026-10-26 | NO-GO (Luke, 2026-10-23) | Not in repo |
 | W911WN26QA062 Mosquito Lake tower metal roof | USACE Pittsburgh | 2026-10-26 | Qualifying | Not in repo |
 | Bunkhouse asbestos mitigation | USDA | 2026-10-28 | Sub outreach | Not in repo |
-| IFB 27-701-002 kitchen hood cleaning (46 kitchens) | Poudre SD | 2026-10-29 | Pricing (HOODZ $675/kitchen) | Not in repo |
+| IFB 27-701-002 kitchen hood cleaning (46 kitchens) | Poudre SD | **2026-11-20 (Addendum 1.0; MANDATORY walk 2026-11-10 13:30 Fort Collins)** | Pricing (sub rate in private/) | Not in repo |
 | 1178-26P custodial, Breckenridge | Colorado Mountain College | 2026-11-02 | Pricing (A&A $5,600/mo) | **Repo marked NO BID (mandatory walk 10/12 missed)**: confirm with Luke |
 | 036-26 janitorial | Douglas County Government | 2026-11-02 | Qualifying | Not in repo |
 | RFP 26-058 on-call facilities trade services | El Paso County | 2026-11-04 | Qualifying (3-yr experience question) | Not in repo; addendum 2 issued 2026-10-19 (BidNet email) |

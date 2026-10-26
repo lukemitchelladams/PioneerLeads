@@ -12,7 +12,10 @@ Source: GovTribe (Colorado VSS / BidNet cdoc). Docs in docs/: DQ, Exhibit A (SOW
 | Term | 1 year + up to four 1-year renewals; start ~2026-11-05 |
 | Contact | Jennifer Garvin, jennifer.garvin@state.co.us |
 
-## Decision: NO BID (agent recommendation, 2026-10-19)
+## Status 2026-10-26: GO (walk) per Luke
+Luke reopened this 2026-10-26. Per MOD 2 (read by HQ) the mandatory site visit is now **Tue 2026-10-27 10:00**; Luke will not attend, a water-treatment sub's technician represents Brown Bison (CDOC, Jennifer Garvin 10/26: the attendee writes the company name on the attendance log and emails a signed Exhibit G Consent to Search + ID copy first, sec. 4 p. 2). Sub outreach and replies: `bids/cdoc-tcf-boiler-water/sub-outreach.md`. Quote due 2026-10-29 17:00 on BidNet.
+
+## Earlier decision: NO BID (agent recommendation, 2026-10-19), superseded
 The site visit RSVP was due today (2026-10-19) with consent forms and ID, and the visit is Wed 10:00, the same
 hour as the Adams County mandatory pre-bid in Watkins. Trinidad is ~3h south. No water-treatment sub lined up.
 Luke's call if he'd rather go to Trinidad than Watkins. Best sub lead if pursued: H2 Global Solutions,

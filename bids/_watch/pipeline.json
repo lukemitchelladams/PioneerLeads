@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-10-20T10:07-06:00",
+ "updated": "2026-10-26T17:35:00Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -70,7 +70,7 @@
    "prebid": "2026-10-09T10:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Plumbing sub",
-   "subs": "7 emailed 10/19 (Beattie + Simply Sewers undeliverable); 0 replies at 10/20 12:50Z; follow-up email + 8-shop call list in sub-outreach.md; answers due Thu 10/23 17:00",
+   "subs": "7 plumbers emailed 10/19; Beattie + Simply Sewers bounced permanently 10/22 (Gmail failure notices); 0 replies as of 2026-10-26 17:30Z (inbox + sent searched); follow-up email text + 8-shop call list in sub-outreach.md. Due Wed 10/28 14:00 (41 h).",
    "folder": "bids/littleton-on-call-plumbing",
    "contact": "Sam Traylor, straylor@littletonco.gov",
    "sub_pricing": "None"
@@ -106,7 +106,7 @@
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Low-voltage sub",
-   "subs": "NOT SENT as of 10/20 12:50Z (no sent-mail record). Luke today: call Wire to Wire + Becks, email 303 Technologies/Becks; pricing by Fri 10/23 17:00; questions to District by Thu 10/23 15:00",
+   "subs": "No sub outreach sent as of 2026-10-26 17:30Z (sent mail searched, nothing to Wire to Wire / Becks / 303 Technologies). Due Wed 10/28 10:00 (41 h); call list + 4 District questions in sub-outreach.md (question window closed 10/23).",
    "folder": "bids/sd27j-speaker-cabling",
    "contact": "emorales@sd27j.net",
    "sub_pricing": "None"
@@ -119,8 +119,8 @@
    "trade": "Fencing",
    "due": "2026-10-27T12:30:00-06:00",
    "portal": "Hard copy + email",
-   "decision": "EVALUATE",
-   "decision_note": "Questions due 2026-10-20 13:00. Needs a fence sub quote in ~2 days.",
+   "decision": "NO",
+   "decision_note": "Lapsed 2026-10-26 (agent call): due Tue 2026-10-27 12:30 hard copy + email; no fence sub quote was obtained after the 10/19 EVALUATE, so there is nothing to price. Prior note: questions were due 2026-10-20 13:00.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Fence sub",
@@ -362,7 +362,7 @@
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
-   "subs": "CRM emailed Generator Source 10/19 15:16 MT, no reply at 10/20 13:00. 9 more candidates in sub-outreach.md (not contacted). Pricing wanted by 10/30.",
+   "subs": "2026-10-26 16:36Z (HQ, Luke-authorized): follow-up to Generator Source + first contact to Colorado Standby (info@coloradostandby.com), RMGS (sales@rmgsco.com), DVL (GenService@dvlnet.com), Smith Power Products (generators@smithppi.com). 0 replies at 17:30Z. Questions to Town due 10/30 10:00; pricing wanted by 10/30.",
    "sub_pricing": "None",
    "folder": "bids/parker-generator-maintenance",
    "contact": "Charles Ellis, cellis@parkeronline.org"
@@ -551,9 +551,9 @@
    "prebid": "2026-10-27T10:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "Water-treatment sub TBD",
-   "subs": "Summit Laboratories, H2 Global Solutions emailed 2026-10-26",
+   "subs": "7 water-treatment firms emailed 2026-10-26 16:30-16:47Z (Summit Laboratories, H2 Global Solutions, TJ's Mechanical, TRS, Loren & Associates, Aqua-Chem, RK Water); 0 replies at 17:30Z. Walk Tue 10/27 10:00 at TCF (Model, CO): whoever goes must write 'Brown Bison Holdings LLC' on the attendance log and first email a signed Exhibit G Consent to Search + ID copy to the solicitation's address (Garvin 16:56Z, sec. 4 p. 2). Quote due Thu 10/29 17:00.",
    "sub_pricing": "None",
-   "folder": null,
+   "folder": "bids/cdoc-tcf-boiler-water",
    "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
   },
   {
@@ -703,6 +703,42 @@
    "sub_pricing": "-",
    "folder": "bids/dcsd-internet-005-27",
    "contact": "BidNet"
+  },
+  {
+   "id": "psd-27-701-002-hood",
+   "agency": "Poudre School District R-1",
+   "title": "Kitchen Hood Inspection and Cleaning Services (46 kitchens; annual inspection, cleaning on written authorization; 4-h emergency response)",
+   "sol": "IFB 27-701-002 (BidNet 0000439455)",
+   "trade": "Kitchen exhaust hood cleaning (facilities)",
+   "due": "2026-11-20T14:00:00-07:00",
+   "portal": "BidNet",
+   "decision": "EVALUATE",
+   "decision_note": "Addendum 1.0 (BidNet 10/26): closing moved 2026-10-29 -> 2026-11-20 (BidNet date; 14:00 MT assumed from the original IFB closing time, confirm on BidNet). MANDATORY site visit Tue 2026-11-10 13:30 at Traut Elementary front entrance (2515 Timberwood Dr, Fort Collins), then Preston MS and Fossil Ridge HS; RSVP by email listing the sites to strategicsourcing@psdschools.org. Questions via BidNet through 2026-11-13 14:00 MT. Fire-suppression service and make-up-air inspection excluded. Full package + addendum docs in bids/_watch/downloads/bidnet/0000439455/. Needs a hood-cleaning sub (HOODZ-type) to price Attachment D and attend the walk.",
+   "prebid": "2026-11-10T13:30:00-07:00",
+   "prebid_mandatory": true,
+   "performer": "Brown Bison + hood-cleaning sub",
+   "subs": "Not started (sub must be lined up before the 11/10 walk; rule 0b: outreach starts the day this goes GO)",
+   "folder": "bids/poudre-sd-kitchen-hood",
+   "contact": "strategicsourcing@psdschools.org",
+   "sub_pricing": "None"
+  },
+  {
+   "id": "boulder-bid-321-26",
+   "agency": "Boulder County",
+   "title": "Sheriff's Headquarters Lighting Upgrades (BID-321-26)",
+   "sol": "BID-321-26 (Bonfire 258797)",
+   "trade": "Lighting fixture supply (materials only)",
+   "due": "2026-11-05T21:00:00-07:00",
+   "portal": "Bonfire (bouldercounty.bonfirehub.com)",
+   "decision": "NO",
+   "decision_note": "NO 2026-10-26: BID-321-26 Information.pdf: 'Provide new LED lighting fixtures for upgrades throughout the project. Materials only; no labor.' 'Boulder County is requesting complete bids, partial bids will not be accepted.' Fixtures delivered by 2026-12-31 to 5600 Flatirons Pkwy. Public bid opening 2026-11-05 3:00 p.m. on Teams. Fixture resale with no install = small-margin supply (rule 9).",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "performer": "-",
+   "subs": "-",
+   "folder": null,
+   "contact": "Boulder County Purchasing (Bonfire)",
+   "sub_pricing": "-"
   }
  ],
  "events": [
@@ -813,6 +849,36 @@
    "when": "2026-10-23T17:00:00-06:00",
    "note": "Cabling sub price; outreach not sent as of 10/20",
    "kind": "Sub answers due"
+  },
+  {
+   "bid": "psd-27-701-002-hood",
+   "when": "2026-11-10T13:30:00-07:00",
+   "kind": "Mandatory site visit",
+   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org"
+  },
+  {
+   "bid": "psd-27-701-002-hood",
+   "when": "2026-11-13T14:00:00-07:00",
+   "kind": "Questions due",
+   "note": "Poudre SD hood IFB questions via BidNet"
+  },
+  {
+   "bid": "psd-27-701-002-hood",
+   "when": "2026-11-20T14:00:00-07:00",
+   "kind": "Due",
+   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)"
+  },
+  {
+   "bid": "cdoc-tcf-boiler-water",
+   "when": "2026-10-27T10:00:00-06:00",
+   "kind": "Mandatory site visit",
+   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first"
+  },
+  {
+   "bid": "cdoc-tcf-boiler-water",
+   "when": "2026-10-29T17:00:00-06:00",
+   "kind": "Due",
+   "note": "TCF boiler DQ quote due on BidNet"
   }
  ],
  "doc_gaps": [

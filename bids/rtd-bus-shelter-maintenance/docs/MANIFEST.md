@@ -14,14 +14,16 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - 126DM016-SOW.txt
 - RTD-126DM016-Shelter-List.xlsx
 - RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf
+- RTD-SBE-Contract-Requirements-v10-2025-11-13.txt
 - RTD-SBE-Enclosures-Rev-2025-11-13.pdf
+- RTD-SBE-Enclosures-Rev-2025-11-13.txt
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
-| Appendix A |  | 126DM016-RFP.txt | INSIDE RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf (heading found; verify pages) |
-| Attachment E |  | RTD-SBE-Contract-Requirements-v10-2025-11-13.pdf | **MISSING** |
+| Appendix A |  | 126DM016-RFP.txt | INSIDE RTD-SBE-Contract-Requirements-v10-2025-11-13.txt (heading found; verify pages) |
+| Attachment E |  | RTD-SBE-Contract-Requirements-v10-2025-11-13.txt | **MISSING** |
 | Schedule A |  | 126DM006-Form-of-Contract.txt | **MISSING** |
 
 ## Pricing forms / templates mentioned (check each is in hand)

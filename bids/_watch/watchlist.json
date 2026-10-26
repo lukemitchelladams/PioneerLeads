@@ -92,12 +92,14 @@
    ]
   },
   {
-   "name": "Poudre SD 27-701-002 Kitchen hood cleaning (CRM-tracked)",
+   "name": "Poudre SD 27-701-002 Kitchen hood cleaning (EVALUATE; mandatory walk 2026-11-10 13:30; due 2026-11-20)",
    "source": "bidnet",
    "match": "27-701-002|kitchen hood",
    "govtribe_ids": [
     "6ac78e1e3e2326616e082a79"
-   ]
+   ],
+   "folder": "bids/poudre-sd-kitchen-hood",
+   "id": "0000439455"
   },
   {
    "name": "El Paso County 26-058 On-Call General Facilities Trade Services (CRM-tracked)",
@@ -296,6 +298,31 @@
    "govtribe_ids": [
     "6adf1b88efc83d79cb01775a"
    ]
+  },
+  {
+   "name": "Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9)",
+   "source": "bonfire",
+   "match": "321-26|sheriff.*lighting",
+   "folder": null,
+   "govtribe_ids": [
+    "6ad8b12d4d0a3954a2033bd2"
+   ]
+  },
+  {
+   "name": "Station One Janitorial Services (aggregate notice; agency unknown; EVALUATE)",
+   "source": "bidnet",
+   "id": "444208178536",
+   "match": "station one janitorial",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County HVAC Filters & Belts (WATCH, rule 9)",
+   "source": "bidnet",
+   "id": "0000441328",
+   "match": "hvac filters.*belts",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
