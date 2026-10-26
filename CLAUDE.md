@@ -67,8 +67,9 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
 - All landscaping work is performed by Alex Ditto as OUR sub. Luke handles all communication with Alex;
   the agent only surfaces Alex's emails and flags landscaping bids worth getting his pricing on.
 - All business email goes out from luke@brownbisonco.com. Never use lukemitchelladams@gmail.com for business.
-- Inbox monitoring runs hourly via Routine into the main session; Gmail is read-only for the agent. Never
-  send/reply/forward/trash/label email without Luke's explicit instruction in the moment.
+- Gmail (Luke, 2026-10-26): Luke gave blanket permission for his mailbox and wants the agent to act on its own:
+  send sub outreach, follow-ups, buyer questions and site-visit RSVPs from luke@brownbisonco.com without asking.
+  Still never submit a bid, sign anything, spend money, or delete/trash mail without asking. Hourly scan sessions stay read-only.
 
 ## Portal access
 - Bid-portal scanning = `python3 scripts/scan_bids.py` (BidNet scraper + SAM.gov API). Needs allowed
