@@ -22,3 +22,4 @@ Nielsen Mechanical (general@nielsenmechanical.net), R&R Heating Pueblo, Harmon-B
 
 - 2026-10-27 07:18 MT: Silas emailed that the attending H2 technician is **Andrew** (last name not given) and he may call Luke this morning from a 316 (Wichita, KS) number. No photo-ID copy received. No CDOC confirmation of the access-list request as of 07:35 MT; if still silent, call Jennifer Garvin 719-269-4059 before 10:00.
 - 2026-10-27 08:14 MT: Silas sent Andrew's current driver's license image to Luke with kimberly.rusgrove@state.co.us cc'd (after HQ asked at 07:56 MT); Andrew carries the ID on site. CDOC has not acknowledged as of 08:32 MT.
+- 2026-10-27 08:54 MT: Luke spoke with Andrew; CDOC approved him and is expecting him at the 10:00 walk. CDOC told Luke only ONE other vendor is attending. H2 written pricing still due to us Wed 10/28 noon; quote due Thu 10/29 17:00.

@@ -1206,6 +1206,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T14:29:25+00:00 | GovTribe still BLOCKED (11th hour). HQ 14:04Z scan: 1 NEW SAM match = DLA ball bearing (NO). HQ commit 847862b: Parker 26-028 marked submitted, Brighton outreach sent, CEO plan.",
+  "last_hourly_check": "2026-10-27T15:25:53+00:00 | GovTribe still BLOCKED (12th hour). HQ 14:51Z scan: BidNet scanner LOGGED OUT again (HTTP 202 robot check; 199 rows/14 matches carried forward), SAM 93 live, no new matches. Luke: Littleton 21-26 + SD27J = NO; TCF tech Andrew approved by CDOC (Luke email 14:54Z); RTD Alex told to price full scope (15:09Z); Parker generator subs handled by Luke directly.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

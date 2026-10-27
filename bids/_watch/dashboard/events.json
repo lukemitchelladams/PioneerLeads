@@ -11,21 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -31.83
- },
- {
-  "key": "littleton-2126|Pre-bid (optional)|2026-10-09T10:00:00-06:00",
-  "bid": "littleton-2126",
-  "when": "2026-10-09T10:00:00-06:00",
-  "date": "2026-10-09",
-  "kind": "Pre-bid (optional)",
-  "agency": "City of Littleton",
-  "sol": "RFQ 2126",
-  "decision": "GO",
-  "note": "",
-  "critical": false,
-  "past": true,
-  "days_left": -17.95
+  "days_left": -31.85
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -39,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -13.0
+  "days_left": -13.02
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -53,7 +39,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -11.95
+  "days_left": -11.98
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -67,7 +53,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -7.79
+  "days_left": -7.81
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -81,7 +67,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -6.95
+  "days_left": -6.98
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -95,7 +81,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -5.95
+  "days_left": -5.98
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -109,21 +95,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -5.95
- },
- {
-  "key": "littleton-2126|Addendum|2026-10-21T12:00:00-06:00",
-  "bid": "littleton-2126",
-  "when": "2026-10-21T12:00:00-06:00",
-  "date": "2026-10-21",
-  "kind": "Addendum",
-  "agency": "City of Littleton",
-  "sol": "RFQ 2126",
-  "decision": "GO",
-  "note": "Littleton Q&A / meeting notes post in RMEPS",
-  "critical": false,
-  "past": true,
-  "days_left": -5.87
+  "days_left": -5.98
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -137,7 +109,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -4.75
+  "days_left": -4.77
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -151,91 +123,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -3.79
- },
- {
-  "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
-  "bid": "sd27j-2021brrhs",
-  "when": "2026-10-23T15:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Questions due",
-  "agency": "School District 27J",
-  "sol": "2021BRRHS",
-  "decision": "GO",
-  "note": "27J speaker cabling",
-  "critical": false,
-  "past": true,
-  "days_left": -3.75
- },
- {
-  "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
-  "bid": "sd27j-2021brrhs",
-  "when": "2026-10-23T15:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Questions due",
-  "agency": "School District 27J",
-  "sol": "2021BRRHS",
-  "decision": "GO",
-  "note": "Email emorales@sd27j.net; 4 questions drafted",
-  "critical": false,
-  "past": true,
-  "days_left": -3.75
- },
- {
-  "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
-  "bid": "littleton-2126",
-  "when": "2026-10-23T17:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Sub answers due",
-  "agency": "City of Littleton",
-  "sol": "RFQ 2126",
-  "decision": "GO",
-  "note": "Plumber pricing/answers",
-  "critical": false,
-  "past": true,
-  "days_left": -3.66
- },
- {
-  "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
-  "bid": "sd27j-2021brrhs",
-  "when": "2026-10-23T17:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Sub answers due",
-  "agency": "School District 27J",
-  "sol": "2021BRRHS",
-  "decision": "GO",
-  "note": "Low-voltage sub pricing",
-  "critical": false,
-  "past": true,
-  "days_left": -3.66
- },
- {
-  "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
-  "bid": "littleton-2126",
-  "when": "2026-10-23T17:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Sub answers due",
-  "agency": "City of Littleton",
-  "sol": "RFQ 2126",
-  "decision": "GO",
-  "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far",
-  "critical": false,
-  "past": true,
-  "days_left": -3.66
- },
- {
-  "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
-  "bid": "sd27j-2021brrhs",
-  "when": "2026-10-23T17:00:00-06:00",
-  "date": "2026-10-23",
-  "kind": "Sub answers due",
-  "agency": "School District 27J",
-  "sol": "2021BRRHS",
-  "decision": "GO",
-  "note": "Cabling sub price; outreach not sent as of 10/20",
-  "critical": false,
-  "past": true,
-  "days_left": -3.66
+  "days_left": -3.81
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -249,7 +137,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -0.95
+  "days_left": -0.98
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -263,7 +151,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -0.79
+  "days_left": -0.81
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -277,7 +165,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -0.74
+  "days_left": -0.76
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -290,8 +178,8 @@
   "decision": "EVALUATE",
   "note": "Hite facility",
   "critical": false,
-  "past": false,
-  "days_left": 0.0
+  "past": true,
+  "days_left": -0.02
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -305,7 +193,7 @@
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
   "past": false,
-  "days_left": 0.05
+  "days_left": 0.02
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -319,35 +207,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 0.34
- },
- {
-  "key": "sd27j-2021brrhs|Submission|2026-10-28T10:00:00-06:00",
-  "bid": "sd27j-2021brrhs",
-  "when": "2026-10-28T10:00:00-06:00",
-  "date": "2026-10-28",
-  "kind": "Submission",
-  "agency": "School District 27J",
-  "sol": "2021BRRHS",
-  "decision": "GO",
-  "note": "Email emorales@sd27j.net",
-  "critical": true,
-  "past": false,
-  "days_left": 1.05
- },
- {
-  "key": "littleton-2126|Submission|2026-10-28T14:00:00-06:00",
-  "bid": "littleton-2126",
-  "when": "2026-10-28T14:00:00-06:00",
-  "date": "2026-10-28",
-  "kind": "Submission",
-  "agency": "City of Littleton",
-  "sol": "RFQ 2126",
-  "decision": "GO",
-  "note": "RMEPS (BidNet)",
-  "critical": true,
-  "past": false,
-  "days_left": 1.21
+  "days_left": 0.32
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -361,7 +221,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.21
+  "days_left": 2.19
  },
  {
   "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
@@ -375,7 +235,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.34
+  "days_left": 2.32
  },
  {
   "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
@@ -389,7 +249,7 @@
   "note": "TCF boiler DQ quote due on BidNet",
   "critical": false,
   "past": false,
-  "days_left": 2.34
+  "days_left": 2.32
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -403,7 +263,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 3.21
+  "days_left": 3.19
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -417,7 +277,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.25
+  "days_left": 6.23
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -431,7 +291,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.25
+  "days_left": 6.23
  },
  {
   "key": "dougco-janitorial|Submission|2026-11-02T15:00:00-07:00",
@@ -445,7 +305,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 6.3
+  "days_left": 6.27
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
@@ -459,7 +319,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 7.17
+  "days_left": 7.15
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -473,7 +333,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 8.09
+  "days_left": 8.07
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -487,7 +347,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 9.38
+  "days_left": 9.36
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -501,7 +361,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 10.25
+  "days_left": 10.23
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -515,7 +375,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 13.25
+  "days_left": 13.23
  },
  {
   "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
@@ -529,7 +389,7 @@
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": false,
-  "days_left": 14.23
+  "days_left": 14.21
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -543,7 +403,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.25
+  "days_left": 16.23
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -557,7 +417,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.3
+  "days_left": 16.27
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -571,7 +431,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 17.25
+  "days_left": 17.23
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -585,7 +445,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 20.25
+  "days_left": 20.23
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -599,7 +459,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.25
+  "days_left": 20.23
  },
  {
   "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
@@ -613,7 +473,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 21.09
+  "days_left": 21.07
  },
  {
   "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
@@ -627,7 +487,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.25
+  "days_left": 23.23
  },
  {
   "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
@@ -641,7 +501,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.32
+  "days_left": 23.29
  },
  {
   "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
@@ -655,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 24.25
+  "days_left": 24.23
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -669,7 +529,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 24.25
+  "days_left": 24.23
  },
  {
   "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
@@ -683,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.25
+  "days_left": 27.23
  },
  {
   "key": "cos-oncall-snow|Submission|2026-11-23T14:00:00-07:00",
@@ -697,7 +557,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.25
+  "days_left": 27.23
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -711,7 +571,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 33.67
+  "days_left": 33.65
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -725,6 +585,6 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 35.25
+  "days_left": 35.23
  }
 ]
