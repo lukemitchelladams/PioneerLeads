@@ -18,7 +18,7 @@ Source: GovTribe → RMEPS. Document: `docs/RFQ-2126-On-Call-Commercial-Plumbing
 | Bond | **Performance & Payment Bond covering all Work Orders; initial $100,000 bond at contract execution** |
 | Contact | Sam Traylor, Procurement Specialist, straylor@littletonco.gov. Contacting anyone else at the City = possible disqualification. |
 | Attachments (separate in RMEPS) | A Contract Certification Form; B Sample Contract; C RMEPS Bid Question Response Guide |
-| Status | **GO. Submission due in 9 days.** |
+| Status | **NO-GO per Luke 2026-10-27 (no sub pricing before deadline).** Was: **GO. Submission due in 9 days.** |
 
 ## Why this is our best shot this month
 Qualifications-based, not low-bid. Small annual budget means big shops won't chase it. Pool award means we don't need to beat everyone, just qualify. Two-year on-call relationship with a Front Range city = the reference we need for Parker/DCSD.

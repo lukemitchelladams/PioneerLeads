@@ -14,4 +14,4 @@
 | Enclosures | Vendor Acknowledgement, Instructions, Scope, Pricing Template, Exhibit A drawings, Exhibit B Bogen spec, Exhibit C Bogen manual (all inside the one PDF) |
 | Contact | Elizabeth Morales, Construction Specialist, emorales@sd27j.net |
 | Performer | Low-voltage sub (see sub-outreach.md); Brown Bison submits |
-| Status | **GO. Sub pricing requested by 2026-10-23 17:00.** |
+| Status | **NO-GO per Luke 2026-10-27 (no sub pricing before deadline).** Was: **GO. Sub pricing requested by 2026-10-23 17:00.** |
