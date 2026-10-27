@@ -1,13 +1,16 @@
 # SpeedRun Social scorecard
 
 Entity: Brown Bison LLC, Broomfield, Colorado. Product: AI social media on autopilot for small businesses, the Blaze.ai replacement.
-Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-19, 07:00 MDT.
+Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-27, 07:00 MDT.
 
 ## Where it stands
 
 | Signal | Value | Source |
 | --- | --- | --- |
-| Site | ok, db ok, billing live | `/api/health`, 2026-10-19 07:00 MDT |
+| Site | ok, db ok, billing live | `/api/health`, 2026-10-27 07:00 MDT |
+| Week of Oct 19 to 26 | 34 deploys, #170 to #203. Pricing: the $19 founding price is quoted in the trial prompt (#185), the out-of-credits modal (#187) and the Monday digest (#201); annual prices pulled from 89 pages until annual billing can be bought (#183); free-plan wording fixed on about 150 pages (#182). Plan: free covers one connected social account, a second connect opens the upgrade, existing free users keep extras until Nov 9 (#201, E23, Luke's decision Oct 26); quiet free accounts (no post, approval or sign-in in 14 days) are paused nightly with a Reconnect prompt, first dry run 16 accounts in 11 workspaces (E22). Product: Followers tile from Zernio follower counts (#190); connect failures now record platform and the provider's words after one customer failed Facebook five times (#194); Connect to post on the post page (#202); platform-limits pages offer the free sign-up (#203); phone fixes to the plan banner, campaign bar, Brand Kit header and Terms notice. Growth: seven neutral-ranking test pages (restaurants, hair salons, boutiques, florists, nonprofits, roofers, bakeries), switch off. Deps: next 16.4.2, Sentry 10.76.2, zod, undici for the week's advisories. CI: moved to GitHub-hosted runners Oct 26; docs-only pushes skip the heavy checks; the build step needed a 5 GB heap; both checks green on the PR head 5d3e1a34 on Oct 27. | commits 2f7d2a4c to 5d3e1a34 |
+| Scoreboard, Oct 25 | 5 signups in 7 days, 17 accounts connected, 0 paying. 6 of 74 users signed in the week to Oct 26. The seven free workspaces that crossed the paywall Oct 20 to 27 produced 0 upgrades. | commit 35a1e11d; Blaze session Oct 26 |
+| Laptop | Deploys were held Oct 21 to 25 because the gate refuses to run with the lid closed on battery; 9 commits waited for the first run on power. | commits 1d93e08c, 9e179390 |
 | Scoreboard, Oct 18 | Signups 0 in 24h, 6 in 7 days, 45 in 30 days (sources: direct 3, ChatGPT 1, Google Ads 1, other search 1). 15 accounts connected. 2 posts published in 7 days. 6 active workspaces. 0 paying, $0 MRR, 0 packs. Break-even 0% of the $400 a month the loop counts as cost. First-party visit counter live since #163. | docs/ops/autonomy/scoreboard.md, commit 70c56169 |
 | Deploy #169, Oct 19 06:10 MDT | Approving a post now adds every connected platform its format allows (22 review posts across 5 workspaces had sat on Facebook alone while Instagram was connected; ayurvedashri the live case). E8 closed as a no-op by design. The overnight loop ran this on the Mac after the Blaze session went idle. | commits d2b47e95, cb17c651 |
 | Billing | **live** since Oct 1; annual prices not yet purchasable, copy now gated | `/api/health`; commit e8c7ebcb |
@@ -60,7 +63,7 @@ Traffic is thin and activation is broken at two points. First, Connect: as of Se
 
 ## Watch list
 
-- Deploys depend on a laptop. #136 stalled in sleep on Oct 2; #155 is blocked on Oct 16 because the gate times out under CI and other sessions on the same Mac. The deploy lane needs its own machine or CI.
+- Deploys depend on a laptop. #136 stalled in sleep on Oct 2; #155 was blocked Oct 16 by load; 9 commits were held Oct 21 to 25 with the lid closed on battery. CI now runs on GitHub-hosted runners (Oct 26), so the gate can follow it there. The deploy lane needs its own machine or CI.
 - The Mac froze and rebooted at about 18:30 MDT on Oct 18. Cause, from the Blaze session transcript: after "keep moving, I don't want to see you sitting" at 18:19 MDT it ran eight engineer agents at once, each in its own worktree on the Mac running `bun install`, lint and tests, on top of the gate and the browser. At 18:33 MDT, two minutes after the reboot, it resumed all eight with `bun install --frozen-lockfile` each. The orchestrator sent that session a throttle note at 18:36 MDT: at most two engineers at a time, one shared install, `nice -n 19`, hold while load exceeds the core count. At 19:13 MDT the Mac's load averages were still 22, 26 and 24; the session then gated deploy #163 on load under 18 and started it at 19:14 under caffeinate, saying it would add no CPU load during the gate. No acknowledgement of the throttle note was found in its transcript through 19:15, and Luke did not paste the two-agent rule into the session (his only message after 19:15 was "Send" at 21:37). The session went idle at 21:41 after saying the overnight engineering loop would pick up E8, so the same pattern can recur in the morning. Oct 15 Luke had already opened a Mac performance session because the machine was slow.
 - The week's output was SEO and comparison pages. None of the three funnel items moved. The page work is good but it feeds a funnel that still cannot connect a channel.
 
