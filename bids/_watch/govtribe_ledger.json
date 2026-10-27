@@ -1152,5 +1152,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T07:25:11+00:00 | GovTribe still BLOCKED (4th hour). HQ 06:36Z scan: 1 NEW match = BidNet mirror of USFS bunkhouse asbestos (WATCH alias); 3 non-matching BidNet federal mirrors recorded NO (VA lightning protection x2, Fort Carson ICIDS sources sought); 1 change = VA TENS (already NO) closing 10/30->11/02. Inbox: nothing new."
+  "last_hourly_check": "2026-10-27T08:23:31+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 5th hour); no CO/federal/PSC review or watched re-pull. HQ 07:36Z scan: nothing new/changed. Inbox: nothing new."
 }
