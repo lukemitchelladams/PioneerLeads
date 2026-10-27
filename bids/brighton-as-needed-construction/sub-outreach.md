@@ -6,12 +6,12 @@ Emails from search snippets, not verified.
 
 | Company | City | Email | Phone | Fit | Status |
 |---|---|---|---|---|---|
-| Handily Home Services | Brighton | scott@handilyhomeservices.com | 303-426-3459 | Commercial property maintenance for property managers | Gmail draft, Luke to send |
-| Rock Solid Handyman Services | Brighton | ryan@rocksolidhs.com | (303) 578-2218 | North metro handyman | Gmail draft |
-| TC Handyman Services | Federal Heights | westpro64@gmail.com | (303) 909-8979 | Commercial handyman, flooring | Gmail draft |
-| Bleeker Construction | Northglenn/Thornton | karen@bleekerco.com | (720) 845-5043 | Commercial GC/TI, maybe big | Gmail draft |
-| Ceres Construction | Thornton | ceresconstruction@gmail.com | (720) 934-2174 | Drywall, flooring, remodels | Gmail draft |
-| V Tradesman | Northglenn | mike@vtradesman.com | 720-363-9139 | Repairs, maintenance | Gmail draft |
+| Handily Home Services | Brighton | scott@handilyhomeservices.com | 303-426-3459 | Commercial property maintenance for property managers | Sent 10/27 (short version) |
+| Rock Solid Handyman Services | Brighton | ryan@rocksolidhs.com | (303) 578-2218 | North metro handyman | Sent 10/27 (short version) |
+| TC Handyman Services | Federal Heights | westpro64@gmail.com | (303) 909-8979 | Commercial handyman, flooring | Sent 10/27 (short version) |
+| Bleeker Construction | Northglenn/Thornton | karen@bleekerco.com | (720) 845-5043 | Commercial GC/TI, maybe big | Sent 10/27 (short version) |
+| Ceres Construction | Thornton | ceresconstruction@gmail.com | (720) 934-2174 | Drywall, flooring, remodels | Sent 10/27 (short version) |
+| V Tradesman | Northglenn | mike@vtradesman.com | 720-363-9139 | Repairs, maintenance | Sent 10/27 (short version) |
 
 Phone-only, best fits: Mr. Handyman of Brighton (720) 336-8030 (commercial division); BVB General Contractors
 303-637-0981 (commercial TI); Mile High Renovation (303) 227-8997; Quality Carpentry Services (720) 838-3372;
