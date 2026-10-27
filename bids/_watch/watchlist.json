@@ -323,6 +323,30 @@
    "match": "hvac filters.*belts",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "Larimer County Jail Fire Alarm Inspection & Maintenance (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000441715",
+   "match": "jail - fire alarm inspection",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Arapahoe County Fairgrounds South Lawns Irrigation Renovation (EVALUATE, mandatory pre-bid 2026-11-10 + RSVP)",
+   "source": "bidnet",
+   "id": "0000441680",
+   "match": "south lawns irrigation",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County Structured Cabling & Fiber Optic Contractors (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000441695",
+   "match": "structured cabling and fiber optic",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

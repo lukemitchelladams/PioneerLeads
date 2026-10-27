@@ -1021,6 +1021,114 @@
       "verdict": "NO",
       "why": "NO: DLA NSN ball-bearing RFQ (PSC 3110, mil-spec/approved-source); not a Jones Bearing product line; no quantity in hand (rule 9). Dad reviews DIBBS RFQs himself from the local-runner list.",
       "at": "2026-10-27T14:29:25+00:00"
+    },
+    "bidnet:0000440236": {
+      "decision": "NO",
+      "title": "Douglas County 036-26 Janitorial Services for County Facilities",
+      "reason": "Q&A 1 (2026-10-27): no subcontracting/independent contractors allowed; cleaning staff must be the Contractor's employees. Brown Bison has no janitorial staff. Due 2026-11-02 15:00 MT.",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441715": {
+      "decision": "EVALUATE",
+      "title": "Larimer County Jail - Fire Alarm Inspection and Maintenance Services",
+      "reason": "Our trade via a NICET fire-alarm sub. Due 2026-11-06 14:00 MT. Pre-bid/walk unknown until the package downloads (watchlisted).",
+      "triaged_at": "2026-10-27T20:22Z",
+      "pipeline_id": "larimer-jail-fire-alarm"
+    },
+    "bidnet:0000441680": {
+      "decision": "EVALUATE",
+      "title": "Arapahoe County Fairgrounds: South Lawns Irrigation Renovation",
+      "reason": "Landscaping/irrigation (Alex Ditto pricing). MANDATORY pre-bid 2026-11-10 + RSVP required per BidNet. Due 2026-11-30 14:00 MT. Confirm not heavy civil (rule 8) when the package downloads.",
+      "triaged_at": "2026-10-27T20:22Z",
+      "pipeline_id": "arapahoe-south-lawns-irrigation"
+    },
+    "bidnet:0000441695": {
+      "decision": "EVALUATE",
+      "title": "Douglas County Structured Cabling and Fiber Optic Contractors",
+      "reason": "Low-voltage on-call pool; needs a cabling sub. Due 2026-12-03 14:00 MT. Pre-bid unknown until the package downloads (watchlisted).",
+      "triaged_at": "2026-10-27T20:22Z",
+      "pipeline_id": "dougco-structured-cabling"
+    },
+    "bidnet:0000439657": {
+      "decision": "NO",
+      "title": "Douglas County 038-26 Commercial/Residential Fencing",
+      "reason": "Fencing is not our trade; Q&A 1 confirms all-inclusive bids with 4-hour emergency response.",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000438657": {
+      "decision": "NO",
+      "reason": "CU Boulder UCB001511 Division 00 & 01 specifications: not a bid",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441537": {
+      "decision": "NO",
+      "reason": "BD2736 data center ISP services (E-Rate): telecom, not our trade",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441540": {
+      "decision": "NO",
+      "reason": "BD2737 secondary data center ISP (E-Rate): telecom",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441542": {
+      "decision": "NO",
+      "reason": "BD2735 switch upgrades (E-Rate): IT hardware",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441617": {
+      "decision": "NO",
+      "reason": "LINEV Systems sole-source notice: not competitive",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441666": {
+      "decision": "NO",
+      "reason": "Notification of final settlement: not a bid",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441668": {
+      "decision": "NO",
+      "reason": "Security Electronics Maintenance & Support: detention security electronics, outside our trades (same call as Fort Carson ICIDS)",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441710": {
+      "decision": "NO",
+      "reason": "Professional audit services: not our trade",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441712": {
+      "decision": "NO",
+      "reason": "Final settlement concrete rehab: not a bid, heavy civil",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441719": {
+      "decision": "NO",
+      "reason": "Bid 158-26 HDDs: IT hardware supply, rule 9",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441725": {
+      "decision": "NO",
+      "reason": "RFP 2026-021 electric distribution inspection: utility inspection, not our trade",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441729": {
+      "decision": "NO",
+      "reason": "RFI PA/Intercom systems: RFI only, low-voltage AV; revisit if an RFP follows",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:444210484904": {
+      "decision": "NO",
+      "reason": "Colorado Water Plan messaging campaign: marketing",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:444213207766": {
+      "decision": "NO",
+      "reason": "CNC machines: supply, not our trade",
+      "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:444213207767": {
+      "decision": "NO",
+      "reason": "Diagnostic ultrasound system: medical supply",
+      "triaged_at": "2026-10-27T20:22Z"
     }
   },
   "watched": {
@@ -1206,6 +1314,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T19:21Z: GovTribe still BLOCKED (16th hour; ACCOUNT_CANCELLED/UPGRADE_REQUIRED on all 3 searches). HQ 18:36Z scan: BidNet BLIND (cooldown ended 18:53Z; next scan ~19:35Z should log in), SAM 93 live, Bonfire/DIBBS down, no new matches, no changes on watched bids. Inbox: BidNet addendum 1 notice for SD27J 2021B RRHS speaker cabling (NO-GO bid; logged only). Douglas 036-26 Addendum 1 still not downloaded. GO 5, sub pricing in hand 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted).",
+  "last_hourly_check": "2026-10-27T20:22Z: GovTribe still BLOCKED (17th hour). HQ 19:36Z scan: BidNet LOGGED IN again (602 open, 83 matches), SAM PARTIAL (FSC 3030 HTTP 504, list carried), Bonfire/DIBBS down. 3 NEW matches (Larimer jail fire alarm, Arapahoe irrigation w/ MANDATORY pre-bid 11/10+RSVP, DougCo structured cabling) -> EVALUATE, watchlisted. Douglas 036-26 janitorial Q&A read -> NO (no subcontracting). 15 non-match new listings -> NO. Inbox: Google Workspace billing notice only. GO 5, sub pricing 0/5.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

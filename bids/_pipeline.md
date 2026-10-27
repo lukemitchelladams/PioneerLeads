@@ -123,7 +123,7 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | Bunkhouse asbestos mitigation | USDA | 2026-10-28 | Sub outreach | Not in repo |
 | IFB 27-701-002 kitchen hood cleaning (46 kitchens) | Poudre SD | **2026-11-20 (Addendum 1.0; MANDATORY walk 2026-11-10 13:30 Fort Collins)** | Pricing (sub rate in private/) | Not in repo |
 | 1178-26P custodial, Breckenridge | Colorado Mountain College | 2026-11-02 | Pricing (A&A $5,600/mo) | **Repo marked NO BID (mandatory walk 10/12 missed)**: confirm with Luke |
-| 036-26 janitorial | Douglas County Government | 2026-11-02 | Qualifying | Not in repo |
+| 036-26 janitorial | Douglas County Government | 2026-11-02 | NO (Q&A 1: no subcontracting allowed) | downloads/bidnet/0000440236 |
 | RFP 26-058 on-call facilities trade services | El Paso County | 2026-11-04 | Qualifying (3-yr experience question) | Not in repo; addendum 2 issued 2026-10-19 (BidNet email) |
 | 26-18629AP-FM asbestos abatement | Jefferson County | 2026-10-06 | Submitted | Not in repo |
 | R26-077MZ Parks Maintenance On-Call | City of Colorado Springs | 2026-10-20 | **CRM: "already a no-bid"** | **Repo has GO + proposal draft**: Luke decides |
