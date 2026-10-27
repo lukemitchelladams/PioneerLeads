@@ -1,1102 +1,1102 @@
 {
- "_comment": "GovTribe open-bid review ledger for the hourly check. baseline: every open Colorado state/local record (165, due >= 2026-10-20) was reviewed 2026-10-19 19:30 MT; newest posting GovTribe held was 2026-10-14. Each hour: triage any open CO record posted after last_posted_reviewed or not in `triaged`, then add it here. `watched` holds updated_at/due/file names per watched govtribe_id for addendum detection.",
- "baseline_reviewed_at": "2026-10-19T19:30:00-06:00",
- "baseline_count": 165,
- "last_posted_reviewed": "2026-10-26",
- "triaged": {
-  "6ad21a4444ea9a49cf0994bf": "GO: 27J Speaker Cabling (low-voltage), due 2026-10-28 10:00 by email emorales@sd27j.net, no walk found",
-  "6ac78e093e2326616e082a6f": "EVALUATE: Jeffco Dome Glass, pre-bid 10/15 passed ('should attend'), ask Pulford before 10/21 10:00 questions deadline",
-  "6a2173ec20564a33670a0399": "EVALUATE: Elbert County fencing, due 10/27 12:30, questions due 10/20 13:00",
-  "6abfa4f2de90cc3d3c036702": "EVALUATE-low: DPS BD2730 GC prequal, due 10/21 10:00, possible Round 2",
-  "6abfa500de90cc3d3c036710": "NO: Westminster golf bunker (earthwork), mandatory walk 10/20 10:30",
-  "6ac63c7125a3b08d0b072bf7": "NO: Aspen Cozy Point cabin, mandatory walk 10/20 13:00 Pitkin County",
-  "6ac78dfb3e2326616e082a68": "NO: window/curtain wall replacement + abatement, outside trades",
-  "6ac78e063e2326616e082a6d": "NO: School of Mines, A/E qualifications",
-  "6ac63c7625a3b08d0b072bf9": "NO: Poudre GC on-demand, due 10/22, needs 3 K-12 projects",
-  "6ab276ceb4ab33ea4809d590": "NO: Aspen waste hauling",
-  "6abfa4ecde90cc3d3c036700": "NO: Jeffco jail door hardware, specialty, conference passed",
-  "6abf8798b960f0c48a0793b6": "NO: CBI GJ HVAC/lighting, mandatory walk 10/12 missed, $3.1M, 2 projects >$3M",
-  "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
-  "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19",
-  "fed:d25cf386f88c43619ddbc95a424ead75": "NO: USPS Denver P&DC roof replacement (roofing, NAICS 236220), due 2026-11-20",
-  "fed:24ffa6d27a674212a41ade72d91ec106": "NO (Jones Bearing): BEP ergonomic drum handlers, not bearings/conveyor product",
-  "bidnet:montezuma-2027-janitorial": "NO: Montezuma County 2027 janitorial (7 bldgs, Cortez); new-bidder walk 2026-10-12 missed; 7h away",
-  "bidnet:ppsc-dq27-005": "NO: PPSC flooring re-bid, not our trade, closes 10/23",
-  "bidnet:detention-kiosks": "NO: detention security desk kiosks, closes 10/23, outside trades",
-  "bidnet:redstone-snow": "NO (likely): Redstone/Pitkin snow removal, 3.5h away; reconsider only with docs",
-  "bidnet:fire-alarm-inspection": "NO: pre-bid 10/20 passed per BidNet detail (was EVALUATE-lean-NO)",
-  "bidnet:fire-alarm-troubleshoot": "NO: MANDATORY pre-bid 10/15 passed per BidNet detail",
-  "bidnet:access-control": "EVALUATE: on-call security access control 11/19 (low-voltage sub)",
-  "bidnet:hvac-staged-upgrade": "EVALUATE: staged HVAC system upgrade, closes 2027-02-26",
-  "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)",
-  "bidnet:broomfield-26-rfp-pd-002": "NO: Broomfield PD detention fence, mandatory pre-proposal 2026-09-30 missed",
-  "bidnet:dougco-fencing": "EVALUATE-lean-NO: Douglas County commercial/residential fencing 11/05, outside core trades",
-  "bidnet:0000440260-roof-repair": "NO: Roof Repair Services, mandatory pre-bid 10/21, roofing is not our trade",
-  "bidnet:elevator-pm": "NO: Elevator PM/repairs, pre-bid 10/27, not our trade",
-  "bidnet:superior-irrigation-tank-cover": "NO: Town of Superior irrigation tank floating cover, pre-bid 10/22, not our trade",
-  "bidnet:environmental-consulting": "NO: On-call environmental consulting, not our trade",
-  "bidnet:fire-alarm-replacement-2027": "NO-lean: Fire Alarm Replacement 2027/2028, MANDATORY pre-bid 10/27 per BidNet detail; NICET sub + 7-day sub notice not met",
-  "bidnet:cu-ucb001284": "NO: CU Boulder UCB001284 lighting, MANDATORY pre-bid 10/01 missed (BidNet detail)",
-  "bidnet:dps-bd2733-fire-alarm": "NO-lean: DPS BD2733 Fire Alarm 2027/28, mandatory job-walk 10/27 10:00; NICET sub + 7-day notice not met",
-  "d25cf386f88c43619ddbc95a424ead75": {
-   "name": "USPS Denver P&DC Roof Replacement 089495-27-A-0001",
-   "verdict": "NO",
-   "why": "NO: roofing, NAICS 236220 building construction, not our trade",
-   "at": "2026-10-20T09:22:00Z"
-  },
-  "a947171b7df94dc8b1b02e77d6976712": {
-   "name": "USAF Space Command HSQ EMCS J&A FA255026P0030",
-   "verdict": "NO",
-   "why": "NO: sole-source justification notice, not a competition",
-   "at": "2026-10-20T09:22:00Z"
-  },
-  "24ffa6d27a674212a41ade72d91ec106": {
-   "name": "Treasury BEP Ergonomic Drum Handlers 2031ZA27N00002",
-   "verdict": "NO",
-   "why": "NO for Jones Bearing: drum handlers (PSC 3920 material handling) are not a Jones/American Pulley/ConveyMor product; small-business presolicitation, due 2026-11-07",
-   "at": "2026-10-20T09:22:00Z"
-  },
-  "6a42471f7763fa5692000e4d": {
-   "name": "Denver RFP126DM010 Tire Lease",
-   "verdict": "NO",
-   "why": "NO: tire lease, not our trade",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6aba3fefb2e0f86b0e00dc3b": {
-   "name": "Denver RFP126DY004 2027 Paratransit Program Assessment",
-   "verdict": "NO",
-   "why": "NO: consulting study",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a0544ea9a49cf0994ac": {
-   "name": "Douglas County CIP25025 Public Works Decant Facility Expansion",
-   "verdict": "NO",
-   "why": "NO: heavy civil (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad219e644ea9a49cf0994aa": {
-   "name": "Adams County 25415 3MG Clearwell #3",
-   "verdict": "NO",
-   "why": "NO: water storage heavy civil (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a3b44ea9a49cf0994bd": {
-   "name": "Colorado Springs Q26096MZ Valley Hi Irrigation Pond Repairs",
-   "verdict": "NO",
-   "why": "NO: pond/earthwork (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a3644ea9a49cf0994bb": {
-   "name": "Larimer County RFQUCOF1426 Pre-Approved ADU Library",
-   "verdict": "NO",
-   "why": "NO: architectural design",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a1144ea9a49cf0994b2": {
-   "name": "Douglas County 6166A CAPSTC Fire Water Recycle Pond",
-   "verdict": "NO",
-   "why": "NO: pond/heavy civil (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a3144ea9a49cf0994b9": {
-   "name": "Douglas County CIP25036 Dransfeldt Motsenbocker Turn Lane",
-   "verdict": "NO",
-   "why": "NO: roadwork (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a0d44ea9a49cf0994b0": {
-   "name": "Pueblo 2702 Design/Build Cosmetology Classroom Remodel",
-   "verdict": "NO",
-   "why": "NO: design-build GC remodel, not our trade",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6a748002dc326e5cc50acb92": {
-   "name": "Arapahoe/SSPR Irrigation tank floating cover replacement",
-   "verdict": "NO",
-   "why": "NO: tank cover / civil (rule 8)",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a1b44ea9a49cf0994b5": {
-   "name": "Colorado Springs S20271001 Palmer Renovation Abatement",
-   "verdict": "NO",
-   "why": "NO: asbestos abatement, not our trade",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad219e044ea9a49cf0994a8": {
-   "name": "USFS 1240LT26Q0187 Lone Cone Chinking GMUG NF",
-   "verdict": "NO",
-   "why": "NO: log-structure chinking, not our trade",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6ad21a4944ea9a49cf0994c1": {
-   "name": "Weld County F2610059 Boyd WTP Regionalism Report",
-   "verdict": "NO",
-   "why": "NO: engineering study",
-   "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
-  },
-  "6adf1c0befc83d79cb01775e": {
-   "name": "CDPHE California Gulch Groundwater Monitoring RFPFAAA20270000682",
-   "verdict": "NO",
-   "why": "NO: environmental monitoring/engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf1bd90e8212e88907a278": {
-   "name": "Morgan CC OC SS 27-01 Intent to Award Sole Source Trane",
-   "verdict": "NO",
-   "why": "NO: sole-source notice, not a competition",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf1b69efc83d79cb017754": {
-   "name": "CDOC SCCF Dementia Unit Improvements IFB 2027000030 (Pitkin dup)",
-   "verdict": "NO",
-   "why": "NO: general building construction IFB with prevailing wage; GC work, not our trades",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf1ba50e8212e88907a276": {
-   "name": "CDOC Camera Equipment & Licensing DQ",
-   "verdict": "NO",
-   "why": "NO: equipment supply",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf1bc3efc83d79cb01775c": {
-   "name": "CDOC DRDC Fire Protection System Replacement IFB 2027000036",
-   "verdict": "NO",
-   "why": "NO: HQ pipeline NO: mandatory pre-bid 2026-10-07 passed; $17.5M bonding",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf1b79efc83d79cb017758": {
-   "name": "CDOC FY28 DQ Laundry Services GMYC",
-   "verdict": "NO",
-   "why": "NO: laundry service, not our trade",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36ea491e5e8d650ecadc": {
-   "name": "CSP Total Traffic DUI Campaign (NPSS)",
-   "verdict": "NO",
-   "why": "NO: media buy / sole source",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36dad492b5f5d60b9107": {
-   "name": "CDOT Loma Port of Entry ANS Traffic Rerouting",
-   "verdict": "NO",
-   "why": "NO: roadwork (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36f7491e5e8d650ecade": {
-   "name": "CDOC Fresh Produce RFQ",
-   "verdict": "NO",
-   "why": "NO: food supply",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36fed492b5f5d60b910d": {
-   "name": "CDPHE Methane Seep Program",
-   "verdict": "NO",
-   "why": "NO: environmental program",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb3707491e5e8d650ecae0": {
-   "name": "CDOC Fresh Eggs RFQ",
-   "verdict": "NO",
-   "why": "NO: food supply",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb372c491e5e8d650ecae6": {
-   "name": "CDPHE California Gulch Groundwater Monitoring RFPFAAA20270000681",
-   "verdict": "NO",
-   "why": "NO: environmental monitoring/engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36e7d492b5f5d60b9109": {
-   "name": "CCCS RFP 27-006 Executive Coaching",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb3721491e5e8d650ecae4": {
-   "name": "CWCB Colorado Water Plan Messaging Campaign",
-   "verdict": "NO",
-   "why": "NO: marketing",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adf296e9fe3480b5203e745": {
-   "name": "RTD 126DP002 Park-n-Ride Passenger Activity Data Collection",
-   "verdict": "NO",
-   "why": "NO: data-collection service",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02dad679c74ace0ced91": {
-   "name": "Arapahoe Co. (Littleton-style) 2026 On Call Garage Door Repairs",
-   "verdict": "NO",
-   "why": "NO: overhead-door trade is not ours; sibling of Littleton RFQ 1926 pedestrian doors, which HQ read as subcontractors-not-allowed; bid doc not read, revisit only if Luke wants doors",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36de491e5e8d650ecada": {
-   "name": "RRCC 27-06-SS simulators Notice of Sole Source",
-   "verdict": "NO",
-   "why": "NO: sole-source notice",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02d5d679c74ace0ced8d": {
-   "name": "Thornton 26PKS060 Tennis Court Resurface Meadowlake Park",
-   "verdict": "NO",
-   "why": "NO: sport-surface paving (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02cad679c74ace0ced88": {
-   "name": "USAF FA2550PAVR Paving Acquisition Vehicle Rockies sources sought",
-   "verdict": "NO",
-   "why": "NO: paving IDIQ (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02e8d679c74ace0ced97": {
-   "name": "Douglas Co. 6169A Traffic Signal Plan Hogan Pkwy & E-470",
-   "verdict": "NO",
-   "why": "NO: traffic engineering/roadwork",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02e1d679c74ace0ced93": {
-   "name": "Adams County Health Dept Environmental Health Renovation RFPAR2026841",
-   "verdict": "NO",
-   "why": "NO: GC building renovation; not our trades (keep it simple, Luke 2026-10-19)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02e5d679c74ace0ced95": {
-   "name": "La Plata 202600482020 Clarifier Preservation Project",
-   "verdict": "NO",
-   "why": "NO: wastewater/heavy civil (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36f2d492b5f5d60b910b": {
-   "name": "PPSC DQ 27-006 Operable Wall Partitions",
-   "verdict": "NO",
-   "why": "NO: partition supply/install, not our trade",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02c7d679c74ace0ced82": {
-   "name": "USFS 1240LT27Q0019 Administrative Parking Lot Repairs",
-   "verdict": "NO",
-   "why": "NO: paving (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36d5491e5e8d650ecad8": {
-   "name": "CO NPSS A & B Builders Renovation Project",
-   "verdict": "NO",
-   "why": "NO: sole-source notice",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb36c9d492b5f5d60b9102": {
-   "name": "CPW Toybox Forest Habitat Improvement",
-   "verdict": "NO",
-   "why": "NO: forestry",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02cdd679c74ace0ced8a": {
-   "name": "USFS 117346 Stove Prairie Campground Gate Replacement",
-   "verdict": "NO",
-   "why": "NO: gate fabrication/install, not our trade",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb373a491e5e8d650ecae8": {
-   "name": "Pueblo IFB 2027000046 ADA Upgrades",
-   "verdict": "NO",
-   "why": "NO: GC building construction, not our trades",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02d8d679c74ace0ced8f": {
-   "name": "City of Littleton 1926 On Call Commercial Pedestrian Door Repairs",
-   "verdict": "NO",
-   "why": "NO: HQ pipeline NO: RFQ bars subcontractors; no door crew",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6adb3716491e5e8d650ecae2": {
-   "name": "CCi Metal Products RFP",
-   "verdict": "NO",
-   "why": "NO: supply",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02fed679c74ace0ceda5": {
-   "name": "Glenwood Springs 202628P Citywide Sign Inventory",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02fcd679c74ace0ceda3": {
-   "name": "Garfield Co. 10122026 Wamsley and West Ave Improvements",
-   "verdict": "NO",
-   "why": "NO: roadwork (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894a33ff49425a607b1ac": {
-   "name": "CO Office of Sustainability Utility Management Software",
-   "verdict": "NO",
-   "why": "NO: software",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89524cd6fe3a85b06cbac": {
-   "name": "CO TIF Analysis Consultant",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894dc3ff49425a607b1b3": {
-   "name": "CO Law Enforcement Ammunition RFP",
-   "verdict": "NO",
-   "why": "NO: ammunition supply",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894bdcd6fe3a85b06cb9c": {
-   "name": "Oregon RFI Fleet Card Services",
-   "verdict": "NO",
-   "why": "NO: out of state, RFI",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894293ff49425a607b19e": {
-   "name": "CO CMS #211060 RFQ Pre-Disaster DRR",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894c6cd6fe3a85b06cb9e": {
-   "name": "Fort Carson ARMAG Concrete Pads (NCS1OAAA)",
-   "verdict": "NO",
-   "why": "NO: concrete/civil (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6a86f5c786071488ad087fed": {
-   "name": "Colorado Springs 26010 Civic District Site Plan",
-   "verdict": "NO",
-   "why": "NO: planning",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad8944a3ff49425a607b1a2": {
-   "name": "CDOC SCCF Dementia Unit Improvements IFB 2027000030 (El Paso dup)",
-   "verdict": "NO",
-   "why": "NO: general building construction IFB; GC work, not our trades",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02f7d679c74ace0ced9f": {
-   "name": "Jefferson Co. 2650 Parks & Rec Strategic Plan Update",
-   "verdict": "NO",
-   "why": "NO: planning",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02f3d679c74ace0ced9c": {
-   "name": "CDOT R4 Mary's Lake Estes Park Signal Pole Replacement",
-   "verdict": "NO",
-   "why": "NO: roadway signal work (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02f0d679c74ace0ced9a": {
-   "name": "Weld County Health Dept Nurses Station Renovation B2600112",
-   "verdict": "NO",
-   "why": "NO: GC building renovation; not our trades",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894bf3ff49425a607b1af": {
-   "name": "CO Health & Welfare Actuarial & Broker Consultant",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada0301d679c74ace0ceda7": {
-   "name": "Douglas Co. 26027 Prof Engineering Svcs Chambers Road",
-   "verdict": "NO",
-   "why": "NO: engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ada02fad679c74ace0ceda1": {
-   "name": "Rifle 118026P Trades Center Renovation",
-   "verdict": "NO",
-   "why": "NO: GC renovation, Garfield County",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fbdd003cf59700b7872": {
-   "name": "Douglas Co. 26027 RFQ Prof Engineering Svcs Chambers Road (dup)",
-   "verdict": "NO",
-   "why": "NO: engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fc8d003cf59700b7878": {
-   "name": "Boulder County RFP32026 Waste Collection Services",
-   "verdict": "NO",
-   "why": "NO: hauling",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75eecdb61f19ba1048e62": {
-   "name": "Jefferson Co. 2650 Parks & Rec Strategic Plan Update (dup)",
-   "verdict": "NO",
-   "why": "NO: planning",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894933ff49425a607b1aa": {
-   "name": "CDOC Psychiatric Nursing Program",
-   "verdict": "NO",
-   "why": "NO: medical",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894cfcd6fe3a85b06cba0": {
-   "name": "PPSC RFQ 2768 As-Needed Consulting Services for Design",
-   "verdict": "NO",
-   "why": "NO: design consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fe7c20d55063f0581a4": {
-   "name": "Loveland 10349 Substation Engineering Services On-Call",
-   "verdict": "NO",
-   "why": "NO: engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fdec20d55063f05819e": {
-   "name": "Longmont 426084 Clark Centennial Park",
-   "verdict": "NO",
-   "why": "NO: park construction (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fd6c20d55063f05819a": {
-   "name": "Eagle Co. TF2025026 University Blvd & Cresthill Ln Intersection",
-   "verdict": "NO",
-   "why": "NO: roadwork (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fdbc20d55063f05819c": {
-   "name": "Mesa Co. CMU28861 Mass Communication System Phase 1",
-   "verdict": "NO",
-   "why": "NO: IT/communications",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fd2c20d55063f058192": {
-   "name": "Ouray RFQ26065 Repair Welded Steel Roof Whitlock 5MG Tank",
-   "verdict": "NO",
-   "why": "NO: tank welding, Ouray; not our trade",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894f5cd6fe3a85b06cba6": {
-   "name": "DRMS MSPP Pre-Enrollment Inspections",
-   "verdict": "NO",
-   "why": "NO: mining inspections",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89515cd6fe3a85b06cbaa": {
-   "name": "CO Short-Term and Long-Term Disability Benefits",
-   "verdict": "NO",
-   "why": "NO: benefits",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75febc20d55063f0581a6": {
-   "name": "RFP 144-26 Clocktower Plaza Design",
-   "verdict": "NO",
-   "why": "NO: design",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fd5c20d55063f058198": {
-   "name": "South Metro Housing Options RFP 008 Elevator Maintenance",
-   "verdict": "NO",
-   "why": "NO: HQ pipeline NO: licensed elevator mechanics + proprietary tools; elevator firms bid direct",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894af3ff49425a607b1ad": {
-   "name": "CPW Comprehensive State Park Strategy",
-   "verdict": "NO",
-   "why": "NO: planning",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fe1c20d55063f0581a0": {
-   "name": "Fountain COF27PWDE001 Professional Services Design and Engineer",
-   "verdict": "NO",
-   "why": "NO: engineering",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894363ff49425a607b1a0": {
-   "name": "CO RFP Audit of Colorado Sports Betting",
-   "verdict": "NO",
-   "why": "NO: audit",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89534cd6fe3a85b06cbae": {
-   "name": "CDPHE Data Validation for CHSD",
-   "verdict": "NO",
-   "why": "NO: data services",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89471cd6fe3a85b06cb90": {
-   "name": "CO NCS Sherman Channel Project Design Build",
-   "verdict": "NO",
-   "why": "NO: heavy civil + sole-source notice",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894583ff49425a607b1a4": {
-   "name": "EGB FY27 RFI 2027000013 SLDS",
-   "verdict": "NO",
-   "why": "NO: IT RFI",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75fefd003cf59700b787a": {
-   "name": "Boulder County BID25426 LoBo Trail Jay Road Connection",
-   "verdict": "NO",
-   "why": "NO: trail construction (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad75ff9d003cf59700b787c": {
-   "name": "Boulder County RFP31926 Pavement Management Road Inventory",
-   "verdict": "NO",
-   "why": "NO: consulting",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89496cd6fe3a85b06cb96": {
-   "name": "CDPHE NBS LIMS RFI",
-   "verdict": "NO",
-   "why": "NO: software RFI",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894cd3ff49425a607b1b1": {
-   "name": "CO IEP Project for Children with I/DD",
-   "verdict": "NO",
-   "why": "NO: social services",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad8948bcd6fe3a85b06cb94": {
-   "name": "CDOC FY28 DQ Laundry Services GMYC (dup)",
-   "verdict": "NO",
-   "why": "NO: laundry service",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894dccd6fe3a85b06cba2": {
-   "name": "PPSC DQ 27-006 Operable Wall Partitions (dup)",
-   "verdict": "NO",
-   "why": "NO: partition supply/install",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894b3cd6fe3a85b06cb9a": {
-   "name": "CO Ft Lyon Inspection, Lab Analysis & Testing",
-   "verdict": "NO",
-   "why": "NO: environmental testing",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894ebcd6fe3a85b06cba4": {
-   "name": "CO Building Performance Database Management Administration",
-   "verdict": "NO",
-   "why": "NO: software/admin",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad89507cd6fe3a85b06cba8": {
-   "name": "CWCB Hydrology & Water Availability 15MR CO River",
-   "verdict": "NO",
-   "why": "NO: hydrology study",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad894803ff49425a607b1a8": {
-   "name": "CDOC TCF Boiler Chemicals DQ 2027000037 (Garfield record, MOD 1)",
-   "verdict": "DUPLICATE",
-   "why": "duplicate GovTribe record of 6adf1b88efc83d79cb01775a (watched; pipeline cdoc-tcf-boiler-water)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ad8b12d4d0a3954a2033bd2": {
-   "name": "Boulder County BID-321-26 Sheriffs Headquarters Lighting Upgrades (Bonfire 258797)",
-   "verdict": "NO",
-   "why": "NO: materials only (quoted: 'Provide new LED lighting fixtures... Materials only; no labor'), complete bids only, fixtures delivered by 2026-12-31; fixture resale = small-margin supply bid (rule 9). Bid opening 2026-11-05 15:00 on Teams.",
-   "at": "2026-10-26T17:40:00Z"
-  },
-  "74a5fbbf60bf48cdb90d5a6ea4964b25": {
-   "name": "IHS 75H70726Q00107 Nurse Practitioner Towaoc CO",
-   "verdict": "NO",
-   "why": "NO: medical staffing",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bb8325d1814549b5950d774650842786": {
-   "name": "GSA 2CO0668 lease office space Durango CO",
-   "verdict": "NO",
-   "why": "NO: real-estate lease",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "809e6cab022c4fe6a9c2f6b3caf529ee": {
-   "name": "Army MICC Fort Hood PANMCC26P0000043384 Service Order Desk (presol)",
-   "verdict": "NO",
-   "why": "NO: call-center service, Fort Hood TX",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "4934c3f7e2774960a47dc381fd6bef8b": {
-   "name": "USAF Space Command FA251827CA001 CONDOR A-ISR award",
-   "verdict": "NO",
-   "why": "NO: award notice",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "d1257115c4d14a76a2528df6c8f33e85": {
-   "name": "Armed Forces Recruiting Bldg 25 Tenant Improvement sources sought",
-   "verdict": "NO",
-   "why": "NO: GC tenant-improvement renovation (NAICS 236220), sources sought",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "e222f7fd6e114b80931f5976826e7a29": {
-   "name": "USFS 1240LT27Q0019 Administrative Parking Lot Repairs",
-   "verdict": "NO",
-   "why": "NO: paving (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "cd2b3215a98141c785653c97c2c0aa78": {
-   "name": "VA J065 PM on Siemens Symbia S (SAM match)",
-   "verdict": "NO",
-   "why": "NO: medical imaging OEM service",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "ffa761b91c61460291c74cf744e8a792": {
-   "name": "Interior/BOR Sources Sought Janitorial Services Hoover Dam (SAM match)",
-   "verdict": "NO",
-   "why": "NO: Nevada; sources sought",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6ff2139e1e4e4f9a8ea52133c377ebb0": {
-   "name": "BOR EC-ECAO Exterior Door Replacement (SAM match)",
-   "verdict": "NO",
-   "why": "NO: door replacement = carpentry/GC, not our trades; Eastern Colorado Area Office Loveland",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "4d0d75c8e5a44e54ad59972a249ec55e": {
-   "name": "BOR EC-ECAO Exterior Door Replacement (dup SAM match)",
-   "verdict": "NO",
-   "why": "NO: door replacement = carpentry/GC",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "71ac218ba63c4668b2b3129557fcdeb5": {
-   "name": "BOR EC-ECAO Exterior Door Replacement (dup SAM match)",
-   "verdict": "NO",
-   "why": "NO: door replacement = carpentry/GC",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "f09596ebe7514beda8c1522bd0d664fb": {
-   "name": "BOR 56 PGMB Security Gate (SAM match)",
-   "verdict": "NO",
-   "why": "NO: gate materials/installation, not our trade",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "5988a90b5fb94514a89cebc7362a22b5": {
-   "name": "DOE Design-Build STM Security Fencing North Boundary (SAM match)",
-   "verdict": "NO",
-   "why": "NO: fencing design-build (rule 8)",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bd849c41a0ea48998a630786a4e39113": {
-   "name": "DLA L&M 7017982727 Gear Set Worm and Worm Wheel (presol)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "cae0c7421ecd424c8a3aa668045ddfe1": {
-   "name": "DLA Aviation SPE4A627Q0167 Bearing Roller Needle PN 369135",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "524e3ee049b94affaffedd261c4dc139": {
-   "name": "DLA Aviation SPE4A627Q0167 Bearing Roller Needle (presol dup)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "2e6249880c22476b9c98dc249949456f": {
-   "name": "DLA Aviation SPE4A627Q0128 Bearing Ball Annular PN 145DC011-11",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "deea8b76a44f4b4f9db33e09906ba274": {
-   "name": "DLA Aviation SPE4A627RX106 Bearing Ball Annular",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "27f7957d875a4ed38ec818b1a4afb863": {
-   "name": "DLA Aviation SPE4A627RX046 Bearing Ball Annular",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "e63d86aa73b34b0ca47a59fbfaa8ba09": {
-   "name": "DLA Aviation SPE4A627RX041 Bearing Roller Cylindrical",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "d9e769af7e6349b8a28f9fbcf5d71cba": {
-   "name": "DLA Aviation SPE4A627RX025 Bearing Ball Annular",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "47fe8b133a884ef1a54b24338e471f0d": {
-   "name": "DLA Aviation SPE4A627T6804 Bearing Sleeve",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bb3c0d4465734890883e76ceac37df27": {
-   "name": "DLA Aviation SPE4A627T6863 Bearing Sleeve",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "05cbfdc91694473f89845e57e25f50d4": {
-   "name": "DLA Aviation SPE4A627T6846 Bearing Roller Cylindrical",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "16deb1d14ac142dab0b25a8626e03bd1": {
-   "name": "DLA L&M SPE7L327U0041 Pulley Cone",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "57e9a121061b4dba862dca1b8ffbc5b1": {
-   "name": "DLA Troop Support SPE8EE27T0247 Tensioner Pulley Assembly",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "63972a264f804080ad2082f0fe279f1a": {
-   "name": "DLA L&M SPE7L127T2468 Conveyor Ammunition",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "565e8dc22d744c82b0c01fa7be758b7e": {
-   "name": "NAVSUP N0010427QBB66 Shell Bearing Upper (presol)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "78786107d17a43479408acaec1ef49c0": {
-   "name": "DLA Aviation SPE4A627Q0111 Thrust Mag Bearing Assy",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "99ea29c4613747028c596092d4dbb17e": {
-   "name": "DLA Aviation SPE4A627Q0113 Bearing Plain Rod End",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "f68b42c6a60744628785318d4593ddf0": {
-   "name": "NAVSEA Roller Tracks (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "881be8c69a194a7da24919cce13b25e5": {
-   "name": "Army ACC Rota-rack (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6f774aa5d21848aa9a0121a4b2293ab9": {
-   "name": "Army Watervliet Gear Rack 8767202 Rev Y M284 cannon (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "6f56f057778f4477a61f3cf648febca5": {
-   "name": "State Dept Nanotechnology Certified Replacement Filter (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "77f43d75da58449f8d622ac857d2ff4b": {
-   "name": "NAVSUP Gear Pinion (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "da984b4f70fd412d924e9c830a2c3299": {
-   "name": "NAVSUP Crane Floor Portable (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "3a25347065dc4abab033df330d536ef2": {
-   "name": "USAF Vandenberg Crane Replacement (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "9a80372ece404f7a91ca3e9e5646e62d": {
-   "name": "USAF Vandenberg Crane Replacement (dup SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "e983271f59ed4af98747b1aea45eeeae": {
-   "name": "USCG Self Propelled Boat Trailer Long Island Sound (SAM match)",
-   "verdict": "NO",
-   "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "c714c6130b9d40d0991dbbe1815c37f3": {
-   "name": "DOE 511976 Kardex Megamat and Onsite Installation",
-   "verdict": "NO",
-   "why": "NO: Kardex vertical-carousel storage machine (brand-specific), not a conveyor product Jones Bearing/ConveyMor makes",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bidnet:444210657404": {
-   "name": "BidNet aggregate 444210657404 Turn-key Interior Finish Nursing Home Facility (due 2026-11-13)",
-   "verdict": "NO",
-   "why": "NO: GC interior finish; aggregate notice, agency not shown",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bidnet:444208178536": {
-   "name": "BidNet aggregate 444208178536 Station One Janitorial Services (due 2026-11-13)",
-   "verdict": "EVALUATE",
-   "why": "EVALUATE: janitorial is our trade; aggregate (paid-subscription) notice, agency and docs not visible; HQ to open it logged in",
-   "at": "2026-10-26T17:35:00Z"
-  },
-  "bidnet:0000441328": {
-   "name": "Douglas County IFB 042-26 HVAC Filters & Belts (BidNet 0000441328, due 2026-11-18)",
-   "verdict": "NO",
-   "why": "NO (rule 9): IFB states no guaranteed volume: 'The Blanket Purchase Agreement authorizes, but does not obligate, the County to order any minimum or maximum, dollar amount or quantity of filters and/or belts.'",
-   "at": "2026-10-26T19:33:00Z"
-  },
-  "8ccf3c647f414b7ea5cbb513ccfb51c9": {
-   "name": "DLA Aviation OKC SPRTA1-27-Q-0031 Housing, Bearing Unit (PSC 3130)",
-   "verdict": "NO",
-   "why": "NO: aircraft part (NAICS 336413), DLA Aviation Oklahoma City RFQ under SAT with its own spec PDF; not an industrial mounted-bearing product; dad's call only if he wants aviation NSN work (listed for him)",
-   "at": "2026-10-26T19:30:00Z"
-  },
-  "f421756d4dbd482bae39b05d4208ff7d": {
-   "name": "NAVSUP 31 Bearing Ball DX (SAM match)",
-   "verdict": "NO",
-   "why": "NO: Navy NSN part RFQ; not a Jones Bearing product line",
-   "at": "2026-10-26T19:30:00Z"
-  },
-  "2c6baa53c8054e3298082a09ae3a7b5f": {
-   "name": "NAVSUP 31 Bearing Roller Cylindrical (SAM match)",
-   "verdict": "NO",
-   "why": "NO: Navy NSN part RFQ; not a Jones Bearing product line",
-   "at": "2026-10-26T19:30:00Z"
-  },
-  "db84deebdb884ada854ec83ee9a6235c": {
-   "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
-   "verdict": "NO",
-   "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
-   "at": "2026-10-26T19:33:00Z"
-  },
-  "eb19e0c129334ba3adb062afc3c5c764": {
-   "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
-   "verdict": "NO",
-   "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
-   "at": "2026-10-26T19:33:00Z"
-  },
-  "8f0e3b72596a4714a555ecd5eb0e899b": {
-   "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
-   "verdict": "WATCH",
-   "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
-   "at": "2026-10-26T20:28:00Z"
-  },
-  "715a398a6c0a4abf8f1ebed1ae3d6d94": {
-   "name": "GSA PBS 5CO0518 J&A lease extension",
-   "verdict": "NO",
-   "why": "NO: sole-source justification for a lease extension",
-   "at": "2026-10-26T20:28:00Z"
-  },
-  "bidnet:0000441227": {
-   "name": "Mesa County 0000441227 Storage Facility Fire Protection System (due 2026-11-19)",
-   "verdict": "NO",
-   "why": "NO: fire-sprinkler/suppression system install is a licensed specialty outside our trades; Grand Junction (4+ h). Rule 0 record: BidNet events: 'Onsite Visit, Attendance Mandatory, Event date 11/03/2026 10:00 AM MST, Location Mesa County Fairgrounds Storage Building B, 2785 US Hwy 50, Grand Junction, CO'.",
-   "at": "2026-10-26T21:30:00Z"
-  },
-  "52b4c80711934b99835162c13180bf40": {
-   "name": "VA Electro-Therapeutic Modalities for Pain Management TENS units (SAM match)",
-   "verdict": "NO",
-   "why": "NO: medical equipment supply",
-   "at": "2026-10-26T21:30:00Z"
-  },
-  "4f1d35329f4c455badd2ba08f492e26b": {
-   "name": "VA VISN 19 36C25927Q0037 Notice of Intent BD Alaris Infusion Knowledge Portal renewal",
-   "verdict": "NO",
-   "why": "NO: medical software sole-source notice",
-   "at": "2026-10-26T22:28:00Z"
-  }
- },
- "watched": {
-  "6ac78e133e2326616e082a75": {
-   "due": "2026-11-09T07:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6abfa513de90cc3d3c036716": {
-   "due": "2026-10-23T06:00:00Z",
-   "updated_at": "2026-09-29T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac78e3a3e2326616e082a81": {
-   "due": "2026-10-28T06:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6a2173ec20564a33670a0399": {
-   "due": "2026-10-27T06:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf",
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac78e093e2326616e082a6f": {
-   "due": "2026-11-04T07:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ad21b8444ea9a49cf0994d3": {
-   "due": "2026-11-12T07:00:00Z",
-   "updated_at": "2026-10-10T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ad21a4444ea9a49cf0994bf": {
-   "due": "2026-10-28T06:00:00Z",
-   "updated_at": "2026-10-14T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac78dcf3e2326616e082a59": {
-   "due": "2026-11-02T07:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ace253950b3706c0b0fa828": {
-   "due": "2026-10-23T03:00:00Z",
-   "updated_at": "2026-10-02T03:00:00Z",
-   "files": [
-    "3-HVAC PM Appendix A.pdf",
-    "1-Professional Services Agreement-SAMPLE 9.27.24.pdf",
-    "2-Town of Parker HVAC Preventive Maintenance Price Sheet Forms.xlsx"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6abfa4d2de90cc3d3c0366f2": {
-   "due": "2026-10-28T06:00:00Z",
-   "updated_at": "2026-09-30T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac78dd93e2326616e082a61": {
-   "due": "2026-10-26T06:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6aba3fe8b2e0f86b0e00dc39": {
-   "due": "2026-11-16T21:00:00Z",
-   "updated_at": "2026-10-06T14:56:48Z",
-   "files": [
-    "126DM016_Pricing_Sheet.xlsx",
-    "Bus_Shelter_Maintenance_Services_(15%_SBE_Goal).pdf",
-    "Bus_Shelter_Maintenance_Services_SOW_2026.pdf",
-    "126DM006_Form_of_Contract.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ad21a1f44ea9a49cf0994b7": {
-   "due": "2026-11-12T07:00:00Z",
-   "updated_at": "2026-10-14T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac63c5225a3b08d0b072be8": {
-   "due": "2026-11-04T07:00:00Z",
-   "updated_at": "2026-10-05T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac78e1e3e2326616e082a79": {
-   "due": "2026-10-29T06:00:00Z",
-   "updated_at": "2026-10-07T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ad219dd44ea9a49cf0994a2": {
-   "due": "2026-10-28T06:00:00Z",
-   "updated_at": "2026-10-14T06:00:00Z",
-   "files": [
-    "C05_1240LT27Q0010_Final.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ac63c5925a3b08d0b072bed": {
-   "due": "2026-10-22T06:00:00Z",
-   "updated_at": "2026-10-05T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6ad21a0944ea9a49cf0994ae": {
-   "due": "2026-12-01T07:00:00Z",
-   "updated_at": "2026-10-14T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z"
-  },
-  "6adf1b88efc83d79cb01775a": {
-   "due": "2026-10-29T06:00:00Z",
-   "updated_at": "2026-10-23T06:00:00Z",
-   "files": [
-    "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF MOD 1.pdf",
-    "7. Exhibit G - Consent to Search.pdf",
-    "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF FINAL.pdf",
-    "5. Exhibit E - Contract Performance Outside of the US.pdf",
-    "3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
-    "2. Exhibit B - Required Vendor Information - Services.pdf",
-    "4. Exhibit D - Price Quote.xlsx",
-    "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  FINAL.pdf",
-    "9. Attachment 2 - Insurance Information.pdf",
-    "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF MOD 2.pdf",
-    "6. Exhibit F - Non-Conflict of Interest.pdf",
-    "8. Attachment 1 - PO Terms and Conditions 090926.pdf",
-    "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 2.pdf",
-    "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 1.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z",
-   "pipeline": "cdoc-tcf-boiler-water"
-  },
-  "6ad75fe3c20d55063f0581a2": {
-   "due": "2026-11-06T07:00:00Z",
-   "updated_at": "2026-10-19T06:00:00Z",
-   "files": [
-    "biddoc.pdf"
-   ],
-   "snap_at": "2026-10-27T02:28:00Z",
-   "pipeline": "parker-generator"
-  }
- },
- "last_hourly_check": "2026-10-27T02:28:00Z: 0 new CO state/local posted since 2026-10-26; federal CO since 10/26: 4 (all keyed); PSC since 10/26: 4 (all keyed); 20 watched re-pulled, unchanged; REPORT 01:36Z: BidNet BLIND (login failed 2 scans running; 588/81 carried forward from 23:35Z), SAM 83 logged in, Bonfire no creds, DIBBS last-good 10/20; inbox 12 threads/24h, 0 new; Parker RFP still not forwarded to Colorado Standby; no CDOC reply on H2's consent form; CRM no update"
+  "_comment": "GovTribe open-bid review ledger for the hourly check. baseline: every open Colorado state/local record (165, due >= 2026-10-20) was reviewed 2026-10-19 19:30 MT; newest posting GovTribe held was 2026-10-14. Each hour: triage any open CO record posted after last_posted_reviewed or not in `triaged`, then add it here. `watched` holds updated_at/due/file names per watched govtribe_id for addendum detection.",
+  "baseline_reviewed_at": "2026-10-19T19:30:00-06:00",
+  "baseline_count": 165,
+  "last_posted_reviewed": "2026-10-26",
+  "triaged": {
+    "6ad21a4444ea9a49cf0994bf": "GO: 27J Speaker Cabling (low-voltage), due 2026-10-28 10:00 by email emorales@sd27j.net, no walk found",
+    "6ac78e093e2326616e082a6f": "EVALUATE: Jeffco Dome Glass, pre-bid 10/15 passed ('should attend'), ask Pulford before 10/21 10:00 questions deadline",
+    "6a2173ec20564a33670a0399": "EVALUATE: Elbert County fencing, due 10/27 12:30, questions due 10/20 13:00",
+    "6abfa4f2de90cc3d3c036702": "EVALUATE-low: DPS BD2730 GC prequal, due 10/21 10:00, possible Round 2",
+    "6abfa500de90cc3d3c036710": "NO: Westminster golf bunker (earthwork), mandatory walk 10/20 10:30",
+    "6ac63c7125a3b08d0b072bf7": "NO: Aspen Cozy Point cabin, mandatory walk 10/20 13:00 Pitkin County",
+    "6ac78dfb3e2326616e082a68": "NO: window/curtain wall replacement + abatement, outside trades",
+    "6ac78e063e2326616e082a6d": "NO: School of Mines, A/E qualifications",
+    "6ac63c7625a3b08d0b072bf9": "NO: Poudre GC on-demand, due 10/22, needs 3 K-12 projects",
+    "6ab276ceb4ab33ea4809d590": "NO: Aspen waste hauling",
+    "6abfa4ecde90cc3d3c036700": "NO: Jeffco jail door hardware, specialty, conference passed",
+    "6abf8798b960f0c48a0793b6": "NO: CBI GJ HVAC/lighting, mandatory walk 10/12 missed, $3.1M, 2 projects >$3M",
+    "6ac36c2e649e95e0360a4bb6": "NO: CBI GJ HVAC/lighting duplicate record",
+    "6acca77d2bb448a2e807e0be": "NO: CDOC Trinidad boiler chemicals, mandatory walk 10/21 conflicts, RSVP 10/19",
+    "fed:d25cf386f88c43619ddbc95a424ead75": "NO: USPS Denver P&DC roof replacement (roofing, NAICS 236220), due 2026-11-20",
+    "fed:24ffa6d27a674212a41ade72d91ec106": "NO (Jones Bearing): BEP ergonomic drum handlers, not bearings/conveyor product",
+    "bidnet:montezuma-2027-janitorial": "NO: Montezuma County 2027 janitorial (7 bldgs, Cortez); new-bidder walk 2026-10-12 missed; 7h away",
+    "bidnet:ppsc-dq27-005": "NO: PPSC flooring re-bid, not our trade, closes 10/23",
+    "bidnet:detention-kiosks": "NO: detention security desk kiosks, closes 10/23, outside trades",
+    "bidnet:redstone-snow": "NO (likely): Redstone/Pitkin snow removal, 3.5h away; reconsider only with docs",
+    "bidnet:fire-alarm-inspection": "NO: pre-bid 10/20 passed per BidNet detail (was EVALUATE-lean-NO)",
+    "bidnet:fire-alarm-troubleshoot": "NO: MANDATORY pre-bid 10/15 passed per BidNet detail",
+    "bidnet:access-control": "EVALUATE: on-call security access control 11/19 (low-voltage sub)",
+    "bidnet:hvac-staged-upgrade": "EVALUATE: staged HVAC system upgrade, closes 2027-02-26",
+    "bidnet:cu-ucb001622": "EVALUATE: CU Boulder irrigation & landscape 11/09 (check earthwork, rule 8)",
+    "bidnet:broomfield-26-rfp-pd-002": "NO: Broomfield PD detention fence, mandatory pre-proposal 2026-09-30 missed",
+    "bidnet:dougco-fencing": "EVALUATE-lean-NO: Douglas County commercial/residential fencing 11/05, outside core trades",
+    "bidnet:0000440260-roof-repair": "NO: Roof Repair Services, mandatory pre-bid 10/21, roofing is not our trade",
+    "bidnet:elevator-pm": "NO: Elevator PM/repairs, pre-bid 10/27, not our trade",
+    "bidnet:superior-irrigation-tank-cover": "NO: Town of Superior irrigation tank floating cover, pre-bid 10/22, not our trade",
+    "bidnet:environmental-consulting": "NO: On-call environmental consulting, not our trade",
+    "bidnet:fire-alarm-replacement-2027": "NO-lean: Fire Alarm Replacement 2027/2028, MANDATORY pre-bid 10/27 per BidNet detail; NICET sub + 7-day sub notice not met",
+    "bidnet:cu-ucb001284": "NO: CU Boulder UCB001284 lighting, MANDATORY pre-bid 10/01 missed (BidNet detail)",
+    "bidnet:dps-bd2733-fire-alarm": "NO-lean: DPS BD2733 Fire Alarm 2027/28, mandatory job-walk 10/27 10:00; NICET sub + 7-day notice not met",
+    "d25cf386f88c43619ddbc95a424ead75": {
+      "name": "USPS Denver P&DC Roof Replacement 089495-27-A-0001",
+      "verdict": "NO",
+      "why": "NO: roofing, NAICS 236220 building construction, not our trade",
+      "at": "2026-10-20T09:22:00Z"
+    },
+    "a947171b7df94dc8b1b02e77d6976712": {
+      "name": "USAF Space Command HSQ EMCS J&A FA255026P0030",
+      "verdict": "NO",
+      "why": "NO: sole-source justification notice, not a competition",
+      "at": "2026-10-20T09:22:00Z"
+    },
+    "24ffa6d27a674212a41ade72d91ec106": {
+      "name": "Treasury BEP Ergonomic Drum Handlers 2031ZA27N00002",
+      "verdict": "NO",
+      "why": "NO for Jones Bearing: drum handlers (PSC 3920 material handling) are not a Jones/American Pulley/ConveyMor product; small-business presolicitation, due 2026-11-07",
+      "at": "2026-10-20T09:22:00Z"
+    },
+    "6a42471f7763fa5692000e4d": {
+      "name": "Denver RFP126DM010 Tire Lease",
+      "verdict": "NO",
+      "why": "NO: tire lease, not our trade",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6aba3fefb2e0f86b0e00dc3b": {
+      "name": "Denver RFP126DY004 2027 Paratransit Program Assessment",
+      "verdict": "NO",
+      "why": "NO: consulting study",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a0544ea9a49cf0994ac": {
+      "name": "Douglas County CIP25025 Public Works Decant Facility Expansion",
+      "verdict": "NO",
+      "why": "NO: heavy civil (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad219e644ea9a49cf0994aa": {
+      "name": "Adams County 25415 3MG Clearwell #3",
+      "verdict": "NO",
+      "why": "NO: water storage heavy civil (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a3b44ea9a49cf0994bd": {
+      "name": "Colorado Springs Q26096MZ Valley Hi Irrigation Pond Repairs",
+      "verdict": "NO",
+      "why": "NO: pond/earthwork (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a3644ea9a49cf0994bb": {
+      "name": "Larimer County RFQUCOF1426 Pre-Approved ADU Library",
+      "verdict": "NO",
+      "why": "NO: architectural design",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a1144ea9a49cf0994b2": {
+      "name": "Douglas County 6166A CAPSTC Fire Water Recycle Pond",
+      "verdict": "NO",
+      "why": "NO: pond/heavy civil (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a3144ea9a49cf0994b9": {
+      "name": "Douglas County CIP25036 Dransfeldt Motsenbocker Turn Lane",
+      "verdict": "NO",
+      "why": "NO: roadwork (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a0d44ea9a49cf0994b0": {
+      "name": "Pueblo 2702 Design/Build Cosmetology Classroom Remodel",
+      "verdict": "NO",
+      "why": "NO: design-build GC remodel, not our trade",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6a748002dc326e5cc50acb92": {
+      "name": "Arapahoe/SSPR Irrigation tank floating cover replacement",
+      "verdict": "NO",
+      "why": "NO: tank cover / civil (rule 8)",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a1b44ea9a49cf0994b5": {
+      "name": "Colorado Springs S20271001 Palmer Renovation Abatement",
+      "verdict": "NO",
+      "why": "NO: asbestos abatement, not our trade",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad219e044ea9a49cf0994a8": {
+      "name": "USFS 1240LT26Q0187 Lone Cone Chinking GMUG NF",
+      "verdict": "NO",
+      "why": "NO: log-structure chinking, not our trade",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6ad21a4944ea9a49cf0994c1": {
+      "name": "Weld County F2610059 Boyd WTP Regionalism Report",
+      "verdict": "NO",
+      "why": "NO: engineering study",
+      "at": "2026-10-19T19:30:00-06:00 baseline; keyed 2026-10-20T09:22Z"
+    },
+    "6adf1c0befc83d79cb01775e": {
+      "name": "CDPHE California Gulch Groundwater Monitoring RFPFAAA20270000682",
+      "verdict": "NO",
+      "why": "NO: environmental monitoring/engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf1bd90e8212e88907a278": {
+      "name": "Morgan CC OC SS 27-01 Intent to Award Sole Source Trane",
+      "verdict": "NO",
+      "why": "NO: sole-source notice, not a competition",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf1b69efc83d79cb017754": {
+      "name": "CDOC SCCF Dementia Unit Improvements IFB 2027000030 (Pitkin dup)",
+      "verdict": "NO",
+      "why": "NO: general building construction IFB with prevailing wage; GC work, not our trades",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf1ba50e8212e88907a276": {
+      "name": "CDOC Camera Equipment & Licensing DQ",
+      "verdict": "NO",
+      "why": "NO: equipment supply",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf1bc3efc83d79cb01775c": {
+      "name": "CDOC DRDC Fire Protection System Replacement IFB 2027000036",
+      "verdict": "NO",
+      "why": "NO: HQ pipeline NO: mandatory pre-bid 2026-10-07 passed; $17.5M bonding",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf1b79efc83d79cb017758": {
+      "name": "CDOC FY28 DQ Laundry Services GMYC",
+      "verdict": "NO",
+      "why": "NO: laundry service, not our trade",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36ea491e5e8d650ecadc": {
+      "name": "CSP Total Traffic DUI Campaign (NPSS)",
+      "verdict": "NO",
+      "why": "NO: media buy / sole source",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36dad492b5f5d60b9107": {
+      "name": "CDOT Loma Port of Entry ANS Traffic Rerouting",
+      "verdict": "NO",
+      "why": "NO: roadwork (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36f7491e5e8d650ecade": {
+      "name": "CDOC Fresh Produce RFQ",
+      "verdict": "NO",
+      "why": "NO: food supply",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36fed492b5f5d60b910d": {
+      "name": "CDPHE Methane Seep Program",
+      "verdict": "NO",
+      "why": "NO: environmental program",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb3707491e5e8d650ecae0": {
+      "name": "CDOC Fresh Eggs RFQ",
+      "verdict": "NO",
+      "why": "NO: food supply",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb372c491e5e8d650ecae6": {
+      "name": "CDPHE California Gulch Groundwater Monitoring RFPFAAA20270000681",
+      "verdict": "NO",
+      "why": "NO: environmental monitoring/engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36e7d492b5f5d60b9109": {
+      "name": "CCCS RFP 27-006 Executive Coaching",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb3721491e5e8d650ecae4": {
+      "name": "CWCB Colorado Water Plan Messaging Campaign",
+      "verdict": "NO",
+      "why": "NO: marketing",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adf296e9fe3480b5203e745": {
+      "name": "RTD 126DP002 Park-n-Ride Passenger Activity Data Collection",
+      "verdict": "NO",
+      "why": "NO: data-collection service",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02dad679c74ace0ced91": {
+      "name": "Arapahoe Co. (Littleton-style) 2026 On Call Garage Door Repairs",
+      "verdict": "NO",
+      "why": "NO: overhead-door trade is not ours; sibling of Littleton RFQ 1926 pedestrian doors, which HQ read as subcontractors-not-allowed; bid doc not read, revisit only if Luke wants doors",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36de491e5e8d650ecada": {
+      "name": "RRCC 27-06-SS simulators Notice of Sole Source",
+      "verdict": "NO",
+      "why": "NO: sole-source notice",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02d5d679c74ace0ced8d": {
+      "name": "Thornton 26PKS060 Tennis Court Resurface Meadowlake Park",
+      "verdict": "NO",
+      "why": "NO: sport-surface paving (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02cad679c74ace0ced88": {
+      "name": "USAF FA2550PAVR Paving Acquisition Vehicle Rockies sources sought",
+      "verdict": "NO",
+      "why": "NO: paving IDIQ (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02e8d679c74ace0ced97": {
+      "name": "Douglas Co. 6169A Traffic Signal Plan Hogan Pkwy & E-470",
+      "verdict": "NO",
+      "why": "NO: traffic engineering/roadwork",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02e1d679c74ace0ced93": {
+      "name": "Adams County Health Dept Environmental Health Renovation RFPAR2026841",
+      "verdict": "NO",
+      "why": "NO: GC building renovation; not our trades (keep it simple, Luke 2026-10-19)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02e5d679c74ace0ced95": {
+      "name": "La Plata 202600482020 Clarifier Preservation Project",
+      "verdict": "NO",
+      "why": "NO: wastewater/heavy civil (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36f2d492b5f5d60b910b": {
+      "name": "PPSC DQ 27-006 Operable Wall Partitions",
+      "verdict": "NO",
+      "why": "NO: partition supply/install, not our trade",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02c7d679c74ace0ced82": {
+      "name": "USFS 1240LT27Q0019 Administrative Parking Lot Repairs",
+      "verdict": "NO",
+      "why": "NO: paving (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36d5491e5e8d650ecad8": {
+      "name": "CO NPSS A & B Builders Renovation Project",
+      "verdict": "NO",
+      "why": "NO: sole-source notice",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb36c9d492b5f5d60b9102": {
+      "name": "CPW Toybox Forest Habitat Improvement",
+      "verdict": "NO",
+      "why": "NO: forestry",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02cdd679c74ace0ced8a": {
+      "name": "USFS 117346 Stove Prairie Campground Gate Replacement",
+      "verdict": "NO",
+      "why": "NO: gate fabrication/install, not our trade",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb373a491e5e8d650ecae8": {
+      "name": "Pueblo IFB 2027000046 ADA Upgrades",
+      "verdict": "NO",
+      "why": "NO: GC building construction, not our trades",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02d8d679c74ace0ced8f": {
+      "name": "City of Littleton 1926 On Call Commercial Pedestrian Door Repairs",
+      "verdict": "NO",
+      "why": "NO: HQ pipeline NO: RFQ bars subcontractors; no door crew",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6adb3716491e5e8d650ecae2": {
+      "name": "CCi Metal Products RFP",
+      "verdict": "NO",
+      "why": "NO: supply",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02fed679c74ace0ceda5": {
+      "name": "Glenwood Springs 202628P Citywide Sign Inventory",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02fcd679c74ace0ceda3": {
+      "name": "Garfield Co. 10122026 Wamsley and West Ave Improvements",
+      "verdict": "NO",
+      "why": "NO: roadwork (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894a33ff49425a607b1ac": {
+      "name": "CO Office of Sustainability Utility Management Software",
+      "verdict": "NO",
+      "why": "NO: software",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89524cd6fe3a85b06cbac": {
+      "name": "CO TIF Analysis Consultant",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894dc3ff49425a607b1b3": {
+      "name": "CO Law Enforcement Ammunition RFP",
+      "verdict": "NO",
+      "why": "NO: ammunition supply",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894bdcd6fe3a85b06cb9c": {
+      "name": "Oregon RFI Fleet Card Services",
+      "verdict": "NO",
+      "why": "NO: out of state, RFI",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894293ff49425a607b19e": {
+      "name": "CO CMS #211060 RFQ Pre-Disaster DRR",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894c6cd6fe3a85b06cb9e": {
+      "name": "Fort Carson ARMAG Concrete Pads (NCS1OAAA)",
+      "verdict": "NO",
+      "why": "NO: concrete/civil (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6a86f5c786071488ad087fed": {
+      "name": "Colorado Springs 26010 Civic District Site Plan",
+      "verdict": "NO",
+      "why": "NO: planning",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad8944a3ff49425a607b1a2": {
+      "name": "CDOC SCCF Dementia Unit Improvements IFB 2027000030 (El Paso dup)",
+      "verdict": "NO",
+      "why": "NO: general building construction IFB; GC work, not our trades",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02f7d679c74ace0ced9f": {
+      "name": "Jefferson Co. 2650 Parks & Rec Strategic Plan Update",
+      "verdict": "NO",
+      "why": "NO: planning",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02f3d679c74ace0ced9c": {
+      "name": "CDOT R4 Mary's Lake Estes Park Signal Pole Replacement",
+      "verdict": "NO",
+      "why": "NO: roadway signal work (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02f0d679c74ace0ced9a": {
+      "name": "Weld County Health Dept Nurses Station Renovation B2600112",
+      "verdict": "NO",
+      "why": "NO: GC building renovation; not our trades",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894bf3ff49425a607b1af": {
+      "name": "CO Health & Welfare Actuarial & Broker Consultant",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada0301d679c74ace0ceda7": {
+      "name": "Douglas Co. 26027 Prof Engineering Svcs Chambers Road",
+      "verdict": "NO",
+      "why": "NO: engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ada02fad679c74ace0ceda1": {
+      "name": "Rifle 118026P Trades Center Renovation",
+      "verdict": "NO",
+      "why": "NO: GC renovation, Garfield County",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fbdd003cf59700b7872": {
+      "name": "Douglas Co. 26027 RFQ Prof Engineering Svcs Chambers Road (dup)",
+      "verdict": "NO",
+      "why": "NO: engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fc8d003cf59700b7878": {
+      "name": "Boulder County RFP32026 Waste Collection Services",
+      "verdict": "NO",
+      "why": "NO: hauling",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75eecdb61f19ba1048e62": {
+      "name": "Jefferson Co. 2650 Parks & Rec Strategic Plan Update (dup)",
+      "verdict": "NO",
+      "why": "NO: planning",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894933ff49425a607b1aa": {
+      "name": "CDOC Psychiatric Nursing Program",
+      "verdict": "NO",
+      "why": "NO: medical",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894cfcd6fe3a85b06cba0": {
+      "name": "PPSC RFQ 2768 As-Needed Consulting Services for Design",
+      "verdict": "NO",
+      "why": "NO: design consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fe7c20d55063f0581a4": {
+      "name": "Loveland 10349 Substation Engineering Services On-Call",
+      "verdict": "NO",
+      "why": "NO: engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fdec20d55063f05819e": {
+      "name": "Longmont 426084 Clark Centennial Park",
+      "verdict": "NO",
+      "why": "NO: park construction (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fd6c20d55063f05819a": {
+      "name": "Eagle Co. TF2025026 University Blvd & Cresthill Ln Intersection",
+      "verdict": "NO",
+      "why": "NO: roadwork (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fdbc20d55063f05819c": {
+      "name": "Mesa Co. CMU28861 Mass Communication System Phase 1",
+      "verdict": "NO",
+      "why": "NO: IT/communications",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fd2c20d55063f058192": {
+      "name": "Ouray RFQ26065 Repair Welded Steel Roof Whitlock 5MG Tank",
+      "verdict": "NO",
+      "why": "NO: tank welding, Ouray; not our trade",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894f5cd6fe3a85b06cba6": {
+      "name": "DRMS MSPP Pre-Enrollment Inspections",
+      "verdict": "NO",
+      "why": "NO: mining inspections",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89515cd6fe3a85b06cbaa": {
+      "name": "CO Short-Term and Long-Term Disability Benefits",
+      "verdict": "NO",
+      "why": "NO: benefits",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75febc20d55063f0581a6": {
+      "name": "RFP 144-26 Clocktower Plaza Design",
+      "verdict": "NO",
+      "why": "NO: design",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fd5c20d55063f058198": {
+      "name": "South Metro Housing Options RFP 008 Elevator Maintenance",
+      "verdict": "NO",
+      "why": "NO: HQ pipeline NO: licensed elevator mechanics + proprietary tools; elevator firms bid direct",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894af3ff49425a607b1ad": {
+      "name": "CPW Comprehensive State Park Strategy",
+      "verdict": "NO",
+      "why": "NO: planning",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fe1c20d55063f0581a0": {
+      "name": "Fountain COF27PWDE001 Professional Services Design and Engineer",
+      "verdict": "NO",
+      "why": "NO: engineering",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894363ff49425a607b1a0": {
+      "name": "CO RFP Audit of Colorado Sports Betting",
+      "verdict": "NO",
+      "why": "NO: audit",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89534cd6fe3a85b06cbae": {
+      "name": "CDPHE Data Validation for CHSD",
+      "verdict": "NO",
+      "why": "NO: data services",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89471cd6fe3a85b06cb90": {
+      "name": "CO NCS Sherman Channel Project Design Build",
+      "verdict": "NO",
+      "why": "NO: heavy civil + sole-source notice",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894583ff49425a607b1a4": {
+      "name": "EGB FY27 RFI 2027000013 SLDS",
+      "verdict": "NO",
+      "why": "NO: IT RFI",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75fefd003cf59700b787a": {
+      "name": "Boulder County BID25426 LoBo Trail Jay Road Connection",
+      "verdict": "NO",
+      "why": "NO: trail construction (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad75ff9d003cf59700b787c": {
+      "name": "Boulder County RFP31926 Pavement Management Road Inventory",
+      "verdict": "NO",
+      "why": "NO: consulting",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89496cd6fe3a85b06cb96": {
+      "name": "CDPHE NBS LIMS RFI",
+      "verdict": "NO",
+      "why": "NO: software RFI",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894cd3ff49425a607b1b1": {
+      "name": "CO IEP Project for Children with I/DD",
+      "verdict": "NO",
+      "why": "NO: social services",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad8948bcd6fe3a85b06cb94": {
+      "name": "CDOC FY28 DQ Laundry Services GMYC (dup)",
+      "verdict": "NO",
+      "why": "NO: laundry service",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894dccd6fe3a85b06cba2": {
+      "name": "PPSC DQ 27-006 Operable Wall Partitions (dup)",
+      "verdict": "NO",
+      "why": "NO: partition supply/install",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894b3cd6fe3a85b06cb9a": {
+      "name": "CO Ft Lyon Inspection, Lab Analysis & Testing",
+      "verdict": "NO",
+      "why": "NO: environmental testing",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894ebcd6fe3a85b06cba4": {
+      "name": "CO Building Performance Database Management Administration",
+      "verdict": "NO",
+      "why": "NO: software/admin",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad89507cd6fe3a85b06cba8": {
+      "name": "CWCB Hydrology & Water Availability 15MR CO River",
+      "verdict": "NO",
+      "why": "NO: hydrology study",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad894803ff49425a607b1a8": {
+      "name": "CDOC TCF Boiler Chemicals DQ 2027000037 (Garfield record, MOD 1)",
+      "verdict": "DUPLICATE",
+      "why": "duplicate GovTribe record of 6adf1b88efc83d79cb01775a (watched; pipeline cdoc-tcf-boiler-water)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ad8b12d4d0a3954a2033bd2": {
+      "name": "Boulder County BID-321-26 Sheriffs Headquarters Lighting Upgrades (Bonfire 258797)",
+      "verdict": "NO",
+      "why": "NO: materials only (quoted: 'Provide new LED lighting fixtures... Materials only; no labor'), complete bids only, fixtures delivered by 2026-12-31; fixture resale = small-margin supply bid (rule 9). Bid opening 2026-11-05 15:00 on Teams.",
+      "at": "2026-10-26T17:40:00Z"
+    },
+    "74a5fbbf60bf48cdb90d5a6ea4964b25": {
+      "name": "IHS 75H70726Q00107 Nurse Practitioner Towaoc CO",
+      "verdict": "NO",
+      "why": "NO: medical staffing",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bb8325d1814549b5950d774650842786": {
+      "name": "GSA 2CO0668 lease office space Durango CO",
+      "verdict": "NO",
+      "why": "NO: real-estate lease",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "809e6cab022c4fe6a9c2f6b3caf529ee": {
+      "name": "Army MICC Fort Hood PANMCC26P0000043384 Service Order Desk (presol)",
+      "verdict": "NO",
+      "why": "NO: call-center service, Fort Hood TX",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "4934c3f7e2774960a47dc381fd6bef8b": {
+      "name": "USAF Space Command FA251827CA001 CONDOR A-ISR award",
+      "verdict": "NO",
+      "why": "NO: award notice",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "d1257115c4d14a76a2528df6c8f33e85": {
+      "name": "Armed Forces Recruiting Bldg 25 Tenant Improvement sources sought",
+      "verdict": "NO",
+      "why": "NO: GC tenant-improvement renovation (NAICS 236220), sources sought",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "e222f7fd6e114b80931f5976826e7a29": {
+      "name": "USFS 1240LT27Q0019 Administrative Parking Lot Repairs",
+      "verdict": "NO",
+      "why": "NO: paving (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "cd2b3215a98141c785653c97c2c0aa78": {
+      "name": "VA J065 PM on Siemens Symbia S (SAM match)",
+      "verdict": "NO",
+      "why": "NO: medical imaging OEM service",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "ffa761b91c61460291c74cf744e8a792": {
+      "name": "Interior/BOR Sources Sought Janitorial Services Hoover Dam (SAM match)",
+      "verdict": "NO",
+      "why": "NO: Nevada; sources sought",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6ff2139e1e4e4f9a8ea52133c377ebb0": {
+      "name": "BOR EC-ECAO Exterior Door Replacement (SAM match)",
+      "verdict": "NO",
+      "why": "NO: door replacement = carpentry/GC, not our trades; Eastern Colorado Area Office Loveland",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "4d0d75c8e5a44e54ad59972a249ec55e": {
+      "name": "BOR EC-ECAO Exterior Door Replacement (dup SAM match)",
+      "verdict": "NO",
+      "why": "NO: door replacement = carpentry/GC",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "71ac218ba63c4668b2b3129557fcdeb5": {
+      "name": "BOR EC-ECAO Exterior Door Replacement (dup SAM match)",
+      "verdict": "NO",
+      "why": "NO: door replacement = carpentry/GC",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "f09596ebe7514beda8c1522bd0d664fb": {
+      "name": "BOR 56 PGMB Security Gate (SAM match)",
+      "verdict": "NO",
+      "why": "NO: gate materials/installation, not our trade",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "5988a90b5fb94514a89cebc7362a22b5": {
+      "name": "DOE Design-Build STM Security Fencing North Boundary (SAM match)",
+      "verdict": "NO",
+      "why": "NO: fencing design-build (rule 8)",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bd849c41a0ea48998a630786a4e39113": {
+      "name": "DLA L&M 7017982727 Gear Set Worm and Worm Wheel (presol)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "cae0c7421ecd424c8a3aa668045ddfe1": {
+      "name": "DLA Aviation SPE4A627Q0167 Bearing Roller Needle PN 369135",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "524e3ee049b94affaffedd261c4dc139": {
+      "name": "DLA Aviation SPE4A627Q0167 Bearing Roller Needle (presol dup)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "2e6249880c22476b9c98dc249949456f": {
+      "name": "DLA Aviation SPE4A627Q0128 Bearing Ball Annular PN 145DC011-11",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "deea8b76a44f4b4f9db33e09906ba274": {
+      "name": "DLA Aviation SPE4A627RX106 Bearing Ball Annular",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "27f7957d875a4ed38ec818b1a4afb863": {
+      "name": "DLA Aviation SPE4A627RX046 Bearing Ball Annular",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "e63d86aa73b34b0ca47a59fbfaa8ba09": {
+      "name": "DLA Aviation SPE4A627RX041 Bearing Roller Cylindrical",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "d9e769af7e6349b8a28f9fbcf5d71cba": {
+      "name": "DLA Aviation SPE4A627RX025 Bearing Ball Annular",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "47fe8b133a884ef1a54b24338e471f0d": {
+      "name": "DLA Aviation SPE4A627T6804 Bearing Sleeve",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bb3c0d4465734890883e76ceac37df27": {
+      "name": "DLA Aviation SPE4A627T6863 Bearing Sleeve",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "05cbfdc91694473f89845e57e25f50d4": {
+      "name": "DLA Aviation SPE4A627T6846 Bearing Roller Cylindrical",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "16deb1d14ac142dab0b25a8626e03bd1": {
+      "name": "DLA L&M SPE7L327U0041 Pulley Cone",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "57e9a121061b4dba862dca1b8ffbc5b1": {
+      "name": "DLA Troop Support SPE8EE27T0247 Tensioner Pulley Assembly",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "63972a264f804080ad2082f0fe279f1a": {
+      "name": "DLA L&M SPE7L127T2468 Conveyor Ammunition",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "565e8dc22d744c82b0c01fa7be758b7e": {
+      "name": "NAVSUP N0010427QBB66 Shell Bearing Upper (presol)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "78786107d17a43479408acaec1ef49c0": {
+      "name": "DLA Aviation SPE4A627Q0111 Thrust Mag Bearing Assy",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "99ea29c4613747028c596092d4dbb17e": {
+      "name": "DLA Aviation SPE4A627Q0113 Bearing Plain Rod End",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "f68b42c6a60744628785318d4593ddf0": {
+      "name": "NAVSEA Roller Tracks (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "881be8c69a194a7da24919cce13b25e5": {
+      "name": "Army ACC Rota-rack (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6f774aa5d21848aa9a0121a4b2293ab9": {
+      "name": "Army Watervliet Gear Rack 8767202 Rev Y M284 cannon (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "6f56f057778f4477a61f3cf648febca5": {
+      "name": "State Dept Nanotechnology Certified Replacement Filter (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "77f43d75da58449f8d622ac857d2ff4b": {
+      "name": "NAVSUP Gear Pinion (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "da984b4f70fd412d924e9c830a2c3299": {
+      "name": "NAVSUP Crane Floor Portable (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "3a25347065dc4abab033df330d536ef2": {
+      "name": "USAF Vandenberg Crane Replacement (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "9a80372ece404f7a91ca3e9e5646e62d": {
+      "name": "USAF Vandenberg Crane Replacement (dup SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "e983271f59ed4af98747b1aea45eeeae": {
+      "name": "USCG Self Propelled Boat Trailer Long Island Sound (SAM match)",
+      "verdict": "NO",
+      "why": "NO: DLA/Navy NSN part RFQ (mil-spec, approved-source); not a Jones Bearing product line (mounted bearings, pulleys, take-ups, bucket elevators). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "c714c6130b9d40d0991dbbe1815c37f3": {
+      "name": "DOE 511976 Kardex Megamat and Onsite Installation",
+      "verdict": "NO",
+      "why": "NO: Kardex vertical-carousel storage machine (brand-specific), not a conveyor product Jones Bearing/ConveyMor makes",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bidnet:444210657404": {
+      "name": "BidNet aggregate 444210657404 Turn-key Interior Finish Nursing Home Facility (due 2026-11-13)",
+      "verdict": "NO",
+      "why": "NO: GC interior finish; aggregate notice, agency not shown",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bidnet:444208178536": {
+      "name": "BidNet aggregate 444208178536 Station One Janitorial Services (due 2026-11-13)",
+      "verdict": "EVALUATE",
+      "why": "EVALUATE: janitorial is our trade; aggregate (paid-subscription) notice, agency and docs not visible; HQ to open it logged in",
+      "at": "2026-10-26T17:35:00Z"
+    },
+    "bidnet:0000441328": {
+      "name": "Douglas County IFB 042-26 HVAC Filters & Belts (BidNet 0000441328, due 2026-11-18)",
+      "verdict": "NO",
+      "why": "NO (rule 9): IFB states no guaranteed volume: 'The Blanket Purchase Agreement authorizes, but does not obligate, the County to order any minimum or maximum, dollar amount or quantity of filters and/or belts.'",
+      "at": "2026-10-26T19:33:00Z"
+    },
+    "8ccf3c647f414b7ea5cbb513ccfb51c9": {
+      "name": "DLA Aviation OKC SPRTA1-27-Q-0031 Housing, Bearing Unit (PSC 3130)",
+      "verdict": "NO",
+      "why": "NO: aircraft part (NAICS 336413), DLA Aviation Oklahoma City RFQ under SAT with its own spec PDF; not an industrial mounted-bearing product; dad's call only if he wants aviation NSN work (listed for him)",
+      "at": "2026-10-26T19:30:00Z"
+    },
+    "f421756d4dbd482bae39b05d4208ff7d": {
+      "name": "NAVSUP 31 Bearing Ball DX (SAM match)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ; not a Jones Bearing product line",
+      "at": "2026-10-26T19:30:00Z"
+    },
+    "2c6baa53c8054e3298082a09ae3a7b5f": {
+      "name": "NAVSUP 31 Bearing Roller Cylindrical (SAM match)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ; not a Jones Bearing product line",
+      "at": "2026-10-26T19:30:00Z"
+    },
+    "db84deebdb884ada854ec83ee9a6235c": {
+      "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
+      "verdict": "NO",
+      "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
+      "at": "2026-10-26T19:33:00Z"
+    },
+    "eb19e0c129334ba3adb062afc3c5c764": {
+      "name": "VA VISN 19 J041 Trane BAS HVAC Control System Inspection/Maintenance/Upgrades/Repair (SAM match, due 2026-10-28)",
+      "verdict": "NO",
+      "why": "NO: due in 2 days; Trane-specific building-automation service needs a Trane-certified BAS sub and none is lined up; place of performance not stated",
+      "at": "2026-10-26T19:33:00Z"
+    },
+    "8f0e3b72596a4714a555ecd5eb0e899b": {
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
+      "verdict": "WATCH",
+      "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
+      "at": "2026-10-26T20:28:00Z"
+    },
+    "715a398a6c0a4abf8f1ebed1ae3d6d94": {
+      "name": "GSA PBS 5CO0518 J&A lease extension",
+      "verdict": "NO",
+      "why": "NO: sole-source justification for a lease extension",
+      "at": "2026-10-26T20:28:00Z"
+    },
+    "bidnet:0000441227": {
+      "name": "Mesa County 0000441227 Storage Facility Fire Protection System (due 2026-11-19)",
+      "verdict": "NO",
+      "why": "NO: fire-sprinkler/suppression system install is a licensed specialty outside our trades; Grand Junction (4+ h). Rule 0 record: BidNet events: 'Onsite Visit, Attendance Mandatory, Event date 11/03/2026 10:00 AM MST, Location Mesa County Fairgrounds Storage Building B, 2785 US Hwy 50, Grand Junction, CO'.",
+      "at": "2026-10-26T21:30:00Z"
+    },
+    "52b4c80711934b99835162c13180bf40": {
+      "name": "VA Electro-Therapeutic Modalities for Pain Management TENS units (SAM match)",
+      "verdict": "NO",
+      "why": "NO: medical equipment supply",
+      "at": "2026-10-26T21:30:00Z"
+    },
+    "4f1d35329f4c455badd2ba08f492e26b": {
+      "name": "VA VISN 19 36C25927Q0037 Notice of Intent BD Alaris Infusion Knowledge Portal renewal",
+      "verdict": "NO",
+      "why": "NO: medical software sole-source notice",
+      "at": "2026-10-26T22:28:00Z"
+    }
+  },
+  "watched": {
+    "6ac78e133e2326616e082a75": {
+      "due": "2026-11-09T07:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6abfa513de90cc3d3c036716": {
+      "due": "2026-10-23T06:00:00Z",
+      "updated_at": "2026-09-29T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac78e3a3e2326616e082a81": {
+      "due": "2026-10-28T06:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6a2173ec20564a33670a0399": {
+      "due": "2026-10-27T06:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf",
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac78e093e2326616e082a6f": {
+      "due": "2026-11-04T07:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ad21b8444ea9a49cf0994d3": {
+      "due": "2026-11-12T07:00:00Z",
+      "updated_at": "2026-10-10T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ad21a4444ea9a49cf0994bf": {
+      "due": "2026-10-28T06:00:00Z",
+      "updated_at": "2026-10-14T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac78dcf3e2326616e082a59": {
+      "due": "2026-11-02T07:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ace253950b3706c0b0fa828": {
+      "due": "2026-10-23T03:00:00Z",
+      "updated_at": "2026-10-02T03:00:00Z",
+      "files": [
+        "3-HVAC PM Appendix A.pdf",
+        "1-Professional Services Agreement-SAMPLE 9.27.24.pdf",
+        "2-Town of Parker HVAC Preventive Maintenance Price Sheet Forms.xlsx"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6abfa4d2de90cc3d3c0366f2": {
+      "due": "2026-10-28T06:00:00Z",
+      "updated_at": "2026-09-30T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac78dd93e2326616e082a61": {
+      "due": "2026-10-26T06:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6aba3fe8b2e0f86b0e00dc39": {
+      "due": "2026-11-16T21:00:00Z",
+      "updated_at": "2026-10-06T14:56:48Z",
+      "files": [
+        "126DM016_Pricing_Sheet.xlsx",
+        "Bus_Shelter_Maintenance_Services_(15%_SBE_Goal).pdf",
+        "Bus_Shelter_Maintenance_Services_SOW_2026.pdf",
+        "126DM006_Form_of_Contract.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ad21a1f44ea9a49cf0994b7": {
+      "due": "2026-11-12T07:00:00Z",
+      "updated_at": "2026-10-14T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac63c5225a3b08d0b072be8": {
+      "due": "2026-11-04T07:00:00Z",
+      "updated_at": "2026-10-05T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac78e1e3e2326616e082a79": {
+      "due": "2026-10-29T06:00:00Z",
+      "updated_at": "2026-10-07T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ad219dd44ea9a49cf0994a2": {
+      "due": "2026-10-28T06:00:00Z",
+      "updated_at": "2026-10-14T06:00:00Z",
+      "files": [
+        "C05_1240LT27Q0010_Final.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ac63c5925a3b08d0b072bed": {
+      "due": "2026-10-22T06:00:00Z",
+      "updated_at": "2026-10-05T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6ad21a0944ea9a49cf0994ae": {
+      "due": "2026-12-01T07:00:00Z",
+      "updated_at": "2026-10-14T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00"
+    },
+    "6adf1b88efc83d79cb01775a": {
+      "due": "2026-10-29T06:00:00Z",
+      "updated_at": "2026-10-23T06:00:00Z",
+      "files": [
+        "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF MOD 1.pdf",
+        "7. Exhibit G - Consent to Search.pdf",
+        "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF FINAL.pdf",
+        "5. Exhibit E - Contract Performance Outside of the US.pdf",
+        "3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+        "2. Exhibit B - Required Vendor Information - Services.pdf",
+        "4. Exhibit D - Price Quote.xlsx",
+        "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  FINAL.pdf",
+        "9. Attachment 2 - Insurance Information.pdf",
+        "0. DQ 27-0037 Boiler Chemical & Treatment SRVS - TCF MOD 2.pdf",
+        "6. Exhibit F - Non-Conflict of Interest.pdf",
+        "8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+        "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 2.pdf",
+        "1. Exhibit A - SOW, SPECS, & BIDDER RESPONS  MOD 1.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00",
+      "pipeline": "cdoc-tcf-boiler-water"
+    },
+    "6ad75fe3c20d55063f0581a2": {
+      "due": "2026-11-06T07:00:00Z",
+      "updated_at": "2026-10-19T06:00:00Z",
+      "files": [
+        "biddoc.pdf"
+      ],
+      "snap_at": "2026-10-27T03:26:46+00:00",
+      "pipeline": "parker-generator"
+    }
+  },
+  "last_hourly_check": "2026-10-27T03:26:46+00:00 | GovTribe CO state/local posted>=10/26: 0 new; federal CO 4 (all triaged); PSC 4 (all triaged); watched 20 re-pulled, no due/updated_at change; inbox: nothing new (Brad/Alex/BidNet threads already seen)"
 }
