@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-27T06:36:26+00:00
+# Bid watch report — 2026-10-27T07:36:05+00:00
 
-**Headline:** 1 NEW matching bids; 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 594 | BUYER 395, AGGREGATE 200 | 82 | 2026-10-27T06:36:26+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T06:36:26+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 88 |  | 88 | 2026-10-27T06:36:26+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 594 | BUYER 395, AGGREGATE 200 | 82 | 2026-10-27T07:36:05+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T07:36:05+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 88 |  | 88 | 2026-10-27T07:36:05+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -21,16 +21,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (23d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Littleton | ON-CALL GARAGE DOOR REPAIRS | 2026-11-24 (28d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (23d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison WATCHED | bidnet |  | Bunkhouse Asbestos Mitigation | 2026-10-28 (1d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720966072?target=view |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner** (bidnet): closing date 2026-10-30 -> 2026-11-02 — https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
