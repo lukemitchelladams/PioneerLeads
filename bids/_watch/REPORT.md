@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-27T10:36:28+00:00
+# Bid watch report — 2026-10-27T11:36:07+00:00
 
 **Headline:** not scanned this run (previous results kept): dibbs
 
@@ -7,9 +7,9 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 594 | BUYER 395, AGGREGATE 200 | 82 | 2026-10-27T10:36:28+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T10:36:28+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 88 |  | 88 | 2026-10-27T10:36:28+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 594 | BUYER 395, AGGREGATE 200 | 82 | 2026-10-27T11:36:07+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T11:36:07+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | PARTIAL this run (part of the source failed): earlier rows kept, none closed; API key; +42 from the nightly bulk file | 88 |  | 88 | 2026-10-27T11:36:07+00:00 | 2 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -45,8 +45,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | TREASURY, DEPARTMENT OF THE.BUREAU OF EN | Ergonomic Drum Handlers | 2026-11-07 (11d) |  | https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-10 (14d) |  | https://sam.gov/workspace/contract/opp/6ef9cebf1ae54094b375118b99c31867/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Y--Friant Dam HVAC Replacement - JOTFOC | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/c197c44e343742a5adde5688821f5075/view |
-| jones-bearing | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | Self Propelled Boat Trailer - USCG SEC Long Island Sound | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/e983271f59ed4af98747b1aea45eeeae/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | Y--Friant Dam HVAC Replacement - Letter Contract (place of performance not stated; CO buying office) | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/5bf1391766b64cec84fbea012633435f/view |
+| jones-bearing | samgov | HOMELAND SECURITY, DEPARTMENT OF / US CO | Self Propelled Boat Trailer - USCG SEC Long Island Sound (place of performance not stated; VA buying office) | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/e983271f59ed4af98747b1aea45eeeae/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemica | 2026-11-12 (16d) |  | https://sam.gov/workspace/contract/opp/db1cb44b650f4cdc892299917c04adf9/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Individual Water Treatment Device (IWTD) Laboratory Testing | 2026-11-12 (16d) |  | https://sam.gov/workspace/contract/opp/156ee7b93b084524895a20bab5d2ad6e/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--GEAR, PINION | 2026-11-19 (23d) |  | https://sam.gov/workspace/contract/opp/5eab430c39444c279a8cc451a662092d/view |
@@ -147,10 +147,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/66f6d2a7bd984472b9e573b3df0e56f7/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SPE4A627Q0128, 3110-013503674, Bearing, Ball, Annular, PN: 145DC011-11 | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/2e6249880c22476b9c98dc249949456f/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  Bearing, Roller, Cylindrical | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/e63d86aa73b34b0ca47a59fbfaa8ba09/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,CONE (place of performance not stated; OH buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/16deb1d14ac142dab0b25a8626e03bd1/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W6Q | Low Level Cranes | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/b240a8fc08d548528f9f1352d779d9ad/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W6Q | Low Level Cranes- CSO | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | 56--PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view |
 | brownbison | bidnet | City of Brighton | As-Needed Property Management Services | 2026-11-10 (14d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Property-Management-Services/0000440115?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Parker | CIP25-025 – Public Works Operation Center Decant Facility Expansion | 2026-11-10 (14d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CIP25-025-Public-Works-Operation-Center-Decant-Facility-Expansion/0000435410?purchasingGroupId=8409951&origin=1 |
@@ -189,11 +189,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (23d) |  | https://sam.gov/workspace/contract/opp/77f43d75da58449f8d622ac857d2ff4b/view |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Janitorial Services | 2026-11-23 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Janitorial-Services/0000441362?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Snow Removal Services | 2026-11-23 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1 |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | CRANE,FLOOR,PORTABL | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/da984b4f70fd412d924e9c830a2c3299/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AI | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | SACN Replace Fire Alarms and Intrusions Systems (place of performance not stated; CO buying office) | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/9a80372ece404f7a91ca3e9e5646e62d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | CRANE,FLOOR,PORTABL (place of performance not stated; PA buying office) | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/da984b4f70fd412d924e9c830a2c3299/view |
 | brownbison | bidnet | City of Littleton | ON-CALL GARAGE DOOR REPAIRS | 2026-11-24 (28d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Littleton | ON-CALL COMMERCIAL PEDESTRIAN DOOR REPAIRS | 2026-11-24 (28d) | 2026-11-04 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-COMMERCIAL-PEDESTRIAN-DOOR-REPAIRS/0000440813?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | HOUSING, BEARING UNI | 2026-11-26 (30d) |  | https://sam.gov/workspace/contract/opp/8ccf3c647f414b7ea5cbb513ccfb51c9/view |
@@ -254,3 +254,8 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 | 3020 | SPE7L5-27-Q-0013 | GEAR, WORM (NSN 3020-01-169-9777, qty 2) | 2 | 2026-10-29 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L527Q0013 |
 | 3030 | SPE7M0-27-Q-0110 | BELTS, V, MATCHED SET (NSN 3030-00-740-3650, qty 1) | 1 | 2026-10-27 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M027Q0110 |
 | 3020 | SPE7L4-27-T-0442 | GEAR, HELICAL (NSN 3020-01-508-3832, qty 1) | 1 | 2026-10-29 | https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0442 |
+
+## Errors
+
+- samgov: SAM.gov {'ccode': '3950'}: HTTP 504 Gateway Time-out <html> <head><title>504 Gateway Time-out</title></head> <body> <center><h1>504 Gateway Time-out</h1></center> </body> </html>
+- samgov: samgov list incomplete this scan: previous open bids carried forward, none marked closed

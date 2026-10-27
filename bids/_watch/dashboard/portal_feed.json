@@ -1832,7 +1832,7 @@
  {
   "key": "samgov:d482864e35ad486a91225ac6bba8ff8e",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
   "title": "Low Level Cranes- CSO",
   "sol": "W911KF25SC002A0018",
   "closing": "2026-11-09",
@@ -2072,7 +2072,7 @@
  {
   "key": "samgov:e983271f59ed4af98747b1aea45eeeae",
   "source": "samgov",
-  "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.CG-SEA-C23",
+  "agency": "HOMELAND SECURITY, DEPARTMENT OF / US COAST GUARD / CG-SEA-C23",
   "title": "Self Propelled Boat Trailer - USCG SEC Long Island Sound",
   "sol": "70ZU0327S51401B00",
   "closing": "2026-11-11",
@@ -2582,7 +2582,7 @@
  {
   "key": "samgov:3a25347065dc4abab033df330d536ef2",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
   "title": "Vandenberg Crane Replacement",
   "sol": "FA8227-27-Q-1000",
   "closing": "2026-11-23",
@@ -2642,7 +2642,7 @@
  {
   "key": "samgov:da984b4f70fd412d924e9c830a2c3299",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT",
   "title": "CRANE,FLOOR,PORTABL",
   "sol": "N0038327QPA11",
   "closing": "2026-11-23",
