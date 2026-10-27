@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-27T00:36:49+00:00
+# Bid watch report — 2026-10-27T01:36:08+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** BLIND: bidnet; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | PARTIAL this run (part of the source failed): earlier rows kept, none closed; login BLOCKED: BidNet robot check right after the login form: cool-down started | 193 | AGGREGATE 194 | 13 | 2026-10-27T00:36:49+00:00 | 3 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T00:36:49+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T00:36:49+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-10-27T00:36:49+00:00; COOL-DOWN after a robot check, until 2026-10-27T02:37:21+00:00 | 588 |  | 81 | 2026-10-27T00:36:49+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T01:36:08+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T01:36:08+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -28,18 +28,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - 27J Speaker Cabling Installation (2021BRRHS) (None)
 - Elbert County IFB 2026-006 Fencing (EVALUATE) (None)
 - Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9) (bonfire)
-
-## No longer listed (closed/awarded)
-
-- 30--PULLEY,FLAT (samgov, due 2026-10-26)
-- BALL,BEARING (samgov, due 2026-10-26)
-- PULLEY,GROOVE (samgov, due 2026-10-26)
-- 10--CONVEYOR,AMMUNITION (samgov, due 2026-10-26)
-- BALL,BEARING (samgov, due 2026-10-26)
-- ACTR ASSY, ANT AZ (samgov, due 2026-10-26)
-- 30--PULLEY,GROOVE (samgov, due 2026-10-26)
-- 31-  BEARING, BALL, ANNULAR (samgov, due 2026-10-26)
-- Roller Tracks (samgov, due 2026-10-26)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -65,12 +53,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | FD2030-26-01038 | 2027-06-15 (231d) |  | https://sam.gov/workspace/contract/opp/7872b54a0d4547a78d839266d5c8fba5/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | Noise Tested Bearings IDIQ- Amendment 0001 | 2027-07-29 (275d) |  | https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ- Amendment 0001 (place of performance not stated; PA buying office) | 2027-07-29 (275d) |  | https://sam.gov/workspace/contract/opp/ef42fcf29ca7449db6a4146acf468d19/view |
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
+| jones-bearing | samgov | INTERIOR, DEPARTMENT OF THE / BUREAU OF  | 46--EC - LMDT MEMBRANE FILTERS (place of performance not stated; MT buying office) | ? |  | https://sam.gov/workspace/contract/opp/031da2a2b09f4488ae95045518da7098/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W07 | PRESOLICITATION SYNOPSIS - Pickwick Lock Sector Gear Fabrication | ? |  | https://sam.gov/workspace/contract/opp/18cf8e050c6a40bca486f7516b646cfc/view |
 | brownbison WATCHED | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 4520--Radiant Panel Replacement RMR VAMC (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/54da6291bed54524833884f578079494/view |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W07 | PRESOLICITATION SYNOPSIS - Pickwick Lock Sector Gear Fabrication | ? |  | https://sam.gov/workspace/contract/opp/18cf8e050c6a40bca486f7516b646cfc/view |
-| jones-bearing | samgov | INTERIOR, DEPARTMENT OF THE / BUREAU OF  | 46--EC - LMDT MEMBRANE FILTERS (place of performance not stated; MT buying office) | ? |  | https://sam.gov/workspace/contract/opp/031da2a2b09f4488ae95045518da7098/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
 
 ## All open matching bids, excluding DIBBS parts RFQs (138)
 
@@ -83,7 +71,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Arvada | On-Call Secure Electronic Media Destruction Services | 2026-10-27 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Secure-Electronic-Media-Destruction-Services/0000438944?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Elbert County Government | 2026-006 Fencing | 2026-10-27 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-006-Fencing/0000439353?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Douglas County Government | Janitorial Supplies | 2026-10-27 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Janitorial-Supplies/0000439728?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | J065--Full-service Preventative Maintenance on Siemens Symbia S | 2026-10-28 (1d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720624627/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | J065--Full-service Preventative Maintenance on Siemens Symbia S | 2026-10-28 (1d) |  | https://sam.gov/workspace/contract/opp/cd2b3215a98141c785653c97c2c0aa78/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Rota-rack | 2026-10-28 (1d) |  | https://sam.gov/workspace/contract/opp/881be8c69a194a7da24919cce13b25e5/view |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Bunkhouse Asbestos Mitigation | 2026-10-28 (1d) |  | https://sam.gov/workspace/contract/opp/8f0e3b72596a4714a555ecd5eb0e899b/view |
@@ -91,19 +78,19 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Brighton | Asbestos Abatement and Historic Artifact Preservation at 575 Bush Street | 2026-10-28 (1d) | 2026-10-07 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Asbestos-Abatement-and-Historic-Artifact-Preservation-at-575-Bush-Street/0000438484?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Thornton | On-Call Landscape Construction Services | 2026-10-28 (1d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Landscape-Construction-Services/0000439444?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | School District 27J | Speaker Cabling Installation | 2026-10-28 (1d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Speaker-Cabling-Installation/0000440182?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | HVAC Air Filters | 2026-10-29 (2d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444166507433/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | J065--Full-service Preventative Maintenance on Siemens Symbia S | 2026-10-28 (1d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720624627/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-29 (2d) |  | https://sam.gov/workspace/contract/opp/d20097c1616d47c7833927894d6850b7/view |
 | brownbison WATCHED | bidnet | Douglas County School District RE-1 | 003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8 | 2026-10-29 (2d) | 2026-10-14 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | bidnet | Weld County | Courthouse Limestone Repairs | 2026-10-29 (2d) | 2026-10-07 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-Limestone-Repairs/0000438220?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Hudson | Town of Hudson: Wastewater Treatment Facility Expansion Design | 2026-10-29 (2d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Hudson-Wastewater-Treatment-Facility-Expansion-Design/0000439007?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Colorado Department of Corrections | Boiler Chemicals & Treatment Services - TCF | 2026-10-29 (2d) | 2026-10-21 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (3d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2717427692/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | HVAC Air Filters | 2026-10-29 (2d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444166507433/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT | Kardex Megamat and Onsite Installation | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/c714c6130b9d40d0991dbbe1815c37f3/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | BEARING,ROLLER,CYLI | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/fc84984eaeee410897734ba17d6782ed/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/dccd5b89612545bf88341d486f74a396/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/2418a9db688d494abb607d1a8fe88058/view |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/33bd86866d1946769ed093ca7a1ec653/view |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/9ede66cb08524a8a8c18d5308544eafd/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/2418a9db688d494abb607d1a8fe88058/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-30 (3d) |  | https://sam.gov/workspace/contract/opp/dccd5b89612545bf88341d486f74a396/view |
 | brownbison | bidnet | City of Fort Collins | Engineering On-Call Services for Water, Wastewater and Stormwater Projects | 2026-10-30 (3d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Engineering-On-Call-Services-for-Water-Wastewater-and-Stormwater-Projects/0000426883?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City and County of Broomfield | FENCING PROJECT AT 11600 RIDGE PARKWAY | 2026-10-30 (3d) | 2026-09-30 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/FENCING-PROJECT-AT-11600-RIDGE-PARKWAY/0000436792?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | City Admin Building (CAB) Building Automation System (BAS) Modernization | 2026-10-30 (3d) | 2026-09-25 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1 |
@@ -112,6 +99,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Lafayette | Lafayette Public Library Gas Boiler Replacement | 2026-10-30 (3d) | 2026-10-08 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Public-Library-Gas-Boiler-Replacement/0000439034?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Lafayette | Lafayette Police Department Boiler Replacement | 2026-10-30 (3d) | 2026-10-08 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Police-Department-Boiler-Replacement/0000439061?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Lafayette | Lafayette Fire Station #1 Generator and Transfer Switch Upgrade/Replacements | 2026-10-30 (3d) | 2026-10-09 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Lafayette-Fire-Station-1-Generator-and-Transfer-Switch-Upgrade-Replacements/0000439104?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-10-30 (3d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2717427692/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Snowmelt Boiler Plant | 2026-11-01 (5d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Ner | 2026-11-02 (6d) |  | https://sam.gov/workspace/contract/opp/52b4c80711934b99835162c13180bf40/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | TRUCK,HAND | 2026-11-02 (6d) |  | https://sam.gov/workspace/contract/opp/97d4df5ffe0f47ce9a9e19bf923de773/view |
@@ -123,24 +111,24 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Douglas County Government | JANITORIAL SERVICES FOR DOUGLAS COUNTY FACILITIES | 2026-11-02 (6d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/JANITORIAL-SERVICES-FOR-DOUGLAS-COUNTY-FACILITIES/0000440236?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Gear Rack, per Drawing # 8767202, Revision Y, for 155MM M284 Cannon, for the Watervliet Ar | 2026-11-03 (7d) |  | https://sam.gov/workspace/contract/opp/22eaa5d5e7164f03802e778ff9432ce1/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W6Q | Gear Rack, per Drawing # 8767202, Revision Y, for 155MM M284 Cannon, for the Watervliet Ar (place of performance not stated; NY buying office) | 2026-11-03 (7d) |  | https://sam.gov/workspace/contract/opp/6f774aa5d21848aa9a0121a4b2293ab9/view |
-| brownbison | bidnet |  | S--Sources Sought, Janitorial Services at Hoover Dam | 2026-11-04 (8d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720568272/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--EC-ECAO Exterior Door Replacement | 2026-11-04 (8d) |  | https://sam.gov/workspace/contract/opp/6ff2139e1e4e4f9a8ea52133c377ebb0/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | EC-ECAO Exterior Door Replacement (place of performance not stated; CO buying office) | 2026-11-04 (8d) |  | https://sam.gov/workspace/contract/opp/71ac218ba63c4668b2b3129557fcdeb5/view |
 | brownbison | bidnet | Arapahoe County | Fire Alarm Control Panel Replacement and Device Upgrade | 2026-11-04 (8d) | 2026-10-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Control-Panel-Replacement-and-Device-Upgrade/0000437963?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | El Paso County | On-Call General Facilities Trade Services | 2026-11-04 (8d) | 2026-10-12 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Facilities-Trade-Services/0000439236?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Colorado Springs School District No. 11  | Palmer Renovation Abatement Project | 2026-11-04 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Palmer-Renovation-Abatement-Project/0000439805?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Board of Water Works of Pueblo | Pueblo Water - ANNUAL CONTRACT FOR MECHANICAL JOINT RESTRAINTS 2026 | 2026-11-04 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Pueblo-Water-ANNUAL-CONTRACT-FOR-MECHANICAL-JOINT-RESTRAINTS-2026/0000440856?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Sheriffs Head Quarters Lighting Upgrades | 2026-11-05 (9d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205418920/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | S--Sources Sought, Janitorial Services at Hoover Dam | 2026-11-04 (8d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720568272/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING, BALL, DX | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/b05bd8d70d204cf3a0903cc3a05934a6/view |
 | jones-bearing | samgov | STATE, DEPARTMENT OF.STATE, DEPARTMENT O | Nanotechnology Certified Replacement Filter | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/6f56f057778f4477a61f3cf648febca5/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 10--CONVEYOR,AMMUNITION (place of performance not stated; OH buying office) | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/63972a264f804080ad2082f0fe279f1a/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 39--TENSIONER PULLEY ASSEM (place of performance not stated; PA buying office) | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/57e9a121061b4dba862dca1b8ffbc5b1/view |
 | jones-bearing | samgov | STATE, DEPARTMENT OF / STATE, DEPARTMENT | Nanotechnology Certified Replacement Filter (place of performance not stated; DC buying office) | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/498039a792b2415ca237b1f25185acfd/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 39--TENSIONER PULLEY ASSEM (place of performance not stated; PA buying office) | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/57e9a121061b4dba862dca1b8ffbc5b1/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 10--CONVEYOR,AMMUNITION (place of performance not stated; OH buying office) | 2026-11-05 (9d) |  | https://sam.gov/workspace/contract/opp/63972a264f804080ad2082f0fe279f1a/view |
 | brownbison | bidnet | City and County of Denver Department of  | On-Call Environmental Consulting Services | 2026-11-05 (9d) | 2026-10-22 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Environmental-Consulting-Services/0000435118?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Aztlan Outdoor Pool Replacement CM/GC | 2026-11-05 (9d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Aztlan-Outdoor-Pool-Replacement-CM-GC/0000437685?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Douglas County Government | Generator Preventative Maintenance & Repairs for Douglas County Facilities | 2026-11-05 (9d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Preventative-Maintenance-Repairs-for-Douglas-County-Facilities/0000439630?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | Parks On-Call Mowing Services | 2026-11-05 (9d) | 2026-10-15 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Mowing-Services/0000439641?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Douglas County Government | Commercial/Residential Fencing for Douglas County Facilities | 2026-11-05 (9d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Commercial-Residential-Fencing-for-Douglas-County-Facilities/0000439657?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Sheriffs Head Quarters Lighting Upgrades | 2026-11-05 (9d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205418920/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  BEARING, BALL, ANNULAR | 2026-11-06 (10d) |  | https://sam.gov/workspace/contract/opp/d9e769af7e6349b8a28f9fbcf5d71cba/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | PROPL GEAR REDUCE | 2026-11-06 (10d) |  | https://sam.gov/workspace/contract/opp/10b03ac3597744dd9017bde2032a1fe3/view |
 | brownbison WATCHED | bidnet | Cherry Creek School District #5 | District Wide Custodial Services | 2026-11-06 (10d) | 2026-10-13 optional + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/District-Wide-Custodial-Services/0000437813?purchasingGroupId=8409951&origin=1 |
@@ -151,9 +139,9 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  Bearing, Roller, Cylindrical | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/e63d86aa73b34b0ca47a59fbfaa8ba09/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,CONE (place of performance not stated; OH buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/16deb1d14ac142dab0b25a8626e03bd1/view |
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | 56--PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view |
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W6Q | Low Level Cranes | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/b240a8fc08d548528f9f1352d779d9ad/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | 56--PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (13d) |  | https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view |
 | brownbison WATCHED | bidnet | City of Brighton | As-Needed General Construction Services | 2026-11-09 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-General-Construction-Services/0000439531?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Pitkin County | 2027 Redstone Area Snow Removal Services | 2026-11-09 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Redstone-Area-Snow-Removal-Services/0000439654?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | South Metro Fire Rescue | SMFR-26-1015 JOINT SERVICES TRAINING FACILITY BURN BUILDING | 2026-11-09 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/SMFR-26-1015-JOINT-SERVICES-TRAINING-FACILITY-BURN-BUILDING/0000439824?purchasingGroupId=8409951&origin=1 |
@@ -168,36 +156,36 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT | Design-Build Services – STM Security Fencing - North Boundary | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/5988a90b5fb94514a89cebc7362a22b5/view |
 | brownbison | samgov | ENERGY, DEPARTMENT OF / ENERGY, DEPARTME | Design-Build Services – STM Security Fencing - North Boundary | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/02fdc748f70d471abfba3cc6f8ac5a06/view |
 | brownbison | samgov | ENERGY, DEPARTMENT OF / ENERGY, DEPARTME | Design-Build Services – STM Security Fencing - North Boundary | 2026-11-11 (15d) |  | https://sam.gov/workspace/contract/opp/2fa822e893384a93bccb65cb8ac7aea4/view |
-| brownbison | bidnet |  | As-Needed Consulting Services for Design | 2026-11-12 (16d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204361081/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Greeley | On-Call Planner Professional Services for Community Development Department | 2026-11-12 (16d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Fort Lewis College | Fire Alarm Inspection & Testing | 2026-11-12 (16d) | 2026-10-20 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Inspection-Testing/0000439558?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Housing Authority | Elevator Preventative Maintenance, Repairs and Capital Improvements | 2026-11-12 (16d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet |  | Station One Janitorial Services | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | As-Needed Consulting Services for Design | 2026-11-12 (16d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204361081/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Superior | Town of Superior - Irrigation tank floating cover replacement | 2026-11-13 (17d) | 2026-10-22 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (20d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet |  | Station One Janitorial Services | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (20d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (20d) | 2026-10-26 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (20d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Adams County | On-Call Employment Investigations | 2026-11-17 (21d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Arvada | On-Call Traffic Control Services Citywide - REISSUE | 2026-11-17 (21d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Cortez | RFQ – City of Cortez On-Call Planning Services | 2026-11-17 (21d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-City-of-Cortez-On-Call-Planning-Services/0000440975?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | La Plata County | On-Call Services - Various Trades | 2026-11-17 (21d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Services-Various-Trades/0000441130?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Roof Replacement and Gutter Project - Multiple County Facilities | 2026-11-18 (22d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Colorado State University Construction P | Request for Interest: San Luis Valley Potato Research Facility | 2026-11-18 (22d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-San-Luis-Valley-Potato-Research-Facility/0000440491?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Morgan County | 2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities | 2026-11-18 (22d) | 2026-10-29 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Douglas County Government | HVAC Filters & Belts | 2026-11-18 (22d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Filters-Belts/0000441328?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION | 2026-11-19 (23d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Roof Replacement and Gutter Project - Multiple County Facilities | 2026-11-18 (22d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--GEAR, PINION | 2026-11-19 (23d) |  | https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (23d) |  | https://sam.gov/workspace/contract/opp/77f43d75da58449f8d622ac857d2ff4b/view |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (23d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (23d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (23d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (23d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION | 2026-11-19 (23d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | CRANE,FLOOR,PORTABL | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/da984b4f70fd412d924e9c830a2c3299/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AI | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view |
-| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/9a80372ece404f7a91ca3e9e5646e62d/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | SACN Replace Fire Alarms and Intrusions Systems (place of performance not stated; CO buying office) | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/9a80372ece404f7a91ca3e9e5646e62d/view |
+| jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (27d) |  | https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Snow Removal Services | 2026-11-23 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Janitorial Services | 2026-11-23 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Janitorial-Services/0000441362?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Littleton | ON-CALL COMMERCIAL PEDESTRIAN DOOR REPAIRS | 2026-11-24 (28d) | 2026-11-04 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-COMMERCIAL-PEDESTRIAN-DOOR-REPAIRS/0000440813?purchasingGroupId=8409951&origin=1 |
@@ -263,6 +251,4 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 
 ## Errors
 
-- bidnet: BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER Call log: - navigating to "https:
-- bidnet: BidNet statewide tab failed; keyword searches skipped, previous results carried forward
 - bidnet: bidnet list incomplete this scan: previous open bids carried forward, none marked closed

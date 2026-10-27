@@ -2,9 +2,9 @@
  {
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Blind this run (last good data shown)",
-  "detail": "HTTP 200; showing 588 rows from the last good read; login BLOCKED: BidNet robot check right after the login form: cool-down started; BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Pag",
-  "open_count": 193,
-  "matches": 13,
+  "detail": "HTTP 202; showing 588 rows from the last good read; COOL-DOWN after a robot check, until 2026-10-27T02:37:21+00:00; bidnet list incomplete this scan: previous open bids carried forward, none marked closed",
+  "open_count": 588,
+  "matches": 81,
   "last_success": "2026-10-27T00:36:49+00:00"
  },
  {
@@ -13,7 +13,7 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set",
   "open_count": 2,
   "matches": 0,
-  "last_success": "2026-10-27T00:36:49+00:00"
+  "last_success": "2026-10-27T01:36:08+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +33 from the nightly bulk file",
   "open_count": 83,
   "matches": 83,
-  "last_success": "2026-10-27T00:36:49+00:00"
+  "last_success": "2026-10-27T01:36:08+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
