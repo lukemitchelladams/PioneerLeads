@@ -4,6 +4,8 @@ Brown Bison submits the proposal and holds the contract. The generator-service f
 as our subcontractor. RFP §8: subcontracting "material responsibilities" needs the Town's prior written approval, so we name
 the sub in the proposal.
 
+**2026-10-27: Luke handles all generator sub contact by phone; agent sends NO emails to these firms until Luke says.**
+
 **2026-10-26: widened (Luke: decide on my own). Draft B sent to Smith, DVL, RMGS, Colorado Standby; follow-up to Generator Source. Pricing due Fri 10/30, questions by Wed 10/28.**
 
 **Status 2026-10-20 13:00 MT:**
