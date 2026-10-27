@@ -1152,5 +1152,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T11:28:23+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 8th hour); no CO/federal/PSC review or watched re-pull. HQ 10:36Z scan: nothing new/changed. Inbox: BidNet closing reminder for Littleton 21-26 (10/28 14:00 MDT), no new info."
+  "last_hourly_check": "2026-10-27T12:33:18+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 9th hour); no CO/federal/PSC review or watched re-pull. HQ 11:36Z scan: nothing new/changed. Inbox: BidNet closing reminder for TCF DQ 2027000037 (10/29), no new info."
 }
