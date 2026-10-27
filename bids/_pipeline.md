@@ -127,6 +127,14 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | RFP 26-058 on-call facilities trade services | El Paso County | 2026-11-04 | Qualifying (3-yr experience question) | Not in repo; addendum 2 issued 2026-10-19 (BidNet email) |
 | 26-18629AP-FM asbestos abatement | Jefferson County | 2026-10-06 | Submitted | Not in repo |
 | R26-077MZ Parks Maintenance On-Call | City of Colorado Springs | 2026-10-20 | **CRM: "already a no-bid"** | **Repo has GO + proposal draft**: Luke decides |
+| Q26-09 jail fire alarm inspection & maintenance | Larimer County | 2026-11-06 10:00 | EVALUATE (needs VESDA-certified fire alarm sub) | downloads/bidnet/0000441715 |
+| RFP 26-57 Fairgrounds South Lawns irrigation renovation | Arapahoe County | 2026-11-30 14:00 | EVALUATE; MANDATORY site visit 2026-11-10 10:00, RSVP KSchwindt@arapahoegov.com | downloads/bidnet/0000441680 |
+| RFQ 043-26 structured cabling & fiber contractors | Douglas County | 2026-12-03 15:00 | EVALUATE (needs certified cabling sub) | downloads/bidnet/0000441695 |
+| AHEC-27901-D CAVEA lighting (MSU Denver) | Auraria Higher Education Center | 2026-11-16 14:00 | EVALUATE; MANDATORY job walk 2026-11-04 14:30 | Not in repo (watchlisted) |
+| Parks On-Call Irrigation Services | City of Colorado Springs | 2026-12-02 | EVALUATE (Alex Ditto scope); optional pre-bid 2026-11-06 09:00 Teams | Not in repo (watchlisted) |
+| Transfort Overhead Door Replacements | City of Fort Collins | 2026-12-02 | EVALUATE (needs door sub) | Not in repo (watchlisted) |
+| On-Call Garage Door Repairs | City of Littleton | 2026-11-24 | EVALUATE; MANDATORY pre-bid 2026-11-03 14:00, 1800 W Belleview Ave | Not in repo (watchlisted) |
+| S--Estes Janitorial Service (SAM.gov) | Dept. of the Interior | 2026-11-10 | EVALUATE (needs janitorial sub; check set-aside) | Not in repo |
 
 Not pursued (2026-10-19): USPS Denver P&DC Roof Replacement 089495-27-A-0001, $12M-$13M, 100% P&P bonds,
 due 2026-11-20, optional pre-proposal 2026-11-04 09:00 on site. Out of scale.

@@ -347,6 +347,38 @@
    "match": "structured cabling and fiber optic",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "AHEC-27901-D CAVEA Lighting MSU Denver (EVALUATE, mandatory job walk 2026-11-04 14:30)",
+   "source": "bidnet",
+   "id": "0000441764",
+   "match": "cavea lighting",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Colorado Springs Parks On-Call Irrigation Services (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000441782",
+   "match": "parks on-call irrigation",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Fort Collins Transfort Overhead Door Replacements (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000439726",
+   "match": "transfort overhead door",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "Littleton On-Call Garage Door Repairs (EVALUATE, mandatory pre-bid 2026-11-03 14:00)",
+   "source": "bidnet",
+   "id": "0000440827",
+   "match": "on-call garage door repairs",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

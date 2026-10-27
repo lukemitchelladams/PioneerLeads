@@ -1031,21 +1031,21 @@
     "bidnet:0000441715": {
       "decision": "EVALUATE",
       "title": "Larimer County Jail - Fire Alarm Inspection and Maintenance Services",
-      "reason": "Our trade via a NICET fire-alarm sub. Due 2026-11-06 14:00 MT. Pre-bid/walk unknown until the package downloads (watchlisted).",
+      "reason": "Our trade via a NICET fire-alarm sub. Due 2026-11-06 14:00 MT. Pre-bid/walk unknown until the package downloads (watchlisted). | Package read 10/27 22:22Z: due 11/6 10:00 MT; no pre-bid; VESDA (Xtralis/Honeywell) certification required.",
       "triaged_at": "2026-10-27T20:22Z",
       "pipeline_id": "larimer-jail-fire-alarm"
     },
     "bidnet:0000441680": {
       "decision": "EVALUATE",
       "title": "Arapahoe County Fairgrounds: South Lawns Irrigation Renovation",
-      "reason": "Landscaping/irrigation (Alex Ditto pricing). MANDATORY pre-bid 2026-11-10 + RSVP required per BidNet. Due 2026-11-30 14:00 MT. Confirm not heavy civil (rule 8) when the package downloads.",
+      "reason": "Landscaping/irrigation (Alex Ditto pricing). MANDATORY pre-bid 2026-11-10 + RSVP required per BidNet. Due 2026-11-30 14:00 MT. Confirm not heavy civil (rule 8) when the package downloads. | Package read 10/27 22:22Z: mandatory site visit 2026-11-10 10:00, RSVP KSchwindt@arapahoegov.com; proposals due 11/30 14:00; full irrigation system replacement.",
       "triaged_at": "2026-10-27T20:22Z",
       "pipeline_id": "arapahoe-south-lawns-irrigation"
     },
     "bidnet:0000441695": {
       "decision": "EVALUATE",
       "title": "Douglas County Structured Cabling and Fiber Optic Contractors",
-      "reason": "Low-voltage on-call pool; needs a cabling sub. Due 2026-12-03 14:00 MT. Pre-bid unknown until the package downloads (watchlisted).",
+      "reason": "Low-voltage on-call pool; needs a cabling sub. Due 2026-12-03 14:00 MT. Pre-bid unknown until the package downloads (watchlisted). | Package read 10/27 22:22Z: due 12/3 15:00; questions by 11/6; no pre-bid; certified Cat6A/fiber installer.",
       "triaged_at": "2026-10-27T20:22Z",
       "pipeline_id": "dougco-structured-cabling"
     },
@@ -1129,6 +1129,83 @@
       "decision": "NO",
       "reason": "Diagnostic ultrasound system: medical supply",
       "triaged_at": "2026-10-27T20:22Z"
+    },
+    "bidnet:0000441764": {
+      "decision": "EVALUATE",
+      "title": "AHEC-27901-D CAVEA Lighting for MSU Denver",
+      "reason": "Electrical/lighting via sub. MANDATORY job walk 2026-11-04 14:30 MT (Jordan Student Success Bldg, Suite 420). Due 2026-11-16 14:00 MT. Check whether it is theatrical/AV lighting (specialty).",
+      "triaged_at": "2026-10-27T22:22Z",
+      "pipeline_id": "ahec-27901-cavea-lighting"
+    },
+    "bidnet:0000441782": {
+      "decision": "EVALUATE",
+      "title": "City of Colorado Springs Parks On-Call Irrigation Services",
+      "reason": "Landscaping/irrigation on-call (Alex Ditto). Optional pre-bid 2026-11-06 09:00 (Teams). Due 2026-12-02.",
+      "triaged_at": "2026-10-27T22:22Z",
+      "pipeline_id": "cos-parks-irrigation-oncall"
+    },
+    "bidnet:0000439726": {
+      "decision": "EVALUATE",
+      "title": "City of Fort Collins Transfort Overhead Door Replacements",
+      "reason": "Facilities; needs an overhead-door sub. No pre-bid listed. Due 2026-12-02.",
+      "triaged_at": "2026-10-27T22:22Z",
+      "pipeline_id": "fort-collins-transfort-doors"
+    },
+    "bidnet:0000440827": {
+      "decision": "EVALUATE",
+      "title": "City of Littleton On-Call Garage Door Repairs",
+      "reason": "Facilities; needs a garage-door sub. MANDATORY pre-bid 2026-11-03 14:00 MT at 1800 W Belleview Ave, Littleton. Due 2026-11-24.",
+      "triaged_at": "2026-10-27T22:22Z",
+      "pipeline_id": "littleton-garage-doors"
+    },
+    "bidnet:0000440968": {
+      "decision": "NO",
+      "title": "Morgan County 2026-1119-001 Roof Replacement & Gutter Project",
+      "reason": "Roofing is not our trade; Fort Morgan. Optional walkthrough 2026-10-29.",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "7b9acd467e25498bbd5add36c25f76da": {
+      "decision": "EVALUATE",
+      "title": "DOI S--Estes Janitorial Service (SAM.gov)",
+      "reason": "Federal janitorial in Estes Park; needs a janitorial sub and a check of set-aside / limitations on subcontracting, site visit and wage determination. Due 2026-11-10.",
+      "triaged_at": "2026-10-27T22:22Z",
+      "pipeline_id": "doi-estes-janitorial"
+    },
+    "7c57681a0efb4d8f916d6f9e0c3ee3c9": {
+      "decision": "NO",
+      "title": "DOI 56--PGMB Security Gate (SAM.gov, total small business set-aside)",
+      "reason": "Security gate supply/install (PSC 56): specialty product buy outside our trades; rule 9.",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:0000441751": {
+      "decision": "NO",
+      "reason": "Professional Services (generic): not our trade",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:0000441760": {
+      "decision": "NO",
+      "reason": "Enderud and Mikelson intersection improvements: heavy civil, rule 8",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:0000441779": {
+      "decision": "NO",
+      "reason": "Cameras & accessories SCCF: supply, rule 9",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:444178825248": {
+      "decision": "NO",
+      "reason": "Jail EMT staffing: not our trade",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:444210910853": {
+      "decision": "NO",
+      "reason": "Mountain community resiliency framework: consulting",
+      "triaged_at": "2026-10-27T22:22Z"
+    },
+    "bidnet:444212996976": {
+      "decision": "NO",
+      "reason": "Electronic health record system: software",
+      "triaged_at": "2026-10-27T22:22Z"
     }
   },
   "watched": {
@@ -1314,6 +1391,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T21:22Z: GovTribe still BLOCKED (18th hour). HQ 20:36Z run was SAM-only (bidnet/bonfire/dibbs not scanned; BidNet last success 19:36Z, logged in). Packages for the 3 new EVALUATE bids (0000441715, 0000441680, 0000441695) not yet downloaded. No new matches, no changes. Inbox quiet (no new threads). GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); cos-r26-069mz-bas (EVALUATE) due 10/30.",
+  "last_hourly_check": "2026-10-27T22:22Z: GovTribe still BLOCKED (19th hour). HQ 21:36Z scan: BidNet live (596 open, 84 matches), SAM 95, Bonfire/DIBBS down. 5 NEW matches triaged: DOI Estes janitorial EVALUATE, AHEC CAVEA lighting EVALUATE (mandatory walk 11/4 14:30), COS parks irrigation on-call EVALUATE, Fort Collins overhead doors EVALUATE, DOI security gate NO. Littleton garage doors (mandatory pre-bid 11/3 14:00) and Morgan roof triaged from the match list (EVALUATE / NO). 3 packages from the 19:36Z finds read (Arapahoe mandatory 11/10 10:00 RSVP; Larimer due 11/6 VESDA cert; Douglas cabling due 12/3). Inbox quiet. GO 5, sub pricing 0/5.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
