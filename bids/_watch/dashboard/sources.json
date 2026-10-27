@@ -36,7 +36,7 @@
   "status": "Live (index lags)",
   "detail": "Newest posting indexed: 2026-10-26. 165 open CO records reviewed 2026-10-19T19:30.",
   "open_count": 165,
-  "matches": 180,
+  "matches": 185,
   "last_success": "2026-10-19T19:30:00-06:00"
  }
 ]
