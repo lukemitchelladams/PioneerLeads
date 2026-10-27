@@ -1,25 +1,25 @@
 {
-  "checked_at": "2026-10-27T01:36:08+00:00",
+  "checked_at": "2026-10-27T02:38:03+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
+      "complete": true,
       "count": 588,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-10-27T00:36:49+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-10-27T02:37:21+00:00",
+      "errors": [],
+      "last_success": "2026-10-27T02:38:03+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
       "matches": 81,
-      "reach_note": "HTTP 202",
-      "reachable": true
+      "reach_note": "HTTP 200",
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 194,
+        "statewide BUYER": 395
+      }
     },
     "bonfire": {
       "count": 2,
@@ -28,7 +28,7 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-27T01:36:08+00:00",
+      "last_success": "2026-10-27T02:38:03+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
@@ -65,7 +65,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-27T01:36:08+00:00",
+      "last_success": "2026-10-27T02:38:03+00:00",
       "logged_in": true,
       "login_note": "API key; +33 from the nightly bulk file",
       "matches": 83,
