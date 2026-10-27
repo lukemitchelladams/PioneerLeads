@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-27T03:36:22+00:00
+# Bid watch report — 2026-10-27T04:35:43+00:00
 
 **Headline:** not scanned this run (previous results kept): dibbs
 
@@ -7,9 +7,9 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 588 | BUYER 395, AGGREGATE 194 | 81 | 2026-10-27T03:36:22+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T03:36:22+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T03:36:22+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 588 | BUYER 395, AGGREGATE 194 | 81 | 2026-10-27T04:35:43+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T04:35:43+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T04:35:43+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
