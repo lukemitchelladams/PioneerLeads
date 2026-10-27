@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -32.06
+  "days_left": -32.07
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -39,7 +39,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -12.18
+  "days_left": -12.19
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -53,7 +53,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -8.02
+  "days_left": -8.03
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -67,7 +67,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -7.18
+  "days_left": -7.19
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -6.18
+  "days_left": -6.19
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -6.18
+  "days_left": -6.19
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -123,7 +123,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -4.02
+  "days_left": -4.03
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -1.18
+  "days_left": -1.19
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -151,7 +151,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -1.02
+  "days_left": -1.03
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -165,7 +165,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -0.97
+  "days_left": -0.98
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -193,7 +193,7 @@
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
   "past": true,
-  "days_left": -0.18
+  "days_left": -0.19
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -207,7 +207,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 0.11
+  "days_left": 0.1
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -221,7 +221,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 1.98
+  "days_left": 1.97
  },
  {
   "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
@@ -235,7 +235,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.11
+  "days_left": 2.1
  },
  {
   "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
@@ -249,7 +249,7 @@
   "note": "TCF boiler DQ quote due on BidNet",
   "critical": false,
   "past": false,
-  "days_left": 2.11
+  "days_left": 2.1
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -263,7 +263,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.98
+  "days_left": 2.97
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -305,7 +305,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.94
+  "days_left": 6.93
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -319,7 +319,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 7.86
+  "days_left": 7.85
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -333,7 +333,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 9.15
+  "days_left": 9.14
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -389,7 +389,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 13.44
+  "days_left": 13.43
  },
  {
   "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
@@ -431,7 +431,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.07
+  "days_left": 16.06
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -487,7 +487,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.86
+  "days_left": 20.85
  },
  {
   "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
@@ -515,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.09
+  "days_left": 23.08
  },
  {
   "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
@@ -585,7 +585,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 33.44
+  "days_left": 33.43
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Submission|2026-11-30T14:00:00-07:00",
