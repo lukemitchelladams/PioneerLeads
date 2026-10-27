@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-27T15:58:44+00:00
+# Bid watch report — 2026-10-27T16:53:09+00:00
 
 **Headline:** BLIND: bidnet; not scanned this run (previous results kept): dibbs
 
@@ -7,9 +7,9 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-10-27T14:51:39+00:00; COOL-DOWN after a robot check, until 2026-10-27T16:52:01+00:00 | 595 |  | 82 | 2026-10-27T14:51:39+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T15:58:44+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 93 |  | 93 | 2026-10-27T15:58:44+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-10-27T14:51:39+00:00; login BLOCKED: BidNet robot check right after the login form: cool-down started | 595 |  | 82 | 2026-10-27T14:51:39+00:00 | 4 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T16:53:09+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 93 |  | 93 | 2026-10-27T16:53:09+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -262,4 +262,7 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 
 ## Errors
 
+- bidnet: BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER Call log: - navigating to "https:
+- bidnet: BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=AGGREGATE: TimeoutError: Timeout 20000ms exceeded.
+- bidnet: BidNet statewide tab failed; keyword searches skipped, previous results carried forward
 - bidnet: bidnet list incomplete this scan: previous open bids carried forward, none marked closed
