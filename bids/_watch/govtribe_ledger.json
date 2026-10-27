@@ -1206,6 +1206,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T17:21Z: GovTribe still BLOCKED (14th hour; ACCOUNT_CANCELLED/UPGRADE_REQUIRED on all 3 searches). HQ 16:53Z scan: BidNet BLIND (robot check, 82 carried), SAM 93 live, Bonfire/DIBBS down, no new matches. Inbox: no new threads since 16:21Z; CRM search empty; nothing sent last hour. GO 5, sub pricing in hand 0/5. Only deadline <72h: cdoc-tcf-boiler-water 2026-10-29T17:00 MT.",
+  "last_hourly_check": "2026-10-27T18:21Z: GovTribe still BLOCKED (15th hour; ACCOUNT_CANCELLED/UPGRADE_REQUIRED on all 3 searches). HQ 17:36Z scan: BidNet BLIND (robot-check cooldown until 18:53Z, 82 carried), SAM 93 live, Bonfire/DIBBS down, no new matches, no changes on watched bids. Inbox: BidNet addendum 1 notice for Douglas County 036-26 janitorial (EVALUATE; not downloadable until BidNet scan resumes); Luke answered Silas (H2) on award factors 17:55Z. GO 5 (incl. TCF GO (walk)), sub pricing in hand 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
