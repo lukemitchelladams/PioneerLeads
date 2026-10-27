@@ -1098,5 +1098,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T04:23:53+00:00 | GovTribe BLOCKED: API returned ACCOUNT_CANCELLED (federal) and UPGRADE_REQUIRED (state/local) at 04:23Z; subscription inactive, account 6ad598cb5326f545600f508c. No CO/federal/PSC review or watched re-pull this hour. Inbox: nothing new."
+  "last_hourly_check": "2026-10-27T05:22:28+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED / UPGRADE_REQUIRED, 2nd hour); no CO/federal/PSC review or watched re-pull. HQ 04:35Z scan: nothing new/changed. Inbox: nothing new."
 }
