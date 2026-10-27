@@ -967,6 +967,54 @@
       "verdict": "NO",
       "why": "NO: Army sources-sought (market research only, no award) for the Integrated Commercial Intrusion Detection System at Fort Carson; DoD-certified security-system integrator work, not our trades. Not a scraper profile match.",
       "at": "2026-10-27T07:25:11+00:00"
+    },
+    "66114240b6ce43ff9ba45be3c2624fe1": {
+      "name": "Navy N0010426QYADN 31--BEARING,BALL,ANNULAR (presolicitation, due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS presolicitation for an NSN ball bearing (PSC 3110, total small-business set-aside, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, conveyor pulleys). Dad reviews DIBBS/Navy RFQs himself from the local-runner list.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "88fae747c268450babe6750b67aa4350": {
+      "name": "Navy N0010426QYAGF 31--BEARING,BALL,DUPLEX (presolicitation, due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS presolicitation for an NSN ball bearing (PSC 3110, total small-business set-aside, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, conveyor pulleys). Dad reviews DIBBS/Navy RFQs himself from the local-runner list.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "9efac20ee41241b4ba84f3c89f59d96d": {
+      "name": "Navy N0010426QYAH4 31--BEARING,BALL,DUPLEX (presolicitation, due 2026-12-03)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS presolicitation for an NSN ball bearing (PSC 3110, total small-business set-aside, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, conveyor pulleys). Dad reviews DIBBS/Navy RFQs himself from the local-runner list.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "c29f795658414ef49624fb7d3557091f": {
+      "name": "Navy N0010426QYAH7 31--BEARING,BALL,ANNULAR (presolicitation, due 2026-12-01)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS presolicitation for an NSN ball bearing (PSC 3110, total small-business set-aside, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, conveyor pulleys). Dad reviews DIBBS/Navy RFQs himself from the local-runner list.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "bidnet:0000441585": {
+      "name": "BD2719 Managed Detect and Respond Software and Services (BidNet, due 2026-11-18)",
+      "verdict": "NO",
+      "why": "NO: cybersecurity MDR software/services; not our trades. Not a scraper profile match.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "b240a8fc08d548528f9f1352d779d9ad": {
+      "name": "Navy Low Level Cranes (due 2026-11-09)",
+      "verdict": "NO",
+      "why": "NO: federal crane replacement/overhaul (USAF Vandenberg / Navy CSO low-level cranes); construction + crane OEM work, not a Jones Bearing product; matched only on the 'pulley/bearing' keywords. New documents posted 2026-10-27 are irrelevant.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "d482864e35ad486a91225ac6bba8ff8e": {
+      "name": "Navy Low Level Cranes - CSO (due 2026-11-09)",
+      "verdict": "NO",
+      "why": "NO: federal crane replacement/overhaul (USAF Vandenberg / Navy CSO low-level cranes); construction + crane OEM work, not a Jones Bearing product; matched only on the 'pulley/bearing' keywords. New documents posted 2026-10-27 are irrelevant.",
+      "at": "2026-10-27T13:34:13+00:00"
+    },
+    "be527e8411824dd29e4a764a91ab32a6": {
+      "name": "USAF Vandenberg Crane Replacement (due 2026-11-23)",
+      "verdict": "NO",
+      "why": "NO: federal crane replacement/overhaul (USAF Vandenberg / Navy CSO low-level cranes); construction + crane OEM work, not a Jones Bearing product; matched only on the 'pulley/bearing' keywords. New documents posted 2026-10-27 are irrelevant.",
+      "at": "2026-10-27T13:34:13+00:00"
     }
   },
   "watched": {
@@ -1152,6 +1200,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T12:33:18+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 9th hour); no CO/federal/PSC review or watched re-pull. HQ 11:36Z scan: nothing new/changed. Inbox: BidNet closing reminder for TCF DQ 2027000037 (10/29), no new info.",
+  "last_hourly_check": "2026-10-27T13:34:13+00:00 | GovTribe still BLOCKED (10th hour). HQ 12:46Z scan: 4 NEW SAM matches = Navy NSN ball-bearing presolicitations (all NO); 3 changed = new docs on crane/boat-trailer items already NO (2 crane notices added to ledger as NO). SAM count 92 (API reach 404 but list refreshed). Inbox: new H2 message 13:18Z (read this hour).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
