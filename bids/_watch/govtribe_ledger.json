@@ -1206,6 +1206,12 @@
       "decision": "NO",
       "reason": "Electronic health record system: software",
       "triaged_at": "2026-10-27T22:22Z"
+    },
+    "b11d3623d84843b2899857e45ac20464": {
+      "decision": "NO",
+      "title": "DOI Northern California Area Office (NCAO) Fire Alarm (SAM.gov)",
+      "reason": "Place of performance Northern California; outside our Colorado service area.",
+      "triaged_at": "2026-10-27T23:22Z"
     }
   },
   "watched": {
@@ -1391,6 +1397,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T22:22Z: GovTribe still BLOCKED (19th hour). HQ 21:36Z scan: BidNet live (596 open, 84 matches), SAM 95, Bonfire/DIBBS down. 5 NEW matches triaged: DOI Estes janitorial EVALUATE, AHEC CAVEA lighting EVALUATE (mandatory walk 11/4 14:30), COS parks irrigation on-call EVALUATE, Fort Collins overhead doors EVALUATE, DOI security gate NO. Littleton garage doors (mandatory pre-bid 11/3 14:00) and Morgan roof triaged from the match list (EVALUATE / NO). 3 packages from the 19:36Z finds read (Arapahoe mandatory 11/10 10:00 RSVP; Larimer due 11/6 VESDA cert; Douglas cabling due 12/3). Inbox quiet. GO 5, sub pricing 0/5.",
+  "last_hourly_check": "2026-10-27T23:22Z: GovTribe still BLOCKED (20th hour). HQ 22:35Z run was SAM-only (BidNet last success 21:36Z, logged in; Bonfire/DIBBS down). 1 NEW SAM match (DOI NCAO fire alarm, Northern California) -> NO. Packages for AHEC CAVEA, COS parks irrigation, Fort Collins doors, Littleton garage doors not yet downloaded (watchlisted). Inbox quiet. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Mandatory walks <=7d: Littleton garage doors 11/3 14:00.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
