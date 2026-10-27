@@ -193,7 +193,7 @@
   "note": "Plumber pricing/answers",
   "critical": false,
   "past": true,
-  "days_left": -3.56
+  "days_left": -3.57
  },
  {
   "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -207,7 +207,7 @@
   "note": "Low-voltage sub pricing",
   "critical": false,
   "past": true,
-  "days_left": -3.56
+  "days_left": -3.57
  },
  {
   "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -221,7 +221,7 @@
   "note": "Plumber answers asked for by Thu 5 PM; 0 replies so far",
   "critical": false,
   "past": true,
-  "days_left": -3.56
+  "days_left": -3.57
  },
  {
   "key": "sd27j-2021brrhs|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -235,7 +235,7 @@
   "note": "Cabling sub price; outreach not sent as of 10/20",
   "critical": false,
   "past": true,
-  "days_left": -3.56
+  "days_left": -3.57
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -319,7 +319,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 0.44
+  "days_left": 0.43
  },
  {
   "key": "sd27j-2021brrhs|Submission|2026-10-28T10:00:00-06:00",
@@ -375,7 +375,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.44
+  "days_left": 2.43
  },
  {
   "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
@@ -389,7 +389,7 @@
   "note": "TCF boiler DQ quote due on BidNet",
   "critical": false,
   "past": false,
-  "days_left": 2.44
+  "days_left": 2.43
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -473,7 +473,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 8.19
+  "days_left": 8.18
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -613,7 +613,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 21.19
+  "days_left": 21.18
  },
  {
   "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",

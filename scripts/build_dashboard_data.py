@@ -162,7 +162,7 @@ def build(now: datetime) -> dict[str, list[dict]]:
                         "last_success": h.get("last_success") or ""})
     led = load("govtribe_ledger.json", {})
     if led:
-        sources.append({"source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)", "status": "Live (index lags)",
+        sources.append({"source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)", "status": ("BLOCKED: " + led["blocked"]) if led.get("blocked") else "Live (index lags)",
                         "detail": f"Newest posting indexed: {led.get('last_posted_reviewed')}. "
                                   f"{led.get('baseline_count')} open CO records reviewed {led.get('baseline_reviewed_at', '')[:16]}.",
                         "open_count": led.get("baseline_count", 0), "matches": len(led.get("triaged", {})),
