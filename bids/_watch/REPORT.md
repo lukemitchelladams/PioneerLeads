@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-27T02:38:03+00:00
+# Bid watch report — 2026-10-27T03:36:22+00:00
 
-**Headline:** 2 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 588 | BUYER 395, AGGREGATE 194 | 81 | 2026-10-27T02:38:03+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T02:38:03+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T02:38:03+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 588 | BUYER 395, AGGREGATE 194 | 81 | 2026-10-27T03:36:22+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T03:36:22+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 83 |  | 83 | 2026-10-27T03:36:22+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -21,11 +21,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (23d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Littleton | ON-CALL GARAGE DOOR REPAIRS | 2026-11-24 (28d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (23d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **On-Call Encampment Cleanup, Biohazard Remediation, and Abandoned Vehicle Removal** (bidnet): NEW DOCUMENTS (addendum?): Addendum 2 RFP-5996-26-KF.pdf — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Encampment-Cleanup-Biohazard-Remediation-and-Abandoned-Vehicle-Removal/0000439994?purchasingGroupId=8409951&origin=1
-- **Fire Alarm Control Panel Replacement and Device Upgrade** (bidnet): NEW DOCUMENTS (addendum?): Q&A Document 1.pdf — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Control-Panel-Replacement-and-Device-Upgrade/0000437963?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
