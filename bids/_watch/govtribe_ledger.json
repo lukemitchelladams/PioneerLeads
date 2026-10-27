@@ -1206,6 +1206,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T15:25:53+00:00 | GovTribe still BLOCKED (12th hour). HQ 14:51Z scan: BidNet scanner LOGGED OUT again (HTTP 202 robot check; 199 rows/14 matches carried forward), SAM 93 live, no new matches. Luke: Littleton 21-26 + SD27J = NO; TCF tech Andrew approved by CDOC (Luke email 14:54Z); RTD Alex told to price full scope (15:09Z); Parker generator subs handled by Luke directly.",
+  "last_hourly_check": "2026-10-27T16:24:21+00:00 | GovTribe still BLOCKED (13th hour). HQ 15:58Z scan: BidNet BLIND (logged out; 595/82 carried forward), SAM 93 live, no new matches. BidNet emailed addenda for Douglas County 037-26 generator PM (pipeline NO) and 038-26 fencing (watchlist keyword only, not our trade); not downloadable while the scanner is logged out. Silas asked whether price is the only award factor (DQ sec. 13.A.i quoted in sub-outreach).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

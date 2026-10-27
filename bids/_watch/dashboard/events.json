@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -31.87
+  "days_left": -31.89
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -25,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -13.04
+  "days_left": -13.06
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -39,7 +39,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -12.0
+  "days_left": -12.02
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -53,7 +53,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -7.83
+  "days_left": -7.85
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -67,7 +67,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -7.0
+  "days_left": -7.02
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -6.0
+  "days_left": -6.02
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -6.0
+  "days_left": -6.02
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -109,7 +109,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -4.79
+  "days_left": -4.81
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -123,7 +123,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -3.83
+  "days_left": -3.85
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -1.0
+  "days_left": -1.02
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -151,7 +151,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -0.83
+  "days_left": -0.85
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -165,7 +165,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -0.78
+  "days_left": -0.8
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -179,7 +179,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": true,
-  "days_left": -0.04
+  "days_left": -0.06
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -192,8 +192,8 @@
   "decision": "GO (walk)",
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
-  "past": false,
-  "days_left": 0.0
+  "past": true,
+  "days_left": -0.02
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -207,7 +207,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 0.29
+  "days_left": 0.27
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -221,7 +221,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.17
+  "days_left": 2.15
  },
  {
   "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
@@ -235,7 +235,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.29
+  "days_left": 2.27
  },
  {
   "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
@@ -249,7 +249,7 @@
   "note": "TCF boiler DQ quote due on BidNet",
   "critical": false,
   "past": false,
-  "days_left": 2.29
+  "days_left": 2.27
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -263,7 +263,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 3.17
+  "days_left": 3.15
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -277,7 +277,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.21
+  "days_left": 6.19
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -291,7 +291,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.21
+  "days_left": 6.19
  },
  {
   "key": "dougco-janitorial|Submission|2026-11-02T15:00:00-07:00",
@@ -305,7 +305,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 6.25
+  "days_left": 6.23
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
@@ -319,7 +319,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 7.13
+  "days_left": 7.11
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -333,7 +333,7 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 8.04
+  "days_left": 8.02
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -347,7 +347,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 9.33
+  "days_left": 9.32
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -361,7 +361,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 10.21
+  "days_left": 10.19
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -375,7 +375,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 13.21
+  "days_left": 13.19
  },
  {
   "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
@@ -389,7 +389,7 @@
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": false,
-  "days_left": 14.19
+  "days_left": 14.17
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -403,7 +403,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.21
+  "days_left": 16.19
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -417,7 +417,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.25
+  "days_left": 16.23
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -431,7 +431,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 17.21
+  "days_left": 17.19
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -445,7 +445,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 20.21
+  "days_left": 20.19
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -459,7 +459,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.21
+  "days_left": 20.19
  },
  {
   "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
@@ -473,7 +473,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 21.04
+  "days_left": 21.02
  },
  {
   "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
@@ -487,7 +487,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.21
+  "days_left": 23.19
  },
  {
   "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
@@ -501,7 +501,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.27
+  "days_left": 23.25
  },
  {
   "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
@@ -515,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 24.21
+  "days_left": 24.19
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -529,7 +529,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 24.21
+  "days_left": 24.19
  },
  {
   "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
@@ -543,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.21
+  "days_left": 27.19
  },
  {
   "key": "cos-oncall-snow|Submission|2026-11-23T14:00:00-07:00",
@@ -557,7 +557,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.21
+  "days_left": 27.19
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -571,7 +571,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 33.63
+  "days_left": 33.61
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -585,6 +585,6 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 35.21
+  "days_left": 35.19
  }
 ]
