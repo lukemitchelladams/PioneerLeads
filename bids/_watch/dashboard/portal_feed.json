@@ -1,410 +1,5 @@
 [
  {
-  "key": "dibbs:SPE4A0-27-T-0210:7018558616",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BALL, BEARING (NSN 3110-01-537-3745, qty 1)",
-  "sol": "SPE4A0-27-T-0210",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A027T0210"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5017:7018707983",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-00-293-8567, qty 48)",
-  "sol": "SPE4A6-27-T-5017",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5017"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5059:7018684467",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-00-445-2597, qty 261)",
-  "sol": "SPE4A6-27-T-5059",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5059"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5079:7018678500",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULAR (NSN 3110-00-540-9419, qty 29)",
-  "sol": "SPE4A6-27-T-5079",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5079"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5080:7018412638",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, AIRFRAME (NSN 3110-00-158-6298, qty 8)",
-  "sol": "SPE4A6-27-T-5080",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5080"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5090:7015213145",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULA (NSN 3110-01-363-6021, qty 4)",
-  "sol": "SPE4A6-27-T-5090",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5090"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5115:7017673911",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, BALL, ANNULA (NSN 3110-01-559-7572, qty 18)",
-  "sol": "SPE4A6-27-T-5115",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5115"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5117:7018723421",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "HOUSING, BEARING UNIT (NSN 3130-01-173-3491, qty 1)",
-  "sol": "SPE4A6-27-T-5117",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5117:7018723422",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "HOUSING, BEARING UNIT (NSN 3130-01-173-3491, qty 1)",
-  "sol": "SPE4A6-27-T-5117",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
- },
- {
-  "key": "dibbs:SPE4A6-27-T-5117:7018723423",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "HOUSING, BEARING UNIT (NSN 3130-01-173-3491, qty 1)",
-  "sol": "SPE4A6-27-T-5117",
-  "closing": "2026-10-26",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A627T5117"
- },
- {
-  "key": "dibbs:SPE7L1-27-T-1451:7017982894",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "PULLEY, GROOVE (NSN 3020-01-659-3808, qty 5)",
-  "sol": "SPE7L1-27-T-1451",
-  "closing": "2026-10-26",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L127T1451"
- },
- {
-  "key": "dibbs:SPE7L4-27-T-0417:7017983577",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "GUARD, MECHANICAL DRIVE (NSN 3020-01-119-4008, qty 51)",
-  "sol": "SPE7L4-27-T-0417",
-  "closing": "2026-10-26",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L427T0417"
- },
- {
-  "key": "dibbs:SPE7L5-27-T-0213:7018661999",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "PULLEY, GROOVE (NSN 3020-00-528-7993, qty 10)",
-  "sol": "SPE7L5-27-T-0213",
-  "closing": "2026-10-26",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7L527T0213"
- },
- {
-  "key": "dibbs:SPE7M1-27-T-0972:7016689135",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "BEARING, ROLLER, ROD (NSN 3110-01-416-1386, qty 5)",
-  "sol": "SPE7M1-27-T-0972",
-  "closing": "2026-10-26",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M127T0972"
- },
- {
-  "key": "dibbs:SPE7M4-27-T-1169:7018676878",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "PULLEY, FLAT (NSN 3020-00-898-1784, qty 17)",
-  "sol": "SPE7M4-27-T-1169",
-  "closing": "2026-10-26",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T1169"
- },
- {
-  "key": "dibbs:SPE7M4-27-T-1216:7010932302",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "PULLEY, GROOVE (NSN 3020-01-094-6195, qty 4)",
-  "sol": "SPE7M4-27-T-1216",
-  "closing": "2026-10-26",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE7M427T1216"
- },
- {
-  "key": "dibbs:SPE8EE-27-T-0180:7018730007",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "TENSIONER PULLEY ASSEM (NSN 3950-01-729-3596, qty 2)",
-  "sol": "SPE8EE-27-T-0180",
-  "closing": "2026-10-26",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0180"
- },
- {
-  "key": "dibbs:SPE8EE-27-T-0181:7018434647",
-  "source": "dibbs",
-  "agency": "DLA",
-  "title": "TENSIONER PULLEY ASSEM (NSN 3950-01-501-2288, qty 1)",
-  "sol": "SPE8EE-27-T-0181",
-  "closing": "2026-10-26",
-  "posted": "2026-10-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE8EE27T0181"
- },
- {
-  "key": "samgov:02d87e106590410fbc85be161ebe68a9",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--PULLEY,FLAT",
-  "sol": "SPE7M427T1169",
-  "closing": "2026-10-26",
-  "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/02d87e106590410fbc85be161ebe68a9/view"
- },
- {
-  "key": "samgov:1a17809e0929401bb214e6a23ca4770d",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-  "title": "BALL,BEARING",
-  "sol": "N0010426QYAJC",
-  "closing": "2026-10-26",
-  "posted": "2026-09-28",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/1a17809e0929401bb214e6a23ca4770d/view"
- },
- {
-  "key": "samgov:3e9d47ad4ab54b0cb8f5490153f09982",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
-  "title": "PULLEY,GROOVE",
-  "sol": "N0038326QTD01",
-  "closing": "2026-10-26",
-  "posted": "2026-09-24",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/3e9d47ad4ab54b0cb8f5490153f09982/view"
- },
- {
-  "key": "samgov:79be5e235b944235bb34559d96243e42",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "10--CONVEYOR,AMMUNITION",
-  "sol": "SPE7L127T1576",
-  "closing": "2026-10-26",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/79be5e235b944235bb34559d96243e42/view"
- },
- {
-  "key": "samgov:8ae53e6a33344f4d9333c7e33c113f09",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-  "title": "BALL,BEARING",
-  "sol": "N0010426QYAJC",
-  "closing": "2026-10-26",
-  "posted": "2026-09-24",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/8ae53e6a33344f4d9333c7e33c113f09/view"
- },
- {
-  "key": "samgov:b6e91ee3debc4d8089be1512706d0f46",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
-  "title": "ACTR ASSY, ANT AZ",
-  "sol": "SPRMM126QHE23",
-  "closing": "2026-10-26",
-  "posted": "2026-09-09",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/b6e91ee3debc4d8089be1512706d0f46/view"
- },
- {
-  "key": "samgov:ce96fcd8c90945a5925bdcb5c4a6fe68",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--PULLEY,GROOVE",
-  "sol": "SPE7L127T1451",
-  "closing": "2026-10-26",
-  "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/ce96fcd8c90945a5925bdcb5c4a6fe68/view"
- },
- {
-  "key": "samgov:deea8b76a44f4b4f9db33e09906ba274",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-  "title": "31-  BEARING, BALL, ANNULAR",
-  "sol": "SPE4A627RX106",
-  "closing": "2026-10-26",
-  "posted": "2026-10-22",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/deea8b76a44f4b4f9db33e09906ba274/view"
- },
- {
-  "key": "samgov:f68b42c6a60744628785318d4593ddf0",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
-  "title": "Roller Tracks",
-  "sol": "N6660427Q0014",
-  "closing": "2026-10-26",
-  "posted": "2026-10-21",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/f68b42c6a60744628785318d4593ddf0/view"
- },
- {
   "key": "bidnet:0000437338",
   "source": "bidnet",
   "agency": "Colorado Department of Corrections - Facility Management Services Project Type IFB - Invitation for Bid (Formal) Project Number ADA27-001",
@@ -882,7 +477,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720624627?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720624627/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:524e3ee049b94affaffedd261c4dc139",
@@ -1047,7 +642,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444166507433/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE7L5-27-T-0248:7018672201",
@@ -1227,7 +822,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2717427692?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2717427692/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "dibbs:SPE7L0-27-T-0035:7018767380",
@@ -1377,7 +972,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000438817",
@@ -1677,7 +1272,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720568272?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2720568272/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:4d0d75c8e5a44e54ad59972a249ec55e",
@@ -1827,7 +1422,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205418920?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205418920/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:498039a792b2415ca237b1f25185acfd",
@@ -2487,7 +2082,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204361081/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
@@ -2547,7 +2142,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444210657404",
@@ -2562,7 +2157,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000440224",
@@ -2592,7 +2187,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:2b0011c68733402aace4b0a7d9dd8487",
@@ -2727,7 +2322,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000437039",
@@ -2802,7 +2397,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:5eab430c39444c279a8cc451a662092d",
@@ -3147,7 +2742,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
