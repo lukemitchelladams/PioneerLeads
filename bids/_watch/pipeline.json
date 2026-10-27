@@ -891,6 +891,12 @@
       "when": "2026-10-27T11:34:00-06:00",
       "kind": "Addendum 1 posted",
       "note": "BidNet notice (Gmail 1a17e6dfe9ac7d0f); likely the Q&A answers incl. whether sub staff are allowed. Not yet downloaded: BidNet scraper in cooldown until 12:53 MT."
+    },
+    {
+      "bid": "sd27j-2021brrhs",
+      "when": "2026-10-27T13:05:00-06:00",
+      "kind": "Addendum 1 posted",
+      "note": "BidNet notice (Gmail 1a17ec07fce62b84). Bid is NO-GO per Luke 2026-10-27 (no sub pricing before the 10/28 deadline); no action unless Luke reopens it. Not downloaded: BidNet scraper blind."
     }
   ],
   "doc_gaps": [
