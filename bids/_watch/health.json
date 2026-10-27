@@ -1,24 +1,29 @@
 {
-  "checked_at": "2026-10-27T14:04:16+00:00",
+  "checked_at": "2026-10-27T14:51:39+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
-      "count": 595,
+      "carried_forward": true,
+      "complete": false,
+      "count": 199,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [],
-      "last_success": "2026-10-27T14:04:16+00:00",
-      "logged_in": true,
-      "login_note": "logged in (attempt 1)",
-      "matches": 82,
-      "reach_note": "HTTP 200",
+      "errors": [
+        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER\nCall log:\n  - navigating to \"https:",
+        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-10-27T14:51:39+00:00",
+      "logged_in": false,
+      "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
+      "matches": 14,
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 200,
-        "statewide BUYER": 396
+        "statewide BUYER": null
       }
     },
     "bonfire": {
@@ -28,7 +33,7 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-27T14:04:16+00:00",
+      "last_success": "2026-10-27T14:51:39+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
@@ -65,7 +70,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-27T14:04:16+00:00",
+      "last_success": "2026-10-27T14:51:39+00:00",
       "logged_in": true,
       "login_note": "API key; +38 from the nightly bulk file",
       "matches": 93,
