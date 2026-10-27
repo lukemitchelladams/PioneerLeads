@@ -1314,6 +1314,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T20:22Z: GovTribe still BLOCKED (17th hour). HQ 19:36Z scan: BidNet LOGGED IN again (602 open, 83 matches), SAM PARTIAL (FSC 3030 HTTP 504, list carried), Bonfire/DIBBS down. 3 NEW matches (Larimer jail fire alarm, Arapahoe irrigation w/ MANDATORY pre-bid 11/10+RSVP, DougCo structured cabling) -> EVALUATE, watchlisted. Douglas 036-26 janitorial Q&A read -> NO (no subcontracting). 15 non-match new listings -> NO. Inbox: Google Workspace billing notice only. GO 5, sub pricing 0/5.",
+  "last_hourly_check": "2026-10-27T21:22Z: GovTribe still BLOCKED (18th hour). HQ 20:36Z run was SAM-only (bidnet/bonfire/dibbs not scanned; BidNet last success 19:36Z, logged in). Packages for the 3 new EVALUATE bids (0000441715, 0000441680, 0000441695) not yet downloaded. No new matches, no changes. Inbox quiet (no new threads). GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); cos-r26-069mz-bas (EVALUATE) due 10/30.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
