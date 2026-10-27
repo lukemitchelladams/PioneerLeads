@@ -943,6 +943,30 @@
       "verdict": "WATCH",
       "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
       "at": "2026-10-27T06:26:07+00:00"
+    },
+    "bidnet:2720966072": {
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (BidNet mirror of SAM 5627ee97 / GovTribe 8f0e3b72)",
+      "verdict": "WATCH",
+      "why": "WATCH (alias): BidNet mirror of the SAM notice; asbestos abatement NAICS 562910, due 2026-10-28; CRM-tracked; not our trade. No action.",
+      "at": "2026-10-27T07:25:11+00:00"
+    },
+    "bidnet:2720978057": {
+      "name": "VA 666-27-102 Z2DA Lightning Protection Update B71N (BidNet mirror; Colorado, due 2026-10-30)",
+      "verdict": "NO",
+      "why": "NO: VA Grand Junction (station 666) lightning-protection system construction (PSC Z2DA); specialty UL 96A / LPI-certified installer work, not our trades (HVAC/plumbing/electrical/facilities/grounds/janitorial). Not a scraper profile match.",
+      "at": "2026-10-27T07:25:11+00:00"
+    },
+    "bidnet:2721007382": {
+      "name": "VA 666-27-102 Z2DA Lightning Protection Update B71N (BidNet mirror; Wyoming listing, due 2026-11-27)",
+      "verdict": "NO",
+      "why": "NO: VA Grand Junction (station 666) lightning-protection system construction (PSC Z2DA); specialty UL 96A / LPI-certified installer work, not our trades (HVAC/plumbing/electrical/facilities/grounds/janitorial). Not a scraper profile match.",
+      "at": "2026-10-27T07:25:11+00:00"
+    },
+    "bidnet:2721014012": {
+      "name": "Fort Carson ICIDS Sources Sought Notice (BidNet mirror; due 2026-11-05)",
+      "verdict": "NO",
+      "why": "NO: Army sources-sought (market research only, no award) for the Integrated Commercial Intrusion Detection System at Fort Carson; DoD-certified security-system integrator work, not our trades. Not a scraper profile match.",
+      "at": "2026-10-27T07:25:11+00:00"
     }
   },
   "watched": {
@@ -1128,5 +1152,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T06:26:07+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 3rd hour). HQ 05:36Z scan: 5 NEW SAM matches triaged (3x Navy pulley-assembly repair NO, DLA groove pulley NO, USFS bunkhouse asbestos SAM-id alias WATCH). Inbox: nothing new."
+  "last_hourly_check": "2026-10-27T07:25:11+00:00 | GovTribe still BLOCKED (4th hour). HQ 06:36Z scan: 1 NEW match = BidNet mirror of USFS bunkhouse asbestos (WATCH alias); 3 non-matching BidNet federal mirrors recorded NO (VA lightning protection x2, Fort Carson ICIDS sources sought); 1 change = VA TENS (already NO) closing 10/30->11/02. Inbox: nothing new."
 }
