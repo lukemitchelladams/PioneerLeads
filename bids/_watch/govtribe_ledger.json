@@ -1098,5 +1098,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T03:26:46+00:00 | GovTribe CO state/local posted>=10/26: 0 new; federal CO 4 (all triaged); PSC 4 (all triaged); watched 20 re-pulled, no due/updated_at change; inbox: nothing new (Brad/Alex/BidNet threads already seen)"
+  "last_hourly_check": "2026-10-27T04:23:53+00:00 | GovTribe BLOCKED: API returned ACCOUNT_CANCELLED (federal) and UPGRADE_REQUIRED (state/local) at 04:23Z; subscription inactive, account 6ad598cb5326f545600f508c. No CO/federal/PSC review or watched re-pull this hour. Inbox: nothing new."
 }
