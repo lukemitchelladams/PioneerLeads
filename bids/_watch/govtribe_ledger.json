@@ -1015,6 +1015,12 @@
       "verdict": "NO",
       "why": "NO: federal crane replacement/overhaul (USAF Vandenberg / Navy CSO low-level cranes); construction + crane OEM work, not a Jones Bearing product; matched only on the 'pulley/bearing' keywords. New documents posted 2026-10-27 are irrelevant.",
       "at": "2026-10-27T13:34:13+00:00"
+    },
+    "d637ce3f46ee458e835243c74d5a2a42": {
+      "name": "DLA SPE4A627RX106 31--BEARING, BALL, ANNULAR (Combined Synopsis/Solicitation, due 2026-11-13)",
+      "verdict": "NO",
+      "why": "NO: DLA NSN ball-bearing RFQ (PSC 3110, mil-spec/approved-source); not a Jones Bearing product line; no quantity in hand (rule 9). Dad reviews DIBBS RFQs himself from the local-runner list.",
+      "at": "2026-10-27T14:29:25+00:00"
     }
   },
   "watched": {
@@ -1200,6 +1206,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T13:34:13+00:00 | GovTribe still BLOCKED (10th hour). HQ 12:46Z scan: 4 NEW SAM matches = Navy NSN ball-bearing presolicitations (all NO); 3 changed = new docs on crane/boat-trailer items already NO (2 crane notices added to ledger as NO). SAM count 92 (API reach 404 but list refreshed). Inbox: new H2 message 13:18Z (read this hour).",
+  "last_hourly_check": "2026-10-27T14:29:25+00:00 | GovTribe still BLOCKED (11th hour). HQ 14:04Z scan: 1 NEW SAM match = DLA ball bearing (NO). HQ commit 847862b: Parker 26-028 marked submitted, Brighton outreach sent, CEO plan.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
