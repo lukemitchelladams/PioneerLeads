@@ -1,15 +1,15 @@
-# Bid watch report — 2026-10-27T12:46:14+00:00
+# Bid watch report — 2026-10-27T14:04:16+00:00
 
-**Headline:** 4 NEW matching bids; 3 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 595 | BUYER 396, AGGREGATE 200 | 82 | 2026-10-27T12:46:14+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T12:46:14+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 92 |  | 92 | 2026-10-27T12:46:14+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 595 | BUYER 396, AGGREGATE 200 | 82 | 2026-10-27T14:04:16+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T14:04:16+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 93 |  | 93 | 2026-10-27T14:04:16+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,16 +26,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-01 (35d) |  | https://sam.gov/workspace/contract/opp/c29f795658414ef49624fb7d3557091f/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS | 2026-12-02 (36d) |  | https://sam.gov/workspace/contract/opp/88fae747c268450babe6750b67aa4350/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-02 (36d) |  | https://sam.gov/workspace/contract/opp/66114240b6ce43ff9ba45be3c2624fe1/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS | 2026-12-03 (37d) |  | https://sam.gov/workspace/contract/opp/9efac20ee41241b4ba84f3c89f59d96d/view |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Self Propelled Boat Trailer - USCG SEC Long Island Sound** (samgov): NEW DOCUMENTS (addendum?): 20b74a17fb6e415dbb8e4afe5b495f54, 2e00591ce451497e98cd09df1693e8a1, 5361ddf3a9d74ad9ab337bfee97eea8d, 93db8f284de948acbe9bfb91e88d36a4, e0515e38d7e6456eb00c759a94557ebe, ff6e920b63df43b9a4029bc610fdd46a — https://sam.gov/workspace/contract/opp/e983271f59ed4af98747b1aea45eeeae/view
-- **Vandenberg Crane Replacement** (samgov): NEW DOCUMENTS (addendum?): 2bdabe58e06a4fa3a73b7afd89faec59, 46e4891a0d1845f38221335a1db7c3e8, 57fe3ddd04604debbfc681dda3ad8720, 5b5c76d8de314eddad63615524992a0a, 61590f07642b4caab792e5e88543cec0, 6c906e06f40d4dff8e62b417f8dc6dac, 79cc826a989843719dd77b074c698cc5, 9d28dcffc6df40009b7c2eea72858a84, a2553426ff1a4fe7853fdff6085a — https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389 — https://sam.gov/workspace/contract/opp/d482864e35ad486a91225ac6bba8ff8e/view
+| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  BEARING, BALL, ANNULAR | 2026-11-13 (17d) |  | https://sam.gov/workspace/contract/opp/d637ce3f46ee458e835243c74d5a2a42/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -80,7 +71,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (143)
+## All open matching bids, excluding DIBBS parts RFQs (144)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -188,6 +179,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Town of Superior | Town of Superior - Irrigation tank floating cover replacement | 2026-11-13 (17d) | 2026-10-22 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view |
 | brownbison WATCHED | bidnet |  | Station One Janitorial Services | 2026-11-13 (17d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view |
+| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  BEARING, BALL, ANNULAR | 2026-11-13 (17d) |  | https://sam.gov/workspace/contract/opp/d637ce3f46ee458e835243c74d5a2a42/view |
 | brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-16 (20d) | 2026-10-26 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (20d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (20d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
