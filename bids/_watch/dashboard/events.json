@@ -39,7 +39,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -12.68
+  "days_left": -12.69
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -4.43
+  "days_left": -4.44
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -165,7 +165,7 @@
   "note": "27J speaker cabling",
   "critical": false,
   "past": true,
-  "days_left": -3.43
+  "days_left": -3.44
  },
  {
   "key": "sd27j-2021brrhs|Questions due|2026-10-23T15:00:00-06:00",
@@ -179,7 +179,7 @@
   "note": "Email emorales@sd27j.net; 4 questions drafted",
   "critical": false,
   "past": true,
-  "days_left": -3.43
+  "days_left": -3.44
  },
  {
   "key": "littleton-2126|Sub answers due|2026-10-23T17:00:00-06:00",
@@ -291,7 +291,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": false,
-  "days_left": 0.32
+  "days_left": 0.31
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -417,7 +417,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.57
+  "days_left": 6.56
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -431,7 +431,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.57
+  "days_left": 6.56
  },
  {
   "key": "dougco-janitorial|Submission|2026-11-02T15:00:00-07:00",
@@ -448,18 +448,18 @@
   "days_left": 6.61
  },
  {
-  "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T00:00:00-07:00",
+  "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
   "bid": "access-control-oncall",
-  "when": "2026-11-03T00:00:00-07:00",
+  "when": "2026-11-03T12:00:00-07:00",
   "date": "2026-11-03",
   "kind": "Pre-bid (optional)",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 0000437039",
+  "agency": "City and County of Denver, Denver Human Services (Facilities Safety & Security)",
+  "sol": "RFP No. FS/CA/FSS_AccessControl_2026 (BidNet 0000437039)",
   "decision": "EVALUATE",
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.98
+  "days_left": 7.48
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -501,7 +501,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 10.57
+  "days_left": 10.56
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -515,7 +515,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 13.57
+  "days_left": 13.56
  },
  {
   "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
@@ -529,7 +529,7 @@
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": false,
-  "days_left": 14.55
+  "days_left": 14.54
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -543,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.57
+  "days_left": 16.56
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -571,7 +571,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 17.57
+  "days_left": 17.56
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -585,7 +585,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 20.57
+  "days_left": 20.56
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -599,7 +599,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.57
+  "days_left": 20.56
  },
  {
   "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
@@ -627,7 +627,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.57
+  "days_left": 23.56
  },
  {
   "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
@@ -635,8 +635,8 @@
   "when": "2026-11-19T15:30:00-07:00",
   "date": "2026-11-19",
   "kind": "Submission",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 0000437039",
+  "agency": "City and County of Denver, Denver Human Services (Facilities Safety & Security)",
+  "sol": "RFP No. FS/CA/FSS_AccessControl_2026 (BidNet 0000437039)",
   "decision": "EVALUATE",
   "note": "BidNet",
   "critical": true,
@@ -655,7 +655,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 24.57
+  "days_left": 24.56
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -669,7 +669,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 24.57
+  "days_left": 24.56
  },
  {
   "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
@@ -683,7 +683,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.57
+  "days_left": 27.56
  },
  {
   "key": "cos-oncall-snow|Submission|2026-11-23T14:00:00-07:00",
@@ -697,7 +697,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 27.57
+  "days_left": 27.56
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -725,6 +725,6 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 35.57
+  "days_left": 35.56
  }
 ]
