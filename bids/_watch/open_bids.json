@@ -12933,7 +12933,7 @@
       "department": "Engineering/Public Works",
       "first_seen": "2026-10-20T01:55:32+00:00",
       "id": "parkeronline-256147",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "org": "parkeronline",
       "profiles": [],
       "sol": "26-027",
@@ -12949,7 +12949,7 @@
       "department": "Engineering/Public Works",
       "first_seen": "2026-10-20T01:55:32+00:00",
       "id": "parkeronline-256170",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "org": "parkeronline",
       "profiles": [],
       "sol": "26-020",
@@ -13756,7 +13756,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "02fdc748f70d471abfba3cc6f8ac5a06",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -13782,7 +13782,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "031da2a2b09f4488ae95045518da7098",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333318",
       "office_state": "MT",
       "profiles": [
@@ -13808,7 +13808,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "0d14aaae78a449d6bbb4cd00cd6d6ae8",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333998",
       "office_state": "PA",
       "profiles": [
@@ -13884,7 +13884,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "0f9b38e12f184fadbb459e087e00963d",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238210",
       "profiles": [
         "brownbison"
@@ -13910,7 +13910,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "10b03ac3597744dd9017bde2032a1fe3",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -13941,7 +13941,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "156ee7b93b084524895a20bab5d2ad6e",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "2213",
       "profiles": [
         "jones-bearing"
@@ -13966,7 +13966,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "16deb1d14ac142dab0b25a8626e03bd1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "office_state": "OH",
       "profiles": [
@@ -13992,7 +13992,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "18cf8e050c6a40bca486f7516b646cfc",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "office_state": "TN",
       "profiles": [
@@ -14019,7 +14019,7 @@
       "documents": [],
       "first_seen": "2026-10-20T13:37:27+00:00",
       "id": "22eaa5d5e7164f03802e778ff9432ce1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332710",
       "profiles": [
         "jones-bearing"
@@ -14044,7 +14044,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "2418a9db688d494abb607d1a8fe88058",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -14076,7 +14076,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "24ffa6d27a674212a41ade72d91ec106",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333998",
       "profiles": [
         "jones-bearing"
@@ -14102,7 +14102,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "27f7957d875a4ed38ec818b1a4afb863",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14128,7 +14128,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "2b0011c68733402aace4b0a7d9dd8487",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -14154,7 +14154,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "2c6baa53c8054e3298082a09ae3a7b5f",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14180,7 +14180,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "2e6249880c22476b9c98dc249949456f",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14205,7 +14205,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "2fa822e893384a93bccb65cb8ac7aea4",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -14231,7 +14231,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "33bd86866d1946769ed093ca7a1ec653",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "334510",
       "office_state": "CO",
       "profiles": [
@@ -14319,7 +14319,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "3a25347065dc4abab033df330d536ef2",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -14344,7 +14344,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "43f8eba89d094b2ab3ca72a4e1e2737e",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "office_state": "PA",
       "profiles": [
@@ -14371,7 +14371,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "463e2a5bc1914bc9927e6fc663c61e2a",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14396,7 +14396,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "498039a792b2415ca237b1f25185acfd",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "33399",
       "office_state": "DC",
       "profiles": [
@@ -14452,7 +14452,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "4d0d75c8e5a44e54ad59972a249ec55e",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238350",
       "profiles": [
         "brownbison"
@@ -14478,7 +14478,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "524e3ee049b94affaffedd261c4dc139",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14553,7 +14553,7 @@
       ],
       "first_seen": "2026-10-26T20:36:08+00:00",
       "id": "52b4c80711934b99835162c13180bf40",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "334510",
       "profiles": [
         "brownbison"
@@ -14578,7 +14578,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "54da6291bed54524833884f578079494",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238220",
       "office_state": "CO",
       "profiles": [
@@ -14604,7 +14604,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "5627ee97e4ce40e2af289e42601e4afb",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "562910",
       "office_state": "UT",
       "profiles": [
@@ -14630,7 +14630,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "57e9a121061b4dba862dca1b8ffbc5b1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "office_state": "PA",
       "profiles": [
@@ -14670,7 +14670,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "5988a90b5fb94514a89cebc7362a22b5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "profiles": [
         "brownbison"
@@ -14695,7 +14695,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "5bccbbc922a04630af786e240403e306",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "811210",
       "office_state": "CO",
       "profiles": [
@@ -14721,7 +14721,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "5bf1391766b64cec84fbea012633435f",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238220",
       "office_state": "CO",
       "profiles": [
@@ -14748,7 +14748,7 @@
       "documents": [],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "5eab430c39444c279a8cc451a662092d",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14773,7 +14773,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "62a1e06ab30245fe93fc3e0c4caaf443",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -14799,7 +14799,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "63972a264f804080ad2082f0fe279f1a",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "336611",
       "office_state": "OH",
       "profiles": [
@@ -14826,7 +14826,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "66114240b6ce43ff9ba45be3c2624fe1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14877,7 +14877,7 @@
       ],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "66f6d2a7bd984472b9e573b3df0e56f7",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "profiles": [
         "brownbison"
@@ -14902,7 +14902,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "6ab91dd8bf824b2fbfa32476c810d7be",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238210",
       "office_state": "CO",
       "profiles": [
@@ -14928,7 +14928,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "6ca3b23ebf3b46babe2a7cab9a925893",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "336412",
       "office_state": "OK",
       "profiles": [
@@ -14955,7 +14955,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "6ef9cebf1ae54094b375118b99c31867",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14990,7 +14990,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6f56f057778f4477a61f3cf648febca5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "33399",
       "profiles": [
         "jones-bearing"
@@ -15015,7 +15015,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6f774aa5d21848aa9a0121a4b2293ab9",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332710",
       "office_state": "NY",
       "profiles": [
@@ -15075,7 +15075,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6ff2139e1e4e4f9a8ea52133c377ebb0",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238350",
       "profiles": [
         "brownbison"
@@ -15100,7 +15100,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "71ac218ba63c4668b2b3129557fcdeb5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238350",
       "office_state": "CO",
       "profiles": [
@@ -15127,7 +15127,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "7534801e9e1940b4a1ce3bda0bc642a5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15158,7 +15158,7 @@
       ],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "769e7021c09444ef942325ad392d8628",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -15183,7 +15183,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "77f43d75da58449f8d622ac857d2ff4b",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "office_state": "PA",
       "profiles": [
@@ -15210,7 +15210,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "7872b54a0d4547a78d839266d5c8fba5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15236,7 +15236,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "7a6f641b2ccc4be7aa8e283cb9a2e90b",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15271,7 +15271,7 @@
       ],
       "first_seen": "2026-10-20T14:36:10+00:00",
       "id": "83f8e4293685404da1e09c1d43a81204",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "336413",
       "profiles": [
         "jones-bearing"
@@ -15297,7 +15297,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "881be8c69a194a7da24919cce13b25e5",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333922",
       "profiles": [
         "jones-bearing"
@@ -15323,7 +15323,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "88fae747c268450babe6750b67aa4350",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15354,7 +15354,7 @@
       ],
       "first_seen": "2026-10-26T18:36:34+00:00",
       "id": "8ccf3c647f414b7ea5cbb513ccfb51c9",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "336413",
       "profiles": [
         "jones-bearing"
@@ -15379,7 +15379,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "8f0e3b72596a4714a555ecd5eb0e899b",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "562910",
       "office_state": "UT",
       "profiles": [
@@ -15406,7 +15406,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "97d4df5ffe0f47ce9a9e19bf923de773",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333924",
       "profiles": [
         "jones-bearing"
@@ -15431,7 +15431,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "9a80372ece404f7a91ca3e9e5646e62d",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "office_state": "UT",
       "profiles": [
@@ -15458,7 +15458,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "9eb8d0f698424e2e8a46b5475dcf4d7c",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -15483,7 +15483,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "9ede66cb08524a8a8c18d5308544eafd",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "334510",
       "office_state": "CO",
       "profiles": [
@@ -15510,7 +15510,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "9efac20ee41241b4ba84f3c89f59d96d",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15535,7 +15535,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "a5a251d4a06b421cbc48f7e23692ae11",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -15562,7 +15562,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "b05bd8d70d204cf3a0903cc3a05934a6",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15588,7 +15588,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "b102b927e1eb45a099793120873e02d1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15613,7 +15613,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "b240a8fc08d548528f9f1352d779d9ad",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "office_state": "AL",
       "profiles": [
@@ -15640,7 +15640,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "b8d42df049264aef86019c9aa4e691c8",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15666,7 +15666,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "bd849c41a0ea48998a630786a4e39113",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -15691,7 +15691,7 @@
       "documents": [],
       "first_seen": "2026-10-20T20:36:37+00:00",
       "id": "be527e8411824dd29e4a764a91ab32a6",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "office_state": "UT",
       "profiles": [
@@ -15717,7 +15717,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "be6616960717497f9236f22b316808fa",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333612",
       "office_state": "OH",
       "profiles": [
@@ -15749,7 +15749,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "c197c44e343742a5adde5688821f5075",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238220",
       "profiles": [
         "brownbison"
@@ -15775,7 +15775,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "c29f795658414ef49624fb7d3557091f",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15826,7 +15826,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "c714c6130b9d40d0991dbbe1815c37f3",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333922",
       "profiles": [
         "jones-bearing"
@@ -15851,7 +15851,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "c99d773036a64c7d86fbd42c65a1a4d6",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -15878,7 +15878,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "cae0c7421ecd424c8a3aa668045ddfe1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15909,7 +15909,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "cd2b3215a98141c785653c97c2c0aa78",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "811210",
       "profiles": [
         "brownbison"
@@ -15934,7 +15934,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "cebf798f5c9c4ac7ae52a23a5c6af7c6",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333998",
       "office_state": "PA",
       "profiles": [
@@ -15960,7 +15960,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "d20097c1616d47c7833927894d6850b7",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -15986,7 +15986,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "d2d51b2fbfc1498dae68cd611c30064a",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -16018,7 +16018,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "d482864e35ad486a91225ac6bba8ff8e",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -16044,7 +16044,7 @@
       "documents": [],
       "first_seen": "2026-10-27T14:04:16+00:00",
       "id": "d637ce3f46ee458e835243c74d5a2a42",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16070,7 +16070,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "d9e769af7e6349b8a28f9fbcf5d71cba",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16095,7 +16095,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "d9fd453b9fd045f8b78e1bb9d511d1cd",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -16122,7 +16122,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "da984b4f70fd412d924e9c830a2c3299",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -16161,7 +16161,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "db1cb44b650f4cdc892299917c04adf9",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "2213",
       "profiles": [
         "jones-bearing"
@@ -16200,7 +16200,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "db84deebdb884ada854ec83ee9a6235c",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238220",
       "profiles": [
         "brownbison"
@@ -16225,7 +16225,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "dccd5b89612545bf88341d486f74a396",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -16252,7 +16252,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "e63d86aa73b34b0ca47a59fbfaa8ba09",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16283,7 +16283,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "e7220f8924254f4fac1a83a72708bba1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16334,7 +16334,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "e983271f59ed4af98747b1aea45eeeae",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -16359,7 +16359,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "eb19e0c129334ba3adb062afc3c5c764",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238220",
       "office_state": "CO",
       "profiles": [
@@ -16391,7 +16391,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "eea50eb876044089a54c01f641e9c9be",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16416,7 +16416,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "ef42fcf29ca7449db6a4146acf468d19",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -16442,7 +16442,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "f09596ebe7514beda8c1522bd0d664fb",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -16469,7 +16469,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "f421756d4dbd482bae39b05d4208ff7d",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -16495,7 +16495,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "f559aac3b6c24f9e8cafa16f94df8be1",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16526,7 +16526,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "fc84984eaeee410897734ba17d6782ed",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "336412",
       "profiles": [
         "jones-bearing"
@@ -16557,7 +16557,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "ffa761b91c61460291c74cf744e8a792",
-      "last_seen": "2026-10-27T17:36:14+00:00",
+      "last_seen": "2026-10-27T18:36:19+00:00",
       "naics": "561720",
       "profiles": [
         "brownbison"
@@ -16576,5 +16576,5 @@
       "watched": false
     }
   },
-  "scanned_at": "2026-10-27T17:36:14+00:00"
+  "scanned_at": "2026-10-27T18:36:19+00:00"
 }

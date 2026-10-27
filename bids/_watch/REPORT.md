@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-27T17:36:14+00:00
+# Bid watch report — 2026-10-27T18:36:19+00:00
 
 **Headline:** BLIND: bidnet; not scanned this run (previous results kept): dibbs
 
@@ -8,8 +8,8 @@
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
 | bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-10-27T14:51:39+00:00; COOL-DOWN after a robot check, until 2026-10-27T18:53:28+00:00 | 595 |  | 82 | 2026-10-27T14:51:39+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T17:36:14+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 93 |  | 93 | 2026-10-27T17:36:14+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 0 | 2026-10-27T18:36:19+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 93 |  | 93 | 2026-10-27T18:36:19+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
