@@ -1152,5 +1152,5 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T09:24:34+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 6th hour); no CO/federal/PSC review or watched re-pull. HQ 08:35Z scan: nothing new/changed. Inbox: nothing new."
+  "last_hourly_check": "2026-10-27T10:23:14+00:00 | GovTribe still BLOCKED (ACCOUNT_CANCELLED/UPGRADE_REQUIRED, 7th hour); no CO/federal/PSC review or watched re-pull. HQ 09:36Z scan: nothing new/changed. Inbox: 1 new automated DMARC report (ignored)."
 }
