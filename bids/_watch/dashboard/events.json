@@ -1,19 +1,5 @@
 [
  {
-  "key": "cos-r26-069mz-bas|Pre-bid (optional)|2026-09-25T13:00:00-06:00",
-  "bid": "cos-r26-069mz-bas",
-  "when": "2026-09-25T13:00:00-06:00",
-  "date": "2026-09-25",
-  "kind": "Pre-bid (optional)",
-  "agency": "City of Colorado Springs",
-  "sol": "R26-069MZ",
-  "decision": "EVALUATE",
-  "note": "",
-  "critical": false,
-  "past": true,
-  "days_left": -32.89
- },
- {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
   "bid": "dcsd-003-27",
   "when": "2026-10-14T09:00:00-06:00",
@@ -25,21 +11,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -14.06
- },
- {
-  "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
-  "bid": "jeffco-dome-glass",
-  "when": "2026-10-15T10:00:00-06:00",
-  "date": "2026-10-15",
-  "kind": "Pre-bid (optional)",
-  "agency": "Jefferson County Facilities",
-  "sol": "26-18863AP-FM",
-  "decision": "EVALUATE",
-  "note": "",
-  "critical": false,
-  "past": true,
-  "days_left": -13.02
+  "days_left": -14.07
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -53,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -8.85
+  "days_left": -8.86
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -67,21 +39,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -8.02
- },
- {
-  "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
-  "bid": "jeffco-dome-glass",
-  "when": "2026-10-21T10:00:00-06:00",
-  "date": "2026-10-21",
-  "kind": "Questions due",
-  "agency": "Jefferson County Facilities",
-  "sol": "26-18863AP-FM",
-  "decision": "EVALUATE",
-  "note": "Ask Andrew Pulford whether we can still bid",
-  "critical": false,
-  "past": true,
-  "days_left": -7.02
+  "days_left": -8.03
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -95,7 +53,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -7.02
+  "days_left": -7.03
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -109,7 +67,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -5.81
+  "days_left": -5.82
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -119,11 +77,11 @@
   "kind": "RSVP due",
   "agency": "Metro Water Recovery",
   "sol": "RFP B26019",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -4.85
+  "days_left": -4.86
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -132,12 +90,12 @@
   "date": "2026-10-26",
   "kind": "Pre-bid (optional)",
   "agency": "Jefferson County",
-  "sol": "not in hand",
-  "decision": "EVALUATE",
+  "sol": "ITB 26-19289AP-FM",
+  "decision": "GO",
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -2.02
+  "days_left": -2.03
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -151,7 +109,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -1.85
+  "days_left": -1.86
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -165,7 +123,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -1.8
+  "days_left": -1.81
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -175,11 +133,11 @@
   "kind": "Site visit (optional)",
   "agency": "Metro Water Recovery",
   "sol": "RFP B26019",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "Hite facility",
   "critical": false,
   "past": true,
-  "days_left": -1.06
+  "days_left": -1.07
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -193,7 +151,7 @@
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
   "past": true,
-  "days_left": -1.02
+  "days_left": -1.03
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Package downloaded|2026-10-27T15:36:00-06:00",
@@ -203,36 +161,8 @@
   "kind": "Package downloaded",
   "agency": "Arapahoe County",
   "sol": "RFP 26-57 (BidNet 0000441680)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "RFP 26-57 + Attachment A irrigation spec + Attachment B site-visit map in downloads/bidnet/0000441680. Mandatory site visit 2026-11-10 10:00, RSVP to Katie Schwindt.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.79
- },
- {
-  "key": "larimer-jail-fire-alarm|Package downloaded|2026-10-27T15:36:00-06:00",
-  "bid": "larimer-jail-fire-alarm",
-  "when": "2026-10-27T15:36:00-06:00",
-  "date": "2026-10-27",
-  "kind": "Package downloaded",
-  "agency": "Larimer County",
-  "sol": "Q26-09 (BidNet 0000441715)",
-  "decision": "EVALUATE",
-  "note": "Q26-09 RFQ + Attachment A PSA in downloads/bidnet/0000441715. Due 11/6 10:00 MT; VESDA (Xtralis/Honeywell) certification required.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.79
- },
- {
-  "key": "dougco-structured-cabling|Package downloaded|2026-10-27T15:36:00-06:00",
-  "bid": "dougco-structured-cabling",
-  "when": "2026-10-27T15:36:00-06:00",
-  "date": "2026-10-27",
-  "kind": "Package downloaded",
-  "agency": "Douglas County Government",
-  "sol": "RFQ 043-26 (BidNet 0000441695)",
-  "decision": "EVALUATE",
-  "note": "RFQ 043-26 + Exhibit A contract in downloads/bidnet/0000441695. Due 12/3 15:00; no pre-bid.",
   "critical": false,
   "past": true,
   "days_left": -0.79
@@ -259,25 +189,11 @@
   "kind": "Package downloaded",
   "agency": "City of Fort Collins",
   "sol": "ITB 10366 (BidNet 0000439726)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "ITB 10366 + drawings + specs in downloads/bidnet/0000439726. Pre-bid/job walk 11/2 15:00 (optional); due 12/2 15:00; bonds + Davis-Bacon.",
   "critical": false,
   "past": true,
-  "days_left": -0.7
- },
- {
-  "key": "littleton-garage-doors|Package downloaded|2026-10-27T17:36:00-06:00",
-  "bid": "littleton-garage-doors",
-  "when": "2026-10-27T17:36:00-06:00",
-  "date": "2026-10-27",
-  "kind": "Package downloaded",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Garage Door Repairs (BidNet 0000440827)",
-  "decision": "EVALUATE",
-  "note": "RFQ + contract forms in downloads/bidnet/0000440827. Mandatory pre-proposal 11/3 14:00; due 11/24 12:00; $100k P&P bond; $100k/yr pool.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.7
+  "days_left": -0.71
  },
  {
   "key": "cos-parks-irrigation-oncall|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -287,53 +203,11 @@
   "kind": "Package downloaded",
   "agency": "City of Colorado Springs",
   "sol": "RFP R26-099MZ (BidNet 0000441782)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "RFP R26-099MZ in downloads/bidnet/0000441782. Optional pre-proposal 11/6; due 12/2 14:00; hourly rate sheet.",
   "critical": false,
   "past": true,
-  "days_left": -0.7
- },
- {
-  "key": "dougco-alarm-monitoring|Package downloaded|2026-10-27T19:36:00-06:00",
-  "bid": "dougco-alarm-monitoring",
-  "when": "2026-10-27T19:36:00-06:00",
-  "date": "2026-10-27",
-  "kind": "Package downloaded",
-  "agency": "Douglas County Government",
-  "sol": "IFB 044-26 (BidNet 0000441803)",
-  "decision": "EVALUATE",
-  "note": "IFB 044-26 + Exhibit B in downloads/bidnet/0000441803. Due 12/3 14:00 MST; no pre-bid; questions by 11/6.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.62
- },
- {
-  "key": "littleton-pedestrian-doors|decision|2026-10-28T08:22:00+00:00",
-  "bid": "littleton-pedestrian-doors",
-  "when": "2026-10-28T08:22:00+00:00",
-  "date": "2026-10-28",
-  "kind": "decision",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-  "decision": "EVALUATE",
-  "note": "EVALUATE. Untracked Littleton on-call pedestrian door RFQ found in scanner pre-bid table; optional pre-bid 11/04, due 11/24 12:00 MT (BidNet). Watchlisted for package download.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.34
- },
- {
-  "key": "littleton-pedestrian-doors|package|2026-10-28T10:22:00+00:00",
-  "bid": "littleton-pedestrian-doors",
-  "when": "2026-10-28T10:22:00+00:00",
-  "date": "2026-10-28",
-  "kind": "package",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-  "decision": "EVALUATE",
-  "note": "Package downloaded and read. Pre-proposal 11/04 15:00 MT at Littleton Center, NOT mandatory; questions 11/09 12:00; due 11/24 12:00 MT via RMEPS; $100k/yr pool, $100,000 P&P bond, 2-hr emergency response.",
-  "critical": false,
-  "past": true,
-  "days_left": -0.25
+  "days_left": -0.71
  },
  {
   "key": "brighton-26-500209|outreach|2026-10-28T14:04:00+00:00",
@@ -347,7 +221,7 @@
   "note": "Delivery delayed on the 10/27 pricing request to Rock Solid (ryan@rocksolidhs.com): recipient mailbox out of storage (452 4.2.2). Gmail retries until Fri 10/30 06:55 PDT. Treat Rock Solid as unreached; Luke should call them.",
   "critical": false,
   "past": true,
-  "days_left": -0.1
+  "days_left": -0.11
  },
  {
   "key": "cdoc-tcf-boiler-water|sub-pricing|2026-10-28T15:20:00+00:00",
@@ -375,7 +249,7 @@
   "note": "Hourly scan added 4 backup HVAC candidates + 4 Greeley phone-only firms to sub-outreach.md (HQ had already emailed 7 firms at 09:1x MT; pricing asked for by 11/12; MANDATORY walk 11/05 09:00).",
   "critical": false,
   "past": true,
-  "days_left": -0.03
+  "days_left": -0.04
  },
  {
   "key": "weld-jail-rtu-b2600111|package|2026-10-28T16:00:00+00:00",
@@ -389,7 +263,7 @@
   "note": "Specs read: MANDATORY pre-bid 11/05 09:00 confirmed in the document; questions 11/12 10:00; due 11/19 10:00 (email bids preferred); no bid bond; 100% P&P bond over $50k; no Davis-Bacon; licensed trades; MAU-to-RTU replacement on existing curb. Forward specs to subs.",
   "critical": false,
   "past": true,
-  "days_left": -0.02
+  "days_left": -0.03
  },
  {
   "key": "bidnet-0000441189|prebid|2026-10-28T16:00:00+00:00",
@@ -403,7 +277,7 @@
   "note": "BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 03:00 PM MST, Grandview Elementary School'. Roofing (Weld RE-4 RFP 27-02): outside core trades, same call as Morgan roof. DECIDE with Luke before 11/04.",
   "critical": false,
   "past": true,
-  "days_left": -0.02
+  "days_left": -0.03
  },
  {
   "key": "bidnet-0000441668|prebid|2026-10-28T16:00:00+00:00",
@@ -417,7 +291,7 @@
   "note": "BidNet: 'Onsite Visit, Attendance Mandatory, 11/03/2026 12:00 PM MST, 7375 S. Potomac St. Centennial'. Arapahoe County RFP 26-53 security electronics maintenance (due 11/25 14:00): low-voltage sub needed; same day as Denver access-control walk and Littleton garage walk.",
   "critical": false,
   "past": true,
-  "days_left": -0.02
+  "days_left": -0.03
  },
  {
   "key": "bidnet-0000441807|prebid|2026-10-28T16:00:00+00:00",
@@ -431,7 +305,7 @@
   "note": "BidNet: pre-bid 2026-10-30, not mandatory. Ash tree treatment needs a licensed applicator sub.",
   "critical": false,
   "past": true,
-  "days_left": -0.02
+  "days_left": -0.03
  },
  {
   "key": "arvada-oncall-gc|decision|2026-10-28T16:00:00+00:00",
@@ -445,7 +319,7 @@
   "note": "EVALUATE. Arvada on-call GC services (26-FAC-055) due 11/17 14:00; pre-bid unknown until the PDF is read; watchlisted.",
   "critical": false,
   "past": true,
-  "days_left": -0.02
+  "days_left": -0.03
  },
  {
   "key": "bidnet-0000441668|prebid|2026-10-28T16:30:00+00:00",
@@ -458,8 +332,8 @@
   "decision": "EVALUATE",
   "note": "RFP 26-53 read: MANDATORY pre-solicitation 11/03 12:00 at the Arapahoe Justice Center detention lobby, RSVP to kschwindt@arapahoegov.com, valid ID, max 3 people; CJIS-certified staff, 4-hr critical response, Avigilon/Omron systems. Luke must RSVP and bring a security-electronics sub, or drop it.",
   "critical": false,
-  "past": false,
-  "days_left": 0.0
+  "past": true,
+  "days_left": -0.0
  },
  {
   "key": "bidnet-0000441189|decision|2026-10-28T16:30:00+00:00",
@@ -472,8 +346,8 @@
   "decision": "DECIDE",
   "note": "DECIDE (recommend NO): Grandview Elementary roof RFP 27-02 is a $1,200,000 roofing project with $500/day LDs and a 100% bondability letter; mandatory walk 11/04 15:00. Roofing is outside our trade list.",
   "critical": false,
-  "past": false,
-  "days_left": 0.0
+  "past": true,
+  "days_left": -0.0
  },
  {
   "key": "morgan-roof-2026-1119-001|Pre-bid (optional)|2026-10-29T10:00:00-06:00",
@@ -487,7 +361,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 0.98
+  "days_left": 0.97
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -501,7 +375,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 1.15
+  "days_left": 1.14
  },
  {
   "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
@@ -546,20 +420,6 @@
   "days_left": 1.56
  },
  {
-  "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
-  "bid": "cos-r26-069mz-bas",
-  "when": "2026-10-30T14:00:00-06:00",
-  "date": "2026-10-30",
-  "kind": "Submission",
-  "agency": "City of Colorado Springs",
-  "sol": "R26-069MZ",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 2.15
- },
- {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
   "bid": "rtd-126dm016",
   "when": "2026-11-02T14:00:00-07:00",
@@ -571,7 +431,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.19
+  "days_left": 5.18
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -581,11 +441,11 @@
   "kind": "Questions due",
   "agency": "Metro Water Recovery",
   "sol": "RFP B26019",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.19
+  "days_left": 5.18
  },
  {
   "key": "fort-collins-transfort-doors|Pre-bid (optional)|2026-11-02T15:00:00-07:00",
@@ -595,25 +455,11 @@
   "kind": "Pre-bid (optional)",
   "agency": "City of Fort Collins",
   "sol": "ITB 10366 (BidNet 0000439726)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.23
- },
- {
-  "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
-  "bid": "access-control-oncall",
-  "when": "2026-11-03T12:00:00-07:00",
-  "date": "2026-11-03",
-  "kind": "Pre-bid (optional)",
-  "agency": "City and County of Denver, Denver Human Services (Facilities Safety & Security)",
-  "sol": "RFP No. FS/CA/FSS_AccessControl_2026 (BidNet 0000437039)",
-  "decision": "EVALUATE",
-  "note": "",
-  "critical": false,
-  "past": false,
-  "days_left": 6.11
+  "days_left": 5.22
  },
  {
   "key": "bidnet-0000441668|MANDATORY pre-bid|2026-11-03T12:00:00-07:00",
@@ -627,35 +473,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 6.11
- },
- {
-  "key": "littleton-garage-doors|MANDATORY pre-bid|2026-11-03T14:00:00-07:00",
-  "bid": "littleton-garage-doors",
-  "when": "2026-11-03T14:00:00-07:00",
-  "date": "2026-11-03",
-  "kind": "MANDATORY pre-bid",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Garage Door Repairs (BidNet 0000440827)",
-  "decision": "EVALUATE",
-  "note": "",
-  "critical": true,
-  "past": false,
-  "days_left": 6.19
- },
- {
-  "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
-  "bid": "jeffco-dome-glass",
-  "when": "2026-11-04T10:00:00-07:00",
-  "date": "2026-11-04",
-  "kind": "Submission",
-  "agency": "Jefferson County Facilities",
-  "sol": "26-18863AP-FM",
-  "decision": "EVALUATE",
-  "note": "Jeffco",
-  "critical": true,
-  "past": false,
-  "days_left": 7.02
+  "days_left": 6.1
  },
  {
   "key": "bidnet-0000440339|Submission|2026-11-04T14:00:00-07:00",
@@ -669,21 +487,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 7.19
- },
- {
-  "key": "littleton-pedestrian-doors|Pre-bid (optional)|2026-11-04T15:00:00-07:00",
-  "bid": "littleton-pedestrian-doors",
-  "when": "2026-11-04T15:00:00-07:00",
-  "date": "2026-11-04",
-  "kind": "Pre-bid (optional)",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-  "decision": "EVALUATE",
-  "note": "",
-  "critical": false,
-  "past": false,
-  "days_left": 7.23
+  "days_left": 7.18
  },
  {
   "key": "bidnet-0000441189|MANDATORY pre-bid|2026-11-04T15:00:00-07:00",
@@ -697,7 +501,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 7.23
+  "days_left": 7.22
  },
  {
   "key": "weld-jail-rtu-b2600111|MANDATORY pre-bid|2026-11-05T09:00:00-07:00",
@@ -711,7 +515,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 7.98
+  "days_left": 7.97
  },
  {
   "key": "dougco-generator-037-26|Submission|2026-11-05T14:00:00-07:00",
@@ -721,11 +525,11 @@
   "kind": "Submission",
   "agency": "Douglas County Government",
   "sol": "IFB 037-26 (BidNet 0000439630)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 8.19
+  "days_left": 8.18
  },
  {
   "key": "bidnet-0000439622|Submission|2026-11-05T14:00:00-07:00",
@@ -739,7 +543,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 8.19
+  "days_left": 8.18
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -763,25 +567,11 @@
   "kind": "Pre-bid (optional)",
   "agency": "City of Colorado Springs",
   "sol": "RFP R26-099MZ (BidNet 0000441782)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 8.98
- },
- {
-  "key": "larimer-jail-fire-alarm|Submission|2026-11-06T10:00:00-07:00",
-  "bid": "larimer-jail-fire-alarm",
-  "when": "2026-11-06T10:00:00-07:00",
-  "date": "2026-11-06",
-  "kind": "Submission",
-  "agency": "Larimer County",
-  "sol": "Q26-09 (BidNet 0000441715)",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 9.02
+  "days_left": 8.97
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -795,7 +585,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 9.19
+  "days_left": 9.18
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -809,21 +599,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 12.19
- },
- {
-  "key": "doi-estes-janitorial|Submission|2026-11-10T00:00:00-07:00",
-  "bid": "doi-estes-janitorial",
-  "when": "2026-11-10T00:00:00-07:00",
-  "date": "2026-11-10",
-  "kind": "Submission",
-  "agency": "Dept. of the Interior (Estes Park)",
-  "sol": "SAM.gov 7b9acd467e25498bbd5add36c25f76da",
-  "decision": "EVALUATE",
-  "note": "SAM.gov",
-  "critical": true,
-  "past": false,
-  "days_left": 12.61
+  "days_left": 12.18
  },
  {
   "key": "arapahoe-south-lawns-irrigation|MANDATORY pre-bid|2026-11-10T10:00:00-07:00",
@@ -833,7 +609,7 @@
   "kind": "MANDATORY pre-bid",
   "agency": "Arapahoe County",
   "sol": "RFP 26-57 (BidNet 0000441680)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "",
   "critical": true,
   "past": false,
@@ -847,11 +623,25 @@
   "kind": "Mandatory site visit",
   "agency": "Poudre School District R-1",
   "sol": "IFB 27-701-002 (BidNet 0000439455)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": false,
-  "days_left": 13.17
+  "days_left": 13.16
+ },
+ {
+  "key": "doi-estes-janitorial|Submission|2026-11-10T15:00:00-07:00",
+  "bid": "doi-estes-janitorial",
+  "when": "2026-11-10T15:00:00-07:00",
+  "date": "2026-11-10",
+  "kind": "Submission",
+  "agency": "Dept. of the Interior (Estes Park)",
+  "sol": "SAM.gov 7b9acd467e25498bbd5add36c25f76da",
+  "decision": "WATCH",
+  "note": "SAM.gov",
+  "critical": true,
+  "past": false,
+  "days_left": 13.22
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -861,11 +651,11 @@
   "kind": "Submission",
   "agency": "Metro Water Recovery",
   "sol": "RFP B26019",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.19
+  "days_left": 15.18
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -879,7 +669,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.23
+  "days_left": 15.22
  },
  {
   "key": "bidnet-0000441807|Submission|2026-11-13T14:00:00-07:00",
@@ -893,7 +683,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 16.19
+  "days_left": 16.18
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -903,11 +693,11 @@
   "kind": "Questions due",
   "agency": "Poudre School District R-1",
   "sol": "IFB 27-701-002 (BidNet 0000439455)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 16.19
+  "days_left": 16.18
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -921,7 +711,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 19.19
+  "days_left": 19.18
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -930,12 +720,12 @@
   "date": "2026-11-16",
   "kind": "Submission",
   "agency": "Jefferson County",
-  "sol": "not in hand",
-  "decision": "EVALUATE",
+  "sol": "ITB 26-19289AP-FM",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 19.19
+  "days_left": 19.18
  },
  {
   "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
@@ -944,8 +734,8 @@
   "date": "2026-11-17",
   "kind": "Submission",
   "agency": "La Plata County",
-  "sol": "BidNet 0000441130",
-  "decision": "EVALUATE",
+  "sol": "26-053-1215 (BidNet 0000441130)",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
@@ -963,7 +753,7 @@
   "note": "BidNet / RMEPS",
   "critical": true,
   "past": false,
-  "days_left": 20.19
+  "days_left": 20.18
  },
  {
   "key": "morgan-roof-2026-1119-001|Submission|2026-11-18T16:00:00-07:00",
@@ -994,34 +784,6 @@
   "days_left": 22.02
  },
  {
-  "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
-  "bid": "carpet-upholstery-fiber",
-  "when": "2026-11-19T14:00:00-07:00",
-  "date": "2026-11-19",
-  "kind": "Submission",
-  "agency": "Agency not in hand",
-  "sol": "BidNet 0000441156",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 22.19
- },
- {
-  "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
-  "bid": "access-control-oncall",
-  "when": "2026-11-19T15:30:00-07:00",
-  "date": "2026-11-19",
-  "kind": "Submission",
-  "agency": "City and County of Denver, Denver Human Services (Facilities Safety & Security)",
-  "sol": "RFP No. FS/CA/FSS_AccessControl_2026 (BidNet 0000437039)",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 22.25
- },
- {
   "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
   "bid": "psd-27-701-002-hood",
   "when": "2026-11-20T14:00:00-07:00",
@@ -1029,11 +791,11 @@
   "kind": "Submission",
   "agency": "Poudre School District R-1",
   "sol": "IFB 27-701-002 (BidNet 0000439455)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.19
+  "days_left": 23.18
  },
  {
   "key": "bidnet-0000441022|Submission|2026-11-20T14:00:00-07:00",
@@ -1047,7 +809,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.19
+  "days_left": 23.18
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -1057,67 +819,39 @@
   "kind": "Due",
   "agency": "Poudre School District R-1",
   "sol": "IFB 27-701-002 (BidNet 0000439455)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 23.19
+  "days_left": 23.18
  },
  {
-  "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
+  "key": "cos-oncall-janitorial|Submission|2026-11-23T14:30:00-07:00",
   "bid": "cos-oncall-janitorial",
-  "when": "2026-11-23T14:00:00-07:00",
+  "when": "2026-11-23T14:30:00-07:00",
   "date": "2026-11-23",
   "kind": "Submission",
   "agency": "City of Colorado Springs",
   "sol": "BidNet 0000441362",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 26.19
+  "days_left": 26.2
  },
  {
-  "key": "cos-oncall-snow|Submission|2026-11-23T14:00:00-07:00",
+  "key": "cos-oncall-snow|Submission|2026-11-23T14:30:00-07:00",
   "bid": "cos-oncall-snow",
-  "when": "2026-11-23T14:00:00-07:00",
+  "when": "2026-11-23T14:30:00-07:00",
   "date": "2026-11-23",
   "kind": "Submission",
   "agency": "City of Colorado Springs",
   "sol": "BidNet 0000441360",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 26.19
- },
- {
-  "key": "littleton-garage-doors|Submission|2026-11-24T12:00:00-07:00",
-  "bid": "littleton-garage-doors",
-  "when": "2026-11-24T12:00:00-07:00",
-  "date": "2026-11-24",
-  "kind": "Submission",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Garage Door Repairs (BidNet 0000440827)",
-  "decision": "EVALUATE",
-  "note": null,
-  "critical": true,
-  "past": false,
-  "days_left": 27.11
- },
- {
-  "key": "littleton-pedestrian-doors|Submission|2026-11-24T12:00:00-07:00",
-  "bid": "littleton-pedestrian-doors",
-  "when": "2026-11-24T12:00:00-07:00",
-  "date": "2026-11-24",
-  "kind": "Submission",
-  "agency": "City of Littleton",
-  "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-  "decision": "EVALUATE",
-  "note": "BidNet / RMEPS",
-  "critical": true,
-  "past": false,
-  "days_left": 27.11
+  "days_left": 26.2
  },
  {
   "key": "bidnet-0000441668|Submission|2026-11-25T14:00:00-07:00",
@@ -1131,7 +865,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 28.19
+  "days_left": 28.18
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -1145,7 +879,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 32.61
+  "days_left": 32.6
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Submission|2026-11-30T14:00:00-07:00",
@@ -1155,11 +889,11 @@
   "kind": "Submission",
   "agency": "Arapahoe County",
   "sol": "RFP 26-57 (BidNet 0000441680)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 33.19
+  "days_left": 33.18
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -1173,7 +907,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 34.19
+  "days_left": 34.18
  },
  {
   "key": "cos-parks-irrigation-oncall|Submission|2026-12-02T14:00:00-07:00",
@@ -1183,11 +917,11 @@
   "kind": "Submission",
   "agency": "City of Colorado Springs",
   "sol": "RFP R26-099MZ (BidNet 0000441782)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 35.19
+  "days_left": 35.18
  },
  {
   "key": "bidnet-0000441189|Submission|2026-12-02T14:00:00-07:00",
@@ -1201,7 +935,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 35.19
+  "days_left": 35.18
  },
  {
   "key": "fort-collins-transfort-doors|Submission|2026-12-02T15:00:00-07:00",
@@ -1211,38 +945,10 @@
   "kind": "Submission",
   "agency": "City of Fort Collins",
   "sol": "ITB 10366 (BidNet 0000439726)",
-  "decision": "EVALUATE",
+  "decision": "GO",
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 35.23
- },
- {
-  "key": "dougco-alarm-monitoring|Submission|2026-12-03T14:00:00-07:00",
-  "bid": "dougco-alarm-monitoring",
-  "when": "2026-12-03T14:00:00-07:00",
-  "date": "2026-12-03",
-  "kind": "Submission",
-  "agency": "Douglas County Government",
-  "sol": "IFB 044-26 (BidNet 0000441803)",
-  "decision": "EVALUATE",
-  "note": null,
-  "critical": true,
-  "past": false,
-  "days_left": 36.19
- },
- {
-  "key": "dougco-structured-cabling|Submission|2026-12-03T15:00:00-07:00",
-  "bid": "dougco-structured-cabling",
-  "when": "2026-12-03T15:00:00-07:00",
-  "date": "2026-12-03",
-  "kind": "Submission",
-  "agency": "Douglas County Government",
-  "sol": "RFQ 043-26 (BidNet 0000441695)",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 36.23
+  "days_left": 35.22
  }
 ]
