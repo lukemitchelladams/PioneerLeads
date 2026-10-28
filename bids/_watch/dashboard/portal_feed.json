@@ -1045,7 +1045,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Generator-Preventative-Maintenance-Repairs-for-Douglas-County-Facilities/0000439630?purchasingGroupId=8409951&origin=1"
  },
