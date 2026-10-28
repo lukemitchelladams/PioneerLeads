@@ -1331,6 +1331,18 @@
       "verdict": "NO",
       "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
       "at": "2026-10-28T13:40:00Z"
+    },
+    "618732e7b79446fab94fe7286242de02": {
+      "name": "NAVSUP 31--BEARING,BALL,DUPLEX (due 2026-12-01)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T14:30:00Z"
+    },
+    "bidnet:444204005554": {
+      "decision": "EVALUATE",
+      "title": "Snowmelt Boiler Plant (BidNet federal interception notice 444204005554; agency not shown)",
+      "reason": "Surfaced by HQ 13:47Z scan as a changed bid: closing moved 2026-11-01 -> 2026-11-15. BidNet mirror of a federal notice; agency, scope and pre-bid terms not in hand (no SAM twin in open_bids, GovTribe inactive). Boiler plant = mechanical/HVAC, plausibly in our wheelhouse via H2 Global if it is a service or small replacement job; NO if it is heavy construction. Watchlisted so HQ pulls the notice; read pre-bid/mandatory terms next hour (rule 0).",
+      "triaged_at": "2026-10-28T14:30Z"
     }
   },
   "watched": {
@@ -1516,6 +1528,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T13:21Z (ran 13:40Z): GovTribe still BLOCKED (34th hour). HQ 12:45Z run SAM-only (SAM 105, 2 NEW jones-bearing NAVSUP bearing RFQs -> NO); BidNet last success 11:36Z (87 matches/602 open; next full pass pending); Bonfire no creds; DIBBS stale since 10/20. No changes on watched bids. HQ published ops/plan_ceo/2026-10-28.md (TCF package with COI by 16:00 MT once H2 pricing lands, promised 10:00 MT; Parker + Douglas 037-26 generator pricing by Luke by Fri 10/30). Inbox: 11 threads, 1 new (Microsoft DMARC report); CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
+  "last_hourly_check": "2026-10-28T14:21Z (ran 14:30Z): GovTribe still BLOCKED (35th hour). HQ 13:47Z full run: BidNet logged in, 604 open / 87 matches, 1 NEW (NAVSUP bearing -> NO), 1 CHANGED: Snowmelt Boiler Plant (BidNet federal mirror 444204005554) closing 11/01 -> 11/15, untriaged until now -> EVALUATE pending docs, watchlisted; SAM 106; Bonfire no creds; DIBBS stale since 10/20. Inbox: 12 threads, 1 new message: Gmail delay notice on Luke's 10/27 Brighton pricing request to Rock Solid (mailbox full; retries to 10/30 06:55 PDT). CDOC thread: no new message from Silas since 10/27 15:52Z; Exhibit D pricing not yet in. CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

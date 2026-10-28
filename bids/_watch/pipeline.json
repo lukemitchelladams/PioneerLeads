@@ -1173,6 +1173,12 @@
       "when": "2026-10-28T10:22:00+00:00",
       "kind": "package",
       "note": "Package downloaded and read. Pre-proposal 11/04 15:00 MT at Littleton Center, NOT mandatory; questions 11/09 12:00; due 11/24 12:00 MT via RMEPS; $100k/yr pool, $100,000 P&P bond, 2-hr emergency response."
+    },
+    {
+      "bid": "brighton-26-500209",
+      "when": "2026-10-28T14:04:00+00:00",
+      "kind": "outreach",
+      "note": "Delivery delayed on the 10/27 pricing request to Rock Solid (ryan@rocksolidhs.com): recipient mailbox out of storage (452 4.2.2). Gmail retries until Fri 10/30 06:55 PDT. Treat Rock Solid as unreached; Luke should call them."
     }
   ],
   "doc_gaps": [

@@ -402,6 +402,14 @@
       "match": "on-call commercial pedestrian door repairs",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Snowmelt Boiler Plant (EVALUATE; federal mirror; closing moved to 11/15; agency/docs TBD)",
+      "source": "bidnet",
+      "id": "444204005554",
+      "match": "snowmelt boiler plant",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }
