@@ -1281,7 +1281,7 @@
     "bidnet:0000440813": {
       "decision": "EVALUATE",
       "title": "City of Littleton RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-      "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Facilities/handyman on-call fit. BidNet listing: published 2026-10-20, closes 2026-11-24 12:00 PM MST, pre-bid 2026-11-04 optional per scanner. Package not downloaded yet; watchlisted so HQ pulls it at :35, then read pre-bid time, bond and insurance terms from the RFQ (rule 0/2).",
+      "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Package read 2026-10-28 10:22Z: pre-proposal 11/04/2026 3:00 PM MT at Littleton Center (NOT mandatory, optional site walk after); questions due 11/09 12:00 MT; submissions via RMEPS by 11/24/2026 12:00 PM MT; 2+1 yr multiple-award pool, $100,000/yr anticipated budget, $100,000 initial P&P bond, 24/7 emergency with 2-hour arrival; CGL $1M/$2M. Facilities/handyman fit; needs a commercial door/hardware sub. Decision rides with the garage-door RFQ.",
       "triaged_at": "2026-10-28T08:22Z"
     }
   },
@@ -1468,6 +1468,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T09:21Z: GovTribe still BLOCKED (30th hour). HQ 08:36Z run SAM-only (SAM 97; BidNet last success 07:36Z, 87 matches/601 open; Bonfire no creds; DIBBS stale since 10/20). No new matches, no changes. Littleton pedestrian doors 0000440813 package not yet downloaded (BidNet not scanned at 08:36). Inbox: 9 threads, all previously logged; CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 (optional).",
+  "last_hourly_check": "2026-10-28T10:22Z: GovTribe still BLOCKED (31st hour). HQ 09:36Z full run: BidNet logged in, 602 open / 87 matches, no NEW, no changes; SAM 97; Bonfire no creds; DIBBS stale since 10/20. Littleton pedestrian doors 0000440813 package downloaded and read (pre-proposal 11/04 15:00 NOT mandatory; due 11/24 12:00; $100k bond). Inbox: 10 threads, 1 new (DMARC report); CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

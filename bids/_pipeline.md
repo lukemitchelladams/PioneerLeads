@@ -134,7 +134,7 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | R26-099MZ Parks On-Call Irrigation Repairs | City of Colorado Springs | 2026-12-02 14:00 | EVALUATE (Alex Ditto scope); optional pre-proposal 2026-11-06 Teams | downloads/bidnet/0000441782 |
 | ITB 10366 Transfort Overhead Door Replacements (9 doors) | City of Fort Collins | 2026-12-02 15:00 | EVALUATE (door sub + 5% bid bond, P&P bonds, Davis-Bacon); pre-bid 2026-11-02 15:00 optional | downloads/bidnet/0000439726 |
 | On-Call Garage Door Repairs ($100k/yr pool) | City of Littleton | 2026-11-24 12:00 | EVALUATE; MANDATORY pre-proposal 2026-11-03 14:00, 1800 W Belleview Ave; $100k P&P bond | downloads/bidnet/0000440827 |
-| On-Call Commercial Pedestrian Door Repairs | City of Littleton | 2026-11-24 12:00 | EVALUATE; optional pre-bid 2026-11-04 per BidNet; package watchlisted, terms TBD from RFQ | downloads/bidnet/0000440813 (pending) |
+| On-Call Commercial Pedestrian Door Repairs ($100k/yr pool) | City of Littleton | 2026-11-24 12:00 | EVALUATE; pre-proposal 2026-11-04 15:00 at Littleton Center (NOT mandatory); questions 11/09 12:00; $100k P&P bond; 2-hr emergency | downloads/bidnet/0000440813 |
 | S--Estes Janitorial Service (SAM.gov) | Dept. of the Interior | 2026-11-10 | EVALUATE (needs janitorial sub; check set-aside) | Not in repo |
 | IFB 044-26 Alarm Monitoring Services (fire/burglar/panic) | Douglas County | 2026-12-03 14:00 | EVALUATE (needs UL central-station sub); no pre-bid; questions by 2026-11-06 | downloads/bidnet/0000441803 |
 | IFB 037-26 Generator PM & Repairs, County facilities | Douglas County | 2026-11-05 14:00 | EVALUATE (HQ re-opened 10/28; same subs as Parker generator) | Q&A 1 + inventory xlsx watchlisted |

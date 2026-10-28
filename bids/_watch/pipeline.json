@@ -937,15 +937,15 @@
       "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
       "trade": "Facilities / doors",
       "due": "2026-11-24T12:00:00-07:00",
-      "due_source": "BidNet listing closing_text 11/24/2026 12:00 PM MST",
+      "due_source": "RFQ: 'submitted electronically through Rocky Mountain E-Purchasing System (RMEPS) by November 24th, 2026 at 12:00 PM MT'",
       "portal": "BidNet / RMEPS",
       "decision": "EVALUATE",
-      "decision_note": "Surfaced by HQ 07:36Z scan pre-bid table, triaged 2026-10-28 08:22Z. Sibling of the garage-door RFQ 0000440827 (same buyer, same due date). Scanner shows pre-bid 2026-11-04 optional; time, bond and insurance terms to be read from the RFQ once HQ downloads the package (watchlisted). Needs a commercial door/hardware sub.",
-      "prebid": "2026-11-04",
+      "decision_note": "Surfaced by HQ 07:36Z scan pre-bid table, triaged 2026-10-28 08:22Z. Sibling of the garage-door RFQ 0000440827 (same buyer, same due date). Scanner shows pre-bid 2026-11-04 optional; time, bond and insurance terms to be read from the RFQ once HQ downloads the package (watchlisted). Needs a commercial door/hardware sub. | Package read 2026-10-28 10:22Z: pre-proposal meeting 'November 4th, 2026 at 3:00 PM MT at the Community Room in the Littleton Center, 2255 West Berry Avenue', optional site-walk after; 'The pre-proposal meeting is not mandatory, but respondents will be held responsible for all information presented'. Questions in RMEPS by 2026-11-09 12:00 MT; Q&A posted 11/12. Scope: 'commercial pedestrian door repair, replacement, installation, inspection, preventive maintenance, and emergency repair/replacement' at Littleton Center, Courthouse, Belleview Service Center, Geneva Lodge, Bemis Library, SMFR Station 11. Two-year contract + 1 option year, multiple awards, rotational work orders, 'anticipated budget for all services combined is $100,000 per year'. 'A Performance and Payment Bond ... initial bond in the amount of $100,000.00 ... at the time of contract execution'. Emergency 24/7, 'arrive at the location within two (2) hours'. Sample contract insurance: CGL $1,000,000 each occurrence / $2,000,000 aggregate; auto $1,000,000; workers comp. Same bond and budget as the garage-door RFQ; one door/hardware sub could price both.",
+      "prebid": "2026-11-04T15:00:00-07:00",
       "prebid_mandatory": false,
       "sub_pricing": "None",
       "folder": null,
-      "doc_gaps": "Package not downloaded yet (RFQ, Attachment A Contract Certification Form, Attachment B Sample Contract listed on BidNet).",
+      "doc_gaps": "Package in hand (RFQ, Attachment A Contract Certification Form, Attachment B Sample Contract). Pricing template is filled in RMEPS, not a download.",
       "performer": null,
       "subs": null,
       "contact": null
@@ -1167,6 +1167,12 @@
       "when": "2026-10-28T08:22:00+00:00",
       "kind": "decision",
       "note": "EVALUATE. Untracked Littleton on-call pedestrian door RFQ found in scanner pre-bid table; optional pre-bid 11/04, due 11/24 12:00 MT (BidNet). Watchlisted for package download."
+    },
+    {
+      "bid": "littleton-pedestrian-doors",
+      "when": "2026-10-28T10:22:00+00:00",
+      "kind": "package",
+      "note": "Package downloaded and read. Pre-proposal 11/04 15:00 MT at Littleton Center, NOT mandatory; questions 11/09 12:00; due 11/24 12:00 MT via RMEPS; $100k/yr pool, $100,000 P&P bond, 2-hr emergency response."
     }
   ],
   "doc_gaps": [
