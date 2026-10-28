@@ -1198,6 +1198,26 @@
       "performer": null,
       "subs": null,
       "contact": null
+    },
+    {
+      "id": "elpaso-26-074-water-treatment",
+      "agency": "El Paso County",
+      "title": "Water Treatment Chemicals (chemicals + monthly service, 6 facilities)",
+      "sol": "RFP 26-074 (BidNet 0000439442)",
+      "trade": "Water treatment / boiler-cooling service",
+      "due": "2026-11-04T14:00:00-07:00",
+      "portal": "BidNet",
+      "decision": "GO",
+      "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides.",
+      "prebid": "2026-10-13T14:00:00-06:00",
+      "prebid_mandatory": false,
+      "performer": "H2 Global Solutions (sub); Brown Bison bids and holds the contract",
+      "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com, office 719-694-0515): email drafted 2026-10-28 20:22Z, not yet sent",
+      "sub_pricing": "None (H2 Global asked by Mon 11/02 noon; email drafted for HQ to send)",
+      "folder": "bids/elpaso-26-074-water-treatment",
+      "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
+      "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
+      "doc_gaps": "none: all 10 BidNet files downloaded"
     }
   ],
   "events": [
@@ -1554,6 +1574,12 @@
       "when": "2026-10-28T19:40:00+00:00",
       "kind": "sub",
       "note": "Sub outreach file ready: 7 email candidates + 5 phone-only Northern Colorado / Denver door contractors; email drafted for HQ to send; pricing by 11/23."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-28T20:30:00+00:00",
+      "kind": "decision",
+      "note": "GO: chemicals + monthly service for 6 El Paso County facilities (20 boilers, 5 cooling towers); due 11/04 14:00 MST; H2 Global asked first; 3-year competency clause flagged for Luke."
     }
   ],
   "doc_gaps": [

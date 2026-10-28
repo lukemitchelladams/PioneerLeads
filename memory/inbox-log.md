@@ -96,3 +96,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 1 unseen of 13 in the last 24h. admin@sergeantsudsservices.com 13:10 MT (new thread 1a183668e7d49de9): Nick Brown confirms Sergeant Suds will price COS on-call janitorial (RFP R26-080JW) by Mon 2026-11-16. Logged in bids/cos-oncall-janitorial/sub-outreach.md; pipeline sub_pricing updated.
 - No CRM brief ('evening update' / 'Brown Bison brief' / 'morning update') in the last 24h.
 - Nothing new from H2 (Silas's 11:21 MT usage estimate was logged at 18:21Z), no new bounces, no HQ submission confirmation for TCF yet.
+
+## 2026-10-28 20:22Z hourly (read-only)
+- 0 unseen of 12 in the last 24h (all logged earlier today). No CRM brief. No new bounces, no H2 follow-up, no TCF submission confirmation yet.
