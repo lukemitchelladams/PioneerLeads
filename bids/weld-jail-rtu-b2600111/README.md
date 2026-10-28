@@ -11,7 +11,7 @@
 | Due date | 2026-11-19 10:00 MST (BidNet: "11/19/2026 10:00 AM MST") |
 | Contract type | Lump-sum RTU replacement; email bids preferred to bids@weld.gov (PDF, with the sealed-bid waiver statement) or BidNet |
 | Term / renewals | not in hand yet |
-| Evaluation method | not in hand yet |
+| Evaluation method | Low bid (IFB). Submit PDF by email to bids@weld.gov with "I hereby waive my right to a sealed bid", or sealed at 1301 N 17th Ave, Greeley. |
 | Status | GO (2026-10-28). Specs and Attachment 1 downloaded 15:37Z and read; 7 HVAC subs emailed 09:1x MT; forward the specs to them. |
 
 ## Scope summary
