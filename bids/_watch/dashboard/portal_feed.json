@@ -15,21 +15,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Commercial-Plumbing-Services/0000438328?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000438484",
-  "source": "bidnet",
-  "agency": "City of Brighton",
-  "title": "Asbestos Abatement and Historic Artifact Preservation at 575 Bush Street",
-  "sol": "26500394",
-  "closing": "2026-10-28",
-  "posted": "2026-09-28",
-  "prebid_date": "2026-10-07",
-  "prebid_mandatory": "Mandatory",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Asbestos-Abatement-and-Historic-Artifact-Preservation-at-575-Bush-Street/0000438484?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000439444",
   "source": "bidnet",
   "agency": "City of Thornton",
@@ -45,21 +30,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Landscape-Construction-Services/0000439444?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000440182",
-  "source": "bidnet",
-  "agency": "School District 27J",
-  "title": "Speaker Cabling Installation",
-  "sol": "",
-  "closing": "2026-10-28",
-  "posted": "2026-10-14",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Speaker-Cabling-Installation/0000440182?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:2720624627",
   "source": "bidnet",
   "agency": "",
@@ -73,21 +43,6 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720624627?target=view"
- },
- {
-  "key": "bidnet:2720966072",
-  "source": "bidnet",
-  "agency": "",
-  "title": "Bunkhouse Asbestos Mitigation",
-  "sol": "",
-  "closing": "2026-10-28",
-  "posted": "2026-10-26",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2720966072?target=view"
  },
  {
   "key": "samgov:0d14aaae78a449d6bbb4cd00cd6d6ae8",
@@ -2200,7 +2155,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1"
  },
