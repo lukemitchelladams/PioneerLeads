@@ -1087,7 +1087,7 @@
     },
     "bidnet:0000441668": {
       "decision": "NO",
-      "reason": "Security Electronics Maintenance & Support: detention security electronics, outside our trades (same call as Fort Carson ICIDS)",
+      "reason": "Security Electronics Maintenance & Support: detention security electronics, outside our trades (same call as Fort Carson ICIDS) | 2026-10-28 16:00Z: BidNet now shows MANDATORY onsite visit 2026-11-03 12:00 at 7375 S Potomac St, Centennial.",
       "triaged_at": "2026-10-27T20:22Z"
     },
     "bidnet:0000441710": {
@@ -1343,6 +1343,42 @@
       "title": "Snowmelt Boiler Plant (BidNet federal interception notice 444204005554; agency not shown)",
       "reason": "Surfaced by HQ 13:47Z scan as a changed bid: closing moved 2026-11-01 -> 2026-11-15. BidNet mirror of a federal notice; agency, scope and pre-bid terms not in hand (no SAM twin in open_bids, GovTribe inactive). Boiler plant = mechanical/HVAC, plausibly in our wheelhouse via H2 Global if it is a service or small replacement job; NO if it is heavy construction. Watchlisted so HQ pulls the notice; read pre-bid/mandatory terms next hour (rule 0).",
       "triaged_at": "2026-10-28T14:30Z"
+    },
+    "bidnet:0000441833": {
+      "decision": "EVALUATE",
+      "title": "City of Arvada 26-FAC-055 On-Call General Contractor Services (due 2026-11-17 14:00)",
+      "reason": "Facilities/on-call GC pool like Brighton (GO). Pre-bid not shown on BidNet; read the PDF first. Watchlisted.",
+      "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000441189": {
+      "decision": "EVALUATE",
+      "title": "Weld RE-4 RFP 27-02 Grandview Elementary Roof Replacement (due 2026-12-02)",
+      "reason": "MANDATORY job walk 2026-11-04 15:00 at Grandview Elementary. Roofing is outside core trades (same DECIDE as Morgan roof).",
+      "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000440811": {
+      "decision": "EVALUATE",
+      "title": "Trails Park & Recreation District Spring Creek Park Pavilion Repairs (due 2026-11-30)",
+      "reason": "MANDATORY job walk 2026-11-04 13:00 at 4001 S Himalaya St, Aurora. Facilities repair fit; read the RFP before committing Luke to the walk.",
+      "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000439933": {
+      "decision": "NO",
+      "title": "DPS Fire Suppression 2027 (due 2026-11-12)",
+      "reason": "Mandatory pre-bid 2026-10-21 already passed; not attended (rule 0).",
+      "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000439442": {
+      "decision": "EVALUATE",
+      "title": "Water Treatment Chemicals (BidNet 0000439442)",
+      "reason": "Chemical supply bid: rule 9 says NO unless the document states quantities or annual spend; optional pre-bid 10/13 passed. Possible H2 Global fit only if service is included. Read the package before deciding.",
+      "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000439241": {
+      "decision": "NO",
+      "title": "Biology Duct Insulation Damage (BidNet 0000439241, due 2026-11-02)",
+      "reason": "Mandatory pre-bid 2026-10-12 already passed; not attended (rule 0).",
+      "triaged_at": "2026-10-28T16:00Z"
     }
   },
   "watched": {
@@ -1528,6 +1564,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T15:21Z (ran 15:28Z): GovTribe still BLOCKED (36th hour). HQ 14:44Z run SAM-only (SAM 106; BidNet last success 13:47Z, 87 matches/604 open; Bonfire no creds; DIBBS stale since 10/20). No new matches, no changes. HQ sweep (56f0567) added Weld County B2600111 Jail 1 East Gym RTU Replacement as GO pending docs (MANDATORY walk 2026-11-05 09:00 Greeley; due 11/19 10:00) and Morgan County roof as DECIDE (optional walk 10/29 10:00); 9 new EVALUATE rows watchlisted; CMC custodial NO. Weld had no sub-outreach file -> building one (rule 0b). Inbox: 12 threads, all previously logged; H2 Exhibit D pricing not yet received (promised 10:00 MT). CRM/sent empty. GO 6, sub pricing 0/6. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional); Weld RTU 11/5 09:00 MANDATORY (8 days).",
+  "last_hourly_check": "2026-10-28T15:21Z (ran 15:28Z): GovTribe still BLOCKED (36th hour). HQ 14:44Z run SAM-only (SAM 106; BidNet last success 13:47Z, 87 matches/604 open; Bonfire no creds; DIBBS stale since 10/20). No new matches, no changes. HQ sweep (56f0567) added Weld County B2600111 Jail 1 East Gym RTU Replacement as GO pending docs (MANDATORY walk 2026-11-05 09:00 Greeley; due 11/19 10:00) and Morgan County roof as DECIDE (optional walk 10/29 10:00); 9 new EVALUATE rows watchlisted; CMC custodial NO. Weld had no sub-outreach file -> building one (rule 0b). Inbox: 12 threads, all previously logged; H2 Exhibit D pricing not yet received (promised 10:00 MT). CRM/sent empty. GO 6, sub pricing 0/6. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional); Weld RTU 11/5 09:00 MANDATORY (8 days). || 16:00Z addendum: HQ 15:37Z full run: BidNet 606/88, 1 NEW (Arvada on-call GC -> EVALUATE, watchlisted), 7 changed: mandatory walks now known for Arapahoe security electronics (11/03 12:00), Spring Creek pavilion (11/04 13:00), Grandview roof (11/04 15:00); DPS fire suppression and Biology duct NO (mandatory pre-bids passed). Weld RTU specs downloaded and read (mandatory 11/05 09:00 confirmed; no bid bond; 100% P&P over $50k; no Davis-Bacon).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

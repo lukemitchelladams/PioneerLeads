@@ -514,6 +514,14 @@
       "match": "0000439241",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Arvada 26-FAC-055 On-Call General Contractor Services (EVALUATE; due 11/17)",
+      "source": "bidnet",
+      "id": "0000441833",
+      "match": "on-call general contractor services",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }

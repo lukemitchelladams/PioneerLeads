@@ -39,7 +39,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -12.99
+  "days_left": -13.0
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -67,7 +67,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -7.99
+  "days_left": -8.0
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -6.99
+  "days_left": -7.0
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -6.99
+  "days_left": -7.0
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -1.99
+  "days_left": -2.0
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -193,7 +193,7 @@
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
   "past": true,
-  "days_left": -0.99
+  "days_left": -1.0
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Package downloaded|2026-10-27T15:36:00-06:00",
@@ -305,7 +305,7 @@
   "note": "IFB 044-26 + Exhibit B in downloads/bidnet/0000441803. Due 12/3 14:00 MST; no pre-bid; questions by 11/6.",
   "critical": false,
   "past": true,
-  "days_left": -0.59
+  "days_left": -0.6
  },
  {
   "key": "littleton-pedestrian-doors|decision|2026-10-28T08:22:00+00:00",
@@ -347,7 +347,7 @@
   "note": "Delivery delayed on the 10/27 pricing request to Rock Solid (ryan@rocksolidhs.com): recipient mailbox out of storage (452 4.2.2). Gmail retries until Fri 10/30 06:55 PDT. Treat Rock Solid as unreached; Luke should call them.",
   "critical": false,
   "past": true,
-  "days_left": -0.07
+  "days_left": -0.08
  },
  {
   "key": "weld-jail-rtu-b2600111|outreach|2026-10-28T15:40:00+00:00",
@@ -364,6 +364,90 @@
   "days_left": -0.01
  },
  {
+  "key": "weld-jail-rtu-b2600111|package|2026-10-28T16:00:00+00:00",
+  "bid": "weld-jail-rtu-b2600111",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "package",
+  "agency": "Weld County",
+  "sol": "B2600111 (BidNet 0000440763)",
+  "decision": "GO",
+  "note": "Specs read: MANDATORY pre-bid 11/05 09:00 confirmed in the document; questions 11/12 10:00; due 11/19 10:00 (email bids preferred); no bid bond; 100% P&P bond over $50k; no Davis-Bacon; licensed trades; MAU-to-RTU replacement on existing curb. Forward specs to subs.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
+  "key": "bidnet-0000441189|prebid|2026-10-28T16:00:00+00:00",
+  "bid": "bidnet-0000441189",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "prebid",
+  "agency": "not stated",
+  "sol": "BidNet 0000441189",
+  "decision": "EVALUATE",
+  "note": "BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 03:00 PM MST, Grandview Elementary School'. Roofing (Weld RE-4 RFP 27-02): outside core trades, same call as Morgan roof. DECIDE with Luke before 11/04.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
+  "key": "bidnet-0000440811|prebid|2026-10-28T16:00:00+00:00",
+  "bid": "bidnet-0000440811",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "prebid",
+  "agency": "not stated",
+  "sol": "BidNet 0000440811",
+  "decision": "EVALUATE",
+  "note": "BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 01:00 PM MST, 4001 S. Himalaya St, Aurora'. Pavilion repairs (Trails Park & Rec, due 11/30 14:00): facilities/handyman fit; RFP PDF listed, read it before deciding whether Luke attends 11/04.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
+  "key": "bidnet-0000441668|prebid|2026-10-28T16:00:00+00:00",
+  "bid": "bidnet-0000441668",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "prebid",
+  "agency": "not stated",
+  "sol": "BidNet 0000441668",
+  "decision": "EVALUATE",
+  "note": "BidNet: 'Onsite Visit, Attendance Mandatory, 11/03/2026 12:00 PM MST, 7375 S. Potomac St. Centennial'. Arapahoe County RFP 26-53 security electronics maintenance (due 11/25 14:00): low-voltage sub needed; same day as Denver access-control walk and Littleton garage walk.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
+  "key": "bidnet-0000441807|prebid|2026-10-28T16:00:00+00:00",
+  "bid": "bidnet-0000441807",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "prebid",
+  "agency": "not stated",
+  "sol": "BidNet 0000441807",
+  "decision": "EVALUATE",
+  "note": "BidNet: pre-bid 2026-10-30, not mandatory. Ash tree treatment needs a licensed applicator sub.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
+  "key": "arvada-oncall-gc|decision|2026-10-28T16:00:00+00:00",
+  "bid": "arvada-oncall-gc",
+  "when": "2026-10-28T16:00:00+00:00",
+  "date": "2026-10-28",
+  "kind": "decision",
+  "agency": "City of Arvada",
+  "sol": "26-FAC-055 (BidNet 0000441833)",
+  "decision": "EVALUATE",
+  "note": "EVALUATE. Arvada on-call GC services (26-FAC-055) due 11/17 14:00; pre-bid unknown until the PDF is read; watchlisted.",
+  "critical": false,
+  "past": false,
+  "days_left": 0.0
+ },
+ {
   "key": "morgan-roof-2026-1119-001|Pre-bid (optional)|2026-10-29T10:00:00-06:00",
   "bid": "morgan-roof-2026-1119-001",
   "when": "2026-10-29T10:00:00-06:00",
@@ -375,7 +459,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 1.01
+  "days_left": 1.0
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -420,6 +504,20 @@
   "days_left": 1.3
  },
  {
+  "key": "bidnet-0000441807|Pre-bid (optional)|2026-10-30",
+  "bid": "bidnet-0000441807",
+  "when": "2026-10-30",
+  "date": "2026-10-30",
+  "kind": "Pre-bid (optional)",
+  "agency": "not stated",
+  "sol": "BidNet 0000441807",
+  "decision": "EVALUATE",
+  "note": "",
+  "critical": false,
+  "past": false,
+  "days_left": 1.59
+ },
+ {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
   "bid": "cos-r26-069mz-bas",
   "when": "2026-10-30T14:00:00-06:00",
@@ -432,20 +530,6 @@
   "critical": true,
   "past": false,
   "days_left": 2.17
- },
- {
-  "key": "bidnet-0000439241|Submission|2026-11-02T14:00:00-07:00",
-  "bid": "bidnet-0000439241",
-  "when": "2026-11-02T14:00:00-07:00",
-  "date": "2026-11-02",
-  "kind": "Submission",
-  "agency": "not stated",
-  "sol": "BidNet 0000439241",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 5.21
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -487,7 +571,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.26
+  "days_left": 5.25
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
@@ -500,6 +584,20 @@
   "decision": "EVALUATE",
   "note": "",
   "critical": false,
+  "past": false,
+  "days_left": 6.13
+ },
+ {
+  "key": "bidnet-0000441668|MANDATORY pre-bid|2026-11-03T12:00:00-07:00",
+  "bid": "bidnet-0000441668",
+  "when": "2026-11-03T12:00:00-07:00",
+  "date": "2026-11-03",
+  "kind": "MANDATORY pre-bid",
+  "agency": "not stated",
+  "sol": "BidNet 0000441668",
+  "decision": "EVALUATE",
+  "note": "",
+  "critical": true,
   "past": false,
   "days_left": 6.13
  },
@@ -532,6 +630,20 @@
   "days_left": 7.05
  },
  {
+  "key": "bidnet-0000440811|MANDATORY pre-bid|2026-11-04T13:00:00-07:00",
+  "bid": "bidnet-0000440811",
+  "when": "2026-11-04T13:00:00-07:00",
+  "date": "2026-11-04",
+  "kind": "MANDATORY pre-bid",
+  "agency": "not stated",
+  "sol": "BidNet 0000440811",
+  "decision": "EVALUATE",
+  "note": "",
+  "critical": true,
+  "past": false,
+  "days_left": 7.17
+ },
+ {
   "key": "bidnet-0000440339|Submission|2026-11-04T14:00:00-07:00",
   "bid": "bidnet-0000440339",
   "when": "2026-11-04T14:00:00-07:00",
@@ -557,7 +669,21 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 7.26
+  "days_left": 7.25
+ },
+ {
+  "key": "bidnet-0000441189|MANDATORY pre-bid|2026-11-04T15:00:00-07:00",
+  "bid": "bidnet-0000441189",
+  "when": "2026-11-04T15:00:00-07:00",
+  "date": "2026-11-04",
+  "kind": "MANDATORY pre-bid",
+  "agency": "not stated",
+  "sol": "BidNet 0000441189",
+  "decision": "EVALUATE",
+  "note": "",
+  "critical": true,
+  "past": false,
+  "days_left": 7.25
  },
  {
   "key": "weld-jail-rtu-b2600111|MANDATORY pre-bid|2026-11-05T09:00:00-07:00",
@@ -571,7 +697,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 8.01
+  "days_left": 8.0
  },
  {
   "key": "dougco-generator-037-26|Submission|2026-11-05T14:00:00-07:00",
@@ -627,7 +753,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 9.01
+  "days_left": 9.0
  },
  {
   "key": "larimer-jail-fire-alarm|Submission|2026-11-06T10:00:00-07:00",
@@ -728,20 +854,6 @@
   "days_left": 15.21
  },
  {
-  "key": "bidnet-0000439933|Submission|2026-11-12T14:00:00-07:00",
-  "bid": "bidnet-0000439933",
-  "when": "2026-11-12T14:00:00-07:00",
-  "date": "2026-11-12",
-  "kind": "Submission",
-  "agency": "not stated",
-  "sol": "BidNet 0000439933",
-  "decision": "EVALUATE",
-  "note": "BidNet",
-  "critical": true,
-  "past": false,
-  "days_left": 15.21
- },
- {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
   "bid": "adams-2026-766",
   "when": "2026-11-12T15:00:00-07:00",
@@ -753,7 +865,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.26
+  "days_left": 15.25
  },
  {
   "key": "bidnet-0000441807|Submission|2026-11-13T14:00:00-07:00",
@@ -824,6 +936,20 @@
   "critical": true,
   "past": false,
   "days_left": 20.05
+ },
+ {
+  "key": "arvada-oncall-gc|Submission|2026-11-17T14:00:00-07:00",
+  "bid": "arvada-oncall-gc",
+  "when": "2026-11-17T14:00:00-07:00",
+  "date": "2026-11-17",
+  "kind": "Submission",
+  "agency": "City of Arvada",
+  "sol": "26-FAC-055 (BidNet 0000441833)",
+  "decision": "EVALUATE",
+  "note": "BidNet / RMEPS",
+  "critical": true,
+  "past": false,
+  "days_left": 20.21
  },
  {
   "key": "morgan-roof-2026-1119-001|Submission|2026-11-18T16:00:00-07:00",
@@ -1089,7 +1215,7 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 35.26
+  "days_left": 35.25
  },
  {
   "key": "dougco-alarm-monitoring|Submission|2026-12-03T14:00:00-07:00",
@@ -1117,6 +1243,6 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 36.26
+  "days_left": 36.25
  }
 ]
