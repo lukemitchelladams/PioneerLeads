@@ -107,7 +107,7 @@
  {
   "key": "samgov:881be8c69a194a7da24919cce13b25e5",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QM MICC-FT DRUM",
   "title": "Rota-rack",
   "sol": "W911S226U4399",
   "closing": "2026-10-28",
@@ -527,7 +527,7 @@
  {
   "key": "samgov:c714c6130b9d40d0991dbbe1815c37f3",
   "source": "samgov",
-  "agency": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.ORNL UT-BATTELLE LLC-DOE CONTRACTOR",
+  "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ORNL UT-BATTELLE LLC-DOE CONTRACTOR",
   "title": "Kardex Megamat and Onsite Installation",
   "sol": "511976",
   "closing": "2026-10-30",
