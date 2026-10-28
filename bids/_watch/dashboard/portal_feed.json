@@ -1241,7 +1241,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-Fire-Alarm-Inspection-and-Maintenance-Services/0000441715?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2531,7 +2531,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Security-Electronics-Maintenance-Support-Services/0000441668?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2606,7 +2606,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2831,7 +2831,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Structured-Cabling-and-Fiber-Optic-Contractors/0000441695?purchasingGroupId=8409951&origin=1"
  },
  {

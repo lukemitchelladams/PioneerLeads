@@ -123,7 +123,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -1.93
+  "days_left": -1.94
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -389,7 +389,7 @@
   "note": "Peak Kitchen Exhaust (Colorado Springs) asked whether the first meeting is in Fort Collins (2 hours away) and if a school closer to Colorado Springs could be the first visit. The IFB site visit is a single MANDATORY walk 11/10 13:30 starting at Traut Elementary; Luke/HQ to reply.",
   "critical": false,
   "past": true,
-  "days_left": -0.05
+  "days_left": -0.06
  },
  {
   "key": "cos-oncall-janitorial|sub|2026-10-28T19:25:00+00:00",
@@ -415,6 +415,20 @@
   "sol": "ITB 10366 (BidNet 0000439726)",
   "decision": "GO",
   "note": "Folder created from template; README filled from ITB 10366 (pre-bid/job walk 11/02 15:00 not mandatory; Q&A 11/05 15:00; due 12/02 15:00; 5% bid bond + P&P bonds; Davis-Bacon). Sub outreach started (rule 0b).",
+  "critical": false,
+  "past": true,
+  "days_left": -0.0
+ },
+ {
+  "key": "fort-collins-transfort-doors|sub|2026-10-28T19:40:00+00:00",
+  "bid": "fort-collins-transfort-doors",
+  "when": "2026-10-28T19:40:00+00:00",
+  "date": "2026-10-28",
+  "kind": "sub",
+  "agency": "City of Fort Collins",
+  "sol": "ITB 10366 (BidNet 0000439726)",
+  "decision": "GO",
+  "note": "Sub outreach file ready: 7 email candidates + 5 phone-only Northern Colorado / Denver door contractors; email drafted for HQ to send; pricing by 11/23.",
   "critical": false,
   "past": false,
   "days_left": 0.0
@@ -543,7 +557,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 5.98
+  "days_left": 5.97
  },
  {
   "key": "bidnet-0000440339|Submission|2026-11-04T14:00:00-07:00",
@@ -935,7 +949,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 32.48
+  "days_left": 32.47
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Submission|2026-11-30T14:00:00-07:00",

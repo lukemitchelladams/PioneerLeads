@@ -887,7 +887,7 @@
       "prebid": "2026-11-02T15:00:00-07:00",
       "prebid_mandatory": false,
       "performer": "Overhead-door sub TBD (Brown Bison bids, holds the contract)",
-      "subs": "Outreach started 2026-10-28 19:30Z: folder, README and sub email drafted; door-contractor candidates being sourced (bids/fort-collins-transfort-doors/sub-outreach.md)",
+      "subs": "sub-outreach.md ready 2026-10-28 19:40Z: 7 door contractors with public emails (Nelson, Front Range OHD, C&M, Silverback, Garage Door Systems, Gold Label, OHD Denver) + 5 phone-only; email drafted (humanize PASS); HQ/Luke to send with ITB + drawings + specs attached; pricing asked by Mon 11/23",
       "sub_pricing": "None (ask subs by Mon 11/23; bid due 12/02 15:00)",
       "folder": "bids/fort-collins-transfort-doors",
       "contact": null
@@ -1548,6 +1548,12 @@
       "when": "2026-10-28T19:35:00+00:00",
       "kind": "package",
       "note": "Folder created from template; README filled from ITB 10366 (pre-bid/job walk 11/02 15:00 not mandatory; Q&A 11/05 15:00; due 12/02 15:00; 5% bid bond + P&P bonds; Davis-Bacon). Sub outreach started (rule 0b)."
+    },
+    {
+      "bid": "fort-collins-transfort-doors",
+      "when": "2026-10-28T19:40:00+00:00",
+      "kind": "sub",
+      "note": "Sub outreach file ready: 7 email candidates + 5 phone-only Northern Colorado / Denver door contractors; email drafted for HQ to send; pricing by 11/23."
     }
   ],
   "doc_gaps": [
