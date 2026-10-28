@@ -1,0 +1,17 @@
+[
+  {
+    "key": "ups-qa",
+    "subject": "Re: Douglas County UPS maintenance (IFB 039-26): Q&A 1",
+    "bcc": [
+      "info@unitedpowerups.com",
+      "sales@ore-power.com",
+      "info.denver@resapower.com",
+      "info@nationwidepower.com",
+      "sales@mcfintl.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440339/Q_A Document 1.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28c/ups-qa.txt"
+  }
+]
