@@ -410,6 +410,110 @@
       "match": "snowmelt boiler plant",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Weld County B2600111 Jail 1 East Gym RTU Replacement (GO pending docs; MANDATORY prebid 11/05 09:00)",
+      "source": "bidnet",
+      "id": "0000440763",
+      "match": "B2600111|jail 1 east gym rtu",
+      "folder": "bids/weld-jail-rtu-b2600111",
+      "govtribe_ids": []
+    },
+    {
+      "name": "Morgan County 2026-1119-001 Roof Replacement & Gutter (DECIDE; walk 10/29 recommended)",
+      "source": "bidnet",
+      "id": "0000440968",
+      "match": "2026-1119-001",
+      "folder": "bids/morgan-roof-2026-1119-001",
+      "govtribe_ids": []
+    },
+    {
+      "name": "Water Treatment Chemicals (H2 check: service component?) A",
+      "source": "bidnet",
+      "id": "0000439442",
+      "match": "0000439442",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Water Treatment Chemicals (H2 check: service component?) B",
+      "source": "bidnet",
+      "id": "0000440764",
+      "match": "0000440764",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "UPS semi-annual maintenance (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000440339",
+      "match": "0000440339",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "RFP 27-07 Fire Sprinkler & Portable Extinguisher Services (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000439622",
+      "match": "0000439622",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "DPS Fire Suppression 2027 (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000439933",
+      "match": "0000439933",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Ash Tree Treatment (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000441807",
+      "match": "0000441807",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Streetlight Materials & Installation (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000441022",
+      "match": "0000441022",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Security Electronics Maintenance & Support Services (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000441668",
+      "match": "0000441668",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Spring Creek Park Pavilion Repairs (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000440811",
+      "match": "0000440811",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Grandview Elementary Roof Project (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000441189",
+      "match": "0000441189",
+      "folder": null,
+      "govtribe_ids": []
+    },
+    {
+      "name": "Biology Duct Insulation Damage (EVALUATE, sweep 10/28; docs+walk needed)",
+      "source": "bidnet",
+      "id": "0000439241",
+      "match": "0000439241",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }
