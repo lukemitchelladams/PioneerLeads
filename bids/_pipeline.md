@@ -130,11 +130,12 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | Q26-09 jail fire alarm inspection & maintenance | Larimer County | 2026-11-06 10:00 | EVALUATE (needs VESDA-certified fire alarm sub) | downloads/bidnet/0000441715 |
 | RFP 26-57 Fairgrounds South Lawns irrigation renovation | Arapahoe County | 2026-11-30 14:00 | EVALUATE; MANDATORY site visit 2026-11-10 10:00, RSVP KSchwindt@arapahoegov.com | downloads/bidnet/0000441680 |
 | RFQ 043-26 structured cabling & fiber contractors | Douglas County | 2026-12-03 15:00 | EVALUATE (needs certified cabling sub) | downloads/bidnet/0000441695 |
-| AHEC-27901-D CAVEA lighting (MSU Denver) | Auraria Higher Education Center | 2026-11-16 14:00 | EVALUATE; MANDATORY job walk 2026-11-04 14:30 | Not in repo (watchlisted) |
-| Parks On-Call Irrigation Services | City of Colorado Springs | 2026-12-02 | EVALUATE (Alex Ditto scope); optional pre-bid 2026-11-06 09:00 Teams | Not in repo (watchlisted) |
-| Transfort Overhead Door Replacements | City of Fort Collins | 2026-12-02 | EVALUATE (needs door sub) | Not in repo (watchlisted) |
-| On-Call Garage Door Repairs | City of Littleton | 2026-11-24 | EVALUATE; MANDATORY pre-bid 2026-11-03 14:00, 1800 W Belleview Ave | Not in repo (watchlisted) |
+| AHEC-27901-D CAVEA lighting (MSU Denver) | Auraria Higher Education Center | 2026-11-16 14:00 | NO (theatrical DMX lighting; 2-yr + two $140k project minimums not met) | downloads/bidnet/0000441764 |
+| R26-099MZ Parks On-Call Irrigation Repairs | City of Colorado Springs | 2026-12-02 14:00 | EVALUATE (Alex Ditto scope); optional pre-proposal 2026-11-06 Teams | downloads/bidnet/0000441782 |
+| ITB 10366 Transfort Overhead Door Replacements (9 doors) | City of Fort Collins | 2026-12-02 15:00 | EVALUATE (door sub + 5% bid bond, P&P bonds, Davis-Bacon); pre-bid 2026-11-02 15:00 optional | downloads/bidnet/0000439726 |
+| On-Call Garage Door Repairs ($100k/yr pool) | City of Littleton | 2026-11-24 12:00 | EVALUATE; MANDATORY pre-proposal 2026-11-03 14:00, 1800 W Belleview Ave; $100k P&P bond | downloads/bidnet/0000440827 |
 | S--Estes Janitorial Service (SAM.gov) | Dept. of the Interior | 2026-11-10 | EVALUATE (needs janitorial sub; check set-aside) | Not in repo |
+| Alarm Monitoring Services for County Facilities | Douglas County | 2026-12-03 | EVALUATE (needs monitoring sub) | Not in repo (watchlisted) |
 
 Not pursued (2026-10-19): USPS Denver P&DC Roof Replacement 089495-27-A-0001, $12M-$13M, 100% P&P bonds,
 due 2026-11-20, optional pre-proposal 2026-11-04 09:00 on site. Out of scale.

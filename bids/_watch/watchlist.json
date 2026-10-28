@@ -379,6 +379,14 @@
    "match": "on-call garage door repairs",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County Alarm Monitoring Services (EVALUATE)",
+   "source": "bidnet",
+   "id": "0000441803",
+   "match": "alarm monitoring services for douglas county",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

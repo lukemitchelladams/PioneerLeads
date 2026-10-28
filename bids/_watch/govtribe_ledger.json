@@ -1131,30 +1131,30 @@
       "triaged_at": "2026-10-27T20:22Z"
     },
     "bidnet:0000441764": {
-      "decision": "EVALUATE",
+      "decision": "NO",
       "title": "AHEC-27901-D CAVEA Lighting for MSU Denver",
-      "reason": "Electrical/lighting via sub. MANDATORY job walk 2026-11-04 14:30 MT (Jordan Student Success Bldg, Suite 420). Due 2026-11-16 14:00 MT. Check whether it is theatrical/AV lighting (specialty).",
+      "reason": "Electrical/lighting via sub. MANDATORY job walk 2026-11-04 14:30 MT (Jordan Student Success Bldg, Suite 420). Due 2026-11-16 14:00 MT. Check whether it is theatrical/AV lighting (specialty). | NO 2026-10-28: theatrical DMX lighting upgrade; minimum quals (2 yrs under same name, two $140k+ similar projects) not met.",
       "triaged_at": "2026-10-27T22:22Z",
       "pipeline_id": "ahec-27901-cavea-lighting"
     },
     "bidnet:0000441782": {
       "decision": "EVALUATE",
       "title": "City of Colorado Springs Parks On-Call Irrigation Services",
-      "reason": "Landscaping/irrigation on-call (Alex Ditto). Optional pre-bid 2026-11-06 09:00 (Teams). Due 2026-12-02.",
+      "reason": "Landscaping/irrigation on-call (Alex Ditto). Optional pre-bid 2026-11-06 09:00 (Teams). Due 2026-12-02. | Package read: optional pre-proposal 11/6 (Teams); due 12/2 14:00; hourly-rate on-call repairs through 2031.",
       "triaged_at": "2026-10-27T22:22Z",
       "pipeline_id": "cos-parks-irrigation-oncall"
     },
     "bidnet:0000439726": {
       "decision": "EVALUATE",
       "title": "City of Fort Collins Transfort Overhead Door Replacements",
-      "reason": "Facilities; needs an overhead-door sub. No pre-bid listed. Due 2026-12-02.",
+      "reason": "Facilities; needs an overhead-door sub. No pre-bid listed. Due 2026-12-02. | Package read: pre-bid/job walk 11/2 15:00 (not mandatory); due 12/2 15:00; 9 overhead doors; 5% bid bond, P&P bonds, Davis-Bacon.",
       "triaged_at": "2026-10-27T22:22Z",
       "pipeline_id": "fort-collins-transfort-doors"
     },
     "bidnet:0000440827": {
       "decision": "EVALUATE",
       "title": "City of Littleton On-Call Garage Door Repairs",
-      "reason": "Facilities; needs a garage-door sub. MANDATORY pre-bid 2026-11-03 14:00 MT at 1800 W Belleview Ave, Littleton. Due 2026-11-24.",
+      "reason": "Facilities; needs a garage-door sub. MANDATORY pre-bid 2026-11-03 14:00 MT at 1800 W Belleview Ave, Littleton. Due 2026-11-24. | Package read: mandatory pre-proposal 11/3 14:00; due 11/24 12:00; $100k/yr pool; $100k P&P bond; 2-hour emergency response.",
       "triaged_at": "2026-10-27T22:22Z",
       "pipeline_id": "littleton-garage-doors"
     },
@@ -1212,6 +1212,24 @@
       "title": "DOI Northern California Area Office (NCAO) Fire Alarm (SAM.gov)",
       "reason": "Place of performance Northern California; outside our Colorado service area.",
       "triaged_at": "2026-10-27T23:22Z"
+    },
+    "bidnet:0000441803": {
+      "decision": "EVALUATE",
+      "title": "Douglas County Alarm Monitoring Services for County Facilities",
+      "reason": "Low-voltage/security: needs a central-station monitoring sub. Due 2026-12-03. No pre-bid listed; package watchlisted.",
+      "triaged_at": "2026-10-28T00:22Z",
+      "pipeline_id": "dougco-alarm-monitoring"
+    },
+    "bidnet:0000441784": {
+      "decision": "NO",
+      "reason": "Sterling 9+1 bay vehicle storage facility: building construction, not our trade.",
+      "triaged_at": "2026-10-28T00:22Z"
+    },
+    "f54174631fdf46668d424fa88a3a8bf1": {
+      "decision": "NO",
+      "title": "DOI Y--LB Lateral Water Line and Facilities Replacement for Wastewater System",
+      "reason": "Heavy civil / wastewater construction (rule 8).",
+      "triaged_at": "2026-10-28T00:22Z"
     }
   },
   "watched": {
@@ -1397,6 +1415,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-27T23:22Z: GovTribe still BLOCKED (20th hour). HQ 22:35Z run was SAM-only (BidNet last success 21:36Z, logged in; Bonfire/DIBBS down). 1 NEW SAM match (DOI NCAO fire alarm, Northern California) -> NO. Packages for AHEC CAVEA, COS parks irrigation, Fort Collins doors, Littleton garage doors not yet downloaded (watchlisted). Inbox quiet. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Mandatory walks <=7d: Littleton garage doors 11/3 14:00.",
+  "last_hourly_check": "2026-10-28T00:22Z: GovTribe still BLOCKED (21st hour). HQ 23:36Z scan: BidNet live (594 open, 85 matches), SAM 97, Bonfire/DIBBS down. 2 NEW matches: Douglas alarm monitoring EVALUATE (watchlisted), DOI wastewater line NO. Packages read: AHEC CAVEA -> NO (theatrical lighting, quals not met); Fort Collins doors (pre-bid 11/2 15:00 optional, due 12/2 15:00, bonds+Davis-Bacon); Littleton garage doors (mandatory 11/3 14:00, due 11/24 12:00, $100k bond); COS irrigation repairs (optional 11/6, due 12/2 14:00). Gmail inbox search failed on quota (3 tries); CRM/sent searches empty. GO 5, sub pricing 0/5.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
