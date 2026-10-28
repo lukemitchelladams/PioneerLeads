@@ -1,0 +1,38 @@
+[
+  {
+    "key": "elpaso",
+    "subject": "El Paso County water treatment (RFP 26-074): pricing by Mon 11/2",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000439442/RFP 26-074 Water Treatment Chemicals.docx",
+      "bids/_watch/downloads/bidnet/0000439442/26-074 Addendum 1.docx",
+      "bids/_watch/downloads/bidnet/0000439442/Professional Services Contract - ADA.docx",
+      "bids/_watch/downloads/bidnet/0000439442/El Paso County September 2026 Service Report.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4877_001 SDS Sheet.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4878_001 SDS Sheet.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4879_001 SDS Sheet.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4880_001 SDS Sheet.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4881_001 SDS Sheet.pdf",
+      "bids/_watch/downloads/bidnet/0000439442/4882_001 SDS Sheet.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28b/elpaso.txt"
+  },
+  {
+    "key": "ups",
+    "subject": "Douglas County UPS maintenance (IFB 039-26): sub pricing",
+    "bcc": [
+      "info@unitedpowerups.com",
+      "sales@ore-power.com",
+      "info.denver@resapower.com",
+      "info@nationwidepower.com",
+      "sales@mcfintl.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440339/Exhibit A _ Public Contract for Services.docx",
+      "bids/_watch/downloads/bidnet/0000440339/IFB 039-26 SEMI-ANNUAL MAINTENANCE for UNINTERRUPTIBLE POWER SUPPLY _UPS_.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28b/ups.txt"
+  }
+]
