@@ -1,24 +1,23 @@
 {
-  "checked_at": "2026-10-28T12:45:32+00:00",
+  "checked_at": "2026-10-28T13:47:34+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 602,
+      "count": 604,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-28T11:36:12+00:00",
+      "last_success": "2026-10-28T13:47:34+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 87,
-      "not_scanned_this_run": true,
-      "reach_note": "HTTP 200",
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 202,
+        "statewide AGGREGATE": 204,
         "statewide BUYER": 401
       }
     },
@@ -29,11 +28,10 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-28T11:36:12+00:00",
+      "last_success": "2026-10-28T13:47:34+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -62,15 +60,15 @@
     "samgov": {
       "bulk_added": 42,
       "bulk_note": "bulk file cached 2026-10-28T05:40:41+00:00; 97 matching (parsed earlier)",
-      "count": 105,
+      "count": 106,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-28T12:45:32+00:00",
+      "last_success": "2026-10-28T13:47:34+00:00",
       "logged_in": true,
       "login_note": "API key; +42 from the nightly bulk file",
-      "matches": 105,
+      "matches": 106,
       "reach_note": "HTTP 404",
       "reachable": true
     }
