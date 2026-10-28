@@ -1450,6 +1450,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T06:21Z: GovTribe still BLOCKED (27th hour). HQ 05:36Z scan: BidNet live (596 open, 85 matches), SAM 97, Bonfire/DIBBS down. 3 NEW SAM matches triaged NO (DLA pulley NSN buys SPE7M427T1927 / SPE7L127U0146, rule 9; Commerce Rohde & Schwarz equipment maintenance). Gmail inbox search WORKING again: 9 threads in the last day, all previously logged; CRM/sent searches empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional).",
+  "last_hourly_check": "2026-10-28T07:21Z: GovTribe still BLOCKED (28th hour). HQ 06:35Z run SAM-only (SAM 97; BidNet last success 05:36Z, 85 matches; Bonfire/DIBBS down). No new matches, no changes. Inbox: 9 threads in the last day, all previously logged; CRM/sent searches empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
