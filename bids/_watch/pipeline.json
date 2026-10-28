@@ -1208,12 +1208,12 @@
       "due": "2026-11-04T14:00:00-07:00",
       "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides.",
+      "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides. | 20:50Z verification: Addendum 1 conflicts on visit scope (A4 all six facilities x12 vs A28 monthly at TSB/CUP/RBD only); Pollution Liability $1M marked Required in Attachment A; offer valid 90 days; 4 one-year renewals with pass-through-only price adjustments; degreed technical staff and 3 references required.",
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "H2 Global Solutions (sub); Brown Bison bids and holds the contract",
       "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com, office 719-694-0515): email drafted 2026-10-28 20:22Z, not yet sent",
-      "sub_pricing": "None (H2 Global asked by Mon 11/02 noon; email drafted for HQ to send)",
+      "sub_pricing": "None (H2 Global asked by Mon 11/02 noon on the 12-visit all-buildings basis; email drafted for HQ to send)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1580,6 +1580,12 @@
       "when": "2026-10-28T20:30:00+00:00",
       "kind": "decision",
       "note": "GO: chemicals + monthly service for 6 El Paso County facilities (20 boilers, 5 cooling towers); due 11/04 14:00 MST; H2 Global asked first; 3-year competency clause flagged for Luke."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-28T20:50:00+00:00",
+      "kind": "package",
+      "note": "README verified against the RFP/Addendum text (4-agent review): one misquote fixed; visit-scope conflict, 90-day validity, pollution liability Required, renewals and submittal format added."
     }
   ],
   "doc_gaps": [
