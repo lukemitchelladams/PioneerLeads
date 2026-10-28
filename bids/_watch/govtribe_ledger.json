@@ -1415,6 +1415,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T00:22Z: GovTribe still BLOCKED (21st hour). HQ 23:36Z scan: BidNet live (594 open, 85 matches), SAM 97, Bonfire/DIBBS down. 2 NEW matches: Douglas alarm monitoring EVALUATE (watchlisted), DOI wastewater line NO. Packages read: AHEC CAVEA -> NO (theatrical lighting, quals not met); Fort Collins doors (pre-bid 11/2 15:00 optional, due 12/2 15:00, bonds+Davis-Bacon); Littleton garage doors (mandatory 11/3 14:00, due 11/24 12:00, $100k bond); COS irrigation repairs (optional 11/6, due 12/2 14:00). Gmail inbox search failed on quota (3 tries); CRM/sent searches empty. GO 5, sub pricing 0/5.",
+  "last_hourly_check": "2026-10-28T01:21Z: GovTribe still BLOCKED (22nd hour). HQ 00:36Z run SAM-only (SAM 94; BidNet last success 23:36Z, 85 matches; Bonfire/DIBBS down). No new matches; Douglas alarm-monitoring package not yet downloaded. Gmail inbox search still failing on quota (4th hour-tries total: 3 last hour, 2 this hour); CRM/sent searches empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
