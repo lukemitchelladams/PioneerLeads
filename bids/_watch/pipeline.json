@@ -66,7 +66,7 @@
       "due": "2026-10-28T14:00:00-06:00",
       "portal": "RMEPS (BidNet)",
       "decision": "NO",
-      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional ≤3% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
+      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
       "prebid": "2026-10-09T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Plumbing sub",
@@ -355,10 +355,10 @@
       "sol": "RFP 26-021-1",
       "trade": "Electrical",
       "due": "2026-11-06T14:00:00-07:00",
-      "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
+      "due_source": "RFP 26-021-1 \u00a71.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
       "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login).",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (\u00a71.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (\u00a77) not in hand (Bonfire/BidNet login).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -396,14 +396,14 @@
       "due_source": "RFP 27-007 p.2: 'Solicitation Due Date: November 6, 2026 Time: 2:00 PM (MST)'; Exhibit A timeline: Questions Due 10/21/2026, Questions Answered 10/23/2026, Contract Start 7/01/2027",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A §2 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. §5.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP §2.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
+      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A \u00a72 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. \u00a75.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP \u00a72.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
       "prebid": "2026-10-13T08:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "n/a (NO)",
       "subs": "Not started (NO)",
       "sub_pricing": "None",
       "folder": "bids/cherrycreek-custodial-27-007",
-      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP §2.8)"
+      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP \u00a72.8)"
     },
     {
       "id": "parks-oncall-mowing",
@@ -929,6 +929,26 @@
       "sub_pricing": "None",
       "folder": "bids/dougco-generator-037-26",
       "contact": "Douglas County Purchasing"
+    },
+    {
+      "id": "littleton-pedestrian-doors",
+      "agency": "City of Littleton",
+      "title": "On-Call Commercial Pedestrian Door Repairs",
+      "sol": "RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
+      "trade": "Facilities / doors",
+      "due": "2026-11-24T12:00:00-07:00",
+      "due_source": "BidNet listing closing_text 11/24/2026 12:00 PM MST",
+      "portal": "BidNet / RMEPS",
+      "decision": "EVALUATE",
+      "decision_note": "Surfaced by HQ 07:36Z scan pre-bid table, triaged 2026-10-28 08:22Z. Sibling of the garage-door RFQ 0000440827 (same buyer, same due date). Scanner shows pre-bid 2026-11-04 optional; time, bond and insurance terms to be read from the RFQ once HQ downloads the package (watchlisted). Needs a commercial door/hardware sub.",
+      "prebid": "2026-11-04",
+      "prebid_mandatory": false,
+      "sub_pricing": "None",
+      "folder": null,
+      "doc_gaps": "Package not downloaded yet (RFQ, Attachment A Contract Certification Form, Attachment B Sample Contract listed on BidNet).",
+      "performer": null,
+      "subs": null,
+      "contact": null
     }
   ],
   "events": [
@@ -1141,6 +1161,12 @@
       "when": "2026-10-27T19:36:00-06:00",
       "kind": "Package downloaded",
       "note": "IFB 044-26 + Exhibit B in downloads/bidnet/0000441803. Due 12/3 14:00 MST; no pre-bid; questions by 11/6."
+    },
+    {
+      "bid": "littleton-pedestrian-doors",
+      "when": "2026-10-28T08:22:00+00:00",
+      "kind": "decision",
+      "note": "EVALUATE. Untracked Littleton on-call pedestrian door RFQ found in scanner pre-bid table; optional pre-bid 11/04, due 11/24 12:00 MT (BidNet). Watchlisted for package download."
     }
   ],
   "doc_gaps": [

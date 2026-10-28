@@ -885,7 +885,7 @@
       "at": "2026-10-26T19:33:00Z"
     },
     "8f0e3b72596a4714a555ecd5eb0e899b": {
-      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
       "verdict": "WATCH",
       "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
       "at": "2026-10-26T20:28:00Z"
@@ -941,7 +941,7 @@
     "5627ee97e4ce40e2af289e42601e4afb": {
       "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (SAM notice id; same as GovTribe 8f0e3b72596a4714a555ecd5eb0e899b)",
       "verdict": "WATCH",
-      "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
+      "why": "WATCH (alias of 8f0e3b72\u2026): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
       "at": "2026-10-27T06:26:07+00:00"
     },
     "bidnet:2720966072": {
@@ -1265,6 +1265,24 @@
       "title": "Commerce/NTIA Maintenance Services for Rohde & Schwarz Equipment",
       "reason": "OEM RF test-equipment maintenance; outside our trades.",
       "triaged_at": "2026-10-28T06:21Z"
+    },
+    "bidnet:2721170072": {
+      "decision": "NO",
+      "title": "DOI Y--LB Lateral Water Line and Facilities Replacement for Wastewater System (BidNet mirror of SAM f54174631fdf)",
+      "reason": "Heavy civil / wastewater line construction (rule 8). Same notice already NO under SAM id f54174631fdf46668d424fa88a3a8bf1.",
+      "triaged_at": "2026-10-28T08:22Z"
+    },
+    "bidnet:2721090002": {
+      "decision": "NO",
+      "title": "Northern California Area Office (NCAO) Fire Alarm (BidNet federal mirror)",
+      "reason": "Place of performance Northern California; outside our service area. Fire alarm install is not a trade we self-perform.",
+      "triaged_at": "2026-10-28T08:22Z"
+    },
+    "bidnet:0000440813": {
+      "decision": "EVALUATE",
+      "title": "City of Littleton RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
+      "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Facilities/handyman on-call fit. BidNet listing: published 2026-10-20, closes 2026-11-24 12:00 PM MST, pre-bid 2026-11-04 optional per scanner. Package not downloaded yet; watchlisted so HQ pulls it at :35, then read pre-bid time, bond and insurance terms from the RFQ (rule 0/2).",
+      "triaged_at": "2026-10-28T08:22Z"
     }
   },
   "watched": {
@@ -1450,6 +1468,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T07:21Z: GovTribe still BLOCKED (28th hour). HQ 06:35Z run SAM-only (SAM 97; BidNet last success 05:36Z, 85 matches; Bonfire/DIBBS down). No new matches, no changes. Inbox: 9 threads in the last day, all previously logged; CRM/sent searches empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional).",
+  "last_hourly_check": "2026-10-28T08:22Z: GovTribe still BLOCKED (29th hour). HQ 07:36Z full run: BidNet logged in, 601 open / 87 matches, 2 NEW (both NO: DOI wastewater line mirror, NorCal fire alarm); SAM 97; Bonfire no creds; DIBBS stale since 10/20. Littleton pedestrian doors 0000440813 found untracked -> EVALUATE + watchlisted. Inbox: 9 threads, all previously logged; CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
