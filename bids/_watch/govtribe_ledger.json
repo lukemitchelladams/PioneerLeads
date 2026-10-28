@@ -1432,6 +1432,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T02:21Z: GovTribe still BLOCKED (23rd hour). HQ 01:35Z scan: BidNet live (596 open, 85 matches), SAM 94, Bonfire/DIBBS down. No new matches; 2 changes (Douglas 037-26 generator PM Q&A 1 + inventory xlsx; elevator 26-019 amendment 1, NO bid). HQ re-opened Douglas 037-26 as EVALUATE (due 11/5 14:00). Alarm monitoring IFB 044-26 read (due 12/3 14:00, no pre-bid). Gmail inbox search quota-blocked for the 3rd hour; CRM/sent searches empty. GO 5, sub pricing 0/5.",
+  "last_hourly_check": "2026-10-28T03:21Z: GovTribe still BLOCKED (24th hour). HQ 02:35Z run SAM-only (SAM 94; BidNet last success 01:35Z, 85 matches; Bonfire/DIBBS down). No new matches, no changes; Douglas 037-26 generator docs not yet downloaded. Gmail inbox search quota-blocked for the 4th hour (standard query + is:unread fallback); CRM/sent searches empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
