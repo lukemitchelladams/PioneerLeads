@@ -1,0 +1,115 @@
+[
+  {
+    "key": "metro",
+    "subject": "Metro Water Recovery switchgear and relay maintenance (RFP B-26-019): sub pricing",
+    "bcc": [
+      "info.denver@resapower.com",
+      "contact@powersolutionsgroup.com",
+      "office@precisiontestinggroup.com",
+      "inquiries@shermco.com",
+      "ersmarketing@vertivco.com"
+    ],
+    "files": [
+      "bids/metro-water-switchgear-maintenance/docs/MWR-B26019-Switchgear-Relay-Maintenance.pdf",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 1 - Scope of Services.pdf",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 2 - Price Proposal.xlsx",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 3 - Sample Metro Agreement.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/metro.txt",
+    "mb": 2.3
+  },
+  {
+    "key": "boettcher",
+    "subject": "Jeffco Boettcher Mansion chiller replacement (ITB 26-19289AP-FM): sub pricing",
+    "bcc": [
+      "rockymountain@rasmech.com",
+      "quotes@westechusa.com",
+      "info@haynesmechanical.com",
+      "info@msicolorado.com",
+      "info@maddisonmechanical.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440224/ITB 26-19289AP-FM - Boettcher Mansion Chiller Replacement Project.docx",
+      "bids/_watch/downloads/bidnet/0000440224/Jeffco Beottcher Mansion Chiller Replacement MEP DWGs _100_ CDs__Sealed.pdf",
+      "bids/_watch/downloads/bidnet/0000440224/Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf",
+      "bids/_watch/downloads/bidnet/0000440224/Ins. Reqs. - General _ Umbrella _ Pollution _ Professional.pdf",
+      "bids/_watch/downloads/bidnet/0000440224/261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/boettcher.txt",
+    "mb": 9.8
+  },
+  {
+    "key": "hood",
+    "subject": "Poudre School District kitchen hood inspection and cleaning (IFB 27-701-002): sub pricing",
+    "bcc": [
+      "info@aps-hoods.com",
+      "contact@bravvisusa.com",
+      "peakkitchenexhaust@gmail.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000439455/IFB 27-702-002 Hood Cleaning and Inspection.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Attachment A - Scope of Work.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Attachment B - 2026-27 Calendar.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Attachment C - List of School.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Attachment D - Pricing Form.xlsx",
+      "bids/_watch/downloads/bidnet/0000439455/Attachment E - Insurance.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Addendum 1.0 - Site Visit Details.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Addendum 1.0 - Vendor Q_A.pdf",
+      "bids/_watch/downloads/bidnet/0000439455/Addendum 1.0 List of Kitchen Hoods.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/hood.txt",
+    "mb": 1.9
+  },
+  {
+    "key": "janitorial",
+    "subject": "City of Colorado Springs on-call janitorial (RFP R26-080JW): sub pricing",
+    "bcc": [
+      "sales@ecsoco.com",
+      "info@jkcosprings.com",
+      "admin@sergeantsudsservices.com",
+      "info@crmcleaning.com",
+      "info@springscleaning.net",
+      "gil@cpjdenver.com",
+      "info@teebscleaning.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000441362/R26-080JW On-Call Janitorial Services.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/janitorial.txt",
+    "mb": 2.0
+  },
+  {
+    "key": "laplata",
+    "subject": "La Plata County on-call trades (project 26-053-1215): sub rates",
+    "bcc": [
+      "service@goldwaterplumbing.com",
+      "solidplumbing7@gmail.com",
+      "marco@marcosheating.com",
+      "info@dangerelectric.com"
+    ],
+    "files": [
+      "bids/laplata-oncall-trades/docs/IFB - On-Call Services - Various Trades.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/laplata.txt",
+    "mb": 0.9
+  },
+  {
+    "key": "weld-specs",
+    "subject": "Weld County Jail RTU replacement (B2600111): bid specs",
+    "bcc": [
+      "info@asemech.net",
+      "info@pvair.com",
+      "info@msicolorado.com",
+      "info@originphce.com",
+      "info@longview-hvac.com",
+      "nick.yaw@accutemp-services.com",
+      "info@airflowllc.com"
+    ],
+    "files": [
+      "bids/weld-jail-rtu-b2600111/docs/Bid Specs.docx",
+      "bids/weld-jail-rtu-b2600111/docs/Attachment 1.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-28/weld-specs.txt",
+    "mb": 5.2
+  }
+]
