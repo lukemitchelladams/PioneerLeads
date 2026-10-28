@@ -33,3 +33,5 @@ Silas sent "Bid Submittal.zip" 09:20 MT (Exhibit D with H2 pricing, proposal, 3 
 All Exhibit D lines covered (equal products per Exhibit A Sec. 8; reagents, lab, training included in monthly service).
 Package built at 15% markup: private/TCF DQ 2027000037 - Brown Bison bid package.zip. Silas thanked 10/28.
 Luke still owes: FEIN + VSS number (Exhibit B), signatures (B, E, F), W-9 (Exhibit C), employee count (Exhibit A), COI (Attachment 2), markup OK.
+
+- 2026-10-28 11:21 MT: Silas sent the annual chemical usage estimate Luke asked for (OxyGard, BC 600, Triamine I) with his assumptions (softened makeup, ~10% average boiler load, 70% condensate return, ~270,000 gal makeup/yr; usage within ~20%) and suggested the bid note chemicals are consumables billed on actual usage. Quantities and prices live in private/.
