@@ -2,7 +2,7 @@
   "_comment": "Search profiles for scripts/samgov_watch.py and keyword lists for scripts/bidnet_watch.py. Edit here, not in code. SAM.gov fields: title (keyword), ncode (NAICS), ccode (PSC/FSC), state (place of performance). exclude_keywords veto a match. bonfire_orgs = Euna/Bonfire portal subdomains (<org>.bonfirehub.com) to scan.",
   "profiles": {
     "brownbison": {
-      "label": "Brown Bison Holdings \u2014 HVAC / plumbing / electrical / landscaping / facilities",
+      "label": "Brown Bison Holdings — HVAC / plumbing / electrical / landscaping / facilities",
       "states": [
         "CO"
       ],
@@ -63,6 +63,18 @@
         },
         {
           "ncode": "811310"
+        },
+        {
+          "title": "filtration"
+        },
+        {
+          "title": "reverse osmosis"
+        },
+        {
+          "title": "water softener"
+        },
+        {
+          "title": "water treatment system"
         }
       ],
       "bidnet_keywords": [
@@ -119,7 +131,19 @@
         "hood cleaning",
         "pool",
         "asbestos",
-        "abatement"
+        "abatement",
+        "filtration",
+        "filter system",
+        "reverse osmosis",
+        "water softener",
+        "softener",
+        "ultrafiltration",
+        "side-stream",
+        "sidestream",
+        "water treatment system",
+        "pretreatment",
+        "iron removal",
+        "pool filter"
       ],
       "exclude_keywords": [
         "excavation",
@@ -146,7 +170,7 @@
       ]
     },
     "jones-bearing": {
-      "label": "Jones Bearing Co. dba American Pulley / ConveyMor (Luke's dad) \u2014 MANUFACTURER: bucket elevators, hot lime handling, bearings, pulleys",
+      "label": "Jones Bearing Co. dba American Pulley / ConveyMor (Luke's dad) — MANUFACTURER: bucket elevators, hot lime handling, bearings, pulleys",
       "company_facts": {
         "legal_name": "Jones Bearing Company (trade names American Pulley, ConveyMor)",
         "hq": "Pelham, Alabama; manufacturing in Leeds, Alabama",
@@ -162,7 +186,7 @@
           "ConveyMor": "bucket elevators, drag and apron conveyors, lump breakers, lime proportioners, kiln feed screws"
         },
         "model": "Build and sell product. NOT a service/maintenance contractor. Target supply/purchase solicitations and parts buys, not repair contracts.",
-        "uei_cage": "UNKNOWN \u2014 ask Luke/dad. Required to quote on SAM.gov and DLA DIBBS.",
+        "uei_cage": "UNKNOWN — ask Luke/dad. Required to quote on SAM.gov and DLA DIBBS.",
         "address": "1062A Highway 72, Pelham, AL 35124 (D&B/Manta directory listings)",
         "principal": "Andrew Adams (D&B listing; confirm)",
         "core_per_luke_2026-10-19": "Bucket elevators and hot lime handling equipment are the core. (Luke wrote 'hot line'; read as hot LIME, consistent with ConveyMor lime proportioners and kiln feed screws. Confirm.)",
@@ -270,7 +294,7 @@
       ],
       "_codes_note": "PSC 3110 antifriction bearings; 3130 mounted bearings (pillow blocks, take-ups); 3020 gears/pulleys/sprockets; 3030 belting/drive belts; 3910 conveyors; 3920 material handling equipment (non-self-propelled); 3950 winches/hoists/cranes. NAICS 332991 ball & roller bearing mfg; 333922 conveyor & conveying equipment mfg; 333613 mechanical power transmission equipment mfg; 423840 industrial supplies wholesalers. PSC 4610 water purification equipment (lime slakers/feeders at water & wastewater plants, a federal buyer of lime handling gear: Corps of Engineers, Bureau of Reclamation, military installations).",
       "other_sources": {
-        "DLA DIBBS": "https://www.dibbs.bsm.dla.mil \u2014 where most DLA bearing/pulley/conveyor-part buys post (RFQs by FSC 3110/3130/3020/3910). Viewable without login; quoting needs CAGE + DIBBS registration. Primary source for this profile, not SAM.gov.",
+        "DLA DIBBS": "https://www.dibbs.bsm.dla.mil — where most DLA bearing/pulley/conveyor-part buys post (RFQs by FSC 3110/3130/3020/3910). Viewable without login; quoting needs CAGE + DIBBS registration. Primary source for this profile, not SAM.gov.",
         "GSA eBuy": "Needs a MAS contract. Longer play.",
         "Paper mills (commercial, not government)": "Paper mills are private; their bearing/conveyor buys are not on bid portals. That is a sales-prospecting job (Apollo/HubSpot), not a bid-watch job.",
         "Water/wastewater plants": "Hot lime handling buyers are water & wastewater utilities (lime softening, slaking), cement/lime plants, steel mills, pulp & paper. Municipal utilities DO post on BidNet/RMEPS and state portals: add 'lime' keyword to all municipal watches."
