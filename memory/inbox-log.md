@@ -74,3 +74,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-27 23:22Z hourly (read-only): inbox newer_than:1d = 9 threads, all previously logged; no new mail. CRM-term search: none. Sent last hour: none.
 - 2026-10-28 00:22Z hourly (read-only): Gmail inbox search failed 3x with "Resource has been exhausted (quota)"; CRM-term and sent searches returned empty. Inbox not verified this hour; retry next hour.
 - 2026-10-28 01:21Z hourly (read-only): Gmail inbox searches (standard query and in:inbox newer_than:12h) failed with "Resource has been exhausted (quota)"; CRM-term and sent searches returned empty. Inbox unverified for a second hour.
+- 2026-10-28 02:21Z hourly (read-only): Gmail inbox search failed again with "Resource has been exhausted (quota)" (3rd hour); CRM-term and sent searches returned empty. Inbox unverified.

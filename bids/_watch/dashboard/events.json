@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -32.28
+  "days_left": -32.31
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -25,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -13.45
+  "days_left": -13.48
  },
  {
   "key": "jeffco-dome-glass|Pre-bid (optional)|2026-10-15T10:00:00-06:00",
@@ -39,7 +39,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -12.41
+  "days_left": -12.43
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -53,7 +53,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -8.24
+  "days_left": -8.27
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -67,7 +67,7 @@
   "note": "Colorado Power Wash call (time TBD)",
   "critical": false,
   "past": true,
-  "days_left": -7.41
+  "days_left": -7.43
  },
  {
   "key": "jeffco-dome-glass|Questions due|2026-10-21T10:00:00-06:00",
@@ -81,7 +81,7 @@
   "note": "Ask Andrew Pulford whether we can still bid",
   "critical": false,
   "past": true,
-  "days_left": -6.41
+  "days_left": -6.43
  },
  {
   "key": "adams-2026-766|MANDATORY pre-bid|2026-10-21T10:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "5200 Front Range Pkwy, Watkins. Luke attends.",
   "critical": true,
   "past": true,
-  "days_left": -6.41
+  "days_left": -6.43
  },
  {
   "key": "parker-26-028|Submission|2026-10-22T15:00:00-06:00",
@@ -109,7 +109,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -5.2
+  "days_left": -5.23
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -123,7 +123,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -4.24
+  "days_left": -4.27
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -1.41
+  "days_left": -1.43
  },
  {
   "key": "rtd-126dm016|Briefing (optional)|2026-10-26T14:00:00-06:00",
@@ -151,7 +151,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -1.24
+  "days_left": -1.27
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -165,7 +165,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -1.19
+  "days_left": -1.22
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -179,7 +179,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": true,
-  "days_left": -0.45
+  "days_left": -0.48
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -193,7 +193,7 @@
   "note": "TCF Model CO; sub tech signs attendance log as Brown Bison; consent form + ID emailed first",
   "critical": false,
   "past": true,
-  "days_left": -0.41
+  "days_left": -0.43
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Package downloaded|2026-10-27T15:36:00-06:00",
@@ -207,7 +207,7 @@
   "note": "RFP 26-57 + Attachment A irrigation spec + Attachment B site-visit map in downloads/bidnet/0000441680. Mandatory site visit 2026-11-10 10:00, RSVP to Katie Schwindt.",
   "critical": false,
   "past": true,
-  "days_left": -0.17
+  "days_left": -0.2
  },
  {
   "key": "larimer-jail-fire-alarm|Package downloaded|2026-10-27T15:36:00-06:00",
@@ -221,7 +221,7 @@
   "note": "Q26-09 RFQ + Attachment A PSA in downloads/bidnet/0000441715. Due 11/6 10:00 MT; VESDA (Xtralis/Honeywell) certification required.",
   "critical": false,
   "past": true,
-  "days_left": -0.17
+  "days_left": -0.2
  },
  {
   "key": "dougco-structured-cabling|Package downloaded|2026-10-27T15:36:00-06:00",
@@ -235,7 +235,7 @@
   "note": "RFQ 043-26 + Exhibit A contract in downloads/bidnet/0000441695. Due 12/3 15:00; no pre-bid.",
   "critical": false,
   "past": true,
-  "days_left": -0.17
+  "days_left": -0.2
  },
  {
   "key": "adams-2026-766|Questions due|2026-10-27T17:00:00-06:00",
@@ -249,7 +249,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -0.11
+  "days_left": -0.14
  },
  {
   "key": "fort-collins-transfort-doors|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -263,7 +263,7 @@
   "note": "ITB 10366 + drawings + specs in downloads/bidnet/0000439726. Pre-bid/job walk 11/2 15:00 (optional); due 12/2 15:00; bonds + Davis-Bacon.",
   "critical": false,
   "past": true,
-  "days_left": -0.09
+  "days_left": -0.12
  },
  {
   "key": "littleton-garage-doors|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -277,7 +277,7 @@
   "note": "RFQ + contract forms in downloads/bidnet/0000440827. Mandatory pre-proposal 11/3 14:00; due 11/24 12:00; $100k P&P bond; $100k/yr pool.",
   "critical": false,
   "past": true,
-  "days_left": -0.09
+  "days_left": -0.12
  },
  {
   "key": "cos-parks-irrigation-oncall|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -291,7 +291,21 @@
   "note": "RFP R26-099MZ in downloads/bidnet/0000441782. Optional pre-proposal 11/6; due 12/2 14:00; hourly rate sheet.",
   "critical": false,
   "past": true,
-  "days_left": -0.09
+  "days_left": -0.12
+ },
+ {
+  "key": "dougco-alarm-monitoring|Package downloaded|2026-10-27T19:36:00-06:00",
+  "bid": "dougco-alarm-monitoring",
+  "when": "2026-10-27T19:36:00-06:00",
+  "date": "2026-10-27",
+  "kind": "Package downloaded",
+  "agency": "Douglas County Government",
+  "sol": "IFB 044-26 (BidNet 0000441803)",
+  "decision": "EVALUATE",
+  "note": "IFB 044-26 + Exhibit B in downloads/bidnet/0000441803. Due 12/3 14:00 MST; no pre-bid; questions by 11/6.",
+  "critical": false,
+  "past": true,
+  "days_left": -0.03
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",
@@ -305,7 +319,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 1.76
+  "days_left": 1.73
  },
  {
   "key": "cdoc-tcf-boiler-water|Submission|2026-10-29T17:00:00-06:00",
@@ -319,7 +333,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 1.89
+  "days_left": 1.86
  },
  {
   "key": "cdoc-tcf-boiler-water|Due|2026-10-29T17:00:00-06:00",
@@ -333,7 +347,7 @@
   "note": "TCF boiler DQ quote due on BidNet",
   "critical": false,
   "past": false,
-  "days_left": 1.89
+  "days_left": 1.86
  },
  {
   "key": "cos-r26-069mz-bas|Submission|2026-10-30T14:00:00-06:00",
@@ -347,7 +361,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 2.76
+  "days_left": 2.73
  },
  {
   "key": "rtd-126dm016|Questions due|2026-11-02T14:00:00-07:00",
@@ -361,7 +375,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.8
+  "days_left": 5.77
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -375,7 +389,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.8
+  "days_left": 5.77
  },
  {
   "key": "fort-collins-transfort-doors|Pre-bid (optional)|2026-11-02T15:00:00-07:00",
@@ -389,7 +403,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 5.84
+  "days_left": 5.82
  },
  {
   "key": "access-control-oncall|Pre-bid (optional)|2026-11-03T12:00:00-07:00",
@@ -403,7 +417,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 6.72
+  "days_left": 6.69
  },
  {
   "key": "littleton-garage-doors|MANDATORY pre-bid|2026-11-03T14:00:00-07:00",
@@ -417,7 +431,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 6.8
+  "days_left": 6.77
  },
  {
   "key": "jeffco-dome-glass|Submission|2026-11-04T10:00:00-07:00",
@@ -431,7 +445,21 @@
   "note": "Jeffco",
   "critical": true,
   "past": false,
-  "days_left": 7.64
+  "days_left": 7.61
+ },
+ {
+  "key": "dougco-generator-037-26|Submission|2026-11-05T14:00:00-07:00",
+  "bid": "dougco-generator-037-26",
+  "when": "2026-11-05T14:00:00-07:00",
+  "date": "2026-11-05",
+  "kind": "Submission",
+  "agency": "Douglas County Government",
+  "sol": "IFB 037-26 (BidNet 0000439630)",
+  "decision": "EVALUATE",
+  "note": "BidNet",
+  "critical": true,
+  "past": false,
+  "days_left": 8.77
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -445,7 +473,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 8.93
+  "days_left": 8.9
  },
  {
   "key": "cos-parks-irrigation-oncall|Pre-bid (optional)|2026-11-06T09:00:00-07:00",
@@ -459,7 +487,7 @@
   "note": "",
   "critical": false,
   "past": false,
-  "days_left": 9.59
+  "days_left": 9.57
  },
  {
   "key": "larimer-jail-fire-alarm|Submission|2026-11-06T10:00:00-07:00",
@@ -473,7 +501,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 9.64
+  "days_left": 9.61
  },
  {
   "key": "parker-generator|Submission|2026-11-06T14:00:00-07:00",
@@ -487,7 +515,7 @@
   "note": "RMEPS (BidNet 0000440494) + Bonfire",
   "critical": true,
   "past": false,
-  "days_left": 9.8
+  "days_left": 9.77
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -501,7 +529,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 12.8
+  "days_left": 12.77
  },
  {
   "key": "doi-estes-janitorial|Submission|2026-11-10T00:00:00-07:00",
@@ -515,7 +543,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 13.22
+  "days_left": 13.19
  },
  {
   "key": "arapahoe-south-lawns-irrigation|MANDATORY pre-bid|2026-11-10T10:00:00-07:00",
@@ -529,7 +557,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 13.64
+  "days_left": 13.61
  },
  {
   "key": "psd-27-701-002-hood|Mandatory site visit|2026-11-10T13:30:00-07:00",
@@ -543,7 +571,7 @@
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": false,
-  "days_left": 13.78
+  "days_left": 13.75
  },
  {
   "key": "metro-water-b26019|Submission|2026-11-12T14:00:00-07:00",
@@ -557,7 +585,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.8
+  "days_left": 15.77
  },
  {
   "key": "adams-2026-766|Submission|2026-11-12T15:00:00-07:00",
@@ -571,7 +599,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 15.84
+  "days_left": 15.82
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -585,7 +613,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 16.8
+  "days_left": 16.77
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -599,7 +627,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 19.8
+  "days_left": 19.77
  },
  {
   "key": "boettcher-chiller|Submission|2026-11-16T14:00:00-07:00",
@@ -613,7 +641,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 19.8
+  "days_left": 19.77
  },
  {
   "key": "laplata-oncall-trades|Submission|2026-11-17T10:00:00-07:00",
@@ -627,7 +655,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 20.64
+  "days_left": 20.61
  },
  {
   "key": "carpet-upholstery-fiber|Submission|2026-11-19T14:00:00-07:00",
@@ -641,7 +669,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 22.8
+  "days_left": 22.77
  },
  {
   "key": "access-control-oncall|Submission|2026-11-19T15:30:00-07:00",
@@ -655,7 +683,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 22.87
+  "days_left": 22.84
  },
  {
   "key": "psd-27-701-002-hood|Submission|2026-11-20T14:00:00-07:00",
@@ -669,7 +697,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 23.8
+  "days_left": 23.77
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -683,7 +711,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 23.8
+  "days_left": 23.77
  },
  {
   "key": "cos-oncall-janitorial|Submission|2026-11-23T14:00:00-07:00",
@@ -697,7 +725,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 26.8
+  "days_left": 26.77
  },
  {
   "key": "cos-oncall-snow|Submission|2026-11-23T14:00:00-07:00",
@@ -711,7 +739,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 26.8
+  "days_left": 26.77
  },
  {
   "key": "littleton-garage-doors|Submission|2026-11-24T12:00:00-07:00",
@@ -725,7 +753,7 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 27.72
+  "days_left": 27.69
  },
  {
   "key": "va-36c25927q0019|Submission|2026-11-30T00:00:00-07:00",
@@ -739,7 +767,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 33.22
+  "days_left": 33.19
  },
  {
   "key": "arapahoe-south-lawns-irrigation|Submission|2026-11-30T14:00:00-07:00",
@@ -753,7 +781,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 33.8
+  "days_left": 33.77
  },
  {
   "key": "westminster-26-002|Submission|2026-12-01T14:00:00-07:00",
@@ -767,7 +795,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 34.8
+  "days_left": 34.77
  },
  {
   "key": "cos-parks-irrigation-oncall|Submission|2026-12-02T14:00:00-07:00",
@@ -781,7 +809,7 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 35.8
+  "days_left": 35.77
  },
  {
   "key": "fort-collins-transfort-doors|Submission|2026-12-02T15:00:00-07:00",
@@ -795,21 +823,21 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 35.84
+  "days_left": 35.82
  },
  {
-  "key": "dougco-alarm-monitoring|Submission|2026-12-03T00:00:00-07:00",
+  "key": "dougco-alarm-monitoring|Submission|2026-12-03T14:00:00-07:00",
   "bid": "dougco-alarm-monitoring",
-  "when": "2026-12-03T00:00:00-07:00",
+  "when": "2026-12-03T14:00:00-07:00",
   "date": "2026-12-03",
   "kind": "Submission",
   "agency": "Douglas County Government",
-  "sol": "BidNet 0000441803",
+  "sol": "IFB 044-26 (BidNet 0000441803)",
   "decision": "EVALUATE",
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 36.22
+  "days_left": 36.77
  },
  {
   "key": "dougco-structured-cabling|Submission|2026-12-03T15:00:00-07:00",
@@ -823,6 +851,6 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 36.84
+  "days_left": 36.82
  }
 ]
