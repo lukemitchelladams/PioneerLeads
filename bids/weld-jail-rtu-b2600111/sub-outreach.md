@@ -20,3 +20,16 @@ Phone-only backups: MTech Mechanical (Loveland) 970-624-8000 (large, government 
 Mountain States Mechanical (Windsor) 970-556-3249. Denver backstop: Rasmussen Mechanical rockymountain@rasmech.com.
 
 If no sub commits to the 11/05 walk by Mon 11/02, Luke attends for Brown Bison (rule 0b).
+
+## Backup candidates from the 09:40 MT hourly search (not contacted; emails from search snippets, company sites blocked from the cloud container)
+| Company | City | Email (unverified) | Phone | Fit |
+|---|---|---|---|---|
+| Kuck Mechanical Contractors | Loveland | sales@kuckmechanical.com | (970) 461-3553 | Commercial HVAC design-build, fab shop, $5k-$6M projects, CSU work |
+| Horizon Mechanical Solutions | Fort Collins (Greeley office per one listing) | projects@horizonmechs.com | (970) 482-7333 | Commercial/industrial/federal mechanical, controls, fabrication |
+| Air Comfort, Inc. | Fort Collins | sales@aircomfortcolorado.com | (970) 490-1458 | Commercial HVAC, BAS, design-build; 100-ton rooftop units cited |
+| Air Comfort Complete | Loveland | office@aircomfortcomplete.com | (970) 292-8849 | Commercial HVAC in Loveland/Northern CO |
+
+Phone-only: Greeley Furnace Co. (970) 356-0121 (commercial installs page); McCreery & Sun of Colorado 970-339-5740 (full-service mechanical since 1974);
+Strait Mechanical, Evans (402) 684-2668 (WOSB, commercial/industrial); M.D. Heating & Air, 913 38th Ave Ct, Greeley (Blue Book; no phone found).
+
+- 2026-10-28 09:40 MT (hourly scan, read-only): parallel search found 24 candidates; the 7 above were emailed by HQ at 09:1x MT, so the hourly scan sent nothing. Use the backups if fewer than 3 of the 7 answer by Mon 11/02.

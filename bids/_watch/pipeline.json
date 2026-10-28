@@ -66,7 +66,7 @@
       "due": "2026-10-28T14:00:00-06:00",
       "portal": "RMEPS (BidNet)",
       "decision": "NO",
-      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional ≤3% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
+      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
       "prebid": "2026-10-09T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Plumbing sub",
@@ -355,10 +355,10 @@
       "sol": "RFP 26-021-1",
       "trade": "Electrical",
       "due": "2026-11-06T14:00:00-07:00",
-      "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
+      "due_source": "RFP 26-021-1 \u00a71.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
       "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login).",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (\u00a71.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (\u00a77) not in hand (Bonfire/BidNet login).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -396,14 +396,14 @@
       "due_source": "RFP 27-007 p.2: 'Solicitation Due Date: November 6, 2026 Time: 2:00 PM (MST)'; Exhibit A timeline: Questions Due 10/21/2026, Questions Answered 10/23/2026, Contract Start 7/01/2027",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A §2 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. §5.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP §2.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
+      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A \u00a72 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. \u00a75.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP \u00a72.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
       "prebid": "2026-10-13T08:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "n/a (NO)",
       "subs": "Not started (NO)",
       "sub_pricing": "None",
       "folder": "bids/cherrycreek-custodial-27-007",
-      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP §2.8)"
+      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP \u00a72.8)"
     },
     {
       "id": "parks-oncall-mowing",
@@ -983,8 +983,8 @@
       "prebid": "2026-11-05T09:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "HVAC sub TBD",
-      "subs": "Sub list in progress 10/28",
-      "sub_pricing": "None",
+      "subs": "7 HVAC firms emailed by HQ 10/28 09:1x MT (ASE, Poudre Valley Air, MSI, Origin PHCE, Longview, Accutemp, Air Flow); 4 backup firms + 4 phone-only in sub-outreach.md",
+      "sub_pricing": "None (7 firms emailed 10/28; answers requested by 11/12)",
       "folder": "bids/weld-jail-rtu-b2600111",
       "contact": "not in hand"
     },
@@ -1407,6 +1407,12 @@
       "when": "2026-10-28T14:04:00+00:00",
       "kind": "outreach",
       "note": "Delivery delayed on the 10/27 pricing request to Rock Solid (ryan@rocksolidhs.com): recipient mailbox out of storage (452 4.2.2). Gmail retries until Fri 10/30 06:55 PDT. Treat Rock Solid as unreached; Luke should call them."
+    },
+    {
+      "bid": "weld-jail-rtu-b2600111",
+      "when": "2026-10-28T15:40:00+00:00",
+      "kind": "outreach",
+      "note": "Hourly scan added 4 backup HVAC candidates + 4 Greeley phone-only firms to sub-outreach.md (HQ had already emailed 7 firms at 09:1x MT; pricing asked for by 11/12; MANDATORY walk 11/05 09:00)."
     }
   ],
   "doc_gaps": [
