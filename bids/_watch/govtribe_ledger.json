@@ -1087,7 +1087,7 @@
     },
     "bidnet:0000441668": {
       "decision": "NO",
-      "reason": "Security Electronics Maintenance & Support: detention security electronics, outside our trades (same call as Fort Carson ICIDS) | 2026-10-28 16:00Z: BidNet now shows MANDATORY onsite visit 2026-11-03 12:00 at 7375 S Potomac St, Centennial.",
+      "reason": "Security Electronics Maintenance & Support: detention security electronics, outside our trades (same call as Fort Carson ICIDS) | 2026-10-28 16:00Z: BidNet now shows MANDATORY onsite visit 2026-11-03 12:00 at 7375 S Potomac St, Centennial. | RFP read: RSVP kschwindt@arapahoegov.com for the 11/03 12:00 mandatory tour (valid ID, max 3); CJIS-certified staff; 4-hour critical response; Avigilon VMS / Omron PLC; due 11/25 14:00.",
       "triaged_at": "2026-10-27T20:22Z"
     },
     "bidnet:0000441710": {
@@ -1351,15 +1351,15 @@
       "triaged_at": "2026-10-28T16:00Z"
     },
     "bidnet:0000441189": {
-      "decision": "EVALUATE",
+      "decision": "DECIDE",
       "title": "Weld RE-4 RFP 27-02 Grandview Elementary Roof Replacement (due 2026-12-02)",
-      "reason": "MANDATORY job walk 2026-11-04 15:00 at Grandview Elementary. Roofing is outside core trades (same DECIDE as Morgan roof).",
+      "reason": "RFP 27-02 read 2026-10-28: $1,200,000 roofing budget, $500/day LDs, 100% bondability letter, MANDATORY pre-proposal 11/04 15:00. Roofing outside our trades; recommend NO; Luke decides with Morgan roof.",
       "triaged_at": "2026-10-28T16:00Z"
     },
     "bidnet:0000440811": {
-      "decision": "EVALUATE",
+      "decision": "NO",
       "title": "Trails Park & Recreation District Spring Creek Park Pavilion Repairs (due 2026-11-30)",
-      "reason": "MANDATORY job walk 2026-11-04 13:00 at 4001 S Himalaya St, Aurora. Facilities repair fit; read the RFP before committing Luke to the walk.",
+      "reason": "ITB read 2026-10-28: licensed GC 'in business and in continuous operation for a minimum of 4 years' required; full P&P&warranty bond; structural CMU rebuild outside our trades. Mandatory site tour 11/04 13:00 skipped.",
       "triaged_at": "2026-10-28T16:00Z"
     },
     "bidnet:0000439933": {
@@ -1564,6 +1564,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T15:21Z (ran 15:28Z): GovTribe still BLOCKED (36th hour). HQ 14:44Z run SAM-only (SAM 106; BidNet last success 13:47Z, 87 matches/604 open; Bonfire no creds; DIBBS stale since 10/20). No new matches, no changes. HQ sweep (56f0567) added Weld County B2600111 Jail 1 East Gym RTU Replacement as GO pending docs (MANDATORY walk 2026-11-05 09:00 Greeley; due 11/19 10:00) and Morgan County roof as DECIDE (optional walk 10/29 10:00); 9 new EVALUATE rows watchlisted; CMC custodial NO. Weld had no sub-outreach file -> building one (rule 0b). Inbox: 12 threads, all previously logged; H2 Exhibit D pricing not yet received (promised 10:00 MT). CRM/sent empty. GO 6, sub pricing 0/6. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional); Weld RTU 11/5 09:00 MANDATORY (8 days). || 16:00Z addendum: HQ 15:37Z full run: BidNet 606/88, 1 NEW (Arvada on-call GC -> EVALUATE, watchlisted), 7 changed: mandatory walks now known for Arapahoe security electronics (11/03 12:00), Spring Creek pavilion (11/04 13:00), Grandview roof (11/04 15:00); DPS fire suppression and Biology duct NO (mandatory pre-bids passed). Weld RTU specs downloaded and read (mandatory 11/05 09:00 confirmed; no bid bond; 100% P&P over $50k; no Davis-Bacon).",
+  "last_hourly_check": "2026-10-28T16:21Z: GovTribe still BLOCKED (37th hour). HQ 15:37Z full run (no newer push yet): BidNet 606/88, SAM 106, Bonfire no creds, DIBBS stale since 10/20. Inbox: H2 Global Exhibit D pricing ARRIVED 15:20Z (Silas Norwood, 'Bid Submittal.zip'; not downloaded by the read-only scan; HQ assembles the quote). Packages read: Spring Creek pavilion -> NO (4-year GC requirement, structural masonry); Arapahoe RFP 26-53 security electronics: MANDATORY 11/03 12:00 tour, RSVP kschwindt@arapahoegov.com, CJIS staff, 4-hr response; Grandview roof RFP 27-02 -> DECIDE (recommend NO: $1.2M roofing, LDs, bondability). GO 6, sub pricing 1/6 (TCF in hand). Deadlines <72h: TCF quote 2026-10-29T17:00 MT; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Arapahoe security 11/3 12:00 (MANDATORY, RSVP), Denver access control 11/3 12:00 (optional), Littleton garage 11/3 14:00 (MANDATORY), Littleton pedestrian 11/4 15:00 (optional), Grandview roof 11/4 15:00 (MANDATORY, DECIDE); Weld RTU 11/5 09:00 MANDATORY (8 days).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

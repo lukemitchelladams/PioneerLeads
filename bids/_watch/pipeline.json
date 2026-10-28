@@ -547,12 +547,12 @@
       "due": "2026-10-29T17:00:00-06:00",
       "portal": "BidNet",
       "decision": "GO (walk)",
-      "decision_note": "Luke 2026-10-26: pursue, but Luke will NOT attend. Correction sent to Jennifer Garvin: a sub's technician will represent Brown Bison; asked if that satisfies the mandatory visit and what clearance is needed. Emailed Summit Laboratories (Denver, info@summitlaboratories.com, 303-293-9862) and H2 Global Solutions (Colo. Springs/Goddard KS, sales@h2gs.com, 719-694-0515) asking for a tech at the 10/27 10:00 walk and pricing by 10/28 noon. Quote due 10/29 17:00. | 10/26 Jennifer Garvin: a representative may attend if they write Brown Bison's company name on the Site Visit Attendance Log; they must first email a signed Consent to Search form + copy of ID (solicitation sec. 4, p. 2) for a background check. No sub has replied as of 11:19 MT. | Full package in docs/ (DQ + MOD 1/2, Exhibits A-G, Attachments 1-2). DQ sec. 4: attendees email signed Exhibit G Consent to Search + photo ID copy to kimberly.rusgrove@state.co.us and pass a background check. Site: 21000 Hwy 350 East, Model CO 81059. TRS (Mark) called Luke back 10/26. | 10/27: Andrew (H2) attended walk; Luke heard only 1 other bidder expected today. Exhibits B and E prefilled in private/ (FEIN, VSS number, quote answers and signature left for Luke).",
+      "decision_note": "Luke 2026-10-26: pursue, but Luke will NOT attend. Correction sent to Jennifer Garvin: a sub's technician will represent Brown Bison; asked if that satisfies the mandatory visit and what clearance is needed. Emailed Summit Laboratories (Denver, info@summitlaboratories.com, 303-293-9862) and H2 Global Solutions (Colo. Springs/Goddard KS, sales@h2gs.com, 719-694-0515) asking for a tech at the 10/27 10:00 walk and pricing by 10/28 noon. Quote due 10/29 17:00. | 10/26 Jennifer Garvin: a representative may attend if they write Brown Bison's company name on the Site Visit Attendance Log; they must first email a signed Consent to Search form + copy of ID (solicitation sec. 4, p. 2) for a background check. No sub has replied as of 11:19 MT. | Full package in docs/ (DQ + MOD 1/2, Exhibits A-G, Attachments 1-2). DQ sec. 4: attendees email signed Exhibit G Consent to Search + photo ID copy to kimberly.rusgrove@state.co.us and pass a background check. Site: 21000 Hwy 350 East, Model CO 81059. TRS (Mark) called Luke back 10/26. | 10/27: Andrew (H2) attended walk; Luke heard only 1 other bidder expected today. Exhibits B and E prefilled in private/ (FEIN, VSS number, quote answers and signature left for Luke). | 2026-10-28 09:20 MT: Silas Norwood emailed 'Luke, just got this wrapped up. Call if I missed something' with Bid Submittal.zip (H2 pricing). Quote package with COI due to Luke for signature by 16:00 MT; DQ closes Thu 10/29 17:00 MDT.",
       "prebid": "2026-10-27T10:00:00-06:00",
       "prebid_mandatory": true,
       "performer": "Water-treatment sub TBD",
       "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com) attending 10/27 for Brown Bison; signed Exhibit G forwarded to kimberly.rusgrove@state.co.us cc Jennifer Garvin 2026-10-26 15:09 MT. Pricing due to us Wed 10/28 noon. | 10/27 07:05 MT: Silas's form had no photo ID; asked him to email ID to Kimberly Rusgrove (cc'd) before the 10 AM walk.",
-      "sub_pricing": "None (due 10/28 noon)",
+      "sub_pricing": "In hand (H2 Global 'Bid Submittal.zip' emailed by Silas Norwood 2026-10-28 09:20 MT; HQ assembles the quote; prices stay in private/)",
       "folder": "bids/cdoc-tcf-boiler-water",
       "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
     },
@@ -1110,10 +1110,10 @@
       "sol": "BidNet 0000441668",
       "trade": "Low-voltage",
       "due": "2026-11-25T14:00:00-07:00",
-      "due_source": "BidNet listing date only (time placeholder)",
+      "due_source": "RFP 26-53: 'Proposal will be received until: November 25, 2026, 2:00 p.m.' on BidNet",
       "portal": "BidNet",
       "decision": "EVALUATE",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Onsite Visit, Attendance Mandatory, 11/03/2026 12:00 PM MST, 7375 S. Potomac St. Centennial'. Arapahoe County RFP 26-53 security electronics maintenance (due 11/25 14:00): low-voltage sub needed; same day as Denver access-control walk and Littleton garage walk.",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Onsite Visit, Attendance Mandatory, 11/03/2026 12:00 PM MST, 7375 S. Potomac St. Centennial'. Arapahoe County RFP 26-53 security electronics maintenance (due 11/25 14:00): low-voltage sub needed; same day as Denver access-control walk and Littleton garage walk. | RFP 26-53 read 2026-10-28 16:30Z: 'Pre-Solicitation Meeting: Mandatory November 3, 2026, 12:00 pm. Location: 7375 S. Potomac St. Centennial Co. 80112. Meet in the lobby of the Detention Facility. For the initial tour, a valid ID. No weapons, photographs allowed. Limit to 3 per vendor. Please RSVP to kschwindt@arapahoegov.com'. Questions 11/06 14:00 on BidNet. Scope: maintenance, support and advisory for Justice Center security electronics: 'cameras (CCTV), door controls (PLC & HMI), intercoms, paging'; 'on-site response within 4 hours for critical failures, and restore systems to full operation within 24 hours'; '24/7 on-call support'; 'Must be able to support the following equipment: Avigilon VMS, Omron PLCs'; 'Staff must be CJIS-certified'. Needs a detention-security-electronics sub; same contact (Katie Schwindt) as the Arapahoe irrigation RFP.",
       "prebid": "2026-11-03T12:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "Sub TBD",
@@ -1128,11 +1128,11 @@
       "title": "Spring Creek Park Pavilion Repairs",
       "sol": "BidNet 0000440811",
       "trade": "Facilities/handyman",
-      "due": "2026-11-30T14:00:00-07:00",
-      "due_source": "BidNet listing date only (time placeholder)",
+      "due": "2026-11-30T12:00:00-07:00",
+      "due_source": "ITB: 'Bid Submission Deadline November 30, 2026 at 12:00 PM (noon) Mountain Time'",
       "portal": "BidNet",
-      "decision": "EVALUATE",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 01:00 PM MST, 4001 S. Himalaya St, Aurora'. Pavilion repairs (Trails Park & Rec, due 11/30 14:00): facilities/handyman fit; RFP PDF listed, read it before deciding whether Luke attends 11/04.",
+      "decision": "NO",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 01:00 PM MST, 4001 S. Himalaya St, Aurora'. Pavilion repairs (Trails Park & Rec, due 11/30 14:00): facilities/handyman fit; RFP PDF listed, read it before deciding whether Luke attends 11/04. | ITB read 2026-10-28 16:30Z: structural repair after a vehicle strike (shoring, CMU demolition/rebuild, pavers, wood ceiling), insurance-funded; 'SITE TOUR ... 1:00 PM Mountain Time on Wednesday, November 4, 2026 ... Attendance is mandatory'; 'A performance, payment and warranty bond in the full amount of the contract price shall be required'; QUALIFICATIONS: 'general contractor holding a current contractor license ... in business and in continuous operation for a minimum of 4 years'. Brown Bison cannot meet the 4-year requirement and structural masonry is outside our trades -> NO.",
       "prebid": "2026-11-04T13:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "Sub TBD",
@@ -1148,10 +1148,10 @@
       "sol": "BidNet 0000441189",
       "trade": "Roofing",
       "due": "2026-12-02T14:00:00-07:00",
-      "due_source": "BidNet listing date only (time placeholder)",
+      "due_source": "RFP 27-02: 'PROPOSAL SUBMISSION DEADLINE: DECEMBER 2ND, 2026 NO LATER THAN 2:00 PM MT'",
       "portal": "BidNet",
-      "decision": "EVALUATE",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 03:00 PM MST, Grandview Elementary School'. Roofing (Weld RE-4 RFP 27-02): outside core trades, same call as Morgan roof. DECIDE with Luke before 11/04.",
+      "decision": "DECIDE",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 03:00 PM MST, Grandview Elementary School'. Roofing (Weld RE-4 RFP 27-02): outside core trades, same call as Morgan roof. DECIDE with Luke before 11/04. | RFP 27-02 read 2026-10-28 16:30Z: 'Mandatory PreProposal Meeting & Site Visit - November 4th at 3 pm MT'; questions by 11/11 14:00; 'The District has established a budget of $1,200,000'; 'Liquidated Damages in the amount of $500 per day'; 'Letter of Bondability from your surety providing 100% Performance and Payment Bonds'. Roofing contractor RFP, outside our trade list; recommendation NO unless Luke wants to enter roofing with a bonded roofing sub. Same decision as Morgan roof.",
       "prebid": "2026-11-04T15:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "Sub TBD",
@@ -1482,6 +1482,30 @@
       "when": "2026-10-28T16:00:00+00:00",
       "kind": "decision",
       "note": "EVALUATE. Arvada on-call GC services (26-FAC-055) due 11/17 14:00; pre-bid unknown until the PDF is read; watchlisted."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-28T15:20:00+00:00",
+      "kind": "sub-pricing",
+      "note": "H2 Global pricing received: Silas Norwood emailed 'Bid Submittal.zip' at 09:20 MT ('just got this wrapped up'). HQ builds Exhibits A-G + COI package for Luke's signature by 16:00 MT; DQ 2027000037 closes 10/29 17:00 MDT."
+    },
+    {
+      "bid": "bidnet-0000440811",
+      "when": "2026-10-28T16:30:00+00:00",
+      "kind": "decision",
+      "note": "NO. Spring Creek pavilion ITB requires a licensed GC 'in business and in continuous operation for a minimum of 4 years' plus full P&P&warranty bond; structural CMU rebuild is outside our trades. Mandatory tour 11/04 13:00 not needed."
+    },
+    {
+      "bid": "bidnet-0000441668",
+      "when": "2026-10-28T16:30:00+00:00",
+      "kind": "prebid",
+      "note": "RFP 26-53 read: MANDATORY pre-solicitation 11/03 12:00 at the Arapahoe Justice Center detention lobby, RSVP to kschwindt@arapahoegov.com, valid ID, max 3 people; CJIS-certified staff, 4-hr critical response, Avigilon/Omron systems. Luke must RSVP and bring a security-electronics sub, or drop it."
+    },
+    {
+      "bid": "bidnet-0000441189",
+      "when": "2026-10-28T16:30:00+00:00",
+      "kind": "decision",
+      "note": "DECIDE (recommend NO): Grandview Elementary roof RFP 27-02 is a $1,200,000 roofing project with $500/day LDs and a 100% bondability letter; mandatory walk 11/04 15:00. Roofing is outside our trade list."
     }
   ],
   "doc_gaps": [
