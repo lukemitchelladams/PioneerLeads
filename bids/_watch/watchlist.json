@@ -387,6 +387,13 @@
    "match": "alarm monitoring services for douglas county",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "Douglas County 037-26 Generator PM & Repairs",
+   "source": "bidnet",
+   "match": "Generator Preventative Maintenance & Repairs for Douglas County",
+   "folder": "bids/dougco-generator-037-26",
+   "govtribe_ids": []
   }
  ]
 }
