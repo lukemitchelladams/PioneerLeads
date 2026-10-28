@@ -1186,10 +1186,10 @@
       "sol": "26-FAC-055 (BidNet 0000441833)",
       "trade": "Facilities / on-call GC",
       "due": "2026-11-17T14:00:00-07:00",
-      "due_source": "BidNet listing closing_text 11/17/2026 02:00 PM MST",
+      "due_source": "RFQ 26-FAC-055: 'Qualifications Due By: 11/17/2026 2:00 PM MT'",
       "portal": "BidNet / RMEPS",
-      "decision": "EVALUATE",
-      "decision_note": "New BidNet match 2026-10-28 15:37Z scan, triaged 16:00Z. Same shape as the Brighton on-call GC bid (GO). Pre-bid/walk not shown on BidNet; read the solicitation PDF for it first (rule 0). Watchlisted so HQ downloads 26-FAC-055.",
+      "decision": "NO",
+      "decision_note": "New BidNet match 2026-10-28 15:37Z scan, triaged 16:00Z. Same shape as the Brighton on-call GC bid (GO). Pre-bid/walk not shown on BidNet; read the solicitation PDF for it first (rule 0). Watchlisted so HQ downloads 26-FAC-055. | RFQ read 2026-10-28 18:30Z: Request for Qualifications for a pre-qualified on-call GC pool, 1 year + up to 4 renewals, task orders 'anticipated to generally not exceed $450,000.00 per year', 100% P&P bonds 'typically required for task orders exceeding $100,000.00'; questions on BidNet by 11/05 14:00; no pre-bid meeting in the document. 3.2 Experience: 'Minimum five (5) years of continuous experience as a licensed General Contractor' plus 'at least two (2) projects within the past five (5) years' and 5-10 project references. Brown Bison cannot meet the 5-year requirement -> NO.",
       "prebid": null,
       "prebid_mandatory": false,
       "sub_pricing": "None",
@@ -1524,6 +1524,18 @@
       "when": "2026-10-28T16:27:00+00:00",
       "kind": "outreach",
       "note": "Bounce: info@aps-hoods.com does not exist (550 5.1.1) on both sends (10:26 and 10:44 MT). contact@bravvisusa.com and peakkitchenexhaust@gmail.com delivered. Find another address or phone for APS Hoods."
+    },
+    {
+      "bid": "arvada-oncall-gc",
+      "when": "2026-10-28T18:30:00+00:00",
+      "kind": "decision",
+      "note": "NO. Arvada RFQ 26-FAC-055 requires 'Minimum five (5) years of continuous experience as a licensed General Contractor' and 5-10 project references; due 11/17 14:00; no pre-bid."
+    },
+    {
+      "bid": "psd-27-701-002-hood",
+      "when": "2026-10-28T18:16:00+00:00",
+      "kind": "outreach",
+      "note": "Peak Kitchen Exhaust (Colorado Springs) asked whether the first meeting is in Fort Collins (2 hours away) and if a school closer to Colorado Springs could be the first visit. The IFB site visit is a single MANDATORY walk 11/10 13:30 starting at Traut Elementary; Luke/HQ to reply."
     }
   ],
   "doc_gaps": [

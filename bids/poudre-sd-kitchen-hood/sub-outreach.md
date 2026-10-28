@@ -11,3 +11,4 @@ Ask (HQ email 2026-10-28 10:26 and 10:44 MT, IFB + pricing form attached): atten
 
 ## Log
 - 2026-10-28 09:27 and 09:44 MT (hourly scan, read-only): Gmail failure notices for info@aps-hoods.com logged. No replies yet.
+- 2026-10-28 12:16 MT: Peak Kitchen Exhaust replied: "Where is the first meeting located? Would that be Fort collins? if so we are two hours away so it may be hard for us to get there on time is there any other school that we can make a first visit any closer to colorado springs?" The IFB's site visit is one MANDATORY walk, Tue 11/10 13:30 starting at Traut Elementary, Fort Collins (Addendum 1). Needs a reply from Luke/HQ; if Peak cannot attend, Luke attends for Brown Bison and Peak prices from notes, or we add a Northern Colorado hood cleaner.
