@@ -1237,9 +1237,11 @@
       "triaged_at": "2026-10-28T02:21Z"
     },
     "bidnet:0000441807": {
-      "decision": "NO",
-      "reason": "Ash tree treatment: licensed pesticide-applicator arborist work; scanner non-match.",
-      "triaged_at": "2026-10-28T02:21Z"
+      "decision": "GO",
+      "reason": "HQ triage-b 20:52Z: EAB trunk-injection treatment of City ash trees; low bid; non-mandatory Teams pre-bid 10/30 15:30; grounds = Alex first (Luke). Licensed applicator requirement to confirm from the IFB.",
+      "triaged_at": "2026-10-28T21:35:00+00:00",
+      "title": "City of Aurora IFB B-4799 Ash Tree Treatment",
+      "due": "2026-11-13"
     },
     "bidnet:0000439630": {
       "decision": "EVALUATE",
@@ -1421,6 +1423,13 @@
       "due": "2026-11-23",
       "reason": "Low-voltage electrical (fire alarm + intrusion) at Sand Creek Massacre NHS, Kiowa County (~3h from Denver). Set-aside, magnitude and site-visit date not in hand: GovTribe blocked and HQ's SAM record has no documents yet. Read the SAM attachments when HQ fetches them; mandatory site visit decides it (rule 0).",
       "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "bidnet:0000440339": {
+      "decision": "GO",
+      "title": "Douglas County IFB 039-26 Semi-Annual Maintenance for UPS",
+      "due": "2026-11-04",
+      "reason": "HQ triage-b 20:52Z: full-service (with parts) semi-annual UPS maintenance at County buildings; no pre-bid in the IFB; 1 yr + 4 renewals; subs allowed with County approval; 5 UPS firms emailed by HQ. Addendum 1 issued 10/28, unread.",
+      "triaged_at": "2026-10-28T21:35:00+00:00"
     }
   },
   "watched": {
@@ -1606,6 +1615,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T20:22Z: GovTribe still BLOCKED (41st hour). HQ 19:36Z full pass: BidNet 602 open / 85 matches, SAM 106 (+42 bulk), 1 change (Kardex Megamat new docs, not ours), no NEW. Inbox: nothing unseen. El Paso RFP 26-074 water treatment -> GO (H2), folder + README + sub-outreach built.",
+  "last_hourly_check": "2026-10-28T21:21Z: GovTribe still BLOCKED (42nd hour). HQ 20:36Z SAM-only pass (BidNet last 19:36Z), no NEW, no changes. Inbox: BidNet Addendum 1 notice for Douglas UPS 039-26 (GO) and Addendum 2 for CSU duct (NO). Folders created for Douglas UPS and Aurora Ash (HQ's new GO rows); El Paso: HQ emailed H2 ~20:45Z.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

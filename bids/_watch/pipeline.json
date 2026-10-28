@@ -1018,14 +1018,15 @@
       "due_source": "BidNet listing date only (time placeholder)",
       "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): GO if a sub prices by Mon 11/02 noon. Techs must be \"based within seventy-five (75) miles of Douglas County\"; resumes required. 5 UPS firms emailed 10/28 with IFB.",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): GO if a sub prices by Mon 11/02 noon. Techs must be \"based within seventy-five (75) miles of Douglas County\"; resumes required. 5 UPS firms emailed 10/28 with IFB. | 2026-10-28 21:21Z: folder bids/dougco-ups-039-26 created; Addendum 1 issued today (not read yet: it may answer the 10/23 questions or change dates).",
       "prebid": null,
       "prebid_mandatory": null,
       "performer": "Sub TBD",
       "subs": "5 emailed 10/28",
-      "sub_pricing": "None",
-      "folder": null,
-      "contact": "not in hand"
+      "sub_pricing": "None (5 UPS service firms emailed by HQ 2026-10-28 ~20:45Z; pricing asked by Mon 11/02 noon; bid due 11/04 15:00)",
+      "folder": "bids/dougco-ups-039-26",
+      "contact": "not in hand",
+      "doc_gaps": "Addendum 1 published 2026-10-28 (BidNet notice 15:21 MT) NOT downloaded yet; IFB + Exhibit A in downloads/bidnet/0000440339"
     },
     {
       "id": "bidnet-0000439622",
@@ -1075,13 +1076,13 @@
       "due_source": "BidNet listing date only (time placeholder)",
       "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: pre-bid 2026-10-30, not mandatory. Ash tree treatment needs a licensed applicator sub. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): Low priority, $125,000 budget, low bid; needs a Qualified Supervisor licensed applicator. Alex first (Luke asks); backups Ironwood, Ross Tree, Tree Medicine in triage file. Optional Teams pre-bid 10/30 15:30.",
-      "prebid": "2026-10-30",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: pre-bid 2026-10-30, not mandatory. Ash tree treatment needs a licensed applicator sub. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): Low priority, $125,000 budget, low bid; needs a Qualified Supervisor licensed applicator. Alex first (Luke asks); backups Ironwood, Ross Tree, Tree Medicine in triage file. Optional Teams pre-bid 10/30 15:30. | 2026-10-28 21:21Z: folder bids/aurora-ash-tree-b4799 created; IFB: 'Pre-Bid Meeting October 30, 2026 at 3:30 p.m. MT' online Teams, 'not mandatory but recommended'; due 'November 13, 2026 by 2:00 p.m. MT'; questions to Zfelts@auroragov.org by 11/06 16:00.",
+      "prebid": "2026-10-30T15:30:00-06:00",
       "prebid_mandatory": false,
       "performer": "Alex Ditto (YMS) or arborist sub",
       "subs": "Not started",
       "sub_pricing": "None",
-      "folder": null,
+      "folder": "bids/aurora-ash-tree-b4799",
       "contact": "not in hand"
     },
     {
@@ -1212,8 +1213,8 @@
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "H2 Global Solutions (sub); Brown Bison bids and holds the contract",
-      "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com, office 719-694-0515): email drafted 2026-10-28 20:22Z, not yet sent",
-      "sub_pricing": "None (H2 Global asked by Mon 11/02 noon on the 12-visit all-buildings basis; email drafted for HQ to send)",
+      "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com, office 719-694-0515): HQ emailed 2026-10-28 ~20:45Z (msg 1a1844885b5e3786) with RFP, Addendum 1, sample contract, Sept service report and 6 SDS. Follow-up owed: HQ's email did not mention the Addendum 1 visit-scope conflict (A4 vs A28), the 90-day validity or firm-through-2027 pricing.",
+      "sub_pricing": "None (H2 Global emailed by HQ 2026-10-28 ~20:45Z with the full package; pricing asked by Mon 11/02 noon)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1624,6 +1625,24 @@
       "when": "2026-10-28T20:50:00+00:00",
       "kind": "package",
       "note": "README verified against the RFP/Addendum text (4-agent review): one misquote fixed; visit-scope conflict, 90-day validity, pollution liability Required, renewals and submittal format added."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-28T21:30:00+00:00",
+      "kind": "sub",
+      "note": "HQ emailed Silas (H2 Global) the full El Paso 26-074 package ~20:45Z; pricing asked by Mon 11/02 noon. Follow-up needed on visit-scope conflict and 90-day validity."
+    },
+    {
+      "bid": "bidnet-0000440339",
+      "when": "2026-10-28T21:35:00+00:00",
+      "kind": "addendum",
+      "note": "BidNet notice 15:21 MT: Addendum 1 published for IFB 039-26 (not downloaded yet). Folder created; watchlist folder set."
+    },
+    {
+      "bid": "bidnet-0000441807",
+      "when": "2026-10-28T21:35:00+00:00",
+      "kind": "package",
+      "note": "Folder created; IFB read: non-mandatory Teams pre-bid 10/30 15:30, due 11/13 14:00, questions by 11/06 16:00, low bid, 1 yr + 4 renewals."
     }
   ],
   "doc_gaps": [

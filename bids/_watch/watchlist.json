@@ -444,11 +444,11 @@
       "govtribe_ids": []
     },
     {
-      "name": "UPS semi-annual maintenance (EVALUATE, sweep 10/28; docs+walk needed)",
+      "name": "Douglas County IFB 039-26 Semi-Annual UPS Maintenance (GO)",
       "source": "bidnet",
       "id": "0000440339",
       "match": "0000440339",
-      "folder": null,
+      "folder": "bids/dougco-ups-039-26",
       "govtribe_ids": []
     },
     {
@@ -468,11 +468,11 @@
       "govtribe_ids": []
     },
     {
-      "name": "Ash Tree Treatment (EVALUATE, sweep 10/28; docs+walk needed)",
+      "name": "City of Aurora IFB B-4799 Ash Tree Treatment (GO, Alex first)",
       "source": "bidnet",
       "id": "0000441807",
       "match": "0000441807",
-      "folder": null,
+      "folder": "bids/aurora-ash-tree-b4799",
       "govtribe_ids": []
     },
     {

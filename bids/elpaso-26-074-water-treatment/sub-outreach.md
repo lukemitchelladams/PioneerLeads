@@ -41,3 +41,4 @@ Owner, Brown Bison Holdings LLC
 ## Log
 - 2026-10-28 20:22Z (hourly scan, read-only): file created from the downloaded package; H2 email drafted; nothing sent.
 - 2026-10-28 20:50Z: README and this file corrected after a 4-agent verification against the RFP/Addendum text (visit-scope conflict A4 vs A28, 90-day validity, pollution liability required, one misquote fixed). Email reworded; still nothing sent.
+- 2026-10-28 ~20:45Z (HQ, Luke-authorized Gmail API): HQ emailed Silas its own shorter version (ops/outbox/2026-10-28b/elpaso.txt) with the RFP, Addendum 1, sample contract, September service report and 6 SDS attached; pricing asked by Mon 11/02 noon. Not yet told to Silas: the A4-vs-A28 visit-scope conflict, 90-day validity, firm pricing through 2027. Put those in the follow-up or the call.

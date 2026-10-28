@@ -99,3 +99,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-28 20:22Z hourly (read-only)
 - 0 unseen of 12 in the last 24h (all logged earlier today). No CRM brief. No new bounces, no H2 follow-up, no TCF submission confirmation yet.
+
+## 2026-10-28 21:21Z hourly (read-only)
+- 2 unseen of 14. noreply@bidnet.com 15:21 MT: Addendum 1 published for Douglas County IFB 039-26 Semi-Annual UPS Maintenance (GO since HQ's 20:52Z triage; due 11/04 15:00). Addendum not downloaded yet: watchlist folder set so HQ's next logged-in scan files it; read it next hour. noreply@bidnet.com 14:25 MT: Addendum 2 for CSU DQ-2026-024-BC Biology Duct Insulation (NO bid, mandatory pre-bid passed) - ignored.
+- No CRM brief. No sub replies, no bounces, no TCF submission confirmation.
