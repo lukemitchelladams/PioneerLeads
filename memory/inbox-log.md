@@ -84,3 +84,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-28 09:21Z hourly (read-only): inbox query 9 threads in the last day, all previously logged. CRM/"evening update" search empty. No new mail.
 - 2026-10-28 10:22Z hourly (read-only): inbox query 10 threads; 1 new: 1a182015c3e83e87 Google DMARC aggregate report for brownbisonco.com (automated, no action). CRM/"evening update" search empty.
 - 2026-10-28 11:21Z hourly (read-only): inbox query 8 threads in the last day, all previously logged. CRM/"evening update" search empty. No new mail.
+- 2026-10-28 12:34Z hourly (read-only): inbox query 10 threads; 3 new, all BidNet automated "approaching closing date" reminders: 1a18244f9bd735db TCF DQ 2027000037 (confirms closing 10/29/2026 05:00 PM MDT), 1a18247a5adb26dd Douglas 036-26 janitorial (NO), 1a182488e06f1c02 CMC 1178-26P custodial. No replies from subs or buyers. CRM/"evening update" search empty.
