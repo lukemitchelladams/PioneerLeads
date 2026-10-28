@@ -3,17 +3,17 @@
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Live",
   "detail": "logged in (attempt 1)",
-  "open_count": 602,
-  "matches": 85,
-  "last_success": "2026-10-28T19:36:34+00:00"
+  "open_count": 587,
+  "matches": 83,
+  "last_success": "2026-10-28T21:36:24+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
   "status": "Live (public, not logged in)",
   "detail": "BONFIRE_USER/BONFIRE_PASS not set",
-  "open_count": 2,
+  "open_count": 1,
   "matches": 0,
-  "last_success": "2026-10-28T19:36:34+00:00"
+  "last_success": "2026-10-28T21:36:24+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +42 from the nightly bulk file",
   "open_count": 106,
   "matches": 106,
-  "last_success": "2026-10-28T20:36:40+00:00"
+  "last_success": "2026-10-28T21:36:24+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
