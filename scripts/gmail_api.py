@@ -32,7 +32,20 @@ SCOPES = "https://www.googleapis.com/auth/gmail.modify"
 SIGNATURE = "\n\nLuke Adams\nOwner, Brown Bison Holdings LLC\n(720) 275-1554 | luke@brownbisonco.com\n"
 
 
+ENV_FILE = Path.home() / ".brownbison" / "env"
+REDIRECT = "http://localhost:8765/"
+
+
+def _env_file():
+    if ENV_FILE.exists():
+        for line in ENV_FILE.read_text().splitlines():
+            k, _, v = line.partition("=")
+            if k.strip() and v and k.strip() not in os.environ:
+                os.environ[k.strip()] = v.strip()
+
+
 def _env(name):
+    _env_file()
     v = os.environ.get(name)
     if not v:
         sys.exit(f"{name} is not set. Add it in the cloud environment settings (never in chat or the repo).")
@@ -126,9 +139,43 @@ def token_flow(a):
     print("GMAIL_REFRESH_TOKEN =", creds.refresh_token)
 
 
+def auth_url(_a):
+    """Cloud-side alternative to `token`: print the consent URL. Luke approves; the browser then shows a failed
+    localhost page whose address holds a one-time code, which `exchange` turns into the refresh token."""
+    q = urllib.parse.urlencode({"client_id": _env("GMAIL_CLIENT_ID"), "redirect_uri": REDIRECT, "response_type": "code",
+                                "scope": SCOPES, "access_type": "offline", "prompt": "consent",
+                                "login_hint": SENDER})
+    print("https://accounts.google.com/o/oauth2/v2/auth?" + q)
+
+
+def exchange(a):
+    """Swap the one-time code (or the whole redirected localhost URL) for a refresh token; store it in ~/.brownbison/env."""
+    code = a.code
+    if code.startswith("http"):
+        code = urllib.parse.parse_qs(urllib.parse.urlparse(code).query)["code"][0]
+    data = urllib.parse.urlencode({"code": code, "client_id": _env("GMAIL_CLIENT_ID"),
+                                   "client_secret": _env("GMAIL_CLIENT_SECRET"), "redirect_uri": REDIRECT,
+                                   "grant_type": "authorization_code"}).encode()
+    with urllib.request.urlopen("https://oauth2.googleapis.com/token", data, timeout=30) as r:
+        tok = json.load(r)
+    if "refresh_token" not in tok:
+        sys.exit("No refresh token returned; run auth-url again (it forces the consent screen).")
+    lines = [l for l in ENV_FILE.read_text().splitlines() if not l.startswith("GMAIL_REFRESH_TOKEN=")]
+    lines.append("GMAIL_REFRESH_TOKEN=" + tok["refresh_token"])
+    ENV_FILE.write_text("\n".join(lines) + "\n")
+    ENV_FILE.chmod(0o600)
+    os.environ["GMAIL_REFRESH_TOKEN"] = tok["refresh_token"]
+    print("refresh token stored in ~/.brownbison/env")
+    check(a)
+
+
 def main():
     ap = argparse.ArgumentParser()
     sp = ap.add_subparsers(dest="cmd", required=True)
+    sp.add_parser("auth-url").set_defaults(fn=auth_url)
+    x = sp.add_parser("exchange")
+    x.add_argument("code")
+    x.set_defaults(fn=exchange)
     s = sp.add_parser("send")
     s.add_argument("--to", nargs="*", default=[])
     s.add_argument("--cc", nargs="*", default=[])
