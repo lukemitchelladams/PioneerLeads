@@ -1283,6 +1283,42 @@
       "title": "City of Littleton RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
       "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Package read 2026-10-28 10:22Z: pre-proposal 11/04/2026 3:00 PM MT at Littleton Center (NOT mandatory, optional site walk after); questions due 11/09 12:00 MT; submissions via RMEPS by 11/24/2026 12:00 PM MT; 2+1 yr multiple-award pool, $100,000/yr anticipated budget, $100,000 initial P&P bond, 24/7 emergency with 2-hour arrival; CGL $1M/$2M. Facilities/handyman fit; needs a commercial door/hardware sub. Decision rides with the garage-door RFQ.",
       "triaged_at": "2026-10-28T08:22Z"
+    },
+    "44098e7c120b467eaab640f73e9802cc": {
+      "name": "NAVSUP 31--BEARING,BALL,ANNULA (due 2026-12-01)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
+    },
+    "b2f8868b8e0442338065f3a5a3d81af1": {
+      "name": "NAVSUP 31--BEARING,BALL,ANNULA (due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
+    },
+    "70d44b9e2c6d4b1bbc71813c6d527de4": {
+      "name": "NAVSUP 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS (due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
+    },
+    "b6794a137e8647cca7072ec299896676": {
+      "name": "NAVSUP 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS (due 2026-12-03)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
+    },
+    "e88b2c4bbf9b49c490f20e1bca91bf88": {
+      "name": "NAVSUP 31--BEARING UNIT PLAIN (due 2026-12-30)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
+    },
+    "6fcd8de199f5419ca0fae46dc353a73d": {
+      "name": "NAVSUP 31--BEARING UNIT PLAIN (due 2026-12-30)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T11:21:00Z"
     }
   },
   "watched": {
@@ -1468,6 +1504,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T10:22Z: GovTribe still BLOCKED (31st hour). HQ 09:36Z full run: BidNet logged in, 602 open / 87 matches, no NEW, no changes; SAM 97; Bonfire no creds; DIBBS stale since 10/20. Littleton pedestrian doors 0000440813 package downloaded and read (pre-proposal 11/04 15:00 NOT mandatory; due 11/24 12:00; $100k bond). Inbox: 10 threads, 1 new (DMARC report); CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
+  "last_hourly_check": "2026-10-28T11:21Z: GovTribe still BLOCKED (32nd hour). HQ 10:38Z run SAM-only (SAM 103, 6 NEW jones-bearing NAVSUP bearing RFQs -> all NO; BidNet last success 09:36Z, 87 matches/602 open; Bonfire no creds; DIBBS stale since 10/20). No changes on watched bids. Inbox: 8 threads, all previously logged; CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
