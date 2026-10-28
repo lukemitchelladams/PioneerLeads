@@ -77,3 +77,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-28 02:21Z hourly (read-only): Gmail inbox search failed again with "Resource has been exhausted (quota)" (3rd hour); CRM-term and sent searches returned empty. Inbox unverified.
 - 2026-10-28 03:21Z hourly (read-only): Gmail inbox search quota-blocked for the 4th hour (standard query and is:unread fallback both "Resource has been exhausted"); CRM-term and sent searches returned empty. Inbox unverified since 15:22Z.
 - 2026-10-28 04:21Z hourly (read-only): Gmail inbox search quota-blocked for the 5th hour ("Resource has been exhausted"); CRM-term and sent searches returned empty. Inbox unverified since 15:22Z.
+- 2026-10-28 05:21Z hourly (read-only): Gmail inbox search quota-blocked for the 6th hour ("Resource has been exhausted"); CRM-term and sent searches returned empty. Inbox unverified since 15:22Z.
