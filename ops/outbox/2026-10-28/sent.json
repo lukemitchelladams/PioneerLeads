@@ -1,0 +1,72 @@
+{
+  "metro": {
+    "id": "1a183666362fbe77",
+    "threadId": "1a183666362fbe77",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "MWR-B26019-Switchgear-Relay-Maintenance.pdf",
+      "Attachment 1 - Scope of Services.pdf",
+      "Attachment 2 - Price Proposal.xlsx",
+      "Attachment 3 - Sample Metro Agreement.pdf"
+    ]
+  },
+  "boettcher": {
+    "id": "1a183667fe0fd8e8",
+    "threadId": "1a183667fe0fd8e8",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "ITB 26-19289AP-FM - Boettcher Mansion Chiller Replacement Project.docx",
+      "Jeffco Beottcher Mansion Chiller Replacement MEP DWGs _100_ CDs__Sealed.pdf",
+      "Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf",
+      "Ins. Reqs. - General _ Umbrella _ Pollution _ Professional.pdf",
+      "261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf"
+    ]
+  },
+  "hood": {
+    "id": "1a18366850e67933",
+    "threadId": "1a18366850e67933",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "IFB 27-702-002 Hood Cleaning and Inspection.pdf",
+      "Attachment A - Scope of Work.pdf",
+      "Attachment B - 2026-27 Calendar.pdf",
+      "Attachment C - List of School.pdf",
+      "Attachment D - Pricing Form.xlsx",
+      "Attachment E - Insurance.pdf",
+      "Addendum 1.0 - Site Visit Details.pdf",
+      "Addendum 1.0 - Vendor Q_A.pdf",
+      "Addendum 1.0 List of Kitchen Hoods.pdf"
+    ]
+  },
+  "janitorial": {
+    "id": "1a183668e7d49de9",
+    "threadId": "1a183668e7d49de9",
+    "to": [],
+    "bcc_count": 7,
+    "attachments": [
+      "R26-080JW On-Call Janitorial Services.pdf"
+    ]
+  },
+  "laplata": {
+    "id": "1a18366945788536",
+    "threadId": "1a18366945788536",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "IFB - On-Call Services - Various Trades.pdf"
+    ]
+  },
+  "weld-specs": {
+    "id": "1a18366a320ac41f",
+    "threadId": "1a18366a320ac41f",
+    "to": [],
+    "bcc_count": 7,
+    "attachments": [
+      "Bid Specs.docx",
+      "Attachment 1.pdf"
+    ]
+  }
+}

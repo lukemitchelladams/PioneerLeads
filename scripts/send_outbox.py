@@ -18,11 +18,12 @@ for e in json.loads(manifest.read_text()):
     if e["key"] in sent:
         print(f"skip {e['key']} (already sent {sent[e['key']]['id']})")
         continue
-    cmd = [sys.executable, "scripts/gmail_api.py", "send", "--subject", e["subject"], "--body-file", e["body_file"]]
+    # files go first: --to/--cc/--bcc take a list and would swallow anything after them
+    cmd = [sys.executable, "scripts/gmail_api.py", "send", *e["files"],
+           "--subject", e["subject"], "--body-file", e["body_file"]]
     for flag in ("to", "cc", "bcc"):
         if e.get(flag):
             cmd += [f"--{flag}", *e[flag]]
-    cmd += e["files"]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         print(f"FAILED {e['key']}: {r.stderr.strip() or r.stdout.strip()}")

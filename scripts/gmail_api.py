@@ -66,8 +66,11 @@ def access_token():
 def call(method, path, token, body=None, ctype="application/json"):
     req = urllib.request.Request(API + path, data=body, method=method,
                                  headers={"Authorization": f"Bearer {token}", "Content-Type": ctype})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        sys.exit(f"Gmail API {e.code} on {method} {path.split('?')[0]}: {e.read().decode(errors='replace')[:500]}")
 
 
 def send(a):
