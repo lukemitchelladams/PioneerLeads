@@ -1615,6 +1615,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T21:21Z: GovTribe still BLOCKED (42nd hour). HQ 20:36Z SAM-only pass (BidNet last 19:36Z), no NEW, no changes. Inbox: BidNet Addendum 1 notice for Douglas UPS 039-26 (GO) and Addendum 2 for CSU duct (NO). Folders created for Douglas UPS and Aurora Ash (HQ's new GO rows); El Paso: HQ emailed H2 ~20:45Z.",
+  "last_hourly_check": "2026-10-28T22:21Z: GovTribe still BLOCKED (43rd hour). HQ 21:36Z full pass: BidNet 587 open / 83 matches, SAM 106; 3 changes (UPS Q&A 1 read + forwarded by HQ; Baseline WTP mandatory pre-bid passed, not ours; CSU duct addendum 2, NO); no NEW. Inbox: Alex/YMS snow-only on RTD; Morgan roof BidNet communication.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

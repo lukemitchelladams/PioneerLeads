@@ -103,3 +103,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-28 21:21Z hourly (read-only)
 - 2 unseen of 14. noreply@bidnet.com 15:21 MT: Addendum 1 published for Douglas County IFB 039-26 Semi-Annual UPS Maintenance (GO since HQ's 20:52Z triage; due 11/04 15:00). Addendum not downloaded yet: watchlist folder set so HQ's next logged-in scan files it; read it next hour. noreply@bidnet.com 14:25 MT: Addendum 2 for CSU DQ-2026-024-BC Biology Duct Insulation (NO bid, mandatory pre-bid passed) - ignored.
 - No CRM brief. No sub replies, no bounces, no TCF submission confirmation.
+
+## 2026-10-28 22:21Z hourly (read-only)
+- 2 unseen of 16. alex@ymslandscaping.com 16:00 MT (RTD thread): YMS passes on cleaning/graffiti/pressure washing, will price snow only, numbers by Fri 11/06. Logged in bids/rtd-bus-shelter-maintenance/sub-outreach.md; pipeline sub_pricing updated; a cleaning sub is still needed. noreply@bidnet.com 15:45 MT: Morgan County posted a 'new communication' on 2026-1119-001 roof (login needed; HQ scan to capture).
+- No CRM brief. No bounces, no UPS/El Paso sub replies, no TCF submission confirmation.

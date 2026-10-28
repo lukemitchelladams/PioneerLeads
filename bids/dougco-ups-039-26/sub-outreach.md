@@ -18,3 +18,5 @@ Email text: ops/outbox/2026-10-28b/ups.txt (pricing by Mon 11/02 noon).
 
 ## Log
 - 2026-10-28 21:21Z (hourly scan, read-only): file created from HQ's outbox record; no replies or bounces yet. Addendum 1 (10/28) must be forwarded to the subs once read.
+- 2026-10-28 21:41Z (HQ): Q&A Document 1 forwarded to the same 5 firms (ops/outbox/2026-10-28c/ups-qa.txt).
+- 2026-10-28 22:21Z (hourly scan): Q&A 1 read; key answers added to README (full emergency coverage required, 3-hour response, 3 techs within 75 miles, licensing waived for manufacturer/industry certs, single-PM cost per location column, annual PM billing). No sub replies yet.

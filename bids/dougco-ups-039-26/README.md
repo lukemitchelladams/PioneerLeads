@@ -5,7 +5,7 @@
 | Agency | Douglas County Government, Department of Facilities & Fleet Services |
 | Portal | BidNet / Rocky Mountain E-Purchasing (BidNet id 0000440339); IFB PDF + Exhibit A sample contract in bids/_watch/downloads/bidnet/0000440339/ |
 | Solicitation number | IFB 039-26 |
-| Release date | Seen on BidNet 2026-10-20 (HQ sweep 10/28). Addendum 1 published 2026-10-28 (BidNet notice 15:21 MT) — NOT downloaded or read yet |
+| Release date | Seen on BidNet 2026-10-20 (HQ sweep 10/28). Addendum 1 = 'Questions & Answers - 1' published 2026-10-28; downloaded 21:36Z (docs/Q_A Document 1.pdf) and read |
 | Pre-bid / site visit | None listed. IFB schedule: "October 23, 2026 Invitation for bid (IBF), Deadline for submission of questions (3:00pm)"; "October 29, 2026 Invitation for bid (IFB), Posting of questions/responses"; "November 4, 2026 Invitation for bid (IFB), Due Date"; "November 2026 Interview of Finalists, if necessary" |
 | Q&A deadline | "Questions will be received until 3:00 pm on October 23, 2026" (closed; responses posted as an addendum, likely Addendum 1) |
 | Due date | 2026-11-04 15:00 MST ("NOVEMBER 4, 2026 @ 3:00PM"); "ELECTRONICALLY ONLY through the Rocky Mountain E-Purchasing/BidNet System" |
@@ -32,8 +32,19 @@ equalize setting for installed battery plant", "Perform load tests on each unit 
 - Exceptions: deviations must be listed on separate paper "boldly marked 'EXCEPTIONS TO IFB SPECIFICATIONS'".
 - Payment "Net 30"; cooperative-purchasing clause (other agencies may use the award).
 
+## Q&A Document 1 (Addendum 1, 2026-10-28) — quotes
+- Q1: "Douglas County requires Full Emergency Service coverage." (PM-only bids not acceptable)
+- Q2: battery quantities/models "available via make, model, and product specification sheets"; Q3: "Alternative brand name batteries meeting the same specificaitons are acceptable."
+- Q4: "Manufacturer training or industry certifications and documented UPS experience is acceptable." (Colorado licensing not required)
+- Q5: "This requires 3 technicians to be based within 75 miles of Douglas County."
+- Q6: "Emergency UPS service is a requirement of this contract. The County expects a technician to respond within 3 hours ... Labor rates are to be billed at the rates on the bid schedule."
+- Q7: Monthly Maintenance Cost column = "the cost for a single PM for the specific location"; Q8: "Billing for PM Service is once per year at the beginning of the year."; Q9: Battery Cost column "is used for comparison of future battery costs"; Q10: EvenLite inverter pricing "should be per unit"; Q11: include billing rates for normal and after-hours responses.
+- Q12/Q13 (obsolete units): "The scope of work is only for testing, not replacement of parts." but "Part and labor coverage is required on all equipment." — PRICING RISK on end-of-life UPS models; the sub must price parts exposure on obsolete units.
+- Q14: "Minimum of 3 technicians."; 75-mile radius not extended. Q15: battery quantities "available via make, model, and product specification sheets."
+- Q16: "24/7 response is to be billed at T&M rates."; Q17: no charge for background check / CJIS training; Q18: "All PMs can be completed during normal business hours."
+
 ## Open items
-- [ ] Download and read Addendum 1 (published 2026-10-28) — HQ's next logged-in scan files it here (watchlist folder set); check for date or scope changes.
+- [ ] Price the Bid Schedule per Q7/Q9/Q10 (single-PM cost per location, battery cost per unit for comparison, labor rates normal/after-hours).
 - [ ] Sub pricing from the 5 UPS firms HQ emailed, by Mon 2026-11-02 noon (sub-outreach.md); technician resumes + 75-mile base.
 - [ ] Quote Exhibit A insurance limits in this README; COI.
 - [ ] Three references (sub's).

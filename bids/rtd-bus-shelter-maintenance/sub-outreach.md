@@ -87,3 +87,5 @@ public RTD figures, so he prices against the real market. The attachment's bytes
 ### Colorado Power Wash (2026-10-19 17:33 MT)
 Interested ("good work we want to learn more about"). Has questions before pricing; asked "Is tomorrow a bad day to talk?"
 Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send the same shelter list + SOW sent to Lightning Mobile.
+
+- 2026-10-28 16:00 MT (hourly scan, read-only): Alex Ditto (YMS) replied to Luke's 10/27 ask: YMS 'are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal.' He will start the snow portion and agreed to Fri 11/06. Gap: cleaning / graffiti / pressure-washing sub still needed (Lightning Mobile's full pricing was too high); proposal due 11/16, so a new cleaning sub must be asked by ~11/06.

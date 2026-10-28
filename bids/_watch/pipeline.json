@@ -232,10 +232,10 @@
       "prebid": "2026-10-26T14:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Brown Bison + Alex (snow) + custodial sub",
-      "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending. | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price. | 10/26 18:56-18:57Z Alex (YMS) replied: reviewing the package, can join today's 14:00 MT Teams briefing if Luke sends the invite, asks when pricing is due back and whether to price snow only or cleaning + graffiti too (he would sub those out). Luke owns the reply. | 10/27: told Alex to price the whole contract (cleaning, graffiti, pressure wash, snow) if he can get near RTD's ~$250K/yr, else snow only; numbers by Fri 11/6.",
+      "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending. | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price. | 10/26 18:56-18:57Z Alex (YMS) replied: reviewing the package, can join today's 14:00 MT Teams briefing if Luke sends the invite, asks when pricing is due back and whether to price snow only or cleaning + graffiti too (he would sub those out). Luke owns the reply. | 10/27: told Alex to price the whole contract (cleaning, graffiti, pressure wash, snow) if he can get near RTD's ~$250K/yr, else snow only; numbers by Fri 11/6. | 2026-10-28 16:00 MT: Alex Ditto (YMS): 'we are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal'; numbers by 11/6.",
       "folder": "bids/rtd-bus-shelter-maintenance",
       "contact": "Marla Bainbridge, (303) 299-2411",
-      "sub_pricing": "Partial (Lightning only, too high; Alex/YMS pricing in progress)"
+      "sub_pricing": "Partial (Lightning Mobile priced everything but too high; YMS/Alex will price SNOW ONLY by Fri 11/06 and passes on cleaning, graffiti and pressure washing (10/28 16:00 MT); cleaning/graffiti/pressure-wash sub still needed; proposal due 11/16)"
     },
     {
       "id": "westminster-26-002",
@@ -999,7 +999,7 @@
       "due_source": "BidNet: '11/18/2026 04:00 PM MST'",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Roofing is outside the core trades list; Luke to decide. Walk 10/29 10:00 Fort Morgan, not mandatory ('not mandatory but highly encouraged'). | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): Roofing not our trade (same call as Grandview); no answer from Luke by walk day.",
+      "decision_note": "Roofing is outside the core trades list; Luke to decide. Walk 10/29 10:00 Fort Morgan, not mandatory ('not mandatory but highly encouraged'). | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): Roofing not our trade (same call as Grandview); no answer from Luke by walk day. | 2026-10-28 15:45 MT: BidNet posted a 'new communication' on this solicitation (content behind the BidNet login; HQ's next scan should capture it). Optional walk is 10/29 10:00.",
       "prebid": "2026-10-29T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Roofing sub TBD",
@@ -1018,7 +1018,7 @@
       "due_source": "BidNet listing date only (time placeholder)",
       "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): GO if a sub prices by Mon 11/02 noon. Techs must be \"based within seventy-five (75) miles of Douglas County\"; resumes required. 5 UPS firms emailed 10/28 with IFB. | 2026-10-28 21:21Z: folder bids/dougco-ups-039-26 created; Addendum 1 issued today (not read yet: it may answer the 10/23 questions or change dates).",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 triage-b (bids/_watch/triage-2026-10-28-b.md): GO if a sub prices by Mon 11/02 noon. Techs must be \"based within seventy-five (75) miles of Douglas County\"; resumes required. 5 UPS firms emailed 10/28 with IFB. | 2026-10-28 21:21Z: folder bids/dougco-ups-039-26 created; Addendum 1 issued today (not read yet: it may answer the 10/23 questions or change dates). | Q&A 1 read 22:21Z: 'Douglas County requires Full Emergency Service coverage'; technician response 'within 3 hours'; '3 technicians to be based within 75 miles'; CO licensing waived ('Manufacturer training or industry certifications and documented UPS experience is acceptable'); Monthly Maintenance Cost column = 'the cost for a single PM for the specific location'; PM billed 'once per year at the beginning of the year'.",
       "prebid": null,
       "prebid_mandatory": null,
       "performer": "Sub TBD",
@@ -1026,7 +1026,7 @@
       "sub_pricing": "None (5 UPS service firms emailed by HQ 2026-10-28 ~20:45Z; pricing asked by Mon 11/02 noon; bid due 11/04 15:00)",
       "folder": "bids/dougco-ups-039-26",
       "contact": "not in hand",
-      "doc_gaps": "Addendum 1 published 2026-10-28 (BidNet notice 15:21 MT) NOT downloaded yet; IFB + Exhibit A in downloads/bidnet/0000440339"
+      "doc_gaps": "Q&A Document 1 (Addendum 1) downloaded 21:36Z and read; forwarded to the 5 subs by HQ 21:41Z. Bid Schedule still to be priced."
     },
     {
       "id": "bidnet-0000439622",
@@ -1643,6 +1643,24 @@
       "when": "2026-10-28T21:35:00+00:00",
       "kind": "package",
       "note": "Folder created; IFB read: non-mandatory Teams pre-bid 10/30 15:30, due 11/13 14:00, questions by 11/06 16:00, low bid, 1 yr + 4 renewals."
+    },
+    {
+      "bid": "rtd-126dm016",
+      "when": "2026-10-28T22:30:00+00:00",
+      "kind": "sub",
+      "note": "Alex Ditto (YMS) will price snow removal only by Fri 11/06; YMS passes on cleaning, graffiti and pressure washing. A cleaning sub is still needed (Lightning Mobile too high)."
+    },
+    {
+      "bid": "bidnet-0000440339",
+      "when": "2026-10-28T22:30:00+00:00",
+      "kind": "addendum",
+      "note": "Q&A Document 1 read: full emergency service required, 3-hour response, 3 techs within 75 miles, CO licensing waived for manufacturer/industry certs, bid-schedule columns clarified. HQ forwarded it to the 5 subs 21:41Z."
+    },
+    {
+      "bid": "morgan-roof-2026-1119-001",
+      "when": "2026-10-28T22:30:00+00:00",
+      "kind": "notice",
+      "note": "BidNet 'new communication' posted 15:45 MT (needs login to read); optional walk tomorrow 10:00; DECIDE still open."
     }
   ],
   "doc_gaps": [
