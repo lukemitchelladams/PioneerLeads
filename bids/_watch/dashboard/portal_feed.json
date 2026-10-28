@@ -1635,6 +1635,21 @@
   "url": "https://sam.gov/workspace/contract/opp/cae0c7421ecd424c8a3aa668045ddfe1/view"
  },
  {
+  "key": "bidnet:2721170072",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Y--LB Lateral Water Line and Facilities Replacement for Wastewater System",
+  "sol": "",
+  "closing": "2026-11-11",
+  "posted": "2026-10-27",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721170072?target=view"
+ },
+ {
   "key": "samgov:02fdc748f70d471abfba3cc6f8ac5a06",
   "source": "samgov",
   "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
@@ -2413,6 +2428,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:2721090002",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Northern California Area Office (NCAO) Fire Alarm",
+  "sol": "",
+  "closing": "2026-11-25",
+  "posted": "2026-10-27",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view"
  },
  {
   "key": "samgov:b11d3623d84843b2899857e45ac20464",
