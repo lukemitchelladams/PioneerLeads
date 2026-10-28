@@ -1,25 +1,24 @@
 {
-  "checked_at": "2026-10-28T14:44:02+00:00",
+  "checked_at": "2026-10-28T15:37:19+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 604,
+      "count": 606,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-28T13:47:34+00:00",
+      "last_success": "2026-10-28T15:37:19+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 87,
-      "not_scanned_this_run": true,
-      "reach_note": "HTTP 202",
+      "matches": 88,
+      "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 204,
-        "statewide BUYER": 401
+        "statewide AGGREGATE": 205,
+        "statewide BUYER": 402
       }
     },
     "bonfire": {
@@ -29,11 +28,10 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-28T13:47:34+00:00",
+      "last_success": "2026-10-28T15:37:19+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -67,7 +65,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-28T14:44:02+00:00",
+      "last_success": "2026-10-28T15:37:19+00:00",
       "logged_in": true,
       "login_note": "API key; +42 from the nightly bulk file",
       "matches": 106,

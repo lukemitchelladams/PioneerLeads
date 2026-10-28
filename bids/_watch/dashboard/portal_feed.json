@@ -645,6 +645,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Professional-Custodial-Services/0000439180?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000439241",
+  "source": "bidnet",
+  "agency": "Colorado State University Construction Project Type DQ - Documented Quote (Formal) Project Number DQ-2026-024-BC",
+  "title": "Biology Duct Insulation Damage",
+  "sol": "",
+  "closing": "2026-11-02",
+  "posted": "2026-10-05",
+  "prebid_date": "2026-10-12",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Biology-Duct-Insulation-Damage/0000439241?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000439739",
   "source": "bidnet",
   "agency": "Colorado Convention Center",
@@ -885,6 +900,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Dome-Glass-Replacement/0000439360?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000439442",
+  "source": "bidnet",
+  "agency": "El Paso County",
+  "title": "Water Treatment Chemicals",
+  "sol": "26-074",
+  "closing": "2026-11-04",
+  "posted": "2026-10-06",
+  "prebid_date": "2026-10-13",
+  "prebid_mandatory": "Optional",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Chemicals/0000439442?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000439805",
   "source": "bidnet",
   "agency": "Colorado Springs School District No. 11 Project Type RFP - Request for Proposal (Formal) Project Number S2027-1001",
@@ -898,6 +928,36 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Palmer-Renovation-Abatement-Project/0000439805?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440339",
+  "source": "bidnet",
+  "agency": "Douglas County Government",
+  "title": "Semi-Annual Maintenance for Uninterruptible Power Supply",
+  "sol": "039-26",
+  "closing": "2026-11-04",
+  "posted": "2026-10-15",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Semi-Annual-Maintenance-for-Uninterruptible-Power-Supply/0000440339?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000440764",
+  "source": "bidnet",
+  "agency": "Town of Castle Rock",
+  "title": "Water Treatment Chemicals",
+  "sol": "103-2026",
+  "closing": "2026-11-04",
+  "posted": "2026-10-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Chemicals/0000440764?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000440856",
@@ -1018,6 +1078,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Aztlan-Outdoor-Pool-Replacement-CM-GC/0000437685?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000439622",
+  "source": "bidnet",
+  "agency": "Boulder Valley School District",
+  "title": "RFP 27-07 Fire Sprinkler System and Portable Extinguisher Services",
+  "sol": "27-07",
+  "closing": "2026-11-05",
+  "posted": "2026-10-08",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-27-07-Fire-Sprinkler-System-and-Portable-Extinguisher-Services/0000439622?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000439630",
@@ -1815,6 +1890,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/STREET-LIGHT-REPAIR-AND-REPLACEMENT-AT-THE-COLORADO-AIR-AND-SPACE-PORT/0000439853?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000439933",
+  "source": "bidnet",
+  "agency": "Denver Public Schools Project Type RFP - Request for Proposal (Formal) Project Number BD2732",
+  "title": "DPS Fire Suppression 2027",
+  "sol": "",
+  "closing": "2026-11-12",
+  "posted": "2026-10-12",
+  "prebid_date": "2026-10-21",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/DPS-Fire-Suppression-2027/0000439933?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000440261",
   "source": "bidnet",
   "agency": "Denver Housing Authority",
@@ -1905,6 +1995,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000441807",
+  "source": "bidnet",
+  "agency": "City of Aurora",
+  "title": "Ash Tree Treatment",
+  "sol": "B-4799",
+  "closing": "2026-11-13",
+  "posted": "2026-10-27",
+  "prebid_date": "2026-10-30",
+  "prebid_mandatory": "Optional",
+  "profiles": "",
+  "watched": true,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Ash-Tree-Treatment/0000441807?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:444208178536",
   "source": "bidnet",
   "agency": "",
@@ -1960,7 +2065,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
  },
@@ -2085,6 +2190,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Services-Various-Trades/0000441130?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000441833",
+  "source": "bidnet",
+  "agency": "City of Arvada",
+  "title": "On-Call General Contractor Services",
+  "sol": "26-FAC-055",
+  "closing": "2026-11-17",
+  "posted": "2026-10-28",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000440491",
   "source": "bidnet",
   "agency": "Colorado State University Construction Project Type RFI - Request for Information (Formal) Project Number RFI-2026-029-BC",
@@ -2110,7 +2230,7 @@
   "prebid_date": "2026-10-29",
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1"
  },
@@ -2185,7 +2305,7 @@
   "prebid_date": "2026-11-05",
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1"
  },
@@ -2278,6 +2398,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Hood-Inspection-and-Cleaning-Services/0000439455?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000441022",
+  "source": "bidnet",
+  "agency": "City of Boulder Project Type RFB - Request for Bid (Formal) Project Number 44-2026",
+  "title": "Streetlight Materials & Installation",
+  "sol": "",
+  "closing": "2026-11-20",
+  "posted": "2026-10-21",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Streetlight-Materials-Installation/0000441022?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000441360",
@@ -2430,6 +2565,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000441668",
+  "source": "bidnet",
+  "agency": "Arapahoe County",
+  "title": "Security Electronics Maintenance & Support Services",
+  "sol": "26-53",
+  "closing": "2026-11-25",
+  "posted": "2026-10-27",
+  "prebid_date": "2026-11-03",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "",
+  "watched": true,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Security-Electronics-Maintenance-Support-Services/0000441668?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:2721090002",
   "source": "bidnet",
   "agency": "",
@@ -2473,6 +2623,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/8ccf3c647f414b7ea5cbb513ccfb51c9/view"
+ },
+ {
+  "key": "bidnet:0000440811",
+  "source": "bidnet",
+  "agency": "Trails Park and Recreation District",
+  "title": "Spring Creek Park Pavilion Repairs",
+  "sol": "",
+  "closing": "2026-11-30",
+  "posted": "2026-10-20",
+  "prebid_date": "2026-11-04",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Spring-Creek-Park-Pavilion-Repairs/0000440811?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000441680",
@@ -2593,6 +2758,21 @@
   "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Transfort-Overhead-Door-Replacements/0000439726?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000441189",
+  "source": "bidnet",
+  "agency": "Weld RE-4 School District Project Type RFP - Request for Proposal (Formal) Project Number 27-02",
+  "title": "Grandview Elementary Roof Project",
+  "sol": "",
+  "closing": "2026-12-02",
+  "posted": "2026-10-22",
+  "prebid_date": "2026-11-04",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Grandview-Elementary-Roof-Project/0000441189?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000441782",
