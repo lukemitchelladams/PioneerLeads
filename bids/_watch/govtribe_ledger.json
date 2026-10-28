@@ -1319,6 +1319,18 @@
       "verdict": "NO",
       "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball/plain bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
       "at": "2026-10-28T11:21:00Z"
+    },
+    "8f1feb2f0f3d47c8bd10b6846dfa459f": {
+      "name": "NAVSUP 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS (due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T13:40:00Z"
+    },
+    "cd651e8500eb462ba089ebb18f600686": {
+      "name": "NAVSUP 31--BEARING,BALL,ANNULA (due 2026-12-08)",
+      "verdict": "NO",
+      "why": "NO: Navy NSN part RFQ (mil-spec, approved-source precision ball bearing); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pillow blocks, pulleys, bucket elevators). No quantities in the listing (rule 9); Jones Bearing has no SAM/UEI. Dad reviews DIBBS/NAVSUP part RFQs himself from the local-runner list.",
+      "at": "2026-10-28T13:40:00Z"
     }
   },
   "watched": {
@@ -1504,6 +1516,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T12:21Z (ran 12:34Z): GovTribe still BLOCKED (33rd hour). HQ 11:36Z full run: BidNet logged in, 602 open / 87 matches, no NEW, no changes; SAM 103; Bonfire no creds; DIBBS stale since 10/20. Inbox: 10 threads, 3 new, all BidNet 'approaching closing date' reminders (TCF DQ 2027000037 closes 10/29/2026 05:00 PM MDT; Douglas 036-26 janitorial NO; CMC 1178-26P custodial). CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; H2 pricing 10/28 noon; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
+  "last_hourly_check": "2026-10-28T13:21Z (ran 13:40Z): GovTribe still BLOCKED (34th hour). HQ 12:45Z run SAM-only (SAM 105, 2 NEW jones-bearing NAVSUP bearing RFQs -> NO); BidNet last success 11:36Z (87 matches/602 open; next full pass pending); Bonfire no creds; DIBBS stale since 10/20. No changes on watched bids. HQ published ops/plan_ceo/2026-10-28.md (TCF package with COI by 16:00 MT once H2 pricing lands, promised 10:00 MT; Parker + Douglas 037-26 generator pricing by Luke by Fri 10/30). Inbox: 11 threads, 1 new (Microsoft DMARC report); CRM/sent empty. GO 5, sub pricing 0/5. Deadlines <72h: TCF quote 2026-10-29T17:00 MT (COI required); DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Fort Collins doors 11/2 15:00 (optional), Littleton garage doors 11/3 14:00 (MANDATORY), Denver access control 11/3 12:00 (optional), Littleton pedestrian doors 11/4 15:00 (optional).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

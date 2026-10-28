@@ -2561,7 +2561,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c29f795658414ef49624fb7d3557091f/view"
  },
  {
@@ -2606,7 +2606,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/66114240b6ce43ff9ba45be3c2624fe1/view"
  },
  {
@@ -2636,7 +2636,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/88fae747c268450babe6750b67aa4350/view"
  },
  {
@@ -2711,7 +2711,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/9efac20ee41241b4ba84f3c89f59d96d/view"
  },
  {
