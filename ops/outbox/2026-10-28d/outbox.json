@@ -1,0 +1,31 @@
+[
+  {
+    "key": "rtd-new",
+    "subject": "RTD bus shelter cleaning and graffiti (126DM016): sub pricing",
+    "bcc": [
+      "info@washonwheels.net",
+      "colorado@thewashsquad.com",
+      "getclean@avalanchepowerclean.com",
+      "info@milehighmobilewash.com"
+    ],
+    "files": [
+      "bids/rtd-bus-shelter-maintenance/docs/RTD-126DM016-Shelter-List.xlsx",
+      "bids/rtd-bus-shelter-maintenance/docs/126DM016-SOW.pdf",
+      "bids/rtd-bus-shelter-maintenance/docs/126DM016-Pricing-Sheet.xlsx"
+    ],
+    "body_file": "ops/outbox/2026-10-28d/rtd.txt"
+  },
+  {
+    "key": "rtd-platinum",
+    "subject": "Re: RTD bus shelter cleaning contract (126DM016): documents",
+    "to": [
+      "Info@platinumpressurewash.com"
+    ],
+    "files": [
+      "bids/rtd-bus-shelter-maintenance/docs/RTD-126DM016-Shelter-List.xlsx",
+      "bids/rtd-bus-shelter-maintenance/docs/126DM016-SOW.pdf",
+      "bids/rtd-bus-shelter-maintenance/docs/126DM016-Pricing-Sheet.xlsx"
+    ],
+    "body_file": "ops/outbox/2026-10-28d/rtd-followup.txt"
+  }
+]

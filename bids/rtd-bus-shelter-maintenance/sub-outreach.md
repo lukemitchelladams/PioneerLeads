@@ -9,10 +9,10 @@ Emails were found via search snippets and are NOT verified; expect some bounces.
 | Lightning Mobile Services / Colorado Graffiti Blasters | Commerce City | info@lminc.net | 720-456-9191 | **REPLIED 2026-10-19: YES, interested** (see below) |
 | Colorado Power Wash | Denver area | info@coloradopowerwash.com | 720-675-7059 | **REPLIED 2026-10-19: interested, wants a call Tue 10/20** |
 | Platinum Pressure Washing & Window Cleaning | Denver | Info@platinumpressurewash.com | 303-931-7300 | **Sent 2026-10-19** |
-| Wash On Wheels (since 1985) | Englewood | info@washonwheels.net | 303-937-7181 | Gmail draft, Luke to send |
-| The Wash Squad (franchise) | Centennial | colorado@thewashsquad.com | 303-900-8774 | Gmail draft, Luke to send |
-| Avalanche Power Clean | Parker | getclean@avalanchepowerclean.com | 720-336-2152 | Gmail draft, Luke to send |
-| Mile High Mobile Wash (BBB A+) | Englewood | info@milehighmobilewash.com | 303-330-8748 | Gmail draft, Luke to send |
+| Wash On Wheels (since 1985) | Englewood | info@washonwheels.net | 303-937-7181 | Sent 10/28 with docs (10/19 draft was never sent) |
+| The Wash Squad (franchise) | Centennial | colorado@thewashsquad.com | 303-900-8774 | Sent 10/28 with docs (10/19 draft was never sent) |
+| Avalanche Power Clean | Parker | getclean@avalanchepowerclean.com | 720-336-2152 | Sent 10/28 with docs (10/19 draft was never sent) |
+| Mile High Mobile Wash (BBB A+) | Englewood | info@milehighmobilewash.com | 303-330-8748 | Sent 10/28 with docs |
 
 Phone-only: Squeegee Squad (720) 408-0014; Maintenance Resources Inc 303-388-3052; Brothers Pressure Washing
 720-809-7823; John's Mobile Wash (303) 292-0104; 3A Clean 303-716-2802; Anago day porter (720) 738-4875.
@@ -89,3 +89,5 @@ Interested ("good work we want to learn more about"). Has questions before prici
 Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send the same shelter list + SOW sent to Lightning Mobile.
 
 - 2026-10-28 16:00 MT (hourly scan, read-only): Alex Ditto (YMS) replied to Luke's 10/27 ask: YMS 'are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal.' He will start the snow portion and agreed to Fri 11/06. Gap: cleaning / graffiti / pressure-washing sub still needed (Lightning Mobile's full pricing was too high); proposal due 11/16, so a new cleaning sub must be asked by ~11/06.
+
+- 2026-10-28 16:00 MT: Alex (YMS) passes on cleaning/graffiti/pressure washing; will price SNOW ONLY by 11/6. Cleaning now needs a sub: 4 new firms emailed with shelter list + SOW + pricing sheet; Platinum followed up with docs.

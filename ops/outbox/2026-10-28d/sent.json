@@ -1,0 +1,26 @@
+{
+  "rtd-new": {
+    "id": "1a184a8da94273e3",
+    "threadId": "1a184a8da94273e3",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "RTD-126DM016-Shelter-List.xlsx",
+      "126DM016-SOW.pdf",
+      "126DM016-Pricing-Sheet.xlsx"
+    ]
+  },
+  "rtd-platinum": {
+    "id": "1a184a8deeb0c769",
+    "threadId": "1a184a8deeb0c769",
+    "to": [
+      "Info@platinumpressurewash.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "RTD-126DM016-Shelter-List.xlsx",
+      "126DM016-SOW.pdf",
+      "126DM016-Pricing-Sheet.xlsx"
+    ]
+  }
+}
