@@ -107,3 +107,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-28 22:21Z hourly (read-only)
 - 2 unseen of 16. alex@ymslandscaping.com 16:00 MT (RTD thread): YMS passes on cleaning/graffiti/pressure washing, will price snow only, numbers by Fri 11/06. Logged in bids/rtd-bus-shelter-maintenance/sub-outreach.md; pipeline sub_pricing updated; a cleaning sub is still needed. noreply@bidnet.com 15:45 MT: Morgan County posted a 'new communication' on 2026-1119-001 roof (login needed; HQ scan to capture).
 - No CRM brief. No bounces, no UPS/El Paso sub replies, no TCF submission confirmation.
+
+## 2026-10-28 23:21Z hourly (read-only)
+- 1 unseen of 17. noreply@bidnet.com 16:32 MT: addendum published for Town of Castle Rock IFB 103-2026 Water Treatment Chemicals (BidNet 0000440764) - NO bid (water-utility chemical supply, HQ triage-b), ignored; ledger entry added.
+- No CRM brief. No sub replies, no bounces, no TCF submission confirmation.

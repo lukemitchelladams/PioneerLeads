@@ -1430,6 +1430,13 @@
       "due": "2026-11-04",
       "reason": "HQ triage-b 20:52Z: full-service (with parts) semi-annual UPS maintenance at County buildings; no pre-bid in the IFB; 1 yr + 4 renewals; subs allowed with County approval; 5 UPS firms emailed by HQ. Addendum 1 issued 10/28, unread.",
       "triaged_at": "2026-10-28T21:35:00+00:00"
+    },
+    "bidnet:0000440764": {
+      "decision": "NO",
+      "title": "Town of Castle Rock IFB 103-2026 Water Treatment Chemicals (Castle Rock Water)",
+      "due": "2026-11-04",
+      "reason": "Water-utility chemical supply for Castle Rock Water plants (HQ triage-b 20:52Z: NO); no service component in our trades. Addendum notice 10/28 16:32 MT ignored.",
+      "triaged_at": "2026-10-28T23:28:00+00:00"
     }
   },
   "watched": {
@@ -1615,6 +1622,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T22:21Z: GovTribe still BLOCKED (43rd hour). HQ 21:36Z full pass: BidNet 587 open / 83 matches, SAM 106; 3 changes (UPS Q&A 1 read + forwarded by HQ; Baseline WTP mandatory pre-bid passed, not ours; CSU duct addendum 2, NO); no NEW. Inbox: Alex/YMS snow-only on RTD; Morgan roof BidNet communication.",
+  "last_hourly_check": "2026-10-28T23:21Z: GovTribe still BLOCKED (44th hour). HQ 22:36Z SAM-only pass (BidNet last 21:36Z), no NEW, no changes. Inbox: BidNet addendum notice for Castle Rock IFB 103-2026 water chemicals (NO). HQ 22:37Z emailed 4 cleaning subs for RTD + Platinum follow-up.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
