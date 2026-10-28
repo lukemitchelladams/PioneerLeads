@@ -1,13 +1,14 @@
 # SpeedRun Social scorecard
 
 Entity: Brown Bison LLC, Broomfield, Colorado. Product: AI social media on autopilot for small businesses, the Blaze.ai replacement.
-Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-27, 07:00 MDT.
+Repo: `lukemitchelladams/autosocial-ai`. Live: https://www.speedrunsocial.com. Updated 2026-10-28, 07:10 MDT.
 
 ## Where it stands
 
 | Signal | Value | Source |
 | --- | --- | --- |
-| Site | ok, db ok, billing live | `/api/health`, 2026-10-27 07:00 MDT |
+| Site | ok, db ok, billing live | `/api/health`, 2026-10-28 07:10 MDT |
+| Oct 27 | #204: the cheapest-AI-tools page re-read at all nine vendors (Predis, Rise, Ocoya, Metricool figures corrected). #205: the campaign page says "can't publish" once, not twice, when nothing is connected. Both deployed and verified by the loops; the Blaze session itself has been idle since Oct 26. PR #1 head 82dcf7a7. | commits df7564b2, 16c5165e |
 | Week of Oct 19 to 26 | 34 deploys, #170 to #203. Pricing: the $19 founding price is quoted in the trial prompt (#185), the out-of-credits modal (#187) and the Monday digest (#201); annual prices pulled from 89 pages until annual billing can be bought (#183); free-plan wording fixed on about 150 pages (#182). Plan: free covers one connected social account, a second connect opens the upgrade, existing free users keep extras until Nov 9 (#201, E23, Luke's decision Oct 26); quiet free accounts (no post, approval or sign-in in 14 days) are paused nightly with a Reconnect prompt, first dry run 16 accounts in 11 workspaces (E22). Product: Followers tile from Zernio follower counts (#190); connect failures now record platform and the provider's words after one customer failed Facebook five times (#194); Connect to post on the post page (#202); platform-limits pages offer the free sign-up (#203); phone fixes to the plan banner, campaign bar, Brand Kit header and Terms notice. Growth: seven neutral-ranking test pages (restaurants, hair salons, boutiques, florists, nonprofits, roofers, bakeries), switch off. Deps: next 16.4.2, Sentry 10.76.2, zod, undici for the week's advisories. CI: moved to GitHub-hosted runners Oct 26; docs-only pushes skip the heavy checks; the build step needed a 5 GB heap; both checks green on the PR head 5d3e1a34 on Oct 27. | commits 2f7d2a4c to 5d3e1a34 |
 | Scoreboard, Oct 25 | 5 signups in 7 days, 17 accounts connected, 0 paying. 6 of 74 users signed in the week to Oct 26. The seven free workspaces that crossed the paywall Oct 20 to 27 produced 0 upgrades. | commit 35a1e11d; Blaze session Oct 26 |
 | Laptop | Deploys were held Oct 21 to 25 because the gate refuses to run with the lid closed on battery; 9 commits waited for the first run on power. | commits 1d93e08c, 9e179390 |

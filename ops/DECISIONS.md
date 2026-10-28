@@ -6,13 +6,17 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date raised | Venture | Decision needed | Orchestrator's recommendation |
 | --- | --- | --- | --- |
-| 2026-10-27 | Govcon | Reactivate the GovTribe subscription (lapsed Oct 26 about 22:00 MT) | Pay it today; the loop's feed is dark without it |
+| 2026-10-28 | Govcon | Send the Travelers insurance certificate and the FEIN to the HQ session today; the TCF quote cannot go in without the certificate | Today, before H2's pricing turns into the package |
+| 2026-10-28 | Govcon | Did H2's Andrew sign the TCF walk sheet as Brown Bison Holdings LLC? | Answer in the HQ session; if not, it emails Jennifer Garvin with the Oct 26 trail |
+| 2026-10-28 | Govcon | Call the generator subs for Parker (due Nov 6) and Douglas 037-26 (due Nov 5); have one firm price both | By Fri Oct 30 |
+| 2026-10-28 | Govcon | Littleton on-call doors: attend the Nov 3 garage walk and bid both pools, or drop both ($100k a year each, $100,000 bond, 2-hour response) | Bid only if a door sub and the bond are in hand by Nov 2; otherwise drop |
+| 2026-10-28 | Govcon | Larimer jail fire alarm: a VESDA-certified sub by Mon Nov 3 or it goes NO | Drop unless a sub is found by Friday |
+| 2026-10-27 | Govcon | Reactivate the GovTribe subscription (lapsed Oct 26 about 22:00 MT) | Still lapsed at 33 hours on Oct 28; pay it today, the loop's feed is dark without it |
 | 2026-10-27 | Govcon | Approve or deny the Gmail send waiting in the HQ session (Brighton handyman outreach drafted Oct 19) | Your call; it is an outbound email |
 | 2026-10-27 | Govcon | Forward the Parker generator RFP PDF to Brad Orgill at Colorado Standby; answer Alex's RTD questions; get the H2 tech's photo ID to CDOC | All three are sends only you can make |
 | 2026-10-27 | Govcon | 27J Brighton HS RRHS, walk Wed 10:00, no sub pricing | Drop it unless you can price it yourself today |
 | 2026-10-27 | Govcon | What happened to Colorado Springs R26-077MZ, Westminster, Arapahoe, Adams County and DCSD | One line each so the record is complete |
 | 2026-10-19 | Govcon | Submit Colorado Springs Parks Maintenance On-Call R26-077MZ by Tue Oct 20, 2pm | Outcome unknown as of Oct 27 |
-| 2026-10-15 | Govcon | Get Alex Ditto's DCSD bid into the repo when it lands Monday Oct 19 (Luke confirmed with Alex, Oct 18) | Drop the files in `bids/dcsd-hvac/docs/`; connecting Gmail would also let every future emailed bid be read without a hand-off |
 | 2026-10-15 | Govcon | The Breckenridge summit company price reply: was it sent? | Answer in the loop session or here; the loop was archived with the question open |
 | 2026-10-15 | SpeedRun Social | Apple Pay failure on live Checkout | Read the Stripe check endpoint output and fix the wallet config |
 | 2026-10-14 | SpeedRun Social | Set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY in Vercel and redeploy | Do it; the card-in-dialog flow you asked for on Oct 13 is shipped but dark |
@@ -32,6 +36,7 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date | Venture | Decision | By | Why |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 | Govcon | DCSD 003-27 mowing submitted; opens Oct 29 14:00 | Luke, with Alex Ditto | Worker brief Oct 28 |
 | 2026-10-26 | SpeedRun Social | Free plan covers one connected social account; quiet free accounts are paused nightly; the Monday digest carries the $19 founding price | Luke | Blaze session, deploy #201 |
 | 2026-10-16 | POE | CDW LOGISTICS merged into CDW; cdwg.com and cdw.ca left open | Cole | Commits 066e1b91 and a97baf38 |
 | 2026-10-18 | SpeedRun Social | The green gate runs in a cloud container; the laptop is not required | Orchestrator proof session | Install, tsc, eslint and build all green on 4 cores; two real defects found (64 leaking tests, `.next/dev` corruption from the security-headers test) |
