@@ -885,7 +885,7 @@
       "at": "2026-10-26T19:33:00Z"
     },
     "8f0e3b72596a4714a555ecd5eb0e899b": {
-      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
       "verdict": "WATCH",
       "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
       "at": "2026-10-26T20:28:00Z"
@@ -941,7 +941,7 @@
     "5627ee97e4ce40e2af289e42601e4afb": {
       "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (SAM notice id; same as GovTribe 8f0e3b72596a4714a555ecd5eb0e899b)",
       "verdict": "WATCH",
-      "why": "WATCH (alias of 8f0e3b72\u2026): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
+      "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
       "at": "2026-10-27T06:26:07+00:00"
     },
     "bidnet:2720966072": {
@@ -1379,6 +1379,48 @@
       "title": "Biology Duct Insulation Damage (BidNet 0000439241, due 2026-11-02)",
       "reason": "Mandatory pre-bid 2026-10-12 already passed; not attended (rule 0).",
       "triaged_at": "2026-10-28T16:00Z"
+    },
+    "bidnet:0000439558": {
+      "decision": "NO",
+      "title": "Fort Lewis College - Fire Alarm Inspection & Testing",
+      "due": "2026-11-12",
+      "reason": "Durango (330 mi); recommended pre-bid 10/20 passed; annual inspection/testing needs a local licensed fire-alarm sub. Baseline-era match (first seen 10/20) recorded for completeness.",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "bidnet:0000439654": {
+      "decision": "NO",
+      "title": "Pitkin County - 2027 Redstone Area Snow Removal Services",
+      "due": "2026-11-09",
+      "reason": "Redstone/Crystal River valley, 200 mi from Alex Ditto's crews; no local plow sub. Baseline-era match recorded.",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "bidnet:0000440115": {
+      "decision": "NO",
+      "title": "City of Brighton - As-Needed Property Management Services (RFP MPA 26500393M)",
+      "due": "2026-11-10",
+      "reason": "Real-estate property management (leasing/tenant services, MPA fee schedule), not facilities trades. Baseline-era match recorded.",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "bidnet:0000438817": {
+      "decision": "NO",
+      "title": "Jefferson County - Jail Door Slider Replacement",
+      "due": "2026-11-02",
+      "reason": "Detention door/slider hardware specialty; job-walk 10/08 passed; due in 5 days with no sub. Baseline-era match recorded.",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "bidnet:0000440260": {
+      "decision": "NO",
+      "title": "Colorado Convention Center - Roof Repair Services",
+      "due": "2026-11-09",
+      "reason": "MANDATORY job-walk 2026-10-21 11:00 passed (BidNet events quote); roofing is not our trade.",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
+    },
+    "6ab91dd8bf824b2fbfa32476c810d7be": {
+      "decision": "EVALUATE",
+      "title": "NPS - SACN Replace Fire Alarms and Intrusion Systems (due 2026-11-23; mirror 0f9b38e1... due 11/30)",
+      "due": "2026-11-23",
+      "reason": "Low-voltage electrical (fire alarm + intrusion) at Sand Creek Massacre NHS, Kiowa County (~3h from Denver). Set-aside, magnitude and site-visit date not in hand: GovTribe blocked and HQ's SAM record has no documents yet. Read the SAM attachments when HQ fetches them; mandatory site visit decides it (rule 0).",
+      "triaged_at": "2026-10-28T19:25:00+00:00"
     }
   },
   "watched": {
@@ -1564,6 +1606,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T18:21Z: GovTribe still BLOCKED (39th hour). HQ 17:36Z full run: BidNet 603 open / 85 matches, SAM 106, no NEW, no changes; Bonfire no creds; DIBBS stale since 10/20. Arvada 26-FAC-055 RFQ downloaded and read -> NO (5-year licensed GC experience required). Inbox: 13 threads, 1 new: Peak Kitchen Exhaust asks whether the PSD hood mandatory visit (11/10 13:30 Traut Elementary, Fort Collins) could be closer to Colorado Springs; needs a reply from Luke/HQ. CRM/sent empty. GO 6, sub pricing 1/6. Deadlines <72h: TCF quote 2026-10-29T17:00 MT; DCSD 003-27 opening 10/29 14:00 (submitted); COS BAS (EVALUATE) 10/30 14:00. Walks <=7d: Arapahoe security 11/3 12:00 (MANDATORY, RSVP), Littleton garage 11/3 14:00 (MANDATORY), Grandview roof 11/4 15:00 (MANDATORY, DECIDE); Weld RTU 11/5 09:00 MANDATORY (8 days).",
+  "last_hourly_check": "2026-10-28T19:21Z: GovTribe still BLOCKED (40th hour). HQ 18:36Z SAM-only pass: SAM 106 (ccode 3910 504 timeout, list carried forward), BidNet/Bonfire/DIBBS not scanned (BidNet 603/85 at 17:36Z), no NEW, no changes. Inbox: Sergeant Suds confirmed pricing by 11/16. 7 baseline-era REPORT rows recorded (6 NO, SACN fire alarm EVALUATE).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

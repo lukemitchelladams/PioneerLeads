@@ -66,7 +66,7 @@
       "due": "2026-10-28T14:00:00-06:00",
       "portal": "RMEPS (BidNet)",
       "decision": "NO",
-      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
+      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional ≤3% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
       "prebid": "2026-10-09T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Plumbing sub",
@@ -214,7 +214,7 @@
       "prebid": "2026-10-27T09:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "NETA testing sub",
-      "subs": "5 drafted 10/28",
+      "subs": "5 NETA/testing firms emailed 2026-10-28 via HQ outbox (bcc 5, solicitation + 3 attachments)",
       "folder": "bids/metro-water-switchgear-maintenance",
       "contact": "Brian Sward, bsward@metrowaterrecovery.com",
       "sub_pricing": "None"
@@ -355,10 +355,10 @@
       "sol": "RFP 26-021-1",
       "trade": "Electrical",
       "due": "2026-11-06T14:00:00-07:00",
-      "due_source": "RFP 26-021-1 \u00a71.2: \"November 6, 2026 @ 2:00pm\"",
+      "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
       "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (\u00a71.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (\u00a77) not in hand (Bonfire/BidNet login).",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -396,14 +396,14 @@
       "due_source": "RFP 27-007 p.2: 'Solicitation Due Date: November 6, 2026 Time: 2:00 PM (MST)'; Exhibit A timeline: Questions Due 10/21/2026, Questions Answered 10/23/2026, Contract Start 7/01/2027",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A \u00a72 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. \u00a75.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP \u00a72.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
+      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A §2 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. §5.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP §2.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
       "prebid": "2026-10-13T08:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "n/a (NO)",
       "subs": "Not started (NO)",
       "sub_pricing": "None",
       "folder": "bids/cherrycreek-custodial-27-007",
-      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP \u00a72.8)"
+      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP §2.8)"
     },
     {
       "id": "parks-oncall-mowing",
@@ -438,7 +438,7 @@
       "prebid": "2026-10-26T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Sub TBD",
-      "subs": "5 drafted 10/28",
+      "subs": "5 mechanical firms emailed 2026-10-28 via HQ outbox (bcc 5, ITB + drawings + specs + insurance + sample contract attached)",
       "sub_pricing": "None",
       "folder": "bids/jeffco-boettcher-chiller",
       "contact": "not in hand"
@@ -569,7 +569,7 @@
       "prebid": null,
       "prebid_mandatory": null,
       "performer": "Local Durango subs TBD",
-      "subs": "4 drafted 10/28",
+      "subs": "4 Durango firms emailed 2026-10-28 via HQ outbox (bcc 4, IFB attached)",
       "sub_pricing": "None",
       "folder": null,
       "contact": "La Plata County Procurement"
@@ -662,7 +662,7 @@
       "prebid_mandatory": null,
       "performer": "Janitorial sub TBD",
       "subs": "7 drafted 10/28",
-      "sub_pricing": "Pending (Sergeant Suds Cleaning Services, Nick Brown GM, replied 10/28 10:33 MT: pricing ASAP; asked for by Mon 11/16)",
+      "sub_pricing": "Pending (Sergeant Suds Cleaning Services, Nick Brown GM, confirmed 10/28 13:10 MT they will price by Mon 11/16; proposals due 11/23)",
       "folder": "bids/cos-oncall-janitorial",
       "contact": "not in hand"
     },
@@ -881,15 +881,15 @@
       "trade": null,
       "due": "2026-12-02T15:00:00-07:00",
       "due_source": null,
-      "portal": null,
+      "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "Found 2026-10-27 21:36Z scan. No pre-bid listed on BidNet. Due 2026-12-02 (time TBD; package watchlisted). Overhead door replacement at a transit facility; needs a door sub. | Package read 2026-10-28 00:22Z: ITB 10366 'BID DUE: 3:00 PM MT, December 2, 2026'; 'A pre-bid conference and job walk ... will be held at 3:00 PM MT on November 2, 2026, at 6570 Portner Road' (not stated as mandatory); questions to Dennis Ralph, dralph@fcgov.com, by 2026-11-05 15:00. Scope: replacing nine overhead doors at the Transfort Maintenance Facility. Bid security 5%; performance and payment bonds; Davis-Bacon wage rates. Needs an overhead-door sub plus bonding. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): ITB 10366 only if bondable: 5% bid bond + P&P, Davis-Bacon, BABA. Door subs listed in triage file; outreach after bonding answer.",
+      "decision_note": "Found 2026-10-27 21:36Z scan. No pre-bid listed on BidNet. Due 2026-12-02 (time TBD; package watchlisted). Overhead door replacement at a transit facility; needs a door sub. | Package read 2026-10-28 00:22Z: ITB 10366 'BID DUE: 3:00 PM MT, December 2, 2026'; 'A pre-bid conference and job walk ... will be held at 3:00 PM MT on November 2, 2026, at 6570 Portner Road' (not stated as mandatory); questions to Dennis Ralph, dralph@fcgov.com, by 2026-11-05 15:00. Scope: replacing nine overhead doors at the Transfort Maintenance Facility. Bid security 5%; performance and payment bonds; Davis-Bacon wage rates. Needs an overhead-door sub plus bonding. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): ITB 10366 only if bondable: 5% bid bond + P&P, Davis-Bacon, BABA. Door subs listed in triage file; outreach after bonding answer. | 2026-10-28 19:30Z: ITB quotes: 'replacing nine overhead doors at the Transfort Maintenance Facility'; basis of design Clopay 3724 (alt 3722); questions to dralph@fcgov.com by 11/05 15:00 MT; 5% bid security + P&P bonds (BONDING GATE); Davis Bacon wage rates; BABA certification.",
       "prebid": "2026-11-02T15:00:00-07:00",
       "prebid_mandatory": false,
-      "performer": null,
-      "subs": null,
-      "sub_pricing": "None",
-      "folder": null,
+      "performer": "Overhead-door sub TBD (Brown Bison bids, holds the contract)",
+      "subs": "Outreach started 2026-10-28 19:30Z: folder, README and sub email drafted; door-contractor candidates being sourced (bids/fort-collins-transfort-doors/sub-outreach.md)",
+      "sub_pricing": "None (ask subs by Mon 11/23; bid due 12/02 15:00)",
+      "folder": "bids/fort-collins-transfort-doors",
       "contact": null
     },
     {
@@ -1536,6 +1536,18 @@
       "when": "2026-10-28T18:16:00+00:00",
       "kind": "outreach",
       "note": "Peak Kitchen Exhaust (Colorado Springs) asked whether the first meeting is in Fort Collins (2 hours away) and if a school closer to Colorado Springs could be the first visit. The IFB site visit is a single MANDATORY walk 11/10 13:30 starting at Traut Elementary; Luke/HQ to reply."
+    },
+    {
+      "bid": "cos-oncall-janitorial",
+      "when": "2026-10-28T19:25:00+00:00",
+      "kind": "sub",
+      "note": "Sergeant Suds confirmed: pricing by Mon 2026-11-16 (second reply 13:10 MT)."
+    },
+    {
+      "bid": "fort-collins-transfort-doors",
+      "when": "2026-10-28T19:35:00+00:00",
+      "kind": "package",
+      "note": "Folder created from template; README filled from ITB 10366 (pre-bid/job walk 11/02 15:00 not mandatory; Q&A 11/05 15:00; due 12/02 15:00; 5% bid bond + P&P bonds; Davis-Bacon). Sub outreach started (rule 0b)."
     }
   ],
   "doc_gaps": [

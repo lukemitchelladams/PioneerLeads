@@ -9,3 +9,4 @@ HQ emailed the RFP to janitorial subs on 2026-10-28 10:27 MT (HQ outbox, ops/out
 
 ## Log
 - 2026-10-28 10:33 MT (hourly scan, read-only): Sergeant Suds reply logged. Other recipients: see the HQ outbox record.
+- 2026-10-28 13:10 MT (hourly scan, read-only): Nick Brown (Sergeant Suds) confirmed in a second reply: "We will get that priced for you by Monday, November 16." Pricing deadline accepted; nothing to chase until 11/16.
