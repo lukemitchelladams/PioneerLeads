@@ -7,7 +7,7 @@ Emails from search snippets, not verified.
 | Company | City | Email | Phone | Fit | Status |
 |---|---|---|---|---|---|
 | Handily Home Services | Brighton | scott@handilyhomeservices.com | 303-426-3459 | Commercial property maintenance for property managers | Sent 10/27 (short version) |
-| Rock Solid Handyman Services | Brighton | ryan@rocksolidhs.com | (303) 578-2218 | North metro handyman | Sent 10/27 (short version) |
+| Rock Solid Handyman Services | Brighton | ryan@rocksolidhs.com | (303) 578-2218 | North metro handyman | Sent 10/27; DELIVERY FAILING (Gmail delay notice 10/28). Phone only now |
 | TC Handyman Services | Federal Heights | westpro64@gmail.com | (303) 909-8979 | Commercial handyman, flooring | Sent 10/27 (short version) |
 | Bleeker Construction | Northglenn/Thornton | karen@bleekerco.com | (720) 845-5043 | Commercial GC/TI, maybe big | Sent 10/27 (short version) |
 | Ceres Construction | Thornton | ceresconstruction@gmail.com | (720) 934-2174 | Drywall, flooring, remodels | Sent 10/27 (short version) |
