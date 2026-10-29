@@ -984,7 +984,7 @@
       "prebid_mandatory": true,
       "performer": "HVAC sub TBD",
       "subs": "7 emailed 10/28; Accutemp Services committed 10/29 (walk + pricing by 11/12); specs drafted, package to send to Nick",
-      "sub_pricing": "Pending (Accutemp Services, Nick Yaw, Loveland, said YES 10/29 10:56 MT: attends the 11/05 09:00 walk and prices by Thu 11/12; specs still to be sent; 6 other firms silent)",
+      "sub_pricing": "Pending (Accutemp Services, Nick Yaw, Loveland, said YES 10/29 10:56 MT; HQ sent walk logistics ~11:40 MT, specs went 10/28; attends the 11/05 09:00 walk and prices by Thu 11/12; 6 other firms silent)",
       "folder": "bids/weld-jail-rtu-b2600111",
       "contact": "not in hand",
       "doc_gaps": "Package in hand: Bid Specs.docx (incl. Schedule E insurance, bid form) and Attachment 1.pdf (drawings: partial roof plan, MAU/RTU schedule, electrical notes). Specs must be forwarded to the 7 subs as attachments."
@@ -1829,6 +1829,18 @@
       "when": "2026-10-29T17:26:00Z",
       "kind": "deadline",
       "note": "Hourly 17:21Z: TCF DQ closes 17:00 MDT; signed package ready since 10:00 MT; still no BidNet upload confirmation in the inbox at 11:25 MT. BidNet robot-check cool-down started 16:36Z (HQ scanner), which does not affect Luke's own browser upload."
+    },
+    {
+      "bid": "weld-jail-rtu-b2600111",
+      "when": "2026-10-29T18:25:00Z",
+      "kind": "sub",
+      "note": "HQ emailed Nick Yaw (Accutemp) the 11/05 walk logistics (sign in as Brown Bison Holdings LLC; who attends?); specs went to him 10/28 (ops/outbox/2026-10-29/accutemp.txt, sent ~11:40 MT)."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T18:25:00Z",
+      "kind": "deadline",
+      "note": "Hourly 18:21Z: TCF DQ closes 17:00 MDT (4.5 h); still no BidNet upload confirmation in the inbox at 12:25 MT."
     }
   ],
   "doc_gaps": [

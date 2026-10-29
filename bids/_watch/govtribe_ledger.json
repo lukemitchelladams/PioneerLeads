@@ -1761,6 +1761,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T17:26:00Z: GovTribe still blocked. HQ 16:36Z scan: BidNet login BLOCKED by robot check (cool-down started; 201 listed/14 matches on the public view, previous results carried forward; last good login 14:47Z), SAM 101, VSS 60/3, Bonfire no creds, DIBBS stale. No NEW matches. Inbox: Accutemp Services said YES to the Weld RTU walk + pricing by 11/12. No TCF confirmation yet; no CRM brief.",
+  "last_hourly_check": "2026-10-29T18:25:00Z: GovTribe still blocked. HQ 17:36Z pass = SAM 101 + VSS 61/3; BidNet still in robot-check cool-down (last good login 14:47Z), Bonfire no creds, DIBBS stale. No NEW matches. HQ emailed Accutemp the Weld walk logistics (ops/outbox/2026-10-29/accutemp.txt). Inbox: only a Google Workspace notice. No TCF BidNet confirmation at 12:25 MT; no CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
