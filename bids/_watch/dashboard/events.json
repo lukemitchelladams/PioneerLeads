@@ -319,7 +319,7 @@
   "note": "Reply from Sergeant Suds Cleaning Services (Nick Brown, General Manager, 719-452-8403, admin@sergeantsudsservices.com): 'We will have a pricing for the RFP ASAP.' Pricing asked for by Mon 11/16; proposals due 11/23.",
   "critical": false,
   "past": true,
-  "days_left": -0.79
+  "days_left": -0.8
  },
  {
   "key": "cdoc-tcf-boiler-water|sub-pricing|2026-10-28T17:21:00+00:00",
@@ -361,7 +361,7 @@
   "note": "Sergeant Suds confirmed: pricing by Mon 2026-11-16 (second reply 13:10 MT).",
   "critical": false,
   "past": true,
-  "days_left": -0.67
+  "days_left": -0.68
  },
  {
   "key": "fort-collins-transfort-doors|package|2026-10-28T19:35:00+00:00",
@@ -389,7 +389,7 @@
   "note": "Sub outreach file ready: 7 email candidates + 5 phone-only Northern Colorado / Denver door contractors; email drafted for HQ to send; pricing by 11/23.",
   "critical": false,
   "past": true,
-  "days_left": -0.66
+  "days_left": -0.67
  },
  {
   "key": "elpaso-26-074-water-treatment|decision|2026-10-28T20:30:00+00:00",
@@ -445,7 +445,7 @@
   "note": "BidNet notice 15:21 MT: Addendum 1 published for IFB 039-26 (not downloaded yet). Folder created; watchlist folder set.",
   "critical": false,
   "past": true,
-  "days_left": -0.58
+  "days_left": -0.59
  },
  {
   "key": "bidnet-0000441807|package|2026-10-28T21:35:00+00:00",
@@ -459,7 +459,7 @@
   "note": "Folder created; IFB read: non-mandatory Teams pre-bid 10/30 15:30, due 11/13 14:00, questions by 11/06 16:00, low bid, 1 yr + 4 renewals.",
   "critical": false,
   "past": true,
-  "days_left": -0.58
+  "days_left": -0.59
  },
  {
   "key": "rtd-126dm016|sub|2026-10-28T22:30:00+00:00",
@@ -516,6 +516,20 @@
   "critical": false,
   "past": true,
   "days_left": -0.34
+ },
+ {
+  "key": "cdoc-tcf-boiler-water|deadline|2026-10-29T11:34:00Z",
+  "bid": "cdoc-tcf-boiler-water",
+  "when": "2026-10-29T11:34:00Z",
+  "date": "2026-10-29",
+  "kind": "deadline",
+  "agency": "Colorado Department of Corrections",
+  "sol": "DQ CAAA 2027000037",
+  "decision": "GO (walk)",
+  "note": "Hourly 11:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT. Luke still owes signatures, COI, W-9, FEIN/VSS on HQ's quote package; no submission confirmation seen in the inbox yet.",
+  "critical": false,
+  "past": true,
+  "days_left": -0.0
  },
  {
   "key": "dcsd-003-27|Submission|2026-10-29T14:00:00-06:00",

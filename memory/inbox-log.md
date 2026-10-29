@@ -145,3 +145,9 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-29 10:21Z hourly (read-only)
 - 1 unseen of 18: Google DMARC aggregate report (noise). No CRM brief. No sub replies, bounces or TCF submission confirmation.
+
+## 2026-10-29 11:21Z hourly (read-only)
+- 1a1876a12d7030ca noreply@bidnet.com 11:27Z: approaching closing date, COS R26-069MZ CAB BAS Modernization, closes 10/30/2026 02:00 PM MDT. Bid is NO; no action.
+- 1a1876bdb00497ec noreply@bidnet.com 11:29Z: approaching closing date, CU Boulder Notice 26-56 UCB001284 lighting, closes 10/30/2026 02:00 PM MDT. NO (mandatory 10/01 pre-bid missed); no action.
+- 1a1876eb33a78522 noreply@bidnet.com 11:32Z: approaching closing date, Colorado Convention Center RFP 2026-5075-1700633 Annual Fire Alarm System Troubleshooting and Repair, closes 11/02/2026 05:00 PM MST. NO (mandatory 10/15 job walk missed); ledger entry added.
+- No CRM brief, no sub replies, no bounces, no TCF submission confirmation this hour.

@@ -885,7 +885,7 @@
       "at": "2026-10-26T19:33:00Z"
     },
     "8f0e3b72596a4714a555ecd5eb0e899b": {
-      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
       "verdict": "WATCH",
       "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
       "at": "2026-10-26T20:28:00Z"
@@ -941,7 +941,7 @@
     "5627ee97e4ce40e2af289e42601e4afb": {
       "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (SAM notice id; same as GovTribe 8f0e3b72596a4714a555ecd5eb0e899b)",
       "verdict": "WATCH",
-      "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
+      "why": "WATCH (alias of 8f0e3b72\u2026): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
       "at": "2026-10-27T06:26:07+00:00"
     },
     "bidnet:2720966072": {
@@ -1444,6 +1444,30 @@
       "due": "2026-12-30",
       "reason": "Second SAM posting of the NAVSUP 'BEARING UNIT PLAIN' buy already triaged NO (6fcd8de1...): NSN part buy from a Navy weapon-systems buying office, approved-source/qualified parts, no quantities or drawings in the public notice, and Jones Bearing has no SAM registration. Same verdict as the first posting ().",
       "triaged_at": "2026-10-29T06:25:00+00:00"
+    },
+    "e0744ff44d534fe384865ff6a50be7d3": {
+      "name": "NAVSUP N0010426QYA9Y 31--BEARING,BALL,DUPLEX (due 2026-12-01)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS Mechanicsburg NSN ball-bearing RFQ (PSC 3110, NAICS 332991, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pulleys, bucket elevators). Same call as the 50+ prior NAVSUP/DLA bearing RFQs.",
+      "at": "2026-10-29T11:34:00Z"
+    },
+    "9cc53143bea54b7a87289a1fed41697e": {
+      "name": "NAVSUP N0010426QYAHA 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS (due 2026-12-02)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS Mechanicsburg NSN ball-bearing RFQ (PSC 3110, NAICS 332991, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pulleys, bucket elevators). Same call as the 50+ prior NAVSUP/DLA bearing RFQs.",
+      "at": "2026-10-29T11:34:00Z"
+    },
+    "a98c21a17409454a9307a97860826870": {
+      "name": "NAVSUP N0010426QYAHD 31--BEARING,BALL,ANNULA (due 2026-12-08)",
+      "verdict": "NO",
+      "why": "NO: Navy NAVSUP WSS Mechanicsburg NSN ball-bearing RFQ (PSC 3110, NAICS 332991, mil-spec/approved-source); not a Jones Bearing product line (mounted spherical roller bearings, take-ups, pulleys, bucket elevators). Same call as the 50+ prior NAVSUP/DLA bearing RFQs.",
+      "at": "2026-10-29T11:34:00Z"
+    },
+    "bidnet:0000439739": {
+      "name": "Colorado Convention Center RFP 2026-5075-1700633 Annual Fire Alarm System Troubleshooting and Repair (due 2026-11-02 17:00 MST)",
+      "verdict": "NO",
+      "why": "NO (rule 0): BidNet events list 'Job-Walk Visit, Attendance Mandatory, Event date 10/15/2026 01:00 PM MDT' and Brown Bison did not attend; bid is dead. Also a NICET fire-alarm specialty trade. BidNet 'approaching closing date' notice 2026-10-29 11:32Z logged.",
+      "at": "2026-10-29T11:34:00Z"
     }
   },
   "watched": {
@@ -1629,6 +1653,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T10:21Z: GovTribe still BLOCKED (55th hour). HQ 09:36Z SAM-only pass (SAM 97; BidNet last logged-in 08:36Z 583/83), Bonfire no creds, DIBBS stale. No NEW, no changes. Inbox: only a DMARC report.",
+  "last_hourly_check": "2026-10-29T11:34:00Z: GovTribe still blocked (UPGRADE_REQUIRED/ACCOUNT_CANCELLED). HQ scan 10:36Z: BidNet logged in 585 open/83 matches, SAM 100 (+37 bulk), Bonfire no creds, DIBBS stale since 10/20. 3 NEW = NAVSUP ball-bearing RFQs, all NO. Inbox: 3 BidNet closing notices (CCC fire alarm 11/02, CU lighting 10/30, COS BAS 10/30), all NO bids. No sub replies this hour.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
