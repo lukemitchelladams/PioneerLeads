@@ -21,7 +21,7 @@
   "detail": "API key; +37 from the nightly bulk file",
   "open_count": 101,
   "matches": 101,
-  "last_success": "2026-10-29T17:36:32+00:00"
+  "last_success": "2026-10-29T18:36:22+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -37,7 +37,7 @@
   "detail": "public list (no login)",
   "open_count": 61,
   "matches": 3,
-  "last_success": "2026-10-29T17:36:32+00:00"
+  "last_success": "2026-10-29T18:36:22+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",

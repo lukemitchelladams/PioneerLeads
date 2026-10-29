@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T17:36:32+00:00",
+  "checked_at": "2026-10-29T18:36:22+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -47,7 +47,7 @@
       "count": 61,
       "creds": {},
       "errors": [],
-      "last_success": "2026-10-29T17:36:32+00:00",
+      "last_success": "2026-10-29T18:36:22+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -87,7 +87,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-29T17:36:32+00:00",
+      "last_success": "2026-10-29T18:36:22+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
       "matches": 101,
