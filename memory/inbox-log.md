@@ -151,3 +151,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 1a1876bdb00497ec noreply@bidnet.com 11:29Z: approaching closing date, CU Boulder Notice 26-56 UCB001284 lighting, closes 10/30/2026 02:00 PM MDT. NO (mandatory 10/01 pre-bid missed); no action.
 - 1a1876eb33a78522 noreply@bidnet.com 11:32Z: approaching closing date, Colorado Convention Center RFP 2026-5075-1700633 Annual Fire Alarm System Troubleshooting and Repair, closes 11/02/2026 05:00 PM MST. NO (mandatory 10/15 job walk missed); ledger entry added.
 - No CRM brief, no sub replies, no bounces, no TCF submission confirmation this hour.
+
+## 2026-10-29 12:21Z hourly (read-only)
+- 1a1876f9e87c1dea noreply@bidnet.com 11:33Z: approaching closing date, CSU Construction DQ-2026-024-BC Biology Duct Insulation Damage, closes 11/02/2026 12:00 PM MST. Pipeline note updated; no action beyond the existing decision.
+- No CRM brief, no sub replies, no bounces, no TCF submission confirmation this hour.

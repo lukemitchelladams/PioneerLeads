@@ -1167,11 +1167,11 @@
       "title": "Biology Duct Insulation Damage",
       "sol": "BidNet 0000439241",
       "trade": "HVAC/insulation",
-      "due": "2026-11-02T14:00:00-07:00",
-      "due_source": "BidNet listing date only (time placeholder)",
+      "due": "2026-11-02T12:00:00-07:00",
+      "due_source": "BidNet 'approaching closing date' notice 2026-10-29 11:33Z: 'Closing Date: 11/02/2026 12:00 PM MST'",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: mandatory pre-bid 10/12/2026 already passed; not attended. Dead (rule 0). | 2026-10-28 scan: BidNet pre-bid 2026-10-12 MANDATORY (passed).",
+      "decision_note": "Found 2026-10-28 sweep (bids/_watch/new-bids-sweep-2026-10-28.md). Agency/docs/walk not in hand; watchlisted for next logged-in scan. | 2026-10-28 16:00Z: BidNet: mandatory pre-bid 10/12/2026 already passed; not attended. Dead (rule 0). | 2026-10-28 scan: BidNet pre-bid 2026-10-12 MANDATORY (passed). | BidNet 'approaching closing date' notice 2026-10-29 11:33Z: closes 11/02/2026 12:00 PM MST.",
       "prebid": "2026-10-12",
       "prebid_mandatory": true,
       "performer": "Sub TBD",
@@ -1685,6 +1685,12 @@
       "when": "2026-10-29T11:34:00Z",
       "kind": "scan",
       "note": "BidNet closing notices 11:27-11:32Z: COS R26-069MZ BAS and CU UCB001284 lighting both close 10/30 14:00 MDT (both NO); Colorado Convention Center fire-alarm RFP 2026-5075-1700633 closes 11/02 17:00 MST (NO, mandatory 10/15 walk missed). 3 new NAVSUP ball-bearing RFQs triaged NO."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T12:43:00Z",
+      "kind": "deadline",
+      "note": "Hourly 12:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT; still no submission confirmation in the inbox. HQ's 12:36Z portal scan has not been pushed (last BidNet login 10:36Z)."
     }
   ],
   "doc_gaps": [
