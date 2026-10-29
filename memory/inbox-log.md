@@ -196,3 +196,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-29 22:21Z hourly (read-only)
 - 1a1899be6415b7ac snorwood@h2gs.com 21:40Z (Re: El Paso 26-074): "Hey, no, just send it straight to him. He is a competitor, but I wanted to give you a referral since we couldn't help!" H2 is out of El Paso; FACT Water Co (Conor Parrish) is the referral. Email to Conor drafted in elpaso-26-074-water-treatment/sub-outreach.md for HQ to send; pipeline sub_pricing updated.
 - No CRM brief, no bounces.
+
+## 2026-10-29 23:21Z hourly (read-only)
+- Nothing unseen (17 threads, all logged). No CRM brief, no bounces. FACT Water pricing email for El Paso not in Sent/outbox yet.

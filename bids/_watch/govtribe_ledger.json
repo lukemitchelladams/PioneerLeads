@@ -1582,6 +1582,12 @@
       "verdict": "GO",
       "why": "HQ row weldsd6-coiling-door-franklin 2026-10-29. BidNet: 'Job-Walk Visit, Attendance Mandatory, Event date 11/02/2026 10:00 AM MST, Location Franklin MS - 818 35th Ave, Greeley, CO 80634, Note: Meet at Front Entrance'. Doors are our trade (same overhead/coiling-door subs as Transfort ITB 10366); docs (front.docx, contract approval.docx, contract sample.pdf, ...) watchlisted for the next logged-in scan. Walk is 4 days out: a door sub or Luke must attend (rule 0). | 2026-10-29 HQ: GO. front.docx: one CrossingGard ERG-IBC emergency-response grille, bid opening 'Tuesday, November 10, 2026, at 2:00 p.m.' by email to sfrancies@greeleyschools.org; completion January 30, 2027; performance bond required (work over $50,000); 3 door subs emailed 10/29 (ops/outbox/2026-10-29/door.txt), pricing asked by Fri 11/06; folder bids/weldsd6-coiling-door-franklin.",
       "at": "2026-10-29T21:27:00Z"
+    },
+    "7aaa73aae01f4842969645e41d552409": {
+      "name": "DOI (NPS) Sources Sought - Tree & Debris Removal at CUGA (Cumberland Gap NHP), responses due 2026-11-05",
+      "verdict": "NO",
+      "why": "Out of area: Cumberland Gap National Historical Park is in Kentucky/Tennessee/Virginia; sources sought (market research) for tree and debris removal, no Colorado work. Matched only on landscaping keywords.",
+      "at": "2026-10-29T23:25:00Z"
     }
   },
   "watched": {
@@ -1767,6 +1773,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T22:28:00Z: GovTribe still blocked. HQ 21:36Z pass = SAM 101 + VSS 59/3; BidNet last login 20:37Z (580/82). No NEW matches. Inbox: Silas (H2) declined El Paso 26-074 and referred FACT Water Co (Conor Parrish); pricing email to Conor drafted (humanize PASS), HQ to send today. No CRM brief.",
+  "last_hourly_check": "2026-10-29T23:25:00Z: GovTribe still blocked. HQ 22:35Z full scan: BidNet logged in 581/82, SAM 102, VSS 60/3; 1 NEW = DOI sources sought tree/debris removal at CUGA (KY/TN), NO. Inbox: nothing unseen; no CRM brief. TCF DQ closed 17:00 MDT (submitted ~13:00). FACT Water (El Paso) pricing email not yet sent by HQ as of 23:25Z.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
