@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T05:36:21+00:00",
+  "checked_at": "2026-10-29T06:36:45+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -10,11 +10,10 @@
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-29T04:36:21+00:00",
+      "last_success": "2026-10-29T06:36:45+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 83,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
@@ -29,11 +28,10 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-29T04:36:21+00:00",
+      "last_success": "2026-10-29T06:36:45+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -60,8 +58,8 @@
       }
     },
     "samgov": {
-      "bulk_added": 37,
-      "bulk_note": "bulk file downloaded 218 MB; 97 matching of 14053 open notices",
+      "bulk_added": 40,
+      "bulk_note": "bulk file cached 2026-10-29T05:37:33+00:00; 97 matching (parsed earlier)",
       "carried_forward": true,
       "complete": false,
       "count": 97,
@@ -69,12 +67,12 @@
         "SAM_API_KEY": true
       },
       "errors": [
-        "SAM.gov {'ccode': '3030'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>",
+        "SAM.gov {'ccode': '4610'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>",
         "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
-      "last_success": "2026-10-29T05:36:21+00:00",
+      "last_success": "2026-10-29T06:36:45+00:00",
       "logged_in": true,
-      "login_note": "API key; +37 from the nightly bulk file",
+      "login_note": "API key; +40 from the nightly bulk file",
       "matches": 97,
       "reach_note": "HTTP 404",
       "reachable": true

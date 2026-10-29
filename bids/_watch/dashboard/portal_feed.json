@@ -977,7 +977,7 @@
  {
   "key": "samgov:6f56f057778f4477a61f3cf648febca5",
   "source": "samgov",
-  "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY ADDIS ABABA",
+  "agency": "STATE, DEPARTMENT OF / STATE, DEPARTMENT OF / U.S. EMBASSY ADDIS ABABA",
   "title": "Nanotechnology Certified Replacement Filter",
   "sol": "PR16340639",
   "closing": "2026-11-05",
@@ -1712,7 +1712,7 @@
  {
   "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-APG",
   "title": "Individual Water Treatment Device (IWTD) Laboratory Testing",
   "sol": "IWTD_LaboratoryTesting",
   "closing": "2026-11-12",
@@ -1742,7 +1742,7 @@
  {
   "key": "samgov:db1cb44b650f4cdc892299917c04adf9",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-APG",
   "title": "Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemicals and Materials",
   "sol": "IWTD_Reduction_TICs_TIMs",
   "closing": "2026-11-12",

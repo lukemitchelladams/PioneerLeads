@@ -5,7 +5,7 @@
   "detail": "logged in (attempt 1)",
   "open_count": 583,
   "matches": 83,
-  "last_success": "2026-10-29T04:36:21+00:00"
+  "last_success": "2026-10-29T06:36:45+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
@@ -13,15 +13,15 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set",
   "open_count": 1,
   "matches": 0,
-  "last_success": "2026-10-29T04:36:21+00:00"
+  "last_success": "2026-10-29T06:36:45+00:00"
  },
  {
   "source": "SAM.gov",
   "status": "Blind this run (last good data shown)",
-  "detail": "HTTP 404; showing 97 rows from the last good read; API key; +37 from the nightly bulk file; SAM.gov {'ccode': '3030'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-",
+  "detail": "HTTP 404; showing 97 rows from the last good read; API key; +40 from the nightly bulk file; SAM.gov {'ccode': '4610'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-",
   "open_count": 97,
   "matches": 97,
-  "last_success": "2026-10-29T05:36:21+00:00"
+  "last_success": "2026-10-29T06:36:45+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
