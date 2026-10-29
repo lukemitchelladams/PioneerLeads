@@ -54,5 +54,14 @@
       "contract sample.pdf",
       "front.docx"
     ]
+  },
+  "silas-conor": {
+    "id": "1a189986c7a9f856",
+    "threadId": "1a189986c7a9f856",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "bcc_count": 0,
+    "attachments": []
   }
 }
