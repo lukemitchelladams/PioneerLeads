@@ -1,25 +1,24 @@
 {
-  "checked_at": "2026-10-29T21:36:20+00:00",
+  "checked_at": "2026-10-29T22:35:57+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 580,
+      "count": 581,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-29T20:37:22+00:00",
+      "last_success": "2026-10-29T22:35:57+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 82,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 197,
-        "statewide BUYER": 385
+        "statewide AGGREGATE": 195,
+        "statewide BUYER": 388
       }
     },
     "bonfire": {
@@ -29,27 +28,26 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-29T20:37:22+00:00",
+      "last_success": "2026-10-29T22:35:57+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
     "coloradovss": {
       "complete": true,
-      "count": 59,
+      "count": 60,
       "creds": {},
       "errors": [],
-      "last_success": "2026-10-29T21:36:20+00:00",
+      "last_success": "2026-10-29T22:35:57+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 59
+        "statewide open": 60
       }
     },
     "dibbs": {
@@ -77,15 +75,15 @@
     "samgov": {
       "bulk_added": 37,
       "bulk_note": "bulk file cached 2026-10-29T05:37:33+00:00; 97 matching (parsed earlier)",
-      "count": 101,
+      "count": 102,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-29T21:36:20+00:00",
+      "last_success": "2026-10-29T22:35:57+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
-      "matches": 101,
+      "matches": 102,
       "reach_note": "HTTP 404",
       "reachable": true
     }
