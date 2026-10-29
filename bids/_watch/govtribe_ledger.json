@@ -1629,6 +1629,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T07:21Z: GovTribe still BLOCKED (52nd hour). HQ 06:36Z full pass: BidNet logged in (583 open / 83 matches), SAM 97 (3030 timeout), Bonfire no creds, DIBBS stale. No NEW, no changes. Inbox: nothing unseen.",
+  "last_hourly_check": "2026-10-29T08:21Z: GovTribe still BLOCKED (53rd hour). HQ 07:36Z SAM-only pass (SAM 97; report headline flagged samgov partly blind; BidNet last logged-in 06:36Z 583/83). 3 changes, none ours (State Dept nanotech filter, Army IWTD x2). No NEW. Inbox: nothing unseen.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

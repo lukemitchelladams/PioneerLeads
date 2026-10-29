@@ -136,3 +136,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-29 07:21Z hourly (read-only)
 - 0 unseen of 18. No CRM brief. No sub replies, bounces or TCF submission confirmation.
+
+## 2026-10-29 08:21Z hourly (read-only)
+- 0 unseen of 18. No CRM brief. No sub replies, bounces or TCF submission confirmation.
