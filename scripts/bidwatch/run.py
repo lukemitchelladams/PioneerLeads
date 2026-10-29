@@ -836,6 +836,11 @@ def main() -> int:
                 ping(src, "", summary)
         _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
                    next_at=iso() if not a.loop else None, interval_min=a.interval)
+        if "bidnet" in sources and os.environ.get("BIDWATCH_KEEPALIVE", "1") == "1":
+            # keep the BidNet session warm until the next scan, so it reuses the session instead of logging in
+            # again (fresh logins are what trip BidNet's robot check); the keeper never submits a password
+            subprocess.run([sys.executable, str(Path(__file__).resolve().parent / "keepalive.py"), "--ensure"],
+                           cwd=str(REPO), check=False)
         if not a.loop:
             return (0 if not degraded else 3) if ok else 2
         time.sleep(max(5, a.interval) * 60)
