@@ -1,0 +1,20 @@
+[
+  {
+    "key": "silas-tcf",
+    "subject": "Re: CDOC: Trinidad quote submitted",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "files": [
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/1. Exhibit A - Brown Bison Holdings LLC.pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/2. Exhibit B - Brown Bison Holdings LLC (signed).pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/3. Exhibit C - W-9 Brown Bison Holdings LLC (signed).pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/4. Exhibit D - Price Quote (H2 pricing).xlsx",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/5. Exhibit E - Brown Bison Holdings LLC (signed).pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/6. Exhibit F - Non-Conflict of Interest (signed).pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/7. Exhibit G - Consent to Search (H2 technician, signed).pdf",
+      "bids/cdoc-tcf-boiler-water/private/for-silas/send/8. Product Data and SDS - Equal Products (Exhibit A Sec. 8).pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-29/silas-tcf.txt"
+  }
+]

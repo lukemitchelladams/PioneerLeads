@@ -16,5 +16,23 @@
     ],
     "bcc_count": 0,
     "attachments": []
+  },
+  "silas-tcf": {
+    "id": "1a189148bc5ccb5f",
+    "threadId": "1a189148bc5ccb5f",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "1. Exhibit A - Brown Bison Holdings LLC.pdf",
+      "2. Exhibit B - Brown Bison Holdings LLC (signed).pdf",
+      "3. Exhibit C - W-9 Brown Bison Holdings LLC (signed).pdf",
+      "4. Exhibit D - Price Quote (H2 pricing).xlsx",
+      "5. Exhibit E - Brown Bison Holdings LLC (signed).pdf",
+      "6. Exhibit F - Non-Conflict of Interest (signed).pdf",
+      "7. Exhibit G - Consent to Search (H2 technician, signed).pdf",
+      "8. Product Data and SDS - Equal Products (Exhibit A Sec. 8).pdf"
+    ]
   }
 }
