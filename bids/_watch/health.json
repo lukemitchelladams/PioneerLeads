@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T01:36:11+00:00",
+  "checked_at": "2026-10-29T01:36:35+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -32,6 +32,7 @@
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -69,6 +70,7 @@
       "logged_in": true,
       "login_note": "API key; +36 from the nightly bulk file",
       "matches": 96,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 404",
       "reachable": true
     }

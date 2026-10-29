@@ -12942,6 +12942,7 @@
     },
     "bonfire:parkeronline-256147": {
       "agency": "Town of Parker",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "closing_text": "2026-11-13 17:00 MST",
       "department": "Engineering/Public Works",
@@ -13215,6 +13216,7 @@
     },
     "samgov:02fdc748f70d471abfba3cc6f8ac5a06": {
       "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-11-11",
       "documents": [],
@@ -13241,6 +13243,7 @@
     },
     "samgov:031da2a2b09f4488ae95045518da7098": {
       "agency": "INTERIOR, DEPARTMENT OF THE / BUREAU OF RECLAMATION / GREAT PLAINS REGIONAL OFFICE",
+      "carried_forward": true,
       "city": null,
       "closing": null,
       "documents": [],
@@ -13267,6 +13270,7 @@
     },
     "samgov:0f9b38e12f184fadbb459e087e00963d": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0f9b38e12f184fadbb459e087e00963d",
@@ -13342,6 +13346,7 @@
     },
     "samgov:10b03ac3597744dd9017bde2032a1fe3": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-06",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=10b03ac3597744dd9017bde2032a1fe3",
@@ -13368,6 +13373,7 @@
     },
     "samgov:156ee7b93b084524895a20bab5d2ad6e": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "carried_forward": true,
       "city": "Natick",
       "closing": "2026-11-12",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=156ee7b93b084524895a20bab5d2ad6e",
@@ -13399,6 +13405,7 @@
     },
     "samgov:16deb1d14ac142dab0b25a8626e03bd1": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-09",
       "documents": [],
@@ -13425,6 +13432,7 @@
     },
     "samgov:18cf8e050c6a40bca486f7516b646cfc": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W072 ENDIST NASHVILLE",
+      "carried_forward": true,
       "city": "Counce",
       "closing": null,
       "documents": [],
@@ -13451,6 +13459,7 @@
     },
     "samgov:22eaa5d5e7164f03802e778ff9432ce1": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC WVA",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-03",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=22eaa5d5e7164f03802e778ff9432ce1",
@@ -13477,6 +13486,7 @@
     },
     "samgov:2418a9db688d494abb607d1a8fe88058": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-10-30",
       "documents": [],
@@ -13503,6 +13513,7 @@
     },
     "samgov:24ffa6d27a674212a41ade72d91ec106": {
       "agency": "TREASURY, DEPARTMENT OF THE.BUREAU OF ENGRAVING AND PRINTING.OFFICE OF CURRENCY MANU (WCF)",
+      "carried_forward": true,
       "city": "Washington",
       "closing": "2026-11-07",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24ffa6d27a674212a41ade72d91ec106",
@@ -13534,6 +13545,7 @@
     },
     "samgov:27f7957d875a4ed38ec818b1a4afb863": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-10",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=27f7957d875a4ed38ec818b1a4afb863",
@@ -13560,6 +13572,7 @@
     },
     "samgov:2859aac90c304df289baf9898d7d44bd": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-09",
       "documents": [],
@@ -13586,6 +13599,7 @@
     },
     "samgov:2b0011c68733402aace4b0a7d9dd8487": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-16",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b0011c68733402aace4b0a7d9dd8487",
@@ -13612,6 +13626,7 @@
     },
     "samgov:2c6baa53c8054e3298082a09ae3a7b5f": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2c6baa53c8054e3298082a09ae3a7b5f",
@@ -13638,6 +13653,7 @@
     },
     "samgov:2e6249880c22476b9c98dc249949456f": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-09",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e6249880c22476b9c98dc249949456f",
@@ -13664,6 +13680,7 @@
     },
     "samgov:2fa822e893384a93bccb65cb8ac7aea4": {
       "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-11-11",
       "documents": [],
@@ -13690,6 +13707,7 @@
     },
     "samgov:33bd86866d1946769ed093ca7a1ec653": {
       "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-10-30",
       "documents": [],
@@ -13716,6 +13734,7 @@
     },
     "samgov:3a25347065dc4abab033df330d536ef2": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
+      "carried_forward": true,
       "city": "Lompoc",
       "closing": "2026-11-23",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a25347065dc4abab033df330d536ef2",
@@ -13803,6 +13822,7 @@
     },
     "samgov:44098e7c120b467eaab640f73e9802cc": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-01",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44098e7c120b467eaab640f73e9802cc",
@@ -13829,6 +13849,7 @@
     },
     "samgov:463e2a5bc1914bc9927e6fc663c61e2a": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=463e2a5bc1914bc9927e6fc663c61e2a",
@@ -13855,6 +13876,7 @@
     },
     "samgov:498039a792b2415ca237b1f25185acfd": {
       "agency": "STATE, DEPARTMENT OF / STATE, DEPARTMENT OF / U.S. EMBASSY ADDIS ABABA",
+      "carried_forward": true,
       "city": "Addis Ababa",
       "closing": "2026-11-05",
       "documents": [],
@@ -13881,6 +13903,7 @@
     },
     "samgov:4d0d75c8e5a44e54ad59972a249ec55e": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-04",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d0d75c8e5a44e54ad59972a249ec55e",
@@ -13936,6 +13959,7 @@
     },
     "samgov:52b4c80711934b99835162c13180bf40": {
       "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52b4c80711934b99835162c13180bf40",
@@ -14011,6 +14035,7 @@
     },
     "samgov:54da6291bed54524833884f578079494": {
       "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+      "carried_forward": true,
       "city": "Aurora",
       "closing": null,
       "documents": [],
@@ -14037,6 +14062,7 @@
     },
     "samgov:57e9a121061b4dba862dca1b8ffbc5b1": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA TROOP SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-05",
       "documents": [],
@@ -14063,6 +14089,7 @@
     },
     "samgov:5988a90b5fb94514a89cebc7362a22b5": {
       "agency": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-11-11",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5988a90b5fb94514a89cebc7362a22b5",
@@ -14102,6 +14129,7 @@
     },
     "samgov:5bccbbc922a04630af786e240403e306": {
       "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+      "carried_forward": true,
       "city": null,
       "closing": null,
       "documents": [],
@@ -14128,6 +14156,7 @@
     },
     "samgov:5bf1391766b64cec84fbea012633435f": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-11",
       "documents": [],
@@ -14154,6 +14183,7 @@
     },
     "samgov:5eab430c39444c279a8cc451a662092d": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-19",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5eab430c39444c279a8cc451a662092d",
@@ -14180,6 +14210,7 @@
     },
     "samgov:618732e7b79446fab94fe7286242de02": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-01",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=618732e7b79446fab94fe7286242de02",
@@ -14206,6 +14237,7 @@
     },
     "samgov:62a1e06ab30245fe93fc3e0c4caaf443": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-07-24",
       "documents": [],
@@ -14232,6 +14264,7 @@
     },
     "samgov:63972a264f804080ad2082f0fe279f1a": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-05",
       "documents": [],
@@ -14258,6 +14291,7 @@
     },
     "samgov:66114240b6ce43ff9ba45be3c2624fe1": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66114240b6ce43ff9ba45be3c2624fe1",
@@ -14284,6 +14318,7 @@
     },
     "samgov:66f6d2a7bd984472b9e573b3df0e56f7": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-09",
       "documents": [],
@@ -14310,6 +14345,7 @@
     },
     "samgov:6ab91dd8bf824b2fbfa32476c810d7be": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-23",
       "documents": [],
@@ -14336,6 +14372,7 @@
     },
     "samgov:6ca3b23ebf3b46babe2a7cab9a925893": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION AT OKLAHOMA CITY, OK",
+      "carried_forward": true,
       "city": null,
       "closing": null,
       "documents": [],
@@ -14362,6 +14399,7 @@
     },
     "samgov:6ef9cebf1ae54094b375118b99c31867": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-10",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ef9cebf1ae54094b375118b99c31867",
@@ -14388,6 +14426,7 @@
     },
     "samgov:6f56f057778f4477a61f3cf648febca5": {
       "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY ADDIS ABABA",
+      "carried_forward": true,
       "city": "Addis Ababa",
       "closing": "2026-11-05",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f56f057778f4477a61f3cf648febca5",
@@ -14423,6 +14462,7 @@
     },
     "samgov:6f774aa5d21848aa9a0121a4b2293ab9": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC WVA",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-03",
       "documents": [],
@@ -14449,6 +14489,7 @@
     },
     "samgov:6fcd8de199f5419ca0fae46dc353a73d": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6fcd8de199f5419ca0fae46dc353a73d",
@@ -14475,6 +14516,7 @@
     },
     "samgov:6ff2139e1e4e4f9a8ea52133c377ebb0": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-04",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ff2139e1e4e4f9a8ea52133c377ebb0",
@@ -14534,6 +14576,7 @@
     },
     "samgov:70d44b9e2c6d4b1bbc71813c6d527de4": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70d44b9e2c6d4b1bbc71813c6d527de4",
@@ -14560,6 +14603,7 @@
     },
     "samgov:71ac218ba63c4668b2b3129557fcdeb5": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-04",
       "documents": [],
@@ -14586,6 +14630,7 @@
     },
     "samgov:7344ad5ce5304aa68109854c6d5871f5": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-12",
       "documents": [],
@@ -14612,6 +14657,7 @@
     },
     "samgov:769e7021c09444ef942325ad392d8628": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-19",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=769e7021c09444ef942325ad392d8628",
@@ -14643,6 +14689,7 @@
     },
     "samgov:77f43d75da58449f8d622ac857d2ff4b": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-19",
       "documents": [],
@@ -14669,6 +14716,7 @@
     },
     "samgov:7872b54a0d4547a78d839266d5c8fba5": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-06-15",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7872b54a0d4547a78d839266d5c8fba5",
@@ -14695,6 +14743,7 @@
     },
     "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-03-03",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a6f641b2ccc4be7aa8e283cb9a2e90b",
@@ -14721,6 +14770,7 @@
     },
     "samgov:7b9acd467e25498bbd5add36c25f76da": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-10",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b9acd467e25498bbd5add36c25f76da",
@@ -14756,6 +14806,7 @@
     },
     "samgov:7c57681a0efb4d8f916d6f9e0c3ee3c9": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-23",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c57681a0efb4d8f916d6f9e0c3ee3c9",
@@ -14815,6 +14866,7 @@
     },
     "samgov:83f8e4293685404da1e09c1d43a81204": {
       "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.AVIATION LOGISTICS CENTER (ALC)(00038)",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=83f8e4293685404da1e09c1d43a81204",
@@ -14850,6 +14902,7 @@
     },
     "samgov:88fae747c268450babe6750b67aa4350": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88fae747c268450babe6750b67aa4350",
@@ -14876,6 +14929,7 @@
     },
     "samgov:8ccf3c647f414b7ea5cbb513ccfb51c9": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-26",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ccf3c647f414b7ea5cbb513ccfb51c9",
@@ -14907,6 +14961,7 @@
     },
     "samgov:8f1feb2f0f3d47c8bd10b6846dfa459f": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8f1feb2f0f3d47c8bd10b6846dfa459f",
@@ -14933,6 +14988,7 @@
     },
     "samgov:97d4df5ffe0f47ce9a9e19bf923de773": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97d4df5ffe0f47ce9a9e19bf923de773",
@@ -14959,6 +15015,7 @@
     },
     "samgov:9a80372ece404f7a91ca3e9e5646e62d": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
+      "carried_forward": true,
       "city": "Lompoc",
       "closing": "2026-11-23",
       "documents": [],
@@ -14985,6 +15042,7 @@
     },
     "samgov:9eb8d0f698424e2e8a46b5475dcf4d7c": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9eb8d0f698424e2e8a46b5475dcf4d7c",
@@ -15011,6 +15069,7 @@
     },
     "samgov:9ede66cb08524a8a8c18d5308544eafd": {
       "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / COMMODITIES & SERVICES ACQUISITION SERVICE (36C791)",
+      "carried_forward": true,
       "city": "Golden",
       "closing": "2026-10-30",
       "documents": [],
@@ -15037,6 +15096,7 @@
     },
     "samgov:9efac20ee41241b4ba84f3c89f59d96d": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-03",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9efac20ee41241b4ba84f3c89f59d96d",
@@ -15063,6 +15123,7 @@
     },
     "samgov:a5a251d4a06b421cbc48f7e23692ae11": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": null,
       "documents": [],
@@ -15089,6 +15150,7 @@
     },
     "samgov:b05bd8d70d204cf3a0903cc3a05934a6": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-05",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b05bd8d70d204cf3a0903cc3a05934a6",
@@ -15115,6 +15177,7 @@
     },
     "samgov:b11d3623d84843b2899857e45ac20464": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-25",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b11d3623d84843b2899857e45ac20464",
@@ -15170,6 +15233,7 @@
     },
     "samgov:b240a8fc08d548528f9f1352d779d9ad": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
+      "carried_forward": true,
       "city": "Anniston",
       "closing": "2026-11-09",
       "documents": [],
@@ -15196,6 +15260,7 @@
     },
     "samgov:b2f8868b8e0442338065f3a5a3d81af1": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2f8868b8e0442338065f3a5a3d81af1",
@@ -15222,6 +15287,7 @@
     },
     "samgov:b6794a137e8647cca7072ec299896676": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-03",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6794a137e8647cca7072ec299896676",
@@ -15248,6 +15314,7 @@
     },
     "samgov:b8d42df049264aef86019c9aa4e691c8": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-14",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8d42df049264aef86019c9aa4e691c8",
@@ -15274,6 +15341,7 @@
     },
     "samgov:bd849c41a0ea48998a630786a4e39113": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd849c41a0ea48998a630786a4e39113",
@@ -15300,6 +15368,7 @@
     },
     "samgov:be527e8411824dd29e4a764a91ab32a6": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
+      "carried_forward": true,
       "city": "Lompoc",
       "closing": "2026-11-23",
       "documents": [],
@@ -15326,6 +15395,7 @@
     },
     "samgov:be6616960717497f9236f22b316808fa": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-10",
       "documents": [],
@@ -15352,6 +15422,7 @@
     },
     "samgov:c197c44e343742a5adde5688821f5075": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-11",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c197c44e343742a5adde5688821f5075",
@@ -15383,6 +15454,7 @@
     },
     "samgov:c29f795658414ef49624fb7d3557091f": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-01",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c29f795658414ef49624fb7d3557091f",
@@ -15409,6 +15481,7 @@
     },
     "samgov:c714c6130b9d40d0991dbbe1815c37f3": {
       "agency": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.ORNL UT-BATTELLE LLC-DOE CONTRACTOR",
+      "carried_forward": true,
       "city": "Oak Ridge",
       "closing": "2026-10-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c714c6130b9d40d0991dbbe1815c37f3",
@@ -15460,6 +15533,7 @@
     },
     "samgov:c99d773036a64c7d86fbd42c65a1a4d6": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / SPRMM1 DLA MECHANICSBURG",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-14",
       "documents": [],
@@ -15486,6 +15560,7 @@
     },
     "samgov:cae0c7421ecd424c8a3aa668045ddfe1": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-10",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cae0c7421ecd424c8a3aa668045ddfe1",
@@ -15512,6 +15587,7 @@
     },
     "samgov:cd651e8500eb462ba089ebb18f600686": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-08",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd651e8500eb462ba089ebb18f600686",
@@ -15538,6 +15614,7 @@
     },
     "samgov:ce000a5797054a1a8eee0f236eb05906": {
       "agency": "COMMERCE, DEPARTMENT OF / NATIONAL TELECOMMUNICATIONS AND INFORMATION ADMINISTRATION / NATIONAL TELECOMMUNICATIONS AND INFORMATION ADMINISTRATION",
+      "carried_forward": true,
       "city": "Boulder",
       "closing": "2026-11-11",
       "documents": [],
@@ -15564,6 +15641,7 @@
     },
     "samgov:d20097c1616d47c7833927894d6850b7": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-10-29",
       "documents": [],
@@ -15590,6 +15668,7 @@
     },
     "samgov:d2d51b2fbfc1498dae68cd611c30064a": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-09",
       "documents": [],
@@ -15616,6 +15695,7 @@
     },
     "samgov:d482864e35ad486a91225ac6bba8ff8e": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+      "carried_forward": true,
       "city": "Anniston",
       "closing": "2026-11-09",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d482864e35ad486a91225ac6bba8ff8e",
@@ -15647,6 +15727,7 @@
     },
     "samgov:d637ce3f46ee458e835243c74d5a2a42": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-13",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d637ce3f46ee458e835243c74d5a2a42",
@@ -15673,6 +15754,7 @@
     },
     "samgov:d9e769af7e6349b8a28f9fbcf5d71cba": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-06",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9e769af7e6349b8a28f9fbcf5d71cba",
@@ -15699,6 +15781,7 @@
     },
     "samgov:d9fd453b9fd045f8b78e1bb9d511d1cd": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-07-29",
       "documents": [],
@@ -15725,6 +15808,7 @@
     },
     "samgov:da984b4f70fd412d924e9c830a2c3299": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-23",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da984b4f70fd412d924e9c830a2c3299",
@@ -15751,6 +15835,7 @@
     },
     "samgov:db1cb44b650f4cdc892299917c04adf9": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+      "carried_forward": true,
       "city": "Natick",
       "closing": "2026-11-12",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db1cb44b650f4cdc892299917c04adf9",
@@ -15790,6 +15875,7 @@
     },
     "samgov:dccd5b89612545bf88341d486f74a396": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-10-30",
       "documents": [],
@@ -15816,6 +15902,7 @@
     },
     "samgov:e63d86aa73b34b0ca47a59fbfaa8ba09": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+      "carried_forward": true,
       "city": "Richmond",
       "closing": "2026-11-09",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e63d86aa73b34b0ca47a59fbfaa8ba09",
@@ -15842,6 +15929,7 @@
     },
     "samgov:e7220f8924254f4fac1a83a72708bba1": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-07-29",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7220f8924254f4fac1a83a72708bba1",
@@ -15873,6 +15961,7 @@
     },
     "samgov:e88b2c4bbf9b49c490f20e1bca91bf88": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e88b2c4bbf9b49c490f20e1bca91bf88",
@@ -15899,6 +15988,7 @@
     },
     "samgov:e983271f59ed4af98747b1aea45eeeae": {
       "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.CG-SEA-C23",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-11",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e983271f59ed4af98747b1aea45eeeae",
@@ -15950,6 +16040,7 @@
     },
     "samgov:eea50eb876044089a54c01f641e9c9be": {
       "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-12-16",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eea50eb876044089a54c01f641e9c9be",
@@ -15981,6 +16072,7 @@
     },
     "samgov:ef42fcf29ca7449db6a4146acf468d19": {
       "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2027-07-29",
       "documents": [],
@@ -16007,6 +16099,7 @@
     },
     "samgov:f09596ebe7514beda8c1522bd0d664fb": {
       "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-09",
       "documents": [],
@@ -16033,6 +16126,7 @@
     },
     "samgov:f421756d4dbd482bae39b05d4208ff7d": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-02",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f421756d4dbd482bae39b05d4208ff7d",
@@ -16059,6 +16153,7 @@
     },
     "samgov:f54174631fdf46668d424fa88a3a8bf1": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-11",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f54174631fdf46668d424fa88a3a8bf1",
@@ -16085,6 +16180,7 @@
     },
     "samgov:fc84984eaeee410897734ba17d6782ed": {
       "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+      "carried_forward": true,
       "city": "0",
       "closing": "2026-10-30",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc84984eaeee410897734ba17d6782ed",
@@ -16116,6 +16212,7 @@
     },
     "samgov:ffa761b91c61460291c74cf744e8a792": {
       "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+      "carried_forward": true,
       "city": null,
       "closing": "2026-11-04",
       "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffa761b91c61460291c74cf744e8a792",
@@ -16146,5 +16243,5 @@
       "watched": false
     }
   },
-  "scanned_at": "2026-10-29T01:36:11+00:00"
+  "scanned_at": "2026-10-29T01:36:35+00:00"
 }
