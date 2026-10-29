@@ -1437,6 +1437,13 @@
       "due": "2026-11-04",
       "reason": "Water-utility chemical supply for Castle Rock Water plants (HQ triage-b 20:52Z: NO); no service component in our trades. Addendum notice 10/28 16:32 MT ignored.",
       "triaged_at": "2026-10-28T23:28:00+00:00"
+    },
+    "988c00a2123941f29940c5cbcdb093b5": {
+      "decision": "NO",
+      "title": "NAVSUP WSS Mechanicsburg - 31--BEARING UNIT PLAIN (PSC 3130, NAICS 332991), due 2026-12-30",
+      "due": "2026-12-30",
+      "reason": "Second SAM posting of the NAVSUP 'BEARING UNIT PLAIN' buy already triaged NO (6fcd8de1...): NSN part buy from a Navy weapon-systems buying office, approved-source/qualified parts, no quantities or drawings in the public notice, and Jones Bearing has no SAM registration. Same verdict as the first posting ().",
+      "triaged_at": "2026-10-29T06:25:00+00:00"
     }
   },
   "watched": {
@@ -1622,6 +1629,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T05:21Z: GovTribe still BLOCKED (50th hour). HQ 04:36Z full pass: BidNet logged in (583 open / 83 matches), SAM 96, Bonfire no creds, DIBBS stale. No NEW, no changes. Inbox: nothing unseen.",
+  "last_hourly_check": "2026-10-29T06:21Z: GovTribe still BLOCKED (51st hour). HQ 05:36Z SAM-only pass (SAM 97, ccode 3030 504 timeout; BidNet last logged-in 04:36Z 583/83). 1 NEW: NAVSUP 'BEARING UNIT PLAIN' second posting -> NO. No changes. Inbox: nothing unseen.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
