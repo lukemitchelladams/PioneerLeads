@@ -1558,6 +1558,18 @@
       "verdict": "NO",
       "why": "Remaining ~43 postings are software, consulting, medical, lab, ammunition, HR/benefits, RFIs, sole-source notices and already-closed DQs (laundry GMYC closed 10/29 10:00); none in our trades. Only the entries above needed a decision.",
       "at": "2026-10-29T14:44:00Z"
+    },
+    "bidnet:0000441987": {
+      "name": "City of Longmont RFP-426089 On-Call Specialized Electrical Contractor Services for Treatment Operations (BidNet 0000441987, due 2026-11-18 14:00 MST)",
+      "verdict": "EVALUATE",
+      "why": "HQ triage 2026-10-29 15:00Z (pipeline row longmont-426089-oncall-electrical): no pre-bid listed on BidNet; RFP-426089_OC_Spec_Electrical.pdf watchlisted for the next logged-in scan; check SCADA/instrumentation certs and subcontracting limits before any GO. Electrical sub TBD.",
+      "at": "2026-10-29T15:30:00Z"
+    },
+    "bidnet:0000440322": {
+      "name": "Carbon Valley Parks & Recreation District Mechanical Service and Preventive Maintenance-2026-3 (BidNet 0000440322, due 2026-12-08 14:00 MST)",
+      "verdict": "EVALUATE",
+      "why": "HQ triage 2026-10-29 15:00Z (folder bids/carbon-valley-mechanical-pm): BidNet 'Job-Walk Visit, Attendance Mandatory, Event date 11/10/2026 09:00 AM MST, Location 701 5th Street, Frederick CO 80530'. HVAC PM is our core trade; scope PDF watchlisted. Walk day collides with Arapahoe irrigation 10:00 (Aurora) and Poudre hood 13:30 (Fort Collins).",
+      "at": "2026-10-29T15:30:00Z"
     }
   },
   "watched": {
@@ -1743,6 +1755,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T14:44:00Z: GovTribe still blocked. HQ 14:08Z scan = SAM + ColoradoVSS (new source, 59 postings, 3 matches: TCF DQ = ours, CAVEA = NO, PPCC design RFQ = NO); BidNet/Bonfire not scanned this pass (last 12:38Z). Whole VSS list reviewed: 2 EVALUATE (DPA IH-25043 garage storefront entrance, MANDATORY walk 10/29 09:00 MDT at 1350 Lincoln St; PCC Pueblo ADA upgrades, pre-bid date not in hand). Inbox: nothing unseen. No sub replies, no CRM brief, no TCF confirmation.",
+  "last_hourly_check": "2026-10-29T15:30:00Z: GovTribe still blocked. HQ 14:47Z full scan: BidNet logged in 590 open/85 matches, SAM 100, ColoradoVSS 59/3, Bonfire no creds, DIBBS stale. 2 NEW (Longmont on-call electrical RFP-426089, Carbon Valley mechanical PM with MANDATORY walk 11/10 09:00) both EVALUATE per HQ; docs watchlisted. Inbox: Wash On Wheels (David) will review RTD materials, asked whether janitorial is needed (HQ answered: pressure washing + graffiti only); Gmail delay notice #2 for ryan@rocksolidhs.com (Brighton); Govly marketing. No TCF confirmation.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

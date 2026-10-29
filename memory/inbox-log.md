@@ -162,3 +162,9 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-29 14:21Z hourly (read-only)
 - Nothing unseen in the inbox (18 threads, all logged). No CRM brief, no sub replies, no bounces, no TCF submission confirmation.
+
+## 2026-10-29 15:21Z hourly (read-only)
+- 1a1882305a0a09b4 info@washonwheels.net 14:49Z (RTD 126DM016 sub pricing): David will review and answer in a couple of days; pressure washing + graffiti only, no janitorial. HQ replied 15:00Z (outbox wow.txt). Logged in rtd-bus-shelter-maintenance/sub-outreach.md.
+- 1a1881742c102911 mailer-daemon 14:36Z: delay notice #2 for ryan@rocksolidhs.com (Brighton handyman ask), inbox full, retry until 10/30 06:55 PDT. Logged in brighton-as-needed-construction/sub-outreach.md.
+- 1a188315cc5bafd8 hello@govly.com 15:04Z: marketing ("89% of the federal market is still locked"). No action.
+- No CRM brief, no TCF submission confirmation.
