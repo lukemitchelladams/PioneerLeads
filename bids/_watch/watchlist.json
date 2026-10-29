@@ -522,6 +522,22 @@
       "match": "on-call general contractor services",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Carbon Valley P&R Mechanical Service and PM (EVALUATE; MANDATORY walk 11/10 09:00 Frederick)",
+      "source": "bidnet",
+      "id": "0000440322",
+      "match": "0000440322",
+      "folder": "bids/carbon-valley-mechanical-pm",
+      "govtribe_ids": []
+    },
+    {
+      "name": "Longmont RFP-426089 On-Call Specialized Electrical, treatment operations (EVALUATE)",
+      "source": "bidnet",
+      "id": "0000441987",
+      "match": "0000441987",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }

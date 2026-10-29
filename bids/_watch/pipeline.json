@@ -1,6 +1,6 @@
 {
   "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
-  "updated": "2026-10-28T21:00:00Z",
+  "updated": "2026-10-29T15:00:00Z",
   "bids": [
     {
       "id": "cos-parks-r26-077mz",
@@ -66,7 +66,7 @@
       "due": "2026-10-28T14:00:00-06:00",
       "portal": "RMEPS (BidNet)",
       "decision": "NO",
-      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
+      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional ≤3% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
       "prebid": "2026-10-09T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Plumbing sub",
@@ -355,10 +355,10 @@
       "sol": "RFP 26-021-1",
       "trade": "Electrical",
       "due": "2026-11-06T14:00:00-07:00",
-      "due_source": "RFP 26-021-1 \u00a71.2: \"November 6, 2026 @ 2:00pm\"",
+      "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
       "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (\u00a71.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (\u00a77) not in hand (Bonfire/BidNet login).",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -396,14 +396,14 @@
       "due_source": "RFP 27-007 p.2: 'Solicitation Due Date: November 6, 2026 Time: 2:00 PM (MST)'; Exhibit A timeline: Questions Due 10/21/2026, Questions Answered 10/23/2026, Contract Start 7/01/2027",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A \u00a72 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. \u00a75.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP \u00a72.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
+      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A §2 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. §5.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP §2.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
       "prebid": "2026-10-13T08:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "n/a (NO)",
       "subs": "Not started (NO)",
       "sub_pricing": "None",
       "folder": "bids/cherrycreek-custodial-27-007",
-      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP \u00a72.8)"
+      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP §2.8)"
     },
     {
       "id": "parks-oncall-mowing",
@@ -1297,6 +1297,44 @@
       "contact": "",
       "due_source": "ColoradoVSS listing: closing 2026-12-03 14:00 MST",
       "doc_gaps": "Both IFB PDFs (ColoradoVSS only)"
+    },
+    {
+      "id": "carbon-valley-mechanical-pm",
+      "agency": "Carbon Valley Parks & Recreation District",
+      "title": "Mechanical Service and Preventive Maintenance",
+      "sol": "Mechanical Service and Preventive Maintenance-2026-3 (BidNet 0000440322)",
+      "trade": "HVAC",
+      "due": "2026-12-08T14:00:00-07:00",
+      "due_source": "BidNet: '12/08/2026 02:00 PM MST'",
+      "portal": "BidNet",
+      "decision": "EVALUATE",
+      "decision_note": "Found 2026-10-29 scan. BidNet event: 'Job-Walk Visit, Attendance Mandatory, Event date 11/10/2026 09:00 AM MST, Location 701 5th Street, Frederick CO 80530'. Same day as Poudre hood walk 13:30 (Fort Collins) and Arapahoe 10:00 (Aurora). Docs watchlisted.",
+      "prebid": "2026-11-10T09:00:00-07:00",
+      "prebid_mandatory": true,
+      "performer": "HVAC sub TBD",
+      "subs": "Not started",
+      "sub_pricing": "None",
+      "folder": "bids/carbon-valley-mechanical-pm",
+      "contact": "BidNet"
+    },
+    {
+      "id": "longmont-426089-oncall-electrical",
+      "agency": "City of Longmont",
+      "title": "On-Call Specialized Electrical Contractor Services for Treatment Operations",
+      "sol": "RFP-426089 (BidNet 0000441987)",
+      "trade": "Electrical",
+      "due": "2026-11-18T14:00:00-07:00",
+      "due_source": "BidNet: '11/18/2026 02:00 PM MST'",
+      "portal": "BidNet",
+      "decision": "EVALUATE",
+      "decision_note": "Found 2026-10-29 scan. No pre-bid listed on BidNet. Check for SCADA/instrumentation certs and subcontracting limits. Docs watchlisted.",
+      "prebid": null,
+      "prebid_mandatory": null,
+      "performer": "Electrical sub TBD",
+      "subs": "Not started",
+      "sub_pricing": "None",
+      "folder": null,
+      "contact": "BidNet"
     }
   ],
   "events": [
