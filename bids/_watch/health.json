@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-28T23:36:26+00:00",
+  "checked_at": "2026-10-29T00:36:04+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -19,6 +19,7 @@
       "logged_in": false,
       "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
       "matches": 14,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
@@ -37,6 +38,7 @@
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -63,17 +65,17 @@
       }
     },
     "samgov": {
-      "bulk_added": 42,
-      "bulk_note": "bulk file cached 2026-10-28T05:40:41+00:00; 97 matching (parsed earlier)",
-      "count": 106,
+      "bulk_added": 36,
+      "bulk_note": "bulk file cached 2026-10-28T05:40:41+00:00; 87 matching of 12912 open notices",
+      "count": 96,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-28T23:36:26+00:00",
+      "last_success": "2026-10-29T00:36:04+00:00",
       "logged_in": true,
-      "login_note": "API key; +42 from the nightly bulk file",
-      "matches": 106,
+      "login_note": "API key; +36 from the nightly bulk file",
+      "matches": 96,
       "reach_note": "HTTP 404",
       "reachable": true
     }

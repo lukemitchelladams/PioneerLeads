@@ -809,24 +809,6 @@
       "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/City-Admin-Building-CAB-Building-Automation-System-BAS-Modernization/0000437173?purchasingGroupId=8409951&origin=1",
       "watched": true
     },
-    "bidnet:0000437243": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Walsh Manor Roof Replacement Colorado Calendar Published 09/16/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T02:15:34+00:00",
-      "id": "0000437243",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "rmeps",
-      "profiles": [],
-      "published": "2026-09-16",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Walsh Manor Roof Replacement",
-      "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Walsh-Manor-Roof-Replacement/0000437243?purchasingGroupId=8409951&origin=1",
-      "watched": false
-    },
     "bidnet:0000437533": {
       "agency": "City of Aspen",
       "carried_forward": true,
@@ -2930,24 +2912,6 @@
       "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/005-27-RFP-High-Speed-Reliable-Internet-Access-Services/0000439271?purchasingGroupId=8409951&origin=1",
       "watched": true
     },
-    "bidnet:0000439274": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Farr Neighborhood - Phase 2 - Property Inspection & Work Plan Development Colorado Calendar Published 10/05/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T01:55:32+00:00",
-      "id": "0000439274",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "rmeps",
-      "profiles": [],
-      "published": "2026-10-05",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Farr Neighborhood - Phase 2 - Property Inspection & Work Plan Development",
-      "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Farr-Neighborhood-Phase-2-Property-Inspection-Work-Plan-Development/0000439274?purchasingGroupId=8409951&origin=1",
-      "watched": false
-    },
     "bidnet:0000439349": {
       "agency": "",
       "carried_forward": true,
@@ -4009,24 +3973,6 @@
       "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Grand-Junction-Mobility-Hub/0000439710?purchasingGroupId=8409951&origin=1",
       "watched": false
     },
-    "bidnet:0000439714": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Settlement notice: CSU UV 1600 823-825 Reroof and Exterior Colorado Calendar Published 10/14/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T01:55:32+00:00",
-      "id": "0000439714",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "rmeps",
-      "profiles": [],
-      "published": "2026-10-14",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Settlement notice: CSU UV 1600 823-825 Reroof and Exterior",
-      "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Settlement-notice-CSU-UV-1600-823-825-Reroof-and-Exterior/0000439714?purchasingGroupId=8409951&origin=1",
-      "watched": false
-    },
     "bidnet:0000439717": {
       "agency": "",
       "carried_forward": true,
@@ -5080,24 +5026,6 @@
       "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Design-Build-Cosmetology-Classroom-Remodel-at-South-High-School/0000440066?purchasingGroupId=8409951&origin=1",
       "watched": false
     },
-    "bidnet:0000440069": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Administrative Hearing Officer Colorado Calendar Published 10/13/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T02:15:34+00:00",
-      "id": "0000440069",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "rmeps",
-      "profiles": [],
-      "published": "2026-10-13",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Administrative Hearing Officer",
-      "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Administrative-Hearing-Officer/0000440069?purchasingGroupId=8409951&origin=1",
-      "watched": false
-    },
     "bidnet:0000440073": {
       "agency": "",
       "carried_forward": true,
@@ -5383,24 +5311,6 @@
       "state": "CO",
       "title": "Exterior Restoration - Professional Environmental Consulting Services",
       "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Exterior-Restoration-Professional-Environmental-Consulting-Services/0000440187?purchasingGroupId=8409951&origin=1",
-      "watched": false
-    },
-    "bidnet:0000440196": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "CMU 2877- NFS for RRH10-CP6 Parking Connection Colorado Calendar Published 10/14/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T01:55:32+00:00",
-      "id": "0000440196",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "rmeps",
-      "profiles": [],
-      "published": "2026-10-14",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "CMU 2877- NFS for RRH10-CP6 Parking Connection",
-      "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CMU-2877-NFS-for-RRH10-CP6-Parking-Connection/0000440196?purchasingGroupId=8409951&origin=1",
       "watched": false
     },
     "bidnet:0000440205": {
@@ -9464,6 +9374,7 @@
     },
     "bidnet:2403155002": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2028-05-05",
       "context": "Mortuary Services Agreements Colorado Calendar Published 04/11/2023 Clock Closing 05/05/2028",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9481,6 +9392,7 @@
     },
     "bidnet:2444920252": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2028-08-30",
       "context": "OFF BASE PRIORITY CHILD CARE REFERRALS Colorado Calendar Published 08/31/2023 Clock Closing 08/30/2028",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9498,6 +9410,7 @@
     },
     "bidnet:2558034502": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2029-11-26",
       "context": "Commercial Lodging BPA - Peterson SFB Colorado Calendar Published 11/26/2024 Clock Closing 11/26/2029",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9515,6 +9428,7 @@
     },
     "bidnet:2560482002": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2029-12-08",
       "context": "Operational Test and Training Infrastructure (OTTI) Commercial Solutions Opening (CSO) Colorado Calendar Published 12/09/2024 Clock Closing 12/08/2029",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9532,6 +9446,7 @@
     },
     "bidnet:2576187752": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2029-08-16",
       "context": "Peterson SFB Wifi Services Colorado Calendar Published 02/20/2025 Clock Closing 08/16/2029",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9549,6 +9464,7 @@
     },
     "bidnet:2624561792": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2029-08-29",
       "context": "FA461325Q0023 Replacement Office Furniture B327/328 Wyoming Calendar Published 08/11/2025 Clock Closing 08/29/2029",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9566,6 +9482,7 @@
     },
     "bidnet:2643462392": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-10-24",
       "context": "USDA Forest Service Wildfire & All-Hazard Incident Sources Sought Colorado Calendar Published 10/24/2025 Clock Closing 10/24/2027",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9583,6 +9500,7 @@
     },
     "bidnet:2651395952": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-12",
       "context": "PKA Relocatable Facility Wyoming Calendar Published 12/04/2025 Clock Closing 12/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9600,6 +9518,7 @@
     },
     "bidnet:2654697947": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-23",
       "context": "4/10 C CO Austere Care and EMT Training Colorado Calendar Published 12/19/2025 Clock Closing 12/23/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9617,6 +9536,7 @@
     },
     "bidnet:2654795867": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2030-01-23",
       "context": "Commercial Solutions Opening (CSO) for Space Domain Awareness (SDA) Solutions. Colorado Calendar Published 12/19/2025 Clock Closing 01/23/2030",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9634,6 +9554,7 @@
     },
     "bidnet:2700231767": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Y--GLCA 318882 Bullfrog Colorado Calendar Published 06/16/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9651,6 +9572,7 @@
     },
     "bidnet:2715347912": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Y--BLM-CO GAOA UFO MPLC WAREHOUSE IMPROVEMENT Colorado Calendar Published 08/29/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9668,6 +9590,7 @@
     },
     "bidnet:2717172692": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Z--ALPO STABILIZATION OF STAPLE BEND TUNNEL Colorado Calendar Published 09/17/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9685,6 +9608,7 @@
     },
     "bidnet:2717427692": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Electro-Therapeutic Modalities for Pain Management (ETMPM) - Transcutaneous Electrical Nerve Stimulation (TENS) Procurement Program Colorado Calendar Published 09/19/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9704,6 +9628,7 @@
     },
     "bidnet:2717443247": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "Y--GRTE 237343 - Rehab 4 Lazy F Ranch Colorado Calendar Published 09/21/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9721,6 +9646,7 @@
     },
     "bidnet:2717897147": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Z--YELL 338223 - Bridge Preservation Colorado Calendar Published 09/24/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9738,6 +9664,7 @@
     },
     "bidnet:2717960642": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "LARO 258755 - Replace Dilapidated Docks and Fuel S Colorado Calendar Published 09/25/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9755,6 +9682,7 @@
     },
     "bidnet:2718214877": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "FY27 Nursing Practice Oversight Course (NPOC) Colorado Calendar Published 09/28/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9772,6 +9700,7 @@
     },
     "bidnet:2718217937": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "554-27-117 Conduct Concrete and Civil Site Repairs. Colorado Calendar Published 09/28/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9789,6 +9718,7 @@
     },
     "bidnet:2718403322": {
       "agency": "",
+      "carried_forward": true,
       "closing": null,
       "context": "USSF Construction CSO Colorado Calendar Published 09/29/2026 Clock Closing Not Available",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9806,6 +9736,7 @@
     },
     "bidnet:2718447182": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Y--GCI Pollyanna #2 Acid Mine Drainage Remediation Pr Colorado Calendar Published 09/30/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9823,6 +9754,7 @@
     },
     "bidnet:2718503282": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "2026 Distributed Wind Turbine Competitiveness Improvement Project Colorado Calendar Published 09/30/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9840,6 +9772,7 @@
     },
     "bidnet:2718926837": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Timucuan Ecological and Historic Preserve TIMU-335 Colorado Calendar Published 10/05/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9857,6 +9790,7 @@
     },
     "bidnet:2719134152": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Z--GOGA 336173 - Repair Conzelman Road Colorado Calendar Published 10/07/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9874,6 +9808,7 @@
     },
     "bidnet:2719308572": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Z--SLV-CB PUMPING PLANT ROOF Colorado Calendar Published 10/08/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9891,6 +9826,7 @@
     },
     "bidnet:2719869317": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2029-10-29",
       "context": "Q519--554 | Short Term Psychiatric Transitional Housing Long-Term Contract | Base+4 Colorado Calendar Published 10/15/2026 Clock Closing 10/29/2029",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9908,6 +9844,7 @@
     },
     "bidnet:2719910372": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "Building America Subject Matter Expert Technical Support Colorado Calendar Published 10/15/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9925,6 +9862,7 @@
     },
     "bidnet:2720042717": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "Z--BRCA 310427 Southbound Shuttle Stop Colorado Calendar Published 10/16/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9942,6 +9880,7 @@
     },
     "bidnet:2720091677": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-17",
       "context": "4 GAOA Flaming Gorge Water System Buckboard in Ashley NF, Wyoming Wyoming Calendar Published 10/16/2026 Clock Closing 11/17/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -9959,6 +9898,7 @@
     },
     "bidnet:2720252837": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "Denver, CO Denver P&DC Roof Replacement K95856 Colorado Calendar Published 10/19/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-20T07:02:43+00:00",
@@ -9976,6 +9916,7 @@
     },
     "bidnet:2720253347": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "PGMB Security Gate Colorado Calendar Published 10/19/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T07:02:43+00:00",
@@ -9993,6 +9934,7 @@
     },
     "bidnet:2720288792": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Z--YOSE 22866 Rehabilitate Hodgdon Meadows Water System and YOSE 196755 Extend Hod Colorado Calendar Published 10/19/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T07:02:43+00:00",
@@ -10010,6 +9952,7 @@
     },
     "bidnet:2720333927": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-11",
       "context": "Stove Prairie Campground Gate Replacement Colorado Calendar Published 10/20/2026 Clock Closing 11/11/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10027,6 +9970,7 @@
     },
     "bidnet:2720362742": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "CFLHD Indefinite Delivery, Indefinite Quantity (IDIQ) for Architect-Engineer Design Services Colorado Calendar Published 10/20/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10044,6 +9988,7 @@
     },
     "bidnet:2720423942": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "Paving Acquisition Vehicle - Rockies (PAV-R) IDIQ Sources Sought Colorado Calendar Published 10/20/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10061,6 +10006,7 @@
     },
     "bidnet:2720462447": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "WY BR WYAO US20(1) US 20 and Hayden Arch Bridge Repairs Wyoming Calendar Published 10/21/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10078,6 +10024,7 @@
     },
     "bidnet:2720528492": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-23",
       "context": "Administrative Parking Lot Repairs Colorado Calendar Published 10/21/2026 Clock Closing 11/23/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10095,6 +10042,7 @@
     },
     "bidnet:2720568272": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "S--Sources Sought, Janitorial Services at Hoover Dam Colorado Calendar Published 10/21/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10114,6 +10062,7 @@
     },
     "bidnet:2720628452": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Armed Forces Recruiting Building 25 Tenant Improvement and Renovation Project- Sources Sought Notice Colorado Calendar Published 10/22/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10131,6 +10080,7 @@
     },
     "bidnet:2720633042": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "66--tTEM V2 SYSTEM UPGRADE Colorado Calendar Published 10/22/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10148,6 +10098,7 @@
     },
     "bidnet:2720688122": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "DA10--PowerScribe 360 and Upgrade - Three-Year IDIQ - PoP 11-11-26 to 11-10-29 Colorado Calendar Published 10/22/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -10165,6 +10116,7 @@
     },
     "bidnet:2720733257": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-23",
       "context": "Service Order Desk Colorado Calendar Published 10/23/2026 Clock Closing 11/23/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -10182,6 +10134,7 @@
     },
     "bidnet:2720749577": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-07",
       "context": "Request for Proposal EFMO 224159/318539, Rehabilit Colorado Calendar Published 10/23/2026 Clock Closing 12/07/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -10199,6 +10152,7 @@
     },
     "bidnet:2720766662": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-10",
       "context": "JELA 325250 335621 - Rehabilitate Cemetery Colorado Calendar Published 10/23/2026 Clock Closing 12/10/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -10216,6 +10170,7 @@
     },
     "bidnet:2720817662": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Nelson Drive Fuel Tank Removal Wyoming Calendar Published 10/23/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -10233,6 +10188,7 @@
     },
     "bidnet:2720940572": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "J075--Xerox Copier Maintenance Colorado Calendar Published 10/26/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10250,6 +10206,7 @@
     },
     "bidnet:2720978057": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Z2DA--666-27-102 Lightning Protection Update B71N Colorado Calendar Published 10/26/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10267,6 +10224,7 @@
     },
     "bidnet:2720982137": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Nurse Practitioner - Ute Mountain Ute Health Center - Towaoc, CO Colorado Calendar Published 10/26/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10284,6 +10242,7 @@
     },
     "bidnet:2720994122": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "PKB Worship Musicians (Service) Wyoming Calendar Published 10/26/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10301,6 +10260,7 @@
     },
     "bidnet:2721007382": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-27",
       "context": "Z2DA--666-27-102 Lightning Protection Update B71N Wyoming Calendar Published 10/26/2026 Clock Closing 11/27/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10318,6 +10278,7 @@
     },
     "bidnet:2721014012": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Fort Carson ICIDS Sources Sought Notice Colorado Calendar Published 10/26/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-27T06:36:26+00:00",
@@ -10335,6 +10296,7 @@
     },
     "bidnet:2721064247": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "2420--SNOW BROOM VEHICLE - Sheridan VA Medical Center Wyoming Calendar Published 10/27/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-28T07:36:01+00:00",
@@ -10352,6 +10314,7 @@
     },
     "bidnet:2721090002": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-25",
       "context": "Northern California Area Office (NCAO) Fire Alarm Colorado Calendar Published 10/27/2026 Clock Closing 11/25/2026",
       "first_seen": "2026-10-28T07:36:01+00:00",
@@ -10371,6 +10334,7 @@
     },
     "bidnet:2721115247": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "RELAY Colorado Calendar Published 10/27/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-28T07:36:01+00:00",
@@ -10388,6 +10352,7 @@
     },
     "bidnet:2721170072": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-11",
       "context": "Y--LB Lateral Water Line and Facilities Replacement for Wastewater System Colorado Calendar Published 10/27/2026 Clock Closing 11/11/2026",
       "first_seen": "2026-10-28T07:36:01+00:00",
@@ -10407,6 +10372,7 @@
     },
     "bidnet:443971164132": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Surplus Sale of City-Owned Property - 3425 Christensen Road Wyoming Calendar Published 04/16/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10424,6 +10390,7 @@
     },
     "bidnet:444042482940": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-06-11",
       "context": "Region 1 - Striping Improvements Colorado Calendar Published 05/29/2026 Clock Closing 06/11/2027",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10441,6 +10408,7 @@
     },
     "bidnet:444056383792": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-06-30",
       "context": "FY 27 UCR/CR Evaluations Colorado Calendar Published 06/10/2026 Clock Closing 06/30/2027",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10458,6 +10426,7 @@
     },
     "bidnet:444150883968": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Legal Services - Prosecuting Attorney Colorado Calendar Published 09/04/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10475,6 +10444,7 @@
     },
     "bidnet:444162147927": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Pinedale Gaseous Ambient Air Monitoring Project Wyoming Calendar Published 09/16/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10492,6 +10462,7 @@
     },
     "bidnet:444166507433": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "HVAC Air Filters Colorado Calendar Published 09/21/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10511,6 +10482,7 @@
     },
     "bidnet:444166679962": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Safe Routes 4 All Wyoming Calendar Published 09/21/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10528,6 +10500,7 @@
     },
     "bidnet:444166745992": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Long Range Land Use and Transportation Planning Services Wyoming Calendar Published 09/21/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10545,6 +10518,7 @@
     },
     "bidnet:444170568846": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "Engineering Design Service - Peyton School District Wastewater Treatment System Improvements Colorado Calendar Published 09/23/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10562,6 +10536,7 @@
     },
     "bidnet:444170759846": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Health & Welfare Actuarial & Broker Consultant Colorado Calendar Published 09/23/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10579,6 +10554,7 @@
     },
     "bidnet:444171892099": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Spaeth Ranch Request for Proposals Wyoming Calendar Published 09/24/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10596,6 +10572,7 @@
     },
     "bidnet:444174171204": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Indefinite Delivery-Indefinite Quantity Construction Contracts in the State of Colorado Colorado Calendar Published 09/25/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10613,6 +10590,7 @@
     },
     "bidnet:444174171219": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-18",
       "context": "RidgeGate Hillcamp Off-Site Utilities Project Colorado Calendar Published 09/25/2026 Clock Closing 11/18/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10630,6 +10608,7 @@
     },
     "bidnet:444174171221": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-18",
       "context": "RidgeGate Hillcamp Water Booster Pump Station Project Colorado Calendar Published 09/25/2026 Clock Closing 11/18/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10647,6 +10626,7 @@
     },
     "bidnet:444174393097": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-03-31",
       "context": "Plastic Can Liners FY2025 Wyoming Calendar Published 09/28/2026 Clock Closing 03/31/2027",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10664,6 +10644,7 @@
     },
     "bidnet:444174393099": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-03-31",
       "context": "Towel & Tissue Paper Products Wyoming Calendar Published 09/28/2026 Clock Closing 03/31/2027",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10681,6 +10662,7 @@
     },
     "bidnet:444176229072": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "2027 Paratransit Program Assessment Colorado Calendar Published 09/28/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10698,6 +10680,7 @@
     },
     "bidnet:444176367368": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "PUBLIC HEALTH PREPAREDNESS AND RESPONSE INFORMATION SYSTEM Wyoming Calendar Published 09/29/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10713,44 +10696,9 @@
       "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444176367368/abstract?purchasingGroupId=8409951&origin=1",
       "watched": false
     },
-    "bidnet:444177053775": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Consulting Services for a Whitewater Park Feature Replacement Colorado Calendar Published 09/30/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T02:15:34+00:00",
-      "id": "444177053775",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "aggregate",
-      "profiles": [],
-      "published": "2026-09-30",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Consulting Services for a Whitewater Park Feature Replacement",
-      "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444177053775?target=view",
-      "watched": false
-    },
-    "bidnet:444177785339": {
-      "agency": "",
-      "carried_forward": true,
-      "closing": "2026-10-28",
-      "context": "Physician, Physician Assistant, and Anesthesiologist Ass Colorado Calendar Published 09/30/2026 Clock Closing 10/28/2026",
-      "first_seen": "2026-10-20T02:15:34+00:00",
-      "id": "444177785339",
-      "last_seen": "2026-10-28T21:36:24+00:00",
-      "list": "aggregate",
-      "profiles": [],
-      "published": "2026-09-30",
-      "region": "Colorado",
-      "source": "bidnet",
-      "state": "CO",
-      "title": "Physician, Physician Assistant, and Anesthesiologist Ass",
-      "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444177785339?target=view",
-      "watched": false
-    },
     "bidnet:444177929962": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "CCHS G Buildng Renovation Wyoming Calendar Published 09/30/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10768,6 +10716,7 @@
     },
     "bidnet:444178825248": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Jail EMT Staffing Colorado Calendar Published 09/30/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-27T21:36:08+00:00",
@@ -10785,6 +10734,7 @@
     },
     "bidnet:444180377582": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "DIGITAL COMMUNICATION PLATFORM Wyoming Calendar Published 10/01/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10802,6 +10752,7 @@
     },
     "bidnet:444180377583": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "RidgeGate Hillcamp Trail Roadway Project Colorado Calendar Published 10/01/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10819,6 +10770,7 @@
     },
     "bidnet:444180467299": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Office of Sustainability - Utility Management Software Colorado Calendar Published 10/01/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10836,6 +10788,7 @@
     },
     "bidnet:444181573071": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "PASA (Program Approved Service Agency) Operator for Willoughby Corner Phase 2A Colorado Calendar Published 10/02/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10853,6 +10806,7 @@
     },
     "bidnet:444181683740": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "School Health Services Support Colorado Calendar Published 10/02/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10870,6 +10824,7 @@
     },
     "bidnet:444181730934": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Region 3 - SH 070A Resurfacing Colorado Calendar Published 10/02/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10887,6 +10842,7 @@
     },
     "bidnet:444181744254": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Technical Assistance for Projects for Assistance in Transition from Homelessness (PATH) Wyoming Calendar Published 10/05/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10904,6 +10860,7 @@
     },
     "bidnet:444184440592": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "CPW Comprehensive State Park Strategy Colorado Calendar Published 10/05/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10921,6 +10878,7 @@
     },
     "bidnet:444184715582": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "2026 Fire Mitigation Services Colorado Calendar Published 10/05/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10938,6 +10896,7 @@
     },
     "bidnet:444186161919": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Station 22 \u2013 Addition & Remodel Colorado Calendar Published 10/06/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10955,6 +10914,7 @@
     },
     "bidnet:444188127310": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "Bus Shelter Maintenance Services (15% SBE Goal) Colorado Calendar Published 10/08/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10974,6 +10934,7 @@
     },
     "bidnet:444188715810": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Architectural & Engineering Services Wyoming Calendar Published 10/08/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -10991,6 +10952,7 @@
     },
     "bidnet:444188715814": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "BRANCH AND WOODY DEBRIS CHIPPING SERVICES Wyoming Calendar Published 10/08/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11008,6 +10970,7 @@
     },
     "bidnet:444188715840": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "Licensed Architects/Engineers for the Powerline Technology Facility Wyoming Calendar Published 10/08/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11025,6 +10988,7 @@
     },
     "bidnet:444188715845": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-19",
       "context": "West Brundage Lane Hangar for Lease Wyoming Calendar Published 10/08/2026 Clock Closing 11/19/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11042,6 +11006,7 @@
     },
     "bidnet:444188715850": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Professional Engineer Services in support of the Parkwide Asphalt Pavement Rehabilitation Project Wyoming Calendar Published 10/08/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11059,6 +11024,7 @@
     },
     "bidnet:444189786867": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "Sanitary Sewer and Misc. WWTP Improvements Project Wyoming Calendar Published 10/09/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11076,6 +11042,7 @@
     },
     "bidnet:444189954244": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Tire Lease Colorado Calendar Published 10/09/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11093,6 +11060,7 @@
     },
     "bidnet:444191452490": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Strategic Enrollment Planning Colorado Calendar Published 10/12/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11110,6 +11078,7 @@
     },
     "bidnet:444191516754": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Catering Whiskey Mt. Conservation Camp Wyoming Calendar Published 10/12/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11127,6 +11096,7 @@
     },
     "bidnet:444191677380": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-17",
       "context": "Fremont CSD#25 - CMAR for New Rendezvous Elementary School Wyoming Calendar Published 10/12/2026 Clock Closing 11/17/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11144,6 +11114,7 @@
     },
     "bidnet:444191711340": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Intellectual/Developmental Disability Support for Crisis Workers Wyoming Calendar Published 10/12/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11161,6 +11132,7 @@
     },
     "bidnet:444195325633": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "2026 Montrose County Housing Needs Assessment Colorado Calendar Published 10/14/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11178,6 +11150,7 @@
     },
     "bidnet:444195455847": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-19",
       "context": "WCSD#7 Design Services for Upton HS Boiler Wyoming Calendar Published 10/13/2026 Clock Closing 11/19/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11195,6 +11168,7 @@
     },
     "bidnet:444195546453": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Architectural Design Services \u2013 Jackson Hole Fire & EMS - Fire Station Eight Wyoming Calendar Published 10/13/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11212,6 +11186,7 @@
     },
     "bidnet:444195546460": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Resource Augmentation Wyoming Calendar Published 10/14/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11229,6 +11204,7 @@
     },
     "bidnet:444195938081": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "Wyoming Bar Demolition Project Wyoming Calendar Published 10/14/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11246,6 +11222,7 @@
     },
     "bidnet:444195938085": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "One Electric Pick-Up Wyoming Calendar Published 10/14/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11263,6 +11240,7 @@
     },
     "bidnet:444196018418": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-01",
       "context": "Annual Financial Audit Services Colorado Calendar Published 10/14/2026 Clock Closing 12/01/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11280,6 +11258,7 @@
     },
     "bidnet:444196018422": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-02-26",
       "closing_text": "02/26/2027 07:00 PM EST",
       "context": "Staged System Upgrade of the Current HVAC System Colorado Calendar Published 10/14/2026 Clock Closing 02/26/2027",
@@ -11303,6 +11282,7 @@
     },
     "bidnet:444196018424": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "2027 CAPITAL IMPROVEMENT PROJECT \u2013 POINT REPAIRS AND UV GRP CIPP LINING Colorado Calendar Published 10/14/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11320,6 +11300,7 @@
     },
     "bidnet:444196565704": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "SOUTH HANGAR DEVELOPMENT PROGRAM at KTEX Colorado Calendar Published 10/14/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11337,6 +11318,7 @@
     },
     "bidnet:444197272434": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-24",
       "context": "Converse CSD#2 - Design Services for Glenrock JHS/HS HVAC Wyoming Calendar Published 10/14/2026 Clock Closing 11/24/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11354,6 +11336,7 @@
     },
     "bidnet:444197314502": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-24",
       "context": "Design Services for Glenrock IS Electrical System Wyoming Calendar Published 10/14/2026 Clock Closing 11/24/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11371,6 +11354,7 @@
     },
     "bidnet:444199160546": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Call for Maintenance Siding/Roof Replacement Wyoming Calendar Published 10/15/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11388,6 +11372,7 @@
     },
     "bidnet:444199160548": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Call for ERATE MIBS Providers Wyoming Calendar Published 10/15/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11405,6 +11390,7 @@
     },
     "bidnet:444199179861": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Operable Wall Partitions at PPSC Downtown Campus Colorado Calendar Published 10/15/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11422,6 +11408,7 @@
     },
     "bidnet:444199179863": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Ft Lyon Inspection, Lab Analysis & Testing Colorado Calendar Published 10/15/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11439,6 +11426,7 @@
     },
     "bidnet:444199179892": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-18",
       "context": "Evaluation of Hydrology & Water Availability 15MR CO River Colorado Calendar Published 10/16/2026 Clock Closing 11/18/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11456,6 +11444,7 @@
     },
     "bidnet:444199233010": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "Paint classrooms at Douglas Middle School Wyoming Calendar Published 10/15/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11473,6 +11462,7 @@
     },
     "bidnet:444199246247": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "School Based Mental Health Services Wyoming Calendar Published 10/15/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11490,6 +11480,7 @@
     },
     "bidnet:444199363826": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "E-Rate Funding Year 2027, 7/1/2027 through 6/30/2028 Wyoming Calendar Published 10/15/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11507,6 +11498,7 @@
     },
     "bidnet:444199363829": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-03",
       "context": "DMS Painting Wyoming Calendar Published 10/15/2026 Clock Closing 11/03/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11524,6 +11516,7 @@
     },
     "bidnet:444199363830": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Maintenance Siding/Roof Replacement Wyoming Calendar Published 10/15/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11541,6 +11534,7 @@
     },
     "bidnet:444200448858": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-19",
       "context": "Pavement Management Road Inventory for 2027 Colorado Calendar Published 10/19/2026 Clock Closing 11/19/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11558,6 +11552,7 @@
     },
     "bidnet:444200448890": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-02",
       "context": "Albany CSD#1 Demolition of Valley View ES Wyoming Calendar Published 10/16/2026 Clock Closing 12/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11575,6 +11570,7 @@
     },
     "bidnet:444200460315": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-04",
       "context": "Fixed Asset Inventory and Tagging Services Wyoming Calendar Published 10/19/2026 Clock Closing 12/04/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11592,6 +11588,7 @@
     },
     "bidnet:444200539306": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-17",
       "context": "WYOMING 988 SYSTEM EVALUATION Wyoming Calendar Published 10/19/2026 Clock Closing 11/17/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11609,6 +11606,7 @@
     },
     "bidnet:444200539307": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Used John Deere 772GP or Similar Model Motor Grader Wyoming Calendar Published 10/16/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11626,6 +11624,7 @@
     },
     "bidnet:444200539310": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-02",
       "context": "Print and Deliver Law Books Annually Wyoming Calendar Published 10/16/2026 Clock Closing 11/02/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11643,6 +11642,7 @@
     },
     "bidnet:444200539331": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 009 -- HSIP-P591010 Buffalo Streets (Main & Fort / Fort & Burritt Intersections) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11660,6 +11660,7 @@
     },
     "bidnet:444200539332": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 001 -- NHPPI-I805185 Laramie - Rawlins (Laramie West Section - WBL) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11677,6 +11678,7 @@
     },
     "bidnet:444200539333": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 005 -- HI-BFP-CN09068 & ARSCT-CN09A02 Big Horn County Road No. 296 & County Lane 55 Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11694,6 +11696,7 @@
     },
     "bidnet:444200539336": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 006 -- NHPPI-I255119 Casper - Buffalo Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11711,6 +11714,7 @@
     },
     "bidnet:444200584754": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Gillette - Wright (Belle Fourche Section) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11728,6 +11732,7 @@
     },
     "bidnet:444200584755": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 010 -- STP-RF-1507045 Chief Joseph Hwy (Two Dot Section) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11745,6 +11750,7 @@
     },
     "bidnet:444200584756": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Huntley - Table Mountain Road (WYO 158) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11762,6 +11768,7 @@
     },
     "bidnet:444200584757": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 003 -- STP-0811005 Yoder Junction E - Huntley (WYO 161) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11779,6 +11786,7 @@
     },
     "bidnet:444200584758": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Chief Joseph Highway (Sugar Loaf Section) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11796,6 +11804,7 @@
     },
     "bidnet:444200584760": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Call Order 007 -- HI-BFP-CN09069 Big Horn County Road 83 (Bridge Over Shell Creek) Wyoming Calendar Published 10/16/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11813,6 +11822,7 @@
     },
     "bidnet:444200584797": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-17",
       "context": "Law Enforcement Ammunition Colorado Calendar Published 10/19/2026 Clock Closing 11/17/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11830,6 +11840,7 @@
     },
     "bidnet:444200607667": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Region 4 - US 85 Chipseal Colorado Calendar Published 10/16/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11847,6 +11858,7 @@
     },
     "bidnet:444200607668": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Region 2 - US 24 Turn Lane Improvements Colorado Calendar Published 10/16/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11864,6 +11876,7 @@
     },
     "bidnet:444200607669": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Region 4 - CO 66 Resurfacing Colorado Calendar Published 10/16/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11881,6 +11894,7 @@
     },
     "bidnet:444200607683": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-29",
       "context": "Superintendent Search Colorado Calendar Published 10/16/2026 Clock Closing 10/29/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11898,6 +11912,7 @@
     },
     "bidnet:444202844454": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-01",
       "context": "Housing Action Plan Colorado Calendar Published 10/19/2026 Clock Closing 12/01/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11915,6 +11930,7 @@
     },
     "bidnet:444202890508": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Glendale Detention Pond Improvements Wyoming Calendar Published 10/19/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11932,6 +11948,7 @@
     },
     "bidnet:444202937431": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Longmont-to-Boulder (LoBo) Trail Jay Road Connection Project Colorado Calendar Published 10/19/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11949,6 +11966,7 @@
     },
     "bidnet:444203032466": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "GLENDALE DETENTION POND IMPROVEMENTS Wyoming Calendar Published 10/19/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T02:15:34+00:00",
@@ -11966,6 +11984,7 @@
     },
     "bidnet:444203827928": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Marshal\u2019s Office Addition/Renovation and Site Work Project Colorado Calendar Published 10/20/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-20T14:36:10+00:00",
@@ -11983,6 +12002,7 @@
     },
     "bidnet:444204005554": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-15",
       "closing_text": "11/15/2026 02:00 AM EST",
       "context": "Snowmelt Boiler Plant Colorado Calendar Published 10/20/2026 Clock Closing 11/15/2026",
@@ -12006,6 +12026,7 @@
     },
     "bidnet:444204216843": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Fire Station No. 2 Outdoor Patio Shelter Improvements Wyoming Calendar Published 10/20/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-20T18:25:00+00:00",
@@ -12023,6 +12044,7 @@
     },
     "bidnet:444204249603": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Boulder County Waste Collection Services Colorado Calendar Published 10/20/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-20T18:25:00+00:00",
@@ -12040,6 +12062,7 @@
     },
     "bidnet:444204282317": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-24",
       "context": "Sandstone West GNA Wyoming Calendar Published 10/20/2026 Clock Closing 11/24/2026",
       "first_seen": "2026-10-20T21:36:06+00:00",
@@ -12057,6 +12080,7 @@
     },
     "bidnet:444204304725": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "SAKO - KIMBER INTERSECTION IMPROVEMENTS Wyoming Calendar Published 10/20/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-20T18:25:00+00:00",
@@ -12074,6 +12098,7 @@
     },
     "bidnet:444204353270": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "DRMS MSPP Pre-Enrollment Inspections Colorado Calendar Published 10/20/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-20T20:36:37+00:00",
@@ -12091,6 +12116,7 @@
     },
     "bidnet:444204353271": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-18",
       "context": "Short-Term and Long-Term Disability Benefits Colorado Calendar Published 10/20/2026 Clock Closing 11/18/2026",
       "first_seen": "2026-10-20T20:36:37+00:00",
@@ -12108,6 +12134,7 @@
     },
     "bidnet:444204361081": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "As-Needed Consulting Services for Design Colorado Calendar Published 10/20/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-20T20:36:37+00:00",
@@ -12127,6 +12154,7 @@
     },
     "bidnet:444205093628": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-19",
       "context": "MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION Colorado Calendar Published 10/21/2026 Clock Closing 11/19/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12146,6 +12174,7 @@
     },
     "bidnet:444205409430": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "REQUEST FOR PROPOSALS FOR ACCESS CONTROL & VIDEO SURVEILLANCE CONSULTANT EAGLE COUNTY REGIONAL AIRPORT, COLORADO Colorado Calendar Published 10/21/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12163,6 +12192,7 @@
     },
     "bidnet:444205418920": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Sheriffs Head Quarters Lighting Upgrades Colorado Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12182,6 +12212,7 @@
     },
     "bidnet:444205442540": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "COMPUTER ASSISTED MASS APPRAISAL (CAMA) SOFTWARE Colorado Calendar Published 10/21/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12199,6 +12230,7 @@
     },
     "bidnet:444205517335": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New ATV with Tracks Wyoming Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12216,6 +12248,7 @@
     },
     "bidnet:444205558003": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Gas Powered Walk Behind Concrete Saw Wyoming Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12233,6 +12266,7 @@
     },
     "bidnet:444205558005": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-09",
       "context": "Fire Station No. 2 Patio Shelter Improvements Wyoming Calendar Published 10/21/2026 Clock Closing 11/09/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12250,6 +12284,7 @@
     },
     "bidnet:444205558008": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Diesel Powered 4-Inch Trailer Mounted Trash Pump Wyoming Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12267,6 +12302,7 @@
     },
     "bidnet:444205559860": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Single Engine Hydro Excavator Wyoming Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12284,6 +12320,7 @@
     },
     "bidnet:444205559861": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Double Drum Vibratory Asphalt Compactor Wyoming Calendar Published 10/21/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12301,6 +12338,7 @@
     },
     "bidnet:444206746563": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "SMW #1 Surge Tank Replacement Project Wyoming Calendar Published 10/22/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12318,6 +12356,7 @@
     },
     "bidnet:444206746599": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "Eight (8) Trucks for the Community Recreation and Events Department & Cheyenne Fire Rescue Department Wyoming Calendar Published 10/22/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12335,6 +12374,7 @@
     },
     "bidnet:444206783038": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "One (1) New 15,000 GVWR, Gasoline Powered, 4-Wheel Drive Regular Cab And Chassis Truck With A 14-Foot Bed for the Sanitation Division Wyoming Calendar Published 10/22/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12352,6 +12392,7 @@
     },
     "bidnet:444206800669": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "Park-n-Ride (PNR) Passenger Activity Data Collection Colorado Calendar Published 10/22/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12369,6 +12410,7 @@
     },
     "bidnet:444206934394": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "Teton County Library \u2013 Main Branch Lighting Retrofit Wyoming Calendar Published 10/22/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12386,6 +12428,7 @@
     },
     "bidnet:444206967655": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "Heavy Equipment Maintenance and Repair Wyoming Calendar Published 10/22/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12403,6 +12446,7 @@
     },
     "bidnet:444206967658": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-06",
       "context": "Supply and transport of herbicides, pesticides, and insecticides Wyoming Calendar Published 10/22/2026 Clock Closing 11/06/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12420,6 +12464,7 @@
     },
     "bidnet:444206967660": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-04",
       "context": "RV Dump Station- General Contractor Services Wyoming Calendar Published 10/22/2026 Clock Closing 11/04/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12437,6 +12482,7 @@
     },
     "bidnet:444206990087": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-18",
       "context": "Roof Replacement and Gutter Project - Multiple County Facilities Colorado Calendar Published 10/22/2026 Clock Closing 11/18/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12456,6 +12502,7 @@
     },
     "bidnet:444206990094": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-12-03",
       "context": "ADA Upgrades Colorado Calendar Published 10/22/2026 Clock Closing 12/03/2026",
       "first_seen": "2026-10-23T14:28:57+00:00",
@@ -12473,6 +12520,7 @@
     },
     "bidnet:444207955633": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Bumper Pull Utility Trailer with Bear Proof Enclosure Wyoming Calendar Published 10/23/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12490,6 +12538,7 @@
     },
     "bidnet:444208067454": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New 3/4 Ton Crew Cab 4x4 Pickup Truck with 6'10\" Pickup Box Bed & Accessories Wyoming Calendar Published 10/23/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12507,6 +12556,7 @@
     },
     "bidnet:444208067455": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) 78-Inch Rotary Brush Cutter Attachment Wyoming Calendar Published 10/23/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12524,6 +12574,7 @@
     },
     "bidnet:444208178536": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "closing_text": "11/13/2026 05:00 PM EST",
       "context": "Station One Janitorial Services Colorado Calendar Published 10/23/2026 Clock Closing 11/13/2026",
@@ -12547,6 +12598,7 @@
     },
     "bidnet:444208272450": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "Paradise Valley Pool Slides Painting and Recoating Wyoming Calendar Published 10/26/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12564,6 +12616,7 @@
     },
     "bidnet:444208308826": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "Transportation Gates and Fencing Replacement Wyoming Calendar Published 10/23/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12581,6 +12634,7 @@
     },
     "bidnet:444208324714": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-10",
       "context": "Management of Donovan Pavillion Colorado Calendar Published 10/23/2026 Clock Closing 11/10/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12598,6 +12652,7 @@
     },
     "bidnet:444210313597": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Region 3 - Roundabout Construction at US 24 & CO 82 Colorado Calendar Published 10/26/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12615,6 +12670,7 @@
     },
     "bidnet:444210313598": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Region 1 - US 285 Resurfacing Colorado Calendar Published 10/26/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12632,6 +12688,7 @@
     },
     "bidnet:444210477305": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Region 5 - SH 3 Resurfacing Colorado Calendar Published 10/26/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12649,6 +12706,7 @@
     },
     "bidnet:444210477306": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-12",
       "context": "Region 2 - US 50 Resurfacing Colorado Calendar Published 10/26/2026 Clock Closing 11/12/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12666,6 +12724,7 @@
     },
     "bidnet:444210484904": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-23",
       "context": "Colorado Water Plan Statewide Messaging Campaign Colorado Calendar Published 10/27/2026 Clock Closing 11/23/2026",
       "first_seen": "2026-10-27T19:36:14+00:00",
@@ -12683,6 +12742,7 @@
     },
     "bidnet:444210657404": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project Colorado Calendar Published 10/26/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12702,6 +12762,7 @@
     },
     "bidnet:444210869549": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-25",
       "context": "Media Campaign/Information Dissemination for State and Community Partner Networks Wyoming Calendar Published 10/28/2026 Clock Closing 11/25/2026",
       "first_seen": "2026-10-28T09:36:10+00:00",
@@ -12719,6 +12780,7 @@
     },
     "bidnet:444210910853": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2027-01-22",
       "context": "Mountain Community Resiliency and Disaster Recovery Framework Colorado Calendar Published 10/27/2026 Clock Closing 01/22/2027",
       "first_seen": "2026-10-27T21:36:08+00:00",
@@ -12736,6 +12798,7 @@
     },
     "bidnet:444210910876": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-10-30",
       "context": "OC SS 27-01 Intent to Award Sole Source to Trane Tech Corp Colorado Calendar Published 10/26/2026 Clock Closing 10/30/2026",
       "first_seen": "2026-10-26T17:36:21+00:00",
@@ -12753,6 +12816,7 @@
     },
     "bidnet:444210914719": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "One (1) New Utility All-Terrain Vehicle (UTV) Wyoming Calendar Published 10/26/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-26T16:38:35+00:00",
@@ -12770,6 +12834,7 @@
     },
     "bidnet:444212453970": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-16",
       "context": "INTEGRATED DESIGN-BUILD SERVICES Colorado Calendar Published 10/28/2026 Clock Closing 11/16/2026",
       "first_seen": "2026-10-28T13:47:34+00:00",
@@ -12787,6 +12852,7 @@
     },
     "bidnet:444212453971": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-30",
       "context": "Master Plan Consulting Services Colorado Calendar Published 10/28/2026 Clock Closing 11/30/2026",
       "first_seen": "2026-10-28T13:47:34+00:00",
@@ -12804,6 +12870,7 @@
     },
     "bidnet:444212996976": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "context": "Electronic Health Record System with Medicaid Billing Colorado Calendar Published 10/27/2026 Clock Closing 11/13/2026",
       "first_seen": "2026-10-27T21:36:08+00:00",
@@ -12821,6 +12888,7 @@
     },
     "bidnet:444213207766": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Computer-Numerically Controlled Machines Colorado Calendar Published 10/27/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-27T19:36:14+00:00",
@@ -12838,6 +12906,7 @@
     },
     "bidnet:444213207767": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-05",
       "context": "Diagnostic Ultrasound System Colorado Calendar Published 10/27/2026 Clock Closing 11/05/2026",
       "first_seen": "2026-10-27T19:36:14+00:00",
@@ -12855,6 +12924,7 @@
     },
     "bidnet:444214535051": {
       "agency": "",
+      "carried_forward": true,
       "closing": "2026-11-20",
       "context": "Boulder Canyon Trail Repair Project Colorado Calendar Published 10/28/2026 Clock Closing 11/20/2026",
       "first_seen": "2026-10-28T15:37:19+00:00",
@@ -12872,6 +12942,7 @@
     },
     "bonfire:parkeronline-256147": {
       "agency": "Town of Parker",
+      "carried_forward": true,
       "closing": "2026-11-13",
       "closing_text": "2026-11-13 17:00 MST",
       "department": "Engineering/Public Works",
@@ -13150,7 +13221,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "02fdc748f70d471abfba3cc6f8ac5a06",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -13176,7 +13247,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "031da2a2b09f4488ae95045518da7098",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333318",
       "office_state": "MT",
       "profiles": [
@@ -13192,32 +13263,6 @@
       "type": "Presolicitation",
       "upcoming": true,
       "url": "https://sam.gov/workspace/contract/opp/031da2a2b09f4488ae95045518da7098/view",
-      "via": "bulk",
-      "watched": false
-    },
-    "samgov:0d14aaae78a449d6bbb4cd00cd6d6ae8": {
-      "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-27T05:36:29+00:00",
-      "id": "0d14aaae78a449d6bbb4cd00cd6d6ae8",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "333998",
-      "office_state": "PA",
-      "profiles": [
-        "jones-bearing"
-      ],
-      "psc": "4330",
-      "published": "2026-10-26",
-      "set_aside": null,
-      "sol": "N0010426QYAGG",
-      "source": "samgov",
-      "state": null,
-      "title": "43--PULLEY ASSEMBLY,IDL, IN REPAIR/MODIFICATION OF",
-      "type": "Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/0d14aaae78a449d6bbb4cd00cd6d6ae8/view",
       "via": "bulk",
       "watched": false
     },
@@ -13278,7 +13323,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "0f9b38e12f184fadbb459e087e00963d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238210",
       "profiles": [
         "brownbison"
@@ -13304,7 +13349,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "10b03ac3597744dd9017bde2032a1fe3",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -13335,7 +13380,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "156ee7b93b084524895a20bab5d2ad6e",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "2213",
       "profiles": [
         "jones-bearing"
@@ -13360,7 +13405,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "16deb1d14ac142dab0b25a8626e03bd1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "office_state": "OH",
       "profiles": [
@@ -13386,7 +13431,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "18cf8e050c6a40bca486f7516b646cfc",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "office_state": "TN",
       "profiles": [
@@ -13413,7 +13458,7 @@
       "documents": [],
       "first_seen": "2026-10-20T13:37:27+00:00",
       "id": "22eaa5d5e7164f03802e778ff9432ce1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332710",
       "profiles": [
         "jones-bearing"
@@ -13438,7 +13483,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "2418a9db688d494abb607d1a8fe88058",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -13470,7 +13515,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "24ffa6d27a674212a41ade72d91ec106",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333998",
       "profiles": [
         "jones-bearing"
@@ -13496,7 +13541,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "27f7957d875a4ed38ec818b1a4afb863",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -13521,7 +13566,7 @@
       "documents": [],
       "first_seen": "2026-10-28T05:36:26+00:00",
       "id": "2859aac90c304df289baf9898d7d44bd",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -13548,7 +13593,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "2b0011c68733402aace4b0a7d9dd8487",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -13574,7 +13619,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "2c6baa53c8054e3298082a09ae3a7b5f",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -13600,7 +13645,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "2e6249880c22476b9c98dc249949456f",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -13625,7 +13670,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "2fa822e893384a93bccb65cb8ac7aea4",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -13651,7 +13696,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "33bd86866d1946769ed093ca7a1ec653",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "334510",
       "office_state": "CO",
       "profiles": [
@@ -13739,7 +13784,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "3a25347065dc4abab033df330d536ef2",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -13757,32 +13802,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:43f8eba89d094b2ab3ca72a4e1e2737e": {
-      "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-27T05:36:29+00:00",
-      "id": "43f8eba89d094b2ab3ca72a4e1e2737e",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": null,
-      "office_state": "PA",
-      "profiles": [
-        "jones-bearing"
-      ],
-      "psc": "4330",
-      "published": "2026-10-26",
-      "set_aside": null,
-      "sol": "N0010426QYAGG",
-      "source": "samgov",
-      "state": null,
-      "title": "43--PULLEY ASSEMBLY,IDL, IN REPAIR/MODIFICATION OF",
-      "type": "Presolicitation",
-      "upcoming": true,
-      "url": "https://sam.gov/workspace/contract/opp/43f8eba89d094b2ab3ca72a4e1e2737e/view",
-      "via": "bulk",
-      "watched": false
-    },
     "samgov:44098e7c120b467eaab640f73e9802cc": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
       "city": null,
@@ -13791,7 +13810,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "44098e7c120b467eaab640f73e9802cc",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -13817,7 +13836,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "463e2a5bc1914bc9927e6fc663c61e2a",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -13842,7 +13861,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "498039a792b2415ca237b1f25185acfd",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "33399",
       "office_state": "DC",
       "profiles": [
@@ -13898,7 +13917,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "4d0d75c8e5a44e54ad59972a249ec55e",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238350",
       "profiles": [
         "brownbison"
@@ -13913,32 +13932,6 @@
       "type": "Sources Sought",
       "upcoming": true,
       "url": "https://sam.gov/workspace/contract/opp/4d0d75c8e5a44e54ad59972a249ec55e/view",
-      "via": "api+bulk",
-      "watched": false
-    },
-    "samgov:524e3ee049b94affaffedd261c4dc139": {
-      "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-      "city": "Richmond",
-      "closing": "2026-10-28",
-      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=524e3ee049b94affaffedd261c4dc139",
-      "documents": [],
-      "first_seen": "2026-10-26T16:38:35+00:00",
-      "id": "524e3ee049b94affaffedd261c4dc139",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "332991",
-      "profiles": [
-        "jones-bearing"
-      ],
-      "psc": "3110",
-      "published": "2026-10-23",
-      "set_aside": null,
-      "sol": "SPE4A627Q0167",
-      "source": "samgov",
-      "state": "VA",
-      "title": "SPE4A627Q0167, 3110-016018466, Bearing, Roller, Needle, PN: 369135",
-      "type": "Sources Sought",
-      "upcoming": true,
-      "url": "https://sam.gov/workspace/contract/opp/524e3ee049b94affaffedd261c4dc139/view",
       "via": "api+bulk",
       "watched": false
     },
@@ -13999,7 +13992,7 @@
       ],
       "first_seen": "2026-10-26T20:36:08+00:00",
       "id": "52b4c80711934b99835162c13180bf40",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "334510",
       "profiles": [
         "brownbison"
@@ -14024,7 +14017,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "54da6291bed54524833884f578079494",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238220",
       "office_state": "CO",
       "profiles": [
@@ -14043,32 +14036,6 @@
       "via": "bulk",
       "watched": true
     },
-    "samgov:5627ee97e4ce40e2af289e42601e4afb": {
-      "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA-FS, CSA INTERMOUNTAIN 8",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-27T05:36:29+00:00",
-      "id": "5627ee97e4ce40e2af289e42601e4afb",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "562910",
-      "office_state": "UT",
-      "profiles": [
-        "brownbison"
-      ],
-      "psc": "Z2JZ",
-      "published": "2026-10-26",
-      "set_aside": "Small Business Set Aside - Total",
-      "sol": "1240LT27Q0010",
-      "source": "samgov",
-      "state": "CO",
-      "title": "Bunkhouse Asbestos Mitigation",
-      "type": "Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/5627ee97e4ce40e2af289e42601e4afb/view",
-      "via": "bulk",
-      "watched": true
-    },
     "samgov:57e9a121061b4dba862dca1b8ffbc5b1": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA TROOP SUPPORT",
       "city": null,
@@ -14076,7 +14043,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "57e9a121061b4dba862dca1b8ffbc5b1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "office_state": "PA",
       "profiles": [
@@ -14116,7 +14083,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "5988a90b5fb94514a89cebc7362a22b5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "profiles": [
         "brownbison"
@@ -14141,7 +14108,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "5bccbbc922a04630af786e240403e306",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "811210",
       "office_state": "CO",
       "profiles": [
@@ -14167,7 +14134,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "5bf1391766b64cec84fbea012633435f",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238220",
       "office_state": "CO",
       "profiles": [
@@ -14194,7 +14161,7 @@
       "documents": [],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "5eab430c39444c279a8cc451a662092d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14220,7 +14187,7 @@
       "documents": [],
       "first_seen": "2026-10-28T13:47:34+00:00",
       "id": "618732e7b79446fab94fe7286242de02",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14245,7 +14212,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "62a1e06ab30245fe93fc3e0c4caaf443",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -14271,7 +14238,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "63972a264f804080ad2082f0fe279f1a",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "336611",
       "office_state": "OH",
       "profiles": [
@@ -14298,7 +14265,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "66114240b6ce43ff9ba45be3c2624fe1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14323,7 +14290,7 @@
       "documents": [],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "66f6d2a7bd984472b9e573b3df0e56f7",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -14349,7 +14316,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "6ab91dd8bf824b2fbfa32476c810d7be",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238210",
       "office_state": "CO",
       "profiles": [
@@ -14375,7 +14342,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "6ca3b23ebf3b46babe2a7cab9a925893",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "336412",
       "office_state": "OK",
       "profiles": [
@@ -14402,7 +14369,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "6ef9cebf1ae54094b375118b99c31867",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14437,7 +14404,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6f56f057778f4477a61f3cf648febca5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "33399",
       "profiles": [
         "jones-bearing"
@@ -14462,7 +14429,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6f774aa5d21848aa9a0121a4b2293ab9",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332710",
       "office_state": "NY",
       "profiles": [
@@ -14489,7 +14456,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "6fcd8de199f5419ca0fae46dc353a73d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14548,7 +14515,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "6ff2139e1e4e4f9a8ea52133c377ebb0",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238350",
       "profiles": [
         "brownbison"
@@ -14574,7 +14541,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "70d44b9e2c6d4b1bbc71813c6d527de4",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14599,7 +14566,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "71ac218ba63c4668b2b3129557fcdeb5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238350",
       "office_state": "CO",
       "profiles": [
@@ -14625,7 +14592,7 @@
       "documents": [],
       "first_seen": "2026-10-28T05:36:26+00:00",
       "id": "7344ad5ce5304aa68109854c6d5871f5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "office_state": "OH",
       "profiles": [
@@ -14657,7 +14624,7 @@
       ],
       "first_seen": "2026-10-20T21:36:06+00:00",
       "id": "769e7021c09444ef942325ad392d8628",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -14682,7 +14649,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "77f43d75da58449f8d622ac857d2ff4b",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "office_state": "PA",
       "profiles": [
@@ -14709,7 +14676,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "7872b54a0d4547a78d839266d5c8fba5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14735,7 +14702,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "7a6f641b2ccc4be7aa8e283cb9a2e90b",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -14770,7 +14737,7 @@
       ],
       "first_seen": "2026-10-27T21:36:08+00:00",
       "id": "7b9acd467e25498bbd5add36c25f76da",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "561720",
       "profiles": [
         "brownbison"
@@ -14829,7 +14796,7 @@
       ],
       "first_seen": "2026-10-27T21:36:08+00:00",
       "id": "7c57681a0efb4d8f916d6f9e0c3ee3c9",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "profiles": [
         "brownbison"
@@ -14864,7 +14831,7 @@
       ],
       "first_seen": "2026-10-20T14:36:10+00:00",
       "id": "83f8e4293685404da1e09c1d43a81204",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "336413",
       "profiles": [
         "jones-bearing"
@@ -14882,32 +14849,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:881be8c69a194a7da24919cce13b25e5": {
-      "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
-      "city": null,
-      "closing": "2026-10-28",
-      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=881be8c69a194a7da24919cce13b25e5",
-      "documents": [],
-      "first_seen": "2026-10-26T16:38:35+00:00",
-      "id": "881be8c69a194a7da24919cce13b25e5",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "333922",
-      "profiles": [
-        "jones-bearing"
-      ],
-      "psc": "3910",
-      "published": "2026-10-21",
-      "set_aside": "Small Business Set Aside - Total",
-      "sol": "W911S226U4399",
-      "source": "samgov",
-      "state": null,
-      "title": "Rota-rack",
-      "type": "Combined Synopsis/Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/881be8c69a194a7da24919cce13b25e5/view",
-      "via": "api+bulk",
-      "watched": false
-    },
     "samgov:88fae747c268450babe6750b67aa4350": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
       "city": null,
@@ -14916,7 +14857,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "88fae747c268450babe6750b67aa4350",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -14947,7 +14888,7 @@
       ],
       "first_seen": "2026-10-26T18:36:34+00:00",
       "id": "8ccf3c647f414b7ea5cbb513ccfb51c9",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "336413",
       "profiles": [
         "jones-bearing"
@@ -14965,32 +14906,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:8f0e3b72596a4714a555ecd5eb0e899b": {
-      "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA-FS, CSA INTERMOUNTAIN 8",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-20T05:34:26+00:00",
-      "id": "8f0e3b72596a4714a555ecd5eb0e899b",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "562910",
-      "office_state": "UT",
-      "profiles": [
-        "brownbison"
-      ],
-      "psc": "Z2JZ",
-      "published": "2026-10-14",
-      "set_aside": "Small Business Set Aside - Total",
-      "sol": "1240LT27Q0010",
-      "source": "samgov",
-      "state": "CO",
-      "title": "Bunkhouse Asbestos Mitigation",
-      "type": "Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/8f0e3b72596a4714a555ecd5eb0e899b/view",
-      "via": "bulk",
-      "watched": true
-    },
     "samgov:8f1feb2f0f3d47c8bd10b6846dfa459f": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
       "city": null,
@@ -14999,7 +14914,7 @@
       "documents": [],
       "first_seen": "2026-10-28T12:45:32+00:00",
       "id": "8f1feb2f0f3d47c8bd10b6846dfa459f",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15025,7 +14940,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "97d4df5ffe0f47ce9a9e19bf923de773",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333924",
       "profiles": [
         "jones-bearing"
@@ -15050,7 +14965,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "9a80372ece404f7a91ca3e9e5646e62d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "office_state": "UT",
       "profiles": [
@@ -15077,7 +14992,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "9eb8d0f698424e2e8a46b5475dcf4d7c",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -15102,7 +15017,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "9ede66cb08524a8a8c18d5308544eafd",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "334510",
       "office_state": "CO",
       "profiles": [
@@ -15129,7 +15044,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "9efac20ee41241b4ba84f3c89f59d96d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15154,7 +15069,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "a5a251d4a06b421cbc48f7e23692ae11",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -15181,7 +15096,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "b05bd8d70d204cf3a0903cc3a05934a6",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15236,7 +15151,7 @@
       ],
       "first_seen": "2026-10-27T22:35:52+00:00",
       "id": "b11d3623d84843b2899857e45ac20464",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "561621",
       "profiles": [
         "brownbison"
@@ -15261,7 +15176,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "b240a8fc08d548528f9f1352d779d9ad",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "office_state": "AL",
       "profiles": [
@@ -15288,7 +15203,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "b2f8868b8e0442338065f3a5a3d81af1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15314,7 +15229,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "b6794a137e8647cca7072ec299896676",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15340,7 +15255,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "b8d42df049264aef86019c9aa4e691c8",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15366,7 +15281,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "bd849c41a0ea48998a630786a4e39113",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "profiles": [
         "jones-bearing"
@@ -15391,7 +15306,7 @@
       "documents": [],
       "first_seen": "2026-10-20T20:36:37+00:00",
       "id": "be527e8411824dd29e4a764a91ab32a6",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "office_state": "UT",
       "profiles": [
@@ -15417,7 +15332,7 @@
       "documents": [],
       "first_seen": "2026-10-27T05:36:29+00:00",
       "id": "be6616960717497f9236f22b316808fa",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333612",
       "office_state": "OH",
       "profiles": [
@@ -15449,7 +15364,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "c197c44e343742a5adde5688821f5075",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238220",
       "profiles": [
         "brownbison"
@@ -15475,7 +15390,7 @@
       "documents": [],
       "first_seen": "2026-10-27T12:46:14+00:00",
       "id": "c29f795658414ef49624fb7d3557091f",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15526,7 +15441,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "c714c6130b9d40d0991dbbe1815c37f3",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333922",
       "profiles": [
         "jones-bearing"
@@ -15551,7 +15466,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "c99d773036a64c7d86fbd42c65a1a4d6",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -15578,7 +15493,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "cae0c7421ecd424c8a3aa668045ddfe1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15596,37 +15511,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:cd2b3215a98141c785653c97c2c0aa78": {
-      "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
-      "city": null,
-      "closing": "2026-10-28",
-      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd2b3215a98141c785653c97c2c0aa78",
-      "documents": [
-        {
-          "name": "eb82912f7f734ebe9bc997f6fb289def",
-          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb82912f7f734ebe9bc997f6fb289def/download"
-        }
-      ],
-      "first_seen": "2026-10-26T16:38:35+00:00",
-      "id": "cd2b3215a98141c785653c97c2c0aa78",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "811210",
-      "profiles": [
-        "brownbison"
-      ],
-      "psc": "J065",
-      "published": "2026-10-22",
-      "set_aside": null,
-      "sol": "36C25927Q0032",
-      "source": "samgov",
-      "state": null,
-      "title": "J065--Full-service Preventative Maintenance on Siemens Symbia S",
-      "type": "Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/cd2b3215a98141c785653c97c2c0aa78/view",
-      "via": "api+bulk",
-      "watched": false
-    },
     "samgov:cd651e8500eb462ba089ebb18f600686": {
       "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
       "city": null,
@@ -15635,7 +15519,7 @@
       "documents": [],
       "first_seen": "2026-10-28T12:45:32+00:00",
       "id": "cd651e8500eb462ba089ebb18f600686",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -15660,7 +15544,7 @@
       "documents": [],
       "first_seen": "2026-10-28T05:36:26+00:00",
       "id": "ce000a5797054a1a8eee0f236eb05906",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "811210",
       "office_state": null,
       "profiles": [
@@ -15679,32 +15563,6 @@
       "via": "bulk",
       "watched": false
     },
-    "samgov:cebf798f5c9c4ac7ae52a23a5c6af7c6": {
-      "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-27T05:36:29+00:00",
-      "id": "cebf798f5c9c4ac7ae52a23a5c6af7c6",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "333998",
-      "office_state": "PA",
-      "profiles": [
-        "jones-bearing"
-      ],
-      "psc": "4330",
-      "published": "2026-10-26",
-      "set_aside": null,
-      "sol": "N0010426QYAGG",
-      "source": "samgov",
-      "state": null,
-      "title": "43--PULLEY ASSEMBLY,IDL, IN REPAIR/MODIFICATION OF",
-      "type": "Solicitation",
-      "upcoming": false,
-      "url": "https://sam.gov/workspace/contract/opp/cebf798f5c9c4ac7ae52a23a5c6af7c6/view",
-      "via": "bulk",
-      "watched": false
-    },
     "samgov:d20097c1616d47c7833927894d6850b7": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
       "city": null,
@@ -15712,7 +15570,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "d20097c1616d47c7833927894d6850b7",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -15738,7 +15596,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "d2d51b2fbfc1498dae68cd611c30064a",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -15770,7 +15628,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "d482864e35ad486a91225ac6bba8ff8e",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -15796,7 +15654,7 @@
       "documents": [],
       "first_seen": "2026-10-27T14:04:16+00:00",
       "id": "d637ce3f46ee458e835243c74d5a2a42",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15822,7 +15680,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "d9e769af7e6349b8a28f9fbcf5d71cba",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -15847,7 +15705,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "d9fd453b9fd045f8b78e1bb9d511d1cd",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -15874,7 +15732,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "da984b4f70fd412d924e9c830a2c3299",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -15913,7 +15771,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "db1cb44b650f4cdc892299917c04adf9",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "2213",
       "profiles": [
         "jones-bearing"
@@ -15931,45 +15789,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:db84deebdb884ada854ec83ee9a6235c": {
-      "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
-      "city": "Sheridan",
-      "closing": "2026-10-28",
-      "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db84deebdb884ada854ec83ee9a6235c",
-      "documents": [
-        {
-          "name": "408e6f81202440919bb310a7d9a4bf0d",
-          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408e6f81202440919bb310a7d9a4bf0d/download"
-        },
-        {
-          "name": "b86fc264dbc84a149fdfc845edb67730",
-          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b86fc264dbc84a149fdfc845edb67730/download"
-        },
-        {
-          "name": "e34365b2d83749bab5d6ce7b8c3524fa",
-          "url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e34365b2d83749bab5d6ce7b8c3524fa/download"
-        }
-      ],
-      "first_seen": "2026-10-20T02:45:13+00:00",
-      "id": "db84deebdb884ada854ec83ee9a6235c",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "238220",
-      "profiles": [
-        "brownbison"
-      ],
-      "psc": "J041",
-      "published": "2026-10-16",
-      "set_aside": null,
-      "sol": "36C25927Q0008",
-      "source": "samgov",
-      "state": null,
-      "title": "J041--Trane BAS HVAC  Control System Inspection, Maintenance, Upgrades, and Repair",
-      "type": "Special Notice",
-      "upcoming": true,
-      "url": "https://sam.gov/workspace/contract/opp/db84deebdb884ada854ec83ee9a6235c/view",
-      "via": "api+bulk",
-      "watched": false
-    },
     "samgov:dccd5b89612545bf88341d486f74a396": {
       "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
       "city": null,
@@ -15977,7 +15796,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "dccd5b89612545bf88341d486f74a396",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333613",
       "office_state": "OH",
       "profiles": [
@@ -16004,7 +15823,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "e63d86aa73b34b0ca47a59fbfaa8ba09",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16035,7 +15854,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "e7220f8924254f4fac1a83a72708bba1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16061,7 +15880,7 @@
       "documents": [],
       "first_seen": "2026-10-28T10:38:48+00:00",
       "id": "e88b2c4bbf9b49c490f20e1bca91bf88",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16112,7 +15931,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "e983271f59ed4af98747b1aea45eeeae",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "333923",
       "profiles": [
         "jones-bearing"
@@ -16130,32 +15949,6 @@
       "via": "api+bulk",
       "watched": false
     },
-    "samgov:eb19e0c129334ba3adb062afc3c5c764": {
-      "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
-      "city": null,
-      "closing": "2026-10-28",
-      "documents": [],
-      "first_seen": "2026-10-20T05:34:26+00:00",
-      "id": "eb19e0c129334ba3adb062afc3c5c764",
-      "last_seen": "2026-10-28T23:36:26+00:00",
-      "naics": "238220",
-      "office_state": "CO",
-      "profiles": [
-        "brownbison"
-      ],
-      "psc": "J041",
-      "published": "2026-10-07",
-      "set_aside": null,
-      "sol": "36C25927Q0008",
-      "source": "samgov",
-      "state": null,
-      "title": "J041--Trane BAS HVAC Services",
-      "type": "Special Notice",
-      "upcoming": true,
-      "url": "https://sam.gov/workspace/contract/opp/eb19e0c129334ba3adb062afc3c5c764/view",
-      "via": "bulk",
-      "watched": false
-    },
     "samgov:eea50eb876044089a54c01f641e9c9be": {
       "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
       "city": null,
@@ -16169,7 +15962,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "eea50eb876044089a54c01f641e9c9be",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "profiles": [
         "jones-bearing"
@@ -16194,7 +15987,7 @@
       "documents": [],
       "first_seen": "2026-10-20T05:34:26+00:00",
       "id": "ef42fcf29ca7449db6a4146acf468d19",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "332991",
       "office_state": "PA",
       "profiles": [
@@ -16220,7 +16013,7 @@
       "documents": [],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "f09596ebe7514beda8c1522bd0d664fb",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "238990",
       "office_state": "CO",
       "profiles": [
@@ -16247,7 +16040,7 @@
       "documents": [],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "f421756d4dbd482bae39b05d4208ff7d",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": null,
       "profiles": [
         "jones-bearing"
@@ -16273,7 +16066,7 @@
       "documents": [],
       "first_seen": "2026-10-27T23:36:11+00:00",
       "id": "f54174631fdf46668d424fa88a3a8bf1",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "237110",
       "profiles": [
         "brownbison"
@@ -16304,7 +16097,7 @@
       ],
       "first_seen": "2026-10-20T02:45:13+00:00",
       "id": "fc84984eaeee410897734ba17d6782ed",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "336412",
       "profiles": [
         "jones-bearing"
@@ -16335,7 +16128,7 @@
       ],
       "first_seen": "2026-10-26T16:38:35+00:00",
       "id": "ffa761b91c61460291c74cf744e8a792",
-      "last_seen": "2026-10-28T23:36:26+00:00",
+      "last_seen": "2026-10-29T00:36:04+00:00",
       "naics": "561720",
       "profiles": [
         "brownbison"
@@ -16354,5 +16147,5 @@
       "watched": false
     }
   },
-  "scanned_at": "2026-10-28T23:36:26+00:00"
+  "scanned_at": "2026-10-29T00:36:04+00:00"
 }
