@@ -1767,6 +1767,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T21:27:00Z: GovTribe still blocked. HQ 20:37Z full scan: BidNet logged in 580/82, SAM 101, VSS 59/3; no NEW matches. HQ: Weld SD6 coiling grille -> GO (docs filed, 3 door subs emailed, mandatory walk Mon 11/02 10:00 Greeley). Inbox: Silas replied on the El Paso thread with Conor Parrish's (FACT Water Co) contact card and no message text. GO bids 20. HQ notes the BidNet keep-alive dies with the container; the always-on runner needs the repo PRIVATE + secrets.",
+  "last_hourly_check": "2026-10-29T22:28:00Z: GovTribe still blocked. HQ 21:36Z pass = SAM 101 + VSS 59/3; BidNet last login 20:37Z (580/82). No NEW matches. Inbox: Silas (H2) declined El Paso 26-074 and referred FACT Water Co (Conor Parrish); pricing email to Conor drafted (humanize PASS), HQ to send today. No CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

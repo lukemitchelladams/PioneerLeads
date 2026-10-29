@@ -16,7 +16,9 @@ Addendum 1 and the September 2026 Service Report attached (bids/_watch/downloads
 
 | # | Company | Contact | Email | Office phone | Notes |
 |---|---------|---------|-------|--------------|-------|
-| 1 | H2 Global Solutions | Silas Norwood, COO | snorwood@h2gs.com | 719-694-0515 | Go-to sub (TCF boiler DQ, fast and helpful). Colorado Springs is their market. |
+| 1 | H2 Global Solutions | Silas Norwood, COO | snorwood@h2gs.com | 719-694-0515 | DECLINED 2026-10-29 15:40 MT ('we couldn't help'); referred FACT Water. |
+| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. Email drafted below; HQ to send 10/29 with RFP, Addendum 1 and the September report attached. Pricing asked by Mon 11/02 noon. |
+| 3 | Summit Laboratories (backup) | info@summitlaboratories.com | info@summitlaboratories.com | 303-293-9862 | Denver water-treatment firm HQ emailed for TCF; use only if FACT Water passes. |
 
 Backups only if H2 declines (do not email until Luke says so): the firms HQ listed for CDOC TCF in bids/cdoc-tcf-boiler-water/sub-outreach.md.
 
@@ -44,3 +46,23 @@ Owner, Brown Bison Holdings LLC
 - 2026-10-28 ~20:45Z (HQ, Luke-authorized Gmail API): HQ emailed Silas its own shorter version (ops/outbox/2026-10-28b/elpaso.txt) with the RFP, Addendum 1, sample contract, September service report and 6 SDS attached; pricing asked by Mon 11/02 noon. Not yet told to Silas: the A4-vs-A28 visit-scope conflict, 90-day validity, firm pricing through 2027. Put those in the follow-up or the call.
 - 2026-10-29 14:04 MT (hourly scan, read-only): Silas Norwood (H2), replying to the TCF submission copy: "Awesome! Ill be in touch shortly on the Elpaso project." El Paso 26-074 pricing still asked for by Mon 11/02 noon; the A4/A28 visit-scope conflict and 90-day validity question are still open with him.
 - 2026-10-29 14:26 MT (hourly scan, read-only): Silas replied on the 26-074 pricing thread with only a contact card and no message text: Conor Parrish, CWT, Chief Growth Officer, FACT Water Co (cparrish@factwaterco.com, office 970-342-6867). Reading: FACT Water is the water-treatment partner H2 will bring for El Paso. Luke/HQ to confirm with Silas who prices 26-074 and that the Mon 11/02 noon ask still stands.
+
+- 2026-10-29 15:40 MT (hourly scan, read-only): Silas (H2) answered HQ's routing question: "Hey, no, just send it straight to him. He is a competitor, but I wanted to give you a referral since we couldn't help!" H2 is out of El Paso 26-074. FACT Water Co (Conor Parrish) is now candidate #1. Email below drafted for HQ to send from luke@brownbisonco.com today with the RFP, Addendum 1 and the September 2026 Service Report attached (no links). Backup if FACT Water passes: Summit Laboratories (Denver).
+
+## Email to Conor Parrish, FACT Water Co (humanize lint PASS, 2026-10-29 22:28Z; not sent by the scan)
+
+Subject: El Paso County water treatment (RFP 26-074): pricing by Monday?
+
+Hi Conor,
+
+Silas Norwood at H2 Global passed along your name. I'm Luke Adams with Brown Bison Holdings, and we're proposing on El Paso County's water treatment contract (RFP 26-074) in Colorado Springs.
+
+It covers chemicals plus twelve service visits a year on the County's boilers, cooling towers and hot water systems. Brown Bison submits and holds the contract; you would be our sub. The RFP, Addendum 1 and the current vendor's September report are attached.
+
+Proposals are due Wednesday, November 4. Can you price it by Monday, November 2 at noon, and hold the price 90 days and through 2027?
+
+Thanks Conor,
+
+Luke Adams
+Owner, Brown Bison Holdings LLC
+(720) 275-1554 | luke@brownbisonco.com

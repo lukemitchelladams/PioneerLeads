@@ -192,3 +192,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-29 21:21Z hourly (read-only)
 - 1a189578c452d33e snorwood@h2gs.com 20:26Z (Re: El Paso County water treatment RFP 26-074): body is only Conor Parrish's signature block (FACT Water Co, Chief Growth Officer, CWT, cparrish@factwaterco.com, office 970-342-6867) plus Silas's signature; no sentence from Silas. Logged in elpaso-26-074-water-treatment/sub-outreach.md as the likely water-treatment partner; intent to be confirmed.
 - No CRM brief, no bounces.
+
+## 2026-10-29 22:21Z hourly (read-only)
+- 1a1899be6415b7ac snorwood@h2gs.com 21:40Z (Re: El Paso 26-074): "Hey, no, just send it straight to him. He is a competitor, but I wanted to give you a referral since we couldn't help!" H2 is out of El Paso; FACT Water Co (Conor Parrish) is the referral. Email to Conor drafted in elpaso-26-074-water-treatment/sub-outreach.md for HQ to send; pipeline sub_pricing updated.
+- No CRM brief, no bounces.

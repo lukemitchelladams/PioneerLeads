@@ -1212,9 +1212,9 @@
       "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides. | 20:50Z verification: Addendum 1 conflicts on visit scope (A4 all six facilities x12 vs A28 monthly at TSB/CUP/RBD only); Pollution Liability $1M marked Required in Attachment A; offer valid 90 days; 4 one-year renewals with pass-through-only price adjustments; degreed technical staff and 3 references required.",
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
-      "performer": "H2 Global Solutions (sub); Brown Bison bids and holds the contract",
-      "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com, office 719-694-0515): HQ emailed 2026-10-28 ~20:45Z (msg 1a1844885b5e3786) with RFP, Addendum 1, sample contract, Sept service report and 6 SDS. Follow-up owed: HQ's email did not mention the Addendum 1 visit-scope conflict (A4 vs A28), the 90-day validity or firm-through-2027 pricing.",
-      "sub_pricing": "None (H2 Global emailed by HQ 2026-10-28 ~20:45Z with the full package; pricing asked by Mon 11/02 noon) | Silas 10/29 14:04 MT: 'Ill be in touch shortly on the Elpaso project.' | 14:26 MT: Silas replied on the 26-074 thread with only Conor Parrish's contact card (Chief Growth Officer, CWT, FACT Water Co, cparrish@factwaterco.com, office 970-342-6867): likely his water-treatment partner for El Paso; intent unconfirmed.",
+      "performer": "Brown Bison + water-treatment sub (FACT Water Co referral; H2 out)",
+      "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish) referral, email drafted (humanize PASS) in sub-outreach.md; Summit Laboratories backup",
+      "sub_pricing": "None (H2 Global DECLINED 10/29 15:40 MT: 'we couldn't help'; Silas referred Conor Parrish, FACT Water Co, a competitor of his. Package to Conor today from HQ; ask pricing by Mon 11/02 noon. Backup: Summit Laboratories, Denver. Proposal due Wed 11/04 14:00 MST)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1902,6 +1902,12 @@
       "when": "2026-10-29T21:27:00Z",
       "kind": "decision",
       "note": "HQ 10/29: GO. Docs filed (front.docx, contract approval.docx, contract sample.pdf). front.docx: bid opening 'Tuesday, November 10, 2026, at 2:00 p.m.' by email to sfrancies@greeleyschools.org; one CrossingGard ERG-IBC grille, completion 1/30/2027; performance bond for work over $50,000. 3 door subs emailed (Front Range Raynor, Colorado Commercial Doors, Don's), pricing by Fri 11/06; sub or Luke attends the mandatory walk Mon 11/02 10:00."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-29T22:28:00Z",
+      "kind": "sub",
+      "note": "Silas (H2) 10/29 15:40 MT: 'just send it straight to him. He is a competitor, but I wanted to give you a referral since we couldn't help!' H2 is OUT of El Paso 26-074. FACT Water Co (Conor Parrish, Chief Growth Officer, CWT, office 970-342-6867) is the referral; pricing email drafted for HQ to send today with the RFP, Addendum 1 and the September report attached; ask by Mon 11/02 noon. Proposal due Wed 11/04 14:00 MST: 5.5 days."
     }
   ],
   "doc_gaps": [
