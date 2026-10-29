@@ -1257,6 +1257,46 @@
       "sub_pricing": "None",
       "folder": null,
       "contact": "BidNet"
+    },
+    {
+      "id": "dpa-ih-25043-garage-entrance",
+      "agency": "DPA - Capital Construction/Controlled Maintenance (State of Colorado)",
+      "title": "IH-25043 State Parking Garage Single Entrance Remodel, 1350 Lincoln St, Denver (storefront entrance/exit install)",
+      "sol": "DQ1-AAHA-2027000145-1",
+      "trade": "Doors / storefront glazing (facilities)",
+      "due": "2026-11-06T14:00:00-07:00",
+      "portal": "ColoradoVSS",
+      "decision": "EVALUATE",
+      "decision_note": "Found 2026-10-29 14:08Z via the new ColoradoVSS source. VSS: 'Scope: Installation of garage storefront entrance/exit', 'Budget: $75,000'. MANDATORY pre-bid walk 2026-10-29 9:00AM at 1350 Lincoln St NW corner (Lincoln St and E 14th Ave); questions due 10/30 2:00PM. Dead unless someone attended the walk. Docs (Specifications, CDs, DQ) on VSS only; HQ to pull.",
+      "prebid": "2026-10-29T09:00:00-06:00",
+      "prebid_mandatory": true,
+      "performer": "Brown Bison + glazing/storefront sub (none identified)",
+      "subs": "",
+      "sub_pricing": "None",
+      "folder": "",
+      "contact": "Project Manager Richard Sartirana, 303-866-3983, richard.sartirana@state.co.us (VSS)",
+      "due_source": "ColoradoVSS schedule of events: 'Bids Due' 2026-11-06 2:00PM",
+      "doc_gaps": "IH-25043 Specifications.pdf; IH-25043 CDs.pdf; IH-25043 DQ.pdf (ColoradoVSS, not reachable from the cloud)"
+    },
+    {
+      "id": "pcc-ada-upgrades-2027000046",
+      "agency": "Pueblo Community College",
+      "title": "ADA Upgrades, Davis Academic building (IFB1-GJKA-2027000046)",
+      "sol": "IFB1-GJKA-2027000046-1",
+      "trade": "General construction / facilities (ADA remodel)",
+      "due": "2026-12-03T14:00:00-07:00",
+      "portal": "ColoradoVSS",
+      "decision": "EVALUATE",
+      "decision_note": "Found 2026-10-29 14:08Z via ColoradoVSS. IFB posted 2026-10-21; GC-type ADA remodel in Pueblo (2 h). Pre-bid/walk date NOT in hand: HQ must pull 'PCC-Davis ADA-CSBV_RFP-2026.10.19-Final IFB.pdf' and 'PCC-Davis Academic ADA RFP-Exhibit List-Final.pdf' and read the schedule before any GO (rule 0).",
+      "prebid": "",
+      "prebid_mandatory": null,
+      "performer": "Brown Bison + GC/ADA sub (none identified)",
+      "subs": "",
+      "sub_pricing": "None",
+      "folder": "",
+      "contact": "",
+      "due_source": "ColoradoVSS listing: closing 2026-12-03 14:00 MST",
+      "doc_gaps": "Both IFB PDFs (ColoradoVSS only)"
     }
   ],
   "events": [
@@ -1703,6 +1743,18 @@
       "when": "2026-10-29T13:36:00Z",
       "kind": "scan",
       "note": "HQ CEO plan 2026-10-29: Weld RTU mandatory walk Thu 11/05 09:00 needs a committed HVAC sub by Mon 11/02 or Luke attends; bonding-agent list ready (Evergreen Surety first, nobody contacted); ColoradoVSS now a default bidwatch source."
+    },
+    {
+      "bid": "dpa-ih-25043-garage-entrance",
+      "when": "2026-10-29T14:44:00Z",
+      "kind": "prebid",
+      "note": "ColoradoVSS (new source, first run 14:08Z): DPA IH-25043 garage storefront entrance remodel, budget $75,000 per VSS; MANDATORY pre-bid walk TODAY 2026-10-29 09:00 MDT at 1350 Lincoln St; bids due 11/06 14:00. Flagged to Luke at 08:45 MDT."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T14:44:00Z",
+      "kind": "scan",
+      "note": "ColoradoVSS lists the TCF DQ with 14 documents (FINAL, MOD 1, MOD 2); all 14 already in bids/cdoc-tcf-boiler-water/docs. Closes today 17:00 MDT; no upload confirmation yet."
     }
   ],
   "doc_gaps": [

@@ -1468,6 +1468,96 @@
       "verdict": "NO",
       "why": "NO (rule 0): BidNet events list 'Job-Walk Visit, Attendance Mandatory, Event date 10/15/2026 01:00 PM MDT' and Brown Bison did not attend; bid is dead. Also a NICET fire-alarm specialty trade. BidNet 'approaching closing date' notice 2026-10-29 11:32Z logged.",
       "at": "2026-10-29T11:34:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000037": {
+      "name": "ColoradoVSS DQ1-CAAA-2027000037-3 DOC Boiler Chemicals & Treatment SRVS at TCF (closes 2026-10-29 17:00 MDT)",
+      "verdict": "GO",
+      "why": "Same bid as cdoc-tcf-boiler-water (DQ 2027000037). VSS lists 14 documents (FINAL + MOD 1 10/20 + MOD 2 10/23); all 14 are in bids/cdoc-tcf-boiler-water/docs. Nothing new.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-GMAA-2027000142": {
+      "name": "ColoradoVSS DQ1-GMAA-2027000142-1 AHEC CAVEA Lighting (due 2026-11-16 14:00 MST)",
+      "verdict": "NO",
+      "why": "Same bid as ahec-27901-cavea-lighting (BidNet 0000441764), already NO: VSS schedule of events 'Mandatory Pre-Bid Meeting, 2026-11-04 2:30PM'; theatrical/specialty lighting.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:RFQ1-GJJA-2027000010": {
+      "name": "ColoradoVSS RFQ1-GJJA-2027000010-1 Pikes Peak CC RFQ 2768 As-Needed Consulting Services for Design (due 2026-11-12)",
+      "verdict": "NO",
+      "why": "Architectural/engineering design consulting; not a Brown Bison trade.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-AAHA-2027000145": {
+      "name": "ColoradoVSS DQ1-AAHA-2027000145-1 DPA IH-25043 State Parking Garage Single Entrance Remodel, 1350 Lincoln St Denver (bids due 2026-11-06 2:00PM)",
+      "verdict": "EVALUATE",
+      "why": "VSS detail (HQ fixture 2026-10-29): 'Scope: Installation of garage storefront entrance/exit', 'Budget: $75,000', 'Mandatory Pre-Bid Walk ... 1350 Lincoln St, Denver CO 80203 Northwest Corner' on 2026-10-29 at 9:00AM; 'Final Question Due' 2026-10-30 2:00PM; 'Bids Due' 2026-11-06 2:00PM. Storefront/door install with a glazing sub is plausible, but the bid is dead if nobody attends the 10/29 09:00 walk (rule 0). Docs: IH-25043 Specifications.pdf, IH-25043 CDs.pdf, IH-25043 DQ.pdf (VSS, not reachable from the cloud).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:IFB1-GJKA-2027000046": {
+      "name": "ColoradoVSS IFB1-GJKA-2027000046-1 Pueblo Community College ADA Upgrades, Davis Academic building (closes 2026-12-03 14:00 MST)",
+      "verdict": "EVALUATE",
+      "why": "General construction (NIGP 912) ADA upgrades at PCC Pueblo (2 h from Denver); IFB posted 2026-10-21; pre-bid/walk date NOT in hand (HQ fixture has no schedule rows). HQ must pull 'PCC-Davis ADA-CSBV_RFP-2026.10.19-Final IFB.pdf' and read the pre-bid date before any GO. Low fit: GC-type remodel, bonding likely.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:RFP-OAAA-2027000078": {
+      "name": "ColoradoVSS RFP-OAAA-2027000078-1 DMVA Montrose Indoor Firing Range Lead Dust (due 2026-12-02)",
+      "verdict": "NO",
+      "why": "Lead-dust abatement specialty (hazmat) in Montrose (5 h); VSS: 'A mandatory Pre-Proposal Meeting will be held ... 11/5/2026 at 11:00AM'.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:IFB1-CBAA-2027000036": {
+      "name": "ColoradoVSS IFB1-CBAA-2027000036-2 DOC CTF DRDC Fire Protection System Replacement (due 2026-11-05 15:00 MST)",
+      "verdict": "NO",
+      "why": "Same as the CDOC DRDC fire protection IFB already NO: mandatory pre-bid 2026-10-07 passed; $17.5M bonding; security-electronics GC scope.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:RFP-FAAA-2027000059": {
+      "name": "ColoradoVSS RFP-FAAA-2027000059-1 CDPHE NCC WTP Operations and Maintenance (due 2026-12-21)",
+      "verdict": "NO",
+      "why": "Water-treatment-plant O&M needs state-certified water operators; utility operations, not our trades (rule 8).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:IFB1-PMAA-2027000047": {
+      "name": "ColoradoVSS IFB1-PMAA-2027000047-1 CPW Yampa SP Seasonal Housing RV Sites (due 2026-11-25)",
+      "verdict": "NO",
+      "why": "Site/utility construction for RV pads (heavy civil, rule 8), Yampa (NW Colorado).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000137": {
+      "name": "ColoradoVSS DOC Camera Switches & Transceivers DQ (due 2026-10-30)",
+      "verdict": "NO",
+      "why": "Product supply DQ with no volume in hand (rule 9).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000141": {
+      "name": "ColoradoVSS DOC Cameras & Accessories at SCCF DQ (due 2026-11-03)",
+      "verdict": "NO",
+      "why": "Product supply DQ with no volume in hand (rule 9).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000143": {
+      "name": "ColoradoVSS DOC Cameras & Accessories for SCF DQ (due 2026-11-04)",
+      "verdict": "NO",
+      "why": "Product supply DQ with no volume in hand (rule 9).",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:DQ1-GJJA-2027000129": {
+      "name": "ColoradoVSS PPSC DQ 27-006 Operable Wall Partitions (due 2026-11-13)",
+      "verdict": "NO",
+      "why": "Specialty partition supply/install; not our trade.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:NCS1-IHHA-2027000075": {
+      "name": "ColoradoVSS NCS1-IHHA-2027000075-1 CDHS Regional Centers Bathroom Remodels Ph1 (2026-11-06)",
+      "verdict": "NO",
+      "why": "NCS = notice posting (award/settlement notice), not an open solicitation.",
+      "at": "2026-10-29T14:44:00Z"
+    },
+    "coloradovss:list-review-2026-10-29": {
+      "name": "ColoradoVSS full public list (59 postings) read 2026-10-29 14:40Z",
+      "verdict": "NO",
+      "why": "Remaining ~43 postings are software, consulting, medical, lab, ammunition, HR/benefits, RFIs, sole-source notices and already-closed DQs (laundry GMYC closed 10/29 10:00); none in our trades. Only the entries above needed a decision.",
+      "at": "2026-10-29T14:44:00Z"
     }
   },
   "watched": {
@@ -1653,6 +1743,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T13:36:00Z: GovTribe still blocked (UPGRADE_REQUIRED/ACCOUNT_CANCELLED). HQ 12:38Z full scan: BidNet logged in 586 open/83 matches, SAM 100 (+37 bulk), Bonfire no creds, DIBBS stale since 10/20; no NEW matches, no changes. HQ shipped ColoradoVSS as a default bidwatch source (4bbce52), a CEO plan (ops/plan_ceo/2026-10-29.md) and bids/_watch/bonding-agents-2026-10-29.md (nobody contacted). Inbox: only a Microsoft DMARC report. No sub replies, no CRM brief, no TCF confirmation. Scrubbed a markup percentage HQ wrote into the CEO plan.",
+  "last_hourly_check": "2026-10-29T14:44:00Z: GovTribe still blocked. HQ 14:08Z scan = SAM + ColoradoVSS (new source, 59 postings, 3 matches: TCF DQ = ours, CAVEA = NO, PPCC design RFQ = NO); BidNet/Bonfire not scanned this pass (last 12:38Z). Whole VSS list reviewed: 2 EVALUATE (DPA IH-25043 garage storefront entrance, MANDATORY walk 10/29 09:00 MDT at 1350 Lincoln St; PCC Pueblo ADA upgrades, pre-bid date not in hand). Inbox: nothing unseen. No sub replies, no CRM brief, no TCF confirmation.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
