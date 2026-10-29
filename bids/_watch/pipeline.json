@@ -235,7 +235,7 @@
       "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: call pending. | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price. | 10/26 18:56-18:57Z Alex (YMS) replied: reviewing the package, can join today's 14:00 MT Teams briefing if Luke sends the invite, asks when pricing is due back and whether to price snow only or cleaning + graffiti too (he would sub those out). Luke owns the reply. | 10/27: told Alex to price the whole contract (cleaning, graffiti, pressure wash, snow) if he can get near RTD's ~$250K/yr, else snow only; numbers by Fri 11/6. | 2026-10-28 16:00 MT: Alex Ditto (YMS): 'we are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal'; numbers by 11/6.",
       "folder": "bids/rtd-bus-shelter-maintenance",
       "contact": "Marla Bainbridge, (303) 299-2411",
-      "sub_pricing": "Partial (Lightning Mobile priced everything, too high; YMS/Alex prices SNOW ONLY by Fri 11/06; cleaning/graffiti/pressure-wash: 4 new firms emailed by HQ 2026-10-28 22:37Z + Platinum follow-up with docs; proposal due 11/16)"
+      "sub_pricing": "Partial (Lightning Mobile priced everything, too high; YMS/Alex prices SNOW ONLY by Fri 11/06; cleaning/graffiti/pressure-wash: Colorado Power Wash reviewing Luke's SOW answers (10/28 20:27 MT) + 4 new firms emailed by HQ 10/28 + Platinum follow-up; RTD questions due Mon 11/02 14:00; proposal due 11/16)"
     },
     {
       "id": "westminster-26-002",
@@ -1667,6 +1667,12 @@
       "when": "2026-10-28T23:28:00+00:00",
       "kind": "sub",
       "note": "HQ emailed 4 cleaning/graffiti/pressure-wash firms (shelter list + SOW + pricing sheet) and followed up with Platinum, 22:37Z; Alex covers snow only."
+    },
+    {
+      "bid": "rtd-126dm016",
+      "when": "2026-10-29T03:28:00+00:00",
+      "kind": "sub",
+      "note": "Colorado Power Wash (Jake Pavelle): 'This is received and being reviewed.' Cleaning pricing expected by 11/06. HQ filed questions-for-rtd.md for the 11/02 14:00 question deadline."
     }
   ],
   "doc_gaps": [

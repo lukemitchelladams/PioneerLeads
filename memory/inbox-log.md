@@ -120,3 +120,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-29 02:21Z hourly (read-only)
 - 0 unseen of 17. No CRM brief. No sub replies, bounces or TCF submission confirmation.
+
+## 2026-10-29 03:21Z hourly (read-only)
+- 1 unseen of 18. jake@coloradopowerwash.com 20:27 MT (RTD cleaning thread): 'This is received and being reviewed.' after Luke's 10/26 SOW answers; pricing expected by Fri 11/06. Already logged by HQ in bids/rtd-bus-shelter-maintenance/sub-outreach.md; pipeline sub_pricing updated.
+- No CRM brief. No bounces; no UPS, El Paso or Transfort sub replies; no TCF submission confirmation.
