@@ -1226,7 +1226,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2859aac90c304df289baf9898d7d44bd/view"
  },
  {
@@ -1571,7 +1571,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/ce000a5797054a1a8eee0f236eb05906/view"
  },
  {
@@ -1736,7 +1736,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/7344ad5ce5304aa68109854c6d5871f5/view"
  },
  {
@@ -2803,6 +2803,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/6fcd8de199f5419ca0fae46dc353a73d/view"
+ },
+ {
+  "key": "samgov:988c00a2123941f29940c5cbcdb093b5",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "31--BEARING UNIT PLAIN",
+  "sol": "N0010425QYG54",
+  "closing": "2026-12-30",
+  "posted": "2026-10-28",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/988c00a2123941f29940c5cbcdb093b5/view"
  },
  {
   "key": "samgov:e88b2c4bbf9b49c490f20e1bca91bf88",
