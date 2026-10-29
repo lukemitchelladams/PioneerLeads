@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T14:47:20+00:00",
+  "checked_at": "2026-10-29T15:50:26+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -14,6 +14,7 @@
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 85,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
@@ -32,22 +33,23 @@
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
+      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
     "coloradovss": {
       "complete": true,
-      "count": 59,
+      "count": 61,
       "creds": {},
       "errors": [],
-      "last_success": "2026-10-29T14:47:20+00:00",
+      "last_success": "2026-10-29T15:50:26+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 59
+        "statewide open": 61
       }
     },
     "dibbs": {
@@ -75,15 +77,15 @@
     "samgov": {
       "bulk_added": 37,
       "bulk_note": "bulk file cached 2026-10-29T05:37:33+00:00; 97 matching (parsed earlier)",
-      "count": 100,
+      "count": 101,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-29T14:47:20+00:00",
+      "last_success": "2026-10-29T15:50:26+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
-      "matches": 100,
+      "matches": 101,
       "reach_note": "HTTP 404",
       "reachable": true
     }
