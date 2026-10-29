@@ -1,16 +1,16 @@
-# Bid watch report — 2026-10-29T19:42:46+00:00
+# Bid watch report — 2026-10-29T20:37:22+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 591 | BUYER 390, AGGREGATE 202 | 84 | 2026-10-29T19:42:46+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 1 |  | 0 | 2026-10-29T19:42:46+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 101 |  | 101 | 2026-10-29T19:42:46+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 59 | open 59 | 3 | 2026-10-29T19:42:46+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 580 | BUYER 385, AGGREGATE 197 | 82 | 2026-10-29T20:37:22+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 1 |  | 0 | 2026-10-29T20:37:22+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 101 |  | 101 | 2026-10-29T20:37:22+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 59 | open 59 | 3 | 2026-10-29T20:37:22+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -19,7 +19,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
 |  WATCHED | bidnet | City of Aurora | Ash Tree Treatment | 2026-11-13 (15d) | 2026-10-30 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Ash-Tree-Treatment/0000441807?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Weld County School District 6 | Coiling Door/Grill at Franklin Middle School | 2026-11-10 (12d) | 2026-11-02 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Weld County School District 6 | Coiling Door/Grill at Franklin Middle School | 2026-11-10 (12d) | 2026-11-02 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1 |
 |  WATCHED | bidnet | Arapahoe County | Security Electronics Maintenance & Support Services | 2026-11-25 (27d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Security-Electronics-Maintenance-Support-Services/0000441668?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (21d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Littleton | ON-CALL GARAGE DOOR REPAIRS | 2026-11-24 (26d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1 |
@@ -31,12 +31,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (18d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison WATCHED | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (21d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet | Weld County School District 6 | Coiling Door/Grill at Franklin Middle School | 2026-11-10 (12d) | 2026-11-02 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1 |
-
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
 - Littleton RFQ 2126 On-Call Commercial Plumbing (bidnet)
@@ -46,13 +40,14 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - 27J Speaker Cabling Installation (2021BRRHS) (None)
 - USDA Bunkhouse Asbestos Mitigation 1240LT27Q001 (CRM-tracked) (None)
 - Elbert County IFB 2026-006 Fencing (EVALUATE) (None)
+- DCSD RFP 003-27 Mowing (addendum + pricing schedule) (bidnet)
 - 2027 Landscaping Management Services (EVALUATE; due 10/26; agency unknown) (bidnet)
 - Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9) (bonfire)
 
 ## No longer listed (closed/awarded)
 
-- Courthouse Limestone Repairs (bidnet, due 2026-10-29)
-- Town of Hudson: Wastewater Treatment Facility Expansion Design (bidnet, due 2026-10-29)
+- 003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8 (bidnet, due 2026-10-29)
+- HVAC Air Filters (bidnet, due 2026-10-29)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -94,14 +89,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | W--YAO DREDGE CRANE SERVICE (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/a5a251d4a06b421cbc48f7e23692ae11/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (153)
+## All open matching bids, excluding DIBBS parts RFQs (151)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
 | brownbison WATCHED | bidnet | Colorado Department of Corrections | Boiler Chemicals & Treatment Services - TCF | 2026-10-29 (0d) | 2026-10-21 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Lafayette Project Type IFB - Inv | Baseline Water Treatment Plant Pretreatment Train No. 1 Replacement | 2026-10-29 (0d) | 2026-10-20 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseline-Water-Treatment-Plant-Pretreatment-Train-No-1-Replacement/0000439587?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Douglas County School District RE-1 | 003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8 | 2026-10-29 (0d) | 2026-10-14 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | HVAC Air Filters | 2026-10-29 (0d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view |
 | brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS at TCF - Documented Quote | 2026-10-29 (0d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-10-29 (0d) |  | https://sam.gov/workspace/contract/opp/d20097c1616d47c7833927894d6850b7/view |
 | brownbison | bidnet | City of Fort Collins | Engineering On-Call Services for Water, Wastewater and Stormwater Projects | 2026-10-30 (1d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Engineering-On-Call-Services-for-Water-Wastewater-and-Stormwater-Projects/0000426883?purchasingGroupId=8409951&origin=1 |
@@ -167,7 +160,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE ARMY / W6Q | Low Level Cranes | 2026-11-09 (11d) |  | https://sam.gov/workspace/contract/opp/b240a8fc08d548528f9f1352d779d9ad/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (11d) |  | https://sam.gov/workspace/contract/opp/d2d51b2fbfc1498dae68cd611c30064a/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | 56--PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-09 (11d) |  | https://sam.gov/workspace/contract/opp/f09596ebe7514beda8c1522bd0d664fb/view |
-| brownbison | bidnet | Weld County School District 6 | Coiling Door/Grill at Franklin Middle School | 2026-11-10 (12d) | 2026-11-02 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Weld County School District 6 | Coiling Door/Grill at Franklin Middle School | 2026-11-10 (12d) | 2026-11-02 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Brighton | As-Needed Property Management Services | 2026-11-10 (12d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Property-Management-Services/0000440115?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Parker | CIP25-025 – Public Works Operation Center Decant Facility Expansion | 2026-11-10 (12d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CIP25-025-Public-Works-Operation-Center-Decant-Facility-Expansion/0000435410?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Grand Junction | On-Call Encampment Cleanup, Biohazard Remediation, and Abandoned Vehicle Removal | 2026-11-10 (12d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Encampment-Cleanup-Biohazard-Remediation-and-Abandoned-Vehicle-Removal/0000439994?purchasingGroupId=8409951&origin=1 |
@@ -274,10 +267,6 @@ Largest quantities first, top 60. Quoting needs a CAGE code + DIBBS account (Jon
 
 ## Documents downloaded
 
-- bidnet:0000441987: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441987/RFP-426089_OC_Spec_Electrical.pdf
-- bidnet:0000440322: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440322/Mechanical RFP Scope of Service Bidnet 1.pdf
-
-## Filed into bid folders
-
-- bids/carbon-valley-mechanical-pm/docs/Mechanical RFP Scope of Service Bidnet 1.pdf
-- bids/carbon-valley-mechanical-pm/docs/MANIFEST.md
+- bidnet:0000441142: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441142/front.docx
+- bidnet:0000441142: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441142/contract approval.docx
+- bidnet:0000441142: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441142/contract sample.pdf

@@ -1,20 +1,5 @@
 [
  {
-  "key": "bidnet:0000437804",
-  "source": "bidnet",
-  "agency": "Douglas County School District RE-1",
-  "title": "003-27 RFP - Mowing Services - Groups 2, 5, 7 & 8",
-  "sol": "003-27",
-  "closing": "2026-10-29",
-  "posted": "2026-09-28",
-  "prebid_date": "2026-10-14",
-  "prebid_mandatory": "Optional",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/003-27-RFP-Mowing-Services-Groups-2-5-7-8/0000437804?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000439587",
   "source": "bidnet",
   "agency": "City of Lafayette Project Type IFB - Invitation for Bid (Formal) Project Number IFB-26-32-PW",
@@ -43,21 +28,6 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Chemicals-Treatment-Services-TCF/0000439648?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:444166507433",
-  "source": "bidnet",
-  "agency": "",
-  "title": "HVAC Air Filters",
-  "sol": "",
-  "closing": "2026-10-29",
-  "posted": "2026-09-21",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444166507433?target=view"
  },
  {
   "key": "coloradovss:DQ1-CAAA-2027000037",
@@ -1405,7 +1375,7 @@
   "prebid_date": "2026-11-02",
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Coiling-Door-Grill-at-Franklin-Middle-School/0000441142?purchasingGroupId=8409951&origin=1"
  },
