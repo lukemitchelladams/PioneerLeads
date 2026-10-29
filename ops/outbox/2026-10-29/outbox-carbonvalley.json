@@ -1,0 +1,18 @@
+[
+  {
+    "key": "carbonvalley",
+    "subject": "Carbon Valley Parks & Rec mechanical service and PM: sub pricing",
+    "bcc": [
+      "info@asemech.net",
+      "hvac@controlservicecenter.com",
+      "info@longview-hvac.com",
+      "info@timberlinemechanical.com",
+      "info@msicolorado.com",
+      "nick.yaw@accutemp-services.com"
+    ],
+    "files": [
+      "bids/carbon-valley-mechanical-pm/docs/Mechanical RFP Scope of Service Bidnet 1.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-29/carbonvalley.txt"
+  }
+]
