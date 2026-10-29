@@ -6,6 +6,10 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date raised | Venture | Decision needed | Orchestrator's recommendation |
 | --- | --- | --- | --- |
+| 2026-10-29 | Govcon | Make the PioneerLeads repo private today: the DCSD bid price, the EIN and a markup are still in its git history after the scrub, and the repo is public | Settings, Danger Zone, change visibility; these ops docs publish there too |
+| 2026-10-29 | Govcon | Sign and submit the TCF boiler DQ 2027000037 by 17:00 MDT today (signatures, COI, W-9, FEIN and VSS) | Today; no confirmation in the inbox yet |
+| 2026-10-29 | Govcon | Tell Silas (H2) about the El Paso 26-074 A4/A28 visit-scope conflict and the 90-day validity before Mon Nov 2 noon; ask Alex whether YMS holds a Colorado QS pesticide license for Aurora ash | Both before Monday |
+| 2026-10-29 | Govcon | Morgan roof optional walk today 10:00: attend or drop | Drop unless a roofing sub is lined up |
 | 2026-10-28 | Govcon | Send the Travelers insurance certificate and the FEIN to the HQ session today; the TCF quote cannot go in without the certificate | Today, before H2's pricing turns into the package |
 | 2026-10-28 | Govcon | Did H2's Andrew sign the TCF walk sheet as Brown Bison Holdings LLC? | Answer in the HQ session; if not, it emails Jennifer Garvin with the Oct 26 trail |
 | 2026-10-28 | Govcon | Call the generator subs for Parker (due Nov 6) and Douglas 037-26 (due Nov 5); have one firm price both | By Fri Oct 30 |
