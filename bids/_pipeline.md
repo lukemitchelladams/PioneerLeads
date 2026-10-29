@@ -117,7 +117,7 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | Bid | Agency | Due (per brief) | Stage (per brief) | Conflict with this repo |
 |---|---|---|---|---|
 | RFP 26-028 HVAC preventive maintenance | Town of Parker | **2026-10-22** | Pricing (Rich Carroll per-building PM + hourly) | Repo said "docs not in hand"; the CRM has the RFP number and due date |
-| 003-27 Mowing (19 sites) | DCSD | **2026-10-23** (Luke signs AM, uploads by 2 PM) | Proposal (Alex pricing, 5% markup) | Repo treated DCSD as an HVAC bid |
+| 003-27 Mowing (19 sites) | DCSD | **2026-10-23** (Luke signs AM, uploads by 2 PM) | Proposal (Alex pricing; markup kept in private/, not here) | Repo treated DCSD as an HVAC bid |
 | IFB 27-702-002 Livermore Elem snow | Poudre SD | 2026-10-26 | NO-GO (Luke, 2026-10-23) | Not in repo |
 | W911WN26QA062 Mosquito Lake tower metal roof | USACE Pittsburgh | 2026-10-26 | Qualifying | Not in repo |
 | Bunkhouse asbestos mitigation | USDA | 2026-10-28 | Sub outreach | Not in repo |

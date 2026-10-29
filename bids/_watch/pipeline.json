@@ -1691,6 +1691,18 @@
       "when": "2026-10-29T12:43:00Z",
       "kind": "deadline",
       "note": "Hourly 12:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT; still no submission confirmation in the inbox. HQ's 12:36Z portal scan has not been pushed (last BidNet login 10:36Z)."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T13:36:00Z",
+      "kind": "deadline",
+      "note": "Hourly 13:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT (HQ plan: upload by 16:00; Luke signs Exhibits B, C, E, F). No BidNet upload confirmation in the inbox yet."
+    },
+    {
+      "bid": "weld-jail-rtu-b2600111",
+      "when": "2026-10-29T13:36:00Z",
+      "kind": "scan",
+      "note": "HQ CEO plan 2026-10-29: Weld RTU mandatory walk Thu 11/05 09:00 needs a committed HVAC sub by Mon 11/02 or Luke attends; bonding-agent list ready (Evergreen Surety first, nobody contacted); ColoradoVSS now a default bidwatch source."
     }
   ],
   "doc_gaps": [

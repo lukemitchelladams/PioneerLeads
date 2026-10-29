@@ -155,3 +155,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-29 12:21Z hourly (read-only)
 - 1a1876f9e87c1dea noreply@bidnet.com 11:33Z: approaching closing date, CSU Construction DQ-2026-024-BC Biology Duct Insulation Damage, closes 11/02/2026 12:00 PM MST. Pipeline note updated; no action beyond the existing decision.
 - No CRM brief, no sub replies, no bounces, no TCF submission confirmation this hour.
+
+## 2026-10-29 13:21Z hourly (read-only)
+- 1a187d012216f8d1 dmarcreport@microsoft.com 13:18Z: DMARC aggregate report for brownbisonco.com (10/27). Routine; no action.
+- No CRM brief, no sub replies, no bounces, no TCF submission confirmation this hour.

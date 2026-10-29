@@ -1653,6 +1653,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T12:43:00Z: GovTribe still blocked (UPGRADE_REQUIRED/ACCOUNT_CANCELLED). HQ's last push is the 11:36Z SAM-only pass; no 12:36Z scan pushed yet, so BidNet is stale since 10:36Z (>2h). No NEW matches, no changes, no downloads. Inbox: 1 BidNet closing notice (CSU DQ-2026-024-BC duct insulation, closes 11/02 12:00 MST). No sub replies, no CRM brief, no TCF confirmation.",
+  "last_hourly_check": "2026-10-29T13:36:00Z: GovTribe still blocked (UPGRADE_REQUIRED/ACCOUNT_CANCELLED). HQ 12:38Z full scan: BidNet logged in 586 open/83 matches, SAM 100 (+37 bulk), Bonfire no creds, DIBBS stale since 10/20; no NEW matches, no changes. HQ shipped ColoradoVSS as a default bidwatch source (4bbce52), a CEO plan (ops/plan_ceo/2026-10-29.md) and bids/_watch/bonding-agents-2026-10-29.md (nobody contacted). Inbox: only a Microsoft DMARC report. No sub replies, no CRM brief, no TCF confirmation. Scrubbed a markup percentage HQ wrote into the CEO plan.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
