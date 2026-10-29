@@ -1,0 +1,307 @@
+{
+ "_source": "ColoradoVSS public 'View Published Solicitations' grid JSON (POST /PRDVSS1X1/Advantage4, 100 rows/page), 2026-10-29; 8 of 59 rows kept, buyer email/phone blanked",
+ "page_metadata": {
+  "datasources": {
+   "T1SO_SRCH_QRY": {
+    "columns": {
+     "SO_CAT_CD": {
+      "codedValuesList": [
+       {
+        "01": "Admin/Mgmt Svc"
+       },
+       {
+        "02": "Agriculture"
+       },
+       {
+        "03": "Arts/Crafts/Ent"
+       },
+       {
+        "04": "Auto Goods/Svcs"
+       },
+       {
+        "05": "Bldg Equip/Svcs"
+       },
+       {
+        "06": "Clothing"
+       },
+       {
+        "07": "Communication"
+       },
+       {
+        "08": "Computers"
+       },
+       {
+        "09": "Food"
+       },
+       {
+        "10": "Furnishings"
+       },
+       {
+        "11": "Furniture"
+       },
+       {
+        "12": "Hardware"
+       },
+       {
+        "13": "Highway Equip"
+       },
+       {
+        "14": "Janitorial"
+       },
+       {
+        "15": "Lab Supp/Equip"
+       },
+       {
+        "16": "MRO"
+       },
+       {
+        "17": "Med Supp/Equip"
+       },
+       {
+        "18": "Misc Comm/Svc"
+       },
+       {
+        "19": "Office Supplies"
+       },
+       {
+        "20": "Print Equip/Svc"
+       },
+       {
+        "21": "Personal Svcs"
+       },
+       {
+        "22": "Construction"
+       },
+       {
+        "23": "Rental/Leasing"
+       },
+       {
+        "24": "Safety Prod/Svc"
+       },
+       {
+        "25": "School/Library"
+       },
+       {
+        "26": "Sport/Outdoor"
+       },
+       {
+        "27": "Test/Sampling"
+       },
+       {
+        "28": "Trades"
+       },
+       {
+        "29": "Mass Transit"
+       },
+       {
+        "30": "Water/Sewer"
+       },
+       {
+        "31": "Environmental"
+       }
+      ]
+     }
+    }
+   }
+  }
+ },
+ "data": {
+  "ds_data": {
+   "T1SO_SRCH_QRY": {
+    "name": "T1SO_SRCH_QRY",
+    "rows_sent": 59,
+    "rows_total": 59,
+    "rows_per_page": 100,
+    "total_count_suffix": "",
+    "start_data_window": 1,
+    "end_data_window": 59,
+    "row_data": [
+     {
+      "ADV_ROW_ID": "LDqVjlQ1P21p89aQ",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "30",
+      "SO_STA": "M",
+      "DOC_CD": "DQ1",
+      "DOC_DSCR": "Boiler Chemicals & Treatment SRVS at TCF - Documented Quote",
+      "DEPT_NM": "DOC - Corrections Administration",
+      "BUYR_NM": "Jennifer Garvin",
+      "DOC_REF": "[DQ1,CAAA,2027000037,3][DQ1-CAAA-2027000037-3]",
+      "DOC_CD_CONCAT": "Documented Quote (DQ1)",
+      "SO_CLSNG_DT_TM": 1793314800000,
+      "SO_TIME_LEFT": "36516000",
+      "PUB_DT": 1792735200000,
+      "AMND_DT": 1792735200000,
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "3fkzGzm1zTDKOnpT",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "",
+      "SO_STA": "O",
+      "DOC_CD": "NPSS1",
+      "DOC_DSCR": "OC SS 27-01 Intent to Award Sole Source to Trane Tech Corp",
+      "DEPT_NM": "Otero Junior College",
+      "BUYR_NM": "",
+      "DOC_REF": "[NPSS1,GJHA,2027000072,1][NPSS1-GJHA-2027000072-1]",
+      "DOC_CD_CONCAT": "Sole Source (NPSS1)",
+      "SO_CLSNG_DT_TM": 1793376000000,
+      "SO_TIME_LEFT": "97716000",
+      "PUB_DT": 1792735200000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "MBL4RyB0KDALihEq",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "21",
+      "SO_STA": "M",
+      "DOC_CD": "RFI",
+      "DOC_DSCR": "NBS Laboratory Information Management System - OIT",
+      "DEPT_NM": "CDPHE - Department of Public Health and Environment",
+      "BUYR_NM": "Kristi Gamble",
+      "DOC_REF": "[RFI,FAAA,2027000011,2][RFI-FAAA-2027000011-2]",
+      "DOC_CD_CONCAT": "Request for Information (RFI)",
+      "SO_CLSNG_DT_TM": 1793653200000,
+      "SO_TIME_LEFT": "374916000",
+      "PUB_DT": 1792044000000,
+      "AMND_DT": 1792044000000,
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "K0eI8jeYKs2CN0gZ",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "22",
+      "SO_STA": "O",
+      "DOC_CD": "DQ1",
+      "DOC_DSCR": "IH-25043/ State Parking Garage Single Entrance Remodel-1350",
+      "DEPT_NM": "DPA - Capital Construction/Controlled Maintenance",
+      "BUYR_NM": "Brady Rog",
+      "DOC_REF": "[DQ1,AAHA,2027000145,1][DQ1-AAHA-2027000145-1]",
+      "DOC_CD_CONCAT": "Documented Quote (DQ1)",
+      "SO_CLSNG_DT_TM": 1793998800000,
+      "SO_TIME_LEFT": "720516000",
+      "PUB_DT": 1793167200000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "MAEiNMRdyZjJ7rJG",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "",
+      "SO_STA": "O",
+      "DOC_CD": "NCS1",
+      "DOC_DSCR": "2024-030P23 Regional Centers Bathroom Remodels Ph1",
+      "DEPT_NM": "CDHS - Office of Administrative Solutions",
+      "BUYR_NM": "Jamie Gott",
+      "DOC_REF": "[NCS1,IHHA,2027000075,1][NCS1-IHHA-2027000075-1]",
+      "DOC_CD_CONCAT": "Notice of Contractor Settlement (NCS1)",
+      "SO_CLSNG_DT_TM": 1794009600000,
+      "SO_TIME_LEFT": "731316000",
+      "PUB_DT": 1793167200000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "wD4uOylYT7lW29wP",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "",
+      "SO_STA": "O",
+      "DOC_CD": "DQ1",
+      "DOC_DSCR": "CAVEA Lighting",
+      "DEPT_NM": "Auraria Higher Education Center",
+      "BUYR_NM": "",
+      "DOC_REF": "[DQ1,GMAA,2027000142,1][DQ1-GMAA-2027000142-1]",
+      "DOC_CD_CONCAT": "Documented Quote (DQ1)",
+      "SO_CLSNG_DT_TM": 1794862800000,
+      "SO_TIME_LEFT": "1584516000",
+      "PUB_DT": 1793080800000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": 1794812400000,
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "VCLu4FMwTQYJPJPO",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "22",
+      "SO_STA": "O",
+      "DOC_CD": "RFP",
+      "DOC_DSCR": "OAAA, 2010, 082411 Montrose Indoor Firing Range Lead Dust",
+      "DEPT_NM": "DMVA - Department of Military and Veterans Affairs",
+      "BUYR_NM": "Kimberlie Smith",
+      "DOC_REF": "[RFP,OAAA,2027000078,1][RFP-OAAA-2027000078-1]",
+      "DOC_CD_CONCAT": "Request for Proposals (RFP)",
+      "SO_CLSNG_DT_TM": 1796245200000,
+      "SO_TIME_LEFT": "2966916000",
+      "PUB_DT": 1793167200000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     },
+     {
+      "ADV_ROW_ID": "w4AK1qQTca910exU",
+      "ADV_ROW_SEL": false,
+      "SHOW_TXT": "",
+      "QRY_SRCH_STRING": "",
+      "SO_CAT_CD": "",
+      "SO_STA": "O",
+      "DOC_CD": "IFB1",
+      "DOC_DSCR": "ADA Upgrades",
+      "DEPT_NM": "Pueblo Community College",
+      "BUYR_NM": "",
+      "DOC_REF": "[IFB1,GJKA,2027000046,1][IFB1-GJKA-2027000046-1]",
+      "DOC_CD_CONCAT": "Invitation for Bids (IFB1)",
+      "SO_CLSNG_DT_TM": 1796331600000,
+      "SO_TIME_LEFT": "3053316000",
+      "PUB_DT": 1792562400000,
+      "AMND_DT": "",
+      "INTENT_POSTED_DT": "",
+      "PUB_BID_OP_DT": "",
+      "BUYR_EMAIL_AD": "",
+      "BUYR_PH_NO": "",
+      "BUYR_FAX_NO": ""
+     }
+    ]
+   }
+  }
+ }
+}

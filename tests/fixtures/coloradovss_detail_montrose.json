@@ -1,0 +1,131 @@
+{
+ "_source": "ColoradoVSS solicitation detail JSON (docTransition), 2026-10-29; trimmed to the datasets read",
+ "data": {
+  "ds_data": {
+   "T1SO_DOC_HDR": {
+    "row_data": [
+     {
+      "SRCH_DOC_ID": "RFP-OAAA-2027000078-1",
+      "BUYR_NM": "Kimberlie Smith",
+      "ORIG_PUB_DT": 1793167200000,
+      "SO_CLSNG_DT_TM": 1796245200000,
+      "SO_CAT_CD": "22",
+      "DOC_CD": "RFP",
+      "SO_STA": "O",
+      "DOC_DSCR": "OAAA, 2010, 082411 Montrose Indoor Firing Range Lead Dust",
+      "ADDL_INFO": "A mandatory Pre-Proposal Meeting will be held at:\r\nBuilding Address:\t Montrose RC, \r\n12147 6390 Road, Montrose, CO 81401\t \r\nRoom:\t \t \r\nDate/Time \t 11/5/2026 at 11:00AM\t \r\n\r\nThis is a standard parking lot.  Please bring a business card that lists our email address.",
+      "DOC_VERS_NO": "1",
+      "AMND_NO": "",
+      "PUB_DT": 1793167200000,
+      "LOC_NM": "DEPT MILITARY/VETERANS AFFAIRS",
+      "CITY": "Centennial",
+      "ST": "CO"
+     }
+    ]
+   },
+   "T35SO_DOC_SE": {
+    "row_data": [
+     {
+      "ADV_ROW_ID": "OEFIP4PUyGCfo9eN",
+      "ADV_ROW_KEY": "-1825280391",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Mandatory Pre-Submittal Conference",
+      "SCHED_EVNT_DT": 1793862000000,
+      "SCHED_EVNT_TM_STND": "11:00AM"
+     },
+     {
+      "ADV_ROW_ID": "drFDROxNepMlcGnz",
+      "ADV_ROW_KEY": "644406516",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Clarifications Due (Do not post in VSS)",
+      "SCHED_EVNT_DT": 1794466800000,
+      "SCHED_EVNT_TM_STND": "2:00PM"
+     },
+     {
+      "ADV_ROW_ID": "UQl0ooWUqyqyRRzb",
+      "ADV_ROW_KEY": "-1180873871",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Addendum 1 Posted (anticipated)",
+      "SCHED_EVNT_DT": 1795158000000,
+      "SCHED_EVNT_TM_STND": "2:00PM"
+     },
+     {
+      "ADV_ROW_ID": "WC2feLd6DSoKHGda",
+      "ADV_ROW_KEY": "1288813040",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Submittals Due",
+      "SCHED_EVNT_DT": 1796194800000,
+      "SCHED_EVNT_TM_STND": "2:00PM"
+     }
+    ]
+   },
+   "T34IN_OBJ_ATT_CTLG": {
+    "row_data": [
+     {
+      "ADV_ROW_ID": "5oG9R7nCSgf1JdKs",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "082411 Montrose IFR RFP.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "RFP 2027-0078"
+     },
+     {
+      "ADV_ROW_ID": "c09Oxtxj1jW8m50Z",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "SBP6.18 Labor Burden Calc R8-2023.docx",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "Appendix E Direct Labor Burden Calculation"
+     },
+     {
+      "ADV_ROW_ID": "pGwCAFSENiwsaiMa",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "IPD_Appendix A 2025 R1.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "Appendix A: Evaluation Forms"
+     },
+     {
+      "ADV_ROW_ID": "yUBGgJhslWvNdXxn",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "SC8.0 DBLS A_2026_1.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "Appendix B: Sample Agreement"
+     },
+     {
+      "ADV_ROW_ID": "HUKu4eV41ebM84BJ",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "SC8.1 DB LS GC_2026.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "Appendix B: Terms and Conditions"
+     },
+     {
+      "ADV_ROW_ID": "FXjRHjzIArpKdavi",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "Appendix C  Montrose Lead Specification 2024.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": "Appendix C: Lead Dust Survey 2024"
+     }
+    ]
+   },
+   "T6SO_DOC_COMMLN": {
+    "row_data": [
+     {
+      "COMM_CD": "912",
+      "COMM_DSCR": "CONSTRUCTION SERVICES, GENERAL (INCL. MAINTENANCE AND REPAIR",
+      "EXT_DSCR": "Project 082411 Montrose Indoor Firing Range Lead Dust Remediation"
+     }
+    ]
+   }
+  }
+ }
+}

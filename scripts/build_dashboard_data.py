@@ -131,7 +131,7 @@ def build(now: datetime) -> dict[str, list[dict]]:
             in_file_matches[b.get("source", "")] = in_file_matches.get(b.get("source", ""), 0) + 1
     sources = []
     names = {"bidnet": "BidNet / RMEPS (Colorado)", "bonfire": "Euna / Bonfire (Town of Parker)",
-             "samgov": "SAM.gov", "dibbs": "DLA DIBBS (Jones Bearing)"}
+             "samgov": "SAM.gov", "dibbs": "DLA DIBBS (Jones Bearing)", "coloradovss": "ColoradoVSS (State of Colorado)"}
     for s, label in names.items():
         h = health.get("sources", {}).get(s)
         if not h:
@@ -142,6 +142,9 @@ def build(now: datetime) -> dict[str, list[dict]]:
         if s == "dibbs":
             # DIBBS FAQ #45 forbids cloud-hosted/proxy access; the cloud scanner keeps the last local read
             status = "Local runner only (DIBBS bars cloud access); last good data shown"
+        elif h.get("not_scanned_this_run"):
+            # a source the last scan did not include (a --sources subset run): its health is from an earlier run
+            status = "Not in the last scan; last read shown"
         elif carried:
             # the scanner could not read this source this run; open_bids.json still holds its last good rows
             status = "Blind this run (last good data shown)"

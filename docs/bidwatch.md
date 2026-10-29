@@ -8,6 +8,7 @@
 | Euna Procurement, formerly Bonfire (Town of Parker; add others in `watch_profiles.json` -> `bonfire_orgs`) | Open opportunities + each opportunity's Events table (questions, site visit, close) | `BONFIRE_USER`, `BONFIRE_PASS` (documents only) |
 | SAM.gov (federal) | API: everything still open in Colorado, all types: solicitations plus UPCOMING presolicitations, sources sought, special notices; Jones Bearing PSC codes nationwide. Nightly bulk file (`samgov_bulk.py`, no key): adds notices with a blank place of performance and a Colorado buying office, and keeps SAM.gov discovery working when the API is down or the key is missing | `SAM_API_KEY` (API only) |
 | DLA DIBBS (Jones Bearing) | Open RFQs by FSC 3110/3130/3020/3910/3920 | none to view |
+| ColoradoVSS, State of Colorado Vendor Self Service (`coloradovss.py`; state agencies, CDOC, community colleges, AHEC, CDPHE) | The public "View Published Solicitations" list (100 rows a page, all pages); detail of every match and watched bid: Schedule of Events (pre-bid / site walk, MANDATORY or not, questions due), Solicitation Instructions text, attachment list. Sole-source and contractor-settlement notices are kept but never matched; RFIs count as UPCOMING. No deep link: open the portal, View Published Solicitations, search the `sol` | none: public pages only, never logs in; a captcha / bot check stops it as BLOCKED |
 
 Each scan writes:
 - `bids/_watch/REPORT.md`: headline, **source health table** (reachable? credentials set? logged in? how
@@ -55,7 +56,7 @@ dies with its container; the hourly WORKER scheduled task is the safety net that
 1. Session title bar -> environment menu -> Edit -> Network access. Choose the broader access level, or add
    these under Allowed domains:
    `bidnetdirect.com`, `www.bidnetdirect.com`, `www.rockymountainbidsystem.com`, `api.sam.gov`, `sam.gov`,
-   `parkeronline.bonfirehub.com`, `www.dibbs.bsm.dla.mil`.
+   `parkeronline.bonfirehub.com`, `www.dibbs.bsm.dla.mil`, `prd.co.cgiadvantage.com` (ColoradoVSS).
    Docs: https://code.claude.com/docs/en/cloud-environments#network-access
 2. Same screen -> Environment variables: `BIDNET_USER`, `BIDNET_PASS`, `SAM_API_KEY`, `BONFIRE_USER`,
    `BONFIRE_PASS`. Type them there, never in chat. (Rotate any password that was ever pasted in chat.)

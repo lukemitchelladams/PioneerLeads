@@ -1,0 +1,62 @@
+{
+ "_source": "ColoradoVSS detail JSON 2026-10-29: Pueblo CC ADA (no events, no instructions: the walk is only in the PDF)",
+ "data": {
+  "ds_data": {
+   "T1SO_DOC_HDR": {
+    "row_data": [
+     {
+      "SRCH_DOC_ID": "IFB1-GJKA-2027000046-1",
+      "BUYR_NM": "",
+      "ORIG_PUB_DT": 1792562400000,
+      "SO_CLSNG_DT_TM": 1796331600000,
+      "SO_CAT_CD": "",
+      "DOC_CD": "IFB1",
+      "SO_STA": "O",
+      "DOC_DSCR": "ADA Upgrades",
+      "ADDL_INFO": "",
+      "DOC_VERS_NO": "1",
+      "AMND_NO": "",
+      "PUB_DT": 1792562400000,
+      "LOC_NM": "",
+      "CITY": "",
+      "ST": ""
+     }
+    ]
+   },
+   "T35SO_DOC_SE": {
+    "row_data": []
+   },
+   "T34IN_OBJ_ATT_CTLG": {
+    "row_data": [
+     {
+      "ADV_ROW_ID": "dTPFyuCQ1AjY6dk3",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "PCC-Davis Academic ADA RFP-Exhibit List-Final.pdf",
+      "OBJ_ATT_DT": 1792562400000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": ""
+     },
+     {
+      "ADV_ROW_ID": "MCcbLxxdpZTvOekj",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "PCC-Davis ADA-CSBV_RFP-2026.10.19-Final IFB.pdf",
+      "OBJ_ATT_DT": 1792562400000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": ""
+     }
+    ]
+   },
+   "T6SO_DOC_COMMLN": {
+    "row_data": [
+     {
+      "COMM_CD": "912",
+      "COMM_DSCR": "CONSTRUCTION SERVICES, GENERAL (INCL. MAINTENANCE AND REPAIR",
+      "EXT_DSCR": ""
+     }
+    ]
+   }
+  }
+ }
+}

@@ -197,6 +197,54 @@ try:
     check("bonfire Cloudflare challenge detected", False)
 except bonfire.Challenged:
     check("bonfire Cloudflare challenge detected", True)
+
+# ColoradoVSS: the JSON the public Angular grid and detail page receive (live 2026-10-29, trimmed)
+from scripts.bidwatch import coloradovss  # noqa: E402
+vl = coloradovss.parse_list_payload(_json.loads((FX / "coloradovss_list.json").read_text()))
+vb = {r["id"]: r for r in vl}
+ih = vb.get("DQ1-AAHA-2027000145") or {}
+tcf = vb.get("DQ1-CAAA-2027000037") or {}
+check("vss list: 8 fixture rows parsed", len(vl) == 8, len(vl))
+check("vss id drops the version suffix, sol keeps it", ih.get("sol") == "DQ1-AAHA-2027000145-1" and ih.get("version") == 1
+      and tcf.get("sol") == "DQ1-CAAA-2027000037-3", (ih, tcf))
+check("vss closing epoch ms -> Mountain time (MST after the DST change)",
+      ih.get("closing") == "2026-11-06" and ih.get("closing_text") == "2026-11-06 14:00 MST", ih)
+check("vss closing in MDT before the DST change + category name",
+      tcf.get("closing_text") == "2026-10-29 17:00 MDT" and tcf.get("category") == "Water/Sewer", tcf)
+check("vss record shape matches the other sources",
+      all(ih.get(k) for k in ("title", "agency", "url", "published", "closing")) and ih.get("state") == "CO"
+      and ih.get("source") == "coloradovss" and ih.get("published") == "2026-10-28", ih)
+check("vss sole-source and settlement notices flagged; RFI is upcoming",
+      vb["NPSS1-GJHA-2027000072"].get("notice_only") and vb["NCS1-IHHA-2027000075"].get("notice_only")
+      and vb["RFI-FAAA-2027000011"].get("upcoming") and not ih.get("notice_only"))
+check("vss notice never matches a profile (even with a trade word)",
+      _run_early.profile_hits({**vb["NPSS1-GJHA-2027000072"], "title": "HVAC sole source"}, profiles) == [])
+check("vss TCF boiler DQ matches brownbison", "brownbison" in _run_early.profile_hits(tcf, profiles))
+d_ih = coloradovss.parse_detail_payload(_json.loads((FX / "coloradovss_detail_ih25043.json").read_text()))
+pb_ih = d_ih.get("prebid") or {}
+check("vss detail: MANDATORY pre-bid walk read from the Schedule of Events",
+      pb_ih.get("date") == "2026-10-29" and pb_ih.get("mandatory") is True and pb_ih.get("time") == "9:00AM"
+      and "Mandatory Pre-Bid Walk" in pb_ih.get("quote", "") and pb_ih.get("source") == "coloradovss schedule of events", pb_ih)
+check("vss prebid has the shared prebid shape", {"date", "mandatory", "quote", "rsvp", "rsvp_by", "source"} <= set(pb_ih), pb_ih)
+check("vss detail: questions due, 3 attachments, instructions text",
+      d_ih.get("questions_due") == "2026-10-30" and len(d_ih.get("documents") or []) == 3
+      and "Budget: $75,000" in (d_ih.get("description") or ""), d_ih)
+pb_mo = coloradovss.parse_detail_payload(_json.loads((FX / "coloradovss_detail_montrose.json").read_text())).get("prebid") or {}
+check("vss Montrose: 'Mandatory Pre-Submittal Conference' 2026-11-05, instructions quoted",
+      pb_mo.get("date") == "2026-11-05" and pb_mo.get("mandatory") is True and "Montrose RC" in pb_mo.get("quote", ""), pb_mo)
+d_pcc = coloradovss.parse_detail_payload(_json.loads((FX / "coloradovss_detail_pcc_ada.json").read_text()))
+check("vss PCC ADA: no event and no instructions -> no pre-bid claimed (it is only in the PDF)",
+      d_pcc.get("prebid") is None and len(d_pcc.get("documents") or []) == 2, d_pcc)
+check("vss split_ref without the bracket form", coloradovss.split_ref("RFP-IHJA-2022000320-10")
+      == ("RFP-IHJA-2022000320", "RFP-IHJA-2022000320-10", 10))
+_vo = coloradovss.prebid_from([{"event": "Optional Pre-Bid Conference", "date": "2026-11-02", "time": "10:00AM",
+                                "when": "2026-11-02 10:00AM"}], "")
+check("vss optional event is not mandatory", _vo and _vo["mandatory"] is False and _vo["date"] == "2026-11-02", _vo)
+_vi = coloradovss.prebid_from([], "A non-mandatory site visit will be held 11/12/2026 at 10:00 AM.")
+check("vss pre-bid from the instructions text when no event", _vi and _vi["mandatory"] is False
+      and _vi["date"] == "2026-11-12" and _vi["source"] == "coloradovss instructions", _vi)
+check("run.py knows coloradovss (host, no credentials)", "coloradovss" in _run_early.KNOWN_SOURCES
+      and "coloradovss" in _run_early.HOSTS and _run_early.CRED_NAMES["coloradovss"] == [])
 sys.path.insert(0, str(ROOT / "scripts"))
 import dibbs_watch  # noqa: E402
 dh = (FX / "dibbs_rfq_3110.html").read_text()

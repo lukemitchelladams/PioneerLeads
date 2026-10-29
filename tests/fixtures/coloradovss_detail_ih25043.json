@@ -1,0 +1,104 @@
+{
+ "_source": "ColoradoVSS solicitation detail JSON (docTransition), 2026-10-29; trimmed to the datasets read",
+ "data": {
+  "ds_data": {
+   "T1SO_DOC_HDR": {
+    "row_data": [
+     {
+      "SRCH_DOC_ID": "DQ1-AAHA-2027000145-1",
+      "BUYR_NM": "Brady Rog",
+      "ORIG_PUB_DT": 1793167200000,
+      "SO_CLSNG_DT_TM": 1793998800000,
+      "SO_CAT_CD": "22",
+      "DOC_CD": "DQ1",
+      "SO_STA": "O",
+      "DOC_DSCR": "IH-25043/ State Parking Garage Single Entrance Remodel-1350",
+      "ADDL_INFO": "IH-25043/ State Parking Garage Single Entrance Remodel -1350 Lincoln St\r\nScope: Installation of garage storefront entrance/exit\r\nBudget: $75,000\r\nProject Manager: Richard Sartirana, 303.866.3983, richard.sartirana@state.co.us",
+      "DOC_VERS_NO": "1",
+      "AMND_NO": "",
+      "PUB_DT": 1793167200000,
+      "LOC_NM": "Capitol Complex",
+      "CITY": "Denver",
+      "ST": "CO"
+     }
+    ]
+   },
+   "T35SO_DOC_SE": {
+    "row_data": [
+     {
+      "ADV_ROW_ID": "UXSCl0EuKMH39yyR",
+      "ADV_ROW_KEY": "-1825280391",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Mandatory Pre-Bid Walk\r\nLocation:  1350 Lincoln St, Denver CO 80203 Northwest Corner (Intersection of Lincoln St and E 14th Ave)",
+      "SCHED_EVNT_DT": 1793253600000,
+      "SCHED_EVNT_TM_STND": "9:00AM"
+     },
+     {
+      "ADV_ROW_ID": "6Ae1NRBbQKzuQUdB",
+      "ADV_ROW_KEY": "644406516",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Final Question Due",
+      "SCHED_EVNT_DT": 1793340000000,
+      "SCHED_EVNT_TM_STND": "2:00PM"
+     },
+     {
+      "ADV_ROW_ID": "LD0B7zWNza8C23FH",
+      "ADV_ROW_KEY": "-1180873871",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Response to Questions Posted",
+      "SCHED_EVNT_DT": 1793689200000,
+      "SCHED_EVNT_TM_STND": "3:00PM"
+     },
+     {
+      "ADV_ROW_ID": "Q61g3KRa9ziIeT3i",
+      "ADV_ROW_KEY": "1288813040",
+      "ADV_ROW_SEL": false,
+      "SCHED_EVNT_DSCR": "Bids Due",
+      "SCHED_EVNT_DT": 1793948400000,
+      "SCHED_EVNT_TM_STND": "2:00PM"
+     }
+    ]
+   },
+   "T34IN_OBJ_ATT_CTLG": {
+    "row_data": [
+     {
+      "ADV_ROW_ID": "9fQaKMQAWI51PEqq",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "IH-25043 Specifications.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": ""
+     },
+     {
+      "ADV_ROW_ID": "XWsFhWBYoLuUiT2R",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "IH-25043 CDs.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": ""
+     },
+     {
+      "ADV_ROW_ID": "NkslRzNjXvzrmPif",
+      "ADV_ROW_KEY": "0",
+      "ADV_ROW_SEL": false,
+      "OBJ_ATT_NM": "IH-25043 DQ.pdf",
+      "OBJ_ATT_DT": 1793080800000,
+      "OBJ_ATT_TYP": "1",
+      "OBJ_ATT_DSCR": ""
+     }
+    ]
+   },
+   "T6SO_DOC_COMMLN": {
+    "row_data": [
+     {
+      "COMM_CD": "912",
+      "COMM_DSCR": "CONSTRUCTION SERVICES, GENERAL (INCL. MAINTENANCE AND REPAIR",
+      "EXT_DSCR": "IH-25043/ State Parking Garage Single Entrance Remodel -1350 Lincoln St\r\nScope: Installation of garage storefront entrance/exit\r\nBudget: $75,000\r\nProject Manager: Richard Sartirana, 303.866.3983, richard.sartirana@state.co.us"
+     }
+    ]
+   }
+  }
+ }
+}

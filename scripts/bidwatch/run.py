@@ -6,11 +6,12 @@
   python3 scripts/bidwatch/run.py --loop --interval 30
   python3 scripts/bidwatch/run.py --health        # only check hosts + credentials, no scraping
   python3 scripts/bidwatch/run.py --sources samgov,bidnet
+  python3 scripts/bidwatch/run.py --sources coloradovss   # State of Colorado VSS public list only (no login)
 
 Every cycle:
   1. Source health: is each host reachable, are credentials set, did login work.
   2. Pull ALL open bids from every reachable source (BidNet Colorado statewide + keyword searches,
-     Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing).
+     Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing, ColoradoVSS public list).
   3. Match each against the company profiles; open the detail page of every match and every
      watched bid to read closing date, questions deadline, pre-bid/site walk (mandatory or not).
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda), CLOSED.
@@ -37,7 +38,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from scripts.bidwatch import bidnet, bonfire, samgov, samgov_bulk  # noqa: E402
+from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
     iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
@@ -50,9 +51,16 @@ HOSTS = {
     "samgov": "https://api.sam.gov/",
     "bonfire": "https://parkeronline.bonfirehub.com/",
     "dibbs": "https://www.dibbs.bsm.dla.mil/",
+    "coloradovss": coloradovss.BASE,
 }
-CRED_NAMES = {"bidnet": list(bidnet.CREDS), "samgov": ["SAM_API_KEY"], "bonfire": list(bonfire.CREDS), "dibbs": []}
-ALL_SOURCES = ["bidnet", "bonfire", "samgov", "dibbs"]
+CRED_NAMES = {"bidnet": list(bidnet.CREDS), "samgov": ["SAM_API_KEY"], "bonfire": list(bonfire.CREDS), "dibbs": [],
+              "coloradovss": []}
+# the default scan. coloradovss (State of Colorado VSS public list, no login) joined 2026-10-29 after two clean live
+# opt-in runs (59/59 open rows, details read, 0 errors, no false NEW/CHANGED on the second run).
+ALL_SOURCES = ["bidnet", "bonfire", "samgov", "dibbs", "coloradovss"]
+# Run only when named in --sources; a new source starts here and moves into ALL_SOURCES once it has proved itself.
+OPT_IN_SOURCES: list[str] = []
+KNOWN_SOURCES = ALL_SOURCES + [s for s in OPT_IN_SOURCES if s not in ALL_SOURCES]
 
 
 def reachable(url: str, timeout: int = 30) -> tuple[bool, str]:
@@ -126,7 +134,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     downloads: dict[str, list[str]] = {}
 
     keywords = sorted({k for p in profiles.values() for k in p.get("bidnet_keywords", [])})
-    browser_sources = [s for s in ("bidnet", "bonfire") if s in sources and health[s]["reachable"]]
+    browser_sources = [s for s in ("bidnet", "bonfire", "coloradovss") if s in sources and health[s]["reachable"]]
     if "bidnet" in browser_sources and bidnet.cooldown_until():
         # BidNet served its robot check recently: leave it alone, keep the last good data (carried forward below)
         browser_sources.remove("bidnet")
@@ -204,6 +212,33 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                     h["errors"].append(f"Bonfire scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
                     _restore_detail(found, prev, "bonfire")
+                finally:
+                    if ses:
+                        ses.close()
+            if "coloradovss" in browser_sources:
+                h = health["coloradovss"]
+                ses = None
+                try:
+                    # public list and detail pages only: no login function, no credentials, never the sign-in form
+                    ses = PortalSession(br, "coloradovss")
+                    h["login_note"] = "public list (no login)"
+                    rows, errs, totals = coloradovss.collect_open(ses)
+                    h["errors"] += errs
+                    h["site_totals"] = {k: v for k, v in totals.items() if k.startswith("statewide")}
+                    h["complete"] = bool(totals.get("_complete"))
+                    for r in rows.values():
+                        found[key(r)] = r
+                    h["count"] = len(rows)
+                    if totals.get("_blocked"):
+                        h["login_note"] = "BLOCKED (captcha / bot check / refusal; not bypassed)"
+                        _restore_detail(found, prev, "coloradovss")
+                    else:
+                        _enrich_and_download(ses, coloradovss, found, "coloradovss", profiles, watched_keys, prev,
+                                             enrich_details, downloads, h)
+                except Exception as e:  # noqa: BLE001
+                    h["errors"].append(f"ColoradoVSS scan stopped: {type(e).__name__}: {str(e)[:150]}")
+                    h["complete"] = False
+                    _restore_detail(found, prev, "coloradovss")
                 finally:
                     if ses:
                         ses.close()
@@ -390,7 +425,10 @@ def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
 
 
 def profile_hits(b: dict, profiles: dict) -> list[str]:
-    """Keyword match, minus profiles tied to states the bid is not in (BidNet's list mixes in Wyoming)."""
+    """Keyword match, minus profiles tied to states the bid is not in (BidNet's list mixes in Wyoming). Notices that
+    cannot be bid (ColoradoVSS sole-source intents, contractor settlement notices) never match."""
+    if b.get("notice_only"):
+        return []
     hits = match_profiles(f"{b.get('title', '')} {b.get('agency', '')}", profiles)
     st = b.get("state")
     return [n for n in hits if not (st and profiles[n].get("states") and st not in profiles[n]["states"])]
@@ -724,7 +762,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--loop", action="store_true")
     ap.add_argument("--interval", type=int, default=60, help="minutes between scans in --loop")
-    ap.add_argument("--sources", default=",".join(ALL_SOURCES))
+    ap.add_argument("--sources", default=",".join(ALL_SOURCES),
+                    help=f"comma list from {','.join(KNOWN_SOURCES)} (opt-in, not in the default: "
+                         f"{','.join(s for s in OPT_IN_SOURCES if s not in ALL_SOURCES) or 'none'})")
     ap.add_argument("--health", action="store_true")
     ap.add_argument("--no-detail", action="store_true")
     ap.add_argument("--push", action="store_true",
@@ -734,7 +774,7 @@ def main() -> int:
     ap.add_argument("--start-in", type=int, default=0,
                     help="minutes to wait before the first scan (space a restarted loop away from the hourly worker)")
     a = ap.parse_args()
-    sources = [s for s in a.sources.split(",") if s in ALL_SOURCES]
+    sources = [s for s in a.sources.split(",") if s in KNOWN_SOURCES]
     load_env_file()
     if "dibbs" in sources and not os.environ.get("BIDWATCH_ALLOW_DIBBS"):
         # DIBBS FAQ #45 (verified 2026-10-20): "VPNs, proxy servers, TOR nodes, cloud hosting services, and other
@@ -791,7 +831,7 @@ def main() -> int:
         print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} sync={sync} push={push} logins={logins}", flush=True)
         summary = f"ok={ok} degraded={degraded} push={push} logins={logins}"
         ping("scan", "" if ok and not degraded and not str(push).startswith("push FAILED") else "/fail", summary)
-        for src in ("bidnet", "samgov", "bonfire", "dibbs"):
+        for src in ("bidnet", "samgov", "bonfire", "dibbs", "coloradovss"):
             if src in sources and ok and src not in degraded:
                 ping(src, "", summary)
         _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
