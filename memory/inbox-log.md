@@ -183,3 +183,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-10-29 19:21Z hourly (read-only)
 - 1a18915901bb58a5 noreply@bidnet.com 19:14Z: saved-search notice "New Opportunities on BidNet Direct Matching Your Profile": Carbon Valley Parks & Rec Mechanical Service and Preventive Maintenance (due 2026-12-08). Already EVALUATE (HQ, mandatory walk 11/10). No action.
 - No TCF confirmation email from BidNet yet; HQ recorded the submission at ~13:00 MT. No CRM brief, no sub replies.
+
+## 2026-10-29 20:21Z hourly (read-only)
+- 1a18943aadb67848 snorwood@h2gs.com 20:04Z (Re: CDOC: Trinidad quote submitted): "Awesome! Ill be in touch shortly on the Elpaso project." Logged in elpaso-26-074-water-treatment/sub-outreach.md.
+- 1a189339f41d33f0 noreply@bidnet.com 19:47Z: Morgan County released a second communication on 2026-1119-001 Roof Replacement & Gutter Project (content behind the BidNet login). Bid is NO; noted on the pipeline row.
+- No CRM brief, no bounces.

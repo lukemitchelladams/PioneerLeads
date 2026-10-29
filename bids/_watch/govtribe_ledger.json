@@ -1561,21 +1561,27 @@
     },
     "bidnet:0000441987": {
       "name": "City of Longmont RFP-426089 On-Call Specialized Electrical Contractor Services for Treatment Operations (BidNet 0000441987, due 2026-11-18 14:00 MST)",
-      "verdict": "EVALUATE",
-      "why": "HQ triage 2026-10-29 15:00Z (pipeline row longmont-426089-oncall-electrical): no pre-bid listed on BidNet; RFP-426089_OC_Spec_Electrical.pdf watchlisted for the next logged-in scan; check SCADA/instrumentation certs and subcontracting limits before any GO. Electrical sub TBD.",
-      "at": "2026-10-29T15:30:00Z"
+      "verdict": "NO",
+      "why": "HQ triage 2026-10-29 15:00Z (pipeline row longmont-426089-oncall-electrical): no pre-bid listed on BidNet; RFP-426089_OC_Spec_Electrical.pdf watchlisted for the next logged-in scan; check SCADA/instrumentation certs and subcontracting limits before any GO. Electrical sub TBD. | 2026-10-29 HQ triage: NO. RFP requires the bidder to be a state-registered electrical contractor ('listed and in good standing with the State's electrical board'), own master electrician, EMR/OSHA logs, 40% company quals, P&P on $50k+ task orders.",
+      "at": "2026-10-29T20:27:00Z"
     },
     "bidnet:0000440322": {
       "name": "Carbon Valley Parks & Recreation District Mechanical Service and Preventive Maintenance-2026-3 (BidNet 0000440322, due 2026-12-08 14:00 MST)",
-      "verdict": "EVALUATE",
-      "why": "HQ triage 2026-10-29 15:00Z (folder bids/carbon-valley-mechanical-pm): BidNet 'Job-Walk Visit, Attendance Mandatory, Event date 11/10/2026 09:00 AM MST, Location 701 5th Street, Frederick CO 80530'. HVAC PM is our core trade; scope PDF watchlisted. Walk day collides with Arapahoe irrigation 10:00 (Aurora) and Poudre hood 13:30 (Fort Collins).",
-      "at": "2026-10-29T15:30:00Z"
+      "verdict": "GO",
+      "why": "HQ triage 2026-10-29 15:00Z (folder bids/carbon-valley-mechanical-pm): BidNet 'Job-Walk Visit, Attendance Mandatory, Event date 11/10/2026 09:00 AM MST, Location 701 5th Street, Frederick CO 80530'. HVAC PM is our core trade; scope PDF watchlisted. Walk day collides with Arapahoe irrigation 10:00 (Aurora) and Poudre hood 13:30 (Fort Collins). | 2026-10-29 HQ triage (bids/_watch/triage-2026-10-29.md): GO conditional; due corrected to '5:00 pm (Mountain Time), December 8, 2026'; sealed original + 5 copies to Scott Hickman, 701 5th St, Frederick; 6 HVAC subs emailed 10/29 (ops/outbox/2026-10-29/carbonvalley.txt); required walk-through 11/10 09:00.",
+      "at": "2026-10-29T20:27:00Z"
     },
     "52a08bdef17f4efcbcde50c79f427b28": {
       "name": "DLA Aviation Richmond SPE4A227RX001 Multi-NSN LTC (Sources Sought, PSC 3110, NAICS 332991, responses due 2026-11-04)",
       "verdict": "NO",
       "why": "NO for Jones Bearing: DLA Aviation sources sought for a long-term contract covering multiple NSN aircraft bearings (mil-spec, approved-source); not a Jones Bearing/American Pulley/ConveyMor product line (mounted spherical roller bearings, take-ups, pulleys, bucket elevators). Same call as the other DLA/NAVSUP NSN bearing postings.",
       "at": "2026-10-29T16:33:00Z"
+    },
+    "bidnet:0000441142": {
+      "name": "Weld County School District 6 WCSD6-27-257-1014 Coiling Door/Grill at Franklin Middle School (BidNet 0000441142, due 2026-11-10 14:00 MST)",
+      "verdict": "EVALUATE",
+      "why": "HQ row weldsd6-coiling-door-franklin 2026-10-29. BidNet: 'Job-Walk Visit, Attendance Mandatory, Event date 11/02/2026 10:00 AM MST, Location Franklin MS - 818 35th Ave, Greeley, CO 80634, Note: Meet at Front Entrance'. Doors are our trade (same overhead/coiling-door subs as Transfort ITB 10366); docs (front.docx, contract approval.docx, contract sample.pdf, ...) watchlisted for the next logged-in scan. Walk is 4 days out: a door sub or Luke must attend (rule 0).",
+      "at": "2026-10-29T20:27:00Z"
     }
   },
   "watched": {
@@ -1761,6 +1767,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T19:27:00Z: GovTribe still blocked. HQ 18:36Z pass = SAM 101 + VSS 61/3; BidNet still in robot-check cool-down (last good login 14:47Z). No NEW matches. TCF DQ 2027000037 SUBMITTED by Luke ~13:00 MT (HQ commit 5adc654); scrubbed the bid price/markup HQ wrote into sub-outreach.md, MEMORY.md and pipeline.json. Inbox: BidNet saved-search notice (Carbon Valley mechanical PM, already EVALUATE). No CRM brief.",
+  "last_hourly_check": "2026-10-29T20:27:00Z: GovTribe still blocked. HQ 19:42Z full scan: BidNet back (logged in, 591 open/84 matches, keep-alive added), SAM 101, VSS 59/3. 1 NEW = Weld SD6 coiling door at Franklin MS (EVALUATE, MANDATORY walk Mon 11/02 10:00 Greeley). HQ: Carbon Valley mechanical PM -> GO (6 subs emailed, due 12/08 17:00), Longmont electrical -> NO. Inbox: Silas (H2) 'in touch shortly on the Elpaso project'; BidNet: Morgan County communication #2 on the roof solicitation (NO bid). No CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
