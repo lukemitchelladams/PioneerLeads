@@ -91,3 +91,4 @@ Action for Luke: call the company line 720-675-7059 on Tue 2026-10-20, then send
 - 2026-10-28 16:00 MT (hourly scan, read-only): Alex Ditto (YMS) replied to Luke's 10/27 ask: YMS 'are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal.' He will start the snow portion and agreed to Fri 11/06. Gap: cleaning / graffiti / pressure-washing sub still needed (Lightning Mobile's full pricing was too high); proposal due 11/16, so a new cleaning sub must be asked by ~11/06.
 
 - 2026-10-28 16:00 MT: Alex (YMS) passes on cleaning/graffiti/pressure washing; will price SNOW ONLY by 11/6. Cleaning now needs a sub: 4 new firms emailed with shelter list + SOW + pricing sheet; Platinum followed up with docs.
+- 2026-10-28 20:27 MT: Jake Pavelle (Colorado Power Wash): "This is received and being reviewed." Pricing expected by 11/6. RTD questions he was promised are in questions-for-rtd.md (submit by 11/2 14:00).
