@@ -1622,6 +1622,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-28T23:21Z: GovTribe still BLOCKED (44th hour). HQ 22:36Z SAM-only pass (BidNet last 21:36Z), no NEW, no changes. Inbox: BidNet addendum notice for Castle Rock IFB 103-2026 water chemicals (NO). HQ 22:37Z emailed 4 cleaning subs for RTD + Platinum follow-up.",
+  "last_hourly_check": "2026-10-29T00:21Z: GovTribe still BLOCKED (45th hour). HQ 23:36Z pass: BidNet LOGIN BLOCKED by a robot check (public view only: 196 open / 14 matches; last logged-in success 21:36Z), SAM 106 OK, Bonfire no creds, DIBBS stale. No NEW, no changes. Inbox: nothing unseen.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
