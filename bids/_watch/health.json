@@ -1,31 +1,25 @@
 {
-  "checked_at": "2026-10-29T00:36:04+00:00",
+  "checked_at": "2026-10-29T01:36:11+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
+      "blind": true,
       "carried_forward": true,
       "complete": false,
-      "count": 196,
+      "count": 580,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [
-        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER\nCall log:\n  - navigating to \"https:",
-        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
         "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
       "last_success": "2026-10-28T23:36:26+00:00",
       "logged_in": false,
-      "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
-      "matches": 14,
-      "not_scanned_this_run": true,
+      "login_note": "COOL-DOWN after a robot check, until 2026-10-29T01:36:56+00:00",
+      "matches": 83,
       "reach_note": "HTTP 200",
-      "reachable": true,
-      "site_totals": {
-        "statewide AGGREGATE": 197,
-        "statewide BUYER": null
-      }
+      "reachable": true
     },
     "bonfire": {
       "count": 1,
@@ -34,11 +28,10 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-28T23:36:26+00:00",
+      "last_success": "2026-10-29T01:36:11+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -66,13 +59,13 @@
     },
     "samgov": {
       "bulk_added": 36,
-      "bulk_note": "bulk file cached 2026-10-28T05:40:41+00:00; 87 matching of 12912 open notices",
+      "bulk_note": "bulk file cached 2026-10-28T05:40:41+00:00; 87 matching (parsed earlier)",
       "count": 96,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-29T00:36:04+00:00",
+      "last_success": "2026-10-29T01:36:11+00:00",
       "logged_in": true,
       "login_note": "API key; +36 from the nightly bulk file",
       "matches": 96,
