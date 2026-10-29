@@ -1,0 +1,17 @@
+[
+  {
+    "key": "door",
+    "subject": "Weld SD6 Franklin MS coiling grille (WCSD6-27-257-1014): sub pricing",
+    "bcc": [
+      "sales@frontrangeraynor.com",
+      "service@coloradocommercialdoors.com",
+      "sales@donsgd.com"
+    ],
+    "files": [
+      "bids/weldsd6-coiling-door-franklin/docs/contract approval.docx",
+      "bids/weldsd6-coiling-door-franklin/docs/contract sample.pdf",
+      "bids/weldsd6-coiling-door-franklin/docs/front.docx"
+    ],
+    "body_file": "ops/outbox/2026-10-29/door.txt"
+  }
+]

@@ -43,5 +43,16 @@
     "attachments": [
       "Mechanical RFP Scope of Service Bidnet 1.pdf"
     ]
+  },
+  "door": {
+    "id": "1a18968917c3daad",
+    "threadId": "1a18968917c3daad",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "contract approval.docx",
+      "contract sample.pdf",
+      "front.docx"
+    ]
   }
 }
