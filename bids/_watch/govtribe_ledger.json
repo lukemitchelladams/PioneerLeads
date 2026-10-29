@@ -1579,9 +1579,9 @@
     },
     "bidnet:0000441142": {
       "name": "Weld County School District 6 WCSD6-27-257-1014 Coiling Door/Grill at Franklin Middle School (BidNet 0000441142, due 2026-11-10 14:00 MST)",
-      "verdict": "EVALUATE",
-      "why": "HQ row weldsd6-coiling-door-franklin 2026-10-29. BidNet: 'Job-Walk Visit, Attendance Mandatory, Event date 11/02/2026 10:00 AM MST, Location Franklin MS - 818 35th Ave, Greeley, CO 80634, Note: Meet at Front Entrance'. Doors are our trade (same overhead/coiling-door subs as Transfort ITB 10366); docs (front.docx, contract approval.docx, contract sample.pdf, ...) watchlisted for the next logged-in scan. Walk is 4 days out: a door sub or Luke must attend (rule 0).",
-      "at": "2026-10-29T20:27:00Z"
+      "verdict": "GO",
+      "why": "HQ row weldsd6-coiling-door-franklin 2026-10-29. BidNet: 'Job-Walk Visit, Attendance Mandatory, Event date 11/02/2026 10:00 AM MST, Location Franklin MS - 818 35th Ave, Greeley, CO 80634, Note: Meet at Front Entrance'. Doors are our trade (same overhead/coiling-door subs as Transfort ITB 10366); docs (front.docx, contract approval.docx, contract sample.pdf, ...) watchlisted for the next logged-in scan. Walk is 4 days out: a door sub or Luke must attend (rule 0). | 2026-10-29 HQ: GO. front.docx: one CrossingGard ERG-IBC emergency-response grille, bid opening 'Tuesday, November 10, 2026, at 2:00 p.m.' by email to sfrancies@greeleyschools.org; completion January 30, 2027; performance bond required (work over $50,000); 3 door subs emailed 10/29 (ops/outbox/2026-10-29/door.txt), pricing asked by Fri 11/06; folder bids/weldsd6-coiling-door-franklin.",
+      "at": "2026-10-29T21:27:00Z"
     }
   },
   "watched": {
@@ -1767,6 +1767,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T20:27:00Z: GovTribe still blocked. HQ 19:42Z full scan: BidNet back (logged in, 591 open/84 matches, keep-alive added), SAM 101, VSS 59/3. 1 NEW = Weld SD6 coiling door at Franklin MS (EVALUATE, MANDATORY walk Mon 11/02 10:00 Greeley). HQ: Carbon Valley mechanical PM -> GO (6 subs emailed, due 12/08 17:00), Longmont electrical -> NO. Inbox: Silas (H2) 'in touch shortly on the Elpaso project'; BidNet: Morgan County communication #2 on the roof solicitation (NO bid). No CRM brief.",
+  "last_hourly_check": "2026-10-29T21:27:00Z: GovTribe still blocked. HQ 20:37Z full scan: BidNet logged in 580/82, SAM 101, VSS 59/3; no NEW matches. HQ: Weld SD6 coiling grille -> GO (docs filed, 3 door subs emailed, mandatory walk Mon 11/02 10:00 Greeley). Inbox: Silas replied on the El Paso thread with Conor Parrish's (FACT Water Co) contact card and no message text. GO bids 20. HQ notes the BidNet keep-alive dies with the container; the always-on runner needs the repo PRIVATE + secrets.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
