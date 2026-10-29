@@ -983,8 +983,8 @@
       "prebid": "2026-11-05T09:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "HVAC sub TBD",
-      "subs": "7 emailed 10/28; specs drafted",
-      "sub_pricing": "None (7 firms emailed 10/28; answers requested by 11/12)",
+      "subs": "7 emailed 10/28; Accutemp Services committed 10/29 (walk + pricing by 11/12); specs drafted, package to send to Nick",
+      "sub_pricing": "Pending (Accutemp Services, Nick Yaw, Loveland, said YES 10/29 10:56 MT: attends the 11/05 09:00 walk and prices by Thu 11/12; specs still to be sent; 6 other firms silent)",
       "folder": "bids/weld-jail-rtu-b2600111",
       "contact": "not in hand",
       "doc_gaps": "Package in hand: Bid Specs.docx (incl. Schedule E insurance, bid form) and Attachment 1.pdf (drawings: partial roof plan, MAU/RTU schedule, electrical notes). Specs must be forwarded to the 7 subs as attachments."
@@ -1817,6 +1817,18 @@
       "when": "2026-10-29T16:33:00Z",
       "kind": "deadline",
       "note": "10:00 MT: Luke signed Exhibits B, C (W-9), E, F; HQ built the final signed package (8 files, private/). Luke uploads on BidNet by 16:00 MT; DQ closes 17:00 MDT. No BidNet confirmation in the inbox at 10:33 MT."
+    },
+    {
+      "bid": "weld-jail-rtu-b2600111",
+      "when": "2026-10-29T17:26:00Z",
+      "kind": "sub",
+      "note": "Accutemp Services (Nick Yaw, Loveland) 10/29 10:56 MT: 'Yes, that timeline would be ok ... we would be happy to bid the project.' Will attend the mandatory 11/05 09:00 walk in Greeley and price by 11/12. HQ/Luke owe him the B2600111 package and a walk meet-up confirmation."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T17:26:00Z",
+      "kind": "deadline",
+      "note": "Hourly 17:21Z: TCF DQ closes 17:00 MDT; signed package ready since 10:00 MT; still no BidNet upload confirmation in the inbox at 11:25 MT. BidNet robot-check cool-down started 16:36Z (HQ scanner), which does not affect Luke's own browser upload."
     }
   ],
   "doc_gaps": [

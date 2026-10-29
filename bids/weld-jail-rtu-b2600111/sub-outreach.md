@@ -12,7 +12,7 @@ Email text: outreach/sub-email.txt. Emails are from each firm's own contact page
 | Mechanical Solutions, Inc. (MSI) | Englewood (Greeley office) | info@msicolorado.com | (303) 789-1700 | Commercial HVAC/BAS, schools and public | Sent 10/28 |
 | Origin PHCE | Greeley | info@originphce.com | (970) 787-2665 | Commercial RTUs, boilers, VRF; residential-heavy | Sent 10/28 |
 | Longview Heating & Air | Frederick | info@longview-hvac.com | (720) 864-1450 | RTU replacement (crane set), municipal buildings; light commercial | Sent 10/28 |
-| Accutemp Services (Nick Yaw) | Loveland | nick.yaw@accutemp-services.com | 970-686-8866 | Commercial-only, RTU focus; small, confirm crane-set replacements | Sent 10/28 |
+| Accutemp Services (Nick Yaw) | Loveland | nick.yaw@accutemp-services.com | 970-686-8866 | Commercial-only, RTU focus; small, confirm crane-set replacements | Sent 10/28; YES 10/29 10:56 MT: will attend the 11/05 walk and price by 11/12; specs owed |
 | Air Flow LLC | Loveland | info@airflowllc.com | (970) 669-3569 | Commercial HVAC, RTUs; property managers | Sent 10/28 |
 
 Phone-only backups: MTech Mechanical (Loveland) 970-624-8000 (large, government category); Timberline Mechanical
@@ -33,3 +33,5 @@ Phone-only: Greeley Furnace Co. (970) 356-0121 (commercial installs page); McCre
 Strait Mechanical, Evans (402) 684-2668 (WOSB, commercial/industrial); M.D. Heating & Air, 913 38th Ave Ct, Greeley (Blue Book; no phone found).
 
 - 2026-10-28 09:40 MT (hourly scan, read-only): parallel search found 24 candidates; the 7 above were emailed by HQ at 09:1x MT, so the hourly scan sent nothing. Use the backups if fewer than 3 of the 7 answer by Mon 11/02.
+
+- 2026-10-29 10:56 MT (hourly scan, read-only): Nick Yaw, Owner & GM, Accutemp Services (Loveland, office 970-686-8866) replied: "Yes, that timeline would be ok if you are looking for a sub, we would be happy to bid the project." First committed HVAC sub: attends the mandatory 11/05 09:00 walk at 2110 O Street, Greeley, and prices by Thu 11/12. Owed to Nick: the B2600111 bid package (docs/) as attachments, and a confirmation of who meets him at the walk. No reply yet from the other 6 firms.

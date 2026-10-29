@@ -1761,6 +1761,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T16:33:00Z: GovTribe still blocked. HQ 15:50Z pass = SAM + ColoradoVSS (61 postings, 3 matches); BidNet last 14:47Z (590/85). 1 NEW = DLA Aviation Multi-NSN LTC sources sought, NO. TCF: Luke signed B, C, E, F at 10:00 MT; final signed package in private/; Luke uploads on BidNet by 16:00 MT; no confirmation yet. Inbox: nothing unseen, no CRM brief.",
+  "last_hourly_check": "2026-10-29T17:26:00Z: GovTribe still blocked. HQ 16:36Z scan: BidNet login BLOCKED by robot check (cool-down started; 201 listed/14 matches on the public view, previous results carried forward; last good login 14:47Z), SAM 101, VSS 60/3, Bonfire no creds, DIBBS stale. No NEW matches. Inbox: Accutemp Services said YES to the Weld RTU walk + pricing by 11/12. No TCF confirmation yet; no CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
