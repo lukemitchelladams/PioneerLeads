@@ -552,7 +552,7 @@
       "prebid_mandatory": true,
       "performer": "Water-treatment sub TBD",
       "subs": "H2 Global Solutions (Silas Norwood, COO, snorwood@h2gs.com) attending 10/27 for Brown Bison; signed Exhibit G forwarded to kimberly.rusgrove@state.co.us cc Jennifer Garvin 2026-10-26 15:09 MT. Pricing due to us Wed 10/28 noon. | 10/27 07:05 MT: Silas's form had no photo ID; asked him to email ID to Kimberly Rusgrove (cc'd) before the 10 AM walk.",
-      "sub_pricing": "In hand (H2 Global 'Bid Submittal.zip' emailed by Silas Norwood 2026-10-28 09:20 MT; HQ assembles the quote; prices stay in private/)",
+      "sub_pricing": "In hand (H2 Global pricing 10/28; final signed Brown Bison package built by HQ 10/29 10:00 MT, in private/; Luke uploads on BidNet by 16:00 MT; closes 17:00 MDT)",
       "folder": "bids/cdoc-tcf-boiler-water",
       "contact": "Jennifer Garvin, jennifer.garvin@state.co.us"
     },
@@ -1811,6 +1811,12 @@
       "when": "2026-10-29T15:30:00Z",
       "kind": "deadline",
       "note": "Hourly 15:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT; still no BidNet upload confirmation in the inbox at 09:30 MT."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-10-29T16:33:00Z",
+      "kind": "deadline",
+      "note": "10:00 MT: Luke signed Exhibits B, C (W-9), E, F; HQ built the final signed package (8 files, private/). Luke uploads on BidNet by 16:00 MT; DQ closes 17:00 MDT. No BidNet confirmation in the inbox at 10:33 MT."
     }
   ],
   "doc_gaps": [

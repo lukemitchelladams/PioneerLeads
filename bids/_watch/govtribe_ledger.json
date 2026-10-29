@@ -1570,6 +1570,12 @@
       "verdict": "EVALUATE",
       "why": "HQ triage 2026-10-29 15:00Z (folder bids/carbon-valley-mechanical-pm): BidNet 'Job-Walk Visit, Attendance Mandatory, Event date 11/10/2026 09:00 AM MST, Location 701 5th Street, Frederick CO 80530'. HVAC PM is our core trade; scope PDF watchlisted. Walk day collides with Arapahoe irrigation 10:00 (Aurora) and Poudre hood 13:30 (Fort Collins).",
       "at": "2026-10-29T15:30:00Z"
+    },
+    "52a08bdef17f4efcbcde50c79f427b28": {
+      "name": "DLA Aviation Richmond SPE4A227RX001 Multi-NSN LTC (Sources Sought, PSC 3110, NAICS 332991, responses due 2026-11-04)",
+      "verdict": "NO",
+      "why": "NO for Jones Bearing: DLA Aviation sources sought for a long-term contract covering multiple NSN aircraft bearings (mil-spec, approved-source); not a Jones Bearing/American Pulley/ConveyMor product line (mounted spherical roller bearings, take-ups, pulleys, bucket elevators). Same call as the other DLA/NAVSUP NSN bearing postings.",
+      "at": "2026-10-29T16:33:00Z"
     }
   },
   "watched": {
@@ -1755,6 +1761,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T15:30:00Z: GovTribe still blocked. HQ 14:47Z full scan: BidNet logged in 590 open/85 matches, SAM 100, ColoradoVSS 59/3, Bonfire no creds, DIBBS stale. 2 NEW (Longmont on-call electrical RFP-426089, Carbon Valley mechanical PM with MANDATORY walk 11/10 09:00) both EVALUATE per HQ; docs watchlisted. Inbox: Wash On Wheels (David) will review RTD materials, asked whether janitorial is needed (HQ answered: pressure washing + graffiti only); Gmail delay notice #2 for ryan@rocksolidhs.com (Brighton); Govly marketing. No TCF confirmation.",
+  "last_hourly_check": "2026-10-29T16:33:00Z: GovTribe still blocked. HQ 15:50Z pass = SAM + ColoradoVSS (61 postings, 3 matches); BidNet last 14:47Z (590/85). 1 NEW = DLA Aviation Multi-NSN LTC sources sought, NO. TCF: Luke signed B, C, E, F at 10:00 MT; final signed package in private/; Luke uploads on BidNet by 16:00 MT; no confirmation yet. Inbox: nothing unseen, no CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
