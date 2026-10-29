@@ -1,19 +1,19 @@
 [
  {
   "source": "BidNet / RMEPS (Colorado)",
-  "status": "Not in the last scan; last read shown",
-  "detail": "logged in (attempt 1)",
-  "open_count": 590,
-  "matches": 85,
-  "last_success": "2026-10-29T14:47:20+00:00"
+  "status": "Blind this run (last good data shown)",
+  "detail": "HTTP 202; showing 593 rows from the last good read; login BLOCKED: BidNet robot check right after the login form: cool-down started; BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Pag",
+  "open_count": 201,
+  "matches": 14,
+  "last_success": "2026-10-29T16:36:44+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
-  "status": "Not in the last scan; last read shown",
+  "status": "Live (public, not logged in)",
   "detail": "BONFIRE_USER/BONFIRE_PASS not set",
   "open_count": 1,
   "matches": 0,
-  "last_success": "2026-10-29T14:47:20+00:00"
+  "last_success": "2026-10-29T16:36:44+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +37 from the nightly bulk file",
   "open_count": 101,
   "matches": 101,
-  "last_success": "2026-10-29T15:50:26+00:00"
+  "last_success": "2026-10-29T16:36:44+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -35,9 +35,9 @@
   "source": "ColoradoVSS (State of Colorado)",
   "status": "Live (public, not logged in)",
   "detail": "public list (no login)",
-  "open_count": 61,
+  "open_count": 60,
   "matches": 3,
-  "last_success": "2026-10-29T15:50:26+00:00"
+  "last_success": "2026-10-29T16:36:44+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
