@@ -1,25 +1,29 @@
 {
-  "checked_at": "2026-10-30T05:36:20+00:00",
+  "checked_at": "2026-10-30T06:36:49+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
-      "count": 579,
+      "carried_forward": true,
+      "complete": false,
+      "count": 194,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [],
-      "last_success": "2026-10-30T04:36:04+00:00",
-      "logged_in": true,
-      "login_note": "logged in (attempt 1)",
-      "matches": 80,
-      "not_scanned_this_run": true,
+      "errors": [
+        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER: Error: Page.goto: net::ERR_ABORTED at https://www.bidnetdirect.com/colorado/solicitations/open-bids?selectedContent=BUYER\nCall log:\n  - navigating to \"https:",
+        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-10-30T06:36:49+00:00",
+      "logged_in": false,
+      "login_note": "login BLOCKED: BidNet robot check right after the login form: cool-down started",
+      "matches": 13,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 194,
-        "statewide BUYER": 386
+        "statewide AGGREGATE": 195,
+        "statewide BUYER": null
       }
     },
     "bonfire": {
@@ -29,11 +33,10 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-30T04:36:04+00:00",
+      "last_success": "2026-10-30T06:36:49+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -42,7 +45,7 @@
       "count": 58,
       "creds": {},
       "errors": [],
-      "last_success": "2026-10-30T05:36:20+00:00",
+      "last_success": "2026-10-30T06:36:49+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 2,
@@ -76,13 +79,13 @@
     },
     "samgov": {
       "bulk_added": 37,
-      "bulk_note": "bulk file downloaded 220 MB; 102 matching of 14303 open notices",
+      "bulk_note": "bulk file cached 2026-10-30T05:36:52+00:00; 102 matching (parsed earlier)",
       "count": 102,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-30T05:36:20+00:00",
+      "last_success": "2026-10-30T06:36:49+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
       "matches": 102,
