@@ -1,25 +1,24 @@
 {
-  "checked_at": "2026-10-30T11:37:00+00:00",
+  "checked_at": "2026-10-30T14:16:20+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 580,
+      "count": 583,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-10-30T09:36:33+00:00",
+      "last_success": "2026-10-30T14:16:20+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 80,
-      "not_scanned_this_run": true,
-      "reach_note": "HTTP 200",
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 195,
-        "statewide BUYER": 386
+        "statewide BUYER": 389
       }
     },
     "bonfire": {
@@ -29,27 +28,26 @@
         "BONFIRE_USER": false
       },
       "errors": [],
-      "last_success": "2026-10-30T09:36:33+00:00",
+      "last_success": "2026-10-30T14:16:20+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 0,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
     "coloradovss": {
       "complete": true,
-      "count": 58,
+      "count": 59,
       "creds": {},
       "errors": [],
-      "last_success": "2026-10-30T11:37:00+00:00",
+      "last_success": "2026-10-30T14:16:20+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 2,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 58
+        "statewide open": 59
       }
     },
     "dibbs": {
@@ -82,7 +80,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-10-30T11:37:00+00:00",
+      "last_success": "2026-10-30T14:16:20+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
       "matches": 103,

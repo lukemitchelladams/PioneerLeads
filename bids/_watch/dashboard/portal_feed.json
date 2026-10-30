@@ -1631,7 +1631,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4"
  },
  {
@@ -1826,7 +1826,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4"
  },
  {
