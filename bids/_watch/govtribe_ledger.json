@@ -1600,6 +1600,24 @@
       "verdict": "NO",
       "why": "Remote post-and-wire range fence rebuild on National Forest land after the Lowline Fire: field construction outside our trades (rule 8), no fence sub in our network, Gunnison is ~4h from Broomfield. No documents in hand (sam.gov blocked from cloud).",
       "at": "2026-10-30T06:25:00Z"
+    },
+    "bidnet:2721339392": {
+      "name": "USAFA Ambulance Services (BidNet statewide aggregate 2721339392, closes 2026-11-19)",
+      "verdict": "NO",
+      "why": "Ambulance/EMS services, not our trades; no profile match.",
+      "at": "2026-10-30T07:30:00Z"
+    },
+    "bidnet:2719869317": {
+      "name": "VA Q519--554 Short Term Psychiatric Transitional Housing (BidNet aggregate 2719869317; closing corrected 2029-10-29 -> 2026-11-06)",
+      "verdict": "NO",
+      "why": "Healthcare housing services, not our trades; no profile match.",
+      "at": "2026-10-30T07:30:00Z"
+    },
+    "bidnet:2721115247": {
+      "name": "59--RELAY (BidNet aggregate 2721115247; closing moved 2026-10-30 -> 2026-11-03)",
+      "verdict": "NO",
+      "why": "Federal electrical relay part buy (FSC 59), not a Jones Bearing FSC and no quantities in hand (rule 9); no profile match.",
+      "at": "2026-10-30T07:30:00Z"
     }
   },
   "watched": {
@@ -1785,6 +1803,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T06:25:00Z: GovTribe still blocked (~74h). HQ 05:36Z partial scan (SAM 102, VSS 58/2; BidNet 579/80 kept from 04:36Z; Bonfire no creds; DIBBS stale): 1 NEW = USFS Lowline burned fence construction, Gunnison (SAM 894975db…) -> NO. Inbox: nothing unseen (16 threads); no CRM brief; no new Sent; no FACT Water reply yet.",
+  "last_hourly_check": "2026-10-30T07:30:00Z: GovTribe still blocked (~75h). HQ 06:36Z scan: BidNet ROBOT CHECK at login (4th fresh login of the night), statewide tab failed, rows carried forward, next BidNet login 09:36Z; SAM 102, VSS 58/2; Bonfire no creds; DIBBS stale. No NEW matches; 3 non-matching aggregate rows ledgered NO (USAFA ambulance, VA psych housing, 59--RELAY). Inbox: nothing unseen (16 threads); no CRM brief; no new Sent; no FACT Water reply yet.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
