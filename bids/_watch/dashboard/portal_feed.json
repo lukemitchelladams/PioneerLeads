@@ -1961,7 +1961,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Specialized-Electrical-Contractor-Services-for-Treatment-Operations/0000441987?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2711,7 +2711,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mechanical-Service-and-Preventive-Maintenance/0000440322?purchasingGroupId=8409951&origin=1"
  },
  {

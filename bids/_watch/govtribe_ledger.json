@@ -1654,6 +1654,12 @@
       "verdict": "NO",
       "why": "Printing services, not our trades; no profile match.",
       "at": "2026-10-30T14:27:00Z"
+    },
+    "coloradovss:DQ1-PMAA-2027000127": {
+      "name": "CPW DQ1-PMAA-2027000127 Apishapa SWA Cheatgrass Treatment (closes 2026-11-06)",
+      "verdict": "NO",
+      "why": "Herbicide/weed treatment on a state wildlife area: not our trades (rule 8); no profile match. HQ also NO 14:4xZ.",
+      "at": "2026-10-30T15:28:00Z"
     }
   },
   "watched": {
@@ -1839,6 +1845,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T14:30:00Z: GovTribe still blocked (~82h). HQ unblocked: replied-all to FACT Water 14:15Z (pricing + 3 refs + tech bio by Mon noon), follow-ups to 3 Weld SD6 door subs and 5 Douglas UPS firms 14:18Z, then full scan 14:16Z: BidNet logged in 583/80, SAM 103, VSS 59/2, Bonfire no creds, DIBBS stale; no NEW matches; 4 non-matching rows ledgered NO (water/wastewater design, 2 CDE HQIM RFIs, DPA printing). HQ session now waiting on a Bash permission (14:23Z). Inbox: nothing unseen (20 threads); no CRM brief. Weld SD6 sub-outreach.md created (was missing).",
+  "last_hourly_check": "2026-10-30T15:30:00Z: GovTribe still blocked (~83h). HQ 14:37Z SAM+VSS pass (BidNet 583/80 at 14:16Z, scanner now enforces 3h login gap): SAM 103, VSS 60/2; 1 NEW VSS = CPW Apishapa cheatgrass -> NO. Trinidad/TCF DQ 2027000037 WITHDRAWN (H2 pulled pricing; Luke withdrew). Inbox: RESA declined Douglas UPS (HQ sent RESA the Metro Water B-26-019 package instead); Environment Control (Ryan Steinseifer) engaged on COS janitorial. HQ emailed 5 more UPS firms and 3 more door firms; Colorado Standby follow-up for Parker generator. HQ session idle. No CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

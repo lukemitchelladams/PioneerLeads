@@ -110,3 +110,5 @@ Subject: Generator service pricing: Town of Parker RFP 26-021-1 (7 units, 6 site
 
 ## Replies
 - 2026-10-26 17:16 MT: Colorado Standby, Brad Orgill (brad_orgill@coloradostandby.com, 719-624-8100): "We would be interested in taking a look. Please send over the RFP." Next: send the full RFP 26-021-1 package as attachments (no links); pricing asked for by Fri 10/30.
+
+- 2026-10-30 09:10 MT (from luke@brownbisonco.com, 'Operations Manager' signature): follow-up to Brad Orgill, Colorado Standby (msg 1a18d5cc8082418f) with the revised RFP 26-021-1 PDF and price-sheet workbook attached; equipment list and the ten pricing items were in the 10/26 email; proposals close Fri 11/06 14:00; numbers asked by Tue 11/03.

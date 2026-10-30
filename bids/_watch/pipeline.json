@@ -217,7 +217,7 @@
       "subs": "5 NETA/testing firms emailed 2026-10-28 via HQ outbox (bcc 5, solicitation + 3 attachments)",
       "folder": "bids/metro-water-switchgear-maintenance",
       "contact": "Brian Sward, bsward@metrowaterrecovery.com",
-      "sub_pricing": "None"
+      "sub_pricing": "Pending (RESA Power, Vitor Teixeira, Denver: HQ sent the B-26-019 package 10/30 ~08:3x MT after RESA asked for electrical-testing work; annual lump sum x5 years asked by Thu 11/05; bid due 11/12 14:00)"
     },
     {
       "id": "rtd-126dm016",
@@ -363,7 +363,7 @@
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
       "subs": "2026-10-26 16:36Z (HQ, Luke-authorized): follow-up to Generator Source + first contact to Colorado Standby (info@coloradostandby.com), RMGS (sales@rmgsco.com), DVL (GenService@dvlnet.com), Smith Power Products (generators@smithppi.com). 0 replies at 17:30Z. Questions to Town due 10/30 10:00; pricing wanted by 10/30. | 10/26 17:16 MT: Colorado Standby (Brad Orgill, brad_orgill@coloradostandby.com, 719-624-8100) replied 'We would be interested in taking a look. Please send over the RFP.' HQ asked to send the full RFP 26-021-1 package (attachments, no links). First generator-sub reply.",
-      "sub_pricing": "None (Colorado Standby engaged 10/26; pricing asked for by 10/30)",
+      "sub_pricing": "None (Colorado Standby, Brad Orgill, engaged 10/26; follow-up 10/30 09:10 MT with revised RFP and price sheet; numbers asked by Tue 11/03; proposals close Fri 11/06 14:00)",
       "folder": "bids/parker-generator-maintenance",
       "contact": "Charles Ellis, cellis@parkeronline.org"
     },
@@ -662,7 +662,7 @@
       "prebid_mandatory": null,
       "performer": "Janitorial sub TBD",
       "subs": "7 drafted 10/28",
-      "sub_pricing": "Pending (Sergeant Suds Cleaning Services, Nick Brown GM, confirmed 10/28 13:10 MT they will price by Mon 11/16; proposals due 11/23)",
+      "sub_pricing": "Pending (Sergeant Suds Cleaning Services, Nick Brown GM, confirmed 10/28 they will price by Mon 11/16; Environment Control / EC Company, Ryan Steinseifer, engaged 10/30 09:12 MT, pricing by Mon 11/16; proposals due 11/23)",
       "folder": "bids/cos-oncall-janitorial",
       "contact": "not in hand"
     },
@@ -1023,7 +1023,7 @@
       "prebid_mandatory": null,
       "performer": "Sub TBD",
       "subs": "5 emailed 10/28",
-      "sub_pricing": "None (5 UPS service firms emailed by HQ 10/28; follow-up 10/30 08:18 MT with IFB and contract re-attached; pricing asked by Mon 11/02 noon; bid due Wed 11/04 15:00; none replied)",
+      "sub_pricing": "None (10 UPS firms asked: 5 emailed 10/28 + follow-up 10/30 08:18 MT, 5 more emailed 10/30 ~08:25 MT; RESA Power DECLINED 10/30 08:30 MT; 9 open, none priced; pricing asked by Mon 11/02 noon; bid due Wed 11/04 15:00)",
       "folder": "bids/dougco-ups-039-26",
       "contact": "not in hand",
       "doc_gaps": "Q&A Document 1 (Addendum 1) downloaded 21:36Z and read; forwarded to the 5 subs by HQ 21:41Z. Bid Schedule still to be priced."
@@ -1351,7 +1351,7 @@
       "prebid_mandatory": true,
       "performer": "Door sub TBD",
       "subs": "3 emailed 10/29",
-      "sub_pricing": "None (3 door subs emailed 10/29 with docs; HQ follow-up 10/30 08:18 MT asking them to meet at the Mon 11/02 10:00 mandatory walk or price from our photos by Fri 11/06; none replied)",
+      "sub_pricing": "None (6 door firms asked: 3 emailed 10/29 + follow-up 10/30 08:18 MT, 3 more 10/30 ~08:25 MT incl. Gold Label Specialties; asked to meet at the Mon 11/02 10:00 mandatory walk or price from our photos by Fri 11/06; none replied; Luke attends Monday unless a sub confirms)",
       "folder": "bids/weldsd6-coiling-door-franklin",
       "contact": "BidNet"
     }
@@ -1944,6 +1944,36 @@
       "when": "2026-10-30T14:18:00Z",
       "kind": "sub-outreach",
       "note": "HQ follow-up to the 5 UPS firms: sub pricing needed by Mon 11/02 noon for the Wed 11/04 bid; IFB and contract re-attached."
+    },
+    {
+      "bid": "metro-water-b26019",
+      "when": "2026-10-30T14:35:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ sent RESA Power (Vitor Teixeira) the B-26-019 switchgear/relay package; pricing asked by Thu 11/05."
+    },
+    {
+      "bid": "cos-oncall-janitorial",
+      "when": "2026-10-30T15:12:00Z",
+      "kind": "sub-reply",
+      "note": "Environment Control (Ryan Steinseifer) engaged: 'Absolutely, I will look into this' after Luke's scope answer; pricing by Mon 11/16."
+    },
+    {
+      "bid": "bidnet-0000440339",
+      "when": "2026-10-30T14:30:00Z",
+      "kind": "sub-reply",
+      "note": "RESA Power declined (UPS maintenance not a service they provide); 5 more UPS firms emailed by HQ ~08:25 MT."
+    },
+    {
+      "bid": "weldsd6-coiling-door-franklin",
+      "when": "2026-10-30T14:25:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ emailed 3 more door firms (Gold Label Specialties, C & M Garage Doors, Front Range Overhead Door); 6 asked in total, none replied."
+    },
+    {
+      "bid": "parker-generator",
+      "when": "2026-10-30T15:10:00Z",
+      "kind": "sub-outreach",
+      "note": "Follow-up to Colorado Standby (Brad Orgill) with the revised RFP and price sheet; numbers asked by Tue 11/03."
     }
   ],
   "doc_gaps": [
