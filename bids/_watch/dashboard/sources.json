@@ -1,7 +1,7 @@
 [
  {
   "source": "BidNet / RMEPS (Colorado)",
-  "status": "Live",
+  "status": "Not in the last scan; last read shown",
   "detail": "logged in (attempt 1)",
   "open_count": 580,
   "matches": 80,
@@ -9,7 +9,7 @@
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
-  "status": "Live (public, not logged in)",
+  "status": "Not in the last scan; last read shown",
   "detail": "BONFIRE_USER/BONFIRE_PASS not set",
   "open_count": 1,
   "matches": 0,
@@ -19,9 +19,9 @@
   "source": "SAM.gov",
   "status": "Live",
   "detail": "API key; +37 from the nightly bulk file",
-  "open_count": 102,
-  "matches": 102,
-  "last_success": "2026-10-30T09:36:33+00:00"
+  "open_count": 103,
+  "matches": 103,
+  "last_success": "2026-10-30T10:36:15+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -37,7 +37,7 @@
   "detail": "public list (no login)",
   "open_count": 58,
   "matches": 2,
-  "last_success": "2026-10-30T09:36:33+00:00"
+  "last_success": "2026-10-30T10:36:15+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",

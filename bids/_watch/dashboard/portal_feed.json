@@ -2415,6 +2415,21 @@
   "url": "https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view"
  },
  {
+  "key": "samgov:dacbc6b4e8aa4880930c72ad6a19d7dd",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "BEARING ASSY, SPCL",
+  "sol": "N0010427QNA42",
+  "closing": "2026-11-30",
+  "posted": "2026-10-30",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view"
+ },
+ {
   "key": "bidnet:0000440039",
   "source": "bidnet",
   "agency": "Westminster Public Schools Project Type RFP - Request for Proposal (Formal) Project Number RFP 26-002",
@@ -2486,7 +2501,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e0744ff44d534fe384865ff6a50be7d3/view"
  },
  {
@@ -2606,7 +2621,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/9cc53143bea54b7a87289a1fed41697e/view"
  },
  {
@@ -2726,7 +2741,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/a98c21a17409454a9307a97860826870/view"
  },
  {
