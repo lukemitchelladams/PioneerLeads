@@ -61,5 +61,19 @@
       "contract sample.pdf",
       "contract approval.docx"
     ]
+  },
+  "resa-metro": {
+    "id": "1a18d3f8906838a8",
+    "threadId": "1a18d3f8906838a8",
+    "to": [
+      "vitor.teixeira@resapower.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "MWR-B26019-Switchgear-Relay-Maintenance.pdf",
+      "Attachment 1 - Scope of Services.pdf",
+      "Attachment 2 - Price Proposal.xlsx",
+      "Attachment 3 - Sample Metro Agreement.pdf"
+    ]
   }
 }

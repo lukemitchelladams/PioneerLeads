@@ -33,3 +33,4 @@ Email text: ops/outbox/2026-10-28b/ups.txt (pricing by Mon 11/02 noon).
 Phone/form only: Current Power Services, Colorado Springs 719-258-9820 (Mitsubishi/Gamatronics authorized; site dated 2012); Computer Sites Inc, Denver 303-871-0550 (Eaton-certified UPS PM).
 
 - 2026-10-30 ~08:25 MT (HQ): pricing request to the 5 firms above (msg 1a18d3d01760bf24; IFB, Q&A 1 and Exhibit A attached; ops/outbox/2026-10-30/ups-new.txt). Pricing by Mon 11/02 noon.
+- 2026-10-30 08:30 MT: RESA Power (Vitor Teixeira) DECLINED: "UPS maintenance is not a service we currently provide". 4 of the original 5 + 5 new firms still open.

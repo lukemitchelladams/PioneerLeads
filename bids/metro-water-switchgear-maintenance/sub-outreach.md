@@ -11,3 +11,6 @@ annual lump sums 2027-2031, NETA certs + 3 references, insurance. Pricing by **T
 
 Phone-only: Shermco Industries, Centennial, 888-743-7626 (RFP form shermco.com); Vertiv ERS, Denver, 1-888-468-6384;
 Precision Testing Group (Elizabeth, CO, NETA-listed); ABM Electrical Power Services (Denver).
+
+- 2026-10-30 08:30 MT: Vitor Teixeira (Outside Sales, RESA Power Denver, vitor.teixeira@resapower.com, m 585-415-5687) declined Douglas County UPS ("UPS maintenance is not a service we currently provide") and said "keep us in mind for any future electrical testing or maintenance opportunities". He also said it was the first time they had seen the request, so the info.denver@ mailbox likely isn't read.
+- 2026-10-30 ~08:40 MT (HQ): sent Vitor this RFP directly (ops/outbox/2026-10-30/resa-metro.txt; RFP, Attachments 1-3 attached, no links). Pricing by Thu 11/05.

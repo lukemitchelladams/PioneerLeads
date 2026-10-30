@@ -1,0 +1,16 @@
+[
+  {
+    "key": "resa-metro",
+    "subject": "Metro Water Recovery switchgear and relay maintenance (RFP B-26-019): sub pricing",
+    "to": [
+      "vitor.teixeira@resapower.com"
+    ],
+    "files": [
+      "bids/metro-water-switchgear-maintenance/docs/MWR-B26019-Switchgear-Relay-Maintenance.pdf",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 1 - Scope of Services.pdf",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 2 - Price Proposal.xlsx",
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 3 - Sample Metro Agreement.pdf"
+    ],
+    "body_file": "ops/outbox/2026-10-30/resa-metro.txt"
+  }
+]
