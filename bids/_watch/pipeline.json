@@ -66,7 +66,7 @@
       "due": "2026-10-28T14:00:00-06:00",
       "portal": "RMEPS (BidNet)",
       "decision": "NO",
-      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional \u22643% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
+      "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Attachments A/B/C + RMEPS pricing items in hand (logged-in BidNet pull 10/20). Pricing = 6 RMEPS line items (4 hourly rates, material markup %, optional ≤3% annual increase). Q&A posts 10/21. Plumber answers due 10/23 17:00.",
       "prebid": "2026-10-09T10:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Plumbing sub",
@@ -355,10 +355,10 @@
       "sol": "RFP 26-021-1",
       "trade": "Electrical",
       "due": "2026-11-06T14:00:00-07:00",
-      "due_source": "RFP 26-021-1 \u00a71.2: \"November 6, 2026 @ 2:00pm\"",
+      "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
       "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (\u00a71.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (\u00a77) not in hand (Bonfire/BidNet login).",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -396,14 +396,14 @@
       "due_source": "RFP 27-007 p.2: 'Solicitation Due Date: November 6, 2026 Time: 2:00 PM (MST)'; Exhibit A timeline: Questions Due 10/21/2026, Questions Answered 10/23/2026, Contract Start 7/01/2027",
       "portal": "BidNet",
       "decision": "NO",
-      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A \u00a72 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. \u00a75.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP \u00a72.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
+      "decision_note": "Full outsourced custodial for 90 sites / 7,547,412 sq ft (Exhibit D), 120-180 day mobilization, start 2027-07-01. Exhibit A §2 minimum qualifications: 'Minimum seven (7) years providing managed custodial services', 'Minimum five (5) years serving K-12', 'at least three (3) school districts exceeding 3,000,000 square feet', 'Demonstrated APPA Level 2 compliance history'. §5.2: three references 'of similar size and scope'. Best-value award weighting 'industry leadership' and 'workforce stability'. Not a Brown Bison-sized job; a national custodial firm would prime, not sub. 10/13 walk was NOT mandatory (RFP §2.9; BidNet 'Attendance Recommended'); earlier mandatory=True was a parser bug (fixed 874ebb3). Luke can override by 10/21 14:00 (question deadline).",
       "prebid": "2026-10-13T08:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "n/a (NO)",
       "subs": "Not started (NO)",
       "sub_pricing": "None",
       "folder": "bids/cherrycreek-custodial-27-007",
-      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP \u00a72.8)"
+      "contact": "Strategic Sourcing, Strategicsourcing@cherrycreekschools.org, 720-886-5800 (questions only via BidNet, one per entry, no phone calls: RFP §2.8)"
     },
     {
       "id": "parks-oncall-mowing",
@@ -1212,9 +1212,9 @@
       "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides. | 20:50Z verification: Addendum 1 conflicts on visit scope (A4 all six facilities x12 vs A28 monthly at TSB/CUP/RBD only); Pollution Liability $1M marked Required in Attachment A; offer valid 90 days; 4 one-year renewals with pass-through-only price adjustments; degreed technical staff and 3 references required.",
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
-      "performer": "Brown Bison + water-treatment sub (FACT Water Co referral; H2 out)",
+      "performer": "Brown Bison + water-treatment sub (FACT Water Co, pricing requested; H2 out)",
       "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish) referral, email drafted (humanize PASS) in sub-outreach.md; Summit Laboratories backup",
-      "sub_pricing": "None (H2 Global DECLINED 10/29 15:40 MT: 'we couldn't help'; Silas referred Conor Parrish, FACT Water Co, a competitor of his. Package to Conor today from HQ; ask pricing by Mon 11/02 noon. Backup: Summit Laboratories, Denver. Proposal due Wed 11/04 14:00 MST)",
+      "sub_pricing": "Pending (FACT Water Co, Conor Parrish, emailed 10/29 20:39 MT by HQ with RFP, Addendum 1, sample contract, September report and 6 SDS; pricing asked by Mon 11/02 noon, firm 90 days and through 2027; phone follow-up Fri 10/30 midday if silent. H2 Global declined 10/29. Backup: Summit Laboratories, Denver. Proposal due Wed 11/04 14:00 MST)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1914,6 +1914,12 @@
       "when": "2026-10-30T00:25:00Z",
       "kind": "deadline",
       "note": "Hourly 00:21Z: FACT Water pricing email (drafted 22:28Z) still not in Sent/outbox. Proposal due Wed 11/04 14:00 MST; pricing needed Mon 11/02 noon. Only 2 business days left for a new sub."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-30T02:39:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ sent FACT Water Co (Conor Parrish) the pricing request with the full package attached; pricing asked by Mon 11/02 noon."
     }
   ],
   "doc_gaps": [
