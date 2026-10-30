@@ -39,12 +39,23 @@ CODE_MARKER_TTL_H = 6  # a stale "waiting for a code" marker expires so the scan
 # After BidNet serves its AWS WAF robot check, skip BidNet until this time (ISO UTC) and keep the last good data.
 BIDNET_COOLDOWN_FILE = STATE_HOME / "bidnet_cooldown_until"
 BIDNET_COOLDOWN_H = 2
+# Time (ISO UTC) of the last FRESH BidNet password login that worked; written only then (a reused session is not a
+# login). Fresh logins close together trip the robot check (2026-10-30 06:37Z: the 4th in ~6 h; 2 h apart passed
+# three times, 3 h apart passed), so no password is submitted until BIDWATCH_BIDNET_LOGIN_GAP_H hours (env, default
+# below; 0 = no gap) have passed since then. A scan inside the gap whose saved session expired skips BidNet.
+BIDNET_LAST_LOGIN_FILE = STATE_HOME / "bidnet_last_login"
+BIDNET_LOGIN_GAP_H = 3.0
 RUN_LOCK = STATE_HOME / "bidwatch.lock"  # one scan at a time on a machine
 
 
 class LoginBlocked(RuntimeError):
     """Login cannot proceed without outside help (emailed confirmation code, robot check). Never retried,
     so a portal is not hit three times and three code emails are not sent."""
+
+
+class LoginDeferred(LoginBlocked):
+    """A fresh password login held back on purpose (too soon after the last one): a deliberate skip, like a robot-check
+    cool-down, not a fault. Never retried; the scan keeps the portal's earlier rows."""
 
 
 def now_utc() -> dt.datetime:

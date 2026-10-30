@@ -2,12 +2,13 @@
 """Keep the saved BidNet session warm between hourly scans, so scans reuse it instead of logging in again.
 
 Why: BidNet drops an idle session in under an hour, so almost every hourly scan had to submit the login form,
-and fresh logins are what trip BidNet's robot check (2026-10-28 23:36Z, 2026-10-29 16:37Z). A logged-in page
-load every ~15 minutes keeps the session alive with no login at all.
+and fresh logins are what trip BidNet's robot check (2026-10-28 23:36Z, 2026-10-29 16:37Z, 2026-10-30 06:37Z).
+A logged-in page load every ~15 minutes keeps the session alive with no login at all.
 
 Rules it keeps:
   * never submits the login form or a password: if the session has expired it only records that, and the
-    next scan logs in as usual;
+    next scan logs in, or skips BidNet until BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3) have passed since
+    the last fresh login (the status then says until when);
   * skips a tick while a scan holds the run lock, and never holds that lock itself (a held lock would make
     the hourly scan skip its whole run);
   * skips while BidNet is in a robot-check cool-down.
@@ -80,7 +81,8 @@ def check_once() -> dict:
             ses.logged_in = True  # close() then saves the refreshed cookies
             st = _status("alive")
         else:
-            st = _status("expired: next scan logs in")
+            until = bidnet.login_deferred_until()
+            st = _status(f"expired: fresh login deferred until {until}" if until else "expired: next scan logs in")
         ses.close()
         return st
     finally:

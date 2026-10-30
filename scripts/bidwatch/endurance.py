@@ -10,7 +10,8 @@ Every check starts a NEW browser from the saved session file, exactly like each 
   3. document access: open a watched bid's 'Documents & Items' tab and count the attachment links;
   4. save the session back to disk.
 Forced expiries prove recovery: at check 4 the site session cookies are deleted (app-session timeout); at check 8
-every BidNet session cookie incl. the Shibboleth IdP session is deleted (full SSO expiry -> password login).
+every BidNet session cookie incl. the Shibboleth IdP session is deleted (full SSO expiry -> password login; within
+BIDWATCH_BIDNET_LOGIN_GAP_H hours of the last fresh login that login is deferred and the check fails by design).
 A check PASSES when logged in, the list parsed rows, and the documents tab listed >= 1 attachment.
 Results: bids/_watch/debug/endurance.jsonl (one line per check) and bids/_watch/ENDURANCE.md (summary,
 rewritten after every check so a killed container still leaves evidence). Never prints credentials.

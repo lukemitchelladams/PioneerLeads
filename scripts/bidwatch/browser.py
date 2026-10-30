@@ -3,7 +3,8 @@
 Each portal gets a PortalSession. It:
   * loads saved cookies from ~/.brownbison/sessions/<portal>.json (outside the repo),
   * checks whether the session is still logged in (portal-specific check),
-  * logs in again with env-var credentials when it is not, retrying with backoff,
+  * logs in again with env-var credentials when it is not, retrying with backoff (unless the portal's login
+    defers itself: LoginDeferred, e.g. BidNet keeps fresh password logins hours apart; then login_deferred is set),
   * saves the refreshed cookies after every successful login and at close,
   * on any failure, saves a screenshot + HTML to bids/_watch/debug/ so selectors can be fixed.
 """
@@ -13,7 +14,7 @@ import os
 from pathlib import Path
 from typing import Callable
 
-from .common import DEBUG_DIR, SESSION_DIR, LoginBlocked, iso, slug
+from .common import DEBUG_DIR, SESSION_DIR, LoginBlocked, LoginDeferred, iso, slug
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 BrownBisonBidWatch/2.0"
 
@@ -72,6 +73,7 @@ class PortalSession:
         self.is_logged_in_fn = is_logged_in_fn
         self.cred_names = cred_names
         self.logged_in = False
+        self.login_deferred = False  # the last ensure_login() held a fresh login back on purpose (not a failure)
         self.login_note = "no login configured"
 
     # -- credentials --
@@ -83,6 +85,7 @@ class PortalSession:
 
     def ensure_login(self, attempts: int = 3) -> bool:
         """Reuse the saved session if it is still valid; otherwise log in again (with retries)."""
+        self.login_deferred = False
         if not self.login_fn:
             return False
         creds = self.creds()
@@ -106,6 +109,10 @@ class PortalSession:
                     self.save()
                     return True
                 last = "login submitted but logged-in check failed"
+            except LoginDeferred as e:  # held back on purpose, nothing went wrong: no debug dump, no retry
+                self.logged_in, self.login_deferred = False, True
+                self.login_note = str(e) + (f"; previous attempt: {last}" if last else "")
+                return False
             except LoginBlocked as e:
                 self.debug_dump("login-blocked")
                 self.logged_in, self.login_note = False, f"login BLOCKED: {e}"

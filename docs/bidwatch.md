@@ -25,6 +25,13 @@ mid-scan, it re-logs in and re-reads. `--loop` keeps doing this forever:
 
     python3 scripts/bidwatch/run.py --loop --interval 30     # every 30 minutes, 24/7
 
+BidNet paces fresh password logins: fresh logins close together trip its robot check (the 4th in ~6 h did on
+2026-10-30; 3 h apart passed). A saved session is reused at any time, but a new password login is submitted only
+`BIDWATCH_BIDNET_LOGIN_GAP_H` hours (default 3; `0` turns the gap off) after the last one that worked
+(`~/.brownbison/bidnet_last_login`). Inside the gap, a scan whose session expired skips BidNet like a robot-check
+cool-down: the health note reads `login deferred: last fresh login <time>, next allowed after <time>`, earlier
+rows are carried forward and none closed, and the run is not pinged as failed.
+
 A failed login or a page that parses to nothing saves a screenshot + HTML to `bids/_watch/debug/`
 (gitignored) so the selectors can be fixed from the real page.
 

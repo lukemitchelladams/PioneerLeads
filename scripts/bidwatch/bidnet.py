@@ -7,6 +7,10 @@ What it collects every run
   3. Watchlist bids: diff the document list and dates against last run -> ADDENDUM / DATE CHANGE.
   4. When logged in, downloads documents for watched bids into bids/_watch/downloads/bidnet/<id>/.
 
+Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
+once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
+check; inside the gap login() raises LoginDeferred and the scan keeps BidNet's earlier rows (login_deferred_until).
+
 Parsing works on raw HTML with BeautifulSoup so it can be tested offline against saved pages
 (tests/test_bidwatch.py). Selectors are generic on purpose: any link to /solicitations/.../<digits>.
 When a page parses to nothing, the HTML + screenshot go to bids/_watch/debug/ for a selector fix.
@@ -24,8 +28,9 @@ import os
 import time
 
 from . import mailcode
-from .common import (BIDNET_COOLDOWN_FILE, BIDNET_COOLDOWN_H, CODE_FILE, CODE_MARKER_TTL_H, CODE_NEEDED_MARKER,
-                     DOWNLOAD_DIR, STATE_HOME, LoginBlocked, extract_prebid, iso, parse_date)
+from .common import (BIDNET_COOLDOWN_FILE, BIDNET_COOLDOWN_H, BIDNET_LAST_LOGIN_FILE, BIDNET_LOGIN_GAP_H, CODE_FILE,
+                     CODE_MARKER_TTL_H, CODE_NEEDED_MARKER, DOWNLOAD_DIR, STATE_HOME, LoginBlocked, LoginDeferred,
+                     extract_prebid, iso, parse_date)
 
 BASE = "https://www.bidnetdirect.com"
 LOGIN_URL = BASE + "/public/authentication/login"
@@ -133,6 +138,51 @@ def start_cooldown() -> str:
     return until
 
 
+# Fresh password logins close together trip the robot check right after the login form (2026-10-28 23:36Z,
+# 2026-10-29 16:37Z, 2026-10-30 06:37Z = the 4th fresh login in ~6 h; logins 2 h apart passed three times, then
+# the 4th tripped; 3 h later one passed). So a saved session is reused at any time, but a NEW password login waits
+# until BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3) after the last one that worked. Inside the gap login()
+# raises LoginDeferred before the form is touched, and run.py skips BidNet for that scan like a cool-down.
+def login_gap_h() -> float:
+    """Hours between fresh password logins: env BIDWATCH_BIDNET_LOGIN_GAP_H (0 = no gap, max 168), else the default."""
+    try:
+        h = float(os.environ.get("BIDWATCH_BIDNET_LOGIN_GAP_H") or BIDNET_LOGIN_GAP_H)
+    except ValueError:
+        return BIDNET_LOGIN_GAP_H
+    return h if 0 <= h <= 168 else BIDNET_LOGIN_GAP_H
+
+
+def last_fresh_login() -> str | None:
+    try:
+        return BIDNET_LAST_LOGIN_FILE.read_text().strip() or None
+    except OSError:
+        return None
+
+
+def login_deferred_until() -> str | None:
+    """ISO time before which no fresh password login is submitted, or None when one may go ahead now."""
+    last = last_fresh_login()
+    try:
+        t = dt.datetime.fromisoformat(last) if last else None
+    except ValueError:
+        return None  # unreadable file: it must never hold logins back for good
+    if t is None:
+        return None
+    t = t if t.tzinfo else t.replace(tzinfo=dt.timezone.utc)
+    now = dt.datetime.now(dt.timezone.utc)
+    until = t + dt.timedelta(hours=login_gap_h())
+    # a time in the future (clock moved back, hand edit) is ignored for the same reason
+    return iso(until) if t <= now < until else None
+
+
+def record_fresh_login() -> None:
+    try:
+        BIDNET_LAST_LOGIN_FILE.parent.mkdir(parents=True, exist_ok=True)
+        BIDNET_LAST_LOGIN_FILE.write_text(iso())
+    except OSError:
+        pass
+
+
 def login(page, user: str, pw: str) -> None:
     if _marker_expired():
         CODE_NEEDED_MARKER.unlink(missing_ok=True)  # stale: allow one fresh attempt (at most one code email per 6 h)
@@ -150,9 +200,14 @@ def login(page, user: str, pw: str) -> None:
         raise LoginBlocked("BidNet robot check on the login page: no login attempted, cool-down started")
     if _page_logged_in(page):
         return  # single sign-on already restored the session (IdP session still alive): nothing to type
+    deferred = login_deferred_until()
+    if deferred:
+        raise LoginDeferred(f"login deferred: last fresh login {last_fresh_login()}, next allowed after {deferred} "
+                            f"(fresh logins kept {login_gap_h():g} h apart: BidNet's robot check trips on them; "
+                            "the saved session had expired)")
     started = dt.datetime.now(dt.timezone.utc)  # only a code emailed after this moment belongs to this login
     before = page.url
-    _submit_login_window(page, user, pw)
+    sent = _submit_login_window(page, user, pw)
     html = _settle_after_submit(page)
     if BOT_RX.search(html) and not total_count(html):
         start_cooldown()
@@ -187,6 +242,8 @@ def login(page, user: str, pw: str) -> None:
         clear_code()
         if CODE_PROMPT_RX.search(visible_text(html)):
             raise LoginBlocked("BidNet rejected the confirmation code (expired or mistyped); get a fresh one")
+    if sent and _page_logged_in(page):
+        record_fresh_login()  # a password login that worked: the gap to the next one starts now
 
 
 def _creds_sig(user: str, pw: str) -> str:
@@ -250,10 +307,11 @@ def _settle_after_submit(page, timeout_s: float = 25.0, code_prompt_is_final: bo
 LOGIN_TOGGLE_SEL = ["#header_btnLogin", "#loginLinkCustom", "button.loginButton", "a[href='/public/authentication/login']"]
 
 
-def _submit_login_window(page, user: str, pw: str) -> None:
+def _submit_login_window(page, user: str, pw: str) -> bool:
     """The login window (div#loginWindow) is collapsed until the header Login button opens it (seen
     2026-10-20: filling the hidden fields timed out and nothing was submitted). Open it and fill; if the
-    fields still are not visible, set the values and submit the form from JavaScript (same POST, same _csrf)."""
+    fields still are not visible, set the values and submit the form from JavaScript (same POST, same _csrf).
+    Returns True when the password was submitted, False when single sign-on logged us in first (nothing sent)."""
     for sel in LOGIN_TOGGLE_SEL:
         try:
             if page.locator(sel).count():
@@ -267,7 +325,7 @@ def _submit_login_window(page, user: str, pw: str) -> None:
         _fill_first(page, LOGIN_USER_SEL, user)
         _fill_first(page, LOGIN_PASS_SEL, pw)
         _click_first(page, LOGIN_BTN_SEL)
-        return
+        return True
     except Exception:  # noqa: BLE001 - fall back to a scripted submit of the same form
         pass
     try:
@@ -280,6 +338,7 @@ def _submit_login_window(page, user: str, pw: str) -> None:
                 uf.value = u; pf.value = p;
                 if (typeof f.requestSubmit === 'function') f.requestSubmit(); else f.submit();
             }""", [user, pw])
+        return True
     except Exception as e:  # noqa: BLE001
         # 2026-10-20 11:36 UTC: single sign-on restored the session while the login window was being opened, so the
         # form was gone. Logged in is logged in: nothing to submit.
@@ -291,6 +350,7 @@ def _submit_login_window(page, user: str, pw: str) -> None:
             pass
         if not _page_logged_in(page):
             raise
+        return False
 
 
 def visible_text(html: str) -> str:

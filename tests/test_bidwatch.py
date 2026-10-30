@@ -263,6 +263,7 @@ USER, PW = "luke@brownbisonco.com", "s3cret-test-only"
 
 
 KW_HITS = {"n": 0}
+LOGIN_POSTS = {"n": 0}  # every POST to the login endpoint, accepted or not (= a password sent)
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
 HITS2 = {"home": 0, "list": 0, "detail": 0}
@@ -354,6 +355,8 @@ class H(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
         n = int(self.headers.get("Content-Length", 0))
         f = parse_qs(self.rfile.read(n).decode())
+        if self.path.startswith("/public/authentication/login"):
+            LOGIN_POSTS["n"] += 1
         if f.get("j_username") == [USER] and f.get("j_password") == [PW]:
             LOGINS["n"] += 1
             if "device_ok=1" not in (self.headers.get("Cookie") or ""):
@@ -437,6 +440,9 @@ s2 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
 check("second run reuses session (no new login)", s2.ensure_login() and LOGINS["n"] == 2, s2.login_note)
 s2.close()
 SESSIONS.clear()  # server expires every session (timeout)
+# a fresh login that worked starts the login gap (default 3 h); like the cool-down file, each test that needs a
+# fresh login clears it first so the tests stay independent (the gap itself is tested after the cool-down)
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
 s3 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
 check("expired session -> automatic re-login, device already confirmed (no third code)",
       s3.ensure_login() and LOGINS["n"] == 3 and CODES["sent"] == 2, (s3.login_note, LOGINS, CODES))
@@ -454,6 +460,7 @@ bidnet.CO_TABS = _tabs
 s3.close()
 SESSIONS.clear()  # the session times out again; this time the login goes through a slow single-sign-on hop
 os.environ["FAKE_SSO_HOP_MS"] = "4500"
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
 s4 = PortalSession(b, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
 check("slow SSO redirect chain (IdP posts back by script after 4.5 s): login waits for it, attempt 1 succeeds",
       s4.ensure_login() and s4.login_note == "logged in (attempt 1)", s4.login_note)
@@ -585,6 +592,65 @@ check("during cool-down BidNet is not contacted and its rows are carried forward
 common.BIDNET_COOLDOWN_FILE.unlink()
 check("cool-down cleared", bidnet.cooldown_until() is None)
 
+# fresh-login gap (2026-10-30 06:37Z: the 4th fresh login in ~6 h tripped the robot check): a valid saved session is
+# reused at any time; an expired one gets no new password until BIDWATCH_BIDNET_LOGIN_GAP_H (default 3) hours after
+# the last fresh login, and meanwhile BidNet is skipped like a cool-down
+import datetime as _dtg  # noqa: E402
+
+os.environ.pop("BIDWATCH_BIDNET_LOGIN_GAP_H", None)
+
+
+def _set_last_login(hours_ago: float) -> str:
+    t = common.iso(common.now_utc() - _dtg.timedelta(hours=hours_ago))
+    common.BIDNET_LAST_LOGIN_FILE.write_text(t)
+    return t
+
+
+_t1h = _set_last_login(1)
+_p0, _l0 = LOGIN_POSTS["n"], HITS2["list"]
+r5b = run.scan(["bidnet"])
+_hb = r5b["health"]["bidnet"]
+check("login gap (c): a still-valid session is reused although the last fresh login was 1 h ago; no password sent",
+      _hb["logged_in"] and _hb["login_note"] == "session reused" and LOGIN_POSTS["n"] == _p0 and HITS2["list"] > _l0
+      and not _hb.get("login_deferred") and common.BIDNET_LAST_LOGIN_FILE.read_text() == _t1h, (_hb["login_note"], LOGIN_POSTS))
+SESSIONS.clear()  # BidNet times the session out
+_prev_bn = {k for k in json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())["bids"] if k.startswith("bidnet:")}
+_p0, _l0, _d0 = LOGIN_POSTS["n"], HITS2["list"], HITS2["detail"]
+r5c = run.scan(["bidnet"])
+_hc = r5c["health"]["bidnet"]
+_until = common.iso(_dtg.datetime.fromisoformat(_t1h) + _dtg.timedelta(hours=3))
+_rep = (TMP / "REPORT_FILE.json").read_text()
+check("login gap (a): expired session + last fresh login 1 h ago -> no POST to the login endpoint, lists and details "
+      "not read", LOGIN_POSTS["n"] == _p0 and HITS2["list"] == _l0 and HITS2["detail"] == _d0 and not _hc["logged_in"],
+      (LOGIN_POSTS, HITS2, _hc["login_note"]))
+check("login gap (a): health and report say the login was deferred and when the next one is allowed",
+      _hc["login_note"].startswith(f"login deferred: last fresh login {_t1h}, next allowed after {_until}")
+      and _hc.get("login_deferred") is True and f"next allowed after {_until}" in _rep
+      and "BLIND: bidnet (login deferred on purpose)" in _rep, (_hc["login_note"], _until))
+check("login gap (a): earlier BidNet rows carried forward, none marked closed, last-login time untouched",
+      len(_prev_bn) == 3 and all(r5c["found"].get(k, {}).get("carried_forward") for k in _prev_bn) and not r5c["closed"]
+      and _hc.get("carried_forward") and common.BIDNET_LAST_LOGIN_FILE.read_text() == _t1h,
+      (_prev_bn, list(r5c["closed"]), _hc))
+_t4h = _set_last_login(4)
+_p0, _n0 = LOGIN_POSTS["n"], LOGINS["n"]
+r5d = run.scan(["bidnet"])
+_hd = r5d["health"]["bidnet"]
+_last = common.BIDNET_LAST_LOGIN_FILE.read_text()
+check("login gap (b): last fresh login 4 h ago -> the password login goes ahead and BidNet is read again",
+      LOGIN_POSTS["n"] == _p0 + 1 and LOGINS["n"] == _n0 + 1 and _hd["logged_in"] and _hd["count"] == 3
+      and not _hd.get("carried_forward") and not _hd.get("login_deferred"), (LOGIN_POSTS, _hd))
+check("login gap (b): a fresh login that worked updates the last-login time",
+      _last > _t4h and (common.now_utc() - _dtg.datetime.fromisoformat(_last)).total_seconds() < 600, (_t4h, _last))
+_set_last_login(1)
+_gap = []
+for _v in ("0", "0.5", "5", "nonsense", "-2"):
+    os.environ["BIDWATCH_BIDNET_LOGIN_GAP_H"] = _v
+    _gap.append(bool(bidnet.login_deferred_until()))
+os.environ.pop("BIDWATCH_BIDNET_LOGIN_GAP_H")
+check("BIDWATCH_BIDNET_LOGIN_GAP_H: 0 turns the gap off, a gap shorter than 1 h has passed, 5 h holds, a bad value "
+      "means the 3 h default", _gap == [False, False, True, True, True], _gap)
+common.BIDNET_LAST_LOGIN_FILE.unlink()
+
 # A bid that became watched after its documents were first listed: its files are fetched because they are
 # missing on disk, then filed into the bid folder the watchlist names (CLAUDE.md rule 0c).
 _REPO0 = run.REPO
@@ -618,6 +684,7 @@ run.REPO = _REPO0
 # code-review fixes (2026-10-20 07:30 UTC)
 # (c) a stale password is submitted once, then held back; new credentials are tried at once
 SESSIONS.clear()
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
 os.environ["BIDNET_PASS"] = "stale-password"
 b2 = Browser()
 s7 = PortalSession(b2, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
@@ -694,6 +761,13 @@ for _label, _enrich in (("thin page", lambda ses, b: {**b, "documents": [], "pre
     _r = _found["bidnet:9"]
     check(f"{_label}: earlier documents and pre-bid are kept (no false addendum next scan)",
           _r.get("documents") == _old["documents"] and _r.get("prebid") == _old["prebid"], _r)
+_found = {"bidnet:8": {"source": "bidnet", "id": "8", "title": "HVAC Maintenance Services", "url": "u"}}
+_old8 = {**_found["bidnet:8"], "documents": [{"name": "RFP.pdf", "url": "u"}], "prebid": {"date": "2026-11-02", "mandatory": True}}
+run._enrich_and_download(_ses, _types.SimpleNamespace(enrich=lambda ses, b: 1 / 0), _found, "bidnet", profiles,
+                         run._WatchSet([]), {"bidnet:8": _old8}, True, {}, _h)
+check("logged out (e.g. a mid-scan re-login deferred): an unwatched match is not opened but keeps its earlier detail",
+      _found["bidnet:8"].get("prebid") == _old8["prebid"] and _found["bidnet:8"].get("documents") == _old8["documents"],
+      _found["bidnet:8"])
 
 # second review pass (2026-10-20 07:50 UTC)
 (TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
@@ -752,6 +826,7 @@ s12.close()
 b3.close()
 
 os.environ["FAKE_MISSING_DOC"] = "1"
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)  # the session expired at the robot-check test: log in again
 r13 = run.scan(["bidnet"])
 check("a document that does not download is reported (and tried again next scan)",
       any("not downloaded yet" in e for e in r13["health"]["bidnet"]["errors"]), r13["health"]["bidnet"]["errors"])
@@ -968,7 +1043,22 @@ run.scan = lambda sources, enrich_details=True: {"health": {
 _rc, _ = _main_rc(["--sources", "samgov,bonfire"])
 check("degraded scan exits 3, pings /fail; the healthy source still pings, the blind one does not",
       _rc == 3 and [h[1] for h in HITS] == ["/scan/start", "/scan/fail", "/bonfire"], (_rc, HITS))
-for _k in ("HC_PING_SCAN", "HC_PING_SAMGOV", "HC_PING_BONFIRE"):
+HITS.clear()
+_ka = os.environ.get("BIDWATCH_KEEPALIVE")
+os.environ.update({"HC_PING_BIDNET": _mon + "/bidnet", "BIDWATCH_KEEPALIVE": "0"})  # never start the real keeper here
+run.scan = lambda sources, enrich_details=True: {"health": {
+    "bidnet": {"count": 3, "reachable": True, "carried_forward": True, "blind": True, "login_deferred": True,
+               "login_note": "login deferred: last fresh login x, next allowed after y"},
+    "samgov": {"count": 5, "reachable": True}}}
+_rc, _ = _main_rc(["--sources", "bidnet,samgov"])
+check("BidNet login deferred = a deliberate skip: exit 0 and a success ping, no /fail; BidNet's own check is not pinged",
+      _rc == 0 and [h[1] for h in HITS] == ["/scan/start", "/scan", "/samgov"] and "skipped=['bidnet']" in HITS[1][2],
+      (_rc, HITS))
+if _ka is None:
+    del os.environ["BIDWATCH_KEEPALIVE"]
+else:
+    os.environ["BIDWATCH_KEEPALIVE"] = _ka
+for _k in ("HC_PING_SCAN", "HC_PING_SAMGOV", "HC_PING_BONFIRE", "HC_PING_BIDNET"):
     del os.environ[_k]
 run._git, run._branch, run.scan, run._heartbeat, sys.argv = _saved
 _ps.shutdown()

@@ -17,7 +17,9 @@ Every cycle:
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in.
   6. Write REPORT.md, open_bids.json, health.json. A session that expired is re-logged-in next cycle
-     (and mid-cycle if a page bounces to a login screen).
+     (and mid-cycle if a page bounces to a login screen). BidNet: a fresh password login only every
+     BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3); inside that gap an expired session means BidNet is skipped
+     like a robot-check cool-down (earlier rows carried forward, none closed), a deliberate skip, not a /fail.
 Credentials: env vars only (see docs/bidwatch.md). Nothing secret is printed or committed.
 """
 from __future__ import annotations
@@ -159,7 +161,14 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                     ses = PortalSession(br, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
-                    rows, errs, totals = bidnet.collect_open(ses, keywords)
+                    if ses.login_deferred:
+                        # session expired and the last fresh login is too recent to send the password again (fresh
+                        # logins close together trip the robot check): read nothing, like a cool-down, so the list
+                        # counts as incomplete and the earlier rows are carried forward below, none marked closed
+                        h["login_deferred"] = True
+                        rows, errs, totals = {}, [], {}
+                    else:
+                        rows, errs, totals = bidnet.collect_open(ses, keywords)
                     # the lists are public, but documents are members-only: if the session lapsed during the list
                     # walk, log in again before the detail pass (the URL is no signal after a sign-on redirect)
                     if ses.creds() and ses.logged_in and not bidnet._page_logged_in(ses.page):
@@ -469,8 +478,10 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if not (b["profiles"] or is_w):
             continue
         # Public BidNet detail pages add nothing but the closing time (everything else is members-only),
-        # so without a login only watched bids get opened.
+        # so without a login (e.g. a mid-scan re-login deferred) only watched bids get opened; the rest keep
+        # what an earlier scan read, so the next logged-in scan does not report their pre-bid as a change.
         if source == "bidnet" and not ses.logged_in and not is_w:
+            found[k] = _keep_detail(b, old)
             continue
         if recently or blocked:
             found[k] = _keep_detail(b, old)
@@ -565,7 +576,8 @@ def render(r: dict) -> str:
     if r["changed"]:
         head.append(f"{len(r['changed'])} changed (addenda/dates)")
     if blind:
-        head.append("BLIND: " + ", ".join(blind))
+        head.append("BLIND: " + ", ".join(s + (" (login deferred on purpose)" if h[s].get("login_deferred") else "")
+                                          for s in blind))
     if carried:
         head.append("not scanned this run (previous results kept): " + ", ".join(carried))
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
@@ -819,20 +831,24 @@ def main() -> int:
             filed = r.get("filed", [])
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
             ok = any(v["count"] for v in r["health"].values())
+            # a BidNet login deferred to keep fresh logins apart is a deliberate skip, not a fault: it does not make
+            # the run degraded, but the skipped source gets no success ping of its own (its data is not fresh)
+            skipped = [s for s, v in r["health"].items() if v.get("login_deferred")]
             # sources that returned nothing fresh this run (blind, carried forward, cool-down): exit 3 so a
             # scheduler/monitor sees a degraded run instead of a green one
-            degraded = [s for s, v in r["health"].items() if not v.get("not_scanned_this_run")
+            degraded = [s for s, v in r["health"].items() if not v.get("not_scanned_this_run") and s not in skipped
                         and (v.get("carried_forward") or not v["reachable"] or (not v["count"] and s != "dibbs"))]
             logins = {s: v.get("login_note") for s, v in r["health"].items()}
         except Exception:  # noqa: BLE001 - never let the loop die
             traceback.print_exc()
-            ok, logins, degraded = False, {}, ["scan crashed"]
+            ok, logins, degraded, skipped = False, {}, ["scan crashed"], []
         push = git_push_results(started, filed) if a.push else "not pushed (--push not set)"
-        print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} sync={sync} push={push} logins={logins}", flush=True)
-        summary = f"ok={ok} degraded={degraded} push={push} logins={logins}"
+        print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} skipped={skipped} sync={sync} push={push} "
+              f"logins={logins}", flush=True)
+        summary = f"ok={ok} degraded={degraded} skipped={skipped} push={push} logins={logins}"
         ping("scan", "" if ok and not degraded and not str(push).startswith("push FAILED") else "/fail", summary)
         for src in ("bidnet", "samgov", "bonfire", "dibbs", "coloradovss"):
-            if src in sources and ok and src not in degraded:
+            if src in sources and ok and src not in degraded and src not in skipped:
                 ping(src, "", summary)
         _heartbeat(cycle=cycle, started=started, ok=ok, sync=sync, push=push, logins=logins,
                    next_at=iso() if not a.loop else None, interval_min=a.interval)
