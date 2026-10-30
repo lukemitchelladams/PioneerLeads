@@ -269,6 +269,14 @@ HITS2 = {"home": 0, "list": 0, "detail": 0}
 ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
 
 
+def _ahead(days: int) -> str:
+    """Fake-site dates relative to today, so fixtures never age past their closing date (the list fixture's
+    fixed 10/28/2026 closing made 'robot check on the list' fail from 2026-10-29)."""
+    import datetime as _dt
+    return (_dt.date.today() + _dt.timedelta(days=days)).strftime("%m/%d/%Y")
+
+
+
 class H(http.server.BaseHTTPRequestHandler):
     def log_message(self, *a):
         pass
@@ -307,14 +315,14 @@ class H(http.server.BaseHTTPRequestHandler):
                 return self._send(ROBOT)
             if "selectedContent=STUCK" in p:  # every page the same rows plus a Next link, like a disabled last-page link
                 return self._send("<span class='simpleResultsNumResults'>2 Open Solicitations</span><table>"
-                                  "<tr><td><a href='/colorado/x/solicitations/A/0000600001'>Stuck A</a></td><td>Closing 11/20/2026</td></tr>"
-                                  "<tr><td><a href='/colorado/x/solicitations/B/0000600002'>Stuck B</a></td><td>Closing 11/20/2026</td></tr>"
+                                  f"<tr><td><a href='/colorado/x/solicitations/A/0000600001'>Stuck A</a></td><td>Closing {_ahead(21)}</td></tr>"
+                                  f"<tr><td><a href='/colorado/x/solicitations/B/0000600002'>Stuck B</a></td><td>Closing {_ahead(21)}</td></tr>"
                                   "</table><a class='next' href='javascript:;'>Next</a>")
             if "selectedContent=BROKEN" in p:
                 return self._send("<h1>Service unavailable</h1>", 503)
             if "/page2" in p:
                 return self._send("<table><tr><td><a href='/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000500002'>"
-                                  "On-Call Commercial Plumbing Services RFQ 2126</a></td><td>Closing 10/28/2026</td></tr></table>")
+                                  f"On-Call Commercial Plumbing Services RFQ 2126</a></td><td>Closing {_ahead(21)}</td></tr></table>")
             if "/page3" in p:
                 return self._send("<span class='simpleResultsNumResults'>3 Open Solicitations</span>")
             if "AGGREGATE" in p:
@@ -324,15 +332,15 @@ class H(http.server.BaseHTTPRequestHandler):
                 return self._send("<span class='simpleResultsNumResults'>0 Open Solicitations</span>")
             return self._send("<span class='simpleResultsNumResults'>3 Open Solicitations</span>"
                               "<table><tr><td><a href='/colorado/town-of-castle-rock/solicitations/HVAC-Maintenance/0000500001'>HVAC Maintenance Services</a>"
-                              "</td><td>Closing 11/20/2026</td></tr><tr><td><a href='/colorado/x/solicitations/Road-Paving/0000500003'>Road Paving 2027</a></td>"
-                              "<td>Closing 11/01/2026</td></tr></table><a class='next' href='/colorado/solicitations/open-bids/page2'>Next</a>")
+                              f"</td><td>Closing {_ahead(21)}</td></tr><tr><td><a href='/colorado/x/solicitations/Road-Paving/0000500003'>Road Paving 2027</a></td>"
+                              f"<td>Closing {_ahead(2)}</td></tr></table><a class='next' href='/colorado/solicitations/open-bids/page2'>Next</a>")
         if "/solicitations/" in p:
             HITS2["detail"] += 1
             if os.environ.get("FAKE_ROBOT_DETAIL"):
                 return self._send(ROBOT)
             docs = "<a href='/dl/rfq.pdf'>RFQ.pdf</a>" + ("<a href='/dl/addendum1.pdf'>Addendum 1.pdf</a>" if os.environ.get("FAKE_ADDENDUM") else "") \
                 + ("<a href='/dl/missing.pdf'>Missing.pdf</a>" if os.environ.get("FAKE_MISSING_DOC") else "")
-            return self._send(f"<h1>Bid</h1><div>Closing Date 11/20/2026</div><p>MANDATORY pre-bid site walk on 11/02/2026 at 9 AM.</p>{docs}")
+            return self._send(f"<h1>Bid</h1><div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>{docs}")
         if p.startswith("/dl/missing"):
             return self._send("not found", 404)
         if p.startswith("/dl/"):
