@@ -1594,6 +1594,12 @@
       "verdict": "NO",
       "why": "Planning/professional consulting services; not a Brown Bison trade. Addendum 1 posted 2026-10-30 00:35Z scan; no action.",
       "at": "2026-10-30T01:25:00Z"
+    },
+    "894975db261c48d8b15fdd218957a0aa": {
+      "name": "USDA Forest Service 1240LT27Q0029 Lowline Area Burned Fence Construction Project (Gunnison, CO; PSC 5660; NAICS 238990; total SB set-aside; closes 2027-12-03 per SAM bulk feed)",
+      "verdict": "NO",
+      "why": "Remote post-and-wire range fence rebuild on National Forest land after the Lowline Fire: field construction outside our trades (rule 8), no fence sub in our network, Gunnison is ~4h from Broomfield. No documents in hand (sam.gov blocked from cloud).",
+      "at": "2026-10-30T06:25:00Z"
     }
   },
   "watched": {
@@ -1779,6 +1785,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T05:25:00Z: GovTribe still blocked (~73h). HQ 04:36Z full scan: BidNet logged in 579/80, SAM 101, VSS 58/2, Bonfire no creds, DIBBS stale; no NEW, no changes. Inbox: nothing unseen (16 threads); no CRM brief; no new Sent. FACT Water (El Paso) request out since 02:39Z, no reply yet.",
+  "last_hourly_check": "2026-10-30T06:25:00Z: GovTribe still blocked (~74h). HQ 05:36Z partial scan (SAM 102, VSS 58/2; BidNet 579/80 kept from 04:36Z; Bonfire no creds; DIBBS stale): 1 NEW = USFS Lowline burned fence construction, Gunnison (SAM 894975db…) -> NO. Inbox: nothing unseen (16 threads); no CRM brief; no new Sent; no FACT Water reply yet.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
