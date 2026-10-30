@@ -1815,6 +1815,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T12:33:00Z: GovTribe still blocked (~80h). HQ 11:37Z SAM+VSS pass (BidNet 580/80 kept from 09:36Z, next login 12:36Z; Bonfire no creds; DIBBS stale): SAM 103, VSS 58/2; no NEW, no changes. Inbox: FACT Water (Conor Parrish) REPLIED on El Paso 26-074 at 11:32Z (good fit, can price; questions on County relationship and odds vs incumbent Nalco) -> pipeline/sub-outreach updated, HQ to answer; 6 BidNet closing reminders (all known: Douglas UPS and El Paso 26-074 GO; Arapahoe turfgrass, Castle Rock chemicals, Jeffco dome glass, El Paso 26-058 NO). No CRM brief; no new Sent.",
+  "last_hourly_check": "2026-10-30T13:27:00Z: GovTribe still blocked (~81h). NO HQ SCAN since 11:37Z (the 12:36Z pass did not land): BidNet last login 09:36Z (stale), SAM/VSS last 11:37Z, Bonfire no creds, DIBBS stale. No new matches in the last data. Inbox: 1 new = Microsoft DMARC report (noise, seen); Conor Parrish's 11:32Z reply on El Paso 26-074 still unanswered by HQ (no new Sent); no CRM brief. HQ session status 12:46Z: BLOCKED waiting on a Gmail Reply permission (its answer to Conor); Luke must approve or deny it in the HQ session before HQ's scans resume.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
