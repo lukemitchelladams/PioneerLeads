@@ -205,3 +205,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-10-30 01:21Z hourly (read-only)
 - Nothing unseen (17 threads, all logged). No CRM brief, no bounces. FACT Water email for El Paso still not sent.
+- 2026-10-30 02:25Z (hourly, read-only): 17 threads newer_than:1d, all 17 already seen; nothing new. No CRM brief. Sent (HQ, 10/29): Weld SD6 Franklin coiling grille to 3 door subs; Carbon Valley mechanical PM to 6 HVAC subs; Accutemp (Weld RTU logistics); Wash On Wheels; Silas x2 (Trinidad submitted; El Paso referral). No email to FACT Water (Conor Parrish) yet.

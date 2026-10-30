@@ -885,7 +885,7 @@
       "at": "2026-10-26T19:33:00Z"
     },
     "8f0e3b72596a4714a555ecd5eb0e899b": {
-      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
+      "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
       "verdict": "WATCH",
       "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
       "at": "2026-10-26T20:28:00Z"
@@ -941,7 +941,7 @@
     "5627ee97e4ce40e2af289e42601e4afb": {
       "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (SAM notice id; same as GovTribe 8f0e3b72596a4714a555ecd5eb0e899b)",
       "verdict": "WATCH",
-      "why": "WATCH (alias of 8f0e3b72\u2026): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
+      "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
       "at": "2026-10-27T06:26:07+00:00"
     },
     "bidnet:2720966072": {
@@ -1779,6 +1779,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T01:25:00Z: GovTribe still blocked. HQ 00:35Z full scan: BidNet logged in 579/80, SAM 101, VSS 58/2; no NEW; 2 addenda on NO bids (Fire Alarm Inspection & Testing 0000439558 Addendum #2; On-Call Planner 0000438988 Addendum 1). Inbox: nothing unseen; no CRM brief. FACT Water (El Paso) pricing email still unsent.",
+  "last_hourly_check": "2026-10-30T02:25:00Z: GovTribe still blocked (~70h). HQ 01:36Z partial scan (SAM 101 +36 bulk, VSS 58/2; BidNet/Bonfire/DIBBS kept from 00:35Z): no NEW, no changes. Inbox: nothing unseen (17 threads); no CRM brief. Sent: Weld SD6 door subs (3), Carbon Valley HVAC subs (6), Accutemp, WOW, Silas x2. FACT Water (El Paso) pricing email still unsent.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
