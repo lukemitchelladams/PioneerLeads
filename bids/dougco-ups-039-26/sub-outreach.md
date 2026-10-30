@@ -21,3 +21,15 @@ Email text: ops/outbox/2026-10-28b/ups.txt (pricing by Mon 11/02 noon).
 - 2026-10-28 21:41Z (HQ): Q&A Document 1 forwarded to the same 5 firms (ops/outbox/2026-10-28c/ups-qa.txt).
 - 2026-10-28 22:21Z (hourly scan): Q&A 1 read; key answers added to README (full emergency coverage required, 3-hour response, 3 techs within 75 miles, licensing waived for manufacturer/industry certs, single-PM cost per location column, annual PM billing). No sub replies yet.
 - 2026-10-30 08:18 MT (HQ): follow-up to the same 5 UPS firms (msg 1a18d2cca0fa4c4f, IFB + Exhibit A contract re-attached): bids due Wed 11/04, sub pricing needed by Mon 11/02 noon. No replies yet as of 14:30Z.
+
+## Added 2026-10-30 (subagent search; emails read from each company's own site)
+| Company | City | Email | Phone | Fit |
+|---|---|---|---|---|
+| Supportek | Denver | jordan@supportek.com | 303-892-6500 | Denver UPS sales/service/batteries, 30 yrs; service via Unified Power |
+| Colorado Uninterruptible Power Services | Colorado | service@coupspower.com | 303-321-5089 | Colorado UPS service + batteries, 24/7 |
+| Titan Power | Denver branch (HQ Chandler AZ) | info@titanpower.com | 800-509-6170 | All major brands; confirm a tech within 75 mi |
+| DCS Data Center Solutions | Long Beach CA (serves Denver) | sales@dcentersolutions.com | 916-304-1535 | "Authorized Service Partner for UPS and critical power"; confirm nearest tech |
+| Critical Facilities Technology | Arvada | thetes@cft.tech | 303-968-9840 | Critical power maintenance; confirm UPS |
+Phone/form only: Current Power Services, Colorado Springs 719-258-9820 (Mitsubishi/Gamatronics authorized; site dated 2012); Computer Sites Inc, Denver 303-871-0550 (Eaton-certified UPS PM).
+
+- 2026-10-30 ~08:25 MT (HQ): pricing request to the 5 firms above (msg 1a18d3d01760bf24; IFB, Q&A 1 and Exhibit A attached; ops/outbox/2026-10-30/ups-new.txt). Pricing by Mon 11/02 noon.

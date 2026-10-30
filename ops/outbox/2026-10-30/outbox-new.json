@@ -1,0 +1,34 @@
+[
+  {
+    "key": "ups-new",
+    "subject": "Douglas County UPS maintenance (IFB 039-26): sub pricing",
+    "bcc": [
+      "jordan@supportek.com",
+      "service@coupspower.com",
+      "info@titanpower.com",
+      "sales@dcentersolutions.com",
+      "thetes@cft.tech"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440339/IFB 039-26 SEMI-ANNUAL MAINTENANCE for UNINTERRUPTIBLE POWER SUPPLY _UPS_.pdf",
+      "bids/_watch/downloads/bidnet/0000440339/Q_A Document 1.pdf",
+      "bids/_watch/downloads/bidnet/0000440339/Exhibit A _ Public Contract for Services.docx"
+    ],
+    "body_file": "ops/outbox/2026-10-30/ups-new.txt"
+  },
+  {
+    "key": "door-new",
+    "subject": "Weld SD6 Franklin MS coiling grille (WCSD6-27-257-1014): sub pricing",
+    "bcc": [
+      "quote@goldlabelspecialties.com",
+      "candmgaragedoorsllc@gmail.com",
+      "frontrangeohd@hotmail.com"
+    ],
+    "files": [
+      "bids/weldsd6-coiling-door-franklin/docs/front.docx",
+      "bids/weldsd6-coiling-door-franklin/docs/contract sample.pdf",
+      "bids/weldsd6-coiling-door-franklin/docs/contract approval.docx"
+    ],
+    "body_file": "ops/outbox/2026-10-30/door-new.txt"
+  }
+]

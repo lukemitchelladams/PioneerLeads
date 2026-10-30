@@ -1,0 +1,35 @@
+[
+  {
+    "key": "ups-fu",
+    "thread": "1a184488a14db671",
+    "subject": "Re: Douglas County UPS maintenance (IFB 039-26): sub pricing",
+    "bcc": [
+      "info@unitedpowerups.com",
+      "sales@ore-power.com",
+      "info.denver@resapower.com",
+      "info@nationwidepower.com",
+      "sales@mcfintl.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440339/IFB 039-26 SEMI-ANNUAL MAINTENANCE for UNINTERRUPTIBLE POWER SUPPLY _UPS_.pdf",
+      "bids/_watch/downloads/bidnet/0000440339/Exhibit A _ Public Contract for Services.docx"
+    ],
+    "body_file": "ops/outbox/2026-10-30/ups-fu.txt"
+  },
+  {
+    "key": "door-fu",
+    "thread": "1a18968917c3daad",
+    "subject": "Re: Weld SD6 Franklin MS coiling grille (WCSD6-27-257-1014): sub pricing",
+    "bcc": [
+      "sales@frontrangeraynor.com",
+      "service@coloradocommercialdoors.com",
+      "sales@donsgd.com"
+    ],
+    "files": [
+      "bids/weldsd6-coiling-door-franklin/docs/front.docx",
+      "bids/weldsd6-coiling-door-franklin/docs/contract sample.pdf",
+      "bids/weldsd6-coiling-door-franklin/docs/contract approval.docx"
+    ],
+    "body_file": "ops/outbox/2026-10-30/door-fu.txt"
+  }
+]

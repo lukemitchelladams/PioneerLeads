@@ -18,5 +18,48 @@
       "4881_001 SDS Sheet.pdf",
       "4882_001 SDS Sheet.pdf"
     ]
+  },
+  "ups-fu": {
+    "id": "1a18d2cca0fa4c4f",
+    "threadId": "1a184488a14db671",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "IFB 039-26 SEMI-ANNUAL MAINTENANCE for UNINTERRUPTIBLE POWER SUPPLY _UPS_.pdf",
+      "Exhibit A _ Public Contract for Services.docx"
+    ]
+  },
+  "door-fu": {
+    "id": "1a18d2cd80e88ef7",
+    "threadId": "1a18968917c3daad",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "front.docx",
+      "contract sample.pdf",
+      "contract approval.docx"
+    ]
+  },
+  "ups-new": {
+    "id": "1a18d3d01760bf24",
+    "threadId": "1a18d3d01760bf24",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "IFB 039-26 SEMI-ANNUAL MAINTENANCE for UNINTERRUPTIBLE POWER SUPPLY _UPS_.pdf",
+      "Q_A Document 1.pdf",
+      "Exhibit A _ Public Contract for Services.docx"
+    ]
+  },
+  "door-new": {
+    "id": "1a18d3d0b17b1e65",
+    "threadId": "1a18d3d0b17b1e65",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "front.docx",
+      "contract sample.pdf",
+      "contract approval.docx"
+    ]
   }
 }

@@ -38,3 +38,13 @@ Thanks Team,
 - 2026-10-29 ~20:2x MT (HQ): first request to 3 door subs with the bid documents attached.
 - 2026-10-30 08:18 MT (HQ): follow-up to the same 3 firms; asks them to meet at the Mon 11/02 10:00 mandatory walk, otherwise Luke walks it and sends photos/measurements; pricing by Fri 11/06.
 - 2026-10-30 14:30Z (hourly scan, read-only): file created from HQ's records; no replies or bounces yet. Luke must plan to attend the walk himself unless a sub confirms by Sunday.
+
+## Added 2026-10-30 (subagent search; emails read from each company's own site)
+| Company | City | Email | Phone | Fit |
+|---|---|---|---|---|
+| Gold Label Specialties (Gold Label Door) | Denver 80221 | quote@goldlabelspecialties.com | 303-279-7234 | Site lists coiling doors, security grilles, fire doors/curtains; best fit (~55 mi) |
+| C & M Garage Doors | Loveland/Greeley | candmgaragedoorsllc@gmail.com | 970-663-7335 | Residential + commercial, local; grilles unconfirmed |
+| Front Range Overhead Door & Service | Fort Collins | frontrangeohd@hotmail.com | 970-329-5376 | Commercial install/repair; rolling doors not mentioned |
+Phone/form only: Overhead Door Co. of Fort Collins 970-493-2345 (Weld/Larimer; rolling + fire-rated); Nelson Overhead Door, Fort Collins 970-213-4070 (fire-rated, rolling counter shutters); Thompson Garage Door, Greeley 970-356-3031 (rolling steel, fire-rated); Greeley Garage Door Repair by Mike 970-673-0951.
+
+- 2026-10-30 ~08:25 MT (HQ): pricing request to the 3 firms above (msg 1a18d3d0b17b1e65; bid docs attached; ops/outbox/2026-10-30/door-new.txt): attend Mon 11/02 10:00 walk or price from our photos by Fri 11/06.
