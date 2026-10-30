@@ -1618,6 +1618,12 @@
       "verdict": "NO",
       "why": "Federal electrical relay part buy (FSC 59), not a Jones Bearing FSC and no quantities in hand (rule 9); no profile match.",
       "at": "2026-10-30T07:30:00Z"
+    },
+    "bidnet:444200607667": {
+      "name": "CDOT Region 4 - US 85 Chipseal (BidNet aggregate 444200607667; closing moved 2026-11-05 -> 2026-11-12)",
+      "verdict": "NO",
+      "why": "Roadway chipseal = heavy civil (rule 8); no profile match.",
+      "at": "2026-10-30T10:25:00Z"
     }
   },
   "watched": {
@@ -1803,6 +1809,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T09:25:00Z: GovTribe still blocked (~77h). HQ 08:37Z SAM+VSS pass (BidNet held since the 06:37Z robot check, next login 09:36Z; Bonfire no creds; DIBBS stale): SAM 102, VSS 58/2; no NEW, no changes. Inbox: nothing unseen (17 threads); no CRM brief; no new Sent; no FACT Water reply yet.",
+  "last_hourly_check": "2026-10-30T10:25:00Z: GovTribe still blocked (~78h). HQ 09:36Z full scan: BidNet back, logged in (attempt 1) 580/80, SAM 102, VSS 58/2, Bonfire no creds, DIBBS stale; no NEW, no documents; only change = CDOT US 85 chipseal closing moved (non-match, NO). Inbox: 1 new = Google DMARC report (noise, seen); no CRM brief; no new Sent; no FACT Water reply yet. HQ next BidNet login 12:36Z (3h spacing).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
