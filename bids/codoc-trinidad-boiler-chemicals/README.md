@@ -12,6 +12,9 @@ Source: GovTribe (Colorado VSS / BidNet cdoc). Docs in docs/: DQ, Exhibit A (SOW
 | Term | 1 year + up to four 1-year renewals; start ~2026-11-05 |
 | Contact | Jennifer Garvin, jennifer.garvin@state.co.us |
 
+## Status 2026-10-30: WITHDRAWN (Luke)
+H2 Global withdrew its pricing (Silas told Luke by phone). Silas offered another company to call, but it was too late to get a new price, so Brown Bison withdrew its quote. Not winnable. Earlier status below for the record.
+
 ## Status 2026-10-26: GO (walk) per Luke
 Luke reopened this 2026-10-26. Per MOD 2 (read by HQ) the mandatory site visit is now **Tue 2026-10-27 10:00**; Luke will not attend, a water-treatment sub's technician represents Brown Bison (CDOC, Jennifer Garvin 10/26: the attendee writes the company name on the attendance log and emails a signed Exhibit G Consent to Search + ID copy first, sec. 4 p. 2). Sub outreach and replies: `bids/cdoc-tcf-boiler-water/sub-outreach.md`. Quote due 2026-10-29 17:00 on BidNet.
 
