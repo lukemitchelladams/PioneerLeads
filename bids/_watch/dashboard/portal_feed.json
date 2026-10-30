@@ -2831,7 +2831,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/988c00a2123941f29940c5cbcdb093b5/view"
  },
  {
@@ -2953,6 +2953,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/ef42fcf29ca7449db6a4146acf468d19/view"
+ },
+ {
+  "key": "samgov:894975db261c48d8b15fdd218957a0aa",
+  "source": "samgov",
+  "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA FOREST SERVICE-SPOC IM",
+  "title": "Lowline Area Burned Fence Construction Project",
+  "sol": "1240LT27Q0029",
+  "closing": "2027-12-03",
+  "posted": "2026-10-29",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view"
  },
  {
   "key": "samgov:031da2a2b09f4488ae95045518da7098",
