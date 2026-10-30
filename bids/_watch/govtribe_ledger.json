@@ -1773,6 +1773,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-29T23:25:00Z: GovTribe still blocked. HQ 22:35Z full scan: BidNet logged in 581/82, SAM 102, VSS 60/3; 1 NEW = DOI sources sought tree/debris removal at CUGA (KY/TN), NO. Inbox: nothing unseen; no CRM brief. TCF DQ closed 17:00 MDT (submitted ~13:00). FACT Water (El Paso) pricing email not yet sent by HQ as of 23:25Z.",
+  "last_hourly_check": "2026-10-30T00:25:00Z: GovTribe still blocked. HQ 23:36Z pass = SAM 102 + VSS 58/2 (TCF DQ dropped off VSS after closing); BidNet last login 22:35Z (581/82). No NEW matches, no changes. Inbox: nothing unseen; no CRM brief. FACT Water (El Paso) pricing email still not sent by HQ.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

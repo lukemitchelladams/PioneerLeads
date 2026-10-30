@@ -1908,6 +1908,12 @@
       "when": "2026-10-29T22:28:00Z",
       "kind": "sub",
       "note": "Silas (H2) 10/29 15:40 MT: 'just send it straight to him. He is a competitor, but I wanted to give you a referral since we couldn't help!' H2 is OUT of El Paso 26-074. FACT Water Co (Conor Parrish, Chief Growth Officer, CWT, office 970-342-6867) is the referral; pricing email drafted for HQ to send today with the RFP, Addendum 1 and the September report attached; ask by Mon 11/02 noon. Proposal due Wed 11/04 14:00 MST: 5.5 days."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-30T00:25:00Z",
+      "kind": "deadline",
+      "note": "Hourly 00:21Z: FACT Water pricing email (drafted 22:28Z) still not in Sent/outbox. Proposal due Wed 11/04 14:00 MST; pricing needed Mon 11/02 noon. Only 2 business days left for a new sub."
     }
   ],
   "doc_gaps": [
