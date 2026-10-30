@@ -1803,6 +1803,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T07:30:00Z: GovTribe still blocked (~75h). HQ 06:36Z scan: BidNet ROBOT CHECK at login (4th fresh login of the night), statewide tab failed, rows carried forward, next BidNet login 09:36Z; SAM 102, VSS 58/2; Bonfire no creds; DIBBS stale. No NEW matches; 3 non-matching aggregate rows ledgered NO (USAFA ambulance, VA psych housing, 59--RELAY). Inbox: nothing unseen (16 threads); no CRM brief; no new Sent; no FACT Water reply yet.",
+  "last_hourly_check": "2026-10-30T08:25:00Z: GovTribe still blocked (~76h). HQ 07:37Z SAM+VSS pass (BidNet in robot-check cool-down since 06:37Z, next login 09:36Z; Bonfire no creds; DIBBS stale): SAM 102, VSS 58/2; no NEW, no changes. Inbox: 1 new = Mimecast DMARC aggregate report (noise, logged); no CRM brief; no new Sent; no FACT Water reply yet.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
