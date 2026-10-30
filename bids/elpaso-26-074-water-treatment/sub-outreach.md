@@ -17,7 +17,7 @@ Addendum 1 and the September 2026 Service Report attached (bids/_watch/downloads
 | # | Company | Contact | Email | Office phone | Notes |
 |---|---------|---------|-------|--------------|-------|
 | 1 | H2 Global Solutions | Silas Norwood, COO | snorwood@h2gs.com | 719-694-0515 | DECLINED 2026-10-29 15:40 MT ('we couldn't help'); referred FACT Water. |
-| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. SENT 2026-10-29 20:4x MT (HQ, msg 1a18aacf8e492fc3), full package attached. REPLIED 2026-10-30 05:32 MT (cc Andrew Coquyt, acoquyt@factwaterco.com): 'This looks like a good fit for us', can price from the package; asked about our County relationship, why bid with a sub, and odds vs the incumbent (Nalco). Pricing still asked by Mon 11/02 noon. |
+| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. YES (interested) 10/30 05:32 MT; SENT 2026-10-29 20:4x MT (HQ, msg 1a18aacf8e492fc3), full package attached. REPLIED 2026-10-30 05:32 MT (cc Andrew Coquyt, acoquyt@factwaterco.com): 'This looks like a good fit for us', can price from the package; asked about our County relationship, why bid with a sub, and odds vs the incumbent (Nalco). Pricing still asked by Mon 11/02 noon. |
 | 3 | Summit Laboratories (backup) | info@summitlaboratories.com | info@summitlaboratories.com | 303-293-9862 | Denver water-treatment firm HQ emailed for TCF; use only if FACT Water passes. |
 
 Backups only if H2 declines (do not email until Luke says so): the firms HQ listed for CDOC TCF in bids/cdoc-tcf-boiler-water/sub-outreach.md.
@@ -84,3 +84,6 @@ On the odds: price and the service plan decide it. The County's list is built ar
 Can you get us pricing by Monday noon?
 
 Thanks Conor,
+
+- 2026-10-30 05:32 MT: Conor Parrish (FACT Water, cc ACoquyt@factwaterco.com) replied: "This looks like a good fit for us." Asked whether Brown Bison has a relationship with the County, why bid with a sub, and our chances vs the incumbent (Nalco; the September report uses TRASAR). Pricing "should be able to put together".
+- 2026-10-30 12:4xZ (HQ): replied-all (msg 1a18d2a437044703, ops/outbox/2026-10-30/fact-water-reply1.txt): Brown Bison primes and manages, FACT runs the water program; price is 20% of the score; equivalents to NALCO allowed; Sept report shows main CUP tower low on TRASAR. Asked: pricing by Mon 11/02 noon + 3 references + service-tech bio.
