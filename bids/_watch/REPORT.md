@@ -1,6 +1,6 @@
-# Bid watch report — 2026-10-30T10:36:15+00:00
+# Bid watch report — 2026-10-30T11:37:00+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): bidnet, bonfire, dibbs
+**Headline:** not scanned this run (previous results kept): bidnet, bonfire, dibbs
 
 ## Source health
 
@@ -9,8 +9,8 @@
 | bidnet | yes | BIDNET_PASS=yes, BIDNET_USER=yes | NOT SCANNED THIS RUN; logged in (attempt 1) | 580 | AGGREGATE 195, BUYER 386 | 80 | 2026-10-30T09:36:33+00:00 | 0 |
 | bonfire | yes | BONFIRE_PASS=NO, BONFIRE_USER=NO | NOT SCANNED THIS RUN; BONFIRE_USER/BONFIRE_PASS not set | 1 |  | 0 | 2026-10-30T09:36:33+00:00 | 0 |
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 103 |  | 103 | 2026-10-30T10:36:15+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 58 | open 58 | 2 | 2026-10-30T10:36:15+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 103 |  | 103 | 2026-10-30T11:37:00+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 58 | open 58 | 2 | 2026-10-30T11:37:00+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -30,12 +30,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-16 (17d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (20d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | Parks On-Call Irrigation Services | 2026-12-02 (33d) | 2026-11-06 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Irrigation-Services/0000441782?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | BEARING ASSY, SPCL | 2026-11-30 (31d) |  | https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
