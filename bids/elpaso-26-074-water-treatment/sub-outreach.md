@@ -17,7 +17,7 @@ Addendum 1 and the September 2026 Service Report attached (bids/_watch/downloads
 | # | Company | Contact | Email | Office phone | Notes |
 |---|---------|---------|-------|--------------|-------|
 | 1 | H2 Global Solutions | Silas Norwood, COO | snorwood@h2gs.com | 719-694-0515 | DECLINED 2026-10-29 15:40 MT ('we couldn't help'); referred FACT Water. |
-| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. Email drafted below; HQ to send 10/29 with RFP, Addendum 1 and the September report attached. Pricing asked by Mon 11/02 noon. |
+| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. SENT 2026-10-29 20:4x MT (HQ, Gmail API, msg 1a18aacf8e492fc3) with the RFP, Addendum 1, sample contract, September report and 6 SDS attached. Pricing asked by Mon 11/02 noon. |
 | 3 | Summit Laboratories (backup) | info@summitlaboratories.com | info@summitlaboratories.com | 303-293-9862 | Denver water-treatment firm HQ emailed for TCF; use only if FACT Water passes. |
 
 Backups only if H2 declines (do not email until Luke says so): the firms HQ listed for CDOC TCF in bids/cdoc-tcf-boiler-water/sub-outreach.md.
@@ -66,3 +66,5 @@ Thanks Conor,
 Luke Adams
 Owner, Brown Bison Holdings LLC
 (720) 275-1554 | luke@brownbisonco.com
+
+- 2026-10-30 02:4xZ (HQ): sent Conor Parrish the pricing request (ops/outbox/2026-10-30/fact-water.txt, a shorter version of the draft above, adds the 12-visit/all-six-buildings basis and 90-day/2027 firm pricing). 10 files attached, no links. Follow up Fri 10/30 midday by phone (970-342-6867) if no reply.
