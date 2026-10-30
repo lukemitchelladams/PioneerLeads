@@ -212,3 +212,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-10-30 06:25Z (hourly, read-only): 16 threads newer_than:1d, all already seen; nothing new. No CRM brief. No new Sent; no FACT Water reply yet.
 - 2026-10-30 07:30Z (hourly, read-only): 16 threads newer_than:1d, all already seen; nothing new. No CRM brief. No new Sent; no FACT Water reply yet.
 - 2026-10-30 08:25Z (hourly, read-only): 17 threads newer_than:1d; 1 unseen = Mimecast DMARC aggregate report for brownbisonco.com (no-reply@us-4.mimecastreport.com, msg 1a18bdb310d6b143) — noise, marked seen. No CRM brief. No new Sent; no FACT Water reply yet.
+- 2026-10-30 09:25Z (hourly, read-only): 17 threads newer_than:1d, all already seen; nothing new. No CRM brief. No new Sent; no FACT Water reply yet.
