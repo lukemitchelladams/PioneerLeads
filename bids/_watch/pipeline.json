@@ -1212,9 +1212,9 @@
       "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides. | 20:50Z verification: Addendum 1 conflicts on visit scope (A4 all six facilities x12 vs A28 monthly at TSB/CUP/RBD only); Pollution Liability $1M marked Required in Attachment A; offer valid 90 days; 4 one-year renewals with pass-through-only price adjustments; degreed technical staff and 3 references required.",
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
-      "performer": "Brown Bison + water-treatment sub (FACT Water Co, pricing requested; H2 out)",
-      "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish) referral, email drafted (humanize PASS) in sub-outreach.md; Summit Laboratories backup",
-      "sub_pricing": "Pending (FACT Water Co, Conor Parrish, emailed 10/29 20:39 MT by HQ with RFP, Addendum 1, sample contract, September report and 6 SDS; pricing asked by Mon 11/02 noon, firm 90 days and through 2027; phone follow-up Fri 10/30 midday if silent. H2 Global declined 10/29. Backup: Summit Laboratories, Denver. Proposal due Wed 11/04 14:00 MST)",
+      "performer": "Brown Bison + FACT Water Co (engaged 10/30, pricing in progress; H2 out)",
+      "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish, cc Andrew Coquyt) engaged 10/30 05:32 MT, pricing in progress; Summit Laboratories backup",
+      "sub_pricing": "Pending (FACT Water Co, Conor Parrish, REPLIED 10/30 05:32 MT: 'looks like a good fit', can put pricing together from the package; asked whether Brown Bison has a relationship with the County, why bid with a water-treatment sub, and our odds vs the incumbent he believes is Nalco. HQ to answer this morning and re-confirm pricing by Mon 11/02 noon, firm 90 days and through 2027. H2 Global declined 10/29. Backup: Summit Laboratories. Proposal due Wed 11/04 14:00 MST)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1920,6 +1920,12 @@
       "when": "2026-10-30T02:39:00Z",
       "kind": "sub-outreach",
       "note": "HQ sent FACT Water Co (Conor Parrish) the pricing request with the full package attached; pricing asked by Mon 11/02 noon."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-30T11:32:00Z",
+      "kind": "sub-reply",
+      "note": "FACT Water (Conor Parrish) replied: good fit, can price from the package; asked about our County relationship and odds vs incumbent (Nalco per Conor). HQ to answer and hold the Mon noon pricing date."
     }
   ],
   "doc_gaps": [

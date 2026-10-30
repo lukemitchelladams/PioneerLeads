@@ -65,11 +65,11 @@ non-oxidizing biocide. Rule 9 satisfied: quantities are stated.
 
 ## Open items
 - [ ] Luke: DECIDE whether to bid as prime on H2's record, staff and references (competency clause above).
-- [ ] H2 Global pricing (Silas Norwood) by Mon 2026-11-02 noon, on the 12-visit/all-six-buildings basis with the three-building saving shown; valid 90 days, firm through 2027-12-31. HQ sends the request from luke@brownbisonco.com (sub-outreach.md).
-- [ ] Pollution Liability $1,000,000 policy: get a quote now (Brown Bison does not carry one); COI package per Exhibit 4 for Brown Bison and H2.
+- [ ] FACT Water Co pricing (Conor Parrish; H2 declined 10/29, FACT engaged 10/30) by Mon 2026-11-02 noon, on the 12-visit/all-six-buildings basis with the three-building saving shown; valid 90 days, firm through 2027-12-31. HQ sends the request from luke@brownbisonco.com (sub-outreach.md).
+- [ ] Pollution Liability $1,000,000 policy: get a quote now (Brown Bison does not carry one); COI package per Exhibit 4 for Brown Bison and FACT Water.
 - [ ] Download the General Terms and Conditions from the County site (not in the package) before signing Exhibit 1.
 - [ ] Build the technical proposal (one PDF, 50 pages, format rules above) + separate Fee Proposal envelope on BidNet by Wed 2026-11-04 14:00 MST.
-- [ ] Sign and return Addendum 1; collect H2's licenses, lobbying certification and three references.
+- [ ] Sign and return Addendum 1; collect FACT Water's licenses, lobbying certification and three references.
 
 ## Sources
 - bids/_watch/downloads/bidnet/0000439442/RFP 26-074 Water Treatment Chemicals.docx

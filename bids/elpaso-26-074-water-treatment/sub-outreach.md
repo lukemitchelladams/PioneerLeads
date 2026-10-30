@@ -17,7 +17,7 @@ Addendum 1 and the September 2026 Service Report attached (bids/_watch/downloads
 | # | Company | Contact | Email | Office phone | Notes |
 |---|---------|---------|-------|--------------|-------|
 | 1 | H2 Global Solutions | Silas Norwood, COO | snorwood@h2gs.com | 719-694-0515 | DECLINED 2026-10-29 15:40 MT ('we couldn't help'); referred FACT Water. |
-| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. SENT 2026-10-29 20:4x MT (HQ, Gmail API, msg 1a18aacf8e492fc3) with the RFP, Addendum 1, sample contract, September report and 6 SDS attached. Pricing asked by Mon 11/02 noon. |
+| 2 | FACT Water Co (Silas's referral, 10/29) | Conor Parrish, CWT, Chief Growth Officer | cparrish@factwaterco.com | 970-342-6867 | Water treatment specialist; Silas calls him a competitor. SENT 2026-10-29 20:4x MT (HQ, msg 1a18aacf8e492fc3), full package attached. REPLIED 2026-10-30 05:32 MT (cc Andrew Coquyt, acoquyt@factwaterco.com): 'This looks like a good fit for us', can price from the package; asked about our County relationship, why bid with a sub, and odds vs the incumbent (Nalco). Pricing still asked by Mon 11/02 noon. |
 | 3 | Summit Laboratories (backup) | info@summitlaboratories.com | info@summitlaboratories.com | 303-293-9862 | Denver water-treatment firm HQ emailed for TCF; use only if FACT Water passes. |
 
 Backups only if H2 declines (do not email until Luke says so): the firms HQ listed for CDOC TCF in bids/cdoc-tcf-boiler-water/sub-outreach.md.
@@ -68,3 +68,19 @@ Owner, Brown Bison Holdings LLC
 (720) 275-1554 | luke@brownbisonco.com
 
 - 2026-10-30 02:4xZ (HQ): sent Conor Parrish the pricing request (ops/outbox/2026-10-30/fact-water.txt, a shorter version of the draft above, adds the 12-visit/all-six-buildings basis and 90-day/2027 firm pricing). 10 files attached, no links. Follow up Fri 10/30 midday by phone (970-342-6867) if no reply.
+
+- 2026-10-30 11:32Z (hourly scan, read-only): Conor Parrish REPLIED (msg 1a18c95a8b73d030, cc ACoquyt@factwaterco.com): "This looks like a good fit for us. Thanks for reaching out! Does Brown Bison have a relationship with the county? Curious to understand the desire to bid this with a water treatment sub. Based on a first quick pass we should be able to put pricing together based on this but just curious around what you think our chances would be here if we are able to put together competitive pricing... In the past I have found on these RFPs the incumbent almost always wins so I wonder how Nalco is doing there now currently for them." FACT Water is engaged; pricing date Mon 11/02 noon still stands. HQ answers from luke@brownbisonco.com (no links). Suggested reply below; Luke to confirm the "no relationship with the County" line before it goes.
+
+### Suggested reply to Conor (DRAFT for HQ, 2026-10-30; humanize-linted)
+
+Subject: Re: El Paso County water treatment (RFP 26-074): pricing by Mon 11/2
+
+Hi Conor,
+
+Glad it fits. No relationship with the County yet. Brown Bison primes facilities contracts for Colorado governments and brings in a specialist for the technical work, which is how we want to run this one.
+
+On the odds: price and the service plan decide it. The County's list is built around Nalco products, and the RFP allows equivalent or superior products. If your number is competitive we have a real shot, and if not we will say so.
+
+Can you get us pricing by Monday noon?
+
+Thanks Conor,
