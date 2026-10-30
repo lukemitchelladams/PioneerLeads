@@ -6,17 +6,17 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date raised | Venture | Decision needed | Orchestrator's recommendation |
 | --- | --- | --- | --- |
-| 2026-10-29 | Govcon | Make the PioneerLeads repo private today: the DCSD bid price, the EIN and a markup are still in its git history after the scrub, and the repo is public | Settings, Danger Zone, change visibility; these ops docs publish there too |
-| 2026-10-29 | Govcon | Sign and submit the TCF boiler DQ 2027000037 by 17:00 MDT today (signatures, COI, W-9, FEIN and VSS) | Today; no confirmation in the inbox yet |
-| 2026-10-29 | Govcon | Tell Silas (H2) about the El Paso 26-074 A4/A28 visit-scope conflict and the 90-day validity before Mon Nov 2 noon; ask Alex whether YMS holds a Colorado QS pesticide license for Aurora ash | Both before Monday |
-| 2026-10-29 | Govcon | Morgan roof optional walk today 10:00: attend or drop | Drop unless a roofing sub is lined up |
-| 2026-10-28 | Govcon | Send the Travelers insurance certificate and the FEIN to the HQ session today; the TCF quote cannot go in without the certificate | Today, before H2's pricing turns into the package |
-| 2026-10-28 | Govcon | Did H2's Andrew sign the TCF walk sheet as Brown Bison Holdings LLC? | Answer in the HQ session; if not, it emails Jennifer Garvin with the Oct 26 trail |
-| 2026-10-28 | Govcon | Call the generator subs for Parker (due Nov 6) and Douglas 037-26 (due Nov 5); have one firm price both | By Fri Oct 30 |
+| 2026-10-30 | Govcon | El Paso 26-074 water treatment: if FACT Water's number is not in hand by Mon Nov 2 noon, bid with Summit Laboratories as backup or drop it; the bid also needs $1M pollution liability Brown Bison does not carry | Drop unless FACT prices by Monday and Trucordia quotes the pollution cover; proposal due Wed Nov 4 14:00 |
+| 2026-10-30 | Govcon | Call Will at Trucordia (720-484-3732) for the named-insured fix and the COI, and ask for the pollution liability quote | Today |
+| 2026-10-30 | Govcon | Weld SD6 coiling grille, mandatory walk Mon Nov 2 10:00 at Franklin MS, Greeley: you attend, or a door sub does; none of the three emailed has replied | Plan to attend yourself unless a sub commits by Friday evening |
+| 2026-10-30 | Govcon | Call Rock Solid Handyman (303-578-2218) for Brighton on-call pricing; paste the RTD questions into the worker session before Mon Nov 2 14:00 | Both today |
+| 2026-10-30 | Govcon | Aurora ash B-4799: ask Alex whether YMS holds a Colorado QS pesticide licence; optional Teams pre-bid today 15:30 MDT | Skip the pre-bid unless the licence is confirmed |
+| 2026-10-29 | Govcon | Make the PioneerLeads repo private today: the DCSD bid price, the EIN and a markup are still in its git history after the scrub, and the repo is public | Still public at 07:00 MDT Oct 30. Settings, Danger Zone, change visibility; these ops docs publish there too |
+| 2026-10-28 | Govcon | Call the generator subs for Parker (due Nov 6) and Douglas 037-26 (due Nov 5); have one firm price both | Today, Fri Oct 30; both bids are inside a week |
 | 2026-10-28 | Govcon | Littleton on-call doors: attend the Nov 3 garage walk and bid both pools, or drop both ($100k a year each, $100,000 bond, 2-hour response) | Bid only if a door sub and the bond are in hand by Nov 2; otherwise drop |
 | 2026-10-28 | Govcon | Larimer jail fire alarm: a VESDA-certified sub by Mon Nov 3 or it goes NO | Drop unless a sub is found by Friday |
-| 2026-10-27 | Govcon | Reactivate the GovTribe subscription (lapsed Oct 26 about 22:00 MT) | Still lapsed at 33 hours on Oct 28; pay it today, the loop's feed is dark without it |
-| 2026-10-27 | Govcon | Approve or deny the Gmail send waiting in the HQ session (Brighton handyman outreach drafted Oct 19) | Your call; it is an outbound email |
+| 2026-10-27 | Govcon | Reactivate the GovTribe subscription (lapsed Oct 26 about 22:00 MT) | 80 hours dark on Oct 30; restart at govtribe.com/account, the loop's state feed is gone without it |
+| 2026-10-27 | Govcon | Approve or deny the Gmail sends waiting in the HQ session; today's is the reply to Conor Parrish (FACT Water) on El Paso | Approve today: FACT is the only water-treatment sub engaged and the pricing date is Mon noon |
 | 2026-10-27 | Govcon | Forward the Parker generator RFP PDF to Brad Orgill at Colorado Standby; answer Alex's RTD questions; get the H2 tech's photo ID to CDOC | All three are sends only you can make |
 | 2026-10-27 | Govcon | 27J Brighton HS RRHS, walk Wed 10:00, no sub pricing | Drop it unless you can price it yourself today |
 | 2026-10-27 | Govcon | What happened to Colorado Springs R26-077MZ, Westminster, Arapahoe, Adams County and DCSD | One line each so the record is complete |
@@ -40,6 +40,9 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date | Venture | Decision | By | Why |
 | --- | --- | --- | --- | --- |
+| 2026-10-29 | Govcon | TCF boiler and water-treatment DQ 2027000037 submitted on BidNet; proposal copy sent to H2 at H2 pricing at 13:13 MDT | Luke, with H2 Global | HQ commit 5adc654; worker brief Oct 30 |
+| 2026-10-29 | Govcon | El Paso 26-074 water scope routed to FACT Water after H2 declined and referred them; Summit Laboratories held as backup | HQ session, on Silas's referral | HQ commits 4bc80df, 5528907 |
+| 2026-10-29 | POE | The name is Pipeline Orchestration Engine; never-imported files are kept a year, not a day, before Health offers to delete them | Cole | ROE commits b999a22, fab9895 |
 | 2026-10-28 | Govcon | DCSD 003-27 mowing submitted; opens Oct 29 14:00 | Luke, with Alex Ditto | Worker brief Oct 28 |
 | 2026-10-26 | SpeedRun Social | Free plan covers one connected social account; quiet free accounts are paused nightly; the Monday digest carries the $19 founding price | Luke | Blaze session, deploy #201 |
 | 2026-10-16 | POE | CDW LOGISTICS merged into CDW; cdwg.com and cdw.ca left open | Cole | Commits 066e1b91 and a97baf38 |

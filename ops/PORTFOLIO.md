@@ -1,15 +1,15 @@
 # Portfolio brief
 
 Owner: Luke Adams. Orchestrator: Claude (this session, plus the weekday check-in routine).
-Updated: 2026-10-27 (weekly brief, a day late: the Oct 20 to Oct 26 check-ins did not fire; the Oct 20 one was delivered on Oct 27). One page. Read this first; the per-venture scorecards hold the detail.
+Updated: 2026-10-30 (status cells daily; the weekly brief and top 3 below are from Oct 27 and are rewritten Mon Nov 2). One page. Read this first; the per-venture scorecards hold the detail.
 
 ## The three ventures
 
 | Venture | What it is | Stage | North star | Status today |
 | --- | --- | --- | --- | --- |
-| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | 34 deploys in the week (#170 to #203). Free plan now covers one social account, a second connect opens the $19 founding price, quiet accounts are paused nightly, the Monday email carries the offer. Still 0 paying; 6 of 74 users signed in last week. CI moved to GitHub-hosted runners Oct 26; deploys still run on the Mac and were held four days while the lid was closed on battery |
-| [POE](poe-radius.md) | Partner Orchestration Engine for Radius Channels (Cole), on top of HubSpot | v1 build, in production use | Booked Meaningful Meetings for Radius reps | 30 commits Oct 20 to 23, all from Cole's live feedback on the upload flow: confidence badges, split cells, reps carried down blocks, "relationship" wording, email on file beside the score, functions moved next to the database. Nothing since Oct 23. Five decisions still parked |
-| [Brown Bison govcon](govcon.md) | Municipal HVAC, facilities and grounds contracts; hourly bid-watch loop with Gmail, BidNet login and a live dashboard | Bidding, 8 GO bids, sub pricing in hand on 0 of 8 | Awarded contracts | Oct 29: TCF quote closes today 5pm, package ready for Luke's signature and submission; DCSD mowing opens today 2pm; the PioneerLeads repo is public with the DCSD price and EIN in its history, make it private today; El Paso, Douglas UPS and Douglas generator need sub numbers by Mon noon; GovTribe dead 56 hours; 19 GO bids, sub pricing 1 of 19 |
+| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | 34 deploys in the week (#170 to #203). Free plan now covers one social account, a second connect opens the $19 founding price, quiet accounts are paused nightly, the Monday email carries the offer. Still 0 paying; 6 of 74 users signed in last week. CI moved to GitHub-hosted runners Oct 26; deploys still run on the Mac and were held four days while the lid was closed on battery. Oct 29: #208 to #210 (TikTok limits re-checked at the source, Content Plan week cards fixed, the onboarding retarget no longer strips TikTok and YouTube legs after a live customer lost theirs); canary rerun green; 18 founder notes and 19 report-channel items sit in the owner queue. |
+| [POE](poe-radius.md) | Pipeline Orchestration Engine for Radius Channels (Cole), on top of HubSpot | v1 build, in production use | Booked Meaningful Meetings for Radius reps | 30 commits Oct 20 to 23, all from Cole's live feedback on the upload flow: confidence badges, split cells, reps carried down blocks, "relationship" wording, email on file beside the score, functions moved next to the database. Oct 29: fifteen more commits from Cole in one afternoon (deal folds, list download as read, multi-partner lists, HubSpot saved in full every four hours); Cole settled the name as Pipeline Orchestration Engine. Three decisions still parked. |
+| [Brown Bison govcon](govcon.md) | Municipal HVAC, facilities and grounds contracts; hourly bid-watch loop with Gmail, BidNet login and a live dashboard | Bidding, 20 GO bids, sub pricing in hand on 0 of 20 | Awarded contracts | Oct 30: the TCF quote went in Oct 29 at 13:13 MDT. El Paso 26-074 water treatment moved to FACT Water after H2 declined; Conor Parrish replied this morning and the HQ's answer waits for your Gmail approval; FACT's price is due Mon noon and the bid needs $1M pollution liability you do not carry. Weld SD6 coiling grille needs you at a mandatory walk Mon 10:00 unless a door sub replies. Accutemp is on the Weld jail RTU walk Thu. GovTribe dead 80 hours. PioneerLeads is still public with the DCSD price and the EIN in its history. |
 
 ## Last week scored (Oct 19 to Oct 26)
 
@@ -42,12 +42,12 @@ Govcon stays first this week: three walks and a quote inside 72 hours, and the b
 
 | Venture | Blocker | Why it matters |
 | --- | --- | --- |
-| Govcon | GovTribe subscription lapsed Oct 26 about 22:00 MT | The loop's state and federal feed is dark; the dashboard shows the source as BLOCKED |
-| Govcon | Gmail send approval in the HQ session (Brighton handyman outreach), the Parker generator RFP forward, Alex's RTD questions, the H2 tech's photo ID | Every one is a send or a signature; no session may do them |
+| Govcon | GovTribe subscription lapsed Oct 26 about 22:00 MT, 80 hours dark on Oct 30 | The loop's state and federal feed is dark; the dashboard shows the source as BLOCKED |
+| Govcon | Gmail send approval in the HQ session (today: the reply to FACT Water on El Paso), the Parker generator RFP forward, the RTD questions, the Trucordia and Rock Solid calls | Every one is a send, a call or a signature; no session may do them |
 | Govcon | Bonfire login for Parker 26-028 | Addenda on the live Parker bid are unseen |
 | SpeedRun Social | D1, D3, D4, D5; Stripe publishable key; Supabase Micro upgrade; Vercel settings | The $19 offer is live in copy and email, and the in-app checkout behind it is dark |
 | SpeedRun Social | Deploys need the Mac awake and on power | Nine commits sat four days last week |
-| POE | Five decisions parked since 2026-09-25 (see scorecard) | Territory map, duplicate merge, file delete, naming, subject line |
+| POE | Three decisions parked since 2026-09-25 (see scorecard) | Territory map, duplicate merge, subject line; naming and the file-delete window were settled Oct 29 |
 | POE | Commercial terms with Radius | Still not written anywhere |
 
 ## Open questions for Luke
