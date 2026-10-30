@@ -95,6 +95,14 @@ def send(a):
     if total > 24 * 1024 * 1024:
         sys.exit(f"Attachments total {total / 1e6:.1f} MB; Gmail caps a message at 25 MB. Split the send.")
     token = access_token()
+    if a.thread:
+        # reply headers from the thread's last message, so Outlook/Apple Mail thread it too (threadId alone is Gmail-only)
+        t = call("GET", f"/gmail/v1/users/me/threads/{a.thread}?format=metadata"
+                        "&metadataHeaders=Message-ID&metadataHeaders=References", token)
+        hdrs = {h["name"].lower(): h["value"] for h in t["messages"][-1]["payload"].get("headers", [])}
+        if hdrs.get("message-id"):
+            msg["In-Reply-To"] = hdrs["message-id"]
+            msg["References"] = (hdrs.get("references", "") + " " + hdrs["message-id"]).strip()
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
     payload = {"raw": raw}
     if a.thread:

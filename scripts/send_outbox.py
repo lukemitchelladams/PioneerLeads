@@ -3,7 +3,7 @@
 
     python3 scripts/send_outbox.py ops/outbox/2026-10-28/outbox.json
 
-Each entry: key, subject, to/cc/bcc, body_file, files. Results go to sent.json next to the manifest; entries already
+Each entry: key, subject, to/cc/bcc, body_file, files, optional thread (reply in that Gmail thread). Results go to sent.json next to the manifest; entries already
 in sent.json are skipped, so a rerun never double-sends.
 """
 import json
@@ -21,6 +21,8 @@ for e in json.loads(manifest.read_text()):
     # files go first: --to/--cc/--bcc take a list and would swallow anything after them
     cmd = [sys.executable, "scripts/gmail_api.py", "send", *e["files"],
            "--subject", e["subject"], "--body-file", e["body_file"]]
+    if e.get("thread"):  # reply in an existing thread (gmail_api adds In-Reply-To/References)
+        cmd += ["--thread", e["thread"]]
     for flag in ("to", "cc", "bcc"):
         if e.get(flag):
             cmd += [f"--{flag}", *e[flag]]
