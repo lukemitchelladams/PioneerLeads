@@ -20,3 +20,4 @@ Email text: ops/outbox/2026-10-28b/ups.txt (pricing by Mon 11/02 noon).
 - 2026-10-28 21:21Z (hourly scan, read-only): file created from HQ's outbox record; no replies or bounces yet. Addendum 1 (10/28) must be forwarded to the subs once read.
 - 2026-10-28 21:41Z (HQ): Q&A Document 1 forwarded to the same 5 firms (ops/outbox/2026-10-28c/ups-qa.txt).
 - 2026-10-28 22:21Z (hourly scan): Q&A 1 read; key answers added to README (full emergency coverage required, 3-hour response, 3 techs within 75 miles, licensing waived for manufacturer/industry certs, single-PM cost per location column, annual PM billing). No sub replies yet.
+- 2026-10-30 08:18 MT (HQ): follow-up to the same 5 UPS firms (msg 1a18d2cca0fa4c4f, IFB + Exhibit A contract re-attached): bids due Wed 11/04, sub pricing needed by Mon 11/02 noon. No replies yet as of 14:30Z.

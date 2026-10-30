@@ -1259,7 +1259,7 @@
   "walk": "Unknown",
   "performer": "Sub TBD",
   "subs": "5 emailed 10/28",
-  "sub_pricing": "None (5 UPS service firms emailed by HQ 2026-10-28 ~20:45Z; pricing asked by Mon 11/02 noon; bid due 11/04 15:00)",
+  "sub_pricing": "None (5 UPS service firms emailed by HQ 10/28; follow-up 10/30 08:18 MT with IFB and contract re-attached; pricing asked by Mon 11/02 noon; bid due Wed 11/04 15:00; none replied)",
   "docs_missing": 0,
   "contact": "not in hand",
   "folder": "bids/dougco-ups-039-26"
@@ -1488,8 +1488,8 @@
   "prebid": "2026-10-13T14:00:00-06:00",
   "walk": "Optional, passed",
   "performer": "Brown Bison + FACT Water Co (engaged 10/30, pricing in progress; H2 out)",
-  "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish, cc Andrew Coquyt) engaged 10/30 05:32 MT, pricing in progress; Summit Laboratories backup",
-  "sub_pricing": "Pending (FACT Water Co, Conor Parrish, REPLIED 10/30 05:32 MT: 'looks like a good fit', can put pricing together from the package; asked whether Brown Bison has a relationship with the County, why bid with a water-treatment sub, and our odds vs the incumbent he believes is Nalco. HQ to answer this morning and re-confirm pricing by Mon 11/02 noon, firm 90 days and through 2027. H2 Global declined 10/29. Backup: Summit Laboratories. Proposal due Wed 11/04 14:00 MST)",
+  "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish, cc Andrew Coquyt) engaged 10/30, HQ replied 08:15 MT, pricing + 3 refs + tech bio asked by Mon 11/02 noon; Summit Laboratories backup",
+  "sub_pricing": "Pending (FACT Water Co engaged: Conor Parrish replied 10/30 05:32 MT 'good fit', can price; HQ replied-all 08:15 MT asking pricing by Mon 11/02 noon plus 3 references and a service-tech bio. H2 Global declined 10/29. Backup: Summit Laboratories. Proposal due Wed 11/04 14:00 MST)",
   "docs_missing": 0,
   "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
   "folder": "bids/elpaso-26-074-water-treatment"
@@ -1650,7 +1650,7 @@
   "walk": "Mandatory, upcoming",
   "performer": "Door sub TBD",
   "subs": "3 emailed 10/29",
-  "sub_pricing": "None",
+  "sub_pricing": "None (3 door subs emailed 10/29 with docs; HQ follow-up 10/30 08:18 MT asking them to meet at the Mon 11/02 10:00 mandatory walk or price from our photos by Fri 11/06; none replied)",
   "docs_missing": 0,
   "contact": "BidNet",
   "folder": "bids/weldsd6-coiling-door-franklin"

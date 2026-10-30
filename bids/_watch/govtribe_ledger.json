@@ -1630,6 +1630,30 @@
       "verdict": "NO",
       "why": "HQ read the notice 10:37Z: item 'shall be the design represented by Cage Code(s) reference number(s) ... 91587 00366-00019' and 'Consideration for award of contract shall be given only to authorized distributors of the original manufacturer's item'. Jones Bearing is neither the OEM nor an authorized distributor and has no CAGE.",
       "at": "2026-10-30T11:28:00Z"
+    },
+    "bidnet:0000431739": {
+      "name": "Design and Engineering Services for Water and Wastewater Treatment Facilities (BidNet 0000431739, closes 2026-11-20)",
+      "verdict": "NO",
+      "why": "Engineering design services for water/wastewater plants: heavy civil / professional engineering, not our trades (rule 8); no profile match.",
+      "at": "2026-10-30T14:27:00Z"
+    },
+    "bidnet:0000442073": {
+      "name": "CDE BD2738 Advanced Algebra HQIM RFI (BidNet 0000442073, closes 2026-11-20)",
+      "verdict": "NO",
+      "why": "Instructional materials RFI, not our trades; no profile match.",
+      "at": "2026-10-30T14:27:00Z"
+    },
+    "bidnet:0000442078": {
+      "name": "CDE BD2739 Statistics, Quantitative Reasoning and Data Science HQIM RFI (BidNet 0000442078, closes 2026-11-20)",
+      "verdict": "NO",
+      "why": "Instructional materials RFI, not our trades; no profile match.",
+      "at": "2026-10-30T14:27:00Z"
+    },
+    "coloradovss:RFP-AAEA-2027000087": {
+      "name": "DPA Division of Accounts and Control RFP-AAEA-2027000087 Printing Services for the General Assembly (closes 2026-11-16)",
+      "verdict": "NO",
+      "why": "Printing services, not our trades; no profile match.",
+      "at": "2026-10-30T14:27:00Z"
     }
   },
   "watched": {
@@ -1815,6 +1839,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T13:27:00Z: GovTribe still blocked (~81h). NO HQ SCAN since 11:37Z (the 12:36Z pass did not land): BidNet last login 09:36Z (stale), SAM/VSS last 11:37Z, Bonfire no creds, DIBBS stale. No new matches in the last data. Inbox: 1 new = Microsoft DMARC report (noise, seen); Conor Parrish's 11:32Z reply on El Paso 26-074 still unanswered by HQ (no new Sent); no CRM brief. HQ session status 12:46Z: BLOCKED waiting on a Gmail Reply permission (its answer to Conor); Luke must approve or deny it in the HQ session before HQ's scans resume.",
+  "last_hourly_check": "2026-10-30T14:30:00Z: GovTribe still blocked (~82h). HQ unblocked: replied-all to FACT Water 14:15Z (pricing + 3 refs + tech bio by Mon noon), follow-ups to 3 Weld SD6 door subs and 5 Douglas UPS firms 14:18Z, then full scan 14:16Z: BidNet logged in 583/80, SAM 103, VSS 59/2, Bonfire no creds, DIBBS stale; no NEW matches; 4 non-matching rows ledgered NO (water/wastewater design, 2 CDE HQIM RFIs, DPA printing). HQ session now waiting on a Bash permission (14:23Z). Inbox: nothing unseen (20 threads); no CRM brief. Weld SD6 sub-outreach.md created (was missing).",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

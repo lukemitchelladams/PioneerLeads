@@ -1023,7 +1023,7 @@
       "prebid_mandatory": null,
       "performer": "Sub TBD",
       "subs": "5 emailed 10/28",
-      "sub_pricing": "None (5 UPS service firms emailed by HQ 2026-10-28 ~20:45Z; pricing asked by Mon 11/02 noon; bid due 11/04 15:00)",
+      "sub_pricing": "None (5 UPS service firms emailed by HQ 10/28; follow-up 10/30 08:18 MT with IFB and contract re-attached; pricing asked by Mon 11/02 noon; bid due Wed 11/04 15:00; none replied)",
       "folder": "bids/dougco-ups-039-26",
       "contact": "not in hand",
       "doc_gaps": "Q&A Document 1 (Addendum 1) downloaded 21:36Z and read; forwarded to the 5 subs by HQ 21:41Z. Bid Schedule still to be priced."
@@ -1213,8 +1213,8 @@
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "Brown Bison + FACT Water Co (engaged 10/30, pricing in progress; H2 out)",
-      "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish, cc Andrew Coquyt) engaged 10/30 05:32 MT, pricing in progress; Summit Laboratories backup",
-      "sub_pricing": "Pending (FACT Water Co, Conor Parrish, REPLIED 10/30 05:32 MT: 'looks like a good fit', can put pricing together from the package; asked whether Brown Bison has a relationship with the County, why bid with a water-treatment sub, and our odds vs the incumbent he believes is Nalco. HQ to answer this morning and re-confirm pricing by Mon 11/02 noon, firm 90 days and through 2027. H2 Global declined 10/29. Backup: Summit Laboratories. Proposal due Wed 11/04 14:00 MST)",
+      "subs": "H2 declined 10/29; FACT Water Co (Conor Parrish, cc Andrew Coquyt) engaged 10/30, HQ replied 08:15 MT, pricing + 3 refs + tech bio asked by Mon 11/02 noon; Summit Laboratories backup",
+      "sub_pricing": "Pending (FACT Water Co engaged: Conor Parrish replied 10/30 05:32 MT 'good fit', can price; HQ replied-all 08:15 MT asking pricing by Mon 11/02 noon plus 3 references and a service-tech bio. H2 Global declined 10/29. Backup: Summit Laboratories. Proposal due Wed 11/04 14:00 MST)",
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
@@ -1351,7 +1351,7 @@
       "prebid_mandatory": true,
       "performer": "Door sub TBD",
       "subs": "3 emailed 10/29",
-      "sub_pricing": "None",
+      "sub_pricing": "None (3 door subs emailed 10/29 with docs; HQ follow-up 10/30 08:18 MT asking them to meet at the Mon 11/02 10:00 mandatory walk or price from our photos by Fri 11/06; none replied)",
       "folder": "bids/weldsd6-coiling-door-franklin",
       "contact": "BidNet"
     }
@@ -1926,6 +1926,24 @@
       "when": "2026-10-30T11:32:00Z",
       "kind": "sub-reply",
       "note": "FACT Water (Conor Parrish) replied: good fit, can price from the package; asked about our County relationship and odds vs incumbent (Nalco per Conor). HQ to answer and hold the Mon noon pricing date."
+    },
+    {
+      "bid": "elpaso-26-074-water-treatment",
+      "when": "2026-10-30T14:15:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ replied-all to FACT Water (Conor Parrish, Andrew Coquyt): Brown Bison primes and manages, FACT runs the water program; asked pricing by Mon 11/02 noon plus 3 references and a service-tech bio."
+    },
+    {
+      "bid": "weldsd6-coiling-door-franklin",
+      "when": "2026-10-30T14:18:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ follow-up to the 3 door subs: meet us at the Mon 11/02 10:00 mandatory walk, or price from our photos by Fri 11/06; docs re-attached."
+    },
+    {
+      "bid": "bidnet-0000440339",
+      "when": "2026-10-30T14:18:00Z",
+      "kind": "sub-outreach",
+      "note": "HQ follow-up to the 5 UPS firms: sub pricing needed by Mon 11/02 noon for the Wed 11/04 bid; IFB and contract re-attached."
     }
   ],
   "doc_gaps": [
