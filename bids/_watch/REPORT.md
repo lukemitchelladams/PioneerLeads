@@ -1,4 +1,4 @@
-# Bid watch report — 2026-10-30T07:37:02+00:00
+# Bid watch report — 2026-10-30T08:36:36+00:00
 
 **Headline:** not scanned this run (previous results kept): bidnet, bonfire, dibbs
 
@@ -9,8 +9,8 @@
 | bidnet | yes | BIDNET_PASS=yes, BIDNET_USER=yes | NOT SCANNED THIS RUN; PARTIAL this run (part of the source failed): earlier rows kept, none closed; login BLOCKED: BidNet robot check right after the login form: cool-down started | 194 | AGGREGATE 195 | 13 | 2026-10-30T06:36:49+00:00 | 3 |
 | bonfire | yes | BONFIRE_PASS=NO, BONFIRE_USER=NO | NOT SCANNED THIS RUN; BONFIRE_USER/BONFIRE_PASS not set | 1 |  | 0 | 2026-10-30T06:36:49+00:00 | 0 |
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 102 |  | 102 | 2026-10-30T07:37:02+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 58 | open 58 | 2 | 2026-10-30T07:37:02+00:00 | 0 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 102 |  | 102 | 2026-10-30T08:36:36+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 58 | open 58 | 2 | 2026-10-30T08:36:36+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
