@@ -1779,6 +1779,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-10-30T04:25:00Z: GovTribe still blocked (~72h). HQ 03:36Z partial scan (SAM 101, VSS 58/2; BidNet 579/80 kept from 02:38Z; Bonfire no creds; DIBBS stale): no NEW, no changes. Inbox: nothing unseen (16 threads); no CRM brief. No new Sent. FACT Water (El Paso) pricing request out since 02:39Z, no reply yet.",
+  "last_hourly_check": "2026-10-30T05:25:00Z: GovTribe still blocked (~73h). HQ 04:36Z full scan: BidNet logged in 579/80, SAM 101, VSS 58/2, Bonfire no creds, DIBBS stale; no NEW, no changes. Inbox: nothing unseen (16 threads); no CRM brief; no new Sent. FACT Water (El Paso) request out since 02:39Z, no reply yet.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
