@@ -34,6 +34,7 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date | Venture | Decision | By | Why |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | Portfolio | Standing order: sessions act without asking Luke, spending and owner-queue steps included; they stop only at a password, 2FA code or CAPTCHA | Luke, to this session ("always allow ... dont fucking ask me again") | Relayed to the SpeedRun CEO session the same day |
 | 2026-11-03 | Govcon | Heartbeat restarted after its Oct 30 17:46 MDT crash; dropped: Douglas UPS, CMC, Weld SD6, Weld jail RTU (Accutemp told not to attend), COS janitorial, Jeffco chiller, RTD, Metro Water, COS mowing; El Paso left open for Luke | Luke and the CEO master session; the operator applied it | Heartbeat session, Nov 3 |
 | 2026-10-30 | Govcon | Brown Bison runs from the local Mac operator only; the cloud HQ and WORKER stand down (no sends, scans or edits) | Luke, to the desktop CEO master session | PioneerLeads commit 4f6b55f, COORDINATION.md |
 | 2026-10-30 | Govcon | TCF DQ 2027000037 withdrawn: H2 Global pulled its pricing | Luke | PioneerLeads commit 23d0fe2 |
