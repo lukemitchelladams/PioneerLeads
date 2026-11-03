@@ -6,9 +6,8 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date raised | Venture | Decision needed | Orchestrator's recommendation |
 | --- | --- | --- | --- |
-| 2026-11-03 | Govcon | Confirm the Brown Bison heartbeat on the Mac is ticking again; it died on an API error at 17:44 MDT Oct 30 and ran nothing through Monday's deadlines | This session sent it a restart note at about 07:20 MST Nov 3; open the session and check it answered |
-| 2026-10-30 | Govcon | Bind the insurance coverage with Will and sign and file the WC43 workers' comp rejection (prefilled, in the Downloads insurance folder) | Today: Parker 26-021-1 (Fri Nov 6) cannot go in without coverage |
-| 2026-10-30 | Govcon | Six bids drop by default (El Paso, Douglas UPS, CMC, Weld jail RTU, COS janitorial, Jeffco chiller): confirm, and have the operator release those subs | Confirm; Accutemp is due at the Weld RTU walk Thu Nov 5 unless released |
+| 2026-11-03 | Govcon | El Paso 26-074: bid yes or no by Wed Nov 4 11:00 MT. FACT Water priced it Nov 2; a yes adds pollution, umbrella, auto and workers' comp cover at award on top of the base policy | Your call; the operator is building the package either way |
+| 2026-11-03 | Govcon | Insurance binds on or after Fri Nov 13 (your call to Will, Nov 3); sign and file the WC43 rejection before then | No sub starts and no certificate goes out before the bind |
 | 2026-10-30 | Govcon | Put the card on the Google Workspace Admin console (billing started Nov 1) | Check today; the mailbox that receives every sub reply stops if billing fails |
 | 2026-10-30 | SpeedRun Social | Owner queue 20 to 22: buy the outbound sending domain (about $12), set Google Ads to $3 a day on Ad Group A only, create and connect SpeedRun Social's own Facebook, Instagram and LinkedIn accounts and Approve all | All three; the outbound test, the ads read and the product posting for itself each wait on one |
 | 2026-10-29 | Govcon | Make the PioneerLeads repo private today: the DCSD bid price, the EIN and a markup are still in its git history after the scrub, and the repo is public | Still public on Nov 3. Settings, Danger Zone, change visibility; these ops docs publish there too |
@@ -35,6 +34,7 @@ Newest first. Each entry: date, venture, decision, who decided, why.
 
 | Date | Venture | Decision | By | Why |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | Govcon | Heartbeat restarted after its Oct 30 17:46 MDT crash; dropped: Douglas UPS, CMC, Weld SD6, Weld jail RTU (Accutemp told not to attend), COS janitorial, Jeffco chiller, RTD, Metro Water, COS mowing; El Paso left open for Luke | Luke and the CEO master session; the operator applied it | Heartbeat session, Nov 3 |
 | 2026-10-30 | Govcon | Brown Bison runs from the local Mac operator only; the cloud HQ and WORKER stand down (no sends, scans or edits) | Luke, to the desktop CEO master session | PioneerLeads commit 4f6b55f, COORDINATION.md |
 | 2026-10-30 | Govcon | TCF DQ 2027000037 withdrawn: H2 Global pulled its pricing | Luke | PioneerLeads commit 23d0fe2 |
 | 2026-10-30 | SpeedRun Social | D1 to D5 recorded: D3 product-made outbound test (100 targets ready), D4 Ads cut to $3 a day on competitor terms, D5 SpeedRun Social posts from its own accounts | CEO session, on Luke's authority | autosocial-ai commit c17a3a1e |
