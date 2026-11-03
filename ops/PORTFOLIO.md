@@ -1,61 +1,59 @@
 # Portfolio brief
 
-Owner: Luke Adams. Orchestrator: Claude (this session, plus the weekday check-in routine).
-Updated: 2026-10-30 (status cells daily; the weekly brief and top 3 below are from Oct 27 and are rewritten Mon Nov 2). One page. Read this first; the per-venture scorecards hold the detail.
+Owner: Luke Adams. Orchestrator: Claude (this session, plus the weekday check-in routine). Since Oct 30 a desktop CEO master session holds authority over Brown Bison and SpeedRun decisions; this page records and chases, it does not overrule it.
+Updated: 2026-11-03 (weekly brief for Oct 26 to Nov 2, a day late: the Nov 2 check-in was cut off by a worker restart). One page. Read this first; the per-venture scorecards hold the detail.
 
 ## The three ventures
 
 | Venture | What it is | Stage | North star | Status today |
 | --- | --- | --- | --- | --- |
-| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | 34 deploys in the week (#170 to #203). Free plan now covers one social account, a second connect opens the $19 founding price, quiet accounts are paused nightly, the Monday email carries the offer. Still 0 paying; 6 of 74 users signed in last week. CI moved to GitHub-hosted runners Oct 26; deploys still run on the Mac and were held four days while the lid was closed on battery. Oct 29: #208 to #210 (TikTok limits re-checked at the source, Content Plan week cards fixed, the onboarding retarget no longer strips TikTok and YouTube legs after a live customer lost theirs); canary rerun green; 18 founder notes and 19 report-channel items sit in the owner queue. |
-| [POE](poe-radius.md) | Pipeline Orchestration Engine for Radius Channels (Cole), on top of HubSpot | v1 build, in production use | Booked Meaningful Meetings for Radius reps | 30 commits Oct 20 to 23, all from Cole's live feedback on the upload flow: confidence badges, split cells, reps carried down blocks, "relationship" wording, email on file beside the score, functions moved next to the database. Oct 29: fifteen more commits from Cole in one afternoon (deal folds, list download as read, multi-partner lists, HubSpot saved in full every four hours); Cole settled the name as Pipeline Orchestration Engine. Three decisions still parked. |
-| [Brown Bison govcon](govcon.md) | Municipal HVAC, facilities and grounds contracts; hourly bid-watch loop with Gmail, BidNet login and a live dashboard | Bidding, 20 GO bids, sub pricing in hand on 0 of 20 | Awarded contracts | Oct 30: the TCF quote went in Oct 29 at 13:13 MDT. El Paso 26-074 water treatment moved to FACT Water after H2 declined; Conor Parrish replied this morning and the HQ's answer waits for your Gmail approval; FACT's price is due Mon noon and the bid needs $1M pollution liability you do not carry. Weld SD6 coiling grille needs you at a mandatory walk Mon 10:00 unless a door sub replies. Accutemp is on the Weld jail RTU walk Thu. GovTribe dead 80 hours. PioneerLeads is still public with the DCSD price and the EIN in its history. |
+| [SpeedRun Social](speedrun-social.md) | AI social autopilot for small businesses (the Blaze.ai replica), Brown Bison LLC | Live, pre-revenue | Paying customers | Deploys resumed Nov 3 (#213 via the Vercel connector) after six days held; the clean-post upgrade offer (G19) is live. 0 paying; 5 sign-ups in 7 days, 4 of them from ChatGPT. |
+| [POE](poe-radius.md) | Pipeline Orchestration Engine for Radius Channels (Cole), on top of HubSpot | v1 build, in production use | Booked Meaningful Meetings for Radius reps | 31 commits Oct 29 to 30 from Cole's feedback and Luke's audit: HubSpot saved in full and kept current every half hour, every search covers everything, Mapping is a single-company search. Quiet since Oct 30. Three decisions still parked. |
+| [Brown Bison govcon](govcon.md) | Municipal HVAC, facilities and grounds contracts, run by a local operator on the Mac | Bidding; six bids dropped by default Nov 2, about a dozen kept | Awarded contracts | TCF withdrawn Oct 30. Luke went "Local only"; the cloud loop stood down. The local heartbeat died Fri 17:44 MDT and ran nothing through Monday's deadlines; restart note sent Nov 3. Insurance binding and WC43 gate the next bid, Parker generators Fri Nov 6. |
 
-## Last week scored (Oct 19 to Oct 26)
+## Last week scored (Oct 26 to Nov 2)
 
 | Venture | Done | Slipped | Blocked |
 | --- | --- | --- | --- |
-| SpeedRun Social | #170 to #203: founding price ($19) in the trial prompt, out-of-credits modal and Monday digest; free-plan wording fixed on about 150 pages and annual prices pulled from 89; Followers tile from real follower counts; connect-failure reasons captured after one customer failed Facebook five times; free plan limited to one connected account with an upgrade offer on the second; nightly release of quiet accounts (16 accounts in 11 workspaces on the first dry run); seven neutral-ranking test pages built, switch off; CI revived on GitHub-hosted runners. | First paying customer, for the second week. The seven paywall workspaces produced 0 upgrades. PR #1 merge. Stripe publishable key, Supabase upgrade, D1 to D5 as a set (E22 and E23 were decided Oct 26). | Four days of deploys held because the Mac lid was closed on battery (Oct 21 to 25) |
-| POE | Upload flow rebuilt around Cole's CDW list: multi-company cells split, reps carried down blocks, 50 sellers looked up per list, websites shown as text not links, low confidence badged red, medium for uncertain, uploads confirm and ask nothing more, "claim" became "relationship", named rep with no email counts as Mapped with a disclaimer, email-on-file beside the POE score, server functions moved to Portland beside the database. | M2 accuracy check (was due Oct 22). Sandbox deal delete. The five parked decisions, now 32 days old. | Cole's decisions |
-| Govcon | The venture now has a two-session loop: an HQ scanner that logs into BidNet and SAM.gov hourly, a worker that reads Gmail and GovTribe and writes a morning brief and a live dashboard. Parker 26-028 rough-draft pricing went to Rich on Oct 20 (visits without filters, filters at cost plus 15%). Exhibit G for the TCF boiler went to CDOC Oct 26. H2 Global lined up to attend the TCF walk. | Colorado Springs R26-077MZ, Westminster, Arapahoe, Adams County and DCSD no longer appear on the loop's board; their outcomes are not recorded anywhere I can read. Parker document and Rich's two questions still not closed. send_gov_intros guard still uncommitted. Sub pricing in hand on 0 of 8 GO bids. | GovTribe lapsed (payment is Luke's); Bonfire has no login so Parker 26-028 addenda are unseen; SAM.gov API erroring; the Brighton handyman outreach waits on a Gmail send approval in the HQ session |
+| SpeedRun Social | #204 to #210 shipped Oct 27 to 29; one-account free plan and the quiet-account sweep live; D1 to D5 decided Oct 30; four founder notes sent; outbound test pack with 100 targets; own-accounts workspace staged; G19, E26 and U7 built (shipped Nov 3). | Five paying customers by Oct 31: 0. Upgrade pop-up 0 clicks all week. Six days with no deploy. | Vercel CLI logged out on the Mac; lid closed on battery Oct 31 and Nov 1; owner queue 20 to 22 (domain, Ads, own social accounts). |
+| POE | 31 commits: HubSpot saved in full and synced every half hour, search over everything, Mapping rebuilt as a search, deal stages named, MSP side excluded, partner twins merged, name settled as Pipeline Orchestration Engine, Luke's audit fixes. | M2 accuracy number (due Oct 22). Three parked decisions. Commercial terms. | Cole's decisions. |
+| Govcon | DCSD mowing submitted; TCF quote submitted Oct 29; El Paso technical draft; insurance matrix of the live bids; WC43 prefilled; local operator restarted Oct 30. | TCF withdrawn Oct 30 when H2 pulled its price. Sub pricing in hand stayed at 0 of 20. Monday's El Paso, Douglas UPS, Weld SD6 and RTD deadlines passed with no operator running. | Insurance not yet bound; WC43 unsigned; GovTribe lapsed; repo still public. |
 
-## This week's top 3 per venture (Oct 26 to Nov 2)
+## This week's top 3 per venture (Nov 2 to Nov 9)
 
-Govcon stays first this week: three walks and a quote inside 72 hours, and the bid feed is dark until GovTribe is paid.
+Govcon stays first: one live bid this week and the operator was down three days.
 
 **Brown Bison govcon**
-1. Today: TCF boiler walk at 10am (H2 Global attends; confirm Garvin got Exhibit G). Reactivate GovTribe. Forward the Parker generator RFP PDF to Brad Orgill at Colorado Standby. Decide 27J Brighton HS: drop, or price it yourself today with no sub.
-2. Wednesday: 27J Brighton HS walk 10am and Littleton 2126 walk 2pm; Rich's approval on the Parker 26-028 pricing. Thursday 5pm: TCF quote in.
-3. Get sub pricing on the 8 GO bids (0 of 8 today): the 7 plumbers and the Littleton trades have not replied; answer Alex's RTD questions so landscaping stays with him.
+1. Today: confirm the heartbeat answered the restart note; bind insurance with Will; sign and file WC43.
+2. Parker 26-021-1 generators, due Fri Nov 6 14:00: Colorado Standby's numbers due today.
+3. Confirm the six default drops and release those subs (Accutemp before Thursday's Weld RTU walk); make PioneerLeads private.
 
 **SpeedRun Social**
-1. Watch the first release sweep and the one-account rule for complaints; 16 accounts in 11 workspaces get paused, and grandfathered users have until Nov 9.
-2. Decide D1, D3, D4 and D5 and set the Stripe publishable key; the founding price is now quoted in three places and the checkout behind it is still dark.
-3. Keep the Mac on power and plugged in during gate windows, or move the gate to the GitHub runners now that CI runs there: four days of held deploys last week was the laptop, not the code.
+1. Watch G19, live since Nov 3, for the first upgrade click; it is the first offer shown at a moment of proof.
+2. Owner queue 20 to 22: buy the sending domain, set Ads to $3 a day on Ad Group A, create and connect SpeedRun Social's own accounts.
+3. Keep the Mac on power during gate windows; save the Vercel token so deploys never wait six days again.
 
 **POE**
-1. Send Cole the five parked decisions with defaults; he is giving decisions daily when asked in the product, so ask there.
+1. Send Cole the three parked decisions with defaults, in the product.
 2. Record the M2 accuracy number.
-3. Delete the sandbox deals and re-match the leftovers.
+3. Write down the commercial terms with Radius.
 
 ## Blockers only the owner can clear
 
 | Venture | Blocker | Why it matters |
 | --- | --- | --- |
-| Govcon | GovTribe subscription lapsed Oct 26 about 22:00 MT, 80 hours dark on Oct 30 | The loop's state and federal feed is dark; the dashboard shows the source as BLOCKED |
-| Govcon | Gmail send approval in the HQ session (today: the reply to FACT Water on El Paso), the Parker generator RFP forward, the RTD questions, the Trucordia and Rock Solid calls | Every one is a send, a call or a signature; no session may do them |
-| Govcon | Bonfire login for Parker 26-028 | Addenda on the live Parker bid are unseen |
-| SpeedRun Social | D1, D3, D4, D5; Stripe publishable key; Supabase Micro upgrade; Vercel settings | The $19 offer is live in copy and email, and the in-app checkout behind it is dark |
-| SpeedRun Social | Deploys need the Mac awake and on power | Nine commits sat four days last week |
-| POE | Three decisions parked since 2026-09-25 (see scorecard) | Territory map, duplicate merge, subject line; naming and the file-delete window were settled Oct 29 |
-| POE | Commercial terms with Radius | Still not written anywhere |
+| Govcon | Insurance binding with Will; WC43 signature and filing | No bid can be awarded or bound without coverage; Parker generators is Friday |
+| Govcon | Google Workspace card on the Admin console (billing started Nov 1) | The mailbox that receives every sub reply stops if billing fails |
+| Govcon | PioneerLeads is public with bid prices and the EIN in its history | Settings, Danger Zone, make private |
+| SpeedRun Social | Owner queue 20 to 22; Stripe publishable key; Supabase upgrade | Outbound, ads and the product's own posting each wait on one |
+| POE | Three decisions parked since Sept 25; commercial terms | Territory map, duplicate merge, subject line; terms never written |
 
 ## Open questions for Luke
 
-1. What happened to Colorado Springs R26-077MZ (due Oct 20), Westminster, Arapahoe, Adams County and DCSD? None is on the loop's board now.
-2. When is the Parker 26-028 bid due, and did Rich approve the pricing?
-3. What are the terms with Radius for POE (hourly, fixed, equity, favour)?
+1. Did the six default drops go ahead Monday, and did a door sub make the Weld SD6 walk?
+2. What happened to Colorado Springs R26-077MZ, Westminster, Arapahoe and Adams County?
+3. Do you still want this weekday check-in now that the desktop CEO master session runs Brown Bison and SpeedRun?
 
 ## Cadence
 
-See [CADENCE.md](CADENCE.md). Short version: a weekday check-in updates the three scorecards and surfaces the single next action per venture; a Monday brief rewrites this page; every owner decision goes in [DECISIONS.md](DECISIONS.md). The check-ins between Oct 20 and Oct 26 did not run; this brief covers the gap from the sessions and commits.
+See [CADENCE.md](CADENCE.md). Short version: a weekday check-in updates the three scorecards and surfaces the single next action per venture; a Monday brief rewrites this page; every owner decision goes in [DECISIONS.md](DECISIONS.md). The check-ins between Oct 20 and Oct 26 did not run, and the Nov 2 one was cut off; the briefs cover those gaps from the sessions and commits.
