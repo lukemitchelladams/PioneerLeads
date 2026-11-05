@@ -189,17 +189,18 @@
       "title": "Street Light Repair & Replacement, Colorado Air & Space Port",
       "sol": "IFB-2026.766",
       "trade": "Electrical",
-      "due": "2026-11-12T15:00:00-07:00",
+      "due": "2026-12-02T15:00:00-07:00",
       "portal": "BidNet",
       "decision": "REVIVE-IF",
-      "decision_note": "MANDATORY pre-bid Wed 2026-10-21 10:00, 5200 Front Range Pkwy, Watkins. Luke attends. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): MANDATORY 10/21 walk: no sign-in record in repo; 5% bid bond at submittal if >$50k. Luke confirms attendance + surety. Due 11/12 15:00.",
+      "decision_note": "MANDATORY pre-bid Wed 2026-10-21 10:00, 5200 Front Range Pkwy, Watkins. Luke attends. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): MANDATORY 10/21 walk: no sign-in record in repo; 5% bid bond at submittal if >$50k. Luke confirms attendance + surety. Due 11/12 15:00. | 2026-11-05 hourly: Addendum 1 (11/04) moved the due date from Thu 11/12 15:00 to Wed 12/02 15:00 MT; only change. Mandatory pre-bid was still 10/21 10:00 (no new walk), so attendance on 10/21 still decides eligibility.",
       "prebid": "2026-10-21T10:00:00-06:00",
       "prebid_mandatory": true,
       "performer": "Electrical sub (boring + poles)",
       "subs": "2 drafts + call list 10/19; no pricing",
       "folder": "bids/adams-county-airport-streetlights",
       "contact": "Joe Lachermeier, jlachermeier@adcogov.org",
-      "sub_pricing": "None"
+      "sub_pricing": "None",
+      "due_source": "Addendum No. 1 (Adams County, dated 2026-11-04): 'New Bid Due Date: Wednesday December 2nd, 2026, 3:00 P.M.'"
     },
     {
       "id": "metro-water-b26019",
@@ -210,14 +211,15 @@
       "due": "2026-11-12T14:00:00-07:00",
       "portal": "BidNet",
       "decision": "REVIVE-IF",
-      "decision_note": "Attachments 1-3 in hand 10/20 (Att 2 = price proposal xlsx). Optional site visit 10/27 09:00, RSVP by 10/23 14:00. Needs NETA sub. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): NETA testing subbable; price-by 11/05. 5 NETA firms (RESA, PSG, Precision Testing, Shermco, Vertiv) in a Gmail draft with package zip 10/28, waiting on Luke to attach+send until Gmail API is set up. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): no COI at bid (\"prior to commencing any work\"); needs NETA 5-yr lump sums (RESA has the package). Due 11/12 14:00.",
+      "decision_note": "Attachments 1-3 in hand 10/20 (Att 2 = price proposal xlsx). Optional site visit 10/27 09:00, RSVP by 10/23 14:00. Needs NETA sub. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): NETA testing subbable; price-by 11/05. 5 NETA firms (RESA, PSG, Precision Testing, Shermco, Vertiv) in a Gmail draft with package zip 10/28, waiting on Luke to attach+send until Gmail API is set up. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): no COI at bid (\"prior to commencing any work\"); needs NETA 5-yr lump sums (RESA has the package). Due 11/12 14:00. | 2026-11-05 hourly: Addendum 1 (Q&A) and Addendum 2 filed in downloads/bidnet/0000439732. A1: 'NETA certification is desired but can be substituted for equivalent certifications, training, or documented experience'; outages Mon-Fri 7AM-3PM, mostly Tue-Thu, LV/902-905 work in about a one-month window (typically April), 901 separately; breaker trip units need primary current injection; no transformer oil sampling in base scope. A2 ADDS bid-schedule rates: technician and foreman standby per hour, additional mobilization per occurrence, specialized equipment standby, other personnel. HQ's 11/05 chase to 4 NETA firms attached only Attachment 2; the subs do not have Addenda 1-2 yet.",
       "prebid": "2026-10-27T09:00:00-06:00",
       "prebid_mandatory": false,
       "performer": "NETA testing sub",
       "subs": "5 NETA/testing firms emailed 2026-10-28 via HQ outbox (bcc 5, solicitation + 3 attachments)",
       "folder": "bids/metro-water-switchgear-maintenance",
       "contact": "Brian Sward, bsward@metrowaterrecovery.com",
-      "sub_pricing": "Pending (RESA Power, Vitor Teixeira, Denver: HQ sent the B-26-019 package 10/30 ~08:3x MT after RESA asked for electrical-testing work; annual lump sum x5 years asked by Thu 11/05; bid due 11/12 14:00)"
+      "sub_pricing": "Pending (RESA Power, Vitor Teixeira, Denver: HQ sent the B-26-019 package 10/30 ~08:3x MT after RESA asked for electrical-testing work; annual lump sum x5 years asked by Thu 11/05; bid due 11/12 14:00)",
+      "doc_gaps": "Addenda 1 and 2 in hand (downloads/bidnet/0000439732); not yet sent to subs."
     },
     {
       "id": "rtd-126dm016",
@@ -713,7 +715,7 @@
       "due": "2026-11-20T14:00:00-07:00",
       "portal": "BidNet",
       "decision": "GO",
-      "decision_note": "Addendum 1.0 (BidNet 10/26): closing moved 2026-10-29 -> 2026-11-20 (BidNet date; 14:00 MT assumed from the original IFB closing time, confirm on BidNet). MANDATORY site visit Tue 2026-11-10 13:30 at Traut Elementary front entrance (2515 Timberwood Dr, Fort Collins), then Preston MS and Fossil Ridge HS; RSVP by email listing the sites to strategicsourcing@psdschools.org. Questions via BidNet through 2026-11-13 14:00 MT. Fire-suppression service and make-up-air inspection excluded. Full package + addendum docs in bids/_watch/downloads/bidnet/0000439455/. Needs a hood-cleaning sub (HOODZ-type) to price Attachment D and attend the walk. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): IFB 27-701-002 low bid. MANDATORY site visit 2026-11-10 13:30 at Traut Elementary, RSVP strategicsourcing@psdschools.org. 3 hood firms drafted 10/28 with package zip. Prof. liability $1M/$3M. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): HOODZ $695/school confirmed 11/04; Carlos Ahedo meets Luke at the MANDATORY 11/10 13:30 walk (Traut ES); RSVP sent 11/05. Due 11/20.",
+      "decision_note": "Addendum 1.0 (BidNet 10/26): closing moved 2026-10-29 -> 2026-11-20 (BidNet date; 14:00 MT assumed from the original IFB closing time, confirm on BidNet). MANDATORY site visit Tue 2026-11-10 13:30 at Traut Elementary front entrance (2515 Timberwood Dr, Fort Collins), then Preston MS and Fossil Ridge HS; RSVP by email listing the sites to strategicsourcing@psdschools.org. Questions via BidNet through 2026-11-13 14:00 MT. Fire-suppression service and make-up-air inspection excluded. Full package + addendum docs in bids/_watch/downloads/bidnet/0000439455/. Needs a hood-cleaning sub (HOODZ-type) to price Attachment D and attend the walk. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): IFB 27-701-002 low bid. MANDATORY site visit 2026-11-10 13:30 at Traut Elementary, RSVP strategicsourcing@psdschools.org. 3 hood firms drafted 10/28 with package zip. Prof. liability $1M/$3M. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): HOODZ per-school price confirmed 11/04 (figure in bids/poudre-sd-kitchen-hood/private/); Carlos Ahedo meets Luke at the MANDATORY 11/10 13:30 walk (Traut ES); RSVP sent 11/05. Due 11/20.",
       "prebid": "2026-11-10T13:30:00-07:00",
       "prebid_mandatory": true,
       "performer": "Brown Bison + hood-cleaning sub",
@@ -1974,6 +1976,36 @@
       "when": "2026-10-30T15:10:00Z",
       "kind": "sub-outreach",
       "note": "Follow-up to Colorado Standby (Brad Orgill) with the revised RFP and price sheet; numbers asked by Tue 11/03."
+    },
+    {
+      "bid": "adams-2026-766",
+      "when": "2026-11-04T21:53:00Z",
+      "kind": "addendum",
+      "note": "Addendum 1: due moved Thu 11/12 15:00 -> Wed 12/02 15:00 MT (only change). Mandatory walk remains the 10/21 one."
+    },
+    {
+      "bid": "metro-water-b26019",
+      "when": "2026-11-04T23:38:00Z",
+      "kind": "addendum",
+      "note": "Addenda 1 (Q&A: NETA cert desired, equivalents OK; outage windows; primary injection) and 2 (new standby/remobilization rates on the bid schedule). Subs need both; HQ's 11/05 chase sent only Attachment 2."
+    },
+    {
+      "bid": "weld-jail-rtu-b2600111",
+      "when": "2026-11-05T18:15:00Z",
+      "kind": "communication",
+      "note": "BidNet: Weld County released a new communication on the RTU solicitation (content behind BidNet login; may answer HQ's second-walk request)."
+    },
+    {
+      "bid": "cdoc-tcf-boiler-water",
+      "when": "2026-11-05T18:21:00Z",
+      "kind": "award",
+      "note": "BidNet: CDOC published the award for DQ 2027000037 (Brown Bison withdrew 10/30)."
+    },
+    {
+      "bid": "laplata-oncall-trades",
+      "when": "2026-11-04T21:18:00Z",
+      "kind": "bounce",
+      "note": "info@garrhs.com blocked (mailer-daemon); HQ replaced it with info@comfortair.co 11/05 15:47Z."
     }
   ],
   "doc_gaps": [

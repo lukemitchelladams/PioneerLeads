@@ -7,7 +7,7 @@ Source: BidNet (adams-county) via GovTribe. Document in hand: docs/ADCO-IFB20267
 |------|------|
 | **Mandatory pre-bid meeting + walk-through** | **Wed 2026-10-21 at 10:00 am MT, Colorado Air & Space Port, 5200 Front Range Parkway, Watkins, CO 80137.** Secure facility: "take all necessary precautions ... tools, camera, masks." |
 | Questions due | Tue 2026-10-27 by 5:00 pm MT |
-| Bids due | Thu 2026-11-12 at 3:00 pm MT, electronic via BidNet Direct |
+| Bids due | **Wed 2026-12-02 at 3:00 pm MT** (Addendum No. 1, dated 2026-11-04: "New Bid Due Date: Wednesday December 2nd, 2026, 3:00 P.M."; was Thu 2026-11-12), electronic via BidNet Direct |
 | Scope | Phase 1: directional bores for conduit, pull new #6 THWN-2 copper in 13 sections, ground rods at caissons, 14 new LED pole-top luminaires, new branch wiring, NEC 2026. Phase 2: two new concrete caissons, set and plumb two poles (telehandler/boom). |
 | Term | 1 year + two 1-year renewals |
 | Bonds | 5% bid bond if >$50k at submittal; Performance & Payment 100% at execution; 5% retainage >$150k; prevailing wage if >$250k |
