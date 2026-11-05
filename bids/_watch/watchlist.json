@@ -546,6 +546,13 @@
       "match": "0000441142",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "USFS Pagosa Ranger District janitorial 1240LP27Q0008",
+      "source": "samgov",
+      "match": "1240LP27Q0008",
+      "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
+      "sam_notice_id": "1d1b8d72c87844289d3efb4990073ded"
     }
   ]
 }

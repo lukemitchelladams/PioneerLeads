@@ -1356,6 +1356,21 @@
       "sub_pricing": "None (6 door firms asked: 3 emailed 10/29 + follow-up 10/30 08:18 MT, 3 more 10/30 ~08:25 MT incl. Gold Label Specialties; asked to meet at the Mon 11/02 10:00 mandatory walk or price from our photos by Fri 11/06; none replied; Luke attends Monday unless a sub confirms)",
       "folder": "bids/weldsd6-coiling-door-franklin",
       "contact": "BidNet"
+    },
+    {
+      "id": "usfs-pagosa-janitorial-1240LP27Q0008",
+      "agency": "USDA Forest Service, Pagosa Ranger District (San Juan NF)",
+      "title": "Janitorial services, Pagosa Ranger District, Pagosa Springs CO",
+      "sol": "1240LP27Q0008 (SAM 1d1b8d72c87844289d3efb4990073ded)",
+      "trade": "Janitorial",
+      "due": "2026-11-19T10:00:00-07:00",
+      "due_source": "SAM.gov responseDeadLine",
+      "portal": "SAM.gov (email quote to the CO per the RFQ; verify)",
+      "decision": "EVALUATE",
+      "decision_note": "NEW 2026-11-05 22:36Z. Total Small Business set-aside, NAICS 561720 ($22M), PSC S201. 8 attachments downloaded to docs/. Site visit date/mandatory status: being read from the RFQ now (rule 0). Sub needed in Pagosa Springs/Durango.",
+      "contact": "Stephen Holly, stephen.holly@usda.gov",
+      "sub_pricing": "None",
+      "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008"
     }
   ],
   "events": [
