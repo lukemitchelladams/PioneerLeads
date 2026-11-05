@@ -722,7 +722,7 @@
       "subs": "3 drafted 10/28",
       "folder": "bids/poudre-sd-kitchen-hood",
       "contact": "strategicsourcing@psdschools.org",
-      "sub_pricing": "None (3 hood firms emailed 10/28; 1 bounced; pricing asked for by 11/13)"
+      "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13:30 walk)"
     },
     {
       "id": "boulder-bid-321-26",
@@ -922,8 +922,8 @@
       "due": "2026-11-05T14:00:00-07:00",
       "due_source": "BidNet listing 11/05/2026 02:00 PM MST",
       "portal": "BidNet",
-      "decision": "GO",
-      "decision_note": "Found 2026-10-28 via addendum (Q&A 1 + Generator General Information.xlsx). Same trade as Parker generator (due 11/06): the same subs Luke is talking to could price both. Docs queued on watchlist. Check walk. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): Conditional: only if one of Luke's phone-priced generator subs prices it by 11/03. Needs 3 tech resumes (3+ yrs, within 75 mi), narrative, PM schedule. Do NOT email generator subs (Luke handles by phone).",
+      "decision": "NO",
+      "decision_note": "Found 2026-10-28 via addendum (Q&A 1 + Generator General Information.xlsx). Same trade as Parker generator (due 11/06): the same subs Luke is talking to could price both. Docs queued on watchlist. Check walk. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): Conditional: only if one of Luke's phone-priced generator subs prices it by 11/03. Needs 3 tech resumes (3+ yrs, within 75 mi), narrative, PM schedule. Do NOT email generator subs (Luke handles by phone). | 2026-11-05: NO per the local operator's call recorded in ops/plan_ceo/COORDINATION.md ('local call is no-go (own-employee technician rule)'); closed 11/05 14:00 with nothing submitted.",
       "prebid": null,
       "prebid_mandatory": null,
       "performer": "Generator sub (Luke's contacts)",
@@ -2006,6 +2006,12 @@
       "when": "2026-11-04T21:18:00Z",
       "kind": "bounce",
       "note": "info@garrhs.com blocked (mailer-daemon); HQ replaced it with info@comfortair.co 11/05 15:47Z."
+    },
+    {
+      "bid": "dougco-generator-037-26",
+      "when": "2026-11-05T21:00:00Z",
+      "kind": "closed",
+      "note": "Closed 14:00 MST; NO (own-employee technician rule, local operator's call). Nothing submitted."
     }
   ],
   "doc_gaps": [
