@@ -1666,6 +1666,18 @@
       "verdict": "NO",
       "why": "Human/social services contract, not our trades; no profile match. HQ also NO 20:37Z.",
       "at": "2026-11-05T21:25:00Z"
+    },
+    "bidnet:444221804170": {
+      "name": "Office Space Lease, Lusk, Wyoming (BidNet aggregate 444221804170, closes 2026-12-04)",
+      "verdict": "NO",
+      "why": "Federal office lease in Wyoming, not our trades; no profile match.",
+      "at": "2026-11-05T22:25:00Z"
+    },
+    "bidnet:2721803492": {
+      "name": "DFC Bldg. 56 Clean Room - Design/Build (BidNet aggregate 2721803492; closing 11/16 -> 11/17)",
+      "verdict": "NO",
+      "why": "Federal design-build construction, not our trades; no profile match.",
+      "at": "2026-11-05T22:25:00Z"
     }
   },
   "watched": {
@@ -1851,6 +1863,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-11-05T21:25:00Z: GovTribe still blocked. HQ 20:36Z scan: BidNet blind (3h login gap, next 21:03Z; rows from 18:36Z), SAM 112, VSS 65/2 (recovered), Bonfire 2/1 no creds, DIBBS stale since 10/20. 1 NEW VSS = CDLE MHSE -> NO. Inbox: 1 new = Mark Talbert, Budget 8 Septic (FCC Florence, Mac thread). No CRM brief.",
+  "last_hourly_check": "2026-11-05T22:25:00Z: GovTribe still blocked. HQ 21:36Z scan: BidNet ROBOT CHECK again at the 21:37Z fresh login (cool-down to 23:37Z, next login 00:35Z; rows carried from 18:36Z), SAM 112, VSS 64/2, Bonfire no creds, DIBBS stale. No NEW matches; 2 non-matching aggregate rows NO (Lusk WY lease, DFC clean room). Inbox: nothing unseen; still no Parker numbers from Brad. No CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
