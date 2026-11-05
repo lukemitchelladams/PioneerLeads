@@ -6,6 +6,8 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 ## Files in docs/
 
 - RFP 26-021-1 Generator Maintenance and Repair Services.pdf
+- RFP 26-021-1 Town of Parker Generator Maintenance - Revised.pdf
+- Town of Parker Generator Maintenance Services Price Sheet _ Forms - Revised.xlsx
 
 ## Referenced in the solicitation
 
