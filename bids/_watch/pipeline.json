@@ -1373,7 +1373,9 @@
       "contact": "Stephen Holly, stephen.holly@usda.gov",
       "sub_pricing": "Requested 2026-11-05 from 3 firms with public emails (CRC Janitorial Durango, B&K Cleaning Durango, Evergreen Cleaning Bayfield); due Mon 2026-11-16 12:00 MT; 10 phone-only Pagosa/Durango/Cortez firms listed in sub-outreach.md",
       "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-      "next": "Luke: decide on the CO question (subcontracting limit; submission address) before 2026-11-10 10:00 MT, draft in vendor-questions.md; chase sub replies, call phone-only firms if none by 2026-11-09; build quote package (technical approach, key personnel, QCP, biobased list, employee list, Attachment 2 all years, Attachment 7) for Luke to submit by 2026-11-19 10:00 MT."
+      "next": "Luke: decide on the CO question (subcontracting limit; submission address) before 2026-11-10 10:00 MT, draft in vendor-questions.md; chase sub replies, call phone-only firms if none by 2026-11-09; build quote package (technical approach, key personnel, QCP, biobased list, employee list, Attachment 2 all years, Attachment 7) for Luke to submit by 2026-11-19 10:00 MT.",
+      "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
+      "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke"
     }
   ],
   "events": [
@@ -2030,6 +2032,12 @@
       "when": "2026-11-05T21:00:00Z",
       "kind": "closed",
       "note": "Closed 14:00 MST; NO (own-employee technician rule, local operator's call). Nothing submitted."
+    },
+    {
+      "bid": "carbon-valley-mechanical-pm",
+      "when": "2026-11-05T22:50:00Z",
+      "kind": "communication",
+      "note": "BidNet: Carbon Valley P&RD released a new communication on the Mechanical Service and PM solicitation (content behind BidNet login; pull on the next logged-in scan, before the MANDATORY 11/10 09:00 walk)."
     }
   ],
   "doc_gaps": [

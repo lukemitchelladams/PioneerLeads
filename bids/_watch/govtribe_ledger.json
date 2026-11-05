@@ -1678,6 +1678,24 @@
       "verdict": "NO",
       "why": "Federal design-build construction, not our trades; no profile match.",
       "at": "2026-11-05T22:25:00Z"
+    },
+    "1d1b8d72c87844289d3efb4990073ded": {
+      "name": "USFS RFQ 1240LP27Q0008 Janitorial Services, Pagosa Ranger District (SAM 1d1b8d72c87844289d3efb4990073ded; total SB; NAICS 561720; due 2026-11-19 10:00 MT)",
+      "verdict": "GO",
+      "why": "Janitorial = our trade; RFQ p.6 'There is no scheduled site visit for this solicitation' (tour by appointment via Brandon Caley); LPTA; HQ folder bids/usfs-pagosa-janitorial-1240LP27Q0008, 3 local subs emailed 11/05, questions due 11/10 10:00 MT.",
+      "at": "2026-11-05T23:25:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000158": {
+      "name": "CDOC DQ1-CAAA-2027000158 Writing and Communication Program (closes 2026-11-10)",
+      "verdict": "NO",
+      "why": "Inmate education program, not our trades. HQ also NO.",
+      "at": "2026-11-05T23:25:00Z"
+    },
+    "coloradovss:DQ1-CAAA-2027000166": {
+      "name": "CDOC DQ1-CAAA-2027000166 Fresh Eggs RFQ (closes 2026-11-12)",
+      "verdict": "NO",
+      "why": "Food commodity, not our trades. HQ also NO.",
+      "at": "2026-11-05T23:25:00Z"
     }
   },
   "watched": {
@@ -1863,6 +1881,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-11-05T22:25:00Z: GovTribe still blocked. HQ 21:36Z scan: BidNet ROBOT CHECK again at the 21:37Z fresh login (cool-down to 23:37Z, next login 00:35Z; rows carried from 18:36Z), SAM 112, VSS 64/2, Bonfire no creds, DIBBS stale. No NEW matches; 2 non-matching aggregate rows NO (Lusk WY lease, DFC clean room). Inbox: nothing unseen; still no Parker numbers from Brad. No CRM brief.",
+  "last_hourly_check": "2026-11-05T23:25:00Z: GovTribe still blocked. HQ 22:35Z scan: BidNet in robot-check cool-down to 23:36Z (rows 624/78 carried from 21:35Z attempt; last good list 18:36Z), SAM 113, VSS 64/2, Bonfire no creds, DIBBS stale. 1 NEW = USFS Pagosa janitorial 1240LP27Q0008 -> GO by HQ (no site visit; due 11/19 10:00 MT; 3 subs emailed); 2 VSS NOs. Inbox: BidNet communication on Carbon Valley mechanical PM (login needed). Still no Parker numbers from Brad.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
