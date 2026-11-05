@@ -54,3 +54,4 @@ Owner, Brown Bison Holdings LLC
 
 ## Log
 - 2026-10-28 19:30Z (hourly scan, read-only): file created; 7 email candidates + 5 phone-only firms sourced; nothing sent.
+- 2026-11-05 20:06Z (HQ first touch): sent to all 7 email candidates above, bcc, msg 1a1ad50ae4288cc5 (ops/outbox/2026-11-05/fortcollins-doors.txt, subject "Fort Collins Transfort overhead doors (ITB 10366): sub pricing"). Asked for pricing by **Mon 11/23**; nine sectional doors, Clopay 3724 basis of design, Davis-Bacon; bids due 12/02. Bonds not mentioned. Attached the ITB, Attachment B Specifications and Attachment A Drawings (16.9 MB). The original ITB PDF is 35 MB, so the attached copy is docs/10366 ITB Transfort Overhead Door Replacements.pdf, the same 140 pages with scanned pages downsampled to 10 MB. Pre-bid walk (11/02) had already passed, so it was not offered. No replies in hand yet.

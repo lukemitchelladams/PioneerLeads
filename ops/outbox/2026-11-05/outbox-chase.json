@@ -1,0 +1,69 @@
+[
+  {
+    "key": "boettcher-chase",
+    "subject": "Re: Jeffco Boettcher Mansion chiller replacement (ITB 26-19289AP-FM): sub pricing",
+    "thread": "1a183667fe0fd8e8",
+    "bcc": [
+      "rockymountain@rasmech.com",
+      "quotes@westechusa.com",
+      "info@haynesmechanical.com",
+      "info@msicolorado.com",
+      "info@maddisonmechanical.com"
+    ],
+    "files": [
+      "bids/_watch/downloads/bidnet/0000440224/Addendum _1 - 26-19289AP-FM.docx",
+      "bids/_watch/downloads/bidnet/0000440224/2864.18_Jeffco Boetcher Mansion Chiller Replacement_Add 1_Elec_2026.11.03.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-05/boettcher-chase.txt",
+    "mb": 2.3
+  },
+  {
+    "key": "carbonvalley-chase",
+    "subject": "Re: Carbon Valley Parks & Rec mechanical service and PM: sub pricing",
+    "thread": "1a1893e385c22713",
+    "bcc": [
+      "info@asemech.net",
+      "info@longview-hvac.com",
+      "info@msicolorado.com"
+    ],
+    "files": [],
+    "body_file": "ops/outbox/2026-11-05/carbonvalley-chase.txt",
+    "mb": 0
+  },
+  {
+    "key": "metro-chase",
+    "subject": "Re: Metro Water Recovery switchgear and relay maintenance (RFP B-26-019): sub pricing",
+    "thread": "1a183666362fbe77",
+    "bcc": [
+      "contact@powersolutionsgroup.com",
+      "office@precisiontestinggroup.com",
+      "inquiries@shermco.com",
+      "ersmarketing@vertivco.com"
+    ],
+    "files": [
+      "bids/metro-water-switchgear-maintenance/docs/Attachment 2 - Price Proposal.xlsx"
+    ],
+    "body_file": "ops/outbox/2026-11-05/metro-chase.txt",
+    "mb": 0.05
+  },
+  {
+    "key": "fortcollins-doors",
+    "subject": "Fort Collins Transfort overhead doors (ITB 10366): sub pricing",
+    "bcc": [
+      "jesse@nelsondoor.com",
+      "frontrangeohd@hotmail.com",
+      "candmgaragedoorsllc@gmail.com",
+      "silverbackgaragedoor@gmail.com",
+      "sales@garagedoorsystemsinc.com",
+      "quote@goldlabeldoor.com",
+      "frontdesk@overheaddoordenver.com"
+    ],
+    "files": [
+      "bids/fort-collins-transfort-doors/docs/10366 ITB Transfort Overhead Door Replacements.pdf",
+      "bids/_watch/downloads/bidnet/0000439726/Attachment B Specifications.pdf",
+      "bids/_watch/downloads/bidnet/0000439726/Attachment A Drawings .pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-05/fortcollins-doors.txt",
+    "mb": 16.9
+  }
+]

@@ -16,5 +16,42 @@
     ],
     "bcc_count": 0,
     "attachments": []
+  },
+  "boettcher-chase": {
+    "id": "1a1ad5087819114a",
+    "threadId": "1a183667fe0fd8e8",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "Addendum _1 - 26-19289AP-FM.docx",
+      "2864.18_Jeffco Boetcher Mansion Chiller Replacement_Add 1_Elec_2026.11.03.pdf"
+    ]
+  },
+  "carbonvalley-chase": {
+    "id": "1a1ad508bfe2be06",
+    "threadId": "1a1893e385c22713",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": []
+  },
+  "metro-chase": {
+    "id": "1a1ad5091f947b9f",
+    "threadId": "1a183666362fbe77",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "Attachment 2 - Price Proposal.xlsx"
+    ]
+  },
+  "fortcollins-doors": {
+    "id": "1a1ad50ae4288cc5",
+    "threadId": "1a1ad50ae4288cc5",
+    "to": [],
+    "bcc_count": 7,
+    "attachments": [
+      "10366 ITB Transfort Overhead Door Replacements.pdf",
+      "Attachment B Specifications.pdf",
+      "Attachment A Drawings .pdf"
+    ]
   }
 }
