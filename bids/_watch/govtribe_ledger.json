@@ -1660,6 +1660,12 @@
       "verdict": "NO",
       "why": "Herbicide/weed treatment on a state wildlife area: not our trades (rule 8); no profile match. HQ also NO 14:4xZ.",
       "at": "2026-10-30T15:28:00Z"
+    },
+    "coloradovss:RFP-KAVA-2027000058": {
+      "name": "CDLE Division of Vocational Rehabilitation RFP-KAVA-2027000058 Mental Health Supported Employment (MHSE), closes 2026-11-20",
+      "verdict": "NO",
+      "why": "Human/social services contract, not our trades; no profile match. HQ also NO 20:37Z.",
+      "at": "2026-11-05T21:25:00Z"
     }
   },
   "watched": {
@@ -1845,6 +1851,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-11-05T20:35:00Z: WORKER back on (stand-down 10/30-11/05 lifted by Luke in HQ). GovTribe still blocked (subscription inactive since 10/27). HQ 19:35Z scan: BidNet BLIND (login deferred by the 3h gap, next 21:03Z; rows from 18:36Z kept), SAM 112, VSS 65/2, Bonfire 2/1 (no creds; Cloudflare on detail pages), DIBBS stale since 10/20. No NEW matches. Addenda read: Metro Water B-26-019 A1+A2, Adams 2026.766 A1 (due -> 12/02 15:00). Inbox: 28 unseen logged (sub replies on Mac-owned threads, 2 bounces, BidNet notices).",
+  "last_hourly_check": "2026-11-05T21:25:00Z: GovTribe still blocked. HQ 20:36Z scan: BidNet blind (3h login gap, next 21:03Z; rows from 18:36Z), SAM 112, VSS 65/2 (recovered), Bonfire 2/1 no creds, DIBBS stale since 10/20. 1 NEW VSS = CDLE MHSE -> NO. Inbox: 1 new = Mark Talbert, Budget 8 Septic (FCC Florence, Mac thread). No CRM brief.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
