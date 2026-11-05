@@ -1,6 +1,6 @@
-# Bid watch report — 2026-11-05T20:21:00+00:00
+# Bid watch report — 2026-11-05T20:36:09+00:00
 
-**Headline:** BLIND: bidnet (login deferred on purpose), coloradovss; not scanned this run (previous results kept): dibbs
+**Headline:** BLIND: bidnet (login deferred on purpose); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
@@ -8,9 +8,9 @@
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
 | bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-11-05T18:36:33+00:00; login deferred: last fresh login 2026-11-05T18:03:49+00:00, next allowed after 2026-11-05T21:03:49+00:00 (fresh logins kept 3 h apart: BidNet's robot check trips on them; the saved session had expired) | 623 |  | 78 | 2026-11-05T18:36:33+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-05T20:21:00+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 112 |  | 112 | 2026-11-05T20:21:00+00:00 | 0 |
-| coloradovss | yes | n/a | BLIND this run, showing last good data from 2026-11-05T19:35:46+00:00; public list (no login) | 65 |  | 2 | 2026-11-05T19:35:46+00:00 | 2 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-05T20:36:09+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +38 from the nightly bulk file | 112 |  | 112 | 2026-11-05T20:36:09+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 2 | 2026-11-05T20:36:09+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -129,6 +129,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | ENERGY, DEPARTMENT OF / ENERGY, DEPARTME | Design-Build Services – STM Security Fencing - North Boundary | 2026-11-11 (6d) |  | https://sam.gov/workspace/contract/opp/5988a90b5fb94514a89cebc7362a22b5/view |
 | brownbison | bidnet |  | Y--LB Lateral Water Line and Facilities Replacement for Wastewater System | 2026-11-11 (6d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721170072?target=view |
 | brownbison | bidnet |  | Design-Build Services – STM Security Fencing - North Boundary | 2026-11-11 (6d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721455417?target=view |
+| brownbison | coloradovss | Pikes Peak Community College | RFQ 2768 As-Needed Consulting Services for Design | 2026-11-12 (7d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | Sole Source to Lake Shore Systems - Winch Assembly | 2026-11-12 (7d) |  | https://sam.gov/workspace/contract/opp/636a308a458f4e0a8491a0087069997f/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-11-12 (7d) |  | https://sam.gov/workspace/contract/opp/7344ad5ce5304aa68109854c6d5871f5/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-11-12 (7d) |  | https://sam.gov/workspace/contract/opp/9f4a62609e3d4f2ea5c0c6fafe923840/view |
@@ -137,7 +138,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Fort Lewis College | Fire Alarm Inspection & Testing | 2026-11-12 (7d) | 2026-10-20 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Inspection-Testing/0000439558?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Housing Authority | Elevator Preventative Maintenance, Repairs and Capital Improvements | 2026-11-12 (7d) | 2026-10-27 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Elevator-Preventative-Maintenance-Repairs-and-Capital-Improvements/0000440261?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | As-Needed Consulting Services for Design | 2026-11-12 (7d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view |
-| brownbison | coloradovss | Pikes Peak Community College | RFQ 2768 As-Needed Consulting Services for Design | 2026-11-12 (7d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | BEARING, BALL, ANNULAR | 2026-11-13 (8d) |  | https://sam.gov/workspace/contract/opp/4d6004a59233469891e19218228f709c/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  BEARING, BALL, ANNULAR | 2026-11-13 (8d) |  | https://sam.gov/workspace/contract/opp/d637ce3f46ee458e835243c74d5a2a42/view |
 | jones-bearing | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | WINCH, DRUM | 2026-11-13 (8d) |  | https://sam.gov/workspace/contract/opp/d150dad1528141788616e2b0d93d00c0/view |
@@ -145,11 +145,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet |  | Station One Janitorial Services | 2026-11-13 (8d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view |
 | brownbison | bidnet |  | Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project | 2026-11-13 (8d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view |
 | brownbison WATCHED | bidnet |  | Snowmelt Boiler Plant | 2026-11-15 (10d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view |
+| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (11d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (11d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-16 (11d) |  | https://sam.gov/workspace/contract/opp/d46978346bbe4e96890506336d3711ef/view |
 | brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-16 (11d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (11d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view |
-| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (11d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison WATCHED | bidnet | Jefferson County | Boettcher Mansion Chiller Replacement Project | 2026-11-17 (12d) | 2026-10-26 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Adams County | On-Call Employment Investigations | 2026-11-17 (12d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Arvada | On-Call Traffic Control Services Citywide - REISSUE | 2026-11-17 (12d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1 |
@@ -239,5 +239,3 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bidnet: bidnet list incomplete this scan: previous open bids carried forward, none marked closed
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
-- coloradovss: ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200)
-- coloradovss: coloradovss list incomplete this scan: previous open bids carried forward, none marked closed

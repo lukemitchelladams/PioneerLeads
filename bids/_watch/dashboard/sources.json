@@ -13,7 +13,7 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set; detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-05T20:21:00+00:00"
+  "last_success": "2026-11-05T20:36:09+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +38 from the nightly bulk file",
   "open_count": 112,
   "matches": 112,
-  "last_success": "2026-11-05T20:21:00+00:00"
+  "last_success": "2026-11-05T20:36:09+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -33,11 +33,11 @@
  },
  {
   "source": "ColoradoVSS (State of Colorado)",
-  "status": "Blind this run (last good data shown)",
-  "detail": "HTTP 200; showing 65 rows from the last good read; public list (no login); ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200); coloradovss list incomplete this scan: previous open bids carri",
+  "status": "Live (public, not logged in)",
+  "detail": "public list (no login)",
   "open_count": 65,
   "matches": 2,
-  "last_success": "2026-11-05T19:35:46+00:00"
+  "last_success": "2026-11-05T20:36:09+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
