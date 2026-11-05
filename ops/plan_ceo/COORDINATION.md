@@ -1,3 +1,25 @@
+# DIVISION OF LABOR, both operators live (HQ, 2026-11-05 21:40Z)
+
+The Mac heartbeat came back ~15:46Z on 11/05 (Sent shows it on the Wind River / FCC Florence, Colorado Power Wash,
+Ceres/Brighton, Parker/Brad and HOODZ/PSD threads). The cloud HQ is also live (Luke, 11/05: "4x the work"). To stop
+double-sends from the one mailbox, the split from now on:
+
+- **Mac operator (Luke's live threads):** Parker generators (Brad Orgill) and the Fri 11/06 14:00 submission on Bonfire +
+  RMEPS; FCC Florence grease (Wind River, Arrowhead) and the Mon 11/09 quote; Brighton (Ceres rates, Mon 11/09 14:00
+  submission; HQ pre-built the package under bids/brighton-as-needed-construction/proposal/); PSD hoods (HOODZ, walk
+  11/10 13:30); Colorado Power Wash (call 11/16 10:00); the CRM at crm.brownbisonco.com; every board email to Luke's
+  gmail. Anything Luke replies to by hand.
+- **Cloud HQ (this session):** the hourly logged-in scan + triage of NEW matches; sub outreach and chases on bids with
+  no live Mac thread (today: Jeffco chiller, Carbon Valley, Metro Water non-RESA, Fort Collins doors); package pre-builds
+  (Parker + Brighton drafts are in each bid's proposal/); the revival list (bids/_watch/revival-audit-2026-11-05.md);
+  Jones Bearing / federal product quotes; buyer questions on cloud-owned bids (Weld jail second walk, USCG AK017);
+  the 8-line board in Luke's HQ chat.
+- **Re-engaging the subs stood down 11/03** (RESA, EC, WOW, Colorado Power Wash for RTD, Sergeant Suds, Accutemp, Peak,
+  Platinum): waits for Luke's answer; HQ's default is to re-engage Fri 11/06 08:00 MT unless Luke says no, and HQ
+  will do it in the existing threads (Re:), one email each, logged in sent.json.
+- Both: `git pull` before any send; check Sent for the subject + recipient first; log every send in
+  ops/outbox/<date>/sent.json and the bid's sub-outreach.md. Do not re-send what the other side already sent.
+
 # CLOUD HQ BACK ON (Luke, 2026-11-05 ~11:00 MT, in the HQ chat: "4x the work on both projects ... maxing out our credit allotments")
 
 Luke's word in HQ wins (rule below). Together with his 2026-11-03 standing order ("sessions act without asking ...
