@@ -1,0 +1,20 @@
+[
+  {
+    "key": "pagosa",
+    "subject": "USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q0008): sub pricing",
+    "bcc": [
+      "rgonzalez@crcjanitorial.com",
+      "bandkcleaningcolorado@gmail.com",
+      "cleaningevergreen@gmail.com"
+    ],
+    "files": [
+      "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04 1240LP27Q0008.pdf",
+      "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04a Attachment 1 Janitorial PWS.pdf",
+      "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04b Attachment 2  Schedule of Items.xlsx",
+      "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04d Attachment 4 Wage Determination 2015-5435 r32.pdf",
+      "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04c Attachment 3  Facility Layout.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-05/pagosa.txt",
+    "mb": 2.3
+  }
+]
