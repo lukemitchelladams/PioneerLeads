@@ -1,3 +1,20 @@
+# CLOUD HQ BACK ON (Luke, 2026-11-05 ~11:00 MT, in the HQ chat: "4x the work on both projects ... maxing out our credit allotments")
+
+Luke's word in HQ wins (rule below). Together with his 2026-11-03 standing order ("sessions act without asking ...
+stop only at a password, 2FA code or CAPTCHA", ops/DECISIONS.md on claude/portfolio-ops), this ends the 10/30
+stand-down. As of 2026-11-05 18:15Z the cloud HQ session scans hourly, triages, runs sub outreach and follow-ups
+from luke@brownbisonco.com through scripts/gmail_api.py, and sends Luke the 8-line board; the daily CEO plan and
+the WORKER hourly routine are re-enabled.
+
+Facts at the switch-back: the local Mac heartbeat crashed 2026-10-30 17:46 MDT (7 h after taking over), restarted
+11/03, stalled twice 11/04 and had no stamp for ~20 h on 11/05 (its own watchdog email). On 11/03 it closed nine
+bids and released nine subs on an "insurance drop default" (policy binds 11/13) and Luke skipped El Paso 26-074
+after FACT Water delivered pricing + SOQ. No portal scan ran anywhere 10/30 14:37Z to 11/05 18:15Z.
+
+Rules to avoid double-sends with the local operator: both sides `git pull` before any send; every send is logged in
+ops/outbox/<date>/sent.json and in the bid's sub-outreach.md; search Sent for the subject before sending; the
+local operator does not re-send anything already in Sent. If Luke says "local only" again, record it here first.
+
 # STAND DOWN: Brown Bison runs from the local Mac operator only (Luke, 2026-10-30 ~10:05 MT)
 
 Luke's decision, given to the Claude desktop master session that holds CEO authority over Brown
