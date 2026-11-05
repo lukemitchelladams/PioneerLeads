@@ -1072,7 +1072,7 @@
   "decision": "REVIVE-IF",
   "decision_note": "Found 2026-10-27 21:36Z scan. BidNet events: 'Prebid Conference, Attendance Recommended, 11/06/2026 09:00 AM MST, Microsoft Teams'. Due 2026-12-02 (time TBD; package watchlisted). Landscaping/irrigation on-call = Alex Ditto scope. | Package read 2026-10-28 00:22Z: RFP R26-099MZ 'Parks On-Call Irrigation Repairs'; pre-proposal conference 2026-11-06 via Microsoft Teams, 'This meeting is not mandatory'; 'Proposal Due Date December 2, 2026 2:00PM MT'; Appendix A hourly rate sheet; contract through 2031-12-31. Alex Ditto/YMS scope. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): Via Alex/YMS only if YMS has a CIC or CIT on staff. Optional Teams pre-proposal 11/06 09:00. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): optional Teams 11/06 09:00; YMS needs a CIC/CIT on staff. Luke asks Alex.",
   "prebid": "2026-11-06T09:00:00-07:00",
-  "walk": "Optional, in 19h",
+  "walk": "Optional, in 18h",
   "performer": "Alex Ditto (YMS)",
   "subs": null,
   "sub_pricing": "None",
