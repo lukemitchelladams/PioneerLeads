@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T19:35:46+00:00",
+  "checked_at": "2026-11-05T20:21:00+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -32,7 +32,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-05T19:35:46+00:00",
+      "last_success": "2026-11-05T20:21:00+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -40,19 +40,22 @@
       "reachable": true
     },
     "coloradovss": {
-      "complete": true,
+      "blind": true,
+      "carried_forward": true,
+      "complete": false,
       "count": 65,
       "creds": {},
-      "errors": [],
+      "errors": [
+        "ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200)",
+        "coloradovss list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
       "last_success": "2026-11-05T19:35:46+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 2,
       "reach_note": "HTTP 200",
       "reachable": true,
-      "site_totals": {
-        "statewide open": 65
-      }
+      "site_totals": {}
     },
     "dibbs": {
       "count": 307,
@@ -84,7 +87,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-05T19:35:46+00:00",
+      "last_success": "2026-11-05T20:21:00+00:00",
       "logged_in": true,
       "login_note": "API key; +38 from the nightly bulk file",
       "matches": 112,
