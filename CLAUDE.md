@@ -54,6 +54,21 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **HARD RULE: every email to anyone other than Luke passes /humanize lint, every single time** (Luke, 2026-11-05
+  ~11:00 MT, verbatim: "when you are going thru and sending email responses to people in this project, you have been
+  using the humanize skill, correct? we need to always be doing that as a hard rule every single time going forward").
+  Every non-Luke email passes `hz.py lint` through `scripts/humanize_gate.py` (pre-check: `python3 scripts/humanize_gate.py
+  check BODY` must print PASS). `scripts/gmail_api.py send` runs the gate before any network call and refuses otherwise
+  (exit 3, "HUMANIZE: ..."); `scripts/send_outbox.py` prints REFUSED, does not record the entry and exits 3. Gmail
+  connector sends (send_message / reply / forward) are checked by the PreToolUse hook in `.claude/settings.json` and
+  denied when they fail. There is no bypass flag. Group mail uses "Hi Team," / "Thanks Team," (never "Hi," or "Thanks,").
+  A gmail_api.py body file ends at "Thanks <FirstName>,": the sender appends the signature. A connector body ends with
+  "Thanks <FirstName>," and then the five signature lines (the connector adds nothing). The title is **Operations
+  Manager** (Luke 2026-10-18; never Owner, CEO, General Manager or Sales Manager). The gate also refuses links,
+  look-alike or invisible characters, .txt/.html/.eml attachments, and `--no-signature` to outside recipients. A reply
+  that answers several questions may go over 150 words only with the inbound email saved as text:
+  `--asks-from FILE` (manifest `asks_from`); without it, asks is capped at 1. Only mail to Luke's own addresses
+  (luke@brownbisonco.com, lukemitchelladams@gmail.com) is exempt.
 - **Use the humanize skill (.claude/skills/humanize) for every email, message and reply, going forward. Be concise:
   no walls of text** (Luke, 2026-10-21). If ~/.claude/skills/humanize is missing in a new container, copy it from
   .claude/skills/humanize and run `python3 ~/.claude/skills/humanize/scripts/hz.py init`.

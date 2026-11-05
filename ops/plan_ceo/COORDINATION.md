@@ -71,3 +71,25 @@ sub replies, buyer questions, scans, pricing, packages, the CRM of record, and e
 Luke's standing rules in `CLAUDE.md` here (8-line board updates, no links in outside email, H2
 Global first for water treatment, no heavy civil, humanize every email, complete packages) now live
 in the local operator's `docs/ops/orchestration.md` as well.
+
+# 2026-11-05: the humanize gate now guards the cloud sender (set by the Mac CEO session)
+
+Luke's hard rule (2026-11-05 ~11:00 MT): every email to anyone other than Luke passes /humanize `hz.py lint`, every
+time. `scripts/humanize_gate.py` now guards both cloud send paths. It is a self-contained, STRICTER port of the Mac's
+brown-bison-gov/data/humanize_gate.py, not the same gate; its docstring lists the differences.
+- `scripts/gmail_api.py send` runs the gate on the body, subject and attachment types before any token or network call
+  and refuses on a FAIL (exit 3, "HUMANIZE: ..."). `call()` refuses a POST to the send endpoints that send() did not
+  build. `scripts/send_outbox.py` runs the gmail_api.py beside it, validates each manifest entry, prints "REFUSED
+  <key>" or "FAILED <key>", leaves those entries out of sent.json and exits 3 (refused) or 1 (failed).
+- Gmail connector send_message / reply / forward go through a PreToolUse hook in `.claude/settings.json`
+  (`humanize_gate.py hook`, fail-closed). The hook also denies draftId sends, htmlBody and includeSignature.
+- Body shape: "Hi <FirstName>," ("Hi Team,"), the message, "Thanks <FirstName>," ("Thanks Team,"). Every closer name must
+  appear in the greeting. A gmail_api.py body file stops at the closer, because the sender appends the Operations Manager
+  signature. A connector body carries the five signature lines after the closer.
+- Refused even when hz.py only warns: more than 150 words by the gate's own count, more than 12 "Label: value" lines,
+  links, look-alike or invisible characters, .txt/.html/.eml attachments, and `--no-signature` to outsiders.
+- asks above 1 needs the inbound email saved as text (`--asks-from FILE`, manifest `asks_from`). asks = min(declared,
+  its '?' count), up to 20. There is no --long and no approvals file.
+- Only the repo's copy of hz.py runs.
+- Pre-check: `python3 scripts/humanize_gate.py check BODY [--asks-from INBOUND] [--subject S] [--signature]`.
+- Today's weld-second-walk.txt went out with "Hi," / "Thanks," and a lint FAIL. The gate now refuses that.

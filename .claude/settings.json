@@ -9,6 +9,18 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__.+__(send_message|reply|reply_all|forward|send_draft|send_email)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -I \"$CLAUDE_PROJECT_DIR/scripts/humanize_gate.py\" hook || exit 2",
+            "timeout": 90
+          }
+        ]
+      }
     ]
   },
   "permissions": {
