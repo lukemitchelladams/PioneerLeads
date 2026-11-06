@@ -8,8 +8,10 @@ this loop ships (session_sync.py). Documented in docs/bidwatch.md, "Mac-fed BidN
 
 Every tick (default 900 s):
   1. keepalive.check_once(): a logged-in page load with the saved session, never a password. Skipped while a scan on
-     this Mac holds the run lock or BidNet is in a robot-check cool-down.
-  2. Expired: a normal PortalSession login with BIDNET_USER/BIDNET_PASS (env or ~/.brownbison/env). BidNet's emailed
+     this Mac holds the run lock; it probes through a robot-check cool-down (a challenged probe ends the tick and
+     starts no cool-down).
+  2. Expired: a normal PortalSession login with BIDNET_USER/BIDNET_PASS (env or ~/.brownbison/env), but not while
+     BidNet is in a robot-check cool-down (the tick ends; the next one probes again). BidNet's emailed
      confirmation code is read from the mailbox (BIDNET_CODE_IMAP_PASS) or from `set_code.py <code>` run in another
      terminal while the browser waits on the prompt; a robot check starts the usual cool-down and the tick ends; the
      fresh-login gap (BIDWATCH_BIDNET_LOGIN_GAP_H) applies here as everywhere.
@@ -81,10 +83,13 @@ def push(out: Path) -> str:
 def tick(out: Path | None = None) -> dict:
     ka = keepalive.check_once()
     state = ka["state"]
-    if state.startswith("skipped") or state == "error":
+    if state.startswith(("skipped", "probe challenged")) or state == "error":
         return _status(state, note=ka.get("note") or ka.get("until") or "")
     note = ""
     if state != "alive":
+        until = bidnet.cooldown_until()
+        if until:  # the probe runs through a cool-down; a password login waits it out (that is what trips the check)
+            return _status(f"{state}; no login during the robot-check cool-down until {until}")
         ok, note = login_fresh()
         if not ok:
             return _status(f"not logged in: {note}")  # BLOCKED / deferred: nothing shipped, next tick tries again

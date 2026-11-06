@@ -889,6 +889,9 @@ _h11 = r11["health"]["bidnet"]
 check("robot check on a detail page: the pass stops at the first one, cool-down starts, stored detail kept",
       HITS2["detail"] - _d0 == 1 and bidnet.cooldown_until() and any("blocked" in e for e in _h11["errors"])
       and r11["found"]["bidnet:0000500002"].get("documents"), (HITS2, _d0, _h11["errors"]))
+check("robot check on a detail page: the health note / cycle line says it hit an enrichment page, not the login form",
+      "CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page" in (_h11.get("login_note") or "")
+      and not (_h11.get("login_note") or "").startswith("CHALLENGED"), _h11.get("login_note"))
 del os.environ["FAKE_ROBOT_DETAIL"]
 common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
 os.environ["FAKE_ROBOT_LIST"] = "1"
@@ -1011,6 +1014,9 @@ _cf = r20["found"].get(_W, {})
 check("robot check on a tab: detail pass stops, cool-down starts, stored tabs kept",
       bidnet.cooldown_until() and any("blocked" in e and "Communication tab" in e for e in r20["health"]["bidnet"]["errors"])
       and len(_cf.get("communications") or []) == 2 and _W not in r20["changed"], (r20["health"]["bidnet"]["errors"], _cf.get("communications")))
+check("robot check on a tab: the health note names the tab, not the login form (the cycle line read 'session reused' on 2026-11-06)",
+      r20["health"]["bidnet"]["logged_in"] and "CHALLENGED on an enrichment page, not the login form: BidNet robot check on the "
+      "Communication tab" in (r20["health"]["bidnet"].get("login_note") or ""), r20["health"]["bidnet"].get("login_note"))
 del os.environ["FAKE_ROBOT_TAB"]
 common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
 for _k in ("FAKE_COMM", "FAKE_QA"):
@@ -1193,6 +1199,58 @@ for _k in (common.NO_PASSWORD_ENV, session_sync.IMPORT_ENV, "STATE_PASSPHRASE"):
     os.environ.pop(_k, None)
 session_sync.DEFAULT_ENC = _dflt
 session_sync.IMPORT_RECORD.unlink(missing_ok=True)
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
+
+# keepalive through a robot-check cool-down (2026-11-06 15:41Z: a watched bid's tab served the robot check mid-scan, the
+# cool-down made the keepalive skip its 15:42Z tick, the session idled out, and the 16:36Z scan needed the fresh login
+# that trips the robot check): the probe runs with the saved session (reuse only), skips only without a saved session
+# file, and a challenged probe neither starts nor extends the cool-down
+print("keepalive during a robot-check cool-down")
+_kb = Browser()
+_ks0 = PortalSession(_kb, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+_ks0.ensure_login()  # password mode here: one fresh login (device already confirmed), saved on close
+_ks0.close()
+_kb.close()
+check("setup: a live saved session", _ks0.logged_in and _SESS.exists(), _ks0.login_note)
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
+_until = bidnet.start_cooldown()
+_p0, _h0 = LOGIN_POSTS["n"], HITS2["home"]
+_ka1 = keepalive.check_once()
+check("keepalive probes during a cool-down with a live saved session: alive, one page load, no password, cool-down untouched",
+      _ka1["state"] == "alive" and HITS2["home"] == _h0 + 1 and LOGIN_POSTS["n"] == _p0 and bidnet.cooldown_until() == _until,
+      (_ka1, HITS2["home"] - _h0, LOGIN_POSTS["n"] - _p0))
+SESSIONS.clear()  # BidNet times the session out inside the cool-down
+_p0, _h0 = LOGIN_POSTS["n"], HITS2["home"]
+_ka2 = keepalive.check_once()
+check("keepalive during a cool-down with an expired session: reports expired (not skipped), no POST to the login endpoint",
+      _ka2["state"].startswith("expired") and LOGIN_POSTS["n"] == _p0 and HITS2["home"] == _h0 + 1, (_ka2, LOGIN_POSTS["n"] - _p0))
+_ft3 = mac_session_feeder.tick(TMP / "feeder-out.enc")
+check("Mac feeder during a cool-down with an expired session: no password login until the cool-down ends",
+      _ft3["state"].startswith("expired") and "cool-down" in _ft3["state"] and LOGIN_POSTS["n"] == _p0, (_ft3, LOGIN_POSTS["n"] - _p0))
+os.environ["FAKE_ROBOT_HOME"] = "1"
+_cd_file = common.BIDNET_COOLDOWN_FILE.read_text()
+_ka3 = keepalive.check_once()
+check("a challenged probe during a cool-down: logged as challenged, cool-down file untouched, no login",
+      _ka3["state"] == f"probe challenged (cool-down until {_until})" and common.BIDNET_COOLDOWN_FILE.read_text() == _cd_file
+      and LOGIN_POSTS["n"] == _p0, (_ka3, _cd_file, common.BIDNET_COOLDOWN_FILE.read_text()))
+_ft4 = mac_session_feeder.tick(TMP / "feeder-out.enc")
+check("Mac feeder on a challenged probe: the tick ends, no login",
+      _ft4["state"].startswith("probe challenged") and LOGIN_POSTS["n"] == _p0, _ft4)
+common.BIDNET_COOLDOWN_FILE.unlink()
+_ka4 = keepalive.check_once()
+check("a challenged probe outside a cool-down starts none (that is the scan's call, not the keepalive's)",
+      _ka4["state"] == "probe challenged (no cool-down started here)" and not common.BIDNET_COOLDOWN_FILE.exists()
+      and LOGIN_POSTS["n"] == _p0, _ka4)
+del os.environ["FAKE_ROBOT_HOME"]
+_until = bidnet.start_cooldown()
+_aside = TMP / "bidnet-session.aside"
+_SESS.rename(_aside)
+_h0 = HITS2["home"]
+_ka5 = keepalive.check_once()
+_aside.rename(_SESS)
+check("no saved session file during a cool-down: skipped, BidNet not touched",
+      _ka5["state"].startswith("skipped") and "cool-down" in _ka5["state"] and HITS2["home"] == _h0 and _ka5.get("until") == _until, _ka5)
+common.BIDNET_COOLDOWN_FILE.unlink()
 common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
 srv.shutdown()
 

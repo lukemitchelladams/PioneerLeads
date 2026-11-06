@@ -534,6 +534,11 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 if missing:
                     h["errors"].append(f"{b.get('title', '')[:60]}: {len(missing)} of {len(docs)} documents not "
                                        "downloaded yet (tried again next scan)")
+    if blocked:
+        # the health note (and the cycle line's logins=) must not read as a clean "session reused" when the robot check
+        # hit an enrichment page and started a cool-down (2026-11-06 15:41Z): the login was fine, so say where it hit
+        h["login_note"] = (f"{h['login_note']}; " if h.get("login_note") else "") \
+            + f"CHALLENGED on an enrichment page, not the login form: {blocked}"
 
 
 def _diff(old: dict, new: dict) -> list[str]:

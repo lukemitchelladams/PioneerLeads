@@ -12,7 +12,11 @@ Rules it keeps:
     no scan logs in either: the status says it waits for a session synced from Luke's Mac (session_sync.py);
   * skips a tick while a scan holds the run lock, and never holds that lock itself (a held lock would make
     the hourly scan skip its whole run);
-  * skips while BidNet is in a robot-check cool-down.
+  * probes through a robot-check cool-down (reuse only, never a login): a saved session left alone for the 2 h
+    cool-down idles out, and the next scan then needs the fresh login that trips the robot check (2026-11-06
+    15:41Z, a watched bid's tab was challenged mid-scan). It skips only when there is no saved session file at
+    all, and a challenged probe is logged as "probe challenged (cool-down until ...)" without starting or
+    extending a cool-down from here.
 
     python3 scripts/bidwatch/keepalive.py --once        # one check, prints the result
     python3 scripts/bidwatch/keepalive.py --ensure      # start the background keeper if it is not running
@@ -33,11 +37,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from scripts.bidwatch import bidnet  # noqa: E402
 from scripts.bidwatch.browser import Browser, PortalSession  # noqa: E402
-from scripts.bidwatch.common import RUN_LOCK, STATE_HOME, bidnet_no_password, iso  # noqa: E402
+from scripts.bidwatch.common import RUN_LOCK, SESSION_DIR, STATE_HOME, bidnet_no_password, iso  # noqa: E402
 
 PID_FILE = STATE_HOME / "keepalive.pid"
 STATUS_FILE = STATE_HOME / "keepalive.json"
 LOG_FILE = STATE_HOME / "keepalive.log"
+SESSION_FILE = SESSION_DIR / "bidnet.json"  # the saved session PortalSession(br, "bidnet") reuses
 
 
 def _scan_running() -> bool:
@@ -66,22 +71,41 @@ def _status(state: str, **extra) -> dict:
     return st
 
 
-def session_alive() -> bool:
-    """One logged-in page load with the saved BidNet session and no login function (this process can never submit a
-    password): True when BidNet still shows us logged in. The refreshed cookies are saved then; that is the keep-alive.
-    Also the probe behind session_sync.py check."""
+def _challenged(page) -> bool:
+    """The page the probe landed on is BidNet's robot check, not a BidNet page."""
+    try:
+        html = bidnet._content(page)
+    except Exception:  # noqa: BLE001
+        return False
+    return bool(bidnet.BOT_RX.search(html)) and not bidnet.total_count(html)
+
+
+def probe() -> str:
+    """One page load with the saved BidNet session and no login function (this process can never submit a password):
+    "alive" when BidNet still shows us logged in (the refreshed cookies are saved then; that is the keep-alive),
+    "expired" when it shows the login window, "challenged" when it served its robot check instead of a page. A
+    challenged probe starts no cool-down: that is the scan's call, and this was a page load, not a login."""
     br = Browser()
     try:
         ses = PortalSession(br, "bidnet")
         try:
-            alive = bidnet.is_logged_in(ses.page)
+            try:
+                alive = bidnet.is_logged_in(ses.page)
+            except bidnet.Challenged:
+                return "challenged"
             if alive:
                 ses.logged_in = True  # close() then saves the refreshed cookies
-            return alive
+                return "alive"
+            return "challenged" if _challenged(ses.page) else "expired"
         finally:
             ses.close()
     finally:
         br.close()
+
+
+def session_alive() -> bool:
+    """True when the saved session is still logged in (one probe, never a login). Also behind session_sync.py check."""
+    return probe() == "alive"
 
 
 def expired_state() -> str:
@@ -93,15 +117,25 @@ def expired_state() -> str:
 
 
 def check_once() -> dict:
-    if bidnet.cooldown_until():
-        return _status("skipped: robot-check cool-down", until=bidnet.cooldown_until())
+    until = bidnet.cooldown_until()
+    if until and not SESSION_FILE.exists():
+        return _status("skipped: robot-check cool-down and no saved session to keep warm", until=until)
     if _scan_running():
         return _status("skipped: scan running")
     try:
-        alive = session_alive()
+        state = probe()
     except Exception as e:  # noqa: BLE001
         return _status("error", note=" ".join(f"{type(e).__name__}: {e}".split())[:160])
-    return _status("alive") if alive else _status(expired_state())
+    if state == "alive":
+        return _status("alive")
+    if state == "challenged":
+        # BidNet's robot check instead of the page: never start or extend a cool-down from here (a probe is not a
+        # login, and a cool-down that stops the probes is what let the session idle out on 2026-11-06)
+        until = bidnet.cooldown_until()
+        if until:
+            return _status(f"probe challenged (cool-down until {until})", until=until)
+        return _status("probe challenged (no cool-down started here)")
+    return _status(expired_state())
 
 
 def running_pid() -> int | None:

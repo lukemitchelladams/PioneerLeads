@@ -96,7 +96,10 @@ Then keep it ticking every 15 minutes. Quick way: `nohup python3 scripts/bidwatc
 
 Each tick: a logged-in page load with the saved session (the keep-alive, never a password); only when BidNet no longer
 recognises it, one normal login (emailed code via the mailbox or `set_code.py`; a robot check starts the usual 2 h
-cool-down and the tick ends; the 3 h fresh-login gap applies); then `session_sync.py export` to
+cool-down and the tick ends; the 3 h fresh-login gap applies); the keep-alive probe itself still runs during a
+cool-down (a session left unprobed for 2 h idles out, which is what forced the fresh login on 2026-11-06), skips only
+when there is no saved session file, and a challenged probe is logged as `probe challenged (cool-down until ...)`
+without starting or extending the cool-down, with no login until it ends; then `session_sync.py export` to
 `ops/session/bidnet-session.enc` and the push command (`$BIDWATCH_SESSION_FILE` names the file). A commit every 15
 minutes is a few KB and rebases cleanly against the hourly scan pushes. Status: `~/.brownbison/session_feeder.json`.
 macOS ships LibreSSL as `openssl`; if export fails with `unknown option` on `-pbkdf2`, `brew install openssl@3` and set
