@@ -967,3 +967,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 63 refuse + 19 pass lines from the 13:40 MT probe added to tests/phone_cases.json (refuse 264, pass 184). The gate now refuses first-person promises to call or ring the reader's side ('I'll give your office a call', 'Luke will call Jake'), plural calls / callbacks offered, bare cell / text / mobile offers, filler before talk / hop on, talk-soon times, Teams / Meet / sync-up invites and SMS / Signal / voice notes; phone equipment, the phone company, locate / inspection calls and 'better than a call' pass.
 - owner_only() accepts 'Luke Adams <lukemitchelladams@gmail.com>' and '<luke@brownbisonco.com>' (exact address after parsing; any outside recipient still linted).
 - The Mac copy brown-bison-gov/data/tests/phone_cases.json is NOT synced from here (other repo).
+
+### 2026-11-06 21:21Z hourly (WORKER, read-only)
+- Scan 20:36Z (1 h login gap): BidNet LOGGED IN (630/81), SAM 110, VSS 67/3; Bonfire Cloudflare-challenged. All 4 scanned sources live.
+- NEW GO (HQ): CDOC DQ 2027000132 BVCC boiler chemicals (BidNet 0000442938 = VSS DQ1-CAAA-2027000132; both ledgered GO). MANDATORY site visit Wed 2026-11-18 10:00 Buena Vista. Exhibit G + photo ID per attendee is due by Mon 11/16; the form itself asks ten days ahead (Sun 11/08), and HQ targets 11/08-11/09. Due 2026-11-30 14:00 MST. H2GS + 4 firms asked; sub pricing by Fri 11/20. doc_manifest shows 3 missing items (Appendix II, Attachment I, Form SS).
+- Centennial on-call building department services = NO, plus 4 non-matching adds NO. Inbox quiet; Alex's RTD pricing not in yet.
+- GO bids 7; sub pricing in hand 1/7 (PSD); Brighton, Pagosa and Canon City are partial or pending.
+- Dashboard blobs now: bids 39f818d178b65ef1152fd5c4d4bcf45a (v141, sha 9f5a1b505d21), events 8181b70d467218bc170b9a24a0ddb271 (v143, sha b76c51d4a8b8), sources 3ad8ad7d9fb938f6592ef3786515d7de (v128, sha fd8d05dbab5c), portal_feed b372e285960b7d573ad864e4153456b0 (v77, sha 3eae9b3cab47), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).

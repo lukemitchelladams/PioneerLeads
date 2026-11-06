@@ -2068,6 +2068,48 @@
    "verdict": "NO",
    "why": "Heavy civil utility work (rule 8).",
    "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442938": {
+   "name": "CDOC Boiler Chemicals & Treatment Services - BVCC (DQ 27-0132)",
+   "verdict": "GO",
+   "why": "CDOC DQ 2027000132 BVCC boiler chemicals: HQ GO (folder bids/doc-bvcc-boiler-chemicals-dq27-0132, pipeline cdoc-bvcc-boiler-chemicals). MANDATORY site visit Wed 2026-11-18 10:00 Buena Vista; Exhibit G + photo ID per attendee by Mon 11/16 (form asks ten days = Sun 11/08); due 2026-11-30 14:00 MST. H2GS + 4 firms asked; sub pricing by 11/20.",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "coloradovss:DQ1-CAAA-2027000132": {
+   "name": "CDOC Boiler Chemicals & Treatment SRVS BVCF (VSS copy of DQ 27-0132)",
+   "verdict": "GO",
+   "why": "CDOC DQ 2027000132 BVCC boiler chemicals: HQ GO (folder bids/doc-bvcc-boiler-chemicals-dq27-0132, pipeline cdoc-bvcc-boiler-chemicals). MANDATORY site visit Wed 2026-11-18 10:00 Buena Vista; Exhibit G + photo ID per attendee by Mon 11/16 (form asks ten days = Sun 11/08); due 2026-11-30 14:00 MST. H2GS + 4 firms asked; sub pricing by 11/20.",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:0000442569": {
+   "name": "City of Centennial On-Call Building Department Services",
+   "verdict": "NO",
+   "why": "Building department (inspection / plan review) staffing, not a construction trade we perform.",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:0000442180": {
+   "name": "Coal Creek channel restoration and flood control",
+   "verdict": "NO",
+   "why": "Heavy civil (rule 8).",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:0000442932": {
+   "name": "ITN commercial lease opportunity, 125 Riverwalk Place",
+   "verdict": "NO",
+   "why": "Real estate lease, not a bid for services.",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:0000442939": {
+   "name": "RFP adaptive reuse feasibility and concept design",
+   "verdict": "NO",
+   "why": "Architecture/design.",
+   "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:444223891358": {
+   "name": "School-based mental health services",
+   "verdict": "NO",
+   "why": "Not a profile match.",
+   "at": "2026-11-06T21:25:00Z"
   }
  },
  "watched": {
@@ -2253,6 +2295,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T20:25:00Z",
+ "last_hourly_check": "2026-11-06T21:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
