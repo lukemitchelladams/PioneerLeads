@@ -62,3 +62,4 @@ Subject: USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q000
   (only Durango-area trades firms for La Plata County 26-053-1215; none are cleaners). Sent to the 3 firms above via
   scripts/send_outbox.py: Gmail message id 1a1ade55a73ca213, bcc 3, 5 attachments, humanize gate PASS (132 prose words,
   under the 150 cap). Replies land in luke@brownbisonco.com; hourly check watches for them.
+- 2026-11-06 02:57Z (Gmail date): **B&K Cleaning Services LLC** (bandkcleaningcolorado@gmail.com) replied on the thread (msg 1a1ae4ecc8bc88f0): interested in quoting the Pagosa Ranger District office; will review the attached documents and send pricing. No price yet. Asked-by date for pricing is Mon 2026-11-16 12:00.

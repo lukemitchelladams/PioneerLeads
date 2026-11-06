@@ -129,6 +129,7 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 | R26-077MZ Parks Maintenance On-Call | City of Colorado Springs | 2026-10-20 | **CRM: "already a no-bid"** | **Repo has GO + proposal draft**: Luke decides |
 | Q26-09 jail fire alarm inspection & maintenance | Larimer County | 2026-11-06 10:00 | EVALUATE (needs VESDA-certified fire alarm sub) | downloads/bidnet/0000441715 |
 | RFP 26-57 Fairgrounds South Lawns irrigation renovation | Arapahoe County | 2026-11-30 14:00 | EVALUATE; MANDATORY site visit 2026-11-10 10:00, RSVP KSchwindt@arapahoegov.com | downloads/bidnet/0000441680 |
+| RFP 2026-1 MSA Landscape Enhancement & Maintenance | Pueblo Urban Renewal Authority | 2026-11-30 17:00 | EVALUATE (Alex Ditto scope); **MANDATORY walk 2026-11-13 09:00**, 2201 Lake Ave, Pueblo | bids/pueblo-ura-msa-landscape (RFP not in hand) |
 | RFQ 043-26 structured cabling & fiber contractors | Douglas County | 2026-12-03 15:00 | EVALUATE (needs certified cabling sub) | downloads/bidnet/0000441695 |
 | AHEC-27901-D CAVEA lighting (MSU Denver) | Auraria Higher Education Center | 2026-11-16 14:00 | NO (theatrical DMX lighting; 2-yr + two $140k project minimums not met) | downloads/bidnet/0000441764 |
 | R26-099MZ Parks On-Call Irrigation Repairs | City of Colorado Springs | 2026-12-02 14:00 | EVALUATE (Alex Ditto scope); optional pre-proposal 2026-11-06 Teams | downloads/bidnet/0000441782 |
