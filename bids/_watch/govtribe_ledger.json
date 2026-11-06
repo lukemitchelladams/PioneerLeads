@@ -1870,6 +1870,30 @@
    "verdict": "NO",
    "why": "Not a profile match; vehicle/trailer purchase in Northern California.",
    "at": "2026-11-06T09:25:00Z"
+  },
+  "bidnet:0000442347": {
+   "name": "City of Canon City RFP 151-26 janitorial services",
+   "verdict": "EVALUATE",
+   "why": "Janitorial; optional pre-bid 2026-11-30 09:00; due 2026-12-07 11:00. HQ folder and pipeline row canon-city-janitorial.",
+   "at": "2026-11-06T15:30:00Z"
+  },
+  "bidnet:0000442382": {
+   "name": "City of Canon City RFP 129-26 boiler and chiller maintenance",
+   "verdict": "GO",
+   "why": "HVAC/boiler PM; no pre-bid listed; due 2026-12-07 11:00. HQ: GO, H2GS + 4 HVAC firms asked for pricing (pipeline canon-city-boiler-chiller).",
+   "at": "2026-11-06T15:30:00Z"
+  },
+  "bidnet:444223157174": {
+   "name": "Security Guard Services",
+   "verdict": "NO",
+   "why": "Not a profile match; guard services.",
+   "at": "2026-11-06T15:30:00Z"
+  },
+  "bidnet:444223157176": {
+   "name": "CPW Pikes Peak Recreation Area Planning",
+   "verdict": "NO",
+   "why": "Not a profile match; planning study.",
+   "at": "2026-11-06T15:30:00Z"
   }
  },
  "watched": {
@@ -2055,6 +2079,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T14:25:00Z",
+ "last_hourly_check": "2026-11-06T15:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
