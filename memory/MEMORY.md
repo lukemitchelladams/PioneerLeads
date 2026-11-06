@@ -882,3 +882,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-06 12:22Z hourly (WORKER, read-only)
 - Scan 11:38Z: BidNet LOGGED IN (3rd clean fresh login in a row, 605/74). SAM 108, VSS 64/2. No NEW; 1 non-matching row closed (Pavement Marking 0000438630). Inbox quiet; still no Parker numbers from Brad Orgill (Luke's 09:00 MT cutoff is about 3.5 h away; Parker closes 14:00 MT).
 - Dashboard blobs now: bids 40293c0db4c4bdbd0732f947a67ac29a (v132, sha 99094ac22dd9), events 75e9336bd403cb66110427c50af08705 (v134, sha 4003c628ba8e), sources ccb8bcb9e0913f69c7a84d297819f1d6 (v119, sha fc7f7130ff56), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
+- 2026-11-06 12:37Z hourly (HQ): BidNet deferred (next fresh login 14:39Z), rows carried 605/74; SAM 108, VSS 64/2; no NEW; inbox quiet.
