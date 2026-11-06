@@ -229,3 +229,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-06 02:25Z (hourly, read-only): 13 threads newer_than:1d, nothing unseen (HQ replied to B&K 01:36Z: pricing by Mon 11/16, tour asked for 11/09 or 11/13). Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT). No CRM brief.
 - 2026-11-06 03:25Z (hourly, read-only): newer_than:3h shows only the Pagosa thread (already seen). Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT). No CRM brief.
 - 2026-11-06 04:25Z (hourly, read-only): newer_than:1d top threads unchanged, nothing unseen. Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT). No CRM brief.
+- 2026-11-06 05:25Z (hourly, read-only): top threads unchanged, nothing unseen. Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT). No CRM brief.
