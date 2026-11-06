@@ -852,3 +852,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - FORMAT NOTE: pipeline.json is written by HQ with indent=2 and no trailing newline. Write it the same way (json.dumps(p, indent=2, ensure_ascii=False)). Writing indent=1 rewrote all 4,000+ lines and invited merge conflicts. govtribe_ledger.json stays indent=1.
 - Inbox quiet; still no Parker numbers from Brad Orgill.
 - Dashboard blobs now: bids 78f181bd53f563c533cf693f66c6e745 (v126, sha 15a6a6120a76), events 0fd690df6e1ceebf49a835756b0cb838 (v128, sha bef133586a0a), sources 6e573f8bfd4ff7f54fab398a5515043f (v113, sha 0c7693bf5f6a), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70, sha 676e4a35547a), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
+- 2026-11-06 06:37Z hourly (HQ): BidNet deferred (session from 05:38Z expired; next fresh login 08:38Z), rows carried 604/74; SAM 108, VSS 64/2; no NEW; inbox quiet.
