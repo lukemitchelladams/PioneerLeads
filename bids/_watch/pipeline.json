@@ -181,7 +181,7 @@
       "subs": "2026-10-27: short pricing request sent to all 6 (Handily, Rock Solid, TC Handyman, Bleeker, Ceres, V Tradesman); answers by Mon 11/2.",
       "folder": "bids/brighton-as-needed-construction",
       "contact": "Kelsey Archuleta, procurement@brightonco.gov",
-      "sub_pricing": "None"
+      "sub_pricing": "Partial (Ceres Construction hourly rate received 2026-11-06 07:43 MT; figure kept in private/, not in this repo)"
     },
     {
       "id": "adams-2026-766",
@@ -359,8 +359,8 @@
       "due": "2026-11-06T14:00:00-07:00",
       "due_source": "RFP 26-021-1 §1.2: \"November 6, 2026 @ 2:00pm\"",
       "portal": "RMEPS (BidNet 0000440494) + Bonfire",
-      "decision": "GO",
-      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login). | Brad Orgill (Colorado Standby) 11/05: \"Our plan is to get this to you today.\" Due Fri 11/06 14:00; HQ builds the package the hour numbers land.",
+      "decision": "NO",
+      "decision_note": "Per CRM 10/19: conditional go (7 units, 6 sites, no bond, due 11/6). RFP in hand 10/20: no pre-proposal meeting or site visit (§1.2); questions due 10/30 10:00; scored price 30 / technical 20 / experience 20 / emergency 20 / reporting 10. Pricing sheets & proposal forms (§7) not in hand (Bonfire/BidNet login). | Brad Orgill (Colorado Standby) 11/05: \"Our plan is to get this to you today.\" Due Fri 11/06 14:00; HQ builds the package the hour numbers land. | NO-BID 2026-11-06 12:03 MT: Colorado Standby (Brad Orgill) sent no prices after three promised dates; no other generator sub (bids/parker-generator-maintenance/sub-outreach.md).",
       "prebid": null,
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
@@ -2183,6 +2183,12 @@
       "when": "2026-11-06T19:45:00Z",
       "kind": "docs",
       "note": "Folder opened; IFB B2600113 downloaded from BidNet (saved session); MANDATORY walk 11/19 10:00 MST Fort Lupton confirmed from the IFB; due 01/05/2027 10:00 MT; recommend NO (no subcontracting, company-level Uniprise/Corning certification, 100% P&P bonds)"
+    },
+    {
+      "bid": "parker-generator",
+      "when": "2026-11-06T19:03:00Z",
+      "kind": "no-bid",
+      "note": "NO-BID 12:03 MT: no sub pricing from Colorado Standby"
     }
   ],
   "doc_gaps": [

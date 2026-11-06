@@ -2020,6 +2020,54 @@
    "verdict": "NO",
    "why": "Not a profile match; concession operator.",
    "at": "2026-11-06T19:25:00Z"
+  },
+  "bidnet:0000442906": {
+   "name": "Weld County B2600113 Southeast Weld Facility Cabling",
+   "verdict": "EVALUATE",
+   "why": "Structured cabling; MANDATORY walk 2026-11-19 10:00; due 2027-01-05 10:00. HQ opened folder weld-se-facility-cabling, recommends NO (needs certified cabling sub).",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "samgov:21f8910c3dc44615956327770976b6c3": {
+   "name": "Army Fort Drum W911S227U0132 Bearings",
+   "verdict": "NO",
+   "why": "HQ Jones Bearing triage 11/06: NO.",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "samgov:da941a154311495ab89a5c488bacee4b": {
+   "name": "BEP ergonomic drum handlers (re-post)",
+   "verdict": "NO",
+   "why": "Re-post of the drum handler notice already NO; not our product.",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442874": {
+   "name": "Event Management Platform",
+   "verdict": "NO",
+   "why": "Not a profile match; software.",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442910": {
+   "name": "Corbett Sanitary Sewer Replacement",
+   "verdict": "NO",
+   "why": "Heavy civil (rule 8).",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442915": {
+   "name": "SMFR-26-1016 Station 17 roof repairs",
+   "verdict": "NO",
+   "why": "Roofing; not our trade.",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442918": {
+   "name": "SMFR-26-1017 Station 18 roof replacement",
+   "verdict": "NO",
+   "why": "Roofing; not our trade.",
+   "at": "2026-11-06T20:25:00Z"
+  },
+  "bidnet:0000442921": {
+   "name": "Lead service lines replacement (federally funded)",
+   "verdict": "NO",
+   "why": "Heavy civil utility work (rule 8).",
+   "at": "2026-11-06T20:25:00Z"
   }
  },
  "watched": {
@@ -2205,6 +2253,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T19:25:00Z",
+ "last_hourly_check": "2026-11-06T20:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
