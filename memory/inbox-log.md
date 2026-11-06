@@ -238,3 +238,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-06 11:25Z (hourly, read-only): 1 unseen = Google DMARC aggregate report (noise). Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT). No CRM brief.
 - 2026-11-06 12:25Z (hourly, read-only): top threads unchanged, nothing unseen. Still no Parker numbers from Brad Orgill (Parker closes today 11/06 14:00 MT; 09:00 MT cutoff is ~3.5 h away). No CRM brief.
 - 2026-11-06 13:25Z (hourly, read-only): nothing unseen. Checked from:brad_orgill@coloradostandby.com newer_than:2d: only the Parker thread, last message Brad 11/05 16:09Z 'Our plan is to get this to you today'; NO numbers received (Luke's 09:00 MT cutoff is 2.5 h away; Parker closes 14:00 MT). No CRM brief.
+- 2026-11-06 14:25Z (hourly, read-only): nothing unseen; Brad Orgill still silent since 11/05 16:09Z (Parker closes 14:00 MT today; 09:00 MT pass point per CEO plan). No CRM brief.
