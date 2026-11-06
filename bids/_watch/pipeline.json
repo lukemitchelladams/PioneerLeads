@@ -1,6 +1,6 @@
 {
   "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
-  "updated": "2026-11-06T20:05:00Z",
+  "updated": "2026-11-06T21:30:00Z",
   "bids": [
     {
       "id": "cos-parks-r26-077mz",
@@ -1461,6 +1461,26 @@
       "contact": "Questions and bids: bids@weld.gov; Purchasing 970-400-4222 (Schedule A). Project Manager Aleksei Churyk, Director of Technical Operations, IT-Bids@weld.gov, (970) 400-4357 (Schedule E)",
       "due_source": "IFB Schedule A: \"Bids will be received until: January 5, 2027 at 10:00 AM MT\" (cover: \"Purchasing's Clock\")",
       "doc_gaps": "None known: the single Bid Specifications.docx holds Schedules A-F (instructions, scope, schedule, bid form, insurance, contract). Cable location list, building electrical diagrams and the copper labeling standard are handed out at the mandatory walk / after award only. No addenda yet."
+    },
+    {
+      "id": "cdoc-bvcc-boiler-chemicals",
+      "agency": "Colorado Department of Corrections",
+      "title": "Boiler Chemicals & Treatment Services at BVCC (Buena Vista Correctional Complex): 3 E. Keeler Williams Sport fire-tube steam boilers (1992), 1,575 BHP, monthly on-site chemical treatment + lab testing + training, 24-hour urgent response",
+      "sol": "DQ 2027000132 (BidNet 0000442938 'DQ 27-0132'; VSS DQ1-CAAA-2027000132)",
+      "trade": "HVAC (boiler water treatment)",
+      "due": "2026-11-30T14:00:00-07:00",
+      "portal": "BidNet Direct cdoc only (DQ 9.A.ii: 'No other electronic submission methods or hard copy submittals will be accepted'; no VSS submission)",
+      "decision": "GO",
+      "decision_note": "2026-11-06: full 10-file package in docs/ (DQ, Exhibits A-G, Attachments 1-2), defined monthly service scope, same CDOC DQ format as TCF 2027000037. MANDATORY site visit Wed 2026-11-18 10:00 MST at BVCC, 15125 HWY 24 & 85, Buena Vista (DQ sec. 4): not passed, 12 days out. Gate: (1) signed Exhibit G + photo ID for every attendee emailed to cynthia.alexander@state.co.us, gregory.jennings@state.co.us, bradley.johnson@state.co.us, garett.grover@state.co.us by Mon 11/16 (Exhibit G asks for ten days = Sun 11/08); (2) Luke or the sub's technician at the walk; (3) written sub Exhibit D pricing by Fri 11/20, firm for the one-year PO term, with a second priced sub as backup (TCF lesson: H2 withdrew its pricing 10/30 after we submitted and we had no backup). Questions on BidNet by Mon 11/23 12:00. Award: price primary (DQ 13.A.i), multiple awards possible. Term 1 yr through 2027-06-30 + up to 4 renewals; PO start est. 2026-12-08. Insurance (Attachment 2) at PO execution: WC/EL, CGL $1M/$1M/$1M/$50k fire, auto $1M CSL; Protected Info / Professional / Crime only if conditions apply. Enhanced Criminal Background Investigation within 30 days of award (DQ 15.A). Subcontract needs State written approval (Attachment 1 sec. 14). Prices only in private/.",
+      "prebid": "2026-11-18T10:00:00-07:00",
+      "prebid_mandatory": true,
+      "performer": "Brown Bison + water-treatment sub (H2 Global Solutions first ask; Summit Laboratories / TRS / Aqua-Chem / Reaction Engineering as backups)",
+      "subs": "Drafts ready, NOT sent (Luke's GO): H2GS (Silas Norwood, snorwood@h2gs.com) ops/outbox/2026-11-06/bvcc-h2gs.txt; bcc group Summit Laboratories, TRS Inc, Aqua-Chem Inc, Reaction Engineering ops/outbox/2026-11-06/bvcc-group.txt; Loren & Associates + RK Water held until their addresses re-verify. FACT Water NOT contacted (stand-down list).",
+      "sub_pricing": "None (asked for by Fri 11/20 once sent)",
+      "folder": "bids/doc-bvcc-boiler-chemicals-dq27-0132",
+      "contact": "Sheila Lucero, Purchasing Manager, doc_purchasing@state.co.us (single point of contact; contact with anyone else may disqualify, DQ p.1). Walk clearance: cynthia.alexander@state.co.us, gregory.jennings@state.co.us, bradley.johnson@state.co.us, garett.grover@state.co.us",
+      "due_source": "DQ sec. 2: \"Quote Submission Deadline 11/30/26 @ 2:00pm ... A Quote sent at 2:01 pm MST is considered late.\"",
+      "doc_gaps": "None known: 10-file package in hand; MANIFEST's three MISSING rows are false positives (Attachment I = Attachment 1 per DQ 3.B; Form SS = IRS SS-4 reference in the W-9; Appendix II = reference inside Attachment 1). No modifications posted yet."
     }
   ],
   "events": [
@@ -2189,6 +2209,12 @@
       "when": "2026-11-06T19:03:00Z",
       "kind": "no-bid",
       "note": "NO-BID 12:03 MT: no sub pricing from Colorado Standby"
+    },
+    {
+      "bid": "cdoc-bvcc-boiler-chemicals",
+      "when": "2026-11-06T21:30:00Z",
+      "kind": "decision",
+      "note": "GO (recommended): package read; MANDATORY walk Wed 11/18 10:00 Buena Vista (Exhibit G + ID by 11/16); questions 11/23 12:00; due 11/30 14:00 MST; sub drafts ready for H2GS + 4 firms, not sent"
     }
   ],
   "doc_gaps": [

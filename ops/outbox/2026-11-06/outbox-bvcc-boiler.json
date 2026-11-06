@@ -1,0 +1,46 @@
+[
+  {
+    "key": "bvcc-h2gs",
+    "subject": "CDOC Buena Vista boiler chemical treatment, DQ 2027000132",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "files": [
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/2. Exhibit B - Required Vendor Information - Services.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/4. Exhibit D - Price Quote.xlsx",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/5. Exhibit E - Contract Performance Outside of the US.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/6. Exhibit F - Non-Conflict of Interest.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/7. Exhibit G - Consent to Search.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/9. Attachment 2 - Insurance Information.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-06/bvcc-h2gs.txt"
+  },
+  {
+    "key": "bvcc-group",
+    "subject": "CDOC Buena Vista boiler chemical treatment, DQ 2027000132",
+    "bcc": [
+      "info@summitlaboratories.com",
+      "info@trsinc.us",
+      "aquacheminc@aquacheminc.com",
+      "gtj@rxn-inc.com"
+    ],
+    "files": [
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/2. Exhibit B - Required Vendor Information - Services.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/4. Exhibit D - Price Quote.xlsx",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/5. Exhibit E - Contract Performance Outside of the US.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/6. Exhibit F - Non-Conflict of Interest.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/7. Exhibit G - Consent to Search.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+      "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/9. Attachment 2 - Insurance Information.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-06/bvcc-group.txt",
+    "note": "Loren & Associates (web@lorenandassociates.com) and RK Water (sales@rkindustries.com) held back until their sites are reachable again to re-verify the addresses (both 503 on 2026-11-06)."
+  }
+]
