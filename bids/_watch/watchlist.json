@@ -585,6 +585,13 @@
       "match": "0000442906|\\bB2600113\\b|southeast weld facility cabling",
       "folder": "bids/weld-se-facility-cabling",
       "govtribe_ids": []
+    },
+    {
+      "name": "CDOC DQ 27-0132 Boiler Chemicals & Treatment Services BVCC",
+      "source": "bidnet",
+      "match": "27-0132|Boiler Chemicals.*BVC",
+      "folder": "bids/doc-bvcc-boiler-chemicals-dq27-0132",
+      "govtribe_ids": []
     }
   ]
 }
