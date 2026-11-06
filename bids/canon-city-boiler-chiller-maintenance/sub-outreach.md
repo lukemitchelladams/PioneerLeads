@@ -1,6 +1,6 @@
 # Canon City RFP 129-26 Boiler & Chiller PM: sub outreach (mechanical service)
 
-Opened 2026-11-06. **NOTHING SENT: waiting on Luke's GO.** Ask: annual price per Proposal Schedule line (RFP p.9),
+Opened 2026-11-06. **GO 2026-11-06 (HQ, Luke's standing permission): H2GS asked (msg 1a1b161bfb537ecb); ACCO, Air Conditioning Plus, Rasmussen, Nielsen asked as a bcc group (msg 1a1b161c591201e6). Timberline held back (far).** Ask: annual price per Proposal Schedule line (RFP p.9),
 hourly emergency rate, exceptions/exclusions, COI per PSA sec. VII, 2-3 references on Lochinvar / McQuay / Carrier PM.
 Pricing asked by **Mon 2026-11-30** (proposal due 2026-12-07 11:00 MST). No pre-bid meeting; optional site visit arranged
 through Randy Allen, Facilities Maintenance Supervisor, RCAllen@canoncity.gov, 719-276-5283. Attach the RFP PDF
@@ -9,11 +9,11 @@ unless noted; none verified by a reply yet.
 
 | # | Firm | City | Contact / email | Phone | Fit | Status |
 |---|---|---|---|---|---|---|
-| 1 | H2 Global Solutions | Colorado Springs | Silas Norwood, COO, snorwood@h2gs.com | 719-694-0515 | Luke's go-to boiler / mechanical-service sub (TCF DQ 10/26: fast, sent a tech to the walk) | not sent |
-| 2 | ACCO Engineered Systems | Colorado Springs, 5090 Centennial Blvd | servicerequest@accoes.com (24/7 service email on its Colorado Springs page) | office 719-232-0185; 24-hr 800-998-2226 | Large commercial mechanical; site lists Chiller Service and Preventive Maintenance | not sent |
-| 3 | Air Conditioning Plus Inc | Colorado Springs | info@airconditioningplus.com (site) | 719-265-8777 | Commercial HVAC est. 2004; directories list Commercial Chiller and Boiler Service | not sent |
-| 4 | Rasmussen Mechanical Services | Centennial (serves Colorado Springs) | rockymountain@rasmech.com (site) | 800-237-3141 | Boiler service and supply, PM programs, chiller and cooling-tower service | not sent |
-| 5 | Nielsen Mechanical Contractors | Colorado Springs, 6405 E Platte Ave | general@nielsenmechanical.net (from 10/26 research; site shows a form only, call to confirm) | 719-597-2705 | Commercial HVAC install and maintenance programs since 1997; a Crete United company | not sent |
+| 1 | H2 Global Solutions | Colorado Springs | Silas Norwood, COO, snorwood@h2gs.com | 719-694-0515 | Luke's go-to boiler / mechanical-service sub (TCF DQ 10/26: fast, sent a tech to the walk) | sent 11/06 |
+| 2 | ACCO Engineered Systems | Colorado Springs, 5090 Centennial Blvd | servicerequest@accoes.com (24/7 service email on its Colorado Springs page) | office 719-232-0185; 24-hr 800-998-2226 | Large commercial mechanical; site lists Chiller Service and Preventive Maintenance | sent 11/06 (bcc) |
+| 3 | Air Conditioning Plus Inc | Colorado Springs | info@airconditioningplus.com (site) | 719-265-8777 | Commercial HVAC est. 2004; directories list Commercial Chiller and Boiler Service | sent 11/06 (bcc) |
+| 4 | Rasmussen Mechanical Services | Centennial (serves Colorado Springs) | rockymountain@rasmech.com (site) | 800-237-3141 | Boiler service and supply, PM programs, chiller and cooling-tower service | sent 11/06 (bcc) |
+| 5 | Nielsen Mechanical Contractors | Colorado Springs, 6405 E Platte Ave | general@nielsenmechanical.net (from 10/26 research; site shows a form only, call to confirm) | 719-597-2705 | Commercial HVAC install and maintenance programs since 1997; a Crete United company | sent 11/06 (bcc) |
 | 6 | Timberline Mechanical | Boulder County | info@timberlinemechanical.com (site) | 303-258-3589 | Commercial boilers and chillers, all brands; far from Canon City, last resort | not sent |
 
 Phone-only (no public email found): Patterson Plumbing & Heating, Pueblo, 719-496-4939 (boilers for homes and businesses);
@@ -72,3 +72,4 @@ Thanks Team,
 
 ## Log
 - 2026-11-06 14:55Z: candidate list built (web search + repo history); drafts linted; nothing sent, waiting on Luke's GO.
+- 2026-11-06 15:1xZ (HQ): GO. H2GS pricing request sent (msg 1a1b161bfb537ecb); bcc group to ACCO, Air Conditioning Plus, Rasmussen, Nielsen (msg 1a1b161c591201e6). RFP attached to both. Pricing asked by Mon 11/30. City question on the PSA no-subcontractor clause still to post on BidNet (Luke or HQ with his say) before 12/03 14:00.

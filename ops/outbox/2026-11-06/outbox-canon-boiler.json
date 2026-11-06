@@ -1,0 +1,27 @@
+[
+  {
+    "key": "canon-h2gs",
+    "subject": "Canon City boiler and chiller PM, RFP 129-26",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "files": [
+      "bids/canon-city-boiler-chiller-maintenance/docs/129-26 Boiler chiller.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-06/canon-h2gs.txt"
+  },
+  {
+    "key": "canon-hvac-group",
+    "subject": "Canon City boiler and chiller PM, RFP 129-26",
+    "bcc": [
+      "servicerequest@accoes.com",
+      "info@airconditioningplus.com",
+      "rockymountain@rasmech.com",
+      "general@nielsenmechanical.net"
+    ],
+    "files": [
+      "bids/canon-city-boiler-chiller-maintenance/docs/129-26 Boiler chiller.pdf"
+    ],
+    "body_file": "ops/outbox/2026-11-06/canon-hvac-group.txt"
+  }
+]

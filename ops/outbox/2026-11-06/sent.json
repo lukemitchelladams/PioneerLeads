@@ -46,5 +46,27 @@
     "bcc_count": 0,
     "attachments": [],
     "asks": 1
+  },
+  "canon-h2gs": {
+    "id": "1a1b161bfb537ecb",
+    "threadId": "1a1b161bfb537ecb",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "129-26 Boiler chiller.pdf"
+    ],
+    "asks": 0
+  },
+  "canon-hvac-group": {
+    "id": "1a1b161c591201e6",
+    "threadId": "1a1b161c591201e6",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "129-26 Boiler chiller.pdf"
+    ],
+    "asks": 0
   }
 }
