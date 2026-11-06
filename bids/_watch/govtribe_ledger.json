@@ -1948,6 +1948,66 @@
    "verdict": "NO",
    "why": "Not a profile match; environmental compliance audits.",
    "at": "2026-11-06T17:25:00Z"
+  },
+  "bidnet:0000442878": {
+   "name": "Board of Water Works of Pueblo commercial entry doors 2026",
+   "verdict": "NO",
+   "why": "Door replacement; no door sub answered Fort Collins outreach (0/13). NO unless a door sub appears (HQ 17:55Z). Closes 11/24.",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:444223472310": {
+   "name": "Fleet Maintenance Services (As-Needed)",
+   "verdict": "NO",
+   "why": "Vehicle fleet maintenance, not our trade.",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442861": {
+   "name": "High Line Canal - Triple Creek Trailhead - Phase 2",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442863": {
+   "name": "Pueblo Water - SUPPLY OF DEMO SAWS",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442881": {
+   "name": "Greenhouse Gas Emissions and Energy Management for Manufacturing (GEMM) 1 Audit",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442887": {
+   "name": "RFQ City Manager Recruitment Services",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442890": {
+   "name": "2026 Waterline Replacement Project",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442895": {
+   "name": "E-Bike Share Feasibility Study and Technical Readiness Plan",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:0000442897": {
+   "name": "Town of Severance Town Attorney RFP",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
+  },
+  "bidnet:444223441778": {
+   "name": "Real Bird Way And North Main Street Intersection Improvements",
+   "verdict": "NO",
+   "why": "Not a profile match (17:41Z scan add).",
+   "at": "2026-11-06T18:25:00Z"
   }
  },
  "watched": {
@@ -2133,6 +2193,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T17:25:00Z",
+ "last_hourly_check": "2026-11-06T18:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

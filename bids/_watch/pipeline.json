@@ -2151,6 +2151,12 @@
       "when": "2026-11-06T17:46:00Z",
       "kind": "sub-fail",
       "note": "Luke: Brad Orgill's call had no numbers; no sub pricing 3h before 14:00 close"
+    },
+    {
+      "bid": "rtd-126dm016",
+      "when": "2026-11-06T18:00:51Z",
+      "kind": "sub-reply",
+      "note": "Alex Ditto (YMS): snow removal and ice control pricing coming by end of day today (Luke's thread)"
     }
   ],
   "doc_gaps": [
