@@ -2138,6 +2138,12 @@
       "when": "2026-11-06T15:04:07Z",
       "kind": "dead",
       "note": "Weld refused a second walk-through; mandatory pre-bid missed"
+    },
+    {
+      "bid": "parker-generator",
+      "when": "2026-11-06T15:39:06Z",
+      "kind": "sub-reply",
+      "note": "Brad Orgill: left Luke two voicemails 11/05; no numbers in writing. Mac moved the cutoff to 11:00 MT and asked him to email them."
     }
   ],
   "doc_gaps": [

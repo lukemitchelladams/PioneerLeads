@@ -1894,6 +1894,30 @@
    "verdict": "NO",
    "why": "Not a profile match; planning study.",
    "at": "2026-11-06T15:30:00Z"
+  },
+  "bidnet:0000441223": {
+   "name": "City of Fort Collins Communications & Public Relations Services On-Call",
+   "verdict": "NO",
+   "why": "Keyword match only; PR/communications services, not our trades (HQ agrees).",
+   "at": "2026-11-06T16:25:00Z"
+  },
+  "bidnet:0000442791": {
+   "name": "Bradley Riverbend power transformer and switchgear design",
+   "verdict": "NO",
+   "why": "Not a profile match; engineering design.",
+   "at": "2026-11-06T16:25:00Z"
+  },
+  "bidnet:0000442823": {
+   "name": "Civil design services, Fifth Street widening phase 2",
+   "verdict": "NO",
+   "why": "Not a profile match; civil design (rule 8).",
+   "at": "2026-11-06T16:25:00Z"
+  },
+  "bidnet:0000442824": {
+   "name": "Town of Basalt advanced metering infrastructure system",
+   "verdict": "NO",
+   "why": "Not a profile match; utility AMI system.",
+   "at": "2026-11-06T16:25:00Z"
   }
  },
  "watched": {
@@ -2079,6 +2103,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T15:30:00Z",
+ "last_hourly_check": "2026-11-06T16:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
