@@ -50,8 +50,8 @@ Subject: RTD bus shelter contract (RFP 126DM016): pricing request for an RTD-cer
 >
 > Thanks,
 > Luke Adams
+> Operations Manager
 > Brown Bison Holdings LLC
-> (720) 275-1554
 > luke@brownbisonco.com
 
 Follow-up (if no reply in 4 business days): a two-line nudge plus a phone call; log both.

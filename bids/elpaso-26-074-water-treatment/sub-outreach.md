@@ -37,8 +37,9 @@ RFP, addendum and the current vendor's September report are attached.
 Thanks Silas,
 
 Luke Adams
-Owner, Brown Bison Holdings LLC
-(720) 275-1554 | luke@brownbisonco.com
+Operations Manager
+Brown Bison Holdings LLC
+luke@brownbisonco.com
 
 ## Log
 - 2026-10-28 20:22Z (hourly scan, read-only): file created from the downloaded package; H2 email drafted; nothing sent.
@@ -64,8 +65,9 @@ Proposals are due Wednesday, November 4. Can you price it by Monday, November 2 
 Thanks Conor,
 
 Luke Adams
-Owner, Brown Bison Holdings LLC
-(720) 275-1554 | luke@brownbisonco.com
+Operations Manager
+Brown Bison Holdings LLC
+luke@brownbisonco.com
 
 - 2026-10-30 02:4xZ (HQ): sent Conor Parrish the pricing request (ops/outbox/2026-10-30/fact-water.txt, a shorter version of the draft above, adds the 12-visit/all-six-buildings basis and 90-day/2027 firm pricing). 10 files attached, no links. Follow up Fri 10/30 midday by phone (970-342-6867) if no reply.
 

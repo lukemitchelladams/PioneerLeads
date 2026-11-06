@@ -4,7 +4,9 @@
     python3 -m pytest -q tests/test_send_gate.py
 
 Covers scripts/humanize_gate.py (prose cut, structure, the gate's own word count, look-alike characters, links, subjects,
-attachments, asks evidence, hz.py fail-closed, owner-only exemption, the Gmail-connector PreToolUse hook and its settings entry),
+attachments, asks evidence, hz.py fail-closed, owner-only exemption, the Gmail-connector PreToolUse hook and its settings entry,
+and Luke's 2026-11-06 no-phone rule: his cell in any format and call invites are refused by default, trade words like on-call
+pass, forwards to outsiders are refused; shared cases in tests/phone_cases.json),
 scripts/gmail_api.py send (refuses with exit 3 before any token or network call; Operations Manager signature; call() refuses an
 unarmed POST to the send endpoints) and scripts/send_outbox.py (its own sibling sender, manifest validation, REFUSED entries never
 recorded, nonzero exit). Nothing here can send mail: every test runs with urllib/socket connects replaced by a function that
@@ -47,8 +49,12 @@ LONG = "Hi Sam,\n\n" + "\n\n".join([_PARA] * 6) + "\n\nThanks Sam,\n"          #
 MID = "Hi Sam,\n\n" + "\n\n".join([_PARA] * 4) + "\n\nThanks Sam,\n"           # 124 prose words: under the cap, over the target
 INBOUND5 = "Hi Luke,\n\nCan you start Monday? Who runs the crew? What time? Which gate? Do you need a lift?\n\nSam\n"
 SIG_TAIL = "\nLuke Adams\nOperations Manager\nBrown Bison Holdings LLC\n"
-SIG = "Luke Adams\nOperations Manager\nBrown Bison Holdings LLC\n(720) 275-1554\nluke@brownbisonco.com"
+SIG = "Luke Adams\nOperations Manager\nBrown Bison Holdings LLC\nluke@brownbisonco.com"          # Luke 2026-11-06: no phone line
+OLD_SIG = "Luke Adams\nOperations Manager\nBrown Bison Holdings LLC\n(720) 275-1554\nluke@brownbisonco.com"   # before 2026-11-06
 GOOD_MCP = GOOD.rstrip("\n") + "\n\n" + SIG + "\n"
+PHONE_FIX = ("No phone number or call invite in email (Luke 2026-11-06): answer by email; at most add 'Email is the best way to "
+             "reach me during the day.'")
+DAYTIME = "Email is the best way to reach me during the day."
 
 
 def _load(name, path):
@@ -438,6 +444,212 @@ def test_text_attachments_are_refused():
     assert gate.attachment_problems(["Bid Specs.docx", "Attachment 1.pdf", "Pricing.xlsx", "rates.csv", "site.jpg"]) == []
 
 
+# ---------------------------------------------------------------------------------------------------------------- phone (Luke 2026-11-06)
+# One shared case list for both email gates (review 2026-11-06): the cloud gate here, and the Mac's brown-bison-gov data/phone_gate.py
+# in test_mac_phone_gate_parity_report. Builder + review lists: Luke's cell in every format found, call invites, and the trade /
+# third-party / photo / negation wording that must pass.
+PHONE_CASES = json.loads((ROOT / "tests" / "phone_cases.json").read_text(encoding="utf-8"))
+LUKE_CELL_FORMS = PHONE_CASES["cell"]
+NOT_LUKE_CELL = PHONE_CASES["not_cell"]
+CALL_INVITES = PHONE_CASES["refuse"]
+TRADE_WORDS = PHONE_CASES["pass"]
+MAC_PHONE_GATE = Path("/Users/thecreator/brown-bison-gov/data/phone_gate.py")   # absent in cloud containers
+
+
+def _with(sentence):
+    return GOOD.replace("The addendum is attached.", sentence)
+
+
+@pytest.mark.parametrize("form", LUKE_CELL_FORMS)
+def test_luke_cell_in_any_format_is_refused(form):
+    assert gate.luke_cell_in(f"Questions: {form} or email.") is not None
+    probs = gate.phone_problems(f"Questions: {form} or email.")
+    assert probs and probs[0].startswith("body: Luke's cell number") and probs[0].endswith(PHONE_FIX), probs
+
+
+@pytest.mark.parametrize("sentence", CALL_INVITES)
+def test_call_invites_are_refused(sentence):
+    probs = gate.phone_problems(sentence)
+    assert any(p.startswith("body: call invite") and p.endswith(PHONE_FIX) for p in probs), (sentence, probs)
+
+
+@pytest.mark.parametrize("sentence", TRADE_WORDS)
+def test_trade_words_and_other_numbers_pass(sentence):
+    assert gate.phone_problems(sentence) == [], sentence
+    assert gate.call_invites(sentence) == [] and gate.luke_cell_in(sentence) is None
+
+
+@pytest.mark.parametrize("text", NOT_LUKE_CELL)
+def test_other_numbers_are_not_lukes_cell(text):
+    assert gate.luke_cell_in(text) is None, text
+
+
+def test_refusal_says_what_to_do():
+    assert gate.PHONE_FIX == PHONE_FIX
+    ok, probs = gate.check(_with("Call me at (720) 275-1554 with questions."))
+    assert not ok
+    phone = [p for p in probs if p.endswith(PHONE_FIX)]
+    assert len(phone) == 2 and "Luke's cell number '(720) 275-1554'" in phone[0] and "call invite 'Call me at'" in phone[1], probs
+
+
+def test_the_suggested_daytime_line_passes_the_whole_gate():
+    ok, probs = gate.check(_with(f"The addendum is attached. {DAYTIME}"))
+    assert ok, probs
+    assert gate.hook_decision(json.dumps({"tool_name": "mcp__Gmail__send_message", "tool_input": {
+        "to": ["sam@example.com"], "subject": "Chiller pricing", "body": GOOD_MCP.replace("attached.", f"attached. {DAYTIME}")}})) is None
+
+
+@pytest.mark.parametrize("sentence", ["Give me a call when you have numbers.", "My cell is (720) 275-1554.", "Hop on a quick call?",
+                                      "Text me the photos."])
+def test_phone_is_refused_through_check_even_when_hz_passes(sentence, tmp_path):
+    hz = _fake_hz(tmp_path, "print('PASS')\n")
+    assert gate.check(GOOD, hz_py=hz)[0]
+    ok, probs = gate.check(_with(sentence), hz_py=hz)
+    assert not ok and any(p.endswith(PHONE_FIX) for p in probs), probs
+
+
+@pytest.mark.parametrize("sentence", ["We need an on-call firm; price each service call and the call-out fee.",
+                                      "List your hourly rate for emergency calls and the callback response time."])
+def test_trade_words_pass_the_whole_gate(sentence):
+    ok, probs = gate.check(_with(sentence))
+    assert ok, probs
+
+
+def test_phone_in_the_subject():
+    for s in ("Chiller pricing: call me", "Chiller pricing (720) 275-1554", "Quick call about the chiller?"):
+        assert any("subject: " in p and p.endswith(PHONE_FIX) for p in gate.subject_problems(s, run_hz=False)), s
+    assert any("Luke's cell" in p for p in gate.subject_problems("Re: chiller, 720-275-1554"))
+    assert gate.subject_problems("Re: Can you call me about the chiller?", threaded=True) == [], "a thread's own subject"
+    assert any("call invite" in p for p in gate.subject_problems("Re: Can you call me about the chiller?")), "'Re:' on a new message"
+    assert gate.subject_problems("On-call HVAC: service call and call-out rates") == []
+
+
+def test_old_five_line_signature_is_refused_by_the_hook():
+    out = gate.hook_decision(json.dumps({"tool_name": "mcp__Gmail__send_message", "tool_input": {
+        "to": ["sam@example.com"], "subject": "Chiller pricing", "body": GOOD.rstrip("\n") + "\n\n" + OLD_SIG + "\n"}}))
+    reason = out["hookSpecificOutput"]["permissionDecisionReason"]
+    assert _denied(out) and "Luke's cell number" in reason and PHONE_FIX in reason and "four signature lines" in reason, reason
+
+
+@pytest.mark.parametrize("tool, ti", [
+    ("mcp__Gmail__send_message", {"to": ["sam@example.com"], "subject": "Chiller pricing",
+                                  "body": GOOD_MCP.replace("attached.", "attached. Give me a call if that is easier.")}),
+    ("mcp__Gmail__reply", {"messageId": "m1", "body": GOOD_MCP.replace("attached.", "attached. Text me when you are on site.")}),
+    ("mcp__Gmail__reply_all", {"messageId": "m1", "body": GOOD_MCP.replace("attached.", "attached. My cell is 720.275.1554.")}),
+])
+def test_hook_refuses_phone(tool, ti):
+    out = _hook(tool, ti)
+    assert _denied(out) and PHONE_FIX in out["hookSpecificOutput"]["permissionDecisionReason"], out
+
+
+def _reason(out):
+    return out["hookSpecificOutput"]["permissionDecisionReason"]
+
+
+REVIEW_MISSES = ["Please call with any questions.", "Email or call with questions.", "You can reach me by email or phone.",
+                 "Let me know if a call would help.", "Would a call be easier?", "I'll give you a call tomorrow.", "Let me call you.",
+                 "Can we talk Monday?", "Talk to you soon.", "What number can I reach you at?", "I'm reachable by phone."]
+
+
+@pytest.mark.parametrize("sentence", REVIEW_MISSES)
+def test_review_misses_are_refused_on_both_send_paths(gm, sentence):
+    """Review 2026-11-06 #1: these passed the hook AND gmail_api's gate (the invite list only caught set word orders). Call
+    invites are now refused by default."""
+    out = _hook("mcp__Gmail__send_message", {"to": ["sam@example.com"], "subject": "Chiller pricing",
+                                              "body": GOOD_MCP.replace("The addendum is attached.", sentence)})
+    assert _denied(out) and PHONE_FIX in _reason(out) and "call invite" in _reason(out), out
+    refusal, _n = gm.humanize_refusal(_with(sentence), ["sam@example.com"], subject="Chiller pricing")
+    assert "call invite" in refusal and PHONE_FIX in refusal, refusal
+
+
+@pytest.mark.parametrize("sentence", ["Can you respond to emergency phone calls within 2 hours, as the RFP requires?",
+                                      "The spec says phone calls must be returned within 4 hours.",
+                                      "Photos from my phone are attached.", "Please call the Town procurement office for access.",
+                                      "Can you give the inspector a call before the walk?", "Leave a voicemail for Jane."])
+def test_review_false_refusals_pass_the_whole_gate(sentence):
+    """Review 2026-11-06 #4 and #5: RFP 'phone calls' wording, photos from Luke's phone and third parties are not invites."""
+    ok, probs = gate.check(_with(sentence))
+    assert ok, probs
+
+
+def test_forward_to_anyone_but_luke_is_refused():
+    """Review 2026-11-06 #3: a forward carries the original message and its quoted thread (pre-11/06 signatures hold the cell),
+    and the hook reads only forwardText."""
+    out = _hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["sam@example.com"], "forwardText": GOOD_MCP})
+    assert _denied(out) and "quoted thread" in _reason(out) and "new humanized message" in _reason(out) and PHONE_FIX in _reason(out)
+    assert _denied(_hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["luke@brownbisonco.com", "sam@example.com"],
+                                                 "forwardText": GOOD_MCP}))
+    assert _hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["luke@brownbisonco.com"], "forwardText": "fyi"}) is None
+
+
+def test_attachment_name_with_lukes_cell_is_refused(gm):
+    """Review 2026-11-06 #7: file names are checked for the cell (contents are not read)."""
+    name = "BrownBison_Luke_720-275-1554.pdf"
+    assert any("attachment name" in p and p.endswith(PHONE_FIX) for p in gate.attachment_problems([name]))
+    assert gate.attachment_problems(["Specs_303-805-3188.pdf", "Attachment 1.pdf", "Bid 2751554.pdf"]) == []
+    out = _hook("mcp__Gmail__send_message", {"to": ["sam@example.com"], "subject": "Chiller pricing", "body": GOOD_MCP,
+                                              "attachments": [{"filename": name, "mimeType": "application/pdf", "content": "eA=="}]})
+    assert _denied(out) and "attachment name" in _reason(out), out
+    refusal, _n = gm.humanize_refusal(GOOD, ["sam@example.com"], subject="Chiller pricing", files=[name])
+    assert "attachment name" in refusal and PHONE_FIX in refusal, refusal
+
+
+def test_re_subject_on_a_new_message_is_checked_for_call_invites(gm, monkeypatch, capsys, tmp_path):
+    """Review 2026-11-06 #8: typing 'Re:' on a new message no longer skips the call-invite check; a real thread still keeps its
+    own subject words (never the cell)."""
+    s = "Re: quick call about the doors?"
+    assert any("call invite" in p for p in gate.subject_problems(s, run_hz=False))
+    assert gate.subject_problems(s, threaded=True) == []
+    assert any("Luke's cell" in p for p in gate.subject_problems("Re: doors, 720-275-1554", threaded=True))
+    ti = {"to": ["sam@example.com"], "subject": s, "body": GOOD_MCP}
+    assert _denied(_hook("mcp__Gmail__send_message", ti))
+    assert _hook("mcp__Gmail__send_message", {**ti, "replyThreadId": "T1"}) is None
+    assert "call invite" in gm.humanize_refusal(GOOD, ["sam@example.com"], subject=s)[0]
+    assert gm.humanize_refusal(GOOD, ["sam@example.com"], subject=s, threaded=True)[0] == ""
+    err = _refused(gm, monkeypatch, capsys, "--to", "sam@example.com", "--subject", s, "--body-file", _body(tmp_path, GOOD))
+    assert "subject: call invite" in err and PHONE_FIX in err, err
+    with pytest.raises(NetworkTouched):                 # with --thread the gate passes and the (stubbed) thread lookup runs
+        _send(gm, monkeypatch, "--thread", "T1", "--to", "sam@example.com", "--subject", s, "--body-file", _body(tmp_path, GOOD))
+
+
+def test_hook_refusal_names_the_field_once_and_says_the_fix_once():
+    """Review 2026-11-06 #10: no 'body: body:', and the phone fix is never cut off by the 6-problem limit."""
+    out = _hook("mcp__Gmail__send_message", {"to": ["sam@example.com"], "subject": "Chiller pricing",
+                                              "body": GOOD_MCP.replace("attached.", "attached. Call me.")})
+    assert "body: body:" not in _reason(out) and "body: call invite" in _reason(out) and _reason(out).count(PHONE_FIX) == 1, out
+    messy = ("Hi,\n\nI hope this finds you well \u2014 I wanted to reach out \U0001F680. See https://x.example/y. Call me at "
+             "(720) 275-1554.\n\nThanks,\n" + SIG + "\n")
+    out = _hook("mcp__Gmail__send_message", {"to": ["sam@example.com"], "subject": "Chiller \u2014 pricing: call me", "body": messy})
+    r = _reason(out)
+    assert _denied(out) and r.count(PHONE_FIX) == 1 and "Luke's cell number" in r and "call invite" in r, r
+    assert r.index("Luke's cell number") < r.index("closer"), "phone problems are shown first"
+
+
+@pytest.mark.skipif(not MAC_PHONE_GATE.is_file(), reason="brown-bison-gov/data/phone_gate.py is not on this machine (cloud container)")
+def test_mac_phone_gate_parity_report(capsys):
+    """Review 2026-11-06 #2: the Mac gate (brown-bison-gov, another repo) and this one gave different answers. This REPORTS the
+    Mac gate's disagreements with the shared list (tests/phone_cases.json); it does not fail on them, because that gate is fixed in
+    its own repo. The cloud gate is held to every case by the tests above."""
+    mac = _load("test_bb_phone_gate", MAC_PHONE_GATE)
+    miss = [x for x in CALL_INVITES if not (mac.invite_hits(x) or mac.phone_hits(x))]
+    false = [x for x in TRADE_WORDS if mac.invite_hits(x) or mac.phone_hits(x)]
+    cmiss = [x for x in LUKE_CELL_FORMS if not mac.phone_hits(f"Questions: {x} or email.")]
+    cfalse = [x for x in NOT_LUKE_CELL if mac.phone_hits(x)]
+    with capsys.disabled():
+        print(f"\n[mac-parity] Mac phone_gate vs tests/phone_cases.json: {len(miss)}/{len(CALL_INVITES)} invites missed, "
+              f"{len(false)}/{len(TRADE_WORDS)} trade/third-party lines refused, {len(cmiss)}/{len(LUKE_CELL_FORMS)} cell forms "
+              f"missed, {len(cfalse)}/{len(NOT_LUKE_CELL)} other numbers refused")
+        for kind, xs in (("MISS", miss), ("FALSE", false), ("CELL-MISS", cmiss), ("CELL-FALSE", cfalse)):
+            for x in xs:
+                print(f"[mac-parity] {kind} {x!r}")
+    assert callable(mac.invite_hits) and callable(mac.phone_hits)
+
+
+def test_owner_only_mail_keeps_the_phone():
+    assert _hook("mcp__Gmail__send_message", {"to": ["luke@brownbisonco.com"], "subject": "BROWN BISON 11/06 PM",
+                                              "body": "Brad called (720) 275-1554 twice; call him back?"}) is None
+
+
 # ---------------------------------------------------------------------------------------------------------------- recipients
 @pytest.mark.parametrize("rcpts", [["luke@brownbisonco.com"], ["LUKE@BrownBisonCo.com"], ["lukemitchelladams@gmail.com"],
                                    ["lukemitchelladams@gmail.com", "luke@brownbisonco.com"], [" luke@brownbisonco.com "],
@@ -498,16 +710,25 @@ def test_signature_is_operations_manager(gm):
         assert bad not in gm.SIGNATURE
     assert gm.SIGNATURE.startswith("\n\n") and gm.SIGNATURE.endswith("\n")
     assert gm.SIGNATURE.strip("\n").split("\n") == list(gate.SIGNATURE_LINES) == ["Luke Adams", "Operations Manager",
-                                                                                   "Brown Bison Holdings LLC", "(720) 275-1554",
+                                                                                   "Brown Bison Holdings LLC",
                                                                                    "luke@brownbisonco.com"]
     assert "Owner, Brown Bison" not in (SCRIPTS / "gmail_api.py").read_text(encoding="utf-8")
     assert gm.MAX_ASKS == gate.MAX_ASKS
 
 
+def test_signature_has_no_phone(gm):
+    """Luke 2026-11-06: four lines, no phone, in both the sender and the connector gate."""
+    for sig in (gm.SIGNATURE, "\n".join(gate.SIGNATURE_LINES), SIG):
+        assert gate.phone_problems(sig) == [] and not re.search(r"\d{3}\D{0,3}\d{4}", sig), sig
+    assert len(gate.SIGNATURE_LINES) == 4 and gm.SIGNATURE_LINES == gate.SIGNATURE_LINES
+    assert gate.luke_cell_in((SCRIPTS / "gmail_api.py").read_text(encoding="utf-8")) is None, "the sender still carries Luke's cell"
+
+
 @pytest.mark.skipif(not BRAND.is_file(), reason="brown-bison-gov/data/brand.py is not on this machine (cloud container)")
 def test_signature_matches_brand_py(gm):
+    """brand.py's NAME / TITLE / COMPANY / EMAIL, in that order; its PHONE is for forms and proposals, never email (2026-11-06)."""
     brand = _load("test_bb_brand", BRAND)
-    assert gm.SIGNATURE.strip("\n") == brand.SIGNATURE == "\n".join(gate.SIGNATURE_LINES)
+    assert gm.SIGNATURE.strip("\n").split("\n") == [brand.NAME, brand.TITLE, brand.COMPANY, brand.EMAIL] == list(gate.SIGNATURE_LINES)
 
 
 def test_send_refuses_weld_before_any_network_call(gm, monkeypatch, capsys):
@@ -551,6 +772,41 @@ def test_text_attachment_is_refused_through_send(gm, monkeypatch, capsys, tmp_pa
 ])
 def test_mixed_or_disguised_recipients_are_linted(gm, monkeypatch, capsys, flags):
     _refused(gm, monkeypatch, capsys, *flags, "--subject", "x", "--body-file", str(WELD))
+
+
+@pytest.mark.parametrize("sentence", ["Give me a call if that is easier.", "My cell is 720-275-1554.", "Call or text anytime."])
+def test_send_refuses_phone_before_any_network_call(gm, monkeypatch, capsys, tmp_path, sentence):
+    err = _refused(gm, monkeypatch, capsys, "--to", "sam@example.com", "--subject", "Chiller pricing", "--body-file",
+                   _body(tmp_path, _with(sentence)))
+    assert PHONE_FIX in err, err
+
+
+def test_send_refuses_a_phone_subject(gm, monkeypatch, capsys, tmp_path):
+    err = _refused(gm, monkeypatch, capsys, "--to", "sam@example.com", "--subject", "Chiller pricing, call 720 275 1554",
+                   "--body-file", _body(tmp_path, GOOD))
+    assert "subject: Luke's cell number" in err and PHONE_FIX in err, err
+
+
+def test_send_refuses_when_the_appended_signature_carries_the_phone(gm, monkeypatch, capsys, tmp_path):
+    monkeypatch.setattr(gm, "SIGNATURE", "\n\n" + OLD_SIG + "\n")
+    err = _refused(gm, monkeypatch, capsys, "--to", "sam@example.com", "--subject", "Chiller pricing", "--body-file",
+                   _body(tmp_path, GOOD))
+    assert "signature: Luke's cell number '(720) 275-1554'" in err, err
+
+
+def test_owner_only_send_may_carry_the_phone(gm, monkeypatch, tmp_path):
+    with pytest.raises(NetworkTouched):                 # reached the (stubbed) token step: owner-only mail is exempt
+        _send(gm, monkeypatch, "--to", "luke@brownbisonco.com", "--subject", "Brad called", "--body-file",
+              _body(tmp_path, "Brad called twice. Call him back at 719-624-8100 or call me at (720) 275-1554.\n"))
+
+
+def test_passing_body_goes_out_without_a_phone_line(gm, monkeypatch, tmp_path, capsys):
+    posted = _capture_send(gm, monkeypatch)
+    _send(gm, monkeypatch, "--to", "sam@example.com", "--subject", "Chiller", "--body-file", _body(tmp_path, _with(DAYTIME)))
+    (_method, _path, payload), = posted
+    content = email.message_from_bytes(base64.urlsafe_b64decode(json.loads(payload)["raw"]), policy=policy.default).get_content()
+    assert content.replace("\r\n", "\n").endswith("Thanks Sam,\n\n" + SIG + "\n"), content
+    assert gate.phone_problems(content) == [] and "275" not in content
 
 
 def test_recipient_with_a_line_break_is_refused(gm, monkeypatch, capsys, tmp_path):
@@ -746,7 +1002,8 @@ def test_hook_reply_and_forward():
     assert _denied(_hook("mcp__Gmail__reply", {"messageId": "m1", "to": ["luke@brownbisonco.com"], "replyAll": True, "body": "ok"}))
     assert _hook("mcp__Gmail__reply", {"messageId": "m1", "body": GOOD_MCP}) is None
     assert _denied(_hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["sam@example.com"]})), "a forward needs a note"
-    assert _hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["sam@example.com"], "forwardText": GOOD_MCP}) is None
+    assert _denied(_hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["sam@example.com"], "forwardText": GOOD_MCP})), \
+        "forward to anyone but Luke is refused (2026-11-06)"
     assert _denied(_hook("mcp__Gmail__forward", {"messageId": "m1", "to": ["sam@example.com"], "forwardText": GOOD}))
     assert _denied(_hook("mcp__Gmail__send_draft", {"draftId": "d1"}))
     assert _denied(_hook("mcp__910c93d7-015e-4b6a-959a-1621638f94ec__send_message",
@@ -893,7 +1150,9 @@ def test_send_outbox_end_to_end_with_the_real_gate(tmp_path):
     (tmp_path / "tail.txt").write_text(GOOD + SIG_TAIL, encoding="utf-8")
     (tmp_path / "long.txt").write_text(LONG, encoding="utf-8")
     (tmp_path / "inbound.txt").write_text(INBOUND5, encoding="utf-8")
+    (tmp_path / "phone.txt").write_text(_with("Give me a call at (720) 275-1554 if that is easier."), encoding="utf-8")
     (tmp_path / "outbox.json").write_text(json.dumps([
+        {"key": "phone", "subject": "s", "to": ["sam@example.com"], "body_file": "phone.txt", "files": []},
         {"key": "good", "subject": "s", "to": ["sam@example.com"], "body_file": "good.txt", "files": []},
         {"key": "bad", "subject": "s", "to": ["bids@example.gov"], "body_file": "bad.txt", "files": []},
         {"key": "tail", "subject": "s", "bcc": ["a@example.com", "b@example.com"], "body_file": "tail.txt", "files": []},
@@ -911,6 +1170,9 @@ def test_send_outbox_end_to_end_with_the_real_gate(tmp_path):
     out = r.stdout
     assert "sent good: fake-good.txt" in out and "sent long-asks: fake-long.txt" in out and "sent self: fake-bad.txt" in out, out
     assert "REFUSED bad: HUMANIZE:" in out and "REFUSED tail: HUMANIZE:" in out and "REFUSED long-bare: HUMANIZE:" in out, out
+    phone_line = next(x for x in out.splitlines() if x.startswith("REFUSED phone: HUMANIZE:"))
+    assert "Luke's cell number" in phone_line and "call invite 'Give me a call at'" in phone_line and PHONE_FIX in phone_line, out
+    assert "outbox: 3 sent, 0 skipped, 4 refused, 0 failed" in out, out
     sent = json.loads((tmp_path / "sent.json").read_text())
     assert set(sent) == {"good", "long-asks", "self"} and sent["long-asks"]["asks"] == 5
     calls = [json.loads(x) for x in (tmp_path / "calls.jsonl").read_text().splitlines()]
@@ -929,3 +1191,32 @@ def test_corpus_report(capsys):
             print(f"[corpus] FAIL {p.relative_to(ROOT)}: {' | '.join(probs)[:160]}")
     assert bodies
     assert WELD in [p for p, _ in failed]
+
+
+def test_phone_corpus_report(capsys):
+    """Every past cloud body and subject through phone_problems(); every outreach email draft (bids/*/*outreach*.md) free of
+    Luke's cell. The bodies sent up to 2026-11-06 carry no number and no call invite (on-call / emergency calls / 'the County
+    calls contractors' are trade words)."""
+    bodies = sorted(OUTBOX.glob("*/*.txt"))
+    body_hits = [(p, gate.phone_problems(p.read_text(encoding="utf-8"))) for p in bodies]
+    body_hits = [(p, probs) for p, probs in body_hits if probs]
+    subjects = []
+    for f in sorted(OUTBOX.glob("*/*.json")):
+        if f.name != "sent.json":
+            subjects += [(f, e["subject"]) for e in json.loads(f.read_text(encoding="utf-8"))]
+    subj_hits = [(f, s) for f, s in subjects if gate.phone_problems(s, "subject")]
+    drafts = sorted(ROOT.glob("bids/*/*outreach*.md"))
+    cell_drafts = [p for p in drafts if gate.luke_cell_in(p.read_text(encoding="utf-8"))]
+    with capsys.disabled():
+        print(f"\n[phone] {len(bodies)} bodies, {len(subjects)} subjects, {len(drafts)} outreach drafts: "
+              f"{len(body_hits)} body / {len(subj_hits)} subject refusals, {len(cell_drafts)} drafts with Luke's cell")
+        for p, probs in body_hits:
+            print(f"[phone] REFUSED {p.relative_to(ROOT)}: {' | '.join(probs)[:160]}")
+        for f, s in subj_hits:
+            print(f"[phone] REFUSED subject in {f.relative_to(ROOT)}: {s!r}")
+        for p in cell_drafts:
+            print(f"[phone] CELL in draft {p.relative_to(ROOT)}")
+    assert bodies and subjects and drafts
+    assert not [p for p, _ in body_hits if p.parent.name <= "2026-11-06"], body_hits
+    assert not [f for f, _ in subj_hits if f.parent.name <= "2026-11-06"], subj_hits
+    assert not cell_drafts, "outreach email drafts must use the four-line signature (no phone)"

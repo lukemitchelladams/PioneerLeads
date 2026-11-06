@@ -75,8 +75,8 @@ Subject: RE: Generator service, Town of Parker government contract (7 units, 6 s
 >
 > Thanks,
 > Luke Adams
+> Operations Manager
 > Brown Bison Holdings LLC
-> (720) 275-1554
 > luke@brownbisonco.com
 
 ## Draft B: first contact (rows 2-5 by email; call rows 6-10 using the same points)
@@ -103,8 +103,8 @@ Subject: Generator service pricing: Town of Parker RFP 26-021-1 (7 units, 6 site
 >
 > Thanks,
 > Luke Adams
+> Operations Manager
 > Brown Bison Holdings LLC
-> (720) 275-1554
 > luke@brownbisonco.com
 
 

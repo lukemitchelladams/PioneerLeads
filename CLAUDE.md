@@ -54,6 +54,24 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **HARD RULE: no phone in email. Get information by email; never give out Luke's cell or invite a call** (Luke,
+  2026-11-06 ~10:50 MT, verbatim: "i cant have all these fucking guys calling me all fucking day long, we need to try and
+  get information via email and not always be telling people or letting them call me, because i dont always have all the
+  ifnormation or am the most up to date because i work all day"). For every email to anyone other than Luke himself:
+  (a) Luke's cell (720) 275-1554 never appears, in any format, body or signature; (b) no call invites ("call me", "give us
+  a call", "call or text", "text me", "my cell", "reach me at <number>", "hop on a call", "quick call", "schedule a call",
+  "talk by phone", "phone call", "best number to reach", "good time to talk" ...); ordinary trade words are fine (on-call,
+  service call, call-out, callback response time, emergency calls, calls for service, "called for in the specs");
+  (c) the signature is FOUR lines: Luke Adams / Operations Manager / Brown Bison Holdings LLC / luke@brownbisonco.com.
+  Answer by email; at most add "Email is the best way to reach me during the day." `scripts/humanize_gate.py`
+  (phone_problems) refuses both send paths with "No phone number or call invite in email (Luke 2026-11-06) ...". It refuses
+  every "call" and "phone" in our own text BY DEFAULT unless it is a trade term, a third party's call or line ("the City
+  will call us", "call the Town procurement office", "photos from my phone") or negated ("don't call"); so write "Please
+  email any questions", never "call with questions". The connector `forward` to anyone but Luke is refused (it carries the
+  old thread, whose signatures hold the cell): write a new message and attach the file. Shared test cases:
+  `tests/phone_cases.json`.
+  Phone numbers on government bid FORMS and PROPOSAL documents (cover sheets, price sheets, contact tables) are out of
+  scope and stay. Mail only to Luke's own addresses is exempt.
 - **HARD RULE: every email to anyone other than Luke passes /humanize lint, every single time** (Luke, 2026-11-05
   ~11:00 MT, verbatim: "when you are going thru and sending email responses to people in this project, you have been
   using the humanize skill, correct? we need to always be doing that as a hard rule every single time going forward").
@@ -63,7 +81,7 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
   connector sends (send_message / reply / forward) are checked by the PreToolUse hook in `.claude/settings.json` and
   denied when they fail. There is no bypass flag. Group mail uses "Hi Team," / "Thanks Team," (never "Hi," or "Thanks,").
   A gmail_api.py body file ends at "Thanks <FirstName>,": the sender appends the signature. A connector body ends with
-  "Thanks <FirstName>," and then the five signature lines (the connector adds nothing). The title is **Operations
+  "Thanks <FirstName>," and then the four signature lines, no phone (the connector adds nothing). The title is **Operations
   Manager** (Luke 2026-10-18; never Owner, CEO, General Manager or Sales Manager). The gate also refuses links,
   look-alike or invisible characters, .txt/.html/.eml attachments, and `--no-signature` to outside recipients. A reply
   that answers several questions may go over 150 words only with the inbound email saved as text:

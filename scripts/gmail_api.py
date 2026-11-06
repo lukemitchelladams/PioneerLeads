@@ -14,7 +14,10 @@ runs scripts/humanize_gate.py on the body file (hz.py lint from the /humanize sk
 and the attachment types, unless every recipient is Luke's own address. On a FAIL it prints "HUMANIZE: ..." to stderr and
 exits 3; nothing is sent. There is no bypass flag. --no-signature is refused for anyone but Luke. A body file opens with
 "Hi <FirstName>," ("Hi Team," for group mail) and ENDS at "Thanks <FirstName>," ("Thanks Team,"): this script appends
-SIGNATURE (title Operations Manager, Luke 2026-10-18). No links, no .txt/.html/.eml attachments to outside recipients.
+SIGNATURE (title Operations Manager, Luke 2026-10-18; four lines, no phone, Luke 2026-11-06). No links, no .txt/.html/.eml
+attachments to outside recipients. PHONE (Luke 2026-11-06): no cell number in any format and no invitation to call ("call me",
+"give us a call", "my cell", "hop on a call" ...) in the body, subject or signature; answer by email, at most adding "Email is
+the best way to reach me during the day." Trade words (on-call, service call, call-out, callback time) are fine.
 --asks N raises the word budget only with the email being answered: --asks-from INBOUND.txt (asks = min(N, its '?' count));
 without it asks is capped at 1. Check a body first: python3 scripts/humanize_gate.py check body.txt --asks-from inbound.txt
 call() refuses a POST to .../messages/send or .../drafts/send that send() did not build after the gate passed.
@@ -44,8 +47,9 @@ API = "https://gmail.googleapis.com"
 SENDER = "luke@brownbisonco.com"
 SCOPES = "https://www.googleapis.com/auth/gmail.modify"
 # Luke 2026-10-18: the title is Operations Manager on every email, never Owner/CEO/General Manager/Sales Manager.
-# The same five lines as brown-bison-gov/data/brand.py SIGNATURE (NAME, TITLE, COMPANY, PHONE, EMAIL), after one blank line.
-SIGNATURE_LINES = ("Luke Adams", "Operations Manager", "Brown Bison Holdings LLC", "(720) 275-1554", "luke@brownbisonco.com")
+# Luke 2026-11-06: no phone line in email ("i cant have all these ... guys calling me all ... day long"). Four lines: brand.py's
+# NAME, TITLE, COMPANY, EMAIL (its PHONE stays for bid forms and proposals only), after one blank line.
+SIGNATURE_LINES = ("Luke Adams", "Operations Manager", "Brown Bison Holdings LLC", "luke@brownbisonco.com")
 SIGNATURE = "\n\n" + "\n".join(SIGNATURE_LINES) + "\n"
 MAX_ASKS = 20                                   # same cap as humanize_gate.MAX_ASKS
 GATE_FILE = Path(__file__).resolve().with_name("humanize_gate.py")
@@ -112,10 +116,12 @@ def _gate():
     return mod
 
 
-def humanize_refusal(text, recipients, asks=None, inbound=None, subject=None, files=(), no_signature=False):
+def humanize_refusal(text, recipients, asks=None, inbound=None, subject=None, files=(), no_signature=False, threaded=False):
     """-> (refusal, asks used). refusal is '' when this mail may go to these recipients, else the problems. Owner-only mail is
     exempt; everything else needs the signature, text-free attachments, a clean subject and a body that passes
-    humanize_gate.lint() (asks above 1 only with the inbound email). Fails closed: a gate that cannot load or run refuses."""
+    humanize_gate.lint() (asks above 1 only with the inbound email). threaded (--thread): a "Re:" subject is the thread's own and
+    skips the call-invite phrase check (Luke's cell is still refused); on a new message "Re:" skips nothing.
+    Fails closed: a gate that cannot load or run refuses."""
     try:
         gate = _gate()
         if gate.owner_only(recipients):
@@ -125,8 +131,10 @@ def humanize_refusal(text, recipients, asks=None, inbound=None, subject=None, fi
             probs.append("--no-signature is only for mail to Luke's own addresses; outside mail carries the Operations Manager "
                          "signature")
         probs += gate.attachment_problems(list(files or []))
+        if not no_signature:                     # what send() appends is checked too: a phone line put back here is refused
+            probs += gate.phone_problems(SIGNATURE, "signature")
         ok, problems, _warns, n = gate.lint(text, asks=asks, inbound=inbound)
-        probs += gate.subject_problems(subject, run_hz=not gate.hz_failed(problems)) + problems
+        probs += gate.subject_problems(subject, run_hz=not gate.hz_failed(problems), threaded=threaded) + problems
     except Exception as e:                       # noqa: BLE001  fail closed
         return f"the humanize gate could not run ({type(e).__name__}: {e}); nothing was sent", None
     if probs or not ok:
@@ -176,7 +184,7 @@ def send(a):
         except (OSError, UnicodeDecodeError) as e:
             _refuse(f"cannot read --asks-from {a.asks_from}: {e}")
     refusal, asks_used = humanize_refusal(text, [*to, *cc, *bcc], getattr(a, "asks", None), inbound, a.subject, a.files,
-                                          a.no_signature)
+                                          a.no_signature, threaded=bool(str(getattr(a, "thread", None) or "").strip()))
     if refusal:
         _refuse(refusal)
     msg = EmailMessage()

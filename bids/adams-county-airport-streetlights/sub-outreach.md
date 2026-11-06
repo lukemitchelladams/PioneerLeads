@@ -69,8 +69,9 @@ Subject: Pricing request: Adams County street light repair, Colorado Air and Spa
 >
 > Thank you,
 > Luke Adams
+> Operations Manager
 > Brown Bison Holdings LLC
-> luke@brownbisonco.com | (720) 275-1554
+> luke@brownbisonco.com
 
 **Variant for boring-only firms (Eagle HDD).** Replace items 1 to 4 with: (1) a lump-sum price for the three directional bores, with potholing as a separate line; (2) your contractor license or registration numbers and your insurance certificate; (3) your rig size, the longest bore and largest conduit you have done, and any pavement or road crossings; (4) your mobilization cost. Bore locations and lengths follow after the walk.
 

@@ -49,8 +49,9 @@ Bids are due 12/2. Davis-Bacon wages apply. ITB, specs and drawings attached.
 Thanks Sam,
 
 Luke Adams
-Owner, Brown Bison Holdings LLC
-(720) 275-1554 | luke@brownbisonco.com
+Operations Manager
+Brown Bison Holdings LLC
+luke@brownbisonco.com
 
 ## Log
 - 2026-10-28 19:30Z (hourly scan, read-only): file created; 7 email candidates + 5 phone-only firms sourced; nothing sent.

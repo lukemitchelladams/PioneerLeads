@@ -9,8 +9,10 @@ Two send paths, one gate:
                               or network call; refuses with exit 3 ("HUMANIZE: ..."). The body file ENDS at "Thanks <Name>,"
                               (gmail_api.py appends the Operations Manager signature itself).
   Gmail connector (MCP)       .claude/settings.json runs `humanize_gate.py hook` as a PreToolUse hook on send_message / reply /
-                              forward (any mail server). The body must end with "Thanks <Name>," and then the five signature lines
-                              (SIGNATURE_LINES), because the connector appends nothing. asks is always 0 here.
+                              forward (any mail server). The body must end with "Thanks <Name>," and then the four signature lines
+                              (SIGNATURE_LINES, no phone line), because the connector appends nothing. asks is always 0 here.
+                              forward to anyone but Luke is refused (2026-11-06): it carries the original message and its quoted
+                              thread, which the hook cannot read; write a new message instead.
 
     ok, problems = check(body, asks=None, inbound=None)            what both paths call (lint() without the warnings)
     ok, problems, warnings, asks_used = lint(body, asks=None, inbound=None, tail="none"|"signature")
@@ -24,16 +26,27 @@ Two send paths, one gate:
         - invisible or look-alike characters (format characters such as soft hyphen / ZWSP / BOM, non-Latin letters, non-ASCII
           digits, dashes other than '-', typographic quotes, emoji and pictographs, bullets and arrows, odd spaces and controls);
         - links: http(s)://, www. or a domain with a path (Luke 2026-10-26: no links in outside mail; a bare name like SAM.gov is
-          fine).
+          fine);
+        - PHONE (Luke 2026-11-06, phone_problems): Luke's cell in any format (body, signature, subject, attachment names: any
+          digits run that holds 7202751554 with separators of up to 8 characters, look-alike letters such as 'l554', or the bare
+          275-1554) and any invitation to phone him. Call invites are refused BY DEFAULT: every "call" and every "phone" in our
+          own text is refused unless it is a trade term (on-call, service / emergency / pre-bid call, call-out, call log / rate /
+          response, a call-back within 2 hours, "call for bids"), someone else's call or line ("the City will call us", "call
+          the Town procurement office", "your techs carry a cell phone", "photos from my phone"), RFP wording in the plural
+          ("phone calls must be returned within 4 hours") or negated ("don't call", "email, not phone"); text / ring / cell /
+          number / talk / voicemail / Zoom are refused in invite shapes ("text me", "my cell", "a good number to reach you",
+          "can we talk Monday", "talk soon"). Forms and proposals (not mail) may still print the number.
         hz.py's own warnings (adverbs, the 90-word target, long sentences, 3+ sentence paragraphs) are returned, printed by the
         CLI, and do not refuse: SKILL.md calls 150 the hard cap and 90 the target, and the adverb warns are discretionary.
     effective_asks(declared, inbound)   asks raise the word budget (cap max(150, 45 x asks)). Without the email being answered
                          (inbound text) asks is capped at 1; with it, asks = min(declared, '?' count in its unquoted lines), at
                          most MAX_ASKS. So an agent cannot lift the cap by typing a bigger number.
-    subject_problems(subject)           invisible characters always; "Re:"/"Fwd:" subjects are the thread's own and stop there;
-                         any other subject also passes `hz.py lint --chat` and the link rule.
+    subject_problems(subject, threaded=False)   invisible characters and Luke's cell always; a "Re:"/"Fwd:" subject on a really
+                         threaded message is the thread's own and stops there (without threaded=True it is also checked for call
+                         invites); any other subject also passes `hz.py lint --chat` and the link rule.
     attachment_problems(files)          plain-text, HTML, Markdown, RTF and .eml/.msg attachments are refused for outside mail (an
-                         unlinted "cover letter"); PDFs, Office files, CSV and images are fine.
+                         unlinted "cover letter"); PDFs, Office files, CSV and images are fine. A file NAME holding Luke's cell
+                         is refused.
     owner_only(rcpts)    True only when every recipient is exactly a bare ASCII address of Luke's own (OWN); that mail is exempt
     find_hz()            the hz.py that runs: ONLY the repo copy (.claude/skills/humanize/scripts/hz.py, reviewed and versioned);
                          a hand-made ~/.claude copy can be stale or edited, so it is never used; missing -> every check fails
@@ -80,8 +93,9 @@ MAX_ASKS = 20
 UNPROVEN_ASKS = 1                                             # asks without the inbound email
 MAX_LABEL_LINES = 12
 OWN = frozenset({"lukemitchelladams@gmail.com", "luke@brownbisonco.com"})   # Luke's own: mail only to these is exempt
-# Luke 2026-10-18: title Operations Manager on every email. Same five lines as brown-bison-gov/data/brand.py SIGNATURE.
-SIGNATURE_LINES = ("Luke Adams", "Operations Manager", "Brown Bison Holdings LLC", "(720) 275-1554", "luke@brownbisonco.com")
+# Luke 2026-10-18: title Operations Manager on every email. Luke 2026-11-06: no phone line (people were calling him all day);
+# brand.py's NAME, TITLE, COMPANY and EMAIL, in that order, without its PHONE.
+SIGNATURE_LINES = ("Luke Adams", "Operations Manager", "Brown Bison Holdings LLC", "luke@brownbisonco.com")
 
 # hz.py's closer (case-insensitive): finds the cut. CLOSER is the shape this gate accepts on that line.
 HZ_CLOSER = re.compile(r"^Thanks\s+(?P<who>[A-Za-z][\w.'-]*(?:\s*(?:,|and|&)\s*[A-Za-z][\w.'-]*)*),$", re.I)
@@ -180,6 +194,318 @@ def link_problems(text, where="body"):
     token = re.match(r"\S*", s[m.start():]).group(0)[:80]
     return [f"{where}: link {token!r}: no links in mail to anyone outside (Luke 2026-10-26); attach the file, or send it to "
             "Luke to forward"]
+
+
+# ---------------------------------------------------------------------------------------------------------------- phone
+# Luke 2026-11-06 ~10:50 MT, HARD RULE: people call him all day while he is at his day job, and he does not always have the latest
+# information, so outside mail gets answers by email. It never carries his cell and never invites a call. Phone numbers on bid
+# FORMS and PROPOSAL documents are not mail and are out of scope here.
+#
+# Call invites are refused BY DEFAULT (review 2026-11-06: a list of invite phrasings always misses one). Every "call" / "calling"
+# and every "phone" / "telephone" in our own text is refused unless it is one of the allowed uses below; words too common to refuse
+# outright (text, ring, cell, number, talk, chat, voicemail, Zoom) are refused in invite shapes (INVITES).
+#   allowed: trade terms (on-call, service / emergency / after-hours / conference / pre-bid call, call-out, call list / log / rate /
+#            response, a call-back within 2 hours, calls for service, "call for bids", "the right call", per call); a third party
+#            calling or being called ("the City will call us", "call the Town procurement office", "give the inspector a call",
+#            "a call with the County", "call Silas"); someone else's phone ("your techs carry a cell phone", "his phone number is on
+#            the W-9", "the dispatcher answers the phone", "Phone: 719-694-0515"); photos ("photos from my phone"); a negation that
+#            governs the word ("don't call", "no phone call needed", "rather than a phone call", "email, not phone"). Plural
+#            "calls" / "phone calls" (RFP wording: "phone calls must be returned within 4 hours") pass unless they invite ("calls
+#            are fine", "I take calls after 5").
+LUKE_CELL = "7202751554"                                     # (720) 275-1554, compared digits-only
+_LOCAL = LUKE_CELL[3:]                                       # 2751554: the number without its area code
+PHONE_FIX = ("No phone number or call invite in email (Luke 2026-11-06): answer by email; at most add 'Email is the best way to "
+             "reach me during the day.'")
+# digits joined by up to 8 characters that are neither digits nor ASCII letters: (720) 275-1554, 720 . . . 275 . . . 1554, 720-275-\n> 1554
+_RUN = re.compile(r"[0-9](?:[^0-9A-Za-z]{0,8}[0-9])*")
+_PHONE_WORD = re.compile(r"\b(?:cell|cellphone|mobile|mob|phone|ph|tel|telephone|call|text|txt|sms|reach|dial|direct)\W{0,4}$", re.I)
+_LOOK = {"O": "0", "o": "0", "D": "0", "Q": "0", "I": "1", "l": "1", "i": "1", "S": "5", "s": "5", "Z": "2", "z": "2", "B": "8"}
+_DASH_MAP = str.maketrans({c: "-" for c in "‐‑‒–—―−⁃﹘﹣"})
+
+
+def _norm(text):
+    """NFKC (full-width, superscript and math digits -> ASCII, odd spaces -> space), format characters dropped (soft hyphen,
+    zero-width space, BOM, bidi marks), every other Unicode decimal digit -> ASCII, curly apostrophes -> "'", dashes -> '-'."""
+    s = unicodedata.normalize("NFKC", str(text or ""))
+    s = "".join(c for c in s if unicodedata.category(c) != "Cf")
+    s = "".join(str(unicodedata.decimal(c)) if (c.isdecimal() and not "0" <= c <= "9") else c for c in s)
+    return s.replace("’", "'").replace("‘", "'").replace("ʼ", "'").translate(_DASH_MAP)
+
+
+def _lookalikes(s, as_digit):
+    """O/o/D/Q, I/l/i, S/s, Z/z and B standing next to a digit (and not inside a word) read as 0, 1, 5, 2, 8 (as_digit) or as a
+    separator (not as_digit): '720-275-l554', '72O-275-1554', '720-275-1S54'. Same length as s."""
+    out = list(s)
+    for i, c in enumerate(s):
+        if c in _LOOK:
+            p, n = (s[i - 1] if i else " "), (s[i + 1] if i + 1 < len(s) else " ")
+            if (p.isdigit() or n.isdigit()) and not p.isalpha() and not n.isalpha():
+                out[i] = _LOOK[c] if as_digit else "-"
+    return "".join(out)
+
+
+def luke_cell_in(text):
+    """The first run of digits that is Luke's cell, else None: a run whose digits hold 7202751554 (any separators of up to 8
+    characters, a leading 1 or +1, look-alike letters for digits), the bare 275-1554 with a separator, or 2751554 right after a
+    phone word ("cell 2751554"). "Bid number 2751554" is not his cell."""
+    base = _norm(text)
+    for s in (base, _lookalikes(base, True), _lookalikes(base, False)):
+        for m in _RUN.finditer(s):
+            groups = re.findall(r"[0-9]+", m.group(0))
+            if (LUKE_CELL in "".join(groups) or any(a == "275" and b == "1554" for a, b in zip(groups, groups[1:]))
+                    or (_LOCAL in groups and _PHONE_WORD.search(s[max(0, m.start() - 24):m.start()]))):
+                start = m.start() - (1 if m.start() and s[m.start() - 1] in "(+" else 0)
+                return " ".join(base[start:m.end()].split())
+    return None
+
+
+def _flat(text):
+    """_norm(), paragraphs (blank lines) kept as one newline each, every other run of whitespace one space ("Can we talk\\nby
+    phone" is one phrase)."""
+    s = _norm(text).replace("\r\n", "\n").replace("\r", "\n")
+    return "\n".join(" ".join(p.split()) for p in re.split(r"\n[ \t]*\n", s))
+
+
+_CLAUSE_END = re.compile(r"[,.;:!?()\[\]\"\n]")
+_SENT_END = re.compile(r"[.!?\n]")
+
+
+def _before(t, s, width=80):
+    b = t[max(0, s - width):s]
+    return b[max((m.end() for m in _CLAUSE_END.finditer(b)), default=0):]
+
+
+def _after(t, e, width=80):
+    a = t[e:e + width]
+    m = _CLAUSE_END.search(a)
+    return a[:m.start()] if m else a
+
+
+def _sentence(t, s, e):
+    a = max((m.end() for m in _SENT_END.finditer(t, 0, s)), default=0)
+    m = _SENT_END.search(t, e)
+    return t[a:m.start() if m else len(t)]
+
+
+def _luke_near(t, s):
+    """'him' / 'his' means Luke when Luke is named just before."""
+    return "luke" in t[max(0, s - 150):s].lower()
+
+
+# a negation that governs the phrase: the clause before it ENDS with the negation and at most 4 small words ("don't call", "please
+# do not call me", "no phone call needed", "rather than a phone call", "email, not phone"). "Don't hesitate to call me", "if you
+# can't find it call me" and "why not give me a call" stay invites.
+_NEG = re.compile(r"(?:\b(?:don't|dont|do not|doesn't|does not|didn't|did not|can't|cant|cannot|can not|won't|will not|wouldn't|"
+                  r"would not|shouldn't|should not|never|no|no need (?:to|for)|unable to|not able to|instead of|rather than|without|"
+                  r"in place of)|(?<!\bwhy )\bnot)"
+                  r"(?: (?:please|need|needs|to|have|has|be|able|take|taking|make|making|answer|return|get|jump|hop|on|a|an|the|any|"
+                  r"for|set|setup|up|schedule|give|you|me|us|him|it|by|via|over|more|another|other|further|ever|again|phone|"
+                  r"telephone|quick|call|calls)){0,4} ?$", re.I)
+_FIRST = re.compile(r"\b(?:i|i'm|i'll|i'd|i've|me|my|mine|we|we're|we'll|we'd|we've|us|our|ours|luke|luke's|brown bison)\b", re.I)
+_PHOTO = re.compile(r"\b(?:photos?|pictures?|pics?|images?|videos?|camera|snapped|took|shot|screenshots?)\b", re.I)
+# trade / third-party wording in the same sentence that makes "phone" someone else's line (only when nothing in it is ours)
+_ANCHOR = re.compile(r"\b(?:dispatch\w*|answering service|hotline|on-call|on call|24/7|24-hour|24 hours?|after-hours|after hours|"
+                     r"technicians?|techs?|crews?|foreman|foremen|operators?|tenants?|residents?|staff|service calls?|emergency|"
+                     r"emergencies|answer(?:s|ed|ing)? (?:the )?phones?|phone lines?|the (?:town|county|city|district|state|owner|"
+                     r"buyer|agency|school|airport|base)(?:'s)?|forms?|w-9|sign-?in|roster|bid form|proposal)\b", re.I)
+_TRADE_MOD = (r"service|emergency|after-hours|after hours|afterhours|overnight|weekend|holiday|night|trouble|repair|warranty|"
+              r"maintenance|no-heat|no heat|no-cool|no cool|nuisance|dispatch|dispatched|conference|pre-bid|prebid|pre-proposal|"
+              r"pre-submittal|presubmittal|pre-submission|pre-construction|preconstruction|kickoff|kick-off|bidders'?|vendors'?|"
+              r"roll|judgment|judgement|right|wrong|close|tough|hard|final|sales|cold|duty|alarm|fire|911|panic|elevator|wake-up|"
+              r"tenant|customer|work-order|work order|scheduled|unscheduled|routine|billable|non-billable|first|each|every|per|"
+              r"single|minimum|trip|truck|pm|preventive|preventative|standby|stand-by|snow|plow|plowing|storm|outage|mutual aid")
+_TRADE_BEFORE = re.compile(r"(?:\bon(?: ?- ?| )|\b(?:" + _TRADE_MOD + r")(?:[- ](?:tele)?phone)?[- ])$", re.I)
+_TRADE_AFTER = re.compile(
+    r"^(?:-?outs?\b|(?: (?:you|us|them|the crew|crews|a crew|a tech))? out\b|-ins?\b| in (?:number|info|details)\b"
+    r"|[- ](?:lists?|rotations?|schedules?|logs?|sheets?|volumes?|cent(?:er|re)s?|responses?|times?|turnaround|fees?|charges?|"
+    r"rates?|minimums?|records?|reports?|tickets?|queues?|tree|box(?:es)?|buttons?|stations?|systems?|data|history|counts?|"
+    r"frequency|frequencies|signs?|types?|totals?|hours?|windows?|duration|priority|priorities|notes?|letters?|slips?|routing|"
+    r"handling|takers?|intake|recordings?|tracking|accounting|premiums?|basis|threshold)\b"
+    r"| for (?:new |additional |more )?(?:bids?|proposals?|quotes?|quotations?|qualifications?|service|tenders?|papers?|projects?|"
+    r"submissions?|offers?|entries|applications?|vendors?|contractors?|interest|statements?|heat|heating|cooling|water|air)\b"
+    r"| (?:is|was|has been|gets|got) (?:placed|received|logged|made|answered|dispatched|closed)\b| attention\b"
+    r"|[- ]?backs? (?:within|response|time|in \d|inside|requirement|window|guarantee|of \d|under)\b"
+    r"| it\b(?! in\b))", re.I)
+_WHAT_WE_CALL = re.compile(r"\bwhat (?:we|they|you|people|i|the [\w ]{1,20}?) $", re.I)
+_ORG = (r"(?:town|county|city|district|state|owners?|buyers?|agency|government|school|airport|base|contracting officer|co|"
+        r"dispatchers?|dispatch|tenants?|residents?|inspectors?|supervisors?|managers?|staff|department|customers?|clients?|utility|"
+        r"monitoring company|alarm company|answering service|system|bas|panel|controls?|operators?|purchasing|procurement)")
+_GOV_SUBJ = re.compile(r"\b(?:the|a|an|each|every|any)(?: [\w'-]+){0,3}? " + _ORG + r"(?:'s)?(?: (?:will|would|may|can|could|"
+                       r"shall|should|might|must|usually|typically|normally|often|always|then|is going to|are going to|plans? to|"
+                       r"needs? to|wants? to|has to|have to)){0,2} $", re.I)
+_OTHER_SUBJ = re.compile(r"(?:\b(?:they|she)|\b(?:your|their|her)(?: [\w'-]+){1,2})(?: (?:will|would|may|can|could|shall|should|"
+                         r"might|must|usually|typically|then|is going to|are going to)){0,2} $", re.I)
+_FIRST_OBJ = re.compile(r"^(?:-?me\b| (?:back )?(?:me|us|luke|our|my|brown bison|bb)\b)", re.I)
+_POSS_BEFORE = re.compile(r"(?:\b(?:your|their|her|its)|(?<!\bluke)(?<!\blet)(?<!\bit)(?<!\bthat)(?<!\bwhat)(?<!\bhere)(?<!\bthere)"
+                          r"(?<!\bwho)(?<!\bhe)(?<!\bshe)(?<!\bwhere)(?<!\bhow)'s)(?: [\w/-]+){0,2} $", re.I)   # not let's / it's
+_HIS_BEFORE = re.compile(r"\bhis(?: [\w/-]+){0,2} $", re.I)
+_GIVE_THIRD = re.compile(r"\bgive (?:(?:the|your|their|her|its|each|every) [\w' -]{1,40}?|them|her|(?!luke\b|brown\b)(?-i:[A-Z][a-z]+)"
+                         r"(?: (?-i:[A-Z][a-z]+))?) a (?:quick |short |brief )?$", re.I)
+_NOT_THE = (r"(?!(?:office|number|cell|cellphone|line|main line|phone|mobile|direct line|brown bison|bb|morning|afternoon|evening|"
+            r"night|day|week|weekend|time|hour|minute|moment|second)\b)")
+_THIRD_OBJ = re.compile(r"^ (?:back )?(?:(?:your|their|her|its) |(?:the|each|every|any|that|those|these|this) " + _NOT_THE
+                        + r"|(?:them|they|her)\b|(?:to|with|from|between) (?:the|your|their|his|her|its|them|a|an|each|every)\b"
+                        r"|\+?\(?\d)", re.I)
+_NAME_AFTER = re.compile(r"^ (?:back |(?:to|with|from) )?(?-i:(?P<n>[A-Z][A-Za-z][A-Za-z'.&-]*))")   # Silas, Xcel, RTD
+_NOT_NAMES = frozenset(
+    "luke brown bison me us our my monday tuesday wednesday thursday friday saturday sunday mon tue tues wed thu thur thurs fri sat "
+    "sun today tomorrow tonight anytime any anyone whenever back with if when after before or and then now soon later asap please "
+    "ok okay thanks thank questions question quick the this that here there directly instead again sometime around once january "
+    "february march april may june july august september october november december jan feb mar apr jun jul aug sep sept oct nov "
+    "dec me. at in on to for about re regarding".split())
+
+_CALL = re.compile(r"(?<![\w])(?:call(?:ing)?(?![\w])|callme\b|phonecall\b)", re.I)   # not calls/called/caller/callback/recall
+_PHONE = re.compile(r"(?<![\w])(?:tele)?phone(?![\w])(?![- ]?call)", re.I)          # "phone call" is checked as a call
+_THIRD_AFTER = (r"(?! (?:to|with) (?:the|your|their|his|her|its|a|an|them|(?-i:[A-Z]))"
+                r"| (?:numbers |it |this |that |more |details |the scope |pricing )?(?:by|over|via|in|on) (?:e-?mail|writing|the portal"
+                r"|bidnet|this thread)| you (?:with|to|in)\b| policy\b)")
+_CONNECT = r"connect(?=[.?!,;\n]| (?:by|on|over|via|this|next|tomorrow|today|later|soon|sometime|briefly|quickly)\b|$)"
+_DAYS = r"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)"
+INVITES = tuple(re.compile(p, re.I) for p in (
+    r"\b(?:can|could|shall|should|may|might|would|will) (?:we|i) (?:quickly |briefly )?(?:talk|chat|speak|catch up|touch base|"
+    + _CONNECT + r")\b" + _THIRD_AFTER,                                                  # can we talk Monday?
+    r"\blet(?:'s| us) (?:quickly |briefly )?(?:talk|chat|speak|catch up|touch base|hop on|jump on|get on|" + _CONNECT + r")\b"
+    + _THIRD_AFTER,                                                                     # let's talk / let's connect
+    r"\b(?:talk|speak|chat)(?: (?:to|with) you)? (?:soon|later|tomorrow|tonight|then|next week|this week|" + _DAYS + r")\b"
+    r"(?! in the\b)",                                                                   # talk soon, talk to you soon
+    r"\b(?:a few|a couple(?: of)?|some|a|\d+|five|ten|fifteen|twenty|thirty)[ -](?:minutes?|mins?)(?: (?:to|for))? (?:talk|chat|"
+    r"speak|connect|catch up|touch base)\b",                                            # a few minutes to talk
+    r"\b(?:a|the|good|best|convenient|better|free) time (?:to|for (?:a|an)) (?:quick )?(?:talk|chat|speak|connect|catch up|"
+    r"touch base|conversation)\b",                                                      # a good time to talk, find a time to talk
+    r"(?<!feel )\b(?:free|available|happy|glad|open|around) (?:to|for) (?:a )?(?:quick |short |brief )?(?:talk|chat|speak|hop on|"
+    r"jump on|get on|conversation)\b" + _THIRD_AFTER,                                  # available to talk, free to chat
+    r"\b(?:hit|ping) (?:me|us|luke) up\b", r"\bping (?:me|us|luke)\b(?! (?:by|on|via|over) e-?mail)",
+    r"\b(?:hop|jump|get) on (?:a |an )?(?:zoom|teams|webex|google meet|meet|facetime|video)\b",
+    r"\b(?:set ?up|schedule|book|arrange|grab|do|have) (?:a|an) (?:quick |short |brief )?(?:zoom|teams|webex|facetime|video)\b",
+    r"\bleave (?:me |us |luke )?(?:a |your )?(?:voicemail|voice mail|vm|voice message)\b"
+    r"(?! (?:for|at|with|on) (?:the|your|their|his|her|its|(?-i:[A-Z])))",           # not 'leave a voicemail for Jane'
+    r"\b(?:my|our|luke's) (?:voicemail|voice mail)\b",
+    r"\b(?:my|our|luke's) (?:cell|cellphone|cell phone|mobile|mobile phone|direct line|direct dial|direct number|office line|"
+    r"personal line|personal number|landline|phone number|contact number|callback number|call-back number)\b"
+    r"(?! (?:photos?|pictures?|pics?|videos?|camera|shots?)\b)",                        # my cell (not 'my cell photos')
+    r"\b(?:my|our|luke's) number\b(?! (?:one|1|of)\b)",                                 # my number is below
+    r"\b(?:on|to) (?:my|luke's) (?:cell|mobile)\b",
+    r"\b(?:by|via|over) (?:cell|mobile|text|txt|sms|whatsapp|imessage|facetime|signal)\b(?! (?:file|box|field|tower)\b)",
+    r"\b(?:text|txt|sms|whatsapp|imessage) (?:me|(?-i:us|Us)|luke)\b",                # text me / text us (not 'text US Code')
+    r"\b(?:send|shoot|drop|fire|flick) (?:me|us|luke) a (?:quick )?(?:text|txt|sms)\b",
+    r"\btext(?:ing)? (?:is|works|would work|'s) (?:fine|best|easier|easiest|good|great|ok|okay|quicker|faster)\b",
+    r"\ba text (?:works|would|is fine|is best)\b",
+    r"\bfeel free to (?:text|ring|buzz|ping)\b",
+    r"\bc/t\b",
+    r"\b(?:ring|buzz) (?:me|us|luke)\b",
+    r"\bgive (?:me |us |luke |our office |the office )?a (?:quick )?(?:ring|buzz|shout|holler|bell|tinkle)\b",
+    r"\bring (?:any ?time|whenever)\b",
+    r"\b(?:i|we|luke)(?:'ll|'d| will| can| could| would| shall) (?:ring|buzz|text) you\b",
+    r"\b(?:good|best|right|direct|cell|phone|mobile|callback) number (?:to|for|where|at which) (?:i |we |luke )?(?:can )?(?:reach|"
+    r"call|text|contact|get (?:a )?hold)",                                             # a good number to reach you
+    r"\bwhat(?:'s| is)? (?:the |your )?(?:best |good )?(?:number|cell|phone) (?:can|could|should|do|would|will) (?:i|we|luke) "
+    r"(?:reach|call|text|use)",                                                         # what number can I reach you at
+    r"\bbest (?:phone |cell |mobile |contact |callback |call-back )?number (?:to|for) (?:reach|call|text|contact|get (?:a )?hold)",
+    r"\bbest (?:phone|cell|mobile|contact|callback|call-back) number\b"
+    r"(?![^.?!\n]{0,40}\b(?:sign-?in|form|sheet|roster|w-9|bid form|proposal)\b)",     # not '... number for the walk sign-in sheet'
+    r"\breach (?:me|us|luke)(?: directly)? (?:at|on) [+(]?\d",                          # reach me at <any number>
+    r"\breachable (?:at|on) [+(]?\d",
+    r"\bcalls (?:are|is) (?:fine|welcome|ok|okay|best|easiest|easier|great|good|quicker|faster)\b", r"\bcalls welcome\b",
+    r"\b(?:i|luke)(?:'ll|'m| will| can| do| am)? (?:take|return|answer|field) (?:your |any |phone )?calls\b",
+    r"\b(?:i|we)(?:'d| would)? (?:prefer|like|rather) (?:phone )?calls\b",
+))
+
+
+def _third_object(t, e, after):
+    """The call goes to someone else: 'call the Town procurement office', 'call your supplier', 'call them', 'a call with the
+    County', 'call 811', 'call Silas'. Not 'call the office', 'call the number below', 'call this afternoon', 'call him' (Luke)."""
+    if _THIRD_OBJ.match(after):
+        return True
+    if re.match(r"^ (?:back )?(?:him|his)\b", after, re.I):
+        return not _luke_near(t, e)
+    m = _NAME_AFTER.match(after)
+    return bool(m) and m.group("n").lower().rstrip(".") not in _NOT_NAMES
+
+
+def _call_ok(t, s, e):
+    """True when this 'call' / 'calling' / 'phone call' is not an invitation to phone Luke (see the comment above LUKE_CELL)."""
+    word = t[s:e].lower()
+    before, after = _before(t, s), _after(t, e)
+    if _NEG.search(before):
+        return True
+    if word == "callme":
+        return False
+    if _TRADE_BEFORE.search(before) or _TRADE_AFTER.match(after) or _WHAT_WE_CALL.search(before):
+        return True
+    if _GOV_SUBJ.search(before):
+        return True                                          # the City will call us for each repair
+    first_obj = bool(_FIRST_OBJ.match(after)) or (bool(re.match(r"^ (?:back )?him\b", after, re.I)) and _luke_near(t, s))
+    if first_obj:
+        return False
+    if _OTHER_SUBJ.search(before):
+        return True                                          # their crew will call the Town
+    give = _GIVE_THIRD.search(before)
+    if give or re.search(r"\bgive him a (?:quick )?$", before, re.I):
+        return bool(give) or not _luke_near(t, s)
+    if _POSS_BEFORE.search(before) or (_HIS_BEFORE.search(before) and not _luke_near(t, s)):
+        return True                                          # your call (a decision), their phone call
+    return _third_object(t, e, after)
+
+
+def _phone_ok(t, s, e):
+    """True when this 'phone' / 'telephone' is not Luke's line offered to the reader."""
+    before, after = _before(t, s), _after(t, e)
+    if _NEG.search(before):
+        return True
+    sent = _sentence(t, s, e)
+    if _PHOTO.search(sent):
+        return True                                          # photos from my phone are attached
+    if _POSS_BEFORE.search(before) or (_HIS_BEFORE.search(before) and not _luke_near(t, s)):
+        return True                                          # your on-call phone number, his phone number is on the W-9
+    if (re.match(r"^(?: number)?\W{0,3}[+(]?\d", t[e:e + 16])
+            and not re.search(r"\b(?:my|our|luke's)(?: [\w-]+)? $", before, re.I)):
+        return True                                          # Phone: 719-694-0515 (someone else's; Luke's is caught by number)
+    return bool(_ANCHOR.search(sent)) and not _FIRST.search(sent)   # the dispatcher answers the phone
+
+
+def _snip(t, s, e):
+    pre = _before(t, s, 40).split()[-3:]
+    post = _after(t, e, 40)
+    words = post.split()
+    tail = (" " + " ".join(words[:2])) if post[:1] == " " else (words[0] if words else "")
+    return " ".join(pre + [t[s:e] + tail]).strip()
+
+
+def call_invites(text):
+    """Every call invite in text (see the comment above LUKE_CELL), in order, one per place: the default-refused call/phone words
+    with a few words around them, and the INVITES phrases."""
+    t = _flat(text)
+    hits = []
+    for m in _CALL.finditer(t):
+        if not _call_ok(t, m.start(), m.end()):
+            hits.append((m.start(), m.end(), _snip(t, m.start(), m.end())))
+    for m in _PHONE.finditer(t):
+        if not _phone_ok(t, m.start(), m.end()):
+            hits.append((m.start(), m.end(), _snip(t, m.start(), m.end())))
+    for rx in INVITES:
+        for m in rx.finditer(t):
+            if not _NEG.search(_before(t, m.start())):
+                hits.append((m.start(), m.end(), m.group(0)))
+    found, last = [], -1
+    for s, e, phrase in sorted(hits):
+        if s >= last and phrase.lower() not in (f.lower() for f in found):
+            found.append(phrase)
+        last = max(last, e)
+    return found
+
+
+def phone_problems(text, where="body", phrases=True):
+    """Luke's hard rule of 2026-11-06 for mail to anyone but him: no cell number in any format, no invitation to phone him.
+    phrases=False checks the number only (a thread's own "Re:" subject)."""
+    probs = []
+    cell = luke_cell_in(text)
+    if cell:
+        probs.append(f"{where}: Luke's cell number {cell[:40]!r}. " + PHONE_FIX)
+    hits = call_invites(text) if phrases else []
+    if hits:
+        shown = ", ".join(repr(h[:60]) for h in hits[:4]) + (f" (+{len(hits) - 4} more)" if len(hits) > 4 else "")
+        probs.append(f"{where}: call invite {shown}. " + PHONE_FIX)
+    return probs
 
 
 def _greeting_names(line):
@@ -379,7 +705,8 @@ def lint(body, asks=None, inbound=None, hz_py=None, tail="none"):
         return False, [str(e)], [], 0
     if tail not in ("none", "signature"):
         return False, [f"unknown tail mode {tail!r}"], [], n
-    probs = char_problems(body) + structure_problems(body, tail) + budget_problems(body, n, note) + link_problems(body)
+    probs = (char_problems(body) + structure_problems(body, tail) + budget_problems(body, n, note) + link_problems(body)
+             + phone_problems(body))
     ok, errs, warns = _hz(prose(body), n, hz_py=hz_py)
     probs += errs
     return (ok and not probs), probs, warns, n
@@ -391,18 +718,21 @@ def check(body, asks=None, inbound=None, hz_py=None, tail="none"):
     return ok, probs
 
 
-def subject_problems(subject, hz_py=None, run_hz=True):
-    """The subject of outside mail: one line, no invisible characters; unless it is a thread's own "Re:"/"Fwd:" subject, also no
-    look-alikes, emoji, links or hz.py --chat ERROR (dashes, curly quotes, banned phrases). run_hz=False (hz.py already failed
-    closed on the body) skips the hz.py run so a hung linter costs one timeout, not two."""
+def subject_problems(subject, hz_py=None, run_hz=True, threaded=False):
+    """The subject of outside mail: one line, no invisible characters, never Luke's cell; unless it is a thread's own "Re:"/"Fwd:"
+    subject, also no look-alikes, emoji, links, call invites or hz.py --chat ERROR (dashes, curly quotes, banned phrases).
+    A "Re:"/"Fwd:" subject is the thread's own only when the message really is threaded (threaded=True: gmail_api.py --thread, a
+    connector replyThreadId / replyToMessageId, or a reply tool); typing "Re:" on a new message does not skip the call-invite check.
+    run_hz=False (hz.py already failed closed on the body) skips the hz.py run so a hung linter costs one timeout, not two."""
     s = str(subject if subject is not None else "")
     if not s.strip():
         return ["subject: empty; outside mail needs a subject line"]
     if any(ch in s for ch in "\r\n\x85  "):
         return ["subject: a line break inside the subject"]
     if REPLY_SUBJECT.match(s):
-        return [p for p in char_problems(s, "subject") if "invisible" in p or "control" in p]
-    probs = char_problems(s, "subject") + link_problems(s, "subject")
+        return ([p for p in char_problems(s, "subject") if "invisible" in p or "control" in p]
+                + phone_problems(s, "subject", phrases=not threaded))
+    probs = char_problems(s, "subject") + link_problems(s, "subject") + phone_problems(s, "subject")
     if not run_hz:
         return probs
     ok, errs, _warns = _hz(s.strip() + "\n", 0, chat=True, hz_py=hz_py)
@@ -413,17 +743,23 @@ def attachment_problems(files):
     """files: paths/names, or (name, mime type) pairs. Text-like attachments carry unlinted prose, so outside mail cannot carry
     them."""
     import mimetypes
-    bad = []
+    bad, cell = [], []
     for f in files or []:
         name, ctype = (f if isinstance(f, (tuple, list)) else (f, None))
         name = str(name or "")
         ctype = str(ctype or mimetypes.guess_type(name)[0] or "").lower()
         if Path(name).suffix.lower() in TEXT_ATTACH_EXT or ctype.startswith(TEXT_ATTACH_TYPES):
             bad.append(Path(name).name or ctype)
-    if not bad:
-        return []
-    return [f"attachment {', '.join(bad)}: plain-text, HTML, Markdown, RTF or mail attachments carry unlinted text; put the words "
-            "in the humanized body, or send a PDF/Office file"]
+        if luke_cell_in(Path(name).name):                    # the file NAME (its contents are not read here)
+            cell.append(Path(name).name)
+    probs = []
+    if bad:
+        probs.append(f"attachment {', '.join(bad)}: plain-text, HTML, Markdown, RTF or mail attachments carry unlinted text; put "
+                     "the words in the humanized body, or send a PDF/Office file")
+    if cell:
+        probs.append(f"attachment name {', '.join(repr(c[:60]) for c in cell)}: Luke's cell number in the file name; rename the "
+                     "file. " + PHONE_FIX)
+    return probs
 
 
 # ---------------------------------------------------------------------------------------------------------------- recipients
@@ -450,8 +786,9 @@ REPLY_TOOLS = frozenset({"reply", "reply_all"})
 TEXT_KEYS = ("body", "forwardText", "forward_text", "text", "content", "message", "note", "comment")
 HTML_KEYS = ("htmlBody", "html_body", "html")
 SHAPE_KEYS = ("messageId", "draftId", "replyThreadId", "replyToMessageId", "forwardText", "htmlBody", "html_body", "subject")
-HOOK_FIX = ("Write it with /humanize: 'Hi <FirstName>,', the message, 'Thanks <FirstName>,', then the five signature lines ("
-            + " / ".join(SIGNATURE_LINES) + ") and nothing else. Pre-check: python3 scripts/humanize_gate.py check FILE --signature. "
+HOOK_FIX = ("Write it with /humanize: 'Hi <FirstName>,', the message, 'Thanks <FirstName>,', then the four signature lines ("
+            + " / ".join(SIGNATURE_LINES) + ", no phone line) and nothing else. Pre-check: python3 scripts/humanize_gate.py check "
+            "FILE --signature. "
             "A reply that answers several questions, or carries files, goes through scripts/gmail_api.py send --asks-from INBOUND.")
 
 
@@ -507,7 +844,16 @@ def _is_mail(name, ti):
 
 
 def _shown(problems):
-    return "; ".join(problems[:6]) + (f"; ... {len(problems) - 6} more" if len(problems) > 6 else "")
+    """At most 6 problems, phone problems first, with PHONE_FIX said once at the end (never cut off with the 7th problem)."""
+    phone = [p for p in problems if p.endswith(PHONE_FIX)]
+    ps = [p[: -len(PHONE_FIX)].rstrip(" .") for p in phone] + [p for p in problems if not p.endswith(PHONE_FIX)]
+    out = "; ".join(ps[:6]) + (f"; ... {len(ps) - 6} more" if len(ps) > 6 else "")
+    return out + (". " + PHONE_FIX if phone else "")
+
+
+def _field(k, p):
+    """'body: <problem>' from lint() under the connector field it came from: 'forwardText: ...', never 'body: body: ...'."""
+    return f"{k}: {p[len('body: '):]}" if p.startswith("body: ") else f"{k}: {p}"
 
 
 def _decide_mail(tool, ti, hz_py=None):
@@ -528,23 +874,28 @@ def _decide_mail(tool, ti, hz_py=None):
     if ti.get("includeSignature") is True:
         return _deny("includeSignature appends a Gmail web signature this hook cannot read (and may not say Operations Manager); "
                      "set it false and put the signature lines in the body. " + HOOK_FIX)
+    if tool == "forward":
+        # Luke 2026-11-06: the connector sends the original message (and its quoted thread) under forwardText, and this hook reads
+        # only forwardText. Every email sent before 2026-11-06 carries "(720) 275-1554" in its signature, and replies quote it.
+        return _deny(f"forward to {', '.join(rcpts) or 'the recipients'} is refused: a forward carries the original message and "
+                     "its quoted thread, which this hook cannot read (mail before 2026-11-06 carries Luke's cell in the signature). "
+                     "Write a new humanized message instead (send_message, or scripts/gmail_api.py send with the file attached), "
+                     "or forward it to Luke. " + PHONE_FIX)
     texts = [(k, ti[k]) for k in TEXT_KEYS if isinstance(ti.get(k), str) and ti[k].strip()]
     if not texts:
-        if tool == "forward":
-            return _deny(f"forward to {', '.join(rcpts) or 'the recipients'} has no note; put a short humanized note in forwardText. "
-                         + HOOK_FIX)
         return _deny(f"{tool} has no plain-text body to check. " + HOOK_FIX)
     body_probs, broken = [], False
     for k, v in texts:
         ok, problems, _warns, _n = lint(v, asks=0, hz_py=hz_py, tail="signature")
         broken = broken or hz_failed(problems)
         if not ok:
-            body_probs += [f"{k}: {p}" for p in problems] or [f"{k}: hz.py lint did not PASS"]
+            body_probs += [_field(k, p) for p in problems] or [f"{k}: hz.py lint did not PASS"]
     atts = [(a.get("filename"), a.get("mimeType")) for a in (ti.get("attachments") or []) if isinstance(a, dict)]
     probs = attachment_problems(atts)
-    threaded = bool(str(ti.get("replyThreadId") or ti.get("replyToMessageId") or "").strip())
+    threaded = tool in REPLY_TOOLS or bool(str(ti.get("replyThreadId") or ti.get("replyToMessageId") or "").strip())
     if ti.get("subject") is not None or (tool in ("send_message", "send_email") and not threaded):
-        probs += subject_problems(ti.get("subject"), hz_py=hz_py, run_hz=not broken)   # a new message needs a clean subject
+        probs += subject_problems(ti.get("subject"), hz_py=hz_py, run_hz=not broken,   # a new message needs a clean subject
+                                  threaded=threaded)
     if body_probs:
         return _deny(f"this {tool} is not humanized: {_shown(body_probs + probs)}. " + HOOK_FIX)
     if probs:

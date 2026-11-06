@@ -1,3 +1,22 @@
+# 2026-11-06 ~10:50 MT: NO PHONE IN EMAIL (Luke's hard rule; both operators)
+
+Luke: "i cant have all these fucking guys calling me all fucking day long, we need to try and get information via email and
+not always be telling people or letting them call me, because i dont always have all the ifnormation or am the most up to
+date because i work all day". From now on, every email to anyone but Luke: no (720) 275-1554 in any format, no call invites
+("call me", "give us a call", "call or text", "my cell", "hop on a call", "schedule a call", "best number to reach" ...), and
+the four-line signature Luke Adams / Operations Manager / Brown Bison Holdings LLC / luke@brownbisonco.com. Get answers by
+email; chase by email (ops/plan_ceo/2026-11-06.md says "the chase is a call": that conflicts, so email unless Luke says
+otherwise). Trade words pass
+(on-call, service call, call-out, callback response time, emergency calls). Phone numbers on bid forms and proposal documents
+stay. The cloud gate (`scripts/humanize_gate.py` phone_problems, both send paths) refuses with "No phone number or call
+invite in email (Luke 2026-11-06): answer by email; at most add 'Email is the best way to reach me during the day.'" It
+refuses every "call" / "phone" in our own text by default (trade terms, third parties, photos and negations pass), and the
+connector `forward` to anyone but Luke. The Mac already has the four-line signature (brown-bison-gov data/brand.py) and its own
+check (data/phone_gate.py, commit b277275), but that check is narrower: run against the shared cases in
+tests/phone_cases.json (2026-11-06) it misses 68 of 176 invites (e.g. "Can we talk Monday?", "Talk to you soon.", "Would a
+call be easier?"), refuses 11 of 143 trade lines, and misses 6 cell forms ("720-275-l554", "12 275-1554"). tests/test_send_gate.py::test_mac_phone_gate_parity_report
+prints the list on the Mac. Until the Mac check is brought up to the same cases, write Mac mail to the cloud rule.
+
 # 2026-11-06 08:45 MT: the Mac heartbeat is RUNNING again (15:35Z). Parker, Brighton and FCC Florence go back to the Mac; the cloud stops touching those threads. Note for the Mac: Ceres sent its Brighton hourly rate 07:43 MT (rate lives in private/, not here) and the Mac's 08:33 MT reply asked Ceres to clear its Secretary of State delinquency; the cloud's 06:46 MT chase to Ceres and the Will Seargeant ask (EMR letter by Mon 09:00; what he needs from Luke to bind Travelers at $295 down) are logged in ops/outbox/2026-11-06/sent.json. Do not re-send either.
 
 # 2026-11-06 06:50 MT: the Mac heartbeat session has been BLOCKED since 02:28Z ("Approve or deny Bash"). Until it is unblocked, the cloud HQ also covers the Mac's threads: Parker (package build from Brad's numbers), Brighton (Ceres, Will's EMR letter, fee schedule), FCC Florence (Wind River/Arrowhead). Same rules: pull first, check Sent, log every send.
@@ -89,7 +108,8 @@ brown-bison-gov/data/humanize_gate.py, not the same gate; its docstring lists th
   (`humanize_gate.py hook`, fail-closed). The hook also denies draftId sends, htmlBody and includeSignature.
 - Body shape: "Hi <FirstName>," ("Hi Team,"), the message, "Thanks <FirstName>," ("Thanks Team,"). Every closer name must
   appear in the greeting. A gmail_api.py body file stops at the closer, because the sender appends the Operations Manager
-  signature. A connector body carries the five signature lines after the closer.
+  signature. A connector body carries the four signature lines after the closer (five until 2026-11-06; the phone line
+  is gone, see the 2026-11-06 section at the top).
 - Refused even when hz.py only warns: more than 150 words by the gate's own count, more than 12 "Label: value" lines,
   links, look-alike or invisible characters, .txt/.html/.eml attachments, and `--no-signature` to outsiders.
 - asks above 1 needs the inbound email saved as text (`--asks-from FILE`, manifest `asks_from`). asks = min(declared,

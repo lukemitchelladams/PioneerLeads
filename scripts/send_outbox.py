@@ -8,7 +8,8 @@ optional asks (whole number: questions in the email being answered) and asks_fro
 count only with it). Relative paths resolve against the directory you run this from. Results go to sent.json next to the
 manifest; entries already in sent.json are skipped, so a rerun never double-sends.
 
-gmail_api.py refuses (exit 3, "HUMANIZE: ...") anything that does not pass the humanize gate (Luke's hard rule, 2026-11-05):
+gmail_api.py refuses (exit 3, "HUMANIZE: ...") anything that does not pass the humanize gate (Luke's hard rule, 2026-11-05),
+including the no-phone rule (Luke 2026-11-06: no cell number, no call invite, four-line signature):
 that entry prints "REFUSED <key>: ..." and is NOT written to sent.json. A malformed entry (a list that is not a list, a value
 that starts with '-', an attachment that is not a file) prints "FAILED <key>: ..." and is not sent. The run ends with a summary
 line and exits 3 when any entry was REFUSED, 1 when any FAILED, else 0, so a loop that checks the exit code sees it.
