@@ -137,7 +137,7 @@
  {
   "key": "samgov:24ffa6d27a674212a41ade72d91ec106",
   "source": "samgov",
-  "agency": "TREASURY, DEPARTMENT OF THE.BUREAU OF ENGRAVING AND PRINTING.OFFICE OF CURRENCY MANU (WCF)",
+  "agency": "TREASURY, DEPARTMENT OF THE / BUREAU OF ENGRAVING AND PRINTING / OFFICE OF CURRENCY MANU (WCF)",
   "title": "Ergonomic Drum Handlers",
   "sol": "2031ZA27N00002",
   "closing": "2026-11-07",
@@ -148,6 +148,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view"
+ },
+ {
+  "key": "samgov:da941a154311495ab89a5c488bacee4b",
+  "source": "samgov",
+  "agency": "TREASURY, DEPARTMENT OF THE.BUREAU OF ENGRAVING AND PRINTING.OFFICE OF CURRENCY MANU (WCF)",
+  "title": "Ergonomic Drum Handlers",
+  "sol": "2031ZA27N00002",
+  "closing": "2026-11-07",
+  "posted": "2026-11-06",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/da941a154311495ab89a5c488bacee4b/view"
  },
  {
   "key": "bidnet:0000439271",
@@ -1003,6 +1018,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view"
+ },
+ {
+  "key": "samgov:21f8910c3dc44615956327770976b6c3",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+  "title": "Bearings",
+  "sol": "W911S227U0132",
+  "closing": "2026-11-13",
+  "posted": "2026-11-06",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/21f8910c3dc44615956327770976b6c3/view"
  },
  {
   "key": "samgov:4d6004a59233469891e19218228f709c",
@@ -2788,6 +2818,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e88b2c4bbf9b49c490f20e1bca91bf88/view"
+ },
+ {
+  "key": "bidnet:0000442906",
+  "source": "bidnet",
+  "agency": "Weld County",
+  "title": "Southeast Weld Facility Cabling",
+  "sol": "B2600113",
+  "closing": "2027-01-05",
+  "posted": "2026-11-06",
+  "prebid_date": "2026-11-19",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000442641",
