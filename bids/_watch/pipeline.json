@@ -1271,8 +1271,8 @@
       "trade": "Doors / storefront glazing (facilities)",
       "due": "2026-11-06T14:00:00-07:00",
       "portal": "ColoradoVSS",
-      "decision": "EVALUATE",
-      "decision_note": "Found 2026-10-29 14:08Z via the new ColoradoVSS source. VSS: 'Scope: Installation of garage storefront entrance/exit', 'Budget: $75,000'. MANDATORY pre-bid walk 2026-10-29 9:00AM at 1350 Lincoln St NW corner (Lincoln St and E 14th Ave); questions due 10/30 2:00PM. Dead unless someone attended the walk. Docs (Specifications, CDs, DQ) on VSS only; HQ to pull.",
+      "decision": "DEAD",
+      "decision_note": "Found 2026-10-29 14:08Z via the new ColoradoVSS source. VSS: 'Scope: Installation of garage storefront entrance/exit', 'Budget: $75,000'. MANDATORY pre-bid walk 2026-10-29 9:00AM at 1350 Lincoln St NW corner (Lincoln St and E 14th Ave); questions due 10/30 2:00PM. Dead unless someone attended the walk. Docs (Specifications, CDs, DQ) on VSS only; HQ to pull. | 2026-11-06: closed (no longer listed on the 21:37Z scan); not submitted.",
       "prebid": "2026-10-29T09:00:00-06:00",
       "prebid_mandatory": true,
       "performer": "Brown Bison + glazing/storefront sub (none identified)",
@@ -2215,6 +2215,12 @@
       "when": "2026-11-06T21:30:00Z",
       "kind": "decision",
       "note": "GO (recommended): package read; MANDATORY walk Wed 11/18 10:00 Buena Vista (Exhibit G + ID by 11/16); questions 11/23 12:00; due 11/30 14:00 MST; sub drafts ready for H2GS + 4 firms, not sent"
+    },
+    {
+      "bid": "dpa-ih-25043-garage-entrance",
+      "when": "2026-11-06T21:37:17Z",
+      "kind": "closed",
+      "note": "No longer listed; closed without a Brown Bison submission"
     }
   ],
   "doc_gaps": [

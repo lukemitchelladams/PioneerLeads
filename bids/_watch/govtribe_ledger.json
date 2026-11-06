@@ -2110,6 +2110,48 @@
    "verdict": "NO",
    "why": "Not a profile match.",
    "at": "2026-11-06T21:25:00Z"
+  },
+  "bidnet:0000442598": {
+   "name": "CMGC services, One Water Laboratory",
+   "verdict": "NO",
+   "why": "CMGC construction management for a new lab; GC/heavy, not our trades.",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "bidnet:0000442933": {
+   "name": "Sand Creek Palmer Park to Galley channel design",
+   "verdict": "NO",
+   "why": "Drainage design (rule 8).",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "bidnet:0000442946": {
+   "name": "Boulder HBSC roadmap web development",
+   "verdict": "NO",
+   "why": "Software/web.",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "bidnet:0000442947": {
+   "name": "Coiled aluminum - CCI",
+   "verdict": "NO",
+   "why": "Commodity supply (rule 9); not our product.",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "coloradovss:RFP-CFAA-2027000091": {
+   "name": "Coiled aluminum - CCI (VSS copy)",
+   "verdict": "NO",
+   "why": "Commodity supply (rule 9).",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "bidnet:444226628581": {
+   "name": "Cloud-based software solution",
+   "verdict": "NO",
+   "why": "Software.",
+   "at": "2026-11-06T22:25:00Z"
+  },
+  "coloradovss:NPSS1-FHLA-2027000083": {
+   "name": "Possibilities for Change - SBHC data",
+   "verdict": "NO",
+   "why": "Not a bid for our trades.",
+   "at": "2026-11-06T22:25:00Z"
   }
  },
  "watched": {
@@ -2295,6 +2337,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T21:25:00Z",
+ "last_hourly_check": "2026-11-06T22:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
