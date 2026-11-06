@@ -561,6 +561,22 @@
       "match": "0000442783",
       "folder": "bids/pueblo-ura-msa-landscape",
       "govtribe_ids": []
+    },
+    {
+      "name": "Canon City RFP 151-26 2027 Janitorial Services (EVALUATE; non-mandatory walk 11/30 09:00)",
+      "source": "bidnet",
+      "id": "0000442347",
+      "match": "0000442347",
+      "folder": "bids/canon-city-janitorial",
+      "govtribe_ids": []
+    },
+    {
+      "name": "Canon City RFP 129-26 2027 Boiler & Chiller Unit Maintenance (EVALUATE; no pre-bid, optional site visit)",
+      "source": "bidnet",
+      "id": "0000442382",
+      "match": "0000442382",
+      "folder": "bids/canon-city-boiler-chiller-maintenance",
+      "govtribe_ids": []
     }
   ]
 }
