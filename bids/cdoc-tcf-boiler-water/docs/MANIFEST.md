@@ -8,16 +8,24 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf
 - 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF MOD 1.pdf
 - 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF MOD 2.pdf
+- 0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf
 - 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS FINAL.pdf
 - 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS MOD 1.pdf
 - 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS MOD 2.pdf
+- 1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf
+- 2. Exhibit B - Required Vendor Information - Services (rev 2026-11-06).pdf
 - 2. Exhibit B - Required Vendor Information - Services.pdf
 - 3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf
+- 4. Exhibit D - Price Quote (rev 2026-11-06).xlsx
 - 4. Exhibit D - Price Quote.xlsx
+- 5. Exhibit E - Contract Performance Outside of the US (rev 2026-11-06).pdf
 - 5. Exhibit E - Contract Performance Outside of the US.pdf
+- 6. Exhibit F - Non-Conflict of Interest (rev 2026-11-06).pdf
 - 6. Exhibit F - Non-Conflict of Interest.pdf
+- 7. Exhibit G - Consent to Search (rev 2026-11-06).pdf
 - 7. Exhibit G - Consent to Search.pdf
 - 8. Attachment 1 - PO Terms and Conditions 090926.pdf
+- 9. Attachment 2 - Insurance Information (rev 2026-11-06).pdf
 - 9. Attachment 2 - Insurance Information.pdf
 
 ## Referenced in the solicitation
@@ -29,14 +37,14 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 | Appendix II |  | 8. Attachment 1 - PO Terms and Conditions 090926.pdf | **MISSING** |
 | Attachment 1 |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 8. Attachment 1 - PO Terms and Conditions 090926.pdf |
 | Attachment 2 |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 9. Attachment 2 - Insurance Information.pdf |
-| Attachment C |  | 7. Exhibit G - Consent to Search.pdf | INSIDE 7. Exhibit G - Consent to Search.pdf (heading found; verify pages) |
+| Attachment C |  | 7. Exhibit G - Consent to Search (rev 2026-11-06).pdf | INSIDE 7. Exhibit G - Consent to Search (rev 2026-11-06).pdf (heading found; verify pages) |
 | Attachment I |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | **MISSING** |
 | Exhibit A |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS MOD 1.pdf |
 | Exhibit B |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 2. Exhibit B - Required Vendor Information - Services.pdf |
 | Exhibit C |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf |
-| Exhibit D | Price Quote | 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS FINAL.pdf | IN HAND: 4. Exhibit D - Price Quote.xlsx |
-| Exhibit E |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 5. Exhibit E - Contract Performance Outside of the US.pdf |
-| Exhibit F |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 6. Exhibit F - Non-Conflict of Interest.pdf |
+| Exhibit D | Price Quote | 1. Exhibit A - SOW_ SPECS_ _ BIDDER RESPONS FINAL.pdf | IN HAND: 4. Exhibit D - Price Quote (rev 2026-11-06).xlsx |
+| Exhibit E |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 5. Exhibit E - Contract Performance Outside of the US (rev 2026-11-06).pdf |
+| Exhibit F |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 6. Exhibit F - Non-Conflict of Interest (rev 2026-11-06).pdf |
 | Exhibit G |  | 0. DQ 27-0037 Boiler Chemical _ Treatment SRVS - TCF FINAL.pdf | IN HAND: 7. Exhibit G - Consent to Search.pdf |
 | Form SS |  | 3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf | **MISSING** |
 | Form W |  | 3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf | INSIDE 3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf (heading found; verify pages) |
