@@ -829,3 +829,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen. Still no Parker numbers from Brad Orgill.
 - Dashboard blobs now: bids 9fae249b4812ee8801a9e468f5326683 (v122, sha d07ff9964be7), events cdf0992458bf207be961868fe04eb41f (v124, sha 2be9153e5fe6), sources a75ee33754e6d1062f44231853d09313 (v109, sha cd9b77825203), portal_feed 17400f62bdc177d8f09eb5a70189c8cd (v68, unchanged), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8, unchanged).
 - 2026-11-06 02:37Z hourly (HQ): BidNet deferred (next fresh login 03:37Z), rows carried 602/74; SAM 107, VSS 64/2; no NEW; inbox quiet.
+
+### 2026-11-06 03:21Z hourly (WORKER, read-only)
+- Scan 02:36Z: BidNet still deferred, now 2h46m stale (last good 00:36Z). Next fresh login is allowed after 03:37:02Z, about a minute after HQ's 03:35-03:36Z scan slot, so it may slip to 04:36Z. SAM 107, VSS 64/2; no NEW, no adds or removals. Inbox quiet; still no Parker numbers from Brad Orgill.
+- Dashboard blobs now: bids 2fa10799aed173ceeb80345ad6bf3f98 (v123, sha 43e1a7977ac9), events fe7ca25199a161c909cb6ee179f9141e (v125, sha f2459e0ed2f3), sources aa17316b0c499638d832f5ef6a988eb5 (v110, sha e16edaeb6a5d), portal_feed 17400f62bdc177d8f09eb5a70189c8cd (v68), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
