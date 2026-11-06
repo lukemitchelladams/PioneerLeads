@@ -1,8 +1,8 @@
 [
  {
   "source": "BidNet / RMEPS (Colorado)",
-  "status": "Live",
-  "detail": "logged in (attempt 1)",
+  "status": "Blind this run (last good data shown)",
+  "detail": "HTTP 200; showing 602 rows from the last good read; login deferred: last fresh login 2026-11-06T00:37:02+00:00, next allowed after 2026-11-06T03:37:02+00:00 (fresh logins kept 3 h apart: BidNet's robot check trips on them; the saved session",
   "open_count": 602,
   "matches": 74,
   "last_success": "2026-11-06T00:36:13+00:00"
@@ -13,7 +13,7 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set; detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-06T00:36:13+00:00"
+  "last_success": "2026-11-06T01:35:43+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +36 from the nightly bulk file",
   "open_count": 107,
   "matches": 107,
-  "last_success": "2026-11-06T00:36:13+00:00"
+  "last_success": "2026-11-06T01:35:43+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -37,7 +37,7 @@
   "detail": "public list (no login)",
   "open_count": 64,
   "matches": 2,
-  "last_success": "2026-11-06T00:36:13+00:00"
+  "last_success": "2026-11-06T01:35:43+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
