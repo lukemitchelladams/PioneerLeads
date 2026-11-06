@@ -1822,6 +1822,24 @@
    "verdict": "NO",
    "why": "Not a profile match: design, studies, food, fuel, bridge, weapons, IT or services outside our trades.",
    "at": "2026-11-06T01:30:00Z"
+  },
+  "samgov:deed9a3e226249949323bd501837d5b6": {
+   "name": "VA 36C25927Q0006 Thermo Fisher lab PM, Fort Harrison VAMC",
+   "verdict": "NO",
+   "why": "Notice of intent to sole-source to Thermo Fisher; lab equipment PM in Montana. Not ours.",
+   "at": "2026-11-06T02:30:00Z"
+  },
+  "samgov:5d6e86a93e944682bc58410b28366d2c": {
+   "name": "DLA Aviation SPE4A627RX186 needle roller bearing (sources sought)",
+   "verdict": "NO",
+   "why": "Aviation needle roller bearing; Jones Bearing makes mounted spherical roller bearings, not aviation needle bearings. Same call as earlier needle-bearing NOs.",
+   "at": "2026-11-06T02:30:00Z"
+  },
+  "samgov:670d4850d1c949aaa9d084774484465f": {
+   "name": "Army ACC-DTA CSO Amend 42: alternative water sources for small units",
+   "verdict": "NO",
+   "why": "R&D commercial solutions opening; not a trade or product buy for either company.",
+   "at": "2026-11-06T02:30:00Z"
   }
  },
  "watched": {
@@ -2007,6 +2025,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T01:30:00Z",
+ "last_hourly_check": "2026-11-06T02:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
