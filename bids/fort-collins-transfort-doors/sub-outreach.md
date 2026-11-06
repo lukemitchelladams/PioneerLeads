@@ -24,7 +24,8 @@ HQ / Luke: send from luke@brownbisonco.com with the ITB, Attachment A Drawings a
 | 6 | Gold Label Door Company | Denver | quote@goldlabeldoor.com | (303) 279-7234 | Commercial rolling steel, sectional and fire doors since 1991; ~60 mi |
 | 7 | Overhead Door Company of Denver, Inc. | Aurora | frontdesk@overheaddoordenver.com (careers mailbox; may route slowly) | (303) 366-4300 | Overhead Door distributor: sectional steel, rolling steel, dock equipment |
 
-Phone-only (no public email found; call or use the portal contact form):
+Phone-only (no public email found; use the portal contact form, no phone outreach; if only a call will do, it is a CALL
+BRIEF to Luke and his choice, CLAUDE.md 2026-11-06):
 
 | Company | City | Office phone | Notes |
 |---------|------|--------------|-------|

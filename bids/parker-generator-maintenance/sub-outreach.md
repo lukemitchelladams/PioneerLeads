@@ -1,10 +1,17 @@
 # Town of Parker RFP 26-021-1: generator-service sub outreach (DRAFTS, not sent)
 
+**NO-BID 2026-11-06 12:03 MT** (Colorado Standby sent no prices). Drafts A and B below are dead: do not send or fix them.
+The bid revives only if Brad Orgill's ten prices arrive by email by 1:00 PM MT 11/06; the Mac heartbeat owns that. The cloud
+does not email, chase or answer Brad Orgill or Colorado Standby (ops/plan_ceo/COORDINATION.md, 2026-11-06 ~12:10 MT). The
+Mac sent Luke the CALL BRIEF for Brad at 12:11 MT.
+
 Brown Bison submits the proposal and holds the contract. The generator-service firm prices and performs the field work
 as our subcontractor. RFP §8: subcontracting "material responsibilities" needs the Town's prior written approval, so we name
 the sub in the proposal.
 
 **2026-10-27: Luke handles all generator sub contact by phone; agent sends NO emails to these firms until Luke says.**
+(Superseded 2026-11-06 by the no-phone and call-brief rules in CLAUDE.md: work goes by email; a call is a CALL BRIEF and
+Luke's choice.)
 
 **2026-10-26: widened (Luke: decide on my own). Draft B sent to Smith, DVL, RMGS, Colorado Standby; follow-up to Generator Source. Pricing due Fri 10/30, questions by Wed 10/28.**
 
@@ -47,6 +54,8 @@ Internal notes (not for the emails):
 
 ## Draft A: follow-up to Generator Source (reply in the 10/19 thread)
 
+**NO-BID 2026-11-06: do not send.** (This draft also fails the send gate as written: "Hello," and "Thanks,".)
+
 Subject: RE: Generator service, Town of Parker government contract (7 units, 6 sites)
 
 > Hello,
@@ -79,7 +88,10 @@ Subject: RE: Generator service, Town of Parker government contract (7 units, 6 s
 > Brown Bison Holdings LLC
 > luke@brownbisonco.com
 
-## Draft B: first contact (rows 2-5 by email; call rows 6-10 using the same points)
+## Draft B: first contact (rows 2-5 by email; rows 6-10 by web form only, no phone)
+
+**NO-BID 2026-11-06: do not send.** (This draft also fails the send gate as written: "Hello," and "Thanks,". The old plan
+to phone rows 6-10 is void under Luke's 2026-11-06 call-brief rule.)
 
 Subject: Generator service pricing: Town of Parker RFP 26-021-1 (7 units, 6 sites)
 

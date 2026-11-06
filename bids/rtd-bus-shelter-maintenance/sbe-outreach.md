@@ -29,6 +29,10 @@ Also ask RTD's Small Business Office for help meeting the goal (a required good-
 
 ## Email (same text to each firm, first name filled in)
 
+Gate check 2026-11-06 (`python3 scripts/humanize_gate.py check`, first name filled in): the closer is fixed ("Thanks {first
+name},"; the four signature lines already match), but the draft still FAILS on content: 186 prose words (cap 150) and three
+dash bullets ("use 'Label: value' lines"). Rewrite with /humanize before any send; the send paths refuse it as written.
+
 Subject: RTD bus shelter contract (RFP 126DM016): pricing request for an RTD-certified SBE
 
 > Hi {first name},
@@ -48,10 +52,12 @@ Subject: RTD bus shelter contract (RFP 126DM016): pricing request for an RTD-cer
 > If you're interested, reply and I'll send the full shelter list and RTD's scope the same day. Prices by Friday,
 > November 6 would be ideal. Could you also confirm your RTD SBE certification is current?
 >
-> Thanks,
+> Thanks {first name},
 > Luke Adams
 > Operations Manager
 > Brown Bison Holdings LLC
 > luke@brownbisonco.com
 
-Follow-up (if no reply in 4 business days): a two-line nudge plus a phone call; log both.
+Follow-up (if no reply in 4 business days): a two-line email nudge; log it. No phone chase (Luke, 2026-11-06 call-brief rule
+in CLAUDE.md): if a firm asks for a call or only a call will do, answer by email and send Luke a CALL BRIEF; whether to call
+is his choice, and a call he makes gets logged here too.

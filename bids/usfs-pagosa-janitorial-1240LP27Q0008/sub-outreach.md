@@ -16,7 +16,7 @@ has few indexed commercial cleaners; most local firms are phone-only.
 | B&K Cleaning Services LLC | Durango | bandkcleaningcolorado@gmail.com | own site (bandkcleaningservices.com) | 970-844-4317 | Commercial clean, carpet cleaning, floor buffing; names Pagosa Springs in its service area. Good fit |
 | Evergreen Cleaning LLC | Bayfield (PO Box 76) | cleaningevergreen@gmail.com | Facebook page snippet (search result) | (970) 442-0183 | Cleaning LLC ~45 mi from Pagosa; commercial vs residential mix not stated. Fit unknown |
 
-## Phone-only (no public email found; Luke or the hourly check calls if no replies by Mon 2026-11-09)
+## Phone-only (no public email found; nobody phones them: Luke's 2026-11-06 call-brief rule. If no sub replies by Mon 2026-11-09, use web forms where a firm has one; if only a call will do, email Luke a CALL BRIEF and whether to call is his choice)
 
 | Company | City | Phone | Notes |
 |---|---|---|---|

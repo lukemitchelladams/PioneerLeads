@@ -1,3 +1,22 @@
+# 2026-11-06 ~12:10 MT: CALL REQUESTS BECOME A CALL BRIEF; Parker 26-021-1 NO-BID; CPW call cancelled (both operators)
+
+Luke: "yeah just do email and if they need to call me, you need to inform me that they let you know they want a call, and
+what i need to know for the call". When anyone asks for a call, says they called or left Luke a voicemail, or insists on a
+call: answer them by email with what we know (never promise, offer or schedule a call; never say Luke will call; at most
+"Email is the best way to reach me during the day."), and in the same session email Luke a CALL BRIEF from
+luke@brownbisonco.com to lukemitchelladams@gmail.com, subject "CALL REQUEST: <Name>, <Company> / <bid>", 8 lines max (WHO,
+WANTS, WHERE IT STANDS, ANSWERS YOU NEED, GET FROM THEM, DON'T COMMIT, IF YOU SKIP IT; full format in CLAUDE.md). Luke
+decides whether and when to call; it also goes on the board under "4. DECIDE". Plans never route work through Luke phoning
+someone: a chase is an email, and if only a call will do it is a CALL BRIEF and Luke's choice. The forward-looking call
+notes in ops/plan_ceo/2026-11-06.md ("the chase is a call"), RTD (sbe-outreach.md, sbe-research.md), Parker, Adams County,
+Pagosa and Fort Collins doors were rewritten to email + CALL BRIEF on 2026-11-06; past logs were left as they were.
+
+- **Parker RFP 26-021-1 (generators): NO-BID at 12:03 MT 11/6** (Colorado Standby sent no prices). It revives only if Brad
+  Orgill's ten prices arrive by email by 1:00 PM MT; **the Mac heartbeat owns any revive.** The cloud does not email,
+  chase or answer Brad Orgill or Colorado Standby. The Mac sent Luke the CALL BRIEF for Brad at 12:11 MT.
+- **Colorado Power Wash: Jake Pavelle's Mon 11/16 call is CANCELLED** (Mac, by email, 12:11 MT). The Mac owns CPW; the cloud
+  does not email Jake or CPW. The "call 11/16 10:00" in the division of labor below is void.
+
 # 2026-11-06 ~10:50 MT: NO PHONE IN EMAIL (Luke's hard rule; both operators)
 
 Luke: "i cant have all these fucking guys calling me all fucking day long, we need to try and get information via email and

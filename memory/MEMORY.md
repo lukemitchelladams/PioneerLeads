@@ -126,6 +126,16 @@ Bid documents are retrievable via Search_Government_Files / Show_Document. See d
   it is NOT stored here and must be rotated. Credentials belong in the cloud environment's Environment
   variables as BIDNET_USER / BIDNET_PASS, nowhere else. BidNet notifications currently go to the iCloud
   address, which no monitor sees: change the BidNet vendor contact email to luke@brownbisonco.com.
+- **No phone in email (Luke, 2026-11-06 ~10:50 MT, HARD RULE):** people were calling him all day at work. Every email to
+  anyone but Luke: no Luke cell in any format, no call invites, four-line signature (Luke Adams / Operations Manager /
+  Brown Bison Holdings LLC / luke@brownbisonco.com). Get information by email; at most "Email is the best way to reach me
+  during the day." Enforced by scripts/humanize_gate.py phone_problems (commit 2308570). Bid forms and proposals keep the number.
+- **Call requests become a CALL BRIEF (Luke, 2026-11-06 ~12:10 MT, HARD RULE):** "yeah just do email and if they need to
+  call me, you need to inform me that they let you know they want a call, and what i need to know for the call". Answer
+  the person by email (never promise or schedule a call); same session, email Luke a CALL BRIEF at
+  lukemitchelladams@gmail.com, subject "CALL REQUEST: <Name>, <Company> / <bid>", 7 numbered lines (WHO, WANTS, WHERE IT
+  STANDS, ANSWERS YOU NEED, GET FROM THEM, DON'T COMMIT, IF YOU SKIP IT); board line 4 DECIDE. Plans never route work
+  through Luke phoning: a chase is an email. Full text in CLAUDE.md.
 
 ## Last scan headline
 (none yet — no scan has run with portal access)
@@ -937,3 +947,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - New Luke HARD RULE in CLAUDE.md (2308570, 10:50 MT): no phone number or call invite in any outgoing email; 4-line signature; the humanize gate enforces it. I never email, but board lines must not suggest Luke call anyone. Brief him by email instead.
 - Inbox: BidNet addendum for Weld RE-4 27-02 Grandview Elementary roof (ledger DECIDE; roofing). Luke told Alex "Ok sounds good" on the RTD snow pricing. Nothing from Brad. Parker PASS not yet answered (closes 14:00 MT).
 - Dashboard blobs now: bids fbb012e4c675825471df4e4fc522fde8 (v139, sha 82d77ea378d5), events 8cccf9e2a7c7c1275e938b5fb0f9631a (v141, sha 51d522276950), sources f08d676f03e478bab5dc36797adc8958 (v126, sha b0c9d9cb21c5), portal_feed c6fcab2e3c35e2432661ca0558ec0405 (v75, sha 9e4c56765747), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
+- 2026-11-06 ~19:2xZ (agent, call-brief rule): CLAUDE.md gained the CALL BRIEF HARD RULE (Luke ~12:10 MT; brief goes to lukemitchelladams@gmail.com). Parker 26-021-1 NO-BID 12:03 MT (Mac owns any revive by 13:00 MT; cloud does not chase Brad Orgill / Colorado Standby); Jake Pavelle (CPW) 11/16 call cancelled by the Mac by email. Forward-looking phone notes rewritten to email + CALL BRIEF: ops/plan_ceo/2026-11-06.md, RTD sbe-outreach.md + sbe-research.md, Adams call list + call script (marked SUPERSEDED), Parker drafts (marked NO-BID), Pagosa phone-only list + README task, Fort Collins doors phone-only line. RTD SBE and Adams pricing drafts: closer fixed, still FAIL the gate on length (186 / 236 words) plus dash bullets (RTD) and "In short" (Adams); rewrite with /humanize before sending.

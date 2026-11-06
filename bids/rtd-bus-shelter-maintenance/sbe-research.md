@@ -325,8 +325,9 @@ Source: SBE Contract Requirements v10 §3.A (pp.11–15), same URL as above; RFP
 
 ## 4. Suggested next steps (for Luke; nothing has been sent)
 1. **Today:** email every Denver-metro firm in the appendix that holds 561720, 561790 or 561730 snow. Send the SOW and
-   shelter list, ask for a quote by **2026-11-06**, and follow up by phone. Log date, name, contact, phone and work
-   category for Enclosure 7. Start with the 15 above.
+   shelter list, ask for a quote by **2026-11-06**, and follow up by email (no phone chase: Luke's 2026-11-06 call-brief
+   rule in CLAUDE.md; if only a call will do, it is a CALL BRIEF to Luke and his choice). Log date, name, contact, phone
+   and work category for Enclosure 7. Start with the 15 above.
 2. **Email SBO@RTD-Denver.com** asking for help reaching the 15% goal. This is a required good-faith step, and the
    request itself counts as documentation.
 3. **Attend the 10/26 briefing.** Enclosure 7 asks about pre-bid attendance. Collect the sign-in sheet and the list

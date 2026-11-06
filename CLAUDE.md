@@ -72,6 +72,29 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
   `tests/phone_cases.json`.
   Phone numbers on government bid FORMS and PROPOSAL documents (cover sheets, price sheets, contact tables) are out of
   scope and stay. Mail only to Luke's own addresses is exempt.
+- **HARD RULE: a call request becomes a CALL BRIEF to Luke; plans never route work through Luke phoning someone** (Luke,
+  2026-11-06 ~12:10 MT, verbatim: "yeah just do email and if they need to call me, you need to inform me that they let you
+  know they want a call, and what i need to know for the call"). When anyone asks for a call, says they called or left
+  Luke a voicemail, or insists a call is needed:
+  (1) Answer them by email with what we know. Never promise, offer or schedule a call and never say Luke will call. At
+  most add "Email is the best way to reach me during the day."
+  (2) In the same session, email Luke a CALL BRIEF from luke@brownbisonco.com to **lukemitchelladams@gmail.com** (the
+  address the board emails go to; mail only to Luke's own addresses is exempt from the phone gate). Subject
+  "CALL REQUEST: <Name>, <Company> / <bid>". 8 lines max:
+    1. WHO: name, company, trade, their phone number from their own signature or our contact record
+    2. WANTS: what they want to talk about, in a few words
+    3. WHERE IT STANDS: bid number, due date, their price in hand or not
+    4. ANSWERS YOU NEED: the facts and numbers Luke should have ready
+    5. GET FROM THEM: the one thing to get on the call
+    6. DON'T COMMIT: no award promise, no start before the insurance bind, no spending before 11/13, plus anything
+       bid-specific
+    7. IF YOU SKIP IT: what we do by email instead, and the deadline
+  Luke decides whether and when to call. Also put it on the board under "4. DECIDE". Plans never route work through Luke
+  phoning someone: a chase is an email; if only a call will do, it is a CALL BRIEF and Luke's choice. Live examples (Mac,
+  11/6): Jake Pavelle (Colorado Power Wash) Mon 11/16 call cancelled by email 12:11 MT; CALL BRIEF for Brad Orgill
+  (Colorado Standby, Parker 26-021-1) sent to Luke 12:11 MT. Parker RFP 26-021-1 (generators) went NO-BID 12:03 MT 11/6
+  (Colorado Standby sent no prices); it revives only if Brad's ten prices arrive by email by 1:00 PM MT, which the Mac
+  heartbeat owns.
 - **HARD RULE: every email to anyone other than Luke passes /humanize lint, every single time** (Luke, 2026-11-05
   ~11:00 MT, verbatim: "when you are going thru and sending email responses to people in this project, you have been
   using the humanize skill, correct? we need to always be doing that as a hard rule every single time going forward").

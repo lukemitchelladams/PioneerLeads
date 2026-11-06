@@ -164,7 +164,8 @@ owner-operator can underbid a prime-plus-sub stack; our markup must stay thin; (
 - [x] Rule 0: site visit read (none scheduled, not mandatory) - 2026-11-05
 - [x] Rule 0b: sub outreach sent 2026-11-05 (3 firms with public emails; 10 phone-only firms listed for Luke)
 - [ ] Luke: decide whether to send the CO question (vendor-questions.md) before 2026-11-10 10:00 MT
-- [ ] Luke: call the phone-only Pagosa/Durango firms if no sub replies by Mon 2026-11-09
+- [ ] If no sub replies by Mon 2026-11-09: web-form the phone-only Pagosa/Durango firms that have a form; if only a call
+      will do, email Luke a CALL BRIEF (his choice whether to call; no phone chase, CLAUDE.md 2026-11-06)
 - [ ] Sub pricing in hand by Mon 2026-11-16 12:00 MT
 - [ ] Build quote: technical approach (PWS 1-11 mapped), key personnel (sub's lead janitor resume + references + QC manager
       name), QCP, biobased product list, employee list (PWS 8.2), Attachment 2 priced for base + 4 options, Attachment 7

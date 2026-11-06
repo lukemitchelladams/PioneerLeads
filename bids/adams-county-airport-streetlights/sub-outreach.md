@@ -21,10 +21,12 @@ Pricing requested by **Thu 2026-11-05**. Bids due 2026-11-12 15:00.
 - info@primaryelectricalusa.com: "EMAIL US" on https://primaryelectricalusa.com/contact-electrician-denver/ (company site).
 - edwin.topete@eaglehdd.com: mailto link on https://www.eaglehdd.com/ and https://www.eaglehdd.com/about-us (company site).
 - info-sturgeon@myrgroup.com: Henderson entry in the location list on https://sturgeonelectric.com/contact/ (company site). It is a shared company mailbox.
-- chip@einc.co: "POC Email" on the small-business profile https://govconinabox.com/explore/smb-federal-contractors/double-e-inc-C6ZXPV8GK194 (profile last updated 2024-04-11; contact person Robert Reinhard). It is NOT on Double E's own site, which shows only a contact form, 719-635-8828 and a Sinton Road address in Colorado Springs. einc.co has working mail records. Call first to confirm.
+- chip@einc.co: "POC Email" on the small-business profile https://govconinabox.com/explore/smb-federal-contractors/double-e-inc-C6ZXPV8GK194 (profile last updated 2024-04-11; contact person Robert Reinhard). It is NOT on Double E's own site, which shows only a contact form, 719-635-8828 and a Sinton Road address in Colorado Springs. einc.co has working mail records. Confirm it through Double E's web form before using it (no phone: Luke 2026-11-06).
 - HKS and CEC emails came from the earlier session and were not re-checked: hksutil.com did not load, and the cecfg.com contact page shows phones and a form only.
 
-**Call these today/tomorrow (best fits, no public email):**
+**No public email (best fits).** Rewritten 2026-11-06 (Luke's call-brief rule, CLAUDE.md): nobody phones these firms.
+Use a firm's web contact form where it has one; if only a call will do, send Luke a CALL BRIEF and whether to call is his
+choice.
 - Colorado Lighting Inc (CLI Services), Denver, (303) 288-3152: parking-lot/pole lighting since 1977; 8 new poles 2024.
 - Onsite Electric, Denver, (720) 948-0881: 2025 permit for directional boring to re-feed parking lot lights.
 - Hardcore Electric, Brighton, (720) 841-3897: commercial/industrial, near Watkins.
@@ -33,18 +35,23 @@ Pricing requested by **Thu 2026-11-05**. Bids due 2026-11-12 15:00.
 - Switch It Up LED, Denver, (720) 726-3326.
 - Boring only: Colorado Boring Co (970) 221-2046.
 
-**Added to the call list 2026-10-20 (website shows only a form and/or phone):**
+**Added to the no-email list 2026-10-20 (website shows only a form and/or phone; web form only, no phone):**
 - RM Electrical Solutions LLC, Commerce City, (720) 292-7930: "Parking lot and perimeter lighting ... install or repair site poles"; says it is SAM-registered. https://rockymountainelectrical.co/government-and-facility-electrical-contracting/
 - Electric Doctor, Englewood, (303) 973-2551: "installing new pole lights" for parking lots. Its only email on the site is jobs@electricdoc.com (careers): do not use. https://www.electricdoc.com/lighting/parking-lot-lighting/
 
 **Notes on the original call list (2026-10-20):**
-- All Reach Lighting now has a public email: tech@allreach.us (see table). Call is optional.
+- All Reach Lighting now has a public email: tech@allreach.us (see table). No call needed.
 - Colorado Lighting Inc (CLI Services): site has a web form only; main line (888) 288-3152; 1831 E 73rd Ave Unit B, Denver 80229. Its blog says it is converting Boulder's 4,400 streetlights to LED. https://www.coloradolighting.com/about-us/blog/bright-future-boulder-invests-in-led-streetlight-upgrade-with-cli-services
-- Hardcore Electric: site shows a form and phones only (2725 Mustang Ave, Brighton); services page says "We have bucket trucks". https://hardcore-electric.com/services/ A Gmail address, hardcoreelectricinc@gmail.com, sits in the page's hidden contact data but is not shown on the page. Confirm it by phone before using it.
+- Hardcore Electric: site shows a form and phones only (2725 Mustang Ave, Brighton); services page says "We have bucket trucks". https://hardcore-electric.com/services/ A Gmail address, hardcoreelectricinc@gmail.com, sits in the page's hidden contact data but is not shown on the page. Do not use it until the firm confirms it in writing (web form; no phone).
 
 ## Pricing-request email (Luke sends from luke@brownbisonco.com; nothing has been sent or drafted)
 
-Send to the 6 new table rows today, 2026-10-20 (Eagle HDD gets the boring-only variant below), then HKS and CEC if their drafts have not gone. Attach docs/ADCO-IFB2026766-Street-Light-Repair.pdf. Use "Hello," for shared mailboxes (admin@, info@, tech@). If the County bars cameras at the walk, change "photos and notes" to "notes, sketches and measurements" before the 2026-10-21 follow-up.
+Send to the 6 new table rows today, 2026-10-20 (Eagle HDD gets the boring-only variant below), then HKS and CEC if their drafts have not gone. Attach docs/ADCO-IFB2026766-Street-Light-Repair.pdf. For shared mailboxes (admin@, info@, tech@) open "Hi Team," and close "Thanks Team," (the send gate refuses a greeting or closer with no name). If the County bars cameras at the walk, change "photos and notes" to "notes, sketches and measurements" before the 2026-10-21 follow-up.
+
+Gate check 2026-11-06 (`python3 scripts/humanize_gate.py check`, first name filled in): the closer is fixed ("Thanks [first
+name],"; the four signature lines already match), but the draft still FAILS on content: 236 prose words (cap 150) and the
+banned phrase "In short". Its dates are also stale (bids now close 2026-12-02 per Addendum 1; pricing date 11/05 passed;
+walk 10/21 done). Rewrite with /humanize before any send; the send paths refuse it as written.
 
 Subject: Pricing request: Adams County street light repair, Colorado Air and Space Port (Watkins), due 2026-11-05
 
@@ -67,7 +74,7 @@ Subject: Pricing request: Adams County street light repair, Colorado Air and Spa
 >
 > Please send questions to me, not to the County or the airport. The IFB routes all bid communication through County Purchasing.
 >
-> Thank you,
+> Thanks [first name],
 > Luke Adams
 > Operations Manager
 > Brown Bison Holdings LLC
@@ -75,7 +82,10 @@ Subject: Pricing request: Adams County street light repair, Colorado Air and Spa
 
 **Variant for boring-only firms (Eagle HDD).** Replace items 1 to 4 with: (1) a lump-sum price for the three directional bores, with potholing as a separate line; (2) your contractor license or registration numbers and your insurance certificate; (3) your rig size, the longest bore and largest conduit you have done, and any pavement or road crossings; (4) your mobilization cost. Bore locations and lengths follow after the walk.
 
-**Call script (call-list firms).** "This is Luke Adams with Brown Bison Holdings. We are bidding an Adams County street light job at the Colorado Air and Space Port in Watkins. I am at the mandatory walk tomorrow and will send photos and notes. Do you do street light or pole-top luminaire work, directional boring or caissons? What email should I use? I need lump-sum pricing by 2026-11-05."
+**Call script: SUPERSEDED 2026-11-06, do not use** (Luke: get information by email, never route work through him phoning
+someone; CLAUDE.md no-phone and call-brief rules). Firms with no public email get the pricing request through their web
+form or not at all. If a firm will only deal by phone, email Luke a CALL BRIEF (subject "CALL REQUEST: <Name>, <Company> /
+Adams IFB-2026.766", the 7 lines in CLAUDE.md) and the call is his choice. Old text, kept for the record only: "This is Luke Adams with Brown Bison Holdings. We are bidding an Adams County street light job at the Colorado Air and Space Port in Watkins. I am at the mandatory walk tomorrow and will send photos and notes. Do you do street light or pole-top luminaire work, directional boring or caissons? What email should I use? I need lump-sum pricing by 2026-11-05."
 
 ## IFB rules that reach our subs (quoted; "p." = PDF page of docs/ADCO-IFB2026766-Street-Light-Repair.pdf)
 
