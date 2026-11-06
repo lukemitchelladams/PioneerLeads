@@ -365,9 +365,10 @@
       "prebid_mandatory": false,
       "performer": "Generator-service sub (Generator Source first choice; contacted 10/19)",
       "subs": "2026-10-26 16:36Z (HQ, Luke-authorized): follow-up to Generator Source + first contact to Colorado Standby (info@coloradostandby.com), RMGS (sales@rmgsco.com), DVL (GenService@dvlnet.com), Smith Power Products (generators@smithppi.com). 0 replies at 17:30Z. Questions to Town due 10/30 10:00; pricing wanted by 10/30. | 10/26 17:16 MT: Colorado Standby (Brad Orgill, brad_orgill@coloradostandby.com, 719-624-8100) replied 'We would be interested in taking a look. Please send over the RFP.' HQ asked to send the full RFP 26-021-1 package (attachments, no links). First generator-sub reply.",
-      "sub_pricing": "None (Colorado Standby, Brad Orgill, engaged 10/26; follow-up 10/30 09:10 MT with revised RFP and price sheet; numbers asked by Tue 11/03; proposals close Fri 11/06 14:00)",
+      "sub_pricing": "None. Colorado Standby (Brad Orgill) never priced; Luke 2026-11-06 10:46 MT: his phone call held no numbers.",
       "folder": "bids/parker-generator-maintenance",
-      "contact": "Charles Ellis, cellis@parkeronline.org"
+      "contact": "Charles Ellis, cellis@parkeronline.org",
+      "notes": "2026-11-06 10:46 MT Luke: Brad gave no numbers by phone either. No sub price 3h before close; recommended PASS, Luke decides."
     },
     {
       "id": "dougco-generator-pm",
@@ -2144,6 +2145,12 @@
       "when": "2026-11-06T15:39:06Z",
       "kind": "sub-reply",
       "note": "Brad Orgill: left Luke two voicemails 11/05; no numbers in writing. Mac moved the cutoff to 11:00 MT and asked him to email them."
+    },
+    {
+      "bid": "parker-generator",
+      "when": "2026-11-06T17:46:00Z",
+      "kind": "sub-fail",
+      "note": "Luke: Brad Orgill's call had no numbers; no sub pricing 3h before 14:00 close"
     }
   ],
   "doc_gaps": [
