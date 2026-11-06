@@ -1,3 +1,5 @@
+# 2026-11-06 08:45 MT: the Mac heartbeat is RUNNING again (15:35Z). Parker, Brighton and FCC Florence go back to the Mac; the cloud stops touching those threads. Note for the Mac: Ceres sent its Brighton hourly rate 07:43 MT (rate lives in private/, not here) and the Mac's 08:33 MT reply asked Ceres to clear its Secretary of State delinquency; the cloud's 06:46 MT chase to Ceres and the Will Seargeant ask (EMR letter by Mon 09:00; what he needs from Luke to bind Travelers at $295 down) are logged in ops/outbox/2026-11-06/sent.json. Do not re-send either.
+
 # 2026-11-06 06:50 MT: the Mac heartbeat session has been BLOCKED since 02:28Z ("Approve or deny Bash"). Until it is unblocked, the cloud HQ also covers the Mac's threads: Parker (package build from Brad's numbers), Brighton (Ceres, Will's EMR letter, fee schedule), FCC Florence (Wind River/Arrowhead). Same rules: pull first, check Sent, log every send.
 
 # DIVISION OF LABOR, both operators live (HQ, 2026-11-05 21:40Z)

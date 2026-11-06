@@ -38,3 +38,5 @@ Strait Mechanical, Evans (402) 684-2668 (WOSB, commercial/industrial); M.D. Heat
 - 2026-10-29 ~11:40 MT: HQ emailed Nick Yaw (Accutemp) the walk logistics for Thu 11/05 09:00 at 2110 O Street, Greeley (sign in as Brown Bison Holdings LLC; who attends?); the specs went to him 10/28 (ops/outbox/2026-10-29/accutemp.txt). Waiting on his pricing by Thu 11/12.
 
 - 2026-11-05 ~13:40 MT (HQ): mandatory 11/05 09:00 walk missed (Accutemp told to skip on 11/03). HQ emailed bids@weld.gov asking for a second site visit before the 11/12 10:00 question deadline (ops/outbox/2026-11-05/weld-second-walk.txt). If the County says yes: re-engage Accutemp (Nick Yaw) the same hour; pricing by 11/14; bid due 11/19 10:00.
+
+- 2026-11-06 15:04Z: Weld County Purchasing (Rose Everett, bids@weld.gov) answered the second-walk request: no second walk-through, no exceptions. Bid DEAD. Tell Accutemp (Nick Yaw) we are not bidding; nothing else to send.
