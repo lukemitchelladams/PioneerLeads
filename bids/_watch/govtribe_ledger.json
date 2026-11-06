@@ -2008,6 +2008,18 @@
    "verdict": "NO",
    "why": "Not a profile match (17:41Z scan add).",
    "at": "2026-11-06T18:25:00Z"
+  },
+  "coloradovss:DQ1-EFAA-2027000170": {
+   "name": "Colorado Energy Office carbon management zones consulting",
+   "verdict": "NO",
+   "why": "Not a profile match; consulting.",
+   "at": "2026-11-06T19:25:00Z"
+  },
+  "coloradovss:ITN-PMAA-2027000003": {
+   "name": "CPW Cherry Creek SP marina / lake house / swim beach concessionaire",
+   "verdict": "NO",
+   "why": "Not a profile match; concession operator.",
+   "at": "2026-11-06T19:25:00Z"
   }
  },
  "watched": {
@@ -2193,6 +2205,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T18:25:00Z",
+ "last_hourly_check": "2026-11-06T19:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
