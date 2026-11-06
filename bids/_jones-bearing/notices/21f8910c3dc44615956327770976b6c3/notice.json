@@ -1,0 +1,43 @@
+{
+ "source": "samgov",
+ "id": "21f8910c3dc44615956327770976b6c3",
+ "title": "Bearings",
+ "sol": "W911S227U0132",
+ "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+ "type": "Combined Synopsis/Solicitation",
+ "upcoming": false,
+ "published": "2026-11-06",
+ "closing": "2026-11-13",
+ "naics": "333613",
+ "psc": "3020",
+ "set_aside": "Small Business Set Aside - Total",
+ "state": null,
+ "city": null,
+ "url": "https://sam.gov/workspace/contract/opp/21f8910c3dc44615956327770976b6c3/view",
+ "description_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=21f8910c3dc44615956327770976b6c3",
+ "documents": [],
+ "response_deadline": "2026-11-13T14:00:00-06:00",
+ "point_of_contact": [
+  {
+   "fax": "",
+   "type": "primary",
+   "email": "eric.w.markland.civ@army.mil",
+   "phone": "15206872958",
+   "fullName": "Eric Markland"
+  }
+ ],
+ "office_address": {
+  "zipcode": "13602-5220",
+  "city": "FORT DRUM",
+  "countryCode": "USA",
+  "state": "NY"
+ },
+ "place_of_performance": {
+  "streetAddress": "McAlester Army Ammunition Plant; 1 C Tree Rd Building 6; McAlester, OK 74501",
+  "zip": "74501"
+ },
+ "base_type": "Combined Synopsis/Solicitation",
+ "archive_date": "2027-11-06",
+ "active": "Yes",
+ "additional_info_link": null
+}
