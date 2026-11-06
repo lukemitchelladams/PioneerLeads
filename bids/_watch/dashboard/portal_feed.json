@@ -276,7 +276,7 @@
   "title": "30--PULLEY,FLAT",
   "sol": "SPE7M427T1927",
   "closing": "2026-11-09",
-  "posted": "2026-10-28",
+  "posted": "2026-10-27",
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
@@ -576,7 +576,7 @@
   "title": "30--PULLEY,GROOVE",
   "sol": "SPE7L427U0111",
   "closing": "2026-11-10",
-  "posted": "2026-10-27",
+  "posted": "2026-10-26",
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
@@ -612,7 +612,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721170072/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721170072?target=view"
  },
  {
   "key": "bidnet:2721455417",
@@ -627,7 +627,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721455417/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721455417?target=view"
  },
  {
   "key": "samgov:02fdc748f70d471abfba3cc6f8ac5a06",
@@ -867,7 +867,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204361081/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view"
  },
  {
   "key": "coloradovss:RFQ1-GJJA-2027000010",
@@ -921,7 +921,7 @@
   "title": "30--PULLEY,GROOVE",
   "sol": "SPE7L127U0146",
   "closing": "2026-11-12",
-  "posted": "2026-10-28",
+  "posted": "2026-10-27",
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
@@ -1017,7 +1017,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view"
  },
  {
   "key": "bidnet:444210657404",
@@ -1032,7 +1032,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view"
  },
  {
   "key": "samgov:4d6004a59233469891e19218228f709c",
@@ -1048,6 +1048,21 @@
   "watched": false,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/4d6004a59233469891e19218228f709c/view"
+ },
+ {
+  "key": "samgov:9458b8f19bc2471c83540f5d2a1da352",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
+  "title": "30--PULLEY,GROOVE",
+  "sol": "SPE4A627T9166",
+  "closing": "2026-11-13",
+  "posted": "2026-11-05",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/9458b8f19bc2471c83540f5d2a1da352/view"
  },
  {
   "key": "samgov:d150dad1528141788616e2b0d93d00c0",
@@ -1092,7 +1107,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
  },
  {
   "key": "bidnet:0000441764",
@@ -1122,7 +1137,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
  },
  {
   "key": "coloradovss:DQ1-GMAA-2027000142",
@@ -1272,7 +1287,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444224753209/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444224753209?target=view"
  },
  {
   "key": "samgov:5b9e3b6504d8415fa62c7f45f7fa15d0",
@@ -1377,7 +1392,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view"
  },
  {
   "key": "samgov:177c2aa536d34c5ea6d40aa7b8db7d34",
@@ -1527,7 +1542,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
  },
  {
   "key": "samgov:1d1b8d72c87844289d3efb4990073ded",
@@ -1662,7 +1677,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view"
  },
  {
   "key": "samgov:974f9b5eb51f4ade85b43f47c548e773",
@@ -1932,7 +1947,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721090002/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view"
  },
  {
   "key": "samgov:b11d3623d84843b2899857e45ac20464",
@@ -2035,7 +2050,7 @@
   "prebid_date": "2026-11-13",
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/MSA-Landscape-Enhancement-Maintenance/0000442783?purchasingGroupId=8409951&origin=1"
  },
@@ -2472,7 +2487,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721710927/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721710927?target=view"
  },
  {
   "key": "samgov:2aad90d6aa1f4120bfffc544d7899799",
@@ -2742,7 +2757,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
