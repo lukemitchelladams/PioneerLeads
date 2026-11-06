@@ -1,0 +1,21 @@
+[
+  {
+    "key": "pagosa-tour",
+    "subject": "Janitorial Services, Pagosa Ranger District, RFQ 1240LP27Q0008: site tour request",
+    "to": [
+      "brandon.caley@usda.gov"
+    ],
+    "files": [],
+    "body_file": "ops/outbox/2026-11-06/pagosa-tour.txt"
+  },
+  {
+    "key": "pagosa-bk",
+    "thread": "1a1ade55a73ca213",
+    "subject": "Re: USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q0008): sub pricing",
+    "to": [
+      "bandkcleaningcolorado@gmail.com"
+    ],
+    "files": [],
+    "body_file": "ops/outbox/2026-11-06/pagosa-bk.txt"
+  }
+]
