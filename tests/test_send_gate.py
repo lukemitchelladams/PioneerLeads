@@ -645,6 +645,48 @@ def test_mac_phone_gate_parity_report(capsys):
     assert callable(mac.invite_hits) and callable(mac.phone_hits)
 
 
+# Review 2026-11-06 #3 (verifier probes through the connector hook): callback promises, invite shapes the first lists missed, split
+# or spelled forms of the cell, and RFP sentences about "the call" that were refused. Every one is also in tests/phone_cases.json.
+REVIEW3_HOOK = [
+    ("deny", "I'll return your call this afternoon."),
+    ("deny", "Luke said he would return your call tonight."),
+    ("deny", "Luke got your voicemail and will ring you back."),
+    ("deny", "Luke will give you a buzz tonight."),
+    ("deny", "Text is quickest for me during the day."),
+    ("deny", "Best way to get Luke is his cell after 5."),
+    ("deny", "I'm around Monday if you want to talk it through."),
+    ("deny", "Glad to go over it live Monday."),
+    ("deny", "Hit me on WhatsApp."),
+    ("deny", "Area code 720; the rest is 2751554."),
+    ("deny", "If you need me, the number is 720-275 and then 1554."),
+    ("deny", "Backup line: seven two zero, two seven five, one five five four."),
+    ("deny", "Backup line: 720&#45;275&#45;1554."),
+    ("allow", "Your crew must be on site within 2 hours of the call."),
+    ("allow", "Who answers the call after hours?"),
+    ("allow", "Bill the call at the regular rate."),
+    ("allow", "Can your office answer trouble calls by phone within 30 minutes?"),
+    ("allow", "Your dispatcher will text you when the tech is 10 minutes out."),
+]
+
+
+@pytest.mark.parametrize("expect,sentence", REVIEW3_HOOK)
+def test_review3_sentences_through_the_connector_hook(expect, sentence):
+    body = GOOD_MCP.replace("The addendum is attached.", sentence)
+    out = _hook("mcp__x__send_message", {"to": ["nina@example.com"], "subject": "Chiller pricing", "body": body})
+    if expect == "allow":
+        assert out is None, _reason(out)
+    else:
+        assert _denied(out) and PHONE_FIX in _reason(out), (sentence, out)
+
+
+def test_split_and_spelled_cell_shows_what_it_found():
+    assert gate.luke_cell_in("Area code 720; the rest is 2751554.") == "720; the rest is 2751554"
+    assert gate.luke_cell_in("seven two zero, two seven five, one five five four") == "7 2 0, 2 7 5, 1 5 5 4"
+    assert gate.luke_cell_in("720-275-l554") == "720-275-l554", "look-alikes still show the original text"
+    for text in ("Bid number 2751554", "Section 2.75 and 1.554", "Phase 1 has 275 LF of conduit and 1554 LF of wire."):
+        assert gate.luke_cell_in(text) is None, text
+
+
 def test_owner_only_mail_keeps_the_phone():
     assert _hook("mcp__Gmail__send_message", {"to": ["luke@brownbisonco.com"], "subject": "BROWN BISON 11/06 PM",
                                               "body": "Brad called (720) 275-1554 twice; call him back?"}) is None

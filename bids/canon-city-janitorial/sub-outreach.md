@@ -16,7 +16,7 @@ links. Emails come from company sites or earlier outreach unless noted; none ver
 | 5 | Springs Cleaning | Colorado Springs | info@springscleaning.net | 719-638-1643 | Commercial cleaning; emailed 10/28 on the Colorado Springs RFP, no reply logged | not sent |
 
 Pueblo / Canon City locals, phone-only (no public email found; a local sub would be closer to the nightly work, and Fremont County
-bidders get the 5% preference): JD's Janitorial Services LLC, 225 Broadway Ave, Pueblo, 719-582-1470 (BBB A+); Cornerstone
+bidders get the 5% preference; nobody phones these firms (Luke's 2026-11-06 call-brief rule, CLAUDE.md): use a firm's web contact form where it has one; if only a call will do, email Luke a CALL BRIEF and whether to call is his choice): JD's Janitorial Services LLC, 225 Broadway Ave, Pueblo, 719-582-1470 (BBB A+); Cornerstone
 Cleaning Janitorial Services, Pueblo West, 719-778-1814 (BBB accredited A+); Titan Janitorial, Pueblo, 719-821-6440; B & K
 Janitorial Inc, Pueblo, 719-544-0706; unnamed janitor service at 1550 Grand Ave, Canon City, 719-214-2088 (BBB category listing);
 Office Pride Colorado Springs-Downtown, Reid Christopherson, 719-377-8183 (franchise service area does not list Canon City);

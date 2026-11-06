@@ -13,10 +13,10 @@ unless noted; none verified by a reply yet.
 | 2 | ACCO Engineered Systems | Colorado Springs, 5090 Centennial Blvd | servicerequest@accoes.com (24/7 service email on its Colorado Springs page) | office 719-232-0185; 24-hr 800-998-2226 | Large commercial mechanical; site lists Chiller Service and Preventive Maintenance | sent 11/06 (bcc) |
 | 3 | Air Conditioning Plus Inc | Colorado Springs | info@airconditioningplus.com (site) | 719-265-8777 | Commercial HVAC est. 2004; directories list Commercial Chiller and Boiler Service | sent 11/06 (bcc) |
 | 4 | Rasmussen Mechanical Services | Centennial (serves Colorado Springs) | rockymountain@rasmech.com (site) | 800-237-3141 | Boiler service and supply, PM programs, chiller and cooling-tower service | sent 11/06 (bcc) |
-| 5 | Nielsen Mechanical Contractors | Colorado Springs, 6405 E Platte Ave | general@nielsenmechanical.net (from 10/26 research; site shows a form only, call to confirm) | 719-597-2705 | Commercial HVAC install and maintenance programs since 1997; a Crete United company | sent 11/06 (bcc) |
+| 5 | Nielsen Mechanical Contractors | Colorado Springs, 6405 E Platte Ave | general@nielsenmechanical.net (from 10/26 research; site shows a form only; confirm by their reply or the web form, no phone) | 719-597-2705 | Commercial HVAC install and maintenance programs since 1997; a Crete United company | sent 11/06 (bcc) |
 | 6 | Timberline Mechanical | Boulder County | info@timberlinemechanical.com (site) | 303-258-3589 | Commercial boilers and chillers, all brands; far from Canon City, last resort | not sent |
 
-Phone-only (no public email found): Patterson Plumbing & Heating, Pueblo, 719-496-4939 (boilers for homes and businesses);
+Phone-only (no public email found; nobody phones these firms (Luke's 2026-11-06 call-brief rule, CLAUDE.md): use a firm's web contact form where it has one; if only a call will do, email Luke a CALL BRIEF and whether to call is his choice): Patterson Plumbing & Heating, Pueblo, 719-496-4939 (boilers for homes and businesses);
 R & R Heating & Air Conditioning, Pueblo, 719-544-6670 (commercial HVAC since 1981); Clarks Mechanical, Pueblo, 719-204-4962
 (residential-leaning); Long Building Technologies, Colorado Springs, 719-592-0364 (Daikin/McQuay rep per a 2020 roster);
 Talmich Plumbing & Heating, Colorado Springs, 719-822-0448 (residential boilers).

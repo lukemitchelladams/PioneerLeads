@@ -29,28 +29,24 @@ Also ask RTD's Small Business Office for help meeting the goal (a required good-
 
 ## Email (same text to each firm, first name filled in)
 
-Gate check 2026-11-06 (`python3 scripts/humanize_gate.py check`, first name filled in): the closer is fixed ("Thanks {first
-name},"; the four signature lines already match), but the draft still FAILS on content: 186 prose words (cap 150) and three
-dash bullets ("use 'Label: value' lines"). Rewrite with /humanize before any send; the send paths refuse it as written.
+Gate check 2026-11-06 (`python3 scripts/humanize_gate.py check`, first name filled in, and `--subject`): PASS with warnings
+(143 prose words, cap 150). Rewritten 11/6 from the 186-word version: dash bullets became "Label: value" lines, paragraphs are
+one line each, and the price date moved from Friday, November 6 (already today) to Thursday, November 12, the "Price by 11/12"
+date in bids/_watch/pipeline.json. Scope, recipients and the RFP facts are unchanged. Still waiting on Luke's yes to send.
 
 Subject: RTD bus shelter contract (RFP 126DM016): pricing request for an RTD-certified SBE
 
 > Hi {first name},
 >
-> I'm Luke Adams with Brown Bison Holdings, a Colorado contractor. We are proposing on RTD's Bus Shelter Maintenance
-> contract (RFP 126DM016, due November 16) and want an RTD-certified SBE on our team. Your firm is in RTD's SBE directory,
-> so I'm asking for your price on any part of the work you'd like:
+> I'm Luke Adams with Brown Bison Holdings, a Colorado contractor. We are proposing on RTD's Bus Shelter Maintenance contract (RFP 126DM016, due November 16) and want an RTD-certified SBE on our team. Your firm is in RTD's SBE directory, so I'm asking for your price on any part of the work you'd like:
 >
-> - Cleaning and graffiti removal at 42 bus shelters on North and South Federal Blvd and in Aurora/SE Denver, each serviced
->   5 times a week (trash, wipe-down, sweep, graffiti off the same visit, hot-water pressure wash once a week).
-> - Daily cleaning and restocking of the driver restrooms at the Federal & Colfax and Federal & Evans transfer centers.
-> - Snow and ice removal at the shelters and both transfer centers.
+> Shelters: trash, wipe-down, sweep and graffiti removal at 42 shelters on North and South Federal Blvd and in Aurora/SE Denver, 5 visits a week, hot-water pressure wash weekly
+> Restrooms: daily cleaning and restocking of the driver restrooms at the Federal & Colfax and Federal & Evans transfer centers
+> Snow: snow and ice removal at the shelters and both transfer centers
 >
-> RTD prices it per shelter visit, per shelter per snow visit, per day for each transfer center, and per month for
-> transfer-center snow. 3-year contract plus two option years, paid monthly.
+> RTD prices it per shelter visit, per shelter per snow visit, per day for each transfer center, and per month for transfer-center snow. 3-year contract plus two option years, paid monthly.
 >
-> If you're interested, reply and I'll send the full shelter list and RTD's scope the same day. Prices by Friday,
-> November 6 would be ideal. Could you also confirm your RTD SBE certification is current?
+> Reply and I'll send the full shelter list and RTD's scope the same day. Could you send prices by Thursday, November 12, and confirm your RTD SBE certification is current?
 >
 > Thanks {first name},
 > Luke Adams

@@ -14,7 +14,7 @@ Emails were found via search snippets and are NOT verified; expect some bounces.
 | Avalanche Power Clean | Parker | getclean@avalanchepowerclean.com | 720-336-2152 | Sent 10/28 with docs (10/19 draft was never sent) |
 | Mile High Mobile Wash (BBB A+) | Englewood | info@milehighmobilewash.com | 303-330-8748 | Sent 10/28 with docs |
 
-Phone-only: Squeegee Squad (720) 408-0014; Maintenance Resources Inc 303-388-3052; Brothers Pressure Washing
+Phone-only (nobody phones these firms (Luke's 2026-11-06 call-brief rule, CLAUDE.md): use a firm's web contact form where it has one; if only a call will do, email Luke a CALL BRIEF and whether to call is his choice): Squeegee Squad (720) 408-0014; Maintenance Resources Inc 303-388-3052; Brothers Pressure Washing
 720-809-7823; John's Mobile Wash (303) 292-0104; 3A Clean 303-716-2802; Anago day porter (720) 738-4875.
 
 ## Replies

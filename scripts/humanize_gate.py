@@ -28,14 +28,18 @@ Two send paths, one gate:
         - links: http(s)://, www. or a domain with a path (Luke 2026-10-26: no links in outside mail; a bare name like SAM.gov is
           fine);
         - PHONE (Luke 2026-11-06, phone_problems): Luke's cell in any format (body, signature, subject, attachment names: any
-          digits run that holds 7202751554 with separators of up to 8 characters, look-alike letters such as 'l554', or the bare
-          275-1554) and any invitation to phone him. Call invites are refused BY DEFAULT: every "call" and every "phone" in our
+          digits run that holds 7202751554 with separators of up to 8 characters, look-alike letters such as 'l554', the bare
+          275-1554, HTML character references, spelled-out digits, or the number split by filler words: '720 dot 275 dot 1554',
+          'area code 720; the rest is 2751554') and any invitation to phone him, callback promises included ("I'll return your
+          call", "Luke will give you a ring"). Call invites are refused BY DEFAULT: every "call" and every "phone" in our
           own text is refused unless it is a trade term (on-call, service / emergency / pre-bid call, call-out, call log / rate /
           response, a call-back within 2 hours, "call for bids"), someone else's call or line ("the City will call us", "call
           the Town procurement office", "your techs carry a cell phone", "photos from my phone"), RFP wording in the plural
-          ("phone calls must be returned within 4 hours") or negated ("don't call", "email, not phone"); text / ring / cell /
-          number / talk / voicemail / Zoom are refused in invite shapes ("text me", "my cell", "a good number to reach you",
-          "can we talk Monday", "talk soon"). Forms and proposals (not mail) may still print the number.
+          ("phone calls must be returned within 4 hours"), "the call" as an event ("within 2 hours of the call", "bill the call",
+          "who takes the call") or negated ("don't call", "email, not phone"); text / ring / buzz / cell / number / talk / live /
+          voicemail / Zoom / WhatsApp / FaceTime are refused in invite shapes ("text me", "my cell", "a good number to reach you",
+          "can we talk Monday", "talk soon", "go over it live", "ring you back"). Forms and proposals (not mail) may still print
+          the number.
         hz.py's own warnings (adverbs, the 90-word target, long sentences, 3+ sentence paragraphs) are returned, printed by the
         CLI, and do not refuse: SKILL.md calls 150 the hard cap and 90 the target, and the adverb warns are discretionary.
     effective_asks(declared, inbound)   asks raise the word budget (cap max(150, 45 x asks)). Without the email being answered
@@ -65,6 +69,7 @@ there is no --long, no approvals file and no `approve` command (both are agent-w
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
@@ -224,9 +229,10 @@ _DASH_MAP = str.maketrans({c: "-" for c in "‐‑‒–—―−⁃﹘﹣"})
 
 
 def _norm(text):
-    """NFKC (full-width, superscript and math digits -> ASCII, odd spaces -> space), format characters dropped (soft hyphen,
-    zero-width space, BOM, bidi marks), every other Unicode decimal digit -> ASCII, curly apostrophes -> "'", dashes -> '-'."""
-    s = unicodedata.normalize("NFKC", str(text or ""))
+    """HTML character references decoded ('720&#45;275'), NFKC (full-width, superscript and math digits -> ASCII, odd spaces ->
+    space), format characters dropped (soft hyphen, zero-width space, BOM, bidi marks), every other Unicode decimal digit -> ASCII,
+    curly apostrophes -> "'", dashes -> '-'."""
+    s = unicodedata.normalize("NFKC", html.unescape(str(text or "")))
     s = "".join(c for c in s if unicodedata.category(c) != "Cf")
     s = "".join(str(unicodedata.decimal(c)) if (c.isdecimal() and not "0" <= c <= "9") else c for c in s)
     return s.replace("’", "'").replace("‘", "'").replace("ʼ", "'").translate(_DASH_MAP)
@@ -244,18 +250,100 @@ def _lookalikes(s, as_digit):
     return "".join(out)
 
 
+_UNITS = ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
+_TEENS = ("ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen")
+_TENS = {"twenty": 2, "thirty": 3, "forty": 4, "fourty": 4, "fifty": 5, "sixty": 6, "seventy": 7, "eighty": 8, "ninety": 9}
+_NUM_WORD = {join: re.compile(r"(?<![A-Za-z])(?:(?P<tens>" + "|".join(_TENS) + r")(?:" + join + r"(?P<unit>" + "|".join(_UNITS[1:])
+                              + r"))?|(?P<teen>" + "|".join(_TEENS) + r")|(?P<one>" + "|".join(_UNITS) + r"))(?![A-Za-z])", re.I)
+             for join in (r"[- ]?", r"-?")}                 # 'fifty four' = 54, or 50 4 ('seven twenty two seventy-five')
+_OH = re.compile(r"(?<![A-Za-z'])(?:oh|o)(?![A-Za-z'])", re.I)
+# a gap between digit groups that is only spoken separators: '720-275 and then 1554', '275 dash 1554'
+_SPOKEN_GAP = re.compile(r"^[^0-9A-Za-z]*(?:(?:and|then|dash|hyphen|dot|point|space|x|plus)[^0-9A-Za-z]*){1,3}$", re.I)
+_CHAIN_GAP = 24                                              # characters between two groups of one number
+# the words that may stand between the groups of one spoken / split number ('720 dot 275 dot 1554', 'area code 720; the rest is
+# 2751554', '720-275 and then 1554'); any other word ('units', 'Main', 'sq ft') ends the chain, so addresses and quantities pass
+_CHAIN_WORDS = frozenset(
+    "and then dot dash hyphen x point period space slash the rest is are its it's number numbers num no remaining digits digit "
+    "followed by after that comes last first next plus area code prefix ends end in with of my his luke's lukes cell cellphone "
+    "phone mobile line direct call text me at or to reach a an so again finally part half second third try dial hit then "
+    "same as before local exchange extension ext".split())
+
+
+def _spelled(s, join=r"[- ]?"):
+    """Number words -> digits ('seven two zero' -> '7 2 0', 'fifteen fifty-four' -> '15 54', 'two75' -> '275'); 'oh' / 'o' next
+    to a digit -> 0 ('seven two oh'). join: what may stand between 'fifty' and 'four' (a space too, or only a hyphen)."""
+    def word(m):
+        if m.group("tens"):
+            return str(_TENS[m.group("tens").lower()]) + (str(_UNITS.index(m.group("unit").lower())) if m.group("unit") else "0")
+        if m.group("teen"):
+            return str(10 + _TEENS.index(m.group("teen").lower()))
+        return str(_UNITS.index(m.group("one").lower()))
+    s = _NUM_WORD[join].sub(word, s)
+
+    def oh(m):
+        before, after = s[max(0, m.start() - 4):m.start()], s[m.end():m.end() + 4]
+        near = re.search(r"[0-9][ ,./-]{0,3}$", before) or re.match(r"^[ ,./-]{0,3}[0-9]", after)
+        return "0" if near else m.group(0)
+    return _OH.sub(oh, s)
+
+
+def _chain_gap_ok(gap):
+    return (len(gap) <= _CHAIN_GAP and "\n\n" not in gap
+            and all(w.lower() in _CHAIN_WORDS for w in re.findall(r"[A-Za-z][A-Za-z']*", gap)))
+
+
+def _chain_hit(s):
+    """Digit groups joined by up to _CHAIN_GAP characters, words from _CHAIN_WORDS included ('720 dot 275 dot 1554', '720x275x1554',
+    'Area code 720; the rest is 2751554', 'the number is 720-275 and then 1554'): -> (start, end) of the first chain that spells
+    the full 7202751554 on group boundaries (a leading 1 allowed), or of 275 + 1554 joined only by spoken separators. "Bid number
+    2751554" or "Section 2.75 and 1.554" is not his cell."""
+    groups = list(re.finditer(r"[0-9]+", s))
+    i = 0
+    while i < len(groups):
+        j = i
+        while j + 1 < len(groups) and _chain_gap_ok(s[groups[j].end():groups[j + 1].start()]):
+            j += 1
+        chain = groups[i:j + 1]
+        digits, starts, ends = "", set(), set()
+        for g in chain:
+            starts.add(len(digits))
+            if g.group(0).startswith("1"):
+                starts.add(len(digits) + 1)                  # 1-720-..., 17202751554
+            digits += g.group(0)
+            ends.add(len(digits))
+        k = digits.find(LUKE_CELL)
+        while k >= 0:
+            if k in starts and k + len(LUKE_CELL) in ends:
+                return chain[0].start(), chain[-1].end()
+            k = digits.find(LUKE_CELL, k + 1)
+        for a, b in zip(chain, chain[1:]):
+            if a.group(0) == "275" and b.group(0) == "1554" and _SPOKEN_GAP.match(s[a.end():b.start()]):
+                return a.start(), b.end()
+        i = j + 1
+    return None
+
+
 def luke_cell_in(text):
     """The first run of digits that is Luke's cell, else None: a run whose digits hold 7202751554 (any separators of up to 8
-    characters, a leading 1 or +1, look-alike letters for digits), the bare 275-1554 with a separator, or 2751554 right after a
-    phone word ("cell 2751554"). "Bid number 2751554" is not his cell."""
+    characters, a leading 1 or +1, look-alike letters for digits, HTML character references, spelled-out digits), the bare 275-1554
+    with a separator, 2751554 right after a phone word ("cell 2751554"), or the number split by words ("720 dot 275 dot 1554",
+    "area code 720; the rest is 2751554"). "Bid number 2751554" is not his cell."""
     base = _norm(text)
-    for s in (base, _lookalikes(base, True), _lookalikes(base, False)):
+    variants = [(base, base), (_lookalikes(base, True), base), (_lookalikes(base, False), base)]   # (searched, shown)
+    for words in dict.fromkeys(_spelled(base, join) for join in _NUM_WORD):
+        if words != base:
+            variants += [(words, words), (_lookalikes(words, True), words), (_lookalikes(words, False), words)]
+    for s, shown in variants:
         for m in _RUN.finditer(s):
             groups = re.findall(r"[0-9]+", m.group(0))
             if (LUKE_CELL in "".join(groups) or any(a == "275" and b == "1554" for a, b in zip(groups, groups[1:]))
                     or (_LOCAL in groups and _PHONE_WORD.search(s[max(0, m.start() - 24):m.start()]))):
                 start = m.start() - (1 if m.start() and s[m.start() - 1] in "(+" else 0)
-                return " ".join(base[start:m.end()].split())
+                return " ".join(shown[start:m.end()].split())
+    for s, shown in variants:
+        hit = _chain_hit(s)
+        if hit:
+            return " ".join(shown[hit[0]:hit[1]].split())
     return None
 
 
@@ -306,6 +394,8 @@ _PHOTO = re.compile(r"\b(?:photos?|pictures?|pics?|images?|videos?|camera|snappe
 # trade / third-party wording in the same sentence that makes "phone" someone else's line (only when nothing in it is ours)
 _ANCHOR = re.compile(r"\b(?:dispatch\w*|answering service|hotline|on-call|on call|24/7|24-hour|24 hours?|after-hours|after hours|"
                      r"technicians?|techs?|crews?|foreman|foremen|operators?|tenants?|residents?|staff|service calls?|emergency|"
+                     r"(?:trouble|repair|warranty|no-heat|no heat|no-cool|no cool|alarm|nuisance|tenant|customer|maintenance|"
+                     r"after-hours|after hours|snow|plow) calls|"
                      r"emergencies|answer(?:s|ed|ing)? (?:the )?phones?|phone lines?|the (?:town|county|city|district|state|owner|"
                      r"buyer|agency|school|airport|base)(?:'s)?|forms?|w-9|sign-?in|roster|bid form|proposal)\b", re.I)
 _TRADE_MOD = (r"service|emergency|after-hours|after hours|afterhours|overnight|weekend|holiday|night|trouble|repair|warranty|"
@@ -354,13 +444,56 @@ _NOT_NAMES = frozenset(
     "february march april may june july august september october november december jan feb mar apr jun jul aug sep sept oct nov "
     "dec me. at in on to for about re regarding".split())
 
+# "the call" as an event in RFP / trade wording (review 2026-11-06 #3): measured from it, billed, logged, answered by someone else
+_DET = r"(?:the|a|an|each|every|any|that|this|one|such)"
+_TIME_OF = re.compile(r"(?:\b(?:\d+|a|an|one|two|three|four|five|six|eight|ten|twelve|fifteen|twenty|thirty|forty-five|sixty|ninety|"
+                      r"a few|several|half an?)[ -](?:hours?|hrs?|minutes?|mins?|days?|business days?|working days?)"
+                      r"(?: or (?:less|fewer|sooner))? (?:of|from|after|following|since|upon)(?: (?:receipt of|receiving|logging))?"
+                      r"|\b(?:time|moment|receipt|point|start|end|close|log) of|\bupon|\bupon receipt of) " + _DET + r" $", re.I)
+_TRADE_VERB = re.compile(r"\b(?:bills?|billed|billing|charges?|charged|charging|invoices?|invoiced|invoicing|prices?|priced|pricing|"
+                         r"logs?|logged|logging|records?|recorded|recording|documents?|documented|documenting|dispatch(?:es|ed|ing)?|"
+                         r"quotes?|quoted|tickets?|ticketed|codes?|coded|counts?|counted|treats?|treated|close(?:s|d)? out) " + _DET
+                         + r" $", re.I)                      # bill the call at the regular rate
+_TAKE_VERB = re.compile(r"\b(?:takes?|took|taking|answers?|answered|answering|fields?|fielded|fielding|handles?|handled|handling|"
+                        r"covers?|covered|covering|picks? up|picked up|picking up|responds? to|responded to|responding to|"
+                        r"receives?|received|receiving|returns?|returned|returning|gets?|got|getting) " + _DET + r" $", re.I)
+# a promise to return the reader's call ('I'll return your call this afternoon', 'he would return your call tonight')
+_RETURN_YOURS = re.compile(r"\b(?:return|returns|returning|returned|get back to|getting back to) (?:your|ur)"
+                           r"(?: (?:phone|missed|earlier|last|recent))? $", re.I)
+_HE = re.compile(r"\b(?:he|he's|he'll|he'd|him|his)\b", re.I)
+_BARE_YOU = re.compile(r"\b(?:you|you'll|you'd|you're|u|ya)\b", re.I)
+# the clause opens with someone else as its subject: 'Your dispatcher will text you', 'The County will ring you', 'Silas can'
+_THIRD_START = re.compile(r"^\s*(?:(?:and|so|then|but|also|otherwise)\s+)?(?:(?P<pron>they|she)\b|(?:your|their|her|the|each|every|"
+                          r"a|an|that|this|its)\s+(?!and\b)[\w'-]+|(?-i:(?P<name>[A-Z][a-z]+))(?:'s)?\b)", re.I)
+
+
+def _third_subject(t, s):
+    """True when the clause before position s opens with a third party as its subject and holds nothing of ours (no I / we / Luke
+    / he / Brown Bison): the call or text is between other people, not Luke and the reader."""
+    before = _before(t, s)
+    m = _THIRD_START.match(before)
+    if not m or _FIRST.search(before) or _HE.search(before):
+        return False
+    return not (m.group("name") and m.group("name").lower() in _NOT_NAMES)
+
+
+def _call_event_ok(t, s, before):
+    """'the call' as an event in trade wording: 'within 2 hours of the call', 'bill the call at the regular rate', 'who takes the
+    call when the alarm trips' (not 'I'll take the call', 'can you take the call Monday')."""
+    if _TIME_OF.search(before) or _TRADE_VERB.search(before):
+        return True
+    return bool(_TAKE_VERB.search(before)) and not (_FIRST.search(before) or _HE.search(before) or _BARE_YOU.search(before))
+
+
 _CALL = re.compile(r"(?<![\w])(?:call(?:ing)?(?![\w])|callme\b|phonecall\b)", re.I)   # not calls/called/caller/callback/recall
 _PHONE = re.compile(r"(?<![\w])(?:tele)?phone(?![\w])(?![- ]?call)", re.I)          # "phone call" is checked as a call
 _THIRD_AFTER = (r"(?! (?:to|with) (?:the|your|their|his|her|its|a|an|them|(?-i:[A-Z]))"
-                r"| (?:numbers |it |this |that |more |details |the scope |pricing )?(?:by|over|via|in|on) (?:e-?mail|writing|the portal"
+                r"| (?:numbers |it |this |that |more |details |the scope |pricing )?(?:through |over )?(?:by|over|via|in|on) (?:e-?mail|writing|the portal"
                 r"|bidnet|this thread)| you (?:with|to|in)\b| policy\b)")
 _CONNECT = r"connect(?=[.?!,;\n]| (?:by|on|over|via|this|next|tomorrow|today|later|soon|sometime|briefly|quickly)\b|$)"
 _DAYS = r"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)"
+_TALK_THIRD = (r"(?!(?: (?:it|this|that|things|them))?(?: (?:over|through))? (?:to|with|about) (?:the|your|their|his|her|its|a|an|"
+               r"them|that|this|it|(?-i:[A-Z])))")                                     # talk (it over) with the inspector
 INVITES = tuple(re.compile(p, re.I) for p in (
     r"\b(?:can|could|shall|should|may|might|would|will) (?:we|i) (?:quickly |briefly )?(?:talk|chat|speak|catch up|touch base|"
     + _CONNECT + r")\b" + _THIRD_AFTER,                                                  # can we talk Monday?
@@ -388,7 +521,10 @@ INVITES = tuple(re.compile(p, re.I) for p in (
     r"\b(?:by|via|over) (?:cell|mobile|text|txt|sms|whatsapp|imessage|facetime|signal)\b(?! (?:file|box|field|tower)\b)",
     r"\b(?:text|txt|sms|whatsapp|imessage) (?:me|(?-i:us|Us)|luke)\b",                # text me / text us (not 'text US Code')
     r"\b(?:send|shoot|drop|fire|flick) (?:me|us|luke) a (?:quick )?(?:text|txt|sms)\b",
-    r"\btext(?:ing)? (?:is|works|would work|'s) (?:fine|best|easier|easiest|good|great|ok|okay|quicker|faster)\b",
+    r"(?<!\bthe )(?<!\bthis )(?<!\bthat )(?<!\bits )(?<!\bplain )(?<!\bfull )(?<!\bwhich )(?<!\bbody )"
+    r"\b(?:text(?:ing|s)?|sms|whatsapp|imessage|signal) (?:is|are|works|work|would work|would be|'s)"
+    r"(?: (?:usually|always|probably|much|way|a lot|often|just|really))? (?:the )?(?:fine|best|better|easier|easiest|easy|good|"
+    r"great|ok|okay|quick|quicker|quickest|fast|faster|fastest|simpler|simplest|preferred|ideal|way to go)\b",   # text is quickest
     r"\ba text (?:works|would|is fine|is best)\b",
     r"\bfeel free to (?:text|ring|buzz|ping)\b",
     r"\bc/t\b",
@@ -408,7 +544,40 @@ INVITES = tuple(re.compile(p, re.I) for p in (
     r"\bcalls (?:are|is) (?:fine|welcome|ok|okay|best|easiest|easier|great|good|quicker|faster)\b", r"\bcalls welcome\b",
     r"\b(?:i|luke)(?:'ll|'m| will| can| do| am)? (?:take|return|answer|field) (?:your |any |phone )?calls\b",
     r"\b(?:i|we)(?:'d| would)? (?:prefer|like|rather) (?:phone )?calls\b",
+    # review 2026-11-06 #3: invites the first list missed
+    r"\bholler(?: at)? (?:me|us|luke)\b",                                               # holler at me
+    r"\b(?:hit|try|ring|buzz|dial)(?: (?:me|us|luke))?(?: (?:up )?(?:on|at))? (?:my|our|luke's) (?:line|lines|cell|cellphone|"
+    r"mobile|phone|number|direct|direct line|landline|digits|office line)\b",          # hit my line
+    r"\b(?:give|shoot|send|drop|throw|toss|fire|hit) (?:me|us|luke|our office|the office|the shop) a (?:quick |short |brief |"
+    r"fast )?(?:ring|buzz|holler|bell|tinkle|shout)\b",                                 # shoot me a quick ring
+    r"\bon the (?:horn|blower)\b",                                                      # get you on the horn
+    r"\bdial (?:me|us|luke)\b",                                                         # dial me in
+    r"\b(?:want|wanna|like|need|prefer|willing|able|love|ready|happy|glad) to (?:talk|chat|catch up|touch base|hop on|jump on)"
+    r"\b" + _TALK_THIRD + _THIRD_AFTER,                                             # if you want to talk
+    r"\b(?:we|i|luke and i)(?:'d|'ll| should| could| can| need to| ought to| must| have to| gotta| will| might)"
+    r"(?: (?:quickly|briefly|probably|really|just|maybe|definitely|still))? (?:talk|chat|catch up|touch base)\b"
+    + _TALK_THIRD + _THIRD_AFTER,                                                     # we should chat
+    r"\b(?:chat|chatting|talk|talking|speak|speaking|connect|connecting|discuss|discussing|go over|going over|review|reviewing|"
+    r"walk through|run through|sync|catch up|touch base)(?: [\w']+){0,3}? live\b(?![- ](?:load|loads|wire|wires|"
+    r"wiring|electrical|electric|circuits?|parts?|work|panels?|lines?|feeds?|video|stream|data|traffic|equipment|conductors?|"
+    r"power|voltage|bus|front|edge|oak)\b)",                                           # go over it live, connect live
+    r"\b(?:whats ?app|imessage|face ?time|telegram|wechat|viber)\b",                    # Hit me on WhatsApp, FaceTime me
 ))
+# the same, but for a call or text to the READER, which is fine when someone else is the subject ('Your dispatcher will text you',
+# 'The County will ring you'): 'Luke will give you a buzz', 'I'll ring you back', 'Luke's going to buzz you', 'talk it through'
+INVITES_YOU = tuple(re.compile(p, re.I) for p in (
+    r"(?<![-\w])(?<!\bthe )(?<!\ba )(?<!\ban )(?<!\bthat )(?<!\bthis )(?<!\byour )(?<!\bmy )(?<!\bour )(?<!\bany )(?<!\bits )"
+    r"(?:ring|buzz|text|txt|sms|holler at) (?:you|ya|u)\b(?! (?:ordered|sent|wrote|quoted|supplied|need|needed|asked|mentioned|"
+    r"requested|used|have|had|got|gave|forwarded|attached)\b)",                        # ring you back, buzz you, text you
+    r"\b(?:give|shoot|send|drop|throw|toss|fire|hit) (?:you|ya) a (?:quick |short |brief |fast )?(?:ring|buzz|holler|bell|"
+    r"tinkle|shout)\b",                                                                 # give you a ring
+    r"\bring (?:the|our|my) (?:shop|office|front desk|desk|main line|line|cell|number|landline|yard|house)\b",   # ring the shop
+    r"\btalk(?:ing)?(?: (?:it|this|that|things|them|these|those|everything))? (?:through|over)\b(?! (?:by |over |via |in |on )?"
+    r"(?:e-?mail|writing|the portal|bidnet|this thread)\b)(?! with (?:the|your|their|his|her|its|them|(?-i:[A-Z])))",  # talk it through
+))
+# 'Best way to get Luke is his cell after 5': 'his' is Luke when he is named just before (_luke_near)
+_HIS_LINE = re.compile(r"\bhis (?:cell|cellphone|cell phone|mobile|mobile phone|direct line|direct dial|direct number|personal line|"
+                       r"personal number|number|phone number|line|landline|digits)\b(?! (?:photos?|pictures?|pics?|videos?)\b)", re.I)
 
 
 def _third_object(t, e, after):
@@ -432,6 +601,11 @@ def _call_ok(t, s, e):
         return False
     if _TRADE_BEFORE.search(before) or _TRADE_AFTER.match(after) or _WHAT_WE_CALL.search(before):
         return True
+    if _call_event_ok(t, s, before):
+        return True
+    ret = _RETURN_YOURS.search(before)
+    if ret:                                                  # I'll return your call: ours, unless the Town returns it
+        return _third_subject(t, s - len(before) + ret.start())
     if _GOV_SUBJ.search(before):
         return True                                          # the City will call us for each repair
     first_obj = bool(_FIRST_OBJ.match(after)) or (bool(re.match(r"^ (?:back )?him\b", after, re.I)) and _luke_near(t, s))
@@ -486,6 +660,13 @@ def call_invites(text):
         for m in rx.finditer(t):
             if not _NEG.search(_before(t, m.start())):
                 hits.append((m.start(), m.end(), m.group(0)))
+    for rx in INVITES_YOU:
+        for m in rx.finditer(t):
+            if not _NEG.search(_before(t, m.start())) and not _third_subject(t, m.start()):
+                hits.append((m.start(), m.end(), m.group(0)))
+    for m in _HIS_LINE.finditer(t):
+        if _luke_near(t, m.start()) and not _NEG.search(_before(t, m.start())):
+            hits.append((m.start(), m.end(), m.group(0)))
     found, last = [], -1
     for s, e, phrase in sorted(hits):
         if s >= last and phrase.lower() not in (f.lower() for f in found):
