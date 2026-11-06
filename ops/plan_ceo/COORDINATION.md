@@ -1,3 +1,5 @@
+# 2026-11-06 06:50 MT: the Mac heartbeat session has been BLOCKED since 02:28Z ("Approve or deny Bash"). Until it is unblocked, the cloud HQ also covers the Mac's threads: Parker (package build from Brad's numbers), Brighton (Ceres, Will's EMR letter, fee schedule), FCC Florence (Wind River/Arrowhead). Same rules: pull first, check Sent, log every send.
+
 # DIVISION OF LABOR, both operators live (HQ, 2026-11-05 21:40Z)
 
 The Mac heartbeat came back ~15:46Z on 11/05 (Sent shows it on the Wind River / FCC Florence, Colorado Power Wash,

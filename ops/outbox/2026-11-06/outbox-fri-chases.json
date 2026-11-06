@@ -1,0 +1,23 @@
+[
+  {
+    "key": "ceres-rates",
+    "thread": "1a1a3017554eee22",
+    "subject": "Re: City of Brighton on-call handyman work: pricing request",
+    "to": [
+      "ceresconstruction@gmail.com"
+    ],
+    "files": [],
+    "body_file": "ops/outbox/2026-11-06/ceres-rates.txt"
+  },
+  {
+    "key": "will-emr",
+    "thread": "1a18d7978980da62",
+    "subject": "Re: Business Insurance Quote",
+    "to": [
+      "will.seargeant@trucordia.com"
+    ],
+    "files": [],
+    "body_file": "ops/outbox/2026-11-06/will-emr.txt",
+    "asks": 2
+  }
+]
