@@ -1,6 +1,6 @@
 {
   "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
-  "updated": "2026-11-06T14:52:00Z",
+  "updated": "2026-11-06T20:05:00Z",
   "bids": [
     {
       "id": "cos-parks-r26-077mz",
@@ -1441,6 +1441,26 @@
       "contact": "Julie McGrew, Contract Manager, (719) 276-7080; site visits Randy Allen, RCAllen@canoncity.gov 719-276-5283 (RFP p.1)",
       "due_source": "RFP p.1: \"All proposals must be received by 11:00 AM MST on Monday, December 7, 2026\"",
       "doc_gaps": "None known: RFP (12 pp., includes equipment inventory, proposal schedule, certification, proposal form) and PSA form in hand; no addenda yet"
+    },
+    {
+      "id": "weld-se-facility-cabling",
+      "agency": "Weld County",
+      "title": "Southeast Weld Facility Cabling",
+      "sol": "B2600113 (BidNet 0000442906)",
+      "trade": "Electrical / low-voltage (structured cabling)",
+      "due": "2027-01-05T10:00:00-07:00",
+      "portal": "BidNet Direct (RMEPS) 0000442906",
+      "decision": "EVALUATE",
+      "decision_note": "IFB B2600113 in hand (docs/Bid Specifications.docx, Schedules A-F). MANDATORY pre-bid conference and walk-through Thu 2026-11-19 10:00 MT at 2950 9th Street, Fort Lupton, CO 80621 ('Bidders must participate and record their presence ... to be eligible to submit bids'; sign in, stay the whole time, bring ID). Schedule C conflicts (1:00 PM, 1401 N 17th Ave Greeley); cover, Schedules A/B and BidNet say 10:00 Fort Lupton. Scope: 235 CommScope Uniprise Cat 6 drops (CS37P blue, UNJ600 jacks, CPP-UDDM-M-2U-48 panels), 655 green patch cords, 24-strand Corning single-mode fiber from the basement MDF to a new 1st-floor IDF (CCH-02U, CCH-CP12-A9, LC), new closet (Chatsworth 7 ft 2-post rack, ladder rack, managers), demo of old cable, 4 Tripp Lite PDUs supplied not installed; two phases, completion 2027-03-01; quantities and diagrams handed out at the walk only. Questions to bids@weld.gov by 2026-12-03 17:00 (answers 12/08). Due 2027-01-05 10:00 MT by email PDF to bids@weld.gov with 'I hereby waive my right to a sealed bid'. Low bid; Weld County resident preference. 100% performance and payment bonds (Bond Total line on Schedule D). Insurance: CGL 1M/2M, auto 1M, E&O 3 yrs after completion (no limit stated). RECOMMEND NO: 'sub-contracting the work will not be permitted' and 'the contractor company (not just the individual doing the work) must be Uniprise Certified Installer ... and Corning Certified Installer' with a BICSI-certified tech and the 25-year Uniprise/Corning warranty; Brown Bison holds none and cannot prime with a sub. Only live option: Luke attends the walk 11/19 and asks the County whether a certified installer under a prime is allowed (vendor-questions.md Q2).",
+      "prebid": "2026-11-19T10:00:00-07:00",
+      "prebid_mandatory": true,
+      "performer": "Brown Bison + Uniprise/Corning certified cabling sub (IFB bars subcontracting; see decision_note)",
+      "subs": "4 candidates with public emails in sub-outreach.md (GigaSpan, Structured Plus, Comnet, Backbone Cabling); not contacted",
+      "sub_pricing": "None",
+      "folder": "bids/weld-se-facility-cabling",
+      "contact": "Questions and bids: bids@weld.gov; Purchasing 970-400-4222 (Schedule A). Project Manager Aleksei Churyk, Director of Technical Operations, IT-Bids@weld.gov, (970) 400-4357 (Schedule E)",
+      "due_source": "IFB Schedule A: \"Bids will be received until: January 5, 2027 at 10:00 AM MT\" (cover: \"Purchasing's Clock\")",
+      "doc_gaps": "None known: the single Bid Specifications.docx holds Schedules A-F (instructions, scope, schedule, bid form, insurance, contract). Cable location list, building electrical diagrams and the copper labeling standard are handed out at the mandatory walk / after award only. No addenda yet."
     }
   ],
   "events": [
@@ -2157,6 +2177,12 @@
       "when": "2026-11-06T18:00:51Z",
       "kind": "sub-reply",
       "note": "Alex Ditto (YMS): snow removal and ice control pricing coming by end of day today (Luke's thread)"
+    },
+    {
+      "bid": "weld-se-facility-cabling",
+      "when": "2026-11-06T19:45:00Z",
+      "kind": "docs",
+      "note": "Folder opened; IFB B2600113 downloaded from BidNet (saved session); MANDATORY walk 11/19 10:00 MST Fort Lupton confirmed from the IFB; due 01/05/2027 10:00 MT; recommend NO (no subcontracting, company-level Uniprise/Corning certification, 100% P&P bonds)"
     }
   ],
   "doc_gaps": [

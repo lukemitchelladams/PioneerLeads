@@ -577,6 +577,14 @@
       "match": "0000442382",
       "folder": "bids/canon-city-boiler-chiller-maintenance",
       "govtribe_ids": []
+    },
+    {
+      "name": "Weld County B2600113 Southeast Weld Facility Cabling (EVALUATE, recommend NO; MANDATORY pre-bid 11/19 10:00 Fort Lupton)",
+      "source": "bidnet",
+      "id": "0000442906",
+      "match": "0000442906|\\bB2600113\\b|southeast weld facility cabling",
+      "folder": "bids/weld-se-facility-cabling",
+      "govtribe_ids": []
     }
   ]
 }

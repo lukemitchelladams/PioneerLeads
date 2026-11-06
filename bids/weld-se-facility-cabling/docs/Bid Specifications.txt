@@ -1,0 +1,819 @@
+General Services - Invitation for Bid (IFB) Cover Sheet
+
+  Bid Number: B2600113
+
+  Title: Southeast Weld Facility Cabling
+
+  Advertisement Date: November 6, 2026
+
+  Pre- Bid Meeting: November 19, 2026, at 10:00 AM MT
+
+  Pre- Bid Location: 2950 9^(th) Street, Fort Lupton, CO 80621
+
+  Questions Due: December 3, 2026, by 5:00 PM MT
+
+  Questions Posted: December 8, 2026 by 5:00 PM MT
+
+  Questions email: bids@weld.gov
+
+  Bid Due Date: January 5, 2027 by 10:00 AM MT, Purchasing’s Clock
+
+  Bid Delivery: Preferred email to bids@weld.gov or option to hand delivery to 1301 North 17^(th) Avenue, Greeley, CO 80631
+
+  For additional information: bids@weld.gov
+
+Documents Included in this Bid Package
+
+IFB Schedules
+
+Schedule A: Bid Instructions
+
+Schedule B: Scope of Work
+
+Schedule C: Project Schedule
+
+Schedule D: Bid Form
+
+Schedule E: Insurance
+
+Schedule F: Weld County Contract
+
+ 
+
+Table of Contents
+
+General Services - Invitation for Bid (IFB) Cover Sheet 1
+
+Documents Included in this Bid Package 1
+
+IFB Schedules 1
+
+Table of Contents 2
+
+Schedule A - Bid Instructions 3
+
+Purpose/Background 3
+
+Bid Advertisement 3
+
+Bid Submission 3
+
+Introductory Information 3
+
+Cooperative Purchasing 4
+
+Schedule B - Scope of Work 6
+
+Project Overview 6
+
+Method of Procurement 6
+
+Pricing Method 6
+
+Specific Requirements and Responsibilities 6
+
+Schedule C - Procurement Schedule 13
+
+Schedule D - Bid Response Form 14
+
+Bid Submittal Instructions 14
+
+Fees 14
+
+Attestation 15
+
+Schedule E – Insurance 16
+
+Insurance 16
+
+Insurance Mailing Information 18
+
+Schedule F - Weld County Contract 20
+
+Contractual Obligations 20
+
+Weld County Standard Contract 20
+
+Schedule A - Bid Instructions
+
+Purpose/Background 
+
+The Board of County Commissioners of Weld County, Colorado, by and through its Purchasing Office (collectively referred to herein as, “Weld County”), wishes to purchase the following:
+
+Southeast Weld Facility Cabling
+
+A mandatory pre-bid conference will be held on November 19, 2026 at 10:00 AM MT at 2950 9th Street, Fort Lupton, CO 80621. Bidders must participate and record their presence at the pre-bid conference to be eligible to submit bids.
+
+Bids will be received until: January 5, 2027 at 10:00 AM MT. The submitted bids will be read over a Microsoft Teams Conference Call on January 5, 2027 at 10:30 AM MT. To join, call the phone number and enter the Conference ID provided below, or you are invited to attend the bid opening in person at the Weld County Purchasing Conference Room, 1301 N. 17^(th) Avenue, Greeley, CO 80631.
+
++----------------------------------+---------------------------------------------------+
+| Microsoft Teams                  | By Phone                                          |
++==================================+===================================================+
+| Join: Teams Meeting              | +1 720-439-5261,,129829375# United States, Denver |
+|                                  |                                                   |
+| Meeting ID: 235 693 308 138 892  | Phone conference ID: 129 829 375#                 |
+|                                  |                                                   |
+| Passcode: nL9WE2W4               |                                                   |
++----------------------------------+---------------------------------------------------+
+
+Bid Advertisement
+
+You can find information concerning this request on the BidNet Direct website at https://www.bidnetdirect.com/ Weld County Government is a member of BidNet Direct. BidNet Direct is an on-line notification system which is being utilized by multiple non-profit and governmental entities. Participating entities post their bids, quotes, proposals, addendums, and awards on this one centralized system.
+
+Bid Submission
+
+1.  PREFERRED: email bids to bids@weld.gov If your bid exceeds 25MB please upload your bid to https://www.bidnetdirect.com. The maximum file size to upload to BidNet Direct is 500 MB. If vendor does not desire email submission, sealed bids will be received at the Office of the Weld County Purchasing in the Weld County Building located at 1301 North 17^(th) Avenue, Greeley, CO 80631 by the bid due date and time.
+
+2.  PDF format is required. Emailed bids must include the following statement on the email: “I hereby waive my right to a sealed bid”. An email confirmation will be sent when your bid has been received. Please call Purchasing at 970-400-4222 or 4223 with any questions.
+
+Introductory Information
+
+1.  Bids shall be typewritten or written in ink on forms prepared by the Weld County Purchasing Division. Each bid must give the full business address of bidder and be signed by authorized person. Bids by partnerships must furnish the full names of all partners and must be signed with the partnership name by one of the members of the partnership or by an authorized representative, followed by the signature and title of the person signing. Bids by corporations must be signed with the legal name of the corporation, followed by the name of the state of the incorporation and by the signature and title of the president, secretary, or other person authorized to bind it in the matter. The name of each person signing shall also be typed or printed below the signature. A bid by a person who affixes to his signature the word "president," "secretary," "agent," or other title without disclosing his principal, may be held to be the bid of the individual signing. When requested by the Weld County Procurement Manager satisfactory evidence of the authority of the officer signing on behalf of a corporation shall be furnished. A power of attorney must accompany the signature of anyone not otherwise authorized to bind the Bidder. All corrections or erasures shall be initialed by the person signing the bid. All bidders shall agree to comply with all of the conditions, requirements, specifications, and/or instructions of this bid as stated or implied herein. All designations and prices shall be fully and clearly set forth. All blank spaces in the bid forms shall be suitably filled in. Bidders are required to use the Proposal Forms which are included in this package and on the basis indicated in the Bid Forms. The Bid Proposal must be filled out completely, in detail, and signed by the Bidder.
+
+2.  Late or unsigned bids shall not be accepted or considered. It is the responsibility of the bidder to ensure that the bid arrives in the Weld County Purchasing Division on or prior to the time indicated in Section 1, entitled, "Notice to Bidders." Hard copy bids received prior to the time of opening will be kept unopened in a secure place. No responsibility will attach to the Weld County Procurement Manager for the premature opening of a bid not properly addressed and identified. Bids may be withdrawn upon written request to and approval of the Weld County Procurement Manager; said request being received from the withdrawing bidder prior to the time fixed for award. Negligence on the part of a bidder in preparing the bid confers no right for the withdrawal of the bid after it has been awarded. Bidders are expected to examine the conditions, specifications, and all instructions contained herein, failure to do so will be at the bidders’ risk.
+
+3.  In accordance with Section 14-9(3) of the Weld County Home Rule Charter, Weld County will give preference to resident Weld County bidders in all cases where said bids are competitive in price and quality. It is also understood that Weld County will give preference to suppliers from the State of Colorado, in accordance with C.R.S. § 30-11-110 (when it is accepting bids for the purchase of any books, stationery, records, printing, lithographing or other supplies for any officer of Weld County). Weld County reserves the right to reject any and all bids, to waive any informality in the bids, to award the bid to multiple vendors, and to accept the bid that, in the opinion of the Board of County Commissioners, is to the best interests of Weld County. The bid(s) may be awarded to more than one vendor.
+
+4.  In submitting the bid, the bidder agrees that the signed bid submitted, all of the documents of the Invitation for Bid contained herein (including, but not limited to the product specifications and scope of services), the formal acceptance of the bid by Weld County, and signature of the Chair of the Board of County Commissioners, together constitutes a contract, with the contract date being the date of signature by the Chair of the Board of County Commissioners.
+
+Cooperative Purchasing
+
+Weld County encourages cooperative purchasing in an effort to assist other agencies to reduce their cost of bidding and to make better use of taxpayer dollars through volume purchasing. Vendor(s) may, at their discretion, agree to extend the prices and/or terms of the resulting award to other state or local government agencies, school districts, or political subdivisions in the event they would have a need for the same product/service. Usage by any entity shall not have a negative impact on Weld County in the current term or in any future terms.
+
+ Schedule B - Scope of Work
+
+Project Overview
+
+Weld County is seeking bids for a vendor to provide Southeast Weld Facility Cabling.
+
+Method of Procurement
+
+Invitation for Bid (IFB): is a procurement method often referred to as a sealed bid solicitation. When issued, the bid package is considered complete for bidding purposes. Responsiveness to the solicitation’s terms and conditions are required. Incomplete or non-responsive bids will be eliminated from consideration. Low price is the key consideration by Weld County in awarding an IFB contract.
+
+Pricing Method
+
+Lump Sum Price: The lump sum price is the simplest and easiest price. Based on specifications, the contractor estimates their cost to provide the work, adds a profit margin, then proposes the sum as a price of the project. Lump Sum requires the proposals to include a fixed, not-to-exceed lump sum, which shall include all costs that may be paid to the contractor. The solicitation may include an itemized list of costs, in which case the proposals shall include itemized costs.
+
+Specific Requirements and Responsibilities
+
+The scope of this project is for Southeast Weld Facility Cabling.
+
+Weld County is accepting bids from qualified contractors to furnish all labor, equipment, supplies, and materials necessary for the Weld County Southeast Weld facility cabling project as stated in this Invitation to Bid. Weld County will award the bid to the contractor/vendor with the best offering deemed most advantageous to the County, price/cost being the primary consideration. The determination of whether the bid is acceptable and meets the minimum requirements of the solicitation is solely within the discretion of the County.
+
+Overview:
+
+Weld County is requesting cabling at the Weld County Southeast Weld facility in Fort Lupton, Colorado. The project includes a total of 235 Uniprise category 6 cables (Color BLUE), 24 strand Corning single mode fiber cable and associated new data closet build out including a 2-post rack and patch panels. All pathways are to be verified and provided by the contractor. The build out of one (1) new data closet, the extending of fiber from the existing MDF data closet in the basement to the new data closet on the 1^(st) floor and installation of new fiber optics to this new IDF data closet from the existing MDF data closet. All fiber components including patch panels or the use of the existing patch panel or if required the installation of a new patch panel in the MDF must be included in the proposal. All fiber terminations shall be included. The new 1^(st) floor data closet requires one (1) 19’ rack, ladder rack, and two 6” cable managers on the sides of the rack. All other associated materials as required are to be included in this turnkey solution. This includes anchoring of the rack, ladder rack and all other parts and installation required. Additional patch panels and all other data closet equipment as specified are required to be installed. Patch cables (Color GREEN) at the specified amount in the details section are required prior to signoff. Specific details will be provided during the mandatory walk-through. The project is considered an all-inclusive cabling turnkey solution. Building electrical diagrams will be provided at the mandatory walk-through. The new data closet will be terminated with new patch panels. Four (4) additional Tripp Lite metered horizontal PDU’s model PDUMH15-ISO are to be supplied, but not to be installed.
+
+The project will include the demolition and removal of all existing old low voltage networking cable that currently terminate in the basement MDF data closet. This will be reviewed with particulars detailed during the mandatory walkthrough.
+
+The project will be conducted in 2 phases. Tentative timelines will be discussed at the mandatory walkthrough.
+
+Phase 1 consists of cabling the WEST wing including the build out of the new 1^(st) floor data closet. This includes the fiber optics component which extends connectivity from the existing basement MDF data closet to this new 1^(st) floor data closet. Demolition and removal of existing cables for this phase will occur; however existing cables providing connectivity for locations included in Phase 2 must not be removed and left in place until phase 2 is kicked off.
+
+Phase 2 consists of cabling the EAST wing. Demolition and removal of existing cables for this phase will occur.
+
+New data closet build-outs. Build a new 1^(st) floor data closet in the WEST wing during the 1^(st) phase of the project. The data closet will consist of one (1) new 19” rack, associated ladder rack, and requested vertical cable managers. Rack will consist of 2” metal 3 ring horizontal cable managers between each 48-port patch panels. Two 6” cable managers on the end racks. Ladder rack will stabilize the rack and be installed as specified. Fiber optics from Main MDF data closet in the basement with corning patch panel to be placed at the top of the rack.
+
+Contractors are to furnish all labor, equipment, supplies, and material as necessary for the copper, fiber, data closet and all other components of the installation project. The project is to include the installation of specified cabling per the identified materials in the specification sheet. The installation will use industry standards in addition to requirements listed in this bid. Access into county facilities will be granted via escort and facility sign-in will be required. All cabling test results, and as-built engineering documents are to be provided in both physical hard copy and electronically 30 days from project completion. There shall be a warranty for all materials and labor for a period of not less than one full year after the work has been accepted by the County. This in no way limits or reduces the warranty offered by any manufacturer of material or equipment used in maintenance or repairs.
+
+All dry wall and drop ceiling penetrations are to be conducted by the contractor. Core drills if required will be performed by the contractor. Surface mounts will be provided and cabling in surface mounts will be pulled, terminated and tested by the contractor. J boxes, Arlington loops, and additional associated materials are to be installed by the contractor. Jack termination labelling per Weld County requirements is to be completed and test results provided prior to signoff. All modular RJ’s to fully populate a patch panel must be supplied, meaning if a jack is not punched down, the patch panel should not be left empty, and a RJ should be placed in all slots.
+
+Mandatory Pre-bid Walkthrough
+
+A mandatory pre-bid walkthrough will be conducted on the date specified and commence at the Weld County Southeast Weld facility located at 2950 9^(th) Street, Fort Lupton, CO 80621. The purpose of this conference is to allow firms which may submit a bid an opportunity to present questions and obtain clarification relative to any facet of this bid. Contractors must sign in and be in attendance during the entire mandatory pre-bid walkthrough to submit a bid. Appropriate identification is required.
+
+Instructions and Understanding:
+
+1.  Attendance at the mandatory walk through is required. Offers submitted by contractors not in attendance will be disqualified.
+
+2.  All technical questions must be submitted via e-mail to Bids@weld.gov by the deadline specified. Responses to all questions will be provided to all contractors that signed in during the mandatory walk through.
+
+3.  Bid submittal must include detailed pricing as specified in the pricing section. Offers submitted that do not meet these requirements will be disqualified.
+
+4.  E-Mail bid submission must contain the following statement on the email: “I hereby waive my right to a sealed bid”. Offers submitted that do not meet these requirements will be disqualified.
+
+5.  All bids must be received by the bid opening date and time specified. Offers submitted that do not meet this requirement will be disqualified.
+
+6.  All bid submissions as of the bid opening date and time are final. Modifications will not be allowed after the bid opening date and time specified. Confirm accuracy of materials and pricing prior to bid submittal.
+
+7.  Modifications to bids already submitted will be permitted if received prior to the bid opening date and time specified.
+
+8.  If requested, Contractors shall be required to submit satisfactory evidence that they have a practical knowledge of the particular service requested and that they have the necessary financial resources to complete the proposed service called for as described in the Scope of Work.
+
+9.  The contractor shall meet all required certifications as detailed in the contractor requirements section of the bid. Offers submitted that do not meet these requirements will be disqualified.
+
+10. Contractors shall familiarize themselves with all ordinances and statutes pertaining to the subject matter of the bid and examine and determine for themselves the location and nature of the proposed work, and the amount and character of the labor and materials required therefor, and the difficulties which may be encountered in performing the tasks identified in the Scope of Work.
+
+Failure to Perform:
+
+1.  Failure on the part of any contractor to carry out a previous contract satisfactorily or its lack of experience or equipment necessary for the satisfactory completion of the project may be deemed sufficient cause for disqualification.
+
+2.  The contractor’s failure to perform work or rejected work shall result in the contractor re-executing or replacing the work in question. All removal and replacement work shall be done at the contractor's expense. If the contractor does not take action to remove such rejected work within three days after receipt of written notice, the owner may remove such work and store the materials at the expense of the contractor.
+
+3.  The contract may be terminated by Weld County in accordance with this clause, in whole or in part, in writing, whenever the County shall determine that the contractor has failed to meet performance requirements of the contract. In the event of a determination of default, Weld County reserves the right to award any remaining portion of the agreement to the next lowest and most responsive bidder.
+
+Performance, Labor, Material and Payment Bond:
+
+  The successful Bidder shall be required to execute the Performance Bond and Labor & Materials Payment Bond in the amount of 100% of the Contract plus the value of the force account items, covering the faithful performance of the Contract and the payment of all obligations arising there-under. The Bonds shall be executed with the Contract Documents by a surety company authorized to do business in the State of Colorado and acceptable as surety to Weld County.  The Bidder shall deliver the Bonds to the Owner no later than the date of execution of the Contract. Weld County reserves the right to require and or enforce a bond on any or all projects.
+
+Copper Cable and Pathway Requirements: (QTY 235 cables requested)
+
+-   Modular patch panels itemized in specification section for all cables are required.
+
+-   CommScope CS37P Cat 6 Blue Cable UN874043014/10 | CS37P BLU C6 4/23 U/UTP CPK 1KFT
+
+-   All terminations must be tested to 250 MHZ and test sheets must be bound and given to technical services for future reference.
+
+-   All test documentation shall be delivered in hard and soft copy. Test documentation will include build out floor plan and cable test results.
+
+-   All testing must be done with company owned equipment and Corning certified for fiber.
+
+-   Copper cable locations and other requirements will be handed out at the mandatory pre-bid meeting.
+
+-   All cable runs will be home run from the distribution frame to each work area.
+
+-   Bridge taps and splices are not permitted as part of the horizontal cabling.
+
+-   Grounded cabling is not required .90 Meter maximum horizontal cable length.
+
+-   Provide neat cable management in the computer room.
+
+-   Commscope High Density Modular Patch Panels P/N 760207282 / CPP-UDDM-M-2U-48 will be utilized for Data Closet Terminations
+
+-   Commscope Jack 760237777 | UNJ600-BK Modular is to be utilized in conjunction with the Patch Panel for Data Closet Termination. All patch panel Jacks must be left populated even if a cable is not terminated. All ports in the patch panel must be populated with a jack. The modular jack is installed even if the jack is not punched down.
+
+-   All patch panels and cables must be labelled.
+
+-   All cables must be pulled to their final location. If conduits or cut outs are not supplied, or furniture mounting is required, the completion of the cable pull must be completed as requested.
+
+-   Provide support for cabling throughout the facility via J-hooks/Arlington loops or other similar means.
+
+-   Assure a ANNSI code and other code requirements are met.
+
+-   Assure all pathways are properly sleeved.
+
+-   Pathways and/core drills may be required and should be included as part of the requirements of the project.
+
+Fiber Installation Requirements:
+
+-   24 Strand Single Mode fiber cable as specified is required (Between
+
+data closets)
+
+-   All fiber optics strands are to be terminated into the Data Closets utilizing the fiber enclosures, bulkheads and LC connectors specified. This is a turnkey solution. All necessary materials and labor will be provided by the contractor company.
+
+-   Install, splice, terminate, and test Single Mode Coring fiber on both ends of each fiber run as specified.
+
+-   As-builds, in both hard and soft copies, to be provided 30 days after completion.
+
+-   Fiber test results, in both hard and soft copy, to be provided 30 days after completion.
+
+-   All equipment used for testing must be certified and calibrated within the previous 365 days.
+
+-   In order to maintain the optical fiber’s performance, the following installation practices shall be followed:
+
+    -   All fiber must be Corning Fiber and all terminations will be LC connections.
+
+    -   Do not exceed the recommended pulling tension.
+
+    -   Do not exceed the recommended minimum bend radius.
+
+    -   A slack loop of 25’ shall be left in each Data Closet.
+
+-   Any parts, components, subassemblies, or materials not specified, but necessary for a complete and functioning system, must be furnished as part of the finished product. No additional allowances will be made for items omitted from the specifications.
+
+Data Closet and Rack Requirements:
+
+-   Provide a 19” rack and associated cable management and ladder rack as specified per data closet
+
+-   Provide vertical cable management (6” vertical)
+
+-   Provide metal 3 ring horizontal cable management between all patch panels.
+
+-   Provide ladder rack and associated equipment.
+
+-   Provide appropriate and required equipment for cable bend radius when waterfalling into the rack.
+
+-   Provide fire caulking in all required locations.
+
+-   Provide appropriate support.
+
+Contractor Requirements:
+
+-   The contractor company (not just the individual doing the work) must be Uniprise Certified Installer in the state of Colorado and Corning Certified Installer in the state of Colorado.
+
+-   At least one technician working on this project shall be BICSI (Building Industry Consulting Service International) certified.
+
+-   Performance bond is required. Contractor’s Bond should be for one-year warranty.
+
+-   Have a 25-year labor, materials, and application assurance warranty.
+
+-   Contractor must comply with Corning’s 25-year labor, materials, and application assurance warranty. The contractor bonds are not associated with this 25-year Uniprise or Corning warranty.
+
+-   The contractor company is required to be within 2-hour travel distance from 1401 N. 17^(th) Ave, Greeley, CO 80631
+
+-   All staff or agents of the contractor must be full-time employees. Contractors utilizing independent contractors, temporary employment or sub-contracting the work will not be permitted.
+
+-   Project must have a full-time employee of the award company to perform project management duties.
+
+-   The Contractor must have an office within 90 miles of Greeley, Colorado.
+
+-   All individuals must be able to pass a background check if required to access restricted areas such as the jail.
+
+Contractor Workmanship:
+
+-   All work shall be done in a workman like fashion of the highest standards in the telecommunications industry.
+
+-   Corning Cable Systems SRP’s (Standard Recommended Procedures) must be followed to ensure that materials are installed in a neat and secure manner.
+
+-   Workers must clean any debris and trash at the close of each workday.
+
+-   Vendor will replace or repair all materials, furnishing, and coverings that may become damaged as a result of activities.
+
+-   Any parts, components, subassemblies, or materials not specified, but necessary for a complete and functioning system must be furnished as part of the finished product. No additional allowances will be made for items omitted from the specifications.
+
+-   All personnel working on site shall be visibly identifiable at all times as a representative of the vendor by clothing and photographed identification badges.
+
+Product Scope:
+
+-   Projects Specifications including building footage and cabling, and data closet visual walkthrough will be reviewed at the mandatory pre-bid. The Contractor is required and responsible for all measurements of all cables and other materials. The walk-through will provide guidelines.
+
+-   All installation activities to include cabling, can be completed during normal business hours. Normal business hours are Monday through Friday from 7 AM until 5:00 PM.
+
+Product Specifications:
+
+Jack Specs:
+
+-   Part number UNJ 600 GY
+
+Faceplates:
+
+-   Part number M12L-262
+
+-   Part number M14L-262
+
+-   Blank Faceplates (if needed)
+
+-   Security hardware (IE; Screws, etc.)
+
+-   RJ Biscuit (if needed)
+
+Patch Panels: (Fully populated 48 port patch panels) Where required.
+
+-   Commscope High Density Modular Patch Panels P/N 760207282 / CPP-UDDM-M-2U-48 will be utilized for Data Closet Terminations Jack PN is 760237777 | UNJ600-BK
+
+-   Commscope Jack PN is 760237777 | UNJ600-BK Modular Jack to be utilized in conjunction with the Patch Panel for Data Closet Termination.
+
+-   All RJ’s / Patch panel jacks to fully populate the patch panel must be provided. This includes jack for locations I the patch panel that do not have cables punched.
+
+Patch Cables:
+
+-   235 (1) foot UNC6-GR-1F (Green)
+
+-   120 (3) foot UNC6-GR-3F (Green)
+
+-   120 (5) foot UNC6-GR-5F (Green)
+
+-   120 (7) foot UNC6-GR-7F (Green)
+
+-   60 (10) foot UNC6-GR-10F (Green)
+
+Fiber Optics:
+
+-   Corning Fiber:
+
+    -   024ZU4-T4F22D20
+
+-   Closet Connector Housing:
+
+    -   CCH-02U
+
+-   Closet Connector Housing Panels:
+
+    -   CCH-CP12-A9
+
+Copper Labeling:
+
+-   Cables to be labeled on both ends per the specified Weld County standard. This will be provided after the bid award.
+
+Data Closet:
+
+-   Chatsworth 7,’ 2 Post Rack (black) P/N = 66353-703
+
+-   Chatsworth 7,’ 6” Cable Management (black, end mngmt) P/N = 30095-703
+
+-   Chatsworth 7’, 10” Cable Management (black, middle mgmt) P/N = 30096-703 (alternative part number not requested in this bid)
+
+PDU’s:
+
+-   Four (4) additional Tripp Lite metered horizontal PDU’s model PDUMH15-ISO are to be supplied. (NOT TO BE INSTALLED)
+
+Schedule C - Procurement Schedule
+
+Below is the anticipated schedule for procurement of this solicitation:
+
+Advertisement Date November 6, 2026
+
+Pre-Proposal Meeting (Mandatory) November 19, 2026, at 1:00 PM
+
+1401 N. 17^(th) Ave, Greeley, CO 80631
+
+  Questions Due: December 3, 2026, by 5:00 PM MT
+
+  Questions Posted: December 8, 2026, by 5:00 PM MT
+
+  Proposals Are Due January 5, 2027, by 10:00 AM MT, Purchasing’s Clock
+
+Solicitation Notice of Award (Anticipated) January 20, 2027
+
+Contract Execution (Anticipated) January 25, 2027
+
+Completion March 1, 2027
+
+Schedule D - Bid Response Form
+
+ Bid Submittal Instructions
+
+The following items must be completed and submitted with your proposal on or before the proposal opening deadline. January 5, 2027 @ 10:00AM MT
+
+1)  Schedule D – Bid Response Form
+
+2)  Any potential or future Addenda must be completed/acknowledged.
+
+3)  All other items as requested in the Bid Specifications and/or Scope of Work.
+
+Failure to include any of the above items upon submittal of your bid may result in your bid being incomplete, non-responsive, and your bid being rejected. If there are any exclusions or contingencies submitted with your bid it may be disqualified.
+
+Fees
+
+Provide fees for this project below:
+
+-   All bid submittals must include the identified pricing details in the model below.
+
+  Copper Cable and Materials Total: $___________
+
+  Copper Cable Installation Labor Total: $___________
+
+  Fiber and Materials Total: $___________
+
+  Fiber Installation Labor Total: $___________
+
+  Associated Materials and all Other Expenses Total $___________
+
+Bond Total $___________
+
+Grand Total: $__________________
+
+Attestation
+
+The undersigned, by his or her signature, hereby acknowledges and represents that:
+
+1.  The bid proposed herein meets all the conditions, specifications and special provisions set forth in the Invitation for Bid for Request No. B2600113.
+
+2.  The quotations set forth herein are exclusive of any federal excise taxes and all other state and local taxes.
+
+3.  He or she is authorized to bind the below-named bidder for the amount shown on the accompanying bid sheets.
+
+4.  Acknowledgement that bidder is required to submit a current IRS Form W9 upon award and prior to contracting.
+
+5.  Acknowledgement of Schedule E – Insurance
+
+6.  Acknowledgment of Schedule F – Weld County Contract
+
+7.  By submitting a responsive bid or proposal, the supplier agrees to be bound by all terms and conditions of the solicitation as established by Weld County.
+
+8.  Weld County reserves the right to reject any and all bids, to waive any informality in the bids, and to accept the bid that, in the opinion of the Board of County Commissioners, is to the best interests of Weld County. The bid(s) may be awarded to more than one vendor.
+
+  -----------------------------------------------------------------------
+  Item                        Entry
+  --------------------------- -------------------------------------------
+  Company Name:               
+
+  Address:                    
+
+  Phone                       
+
+  Email:                      
+
+  FEIN/Federal Tax ID #:      
+  -----------------------------------------------------------------------
+
+CONTRACTOR:
+
+By: ____________________________ ___________________________
+
+  Date of Signature
+
+Name: __________________________
+
+Title: ___________________________
+
+Schedule E – Insurance
+
+Insurance
+
+  Contractor shall provide coverage with limits of liability no less than those stated below:
+
+  Required Types of Insurance.
+
+  Workers’ Compensation and Employer’s Liability Insurance as required by state statute, covering all of the Contractor’s employees acting within the course and scope of their employment. The policy shall contain a waiver of subrogation against the County. This requirement shall not apply when a Contractor or subcontractor is exempt under Colorado Workers’ Compensation Act., AND when such Contractor or subcontractor executes the appropriate sole proprietor waiver form.
+
+  Minimum Limits:
+
+  Coverage A (Workers’ Compensation) Statutory
+
+  Coverage B (Employers Liability) $ 100,000
+
+  $ 100,000
+
+  $ 500,000
+
+  Commercial General Liability Insurance including public liability and property damage, covering all operations required by the Work. The policy shall be endorsed to include the following additional insured language: "County, its elected officials, affiliated entities, employees, agents, and volunteers shall be named as additional insureds with respect to liability arising out of the activities performed by, or on behalf of the Contractor."
+
+  Such policy shall include Minimum Limits as follows:
+
+  Each Occurrence $ 1,000,000
+
+  General Aggregate $ 2,000,000
+
+  Products/Completed Operations Aggregate $ 2,000,000
+
+  Personal/Advertising Injury $ 1,000,000
+
+  Automobile Liability Insurance for Bodily Injury and Property Damage for any owned, hired, and non-owned vehicles operating both on County property and elsewhere in the performance of this Contract. The policy shall be endorsed to include the following additional insured language: "County, its elected officials, affiliated entities, employees, agents, and volunteers shall be named as additional insureds with respect to liability arising out of the activities performed by, or on behalf of the Contractor."
+
+  Contractor's Automobile Insurance Policy shall include Minimum Limits as follows:
+
+  Bodily Injury/Property Damage (Each Accident) $ 1,000,000
+
+  Proof of Insurance. All insurers must be licensed or approved to do business within the State of Colorado, and unless otherwise specified, all policies must be written on a per occurrence basis. The Contractor shall provide the County with a Certificate of Insurance evidencing all required coverages, before commencing work or entering the County premises. The Contractor shall furnish the County with certificates of insurance (ACCORD) form or equivalent approved by the County as required by this Contract. The certificates for each insurance policy are to be signed by a person authorized by that insurer to bind coverage on its behalf. The Contractor shall name on the certificate” Weld County, its elected officials, affiliated entities, employees, agents, and volunteers as Additional Insureds” for the Commercial General Liability coverage and for the Automobile Liability coverage for work that is being performed by or on behalf of the Contractor.
+
+  On insurance policies where the County is named as an additional insured, the County shall be an additional insured to the full limits of liability purchased by the Contractor even if those limits of liability are in excess of those required by this Contract.
+
+  Upon request by the County, Contractor must provide a certified copy of the actual insurance policy and/or required endorsements, for examination, affecting coverage(s) required by the Contract. Such documents are deemed confidential and deemed not public records for purposes of the Colorado Open Records Act. All certificates and endorsements are to be received and approved by the County before work commences.
+
+  Each insurance policy required by this Agreement must be in effect at or prior to commencement of work under this Agreement and remain in effect for the duration of the project, and for a longer period of time if required by other provisions in this Agreement. Failure to maintain the insurance policies as required by this Agreement or to provide evidence of renewal is a material breach of contract.
+
+  All certificates and any required endorsement(s) shall be sent directly to the County Department Representative’s Name and Address. The project/contract number and project description shall be noted on the certificate of insurance. The County reserves the right to require complete, certified copies of all insurance policies for examination required by this Agreement at any time.
+
+  Any modification or variation from the insurance requirements in this Agreement shall be made by the County Attorney’s Office, whose decision shall be final. Such action will not require a formal contract amendment but may be made by administrative action.
+
+  Additional Insurance Related Requirements: The County requires that all policies of insurance be written on a primary basis, non-contributory with any other insurance coverages and/or self-insurance carried by the County.
+
+  The Contractor shall advise the County in the event any general aggregate or other aggregate limits are reduced below the required per occurrence limit. At their own expense, the Contractor will reinstate the aggregate limits to comply with the minimum requirements and shall furnish the County with a new certificate of insurance showing such coverage is in force.
+
+  Commercial General Liability Completed Operations coverage must be kept in effect for up to three (3) years after completion of the project. Contractors Professional Liability (Errors and Omissions) policy must be kept in effect for up to three (3) years after completion of the project.
+
+  Certificates of insurance shall state that on the policies that the County is required to be named as an Additional Insured, the insurance carrier shall provide a minimum of 30 days advance written notice to the County for cancellation, non-renewal, suspension, voided, or material changes to policies required under this Agreement, except when cancellation is for non-payment of premium, then ten (10) days prior notice may be given.
+
+  On all other policies, it is the Contractor’s responsibility to give the County 30 days’ notice if policies are reduced in coverage or limits, cancelled or non-renewed. However, in those situations where the insurance carrier refuses to provide notice to County, the Contractor shall notify County of any cancellation, or reduction in coverage or limits of any insurance within seven (7) days or receipt of insurer’s notification to that effect.
+
+  The Contractor agrees that the insurance requirements specified in this Agreement do not reduce the liability Contractor has assumed in the indemnification/hold harmless section of this Agreement.
+
+  Failure of the Contractor to fully comply with these requirements during the term of this Agreement may be considered a material breach of contract and may be cause for immediate termination of the Agreement at the option of the County. The County reserves the right to negotiate additional specific insurance requirements at the time of the contract award.
+
+  Subcontractor Insurance. Contractor hereby warrants that all subcontractors providing services under this Agreement have or will have the above-described insurance prior to their commencement of the Work, or otherwise that they are covered by the Contractor’s policies to the minimum limits as required herein. Contractor agrees to provide proof of insurance for all such subcontractors upon request by the County.
+
+  No limitation of Liability. The insurance coverages specified in this Agreement are the minimum requirements, and these requirements do not decrease or limit the liability of Contractor. The County in no way warrants that the minimum limits contained herein are sufficient to protect the Contractor from liabilities that might arise out of the performance of the Work under by the Contractor, its agents, representatives, employees, or subcontractors. The Contractor shall assess its own risks and if it deems appropriate and/or prudent, maintain higher limits and/or broader coverages. The Contractor is not relieved of any liability or other obligations assumed or pursuant to the Contract by reason of its failure to obtain or maintain insurance in sufficient amounts, duration, or types. The Contractor shall maintain, at its own expense, any additional kinds or amounts of insurance that it may deem necessary to cover its obligations and liabilities under this Agreement.
+
+Insurance Mailing Information
+
+Certificates of Insurance, endorsements and bonds shall be provided to the County via electronic correspondence or mail using the information below:
+
+Email:
+
+Project Manager: Aleksei Churyk
+
+Email: IT-Bids@weld.gov
+
+Telephone: (970)400-4357
+
+Mail:
+
+Weld County Information Technology
+
+ATTN: Aleksei Churyk
+
+PO Box 758
+
+Greeley, CO 80632
+
+Schedule F - Weld County Contract
+
+Contractual Obligations
+
+1.  The successful Contractor will be required to sign a contract substantially similar to the Weld County Standard Contract shown in Schedule F of this document. The County reserves the right to add or delete provisions to the form prior to Agreement execution.
+
+2.  Issuance of this solicitation does not commit the County to award any agreement or to procure.
+
+3.  If a formal contract is required, the Contractor agrees and understands that a Notice of Award does not constitute a contract or create a property interest of any nature until a contract is signed by the Awardee and the Board of County Commissioners and/or their authorized designee.
+
+4.  Contractor is responsible for reviewing the Weld County Standard Contract and understanding the terms and conditions contained therein, including, but not limited to, insurance requirements, indemnification, illegal aliens, equal opportunity, non-appropriation, and termination.
+
+5.  Contractor’s Response to this solicitation is a willingness to enter into the Weld County Standard Contract or Contractor shall identify and include any proposed revisions they have for the Weld County Standard Contract. Any proposed revisions made by the Contractor after the County Notice of Intent to Award the Solicitation may be grounds for rescinding said Notice. The identification of willingness to enter into the standard Agreement is for general purposes at this time but is part of the evaluation process and must be included. There may be negotiations on a project-by-project basis that provide further clarification.
+
+Weld County Standard Contract
+
+Below is a sample of a standard Weld County Contract for General Services:
+
+Service Agreement Between Weld County and [Contractor]
+
+This Agreement is made and entered into this ___ day of ____________, 202_, by and between the Board of Weld County Commissioners, on behalf of [Department], hereinafter referred to as “County,” and [Contractor], hereinafter referred to as “Contractor”.
+
+WHEREAS, County requires an independent contractor to perform the services required by County and set forth in the attached Exhibits; and
+
+WHEREAS, Contractor is willing and has the specific ability to perform the required services at or below the cost set forth in the attached Exhibits; and
+
+WHEREAS, Contractor is authorized to do business in the State of Colorado and has the time, skill, expertise, and experience necessary to provide the equipment, materials and services as set forth below.
+
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties hereto agree as follows:
+
+1.  Introduction. The terms of this Agreement are contained in the terms recited in this document and in the attached Exhibits, each of which forms an integral part of this Agreement and are incorporated herein. The parties each acknowledge and agree that this Agreement, including the attached Exhibits, define the performance obligations of Contractor and Contractor’s willingness and ability to meet those requirements (the “Work”). If a conflict occurs between this Agreement and any Exhibit or other attached document, the terms of this Agreement shall control, and the remaining order of precedence shall be based upon order of attachment.
+
+  Exhibit A consists of County’s Invitation for Bid (IFB) as set forth in Bid Package No. B_________.
+
+  Exhibit B consists of Contractor’s Response to County’s Request.
+
+2.  Service or Work. Contractor agrees to procure the materials, equipment and/or products necessary for the Work and agrees to diligently provide all services, labor, personnel, and materials necessary to perform and complete the Work described in the attached Exhibits. Contractor shall further be responsible for the timely completion and acknowledges that a failure to comply with the standards and requirements of Work within the time limits prescribed by County may result in County’s decision to withhold payment or to terminate this Agreement.
+
+3.  Term. The term of this Agreement begins upon the date of the mutual execution of this Agreement and ends one year later. Both of the parties to this Agreement understand and agree that the laws of the State of Colorado prohibit County from entering into Agreements which bind County for periods longer than one year. This Agreement may be extended upon mutual written agreement of the Parties.
+
+4.  Termination; Breach; Cure. County may terminate this Agreement for its own convenience upon thirty (30) days written notice to Contractor. Due to the time needed for County to procure replacement services, Contractor may terminate this Agreement for its own convenience upon ninety (90) days written notice to County. Either Party may immediately terminate this Agreement upon material breach of the other party, however the breaching party shall have fifteen (15) days after receiving such notice to cure such breach. Upon termination, County shall take possession of all materials, equipment, tools and facilities owned by County which Contractor is using, by whatever method it deems expedient; and Contractor shall deliver to County all completed or partially completed Work under this Agreement, together with all other items, materials and documents which have been paid for by County, and these items, materials and documents shall be the property of County. Upon termination of this Agreement by County, Contractor shall have no claim of any kind whatsoever against the County by reason of such termination or by reason of any act incidental thereto, except for compensation for work satisfactorily performed and/or materials described herein properly delivered.
+
+5.  Extension or Amendment. Any amendments or modifications to this agreement shall be in writing signed by both parties. No additional services or work performed by Contractor shall be the basis for additional compensation unless and until Contractor has obtained written authorization and acknowledgement by County for such additional services.
+
+6.  Compensation. Upon Contractor’s successful completion of the Work, and County’s acceptance of the same, County agrees to pay Contractor an amount not to exceed $600,000.00 as set forth in the Exhibits. No payment in excess of that set forth in the Exhibits will be made by County unless a Change Order authorizing such additional payment has been specifically approved by Weld County. If, at any time during the term or after termination or expiration of this Agreement, County reasonably determines that any payment made by County to Contractor was improper because the service for which payment was made did not perform as set forth in this Agreement, then upon written notice of such determination and request for reimbursement from County, Contractor shall forthwith return such payment(s) to County. Upon termination or expiration of this Agreement, unexpended funds advanced by County, if any, shall forthwith be returned to County. County will not withhold any taxes from monies paid to the Contractor hereunder and Contractor agrees to be solely responsible for the accurate reporting and payment of any taxes related to payments made pursuant to the terms of this Agreement. Unless expressly enumerated in the attached Exhibits, Contractor shall not be entitled to be paid for any other expenses (e.g. mileage). Notwithstanding anything to the contrary contained in this Agreement, County shall have no obligations under this Agreement after, nor shall any payments be made to Contractor in respect of any period after December 31 of any year, without an appropriation therefore by County in accordance with a budget adopted by the Board of County Commissioners in compliance with Article 25, Title 30 of the Colorado Revised Statutes, the Local Government Budget Law (C.R.S. 29-1-101 et. seq.) and the TABOR Amendment (Colorado Constitution, Article X, Sec. 20).
+
+7.  Independent Contractor. Contractor agrees that it is an independent contractor and that Contractor’s officers, agents or employees will not become employees or agents of County, nor entitled to any employee benefits (including unemployment insurance or workers’ compensation benefits) from County as a result of the execution of this Agreement. Contractor shall be solely responsible for its acts and those of its agents and employees for all acts performed pursuant to this Agreement. Any provisions in this Contract that may appear to give the County the right to direct Contractor as to details of doing work or to exercise a measure of control over the work mean that Contractor shall follow the direction of the County as to end results of the work only. The Contractor is obligated to pay all federal and state income tax on any moneys earned or paid pursuant to this contract.
+
+8.  Subcontractors. Contractor acknowledges that County has entered into this Agreement in reliance upon the particular reputation and expertise of Contractor. Contractor shall not enter into any subcontractor agreements for the completion of the Work without County’s prior written consent, which may be withheld in County’s sole discretion. County shall have the right in its reasonable discretion to approve all personnel assigned to the Work during the performance of this Agreement and no personnel to whom County has an objection, in its reasonable discretion, shall be assigned to the Work. Contractor shall require each subcontractor, as approved by County and to the extent of the Work to be performed by the subcontractor, to be bound to Contractor by the terms of this Agreement, and to assume toward Contractor all the obligations and responsibilities which Contractor, by this Agreement, assumes toward County. County shall have the right (but not the obligation) to enforce the provisions of this Agreement against any subcontractor hired by Contractor and Contractor shall cooperate in such process. The Contractor shall be responsible for the acts and omissions of its agents, employees, and subcontractors.
+
+9.  Warranty. Contractor warrants that the Work performed under this Agreement will be performed in a manner consistent with the standards governing such services and the provisions of this Agreement. Contractor further represents and warrants that all Work shall be performed by qualified personnel in a professional manner, consistent with industry standards, and that all services will conform to applicable specifications.
+
+10. . Acceptance of Services Not a Waiver. Upon completion of the Work, Contractor shall submit to County originals of all test results, reports, etc., generated during completion of this work. Acceptance by County of reports and incidental material(s) furnished under this Agreement shall not in any way relieve Contractor of responsibility for the quality and accuracy of the project. In no event shall any action by County hereunder constitute or be construed to be a waiver by County of any breach of this Agreement or default which may then exist on the part of Contractor, and County’s action or inaction when any such breach or default exists shall not impair or prejudice any right or remedy available to County with respect to such breach or default. No assent expressed or implied, to any breach of any one or more covenants, provisions or conditions of the Agreement shall be deemed or taken to be a waiver of any other breach. Acceptance by the County of, or payment for, the Work completed under this Agreement shall not be construed as a waiver of any of the County’s rights under this Agreement or under the law generally.
+
+11. Insurance. Contractor must secure, before the commencement of the Work, the following insurance covering all operations, goods, and services provided pursuant to this Agreement, and shall keep the required insurance coverage in force at all times during the term of the Agreement, or any extension thereof, and during any warranty period. For all coverages, Contractor’s insurer shall waive subrogation rights against County. Contractor shall provide coverage with limits of liability no less than those stated below. An excess liability policy or umbrella liability policy may be used to meet the minimum liability requirements provided that the coverage is written on a “following form” basis.
+
+  Acceptability of Insurers: Insurance is to be placed with insurers duly licensed or authorized to do business in the state of Colorado and with an “A.M. Best” rating of not less than A-VII. The County in no way warrants that the above-required minimum insurer rating is sufficient to protect the Contractor from potential insurer insolvency.
+
+  Required Types of Insurance.
+
+  Workers’ Compensation and Employer’s Liability Insurance as required by state statute, covering all of the Contractor’s employees acting within the course and scope of their employment. The policy shall contain a waiver of subrogation against the County. This requirement shall not apply when a Contractor or subcontractor is exempt under Colorado Workers’ Compensation Act., AND when such Contractor or subcontractor executes the appropriate sole proprietor waiver form.
+
+  Minimum Limits:
+
+  Coverage A (Workers’ Compensation) Statutory
+
+  Coverage B (Employers Liability) $ 100,000
+
+  $ 100,000
+
+  $ 500,000
+
+  Commercial General Liability Insurance including public liability and property damage, covering all operations required by the Work. The policy shall be endorsed to include the following additional insured language: "County, its elected officials, affiliated entities, employees, agents, and volunteers shall be named as additional insureds with respect to liability arising out of the activities performed by, or on behalf of the Contractor."
+
+  Such policy shall include Minimum Limits as follows:
+
+  Each Occurrence $ 1,000,000
+
+  General Aggregate $ 2,000,000
+
+  Products/Completed Operations Aggregate $ 2,000,000
+
+  Personal/Advertising Injury $ 1,000,000
+
+  Automobile Liability Insurance for Bodily Injury and Property Damage for any owned, hired, and non-owned vehicles operating both on County property and elsewhere in the performance of this Contract. The policy shall be endorsed to include the following additional insured language: "County, its elected officials, affiliated entities, employees, agents, and volunteers shall be named as additional insureds with respect to liability arising out of the activities performed by, or on behalf of the Contractor."
+
+  Contractor's Automobile Insurance Policy shall include Minimum Limits as follows:
+
+  Bodily Injury/Property Damage (Each Accident) $ 1,000,000
+
+12. Proof of Insurance. All insurers must be licensed or approved to do business within the State of Colorado, and unless otherwise specified, all policies must be written on a per occurrence basis. The Contractor shall provide the County with a Certificate of Insurance evidencing all required coverages, before commencing work or entering the County premises. The Contractor shall furnish the County with certificates of insurance (ACCORD) form or equivalent approved by the County as required by this Contract. The certificates for each insurance policy are to be signed by a person authorized by that insurer to bind coverage on its behalf. The Contractor shall name on the certificate” Weld County, its elected officials, affiliated entities, employees, agents, and volunteers as Additional Insureds” for the Commercial General Liability coverage and for the Automobile Liability coverage for work that is being performed by or on behalf of the Contractor.
+
+  On insurance policies where the County is named as an additional insured, the County shall be an additional insured to the full limits of liability purchased by the Contractor even if those limits of liability are in excess of those required by this Contract.
+
+  Upon request by the County, Contractor must provide a certified copy of the actual insurance policy and/or required endorsements, for examination, effecting coverage(s) required by the Contract. Such documents are deemed confidential and deemed not public records for purposes of the Colorado Open Records Act. All certificates and endorsements are to be received and approved by the County before work commences.
+
+  Each insurance policy required by this Agreement must be in effect at or prior to commencement of work under this Agreement and remain in effect for the duration of the project, and for a longer period of time if required by other provisions in this Agreement. Failure to maintain the insurance policies as required by this Agreement or to provide evidence of renewal is a material breach of contract.
+
+  All certificates and any required endorsement(s) shall be sent directly to the County Department Representative’s Name and Address. The project/contract number and project description shall be noted on the certificate of insurance. The County reserves the right to require complete, certified copies of all insurance policies for examination required by this Agreement at any time.
+
+  Any modification or variation from the insurance requirements in this Agreement shall be made by the County Attorney’s Office, whose decision shall be final. Such action will not require a formal contract amendment but may be made by administrative action.
+
+13. Additional Insurance Related Requirements: The County requires that all policies of insurance be written on a primary basis, non-contributory with any other insurance coverages and/or self-insurance carried by the County.
+
+  The Contractor shall advise the County in the event any general aggregate or other aggregate limits are reduced below the required per occurrence limit. At their own expense, the Contractor will reinstate the aggregate limits to comply with the minimum requirements and shall furnish the County with a new certificate of insurance showing such coverage is in force.
+
+  Commercial General Liability Completed Operations coverage must be kept in effect for up to three (3) years after completion of the project. Contractors Professional Liability (Errors and Omissions) policy must be kept in effect for up to three (3) years after completion of the project.
+
+  Certificates of insurance shall state that on the policies that the County is required to be named as an Additional Insured, the insurance carrier shall provide a minimum of 30 days advance written notice to the County for cancellation, non-renewal, suspension, voided, or material changes to policies required under this Agreement, except when cancellation is for non-payment of premium, then ten (10) days prior notice may be given.
+
+  On all other policies, it is the Contractor’s responsibility to give the County 30 days’ notice if policies are reduced in coverage or limits, cancelled or non-renewed. However, in those situations where the insurance carrier refuses to provide notice to County, the Contractor shall notify County of any cancellation, or reduction in coverage or limits of any insurance within seven (7) days or receipt of insurer’s notification to that effect.
+
+  The Contractor agrees that the insurance requirements specified in this Agreement do not reduce the liability Contractor has assumed in the indemnification/hold harmless section of this Agreement.
+
+  Failure of the Contractor to fully comply with these requirements during the term of this Agreement may be considered a material breach of contract and may be cause for immediate termination of the Agreement at the option of the County. The County reserves the right to negotiate additional specific insurance requirements at the time of the contract award.
+
+14. Subcontractor Insurance. Contractor hereby warrants that all subcontractors providing services under this Agreement have or will have the above-described insurance prior to their commencement of the Work, or otherwise that they are covered by the Contractor’s policies to the minimum limits as required herein. Contractor agrees to provide proof of insurance for all such subcontractors upon request by the County.
+
+15. No limitation of Liability. The insurance coverages specified in this Agreement are the minimum requirements, and these requirements do not decrease or limit the liability of Contractor. The County in no way warrants that the minimum limits contained herein are sufficient to protect the Contractor from liabilities that might arise out of the performance of the Work under by the Contractor, its agents, representatives, employees, or subcontractors. The Contractor shall assess its own risks and if it deems appropriate and/or prudent, maintain higher limits and/or broader coverages. The Contractor is not relieved of any liability or other obligations assumed or pursuant to the Contract by reason of its failure to obtain or maintain insurance in sufficient amounts, duration, or types. The Contractor shall maintain, at its own expense, any additional kinds or amounts of insurance that it may deem necessary to cover its obligations and liabilities under this Agreement.
+
+16. Mutual Cooperation. The County and Contractor shall cooperate with each other in the collection of any insurance proceeds which may be payable in the event of any loss, including the execution and delivery of any proof of loss or other actions required to effect recovery.
+
+17. Indemnity. The Contractor shall defend, indemnify, hold harmless and, not excluding the County's right to participate, defend the County, its officers, officials, agents, and employees, from and against all liabilities, claims, actions, damages, losses, and expenses including without limitation reasonable attorneys' fees and costs (hereinafter referred to collectively as "claims") for bodily injury or personal injury including death, or loss or damage to tangible or intangible property caused, or alleged to be caused, in whole or in part, by the negligent or willful acts or omissions of Contractor or any of its owners, officers, directors, agents, employees or subcontractors. This indemnity includes any claim or amount arising out of or recovered under the Workers' Compensation law or arising out of the failure of such contractor to conform to any federal, state, or local law, statute, ordinance, rule, regulation, or court decree. It is the specific intention of the parties that County shall, in all instances, except for claims arising solely from the negligent or willful acts or omissions of the County, be indemnified by Contractor from and against any and all claims. It is agreed that Contractor will be responsible for primary loss investigation, defense, and judgment costs where this indemnification is applicable. In consideration for the award of this contract, the Contractor agrees to waive all rights of subrogation against the County, its officers, officials, agents, and employees for losses arising from the work performed by the Contractor for the County.
+
+18. Non-Assignment. Contractor may not assign or transfer this Agreement or any interest therein or claim thereunder, without the prior written approval of County. Any attempts by Contractor to assign or transfer its rights hereunder without such prior approval by County shall, at the option of County, automatically terminate this Agreement and all rights of Contractor hereunder. Such consent may be granted or denied at the sole and absolute discretion of County.
+
+19. Examination of Records. To the extent required by law, the Contractor agrees that a duly authorized representative of County, including the County Auditor, shall have access to and the right to examine and audit any books, documents, papers, and records of Contractor, involving all matters and/or transactions related to this Agreement. Contractor agrees to maintain these documents for three years from the date of the last payment received.
+
+20. Interruptions. Neither party to this Agreement shall be liable to the other for delays in delivery or failure to deliver or otherwise to perform any obligation under this Agreement, where such failure is due to any cause beyond its reasonable control, including but not limited to Acts of God, fires, strikes, war, flood, earthquakes, or Governmental actions.
+
+21. Notices. All notices or other communications made by one party to the other concerning the terms and conditions of this contract shall be deemed delivered under the following circumstances:
+
+a)  personal service by a reputable courier service requiring signature for receipt; or
+
+b)  five (5) days following delivery to the United States Postal Service, postage prepaid addressed to a party at the address set forth in this contract; or
+
+c)  electronic transmission via email at the address set forth below, where a receipt or acknowledgment is required and received by the sending party; or
+
+Either party may change its notice address(es) by written notice to the other. Notice may be sent to:
+
+TO CONTRACTOR:
+
+Name: _______________________________
+
+Position: _______________________________
+
+Address: _______________________________
+
+E-mail: _______________________________
+
+Phone: _______________________________
+
+TO COUNTY:
+
+Name: Aleksei Churyk
+
+Position: Director of Technical Operations
+
+Address: P.O. Box 758
+
+Address: 1401 N. 17^(th) Ave, Greeley, CO 80634
+
+E-mail: IT-Bids@weld.gov
+
+Phone: (970) 400-4357
+
+22. Compliance with Law. Contractor shall strictly comply with all applicable federal and State laws, rules and regulations in effect or hereafter established, including without limitation, laws applicable to discrimination and unfair employment practices.
+
+23. Non-Exclusive Agreement. This Agreement is nonexclusive, and County may engage or use other Contractors or persons to perform services of the same or similar nature.
+
+24. Entire Agreement/Modifications. This Agreement including the Exhibits attached hereto and incorporated herein, contains the entire agreement between the parties with respect to the subject matter contained in this Agreement. This instrument supersedes all prior negotiations, representations, and understandings or agreements with respect to the subject matter contained in this Agreement. This Agreement may be changed or supplemented only by a written instrument signed by both parties.
+
+25. Fund Availability. Financial obligations of the County payable after the current fiscal year are contingent upon funds for that purpose being appropriated, budgeted, and otherwise made available. Execution of this Agreement by County does not create an obligation on the part of County to expend funds not otherwise appropriated in each succeeding year.
+
+26. Employee Financial Interest/Conflict of Interest – C.R.S. §§24-18-201 et seq. and §24-50-507. The signatories to this Agreement state that to their knowledge, no employee of Weld County has any personal or beneficial interest whatsoever in the service or property which is the subject matter of this Agreement.
+
+27. Survival of Termination. The obligations of the parties under this Agreement that by their nature would continue beyond expiration or termination of this Agreement (including, without limitation, the warranties, indemnification obligations, confidentiality and record keeping requirements) shall survive any such expiration or termination.
+
+28. Severability. If any term or condition of this Agreement shall be held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, this Agreement shall be construed and enforced without such provision, to the extent that this Agreement is then capable of execution within the original intent of the parties.
+
+29. Non-Waiver. No term or condition of this Agreement shall be construed or interpreted as a waiver, express or implied, of the monetary limitations or any of the other immunities, rights, benefits, protections, or other provisions, of the Colorado Governmental Immunity Act §§ 24-10-101 et seq., as applicable now or hereafter amended.
+
+30. No Third-Party Beneficiary. It is expressly understood and agreed that the enforcement of the terms and conditions of this Agreement, and all rights of action relating to such enforcement, shall be strictly reserved to the undersigned parties and nothing in this Agreement shall give or allow any claim or right of action whatsoever by any other person not included in this Agreement. It is the express intention of the undersigned parties that any entity other than the undersigned parties receiving services or benefits under this Agreement shall be an incidental beneficiary only.
+
+31. Board of County Commissioners of Weld County Approval. This Agreement shall not be valid until it has been approved by the Board of County Commissioners of Weld County, Colorado, or its designee.
+
+32. Choice of Law/Jurisdiction. Colorado law, and rules and regulations established pursuant thereto, shall be applied in the interpretation, execution, and enforcement of this Agreement. Any provision included or incorporated herein by reference which conflicts with said laws, rules and/or regulations shall be null and void. In the event of a legal dispute between the parties, Contractor agrees that the Weld County District Court shall have exclusive jurisdiction to resolve said dispute.
+
+33. No Employment of Unauthorized Aliens - Contractor certifies, warrants, and agrees that it does not knowingly employ or contract with an unauthorized alien who will perform work under this Agreement (see 8 U.S.C.A. §1324a and (h)(3)) nor enter into a contract with a subcontractor that employs or contracts with an unauthorized alien to perform work under this Agreement. Upon request, contractor shall deliver to the County a written notarized affirmation that it has examined the legal work status of an employee and shall comply with all other requirements of federal or state law.
+
+  Contractor agrees to comply with any reasonable request from the Colorado Department of Labor and Employment in the course of any investigation.
+
+  If Contractor fails to comply with any requirement of this provision, County may terminate this Agreement for breach, and if so terminated, Contractor shall be liable for actual and consequential damages. 
+
+34. Attorney’s Fees/Legal Costs. In the event of a dispute between County and Contractor concerning this Agreement, the parties agree that each party shall be responsible for the payment of attorney fees and/or legal costs incurred by or on its own behalf.
+
+35. Binding Arbitration Prohibited. Weld County does not agree to binding arbitration by any extra-judicial body or person. Any provision to the contrary in this Agreement or incorporated herein by reference shall be null and void.
+
+Acknowledgment. County and Contractor acknowledge that each has read this Agreement, understands it and agrees to be bound by its terms. Both parties further agree that this Agreement, with the attached Exhibits, is the complete and exclusive statement of agreement between the parties and supersedes all proposals or prior agreements, oral or written, and any other communications between the parties relating to the subject matter of this Agreement.
+
+CONTRACTOR:
+
+By: ____________________________
+
+Name: _________________________ Date of Signature: ____________________
+
+Title: ___________________________
+
+Weld County:
+
+Attest: Board of County Commissioners OF
+
+Weld County, Colorado
+
+Weld County Clerk to the Board
+
+BY: ___________________________ ___________________________________
+
+Deputy Clerk to the Board Perry L Buck, Chair
