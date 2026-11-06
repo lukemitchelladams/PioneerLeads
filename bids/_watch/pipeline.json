@@ -1384,18 +1384,18 @@
       "sol": "2026-1 (BidNet 0000442783)",
       "trade": "Landscaping / grounds maintenance",
       "due": "2026-11-30T17:00:00-07:00",
-      "portal": "BidNet Direct (RMEPS)",
+      "portal": "BidNet Direct (RMEPS) 0000442783; submit by email PDF",
       "decision": "EVALUATE",
-      "decision_note": "Found 2026-11-06 00:36Z scan. BidNet event: 'Mandatory walk through at 9:00am, Friday, November 13, 2026' at 2201 Lake Ave., Pueblo. Alex Ditto scope; Luke asks Alex. RFP (5. Landscape RFP.pdf) not in hand yet.",
+      "decision_note": "RFP 2026-1 in hand (docs/5. Landscape RFP.pdf, 3 pp.). MANDATORY walk-through 2026-11-13 09:00 at Fire Station #4, 2201 Lake Ave, Pueblo (RFP p.1). Master service agreement, year-round landscape maintenance on the Lake Ave streetscape plus as-needed PURA properties. Due 2026-11-30 17:00 MT, PDF by email; proof of liability insurance with the proposal. Evaluated on cost, experience and schedule. EVALUATE: Alex Ditto scope; Luke asks Alex (Pueblo is ~115 mi from Broomfield).",
       "prebid": "2026-11-13T09:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "Brown Bison + Alex Ditto (landscaping sub)",
       "subs": "Alex Ditto (Luke handles)",
       "sub_pricing": "None",
       "folder": "bids/pueblo-ura-msa-landscape",
-      "contact": "not in hand yet (RFP not downloaded)",
-      "due_source": "BidNet closing '11/30/2026 05:00 PM MST'",
-      "doc_gaps": "5. Landscape RFP.pdf (BidNet 0000442783; bidnetdirect.com blocked from cloud)"
+      "contact": "Shawn Carlson, Special Programs Manager, scarlson@puebloura.org (RFP p.1)",
+      "due_source": "RFP p.1: \"on or before 5:00 p.m., Mountain Time, November 30, 2026\"",
+      "doc_gaps": "None known: 3-page RFP in hand; no attachments listed"
     }
   ],
   "events": [
@@ -2070,6 +2070,12 @@
       "when": "2026-11-06T02:57:12Z",
       "kind": "sub-reply",
       "note": "B&K Cleaning (Durango) interested; will send pricing after reviewing the docs"
+    },
+    {
+      "bid": "pueblo-ura-msa-landscape",
+      "when": "2026-11-06T05:42:00Z",
+      "kind": "docs",
+      "note": "RFP downloaded by HQ; mandatory walk 11/13 09:00 confirmed from the RFP; due 11/30 17:00 by email PDF"
     }
   ],
   "doc_gaps": [

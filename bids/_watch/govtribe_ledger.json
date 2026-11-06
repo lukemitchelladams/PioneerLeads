@@ -1840,6 +1840,24 @@
    "verdict": "NO",
    "why": "R&D commercial solutions opening; not a trade or product buy for either company.",
    "at": "2026-11-06T02:30:00Z"
+  },
+  "samgov:9458b8f19bc2471c83540f5d2a1da352": {
+   "name": "DLA SPE4A627T9166 pulley, groove (FSC 3020)",
+   "verdict": "NO",
+   "why": "Source-controlled part: approved source 05BU0/63800 only (HQ read 05:42Z). Not a Jones Bearing / American Pulley catalog item we can quote.",
+   "at": "2026-11-06T06:30:00Z"
+  },
+  "bidnet:0000442830": {
+   "name": "Outdoor Recreation Equipment Rental and Concession Services",
+   "verdict": "NO",
+   "why": "Not a profile match; rental/concessions, not our trades.",
+   "at": "2026-11-06T06:30:00Z"
+  },
+  "bidnet:0000442831": {
+   "name": "Debt Collection Services",
+   "verdict": "NO",
+   "why": "Not a profile match; financial services.",
+   "at": "2026-11-06T06:30:00Z"
   }
  },
  "watched": {
@@ -2025,6 +2043,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T05:25:00Z",
+ "last_hourly_check": "2026-11-06T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
