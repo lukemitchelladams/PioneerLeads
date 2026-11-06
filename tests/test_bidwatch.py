@@ -1024,6 +1024,146 @@ common.CODE_NEEDED_MARKER.write_text("2026-01-01T00:00:00+00:00")
 os.utime(common.CODE_NEEDED_MARKER, (time.time() - 7 * 3600,) * 2)
 check("code-needed marker older than 6 h is expired", bidnet._marker_expired())
 common.CODE_NEEDED_MARKER.unlink()
+
+# ---------------------------------------------------------------- part 2c: no-password mode + session sync (2026-11-06)
+# The cloud scanner never submits the BidNet password (robot checks on fresh logins, sessions idle out while the container
+# sleeps); Luke's Mac logs in, keeps the session warm and ships it encrypted; the cloud imports and reuses it.
+print("no-password mode (the cloud only reuses a session fed from Luke's Mac) + session_sync export/import")
+import contextlib as _ctx  # noqa: E402
+import hashlib as _hl  # noqa: E402
+import io as _io2  # noqa: E402
+from scripts.bidwatch import keepalive, mac_session_feeder, session_sync  # noqa: E402
+
+_SESS = TMP / "state/sessions/bidnet.json"
+_dflt = session_sync.DEFAULT_ENC
+session_sync.DEFAULT_ENC = TMP / "no-such-default.enc"  # the checkout's own ops/session file must not steer the tests
+os.environ["STATE_PASSPHRASE"] = "test-only-passphrase-not-a-secret"
+os.environ[common.NO_PASSWORD_ENV] = "1"
+os.environ.pop(session_sync.IMPORT_ENV, None)
+_p0, _l0 = LOGIN_POSTS["n"], HITS2["list"]
+r15 = run.scan(["bidnet"])
+_h15 = r15["health"]["bidnet"]
+check("no-password mode, live saved session: reused, lists read, nothing POSTed to the login endpoint",
+      _h15["logged_in"] and _h15["login_note"].startswith("session reused (no-password mode") and _h15["count"] == 3
+      and LOGIN_POSTS["n"] == _p0 and HITS2["list"] > _l0 and not _h15.get("login_deferred"), (_h15["login_note"], LOGIN_POSTS))
+SESSIONS.clear()  # BidNet times the session out; the cloud must not log in by itself
+_prev15 = {k for k in json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())["bids"] if k.startswith("bidnet:")}
+_p0, _l0, _d0 = LOGIN_POSTS["n"], HITS2["list"], HITS2["detail"]
+r16 = run.scan(["bidnet"])
+_h16 = r16["health"]["bidnet"]
+_rep16 = (TMP / "REPORT_FILE.json").read_text()
+check("no-password mode, expired session: no login POST, no lists or details read, BidNet skipped like a deferred login",
+      LOGIN_POSTS["n"] == _p0 and HITS2["list"] == _l0 and HITS2["detail"] == _d0 and not _h16["logged_in"]
+      and _h16.get("login_deferred") is True and _h16["login_note"] == common.NO_PASSWORD_NOTE, (_h16, LOGIN_POSTS, HITS2))
+check("no-password mode, expired session: rows carried forward, none closed, no cool-down, report says so plainly",
+      len(_prev15) == 3 and all(r16["found"].get(k, {}).get("carried_forward") for k in _prev15) and not r16["closed"]
+      and bidnet.cooldown_until() is None and "waiting for a synced session" in _rep16
+      and "BLIND: bidnet (login deferred on purpose)" in _rep16, (list(r16["closed"]), _h16))
+_argv0, _hb0 = sys.argv, run._heartbeat
+_env0 = {k: os.environ.pop(k) for k in list(os.environ) if k.startswith("HC_PING_")}  # never ping a real monitor from a test
+_env0["BIDWATCH_KEEPALIVE"] = os.environ.get("BIDWATCH_KEEPALIVE")
+os.environ["BIDWATCH_KEEPALIVE"] = "0"  # never start the real keeper here
+run._heartbeat = lambda **kw: None  # the heartbeat file lives in the real repo's debug dir
+sys.argv = ["run.py", "--sources", "bidnet"]
+_rc16 = run.main()
+sys.argv, run._heartbeat = _argv0, _hb0
+for _k, _v in _env0.items():
+    if _v is None:
+        os.environ.pop(_k, None)
+    else:
+        os.environ[_k] = _v
+check("no-password mode, expired session: the whole run exits 0 (a deliberate skip, not a degraded run)",
+      _rc16 == 0 and LOGIN_POSTS["n"] == _p0, (_rc16, LOGIN_POSTS))
+_ks = keepalive.check_once()
+check("keepalive in no-password mode: never logs in, says it waits for a session synced from the Mac",
+      _ks["state"].startswith("expired") and "synced" in _ks["state"] and LOGIN_POSTS["n"] == _p0, _ks)
+
+_orig = _SESS.read_bytes()
+_enc = TMP / "bidnet-session.enc"
+session_sync.export(_enc)
+_blob = _enc.read_bytes()
+check("export: an openssl enc file (Salted__ header, the failover workflow's scheme), mode 600, no plaintext inside",
+      _blob.startswith(b"Salted__") and oct(_enc.stat().st_mode & 0o777) == "0o600" and b'"cookies"' not in _blob, _blob[:16])
+_SESS.write_bytes(b"{}")  # a useless local copy, to prove the import replaces it
+_rec = session_sync.import_(_enc)
+check("import restores an identical session file, mode 600, and records the file it installed",
+      _SESS.read_bytes() == _orig and oct(_SESS.stat().st_mode & 0o777) == "0o600" and _rec["cookies"] >= 1
+      and json.loads(session_sync.IMPORT_RECORD.read_text())["sha256"] == _hl.sha256(_blob).hexdigest(), _rec)
+_refused = []
+for _label, _bad in (("garbage", b"not an encrypted file at all"),
+                     ("tampered", _blob[:40] + bytes([_blob[40] ^ 0xFF]) + _blob[41:]),
+                     ("truncated", _blob[:-7]),
+                     ("not-a-session", session_sync.encrypt(b'{"foo": 1}'))):
+    _bf = TMP / f"bad-{_label}.enc"
+    _bf.write_bytes(_bad)
+    try:
+        session_sync.import_(_bf)
+        _refused.append((_label, "ACCEPTED"))
+    except session_sync.SyncError:
+        _refused.append((_label, "refused" if _SESS.read_bytes() == _orig else "CLOBBERED"))
+check("import refuses garbage, a tampered or truncated file and a non-session document; the saved session is untouched",
+      len(_refused) == 4 and all(v == "refused" for _, v in _refused), _refused)
+_kaB = keepalive.Browser
+_brmod.Browser = keepalive.Browser = _no_browser
+_buf = _io2.StringIO()
+with _ctx.redirect_stdout(_buf):
+    _rc_st = session_sync.main(["status"])
+_brmod.Browser = keepalive.Browser = _B
+_st_out = _buf.getvalue()
+check("status prints age, cookie count, mode and the last import without opening a browser",
+      _rc_st == 0 and "cookies: " in _st_out and "no_password_mode: on" in _st_out and "saved_age_min: " in _st_out
+      and "last_import: " in _st_out, _st_out)
+_src_none = session_sync.import_source()
+session_sync.DEFAULT_ENC = _enc
+_src_dflt = session_sync.import_source()
+os.environ.pop(common.NO_PASSWORD_ENV)
+_src_off = session_sync.import_source()
+session_sync.DEFAULT_ENC = TMP / "no-such-default.enc"
+check("import source: the default file only counts in no-password mode and when it exists; the env var always wins",
+      _src_none is None and _src_dflt == _enc and _src_off is None, (_src_none, _src_dflt, _src_off))
+check("import_if_new with nothing configured is a no-op (no note)", session_sync.import_if_new() is None)
+
+# the Mac side (password mode there): the session expired, so one login, then export and the push command
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
+_stale = _SESS.read_bytes()  # the sid BidNet forgot
+_pushed = TMP / "pushed" / "bidnet-session.enc"
+os.environ[mac_session_feeder.PUSH_CMD_ENV] = f'mkdir -p "{_pushed.parent}" && cp "$BIDWATCH_SESSION_FILE" "{_pushed}"'
+_p0, _n0 = LOGIN_POSTS["n"], LOGINS["n"]
+_ft = mac_session_feeder.tick(TMP / "feeder-out.enc")
+check("Mac feeder tick: expired session -> one password login (device already confirmed), export, push command run",
+      _ft["state"] == "logged in; exported" and _ft["push"] == "pushed" and LOGINS["n"] == _n0 + 1
+      and LOGIN_POSTS["n"] == _p0 + 1 and _pushed.read_bytes().startswith(b"Salted__"), (_ft, LOGINS))
+_ft2 = mac_session_feeder.tick(TMP / "feeder-out.enc")
+check("Mac feeder tick: live session -> keep-alive only, no password, exported and pushed again",
+      _ft2["state"] == "alive; exported" and _ft2["push"] == "pushed" and LOGIN_POSTS["n"] == _p0 + 1, _ft2)
+del os.environ[mac_session_feeder.PUSH_CMD_ENV]
+os.environ[common.NO_PASSWORD_ENV] = "1"
+check("feeder refuses to run where no-password mode is set (that flag belongs on the cloud)",
+      mac_session_feeder.main(["--once"]) == 2)
+# the cloud side: no-password mode, its own copy is the stale one, the pushed file is newer -> imported and reused
+_SESS.write_bytes(_stale)
+os.environ[session_sync.IMPORT_ENV] = str(_pushed)
+_p0 = LOGIN_POSTS["n"]
+r17 = run.scan(["bidnet"])
+_h17 = r17["health"]["bidnet"]
+check("cloud scan installs the pushed session before BidNet and reuses it: logged in, 3 rows read, no password",
+      _h17["logged_in"] and _h17["count"] == 3 and "synced session imported" in _h17["login_note"]
+      and LOGIN_POSTS["n"] == _p0 and not _h17.get("carried_forward") and _SESS.read_bytes() != _stale, _h17["login_note"])
+r18 = run.scan(["bidnet"])
+_h18 = r18["health"]["bidnet"]
+check("same pushed file next scan: left alone (locally refreshed cookies kept), the note says unchanged, still logged in",
+      "synced session unchanged since" in _h18["login_note"] and _h18["logged_in"] and LOGIN_POSTS["n"] == _p0, _h18["login_note"])
+with _ctx.redirect_stdout(_io2.StringIO()):
+    _chk_alive = session_sync.main(["check"])
+    SESSIONS.clear()
+    _chk_dead = session_sync.main(["check"])
+check("session_sync check: alive -> 0, expired -> 1, never a login", _chk_alive == 0 and _chk_dead == 1 and LOGIN_POSTS["n"] == _p0,
+      (_chk_alive, _chk_dead, LOGIN_POSTS))
+for _k in (common.NO_PASSWORD_ENV, session_sync.IMPORT_ENV, "STATE_PASSPHRASE"):
+    os.environ.pop(_k, None)
+session_sync.DEFAULT_ENC = _dflt
+session_sync.IMPORT_RECORD.unlink(missing_ok=True)
+common.BIDNET_LAST_LOGIN_FILE.unlink(missing_ok=True)
 srv.shutdown()
 
 # ---------------------------------------------------------------- part 3: BidNet confirmation code from the mailbox

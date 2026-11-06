@@ -46,6 +46,18 @@ BIDNET_COOLDOWN_H = 2
 BIDNET_LAST_LOGIN_FILE = STATE_HOME / "bidnet_last_login"
 BIDNET_LOGIN_GAP_H = 3.0
 RUN_LOCK = STATE_HOME / "bidwatch.lock"  # one scan at a time on a machine
+# No-password (reuse-only) mode, 2026-11-06: BidNet challenged 2 of 6 fresh logins from the cloud and a session idles out
+# in under ~50 min while the container sleeps, so the cloud scanner stops logging in. Luke's Mac (residential IP, always
+# on) logs in and keeps the session warm (mac_session_feeder.py) and ships the storage state encrypted
+# (session_sync.py); with this env var set the scanner only ever REUSES that session. An expired one is a deliberate
+# skip (rows carried forward, no /fail ping, no cool-down), never a password submission.
+NO_PASSWORD_ENV = "BIDWATCH_BIDNET_NO_PASSWORD"
+NO_PASSWORD_NOTE = "no-password mode: saved session expired; waiting for a synced session"
+
+
+def bidnet_no_password() -> bool:
+    """True when BIDWATCH_BIDNET_NO_PASSWORD is 1/true/yes: the BidNet login form is never submitted from this machine."""
+    return (os.environ.get(NO_PASSWORD_ENV) or "").strip().lower() in ("1", "true", "yes", "on")
 
 
 class LoginBlocked(RuntimeError):

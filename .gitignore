@@ -21,5 +21,12 @@ bids/_watch/samgov_budget.json
 # Actions failover: encrypted BidNet session restored from the cache, never committed
 state.enc
 
+# bidwatch session sync (docs/bidwatch.md, "Mac-fed BidNet session"): only the ENCRYPTED .enc may be committed, never a
+# decrypted storage state (cookies); ops/session/ holds nothing but .enc files
+ops/session/*
+!ops/session/*.enc
+*.storage-state.json
+bidnet-session.json
+
 # pricing and sub quotes stay off the public repo until the bid closes
 bids/*/private/

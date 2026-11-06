@@ -5,6 +5,8 @@ Each portal gets a PortalSession. It:
   * checks whether the session is still logged in (portal-specific check),
   * logs in again with env-var credentials when it is not, retrying with backoff (unless the portal's login
     defers itself: LoginDeferred, e.g. BidNet keeps fresh password logins hours apart; then login_deferred is set),
+  * in no-password mode (BIDWATCH_BIDNET_NO_PASSWORD=1, BidNet only) never calls the login function at all: the
+    session is one Luke's Mac logged in and synced over (session_sync.py); expired = login_deferred, not a failure,
   * saves the refreshed cookies after every successful login and at close,
   * on any failure, saves a screenshot + HTML to bids/_watch/debug/ so selectors can be fixed.
 """
@@ -14,7 +16,8 @@ import os
 from pathlib import Path
 from typing import Callable
 
-from .common import DEBUG_DIR, SESSION_DIR, LoginBlocked, LoginDeferred, iso, slug
+from .common import (DEBUG_DIR, NO_PASSWORD_NOTE, SESSION_DIR, LoginBlocked, LoginDeferred, bidnet_no_password, iso,
+                     slug)
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36 BrownBisonBidWatch/2.0"
 
@@ -72,6 +75,9 @@ class PortalSession:
         self.login_fn = login_fn
         self.is_logged_in_fn = is_logged_in_fn
         self.cred_names = cred_names
+        # BidNet in no-password mode: the saved session (fed from Luke's Mac) is reused or the portal is skipped; the
+        # login function is never called, whatever credentials the environment holds
+        self.reuse_only = slug(name) == "bidnet" and bidnet_no_password()
         self.logged_in = False
         self.login_deferred = False  # the last ensure_login() held a fresh login back on purpose (not a failure)
         self.login_note = "no login configured"
@@ -87,6 +93,17 @@ class PortalSession:
         """Reuse the saved session if it is still valid; otherwise log in again (with retries)."""
         self.login_deferred = False
         if not self.login_fn:
+            return False
+        if self.reuse_only:
+            try:
+                alive = bool(self.is_logged_in_fn and self.is_logged_in_fn(self.page))
+            except Exception:  # noqa: BLE001 - an unreadable page is not a reason to type a password here
+                alive = False
+            if alive:
+                self.logged_in, self.login_note = True, "session reused (no-password mode: synced session)"
+                return True
+            # same path as a deferred login: a deliberate skip, earlier rows carried forward, no debug dump, no cool-down
+            self.logged_in, self.login_deferred, self.login_note = False, True, NO_PASSWORD_NOTE
             return False
         creds = self.creds()
         if not creds:

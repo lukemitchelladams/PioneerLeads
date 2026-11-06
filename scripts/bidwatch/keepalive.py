@@ -8,7 +8,8 @@ A logged-in page load every ~15 minutes keeps the session alive with no login at
 Rules it keeps:
   * never submits the login form or a password: if the session has expired it only records that, and the
     next scan logs in, or skips BidNet until BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3) have passed since
-    the last fresh login (the status then says until when);
+    the last fresh login (the status then says until when); in no-password mode (BIDWATCH_BIDNET_NO_PASSWORD=1)
+    no scan logs in either: the status says it waits for a session synced from Luke's Mac (session_sync.py);
   * skips a tick while a scan holds the run lock, and never holds that lock itself (a held lock would make
     the hourly scan skip its whole run);
   * skips while BidNet is in a robot-check cool-down.
@@ -32,7 +33,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from scripts.bidwatch import bidnet  # noqa: E402
 from scripts.bidwatch.browser import Browser, PortalSession  # noqa: E402
-from scripts.bidwatch.common import RUN_LOCK, STATE_HOME, iso  # noqa: E402
+from scripts.bidwatch.common import RUN_LOCK, STATE_HOME, bidnet_no_password, iso  # noqa: E402
 
 PID_FILE = STATE_HOME / "keepalive.pid"
 STATUS_FILE = STATE_HOME / "keepalive.json"
@@ -65,28 +66,42 @@ def _status(state: str, **extra) -> dict:
     return st
 
 
+def session_alive() -> bool:
+    """One logged-in page load with the saved BidNet session and no login function (this process can never submit a
+    password): True when BidNet still shows us logged in. The refreshed cookies are saved then; that is the keep-alive.
+    Also the probe behind session_sync.py check."""
+    br = Browser()
+    try:
+        ses = PortalSession(br, "bidnet")
+        try:
+            alive = bidnet.is_logged_in(ses.page)
+            if alive:
+                ses.logged_in = True  # close() then saves the refreshed cookies
+            return alive
+        finally:
+            ses.close()
+    finally:
+        br.close()
+
+
+def expired_state() -> str:
+    """What happens next after an expired session, for the status line."""
+    if bidnet_no_password():
+        return "expired: no-password mode, no scan logs in; waiting for a session synced from the Mac (session_sync.py import)"
+    until = bidnet.login_deferred_until()
+    return f"expired: fresh login deferred until {until}" if until else "expired: next scan logs in"
+
+
 def check_once() -> dict:
     if bidnet.cooldown_until():
         return _status("skipped: robot-check cool-down", until=bidnet.cooldown_until())
     if _scan_running():
         return _status("skipped: scan running")
-    br = Browser()
     try:
-        ses = PortalSession(br, "bidnet")  # no login function: this process can never submit a password
-        try:
-            alive = bidnet.is_logged_in(ses.page)
-        except Exception as e:  # noqa: BLE001
-            return _status("error", note=" ".join(f"{type(e).__name__}: {e}".split())[:160])
-        if alive:
-            ses.logged_in = True  # close() then saves the refreshed cookies
-            st = _status("alive")
-        else:
-            until = bidnet.login_deferred_until()
-            st = _status(f"expired: fresh login deferred until {until}" if until else "expired: next scan logs in")
-        ses.close()
-        return st
-    finally:
-        br.close()
+        alive = session_alive()
+    except Exception as e:  # noqa: BLE001
+        return _status("error", note=" ".join(f"{type(e).__name__}: {e}".split())[:160])
+    return _status("alive") if alive else _status(expired_state())
 
 
 def running_pid() -> int | None:

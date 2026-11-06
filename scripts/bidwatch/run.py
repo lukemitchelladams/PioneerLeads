@@ -21,6 +21,9 @@ Every cycle:
      (and mid-cycle if a page bounces to a login screen). BidNet: a fresh password login only every
      BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3); inside that gap an expired session means BidNet is skipped
      like a robot-check cool-down (earlier rows carried forward, none closed), a deliberate skip, not a /fail.
+     With BIDWATCH_BIDNET_NO_PASSWORD=1 (the cloud, since 2026-11-06) no password is ever submitted: the session
+     Luke's Mac logs in and ships (session_sync.py; BIDWATCH_SESSION_IMPORT / --import-session PATH) is imported
+     before BidNet and reused, or BidNet is skipped the same deliberate way.
 Credentials: env vars only (see docs/bidwatch.md). Nothing secret is printed or committed.
 """
 from __future__ import annotations
@@ -41,7 +44,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk  # noqa: E402
+from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, session_sync  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
     iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
@@ -159,6 +162,11 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                 h = health["bidnet"]
                 ses = None
                 try:
+                    # a session Luke's Mac logged in and shipped (session_sync.py: BIDWATCH_SESSION_IMPORT, or the
+                    # default file in no-password mode) is installed first, so this scan reuses it, not its stale copy
+                    sync_note = session_sync.import_if_new()
+                    if sync_note:
+                        h["session_sync"] = sync_note
                     ses = PortalSession(br, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
                     ses.ensure_login()
                     h["logged_in"], h["login_note"] = ses.logged_in, ses.login_note
@@ -171,13 +179,16 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                     else:
                         rows, errs, totals = bidnet.collect_open(ses, keywords)
                     # the lists are public, but documents are members-only: if the session lapsed during the list
-                    # walk, log in again before the detail pass (the URL is no signal after a sign-on redirect)
-                    if ses.creds() and ses.logged_in and not bidnet._page_logged_in(ses.page):
+                    # walk, log in again before the detail pass (the URL is no signal after a sign-on redirect); in
+                    # no-password mode the re-check only re-reads the saved session and otherwise leaves BidNet logged out
+                    if (ses.creds() or ses.reuse_only) and ses.logged_in and not bidnet._page_logged_in(ses.page):
                         ses.logged_in = False
                         ses.ensure_login()
                         h["logged_in"] = ses.logged_in
-                        h["login_note"] = ses.login_note if ses.login_note == "session reused" \
+                        h["login_note"] = ses.login_note if ses.login_note.startswith("session reused") \
                             else f"{ses.login_note} (re-login mid-scan)"
+                    if sync_note:
+                        h["login_note"] += f"; {sync_note}"  # the health table says where this scan's session came from
                     h["errors"] += errs
                     h["site_totals"] = {k: v for k, v in totals.items() if k.startswith("statewide")}
                     h["complete"] = bool(totals.get("_complete"))
@@ -806,9 +817,14 @@ def main() -> int:
                     help="failover mode: do nothing unless origin's health.json is older than MIN minutes")
     ap.add_argument("--start-in", type=int, default=0,
                     help="minutes to wait before the first scan (space a restarted loop away from the hourly worker)")
+    ap.add_argument("--import-session", metavar="PATH", default=None,
+                    help="encrypted BidNet session from Luke's Mac (session_sync.py export) to install before BidNet; "
+                         f"same as {session_sync.IMPORT_ENV}=PATH")
     a = ap.parse_args()
     sources = [s for s in a.sources.split(",") if s in KNOWN_SOURCES]
     load_env_file()
+    if a.import_session:
+        os.environ[session_sync.IMPORT_ENV] = a.import_session
     if "dibbs" in sources and not os.environ.get("BIDWATCH_ALLOW_DIBBS"):
         # DIBBS FAQ #45 (verified 2026-10-20): "VPNs, proxy servers, TOR nodes, cloud hosting services, and other
         # similar services or devices, mask the user's IP address and are, therefore, prohibited." DIBBS is read

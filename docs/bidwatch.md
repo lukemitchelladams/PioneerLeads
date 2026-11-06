@@ -46,6 +46,85 @@ rows are carried forward and none closed, and the run is not pinged as failed.
 A failed login or a page that parses to nothing saves a screenshot + HTML to `bids/_watch/debug/`
 (gitignored) so the selectors can be fixed from the real page.
 
+### Mac-fed BidNet session (no-password mode, 2026-11-06)
+BidNet challenged 2 of 6 fresh password logins from the cloud with its robot check, and a session idles out in under
+~50 minutes while the cloud container sleeps between hourly scans, so each good login bought one scan. The fix: the
+cloud scanner never logs in. Luke's Mac (residential IP, always on) logs in, keeps the session warm every 15 minutes
+(`scripts/bidwatch/mac_session_feeder.py`) and ships its Playwright storage state encrypted
+(`scripts/bidwatch/session_sync.py`); the cloud, started with `BIDWATCH_BIDNET_NO_PASSWORD=1`, only ever reuses it.
+
+Encryption: `openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt` with `STATE_PASSPHRASE`, the same scheme and secret
+as the Actions failover's `state.enc`, so one file works for the Mac, the cloud and the failover. The passphrase lives
+in the environment or `~/.brownbison/env` on each machine, never in the repo or in chat. The plaintext session never
+enters the repo (`.gitignore` keeps everything but `.enc` out of `ops/session/`); the `.enc` may be committed to the
+PRIVATE branch or copied over scp.
+
+**On Luke's Mac (once; it is the only machine that logs in):**
+
+    cd ~/PioneerLeads                                    # the checkout the Mac already runs from
+    python3 -m pip install -r requirements.txt && python3 -m playwright install chromium
+    mkdir -p -m 700 ~/.brownbison && touch ~/.brownbison/env && chmod 600 ~/.brownbison/env
+    # add to ~/.brownbison/env (one KEY=VALUE per line; type the values there, never in chat):
+    #   BIDNET_USER=luke@brownbisonco.com
+    #   BIDNET_PASS=...
+    #   STATE_PASSPHRASE=...            a long random phrase; the SAME value goes in the cloud environment
+    #   BIDNET_CODE_IMAP_PASS=...       optional Google app password: the feeder then reads BidNet's emailed code itself
+    #   BIDWATCH_SESSION_PUSH_CMD=git add ops/session/bidnet-session.enc && git commit -qm "bidnet session" && git pull -q --rebase && git push -q
+    python3 scripts/bidwatch/mac_session_feeder.py --once   # first login; if BidNet asks for its emailed code and no
+                                                            # app password is set: python3 scripts/bidwatch/set_code.py <code>
+                                                            # in a second terminal while the feeder waits (5 min)
+    python3 scripts/bidwatch/session_sync.py status         # cookies, age, longest-lived auth cookie, last import
+
+Then keep it ticking every 15 minutes. Quick way: `nohup python3 scripts/bidwatch/mac_session_feeder.py --every 900
+>> ~/.brownbison/session_feeder.log 2>&1 &`. Durable way (survives a reboot and a closed terminal), a launchd agent
+`~/Library/LaunchAgents/com.brownbison.session-feeder.plist`, then `launchctl load` it:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0"><dict>
+      <key>Label</key><string>com.brownbison.session-feeder</string>
+      <key>ProgramArguments</key><array><string>/usr/bin/python3</string>
+        <string>/Users/luke/PioneerLeads/scripts/bidwatch/mac_session_feeder.py</string><string>--every</string><string>900</string></array>
+      <key>WorkingDirectory</key><string>/Users/luke/PioneerLeads</string>
+      <key>RunAtLoad</key><true/><key>KeepAlive</key><true/>
+      <key>StandardOutPath</key><string>/Users/luke/.brownbison/session_feeder.log</string>
+      <key>StandardErrorPath</key><string>/Users/luke/.brownbison/session_feeder.log</string>
+    </dict></plist>
+
+Each tick: a logged-in page load with the saved session (the keep-alive, never a password); only when BidNet no longer
+recognises it, one normal login (emailed code via the mailbox or `set_code.py`; a robot check starts the usual 2 h
+cool-down and the tick ends; the 3 h fresh-login gap applies); then `session_sync.py export` to
+`ops/session/bidnet-session.enc` and the push command (`$BIDWATCH_SESSION_FILE` names the file). A commit every 15
+minutes is a few KB and rebases cleanly against the hourly scan pushes. Status: `~/.brownbison/session_feeder.json`.
+macOS ships LibreSSL as `openssl`; if export fails with `unknown option` on `-pbkdf2`, `brew install openssl@3` and set
+`BIDWATCH_OPENSSL=$(brew --prefix openssl@3)/bin/openssl` in `~/.brownbison/env`.
+
+**In the cloud environment (Network access / Environment variables screen):**
+
+    BIDWATCH_BIDNET_NO_PASSWORD=1      # the scanner never submits the login form, whatever BIDNET_PASS says
+    STATE_PASSPHRASE=<same as the Mac> # decrypts the shipped session
+
+The hourly scan pulls the branch first (`run.py --push` does, via `git_sync`; a fresh container clones it, which is
+enough), then `run.py` calls `session_sync.import_if_new()` before BidNet: `BIDWATCH_SESSION_IMPORT=PATH` or
+`--import-session PATH` names the file; in no-password mode with neither set, `ops/session/bidnet-session.enc` is used
+when it exists. The decrypted session lands at `~/.brownbison/sessions/bidnet.json` (mode 600, outside the repo), and
+`~/.brownbison/session_import.json` keeps the sha256 of the last file installed so the same file is not re-installed
+over cookies the scan has since refreshed. By hand: `python3 scripts/bidwatch/session_sync.py import
+ops/session/bidnet-session.enc`; `session_sync.py check` opens a browser with the saved session and prints alive or
+expired without ever logging in.
+
+What the health table (REPORT.md, health.json) then says:
+- good hour: `session reused (no-password mode: synced session); synced session imported: 14 cookies, file dated <UTC>`
+  (or `... synced session unchanged since its import at <UTC>` when the Mac's last file is still the live one);
+- the Mac stopped shipping: `no-password mode: saved session expired; waiting for a synced session; synced session
+  unchanged since ...`. BidNet is then skipped exactly like a deferred login: earlier rows carried forward, none
+  closed, exit 0, no `/fail` ping, no cool-down, and the headline reads `BLIND: bidnet (login deferred on purpose)`.
+  The keepalive's status says `expired: no-password mode ... waiting for a session synced from the Mac`;
+- a bad file (wrong passphrase, damaged, not a session): `synced session REFUSED (...); the saved session is untouched`.
+
+The cloud's copy shares BidNet's server-side session with the Mac, so a file an hour old still works as long as the
+Mac keeps ticking; when the Mac sleeps or stops, the cloud goes blind on BidNet within ~50 minutes and says so.
+
 ### New-device confirmation code (BidNet)
 BidNet emails "Your BidNet Direct confirmation code" (noreply@bidnet.com, 6 digits) after a password login
 from a device it has not seen (Luke's inbox got two on 2026-10-19), and shows a code prompt. Every password
@@ -85,7 +164,8 @@ dies with its container; the hourly WORKER scheduled task is the safety net that
 
 ## Check it
     python3 scripts/bidwatch/run.py --health      # reachability + which credentials are set (never prints values)
-    python3 tests/test_bidwatch.py                # 57 offline tests: real-page fixtures + a fake portal with login/expiry
+    python3 tests/test_bidwatch.py                # 196 offline tests: real-page fixtures + a fake portal with login/expiry,
+                                                  # no-password mode and the session sync (2026-11-06)
 
 ## DIBBS: only from Luke's own computer
 DIBBS FAQ #45 (verified 2026-10-20): "the DIBBS and cFolders User Agreements prohibits the use of any service or device
