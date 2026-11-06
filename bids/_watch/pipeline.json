@@ -1210,7 +1210,7 @@
       "trade": "Water treatment / boiler-cooling service",
       "due": "2026-11-04T14:00:00-07:00",
       "portal": "BidNet",
-      "decision": "GO",
+      "decision": "DEAD",
       "decision_note": "2026-10-28 20:22Z: promoted from EVALUATE after reading the full package (10 docs downloaded by HQ). Addendum 1 A1: 'Field service required monthly... This will be an all-in-one agreement.' Quantities stated (rule 9 OK). Recommended pre-proposal meeting 10/13 passed, not mandatory; no more site visits. H2 Global first (Luke's rule). RISK: 'Bids will only be considered from Consultants which have been engaged in the business of performing the Work... minimum of three (3) years' - Brown Bison relies on H2's record as named subconsultant; Luke decides. | 20:50Z verification: Addendum 1 conflicts on visit scope (A4 all six facilities x12 vs A28 monthly at TSB/CUP/RBD only); Pollution Liability $1M marked Required in Attachment A; offer valid 90 days; 4 one-year renewals with pass-through-only price adjustments; degreed technical staff and 3 references required.",
       "prebid": "2026-10-13T14:00:00-06:00",
       "prebid_mandatory": false,
@@ -1220,7 +1220,8 @@
       "folder": "bids/elpaso-26-074-water-treatment",
       "contact": "El Paso County Contracts and Procurement; questions only via Rocky Mountain E-Purchasing (closed 10/21)",
       "due_source": "RFP: 'Responses will be received until 2:00 P.M., MST, Wednesday, November 4, 2026'",
-      "doc_gaps": "none: all 10 BidNet files downloaded"
+      "doc_gaps": "none: all 10 BidNet files downloaded",
+      "notes": "2026-11-06 HQ: not submitted by 11/04 14:00 (no price in time); row closed."
     },
     {
       "id": "castlerock-103-2026-chemicals",
