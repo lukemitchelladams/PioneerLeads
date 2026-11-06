@@ -1858,6 +1858,18 @@
    "verdict": "NO",
    "why": "Not a profile match; financial services.",
    "at": "2026-11-06T06:30:00Z"
+  },
+  "bidnet:0000442652": {
+   "name": "Telluride Conference Center 2026 management and operations RFP",
+   "verdict": "NO",
+   "why": "Not a profile match; venue management and operations, not our trades.",
+   "at": "2026-11-06T09:25:00Z"
+  },
+  "bidnet:2722043702": {
+   "name": "Reclamation NCAO low-bed trailer (FSC 23)",
+   "verdict": "NO",
+   "why": "Not a profile match; vehicle/trailer purchase in Northern California.",
+   "at": "2026-11-06T09:25:00Z"
   }
  },
  "watched": {
@@ -2043,6 +2055,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T08:25:00Z",
+ "last_hourly_check": "2026-11-06T09:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
