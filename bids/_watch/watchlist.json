@@ -553,6 +553,14 @@
       "match": "1240LP27Q0008",
       "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
       "sam_notice_id": "1d1b8d72c87844289d3efb4990073ded"
+    },
+    {
+      "name": "Pueblo Urban Renewal MSA Landscape Enhancement & Maintenance (EVALUATE, Alex; MANDATORY walk 11/13 09:00 Pueblo)",
+      "source": "bidnet",
+      "id": "0000442783",
+      "match": "0000442783",
+      "folder": "bids/pueblo-ura-msa-landscape",
+      "govtribe_ids": []
     }
   ]
 }
