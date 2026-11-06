@@ -868,3 +868,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Scan 08:38Z: BidNet LOGGED IN (fresh login 08:38Z, 606/74). SAM 108, VSS 64/2. No NEW matches. 2 non-matching adds ledgered NO (Telluride conference center ops; Reclamation low-bed trailer). Inbox quiet; still no Parker numbers from Brad Orgill (Luke's 09:00 MT cutoff is about 6.5 h away).
 - Dashboard blobs now: bids d9c744bdb1093c0f95ab6385129ddd21 (v129, sha c17882fd8fc7), events 28557bd9a9e6a4e5f26a1544b18c194d (v131, sha 229da45422f0), sources ed815eb489568dffb9b40b82e06a08e4 (v116, sha 93c54c4d387c), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
 - 2026-11-06 09:36Z hourly (HQ): BidNet deferred (next fresh login 11:38Z), rows carried 606/74; SAM 108, VSS 64/2; no NEW; inbox quiet.
+
+### 2026-11-06 10:21Z hourly (WORKER, read-only)
+- Scan 09:36Z: BidNet deferred (next fresh login after 11:38Z; data from 08:38Z). SAM 108, VSS 64/2; no NEW, no adds or removals. Inbox quiet; still no Parker numbers from Brad Orgill.
+- Dashboard blobs now: bids 6966a611426fb6019640da43afb2897d (v130, sha 313a0b516638), events ffc12bc6aac75c5afdfdd6e2d1373678 (v132, sha 84efdd351dce), sources 8c0215ed358c4b1810e11772c7b5fc1b (v117, sha 388c55fc352f), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
