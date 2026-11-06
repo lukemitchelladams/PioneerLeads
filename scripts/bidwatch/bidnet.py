@@ -6,6 +6,9 @@ What it collects every run
      pre-bid / site-walk text (mandatory or not, quoted), document list.
   3. Watchlist bids: diff the document list and dates against last run -> ADDENDUM / DATE CHANGE.
   4. When logged in, downloads documents for watched bids into bids/_watch/downloads/bidnet/<id>/.
+  5. Watchlist bids, logged in: the detail page's "Communication" and "Q & A" tabs (buyer notices such as
+     "the walkthrough time has changed from 9 am to 10:30 am", posted 2026-11-05 on 0000440322 with no addendum;
+     question deadline, answered questions). run.py diffs them against last run -> NEW COMMUNICATION / NEW Q&A.
 
 Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
 once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
@@ -740,10 +743,132 @@ def parse_docs_tab(html: str, url: str = "") -> dict:
     return {"documents": docs, "items_text": items}
 
 
+# The detail page's other tabs (verified 2026-11-06 on 0000440322, logged in): a[href*='innerTabId=communication']
+# and a[href*='innerTabId=questions-answers'] (plus a hidden mobile <option data-ajax-url=
+# "/public/solicitations/<numeric id>/abstract/communication">). Clicking a tab renders its text in ~4-5 s.
+# A buyer's notice posted there carries no addendum and no document, so the Documents diff never saw it:
+# "Communication No.1 - 11/05/2026 03:48 PM MST  Please note that the walkthrough time has changed from 9 am to 10:30 am."
+COMM_TAB_SEL = "a[href*='innerTabId=communication']"
+QA_TAB_SEL = "a[href*='innerTabId=questions-answers']"
+# what each tab shows once rendered (an empty tab says "No results match your criteria."); waited for after the click
+COMM_READY_SEL = "text=/Communication No\\.|No results match/i"
+QA_READY_SEL = "text=/Question Acceptance Deadline|No results match/i"
+TAB_WAIT_MS = 8000
+COMM_HDR_RX = re.compile(r"Communication No\.?\s*(\d+)\s*[-–—]\s*"
+                         r"(\d{1,2}/\d{1,2}/\d{4}(?:\s+\d{1,2}:\d{2}\s*[AP]M(?:\s+[A-Z]{2,5})?)?)", re.I)
+NO_RESULTS_RX = re.compile(r"No results match your criteria", re.I)
+# page chrome that follows the last entry of a tab in the flattened text: a communication's text stops there
+TAB_END_RX = re.compile(r"\n(?:Print Options|Terms of Use|Privacy Policy|Copyright|©)", re.I)
+QA_LABEL_RX = re.compile(r"\b(Question Date|Answer Date|Question(?!\s+Acceptance)|Answer)\b\s*:?\s*")
+COMM_TEXT_MAX = 2000
+
+
+def _block_text(html: str) -> str:
+    """Visible text with one line per block element (the tab's heading and body are separate blocks) and
+    single spaces inside a line, so a parser can tell 'Communication No.1 - <date>' from the text under it."""
+    soup = BeautifulSoup(html, "lxml")
+    for t in soup(["script", "style", "noscript", "option"]):
+        t.decompose()
+    lines = (" ".join(ln.split()) for ln in soup.get_text("\n").splitlines())
+    return "\n".join(ln for ln in lines if ln)
+
+
+def parse_communications(html: str) -> list[dict]:
+    """The logged-in 'Communication' tab: one entry per "Communication No.<n> - <m/d/Y h:mm AM TZ>" heading, its text
+    running to the next heading or the page chrome. Returns [{no, date, text}] in page order; [] when the tab is empty
+    ("No results match your criteria.") or did not render. `date` is kept as the portal prints it (with the time zone)."""
+    text = _block_text(html)
+    heads = list(COMM_HDR_RX.finditer(text))
+    out = []
+    for i, m in enumerate(heads):
+        body = text[m.end(): heads[i + 1].start() if i + 1 < len(heads) else len(text)]
+        end = TAB_END_RX.search(body)
+        body = " ".join((body[:end.start()] if end else body).split())
+        out.append({"no": m.group(1), "date": " ".join(m.group(2).split()), "text": body[:COMM_TEXT_MAX]})
+    return out
+
+
+def parse_qa(html: str) -> dict:
+    """The logged-in 'Q & A' tab: {questions_deadline: iso | None, items: [{question, answer, question_date, answer_date}]}.
+    The tab prints "Question Acceptance Deadline <m/d/Y h:mm AM TZ>" and "Closing Date ..." above the list; the list is
+    either "No results match your criteria." or one Question / Question Date / Answer / Answer Date group per question
+    (a table with those column headings, or labelled fields in that order; both shapes are read). An unanswered
+    question has answer None."""
+    soup = BeautifulSoup(html, "lxml")
+    for t in soup(["script", "style", "noscript", "option"]):
+        t.decompose()
+    flat = " ".join(soup.get_text(" ").split())
+    deadline = _labeled_date(flat, r"Question Acceptance Deadline")
+    return {"questions_deadline": deadline, "items": _qa_table(soup) or _qa_labelled(_block_text(html))}
+
+
+def _qa_item(f: dict) -> dict:
+    return {"question": f.get("question") or None, "answer": f.get("answer") or None,
+            "question_date": parse_date(f.get("question date") or ""), "answer_date": parse_date(f.get("answer date") or "")}
+
+
+def _qa_table(soup) -> list[dict]:
+    """Shape 1: a table whose heading cells name the columns (Question, Question Date, Answer, Answer Date)."""
+    for table in soup.find_all("table"):
+        cols = [_txt(c).lower() for c in table.find_all("th")]
+        if "question" not in cols:
+            continue
+        out = []
+        for tr in table.find_all("tr"):
+            cells = tr.find_all("td")
+            f = {cols[i]: _txt(c) for i, c in enumerate(cells) if i < len(cols)}
+            if f.get("question"):
+                out.append(_qa_item(f))
+        if out:
+            return out
+    return []
+
+
+def _qa_labelled(text: str) -> list[dict]:
+    """Shape 2: labelled fields in page order ("Question <text> Question Date <date> Answer <text> Answer Date <date>");
+    a label that the current group already has starts the next question. Read from the tab's own heading on, so
+    an 'Answer' in the bid's description is not taken for a label."""
+    start = text.find("Question Acceptance Deadline")
+    labels = list(QA_LABEL_RX.finditer(text, max(start, 0)))
+    out, cur = [], {}
+    for i, m in enumerate(labels):
+        lab = m.group(1).lower()
+        val = text[m.end(): labels[i + 1].start() if i + 1 < len(labels) else len(text)]
+        val = " ".join((TAB_END_RX.split(val, 1)[0]).split())
+        if lab in cur:
+            if cur.get("question"):
+                out.append(_qa_item(cur))
+            cur = {}
+        cur[lab] = val
+    if cur.get("question"):
+        out.append(_qa_item(cur))
+    return out
+
+
+def _read_tab(session, tab_sel: str, ready_sel: str, tag: str) -> str | None:
+    """Click a detail-page tab and return the page HTML once the tab rendered (None when the page has no such tab).
+    A robot check served instead of the tab stops the detail pass like one on the page itself."""
+    page = session.page
+    if not page.locator(tab_sel).count():
+        return None
+    page.locator(tab_sel).first.click()
+    try:  # the tab arrives by XHR (~4-5 s); a tab that never renders is read as it is and tried again next scan
+        page.wait_for_selector(ready_sel, timeout=TAB_WAIT_MS)
+    except Exception:  # noqa: BLE001
+        pass
+    page.wait_for_timeout(800)
+    html = _content(page)
+    if BOT_RX.search(html) and not total_count(html):
+        start_cooldown()
+        raise Challenged(f"BidNet robot check on the {tag} tab: detail pass stopped, cool-down started")
+    return html
+
+
 def enrich(session, bid: dict) -> dict:
     """Detail page. Public visitors see only location + publication/closing date (and closing time);
     issuing org, solicitation #, description, documents and buyer contact are 'Registered members only'.
-    Logged in, the documents live on the 'Documents & Items' tab, which loads only when clicked."""
+    Logged in, the documents live on the 'Documents & Items' tab, which loads only when clicked. A WATCHED bid
+    (bid["watched"], set by run.py) also gets its Communication and Q & A tabs read: d["communications"], d["qa"]."""
     page = session.page
     page.goto(bid["url"], wait_until="domcontentloaded")
     page.wait_for_timeout(1200)
@@ -770,6 +895,27 @@ def enrich(session, bid: dict) -> dict:
                     d["items_text"] = t["items_text"]
         except Exception:  # noqa: BLE001 - keep the main-tab facts even if the docs tab misbehaves
             session.debug_dump("docs-tab")
+    if session.logged_in and bid.get("watched"):
+        # only watched bids: two more tab loads per bid would double the detail pass for every match
+        try:
+            t = _read_tab(session, COMM_TAB_SEL, COMM_READY_SEL, "Communication")
+            if t is not None:
+                d["communications"] = parse_communications(t)  # [] is dropped below: nothing known, nothing erased
+        except Challenged:
+            raise
+        except Exception:  # noqa: BLE001 - keep the main-tab facts even if the tab misbehaves
+            session.debug_dump("communication-tab")
+        try:
+            t = _read_tab(session, QA_TAB_SEL, QA_READY_SEL, "Q & A")
+            q = parse_qa(t) if t is not None else None
+            # stored only when the tab rendered (a deadline, a question, or its empty-list message): a tab that did
+            # not load must not replace last scan's answers with nothing, or they come back as NEW next time
+            if q and (q["questions_deadline"] or q["items"] or NO_RESULTS_RX.search(visible_text(t))):
+                d["qa"] = q
+        except Challenged:
+            raise
+        except Exception:  # noqa: BLE001
+            session.debug_dump("qa-tab")
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}
 
 

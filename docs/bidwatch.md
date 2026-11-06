@@ -17,6 +17,17 @@ Each scan writes:
 - `bids/_watch/open_bids.json` (everything seen), `bids/_watch/health.json`.
 - Watched-bid documents to `bids/_watch/downloads/<source>/<id>/` when logged in.
 
+### BidNet Communication and Q & A tabs (watched bids)
+A buyer can post a notice on a solicitation's **Communication** tab with no addendum and no document (2026-11-05
+15:48 MST on 0000440322: "the walkthrough time has changed from 9 am to 10:30 am"), so the document diff never
+sees it. For every watched bid, a logged-in scan therefore also clicks the detail page's Communication and Q & A
+tabs (`a[href*='innerTabId=communication']`, `a[href*='innerTabId=questions-answers']`) and stores
+`communications` (number, date as printed, text) and `qa` (question acceptance deadline, each question with its
+answer and dates) on the row in `open_bids.json`. The report's "Changes on matching / watched bids" section then
+carries `NEW COMMUNICATION No.<n> <date>: "<text>"`, `NEW Q&A: <n> answered` (a question is news again when its
+answer arrives) and `questions deadline <date>`, each once, the first scan that sees it. A tab that fails to load,
+a blind scan or a robot check keeps last scan's entries, like documents, so nothing comes back as NEW twice.
+
 ## Staying logged in
 Sessions (cookies) are saved per portal in `~/.brownbison/sessions/` (outside the repo, mode 600). Every
 scan first checks whether the saved session still works; if it timed out, it logs in again with the env

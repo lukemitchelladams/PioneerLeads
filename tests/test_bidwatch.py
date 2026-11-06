@@ -149,6 +149,38 @@ check("logged-in Documents tab: attachment links (real markup, Littleton 2026-10
       and _t["documents"][0]["url"].endswith("/9747910258/attachment-download"), _t)
 check("logged-in Documents tab: RMEPS pricing items captured", (_t["items_text"] or "").startswith("Items No Description")
       and "Hourly Rate" in _t["items_text"], _t)
+# Communication / Q & A tabs (text as rendered on 0000440322, 2026-11-06): the walkthrough-time notice lived only there
+_comm = ("<h1>Bid</h1><select hidden><option data-ajax-url='/public/solicitations/1/abstract/communication'>Communication</option></select>"
+         "<div id='communication'><h3>Communication No.1 - 11/05/2026 03:48 PM MST</h3><p>Please note that the walkthrough time has "
+         "changed from 9 am to 10:30 am. If you have any questions please email shickman@cvprd.com.</p>"
+         "<h3>Communication No.2 - 11/06/2026 09:00 AM MST</h3><div>Addendum <b>2</b> posted.</div></div>"
+         "<footer><p>Print Options</p><p>Terms of Use</p><p>© 2026 BidNet</p></footer>")
+_cm = bidnet.parse_communications(_comm)
+check("Communication tab: number, date as printed, text up to the next entry or the page chrome",
+      _cm == [{"no": "1", "date": "11/05/2026 03:48 PM MST", "text": "Please note that the walkthrough time has changed from 9 am to "
+               "10:30 am. If you have any questions please email shickman@cvprd.com."},
+              {"no": "2", "date": "11/06/2026 09:00 AM MST", "text": "Addendum 2 posted."}], _cm)
+check("Communication tab: empty tab ('No results match your criteria.') -> []",
+      bidnet.parse_communications("<h1>Bid</h1><p>No results match your criteria.</p>") == [])
+_qa0 = bidnet.parse_qa("<div class='mets-field'><span>Question Acceptance Deadline</span><div>11/17/2026 12:00 AM MST</div></div>"
+                       "<div class='mets-field'><span>Closing Date</span><div>12/08/2026 02:00 PM MST</div></div>"
+                       "<p>No results match your criteria.</p><footer>Print Options</footer>")
+check("Q & A tab: question deadline read, no questions yet", _qa0 == {"questions_deadline": "2026-11-17", "items": []}, _qa0)
+_qa1 = bidnet.parse_qa("<p>Description: Answer the RFP by email.</p><span>Question Acceptance Deadline</span><div>11/17/2026 12:00 AM MST</div>"
+                       "<span>Closing Date</span><div>12/08/2026 02:00 PM MST</div>"
+                       "<div><span>Question</span><div>Is the walkthrough mandatory?</div><span>Question Date</span><div>11/06/2026 08:00 AM MST</div>"
+                       "<span>Answer</span><div>Yes, attendance is mandatory.</div><span>Answer Date</span><div>11/06/2026 01:00 PM MST</div></div>"
+                       "<div><span>Question</span><div>Can we bid on part?</div><span>Question Date</span><div>11/07/2026 08:00 AM MST</div>"
+                       "<span>Answer</span><div></div><span>Answer Date</span><div></div></div><footer>Print Options</footer>")
+check("Q & A tab: labelled rows -> answered + unanswered questions, dates ISO, 'Answer' in the description ignored",
+      _qa1["items"] == [{"question": "Is the walkthrough mandatory?", "answer": "Yes, attendance is mandatory.",
+                         "question_date": "2026-11-06", "answer_date": "2026-11-06"},
+                        {"question": "Can we bid on part?", "answer": None, "question_date": "2026-11-07", "answer_date": None}], _qa1)
+_qa2 = bidnet.parse_qa("<p>Question Acceptance Deadline 11/17/2026 12:00 AM MST</p><table><tr><th>Question</th><th>Question Date</th>"
+                       "<th>Answer</th><th>Answer Date</th></tr><tr><td>Is the walkthrough mandatory?</td><td>11/06/2026</td><td>Yes.</td>"
+                       "<td>11/06/2026</td></tr></table>")
+check("Q & A tab: table shape read by its column headings", _qa2["items"] == [{"question": "Is the walkthrough mandatory?", "answer": "Yes.",
+      "question_date": "2026-11-06", "answer_date": "2026-11-06"}], _qa2)
 _li = ("<table><tr class='mets-table-row'><td><a class='solicitation-link mets-command-link' id='444202844454' "
        "href='/private/supplier/interception/open-notice/444202844454?target=view'>Housing Action Plan</a>"
        "<span class='sol-region-item'>Colorado</span><span class='sol-closing-date'><span class='date-value'>11/10/2026</span></span>"
@@ -186,6 +218,23 @@ check("RSVP deadline read from the note and shown in the walk column",
       _ev_rs)
 check("BidNet events block changed by an addendum ('Attendance A - Previous Addendum') still parses: not mandatory",
       _ev_ad and _ev_ad["source"] == "bidnet events" and _ev_ad["mandatory"] is False and _ev_ad["date"] == "2026-10-13", _ev_ad)
+# the report's change lines for the two tabs: each entry once, the first scan that sees it; an answer makes its question news again
+_c1 = {"no": "1", "date": "11/05/2026 03:48 PM MST", "text": "Please note that the walkthrough time has changed from 9 am to 10:30 am."}
+_c2 = {"no": "2", "date": "11/06/2026 09:00 AM MST", "text": "Addendum 2 posted."}
+_q = {"question": "Is the walkthrough mandatory?", "answer": None, "question_date": "2026-11-06", "answer_date": None}
+_qa_a = {"questions_deadline": "2026-11-17", "items": [_q]}
+_qa_b = {"questions_deadline": "2026-11-17", "items": [{**_q, "answer": "Yes.", "answer_date": "2026-11-06"}]}
+_d1 = _run_early._diff({"title": "x"}, {"title": "x", "communications": [_c1], "qa": _qa_a})
+check("first sight: NEW COMMUNICATION with its number, date and text; the question deadline; the unanswered question",
+      _d1 == ['NEW COMMUNICATION No.1 11/05/2026 03:48 PM MST: "Please note that the walkthrough time has changed from 9 am to 10:30 am."',
+              'NEW Q&A: 0 answered, 1 awaiting answer: "Is the walkthrough mandatory?"', "questions deadline 2026-11-17"], _d1)
+check("unchanged tabs: no line", _run_early._diff({"communications": [_c1], "qa": _qa_a}, {"communications": [_c1], "qa": _qa_a}) == [])
+_d2 = _run_early._diff({"communications": [_c1], "qa": _qa_a}, {"communications": [_c1, _c2], "qa": _qa_b})
+check("a second notice and an answer: only the new entry and the newly answered question are reported",
+      _d2 == ['NEW COMMUNICATION No.2 11/06/2026 09:00 AM MST: "Addendum 2 posted."', 'NEW Q&A: 1 answered: "Yes."'], _d2)
+check("a changed question deadline is reported; a blind read (no tabs) reports nothing",
+      _run_early._diff({"qa": _qa_a}, {"qa": {**_qa_a, "questions_deadline": "2026-11-20"}}) == ["questions deadline 2026-11-20"]
+      and _run_early._diff({"communications": [_c1], "qa": _qa_a}, {"title": "x"}) == [])
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -266,8 +315,12 @@ KW_HITS = {"n": 0}
 LOGIN_POSTS = {"n": 0}  # every POST to the login endpoint, accepted or not (= a password sent)
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
-HITS2 = {"home": 0, "list": 0, "detail": 0}
+HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0}
 ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
+# the Communication tab text as BidNet rendered it on 0000440322 (2026-11-05 15:48 MST): the notice that was missed
+COMM_TEXT = ("Please note that the walkthrough time has changed from 9 am to 10:30 am. If you have any questions please "
+             "email shickman@cvprd.com.")
+NO_RESULTS = "<p class='mets-no-results'>No results match your criteria.</p>"
 
 
 def _ahead(days: int) -> str:
@@ -341,7 +394,35 @@ class H(http.server.BaseHTTPRequestHandler):
                 return self._send(ROBOT)
             docs = "<a href='/dl/rfq.pdf'>RFQ.pdf</a>" + ("<a href='/dl/addendum1.pdf'>Addendum 1.pdf</a>" if os.environ.get("FAKE_ADDENDUM") else "") \
                 + ("<a href='/dl/missing.pdf'>Missing.pdf</a>" if os.environ.get("FAKE_MISSING_DOC") else "")
-            return self._send(f"<h1>Bid</h1><div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>{docs}")
+            # the real page's tab strip (hrefs carry innerTabId=...; here each tab is its own page) plus the hidden
+            # mobile <select> whose options name the same tabs
+            tabs = ("<ul class='tabs'><li><a href='?innerTabId=communication'>Communication</a></li>"
+                    "<li><a href='?innerTabId=questions-answers'>Q &amp; A</a></li></ul>"
+                    "<select hidden><option data-ajax-url='/public/solicitations/9745843859/abstract/communication'>Communication</option></select>")
+            pane = ""
+            if "innerTabId=" in p:
+                if os.environ.get("FAKE_ROBOT_TAB"):
+                    return self._send(ROBOT)
+                if os.environ.get("FAKE_TAB_DOWN"):
+                    return self._send("<h1>Service unavailable</h1>", 503)
+            if "innerTabId=communication" in p:
+                HITS2["comm"] += 1
+                n = int(os.environ.get("FAKE_COMM") or 0)
+                pane = "<div id='communication'>" + ("".join(
+                    f"<h3>Communication No.{i} - 11/0{4 + i}/2026 03:48 PM MST</h3><p>{COMM_TEXT if i == 1 else f'Addendum {i} posted.'}</p>"
+                    for i in range(1, n + 1)) or NO_RESULTS) + "</div>"
+            elif "innerTabId=questions-answers" in p:
+                HITS2["qa"] += 1
+                rows = ("<div class='qa-row'><span class='mets-field-label'>Question</span><div>Is the walkthrough mandatory?</div>"
+                        "<span class='mets-field-label'>Question Date</span><div>11/06/2026 08:00 AM MST</div>"
+                        "<span class='mets-field-label'>Answer</span><div>Yes, attendance is mandatory.</div>"
+                        "<span class='mets-field-label'>Answer Date</span><div>11/06/2026 01:00 PM MST</div></div>"
+                        if os.environ.get("FAKE_QA") else NO_RESULTS)
+                pane = ("<div id='qa'><div class='mets-field'><span class='mets-field-label'>Question Acceptance Deadline</span>"
+                        "<div class='mets-field-body'>11/17/2026 12:00 AM MST</div></div><div class='mets-field'>"
+                        f"<span class='mets-field-label'>Closing Date</span><div class='mets-field-body'>{_ahead(21)} 02:00 PM MST</div></div>{rows}</div>")
+            return self._send(f"<h1>Bid</h1><div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>"
+                              f"{docs}{tabs}{pane}<footer><p>Print Options</p><p>Terms of Use</p></footer>")
         if p.startswith("/dl/missing"):
             return self._send("not found", 404)
         if p.startswith("/dl/"):
@@ -831,6 +912,79 @@ r13 = run.scan(["bidnet"])
 check("a document that does not download is reported (and tried again next scan)",
       any("not downloaded yet" in e for e in r13["health"]["bidnet"]["errors"]), r13["health"]["bidnet"]["errors"])
 del os.environ["FAKE_MISSING_DOC"]
+
+# Communication + Q & A tabs on watched bids (2026-11-05 15:48 MST: a walkthrough-time change on 0000440322 was posted
+# only on the Communication tab, no addendum, so the Documents diff never saw it)
+_W = "bidnet:0000500002"  # the watched Littleton bid on the fake site
+_bid = {"source": "bidnet", "id": "0000500002", "title": "On-Call Commercial Plumbing Services RFQ 2126",
+        "url": BASE + "/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000500002"}
+b4 = Browser()
+s13 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s13.ensure_login()
+_c0, _q0 = HITS2["comm"], HITS2["qa"]
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+check("logged in + watched: both tabs read; empty Communication tab stores nothing, Q & A keeps its deadline",
+      s13.logged_in and HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and "communications" not in _e
+      and _e.get("qa") == {"questions_deadline": "2026-11-17", "items": []} and _e.get("prebid") and _e.get("documents"), _e)
+os.environ["FAKE_COMM"], os.environ["FAKE_QA"] = "1", "1"
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+check("enrich picks up the notice and the answered question",
+      _e.get("communications") == [{"no": "1", "date": "11/05/2026 03:48 PM MST", "text": COMM_TEXT}]
+      and (_e.get("qa") or {}).get("items") == [{"question": "Is the walkthrough mandatory?", "answer": "Yes, attendance is mandatory.",
+                                                  "question_date": "2026-11-06", "answer_date": "2026-11-06"}], _e)
+_c0, _q0 = HITS2["comm"], HITS2["qa"]
+_e = bidnet.enrich(s13, _bid)
+_e2 = bidnet.enrich(_types.SimpleNamespace(logged_in=False, page=s13.page, debug_dump=lambda tag: None), {**_bid, "watched": True})
+check("an unwatched match, or a logged-out session, never opens the tabs",
+      HITS2["comm"] == _c0 and HITS2["qa"] == _q0 and "communications" not in _e and "qa" not in _e and "qa" not in _e2, (_e, _e2))
+os.environ["FAKE_TAB_DOWN"] = "1"
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+check("a tab that fails to load costs nothing from the main page and stores no tab fields",
+      _e.get("prebid") and _e.get("documents") and "communications" not in _e and "qa" not in _e, _e)
+del os.environ["FAKE_TAB_DOWN"]
+s13.close()
+b4.close()
+# the full scan: the lines reach the report once, stay stored, survive a blind scan and a broken tab
+r15 = run.scan(["bidnet"])
+_rep = (TMP / "REPORT_FILE.json").read_text()
+_line = 'NEW COMMUNICATION No.1 11/05/2026 03:48 PM MST: "Please note that the walkthrough time has changed from 9 am to 10:30 am.'
+check("first sight: the notice and the answer are in the report's changes for the watched bid",
+      _line in _rep and 'NEW Q&A: 1 answered: "Yes, attendance is mandatory."' in _rep
+      and any(x.startswith("NEW COMMUNICATION") for x in r15["changed"].get(_W, {}).get("diffs", [])), (r15["changed"], _rep[-1500:]))
+_ob = json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())["bids"][_W]
+check("open_bids.json keeps the tabs", len(_ob.get("communications") or []) == 1 and len((_ob.get("qa") or {}).get("items") or []) == 1, _ob)
+r16 = run.scan(["bidnet"])
+check("unchanged next scan: not reported again", _W not in r16["changed"] and "NEW COMMUNICATION" not in (TMP / "REPORT_FILE.json").read_text(),
+      r16["changed"])
+os.environ["FAKE_COMM"] = "2"
+r17 = run.scan(["bidnet"])
+_d17 = r17["changed"].get(_W, {}).get("diffs", [])
+check("a second notice: only No.2 reported", _d17 == ['NEW COMMUNICATION No.2 11/06/2026 03:48 PM MST: "Addendum 2 posted."'], _d17)
+os.environ["FAKE_ROBOT_LIST"] = "1"
+r18 = run.scan(["bidnet"])
+_cf = r18["found"].get(_W, {})
+check("BidNet blind (robot check on the list): both tabs carried forward with the row, nothing reported",
+      _cf.get("carried_forward") and len(_cf.get("communications") or []) == 2 and (_cf.get("qa") or {}).get("items") and _W not in r18["changed"],
+      (_cf.get("communications"), _cf.get("qa"), r18["changed"]))
+del os.environ["FAKE_ROBOT_LIST"]
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+os.environ["FAKE_TAB_DOWN"] = "1"
+r19 = run.scan(["bidnet"])
+_cf = r19["found"].get(_W, {})
+check("tabs down this scan: the main page is read, last scan's notices and answers are kept, no false NEW next time",
+      not _cf.get("carried_forward") and _cf.get("detail_at", "") >= r19["started"] and len(_cf.get("communications") or []) == 2
+      and (_cf.get("qa") or {}).get("items") and _W not in r19["changed"], (_cf.get("communications"), _cf.get("qa"), r19["changed"]))
+del os.environ["FAKE_TAB_DOWN"]
+os.environ["FAKE_ROBOT_TAB"] = "1"
+r20 = run.scan(["bidnet"])
+_cf = r20["found"].get(_W, {})
+check("robot check on a tab: detail pass stops, cool-down starts, stored tabs kept",
+      bidnet.cooldown_until() and any("blocked" in e and "Communication tab" in e for e in r20["health"]["bidnet"]["errors"])
+      and len(_cf.get("communications") or []) == 2 and _W not in r20["changed"], (r20["health"]["bidnet"]["errors"], _cf.get("communications")))
+del os.environ["FAKE_ROBOT_TAB"]
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+for _k in ("FAKE_COMM", "FAKE_QA"):
+    del os.environ[_k]
 
 _B = _brmod.Browser
 

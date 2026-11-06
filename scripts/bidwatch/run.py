@@ -14,7 +14,8 @@ Every cycle:
      Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing, ColoradoVSS public list).
   3. Match each against the company profiles; open the detail page of every match and every
      watched bid to read closing date, questions deadline, pre-bid/site walk (mandatory or not).
-  4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda), CLOSED.
+  4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
+     Q & A tab entries on watched bids), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in.
   6. Write REPORT.md, open_bids.json, health.json. A session that expired is re-logged-in next cycle
      (and mid-cycle if a page bounces to a login screen). BidNet: a fresh password login only every
@@ -443,7 +444,8 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
     return [n for n in hits if not (st and profiles[n].get("states") and st not in profiles[n]["states"])]
 
 
-DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description")
+DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description",
+                 "communications", "qa")
 
 
 def _keep_detail(row: dict, old: dict) -> dict:
@@ -486,6 +488,7 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if recently or blocked:
             found[k] = _keep_detail(b, old)
             continue
+        b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
         try:
             got = mod.enrich(ses, b)
             # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
@@ -534,6 +537,24 @@ def _diff(old: dict, new: dict) -> list[str]:
     nd = {d["name"] for d in new.get("documents", [])}
     if old.get("documents") is not None and nd - od:
         out.append("NEW DOCUMENTS (addendum?): " + ", ".join(sorted(nd - od))[:300])
+    # BidNet Communication tab (watched bids): a buyer notice carries no document, so it only shows up here. Each
+    # entry is reported once, the first scan that sees it (2026-11-05: a walkthrough moved from 9 to 10:30 am this way).
+    oc = {(c.get("no"), c.get("date")) for c in old.get("communications") or []}
+    for c in new.get("communications") or []:
+        if (c.get("no"), c.get("date")) not in oc:
+            out.append(f'NEW COMMUNICATION No.{c.get("no")} {c.get("date")}: "{(c.get("text") or "")[:200]}"')
+    # Q & A tab: a question is news again when its answer arrives (keyed on question + answer)
+    oq, nq = old.get("qa") or {}, new.get("qa") or {}
+    seen = {(i.get("question"), i.get("answer")) for i in oq.get("items") or []}
+    fresh = [i for i in nq.get("items") or [] if (i.get("question"), i.get("answer")) not in seen]
+    if fresh:
+        answered = [i for i in fresh if i.get("answer")]
+        first = (answered or fresh)[0]
+        out.append(f"NEW Q&A: {len(answered)} answered" + (f", {len(fresh) - len(answered)} awaiting answer"
+                                                            if len(fresh) > len(answered) else "")
+                   + f': "{(first.get("answer") or first.get("question") or "")[:200]}"')
+    if nq.get("questions_deadline") and nq["questions_deadline"] != oq.get("questions_deadline"):
+        out.append(f"questions deadline {nq['questions_deadline']}")
     if new.get("title") and old.get("title") and new["title"] != old["title"]:
         out.append(f"title changed: {new['title'][:80]}")
     return out
