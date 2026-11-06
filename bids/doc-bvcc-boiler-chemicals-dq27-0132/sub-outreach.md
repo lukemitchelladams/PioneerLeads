@@ -42,3 +42,5 @@ in first and they write Brown Bison on the attendance log. Ask the question form
 ## Log
 - 2026-11-06 ~21:30Z: candidate list built (web search + TCF list); emails verified on the firms' sites where reachable; two
   drafts linted PASS; nothing sent, waiting on Luke's GO.
+
+- 2026-11-06 21:1xZ (HQ, Luke's standing permission): H2GS pricing request sent to Silas Norwood (msg 1a1b2a5e01576f45); bcc group to Summit Laboratories, TRS Inc, Aqua-Chem, Reaction Engineering (msg 1a1b2a5e97fa8bc7). Full 10-file package attached to both. Asked: Exhibit D pricing by Fri 11/20 firm for the PO year; technician name + signed Exhibit G by Mon 11/09 (Exhibit G's ten-day rule, stricter than DQ sec. 4's 11/16).
