@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-06T21:37:17+00:00",
+  "checked_at": "2026-11-06T22:37:16+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 627,
+      "count": 628,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-06T21:37:17+00:00",
+      "last_success": "2026-11-06T22:37:16+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 78,
+      "matches": 79,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 202,
-        "statewide BUYER": 426
+        "statewide AGGREGATE": 200,
+        "statewide BUYER": 429
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-06T21:37:17+00:00",
+      "last_success": "2026-11-06T22:37:16+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -39,17 +39,17 @@
     },
     "coloradovss": {
       "complete": true,
-      "count": 68,
+      "count": 70,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-06T21:37:17+00:00",
+      "last_success": "2026-11-06T22:37:16+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 68
+        "statewide open": 70
       }
     },
     "dibbs": {
@@ -77,15 +77,15 @@
     "samgov": {
       "bulk_added": 38,
       "bulk_note": "bulk file cached 2026-11-06T05:42:23+00:00; 108 matching (parsed earlier)",
-      "count": 110,
+      "count": 111,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-06T21:37:17+00:00",
+      "last_success": "2026-11-06T22:37:16+00:00",
       "logged_in": true,
       "login_note": "API key; +38 from the nightly bulk file",
-      "matches": 110,
+      "matches": 111,
       "reach_note": "HTTP 404",
       "reachable": true
     }
