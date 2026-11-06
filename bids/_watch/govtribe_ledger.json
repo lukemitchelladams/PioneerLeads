@@ -1881,6 +1881,6 @@
       "pipeline": "parker-generator"
     }
   },
-  "last_hourly_check": "2026-11-05T23:25:00Z: GovTribe still blocked. HQ 22:35Z scan: BidNet in robot-check cool-down to 23:36Z (rows 624/78 carried from 21:35Z attempt; last good list 18:36Z), SAM 113, VSS 64/2, Bonfire no creds, DIBBS stale. 1 NEW = USFS Pagosa janitorial 1240LP27Q0008 -> GO by HQ (no site visit; due 11/19 10:00 MT; 3 subs emailed); 2 VSS NOs. Inbox: BidNet communication on Carbon Valley mechanical PM (login needed). Still no Parker numbers from Brad.",
+  "last_hourly_check": "2026-11-06T00:25:00Z: GovTribe still blocked. HQ 23:36Z SAM+VSS pass: SAM 113, VSS 65/2, no NEW; BidNet stale since 18:36Z (fresh login held to the 00:35Z scan), Bonfire no creds, DIBBS stale. Inbox: nothing new since 22:50Z (Carbon Valley BidNet communication already logged). Last hour's held commit pushed after HQ's push showed GitHub writes recovered.",
   "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
