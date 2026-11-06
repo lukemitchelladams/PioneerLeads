@@ -68,5 +68,15 @@
   "decision": "SUBMITTED",
   "item": "Addendum moving close to 10/29 (per BidNet listing)",
   "where": "BidNet, Documents tab"
+ },
+ {
+  "key": "lakewood-board-up-fencing|Task order form referenced in Sample Agreement II.B.1 (not posted)",
+  "bid": "lakewood-board-up-fencing",
+  "agency": "City of Lakewood",
+  "sol": "RFP 6706 (BidNet 0000442961)",
+  "due": "2026-12-01T10:00:00-07:00",
+  "decision": "EVALUATE",
+  "item": "Task order form referenced in Sample Agreement II.B.1 (not posted)",
+  "where": "BidNet Q&A before 2026-11-13 17:00 MT, or with the award"
  }
 ]

@@ -2152,6 +2152,54 @@
    "verdict": "NO",
    "why": "Not a bid for our trades.",
    "at": "2026-11-06T22:25:00Z"
+  },
+  "bidnet:0000442961": {
+   "name": "City of Lakewood RFP 6706 as-needed emergency board-up, temporary fencing, site security",
+   "verdict": "EVALUATE",
+   "why": "HQ: no walk; due 2026-12-01 10:00 MT; questions by 11/13 17:00. Recommend NO (City is payer of last resort; no volume stated). Revive only if the 11/18 addendum shows volume and City payment. Folder bids/lakewood-board-up-fencing.",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "samgov:c776270b764f42eb99389aa6090e5f9d": {
+   "name": "Army ACC pneumatic hoist",
+   "verdict": "NO",
+   "why": "Not a Jones Bearing / American Pulley / ConveyMor product (HQ).",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "bidnet:0000442786": {
+   "name": "CDOC NetVu cameras & accessories AVCF/BVCC",
+   "verdict": "NO",
+   "why": "Security camera product supply (rule 9).",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "coloradovss:DQ1-CAAA-2027000169": {
+   "name": "CDOC NetVu cameras for BVCC & AVCF (VSS copy)",
+   "verdict": "NO",
+   "why": "Security camera product supply (rule 9).",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "bidnet:0000442826": {
+   "name": "Coated flat laser mirrors for ATLAS",
+   "verdict": "NO",
+   "why": "Lab optics supply.",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "bidnet:0000442956": {
+   "name": "Pueblo City-County Library roof recover (Rawlings)",
+   "verdict": "NO",
+   "why": "Roofing; not our trade.",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "bidnet:0000442957": {
+   "name": "RFP20261110 Fletcher refinance",
+   "verdict": "NO",
+   "why": "Financial services.",
+   "at": "2026-11-06T23:25:00Z"
+  },
+  "coloradovss:RFP-RAAA-2027000083": {
+   "name": "Distance learning management system",
+   "verdict": "NO",
+   "why": "Software.",
+   "at": "2026-11-06T23:25:00Z"
   }
  },
  "watched": {
@@ -2337,6 +2385,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-06T22:25:00Z",
+ "last_hourly_check": "2026-11-06T23:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
