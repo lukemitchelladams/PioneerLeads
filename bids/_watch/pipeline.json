@@ -1,6 +1,6 @@
 {
   "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
-  "updated": "2026-11-06T21:30:00Z",
+  "updated": "2026-11-06T23:05:00Z",
   "bids": [
     {
       "id": "cos-parks-r26-077mz",
@@ -1481,6 +1481,26 @@
       "contact": "Sheila Lucero, Purchasing Manager, doc_purchasing@state.co.us (single point of contact; contact with anyone else may disqualify, DQ p.1). Walk clearance: cynthia.alexander@state.co.us, gregory.jennings@state.co.us, bradley.johnson@state.co.us, garett.grover@state.co.us",
       "due_source": "DQ sec. 2: \"Quote Submission Deadline 11/30/26 @ 2:00pm ... A Quote sent at 2:01 pm MST is considered late.\"",
       "doc_gaps": "None known: 10-file package in hand; MANIFEST's three MISSING rows are false positives (Attachment I = Attachment 1 per DQ 3.B; Form SS = IRS SS-4 reference in the W-9; Appendix II = reference inside Attachment 1). No modifications posted yet."
+    },
+    {
+      "id": "lakewood-board-up-fencing",
+      "agency": "City of Lakewood",
+      "title": "As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services",
+      "sol": "RFP 6706 (BidNet 0000442961)",
+      "trade": "Facilities maintenance (board-up / carpentry, temporary fencing, site security)",
+      "due": "2026-12-01T10:00:00-07:00",
+      "portal": "BidNet Direct (RMEPS) 0000442961",
+      "decision": "EVALUATE",
+      "decision_note": "RFP 6706 in hand (docs/RFP 6706.pdf, 30 pp. incl. Sample Agreement; Insurance Requirements PDF, 17 pp.). NO pre-bid meeting or site visit (Schedule of Events, Part 1 sec. III, lists none; BidNet has no event). Scope: 24/7/365 emergency plywood board-up of doors, windows, storefronts and garage openings after Lakewood PD events (search warrants, forced entry, crime scenes), plus optional temporary chain-link fence rental (6 ft panels, bases, sandbags, gates, locks, bracing, privacy screen; daily/weekly/monthly per linear foot); debris removal and hazard mitigation excluded. 'Site security' = fencing and securing openings, no guard service. Respondent sets its own guaranteed response time (notification to on-site arrival) and is scored on it; no number imposed. Unit-price Fee Schedule in the RFP's structure (Part 4 sec. 6). Questions on BidNet by 2026-11-13 17:00 MT; addendum 2026-11-18; due 2026-12-01 10:00 MT via RMEPS PDF upload; award approx. 2026-12-07; price firm 60 days. Term 1 year + 4 annual renewals; multiple award by service allowed. No bonds. Insurance: CGL $1M each occurrence (sample COI $1M/$2M), auto $1M CSL, WC, City additional insured, primary/non-contributory, waiver of subrogation, deductible max $20,000. Subs allowed with the City's written consent 'not unreasonably withheld' (Agreement III.B); City of Lakewood sales and use tax license required. RECOMMEND NO: Part 4 sec. 5 makes the City 'payer of last resort' (contractor must collect from the private property owner first; City pays only when the owner is deceased with no dependents or cannot be found) and no dispatch count, annual spend or NTE is stated (rule 9 logic). Revives only if the 11/18 addendum answers vendor-questions.md Q1-Q2 with real volume and City payment for police-requested work. Five subs with public emails and two linted drafts in sub-outreach.md; nothing sent.",
+      "prebid": null,
+      "prebid_mandatory": false,
+      "performer": "Brown Bison + board-up/carpentry sub (Ceres Construction, ARC Restoration or Absolute Glass & Windows) + temporary-fence vendor (Colorado Barricade, Temp Fence USA)",
+      "subs": "5 candidates with public emails in sub-outreach.md (Ceres Construction, ARC Restoration, Absolute Glass & Windows, Colorado Barricade, Temp Fence USA); not contacted",
+      "folder": "bids/lakewood-board-up-fencing",
+      "contact": "Kaitlyn Sullivan, Buyer II, City of Lakewood, kaitlyn.sullivan@lakewoodco.gov, 303-987-7885 (RFP Part 3 p.1); questions only via BidNet",
+      "sub_pricing": "None",
+      "due_source": "RFP Part 1 sec. II.A: \"Respondents shall submit Proposals no later than 10:00 AM MT on December 1, 2026 via RMEPS\"; BidNet \"12/01/2026 10:00 AM MST\"",
+      "doc_gaps": "Task order form 'attached hereto' (Sample Agreement II.B.1) is not in either PDF or on BidNet (vendor-questions.md Q5). No City fee-schedule template; respondent builds its own. No addenda yet (first expected 2026-11-18)."
     }
   ],
   "events": [
@@ -2221,6 +2241,12 @@
       "when": "2026-11-06T21:37:17Z",
       "kind": "closed",
       "note": "No longer listed; closed without a Brown Bison submission"
+    },
+    {
+      "bid": "lakewood-board-up-fencing",
+      "when": "2026-11-06T23:05:00Z",
+      "kind": "decision",
+      "note": "EVALUATE, recommend NO: package read (RFP 6706 + insurance PDF); no pre-bid; questions 11/13 17:00 MT; due 12/01 10:00 MT; City is payer of last resort and no volume stated; 5 subs listed, 2 drafts linted, nothing sent"
     }
   ],
   "doc_gaps": [
@@ -2258,6 +2284,11 @@
       "bid": "dcsd-003-27",
       "item": "Addendum moving close to 10/29 (per BidNet listing)",
       "where": "BidNet, Documents tab"
+    },
+    {
+      "bid": "lakewood-board-up-fencing",
+      "item": "Task order form referenced in Sample Agreement II.B.1 (not posted)",
+      "where": "BidNet Q&A before 2026-11-13 17:00 MT, or with the award"
     }
   ]
 }

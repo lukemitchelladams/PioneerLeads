@@ -592,6 +592,14 @@
       "match": "27-0132|Boiler Chemicals.*BVC",
       "folder": "bids/doc-bvcc-boiler-chemicals-dq27-0132",
       "govtribe_ids": []
+    },
+    {
+      "name": "City of Lakewood RFP 6706 As-Needed Emergency Board Up, Temporary Fencing & Site Security (EVALUATE, recommend NO; no pre-bid; questions 11/13 17:00 MT; due 12/01 10:00 MT)",
+      "source": "bidnet",
+      "id": "0000442961",
+      "match": "0000442961|\\bRFP 6706\\b|emergency board up.*temporary fencing",
+      "folder": "bids/lakewood-board-up-fencing",
+      "govtribe_ids": []
     }
   ]
 }
