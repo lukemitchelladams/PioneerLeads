@@ -883,3 +883,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Scan 11:38Z: BidNet LOGGED IN (3rd clean fresh login in a row, 605/74). SAM 108, VSS 64/2. No NEW; 1 non-matching row closed (Pavement Marking 0000438630). Inbox quiet; still no Parker numbers from Brad Orgill (Luke's 09:00 MT cutoff is about 3.5 h away; Parker closes 14:00 MT).
 - Dashboard blobs now: bids 40293c0db4c4bdbd0732f947a67ac29a (v132, sha 99094ac22dd9), events 75e9336bd403cb66110427c50af08705 (v134, sha 4003c628ba8e), sources ccb8bcb9e0913f69c7a84d297819f1d6 (v119, sha fc7f7130ff56), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
 - 2026-11-06 12:37Z hourly (HQ): BidNet deferred (next fresh login 14:39Z), rows carried 605/74; SAM 108, VSS 64/2; no NEW; inbox quiet.
+
+### 2026-11-06 13:22Z hourly (WORKER, read-only)
+- Scan 12:36Z: BidNet deferred (next fresh login after 14:39Z; data from 11:38Z). SAM 108, VSS 64/2; no NEW, no adds or removals.
+- Parker generator: a Gmail check of the whole Brad Orgill thread (9 messages) shows his last reply 11/05 16:09Z ("Our plan is to get this to you today") and no pricing since. Luke's 09:00 MT cutoff is 2.5 h away; Parker closes 14:00 MT. Inbox otherwise quiet.
+- Dashboard blobs now: bids 1698327366fcab0054c65e99ce3dab56 (v133, sha fe644a712609), events 7af71c0d9f40e35a59b578155114b8b6 (v135, sha 34f8a1c9470c), sources 8a2f5ebf049d16bfef20f3dc20ae858e (v120, sha 2a224a2cd537), portal_feed 2d51357cbc51c931152bcb8388611e16 (v70), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
