@@ -561,8 +561,11 @@ def _diff(old: dict, new: dict) -> list[str]:
     if fresh:
         answered = [i for i in fresh if i.get("answer")]
         first = (answered or fresh)[0]
+        shown = len(nq.get("items") or [])
         out.append(f"NEW Q&A: {len(answered)} answered" + (f", {len(fresh) - len(answered)} awaiting answer"
                                                             if len(fresh) > len(answered) else "")
+                   # the tab's pager said more exist than the page held: the rest is on pages the scanner did not turn
+                   + (f" ({shown} of {nq['total']} shown)" if (nq.get("total") or 0) > shown else "")
                    + f': "{(first.get("answer") or first.get("question") or "")[:200]}"')
     if nq.get("questions_deadline") and nq["questions_deadline"] != oq.get("questions_deadline"):
         out.append(f"questions deadline {nq['questions_deadline']}")

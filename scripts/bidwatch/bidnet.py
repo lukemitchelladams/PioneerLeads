@@ -743,24 +743,38 @@ def parse_docs_tab(html: str, url: str = "") -> dict:
     return {"documents": docs, "items_text": items}
 
 
-# The detail page's other tabs (verified 2026-11-06 on 0000440322, logged in): a[href*='innerTabId=communication']
-# and a[href*='innerTabId=questions-answers'] (plus a hidden mobile <option data-ajax-url=
-# "/public/solicitations/<numeric id>/abstract/communication">). Clicking a tab renders its text in ~4-5 s.
-# A buyer's notice posted there carries no addendum and no document, so the Documents diff never saw it:
-# "Communication No.1 - 11/05/2026 03:48 PM MST  Please note that the walkthrough time has changed from 9 am to 10:30 am."
+# The detail page's other tabs (verified 2026-11-06 on 0000440322 / 0000441328 / 0000437813, logged in; saved as
+# tests/fixtures/bidnet_qa_*.html and bidnet_communication_0000440322.html). The tab strip is li.mets-tab >
+# a[href*='innerTabId=...'] (plus a hidden mobile <option data-ajax-url="/public/solicitations/<numeric id>/abstract/
+# communication">); a click loads the tab by XHR into div#innerTabContent in ~1-5 s. The Communication tab exists only
+# when the buyer posted something: div.communications.content-block per notice, h3.content-block-title
+# "Communication No.1 - 11/05/2026 03:48 PM MST" + div.communicationTabDescription (a notice with files adds a
+# "Communication Documents" table). A buyer's notice there carries no addendum and no document, so the Documents
+# diff never saw it. The Q & A tab is form#questionsAnswersSearchForm: the question acceptance deadline and closing
+# date as .mets-field label/body pairs, then table.qnaTable (thead "No | Question/Answer | Question Date | Answer
+# Date") with one tr.mets-table-row per question (td.questionNo "Q1"; td.questionAnswer with strong "Question:
+# <subject>", div#questionContainer_<id> text, strong "Answer:" and div#answerContainer_<id> text, e.g. "Answered in
+# Addendum 1"; td.questionDate; td.answerDate), an always-present hidden tr.mets-table-row-empty "No results match
+# your criteria." (shown alone when there are no questions) and div.mets-pagination "<N> results found" with a
+# 25/50/100 results-per-page pager (0000437813 delivered all 266 rows on page 1 at the default size).
+# "Question Acceptance Deadline" also sits on the Details tab, so only the form proves the Q & A tab rendered.
 COMM_TAB_SEL = "a[href*='innerTabId=communication']"
 QA_TAB_SEL = "a[href*='innerTabId=questions-answers']"
-# what each tab shows once rendered (an empty tab says "No results match your criteria."); waited for after the click
-COMM_READY_SEL = "text=/Communication No\\.|No results match/i"
-QA_READY_SEL = "text=/Question Acceptance Deadline|No results match/i"
-TAB_WAIT_MS = 8000
+QA_FORM_SEL = "#questionsAnswersSearchForm"
+QA_ROW_SEL = "table.qnaTable tbody tr.mets-table-row"
+# what proves each tab rendered inside #innerTabContent; waited for after the click
+COMM_READY_SEL = "#innerTabContent .communications, #innerTabContent :text('No results match your criteria')"
+QA_READY_SEL = "#questionsAnswersSearchForm table.qnaTable"
+TAB_WAIT_MS = 12000
 COMM_HDR_RX = re.compile(r"Communication No\.?\s*(\d+)\s*[-–—]\s*"
                          r"(\d{1,2}/\d{1,2}/\d{4}(?:\s+\d{1,2}:\d{2}\s*[AP]M(?:\s+[A-Z]{2,5})?)?)", re.I)
-NO_RESULTS_RX = re.compile(r"No results match your criteria", re.I)
 # page chrome that follows the last entry of a tab in the flattened text: a communication's text stops there
 TAB_END_RX = re.compile(r"\n(?:Print Options|Terms of Use|Privacy Policy|Copyright|©)", re.I)
-QA_LABEL_RX = re.compile(r"\b(Question Date|Answer Date|Question(?!\s+Acceptance)|Answer)\b\s*:?\s*")
+# column headings of a notice's attached-files table and its empty-state text (2026-11-06 live report: "Q & A #4
+# Communication Documents Document Size Uploaded Date Q&A Set #4.pdf 110 Kb 11/04/2026 10:03 AM MST No Documents")
+COMM_CHROME_RX = re.compile(r"\bCommunication Documents\s+Document\s+Size\s+Uploaded Date\b|\bNo Documents\b")
 COMM_TEXT_MAX = 2000
+QA_TOTAL_RX = re.compile(r"([\d,]+)\s+results? found", re.I)
 
 
 def _block_text(html: str) -> str:
@@ -783,66 +797,53 @@ def parse_communications(html: str) -> list[dict]:
     for i, m in enumerate(heads):
         body = text[m.end(): heads[i + 1].start() if i + 1 < len(heads) else len(text)]
         end = TAB_END_RX.search(body)
-        body = " ".join((body[:end.start()] if end else body).split())
+        body = " ".join(COMM_CHROME_RX.sub(" ", " ".join((body[:end.start()] if end else body).split())).split())
         out.append({"no": m.group(1), "date": " ".join(m.group(2).split()), "text": body[:COMM_TEXT_MAX]})
     return out
 
 
-def parse_qa(html: str) -> dict:
-    """The logged-in 'Q & A' tab: {questions_deadline: iso | None, items: [{question, answer, question_date, answer_date}]}.
-    The tab prints "Question Acceptance Deadline <m/d/Y h:mm AM TZ>" and "Closing Date ..." above the list; the list is
-    either "No results match your criteria." or one Question / Question Date / Answer / Answer Date group per question
-    (a table with those column headings, or labelled fields in that order; both shapes are read). An unanswered
-    question has answer None."""
+def parse_qa(html: str) -> dict | None:
+    """The logged-in 'Q & A' tab (markup in the comment above the tab selectors): {questions_deadline: iso | None,
+    items: [{no, question, answer, question_date, answer_date}], total: int | None}. `total` is the pager's "<N> results
+    found"; fewer items than that means BidNet paged the list. An unanswered question has answer None. Returns None when
+    form#questionsAnswersSearchForm is not in the page: the tab did not render, and the "Question Acceptance Deadline"
+    the Details tab also prints must not pass for it (2026-11-06: read too early, it replaced 266 stored answers with
+    nothing)."""
     soup = BeautifulSoup(html, "lxml")
-    for t in soup(["script", "style", "noscript", "option"]):
+    form = soup.select_one(QA_FORM_SEL)
+    if form is None:
+        return None
+    for t in form(["script", "style", "noscript", "option"]):
         t.decompose()
-    flat = " ".join(soup.get_text(" ").split())
-    deadline = _labeled_date(flat, r"Question Acceptance Deadline")
-    return {"questions_deadline": deadline, "items": _qa_table(soup) or _qa_labelled(_block_text(html))}
+    deadline = None
+    for fld in form.select(".mets-field"):
+        if _txt(fld.select_one(".mets-field-label")).lower().startswith("question acceptance deadline"):
+            deadline = parse_date(_txt(fld.select_one(".mets-field-body")))
+    pager = form.select_one(".mets-pagination")
+    m = QA_TOTAL_RX.search(_txt(pager)) if pager is not None else None
+    items = [_qa_row(tr) for tr in form.select(QA_ROW_SEL)]  # tr.mets-table-row-empty is not a .mets-table-row
+    return {"questions_deadline": deadline or _labeled_date(_txt(form), r"Question Acceptance Deadline"),
+            "items": [i for i in items if i["question"]], "total": int(m.group(1).replace(",", "")) if m else None}
 
 
-def _qa_item(f: dict) -> dict:
-    return {"question": f.get("question") or None, "answer": f.get("answer") or None,
-            "question_date": parse_date(f.get("question date") or ""), "answer_date": parse_date(f.get("answer date") or "")}
-
-
-def _qa_table(soup) -> list[dict]:
-    """Shape 1: a table whose heading cells name the columns (Question, Question Date, Answer, Answer Date)."""
-    for table in soup.find_all("table"):
-        cols = [_txt(c).lower() for c in table.find_all("th")]
-        if "question" not in cols:
-            continue
-        out = []
-        for tr in table.find_all("tr"):
-            cells = tr.find_all("td")
-            f = {cols[i]: _txt(c) for i, c in enumerate(cells) if i < len(cols)}
-            if f.get("question"):
-                out.append(_qa_item(f))
-        if out:
-            return out
-    return []
-
-
-def _qa_labelled(text: str) -> list[dict]:
-    """Shape 2: labelled fields in page order ("Question <text> Question Date <date> Answer <text> Answer Date <date>");
-    a label that the current group already has starts the next question. Read from the tab's own heading on, so
-    an 'Answer' in the bid's description is not taken for a label."""
-    start = text.find("Question Acceptance Deadline")
-    labels = list(QA_LABEL_RX.finditer(text, max(start, 0)))
-    out, cur = [], {}
-    for i, m in enumerate(labels):
-        lab = m.group(1).lower()
-        val = text[m.end(): labels[i + 1].start() if i + 1 < len(labels) else len(text)]
-        val = " ".join((TAB_END_RX.split(val, 1)[0]).split())
-        if lab in cur:
-            if cur.get("question"):
-                out.append(_qa_item(cur))
-            cur = {}
-        cur[lab] = val
-    if cur.get("question"):
-        out.append(_qa_item(cur))
-    return out
+def _qa_row(tr) -> dict:
+    """One tr.mets-table-row of table.qnaTable. The subject line ("Question: General Question") is folded into the
+    question as "<subject>: <text>"; the expand arrow's hidden "Arrow Right" label and the "Question:" / "Answer:"
+    captions are chrome, not text (they leaked into the 2026-11-06 report)."""
+    for t in tr.select("svg, .accessibility-hidden"):
+        t.decompose()
+    subject = re.sub(r"^Question:\s*", "", _txt(tr.select_one(".questionAnswerTitle[data-type='question']")))
+    q = _txt(tr.select_one("[id^='questionContainer_']"))
+    if not q:  # markup drift: the whole cell minus the answer block, minus the caption
+        cell = tr.select_one("td.questionAnswer")
+        for t in (cell.select(".answerContainer, .questionAnswerTitle") if cell is not None else []):
+            t.decompose()
+        q = _txt(cell)
+    return {"no": _txt(tr.select_one("td.questionNo")) or None,
+            "question": f"{subject}: {q}" if subject and q else (q or subject or None),
+            "answer": _txt(tr.select_one("[id^='answerContainer_']")) or None,
+            "question_date": parse_date(_txt(tr.select_one("td.questionDate"))),
+            "answer_date": parse_date(_txt(tr.select_one("td.answerDate")))}
 
 
 def _read_tab(session, tab_sel: str, ready_sel: str, tag: str) -> str | None:
@@ -908,9 +909,9 @@ def enrich(session, bid: dict) -> dict:
         try:
             t = _read_tab(session, QA_TAB_SEL, QA_READY_SEL, "Q & A")
             q = parse_qa(t) if t is not None else None
-            # stored only when the tab rendered (a deadline, a question, or its empty-list message): a tab that did
-            # not load must not replace last scan's answers with nothing, or they come back as NEW next time
-            if q and (q["questions_deadline"] or q["items"] or NO_RESULTS_RX.search(visible_text(t))):
+            # None = the tab's form is not in the page (not rendered): a tab that did not load must not replace last
+            # scan's answers with nothing, or they come back as NEW next time
+            if q is not None:
                 d["qa"] = q
         except Challenged:
             raise

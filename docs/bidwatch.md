@@ -21,12 +21,15 @@ Each scan writes:
 A buyer can post a notice on a solicitation's **Communication** tab with no addendum and no document (2026-11-05
 15:48 MST on 0000440322: "the walkthrough time has changed from 9 am to 10:30 am"), so the document diff never
 sees it. For every watched bid, a logged-in scan therefore also clicks the detail page's Communication and Q & A
-tabs (`a[href*='innerTabId=communication']`, `a[href*='innerTabId=questions-answers']`) and stores
-`communications` (number, date as printed, text) and `qa` (question acceptance deadline, each question with its
-answer and dates) on the row in `open_bids.json`. The report's "Changes on matching / watched bids" section then
-carries `NEW COMMUNICATION No.<n> <date>: "<text>"`, `NEW Q&A: <n> answered` (a question is news again when its
-answer arrives) and `questions deadline <date>`, each once, the first scan that sees it. A tab that fails to load,
-a blind scan or a robot check keeps last scan's entries, like documents, so nothing comes back as NEW twice.
+tabs (`a[href*='innerTabId=communication']`, `a[href*='innerTabId=questions-answers']`; the Communication tab only
+exists once the buyer posted something) and stores `communications` (number, date as printed, text) and `qa`
+(question acceptance deadline, each question with its answer and dates, and the pager's `total`) on the row in
+`open_bids.json`. The report's "Changes on matching / watched bids" section then carries
+`NEW COMMUNICATION No.<n> <date>: "<text>"`, `NEW Q&A: <n> answered` (a question is news again when its answer
+arrives; `(n of N shown)` when BidNet paged the list, which it offers at 25/50/100 per page but served all 266
+Custodial questions on one page) and `questions deadline <date>`, each once, the first scan that sees it. A tab
+that fails to load, a blind scan or a robot check keeps last scan's entries, like documents, so nothing comes back
+as NEW twice. Real tab pages: `tests/fixtures/bidnet_qa_*.html`, `bidnet_communication_0000440322.html`.
 
 ## Staying logged in
 Sessions (cookies) are saved per portal in `~/.brownbison/sessions/` (outside the repo, mode 600). Every

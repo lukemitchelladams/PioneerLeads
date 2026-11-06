@@ -14,6 +14,7 @@ from __future__ import annotations
 import http.server
 import json
 import os
+import re
 import sys
 import tempfile
 import threading
@@ -162,25 +163,36 @@ check("Communication tab: number, date as printed, text up to the next entry or 
               {"no": "2", "date": "11/06/2026 09:00 AM MST", "text": "Addendum 2 posted."}], _cm)
 check("Communication tab: empty tab ('No results match your criteria.') -> []",
       bidnet.parse_communications("<h1>Bid</h1><p>No results match your criteria.</p>") == [])
-_qa0 = bidnet.parse_qa("<div class='mets-field'><span>Question Acceptance Deadline</span><div>11/17/2026 12:00 AM MST</div></div>"
-                       "<div class='mets-field'><span>Closing Date</span><div>12/08/2026 02:00 PM MST</div></div>"
-                       "<p>No results match your criteria.</p><footer>Print Options</footer>")
-check("Q & A tab: question deadline read, no questions yet", _qa0 == {"questions_deadline": "2026-11-17", "items": []}, _qa0)
-_qa1 = bidnet.parse_qa("<p>Description: Answer the RFP by email.</p><span>Question Acceptance Deadline</span><div>11/17/2026 12:00 AM MST</div>"
-                       "<span>Closing Date</span><div>12/08/2026 02:00 PM MST</div>"
-                       "<div><span>Question</span><div>Is the walkthrough mandatory?</div><span>Question Date</span><div>11/06/2026 08:00 AM MST</div>"
-                       "<span>Answer</span><div>Yes, attendance is mandatory.</div><span>Answer Date</span><div>11/06/2026 01:00 PM MST</div></div>"
-                       "<div><span>Question</span><div>Can we bid on part?</div><span>Question Date</span><div>11/07/2026 08:00 AM MST</div>"
-                       "<span>Answer</span><div></div><span>Answer Date</span><div></div></div><footer>Print Options</footer>")
-check("Q & A tab: labelled rows -> answered + unanswered questions, dates ISO, 'Answer' in the description ignored",
-      _qa1["items"] == [{"question": "Is the walkthrough mandatory?", "answer": "Yes, attendance is mandatory.",
-                         "question_date": "2026-11-06", "answer_date": "2026-11-06"},
-                        {"question": "Can we bid on part?", "answer": None, "question_date": "2026-11-07", "answer_date": None}], _qa1)
-_qa2 = bidnet.parse_qa("<p>Question Acceptance Deadline 11/17/2026 12:00 AM MST</p><table><tr><th>Question</th><th>Question Date</th>"
-                       "<th>Answer</th><th>Answer Date</th></tr><tr><td>Is the walkthrough mandatory?</td><td>11/06/2026</td><td>Yes.</td>"
-                       "<td>11/06/2026</td></tr></table>")
-check("Q & A tab: table shape read by its column headings", _qa2["items"] == [{"question": "Is the walkthrough mandatory?", "answer": "Yes.",
-      "question_date": "2026-11-06", "answer_date": "2026-11-06"}], _qa2)
+_cm_live = bidnet.parse_communications((FX / "bidnet_communication_0000440322.html").read_text())
+check("real Communication tab (Carbon Valley 0000440322, 2026-11-06): the walkthrough-time notice, nothing else",
+      _cm_live == [{"no": "1", "date": "11/05/2026 03:48 PM MST", "text": "Please note that the walkthrough time has changed from 9 am to "
+                    "10:30 am. If you have any questions please email shickman@cvprd.com."}], _cm_live)
+check("a notice with attached files: the files table's column headings and 'No Documents' are not text",
+      bidnet.parse_communications("<h3>Communication No.6 - 11/04/2026 10:04 AM MST</h3><p>Q &amp; A #4</p><table><tr><th>Communication Documents"
+                                  "</th></tr><tr><th>Document</th><th>Size</th><th>Uploaded Date</th></tr><tr><td>Q&amp;A Set #4.pdf</td><td>110 Kb"
+                                  "</td><td>11/04/2026 10:03 AM MST</td></tr></table><p>No Documents</p>")[0]["text"]
+      == "Q & A #4 Q&A Set #4.pdf 110 Kb 11/04/2026 10:03 AM MST")
+# Q & A tab, real pages saved 2026-11-06 (live report that morning: every empty tab read as 1 awaiting answer: "/" from the
+# thead's "Question/Answer", and real rows carried "Arrow Right" / "Q2" chrome)
+_qa0 = bidnet.parse_qa((FX / "bidnet_qa_empty_0000440322.html").read_text())
+check("real Q & A tab with no questions (0000440322): deadline read, zero items, no pager total",
+      _qa0 == {"questions_deadline": "2026-11-17", "items": [], "total": None}, _qa0)
+_qa5 = bidnet.parse_qa((FX / "bidnet_qa_5_answered_0000441328.html").read_text())
+check("real Q & A tab (HVAC Filters & Belts 0000441328): 5 rows = pager's 5 results, clean subject + question, answer text, ISO dates",
+      _qa5 and _qa5["questions_deadline"] == "2026-11-02" and _qa5["total"] == 5 and len(_qa5["items"]) == 5
+      and _qa5["items"][0] == {"no": "Q1", "question": "General Question: Is this an all or nothing award?", "answer": "Answered in Addendum 1",
+                               "question_date": "2026-10-26", "answer_date": "2026-11-04"}
+      and _qa5["items"][1]["question"].startswith("Incumbent details: Was there a previous incumbent?")
+      # a leaked caption would sit at the start ("Question: General Question ...") or before the answer ("Answer: Answered in");
+      # "General Question:" is the buyer's own subject line and stays
+      and not any(re.search(r"Arrow|^Question:|\bAnswer:|\bQ\d\b|results found", f"{i['question']} {i['answer']}") for i in _qa5["items"]),
+      _qa5)
+_qa266 = bidnet.parse_qa((FX / "bidnet_qa_266_results_0000437813.html").read_text())
+check("real Q & A tab (District Wide Custodial 0000437813, trimmed to 10 of its 266 rows): items = rows on the page, total = the pager",
+      _qa266 and _qa266["total"] == 266 and len(_qa266["items"]) == 10 and all(i["answer"] == "Answered in Addendum 3" for i in _qa266["items"])
+      and _qa266["items"][0]["no"] == "Q1" and _qa266["items"][-1]["no"] == "Q266" and _qa266["questions_deadline"] == "2026-10-21", _qa266)
+check("Q & A: a page without the tab's form (the Details tab also prints 'Question Acceptance Deadline') is None, not an empty result",
+      bidnet.parse_qa((FX / "bidnet_detail_littleton_2126.html").read_text() + "<p>Question Acceptance Deadline 11/17/2026 12:00 AM MST</p>") is None)
 _li = ("<table><tr class='mets-table-row'><td><a class='solicitation-link mets-command-link' id='444202844454' "
        "href='/private/supplier/interception/open-notice/444202844454?target=view'>Housing Action Plan</a>"
        "<span class='sol-region-item'>Colorado</span><span class='sol-closing-date'><span class='date-value'>11/10/2026</span></span>"
@@ -235,6 +247,10 @@ check("a second notice and an answer: only the new entry and the newly answered 
 check("a changed question deadline is reported; a blind read (no tabs) reports nothing",
       _run_early._diff({"qa": _qa_a}, {"qa": {**_qa_a, "questions_deadline": "2026-11-20"}}) == ["questions deadline 2026-11-20"]
       and _run_early._diff({"communications": [_c1], "qa": _qa_a}, {"title": "x"}) == [])
+check("an empty Q & A tab (no items, same deadline) prints nothing; a paged list says how much of it the page held",
+      _run_early._diff({"qa": {"questions_deadline": "2026-11-17", "items": [], "total": None}},
+                       {"qa": {"questions_deadline": "2026-11-17", "items": [], "total": None}}) == []
+      and _run_early._diff({"qa": _qa_a}, {"qa": {**_qa_b, "total": 266}}) == ['NEW Q&A: 1 answered (1 of 266 shown): "Yes."'])
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -405,22 +421,35 @@ class H(http.server.BaseHTTPRequestHandler):
                     return self._send(ROBOT)
                 if os.environ.get("FAKE_TAB_DOWN"):
                     return self._send("<h1>Service unavailable</h1>", 503)
+            # the tab panes mirror the live markup (tests/fixtures/bidnet_communication_0000440322.html, bidnet_qa_*.html)
             if "innerTabId=communication" in p:
                 HITS2["comm"] += 1
                 n = int(os.environ.get("FAKE_COMM") or 0)
-                pane = "<div id='communication'>" + ("".join(
-                    f"<h3>Communication No.{i} - 11/0{4 + i}/2026 03:48 PM MST</h3><p>{COMM_TEXT if i == 1 else f'Addendum {i} posted.'}</p>"
+                pane = "<div id='innerTabContent'>" + ("".join(
+                    f"<div class='fieldset communications content-block'><h3 class='content-block-title'>Communication No.{i} - "
+                    f"11/0{4 + i}/2026 03:48 PM MST</h3><div class='communicationTabDescription'><p>"
+                    f"{COMM_TEXT if i == 1 else f'Addendum {i} posted.'}</p></div></div>"
                     for i in range(1, n + 1)) or NO_RESULTS) + "</div>"
             elif "innerTabId=questions-answers" in p:
                 HITS2["qa"] += 1
-                rows = ("<div class='qa-row'><span class='mets-field-label'>Question</span><div>Is the walkthrough mandatory?</div>"
-                        "<span class='mets-field-label'>Question Date</span><div>11/06/2026 08:00 AM MST</div>"
-                        "<span class='mets-field-label'>Answer</span><div>Yes, attendance is mandatory.</div>"
-                        "<span class='mets-field-label'>Answer Date</span><div>11/06/2026 01:00 PM MST</div></div>"
-                        if os.environ.get("FAKE_QA") else NO_RESULTS)
-                pane = ("<div id='qa'><div class='mets-field'><span class='mets-field-label'>Question Acceptance Deadline</span>"
-                        "<div class='mets-field-body'>11/17/2026 12:00 AM MST</div></div><div class='mets-field'>"
-                        f"<span class='mets-field-label'>Closing Date</span><div class='mets-field-body'>{_ahead(21)} 02:00 PM MST</div></div>{rows}</div>")
+                rows = ("<tr class='mets-table-row odd' id='9901533414'><td class='questionNo'>Q1</td><td class='questionAnswer'>"
+                        "<div class='subjectQuestionContainer'><div class='questionAnswerTitle expandable' data-type='question'>"
+                        "<svg class='mets-icon svg-arrow-right'></svg><span class='accessibility-hidden'>Arrow Right</span>"
+                        "<strong>Question: Walkthrough</strong></div><div id='questionContainer_9901533414'>Is the walkthrough mandatory?</div></div>"
+                        "<div class='answerContainer'><strong class='questionAnswerTitle' data-type='answer'>Answer:</strong>"
+                        "<div class='italic' id='answerContainer_9901533414'>Yes, attendance is mandatory.</div></div></td>"
+                        "<td class='questionDate'>11/06/2026 08:00 AM MST</td><td class='answerDate'>11/06/2026 01:00 PM MST</td></tr>"
+                        "<div class='mets-pagination'><span class='mets-total-elements-display'>1 results found</span></div>"
+                        if os.environ.get("FAKE_QA") else "")
+                pane = ("<div id='innerTabContent'><form id='questionsAnswersSearchForm' class='content-block'>"
+                        "<h2 class='content-block-title'>Questions &amp; Answers</h2>"
+                        "<div class='mets-field'><span class='mets-field-label'>Question Acceptance Deadline</span>"
+                        "<div class='mets-field-body'>11/17/2026 12:00 AM MST ( 10d 16h 10m )</div></div><div class='mets-field'>"
+                        f"<span class='mets-field-label'>Closing Date</span><div class='mets-field-body'>{_ahead(21)} 02:00 PM MST</div></div>"
+                        "<table class='qnaTable'><thead><tr><th class='questionNo'>No <span class='accessibility-hidden'>Arrow Up</span></th>"
+                        "<th class='questionAnswer'>Question/Answer</th><th>Question Date</th><th>Answer Date</th></tr></thead><tbody>"
+                        f"{rows}<tr class='mets-table-row-empty'><td colspan='4'>No results match your criteria.</td></tr></tbody></table>"
+                        "</form></div>")
             return self._send(f"<h1>Bid</h1><div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>"
                               f"{docs}{tabs}{pane}<footer><p>Print Options</p><p>Terms of Use</p></footer>")
         if p.startswith("/dl/missing"):
@@ -923,15 +952,16 @@ s13 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CRED
 s13.ensure_login()
 _c0, _q0 = HITS2["comm"], HITS2["qa"]
 _e = bidnet.enrich(s13, {**_bid, "watched": True})
-check("logged in + watched: both tabs read; empty Communication tab stores nothing, Q & A keeps its deadline",
+check("logged in + watched: both tabs read; empty Communication tab stores nothing, Q & A keeps its deadline and zero items",
       s13.logged_in and HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and "communications" not in _e
-      and _e.get("qa") == {"questions_deadline": "2026-11-17", "items": []} and _e.get("prebid") and _e.get("documents"), _e)
+      and _e.get("qa") == {"questions_deadline": "2026-11-17", "items": [], "total": None} and _e.get("prebid") and _e.get("documents"), _e)
 os.environ["FAKE_COMM"], os.environ["FAKE_QA"] = "1", "1"
 _e = bidnet.enrich(s13, {**_bid, "watched": True})
 check("enrich picks up the notice and the answered question",
       _e.get("communications") == [{"no": "1", "date": "11/05/2026 03:48 PM MST", "text": COMM_TEXT}]
-      and (_e.get("qa") or {}).get("items") == [{"question": "Is the walkthrough mandatory?", "answer": "Yes, attendance is mandatory.",
-                                                  "question_date": "2026-11-06", "answer_date": "2026-11-06"}], _e)
+      and _e.get("qa") == {"questions_deadline": "2026-11-17", "total": 1,
+                           "items": [{"no": "Q1", "question": "Walkthrough: Is the walkthrough mandatory?", "answer": "Yes, attendance is mandatory.",
+                                      "question_date": "2026-11-06", "answer_date": "2026-11-06"}]}, _e)
 _c0, _q0 = HITS2["comm"], HITS2["qa"]
 _e = bidnet.enrich(s13, _bid)
 _e2 = bidnet.enrich(_types.SimpleNamespace(logged_in=False, page=s13.page, debug_dump=lambda tag: None), {**_bid, "watched": True})
