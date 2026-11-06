@@ -38,10 +38,14 @@ Two send paths, one gate:
           ("phone calls must be returned within 4 hours"), "the call" as an event ("within 2 hours of the call", "bill the call",
           "who takes the call") or negated ("don't call", "email, not phone"); text / ring / buzz / cell / number / talk / live /
           voicemail / Zoom / WhatsApp / FaceTime are refused in invite shapes ("text me", "my cell", "a good number to reach you",
-          "can we talk Monday", "talk soon", "go over it live", "ring you back"). A promise that Luke phones the reader's side is
-          refused too ("I'll give your office a call", "Luke will call Jake", "I'll ring around 4", "Luke takes calls after 5"),
-          while "give the inspector a call", "call in the locate ticket" and phone equipment ("the phone jack", "phone and data
-          cable", "the phone company") pass (review #4). Forms and proposals (not mail) may still print the number.
+          "can we talk Monday", "talk soon", "go over it live", "ring you back"). A promise that Luke phones ANYONE is refused
+          too, the reader's side ("I'll give your office a call", "Luke will call Jake", "I'll ring around 4", "Luke takes calls
+          after 5", review #4) and third parties alike ("I'll give the inspector a call", "We'll call the Town for the gate code",
+          "Let me give the inspector a call", "I'll phone the County tomorrow", review #5: no operator promises that Luke will
+          phone anyone); field procedure ("We'll call 811", "We'll call for the final inspection", "We'll call in the inspection"),
+          the reader told to call someone ("Give the inspector a call before you pour", "call in the locate ticket"), third
+          parties calling each other, naming ("I'd call that a fair price") and phone equipment ("the phone jack", "phone and data
+          cable", "the phone company") pass. Forms and proposals (not mail) may still print the number.
         hz.py's own warnings (adverbs, the 90-word target, long sentences, 3+ sentence paragraphs) are returned, printed by the
         CLI, and do not refuse: SKILL.md calls 150 the hard cap and 90 the target, and the adverb warns are discretionary.
     effective_asks(declared, inbound)   asks raise the word budget (cap max(150, 45 x asks)). Without the email being answered
@@ -215,13 +219,14 @@ def link_problems(text, where="body"):
 # and every "phone" / "telephone" in our own text is refused unless it is one of the allowed uses below; words too common to refuse
 # outright (text, ring, cell, number, talk, chat, voicemail, Zoom) are refused in invite shapes (INVITES).
 #   allowed: trade terms (on-call, service / emergency / after-hours / conference / pre-bid call, call-out, call list / log / rate /
-#            response, a call-back within 2 hours, calls for service, "call for bids", "the right call", per call); a third party
-#            calling or being called ("the City will call us", "call the Town procurement office", "give the inspector a call",
-#            "a call with the County", "call Silas"); someone else's phone ("your techs carry a cell phone", "his phone number is on
-#            the W-9", "the dispatcher answers the phone", "Phone: 719-694-0515"); photos ("photos from my phone"); a negation that
-#            governs the word ("don't call", "no phone call needed", "rather than a phone call", "email, not phone"). Plural
-#            "calls" / "phone calls" (RFP wording: "phone calls must be returned within 4 hours") pass unless they invite ("calls
-#            are fine", "I take calls after 5").
+#            response, a call-back within 2 hours, calls for service, "call for bids", "the right call", per call); field procedure
+#            (calling 811, calling for / calling in an inspection or locate); a third party calling or being called, unless Luke's
+#            side promises the call ("the City will call us", "call the Town procurement office", "give the inspector a call",
+#            "a call with the County", "call Silas"; never "I'll call the Town", review #5); someone else's phone ("your techs
+#            carry a cell phone", "his phone number is on the W-9", "the dispatcher answers the phone", "Phone: 719-694-0515");
+#            photos ("photos from my phone"); a negation that governs the word ("don't call", "no phone call needed", "rather
+#            than a phone call", "email, not phone"). Plural "calls" / "phone calls" (RFP wording: "phone calls must be returned
+#            within 4 hours") pass unless they invite ("calls are fine", "I take calls after 5").
 LUKE_CELL = "7202751554"                                     # (720) 275-1554, compared digits-only
 _LOCAL = LUKE_CELL[3:]                                       # 2751554: the number without its area code
 PHONE_FIX = ("No phone number or call invite in email (Luke 2026-11-06): answer by email; at most add 'Email is the best way to "
@@ -421,8 +426,12 @@ _TRADE_AFTER = re.compile(
     r"| for (?:a |an |the |your |all |each |any )?(?:(?:utility|811|one-?call|line) )?(?:locates?|locate tickets?)\b"   # call for a locate
     r"| for (?:a |an |the |your |all |each |any |(?:the |a |an )?(?:final|rough-?in|framing|footing|city|county|town|state) )?"
     r"(?:inspections?|inspectors?)\b"                                                  # calling for inspections
-    r"| in (?:the |a |an |your |our )?(?:(?:utility|811|one-?call) )?(?:locates?|locate tickets?|tickets?|work orders?|"
-    r"service requests?)\b"                                                             # call in the locate ticket
+    r"| in (?:the |a |an |your |our )?(?:(?:utility|811|one-?call|final|rough-?in|framing|footing|city|county|town|state) )?"
+    r"(?:locates?|locate tickets?|tickets?|work orders?|service requests?|inspections?)\b"   # call in the locate / the inspection
+    r"| (?:811|911)\b"                                                                  # we'll call 811 before we dig (review #5)
+    # naming, not phoning (review #5, as on the Mac): "I'd call that a fair price", "We call this Option B"
+    r"| (?:this|that|it|the (?:job|project|work|scope|site|lot|bid|item|unit|line)) (?:a|an|the|extra|option|phase|part|done|"
+    r"complete|finished|final|base|alternate|our|substantially|even|good|fair)\b"
     r"| (?:is|was|has been|gets|got) (?:placed|received|logged|made|answered|dispatched|closed)\b| attention\b"
     r"|[- ]?backs? (?:within|response|time|in \d|inside|requirement|window|guarantee|of \d|under)\b"
     r"| it\b(?! in\b))", re.I)
@@ -456,7 +465,11 @@ _NOT_NAMES = frozenset(
 
 # review 2026-11-06 #4: a promise that Luke phones the reader's side. The subject is ours and stands right before the verb ('I'll',
 # 'We'll be', 'Luke will', 'he can', 'I'm happy to'); the object is the reader or theirs ('your office', 'your PM', 'your cell', 'the
-# shop', 'Jake', 'them'). "Give the inspector a call" (no subject of ours) and "We'll call the Town" stay third-party wording.
+# shop', 'Jake', 'them'). Review #5 (CEO session 2026-11-06, Luke's rule: no operator promises that Luke will phone anyone): with a
+# helper or contraction ('I'll', 'We'll', 'Luke can', 'let me') the promise is refused whatever the object ("We'll call the Town
+# for the gate code", "I'll give the inspector a call"); field procedure (811, calling for / in an inspection or locate, in
+# _TRADE_AFTER) and naming ("I'd call that a fair price") still pass, and "Give the inspector a call" (no subject of ours) is the
+# reader's call.
 _OURS = (r"\b(?P<subj>i|we|luke|he|brown bison)(?:'ll|'d|'m|'s|'re)?"
          r"(?: (?:will|would|can|could|shall|should|may|might|must|am|is|are|be|going to|gonna|plan to|plans to|want to|wants to|"
          r"need to|needs to|have to|has to|try to|tries to|also|just|then|probably|definitely|gladly|happily|quickly|first|still|"
@@ -487,6 +500,26 @@ def _reader_side(after):
     """'your office', 'the shop', 'Jake', 'them' right after the verb: the reader's side, or someone Luke would be phoning."""
     m = _READER_SIDE.match(after)
     return bool(m) and not (m.group("n") and m.group("n").lower().rstrip(".") in _NOT_NAMES)
+
+
+_LET_ME = re.compile(r"\blet (?:me|us)(?: (?:just|quickly|also|first|go ahead and))* $", re.I)
+_FIELD_GIVE = re.compile(r"^ (?:811|911)\b")                 # we'll give 811 a call
+# review #5: ring as a verb, or 'give X a ring / buzz', promised by Luke's side to anyone ("I'll ring the inspector Monday", "I'll
+# give the inspector a ring"); not a bell ("We'll ring the doorbell")
+_RING_VERB = re.compile(r"(?<![\w-])ring(?![\w-])(?= (?:(?:the|your|their|his|her|its|each|every|any|that|those|these|this) "
+                        r"(?!(?:door ?)?bells?\b|chimes?\b|buzzer\b)|(?:them|him|her)\b|(?-i:[A-Z])))", re.I)
+_GIVE_RING = re.compile(r"\bgive (?P<obj>(?:[\w'-]+ ){1,3}?)a (?:quick |short |brief |fast )?(?:ring|buzz|holler|shout|bell|tinkle)\b",
+                        re.I)
+
+
+def _ours_promise(t, s, before):
+    """Review #5: the clause before position s ends with Luke's side promising the call: a subject of ours with a helper or
+    contraction ('I'll ', 'We'll ', 'Luke can ', 'he will ' when he is Luke) or 'let me ' / 'let us '. A bare 'We ' is not a promise
+    ('We call this Option B')."""
+    if _LET_ME.search(before):
+        return True
+    m = _OURS_SUBJ.search(before)
+    return bool(m) and len(m.group(0).strip()) > len(m.group("subj")) and _ours_subject(t, s, before)
 
 # "the call" as an event in RFP / trade wording (review 2026-11-06 #3): measured from it, billed, logged, answered by someone else
 _DET = r"(?:the|a|an|each|every|any|that|this|one|such)"
@@ -728,10 +761,14 @@ def _call_ok(t, s, e):
     if first_obj:
         return False
     give = _GIVE_OBJ.search(before)                          # I'll give your office a call / Luke will give Jake a call
-    if give and _ours_subject(t, s - len(before) + give.start(), before[:give.start()]) and _reader_side(" " + give.group("obj")):
-        return False
-    if not give and _ours_subject(t, s, before) and _reader_side(after):
-        return False                                         # Luke will call your office / the shop / Jake
+    if give:
+        gs, gb = s - len(before) + give.start(), before[:give.start()]
+        if _FIELD_GIVE.match(" " + give.group("obj")):
+            return True                                      # we'll give 811 a call before we dig
+        if _ours_promise(t, gs, gb) or (_ours_subject(t, gs, gb) and _reader_side(" " + give.group("obj"))):
+            return False                                     # I'll give the inspector a call (review #5), let me give your PM a call
+    elif _ours_promise(t, s, before) or (_ours_subject(t, s, before) and _reader_side(after)):
+        return False                                         # I'll call the Town (review #5), Luke will call your office / Jake
     if _OTHER_SUBJ.search(before):
         return True                                          # their crew will call the Town
     give = _GIVE_THIRD.search(before)
@@ -808,6 +845,13 @@ def call_invites(text):
     for m in _HIS_LINE.finditer(t):
         if _luke_near(t, m.start()) and not _NEG.search(_before(t, m.start())):
             hits.append((m.start(), m.end(), m.group(0)))
+    for rx in (_RING_VERB, _GIVE_RING):                      # review #5: I'll ring the inspector, I'll give the Town a ring
+        for m in rx.finditer(t):
+            before = _before(t, m.start())
+            if rx is _GIVE_RING and _FIELD_GIVE.match(" " + m.group("obj")):
+                continue
+            if not _NEG.search(before) and _ours_promise(t, m.start(), before):
+                hits.append((m.start(), m.end(), _snip(t, m.start(), m.end()) if rx is _RING_VERB else m.group(0)))
     found, last = [], -1
     for s, e, phrase in sorted(hits):
         if s >= last and phrase.lower() not in (f.lower() for f in found):

@@ -1,5 +1,5 @@
 {
- "_about": "Luke's no-phone rule (2026-11-06), the shared case list for both email gates: pioneerleads scripts/humanize_gate.py (tests/test_send_gate.py) and, on the Mac, brown-bison-gov data/phone_gate.py (report only: test_mac_phone_gate_parity_report). 'cell': Luke's number in a form a gate must refuse; 'not_cell': other numbers that must pass; 'refuse': call invites; 'pass': trade wording, third parties, photos, negations. Builder + review lists, 2026-11-06; review #3 (2026-11-06): callback promises, more invite shapes, split / spelled forms of the cell, and RFP 'the call' wording. Review #4 (2026-11-06 13:40 MT probe): first-person promises to call or ring the reader's side ('I'll give your office a call', 'Luke will call Jake'), plural calls / callbacks offered, bare cell / text / mobile offers, filler before talk / hop on, talk-soon times, Teams / Meet / sync-up invites, SMS / Signal / voice notes; phone as equipment (jack, cable, VoIP system, poles, the phone company), negations ('better than a call', 'can't talk on the phone') and locate / inspection calls must pass.",
+ "_about": "Luke's no-phone rule (2026-11-06), the shared case list for both email gates: pioneerleads scripts/humanize_gate.py (tests/test_send_gate.py) and, on the Mac, brown-bison-gov data/phone_gate.py (report only: test_mac_phone_gate_parity_report). 'cell': Luke's number in a form a gate must refuse; 'not_cell': other numbers that must pass; 'refuse': call invites; 'pass': trade wording, third parties, photos, negations. Builder + review lists, 2026-11-06; review #3 (2026-11-06): callback promises, more invite shapes, split / spelled forms of the cell, and RFP 'the call' wording. Review #4 (2026-11-06 13:40 MT probe): first-person promises to call or ring the reader's side ('I'll give your office a call', 'Luke will call Jake'), plural calls / callbacks offered, bare cell / text / mobile offers, filler before talk / hop on, talk-soon times, Teams / Meet / sync-up invites, SMS / Signal / voice notes; phone as equipment (jack, cable, VoIP system, poles, the phone company), negations ('better than a call', 'can't talk on the phone') and locate / inspection calls must pass. Review #5 (CEO session 2026-11-06, Luke's rule that no operator promises Luke will phone anyone): a first-person subject (I / we / let me / Luke / he meaning Luke) promising to call, phone or give a call to ANY person or organisation is refused, third parties included ('I'll give the inspector a call', 'We'll call the Town for the gate code', 'I'll phone the County tomorrow'); calling 811, calling for / calling in an inspection or locate, imperatives to the reader ('Give the inspector a call before you pour'), third parties calling each other and naming ('I'd call that a fair price') pass.",
  "cell": [
   "(720) 275-1554",
   "720-275-1554",
@@ -331,7 +331,19 @@
   "Do you have 10 minutes this afternoon to go over the scope?",
   "Hmu if you have questions on the scope.",
   "Holla at me if the drawings don't make sense.",
-  "Luke will hit you up Monday."
+  "Luke will hit you up Monday.",
+  "I'll give the inspector a call.",
+  "Let me give the inspector a call.",
+  "I'll call the Town procurement office Monday.",
+  "We'll call the Town for the gate code.",
+  "Luke will call the County Monday.",
+  "Luke will call the inspector Monday.",
+  "I'll call the supplier about lead times.",
+  "We'll call the inspector once the forms are set.",
+  "We'll call Xcel to schedule the meter pull.",
+  "Luke can call the buyer Monday to ask.",
+  "I'll phone the County tomorrow.",
+  "We'll reach out to the Town by phone."
  ],
  "pass": [
   "The Town needs an on-call HVAC firm.",
@@ -517,6 +529,14 @@
   "Call for a locate three business days ahead.",
   "We'll be calling for inspections at each phase.",
   "Your dispatcher will text you the ETA.",
-  "Give the inspector a call before you pour."
+  "Give the inspector a call before you pour.",
+  "We'll call 811 before we dig.",
+  "We'll call for the final inspection next week.",
+  "We'll call in the inspection once the trench is open.",
+  "Your crew calls 811 before digging.",
+  "I'd call that a fair price.",
+  "We call it the north lot.",
+  "The County will call us for each repair.",
+  "Their crew will call the Town."
  ]
 }

@@ -692,8 +692,10 @@ def test_split_and_spelled_cell_shows_what_it_found():
 # invites, SMS / Signal / voice notes) and RFP / trade lines that were refused (phone equipment, the phone company, locate and
 # inspection calls, "better than a call", "can't talk on the phone"). The lines are the tail of tests/phone_cases.json from the first
 # review #4 entry on; each goes through check() (signature tail) AND the connector hook, wrapped as a whole email to nina@example.gov.
-REVIEW4_REFUSE = CALL_INVITES[CALL_INVITES.index("I'll give your office a call Monday."):]
-REVIEW4_PASS = TRADE_WORDS[TRADE_WORDS.index("Email works better than a call for me."):]
+REVIEW4_REFUSE = CALL_INVITES[CALL_INVITES.index("I'll give your office a call Monday."):
+                              CALL_INVITES.index("Luke will hit you up Monday.") + 1]
+REVIEW4_PASS = TRADE_WORDS[TRADE_WORDS.index("Email works better than a call for me."):
+                           TRADE_WORDS.index("Give the inspector a call before you pour.") + 1]
 NINA = "Hi Nina,\n\n{}\n\nThanks Nina,\n\n" + SIG
 
 
@@ -716,7 +718,7 @@ def test_review4_lines_through_check_and_the_hook(expect, sentence):
         assert _denied(out) and "call invite" in _reason(out) and PHONE_FIX in _reason(out), (sentence, out)
 
 
-@pytest.mark.parametrize("sentence", ["Silas said he will call your office about the boiler.", "We'll call the Town for the gate code.",
+@pytest.mark.parametrize("sentence", ["Silas said he will call your office about the boiler.", "Jake said he'll call the Town.",
                                       "Your super can call the inspector.", "We'll dial back the supply air setpoint after hours.",
                                       "Callback work is billed at the regular rate.", "We'll test the elevator phone monthly.",
                                       "Put your phone number in the signature block of the bid form.",
@@ -730,8 +732,58 @@ def test_review4_neighbours_still_pass(sentence):
 
 
 @pytest.mark.parametrize("sentence", ["He'll call your PM Monday.", "I'll call the office tomorrow.", "Reach me on the desk phone.",
-                                      "Callbacks work best after 5.", "Got 5 minutes to go over the bid?", "Send me a Zoom link."])
+                                      "Callbacks work best after 5.", "Got 5 minutes to go over the bid?", "Send me a Zoom link.",
+                                      "We'll call the Town for the gate code."])
 def test_review4_neighbours_still_refused(sentence):
+    """'We'll call the Town for the gate code.' passed here until review #5 (CEO session 2026-11-06): a first-person promise to call
+    a third party is now refused too."""
+    assert gate.call_invites(sentence), sentence
+
+
+# Review #5 (CEO session 2026-11-06, Luke's rule that no operator ever promises Luke will phone anyone; plans never route work
+# through Luke phoning): a first-person subject (I / we / let me / Luke / he meaning Luke) promising to call, phone or give a call
+# to ANY person or organisation is refused, third parties included. Field procedure (calling 811, calling for / calling in an
+# inspection or locate), the reader told to call a third party, third parties calling each other and naming still pass. The lines
+# are the tail of tests/phone_cases.json after review #4 (lines already in the list are not repeated there, so the pass tail is
+# REVIEW5_PASS minus four review #4 lines); each goes through check() AND the connector hook as a whole email to nina@example.gov.
+REVIEW5_REFUSE = ["I'll give the inspector a call.", "Let me give the inspector a call.", "I'll call the Town procurement office Monday.",
+                  "We'll call the Town for the gate code.", "Luke will call the County Monday.", "Luke will call the inspector Monday.",
+                  "I'll call the supplier about lead times.", "We'll call the inspector once the forms are set.",
+                  "We'll call Xcel to schedule the meter pull.", "Luke can call the buyer Monday to ask.",
+                  "I'll phone the County tomorrow.", "We'll reach out to the Town by phone."]
+REVIEW5_PASS = ["We'll call 811 before we dig.", "We'll call for the final inspection next week.",
+                "We'll call in the inspection once the trench is open.", "We'll be calling for inspections at each phase.",
+                "Give the inspector a call before you pour.", "Your crew calls 811 before digging.", "I'd call that a fair price.",
+                "We call it the north lot.", "Please call in the locate ticket before Monday.", "The County will call us for each repair.",
+                "Their crew will call the Town.", "Email works better than a call for me."]
+
+
+def test_review5_lines_are_in_the_shared_list():
+    assert CALL_INVITES[-len(REVIEW5_REFUSE):] == REVIEW5_REFUSE
+    assert TRADE_WORDS[TRADE_WORDS.index("Give the inspector a call before you pour.") + 1:] == [x for x in REVIEW5_PASS
+                                                                                             if x not in REVIEW4_PASS]
+    assert set(REVIEW5_PASS) <= set(TRADE_WORDS) and not set(REVIEW5_REFUSE) & set(TRADE_WORDS)
+    assert (len(LUKE_CELL_FORMS), len(NOT_LUKE_CELL), len(CALL_INVITES), len(TRADE_WORDS)) == (51, 12, 276, 192)
+
+
+@pytest.mark.parametrize("expect,sentence", [("deny", x) for x in REVIEW5_REFUSE] + [("allow", x) for x in REVIEW5_PASS])
+def test_review5_lines_through_check_and_the_hook(expect, sentence):
+    test_review4_lines_through_check_and_the_hook(expect, sentence)
+
+
+@pytest.mark.parametrize("sentence", ["We'll give 811 a call before we dig.", "We call this Option B.", "Jake said he'll call the Town.",
+                                      "We'd call this extra work.", "Have your super call the Town for the gate code.",
+                                      "We'll ring the doorbell at the site.", "We'll ring up the order at the counter.",
+                                      "Your super can ring the inspector."])
+def test_review5_neighbours_pass(sentence):
+    assert gate.call_invites(sentence) == [] and gate.phone_problems(sentence) == [], (sentence, gate.call_invites(sentence))
+
+
+@pytest.mark.parametrize("sentence", ["Luke said he will call the Town Monday.", "Let me call the inspector.",
+                                      "I'm going to call the County tomorrow.", "We'll give the Town a call about the gate code.",
+                                      "Luke and I will call the supplier Monday.", "I'll call them Monday.",
+                                      "I'll ring the inspector Monday.", "I'll give the inspector a ring."])
+def test_review5_neighbours_refused(sentence):
     assert gate.call_invites(sentence), sentence
 
 
