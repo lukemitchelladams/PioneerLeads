@@ -61,7 +61,7 @@ Send to jlachermeier@adcogov.org (cover p.1; §26.1.1 p.7: use "the Point of Con
 ## D. Sign-in
 
 - The IFB does not describe an attendance sheet. The cover sheet says "Mandatory Pre-Bid Meeting" and the §12 heading says "PRE-BID CONFERENCE AND WALK-THROUGH IS MANDATORY", yet §12.1 (p.4) says "A representative of the Contractor is recommended to attend this conference". Treat it as mandatory: being on the record as present protects the bid.
-- Sign as **Brown Bison Holdings LLC**. Print: Luke Adams, Owner, (720) 275-1554, luke@brownbisonco.com.
+- Sign as **Brown Bison Holdings LLC**. Print: Luke Adams, Operations Manager, (720) 275-1554, luke@brownbisonco.com.
 - Photograph the whole sheet with our line, the date and the header in frame. If cameras are barred, have the County rep confirm the line in front of you, then email Purchasing the same day to confirm Brown Bison Holdings LLC attended.
 - Note who is in the room (name, title, agency) and which person is Purchasing.
 

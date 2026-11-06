@@ -6,8 +6,8 @@ Append-only log plus a maintained "Current state" section. Read this first every
 
 **Company:** Brown Bison Holdings LLC — government contracting (HVAC / plumbing / electrical / landscaping /
 facilities). **UEI EV9QPAPM4C47. CAGE 20VU2.** SAM registered 2026-05-21, expires 2027-05-21 (renew April 2027).
-NAICS 238220. 3832 Rabbit Mountain Rd, Broomfield, CO 80020. Owner: Luke Adams, luke@brownbisonco.com,
-(720) 275-1554. Signature location should read Denver, CO.
+NAICS 238220. 3832 Rabbit Mountain Rd, Broomfield, CO 80020. Email signature (Luke 2026-11-06, four lines, no phone):
+Luke Adams / Operations Manager / Brown Bison Holdings LLC / luke@brownbisonco.com.
 
 **Active pursuits (priority order per Luke, 2026-10-15):**
 1. **DCSD (Douglas County School District RE-1) HVAC bid.** Luke: "do everything we can to be as competitive
@@ -962,3 +962,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Dashboard blobs now: bids 8d52d0b251bda599b62197686e417dd8 (v140, sha 1ad8948a2e2e), events 45999d5ec412417f1b3bee84fdd2fb07 (v142, sha 0a439adba795), sources da982cc52a7f3b22fb902441ea378129 (v127, sha ca4bdce415d9), portal_feed 67e4a4123a371f7f335e07e201d68bea (v76, sha d87bb9592b20), doc_gaps d5686214cf92517ed4fdf97a034fecb2 (v8).
 - 2026-11-06 20:50Z (HQ scan 20:36Z, gap=1h): BidNet logged in attempt 1 at 20:37:07Z (no code, no robot; 2 of 2 hourly logins passed). All 4 live: 809 rows / 195 matching (bidnet 630/81, samgov 110, vss 67/3, bonfire 2/1). Pushed 4826c82, EXIT 0. NEW: CDOC DQ 27-0132 Boiler Chemicals & Treatment Services BVCC (BidNet 0000442938 / VSS DQ1-CAAA-2027000132, closes 11/30): scanner downloaded the full 10-file package; filed into bids/doc-bvcc-boiler-chemicals-dq27-0132 (8ee1ecf); agent filling README/pipeline/H2GS draft (same CDOC DQ format as Trinidad TCF; H2GS first per Luke's rule). Centennial 0000442569 On Call Building Department Services (plan review/inspections, professional services) = NO. Grandview roof: more docs (not ours). New CLAUDE.md rules from the Mac today: no phone/call invites in email, 4-line signature, CALL BRIEF to Luke when someone wants a call; Parker 26-021-1 went NO-BID 12:03 MT (no prices from Brad).
 - 2026-11-06 21:1xZ (HQ): CDOC BVCC DQ 2027000132 = GO (e82a092): MANDATORY site visit Wed 11/18 10:00 Buena Vista (Exhibit G + photo ID per attendee ahead: DQ sec. 4 says by 11/16, Exhibit G says ten days = 11/08; following the stricter), due Mon 11/30 14:00 MST on BidNet, questions by 11/23 12:00 to SPOC Sheila Lucero doc_purchasing@state.co.us only. H2GS asked (msg 1a1b2a5e01576f45), 4-firm bcc group (msg 1a1b2a5e97fa8bc7); pricing by 11/20. LUKE: decide who attends 11/18 (3 h drive) and get his own Exhibit G in by Mon 11/09; backup sub matters (TCF lesson).
+
+## 2026-11-06 ~14:30 MT: phone gate review #4 (cloud gate, scripts/humanize_gate.py)
+- 63 refuse + 19 pass lines from the 13:40 MT probe added to tests/phone_cases.json (refuse 264, pass 184). The gate now refuses first-person promises to call or ring the reader's side ('I'll give your office a call', 'Luke will call Jake'), plural calls / callbacks offered, bare cell / text / mobile offers, filler before talk / hop on, talk-soon times, Teams / Meet / sync-up invites and SMS / Signal / voice notes; phone equipment, the phone company, locate / inspection calls and 'better than a call' pass.
+- owner_only() accepts 'Luke Adams <lukemitchelladams@gmail.com>' and '<luke@brownbisonco.com>' (exact address after parsing; any outside recipient still linted).
+- The Mac copy brown-bison-gov/data/tests/phone_cases.json is NOT synced from here (other repo).

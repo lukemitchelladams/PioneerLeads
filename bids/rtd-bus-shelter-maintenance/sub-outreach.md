@@ -7,7 +7,7 @@ Emails were found via search snippets and are NOT verified; expect some bounces.
 | Company | City | Email | Phone | Status |
 |---|---|---|---|---|
 | Lightning Mobile Services / Colorado Graffiti Blasters | Commerce City | info@lminc.net | 720-456-9191 | **REPLIED 2026-10-19: YES, interested** (see below) |
-| Colorado Power Wash | Denver area | info@coloradopowerwash.com | 720-675-7059 | **REPLIED 2026-10-19: interested, wants a call Tue 10/20** |
+| Colorado Power Wash | Denver area | info@coloradopowerwash.com | 720-675-7059 | **REPLIED 2026-10-19: interested, wants a call Tue 10/20** (SUPERSEDED 2026-11-06: email only; the Mon 11/16 call was cancelled by email; the Mac owns CPW) |
 | Platinum Pressure Washing & Window Cleaning | Denver | Info@platinumpressurewash.com | 303-931-7300 | **Sent 2026-10-19** |
 | Wash On Wheels (since 1985) | Englewood | info@washonwheels.net | 303-937-7181 | Sent 10/28 with docs (10/19 draft was never sent) |
 | The Wash Squad (franchise) | Centennial | colorado@thewashsquad.com | 303-900-8774 | Sent 10/28 with docs (10/19 draft was never sent) |

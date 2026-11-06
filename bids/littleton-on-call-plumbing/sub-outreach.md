@@ -56,6 +56,7 @@ Clock: plumber answers were asked for by **Thu 2026-10-23 17:00** (3 days); subm
 Email alone is not working. Today: send the follow-up below to the 5 delivered addresses AND work the phone list.
 
 ### Follow-up email (Luke sends from luke@brownbisonco.com, reply in the same thread; one per shop, swap [Name])
+**DO NOT SEND (bid closed 10/28).**
 Subject: Re: Littleton on-call plumbing contract - can you price it by Thursday?
 
 Hi [Name],

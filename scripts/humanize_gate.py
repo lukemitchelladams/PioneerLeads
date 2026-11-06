@@ -38,8 +38,10 @@ Two send paths, one gate:
           ("phone calls must be returned within 4 hours"), "the call" as an event ("within 2 hours of the call", "bill the call",
           "who takes the call") or negated ("don't call", "email, not phone"); text / ring / buzz / cell / number / talk / live /
           voicemail / Zoom / WhatsApp / FaceTime are refused in invite shapes ("text me", "my cell", "a good number to reach you",
-          "can we talk Monday", "talk soon", "go over it live", "ring you back"). Forms and proposals (not mail) may still print
-          the number.
+          "can we talk Monday", "talk soon", "go over it live", "ring you back"). A promise that Luke phones the reader's side is
+          refused too ("I'll give your office a call", "Luke will call Jake", "I'll ring around 4", "Luke takes calls after 5"),
+          while "give the inspector a call", "call in the locate ticket" and phone equipment ("the phone jack", "phone and data
+          cable", "the phone company") pass (review #4). Forms and proposals (not mail) may still print the number.
         hz.py's own warnings (adverbs, the 90-word target, long sentences, 3+ sentence paragraphs) are returned, printed by the
         CLI, and do not refuse: SKILL.md calls 150 the hard cap and 90 the target, and the adverb warns are discretionary.
     effective_asks(declared, inbound)   asks raise the word budget (cap max(150, 45 x asks)). Without the email being answered
@@ -51,7 +53,8 @@ Two send paths, one gate:
     attachment_problems(files)          plain-text, HTML, Markdown, RTF and .eml/.msg attachments are refused for outside mail (an
                          unlinted "cover letter"); PDFs, Office files, CSV and images are fine. A file NAME holding Luke's cell
                          is refused.
-    owner_only(rcpts)    True only when every recipient is exactly a bare ASCII address of Luke's own (OWN); that mail is exempt
+    owner_only(rcpts)    True only when every recipient is an ASCII address of Luke's own (OWN), bare or in the plain display-name
+                         form 'Luke Adams <addr>' / '<addr>'; that mail is exempt
     find_hz()            the hz.py that runs: ONLY the repo copy (.claude/skills/humanize/scripts/hz.py, reviewed and versioned);
                          a hand-made ~/.claude copy can be stale or edited, so it is never used; missing -> every check fails
     hook_decision(raw)   the PreToolUse decision for a Gmail connector send (None = no decision, else a deny payload)
@@ -113,6 +116,8 @@ LABEL = re.compile(r"^[A-Z0-9(][^:\n]{0,45}:\s+\S")         # hz.py's
 WORD = re.compile(r"[A-Za-z][A-Za-z'’]*")                     # hz.py's
 LINK = re.compile(r"(?i)(?:\b(?:https?|ftp)://|\bwww\.|(?<![@\w.-])[a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,24}/)")
 BARE_ADDRESS = re.compile(r"[a-z0-9._%+-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)+")
+# 'Luke Adams <addr>', '"Luke Adams" <addr>', '<addr>': a plain display name (letters, spaces, . ' -) and ONE bracketed address
+_DISPLAY_FORM = re.compile(r'(?:"(?P<qname>[A-Za-z][A-Za-z .\'-]{0,62})"|(?P<name>[A-Za-z][A-Za-z .\'-]{0,62}?))? ?<(?P<addr>[^<>\s"]+)>')
 REPLY_SUBJECT = re.compile(r"^\s*(?:re|fwd?|aw|sv)\s*:", re.I)
 TEXT_ATTACH_EXT = frozenset({".txt", ".text", ".md", ".markdown", ".htm", ".html", ".xhtml", ".mht", ".mhtml", ".eml", ".msg",
                              ".rtf", ".log"})
@@ -385,10 +390,10 @@ def _luke_near(t, s):
 # can't find it call me" and "why not give me a call" stay invites.
 _NEG = re.compile(r"(?:\b(?:don't|dont|do not|doesn't|does not|didn't|did not|can't|cant|cannot|can not|won't|will not|wouldn't|"
                   r"would not|shouldn't|should not|never|no|no need (?:to|for)|unable to|not able to|instead of|rather than|without|"
-                  r"in place of)|(?<!\bwhy )\bnot)"
+                  r"in place of|(?:better|easier|faster|quicker|simpler|more reliable|rather [\w']+) than)|(?<!\bwhy )\bnot)"
                   r"(?: (?:please|need|needs|to|have|has|be|able|take|taking|make|making|answer|return|get|jump|hop|on|a|an|the|any|"
                   r"for|set|setup|up|schedule|give|you|me|us|him|it|by|via|over|more|another|other|further|ever|again|phone|"
-                  r"telephone|quick|call|calls)){0,4} ?$", re.I)
+                  r"telephone|quick|call|calls|talk|speak|chat)){0,4} ?$", re.I)   # "can't talk on the phone", "better than a call"
 _FIRST = re.compile(r"\b(?:i|i'm|i'll|i'd|i've|me|my|mine|we|we're|we'll|we'd|we've|us|our|ours|luke|luke's|brown bison)\b", re.I)
 _PHOTO = re.compile(r"\b(?:photos?|pictures?|pics?|images?|videos?|camera|snapped|took|shot|screenshots?)\b", re.I)
 # trade / third-party wording in the same sentence that makes "phone" someone else's line (only when nothing in it is ours)
@@ -413,6 +418,11 @@ _TRADE_AFTER = re.compile(
     r"handling|takers?|intake|recordings?|tracking|accounting|premiums?|basis|threshold)\b"
     r"| for (?:new |additional |more )?(?:bids?|proposals?|quotes?|quotations?|qualifications?|service|tenders?|papers?|projects?|"
     r"submissions?|offers?|entries|applications?|vendors?|contractors?|interest|statements?|heat|heating|cooling|water|air)\b"
+    r"| for (?:a |an |the |your |all |each |any )?(?:(?:utility|811|one-?call|line) )?(?:locates?|locate tickets?)\b"   # call for a locate
+    r"| for (?:a |an |the |your |all |each |any |(?:the |a |an )?(?:final|rough-?in|framing|footing|city|county|town|state) )?"
+    r"(?:inspections?|inspectors?)\b"                                                  # calling for inspections
+    r"| in (?:the |a |an |your |our )?(?:(?:utility|811|one-?call) )?(?:locates?|locate tickets?|tickets?|work orders?|"
+    r"service requests?)\b"                                                             # call in the locate ticket
     r"| (?:is|was|has been|gets|got) (?:placed|received|logged|made|answered|dispatched|closed)\b| attention\b"
     r"|[- ]?backs? (?:within|response|time|in \d|inside|requirement|window|guarantee|of \d|under)\b"
     r"| it\b(?! in\b))", re.I)
@@ -443,6 +453,40 @@ _NOT_NAMES = frozenset(
     "ok okay thanks thank questions question quick the this that here there directly instead again sometime around once january "
     "february march april may june july august september october november december jan feb mar apr jun jul aug sep sept oct nov "
     "dec me. at in on to for about re regarding".split())
+
+# review 2026-11-06 #4: a promise that Luke phones the reader's side. The subject is ours and stands right before the verb ('I'll',
+# 'We'll be', 'Luke will', 'he can', 'I'm happy to'); the object is the reader or theirs ('your office', 'your PM', 'your cell', 'the
+# shop', 'Jake', 'them'). "Give the inspector a call" (no subject of ours) and "We'll call the Town" stay third-party wording.
+_OURS = (r"\b(?P<subj>i|we|luke|he|brown bison)(?:'ll|'d|'m|'s|'re)?"
+         r"(?: (?:will|would|can|could|shall|should|may|might|must|am|is|are|be|going to|gonna|plan to|plans to|want to|wants to|"
+         r"need to|needs to|have to|has to|try to|tries to|also|just|then|probably|definitely|gladly|happily|quickly|first|still|"
+         r"again|happy to|glad to|be sure to|make sure to|try and|to)){0,4}")
+_OURS_SUBJ = re.compile(_OURS + r" $", re.I)
+_STARTERS = frozenset("also so but yes no sorry hi hey hello just and or even still otherwise great sure fine he he'll he's he'd "
+                       "if when".split())
+_GIVE_OBJ = re.compile(r"\bgive (?P<obj>(?:[\w'-]+ ){1,3}?)a (?:quick |short |brief |fast )?$", re.I)
+_READER_SIDE = re.compile(r"^ (?:back )?(?:(?:you|ya|u|ur|them|him|her)\b|your\b(?! attention\b)|(?:the|that) (?:shop|office|yard|"
+                          r"front desk|desk|main line|line|cell|cellphone|mobile|number|landline|house|trailer|field office|"
+                          r"site office)\b|(?-i:(?P<n>[A-Z][A-Za-z][A-Za-z'.&-]*)))", re.I)
+
+
+def _ours_subject(t, s, before):
+    """True when the clause before position s ends with a subject of ours and its helper verbs ('I'll ', 'Luke will '). 'he' is
+    ours unless someone other than Luke is named earlier in the sentence ('Silas said he will call your office')."""
+    m = _OURS_SUBJ.search(before)
+    if not m:
+        return False
+    if m.group("subj").lower() != "he":
+        return True
+    sent = t[max((x.end() for x in _SENT_END.finditer(t, 0, s)), default=0):s]
+    names = [n for n in re.findall(r"\b[A-Z][a-z]+\b", sent) if n.lower() not in _NOT_NAMES and n.lower() not in _STARTERS]
+    return not names
+
+
+def _reader_side(after):
+    """'your office', 'the shop', 'Jake', 'them' right after the verb: the reader's side, or someone Luke would be phoning."""
+    m = _READER_SIDE.match(after)
+    return bool(m) and not (m.group("n") and m.group("n").lower().rstrip(".") in _NOT_NAMES)
 
 # "the call" as an event in RFP / trade wording (review 2026-11-06 #3): measured from it, billed, logged, answered by someone else
 _DET = r"(?:the|a|an|each|every|any|that|this|one|such)"
@@ -494,22 +538,35 @@ _CONNECT = r"connect(?=[.?!,;\n]| (?:by|on|over|via|this|next|tomorrow|today|lat
 _DAYS = r"(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)"
 _TALK_THIRD = (r"(?!(?: (?:it|this|that|things|them))?(?: (?:over|through))? (?:to|with|about) (?:the|your|their|his|her|its|a|an|"
                r"them|that|this|it|(?-i:[A-Z])))")                                     # talk (it over) with the inspector
+# review 2026-11-06 #4: filler between 'can we' / 'let's' and the verb ('should we just talk', 'can we jump on real quick'); hop / jump
+# on with no object ('Can we hop on?'), not 'jump on it' / 'hop on the lift'; sync up
+_FILLER = r"(?:(?:quickly|briefly|just|maybe|also|real quick|both|all|go ahead and|probably|still|even) )*"
+_HOP = (r"(?:hop|jump) on\b(?! (?:it|this|that|these|those|site|board|the|a|an|your|our|my|their|his|her|its|each|every|any|all|"
+        r"both)\b)")
+_SYNC = (r"sync(?: up)?\b(?! (?:the|your|our|their|it|this|that|these|those|schedules?|calendars?|files?|data|drawings?|"
+         r"folders?)\b)")
+_OFFER_ADJ = (r"(?:fine|best|better|easier|easiest|easy|good|great|ok|okay|quick|quicker|quickest|fast|faster|fastest|simpler|"
+              r"simplest|preferred|ideal|too|also|as well|for me|for us|for luke|way to go)")
+_ADV = r"(?: (?:usually|always|probably|much|way|a lot|often|just|really|also|still|definitely|totally))?"
+_CLAUSE_START = r"(?:^|(?<=\n)|(?<=[.!?;:,(] )|(?<=[.!?;:,(]))(?:(?:and|or|but|so|also|otherwise|else) )?"
 INVITES = tuple(re.compile(p, re.I) for p in (
-    r"\b(?:can|could|shall|should|may|might|would|will) (?:we|i) (?:quickly |briefly )?(?:talk|chat|speak|catch up|touch base|"
-    + _CONNECT + r")\b" + _THIRD_AFTER,                                                  # can we talk Monday?
-    r"\blet(?:'s| us) (?:quickly |briefly )?(?:talk|chat|speak|catch up|touch base|hop on|jump on|get on|" + _CONNECT + r")\b"
-    + _THIRD_AFTER,                                                                     # let's talk / let's connect
-    r"\b(?:talk|speak|chat)(?: (?:to|with) you)? (?:soon|later|tomorrow|tonight|then|next week|this week|" + _DAYS + r")\b"
-    r"(?! in the\b)",                                                                   # talk soon, talk to you soon
+    r"\b(?:can|could|shall|should|may|might|would|will) (?:we|i) " + _FILLER + r"(?:talk|chat|speak|catch up|touch base|"
+    + _HOP + r"|" + _SYNC + r"|" + _CONNECT + r")\b" + _THIRD_AFTER,                    # can we talk Monday? should we just talk?
+    r"\blet(?:'s| us) " + _FILLER + r"(?:talk|chat|speak|catch up|touch base|hop on|jump on|get on|" + _SYNC + r"|" + _CONNECT
+    + r")\b" + _THIRD_AFTER,                                                            # let's talk / let's just talk / let's connect
+    r"\b(?:talk|speak|chat)(?: (?:to|with) (?:you|ya|u))? (?:soon|later|tomorrow|tmrw|tmr|tmw|tomoz|2morrow|2moro|tonight|then|"
+    r"shortly|in a (?:bit|few|while|minute|min|sec|second)|in a few (?:minutes|mins|hours|hrs)|this (?:afternoon|evening|morning)|"
+    r"later today|first thing|real soon|next week|this week|" + _DAYS + r")\b(?! in the\b)",   # talk soon, talk tmrw, talk in a bit
     r"\b(?:a few|a couple(?: of)?|some|a|\d+|five|ten|fifteen|twenty|thirty)[ -](?:minutes?|mins?)(?: (?:to|for))? (?:talk|chat|"
     r"speak|connect|catch up|touch base)\b",                                            # a few minutes to talk
     r"\b(?:a|the|good|best|convenient|better|free) time (?:to|for (?:a|an)) (?:quick )?(?:talk|chat|speak|connect|catch up|"
     r"touch base|conversation)\b",                                                      # a good time to talk, find a time to talk
     r"(?<!feel )\b(?:free|available|happy|glad|open|around) (?:to|for) (?:a )?(?:quick |short |brief )?(?:talk|chat|speak|hop on|"
-    r"jump on|get on|conversation)\b" + _THIRD_AFTER,                                  # available to talk, free to chat
+    r"jump on|get on|conversation|" + _SYNC + r"|" + _CONNECT + r")\b" + _THIRD_AFTER,  # available to talk, free to connect
     r"\b(?:hit|ping) (?:me|us|luke) up\b", r"\bping (?:me|us|luke)\b(?! (?:by|on|via|over) e-?mail)",
     r"\b(?:hop|jump|get) on (?:a |an )?(?:zoom|teams|webex|google meet|meet|facetime|video)\b",
-    r"\b(?:set ?up|schedule|book|arrange|grab|do|have) (?:a|an) (?:quick |short |brief )?(?:zoom|teams|webex|facetime|video)\b",
+    r"\b(?:set ?up|schedule|book|arrange|grab|do|have) (?:a|an) (?:quick |short |brief )?(?:zoom|teams|webex|facetime|video|"
+    r"google meet|gmeet|skype|gotomeeting|goto meeting)\b",                             # could we do a Google Meet
     r"\bleave (?:me |us |luke )?(?:a |your )?(?:voicemail|voice mail|vm|voice message)\b"
     r"(?! (?:for|at|with|on) (?:the|your|their|his|her|its|(?-i:[A-Z])))",           # not 'leave a voicemail for Jane'
     r"\b(?:my|our|luke's) (?:voicemail|voice mail)\b",
@@ -542,7 +599,12 @@ INVITES = tuple(re.compile(p, re.I) for p in (
     r"\breach (?:me|us|luke)(?: directly)? (?:at|on) [+(]?\d",                          # reach me at <any number>
     r"\breachable (?:at|on) [+(]?\d",
     r"\bcalls (?:are|is) (?:fine|welcome|ok|okay|best|easiest|easier|great|good|quicker|faster)\b", r"\bcalls welcome\b",
-    r"\b(?:i|luke)(?:'ll|'m| will| can| do| am)? (?:take|return|answer|field) (?:your |any |phone )?calls\b",
+    r"\b(?:i|luke)(?:'ll|'m|'d|'s| will| can| do| am| is| would| also| usually| only| still| always| generally| normally)?"
+    r"(?: (?:happy|glad|able|willing|available|free|open) to)? (?:take|takes|taking|return|returns|returning|answer|answers|"
+    r"answering|field|fields|fielding) (?:your |any |phone |the |all |my )?calls\b",   # Luke takes calls after 5
+    r"\b(?:happy|glad|able|willing|available|free|open) to (?:take|return|answer|field) (?:your |any |phone |the |all )?calls\b"
+    r"(?! (?:from|for) (?:the |your |their )?(?:tenants?|residents?|customers?|dispatch|alarm|emergenc|after-hours|town|county|"
+    r"city))",                                                                         # happy to take calls after 5
     r"\b(?:i|we)(?:'d| would)? (?:prefer|like|rather) (?:phone )?calls\b",
     # review 2026-11-06 #3: invites the first list missed
     r"\bholler(?: at)? (?:me|us|luke)\b",                                               # holler at me
@@ -562,6 +624,56 @@ INVITES = tuple(re.compile(p, re.I) for p in (
     r"wiring|electrical|electric|circuits?|parts?|work|panels?|lines?|feeds?|video|stream|data|traffic|equipment|conductors?|"
     r"power|voltage|bus|front|edge|oak)\b)",                                           # go over it live, connect live
     r"\b(?:whats ?app|imessage|face ?time|telegram|wechat|viber)\b",                    # Hit me on WhatsApp, FaceTime me
+    # review 2026-11-06 #4 (13:40 MT probe): plain, casual and slangy drafting the lists above missed
+    _OURS + r" give (?:your (?:[\w'-]+ ){1,2}|(?:the|that) (?:shop|office|yard|front desk|desk|main line|line|cell|number|house|"
+    r"trailer)(?: [\w'-]+)? |(?-i:[A-Z][a-z]+) (?:(?-i:[A-Z][a-z]+) )?|them |her |him )a (?:quick |short |brief |fast )?(?:ring|"
+    r"buzz|holler|shout|bell|tinkle)\b",                                                # I'll give your shop a ring
+    _OURS + r" (?:(?:ring|buzz)(?: back)?|dial)(?= ?(?:[.,;:!?)\n]|$)| (?:you|ya|u|through|around|after|before|at|later|tomorrow|"
+    r"tonight|today|this|first|when|once|if|again|sometime|then|shortly|soon|asap|in a|in the (?:morning|afternoon|evening)|"
+    + _DAYS + r")\b)",                                                                   # I'll ring around 4, I'll ring through
+    _OURS + r" (?:try|ring|buzz|dial|text) (?:you|ya|u|your (?:[\w'-]+ )?(?:cell|cellphone|mobile|phone|line|office|shop|number|"
+    r"desk|landline|direct)|the (?:shop|office|front desk|desk|cell|line|number|landline|main line))\b",   # I'll try you at the shop
+    r"\b(?:he|i|luke) (?:doesn't|don't|does not|do not|can't|cannot|won't|didn't|did not|may not|might not) pick up\b"
+    r"(?! (?:the|a|an|your|our|his|my|it|them|plans|permits?|keys?|materials?|parts?|supplies|bids?|packets?|documents?|docs)\b)",
+    r"\bleave (?:me |us |luke |him )?(?:a |your )?(?:message|msg)\b(?! (?:in|on|at|for|with|through|via) (?:the|your|their|his|"
+    r"her|its|a|an|bidnet|(?-i:[A-Z])))",                                               # leave a message (and he'll call back)
+    _CLAUSE_START + r"(?:phone )?calls(?: (?:after|before|between|around|until|from|on|in the) [\w:]+(?: ?(?:pm|am|p\.m\.|a\.m\.))?)?"
+    r"(?: (?:work|works|would work)(?: (?:best|better|fine|great|too|well|for (?:me|us|luke)))\b| (?:are|is|'re|would be)" + _ADV
+    + r" (?:fine|welcome|ok|okay|best|easiest|easier|great|good|quicker|faster|better|preferred|too)\b)",   # calls after 5 are best
+    r"\b(?:a |the )?call-?back(?: works\b| would work\b| (?:is|'s|would be)" + _ADV + r" (?:too|also|fine|welcome|ok|okay|best|"
+    r"easiest|easier|great|good|quicker|faster|better|preferred)\b)",                   # a callback works too (not 'callback work')
+    r"\bcall-?backs(?: would work\b| work (?:best|better|fine|great|too|well|for (?:me|us|luke))\b| (?:are|would be)" + _ADV
+    + r" (?:too|also|fine|welcome|ok|okay|best|easiest|easier|great|good|quicker|faster|better|preferred)\b)",   # callbacks are fine
+    _CLAUSE_START + r"(?:cell|cellphone|cell phone|mobile|mobile phone|text|texting|texts|txt|sms|a text|a quick text)(?: (?:number|"
+    r"line|message|msg))?(?: (?:after|before|until|around) [\w:]+(?: ?(?:pm|am))?)?(?: (?:works?|would work|will work|will do)\b|"
+    r"(?:'s| is| are| would be| will be)" + _ADV + r" (?:the |a )?" + _OFFER_ADJ + r"\b)",  # Cell works. Text works too.
+    r"\b(?:try|get|hit|reach|catch|grab|find|ring|buzz|ping|text|message|msg)(?: (?:me|us|luke)) (?:on|at|via) (?:the |my |our |"
+    r"luke's )?(?:cell|cellphone|cell phone|mobile|mobile phone|digits|personal line|direct line)\b",   # try me on the cell
+    r"\b(?:my|our|luke's) (?:digits|office number|main number|shop number|shop line|main line|business line|business number|"
+    r"work number|work cell|work phone|office phone|shop phone|home number|home phone)\b",   # our office number is on the website
+    r"\b(?:number|cell|phone|mobile|digits|contact info)(?:'s| is| are)? (?:in|on|at the bottom of|below|under) (?:my|our|luke's) "
+    r"(?:sig|signature|email signature|e-?mail sig|footer|card|business card)\b(?! (?:block|line|page|sheet)s?\b)",   # in my sig
+    r"\b(?:cell|cellphone|mobile|phone|direct|contact|office|callback) (?:number|#|line)s? (?:on|in|from|at the bottom of|under|"
+    r"listed on|listed in) (?:my|our|luke's)\b",                                        # use the cell number on my W-9
+    r"\b(?:my|our|luke's) (?:phone |cell )?lines? (?:is|are|'s|stays?)(?: (?:always|still|usually|wide))? open\b",   # my line is open
+    r"\b(?:send|shoot|drop|fire|flick|leave|text) (?:me|us|luke) (?:an? )?(?:quick |short )?(?:sms|txt|text message|voice note|"
+    r"voice memo|voice message|voicemail|voice mail|vm)\b",                             # send me an SMS, send me a voice note
+    r"\b(?:message|msg|dm|text|ping|hit|find|reach|contact|catch|call) (?:me|us|luke) (?:on|via|over|through) (?:signal|whatsapp|"
+    r"telegram|imessage|sms|wechat|viber|messenger)\b",                                 # message me on Signal
+    r"\b(?:easier|quicker|faster|simpler|better|best|easiest|quickest|fastest|simplest|nicer) (?:to|if we|if i|if we just) "
+    r"(?:just )?(?:talk|chat|speak|connect|catch up|touch base|" + _HOP + r")\b" + _TALK_THIRD + _THIRD_AFTER,   # easier to talk?
+    r"\b(?:talk|chat|speak)(?:ing)? (?:than|instead of|rather than|vs\.?|versus) (?:type|typing|write|writing|e-?mail|e-?mailing|"
+    r"text|texting|messages?|messaging)\b",                                             # quicker to talk than type
+    r"\b(?:rather|prefer to) (?:just )?(?:talk|chat|speak|" + _HOP + r")\b" + _TALK_THIRD + _THIRD_AFTER,   # rather talk than type
+    r"\b(?:i|we)(?:'ll|'d| can| could| will| would| should| shall| might| may)?(?: (?:quickly|briefly|just|both|all|also|happily|"
+    r"gladly))? " + _HOP + r"(?! (?:to|with) (?:the|their|his|her|its|(?-i:[A-Z])))",    # Brad and I can hop on with you at 9
+    r"\b(?:have|got|spare|find|grab|give me|give us)(?: (?:you|me|us))? (?:a few|a couple(?: of)?|some|\d+|five|ten|fifteen|"
+    r"twenty|thirty)[ -](?:minutes?|mins?)(?: [\w']+){0,3}? (?:to|for) (?:a )?(?:quick )?(?:talk|chat|speak|connect|catch up|"
+    r"touch base|go over|go through|walk through|run through|discuss|sync|hop on|jump on)\b" + _TALK_THIRD,   # 10 minutes to go over
+    r"\b(?:a|an|the|my|our|your) (?:ms |microsoft )?(?:teams|zoom|webex|google meet|gotomeeting|skype|facetime|video) (?:invite|"
+    r"invitation|link|meeting|session|call)s?\b(?![^.?!\n]{0,60}\b(?:pre-?bid|pre-?proposal|pre-?submittal|bidders?'? conference|"
+    r"addend\w*|site walk|site visit|walk-?through|public meeting|board meeting|bid opening)\b)",   # send a Teams invite
+    r"\bhmu\b", r"\bholla(?: at)? (?:me|us|luke)\b",                                    # hmu, holla at me
 ))
 # the same, but for a call or text to the READER, which is fine when someone else is the subject ('Your dispatcher will text you',
 # 'The County will ring you'): 'Luke will give you a buzz', 'I'll ring you back', 'Luke's going to buzz you', 'talk it through'
@@ -572,6 +684,10 @@ INVITES_YOU = tuple(re.compile(p, re.I) for p in (
     r"\b(?:give|shoot|send|drop|throw|toss|fire|hit) (?:you|ya) a (?:quick |short |brief |fast )?(?:ring|buzz|holler|bell|"
     r"tinkle|shout)\b",                                                                 # give you a ring
     r"\bring (?:the|our|my) (?:shop|office|front desk|desk|main line|line|cell|number|landline|yard|house)\b",   # ring the shop
+    r"\bhit (?:you|ya|u) up\b",                                                         # Luke will hit you up Monday
+    r"\b(?:reached|reachable|reach (?:me|us|luke)|find (?:me|us|luke)|get (?:me|us|luke)|catch (?:me|us|luke)) (?:at|on|via|through) "
+    r"(?:the |my |our |luke's |his )?(?:(?:shop|office|main|direct|personal|work|home|cell|mobile|business) )?(?:line|lines|number|"
+    r"phone|cell|cellphone|mobile|landline|digits|extension)\b",                        # I can be reached at the shop line
     r"\btalk(?:ing)?(?: (?:it|this|that|things|them|these|those|everything))? (?:through|over)\b(?! (?:by |over |via |in |on )?"
     r"(?:e-?mail|writing|the portal|bidnet|this thread)\b)(?! with (?:the|your|their|his|her|its|them|(?-i:[A-Z])))",  # talk it through
 ))
@@ -611,6 +727,11 @@ def _call_ok(t, s, e):
     first_obj = bool(_FIRST_OBJ.match(after)) or (bool(re.match(r"^ (?:back )?him\b", after, re.I)) and _luke_near(t, s))
     if first_obj:
         return False
+    give = _GIVE_OBJ.search(before)                          # I'll give your office a call / Luke will give Jake a call
+    if give and _ours_subject(t, s - len(before) + give.start(), before[:give.start()]) and _reader_side(" " + give.group("obj")):
+        return False
+    if not give and _ours_subject(t, s, before) and _reader_side(after):
+        return False                                         # Luke will call your office / the shop / Jake
     if _OTHER_SUBJ.search(before):
         return True                                          # their crew will call the Town
     give = _GIVE_THIRD.search(before)
@@ -619,6 +740,24 @@ def _call_ok(t, s, e):
     if _POSS_BEFORE.search(before) or (_HIS_BEFORE.search(before) and not _luke_near(t, s)):
         return True                                          # your call (a decision), their phone call
     return _third_object(t, e, after)
+
+
+# review 2026-11-06 #4: phone / telephone as equipment or a utility in specs ('Replace the phone jack', 'phone and data cable', 'a
+# VoIP phone system', 'the elevator phone', 'telephone poles', 'the phone company'), unless it is ours ('my desk phone')
+_PHONE_GEAR_AFTER = re.compile(
+    r"^(?: and | & | ?/ ?)(?:data|low[- ]voltage|cable|cabling|wiring|intercom|network)\b"
+    r"|^[ -](?:jacks?|cables?|cabling|wires?|wiring|systems?|data|outlets?|ports?|handsets?|sets?|support|poles?|pedestals?|"
+    r"company|companies|closets?|rooms?|backboards?|conduits?|drops?|risers?|terminals?|terminations?|blocks?|panels?|carriers?|"
+    r"providers?|utilit(?:y|ies)|booths?|entry|rough-?ins?|devices?|equipment|switch(?:es)?|pbx|trunks?|circuits?|cords?|"
+    r"boxes?|stations?|instruments?|demarcs?|demarcation|vaults?|manholes?|ducts?|duct ?banks?|service entrances?|"
+    r"lines? (?:to|from|into|for the|at the|between|in the))\b", re.I)
+_PHONE_GEAR_BEFORE = re.compile(
+    r"\b(?:voip|ip|sip|elevator|emergency|courtesy|pay|house|desk|wall|lobby|cordless|analog|digital|cellular|satellite|refuge|"
+    r"area of refuge|rescue assistance|blue-light|blue light|entry|door|gate|fire|firefighters?'?|security|guard|speaker|"
+    r"hands-?free|intercom|cab|car|pool|panic|existing|abandoned|new|replacement|spare)[ -]$", re.I)
+_OURS_POSS = re.compile(r"\b(?:my|our|luke's|his|me|us)\b(?: [\w-]+)? $"                     # my desk phone, us by the shop phone
+                        r"|\b(?:me|us|luke|him|my|our|luke's)\b.*\b(?:on|at|via|by|through|to)(?: (?:the|a|an|my|our|his|luke's))?"
+                        r"(?: [\w-]+)? $", re.I)                                            # reach me on the desk phone
 
 
 def _phone_ok(t, s, e):
@@ -631,6 +770,8 @@ def _phone_ok(t, s, e):
         return True                                          # photos from my phone are attached
     if _POSS_BEFORE.search(before) or (_HIS_BEFORE.search(before) and not _luke_near(t, s)):
         return True                                          # your on-call phone number, his phone number is on the W-9
+    if not _OURS_POSS.search(before) and (_PHONE_GEAR_AFTER.match(after) or _PHONE_GEAR_BEFORE.search(before)):
+        return True                                          # the phone jack, phone and data cabling, the elevator phone
     if (re.match(r"^(?: number)?\W{0,3}[+(]?\d", t[e:e + 16])
             and not re.search(r"\b(?:my|our|luke's)(?: [\w-]+)? $", before, re.I)):
         return True                                          # Phone: 719-694-0515 (someone else's; Luke's is caught by number)
@@ -945,9 +1086,11 @@ def attachment_problems(files):
 
 # ---------------------------------------------------------------------------------------------------------------- recipients
 def owner_only(recipients):
-    """True only when there is at least one recipient and EVERY one is exactly a bare ASCII address in OWN (case-insensitive,
-    surrounding spaces ignored). 'Name <a@b>', 'a@b, c@d', 'a@b;c@d', newlines, non-ASCII look-alikes (the Kelvin sign) or anything
-    else is not owner-only, so that mail is linted."""
+    """True only when there is at least one recipient and EVERY one is an ASCII address in OWN (case-insensitive, surrounding
+    spaces ignored), written bare ('luke@brownbisonco.com') or in the plain display-name form ('Luke Adams <luke@brownbisonco.com>',
+    '"Luke Adams" <lukemitchelladams@gmail.com>', '<luke@brownbisonco.com>'). The address inside the brackets is matched exactly;
+    a display name holding '@', '<', ',', ';' or a quote, a second address, 'a@b, c@d', 'a@b;c@d', newlines, non-ASCII look-alikes
+    (the Kelvin sign) or anything else is not owner-only, so that mail is linted."""
     if isinstance(recipients, str):
         recipients = [recipients]
     addrs = []
@@ -957,7 +1100,9 @@ def owner_only(recipients):
         s = str(r)
         if not s.isascii():
             return False
-        addrs.append(s.strip(" ").lower())
+        s = s.strip(" ")
+        m = _DISPLAY_FORM.fullmatch(s)
+        addrs.append((m.group("addr") if m else s).lower())
     return bool(addrs) and all(BARE_ADDRESS.fullmatch(a) is not None and a in OWN for a in addrs)
 
 

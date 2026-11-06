@@ -32,6 +32,7 @@ Written 2026-10-19 20:15 MT (rule 0b). Brown Bison submits; the low-voltage sub 
 Cabling is a phone-first trade: call Wire to Wire and Becks first (closest to Thornton), then email the two addresses.
 
 ## Email (Luke sends from luke@brownbisonco.com)
+**DO NOT SEND (bid closed 10/28).**
 Subject: Pricing request: speaker cabling, Riverdale Ridge HS (27J), quotes due Fri 10/23
 
 Hi [Name],

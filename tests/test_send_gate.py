@@ -687,6 +687,54 @@ def test_split_and_spelled_cell_shows_what_it_found():
         assert gate.luke_cell_in(text) is None, text
 
 
+# Review 2026-11-06 #4 (13:40 MT probe): realistic operator drafting that passed both gates (first-person promises to call the reader's
+# side, plural calls / callbacks offered, bare cell / text offers, filler before talk / hop on, talk-soon times, Teams / Meet / sync
+# invites, SMS / Signal / voice notes) and RFP / trade lines that were refused (phone equipment, the phone company, locate and
+# inspection calls, "better than a call", "can't talk on the phone"). The lines are the tail of tests/phone_cases.json from the first
+# review #4 entry on; each goes through check() (signature tail) AND the connector hook, wrapped as a whole email to nina@example.gov.
+REVIEW4_REFUSE = CALL_INVITES[CALL_INVITES.index("I'll give your office a call Monday."):]
+REVIEW4_PASS = TRADE_WORDS[TRADE_WORDS.index("Email works better than a call for me."):]
+NINA = "Hi Nina,\n\n{}\n\nThanks Nina,\n\n" + SIG
+
+
+def test_review4_lists_are_complete():
+    assert len(REVIEW4_REFUSE) == 63 and REVIEW4_REFUSE[-1] == "Luke will hit you up Monday."
+    assert len(REVIEW4_PASS) == 19 and REVIEW4_PASS[-1] == "Give the inspector a call before you pour."
+    assert "Email is the best way to reach me during the day." in TRADE_WORDS
+
+
+@pytest.mark.parametrize("expect,sentence", [("deny", x) for x in REVIEW4_REFUSE] + [("allow", x) for x in REVIEW4_PASS])
+def test_review4_lines_through_check_and_the_hook(expect, sentence):
+    body = NINA.format(sentence)
+    ok, probs = gate.check(body, tail="signature")
+    out = _hook("mcp__Gmail__send_message", {"to": ["nina@example.gov"], "subject": "Scope questions", "body": body})
+    if expect == "allow":
+        assert ok, (sentence, probs)
+        assert out is None, (sentence, _reason(out))
+    else:
+        assert not ok and any(p.startswith("body: call invite") and p.endswith(PHONE_FIX) for p in probs), (sentence, probs)
+        assert _denied(out) and "call invite" in _reason(out) and PHONE_FIX in _reason(out), (sentence, out)
+
+
+@pytest.mark.parametrize("sentence", ["Silas said he will call your office about the boiler.", "We'll call the Town for the gate code.",
+                                      "Your super can call the inspector.", "We'll dial back the supply air setpoint after hours.",
+                                      "Callback work is billed at the regular rate.", "We'll test the elevator phone monthly.",
+                                      "Put your phone number in the signature block of the bid form.",
+                                      "Can you resend the Teams link for the pre-bid conference?",
+                                      "The facilities supervisor can be reached at the main number in the RFP.",
+                                      "I'd rather email than talk on the phone."])
+def test_review4_neighbours_still_pass(sentence):
+    """Third parties, HVAC 'dial back', 'callback work', equipment and the public pre-bid link are not invites (review #4 guard
+    rails around the new patterns)."""
+    assert gate.call_invites(sentence) == [] and gate.phone_problems(sentence) == [], (sentence, gate.call_invites(sentence))
+
+
+@pytest.mark.parametrize("sentence", ["He'll call your PM Monday.", "I'll call the office tomorrow.", "Reach me on the desk phone.",
+                                      "Callbacks work best after 5.", "Got 5 minutes to go over the bid?", "Send me a Zoom link."])
+def test_review4_neighbours_still_refused(sentence):
+    assert gate.call_invites(sentence), sentence
+
+
 def test_owner_only_mail_keeps_the_phone():
     assert _hook("mcp__Gmail__send_message", {"to": ["luke@brownbisonco.com"], "subject": "BROWN BISON 11/06 PM",
                                               "body": "Brad called (720) 275-1554 twice; call him back?"}) is None
@@ -695,7 +743,11 @@ def test_owner_only_mail_keeps_the_phone():
 # ---------------------------------------------------------------------------------------------------------------- recipients
 @pytest.mark.parametrize("rcpts", [["luke@brownbisonco.com"], ["LUKE@BrownBisonCo.com"], ["lukemitchelladams@gmail.com"],
                                    ["lukemitchelladams@gmail.com", "luke@brownbisonco.com"], [" luke@brownbisonco.com "],
-                                   "luke@brownbisonco.com"])
+                                   "luke@brownbisonco.com",
+                                   # review 2026-11-06 #4: the display-name form, address matched exactly after parsing
+                                   ["Luke Adams <lukemitchelladams@gmail.com>"], ["<luke@brownbisonco.com>"],
+                                   ["Luke Adams <luke@brownbisonco.com>"], ['"Luke Adams" <luke@brownbisonco.com>'],
+                                   ["Luke Adams <luke@brownbisonco.com>", "lukemitchelladams@gmail.com"]])
 def test_owner_only_true(rcpts):
     assert gate.owner_only(rcpts)
 
@@ -704,8 +756,16 @@ def test_owner_only_true(rcpts):
     [], None, [None], [""],
     ["sam@example.com"],
     ["luke@brownbisonco.com", "sam@example.com"],                   # mixed owner + outsider
-    ["Luke Adams <luke@brownbisonco.com>"],                         # display names are not bare addresses
-    ["sam@example.com <luke@brownbisonco.com>"],
+    ["sam@example.com <luke@brownbisonco.com>"],                    # a display name holding '@' is not Luke's form
+    ["Luke Adams <sam@example.com>"],                               # Luke's name on someone else's address
+    ["Luke Adams <luke@brownbisonco.com>", "sam@example.com"],      # display form + an outsider
+    ["Luke Adams <luke@brownbisonco.com> <sam@example.com>"],       # two bracketed addresses
+    ['"Luke <luke@brownbisonco.com>" <sam@example.com>'],
+    ['"Luke Adams <luke@brownbisonco.com>'],                        # unbalanced quote
+    ["Luke Adams <luke@brownbisonco.com>, Sam <sam@example.com>"],
+    ["Luke Adams <luke@brownbisonco.com>\nBcc: sam@example.com"],
+    ["Luke Adams <luke@brownbisonco.com.example.com>"], ["<luke@brownbisonco.com"], ["<<luke@brownbisonco.com>>"],
+    ["Luke Adams <contact@brownbisonco.com>"],
     ['"luke@brownbisonco.com" <sam@example.com>'],
     ["luke@brownbisonco.com, sam@example.com"],                     # comma smuggling
     ["luke@brownbisonco.com;sam@example.com"],                      # semicolon smuggling
@@ -717,6 +777,18 @@ def test_owner_only_true(rcpts):
 ])
 def test_owner_only_false(rcpts):
     assert not gate.owner_only(rcpts)
+
+
+def test_hook_display_name_owner_mail_is_exempt_but_an_outsider_is_not():
+    """Review 2026-11-06 #4: board updates addressed 'Luke Adams <lukemitchelladams@gmail.com>' are Luke's own mail; any outside
+    recipient in to / cc / bcc still gets the full gate."""
+    ti = {"to": ["Luke Adams <lukemitchelladams@gmail.com>"], "subject": "BROWN BISON 11/06 PM",
+          "body": "Brad called (720) 275-1554 twice; call him back?"}
+    assert _hook("mcp__Gmail__send_message", ti) is None
+    assert _hook("mcp__Gmail__send_message", {**ti, "to": "<luke@brownbisonco.com>"}) is None
+    for extra in ({"cc": ["sam@example.com"]}, {"bcc": "Sam <sam@example.com>"}, {"to": ["Luke Adams <sam@example.com>"]}):
+        out = _hook("mcp__Gmail__send_message", {**ti, **extra})
+        assert _denied(out) and "Luke's cell number" in _reason(out), (extra, out)
 
 
 # ---------------------------------------------------------------------------------------------------------------- CLI
@@ -808,7 +880,9 @@ def test_text_attachment_is_refused_through_send(gm, monkeypatch, capsys, tmp_pa
 @pytest.mark.parametrize("flags", [
     ["--to", "luke@brownbisonco.com", "--bcc", "bids@weld.gov"],
     ["--to", "luke@brownbisonco.com", "--cc", "sam@example.com"],
-    ["--to", "Luke Adams <luke@brownbisonco.com>"],
+    ["--to", "Luke Adams <sam@example.com>"],                      # review #4: the display form is exempt only for Luke's address
+    ["--to", "Luke Adams <luke@brownbisonco.com>", "--cc", "sam@example.com"],
+    ["--to", "Luke Adams <luke@brownbisonco.com>, Sam <sam@example.com>"],
     ["--bcc", "luke@brownbisonco.com, sam@example.com"],
     ["--to", "luKe@brownbisonco.com"],
 ])
@@ -863,7 +937,8 @@ def test_text_after_closer_is_refused(gm, monkeypatch, capsys, tmp_path):
     assert "text after the 'Thanks <Name>,' closer" in err
 
 
-@pytest.mark.parametrize("to", ["luke@brownbisonco.com", "LukeMitchellAdams@gmail.com", "luke@brownbisonco.com\n"])
+@pytest.mark.parametrize("to", ["luke@brownbisonco.com", "LukeMitchellAdams@gmail.com", "luke@brownbisonco.com\n",
+                                "Luke Adams <lukemitchelladams@gmail.com>", "<luke@brownbisonco.com>"])
 def test_owner_only_mail_is_exempt(gm, monkeypatch, to):
     with pytest.raises(NetworkTouched):                 # reached the (stubbed) token step: the gate let it through
         _send(gm, monkeypatch, "--to", to, "--subject", "note to self", "--body-file", str(WELD))
