@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T12:36:40+00:00",
+  "checked_at": "2026-11-06T13:35:52+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -32,7 +32,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-06T12:36:40+00:00",
+      "last_success": "2026-11-06T13:35:52+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -44,7 +44,7 @@
       "count": 64,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-06T12:36:40+00:00",
+      "last_success": "2026-11-06T13:35:52+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 2,
@@ -84,7 +84,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-06T12:36:40+00:00",
+      "last_success": "2026-11-06T13:35:52+00:00",
       "logged_in": true,
       "login_note": "API key; +37 from the nightly bulk file",
       "matches": 108,
