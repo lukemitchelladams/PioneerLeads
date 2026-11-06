@@ -1,26 +1,25 @@
 {
-  "checked_at": "2026-11-05T23:36:39+00:00",
+  "checked_at": "2026-11-06T00:36:13+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
-      "count": 624,
+      "complete": true,
+      "count": 602,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-11-05T21:35:54+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-11-05T23:36:09+00:00",
-      "matches": 78,
-      "not_scanned_this_run": true,
+      "errors": [],
+      "last_success": "2026-11-06T00:36:13+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
+      "matches": 74,
       "reach_note": "HTTP 200",
-      "reachable": true
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 199,
+        "statewide BUYER": 404
+      }
     },
     "bonfire": {
       "count": 2,
@@ -31,11 +30,10 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-05T22:35:39+00:00",
+      "last_success": "2026-11-06T00:36:13+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
-      "not_scanned_this_run": true,
       "reach_note": "HTTP 200",
       "reachable": true
     },
@@ -44,14 +42,14 @@
       "count": 64,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-05T23:36:39+00:00",
+      "last_success": "2026-11-06T00:36:13+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 2,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 65
+        "statewide open": 64
       }
     },
     "dibbs": {
@@ -77,17 +75,17 @@
       }
     },
     "samgov": {
-      "bulk_added": 38,
-      "bulk_note": "bulk file cached 2026-11-05T18:44:33+00:00; 108 matching (parsed earlier)",
-      "count": 113,
+      "bulk_added": 36,
+      "bulk_note": "bulk file cached 2026-11-05T18:44:33+00:00; 101 matching of 13266 open notices",
+      "count": 107,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-05T23:36:39+00:00",
+      "last_success": "2026-11-06T00:36:13+00:00",
       "logged_in": true,
-      "login_note": "API key; +38 from the nightly bulk file",
-      "matches": 113,
+      "login_note": "API key; +36 from the nightly bulk file",
+      "matches": 107,
       "reach_note": "HTTP 404",
       "reachable": true
     }
