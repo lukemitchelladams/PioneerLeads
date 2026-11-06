@@ -557,7 +557,7 @@
  {
   "key": "samgov:bce8db081fd74f329c9f0f9a0a6e4af0",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA2521  45 CONS PK",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
   "title": "Aircraft Recovery System",
   "sol": "FA252127QB039",
   "closing": "2026-11-10",
@@ -737,7 +737,7 @@
  {
   "key": "samgov:e983271f59ed4af98747b1aea45eeeae",
   "source": "samgov",
-  "agency": "HOMELAND SECURITY, DEPARTMENT OF / US COAST GUARD / CG-SEA-C23",
+  "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.CG-SEA-C23",
   "title": "Self Propelled Boat Trailer - USCG SEC Long Island Sound",
   "sol": "70ZU0327S51401B00",
   "closing": "2026-11-11",
@@ -902,7 +902,7 @@
  {
   "key": "samgov:636a308a458f4e0a8491a0087069997f",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP FLT LOG CTR PUGET SOUND",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
   "title": "Sole Source to Lake Shore Systems - Winch Assembly",
   "sol": "N0040627Q0018",
   "closing": "2026-11-12",
@@ -1067,7 +1067,7 @@
  {
   "key": "samgov:d150dad1528141788616e2b0d93d00c0",
   "source": "samgov",
-  "agency": "HOMELAND SECURITY, DEPARTMENT OF / US COAST GUARD / CG-SEA-C23",
+  "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.CG-SEA-C23",
   "title": "WINCH, DRUM",
   "sol": "2127407B3000HE003",
   "closing": "2026-11-13",
@@ -1172,7 +1172,7 @@
  {
   "key": "samgov:d46978346bbe4e96890506336d3711ef",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
   "title": "Low Level Cranes- CSO",
   "sol": "W911KF25SC002A0018",
   "closing": "2026-11-16",
@@ -1397,9 +1397,9 @@
  {
   "key": "samgov:177c2aa536d34c5ea6d40aa7b8db7d34",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8571  MAINT CONTRACTING AFSC PZIM",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8571  MAINT CONTRACTING AFSC PZIM",
   "title": "AMFF LINE1 CRANE 2 REPLACEMENT",
-  "sol": "FA857127Q0021",
+  "sol": " FA857127Q0021",
   "closing": "2026-11-18",
   "posted": "2026-11-03",
   "prebid_date": "",
@@ -1757,7 +1757,7 @@
  {
   "key": "samgov:3a25347065dc4abab033df330d536ef2",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
   "title": "Vandenberg Crane Replacement",
   "sol": "FA8227-27-Q-1000",
   "closing": "2026-11-23",
@@ -1832,7 +1832,7 @@
  {
   "key": "samgov:da984b4f70fd412d924e9c830a2c3299",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
   "title": "CRANE,FLOOR,PORTABL",
   "sol": "N0038327QPA11",
   "closing": "2026-11-23",
