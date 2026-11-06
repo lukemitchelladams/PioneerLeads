@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-06T06:37:13+00:00
+# Bid watch report — 2026-11-06T07:36:07+00:00
 
 **Headline:** BLIND: bidnet (login deferred on purpose); not scanned this run (previous results kept): dibbs
 
@@ -8,9 +8,9 @@
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
 | bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-11-06T05:37:46+00:00; login deferred: last fresh login 2026-11-06T05:38:08+00:00, next allowed after 2026-11-06T08:38:08+00:00 (fresh logins kept 3 h apart: BidNet's robot check trips on them; the saved session had expired) | 604 |  | 74 | 2026-11-06T05:37:46+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-06T06:37:13+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 108 |  | 108 | 2026-11-06T06:37:13+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 2 | 2026-11-06T06:37:13+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-06T07:36:07+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +37 from the nightly bulk file | 108 |  | 108 | 2026-11-06T07:36:07+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 2 | 2026-11-06T07:36:07+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
