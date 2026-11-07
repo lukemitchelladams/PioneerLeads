@@ -2278,6 +2278,18 @@
    "verdict": "NO",
    "why": "Telecom fiber construction; not our trade.",
    "at": "2026-11-07T01:25:00Z"
+  },
+  "bidnet:0000442909": {
+   "name": "Alamosa County clean energy regulation update",
+   "verdict": "NO",
+   "why": "Planning/regulatory consulting.",
+   "at": "2026-11-07T03:25:00Z"
+  },
+  "bidnet:0000442988": {
+   "name": "High Line Canal improvement areas",
+   "verdict": "NO",
+   "why": "Trail/canal civil improvements (rule 8).",
+   "at": "2026-11-07T03:25:00Z"
   }
  },
  "watched": {
@@ -2463,6 +2475,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-07T02:25:00Z",
+ "last_hourly_check": "2026-11-07T03:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
