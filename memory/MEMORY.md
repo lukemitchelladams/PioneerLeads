@@ -1035,3 +1035,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Ledgered bidnet:0000442136 (Rifle golf course bridges) NO (rule 8 civil). last_hourly_check 06:25Z.
 - Inbox: nothing unseen; no CRM brief.
 - Dashboard blobs now: bids be1f99d00526f871bb257edd63b9832b (v150), events 9125466555aa6c6eb3ee8221adea3d3d (v152), sources c48915b190496a83c7c3eeed65ba975b (v137), portal_feed 6a6a3aa6b49cb54f9a06d2e7b83db469 (v85), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10, unchanged). Old four deleted.
+
+### 2026-11-07 07:21Z hourly (WORKER, read-only)
+- Scan 06:35Z (HQ 4465086): no NEW. ColoradoVSS back (68 open, 3 matches). BidNet logged in attempt 1 (12 of 12). SAM 105. Bonfire still no creds/Cloudflare. DIBBS stale since 10/20. GovTribe S&L still UPGRADE_REQUIRED (lapsed).
+- 3 unmatched aggregate rows ledgered NO (bidnet:2718926837 TIMU FL, 2722180127 WY court reporting, 2722180892 line hardware). last_hourly_check 07:25Z.
+- Inbox: nothing unseen; no CRM brief. doc_manifest unchanged.
+- Board DUE line now carries Brighton 26-500209 (Mon 11/09 14:00) in place of FCC Florence (16:00, 4th most urgent).
+- Dashboard blobs now: bids 90c320e01f71c94ebefa0b670dd4b64a (v151), events 7b561334ba74753d0cdd246695cd4e03 (v153), sources d45965be75364e4b1ec71f3c859570f2 (v138), portal_feed 6a6a3aa6b49cb54f9a06d2e7b83db469 (v85, unchanged), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10, unchanged). Old three deleted.
