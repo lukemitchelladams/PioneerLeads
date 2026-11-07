@@ -1501,6 +1501,26 @@
       "sub_pricing": "None",
       "due_source": "RFP Part 1 sec. II.A: \"Respondents shall submit Proposals no later than 10:00 AM MT on December 1, 2026 via RMEPS\"; BidNet \"12/01/2026 10:00 AM MST\"",
       "doc_gaps": "Task order form 'attached hereto' (Sample Agreement II.B.1) is not in either PDF or on BidNet (vendor-questions.md Q5). No City fee-schedule template; respondent builds its own. No addenda yet (first expected 2026-11-18)."
+    },
+    {
+      "id": "sd27j-bhs-field-irrigation",
+      "agency": "School District 27J",
+      "title": "Baseball/Softball Field Irrigation Connection (Brighton High School)",
+      "sol": "BidNet 0000442975 (IFB)",
+      "trade": "Irrigation / grounds",
+      "due": "2026-12-01T14:00:00-07:00",
+      "portal": "BidNet Direct (RMEPS)",
+      "decision": "EVALUATE",
+      "decision_note": "Found 2026-11-06 23:37Z scan. BidNet event: MANDATORY job walk Mon 2026-11-16 10:00 at Brighton High School (Southern St. and Ron Cox near the softball field). Alex Ditto scope; Luke asks Alex. Check the IFB for excavation (rule 8) before GO.",
+      "prebid": "2026-11-16T10:00:00-07:00",
+      "prebid_mandatory": true,
+      "performer": "Brown Bison + Alex Ditto (irrigation sub)",
+      "subs": "Alex Ditto (Luke handles)",
+      "sub_pricing": "None",
+      "folder": "bids/sd27j-bhs-field-irrigation",
+      "contact": "not in hand yet (IFB not downloaded)",
+      "due_source": "BidNet closing '12/01/2026 02:00 PM MST'",
+      "doc_gaps": "IFB_BHS Baseball Softball Field_11.06.26.pdf (BidNet 0000442975)"
     }
   ],
   "events": [
@@ -2247,6 +2267,12 @@
       "when": "2026-11-06T23:05:00Z",
       "kind": "decision",
       "note": "EVALUATE, recommend NO: package read (RFP 6706 + insurance PDF); no pre-bid; questions 11/13 17:00 MT; due 12/01 10:00 MT; City is payer of last resort and no volume stated; 5 subs listed, 2 drafts linted, nothing sent"
+    },
+    {
+      "bid": "sd27j-bhs-field-irrigation",
+      "when": "2026-11-06T23:37:00Z",
+      "kind": "new",
+      "note": "New BidNet match; MANDATORY walk Mon 11/16 10:00 Brighton HS; EVALUATE for Alex"
     }
   ],
   "doc_gaps": [

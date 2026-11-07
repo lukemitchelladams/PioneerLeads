@@ -600,6 +600,14 @@
       "match": "0000442961|\\bRFP 6706\\b|emergency board up.*temporary fencing",
       "folder": "bids/lakewood-board-up-fencing",
       "govtribe_ids": []
+    },
+    {
+      "name": "SD 27J Baseball/Softball Field Irrigation Connection (EVALUATE, Alex; MANDATORY walk 11/16 10:00 Brighton HS)",
+      "source": "bidnet",
+      "id": "0000442975",
+      "match": "0000442975",
+      "folder": "bids/sd27j-bhs-field-irrigation",
+      "govtribe_ids": []
     }
   ]
 }
