@@ -265,3 +265,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-07 14:25Z (hourly, read-only): nothing unseen. No CRM brief.
 - 2026-11-07 15:25Z (hourly, read-only): nothing unseen. No CRM brief.
 - 2026-11-07 16:25Z (hourly, read-only): nothing unseen. No CRM brief.
+- 2026-11-07 17:25Z (hourly, read-only): nothing unseen. No CRM brief.
