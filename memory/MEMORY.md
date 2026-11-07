@@ -1069,3 +1069,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT); 12:35Z scan missed (6 in a row). Latest scan 06:35Z; all portal sources stale.
 - Inbox: 3 new. BidNet closing reminders for DPS Fire Suppression BD2732 (our NO) and Metro Water B-26-019 (REVIVE-IF, closes Thu 11/12 14:00, RESA pricing still pending); Microsoft DMARC (noise). No CRM brief. last_hourly_check 13:25Z.
 - Dashboard blobs now: bids 87b1ce6f54b960cc096f5bff214d6467 (v157), events e13d1286b4b3e12d508d034e493e39d2 (v159); others unchanged. Old two deleted.
+
+### 2026-11-07 14:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT); 13:35Z scan missed (7 in a row). Latest scan 06:35Z; all portal sources stale. Inbox: nothing unseen; no CRM brief. last_hourly_check 14:25Z.
+- Dashboard blobs now: bids 6e39478d916717e387bcf7121bcf5f20 (v158), events 02453a16f291cbbf2918f46f510fcae1 (v160); others unchanged. Old two deleted.
