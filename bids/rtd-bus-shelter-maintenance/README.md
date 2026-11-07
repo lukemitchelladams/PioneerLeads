@@ -18,6 +18,7 @@ Source: GovTribe → OpenGov. Documents: `docs/126DM016-RFP.pdf`, `docs/126DM016
 | Evaluation | Approach/scope completeness 30, past relevant experience 30, cost 40 |
 | Contact | Marla Bainbridge, marla.bainbridge@rtd-denver.com, (303) 299-2411 |
 | Status | **BACK ON per Luke 2026-10-23 ("maybe the bus shelter maint").** **GO. Longest runway in the pipeline. Alex Ditto = snow sub; custodial crew = ours or a janitorial sub.** |
+| Sub pricing | In hand (YMS preliminary snow/ice, all 5 years, received 2026-11-06; file in private/). Alex's 4 scope assumptions and 5 questions answered from the SOW in `alex-snow-questions-2026-11-06.md` (RTD question window closed 2026-11-02 14:00; Luke pastes the summary to Alex). Cleaning / graffiti / pressure-washing sub: still open. |
 
 ## SBE certification (RTD Small Business Opportunity Office)
 - Apply with RTD's own SBE Certification Application + Personal Financial Statement forms to SBO@RTD-Denver.com.
