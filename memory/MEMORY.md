@@ -1052,3 +1052,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT). 08:35Z scan missed too. Latest scan 06:35Z, so BidNet/SAM/VSS are now STALE (>2h). HQ's error text offers "switch to another model": HQ runs a user-switched model, so Luke switching HQ's model may restart it sooner. Luke's call.
 - Inbox: nothing unseen; no CRM brief. last_hourly_check 09:25Z.
 - Dashboard blobs now: bids 9dae06e4ad4d0ea5879d017eae99e46d (v153), events c983fbca9b680db39a83aafff571823a (v155); sources/portal_feed/doc_gaps unchanged (d45965be..., 6a6a3aa6..., 84c4957d...). Old two deleted.
+
+### 2026-11-07 10:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT); 09:35Z scan missed (3 in a row). Latest scan 06:35Z; all portal sources stale. Inbox: nothing unseen; no CRM brief. last_hourly_check 10:25Z.
+- Dashboard blobs now: bids 776af8c050a06a2c7b323ed834e759cc (v154), events e10d3af6d6d37891d4b8e8eec2376470 (v156); others unchanged. Old two deleted.
