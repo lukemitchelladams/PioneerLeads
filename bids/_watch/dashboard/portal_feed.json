@@ -1796,7 +1796,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/PUEBLO-WATER-COMMERCIAL-ENTRY-DOORS-2026/0000442878?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1811,7 +1811,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444223472310?target=view"
  },
  {
