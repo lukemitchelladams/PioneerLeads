@@ -1047,3 +1047,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **HQ (session_019uSEKHU1Qyo6YGinn8hySB) FAILED: out of usage credits** (seven-day overage limit, status rejected; resets 2026-11-08T08:00Z = Sun 11/08 01:00 MT). Its 07:35Z scan did not run; latest scan is still 06:35Z. No portal scans and no HQ sub outreach until reset or until Luke adds credits. The worker cannot scan (no BIDNET/SAM creds in this env, and a second BidNet login risks robot checks), so it did not try.
 - No NEW (no new scan). GovTribe S&L still UPGRADE_REQUIRED. Inbox: 1 new = Mimecast DMARC report (noise). No CRM brief. last_hourly_check 08:25Z.
 - Dashboard blobs now: bids c7ad906d279f8be29b9cad49ea7e95c0 (v152), events b0c0feebb2ad3ecef0bf12e0a6633797 (v154), sources d45965be75364e4b1ec71f3c859570f2 (v138), portal_feed 6a6a3aa6b49cb54f9a06d2e7b83db469 (v85), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old two deleted.
+
+### 2026-11-07 09:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT). 08:35Z scan missed too. Latest scan 06:35Z, so BidNet/SAM/VSS are now STALE (>2h). HQ's error text offers "switch to another model": HQ runs a user-switched model, so Luke switching HQ's model may restart it sooner. Luke's call.
+- Inbox: nothing unseen; no CRM brief. last_hourly_check 09:25Z.
+- Dashboard blobs now: bids 9dae06e4ad4d0ea5879d017eae99e46d (v153), events c983fbca9b680db39a83aafff571823a (v155); sources/portal_feed/doc_gaps unchanged (d45965be..., 6a6a3aa6..., 84c4957d...). Old two deleted.
