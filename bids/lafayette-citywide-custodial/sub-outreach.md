@@ -59,3 +59,5 @@ Thanks Team,
 ## Log
 - 2026-11-07 01:0xZ: candidate list built (web search for Lafayette / Boulder County / north-metro commercial janitorial firms; Teebs and
   CleanPro from bids/cos-oncall-janitorial); draft linted; nothing sent, waiting on Luke's GO.
+
+- 2026-11-07 01:0xZ (HQ, Luke's standing permission): GO. Pricing request sent as a bcc group to Clean Conscience, KG Facility Solutions, Kleen-Tech, Teebs, CleanPro (msg 1a1b38552d6f701a); RFP + Appendices A, B, C attached; monthly price per building, Appendix C unit rates and COI asked by Mon 12/07; told them about the mandatory 11/19 10:00 pre-proposal meeting.

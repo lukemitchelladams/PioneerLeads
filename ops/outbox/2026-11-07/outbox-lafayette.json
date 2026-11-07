@@ -1,0 +1,20 @@
+[
+  {
+    "key": "lafayette-group",
+    "subject": "City of Lafayette citywide custodial services, RFP-26-33-FM: pricing request",
+    "bcc": [
+      "cleanconscience@cleanconscience.com",
+      "bizdev@kgfsco.com",
+      "Info@Kleen-Tech.com",
+      "info@teebscleaning.com",
+      "gil@cpjdenver.com"
+    ],
+    "files": [
+      "bids/lafayette-citywide-custodial/docs/RFP-26-33-FM Citywide Custodial Services.docx",
+      "bids/lafayette-citywide-custodial/docs/APPENDIX A Services Only Form _Aug 2022 Final_.docx",
+      "bids/lafayette-citywide-custodial/docs/APPENDIX B.docx",
+      "bids/lafayette-citywide-custodial/docs/APPENDIX C - PRICE SHEET _ 11.5.xls"
+    ],
+    "body_file": "ops/outbox/2026-11-07/lafayette-group.txt"
+  }
+]
