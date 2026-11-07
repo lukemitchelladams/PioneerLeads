@@ -1060,3 +1060,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-07 11:21Z hourly (WORKER, read-only)
 - HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT); 10:35Z scan missed (4 in a row). Latest scan 06:35Z; all portal sources stale. Inbox: 1 new = Google DMARC report (noise). No CRM brief. last_hourly_check 11:25Z.
 - Dashboard blobs now: bids 2911a2de1473e0c89a383c3f3d9ab940 (v155), events 4ec801f965e311e10b18daeb4fbaaa28 (v157); others unchanged. Old two deleted.
+
+### 2026-11-07 12:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT); 11:35Z scan missed (5 in a row). Latest scan 06:35Z; all portal sources stale. Inbox: 1 new = Microsoft DMARC report (noise). No CRM brief. last_hourly_check 12:25Z.
+- Dashboard blobs now: bids 61bf04397da362e9107321db8f1ba670 (v156), events 8bfed1f9c931b76d249e660b08b0bf88 (v158); others unchanged. Old two deleted.
