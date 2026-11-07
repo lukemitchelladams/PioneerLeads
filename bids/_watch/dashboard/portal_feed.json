@@ -26,7 +26,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/da941a154311495ab89a5c488bacee4b/view"
  },
  {
@@ -896,7 +896,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/21f8910c3dc44615956327770976b6c3/view"
  },
  {
@@ -2801,7 +2801,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1"
  },
  {
