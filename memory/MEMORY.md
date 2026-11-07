@@ -1042,3 +1042,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen; no CRM brief. doc_manifest unchanged.
 - Board DUE line now carries Brighton 26-500209 (Mon 11/09 14:00) in place of FCC Florence (16:00, 4th most urgent).
 - Dashboard blobs now: bids 90c320e01f71c94ebefa0b670dd4b64a (v151), events 7b561334ba74753d0cdd246695cd4e03 (v153), sources d45965be75364e4b1ec71f3c859570f2 (v138), portal_feed 6a6a3aa6b49cb54f9a06d2e7b83db469 (v85, unchanged), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10, unchanged). Old three deleted.
+
+### 2026-11-07 08:21Z hourly (WORKER, read-only)
+- **HQ (session_019uSEKHU1Qyo6YGinn8hySB) FAILED: out of usage credits** (seven-day overage limit, status rejected; resets 2026-11-08T08:00Z = Sun 11/08 01:00 MT). Its 07:35Z scan did not run; latest scan is still 06:35Z. No portal scans and no HQ sub outreach until reset or until Luke adds credits. The worker cannot scan (no BIDNET/SAM creds in this env, and a second BidNet login risks robot checks), so it did not try.
+- No NEW (no new scan). GovTribe S&L still UPGRADE_REQUIRED. Inbox: 1 new = Mimecast DMARC report (noise). No CRM brief. last_hourly_check 08:25Z.
+- Dashboard blobs now: bids c7ad906d279f8be29b9cad49ea7e95c0 (v152), events b0c0feebb2ad3ecef0bf12e0a6633797 (v154), sources d45965be75364e4b1ec71f3c859570f2 (v138), portal_feed 6a6a3aa6b49cb54f9a06d2e7b83db469 (v85), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old two deleted.
