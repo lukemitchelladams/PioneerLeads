@@ -1028,3 +1028,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-07 05:21Z hourly (WORKER, read-only)
 - Scan 04:35Z: BidNet LOGGED IN (633/81; 10 of 10 hourly logins clean), SAM 105, VSS 68/3. No NEW matches, no adds or removals, no changes. Inbox quiet.
 - Dashboard blobs now: bids be5e48ab3973a3ca0c9c0c7ca1241f2b (v149, sha 44040724c4bf), events 9689aae2621bae4c5930868df4876425 (v151, sha d9c4d869b3da), sources 47e4e93f047cdb2772cf3875f53da654 (v136, sha 58cf055ae5d1), portal_feed 68c413e684a0aeca62eec52ccebdd430 (v84), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10).
+- 2026-11-07 05:45Z (HQ scan 05:36Z; container restarted again, kernel v310, state intact): BidNet logged in attempt 1 (11 of 11). VSS blind this run (carried). Pushed 16a5494, EXIT 3.
