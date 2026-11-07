@@ -2203,9 +2203,9 @@
   },
   "bidnet:0000442975": {
    "name": "SD 27J Baseball/Softball Field Irrigation Connection",
-   "verdict": "EVALUATE",
-   "why": "Irrigation (Alex). MANDATORY walk Mon 2026-11-16 10:00 Brighton HS; due 2026-12-01 14:00. Folder bids/sd27j-bhs-field-irrigation; watchlisted for the IFB. Check excavation (rule 8).",
-   "at": "2026-11-07T00:25:00Z"
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-07 00:45Z, rule 8): the IFB taps a 12-inch non-potable main in the middle of Southern Street, with a new line, right-of-way permit and asphalt repair. That is excavation/utility work, not irrigation maintenance. IFB in bids/_watch/downloads/bidnet/0000442975/.",
+   "at": "2026-11-07T01:25:00Z"
   },
   "bidnet:0000442959": {
    "name": "Hawk Ridge manhole rehabilitation",
@@ -2266,6 +2266,18 @@
    "verdict": "NO",
    "why": "GC construction (porch enclosure); not our trades.",
    "at": "2026-11-07T00:25:00Z"
+  },
+  "bidnet:0000442987": {
+   "name": "City of Lafayette RFP-26-33-FM Citywide Custodial Services",
+   "verdict": "GO",
+   "why": "HQ GO: MANDATORY pre-proposal Thu 2026-11-19 10:00 City Hall; due 2026-12-18 17:00 on BidNet; questions by 11/23 17:00; 13 buildings; no bond. 5 janitorial firms asked for pricing by 12/07. Folder bids/lafayette-citywide-custodial.",
+   "at": "2026-11-07T01:25:00Z"
+  },
+  "bidnet:0000442960": {
+   "name": "Trailblazer broadband buildout",
+   "verdict": "NO",
+   "why": "Telecom fiber construction; not our trade.",
+   "at": "2026-11-07T01:25:00Z"
   }
  },
  "watched": {
@@ -2451,6 +2463,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-07T00:25:00Z",
+ "last_hourly_check": "2026-11-07T01:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

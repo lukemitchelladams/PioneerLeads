@@ -78,5 +78,25 @@
   "decision": "EVALUATE",
   "item": "Task order form referenced in Sample Agreement II.B.1 (not posted)",
   "where": "BidNet Q&A before 2026-11-13 17:00 MT, or with the award"
+ },
+ {
+  "key": "lafayette-citywide-custodial|Porter Services Page referenced on the Golf Course and Library tabs of Appendix C (not posted)",
+  "bid": "lafayette-citywide-custodial",
+  "agency": "City of Lafayette",
+  "sol": "RFP-26-33-FM (BidNet 0000442987)",
+  "due": "2026-12-18T17:00:00-07:00",
+  "decision": "GO",
+  "item": "Porter Services Page referenced on the Golf Course and Library tabs of Appendix C (not posted)",
+  "where": "BidNet Q&A before 2026-11-23 17:00 MT, or the 11/19 conference"
+ },
+ {
+  "key": "lafayette-citywide-custodial|Exhibit C (O&Ms / consumable manufacturer requirements) referenced in Appendix B 1-05 (not posted)",
+  "bid": "lafayette-citywide-custodial",
+  "agency": "City of Lafayette",
+  "sol": "RFP-26-33-FM (BidNet 0000442987)",
+  "due": "2026-12-18T17:00:00-07:00",
+  "decision": "GO",
+  "item": "Exhibit C (O&Ms / consumable manufacturer requirements) referenced in Appendix B 1-05 (not posted)",
+  "where": "BidNet Q&A before 2026-11-23 17:00 MT"
  }
 ]

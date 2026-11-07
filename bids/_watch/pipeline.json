@@ -237,7 +237,7 @@
       "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: email only (11/06: Jake Pavelle's Mon 11/16 call was cancelled by email; the Mac owns CPW). | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price. | 10/26 18:56-18:57Z Alex (YMS) replied: reviewing the package, can join today's 14:00 MT Teams briefing if Luke sends the invite, asks when pricing is due back and whether to price snow only or cleaning + graffiti too (he would sub those out). Luke owns the reply. | 10/27: told Alex to price the whole contract (cleaning, graffiti, pressure wash, snow) if he can get near RTD's ~$250K/yr, else snow only; numbers by Fri 11/6. | 2026-10-28 16:00 MT: Alex Ditto (YMS): 'we are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal'; numbers by 11/6.",
       "folder": "bids/rtd-bus-shelter-maintenance",
       "contact": "Marla Bainbridge, (303) 299-2411",
-      "sub_pricing": "Partial (Lightning Mobile priced everything, too high; YMS/Alex prices SNOW ONLY by Fri 11/06; cleaning/graffiti/pressure-wash: Colorado Power Wash reviewing Luke's SOW answers (10/28 20:27 MT) + 4 new firms emailed by HQ 10/28 (Wash On Wheels reviewing 10/29 08:49 MT, pressure washing + graffiti only, answer 'in the next couple days') + Platinum follow-up; RTD questions due Mon 11/02 14:00; proposal due 11/16)"
+      "sub_pricing": "Partial (Lightning Mobile priced everything, too high; YMS/Alex prices SNOW ONLY by Fri 11/06; cleaning/graffiti/pressure-wash: Colorado Power Wash reviewing Luke's SOW answers (10/28 20:27 MT) + 4 new firms emailed by HQ 10/28 (Wash On Wheels reviewing 10/29 08:49 MT, pressure washing + graffiti only, answer 'in the next couple days') + Platinum follow-up; RTD questions due Mon 11/02 14:00; proposal due 11/16) | 2026-11-07: YMS (Alex) preliminary snow/ice pricing received, 5 years, 42 shelters + 2 transfer centers (xlsx in Luke inbox); YMS snow pricing received"
     },
     {
       "id": "westminster-26-002",
@@ -1510,8 +1510,8 @@
       "trade": "Irrigation / grounds",
       "due": "2026-12-01T14:00:00-07:00",
       "portal": "BidNet Direct (RMEPS)",
-      "decision": "EVALUATE",
-      "decision_note": "Found 2026-11-06 23:37Z scan. BidNet event: MANDATORY job walk Mon 2026-11-16 10:00 at Brighton High School (Southern St. and Ron Cox near the softball field). Alex Ditto scope; Luke asks Alex. Check the IFB for excavation (rule 8) before GO.",
+      "decision": "NO",
+      "decision_note": "Found 2026-11-06 23:37Z scan. BidNet event: MANDATORY job walk Mon 2026-11-16 10:00 at Brighton High School (Southern St. and Ron Cox near the softball field). Alex Ditto scope; Luke asks Alex. Check the IFB for excavation (rule 8) before GO. | NO (HQ 2026-11-07 00:45Z, rule 8): the IFB taps a 12-inch non-potable main in the middle of Southern Street, with a new line, right-of-way permit and asphalt repair. That is excavation/utility work, not irrigation maintenance. IFB in bids/_watch/downloads/bidnet/0000442975/.",
       "prebid": "2026-11-16T10:00:00-07:00",
       "prebid_mandatory": true,
       "performer": "Brown Bison + Alex Ditto (irrigation sub)",
@@ -1520,7 +1520,7 @@
       "folder": "bids/sd27j-bhs-field-irrigation",
       "contact": "not in hand yet (IFB not downloaded)",
       "due_source": "BidNet closing '12/01/2026 02:00 PM MST'",
-      "doc_gaps": "IFB_BHS Baseball Softball Field_11.06.26.pdf (BidNet 0000442975)"
+      "doc_gaps": "None: IFB downloaded by the 00:36Z scan"
     },
     {
       "id": "lafayette-citywide-custodial",
@@ -2299,6 +2299,18 @@
       "when": "2026-11-07T01:05:00Z",
       "kind": "new",
       "note": "New BidNet match (published 11/06); package pulled and read; MANDATORY pre-proposal conference Thu 11/19 10:00 City Hall; questions by 11/23 17:00; due 12/18 17:00 MT; EVALUATE, recommend GO; 5 subs with emails listed, draft linted, nothing sent"
+    },
+    {
+      "bid": "sd27j-bhs-field-irrigation",
+      "when": "2026-11-07T00:45:00Z",
+      "kind": "no",
+      "note": "NO: excavation/utility tap in Southern Street (rule 8)"
+    },
+    {
+      "bid": "rtd-126dm016",
+      "when": "2026-11-07T01:19:50Z",
+      "kind": "sub-pricing",
+      "note": "Alex Ditto (YMS): preliminary snow/ice pricing, all 5 years, plus 5 scope questions"
     }
   ],
   "doc_gaps": [

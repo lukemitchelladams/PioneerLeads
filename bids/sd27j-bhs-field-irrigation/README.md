@@ -12,7 +12,7 @@
 | Contract type | not in hand yet (IFB) |
 | Term / renewals | not in hand yet |
 | Evaluation method | IFB (low bid), per the document name |
-| Status | Identified: EVALUATE. Irrigation is Alex Ditto's trade (Luke asks Alex). Check the IFB for excavation/trenching scope first (rule 8: no heavy civil). |
+| Status | **NO** (HQ 2026-11-07, rule 8): the work taps a 12-inch non-potable main in the middle of Southern Street, with a new line, right-of-way permit and asphalt repair. That is excavation/utility work. IFB in bids/_watch/downloads/bidnet/0000442975/. |
 
 ## Scope summary
 Not in hand yet. Only "IFB_BHS Baseball Softball Field_11.06.26.pdf" is posted (public download, no login). bidnetdirect.com is blocked from cloud worker sessions; the logged-in HQ scan downloads it via the watchlist entry.
