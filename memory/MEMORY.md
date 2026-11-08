@@ -1200,3 +1200,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - last_hourly_check 17:25Z. No CRM brief.
 - Dashboard blobs now: bids 0f6694dfc36e23757423b885aa1647df (v185), events ec691e0387b535ced60dc25a6963faf2 (v187), sources 5cd11ab1fc5e12179ea3edc7c22f3249 (v147), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
 - 2026-11-08 17:45Z (HQ scan 17:37Z): BidNet ROBOT CHECK on the login form (first login challenge since the hourly spacing began 11/06 19:36Z: 16 passed, 1 failed); cool-down until 2026-11-08T19:37:51+00:00; BidNet blind this run, SAM/VSS fine, EXIT 3, pushed 8cb4b85. 18:35Z scan will be blind; 19:35Z launcher waits for the cool-down then logs in.
+
+### 2026-11-08 18:21Z hourly (WORKER, read-only)
+- LAST_SCAN 17:37Z (8cb4b85): BidNet ROBOT CHECK at login (first since hourly spacing began: 16 passed, 1 failed); cool-down until 19:37:51Z; BidNet PARTIAL 196/15; SAM 103, VSS 68/3 fine; exit 3. 18:35Z scan will be BidNet-blind; 19:35Z launcher waits out the cool-down.
+- Inbox (latest-message check): HG Summit courtesy reply 18:19Z (msg 1a1bc630d8e340c5); no action, Mac owns. No CRM brief. last_hourly_check 18:25Z.
+- Dashboard blobs now: bids fa5ca5fec432747e6bfac222f38ecb00 (v186), events 9c346e52f79c0a6f44776c0c9266096b (v188), sources 752c2b035303fad1ca75b062e27757dc (v148), portal_feed 158b4791ae87b2fd48290666dfddd29f (v95), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old four deleted.
