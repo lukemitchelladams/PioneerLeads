@@ -292,3 +292,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-08 17:25Z (hourly, read-only): caught late: HG Summit (Keyner Hoyes) reply 15:55Z in thread 1a1b84f86c26b349 (msg 1a1bbdf34adf825e) answering the Mac's 15:36Z email: service area Summit + Eagle counties and hourly rates (rates stay in the email, not the repo). HQ filed it as a mountain snow sub; Mac owns the thread. Missed at 16:25Z because that run compared thread IDs only. No other new mail. No CRM brief.
 - 2026-11-08 18:25Z (hourly, read-only): 1 new (msg 1a1bc630d8e340c5): HG Summit courtesy reply 18:19Z to the Mac (keep us in mind for Summit/Eagle bids). No action; Mac owns the thread. No CRM brief.
 - 2026-11-08 19:25Z (hourly, read-only): nothing unseen (latest-message check). No CRM brief.
+- 2026-11-08 20:25Z (hourly, read-only): nothing unseen (latest-message check). No CRM brief.

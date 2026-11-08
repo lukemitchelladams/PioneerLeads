@@ -1212,3 +1212,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox (latest-message check): nothing unseen; no CRM brief. last_hourly_check 19:25Z.
 - Dashboard blobs now: bids f31f3fc91db2f3c53d0442a634c9ed87 (v187), events be1212477b1dadd06ed85224718542c7 (v189), sources 066b5941df1ed732fbad479e33f68350 (v149), portal_feed 158b4791ae87b2fd48290666dfddd29f (v95), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
 - 2026-11-08 19:48Z (HQ scan 19:38Z, after the cool-down): logged in attempt 1, EXIT 0, pushed b6e9c4d.
+
+### 2026-11-08 20:22Z hourly (WORKER, read-only)
+- LAST_SCAN 19:38Z (b6e9c4d): BidNet back after cool-down, logged in attempt 1; bidnet 639/81, samgov 103, VSS 68/3; 0 new, 0 changes, 0 docs; exit 0.
+- Inbox (latest-message check): nothing unseen; no CRM brief. last_hourly_check 20:25Z.
+- Dashboard blobs now: bids 035b873ef484c0fbb50544059d0ca751 (v188), events 4136fd5543ba649fba463367b7c332ec (v190), sources 9818ca210f8c2a22b4e3789eb739c15c (v150), portal_feed 6d7e4dbdf9901399670ddcbdda714d1b (v96), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old four deleted.
