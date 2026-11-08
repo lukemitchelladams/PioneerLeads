@@ -2741,7 +2741,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1"
  },
  {
