@@ -1110,3 +1110,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ still FAILED (out of usage credits; resets Sun 11/08 01:00 MT = 08:00Z); 22:35Z scan missed (16 in a row). Latest scan 06:35Z; all portal sources stale. last_hourly_check 23:25Z.
 - Inbox: inbound SUB LEAD, Keyner Hoyes, HG Summit Roofing and Snow Removal (Silverthorne), hoyeskeyner@gmail.com: snow plowing, roof snow, ice dams in Summit + Eagle counties; asks our sub requirements. Not answered (worker is read-only); for Luke/HQ: a mountain snow sub option for any Summit/Eagle snow bid (Alex Ditto stays the default for landscaping/snow). No CRM brief.
 - Dashboard blobs now: bids d6e1f29fda912da2eea0d3238953526e (v167), events 75682afb0451dcf8f2a56d661bebfb2e (v169), portal_feed d9f34d024fec28da5804cb8ec2d87787 (v91); sources/doc_gaps unchanged. Old three deleted.
+
+### 2026-11-08 00:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets 08:00Z = Sun 01:00 MT); 23:35Z scan missed (17 in a row). Latest scan 06:35Z 11/07; all portal sources stale. Inbox: nothing unseen; no CRM brief. last_hourly_check 00:25Z.
+- Dashboard blobs now: bids 14aff3b039fb667505e169791a75cf9f (v168), events 8d2e38280b76491c471f4df95abf5630 (v170), portal_feed f9f30927e729e95c36b87854abd835d8 (v92); sources/doc_gaps unchanged. Old three deleted.
