@@ -1227,3 +1227,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-08 22:21Z hourly (WORKER, read-only)
 - LAST_SCAN 21:35Z (76a9bec): logged in attempt 1; 0 new, 0 changes, 0 docs; exit 0. Inbox (latest-message check): nothing unseen; no CRM brief. last_hourly_check 22:25Z.
 - Dashboard blobs now: bids 2cc2dbb7b7b5589e62ec5589de03218f (v190), events d0b188c10d9470eade8c083789ace455 (v192), sources 828a640656a862ecfd0e02419048a673 (v152), portal_feed 6d7e4dbdf9901399670ddcbdda714d1b (v96), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
+- 2026-11-08 22:45Z (HQ scan 22:35Z): logged in attempt 1, EXIT 0, pushed 2cae3cd.
