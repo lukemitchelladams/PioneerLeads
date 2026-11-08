@@ -16,6 +16,18 @@ Each scan writes:
   (new documents = addenda, date changes), UPCOMING notices, and the full list of open matching bids.
 - `bids/_watch/open_bids.json` (everything seen), `bids/_watch/health.json`.
 - Watched-bid documents to `bids/_watch/downloads/<source>/<id>/` when logged in.
+- `bids/_watch/LAST_SCAN.md`: the hourly operator's digest, read in one `cat` instead of grepping REPORT.md and diffing
+  open_bids.json against a saved copy. A heading with the scan's UTC time, then six labelled lines, plain text, no tables:
+  `Logged in:` (BidNet: `yes (attempt 1)`, `yes (session reused ...)`, `no: login deferred ...`, `no: COOL-DOWN ...`);
+  `Counts:` open rows/matching per source, `bidnet | samgov | coloradovss | bonfire | total`, with `(BLIND, last good <UTC>)`
+  after a source that returned nothing fresh and `(PARTIAL, ...)` after one whose list came back short; `New matching bids:`
+  n, then one `  - <source> <id> | <title> | <agency> | closes <date> | <profiles> | watched yes/no` line per bid (new = a
+  matching open bid whose key was not in the previous open_bids.json, exactly REPORT.md's NEW list); `Changes on watched
+  bids:` n, then REPORT.md's change lines cut to 200 chars; `Documents downloaded:` n, then `  - <bid folder or source:id>:
+  <file>`; `Errors:` `none` or per-source counts and the first error, then `exit code 0|2|3` (the code `run.py` returns:
+  3 = a source was blind or carried forward). The same lines are printed to stdout after the cycle line, so a log tail
+  shows them, and the file is in `--push`'s commit (PUSH_PATHS). A scan that crashes still writes it, with the crash in the
+  Errors line, so the previous hour's digest is never mistaken for this hour's.
 
 ### BidNet Communication and Q & A tabs (watched bids)
 A buyer can post a notice on a solicitation's **Communication** tab with no addendum and no document (2026-11-05

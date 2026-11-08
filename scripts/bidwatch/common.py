@@ -21,6 +21,7 @@ WATCHLIST_FILE = WATCH_DIR / "watchlist.json"
 OPEN_BIDS_FILE = WATCH_DIR / "open_bids.json"
 HEALTH_FILE = WATCH_DIR / "health.json"
 REPORT_FILE = WATCH_DIR / "REPORT.md"
+LAST_SCAN_FILE = WATCH_DIR / "LAST_SCAN.md"  # six-line digest of the last scan for the hourly operator (run.py)
 DOWNLOAD_DIR = WATCH_DIR / "downloads"
 DEBUG_DIR = WATCH_DIR / "debug"  # gitignored: screenshots + raw HTML when a parse or login fails
 

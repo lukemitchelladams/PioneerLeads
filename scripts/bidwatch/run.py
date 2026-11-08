@@ -17,7 +17,10 @@ Every cycle:
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
      Q & A tab entries on watched bids), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in.
-  6. Write REPORT.md, open_bids.json, health.json. A session that expired is re-logged-in next cycle
+  6. Write REPORT.md, open_bids.json, health.json and LAST_SCAN.md (a six-line digest for the hourly operator: BidNet
+     login, per-source open/matching counts with a BLIND marker, NEW matching bids, changes on watched bids, documents
+     downloaded, errors + the exit code; the same lines are printed after the cycle line so a log tail shows them; a scan
+     that crashes still writes it, with the crash in the Errors line). A session that expired is re-logged-in next cycle
      (and mid-cycle if a page bounces to a login screen). BidNet: a fresh password login only every
      BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3); inside that gap an expired session means BidNet is skipped
      like a robot-check cool-down (earlier rows carried forward, none closed), a deliberate skip, not a /fail.
@@ -46,8 +49,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, session_sync  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
-    DEBUG_DIR, HEALTH_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE, cred_status, days_until,
-    iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
+    DEBUG_DIR, HEALTH_FILE, LAST_SCAN_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE,
+    cred_status, days_until, iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
 )
 
 SCANNED_BY = os.environ.get("BIDWATCH_HOST") or __import__("socket").gethostname()
@@ -365,6 +368,9 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed}
     REPORT_FILE.write_text(render(result))
+    # the operator's one-`cat` digest, written next to the report and committed with it (PUSH_PATHS)
+    result["last_scan"] = render_last_scan(result, watched_keys)
+    LAST_SCAN_FILE.write_text(result["last_scan"])
     return result
 
 
@@ -604,6 +610,108 @@ def _row(b: dict) -> str:
 HDR = "| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |\n|---|---|---|---|---|---|---|"
 
 
+def _change_line(b: dict) -> str:
+    """One changed bid as REPORT.md's 'Changes on matching / watched bids' prints it (LAST_SCAN.md repeats the same text)."""
+    return f"**{b.get('title', '')[:90]}** ({b['source']}): " + "; ".join(b["diffs"]) + f" — {b.get('url', '')}"
+
+
+def run_status(health: dict) -> dict:
+    """What a scan's health means for main(): ok (any source returned rows), the sources skipped on purpose (BidNet login
+    deferred: not a fault), the degraded ones (nothing fresh this run: blind, carried forward, unreachable or empty, dibbs
+    excepted) and the exit code a single run returns: 0 clean, 3 degraded, 2 nothing at all."""
+    ok = any(v.get("count") for v in health.values())
+    skipped = [s for s, v in health.items() if v.get("login_deferred")]
+    degraded = [s for s, v in health.items() if not v.get("not_scanned_this_run") and s not in skipped
+                and (v.get("carried_forward") or not v.get("reachable") or (not v.get("count") and s != "dibbs"))]
+    return {"ok": ok, "skipped": skipped, "degraded": degraded, "exit_code": (0 if not degraded else 3) if ok else 2}
+
+
+LAST_SCAN_SOURCES = ("bidnet", "samgov", "coloradovss", "bonfire")  # the Counts line names these four, always, in this order
+
+
+def _login_line(h: dict) -> str:
+    b = h.get("bidnet")
+    if not b:
+        return "n/a (bidnet not in this run)"
+    if b.get("not_scanned_this_run"):
+        return "n/a (bidnet not scanned this run)"
+    note = _one_line(b.get("login_note") or "", 240)
+    if b.get("logged_in"):
+        note = re.sub(r"^logged in\s*", "", note)  # "logged in (attempt 1)" -> "yes (attempt 1)"
+        return "yes" + ((f" {note}" if note.startswith("(") else f" ({note})") if note else "")
+    return "no" + (f": {note}" if note else "")
+
+
+def _count_cell(s: str, v: dict | None) -> str:
+    if v is None:
+        return f"{s} -/-"
+    cell = f"{s} {v.get('count', 0)}/{v.get('matches', 0)}"
+    last = v.get("last_success") or "never"
+    if v.get("not_scanned_this_run"):
+        return f"{cell} (not scanned this run, last good {last})"
+    # the same test as REPORT.md's headline: nothing fresh at all this run (blind, unreachable, or an empty list other
+    # than DIBBS's) is BLIND; a list that came back short (part of the source failed, earlier rows kept) is PARTIAL
+    if v.get("blind") or not v.get("reachable", True) or (not v.get("count") and s != "dibbs"):
+        return f"{cell} (BLIND, last good {last})"
+    if v.get("carried_forward"):
+        return f"{cell} (PARTIAL, last good {last})"
+    return cell
+
+
+def render_last_scan(r: dict, watched_keys=None) -> str:
+    """bids/_watch/LAST_SCAN.md: a heading with the scan's UTC time, then six labelled lines the hourly operator reads
+    in one `cat` instead of grepping REPORT.md and diffing open_bids.json. Plain text, no tables; sub-items are indented
+    `  - ` lines under their count."""
+    h = r["health"]
+    st = run_status(h)
+    found = r.get("found") or {}
+    lines = [f"# Last scan {r['started']}", f"Logged in: {_login_line(h)}"]
+    cells = [_count_cell(s, h.get(s)) for s in LAST_SCAN_SOURCES]
+    cells += [_count_cell(s, v) for s, v in h.items() if s not in LAST_SCAN_SOURCES]
+    cells.append(f"total {len(found)}/{sum(1 for b in found.values() if b.get('profiles'))}")
+    lines.append("Counts: " + " | ".join(cells))
+    # "new" = a matching, still-open bid whose key was not in the previous open_bids.json (what scan() tracks as r["new"]
+    # and REPORT.md lists under "NEW matching bids"); its first_seen is this scan's timestamp as a consequence
+    new = list((r.get("new") or {}).values())
+    lines.append(f"New matching bids: {len(new)}")
+    for b in sorted(new, key=lambda x: x.get("closing") or "9"):
+        lines.append(f"  - {b['source']} {b['id']} | {_one_line(b.get('title') or '', 90)} | {_one_line(b.get('agency') or '', 40)} "
+                     f"| closes {b.get('closing') or '?'} | {','.join(b.get('profiles') or [])} | watched {'yes' if b.get('watched') else 'no'}")
+    # the same set and text as REPORT.md's "Changes on matching / watched bids" (matching or watched), each cut to 200 chars
+    changed = list((r.get("changed") or {}).values())
+    lines.append(f"Changes on watched bids: {len(changed)}")
+    lines += ["  - " + " ".join(_change_line(b).split())[:200] for b in changed]
+    downloads = r.get("downloads") or {}
+    lines.append(f"Documents downloaded: {sum(len(fs) for fs in downloads.values())}")
+    for k, files in downloads.items():
+        w = watched_keys.entry(found[k]) if watched_keys is not None and k in found else None
+        label = (w or {}).get("folder") or k  # the bid folder the watchlist names, else source:id
+        lines += [f"  - {label}: {Path(f).name}" for f in files]
+    errs = [(s, e) for s, v in h.items() if not v.get("not_scanned_this_run") for e in (v.get("errors") or [])]
+    if errs:
+        per = {}
+        for s, _ in errs:
+            per[s] = per.get(s, 0) + 1
+        counts = ", ".join(f"{s} {n}" for s, n in per.items())
+        lines.append(f"Errors: {counts}; first: {errs[0][0]}: {_one_line(errs[0][1], 200)}; exit code {st['exit_code']}")
+    else:
+        lines.append(f"Errors: none; exit code {st['exit_code']}")
+    return "\n".join(lines) + "\n"
+
+
+def write_last_scan_crash(started: str, error: str) -> str:
+    """A scan that died before writing its files still leaves a current LAST_SCAN.md, so the operator never reads the
+    previous hour's digest as this hour's. Never raises."""
+    text = "\n".join([f"# Last scan {started}", "Logged in: unknown (scan crashed)", "Counts: unknown (scan crashed)",
+                      "New matching bids: 0", "Changes on watched bids: 0", "Documents downloaded: 0",
+                      f"Errors: scan crashed: {_one_line(error, 300)}; exit code 2"]) + "\n"
+    try:
+        LAST_SCAN_FILE.write_text(text)
+    except Exception:  # noqa: BLE001
+        pass
+    return text
+
+
 def render(r: dict) -> str:
     h = r["health"]
     lines = [f"# Bid watch report — {r['started']}", ""]
@@ -648,8 +756,7 @@ def render(r: dict) -> str:
         lines += ["", "## NEW matching bids since last scan", "", HDR] + [_row(b) for b in sorted(r["new"].values(), key=lambda x: x.get("closing") or "9")]
     if r["changed"]:
         lines += ["", "## Changes on matching / watched bids (addenda, dates)", ""]
-        for b in r["changed"].values():
-            lines.append(f"- **{b.get('title', '')[:90]}** ({b['source']}): " + "; ".join(b["diffs"]) + f" — {b.get('url', '')}")
+        lines += [f"- {_change_line(b)}" for b in r["changed"].values()]
     if r["missing_watch"]:
         lines += ["", "## Watched bids NOT seen this scan (closed, moved, or source blind)", ""]
         lines += [f"- {w.get('name', w.get('id'))} ({w.get('source')})" for w in r["missing_watch"]]
@@ -690,7 +797,7 @@ def render(r: dict) -> str:
 
 # ---------------- --push: publish each cycle's results to the repo branch ----------------
 
-PUSH_PATHS = ["bids/_watch/REPORT.md", "bids/_watch/open_bids.json", "bids/_watch/health.json",
+PUSH_PATHS = ["bids/_watch/REPORT.md", "bids/_watch/LAST_SCAN.md", "bids/_watch/open_bids.json", "bids/_watch/health.json",
               "bids/_watch/dibbs_state.json", "bids/_watch/dashboard", "bids/_watch/downloads"]
 STATUS_FILE = DEBUG_DIR / "loop.status"  # gitignored heartbeat: pid, last cycle, last push result
 
@@ -870,26 +977,29 @@ def main() -> int:
         started = iso()
         sync = git_sync() if a.push else "no sync (--push not set)"
         ping("scan", "/start")
+        last_scan = ""
         try:
             filed = []
             r = scan(sources, enrich_details=not a.no_detail)
             filed = r.get("filed", [])
+            last_scan = r.get("last_scan", "")
             print(REPORT_FILE.read_text().split("## Source health")[0].strip())
-            ok = any(v["count"] for v in r["health"].values())
             # a BidNet login deferred to keep fresh logins apart is a deliberate skip, not a fault: it does not make
-            # the run degraded, but the skipped source gets no success ping of its own (its data is not fresh)
-            skipped = [s for s, v in r["health"].items() if v.get("login_deferred")]
-            # sources that returned nothing fresh this run (blind, carried forward, cool-down): exit 3 so a
-            # scheduler/monitor sees a degraded run instead of a green one
-            degraded = [s for s, v in r["health"].items() if not v.get("not_scanned_this_run") and s not in skipped
-                        and (v.get("carried_forward") or not v["reachable"] or (not v["count"] and s != "dibbs"))]
+            # the run degraded, but the skipped source gets no success ping of its own (its data is not fresh).
+            # Sources that returned nothing fresh this run (blind, carried forward, cool-down) make the run degraded:
+            # exit 3 so a scheduler/monitor sees it instead of a green one. Same rule as LAST_SCAN.md's exit code.
+            st = run_status(r["health"])
+            ok, skipped, degraded = st["ok"], st["skipped"], st["degraded"]
             logins = {s: v.get("login_note") for s, v in r["health"].items()}
-        except Exception:  # noqa: BLE001 - never let the loop die
+        except Exception as e:  # noqa: BLE001 - never let the loop die
             traceback.print_exc()
             ok, logins, degraded, skipped = False, {}, ["scan crashed"], []
+            last_scan = write_last_scan_crash(started, f"{type(e).__name__}: {str(e)[:200]}")
         push = git_push_results(started, filed) if a.push else "not pushed (--push not set)"
         print(f"[{iso()}] cycle {cycle}: ok={ok} degraded={degraded} skipped={skipped} sync={sync} push={push} "
               f"logins={logins}", flush=True)
+        if last_scan:  # the LAST_SCAN.md lines, so a log tail shows the digest right after the cycle line
+            print(last_scan.rstrip(), flush=True)
         summary = f"ok={ok} degraded={degraded} skipped={skipped} push={push} logins={logins}"
         ping("scan", "" if ok and not degraded and not str(push).startswith("push FAILED") else "/fail", summary)
         for src in ("bidnet", "samgov", "bonfire", "dibbs", "coloradovss"):

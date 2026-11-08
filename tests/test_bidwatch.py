@@ -651,8 +651,9 @@ b.close()
 from scripts.bidwatch import run  # noqa: E402
 
 run.samgov_bulk.URL = "http://127.0.0.1:1/no-bulk-file-in-tests"  # part 5 serves a fake one
-for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE"]:
+for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE", "LAST_SCAN_FILE"]:
     setattr(run, name, TMP / f"{name}.json")
+LAST_SCAN = TMP / "LAST_SCAN_FILE.json"
 (TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
 run.HOSTS["bidnet"] = BASE + "/colorado"
 run.bidnet.download_docs.__globals__["DOWNLOAD_DIR"] = TMP / "downloads"
@@ -666,11 +667,35 @@ check("a long-closed bid that BidNet still lists is not open (never reported as 
       not run._is_open({"closing": "2021-12-15"}) and run._is_open({"closing": "2099-01-01"}) and run._is_open({"closing": None}))
 check("watched bid docs downloaded when logged in", any(r1["downloads"].values()), r1["downloads"])
 check("report has source health + all open", "## Source health" in rep and "All open matching bids" in rep)
+# LAST_SCAN.md: the operator's six-line digest, written next to the report on every scan
+_ls = LAST_SCAN.read_text()
+_ls_labels = [ln.split(":")[0] for ln in _ls.splitlines()[1:] if not ln.startswith("  - ")]
+check("LAST_SCAN.md written: a heading with the scan's UTC time, then the six labelled lines in order, nothing else",
+      _ls.splitlines()[0] == f"# Last scan {r1['started']}" and _ls_labels == ["Logged in", "Counts", "New matching bids",
+                                                                                "Changes on watched bids", "Documents downloaded", "Errors"]
+      and "|---" not in _ls, _ls)
+check("LAST_SCAN.md: BidNet logged in with its note; open/matching per source and in total; no BLIND marker on a clean scan",
+      _ls.splitlines()[1].startswith("Logged in: yes (") and r1["health"]["bidnet"]["logged_in"]
+      and "Counts: bidnet 3/2 | samgov -/- | coloradovss -/- | bonfire -/- | total 3/2" in _ls and "BLIND" not in _ls, _ls)
+check("LAST_SCAN.md: first sight of the two matching bids lists them as new (not in the previous open_bids.json), watched flag read",
+      "New matching bids: 2" in _ls
+      and re.search(r"^  - bidnet 0000500001 \| HVAC Maintenance Services \| [^|]*\| closes \d{4}-\d{2}-\d{2} \| brownbison \| watched no$", _ls, re.M)
+      and re.search(r"^  - bidnet 0000500002 \| On-Call Commercial Plumbing Services RFQ 2126 \| [^|]*\| closes \d{4}-\d{2}-\d{2} \| brownbison \| watched yes$",
+                    _ls, re.M), _ls)
+check("LAST_SCAN.md: the downloaded document is listed under the bid's source:id (no bid folder in the watchlist yet)",
+      "Changes on watched bids: 0" in _ls and "Documents downloaded: 1" in _ls and "  - bidnet:0000500002: RFQ.pdf" in _ls, _ls)
+check("LAST_SCAN.md: the Errors line ends with the exit code; the same text comes back for the log",
+      re.search(r"^Errors: (none|.+; first: .+); exit code 0$", _ls.rstrip().splitlines()[-1]) and r1["last_scan"] == _ls, _ls)
 os.environ["FAKE_ADDENDUM"] = "1"
 r2 = run.scan(["bidnet"])
 ch = [c for c in r2["changed"].values() if any("NEW DOCUMENTS" in d for d in c["diffs"])]
 check("second scan detects addendum on watched bid", bool(ch), r2["changed"])
 check("second scan: nothing falsely NEW", not r2["new"], list(r2["new"]))
+_ls2 = LAST_SCAN.read_text()
+check("LAST_SCAN.md next scan: the bids seen before are not new again; the addendum is a change on the watched bid and a download",
+      "New matching bids: 0" in _ls2 and "  - bidnet 0000500001 |" not in _ls2 and f"Changes on watched bids: {len(r2['changed'])}" in _ls2
+      and "  - **On-Call Commercial Plumbing Services RFQ 2126** (bidnet): NEW DOCUMENTS (addendum?): Addendum 1.pdf" in _ls2
+      and "Documents downloaded: 1" in _ls2 and "  - bidnet:0000500002: Addendum 1.pdf" in _ls2, _ls2)
 # an unreachable source (SAM.gov API down, no key) must keep its previous rows and close nothing
 ob = json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())
 ob["bids"]["samgov:seed1"] = {"source": "samgov", "id": "seed1", "title": "HVAC maintenance seed", "closing": "2099-01-01",
@@ -685,6 +710,11 @@ check("unreachable source: previous rows carried forward, none closed",
 check("fully blind source: report says BLIND and last_success keeps its old time",
       r3["health"]["samgov"].get("blind") is True and r3["health"]["samgov"].get("last_success") != r3["started"]
       and "BLIND this run" in (TMP / "REPORT_FILE.json").read_text(), r3["health"]["samgov"])
+_ls3 = LAST_SCAN.read_text()
+check("LAST_SCAN.md on a blind source: the BLIND marker with its last good time after the carried-forward count, the errors "
+      "counted with the first one quoted, exit code 3 (degraded)",
+      "Counts: bidnet 3/2 | samgov 1/1 (BLIND, last good never) |" in _ls3 and "| total 4/3" in _ls3
+      and re.search(r"^Errors: (bidnet \d+, )?samgov \d+; first: \w+: .+; exit code 3$", _ls3.rstrip().splitlines()[-1]), _ls3)
 r4 = run.scan(["bidnet"])
 check("source not in this run: rows kept and health row marked not scanned",
       "samgov:seed1" in r4["found"] and r4["health"]["samgov"].get("not_scanned_this_run") is True
@@ -741,6 +771,10 @@ check("login gap (a): earlier BidNet rows carried forward, none marked closed, l
       len(_prev_bn) == 3 and all(r5c["found"].get(k, {}).get("carried_forward") for k in _prev_bn) and not r5c["closed"]
       and _hc.get("carried_forward") and common.BIDNET_LAST_LOGIN_FILE.read_text() == _t1h,
       (_prev_bn, list(r5c["closed"]), _hc))
+_ls5c = LAST_SCAN.read_text()
+check("LAST_SCAN.md on a deferred BidNet login: 'no: login deferred ...', BidNet BLIND with its carried rows, exit code 0 (a skip)",
+      f"Logged in: no: login deferred: last fresh login {_t1h}, next allowed after {_until}" in _ls5c
+      and re.search(r"bidnet 3/2 \(BLIND, last good 20\d\d-", _ls5c) and _ls5c.rstrip().endswith("; exit code 0"), _ls5c)
 _t4h = _set_last_login(4)
 _p0, _n0 = LOGIN_POSTS["n"], LOGINS["n"]
 r5d = run.scan(["bidnet"])
@@ -781,6 +815,9 @@ check("filed into the bid folder; bytes already there under another name are not
       sorted(x.name for x in (_bf / "docs").iterdir()) == ["Addendum 1.pdf", "RFQ-saved-by-Luke.pdf"]
       and r8["filed"] == ["bids/littleton-2126/docs/Addendum 1.pdf"], (r8["filed"], sorted((_bf / "docs").iterdir())))
 check("report lists what was filed", "## Filed into bid folders" in (TMP / "REPORT_FILE.json").read_text())
+_ls8 = LAST_SCAN.read_text()
+check("LAST_SCAN.md names the bid folder the watchlist gives for each downloaded file",
+      "Documents downloaded: 2" in _ls8 and "  - bids/littleton-2126: Addendum 1.pdf" in _ls8 and "  - bids/littleton-2126: RFQ.pdf" in _ls8, _ls8)
 r9 = run.scan(["bidnet"])
 check("next scan: nothing downloaded or filed twice", not r9["downloads"] and not r9["filed"], (r9["downloads"], r9["filed"]))
 os.environ["FAKE_REV"] = "1"
@@ -1101,8 +1138,15 @@ _env0["BIDWATCH_KEEPALIVE"] = os.environ.get("BIDWATCH_KEEPALIVE")
 os.environ["BIDWATCH_KEEPALIVE"] = "0"  # never start the real keeper here
 run._heartbeat = lambda **kw: None  # the heartbeat file lives in the real repo's debug dir
 sys.argv = ["run.py", "--sources", "bidnet"]
-_rc16 = run.main()
+_out16 = _io2.StringIO()
+with _ctx.redirect_stdout(_out16):
+    _rc16 = run.main()
 sys.argv, run._heartbeat = _argv0, _hb0
+_out16 = _out16.getvalue()
+_ls16 = LAST_SCAN.read_text()
+check("the run prints LAST_SCAN.md's lines after the cycle line, so a log tail shows the digest",
+      "cycle 1:" in _out16 and _ls16.rstrip() in _out16 and _out16.index(_ls16.rstrip()) > _out16.index("cycle 1:")
+      and f"Logged in: no: {common.NO_PASSWORD_NOTE}" in _ls16, _out16[-900:])
 for _k, _v in _env0.items():
     if _v is None:
         os.environ.pop(_k, None)
@@ -1425,6 +1469,20 @@ run.scan = lambda sources, enrich_details=True: {"health": {
 _rc, _ = _main_rc(["--sources", "samgov,bonfire"])
 check("degraded scan exits 3, pings /fail; the healthy source still pings, the blind one does not",
       _rc == 3 and [h[1] for h in HITS] == ["/scan/start", "/scan/fail", "/bonfire"], (_rc, HITS))
+
+
+def _crashing_scan(sources, enrich_details=True):
+    raise RuntimeError("Chromium went away")
+
+
+run.scan = _crashing_scan
+_outc = _io2.StringIO()
+with _ctx.redirect_stdout(_outc), _ctx.redirect_stderr(_io2.StringIO()):
+    _rc, _ = _main_rc(["--sources", "samgov"])
+_lsc = LAST_SCAN.read_text()
+check("a scan that crashes exits 2 and still writes a current LAST_SCAN.md with the crash in its Errors line, printed after the cycle line",
+      _rc == 2 and _lsc.startswith("# Last scan 20") and "Errors: scan crashed: RuntimeError: Chromium went away; exit code 2" in _lsc
+      and _outc.getvalue().index("Errors: scan crashed") > _outc.getvalue().index("cycle 1:"), (_rc, _lsc, _outc.getvalue()[-400:]))
 HITS.clear()
 _ka = os.environ.get("BIDWATCH_KEEPALIVE")
 os.environ.update({"HC_PING_BIDNET": _mon + "/bidnet", "BIDWATCH_KEEPALIVE": "0"})  # never start the real keeper here
