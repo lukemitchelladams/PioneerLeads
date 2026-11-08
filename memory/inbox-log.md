@@ -293,3 +293,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-08 18:25Z (hourly, read-only): 1 new (msg 1a1bc630d8e340c5): HG Summit courtesy reply 18:19Z to the Mac (keep us in mind for Summit/Eagle bids). No action; Mac owns the thread. No CRM brief.
 - 2026-11-08 19:25Z (hourly, read-only): nothing unseen (latest-message check). No CRM brief.
 - 2026-11-08 20:25Z (hourly, read-only): nothing unseen (latest-message check). No CRM brief.
+- 2026-11-08 21:25Z (hourly, read-only): nothing unseen (latest-message check). No CRM brief.
