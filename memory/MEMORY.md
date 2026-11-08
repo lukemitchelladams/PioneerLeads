@@ -1193,3 +1193,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - LAST_SCAN 15:35Z (5fb5d17): logged in attempt 1; 0 new, 0 watched changes, 0 docs; bonfire Cloudflare; exit 0. Inbox: nothing unseen; no CRM brief. last_hourly_check 16:25Z.
 - Dashboard blobs now: bids 8ada2d230c747b25c0f66a5f81bc3aa7 (v184), events faafb0093e2d7b2dbe6aa72513e0d49f (v186), sources b4b060b6eab5c545f49df1dda6134fdb (v146), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
 - 2026-11-08 16:45Z (HQ scan 16:36Z): logged in attempt 1, EXIT 0, pushed 35e4e6d. Inbox: HG Summit Roofing and Snow Removal (Keyner Hoyes, hoyeskeyner@gmail.com, Silverthorne) replied to the Mac with service area Summit + Eagle counties (Silverthorne, Frisco, Dillon, Keystone, Breckenridge, Blue River, Leadville, Avon, Eagle) and hourly rates (in the email, not here): keep as a mountain-county snow sub; Mac owns the thread.
+
+### 2026-11-08 17:21Z hourly (WORKER, read-only)
+- LAST_SCAN 16:36Z (35e4e6d): logged in attempt 1; 0 new, 0 changes, 0 docs; bonfire Cloudflare; exit 0.
+- WORKER MISS + FIX: HG Summit's 15:55Z reply (msg 1a1bbdf34adf825e) landed in an already-seen thread; the 16:25Z run compared THREAD ids (THREAD_VIEW_IDS_ONLY) and missed it. HQ had already filed HG Summit as a mountain snow sub (Mac owns the thread; Mac replied 15:36Z, so the Mac is working). From now on the inbox check uses THREAD_VIEW_SUMMARY and compares the LATEST MESSAGE id against inbox-seen.json.
+- last_hourly_check 17:25Z. No CRM brief.
+- Dashboard blobs now: bids 0f6694dfc36e23757423b885aa1647df (v185), events ec691e0387b535ced60dc25a6963faf2 (v187), sources 5cd11ab1fc5e12179ea3edc7c22f3249 (v147), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
