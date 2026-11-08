@@ -1,35 +1,5 @@
 [
  {
-  "key": "samgov:24ffa6d27a674212a41ade72d91ec106",
-  "source": "samgov",
-  "agency": "TREASURY, DEPARTMENT OF THE / BUREAU OF ENGRAVING AND PRINTING / OFFICE OF CURRENCY MANU (WCF)",
-  "title": "Ergonomic Drum Handlers",
-  "sol": "2031ZA27N00002",
-  "closing": "2026-11-07",
-  "posted": "2026-10-19",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/24ffa6d27a674212a41ade72d91ec106/view"
- },
- {
-  "key": "samgov:da941a154311495ab89a5c488bacee4b",
-  "source": "samgov",
-  "agency": "TREASURY, DEPARTMENT OF THE.BUREAU OF ENGRAVING AND PRINTING.OFFICE OF CURRENCY MANU (WCF)",
-  "title": "Ergonomic Drum Handlers",
-  "sol": "2031ZA27N00002",
-  "closing": "2026-11-07",
-  "posted": "2026-11-06",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/da941a154311495ab89a5c488bacee4b/view"
- },
- {
   "key": "bidnet:0000439271",
   "source": "bidnet",
   "agency": "Douglas County School District RE-1",
