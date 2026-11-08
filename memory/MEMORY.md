@@ -1228,3 +1228,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - LAST_SCAN 21:35Z (76a9bec): logged in attempt 1; 0 new, 0 changes, 0 docs; exit 0. Inbox (latest-message check): nothing unseen; no CRM brief. last_hourly_check 22:25Z.
 - Dashboard blobs now: bids 2cc2dbb7b7b5589e62ec5589de03218f (v190), events d0b188c10d9470eade8c083789ace455 (v192), sources 828a640656a862ecfd0e02419048a673 (v152), portal_feed 6d7e4dbdf9901399670ddcbdda714d1b (v96), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
 - 2026-11-08 22:45Z (HQ scan 22:35Z): logged in attempt 1, EXIT 0, pushed 2cae3cd.
+
+### 2026-11-08 23:21Z hourly (WORKER, read-only)
+- HQ 22:35Z scan: logged in (attempt 1); bidnet 639/81, samgov 103/103, coloradovss 68/3, bonfire 2/1 (error), dibbs stale. 0 new, 0 changes, 0 docs. Exit 0.
+- Inbox: nothing unseen (latest-message check; HG Summit latest 1a1bc630d8e340c5 already seen). No CRM brief.
+- Dashboard: bids -> blob 503964359f7779a04bf33af4bbc7b60a (v191), events -> d4a3f66d839f502e6b5ec9883f88eb2d (v193). Old blobs 2cc2dbb7..., d0b188c1... deleted. sources (828a6406..., v152), portal_feed (6d7e4dbd..., v96), doc_gaps (84c4957d..., v10) unchanged.
