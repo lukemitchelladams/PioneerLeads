@@ -285,3 +285,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-08 10:25Z (hourly, read-only): nothing unseen. No new ops-watchdog mail since 07:18Z. No CRM brief.
 - 2026-11-08 11:25Z (hourly, read-only): 1 new, Google DMARC report (noise). No new ops-watchdog mail since 07:18Z. No CRM brief.
 - 2026-11-08 12:25Z (hourly, read-only): 1 new, Microsoft DMARC report (noise). No new ops-watchdog mail since 07:18Z. No CRM brief.
+- 2026-11-08 13:25Z (hourly, read-only): 4 new. BidNet auto closing reminders: Brighton 26500209M V.2 (our GO, due Mon 11/09 14:00), Aurora B-4799 Ash Tree Treatment (REVIVE-IF, closes Fri 11/13 14:00, no sub pricing), DCSD 005-27 internet (NO). Microsoft DMARC (noise). No CRM brief.

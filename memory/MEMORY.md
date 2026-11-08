@@ -1170,3 +1170,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ scan 11:35Z (711071f): BidNet logged in attempt 1, all live, quiet; 0 rows added/removed. Inbox: 1 Microsoft DMARC (noise); no new ops-watchdog mail since 07:18Z; no CRM brief. last_hourly_check 12:25Z.
 - Dashboard blobs now: bids e4680da632025670879a3098a31785f1 (v180), events 9d8e0ee760ec54877f85742c243c9d9c (v182), sources fb511572d9fbd81f0e92445e42159013 (v142), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
 - 2026-11-08 12:45Z (HQ scan 12:35Z): BidNet logged in attempt 1. Pushed 809c163, EXIT 0. Quiet.
+
+### 2026-11-08 13:21Z hourly (WORKER, read-only)
+- HQ scan 12:35Z (809c163): BidNet logged in attempt 1, all live, quiet; 0 rows added/removed. Inbox: 3 BidNet closing reminders (Brighton GO due Mon 14:00; Aurora B-4799 ash trees REVIVE-IF closes Fri 11/13 14:00, no sub pricing; DCSD 005-27 NO) + 1 Microsoft DMARC. No new ops-watchdog mail. No CRM brief. last_hourly_check 13:25Z.
+- Dashboard blobs now: bids cb07dfaa8d3f4f2bcba980dec3e3f0b5 (v181), events 4b9bbcd2989d3df297e3ec63e4d4420c (v183), sources d83b0431c8ab3d78bc649ba9ccf9079c (v143), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
