@@ -281,3 +281,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-08 06:25Z (hourly, read-only): nothing unseen. No CRM brief.
 - 2026-11-08 07:25Z (hourly, read-only): nothing unseen. No CRM brief.
 - 2026-11-08 08:25Z (hourly, read-only): nothing unseen. No CRM brief.
+- 2026-11-08 09:25Z (hourly, read-only): nothing unseen in inbound search. Confirmed 2 ops-watchdog emails to Luke (Sat 13:38Z, Sun 07:18Z): Mac 'Brown Bison ops heartbeat' session down ~26h. No CRM brief.
