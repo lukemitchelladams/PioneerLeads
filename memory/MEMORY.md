@@ -1169,3 +1169,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-08 12:22Z hourly (WORKER, read-only)
 - HQ scan 11:35Z (711071f): BidNet logged in attempt 1, all live, quiet; 0 rows added/removed. Inbox: 1 Microsoft DMARC (noise); no new ops-watchdog mail since 07:18Z; no CRM brief. last_hourly_check 12:25Z.
 - Dashboard blobs now: bids e4680da632025670879a3098a31785f1 (v180), events 9d8e0ee760ec54877f85742c243c9d9c (v182), sources fb511572d9fbd81f0e92445e42159013 (v142), portal_feed 6418f21323fea9cb5a55d7ebd7068c3c (v94), doc_gaps 84c4957d030ffc2bdbed003c925a2906 (v10). Old three deleted.
+- 2026-11-08 12:45Z (HQ scan 12:35Z): BidNet logged in attempt 1. Pushed 809c163, EXIT 0. Quiet.
