@@ -1130,3 +1130,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-08 04:21Z hourly (WORKER, read-only)
 - HQ still FAILED (out of usage credits; resets 08:00Z = Sun 01:00 MT); 03:35Z scan missed (21 in a row). Latest scan 06:35Z 11/07; all portal sources stale. Inbox: nothing unseen; no CRM brief. last_hourly_check 04:25Z.
 - Dashboard blobs now: bids 7dfc42116b0d8341d6f95026659928c4 (v172), events aaf0f2b7b5486c1fd21ffc0530d7052d (v174), portal_feed 7af1732d04cb56d0309e0fce8417a028 (v93); sources/doc_gaps unchanged. Old two deleted.
+
+### 2026-11-08 05:21Z hourly (WORKER, read-only)
+- HQ still FAILED (out of usage credits; resets 08:00Z = Sun 01:00 MT); 04:35Z scan missed (22 in a row). Latest scan 06:35Z 11/07; all portal sources stale. Inbox: nothing unseen; no CRM brief. last_hourly_check 05:25Z.
+- Dashboard blobs now: bids cc5f62e8ac13a03f2fde8fd9ea0cb717 (v173), events fd171e396a8a4b7a579e3a662475bfc7 (v175), portal_feed 7af1732d04cb56d0309e0fce8417a028 (v93); sources/doc_gaps unchanged. Old two deleted.
