@@ -274,3 +274,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-07 23:25Z (hourly, read-only): 1 new. INBOUND SUB LEAD: Keyner Hoyes, owner, HG Summit Roofing and Snow Removal (Silverthorne), hoyeskeyner@gmail.com. Snow plowing (lots, HOA, driveways), roof snow, ice dams; 24/7; own plow truck; says licensed and insured; Summit + Eagle counties (Silverthorne, Frisco, Dillon, Keystone, Breckenridge, Leadville, Avon, Eagle); asks what we require from subs. No reply sent (read-only). Phone not recorded. No CRM brief.
 - 2026-11-08 00:25Z (hourly, read-only): nothing unseen. No CRM brief.
 - 2026-11-08 01:25Z (hourly, read-only): nothing unseen. No CRM brief.
+- 2026-11-08 02:25Z (hourly, read-only): nothing unseen. No CRM brief.
