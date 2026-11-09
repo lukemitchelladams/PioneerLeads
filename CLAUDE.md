@@ -68,6 +68,11 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
   board asks Luke to. Do not ask for a letter, a quote change or an early bind; nothing is bound or paid before Friday 11/13, and
   only Luke restarts that conversation. If Will writes in, log it, do not answer, one line on the board. Enforced in code
   (`no_contact_hits` in scripts/humanize_gate.py). Only Luke himself lifts this. The 11/06 and 11/09 emails to Will broke it.
+  Luke again, to the hourly worker session, same morning: "we are not buying the insurance contract from will until friday, i
+  dont have it yet" / "do not send him emails until friday, he just called me abut that email you sent" / "i told you i dont
+  have the money until friday" / "do not send him another email with an apology, i already told him". So: NO apology or
+  "sorry for the confusion" email either; Luke has already handled it. No bid waits on or promises an EMR letter, certificate
+  or policy before the Friday purchase (Brighton 11/09 goes without one).
 - **HARD RULE: no phone in email. Get information by email; never give out Luke's cell or invite a call** (Luke,
   2026-11-06 ~10:50 MT, verbatim: "i cant have all these fucking guys calling me all fucking day long, we need to try and
   get information via email and not always be telling people or letting them call me, because i dont always have all the
