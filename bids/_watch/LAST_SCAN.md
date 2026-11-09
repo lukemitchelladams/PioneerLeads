@@ -1,7 +1,8 @@
-# Last scan 2026-11-09T14:37:34+00:00
+# Last scan 2026-11-09T15:36:59+00:00
 Logged in: yes (attempt 1)
-Counts: bidnet 643/81 | samgov 102/102 | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 814/187
-New matching bids: 0
+Counts: bidnet 645/82 | samgov 102/102 | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 816/188
+New matching bids: 1
+  - bidnet 444225024046 | Janitorial Services |  | closes 2026-11-23 | brownbison | watched no
 Changes on watched bids: 0
 Documents downloaded: 0
 Errors: bonfire 1; first: bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network; exit code 0
