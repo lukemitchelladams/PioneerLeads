@@ -5,9 +5,27 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf
+- 2864.18_Jeffco Boetcher Mansion Chiller Replacement_Add 1_Elec_2026.11.03.pdf
 - Addendum 2 - 26-19289AP-FM.docx
+- Addendum _1 - 26-19289AP-FM.docx
+- Addendum _2 - 26-19289AP-FM.docx
+- ITB 26-19289AP-FM - Boettcher Mansion Chiller Replacement Project.docx
+- Ins. Reqs. - General _ Umbrella _ Pollution _ Professional.pdf
+- Jeffco Beottcher Mansion Chiller Replacement MEP DWGs _100_ CDs__Sealed.pdf
+- Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf
+- Sign In Doc.pdf
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
+| Appendix A |  | Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf | **MISSING** |
+| Exhibit A |  | 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf | INSIDE 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf (heading found; verify pages) |
+| Exhibit B |  | 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf | INSIDE 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf (heading found; verify pages) |
+| Exhibit C |  | 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf | INSIDE 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf (heading found; verify pages) |
+| Exhibit D |  | 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf | INSIDE 261967-Sample Contract for Boettcher Mansion Chiller Replacement - FINAL 10.8.26.pdf (heading found; verify pages) |
+| Form 1 |  | Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf | **MISSING** |
+| Form 13 |  | Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf | **MISSING** |
+| Form U |  | Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf | **MISSING** |
+| Schedule 40 |  | Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf | INSIDE Jeffco Beottcher Mansion Chiller Replacement Specs _100_ CDs__Sealed.pdf (heading found; verify pages) |
