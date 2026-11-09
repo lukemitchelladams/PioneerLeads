@@ -1129,6 +1129,22 @@ def attachment_problems(files):
 
 
 # ---------------------------------------------------------------------------------------------------------------- recipients
+# Luke, in chat 2026-11-09: "I AM NOT SENDING EMAILS TO FUCKING WILL AT TRUCORDIA, i am not signing that contract until fucking
+# friday". Nothing goes to Trucordia from any send path until Luke himself lifts this; do not remove it on anyone else's say-so.
+NO_CONTACT_RE = re.compile(r"@(?:[\w-]+\.)*trucordia\.com\b", re.I)
+NO_CONTACT_IDS = frozenset({"1a18d7978980da62", "1a1c0ec46eb07c1e", "1a18def7891ffc95", "1a18e381c5b8282c", "1a19d1324824f27e",
+                            "1a19d491faafaa09", "1a19df8ee4f30433"})   # Will's thread and his messages (a reply carries no address)
+NO_CONTACT_REFUSAL = ("NO CONTACT: Luke's rule 2026-11-09: no email to Will Seargeant or anyone at Trucordia until Luke lifts it himself. "
+                      "Not sent. Do not reword or reroute it; if Will writes in, log it and put one line on the board.")
+
+
+def no_contact_hits(recipients, ids=()):
+    """The recipients (or thread/message ids) that are off limits under Luke's 2026-11-09 no-Trucordia rule; [] when clear."""
+    vals = [recipients] if isinstance(recipients, str) else list(recipients or [])
+    hits = [str(r) for r in vals if r is not None and NO_CONTACT_RE.search(str(r))]
+    return hits + [str(i) for i in ids if str(i).strip() in NO_CONTACT_IDS]
+
+
 def owner_only(recipients):
     """True only when there is at least one recipient and EVERY one is an ASCII address in OWN (case-insensitive, surrounding
     spaces ignored), written bare ('luke@brownbisonco.com') or in the plain display-name form ('Luke Adams <luke@brownbisonco.com>',
@@ -1235,6 +1251,9 @@ def _decide_mail(tool, ti, hz_py=None):
         return _deny(f"{tool} carries {', '.join(html)}: most mail clients show the HTML part, and Brown Bison sends plain text. "
                      "Put the humanized text in " + ("forwardText" if tool == "forward" else "body") + " and drop the HTML field.")
     rcpts = _recipients(ti)
+    blocked = no_contact_hits(rcpts, [ti.get(k) for k in ("threadId", "thread_id", "messageId", "message_id") if ti.get(k)])
+    if blocked:
+        return _deny(f"{', '.join(blocked)}: " + NO_CONTACT_REFUSAL)
     if tool in REPLY_TOOLS:
         exempt = tool == "reply" and bool(_values(ti.get("to"))) and ti.get("replyAll") is not True and owner_only(rcpts)
     else:

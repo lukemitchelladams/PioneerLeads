@@ -63,6 +63,11 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
   lands on line 3 of the board, write the thing (resume, safety plan, markup table, form answers, pre-filled form, RSVP,
   decision) and email Luke the copy; the board line then reads "approve/sign X" instead of "write X". Decisions with a
   sensible default are made by HQ and reported, with the overrule window stated, instead of asked.
+- **HARD RULE: no email to Will Seargeant or anyone at Trucordia** (Luke, in chat, 2026-11-09: "I AM NOT SENDING EMAILS TO
+  FUCKING WILL AT TRUCORDIA, i am not signing that contract until fucking friday"). No operator emails Trucordia, and no plan or
+  board asks Luke to. Do not ask for a letter, a quote change or an early bind; nothing is bound or paid before Friday 11/13, and
+  only Luke restarts that conversation. If Will writes in, log it, do not answer, one line on the board. Enforced in code
+  (`no_contact_hits` in scripts/humanize_gate.py). Only Luke himself lifts this. The 11/06 and 11/09 emails to Will broke it.
 - **HARD RULE: no phone in email. Get information by email; never give out Luke's cell or invite a call** (Luke,
   2026-11-06 ~10:50 MT, verbatim: "i cant have all these fucking guys calling me all fucking day long, we need to try and
   get information via email and not always be telling people or letting them call me, because i dont always have all the

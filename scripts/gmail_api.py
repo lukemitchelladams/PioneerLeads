@@ -124,6 +124,9 @@ def humanize_refusal(text, recipients, asks=None, inbound=None, subject=None, fi
     Fails closed: a gate that cannot load or run refuses."""
     try:
         gate = _gate()
+        blocked = gate.no_contact_hits(recipients)
+        if blocked:
+            return f"{', '.join(blocked)}: {gate.NO_CONTACT_REFUSAL}", None
         if gate.owner_only(recipients):
             return "", None
         probs = []

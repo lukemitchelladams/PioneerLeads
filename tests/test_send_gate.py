@@ -1389,3 +1389,13 @@ def test_phone_corpus_report(capsys):
     assert not [p for p, _ in body_hits if p.parent.name <= "2026-11-06"], body_hits
     assert not [f for f, _ in subj_hits if f.parent.name <= "2026-11-06"], subj_hits
     assert not cell_drafts, "outreach email drafts must use the four-line signature (no phone)"
+
+
+@pytest.mark.parametrize("rcpts,ids,want", [
+    (["will.seargeant@trucordia.com"], (), True), (["Will.Seargeant@TRUCORDIA.com"], (), True),
+    (["Will Seargeant <will.seargeant@trucordia.com>"], (), True), (["nina@example.gov", "x@mail.trucordia.com"], (), True),
+    ([], ("1a18d7978980da62",), True), (["nina@example.gov"], (), False), (["nottrucordia@example.com"], (), False),
+    (["lukemitchelladams@gmail.com"], (), False),
+])
+def test_no_contact_trucordia(rcpts, ids, want):  # Luke, 2026-11-09
+    assert bool(gate.no_contact_hits(rcpts, ids)) is want

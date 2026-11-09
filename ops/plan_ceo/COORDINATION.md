@@ -1,3 +1,11 @@
+# 2026-11-09 ~08:45 MT: NO EMAIL TO WILL AT TRUCORDIA (both operators, until Luke lifts it himself)
+
+Luke, in chat: "I AM NOT SENDING EMAILS TO FUCKING WILL AT TRUCORDIA, i am not signing that contract until fucking friday".
+The cloud emailed Will on 11/06 (asked for the Brighton EMR letter and to bind Travelers early on the $295-down plan) and on
+11/09 08:27 MT (chased the letter). Both were wrong: no bind or payment before 11/13 was already the rule. Do not follow up, correct or
+apologize to Will; Luke decides what if anything is said. The WILL row in the Brighton checklist and every "chase Will" plan step are void.
+Sending to any trucordia.com address is now refused in code on both operators.
+
 # 2026-11-06 ~12:10 MT: CALL REQUESTS BECOME A CALL BRIEF; Parker 26-021-1 NO-BID; CPW call cancelled (both operators)
 
 Luke: "yeah just do email and if they need to call me, you need to inform me that they let you know they want a call, and
