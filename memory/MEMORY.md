@@ -1252,3 +1252,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check). No CRM brief.
 - Dashboard: bids -> 06ace0fedc287793ef2e737c9d7e2aab (v194), events -> 96f57a2ecbfdf622d1a6239e868a0f38 (v196), sources -> 13bf83c8203d171ead199bae90cd4fb8 (v155). Old blobs 33bc06e9..., f5877596..., 2ca63ef8... deleted. portal_feed (52db3718..., v97), doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-09 02:45Z (HQ scan 02:36Z, after the cool-down): logged in attempt 1, VSS back, EXIT 0, pushed 7117f38.
+
+### 2026-11-09 03:21Z hourly (WORKER, read-only)
+- HQ 02:36Z scan (after the cool-down): logged in attempt 1; bidnet 639/81, samgov 102/102, coloradovss 68/3 (back), bonfire 2/1 (Cloudflare), dibbs stale. 0 new, 0 changes, 0 docs. Exit 0. Sources live 3/5. REPORT open matches 152.
+- Inbox: nothing unseen (latest-message check). No CRM brief.
+- Dashboard: bids -> 899fa5736fc4c43b817d7662ca8a83cd (v195), events -> a9bec7e587d8db5ade262fcb57c1c06b (v197), sources -> 268717a0c6208ae7c4e3cc245008f3e3 (v156), portal_feed -> ec315241d8feb28f5f562e3dd17478b3 (v98, sha d8685537397f). Old blobs 06ace0fe..., 96f57a2e..., 13bf83c8..., 52db3718... deleted. doc_gaps (84c4957d..., v10) unchanged.
