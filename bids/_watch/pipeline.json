@@ -444,7 +444,8 @@
       "subs": "5 mechanical firms emailed 2026-10-28 via HQ outbox (bcc 5, ITB + drawings + specs + insurance + sample contract attached)",
       "sub_pricing": "None",
       "folder": "bids/jeffco-boettcher-chiller",
-      "contact": "not in hand"
+      "contact": "not in hand",
+      "notes": " Addendum 2 (11/09): due unchanged 11/17 10:00; hydronic equipment from any qualified supplier."
     },
     {
       "id": "landscaping-mgmt-2027",
@@ -1377,7 +1378,7 @@
       "contact": "Stephen Holly, stephen.holly@usda.gov",
       "sub_pricing": "Pending (B&K Cleaning, Durango: base-year price by Mon 11/16; tour requested for 11/09 or 11/13)",
       "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-      "next": "Tour moved: Brandon Caley (msg 1a1c1f35726c93e2, 20:15Z) offers Fri 11/13 at 1:00 PM MT (HQ had asked 3:00 PM) and warns US 160 is cut at the Piedra River Bridge (flood), so Durango to Pagosa now detours through New Mexico, ~3.5 h extra for B&K. HQ to confirm time + attendee with Caley by Thu 11/12; B&K price by 11/16; quote by 11/19 10:00 MT; Q&A amendment coming (Holly 11/09)",
+      "next": "Tour Fri 11/13 13:00 at 180 Pagosa St confirmed with Caley; attendee named to Caley by Thu 11/12. US 160 Piedra River Bridge CLOSED (flood; NM detour +3.5 h) so B&K (Durango) asked by Wed whether he can attend and staff it; B&K price by 11/16; quote by 11/19 10:00 MT; Q&A amendment coming",
       "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
       "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke; B&K replied 11/06 (interested, pricing to follow)"
     },

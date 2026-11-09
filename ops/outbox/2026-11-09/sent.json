@@ -135,5 +135,25 @@
     "bcc_count": 0,
     "attachments": [],
     "asks": 0
+  },
+  "pagosa-caley-friday": {
+    "id": "1a1c20c5f289fee1",
+    "threadId": "1a1c0dec5b91105c",
+    "to": [
+      "brandon.caley@usda.gov"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "pagosa-bk-friday": {
+    "id": "1a1c20c62c9e278d",
+    "threadId": "1a1ade55a73ca213",
+    "to": [
+      "bandkcleaningcolorado@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
   }
 }
