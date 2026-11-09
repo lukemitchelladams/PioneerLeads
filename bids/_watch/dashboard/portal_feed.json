@@ -1830,6 +1830,21 @@
   "url": "https://parkeronline.bonfirehub.com/opportunities/259452"
  },
  {
+  "key": "samgov:1080fd91f83e49f595458d569cf6222f",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "title": "Traverse Bearing Assembly",
+  "sol": "2027-KM001",
+  "closing": "2026-11-24",
+  "posted": "2026-11-09",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/1080fd91f83e49f595458d569cf6222f/view"
+ },
+ {
   "key": "samgov:414f66eef94f47858c60924be78b20b6",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
@@ -2670,6 +2685,36 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000443063",
+  "source": "bidnet",
+  "agency": "Aurora Public Schools",
+  "title": "HVAC AIR FILTERS",
+  "sol": "B2729",
+  "closing": "2026-12-09",
+  "posted": "2026-11-09",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000443075",
+  "source": "bidnet",
+  "agency": "City of Thornton",
+  "title": "Sport Court Repairs On-Call",
+  "sol": "337-26",
+  "closing": "2026-12-09",
+  "posted": "2026-11-09",
+  "prebid_date": "2026-11-17",
+  "prebid_mandatory": "Optional",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000441223",
   "source": "bidnet",
   "agency": "City of Fort Collins",
@@ -2713,6 +2758,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view"
+ },
+ {
+  "key": "samgov:edca6c0e45674c149ab966bc1096fe6b",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.FLEET READINESS CENTER",
+  "title": "FRCSW Hoist Requirement",
+  "sol": "N68520-27-RFPREQ-KN00000-0154",
+  "closing": "2026-12-14",
+  "posted": "2026-11-09",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view"
  },
  {
   "key": "samgov:eea50eb876044089a54c01f641e9c9be",
