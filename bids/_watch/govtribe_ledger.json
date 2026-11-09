@@ -2523,6 +2523,12 @@
    "verdict": "EVALUATE",
    "why": "Janitorial is our trade. BidNet private open-notice with no agency on the list row; package and pre-bid/site-visit terms not in hand yet. Watchlisted so the next logged-in scan files the documents; read the walk date first (rule 0).",
    "at": "2026-11-09T16:30:00Z"
+  },
+  "fd1db65a9f2d47ef81249208446d82a9": {
+   "name": "Army ACC Watervliet (W6QK) W911PT27QA025 Case Magnet (PSC 3920, NAICS 332999, Total SB set-aside, closes 2026-11-23)",
+   "verdict": "NO",
+   "why": "Jones Bearing: a magnet assembly for Watervliet Arsenal is not a Jones Bearing / American Pulley / ConveyMor product (bearings, pulleys, conveyors, bucket elevators, lime handling); supply bid with no quantity in hand (rule 9). Decided from the SAM row only (title, PSC, NAICS): the notice text was not readable here (api.sam.gov blocked in the cloud, GovTribe lapsed). Revisit only if the package shows a pulley/conveyor/bearing item.",
+   "at": "2026-11-09T17:28:00Z"
   }
  },
  "watched": {
@@ -2708,6 +2714,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-09T16:30:00Z",
+ "last_hourly_check": "2026-11-09T17:28:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
