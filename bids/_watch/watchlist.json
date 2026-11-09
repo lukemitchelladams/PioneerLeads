@@ -624,6 +624,14 @@
       "match": "0000443063|B2729|hvac air filters",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Arapahoe County RFB 26-64 Courthouse 1 Interior Wall Removal, Drywall & Paint (EVALUATE; closes 2026-12-09)",
+      "source": "bidnet",
+      "id": "0000443113",
+      "match": "0000443113|RFB-26-64|courthouse 1 interior wall",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }

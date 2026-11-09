@@ -173,7 +173,7 @@
       "trade": "Facilities / GC",
       "due": "2026-11-09T14:00:00-07:00",
       "portal": "BidNet",
-      "decision": "GO",
+      "decision": "MISSED",
       "decision_note": "Full package in hand 10/20 (Addendum 1, Q&A, Fee Schedule, Required Solicitation Documents, Sample MPA, General Terms). Need handyman/GC sub rates. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): no bid bond; EMR/safety letter needed (new entity). Ceres (Monica Manzo) promised rates 11/05; due 11/09 14:00.",
       "prebid": null,
       "prebid_mandatory": false,
@@ -181,7 +181,8 @@
       "subs": "2026-10-27: short pricing request sent to all 6 (Handily, Rock Solid, TC Handyman, Bleeker, Ceres, V Tradesman); answers by Mon 11/2.",
       "folder": "bids/brighton-as-needed-construction",
       "contact": "Kelsey Archuleta, procurement@brightonco.gov",
-      "sub_pricing": "Partial (Ceres Construction hourly rate received 2026-11-06 07:43 MT; figure kept in private/, not in this repo)"
+      "sub_pricing": "Partial (Ceres Construction hourly rate received 2026-11-06 07:43 MT; figure kept in private/, not in this repo)",
+      "next": "Closed 2026-11-09 14:00 MT with no submission on record (HQ 21:45Z: nothing to procurement@brightonco.gov, no BidNet receipt; Luke did not answer the Mac 12:33 MT request for 5 answers + SoS certificate). Revert to SUBMITTED only if Luke uploaded it himself. Post-mortem: bids/brighton-as-needed-construction/POSTMORTEM.md"
     },
     {
       "id": "adams-2026-766",
@@ -2320,6 +2321,12 @@
       "when": "2026-11-13T13:00:00-07:00",
       "kind": "Site tour (optional)",
       "note": "Pagosa Ranger District tour, moved from 11/09 (B&K did not confirm). Caley offers 1:00 PM; not mandatory. US 160 closed at the Piedra River Bridge: Durango sub faces a ~3.5 h detour via NM"
+    },
+    {
+      "bid": "brighton-26-500209",
+      "when": "2026-11-09T14:00:00-07:00",
+      "kind": "Closed - missed",
+      "note": "No submission on record at the 14:00 MT close; package was built, Luke's 5 answers + SoS certificate never arrived"
     }
   ],
   "doc_gaps": [

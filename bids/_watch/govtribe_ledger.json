@@ -2553,6 +2553,24 @@
    "verdict": "NO",
    "why": "Hoist requirement (PSC 3950 winches/hoists, NAICS 811310 machinery repair) at Fleet Readiness Center Southwest, San Diego: not a Jones Bearing product and outside Brown Bison's Colorado trades.",
    "at": "2026-11-09T19:30:00Z"
+  },
+  "bidnet:0000442984": {
+   "name": "City of Longmont 426092 Sunset Commercial Pool Liner Replacement (closes 2026-12-08)",
+   "verdict": "NO",
+   "why": "Commercial pool liner replacement is a specialty aquatics trade, outside Brown Bison's HVAC, plumbing, electrical, facilities maintenance, grounds/snow and janitorial (rule 8).",
+   "at": "2026-11-09T22:32:00Z"
+  },
+  "bidnet:0000443113": {
+   "name": "Arapahoe County RFB 26-64 Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting (closes 2026-12-09)",
+   "verdict": "EVALUATE",
+   "why": "Facilities/handyman scope (interior wall removal, drywall, paint) at a county courthouse. RFB-26-64.pdf is public on BidNet; watchlisted so the scan files it; read the pre-bid/site visit terms first (rule 0), then decide GO and line up a drywall/paint sub (the Ceres Construction type of handyman sub).",
+   "at": "2026-11-09T22:32:00Z"
+  },
+  "e13bc6a2dd844b36a72e20c137b0ffef": {
+   "name": "DOE / Alliance for Energy Innovation PSN-2027032940 NLR ESIF High Performance Computing pre-solicitation (PSC 7K20, NAICS 334111, closes 2027-01-31)",
+   "verdict": "NO",
+   "why": "High-performance computing hardware/IT procurement (PSC 7K20, NAICS 334111 computers) at the Golden lab; not a Brown Bison trade or a Jones Bearing product.",
+   "at": "2026-11-09T22:32:00Z"
   }
  },
  "watched": {
@@ -2738,6 +2756,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-09T21:28:00Z",
+ "last_hourly_check": "2026-11-09T22:32:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
