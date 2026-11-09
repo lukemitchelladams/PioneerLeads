@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-09T08:39:10+00:00
+# Bid watch report — 2026-11-09T09:36:37+00:00
 
-**Headline:** 6 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 639 | BUYER 443, AGGREGATE 197 | 81 | 2026-11-09T08:39:10+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T08:39:10+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 102 |  | 102 | 2026-11-09T08:39:10+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-09T08:39:10+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 640 | BUYER 443, AGGREGATE 198 | 81 | 2026-11-09T09:36:37+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T09:36:37+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 102 |  | 102 | 2026-11-09T09:36:37+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-09T09:36:37+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,15 +26,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Clear Creek School District RE-1 | Fire Alarm System Replacement and Voice Evacuation System Installation | 2026-12-03 (24d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-System-Replacement-and-Voice-Evacuation-System-Installation/0000441758?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Custodial Services - 822 7th Street Building | 2026-11-30 (21d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Custodial-Services-822-7th-Street-Building/0000442415?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | School District 27J | Baseball/Softball Field Irrigation Connection | 2026-12-01 (22d) | 2026-11-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1 |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **31-  BEARING, BALL, ANNULAR** (samgov): title changed: 31-  BEARING, BALL, ANNULAR — https://sam.gov/workspace/contract/opp/414f66eef94f47858c60924be78b20b6/view
-- **31-  BEARING, BALL, ANNULAR** (samgov): title changed: 31-  BEARING, BALL, ANNULAR — https://sam.gov/workspace/contract/opp/d637ce3f46ee458e835243c74d5a2a42/view
-- **31-  Bearing, Ball, Annular** (samgov): title changed: 31-  Bearing, Ball, Annular — https://sam.gov/workspace/contract/opp/27f7957d875a4ed38ec818b1a4afb863/view
-- **31-  Bearing, Roller, Cylindrical** (samgov): title changed: 31-  Bearing, Roller, Cylindrical — https://sam.gov/workspace/contract/opp/e63d86aa73b34b0ca47a59fbfaa8ba09/view
-- **Noise Tested Bearings IDIQ- Amendment 0001** (samgov): NEW DOCUMENTS (addendum?): 3de4ebea2af94eed96481bc25b8c2a85 — https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view
-- **BEARING ROLLER** (samgov): NEW DOCUMENTS (addendum?): f71274a92f504e959973a64b8e5995cc — https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
