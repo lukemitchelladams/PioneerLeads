@@ -54,6 +54,15 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **HARD RULE: do every single thing you can yourself and send Luke a copy for approval; "LUKE MUST DO" is for
+  signatures, photo ID, portal uploads, payments and walks a human must stand at** (Luke, 2026-11-08 14:57 MT, by email,
+  verbatim: "Lots of this shit listed here you can make decisions on your own and keep moving, you can do all those
+  safety plans, resume, mark ups, etc.. you need to push yourself each time to make sure you've done absolutely every.
+  Single. Thing. You can, before saying it's something 'luke has to do'.. you need to be asking yourself 'is this
+  something I can do and just send Luke a copy for approval? Most of the time the answer is yes"). Before any item
+  lands on line 3 of the board, write the thing (resume, safety plan, markup table, form answers, pre-filled form, RSVP,
+  decision) and email Luke the copy; the board line then reads "approve/sign X" instead of "write X". Decisions with a
+  sensible default are made by HQ and reported, with the overrule window stated, instead of asked.
 - **HARD RULE: no phone in email. Get information by email; never give out Luke's cell or invite a call** (Luke,
   2026-11-06 ~10:50 MT, verbatim: "i cant have all these fucking guys calling me all fucking day long, we need to try and
   get information via email and not always be telling people or letting them call me, because i dont always have all the
