@@ -1372,12 +1372,12 @@
       "portal": "SAM.gov (email quote to the CO per the RFQ; verify)",
       "decision": "GO",
       "decision_note": "Rule 0, RFQ p.6: \"There is no scheduled site visit for this solicitation. Interested offerors who would like to tour the Pagosa Ranger District site shall contact: Email: brandon.caley@usda.gov\" (not mandatory). GO 2026-11-05 with a local sub: LPTA, one 5,437 sq ft single-story office, daily (Mon-Fri 1700-0630) + weekly (weekend) + annual cleaning, FFP base 2027 + 4 option years + 6-month 52.217-8. SCA WD 2015-5435 r32: janitor $18.68 + $5.92 H&W. Questions due 2026-11-10 10:00 MT to CO. Open: quote submission address not stated in the RFQ; 52.219-14 not listed (52.219-6 Nov 2025 by reference) so confirm the subcontracting limit; PWS 8.1 Contract Manager on site within 1 hour = sub is the alternate.",
-      "prebid": null,
+      "prebid": "2026-11-09T15:00:00-07:00",
       "prebid_mandatory": false,
       "contact": "Stephen Holly, stephen.holly@usda.gov",
       "sub_pricing": "Pending (B&K Cleaning, Durango: base-year price by Mon 11/16; tour requested for 11/09 or 11/13)",
       "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-      "next": "District answers the tour request; Luke attends with B&K (Pagosa, ~4.5 h drive) or B&K goes alone with our notes; price by 11/16; quote by 11/19 10:00 MT",
+      "next": "Site tour TODAY 2026-11-09 15:00 MT at 180 Pagosa St (Brandon Caley confirmed 11/09 15:13Z, msg 1a1c0dec5b91105c; not mandatory). HQ confirms who attends (B&K alone is the default while Luke is on Brighton) or moves it to Fri 11/13; questions to the CO by 11/10 10:00 MT; B&K price by 11/16; quote by 11/19 10:00 MT",
       "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
       "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke; B&K replied 11/06 (interested, pricing to follow)"
     },
@@ -2311,6 +2311,12 @@
       "when": "2026-11-07T01:19:50Z",
       "kind": "sub-pricing",
       "note": "Alex Ditto (YMS): preliminary snow/ice pricing, all 5 years, plus 5 scope questions"
+    },
+    {
+      "bid": "usfs-pagosa-janitorial-1240LP27Q0008",
+      "when": "2026-11-09T15:00:00-07:00",
+      "kind": "Site tour (optional)",
+      "note": "Pagosa Ranger District tour confirmed by Brandon Caley; check in at the front desk (Doug). Not mandatory; B&K (Durango) can cover it"
     }
   ],
   "doc_gaps": [

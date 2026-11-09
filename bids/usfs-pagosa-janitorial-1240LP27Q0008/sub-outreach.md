@@ -66,3 +66,4 @@ Subject: USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q000
 
 - 2026-11-06 02:57Z: B&K Cleaning Services (Brandon Sorrells Sr, CEO, Durango, office 970-844-4317) REPLIED: interested; base-year pricing by Mon 11/16; wants a walkthrough, available 11/09 or 11/13.
 - 2026-11-06 ~03:00Z (HQ): tour requested from the District (brandon.caley@usda.gov, msg 1a1ae7fe9e5da862) for 11/09 or 11/13, two attendees (Luke + B&K); B&K told (msg 1a1ae7feda06d803). CRC Janitorial and Evergreen Cleaning: no reply yet.
+- 2026-11-09 15:13Z: **District confirmed the tour for TODAY Mon 11/09 3:00 PM MT** (Brandon Caley, msg 1a1c0dec5b91105c; our 11/05 email had gone to his spam folder). Check in at the front desk; Doug lets him know. Not mandatory. Worker flagged it to HQ 15:3xZ (Luke is tied up with Brighton 14:00; B&K in Durango said 11/09 works). HQ to confirm attendee with Caley and tell B&K, or ask for Fri 11/13.
