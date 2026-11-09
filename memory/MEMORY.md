@@ -1264,3 +1264,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check). No CRM brief.
 - Dashboard: bids -> 7b2c0a851d61ce16cd8ae4cd5b83e7e0 (v196), events -> 8dfbb58ab3843dab738e542ba9957b90 (v198), sources -> e0a2bdaa2d001485ca3ab1b186fb9cde (v157), portal_feed -> 8b49703434c361f011a6a35ad86160f2 (v99, sha 9d2867c06226). Old blobs 899fa573..., a9bec7e5..., 268717a0..., ec315241... deleted. doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-09 04:45Z (HQ scan 04:35Z): BidNet BLIND (cool-down until 05:39:08Z), SAM/VSS fine, EXIT 3, pushed 0e2fc38.
+
+### 2026-11-09 05:21Z hourly (WORKER, read-only)
+- HQ 04:35Z scan: BidNet BLIND (cool-down to 05:39:08Z, rows carried 638/81), samgov 102/102, coloradovss 68/3, bonfire 2/1 (Cloudflare). 0 new, 0 changes, 0 docs. Exit 3. Sources live 2/5. REPORT open matches 152 (carried).
+- Inbox: nothing unseen (latest-message check). No CRM brief.
+- Dashboard: bids -> aae79069e279ef6b71cff99461d266c6 (v197), events -> 1cf239995f400361e2dea4f590510213 (v199), sources -> 525719bf47f62625c6e2370f9c9bccd2 (v158). Old blobs 7b2c0a85..., 8dfbb58a..., e0a2bdaa... deleted. portal_feed (8b497034..., v99), doc_gaps (84c4957d..., v10) unchanged.
