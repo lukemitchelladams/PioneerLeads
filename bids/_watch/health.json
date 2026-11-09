@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-09T15:36:59+00:00",
+  "checked_at": "2026-11-09T16:36:09+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 645,
+      "count": 646,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-09T15:36:59+00:00",
+      "last_success": "2026-11-09T16:36:09+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 82,
@@ -18,7 +18,7 @@
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 201,
-        "statewide BUYER": 445
+        "statewide BUYER": 446
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-09T15:36:59+00:00",
+      "last_success": "2026-11-09T16:36:09+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 67,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-09T15:36:59+00:00",
+      "last_success": "2026-11-09T16:36:09+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -77,15 +77,15 @@
     "samgov": {
       "bulk_added": 36,
       "bulk_note": "bulk file cached 2026-11-09T05:45:35+00:00; 102 matching (parsed earlier)",
-      "count": 102,
+      "count": 103,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-09T15:36:59+00:00",
+      "last_success": "2026-11-09T16:36:09+00:00",
       "logged_in": true,
       "login_note": "API key; +36 from the nightly bulk file",
-      "matches": 102,
+      "matches": 103,
       "reach_note": "HTTP 404",
       "reachable": true
     }
