@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-09T22:35:59+00:00
+# Bid watch report — 2026-11-09T23:39:30+00:00
 
-**Headline:** 7 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; BLIND: coloradovss; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 641 | BUYER 448, AGGREGATE 194 | 83 | 2026-11-09T22:35:59+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T22:35:59+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 106 |  | 106 | 2026-11-09T22:35:59+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 3 | 2026-11-09T22:35:59+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 636 | BUYER 447, AGGREGATE 190 | 83 | 2026-11-09T23:39:30+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T23:39:30+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 106 |  | 106 | 2026-11-09T23:39:30+00:00 | 0 |
+| coloradovss | yes | n/a | BLIND this run, showing last good data from 2026-11-09T22:35:59+00:00; public list (no login) | 65 |  | 3 | 2026-11-09T22:35:59+00:00 | 2 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -28,15 +28,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Longmont | Sunset Commercial Pool Liner Replacement | 2026-12-08 (29d) | 2026-11-16 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sunset-Commercial-Pool-Liner-Replacement/0000442984?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | School District 27J | Baseball/Softball Field Irrigation Connection | 2026-12-01 (22d) | 2026-11-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1 |
 
-## Changes on matching / watched bids (addenda, dates)
+## NEW matching bids since last scan
 
-- **Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting** (bidnet): questions deadline 2026-11-23 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389, 32e57f3ab30a4e3b8c0b5167678fe32e — https://sam.gov/workspace/contract/opp/d46978346bbe4e96890506336d3711ef/view
-- **Aircraft Recovery System** (samgov): NEW DOCUMENTS (addendum?): 6943dbf95a51481bb6d5a496987b9f48, b4929aa4e5c849fa99cadc34cd91c7cd, d75edc8707c546c58efcb4a99ff933fd — https://sam.gov/workspace/contract/opp/bce8db081fd74f329c9f0f9a0a6e4af0/view
-- **Sole Source to Lake Shore Systems - Winch Assembly** (samgov): NEW DOCUMENTS (addendum?): 055529ed535040cc83eefbdd6b9368e7 — https://sam.gov/workspace/contract/opp/636a308a458f4e0a8491a0087069997f/view
-- **WINCH, DRUM** (samgov): NEW DOCUMENTS (addendum?): ab05de4831be4951aae1428d3b95925a — https://sam.gov/workspace/contract/opp/d150dad1528141788616e2b0d93d00c0/view
-- **Self Propelled Boat Trailer - USCG SEC Long Island Sound** (samgov): NEW DOCUMENTS (addendum?): 20b74a17fb6e415dbb8e4afe5b495f54, 2e00591ce451497e98cd09df1693e8a1, 5361ddf3a9d74ad9ab337bfee97eea8d, 93db8f284de948acbe9bfb91e88d36a4, e0515e38d7e6456eb00c759a94557ebe, ff6e920b63df43b9a4029bc610fdd46a — https://sam.gov/workspace/contract/opp/e983271f59ed4af98747b1aea45eeeae/view
-- **Vandenberg Crane Replacement** (samgov): NEW DOCUMENTS (addendum?): 2bdabe58e06a4fa3a73b7afd89faec59, 46e4891a0d1845f38221335a1db7c3e8, 57fe3ddd04604debbfc681dda3ad8720, 5b5c76d8de314eddad63615524992a0a, 61590f07642b4caab792e5e88543cec0, 6c906e06f40d4dff8e62b417f8dc6dac, 79cc826a989843719dd77b074c698cc5, 9d28dcffc6df40009b7c2eea72858a84, a2553426ff1a4fe7853fdff6085a — https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison | samgov | ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT | National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFOR | 2027-01-31 (83d) |  | https://sam.gov/workspace/contract/opp/98b4ea9e2d2146e382cd6c1b6efe1d70/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -72,6 +68,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - RFP 27-07 Fire Sprinkler & Portable Extinguisher Services (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - Biology Duct Insulation Damage (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 
+## No longer listed (closed/awarded)
+
+- National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFOR (samgov, due 2027-01-31)
+
 ## UPCOMING (presolicitations, sources sought, special notices)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
@@ -105,7 +105,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-08 (29d) |  | https://sam.gov/workspace/contract/opp/cd651e8500eb462ba089ebb18f600686/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR. | FRCSW Hoist Requirement | 2026-12-14 (35d) |  | https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING UNIT PLAIN | 2026-12-30 (51d) |  | https://sam.gov/workspace/contract/opp/6fcd8de199f5419ca0fae46dc353a73d/view |
-| brownbison | samgov | ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT | National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFOR | 2027-01-31 (83d) |  | https://sam.gov/workspace/contract/opp/e13bc6a2dd844b36a72e20c137b0ffef/view |
+| brownbison | samgov | ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT | National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFOR | 2027-01-31 (83d) |  | https://sam.gov/workspace/contract/opp/98b4ea9e2d2146e382cd6c1b6efe1d70/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | FD2030-26-01079 | 2027-03-03 (114d) |  | https://sam.gov/workspace/contract/opp/7a6f641b2ccc4be7aa8e283cb9a2e90b/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | FD2030-26-01038 | 2027-06-15 (218d) |  | https://sam.gov/workspace/contract/opp/7872b54a0d4547a78d839266d5c8fba5/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | Noise Tested Bearings IDIQ- Amendment 0001 | 2027-07-29 (262d) |  | https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view |
@@ -149,10 +149,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Fort Lewis College | Fire Alarm Inspection & Testing | 2026-11-12 (3d) | 2026-10-20 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Inspection-Testing/0000439558?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Greeley | On-Call Planner Professional Services for Community Development Department | 2026-11-12 (3d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | As-Needed Consulting Services for Design | 2026-11-12 (3d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204361081?target=view |
-| brownbison | coloradovss | Pikes Peak Community College | RFQ 2768 As-Needed Consulting Services for Design | 2026-11-12 (3d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | Sole Source to Lake Shore Systems - Winch Assembly | 2026-11-12 (3d) |  | https://sam.gov/workspace/contract/opp/636a308a458f4e0a8491a0087069997f/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-11-12 (3d) |  | https://sam.gov/workspace/contract/opp/7344ad5ce5304aa68109854c6d5871f5/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; OH buying office) | 2026-11-12 (3d) |  | https://sam.gov/workspace/contract/opp/9f4a62609e3d4f2ea5c0c6fafe923840/view |
+| brownbison | coloradovss | Pikes Peak Community College | RFQ 2768 As-Needed Consulting Services for Design | 2026-11-12 (3d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | bidnet | Town of Superior | Town of Superior - Irrigation tank floating cover replacement | 2026-11-13 (4d) | 2026-10-22 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Turn-key Professional Services to provide a Interior Finish Nursing Home Facility Project | 2026-11-13 (4d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view |
 | brownbison WATCHED | bidnet |  | Station One Janitorial Services | 2026-11-13 (4d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view |
@@ -165,9 +165,9 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet |  | Snowmelt Boiler Plant | 2026-11-15 (6d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view |
 | brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-16 (7d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (7d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view |
-| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (7d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (7d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-16 (7d) |  | https://sam.gov/workspace/contract/opp/d46978346bbe4e96890506336d3711ef/view |
+| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (7d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | bidnet | City of Aurora | POST Certified On-Call Security Officer Services | 2026-11-17 (8d) | 2026-11-05 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/POST-Certified-On-Call-Security-Officer-Services/0000442237?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Arvada | On-Call General Contractor Services | 2026-11-17 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Arvada | On-Call Traffic Control Services Citywide - REISSUE | 2026-11-17 (8d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1 |
@@ -221,10 +221,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Custodial Services - 822 7th Street Building | 2026-11-30 (21d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Custodial-Services-822-7th-Street-Building/0000442415?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | HVAC Motor & Fan Belts | 2026-11-30 (21d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Motor-Fan-Belts/0000442187?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Arapahoe County Fairgrounds: South Lawns Irrigation Renovation | 2026-11-30 (21d) | 2026-11-10 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1 |
-| brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (21d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--SACN Replace Fire Alarms and Intrusions Systems | 2026-11-30 (21d) |  | https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | BEARING ASSY, SPCL | 2026-11-30 (21d) |  | https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BALL,BEARING | 2026-11-30 (21d) |  | https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view |
+| brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (21d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | bidnet | School District 27J | Baseball/Softball Field Irrigation Connection | 2026-12-01 (22d) | 2026-11-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lakewood | As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services | 2026-12-01 (22d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Emergency-Board-Up-Temporary-Fencing-and-Site-Security-Services/0000442961?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Grand Junction | On-Call Professional Surveying, Mapping, and Related Services | 2026-12-01 (22d) | 2026-11-12 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Surveying-Mapping-and-Related-Services/0000442372?purchasingGroupId=8409951&origin=1 |
@@ -275,10 +275,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (262d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (389d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
 
-## Documents downloaded
-
-- bidnet:0000443113: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443113/RFB-26-64.pdf
-
 ## Errors
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
+- coloradovss: ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200)
+- coloradovss: coloradovss list incomplete this scan: previous open bids carried forward, none marked closed
