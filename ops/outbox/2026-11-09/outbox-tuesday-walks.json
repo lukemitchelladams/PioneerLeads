@@ -1,0 +1,5 @@
+[
+  {"key":"psd-rsvp-update","subject":"Re: IFB 27-701-002 Kitchen Hood Inspection and Cleaning: site visit RSVP, Brown Bison Holdings LLC","to":["strategicsourcing@psdschools.org"],"thread":"1a1ac805e5b5b3bc","body_file":"ops/outbox/2026-11-09/psd-rsvp-update.txt","files":[]},
+  {"key":"psd-carlos","subject":"Re: Kitchen hood cleaning subcontract: Poudre School District site visit Tuesday 1:30 PM","to":["carlos.ahedo@hoodz.us.com"],"cc":["larry.moss@hoodz.us.com"],"thread":"1a1a878f8cda76a3","body_file":"ops/outbox/2026-11-09/psd-carlos.txt","files":[]},
+  {"key":"carbonvalley-final","subject":"Carbon Valley mechanical PM (2026-3): walk tomorrow 10:30 AM needs an attendee from your shop","bcc":["info@asemech.net","hvac@controlservicecenter.com","info@longview-hvac.com","info@timberlinemechanical.com","info@msicolorado.com"],"thread":"1a1893e385c22713","body_file":"ops/outbox/2026-11-09/carbonvalley-final.txt","files":[]}
+]

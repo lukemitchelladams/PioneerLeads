@@ -11,3 +11,4 @@ Ask: attend + price by Fri 2026-11-13.
 | Peak Kitchen Exhaust | peakkitchenexhaust@gmail.com | 719-412-3735 | Sent 10/28; replied: 2 h away (Colorado Springs), asked for a closer visit. Answered 10/28: only visit, Fort Collins; offered Luke attends + photos if they can't. |
 
 Phone-only: Kitchen Guard of Colorado 720-600-7036; Enviromatic (Aurora) 303-428-3088.
+- 2026-11-09 21:55Z (14:55 MT, HQ): Luke cannot attend Tuesday (to the worker, ~14:30 MT). RSVP changed with PSD strategic sourcing: Carlos Ahedo (HOODZ) represents Brown Bison Holdings LLC alone, signs in at Traut ES then Preston MS and Fossil Ridge HS (1a1c248c5cad0a16). Carlos asked to confirm tonight, sign in for Brown Bison, photos + notes (1a1c248ca1069015, cc Larry Moss).
