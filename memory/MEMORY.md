@@ -1303,3 +1303,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check). No CRM brief.
 - Dashboard: bids -> 371da3ba9b69b08b9d13cc2e2be5025d (v202), events -> 55b9b3f078db22656929595917257c6e (v204), sources -> b6334e9917a4ae7a8aaf74eb5a2c95a8 (v163). Old blobs 6e842dbd..., 30b523a4..., eb23a58d... deleted. portal_feed (c2cd5a78..., v102), doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-09 10:42Z (03:42 MT Mon) hourly: BidNet LOGGED IN attempt 1 (fifth clean fresh login since the 03:40Z robot check; 0 challenges in 5 hours). bidnet 640/81, samgov 102, vss 67/3, bonfire 2/1, total 811/187; 0 new, 0 changes, 0 docs; push a280316. Fixed keepalive --ensure started a real process (pid 309) where the old check had been lying "already running". Inbox quiet.
+
+### 2026-11-09 11:22Z hourly (WORKER, read-only)
+- HQ 10:35Z scan: BidNet logged in attempt 1 (5th clean login since the 03:40Z robot check); bidnet 640/81, samgov 102/102, coloradovss 67/3, bonfire 2/1 (Cloudflare). 0 new, 0 changes, 0 docs. Exit 0. Sources live 3/5. REPORT open matches 152.
+- Inbox: 1 unseen = Google DMARC aggregate report (1a1bff44e3a889da), routine; marked seen. No CRM brief.
+- Dashboard: bids -> 3342f71cef65d10a6170f6cd68de9cf0 (v203), events -> b5063d60c02f2a8ed166139939cbd3b5 (v205), sources -> fdb7c669799fff1727fb404531fc8515 (v164). Old blobs 371da3ba..., 55b9b3f0..., b6334e99... deleted. portal_feed (c2cd5a78..., v102), doc_gaps (84c4957d..., v10) unchanged.
