@@ -1297,3 +1297,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check). No CRM brief.
 - Dashboard: bids -> 6e842dbd33179ad0f32f6611cd19a680 (v201), events -> 30b523a43cf3b77ca60b2a0f12ddd493 (v203), sources -> eb23a58df7548c6feb8faf92b3f010db (v162), portal_feed -> c2cd5a78a24aad7efefe7e795615554e (v102, sha d8685537397f). Old blobs a87b98cb..., 45a667fc..., 96531ced..., eb643c07... deleted. doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-09 09:42Z (02:42 MT Mon) hourly: BidNet logged in via saved session (reused, re-saved 09:36:58Z; no fresh login). bidnet 640/81, samgov 102, vss 67/3, bonfire 2/1, total 811/187; 0 new, 0 changes, 0 docs; push b2132da. BUG FOUND+FIXED: keepalive --ensure said "already running (pid 205)" while no keepalive existed: after the container sleeps the old pid is reused by another process and os.kill(pid,0) passes. running_pid() now also requires "keepalive" in /proc/<pid>/cmdline (macOS without /proc keeps the old check). Test added at the end of tests/test_bidwatch.py. Keepalive restarted pid 408. Inbox quiet.
+
+### 2026-11-09 10:21Z hourly (WORKER, read-only)
+- HQ 09:36Z scan: BidNet via saved session (no fresh login); bidnet 640/81, samgov 102/102, coloradovss 67/3, bonfire 2/1 (Cloudflare). 0 new, 0 changes, 0 docs. Exit 0. Sources live 3/5. REPORT open matches 152. HQ fixed a keepalive pid-reuse bug (ba6d192).
+- Inbox: nothing unseen (latest-message check). No CRM brief.
+- Dashboard: bids -> 371da3ba9b69b08b9d13cc2e2be5025d (v202), events -> 55b9b3f078db22656929595917257c6e (v204), sources -> b6334e9917a4ae7a8aaf74eb5a2c95a8 (v163). Old blobs 6e842dbd..., 30b523a4..., eb23a58d... deleted. portal_feed (c2cd5a78..., v102), doc_gaps (84c4957d..., v10) unchanged.
