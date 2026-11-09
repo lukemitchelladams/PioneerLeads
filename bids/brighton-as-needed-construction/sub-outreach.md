@@ -21,3 +21,4 @@ DB Handyman (Thornton) (720) 550-0921; Tim's Handyman (Northglenn) (720) 241-625
 - 2026-10-29 07:36 MT (hourly scan, read-only): second Gmail "Delivery Status Notification (Delay)" for ryan@rocksolidhs.com, same 452 4.2.2 inbox-full response; Gmail retries until Fri 10/30 06:55 PDT. Treat Rock Solid as phone-only (303-578-2218) for the Mon 11/02 pricing ask.
 
 - 2026-11-06 ~06:55 MT (HQ, Mac blocked): chased Ceres for rates by 16:00 today (msg 1a1b11c0c3dfa6d6); asked Will Seargeant (Trucordia) for the EMR/safety letter by Mon 09:00 and to bind Travelers on the $295-down plan (msg 1a1b11c104d4ac66).
+- 2026-11-09 15:30Z (08:30 MT, HQ): chased Will Seargeant (Trucordia) for the EMR/new-entity letter by 11:00 MT today (1a1c0ec168a30f33); no reply to the 11/06 ask as of 08:30.

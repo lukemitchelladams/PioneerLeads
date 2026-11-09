@@ -73,3 +73,4 @@ Thanks Team,
 ## Log
 - 2026-11-06 14:55Z: candidate list built (web search + repo history); drafts linted; nothing sent, waiting on Luke's GO.
 - 2026-11-06 15:1xZ (HQ): GO. H2GS pricing request sent (msg 1a1b161bfb537ecb); bcc group to ACCO, Air Conditioning Plus, Rasmussen, Nielsen (msg 1a1b161c591201e6). RFP attached to both. Pricing asked by Mon 11/30. City question on the PSA no-subcontractor clause still to post on BidNet (Luke or HQ with his say) before 12/03 14:00.
+- 2026-11-09 15:30Z (08:30 MT, HQ): first follow-up to ACCO/Air Conditioning Plus/Rasmussen/Nielsen (bcc, 1a1c0ec25f7c501b) with RFP + PSA attached, answer by Fri 11/13; Silas/H2GS reminded on the BVCC thread (1a1c0ec10012a08a), pricing by 11/30.

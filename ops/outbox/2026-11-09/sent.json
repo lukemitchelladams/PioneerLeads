@@ -1,0 +1,104 @@
+{
+  "pagosa-caley": {
+    "id": "1a1c0ec083ed4ef6",
+    "threadId": "1a1c0dec5b91105c",
+    "to": [
+      "brandon.caley@usda.gov"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "pagosa-bk": {
+    "id": "1a1c0ec0cea85a94",
+    "threadId": "1a1ade55a73ca213",
+    "to": [
+      "bandkcleaningcolorado@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "h2gs-both": {
+    "id": "1a1c0ec10012a08a",
+    "threadId": "1a1b2a5e01576f45",
+    "to": [
+      "snorwood@h2gs.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "7. Exhibit G - Consent to Search.pdf"
+    ],
+    "asks": 0
+  },
+  "will-emr": {
+    "id": "1a1c0ec168a30f33",
+    "threadId": "1a18d7978980da62",
+    "to": [
+      "will.seargeant@trucordia.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "carbonvalley-walk": {
+    "id": "1a1c0ec1d40def1f",
+    "threadId": "1a1893e385c22713",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [
+      "Mechanical RFP Scope of Service Bidnet 1.pdf"
+    ],
+    "asks": 0
+  },
+  "canon-hvac-group": {
+    "id": "1a1c0ec25f7c501b",
+    "threadId": "1a1b161c591201e6",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "129-26 Boiler chiller.pdf",
+      "PSA Form-A061225.pdf"
+    ],
+    "asks": 0
+  },
+  "bvcc-group": {
+    "id": "1a1c0ec2ade23277",
+    "threadId": "1a1b2a5e97fa8bc7",
+    "to": [],
+    "bcc_count": 4,
+    "attachments": [
+      "7. Exhibit G - Consent to Search.pdf"
+    ],
+    "asks": 0
+  },
+  "lafayette-group": {
+    "id": "1a1c0ec2f356aaf9",
+    "threadId": "1a1b38552d6f701a",
+    "to": [],
+    "bcc_count": 5,
+    "attachments": [],
+    "asks": 0
+  },
+  "uscg-crosby": {
+    "id": "1a1c0ec31837a9ef",
+    "threadId": "1a1c0ec31837a9ef",
+    "to": [
+      "Nina.m.crosby@uscg.mil"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "luke-exhibit-g": {
+    "id": "1a1c0ec34e345e37",
+    "threadId": "1a1c0ec34e345e37",
+    "to": [
+      "lukemitchelladams@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Exhibit-G-Consent-to-Search-Luke-Adams-PREFILLED.pdf"
+    ]
+  }
+}
