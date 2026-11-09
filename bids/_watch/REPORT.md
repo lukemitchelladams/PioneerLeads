@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-09T18:35:59+00:00
+# Bid watch report — 2026-11-09T19:35:52+00:00
 
-**Headline:** 4 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 652 | BUYER 451, AGGREGATE 202 | 84 | 2026-11-09T18:35:59+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T18:35:59+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 105 |  | 105 | 2026-11-09T18:35:59+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 3 | 2026-11-09T18:35:59+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 651 | BUYER 451, AGGREGATE 201 | 84 | 2026-11-09T19:35:52+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T19:35:52+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 105 |  | 105 | 2026-11-09T19:35:52+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 3 | 2026-11-09T19:35:52+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,14 +27,9 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Custodial Services - 822 7th Street Building | 2026-11-30 (21d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Custodial-Services-822-7th-Street-Building/0000442415?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | School District 27J | Baseball/Softball Field Irrigation Connection | 2026-12-01 (22d) | 2026-11-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
+## Changes on matching / watched bids (addenda, dates)
 
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | Traverse Bearing Assembly | 2026-11-24 (15d) |  | https://sam.gov/workspace/contract/opp/1080fd91f83e49f595458d569cf6222f/view |
-| brownbison | bidnet | City of Thornton | Sport Court Repairs On-Call | 2026-12-09 (30d) | 2026-11-17 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Aurora Public Schools | HVAC AIR FILTERS | 2026-12-09 (30d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1 |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR. | FRCSW Hoist Requirement | 2026-12-14 (35d) |  | https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view |
+- **HVAC AIR FILTERS** (bidnet): questions deadline 2026-11-16 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -254,7 +249,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Town of Windsor | RFQ-CIVIL ENGINEERING ON-CALL SERVICES | 2026-12-08 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-CIVIL-ENGINEERING-ON-CALL-SERVICES/0000440953?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-08 (29d) |  | https://sam.gov/workspace/contract/opp/a98c21a17409454a9307a97860826870/view |
 | brownbison | bidnet | City of Thornton | Sport Court Repairs On-Call | 2026-12-09 (30d) | 2026-11-17 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Aurora Public Schools | HVAC AIR FILTERS | 2026-12-09 (30d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Aurora Public Schools | HVAC AIR FILTERS | 2026-12-09 (30d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (30d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | El Paso County | On-Call Professional Services Program | 2026-12-09 (30d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Services-Program/0000440926?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Fort Collins | Communications & Public Relations Services On-Call | 2026-12-11 (32d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Communications-Public-Relations-Services-On-Call/0000441223?purchasingGroupId=8409951&origin=1 |
@@ -270,6 +265,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-24 (257d) |  | https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (262d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (389d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
+
+## Documents downloaded
+
+- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/IFB.pdf
+- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/Exhibit A- Pricing Sheet.xlsx
+- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/Exhibit B- Sample Contract.pdf
 
 ## Errors
 
