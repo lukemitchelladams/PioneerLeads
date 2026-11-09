@@ -1234,3 +1234,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check; HG Summit latest 1a1bc630d8e340c5 already seen). No CRM brief.
 - Dashboard: bids -> blob 503964359f7779a04bf33af4bbc7b60a (v191), events -> d4a3f66d839f502e6b5ec9883f88eb2d (v193). Old blobs 2cc2dbb7..., d0b188c1... deleted. sources (828a6406..., v152), portal_feed (6d7e4dbd..., v96), doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-08 23:45Z (HQ scan 23:35Z): EXIT 0, pushed 2825c6c. Quiet.
+
+### 2026-11-09 00:21Z hourly (WORKER, read-only)
+- HQ 23:35Z scan: logged in (attempt 1); bidnet 639/81, samgov 103/103, coloradovss 68/3, bonfire 2/1 (Cloudflare error), dibbs stale since 10/20. 0 new, 0 changes, 0 docs. Exit 0. GovTribe still lapsed (no S&L/federal pull).
+- Inbox: nothing unseen (latest-message check). No CRM brief.
+- Dashboard: bids -> 7c38e73a5e86c00f7cfea54e6602d8f9 (v192), events -> 7d29d732e64112dbadbda40281637adf (v194), sources -> dc110191b1bcafd6f67d98bc9d3b7ed1 (v153). Old blobs 50396435..., d4a3f66d..., 828a6406... deleted. portal_feed (6d7e4dbd..., v96), doc_gaps (84c4957d..., v10) unchanged.
