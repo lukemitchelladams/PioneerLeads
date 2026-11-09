@@ -1240,3 +1240,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing unseen (latest-message check). No CRM brief.
 - Dashboard: bids -> 7c38e73a5e86c00f7cfea54e6602d8f9 (v192), events -> 7d29d732e64112dbadbda40281637adf (v194), sources -> dc110191b1bcafd6f67d98bc9d3b7ed1 (v153). Old blobs 50396435..., d4a3f66d..., 828a6406... deleted. portal_feed (6d7e4dbd..., v96), doc_gaps (84c4957d..., v10) unchanged.
 - 2026-11-09 00:45Z (HQ scan 00:35Z): BidNet ROBOT CHECK on the login form again (2nd in 7 h: 17:37Z and 00:37Z; since the hourly spacing began 11/06: ~21 logins, 2 challenged); cool-down until 2026-11-09T02:36:03+00:00. SAM/VSS fine, EXIT 3, pushed bac8b5c. 01:35Z scan blind; 02:35Z launcher waits out the cool-down. Still cheaper than the old 3 h gap (2 blind hours per challenge vs 3 blind hours in 4).
+
+### 2026-11-09 01:21Z hourly (WORKER, read-only)
+- HQ 00:35Z scan: BidNet ROBOT CHECK on login (2nd in 7 h); cool-down to 2026-11-09T02:36:03Z, so the 01:35Z scan is blind and BidNet rows are carried forward (196/15 partial). samgov 102/102, coloradovss 68/3, bonfire 2/1 (Cloudflare). 0 new, 0 changes, 0 docs. Exit 3. Sources live 2/5. REPORT open matches still 152 (BidNet carried).
+- Inbox: nothing unseen (latest-message check). No CRM brief.
+- Dashboard: bids -> 33bc06e9f4fa4cc7ff725e64ddec9edb (v193), events -> f587759630bf29440f0bfa9a4c52854a (v195), sources -> 2ca63ef8642c1f74364c800358d9ca27 (v154), portal_feed -> 52db3718b310582b69bcb6968df13b03 (v97, 198 rows, sha 9d2867c06226). Old blobs 7c38e73a..., 7d29d732..., dc110191..., 6d7e4dbd... deleted. doc_gaps (84c4957d..., v10) unchanged.
