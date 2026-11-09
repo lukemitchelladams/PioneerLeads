@@ -2544,9 +2544,9 @@
   },
   "bidnet:0000443063": {
    "name": "Aurora Public Schools IFB B2729 HVAC Air Filters (closes 2026-12-09)",
-   "verdict": "EVALUATE",
-   "why": "Filter supply: rule 9, GO only if the IFB states quantities or annual spend (Luke 2026-10-19: small-margin filter supply is not worth it unless volume is proven). IFB, Exhibit A Pricing Sheet and Exhibit B Sample Contract are public on BidNet; watchlisted so the scan files them; read the quantity table and any pre-bid first.",
-   "at": "2026-11-09T19:30:00Z"
+   "verdict": "NO",
+   "why": "Rule 9: HQ read the downloaded IFB (bids/_watch/downloads/bidnet/0000443063/): Exhibit A lists ~550 filter sizes for unit prices only and IFB sec. 17 states no quantities or annual spend (\"Estimated quantities ... guidance only\", none listed). Small-margin filter supply with no proven volume.",
+   "at": "2026-11-09T20:30:00Z"
   },
   "edca6c0e45674c149ab966bc1096fe6b": {
    "name": "Navy FRCSW N68520-27-RFPREQ-KN00000-0154 Hoist Requirement (Sources Sought, PSC 3950, NAICS 811310, San Diego CA, closes 2026-12-14)",
@@ -2738,6 +2738,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-09T19:30:00Z",
+ "last_hourly_check": "2026-11-09T20:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
