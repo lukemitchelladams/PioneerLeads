@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-09T19:35:52+00:00
+# Bid watch report — 2026-11-09T20:36:06+00:00
 
-**Headline:** 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 2 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 651 | BUYER 451, AGGREGATE 201 | 84 | 2026-11-09T19:35:52+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T19:35:52+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 105 |  | 105 | 2026-11-09T19:35:52+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 3 | 2026-11-09T19:35:52+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 654 | BUYER 454, AGGREGATE 201 | 84 | 2026-11-09T20:36:06+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-09T20:36:06+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 105 |  | 105 | 2026-11-09T20:36:06+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 3 | 2026-11-09T20:36:06+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -29,7 +29,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **HVAC AIR FILTERS** (bidnet): questions deadline 2026-11-16 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-AIR-FILTERS/0000443063?purchasingGroupId=8409951&origin=1
+- **On-Call General Contractor Services** (bidnet): NEW DOCUMENTS (addendum?): Addendum No 1 26-FAC-055.pdf — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1
+- **Boettcher Mansion Chiller Replacement Project** (bidnet): NEW DOCUMENTS (addendum?): Addendum #2 - 26-19289AP-FM.docx — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boettcher-Mansion-Chiller-Replacement-Project/0000440224?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -268,9 +269,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Documents downloaded
 
-- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/IFB.pdf
-- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/Exhibit A- Pricing Sheet.xlsx
-- bidnet:0000443063: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443063/Exhibit B- Sample Contract.pdf
+- bidnet:0000441833: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441833/Addendum No 1 26-FAC-055.pdf
+- bidnet:0000440224: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000440224/Addendum _2 - 26-19289AP-FM.docx
 
 ## Errors
 
