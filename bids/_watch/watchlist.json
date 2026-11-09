@@ -616,6 +616,14 @@
       "match": "444225024046",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "Aurora Public Schools IFB B2729 HVAC Air Filters (EVALUATE, rule 9: needs quantities; closes 2026-12-09)",
+      "source": "bidnet",
+      "id": "0000443063",
+      "match": "0000443063|B2729|hvac air filters",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }
