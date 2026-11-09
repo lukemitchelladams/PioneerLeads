@@ -22,3 +22,5 @@ Subject: Janitorial Services, Pagosa Ranger District, RFQ 1240LP27Q0008: questio
 
 If Luke wants question 2 included, add one sentence: "Also, are quotes submitted by email to you, and is there a size
 limit?" and rerun `python3 scripts/humanize_gate.py check` on the body file.
+
+- 2026-11-09 16:00Z: CO Stephen Holly replied to our 11/05 two questions (msg 1a1c109d6aab3942): "A Questions and Answers amendment to the solicitation, addressing these and other questions, will be posted in the near future." Watch SAM.gov notice 1d1b8d72c87844289d3efb4990073ded for the Q&A amendment; read and file it the hour it lands.

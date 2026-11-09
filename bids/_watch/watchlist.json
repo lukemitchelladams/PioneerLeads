@@ -608,6 +608,14 @@
       "match": "0000442987|RFP-26-33-FM|citywide custodial services",
       "folder": "bids/lafayette-citywide-custodial",
       "govtribe_ids": []
+    },
+    {
+      "name": "BidNet 444225024046 Janitorial Services (EVALUATE, agency not shown, closes 2026-11-23)",
+      "source": "bidnet",
+      "id": "444225024046",
+      "match": "444225024046",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }

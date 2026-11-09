@@ -2495,10 +2495,10 @@
    "at": "2026-11-09T09:30:00Z"
   },
   "eea50eb876044089a54c01f641e9c9be": {
-   "name": "70Z08026Q-AK017 BEARING ROLLER (2026-12-16)",
-   "verdict": "EVALUATE",
-   "why": "Jones Bearing triage 2026-11-05 section 1 QUOTABLE (60 EA SKF 21318E). Open question: close date 12/16/25 in text vs 2026-12-16 on SAM; needs one email to the CO. Backfilled from the triage file.",
-   "at": "2026-11-09T09:30:00Z"
+   "name": "USCG 70Z08026Q-AK017 BEARING ROLLER (60 EA SKF 21318E; SAM close 2026-12-16)",
+   "verdict": "NO",
+   "why": "Closed. The USCG purchasing agent (Nina M. Crosby) answered Brown Bison's 11/09 question by email: \"NO IT'S NOT OPEN\" (msg 1a1c0effab4b5d44). The 12/16/25 date in the text was the real close; SAM's 2026-12-16 was stale.",
+   "at": "2026-11-09T16:30:00Z"
   },
   "ef42fcf29ca7449db6a4146acf468d19": {
    "name": "Noise Tested Bearings IDIQ- Amendment 0001 (2027-07-29)",
@@ -2517,6 +2517,12 @@
    "verdict": "NO",
    "why": "The RFQ is for architectural/engineering/consulting design services on a $2.5M-$4.0M project, not construction or grounds work (bids/_watch/new-bids-sweep-2026-10-28.md). Closes today.",
    "at": "2026-11-09T13:35:00Z"
+  },
+  "bidnet:444225024046": {
+   "name": "BidNet 444225024046 Janitorial Services (agency not shown; published 2026-11-09, closes 2026-11-23)",
+   "verdict": "EVALUATE",
+   "why": "Janitorial is our trade. BidNet private open-notice with no agency on the list row; package and pre-bid/site-visit terms not in hand yet. Watchlisted so the next logged-in scan files the documents; read the walk date first (rule 0).",
+   "at": "2026-11-09T16:30:00Z"
   }
  },
  "watched": {
@@ -2702,6 +2708,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-09T15:30:00Z",
+ "last_hourly_check": "2026-11-09T16:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
