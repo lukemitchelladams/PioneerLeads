@@ -1411,11 +1411,10 @@
    "triaged_at": "2026-10-28T19:25:00+00:00"
   },
   "bidnet:0000440260": {
-   "decision": "NO",
-   "title": "Colorado Convention Center - Roof Repair Services",
-   "due": "2026-11-09",
-   "reason": "MANDATORY job-walk 2026-10-21 11:00 passed (BidNet events quote); roofing is not our trade.",
-   "triaged_at": "2026-10-28T19:25:00+00:00"
+   "name": "Colorado Convention Center RFP 2026-5375-1709717 Roof Repair Services (closes 2026-11-09)",
+   "verdict": "NO",
+   "why": "Roofing is not a Brown Bison trade (rule 8 trades list); REPORT shows a MANDATORY pre-bid 2026-10-21 that we did not attend. Closes today.",
+   "at": "2026-11-09T13:35:00Z"
   },
   "6ab91dd8bf824b2fbfa32476c810d7be": {
    "decision": "EVALUATE",
@@ -2512,6 +2511,12 @@
    "verdict": "NO",
    "why": "Jones Bearing triage 2026-11-05 section 3 (deciding sentence quoted there): approved/limited source, sole source, or not a Jones Bearing product. Backfilled from bids/_jones-bearing/triage-2026-11-05.md.",
    "at": "2026-11-09T09:30:00Z"
+  },
+  "bidnet:0000440456": {
+   "name": "CU Boulder UCB001622 NBC Irrigation System & Landscape Improvements (closes 2026-11-09 17:00 MST)",
+   "verdict": "NO",
+   "why": "The RFQ is for architectural/engineering/consulting design services on a $2.5M-$4.0M project, not construction or grounds work (bids/_watch/new-bids-sweep-2026-10-28.md). Closes today.",
+   "at": "2026-11-09T13:35:00Z"
   }
  },
  "watched": {
@@ -2697,6 +2702,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-09T12:28:00Z",
+ "last_hourly_check": "2026-11-09T13:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
