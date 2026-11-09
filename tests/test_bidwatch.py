@@ -1629,16 +1629,21 @@ _ka.PID_FILE = ROOT / "tests" / "_tmp_keepalive.pid"
 try:
     _ka.PID_FILE.write_text(str(os.getpid()))  # live pid, but this process is the test runner, not keepalive.py
     _reused = _ka.running_pid()
-    _fake = _sp.Popen([sys.executable, "-c", "import time; time.sleep(30)", "keepalive-marker"])
+    _fake = _sp.Popen([sys.executable, "-c", "import time; time.sleep(30)", "keepalive-marker", "--every", "900"])
+    _shell = _sp.Popen([sys.executable, "-c", "import time; time.sleep(30)", "keepalive.py --ensure"])  # a caller, not the loop
     time.sleep(0.3)
     _ka.PID_FILE.write_text(str(_fake.pid))
     _real = _ka.running_pid()
     _fake.kill(); _fake.wait()
     _dead = _ka.running_pid()
+    _ka.PID_FILE.write_text(str(_shell.pid))
+    _caller = _ka.running_pid()
+    _shell.kill(); _shell.wait()
     _ka.PID_FILE.write_text("not-a-pid")
     _junk = _ka.running_pid()
-    check("keepalive running_pid: reused pid -> None, keepalive-like pid -> pid, dead pid -> None, junk -> None",
-          _reused is None and _real == _fake.pid and _dead is None and _junk is None, (_reused, _real, _fake.pid, _dead, _junk))
+    check("keepalive running_pid: reused pid -> None, loop pid -> pid, dead pid -> None, --ensure caller -> None, junk -> None",
+          _reused is None and _real == _fake.pid and _dead is None and _caller is None and _junk is None,
+          (_reused, _real, _fake.pid, _dead, _caller, _junk))
 finally:
     _ka.PID_FILE.unlink(missing_ok=True)
     _ka.PID_FILE = _ka_pid_backup

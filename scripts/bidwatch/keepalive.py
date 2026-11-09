@@ -151,7 +151,9 @@ def running_pid() -> int | None:
         cmdline = Path(f"/proc/{pid}/cmdline").read_bytes().replace(b"\0", b" ").decode(errors="replace")
     except OSError:
         return pid  # no /proc (macOS): trust the signal check
-    return pid if "keepalive" in cmdline else None
+    # the loop process is "python3 .../keepalive.py --every N"; a shell whose command line merely mentions
+    # keepalive.py (the --ensure caller itself after pid reuse) must not count
+    return pid if "keepalive" in cmdline and "--every" in cmdline else None
 
 
 def ensure(every: int) -> int:
