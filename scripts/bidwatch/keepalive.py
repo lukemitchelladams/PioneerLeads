@@ -142,9 +142,16 @@ def running_pid() -> int | None:
     try:
         pid = int(PID_FILE.read_text().strip())
         os.kill(pid, 0)
-        return pid
     except (OSError, ValueError):
         return None
+    # After the cloud container sleeps, the old keepalive is gone and its pid is
+    # reused by an unrelated process; os.kill(pid, 0) alone then says "running".
+    # Where /proc exists, insist that the pid really is this script.
+    try:
+        cmdline = Path(f"/proc/{pid}/cmdline").read_bytes().replace(b"\0", b" ").decode(errors="replace")
+    except OSError:
+        return pid  # no /proc (macOS): trust the signal check
+    return pid if "keepalive" in cmdline else None
 
 
 def ensure(every: int) -> int:
