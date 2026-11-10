@@ -324,3 +324,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-10 01:30Z (hourly, read-only): no new inbound (latest-message ids unchanged since 00:30Z). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
 - 2026-11-10 02:25Z (hourly, read-only): nothing unseen (same 21 threads; no mail in the last 3 h). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
 - 2026-11-10 03:25Z (hourly, read-only): nothing unseen (same 21 threads; no mail in the last 2 h). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
+- 2026-11-10 04:25Z (hourly, read-only): nothing unseen (same 21 threads; no mail in the last 2 h). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
