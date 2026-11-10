@@ -640,6 +640,14 @@
       "match": "0000443128|RFP-KM-2027-011|boiler replacement projects - 2 locations",
       "folder": "bids/svvsd-boiler-replacement-2-locations",
       "govtribe_ids": []
+    },
+    {
+      "name": "Hyland Hills 2027 Golf Course Renovation Work On Call (EVALUATE; closes 2026-11-30 13:00)",
+      "source": "bidnet",
+      "id": "0000443130",
+      "match": "0000443130|golf course renovation work on call",
+      "folder": null,
+      "govtribe_ids": []
     }
   ]
 }

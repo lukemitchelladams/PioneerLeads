@@ -2589,6 +2589,36 @@
    "verdict": "NO",
    "why": "Professional land-use planning services; keyword match on \"on-call\"; not our trades. Addendum 2 seen 11/10 scan, no action.",
    "at": "2026-11-10T01:30:00Z"
+  },
+  "a73cf5d6b8ae4068b6c5952060e9f3ab": {
+   "name": "DLA Aviation SPE4A727T3562 15--Conveyor, Roller Assembly (aircraft, NAICS 336413; closes 2026-11-17)",
+   "verdict": "NO",
+   "why": "HUBZone set-aside (FAR 19.13); no HUBZone certification on record for Brown Bison and Jones Bearing has no SAM registration. FSC 15 aircraft cargo-roller part, not a Jones Bearing/American Pulley/ConveyMor product; no quantity in hand (rule 9).",
+   "at": "2026-11-10T06:30:00Z"
+  },
+  "23506cd1254b4ca7be61626b0d50d8be": {
+   "name": "DLA Weapons Support SPE7L127Q0184 10--Conveyor Element, Ammunition (NAICS 332994; closes 2026-11-18)",
+   "verdict": "NO",
+   "why": "Weapon-system ammunition feed conveyor element (FSC 10), not a bearing/pulley/bucket-elevator product; no quantity in hand (rule 9).",
+   "at": "2026-11-10T06:30:00Z"
+  },
+  "23974a460bd74e2faaa14870565075d7": {
+   "name": "DLA Weapons Support SPE7L127T4509 30--Shaft-Gearbox, Idler (NAICS 333613, small-business set-aside; closes 2026-11-20)",
+   "verdict": "EVALUATE",
+   "why": "Machined gearbox idler shaft; American Pulley makes shafting, so possible if DLA gives a drawing/TDP and no approved-source restriction. RFQ text, quantity and approved sources not in hand (sam.gov blocked in cloud; DIBBS not scanned from cloud). Rule 9: not GO without quantities. Needs the RFQ from DIBBS/SAM.",
+   "at": "2026-11-10T06:30:00Z"
+  },
+  "bidnet:0000443130": {
+   "name": "Hyland Hills Park & Rec 2027 Golf Course Renovation Work On Call Contract (closes 2026-11-30 13:00 MST)",
+   "verdict": "EVALUATE",
+   "why": "Specs docx + bid sheet not read (bidnetdirect blocked in worker cloud; watchlist set so the HQ scan downloads them). Golf course renovation is likely earthwork/drainage/bunker work (rule 8 NO), but any sod/landscape/irrigation items could suit Alex Ditto. Pre-bid not in BidNet events; check the specs.",
+   "at": "2026-11-10T06:30:00Z"
+  },
+  "bidnet:0000443129": {
+   "name": "Hyland Hills Park & Rec 2027 Concrete Removal and Replacement On Call (closes 2026-11-30 13:00 MST)",
+   "verdict": "NO",
+   "why": "Concrete flatwork removal/replacement; not our trades (rule 8; HQ agrees).",
+   "at": "2026-11-10T06:30:00Z"
   }
  },
  "watched": {
@@ -2774,6 +2804,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T05:27:00Z",
+ "last_hourly_check": "2026-11-10T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
