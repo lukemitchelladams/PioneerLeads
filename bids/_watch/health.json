@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-10T01:36:24+00:00",
+  "checked_at": "2026-11-10T02:35:46+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 635,
+      "count": 637,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-10T01:36:24+00:00",
+      "last_success": "2026-11-10T02:35:46+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 82,
@@ -18,7 +18,7 @@
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 190,
-        "statewide BUYER": 446
+        "statewide BUYER": 448
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-10T01:36:24+00:00",
+      "last_success": "2026-11-10T02:35:46+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 64,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-10T01:36:24+00:00",
+      "last_success": "2026-11-10T02:35:46+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -77,15 +77,20 @@
     "samgov": {
       "bulk_added": 28,
       "bulk_note": "bulk file cached 2026-11-09T05:45:35+00:00; 92 matching (parsed earlier)",
-      "count": 96,
+      "carried_forward": true,
+      "complete": false,
+      "count": 95,
       "creds": {
         "SAM_API_KEY": true
       },
-      "errors": [],
-      "last_success": "2026-11-10T01:36:24+00:00",
+      "errors": [
+        "SAM.gov {'ccode': '3920'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>",
+        "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-11-10T02:35:46+00:00",
       "logged_in": true,
       "login_note": "API key; +28 from the nightly bulk file",
-      "matches": 96,
+      "matches": 95,
       "reach_note": "HTTP 404",
       "reachable": true
     }
