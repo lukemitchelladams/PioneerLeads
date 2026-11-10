@@ -6,6 +6,7 @@ Every MISSING item below lives only on the agency portal, which this cloud sessi
 
 | Bid | Due | In hand | MISSING (download from) |
 |---|---|---|---|
+| PSFB FA251727SS00 Smart T Power sources sought | 2026-11-18 09:00 (email response) | Sources Sought memo (2 pp); Attachment 1 PWS (7 pp); both from SAM.gov 2026-11-10 | none: the notice lists only these two files |
 | Littleton RFQ 2126 (BidNet sol 21-26) on-call plumbing | 2026-10-28 14:00 | RFQ (12 pp); **Attachment A Contract Certification Form; Attachment B Sample Contract (18 pp); Attachment C RMEPS Bid Question Response Guide — all downloaded logged in 2026-10-20**; pricing = 6 RMEPS line items (Pricing-Items-RMEPS.md; there is no separate template file) | Q&A posting 10/21 (BidNet Q & A tab; the scanner re-checks it hourly) |
 | Town of Parker RFP 26-028 HVAC PM | 2026-10-22 15:00 | RFP; Price Sheet workbook; Appendix A asset inventory; sample PSA incl. Exhibits A Scope, B Rate Sheet, C Insurance Requirements, D COI | Nothing listed is missing. Check the Euna portal for a Q&A addendum (questions closed 10/16). |
 | RTD 126DM016 bus shelters | 2026-11-16 14:00 | RFP; Attachment A SOW; Attachment B Form of Contract; Attachment C Pricing Sheet; **SBE Required Enclosures + SBE Contract Requirements (downloaded 2026-10-20, public rtd-denver.com links)** | **W-9 (02.12_W9_updated_1822.pdf) and Key_Personnel.docx** (OpenGov portal, section 7.1.12-7.1.13; Cloudflare-blocked from cloud) |
