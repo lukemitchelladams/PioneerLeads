@@ -1281,9 +1281,9 @@
    "triaged_at": "2026-10-28T08:22Z"
   },
   "bidnet:0000440813": {
-   "decision": "EVALUATE",
+   "decision": "NO",
    "title": "City of Littleton RFQ On-Call Commercial Pedestrian Door Repairs (BidNet 0000440813)",
-   "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Package read 2026-10-28 10:22Z: pre-proposal 11/04/2026 3:00 PM MT at Littleton Center (NOT mandatory, optional site walk after); questions due 11/09 12:00 MT; submissions via RMEPS by 11/24/2026 12:00 PM MT; 2+1 yr multiple-award pool, $100,000/yr anticipated budget, $100,000 initial P&P bond, 24/7 emergency with 2-hour arrival; CGL $1M/$2M. Facilities/handyman fit; needs a commercial door/hardware sub. Decision rides with the garage-door RFQ.",
+   "reason": "Sibling of the garage-door RFQ 0000440827 (EVALUATE). Package read 2026-10-28 10:22Z: pre-proposal 11/04/2026 3:00 PM MT at Littleton Center (NOT mandatory, optional site walk after); questions due 11/09 12:00 MT; submissions via RMEPS by 11/24/2026 12:00 PM MT; 2+1 yr multiple-award pool, $100,000/yr anticipated budget, $100,000 initial P&P bond, 24/7 emergency with 2-hour arrival; CGL $1M/$2M. Facilities/handyman fit; needs a commercial door/hardware sub. Decision rides with the garage-door RFQ. | 2026-11-10 20:46Z HQ: Addendum #1 (Q&A) says responses must cover the full scope and labor warranty is at least one year; RFQ bars subcontractors (\"no sub-consultants are allowed\") and Brown Bison has no door crew. NO.",
    "triaged_at": "2026-10-28T08:22Z"
   },
   "44098e7c120b467eaab640f73e9802cc": {
@@ -2661,6 +2661,12 @@
    "verdict": "NO",
    "why": "Forklift purchase, closes 2026-11-24; forklifts ruled NO 2026-11-09. Listing dropped from SAM this scan. HQ ruled NO 19:49Z.",
    "at": "2026-11-10T20:27:00Z"
+  },
+  "20b6fa9843bd4925b7964e5dfb36f976": {
+   "name": "Army ANAD Low Level Cranes CSO (SAM, jones-bearing)",
+   "verdict": "NO",
+   "why": "Overhead cranes, NAICS 333923, PSC 3950, closes 2026-11-30; not a Jones Bearing/American Pulley/ConveyMor product. HQ ruled NO 20:46Z.",
+   "at": "2026-11-10T21:24:00Z"
   }
  },
  "watched": {
@@ -2846,6 +2852,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T20:27:00Z",
+ "last_hourly_check": "2026-11-10T21:24:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
