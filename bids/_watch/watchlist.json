@@ -632,6 +632,14 @@
       "match": "0000443113|RFB-26-64|courthouse 1 interior wall",
       "folder": null,
       "govtribe_ids": []
+    },
+    {
+      "name": "St. Vrain Valley SD RFP-KM-2027-011 Boiler Replacement Projects - 2 Locations (EVALUATE; MANDATORY visit 2026-11-17 09:30 Erie; closes 2026-12-08 14:00)",
+      "source": "bidnet",
+      "id": "0000443128",
+      "match": "0000443128|RFP-KM-2027-011|boiler replacement projects - 2 locations",
+      "folder": "bids/svvsd-boiler-replacement-2-locations",
+      "govtribe_ids": []
     }
   ]
 }

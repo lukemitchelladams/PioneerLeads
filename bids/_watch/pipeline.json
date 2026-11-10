@@ -1,6 +1,6 @@
 {
   "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
-  "updated": "2026-11-07T01:43:00Z",
+  "updated": "2026-11-10T01:30:00Z",
   "bids": [
     {
       "id": "cos-parks-r26-077mz",
@@ -1545,6 +1545,26 @@
       "contact": "Steve Teeters, Project Manager, Steve.Teeters@lafayetteco.gov; Elizabeth Messner, Procurement Manager, Elizabeth.Messner@lafayetteco.gov (RFP cover sheet); official answers only as BidNet postings",
       "due_source": "RFP title page and cover sheet: \"Proposal Due Date: December 18, 2026 | 5:00PM MT\"; \"Late proposals will not be accepted.\"",
       "doc_gaps": "Porter Services Page (Golf and Library tabs say 'See Porter Services Page'; not in Appendix C); Exhibit C O&Ms / consumable manufacturer requirements (Appendix B 1-05); Schedule A rate schedule is blank in the sample contract (filled at award); no addenda yet"
+    },
+    {
+      "id": "svvsd-boiler-replacement-2027-011",
+      "agency": "St. Vrain Valley School District RE-1J",
+      "title": "Boiler Replacement Projects - 2 Locations",
+      "sol": "RFP-KM-2027-011 (BidNet 0000443128)",
+      "trade": "HVAC (boiler replacement)",
+      "due": "2026-12-08T14:00:00-07:00",
+      "due_source": "BidNet: \"12/08/2026 02:00 PM MST\"",
+      "portal": "BidNet",
+      "decision": "EVALUATE",
+      "decision_note": "New 2026-11-09 posting, in trade. BidNet event: \"Onsite Visit, Attendance Mandatory, Event date 11/17/2026 09:30 AM MST, Location Black Rock Elementary School, 2000 Mountain View Blvd., Erie, CO 80516\", then travels to a second school (BidNet text cut off at \"Eagle\"). RFP PDF not read yet (public BidNet download; blocked in the worker cloud). Gate to check: bid bond / P&P bonds (no surety line yet).",
+      "prebid": "2026-11-17T09:30:00-07:00",
+      "prebid_mandatory": true,
+      "performer": "Mechanical (boiler) sub TBD",
+      "subs": "Candidate list being researched by the worker 11/10; nothing sent",
+      "sub_pricing": "None",
+      "folder": "bids/svvsd-boiler-replacement-2-locations",
+      "contact": "BidNet",
+      "next": "HQ: read the RFP after the next logged-in scan files it (watchlist folder set); GO/NO on the bond gate by Tue 11/10 so subs get a week before the 11/17 09:30 mandatory visit."
     }
   ],
   "events": [
@@ -2327,6 +2347,18 @@
       "when": "2026-11-09T14:00:00-07:00",
       "kind": "Closed - missed",
       "note": "No submission on record at the 14:00 MT close; package was built, Luke's 5 answers + SoS certificate never arrived"
+    },
+    {
+      "bid": "svvsd-boiler-replacement-2027-011",
+      "when": "2026-11-17T09:30:00-07:00",
+      "kind": "prebid-mandatory",
+      "note": "MANDATORY onsite visit, Black Rock Elementary, 2000 Mountain View Blvd., Erie (front/main office), then the second school"
+    },
+    {
+      "bid": "svvsd-boiler-replacement-2027-011",
+      "when": "2026-12-08T14:00:00-07:00",
+      "kind": "due",
+      "note": "RFP-KM-2027-011 due 14:00 MST via BidNet listing (submission method not in hand yet)"
     }
   ],
   "doc_gaps": [
