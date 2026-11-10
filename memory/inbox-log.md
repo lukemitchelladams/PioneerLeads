@@ -332,3 +332,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-10 09:25Z (hourly, read-only): nothing unseen (2 routine mails from 07:39Z/08:07Z already logged). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
 - 2026-11-10 10:25Z (hourly, read-only): nothing unseen (no mail in the last 2 h). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
 - 2026-11-10 11:25Z (hourly, read-only): nothing unseen (no mail in the last 2 h). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
+- 2026-11-10 12:26Z (hourly, read-only): 1 unseen, no action: Google DMARC aggregate report (1a1c532ff332e17f). No Carbon Valley firm reply; no Luke answer on Brighton. No CRM brief.
