@@ -2580,9 +2580,9 @@
   },
   "bidnet:0000443128": {
    "name": "St. Vrain Valley SD RE-1J RFP-KM-2027-011 Boiler Replacement Projects - 2 Locations (closes 2026-12-08 14:00 MST)",
-   "verdict": "EVALUATE",
-   "why": "In trade (HVAC/boiler replacement, 2 schools). BidNet: \"Onsite Visit, Attendance Mandatory, Event date 11/17/2026 09:30 AM MST, Location Black Rock Elementary School, 2000 Mountain View Blvd., Erie, CO 80516\" then a second school (text cut off). RFP not read yet (bidnetdirect blocked in worker cloud); likely bond gate (unverified). Folder bids/svvsd-boiler-replacement-2-locations, watchlist set so HQ scan files the PDF.",
-   "at": "2026-11-10T01:30:00Z"
+   "verdict": "NO",
+   "why": "HQ read the RFP 2026-11-09 18:50 MT: NO-BID. Special Terms 1+5 want the mechanical company itself (\"CONSIGNMENT OF CONTRACT NOT ALLOWED\"); scored on own boiler-install history + 3 K-12 references; 100% P&P bond over $50k; CGL $2M/occurrence. MANDATORY walk 11/17 09:30 Black Rock ES Erie then Eagle Crest ES Longmont. Luke may overrule by Thu 11/12 12:00 MT.",
+   "at": "2026-11-10T01:50:00Z"
   },
   "bidnet:0000440975": {
    "name": "City of Cortez RFQ GS-26-OCPS On-Call Planning Services (closes 2026-11-20)",
@@ -2774,6 +2774,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T01:30:00Z",
+ "last_hourly_check": "2026-11-10T01:55:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

@@ -12,7 +12,7 @@
 | Contract type | Construction: boiler replacement at 2 schools (from the title; details not in hand yet) |
 | Term / renewals | not in hand yet |
 | Evaluation method | RFP (per number prefix); criteria not in hand yet |
-| Status | **EVALUATE** (worker 2026-11-10 01:30Z). In trade (HVAC/boiler). RFP not in hand: bidnetdirect.com is blocked in the worker cloud session; the next HQ logged-in scan files it into docs/ (watchlist folder set) |
+| Status | **NO-BID** (HQ 2026-11-09 18:50 MT after reading the RFP; Luke may overrule by Thu 2026-11-12 12:00 MT) |
 
 BidNet event text, verbatim: "Pre-Bidding Events: Event Type Onsite Visit, Attendance Mandatory, Event date 11/17/2026 09:30 AM MST,
 Location Black Rock Elementary School, 2000 Mountain View Blvd., Erie, CO 80516, Note: Meet at the Schools Front/Main Office - A
@@ -30,9 +30,9 @@ Not in hand yet. Read the RFP for these before GO:
 - question deadline, prequalification, licensing, schedule (summer 2027 work window?)
 
 ## Open items
-- [ ] HQ: read the RFP from docs/ after the next logged-in scan; fill the table above with quotes; decide GO / NO (bond gate)
-- [ ] If GO: send sub-outreach.md the same day (walk 11/17 is 7 days out; subs need the week)
-- [ ] Decide who walks 11/17 09:30 for Brown Bison (Luke works weekdays; a sub's estimator if the RFP allows)
+- [x] HQ read the RFP 2026-11-09 18:50 MT: NO-BID (see "HQ read of the RFP" below). Luke may overrule by Thu 2026-11-12 12:00 MT.
+- [ ] Only on a Luke overrule: send sub-outreach.md (DRAFT, 9 candidates, not sent). The RFP requires every sub at the 11/17 walk and an
+      approved boiler brand (Fulton Endura, Riello, Raypak, Lochinvar).
 
 ## Sources
 - BidNet listing 0000443128 via the HQ logged-in scan 2026-11-10T00:36Z (bids/_watch/open_bids.json, prebid quote above)
