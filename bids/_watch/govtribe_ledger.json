@@ -1152,9 +1152,9 @@
    "pipeline_id": "fort-collins-transfort-doors"
   },
   "bidnet:0000440827": {
-   "decision": "EVALUATE",
+   "decision": "NO",
    "title": "City of Littleton On-Call Garage Door Repairs",
-   "reason": "Facilities; needs a garage-door sub. MANDATORY pre-bid 2026-11-03 14:00 MT at 1800 W Belleview Ave, Littleton. Due 2026-11-24. | Package read: mandatory pre-proposal 11/3 14:00; due 11/24 12:00; $100k/yr pool; $100k P&P bond; 2-hour emergency response.",
+   "reason": "Facilities; needs a garage-door sub. MANDATORY pre-bid 2026-11-03 14:00 MT at 1800 W Belleview Ave, Littleton. Due 2026-11-24. | Package read: mandatory pre-proposal 11/3 14:00; due 11/24 12:00; $100k/yr pool; $100k P&P bond; 2-hour emergency response. | 2026-11-10 22:26Z: aligned with pipeline.json (NO): RFQ 2A \"no sub-consultants are allowed to provide services under this contract\" and Brown Bison has no door crew; addendum notice 11/10 22:05Z changes nothing.",
    "triaged_at": "2026-10-27T22:22Z",
    "pipeline_id": "littleton-garage-doors"
   },
@@ -2667,6 +2667,18 @@
    "verdict": "NO",
    "why": "Overhead cranes, NAICS 333923, PSC 3950, closes 2026-11-30; not a Jones Bearing/American Pulley/ConveyMor product. HQ ruled NO 20:46Z.",
    "at": "2026-11-10T21:24:00Z"
+  },
+  "bc4fcb32914347a685b0b332444ceedb": {
+   "name": "Peterson SFB 21 CONS Sources Sought FA251727SS00 Smart T Power Project (SAM)",
+   "verdict": "GO",
+   "why": "Sources-sought response (no price), NAICS 238210, total small business; feeders from Room 126 PDU/ATS to panel RP15, 2x20A + 1x30A circuits. Response due Wed 2026-11-18 09:00 MT by email per the memo (SAM.gov 2027-11-18 date is wrong). HQ filed bids/psfb-smart-t-power-sources-sought/ 21:52Z; sends Mon 11/16 unless Luke overrules by Mon 12:00 MT.",
+   "at": "2026-11-10T22:26:00Z"
+  },
+  "bidnet:444226398382": {
+   "name": "BidNet aggregated notice 444226398382 Landscape Services (Colorado, buyer not readable)",
+   "verdict": "EVALUATE",
+   "why": "Published 2026-11-10, closes 2026-12-16; buyer, site and pre-bid not readable from the aggregated listing. Landscaping = Alex Ditto (Luke handles). Mac to open it logged in. HQ 21:52Z.",
+   "at": "2026-11-10T22:26:00Z"
   }
  },
  "watched": {
@@ -2852,6 +2864,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T21:24:00Z",
+ "last_hourly_check": "2026-11-10T22:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
