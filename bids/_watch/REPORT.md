@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-10T10:36:42+00:00
+# Bid watch report — 2026-11-10T11:35:54+00:00
 
 **Headline:** not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 643 | BUYER 450, AGGREGATE 194 | 84 | 2026-11-10T10:36:42+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T10:36:42+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 100 |  | 100 | 2026-11-10T10:36:42+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 3 | 2026-11-10T10:36:42+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 643 | BUYER 450, AGGREGATE 194 | 84 | 2026-11-10T11:35:54+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T11:35:54+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 100 |  | 100 | 2026-11-10T11:35:54+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 3 | 2026-11-10T11:35:54+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
