@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-10T19:41:36+00:00",
+  "checked_at": "2026-11-10T20:38:31+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 645,
+      "count": 643,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-10T19:41:36+00:00",
+      "last_success": "2026-11-10T20:38:31+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 85,
-      "reach_note": "HTTP 200",
+      "matches": 84,
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 195,
-        "statewide BUYER": 451
+        "statewide AGGREGATE": 194,
+        "statewide BUYER": 450
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-10T19:41:36+00:00",
+      "last_success": "2026-11-10T20:38:31+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -38,22 +38,19 @@
       "reachable": true
     },
     "coloradovss": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
-      "count": 67,
+      "complete": true,
+      "count": 66,
       "creds": {},
-      "errors": [
-        "ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200)",
-        "coloradovss list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-11-10T18:39:34+00:00",
+      "errors": [],
+      "last_success": "2026-11-10T20:38:31+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
-      "site_totals": {}
+      "site_totals": {
+        "statewide open": 66
+      }
     },
     "dibbs": {
       "count": 307,
@@ -78,19 +75,19 @@
       }
     },
     "samgov": {
-      "bulk_added": 34,
+      "bulk_added": 35,
       "bulk_note": "bulk file cached 2026-11-10T05:41:39+00:00; 100 matching (parsed earlier)",
-      "count": 103,
+      "count": 104,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-10T19:41:36+00:00",
+      "last_success": "2026-11-10T20:38:31+00:00",
       "logged_in": true,
-      "login_note": "API key; +34 from the nightly bulk file",
-      "matches": 103,
-      "reach_note": "TimeoutError: The read operation timed out",
-      "reachable": false
+      "login_note": "API key; +35 from the nightly bulk file",
+      "matches": 104,
+      "reach_note": "HTTP 404",
+      "reachable": true
     }
   }
 }
