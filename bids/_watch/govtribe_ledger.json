@@ -2610,9 +2610,9 @@
   },
   "bidnet:0000443130": {
    "name": "Hyland Hills Park & Rec 2027 Golf Course Renovation Work On Call Contract (closes 2026-11-30 13:00 MST)",
-   "verdict": "EVALUATE",
-   "why": "Specs docx + bid sheet not read (bidnetdirect blocked in worker cloud; watchlist set so the HQ scan downloads them). Golf course renovation is likely earthwork/drainage/bunker work (rule 8 NO), but any sod/landscape/irrigation items could suit Alex Ditto. Pre-bid not in BidNet events; check the specs.",
-   "at": "2026-11-10T06:30:00Z"
+   "verdict": "NO",
+   "why": "Specs read (HQ 06:45Z, worker verified): \"Qualified contractors must have a minimum of 10 years of experience in various aspects of golf course construction including but not limited to the following: grading/ drainage/ irrigation/ sod prep/ USGA greens construction\". Grading/drainage = rule 8, and the 10-year bar is out of reach. No pre-bid; questions 11/20 16:00; due 11/30 13:00.",
+   "at": "2026-11-10T07:30:00Z"
   },
   "bidnet:0000443129": {
    "name": "Hyland Hills Park & Rec 2027 Concrete Removal and Replacement On Call (closes 2026-11-30 13:00 MST)",
@@ -2804,6 +2804,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T06:30:00Z",
+ "last_hourly_check": "2026-11-10T07:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
