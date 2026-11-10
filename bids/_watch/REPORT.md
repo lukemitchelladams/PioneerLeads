@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-10T14:36:11+00:00
+# Bid watch report — 2026-11-10T15:36:22+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 643 | BUYER 450, AGGREGATE 194 | 84 | 2026-11-10T14:36:11+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T14:36:11+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 100 |  | 100 | 2026-11-10T14:36:11+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 3 | 2026-11-10T14:36:11+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 645 | BUYER 452, AGGREGATE 194 | 85 | 2026-11-10T15:36:22+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T15:36:22+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 100 |  | 100 | 2026-11-10T15:36:22+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 3 | 2026-11-10T15:36:22+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,6 +27,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | St. Vrain Valley School District RE-1J | Boiler Replacement Projects - 2 Locations | 2026-12-08 (28d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Thornton | Sport Court Repairs On-Call | 2026-12-09 (29d) | 2026-11-17 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Castle Rock | 2027 Town Facility Parking Lot Improvements | 2026-12-08 (28d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Town-Facility-Parking-Lot-Improvements/0000442235?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison | bidnet | Fort Lewis College Project Type NFS - No | Notice of Settlement - Fire Alarm Replacement (Multiple Buildings) | 2026-11-17 (7d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Notice-of-Settlement-Fire-Alarm-Replacement-Multiple-Buildings/0000443158?purchasingGroupId=8409951&origin=1 |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -106,7 +112,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (150)
+## All open matching bids, excluding DIBBS parts RFQs (151)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -148,6 +154,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (6d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (6d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-16 (6d) |  | https://sam.gov/workspace/contract/opp/d46978346bbe4e96890506336d3711ef/view |
+| brownbison | bidnet | Fort Lewis College Project Type NFS - No | Notice of Settlement - Fire Alarm Replacement (Multiple Buildings) | 2026-11-17 (7d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Notice-of-Settlement-Fire-Alarm-Replacement-Multiple-Buildings/0000443158?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Aurora | POST Certified On-Call Security Officer Services | 2026-11-17 (7d) | 2026-11-05 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/POST-Certified-On-Call-Security-Officer-Services/0000442237?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Arvada | On-Call General Contractor Services | 2026-11-17 (7d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Arvada | On-Call Traffic Control Services Citywide - REISSUE | 2026-11-17 (7d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1 |
