@@ -1621,6 +1621,16 @@ check("bulk file unavailable: rows only it had found are carried forward, not cl
       "samgov:b2" in r7["found"] and r7["found"]["samgov:b2"].get("carried_forward")
       and not any(k.startswith("samgov") for k in r7["closed"]), (list(r7["closed"]), r7["health"]["samgov"]["errors"]))
 
+# ---- change detection: a casing/whitespace flip of a title is not a change (SAM API vs bulk file, 2026-11-10) ----
+from scripts.bidwatch import run as _run_t  # noqa: E402
+_t_old = {"title": "31- Bearing, Ball,  Annular", "url": "u", "due": "2026-11-24"}
+_t_same = {"title": "31- BEARING, BALL, ANNULAR", "url": "u", "due": "2026-11-24"}
+_t_new = {"title": "31- Bearing, Roller, Cylindrical", "url": "u", "due": "2026-11-24"}
+_d_same = [x for x in _run_t._diff(_t_old, _t_same) if x.startswith("title changed")]
+_d_new = [x for x in _run_t._diff(_t_old, _t_new) if x.startswith("title changed")]
+check("_diff: title casing/whitespace flip is not a change, a real rewording is",
+      _d_same == [] and len(_d_new) == 1 and "Roller" in _d_new[0], (_d_same, _d_new))
+
 # ---- keepalive --ensure must not be fooled by pid reuse after a container sleep (2026-11-09) ----
 from scripts.bidwatch import keepalive as _ka  # noqa: E402
 import subprocess as _sp  # noqa: E402

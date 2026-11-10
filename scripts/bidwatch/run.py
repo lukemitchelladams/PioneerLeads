@@ -580,9 +580,16 @@ def _diff(old: dict, new: dict) -> list[str]:
                    + f': "{(first.get("answer") or first.get("question") or "")[:200]}"')
     if nq.get("questions_deadline") and nq["questions_deadline"] != oq.get("questions_deadline"):
         out.append(f"questions deadline {nq['questions_deadline']}")
-    if new.get("title") and old.get("title") and new["title"] != old["title"]:
+    # SAM.gov returns the same title in different casing from the API and the nightly bulk file ("Bearing, Ball"
+    # vs "BEARING, BALL"); only a real wording change is news.
+    if new.get("title") and old.get("title") and _title_key(new["title"]) != _title_key(old["title"]):
         out.append(f"title changed: {new['title'][:80]}")
     return out
+
+
+def _title_key(title) -> str:
+    """Casing- and whitespace-insensitive form of a title, for change detection only."""
+    return " ".join(str(title or "").split()).casefold()
 
 
 def _one_line(text, limit: int = 400) -> str:
