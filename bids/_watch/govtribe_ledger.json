@@ -2625,6 +2625,24 @@
    "verdict": "NO",
    "why": "Notice of Settlement (contract close-out / final payment notice for a completed project), not a solicitation; nothing to bid. Fire alarm is also outside our trades.",
    "at": "2026-11-10T16:30:00Z"
+  },
+  "e314ad5dbe27493d9b5e76f81e4a49d7": {
+   "name": "Army MICC Fort Drum W911S227U0155 Diesel Forklift (PSC 3920, small-business set-aside; closes 2026-11-24)",
+   "verdict": "NO",
+   "why": "Purchase of a diesel forklift (material-handling vehicle, PSC 3920) at Fort Drum NY; not a bearing/pulley/bucket-elevator product Jones Bearing makes, and not a Brown Bison service. Keyword match on PSC 3920 only.",
+   "at": "2026-11-10T17:30:00Z"
+  },
+  "bidnet:0000443172": {
+   "name": "Town of Frederick PARKS11102026 Bella Rosa Golf Course Maintenance Facility Project - Owner's Rep Services (closes 2026-12-18)",
+   "verdict": "NO",
+   "why": "Owner's representative / construction-management professional services for a new building; not a trade service we perform.",
+   "at": "2026-11-10T17:30:00Z"
+  },
+  "bidnet:0000441156": {
+   "name": "City of Loveland Bid 2026-074 Carpet, Upholstery, and Fiber Panel Maintenance (due 2026-11-19 14:00)",
+   "verdict": "NO",
+   "why": "Pipeline NO (10/28 triage): bidder certifies 5 yrs as a carpet maintenance business; subcontracting only with consent; MANDATORY walk 11/05 10:30 passed. Addendum 11/10 changes nothing.",
+   "at": "2026-11-10T17:30:00Z"
   }
  },
  "watched": {
@@ -2810,6 +2828,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T16:30:00Z",
+ "last_hourly_check": "2026-11-10T17:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
