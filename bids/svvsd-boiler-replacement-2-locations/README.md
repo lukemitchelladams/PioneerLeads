@@ -36,3 +36,16 @@ Not in hand yet. Read the RFP for these before GO:
 
 ## Sources
 - BidNet listing 0000443128 via the HQ logged-in scan 2026-11-10T00:36Z (bids/_watch/open_bids.json, prebid quote above)
+
+## HQ read of the RFP (2026-11-09 18:50 MT, 228-page PDF in docs/): decision NO-BID
+
+Quoted from RFP 2027-011 (pp. 1-16):
+- Schedule: "Mandatory Site Visit @ 2 Locations 9:30a.m., November 17, 2026"; "Written Questions Due 3:00p.m., November 24, 2026"; "Addenda/Response to Questions December 1, 2026"; "RFP Response Deadline 2:00p.m., December 8, 2026" (electronic, BidNet).
+- Site visit (Special Terms 2): starts at Black Rock Elementary, 2000 Mountain View Blvd., Erie, then Eagle Crest Elementary, 4444 Clover Basin Dr., Longmont; "Respondents who fail to attend the mandatory site visit shall be considered non-responsive"; "all of the Respondent's Subcontractor(s) are required to attend this site visit"; ~1.5 hours; "No additional scheduled site visits".
+- Purpose (Special Terms 1): "obtain responses from qualified mechanical companies for Boiler Replacement Projects". Special Terms 5: "CONSIGNMENT OF CONTRACT NOT ALLOWED. Responses will only be considered from firms that are directly engaged in the business of ... performing the services described ... no part of this Contract can be consigned to another vendor."
+- Scope: Black Rock, replace Burnham GE615/11 (2.532 MBh); Eagle Crest, replace Weil-McLain 688 (1.358 MBh); approved manufacturers Fulton Endura, Riello, Raypak, Lochinvar, "No Substitute"; permits, haul-away, startup, combustion tuning, state boiler documentation; controls by SVVSD.
+- Award: best-value RFP ("THIS IS NOT A COMPETITIVE BID"); scored on company qualifications and experience in boiler installation, staff qualifications, three K-12 references for similar work, schedule, warranty, price by site.
+- Bonds (Standard Terms 19): "100% Performance Bond and 100% Payment Bond within TEN (10) business days after notification of award" when the contract exceeds $50,000; surety rated A- or better.
+- Insurance (Exhibit 2): CGL "not less than $2,000,000 Each Occurrence", auto $1,000,000, workers' comp; District additional insured; waiver of subrogation.
+
+Why NO-BID (HQ decision under Luke's 2026-11-08 rule; overrule by Thu 2026-11-12 12:00 MT, after which no sub can be lined up for the 11/17 walk): the District wants the mechanical company itself as the respondent and bars consigning the contract; scoring turns on the respondent's own boiler-installation history and three K-12 references, which Brown Bison does not have; a 100% P&P bond on a six-figure mechanical job and $2M-per-occurrence CGL are beyond a 2026 start-up's current program (insurance binds Friday 11/13 at best). A pass-through prime with a mechanical sub would score at the bottom and likely be ruled non-responsive under Special Terms 5.
