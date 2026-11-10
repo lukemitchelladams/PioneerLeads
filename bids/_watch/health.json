@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-10T21:35:48+00:00",
+  "checked_at": "2026-11-10T22:35:50+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 637,
+      "count": 642,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-10T21:35:48+00:00",
+      "last_success": "2026-11-10T22:35:50+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 83,
@@ -18,7 +18,7 @@
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 193,
-        "statewide BUYER": 445
+        "statewide BUYER": 450
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-10T21:35:48+00:00",
+      "last_success": "2026-11-10T22:35:50+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -38,19 +38,22 @@
       "reachable": true
     },
     "coloradovss": {
-      "complete": true,
+      "blind": true,
+      "carried_forward": true,
+      "complete": false,
       "count": 66,
       "creds": {},
-      "errors": [],
+      "errors": [
+        "ColoradoVSS list: RuntimeError: 'View Published Solicitations' not found on the home page (HTTP 200)",
+        "coloradovss list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
       "last_success": "2026-11-10T21:35:48+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
-      "site_totals": {
-        "statewide open": 66
-      }
+      "site_totals": {}
     },
     "dibbs": {
       "count": 307,
@@ -82,7 +85,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-10T21:35:48+00:00",
+      "last_success": "2026-11-10T22:35:50+00:00",
       "logged_in": true,
       "login_note": "API key; +35 from the nightly bulk file",
       "matches": 105,
