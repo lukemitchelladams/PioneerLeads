@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-10T20:38:31+00:00",
+  "checked_at": "2026-11-10T21:35:48+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 643,
+      "count": 637,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-10T20:38:31+00:00",
+      "last_success": "2026-11-10T21:35:48+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 84,
-      "reach_note": "HTTP 202",
+      "matches": 83,
+      "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 194,
-        "statewide BUYER": 450
+        "statewide AGGREGATE": 193,
+        "statewide BUYER": 445
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-10T20:38:31+00:00",
+      "last_success": "2026-11-10T21:35:48+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 66,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-10T20:38:31+00:00",
+      "last_success": "2026-11-10T21:35:48+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -77,15 +77,15 @@
     "samgov": {
       "bulk_added": 35,
       "bulk_note": "bulk file cached 2026-11-10T05:41:39+00:00; 100 matching (parsed earlier)",
-      "count": 104,
+      "count": 105,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-10T20:38:31+00:00",
+      "last_success": "2026-11-10T21:35:48+00:00",
       "logged_in": true,
       "login_note": "API key; +35 from the nightly bulk file",
-      "matches": 104,
+      "matches": 105,
       "reach_note": "HTTP 404",
       "reachable": true
     }
