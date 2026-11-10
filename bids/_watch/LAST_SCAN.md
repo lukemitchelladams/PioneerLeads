@@ -1,11 +1,8 @@
-# Last scan 2026-11-10T22:35:50+00:00
+# Last scan 2026-11-10T23:35:55+00:00
 Logged in: yes (attempt 1)
-Counts: bidnet 642/83 | samgov 105/105 | coloradovss 66/3 (BLIND, last good 2026-11-10T21:35:48+00:00) | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 815/192
-New matching bids: 0
-Changes on watched bids: 2
-  - **2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities** (bidnet): NEW COMMUNICATION No.7 11/10/2026 03:27 PM MST: "Q&A #5 Q&A #5.pdf 305 Kb 11/10/2026 03:27 PM MST" — https://ww
-  - **ON-CALL GARAGE DOOR REPAIRS** (bidnet): NEW DOCUMENTS (addendum?): Addendum #1.pdf, Map of City of Littleton Buildings.pdf — https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GAR
-Documents downloaded: 2
-  - bidnet:0000440827: Map of City of Littleton Buildings.pdf
-  - bidnet:0000440827: Addendum _1.pdf
-Errors: bonfire 1, coloradovss 2; first: bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network; exit code 3
+Counts: bidnet 645/83 | samgov 106/106 | coloradovss 69/3 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 822/193
+New matching bids: 1
+  - samgov 5d8aa2693f7c4dd7adf3f6494c77eb5d | JANITORIAL SERVICES, Channel Islands NP | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | closes 2026-11-20 | brownbison | watched no
+Changes on watched bids: 0
+Documents downloaded: 0
+Errors: bonfire 1; first: bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network; exit code 0
