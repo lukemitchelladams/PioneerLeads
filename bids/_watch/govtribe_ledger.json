@@ -2643,6 +2643,24 @@
    "verdict": "NO",
    "why": "Pipeline NO (10/28 triage): bidder certifies 5 yrs as a carpet maintenance business; subcontracting only with consent; MANDATORY walk 11/05 10:30 passed. Addendum 11/10 changes nothing.",
    "at": "2026-11-10T17:30:00Z"
+  },
+  "501720d78c2a4aafb455b996db0cf2dd": {
+   "name": "DOE Design-Build Services, STM Security Fencing - North Boundary (SAM)",
+   "verdict": "NO",
+   "why": "Fencing design-build, closes 2026-11-11; fencing/heavy civil, not our trades (rule 8). HQ ruled NO 19:49Z.",
+   "at": "2026-11-10T20:27:00Z"
+  },
+  "f196ff52a4d844acb7cfea154a1c81f8": {
+   "name": "USCG ALC Sheave (SAM, jones-bearing)",
+   "verdict": "NO",
+   "why": "Aircraft sheave, NAICS 336413, PSC 3020, WOSB set-aside; not a conveyor pulley and we are not WOSB. HQ ruled NO 19:49Z.",
+   "at": "2026-11-10T20:27:00Z"
+  },
+  "7e9779421f21488c9f6a3384aba26dde": {
+   "name": "Army ACC Diesel Forklift (SAM, jones-bearing)",
+   "verdict": "NO",
+   "why": "Forklift purchase, closes 2026-11-24; forklifts ruled NO 2026-11-09. Listing dropped from SAM this scan. HQ ruled NO 19:49Z.",
+   "at": "2026-11-10T20:27:00Z"
   }
  },
  "watched": {
@@ -2828,6 +2846,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T19:24:00Z",
+ "last_hourly_check": "2026-11-10T20:27:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
