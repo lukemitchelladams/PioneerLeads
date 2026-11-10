@@ -5,8 +5,22 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
+| Appendix A | Sustainability Targets for Construction Waste Recycling requirements | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Appendix B |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Appendix C | Communications, Technology, and Security Guideline for detailed require | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Appendix D |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Appendix E |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Exhibit 1 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Exhibit 2 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Exhibit 3 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Form C |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | INSIDE 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf (heading found; verify pages) |
+| Schedule 10 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Schedule 40 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Schedule 5 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |
+| Schedule 80 |  | 2027-011_RFP_Boiler Replacment Projects - 2 Locations_M.pdf | **MISSING** |

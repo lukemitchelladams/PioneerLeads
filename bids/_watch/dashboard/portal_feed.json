@@ -2410,7 +2410,7 @@
   "prebid_date": "2026-11-17",
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1"
  },
