@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-10T15:36:22+00:00
+# Bid watch report — 2026-11-10T16:36:03+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** 2 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 645 | BUYER 452, AGGREGATE 194 | 85 | 2026-11-10T15:36:22+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T15:36:22+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 100 |  | 100 | 2026-11-10T15:36:22+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 64 | open 64 | 3 | 2026-11-10T15:36:22+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 646 | BUYER 454, AGGREGATE 193 | 86 | 2026-11-10T16:36:03+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-10T16:36:03+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 101 |  | 101 | 2026-11-10T16:36:03+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-10T16:36:03+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -32,7 +32,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet | Fort Lewis College Project Type NFS - No | Notice of Settlement - Fire Alarm Replacement (Multiple Buildings) | 2026-11-17 (7d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Notice-of-Settlement-Fire-Alarm-Replacement-Multiple-Buildings/0000443158?purchasingGroupId=8409951&origin=1 |
+| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Diesel Forklift | 2026-11-24 (14d) |  | https://sam.gov/workspace/contract/opp/e314ad5dbe27493d9b5e76f81e4a49d7/view |
+| brownbison | bidnet | Town of Frederick | Bella Rosa Golf Course Maintenance Facility Project - Owner's Rep Services | 2026-12-18 (38d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Bella-Rosa-Golf-Course-Maintenance-Facility-Project-Owner-s-Rep-Services/0000443172?purchasingGroupId=8409951&origin=1 |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -112,7 +113,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (151)
+## All open matching bids, excluding DIBBS parts RFQs (153)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -202,6 +203,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City of Littleton | ON-CALL COMMERCIAL PEDESTRIAN DOOR REPAIRS | 2026-11-24 (14d) | 2026-11-04 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-COMMERCIAL-PEDESTRIAN-DOOR-REPAIRS/0000440813?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Fleet Maintenance Services (As-Needed) | 2026-11-24 (14d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444223472310?target=view |
 | brownbison | bonfire | Town of Parker | On-Call Professional Building Plan Review and Inspection Services | 2026-11-24 (14d) |  | https://parkeronline.bonfirehub.com/opportunities/259452 |
+| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Diesel Forklift | 2026-11-24 (14d) |  | https://sam.gov/workspace/contract/opp/e314ad5dbe27493d9b5e76f81e4a49d7/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | 31-  BEARING, BALL, ANNULAR | 2026-11-24 (14d) |  | https://sam.gov/workspace/contract/opp/414f66eef94f47858c60924be78b20b6/view |
 | brownbison | bidnet |  | Northern California Area Office (NCAO) Fire Alarm | 2026-11-25 (15d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | Northern California Area Office (NCAO) Fire Alarm (place of performance not stated; CO buying office) | 2026-11-25 (15d) |  | https://sam.gov/workspace/contract/opp/b11d3623d84843b2899857e45ac20464/view |
@@ -258,6 +260,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SHELL AY(PRT SIDE) | 2026-12-14 (34d) |  | https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | SHELL AY(PRT SIDE) (place of performance not stated; PA buying office) | 2026-12-14 (34d) |  | https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view |
 | jones-bearing WATCHED | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | BEARING ROLLER | 2026-12-16 (36d) |  | https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view |
+| brownbison | bidnet | Town of Frederick | Bella Rosa Golf Course Maintenance Facility Project - Owner's Rep Services | 2026-12-18 (38d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Bella-Rosa-Golf-Course-Maintenance-Facility-Project-Owner-s-Rep-Services/0000443172?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (38d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING UNIT PLAIN | 2026-12-30 (50d) |  | https://sam.gov/workspace/contract/opp/e88b2c4bbf9b49c490f20e1bca91bf88/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 31--BEARING UNIT PLAIN (place of performance not stated; PA buying office) | 2026-12-30 (50d) |  | https://sam.gov/workspace/contract/opp/988c00a2123941f29940c5cbcdb093b5/view |
