@@ -2804,6 +2804,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T12:28:00Z",
+ "last_hourly_check": "2026-11-10T13:32:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
