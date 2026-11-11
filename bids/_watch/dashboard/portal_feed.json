@@ -2606,7 +2606,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view"
  },
  {
@@ -2876,7 +2876,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/bc4fcb32914347a685b0b332444ceedb/view"
  },
  {
