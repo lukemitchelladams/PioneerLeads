@@ -655,6 +655,14 @@
    "match": "FA251727SS00|Smart T Power",
    "folder": "bids/psfb-smart-t-power-sources-sought",
    "govtribe_ids": []
+  },
+  {
+   "name": "Aims CC 2627-009 Window Cleaning (EVALUATE; pre-bid 11/18 11:00 Greeley recommended; due 2027-01-06)",
+   "source": "bidnet",
+   "id": "0000443311",
+   "match": "window cleaning",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

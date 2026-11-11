@@ -1593,3 +1593,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-11 22:21Z hourly (worker)
 - HOODZ (Larry, 22:17Z): no technician certifications and no fire-authority registrations; Carlos Ahedo inspector; 4 crews. Walk sign-in proof still not answered. PSD 7.1 AHJ certification statement cannot be signed as drafted. HQ decides before the Thu 12:00 PSD draft: HOODZ registers with the AHJs (PFA/Loveland/Wellington) before first service, a certified hood sub is found, or NO-BID. Logged in sub-outreach.md + pipeline.json. Sources unchanged (HQ 21:36Z scan quiet).
+
+### 2026-11-11 22:46Z hourly (15:35 MT) scan, HQ
+- Fresh BidNet login 22:37Z clean (attempt 1; 21 clean in a row). bidnet 666/85, samgov 100/100, coloradovss 69/3, bonfire 2/1 (Cloudflare), dibbs not scanned. Push ee441e8.
+- NEW, EVALUATE: Aims Community College 2627-009 Window Cleaning Services (BidNet 0000443311, Greeley), due 2027-01-06; pre-bid conference Wed 11/18 11:00 MST at 5101 W. 20th St Greeley, Facilities & Operations Showroom, "Attendance Recommended" (not mandatory). Docs public; watchlisted so the next scan downloads them; pipeline entry added. Needs a window-cleaning sub.
+- HOODZ finally answered (Larry 22:17Z + three photo emails 22:24-22:34Z): walk notes for Traut, Preston, Fossil Ridge saved to bids/poudre-sd-kitchen-hood/private/WALK-NOTES-2026-11-10.md; HOODZ has NO technician certifications or fire-authority registrations; inspector name Carlos; four crews; 24-h contact Carlos. Sign-in company name still unanswered (PSD asked 15:42Z). HQ replied to Larry cc Carlos after EXIT (1a1ccc6c1db1943e). IFB 7.1 risk: the AHJ-certification statement cannot be signed as drafted; question #7 written in vendor-questions.md for BidNet, to be posted by Fri 11/13 14:00 MT (portal post = Luke or Mac, not HQ).
+- Still nothing from PSD, B&K, TRS, Aqua-Chem or Luke. Keepalive restarted (pid 325).
