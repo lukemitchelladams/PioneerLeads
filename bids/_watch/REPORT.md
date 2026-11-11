@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-11T17:41:39+00:00
+# Bid watch report — 2026-11-11T18:36:07+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 662 | BUYER 461, AGGREGATE 202 | 83 | 2026-11-11T17:41:39+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-11T17:41:39+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 100 |  | 100 | 2026-11-11T17:41:39+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-11T17:41:39+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 663 | BUYER 461, AGGREGATE 203 | 84 | 2026-11-11T18:36:07+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-11T18:36:07+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 100 |  | 100 | 2026-11-11T18:36:07+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-11T18:36:07+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -28,6 +28,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Thornton | Sport Court Repairs On-Call | 2026-12-09 (28d) | 2026-11-17 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Castle Rock | 2027 Town Facility Parking Lot Improvements | 2026-12-08 (27d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Town-Facility-Parking-Lot-Improvements/0000442235?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (28d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison | bidnet |  | Baseball Field Fencing Project | 2026-11-19 (8d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -107,7 +113,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (151)
+## All open matching bids, excluding DIBBS parts RFQs (152)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -166,6 +172,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (8d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (8d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (8d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | Baseball Field Fencing Project | 2026-11-19 (8d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view |
 | brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION | 2026-11-19 (8d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF.FOREST SERVIC | Janitorial services- Pagsoa Ranger District | 2026-11-19 (8d) |  | https://sam.gov/workspace/contract/opp/1d1b8d72c87844289d3efb4990073ded/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--GEAR, PINION | 2026-11-19 (8d) |  | https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view |
