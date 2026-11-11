@@ -2677,7 +2677,7 @@
   "bidnet:444226398382": {
    "name": "BidNet aggregated notice 444226398382 Landscape Services (Colorado, buyer not readable)",
    "verdict": "EVALUATE",
-   "why": "Published 2026-11-10, closes 2026-12-16; buyer, site and pre-bid not readable from the aggregated listing. Landscaping = Alex Ditto (Luke handles). Mac to open it logged in. HQ 21:52Z.",
+   "why": "Published 2026-11-10, closes 2026-12-16; buyer, site and pre-bid not readable from the aggregated listing. Landscaping = Alex Ditto (Luke handles). Mac to open it logged in. HQ 21:52Z. | 2026-11-11 14:25Z worker: one web search for a Colorado \"Landscape Services\" closing 2026-12-16 found no matching listing (closest: Colorado Springs R26-099MZ irrigation, due 12/02). bidnetdirect.com is blocked from the worker container; buyer still unknown, stays with the Mac.",
    "at": "2026-11-10T22:26:00Z"
   },
   "5d8aa2693f7c4dd7adf3f6494c77eb5d": {
@@ -2870,6 +2870,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-11T13:26:00Z",
+ "last_hourly_check": "2026-11-11T14:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
