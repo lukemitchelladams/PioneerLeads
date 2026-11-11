@@ -1590,3 +1590,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Fresh BidNet login 21:37Z clean (attempt 1; 20 clean in a row). bidnet 666/84, samgov 100/100, coloradovss 69/3, bonfire 2/1 (Cloudflare), dibbs not scanned. Push 7f31b74. 0 new, 0 changes, 0 docs.
 - Clean Conscience (Natalie Mikishko, 20:56Z) will attend the Lafayette mandatory pre-proposal Thu 11/19 10:00. After EXIT, HQ replied (1a1cc8fa2701e2ea): sign in as Brown Bison Holdings LLC with Clean Conscience as partner, photo of the sign-in sheet before leaving, confirm pricing by 12/07. Luke still attends (walk only a human can stand at; goes on the board). pipeline.json + sub-outreach updated.
 - Still no reply from PSD, Carlos/Larry (HOODZ), B&K, TRS, Aqua-Chem or Luke six hours after the 08:40 MT batch. Keepalive restarted (pid 322).
+
+### 2026-11-11 22:21Z hourly (worker)
+- HOODZ (Larry, 22:17Z): no technician certifications and no fire-authority registrations; Carlos Ahedo inspector; 4 crews. Walk sign-in proof still not answered. PSD 7.1 AHJ certification statement cannot be signed as drafted. HQ decides before the Thu 12:00 PSD draft: HOODZ registers with the AHJs (PFA/Loveland/Wellington) before first service, a certified hood sub is found, or NO-BID. Logged in sub-outreach.md + pipeline.json. Sources unchanged (HQ 21:36Z scan quiet).
