@@ -2715,6 +2715,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000443311",
+  "source": "bidnet",
+  "agency": "AIMS Community College",
+  "title": "Window Cleaning",
+  "sol": "2627-009",
+  "closing": "2027-01-06",
+  "posted": "2026-11-11",
+  "prebid_date": "2026-11-18",
+  "prebid_mandatory": "Optional",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:0000442641",
   "source": "bidnet",
   "agency": "Platte River Power Authority",
