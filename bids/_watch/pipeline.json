@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-11T22:43:15Z",
+ "updated": "2026-11-11T23:43:26Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -829,11 +829,11 @@
    "title": "AHEC-27901-D CAVEA Lighting, MSU Denver",
    "sol": "AHEC-27901-D (BidNet 0000441764)",
    "trade": "Electrical",
-   "due": "2026-11-16T14:00:00-07:00",
+   "due": "2026-11-30T14:00:00-07:00",
    "due_source": "BidNet listing",
    "portal": "BidNet",
    "decision": "NO",
-   "decision_note": "Found 2026-10-27. MANDATORY pre-bid 2026-11-04. Electrical sub needed; check if theatrical lighting (specialty). | BidNet events (2026-10-27): 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 02:30 PM MST, Auraria Campus - Jordan Student Success Building - 890 Auraria Parkway, Suite 420, Denver'. Package not yet downloaded (watchlisted). | NO 2026-10-28 00:22Z after reading AHEC-27901-D: it is a theatrical track lighting upgrade (DMX-controlled fixtures, lighting control station) for 'qualified electrical contractors'. Minimum qualifications: 'in the same business, under the same name for the last two (2) years'; 'at least two (2) projects each in excess of $140,000.00 (hard costs)' of similar scope; one-page summary of 'similar theatrical lighting, lighting controls, or comparable specialty electrical projects'; mandatory pre-bid 2026-11-04 14:30; quotes due 2026-11-16 14:00; bid bond 5% if >= $50,000; P&P bonds 50%; work window 2026-12-14 to 2027-01-15. Brown Bison cannot meet the experience minimums.",
+   "decision_note": "Found 2026-10-27. MANDATORY pre-bid 2026-11-04. Electrical sub needed; check if theatrical lighting (specialty). | BidNet events (2026-10-27): 'Job-Walk Visit, Attendance Mandatory, 11/04/2026 02:30 PM MST, Auraria Campus - Jordan Student Success Building - 890 Auraria Parkway, Suite 420, Denver'. Package not yet downloaded (watchlisted). | NO 2026-10-28 00:22Z after reading AHEC-27901-D: it is a theatrical track lighting upgrade (DMX-controlled fixtures, lighting control station) for 'qualified electrical contractors'. Minimum qualifications: 'in the same business, under the same name for the last two (2) years'; 'at least two (2) projects each in excess of $140,000.00 (hard costs)' of similar scope; one-page summary of 'similar theatrical lighting, lighting controls, or comparable specialty electrical projects'; mandatory pre-bid 2026-11-04 14:30; quotes due 2026-11-16 14:00; bid bond 5% if >= $50,000; P&P bonds 50%; work window 2026-12-14 to 2027-01-15. Brown Bison cannot meet the experience minimums. | 11/11 Addendum 1 (Q&A, pre-quote sign-in sheets, test-fit clause, ceiling photos, downlight data) moved closing 11/16 -> 11/30 14:00; mandatory job walk 11/04 was missed, so NO stands.",
    "prebid": "2026-11-04T14:30:00-07:00",
    "prebid_mandatory": true,
    "performer": "Electrical sub TBD",
@@ -1379,9 +1379,9 @@
    "prebid": "2026-11-13T13:00:00-07:00",
    "prebid_mandatory": false,
    "contact": "Stephen Holly, stephen.holly@usda.gov",
-   "sub_pricing": "None (B&K Cleaning DECLINED 11/11, msg 1a1cceae4d9b994f: \"At this time we are not interested\"; CRC Janitorial and Evergreen Cleaning silent since 11/05; worker sweep 11/11 23:3xZ found 7 email-reachable replacements (A: Mountain West Cleaning South Fork/Pagosa, 4 Ever Cleaning Del Norte, PMI Espanola, Clean Rite Farmington; B: Pagosa Cleaning Co, Tidy Team, RE Cleaning), none live-verified, none asked yet)",
+   "sub_pricing": "None in hand. B&K DECLINED 11/11 (1a1cceae4d9b994f). 11/11 23:43Z HQ: re-ask to CRC Janitorial + Evergreen on the 11/05 thread (1a1ccfdadfba4085) and a fresh pricing request with the 5-file package to six worker-sweep candidates, Mountain West Cleaning (South Fork), 4 Ever Cleaning (Del Norte), PMI (Espanola), Clean Rite Janitorial (Farmington), Pagosa Cleaning Co, Tidy Team (Alamosa) (1a1ccfdb5b42ad67); addresses from search snippets, not live-verified. Pricing asked by Mon 11/16 12:00 MT.",
    "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-   "next": "B&K DECLINED 11/11 (no sub now). HQ: send the pricing request to the new email-reachable candidates in sub-outreach.md (worker sweep 11/11) with pricing by Mon 11/16 12:00, or NO-BID. Tour Fri 11/13 13:00 at 180 Pagosa St (Caley) is optional: attendee answer to Caley by Thu 11/12 12:00; default if no sub can attend: tell Caley nobody attends. US 160 Piedra River Bridge closed (Durango subs ~3.5 h detour). RFQ due Thu 11/19 10:00.",
+   "next": "NO-BID default Mon 11/16 12:00 MT unless a sub prices (Luke overrules by Mon 14:00). Tour Fri 11/13 13:00 (Caley) was offered to the new candidates; Thu 11/12 12:00 MT HQ tells Caley who attends or cancels (pagosa-caley-cancel draft ready). RFQ due Thu 11/19 10:00.",
    "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
    "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke; B&K replied 11/06 (interested, pricing to follow)"
   },
@@ -1623,7 +1623,8 @@
    "subs": "-",
    "sub_pricing": "-",
    "folder": null,
-   "contact": "-"
+   "contact": "-",
+   "next": "3 public docs cached 11/11 23:41Z (bids/_watch/downloads/bidnet/0000443311/): solicitation PDF, Greeley campus building pictures, map to Facilities & Operations. Questions deadline 2026-12-01 (BidNet). Pre-bid conference Wed 11/18 11:00 Greeley recommended, not mandatory. HQ to read the PDF (scope, frequency, insurance, due time) and decide GO/NO by Fri 11/13; window-cleaning sub needed (north metro/Greeley)."
   }
  ],
  "events": [

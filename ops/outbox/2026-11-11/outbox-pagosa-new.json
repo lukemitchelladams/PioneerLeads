@@ -1,0 +1,22 @@
+[
+ {
+  "key": "pagosa-new-candidates",
+  "subject": "USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q0008): sub pricing",
+  "bcc": [
+   "contact@callmw.com",
+   "info@4evercleaners.com",
+   "order@pmigogreen.com",
+   "info@cleanritenm.com",
+   "pagosacleaningco@gmail.com",
+   "tidyteamcollc@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-11/pagosa-new-candidates.txt",
+  "files": [
+   "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04 1240LP27Q0008.pdf",
+   "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04a Attachment 1 Janitorial PWS.pdf",
+   "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04b Attachment 2  Schedule of Items.xlsx",
+   "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04d Attachment 4 Wage Determination 2015-5435 r32.pdf",
+   "bids/usfs-pagosa-janitorial-1240LP27Q0008/docs/C04c Attachment 3  Facility Layout.pdf"
+  ]
+ }
+]

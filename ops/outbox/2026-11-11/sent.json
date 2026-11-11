@@ -79,5 +79,27 @@
     "bcc_count": 0,
     "attachments": [],
     "asks": 0
+  },
+  "pagosa-crc-evergreen-reask": {
+    "id": "1a1ccfdadfba4085",
+    "threadId": "1a1ade55a73ca213",
+    "to": [],
+    "bcc_count": 2,
+    "attachments": [],
+    "asks": 0
+  },
+  "pagosa-new-candidates": {
+    "id": "1a1ccfdb5b42ad67",
+    "threadId": "1a1ccfdb5b42ad67",
+    "to": [],
+    "bcc_count": 6,
+    "attachments": [
+      "C04 1240LP27Q0008.pdf",
+      "C04a Attachment 1 Janitorial PWS.pdf",
+      "C04b Attachment 2  Schedule of Items.xlsx",
+      "C04d Attachment 4 Wage Determination 2015-5435 r32.pdf",
+      "C04c Attachment 3  Facility Layout.pdf"
+    ],
+    "asks": 0
   }
 }
