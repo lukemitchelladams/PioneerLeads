@@ -1,0 +1,13 @@
+[
+ {"key": "psd-signin-ask", "subject": "Re: IFB 27-701-002 Kitchen Hood Inspection and Cleaning: site visit RSVP, Brown Bison Holdings LLC",
+  "to": ["strategicsourcing@psdschools.org"], "thread": "1a1ac805e5b5b3bc", "body_file": "ops/outbox/2026-11-11/psd-signin-ask.txt", "files": []},
+ {"key": "hoodz-nudge", "subject": "Re: Kitchen hood cleaning subcontract: Poudre School District site visit Tuesday 1:30 PM",
+  "to": ["carlos.ahedo@hoodz.us.com"], "cc": ["larry.moss@hoodz.us.com"], "thread": "1a1a878f8cda76a3", "body_file": "ops/outbox/2026-11-11/hoodz-nudge.txt", "files": []},
+ {"key": "bvcc-reask", "subject": "Re: Boiler chemical treatment at BVCC (Colorado DOC DQ 2027000132): pricing request",
+  "bcc": ["info@trsinc.us", "aquacheminc@aquacheminc.com", "gtj@rxn-inc.com"], "thread": "1a1b2a5e97fa8bc7", "body_file": "ops/outbox/2026-11-11/bvcc-reask.txt", "files": []},
+ {"key": "bk-chase", "subject": "Re: USDA Forest Service Pagosa Ranger District janitorial (RFQ 1240LP27Q0008): sub pricing",
+  "to": ["bandkcleaningcolorado@gmail.com"], "thread": "1a1ade55a73ca213", "body_file": "ops/outbox/2026-11-11/bk-chase.txt", "files": []},
+ {"key": "luke-psfb-copy", "subject": "APPROVE: Peterson SFB Smart T Power sources sought response (sends Mon 11/16 noon unless you say stop)",
+  "to": ["lukemitchelladams@gmail.com"], "body_file": "ops/outbox/2026-11-11/luke-psfb-copy.txt",
+  "files": ["bids/psfb-smart-t-power-sources-sought/private/Brown-Bison-Sources-Sought-Response-FA251727SS00.pdf", "bids/psfb-smart-t-power-sources-sought/docs/Sources-Sought-Smart-T-Power.pdf", "bids/psfb-smart-t-power-sources-sought/docs/Attachment-1-PWS-Smart-T-Power-Project.pdf"]}
+]

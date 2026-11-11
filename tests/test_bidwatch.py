@@ -310,6 +310,77 @@ check("vss pre-bid from the instructions text when no event", _vi and _vi["manda
       and _vi["date"] == "2026-11-12" and _vi["source"] == "coloradovss instructions", _vi)
 check("run.py knows coloradovss (host, no credentials)", "coloradovss" in _run_early.KNOWN_SOURCES
       and "coloradovss" in _run_early.HOSTS and _run_early.CRED_NAMES["coloradovss"] == [])
+
+
+class _VssFakePage:
+    """Home page that renders the list link only on the Nth goto (0 = never); status fixed."""
+
+    def __init__(self, link_on_attempt, status=200, body="<html>Colorado VSS home</html>"):
+        self.link_on_attempt, self.status, self.body = link_on_attempt, status, body
+        self.gotos, self.waits = 0, []
+
+    def goto(self, url, wait_until=None):
+        self.gotos += 1
+        return type("R", (), {"status": self.status})()
+
+    def locator(self, sel):
+        page = self
+
+        class _Link:
+            def wait_for(self_inner, state=None, timeout=None):
+                if page.gotos != page.link_on_attempt:
+                    raise TimeoutError("no link yet")
+        link = _Link()
+        link.first = link
+        return link
+
+    def wait_for_timeout(self, ms):
+        self.waits.append(ms)
+
+    def content(self):
+        return self.body
+
+    def title(self):
+        return "VSS"
+
+
+class _VssFakeSession:
+    def __init__(self, page):
+        self.page, self.dumps = page, []
+
+    def debug_dump(self, tag):
+        self.dumps.append(tag)
+
+
+_p2 = _VssFakePage(link_on_attempt=2)
+_s2 = _VssFakeSession(_p2)
+_lk, _st, _at = coloradovss._home_link(_s2)
+check("vss home retry: link missing once, found on the reload (attempt 2, one wait, no dump)",
+      _at == 2 and _p2.gotos == 2 and _p2.waits == [coloradovss.HOME_RETRY_WAIT_MS] and _s2.dumps == [] and _st == 200,
+      (_at, _p2.gotos, _p2.waits, _s2.dumps))
+_p1 = _VssFakePage(link_on_attempt=1)
+_s1 = _VssFakeSession(_p1)
+check("vss home retry: link on the first try needs no reload", coloradovss._home_link(_s1)[2] == 1 and _p1.gotos == 1
+      and _p1.waits == [], (_p1.gotos, _p1.waits))
+_p0 = _VssFakePage(link_on_attempt=0)
+_s0 = _VssFakeSession(_p0)
+try:
+    coloradovss._home_link(_s0)
+    _err0 = None
+except RuntimeError as e:
+    _err0 = str(e)
+check("vss home retry: missing twice -> one RuntimeError naming 2 attempts, one debug dump",
+      _err0 and "after 2 attempts" in _err0 and _p0.gotos == 2 and _s0.dumps == ["coloradovss-no-list-link"],
+      (_err0, _p0.gotos, _s0.dumps))
+_pb = _VssFakePage(link_on_attempt=0, status=403)
+_sb = _VssFakeSession(_pb)
+try:
+    coloradovss._home_link(_sb)
+    _errb = None
+except coloradovss.Challenged as e:
+    _errb = str(e)
+check("vss home retry: a 403 refusal raises Challenged at once, no reload", _errb and _pb.gotos == 1 and _pb.waits == [],
+      (_errb, _pb.gotos, _pb.waits))
 sys.path.insert(0, str(ROOT / "scripts"))
 import dibbs_watch  # noqa: E402
 dh = (FX / "dibbs_rfq_3110.html").read_text()

@@ -311,20 +311,39 @@ def _show_100(session) -> dict | None:
     return _click_and_wait(session, b.first, LIST_DS, 45000)
 
 
+HOME_RETRY_WAIT_MS = 8000   # one reload after this pause when the home page renders without the list link
+
+
+def _home_link(session, attempts: int = 2):
+    """Open the home page and wait for the "View Published Solicitations" link. The VSS home page sometimes
+    renders without it (seen 2026-11-10 19:41Z and 22:35Z, HTTP 200, fine on the next run), so a miss gets one
+    reload before it counts as an error. A block (401/403/429 or a challenge page) is raised at once, never retried."""
+    page = session.page
+    status = None
+    for attempt in range(1, attempts + 1):
+        resp = page.goto(BASE, wait_until="domcontentloaded")
+        status = resp.status if resp else None
+        link = page.locator(SEL_OPEN_LIST)
+        try:
+            link.first.wait_for(state="visible", timeout=60000)
+            return link, status, attempt
+        except Exception:  # noqa: BLE001
+            _check_blocked(page, status)          # raises Challenged on a refusal: no retry past that
+            if attempt < attempts:
+                page.wait_for_timeout(HOME_RETRY_WAIT_MS)
+                continue
+            session.debug_dump("coloradovss-no-list-link")
+            raise RuntimeError(f"'View Published Solicitations' not found on the home page (HTTP {status}) "
+                               f"after {attempts} attempts")
+    raise RuntimeError("unreachable")  # pragma: no cover
+
+
 def open_list(session) -> dict:
     """Home page -> View Published Solicitations -> 100 rows a page. Returns the first page's list payload."""
     page = session.page
     g = _grab(session)
     n = len(g.payloads)
-    resp = page.goto(BASE, wait_until="domcontentloaded")
-    status = resp.status if resp else None
-    link = page.locator(SEL_OPEN_LIST)
-    try:
-        link.first.wait_for(state="visible", timeout=60000)
-    except Exception:  # noqa: BLE001
-        _check_blocked(page, status)
-        session.debug_dump("coloradovss-no-list-link")
-        raise RuntimeError(f"'View Published Solicitations' not found on the home page (HTTP {status})")
+    link, status, _attempt = _home_link(session)
     if status in (401, 403, 429):  # the page rendered but the server said no: never push past that
         raise Challenged(f"ColoradoVSS home page answered HTTP {status}; not bypassed")
     first = _click_and_wait(session, link.first, LIST_DS)

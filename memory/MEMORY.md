@@ -1546,3 +1546,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-11 13:43Z hourly (06:35 MT) scan, HQ
 - Fresh BidNet login 13:37Z clean (attempt 1; 14 clean in a row). bidnet 657/83, samgov 100/100, coloradovss 69/3, bonfire 2/1 (Cloudflare), dibbs not scanned. Push 0e8d5ca. 0 new, 0 changes, 0 docs. Inbox empty; no reply from Carlos (HOODZ). Keepalive restarted (pid 322). No email sent.
+
+### 2026-11-11 13:52Z CEO plan (06:44 MT), HQ
+- ops/plan_ceo/2026-11-11.md: (1) PSD hoods walk proof (PSD sign-in ask + HOODZ nudge at 09:35 MT) and the draft copy to Luke Thu; (2) BVCC sub re-ask (TRS, Aqua-Chem, Reaction; Loren/RK Water sites unreachable from cloud, skipped) + Luke's Exhibit G; NO-BID default Fri 17:00 if no sub; (3) Pagosa B&K yes/no today, attendee to Caley Thu (default: nobody attends, tour optional), PSFB response copy to Luke today, sends Mon 11/16 12:00 unless stopped.
+- Shipped: ColoradoVSS home-page retry (`_home_link`, one reload after 8 s before the RuntimeError; Challenged never retried) with 4 tests; 247 pass. PSFB response PDF built (pandoc + soffice) into bids/psfb-smart-t-power-sources-sought/private/ (gitignored; copy in the scratchpad).
+- Five emails drafted, four gate-PASS, staged in ops/outbox/2026-11-11/outbox-wed-0935.json for the 09:35 MT turn after the scan's EXIT: psd-signin-ask, hoodz-nudge, bvcc-reask (bcc 3), bk-chase, luke-psfb-copy (3 PDFs attached). No email sent in this turn.
+- Luke silent since 11/09; Brighton, Exhibit G, overrule windows unanswered. Board: one LUKE MUST DO (Exhibit G + ID), one DECIDE (Pueblo URA for Alex).
+- New standing rule (from the Carlos miss): subs who walk a site for us email a photo of the signed-in sheet before leaving; goes into CLAUDE.md once Luke has seen it on the board.
