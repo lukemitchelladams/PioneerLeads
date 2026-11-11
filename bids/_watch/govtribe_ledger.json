@@ -2629,7 +2629,7 @@
   "e314ad5dbe27493d9b5e76f81e4a49d7": {
    "name": "Army MICC Fort Drum W911S227U0155 Diesel Forklift (PSC 3920, small-business set-aside; closes 2026-11-24)",
    "verdict": "NO",
-   "why": "Purchase of a diesel forklift (material-handling vehicle, PSC 3920) at Fort Drum NY; not a bearing/pulley/bucket-elevator product Jones Bearing makes, and not a Brown Bison service. Keyword match on PSC 3920 only.",
+   "why": "Purchase of a diesel forklift (material-handling vehicle, PSC 3920) at Fort Drum NY; not a bearing/pulley/bucket-elevator product Jones Bearing makes, and not a Brown Bison service. Keyword match on PSC 3920 only. | 2026-11-11 05:36Z: reappeared as NEW in HQ scan (re-post, no PoP stated, NY buying office); still NO.",
    "at": "2026-11-10T17:30:00Z"
   },
   "bidnet:0000443172": {
@@ -2870,6 +2870,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-11T05:24:00Z",
+ "last_hourly_check": "2026-11-11T06:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
