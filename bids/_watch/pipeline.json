@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-11T15:42:40Z",
+ "updated": "2026-11-11T21:42:36Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1541,11 +1541,12 @@
    "prebid_mandatory": true,
    "performer": "Brown Bison + Boulder County / north-metro janitorial sub (TBD)",
    "subs": "Clean Conscience, KG Facility Solutions, Kleen-Tech, Teebs, CleanPro asked 11/07; followed up 11/09 08:30 MT (answer by 11/13); pre-proposal Thu 11/19 10:00; pricing by 12/07 | 11/09 10:31 MT: Kleen-Tech (Tracy White) asked for the package direct; sent (1a1c16266bd2aaff)",
-   "sub_pricing": "Pending (Kleen-Tech is the INCUMBENT and bids direct as prime, 11/10; will still send pricing by 12/07. Clean Conscience 11/11: Natalie Mikishko will attend the 11/19 walk (pricing not yet confirmed); KG Facility Solutions, Teebs, CleanPro asked 11/07, followed up 11/09, silent)",
+   "sub_pricing": "Pending (Kleen-Tech is the INCUMBENT and bids direct as prime, 11/10; will still send pricing by 12/07. Clean Conscience 11/11: Natalie Mikishko will attend the 11/19 walk; HQ asked her 21:43Z to sign in for Brown Bison and confirm pricing; KG Facility Solutions, Teebs, CleanPro asked 11/07, followed up 11/09, silent)",
    "folder": "bids/lafayette-citywide-custodial",
    "contact": "Steve Teeters, Project Manager, Steve.Teeters@lafayetteco.gov; Elizabeth Messner, Procurement Manager, Elizabeth.Messner@lafayetteco.gov (RFP cover sheet); official answers only as BidNet postings",
    "due_source": "RFP title page and cover sheet: \"Proposal Due Date: December 18, 2026 | 5:00PM MT\"; \"Late proposals will not be accepted.\"",
-   "doc_gaps": "Porter Services Page (Golf and Library tabs say 'See Porter Services Page'; not in Appendix C); Exhibit C O&Ms / consumable manufacturer requirements (Appendix B 1-05); Schedule A rate schedule is blank in the sample contract (filled at award); no addenda yet"
+   "doc_gaps": "Porter Services Page (Golf and Library tabs say 'See Porter Services Page'; not in Appendix C); Exhibit C O&Ms / consumable manufacturer requirements (Appendix B 1-05); Schedule A rate schedule is blank in the sample contract (filled at award); no addenda yet",
+   "next": "MANDATORY pre-proposal Thu 11/19 10:00 Lafayette City Hall (1290 S. Public Rd): LUKE attends for Brown Bison (30 min from Broomfield); Clean Conscience (Natalie Mikishko) also attends and was asked 11/11 21:43Z (1a1cc8fa2701e2ea) to sign in as Brown Bison Holdings LLC with Clean Conscience as partner, photograph the sign-in sheet before leaving, and confirm pricing (monthly per building + Appendix C rates by Mon 12/07). Kleen-Tech (incumbent, bids direct) also sends pricing by 12/07. KG, Teebs, CleanPro silent; second chase Thu 11/12. Questions on BidNet by Mon 11/23 17:00; due Fri 12/18 17:00."
   },
   {
    "id": "svvsd-boiler-replacement-2027-011",
