@@ -2679,6 +2679,12 @@
    "verdict": "EVALUATE",
    "why": "Published 2026-11-10, closes 2026-12-16; buyer, site and pre-bid not readable from the aggregated listing. Landscaping = Alex Ditto (Luke handles). Mac to open it logged in. HQ 21:52Z.",
    "at": "2026-11-10T22:26:00Z"
+  },
+  "5d8aa2693f7c4dd7adf3f6494c77eb5d": {
+   "name": "NPS Channel Islands National Park Janitorial Services (SAM)",
+   "verdict": "NO",
+   "why": "California, out of our Colorado service area; closes 2026-11-20. HQ ruled NO 23:43Z.",
+   "at": "2026-11-11T00:24:00Z"
   }
  },
  "watched": {
@@ -2864,6 +2870,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-10T23:24:00Z",
+ "last_hourly_check": "2026-11-11T00:24:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
