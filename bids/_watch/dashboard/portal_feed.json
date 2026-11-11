@@ -806,7 +806,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/a73cf5d6b8ae4068b6c5952060e9f3ab/view"
  },
  {
@@ -926,7 +926,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/23506cd1254b4ca7be61626b0d50d8be/view"
  },
  {
@@ -1211,7 +1211,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view"
  },
  {
@@ -1560,6 +1560,21 @@
   "url": "https://sam.gov/workspace/contract/opp/7e9779421f21488c9f6a3384aba26dde/view"
  },
  {
+  "key": "samgov:e314ad5dbe27493d9b5e76f81e4a49d7",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QM MICC-FT DRUM",
+  "title": "Diesel Forklift",
+  "sol": "W911S227U0155",
+  "closing": "2026-11-24",
+  "posted": "2026-11-10",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/e314ad5dbe27493d9b5e76f81e4a49d7/view"
+ },
+ {
   "key": "bidnet:0000441668",
   "source": "bidnet",
   "agency": "Arapahoe County",
@@ -1721,7 +1736,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Hyland-Hills-2027-Concrete-Removal-and-Replacement-On-Call/0000443129?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1736,7 +1751,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Hyland-Hills-2027-Golf-Course-Renovation-Work-On-Call-Contract/0000443130?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2297,7 +2312,7 @@
  {
   "key": "samgov:e87be19f02de482e99c7ad4ca3402fa8",
   "source": "samgov",
-  "agency": "GENERAL SERVICES ADMINISTRATION / PUBLIC BUILDINGS SERVICE / PBS PROJECT DELIVERY CAPITAL CONSTRUCTION - BRANCH WEST",
+  "agency": "GENERAL SERVICES ADMINISTRATION / PUBLIC BUILDINGS SERVICE / PBS CAPITAL PROJECTS - ZONE 7 BRANCH",
   "title": "Department Of Energy - National Nuclear Security Administration Joint Cyber Facility Construction Solicitation",
   "sol": "47PB5427R0003",
   "closing": "2026-12-07",
@@ -2726,7 +2741,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e13bc6a2dd844b36a72e20c137b0ffef/view"
  },
  {
