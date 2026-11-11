@@ -355,3 +355,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-11 08:24Z (hourly, read-only): nothing unseen (no inbound mail in 2 h). Nothing from Carlos/HOODZ; no CRM brief; nothing from Luke.
 - 2026-11-11 09:24Z (hourly, read-only): nothing unseen (no inbound mail in 2 h). Nothing from Carlos/HOODZ; no CRM brief; nothing from Luke.
 - 2026-11-11 10:24Z (hourly, read-only): nothing unseen (no inbound mail in 2 h). Nothing from Carlos/HOODZ; no CRM brief; nothing from Luke.
+- 2026-11-11 11:28Z (hourly, read-only): 1 unseen, no action: Google DMARC aggregate report for brownbisonco.com (1a1ca42f1731d84f). Nothing from Carlos/HOODZ; no CRM brief; nothing from Luke.
