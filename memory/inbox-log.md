@@ -370,3 +370,9 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-11 22:21Z hourly (worker, read-only)
 - 1a1ccafd0815e96a 22:17Z HOODZ (Larry Moss) re PSD 27-701-002 hoods: "We do not have technician certifications or fire -authority registrations"; Carlos Ahedo is the inspector on reports; four crews over spring break/summer. Gave Carlos's contact number (not recorded). No walk photos/notes, no sign-in company name. RISK: IFB 7.1 AHJ statement (FORMS-CHECKLIST item 6) on HOLD; 3.1 wants AHJ proof before first service. For HQ.
 - 1a1b38552d6f701a = HQ's own sent reply to Clean Conscience (skip).
+
+## 2026-11-11 23:21Z hourly (worker, read-only)
+- 1a1ccd099301d9af 22:53Z HOODZ (Larry, cc Carlos) re PSD walk: "Carlos signed in under Brown Bison Holdings". Walk-proof gap closed on HOODZ's word; PSD sheet confirmation still open.
+- 1a1cceae4d9b994f B&K Cleaning (Pagosa RFQ 1240LP27Q0008): "At this time we are not interested." DECLINED. Gmail date header 11/12 01:36Z (sender clock ahead; arrived after 22:53Z). Pagosa has no sub now.
+- 1a1ccb5e9c113fdc / 1a1ccbe7bc41617a / 1a1ccbf327a56c03 22:24-22:34Z HOODZ photo forwards (Traut, Preston, Fossil Ridge); HQ already saved the walk notes (commit 7033c01). Marked seen.
+- Luke: nothing from lukemitchelladams@gmail.com in 1d. CRM agent: no "evening update"/"brief" mail in 1d.

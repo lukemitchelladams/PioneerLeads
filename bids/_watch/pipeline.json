@@ -725,9 +725,9 @@
    "subs": "3 drafted 10/28",
    "folder": "bids/poudre-sd-kitchen-hood",
    "contact": "strategicsourcing@psdschools.org",
-   "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13:30 walk) | 11/11 22:17Z HOODZ (Larry): \"We do not have technician certifications or fire-authority registrations\"; Carlos is the inspector; 4 crews. Walk sign-in proof still not sent. AHJ statement (IFB 7.1) on hold = RISK. | 11/11: HOODZ has no certifications/AHJ registrations (Larry); IFB 7.1 statement cannot be signed as drafted until the District says what each AHJ requires.",
+   "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13:30 walk) | 11/11 22:17Z HOODZ (Larry): \"We do not have technician certifications or fire-authority registrations\"; Carlos is the inspector; 4 crews. Walk sign-in: \"Carlos signed in under Brown Bison Holdings\" (HOODZ 22:53Z). AHJ statement (IFB 7.1) on hold = RISK. | 11/11: HOODZ has no certifications/AHJ registrations (Larry); IFB 7.1 statement cannot be signed as drafted until the District says what each AHJ requires.",
    "notes": "Questions deadline 2026-11-13 (BidNet Q&A tab, 14:39Z scan).",
-   "next": "Walk Tue 11/10 covered by Carlos Ahedo (HOODZ): photos + notes for all three schools arrived 11/11 22:24-22:34Z (private/WALK-NOTES-2026-11-10.md). Larry Moss 22:17Z: NO technician certifications or fire-authority registrations; inspector name Carlos Ahedo; four crews spring break/summer; 24-h contact Carlos. Sign-in company name still unconfirmed (PSD asked 15:42Z; Larry asked again 22:44Z, 1a1ccc6c1db1943e). AHJ-certification question drafted for BidNet (vendor-questions.md #7), must be POSTED by Fri 11/13 14:00 MT (Luke or Mac; HQ cannot post). Draft copy to Luke Thu 11/12 12:00 MT with the 7.1 statement on HOLD until the AHJ answer. Due Fri 11/20 14:00."
+   "next": "Walk Tue 11/10 covered by Carlos Ahedo (HOODZ): photos + notes for all three schools arrived 11/11 22:24-22:34Z (private/WALK-NOTES-2026-11-10.md). Larry Moss 22:17Z: NO technician certifications or fire-authority registrations; inspector name Carlos Ahedo; four crews spring break/summer; 24-h contact Carlos. Sign-in name ANSWERED by HOODZ 22:53Z (Larry, 1a1ccd099301d9af): \"Carlos signed in under Brown Bison Holdings\" (PSD strategic sourcing confirmation of the sheet still open, asked 15:42Z). AHJ-certification question drafted for BidNet (vendor-questions.md #7), must be POSTED by Fri 11/13 14:00 MT (Luke or Mac; HQ cannot post). Draft copy to Luke Thu 11/12 12:00 MT with the 7.1 statement on HOLD until the AHJ answer. Due Fri 11/20 14:00."
   },
   {
    "id": "boulder-bid-321-26",
@@ -1379,9 +1379,9 @@
    "prebid": "2026-11-13T13:00:00-07:00",
    "prebid_mandatory": false,
    "contact": "Stephen Holly, stephen.holly@usda.gov",
-   "sub_pricing": "Pending (B&K Cleaning, Durango: base-year price by Mon 11/16; tour requested for 11/09 or 11/13)",
+   "sub_pricing": "None (B&K Cleaning DECLINED 11/11, msg 1a1cceae4d9b994f: \"At this time we are not interested\"; CRC Janitorial and Evergreen Cleaning silent since 11/05; worker sweep for Pagosa-local / east-of-bridge cleaners with public emails 11/11 23:3xZ, see sub-outreach.md)",
    "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-   "next": "Tour Fri 11/13 13:00 at 180 Pagosa St (Caley). US 160 Piedra River Bridge closed. 11/11 15:42Z chase to B&K (1a1cb460b1a2d356): can Brandon make it, answer today. Attendee answer to Caley by Thu 11/12 12:00; default if B&K cannot: nobody attends (optional tour), B&K prices from the solicitation. B&K base-year price due Mon 11/16; RFQ due Thu 11/19 10:00.",
+   "next": "B&K DECLINED 11/11 (no sub now). HQ: send the pricing request to the new email-reachable candidates in sub-outreach.md (worker sweep 11/11) with pricing by Mon 11/16 12:00, or NO-BID. Tour Fri 11/13 13:00 at 180 Pagosa St (Caley) is optional: attendee answer to Caley by Thu 11/12 12:00; default if no sub can attend: tell Caley nobody attends. US 160 Piedra River Bridge closed (Durango subs ~3.5 h detour). RFQ due Thu 11/19 10:00.",
    "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
    "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke; B&K replied 11/06 (interested, pricing to follow)"
   },

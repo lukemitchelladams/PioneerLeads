@@ -2691,6 +2691,12 @@
    "verdict": "NO",
    "why": "Fencing/site construction, closes 2026-11-19; not our trades (same call as DOE fencing 11/10). HQ ruled NO 18:43Z.",
    "at": "2026-11-11T19:25:00Z"
+  },
+  "bidnet:0000443311": {
+   "name": "AIMS Community College 2627-009 Window Cleaning (Greeley)",
+   "verdict": "EVALUATE",
+   "why": "HQ 11/11 22:46Z: window cleaning, due 2027-01-06; pre-bid Wed 11/18 11:00 MST \"Attendance Recommended\" (not mandatory); watchlisted for doc download; needs a window-cleaning sub.",
+   "at": "2026-11-11T23:30:00Z"
   }
  },
  "watched": {
@@ -2876,6 +2882,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-11T22:28:00Z",
+ "last_hourly_check": "2026-11-11T23:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
