@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-10T23:35:55+00:00",
+  "checked_at": "2026-11-11T00:36:22+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 645,
+      "count": 644,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-10T23:35:55+00:00",
+      "last_success": "2026-11-11T00:36:22+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 83,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 192,
-        "statewide BUYER": 454
+        "statewide AGGREGATE": 190,
+        "statewide BUYER": 455
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-10T23:35:55+00:00",
+      "last_success": "2026-11-11T00:36:22+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-10T23:35:55+00:00",
+      "last_success": "2026-11-11T00:36:22+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -75,17 +75,17 @@
       }
     },
     "samgov": {
-      "bulk_added": 35,
-      "bulk_note": "bulk file cached 2026-11-10T05:41:39+00:00; 100 matching (parsed earlier)",
-      "count": 106,
+      "bulk_added": 33,
+      "bulk_note": "bulk file cached 2026-11-10T05:41:39+00:00; 93 matching of 14096 open notices",
+      "count": 99,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-10T23:35:55+00:00",
+      "last_success": "2026-11-11T00:36:22+00:00",
       "logged_in": true,
-      "login_note": "API key; +35 from the nightly bulk file",
-      "matches": 106,
+      "login_note": "API key; +33 from the nightly bulk file",
+      "matches": 99,
       "reach_note": "HTTP 404",
       "reachable": true
     }
