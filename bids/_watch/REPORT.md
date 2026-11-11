@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-11T22:36:26+00:00
+# Bid watch report — 2026-11-11T23:36:14+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** 2 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 666 | BUYER 460, AGGREGATE 207 | 85 | 2026-11-11T22:36:26+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-11T22:36:26+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 100 |  | 100 | 2026-11-11T22:36:26+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-11T22:36:26+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 666 | BUYER 460, AGGREGATE 207 | 85 | 2026-11-11T23:36:14+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-11T23:36:14+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 100 |  | 100 | 2026-11-11T23:36:14+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-11T23:36:14+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,14 +27,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | St. Vrain Valley School District RE-1J | Boiler Replacement Projects - 2 Locations | 2026-12-08 (27d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Thornton | Sport Court Repairs On-Call | 2026-12-09 (28d) | 2026-11-17 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sport-Court-Repairs-On-Call/0000443075?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Castle Rock | 2027 Town Facility Parking Lot Improvements | 2026-12-08 (27d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2027-Town-Facility-Parking-Lot-Improvements/0000442235?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (56d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (56d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (28d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
+## Changes on matching / watched bids (addenda, dates)
 
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (56d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
+- **Window Cleaning** (bidnet): questions deadline 2026-12-01 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1
+- **AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver** (bidnet): closing date 2026-11-16 -> 2026-11-30; NEW DOCUMENTS (addendum?): AHEC-27901-D_CAVEA Lighting_Addendum 1_Questions and Answers_FINAL.pdf, AHEC-27901-D_CAVEA Lighting_FINAL_ADDENDUM 1_11-11-26.docx, AHEC-27901-D_CAVEA Lighting_Pre-Quote Sign-In Sheets.pdf, Above Ceiling 01.jpg, Above Ceiling 02.jpg, Above Ceiling 03.jpg, Access Panel Closet Location (1).jpg, Access — https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -145,7 +144,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | WINCH, DRUM | 2026-11-13 (2d) |  | https://sam.gov/workspace/contract/opp/d150dad1528141788616e2b0d93d00c0/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--PULLEY,GROOVE (place of performance not stated; VA buying office) | 2026-11-13 (2d) |  | https://sam.gov/workspace/contract/opp/9458b8f19bc2471c83540f5d2a1da352/view |
 | brownbison WATCHED | bidnet |  | Snowmelt Boiler Plant | 2026-11-15 (4d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view |
-| brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-16 (5d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Bus Shelter Maintenance Services (15% SBE Goal) | 2026-11-16 (5d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view |
 | brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-16 (5d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--PULLEY,GROOVE | 2026-11-16 (5d) |  | https://sam.gov/workspace/contract/opp/2b0011c68733402aace4b0a7d9dd8487/view |
@@ -212,6 +210,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Pueblo Urban Renewal Authority | MSA Landscape Enhancement & Maintenance | 2026-11-30 (19d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/MSA-Landscape-Enhancement-Maintenance/0000442783?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | Custodial Services - 822 7th Street Building | 2026-11-30 (19d) | 2026-11-13 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Custodial-Services-822-7th-Street-Building/0000442415?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Weld County | HVAC Motor & Fan Belts | 2026-11-30 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Motor-Fan-Belts/0000442187?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-30 (19d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Arapahoe County Fairgrounds: South Lawns Irrigation Renovation | 2026-11-30 (19d) | 2026-11-10 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1 |
 | brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (19d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--SACN Replace Fire Alarms and Intrusions Systems | 2026-11-30 (19d) |  | https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view |
@@ -265,12 +264,30 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING UNIT PLAIN | 2026-12-30 (49d) |  | https://sam.gov/workspace/contract/opp/e88b2c4bbf9b49c490f20e1bca91bf88/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 31--BEARING UNIT PLAIN (place of performance not stated; PA buying office) | 2026-12-30 (49d) |  | https://sam.gov/workspace/contract/opp/988c00a2123941f29940c5cbcdb093b5/view |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (55d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (56d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (56d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Platte River Power Authority | Unit 1 generator rotor-in inspection | 2027-01-28 (78d) | 2026-12-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Unit-1-generator-rotor-in-inspection/0000442641?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Staged System Upgrade of the Current HVAC System | 2027-02-26 (107d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-24 (255d) |  | https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (260d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (387d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
+
+## Documents downloaded
+
+- bidnet:0000443311: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443311/Window Cleaning Services Final.pdf
+- bidnet:0000443311: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443311/Greeley Campus Building Pictures.pdf
+- bidnet:0000443311: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443311/Greeley Campus Map to F_O.pdf
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/AHEC-27901-D_CAVEA Lighting_FINAL_ADDENDUM 1_11-11-26.docx
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/AHEC-27901-D_CAVEA Lighting_Addendum 1_Questions and Answers_FINAL.pdf
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/CAVEA-Test-Fit-Clause-Attachment-2026-11-08.pdf
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/AHEC-27901-D_CAVEA Lighting_Pre-Quote Sign-In Sheets.pdf
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Above Ceiling 01.jpg
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Above Ceiling 02.jpg
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Above Ceiling 03.jpg
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Access Panel Closet Location _1_.jpg
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Access Panel Closet Location _2_.jpg
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Access Panels.JPG
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/Existing Downlight from 26 55 61.01 Theatrical Lighting -Product Data and Shop Drawings.pdf
+- bidnet:0000441764: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441764/D2 - Lumenpulse - Lumencore Nano Downlight.pdf
 
 ## Errors
 
