@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-10T21:45:08Z",
+ "updated": "2026-11-11T00:47:52Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -727,7 +727,7 @@
    "contact": "strategicsourcing@psdschools.org",
    "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13:30 walk)",
    "notes": "Questions deadline 2026-11-13 (BidNet Q&A tab, 14:39Z scan).",
-   "next": "Walk Tue 11/10 13:30 Traut ES -> Preston MS -> Fossil Ridge HS: Carlos Ahedo (HOODZ) represents Brown Bison alone (Luke cannot attend); PSD told 14:50 MT 11/09 (1a1c248c5cad0a16); Carlos asked to confirm tonight (1a1c248ca1069015); bid due 11/20 14:00; questions by 11/13"
+   "next": "Walk Tue 11/10 13:30 done by Carlos Ahedo (HOODZ) for Brown Bison (he confirmed 11/09 21:53Z; no photos/notes received by 17:45 MT). HQ follow-up sent 11/11 00:48Z (1a1c812e21a3d9df): photos/notes + sign-in name, and by Fri 11/13 the HOODZ certifications, AHJ registrations, inspector name, crew count, 24-h emergency contact. If no sign-in confirmation by Wed 09:00 MT, ask PSD strategic sourcing for the attendee list. Bid copy to Luke Thu 11/12; questions close Fri 11/13; due Fri 11/20 14:00."
   },
   {
    "id": "boulder-bid-321-26",
