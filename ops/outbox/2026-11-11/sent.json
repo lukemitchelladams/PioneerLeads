@@ -8,5 +8,56 @@
     "bcc_count": 0,
     "attachments": [],
     "asks": 0
+  },
+  "psd-signin-ask": {
+    "id": "1a1cb45fecaffcb6",
+    "threadId": "1a1ac805e5b5b3bc",
+    "to": [
+      "strategicsourcing@psdschools.org"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "hoodz-nudge": {
+    "id": "1a1cb4603cef11f7",
+    "threadId": "1a1a878f8cda76a3",
+    "to": [
+      "carlos.ahedo@hoodz.us.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "bvcc-reask": {
+    "id": "1a1cb460760fa4f5",
+    "threadId": "1a1b2a5e97fa8bc7",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [],
+    "asks": 0
+  },
+  "bk-chase": {
+    "id": "1a1cb460b1a2d356",
+    "threadId": "1a1ade55a73ca213",
+    "to": [
+      "bandkcleaningcolorado@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "luke-psfb-copy": {
+    "id": "1a1cb4611365ef40",
+    "threadId": "1a1cb4611365ef40",
+    "to": [
+      "lukemitchelladams@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Brown-Bison-Sources-Sought-Response-FA251727SS00.pdf",
+      "Sources-Sought-Smart-T-Power.pdf",
+      "Attachment-1-PWS-Smart-T-Power-Project.pdf"
+    ]
   }
 }
