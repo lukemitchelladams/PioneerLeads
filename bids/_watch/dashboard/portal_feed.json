@@ -870,6 +870,21 @@
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view"
  },
  {
+  "key": "samgov:04b0549983ea4b7687b6280f65b9dc1e",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
+  "title": "15--CONVEYOR,ROLLER ASSEMB",
+  "sol": "SPE4A727T3860",
+  "closing": "2026-11-19",
+  "posted": "2026-11-11",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/04b0549983ea4b7687b6280f65b9dc1e/view"
+ },
+ {
   "key": "samgov:1d1b8d72c87844289d3efb4990073ded",
   "source": "samgov",
   "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA FS SAN JUAN NATIONAL FOREST",
@@ -1170,6 +1185,21 @@
   "url": "https://sam.gov/workspace/contract/opp/7c57681a0efb4d8f916d6f9e0c3ee3c9/view"
  },
  {
+  "key": "samgov:994aa9e06162482d9a3c07be9ba67263",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA TROOP SUPPORT",
+  "title": "39--ROLLER,CONVEYOR",
+  "sol": "SPE8EF27T0258",
+  "closing": "2026-11-23",
+  "posted": "2026-11-11",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/994aa9e06162482d9a3c07be9ba67263/view"
+ },
+ {
   "key": "samgov:9a80372ece404f7a91ca3e9e5646e62d",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
@@ -1376,7 +1406,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/e314ad5dbe27493d9b5e76f81e4a49d7/view"
  },
  {
@@ -1393,6 +1423,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Security-Electronics-Maintenance-Support-Services/0000441668?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000443313",
+  "source": "bidnet",
+  "agency": "Colorado Convention Center",
+  "title": "Interior Stout Street Corridor LED Lighting Upgrade",
+  "sol": "RFP 2026-1400-1718713",
+  "closing": "2026-11-25",
+  "posted": "2026-11-11",
+  "prebid_date": "2026-11-17",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Interior-Stout-Street-Corridor-LED-Lighting-Upgrade/0000443313?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:2721090002",
