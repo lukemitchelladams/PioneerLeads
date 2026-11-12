@@ -335,4 +335,8 @@ def brief_line(desc: dict | None, cages: dict | None = None) -> str:
         parts.append("no drawings")
     if desc.get("higher_level_quality"):
         parts.append(desc["higher_level_quality"])
+    if not parts and desc.get("excerpt"):
+        # nothing structured in the text (an intent-to-sole-source, an amendment note): the opening words still tell the
+        # operator what the notice is, so the line is never empty when the description was read
+        return "about: " + " ".join(str(desc["excerpt"]).split())[:200]
     return " | ".join(parts)

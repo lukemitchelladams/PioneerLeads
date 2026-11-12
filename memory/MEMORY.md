@@ -1751,3 +1751,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - CEO plan assigns "Mac/WORKER": post PSD question #7 on BidNet if Luke has not by Fri 12:00 MT, and open BidNet 444226398382 Landscape Services logged in. **The cloud worker cannot do either**: its routine forbids touching a portal login by hand, and bidnetdirect.com is blocked from this container. Both belong to the Mac.
 - Inbox: no new inbound (only the seen BidNet closing reminders). Nothing from Luke; no CRM brief. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v280 (a9699967ec45239742a5b151fff4abeb), events v282 (3c9aa787232e490bc5e0714dc48702fb), portal_feed v140 (c0d00c424bc6ca5737ea41028353d018, unchanged), sources v237 (ebdb08f48a8ec79ffed2821fe5da54a2), doc_gaps v10.
+
+### 2026-11-12 14:55Z hourly (07:35 MT) scan, HQ
+- Logged in (saved session reused), but a BidNet ROBOT CHECK hit on a detail page during enrichment (8th check; cool-down to 16:41:55Z; list scan completed: bidnet 666/84). samgov 95/95, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push c9d503c. 0 docs. 2 NEW SAM: VA 595a043c "FY27 Portable RO Water Purification" = sole-source intent to Evoqua (Orlando FL) -> NO; Reclamation 140RR027R0010 "PGMB Security Gate" (NAICS 238990, PSC 5660 fencing/gates, total SB, due 11/23 14:00 MST, site visit was 10/26) -> NO (gate construction, not our trades). Both labelled NO in the watchlist.
+- SAM.gov brief ran live for both (brief dict stored, read_at 14:42:20Z) but brief_line was empty: neither notice has NSN/qty/CAGE/set-aside text. Fix: brief_line falls back to "about: <first 200 chars>" so the digest line is never empty when the description was read; test added.
+- Inbox 13:35-14:35Z: nothing inbound (no HOODZ or sub replies yet). No email sent this turn.

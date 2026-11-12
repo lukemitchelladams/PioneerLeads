@@ -1795,6 +1795,12 @@ check("brief_line: the full line, CAGE named from the entity lookup",
       samgov.brief_line(_full, {"70508": _ce}) == "set-aside: total small business | NSN 3910-00-243-5401 | qty 334 EA, 1 EA | "
       "OEM CAGE 70508 American Metal Bearing Co (Garden Grove CA) ref 80080 PIECE 3X4X33X34 | authorized distributors only | no drawings | ISO 9001",
       samgov.brief_line(_full, {"70508": _ce}))
+check("brief_line: nothing structured but an excerpt -> 'about: <opening words>' (an intent-to-sole-source, an amendment note)",
+      samgov.brief_line({"excerpt": "PGMB Security Gate - Amendment 4 provides   the questions and answers"}, {})
+      == "about: PGMB Security Gate - Amendment 4 provides the questions and answers"
+      and len(samgov.brief_line({"excerpt": "x" * 400}, {})) == len("about: ") + 200
+      and samgov.brief_line({"quantities": ["12 EA"], "excerpt": "ignored when a structured part exists"}, {}) == "qty 12 EA",
+      samgov.brief_line({"excerpt": "PGMB Security Gate - Amendment 4 provides   the questions and answers"}, {}))
 check("brief_line: empty parts omitted (no set-aside, no flags, CAGE not looked up); nothing at all -> empty string",
       samgov.brief_line({"nsns": ["3910-00-243-5401"], "cage_refs": [("70508", "80080 PIECE")]}, {}) == "NSN 3910-00-243-5401 | OEM CAGE 70508 ref 80080 PIECE"
       and samgov.brief_line({"quantities": ["12 EA"]}, None) == "qty 12 EA" and samgov.brief_line({}, {}) == "" and samgov.brief_line(None) == "",

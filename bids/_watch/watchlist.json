@@ -691,6 +691,16 @@
    "source": "samgov",
    "match": "SPRMM126QMJ99",
    "folder": "bids/_jones-bearing/notices/3d326babf2eb497eabe64330bb3f5d25"
+  },
+  {
+   "name": "VA 36C248 FY27 Portable RO water purification (NO: sole-source intent to Evoqua, Orlando FL; not our product)",
+   "source": "samgov",
+   "match": "595a043c43e3421c9ce457df6614d29f"
+  },
+  {
+   "name": "Reclamation 140RR027R0010 PGMB Security Gate (NO: fence/gate construction, site visit 10/26 passed; due 11/23)",
+   "source": "samgov",
+   "match": "140RR027R0010"
   }
  ]
 }
