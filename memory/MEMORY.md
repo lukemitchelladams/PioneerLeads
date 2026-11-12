@@ -1837,3 +1837,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **La Plata bounce**: the 20:33Z second Durango line to office@mandrplumbers.com was blocked (1a1d17774d6ee672); recorded in sub-outreach.md. Worker launched a Durango plumbing/HVAC/electrical/general-repair sweep (cutoff Fri 17:00).
 - BidNet addenda: Fort Collins 10366 Transfort overhead doors (REVIVE-IF, bonding gate) and Douglas County 044-26 alarm monitoring (NO). GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v287 (b84b7caf29319ffc61c82100268948b0), events v289 (03ae63d0c03b6ccdd34cfac395e1609a), portal_feed v147 (fe3e3b57808f04775fad3746c22aa30a), sources v244 (3e93e69478efd845087ecf0f9a0fec10), doc_gaps v10.
+- La Plata sweep done (2 agents): ~16 email-reachable Durango-area firms written to bids/laplata-oncall-trades/sub-outreach.md.
+  - A tier: HVAC Heating & Cooling Engineers, Fahrenheit Enterprises, Marco's Heating; plumbing Summit Plumbing and Heating; electrical Nightlight Electric, Clyde Electric; general repair SACHS Construction.
+  - Not contacted; addresses from search snippets only; personal-name addresses left out of the repo.
