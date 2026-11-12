@@ -2730,8 +2730,8 @@
   },
   "3d326babf2eb497eabe64330bb3f5d25": {
    "name": "DLA SPRMM126QMJ99 BEARING, BALL AND ROLLER (due 2026-12-16)",
-   "verdict": "EVALUATE (weak)",
-   "why": "HQ 11/12 04:35 MT: Jones Bearing profile; filed under bids/_jones-bearing/notices/; weak fit pending NSN/tech data (DIBBS cloud-blocked).",
+   "verdict": "NO",
+   "why": "HQ 11/12 04:35 MT: Jones Bearing profile; filed under bids/_jones-bearing/notices/; weak fit pending NSN/tech data (DIBBS cloud-blocked). | 11/12 NO per CLAUDE.md 2026-11-12 rule (no DECIDE where a rule answers; Jones Bearing distributor status: Dad is family and off limits; log NO unless already on record). Distributor status for this OEM is not on record.",
    "at": "2026-11-12T12:25:00Z"
   },
   "595a043c43e3421c9ce457df6614d29f": {
@@ -2754,8 +2754,8 @@
   },
   "9e7057b68eff46849d6de2cb28834363": {
    "name": "DLA Aviation SPE4A627RX186 BEARING, ROLLER, NEEDLE NSN 3110-00-902-3835 (closes 2026-12-03)",
-   "verdict": "EVALUATE (weak)",
-   "why": "HQ 11/12 16:55Z: approved source JTEKT (CAGE 5XMS1), estimated annual demand 398, 5-yr IDC, 120 days ARO, Bearing Restriction; GO only if Jones Bearing can buy through a JTEKT distributor (DECIDE for Luke/Dad).",
+   "verdict": "NO",
+   "why": "HQ 11/12 16:55Z: approved source JTEKT (CAGE 5XMS1), estimated annual demand 398, 5-yr IDC, 120 days ARO, Bearing Restriction; GO only if Jones Bearing can buy through a JTEKT distributor (DECIDE for Luke/Dad). | 11/12 NO per CLAUDE.md 2026-11-12 rule (no DECIDE where a rule answers; Jones Bearing distributor status: Dad is family and off limits; log NO unless already on record). Distributor status for this OEM is not on record.",
    "at": "2026-11-12T17:26:00Z"
   },
   "bidnet:444230804856": {
@@ -2954,6 +2954,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T19:26:00Z",
+ "last_hourly_check": "2026-11-12T20:32:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

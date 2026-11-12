@@ -1802,3 +1802,15 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 19:47Z hourly (12:35 MT) scan, HQ
 - Fresh login 19:36:08Z clean (16:43Z session had expired ~3 h after login, as usual; no code, no robot check). All live: bidnet 657/85, samgov 97/97, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push dbe7511. 0 new. 2 docs: Boulder 44-2026 streetlight (NO, civil) Q&A + revised pay items -> download cache only (no folder). Changed: DLA SPRTA1-27-Q-0031 HOUSING, BEARING UNIT (NO since 11/05: aircraft part) posted its RFQ as a PDF portfolio; brief = synopsis-waiver memo. Inbox 18:36-19:36Z: only the Boulder addendum notice. No email sent.
+
+### 2026-11-12 20:22Z hourly (worker)
+- **New CLAUDE.md HARD RULE (commit 66c04fd from Luke's account, 13:09 MT): no appointments that need Luke, no idle ticks.** Board changes the worker now follows:
+  - Exhibit G / photo ID is off LUKE MUST DO; it is the walk attendee's paperwork.
+  - The only LUKE line through Fri 14:00 is posting PSD questions #7 and #8 on BidNet.
+  - No Pueblo URA ask and no Jones Bearing distributor ask. Pueblo URA is skipped and logged NO-BID unless a landscape sub attends Fri 09:00. Jones Bearing is NO unless distributor status is on record.
+  - Work orders are in ops/plan_ceo/COORDINATION.md (2026-11-12).
+- Applied: DLA SPRMM126QMJ99 and SPE4A627RX186 -> NO in pipeline + ledger (distributor status not on record).
+- HQ 19:35Z scan: all live (bidnet 657, samgov 97, coloradovss 69/3), bonfire Cloudflare, dibbs not scanned; open matches 154; 0 new; Boulder streetlight Q&A + revised pay items (bid NO); SAM 8ccf3c64 bearing housing new doc (already NO: aircraft part).
+- Worker launched a 3-angle sweep for HQ's work orders: 2 more BVCC water-treatment firms (walk Wed 11/18 needs their tech), and an NFPA 96 / IKECA-certified Northern Colorado hood cleaner as the PSD alternate.
+- Inbox: Ceres ack (1a1d15dff70537b9), Google promo. GovTribe S&L UPGRADE_REQUIRED.
+- Dashboard: bids v286 (9fdf524a7b67f5aa37042f803f90dfba), events v288 (44e79560280d7dcf6f9b20f1a9d536b9), portal_feed v146 (179901cae3728e461fc5e60aa756be52), sources v243 (50fe3869c3ab476cd65ee8883036041c), doc_gaps v10.
