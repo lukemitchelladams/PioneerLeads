@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-11T23:43:26Z",
+ "updated": "2026-11-12T05:46:58Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1625,6 +1625,62 @@
    "folder": null,
    "contact": "-",
    "next": "3 public docs cached 11/11 23:41Z (bids/_watch/downloads/bidnet/0000443311/): solicitation PDF, Greeley campus building pictures, map to Facilities & Operations. Questions deadline 2026-12-01 (BidNet). Pre-bid conference Wed 11/18 11:00 Greeley recommended, not mandatory. HQ to read the PDF (scope, frequency, insurance, due time) and decide GO/NO by Fri 11/13; window-cleaning sub needed (north metro/Greeley)."
+  },
+  {
+   "id": "ccc-stout-corridor-led-1718713",
+   "agency": "Colorado Convention Center (City and County of Denver / ASM Global)",
+   "title": "Interior Stout Street Corridor LED Lighting Upgrade",
+   "sol": "RFP 2026-1400-1718713 (BidNet 0000443313)",
+   "trade": "Electrical / lighting",
+   "due": "2026-11-25T00:00:00-07:00",
+   "due_source": "BidNet listing closing 11/25/2026 (time to be read from SOL1718713.pdf)",
+   "portal": "BidNet Direct; docs public: SOL1718713.pdf, CCC Vendor Certification.pdf",
+   "decision": "EVALUATE",
+   "decision_note": "Surfaced 2026-11-12 05:39Z scan. MANDATORY job walk Tue 2026-11-17 12:00 MST at the Colorado Convention Center Security Office, 12th and Welton (check in with security, wristband, wait in the security lobby). Interior corridor LED retrofit = our electrical trade with a licensed electrical sub pricing; Brown Bison primes. Needs the SOL PDF read (scope, fixture counts, bonding, due time) and an electrical sub named by Fri 11/13 so someone stands at the walk. Watchlisted; next scan pulls the docs.",
+   "prebid": "2026-11-17T12:00:00-07:00",
+   "prebid_mandatory": true,
+   "performer": "Brown Bison + electrical sub (TBD)",
+   "subs": "-",
+   "sub_pricing": "-",
+   "folder": null,
+   "contact": "-"
+  },
+  {
+   "id": "dla-spe8ef27t0258-conveyor-roller",
+   "agency": "DLA Troop Support",
+   "title": "39--ROLLER, CONVEYOR (NSN 3910-00-243-5401), qty 334 + 1 EA to DLA Distribution Warner Robins",
+   "sol": "SPE8EF27T0258 (SAM.gov 994aa9e06162482d9a3c07be9ba67263)",
+   "trade": "Jones Bearing / American Pulley supply (conveyor rollers)",
+   "due": "2026-11-23T00:00:00-05:00",
+   "due_source": "SAM.gov closing 2026-11-23 (DIBBS RFQ return-by time to be read on DIBBS)",
+   "portal": "DIBBS (electronic quotes only; cloud access prohibited, quote from Luke's computer)",
+   "decision": "EVALUATE (jones-bearing GO if the NSN matches an American Pulley / Jones Bearing roller)",
+   "decision_note": "Surfaced 2026-11-12 05:39Z scan. FSC 3910 conveyor roller, total small business set-aside, 334 EA (406 days ADO) + 1 EA (120 days ADO). Brown Bison (CAGE 20VU2) quotes as dealer with Jones Bearing/American Pulley as supplier (no SAM/CAGE for Jones). Needs the DIBBS tech data / approved part numbers (cloud cannot open DIBBS) and Dad's price per roller; then quote on DIBBS by 11/23.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison dealer quote; Jones Bearing supplies",
+   "subs": "Jones Bearing (Luke's dad)",
+   "sub_pricing": "Not asked yet (tech data first)",
+   "folder": "bids/_jones-bearing/notices/994aa9e06162482d9a3c07be9ba67263",
+   "contact": "-"
+  },
+  {
+   "id": "dla-spe4a727t3860-aircraft-roller-assy",
+   "agency": "DLA Aviation",
+   "title": "15--CONVEYOR, ROLLER ASSEMB (NSN 1560-00-021-5167), qty 2 + 1",
+   "sol": "SPE4A727T3860 (SAM.gov 04b0549983ea4b7687b6280f65b9dc1e)",
+   "trade": "Aerospace structural part",
+   "due": "2026-11-19T00:00:00-05:00",
+   "portal": "DIBBS",
+   "decision": "NO",
+   "decision_note": "FSC 1560 aircraft structural component (NAICS 336413), 3 EA; an approved-source aviation part, not a Jones Bearing/American Pulley industrial roller.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "-",
+   "subs": "-",
+   "sub_pricing": "-",
+   "folder": null,
+   "contact": "-"
   }
  ],
  "events": [

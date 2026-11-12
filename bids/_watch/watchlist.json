@@ -663,6 +663,20 @@
    "match": "window cleaning",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "CCC RFP 2026-1400-1718713 Stout Street Corridor LED Lighting (EVALUATE; MANDATORY job walk Tue 11/17 12:00 CCC security office; due 11/25)",
+   "source": "bidnet",
+   "id": "0000443313",
+   "match": "stout street corridor led",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "DLA SPE8EF27T0258 Roller, Conveyor NSN 3910-00-243-5401 x334 (Jones Bearing EVALUATE; due 11/23)",
+   "source": "samgov",
+   "match": "SPE8EF27T0258",
+   "folder": "bids/_jones-bearing/notices/994aa9e06162482d9a3c07be9ba67263"
   }
  ]
 }
