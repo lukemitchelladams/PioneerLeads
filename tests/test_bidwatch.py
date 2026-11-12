@@ -1795,6 +1795,23 @@ check("brief_line: the full line, CAGE named from the entity lookup",
       samgov.brief_line(_full, {"70508": _ce}) == "set-aside: total small business | NSN 3910-00-243-5401 | qty 334 EA, 1 EA | "
       "OEM CAGE 70508 American Metal Bearing Co (Garden Grove CA) ref 80080 PIECE 3X4X33X34 | authorized distributors only | no drawings | ISO 9001",
       samgov.brief_line(_full, {"70508": _ce}))
+_DLA_AV = ("Solicitation Number SPE4A627RX186 Solicitation will result in a Commercial Indefinite Delivery Contract. "
+           "NSN: 3110-00-902-3835. Bearing, Roller, Needle. Approved Source: JTEKT Bearings North America LLC, CAGE 5XMS1. "
+           "Terms are FOB Destination. Stocked Item. Estimated Annual Demand is 398, the Minimum is 99, and the Maximum is 398. "
+           "This is a Critical Application Item (CAI). Requested delivery of 120 days ARO.")
+_dav = samgov.describe_notice("k", "n-dla-av", fetch=lambda u: _DLA_AV)
+check("describe_notice: DLA Aviation synopsis -> approved source (name, CAGE), annual demand, delivery days",
+      _dav and _dav["approved_sources"] == [("JTEKT Bearings North America LLC", "5XMS1")] and _dav["annual_demand"] == "398"
+      and _dav["delivery_days"] == "120" and _dav["nsns"] == ["3110-00-902-3835"], _dav)
+_dav2 = samgov.describe_notice("k", "n-dla-av2", fetch=lambda u: "NSN: 3110-01-051-1649. Bearing, Roller. Approved Sources: "
+                               "Hamilton Sunstrand Corporation (99167), Timken Co (38443). Terms are FOB Destination. "
+                               "Estimated Annual Demand is 1,155. Requested delivery of 644 days ARO.")
+check("describe_notice: 'Approved Sources: A (CAGE), B (CAGE)' form; thousands separator in the demand",
+      _dav2 and _dav2["approved_sources"] == [("Hamilton Sunstrand Corporation", "99167"), ("Timken Co", "38443")]
+      and _dav2["annual_demand"] == "1155" and _dav2["delivery_days"] == "644", _dav2)
+check("brief_line: approved source, EAD and delivery appear after the NSN and before the flags",
+      samgov.brief_line(_dav, {}) == "NSN 3110-00-902-3835 | approved source JTEKT Bearings North America LLC (CAGE 5XMS1) | EAD 398/yr | delivery 120 days ARO",
+      samgov.brief_line(_dav, {}))
 check("brief_line: nothing structured but an excerpt -> 'about: <opening words>' (an intent-to-sole-source, an amendment note)",
       samgov.brief_line({"excerpt": "PGMB Security Gate - Amendment 4 provides   the questions and answers"}, {})
       == "about: PGMB Security Gate - Amendment 4 provides the questions and answers"

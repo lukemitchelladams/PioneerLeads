@@ -233,6 +233,15 @@ def _title_words(s: str) -> str:
     return " ".join(w if w.upper() in keep else w.capitalize() for w in (s or "").split())
 
 
+# DLA Aviation / Land / Troop Support synopsis text: "Approved Source: JTEKT Bearings North America LLC, CAGE 5XMS1." or
+# "Approved Sources: Hamilton Sunstrand Corporation (99167), Other Corp (12345)."; "Estimated Annual Demand is 398";
+# "Requested delivery of 120 days ARO".
+APPROVED_SRC_SEG_RX = re.compile(r"Approved\s+Sources?:\s*(.+?)(?=\.\s+[A-Z]|\.\s*$|\s+Terms\s+are\b)", re.I | re.S)
+APPROVED_SRC_PAIR_RX = re.compile(r"\s*([^,;()]+?)\s*(?:,?\s*CAGE\s*|\s*\()([0-9A-Z]{5})\)?", re.I)
+ANNUAL_DEMAND_RX = re.compile(r"Estimated\s+Annual\s+Demand\s+is\s+([\d,]+)", re.I)
+DELIVERY_ARO_RX = re.compile(r"delivery\s+of\s+(\d+)\s+days\s+ARO", re.I)
+
+
 def describe_notice(key: str, notice_id: str, fetch=None, errors: list | None = None) -> dict | None:
     """What a notice is, read from its description text (the noticedesc endpoint; one budgeted request).
     `fetch(url) -> str` replaces the default GET (tests). Returns None on any failure, never raises: a missing
@@ -266,8 +275,19 @@ def describe_notice(key: str, notice_id: str, fetch=None, errors: list | None = 
         quality = None
         if q:
             quality = "ISO 9001" if q.group(1) else "MIL-I-45208"
+        approved = []
+        seg = APPROVED_SRC_SEG_RX.search(text)
+        if seg:
+            for m in APPROVED_SRC_PAIR_RX.finditer(seg.group(1)):
+                pair = (" ".join(m.group(1).split()).strip(" ,;"), m.group(2).upper())
+                if pair[0] and pair not in approved:
+                    approved.append(pair)
+        ead = ANNUAL_DEMAND_RX.search(text)
+        aro = DELIVERY_ARO_RX.search(text)
         return {
             "set_aside": set_aside, "nsns": nsns, "cage_refs": cage_refs, "quantities": qtys,
+            "approved_sources": approved, "annual_demand": ead.group(1).replace(",", "") if ead else None,
+            "delivery_days": aro.group(1) if aro else None,
             "authorized_distributor_only": bool(re.search(r"authori[sz]ed\s+distributor", text, re.I)),
             "no_drawings": bool(NO_DRAWINGS_RX.search(text)),
             "higher_level_quality": quality, "excerpt": text[:300],
@@ -329,6 +349,12 @@ def brief_line(desc: dict | None, cages: dict | None = None) -> str:
         if rs:
             seg += " ref " + ", ".join(rs)
         parts.append(seg)
+    for name, cage in desc.get("approved_sources") or []:
+        parts.append(f"approved source {name} (CAGE {cage})")
+    if desc.get("annual_demand"):
+        parts.append(f"EAD {desc['annual_demand']}/yr")
+    if desc.get("delivery_days"):
+        parts.append(f"delivery {desc['delivery_days']} days ARO")
     if desc.get("authorized_distributor_only"):
         parts.append("authorized distributors only")
     if desc.get("no_drawings"):
