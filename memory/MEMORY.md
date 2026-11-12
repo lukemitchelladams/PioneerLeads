@@ -1820,3 +1820,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   - PSD alternate A: Aqua Strong Hood Cleaning (info@aquastronghc.com; self-stated NFPA 96 certified techs, Fort Collins page). B: Elite Hood Cleaning, Brotherhood Cleaning.
   - No firm shows IKECA or PFA/LFRA registration publicly, so the ask must request written proof.
   - None of these candidates has been contacted or live-verified.
+
+### 2026-11-12 20:40Z worker sweep applied, HQ
+- CLAUDE.md gained the 11/12 HARD RULE (CEO/worker session, Luke's 11/09 + 11/11 words): no appointments that need Luke; a site visit happens only with a sub's person attending; Exhibit G/ID is the attendee's; board asks Luke only for signature/payment/portal/fact; no DECIDE where a rule answers; nothing through family or Alex; no idle ticks. Applied: Jones Bearing DLA notices are NO (worker did it); Pueblo URA = NO-BID (no sub attendee Fri 09:00); Lafayette attendee = Clean Conscience only; BVCC Exhibit G = the sub technician's, off Luke's board line.
+- SENT 20:4xZ: BVCC pricing + walk-technician ask to Hydrite and Water Engineering Inc (1a1d17a67fa91fb1); PSD alternate certified hood cleaners Aqua Strong, Elite, Brotherhood (1a1d17a710e4b459) with IFB/Att A/C/D/hood list. Larry (HOODZ) certification question goes Fri 08:30 MT (one email per company per day; he got the pricing questions today).
+- Open work orders for HQ: Pagosa price-from-documents worksheet; Canon City + Lafayette + Widefield package pre-builds (subagents); Larry certification email Fri 08:30 MT.

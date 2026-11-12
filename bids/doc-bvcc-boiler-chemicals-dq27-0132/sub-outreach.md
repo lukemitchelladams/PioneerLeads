@@ -65,3 +65,5 @@ file the CDOC entry paperwork (Exhibit G + ID); that paperwork belongs to the at
 **DO NOT CONTACT: "FCT Water Treatment" (Greeley, fctwater.com) is FACT Water Co's former name**, which is already on the stand-down list.
 Phone/web-form only: Kurita America (Denver field staff), Treatment Technology / TT Holdings (Littleton), Calcium Control (Arvada), Aqua Tech Services (Albuquerque),
 Industrial Water Engineering (Albuquerque), ChemREADY, Alpine Technical Services (UT), C&S Chemicals (UT), Guardian CSC, Veolia WT, HOH, Barclay.
+
+- 2026-11-12 20:4xZ (13:4x MT, HQ, worker sweep tier A): pricing request + 10-file package sent as a bcc group to Hydrite Chemical (info@hydrite.com, asked to route to the Denver water-treatment account manager) and Water Engineering Inc (info@h2oeng.com), msg 1a1d17a67fa91fb1. Asked: yes/no on a walking technician by Fri 11/13 17:00 MT, Exhibit D pricing by Fri 11/20. Exhibit G + ID belong to the attending technician (CLAUDE.md 11/12 rule).

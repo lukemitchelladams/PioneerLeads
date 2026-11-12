@@ -1,0 +1,40 @@
+[
+ {
+  "key": "bvcc-hydrite-wei",
+  "subject": "CDOC Buena Vista boiler chemical treatment, DQ 2027000132: water-treatment sub",
+  "bcc": [
+   "info@hydrite.com",
+   "info@h2oeng.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/bvcc-hydrite-wei.txt",
+  "files": [
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/2. Exhibit B - Required Vendor Information - Services.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/4. Exhibit D - Price Quote.xlsx",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/5. Exhibit E - Contract Performance Outside of the US.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/6. Exhibit F - Non-Conflict of Interest.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/7. Exhibit G - Consent to Search.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/9. Attachment 2 - Insurance Information.pdf"
+  ]
+ },
+ {
+  "key": "psd-alternates",
+  "subject": "Poudre School District kitchen hood inspection and cleaning (IFB 27-701-002): sub pricing and certification",
+  "bcc": [
+   "info@aquastronghc.com",
+   "info@elitehoodcleaning.com",
+   "Info@BrotherhoodUSA.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/psd-alternates.txt",
+  "files": [
+   "bids/_watch/downloads/bidnet/0000439455/IFB 27-702-002 Hood Cleaning and Inspection.pdf",
+   "bids/_watch/downloads/bidnet/0000439455/Attachment A - Scope of Work.pdf",
+   "bids/_watch/downloads/bidnet/0000439455/Attachment C - List of School.pdf",
+   "bids/_watch/downloads/bidnet/0000439455/Attachment D - Pricing Form.xlsx",
+   "bids/_watch/downloads/bidnet/0000439455/Addendum 1.0 List of Kitchen Hoods.pdf"
+  ]
+ }
+]
