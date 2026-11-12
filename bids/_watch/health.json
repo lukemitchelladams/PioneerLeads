@@ -1,27 +1,25 @@
 {
-  "checked_at": "2026-11-12T14:36:16+00:00",
+  "checked_at": "2026-11-12T15:36:10+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
+      "blind": true,
+      "carried_forward": true,
+      "complete": false,
       "count": 666,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [
-        "detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started"
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
       "last_success": "2026-11-12T14:36:16+00:00",
-      "logged_in": true,
-      "login_note": "session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started",
+      "logged_in": false,
+      "login_note": "COOL-DOWN after a robot check, until 2026-11-12T16:41:55+00:00",
       "matches": 84,
-      "reach_note": "HTTP 200",
-      "reachable": true,
-      "site_totals": {
-        "statewide AGGREGATE": 205,
-        "statewide BUYER": 462
-      }
+      "reach_note": "HTTP 202",
+      "reachable": true
     },
     "bonfire": {
       "count": 2,
@@ -32,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-12T14:36:16+00:00",
+      "last_success": "2026-11-12T15:36:10+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -44,7 +42,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-12T14:36:16+00:00",
+      "last_success": "2026-11-12T15:36:10+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -84,7 +82,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-12T14:36:16+00:00",
+      "last_success": "2026-11-12T15:36:10+00:00",
       "logged_in": true,
       "login_note": "API key; +31 from the nightly bulk file",
       "matches": 95,
