@@ -1855,3 +1855,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 22:52Z hourly (15:35 MT) scan, HQ
 - Fresh login 22:36:49Z clean. Push 055a837, EXIT 3 (detail budget cut again: bidnet 7/91 enriched in 625 s; BidNet tabs still slow). bidnet 638/82, samgov 97/97, coloradovss 67/3, bonfire 2/1. 0 new, 0 docs. Changed: Westminster RFP 26-002 closing 12/01 -> 12/10 (addendum; pipeline due updated, time assumed 14:00; still AT RISK on the unconfirmed 10/19 walk). Inbox 21:36-22:36Z: Westminster communication notice + Alex's call request (CALL BRIEF sent). No email this scan turn.
+
+### 2026-11-12 23:21Z hourly (worker)
+- HQ 22:36Z scan: bidnet 638 logged in, samgov 97, coloradovss 67/3, bonfire Cloudflare, dibbs not scanned; open matches 151; 0 new. Westminster 26-002 closing moved 12/01 -> 12/10 (HQ logged it). HQ sent Luke the Alex Ditto CALL BRIEF (c98f678).
+- Inbox: nothing new since 22:21Z. GovTribe S&L UPGRADE_REQUIRED.
+- No-idle work: Arapahoe RFB 26-64 Courthouse 1 drywall/paint (MANDATORY meeting 11/23 10:00, Centennial) needs a sub attendee. **Ceres Construction (Denver, all trades, SoS cured 11/12) is a natural fit to attend and price.** Worker launched a sweep for more south-metro drywall/paint firms plus San Luis Valley HVAC subs for the CPW Alamosa heater DQ.
+- Dashboard: bids v289 (9fcc0631f1dbf7f94f3ab39deea96425), events v291 (bf6cf3a68c05cc3eb144ba95f8297d8e), doc_gaps v11 (1b3b605dd53ee32d669d74757377ae3c, unchanged), portal_feed v149 (f729c3b6f96a22fa6d567fe90df2d584), sources v246 (b3369b883d885540a051659b392e0c8a).
