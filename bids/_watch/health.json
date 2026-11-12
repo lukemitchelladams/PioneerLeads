@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T10:36:33+00:00",
+  "checked_at": "2026-11-12T11:36:31+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -10,11 +10,11 @@
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-12T10:36:33+00:00",
+      "last_success": "2026-11-12T11:36:31+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 84,
-      "reach_note": "HTTP 200",
+      "reach_note": "HTTP 202",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 205,
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-12T10:36:33+00:00",
+      "last_success": "2026-11-12T11:36:31+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-12T10:36:33+00:00",
+      "last_success": "2026-11-12T11:36:31+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -77,15 +77,15 @@
     "samgov": {
       "bulk_added": 30,
       "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 92 matching (parsed earlier)",
-      "count": 92,
+      "count": 93,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-12T10:36:33+00:00",
+      "last_success": "2026-11-12T11:36:31+00:00",
       "logged_in": true,
       "login_note": "API key; +30 from the nightly bulk file",
-      "matches": 92,
+      "matches": 93,
       "reach_note": "HTTP 404",
       "reachable": true
     }
