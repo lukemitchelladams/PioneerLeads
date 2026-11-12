@@ -15,7 +15,7 @@
   "agency": "RTD Denver",
   "sol": "RFP 126DM016",
   "due": "2026-11-16T14:00:00-07:00",
-  "decision": "REVIVE",
+  "decision": "NO-BID (default: not revived by Thu 11/12 12:00 MT)",
   "item": "SBE Required Enclosures",
   "where": "rtd-denver.com/downloads/sbe-enclosures"
  },
@@ -25,7 +25,7 @@
   "agency": "RTD Denver",
   "sol": "RFP 126DM016",
   "due": "2026-11-16T14:00:00-07:00",
-  "decision": "REVIVE",
+  "decision": "NO-BID (default: not revived by Thu 11/12 12:00 MT)",
   "item": "SBE Contract Requirements Certification",
   "where": "OpenGov portal, section 7"
  },
@@ -35,7 +35,7 @@
   "agency": "RTD Denver",
   "sol": "RFP 126DM016",
   "due": "2026-11-16T14:00:00-07:00",
-  "decision": "REVIVE",
+  "decision": "NO-BID (default: not revived by Thu 11/12 12:00 MT)",
   "item": "W-9 and Key Personnel forms",
   "where": "OpenGov portal, section 7"
  },
