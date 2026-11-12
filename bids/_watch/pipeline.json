@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T23:32:02Z",
+ "updated": "2026-11-12T23:48:27Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1802,6 +1802,25 @@
    "sub_pricing": "None",
    "folder": "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64",
    "contact": "Sophia Morlan, SMorlan@arapahoegov.com (administrative questions)"
+  },
+  {
+   "id": "bidnet-0000443426-trails-rec-landscape",
+   "agency": "Trails Park and Recreation District (Centennial area)",
+   "title": "Landscape Maintenance Contract Services",
+   "sol": "BidNet 0000443426",
+   "trade": "Landscaping / grounds (Alex Ditto, YMS, is our landscaping sub; Luke handles all Alex contact)",
+   "due": "2026-12-04T00:00:00-07:00",
+   "due_source": "BidNet list: Closing 12/04/2026 (time, pre-bid and scope not read: detail pass budget-cut)",
+   "portal": "BidNet (watched; documents download on the next scan that reaches it)",
+   "decision": "EVALUATE (flag for Luke: landscaping is YMS's trade; if the RFP has a mandatory walk and no YMS person attends -> NO-BID per the 11/12 rule)",
+   "decision_note": "Surfaced 2026-11-12 23:47Z scan. Operators do not contact Alex; Luke decides whether YMS prices it (board DECIDE with the RTD call). Read the documents first: pre-bid, term, site list.",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "performer": "Brown Bison bids; YMS performs",
+   "subs": "YMS Landscaping (via Luke)",
+   "sub_pricing": "None",
+   "folder": null,
+   "contact": "-"
   }
  ],
  "events": [
