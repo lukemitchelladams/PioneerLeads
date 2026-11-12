@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T22:25:29Z",
+ "updated": "2026-11-12T22:48:56Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -247,17 +247,18 @@
    "title": "Summer 2027 Facility Improvements, 6 packages",
    "sol": "RFP 26-002",
    "trade": "GC / electrical",
-   "due": "2026-12-01T14:00:00-07:00",
+   "due": "2026-12-10T14:00:00-07:00",
    "portal": "RMEPS (BidNet)",
    "decision": "AT RISK",
-   "decision_note": "Mandatory walk was 2026-10-19 14:00 Sherrelwood; attendance not confirmed. Attachments E, F-1..6, G-1..6 in hand 10/20. | 11/12 21:55Z addendum + 22:10Z buyer communication on BidNet (content needs a BidNet login; next logged-in scan / Mac to read). Mandatory walk 10/19 attendance never confirmed, so likely dead.",
+   "decision_note": "Mandatory walk was 2026-10-19 14:00 Sherrelwood; attendance not confirmed. Attachments E, F-1..6, G-1..6 in hand 10/20. | 11/12 21:55Z addendum + 22:10Z buyer communication on BidNet (content needs a BidNet login; next logged-in scan / Mac to read). Mandatory walk 10/19 attendance never confirmed, so likely dead. | 2026-11-12 22:48Z: closing extended to 12/10 per BidNet; still AT RISK: 10/19 mandatory walk attendance never confirmed.",
    "prebid": "2026-10-19T14:00:00-06:00",
    "prebid_mandatory": true,
    "performer": "GC / electrical sub",
    "subs": "NONE",
    "folder": "bids/westminster-ps-facility-improvements",
    "contact": "Kristen Hernandez, khernandez@wps.org",
-   "sub_pricing": "None"
+   "sub_pricing": "None",
+   "due_source": "BidNet closing date moved 2026-12-01 -> 2026-12-10 (addendum 11/12; time of day not read yet, 14:00 assumed from the original); addendum + buyer communication text need a BidNet login to read"
   },
   {
    "id": "codoc-trinidad-boiler",
