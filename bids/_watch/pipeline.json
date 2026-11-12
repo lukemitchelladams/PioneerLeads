@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T21:29:24Z",
+ "updated": "2026-11-12T22:25:29Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -238,7 +238,8 @@
    "subs": "Lightning Mobile: full pricing on RTD's Attachment C RECEIVED 2026-10-20 (all 4 unit types, 5 yrs; figures kept out of the public repo); offers to apply for RTD SBE (must be certified before 11/16 to count). COI in ($1M/$2M + $5M umbrella). Colorado Power Wash: email only (11/06: Jake Pavelle's Mon 11/16 call was cancelled by email; the Mac owns CPW). | 2026-10-26: answered Colorado Power Wash's 10 questions (Jake Pavelle); full package to Alex (snow). Lightning ~7x RTD's current price. | 10/26 18:56-18:57Z Alex (YMS) replied: reviewing the package, can join today's 14:00 MT Teams briefing if Luke sends the invite, asks when pricing is due back and whether to price snow only or cleaning + graffiti too (he would sub those out). Luke owns the reply. | 10/27: told Alex to price the whole contract (cleaning, graffiti, pressure wash, snow) if he can get near RTD's ~$250K/yr, else snow only; numbers by Fri 11/6. | 2026-10-28 16:00 MT: Alex Ditto (YMS): 'we are going to pass on bidding the cleaning, graffiti and pressure washing. But I can definitely provide prices for snow removal'; numbers by 11/6.",
    "folder": "bids/rtd-bus-shelter-maintenance",
    "contact": "Marla Bainbridge, (303) 299-2411",
-   "sub_pricing": "In hand (YMS preliminary snow/ice, all 5 years, received 2026-11-06; file in private/). Alex's 4 scope assumptions + 5 questions answered from the SOW in bids/rtd-bus-shelter-maintenance/alex-snow-questions-2026-11-06.md (RTD question window closed 2026-11-02 14:00; no addendum in hand; Luke pastes the summary to Alex and checks the OpenGov Addenda tab). Cleaning / graffiti / pressure-washing sub still open (Lightning Mobile priced everything, too high; Colorado Power Wash reviewing)."
+   "sub_pricing": "In hand (YMS preliminary snow/ice, all 5 years, received 2026-11-06; file in private/). Alex's 4 scope assumptions + 5 questions answered from the SOW in bids/rtd-bus-shelter-maintenance/alex-snow-questions-2026-11-06.md (RTD question window closed 2026-11-02 14:00; no addendum in hand; Luke pastes the summary to Alex and checks the OpenGov Addenda tab). Cleaning / graffiti / pressure-washing sub still open (Lightning Mobile priced everything, too high; Colorado Power Wash reviewing).",
+   "next": "CALL BRIEF to Luke 1a1d1ddb023a1239 (Alex Ditto asked 11/12 22:10Z to talk Fri about scope, pricing benchmarks and ice-control pre-treatment; may update pricing). Luke decides: call Alex Fri + revive (OpenGov Follow/addenda, package by Sun night, due Mon 11/16 14:00) or NO-BID stands. Operators never reply to Alex."
   },
   {
    "id": "westminster-26-002",

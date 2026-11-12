@@ -85,5 +85,14 @@
       "IFB - On-Call Services - Various Trades.pdf"
     ],
     "asks": 0
+  },
+  "call-brief-alex-rtd": {
+    "id": "1a1d1ddb023a1239",
+    "threadId": "1a1d1ddb023a1239",
+    "to": [
+      "lukemitchelladams@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": []
   }
 }

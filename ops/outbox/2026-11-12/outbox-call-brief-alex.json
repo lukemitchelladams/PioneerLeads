@@ -1,0 +1,11 @@
+[
+ {
+  "key": "call-brief-alex-rtd",
+  "subject": "CALL REQUEST: Alex Ditto, YMS Landscaping / RTD 126DM016",
+  "to": [
+   "lukemitchelladams@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/call-brief-alex-rtd.txt",
+  "files": []
+ }
+]
