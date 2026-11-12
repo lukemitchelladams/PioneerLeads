@@ -1861,3 +1861,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: nothing new since 22:21Z. GovTribe S&L UPGRADE_REQUIRED.
 - No-idle work: Arapahoe RFB 26-64 Courthouse 1 drywall/paint (MANDATORY meeting 11/23 10:00, Centennial) needs a sub attendee. **Ceres Construction (Denver, all trades, SoS cured 11/12) is a natural fit to attend and price.** Worker launched a sweep for more south-metro drywall/paint firms plus San Luis Valley HVAC subs for the CPW Alamosa heater DQ.
 - Dashboard: bids v289 (9fcc0631f1dbf7f94f3ab39deea96425), events v291 (bf6cf3a68c05cc3eb144ba95f8297d8e), doc_gaps v11 (1b3b605dd53ee32d669d74757377ae3c, unchanged), portal_feed v149 (f729c3b6f96a22fa6d567fe90df2d584), sources v246 (b3369b883d885540a051659b392e0c8a).
+- CPW + Courthouse sweep done: ops/research/2026-11-12-cpw-courthouse-subs.md.
+  - CPW Alamosa A: Husmann Plumbing & Heating (info@husmannplumbing.co; documented commercial school boiler replacement in Fort Garland) and Surefire Heating and Cooling. B: Torres P&H, Flow Right (mechanical + electrical).
+  - Courthouse 1 A: Ceres Construction (known sub) and South Valley Commercial (Centennial drywall). B: Wild Fox Painting, Drywall Partitions.
+  - None contacted.
