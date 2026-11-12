@@ -2763,6 +2763,12 @@
    "verdict": "EVALUATE",
    "why": "HQ 11/12 17:52Z: electrical lighting upgrade via sub; agency blank (aggregate list), closes 2026-12-07; watchlisted so the next logged-in scan pulls the documents (pre-bid/walk TBD); HQ default NO-BID Mon 11/16 12:00 unless no bond / prevailing wage.",
    "at": "2026-11-12T18:26:00Z"
+  },
+  "bidnet:444230872362": {
+   "name": "Casper/Natrona County Intl Airport Rehabilitate GA Apron (WY; due 2026-12-10)",
+   "verdict": "NO",
+   "why": "HQ 11/12 18:55Z: Wyoming airport apron paving = heavy civil (rule 8); matched only on the jones-bearing keyword \"apron\" (keyword now \"apron conveyor\"/\"apron feeder\").",
+   "at": "2026-11-12T19:26:00Z"
   }
  },
  "watched": {
@@ -2948,6 +2954,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T18:26:00Z",
+ "last_hourly_check": "2026-11-12T19:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
