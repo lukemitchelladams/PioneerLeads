@@ -15,6 +15,7 @@
 | Bonds | None stated. (Sec. IV refers to "insurance coverage or bonds, as required under Section VI" but no bond is specified anywhere in the RFP or PSA.) |
 | Insurance (PSA sec. VII.B) | Workers' comp + Employer's Liability $500,000 each accident / $1,000,000 disease policy limit / $1,000,000 disease each employee; CGL $1,000,000 each occurrence / $1,000,000 aggregate with the City as additional insured; Professional liability $600,000 each claim / $1,000,000 aggregate; certificate with 30-day cancellation notice. |
 | Status | **EVALUATE, recommend GO** (2026-11-06). Full package in hand. Core HVAC service scope, 10 units at 3 sites, no walk required. H2 Global Solutions is the first sub to ask (Luke's go-to for boiler/mechanical service). Blocker to clear on BidNet before 2026-12-03: PSA IV.D says "Consultant agrees not to employ subcontractors". |
+| Pre-built | Pre-built 2026-11-12: RESPONSE-DRAFT.md, FORMS-CHECKLIST.md, SUBMISSION.md (no prices) |
 
 ## Scope summary (RFP pp.4-7)
 

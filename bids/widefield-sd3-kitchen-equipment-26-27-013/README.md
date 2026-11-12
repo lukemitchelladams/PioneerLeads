@@ -13,6 +13,7 @@
 | Term / renewals | "Proposals may be submitted for 1-year, 2-year, 5-year terms." (T&C 3); non-appropriation clause C.R.S. 29-1-110 |
 | Evaluation method | RFP (scored): qualifications/licensure, K-12 or public-sector experience, key personnel, approach, references, cost (T&C 5) |
 | Status | **GO (HQ default 2026-11-12; Luke overrules by Mon 11/16 12:00 MT).** Sub pricing requested 11/12 from five kitchen-equipment service firms, due Thu 12/04. |
+| Pre-built | Pre-built 2026-11-12: RESPONSE-DRAFT.md, FORMS-CHECKLIST.md, SUBMISSION.md (no prices) |
 
 ## Scope summary
 "Comprehensive diagnostic, repair, emergency response, and preventive maintenance services for commercial kitchen equipment"
