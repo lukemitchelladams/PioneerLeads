@@ -376,3 +376,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 1a1cceae4d9b994f B&K Cleaning (Pagosa RFQ 1240LP27Q0008): "At this time we are not interested." DECLINED. Gmail date header 11/12 01:36Z (sender clock ahead; arrived after 22:53Z). Pagosa has no sub now.
 - 1a1ccb5e9c113fdc / 1a1ccbe7bc41617a / 1a1ccbf327a56c03 22:24-22:34Z HOODZ photo forwards (Traut, Preston, Fossil Ridge); HQ already saved the walk notes (commit 7033c01). Marked seen.
 - Luke: nothing from lukemitchelladams@gmail.com in 1d. CRM agent: no "evening update"/"brief" mail in 1d.
+
+## 2026-11-12 00:21Z hourly (worker, read-only)
+- 1a1ccfebcf875f15 23:43Z Tidy Team LLC (Emilio Leon, Alamosa) re Pagosa: declines, "we do not do subcontracted work"; asked to be REMOVED FROM OUR LIST. Logged as do-not-contact.
+- 1a1ccf4cdaa0a913 23:32Z BidNet addendum notice, AHEC-27901-D CAVEA Lighting (HQ already logged: closing 11/30, stays NO).
+- No mailer-daemon bounces on HQ's 23:42-23:43Z Pagosa sends yet. Nothing from Luke; no CRM brief.

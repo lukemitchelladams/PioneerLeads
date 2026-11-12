@@ -1610,3 +1610,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - PSD walk proof SECURED: Larry (HOODZ, 22:53Z, 1a1ccd099301d9af): "Carlos signed in under Brown Bison Holdings". PSD's own confirmation still open. Remaining PSD risk: HOODZ has no certifications/AHJ registrations (question #7 for BidNet by Fri 14:00).
 - Pagosa: B&K DECLINED (1a1cceae4d9b994f). After EXIT HQ sent the CRC/Evergreen re-ask (1a1ccfdadfba4085) and a fresh package request to six worker-sweep candidates (1a1ccfdb5b42ad67). NO-BID default Mon 11/16 12:00 MT if nobody prices; Caley gets the attendee answer or a cancellation Thu 12:00 (draft ready in the scratchpad: outbox_1111e/pagosa-caley-cancel.txt, gate PASS).
 - Worker cross-session message (23:38Z) carried the same two items plus the sweep; no reply sent (send_message needs an unattended approval). Keepalive restarted (pid 325).
+
+### 2026-11-12 00:21Z hourly (worker)
+- **DO NOT CONTACT: Tidy Team LLC (Alamosa, tidyteamcollc@gmail.com)**: asked 11/11 23:43Z to be removed from our list ("we do not do subcontracted work"). Never include it in any future sub outreach.
+- Pagosa: 5 of HQ's 6 new candidates + CRC/Evergreen still open; NO-BID default Mon 11/16 12:00. HQ 23:36Z scan: bidnet 666/85, samgov 100, vss 69/3, bonfire Cloudflare, dibbs not scanned; open matches 153; 0 new; AHEC CAVEA addendum (stays NO), Aims questions deadline 12/01.
+- Dashboard: bids v265 (6bd3e62052ff3f02b7f2ee5a02a385b0), events v267 (da35bb931ba405764355e212ae1c5f4e), portal_feed v133 (af6fbdda5356d569fa0966f4a02d7a5a), sources v223 (f2a4193e98cbec149e42d9e71aa21ffe), doc_gaps v10.
