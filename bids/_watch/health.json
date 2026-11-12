@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-12T22:36:31+00:00",
+  "checked_at": "2026-11-12T23:35:50+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 638,
+      "count": 635,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
@@ -12,14 +12,14 @@
       "detail_cut": {
         "budget_s": 600.0,
         "done": 7,
-        "elapsed_s": 608.2,
+        "elapsed_s": 608.1,
         "source": "bidnet",
         "total": 91
       },
       "errors": [
         "detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-12T22:36:31+00:00",
+      "last_success": "2026-11-12T23:35:50+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
       "matches": 82,
@@ -27,7 +27,7 @@
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 189,
-        "statewide BUYER": 450
+        "statewide BUYER": 447
       }
     },
     "bonfire": {
@@ -39,14 +39,14 @@
       "detail_cut": {
         "budget_s": 600.0,
         "done": 0,
-        "elapsed_s": 614.1,
+        "elapsed_s": 614.0,
         "source": "bonfire",
         "total": 1
       },
       "errors": [
         "detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-12T22:36:31+00:00",
+      "last_success": "2026-11-12T23:35:50+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -55,26 +55,26 @@
     },
     "coloradovss": {
       "complete": true,
-      "count": 67,
+      "count": 65,
       "creds": {},
       "detail_cut": {
         "budget_s": 600.0,
         "done": 0,
-        "elapsed_s": 625.2,
+        "elapsed_s": 626.9,
         "source": "coloradovss",
         "total": 3
       },
       "errors": [
         "detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-12T22:36:31+00:00",
+      "last_success": "2026-11-12T23:35:50+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 67
+        "statewide open": 65
       }
     },
     "dibbs": {
@@ -107,7 +107,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-12T22:36:31+00:00",
+      "last_success": "2026-11-12T23:35:50+00:00",
       "logged_in": true,
       "login_note": "API key; +31 from the nightly bulk file",
       "matches": 97,

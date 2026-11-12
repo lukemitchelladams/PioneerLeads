@@ -3,9 +3,9 @@
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Live",
   "detail": "logged in (attempt 1); detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details",
-  "open_count": 638,
+  "open_count": 635,
   "matches": 82,
-  "last_success": "2026-11-12T22:36:31+00:00"
+  "last_success": "2026-11-12T23:35:50+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
@@ -13,7 +13,7 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set; detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-12T22:36:31+00:00"
+  "last_success": "2026-11-12T23:35:50+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "API key; +31 from the nightly bulk file",
   "open_count": 97,
   "matches": 97,
-  "last_success": "2026-11-12T22:36:31+00:00"
+  "last_success": "2026-11-12T23:35:50+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -35,9 +35,9 @@
   "source": "ColoradoVSS (State of Colorado)",
   "status": "Live (public, not logged in)",
   "detail": "public list (no login); detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details",
-  "open_count": 67,
+  "open_count": 65,
   "matches": 3,
-  "last_success": "2026-11-12T22:36:31+00:00"
+  "last_success": "2026-11-12T23:35:50+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
