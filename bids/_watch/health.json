@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-12T18:36:19+00:00",
+  "checked_at": "2026-11-12T19:35:47+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 660,
+      "count": 657,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-12T18:36:19+00:00",
+      "last_success": "2026-11-12T19:35:47+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 86,
-      "reach_note": "HTTP 202",
+      "matches": 85,
+      "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 195,
-        "statewide BUYER": 466
+        "statewide AGGREGATE": 194,
+        "statewide BUYER": 464
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-12T18:36:19+00:00",
+      "last_success": "2026-11-12T19:35:47+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-12T18:36:19+00:00",
+      "last_success": "2026-11-12T19:35:47+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -75,21 +75,16 @@
       }
     },
     "samgov": {
-      "bulk_added": 36,
-      "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 92 matching (parsed earlier)",
-      "carried_forward": true,
-      "complete": false,
+      "bulk_added": 31,
+      "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 92 matching of 15134 open notices",
       "count": 97,
       "creds": {
         "SAM_API_KEY": true
       },
-      "errors": [
-        "SAM.gov {'ccode': '3130'}: HTTP 500 Internal Server Error {\"timestamp\":\"2026-11-12T18:41:53.870Z\",\"path\":\"/api/prod/opportunities/v2/search\",\"status\":500,\"error\":\"Internal Server Error\",\"requestId\":\"97f9b268-138418941\"}",
-        "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-11-12T18:36:19+00:00",
+      "errors": [],
+      "last_success": "2026-11-12T19:35:47+00:00",
       "logged_in": true,
-      "login_note": "API key; +36 from the nightly bulk file",
+      "login_note": "API key; +31 from the nightly bulk file",
       "matches": 97,
       "reach_note": "HTTP 404",
       "reachable": true
