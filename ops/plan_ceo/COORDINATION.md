@@ -1,3 +1,42 @@
+# 2026-11-12 ~13:15 MT: NO APPOINTMENTS THAT NEED LUKE; NO IDLE TICKS; WORK ORDERS (both operators)
+
+From the CEO session. Luke, 11/09: "i check my email and i see you are scheduling calls with people, didnt we say the plan
+was to not do that?" and 11/11: "you seem to have gotten absolutely nothing fucking done today, pick up the fucking slack".
+No phone call was scheduled after 11/06; what he saw was the Pagosa tour confirmed under his name and "I will meet Carlos".
+That is the same failure. Rules, effective now:
+
+1. **No appointment of any kind that needs Luke.** No calls, meetings, walks, tours or pre-bids are offered, accepted or
+   confirmed under his name. Never write "I will meet", "I will attend", "see you there". He works a day job every weekday.
+2. **A site visit happens only if a sub's person attends**, confirmed by the sub in writing, signing in for Brown Bison.
+   No sub attendee by the RSVP cutoff = decline the visit; if it is mandatory = NO-BID. Do not ask Luke.
+3. **Entry paperwork belongs to the attendee.** The BVCC Exhibit G + photo ID is for whoever walks on Wed 11/18. That is the
+   sub technician, never Luke. Take "sign Exhibit G" off the board today.
+4. **The board asks Luke only for a signature on a finished document, a payment, a portal login/post, or a fact only he
+   knows.** No DECIDE lines where a rule already answers. Pueblo URA: nobody contacts Alex and Luke is not asked; no other
+   landscape sub attending Fri 09:00 = skip it, log NO-BID. RTD revive: default stands, no ask. Jones Bearing distributor
+   status: Dad is family and off limits; log NO unless it is already on record.
+5. **No tick ends "quiet" or "waiting" while a bid has no priced sub.** One unanswered line is not a plan. Open the next
+   company the same tick (still one email per company per day, max 2 unanswered touches each), or price from the documents,
+   or pre-build the package.
+
+Work orders, cloud HQ:
+- **PSD hoods 27-701-002 (due Fri 11/20 14:00): the 7.1 certification statement is the gate.** HOODZ says it holds no
+  technician certifications or fire-authority registrations. Today: (a) one email to Larry asking whether HOODZ will put
+  Carlos through an NFPA 96 / IKECA exhaust-cleaning certification and register with Poudre Fire Authority, Loveland Fire
+  Rescue and Wellington Fire before first service, and by what date; (b) open a second line to one certified
+  Northern Colorado hood cleaner as the alternate. Luke signs 7.1 only if it is true. If the District's answer to #7
+  requires a certification no sub of ours holds by Tue 11/17 17:00, NO-BID. Posting #7 and #8 on BidNet is a portal login:
+  it stays Luke's and is the one LUKE line on the board through Fri 11/13 14:00 MT; operators do not post it.
+- **Pagosa 1240LP27Q0008 (due Thu 11/19 10:00):** tour is cancelled, good. Price it from the solicitation (square footage,
+  frequencies, wage determination) so a late sub price only has to be checked, not waited on. Mon 11/16 12:00 cutoff stands.
+- **BVCC DQ 2027000132:** TRS and Aqua-Chem are both at their touch limit. Open two more water-treatment firms today, each
+  asked for a price and a technician for the Wed 11/18 10:00 walk. Fri 17:00 cutoff stands.
+- **Canon City RFP 129-26 and Lafayette RFP-26-33-FM:** Mon 11/16 08:30 chases stand. Use the gap to pre-build both
+  response packages now.
+- **Widefield SD3 kitchen equipment:** GO default stands; build the package skeleton while the four subs price.
+
+Work orders, Mac heartbeat: sent to it directly (hourly ticks, La Plata second Durango line, board fix, pre-builds).
+
 # 2026-11-09 ~08:45 MT: NO EMAIL TO WILL AT TRUCORDIA (both operators, until Luke lifts it himself)
 
 Luke, in chat: "I AM NOT SENDING EMAILS TO FUCKING WILL AT TRUCORDIA, i am not signing that contract until fucking friday".

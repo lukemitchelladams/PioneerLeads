@@ -54,6 +54,16 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
    product supply (filters, parts) is not worth Brown Bison's time unless volume is proven (Luke, 2026-10-19).
 
 ## Standing rules from Luke
+- **HARD RULE: no appointments that need Luke, and no idle ticks** (Luke, in chat, 2026-11-09: "i check my email and i see
+  you are scheduling calls with people, didnt we say the plan was to not do that?"; 2026-11-11: "you seem to have gotten
+  absolutely nothing fucking done today, pick up the fucking slack"). No call, meeting, walk, tour or pre-bid is offered,
+  accepted or confirmed under Luke's name; never write "I will meet" or "I will attend". A site visit happens only with a
+  sub's person attending, confirmed in writing and signing in for Brown Bison; otherwise decline it, and if it is mandatory
+  log NO-BID. Entry paperwork (Exhibit G, photo ID) is the attendee's, never Luke's. The board asks Luke only for a
+  signature on a finished document, a payment, a portal login/post, or a fact only he knows; no DECIDE line where a rule
+  already answers, and nothing that routes through family or Alex. No tick ends "quiet" or "waiting" while a live bid has
+  no priced sub: open the next company, price from the documents, or pre-build the package. Detail and current work orders:
+  ops/plan_ceo/COORDINATION.md, 2026-11-12 section.
 - **HARD RULE: do every single thing you can yourself and send Luke a copy for approval; "LUKE MUST DO" is for
   signatures, photo ID, portal uploads, payments and walks a human must stand at** (Luke, 2026-11-08 14:57 MT, by email,
   verbatim: "Lots of this shit listed here you can make decisions on your own and keep moving, you can do all those
