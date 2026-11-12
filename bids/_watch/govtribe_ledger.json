@@ -2703,6 +2703,24 @@
    "verdict": "NO",
    "why": "Professional civil engineering services (licensed PE work), not one of our trades; heavy-civil adjacent (rule 8). Addendum 1 noted 11/12 scan; no action.",
    "at": "2026-11-12T01:30:00Z"
+  },
+  "04b0549983ea4b7687b6280f65b9dc1e": {
+   "name": "DLA Aviation SPE4A727T3860 CONVEYOR, ROLLER ASSEMB NSN 1560-00-021-5167 (3 EA)",
+   "verdict": "NO",
+   "why": "HQ 11/12 05:47Z: aircraft structural part (FSC 1560), not a Jones Bearing / American Pulley product.",
+   "at": "2026-11-12T06:25:00Z"
+  },
+  "994aa9e06162482d9a3c07be9ba67263": {
+   "name": "DLA Troop Support SPE8EF27T0258 ROLLER, CONVEYOR NSN 3910-00-243-5401 (334 + 1 EA, Warner Robins)",
+   "verdict": "EVALUATE",
+   "why": "HQ 11/12 05:47Z: Jones Bearing profile; small-business set-aside; closes 2026-11-23; DIBBS electronic quote (cloud-blocked). GO only if the NSN matches an American Pulley / Jones Bearing roller; Mac/Luke pull the DIBBS tech data. Folder bids/_jones-bearing/notices/994aa9e06162482d9a3c07be9ba67263/.",
+   "at": "2026-11-12T06:25:00Z"
+  },
+  "bidnet:0000443313": {
+   "name": "Colorado Convention Center RFP 2026-1400-1718713 Interior Stout Street Corridor LED Lighting Upgrade",
+   "verdict": "EVALUATE",
+   "why": "HQ 11/12 05:47Z: electrical via sub; closes 2026-11-25; MANDATORY job walk Tue 2026-11-17 12:00 MST, CCC Security Office, 12th & Welton (5 days out: Brown Bison attendee needed, sub prices from photos if under 7 days). Watchlisted; pipeline ccc-stout-corridor-led-1718713.",
+   "at": "2026-11-12T06:25:00Z"
   }
  },
  "watched": {
@@ -2888,6 +2906,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T05:24:00Z",
+ "last_hourly_check": "2026-11-12T06:25:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
