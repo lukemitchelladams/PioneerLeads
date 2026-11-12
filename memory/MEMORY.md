@@ -1615,3 +1615,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **DO NOT CONTACT: Tidy Team LLC (Alamosa, tidyteamcollc@gmail.com)**: asked 11/11 23:43Z to be removed from our list ("we do not do subcontracted work"). Never include it in any future sub outreach.
 - Pagosa: 5 of HQ's 6 new candidates + CRC/Evergreen still open; NO-BID default Mon 11/16 12:00. HQ 23:36Z scan: bidnet 666/85, samgov 100, vss 69/3, bonfire Cloudflare, dibbs not scanned; open matches 153; 0 new; AHEC CAVEA addendum (stays NO), Aims questions deadline 12/01.
 - Dashboard: bids v265 (6bd3e62052ff3f02b7f2ee5a02a385b0), events v267 (da35bb931ba405764355e212ae1c5f4e), portal_feed v133 (af6fbdda5356d569fa0966f4a02d7a5a), sources v223 (f2a4193e98cbec149e42d9e71aa21ffe), doc_gaps v10.
+
+### 2026-11-12 00:48Z hourly (17:35 MT 11/11) scan, HQ
+- Fresh BidNet login 00:37Z clean (attempt 1; 23 clean in a row). bidnet 664/84, samgov 90/90, coloradovss 69/3, bonfire 2/1 (Cloudflare), dibbs not scanned. Push 532a42c. 0 new; watched changes on two NO bids (civil engineering on-call RFQ Addendum 1; CAVEA Lighting on VSS, closing 11/30). 0 docs.
+- Tidy Team LLC (Emilio Leon, tidyteamcollc@gmail.com) declined Pagosa 23:43Z and asked to be removed from our list. Enforced in code: `NO_CONTACT_ADDRS` in scripts/humanize_gate.py (both send paths route through `no_contact_hits`), with tests (bare, display form, any case, inside a group). No reply sent to Tidy Team (a reply would be another contact). Five Pagosa candidates remain asked (Mountain West, 4 Ever, PMI, Clean Rite, Pagosa Cleaning Co) plus CRC/Evergreen; NO-BID default Mon 11/16 12:00.
+- Still no reply from PSD strategic sourcing (sign-in sheet), TRS, Aqua-Chem, Clean Conscience (pricing) or Luke. Keepalive restarted (pid 325).

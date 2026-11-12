@@ -1396,6 +1396,10 @@ def test_phone_corpus_report(capsys):
     (["Will Seargeant <will.seargeant@trucordia.com>"], (), True), (["nina@example.gov", "x@mail.trucordia.com"], (), True),
     ([], ("1a18d7978980da62",), True), (["nina@example.gov"], (), False), (["nottrucordia@example.com"], (), False),
     (["lukemitchelladams@gmail.com"], (), False),
+    # Tidy Team LLC asked to be removed from our list (2026-11-11): blocked bare, display-form, any case, inside a group
+    (["tidyteamcollc@gmail.com"], (), True), (["Emilio Leon <TidyTeamCOLLC@gmail.com>"], (), True),
+    (["contact@callmw.com", "tidyteamcollc@gmail.com"], (), True), (["contact@callmw.com", "info@4evercleaners.com"], (), False),
+    (["tidyteamcollc@gmail.com.example.net"], (), False),
 ])
-def test_no_contact_trucordia(rcpts, ids, want):  # Luke, 2026-11-09
+def test_no_contact_trucordia(rcpts, ids, want):  # Luke, 2026-11-09; removal requests 2026-11-11
     assert bool(gate.no_contact_hits(rcpts, ids)) is want

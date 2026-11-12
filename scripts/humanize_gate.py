@@ -1138,10 +1138,23 @@ NO_CONTACT_REFUSAL = ("NO CONTACT: Luke's rule 2026-11-09: no email to Will Sear
                       "Not sent. Do not reword or reroute it; if Will writes in, log it and put one line on the board.")
 
 
+# Firms that asked to be removed from our list. Tidy Team LLC (Alamosa), 2026-11-11 23:43Z, on the Pagosa group send: "we do not do
+# subcontracted work ... Please remove us from your list." A removal request is honoured for every bid, for good.
+NO_CONTACT_ADDRS = frozenset({"tidyteamcollc@gmail.com"})
+_ADDR_IN_RCPT = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", re.I)
+
+
 def no_contact_hits(recipients, ids=()):
-    """The recipients (or thread/message ids) that are off limits under Luke's 2026-11-09 no-Trucordia rule; [] when clear."""
+    """The recipients (or thread/message ids) that are off limits: Luke's 2026-11-09 no-Trucordia rule, plus any address in
+    NO_CONTACT_ADDRS (a firm that asked to be removed from our list). [] when clear."""
     vals = [recipients] if isinstance(recipients, str) else list(recipients or [])
-    hits = [str(r) for r in vals if r is not None and NO_CONTACT_RE.search(str(r))]
+    hits = []
+    for r in vals:
+        if r is None:
+            continue
+        s = str(r)
+        if NO_CONTACT_RE.search(s) or any(a.lower() in NO_CONTACT_ADDRS for a in _ADDR_IN_RCPT.findall(s)):
+            hits.append(s)
     return hits + [str(i) for i in ids if str(i).strip() in NO_CONTACT_IDS]
 
 
