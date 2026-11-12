@@ -1678,3 +1678,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 07:38Z hourly (00:35 MT) scan, HQ
 - BidNet in cool-down until 08:37:43Z (robot check 06:37Z): bidnet BLIND (664/84 carried forward), samgov 92/92, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push 05c2e3d, exit 3. 0 new, 0 changes, 0 docs. Inbox empty. Keepalive restarted (pid 316). No email sent. The 01:35 MT launch waits for the cool-down end so the scan logs in right after it lifts.
+
+### 2026-11-12 08:21Z hourly (worker)
+- HQ 07:36Z scan: BidNet BLIND (cool-down after the 06:37Z robot check); samgov 92, coloradovss 69/3, bonfire Cloudflare, dibbs not scanned. Open matches 149 (rows kept).
+- NEW lead via BidNet's own profile-alert email (1a1ceb25ddf21fb6, 07:39Z): **Widefield School District 3 Kitchen Equipment Maintenance and Repair** (BidNet 0000443304, El Paso County), closes 2026-12-11. The scanner has listed it since 11/11 19:36Z but matched NO profile ("kitchen equipment" is not a brownbison keyword), so nobody triaged it. Worker: ledger EVALUATE + watchlist entry so the next logged-in scan pulls the docs; rule 0 (pre-bid / mandatory walk) still unknown. HQ: consider adding "kitchen equipment" to the brownbison profile.
+- GovTribe S&L UPGRADE_REQUIRED.
+- Dashboard: bids v273 (881b75cb60415eb940ba5d07c4be6f58), events v275 (0a481c24af5a1a644812cfdb918932c5), portal_feed v137 (2e8baaa13d13ef5ef930aebead85d9e2, unchanged), sources v231 (d6e85f63f327913f9c98aa8877b1dc71), doc_gaps v10.

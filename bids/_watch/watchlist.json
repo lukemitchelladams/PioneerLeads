@@ -677,6 +677,14 @@
    "source": "samgov",
    "match": "SPE8EF27T0258",
    "folder": "bids/_jones-bearing/notices/994aa9e06162482d9a3c07be9ba67263"
+  },
+  {
+   "name": "Widefield SD3 Kitchen Equipment Maintenance and Repair (EVALUATE; pre-bid/walk unknown until docs pulled; due 2026-12-11)",
+   "source": "bidnet",
+   "id": "0000443304",
+   "match": "kitchen equipment maintenance",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
