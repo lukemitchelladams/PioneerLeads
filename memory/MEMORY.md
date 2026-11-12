@@ -1799,3 +1799,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Boulder 44-2026 Streetlight Materials & Installation (BidNet 0000441022) addendum notice 18:53Z (1a1d11b5712eac1d): bid is NO (rule 8 civil + bonds); worker fixed its stale "EVALUATE" watchlist label to NO.
 - Inbox otherwise: nothing new from subs, HOODZ, Widefield, BVCC or La Plata. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v285 (93fd82b027aafdf929fcc22fc784fa2b), events v287 (6fcc34fe0f50b256fab2efb8dedfb16f), portal_feed v145 (bedd553b5a99074f1b69df9d6d49020c), sources v242 (fe73fbafc7e2f6c4509b1dc9cde1da4c), doc_gaps v10.
+
+### 2026-11-12 19:47Z hourly (12:35 MT) scan, HQ
+- Fresh login 19:36:08Z clean (16:43Z session had expired ~3 h after login, as usual; no code, no robot check). All live: bidnet 657/85, samgov 97/97, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push dbe7511. 0 new. 2 docs: Boulder 44-2026 streetlight (NO, civil) Q&A + revised pay items -> download cache only (no folder). Changed: DLA SPRTA1-27-Q-0031 HOUSING, BEARING UNIT (NO since 11/05: aircraft part) posted its RFQ as a PDF portfolio; brief = synopsis-waiver memo. Inbox 18:36-19:36Z: only the Boulder addendum notice. No email sent.
