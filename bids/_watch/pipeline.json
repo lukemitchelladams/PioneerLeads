@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T11:48:22Z",
+ "updated": "2026-11-12T14:02:49Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -725,9 +725,9 @@
    "subs": "3 drafted 10/28",
    "folder": "bids/poudre-sd-kitchen-hood",
    "contact": "strategicsourcing@psdschools.org",
-   "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13:30 walk) | 11/11 22:17Z HOODZ (Larry): \"We do not have technician certifications or fire-authority registrations\"; Carlos is the inspector; 4 crews. Walk sign-in: \"Carlos signed in under Brown Bison Holdings\" (HOODZ 22:53Z). AHJ statement (IFB 7.1) on hold = RISK. | 11/11: HOODZ has no certifications/AHJ registrations (Larry); IFB 7.1 statement cannot be signed as drafted until the District says what each AHJ requires.",
+   "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13 | 11/12: per-school figure needs a D4/D5 split and confirmation for second kitchens, dish hoods, 3-4 hood sites, travel, after-2pm; 15 questions sent to HOODZ 1a1d0111ba12e68a, answers by Mon 11/16.",
    "notes": "Questions deadline 2026-11-13 (BidNet Q&A tab, 14:39Z scan).",
-   "next": "Walk Tue 11/10 covered by Carlos Ahedo (HOODZ): photos + notes for all three schools arrived 11/11 22:24-22:34Z (private/WALK-NOTES-2026-11-10.md). Larry Moss 22:17Z: NO technician certifications or fire-authority registrations; inspector name Carlos Ahedo; four crews spring break/summer; 24-h contact Carlos. Sign-in name ANSWERED by HOODZ 22:53Z (Larry, 1a1ccd099301d9af): \"Carlos signed in under Brown Bison Holdings\" (PSD strategic sourcing confirmation of the sheet still open, asked 15:42Z). AHJ-certification question drafted for BidNet (vendor-questions.md #7), must be POSTED by Fri 11/13 14:00 MT (Luke or Mac; HQ cannot post). Draft copy to Luke Thu 11/12 12:00 MT with the 7.1 statement on HOLD until the AHJ answer. Due Fri 11/20 14:00."
+   "next": "Luke approves the review draft by Thu 11/19 12:00 MT (sent 11/12 1a1d011146984fbf); Luke/Mac post BidNet questions #7 (AHJ certification) and #8 (dish hoods) by Fri 11/13 14:00 MT; HOODZ answers 15 pricing questions by Mon 11/16 (1a1d0111ba12e68a); HQ fills Attachment D after; 7.1 statement HOLD until PSD answers."
   },
   {
    "id": "boulder-bid-321-26",

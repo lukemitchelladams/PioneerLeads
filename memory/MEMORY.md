@@ -1737,3 +1737,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 13:44Z hourly (06:35 MT) scan, HQ
 - Logged in attempt 1 (saved session from 12:38Z reused; no fresh login, no robot check). All live: bidnet 664/84, samgov 93/93, coloradovss 69/3, bonfire 2/1 (Cloudflare on detail), dibbs not scanned. Push 8f095c7. 0 new, 0 changes, 0 docs. Inbox 12:35-13:35Z: nothing inbound beyond BidNet closing reminders. No email sent. Container slept again 12:46-13:35Z (keepalive restarted pid 181).
+
+### 2026-11-12 14:05Z CEO plan + PSD draft, HQ
+- Plan ops/plan_ceo/2026-11-12.md (ff79c64). Subagent built the PSD IFB 27-701-002 review draft (private/BID-RESPONSE-DRAFT.md, 16 parts; 25-page PDF; PRICING-WORKSHEET reconciled to the walk, 14 flags) and OPEN-ITEMS.md (scratchpad psd_draft/). 7.1 certification statement HOLD with Text A/B. HQ defaults: 15% markup, 15% parts, no insurance exception; Luke overrules by Thu 11/19 12:00 MT.
+- SENT 14:02Z: Luke's copy (draft PDF + HOODZ question sheet) 1a1d011146984fbf to lukemitchelladams@gmail.com; HOODZ (Larry, cc Carlos) 15 pricing questions + blank D24-D34 / filter / hours tables as a 3-page PDF, 1a1d0111ba12e68a, answers by Mon 11/16. Gate lesson: the closer must be "Thanks <recipient first name>," ("Thanks Larry,"), never "Thanks Luke,".
+- Vendor question #8 (Traut 3x3 dish hood not on the List of Kitchen Hoods) added to vendor-questions.md; #7 and #8 both need posting on BidNet by Fri 11/13 14:00 MT (Luke or Mac).
+- Scanner subagent (worktree) is building the SAM.gov new-match brief (noticedesc + CAGE lookup); HQ cherry-picks after the 07:35 MT scan.

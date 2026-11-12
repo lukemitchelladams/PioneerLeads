@@ -1,0 +1,8 @@
+Luke: attached is the PSD IFB 27-701-002 kitchen hood review draft, Brown-Bison-PSD-IFB-27-701-002-DRAFT-2026-11-12.pdf. Full bid in IFB order; the pricing worksheet is an internal appendix at the back and is not part of the submission.
+Section 7.1 AHJ certification statement is on HOLD until PSD answers vendor question 7. Two ready texts are in Part 5: A if no named certification is required, B if one is (B needs HOODZ's written commitment or a certified sub, else NO-BID).
+Pricing flags: HOODZ gave one per-school number, not split into inspection and cleaning; it is unconfirmed for the second Fossil Ridge kitchen, the dish hoods, the 3- and 4-hood sites, travel from Englewood, after-2pm cleaning and the Compliance Engine fee; 20 Attachment D lines have no HOODZ rate. HQ sends HOODZ the 15 questions in the worksheet.
+HQ defaults unless you overrule by Thu 2026-11-19 12:00 MT: no insurance exception with the bid; 15 percent markup and 15 percent parts markup; your usual number on the two forms; nothing marked confidential.
+YOU: post vendor question 7 on BidNet by Fri 2026-11-13 2:00 PM MT (text is ready in vendor-questions.md).
+YOU: approve this draft by Thu 2026-11-19 12:00 MT; then sign forms 12.0 and 13.0 and approve the Attachment D prices. Closing is Fri 2026-11-20 on BidNet; time to be confirmed there.
+Still open: Attachment F sample agreement download, PSD confirmation of the sign-in sheet, HOODZ references and company paragraph, any addendum posted after the site visit.
+Everything else is listed in OPEN-ITEMS.md with where each answer comes from.

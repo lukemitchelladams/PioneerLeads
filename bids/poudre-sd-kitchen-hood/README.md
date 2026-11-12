@@ -15,3 +15,5 @@ Decision: **EVALUATE** (2026-10-26). Brown Bison bids; a hood-cleaning sub perfo
 ## Next
 1. Line up a hood-cleaning sub before 11/10 (sub tech or Luke attends; RSVP by email). Sub pricing goes in `private/`.
 2. Read Attachment E insurance and Attachment A access-panel language before pricing.
+
+- 2026-11-12: review draft (25 pp) with Luke 1a1d011146984fbf (approve by Thu 11/19 12:00 MT). HOODZ asked the 15 pricing questions 1a1d0111ba12e68a (answers Mon 11/16). 7.1 certification statement HOLD pending BidNet questions #7 and #8 (post by Fri 11/13 14:00 MT). Prices only in private/.

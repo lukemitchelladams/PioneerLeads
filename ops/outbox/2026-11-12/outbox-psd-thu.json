@@ -1,0 +1,17 @@
+[
+ {
+  "key": "psd-draft-copy-luke",
+  "subject": "PSD IFB 27-701-002 kitchen hoods: review draft attached (approve by Thu 11/19 12:00 MT; post question 7 by Fri 2:00 PM)",
+  "to": ["lukemitchelladams@gmail.com"],
+  "body_file": "ops/outbox/2026-11-12/psd-draft-copy-luke.txt",
+  "files": ["bids/poudre-sd-kitchen-hood/private/Brown-Bison-PSD-IFB-27-701-002-DRAFT-2026-11-12.pdf", "bids/poudre-sd-kitchen-hood/private/HOODZ-pricing-questions-2026-11-12.pdf"]
+ },
+ {
+  "key": "hoodz-pricing-questions",
+  "subject": "Poudre School District kitchen hoods (IFB 27-701-002): pricing questions for your annual figure",
+  "to": ["larry.moss@hoodz.us.com"],
+  "cc": ["carlos.ahedo@hoodz.us.com"],
+  "body_file": "ops/outbox/2026-11-12/hoodz-pricing-questions.txt",
+  "files": ["bids/poudre-sd-kitchen-hood/private/HOODZ-pricing-questions-2026-11-12.pdf"]
+ }
+]

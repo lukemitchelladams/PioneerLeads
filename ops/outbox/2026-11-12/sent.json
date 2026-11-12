@@ -8,5 +8,29 @@
       "RFP 26-27-013 - Kitchen Equipment Maintenance and Repair.pdf"
     ],
     "asks": 0
+  },
+  "psd-draft-copy-luke": {
+    "id": "1a1d011146984fbf",
+    "threadId": "1a1d011146984fbf",
+    "to": [
+      "lukemitchelladams@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Brown-Bison-PSD-IFB-27-701-002-DRAFT-2026-11-12.pdf",
+      "HOODZ-pricing-questions-2026-11-12.pdf"
+    ]
+  },
+  "hoodz-pricing-questions": {
+    "id": "1a1d0111ba12e68a",
+    "threadId": "1a1d0111ba12e68a",
+    "to": [
+      "larry.moss@hoodz.us.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "HOODZ-pricing-questions-2026-11-12.pdf"
+    ],
+    "asks": 0
   }
 }
