@@ -2745,6 +2745,18 @@
    "verdict": "NO",
    "why": "HQ 11/12 14:55Z: gate/fencing construction, not our trades; site visit was 10/26 (past).",
    "at": "2026-11-12T15:25:00Z"
+  },
+  "d9d578bda92d4dd7a7bf7b5612302637": {
+   "name": "DLA Aviation SPE4A627RX158 BEARING, ROLLER NSN 3110-01-051-1649 (closes 2026-12-03)",
+   "verdict": "NO",
+   "why": "HQ 11/12 16:55Z: approved source Hamilton Sundstrand (CAGE 99167) only; aerospace part.",
+   "at": "2026-11-12T17:26:00Z"
+  },
+  "9e7057b68eff46849d6de2cb28834363": {
+   "name": "DLA Aviation SPE4A627RX186 BEARING, ROLLER, NEEDLE NSN 3110-00-902-3835 (closes 2026-12-03)",
+   "verdict": "EVALUATE (weak)",
+   "why": "HQ 11/12 16:55Z: approved source JTEKT (CAGE 5XMS1), estimated annual demand 398, 5-yr IDC, 120 days ARO, Bearing Restriction; GO only if Jones Bearing can buy through a JTEKT distributor (DECIDE for Luke/Dad).",
+   "at": "2026-11-12T17:26:00Z"
   }
  },
  "watched": {
@@ -2930,6 +2942,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T16:26:00Z",
+ "last_hourly_check": "2026-11-12T17:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

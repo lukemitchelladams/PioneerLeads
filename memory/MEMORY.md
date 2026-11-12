@@ -1775,3 +1775,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Triage: SPE4A627RX158 Bearing, Roller (approved source Hamilton Sundstrand 99167, EAD 155, 644 days ARO) = NO. SPE4A627RX186 Bearing, Roller, Needle (approved source JTEKT 5XMS1, EAD 398/yr, 5-yr IDC, 120 days ARO, Bearing Restriction) = EVALUATE weak, folder + pipeline + watchlist; DECIDE for Luke/Dad on JTEKT distributor access (joins the American Metal Bearing question).
 - Brief tweak to ship next: DLA Aviation text uses "Approved Source: <name> (CAGE)" / "CAGE 5XMS1" and "Estimated Annual Demand is N"; add approved_sources + annual_demand to describe_notice/brief_line.
 - Inbox 15:35-16:35Z: no inbound (the 3 La Plata threads that matched newer_than:1h hold only our own 11/04 + 11/09 sends). No email sent.
+
+### 2026-11-12 17:22Z hourly (worker)
+- HQ 16:42Z scan: all live again (bidnet 672/84 fresh login clean, samgov 97, coloradovss 70/3), bonfire Cloudflare, dibbs not scanned; open matches 153. 2 new DLA Aviation bearings (HQ triaged; worker ledgered both): SPE4A627RX158 roller bearing NO (Hamilton Sundstrand approved source); SPE4A627RX186 needle bearing EVALUATE weak (JTEKT 5XMS1 approved source, EAD 398/yr, 5-yr IDC, closes 12/03), a DECIDE for Luke/Dad on JTEKT distributor access, next to the American Metal Bearing question.
+- Inbox: no new inbound (the same three La Plata threads match the search but hold only our sends). GovTribe S&L UPGRADE_REQUIRED.
+- Dashboard: bids v283 (c01baf9680f6a504f5ad0c0b8a5674d4), events v285 (98241173af182d3be5fa1d726c3d3dba), portal_feed v143 (c2f60c821e79f6c5f1bde3e86c78e947), sources v240 (14794065a78e6b7db044c64b60a833e9), doc_gaps v10.

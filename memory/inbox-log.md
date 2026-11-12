@@ -430,3 +430,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-12 16:21Z hourly (worker, read-only)
 - No new inbound. The search matched La Plata threads 1a1a86d76027221c / 1a1a86de34783287 / 1a1ac64fd8204046, which hold only our sends (no sub replies). No bounces. Nothing from Luke.
+
+## 2026-11-12 17:22Z hourly (worker, read-only)
+- No new inbound (La Plata threads are index false positives with only our sends). No bounces. Nothing from Luke; no CRM brief.
