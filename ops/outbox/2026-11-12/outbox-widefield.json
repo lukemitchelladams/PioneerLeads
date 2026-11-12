@@ -1,0 +1,17 @@
+[
+ {
+  "key": "widefield-kitchen-subs",
+  "subject": "Widefield School District 3 kitchen equipment maintenance and repair (RFP 26-27-013): sub pricing",
+  "bcc": [
+   "service1@hawkinscommercial.com",
+   "lee@hawkinscommercial.com",
+   "service@maintenancechef.com",
+   "officeinfo.5star@gmail.com",
+   "info@smartcaresolutions.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/widefield-kitchen-subs.txt",
+  "files": [
+   "bids/_watch/downloads/bidnet/0000443304/RFP 26-27-013 - Kitchen Equipment Maintenance and Repair.pdf"
+  ]
+ }
+]

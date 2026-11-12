@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T08:45:43Z",
+ "updated": "2026-11-12T09:43:12Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1692,15 +1692,16 @@
    "due": "2026-12-11T00:00:00-07:00",
    "due_source": "RFP cover: 'Proposal Submission Deadline: 12/11/2026' (time not stated; submit via BidNet in PDF)",
    "portal": "BidNet Direct (PDF upload); questions via BidNet by 11/25, answers by addendum",
-   "decision": "EVALUATE",
+   "decision": "GO (HQ default 2026-11-12; Luke overrules by Mon 11/16 12:00 MT)",
    "decision_note": "BidNet profile match 11/12 07:39Z (worker watchlisted 08:21Z; HQ read the 11-page RFP 08:50Z). Scope: 'comprehensive diagnostic, repair, emergency response, and preventive maintenance services for commercial kitchen equipment' with a 'mandatory technician response time within two (2) hours'. Terms offered 1, 2 or 5 years; selection on qualifications/licensure, K-12 experience, personnel, approach, references, cost. Insurance per Attachment A (GL $1,000,000 single limit noted). No pre-bid or site visit listed in the RFP schedule. Needs a commercial kitchen equipment service sub (refrigeration/gas/electric cooking equipment) in the Colorado Springs/Fountain area who can hold a 2-hour response; HQ names candidates and decides GO/NO by Mon 11/16.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Brown Bison + commercial kitchen equipment service sub (TBD)",
-   "subs": "Candidates (worker sweep 11/12, none contacted; emails from search snippets): A Hawkins Commercial Appliance Service (Colorado Springs branch, CFESA, 24/7), Maintenance Chef LLC (schools/institutional, 24/7); B Five Star Restaurant Equipment Repair (CoS), Smart Care Equipment Solutions (K-12 offering, no CoS address); C Nextech (Denver). See ops/research/2026-11-12-widefield-kitchen-subs.md",
-   "sub_pricing": "None (not asked; EVALUATE)",
-   "folder": null,
-   "contact": "Purchasing Manager (name not in the RFP text read)"
+   "subs": "Hawkins Commercial Appliance (2 addresses), Maintenance Chef, Five Star Restaurant Equipment Repair, Smart Care asked 11/12 09:44Z (bcc, RFP attached); Nextech (Denver) held back",
+   "sub_pricing": "Pending: rates, PM pricing, 2-hour response confirmation, K-12 reference asked by Thu 12/04",
+   "folder": "bids/widefield-sd3-kitchen-equipment-26-27-013",
+   "contact": "Purchasing Manager (name not in the RFP text read)",
+   "next": "Chase silent firms Mon 11/16; confirm the 12/11 submission time on BidNet; proposal draft in private/ once a sub confirms the 2-hour response; questions via BidNet by 11/25."
   }
  ],
  "events": [
