@@ -15,3 +15,4 @@ Built 2026-11-05 by the hourly scan from the Sent folder (HQ sent these; subject
 
 ## Log
 - 2026-11-05 20:3xZ (hourly scan, read-only): file created (rule 0b); garrhs bounce recorded. No replies yet.
+- 2026-11-12 20:33Z: **BOUNCE**: the second Durango line to office@mandrplumbers.com (plumbing + HVAC sub rates, msg 1a1d1776856afb51) was blocked by the recipient server (mailer-daemon 1a1d17774d6ee672, "Message blocked"). This address is not usable; find another published contact or the next Durango firm. Sub cutoff Fri 11/13 17:00 MT (NO-BID default).

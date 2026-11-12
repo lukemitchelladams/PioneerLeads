@@ -444,3 +444,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-12 20:22Z hourly (worker, read-only)
 - 1a1d15dff70537b9 20:05Z Ceres (Monica): "Sounds good, thank you!" (ack). 1a1d16422fa809fd Google Workspace promo. No sub/buyer replies on BVCC, PSD, Widefield, La Plata, Pagosa. No bounces. Nothing from Luke.
+
+## 2026-11-12 21:21Z hourly (worker, read-only)
+- 1a1d17774d6ee672 20:33Z mailer-daemon: La Plata line to office@mandrplumbers.com BLOCKED (recorded in sub-outreach.md).
+- 1a1d19eb477290e5 BidNet addendum Douglas County 044-26 alarm monitoring (NO); 1a1d18d698c2db78 BidNet addendum Fort Collins 10366 Transfort doors (REVIVE-IF).
+- No sub/buyer replies. Nothing from Luke; no CRM brief.
