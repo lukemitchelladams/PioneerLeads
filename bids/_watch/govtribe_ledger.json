@@ -2718,14 +2718,14 @@
   },
   "bidnet:0000443313": {
    "name": "Colorado Convention Center RFP 2026-1400-1718713 Interior Stout Street Corridor LED Lighting Upgrade",
-   "verdict": "EVALUATE",
-   "why": "HQ 11/12 05:47Z: electrical via sub; closes 2026-11-25; MANDATORY job walk Tue 2026-11-17 12:00 MST, CCC Security Office, 12th & Welton (5 days out: Brown Bison attendee needed, sub prices from photos if under 7 days). Watchlisted; pipeline ccc-stout-corridor-led-1718713.",
+   "verdict": "NO (default)",
+   "why": "HQ 11/12 05:47Z: electrical via sub; closes 2026-11-25; MANDATORY job walk Tue 2026-11-17 12:00 MST, CCC Security Office, 12th & Welton (5 days out: Brown Bison attendee needed, sub prices from photos if under 7 days). Watchlisted; pipeline ccc-stout-corridor-led-1718713. | 11/12 08:52Z HQ read SOL1718713: CGL \"not less than $5,000,000 each occurrence\", Performance and Payment Bond, Denver prevailing wage, Lutron integration; HQ default NO-BID, Luke overrules by Fri 11/13 17:00.",
    "at": "2026-11-12T06:25:00Z"
   },
   "bidnet:0000443304": {
    "name": "Widefield School District 3 Kitchen Equipment Maintenance and Repair (El Paso County)",
    "verdict": "EVALUATE",
-   "why": "Found via BidNet profile alert email 11/12 07:39Z (msg 1a1ceb25ddf21fb6); scanner listed it since 11/11 19:36Z but matched no profile. Commercial kitchen equipment repair = facilities/refrigeration via a sub. Closes 2026-12-11. Rule 0: pre-bid/walk date and MANDATORY status unknown until the next logged-in BidNet scan downloads the docs (watchlisted). Scanner keyword gap: \"kitchen equipment\" not in the brownbison profile.",
+   "why": "Found via BidNet profile alert email 11/12 07:39Z (msg 1a1ceb25ddf21fb6); scanner listed it since 11/11 19:36Z but matched no profile. Commercial kitchen equipment repair = facilities/refrigeration via a sub. Closes 2026-12-11. Rule 0: pre-bid/walk date and MANDATORY status unknown until the next logged-in BidNet scan downloads the docs (watchlisted). Scanner keyword gap: \"kitchen equipment\" not in the brownbison profile. | 11/12 08:50Z HQ read RFP 26-27-013 (11 pp): no pre-bid or site visit listed (rule 0 clear); \"mandatory technician response time within two (2) hours\"; questions via BidNet by 11/25; due 12/11; GO/NO by Mon 11/16 pending a Colorado Springs-area kitchen equipment service sub.",
    "at": "2026-11-12T08:28:00Z"
   }
  },
@@ -2912,6 +2912,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T08:28:00Z",
+ "last_hourly_check": "2026-11-12T09:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
