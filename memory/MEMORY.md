@@ -1729,3 +1729,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Relaunched 12:38Z with the 0.9 h gap: fresh login 12:38:32Z clean (no code, no robot check; cooldown unchanged 08:37Z). All live: bidnet 664/84, samgov 93/93, coloradovss 69/3, bonfire 2/1 (Cloudflare on detail), dibbs not scanned. Push 8285ceb. 0 new, 0 docs.
 - FIX: BIDWATCH_BIDNET_LOGIN_GAP_H=0.9 now lives in ~/.brownbison/env (load_env_file setdefault), so every launch, HQ or worker, uses the 0.9 h gap without passing it. Rule stands: after a container sleep the saved session is dead; a fresh login inside the gap is the right call.
 - Inbox 11:35-12:35Z: only BidNet closing reminders (Arvada 26-FAC-055 GC = NO, Boettcher chiller = REVIVE-IF with 17:00 MT price cutoff today, Aurora ash B-4799 = NO-BID). No sub or buyer replies. No email sent.
+
+### 2026-11-12 13:23Z hourly (worker)
+- HQ 12:38Z scan: all live (bidnet 664 logged in, samgov 93, coloradovss 69/3), bonfire Cloudflare, dibbs not scanned; open matches 150; 0 new, 0 changes. Build OK after the 12:21Z fix.
+- Inbox: three BidNet closing reminders (Arvada 26-FAC-055 GC = NO; Jeffco Boettcher chiller = REVIVE-IF, price cutoff today 17:00 MT, none in hand; Aurora ash B-4799 = NO-BID), all already noted by HQ. Nothing from Luke; no CRM brief. GovTribe S&L UPGRADE_REQUIRED.
+- Dashboard: bids v279 (f74b9de01209130e3f6981f404e028cf), events v281 (9bcd7a74a6a01ac42f1ff502a28c918d), portal_feed v140 (c0d00c424bc6ca5737ea41028353d018), sources v236 (8b1206f38ba4b81a56c8606db26f04bd), doc_gaps v10.
