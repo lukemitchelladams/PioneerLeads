@@ -630,7 +630,7 @@
    "source": "bidnet",
    "id": "0000443113",
    "match": "0000443113|RFB-26-64|courthouse 1 interior wall",
-   "folder": null,
+   "folder": "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64",
    "govtribe_ids": []
   },
   {
@@ -730,10 +730,10 @@
    "govtribe_ids": []
   },
   {
-   "name": "CPW DQ1-PMAA-2027000176 Native Aquatic Species Facility heater replacement (EVALUATE; pre-bid 11/18 10:00, mandatory?; due 12/09 17:00)",
+   "name": "CPW DQ1-PMAA-2027000176 Alamosa heater replacement (EVALUATE; MANDATORY pre-bid 11/18 10:00, register by 11/17 17:00; due 12/09 17:00)",
    "source": "coloradovss",
    "match": "2027000176",
-   "folder": null,
+   "folder": "bids/cpw-alamosa-heater-replacement-dq1-2027000176",
    "govtribe_ids": []
   }
  ]

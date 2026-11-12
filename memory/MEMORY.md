@@ -1865,3 +1865,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   - CPW Alamosa A: Husmann Plumbing & Heating (info@husmannplumbing.co; documented commercial school boiler replacement in Fort Garland) and Surefire Heating and Cooling. B: Torres P&H, Flow Right (mechanical + electrical).
   - Courthouse 1 A: Ceres Construction (known sub) and South Valley Commercial (Centennial drywall). B: Wild Fox Painting, Drywall Partitions.
   - None contacted.
+
+### 2026-11-12 23:50Z worker sweep 2 applied (CPW Alamosa heater + Arapahoe Courthouse 1), HQ
+- VSS attachment download SOLVED by hand (click the aria-label "Attachment" element, then the file row): the CPW DQ PDF is in bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/ and bids/_watch/downloads/coloradovss/2027000176/. DQ facts: pre-bid MANDATORY Wed 11/18 10:00 MST at 6655 CR 106 South, Alamosa, registration with buyer Klay Tolleson by Tue 11/17 17:00; 6 heating units -> electric + electrical upgrades + garage heater; lump sum; quote due 12/09 17:00 by email or VSS. Scanner improvement to ship: coloradovss download via that click path.
+- SENT 23:4xZ: CPW ask to Husmann + Surefire (Alamosa) with the DQ attached (); Arapahoe RFB 26-64 painting ask to Wild Fox () with the RFB attached. Ceres (Monica) gets the Arapahoe attend-and-price ask Fri 08:30 MT (per-day rule). Both bids EVALUATE with sub-attendance gates; Boettcher chiller -> NO-BID (17:00 MT cutoff passed, no price).

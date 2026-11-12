@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T22:48:56Z",
+ "updated": "2026-11-12T23:32:02Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -439,8 +439,8 @@
    "due": "2026-11-17T10:00:00-07:00",
    "due_source": "Addendum 1",
    "portal": "BidNet",
-   "decision": "REVIVE-IF",
-   "decision_note": "BidNet Pre-Bidding Events: 'Onsite Visit, Attendance Recommended, 10/26/2026 10:00 AM MDT, 900 Colorow Road, Golden' (not mandatory). 5 docs downloaded to bids/_watch/downloads/bidnet/0000440224/. Decide by 10/23; HVAC sub needed. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): ITB 26-19289AP-FM, low bid; questions close 10/29 10:00; P&P bonds over $50k (BONDING GATE); umbrella $2M, pollution $1M, E&O $1M. 5 mech firms drafted 10/28 with package zip. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): Addendum 1 moved due to 2026-11-17 10:00. No bid bond; P&P >$50k at contract (surety needed). Re-chase 5 mech firms by 11/13. | 2026-11-10 06:50 MT HQ: 5 mechanical firms asked 10/28, none priced; NO-BID unless a price lands by Thu 11/12 17:00 MT (due 11/17 10:00); Addendum 2 filed.",
+   "decision": "NO-BID",
+   "decision_note": "BidNet Pre-Bidding Events: 'Onsite Visit, Attendance Recommended, 10/26/2026 10:00 AM MDT, 900 Colorow Road, Golden' (not mandatory). 5 docs downloaded to bids/_watch/downloads/bidnet/0000440224/. Decide by 10/23; HVAC sub needed. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): ITB 26-19289A | 2026-11-12 17:00 MT price cutoff passed with no sub price: NO-BID (due 11/17 10:00).",
    "prebid": "2026-10-26T10:00:00-06:00",
    "prebid_mandatory": false,
    "performer": "Sub TBD",
@@ -1772,16 +1772,36 @@
    "trade": "HVAC (heater replacement) + electrical; sub performs",
    "due": "2026-12-09T17:00:00-07:00",
    "due_source": "VSS closing_text '2026-12-09 17:00 MST'",
-   "portal": "Colorado VSS (public; one attachment PDF, not yet downloaded: VSS attachments need a browser click the scanner does not do)",
-   "decision": "EVALUATE (default NO-BID Mon 11/16 12:00 MT unless the DQ shows the 11/18 pre-bid is optional and an HVAC sub serving the San Luis Valley is found)",
-   "decision_note": "Surfaced 2026-11-12 21:06Z scan. VSS description: 'Pre-bid meeting is 11/18 at 10:00 AM MST. See section 1.4 of the attachment' (mandatory or not: not yet read). Commodity 99852 HVAC equipment. The CPW Native Aquatic Species Restoration Facility is in Alamosa; our HVAC subs are Front Range. Per the 11/12 rule a pre-bid is attended only by a sub's person.",
+   "portal": "Colorado VSS; quote 'via email or Colorado.gov/vss' (Attachment 1 Submission Form); DQ PDF in docs/",
+   "decision": "EVALUATE (default NO-BID Mon 11/16 12:00 MT unless Husmann or Surefire confirms a person for the MANDATORY 11/18 10:00 pre-bid)",
+   "decision_note": "Surfaced 2026-11-12 21:06Z scan. VSS description: 'Pre-bid meeting is 11/18 at 10:00 AM MST. See section 1.4 of the attachment' (mandatory or not: not yet read). Commodity 99852 HVAC equipment. The CPW Native Aquatic Species Restoration Facility is in Alamosa; our HVAC subs are Front Range. Per the  | 11/12 23:4xZ: DQ read: pre-bid MANDATORY 11/18 10:00 MST, registration with the buyer by 11/17 17:00; 6 heating units -> electric + electrical upgrades + garage heater; lump sum; questions 12/01; due 12/09 17:00. Husmann + Surefire asked (1a1d21a9b4b05592).",
    "prebid": "2026-11-18T10:00:00-07:00",
-   "prebid_mandatory": null,
+   "prebid_mandatory": true,
    "performer": "Brown Bison bids; HVAC sub performs",
    "subs": "none asked",
+   "sub_pricing": "None; Husmann + Surefire asked 11/12 (1a1d21a9b4b05592), answer by Mon 11/16 12:00",
+   "folder": "bids/cpw-alamosa-heater-replacement-dq1-2027000176",
+   "contact": "Klay Tolleson, klay.tolleson@state.co.us (DNR Purchasing; sole point of contact)",
+   "next": "Mon 11/16 12:00: a sub confirms attendance -> HQ registers with Klay Tolleson by Tue 11/17 17:00; sub attends 11/18 10:00 for Brown Bison; else NO-BID."
+  },
+  {
+   "id": "arapahoe-rfb-26-64-courthouse1-drywall-paint",
+   "agency": "Arapahoe County",
+   "title": "RFB 26-64 Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting (Centennial)",
+   "sol": "RFB 26-64 (BidNet 0000443113)",
+   "trade": "Drywall / painting (facilities maintenance); sub performs, after-hours shifts, County background checks",
+   "due": "2026-12-09T12:00:00-07:00",
+   "due_source": "worker read of RFB-26-64.pdf 11/09 (confirm on BidNet)",
+   "portal": "BidNet (questions on BidNet by 11/23 16:00)",
+   "decision": "EVALUATE (GO if a sub confirms in writing it attends the MANDATORY 11/23 10:00 meeting for Brown Bison; NO-BID Fri 11/20 17:00 otherwise)",
+   "decision_note": "RFB: 'Pre-Solicitation Meeting: Mandatory, 11/23/26, 10 AM MST' at 7375 S. Potomac St, Centennial; wallpaper removal, drywall repair, paint; after-hours shifts; mandatory Sheriff background checks, rosters 10 business days ahead. Ceres Construction (all trades, rates on file) is the primary ask Fri 11/13 08:30 MT; Wild Fox Painting asked 11/12 (1a1d21aa164e43dc).",
+   "prebid": "2026-11-23T10:00:00-07:00",
+   "prebid_mandatory": true,
+   "performer": "Brown Bison bids; drywall/paint sub performs",
+   "subs": "Ceres Construction (ask Fri), Wild Fox Painting (asked)",
    "sub_pricing": "None",
-   "folder": null,
-   "contact": "-"
+   "folder": "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64",
+   "contact": "Sophia Morlan, SMorlan@arapahoegov.com (administrative questions)"
   }
  ],
  "events": [

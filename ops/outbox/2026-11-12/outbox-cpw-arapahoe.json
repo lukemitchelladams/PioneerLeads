@@ -1,0 +1,25 @@
+[
+ {
+  "key": "cpw-alamosa-subs",
+  "subject": "CPW Native Aquatic Species Facility heater replacement, Alamosa (DQ1 PMAA 2027*0176): mechanical and electrical sub",
+  "bcc": [
+   "info@husmannplumbing.co",
+   "surefirehvacr@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/cpw-alamosa-subs.txt",
+  "files": [
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf"
+  ]
+ },
+ {
+  "key": "arapahoe-wildfox",
+  "subject": "Arapahoe County Courthouse 1 wall repair and painting (RFB 26-64): painting sub",
+  "to": [
+   "connect@wildfoxpainting.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/arapahoe-wildfox.txt",
+  "files": [
+   "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64/docs/RFB-26-64.pdf"
+  ]
+ }
+]
