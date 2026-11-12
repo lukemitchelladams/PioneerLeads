@@ -1734,3 +1734,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ 12:38Z scan: all live (bidnet 664 logged in, samgov 93, coloradovss 69/3), bonfire Cloudflare, dibbs not scanned; open matches 150; 0 new, 0 changes. Build OK after the 12:21Z fix.
 - Inbox: three BidNet closing reminders (Arvada 26-FAC-055 GC = NO; Jeffco Boettcher chiller = REVIVE-IF, price cutoff today 17:00 MT, none in hand; Aurora ash B-4799 = NO-BID), all already noted by HQ. Nothing from Luke; no CRM brief. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v279 (f74b9de01209130e3f6981f404e028cf), events v281 (9bcd7a74a6a01ac42f1ff502a28c918d), portal_feed v140 (c0d00c424bc6ca5737ea41028353d018), sources v236 (8b1206f38ba4b81a56c8606db26f04bd), doc_gaps v10.
+
+### 2026-11-12 13:44Z hourly (06:35 MT) scan, HQ
+- Logged in attempt 1 (saved session from 12:38Z reused; no fresh login, no robot check). All live: bidnet 664/84, samgov 93/93, coloradovss 69/3, bonfire 2/1 (Cloudflare on detail), dibbs not scanned. Push 8f095c7. 0 new, 0 changes, 0 docs. Inbox 12:35-13:35Z: nothing inbound beyond BidNet closing reminders. No email sent. Container slept again 12:46-13:35Z (keepalive restarted pid 181).
