@@ -51,3 +51,6 @@ RFP is posted on DIBBS only; cloud access is prohibited. If Luke/Dad confirm JTE
 
 ## BidNet 444230804856 Lighting Upgrades at Denver Union Station and Civic Center Parking Garage (EVALUATE), closes 2026-12-07
 Aggregate ("interception") notice: the scanner's detail pass did not open it or download documents on the 18:36Z scan even though it is watched. Mac/WORKER: open it logged in on BidNet, record the agency, closing time, bond/prevailing-wage terms and any mandatory walk, and save the documents into bids/_watch/downloads/bidnet/444230804856/. Default NO-BID Mon 11/16 12:00 MT if nothing is read by then.
+
+## CPW DQ1-PMAA-2027000176 Native Aquatic Species Facility Heater Replacement (EVALUATE), closes 2026-12-09 17:00 MST
+One attachment on Colorado VSS ("DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement, Installation and Electrical Upgrade.pdf"). The scanner reads VSS details but does not download VSS attachments (the Advantage4 download is a UI action, not a link); HQ's manual browser attempt on 11/12 found no download element on the detail view. Mac/WORKER: open VSS, download the PDF into bids/_watch/downloads/coloradovss/2027000176/, and read section 1.4: is the 11/18 10:00 MST pre-bid mandatory? Scanner improvement to ship: VSS attachment download.

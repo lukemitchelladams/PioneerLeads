@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T20:37:04Z",
+ "updated": "2026-11-12T21:10:46Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1756,6 +1756,25 @@
    "prebid": null,
    "prebid_mandatory": null,
    "performer": "Brown Bison bids; electrical sub performs",
+   "subs": "none asked",
+   "sub_pricing": "None",
+   "folder": null,
+   "contact": "-"
+  },
+  {
+   "id": "cpw-dq1-pmaa-2027000176-heater",
+   "agency": "Colorado Parks & Wildlife (DNR)",
+   "title": "Native Aquatic Species Facility Heater Replacement, Installation and Electrical Upgrade (DQ1 PMAA 2027*0176)",
+   "sol": "DQ1-PMAA-2027000176-1 (Colorado VSS, Documented Quote)",
+   "trade": "HVAC (heater replacement) + electrical; sub performs",
+   "due": "2026-12-09T17:00:00-07:00",
+   "due_source": "VSS closing_text '2026-12-09 17:00 MST'",
+   "portal": "Colorado VSS (public; one attachment PDF, not yet downloaded: VSS attachments need a browser click the scanner does not do)",
+   "decision": "EVALUATE (default NO-BID Mon 11/16 12:00 MT unless the DQ shows the 11/18 pre-bid is optional and an HVAC sub serving the San Luis Valley is found)",
+   "decision_note": "Surfaced 2026-11-12 21:06Z scan. VSS description: 'Pre-bid meeting is 11/18 at 10:00 AM MST. See section 1.4 of the attachment' (mandatory or not: not yet read). Commodity 99852 HVAC equipment. The CPW Native Aquatic Species Restoration Facility is in Alamosa; our HVAC subs are Front Range. Per the 11/12 rule a pre-bid is attended only by a sub's person.",
+   "prebid": "2026-11-18T10:00:00-07:00",
+   "prebid_mandatory": null,
+   "performer": "Brown Bison bids; HVAC sub performs",
    "subs": "none asked",
    "sub_pricing": "None",
    "folder": null,
