@@ -685,6 +685,12 @@
    "match": "kitchen equipment maintenance",
    "folder": "bids/widefield-sd3-kitchen-equipment-26-27-013",
    "govtribe_ids": []
+  },
+  {
+   "name": "DLA SPRMM126QMJ99 Bearing, Ball and Roller, OEM CAGE 70508 (Jones Bearing EVALUATE weak; due 12/16)",
+   "source": "samgov",
+   "match": "SPRMM126QMJ99",
+   "folder": "bids/_jones-bearing/notices/3d326babf2eb497eabe64330bb3f5d25"
   }
  ]
 }

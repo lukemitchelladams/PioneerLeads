@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T09:43:12Z",
+ "updated": "2026-11-12T11:48:22Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1702,6 +1702,25 @@
    "folder": "bids/widefield-sd3-kitchen-equipment-26-27-013",
    "contact": "Purchasing Manager (name not in the RFP text read)",
    "next": "Chase silent firms Mon 11/16; confirm the 12/11 submission time on BidNet; proposal draft in private/ once a sub confirms the 2-hour response; questions via BidNet by 11/25."
+  },
+  {
+   "id": "dla-sprmm126qmj99-ball-roller-bearing",
+   "agency": "DLA Maritime Mechanicsburg (Navy NAVSUP WSS)",
+   "title": "31--BEARING, BALL AND ROLLER, OEM CAGE 70508 (American Metal Bearing Co) ref 80080 PIECE 3X4X33X34; quantity not in notice",
+   "sol": "SPRMM126QMJ99 (SAM.gov 3d326babf2eb497eabe64330bb3f5d25)",
+   "trade": "Jones Bearing supply (ball/roller bearing)",
+   "due": "2026-12-16T00:00:00-05:00",
+   "due_source": "SAM.gov closing 2026-12-16",
+   "portal": "SAM.gov notice; quote method not stated in notice text (EDI mentioned); no attachment posted 11/12",
+   "decision": "EVALUATE (weak; NO unless Jones Bearing is an authorized American Metal Bearing distributor with ISO 9001/MIL-I-45208)",
+   "decision_note": "Surfaced 2026-11-12 11:36Z scan. FSC 3110, total small business, LPTA, Emergency Acquisition Flexibilities. Notice: 'Consideration for award ... shall be given only to authorized distributors of the original manufacturer's item' with proof on letterhead; drawings not available; higher-level quality MIL-I-45208/ISO 9001; MIL-STD-130 marking; MIL-STD-2073 packaging. OEM CAGE 70508 = American Metal Bearing Co, Garden Grove CA (SAM entity, active). Quantity not stated. Needs Luke/Dad: authorized-distributor yes/no.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison dealer quote; Jones Bearing supplies",
+   "subs": "Jones Bearing (Luke's dad)",
+   "sub_pricing": "Not asked (authorized-distributor question first)",
+   "folder": "bids/_jones-bearing/notices/3d326babf2eb497eabe64330bb3f5d25",
+   "contact": "RYAN.BRENNAN@DLA.MIL (PCO, from notice)"
   }
  ],
  "events": [
@@ -2496,6 +2515,11 @@
    "when": "2026-12-08T14:00:00-07:00",
    "kind": "due",
    "note": "RFP-KM-2027-011 due 14:00 MST via BidNet listing (submission method not in hand yet)"
+  },
+  {
+   "ts": "2026-11-12T11:48:22Z",
+   "bid": "dla-sprmm126qmj99-ball-roller-bearing",
+   "event": "New SAM.gov match (jones-bearing). EVALUATE weak: authorized-distributor-only award (OEM American Metal Bearing, CAGE 70508), quantity not in notice. Luke/Dad decide."
   }
  ],
  "doc_gaps": [
