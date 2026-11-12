@@ -2757,6 +2757,12 @@
    "verdict": "EVALUATE (weak)",
    "why": "HQ 11/12 16:55Z: approved source JTEKT (CAGE 5XMS1), estimated annual demand 398, 5-yr IDC, 120 days ARO, Bearing Restriction; GO only if Jones Bearing can buy through a JTEKT distributor (DECIDE for Luke/Dad).",
    "at": "2026-11-12T17:26:00Z"
+  },
+  "bidnet:444230804856": {
+   "name": "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage (BidNet aggregated 444230804856; due 2026-12-07)",
+   "verdict": "EVALUATE",
+   "why": "HQ 11/12 17:52Z: electrical lighting upgrade via sub; agency blank (aggregate list), closes 2026-12-07; watchlisted so the next logged-in scan pulls the documents (pre-bid/walk TBD); HQ default NO-BID Mon 11/16 12:00 unless no bond / prevailing wage.",
+   "at": "2026-11-12T18:26:00Z"
   }
  },
  "watched": {
@@ -2942,6 +2948,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T17:26:00Z",
+ "last_hourly_check": "2026-11-12T18:26:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

@@ -1783,3 +1783,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 17:52Z hourly (10:35 MT) scan, HQ
 - Trigger fired 17:41Z (6 min late). Logged in attempt 1 (16:43Z session reused; no code, no robot check). All live: bidnet 658/85, samgov 97/97, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push c8c873b. 1 doc: Arapahoe 0000441668 Security Electronics (NO, tour missed) mandatory-site-visit attendance list -> downloads only, no folder. 1 NEW: BidNet 444230804856 "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage" (agency blank, aggregate list, closes 12/07) -> EVALUATE, watchlisted so the next scan pulls its documents; default NO-BID Mon 11/16 12:00 unless no bond/prevailing wage. Inbox 16:41-17:41Z: nothing inbound. No email sent.
+
+### 2026-11-12 18:22Z hourly (worker)
+- HQ 17:41Z scan: all live (bidnet 658/85 logged in, samgov 97, coloradovss 69/3), bonfire Cloudflare, dibbs not scanned; open matches 154. 1 new: BidNet 444230804856 Denver Union Station + Civic Center garage lighting upgrades (EVALUATE; docs next scan; HQ default NO-BID Mon 11/16 12:00 unless no bond/prevailing wage), ledgered by worker. Arapahoe 26-53 attendance list filed (bid stays NO).
+- **Ceres Construction (Denver handyman / general repair, all trades)** cured its SoS delinquency 11/12 (Monica, 1a1d0f5b4ce5250a). It is a ready sub for future Denver-metro on-call handyman bids (rates in that email / private only).
+- Dashboard: bids v284 (14787eef62e2004ba61540e60f66ac2f), events v286 (adabc8f947694b95cb91f5049891279c), portal_feed v144 (3ea0662da29471f6d284341a8f9ee07a), sources v241 (f0a7fc4079f2c1d26a6824d21b3003eb), doc_gaps v10.

@@ -433,3 +433,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-12 17:22Z hourly (worker, read-only)
 - No new inbound (La Plata threads are index false positives with only our sends). No bounces. Nothing from Luke; no CRM brief.
+
+## 2026-11-12 18:22Z hourly (worker, read-only)
+- 1a1d0f5b4ce5250a 18:11Z Ceres Construction (Monica Manzo, Denver) on the Brighton thread: filed to cure the SoS delinquency; her per-hour rate covers all trades, and she gave an after-hours rate (rates are in the email, not in the public repo). HQ replied 18:21Z (1a1d0fe27383a387): Brighton closed unsubmitted; rates on file for the next on-call bid.
+- 1a1d0dc30f830ed3 17:44Z BidNet addendum notice: Arapahoe 26-53 Security Electronics (mandatory-site-visit attendance list; bid is NO).
+- No bounces. Nothing from Luke; no CRM brief.
