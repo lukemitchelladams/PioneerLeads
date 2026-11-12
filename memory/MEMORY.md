@@ -1761,3 +1761,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ 14:36Z scan: BidNet list scan completed (666/84) but a ROBOT CHECK hit on a detail page (8th; cool-down to 16:41:55Z, so the 08:35 MT scan is BidNet-blind); samgov 95, coloradovss 69/3, bonfire Cloudflare, dibbs not scanned; open matches 151. 2 new SAM, both NO per HQ (VA portable RO = sole-source to Evoqua; Reclamation PGMB Security Gate = gate construction); worker added both to the ledger (HQ had only labelled the watchlist).
 - Inbox: nothing inbound in 2 h. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v281 (06d5694151862896c2694f88d660205e), events v283 (37254abcbc6ea6b041c8c2c123a68b0b), portal_feed v141 (87ff1f09e1fbaaab827c029082e425f9), sources v238 (d1714b37709677c23dc55f97cb844ff0), doc_gaps v10.
+
+### 2026-11-12 15:40Z hourly (08:35 MT) scan, HQ
+- BidNet BLIND by design: cool-down after the 14:42Z detail-page robot check runs to 16:41:55Z (no login attempted; list carried forward 666/84, last good 14:36Z). samgov 95/95, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push 5363d7a, EXIT 3 (degraded). 0 new, 0 docs. Inbox 14:35-15:35Z: nothing inbound. No email sent. Next scan 16:36Z is still inside the cool-down (ends 16:41:55Z): launch with the wait so it starts at 16:42Z.
