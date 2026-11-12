@@ -311,6 +311,9 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             b["profiles"] = profile_hits(b, profiles)
         b["watched"] = watched_keys.check(b)
         b.setdefault("first_seen", prev.get(key(b), {}).get("first_seen", started))
+        for f in ("brief", "brief_line"):  # the SAM.gov new-match brief is read once, the scan the notice is new
+            if not b.get(f) and prev.get(key(b), {}).get(f):
+                b[f] = prev[key(b)][f]
         if b.get("carried_forward") and b.get("last_seen"):
             continue  # not seen this run; keep the real last_seen
         b.pop("carried_forward", None)
@@ -341,6 +344,8 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             found[k] = {**v, "carried_forward": True}
     scanned_sources = {s for s in sources if health[s]["count"] > 0 and s not in incomplete}
     new = {k: v for k, v in found.items() if k not in prev and v["profiles"] and _is_open(v)}
+    if "samgov" in sources:
+        _brief_new_samgov(new, health["samgov"])  # best effort; the records in `new` are the ones in `found`
     changed = {}
     for k, v in found.items():
         if k in prev:
@@ -449,6 +454,52 @@ def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
         if v.get("source") == "samgov" and v.get("via") == "bulk" and k not in found \
                 and (days_until(v.get("closing")) or 0) >= 0:
             found[k] = {**v, "carried_forward": True}
+
+
+BRIEF_MAX_ENV = "BIDWATCH_SAMGOV_BRIEF_MAX"  # new SAM.gov matches briefed per scan; default 5, 0 disables
+BRIEF_CAGES_PER_NOTICE = 2
+
+
+def _brief_new_samgov(new: dict, h: dict, key: str | None = None) -> int:
+    """SAM.gov new-match brief: for at most BIDWATCH_SAMGOV_BRIEF_MAX (default 5; 0 disables) NEW SAM.gov matches, soonest
+    closing first, read the notice's description (samgov.describe_notice, 1 request) and look up the first two distinct
+    CAGE codes it names (samgov.lookup_cage, 1 request each), then store "brief" (dict) and "brief_line" (one line) on the
+    record, which is the same object scan() writes to open_bids.json and prints under the notice in LAST_SCAN.md /
+    REPORT.md. The cap counts attempts, so a failing endpoint costs at most the cap per scan. Best effort: a failure
+    leaves the record and the scan as they were (a one-line note in the source's errors). Returns notices attempted."""
+    try:
+        cap = int(os.environ.get(BRIEF_MAX_ENV, "5"))
+    except ValueError:
+        cap = 5
+    key = key or os.environ.get("SAM_API_KEY")
+    if cap <= 0 or not key or not new:
+        return 0
+    attempted = 0
+    errors = h.setdefault("errors", [])
+    for b in sorted(new.values(), key=lambda x: x.get("closing") or "9"):
+        if attempted >= cap:
+            break
+        if b.get("source") != "samgov" or not b.get("id"):
+            continue
+        attempted += 1
+        try:
+            desc = samgov.describe_notice(key, b["id"], errors=errors)
+            if not desc:
+                continue
+            cages: dict = {}
+            for cage, _ref in desc.get("cage_refs") or []:
+                if cage in cages:
+                    continue
+                if len(cages) >= BRIEF_CAGES_PER_NOTICE:
+                    break
+                cages[cage] = samgov.lookup_cage(key, cage, errors=errors)
+            line = samgov.brief_line(desc, cages)
+            b["brief"] = {**desc, "cages": cages, "read_at": iso()}
+            if line:
+                b["brief_line"] = line
+        except Exception as e:  # noqa: BLE001 - never into the scan
+            errors.append(f"brief {b.get('id')}: {type(e).__name__}: {str(e)[:120]}")
+    return attempted
 
 
 def profile_hits(b: dict, profiles: dict) -> list[str]:
@@ -617,6 +668,11 @@ def _row(b: dict) -> str:
 HDR = "| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |\n|---|---|---|---|---|---|---|"
 
 
+def _brief_sub_line(b: dict) -> str:
+    """The SAM.gov new-match brief as the line printed under the notice in LAST_SCAN.md and REPORT.md."""
+    return "    brief: " + " ".join(str(b.get("brief_line") or "").split())[:400]
+
+
 def _change_line(b: dict) -> str:
     """One changed bid as REPORT.md's 'Changes on matching / watched bids' prints it (LAST_SCAN.md repeats the same text)."""
     return f"**{b.get('title', '')[:90]}** ({b['source']}): " + "; ".join(b["diffs"]) + f" — {b.get('url', '')}"
@@ -668,7 +724,7 @@ def _count_cell(s: str, v: dict | None) -> str:
 def render_last_scan(r: dict, watched_keys=None) -> str:
     """bids/_watch/LAST_SCAN.md: a heading with the scan's UTC time, then six labelled lines the hourly operator reads
     in one `cat` instead of grepping REPORT.md and diffing open_bids.json. Plain text, no tables; sub-items are indented
-    `  - ` lines under their count."""
+    `  - ` lines under their count; a new SAM.gov notice that was briefed carries a `    brief: ...` line under its own."""
     h = r["health"]
     st = run_status(h)
     found = r.get("found") or {}
@@ -684,6 +740,8 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
     for b in sorted(new, key=lambda x: x.get("closing") or "9"):
         lines.append(f"  - {b['source']} {b['id']} | {_one_line(b.get('title') or '', 90)} | {_one_line(b.get('agency') or '', 40)} "
                      f"| closes {b.get('closing') or '?'} | {','.join(b.get('profiles') or [])} | watched {'yes' if b.get('watched') else 'no'}")
+        if b.get("brief_line"):
+            lines.append(_brief_sub_line(b))
     # the same set and text as REPORT.md's "Changes on matching / watched bids" (matching or watched), each cut to 200 chars
     changed = list((r.get("changed") or {}).values())
     lines.append(f"Changes on watched bids: {len(changed)}")
@@ -760,7 +818,11 @@ def render(r: dict) -> str:
     if walks:
         lines += ["", "## Pre-bid meetings / site walks in the next 7 days", "", HDR] + [_row(b) for b in sorted(walks, key=lambda x: x["prebid"]["date"])]
     if r["new"]:
-        lines += ["", "## NEW matching bids since last scan", "", HDR] + [_row(b) for b in sorted(r["new"].values(), key=lambda x: x.get("closing") or "9")]
+        lines += ["", "## NEW matching bids since last scan", "", HDR]
+        for b in sorted(r["new"].values(), key=lambda x: x.get("closing") or "9"):
+            lines.append(_row(b))
+            if b.get("brief_line"):  # the SAM.gov new-match brief, right under the notice's row
+                lines.append(_brief_sub_line(b))
     if r["changed"]:
         lines += ["", "## Changes on matching / watched bids (addenda, dates)", ""]
         lines += [f"- {_change_line(b)}" for b in r["changed"].values()]

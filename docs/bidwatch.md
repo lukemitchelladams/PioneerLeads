@@ -212,6 +212,10 @@ Real-page fixtures for all of the above: `tests/fixtures/`, exercised by `python
 - The SAM.gov bulk file has no attachments and lags by up to a day (rebuilt nightly around 03:30 UTC); the API
   stays first for same-day postings and documents.
 - SAM.gov caps API calls (about 10/day without an entity role, 1,000/day with one). The scanner tracks a
-  daily budget (`SAM_DAILY_BUDGET`, default 900) and uses ~2-6 calls per scan.
+  daily budget (`SAM_DAILY_BUDGET`, default 900) and uses ~2-6 calls per scan, plus the new-match brief: for up to
+  `BIDWATCH_SAMGOV_BRIEF_MAX` (default 5; 0 disables) NEW SAM.gov matches per scan it reads the notice description
+  (1 call) and looks up at most two CAGE codes it names (1 call each), and prints one `brief:` line under the notice in
+  LAST_SCAN.md / REPORT.md (set-aside, NSN, quantities, OEM CAGE + name, authorized-distributor / no-drawings / ISO 9001
+  flags); the line is kept on the record in open_bids.json. A failed brief changes nothing but adds an error note.
 - RTD (OpenGov) is not scraped yet; it is on the watchlist for the hourly GovTribe check.
 - Automated access to BidNet is restricted by its terms; keep the cadence modest (30-60 min).

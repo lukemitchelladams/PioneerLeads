@@ -1729,5 +1729,167 @@ finally:
     _ka.PID_FILE.unlink(missing_ok=True)
     _ka.PID_FILE = _ka_pid_backup
 
+# ---------------------------------------------------------------- part 6: SAM.gov new-match brief (2026-11-12)
+print("SAM.gov new-match brief: noticedesc + CAGE lookup, one line under the notice (fake fetch, no network)")
+_BF_URLS: list[str] = []
+
+
+def _bf_fetch(body):
+    def fetch(url):
+        _BF_URLS.append(url)
+        return body
+    return fetch
+
+
+_bearing_html = json.dumps({"description": (
+    "<p>Proposed procurement for NSN 3110012345678 BEARING,BALL AND RO: Line 0001 Qty 334 EA.</p>"
+    "<p>This solicitation is a Total Small Business Set-Aside.</p>"
+    "<p>Item description &amp; part: Cage _______ ref. no. ;70508 80080 PIECE 3X4X33X34; Cage _______ ref. no. ;1A2B3 ABC-99 REV C;</p>"
+    "<p>Quotes from the OEM or an authorized distributor only. Technical data are not available. Higher-level quality: ISO 9001:2015.</p>")})
+_bd = samgov.describe_notice("k-test-secret", "SPRMM126QMJ99", fetch=_bf_fetch(_bearing_html))
+check("describe_notice (bearing): set-aside, NSN normalised to dashes, both CAGE/ref pairs, qty, flags, ISO 9001",
+      _bd and _bd["set_aside"] == "TOTAL SMALL BUSINESS SET-ASIDE" and _bd["nsns"] == ["3110-01-234-5678"]
+      and _bd["cage_refs"] == [("70508", "80080 PIECE 3X4X33X34"), ("1A2B3", "ABC-99 REV C")] and _bd["quantities"] == ["334 EA"]
+      and _bd["authorized_distributor_only"] is True and _bd["no_drawings"] is True and _bd["higher_level_quality"] == "ISO 9001", _bd)
+check("describe_notice: excerpt is the cleaned text (tags out, &amp; decoded, whitespace collapsed), 300 chars max",
+      _bd and _bd["excerpt"].startswith("Proposed procurement for NSN 3110012345678 BEARING,BALL AND RO: Line 0001 Qty 334 EA. This solicitation")
+      and "Item description & part: Cage" in _bd["excerpt"] and "<" not in _bd["excerpt"] and len(_bd["excerpt"]) <= 300, _bd and _bd["excerpt"])
+check("describe_notice: one GET to the noticedesc endpoint with the notice id and the key",
+      len(_BF_URLS) == 1 and _BF_URLS[0].startswith(samgov.NOTICE_DESC_API + "?") and "noticeid=SPRMM126QMJ99" in _BF_URLS[0]
+      and "api_key=k-test-secret" in _BF_URLS[0], _BF_URLS)
+_roller_html = ("<div>NSN 3910-00-243-5401 ROLLER,CONVEYOR<br>Line 0001 334 EA<br>Line 0002 1 EA<br>"
+                "Drawings and specifications are not available.<br>Cage ref. no. ;70508 80080 PIECE 3X4X33X34;</div>")
+_rd = samgov.describe_notice("k-test-secret", "n-roller", fetch=_bf_fetch(_roller_html))
+check("describe_notice (conveyor roller, bare HTML): NSN, two quantities in order, no drawings, no set-aside, no quality clause",
+      _rd and _rd["nsns"] == ["3910-00-243-5401"] and _rd["quantities"] == ["334 EA", "1 EA"] and _rd["no_drawings"] is True
+      and _rd["set_aside"] is None and _rd["higher_level_quality"] is None and _rd["authorized_distributor_only"] is False
+      and _rd["cage_refs"] == [("70508", "80080 PIECE 3X4X33X34")], _rd)
+_bf_errs: list[str] = []
+
+
+def _bf_raise(url):
+    raise RuntimeError("connection reset k-test-secret")
+
+
+check("describe_notice: fetch raises -> None, one error line in collect()'s format, the key redacted from it",
+      samgov.describe_notice("k-test-secret", "n-bad", fetch=_bf_raise, errors=_bf_errs) is None
+      and len(_bf_errs) == 1 and _bf_errs[0].startswith("SAM.gov noticedesc n-bad: RuntimeError") and "k-test-secret" not in _bf_errs[0], _bf_errs)
+check("describe_notice: an empty description is None, not a brief of nothing",
+      samgov.describe_notice("k", "n-empty", fetch=_bf_fetch('{"description": ""}'), errors=_bf_errs) is None, _bf_errs)
+_entity_json = json.dumps({"totalRecords": 1, "entityData": [{
+    "entityRegistration": {"legalBusinessName": "AMERICAN METAL BEARING CO", "cageCode": "70508"},
+    "coreData": {"physicalAddress": {"addressLine1": "7191 ACACIA AVE", "city": "GARDEN GROVE", "stateOrProvinceCode": "CA", "zipCode": "92841"}}}]})
+_BF_URLS.clear()
+_ce = samgov.lookup_cage("k-test-secret", "70508", fetch=_bf_fetch(_entity_json))
+check("lookup_cage: legal name, city and state from entityData[0]; one GET to the entity endpoint by cageCode",
+      _ce == {"legal_name": "AMERICAN METAL BEARING CO", "city": "GARDEN GROVE", "state": "CA"}
+      and len(_BF_URLS) == 1 and _BF_URLS[0].startswith(samgov.ENTITY_API + "?") and "cageCode=70508" in _BF_URLS[0], (_ce, _BF_URLS))
+check("lookup_cage: empty entityData -> None; fetch raising -> None (noted, key redacted)",
+      samgov.lookup_cage("k", "ZZZZZ", fetch=_bf_fetch('{"totalRecords": 0, "entityData": []}'), errors=_bf_errs) is None
+      and samgov.lookup_cage("k-test-secret", "ZZZZZ", fetch=_bf_raise, errors=_bf_errs) is None
+      and "k-test-secret" not in " ".join(_bf_errs), _bf_errs)
+_full = {"set_aside": "TOTAL SMALL BUSINESS SET-ASIDE", "nsns": ["3910-00-243-5401"], "quantities": ["334 EA", "1 EA"],
+         "cage_refs": [("70508", "80080 PIECE 3X4X33X34")], "authorized_distributor_only": True, "no_drawings": True,
+         "higher_level_quality": "ISO 9001", "excerpt": "x"}
+check("brief_line: the full line, CAGE named from the entity lookup",
+      samgov.brief_line(_full, {"70508": _ce}) == "set-aside: total small business | NSN 3910-00-243-5401 | qty 334 EA, 1 EA | "
+      "OEM CAGE 70508 American Metal Bearing Co (Garden Grove CA) ref 80080 PIECE 3X4X33X34 | authorized distributors only | no drawings | ISO 9001",
+      samgov.brief_line(_full, {"70508": _ce}))
+check("brief_line: empty parts omitted (no set-aside, no flags, CAGE not looked up); nothing at all -> empty string",
+      samgov.brief_line({"nsns": ["3910-00-243-5401"], "cage_refs": [("70508", "80080 PIECE")]}, {}) == "NSN 3910-00-243-5401 | OEM CAGE 70508 ref 80080 PIECE"
+      and samgov.brief_line({"quantities": ["12 EA"]}, None) == "qty 12 EA" and samgov.brief_line({}, {}) == "" and samgov.brief_line(None) == "",
+      samgov.brief_line({"nsns": ["3910-00-243-5401"], "cage_refs": [("70508", "80080 PIECE")]}, {}))
+
+# the run.py wiring: the per-scan cap (BIDWATCH_SAMGOV_BRIEF_MAX), at most two CAGE lookups per notice, non-SAM.gov rows
+# untouched, a failure leaves the record as it was. describe_notice / lookup_cage are monkeypatched: no network, no budget.
+_BF_CALLS = {"desc": 0, "cage": 0}
+_real_desc, _real_cage = samgov.describe_notice, samgov.lookup_cage
+
+
+def _fake_desc(key, nid, fetch=None, errors=None):
+    _BF_CALLS["desc"] += 1
+    if nid == "s-fail":
+        return None
+    return {**_full, "cage_refs": [("70508", "A"), ("1A2B3", "B"), ("70508", "C"), ("99999", "D")]}
+
+
+def _fake_cage(key, cage, fetch=None, errors=None):
+    _BF_CALLS["cage"] += 1
+    return _ce if cage == "70508" else None
+
+
+def _bf_new():
+    return {"samgov:s1": {"source": "samgov", "id": "s1", "title": "BEARING,BALL AND RO", "closing": "2026-11-20", "profiles": ["jones-bearing"]},
+            "samgov:s2": {"source": "samgov", "id": "s2", "title": "ROLLER,CONVEYOR", "closing": "2026-11-18", "profiles": ["jones-bearing"]},
+            "samgov:s-fail": {"source": "samgov", "id": "s-fail", "title": "PULLEY", "closing": "2026-11-25", "profiles": ["jones-bearing"]},
+            "bidnet:b1": {"source": "bidnet", "id": "b1", "title": "HVAC Maintenance", "closing": "2026-11-15", "profiles": ["brownbison"]}}
+
+
+_env_backup = os.environ.pop("BIDWATCH_SAMGOV_BRIEF_MAX", None)
+_key_backup = os.environ.pop("SAM_API_KEY", None)
+try:
+    samgov.describe_notice, samgov.lookup_cage = _fake_desc, _fake_cage
+    os.environ["BIDWATCH_SAMGOV_BRIEF_MAX"] = "1"
+    _n1, _h1 = _bf_new(), {"errors": []}
+    _att = run._brief_new_samgov(_n1, _h1, key="k-test-secret")
+    check("brief cap: BIDWATCH_SAMGOV_BRIEF_MAX=1 -> exactly one notice described (the soonest-closing SAM.gov one), the others "
+          "and the BidNet row untouched",
+          _att == 1 and _BF_CALLS["desc"] == 1 and "brief_line" in _n1["samgov:s2"] and "brief" in _n1["samgov:s2"]
+          and not any("brief_line" in _n1[k] for k in ("samgov:s1", "samgov:s-fail", "bidnet:b1")), (_att, _BF_CALLS, _n1["samgov:s2"].get("brief_line")))
+    check("brief: at most two distinct CAGE codes looked up per notice (four refs, three distinct)",
+          _BF_CALLS["cage"] == 2 and set(_n1["samgov:s2"]["brief"]["cages"]) == {"70508", "1A2B3"}
+          and _n1["samgov:s2"]["brief_line"].startswith("set-aside: total small business | NSN 3910-00-243-5401 | qty 334 EA, 1 EA | "
+                                                        "OEM CAGE 70508 American Metal Bearing Co (Garden Grove CA) ref A, C | OEM CAGE 1A2B3 ref B | OEM CAGE 99999 ref D"),
+          (_BF_CALLS, _n1["samgov:s2"]["brief_line"]))
+    os.environ["BIDWATCH_SAMGOV_BRIEF_MAX"] = "0"
+    _BF_CALLS.update(desc=0, cage=0)
+    _n0 = _bf_new()
+    check("brief cap: 0 disables (no call, no field)", run._brief_new_samgov(_n0, {"errors": []}, key="k") == 0 and _BF_CALLS["desc"] == 0
+          and not any("brief" in v for v in _n0.values()), (_BF_CALLS, _n0))
+    os.environ.pop("BIDWATCH_SAMGOV_BRIEF_MAX", None)
+    _BF_CALLS.update(desc=0, cage=0)
+    _n5, _h5 = _bf_new(), {"errors": []}
+    _att5 = run._brief_new_samgov(_n5, _h5, key="k")
+    check("brief cap: default 5 covers all three SAM.gov rows; a notice whose description failed keeps no brief and the scan goes on",
+          _att5 == 3 and _BF_CALLS["desc"] == 3 and "brief_line" in _n5["samgov:s1"] and "brief_line" in _n5["samgov:s2"]
+          and "brief" not in _n5["samgov:s-fail"] and "brief" not in _n5["bidnet:b1"], (_att5, _BF_CALLS, _h5))
+    check("brief: no SAM.gov key -> nothing attempted", run._brief_new_samgov(_bf_new(), {"errors": []}) == 0 and _BF_CALLS["desc"] == 3, _BF_CALLS)
+
+    def _desc_boom(key, nid, fetch=None, errors=None):
+        raise RuntimeError("unexpected")
+    samgov.describe_notice = _desc_boom
+    _nb, _hb = _bf_new(), {"errors": []}
+    check("brief: an exception inside the helper never reaches the scan; records unchanged, one note per notice in the source's errors",
+          run._brief_new_samgov(_nb, _hb, key="k") == 3 and _nb == _bf_new() and len(_hb["errors"]) == 3
+          and _hb["errors"][0].startswith("brief s2: RuntimeError"), (_nb, _hb))
+finally:
+    samgov.describe_notice, samgov.lookup_cage = _real_desc, _real_cage
+    os.environ.pop("BIDWATCH_SAMGOV_BRIEF_MAX", None)
+    if _env_backup is not None:
+        os.environ["BIDWATCH_SAMGOV_BRIEF_MAX"] = _env_backup
+    if _key_backup is not None:
+        os.environ["SAM_API_KEY"] = _key_backup
+
+# LAST_SCAN.md and REPORT.md: the brief line sits right under the notice's own line in the New matching bids section
+_bf_rec = {"source": "samgov", "id": "s2", "title": "ROLLER,CONVEYOR", "agency": "DEPT OF DEFENSE.DLA", "closing": "2026-11-18",
+           "profiles": ["jones-bearing"], "watched": False, "url": "https://sam.gov/opp/s2/view",
+           "brief_line": "NSN 3910-00-243-5401 | qty 334 EA | OEM CAGE 70508 American Metal Bearing Co (Garden Grove CA) ref 80080 PIECE"}
+_bf_plain = {"source": "samgov", "id": "s9", "title": "VALVE", "agency": "DLA", "closing": "2026-11-19", "profiles": ["jones-bearing"],
+             "watched": False, "url": "https://sam.gov/opp/s9/view"}
+_bf_r = {"started": "2026-11-12T15:00:00+00:00", "found": {"samgov:s2": _bf_rec, "samgov:s9": _bf_plain},
+         "new": {"samgov:s2": _bf_rec, "samgov:s9": _bf_plain}, "changed": {}, "closed": {}, "downloads": {}, "missing_watch": [], "filed": [],
+         "health": {"samgov": {"reachable": True, "reach_note": "HTTP 200", "creds": {"SAM_API_KEY": True}, "logged_in": True,
+                               "login_note": "API key", "count": 2, "matches": 2, "errors": [], "last_success": "2026-11-12T15:00:00+00:00"}}}
+_bf_ls = run.render_last_scan(_bf_r).splitlines()
+_bf_i = next((i for i, ln in enumerate(_bf_ls) if ln.startswith("  - samgov s2 |")), None)
+check("LAST_SCAN.md: '    brief: ...' directly under the briefed notice's line; a notice without a brief gets no such line",
+      _bf_i is not None and _bf_ls[_bf_i + 1] == "    brief: " + _bf_rec["brief_line"] and _bf_ls[_bf_i + 2].startswith("  - samgov s9 |")
+      and not _bf_ls[_bf_i + 3].startswith("    brief"), _bf_ls)
+_bf_rep = run.render(_bf_r).splitlines()
+_bf_j = next((i for i, ln in enumerate(_bf_rep) if ln.startswith("| jones-bearing | samgov | DEPT OF DEFENSE.DLA | ROLLER,CONVEYOR |")), None)
+check("REPORT.md: the same brief line right under the notice's row in 'NEW matching bids since last scan'",
+      _bf_j is not None and "## NEW matching bids since last scan" in _bf_rep[:_bf_j] and _bf_rep[_bf_j + 1] == "    brief: " + _bf_rec["brief_line"]
+      and _bf_rep[_bf_j + 2].startswith("| jones-bearing | samgov | DLA | VALVE |"), _bf_rep[_bf_j - 2: _bf_j + 3] if _bf_j else _bf_rep)
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)
