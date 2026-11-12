@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -83,7 +84,13 @@ def build(now: datetime) -> dict[str, list[dict]]:
             kind = "MANDATORY pre-bid" if b.get("prebid_mandatory") else "Pre-bid (optional)"
             if not any(e["bid"] == b["id"] and e["when"] == b["prebid"] for e in pipe["events"]):
                 events.append({"bid": b["id"], "when": b["prebid"], "kind": kind, "note": ""})
-    events += [e for e in pipe["events"] if by_id.get(e["bid"], {}).get("decision") not in DEAD]
+    for e in pipe["events"]:
+        if not all(k in e for k in ("bid", "when", "kind")):
+            # Log-style entries ({ts, bid, event}) are not calendar events; skip them instead of crashing the build.
+            print(f"WARN: skipping pipeline event without bid/when/kind: {str(e)[:120]}", file=sys.stderr)
+            continue
+        if by_id.get(e["bid"], {}).get("decision") not in DEAD:
+            events.append(e)
     rows = []
     for e in events:
         b = by_id.get(e["bid"], {})

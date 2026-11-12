@@ -1713,7 +1713,7 @@
    "due_source": "SAM.gov closing 2026-12-16",
    "portal": "SAM.gov notice; quote method not stated in notice text (EDI mentioned); no attachment posted 11/12",
    "decision": "EVALUATE (weak; NO unless Jones Bearing is an authorized American Metal Bearing distributor with ISO 9001/MIL-I-45208)",
-   "decision_note": "Surfaced 2026-11-12 11:36Z scan. FSC 3110, total small business, LPTA, Emergency Acquisition Flexibilities. Notice: 'Consideration for award ... shall be given only to authorized distributors of the original manufacturer's item' with proof on letterhead; drawings not available; higher-level quality MIL-I-45208/ISO 9001; MIL-STD-130 marking; MIL-STD-2073 packaging. OEM CAGE 70508 = American Metal Bearing Co, Garden Grove CA (SAM entity, active). Quantity not stated. Needs Luke/Dad: authorized-distributor yes/no.",
+   "decision_note": "Surfaced 2026-11-12 11:36Z scan. FSC 3110, total small business, LPTA, Emergency Acquisition Flexibilities. Notice: 'Consideration for award ... shall be given only to authorized distributors of the original manufacturer's item' with proof on letterhead; drawings not available; higher-level quality MIL-I-45208/ISO 9001; MIL-STD-130 marking; MIL-STD-2073 packaging. OEM CAGE 70508 = American Metal Bearing Co, Garden Grove CA (SAM entity, active). Quantity not stated. Needs Luke/Dad: authorized-distributor yes/no. | 2026-11-12T11:48:22Z: New SAM.gov match (jones-bearing). EVALUATE weak: authorized-distributor-only award (OEM American Metal Bearing, CAGE 70508), quantity not in notice. Luke/Dad decide.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Brown Bison dealer quote; Jones Bearing supplies",
@@ -2515,11 +2515,6 @@
    "when": "2026-12-08T14:00:00-07:00",
    "kind": "due",
    "note": "RFP-KM-2027-011 due 14:00 MST via BidNet listing (submission method not in hand yet)"
-  },
-  {
-   "ts": "2026-11-12T11:48:22Z",
-   "bid": "dla-sprmm126qmj99-ball-roller-bearing",
-   "event": "New SAM.gov match (jones-bearing). EVALUATE weak: authorized-distributor-only award (OEM American Metal Bearing, CAGE 70508), quantity not in notice. Luke/Dad decide."
   }
  ],
  "doc_gaps": [
