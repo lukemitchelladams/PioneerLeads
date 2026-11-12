@@ -1764,3 +1764,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 15:40Z hourly (08:35 MT) scan, HQ
 - BidNet BLIND by design: cool-down after the 14:42Z detail-page robot check runs to 16:41:55Z (no login attempted; list carried forward 666/84, last good 14:36Z). samgov 95/95, coloradovss 69/3, bonfire 2/1, dibbs not scanned. Push 5363d7a, EXIT 3 (degraded). 0 new, 0 docs. Inbox 14:35-15:35Z: nothing inbound. No email sent. Next scan 16:36Z is still inside the cool-down (ends 16:41:55Z): launch with the wait so it starts at 16:42Z.
+
+### 2026-11-12 16:21Z hourly (worker)
+- HQ 15:36Z scan: BidNet BLIND (cool-down after the 14:36Z detail-page robot check, ends 16:41:55Z); samgov 95, coloradovss 69/3, bonfire Cloudflare, dibbs not scanned; open matches 151 (rows kept); 0 new.
+- Inbox: the 2 h search matched three La Plata sub threads, but all their messages are our own 11/04 and 11/09 sends (index false positive; no reply from Mile High Plumbing, First Melt or Comfort Air). Nothing from Luke; no CRM brief. GovTribe S&L UPGRADE_REQUIRED.
+- Dashboard: bids v282 (98bfbf65989823b12fb09aeacaa3da4b), events v284 (288c9edba6e388a5c38e4e3afe2c95b1), portal_feed v142 (e127d4b0b3fbf6bbdb2874c41a077e1b), sources v239 (3930d78f7ef10077da5e758e4f64b45c), doc_gaps v10.

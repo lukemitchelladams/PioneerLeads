@@ -427,3 +427,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-12 15:21Z hourly (worker, read-only)
 - No inbound mail in the last 2 h. No bounces. Nothing from Luke; no CRM brief.
+
+## 2026-11-12 16:21Z hourly (worker, read-only)
+- No new inbound. The search matched La Plata threads 1a1a86d76027221c / 1a1a86de34783287 / 1a1ac64fd8204046, which hold only our sends (no sub replies). No bounces. Nothing from Luke.
