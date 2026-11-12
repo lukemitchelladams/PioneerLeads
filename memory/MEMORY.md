@@ -1814,3 +1814,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Worker launched a 3-angle sweep for HQ's work orders: 2 more BVCC water-treatment firms (walk Wed 11/18 needs their tech), and an NFPA 96 / IKECA-certified Northern Colorado hood cleaner as the PSD alternate.
 - Inbox: Ceres ack (1a1d15dff70537b9), Google promo. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v286 (9fdf524a7b67f5aa37042f803f90dfba), events v288 (44e79560280d7dcf6f9b20f1a9d536b9), portal_feed v146 (179901cae3728e461fc5e60aa756be52), sources v243 (50fe3869c3ab476cd65ee8883036041c), doc_gaps v10.
+- Sweep done (3 agents), written to both bids' sub-outreach.md and messaged to HQ:
+  - BVCC A: Hydrite Chemical (info@hydrite.com, Denver team) and Water Engineering Inc (info@h2oeng.com). B: RasMech Rocky Mountain (rockymountain@rasmech.com).
+  - FCT Water Treatment (Greeley) = FACT Water's former name: DO NOT CONTACT.
+  - PSD alternate A: Aqua Strong Hood Cleaning (info@aquastronghc.com; self-stated NFPA 96 certified techs, Fort Collins page). B: Elite Hood Cleaning, Brotherhood Cleaning.
+  - No firm shows IKECA or PFA/LFRA registration publicly, so the ask must request written proof.
+  - None of these candidates has been contacted or live-verified.

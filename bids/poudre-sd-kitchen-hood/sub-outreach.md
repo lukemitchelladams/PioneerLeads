@@ -22,3 +22,19 @@ Phone-only: Kitchen Guard of Colorado 720-600-7036; Enviromatic (Aurora) 303-428
   question sheet (15 questions + blank tables for D24-D34 minor maintenance fees, filter prices, hours and rates; file in private/).
   Answers asked by Mon 2026-11-16. Review draft PDF (25 pages, private/) emailed to Luke 1a1d011146984fbf: approve by Thu 11/19
   12:00 MT; post vendor questions #7 and #8 on BidNet by Fri 11/13 14:00 MT. IFB 7.1 certification statement stays on HOLD.
+
+## Worker sweep 2026-11-12 20:4xZ: certified alternate hood cleaner (CEO work order: second line beside HOODZ)
+The gate is IFB 7.1: the statement that the people doing the work hold each AHJ's required certification or registration (Poudre Fire Authority, Loveland
+Fire Rescue, Wellington). Every address below comes from a search-result snippet; no live page was read, nothing is guessed, no phones are recorded, and
+nobody has been contacted. **No firm found shows an IKECA certificate or a PFA/LFRA registration in public text**, so the ask must request written
+proof (certificate type and number, the technician's name, and each fire authority's registration).
+
+| Tier | Company | Base | Email | Certification evidence (self-stated) |
+|---|---|---|---|---|
+| A | Aqua Strong Hood Cleaning | Denver, with a Fort Collins service-area page | info@aquastronghc.com | Says its technicians are "NFPA 96 certified" and its Fort Collins page advertises NFPA 96 hood cleaning. Strongest wording found. |
+| B | Elite Hood Cleaning & Fire Protection Co. | Denver (Cherry Creek S Dr) | info@elitehoodcleaning.com | "in full compliance with NFPA 96 Standards"; "manufacturer-certified" (suppression); no IKECA found. |
+| B | Brotherhood Cleaning and Fire Protection | Lakewood / Denver metro | Info@BrotherhoodUSA.com | Its service areas include Loveland, Larimer and Greeley; staff described as "certified", with no body named. |
+
+Phone-only Northern Colorado firms (no email; no calls per the 11/06 rule): Kept Companies / GreasePro (Loveland), FilterShine Front Range (Fort Collins),
+Breeze Hood Cleaning, Supreme Hood Cleaning (Fort Collins listing), Front Range Duct and Hood Cleaning (Centennial).
+The walk is done (Carlos signed in for Brown Bison), so an alternate can price from HOODZ's walk notes and photos (private/WALK-NOTES-2026-11-10.md).

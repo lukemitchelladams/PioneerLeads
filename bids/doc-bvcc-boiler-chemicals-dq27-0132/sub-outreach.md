@@ -48,3 +48,20 @@ in first and they write Brown Bison on the attendance log. Ask the question form
 - 2026-11-09 15:40Z: **H2 Global Solutions DECLINED** (Silas Norwood, msg 1a1c0f8417204054): "Buena Vista would be too far for the size." ("anything more than four hours west of Garden City will be nearly impossible for us to bid on fairly unless it is a massive account"; Trinidad worked because of their route.) No H2GS technician for the 11/18 walk. Remaining asks: Summit Labs, TRS, Aqua-Chem, Reaction Eng. (11/06). Every walk attendee's signed Exhibit G + photo ID copy is due to CDOC by 11/16; pricing due to us Fri 11/20.
 - 2026-11-09 18:24Z: **Summit Laboratories DECLINED as sub** (Douglas Gordon, msg 1a1c18ea250f1ad3): "we intend to bid this direct with the state." Summit is now a competitor on DQ 2027000132. Subs still asked (11/06): TRS Inc, Aqua-Chem, Reaction Engineering. None priced yet; walk Wed 11/18 10:00 is MANDATORY and each attendee's Exhibit G + photo ID copy is due to CDOC by 11/16.
 - 2026-11-11 15:49Z: **Reaction Engineering DECLINED** (George James, msg 1a1cb4ccc3fe4c05, reply to the 11/11 re-ask): "We are not interested in bidding on this project." Still asked: TRS Inc, Aqua-Chem (11/06, 11/09, 11/11). No sub priced; NO-BID default Fri 11/13 17:00 MT stands unless one of them says yes.
+
+## Worker sweep 2026-11-12 20:4xZ: next water-treatment firms (CEO work order: open two more today)
+Every address below comes from a search-result snippet; no live page was read (fetches are blocked from the cloud). Nothing is guessed, no phone
+numbers are recorded, and nobody has been contacted. Each firm must have its own technician attend the MANDATORY walk Wed 11/18 10:00 at BVCC and
+file the CDOC entry paperwork (Exhibit G + ID); that paperwork belongs to the attendee, never Luke. Price is needed by Fri 11/13 17:00.
+
+| Tier | Company | Base | Email | Why / caveat |
+|---|---|---|---|---|
+| A | Hydrite Chemical Co., Water Treatment | Denver account team (HQ Brookfield WI) | info@hydrite.com (industry directory listings) | Industrial boiler/steam treatment chemicals with recurring service; a Denver "Account Manager - Water Treatment" posting writes "chemical treatment proposals and service reports". This is the corporate inbox, so ask for routing to the Denver water-treatment account manager. About 2-2.5 h to Buena Vista. |
+| A | Water Engineering, Inc. (WEI; reportedly Kemira since Oct 2025) | Denver regional team | info@h2oeng.com | Industrial water treatment "programs for boiler, cooling tower, and process water systems"; Denver regional manager posting. About 2-2.5 h. |
+| B | Rasmussen Mechanical Services (RasMech), Rocky Mountain office | Centennial | rockymountain@rasmech.com (own Colorado pages) | Boiler service contractor offering "integrated water treatment" and "water treatment guidance", with 24/7 service. A standalone chemical-and-testing program is not confirmed, so ask. |
+| C | Clayton Industries, water-treatment chemicals | Cincinnati (US chemical sales) | named sales mailbox on its site (in the sweep output) | Strong steam chemistry, but no Colorado field technician found. |
+| C | Timberline Mechanical Contracting | Boulder/Broomfield | info@timberlinemechanical.com | Boiler service only, and its site states "allow 10 business days" for email replies, so it can't meet Fri. |
+
+**DO NOT CONTACT: "FCT Water Treatment" (Greeley, fctwater.com) is FACT Water Co's former name**, which is already on the stand-down list.
+Phone/web-form only: Kurita America (Denver field staff), Treatment Technology / TT Holdings (Littleton), Calcium Control (Arvada), Aqua Tech Services (Albuquerque),
+Industrial Water Engineering (Albuquerque), ChemREADY, Alpine Technical Services (UT), C&S Chemicals (UT), Guardian CSC, Veolia WT, HOH, Barclay.
