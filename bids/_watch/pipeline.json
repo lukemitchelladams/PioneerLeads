@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T16:50:26Z",
+ "updated": "2026-11-12T17:50:10Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1741,6 +1741,25 @@
    "sub_pricing": "Not asked (distributor-access question first)",
    "folder": "bids/_jones-bearing/notices/9e7057b68eff46849d6de2cb28834363",
    "contact": "cassandra.blagmon@dla.mil (from notice)"
+  },
+  {
+   "id": "bidnet-444230804856-dus-lighting",
+   "agency": "(blank on BidNet aggregate list; Denver Union Station + Civic Center garage = likely RTD)",
+   "title": "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage",
+   "sol": "BidNet 444230804856",
+   "trade": "Electrical (lighting upgrade; sub would perform)",
+   "due": "2026-12-07T00:00:00-07:00",
+   "due_source": "BidNet list: Closing 12/07/2026 (time not read yet)",
+   "portal": "BidNet (detail behind login; aggregate/interception notice)",
+   "decision": "EVALUATE (default NO-BID Mon 11/16 12:00 MT unless the documents show no bond, no prevailing wage and a scope an electrical sub can price in time)",
+   "decision_note": "Surfaced 2026-11-12 17:48Z scan. Public-garage lighting retrofit at Denver Union Station and Civic Center; agency blank on the list. Watchlisted so the next logged-in scan downloads the documents; HQ reads them for bonding, prevailing wage, mandatory walk. CCC Stout LED (same trade, Denver) went NO-BID on $5M CGL + P&P bond + prevailing wage.",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "performer": "Brown Bison bids; electrical sub performs",
+   "subs": "none asked",
+   "sub_pricing": "None",
+   "folder": null,
+   "contact": "-"
   }
  ],
  "events": [

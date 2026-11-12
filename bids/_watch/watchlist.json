@@ -712,6 +712,14 @@
    "name": "DLA SPE4A627RX158 Bearing, Roller NSN 3110-01-051-1649 (NO: Hamilton Sundstrand aerospace part)",
    "source": "samgov",
    "match": "SPE4A627RX158"
+  },
+  {
+   "name": "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage (EVALUATE; default NO-BID Mon 11/16 12:00; due 12/07)",
+   "source": "bidnet",
+   "id": "444230804856",
+   "match": "444230804856",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
