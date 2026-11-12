@@ -43,6 +43,20 @@ Custodial questions on one page) and `questions deadline <date>`, each once, the
 that fails to load, a blind scan or a robot check keeps last scan's entries, like documents, so nothing comes back
 as NEW twice. Real tab pages: `tests/fixtures/bidnet_qa_*.html`, `bidnet_communication_0000440322.html`.
 
+### Detail pass time budget (`BIDWATCH_DETAIL_BUDGET_S`, 2026-11-12)
+The detail pass (detail pages, BidNet's documents / Communication / Q & A tabs, document downloads; BidNet, then
+Bonfire, then ColoradoVSS) runs inside one wall-clock budget of `BIDWATCH_DETAIL_BUDGET_S` seconds (default 600;
+`0` turns the cap off), measured from the first detail page of the scan and shared by every source. It opens
+watched bids first, then the matches new this scan, then the rest, so the budget is spent on what matters. Once the
+budget is spent, the remaining bids keep last scan's detail (documents, pre-bid, tabs) exactly as a bid whose page
+failed to load does, so nothing comes back as a new addendum next scan; the source's health gets `detail_cut`
+(`done`, `total`, `elapsed_s`, `budget_s`) and one note, `detail pass cut after 600 s: 23 of 85 bids enriched (BidNet
+slow); the rest keep last scan's details`, which REPORT.md prints in its headline and Errors section and LAST_SCAN.md in
+its Errors line; the run exits 3 (degraded, not failed) and still writes REPORT.md, LAST_SCAN.md and open_bids.json and
+pushes. Why: on 2026-11-12 20:39Z BidNet's tabs hung on "Loading..." behind a site-wide service banner, the detail pass
+waited `TAB_WAIT_MS` per tab per bid, and the outer `timeout 1500` killed the run before REPORT.md, losing the hour's
+list scan and SAM.gov results. Tests: `tests/test_bidwatch.py`, "detail pass wall-clock budget".
+
 ## Staying logged in
 Sessions (cookies) are saved per portal in `~/.brownbison/sessions/` (outside the repo, mode 600). Every
 scan first checks whether the saved session still works; if it timed out, it logs in again with the env

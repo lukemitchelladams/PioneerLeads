@@ -987,6 +987,34 @@ check("logged out (e.g. a mid-scan re-login deferred): an unwatched match is not
       _found["bidnet:8"].get("prebid") == _old8["prebid"] and _found["bidnet:8"].get("documents") == _old8["documents"],
       _found["bidnet:8"])
 
+# (c) the detail pass's wall-clock budget, end to end (BIDWATCH_DETAIL_BUDGET_S; 2026-11-12 20:39Z BidNet's tabs hung on
+# "Loading..." and `timeout 1500` killed the run before REPORT.md): a clock already past a 1 s budget when the first detail
+# page would open cuts the pass at 0 bids; the list's rows, last scan's detail, REPORT.md and LAST_SCAN.md are still written
+_real_now = run._now
+_fast = {"t": 0.0}
+
+
+def _fast_clock():
+    _fast["t"] += 10.0
+    return _fast["t"]
+
+
+os.environ["BIDWATCH_DETAIL_BUDGET_S"] = "1"
+run._now = _fast_clock
+_d0 = HITS2["detail"]
+try:
+    r10b = run.scan(["bidnet"])
+finally:
+    run._now = _real_now
+    del os.environ["BIDWATCH_DETAIL_BUDGET_S"]
+_cut10 = r10b["health"]["bidnet"].get("detail_cut") or {}
+check("budget spent before the first detail page: no page opened, cut recorded at 0 of N, stored detail kept, both files written, exit 3",
+      HITS2["detail"] == _d0 and _cut10.get("done") == 0 and _cut10.get("total", 0) >= 1 and _cut10.get("budget_s") == 1.0
+      and r10b["found"]["bidnet:0000500002"].get("documents") and run.run_status(r10b["health"])["exit_code"] == 3
+      and "detail pass cut after 1 s: 0 of" in (TMP / "REPORT_FILE.json").read_text()
+      and "detail pass cut after" in LAST_SCAN.read_text() and "exit code 3" in LAST_SCAN.read_text(),
+      (HITS2["detail"] - _d0, _cut10, r10b["health"]["bidnet"]["errors"], LAST_SCAN.read_text()))
+
 # second review pass (2026-10-20 07:50 UTC)
 (TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
 common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
@@ -1913,6 +1941,148 @@ _bf_j = next((i for i, ln in enumerate(_bf_rep) if ln.startswith("| jones-bearin
 check("REPORT.md: the same brief line right under the notice's row in 'NEW matching bids since last scan'",
       _bf_j is not None and "## NEW matching bids since last scan" in _bf_rep[:_bf_j] and _bf_rep[_bf_j + 1] == "    brief: " + _bf_rec["brief_line"]
       and _bf_rep[_bf_j + 2].startswith("| jones-bearing | samgov | DLA | VALVE |"), _bf_rep[_bf_j - 2: _bf_j + 3] if _bf_j else _bf_rep)
+
+# ---------------------------------------------------------------- detail pass wall-clock budget (BIDWATCH_DETAIL_BUDGET_S, 2026-11-12)
+# 20:39Z that day BidNet's documents / Q & A / communication tabs hung on "Loading..." behind a site-wide service banner; _read_tab
+# waited TAB_WAIT_MS per tab per bid, 29 debug dumps later `timeout 1500` killed the run before REPORT.md, and the hour's list scan
+# and SAM.gov results were lost. Now one wall clock covers the whole detail pass (every source), watched bids go first, and past
+# the budget the rest keep last scan's detail while the scan writes its files. Fake module and fake clock: a page costs 60 s.
+print("detail pass wall-clock budget")
+_CLK = {"t": 0.0}
+_OPENED: list[str] = []
+_real_now2 = run._now
+run._now = lambda: _CLK["t"]
+
+
+def _slow_enrich(ses, b):
+    _OPENED.append(b["id"])
+    _CLK["t"] += 60.0
+    return {**b, "documents": [{"name": f"fresh-{b['id']}.pdf", "url": "u"}], "prebid": {"date": "2026-12-01", "mandatory": True},
+            "detail_checked": True}
+
+
+def _bud_found(n, source="bidnet"):
+    return {f"{source}:{i}": {"source": source, "id": str(i), "title": f"HVAC Maintenance Services job {i}", "url": "u"}
+            for i in range(1, n + 1)}
+
+
+def _bud_prev(found):
+    return {k: {**b, "documents": [{"name": f"old-{b['id']}.pdf", "url": "u"}], "prebid": {"date": "2026-11-20", "mandatory": False},
+                "detail_at": "2026-11-11T10:00:00+00:00", "last_seen": "2026-11-11T10:00:00+00:00"} for k, b in found.items()}
+
+
+def _kept(found, prev, k):
+    """The bid carries last scan's detail untouched: documents, pre-bid and the old detail_at (the carried-forward path)."""
+    return found[k].get("documents") == prev[k]["documents"] and found[k].get("prebid") == prev[k]["prebid"] \
+        and found[k].get("detail_at") == prev[k]["detail_at"]
+
+
+_ses_ok = _types.SimpleNamespace(logged_in=True)
+_slow_mod = _types.SimpleNamespace(enrich=_slow_enrich)
+_bud_env = os.environ.pop("BIDWATCH_DETAIL_BUDGET_S", None)
+try:
+    # (a) budget 100 s, 60 s a bid: bids 1 and 2 are opened (clock 0, 60), bid 3 finds the clock at 120 s and the cut starts
+    _CLK["t"], _OPENED[:] = 0.0, []
+    _fa = _bud_found(5)
+    _pa = _bud_prev(_fa)
+    _ha = {"errors": []}
+    run._enrich_and_download(_ses_ok, _slow_mod, _fa, "bidnet", profiles, run._WatchSet([]), _pa, True, {}, _ha,
+                             budget=run._DetailBudget(100))
+    check("budget 100 s, 60 s a bid: exactly the first two bids enriched, with this scan's detail",
+          _OPENED == ["1", "2"] and all(_fa[f"bidnet:{i}"]["documents"][0]["name"] == f"fresh-{i}.pdf"
+                                        and _fa[f"bidnet:{i}"]["detail_at"] > "2026-11-11T" for i in (1, 2)), (_OPENED, _fa))
+    check("the three bids after the cut keep last scan's documents, pre-bid and detail_at (the carried-forward path); nothing raised",
+          all(_kept(_fa, _pa, f"bidnet:{i}") for i in (3, 4, 5)), _fa)
+    check("detail_cut recorded: source, done 2, total 5, elapsed 120 s, budget 100 s",
+          _ha.get("detail_cut") == {"source": "bidnet", "done": 2, "total": 5, "elapsed_s": 120.0, "budget_s": 100.0}, _ha.get("detail_cut"))
+    check("one plain note in the source's errors, in the style of the other notes",
+          _ha["errors"] == ["detail pass cut after 100 s: 2 of 5 bids enriched (BidNet slow); the rest keep last scan's details"], _ha["errors"])
+    # (b) 0 disables the cap; the env var is read; unset or not a number means the default 600 s
+    _CLK["t"], _OPENED[:] = 0.0, []
+    _f0 = _bud_found(5)
+    _h0 = {"errors": []}
+    os.environ["BIDWATCH_DETAIL_BUDGET_S"] = "0"
+    run._enrich_and_download(_ses_ok, _slow_mod, _f0, "bidnet", profiles, run._WatchSet([]), _bud_prev(_f0), True, {}, _h0)
+    check("BIDWATCH_DETAIL_BUDGET_S=0: no cap, all five enriched (300 s of fake clock), no detail_cut, no note",
+          _OPENED == ["1", "2", "3", "4", "5"] and "detail_cut" not in _h0 and _h0["errors"] == [], (_OPENED, _h0))
+    os.environ["BIDWATCH_DETAIL_BUDGET_S"] = "45"
+    _b45 = run._DetailBudget().seconds
+    os.environ["BIDWATCH_DETAIL_BUDGET_S"] = "soon"
+    _bbad = run._DetailBudget().seconds
+    os.environ.pop("BIDWATCH_DETAIL_BUDGET_S")
+    check("the env var is read (45 -> 45 s); unset -> 600 s; a non-number -> 600 s",
+          _b45 == 45.0 and run._DetailBudget().seconds == 600.0 and _bbad == 600.0 and run.DETAIL_BUDGET_ENV == "BIDWATCH_DETAIL_BUDGET_S",
+          (_b45, _bbad))
+    # (c) order: the watched bid (listed last) first, then the match new this scan, then the rest: the budget goes to what matters
+    _CLK["t"], _OPENED[:] = 0.0, []
+    _fw = _bud_found(4)
+    _fw["bidnet:4"]["title"] = "Watched HVAC bid 26-77"
+    _pw = _bud_prev(_fw)
+    del _pw["bidnet:3"]  # new this scan
+    _hw = {"errors": []}
+    _wsb = run._WatchSet([{"name": "w", "source": "bidnet", "match": "26-77"}])
+    run._enrich_and_download(_ses_ok, _slow_mod, _fw, "bidnet", profiles, _wsb, _pw, True, {}, _hw, budget=run._DetailBudget(100))
+    check("watched first, then new, then the rest: bids 4 (watched) and 3 (new) opened, 1 and 2 cut and kept; the dict's order unchanged",
+          _OPENED == ["4", "3"] and _kept(_fw, _pw, "bidnet:1") and _kept(_fw, _pw, "bidnet:2") and _fw["bidnet:4"].get("watched") is True
+          and list(_fw) == ["bidnet:1", "bidnet:2", "bidnet:3", "bidnet:4"] and _hw["detail_cut"]["done"] == 2 and _hw["detail_cut"]["total"] == 4,
+          (_OPENED, _hw))
+    _CLK["t"], _OPENED[:] = 0.0, []
+    _fw2 = _bud_found(3)
+    _fw2["bidnet:2"]["title"] = "Watched HVAC bid 26-77"
+    run._enrich_and_download(_ses_ok, _slow_mod, _fw2, "bidnet", profiles, _wsb, _bud_prev(_fw2), True, {}, {"errors": []},
+                             budget=run._DetailBudget(0))
+    check("no cap: still watched first (2), then listing order (1, 3)", _OPENED == ["2", "1", "3"], _OPENED)
+    # (e) one budget for the scan: BidNet spends it, Bonfire's pass starts with it gone and opens nothing; its note names BidNet
+    _CLK["t"], _OPENED[:] = 0.0, []
+    _shared = run._DetailBudget(100)
+    _fs = _bud_found(3)
+    _hs = {"errors": []}
+    run._enrich_and_download(_ses_ok, _slow_mod, _fs, "bidnet", profiles, run._WatchSet([]), _bud_prev(_fs), True, {}, _hs, budget=_shared)
+    _fb = _bud_found(2, "bonfire")
+    _pb = _bud_prev(_fb)
+    _hb = {"errors": []}
+    run._enrich_and_download(_ses_ok, _slow_mod, _fb, "bonfire", profiles, run._WatchSet([]), _pb, True, {}, _hb, budget=_shared)
+    check("shared budget: BidNet 2 of 3, Bonfire 0 of 2 (both kept); each source has its own detail_cut and Bonfire's note blames BidNet",
+          _OPENED == ["1", "2"] and _hs["detail_cut"]["done"] == 2
+          and _hb["detail_cut"] == {"source": "bonfire", "done": 0, "total": 2, "elapsed_s": 120.0, "budget_s": 100.0}
+          and _kept(_fb, _pb, "bonfire:1") and _kept(_fb, _pb, "bonfire:2")
+          and _hb["errors"] == ["detail pass cut after 100 s: 0 of 2 bids enriched (BidNet slow); the rest keep last scan's details"],
+          (_OPENED, _hs, _hb))
+finally:
+    run._now = _real_now2
+    os.environ.pop("BIDWATCH_DETAIL_BUDGET_S", None)
+    if _bud_env is not None:
+        os.environ["BIDWATCH_DETAIL_BUDGET_S"] = _bud_env
+
+# (d) REPORT.md and LAST_SCAN.md say so, and the run is degraded (exit 3), not failed: the rows are fresh, part of their detail is not
+_cut_note = "detail pass cut after 600 s: 23 of 85 bids enriched (BidNet slow); the rest keep last scan's details"
+_cut_h = {"bidnet": {"reachable": True, "reach_note": "HTTP 200", "creds": {"BIDNET_USER": True, "BIDNET_PASS": True}, "logged_in": True,
+                     "login_note": "session reused (saved 2026-11-12T19:40:00+00:00)", "count": 584, "matches": 85,
+                     "last_success": "2026-11-12T20:39:00+00:00",
+                     "errors": ["detail Custodial Services: TimeoutError: Loading... never finished", _cut_note],
+                     "detail_cut": {"source": "bidnet", "done": 23, "total": 85, "elapsed_s": 612.4, "budget_s": 600.0}},
+          "samgov": {"reachable": True, "reach_note": "HTTP 200", "creds": {"SAM_API_KEY": True}, "logged_in": True, "login_note": "API key",
+                     "count": 93, "matches": 12, "errors": [], "last_success": "2026-11-12T20:39:00+00:00"}}
+_cut_r = {"started": "2026-11-12T20:39:00+00:00", "found": {}, "new": {}, "changed": {}, "closed": {}, "downloads": {}, "missing_watch": [],
+          "filed": [], "health": _cut_h}
+_cut_st = run.run_status(_cut_h)
+check("run_status: a cut detail pass is degraded (exit 3), not a failure; the clean source is not degraded",
+      _cut_st == {"ok": True, "skipped": [], "degraded": ["bidnet"], "exit_code": 3}, _cut_st)
+_cut_rep = run.render(_cut_r).splitlines()
+check("REPORT.md: the cut line in the Errors section and in the headline; the source is neither BLIND nor PARTIAL (its list was complete)",
+      f"- bidnet: {_cut_note}" in _cut_rep
+      and any(ln.startswith("**Headline:**") and "detail pass cut by the time budget: bidnet 23/85 enriched" in ln for ln in _cut_rep)
+      and not any("BLIND" in ln or "PARTIAL" in ln for ln in _cut_rep), [ln for ln in _cut_rep if "cut" in ln or "Headline" in ln])
+_cut_ls = run.render_last_scan(_cut_r).splitlines()
+_cut_el = next((ln for ln in _cut_ls if ln.startswith("Errors:")), "")
+check("LAST_SCAN.md: the Errors line names the cut (23/85, 612 s, budget 600 s) although another error came first, then that error, exit code 3",
+      _cut_el == "Errors: bidnet 2; detail pass cut after 612 s (budget 600 s): bidnet 23/85 enriched, the rest keep last scan's details; "
+                 "first: bidnet: detail Custodial Services: TimeoutError: Loading... never finished; exit code 3", _cut_el)
+_cut_only = {**_cut_h, "bidnet": {**_cut_h["bidnet"], "errors": [_cut_note]}}
+_cut_el2 = next((ln for ln in run.render_last_scan({**_cut_r, "health": _cut_only}).splitlines() if ln.startswith("Errors:")), "")
+check("LAST_SCAN.md: when the cut note is the only error it is not printed twice",
+      _cut_el2 == "Errors: bidnet 1; detail pass cut after 612 s (budget 600 s): bidnet 23/85 enriched, the rest keep last scan's details; exit code 3",
+      _cut_el2)
 
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

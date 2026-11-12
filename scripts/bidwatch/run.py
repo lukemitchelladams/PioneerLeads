@@ -13,7 +13,12 @@ Every cycle:
   2. Pull ALL open bids from every reachable source (BidNet Colorado statewide + keyword searches,
      Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing, ColoradoVSS public list).
   3. Match each against the company profiles; open the detail page of every match and every
-     watched bid to read closing date, questions deadline, pre-bid/site walk (mandatory or not).
+     watched bid to read closing date, questions deadline, pre-bid/site walk (mandatory or not). Watched bids
+     first, then the matches new this scan, then the rest, inside one wall-clock budget for the whole detail pass
+     (BIDWATCH_DETAIL_BUDGET_S, default 600 s, 0 = no cap, shared by BidNet, Bonfire and ColoradoVSS): past it the
+     remaining bids keep last scan's detail, the cut is noted in health and the Errors lines, and the scan goes on
+     to write its files (exit 3, degraded). Before this, 2026-11-12 20:39Z, BidNet's tabs hung on "Loading..." and
+     the detail pass outlived the outer `timeout 1500`: no REPORT.md, the hour's list scan lost.
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
      Q & A tab entries on watched bids), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in.
@@ -150,6 +155,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["bidnet"]["complete"] = False
         health["bidnet"]["login_note"] = f"COOL-DOWN after a robot check, until {bidnet.cooldown_until()}"
 
+    budget = _DetailBudget()  # one wall clock for every source's detail pass; starts at the first one
     br = None
     if browser_sources:
         from scripts.bidwatch.browser import Browser, PortalSession
@@ -206,7 +212,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         _restore_detail(found, prev, "bidnet")
                     else:
                         _enrich_and_download(ses, bidnet, found, "bidnet", profiles, watched_keys, prev,
-                                             enrich_details, downloads, h)
+                                             enrich_details, downloads, h, budget=budget)
                 except Exception as e:  # noqa: BLE001 - one source failing must not cost the others their scan
                     h["errors"].append(f"BidNet scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -231,7 +237,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         for r in rows.values():
                             found[key(r)] = r
                     _enrich_and_download(ses, bonfire, found, "bonfire", profiles, watched_keys, prev,
-                                         enrich_details, downloads, h)
+                                         enrich_details, downloads, h, budget=budget)
                 except Exception as e:  # noqa: BLE001
                     h["errors"].append(f"Bonfire scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -258,7 +264,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         _restore_detail(found, prev, "coloradovss")
                     else:
                         _enrich_and_download(ses, coloradovss, found, "coloradovss", profiles, watched_keys, prev,
-                                             enrich_details, downloads, h)
+                                             enrich_details, downloads, h, budget=budget)
                 except Exception as e:  # noqa: BLE001
                     h["errors"].append(f"ColoradoVSS scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -533,64 +539,152 @@ def _restore_detail(found: dict, prev: dict, source: str) -> None:
             found[k] = _keep_detail(b, prev[k])
 
 
-def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h):
+DETAIL_BUDGET_ENV = "BIDWATCH_DETAIL_BUDGET_S"  # wall-clock seconds for the whole detail pass; default 600, 0 disables
+DETAIL_BUDGET_S = 600
+_now = time.monotonic  # the detail pass's clock, looked up at call time so tests can replace it
+SOURCE_LABEL = {"bidnet": "BidNet", "bonfire": "Bonfire", "coloradovss": "ColoradoVSS", "samgov": "SAM.gov", "dibbs": "DIBBS"}
+CUT_NOTE_PREFIX = "detail pass cut after "  # the health note's first words; the renderers recognise it by them
+
+
+def detail_budget_s() -> float:
+    """Seconds the detail pass may take in all: env BIDWATCH_DETAIL_BUDGET_S (0 = no cap), else DETAIL_BUDGET_S. A value
+    that is not a number means the default."""
+    try:
+        s = float(os.environ.get(DETAIL_BUDGET_ENV, "") or DETAIL_BUDGET_S)
+    except ValueError:
+        s = DETAIL_BUDGET_S
+    return max(0.0, s)
+
+
+class _DetailBudget:
+    """One wall-clock budget for a scan's detail pass, shared by every browser source (BidNet, Bonfire, ColoradoVSS, in
+    that order). The clock starts at the first _enrich_and_download call of the scan and never restarts, so a slow
+    BidNet leaves the sources after it less, or nothing; each source's cut is recorded on its own health entry. Time
+    is also tallied per source so the note can say which one was slow. Why: 2026-11-12 20:39Z, BidNet's detail tabs hung
+    on "Loading..." (a site-wide service banner), the detail pass outlived the outer `timeout 1500`, and REPORT.md was
+    never written although the list scan and SAM.gov had finished long before."""
+
+    def __init__(self, seconds: float | None = None):
+        self.seconds = detail_budget_s() if seconds is None else max(0.0, float(seconds))
+        self.start_at: float | None = None
+        self.used: dict[str, float] = {}  # seconds each finished source's detail pass took
+        self.current: tuple[str, float] | None = None  # the source whose detail pass is running, and when it began
+
+    def enter(self, source: str) -> None:
+        """The start of a source's detail pass; the first call starts the scan's clock."""
+        t = _now()
+        if self.start_at is None:
+            self.start_at = t
+        self.leave()
+        self.current = (source, t)
+
+    def leave(self) -> None:
+        """The end of the running source's detail pass (its time between passes is nobody's)."""
+        if self.current:
+            s, t0 = self.current
+            self.used[s] = self.used.get(s, 0.0) + (_now() - t0)
+            self.current = None
+
+    def elapsed(self) -> float:
+        return 0.0 if self.start_at is None else _now() - self.start_at
+
+    def exceeded(self) -> bool:
+        return self.seconds > 0 and self.elapsed() > self.seconds
+
+    def slowest(self) -> str:
+        """The source that has spent the most of the budget so far (the running one counted up to now)."""
+        used = dict(self.used)
+        if self.current:
+            s, t0 = self.current
+            used[s] = used.get(s, 0.0) + (_now() - t0)
+        return max(used, key=used.get) if used else ""
+
+
+def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h, budget=None):
+    """Open the detail page of every matching or watched bid of `source` (watched bids first, then the matches new this
+    scan, then the rest, listing order inside each tier), download watched bids' documents, and give every bid whose page
+    is not read this scan the detail an earlier scan read. `budget` is the scan's shared _DetailBudget (None: a fresh one
+    from the environment): once its wall clock is spent, the remaining bids keep last scan's detail exactly like a bid
+    skipped for any other reason, h["detail_cut"] records the cut and one line goes to h["errors"]; nothing is raised, so
+    the scan goes on to write REPORT.md, LAST_SCAN.md and open_bids.json."""
     if not enrich_details:
         return
+    budget = budget if budget is not None else _DetailBudget()
+    budget.enter(source)
     blocked = None
-    for k, b in list(found.items()):
-        if b["source"] != source:
-            continue
-        b["profiles"] = profile_hits(b, profiles)
-        old = prev.get(k, {})
-        is_w = watched_keys.check(b)
-        recently = old.get("detail_checked") and old.get("closing") == b.get("closing") and not is_w \
-            and old.get("detail_at", "")[:10] == iso()[:10]
-        if not (b["profiles"] or is_w):
-            continue
-        # Public BidNet detail pages add nothing but the closing time (everything else is members-only),
-        # so without a login (e.g. a mid-scan re-login deferred) only watched bids get opened; the rest keep
-        # what an earlier scan read, so the next logged-in scan does not report their pre-bid as a change.
-        if source == "bidnet" and not ses.logged_in and not is_w:
-            found[k] = _keep_detail(b, old)
-            continue
-        if recently or blocked:
-            found[k] = _keep_detail(b, old)
-            continue
-        b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
-        try:
-            got = mod.enrich(ses, b)
-            # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
-            # session expiry) must not erase what an earlier scan read, or the next scan reports every document
-            # as a new addendum
-            for f in DETAIL_FIELDS:
-                if not got.get(f) and old.get(f):
-                    got[f] = old[f]
-            found[k] = {**got, "detail_at": iso()}
-        except Exception as e:  # noqa: BLE001
-            found[k] = _keep_detail(b, old)
-            if type(e).__name__ == "Challenged":  # robot check / Cloudflare: every other page will fail the same way
-                blocked = str(e)
-                h["errors"].append(f"detail pages blocked: {e}")
+    try:
+        rows = [(k, b) for k, b in found.items() if b["source"] == source]
+        for _k, b in rows:
+            b["profiles"] = profile_hits(b, profiles)
+        # bids that are neither matching nor watched are never opened; the budget goes to what matters first
+        todo = [(k, b) for k, b in rows if b["profiles"] or watched_keys.check(b)]
+        todo.sort(key=lambda kb: 0 if watched_keys.check(kb[1]) else 1 if kb[0] not in prev else 2)
+        cut = None
+        done = 0
+        for k, b in todo:
+            old = prev.get(k, {})
+            is_w = watched_keys.check(b)
+            if blocked or cut:
+                found[k] = _keep_detail(b, old)
                 continue
-            h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
-        if is_w and ses.logged_in and hasattr(mod, "download_docs"):
+            if budget.exceeded():
+                cut = {"source": source, "done": done, "total": len(todo), "elapsed_s": round(budget.elapsed(), 1),
+                       "budget_s": budget.seconds}
+                h["detail_cut"] = cut
+                slow = budget.slowest() or source
+                h["errors"].append(f"{CUT_NOTE_PREFIX}{budget.seconds:.0f} s: {done} of {len(todo)} bids enriched "
+                                   f"({SOURCE_LABEL.get(slow, slow)} slow); the rest keep last scan's details")
+                found[k] = _keep_detail(b, old)
+                continue
+            done += 1
+            recently = old.get("detail_checked") and old.get("closing") == b.get("closing") and not is_w \
+                and old.get("detail_at", "")[:10] == iso()[:10]
+            # Public BidNet detail pages add nothing but the closing time (everything else is members-only),
+            # so without a login (e.g. a mid-scan re-login deferred) only watched bids get opened; the rest keep
+            # what an earlier scan read, so the next logged-in scan does not report their pre-bid as a change.
+            if source == "bidnet" and not ses.logged_in and not is_w:
+                found[k] = _keep_detail(b, old)
+                continue
+            if recently:
+                found[k] = _keep_detail(b, old)
+                continue
+            b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
             try:
-                got = mod.download_docs(ses, found[k])  # only files not already on disk
+                got = mod.enrich(ses, b)
+                # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
+                # session expiry) must not erase what an earlier scan read, or the next scan reports every document
+                # as a new addendum
+                for f in DETAIL_FIELDS:
+                    if not got.get(f) and old.get(f):
+                        got[f] = old[f]
+                found[k] = {**got, "detail_at": iso()}
             except Exception as e:  # noqa: BLE001
-                got = []
-                if type(e).__name__ == "Challenged":
+                found[k] = _keep_detail(b, old)
+                if type(e).__name__ == "Challenged":  # robot check / Cloudflare: every other page will fail the same way
                     blocked = str(e)
-                    h["errors"].append(f"downloads stopped: {e}")
-                else:
-                    h["errors"].append(f"download {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
-            if got:
-                downloads[k] = got
-            if hasattr(mod, "doc_path"):
-                docs = (found[k].get("documents") or [])[:60]
-                missing = [d for d in docs if not ((pth := mod.doc_path(found[k], d)) and pth.is_file())]
-                if missing:
-                    h["errors"].append(f"{b.get('title', '')[:60]}: {len(missing)} of {len(docs)} documents not "
-                                       "downloaded yet (tried again next scan)")
+                    h["errors"].append(f"detail pages blocked: {e}")
+                    continue
+                h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
+            if is_w and ses.logged_in and hasattr(mod, "download_docs"):
+                try:
+                    got = mod.download_docs(ses, found[k])  # only files not already on disk
+                except Exception as e:  # noqa: BLE001
+                    got = []
+                    if type(e).__name__ == "Challenged":
+                        blocked = str(e)
+                        h["errors"].append(f"downloads stopped: {e}")
+                    else:
+                        h["errors"].append(f"download {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
+                if got:
+                    downloads[k] = got
+                if hasattr(mod, "doc_path"):
+                    docs = (found[k].get("documents") or [])[:60]
+                    missing = [d for d in docs if not ((pth := mod.doc_path(found[k], d)) and pth.is_file())]
+                    if missing:
+                        h["errors"].append(f"{b.get('title', '')[:60]}: {len(missing)} of {len(docs)} documents not "
+                                           "downloaded yet (tried again next scan)")
+    finally:
+        budget.leave()
     if blocked:
         # the health note (and the cycle line's logins=) must not read as a clean "session reused" when the robot check
         # hit an enrichment page and started a cool-down (2026-11-06 15:41Z): the login was fine, so say where it hit
@@ -681,11 +775,13 @@ def _change_line(b: dict) -> str:
 def run_status(health: dict) -> dict:
     """What a scan's health means for main(): ok (any source returned rows), the sources skipped on purpose (BidNet login
     deferred: not a fault), the degraded ones (nothing fresh this run: blind, carried forward, unreachable or empty, dibbs
-    excepted) and the exit code a single run returns: 0 clean, 3 degraded, 2 nothing at all."""
+    excepted; or a detail pass cut by the wall-clock budget, so some bids carry last scan's detail) and the exit code a
+    single run returns: 0 clean, 3 degraded, 2 nothing at all."""
     ok = any(v.get("count") for v in health.values())
     skipped = [s for s, v in health.items() if v.get("login_deferred")]
     degraded = [s for s, v in health.items() if not v.get("not_scanned_this_run") and s not in skipped
-                and (v.get("carried_forward") or not v.get("reachable") or (not v.get("count") and s != "dibbs"))]
+                and (v.get("carried_forward") or not v.get("reachable") or (not v.get("count") and s != "dibbs")
+                     or v.get("detail_cut"))]
     return {"ok": ok, "skipped": skipped, "degraded": degraded, "exit_code": (0 if not degraded else 3) if ok else 2}
 
 
@@ -753,12 +849,23 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
         label = (w or {}).get("folder") or k  # the bid folder the watchlist names, else source:id
         lines += [f"  - {label}: {Path(f).name}" for f in files]
     errs = [(s, e) for s, v in h.items() if not v.get("not_scanned_this_run") for e in (v.get("errors") or [])]
-    if errs:
+    # a detail pass the wall-clock budget cut is always named here, whatever else went wrong first: those bids carry
+    # last scan's detail, and the operator must not read their unchanged documents / pre-bid as confirmed
+    cuts = [(s, v["detail_cut"]) for s, v in h.items() if not v.get("not_scanned_this_run") and v.get("detail_cut")]
+    if errs or cuts:
         per = {}
         for s, _ in errs:
             per[s] = per.get(s, 0) + 1
-        counts = ", ".join(f"{s} {n}" for s, n in per.items())
-        lines.append(f"Errors: {counts}; first: {errs[0][0]}: {_one_line(errs[0][1], 200)}; exit code {st['exit_code']}")
+        line = "Errors: " + (", ".join(f"{s} {n}" for s, n in per.items()) or "none")
+        if cuts:
+            line += (f"; detail pass cut after {max(c.get('elapsed_s') or 0 for _, c in cuts):.0f} s (budget "
+                     f"{max(c.get('budget_s') or 0 for _, c in cuts):.0f} s): "
+                     + ", ".join(f"{s} {c.get('done', 0)}/{c.get('total', 0)} enriched" for s, c in cuts)
+                     + ", the rest keep last scan's details")
+        first = next((e for e in errs if not (cuts and str(e[1]).startswith(CUT_NOTE_PREFIX))), None)
+        if first:
+            line += f"; first: {first[0]}: {_one_line(first[1], 200)}"
+        lines.append(f"{line}; exit code {st['exit_code']}")
     else:
         lines.append(f"Errors: none; exit code {st['exit_code']}")
     return "\n".join(lines) + "\n"
@@ -793,6 +900,10 @@ def render(r: dict) -> str:
                                           for s in blind))
     if carried:
         head.append("not scanned this run (previous results kept): " + ", ".join(carried))
+    cuts = [(s, v["detail_cut"]) for s, v in h.items() if not v.get("not_scanned_this_run") and v.get("detail_cut")]
+    if cuts:  # the detail pass ran out of wall clock: the rows are fresh, part of their detail is last scan's
+        head.append("detail pass cut by the time budget: " + ", ".join(
+            f"{s} {c.get('done', 0)}/{c.get('total', 0)} enriched" for s, c in cuts) + ", the rest keep last scan's details")
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
 
     lines.append("## Source health\n")
