@@ -701,6 +701,17 @@
    "name": "Reclamation 140RR027R0010 PGMB Security Gate (NO: fence/gate construction, site visit 10/26 passed; due 11/23)",
    "source": "samgov",
    "match": "140RR027R0010"
+  },
+  {
+   "name": "DLA SPE4A627RX186 Bearing, Roller, Needle NSN 3110-00-902-3835 (Jones Bearing EVALUATE weak; DIBBS; due 12/03)",
+   "source": "samgov",
+   "match": "SPE4A627RX186",
+   "folder": "bids/_jones-bearing/notices/9e7057b68eff46849d6de2cb28834363"
+  },
+  {
+   "name": "DLA SPE4A627RX158 Bearing, Roller NSN 3110-01-051-1649 (NO: Hamilton Sundstrand aerospace part)",
+   "source": "samgov",
+   "match": "SPE4A627RX158"
   }
  ]
 }

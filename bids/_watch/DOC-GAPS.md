@@ -45,3 +45,6 @@ posted on BidNet. Other watched (CRM-tracked) bids keep their files in bids/_wat
 
 ## DLA SPRMM126QMJ99 Bearing, Ball and Roller (Jones Bearing EVALUATE weak), closes 2026-12-16
 SAM.gov notice 3d326babf2eb497eabe64330bb3f5d25 has no attachment posted (11/12 11:4xZ); quantity, delivery and the quote method are not in the notice text. If Luke/Dad confirm authorized-distributor status for American Metal Bearing (CAGE 70508), pull the solicitation PDF from SAM.gov into bids/_jones-bearing/notices/3d326babf2eb497eabe64330bb3f5d25/docs/.
+
+## DLA SPE4A627RX186 Bearing, Roller, Needle (Jones Bearing EVALUATE weak), closes 2026-12-03 15:00 ET
+RFP is posted on DIBBS only; cloud access is prohibited. If Luke/Dad confirm JTEKT distributor access, Luke's computer or the Mac saves the RFP PDF into bids/_jones-bearing/notices/9e7057b68eff46849d6de2cb28834363/docs/.

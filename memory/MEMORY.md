@@ -1769,3 +1769,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ 15:36Z scan: BidNet BLIND (cool-down after the 14:36Z detail-page robot check, ends 16:41:55Z); samgov 95, coloradovss 69/3, bonfire Cloudflare, dibbs not scanned; open matches 151 (rows kept); 0 new.
 - Inbox: the 2 h search matched three La Plata sub threads, but all their messages are our own 11/04 and 11/09 sends (index false positive; no reply from Mile High Plumbing, First Melt or Comfort Air). Nothing from Luke; no CRM brief. GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v282 (98bfbf65989823b12fb09aeacaa3da4b), events v284 (288c9edba6e388a5c38e4e3afe2c95b1), portal_feed v142 (e127d4b0b3fbf6bbdb2874c41a077e1b), sources v239 (3930d78f7ef10077da5e758e4f64b45c), doc_gaps v10.
+
+### 2026-11-12 16:55Z hourly (09:35 MT) scan, HQ
+- Launch waited 338 s for the cool-down; fresh login 16:43:05Z clean (no code, no robot check). All live: bidnet 672/84, samgov 97/97, coloradovss 70/3, bonfire 2/1, dibbs not scanned. Push 1283446. 0 docs. SAM.gov brief WORKED live: "brief: NSN 3110-01-051-1649" / "brief: NSN 3110-00-902-3835" under the two new DLA Aviation notices.
+- Triage: SPE4A627RX158 Bearing, Roller (approved source Hamilton Sundstrand 99167, EAD 155, 644 days ARO) = NO. SPE4A627RX186 Bearing, Roller, Needle (approved source JTEKT 5XMS1, EAD 398/yr, 5-yr IDC, 120 days ARO, Bearing Restriction) = EVALUATE weak, folder + pipeline + watchlist; DECIDE for Luke/Dad on JTEKT distributor access (joins the American Metal Bearing question).
+- Brief tweak to ship next: DLA Aviation text uses "Approved Source: <name> (CAGE)" / "CAGE 5XMS1" and "Estimated Annual Demand is N"; add approved_sources + annual_demand to describe_notice/brief_line.
+- Inbox 15:35-16:35Z: no inbound (the 3 La Plata threads that matched newer_than:1h hold only our own 11/04 + 11/09 sends). No email sent.

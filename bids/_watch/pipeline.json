@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T14:04:06Z",
+ "updated": "2026-11-12T16:50:26Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1722,6 +1722,25 @@
    "sub_pricing": "Not asked (authorized-distributor question first)",
    "folder": "bids/_jones-bearing/notices/3d326babf2eb497eabe64330bb3f5d25",
    "contact": "RYAN.BRENNAN@DLA.MIL (PCO, from notice)"
+  },
+  {
+   "id": "dla-spe4a627rx186-needle-bearing",
+   "agency": "DLA Aviation (Richmond)",
+   "title": "31--BEARING, ROLLER, NEEDLE (NSN 3110-00-902-3835), approved source JTEKT CAGE 5XMS1; 5-year IDC, est. 398/yr",
+   "sol": "SPE4A627RX186 (SAM.gov 9e7057b68eff46849d6de2cb28834363)",
+   "trade": "Jones Bearing supply (needle roller bearing, JTEKT/Koyo part)",
+   "due": "2026-12-03T15:00:00-05:00",
+   "due_source": "SAM.gov responseDeadLine 2026-12-03T15:00 ET",
+   "portal": "DIBBS (RFP posted there only; cloud access prohibited, quote from Luke's computer)",
+   "decision": "EVALUATE (weak; NO unless Jones Bearing can supply genuine JTEKT 5XMS1 parts with traceability)",
+   "decision_note": "Surfaced 2026-11-12 16:48Z scan (brief: NSN 3110-00-902-3835). Approved source JTEKT Bearings North America CAGE 5XMS1; Estimated Annual Demand 398 (min 99, max 398); 5-year commercial IDC; 120 days ARO; CAI; Bearing Restriction applies. No set-aside stated. Luke/Dad decide on distributor access.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison dealer quote; Jones Bearing supplies",
+   "subs": "Jones Bearing (Luke's dad)",
+   "sub_pricing": "Not asked (distributor-access question first)",
+   "folder": "bids/_jones-bearing/notices/9e7057b68eff46849d6de2cb28834363",
+   "contact": "cassandra.blagmon@dla.mil (from notice)"
   }
  ],
  "events": [
