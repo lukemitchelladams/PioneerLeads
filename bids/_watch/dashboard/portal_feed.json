@@ -1650,21 +1650,6 @@
   "url": "https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view"
  },
  {
-  "key": "bidnet:0000440039",
-  "source": "bidnet",
-  "agency": "",
-  "title": "RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations",
-  "sol": "",
-  "closing": "2026-12-01",
-  "posted": "2026-10-13",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000442190",
   "source": "bidnet",
   "agency": "",
@@ -2400,6 +2385,21 @@
   "url": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4"
  },
  {
+  "key": "bidnet:0000440039",
+  "source": "bidnet",
+  "agency": "",
+  "title": "RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations",
+  "sol": "",
+  "closing": "2026-12-10",
+  "posted": "2026-10-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:444230872362",
   "source": "bidnet",
   "agency": "",
@@ -2636,7 +2636,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1"
  },
  {

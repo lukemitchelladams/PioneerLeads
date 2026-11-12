@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-12T21:35:50+00:00
+# Bid watch report — 2026-11-12T22:36:31+00:00
 
-**Headline:** 4 changed (addenda/dates); not scanned this run (previous results kept): dibbs; detail pass cut by the time budget: bidnet 7/91 enriched, bonfire 0/1 enriched, coloradovss 0/3 enriched, the rest keep last scan's details
+**Headline:** 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs; detail pass cut by the time budget: bidnet 7/91 enriched, bonfire 0/1 enriched, coloradovss 0/3 enriched, the rest keep last scan's details
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 639 | BUYER 451, AGGREGATE 189 | 82 | 2026-11-12T21:35:50+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-12T21:35:50+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 97 |  | 97 | 2026-11-12T21:35:50+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 3 | 2026-11-12T21:35:50+00:00 | 1 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 638 | BUYER 450, AGGREGATE 189 | 82 | 2026-11-12T22:36:31+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-12T22:36:31+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 97 |  | 97 | 2026-11-12T22:36:31+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-12T22:36:31+00:00 | 1 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -24,10 +24,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **Interior Stout Street Corridor LED Lighting Upgrade** (bidnet): pre-bid now 2026-11-17 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Interior-Stout-Street-Corridor-LED-Lighting-Upgrade/0000443313?purchasingGroupId=8409951&origin=1
-- **Window Cleaning** (bidnet): pre-bid now 2026-11-18 mandatory=False — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1
-- **Boiler Replacement Projects - 2 Locations** (bidnet): pre-bid now 2026-11-17 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1
-- **Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting** (bidnet): pre-bid now 2026-11-23 mandatory=True — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1
+- **RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations** (bidnet): closing date 2026-12-01 -> 2026-12-10 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -207,7 +204,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet |  | As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services | 2026-12-01 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Emergency-Board-Up-Temporary-Fencing-and-Site-Security-Services/0000442961?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Professional Surveying, Mapping, and Related Services | 2026-12-01 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Surveying-Mapping-and-Related-Services/0000442372?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | HVAC Filters | 2026-12-01 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Filters/0000442190?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet |  | RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations | 2026-12-01 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,DUPLEX | 2026-12-01 (19d) |  | https://sam.gov/workspace/contract/opp/e0744ff44d534fe384865ff6a50be7d3/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-01 (19d) |  | https://sam.gov/workspace/contract/opp/44098e7c120b467eaab640f73e9802cc/view |
 | brownbison WATCHED | bidnet |  | Parks On-Call Irrigation Services | 2026-12-02 (20d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Parks-On-Call-Irrigation-Services/0000441782?purchasingGroupId=8409951&origin=1 |
@@ -244,6 +240,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet |  | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Professional Services Program | 2026-12-09 (27d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Services-Program/0000440926?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | coloradovss | DNR - Division of Parks & Wildlife | Native Aquatic Species Facility Heater Replacement & Install | 2026-12-09 (27d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
+| brownbison WATCHED | bidnet |  | RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations | 2026-12-10 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Communications & Public Relations Services On-Call | 2026-12-11 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Communications-Public-Relations-Services-On-Call/0000441223?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SHELL AY(PRT SIDE) | 2026-12-14 (32d) |  | https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | SHELL AY(PRT SIDE) (place of performance not stated; PA buying office) | 2026-12-14 (32d) |  | https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view |
