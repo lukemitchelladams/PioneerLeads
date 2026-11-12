@@ -1840,3 +1840,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - La Plata sweep done (2 agents): ~16 email-reachable Durango-area firms written to bids/laplata-oncall-trades/sub-outreach.md.
   - A tier: HVAC Heating & Cooling Engineers, Fahrenheit Enterprises, Marco's Heating; plumbing Summit Plumbing and Heating; electrical Nightlight Electric, Clyde Electric; general repair SACHS Construction.
   - Not contacted; addresses from search snippets only; personal-name addresses left out of the repo.
+- 21:3xZ La Plata: worker sweep applied by HQ: 7 Durango A-tier firms asked for 2027 hourly rates + trip charge by Fri 17:00 (1a1d1aa56a4a191c), IFB attached; logged in bids/laplata-oncall-trades/sub-outreach.md so the Mac does not double-send. Bid due Mon 11/17 10:00 MST by email (IFB p.4).

@@ -1,0 +1,19 @@
+[
+ {
+  "key": "laplata-durango-sweep",
+  "subject": "La Plata County on-call trades (project 26-053-1215): Durango sub rates",
+  "bcc": [
+   "info@hcedurango.com",
+   "Service@heatdurango.com",
+   "marco@marcosheating.com",
+   "summitoffice.service@gmail.com",
+   "service@nightlightelectric.com",
+   "ClydeElectric970@gmail.com",
+   "info@sachsconstructionllc.com"
+  ],
+  "body_file": "ops/outbox/2026-11-12/laplata-durango-sweep.txt",
+  "files": [
+   "bids/laplata-oncall-trades/docs/IFB - On-Call Services - Various Trades.pdf"
+  ]
+ }
+]

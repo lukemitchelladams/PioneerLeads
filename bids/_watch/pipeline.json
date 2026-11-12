@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T21:10:46Z",
+ "updated": "2026-11-12T21:29:24Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -575,9 +575,10 @@
    "prebid_mandatory": null,
    "performer": "Local Durango subs TBD",
    "subs": "4 Durango firms emailed 2026-10-28 via HQ outbox (bcc 4, IFB attached)",
-   "sub_pricing": "None",
+   "sub_pricing": "None | 11/12 21:3xZ: 7 Durango A-tier firms asked (1a1d1aa56a4a191c): HCE, Fahrenheit, Marco's (HVAC); Summit (plumbing); Nightlight, Clyde (electrical); SACHS (general). Earlier lines silent/bounced (Mile High, Nichols, Garr, First Melt, Comfort Air, M&R).",
    "folder": null,
-   "contact": "La Plata County Procurement"
+   "contact": "La Plata County Procurement",
+   "next": "Fri 11/13 17:00 MT: any Durango rate in hand -> fill Exhibit B rate sheet (p.11) for those trades and email the bid to KHightower@lpcgov.org + SIwanicki@lpcgov.org by Mon 11/17 10:00 MST (Luke sends, or HQ under standing permission with Luke's copy); no rates -> NO-BID."
   },
   {
    "id": "carpet-upholstery-fiber",
