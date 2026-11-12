@@ -1723,3 +1723,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **Dashboard build was broken** by HQ commit 7295a8b: a top-level pipeline event in log shape {ts, bid, event} with no when/kind (KeyError 'when'). Fix: the note moved into that bid's decision_note and the bad event was removed. scripts/build_dashboard_data.py now WARNs and skips any pipeline event without bid/when/kind instead of crashing (tested). **pipeline.json `events` must be {bid, when, kind, note} calendar entries; log notes go in the bid's decision_note/next.**
 - Inbox: only a Google DMARC aggregate report (1a1cf9ab47443c52, ignore). GovTribe S&L UPGRADE_REQUIRED.
 - Dashboard: bids v278 (7812a2c431e93aa53f96427aacdc3c34), events v280 (3ed6a96ac8fba13718e0707643b36a20), portal_feed v139 (767df378eca3a9f4840f0814e9534697), sources v235 (b48570277b32b702560e78049b3fe692), doc_gaps v10.
+
+### 2026-11-12 12:46Z hourly (05:35 MT) scan, HQ
+- 12:36Z run: BidNet BLIND. Container slept 11:52-12:35Z (keepalive died; restarted pid 177), saved session idled out, and the launch omitted BIDWATCH_BIDNET_LOGIN_GAP_H=0.9 so the fresh login was deferred to 14:37Z (default 3 h gap). Push 0a15a26 (samgov 93, vss 69/3, bonfire 2/1).
+- Relaunched 12:38Z with the 0.9 h gap: fresh login 12:38:32Z clean (no code, no robot check; cooldown unchanged 08:37Z). All live: bidnet 664/84, samgov 93/93, coloradovss 69/3, bonfire 2/1 (Cloudflare on detail), dibbs not scanned. Push 8285ceb. 0 new, 0 docs.
+- FIX: BIDWATCH_BIDNET_LOGIN_GAP_H=0.9 now lives in ~/.brownbison/env (load_env_file setdefault), so every launch, HQ or worker, uses the 0.9 h gap without passing it. Rule stands: after a container sleep the saved session is dead; a fresh login inside the gap is the right call.
+- Inbox 11:35-12:35Z: only BidNet closing reminders (Arvada 26-FAC-055 GC = NO, Boettcher chiller = REVIVE-IF with 17:00 MT price cutoff today, Aurora ash B-4799 = NO-BID). No sub or buyer replies. No email sent.
