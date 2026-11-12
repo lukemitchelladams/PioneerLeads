@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T05:46:58Z",
+ "updated": "2026-11-12T08:45:43Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1632,18 +1632,19 @@
    "title": "Interior Stout Street Corridor LED Lighting Upgrade",
    "sol": "RFP 2026-1400-1718713 (BidNet 0000443313)",
    "trade": "Electrical / lighting",
-   "due": "2026-11-25T00:00:00-07:00",
-   "due_source": "BidNet listing closing 11/25/2026 (time to be read from SOL1718713.pdf)",
+   "due": "2026-11-25T17:00:00-07:00",
+   "due_source": "RFP p.1: 'Responses MUST be received on the 25th day of November, 2026 17:00:00 MST. SUBMITTALS FOR THIS PROJECT WILL ONLY BE ACCEPTED ON BidNet'",
    "portal": "BidNet Direct; docs public: SOL1718713.pdf, CCC Vendor Certification.pdf",
-   "decision": "EVALUATE",
-   "decision_note": "Surfaced 2026-11-12 05:39Z scan. MANDATORY job walk Tue 2026-11-17 12:00 MST at the Colorado Convention Center Security Office, 12th and Welton (check in with security, wristband, wait in the security lobby). Interior corridor LED retrofit = our electrical trade with a licensed electrical sub pricing; Brown Bison primes. Needs the SOL PDF read (scope, fixture counts, bonding, due time) and an electrical sub named by Fri 11/13 so someone stands at the walk. Watchlisted; next scan pulls the docs.",
+   "decision": "NO-BID (default; Luke overrules by Fri 11/13 17:00 MT)",
+   "decision_note": "Surfaced 2026-11-12 05:39Z scan. MANDATORY job walk Tue 2026-11-17 12:00 MST at the Colorado Convention Center Security Office, 12th and Welton (check in with security, wristband, wait in the security lobby). Interior corridor LED retrofit = our electrical trade with a licensed electrical sub pricing; Brown Bison primes. Needs the SOL PDF read (scope, fixture counts, bonding, due time) and an electrical sub named by Fri 11/13 so someone stands at the walk. Watchlisted; next scan pulls the docs. | 11/12 08:50Z HQ read SOL1718713.pdf (27 pp): operator Legends Global; mandatory pre-bid meeting and site visit Tue 11/17 12:00 MST; questions via BidNet by 11/19 14:00; Commercial General Liability 'not less than $5,000,000 each occurrence' (3.9.1 A), Employer's Liability and Auto $1,000,000, Performance and Payment Bond, Denver prevailing wage (3.5), licensed and OSHA-trained labor, fixtures and controls to integrate into the existing LUTRON system, 90-day contract term. Decision: NO-BID default. $5M GL and a P&P bond are beyond Brown Bison's insurance (not bound before Fri 11/13) and no electrical sub is lined up for a specialty Lutron-integrated lighting project due in 13 days.",
    "prebid": "2026-11-17T12:00:00-07:00",
    "prebid_mandatory": true,
    "performer": "Brown Bison + electrical sub (TBD)",
    "subs": "-",
    "sub_pricing": "-",
    "folder": null,
-   "contact": "-"
+   "contact": "-",
+   "next": "NO-BID unless Luke overrules by Fri 11/13 17:00 MT (walk is Tue 11/17 12:00; an overrule needs an electrical sub with $5M GL or an umbrella and a bonding line)."
   },
   {
    "id": "dla-spe8ef27t0258-conveyor-roller",
@@ -1681,6 +1682,25 @@
    "sub_pricing": "-",
    "folder": null,
    "contact": "-"
+  },
+  {
+   "id": "widefield-sd3-kitchen-equipment-26-27-013",
+   "agency": "Widefield School District 3 (Colorado Springs south)",
+   "title": "Kitchen Equipment Maintenance and Repair",
+   "sol": "RFP 26-27-013 (BidNet 0000443304)",
+   "trade": "Facilities maintenance / commercial kitchen equipment service",
+   "due": "2026-12-11T00:00:00-07:00",
+   "due_source": "RFP cover: 'Proposal Submission Deadline: 12/11/2026' (time not stated; submit via BidNet in PDF)",
+   "portal": "BidNet Direct (PDF upload); questions via BidNet by 11/25, answers by addendum",
+   "decision": "EVALUATE",
+   "decision_note": "BidNet profile match 11/12 07:39Z (worker watchlisted 08:21Z; HQ read the 11-page RFP 08:50Z). Scope: 'comprehensive diagnostic, repair, emergency response, and preventive maintenance services for commercial kitchen equipment' with a 'mandatory technician response time within two (2) hours'. Terms offered 1, 2 or 5 years; selection on qualifications/licensure, K-12 experience, personnel, approach, references, cost. Insurance per Attachment A (GL $1,000,000 single limit noted). No pre-bid or site visit listed in the RFP schedule. Needs a commercial kitchen equipment service sub (refrigeration/gas/electric cooking equipment) in the Colorado Springs/Fountain area who can hold a 2-hour response; HQ names candidates and decides GO/NO by Mon 11/16.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison + commercial kitchen equipment service sub (TBD)",
+   "subs": "-",
+   "sub_pricing": "-",
+   "folder": null,
+   "contact": "Purchasing Manager (name not in the RFP text read)"
   }
  ],
  "events": [
