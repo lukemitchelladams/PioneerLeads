@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T17:50:10Z",
+ "updated": "2026-11-12T18:43:35Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1376,12 +1376,12 @@
    "portal": "SAM.gov (email quote to the CO per the RFQ; verify)",
    "decision": "GO",
    "decision_note": "Rule 0, RFQ p.6: \"There is no scheduled site visit for this solicitation. Interested offerors who would like to tour the Pagosa Ranger District site shall contact: Email: brandon.caley@usda.gov\" (not mandatory). GO 2026-11-05 with a local sub: LPTA, one 5,437 sq ft single-story office, daily (Mon-Fri 1700-0630) + weekly (weekend) + annual cleaning, FFP base 2027 + 4 option years + 6-month 52.217-8. SCA WD 2015-5435 r32: janitor $18.68 + $5.92 H&W. Questions due 2026-11-10 10:00 MT to CO. Open: quote submission address not stated in the RFQ; 52.219-14 not listed (52.219-6 Nov 2025 by reference) so confirm the subcontracting limit; PWS 8.1 Contract Manager on site within 1 hour = sub is the alternate.",
-   "prebid": "2026-11-13T13:00:00-07:00",
+   "prebid": null,
    "prebid_mandatory": false,
    "contact": "Stephen Holly, stephen.holly@usda.gov",
    "sub_pricing": "None in hand. B&K DECLINED 11/11 (1a1cceae4d9b994f). 11/11 23:43Z HQ: re-ask to CRC Janitorial + Evergreen on the 11/05 thread (1a1ccfdadfba4085) and a fresh pricing request with the 5-file package to six worker-sweep candidates, Mountain West Cleaning (South Fork), 4 Ever Cleaning (Del Norte), PMI (Espanola), Clean Rite Janitorial (Farmington), Pagosa Cleaning Co, Tidy Team (Alamosa) (1a1ccfdb5b42ad67); addresses from search snippets, not live-verified. Pricing asked by Mon 11/16 12:00 MT. | 11/11 23:43Z Tidy Team DECLINED (\"we do not do subcontracted work\"; asked to be removed from our list: do not contact again)",
    "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008",
-   "next": "NO-BID default Mon 11/16 12:00 MT unless a sub prices (Luke overrules by Mon 14:00). Tour Fri 11/13 13:00 (Caley) was offered to the new candidates; Thu 11/12 12:00 MT HQ tells Caley who attends or cancels (pagosa-caley-cancel draft ready). RFQ due Thu 11/19 10:00.",
+   "next": "Tour Fri 11/13 13:00 CANCELLED by email to Caley 11/12 (1a1d11288a3a4a65): no attendee. Sub price (CRC, Evergreen, 5 new candidates) by Mon 11/16 12:00 MT or NO-BID; quote due Thu 11/19 10:00 MT.",
    "performer": "Brown Bison + local janitorial sub (Durango / Bayfield / Pagosa)",
    "subs": "CRC Janitorial (Durango), B&K Cleaning (Durango), Evergreen Cleaning (Bayfield) emailed 2026-11-05 (msg 1a1ade55a73ca213); 10 phone-only firms listed in sub-outreach.md for Luke; B&K replied 11/06 (interested, pricing to follow)"
   },
