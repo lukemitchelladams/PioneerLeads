@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-12T13:36:21+00:00
+# Bid watch report — 2026-11-12T14:36:16+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** 2 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 664 | BUYER 460, AGGREGATE 205 | 84 | 2026-11-12T13:36:21+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-12T13:36:21+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 93 |  | 93 | 2026-11-12T13:36:21+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-12T13:36:21+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started | 666 | BUYER 462, AGGREGATE 205 | 84 | 2026-11-12T14:36:16+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-12T14:36:16+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +31 from the nightly bulk file | 95 |  | 95 | 2026-11-12T14:36:16+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-12T14:36:16+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -31,6 +31,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (27d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (36d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (54d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| jones-bearing | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | 4610--FY27 Portable Reverse Osmosis (RO) Water Purification System | 2026-11-20 (8d) |  | https://sam.gov/workspace/contract/opp/595a043c43e3421c9ce457df6614d29f/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -83,6 +90,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | GEAR SET,WORM AND WORM WHEEL,MATCHED | 2026-11-19 (7d) |  | https://sam.gov/workspace/contract/opp/2c8270d26d9f4f8995b1c4f5133362ce/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--GEAR, PINION | 2026-11-19 (7d) |  | https://sam.gov/workspace/contract/opp/5eab430c39444c279a8cc451a662092d/view |
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | J065--Fort Harrison GE Precision Radiology Preventive Maintenance | 2026-11-20 (8d) |  | https://sam.gov/workspace/contract/opp/da9ea4b3839a49fab63f9e83dfa4ea17/view |
+| jones-bearing | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | 4610--FY27 Portable Reverse Osmosis (RO) Water Purification System | 2026-11-20 (8d) |  | https://sam.gov/workspace/contract/opp/595a043c43e3421c9ce457df6614d29f/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | Traverse Bearing Assembly | 2026-11-24 (12d) |  | https://sam.gov/workspace/contract/opp/1080fd91f83e49f595458d569cf6222f/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,DUPLEX | 2026-12-01 (19d) |  | https://sam.gov/workspace/contract/opp/618732e7b79446fab94fe7286242de02/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,ANNULA | 2026-12-01 (19d) |  | https://sam.gov/workspace/contract/opp/c29f795658414ef49624fb7d3557091f/view |
@@ -105,7 +113,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (150)
+## All open matching bids, excluding DIBBS parts RFQs (151)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -170,11 +178,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Janitorial Services | 2026-11-23 (11d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Janitorial-Services/0000441362?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Snow Removal Services | 2026-11-23 (11d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Janitorial Services | 2026-11-23 (11d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view |
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/7c57681a0efb4d8f916d6f9e0c3ee3c9/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Case Magnet | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/fd1db65a9f2d47ef81249208446d82a9/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | CRANE,FLOOR,PORTABL | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/da984b4f70fd412d924e9c830a2c3299/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AI | Vandenberg Crane Replacement | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | SACN Replace Fire Alarms and Intrusions Systems (place of performance not stated; CO buying office) | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/6ab91dd8bf824b2fbfa32476c810d7be/view |
+| brownbison | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | 56--PGMB Security Gate (place of performance not stated; CO buying office) | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/7c57681a0efb4d8f916d6f9e0c3ee3c9/view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 39--ROLLER,CONVEYOR (place of performance not stated; PA buying office) | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/994aa9e06162482d9a3c07be9ba67263/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/9a80372ece404f7a91ca3e9e5646e62d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE AIR FORCE  | Vandenberg Crane Replacement | 2026-11-23 (11d) |  | https://sam.gov/workspace/contract/opp/be527e8411824dd29e4a764a91ab32a6/view |
@@ -262,4 +271,5 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Errors
 
+- bidnet: detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network

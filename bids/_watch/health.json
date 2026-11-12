@@ -1,24 +1,26 @@
 {
-  "checked_at": "2026-11-12T13:36:21+00:00",
+  "checked_at": "2026-11-12T14:36:16+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 664,
+      "count": 666,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [],
-      "last_success": "2026-11-12T13:36:21+00:00",
+      "errors": [
+        "detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started"
+      ],
+      "last_success": "2026-11-12T14:36:16+00:00",
       "logged_in": true,
-      "login_note": "logged in (attempt 1)",
+      "login_note": "session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started",
       "matches": 84,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 205,
-        "statewide BUYER": 460
+        "statewide BUYER": 462
       }
     },
     "bonfire": {
@@ -30,7 +32,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-12T13:36:21+00:00",
+      "last_success": "2026-11-12T14:36:16+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +44,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-12T13:36:21+00:00",
+      "last_success": "2026-11-12T14:36:16+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -75,17 +77,17 @@
       }
     },
     "samgov": {
-      "bulk_added": 30,
+      "bulk_added": 31,
       "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 92 matching (parsed earlier)",
-      "count": 93,
+      "count": 95,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-12T13:36:21+00:00",
+      "last_success": "2026-11-12T14:36:16+00:00",
       "logged_in": true,
-      "login_note": "API key; +30 from the nightly bulk file",
-      "matches": 93,
+      "login_note": "API key; +31 from the nightly bulk file",
+      "matches": 95,
       "reach_note": "HTTP 404",
       "reachable": true
     }
