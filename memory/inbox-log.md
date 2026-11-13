@@ -532,3 +532,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
   from Luke.
 - 2026-11-13 21:2xZ (hourly, read-only): 0 new since 19:40Z. No bounce on HQ's 20:30Z CPW B-tier bcc (1a1d699c3400df4e) so far. No BVCC or
   La Plata reply (17:00 MT gates). No CRM brief; nothing from Luke.
+- 2026-11-13 22:2xZ (hourly, read-only): 2 bounces on HQ's 21:38Z BGNDRF bcc (1a1d6d8ae5a21e18): K Clean domain NXDOMAIN (1a1d6d8c36ba8423);
+  admin@tiguainc.org M365 rejected (1a1d6d8c46aaea1e). Logged in bids/bor-bgndrf-custodial-140rr027q0001/sub-outreach.md. No sub replies; BVCC
+  and La Plata still silent 1.5 h before the 17:00 MT gates. No CRM brief; nothing from Luke.
