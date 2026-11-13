@@ -2172,3 +2172,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Lesson: 4 of 13 search-index-only addresses bounced today. On deadline-bound asks, send A and B tiers together in round one.
 - Inbox otherwise quiet; BVCC and La Plata silent before 17:00 MT.
 - Dashboard (22:50Z, worker): bids v314 (a2c9c46d3915ad09bbd34163a0801f36), events v316 (a963c162c5723e1a463a72dba477b1bf), portal_feed v167 (646eec7d6722ad75f29de1e66a82a378), sources v264 (431c0a177bcd21ce14bbb116a6b4f6d9), doc_gaps v11 unchanged.
+- 22:30Z: BGNDRF B tier (5) msg 1a1d708c7a8ea2ad + Tigua retry (partners@/BD@) msg 1a1d708ce49026c8 after K Clean and Tigua admin@ bounced; 12 cleaners reached, 0 priced; NO-BID default Mon 12:00 stands.

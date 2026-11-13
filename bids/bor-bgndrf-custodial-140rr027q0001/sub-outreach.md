@@ -7,3 +7,4 @@
   Services admin@tiguainc.org: Microsoft 365 "550 5.4.1 Recipient address rejected: Access denied" (msg 1a1d6d8c46aaea1e). Delivered so far:
   SL Cleaning, Pristine Clean, Chase N Dirt, L&L Janitorial, Alamo Janitorial. Worker is checking Tigua's partners@ mailboxes and K Clean's
   current status.
+- 2026-11-13 22:30Z (15:30 MT, HQ): BOUNCES on the 21:38Z bcc: K Clean/Sweep-Rite (domain gone, firm dormant since 2023, no retry) and Tigua admin@tiguainc.org (recipient rejected). B tier sent, same body + attachments, msg 1a1d708c7a8ea2ad: New Mexico Premier Cleaning (cleaningnewmexico@gmail.com), Team K Cleaning Services (teamkcleaningservice@gmail.com), Treco Services (info@trecoservices.com), A & A Janitorial (lcaajanitorial@hotmail.com), A-One Janitorial (info@aonejanitorial.com). Tigua Facility Services retried at its live role mailboxes partners@tiguainc.org cc BD@tiguainc.org, msg 1a1d708ce49026c8. 12 companies reached in all; yes/no asked by Mon 11/16 12:00 MT.

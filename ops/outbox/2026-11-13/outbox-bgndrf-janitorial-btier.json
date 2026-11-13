@@ -22,7 +22,12 @@
  {
   "key": "bgndrf-janitorial-tigua-retry",
   "subject": "Reclamation BGNDRF custodial, Alamogordo (RFQ 140RR027Q0001): cleaning sub for Brown Bison",
-  "body_file": "ops/outbox/2026-11-13/bgndrf-janitorial.txt",
+  "to": [
+   "partners@tiguainc.org"
+  ],
+  "cc": [
+   "BD@tiguainc.org"
+  ],  "body_file": "ops/outbox/2026-11-13/bgndrf-janitorial.txt",
   "files": [
    "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Sol_140RR027Q0001.pdf",
    "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Sol_140RR027Q0001_Amd_0002.pdf",
@@ -30,12 +35,6 @@
    "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_2_-_Price_Schedule.docx",
    "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_3_-_Wage_Determination__28Otero_County_-_2015-5455_29.pdf",
    "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_4_-_BGNDRF_Floor_Plan_with_notations.pdf"
-  ],
-  "to": [
-   "partners@tiguainc.org"
-  ],
-  "cc": [
-   "BD@tiguainc.org"
   ]
  }
 ]
