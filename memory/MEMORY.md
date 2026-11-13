@@ -2047,3 +2047,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox blocked for the worker: Gmail connector 502, and the plugin sign-in is unsupported. HQ's local-token poll is the inbox source this hour.
 - Westminster 26-002: the RFP says responses from anyone who missed the 10/19 mandatory walk "will not be accepted", and no attendance is on record. Worker recommended that HQ move it to NO-BID by rule 0 (Luke overrules only if he attended himself).
 - Dashboard (15:00Z, worker): bids v306 (dae79249b699ea5384cbbc0f42c15f92), events v308 (149c49ce1bf70bc8396419166ba7a0c4), portal_feed v160 (ff351d6a2c905e58664e90a73bb3469d), sources v258 (2946e5747e9417bc14b8ac31dfa64707), doc_gaps v11 unchanged.
+
+### 2026-11-13 14:50Z HQ (between scans)
+- Worker 14:48Z: Westminster RFP 26-002 -> NO-BID by rule 0, verified in the extracted RFP text: "responses from Respondents who fail to
+  attend the required opening will not be accepted"; no RSVP/sign-in on record. pipeline + README updated; overrule window Mon 11/16 12:00
+  (only if Luke signed in himself on 10/19); then archive.
+- Inbox (inbox_list.py, connector still 502): Husmann Plumbing & Heating DECLINED CPW Alamosa 14:40Z (Mario Rivera). Friday batch #7 now
+  Surefire only; Flow Right full ask stays; Torres P&H next. Hourly trigger did not fire at 14:35Z (next_run_at still 14:35Z at 14:49Z);
+  launching the 07:35 MT scan by hand (login gap clear since 14:46Z).
