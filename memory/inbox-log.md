@@ -492,3 +492,11 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-13 10:27Z hourly (worker, read-only)
 - Nothing inbound in 2 h. No sub replies, no bounces, nothing from Luke, no CRM brief.
+
+## 2026-11-13 11:21Z hourly (worker, read-only)
+- 1a1d49aaf9dbdced Google DMARC aggregate report for brownbisonco.com, 11/12 UTC day (policy p=none). Read for deliverability:
+  - 16 messages from Google's servers passed both DKIM (selector google) and SPF.
+  - 1 more passed DKIM with SPF on gmail.com, so it still passes DMARC.
+  - 2 messages failed DMARC, re-signed by husmannplumbing.co (arc=pass, delivered). That is Husmann's Google Workspace relaying our 11/12 CPW ask internally, so the ask reached them.
+  - Conclusion: sub silence is not a deliverability problem.
+- No sub replies, no bounces, nothing from Luke, no CRM brief.
