@@ -2021,3 +2021,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **PSD IFB 27-701-002: Attachment F Sample Agreement is missing** (listed on IFB p.2; 8.9 agreement "in the form of Attachment F"; 8.10 agreement controls). Not in the 9 BidNet files; not found on psdschools.org. Worker wrote question #9 in bids/poudre-sd-kitchen-hood/vendor-questions.md for Luke to post with #7 and #8 before 14:00 MT today; HQ messaged to add it to Luke's copy.
 - Dashboard (12:55Z, worker): bids v305 (789cadb29002641ae175df8274b1781e), events v307 (32d5953a60e9bcbccbd6887de31e3c47), portal_feed v159 (1a60b2405bfa6cb514985bf2b89acc49), sources v257 (77f6fd3198996fb38c9e7d0b13b85055), doc_gaps v11 unchanged.
 - 12:3xZ SENT to Luke (1a1d4dda77b97a3c): paste-ready PSD questions #7, #8, #9 (worker added #9: Attachment F Sample Agreement missing from the BidNet package) to post on BidNet by Fri 14:00 MT, one entry each. Only Luke can post (portal login).
+
+### 2026-11-13 12:46Z hourly (05:35 MT) scan, HQ
+- Fresh login 12:36:59Z clean; full pass in 6 min. Push 471b83e, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 11:36-12:36Z: nothing. No email. Next: 13:44Z CEO plan trigger (write ops/plan_ceo/2026-11-13.md), 15:30Z Friday batch (8 sends).
