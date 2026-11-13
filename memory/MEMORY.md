@@ -2139,3 +2139,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Dashboard (20:48Z, worker): bids v312 (4de7a0abd1d017eb2155016c1a181a23), events v314 (948f25ab8d2c21a34682fec6995246b8), portal_feed v165
   (505cb59641b40647a342e44aaf5768d9), sources v262 (515cf9834708cf39a38a5576460c9ea8), doc_gaps v11 unchanged.
 - 20:30Z: CPW electrical B tier sent (5 generic mailboxes, msg 1a1d699c3400df4e) after Valley Electric + Royal bounced; manifest built by HQ from the worker's research since its B-tier manifest was not pushed. CPW: 13 companies asked, 1 declined, 2 bounced, 0 priced; gate Mon 12:00.
+
+### 2026-11-13 20:42Z hourly (13:35 MT) scan, HQ
+- Launched 20:40:32Z via launch_scan.sh; BidNet in cool-down (robot check #12) to 21:36:24Z, so BLIND for BidNet (652/84 carried);
+  samgov 97/97, coloradovss 72/3. New matches 0, docs 0. Pushed 5af04eb, EXIT 3. Keepalive had died again between launches (container
+  sleep); re-ensured at launch. Inbox: nothing in the last hour (no BVCC/La Plata replies with the 17:00 MT cutoff ~3 h out).
