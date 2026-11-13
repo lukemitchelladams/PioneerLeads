@@ -25,10 +25,12 @@ from __future__ import annotations
 
 import datetime as dt
 import re
+import time
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from .bidnet import RSVP_BY_RX, RSVP_RX
-from .common import MANDATORY_RX, NOT_MANDATORY_RX, PREBID_RX, extract_prebid, parse_date
+from .common import DOWNLOAD_DIR, MANDATORY_RX, NOT_MANDATORY_RX, PREBID_RX, extract_prebid, parse_date
 
 BASE = "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4"
 CREDS: tuple = ()  # public list only: no login, ever
@@ -65,6 +67,19 @@ SEL_100 = "[data-qa-id$='grid1.pagination.100Records']"
 SEL_NEXT = "[data-qa-id$='grid1.Next']"
 SEL_DOC_LINK = "a[data-qa-id$='solNumTypCat.DOC_REF']"
 SEL_BACK = "[data-qa-id$='actionGroupForPage.back.button']"
+
+# Attachments (manual Playwright run, 2026-11-12): the detail view has exactly one element whose aria-label names
+# "Attachment"; clicking it opens the attachments panel (no download starts on that click). About 3 s later each file
+# is a row whose text is the file name (`text=/<part of the name>/i`); clicking the row starts the download, and the
+# download's suggested_filename is the attachment name. There is no <a href> for the files, and neither
+# [class*='View-Attachments'] nor [title*='Attachment' i] matches anything.
+PUBLIC_DOCS = True  # attachments are public: run.py downloads them without a login (the other sources need one)
+SEL_ATTACH = "[aria-label*='Attachment' i]"
+SEL_FILE_ROW = r"text=/\.(?:pdf|docx?|xlsx?|xlsm|pptx?|zip|csv|txt|rtf|dwg|jpe?g|png)\s*$/i"  # fallback: any file-named row
+PANEL_WAIT_MS = 3000        # the panel's rows render shortly after the click
+DOWNLOAD_TIMEOUT_MS = 15000  # a row click that starts no download in this time is a failure for that file
+MAX_DOCS = 10               # files a bid may fetch in one scan (the rest wait for the next scan, like BidNet's cap)
+DOWNLOAD_BUDGET_S = 90      # wall clock for one bid's attachments; past it the remaining files are left for next scan
 
 
 class Challenged(RuntimeError):
@@ -448,3 +463,215 @@ def enrich(session, bid: dict) -> dict:
     except Exception:  # noqa: BLE001 - the next _find_link re-opens the list
         pass
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [], "")}, "detail_checked": True}
+
+
+# ---------------------------------------------------------------- attachments (public, no login)
+
+_now = time.monotonic  # one bid's download clock, looked up at call time so tests can replace it
+
+
+def _safe_name(name: str) -> str:
+    """The on-disk file name for an attachment name (the same characters bidnet.doc_path keeps)."""
+    return re.sub(r"[^\w.\- ]", "_", _flat(name)).strip()
+
+
+def _dest_dir(bid: dict, dest_dir=None) -> Path:
+    """bids/_watch/downloads/coloradovss/<solicitation id, / and spaces replaced>/ unless `dest_dir` names a folder."""
+    if dest_dir:
+        return Path(dest_dir)
+    folder = re.sub(r"[^\w.\-]+", "_", str(bid.get("id") or bid.get("sol") or "")).strip("_") or "unknown"
+    return DOWNLOAD_DIR / "coloradovss" / folder
+
+
+def doc_path(bid: dict, d: dict, dest_dir=None) -> Path | None:
+    """Where download_docs saves attachment `d` of `bid` (None when the name is unusable). run.py uses it to say how
+    many of a watched bid's documents are not on disk yet."""
+    safe = _safe_name(d.get("name") or "")
+    return (_dest_dir(bid, dest_dir) / safe) if safe else None
+
+
+def _row_pattern(name: str) -> str:
+    """The `text=/.../i` body that finds the attachment's row: the longest run of plain characters in the file name (the
+    manual run matched rows by a part of the name), escaped for a JavaScript regex; a short run means the whole name."""
+    parts = [p.strip() for p in re.findall(r"[\w .\-]+", name)]
+    best = max(parts, key=len) if parts else name
+    if len(best) < 6:
+        best = name
+    return re.sub(r"[.*+?^${}()|\[\]\\/]", lambda m: "\\" + m.group(0), best)
+
+
+def _pick_row(rows, name: str):
+    """Of the rows whose text holds part of the name, the one holding the whole name (Addendum 1 vs Addendum 10), else
+    the first; None when there is no such row."""
+    try:
+        n = rows.count()
+    except Exception:  # noqa: BLE001
+        return None
+    if not n:
+        return None
+    want = _flat(name).lower()
+    for i in range(min(n, 20)):
+        try:
+            if want in _flat(rows.nth(i).inner_text()).lower():
+                return rows.nth(i)
+        except Exception:  # noqa: BLE001
+            continue
+    return rows.first
+
+
+def _fetch(page, row, dest: Path, safe: str | None, skip_existing: bool = True) -> tuple[Path | None, str | None]:
+    """Click `row` inside expect_download and save the file as dest/<safe> (or under the download's own sanitised name).
+    Returns (path written, None), (None, None) when skip_existing and the same-size file is already there, or
+    (None, why not). A click that starts no download raises (Playwright's TimeoutError) for the caller to record."""
+    with page.expect_download(timeout=DOWNLOAD_TIMEOUT_MS) as dl:
+        row.click()
+    f = dl.value
+    name = safe or _safe_name(getattr(f, "suggested_filename", "") or "") or "attachment"
+    target, tmp = dest / name, dest / (name + ".part")
+    f.save_as(tmp)
+    size = tmp.stat().st_size if tmp.is_file() else 0
+    if size == 0:
+        tmp.unlink(missing_ok=True)
+        return None, "empty download"
+    if skip_existing and target.is_file() and target.stat().st_size == size:
+        tmp.unlink()  # the same file is already on disk (the fallback path only learns the name from the download)
+        return None, None
+    tmp.replace(target)  # a different size under the same name is a revised attachment: replaced, reported as saved
+    return target, None
+
+
+def _detail_open(page) -> bool:
+    try:
+        return page.locator(SEL_ATTACH).count() > 0
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def _open_detail(session, bid: dict) -> bool:
+    """The grid is showing (enrich went Back after reading the detail): open the solicitation's detail view again."""
+    sol = bid.get("sol") or bid["id"]
+    link = _find_link(session, sol)
+    if link is None:
+        return False
+    return _click_and_wait(session, link, DETAIL_DS, 60000) is not None
+
+
+def _back_to_grid(session) -> None:
+    """Close the attachment panel (Escape) and press Back, the way enrich does; if this does not land on the grid the
+    next _find_link re-opens the list itself."""
+    page = session.page
+    try:
+        kb = getattr(page, "keyboard", None)
+        if kb is not None:
+            kb.press("Escape")
+            page.wait_for_timeout(300)
+    except Exception:  # noqa: BLE001
+        pass
+    try:
+        back = page.locator(SEL_BACK)
+        if back.count():
+            _click_and_wait(session, back.first, LIST_DS, 30000)
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def _dump(session, tag: str) -> None:
+    try:
+        session.debug_dump(tag)
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def download_docs(session, bid: dict, dest_dir=None, skip_existing: bool = True) -> list[str]:
+    """Public, no login. Saves the solicitation's attachments (the names enrich read into bid["documents"]) that are not
+    on disk yet under bids/_watch/downloads/coloradovss/<id>/<sanitised name>, and returns the paths saved this call
+    (the same shape as bidnet.download_docs, so run.py calls both the same way). Assumes the detail view is open; when
+    the grid is showing (enrich goes Back after reading the detail) the detail is re-opened through _find_link.
+    Per-file failures never raise: they are collected in bid["download_errors"] (one short line each) and the paths
+    saved before them are still returned; at most MAX_DOCS files and DOWNLOAD_BUDGET_S seconds a bid. Only a site
+    refusal (Challenged, from re-opening the list) propagates, so run.py stops the pass like it does for BidNet.
+    Afterwards the page is put back on the grid so the next bid's _find_link works."""
+    page = session.page
+    docs = [d for d in (bid.get("documents") or []) if d.get("name")][:MAX_DOCS]
+    saved: list[str] = []
+    notes: list[str] = []
+    bid.pop("download_errors", None)
+    if not docs:
+        return saved
+    dest = _dest_dir(bid, dest_dir)
+    todo: list[tuple[str, str]] = []
+    for d in docs:
+        safe = _safe_name(d["name"])
+        if not safe:
+            continue
+        if skip_existing and (dest / safe).is_file() and (dest / safe).stat().st_size > 0:
+            continue  # already in hand (same name, non-empty); a revised attachment arrives under a new name on VSS
+        todo.append((d["name"], safe))
+    if not todo:
+        return saved
+    dest.mkdir(parents=True, exist_ok=True)
+    t0 = _now()
+
+    def over_time() -> bool:
+        return _now() - t0 > DOWNLOAD_BUDGET_S
+
+    try:
+        if not _detail_open(page) and not _open_detail(session, bid):
+            notes.append("detail view could not be re-opened for the attachments")
+        ctl = page.locator(SEL_ATTACH)
+        if not notes and not ctl.count():
+            _dump(session, "coloradovss-no-attachment-control")
+            notes.append("no Attachment control on the detail view")
+        if not notes:
+            ctl.first.click()  # opens the panel; no download starts on this click
+            page.wait_for_timeout(PANEL_WAIT_MS)
+            unmatched: list[tuple[str, str]] = []
+            for name, safe in todo:
+                if over_time():
+                    notes.append(f"time cap {DOWNLOAD_BUDGET_S} s reached: {name} and the rest wait for the next scan")
+                    break
+                row = _pick_row(page.locator(f"text=/{_row_pattern(name)}/i"), name)
+                if row is None:
+                    unmatched.append((name, safe))
+                    continue
+                try:
+                    path, why = _fetch(page, row, dest, safe, skip_existing)
+                except Exception as e:  # noqa: BLE001 - the row click started no download in time
+                    notes.append(f"{name}: no download started ({type(e).__name__})")
+                    continue
+                if path:
+                    saved.append(str(path))
+                elif why:
+                    notes.append(f"{name}: {why}")
+            if unmatched and len(unmatched) == len(todo):
+                # none of the payload's names is a row in the panel: take the first file-named rows by their own names
+                rows = page.locator(SEL_FILE_ROW)
+                n = min(rows.count(), len(todo))
+                for i in range(n):
+                    if over_time():
+                        notes.append(f"time cap {DOWNLOAD_BUDGET_S} s reached after {i} fallback rows")
+                        break
+                    try:
+                        path, why = _fetch(page, rows.nth(i), dest, None, skip_existing)
+                    except Exception as e:  # noqa: BLE001
+                        notes.append(f"fallback row {i + 1}: no download started ({type(e).__name__})")
+                        continue
+                    if path:
+                        saved.append(str(path))
+                    elif why:
+                        notes.append(f"fallback row {i + 1}: {why}")
+                if not n or not saved:
+                    _dump(session, "coloradovss-attachments")
+                    notes.append(f"{len(unmatched)} attachment name(s) not found in the Attachment panel: "
+                                 + ", ".join(nm for nm, _ in unmatched)[:200])
+            elif unmatched:
+                notes += [f"{name}: no row in the Attachment panel" for name, _ in unmatched]
+    except Challenged:
+        raise
+    except Exception as e:  # noqa: BLE001 - never into the scan; the note says what happened
+        notes.append(f"attachments: {type(e).__name__}: {' '.join(str(e).split())[:120]}")
+    finally:
+        _back_to_grid(session)
+    if notes:
+        bid["download_errors"] = notes[:MAX_DOCS]
+    return saved

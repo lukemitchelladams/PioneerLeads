@@ -15,7 +15,11 @@ Each scan writes:
   many open bids seen?), pre-bid walks in the next 7 days, NEW matching bids, CHANGES on watched bids
   (new documents = addenda, date changes), UPCOMING notices, and the full list of open matching bids.
 - `bids/_watch/open_bids.json` (everything seen), `bids/_watch/health.json`.
-- Watched-bid documents to `bids/_watch/downloads/<source>/<id>/` when logged in.
+- Watched-bid documents to `bids/_watch/downloads/<source>/<id>/` when logged in. ColoradoVSS attachments are public:
+  for a watched bid the scanner opens the detail view's Attachment panel (`[aria-label*='Attachment' i]`), clicks each
+  file's row (the attachment name from the detail payload) inside a Playwright download wait and saves it under its
+  sanitised name; at most 10 files and 90 s a bid, files already on disk skipped, per-file failures recorded as
+  `download <title>: ...` error lines instead of stopping the scan.
 - `bids/_watch/LAST_SCAN.md`: the hourly operator's digest, read in one `cat` instead of grepping REPORT.md and diffing
   open_bids.json against a saved copy. A heading with the scan's UTC time, then six labelled lines, plain text, no tables:
   `Logged in:` (BidNet: `yes (attempt 1)`, `yes (session reused ...)`, `no: login deferred ...`, `no: COOL-DOWN ...`);

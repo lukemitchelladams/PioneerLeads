@@ -426,6 +426,276 @@ except coloradovss.Challenged as e:
     _errb = str(e)
 check("vss home retry: a 403 refusal raises Challenged at once, no reload", _errb and _pb.gotos == 1 and _pb.waits == [],
       (_errb, _pb.gotos, _pb.waits))
+
+# ColoradoVSS attachments (manual Playwright run 2026-11-12): the detail view's one [aria-label*='Attachment' i] element
+# opens the panel, each file is a row whose text is its name, and clicking the row starts the download. A fake detail
+# page: the control click opens the panel; `text=/.../i` finds the rows; expect_download hands back the row's download
+# (or times out for a row that starts none). No network.
+print("coloradovss attachment downloads")
+import types as _vtypes  # noqa: E402
+
+
+class _VssDl:
+    """A Playwright Download: suggested_filename, and save_as writing `size` bytes."""
+
+    def __init__(self, name, size):
+        self.suggested_filename, self.size = name, size
+
+    def save_as(self, path):
+        Path(path).write_bytes(b"x" * self.size)
+
+
+class _VssRow:
+    def __init__(self, page, text, size):
+        self.page, self.text, self.size = page, text, size  # size None: a row whose click starts no download
+
+    def click(self):
+        self.page.clicks.append(self.text)
+        if self.size is not None:
+            self.page.pending = _VssDl(self.text, self.size)
+
+    def inner_text(self):
+        return self.text
+
+
+class _VssCtl:
+    def __init__(self, page):
+        self.page = page
+
+    def click(self):
+        self.page.clicks.append("<Attachment control>")
+        self.page.panel_open = True
+
+
+class _VssRows:
+    def __init__(self, items):
+        self.items = items
+
+    def count(self):
+        return len(self.items)
+
+    def nth(self, i):
+        return self.items[i]
+
+    @property
+    def first(self):
+        return self.items[0]
+
+
+class _VssExpect:
+    def __init__(self, page):
+        self.page = page
+
+    def __enter__(self):
+        self.page.pending = None
+        return self
+
+    def __exit__(self, et, ev, tb):
+        if et is not None:
+            return False
+        if self.page.pending is None:
+            raise TimeoutError('Timeout 15000ms exceeded while waiting for event "download"')
+        self.value, self.page.pending = self.page.pending, None
+        return False
+
+
+class _VssDetailPage:
+    """A VSS detail view whose Attachment control opens a panel of `files` rows ({name: size, or None = dead row})."""
+
+    def __init__(self, files, has_control=True):
+        self.rows = [_VssRow(self, n, s) for n, s in files.items()]
+        self.has_control, self.panel_open = has_control, False
+        self.clicks, self.waits, self.expects, self.lookups, self.pending = [], [], [], [], None
+
+    def locator(self, sel, **kw):
+        self.lookups.append(sel)
+        if sel == coloradovss.SEL_ATTACH:
+            return _VssRows([_VssCtl(self)] if self.has_control else [])
+        if sel.startswith("text=/") and self.panel_open:
+            body, flags = sel[len("text=/"):sel.rfind("/")], sel[sel.rfind("/") + 1:]
+            rx = re.compile(body, re.I if "i" in flags else 0)  # the JS escapes used are the same in Python
+            return _VssRows([r for r in self.rows if rx.search(r.text)])
+        return _VssRows([])
+
+    def expect_download(self, timeout=None):
+        self.expects.append(timeout)
+        return _VssExpect(self)
+
+    def wait_for_timeout(self, ms):
+        self.waits.append(ms)
+
+    def on(self, *a):
+        pass
+
+    def content(self):
+        return "<html>detail</html>"
+
+    def title(self):
+        return "VSS"
+
+
+_vss_dl_root = TMP / "vss-downloads"
+_real_vss_dl_dir = coloradovss.DOWNLOAD_DIR
+coloradovss.DOWNLOAD_DIR = _vss_dl_root
+_LONG = "DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement, Installation and Electrical Upgrade.pdf"
+_vss_bid = {"source": "coloradovss", "id": "DQ1-PMAA-2027000176", "sol": "DQ1-PMAA-2027000176-1", "watched": True,
+            "documents": [{"name": _LONG, "date": "2026-11-10", "note": None}, {"name": "Exhibit A/B Price Sheet.xlsx", "date": None, "note": None}]}
+try:
+    # (a) two named attachments land in bids/_watch/downloads/coloradovss/<id>/ under sanitised names
+    _pa = _VssDetailPage({_LONG: 295_000, "Exhibit A/B Price Sheet.xlsx": 4_000, "Unrelated Q&A.pdf": 100})
+    _sa = _VssFakeSession(_pa)
+    _ba = dict(_vss_bid)
+    _gota = coloradovss.download_docs(_sa, _ba)
+    _dira = _vss_dl_root / "coloradovss" / "DQ1-PMAA-2027000176"
+    _exp_a = [str(_dira / "DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement_ Installation and Electrical Upgrade.pdf"),
+              str(_dira / "Exhibit A_B Price Sheet.xlsx")]
+    check("vss download: two named attachments saved into downloads/coloradovss/<id>/ under sanitised names, right sizes",
+          _gota == _exp_a and Path(_exp_a[0]).stat().st_size == 295_000 and Path(_exp_a[1]).stat().st_size == 4_000
+          and not list(_dira.glob("*.part")), (_gota, sorted(p.name for p in _dira.iterdir()) if _dira.is_dir() else None))
+    check("vss download: Attachment control clicked first, 3 s wait for the panel, then each row inside a 15 s download wait; "
+          "doc_path names the saved file; no failure notes",
+          _pa.clicks == ["<Attachment control>", _LONG, "Exhibit A/B Price Sheet.xlsx"] and coloradovss.PANEL_WAIT_MS in _pa.waits
+          and _pa.expects == [15000, 15000] and str(coloradovss.doc_path(_ba, _ba["documents"][1])) == _exp_a[1]
+          and "download_errors" not in _ba and coloradovss.SEL_BACK in _pa.lookups, (_pa.clicks, _pa.waits, _pa.expects, _ba.get("download_errors")))
+    # (b) a file already on disk with the same size is skipped (no click); skip_existing=False fetches it again
+    _pb2 = _VssDetailPage({_LONG: 295_000, "Exhibit A/B Price Sheet.xlsx": 4_000})
+    (_dira / "Exhibit A_B Price Sheet.xlsx").unlink()
+    _gotb = coloradovss.download_docs(_VssFakeSession(_pb2), dict(_vss_bid))
+    check("vss download: the same-size file already on disk is skipped (one click, one save), the missing one fetched",
+          _gotb == [_exp_a[1]] and _pb2.clicks == ["<Attachment control>", "Exhibit A/B Price Sheet.xlsx"], (_gotb, _pb2.clicks))
+    _pb3 = _VssDetailPage({_LONG: 295_000, "Exhibit A/B Price Sheet.xlsx": 4_000})
+    check("vss download: nothing to fetch -> no clicks at all, []; skip_existing=False fetches both again",
+          coloradovss.download_docs(_VssFakeSession(_pb3), dict(_vss_bid)) == [] and _pb3.clicks == []
+          and coloradovss.download_docs(_VssFakeSession(_pb3), dict(_vss_bid), skip_existing=False) == _exp_a, _pb3.clicks)
+    # (c) a row whose click never starts a download: recorded on the bid, the other file still saved, nothing raised
+    for _p in _dira.iterdir():
+        _p.unlink()
+    _pc = _VssDetailPage({_LONG: None, "Exhibit A/B Price Sheet.xlsx": 4_000})
+    _bc = dict(_vss_bid)
+    _gotc = coloradovss.download_docs(_VssFakeSession(_pc), _bc)
+    check("vss download: a dead row is one failure note (TimeoutError) on bid['download_errors'], the next file still saved, no raise",
+          _gotc == [_exp_a[1]] and _bc.get("download_errors") == [f"{_LONG}: no download started (TimeoutError)"]
+          and not Path(_exp_a[0]).exists(), (_gotc, _bc.get("download_errors")))
+    _pc2 = _VssDetailPage({"IH-25043 Specifications.pdf": 10})
+    _bc2 = {**_vss_bid, "documents": [{"name": "IH-25043 Specifications.pdf"}, {"name": "IH-25043 CDs.pdf"}]}
+    _gotc2 = coloradovss.download_docs(_VssFakeSession(_pc2), _bc2, dest_dir=TMP / "vss-c2")
+    check("vss download: a name with no row in the panel is a note, dest_dir overrides the folder",
+          _gotc2 == [str(TMP / "vss-c2" / "IH-25043 Specifications.pdf")]
+          and _bc2.get("download_errors") == ["IH-25043 CDs.pdf: no row in the Attachment panel"], (_gotc2, _bc2.get("download_errors")))
+    # (c2) the names in the payload match no row: the first N file-named rows are taken under their own names
+    _pf = _VssDetailPage({"IH-25043 Specifications.pdf": 11, "IH-25043 CDs.pdf": 22, "IH-25043 DQ.pdf": 33})
+    _bf = {**_vss_bid, "documents": [{"name": "Solicitation Document"}, {"name": "Drawings Set"}]}
+    _gotf = coloradovss.download_docs(_VssFakeSession(_pf), _bf, dest_dir=TMP / "vss-f")
+    check("vss download fallback: names unmatched -> the first 2 file rows saved under the download's own names, no notes",
+          _gotf == [str(TMP / "vss-f" / "IH-25043 Specifications.pdf"), str(TMP / "vss-f" / "IH-25043 CDs.pdf")]
+          and "download_errors" not in _bf, (_gotf, _bf.get("download_errors")))
+    _pg = _VssDetailPage({"Addendum 10, signed.pdf": 10, "Addendum 1, signed.pdf": 1})
+    _bg = {**_vss_bid, "documents": [{"name": "Addendum 1, signed.pdf"}]}
+    _gotg = coloradovss.download_docs(_VssFakeSession(_pg), _bg, dest_dir=TMP / "vss-g")
+    check("vss download: of two rows sharing the matched part of the name, the one holding the whole name is clicked",
+          _gotg == [str(TMP / "vss-g" / "Addendum 1_ signed.pdf")] and Path(_gotg[0]).stat().st_size == 1 if _gotg else False, (_gotg, _pg.clicks))
+    # (c3) the grid is showing (enrich went Back): the detail is re-opened through _find_link + _click_and_wait first
+    _ph = _VssDetailPage({_LONG: 5}, has_control=False)
+    _reopened = []
+    _real_find, _real_caw = coloradovss._find_link, coloradovss._click_and_wait
+
+    def _fake_find(session, sol):
+        _reopened.append(sol)
+        return "LINK"
+
+    def _fake_caw(session, locator, ds, timeout_ms=60000):
+        _reopened.append((locator, ds))
+        session.page.has_control = True
+        return {"data": {"ds_data": {ds: {}}}}
+
+    coloradovss._find_link, coloradovss._click_and_wait = _fake_find, _fake_caw
+    try:
+        _goth = coloradovss.download_docs(_VssFakeSession(_ph), dict(_vss_bid), dest_dir=TMP / "vss-h")
+        check("vss download: grid showing -> detail re-opened via _find_link(sol) + _click_and_wait(detail ds), then the file saved",
+              _reopened == ["DQ1-PMAA-2027000176-1", ("LINK", coloradovss.DETAIL_DS)] and _goth == [str(TMP / "vss-h" / _exp_a[0].rsplit("/", 1)[-1])],
+              (_reopened, _goth))
+        # the detail opened but has no Attachment control: a note and a debug dump, nothing raised, [] back
+        coloradovss._click_and_wait = lambda session, locator, ds, timeout_ms=60000: {"data": {"ds_data": {ds: {}}}}
+        _sc3 = _VssFakeSession(_VssDetailPage({_LONG: 1}, has_control=False))
+        _bc3 = dict(_vss_bid)
+        check("vss download: no Attachment control on the detail view -> [] with a note and a debug dump, nothing raised",
+              coloradovss.download_docs(_sc3, _bc3, dest_dir=TMP / "vss-c3") == []
+              and _bc3.get("download_errors") == ["no Attachment control on the detail view"] and _sc3.dumps == ["coloradovss-no-attachment-control"],
+              (_bc3.get("download_errors"), _sc3.dumps))
+        # the solicitation is not on the list any more: one note, nothing raised
+        coloradovss._find_link = lambda session, sol: None
+        _bc4 = dict(_vss_bid)
+        check("vss download: sol gone from the list -> [] and a 'could not be re-opened' note",
+              coloradovss.download_docs(_VssFakeSession(_VssDetailPage({}, has_control=False)), _bc4, dest_dir=TMP / "vss-c4") == []
+              and _bc4.get("download_errors") == ["detail view could not be re-opened for the attachments"], _bc4.get("download_errors"))
+    finally:
+        coloradovss._find_link, coloradovss._click_and_wait = _real_find, _real_caw
+    # (c4) the per-bid wall clock: 60 s a file against a 90 s cap -> two files, then the cap note; the file list is capped at 10
+    _clk = {"t": 0.0}
+    _real_vss_now = coloradovss._now
+    coloradovss._now = lambda: _clk["t"]
+
+    class _SlowVssPage(_VssDetailPage):
+        def expect_download(self, timeout=None):
+            _clk["t"] += 60.0
+            return super().expect_download(timeout)
+
+    try:
+        _pi = _SlowVssPage({f"File {i}.pdf": i for i in range(1, 13)})
+        _bi = {**_vss_bid, "documents": [{"name": f"File {i}.pdf"} for i in range(1, 13)]}
+        _goti = coloradovss.download_docs(_VssFakeSession(_pi), _bi, dest_dir=TMP / "vss-i")
+    finally:
+        coloradovss._now = _real_vss_now
+    check("vss download: 90 s cap -> 2 of 12 files this scan and one 'time cap' note; MAX_DOCS 10 and DOWNLOAD_BUDGET_S 90",
+          [Path(p).name for p in _goti] == ["File 1.pdf", "File 2.pdf"] and len(_bi.get("download_errors") or []) == 1
+          and _bi["download_errors"][0].startswith("time cap 90 s reached: File 3.pdf") and coloradovss.MAX_DOCS == 10
+          and coloradovss.DOWNLOAD_BUDGET_S == 90, (_goti, _bi.get("download_errors")))
+    # (d) run.py wiring: a watched ColoradoVSS bid gets its documents downloaded without a login (coloradovss.PUBLIC_DOCS), the
+    # paths reach the run's downloads -> REPORT.md "Documents downloaded" and LAST_SCAN.md; a module's per-file notes become
+    # error lines; the login rule still holds for a source without PUBLIC_DOCS
+    check("coloradovss module: PUBLIC_DOCS, download_docs and doc_path for run.py's wiring",
+          coloradovss.PUBLIC_DOCS is True and callable(coloradovss.download_docs) and callable(coloradovss.doc_path))
+    _dl_file = TMP / "vss-d" / "DQ1-PMAA-2027000176" / "Specs.pdf"
+    _dl_file.parent.mkdir(parents=True)
+    _dl_file.write_bytes(b"pdf")
+
+    def _mod_download(ses, b):
+        b["download_errors"] = ["Price Sheet.xlsx: no download started (TimeoutError)"]
+        return [str(_dl_file)]
+
+    _vss_mod = _vtypes.SimpleNamespace(
+        PUBLIC_DOCS=True, download_docs=_mod_download,
+        enrich=lambda ses, b: {**b, "documents": [{"name": "Specs.pdf"}, {"name": "Price Sheet.xlsx"}], "detail_checked": True},
+        doc_path=lambda b, d: _dl_file.parent / d["name"])
+    _ws_v = _run_early._WatchSet([{"name": "CPW heater", "source": "coloradovss", "id": "DQ1-PMAA-2027000176", "folder": "bids/cpw-heater"}])
+    _found_v = {"coloradovss:DQ1-PMAA-2027000176": {"source": "coloradovss", "id": "DQ1-PMAA-2027000176", "title": "CPW Heater Replacement",
+                                                   "agency": "CPW", "url": coloradovss.BASE},
+                "coloradovss:DQ1-X-1": {"source": "coloradovss", "id": "DQ1-X-1", "title": "HVAC Maintenance Services", "url": coloradovss.BASE}}
+    _dl_v, _h_v = {}, {"errors": []}
+    _run_early._enrich_and_download(_vtypes.SimpleNamespace(logged_in=False), _vss_mod, _found_v, "coloradovss", profiles, _ws_v, {}, True, _dl_v, _h_v)
+    check("run.py: the watched VSS bid's files are in downloads (not the unwatched match's), with no login; the module's note is an error line "
+          "and the missing-file count follows",
+          _dl_v == {"coloradovss:DQ1-PMAA-2027000176": [str(_dl_file)]} and _found_v["coloradovss:DQ1-PMAA-2027000176"].get("watched") is True
+          and _h_v["errors"] == ["download CPW Heater Replacement: Price Sheet.xlsx: no download started (TimeoutError)",
+                                 "CPW Heater Replacement: 1 of 2 documents not downloaded yet (tried again next scan)"], (_dl_v, _h_v))
+    _r_v = {"started": "2026-11-13T12:00:00+00:00", "found": _found_v, "new": {}, "changed": {}, "closed": {}, "downloads": _dl_v, "missing_watch": [],
+            "filed": [], "health": {"coloradovss": {"reachable": True, "reach_note": "HTTP 200", "creds": {}, "logged_in": False,
+                                                    "login_note": "public list (no login)", "count": 2, "matches": 2, "errors": _h_v["errors"]}}}
+    _rep_v = _run_early.render(_r_v)
+    _ls_v = _run_early.render_last_scan(_r_v, _ws_v).splitlines()
+    check("REPORT.md and LAST_SCAN.md list the VSS download like BidNet's: '- coloradovss:<id>: <path>' and '  - <bid folder>: <file>' under 'Documents downloaded: 1'",
+          f"## Documents downloaded\n\n- coloradovss:DQ1-PMAA-2027000176: {_dl_file}\n" in _rep_v
+          and "Documents downloaded: 1" in _ls_v and _ls_v[_ls_v.index("Documents downloaded: 1") + 1] == "  - bids/cpw-heater: Specs.pdf",
+          (_ls_v, _rep_v[-600:]))
+    _dl_n, _h_n = {}, {"errors": []}
+    _found_n = {"bonfire:1": {"source": "bonfire", "id": "1", "title": "Watched HVAC bid 26-77", "url": "u"}}
+    _run_early._enrich_and_download(_vtypes.SimpleNamespace(logged_in=False), _vtypes.SimpleNamespace(enrich=lambda s, b: {**b, "detail_checked": True},
+                                    download_docs=_mod_download), _found_n, "bonfire", profiles,
+                                    _run_early._WatchSet([{"name": "w", "source": "bonfire", "match": "26-77"}]), {}, True, _dl_n, _h_n)
+    check("run.py: without PUBLIC_DOCS a logged-out session still downloads nothing (the BidNet / Bonfire rule unchanged)",
+          _dl_n == {} and _h_n["errors"] == [], (_dl_n, _h_n))
+finally:
+    coloradovss.DOWNLOAD_DIR = _real_vss_dl_dir
 sys.path.insert(0, str(ROOT / "scripts"))
 import dibbs_watch  # noqa: E402
 dh = (FX / "dibbs_rfq_3110.html").read_text()

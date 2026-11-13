@@ -21,7 +21,8 @@ Every cycle:
      the detail pass outlived the outer `timeout 1500`: no REPORT.md, the hour's list scan lost.
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
      Q & A tab entries on watched bids), CLOSED.
-  5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in.
+  5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
+     attachments are public and are downloaded from the detail view's Attachment panel without a login).
   6. Write REPORT.md, open_bids.json, health.json and LAST_SCAN.md (a six-line digest for the hourly operator: BidNet
      login, per-source open/matching counts with a BLIND marker, NEW matching bids, changes on watched bids, documents
      downloaded, errors + the exit code; the same lines are printed after the cycle line so a log tail shows them; a scan
@@ -665,7 +666,9 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                     h["errors"].append(f"detail pages blocked: {e}")
                     continue
                 h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
-            if is_w and ses.logged_in and hasattr(mod, "download_docs"):
+            # documents need the portal login, except where the module says they are public (ColoradoVSS attachments:
+            # coloradovss.PUBLIC_DOCS; its session never logs in)
+            if is_w and hasattr(mod, "download_docs") and (ses.logged_in or getattr(mod, "PUBLIC_DOCS", False)):
                 try:
                     got = mod.download_docs(ses, found[k])  # only files not already on disk
                 except Exception as e:  # noqa: BLE001
@@ -677,6 +680,9 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                         h["errors"].append(f"download {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
                 if got:
                     downloads[k] = got
+                # per-file failures a module collected instead of raising (coloradovss.download_docs): one line each
+                for note in (found[k].get("download_errors") or [])[:3]:
+                    h["errors"].append(f"download {b.get('title', '')[:60]}: {note}")
                 if hasattr(mod, "doc_path"):
                     docs = (found[k].get("documents") or [])[:60]
                     missing = [d for d in docs if not ((pth := mod.doc_path(found[k], d)) and pth.is_file())]
