@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-13T03:36:26+00:00",
+  "checked_at": "2026-11-13T04:35:55+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -12,16 +12,16 @@
       "detail_cut": {
         "budget_s": 600.0,
         "done": 7,
-        "elapsed_s": 609.3,
+        "elapsed_s": 609.0,
         "source": "bidnet",
         "total": 91
       },
       "errors": [
         "detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-13T03:36:26+00:00",
+      "last_success": "2026-11-13T04:35:55+00:00",
       "logged_in": true,
-      "login_note": "logged in (attempt 1)",
+      "login_note": "session reused",
       "matches": 82,
       "reach_note": "HTTP 200",
       "reachable": true,
@@ -39,14 +39,14 @@
       "detail_cut": {
         "budget_s": 600.0,
         "done": 0,
-        "elapsed_s": 615.2,
+        "elapsed_s": 615.1,
         "source": "bonfire",
         "total": 1
       },
       "errors": [
         "detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-13T03:36:26+00:00",
+      "last_success": "2026-11-13T04:35:55+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
@@ -60,14 +60,14 @@
       "detail_cut": {
         "budget_s": 600.0,
         "done": 0,
-        "elapsed_s": 624.3,
+        "elapsed_s": 625.4,
         "source": "coloradovss",
         "total": 3
       },
       "errors": [
         "detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-13T03:36:26+00:00",
+      "last_success": "2026-11-13T04:35:55+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -107,7 +107,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-13T03:36:26+00:00",
+      "last_success": "2026-11-13T04:35:55+00:00",
       "logged_in": true,
       "login_note": "API key; +30 from the nightly bulk file",
       "matches": 92,

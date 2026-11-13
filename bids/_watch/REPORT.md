@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-13T03:36:26+00:00
+# Bid watch report — 2026-11-13T04:35:55+00:00
 
-**Headline:** 4 changed (addenda/dates); not scanned this run (previous results kept): dibbs; detail pass cut by the time budget: bidnet 7/91 enriched, bonfire 0/1 enriched, coloradovss 0/3 enriched, the rest keep last scan's details
+**Headline:** not scanned this run (previous results kept): dibbs; detail pass cut by the time budget: bidnet 7/91 enriched, bonfire 0/1 enriched, coloradovss 0/3 enriched, the rest keep last scan's details
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 636 | BUYER 448, AGGREGATE 189 | 82 | 2026-11-13T03:36:26+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-13T03:36:26+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 92 |  | 92 | 2026-11-13T03:36:26+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 3 | 2026-11-13T03:36:26+00:00 | 1 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 636 | BUYER 448, AGGREGATE 189 | 82 | 2026-11-13T04:35:55+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set | 2 |  | 1 | 2026-11-13T04:35:55+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +30 from the nightly bulk file | 92 |  | 92 | 2026-11-13T04:35:55+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 3 | 2026-11-13T04:35:55+00:00 | 1 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -21,13 +21,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Colorado Convention Center | Interior Stout Street Corridor LED Lighting Upgrade | 2026-11-25 (12d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Interior-Stout-Street-Corridor-LED-Lighting-Upgrade/0000443313?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | St. Vrain Valley School District RE-1J | Boiler Replacement Projects - 2 Locations | 2026-12-08 (25d) | 2026-11-17 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (54d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389, 316253c06523460b9e40dad8f4ff9a58, 32e57f3ab30a4e3b8c0b5167678fe32e — https://sam.gov/workspace/contract/opp/20b6fa9843bd4925b7964e5dfb36f976/view
-- **FRCSW Hoist Requirement** (samgov): NEW DOCUMENTS (addendum?): 442608aed4a5486a8e023f4ae982549d, bd02834a82944e43aeb5541cdb3dd9d5, df5324c0155c4310bee0bbd2c073e8a0 — https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view
-- **WINCH, DRUM** (samgov): NEW DOCUMENTS (addendum?): ab05de4831be4951aae1428d3b95925a — https://sam.gov/workspace/contract/opp/d150dad1528141788616e2b0d93d00c0/view
-- **Vandenberg Crane Replacement** (samgov): NEW DOCUMENTS (addendum?): 2bdabe58e06a4fa3a73b7afd89faec59, 46e4891a0d1845f38221335a1db7c3e8, 57fe3ddd04604debbfc681dda3ad8720, 5b5c76d8de314eddad63615524992a0a, 61590f07642b4caab792e5e88543cec0, 6c906e06f40d4dff8e62b417f8dc6dac, 79cc826a989843719dd77b074c698cc5, 9d28dcffc6df40009b7c2eea72858a84, a2553426ff1a4fe7853fdff6085a — https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
