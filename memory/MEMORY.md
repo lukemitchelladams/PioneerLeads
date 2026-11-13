@@ -1896,3 +1896,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 01:5xZ BVCC/Canon sweep done (wz31rgjru, 6 agents): ops/research/2026-11-13-bvcc-canon-subs.md. BVCC third tier: RK Water (sales@rkindustries.com, A-; one verifier confirmed on RK's pages, one not), Chem-Aqua (info@chemaqua.com), ISI Water Chemistries (info@isiwater.com), Nalco Colorado Springs rep (personal address from the public El Paso 26-074 service report, sent to HQ only). Canon City backups thin/unconfirmed (Haynes, Colorado Mechanical Systems, Rocky Mechanical). HQ messaged; suggested the Fri 08:30 MT ask goes to RK + Chem-Aqua + ISI. Nothing sent by the worker.
 - HQ 01:40Z scan: BidNet BLIND (cool-down to 02:38:54Z), samgov 92, coloradovss 65/3, bonfire Cloudflare; 0 new.
 - Dashboard: bids v292 (939119c88746a7b60562d20ea795d055), events v294 (3addebd47b849e28d00e22959958646d), portal_feed v152 (87d0b8e8e2390f48896527d3cbc37aa0), sources v249 (9ae0c99be750ed14533b821552404a8f), doc_gaps v11 unchanged.
+
+### 2026-11-13 02:22Z hourly (worker)
+- No new scan since HQ 01:40Z (BidNet BLIND on cool-down to 02:38:54Z; samgov 92, coloradovss 65/3, bonfire Cloudflare). 0 new. Inbox quiet. GovTribe S&L UPGRADE_REQUIRED.
+- No-idle work: worker launched Canon City HVAC sweep 2 (workflow w4oqcbchl) for the firms the 01:5xZ sweep could not check (Tolin, Vision Mechanical, Pueblo Mechanical, Thayer) plus Colorado Springs commercial chiller/boiler service firms, so HQ's Fri 08:30 MT Canon asks have confirmed addresses.
+- Dashboard: bids v293 (f7bfd3e4c55ed50a78ab31e7c6888d67), events v295 (67212e63abeb8b61a12a8eb010a9e300), portal_feed v152 (87d0b8e8e2390f48896527d3cbc37aa0) + sources v249 (9ae0c99be750ed14533b821552404a8f) + doc_gaps v11 unchanged.
