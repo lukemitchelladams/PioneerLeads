@@ -2817,6 +2817,24 @@
    "verdict": "EVALUATE",
    "why": "Worker off-scanner sweep 11/13: HVAC design-build in Pueblo; dates conflict and it is not on the VSS open list read 11/13 04:35Z. Design-build may need a licensed designer. Verify on VSS by hand.",
    "at": "2026-11-13T06:05:00Z"
+  },
+  "8ee23fef72864e098371e6c454010831": {
+   "name": "DLA SPE8EF27T0307 39--CONVEYOR, ROLLER, GRAVITY NSN 3910-00-260-0171 (12 + 1 EA; Warner Robins; total SB; closes 2026-11-23)",
+   "verdict": "EVALUATE",
+   "why": "HQ 11/13 06:00Z verdict, ledgered by the worker: Jones Bearing profile; pair with SPE8EF27T0258 (994aa9e0, same buyer/close). DIBBS quote (cloud-blocked). GO only if the NSN matches an American Pulley / Jones Bearing roller and no approved-source/distributor status is needed (11/12 rule: Dad's distributor status is off limits).",
+   "at": "2026-11-13T06:35:00Z"
+  },
+  "131459416a164751a621783eb8d9eb19": {
+   "name": "DLA SPE7LX27U0863 30--PULLEY, GROOVE NSN 3020-01-219-8704 (254 EA IDC, $350k cap; closes 2026-11-27)",
+   "verdict": "NO",
+   "why": "HQ 11/13 06:00Z verdict, ledgered by the worker: approved sources CAGE 25337 / 78286 only; Jones Bearing distributor status is not on record and is off limits (11/12 rule).",
+   "at": "2026-11-13T06:35:00Z"
+  },
+  "28805db0bcfd4950bb433c74b4bc1d61": {
+   "name": "DLA SPE7LX27U0972 30--PULLEY, FLAT NSN 3020-01-308-0759 (13 EA; no drawings; closes 2026-11-27)",
+   "verdict": "NO",
+   "why": "HQ 11/13 06:00Z verdict, ledgered by the worker: approved-source part, no drawings; distributor status not on record (11/12 rule).",
+   "at": "2026-11-13T06:35:00Z"
   }
  },
  "watched": {
@@ -3002,6 +3020,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T05:35:00Z",
+ "last_hourly_check": "2026-11-13T06:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
