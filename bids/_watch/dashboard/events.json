@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -30.44
+  "days_left": -30.45
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -25,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -29.65
+  "days_left": -29.66
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -39,7 +39,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -24.44
+  "days_left": -24.45
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -21.4
+  "days_left": -21.41
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -109,7 +109,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -20.44
+  "days_left": -20.45
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -17.44
+  "days_left": -17.45
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -151,7 +151,7 @@
   "note": "H2 Global tech's signed Exhibit G forwarded to CDOC (Rusgrove, cc Garvin) for the 10/27 walk",
   "critical": false,
   "past": true,
-  "days_left": -17.39
+  "days_left": -17.4
  },
  {
   "key": "metro-water-b26019|Site visit (optional)|2026-10-27T09:00:00-06:00",
@@ -165,7 +165,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": true,
-  "days_left": -16.65
+  "days_left": -16.66
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -221,7 +221,7 @@
   "note": "ITB 10366 + drawings + specs in downloads/bidnet/0000439726. Pre-bid/job walk 11/2 15:00 (optional); due 12/2 15:00; bonds + Davis-Bacon.",
   "critical": false,
   "past": true,
-  "days_left": -16.29
+  "days_left": -16.3
  },
  {
   "key": "cos-parks-irrigation-oncall|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -235,7 +235,7 @@
   "note": "RFP R26-099MZ in downloads/bidnet/0000441782. Optional pre-proposal 11/6; due 12/2 14:00; hourly rate sheet.",
   "critical": false,
   "past": true,
-  "days_left": -16.29
+  "days_left": -16.3
  },
  {
   "key": "brighton-26-500209|outreach|2026-10-28T14:04:00+00:00",
@@ -277,7 +277,7 @@
   "note": "Hourly scan added 4 backup HVAC candidates + 4 Greeley phone-only firms to sub-outreach.md (HQ had already emailed 7 firms at 09:1x MT; pricing asked for by 11/12; MANDATORY walk 11/05 09:00).",
   "critical": false,
   "past": true,
-  "days_left": -15.62
+  "days_left": -15.63
  },
  {
   "key": "weld-jail-rtu-b2600111|package|2026-10-28T16:00:00+00:00",
@@ -319,7 +319,7 @@
   "note": "Bounce: info@aps-hoods.com does not exist (550 5.1.1) on both sends (10:26 and 10:44 MT). contact@bravvisusa.com and peakkitchenexhaust@gmail.com delivered. Find another address or phone for APS Hoods.",
   "critical": false,
   "past": true,
-  "days_left": -15.59
+  "days_left": -15.6
  },
  {
   "key": "cos-oncall-janitorial|outreach|2026-10-28T16:33:00+00:00",
@@ -347,7 +347,7 @@
   "note": "Silas Norwood (H2) answered Luke's 11:55 MT usage question at 11:21 MT: annual chemical usage estimate for OxyGard, BC 600 and Triamine I with stated assumptions (softened makeup, one boiler per room at ~10% average load, 70% condensate return, ~125 ppm makeup alkalinity, ~270,000 gal makeup/yr), usage expected within ~20%; recommends the bid state chemicals are consumables billed on actual usage. Quantities in private/.",
   "critical": false,
   "past": true,
-  "days_left": -15.55
+  "days_left": -15.56
  },
  {
   "key": "psd-27-701-002-hood|outreach|2026-10-28T18:16:00+00:00",
@@ -361,7 +361,7 @@
   "note": "Peak Kitchen Exhaust (Colorado Springs) asked whether the first meeting is in Fort Collins (2 hours away) and if a school closer to Colorado Springs could be the first visit. The IFB site visit is a single MANDATORY walk 11/10 13:30 starting at Traut Elementary; Luke/HQ to reply.",
   "critical": false,
   "past": true,
-  "days_left": -15.51
+  "days_left": -15.52
  },
  {
   "key": "cos-oncall-janitorial|sub|2026-10-28T19:25:00+00:00",
@@ -417,7 +417,7 @@
   "note": "GO: chemicals + monthly service for 6 El Paso County facilities (20 boilers, 5 cooling towers); due 11/04 14:00 MST; H2 Global asked first; 3-year competency clause flagged for Luke.",
   "critical": false,
   "past": true,
-  "days_left": -15.42
+  "days_left": -15.43
  },
  {
   "key": "elpaso-26-074-water-treatment|package|2026-10-28T20:50:00+00:00",
@@ -529,7 +529,7 @@
   "note": "Colorado Power Wash (Jake Pavelle): 'This is received and being reviewed.' Cleaning pricing expected by 11/06. HQ filed questions-for-rtd.md for the 11/02 14:00 question deadline.",
   "critical": false,
   "past": true,
-  "days_left": -15.13
+  "days_left": -15.14
  },
  {
   "key": "cdoc-tcf-boiler-water|deadline|2026-10-29T11:34:00Z",
@@ -543,7 +543,7 @@
   "note": "Hourly 11:21Z: TCF DQ 2027000037 closes TODAY 17:00 MDT. Luke still owes signatures, COI, W-9, FEIN/VSS on HQ's quote package; no submission confirmation seen in the inbox yet.",
   "critical": false,
   "past": true,
-  "days_left": -14.79
+  "days_left": -14.8
  },
  {
   "key": "cdoc-tcf-boiler-water|deadline|2026-10-29T12:43:00Z",
@@ -599,7 +599,7 @@
   "note": "ColoradoVSS (new source, first run 14:08Z): DPA IH-25043 garage storefront entrance remodel, budget $75,000 per VSS; MANDATORY pre-bid walk TODAY 2026-10-29 09:00 MDT at 1350 Lincoln St; bids due 11/06 14:00. Flagged to Luke at 08:45 MDT.",
   "critical": false,
   "past": true,
-  "days_left": -14.66
+  "days_left": -14.67
  },
  {
   "key": "cdoc-tcf-boiler-water|scan|2026-10-29T14:44:00Z",
@@ -613,7 +613,7 @@
   "note": "ColoradoVSS lists the TCF DQ with 14 documents (FINAL, MOD 1, MOD 2); all 14 already in bids/cdoc-tcf-boiler-water/docs. Closes today 17:00 MDT; no upload confirmation yet.",
   "critical": false,
   "past": true,
-  "days_left": -14.66
+  "days_left": -14.67
  },
  {
   "key": "dpa-ih-25043-garage-entrance|MANDATORY pre-bid|2026-10-29T09:00:00-06:00",
@@ -627,7 +627,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -14.65
+  "days_left": -14.66
  },
  {
   "key": "rtd-126dm016|sub|2026-10-29T15:30:00Z",
@@ -767,7 +767,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -14.44
+  "days_left": -14.45
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T20:27:00Z",
@@ -781,7 +781,7 @@
   "note": "Silas Norwood (H2) 10/29 14:04 MT, replying to the TCF submission copy: 'Awesome! Ill be in touch shortly on the Elpaso project.' H2 pricing for 26-074 still owed by Mon 11/02 noon.",
   "critical": false,
   "past": true,
-  "days_left": -14.42
+  "days_left": -14.43
  },
  {
   "key": "weldsd6-coiling-door-franklin|prebid|2026-10-29T20:27:00Z",
@@ -795,7 +795,7 @@
   "note": "Found 19:42Z (BidNet 0000441142): Weld SD6 coiling door/grill at Franklin MS, due 11/10 14:00. MANDATORY walk Mon 11/02 10:00 at 818 35th Ave, Greeley (meet at front entrance). Same day as the Transfort door walk 15:00 in Fort Collins. Door sub or Luke must attend; docs watchlisted.",
   "critical": false,
   "past": true,
-  "days_left": -14.42
+  "days_left": -14.43
  },
  {
   "key": "carbon-valley-mechanical-pm|decision|2026-10-29T20:27:00Z",
@@ -809,7 +809,7 @@
   "note": "HQ triage 2026-10-29: GO (conditional). Due corrected to 12/08 17:00 MT (RFP), sealed original + 5 copies; 6 HVAC subs emailed 10/29 asking for walk attendance 11/10 09:00 and pricing by 12/01.",
   "critical": false,
   "past": true,
-  "days_left": -14.42
+  "days_left": -14.43
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T21:27:00Z",
@@ -823,7 +823,7 @@
   "note": "Silas (H2) 10/29 14:26 MT replied on the El Paso 26-074 thread with Conor Parrish's contact card (FACT Water Co, Chief Growth Officer, CWT, office 970-342-6867) and no message text. Read as: FACT Water is the water-treatment partner H2 will bring. HQ/Luke should confirm who prices 26-074 and by when (asked for Mon 11/02 noon).",
   "critical": false,
   "past": true,
-  "days_left": -14.38
+  "days_left": -14.39
  },
  {
   "key": "weldsd6-coiling-door-franklin|decision|2026-10-29T21:27:00Z",
@@ -837,7 +837,7 @@
   "note": "HQ 10/29: GO. Docs filed (front.docx, contract approval.docx, contract sample.pdf). front.docx: bid opening 'Tuesday, November 10, 2026, at 2:00 p.m.' by email to sfrancies@greeleyschools.org; one CrossingGard ERG-IBC grille, completion 1/30/2027; performance bond for work over $50,000. 3 door subs emailed (Front Range Raynor, Colorado Commercial Doors, Don's), pricing by Fri 11/06; sub or Luke attends the mandatory walk Mon 11/02 10:00.",
   "critical": false,
   "past": true,
-  "days_left": -14.38
+  "days_left": -14.39
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T22:28:00Z",
@@ -949,7 +949,7 @@
   "note": "HQ replied-all to FACT Water (Conor Parrish, Andrew Coquyt): Brown Bison primes and manages, FACT runs the water program; asked pricing by Mon 11/02 noon plus 3 references and a service-tech bio.",
   "critical": false,
   "past": true,
-  "days_left": -13.68
+  "days_left": -13.69
  },
  {
   "key": "weldsd6-coiling-door-franklin|sub-outreach|2026-10-30T14:18:00Z",
@@ -1005,7 +1005,7 @@
   "note": "RESA Power declined (UPS maintenance not a service they provide); 5 more UPS firms emailed by HQ ~08:25 MT.",
   "critical": false,
   "past": true,
-  "days_left": -13.67
+  "days_left": -13.68
  },
  {
   "key": "metro-water-b26019|sub-outreach|2026-10-30T14:35:00Z",
@@ -1033,7 +1033,7 @@
   "note": "Environment Control (Ryan Steinseifer) engaged: 'Absolutely, I will look into this' after Luke's scope answer; pricing by Mon 11/16.",
   "critical": false,
   "past": true,
-  "days_left": -13.64
+  "days_left": -13.65
  },
  {
   "key": "bidnet-0000441807|Pre-bid (optional)|2026-10-30T15:30:00-06:00",
@@ -1075,7 +1075,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.4
+  "days_left": -10.41
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -1089,7 +1089,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.4
+  "days_left": -10.41
  },
  {
   "key": "fort-collins-transfort-doors|Pre-bid (optional)|2026-11-02T15:00:00-07:00",
@@ -1117,7 +1117,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -8.4
+  "days_left": -8.41
  },
  {
   "key": "laplata-oncall-trades|bounce|2026-11-04T21:18:00Z",
@@ -1145,7 +1145,7 @@
   "note": "Addendum 1: due moved Thu 11/12 15:00 -> Wed 12/02 15:00 MT (only change). Mandatory walk remains the 10/21 one.",
   "critical": false,
   "past": true,
-  "days_left": -8.36
+  "days_left": -8.37
  },
  {
   "key": "bidnet-0000440339|Submission|2026-11-04T15:00:00-07:00",
@@ -1173,7 +1173,7 @@
   "note": "Addenda 1 (Q&A: NETA cert desired, equivalents OK; outage windows; primary injection) and 2 (new standby/remobilization rates on the bid schedule). Subs need both; HQ's 11/05 chase sent only Attachment 2.",
   "critical": false,
   "past": true,
-  "days_left": -8.29
+  "days_left": -8.3
  },
  {
   "key": "weld-jail-rtu-b2600111|MANDATORY pre-bid|2026-11-05T09:00:00-07:00",
@@ -1215,7 +1215,7 @@
   "note": "BidNet: CDOC published the award for DQ 2027000037 (Brown Bison withdrew 10/30).",
   "critical": false,
   "past": true,
-  "days_left": -7.51
+  "days_left": -7.52
  },
  {
   "key": "carbon-valley-mechanical-pm|communication|2026-11-05T22:50:00Z",
@@ -1229,7 +1229,7 @@
   "note": "BidNet: Carbon Valley P&RD released a new communication on the Mechanical Service and PM solicitation (content behind BidNet login; pull on the next logged-in scan, before the MANDATORY 11/10 09:00 walk).",
   "critical": false,
   "past": true,
-  "days_left": -7.32
+  "days_left": -7.33
  },
  {
   "key": "westminster-26-002|Questions due|2026-11-05T17:00:00-07:00",
@@ -1257,7 +1257,7 @@
   "note": "New BidNet match; MANDATORY walk 2026-11-13 09:00 Pueblo; EVALUATE for Alex",
   "critical": false,
   "past": true,
-  "days_left": -7.25
+  "days_left": -7.26
  },
  {
   "key": "usfs-pagosa-janitorial-1240LP27Q0008|sub-reply|2026-11-06T02:57:12Z",
@@ -1271,7 +1271,7 @@
   "note": "B&K Cleaning (Durango) interested; will send pricing after reviewing the docs",
   "critical": false,
   "past": true,
-  "days_left": -7.15
+  "days_left": -7.16
  },
  {
   "key": "pueblo-ura-msa-landscape|docs|2026-11-06T05:42:00Z",
@@ -1369,7 +1369,7 @@
   "note": "Folder opened; IFB B2600113 downloaded from BidNet (saved session); MANDATORY walk 11/19 10:00 MST Fort Lupton confirmed from the IFB; due 01/05/2027 10:00 MT; recommend NO (no subcontracting, company-level Uniprise/Corning certification, 100% P&P bonds)",
   "critical": false,
   "past": true,
-  "days_left": -6.45
+  "days_left": -6.46
  },
  {
   "key": "dpa-ih-25043-garage-entrance|Submission|2026-11-06T14:00:00-07:00",
@@ -1383,7 +1383,7 @@
   "note": "ColoradoVSS",
   "critical": true,
   "past": true,
-  "days_left": -6.4
+  "days_left": -6.41
  },
  {
   "key": "cdoc-bvcc-boiler-chemicals|decision|2026-11-06T21:30:00Z",
@@ -1411,7 +1411,7 @@
   "note": "No longer listed; closed without a Brown Bison submission",
   "critical": false,
   "past": true,
-  "days_left": -6.37
+  "days_left": -6.38
  },
  {
   "key": "lakewood-board-up-fencing|decision|2026-11-06T23:05:00Z",
@@ -1425,7 +1425,7 @@
   "note": "EVALUATE, recommend NO: package read (RFP 6706 + insurance PDF); no pre-bid; questions 11/13 17:00 MT; due 12/01 10:00 MT; City is payer of last resort and no volume stated; 5 subs listed, 2 drafts linted, nothing sent",
   "critical": false,
   "past": true,
-  "days_left": -6.31
+  "days_left": -6.32
  },
  {
   "key": "lafayette-citywide-custodial|new|2026-11-07T01:05:00Z",
@@ -1439,7 +1439,7 @@
   "note": "New BidNet match (published 11/06); package pulled and read; MANDATORY pre-proposal conference Thu 11/19 10:00 City Hall; questions by 11/23 17:00; due 12/18 17:00 MT; EVALUATE, recommend GO; 5 subs with emails listed, draft linted, nothing sent",
   "critical": false,
   "past": true,
-  "days_left": -6.23
+  "days_left": -6.24
  },
  {
   "key": "rtd-126dm016|sub-pricing|2026-11-07T01:19:50Z",
@@ -1453,7 +1453,7 @@
   "note": "Alex Ditto (YMS): preliminary snow/ice pricing, all 5 years, plus 5 scope questions",
   "critical": false,
   "past": true,
-  "days_left": -6.22
+  "days_left": -6.23
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -1467,7 +1467,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -3.4
+  "days_left": -3.41
  },
  {
   "key": "brighton-26-500209|Closed - missed|2026-11-09T14:00:00-07:00",
@@ -1481,7 +1481,7 @@
   "note": "No submission on record at the 14:00 MT close; package was built, Luke's 5 answers + SoS certificate never arrived",
   "critical": false,
   "past": true,
-  "days_left": -3.4
+  "days_left": -3.41
  },
  {
   "key": "arapahoe-south-lawns-irrigation|MANDATORY pre-bid|2026-11-10T10:00:00-07:00",
@@ -1523,7 +1523,7 @@
   "note": "Poudre SD hood IFB: Traut Elementary 13:30, then Preston MS, Fossil Ridge HS; RSVP to strategicsourcing@psdschools.org",
   "critical": false,
   "past": true,
-  "days_left": -2.42
+  "days_left": -2.43
  },
  {
   "key": "weldsd6-coiling-door-franklin|Submission|2026-11-10T14:00:00-07:00",
@@ -1537,7 +1537,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -2.4
+  "days_left": -2.41
  },
  {
   "key": "doi-estes-janitorial|Submission|2026-11-10T15:00:00-07:00",
@@ -1565,7 +1565,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -0.4
+  "days_left": -0.41
  },
  {
   "key": "pueblo-ura-msa-landscape|MANDATORY pre-bid|2026-11-13T09:00:00-07:00",
@@ -1593,7 +1593,7 @@
   "note": "Pagosa Ranger District tour, moved from 11/09 (B&K did not confirm). Caley offers 1:00 PM; not mandatory. US 160 closed at the Piedra River Bridge: Durango sub faces a ~3.5 h detour via NM",
   "critical": false,
   "past": false,
-  "days_left": 0.56
+  "days_left": 0.55
  },
  {
   "key": "bidnet-0000441807|Submission|2026-11-13T14:00:00-07:00",
@@ -1607,7 +1607,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 0.6
+  "days_left": 0.59
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -1621,7 +1621,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 0.6
+  "days_left": 0.59
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -1635,7 +1635,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 3.6
+  "days_left": 3.59
  },
  {
   "key": "svvsd-boiler-replacement-2027-011|prebid-mandatory|2026-11-17T09:30:00-07:00",
@@ -1691,7 +1691,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 4.52
+  "days_left": 4.51
  },
  {
   "key": "psfb-smart-t-power-ss|Submission|2026-11-18T09:00:00-07:00",
@@ -1817,7 +1817,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 7.6
+  "days_left": 7.59
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -1831,7 +1831,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 7.6
+  "days_left": 7.59
  },
  {
   "key": "dla-spe8ef27t0258-conveyor-roller|Submission|2026-11-23T00:00:00-05:00",
@@ -1929,7 +1929,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 17.02
+  "days_left": 17.01
  },
  {
   "key": "canon-city-janitorial|Pre-bid (optional)|2026-11-30T09:00:00-07:00",
@@ -1957,7 +1957,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 17.6
+  "days_left": 17.59
  },
  {
   "key": "cdoc-bvcc-boiler-chemicals|Submission|2026-11-30T14:00:00-07:00",
@@ -1971,7 +1971,7 @@
   "note": "BidNet Direct cdoc only (DQ 9.A.ii: 'No other electronic submission methods or hard copy submittals will be accepted'; no VSS submission)",
   "critical": true,
   "past": false,
-  "days_left": 17.6
+  "days_left": 17.59
  },
  {
   "key": "pueblo-ura-msa-landscape|Submission|2026-11-30T17:00:00-07:00",
@@ -2013,7 +2013,7 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 19.6
+  "days_left": 19.59
  },
  {
   "key": "adams-2026-766|Submission|2026-12-02T15:00:00-07:00",
@@ -2055,7 +2055,7 @@
   "note": "ColoradoVSS",
   "critical": true,
   "past": false,
-  "days_left": 20.6
+  "days_left": 20.59
  },
  {
   "key": "bor-140rr027q0001-bgndrf-custodial|Submission|2026-12-04T14:00:00-07:00",
@@ -2069,7 +2069,7 @@
   "note": "SAM.gov; 10 attachments saved in bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/",
   "critical": true,
   "past": false,
-  "days_left": 21.6
+  "days_left": 21.59
  },
  {
   "key": "bidnet-0000443426-trails-rec-landscape|Submission|2026-12-04T17:00:00-07:00",
@@ -2097,7 +2097,7 @@
   "note": "BidNet (detail behind login; aggregate/interception notice)",
   "critical": true,
   "past": false,
-  "days_left": 24.02
+  "days_left": 24.01
  },
  {
   "key": "canon-city-janitorial|Submission|2026-12-07T11:00:00-07:00",
@@ -2139,7 +2139,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 25.6
+  "days_left": 25.59
  },
  {
   "key": "svvsd-boiler-replacement-2027-011|due|2026-12-08T14:00:00-07:00",
@@ -2153,7 +2153,7 @@
   "note": "RFP-KM-2027-011 due 14:00 MST via BidNet listing (submission method not in hand yet)",
   "critical": false,
   "past": false,
-  "days_left": 25.6
+  "days_left": 25.59
  },
  {
   "key": "carbon-valley-mechanical-pm|Submission|2026-12-08T17:00:00-07:00",
@@ -2181,7 +2181,7 @@
   "note": "BidNet (questions on BidNet by 11/23 16:00)",
   "critical": true,
   "past": false,
-  "days_left": 26.52
+  "days_left": 26.51
  },
  {
   "key": "cpw-dq1-pmaa-2027000176-heater|Submission|2026-12-09T17:00:00-07:00",
@@ -2209,7 +2209,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 27.6
+  "days_left": 27.59
  },
  {
   "key": "widefield-sd3-kitchen-equipment-26-27-013|Submission|2026-12-11T00:00:00-07:00",
@@ -2223,7 +2223,7 @@
   "note": "BidNet Direct (PDF upload); questions via BidNet by 11/25, answers by addendum",
   "critical": true,
   "past": false,
-  "days_left": 28.02
+  "days_left": 28.01
  },
  {
   "key": "bidnet-444226398382-landscape|Submission|2026-12-16T00:00:00-07:00",
@@ -2237,7 +2237,7 @@
   "note": "BidNet aggregated notice (not RMEPS)",
   "critical": true,
   "past": false,
-  "days_left": 33.02
+  "days_left": 33.01
  },
  {
   "key": "lafayette-citywide-custodial|Submission|2026-12-18T17:00:00-07:00",
@@ -2279,6 +2279,6 @@
   "note": "BidNet Direct; docs public (no login): Window Cleaning Services Final.pdf, Greeley Campus Building Pictures.pdf, Greeley Campus Map to F_O.pdf",
   "critical": true,
   "past": false,
-  "days_left": 54.02
+  "days_left": 54.01
  }
 ]
