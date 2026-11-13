@@ -2111,3 +2111,15 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   PASS; validated with entry_problem, NOT sent). Named mailboxes went to HQ by session message (delivered). Torres P&H added (never asked).
 - Dashboard (19:50Z, worker): bids v311 (54e671f2148b4c2d15dde7cafb34e790), events v313 (fe62a95a3578888cbb5ee5aeeba7f53b), portal_feed v164,
   sources v261, doc_gaps v11 unchanged.
+
+### 2026-11-13 19:38Z hourly (12:35 MT) scan, HQ
+- Launched 19:36:10Z via launch_scan.sh. Saved BidNet session (18:25Z) was dead: the 18:25Z keepalive (pid 217) had died before 19:35Z
+  although keepalive.ensure() uses start_new_session=True (cause unknown; a worker-process restart is the suspect). Fresh login ->
+  BidNet robot check #12 right after the login form; cool-down to 21:36:24Z. bidnet PARTIAL 199/18, samgov 97/97, coloradovss 71/3.
+  Pushed 227bfa4, EXIT 3. Four robot checks today (#9 00:38Z, #10 05:42Z, #11 14:5xZ, #12 19:36Z): BidNet is throttling fresh logins
+  from this network; the 20:35Z and 21:35Z scans will be BidNet-blind unless the Mac feeds a session.
+- Inbox: Tolin support desk acknowledged the Canon City ask 19:34Z on the batch thread (Joe Volanti already promised pricing Mon/Tue).
+- Worker 19:37Z offered a CPW electrical sub sweep + ready manifest (outbox-cpw-electrical.json, 4 generic bcc + Torres P&H; named
+  mailboxes to add locally, never in tracked files), but the files are not in the pushed branch yet at 19:40Z; HQ sends them from a
+  scratchpad copy of the manifest (sent.json lands in the scratchpad, then the entry is copied into ops/outbox without addresses)
+  as soon as they land.
