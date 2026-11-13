@@ -1,0 +1,18 @@
+[
+ {
+  "key": "cpw-electrical-btier",
+  "subject": "CPW Alamosa heater replacement (DQ1 PMAA 2027*0176): electrical sub for Brown Bison",
+  "bcc": [
+   "info@puebloelectrics.com",
+   "Info@mathewsbrotherselectric.com",
+   "schrockelectric@comcast.net",
+   "timmeelectric@gmail.com",
+   "redwingele@comcast.net"
+  ],
+  "body_file": "ops/outbox/2026-11-13/cpw-electrical.txt",
+  "files": [
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf",
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/Exhibit A, Scope of Work.pdf"
+  ]
+ }
+]

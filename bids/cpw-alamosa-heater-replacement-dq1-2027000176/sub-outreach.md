@@ -21,3 +21,6 @@ and breakers, and adds a garage space heater. The sub's person must attend the M
   hosted at that domain. Royal Electrical (Pueblo) office@royalelectrical.com: Microsoft 365 "550 5.4.1 Recipient address rejected: Access
   denied" (msg 1a1d66cf6614c5b7), so that mailbox does not exist. Delivered so far: Vemco, Power Pro, C-Squared, Billings, Torres. Worker is
   searching for verified alternate addresses for both.
+- 2026-11-13 20:4xZ (worker): no alternate address exists for Valley Electric (its whole mail domain is inactive) or Royal (web form only).
+  B-tier manifest ready for HQ: ops/outbox/2026-11-13/outbox-cpw-electrical-btier.json (bcc Pueblo Electrics, Mathews Brothers, Schrock,
+  Timme, Redwing; same body, gate PASS, validated, NOT sent). Recommend sending today, not Monday, because the gate is Mon 12:00.

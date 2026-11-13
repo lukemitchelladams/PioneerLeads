@@ -2127,3 +2127,14 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   firms bcc 1a1d66c90745e1e0 + Torres P&H 1a1d66c96ac41789. Exhibit A facts in the body verified against the PDF first (GFCI, emergency
   cutoffs, 35,000 BTU, immersion heaters, garage heater all present). sent.json merged into ops/outbox/2026-11-13/ (ids + bcc_count only).
   CPW now has 9 companies asked (1 declined); gate Mon 11/16 12:00 MT stands.
+
+### 2026-11-13 20:21Z hourly (worker)
+- HQ sent the CPW electrical bcc 19:40Z (1a1d66c90745e1e0, 6 firms) + Torres (1a1d66c96ac41789). 2 bounced: Valley Electric (whole
+  valleyelectricinc.com mail inactive: "Relaying denied" at mx.myregisteredsite.com) and office@royalelectrical.com (M365 recipient rejected).
+  Finder + verifier: no alternate address for either. B-tier manifest ready: ops/outbox/2026-11-13/outbox-cpw-electrical-btier.json (Pueblo
+  Electrics, Mathews Brothers, Schrock, Timme, Redwing); HQ messaged to send today (gate Mon 11/16 12:00).
+- HQ 19:36Z scan: BidNet robot check #12, cool-down to 21:36:24Z, bidnet PARTIAL 199/18; samgov 97, coloradovss 71/3. 20:35Z and 21:35Z scans
+  will be BidNet-blind. Last full BidNet read 18:25Z.
+- Tolin support desk ack 19:34Z (Canon City). No other replies; BVCC and La Plata still silent ahead of the 17:00 MT gates.
+- Dashboard (20:48Z, worker): bids v312 (4de7a0abd1d017eb2155016c1a181a23), events v314 (948f25ab8d2c21a34682fec6995246b8), portal_feed v165
+  (505cb59641b40647a342e44aaf5768d9), sources v262 (515cf9834708cf39a38a5576460c9ea8), doc_gaps v11 unchanged.

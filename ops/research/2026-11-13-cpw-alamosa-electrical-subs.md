@@ -35,3 +35,13 @@ Recommended ask (worker -> HQ): ops/outbox/2026-11-13/outbox-cpw-electrical.json
 - cpw-torres: Torres Plumbing and Heating (tier B in the 11/12 sweep, never asked), reuses the Flow Right body.
 Answer asked by Mon 11/16 12:00 MT (the existing NO-BID gate). Hold the B tier (Pueblo/Canon/Salida) for a Mon 08:30 round only
 if the A tier is silent.
+
+## 2026-11-13 20:4xZ bounce follow-up (worker; finder + verifier per firm)
+- Valley Electric (Alamosa): no other published mailbox. "550 5.7.1 Relaying denied" from mx.myregisteredsite.com means the whole
+  valleyelectricinc.com mail service is inactive, so any address there will bounce. No second domain or free mailbox found. Email route closed.
+- Royal Electrical (Pueblo): office@royalelectrical.com is the only published address (Facebook, Crunchbase) and Microsoft 365 rejects it.
+  Only a web contact form remains. Email route closed.
+- Recommended (worker -> HQ): send the generic-mailbox B tier NOW instead of Monday 08:30, since the gate is Mon 11/16 12:00 and two A/B
+  addresses are dead: Pueblo Electrics (info@puebloelectrics.com, own site, commercial since 1984), Mathews Brothers (Canon City,
+  Info@mathewsbrotherselectric.com), Schrock Electric (Pueblo, schrockelectric@comcast.net), Timme Electric (Salida, timmeelectric@gmail.com),
+  Redwing Electric (Trinidad, redwingele@comcast.net). Hold Mike Reaves until its EC license renewal is confirmed (DORA shows 2026-09-30).
