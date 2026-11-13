@@ -15,21 +15,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000441807",
-  "source": "bidnet",
-  "agency": "City of Aurora",
-  "title": "Ash Tree Treatment",
-  "sol": "B-4799",
-  "closing": "2026-11-13",
-  "posted": "2026-10-27",
-  "prebid_date": "2026-10-30",
-  "prebid_mandatory": "Optional",
-  "profiles": "",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Ash-Tree-Treatment/0000441807?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:444208178536",
   "source": "bidnet",
   "agency": "",
@@ -42,7 +27,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view"
  },
  {
   "key": "bidnet:444210657404",
@@ -57,7 +42,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view"
  },
  {
   "key": "samgov:21f8910c3dc44615956327770976b6c3",
@@ -177,7 +162,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
  },
  {
   "key": "bidnet:444188127310",
@@ -192,7 +177,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
  },
  {
   "key": "samgov:11556cfdf4ce4775a7878c5d4d8427a1",
@@ -372,7 +357,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444224753209/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444224753209?target=view"
  },
  {
   "key": "samgov:5b9e3b6504d8415fa62c7f45f7fa15d0",
@@ -492,7 +477,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view"
  },
  {
   "key": "samgov:177c2aa536d34c5ea6d40aa7b8db7d34",
@@ -657,7 +642,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
  },
  {
   "key": "bidnet:444232280764",
@@ -672,7 +657,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444232280764/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view"
  },
  {
   "key": "samgov:04b0549983ea4b7687b6280f65b9dc1e",
@@ -822,7 +807,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view"
  },
  {
   "key": "samgov:23974a460bd74e2faaa14870565075d7",
@@ -957,7 +942,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444225024046/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view"
  },
  {
   "key": "samgov:3a25347065dc4abab033df330d536ef2",
@@ -1182,7 +1167,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444223472310/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444223472310?target=view"
  },
  {
   "key": "bonfire:parkeronline-259452",
@@ -1302,7 +1287,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721090002/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view"
  },
  {
   "key": "samgov:b11d3623d84843b2899857e45ac20464",
@@ -2067,7 +2052,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2722680182?target=view"
  },
  {
   "key": "samgov:b2e58c41cb4c4787813fbc1f31ea81f7",
@@ -2127,7 +2112,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721710927/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721710927?target=view"
  },
  {
   "key": "bidnet:444230804856",
@@ -2142,7 +2127,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230804856/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230804856?target=view"
  },
  {
   "key": "samgov:2aad90d6aa1f4120bfffc544d7899799",
@@ -2275,7 +2260,7 @@
   "prebid_date": "2026-11-18",
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-0050-0133-Animas-City-Cemetery-Fencing-Project/0000443211?purchasingGroupId=8409951&origin=1"
  },
@@ -2397,7 +2382,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234845265/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234845265?target=view"
  },
  {
   "key": "coloradovss:DQ1-PMAA-2027000176",
@@ -2442,7 +2427,7 @@
   "profiles": "",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230872362/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230872362?target=view"
  },
  {
   "key": "bidnet:0000441223",
@@ -2532,7 +2517,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444226398382/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view"
  },
  {
   "key": "samgov:3d326babf2eb497eabe64330bb3f5d25",
@@ -2727,7 +2712,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
