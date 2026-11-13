@@ -2163,3 +2163,12 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   worker's manifest (named mailbox local only). Body facts verified in the PWS/SF 1449 first. Folder bids/bor-bgndrf-custodial-140rr027q0001
   created (README with quoted facts, sub-outreach.md). Default NO-BID Mon 11/16 12:00 unchanged; NAICS gap noted.
 - Inbox quiet 19:40Z to 21:40Z; no bounce on the CPW B tier. BVCC + La Plata cutoff 17:00 MT (00:00Z): nothing in hand.
+
+### 2026-11-13 22:21Z hourly (worker)
+- HQ 21:36Z scan: BidNet logged in again (no robot check), 646/84; samgov 97, coloradovss 71/3; 0 new; Durango fencing (our NO) questions date.
+- HQ sent the BGNDRF bcc 21:38Z (1a1d6d8ae5a21e18) and opened bids/bor-bgndrf-custodial-140rr027q0001/. 2 bounced: K Clean (domain NXDOMAIN,
+  dormant) and Tigua admin@ (M365 rejected). Live Tigua role mailboxes partners@ and BD@ (tiguainc.org); B-tier + Tigua retry manifest ready:
+  ops/outbox/2026-11-13/outbox-bgndrf-janitorial-btier.json. HQ messaged (delivered), with a named Tigua BD mailbox kept out of the repo.
+- Lesson: 4 of 13 search-index-only addresses bounced today. On deadline-bound asks, send A and B tiers together in round one.
+- Inbox otherwise quiet; BVCC and La Plata silent before 17:00 MT.
+- Dashboard (22:50Z, worker): bids v314 (a2c9c46d3915ad09bbd34163a0801f36), events v316 (a963c162c5723e1a463a72dba477b1bf), portal_feed v167 (646eec7d6722ad75f29de1e66a82a378), sources v264 (431c0a177bcd21ce14bbb116a6b4f6d9), doc_gaps v11 unchanged.

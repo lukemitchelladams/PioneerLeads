@@ -33,3 +33,16 @@ No phones recorded. Named-person mailboxes are not written here; HQ has them by 
 Recommended ask (worker -> HQ): ops/outbox/2026-11-13/outbox-bgndrf-janitorial.json, bcc SL Cleaning, Pristine Clean, Tigua, Chase N Dirt,
 L&L Janitorial, Alamo Janitorial (+ HQ adds K Clean's named mailbox locally); body bgndrf-janitorial.txt (gate PASS); Sol + Amd 0002 +
 Attachments 1-4 attached. Yes/no by Mon 11/16 12:00 MT (the existing gate), monthly price by Wed 11/25 (7+ days before the 12/04 quote).
+
+## 2026-11-13 22:4xZ bounce follow-up (worker; finder + verifier per firm)
+HQ's 21:38Z bcc (1a1d6d8ae5a21e18): 5 delivered (SL Cleaning, Pristine Clean, Chase N Dirt, L&L, Alamo), 2 bounced.
+- Tigua: admin@tiguainc.org came from the old tiguainc.us page; the mailbox does not exist in their M365 tenant. Live role mailboxes on the
+  same domain: partners@tiguainc.org (tiguainc.org Capabilities and Subsidiaries pages) and BD@tiguainc.org (2026 Tigua Technology fact
+  sheet). Rejected: partners@tigua.org (likely a typo domain), contact@tigua.com (site-feedback boilerplate). Risk: aggregators say Tigua
+  Facility Services' 8(a) term ended 2026-07-27 and its SAM record may have lapsed; a "Tigua Facility Solutions Inc" may be a successor.
+- K Clean/Sweep-Rite: every published address is on the dead kcleansweeprite.com domain; last federal activity 2022 closeout, last sign
+  of life July 2023. Treat as dormant; no retry.
+- Ready for HQ: ops/outbox/2026-11-13/outbox-bgndrf-janitorial-btier.json, entry bgndrf-janitorial-btier (bcc New Mexico Premier Cleaning,
+  Team K, Treco, A & A Janitorial, A-One Janitorial) and entry bgndrf-janitorial-tigua-retry (to partners@, cc BD@). Same body, gate PASS.
+- Lesson: today 4 of 13 search-index-only addresses bounced (Valley Electric, Royal, K Clean, Tigua admin@). For deadline-bound asks,
+  send A and B tiers together in the first round instead of holding B for a second round.
