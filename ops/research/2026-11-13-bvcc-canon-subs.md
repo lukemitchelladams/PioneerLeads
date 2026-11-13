@@ -37,3 +37,26 @@ Correction: the RFP's Fremont County preference applies to the responder (Brown 
 Not checked before the budget ran out (next sweep): Tolin Mechanical Systems (bid the Fremont County Judicial Center RTU job),
 Vision Mechanical (Pueblo West), Pueblo Mechanical, Thayer Mechanical. Phone-only (no email, so not usable without a CALL BRIEF):
 Taylor Mechanical (Canon City), Total Service Heating (Pueblo West), LONG Building Technologies (Colorado Springs).
+
+## Canon City sweep 2 (02:3xZ, workflow w4oqcbchl: 2 finders + 2 skeptical verifiers)
+
+| Tier | Company | Base | Email | Why / caveat |
+|---|---|---|---|---|
+| B+ | Tolin Mechanical Systems Co. (Service Logic), Colorado Springs branch (1110 G Elkton Dr; HQ Denver) | Colorado Springs | customerservice@tolin.com (tolin.com says to use it for service and assessments; info@tolin.com general, sales@tolin.com sales) | Best fit found: commercial-only HVAC service with planned-maintenance programs, chiller/boiler techs, 24/7 emergency. Knows Canon City: its Fremont County Combined Court/Judicial Center RTU proposal is posted on fremontcountyco.gov. Also an El Paso County award contact (personal address, sent to HQ, not here). Large firm, so a 10-unit PM may be small for them. |
+| C | Trane Colorado Springs (4840 List Dr) | Colorado Springs | trane-pr@trane.com (Trane's Colorado line card PDF) | Factory chiller service; Trane holds a Pueblo County Courthouse chiller maintenance agreement. Regional general inbox, so replies may be slow. Trane may prefer to quote the City directly. |
+| C | MTech Mechanical (Mechanical Technologies Group) | Colorado Springs office (967 Elkton Dr) | info@mtechg.com (service department contact on mtechg.com/services) | Commercial mechanical with a service arm; no chiller/boiler PM program shown; service group looks Denver-centered. |
+| C | HVAC Solutions, Inc. | Colorado Springs (655 Elkton Dr) | info@hvacsol.com (Angi listing only; may be an old domain) | Lennox dealer, residential-leaning; weak fit. |
+| C | Hawkins Commercial Appliance Service | Englewood, techs local to Pueblo | personal address (2018 CFESA directory), sent to HQ, not here | Commercial kitchen/refrigeration first; chiller and Lochinvar boiler capability unconfirmed. |
+
+Phone / web form only (no email; a CALL BRIEF would be Luke's choice): Vision Mechanical (Pueblo West; commercial/industrial
+HVAC + piping, bid Pueblo County IFB 25-32), Heating & Plumbing Engineers (Colorado Springs; proposed on Fremont County RFP 26-001 RTU
+replacement 5/14/2026), Chiller Systems Service (Lakewood; now under The Arcticom Group), Climate Engineering & Centennial Controls,
+U.S. Engineering, Windmen Mechanical, Johnny's Plumbing & Hydronics (Canon City; no chiller capability). Pueblo Mechanical &
+Controls is a Tucson AZ firm, not Pueblo CO.
+
+Fastest route to more real contacts: the Tolin and HPE Fremont County proposal PDFs on fremontcountyco.gov (host blocked from the
+cloud; the Mac or a downloaded copy would show the estimators' emails).
+
+**Data-quality flag:** quotes@westechusa.com (used for WESTECH Mechanical in the Boettcher chiller outreach) is probably NOT
+WESTECH's address. Every listing ties WESTECH Mechanical to westechmechanical.com, and westechusa.com matched no record for the
+firm. Do not reuse it.
