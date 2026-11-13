@@ -2777,9 +2777,9 @@
    "at": "2026-11-12T21:28:00Z"
   },
   "bidnet:0000443426": {
-   "name": "Trails Park and Recreation District - Landscape Maintenance Contract Services (BidNet 0000443426; closes 2026-12-04)",
+   "name": "Trails Park and Recreation District - Landscape Maintenance Contract Services (BidNet 0000443426, sol TPRDLMC27; closes 2026-12-04 17:00 MST)",
    "verdict": "EVALUATE",
-   "why": "Worker 11/13 00:3xZ: landscaping/grounds = our trade, performed by YMS (Alex Ditto) as Brown Bison's sub; Luke handles Alex, operators do not contact him. Documents not yet read (HQ 23:35Z detail pass cut); public web search found no copy off BidNet. Pre-bid/walk date and mandatory status NOT KNOWN yet: next logged-in scan downloads the package (watchlisted). If a mandatory walk has no YMS person attending -> NO-BID per the 11/12 rule.",
+   "why": "Worker 11/13 00:3xZ: landscaping/grounds = our trade, performed by YMS (Alex Ditto) as Brown Bison's sub; Luke handles Alex, operators do not contact him. Documents not yet read (HQ 23:35Z detail pass cut); public web search found no copy off BidNet. Pre-bid/walk date and mandatory status NOT KNOWN yet: next logged-in scan downloads the package (watchlisted). If a mandatory walk has no YMS person attending -> NO-BID per the 11/12 rule. | 11/13 03:3xZ: HQ 02:39Z logged-in scan read the BidNet detail page (detail_checked 02:42Z): no Pre-Bidding Event listed there and no documents downloaded yet; a walk may still be in the RFP text.",
    "at": "2026-11-13T00:35:00Z"
   },
   "b2e58c41cb4c4787813fbc1f31ea81f7": {
@@ -2972,6 +2972,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T02:35:00Z",
+ "last_hourly_check": "2026-11-13T03:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

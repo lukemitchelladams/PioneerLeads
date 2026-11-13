@@ -1907,3 +1907,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 02:55Z hourly (19:35 MT) scan, HQ
 - Launch waited 173 s for the cool-down; fresh login 02:39:32Z clean. Push 050caa9, EXIT 3 (detail budget cut, bidnet 7/91; SAM API 504 on the 3950 query -> samgov PARTIAL, rows kept). bidnet 636/82, samgov 92/92, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 01:36-02:36Z: nothing. No email.
+
+### 2026-11-13 03:21Z hourly (worker)
+- HQ 02:39Z scan: BidNet logged in again (636/82; detail cut 7/91), samgov 92 (one 504), coloradovss 65/3, bonfire 2/1 (Cloudflare on detail), dibbs not scanned. 0 new, 0 docs. Trails Rec 0000443426 detail page read 02:42Z: sol TPRDLMC27, closes 12/04 17:00 MST, no Pre-Bidding Event listed, no docs downloaded yet.
+- Inbox: nothing inbound. GovTribe still lapsed.
+- No-idle work: workflow wywqtfge3 hunting published emails for the 10 phone-only Pagosa janitorial firms (Ralph & Son, Quality Maintenance, Alpen, SERVPRO Durango, ...) so HQ can ask them Fri before the Mon 12:00 NO-BID, plus a public copy of the Trails Rec RFP (walk date).
+- Dashboard: bids v295 (f185be0ae181715d88154e8de31e0a12), events v297 (5c110b1bfb1d0e1a4366bad8cee3a10a), portal_feed v153 (d99dacde55baf0ddfb6cc7bd805d11c4), sources v250 (779068050ebf884ff4a0797daa070c7e), doc_gaps v11 unchanged.
