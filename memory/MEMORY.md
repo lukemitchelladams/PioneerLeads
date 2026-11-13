@@ -1994,3 +1994,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 10:xxZ w60g9abjz done: Aims 2627-009 no-price package pre-built and critic-checked.
   - Files: FORMS-CHECKLIST (49 rows), RESPONSE-DRAFT (TAB 1-5, OSHA/IWCA safety plan, per-building hazard sheet, Attachment C layout), SUBMISSION (Luke uploads Tue 2027-01-05), QUESTIONS-DRAFT Q1-Q8 (post Thu 11/19).
   - Gaps: no sub yet. The 1-year experience minimum has to come through the sub. Luke supplies EMR, 3-yr WC history, E-Verify status and the W-9. The "Bi-Annual Cost" column is undefined. Sub pricing date: 12/12 in the pipeline is a Saturday (fixed to Fri 12/11).
+- HQ 09:37Z scan: bidnet 639 logged in, samgov 95, coloradovss 65/3, bonfire 2/1; 0 new. Dashboard (10:00Z, worker): bids v302 (ffff67118778188bb35f3c3ebcb2412b), events v304 (19156a4ae55197389128384579b5d188), portal_feed v158 (a527fe219e14ddfe24360a7502587474), sources v255 (39946432f389d7540405c733d05721ba), doc_gaps v11 unchanged.
