@@ -2002,3 +2002,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 10:45Z hourly (03:35 MT) scan, HQ
 - Logged in attempt 1 (09:38Z session reused); full pass in 6 min. Push 8f15f46, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 09:36-10:36Z: nothing. No email.
+- 11:xxZ wqlyqbw6d done (4 agents): CPW heater and Arapahoe Courthouse 1 no-price packages pre-built.
+  - CPW: **Exhibit A Scope of Work was only linked from the DQ, not inside it.** Now in docs/. Husmann and Surefire never got it, so HQ should send it today. Exhibit A asks for heaters of at least 35,000 BTU. Quote by email to the buyer by 12/09 17:00 MST, with no qualifying or format changes. The electrical portion needs an electrician (Flow Right lists electrical). The walk clashes with BVCC's (both Wed 11/18 10:00), so different sub people are needed.
+  - Courthouse 1: walk mandatory Mon 11/23 10:00; questions close 11/23 16:00; due 12/09 12:00 on BidNet. A COI goes WITH the bid; the limits aren't stated. Award is on the lowest per-sq-ft rate, not-to-exceed $55k. Ask on BidNet by Mon 11/16 whether a sub's employee may sign in. South Valley Commercial and Drywall Partitions have not been asked.

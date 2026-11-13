@@ -22,3 +22,9 @@ Mon 2026-11-16 12:00 MT unless a sub confirms in writing that its person attends
 2. If a sub confirms: HQ registers Brown Bison + the attendee with Klay Tolleson by Tue 11/17 17:00 MST (email), the sub
    attends 11/18 10:00 and signs in for Brown Bison, questions by 12/01, quote by 12/09 17:00.
 3. No sub by Mon 12:00 -> NO-BID (mandatory pre-bid cannot be covered; nobody asks Luke to attend).
+4. 2026-11-13 (HQ subagent): Exhibit A, Scope of Work (2 pp.) pulled via the Drive connector from the DQ p.2 folder link into
+   docs/ (the 11/12 manifest wrongly said it was inside the DQ); State PO T&C reading copy ("Updated 09/09/26", from a DOC DQ
+   package; State Controller host blocked here, current version unconfirmed) added; MANIFEST regenerated ("Appendix II" row is
+   a false positive). No-price package pre-built: FORMS-CHECKLIST.md, RESPONSE-DRAFT.md, SUBMISSION.md (countdown from the
+   Mon 11/16 12:00 MT sub gate; registration, questions and quote email drafts gate PASS). Ex. A: 6 "aquatic inline/immersion
+   heaters", "at least 35,000 BTU"; breakers, wiring/conduit, GFCI + emergency cutoffs; garage electric unit heater + thermostat.

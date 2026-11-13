@@ -6,10 +6,15 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 ## Files in docs/
 
 - DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf
+- Exhibit A, Scope of Work.pdf
+- State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf
 
 ## Referenced in the solicitation
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
+| Addendum 1 | Additional Terms and Conditions for Information Technology ( | State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf | INSIDE State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf (heading found; verify pages) |
+| Addendum 2 | Additional Terms and Conditions for Federal Provisions ( | State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf | INSIDE State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf (heading found; verify pages) |
+| Appendix II |  | State of Colorado PO Terms and Conditions - Updated 090926 - reading copy from DOC DQ package.pdf | **MISSING** |
 | Attachment 1 | Submission Form (pages 18-22) | DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf | INSIDE DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf (heading found; verify pages) |
-| Exhibit A | Scope of Work | DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf | INSIDE DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf (heading found; verify pages) |
+| Exhibit A | Scope of Work | DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf | IN HAND: Exhibit A, Scope of Work.pdf |
