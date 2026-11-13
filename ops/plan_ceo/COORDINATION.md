@@ -1,3 +1,12 @@
+# 2026-11-13 ~14:25 MT: MAC MAY GO DARK TODAY; CLOUD HQ COVERS TWO ITEMS (fallback order)
+
+The Mac is on battery (18% at 14:19 MT) and will likely shut down before 17:00 MT. If ops/ramp shows no Mac heartbeat stamp after 16:00 MT, cloud HQ does both of these, once:
+
+1. La Plata 26-053-1215: if no Durango sub has sent a price by 17:00 MT (VIP Plumbing was asked for rates by 15:00; the 7-firm sweep by 17:00), record NO-BID: set bid_laplata to no_bid in the CRM if reachable, and log it in the pipeline and ramp either way. No email to any sub about it.
+2. Send Luke the Fri 11/13 PM board (8 lines, to his own address only).
+
+Before doing either, check the CRM status and Gmail Sent so nothing goes out twice; the Mac does the same check when it wakes. The AM board already went at 08:26 MT. All standing rules apply (no appointments under Luke's name, nothing to Trucordia, humanize on outside mail).
+
 # 2026-11-12 ~13:15 MT: NO APPOINTMENTS THAT NEED LUKE; NO IDLE TICKS; WORK ORDERS (both operators)
 
 From the CEO session. Luke, 11/09: "i check my email and i see you are scheduling calls with people, didnt we say the plan
