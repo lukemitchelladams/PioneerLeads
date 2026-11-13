@@ -792,6 +792,17 @@
    "name": "DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record)",
    "source": "samgov",
    "match": "95a2d27f4a0841b69190a165a262ef7c"
+  },
+  {
+   "name": "CPW Native Aquatic Species Facility Heater Replacement (BidNet mirror of VSS DQ1 PMAA 2027000176)",
+   "source": "bidnet",
+   "match": "444234845265|Native Aquatic Species Facility Heater",
+   "folder": "bids/cpw-alamosa-heater-replacement-dq1-2027000176"
+  },
+  {
+   "name": "City of Durango 2026-0050-0133 Animas City Cemetery Fencing (NO: fencing is not our trade, rule 8; mandatory pre-bid 11/18 in Durango, no sub)",
+   "source": "bidnet",
+   "match": "2026-0050-0133|0000443211"
   }
  ]
 }
