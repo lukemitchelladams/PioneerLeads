@@ -2138,3 +2138,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Tolin support desk ack 19:34Z (Canon City). No other replies; BVCC and La Plata still silent ahead of the 17:00 MT gates.
 - Dashboard (20:48Z, worker): bids v312 (4de7a0abd1d017eb2155016c1a181a23), events v314 (948f25ab8d2c21a34682fec6995246b8), portal_feed v165
   (505cb59641b40647a342e44aaf5768d9), sources v262 (515cf9834708cf39a38a5576460c9ea8), doc_gaps v11 unchanged.
+- 20:30Z: CPW electrical B tier sent (5 generic mailboxes, msg 1a1d699c3400df4e) after Valley Electric + Royal bounced; manifest built by HQ from the worker's research since its B-tier manifest was not pushed. CPW: 13 companies asked, 1 declined, 2 bounced, 0 priced; gate Mon 12:00.
