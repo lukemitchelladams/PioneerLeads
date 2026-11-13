@@ -1931,3 +1931,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   - **Pagosa RFQ:** no submission address is stated (CO's Q&A amendment pending; plan stephen.holly@usda.gov). FAR 52.212-3/-5 are referenced but not attached. Luke must confirm NAICS 561720 is on the SAM record by Mon 11/16 (portal login).
   - **BVCC:** Exhibit A sec. 10 has 15 questions. Exhibit D has 21 priced rows (RMA codes). Exhibit G confidentiality needs the DQ 9.A.xix redacted/unredacted/crosswalk set. Brown Bison is not on Colorado VSS yet.
 - Dashboard (05:15Z, worker): bids v297 (30f4c50cfee3faa96f83f397fddcee3b), events v299 (59f766fe1bdc1de5d98591aa33f689ef), portal_feed v154 (2724e07cd630e0ac8f0e786bbe6e686a), sources v251 (c9769c63b324e09be4e7547e41e6d528), doc_gaps v11 unchanged (1b3b605dd53ee32d669d74757377ae3c).
+
+### 2026-11-13 05:21Z hourly (worker)
+- No new HQ scan since 04:35Z (bidnet 636 logged in, samgov 92, coloradovss 65/3, bonfire 2/1). 0 new. Trails Rec and La Plata docs not yet downloaded. Inbox quiet.
+- No-idle work: workflow wtnqd0o29 sweeping portals the scanner does not read (OpenGov, Bonfire via search, DemandStar/Public Purchase/legal notices, agency-run pages) for open Colorado bids in our trades, deduped against the repo.
