@@ -2641,7 +2641,7 @@
   "bidnet:0000441156": {
    "name": "City of Loveland Bid 2026-074 Carpet, Upholstery, and Fiber Panel Maintenance (due 2026-11-19 14:00)",
    "verdict": "NO",
-   "why": "Pipeline NO (10/28 triage): bidder certifies 5 yrs as a carpet maintenance business; subcontracting only with consent; MANDATORY walk 11/05 10:30 passed. Addendum 11/10 changes nothing.",
+   "why": "Pipeline NO (10/28 triage): bidder certifies 5 yrs as a carpet maintenance business; subcontracting only with consent; MANDATORY walk 11/05 10:30 passed. Addendum 11/10 changes nothing. Addendum 11/13 (1a1d62f231eecff3) changes nothing; walk passed.",
    "at": "2026-11-10T17:30:00Z"
   },
   "501720d78c2a4aafb455b996db0cf2dd": {
@@ -2847,6 +2847,18 @@
    "verdict": "NO",
    "why": "HQ 11/13 13:58Z verdict, ledgered by the worker: Timken OEM sole source; Jones Bearing is not a Timken distributor on record (11/12 rule).",
    "at": "2026-11-13T14:50:00Z"
+  },
+  "bidnet:0000443211": {
+   "name": "City of Durango 2026-0050-0133 Animas City Cemetery Fencing Project (due 2026-12-08)",
+   "verdict": "NO",
+   "why": "Fencing is not our trade (rule 8); mandatory pre-bid 11/18 (HQ 11:25 MT scan).",
+   "at": "2026-11-13T19:30:00Z"
+  },
+  "bidnet:444234845265": {
+   "name": "BidNet mirror: CPW Native Aquatic Species Facility Heater Replacement & Install (due 2026-12-09)",
+   "verdict": "EVALUATE",
+   "why": "Same bid as vss:DQ1-PMAA-2027000176 (CPW Alamosa); HQ pointed the watchlist entry at the CPW folder. Default NO-BID Mon 11/16 12:00 unless a sub confirms the 11/18 mandatory pre-bid.",
+   "at": "2026-11-13T19:30:00Z"
   }
  },
  "watched": {
@@ -3032,6 +3044,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T18:30:00Z",
+ "last_hourly_check": "2026-11-13T19:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

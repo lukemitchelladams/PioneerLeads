@@ -2100,3 +2100,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   custodial award published (our NO; award tab = Lafayette pricing intel). No other batch replies, no bounces.
 - Rule for HQ from today: launch scans ONLY via `bash scripts/bidwatch/launch_scan.sh <log>`; keep each Bash call small; a send_message
   to the worker needs an approval Luke is not there to give, so coordinate through commits (COORDINATION.md) instead.
+
+### 2026-11-13 19:21Z hourly (worker)
+- HQ unblocked: the 18:25Z scan ran via scripts/bidwatch/launch_scan.sh (bidnet 651/84 logged in, samgov 97, coloradovss 69/3, bonfire 2/1 challenged, dibbs not scanned). HQ idle; next launch at its 12:35 MT trigger.
+- Inbox: Loveland 2026-074 carpet addendum (pipeline NO), Workspace promo. No sub replies since Tolin 18:09Z; no bounces.
+- Gap found: the CPW Alamosa scope (Exhibit A) is mainly ELECTRICAL (6 electric inline/immersion heaters, breakers, conduit, GFCI, a garage electric unit heater), but the 11/12 sweep only covered HVAC/plumbing. Worker launched an SLV electrical-contractor sweep (finder + verifier) so HQ can send before the Mon 11/16 12:00 gate. Torres P&H (tier B) was never asked.
+- Dashboard (19:36Z, worker): portal_feed v164 (2b566ed25a832cfaaf974ad9f387671f), sources v261 (899a167f8c2a99ac10127f9e7efd9a20); bids/events after the CPW update.
