@@ -460,3 +460,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-13 00:21Z hourly (worker, read-only)
 - No new inbound in 2 h (newer_than:2h empty). Only bounce in 1 d is the already-logged mandrplumbers.com block (1a1d17774d6ee672). No sub replies (BVCC, La Plata, PSD alternates, Widefield, Pagosa, CPW Husmann/Surefire, Wild Fox). Nothing from Luke; no CRM brief.
+
+## 2026-11-13 01:21Z hourly (worker, read-only)
+- 1a1d24ec9df1bcc1 00:29Z BidNet addendum: Denver Human Services RFP FS/CA/FSS_AccessControl_2026 On-Call Security Access Control Services (BidNet 0000437039). Our decision is NO (needs LenelS2 VAR + CJIS engineers); no action.
+- No sub replies (BVCC Hydrite/WEI, La Plata Durango 7, PSD alternates, Widefield, Pagosa, CPW Husmann/Surefire, Wild Fox). No bounces beyond the logged mandrplumbers block. Nothing from Luke; no CRM brief.

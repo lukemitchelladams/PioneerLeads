@@ -2781,6 +2781,12 @@
    "verdict": "EVALUATE",
    "why": "Worker 11/13 00:3xZ: landscaping/grounds = our trade, performed by YMS (Alex Ditto) as Brown Bison's sub; Luke handles Alex, operators do not contact him. Documents not yet read (HQ 23:35Z detail pass cut); public web search found no copy off BidNet. Pre-bid/walk date and mandatory status NOT KNOWN yet: next logged-in scan downloads the package (watchlisted). If a mandatory walk has no YMS person attending -> NO-BID per the 11/12 rule.",
    "at": "2026-11-13T00:35:00Z"
+  },
+  "b2e58c41cb4c4787813fbc1f31ea81f7": {
+   "name": "Reclamation 140RR027Q0001 S--BGNDRF Custodial Services (Alamogordo NM; due 2026-12-04 14:00 MST, Amd 2)",
+   "verdict": "EVALUATE",
+   "why": "Worker 11/13 01:3xZ, following HQ's 00:50Z EVALUATE-low: janitorial is our trade, but the site is Alamogordo NM (~6,000 sq ft office/lab), out of region, and we have no New Mexico janitorial sub; the optional site visits are already past. HQ default: NO-BID Mon 11/16 12:00 MT. Revives only if a NM sub prices first.",
+   "at": "2026-11-13T01:35:00Z"
   }
  },
  "watched": {
@@ -2966,6 +2972,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T00:35:00Z",
+ "last_hourly_check": "2026-11-13T01:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
