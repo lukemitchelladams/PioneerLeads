@@ -2,26 +2,26 @@
  {
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Live",
-  "detail": "session reused; detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details",
+  "detail": "session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started; detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down sta",
   "open_count": 636,
   "matches": 82,
-  "last_success": "2026-11-13T04:35:55+00:00"
+  "last_success": "2026-11-13T05:36:00+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
   "status": "Live (public, not logged in)",
-  "detail": "BONFIRE_USER/BONFIRE_PASS not set; detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details",
+  "detail": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network; detail pages blocked: Cloudflare bot challenge on the opportun",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-13T04:35:55+00:00"
+  "last_success": "2026-11-13T05:36:00+00:00"
  },
  {
   "source": "SAM.gov",
   "status": "Live",
-  "detail": "API key; +30 from the nightly bulk file",
-  "open_count": 92,
-  "matches": 92,
-  "last_success": "2026-11-13T04:35:55+00:00"
+  "detail": "API key; +33 from the nightly bulk file",
+  "open_count": 95,
+  "matches": 95,
+  "last_success": "2026-11-13T05:36:00+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -34,10 +34,10 @@
  {
   "source": "ColoradoVSS (State of Colorado)",
   "status": "Live (public, not logged in)",
-  "detail": "public list (no login); detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details",
+  "detail": "public list (no login)",
   "open_count": 65,
   "matches": 3,
-  "last_success": "2026-11-13T04:35:55+00:00"
+  "last_success": "2026-11-13T05:36:00+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",

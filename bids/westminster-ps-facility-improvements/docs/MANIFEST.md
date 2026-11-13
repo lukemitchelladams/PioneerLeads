@@ -18,6 +18,21 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - Attachment G-4 - Package D - Hodgkins Leadership Academy Specifications.pdf
 - Attachment G-5 - Package E - Fairview PK-8 Specifications.pdf
 - Attachment G-6 - Package F - Tennyson Knolls Preparatory School Specifications.pdf
+- DAO ECC - Addendum 001 - 11-12-2026.pdf
+- DAO Fairview - Addendum 001 - 11-12-2026.pdf
+- DAO Harris Park - Addendum 001 - 11-12-2026.pdf
+- DAO Hodgkins - Addendum 001 - 11-12-2026.pdf
+- DAO Sherrelwood Elementary - Addenda 001 - 11-12-2026.pdf
+- DAO Tennyson Knolls - Addendum 001 - 11-12-2026.pdf
+- ECC SEC-5 Asbestos Management Plan.pdf
+- Fairview SEC-5 Asbestos Management Plan.pdf
+- Harris Park SEC-5 Asbestos Management Plan.pdf
+- Hodgkins HL Architecture Asbestos Letter.pdf
+- RFP 26-002 - Addendum No. 1.pdf
+- RFP 26-002 - Attachment H - Construction Division Cost Breakdown.pdf
+- RFP 26-002 - Revised Attachment D - Pricing Proposal.pdf
+- Sherrelwood SEC-5 Asbestos Management Plan.pdf
+- Tennyson SEC-5 Asbestos Management Plan.pdf
 - WPS-RFP26002-Facility-Improvements.extracted.txt
 - WPS-RFP26002-Facility-Improvements.pdf
 
@@ -25,26 +40,33 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
+| Addendum 01 |  | DAO ECC - Addendum 001 - 11-12-2026.pdf | **MISSING** |
+| Addendum 1 |  | DAO Tennyson Knolls - Addendum 001 - 11-12-2026.pdf | INSIDE DAO Tennyson Knolls - Addendum 001 - 11-12-2026.pdf (heading found; verify pages) |
 | Appendix B |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
 | Appendix X1 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
-| Attachment A | Respondent Certification and Signature Page 37 | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf |
+| Attachment A | Respondent Certification and Signature Page 37 | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: RFP 26-002 - Revised Attachment D - Pricing Proposal.pdf |
 | Attachment B | Certification Regarding Debarment and Suspension 38 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
 | Attachment C | Criminal Records Check Certification Statement 39 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
-| Attachment D | Pricing Proposal 40 | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
+| Attachment D | Pricing Proposal, which replaces the previously | RFP 26-002 - Addendum No. 1.pdf | IN HAND: RFP 26-002 - Revised Attachment D - Pricing Proposal.pdf |
 | Attachment E | WPS General Conditions of the Construction Agreement Separate File | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf |
 | Attachment F | Drawings | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf |
 | Attachment G | Technical Specifications | WPS-RFP26002-Facility-Improvements.extracted.txt | IN HAND: Attachment G-1 - Package A - International School at Harris Park Specifications.pdf |
+| Attachment H | Construction | RFP 26-002 - Addendum No. 1.pdf | IN HAND: Attachment E - WPS General Conditions of the Construction Agreement RFP 26-002.pdf |
 | Form 1 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
 | Form 2 |  | Attachment G-4 - Package D - Hodgkins Leadership Academy Specifications.pdf | **MISSING** |
 | Schedule 1 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule 11 |  | DAO Fairview - Addendum 001 - 11-12-2026.pdf | **MISSING** |
+| Schedule 16 |  | DAO Tennyson Knolls - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule 2 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
 | Schedule 3 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
 | Schedule 4 |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | INSIDE Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf (heading found; verify pages) |
 | Schedule 40 |  | Attachment G-1 - Package A - International School at Harris Park Specifications.pdf | **MISSING** |
 | Schedule 5 |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
+| Schedule 6 |  | DAO Hodgkins - Addendum 001 - 11-12-2026.pdf | **MISSING** |
+| Schedule 7 |  | DAO ECC - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule 79 |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
 | Schedule 8 |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
-| Schedule 9 |  | WPS-RFP26002-Facility-Improvements.extracted.txt | **MISSING** |
+| Schedule 9 |  | DAO Harris Park - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule A6 |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
 | Schedule C |  | Attachment F-1 - Package A - International School at Harris Park Drawings.pdf | **MISSING** |
 | Schedule D1 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
@@ -52,9 +74,13 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 | Schedule H |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
 | Schedule I |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
 | Schedule J |  | Attachment F-5 - Package E - Fairview PK-8 Drawings.pdf | **MISSING** |
+| Schedule K |  | DAO Fairview - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule KN2 |  | Attachment F-6 - Package F - Tennyson Knolls Preparatory School Drawings.pdf | **MISSING** |
+| Schedule L |  | DAO Hodgkins - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule LA |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
 | Schedule P |  | Attachment F-2 - Package B - Sherrelwood Elementary Drawings.pdf | **MISSING** |
+| Schedule PT7 | ACCENT PAINT BEIGE TO MATCH EXISTING LEARNING CENTER PAINT | DAO Hodgkins - Addendum 001 - 11-12-2026.pdf | **MISSING** |
+| Schedule S |  | DAO Tennyson Knolls - Addendum 001 - 11-12-2026.pdf | **MISSING** |
 | Schedule T5 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
 | Schedule X1 |  | Attachment F-4 - Package D - Hodgkins Leadership Academy Drawings.pdf | **MISSING** |
 
@@ -63,3 +89,4 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - ...stimating worksheets, Subcontractor and supplier proposals, bid tabulations, subcontracts, purchase orders, invoices, payroll r...
 - ...IDE UNIT PRICING FOR ALL LUMINAIRES BY TYPE AND SUBMIT WITH BID FORM.  D. PROVIDE AN EMERGENCY BALLAST TEST SWITCH FOR RECESSED...
 - ...ce.  8. Performance and payment bonds if required.  9. Unit price schedule.   D. Before final payment application, provide and complet...
+- ...Alternate: An amount proposed by bidders and stated on the Bid Form for certain work  defined in the bidding requirements that...

@@ -11,7 +11,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -30.4
+  "days_left": -30.41
  },
  {
   "key": "dcsd-003-27|MANDATORY pre-bid|2026-10-14T09:00:00-06:00",
@@ -39,7 +39,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -24.4
+  "days_left": -24.41
  },
  {
   "key": "rtd-126dm016|Sub call|2026-10-20T10:00:00-06:00",
@@ -109,7 +109,7 @@
   "note": "Site visit RSVP (max 2 reps)",
   "critical": false,
   "past": true,
-  "days_left": -20.4
+  "days_left": -20.41
  },
  {
   "key": "boettcher-chiller|Pre-bid (optional)|2026-10-26T10:00:00-06:00",
@@ -137,7 +137,7 @@
   "note": "Teams",
   "critical": false,
   "past": true,
-  "days_left": -17.4
+  "days_left": -17.41
  },
  {
   "key": "cdoc-tcf-boiler-water|Sub clearance sent|2026-10-26T15:09:00-06:00",
@@ -221,7 +221,7 @@
   "note": "ITB 10366 + drawings + specs in downloads/bidnet/0000439726. Pre-bid/job walk 11/2 15:00 (optional); due 12/2 15:00; bonds + Davis-Bacon.",
   "critical": false,
   "past": true,
-  "days_left": -16.25
+  "days_left": -16.26
  },
  {
   "key": "cos-parks-irrigation-oncall|Package downloaded|2026-10-27T17:36:00-06:00",
@@ -235,7 +235,7 @@
   "note": "RFP R26-099MZ in downloads/bidnet/0000441782. Optional pre-proposal 11/6; due 12/2 14:00; hourly rate sheet.",
   "critical": false,
   "past": true,
-  "days_left": -16.25
+  "days_left": -16.26
  },
  {
   "key": "brighton-26-500209|outreach|2026-10-28T14:04:00+00:00",
@@ -277,7 +277,7 @@
   "note": "Hourly scan added 4 backup HVAC candidates + 4 Greeley phone-only firms to sub-outreach.md (HQ had already emailed 7 firms at 09:1x MT; pricing asked for by 11/12; MANDATORY walk 11/05 09:00).",
   "critical": false,
   "past": true,
-  "days_left": -15.58
+  "days_left": -15.59
  },
  {
   "key": "weld-jail-rtu-b2600111|package|2026-10-28T16:00:00+00:00",
@@ -347,7 +347,7 @@
   "note": "Silas Norwood (H2) answered Luke's 11:55 MT usage question at 11:21 MT: annual chemical usage estimate for OxyGard, BC 600 and Triamine I with stated assumptions (softened makeup, one boiler per room at ~10% average load, 70% condensate return, ~125 ppm makeup alkalinity, ~270,000 gal makeup/yr), usage expected within ~20%; recommends the bid state chemicals are consumables billed on actual usage. Quantities in private/.",
   "critical": false,
   "past": true,
-  "days_left": -15.51
+  "days_left": -15.52
  },
  {
   "key": "psd-27-701-002-hood|outreach|2026-10-28T18:16:00+00:00",
@@ -767,7 +767,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -14.4
+  "days_left": -14.41
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T20:27:00Z",
@@ -781,7 +781,7 @@
   "note": "Silas Norwood (H2) 10/29 14:04 MT, replying to the TCF submission copy: 'Awesome! Ill be in touch shortly on the Elpaso project.' H2 pricing for 26-074 still owed by Mon 11/02 noon.",
   "critical": false,
   "past": true,
-  "days_left": -14.38
+  "days_left": -14.39
  },
  {
   "key": "weldsd6-coiling-door-franklin|prebid|2026-10-29T20:27:00Z",
@@ -795,7 +795,7 @@
   "note": "Found 19:42Z (BidNet 0000441142): Weld SD6 coiling door/grill at Franklin MS, due 11/10 14:00. MANDATORY walk Mon 11/02 10:00 at 818 35th Ave, Greeley (meet at front entrance). Same day as the Transfort door walk 15:00 in Fort Collins. Door sub or Luke must attend; docs watchlisted.",
   "critical": false,
   "past": true,
-  "days_left": -14.38
+  "days_left": -14.39
  },
  {
   "key": "carbon-valley-mechanical-pm|decision|2026-10-29T20:27:00Z",
@@ -809,7 +809,7 @@
   "note": "HQ triage 2026-10-29: GO (conditional). Due corrected to 12/08 17:00 MT (RFP), sealed original + 5 copies; 6 HVAC subs emailed 10/29 asking for walk attendance 11/10 09:00 and pricing by 12/01.",
   "critical": false,
   "past": true,
-  "days_left": -14.38
+  "days_left": -14.39
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T21:27:00Z",
@@ -823,7 +823,7 @@
   "note": "Silas (H2) 10/29 14:26 MT replied on the El Paso 26-074 thread with Conor Parrish's contact card (FACT Water Co, Chief Growth Officer, CWT, office 970-342-6867) and no message text. Read as: FACT Water is the water-treatment partner H2 will bring. HQ/Luke should confirm who prices 26-074 and by when (asked for Mon 11/02 noon).",
   "critical": false,
   "past": true,
-  "days_left": -14.34
+  "days_left": -14.35
  },
  {
   "key": "weldsd6-coiling-door-franklin|decision|2026-10-29T21:27:00Z",
@@ -837,7 +837,7 @@
   "note": "HQ 10/29: GO. Docs filed (front.docx, contract approval.docx, contract sample.pdf). front.docx: bid opening 'Tuesday, November 10, 2026, at 2:00 p.m.' by email to sfrancies@greeleyschools.org; one CrossingGard ERG-IBC grille, completion 1/30/2027; performance bond for work over $50,000. 3 door subs emailed (Front Range Raynor, Colorado Commercial Doors, Don's), pricing by Fri 11/06; sub or Luke attends the mandatory walk Mon 11/02 10:00.",
   "critical": false,
   "past": true,
-  "days_left": -14.34
+  "days_left": -14.35
  },
  {
   "key": "elpaso-26-074-water-treatment|sub|2026-10-29T22:28:00Z",
@@ -949,7 +949,7 @@
   "note": "HQ replied-all to FACT Water (Conor Parrish, Andrew Coquyt): Brown Bison primes and manages, FACT runs the water program; asked pricing by Mon 11/02 noon plus 3 references and a service-tech bio.",
   "critical": false,
   "past": true,
-  "days_left": -13.64
+  "days_left": -13.65
  },
  {
   "key": "weldsd6-coiling-door-franklin|sub-outreach|2026-10-30T14:18:00Z",
@@ -1033,7 +1033,7 @@
   "note": "Environment Control (Ryan Steinseifer) engaged: 'Absolutely, I will look into this' after Luke's scope answer; pricing by Mon 11/16.",
   "critical": false,
   "past": true,
-  "days_left": -13.6
+  "days_left": -13.61
  },
  {
   "key": "bidnet-0000441807|Pre-bid (optional)|2026-10-30T15:30:00-06:00",
@@ -1271,7 +1271,7 @@
   "note": "B&K Cleaning (Durango) interested; will send pricing after reviewing the docs",
   "critical": false,
   "past": true,
-  "days_left": -7.11
+  "days_left": -7.12
  },
  {
   "key": "pueblo-ura-msa-landscape|docs|2026-11-06T05:42:00Z",
@@ -1369,7 +1369,7 @@
   "note": "Folder opened; IFB B2600113 downloaded from BidNet (saved session); MANDATORY walk 11/19 10:00 MST Fort Lupton confirmed from the IFB; due 01/05/2027 10:00 MT; recommend NO (no subcontracting, company-level Uniprise/Corning certification, 100% P&P bonds)",
   "critical": false,
   "past": true,
-  "days_left": -6.41
+  "days_left": -6.42
  },
  {
   "key": "dpa-ih-25043-garage-entrance|Submission|2026-11-06T14:00:00-07:00",
@@ -1593,7 +1593,7 @@
   "note": "Pagosa Ranger District tour, moved from 11/09 (B&K did not confirm). Caley offers 1:00 PM; not mandatory. US 160 closed at the Piedra River Bridge: Durango sub faces a ~3.5 h detour via NM",
   "critical": false,
   "past": false,
-  "days_left": 0.6
+  "days_left": 0.59
  },
  {
   "key": "bidnet-0000441807|Submission|2026-11-13T14:00:00-07:00",

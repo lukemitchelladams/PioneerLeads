@@ -5,6 +5,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 10366 Addendum 1 Questions and Answers.pdf
 - 10366 ITB Transfort Overhead Door Replacements.pdf
 
 ## Referenced in the solicitation
@@ -12,6 +13,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 | Item | Title | Referenced in | Status |
 |---|---|---|---|
 | Appendix A |  | 10366 ITB Transfort Overhead Door Replacements.pdf | **MISSING** |
+| Exhibit 1 | Questions and Answers | 10366 Addendum 1 Questions and Answers.pdf | IN HAND: 10366 Addendum 1 Questions and Answers.pdf |
 | Exhibit GC | A GC-A1 - GC-A2 | 10366 ITB Transfort Overhead Door Replacements.pdf | **MISSING** |
 | Form 8.2 |  | 10366 ITB Transfort Overhead Door Replacements.pdf | **MISSING** |
 

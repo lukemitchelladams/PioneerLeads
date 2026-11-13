@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-13T04:35:55+00:00",
+  "checked_at": "2026-11-13T05:36:00+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -9,19 +9,12 @@
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "detail_cut": {
-        "budget_s": 600.0,
-        "done": 7,
-        "elapsed_s": 609.0,
-        "source": "bidnet",
-        "total": 91
-      },
       "errors": [
-        "detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details"
+        "detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started"
       ],
-      "last_success": "2026-11-13T04:35:55+00:00",
+      "last_success": "2026-11-13T05:36:00+00:00",
       "logged_in": true,
-      "login_note": "session reused",
+      "login_note": "session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started",
       "matches": 82,
       "reach_note": "HTTP 200",
       "reachable": true,
@@ -36,19 +29,12 @@
         "BONFIRE_PASS": false,
         "BONFIRE_USER": false
       },
-      "detail_cut": {
-        "budget_s": 600.0,
-        "done": 0,
-        "elapsed_s": 615.1,
-        "source": "bonfire",
-        "total": 1
-      },
       "errors": [
-        "detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details"
+        "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-13T04:35:55+00:00",
+      "last_success": "2026-11-13T05:36:00+00:00",
       "logged_in": false,
-      "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
+      "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
       "reach_note": "HTTP 200",
       "reachable": true
@@ -57,17 +43,8 @@
       "complete": true,
       "count": 65,
       "creds": {},
-      "detail_cut": {
-        "budget_s": 600.0,
-        "done": 0,
-        "elapsed_s": 625.4,
-        "source": "coloradovss",
-        "total": 3
-      },
-      "errors": [
-        "detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details"
-      ],
-      "last_success": "2026-11-13T04:35:55+00:00",
+      "errors": [],
+      "last_success": "2026-11-13T05:36:00+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -100,17 +77,17 @@
       }
     },
     "samgov": {
-      "bulk_added": 30,
-      "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 86 matching (parsed earlier)",
-      "count": 92,
+      "bulk_added": 33,
+      "bulk_note": "bulk file downloaded 222 MB; 95 matching of 15571 open notices",
+      "count": 95,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-13T04:35:55+00:00",
+      "last_success": "2026-11-13T05:36:00+00:00",
       "logged_in": true,
-      "login_note": "API key; +30 from the nightly bulk file",
-      "matches": 92,
+      "login_note": "API key; +33 from the nightly bulk file",
+      "matches": 95,
       "reach_note": "HTTP 404",
       "reachable": true
     }
