@@ -1,27 +1,25 @@
 {
-  "checked_at": "2026-11-13T05:36:00+00:00",
+  "checked_at": "2026-11-13T06:36:33+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
-      "count": 636,
+      "blind": true,
+      "carried_forward": true,
+      "complete": false,
+      "count": 635,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [
-        "detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started"
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
       "last_success": "2026-11-13T05:36:00+00:00",
-      "logged_in": true,
-      "login_note": "session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started",
+      "logged_in": false,
+      "login_note": "COOL-DOWN after a robot check, until 2026-11-13T07:42:28+00:00",
       "matches": 82,
       "reach_note": "HTTP 200",
-      "reachable": true,
-      "site_totals": {
-        "statewide AGGREGATE": 189,
-        "statewide BUYER": 448
-      }
+      "reachable": true
     },
     "bonfire": {
       "count": 2,
@@ -32,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-13T05:36:00+00:00",
+      "last_success": "2026-11-13T06:36:33+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -44,7 +42,7 @@
       "count": 65,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-13T05:36:00+00:00",
+      "last_success": "2026-11-13T06:36:33+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -78,13 +76,13 @@
     },
     "samgov": {
       "bulk_added": 33,
-      "bulk_note": "bulk file downloaded 222 MB; 95 matching of 15571 open notices",
+      "bulk_note": "bulk file cached 2026-11-13T05:43:01+00:00; 95 matching (parsed earlier)",
       "count": 95,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-13T05:36:00+00:00",
+      "last_success": "2026-11-13T06:36:33+00:00",
       "logged_in": true,
       "login_note": "API key; +33 from the nightly bulk file",
       "matches": 95,
