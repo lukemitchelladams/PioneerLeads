@@ -9,6 +9,9 @@ What it collects every run
   5. Watchlist bids, logged in: the detail page's "Communication" and "Q & A" tabs (buyer notices such as
      "the walkthrough time has changed from 9 am to 10:30 am", posted 2026-11-05 on 0000440322 with no addendum;
      question deadline, answered questions). run.py diffs them against last run -> NEW COMMUNICATION / NEW Q&A.
+     Every tab click first takes down the modal BidNet may have opened over the page (dismiss_dialogs: the site-wide
+     "login message" lightbox from 2026-11-12 swallowed every click for 45 s), and the first tab of a scan that never
+     renders turns the scan's remaining tab reads off (session.tab_stall; the note reaches the report).
 
 Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
 once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
@@ -727,6 +730,97 @@ def _drop_closed(out: dict, totals: dict) -> dict:
 DOCS_TAB_SEL = "a[href*='innerTabId=docs-items']"
 ATTACH_SEL = "a[id^='attachmentDownloadLnk_']"
 
+# ---------------- dialogs that cover the detail page ----------------
+# 2026-11-12 ~14:40Z onward (dumps bidnet-docs-tab-2026-11-12T204119Z through bidnet-qa-tab-2026-11-13T044703Z): every
+# logged-in detail page opens BidNet's "login message" lightbox over itself: a jQuery-UI modal, div#loginMessageDiv >
+# div.ui-dialog.login-message-dialog[role=dialog] (z-index 1001; that week's text "Global Outage Affecting Outlook and
+# Microsoft 365 / Service Alert: A widespread Microsoft Outlook outage ...") over div.ui-widget-overlay (z-index 1000, the
+# whole viewport). The tab strip (ul#innerTabView) sits under the overlay, so Playwright's click on a tab anchor found the
+# overlay at the click point ("intercepts pointer events") and retried until the context's 45 s default timeout; the except
+# path dumped the page: 45 s a tab, ~90 s a bid, no tab ever read, no "Loading..." involved (#ajaxIndicator stayed hidden; the
+# tab XHR was never sent). The modal's own close is button#loginMsgCloseButton "Close" in form#loginMessageInterceptionForm
+# (an AJAX POST to /private/login-message; its titlebar X is hidden by mets-dialog-window-no-close). Its "Do not show again"
+# checkbox is left alone: that is the account's preference, not the scanner's. The same overlay carries #ajaxErrorDialog
+# (button#buttonAjaxErrorOk "Ok") when a tab's XHR fails (2026-11-11 00:44Z dump: "403 Forbidden"). Any such dialog is
+# dismissed before every tab click; one that will not close is removed from this browser's copy of the DOM.
+DIALOG_SEL = ".ui-dialog[role='dialog']"
+OVERLAY_SEL = ".ui-widget-overlay"
+DIALOG_CLOSE_SEL = ["#loginMsgCloseButton:visible", "#buttonAjaxErrorOk:visible",
+                    ".ui-dialog .dialog-button-bar button:visible", ".ui-dialog .button-bar button:visible",
+                    ".ui-dialog .ui-dialog-titlebar-close:visible"]
+DIALOG_CLOSE_MS = 3000  # for the page's own close to take the dialog down before it is removed from the DOM
+TAB_CLICK_MS = 5000  # a tab anchor still covered after the dialogs are gone gets a DOM click, not 45 s of retries
+_COVERING_JS = """() => {
+    const vis = e => { const s = getComputedStyle(e);
+        return s.display !== 'none' && s.visibility !== 'hidden' && (e.offsetWidth > 0 || e.offsetHeight > 0); };
+    return Array.from(document.querySelectorAll(".ui-dialog[role='dialog'], .ui-widget-overlay")).filter(vis)
+        .map(e => { const t = e.querySelector('.ui-dialog-title'); return ((t && t.textContent) || e.className || 'dialog').trim().slice(0, 80); });
+}"""
+_REMOVE_JS = """() => { let n = 0;
+    document.querySelectorAll(".ui-dialog[role='dialog'], .ui-widget-overlay").forEach(e => { e.remove(); n++; }); return n; }"""
+
+
+def dialogs_in(html: str) -> list[dict]:
+    """The jQuery-UI dialogs open in a saved page: [{title, text, content_id}] (a dialog styled display:none is closed).
+    The title falls back to the dialog's text (the ajax error dialog has a blank title and says "403 Forbidden")."""
+    soup = BeautifulSoup(html, "lxml")
+    out = []
+    for d in soup.select(DIALOG_SEL):
+        if re.search(r"display\s*:\s*none", d.get("style") or ""):
+            continue
+        for t in d.select("script, style, svg, title"):  # the ajax error dialog embeds the error page, <title> included
+            t.decompose()
+        body = d.select_one(".ui-dialog-content")
+        text = _txt(body.select_one(".mets-dialog-window-content") or body) if body is not None else ""
+        title = _txt(d.select_one(".ui-dialog-title")) or text[:60]
+        out.append({"title": title, "text": text[:300],
+                    "content_id": d.get("aria-describedby") or (body.get("id") if body is not None else "") or ""})
+    return out
+
+
+def dismiss_dialogs(page) -> list[str]:
+    """Take down every modal covering the page (names returned, "<title> (removed)" when the page's own close did not work).
+    Nothing here raises: a page that is navigating or has no dialogs returns []."""
+    closed: list[str] = []
+    try:
+        for _ in range(3):  # one dialog can sit on another (the ajax error over the login message)
+            names = [n for n in page.evaluate(_COVERING_JS) if n]
+            if not names:
+                break
+            title = next((n for n in names if "ui-widget-overlay" not in n), names[0])
+            clicked = False
+            for sel in DIALOG_CLOSE_SEL:
+                try:
+                    if page.locator(sel).count():
+                        page.locator(sel).first.click(timeout=DIALOG_CLOSE_MS)
+                        clicked = True
+                        break
+                except Exception:  # noqa: BLE001 - a close that cannot be clicked: try the next, then the DOM
+                    continue
+            deadline = time.time() + (DIALOG_CLOSE_MS / 1000 if clicked else 0)
+            while page.evaluate(_COVERING_JS) and time.time() < deadline:
+                page.wait_for_timeout(200)
+            if page.evaluate(_COVERING_JS):
+                page.evaluate(_REMOVE_JS)
+                title += " (removed)"
+            closed.append(title)
+    except Exception:  # noqa: BLE001
+        pass
+    return closed
+
+
+def _click_tab(page, tab_sel: str) -> list[str]:
+    """Click a detail-page tab after dismissing whatever covers it; returns the dialogs dismissed. An anchor Playwright
+    still cannot click (an overlay this code does not know, the cookie banner over a scrolled strip) gets the click
+    dispatched on the element itself: BidNet's tab handler listens on the anchor."""
+    closed = dismiss_dialogs(page)
+    loc = page.locator(tab_sel).first
+    try:
+        loc.click(timeout=TAB_CLICK_MS)
+    except Exception:  # noqa: BLE001
+        loc.dispatch_event("click")
+    return closed
+
 
 def parse_docs_tab(html: str, url: str = "") -> dict:
     """The logged-in 'Documents & Items' tab (verified 2026-10-20 on Littleton 0000438328): one
@@ -765,7 +859,53 @@ QA_ROW_SEL = "table.qnaTable tbody tr.mets-table-row"
 # what proves each tab rendered inside #innerTabContent; waited for after the click
 COMM_READY_SEL = "#innerTabContent .communications, #innerTabContent :text('No results match your criteria')"
 QA_READY_SEL = "#questionsAnswersSearchForm table.qnaTable"
-TAB_WAIT_MS = 12000
+TAB_WAIT_MS = 15000
+# Every tab fragment BidNet loads into #innerTabContent starts with <input id="currentTabId" value="<tab id>"> ("notice" on
+# the page as served, "docs-items" once the Documents tab arrived: dumps 2026-10-20 04:36Z and 2026-11-13 04:47Z). That input
+# proves a tab rendered even when it has nothing to show (a bid without files has no a#attachmentDownloadLnk_*), so a tab that
+# is still "notice" after TAB_WAIT_MS stalled: its XHR failed or never went. The first stall of a scan sets session.tab_stall
+# (a PortalSession lives one scan) and every later tab read of that scan is skipped, so a BidNet-side failure costs one wait,
+# not TAB_WAIT_MS per tab per bid out of the detail budget; run.py records the note in the source's errors like a detail cut.
+TAB_PROOF = {"docs-items": ATTACH_SEL, "communication": ".communications", "questions-answers": QA_FORM_SEL}
+NO_RESULTS_RX = re.compile(r"No results match your criteria", re.I)
+STALL_NOTE_PREFIX = "BidNet detail tabs stalled: "
+
+
+def tab_rendered(html: str, tab_id: str) -> bool:
+    """Whether the page holds tab `tab_id` ('docs-items', 'communication', 'questions-answers'): its currentTabId marker, its
+    own markup, or (Communication only) the empty tab's text when no other tab's empty-row text can be mistaken for it."""
+    soup = BeautifulSoup(html, "lxml")
+    if soup.select_one(f"#currentTabId[value='{tab_id}']") is not None:
+        return True
+    proof = TAB_PROOF.get(tab_id)
+    if proof and soup.select_one(proof) is not None:
+        return True
+    itc = soup.select_one("#innerTabContent")
+    return bool(tab_id == "communication" and itc is not None and soup.select_one(QA_FORM_SEL) is None
+                and NO_RESULTS_RX.search(_txt(itc)))
+
+
+def tab_stalled(session) -> bool:
+    """True once a tab read of this session's scan stalled: the remaining tab reads are skipped."""
+    return bool(getattr(session, "tab_stall", None))
+
+
+def _record_stall(session, bid: dict, tag: str, tab_id: str, html: str, closed: list[str]) -> None:
+    if tab_stalled(session):
+        return
+    shown = [d["title"] for d in dialogs_in(html)]
+    note = (f"{STALL_NOTE_PREFIX}the {tag} tab of {bid.get('id')} never rendered in {TAB_WAIT_MS // 1000} s"
+            + (f" (dialogs closed first: {', '.join(closed)})" if closed else "")
+            + (f" (page still shows: {', '.join(shown)})" if shown else "")
+            + "; the other bids' tabs are skipped this scan and their documents / notices / answers keep last scan's")
+    session.tab_stall = {"tab": tag, "tab_id": tab_id, "bid": bid.get("id"), "at": iso(), "dialogs_closed": closed,
+                         "dialogs_shown": shown, "note": note}
+    try:
+        session.debug_dump(f"{tab_id}-tab-stalled")  # one dump per scan, the page as it stalled
+    except Exception:  # noqa: BLE001
+        pass
+
+
 COMM_HDR_RX = re.compile(r"Communication No\.?\s*(\d+)\s*[-–—]\s*"
                          r"(\d{1,2}/\d{1,2}/\d{4}(?:\s+\d{1,2}:\d{2}\s*[AP]M(?:\s+[A-Z]{2,5})?)?)", re.I)
 # page chrome that follows the last entry of a tab in the flattened text: a communication's text stops there
@@ -846,22 +986,29 @@ def _qa_row(tr) -> dict:
             "answer_date": parse_date(_txt(tr.select_one("td.answerDate")))}
 
 
-def _read_tab(session, tab_sel: str, ready_sel: str, tag: str) -> str | None:
-    """Click a detail-page tab and return the page HTML once the tab rendered (None when the page has no such tab).
+def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str, tag: str) -> str | None:
+    """Click a detail-page tab and return the page HTML once the tab rendered. None when the page has no such tab, when
+    the tab stalled (recorded on the session; tried again next scan) or when an earlier tab of this scan stalled.
     A robot check served instead of the tab stops the detail pass like one on the page itself."""
     page = session.page
-    if not page.locator(tab_sel).count():
+    if tab_stalled(session) or not page.locator(tab_sel).count():
         return None
-    page.locator(tab_sel).first.click()
-    try:  # the tab arrives by XHR (~4-5 s); a tab that never renders is read as it is and tried again next scan
-        page.wait_for_selector(ready_sel, timeout=TAB_WAIT_MS)
+    closed = _click_tab(page, tab_sel)
+    ready = True
+    try:  # the tab arrives by XHR (~1-5 s): its own markup, or the fragment's currentTabId when it has nothing to list
+        # "attached", not the default "visible": that input is hidden and first in the fragment, and Playwright judges
+        # visibility on the first match only, so a Documents tab without files would otherwise wait out the whole timeout
+        page.wait_for_selector(f"{ready_sel}, #currentTabId[value='{tab_id}']", timeout=TAB_WAIT_MS, state="attached")
     except Exception:  # noqa: BLE001
-        pass
+        ready = False
     page.wait_for_timeout(800)
     html = _content(page)
     if BOT_RX.search(html) and not total_count(html):
         start_cooldown()
         raise Challenged(f"BidNet robot check on the {tag} tab: detail pass stopped, cool-down started")
+    if not ready and not tab_rendered(html, tab_id):
+        _record_stall(session, bid, tag, tab_id, html, closed)
+        return None
     return html
 
 
@@ -880,26 +1027,23 @@ def enrich(session, bid: dict) -> dict:
     d = parse_detail(html, bid["url"])
     if d.get("login_required_for_docs") and not session.logged_in and (d.get("prebid") or {}).get("source") != "bidnet events":
         d["prebid"] = None  # the description is locked, so any 'pre-bid' hit came from page chrome
-    if session.logged_in:
-        try:
-            if page.locator(DOCS_TAB_SEL).count():
-                page.locator(DOCS_TAB_SEL).first.click()
-                try:  # attachments arrive by XHR; a bid with no files never shows one, so time out quietly
-                    page.wait_for_selector(ATTACH_SEL, timeout=15000)
-                except Exception:  # noqa: BLE001
-                    pass
-                page.wait_for_timeout(800)
-                t = parse_docs_tab(_content(page), bid["url"])
+    if session.logged_in and not tab_stalled(session):
+        try:  # a bid with no files never shows an attachment link; the fragment's currentTabId still proves the tab came
+            t = _read_tab(session, bid, "docs-items", DOCS_TAB_SEL, ATTACH_SEL, "Documents")
+            if t is not None:
+                t = parse_docs_tab(t, bid["url"])
                 if t["documents"]:
                     d["documents"] = t["documents"]
                 if t["items_text"]:
                     d["items_text"] = t["items_text"]
+        except Challenged:
+            raise
         except Exception:  # noqa: BLE001 - keep the main-tab facts even if the docs tab misbehaves
             session.debug_dump("docs-tab")
-    if session.logged_in and bid.get("watched"):
+    if session.logged_in and bid.get("watched") and not tab_stalled(session):
         # only watched bids: two more tab loads per bid would double the detail pass for every match
         try:
-            t = _read_tab(session, COMM_TAB_SEL, COMM_READY_SEL, "Communication")
+            t = _read_tab(session, bid, "communication", COMM_TAB_SEL, COMM_READY_SEL, "Communication")
             if t is not None:
                 d["communications"] = parse_communications(t)  # [] is dropped below: nothing known, nothing erased
         except Challenged:
@@ -907,7 +1051,7 @@ def enrich(session, bid: dict) -> dict:
         except Exception:  # noqa: BLE001 - keep the main-tab facts even if the tab misbehaves
             session.debug_dump("communication-tab")
         try:
-            t = _read_tab(session, QA_TAB_SEL, QA_READY_SEL, "Q & A")
+            t = _read_tab(session, bid, "questions-answers", QA_TAB_SEL, QA_READY_SEL, "Q & A")
             q = parse_qa(t) if t is not None else None
             # None = the tab's form is not in the page (not rendered): a tab that did not load must not replace last
             # scan's answers with nothing, or they come back as NEW next time

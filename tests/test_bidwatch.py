@@ -193,6 +193,51 @@ check("real Q & A tab (District Wide Custodial 0000437813, trimmed to 10 of its 
       and _qa266["items"][0]["no"] == "Q1" and _qa266["items"][-1]["no"] == "Q266" and _qa266["questions_deadline"] == "2026-10-21", _qa266)
 check("Q & A: a page without the tab's form (the Details tab also prints 'Question Acceptance Deadline') is None, not an empty result",
       bidnet.parse_qa((FX / "bidnet_detail_littleton_2126.html").read_text() + "<p>Question Acceptance Deadline 11/17/2026 12:00 AM MST</p>") is None)
+# 2026-11-12 ~14:40Z to at least 11-13 04:47Z: every logged-in detail page opened BidNet's "login message" lightbox (a jQuery-UI
+# modal over a full-viewport overlay) and the overlay swallowed every tab click for the context's 45 s timeout: ~90 s a bid, no
+# tab ever read (dumps bidnet-docs-tab-2026-11-12T204119Z .. bidnet-qa-tab-2026-11-13T044703Z). The fixtures are those pages.
+from bs4 import BeautifulSoup as _BS  # noqa: E402
+_dlg_html = (FX / "bidnet_detail_login_message_dialog.html").read_text()
+_dlgs = bidnet.dialogs_in(_dlg_html)
+check("real page 2026-11-13: the open lightbox is named by its title, with its 'Service Alert' text; the hidden ajax error dialog is not",
+      [d["title"] for d in _dlgs] == ["Global Outage Affecting Outlook and Microsoft 365"] and _dlgs[0]["text"].startswith("Service Alert:")
+      and _dlgs[0]["content_id"] == "loginMessageInterceptionLightbox", _dlgs)
+_dsoup = _BS(_dlg_html, "lxml")
+check("real page 2026-11-13: the tab strip did not change (Documents / Q & A anchors match the selectors); the lightbox's own Close "
+      "button and overlay are what dismiss_dialogs targets; 'Do not show again' is a separate checkbox it never touches",
+      len(_dsoup.select(bidnet.DOCS_TAB_SEL)) == 1 and len(_dsoup.select(bidnet.QA_TAB_SEL)) == 1 and _dsoup.select_one("#loginMsgCloseButton") is not None
+      and len(_dsoup.select(bidnet.DIALOG_SEL)) == 1 and len(_dsoup.select(bidnet.OVERLAY_SEL)) == 1 and bidnet.DIALOG_CLOSE_SEL[0].startswith("#loginMsgCloseButton")
+      and _dsoup.select_one("#doNotShowAgainChk") is not None and not _dsoup.select_one("#doNotShowAgainChk").has_attr("checked"))
+_dpd = bidnet.parse_detail(_dlg_html)
+check("real page 2026-11-13: #currentTabId is still 'notice', so no tab rendered (Documents, Q & A: not a stall of the parser) while "
+      "the Notice tab's facts still parse (solicitation number, agency)",
+      not bidnet.tab_rendered(_dlg_html, "docs-items") and not bidnet.tab_rendered(_dlg_html, "questions-answers")
+      and bidnet.parse_docs_tab(_dlg_html)["documents"] == [] and _dpd["sol"] == "26-64" and _dpd["agency"] == "Arapahoe County", _dpd)
+_docs_html = (FX / "bidnet_docs_tab_0000438328.html").read_text()
+_dtab = bidnet.parse_docs_tab(_docs_html)
+check("real Documents & Items tab (Littleton 0000438328, 2026-10-20): rendered by its currentTabId, 4 files in page order, the pricing items",
+      bidnet.tab_rendered(_docs_html, "docs-items") and [d["name"] for d in _dtab["documents"]]
+      == ["On-Call Plumbing RFQ.pdf", "Attachment A - Contract Certification Form.pdf", "Attachment B - Sample Contract.pdf",
+          "Attachment C - RMEPS Bid Question Response Guide.pdf"] and all(d["url"].endswith("/attachment-download") for d in _dtab["documents"])
+      and (_dtab["items_text"] or "").startswith("Items No Description") and "Hourly Rate" in _dtab["items_text"], _dtab)
+check("a Documents tab with no files still counts as rendered (currentTabId = docs-items); a page left on the Notice tab does not",
+      bidnet.tab_rendered("<div id='innerTabContent'><input id='currentTabId' type='hidden' value='docs-items'><p>No Files</p></div>", "docs-items")
+      and not bidnet.tab_rendered("<div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>", "docs-items"))
+check("Communication / Q & A: the tab's own markup proves it; the empty Communication text counts only when the Q & A form's own "
+      "'No results' row cannot be mistaken for it",
+      bidnet.tab_rendered("<div id='innerTabContent'><p>No results match your criteria.</p></div>", "communication")
+      and bidnet.tab_rendered("<div id='innerTabContent'><div class='communications'></div></div>", "communication")
+      and not bidnet.tab_rendered("<div id='innerTabContent'><form id='questionsAnswersSearchForm'><table><tr class='mets-table-row-empty'>"
+                                  "<td>No results match your criteria.</td></tr></table></form></div>", "communication")
+      and bidnet.tab_rendered("<div id='innerTabContent'><form id='questionsAnswersSearchForm'></form></div>", "questions-answers"))
+_err_html = (FX / "bidnet_detail_ajax_error_dialog.html").read_text()
+_errd = bidnet.dialogs_in(_err_html)
+check("real page 2026-11-11: a failed tab XHR leaves #ajaxErrorDialog open (blank title: named by its text '403 Forbidden'), no tab rendered",
+      [d["title"] for d in _errd] == ["403 Forbidden"] and _errd[0]["content_id"] == "ajaxErrorDialog"
+      and not bidnet.tab_rendered(_err_html, "communication"), _errd)
+check("a dialog jQuery-UI closed (display: none) is not open; a page without dialogs has none",
+      bidnet.dialogs_in("<div class='ui-dialog' role='dialog' style='display: none;'><span class='ui-dialog-title'>Gone</span></div>") == []
+      and bidnet.dialogs_in(_docs_html) == [])
 _li = ("<table><tr class='mets-table-row'><td><a class='solicitation-link mets-command-link' id='444202844454' "
        "href='/private/supplier/interception/open-notice/444202844454?target=view'>Housing Action Plan</a>"
        "<span class='sol-region-item'>Colorado</span><span class='sol-closing-date'><span class='date-value'>11/10/2026</span></span>"
@@ -403,6 +448,7 @@ LOGIN_POSTS = {"n": 0}  # every POST to the login endpoint, accepted or not (= a
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
 HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0}
+DIALOG_HITS = {"close": 0, "do_not_show": 0}  # POSTs to /private/login-message (the lightbox's Close), and how many ticked the box
 ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
 # the Communication tab text as BidNet rendered it on 0000440322 (2026-11-05 15:48 MST): the notice that was missed
 COMM_TEXT = ("Please note that the walkthrough time has changed from 9 am to 10:30 am. If you have any questions please "
@@ -487,11 +533,40 @@ class H(http.server.BaseHTTPRequestHandler):
                     "<li><a href='?innerTabId=questions-answers'>Q &amp; A</a></li></ul>"
                     "<select hidden><option data-ajax-url='/public/solicitations/9745843859/abstract/communication'>Communication</option></select>")
             pane = ""
+            dialog = ""
+            if os.environ.get("FAKE_DIALOG"):
+                # BidNet's "login message" lightbox (2026-11-12, tests/fixtures/bidnet_detail_login_message_dialog.html): a jQuery-UI
+                # modal over a full-viewport overlay, on every page; its Close POSTs the form by AJAX (here a synchronous XHR) and
+                # takes the dialog down. "stuck" = a Close that does nothing, like a dialog whose script failed.
+                close = ("" if os.environ["FAKE_DIALOG"] == "stuck" else
+                         "var x=new XMLHttpRequest();x.open('POST','/private/login-message',false);"
+                         "x.setRequestHeader('Content-Type','application/x-www-form-urlencoded');"
+                         "x.send(new URLSearchParams(new FormData(this.form)).toString());"
+                         "document.querySelector('.ui-widget-overlay').remove();this.closest('.ui-dialog').style.display='none';return false;")
+                dialog = ("<div id='loginMessageDiv' class='login-message-container'>"
+                          "<div class='ui-dialog ui-widget ui-front mets-dialog-window mets-dialog-window-no-close login-message-dialog' "
+                          "role='dialog' style='position:fixed;top:300px;left:400px;z-index:1001;background:#fff;padding:16px;width:500px'>"
+                          "<div class='ui-dialog-titlebar'><span class='ui-dialog-title'>Global Outage Affecting Outlook and Microsoft 365</span>"
+                          "<button type='button' class='ui-dialog-titlebar-close' style='display:none'>Close</button></div>"
+                          "<div id='loginMessageInterceptionLightbox' class='ui-dialog-content'><div class='mets-dialog-window-content'>"
+                          "<strong>Service Alert:</strong> A widespread Microsoft Outlook outage is currently causing email delays.</div>"
+                          "<div class='dialog-button-bar'><form id='loginMessageInterceptionForm' action='/private/login-message' method='post'>"
+                          "<input type='hidden' name='messageId' value='10097123351'><label><input type='checkbox' id='doNotShowAgainChk' "
+                          "name='doNotShowAgain' value='true'> Do not show again</label>"
+                          f"<button id='loginMsgCloseButton' type='button' onclick=\"{close}\">Close</button></form></div></div></div>"
+                          "<div class='ui-widget-overlay ui-front' style='position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;"
+                          "background:rgba(0,0,0,.3)'></div></div>")
             if "innerTabId=" in p:
                 if os.environ.get("FAKE_ROBOT_TAB"):
                     return self._send(ROBOT)
                 if os.environ.get("FAKE_TAB_DOWN"):
                     return self._send("<h1>Service unavailable</h1>", 503)
+                if os.environ.get("FAKE_TAB_STALL"):
+                    # the tab's XHR failed or never went: the page stays on the Notice tab (#currentTabId = notice), as in the
+                    # 2026-11-12/13 dumps, with BidNet's hidden ajax indicator. The click still counts as a tab request.
+                    HITS2["comm" if "innerTabId=communication" in p else "qa"] += 1
+                    return self._send(f"<h1>Bid</h1><div id='ajaxIndicator' class='mets-ajax-indicator' style='display: none;'>Loading...</div>"
+                                      f"{dialog}{tabs}<div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>")
             # the tab panes mirror the live markup (tests/fixtures/bidnet_communication_0000440322.html, bidnet_qa_*.html)
             if "innerTabId=communication" in p:
                 HITS2["comm"] += 1
@@ -521,7 +596,7 @@ class H(http.server.BaseHTTPRequestHandler):
                         "<th class='questionAnswer'>Question/Answer</th><th>Question Date</th><th>Answer Date</th></tr></thead><tbody>"
                         f"{rows}<tr class='mets-table-row-empty'><td colspan='4'>No results match your criteria.</td></tr></tbody></table>"
                         "</form></div>")
-            return self._send(f"<h1>Bid</h1><div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>"
+            return self._send(f"<h1>Bid</h1>{dialog}<div>Closing Date {_ahead(21)}</div><p>MANDATORY pre-bid site walk on {_ahead(3)} at 9 AM.</p>"
                               f"{docs}{tabs}{pane}<footer><p>Print Options</p><p>Terms of Use</p></footer>")
         if p.startswith("/dl/missing"):
             return self._send("not found", 404)
@@ -536,6 +611,10 @@ class H(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
         n = int(self.headers.get("Content-Length", 0))
         f = parse_qs(self.rfile.read(n).decode())
+        if self.path.startswith("/private/login-message"):  # the lightbox's Close: BidNet records the message as seen
+            DIALOG_HITS["close"] += 1
+            DIALOG_HITS["do_not_show"] += int("doNotShowAgain" in f)
+            return self._send("")
         if self.path.startswith("/public/authentication/login"):
             LOGIN_POSTS["n"] += 1
         if f.get("j_username") == [USER] and f.get("j_password") == [PW]:
@@ -986,6 +1065,35 @@ run._enrich_and_download(_ses, _types.SimpleNamespace(enrich=lambda ses, b: 1 / 
 check("logged out (e.g. a mid-scan re-login deferred): an unwatched match is not opened but keeps its earlier detail",
       _found["bidnet:8"].get("prebid") == _old8["prebid"] and _found["bidnet:8"].get("documents") == _old8["documents"],
       _found["bidnet:8"])
+# (b2) a stalled detail tab: bidnet.enrich sets session.tab_stall on the first one (and skips the rest of the scan's tab reads);
+# _enrich_and_download records it once on the source's health, with its note in errors, the way a detail cut is recorded
+_stall_rec = {"tab": "Documents", "tab_id": "docs-items", "bid": "1", "at": "2026-11-13T05:00:00+00:00", "dialogs_closed": [],
+              "dialogs_shown": ["Global Outage Affecting Outlook and Microsoft 365"],
+              "note": "BidNet detail tabs stalled: the Documents tab of 1 never rendered in 15 s (page still shows: Global Outage Affecting "
+                      "Outlook and Microsoft 365); the other bids' tabs are skipped this scan and their documents / notices / answers keep last scan's"}
+
+
+def _stalling_enrich(ses, b):
+    if not getattr(ses, "tab_stall", None):
+        ses.tab_stall = dict(_stall_rec)
+    return {**b, "detail_checked": True}
+
+
+_ses_st = _types.SimpleNamespace(logged_in=True)
+_found = {f"bidnet:{i}": {"source": "bidnet", "id": str(i), "title": "HVAC Maintenance Services", "url": "u"} for i in (1, 2, 3)}
+_hst = {"errors": []}
+run._enrich_and_download(_ses_st, _types.SimpleNamespace(enrich=_stalling_enrich), _found, "bidnet", profiles, run._WatchSet([]), {}, True, {}, _hst)
+check("a stalled tab: h['tab_stall'] is the session's record and its note is in errors exactly once for three bids",
+      _hst.get("tab_stall") == _stall_rec and _hst["errors"] == [_stall_rec["note"]], _hst)
+_hst_health = {"bidnet": {"reachable": True, "creds": {}, "logged_in": True, "login_note": "session reused", "count": 5, "matches": 3,
+                          "errors": list(_hst["errors"]), "tab_stall": _hst["tab_stall"]}}
+check("a stalled tab degrades the run (exit 3), like a detail cut; without the record the same health is clean",
+      run.run_status(_hst_health) == {"ok": True, "skipped": [], "degraded": ["bidnet"], "exit_code": 3}
+      and run.run_status({"bidnet": {**_hst_health["bidnet"], "tab_stall": None}})["exit_code"] == 0)
+_hst2 = {"errors": []}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _types.SimpleNamespace(enrich=lambda ses, b: {**b, "detail_checked": True}),
+                         dict(_found), "bidnet", profiles, run._WatchSet([]), {}, True, {}, _hst2)
+check("no stall: no record, no note", "tab_stall" not in _hst2 and _hst2["errors"] == [], _hst2)
 
 # (c) the detail pass's wall-clock budget, end to end (BIDWATCH_DETAIL_BUDGET_S; 2026-11-12 20:39Z BidNet's tabs hung on
 # "Loading..." and `timeout 1500` killed the run before REPORT.md): a clock already past a 1 s budget when the first detail
@@ -1111,6 +1219,84 @@ _e = bidnet.enrich(s13, {**_bid, "watched": True})
 check("a tab that fails to load costs nothing from the main page and stores no tab fields",
       _e.get("prebid") and _e.get("documents") and "communications" not in _e and "qa" not in _e, _e)
 del os.environ["FAKE_TAB_DOWN"]
+s13.tab_stall = None  # the 503 tab above counts as a stall (nothing rendered); the checks below start clean
+# 2026-11-12 ~14:40Z: BidNet's site-wide "login message" lightbox opened on every detail page and its overlay swallowed every tab
+# click until the context's 45 s timeout (~90 s a bid, tabs never read). The fake page carries the same markup, and the overlay
+# really covers the tab strip, so a plain click would still hang here.
+os.environ["FAKE_DIALOG"] = "1"
+s13.page.goto(_bid["url"], wait_until="domcontentloaded")
+_box = s13.page.locator(bidnet.COMM_TAB_SEL).first.bounding_box()
+_pt = [_box["x"] + _box["width"] / 2, _box["y"] + _box["height"] / 2]
+_hit = s13.page.evaluate("([x, y]) => document.elementFromPoint(x, y).className", _pt)
+_closed = bidnet.dismiss_dialogs(s13.page)
+_hit2 = s13.page.evaluate("([x, y]) => document.elementFromPoint(x, y).tagName", _pt)
+check("the lightbox's overlay covers the Communication tab; dismiss_dialogs names it, clicks its own Close (one POST, 'Do not show "
+      "again' untouched) and the anchor is what the click point hits afterwards",
+      "ui-widget-overlay" in _hit and _closed == ["Global Outage Affecting Outlook and Microsoft 365"] and _hit2 == "A"
+      and DIALOG_HITS == {"close": 1, "do_not_show": 0}, (_hit, _closed, _hit2, DIALOG_HITS))
+check("nothing left to dismiss: no click, no POST", bidnet.dismiss_dialogs(s13.page) == [] and DIALOG_HITS["close"] == 1, DIALOG_HITS)
+_c0, _q0, _n0 = HITS2["comm"], HITS2["qa"], DIALOG_HITS["close"]
+_t0 = time.time()
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+_dt = time.time() - _t0
+check("the lightbox on every page: both tabs read in seconds (a click took 45 s before), the notice and the answer picked up, one "
+      "Close per page before each tab click",
+      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and _e.get("communications") and (_e.get("qa") or {}).get("items") and _dt < 20
+      and DIALOG_HITS["close"] == _n0 + 2 and DIALOG_HITS["do_not_show"] == 0, (_dt, DIALOG_HITS, _e.get("communications"), _e.get("qa")))
+_dd, _cm = bidnet.dismiss_dialogs, bidnet.TAB_CLICK_MS
+bidnet.dismiss_dialogs, bidnet.TAB_CLICK_MS = (lambda page: []), 1000
+_c0, _q0 = HITS2["comm"], HITS2["qa"]
+_t0 = time.time()
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+_dt = time.time() - _t0
+bidnet.dismiss_dialogs, bidnet.TAB_CLICK_MS = _dd, _cm
+check("an overlay this code does not know (dismiss_dialogs finds nothing): the covered anchor gets a DOM click after TAB_CLICK_MS, "
+      "not 45 s of retries, and both tabs are still read",
+      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and _e.get("communications") and (_e.get("qa") or {}).get("items") and _dt < 20,
+      (_dt, _e.get("communications"), _e.get("qa")))
+os.environ["FAKE_DIALOG"] = "stuck"
+s13.page.goto(_bid["url"], wait_until="domcontentloaded")
+_t0 = time.time()
+_closed = bidnet.dismiss_dialogs(s13.page)
+_dt = time.time() - _t0
+check("a dialog whose Close does nothing is removed from this browser's DOM after DIALOG_CLOSE_MS and reported as removed",
+      _closed == ["Global Outage Affecting Outlook and Microsoft 365 (removed)"] and 2.5 < _dt < 10
+      and s13.page.evaluate("document.querySelectorAll('.ui-dialog, .ui-widget-overlay').length") == 0, (_closed, _dt))
+_c0, _q0, _n0 = HITS2["comm"], HITS2["qa"], DIALOG_HITS["close"]
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+check("with the stuck dialog on every page the tabs are read all the same, and no Close POST is counted",
+      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and _e.get("communications") and (_e.get("qa") or {}).get("items")
+      and DIALOG_HITS["close"] == _n0, (_e.get("communications"), _e.get("qa"), DIALOG_HITS))
+del os.environ["FAKE_DIALOG"]
+# a tab whose XHR fails leaves the page on the Notice tab (#currentTabId = notice, the 2026-11-11 00:44Z "403 Forbidden" dump):
+# the first such stall of a scan turns the scan's remaining tab reads off, so BidNet being down costs one wait, not one per tab per bid
+os.environ["FAKE_TAB_STALL"] = "1"
+_wait = bidnet.TAB_WAIT_MS
+bidnet.TAB_WAIT_MS = 1500
+_c0, _q0 = HITS2["comm"], HITS2["qa"]
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+_st = getattr(s13, "tab_stall", None)
+check("stalled Communication tab: nothing stored, the same bid's Q & A tab is not clicked, the stall is on the session with its note",
+      "communications" not in _e and "qa" not in _e and _e.get("prebid") and HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 and _st
+      and _st["tab"] == "Communication" and _st["bid"] == "0000500002"
+      and _st["note"].startswith("BidNet detail tabs stalled: the Communication tab of 0000500002 never rendered in 1 s; the other bids' tabs are skipped"),
+      (_e, _st, HITS2))
+check("one debug dump of the page as it stalled", any(p.name.startswith("bidnet-communication-tab-stalled-") for p in (TMP / "debug").glob("*.html")),
+      sorted(p.name for p in (TMP / "debug").glob("*.html"))[-5:])
+_c0, _q0, _d0 = HITS2["comm"], HITS2["qa"], HITS2["detail"]
+_e = bidnet.enrich(s13, {**_bid, "watched": True})
+check("the next bid of the same scan: main page read, no tab clicked at all",
+      HITS2["detail"] == _d0 + 1 and HITS2["comm"] == _c0 and HITS2["qa"] == _q0 and _e.get("prebid") and _e.get("documents")
+      and "communications" not in _e and "qa" not in _e, (_e, HITS2))
+del os.environ["FAKE_TAB_STALL"]
+s14 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s14.ensure_login()
+_c0 = HITS2["comm"]
+_e = bidnet.enrich(s14, {**_bid, "watched": True})
+check("a new session (the next scan) starts without the stall and reads the tabs again",
+      s14.logged_in and not getattr(s14, "tab_stall", None) and HITS2["comm"] == _c0 + 1 and _e.get("communications"), (s14.login_note, _e))
+s14.close()
+bidnet.TAB_WAIT_MS = _wait
 s13.close()
 b4.close()
 # the full scan: the lines reach the report once, stay stored, survive a blind scan and a broken tab
@@ -1155,6 +1341,26 @@ check("robot check on a tab: the health note names the tab, not the login form (
       "Communication tab" in (r20["health"]["bidnet"].get("login_note") or ""), r20["health"]["bidnet"].get("login_note"))
 del os.environ["FAKE_ROBOT_TAB"]
 common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+os.environ["FAKE_TAB_STALL"] = "1"
+_wait = bidnet.TAB_WAIT_MS
+bidnet.TAB_WAIT_MS = 1500
+r21 = run.scan(["bidnet"])
+bidnet.TAB_WAIT_MS = _wait
+del os.environ["FAKE_TAB_STALL"]
+_cf = r21["found"].get(_W, {})
+_h21 = r21["health"]["bidnet"]
+_stall_note = ("BidNet detail tabs stalled: the Communication tab of 0000500002 never rendered in 1 s; the other bids' tabs are skipped this "
+               "scan and their documents / notices / answers keep last scan's")
+check("full scan, tabs stalled: the note once in the source's errors, health.tab_stall names the tab and bid, stored notices and "
+      "answers kept, nothing reported as new, the run degraded (exit 3) like a detail cut",
+      _h21["errors"].count(_stall_note) == 1 and (_h21.get("tab_stall") or {}).get("bid") == "0000500002" and _h21["tab_stall"]["tab"] == "Communication"
+      and len(_cf.get("communications") or []) == 2 and (_cf.get("qa") or {}).get("items") and _W not in r21["changed"]
+      and run.run_status(r21["health"]) == {"ok": True, "skipped": [], "degraded": ["bidnet"], "exit_code": 3},
+      (_h21["errors"], _h21.get("tab_stall"), _cf.get("communications"), r21["changed"]))
+_rep21 = run.render(r21).splitlines()
+check("REPORT.md: the headline says which tab stalled and that later tab reads were skipped; the note is in the Errors section",
+      any(ln.startswith("**Headline:**") and "detail tabs stalled: bidnet (Communication tab of 0000500002); later tab reads skipped" in ln
+          for ln in _rep21) and f"- bidnet: {_stall_note}" in _rep21, [ln for ln in _rep21 if "stall" in ln])
 for _k in ("FAKE_COMM", "FAKE_QA"):
     del os.environ[_k]
 

@@ -683,6 +683,12 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                     if missing:
                         h["errors"].append(f"{b.get('title', '')[:60]}: {len(missing)} of {len(docs)} documents not "
                                            "downloaded yet (tried again next scan)")
+        # a detail tab that never rendered (bidnet.py sets session.tab_stall on the first one and skips the rest of the
+        # scan's tab reads): recorded once, like a detail cut, so the report says which bids carry last scan's documents
+        stall = getattr(ses, "tab_stall", None)
+        if stall and not h.get("tab_stall"):
+            h["tab_stall"] = stall
+            h["errors"].append(stall.get("note") or f"detail tabs stalled on {stall.get('bid')}: later tab reads skipped")
     finally:
         budget.leave()
     if blocked:
@@ -781,7 +787,7 @@ def run_status(health: dict) -> dict:
     skipped = [s for s, v in health.items() if v.get("login_deferred")]
     degraded = [s for s, v in health.items() if not v.get("not_scanned_this_run") and s not in skipped
                 and (v.get("carried_forward") or not v.get("reachable") or (not v.get("count") and s != "dibbs")
-                     or v.get("detail_cut"))]
+                     or v.get("detail_cut") or v.get("tab_stall"))]
     return {"ok": ok, "skipped": skipped, "degraded": degraded, "exit_code": (0 if not degraded else 3) if ok else 2}
 
 
@@ -904,6 +910,10 @@ def render(r: dict) -> str:
     if cuts:  # the detail pass ran out of wall clock: the rows are fresh, part of their detail is last scan's
         head.append("detail pass cut by the time budget: " + ", ".join(
             f"{s} {c.get('done', 0)}/{c.get('total', 0)} enriched" for s, c in cuts) + ", the rest keep last scan's details")
+    stalls = [(s, v["tab_stall"]) for s, v in h.items() if not v.get("not_scanned_this_run") and v.get("tab_stall")]
+    if stalls:  # a detail tab never rendered: the later bids' tab reads were skipped, their documents are last scan's
+        head.append("detail tabs stalled: " + ", ".join(f"{s} ({t.get('tab')} tab of {t.get('bid')})" for s, t in stalls)
+                    + "; later tab reads skipped, those bids' documents / notices / answers keep last scan's")
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
 
     lines.append("## Source health\n")
