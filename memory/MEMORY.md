@@ -2015,3 +2015,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 11:45Z hourly (04:35 MT) scan, HQ
 - Logged in attempt 1 (09:38Z session); full pass in 6 min. Push f86592d, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 10:36-11:36Z: nothing. No email. Friday batch (8 sends) at 15:30Z.
+
+### 2026-11-13 12:21Z hourly (worker)
+- HQ 11:36Z scan: bidnet 639/83 logged in, samgov 95, coloradovss 65/3, bonfire 2/1; 0 new. Inbox quiet. Friday batch (8 sends) at 15:30Z.
+- **PSD IFB 27-701-002: Attachment F Sample Agreement is missing** (listed on IFB p.2; 8.9 agreement "in the form of Attachment F"; 8.10 agreement controls). Not in the 9 BidNet files; not found on psdschools.org. Worker wrote question #9 in bids/poudre-sd-kitchen-hood/vendor-questions.md for Luke to post with #7 and #8 before 14:00 MT today; HQ messaged to add it to Luke's copy.

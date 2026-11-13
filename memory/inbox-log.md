@@ -500,3 +500,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 2 messages failed DMARC, re-signed by husmannplumbing.co (arc=pass, delivered). That is Husmann's Google Workspace relaying our 11/12 CPW ask internally, so the ask reached them.
   - Conclusion: sub silence is not a deliverability problem.
 - No sub replies, no bounces, nothing from Luke, no CRM brief.
+
+## 2026-11-13 12:21Z hourly (worker, read-only)
+- Nothing new inbound (DMARC report already logged). No sub replies, no bounces, nothing from Luke, no CRM brief.

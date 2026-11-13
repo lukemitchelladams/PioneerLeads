@@ -13,3 +13,14 @@ lists one hood there. Whether such hoods are priced changes the per-site figure.
 
 Question text (ready to paste):
 Addendum 1.0 List of Kitchen Hoods shows one hood at Traut Elementary. At the site visit a second, 3 x 3 dishwasher hood with no inspection tag was observed in the same kitchen. Please confirm whether dishwasher (type 2) hoods that are not shown on the List of Kitchen Hoods are within the scope to be inspected, tagged and priced, or whether the List of Kitchen Hoods is the complete inventory for pricing.
+
+## 9. Attachment F Sample Agreement not posted (worker, 2026-11-13 12:4xZ; POST ON BIDNET by Fri 2026-11-13 14:00 MT with #7 and #8, as its own entry)
+Why: the IFB lists "ATTACHMENT F – SAMPLE AGREEMENT" in its contents (p.2) and 8.9 says the vendor "will be required to enter
+into a one-year agreement with the District, substantially in the form of Attachment F, Sample Agreement"; 8.10 says "The
+agreement language will control over any language contained within the IFB". The BidNet package (0000439455) holds 9 files
+(IFB, Attachments A-E, three Addendum 1.0 files) and no Attachment F, so its terms cannot be reviewed before we bid or
+propose modifications under 8.7. CLAUDE.md rule 0c: the package must be complete.
+
+Question text (ready to paste):
+The IFB lists Attachment F, Sample Agreement, on page 2, and section 8.9 says the Vendor will enter into an agreement in the form of Attachment F. Attachment F is not among the documents posted on BidNet. Please post Attachment F, Sample Agreement, so vendors can review its terms before the bid due date.
+(Lint: humanize_gate shows no style warnings; its only FAIL is the email closer, which a BidNet question does not use.)
