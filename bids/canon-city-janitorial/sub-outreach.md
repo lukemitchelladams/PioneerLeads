@@ -57,3 +57,20 @@ Thanks Team,
 ## Log
 - 2026-11-06 14:55Z: candidate list built (Colorado Springs firms from bids/cos-oncall-janitorial outreach; Pueblo / Canon City
   locals from web search, phone-only); draft linted; nothing sent, waiting on Luke's GO.
+
+## 2026-11-13 worker sweep: Fremont County / Pueblo janitorial (nothing sent)
+Workflow webgbvi60 (finder + independent verifier). Addresses seen verbatim in search results or company pages (WebFetch blocked,
+so not live-confirmed); no phone numbers. **Four further Pueblo candidates have personal-name addresses (JD's Janitorial Service,
+Pueblo Cleaning & Disinfecting, A Cleaner Office, EZE Cleaning Service); those addresses went to HQ by session message, not into
+this public file.** Night work 7 PM-6 AM, five nights a week at the Court; the PSA IV.D no-subcontractor clause is still the gate.
+
+| Tier | Company | Base | Email | Why / caveat |
+|---|---|---|---|---|
+| A | Pike's Cleaning LLC | Canon City (306 Main St) | pikescleaning4u@gmail.com | Local commercial cleaner; the main Southern Colorado address on its contact page (a variant pikescleaningllc4u@gmail.com is on its services page). |
+| A | JD's Janitorial Service LLC | Pueblo (225 Broadway Ave) | personal-name address (sent to HQ) | Established commercial janitorial; runs jdsjanitorialservice.com. ~40 mi. |
+| B | Cornerstone Cleaning Janitorial Services | Pueblo West (BBB also lists Florence) | Corner_Stonejs@outlook.com | Janitorial + home cleaning, BBB A+. |
+| B | Pueblo Cleaning & Disinfecting LLC | Pueblo | personal-name address (sent to HQ) | Commercial janitorial, office cleaning, southern Colorado. |
+| B | A Cleaner Office LLC | Pueblo | personal-name address (sent to HQ) | Office-cleaning specialist; stated area Pueblo/Pueblo West/COS, so ask about Canon City. |
+| B | EZE Cleaning Service, LLC | Pueblo | personal-name address (sent to HQ) | Commercial/janitorial first; small, family-run. |
+| C | Alfonso's Janitorial | Pueblo | alfonsosjanitorial@comcast.net | Third-party listing only; may be stale. |
+| C | All American Maid LLC | Canon City | allamericanmaid16@yahoo.com | Mostly residential, weekday hours: weak fit for nights. |
