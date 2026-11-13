@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T08:36:15Z",
+ "updated": "2026-11-13T10:48:30Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1783,7 +1783,7 @@
    "sub_pricing": "None; Husmann + Surefire asked 11/12 (1a1d21a9b4b05592), answer by Mon 11/16 12:00",
    "folder": "bids/cpw-alamosa-heater-replacement-dq1-2027000176",
    "contact": "Klay Tolleson, klay.tolleson@state.co.us (DNR Purchasing; sole point of contact)",
-   "next": "Mon 11/16 12:00: a sub confirms attendance -> HQ registers with Klay Tolleson by Tue 11/17 17:00; sub attends 11/18 10:00 for Brown Bison; else NO-BID."
+   "next": "Mon 11/16 12:00: a sub confirms attendance -> HQ registers with Klay Tolleson by Tue 11/17 17:00; sub attends 11/18 10:00 for Brown Bison; else NO-BID. Fri 11/13 08:30 MT: Exhibit A (Scope of Work: electric heaters >= 35,000 BTU + electrical upgrades) to Husmann + Surefire; Flow Right (mechanical + electrical) asked with DQ + Exhibit A. Walk clash: BVCC and CPW pre-bids are both Wed 11/18 10:00, so each needs its own sub attendee."
   },
   {
    "id": "arapahoe-rfb-26-64-courthouse1-drywall-paint",
@@ -1802,7 +1802,8 @@
    "subs": "Ceres Construction (ask Fri), Wild Fox Painting (asked)",
    "sub_pricing": "None",
    "folder": "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64",
-   "contact": "Sophia Morlan, SMorlan@arapahoegov.com (administrative questions)"
+   "contact": "Sophia Morlan, SMorlan@arapahoegov.com (administrative questions)",
+   "next": "Fri 11/13: Ceres asked to attend 11/23 10:00 and price; Wild Fox asked 11/12. LUKE (portal post) by Mon 11/16 17:00: BidNet question Q1 (may a subcontractor's employee attend the mandatory meeting and sign in for Brown Bison; which insurance limits apply, since p.8 wants a COI with the bid and no limits are posted). Questions close Mon 11/23 16:00; NO-BID Fri 11/20 17:00 if no sub confirms attendance."
   },
   {
    "id": "bidnet-0000443426-trails-rec-landscape",
