@@ -1889,3 +1889,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox: BidNet addendum on Denver DHS access control 0000437039 (our NO; no action). No sub replies.
 - No-idle work: worker launched a sweep (workflow wz31rgjru) for a third BVCC water-treatment tier (national firms with CO reps + Arkansas Valley/Pueblo/COS) and Fremont/Pueblo/COS HVAC backups for Canon City 129-26 (the four Front Range asks have been silent since 11/09).
 - Dashboard: bids v291 (84656a8486ce4137d3d784e8624aa507), events v293 (654fac971db8854fdb590e3924cd69a8), portal_feed v151 (313e95ecd3b7f2bf47917ec6e32f56b9), sources v248 (c68ef9b4f0bc2e8c53bbd471c9ec20b9), doc_gaps v11 unchanged (1b3b605dd53ee32d669d74757377ae3c).
+
+### 2026-11-13 01:45Z hourly (18:35 MT) scan, HQ
+- BidNet BLIND by design (cool-down to 02:38:54Z; list carried forward 633/82). samgov 92/92, coloradovss 65/3, bonfire 2/1. Push d295028, EXIT 3. 0 new, 0 docs. Inbox 00:36-01:36Z: nothing. No email. Next launch (02:36Z) waits ~3 min for the cool-down to end.
