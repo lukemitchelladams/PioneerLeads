@@ -520,3 +520,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-13 17:21Z hourly (worker, read-only)
 - 1a1d5d558379f8a0 16:54Z BidNet: award published for Colorado Mountain College RFP 1178-26P Professional Custodial Services (Breckenridge). Our NO; the award tab is pricing intel for Lafayette custodial (HQ told).
 - No sub replies to the Friday batch, no bounces, nothing from Luke, no CRM brief.
+
+## 2026-11-13 18:21Z hourly (worker, read-only)
+- 1a1d6231677d9726 18:09Z Tolin Mechanical service sales rep, re: Canon City RFP 129-26 HVAC: "I'll be sending you over the pricing ... by Monday or Tuesday next week." Logged in the Canon City sub-outreach.md and the pipeline. Personal address and mobile not copied.
+- No other sub replies, no bounces, nothing from Luke, no CRM brief.
