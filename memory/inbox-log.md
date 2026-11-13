@@ -516,3 +516,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-13 16:39Z hourly (worker, read-only; scheduled 16:21Z)
 - No new inbound since the 15:56Z check. Thread 1a1ac805e5b5b3bc (PSD site-visit RSVP) surfaced only on a history change; all 3 messages are our own sends (11/05, 11/09, 11/11) and PSD has not answered the sign-in confirmation ask. No sub replies yet to the Friday batch (sent ~16:1xZ), no bounces, nothing from Luke.
+
+## 2026-11-13 17:21Z hourly (worker, read-only)
+- 1a1d5d558379f8a0 16:54Z BidNet: award published for Colorado Mountain College RFP 1178-26P Professional Custodial Services (Breckenridge). Our NO; the award tab is pricing intel for Lafayette custodial (HQ told).
+- No sub replies to the Friday batch, no bounces, nothing from Luke, no CRM brief.
