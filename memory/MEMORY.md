@@ -2155,3 +2155,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   K Clean named mailbox sent to HQ by message). Gate Mon 11/16 12:00; open item NAICS 561720 not on Brown Bison's SAM record.
 - Dashboard (22:00Z, worker): bids v313 (1cdeea58884add2b7ba1ecd6f116fe20), events v315 (988c05ab6a9a14b6f766c1b675322b4c), portal_feed v166
   (062a6c6a150d321ad5ba842b58f6e3dd), sources v263 (8fb7ed08b795428384aca9138ca1e715), doc_gaps v11 unchanged.
+
+### 2026-11-13 21:43Z hourly (14:35 MT) scan + BGNDRF ask, HQ
+- Scan launched 21:36:46Z after the launcher waited 39 s for the cool-down; fresh login 21:37:06Z attempt 1, NO robot check; EXIT 0;
+  pushed faf42b1. bidnet 646/84 | samgov 97/97 | coloradovss 71/3. New matches 0. Docs 2 (Durango 0000443211 fencing, our NO; cache only).
+- BGNDRF (Reclamation RFQ 140RR027Q0001, Alamogordo NM): sub ask sent 21:38Z, bcc 7, msg 1a1d6d8ae5a21e18, from a scratchpad copy of the
+  worker's manifest (named mailbox local only). Body facts verified in the PWS/SF 1449 first. Folder bids/bor-bgndrf-custodial-140rr027q0001
+  created (README with quoted facts, sub-outreach.md). Default NO-BID Mon 11/16 12:00 unchanged; NAICS gap noted.
+- Inbox quiet 19:40Z to 21:40Z; no bounce on the CPW B tier. BVCC + La Plata cutoff 17:00 MT (00:00Z): nothing in hand.

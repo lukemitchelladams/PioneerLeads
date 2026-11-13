@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T20:29:23+00:00",
+ "updated": "2026-11-13T21:44:27+00:00",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1835,13 +1835,13 @@
    "due_source": "Amendment 0002: closing extended 'from November 18, 2026, to December 4, 2026 at 2:00PM MST'",
    "portal": "SAM.gov; 10 attachments saved in bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/",
    "decision": "EVALUATE-low (default NO-BID Mon 11/16 12:00 MT unless an Alamogordo janitorial sub is found; out of our region)",
-   "decision_note": "Surfaced 2026-11-13 00:41Z scan. Total small business, NAICS 561720, PSC S201. PWS: office/lab/restrooms 'approximately 6,000 square feet' (3,600 tiled, 2,400 carpet); base year 11/24/2026-11/23/2027 + options; WD Otero County 2015-5455; Reclamation background checks; two OPTIONAL site visits were 11/06 and 11/09 (passed, not required). POC savanna_manning@ios.doi.gov.",
+   "decision_note": "Surfaced 2026-11-13 00:41Z scan. Total small business, NAICS 561720, PSC S201. PWS: office/lab/restrooms 'approximately 6,000 square feet' (3,600 tiled, 2,400 carpet); base year 11/24/2026-11/23/2027 + options; WD Otero County 2015-5455; Reclamation background checks; two OPTIONAL site visits were 11/06 and 11/09 (passed, not required). POC savanna_manning@ios.doi.gov. | 2026-11-13 21:38Z HQ: sub ask sent, bcc 7 (SL Cleaning, Pristine Clean, Tigua Facility Services, Chase N Dirt, L&L Janitorial, Alamo Janitorial + one named tier-A mailbox kept out of the repo), msg 1a1d6d8ae5a21e18, with Sol + Amd 0002 + Attachments 1-4. Facts verified in the PWS: twice per week, ~6,000 sq ft, base 11/24/2026 + four option years, due Fri 12/04 14:00 MST (Amd 0002). Yes/no asked by Mon 11/16 12:00, monthly price by Wed 11/25. NO-BID default Mon 12:00 stands if nobody says yes; NAICS gap (SAM 238220 vs RFQ 561720) to resolve before any quote.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Brown Bison bids; local janitorial sub performs",
-   "subs": "none; worker sweep for Alamogordo NM cleaners if pursued",
+   "subs": "7 Alamogordo/El Paso cleaners asked 11/13 21:38Z (worker sweep); none priced",
    "sub_pricing": "None. 11/13 21:2xZ worker sweep: 15 verified Alamogordo/Las Cruces/El Paso janitorial firms (ops/research/2026-11-13-bgndrf-alamogordo-janitorial-subs.md); ready bcc to 7 for HQ (ops/outbox/2026-11-13/outbox-bgndrf-janitorial.json), yes/no by Mon 11/16 12:00, monthly price by Wed 11/25.",
-   "folder": null,
+   "folder": "bids/bor-bgndrf-custodial-140rr027q0001",
    "contact": "savanna_manning@ios.doi.gov",
    "next": "HQ: send the BGNDRF sub ask today (gate Mon 11/16 12:00 MT). If a sub says yes: open bids/bor-140rr027q0001-bgndrf-custodial/ from the template, and Luke adds NAICS 561720 to SAM (same item as Pagosa). Q&A amendment expected on or before 11/20."
   },
