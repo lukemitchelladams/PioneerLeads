@@ -1,25 +1,34 @@
 {
-  "checked_at": "2026-11-13T01:40:06+00:00",
+  "checked_at": "2026-11-13T02:39:15+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
-      "count": 633,
+      "complete": true,
+      "count": 636,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
+      "detail_cut": {
+        "budget_s": 600.0,
+        "done": 7,
+        "elapsed_s": 608.6,
+        "source": "bidnet",
+        "total": 91
+      },
       "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+        "detail pass cut after 600 s: 7 of 91 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-13T00:37:57+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-11-13T02:38:54+00:00",
+      "last_success": "2026-11-13T02:39:15+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
       "matches": 82,
       "reach_note": "HTTP 200",
-      "reachable": true
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 189,
+        "statewide BUYER": 448
+      }
     },
     "bonfire": {
       "count": 2,
@@ -27,12 +36,19 @@
         "BONFIRE_PASS": false,
         "BONFIRE_USER": false
       },
+      "detail_cut": {
+        "budget_s": 600.0,
+        "done": 0,
+        "elapsed_s": 614.6,
+        "source": "bonfire",
+        "total": 1
+      },
       "errors": [
-        "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
+        "detail pass cut after 600 s: 0 of 1 bids enriched (BidNet slow); the rest keep last scan's details"
       ],
-      "last_success": "2026-11-13T01:40:06+00:00",
+      "last_success": "2026-11-13T02:39:15+00:00",
       "logged_in": false,
-      "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
+      "login_note": "BONFIRE_USER/BONFIRE_PASS not set",
       "matches": 1,
       "reach_note": "HTTP 200",
       "reachable": true
@@ -41,8 +57,17 @@
       "complete": true,
       "count": 65,
       "creds": {},
-      "errors": [],
-      "last_success": "2026-11-13T01:40:06+00:00",
+      "detail_cut": {
+        "budget_s": 600.0,
+        "done": 0,
+        "elapsed_s": 624.1,
+        "source": "coloradovss",
+        "total": 3
+      },
+      "errors": [
+        "detail pass cut after 600 s: 0 of 3 bids enriched (BidNet slow); the rest keep last scan's details"
+      ],
+      "last_success": "2026-11-13T02:39:15+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -75,16 +100,21 @@
       }
     },
     "samgov": {
-      "bulk_added": 30,
+      "bulk_added": 37,
       "bulk_note": "bulk file cached 2026-11-12T05:44:48+00:00; 86 matching (parsed earlier)",
+      "carried_forward": true,
+      "complete": false,
       "count": 92,
       "creds": {
         "SAM_API_KEY": true
       },
-      "errors": [],
-      "last_success": "2026-11-13T01:40:06+00:00",
+      "errors": [
+        "SAM.gov {'ccode': '3950'}: HTTP 504 Gateway Time-out <html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</body>\r\n</html>",
+        "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-11-13T02:39:15+00:00",
       "logged_in": true,
-      "login_note": "API key; +30 from the nightly bulk file",
+      "login_note": "API key; +37 from the nightly bulk file",
       "matches": 92,
       "reach_note": "HTTP 404",
       "reachable": true
