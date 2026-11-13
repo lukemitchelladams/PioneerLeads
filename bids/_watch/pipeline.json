@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-12T23:48:27Z",
+ "updated": "2026-11-13T00:43:23Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1821,6 +1821,25 @@
    "sub_pricing": "None",
    "folder": null,
    "contact": "-"
+  },
+  {
+   "id": "bor-140rr027q0001-bgndrf-custodial",
+   "agency": "Bureau of Reclamation (DOI), Albuquerque Area Office",
+   "title": "S--BGNDRF Custodial Services, Brackish Groundwater National Desalination Research Facility, 500 La Velle Rd, Alamogordo NM",
+   "sol": "140RR027Q0001 (SAM.gov b2e58c41cb4c4787813fbc1f31ea81f7)",
+   "trade": "Janitorial (sub performs; needs an Alamogordo NM cleaner)",
+   "due": "2026-12-04T14:00:00-07:00",
+   "due_source": "Amendment 0002: closing extended 'from November 18, 2026, to December 4, 2026 at 2:00PM MST'",
+   "portal": "SAM.gov; 10 attachments saved in bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/",
+   "decision": "EVALUATE-low (default NO-BID Mon 11/16 12:00 MT unless an Alamogordo janitorial sub is found; out of our region)",
+   "decision_note": "Surfaced 2026-11-13 00:41Z scan. Total small business, NAICS 561720, PSC S201. PWS: office/lab/restrooms 'approximately 6,000 square feet' (3,600 tiled, 2,400 carpet); base year 11/24/2026-11/23/2027 + options; WD Otero County 2015-5455; Reclamation background checks; two OPTIONAL site visits were 11/06 and 11/09 (passed, not required). POC savanna_manning@ios.doi.gov.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison bids; local janitorial sub performs",
+   "subs": "none; worker sweep for Alamogordo NM cleaners if pursued",
+   "sub_pricing": "None",
+   "folder": null,
+   "contact": "savanna_manning@ios.doi.gov"
   }
  ],
  "events": [

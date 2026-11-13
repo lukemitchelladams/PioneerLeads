@@ -1879,3 +1879,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - GovTribe: federal search now returns ACCOUNT_CANCELLED too (S&L UPGRADE_REQUIRED); ledger "blocked" already records the 10/27 lapse. SAM API covers federal.
 - Inbox: nothing inbound in 2 h.
 - Dashboard: bids v290 (10d66ed6486619d280f47ba372e37151), events v292 (91a592f245529ef43d063a7d3d3bfb78), portal_feed v150 (6a242b891671722ebb13f9599a894963), sources v247 (d58c5a2ec977dda101ab959370c99d87), doc_gaps v11 unchanged (1b3b605dd53ee32d669d74757377ae3c).
+
+### 2026-11-13 00:50Z hourly (17:35 MT) scan, HQ
+- BidNet ROBOT CHECK #9 right after the login form at 00:38:54Z (fresh login after a container sleep; cool-down to 02:38:54Z). BidNet PARTIAL (188/16 list rows, a list page aborted), samgov 92/92 PARTIAL (2 API errors), coloradovss 65/3, bonfire 2/1. Push 7572d9b, EXIT 3. 0 docs. 1 NEW: SAM b2e58c41 Reclamation 140RR027Q0001 "BGNDRF Custodial Services" = Alamogordo NM, ~6,000 sq ft office/lab, total SB, due 12/04 14:00 MST (Amd 2), optional site visits already held -> EVALUATE-low, default NO-BID Mon 11/16 12:00 (out of region, no NM sub); 10 attachments saved under bids/_watch/downloads/samgov/. VSS: CAVEA Lighting pre-bid line re-read (NO bid). Inbox 23:36-00:36Z: nothing. No email this turn.
+- Pattern: every container sleep kills the saved BidNet session; fresh logins after sleeps drew robot checks at 14:42Z (detail page) and 00:38Z (login form). Next scans: 01:36Z blind (cool-down), 02:36Z launch waits to 02:39Z.

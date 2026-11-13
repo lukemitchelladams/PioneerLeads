@@ -743,6 +743,13 @@
    "match": "0000443426",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "Reclamation 140RR027Q0001 BGNDRF custodial, Alamogordo NM (EVALUATE-low; default NO-BID Mon 11/16; due 12/04 14:00 MST)",
+   "source": "samgov",
+   "match": "140RR027Q0001",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
