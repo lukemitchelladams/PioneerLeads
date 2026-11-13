@@ -1,95 +1,5 @@
 [
  {
-  "key": "samgov:156ee7b93b084524895a20bab5d2ad6e",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
-  "title": "Individual Water Treatment Device (IWTD) Laboratory Testing",
-  "sol": "IWTD_LaboratoryTesting",
-  "closing": "2026-11-12",
-  "posted": "2026-10-08",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/156ee7b93b084524895a20bab5d2ad6e/view"
- },
- {
-  "key": "samgov:636a308a458f4e0a8491a0087069997f",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
-  "title": "Sole Source to Lake Shore Systems - Winch Assembly",
-  "sol": "N0040627Q0018",
-  "closing": "2026-11-12",
-  "posted": "2026-11-04",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/636a308a458f4e0a8491a0087069997f/view"
- },
- {
-  "key": "samgov:7344ad5ce5304aa68109854c6d5871f5",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--PULLEY,GROOVE",
-  "sol": "SPE7L127U0146",
-  "closing": "2026-11-12",
-  "posted": "2026-10-27",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/7344ad5ce5304aa68109854c6d5871f5/view"
- },
- {
-  "key": "samgov:8ac5943336684be59f8e8577aeff45c0",
-  "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
-  "title": "3910--FY27 EMS Uniform Conveyors",
-  "sol": "36C24827Q0115",
-  "closing": "2026-11-12",
-  "posted": "2026-11-05",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/8ac5943336684be59f8e8577aeff45c0/view"
- },
- {
-  "key": "samgov:9f4a62609e3d4f2ea5c0c6fafe923840",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--PULLEY,GROOVE",
-  "sol": "SPE7L527T0447",
-  "closing": "2026-11-12",
-  "posted": "2026-11-01",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/9f4a62609e3d4f2ea5c0c6fafe923840/view"
- },
- {
-  "key": "samgov:db1cb44b650f4cdc892299917c04adf9",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
-  "title": "Individual Water Treatment Device (IWTD) for Reduction/Removal of Toxic Industrial Chemicals and Materials",
-  "sol": "IWTD_Reduction_TICs_TIMs",
-  "closing": "2026-11-12",
-  "posted": "2026-10-08",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/db1cb44b650f4cdc892299917c04adf9/view"
- },
- {
   "key": "bidnet:0000438988",
   "source": "bidnet",
   "agency": "",
@@ -147,7 +57,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444208178536?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444208178536/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444210657404",
@@ -162,7 +72,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444210657404?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444210657404/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:21f8910c3dc44615956327770976b6c3",
@@ -282,7 +192,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444204005554?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444204005554/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444188127310",
@@ -297,7 +207,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444188127310?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444188127310/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:2b0011c68733402aace4b0a7d9dd8487",
@@ -462,7 +372,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444224753209?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444224753209/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:5b9e3b6504d8415fa62c7f45f7fa15d0",
@@ -582,7 +492,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444206990087/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:177c2aa536d34c5ea6d40aa7b8db7d34",
@@ -617,7 +527,7 @@
  {
   "key": "samgov:26588cc4421447199018d9bbd6789cf4",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
   "title": "S--BGNDRF CUSTODIAL SERVICES",
   "sol": "140RR027Q0001",
   "closing": "2026-11-18",
@@ -747,7 +657,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444232280764",
@@ -762,7 +672,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444232280764/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:04b0549983ea4b7687b6280f65b9dc1e",
@@ -912,7 +822,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:23974a460bd74e2faaa14870565075d7",
@@ -1047,7 +957,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444225024046/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:3a25347065dc4abab033df330d536ef2",
@@ -1257,7 +1167,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444223472310?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444223472310/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bonfire:parkeronline-259452",
@@ -1377,7 +1287,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721090002/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:b11d3623d84843b2899857e45ac20464",
@@ -1567,8 +1477,8 @@
   "sol": "DQ1-GMAA-2027000142-2",
   "closing": "2026-11-30",
   "posted": "2026-11-11",
-  "prebid_date": "",
-  "prebid_mandatory": "",
+  "prebid_date": "2026-11-04",
+  "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
@@ -2085,6 +1995,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Trails-Park-and-Recreation-District-Landscape-Maintenance-Contract-Services/0000443426?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "samgov:b2e58c41cb4c4787813fbc1f31ea81f7",
+  "source": "samgov",
+  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "title": "S--BGNDRF CUSTODIAL SERVICES",
+  "sol": "140RR027Q0001",
+  "closing": "2026-12-04",
+  "posted": "2026-11-12",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/b2e58c41cb4c4787813fbc1f31ea81f7/view"
+ },
+ {
   "key": "bidnet:0000442347",
   "source": "bidnet",
   "agency": "",
@@ -2127,7 +2052,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721710927?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721710927/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444230804856",
@@ -2142,7 +2067,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230804856?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230804856/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:2aad90d6aa1f4120bfffc544d7899799",
@@ -2412,7 +2337,7 @@
   "profiles": "",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230872362?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230872362/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000441223",
@@ -2502,7 +2427,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444226398382/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:3d326babf2eb497eabe64330bb3f5d25",
@@ -2697,7 +2622,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
