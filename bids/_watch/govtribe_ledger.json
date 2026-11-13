@@ -2787,6 +2787,12 @@
    "verdict": "EVALUATE",
    "why": "Worker 11/13 01:3xZ, following HQ's 00:50Z EVALUATE-low: janitorial is our trade, but the site is Alamogordo NM (~6,000 sq ft office/lab), out of region, and we have no New Mexico janitorial sub; the optional site visits are already past. HQ default: NO-BID Mon 11/16 12:00 MT. Revives only if a NM sub prices first.",
    "at": "2026-11-13T01:35:00Z"
+  },
+  "d150dad1528141788616e2b0d93d00c0": {
+   "name": "USCG 2127407B3000HE003 WINCH, DRUM (SAM; PSC 3950, NAICS 336611; total SB; closes 2026-11-13)",
+   "verdict": "NO",
+   "why": "Worker 11/13 04:3xZ: jones-bearing keyword match on a Coast Guard drum winch buy (shipbuilding NAICS 336611, PSC 3950 winches/hoists); not a bearing/pulley/conveyor product and not Brown Bison's trade. New documents posted 11/13 scan; closes today. Per the 11/12 rule, Jones Bearing DLA/federal product buys are NO unless already on record.",
+   "at": "2026-11-13T04:35:00Z"
   }
  },
  "watched": {
@@ -2972,6 +2978,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T03:35:00Z",
+ "last_hourly_check": "2026-11-13T04:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
