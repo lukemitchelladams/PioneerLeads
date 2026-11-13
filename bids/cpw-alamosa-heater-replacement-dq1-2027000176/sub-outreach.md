@@ -16,3 +16,8 @@ and breakers, and adds a garage space heater. The sub's person must attend the M
   C-Squared, Royal; HQ adds the Valley Electric and Billings named mailboxes privately; separate entry for Torres P&H, never asked).
   Humanize gate PASS. NOT sent by the worker (read-only).
 - 2026-11-13 19:40Z (12:40 MT, HQ): ELECTRICAL sweep (Exhibit A makes the job mainly electrical; worker research ops/research/2026-11-13-cpw-alamosa-electrical-subs.md). bcc 6 (gate PASS, DQ + Exhibit A attached), msg 1a1d66c90745e1e0: Vemco Electrical (Center), Valley Electric (Alamosa), Billings Electric (Alamosa; may bounce), Power Pro Electric (Monte Vista), C-Squared Electric (Monte Vista), Royal Electrical Services (Pueblo; electrical + HVAC). Named mailboxes stay out of the repo (local manifest copy). Torres Plumbing & Heating (office@torrespandh.com) got the full mechanical + electrical ask, msg 1a1d66c96ac41789. Answer asked by Mon 11/16 12:00 MT; no attendee by then = NO-BID. Held for Mon if the A tier is silent: Alpine Electric & Solar, Morton Electric (named mailboxes, with HQ).
+- 2026-11-13 20:2xZ (worker, Gmail read-only): 2 BOUNCES on the 19:40Z electrical bcc (thread 1a1d66c90745e1e0). Valley Electric (Alamosa, the
+  best-fit A tier): named mailbox rejected "550 5.7.1 Relaying denied" by mx.myregisteredsite.com (msg 1a1d66cd39e290c7), so the mailbox is not
+  hosted at that domain. Royal Electrical (Pueblo) office@royalelectrical.com: Microsoft 365 "550 5.4.1 Recipient address rejected: Access
+  denied" (msg 1a1d66cf6614c5b7), so that mailbox does not exist. Delivered so far: Vemco, Power Pro, C-Squared, Billings, Torres. Worker is
+  searching for verified alternate addresses for both.

@@ -525,3 +525,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 1a1d6231677d9726 18:09Z Tolin Mechanical service sales rep, re: Canon City RFP 129-26 HVAC: "I'll be sending you over the pricing ... by Monday or Tuesday next week." Logged in the Canon City sub-outreach.md and the pipeline. Personal address and mobile not copied.
 - No other sub replies, no bounces, nothing from Luke, no CRM brief.
 - 2026-11-13 19:2xZ (hourly, read-only): 3 unseen, no action. BidNet addendum notice for Loveland 2026-074 Carpet/Upholstery/Fiber Panel (1a1d62f231eecff3; pipeline NO, walk passed, 5-yr rule). Google Workspace mobile-apps promo (1a1d63cb9a04d272). Thread 1a1d1776856afb51 = the 11/12 M&R Plumbers block (message 1a1d17774d6ee672, already logged). No sub replies since Tolin 18:09Z; no bounces; no CRM brief; nothing from Luke.
+- 2026-11-13 20:2xZ (hourly, read-only): 3 new. BOUNCES on HQ's 19:40Z CPW electrical bcc (1a1d66c90745e1e0): Valley Electric named mailbox
+  "550 5.7.1 Relaying denied" (1a1d66cd39e290c7); office@royalelectrical.com "550 5.4.1 Recipient address rejected" (1a1d66cf6614c5b7). Logged in
+  the CPW sub-outreach.md. Tolin support desk (customerservice@tolin.com) acknowledged the Canon City ask 19:34Z on thread 1a1d5a25a31dfb5a
+  (1a1d667a8bb14cde): "We will have someone reach out to start the process"; Joe Volanti already promised pricing Mon/Tue. No CRM brief; nothing
+  from Luke.
