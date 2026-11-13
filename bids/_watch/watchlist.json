@@ -774,6 +774,14 @@
    "name": "DLA Pulley, Flat NSN 3020-01-308-0759 x13 (NO: approved-source part, no drawings, small qty)",
    "source": "samgov",
    "match": "SPE7LX27U0972"
+  },
+  {
+   "name": "BidNet 2722680182 = SAM 140RR027Q0001 BGNDRF custodial, Alamogordo NM (same notice; EVALUATE-low, default NO-BID Mon 11/16; due 12/04)",
+   "source": "bidnet",
+   "id": "2722680182",
+   "match": "2722680182",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

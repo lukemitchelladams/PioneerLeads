@@ -1958,3 +1958,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-13 07:21Z hourly (worker)
 - No new HQ scan since 06:36Z (BidNet blind, cool-down to 07:42Z; samgov 95, coloradovss 65/3, bonfire 2/1). 0 new. Inbox quiet.
 - No-idle work: workflow w9t481tmw builds an insurance coverage-by-bid matrix for every live bid (ops/insurance/2026-11-13-coverage-by-bid.md), so Luke can check today's policy purchase against what the bids need at award. It also pre-builds COS on-call janitorial R26-080JW (due Mon 11/23 14:30; Sergeant Suds pricing by Mon 11/16).
+
+### 2026-11-13 07:55Z hourly (00:35 MT) scan, HQ
+- Launch waited 191 s for the cool-down; fresh login 07:43:37Z clean; full detail pass in ~7 min with NO budget cut (modal fix holds). Push 22f98bd, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 1 "new": BidNet 2722680182 = the SAM BGNDRF Alamogordo custodial notice mirrored on BidNet's aggregate list (same EVALUATE-low / NO-BID default; watchlist label ties them). Changed: three non-pursued bids' pre-bid dates re-read. 0 docs. Inbox 06:36-07:36Z: nothing. No email.
