@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T10:48:30Z",
+ "updated": "2026-11-13T12:24:18Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -731,7 +731,7 @@
    "contact": "strategicsourcing@psdschools.org",
    "sub_pricing": "In hand (HOODZ, Larry Moss, confirmed per-school annual price 11/04 23:51Z; figure in bids/poudre-sd-kitchen-hood/private/. Carlos Ahedo, HOODZ Operations Manager, meets Luke at the MANDATORY 11/10 13 | 11/12: per-school figure needs a D4/D5 split and confirmation for second kitchens, dish hoods, 3- | 11/12 20:4xZ: alternates Aqua Strong, Elite, Brotherhood asked for prices + certification copies by Mon 11/16 (1a1d17a710e4b459).",
    "notes": "Questions deadline 2026-11-13 (BidNet Q&A tab, 14:39Z scan).",
-   "next": "Luke approves the review draft by Thu 11/19 12:00 MT (sent 11/12 1a1d011146984fbf); Luke/Mac post BidNet questions #7 (AHJ certification) and #8 (dish hoods) by Fri 11/13 14:00 MT; HOODZ answers 15 pricing questions by Mon 11/16 (1a1d0111ba12e68a); HQ fills Attachment D after; 7.1 statement HOLD until PSD answers."
+   "next": "LUKE TODAY by Fri 11/13 14:00 MT: post questions #7 (AHJ certification), #8 (dish hoods) and #9 (missing Attachment F) on BidNet, one entry each (paste-ready copy emailed 1a1d4dda77b97a3c). HOODZ certification question goes to Larry Fri 08:30 MT; alternates Aqua Strong/Elite/Brotherhood asked 11/12; Luke approves the review draft by Thu 11/19 12:00; due Fri 11/20 14:00 (time to confirm on BidNet)."
   },
   {
    "id": "boulder-bid-321-26",

@@ -1,0 +1,11 @@
+[
+ {
+  "key": "psd-questions-luke",
+  "subject": "POST TODAY by 2:00 PM: three PSD hood questions for BidNet (paste-ready)",
+  "to": [
+   "lukemitchelladams@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/psd-questions-luke.txt",
+  "files": []
+ }
+]
