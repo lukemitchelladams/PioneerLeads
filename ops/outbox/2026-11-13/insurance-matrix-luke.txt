@@ -1,0 +1,10 @@
+Luke: before you sign the policy today, the attached matrix lists every insurance limit our live bids quote, with page refs. Nothing in it is a quote or a price. Six things a standard CGL + auto + WC package often leaves out:
+1. CGL at $2,000,000 per occurrence (Widefield kitchen equipment asks for $2M/$2M/$2M; everyone else is $1M per occurrence, aggregates up to $2M).
+2. Auto $1,000,000 combined single limit on ANY auto (owned, hired, non-owned): BVCC, Colorado Springs, PSD, Widefield, La Plata.
+3. Employers liability $1,000,000 (Colorado Springs janitorial and snow; Canon City $500k / $1M / $1M). Many WC policies default to $100k/$500k/$100k.
+4. Professional / E&O $1,000,000 per act / $3,000,000 aggregate with extended reporting (PSD hoods; PSD will consider an exception filed with the bid).
+5. Employee crime / third-party fidelity $1,000,000 per loss PLUS master-key and care-custody-control endorsements on the CGL (Colorado Springs janitorial R26-080JW; that bid is dead without them).
+6. Cyber $1,000,000 / $2,000,000 (Widefield marks it required).
+No umbrella and no pollution on any GO bid. Carrier rating: A- VII or better covers every priority bid (BVCC wants A VII).
+Proof is due with the proposal on Lafayette (12/18), Colorado Springs (11/23) and both Arapahoe bids; everywhere else at award.
+After you buy: reply with what the policy includes (or forward the binder to luke@brownbisonco.com) and HQ will set Colorado Springs janitorial to GO or NO-BID from it. Full detail: ops/insurance/2026-11-13-coverage-by-bid.md in the repo.

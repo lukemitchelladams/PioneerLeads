@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T05:48:10Z",
+ "updated": "2026-11-13T08:06:44Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -673,7 +673,7 @@
    "sub_pricing": "None (11/13 worker check, Gmail read-only: Sergeant Suds was stood down 11/03 on thread 1a183668e7d49de9 and never re-engaged; Environment Control stood down 11/03. No live sub.)",
    "folder": "bids/cos-oncall-janitorial",
    "contact": "not in hand",
-   "next": "HQ: re-engage Sergeant Suds on its thread (or one new company) and chase the 10/28 group today; pricing by Mon 11/16, hard cutoff Wed 11/18 12:00 MT, else NO-BID (Luke overrules by 11/18 17:00). Due Mon 11/23 14:30 MST on BidNet."
+   "next": "HQ default (11/13): hold at REVIVE until Luke reports what today's policy includes. If crime/fidelity $1M + master-key + care-custody-control are in: HQ re-engages Sergeant Suds (thread 1a183668e7d49de9) Mon 11/16 08:30 MT with a Wed 11/18 12:00 pricing cutoff and files the COS forms; if they are not in, or Luke has not written by Mon 11/16 17:00 MT: NO-BID (due Mon 11/23 14:30). Insurance matrix sent to Luke 1a1d3f1d8caa2441."
   },
   {
    "id": "cos-oncall-snow",

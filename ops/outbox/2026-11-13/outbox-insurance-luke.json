@@ -1,0 +1,13 @@
+[
+ {
+  "key": "insurance-matrix-luke",
+  "subject": "Insurance check before you buy today: limits by bid (matrix attached)",
+  "to": [
+   "lukemitchelladams@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/insurance-matrix-luke.txt",
+  "files": [
+   "ops/insurance/Brown-Bison-insurance-check-by-bid-2026-11-13.pdf"
+  ]
+ }
+]
