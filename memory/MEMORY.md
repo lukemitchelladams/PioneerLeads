@@ -2041,3 +2041,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   the "[aria-label*='Attachment' i]" panel + file-row click inside expect_download; run.py downloads watched VSS bids without a login
   (PUBLIC_DOCS). Suite 322 passed, 0 failed. Live check 14:21Z: CPW DQ1-PMAA-2027000176-1 PDF 295,044 bytes in 24 s, no errors.
   Lesson: VSS grid link text is the VERSIONED id (bid["sol"] = "DQ1-PMAA-2027000176-1"); the bare id is "not on the public list".
+
+### 2026-11-13 14:45Z hourly (worker; scheduled 13:21Z, fired 14:45Z)
+- HQ 13:51Z scan: bidnet 639/83 logged in, samgov 97, coloradovss 65/3, bonfire 2/1. 2 new SAM notices, both NO and ledgered by the worker: VA 36C25927Q0057 temporary boiler rental (intent to sole source); DLA Multi NSN LTC (Timken OEM sole source). HQ shipped the VSS attachment download (63bcb4f) and wrote the CEO plan ops/plan_ceo/2026-11-13.md.
+- Inbox blocked for the worker: Gmail connector 502, and the plugin sign-in is unsupported. HQ's local-token poll is the inbox source this hour.
+- Westminster 26-002: the RFP says responses from anyone who missed the 10/19 mandatory walk "will not be accepted", and no attendance is on record. Worker recommended that HQ move it to NO-BID by rule 0 (Luke overrules only if he attended himself).

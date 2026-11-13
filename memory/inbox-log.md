@@ -503,3 +503,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-13 12:21Z hourly (worker, read-only)
 - Nothing new inbound (DMARC report already logged). No sub replies, no bounces, nothing from Luke, no CRM brief.
+
+## 2026-11-13 14:45Z hourly (worker, read-only; scheduled 13:21Z, fired late)
+- INBOX BLOCKED for the worker this tick: the Gmail connector failed to connect (502), and the small-business Gmail plugin's sign-in isn't supported here ("Incompatible auth server: does not support dynamic client registration"). HQ's 13:58Z poll via scripts/inbox_list.py (local token) found 0 inbound messages in 2 h. Nothing logged as seen.

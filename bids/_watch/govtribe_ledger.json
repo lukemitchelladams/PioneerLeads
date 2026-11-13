@@ -2835,6 +2835,18 @@
    "verdict": "NO",
    "why": "HQ 11/13 06:00Z verdict, ledgered by the worker: approved-source part, no drawings; distributor status not on record (11/12 rule).",
    "at": "2026-11-13T06:35:00Z"
+  },
+  "11556cfdf4ce4775a7878c5d4d8427a1": {
+   "name": "VA NCO 19 36C25927Q0057 W044 Temporary Boiler Rental & Maintenance (Grand Junction; due 2026-11-16 15:00 MT)",
+   "verdict": "NO",
+   "why": "HQ 11/13 13:58Z verdict, ledgered by the worker: notice of INTENT TO SOLE SOURCE to Ivan Ware & Son dba Ware ('THIS IS NOT A SOLICITATION OR REQUEST FOR OFFERS'); Western Slope; no boiler-rental capability.",
+   "at": "2026-11-13T14:50:00Z"
+  },
+  "95a2d27f4a0841b69190a165a262ef7c": {
+   "name": "DLA Aviation Multi NSN LTC, FSC 3110, Timken OEM sole source (CAGE 21335/60038; closes 2026-11-28)",
+   "verdict": "NO",
+   "why": "HQ 11/13 13:58Z verdict, ledgered by the worker: Timken OEM sole source; Jones Bearing is not a Timken distributor on record (11/12 rule).",
+   "at": "2026-11-13T14:50:00Z"
   }
  },
  "watched": {
@@ -3020,6 +3032,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-13T12:35:00Z",
+ "last_hourly_check": "2026-11-13T14:50:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
