@@ -15,21 +15,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Planner-Professional-Services-for-Community-Development-Department/0000438988?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000440100",
-  "source": "bidnet",
-  "agency": "Town of Superior",
-  "title": "Town of Superior - Irrigation tank floating cover replacement",
-  "sol": "",
-  "closing": "2026-11-13",
-  "posted": "2026-10-13",
-  "prebid_date": "2026-10-22",
-  "prebid_mandatory": "Optional",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Town-of-Superior-Irrigation-tank-floating-cover-replacement/0000440100?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000441807",
   "source": "bidnet",
   "agency": "City of Aurora",
@@ -2280,6 +2265,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Boiler-Replacement-Projects-2-Locations/0000443128?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000443211",
+  "source": "bidnet",
+  "agency": "City of Durango",
+  "title": "2026-0050-0133 Animas City Cemetery Fencing Project",
+  "sol": "",
+  "closing": "2026-12-08",
+  "posted": "2026-11-13",
+  "prebid_date": "2026-11-18",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-0050-0133-Animas-City-Cemetery-Fencing-Project/0000443211?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "samgov:a98c21a17409454a9307a97860826870",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
@@ -2383,6 +2383,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:444234845265",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Native Aquatic Species Facility Heater Replacement & Install",
+  "sol": "",
+  "closing": "2026-12-09",
+  "posted": "2026-11-13",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234845265?target=view"
  },
  {
   "key": "coloradovss:DQ1-PMAA-2027000176",
