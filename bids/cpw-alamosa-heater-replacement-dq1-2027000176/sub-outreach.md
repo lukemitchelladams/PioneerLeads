@@ -10,3 +10,8 @@ and breakers, and adds a garage space heater. The sub's person must attend the M
 - 2026-11-13 14:50Z (HQ): Friday 08:30 MT batch adjusted: Exhibit A, Scope of Work goes to Surefire only; Flow Right (dispatch@flowrightphi.com) gets the full ask with the DQ + Exhibit A. Torres P&H is next if both are silent by Mon 11/16 12:00 MT; no attendee by then = NO-BID (mandatory pre-bid 11/18 10:00).
 
 - 2026-11-13 15:59Z (08:59 MT), HQ: Exhibit A Scope of Work to Surefire only (surefirehvacr@gmail.com), msg 1a1d5a2835ac51db; full ask + DQ + Exhibit A to Flow Right (dispatch@flowrightphi.com), msg 1a1d5a289f443c61. Husmann declined 14:40Z. Humanize gate PASS; sent via scripts/send_outbox.py (ops/outbox/2026-11-13/outbox-friday-batch.json).
+- 2026-11-13 19:3xZ (worker): scope is mainly ELECTRICAL (Exhibit A), and the 11/12 sweep had only HVAC/plumbing firms. Electrical sweep in
+  ops/research/2026-11-13-cpw-alamosa-electrical-subs.md: A tier Vemco (Center), Valley Electric (Alamosa), Billings Electric (Alamosa),
+  Power Pro (Monte Vista). Ready-to-send manifest for HQ: ops/outbox/2026-11-13/outbox-cpw-electrical.json (bcc Vemco, Power Pro,
+  C-Squared, Royal; HQ adds the Valley Electric and Billings named mailboxes privately; separate entry for Torres P&H, never asked).
+  Humanize gate PASS. NOT sent by the worker (read-only).
