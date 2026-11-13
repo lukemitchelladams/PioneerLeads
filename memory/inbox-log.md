@@ -506,3 +506,10 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-13 14:45Z hourly (worker, read-only; scheduled 13:21Z, fired late)
 - INBOX BLOCKED for the worker this tick: the Gmail connector failed to connect (502), and the small-business Gmail plugin's sign-in isn't supported here ("Incompatible auth server: does not support dynamic client registration"). HQ's 13:58Z poll via scripts/inbox_list.py (local token) found 0 inbound messages in 2 h. Nothing logged as seen.
+
+## 2026-11-13 15:56Z hourly (worker, read-only; scheduled 15:21Z, fired 15:55Z). Gmail connector back
+- 1a1d55a5ec86d07b 14:40Z Mario Rivera, Husmann Plumbing & Heating: "WE DECLINE TO BID" on CPW Alamosa (HQ logged it in sub-outreach.md).
+- 1a1d50fb536e8a29 13:18Z Microsoft DMARC aggregate report (11/11). Routine.
+- 1a1d4e369cecb3ee 12:30Z BidNet closing reminder: Douglas County IFB 042-26 HVAC Filters & Belts (our NO, rule 9).
+- 1a1d4e0b0c6c300e 12:27Z BidNet closing reminder: Longmont RFP-426089 on-call specialized electrical (our NO, state electrical registration needed).
+- Sent check: only the board email to Luke at 15:26Z. **The Friday 08:30 MT batch of 8 sub emails had not gone out by 15:59Z.** HQ alerted.

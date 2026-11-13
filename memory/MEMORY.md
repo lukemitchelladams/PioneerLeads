@@ -2055,3 +2055,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox (inbox_list.py, connector still 502): Husmann Plumbing & Heating DECLINED CPW Alamosa 14:40Z (Mario Rivera). Friday batch #7 now
   Surefire only; Flow Right full ask stays; Torres P&H next. Hourly trigger did not fire at 14:35Z (next_run_at still 14:35Z at 14:49Z);
   launching the 07:35 MT scan by hand (login gap clear since 14:46Z).
+
+### 2026-11-13 15:56Z hourly (worker; scheduled 15:21Z, fired 15:55Z)
+- HQ 14:51Z scan (launched by hand after a missed trigger): bidnet 641 logged in, samgov 97, coloradovss 65/3, bonfire 2/1; 0 new. HQ set Westminster to NO-BID by rule 0. Husmann declined CPW.
+- Gmail connector back for the worker. **The Friday 08:30 MT batch (8 sends) was not in Sent by 15:59Z**. Worker alerted HQ: BVCC and La Plata are due 17:00 MT today.
