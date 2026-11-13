@@ -1872,3 +1872,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-12 23:52Z hourly (16:35 MT) scan, HQ
 - Logged in attempt 1 (22:36Z session). Push e399524, EXIT 3 (detail cut again, bidnet 7/91 in 627 s). bidnet 635/82, samgov 97/97, coloradovss 65/3, bonfire 2/1. 1 NEW: BidNet 0000443426 Trails Park & Recreation District "Landscape Maintenance Contract Services", closes 12/04 -> EVALUATE, watchlisted; landscaping = YMS; Luke decides (board DECIDE with the Alex RTD call); details unread (budget cut). 0 docs. Inbox 22:36-23:36Z: nothing inbound. No email this scan turn (the 23:3xZ CPW/Wild Fox sends were before the scan).
+
+### 2026-11-13 00:21Z hourly (worker)
+- HQ 23:35Z scan: bidnet 635 logged in (detail cut 7/91), samgov 97, coloradovss 65/3, bonfire Cloudflare, dibbs not scanned. 1 NEW: Trails Park & Rec District landscape maintenance (BidNet 0000443426, closes 12/04): worker ledgered EVALUATE; docs not public off BidNet (web search found only the district's older park-improvement bids), so the walk date waits on HQ's next logged-in download. Landscaping = YMS; operators do not contact Alex.
+- HQ since 23:21Z: CPW DQ read (pre-bid MANDATORY 11/18 10:00 Alamosa; Husmann + Surefire asked; NO-BID Mon 11/16 12:00 unless one confirms an attendee in writing), Wild Fox asked on Arapahoe Courthouse 1, Ceres ask Fri 08:30 MT, Boettcher chiller NO-BID. Worker added the DQ facts to the CPW ledger entry.
+- GovTribe: federal search now returns ACCOUNT_CANCELLED too (S&L UPGRADE_REQUIRED); ledger "blocked" already records the 10/27 lapse. SAM API covers federal.
+- Inbox: nothing inbound in 2 h.
+- Dashboard: bids v290 (10d66ed6486619d280f47ba372e37151), events v292 (91a592f245529ef43d063a7d3d3bfb78), portal_feed v150 (6a242b891671722ebb13f9599a894963), sources v247 (d58c5a2ec977dda101ab959370c99d87), doc_gaps v11 unchanged (1b3b605dd53ee32d669d74757377ae3c).

@@ -457,3 +457,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-12 23:21Z hourly (worker, read-only)
 - No new inbound since 22:21Z (Westminster BidNet notices and Alex already logged). No bounces. Nothing from Luke.
+
+## 2026-11-13 00:21Z hourly (worker, read-only)
+- No new inbound in 2 h (newer_than:2h empty). Only bounce in 1 d is the already-logged mandrplumbers.com block (1a1d17774d6ee672). No sub replies (BVCC, La Plata, PSD alternates, Widefield, Pagosa, CPW Husmann/Surefire, Wild Fox). Nothing from Luke; no CRM brief.

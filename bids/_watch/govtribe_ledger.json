@@ -885,7 +885,7 @@
    "at": "2026-10-26T19:33:00Z"
   },
   "8f0e3b72596a4714a555ecd5eb0e899b": {
-   "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd\u2026; due 2026-10-28 16:00Z)",
+   "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (federal record of watched state-local 6ad219dd…; due 2026-10-28 16:00Z)",
    "verdict": "WATCH",
    "why": "Same solicitation as watched 6ad219dd44ea9a49cf0994a2 (RFPQ Bunkhouse Asbestos Mitigation, Costilla County). Luke's CRM runs it (sub outreach stage per the 10/19 brief); no repo row. Abatement is a specialty sub trade.",
    "at": "2026-10-26T20:28:00Z"
@@ -941,7 +941,7 @@
   "5627ee97e4ce40e2af289e42601e4afb": {
    "name": "USFS 1240LT27Q0010 Bunkhouse Asbestos Mitigation (SAM notice id; same as GovTribe 8f0e3b72596a4714a555ecd5eb0e899b)",
    "verdict": "WATCH",
-   "why": "WATCH (alias of 8f0e3b72\u2026): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
+   "why": "WATCH (alias of 8f0e3b72…): asbestos abatement, NAICS 562910, total small-business set-aside, due 2026-10-28 16:00Z; CRM-tracked; not our trade, no sub. No action.",
    "at": "2026-10-27T06:26:07+00:00"
   },
   "bidnet:2720966072": {
@@ -2773,8 +2773,14 @@
   "coloradovss:DQ1-PMAA-2027000176": {
    "name": "CPW DQ1-PMAA-2027000176 Native Aquatic Species Facility Heater Replacement & Install (Alamosa; closes 2026-12-09 17:00 MST)",
    "verdict": "EVALUATE",
-   "why": "HQ 11/12 21:20Z: HVAC heater replacement + electrical upgrade; pre-bid Wed 11/18 10:00 MST (mandatory status in attachment sec. 1.4, not yet read; VSS attachments need a UI download). HQ default NO-BID Mon 11/16 12:00 MT unless the pre-bid is optional and an HVAC sub serving the San Luis Valley is found.",
+   "why": "HQ 11/12 21:20Z: HVAC heater replacement + electrical upgrade; pre-bid Wed 11/18 10:00 MST (mandatory status in attachment sec. 1.4, not yet read; VSS attachments need a UI download). HQ default NO-BID Mon 11/16 12:00 MT unless the pre-bid is optional and an HVAC sub serving the San Luis Valley is found. | 11/12 23:4xZ HQ read the DQ: pre-bid MANDATORY Wed 11/18 10:00 MST, 6655 CR 106 South, Alamosa; register with buyer by Tue 11/17 17:00. Husmann + Surefire asked for a person + price; NO-BID Mon 11/16 12:00 unless one confirms in writing.",
    "at": "2026-11-12T21:28:00Z"
+  },
+  "bidnet:0000443426": {
+   "name": "Trails Park and Recreation District - Landscape Maintenance Contract Services (BidNet 0000443426; closes 2026-12-04)",
+   "verdict": "EVALUATE",
+   "why": "Worker 11/13 00:3xZ: landscaping/grounds = our trade, performed by YMS (Alex Ditto) as Brown Bison's sub; Luke handles Alex, operators do not contact him. Documents not yet read (HQ 23:35Z detail pass cut); public web search found no copy off BidNet. Pre-bid/walk date and mandatory status NOT KNOWN yet: next logged-in scan downloads the package (watchlisted). If a mandatory walk has no YMS person attending -> NO-BID per the 11/12 rule.",
+   "at": "2026-11-13T00:35:00Z"
   }
  },
  "watched": {
@@ -2960,6 +2966,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-12T23:28:00Z",
+ "last_hourly_check": "2026-11-13T00:35:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
