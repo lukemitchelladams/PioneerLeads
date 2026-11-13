@@ -1892,3 +1892,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 01:45Z hourly (18:35 MT) scan, HQ
 - BidNet BLIND by design (cool-down to 02:38:54Z; list carried forward 633/82). samgov 92/92, coloradovss 65/3, bonfire 2/1. Push d295028, EXIT 3. 0 new, 0 docs. Inbox 00:36-01:36Z: nothing. No email. Next launch (02:36Z) waits ~3 min for the cool-down to end.
+- 01:5xZ worker sweep 3 (ops/research/2026-11-13-bvcc-canon-subs.md): BVCC next tier RK Water (sales@rkindustries.com), Chem-Aqua (info@chemaqua.com), ISI Water (info@isiwater.com) -> HQ asks Fri 08:30 MT; Nalco field rep is a personal address + competitor risk (not used). Canon City backups Haynes (info@haynesmechanical.com), Colorado Mechanical Systems (contact@coloradomech.com) -> HQ asks Fri 08:30 MT with the RFP. Friday send list staged in scratchpad outbox_1113/FRIDAY-0830MT-SENDS.md (HOODZ certification, Ceres Arapahoe, BVCC x3, Canon x2).
