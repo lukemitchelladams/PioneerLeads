@@ -1984,3 +1984,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 08:48Z hourly (01:35 MT) scan, HQ
 - 08:36Z run: BidNet deferred 1 min (saved session dead after a container sleep; fresh login allowed only from 08:37:37Z under the 0.9 h gap); push 0689b2e. Relaunched 08:37:29Z: logged in attempt 1 (the saved session was alive after all; last fresh login stays 07:43Z), full pass in 6 min, push 5a2c829, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 07:36-08:36Z: BidNet profile digest only. No email. Lesson repeated: when the :36 launch lands inside the gap by a minute, relaunch after the gap (as 11/06 and today).
+
+### 2026-11-13 09:22Z hourly (worker)
+- HQ 08:37Z scan: bidnet 639/83 logged in, samgov 95, coloradovss 65/3, bonfire 2/1, dibbs not scanned; open matches 153; 0 new. HQ set Aims 2627-009 to GO by default; the Friday 08:30 MT batch adds Aims (Metropolis, Sonlight) and Pike's. Inbox quiet.
+- No-idle work: workflow w60g9abjz pre-builds the Aims no-price package (the only GO bid without one).
