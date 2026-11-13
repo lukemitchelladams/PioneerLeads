@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T08:06:44Z",
+ "updated": "2026-11-13T08:36:15Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1424,7 +1424,7 @@
    "prebid_mandatory": false,
    "performer": "Brown Bison + local janitorial sub (TBD)",
    "subs": "Candidates in sub-outreach.md (not contacted)",
-   "sub_pricing": "None",
+   "sub_pricing": "Pending: Pike's Cleaning (Canon City) asked Fri 11/13 08:30 MT; monthly price per building by Wed 12/02. Gate: PSA IV.D no-subcontractor clause (City question on BidNet).",
    "folder": "bids/canon-city-janitorial",
    "contact": "Julie McGrew, Contract Manager, (719) 276-7080 (RFP p.1); questions only through BidNet Direct",
    "due_source": "RFP p.1: \"must be received no later than 11:00 AM MST on Monday, December 7, 2026\"",
@@ -1620,16 +1620,16 @@
    "due": "2027-01-06T14:00:00-07:00",
    "due_source": "BidNet listing: closing 01/06/2027 (time to be read from the solicitation PDF)",
    "portal": "BidNet Direct; docs public (no login): Window Cleaning Services Final.pdf, Greeley Campus Building Pictures.pdf, Greeley Campus Map to F_O.pdf",
-   "decision": "EVALUATE",
-   "decision_note": "Surfaced 2026-11-11 22:36Z scan. Pre-bid conference Wed 2026-11-18 11:00 MST, 5101 W. 20th St, Greeley, Facilities & Operations Showroom, 'Attendance Recommended' (not mandatory per BidNet events). Window cleaning sits next to our janitorial trade; needs a window-cleaning sub (north metro / Greeley) and the PDF read for scope, buildings, frequency and insurance. Watchlisted so the next scan pulls the 3 public docs. | 11/13 09:xxZ worker: RFP read, README + docs filed. Pre-bid NOT mandatory ('Highly recommended'). Due 2027-01-06 14:00 MT on BidNet; questions 12/01. 21 buildings / 4 campuses, ~150k sq ft glazing, annual interior+exterior, rope/lift/IWCA I-14.1, TSA airport badge, price firm 5 yrs. Subs allowed (disclose). Insurance: CGL $1M/$2M, auto $1M, EL $500k x3; no bonds. Window-cleaning sub candidates in sub-outreach.md (Metropolis, Sonlight A).",
+   "decision": "GO (HQ default 2026-11-13; Luke overrules by Mon 11/16 12:00 MT)",
+   "decision_note": "Surfaced 2026-11-11 22:36Z scan. Pre-bid conference Wed 2026-11-18 11:00 MST, 5101 W. 20th St, Greeley, Facilities & Operations Showroom, 'Attendance Recommended' (not mandatory per BidNet events). Window cleaning sits next to our janitorial trade; needs a window-cleaning sub (north metro / Greeley) | 11/13: GO default: subs allowed, no bond, pre-bid 11/18 11:00 recommended (not mandatory), due 2027-01-06 14:00, 150,000 sq ft est. glazing, 1+4 yr. Metropolis + Sonlight asked Fri 11/13 08:30 MT; pricing on Attachment C by Fri 12/12.",
    "prebid": "2026-11-18T11:00:00-07:00",
    "prebid_mandatory": false,
    "performer": "Brown Bison + window-cleaning sub (TBD)",
    "subs": "-",
-   "sub_pricing": "None (7 window-cleaning candidates listed 11/13, none asked)",
+   "sub_pricing": "Pending: Metropolis Window Cleaning (Loveland) + Sonlight Window Cleaning asked Fri 11/13 08:30 MT; price by Fri 12/12",
    "folder": "bids/aims-cc-window-cleaning-2627-009",
    "contact": "-",
-   "next": "3 public docs cached 11/11 23:41Z (bids/_watch/downloads/bidnet/0000443311/): solicitation PDF, Greeley campus building pictures, map to Facilities & Operations. Questions deadline 2026-12-01 (BidNet). Pre-bid conference Wed 11/18 11:00 Greeley recommended, not mandatory. HQ to read the PDF (scope, frequency, insurance, due time) and decide GO/NO by Fri 11/13; window-cleaning sub needed (north metro/Greeley)."
+   "next": "Fri 11/13 08:30 MT send; if a sub's person can walk 11/18 11:00, confirm in writing and they sign in for Brown Bison; questions on BidNet by Tue 12/01 23:59; package by Mon 2027-01-05."
   },
   {
    "id": "ccc-stout-corridor-led-1718713",
