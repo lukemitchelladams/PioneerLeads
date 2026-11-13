@@ -535,7 +535,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/26588cc4421447199018d9bbd6789cf4/view"
  },
@@ -550,7 +550,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/514c1b6084c7451fafb3d1de0a923062/view"
  },
@@ -2005,7 +2005,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/b2e58c41cb4c4787813fbc1f31ea81f7/view"
  },
