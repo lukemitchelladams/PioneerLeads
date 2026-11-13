@@ -686,7 +686,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/04b0549983ea4b7687b6280f65b9dc1e/view"
  },
  {
@@ -1031,7 +1031,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/994aa9e06162482d9a3c07be9ba67263/view"
  },
  {
@@ -1271,7 +1271,7 @@
   "prebid_mandatory": "Mandatory",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Interior-Stout-Street-Corridor-LED-Lighting-Upgrade/0000443313?purchasingGroupId=8409951&origin=1"
  },
  {

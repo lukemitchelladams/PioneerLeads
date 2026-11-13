@@ -2793,6 +2793,30 @@
    "verdict": "NO",
    "why": "Worker 11/13 04:3xZ: jones-bearing keyword match on a Coast Guard drum winch buy (shipbuilding NAICS 336611, PSC 3950 winches/hoists); not a bearing/pulley/conveyor product and not Brown Bison's trade. New documents posted 11/13 scan; closes today. Per the 11/12 rule, Jones Bearing DLA/federal product buys are NO unless already on record.",
    "at": "2026-11-13T04:35:00Z"
+  },
+  "web:englewood-oncall-hvac": {
+   "name": "City of Englewood CO - On-Call HVAC Repair, Installation & Preventative Maintenance Services (Bid Banana aggregator; Englewood left RMEPS 2025-02-10)",
+   "verdict": "EVALUATE",
+   "why": "Worker off-scanner sweep 11/13: our trade, Front Range, but status unverified; the only date seen (aggregator, via search summary) points to a close around 2026-10-20, so it is probably closed. Englewood's own portal is not scanned. Verify on Englewood's procurement page before any work.",
+   "at": "2026-11-13T06:05:00Z"
+  },
+  "vss:NCS1-AAHA-2026000144-1": {
+   "name": "DPA Capital Construction IH-24051 Boiler Replacement, 1881 Pierce St (samsearch shows a sources-sought notice due 2026-12-03)",
+   "verdict": "EVALUATE",
+   "why": "Worker off-scanner sweep 11/13: HVAC boiler replacement, Lakewood state campus. Seen only on the samsearch aggregator; NOT on the Colorado VSS public open list our 11/13 04:35Z scan read (65 rows), so it may be a sourcing notice the list omits, or closed. A sources-sought reply is optional and non-binding; check VSS by hand.",
+   "at": "2026-11-13T06:05:00Z"
+  },
+  "vss:DQ1-AAHA-2026000350-3": {
+   "name": "DPA IH-26012 SSB Cooling Tower Refurbish (DQ; samsearch shows 2026-12-21)",
+   "verdict": "NO",
+   "why": "Worker off-scanner sweep 11/13: trade fits (cooling tower), but it is not on the VSS open list (11/13 04:35Z, 65 rows) and has never appeared in any VSS scan since 10/29; FY2026 number with a -3 version suffix suggests a closed/old cycle.",
+   "at": "2026-11-13T06:05:00Z"
+  },
+  "vss:pueblo-hunter-ed-saa-hvac": {
+   "name": "CPW/State Pueblo Hunter Education SAA HVAC design-build (VSS per aggregator snippets; response deadline shown as 2026-12-10 in one snippet, 2026-11-03 in another)",
+   "verdict": "EVALUATE",
+   "why": "Worker off-scanner sweep 11/13: HVAC design-build in Pueblo; dates conflict and it is not on the VSS open list read 11/13 04:35Z. Design-build may need a licensed designer. Verify on VSS by hand.",
+   "at": "2026-11-13T06:05:00Z"
   }
  },
  "watched": {
