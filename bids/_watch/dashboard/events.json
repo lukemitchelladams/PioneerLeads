@@ -25,7 +25,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -29.44
+  "days_left": -29.45
  },
  {
   "key": "westminster-26-002|MANDATORY pre-bid|2026-10-19T14:00:00-06:00",
@@ -95,7 +95,7 @@
   "note": "Euna (Bonfire)",
   "critical": true,
   "past": true,
-  "days_left": -21.19
+  "days_left": -21.2
  },
  {
   "key": "metro-water-b26019|RSVP due|2026-10-23T14:00:00-06:00",
@@ -165,7 +165,7 @@
   "note": "Hite facility",
   "critical": false,
   "past": true,
-  "days_left": -16.44
+  "days_left": -16.45
  },
  {
   "key": "cdoc-tcf-boiler-water|Mandatory site visit|2026-10-27T10:00:00-06:00",
@@ -319,7 +319,7 @@
   "note": "Bounce: info@aps-hoods.com does not exist (550 5.1.1) on both sends (10:26 and 10:44 MT). contact@bravvisusa.com and peakkitchenexhaust@gmail.com delivered. Find another address or phone for APS Hoods.",
   "critical": false,
   "past": true,
-  "days_left": -15.38
+  "days_left": -15.39
  },
  {
   "key": "cos-oncall-janitorial|outreach|2026-10-28T16:33:00+00:00",
@@ -627,7 +627,7 @@
   "note": "",
   "critical": true,
   "past": true,
-  "days_left": -14.44
+  "days_left": -14.45
  },
  {
   "key": "rtd-126dm016|sub|2026-10-29T15:30:00Z",
@@ -1075,7 +1075,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.19
+  "days_left": -10.2
  },
  {
   "key": "metro-water-b26019|Questions due|2026-11-02T14:00:00-07:00",
@@ -1089,7 +1089,7 @@
   "note": "",
   "critical": false,
   "past": true,
-  "days_left": -10.19
+  "days_left": -10.2
  },
  {
   "key": "fort-collins-transfort-doors|Pre-bid (optional)|2026-11-02T15:00:00-07:00",
@@ -1117,7 +1117,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -8.19
+  "days_left": -8.2
  },
  {
   "key": "laplata-oncall-trades|bounce|2026-11-04T21:18:00Z",
@@ -1257,7 +1257,7 @@
   "note": "New BidNet match; MANDATORY walk 2026-11-13 09:00 Pueblo; EVALUATE for Alex",
   "critical": false,
   "past": true,
-  "days_left": -7.04
+  "days_left": -7.05
  },
  {
   "key": "usfs-pagosa-janitorial-1240LP27Q0008|sub-reply|2026-11-06T02:57:12Z",
@@ -1383,7 +1383,7 @@
   "note": "ColoradoVSS",
   "critical": true,
   "past": true,
-  "days_left": -6.19
+  "days_left": -6.2
  },
  {
   "key": "cdoc-bvcc-boiler-chemicals|decision|2026-11-06T21:30:00Z",
@@ -1439,7 +1439,7 @@
   "note": "New BidNet match (published 11/06); package pulled and read; MANDATORY pre-proposal conference Thu 11/19 10:00 City Hall; questions by 11/23 17:00; due 12/18 17:00 MT; EVALUATE, recommend GO; 5 subs with emails listed, draft linted, nothing sent",
   "critical": false,
   "past": true,
-  "days_left": -6.02
+  "days_left": -6.03
  },
  {
   "key": "rtd-126dm016|sub-pricing|2026-11-07T01:19:50Z",
@@ -1453,7 +1453,7 @@
   "note": "Alex Ditto (YMS): preliminary snow/ice pricing, all 5 years, plus 5 scope questions",
   "critical": false,
   "past": true,
-  "days_left": -6.01
+  "days_left": -6.02
  },
  {
   "key": "brighton-26-500209|Submission|2026-11-09T14:00:00-07:00",
@@ -1467,7 +1467,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -3.19
+  "days_left": -3.2
  },
  {
   "key": "brighton-26-500209|Closed - missed|2026-11-09T14:00:00-07:00",
@@ -1481,7 +1481,7 @@
   "note": "No submission on record at the 14:00 MT close; package was built, Luke's 5 answers + SoS certificate never arrived",
   "critical": false,
   "past": true,
-  "days_left": -3.19
+  "days_left": -3.2
  },
  {
   "key": "arapahoe-south-lawns-irrigation|MANDATORY pre-bid|2026-11-10T10:00:00-07:00",
@@ -1537,7 +1537,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -2.19
+  "days_left": -2.2
  },
  {
   "key": "doi-estes-janitorial|Submission|2026-11-10T15:00:00-07:00",
@@ -1565,7 +1565,7 @@
   "note": "BidNet",
   "critical": true,
   "past": true,
-  "days_left": -0.19
+  "days_left": -0.2
  },
  {
   "key": "pueblo-ura-msa-landscape|MANDATORY pre-bid|2026-11-13T09:00:00-07:00",
@@ -1607,7 +1607,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 0.81
+  "days_left": 0.8
  },
  {
   "key": "psd-27-701-002-hood|Questions due|2026-11-13T14:00:00-07:00",
@@ -1621,7 +1621,7 @@
   "note": "Poudre SD hood IFB questions via BidNet",
   "critical": false,
   "past": false,
-  "days_left": 0.81
+  "days_left": 0.8
  },
  {
   "key": "rtd-126dm016|Submission|2026-11-16T14:00:00-07:00",
@@ -1635,7 +1635,7 @@
   "note": "OpenGov",
   "critical": true,
   "past": false,
-  "days_left": 3.81
+  "days_left": 3.8
  },
  {
   "key": "svvsd-boiler-replacement-2027-011|prebid-mandatory|2026-11-17T09:30:00-07:00",
@@ -1817,7 +1817,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 7.81
+  "days_left": 7.8
  },
  {
   "key": "psd-27-701-002-hood|Due|2026-11-20T14:00:00-07:00",
@@ -1831,7 +1831,7 @@
   "note": "Poudre SD hood IFB closes (time to confirm on BidNet)",
   "critical": false,
   "past": false,
-  "days_left": 7.81
+  "days_left": 7.8
  },
  {
   "key": "dla-spe8ef27t0258-conveyor-roller|Submission|2026-11-23T00:00:00-05:00",
@@ -1943,7 +1943,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 17.81
+  "days_left": 17.8
  },
  {
   "key": "cdoc-bvcc-boiler-chemicals|Submission|2026-11-30T14:00:00-07:00",
@@ -1957,7 +1957,7 @@
   "note": "BidNet Direct cdoc only (DQ 9.A.ii: 'No other electronic submission methods or hard copy submittals will be accepted'; no VSS submission)",
   "critical": true,
   "past": false,
-  "days_left": 17.81
+  "days_left": 17.8
  },
  {
   "key": "pueblo-ura-msa-landscape|Submission|2026-11-30T17:00:00-07:00",
@@ -1999,7 +1999,7 @@
   "note": null,
   "critical": true,
   "past": false,
-  "days_left": 19.81
+  "days_left": 19.8
  },
  {
   "key": "adams-2026-766|Submission|2026-12-02T15:00:00-07:00",
@@ -2041,7 +2041,7 @@
   "note": "ColoradoVSS",
   "critical": true,
   "past": false,
-  "days_left": 20.81
+  "days_left": 20.8
  },
  {
   "key": "bidnet-0000443426-trails-rec-landscape|Submission|2026-12-04T00:00:00-07:00",
@@ -2069,7 +2069,7 @@
   "note": "SAM.gov; 10 attachments saved in bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/",
   "critical": true,
   "past": false,
-  "days_left": 21.81
+  "days_left": 21.8
  },
  {
   "key": "bidnet-444230804856-dus-lighting|Submission|2026-12-07T00:00:00-07:00",
@@ -2125,7 +2125,7 @@
   "note": "BidNet",
   "critical": true,
   "past": false,
-  "days_left": 25.81
+  "days_left": 25.8
  },
  {
   "key": "svvsd-boiler-replacement-2027-011|due|2026-12-08T14:00:00-07:00",
@@ -2139,7 +2139,7 @@
   "note": "RFP-KM-2027-011 due 14:00 MST via BidNet listing (submission method not in hand yet)",
   "critical": false,
   "past": false,
-  "days_left": 25.81
+  "days_left": 25.8
  },
  {
   "key": "carbon-valley-mechanical-pm|Submission|2026-12-08T17:00:00-07:00",
@@ -2195,7 +2195,7 @@
   "note": "RMEPS (BidNet)",
   "critical": true,
   "past": false,
-  "days_left": 27.81
+  "days_left": 27.8
  },
  {
   "key": "widefield-sd3-kitchen-equipment-26-27-013|Submission|2026-12-11T00:00:00-07:00",
