@@ -2059,3 +2059,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-13 15:56Z hourly (worker; scheduled 15:21Z, fired 15:55Z)
 - HQ 14:51Z scan (launched by hand after a missed trigger): bidnet 641 logged in, samgov 97, coloradovss 65/3, bonfire 2/1; 0 new. HQ set Westminster to NO-BID by rule 0. Husmann declined CPW.
 - Gmail connector back for the worker. **The Friday 08:30 MT batch (8 sends) was not in Sent by 15:59Z**. Worker alerted HQ: BVCC and La Plata are due 17:00 MT today.
+- Dashboard (16:05Z, worker): bids v307 (689f46e85dd104796dc77d0454ab2ad4), events v309 (97373288411b804167e9cf33a8e6a325), portal_feed v161 (6fc7342a1028d336d276d89e90e13942), sources v259 (567fac9695d74ce738b1e6cb89f5f73f), doc_gaps v11 unchanged.
