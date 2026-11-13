@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-13T13:51:41+00:00
+# Bid watch report — 2026-11-13T14:51:15+00:00
 
-**Headline:** 2 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 639 | BUYER 447, AGGREGATE 193 | 83 | 2026-11-13T13:51:41+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-13T13:51:41+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 97 |  | 97 | 2026-11-13T13:51:41+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 3 | 2026-11-13T13:51:41+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started | 641 | BUYER 447, AGGREGATE 195 | 83 | 2026-11-13T14:51:15+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-13T14:51:15+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 97 |  | 97 | 2026-11-13T14:51:15+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 65 | open 65 | 3 | 2026-11-13T14:51:15+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,15 +27,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | AIMS Community College | Window Cleaning | 2027-01-06 (54d) | 2026-11-18 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning/0000443311?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (35d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (53d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | W044--Temporary Boiler Rental & Maintenance | 2026-11-16 (3d) |  | https://sam.gov/workspace/contract/opp/11556cfdf4ce4775a7878c5d4d8427a1/view |
-    brief: about: SEE ATTACHMENT(S)
-| jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | Multi NSN LTC | 2026-11-28 (15d) |  | https://sam.gov/workspace/contract/opp/95a2d27f4a0841b69190a165a262ef7c/view |
-    brief: about: NOTICE TYPE : Combined Synopsis Solicitation (commercial items/non-commercial items) TITLE : Multiple NSNs – FCS: 3110 Multiple NSNs for OEM The Timken Co. CAGES (21335 and 60038), Sole Source Long Te
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -76,12 +67,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Biology Duct Insulation Damage (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - Weld SD6 Coiling Door/Grill, Franklin MS (EVALUATE; MANDATORY walk 11/02) (bidnet)
 - VA 36C248 FY27 Portable RO water purification (NO: sole-source intent to Evoqua, Orlando FL; not our product) (samgov)
+- DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record) (samgov)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | W044--Temporary Boiler Rental & Maintenance | 2026-11-16 (3d) |  | https://sam.gov/workspace/contract/opp/11556cfdf4ce4775a7878c5d4d8427a1/view |
+| brownbison WATCHED | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | W044--Temporary Boiler Rental & Maintenance | 2026-11-16 (3d) |  | https://sam.gov/workspace/contract/opp/11556cfdf4ce4775a7878c5d4d8427a1/view |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | J--Air Compressor Maintenance and Repair IDIQ at Hoover Dam | 2026-11-17 (4d) |  | https://sam.gov/workspace/contract/opp/acef0bc5a3c4410991b7ce08b29b6667/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | Five (5)-Year Indefinite Delivery Indefinite Quantity Contract for Desalinator, Hnd, OP | 2026-11-17 (4d) |  | https://sam.gov/workspace/contract/opp/5b9e3b6504d8415fa62c7f45f7fa15d0/view |
 | brownbison | samgov | DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U. | USAFA Rangeland Noxious Weed Control | 2026-11-18 (5d) |  | https://sam.gov/workspace/contract/opp/a0425fc603664d05a403cb9d9703551e/view |
@@ -271,6 +263,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (258d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (385d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
 
+## Documents downloaded
+
+- coloradovss:DQ1-PMAA-2027000176: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-PMAA-2027000176/DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement_ Installation and Electrical Upgrade.pdf
+
 ## Errors
 
+- bidnet: detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
