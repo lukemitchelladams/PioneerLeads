@@ -120,5 +120,29 @@
       "Exhibit A, Scope of Work.pdf"
     ],
     "asks": 0
+  },
+  "cpw-electrical-slv": {
+    "id": "1a1d66c90745e1e0",
+    "threadId": "1a1d66c90745e1e0",
+    "to": [],
+    "bcc_count": 6,
+    "attachments": [
+      "DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf",
+      "Exhibit A, Scope of Work.pdf"
+    ],
+    "asks": 0
+  },
+  "cpw-torres": {
+    "id": "1a1d66c96ac41789",
+    "threadId": "1a1d66c96ac41789",
+    "to": [
+      "office@torrespandh.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf",
+      "Exhibit A, Scope of Work.pdf"
+    ],
+    "asks": 0
   }
 }

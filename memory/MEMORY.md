@@ -2123,3 +2123,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   mailboxes to add locally, never in tracked files), but the files are not in the pushed branch yet at 19:40Z; HQ sends them from a
   scratchpad copy of the manifest (sent.json lands in the scratchpad, then the entry is copied into ops/outbox without addresses)
   as soon as they land.
+- 19:40Z: CPW electrical sweep sent from a scratchpad copy of the worker's manifest (named mailboxes added locally only): 6 electrical
+  firms bcc 1a1d66c90745e1e0 + Torres P&H 1a1d66c96ac41789. Exhibit A facts in the body verified against the PDF first (GFCI, emergency
+  cutoffs, 35,000 BTU, immersion heaters, garage heater all present). sent.json merged into ops/outbox/2026-11-13/ (ids + bcc_count only).
+  CPW now has 9 companies asked (1 declined); gate Mon 11/16 12:00 MT stands.
