@@ -2037,3 +2037,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Luke still silent (4th day). No sub replies.
 - CEO plan written: ops/plan_ceo/2026-11-13.md (PSD questions by 14:00 MT; BVCC/CPW walk attendee or NO-BID; La Plata rate by 17:00 or
   NO-BID; Friday 08:30 MT batch of 8; scanner item = VSS attachment download, subagent in a worktree now).
+- 14:24Z: Colorado VSS attachment download shipped (63bcb4f, cherry-picked from the worktree agent): coloradovss.download_docs via
+  the "[aria-label*='Attachment' i]" panel + file-row click inside expect_download; run.py downloads watched VSS bids without a login
+  (PUBLIC_DOCS). Suite 322 passed, 0 failed. Live check 14:21Z: CPW DQ1-PMAA-2027000176-1 PDF 295,044 bytes in 24 s, no errors.
+  Lesson: VSS grid link text is the VERSIONED id (bid["sol"] = "DQ1-PMAA-2027000176-1"); the bare id is "not on the public list".
