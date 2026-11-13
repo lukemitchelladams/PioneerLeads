@@ -2012,3 +2012,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - No new HQ scan since 10:36Z (bidnet 639 logged in, samgov 95, coloradovss 65/3, bonfire 2/1). 0 new. HQ added the CPW Exhibit A follow-up and Flow Right to the Friday batch (8 sends) and put the Arapahoe Q1 BidNet post on Luke's line.
 - DMARC check (inbox 1a1d49aaf9dbdced): 11/12 outbound mail from brownbisonco.com authenticates cleanly (16/16 DKIM+SPF pass via Google; the only DMARC fails were 2 copies relayed inside husmannplumbing.co, which shows Husmann received the CPW ask). Sub silence is not a spam-folder or auth problem.
 - Dashboard (11:40Z, worker): bids v304 (ce315680545e464ed9e8583a6d652c65), events v306 (494782d6d9f02d96b56a8da59aa0f623); portal_feed v158, sources v256, doc_gaps v11 unchanged.
+
+### 2026-11-13 11:45Z hourly (04:35 MT) scan, HQ
+- Logged in attempt 1 (09:38Z session); full pass in 6 min. Push f86592d, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 10:36-11:36Z: nothing. No email. Friday batch (8 sends) at 15:30Z.
