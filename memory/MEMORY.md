@@ -1961,3 +1961,14 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 07:55Z hourly (00:35 MT) scan, HQ
 - Launch waited 191 s for the cool-down; fresh login 07:43:37Z clean; full detail pass in ~7 min with NO budget cut (modal fix holds). Push 22f98bd, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 1 "new": BidNet 2722680182 = the SAM BGNDRF Alamogordo custodial notice mirrored on BidNet's aggregate list (same EVALUATE-low / NO-BID default; watchlist label ties them). Changed: three non-pursued bids' pre-bid dates re-read. 0 docs. Inbox 06:36-07:36Z: nothing. No email.
+- 08:xxZ w9t481tmw done (7 agents): **ops/insurance/2026-11-13-coverage-by-bid.md** gives the coverage limits each live bid needs, verified against the source PDFs, for Luke's policy purchase today. Drivers:
+  - CGL $2M occurrence / $2M aggregate / $2M products-completed ops (Widefield).
+  - E&O $1M / $3M plus extended reporting (PSD hood; an exception is allowed with the bid).
+  - Employee crime / third-party fidelity $1M per loss, plus master-key and care-custody-control endorsements (COS janitorial).
+  - Cyber $1M / $2M (Widefield).
+  - Employers liability $1M (COS, Canon City).
+  - Auto $1M (5 bids).
+  - No umbrella or pollution on any GO/REVIVE bid.
+  - Proof is due WITH the proposal only for Lafayette (COI or a statement of ability, plus loss run and OSHA 300A), COS 11/23 (Exhibit 1 with the insurer's name) and Arapahoe 26-64/26-57.
+  - Correction: Widefield GL is $2M (Att. A p.11), not $1M as the README said.
+- COS R26-080JW pre-built (README, FORMS-CHECKLIST, RESPONSE-DRAFT, SUBMISSION). **No live sub**: Sergeant Suds was stood down 11/03 (thread 1a183668e7d49de9) and never re-engaged. The pipeline's "pricing by 11/16" was stale (fixed). HQ messaged to re-engage or default NO-BID.

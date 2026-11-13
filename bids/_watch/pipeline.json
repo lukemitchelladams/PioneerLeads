@@ -665,14 +665,15 @@
    "due_source": "BidNet listing date",
    "portal": "BidNet",
    "decision": "REVIVE",
-   "decision_note": "Found 2026-10-26 scan. Docs queued on watchlist; check walk first. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): R26-080JW due 2026-11-23 14:30 MST; no pre-proposal; price ranked first; employee crime coverage $1M per loss (INSURANCE GATE). 7 janitorial firms drafted 10/28 with RFP zip. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): no COI at bid; $1M employee crime at award. Mac stood EC down 11/03 (crime/master-key). Sergeant Suds + EC pricing by 11/16; due 11/23 14:30.",
+   "decision_note": "Found 2026-10-26 scan. Docs queued on watchlist; check walk first. | 2026-10-28 triage (bids/_watch/triage-2026-10-28.md): R26-080JW due 2026-11-23 14:30 MST; no pre-proposal; price ranked first; employee crime coverage $1M per loss (INSURANCE GATE). 7 janitorial firms drafted 10/28 with RFP zip. | 2026-11-05 revival audit (bids/_watch/revival-audit-2026-11-05.md): no COI at bid; $1M employee crime at award. Mac stood EC down 11/03 (crime/master-key). Sergeant Suds + EC pricing by 11/16; due 11/23 14:30. | 11/13 08:xxZ worker pre-build (README, FORMS-CHECKLIST, RESPONSE-DRAFT, SUBMISSION; no prices; RFP filed in docs/). No live sub: the 'Sergeant Suds pricing by 11/16' line was stale. Insurance at award: CGL with master-key and care-custody-control endorsements, EL $1M, auto $1M, employee crime / third-party fidelity $1M per loss (p.39); Exhibit 1 with the insurer's name goes in WITH the proposal (pp.22-23). Materials at cost, no markup (p.54): margin sits in labor rates. Sub must be named in the proposal (p.44).",
    "prebid": null,
    "prebid_mandatory": null,
    "performer": "Janitorial sub TBD",
    "subs": "Sergeant Suds Cleaning Services (only live sub)",
-   "sub_pricing": "Pending: Sergeant Suds (Nick Brown, GM) confirmed 10/28 to price by Mon 11/16. Environment Control was STOOD DOWN 11/03 (crime / master-key concern; do-not-contact list) and is not a live line. Reconciled 11/13 per the worker.",
+   "sub_pricing": "None (11/13 worker check, Gmail read-only: Sergeant Suds was stood down 11/03 on thread 1a183668e7d49de9 and never re-engaged; Environment Control stood down 11/03. No live sub.)",
    "folder": "bids/cos-oncall-janitorial",
-   "contact": "not in hand"
+   "contact": "not in hand",
+   "next": "HQ: re-engage Sergeant Suds on its thread (or one new company) and chase the 10/28 group today; pricing by Mon 11/16, hard cutoff Wed 11/18 12:00 MT, else NO-BID (Luke overrules by 11/18 17:00). Due Mon 11/23 14:30 MST on BidNet."
   },
   {
    "id": "cos-oncall-snow",
