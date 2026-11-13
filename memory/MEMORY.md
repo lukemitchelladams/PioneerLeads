@@ -2178,3 +2178,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Launched 22:36:33Z via launch_scan.sh; saved 21:37Z session dead again (keepalive gone between launches), fresh login 22:36:48Z attempt 1,
   no robot check; EXIT 0; pushed db35b22. bidnet 641/83 | samgov 97/97 | coloradovss 71/3. New matches 0, docs 0 (one BidNet match closed:
   84 -> 83). Inbox: only the two BGNDRF bounces already logged; nothing from BVCC/La Plata subs with the 17:00 MT cutoff 75 min out.
+
+### 2026-11-13 23:43Z hourly (16:35 MT) scan, HQ
+- Launched 23:36:04Z via launch_scan.sh; fresh login 23:37:18Z attempt 1 (saved session dead again), no robot check; EXIT 0; pushed c0a7a7e.
+  bidnet 636/82 | samgov 97/97 | coloradovss 68/3. New matches 0, docs 0. Inbox quiet. La Plata cutoff 17:00 MT (00:00Z) arrives with no
+  Durango rate: NO-BID to be logged at the 17:35 MT tick unless a rate lands in the next 15 min. BVCC cutoff moved to Mon 12:00 (tier 3 asked today).
