@@ -40,3 +40,5 @@ Breeze Hood Cleaning, Supreme Hood Cleaning (Fort Collins listing), Front Range 
 The walk is done (Carlos signed in for Brown Bison), so an alternate can price from HOODZ's walk notes and photos (private/WALK-NOTES-2026-11-10.md).
 
 - 2026-11-12 20:4xZ (13:4x MT, HQ, 7.1 hedge per the 11/12 work order): alternate certified hood cleaners asked as a bcc group, msg 1a1d17a710e4b459: Aqua Strong Hood Cleaning (info@aquastronghc.com, says NFPA 96 certified techs, Fort Collins page), Elite Hood Cleaning (info@elitehoodcleaning.com), Brotherhood Cleaning (Info@BrotherhoodUSA.com). Attached IFB, Attachment A, C, D and the Addendum hood list. Asked by Mon 11/16: per-site inspection and cleaning prices, hourly repair rate, certification copies. HOODZ stays the primary; Larry gets the certification/registration question Fri 11/13 08:30 MT (one email per company per day).
+
+- 2026-11-13 15:59Z (08:59 MT), HQ: HOODZ (Larry Moss cc Carlos Ahedo) certification/registration question, reply in thread 1a1a878f8cda76a3, msg 1a1d5a22bbc07c56; answer asked by Mon 11/16. Humanize gate PASS; sent via scripts/send_outbox.py (ops/outbox/2026-11-13/outbox-friday-batch.json).

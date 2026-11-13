@@ -74,3 +74,5 @@ this public file.** Night work 7 PM-6 AM, five nights a week at the Court; the P
 | B | EZE Cleaning Service, LLC | Pueblo | personal-name address (sent to HQ) | Commercial/janitorial first; small, family-run. |
 | C | Alfonso's Janitorial | Pueblo | alfonsosjanitorial@comcast.net | Third-party listing only; may be stale. |
 | C | All American Maid LLC | Canon City | allamericanmaid16@yahoo.com | Mostly residential, weekday hours: weak fit for nights. |
+
+- 2026-11-13 15:59Z (08:59 MT), HQ: Pike's Cleaning (pikescleaning4u@gmail.com) with the Janitorial Bid + PSA, msg 1a1d5a27ce9f39f5. Humanize gate PASS; sent via scripts/send_outbox.py (ops/outbox/2026-11-13/outbox-friday-batch.json).

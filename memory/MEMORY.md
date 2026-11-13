@@ -2060,3 +2060,12 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - HQ 14:51Z scan (launched by hand after a missed trigger): bidnet 641 logged in, samgov 97, coloradovss 65/3, bonfire 2/1; 0 new. HQ set Westminster to NO-BID by rule 0. Husmann declined CPW.
 - Gmail connector back for the worker. **The Friday 08:30 MT batch (8 sends) was not in Sent by 15:59Z**. Worker alerted HQ: BVCC and La Plata are due 17:00 MT today.
 - Dashboard (16:05Z, worker): bids v307 (689f46e85dd104796dc77d0454ab2ad4), events v309 (97373288411b804167e9cf33a8e6a325), portal_feed v161 (6fc7342a1028d336d276d89e90e13942), sources v259 (567fac9695d74ce738b1e6cb89f5f73f), doc_gaps v11 unchanged.
+### 2026-11-13 15:59Z Friday 08:30 MT batch sent (HQ, 29 min late after two worker-process restarts)
+- 8 sends, 0 refused: HOODZ Larry certification (thread 1a1a878f8cda76a3 -> 1a1d5a22bbc07c56); Ceres/Arapahoe 26-64 (1a1d5a23ad50d6b9);
+  BVCC tier 3 RK Water + Chem-Aqua + ISI (1a1d5a24d06ac325); Canon City HVAC backups Haynes + CMS + Tolin (1a1d5a25a31dfb5a); Aims
+  Metropolis + Sonlight (1a1d5a26e0977eb1); Pike's Cleaning / Canon janitorial (1a1d5a27ce9f39f5); CPW Exhibit A -> Surefire only
+  (1a1d5a2835ac51db); CPW full ask -> Flow Right (1a1d5a289f443c61). Logged in each sub-outreach.md and pipeline.json.
+- 14:51Z hand-launched scan: session reused, robot check #11 on a detail page, cool-down to 16:56:13Z, pushed c9e7682, 1 doc (CPW DQ by the
+  new VSS download path, first live scanner use). Hourly trigger for 14:35Z fired at 15:39Z; CEO trigger for 13:44Z fired 14:52Z.
+- Lesson: the worker-process restart kills background Monitors and keepalive and drops pending send_message approvals; after a restart,
+  re-check scan logs by file, not by task notification, and re-ensure keepalive at the next launch.

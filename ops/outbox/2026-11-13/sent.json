@@ -18,5 +18,107 @@
     ],
     "bcc_count": 0,
     "attachments": []
+  },
+  "hoodz-larry-certification": {
+    "id": "1a1d5a22bbc07c56",
+    "threadId": "1a1a878f8cda76a3",
+    "to": [
+      "larry.moss@hoodz.us.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0
+  },
+  "ceres-arapahoe-courthouse": {
+    "id": "1a1d5a23ad50d6b9",
+    "threadId": "1a1d5a23ad50d6b9",
+    "to": [
+      "ceresconstruction@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "RFB-26-64.pdf"
+    ],
+    "asks": 0
+  },
+  "bvcc-rk-chemaqua-isi": {
+    "id": "1a1d5a24d06ac325",
+    "threadId": "1a1d5a24d06ac325",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf",
+      "1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf",
+      "2. Exhibit B - Required Vendor Information - Services.pdf",
+      "3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+      "4. Exhibit D - Price Quote.xlsx",
+      "5. Exhibit E - Contract Performance Outside of the US.pdf",
+      "6. Exhibit F - Non-Conflict of Interest.pdf",
+      "7. Exhibit G - Consent to Search.pdf",
+      "8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+      "9. Attachment 2 - Insurance Information.pdf"
+    ],
+    "asks": 0
+  },
+  "canon-haynes-cms-tolin": {
+    "id": "1a1d5a25a31dfb5a",
+    "threadId": "1a1d5a25a31dfb5a",
+    "to": [],
+    "bcc_count": 3,
+    "attachments": [
+      "129-26 Boiler chiller.pdf",
+      "PSA Form-A061225.pdf"
+    ],
+    "asks": 0
+  },
+  "aims-metropolis-sonlight": {
+    "id": "1a1d5a26e0977eb1",
+    "threadId": "1a1d5a26e0977eb1",
+    "to": [],
+    "bcc_count": 2,
+    "attachments": [
+      "Window Cleaning Services Final.pdf",
+      "Greeley Campus Building Pictures.pdf",
+      "Greeley Campus Map to F_O.pdf"
+    ],
+    "asks": 0
+  },
+  "canon-janitorial-pikes": {
+    "id": "1a1d5a27ce9f39f5",
+    "threadId": "1a1d5a27ce9f39f5",
+    "to": [
+      "pikescleaning4u@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Janitorial Bid _2026-10-30_.pdf",
+      "PSA Form-A061225.pdf"
+    ],
+    "asks": 0
+  },
+  "cpw-surefire-exhibitA": {
+    "id": "1a1d5a2835ac51db",
+    "threadId": "1a1d5a2835ac51db",
+    "to": [
+      "surefirehvacr@gmail.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Exhibit A, Scope of Work.pdf"
+    ],
+    "asks": 0
+  },
+  "cpw-flowright": {
+    "id": "1a1d5a289f443c61",
+    "threadId": "1a1d5a289f443c61",
+    "to": [
+      "dispatch@flowrightphi.com"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf",
+      "Exhibit A, Scope of Work.pdf"
+    ],
+    "asks": 0
   }
 }

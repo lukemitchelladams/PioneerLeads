@@ -20,3 +20,5 @@ TSA badge at the airport; bidder walks every campus before pricing; price firm f
 | C | A+ Professional Window Cleaning | Greeley | apluswindowcleaners@gmail.com | Since 2002, BBB-accredited; homes + commercial. |
 
 Dropped: Ease Your Panes (Denver metro only, residential focus).
+
+- 2026-11-13 15:59Z (08:59 MT), HQ: bcc Metropolis Window Cleaning (info@metropoliswindowcleaning.com), Sonlight Window (info@sonlightwindow.com) with the RFP, building pictures and campus map, msg 1a1d5a26e0977eb1. Humanize gate PASS; sent via scripts/send_outbox.py (ops/outbox/2026-11-13/outbox-friday-batch.json).

@@ -1,0 +1,111 @@
+[
+ {
+  "key": "hoodz-larry-certification",
+  "subject": "Re: Kitchen hood cleaning subcontract: Poudre School District site visit Tuesday 1:30 PM",
+  "to": [
+   "larry.moss@hoodz.us.com"
+  ],
+  "cc": [
+   "carlos.ahedo@hoodz.us.com"
+  ],
+  "thread": "1a1a878f8cda76a3",
+  "body_file": "ops/outbox/2026-11-13/hoodz-larry-certification.txt",
+  "files": []
+ },
+ {
+  "key": "ceres-arapahoe-courthouse",
+  "subject": "Arapahoe County Courthouse I drywall and paint, RFB 26-64: drywall and paint sub",
+  "to": [
+   "ceresconstruction@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/ceres-arapahoe-courthouse.txt",
+  "files": [
+   "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64/docs/RFB-26-64.pdf"
+  ]
+ },
+ {
+  "key": "bvcc-rk-chemaqua-isi",
+  "subject": "CDOC Buena Vista boiler chemical treatment, DQ 2027000132: water-treatment sub",
+  "bcc": [
+   "sales@rkindustries.com",
+   "info@chemaqua.com",
+   "info@isiwater.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/bvcc-rk-chemaqua-isi.txt",
+  "files": [
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/0. DQ 27-0132 Boiler Chemicals _ Treatment SRVS - BVCC.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/2. Exhibit B - Required Vendor Information - Services.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/4. Exhibit D - Price Quote.xlsx",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/5. Exhibit E - Contract Performance Outside of the US.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/6. Exhibit F - Non-Conflict of Interest.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/7. Exhibit G - Consent to Search.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/8. Attachment 1 - PO Terms and Conditions 090926.pdf",
+   "bids/doc-bvcc-boiler-chemicals-dq27-0132/docs/9. Attachment 2 - Insurance Information.pdf"
+  ]
+ },
+ {
+  "key": "canon-haynes-cms-tolin",
+  "subject": "Canon City boiler and chiller maintenance, RFP 129-26: HVAC service sub",
+  "bcc": [
+   "info@haynesmechanical.com",
+   "contact@coloradomech.com",
+   "customerservice@tolin.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/canon-haynes-cms.txt",
+  "files": [
+   "bids/canon-city-boiler-chiller-maintenance/docs/129-26 Boiler chiller.pdf",
+   "bids/canon-city-boiler-chiller-maintenance/docs/PSA Form-A061225.pdf"
+  ]
+ },
+ {
+  "key": "aims-metropolis-sonlight",
+  "subject": "Aims Community College window cleaning, RFP 2627-009: window-cleaning sub",
+  "bcc": [
+   "info@metropoliswindowcleaning.com",
+   "info@sonlightwindow.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/aims-metropolis-sonlight.txt",
+  "files": [
+   "bids/aims-cc-window-cleaning-2627-009/docs/Window Cleaning Services Final.pdf",
+   "bids/aims-cc-window-cleaning-2627-009/docs/Greeley Campus Building Pictures.pdf",
+   "bids/aims-cc-window-cleaning-2627-009/docs/Greeley Campus Map to F_O.pdf"
+  ]
+ },
+ {
+  "key": "canon-janitorial-pikes",
+  "subject": "Canon City janitorial services bid: janitorial sub",
+  "to": [
+   "pikescleaning4u@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/canon-janitorial-pikes.txt",
+  "files": [
+   "bids/canon-city-janitorial/docs/Janitorial Bid _2026-10-30_.pdf",
+   "bids/canon-city-janitorial/docs/PSA Form-A061225.pdf"
+  ]
+ },
+ {
+  "key": "cpw-surefire-exhibitA",
+  "subject": "CPW Native Aquatic Species Facility heater replacement, Alamosa (DQ1 PMAA 2027*0176): Exhibit A scope of work",
+  "to": [
+   "surefirehvacr@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/cpw-surefire-exhibitA.txt",
+  "files": [
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/Exhibit A, Scope of Work.pdf"
+  ]
+ },
+ {
+  "key": "cpw-flowright",
+  "subject": "CPW Native Aquatic Species Facility heater replacement, Alamosa (DQ1 PMAA 2027*0176): mechanical and electrical sub",
+  "to": [
+   "dispatch@flowrightphi.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/cpw-flowright.txt",
+  "files": [
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/DQ1 PMAA 2027_0176 - CPW Native Aquatic Species Facility Heater Replacement Installation and Electrical Upgrade.pdf",
+   "bids/cpw-alamosa-heater-replacement-dq1-2027000176/docs/Exhibit A, Scope of Work.pdf"
+  ]
+ }
+]
