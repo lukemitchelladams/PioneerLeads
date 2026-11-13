@@ -21,3 +21,7 @@ question deadline (11/23) and the proposal deadline (12/04).
 1. Luke decides whether YMS prices it (board DECIDE with the RTD call). If yes: Luke sends Alex the RFP; HQ builds the
    response package (single PDF) and the question list by Mon 11/23 12:00; submission on BidNet by Fri 12/04 17:00 MST.
 2. No decision by Fri 11/20 17:00 MT -> NO-BID logged.
+3. Pre-build (2026-11-12, no prices): FORMS-CHECKLIST.md (every required item, Exhibit A finding, open gaps), RESPONSE-DRAFT.md
+   (single-PDF Parts 0-9, all figures [PRICE: private/]), SUBMISSION.md (BidNet single PDF by Fri 12/04 17:00 MST, countdown),
+   QUESTIONS-DRAFT.md (Q1-Q10, HQ default post on BidNet Tue 11/17; deadline Mon 11/23 12:00 MST). Exhibit A is not labeled in
+   the package (maps pp.6-45 stand in) and the p.4 "sample agreement" is not posted: Q1, Q7.
