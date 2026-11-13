@@ -2024,3 +2024,16 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-13 12:46Z hourly (05:35 MT) scan, HQ
 - Fresh login 12:36:59Z clean; full pass in 6 min. Push 471b83e, EXIT 0. bidnet 639/83, samgov 95/95, coloradovss 65/3, bonfire 2/1. 0 new, 0 docs. Inbox 11:36-12:36Z: nothing. No email. Next: 13:44Z CEO plan trigger (write ops/plan_ceo/2026-11-13.md), 15:30Z Friday batch (8 sends).
+
+### 2026-11-13 13:58Z hourly (06:35 MT) scan, HQ
+- Trigger fired late (13:49Z); launched 13:51:41Z; fresh login 13:52:06Z attempt 1, no robot check; EXIT 0; pushed d172de7.
+  Counts bidnet 639/83 | samgov 97/97 | coloradovss 65/3 | bonfire 2/1. Docs downloaded 0. Bonfire detail still Cloudflare-blocked.
+- 2 new SAM matches, both NO (watchlist labels added): VA NCO 19 36C25927Q0057 "Temporary Boiler Rental & Maintenance", Grand Junction,
+  due 11/16 15:00 MT = INTENT TO SOLE SOURCE to Ivan Ware & Son dba Ware ("THIS IS NOT A SOLICITATION OR REQUEST FOR OFFERS"), 3 docx
+  pulled to bids/_watch/downloads/samgov/11556cfdf4ce4775a7878c5d4d8427a1/; DLA Aviation "Multi NSN LTC" FSC 3110 Timken OEM sole source
+  (CAGE 21335/60038), closes 11/28: Jones Bearing not a Timken distributor on record -> NO.
+- All MCP connectors (Gmail, GovTribe, Drive...) failed to connect this turn. Wrote scripts/inbox_list.py (read-only listing via the
+  local GMAIL_* token, same auth as gmail_api.py) and polled: 0 inbox messages in the last 2 h (same exclusions as the connector query).
+  Luke still silent (4th day). No sub replies.
+- CEO plan written: ops/plan_ceo/2026-11-13.md (PSD questions by 14:00 MT; BVCC/CPW walk attendee or NO-BID; La Plata rate by 17:00 or
+  NO-BID; Friday 08:30 MT batch of 8; scanner item = VSS attachment download, subagent in a worktree now).
