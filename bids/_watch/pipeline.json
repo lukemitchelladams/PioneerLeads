@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-13T00:43:23Z",
+ "updated": "2026-11-13T05:48:10Z",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -669,8 +669,8 @@
    "prebid": null,
    "prebid_mandatory": null,
    "performer": "Janitorial sub TBD",
-   "subs": "7 drafted 10/28",
-   "sub_pricing": "Pending (Sergeant Suds Cleaning Services, Nick Brown GM, confirmed 10/28 they will price by Mon 11/16; Environment Control / EC Company, Ryan Steinseifer, engaged 10/30 09:12 MT, pricing by Mon 11/16; proposals due 11/23)",
+   "subs": "Sergeant Suds Cleaning Services (only live sub)",
+   "sub_pricing": "Pending: Sergeant Suds (Nick Brown, GM) confirmed 10/28 to price by Mon 11/16. Environment Control was STOOD DOWN 11/03 (crime / master-key concern; do-not-contact list) and is not a live line. Reconciled 11/13 per the worker.",
    "folder": "bids/cos-oncall-janitorial",
    "contact": "not in hand"
   },
@@ -1810,17 +1810,17 @@
    "sol": "BidNet 0000443426",
    "trade": "Landscaping / grounds (Alex Ditto, YMS, is our landscaping sub; Luke handles all Alex contact)",
    "due": "2026-12-04T17:00:00-07:00",
-   "due_source": "BidNet list: Closing 12/04/2026 (time, pre-bid and scope not read: detail pass budget-cut)",
+   "due_source": "RFP: 'no later than Friday, December 4, 2026 at 5:00 PM MST' via BidNet, single PDF",
    "portal": "BidNet (watched; documents download on the next scan that reaches it)",
-   "decision": "EVALUATE (flag for Luke: landscaping is YMS's trade; if the RFP has a mandatory walk and no YMS person attends -> NO-BID per the 11/12 rule)",
-   "decision_note": "Surfaced 2026-11-12 23:47Z scan. Operators do not contact Alex; Luke decides whether YMS prices it (board DECIDE with the RTD call). Read the documents first: pre-bid, term, site list. | 11/13 03:4xZ worker search: RFP text is not public (BidNet login wall; district site is tprd.org). Watch for a MANDATORY tour: the district's last BidNet ITB (Spring Creek Park Pavilion, 0000440811) said 'A site tour will be held ... Attendance is mandatory.' Likely incumbent: Environmental Designs (Nov 2025 board agenda: '2026 Annual Maintenance Contract with Environmental Designs Approval'). Read the RFP the hour its docs download.",
+   "decision": "EVALUATE (flagged for Luke: YMS trade, no walk required; Luke decides by Fri 11/20 17:00 MT or NO-BID)",
+   "decision_note": "RFP read 11/13 05:5xZ: year-round landscape maintenance across TPRD parks (300+ acres, 3 facilities) + T&M snow at 2 in; term 1 yr from 2027-01-01 + 3 renewals; questions via BidNet by Mon 11/23 12:00 MST; due Fri 12/04 17:00 MST; subs allowed. Operators do not contact Alex.",
    "prebid": null,
-   "prebid_mandatory": null,
+   "prebid_mandatory": false,
    "performer": "Brown Bison bids; YMS performs",
    "subs": "YMS Landscaping (via Luke)",
    "sub_pricing": "None",
-   "folder": null,
-   "contact": "-"
+   "folder": "bids/trails-rec-landscape-maintenance-tprdlmc27",
+   "contact": "Sean Bowering, Parks Manager, Sean.Bowering@tprd.org"
   },
   {
    "id": "bor-140rr027q0001-bgndrf-custodial",
@@ -1840,6 +1840,25 @@
    "sub_pricing": "None",
    "folder": null,
    "contact": "savanna_manning@ios.doi.gov"
+  },
+  {
+   "id": "dla-spe8ef27t0307-conveyor-roller-gravity",
+   "agency": "DLA Troop Support",
+   "title": "39--CONVEYOR, ROLLER, GRAVITY (NSN 3910-00-260-0171), qty 12 + 1 EA to DLA Distribution Warner Robins",
+   "sol": "SPE8EF27T0307 (SAM.gov 8ee23fef72864e098371e6c454010831)",
+   "trade": "Jones Bearing / American Pulley supply (conveyor rollers)",
+   "due": "2026-11-23T00:00:00-05:00",
+   "due_source": "SAM.gov closing 2026-11-23 (DIBBS return-by time to be read on DIBBS)",
+   "portal": "DIBBS (electronic quotes only; cloud access prohibited)",
+   "decision": "EVALUATE (same track as SPE8EF27T0258: GO if the NSN is an American Pulley / ConveyMor roller)",
+   "decision_note": "Surfaced 2026-11-13 05:44Z scan (brief: NSN 3910-00-260-0171 | qty 12 EA, 1 EA). 12 EA 342 days ADO + 1 EA 180 days ADO, Warner Robins. Pair with SPE8EF27T0258 (x334) for one Jones Bearing price ask once the DIBBS tech data is pulled.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "performer": "Brown Bison dealer quote; Jones Bearing supplies",
+   "subs": "Jones Bearing (Luke's dad)",
+   "sub_pricing": "Not asked yet (tech data first)",
+   "folder": "bids/_jones-bearing/notices/8ee23fef72864e098371e6c454010831",
+   "contact": "-"
   }
  ],
  "events": [

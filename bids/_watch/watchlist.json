@@ -737,11 +737,11 @@
    "govtribe_ids": []
   },
   {
-   "name": "Trails Park & Rec District Landscape Maintenance Contract Services (EVALUATE; YMS via Luke; due 12/04)",
+   "name": "Trails Park & Rec District TPRDLMC27 Landscape Maintenance (EVALUATE, Luke/YMS; no walk; Q by 11/23 12:00; due 12/04 17:00)",
    "source": "bidnet",
    "id": "0000443426",
    "match": "0000443426",
-   "folder": null,
+   "folder": "bids/trails-rec-landscape-maintenance-tprdlmc27",
    "govtribe_ids": []
   },
   {
@@ -758,6 +758,22 @@
    "match": "On-Call Services - Various Trades",
    "folder": "bids/laplata-oncall-trades",
    "govtribe_ids": []
+  },
+  {
+   "name": "DLA SPE8EF27T0307 Conveyor Roller Gravity NSN 3910-00-260-0171 x12+1 (Jones Bearing EVALUATE; DIBBS; due 11/23)",
+   "source": "samgov",
+   "match": "SPE8EF27T0307",
+   "folder": "bids/_jones-bearing/notices/8ee23fef72864e098371e6c454010831"
+  },
+  {
+   "name": "DLA SPE7LX27U0863 Pulley, Groove NSN 3020-01-219-8704 x254 IDC (NO: approved sources CAGE 25337 / 78286 only; distributor status not on record)",
+   "source": "samgov",
+   "match": "SPE7LX27U0863"
+  },
+  {
+   "name": "DLA Pulley, Flat NSN 3020-01-308-0759 x13 (NO: approved-source part, no drawings, small qty)",
+   "source": "samgov",
+   "match": "SPE7LX27U0972"
   }
  ]
 }
