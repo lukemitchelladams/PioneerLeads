@@ -1840,9 +1840,10 @@
    "prebid_mandatory": false,
    "performer": "Brown Bison bids; local janitorial sub performs",
    "subs": "none; worker sweep for Alamogordo NM cleaners if pursued",
-   "sub_pricing": "None",
+   "sub_pricing": "None. 11/13 21:2xZ worker sweep: 15 verified Alamogordo/Las Cruces/El Paso janitorial firms (ops/research/2026-11-13-bgndrf-alamogordo-janitorial-subs.md); ready bcc to 7 for HQ (ops/outbox/2026-11-13/outbox-bgndrf-janitorial.json), yes/no by Mon 11/16 12:00, monthly price by Wed 11/25.",
    "folder": null,
-   "contact": "savanna_manning@ios.doi.gov"
+   "contact": "savanna_manning@ios.doi.gov",
+   "next": "HQ: send the BGNDRF sub ask today (gate Mon 11/16 12:00 MT). If a sub says yes: open bids/bor-140rr027q0001-bgndrf-custodial/ from the template, and Luke adds NAICS 561720 to SAM (same item as Pagosa). Q&A amendment expected on or before 11/20."
   },
   {
    "id": "dla-spe8ef27t0307-conveyor-roller-gravity",

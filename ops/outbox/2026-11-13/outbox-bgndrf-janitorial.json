@@ -1,0 +1,23 @@
+[
+ {
+  "key": "bgndrf-janitorial",
+  "subject": "Reclamation BGNDRF custodial, Alamogordo (RFQ 140RR027Q0001): cleaning sub for Brown Bison",
+  "bcc": [
+   "slcleaningservices23@gmail.com",
+   "pristinecleanj@gmail.com",
+   "admin@tiguainc.org",
+   "chase.n.dirt@gmail.com",
+   "llsolutionslc@gmail.com",
+   "alamojanitorial@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-13/bgndrf-janitorial.txt",
+  "files": [
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Sol_140RR027Q0001.pdf",
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Sol_140RR027Q0001_Amd_0002.pdf",
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_1_-_Performance_Work_Schedule_Custodial.pdf",
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_2_-_Price_Schedule.docx",
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_3_-_Wage_Determination__28Otero_County_-_2015-5455_29.pdf",
+   "bids/_watch/downloads/samgov/b2e58c41cb4c4787813fbc1f31ea81f7/Attachment_4_-_BGNDRF_Floor_Plan_with_notations.pdf"
+  ]
+ }
+]
