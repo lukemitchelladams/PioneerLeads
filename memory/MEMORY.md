@@ -2069,3 +2069,13 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   new VSS download path, first live scanner use). Hourly trigger for 14:35Z fired at 15:39Z; CEO trigger for 13:44Z fired 14:52Z.
 - Lesson: the worker-process restart kills background Monitors and keepalive and drops pending send_message approvals; after a restart,
   re-check scan logs by file, not by task notification, and re-ensure keepalive at the next launch.
+
+### 2026-11-13 16:39Z hourly (worker; scheduled 16:21Z)
+- HQ sent the Friday batch at ~16:1xZ (1bc3a44): 8 subs across 7 bids:
+  - BVCC: RK Water, Chem-Aqua, ISI
+  - Canon City HVAC: Haynes, CMS
+  - Aims: Metropolis, Sonlight
+  - Others: Pike's (Canon janitorial), Surefire (CPW Exhibit A), Flow Right (CPW full ask), HOODZ (certification), Ceres (Arapahoe)
+- HQ 16:01Z scan: BidNet BLIND (robot check #11, cool-down to 16:56:13Z), samgov 97, coloradovss 65/3, bonfire 2/1.
+- Inbox: no replies to the batch yet, no bounces.
+- Dashboard (16:50Z, worker): bids v308 (8d7d0650d21acf716044d679fbddeb95), events v310 (cedd0c98b07f6d7e33acaf0f43afa475), sources v260 (dcea62cf484c9aed3d38ba5a56d007ab); portal_feed v161 + doc_gaps v11 unchanged.
