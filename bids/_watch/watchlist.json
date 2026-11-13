@@ -750,6 +750,14 @@
    "match": "140RR027Q0001",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "La Plata County IFB 26-053-1215 On-Call Services - Various Trades (GO; due Tue 11/17 10:00 MST by email)",
+   "source": "bidnet",
+   "id": "0000441130",
+   "match": "On-Call Services - Various Trades",
+   "folder": "bids/laplata-oncall-trades",
+   "govtribe_ids": []
   }
  ]
 }

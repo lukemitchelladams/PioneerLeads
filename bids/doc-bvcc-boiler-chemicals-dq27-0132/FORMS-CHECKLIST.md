@@ -1,0 +1,97 @@
+# FORMS CHECKLIST: Colorado DOC DQ 2027000132, Boiler Chemicals & Treatment Services at BVCC
+
+**MANDATORY SITE VISIT: Wed 2026-11-18 10:00 MST at Buena Vista Correctional Complex, 15125 HWY 24 & 85, Buena Vista, CO
+81211.** DQ p.1 schedule: "MANDATORT SITE VISIT: Site visit will be held at Buena Vista Correctional Facility ...
+11/18/2026 @ 10:00am". DQ sec. 4 (p.2): "Bidders interested in submitting a quote for these services must attend the
+scheduled Mandatory Site Visit." Exhibit A sec. 2.i (p.1): "all bidders interested in submitting a bid/quote for these
+services must attend the Mandatory Site Visit scheduled for 10:00am November 18, 2026." Clearance: "email the signed consent
+form (Exhibit G) and photo ID copy for all attendees to: cynthia.alexander@state.co.us, gregory.jennings@state.co.us,
+bradley.johnson@state.co.us and garett.grover@state.co.us no later than November 16, 2026" (DQ sec. 4). The attendee is the
+water-treatment subcontractor's technician, signing in for Brown Bison Holdings LLC; the Exhibit G and photo ID are the
+technician's, never Luke's (CLAUDE.md 2026-11-12 rule). **Gate: no sub with a named walking technician by Fri 2026-11-13
+17:00 MT = NO-BID** (ops/plan_ceo/2026-11-12.md row 2; sub-outreach.md 11/12 ask).
+
+No prices in this file. Page numbers are the printed page numbers of the documents in `docs/`: "DQ" = `0. DQ 27-0132 ...pdf`
+(12 pp.); "Ex. A" = Exhibit A SOW / Bidder Response (6 pp.); "Att. 1" = PO Terms and Conditions (18 pp.); "Att. 2" =
+Insurance Information (3 pp.). Pre-built 2026-11-12; completeness pass 2026-11-13 (rows 29-32 added, rows 1, 6, 7, 9, 11, 12, 16 and Q15 corrected). Draft text for every item is in `RESPONSE-DRAFT.md` (Part numbers
+below); method, deadline and countdown are in `SUBMISSION.md`.
+
+**Submission (DQ 9.A.ii, p.4):** "Bidder(s) shall only submit Quotes, attachments, modification or withdrawals via
+bidnetdirect.com//cdoc. The Quote submission should include the subject line: "Quote submission from (Insert Bidder(s) Name)
+for DQ 2027000132 Boiler Chemicals & Treatment SRVS – BVCC. No other electronic submission methods or hard copy submittals
+will be accepted." Deadline (DQ p.1): "Quote Submission Deadline 11/30/26 @ 2:00pm ... A Quote sent at 2:01 pm MST is
+considered late." BidNet 0000442938.
+
+**Dates:** walk Wed 2026-11-18 10:00 (MANDATORY); Exhibit G + ID to CDOC by Mon 2026-11-16; written inquiries on BidNet by
+Mon 2026-11-23 12:00 (DQ p.1: "NOTE: No inquiries will be accepted after this date."); CDOC answers ~2026-11-25 (estimated);
+quote due Mon 2026-11-30 14:00 MST, upload by 13:00 (DQ 9.A.v "no later than one hour prior"); Notice of Intent to Award
+~2026-12-03 (estimated); PO start "December 8, 2026, or after the contract or purchase order has been fully executed" (DQ
+sec. 5).
+
+**Package check (rule 0c):** `docs/MANIFEST.md` (doc_manifest.py, 2026-11-13 01:23Z) shows all ten posted files in hand: DQ,
+Exhibits A-G, Attachments 1-2. Its three "MISSING" rows are false positives: "Attachment I" is Attachment 1 (DQ 3.B spells it
+that way), "Form SS" is the IRS SS-4 mentioned inside the W-9 instructions, "Appendix II" is a reference inside Att. 1
+Addendum 2. Modifications: none in `docs/` as of 2026-11-12; DQ 7.B.iii puts the check on us ("It is the Bidder(s) sole
+responsibility to check Colorado VSS and bidnetdirect.com//cdoc on a regular basis"). Re-check 11/23, 11/25 and the morning of
+11/30.
+
+What must go back with the quote, quoted: DQ 13.A.iv (p.8): "they must return Exhibits, A, B, C, D, E, F, and G
+(incorporated into this DQ as an Exhibit) with Quote. Failure to provide the required documentation may result in Quote
+being disqualified." DQ 12.B (p.7) lists the same seven plus "viii. Certificate of Insurance – See Attachment 2 for
+additional information." Attachments 1 and 2 are "Informational Only" (DQ 7.A table, p.3).
+
+Status key: **HQ** = HQ writes/prefills; **SUB** = the water-treatment subcontractor supplies; **LUKE** = signature, portal
+action, or a fact only Luke has.
+
+| # | Item | Where (document / page / section) | Who fills | What is needed | Status |
+|---|------|-----------------------------------|-----------|----------------|--------|
+| 1 | **Exhibit A sec. 10 Vendor Questions** (15 answers: name, years, employees, Exhibit E, nonresident, accessibility, SOS, PO terms, spoken to SPOC only, SDVOSB, defaults, litigation, taxes, subcontractors, Exhibits A-G) | Ex. A pp.4-5 sec. 10 "(please provide response)"; header p.1 "EXHIBIT A (Complete and Return)" | HQ prefills; LUKE confirms SDVOSB, defaults, litigation, taxes | Drafted (Part 1) | Drafted; 4 LUKE confirms |
+| 2 | **Exhibit A SOW response**: written answer to Ex. A secs. 2-9 (monthly service, testing, 24-hour response, chemicals, reagents, training, consulting, technician credentials, security, notice, invoicing, equal products) | DQ 12 (p.7): "Quotes must clearly demonstrate the organization's ability to perform the services described in the DQ"; 12.A: no "brochures, references to websites or other marketing material as a substitute"; DQ 7 (p.2) same | HQ drafts; SUB fills technician, lab, product, response-time facts | Drafted with [SUB] cells (Part 2) | Drafted, SUB gaps |
+| 3 | **Exhibit B Required Vendor Information**: legal name, DBA, contact, title, remit-to, office phone, cell phone, email, FEIN, VSS vendor number, start/completion, Quote #, "inclusive" Y/N, "firm for the 1-year" Y/N, signature, date | Ex. B (1 p.): "This sheet must be filled out and signed by the Bidder(s) or an officer of the Bidder(s) who is legally authorized to bind the Bidder(s)" | HQ prefills; LUKE: FEIN, phone fields, signer title, signature | Prefill table (Part 3); FEIN from private/ or Luke, never in a tracked file | Prefilled; needs Luke |
+| 4 | **Exhibit C W-9** (State of Colorado Substitute, Rev. December 2022, 6 pp.; p.1 is the form) | DQ 7.A table "W-9 Request for Taxpayer ID ... must complete and submit" | LUKE: tax classification box, TIN, signature, date; HQ prefills address/contact | Prefill (Part 4); note on line 1 / TIN for a disregarded single-member LLC (W-9 pp.3-4) | Prefilled; needs Luke |
+| 5 | **Exhibit D Price Quote** (xlsx, one sheet): 21 priced lines (rows 5-18, 21, 22, 24, 25, 26, 28), container size on rows 9-18, Total Cost row 29, Comments row 30, "Vendor:" in the header | Ex. D; Ex. A sec. 7.A (p.3): "The CDOC requests itemized pricing as shown on Exhibit D-Price Quote." | SUB prices -> HQ markup in private/ -> HQ fills | Every figure [PRICE: private/]; line list in Part 5 | Waiting on sub pricing (none priced as of 2026-11-12) |
+| 6 | Product data for any equal product: SDS and spec sheet per RMA line (with the quote: not stated in the solicitation, HQ recommends it); SDS at delivery (required) | Ex. A sec. 9.A (p.3): "you may submit a bid for a product of equal specifications and quality"; Att. 1 sec. 3 (p.1): "Vendor shall furnish all Material Safety Data Sheets for any regulated chemicals ... at the time of delivery" | SUB | Product name per RMA code + SDS + spec sheet (Part 5 table); what CDOC wants with an equal is vendor-questions.md Q3 | Waiting on sub |
+| 7 | **Exhibit E Contract Performance Outside the US or Colorado** | Ex. E (2 pp.): "(You must complete and return this document with Bid)"; "This form shall be completed and returned to the Sole Contact listed on the solicitation."; signer "should be the business' President, Board Chairperson, Contract's Authorized Signatory"; Ex. A sec. 10 row "Please sign and return Exhibit E" | HQ prefills; SUB confirms where lab analysis is performed; LUKE signs | Drafted "No" (Part 6); flips to "Yes" if the sub's lab is outside Colorado | Drafted, SUB confirm |
+| 8 | **Exhibit F Non-Conflict of Interest** | Ex. F (1 p.): "(You must complete and return this document with Bid)" | LUKE prints name and signs | Company name line prefilled (Part 7) | Needs Luke |
+| 9 | **Exhibit G Consent to Search** (AR Form 300-27C, 2 pp.) for the walk attendee: emailed with photo ID to the four CDOC addresses by 11/16, and a copy returned with the quote | DQ sec. 4 (p.2); DQ 7.A table: "Bidder(s) must complete & submit the form to the contact persons listed in Section 4"; Ex. G p.1 "(You must complete and return this document with Bid)"; DQ 13.A.iv | SUB technician (the attendee) fills, signs, sends with his own photo ID; never Luke | Technician's name in writing by Fri 11/13 17:00 MT; signed form + ID to CDOC by Mon 11/16 (Part 8). Form has Sections I-III: guest data, vehicle data (plate, state, make, model, year, color), name, DOB, address, driver's license; "Social Security Number: (Optional)" stays blank. Ex. G sec. C (p.2): "If possible ... ten days in advance of the anticipated date of access" (11/08, already past; Q11). DQ sec. 4 puts the email duty on "Bidders", so the email names Brown Bison Holdings LLC and DQ 2027000132 | Not started: no technician named |
+| 10 | **Walk attendance** under Brown Bison's name | DQ sec. 4; Ex. A 2.i | SUB technician | Signs the attendance record for Brown Bison Holdings LLC; written notes to HQ by email the same day (cameras and phones are restricted, DQ 15.A.vi, p.10) | Not started |
+| 11 | **Certificate of Insurance** (listed in the quote contents) | DQ 12.B.viii (p.7); but DQ 3.B (p.2) "prior to execution of a Purchase Order", DQ 13.E (p.8), Att. 2 p.3 "Evidence of insurance is needed before a contract/purchase order will be issued" | LUKE: COI after bind; SUB: its own COI | Insurance statement with the Att. 2 limits (Part 9); attach [LUKE: COI after bind] only if it exists by 11/29; Q10 asks which DQ section governs. DQ 13.A.iv's disqualification sentence names Exhibits A-G only; the CDOC checklist (Ex. A p.6) also asks "Does Bidder(s) have all required licenses, certifications, and insurance coverage?" | Statement drafted; no COI exists yet |
+| 12 | Attachment 2 coverage questions (employees not owners, drive onto state property, protected information, professional services for offenders, crime) | Att. 2 pp.1-2; Att. 2 p.3: "PLEASE DETERMINE THE INSURANCE COVERAGE YOU WILL NEED AND GET A QUOTE PRIOR TO SUBMITTING A BID." | HQ defaults; LUKE confirms the employee answer | Answered in Part 9 (informational; Att. 2 is not a return item). Nothing is bought or bound before Fri 11/13; the purchase is Luke's call | Drafted |
+| 13 | **Subcontractor disclosure and approval request** | Ex. A sec. 10 "Does your company use Subcontractors? YES or NO"; Att. 1 sec. 14 (p.4): "Vendor shall not enter into any subcontract ... without the prior, written approval of the State" | HQ; SUB name inserted once priced | Drafted (Part 10): YES, named sub, approval requested in the quote | Drafted, SUB name pending |
+| 14 | PO terms acceptance / exceptions | DQ 9.A.viii (p.5): "Bidder(s) must identify any variations between its Quote and the DQ. Failure to do so shall be deemed a waiver"; 9.A.xviii (p.6): "If no exceptions are noted, the Bidder(s) indicates an intent to accept the terms as-is."; Ex. A p.6 procurement table "Did Bidder(s) Return Attachment 1 with changes?" | HQ default: no exceptions; LUKE approves | Drafted (Part 11); Attachment 1 is not returned unless there are changes | Drafted |
+| 15 | Conflict-of-interest disclosure | DQ 14.C (p.9): "Bidder(s) shall disclose in their Quotes whether there currently is, or potentially could be, the appearance of a conflict of interest regarding this DQ, its staff, any proposed subcontractors or partners"; 14.D | HQ; SUB confirms for itself | "None known" statement in the cover letter (Part 0) and Part 11 | Drafted, SUB confirm |
+| 16 | Confidentiality request (for the attendee's Exhibit G identifiers only) | DQ 9.A.xix (p.6): "a written request for classification of certain portions of the response as confidential"; 9.A.xix.a: "readily identifiable and separable ... Please include a complete redacted Quote response along with an unredacted version of the Quote with associated confidentiality justifications. Commingling of confidential and non-confidential information is not acceptable."; 9.A.xix.b: "provide a crosswalk ... Bidder(s) must include the rationale ... including references to the authority that allows for such treatment"; 9.A.xix.c "In no event shall price information ... be classified as confidential" | HQ drafts; LUKE approves | Unless CDOC's Q15 answer says otherwise: redacted Exhibit G in the quote set, unredacted Exhibit G as a separate CONFIDENTIAL file, and a one-page Confidentiality Request and Crosswalk (fields, rationale, authority: §24-72-204, C.R.S., named in 9.A.xix) (Part 8, Part 11) | Drafted; filed only with the quote |
+| 17 | Background investigation after award | DQ 15.A.i (p.9): "immediately initiate and expedite all these CDOC Enhanced Criminal Background Investigation (background check/fingerprint) requirements. Failure to complete this process within 30 days ..."; 15.A.ii, 15.A.iv; Ex. A sec. 5 (pp.2-3) | HQ statement; SUB names technicians at award | Drafted (Part 12) | Drafted |
+| 18 | Section 508 accessibility of every file | DQ 9.A.vii (p.5): "The Bidder(s) Quote and all attachments shall comply with the standards of section 508 ... The CDOC may disqualify a Bidder(s) Quote from evaluation."; Ex. A sec. 10 accessibility row | HQ | Typed text in the State's PDFs, signature applied as an image on the text PDF (no flat photo scans), document title set, xlsx kept native | HQ at assembly |
+| 19 | No encryption | DQ 9.A.iv (p.4): "Please do not encrypt your documents/emails/questions." | HQ | No password-protected PDF, no encrypted zip | HQ at assembly |
+| 20 | Subject line | DQ 9.A.ii (p.4) | LUKE enters at upload; HQ puts it on the cover letter | "Quote submission from Brown Bison Holdings LLC for DQ 2027000132 Boiler Chemicals & Treatment SRVS – BVCC" | Ready |
+| 21 | SDVOSB certification | Ex. A sec. 10: "If you answered "Yes" please submit documentation of certification" | LUKE confirms | Not applicable if the answer is NO (no VA certification on record) | Default NO |
+| 22 | Cover / transmittal letter | Not stated in the solicitation (optional) | HQ | Drafted (Part 0): subject line, sub disclosure, conflict statement, modifications acknowledged | Drafted |
+| 23 | Proof of Good Standing with the Colorado SOS | DQ 13.E (p.8): "Prior to Purchase Order execution" | HQ downloads the certificate from the SOS site at award | Before PO, not with the quote | Award stage |
+| 24 | CORE registration through VSS | DQ 15.A.viii (p.10): "before the CDOC can execute a Purchase Order for any Bidder(s), that Bidder(s) must be registered in CORE" | LUKE (portal registration); Brown Bison is not on VSS yet (memory 2026-10-28) | Exhibit B VSS number blank until registered | Award stage; earlier is better |
+| 25 | EFT enrollment | DQ 15.A.ix: "Awarded Bidder(s) are encouraged to sign up for EFT." | LUKE (bank/ACH) | Optional, at VSS registration | Award stage |
+| 26 | Bid bond / performance bond | Not stated in the solicitation | n/a | Not required unless a modification adds one | Not required |
+| 27 | Notarization | Not stated in the solicitation | n/a | Not required | Not required |
+| 28 | BidNet upload, subject line, email confirmation | DQ 9.A.ii-vi (pp.4-5) | LUKE uploads (portal) | All files in one submission by 2026-11-30 13:00 MST; keep the confirmation email | Luke, 11/29 or 11/30 AM |
+| 29 | Quote format: tabbed sections, electronic copies, every item filled out and signed; no links in place of answers | DQ 12.B (p.7): "Quotes must follow the format outlined with electronic copies of each document provided as instructed. Quote sections should be tabbed, clearly identifiable ... Please verify all information listed below is filled out, signed, and is attached with your Quote."; DQ 7 (p.2): "References and links to websites or external sources may not be used in lieu of providing the information requested in the DQ within the Quote." | HQ at assembly | One file per tab in DQ 12.B order (SUBMISSION.md upload plan); page limit, copy count and file type are not stated in the solicitation | HQ at assembly |
+| 30 | BidNet Direct registration | DQ 9.A.iii (p.4): "Bidder(s) must be registered with Bidnet Direct in order to download DQ documents (including any amendments or modifications) and to be considered responsive at the time of submission of the response." | LUKE (account holder) | Account login luke@brownbisonco.com (memory 2026-10-19); confirm the login works before 11/29 | Registered; confirm login |
+| 31 | Pricing rules behind Exhibit D and Exhibit B | DQ 9.A.xi (p.5): "Estimated Quote prices are not acceptable."; DQ 12.C.i-ii (p.7): "Proposed pricing must remain firm during the initial term of the Purchase Order." / "Pricing must include any fees associated with the delivery of goods or services, including, but not limited to, shipping and installation."; Ex. A 7.B-C (p.3): "all inclusive, no additional shipping, surcharges, or taxes will be paid" / "All pricing shall remain firm during the term of the Purchase Order."; Ex. B: "Is price on Quote inclusive of above costs?", "Is Quote/Pricing firm for the 1-year duration ...?" | SUB prices in writing; HQ checks | Sub's written pricing states firm for the PO term and delivered to BVCC with freight; no estimated prices; figures only in private/ | Waiting on sub |
+| 32 | Modifications / amendments | DQ 7.B.i-iii (p.3): modifications "will be published on Colorado VSS and bidnetdirect.com//cdoc"; DQ 8.F (p.4): inquiry answers posted "as a modification" | HQ checks; LUKE signs any acknowledgment form a modification includes | Download each into `docs/`, re-run `python3 scripts/doc_manifest.py`, list each by number and date in the cover letter (Part 0); return any form a modification adds. None posted as of 2026-11-12 | Re-check 11/23, 11/25, 11/30 AM |
+
+Open questions to post on BidNet before Mon 2026-11-23 12:00 (DQ 8.A: "only ... through bidnetdirect.com//cdoc"; each listed
+separately, marked with the DQ number and title, DQ 8.D-E): vendor-questions.md Q1-Q14, plus three new ones HQ adds there
+before posting:
+- **Q15.** Exhibit G must be returned "with Quote" (DQ 13.A.iv; Ex. G p.1: "(You must complete and return this document with Bid)") and the quote "is likely to become public information" (DQ
+  9.A.xix). The form carries the attendee's date of birth and driver's license number. May the quote copy of the attendee's
+  Exhibit G be filed as a separate confidential file, or does the copy emailed to the four Section 4 addresses satisfy
+  13.A.iv? (DQ sec. 4, 9.A.xix, 13.A.iv; Ex. G sec. C)
+- **Q16.** Protected Information insurance is "$1,000,000 each occurrence; and $2,000,000 general aggregate" in Attachment 2
+  (p.2) but "$1,000,000 each occurrence and $1,000,000 general aggregate" in Attachment 1 sec. 21 (p.5). If it applies, which
+  limit governs? (fold into Q10 if HQ prefers one post)
+- **Q17.** If the subcontractor's laboratory for "Laboratory Analysis of Samples" (Exhibit D row 24) is outside Colorado, does
+  CDOC treat that as a service "performed outside the United States or Colorado" for Exhibit E? (Ex. E Q1; C.R.S.
+  24-102-206)
+
+Request (not a question), by email to the SPOC doc_purchasing@state.co.us **by Fri 2026-11-13** only if the technician needs a
+phone, camera, tablet or laptop at the walk: DQ 15.A.vi (p.10) "Accommodation may be made if prior approval is requested at
+least 4 days in advance". Default: the technician brings none and takes paper notes.
