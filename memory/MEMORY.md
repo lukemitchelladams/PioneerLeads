@@ -2144,3 +2144,14 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Launched 20:40:32Z via launch_scan.sh; BidNet in cool-down (robot check #12) to 21:36:24Z, so BLIND for BidNet (652/84 carried);
   samgov 97/97, coloradovss 72/3. New matches 0, docs 0. Pushed 5af04eb, EXIT 3. Keepalive had died again between launches (container
   sleep); re-ensured at launch. Inbox: nothing in the last hour (no BVCC/La Plata replies with the 17:00 MT cutoff ~3 h out).
+
+### 2026-11-13 21:21Z hourly (worker)
+- HQ 20:40Z scan BidNet BLIND (cool-down to 21:36:24Z; last good 19:36Z partial, 18:25Z full); samgov 97, coloradovss 72/3. 0 new matches.
+- HQ sent the CPW electrical B tier 20:30Z (1a1d699c3400df4e); no bounce yet. CPW: 13 asked, 1 declined, 2 bounced, 0 priced.
+- Inbox: nothing new since 19:40Z; BVCC and La Plata silent ahead of 17:00 MT. Mac may go dark (battery); COORDINATION 7c754ae has cloud HQ
+  record La Plata NO-BID and send the PM board if no Mac heartbeat after 16:00 MT.
+- BGNDRF custodial (Reclamation, Alamogordo): no sub had ever been asked. Worker sweep (17 found, 15 kept):
+  ops/research/2026-11-13-bgndrf-alamogordo-janitorial-subs.md; ready manifest ops/outbox/2026-11-13/outbox-bgndrf-janitorial.json (bcc 6 +
+  K Clean named mailbox sent to HQ by message). Gate Mon 11/16 12:00; open item NAICS 561720 not on Brown Bison's SAM record.
+- Dashboard (22:00Z, worker): bids v313 (1cdeea58884add2b7ba1ecd6f116fe20), events v315 (988c05ab6a9a14b6f766c1b675322b4c), portal_feed v166
+  (062a6c6a150d321ad5ba842b58f6e3dd), sources v263 (8fb7ed08b795428384aca9138ca1e715), doc_gaps v11 unchanged.
