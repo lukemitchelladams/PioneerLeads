@@ -2442,3 +2442,12 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 22:41Z hourly (15:35 MT) scan, HQ
 - Launched 22:36:12Z; fresh login 22:36:27Z attempt 1, no robot check; EXIT 0; pushed f47d159. bidnet 630/81 | samgov 92/92 | coloradovss 67/3.
   New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF (Sun 12:00 MT window).
+
+### 2026-11-14 23:21Z hourly (16:21 MT), worker
+- 21:21Z and 22:21Z ticks were cut off by worker restarts while an update_environment approval prompt (add www.poudre-fire.org,
+  poudre-fire.org, lfra.org, www.lfra.org to the BrownBison env allowlist) sat unanswered. LESSON: the unattended worker must NOT raise
+  approval prompts; the next trigger restarts the worker and the tick is lost. The PFA docs (Notice 2026-02, Minimum Contractor
+  Qualifications Guidebook) need Luke's browser, the Mac heartbeat, or Luke adding www.poudre-fire.org under Settings > Network access.
+- Inbox quiet 3 h; HQ 22:36Z scan clean (bidnet 630/81, samgov 92, coloradovss 67/3, 0 new).
+- Dashboard (23:30Z): bids v336 (4d8a8b8232adcf0a7de66868434a8b63), events v339 (c2d924905a8c1b41cec4aaff218dafff), sources v285
+  (b6051b1df8848acde554b9b49efc8d9b); portal_feed v175 (d13d5e9d0542ed83e44bece56f80bae9), doc_gaps v11 unchanged.

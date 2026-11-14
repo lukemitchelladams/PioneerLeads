@@ -565,3 +565,5 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-14 18:2xZ (hourly, read-only): 0 new since the Alamo Janitorial reply. No bounces, nothing from Luke.
 - 2026-11-14 19:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
 - 2026-11-14 20:2xZ (hourly, read-only): 2 new. (1) **HOODZ, Larry Moss 19:57Z (1a1dba2a12da814e, PSD hood thread 1a1a878f8cda76a3)**: answers the 11/13 cert question: techs take franchise NFPA-mirroring training, done by Feb 28; will NOT do IKECA (too expensive). Logged in bids/poudre-sd-kitchen-hood/. No reply owed tonight; HQ decides follow-up. (2) Google Workspace referral promo 20:09Z (1a1dbad7da5631bc), noise. No bounces, nothing from Luke.
+- 2026-11-14 21:2xZ and 22:2xZ (hourly): ticks cut off by worker restarts while a network-allowlist approval prompt was open; no new mail in either window.
+- 2026-11-14 23:2xZ (hourly, read-only): 0 new in 3 h. No bounces, no replies, nothing from Luke.
