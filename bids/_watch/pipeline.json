@@ -1,6 +1,6 @@
 {
  "_about": "Canonical registry of tracked bids. Hand-maintained from each bid folder's README (facts quoted from solicitations). scripts/build_dashboard_data.py flattens it plus open_bids.json/health.json/DOC-GAPS into bids/_watch/dashboard/*.json for the Bid Command dashboard. Times are Mountain (MDT -06:00 until 2026-11-01, MST -07:00 after).",
- "updated": "2026-11-14T00:45:34+00:00",
+ "updated": "2026-11-14T03:42:46+00:00",
  "bids": [
   {
    "id": "cos-parks-r26-077mz",
@@ -1755,19 +1755,19 @@
    "id": "bidnet-444230804856-dus-lighting",
    "agency": "(blank on BidNet aggregate list; Denver Union Station + Civic Center garage = likely RTD)",
    "title": "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage",
-   "sol": "BidNet 444230804856",
+   "sol": "IFB-326DM017",
    "trade": "Electrical (lighting upgrade; sub would perform)",
    "due": "2026-12-07T00:00:00-07:00",
    "due_source": "BidNet list: Closing 12/07/2026 (time not read yet)",
    "portal": "BidNet (detail behind login; aggregate/interception notice)",
    "decision": "EVALUATE (default NO-BID Mon 11/16 12:00 MT unless the documents show no bond, no prevailing wage and a scope an electrical sub can price in time)",
-   "decision_note": "Surfaced 2026-11-12 17:48Z scan. Public-garage lighting retrofit at Denver Union Station and Civic Center; agency blank on the list. Watchlisted so the next logged-in scan downloads the documents; HQ reads them for bonding, prevailing wage, mandatory walk. CCC Stout LED (same trade, Denver) went NO-BID on $5M CGL + P&P bond + prevailing wage.",
+   "decision_note": "Surfaced 2026-11-12 17:48Z scan. Public-garage lighting retrofit at Denver Union Station and Civic Center; agency blank on the list. Watchlisted so the next logged-in scan downloads the documents; HQ reads them for bonding, prevailing wage, mandatory walk. CCC Stout LED (same trade, Denver) went NO-BID on $5M CGL + P&P bond + prevailing wage. | 2026-11-14 03:45Z HQ one-off logged-in read: the BidNet page is a paywalled 'interception' notice (page shows 'IFB-326DM017 - Lighting Upgrades at Denver Union Station and Civic Center Parking Garage' then 'Upgrade to Access ... exclusive access to high-value bid opportunities'); no description or documents are readable on a free account. The IFB number pattern (DM) matches RTD, whose solicitations live on procurement.opengov.com (HTTP 403 from this environment). NO-BID default Mon 11/16 12:00 MT stands unless Luke opens the OpenGov notice himself and it shows no bond/prevailing wage; the same-trade CCC Stout LED job went NO-BID on bond + prevailing wage.",
    "prebid": null,
    "prebid_mandatory": null,
    "performer": "Brown Bison bids; electrical sub performs",
    "subs": "none asked",
    "sub_pricing": "None",
-   "folder": null,
+   "folder": "bids/dus-garage-lighting-444230804856",
    "contact": "-",
    "next": "Worker 2026-11-14 03:5xZ: public-source research (finder + verifier) found no solicitation text; issuer probably RTD (owns DUS; Civic Center garage; RTD paired the same two sites in its 2026 power-washing IFB), unconfirmed. Scanner detail pass shows login_required_for_docs false but downloaded nothing (watchlist folder is null). Pre-bid, bonds, prevailing wage all not in hand. HQ default NO-BID Mon 11/16 12:00 stands unless a logged-in pull files the documents."
   },

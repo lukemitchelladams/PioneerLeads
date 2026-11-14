@@ -2249,3 +2249,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - DUS lighting (BidNet 444230804856): no public copy found; issuer probably RTD, unconfirmed; scanner downloaded nothing (folder null).
   HQ default NO-BID Mon 11/16 12:00 stands.
 - Dashboard (04:00Z, worker): bids v318 (5bb445b89992f8c0728a4a6f48141b47), events v321 (ec9707210ef1400632f98a54693e461b), sources v267 (4c5dbb11132371dcbec7433a9620abd4); portal_feed v169, doc_gaps v11 unchanged.
+
+### 2026-11-14 03:45Z hourly (20:35 MT) scan + DUS read, HQ
+- Scan 03:35:50Z: fresh login 03:36:04Z attempt 1, no robot check; EXIT 0; pushed 5816a35. bidnet 628/81 | samgov 90/90 | coloradovss 67/3.
+  New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF.
+- DUS lighting 444230804856 one-off read: paywalled BidNet 'interception' notice = IFB-326DM017 (RTD numbering), "Upgrade to Access"; nothing
+  readable on the free account; procurement.opengov.com HTTP 403 from here. NO-BID default Mon 12:00 stands. Lesson: BidNet
+  'private/supplier/interception/open-notice' URLs are paid-tier notices; the scanner's detail pass can never read them; treat as "docs on the
+  agency portal". Worker's PCC ADA NO (mandatory 10/29 pre-bid missed) accepted.
