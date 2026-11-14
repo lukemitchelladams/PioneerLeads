@@ -2353,3 +2353,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 13:41Z hourly (06:35 MT) scan, HQ
 - Launched 13:35:58Z; saved 12:36Z session reused, logged in attempt 1, no robot check; SAM.gov back (92/92 full); EXIT 0; pushed e731e39.
   bidnet 630/81 | coloradovss 67/3. New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF (Sun 12:00 MT window).
+- 14:13Z: paywall detector + SAM.gov 5xx retry shipped (157e409, cherry-picked from the worktree agent): bidnet.is_paywalled() marks paid-tier
+  "interception" notices paywalled=True with a note and skips tabs; run.py does not re-enrich a paywalled bid until its row changes; samgov
+  retries one 502/503/504 or connection error on the list fetch. Suite 346 passed, 0 failed.
