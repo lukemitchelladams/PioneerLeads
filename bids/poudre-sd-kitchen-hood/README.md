@@ -17,3 +17,4 @@ Decision: **EVALUATE** (2026-10-26). Brown Bison bids; a hood-cleaning sub perfo
 2. Read Attachment E insurance and Attachment A access-panel language before pricing.
 
 - 2026-11-12: review draft (25 pp) with Luke 1a1d011146984fbf (approve by Thu 11/19 12:00 MT). HOODZ asked the 15 pricing questions 1a1d0111ba12e68a (answers Mon 11/16). 7.1 certification statement HOLD pending BidNet questions #7 and #8 (post by Fri 11/13 14:00 MT). Prices only in private/.
+- 2026-11-14 12:57 MT: HOODZ (Larry Moss, 1a1dba2a12da814e): will put techs through NFPA training (franchise videos that mirror NFPA 96) by 2027-02-28; will NOT get IKECA ("way to expensive"). 7.1 statement can be signed only if no AHJ requires IKECA; AHJ research in ops/research/2026-11-14-psd-ahj-hood-requirements.md. Alternates' cert copies due Mon 11/16.

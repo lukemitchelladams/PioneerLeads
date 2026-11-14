@@ -2412,3 +2412,12 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 19:42Z hourly (12:35 MT) scan, HQ
 - Launched 19:37:12Z; fresh login 19:37:36Z attempt 1, no robot check; EXIT 0; pushed 8bcaa2d. bidnet 630/81 | samgov 92/92 | coloradovss 67/3.
   New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF (Sun 12:00 MT window).
+
+### 2026-11-14 20:21Z hourly (13:21 MT), worker
+- HQ 19:37Z scan clean (bidnet 630/81, samgov 92, coloradovss 67/3; 0 new). Bonfire Cloudflare-blocked, DIBBS not scanned (policy).
+- **HOODZ answered the PSD cert question** (Larry Moss 19:57Z, 1a1dba2a12da814e): NFPA-mirroring franchise training for techs by Feb 28; IKECA = pass
+  (too expensive); AHJ registration unanswered. Logged in bids/poudre-sd-kitchen-hood/ (README, sub-outreach, FORMS-CHECKLIST #6), pipeline note.
+- Worker launched AHJ research workflow wf_758ddfad-210 (PFA / Loveland FRA / Wellington FPD hood-cleaner requirements, finder + verifier);
+  results go to ops/research/2026-11-14-psd-ahj-hood-requirements.md.
+- Dashboard (20:40Z): bids v335 (5a4c0eb61fc74353df556c13e6b485a4), events v338 (a0440ca96021087c6a9b983b7ace024a), sources v284
+  (897a5631c35d7ab8232c8aa1b4ae6616); portal_feed v175 (d13d5e9d0542ed83e44bece56f80bae9) and doc_gaps v11 unchanged.
