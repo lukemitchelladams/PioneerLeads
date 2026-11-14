@@ -537,3 +537,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
   and La Plata still silent 1.5 h before the 17:00 MT gates. No CRM brief; nothing from Luke.
 - 2026-11-13 23:2xZ (hourly, read-only): 0 new. No bounce on HQ's 22:30Z BGNDRF B tier (1a1d708c7a8ea2ad) or Tigua retry (1a1d708ce49026c8).
   No BVCC or La Plata sub reply 40 min before the 17:00 MT gates. No CRM brief; nothing from Luke.
+- 2026-11-14 00:2xZ (hourly, read-only): 0 new in 2 h. No bounce on the BGNDRF B tier / Tigua retry. No sub replies (Friday evening).

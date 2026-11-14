@@ -2193,3 +2193,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   SUBMISSION.md. README corrected: questions closed 2026-11-11 13:00 MST (Sol p.23), not 11/18.
 - Dashboard (23:58Z, worker): bids v315 (78dfe007b9805e08c7a97ea4ac6c6b7c), events v317 (5d4839b08f9b010c592686a2250e2df8), portal_feed v168
   (cb801834190a2cf12f1f5794bd3c871d), sources v265 (48b7b0bf0ef32a775908a7cfbab744e5), doc_gaps v11 unchanged.
+
+### 2026-11-14 00:21Z hourly (worker; Fri 17:21 MT)
+- Inbox quiet. HQ idle since 23:43Z (its 17:35 MT tick logs La Plata NO-BID). BidNet last good 23:36Z (logged in).
+- Monday 08:30 MT chase bodies drafted for the four Mon-12:00 gates (CPW, BGNDRF, Pagosa, BVCC): ops/outbox/2026-11-16/ (gate PASS, README
+  maps each to its original threads and skips decliners/dead addresses). Nothing sent.
+- Weld SE cabling: flagged NO-BID in pipeline next (IFB bars sub-contracting + bidder-level Uniprise/Corning certification; 11/12 rule answers it).
+- Dashboard (00:40Z, worker): bids v316 (77ccdb553d0b0ecdad6280dd51980893), events v318 (0d8668764769977b65c06e89a2e67c01); portal_feed v168, sources v265, doc_gaps v11 unchanged.

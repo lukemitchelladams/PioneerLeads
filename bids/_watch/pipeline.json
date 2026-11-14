@@ -1470,7 +1470,8 @@
    "folder": "bids/weld-se-facility-cabling",
    "contact": "Questions and bids: bids@weld.gov; Purchasing 970-400-4222 (Schedule A). Project Manager Aleksei Churyk, Director of Technical Operations, IT-Bids@weld.gov, (970) 400-4357 (Schedule E)",
    "due_source": "IFB Schedule A: \"Bids will be received until: January 5, 2027 at 10:00 AM MT\" (cover: \"Purchasing's Clock\")",
-   "doc_gaps": "None known: the single Bid Specifications.docx holds Schedules A-F (instructions, scope, schedule, bid form, insurance, contract). Cable location list, building electrical diagrams and the copper labeling standard are handed out at the mandatory walk / after award only. No addenda yet."
+   "doc_gaps": "None known: the single Bid Specifications.docx holds Schedules A-F (instructions, scope, schedule, bid form, insurance, contract). Cable location list, building electrical diagrams and the copper labeling standard are handed out at the mandatory walk / after award only. No addenda yet.",
+   "next": "Worker 2026-11-14: the 11/12 rule answers this. The IFB bars sub-contracting (\"sub-contracting the work will not be permitted\") and requires the bidding company itself to be Uniprise and Corning certified, so no sub can walk 11/19 for us and Brown Bison cannot perform. Recommend NO-BID; HQ to confirm."
   },
   {
    "id": "cdoc-bvcc-boiler-chemicals",
