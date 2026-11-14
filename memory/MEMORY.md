@@ -2240,3 +2240,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 02:41Z hourly (19:35 MT) scan, HQ
 - Launched 02:35:57Z; saved 01:36Z session reused (keepalive survived this hour), logged in attempt 1, no robot check; EXIT 0; pushed 901663c.
   bidnet 628/81 | samgov 90/90 | coloradovss 67/3. New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF (Sun 12:00 MT window).
+
+### 2026-11-14 03:21Z hourly (worker; Fri 20:21 MT)
+- Quiet inbox; HQ 02:35Z scan clean (bidnet 628/81, samgov 90, coloradovss 67/3), 0 new.
+- Rule-0 cleanup (finder + verifier): PCC ADA IFB1-GJKA-2027000046 -> NO-BID. Its MANDATORY pre-bid 2026-10-29 15:00 MDT (recorded in
+  docs/portal-expansion-2026-10-28.md line 115) passed unattended, and the GovTribe ledger already said NO (GC construction). The pipeline row had
+  sat at EVALUATE "pre-bid not in hand" for 16 days. The watchlist entry added at 03:3xZ was removed again.
+- DUS lighting (BidNet 444230804856): no public copy found; issuer probably RTD, unconfirmed; scanner downloaded nothing (folder null).
+  HQ default NO-BID Mon 11/16 12:00 stands.

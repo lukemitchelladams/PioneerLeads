@@ -1,27 +1,8 @@
 # Pueblo Community College — ADA Upgrades, Davis Academic Building (IFB1-GJKA-2027000046)
 
-| Field | Value |
-|-------|-------|
-| Agency | Pueblo Community College |
-| Portal | Colorado VSS (IFB1-GJKA-2027000046, version 4, amended 2026-11-10) |
-| Solicitation number | IFB1-GJKA-2027000046 |
-| Release date | 2026-10-21 (posted); amended 2026-11-10 |
-| Pre-bid / site visit | **NOT IN HAND (rule 0 open since 2026-10-29).** Read it from 'PCC-Davis ADA-CSBV_RFP-2026.10.19-Final IFB.pdf' as soon as the scanner files it here. |
-| Q&A deadline | not in hand |
-| Due date | 2026-12-03 14:00 MST (VSS listing) |
-| Contract type | IFB (low bid) |
-| Term / renewals | one project |
-| Evaluation method | IFB (low bid) |
-| Status | EVALUATE: gathering docs |
-
-## Scope summary
-ADA remodel of the Davis Academic building in Pueblo (GC-type work, about 2 h from Broomfield). Not yet read.
-
-## Open items
-- [ ] 2026-11-14 (worker): folder opened and watchlist entry added (source coloradovss, match 2027000046) so HQ's next scan downloads the
-      IFB and the exhibit list into docs/. This container cannot reach prd.co.cgiadvantage.com (HTTP 000).
-- [ ] Read the pre-bid / site-walk date and whether it is mandatory; then GO/NO. GC remodel is outside our core trades unless the scope is
-      mostly plumbing/electrical/handyman.
-
-## Sources
-- bids/_watch/open_bids.json key coloradovss:IFB1-GJKA-2027000046
+**Status: NO-BID (2026-11-14, worker), rule 0.** The 2026-10-28 portal research (docs/portal-expansion-2026-10-28.md line 115) records a
+**MANDATORY pre-bid conference and site tour Thu 2026-10-29 15:00 MDT**, Davis Academic Bldg, 900 W. Orman Ave, Pueblo, Room 210M, sign-in
+required. Nobody from Brown Bison or a sub attended. The GovTribe ledger already had it NO on 2026-10-26: GC building construction
+(estimated $824,000 hard cost; restrooms, door hardware, casework/plumbing, signage; CSBV two-step, quals 2026-11-24, bids 2026-12-03
+14:00 MST). The pipeline row had kept it at EVALUATE with "pre-bid not in hand"; that was stale. The IFB PDF itself was never pulled
+(Colorado VSS is unreachable from the cloud worker), so the mandatory status rests on the 10/28 note; it does not change the outcome.

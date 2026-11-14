@@ -1300,10 +1300,10 @@
    "trade": "General construction / facilities (ADA remodel)",
    "due": "2026-12-03T14:00:00-07:00",
    "portal": "ColoradoVSS",
-   "decision": "EVALUATE",
+   "decision": "NO",
    "decision_note": "Found 2026-10-29 14:08Z via ColoradoVSS. IFB posted 2026-10-21; GC-type ADA remodel in Pueblo (2 h). Pre-bid/walk date NOT in hand: HQ must pull 'PCC-Davis ADA-CSBV_RFP-2026.10.19-Final IFB.pdf' and 'PCC-Davis Academic ADA RFP-Exhibit List-Final.pdf' and read the schedule before any GO (rule 0).",
-   "prebid": "",
-   "prebid_mandatory": null,
+   "prebid": "2026-10-29T15:00:00-06:00",
+   "prebid_mandatory": true,
    "performer": "Brown Bison + GC/ADA sub (none identified)",
    "subs": "",
    "sub_pricing": "None",
@@ -1311,7 +1311,7 @@
    "contact": "",
    "due_source": "ColoradoVSS listing: closing 2026-12-03 14:00 MST",
    "doc_gaps": "Both IFB PDFs (ColoradoVSS only)",
-   "next": "Worker 2026-11-14: watchlisted (coloradovss match 2027000046, folder set) so the next HQ scan downloads the IFB; rule-0 pre-bid date still not in hand after 16 days."
+   "next": "Worker 2026-11-14 03:5xZ: NO-BID by rule 0. The 2026-10-28 research note (docs/portal-expansion-2026-10-28.md line 115) records a MANDATORY pre-bid conference and site tour Thu 2026-10-29 15:00 MDT, Room 210M, Davis Academic Bldg, sign-in required; nobody from Brown Bison or a sub attended. GovTribe ledger already NO 2026-10-26 (GC building construction, ~$824,000 hard cost, CSBV two-step). Watchlist entry removed."
   },
   {
    "id": "carbon-valley-mechanical-pm",
@@ -1768,7 +1768,8 @@
    "subs": "none asked",
    "sub_pricing": "None",
    "folder": null,
-   "contact": "-"
+   "contact": "-",
+   "next": "Worker 2026-11-14 03:5xZ: public-source research (finder + verifier) found no solicitation text; issuer probably RTD (owns DUS; Civic Center garage; RTD paired the same two sites in its 2026 power-washing IFB), unconfirmed. Scanner detail pass shows login_required_for_docs false but downloaded nothing (watchlist folder is null). Pre-bid, bonds, prevailing wage all not in hand. HQ default NO-BID Mon 11/16 12:00 stands unless a logged-in pull files the documents."
   },
   {
    "id": "cpw-dq1-pmaa-2027000176-heater",
