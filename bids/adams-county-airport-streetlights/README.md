@@ -15,3 +15,9 @@ Source: BidNet (adams-county) via GovTribe. Document in hand: docs/ADCO-IFB20267
 | Contact | Joe Lachermeier, Contract Specialist III, jlachermeier@adcogov.org |
 | Fit | Electrical. Brown Bison primes with a licensed electrical sub that does boring and pole work. |
 | Decision | **GO if we attend Wednesday 10/21 10:00 am. Line up an electrical sub before then.** |
+
+- 2026-11-14 01:3xZ (worker): Addendum 2 (dated 2026-11-13, docs/2026.766 Final Addenda No 2 ...pdf) is Q&A only. It restates the mandatory
+  pre-bid "Wednesday October 21st, 2026, at 10:00am MT" and "New Bid Due Date: Wednesday December 2nd, 2026, 3:00 P.M." Answers: engineering
+  stamp "Just for the two new ones"; height restriction "Yes, 35'"; existing poles 35'; no CDOT LED spec; no lightning arrestors, "just
+  ground from the lightening rod into the ground"; replace missing arrestors only; welding "In-house inspections only". Bidders must
+  acknowledge it on the submission checklist. Revival still depends on proof of attendance at the 10/21 walk.

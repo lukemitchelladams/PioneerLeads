@@ -538,3 +538,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-13 23:2xZ (hourly, read-only): 0 new. No bounce on HQ's 22:30Z BGNDRF B tier (1a1d708c7a8ea2ad) or Tigua retry (1a1d708ce49026c8).
   No BVCC or La Plata sub reply 40 min before the 17:00 MT gates. No CRM brief; nothing from Luke.
 - 2026-11-14 00:2xZ (hourly, read-only): 0 new in 2 h. No bounce on the BGNDRF B tier / Tigua retry. No sub replies (Friday evening).
+- 2026-11-14 01:2xZ (hourly, read-only): 2 new. Alex Ditto (YMS) revised RTD snow pricing + call request 00:34Z (1a1d77a8467f6040, thread
+  1a1b3976e06d7c89); HQ already sent Luke the CALL BRIEF 00:37Z (1a1d77d288a03c6f); prices stay private; Luke-only. BidNet addendum notice for
+  Adams County IFB 2026.766 street lights (1a1d77ca0f04ae5f): Addendum 2 = Q&A only, logged in its README. No sub replies; no new bounces.
