@@ -784,9 +784,9 @@
    "govtribe_ids": []
   },
   {
-   "name": "VA NCO 19 36C25927Q0057 Temporary Boiler Rental & Maintenance, Grand Junction (NO: intent to sole source to Ware; not a solicitation; rental trade)",
+   "name": "VA NCO 19 36C25927Q0057 Temporary Boiler Rental & Maintenance, Grand Junction (NO, re-posted 11/14 as e8214c97: intent to sole source to Ware; not a solicitation; rental trade)",
    "source": "samgov",
-   "match": "36C25927Q0057|11556cfdf4ce4775a7878c5d4d8427a1"
+   "match": "36C25927Q0057|11556cfdf4ce4775a7878c5d4d8427a1|e8214c97ca4946b7b9028accc46a1988"
   },
   {
    "name": "DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record)",
@@ -803,6 +803,11 @@
    "name": "City of Durango 2026-0050-0133 Animas City Cemetery Fencing (NO: fencing is not our trade, rule 8; mandatory pre-bid 11/18 in Durango, no sub)",
    "source": "bidnet",
    "match": "2026-0050-0133|0000443211"
+  },
+  {
+   "name": "VA National Cemetery Pikes Peak Janitorial Base plus 4 (NO: SDVOSB set-aside, FAR 19.14; Brown Bison is not SDVOSB)",
+   "source": "samgov",
+   "match": "0bc3e40e2f7049e6bdd8b64a09143c3b|Pikes Peak Janitorial"
   }
  ]
 }
