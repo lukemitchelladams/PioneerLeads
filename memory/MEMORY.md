@@ -2427,3 +2427,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 21:0xZ: AHJ research done -> ops/research/2026-11-14-psd-ahj-hood-requirements.md. Snippet-only (all AHJ sites blocked from cloud).
   No AHJ found naming IKECA for hood CLEANERS (LFRA/WFPD name none; PFA not stated). Open: PFA Notice 2026-02 + Minimum Contractor
   Qualifications Guidebook unread; HQ VM asked to fetch them. 7.1 stays HOLD until read.
+
+### 2026-11-14 20:41Z hourly (13:35 MT) scan, HQ
+- Launched 20:35:26Z; saved 19:37Z session reused, logged in attempt 1, no robot check; EXIT 0; pushed 1488b65. bidnet 630/81 | samgov 92/92 |
+  coloradovss 67/3. New matches 0, docs 0. Inbox: only HOODZ's answer (logged). No Luke reply on RTD (Sun 12:00 MT window).
+- PSD AHJ: worker research (1713d2b) finds no AHJ naming IKECA for hood cleaners; three PFA items unread (Notice 2026-02, Minimum Contractor
+  Qualifications Guidebook, Brycer notices). poudre-fire.org returns HTTP 403 from this environment too, so the cloud cannot fetch them; only
+  Luke's browser or an allowlist entry for www.poudre-fire.org can. 7.1 statement stays conditional until then.
