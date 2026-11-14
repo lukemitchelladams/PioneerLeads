@@ -2227,3 +2227,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Worker pre-built the no-price RTD package (builder + critic + fix; fixes 16-25 in a second pass). Risks: empty SBE GFE file, no custodial
   sub, no own past projects.
 - Adams street lights Addendum 2 = Q&A only (35' height limit, stamp only for the two new poles); README updated.
+- Dashboard (02:20Z, worker): bids v317 (735fa0f9be3f9b762c6cf0b38de5566f), events v319 (315f9f62660bb5f532bb41e4ad4ec437), portal_feed v169 (533fbff49d46f98acc0f2de6d5de53ec), sources v266 (b46b39272fc3a61f309220abdba7d1a8), doc_gaps v11 unchanged.
