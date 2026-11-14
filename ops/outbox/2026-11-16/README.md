@@ -7,7 +7,7 @@ skips any firm that has replied or declined by then, and respects each firm's to
 | Body | Bid | Original sends to chase (thread / msg ids) | Skip |
 |---|---|---|---|
 | chase-cpw.txt | CPW DQ1-PMAA-2027000176 (Alamosa heater) | electrical bcc 1a1d66c90745e1e0 (delivered: Vemco, Power Pro, C-Squared, Billings); B tier 1a1d699c3400df4e; Torres 1a1d66c96ac41789; Surefire 1a1d5a2835ac51db; Flow Right 1a1d5a289f443c61 | Husmann (declined); Valley Electric, Royal (dead addresses) |
-| chase-bgndrf.txt | Reclamation RFQ 140RR027Q0001 (Alamogordo custodial) | 1a1d6d8ae5a21e18 (delivered: SL Cleaning, Pristine, Chase N Dirt, L&L, Alamo); B tier 1a1d708c7a8ea2ad; Tigua retry 1a1d708ce49026c8 | K Clean (dead domain) |
+| chase-bgndrf.txt | Reclamation RFQ 140RR027Q0001 (Alamogordo custodial) | 1a1d6d8ae5a21e18 (delivered: SL Cleaning, Pristine, Chase N Dirt, L&L, Alamo); B tier 1a1d708c7a8ea2ad; Tigua retry 1a1d708ce49026c8 | K Clean (dead domain); Alamo Janitorial (permanently closed, 2026-11-14 reply 1a1dae7283ac34f3) |
 | chase-pagosa.txt | USFS RFQ 1240LP27Q0008 (Pagosa janitorial) | 1a1ccfdb5b42ad67 (sweep group); 1a1ccfdadfba4085 (CRC, Evergreen) | B&K (declined); Tidy Team (DO NOT CONTACT) |
 | chase-bvcc.txt | CDOC DQ27-0132 (BVCC boiler chemicals) | tier 3 1a1d5a24d06ac325 (RK Water, Chem-Aqua, ISI); Hydrite + WEI 1a1d17a67fa91fb1 | TRS, Aqua-Chem (touch limit); H2GS, Summit, Reaction Eng. (declined) |
 

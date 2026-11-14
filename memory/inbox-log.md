@@ -561,3 +561,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-14 14:2xZ (hourly, read-only): 0 new since 13:2xZ. No bounces, no replies, nothing from Luke.
 - 2026-11-14 15:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
 - 2026-11-14 16:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
+- 2026-11-14 17:2xZ (hourly, read-only): 1 new: Alamo Janitorial (BGNDRF) 16:32Z: business permanently closed (1a1dae7283ac34f3; HQ logged it, 4a7ed68). Added to the Monday chase skip list. Nothing else.
