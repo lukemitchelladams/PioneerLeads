@@ -147,3 +147,8 @@ Unlisted trades (p.11 table): none (HQ default).
   added; cover letter reworded to future tense ("will hold ... carry the insurance"), "good standing" held until the SOS record
   is checked; BidNet number sourced to the listing, not the IFB; sub follow-up license line made state-or-local (gate PASS).
   Wrong weekday "Mon 11/17" still sits in sub-outreach.md (11/12 21:3xZ line) and memory/MEMORY.md; the deadline is Tue.
+
+## Status
+| Item | Value |
+|------|------|
+| **DECISION** | **NO-BID (HQ, 2026-11-14 00:25Z, default).** No Durango trade rate by the Fri 2026-11-13 17:00 MT cutoff from 11 firms asked. Revives only if a rate lands by Sun 2026-11-15 17:00 MT; then Exhibit B is filled from the pre-built package for Luke's approval before the Mon 2026-11-17 10:00 MST email deadline. |

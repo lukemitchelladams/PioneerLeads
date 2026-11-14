@@ -73,3 +73,8 @@
 ## Log
 - 2026-11-06 19:36Z: NEW on BidNet (published 11/06), found by the hourly scan; mandatory pre-bid read from the events tab.
 - 2026-11-06 19:45Z: folder opened; watchlist + pipeline rows; Bid Specifications.docx pulled with the saved BidNet session (reuse-only, no login, no robot check). README filled from the IFB. EVALUATE, recommend NO (no subcontracting + company-level Uniprise/Corning certification + 100% P&P bonds). Nothing sent.
+
+## Status
+| Item | Value |
+|------|------|
+| **DECISION** | **NO-BID (HQ, 2026-11-14, rule of 2026-11-12).** Bid Specifications: "The contractor company (not just the individual doing the work) must be Uniprise Certified Installer in the state of Colorado and Corning Certified Installer in the state of Colorado"; sub-contracting not permitted; non-compliant offers "will be disqualified". Brown Bison holds neither certification, so nobody walks on 2026-11-19. |

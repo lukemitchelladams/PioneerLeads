@@ -2200,3 +2200,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   maps each to its original threads and skips decliners/dead addresses). Nothing sent.
 - Weld SE cabling: flagged NO-BID in pipeline next (IFB bars sub-contracting + bidder-level Uniprise/Corning certification; 11/12 rule answers it).
 - Dashboard (00:40Z, worker): bids v316 (77ccdb553d0b0ecdad6280dd51980893), events v318 (0d8668764769977b65c06e89a2e67c01); portal_feed v168, sources v265, doc_gaps v11 unchanged.
+
+### 2026-11-14 00:25Z HQ: two decisions
+- La Plata IFB 26-053-1215 -> NO-BID (default). Cutoff Fri 17:00 MT passed, 0 replies from 11 Durango firms. Revives only if a rate lands
+  by Sun 11/15 17:00 MT (package pre-built; HQ fills Exhibit B, Luke approves, email by Mon 11/17 10:00 MST).
+- Weld SE facility cabling IFB B2600113 -> NO-BID (11/12 rule): the IFB requires the contractor COMPANY to be Uniprise + Corning certified
+  and bars subcontracting (worker's reading verified in docs/Bid Specifications.txt lines 203, 303); mandatory walk 11/19 not attended.
+- Worker's Monday 08:30 MT chase bodies for the four Mon 12:00 gates (CPW, BGNDRF, Pagosa, BVCC) are in ops/outbox/2026-11-16/ (gate PASS);
+  HQ builds the manifest Monday from its own sent records (named mailboxes stay local).
