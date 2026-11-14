@@ -41,7 +41,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/11556cfdf4ce4775a7878c5d4d8427a1/view"
  },
  {
@@ -1226,7 +1226,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/95a2d27f4a0841b69190a165a262ef7c/view"
  },
  {

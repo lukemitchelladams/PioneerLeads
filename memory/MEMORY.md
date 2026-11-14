@@ -2356,3 +2356,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 14:13Z: paywall detector + SAM.gov 5xx retry shipped (157e409, cherry-picked from the worktree agent): bidnet.is_paywalled() marks paid-tier
   "interception" notices paywalled=True with a note and skips tabs; run.py does not re-enrich a paywalled bid until its row changes; samgov
   retries one 502/503/504 or connection error on the list fetch. Suite 346 passed, 0 failed.
+
+### 2026-11-14 14:21Z hourly (worker; Sat 07:21 MT)
+- HQ 13:35Z scan full again (samgov 92/92 back; bidnet 630/81; coloradovss 67/3; 0 new). 3 "changed" rows are new documents on SAM crane/hoist
+  notices already ledgered NO (Navy Low Level Cranes CSO, FRCSW Hoist sources sought, Vandenberg Crane Replacement): no action.
+- HQ shipped the BidNet paywall detector + SAM 5xx retry (157e409) and the 2026-11-14 CEO plan (365c301). Worker's assignment there: hourly
+  inbox/ledger; archive notes for Westminster, Weld and La Plata on Mon after their windows close.
+- Dashboard (14:30Z): bids v329 (bdff5169995c413e4da39774259c260f), events v332 (89653ae10b63be908cb78f7050adf5d7), portal_feed v174 (7124aa01b93705b5a7c870db1ffb290c), sources v278 (d4c6618e6f47a9160d3e0e70a30e63c5), doc_gaps v11 unchanged.
