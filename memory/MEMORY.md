@@ -2344,3 +2344,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 12:42Z hourly (05:35 MT) scan, HQ
 - Launched 12:35:52Z; fresh login 12:36:38Z attempt 1, no robot check; EXIT 3 (samgov PARTIAL: 2 API errors this run, counts carried
   92/92; bidnet 630/81 full; coloradovss 67/3); pushed 0d0887c. New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF.
+
+### 2026-11-14 13:21Z hourly (worker; Sat 06:21 MT)
+- HQ 12:35Z scan: samgov PARTIAL (2 API errors, counts carried 92/92); bidnet 630/81 full; coloradovss 67/3; 0 new.
+- Inbox: Microsoft DMARC 11/12 clean (4/4 pass); 3 BidNet closing reminders on NO/DEAD bids. No sub replies; no Luke reply on RTD.
+- Dashboard (13:30Z): bids v328 (916240ad5a302d2240be82655991e5fb), events v331 (bc2956db7d23e15b34e8381a48d75e27), portal_feed v173 (c5dba3f70ef34cf43c76b4d7c59bc1cc), sources v277 (ff8be25716d8b20af767b47dfec5ede9), doc_gaps v11 unchanged.

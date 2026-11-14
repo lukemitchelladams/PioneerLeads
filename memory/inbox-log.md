@@ -554,3 +554,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
   cleanly (22 DKIM+SPF pass via Google; 1 DKIM-pass/SPF-softfail from a third-party relay, still DMARC-aligned). The only DMARC fails are 5
   copies relayed inside flowrightphi.com (arc=pass) = Flow Right's dispatch forwarded our CPW ask internally. No sub replies; nothing from Luke.
 - 2026-11-14 12:2xZ (hourly, read-only): 0 new since the DMARC report. No bounces, no replies, nothing from Luke.
+- 2026-11-14 13:2xZ (hourly, read-only): 4 new, no action. Microsoft DMARC report for 2026-11-12 (1a1da3597724e3bf): 4/4 messages to M365-hosted
+  recipients DKIM+SPF pass (clean). BidNet closing reminders on bids we already passed: Denver Human Services access control
+  FS/CA/FSS_AccessControl_2026 (1a1da0b3e1699865; NO, LenelS2 VAR + CJIS), Loveland 2026-074 carpet (1a1da0973c7332b9; NO), Weld Jail RTU
+  B2600111 (1a1da087fe84cb8a; DEAD). No sub replies; nothing from Luke.
