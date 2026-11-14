@@ -2859,6 +2859,18 @@
    "verdict": "EVALUATE",
    "why": "Same bid as vss:DQ1-PMAA-2027000176 (CPW Alamosa); HQ pointed the watchlist entry at the CPW folder. Default NO-BID Mon 11/16 12:00 unless a sub confirms the 11/18 mandatory pre-bid.",
    "at": "2026-11-13T19:30:00Z"
+  },
+  "e8214c97ca4946b7b9028accc46a1988": {
+   "name": "VA NCO 19 W044 Temporary Boiler Rental & Maintenance, Grand Junction (re-post of 36C25927Q0057; closes 2026-11-16)",
+   "verdict": "NO",
+   "why": "Re-post of the 11/13 notice 11556cfd: intent to sole source to Ware; not a solicitation; rental trade (HQ 05:42Z).",
+   "at": "2026-11-14T06:30:00Z"
+  },
+  "0bc3e40e2f7049e6bdd8b64a09143c3b": {
+   "name": "VA National Cemetery Pikes Peak Janitorial Base plus 4 (closes 2026-12-02)",
+   "verdict": "NO",
+   "why": "SDVOSB set-aside (FAR 19.14); Brown Bison is not SDVOSB (HQ 05:42Z).",
+   "at": "2026-11-14T06:30:00Z"
   }
  },
  "watched": {
@@ -3044,6 +3056,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-14T05:30:00Z",
+ "last_hourly_check": "2026-11-14T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
