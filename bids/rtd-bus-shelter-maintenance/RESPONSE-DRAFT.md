@@ -71,7 +71,7 @@ venture, or team."
 >   shelters and both transfer centers.
 > - [SUB-C: legal name, city], subcontractor: shelter custodial service, graffiti removal, pressure washing, and transfer-center
 >   custodial and driver restroom kiosk service.
-> - [HQ: each RTD-certified SBE that committed by Mon 11/16 09:00 MT, with its scope; delete this line if none.]
+> - [HQ: each RTD-certified SBE that committed by Mon 2026-11-16 09:00 MT, with its scope; delete this line if none.]
 >
 > **What we commit to.** Every frequency and response time in the Scope of Work: 210 shelter services each week; daily service at
 > both transfer centers with driver kiosks clean and stocked by 6:00 a.m. weekdays and 7:00 a.m. weekends and holidays; correction
@@ -827,7 +827,8 @@ must be true on the day it is uploaded. HQ fills the log from the actual sent re
 
 RFP §7.1.11.B, p.18: "Each firm responding to the Solicitation shall provide the statement described in paragraph (c). This
 requirement will apply individually to any of the firm's consultants or lower-tier subcontractors that also furnish Work". One for
-Brown Bison below; [SUB-C] and YMS each sign the same text with their own details. Portal box to check: "The Respondent IS NOT
+Brown Bison below; [SUB-C] and YMS each sign the same text with their own details. Where they go: the OCI rule in Part 6
+(7.1.11 row). Portal box to check: "The Respondent IS NOT
 aware of any information bearing on the existence of any potential organizational conflict of interest" [LUKE: confirm].
 
 > **Organizational Conflict of Interest Statement**
@@ -853,8 +854,8 @@ aware of any information bearing on the existence of any potential organizationa
 | 7.1.1 "full name(s) and title(s) and email address(es) of the individual(s) authorized to sign the contract" | Luke Adams, Operations Manager, luke@brownbisonco.com [LUKE: confirm authority] |
 | 7.1.2 "full name and title of the authorized official electronically submitting this response" | Luke Adams, Operations Manager |
 | 7.1.3, 7.1.4, 7.1.9, 7.1.14 | "Please confirm" boxes: Luke checks each after reading (see FORMS-CHECKLIST.md rows 3, 4, 9, 14) |
-| 7.1.11 OCI | "IS NOT aware" [LUKE: confirm]; upload Part 5 if the portal offers a slot, otherwise include it in the Technical Proposal certifications |
-| Contract changes (RFP §6.9.A) | None requested (stated in the cover letter). HQ default; overrule by Mon 11/16 10:30 MT. RFP §6.9.A: "If a proposer does not submit any requested Contract changes, the proposer will be deemed to have accepted the terms". |
+| 7.1.11 OCI | "IS NOT aware" [LUKE: confirm]. OCI rule: the signed OCI statements (Brown Bison's Part 5 and each sub's) always go in the Technical Proposal file, with the certifications (RFP §4.2.D); if OpenGov 7.1.11 also shows an upload slot, the same signed statements go there too (file 8 in the SUBMISSION.md upload map). |
+| Contract changes (RFP §6.9.A) | None requested (stated in the cover letter). HQ default; overrule by Mon 2026-11-16 10:30 MT. RFP §6.9.A: "If a proposer does not submit any requested Contract changes, the proposer will be deemed to have accepted the terms". |
 
 ---
 
@@ -873,7 +874,7 @@ aware of any information bearing on the existence of any potential organizationa
 - **Monthly QC inspection:** default inspector is the custodial sub's owner or manager. You are named as the alternate (3.4, 3.6.B
   Level 3 and 3.6.C), so a monthly site inspection falls to you in any month the sub's inspector cannot do it or RTD does not
   pre-approve that person (SOW §9.C: "a member of the firm's management ... or other person as pre-approved by RTD"). HQ default:
-  keep you as alternate. Overrule by Mon 11/16 10:30 MT and HQ names a second [SUB-C] manager instead. The mobilization walk and
+  keep you as alternate. Overrule by Mon 2026-11-16 10:30 MT and HQ names a second [SUB-C] manager instead. The mobilization walk and
   any joint RTD inspection are attended by the sub's field supervisor, not you (Part 2 §2 items 6-7).
 - **Page count:** see the measurement line below.
 

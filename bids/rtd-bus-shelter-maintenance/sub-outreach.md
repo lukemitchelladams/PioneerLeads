@@ -20,7 +20,7 @@ Phone-only (nobody phones these firms (Luke's 2026-11-06 call-brief rule, CLAUDE
 ## Replies
 
 ### Lightning Mobile Services: Brent Haase, Estimating (2026-10-19 12:58 MT)
-Brent.Haase@lminc.net, 720-456-9191 office, 303-968-8772 cell; cc Office@lminc.net, Jason.Kracke@lminc.net.
+Brent.Haase@lminc.net, 720-456-9191 office; cc Office@lminc.net, Jason.Kracke@lminc.net.
 1. Cover 42 shelters on schedule: **YES**.
 2. Price: not yet. Asked for "a spreadsheet or listing of the 42 bus shelters plus the transfer centers indicating
    the frequency and SOW for each." **Built: docs/RTD-126DM016-Shelter-List.xlsx** ("What to price" tab mirrors RTD's

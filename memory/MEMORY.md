@@ -2232,3 +2232,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 02:21Z hourly (worker; Fri 19:21 MT)
 - Quiet: no new mail, no new matches (HQ 01:36Z scan bidnet 628/81, samgov 90). RTD pre-build final fix pass (6 consistency defects) running.
 - Dashboard (02:30Z): events v320 (c62975c3a4dc206ca98a475a4ce23f41); bids v317, portal_feed v169, sources v266, doc_gaps v11 unchanged.
+- 02:5xZ: RTD pre-build final pass PASS (6 consistency fixes: "no competitive custodial price" with Lightning Mobile's 7x quote as the only
+  fallback; cover letter/2A signed Mon 11:00; one OCI rule; 7-9 upload files; Lightning Mobile Enclosure 4 request drafts D/D2; ISO dates).
+  Also removed a third-party cell number from bids/rtd-bus-shelter-maintenance/sub-outreach.md (repo rule: no personal cells) and kept the
+  named Lightning Mobile mailbox out of the new SUBMISSION.md text.

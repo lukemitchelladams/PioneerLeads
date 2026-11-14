@@ -13,7 +13,7 @@ No reply = NO-BID stands, nothing is sent and nothing is posted.**
 | Follow and draft | §3.5: "Respondents shall register on RTD's online procurement portal. Once registered, Respondents may view and click "Follow" ... Respondents that fail to Follow this project will not receive automated Addenda notifications, nor will they be able to submit a Response ... Respondents must click "Draft Response" to properly begin and submit a Response". |
 | Forms | §7, p.16: "In order to download the submittal forms in the "Forms to be Completed and Submittal Requirements section," Respondents must download them directly from the online procurement portal." (W-9 and Key Personnel templates.) |
 | Accessibility | §4.1.B, p.8: "RTD's Procurement Specialist must receive through RTD's online procurement portal all required documents in a format that complies with Level AA of the Web Content Accessibility Guidelines 2.1 of the World Wide Web Consortium (W3C) Web Accessibility Initiative." Applies to every uploaded file. |
-| File format, size, number of files | Not stated in RFP. Plan: one PDF per OpenGov section (map below), plus the Pricing Sheet .xlsx in the Cost section if the slot accepts a second file. |
+| File format, size, number of files | Not stated in RFP. Plan: files 1-7 in the map below (one PDF per OpenGov section; Key Personnel as .docx if that slot wants it), plus two optional files: the Pricing Sheet `..._3_Cost-Proposal.xlsx` in the Cost section if that slot accepts a second file, and `..._8_OCI-Statement.pdf` in 7.1.11 if that section has an upload slot. 7, 8 or 9 files in all. |
 | Page and font | §4.1.D.1, p.8: technical proposal "should not exceed 30 pages", "Times New Roman, in no less than 12-point font"; cover letter "no longer than two pages". |
 | Cost separation | §7, p.16: "Any cost information submitted or duplicated in other sections may result in response disqualification." |
 | Deadline | **Mon 2026-11-16 14:00 MT** (§1.3, §2.1, §3.5). "Proposals that are late will not be accepted." |
@@ -25,20 +25,22 @@ No reply = NO-BID stands, nothing is sent and nothing is posted.**
 | Validity | §2.7: "Proposals shall be valid for a duration of no less than ninety (90) days from proposal due date." |
 | After | Selection "December 4, 2026" (§1.3); FoC §1 Effective Date "December 1, 2026, or the last date of execution by RTD of the Signature Page, whichever is later"; debriefing requests "within three days" of an exclusion notice (§5.B.1). |
 
-## Upload map (one file per OpenGov section)
+## Upload map (files 1-7 required; the .xlsx and file 8 only where a slot takes them)
 
 | OpenGov section | File | Contents | Built by | Signed by |
 |---|---|---|---|---|
 | 7.1.1, 7.1.2 | (typed) | Luke Adams, Operations Manager, luke@brownbisonco.com | HQ text (RESPONSE-DRAFT Part 6) | LUKE types |
 | 7.1.3, 7.1.4, 7.1.9, 7.1.14 | (check boxes) | "Please confirm" | - | LUKE checks |
-| 7.1.5 Technical Proposal | `BrownBison_RTD-126DM016_1_Technical-Proposal.pdf` | Cover letter (Part 1), Technical Proposal (Part 2), Supplemental Appendix (Part 3), OCI statements (Part 5). **No cost.** | HQ + [SUB-C] + [SUB-YMS] fill-ins | LUKE (cover letter, OCI) |
+| 7.1.5 Technical Proposal | `BrownBison_RTD-126DM016_1_Technical-Proposal.pdf` | Cover letter (Part 1), Technical Proposal (Part 2), Supplemental Appendix (Part 3), OCI statements (Part 5 and each sub's; always here, OCI rule below). **No cost.** | HQ + [SUB-C] + [SUB-YMS] fill-ins | LUKE (OCI Sun 18:00-21:00; cover letter Mon 11:00) |
 | 7.1.6 Open Records Technical | `..._2_Technical-Proposal_OPEN-RECORDS.pdf` | Same, redacted (personal data, sub-designated proprietary items) | HQ | - |
-| 7.1.7 Cost Proposal | `..._3_Cost-Proposal.pdf` (+ `.xlsx`) | RTD Pricing Sheet, all 5 years, unaltered except the price cells; separate labeled Hourly Rate Schedule page (FORMS-CHECKLIST Table 3 row 5) | HQ from `private/` only | LUKE approves |
+| 7.1.7 Cost Proposal | `..._3_Cost-Proposal.pdf` (+ optional `..._3_Cost-Proposal.xlsx` if the slot takes a second file) | RTD Pricing Sheet, all 5 years, unaltered except the price cells; separate labeled Hourly Rate Schedule page (FORMS-CHECKLIST Table 3 row 5) | HQ from `private/` only | LUKE approves |
 | 7.1.8 Open Records Cost | `..._4_Cost-Proposal_OPEN-RECORDS.pdf` | Same, unit prices and hourly rates redacted (HQ default) | HQ | - |
-| 7.1.10 SBE Enclosures | `..._5_SBE-Enclosures.pdf` | Checklist (front page), 1A (notarized), 1B N/A, 2A, 2B N/A, 3 (per SBE or N/A), 4 (one per firm), 5 (per firm), 6 (per firm), 7 + attachments: SBE Plan and GFE narrative (Part 4), sent-email log, SBO request, any SBE replies, RTD cert letters | HQ; firms sign their own 3/4/5/6 | LUKE (1A before a notary; 2A, 3, 4, 5, 6, 7, SBE Plan) |
-| 7.1.11 OCI | (check box) + statement if a slot exists | "IS NOT aware" [LUKE: confirm] | HQ | LUKE |
+| 7.1.10 SBE Enclosures | `..._5_SBE-Enclosures.pdf` | Checklist (front page), 1A (notarized), 1B N/A, 2A, 2B N/A, 3 (per SBE or N/A), 4 (one per firm), 5 (per firm), 6 (per firm), 7 + attachments: SBE Plan and GFE narrative (Part 4), sent-email log, SBO request, any SBE replies, RTD cert letters | HQ; each firm signs its own 4, each committed SBE co-signs its 3, and each firm gives HQ its own 5 and 6 data (5 and 6 have no signature line) | LUKE (Sun: 1A before a notary, 4; Mon 11:00: 2A, 3, 7, SBE Plan) |
+| 7.1.11 OCI | (check box); `..._8_OCI-Statement.pdf` only if the section has an upload slot | "IS NOT aware" [LUKE: confirm]; file 8 = the same signed OCI statements already in file 1 | HQ | LUKE (signed once, Sun) |
 | 7.1.12 W-9 | `..._6_W-9.pdf` | RTD's "02.12_W9_updated_1822.pdf" completed | HQ prefill (no EIN in repo) | LUKE (EIN, signature) |
 | 7.1.13 Key Personnel | `..._7_Key-Personnel.pdf` (or .docx if the slot wants it) | RTD's "Key_Personnel.docx" completed from RESPONSE-DRAFT Part 3.C | HQ | per form |
+
+**OCI rule (the same in SUBMISSION.md, FORMS-CHECKLIST.md and RESPONSE-DRAFT.md):** the signed OCI statements (Brown Bison's Part 5 and each sub's) always go in the Technical Proposal file, with the certifications (RFP §4.2.D); if OpenGov 7.1.11 also shows an upload slot, the same signed statements go there too (file 8 in the SUBMISSION.md upload map). RFP §4.2.B does not count certifications toward the 30 pages.
 
 ## Accessible PDF checklist (WCAG 2.1 AA, RFP §4.1.B)
 
@@ -69,22 +71,22 @@ chase is an email. Luke alone talks to Alex (YMS); HQ hands Luke the list of wha
 | **Sun 12:00** | Read Luke's reply. "GO RTD" = run this plan. No reply = log NO-BID in README and `bids/_pipeline.md`, stop. | - | **Reply "GO RTD"** (by 12:00) |
 | 12:00-12:30 | Make the SBE version of the shelter list: on the "What to price" tab remove "Snow removal is NOT in your scope"; change A15 "graffiti removed within 72 hours" to "graffiti removed at the visit where it is found" (the proposal's standard, RESPONSE-DRAFT 3.2; FoC Deduction Schedule p.49: "$200.00 per occurrence for each graffiti tag that is not removed during the daily servicing"); add snow lines (per shelter group per event, per transfer center per month), a traffic-control line and a driver-restroom supplies line. Cut the blank Enclosure 4 page from `docs/RTD-SBE-Enclosures-Rev-2025-11-13.pdf` into its own PDF (a copy, unaltered; ENCL Enclosure 4: "make copies of this form"). Send draft A to **every firm in the `sbe-research.md` appendix (76 RTD SBEs with fitting codes, all with directory emails; the 15 in `sbe-outreach.md` first)**, one email each, with the SOW PDF, the SBE shelter list and the Enclosure 4 page attached. SBE-CR §3.A.iv.a counts soliciting "the interest of all certified SBEs who have the capability to perform the work of the Contract". Log date, time, firm, contact, directory phone and work category for each in `sbe-outreach.md` (these rows become Enclosure 7 "Solicited the following SBEs"; attach a continuation sheet when the form runs out of rows). | - | - |
 | 12:30 | Send the SBO assistance request (draft B) to SBO@RTD-Denver.com, only after draft A has gone out; log it. | - | - |
-| 12:30-13:00 | Email Luke: (1) the OpenGov download list for 13:00; (2) the YMS list below for Alex; (3) tonight's signature list. One touch to each live custodial candidate the touch rules allow (`sub-outreach.md`, COORDINATION.md), asking for price, forms and references by Mon 09:00. | - | - |
+| 12:30-13:00 | Email Luke: (1) the OpenGov download list for 13:00; (2) the YMS list below for Alex; (3) tonight's signature list. One touch to each live custodial candidate the touch rules allow (`sub-outreach.md`, COORDINATION.md), asking for price, forms and references by Mon 09:00. Send draft D to Lightning Mobile (Brent Haase, Re: on its 2026-10-20 pricing thread) with the Enclosure 4 page attached (the 12:00 copy with only the project name and RFP number typed in), asking for it completed and signed by Mon 09:00 (ENCL Enclosure 4: "have all bidders for subcontracting opportunities complete and return the form, along with their bid or quote"); log it in `sub-outreach.md`. | - | - |
 | **13:00-13:30** | Watch Luke's inbox for the forwarded files; save them to `docs/`; run `python3 scripts/doc_manifest.py`. | - | **OpenGov:** log in, confirm "Follow", click "Draft Response", download every file under Forms to be Completed (02.12_W9_updated_1822.pdf, Key_Personnel.docx, any others), and the Addenda and Q&A tabs; also any Form of Contract attachments for FoC §6 ("CONTRACTORS KEY PERSONNEL Refer to the Attachments.") and FoC §9, p.50 ("COMPLETED CERTIFICATIONS. Please refer to the Attachments."), none of which is in hand, and the SBE Contract Requirements and SBE Enclosures files at the §7.1.9 and §7.1.10 links (HQ checks they are still v10 2025-11-13 and Rev 2025-11-13; FoC §5, p.38: "Any changes RTD makes to the SBE Contract Requirements are effective immediately when posted"); email them to luke@brownbisonco.com. Ask Alex for the YMS list. |
 | 13:30-15:00 | Apply any addendum or Q&A answer to RESPONSE-DRAFT and FORMS-CHECKLIST. Build the Technical Proposal file (TNR 12) from Parts 1-3 and 5; fill every [HQ] marker; Key Personnel form from Part 3.C; W-9 prefill without the EIN. | - | - |
 | 15:00-17:00 | SBE package prefill: checklist, 1A (percent = 2A total; 0% if no SBE), 1B N/A, 2A, 2B N/A, 3, 4 (Brown Bison, YMS, Lightning Mobile, SUB-C, and each SBE that returns one), 5 (Brown Bison), 6 (Brown Bison), 7 from the sent log; SBE Plan (Part 4) with only true lines (item 2 only if draft A went out with all seven pieces; item 7 only for offers an email actually made). | YMS (via Luke): Enclosures 4, 5, 6 and OCI statement started. | - |
 | 17:00-18:00 | Cost Proposal: RTD Pricing Sheet from `private/` (YMS 2026-11-13 snow prices + markup; custodial lines left blank until SUB-C prices); Hourly Rate Schedule page; Open Records copies. Accessibility pass on every file. | - | - |
 | **18:00** | Email Luke the v1 package (every file), the signature list and the notary step, for approval. | - | - |
-| **18:00-21:00** | Answer Luke's questions by email; revise. | YMS (via Luke): crew counts, equipment per route, staging location, snow supervisor name and résumé, 2 snow references, vehicle count for GPS. | **Facts:** EIN on the W-9; Enclosure 5 workforce data; Enclosure 4 gross-receipts bracket; was anyone at the 10/26 briefing (yes/no); business phone line for forms and vehicle signs (never the cell); website or "none"; confirm authority to bind the LLC. **Sign** (e-sign where possible): cover letter, OCI statement, W-9, 2A, 4, 5, 6. Enclosure 7 and the SBE Plan are signed Mon 11:00, after the 07:00 follow-ups and Monday replies are logged on them. **Notarize Enclosure 1A** (online notary tonight, or in person before 11:00 Mon). |
+| **18:00-21:00** | Answer Luke's questions by email; revise. | YMS (via Luke): crew counts, equipment per route, staging location, snow supervisor name and résumé, 2 snow references, vehicle count for GPS. | **Facts:** EIN on the W-9; Enclosure 5 workforce data; Enclosure 4 gross-receipts bracket; was anyone at the 2026-10-26 briefing (yes/no); business phone line for forms and vehicle signs (never the cell); website or "none"; confirm authority to bind the LLC. **Sign** (e-sign where possible): OCI statement, W-9, Enclosure 4 (Brown Bison). Not tonight: the cover letter and Enclosure 2A wait for the Mon 09:00 sub deadline and the 10:00 gate (the [SUB-C] line, the committed-SBE line, the 2A total and SBE rows), and Enclosure 7 and the SBE Plan wait for the 07:00 follow-ups and Monday replies; all four are signed Mon 11:00. Enclosures 5 and 6 have no signature line: Luke gives the facts, HQ fills them in. **Notarize Enclosure 1A** (online notary tonight, or in person before 11:00 Mon). |
 | 21:00-06:00 | Inbox check each hour: log every SBE or sub reply in `sbe-outreach.md` / `sub-outreach.md`; answer SBE questions by email the same hour. | SBE firms: interest, price, RTD cert letter, Enclosure 3 (if committing) and 4. | - |
 | **Mon 06:00** | Morning pass: who answered, who did not. | - | - |
-| 07:00 | Follow-up email (draft C) to each SBE with no reply; log as Enclosure 7 "Followed up" rows. One reminder to SUB-C if silent. | - | - |
+| 07:00 | Follow-up email (draft C) to each SBE with no reply; log as Enclosure 7 "Followed up" rows. One reminder to SUB-C if silent, and draft D2 to Lightning Mobile if its Enclosure 4 has not arrived. | - | - |
 | 08:00 | One email to Luke listing anything still unsigned or missing. | - | - |
-| **09:00** | Sub deadline. Log what arrived. | **SUB-C:** price (to `private/` only), Enclosure 4, 5, 6, OCI statement, 2 projects with client names and contacts, supervisor and backup supervisor names and résumés, staffing numbers (Part 2 3.4), fleet list with pressure-washer PSI and tank size, product list. **SBE:** Enclosure 3 signed + RTD cert letter if committing. **YMS:** anything still open. | Forward any YMS items Alex sent. |
-| **10:00 GATE** | **Custodial price in hand?** Yes: finish the Pricing Sheet in `private/` and the PDFs. No: HQ default **NO-BID** (no way to price 2 of the 3 services; a sub-less custodial price is not a price we can perform), reported to Luke with a 10:30 overrule window. **SBE committed?** Yes: 2A, 3 and 1A updated to match. | - | Overrule the NO-BID default by 10:30 if you want it submitted anyway. |
-| 10:00-11:00 | Finish Enclosure 7 ("Followed up" rows from the 07:00 emails, Bidding Y/N from replies) and SBE Plan items 4-6 from the log, for Luke's 11:00 signature. Fill all [SUB-C] and [SUB-YMS] markers; delete any not supplied (a blank marker never goes out); remove every internal note, not just [..] markers: the [HQ note: ...] lines, the RFP quote lines under the Part headings, the Part headings' page notes, and all text outside the blockquotes in Parts 1, 4 and 5; re-measure the page count with Part 2 plus the Part 3 projects and org charts counted (limit 30; FORMS-CHECKLIST §7 #18); final accessibility pass; check every marker is gone and no price is outside the Cost files. | - | - |
-| **11:00** | Email Luke the final files and this upload map, with the exact boxes to check. | - | **Sign Enclosure 7 and the SBE Plan** (final versions, with Monday's follow-ups and replies). Re-notarize 1A only if an SBE committed after Sunday's notary (online, 15 minutes). Sign any other page that changed. |
-| **11:30-12:30** | Stand by on email. | - | **Upload on OpenGov** (any 30-minute slot in this window): type 7.1.1 and 7.1.2; check 7.1.3, 7.1.4, 7.1.9, 7.1.11 ("IS NOT aware"), 7.1.14; upload the 7 files; Submit. Confirm the status reads "Submitted". |
+| **09:00** | Sub deadline. Log what arrived. | **SUB-C:** price (to `private/` only), Enclosure 4, 5, 6, OCI statement, 2 projects with client names and contacts, supervisor and backup supervisor names and résumés, staffing numbers (Part 2 3.4), fleet list with pressure-washer PSI and tank size, product list. **Lightning Mobile:** Enclosure 4 completed and signed (draft D). **SBE:** Enclosure 3 signed + RTD cert letter if committing. **YMS:** anything still open. | Forward any YMS items Alex sent. |
+| **10:00 GATE** | **Competitive custodial price in hand (SUB-C)?** Yes: finish the Pricing Sheet in `private/` and the PDFs. No: HQ default **NO-BID** (no competitive custodial price for 2 of the 3 services; a sub-less custodial price is not a price we can perform), reported to Luke with a 10:30 overrule window. The only custodial price on file is Lightning Mobile's 2026-10-20 quote (on file, about 7x RTD's current cost; `sub-outreach.md`), so it is the only fallback: if Luke overrules, HQ prices custodial from that quote in `private/` and Lightning Mobile becomes [SUB-C] (it then owes the [SUB-C] items below). **SBE committed?** Yes: 2A, 3 and 1A updated to match. | - | Overrule the NO-BID default by 10:30 if you want it submitted anyway on Lightning Mobile's quote. |
+| 10:00-11:00 | Finish Enclosure 2A (total and SBE rows, from the 10:00 gate), Enclosure 7 ("Followed up" rows from the 07:00 emails, Bidding Y/N from replies) and SBE Plan items 4-6 from the log, for Luke's 11:00 signature. Fill all [SUB-C] and [SUB-YMS] markers; delete any not supplied (a blank marker never goes out); remove every internal note, not just [..] markers: the [HQ note: ...] lines, the RFP quote lines under the Part headings, the Part headings' page notes, and all text outside the blockquotes in Parts 1, 4 and 5; re-measure the page count with Part 2 plus the Part 3 projects and org charts counted (limit 30; FORMS-CHECKLIST §7 #18); final accessibility pass; check every marker is gone and no price is outside the Cost files. | - | - |
+| **11:00** | Email Luke the final files and this upload map, with the exact boxes to check, and name any firm's form still missing (Lightning Mobile's Enclosure 4 included). | - | **Sign the cover letter and Enclosure 2A** (final versions: [SUB-C] and any committed SBE named, 2A total and SBE rows filled after the 10:00 gate), **any Enclosure 3** an SBE returned signed, and **Enclosure 7 and the SBE Plan** (final versions, with Monday's follow-ups and replies). Re-notarize 1A only if an SBE committed after Sunday's notary (online, 15 minutes). Sign any other page that changed. |
+| **11:30-12:30** | Stand by on email. | - | **Upload on OpenGov** (any 30-minute slot in this window): type 7.1.1 and 7.1.2; check 7.1.3, 7.1.4, 7.1.9, 7.1.11 ("IS NOT aware"), 7.1.14; upload files 1-7, plus `..._3_Cost-Proposal.xlsx` in 7.1.7 if that slot takes a second file and `..._8_OCI-Statement.pdf` in 7.1.11 if that section has an upload slot (7, 8 or 9 files); Submit. Confirm the status reads "Submitted". |
 | 12:30-13:00 | Find the OpenGov confirmation email in luke@brownbisonco.com; log submission time in README, `bids/_pipeline.md` and memory. | - | Forward the confirmation if it went elsewhere. |
 | 13:00-13:45 | Buffer: if a file is wrong, Luke withdraws and resubmits (allowed before the deadline, §3.5). | - | Withdraw and resubmit only if HQ flags a problem. |
 | **14:00** | **DEADLINE.** | - | - |
@@ -98,6 +100,13 @@ and a résumé for every other person it puts on its org chart (its monthly mana
 minimum staffing per route and the porter; fleet list (route trucks, hot-water pressure washers at or above 3000 PSI, water tanks,
 strobes); product list with SDS for graffiti removal (polycarbonate-safe), disinfectant, glass cleaner; acceptance of RTD's insurance
 requirements before Work (FoC §7) and of GPS units on Brown Bison's account.
+
+**Lightning Mobile Services (HQ emails Brent Haase Sun 12:30-13:00, draft D; due Mon 09:00):** Enclosure 4 completed and signed. ENCL
+Enclosure 4: "The form is required for all bidders or firms submitting bids or quotes, regardless of whether they are certified as SBE or
+not", and Lightning Mobile quoted on 2026-10-20. That quote is on file, about 7x RTD's current cost (`sub-outreach.md`): not competitive
+as quoted, and the only custodial fallback if Luke overrules the 10:00 NO-BID default, in which case Lightning Mobile also owes the
+whole [SUB-C] list above. If its Enclosure 4 is not back by 10:00, the 11:00 email to Luke names it as missing; HQ types only the
+project name and RFP number on another firm's form and never signs it.
 
 **YMS Landscaping (Luke asks Alex; Sunday evening):** Enclosures 4, 5, 6 and the OCI statement; crews and equipment per route (N, S,
 G3, transfer-center unit) and cycle time per route; whether YMS can keep a crew with a power broom on the transfer-center platforms
@@ -118,7 +127,8 @@ attendance yes/no; business phone line; authority to bind; signatures; notarizat
 
 Gate: `python3 scripts/humanize_gate.py check <body> --subject "<subject>"` re-run 2026-11-14 on the drafts below: A = PASS with
 warnings (143 prose words, cap 150) with a sample first name and with "Hi Team,"; B = PASS; C = PASS with a first name and with
-"Hi Team," (re-run after "shelter work" became "work", subject "Re: " + A's subject). No links, no phone, no call
+"Hi Team," (re-run after "shelter work" became "work", subject "Re: " + A's subject); D and D2 (added 2026-11-14) = PASS with
+"Hi Brent,", subject "Re: RTD bus shelter cleaning contract". No links, no phone, no call
 invite. Re-run the gate with each real first name before sending (the closer must match the greeting). Where the directory
 contact name does not match the email address, or the address names no person, use "Hi Team," / "Thanks Team," in A and C
 (CLAUDE.md group rule): `sbe-outreach.md` row 4, KG Clean (contact Debbie Garay, address robert@...), and row 15, Allstate
@@ -201,6 +211,34 @@ Following up on my Sunday email about RTD RFP 126DM016, due today at 2:00 PM. Ca
 Thanks {first name},
 ```
 
+**D. Lightning Mobile Enclosure 4 request** (Sun 12:30-13:00; to Brent Haase at Lightning Mobile (his address is on the 2026-10-20 pricing thread; not repeated here), reply on the 2026-10-20 pricing thread;
+attach the Enclosure 4 page with only the project name and RFP number typed in)
+Subject: Re: RTD bus shelter cleaning contract
+
+```
+Hi Brent,
+
+We are finishing our proposal for RTD RFP 126DM016, due Monday, November 16 at 2:00 PM. RTD requires its Enclosure 4 (Bidders List Information) from every firm that quoted part of the work, certified SBE or not.
+
+The form is attached with the project name and RFP number filled in. Could you add your firm's details and gross receipts bracket, sign it and send it back by Monday at 9:00 AM?
+
+Thanks Brent,
+```
+
+**D2. Lightning Mobile reminder** (Mon 07:00, only if D has no answer; reply on D)
+
+```
+Hi Brent,
+
+Following up on RTD's Enclosure 4 from my Sunday email. Could you send it back signed by 9:00 AM today?
+
+Thanks Brent,
+```
+
+Fact check for D: ENCL Enclosure 4 instructions ("The form is required for all bidders or firms submitting bids or quotes,
+regardless of whether they are certified as SBE or not"; fields "RTD RFP/IFB Project Name", "RFP/IFB Number", "Annual Gross
+Receipts of the Firm", "Signature"); RFP §3.5 due date. No price, no link, no phone.
+
 Any SBE that asks for a call gets an email answer and Luke gets a CALL BRIEF (CLAUDE.md); no call is offered.
 
 ## Risks to say out loud before the GO
@@ -208,7 +246,9 @@ Any SBE that asks for a call gets an email answer and Luke gets a CALL BRIEF (CL
 1. **SBE good faith (responsiveness).** Nothing was sent to any SBE or to RTD SBO before this weekend (`sbe-outreach.md`). A
    one-day window is what SBE-CR §3.A.iv.j calls "Pro forma mailings ... not alone sufficient", and RFP §2.6 conditions award on
    it. The two incumbent-type competitors are RTD SBEs who count themselves.
-2. **No custodial price.** Two of the three services and most of the shelter line items have no sub. The 10:00 Monday gate decides.
+2. **No competitive custodial price.** Two of the three services and most of the shelter line items have no competitive sub price.
+   The only custodial price on file is Lightning Mobile's 2026-10-20 quote (on file, about 7x RTD's current cost; `sub-outreach.md`), the fallback only if Luke
+   overrules the NO-BID default. The 10:00 Monday gate decides.
 3. **Experience (30 points).** Brown Bison has no completed project; both required projects must be the subs'.
 4. **Portal-only forms and addenda unseen** until Luke downloads them Sunday 13:00; anything they add lands in a 25-hour window.
 5. **Notary and e-signature acceptance** for Enclosure 1A are not stated in the RFP.
