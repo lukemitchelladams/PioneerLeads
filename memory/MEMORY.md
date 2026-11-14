@@ -2424,3 +2424,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 20:30Z: PSD IFB 7.1 re-read: the statement is about "each applicable AHJ" requirements; the IFB names no IKECA. HOODZ (19:57Z): NFPA-96-style
   franchise training by 2027-02-28, IKECA no, AHJ registration unanswered. 7.1 can be signed if the AHJ research (worker, tonight) shows no
   IKECA/registration gap; Larry gets the one AHJ-registration question Mon 08:30 (not on a Saturday).
+- 21:0xZ: AHJ research done -> ops/research/2026-11-14-psd-ahj-hood-requirements.md. Snippet-only (all AHJ sites blocked from cloud).
+  No AHJ found naming IKECA for hood CLEANERS (LFRA/WFPD name none; PFA not stated). Open: PFA Notice 2026-02 + Minimum Contractor
+  Qualifications Guidebook unread; HQ VM asked to fetch them. 7.1 stays HOLD until read.
