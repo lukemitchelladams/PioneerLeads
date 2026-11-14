@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-14T13:35:56+00:00
+# Bid watch report — 2026-11-14T14:36:00+00:00
 
-**Headline:** 3 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 630 | BUYER 441, AGGREGATE 190 | 81 | 2026-11-14T13:35:56+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-14T13:35:56+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 92 |  | 92 | 2026-11-14T13:35:56+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-14T13:35:56+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 630 | BUYER 441, AGGREGATE 190 | 81 | 2026-11-14T14:36:00+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-14T14:36:00+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 92 |  | 92 | 2026-11-14T14:36:00+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-14T14:36:00+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -29,12 +29,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (25d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (34d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (52d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389, 316253c06523460b9e40dad8f4ff9a58, 32e57f3ab30a4e3b8c0b5167678fe32e — https://sam.gov/workspace/contract/opp/20b6fa9843bd4925b7964e5dfb36f976/view
-- **FRCSW Hoist Requirement** (samgov): NEW DOCUMENTS (addendum?): 442608aed4a5486a8e023f4ae982549d, bd02834a82944e43aeb5541cdb3dd9d5, df5324c0155c4310bee0bbd2c073e8a0 — https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view
-- **Vandenberg Crane Replacement** (samgov): NEW DOCUMENTS (addendum?): 2bdabe58e06a4fa3a73b7afd89faec59, 46e4891a0d1845f38221335a1db7c3e8, 57fe3ddd04604debbfc681dda3ad8720, 5b5c76d8de314eddad63615524992a0a, 61590f07642b4caab792e5e88543cec0, 6c906e06f40d4dff8e62b417f8dc6dac, 79cc826a989843719dd77b074c698cc5, 9d28dcffc6df40009b7c2eea72858a84, a2553426ff1a4fe7853fdff6085a — https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
