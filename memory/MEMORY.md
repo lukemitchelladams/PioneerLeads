@@ -2208,3 +2208,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   and bars subcontracting (worker's reading verified in docs/Bid Specifications.txt lines 203, 303); mandatory walk 11/19 not attended.
 - Worker's Monday 08:30 MT chase bodies for the four Mon 12:00 gates (CPW, BGNDRF, Pagosa, BVCC) are in ops/outbox/2026-11-16/ (gate PASS);
   HQ builds the manifest Monday from its own sent records (named mailboxes stay local).
+
+### 2026-11-14 00:44Z hourly (17:35 MT) scan + RTD, HQ
+- Scan launched 00:36:09Z; fresh login 00:36:38Z attempt 1, no robot check, but BidNet detail tab stall: Documents tab of 0000442975 "403
+  Forbidden" in 15 s -> fail-fast, the other tabs skipped. bidnet 628/81 | samgov 90/90 (7 closed) | coloradovss 67/3. Docs 1. Pushed 4f28d16, EXIT 3.
+- RTD 126DM016: Alex Ditto sent Luke revised YMS snow/ice pricing 17:34 MT (xlsx saved in bids/rtd-bus-shelter-maintenance/private/) and
+  asked for a Saturday call. HQ emailed Luke a CALL BRIEF 00:37Z (1a1d77d288a03c6f; prices stay in private/, body copy there too): year-1
+  sub cost ~3.7x the $24/shelter benchmark on shelters; "GO RTD" by Sun 12:00 MT or NO-BID stands. Nothing sent to Alex (Luke-only).

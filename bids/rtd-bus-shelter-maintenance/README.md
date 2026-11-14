@@ -69,3 +69,10 @@ NCTD 2016 $14.98.
   emptied and sanitized; $50 per person or vehicle not on GPS. Subs must price same-visit graffiti removal, not 72 hours.
 - **MANIFEST corrections:** "Attachment E" is the SBE Contract Requirements document itself (in hand). "Schedule A" is a false hit by the
   manifest script ("Deduction Schedule" followed by item "A."). Nothing is missing.
+
+## 2026-11-14 00:37Z: Alex Ditto revised pricing (HQ log)
+Alex (YMS) emailed Luke Fri 2026-11-13 17:34 MT "YMS Updates RTD Snow Pricing.xlsx" (saved in private/, prices never in this public
+repo): per-shelter-per-event prices for the three shelter groups, per-month prices for the Federal & Colfax and Federal & Evans transfer
+centers, hourly hauling and extra labor, 3 %/yr escalation, an operations plan, and a flag that YMS has no RTD-compliant vehicle GPS yet.
+He asked for a Saturday call about pre-treatment scope and the $24-a-shelter benchmark. HQ sent Luke a CALL BRIEF (1a1d77d288a03c6f);
+decision window "GO RTD" by Sun 2026-11-15 12:00 MT, else NO-BID stands and nothing is posted for the Mon 2026-11-16 14:00 OpenGov deadline.
