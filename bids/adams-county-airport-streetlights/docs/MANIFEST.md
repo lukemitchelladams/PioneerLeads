@@ -5,6 +5,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- 2026.766 Final Addenda No 2 Streetlight Repair or Replacement At CASP.pdf
 - ADCO-IFB2026766-Street-Light-Repair.extracted.txt
 - ADCO-IFB2026766-Street-Light-Repair.pdf
 
