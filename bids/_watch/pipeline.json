@@ -1307,10 +1307,11 @@
    "performer": "Brown Bison + GC/ADA sub (none identified)",
    "subs": "",
    "sub_pricing": "None",
-   "folder": "",
+   "folder": "bids/pcc-ada-upgrades-2027000046",
    "contact": "",
    "due_source": "ColoradoVSS listing: closing 2026-12-03 14:00 MST",
-   "doc_gaps": "Both IFB PDFs (ColoradoVSS only)"
+   "doc_gaps": "Both IFB PDFs (ColoradoVSS only)",
+   "next": "Worker 2026-11-14: watchlisted (coloradovss match 2027000046, folder set) so the next HQ scan downloads the IFB; rule-0 pre-bid date still not in hand after 16 days."
   },
   {
    "id": "carbon-valley-mechanical-pm",
