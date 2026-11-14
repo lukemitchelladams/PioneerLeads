@@ -553,3 +553,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-14 11:2xZ (hourly, read-only): 1 new: Google DMARC aggregate report for 2026-11-13 (1a1d9a95efc143bf). Our outbound mail authenticates
   cleanly (22 DKIM+SPF pass via Google; 1 DKIM-pass/SPF-softfail from a third-party relay, still DMARC-aligned). The only DMARC fails are 5
   copies relayed inside flowrightphi.com (arc=pass) = Flow Right's dispatch forwarded our CPW ask internally. No sub replies; nothing from Luke.
+- 2026-11-14 12:2xZ (hourly, read-only): 0 new since the DMARC report. No bounces, no replies, nothing from Luke.
