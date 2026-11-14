@@ -142,9 +142,12 @@ washing by [SUB-C]. A storm does not pull the cleaning crews off their routes, a
 
 **Registrations and insurance.** Brown Bison is registered in SAM (active through May 21, 2027). Before performing any Work,
 Brown Bison furnishes certificates for itself and each subcontractor meeting FoC §7 (pp.38-41): commercial general liability
-"$1,000,000 per occurrence" and "$2,000,000 aggregate"; automobile liability "$1,000,000 combined single limit"; employer's
-liability "$1,000,000" each limit; umbrella "$5,000,000 per occurrence" and "$5,000,000 aggregate"; RTD as additional insured,
-primary and non-contributory. FoC §7.6: "Prior to performing any Work, the Contractor shall furnish RTD with proof of insurance and
+"$1,000,000 per occurrence" and "$2,000,000 aggregate", plus the separate Products/Completed Operations limit "not included within
+the General Aggregate" of "$1,000,000 per occurrence" and "$2,000,000 aggregate" (§7.2), and ISO form CG 2417 railroad coverage if
+any Work is "within fifty (50) feet of RTD's light rail or commuter rail alignment" (§7.2); automobile liability "$1,000,000
+combined single limit"; workers' compensation "sufficient to meet its statutory obligations" and employer's liability "$1,000,000"
+each limit (§7.4); umbrella "$5,000,000 per occurrence" and "$5,000,000 aggregate"; RTD as additional insured, primary and
+non-contributory, with "an express waiver of subrogation in favor of RTD" (§7.6.D). FoC §7.6: "Prior to performing any Work, the Contractor shall furnish RTD with proof of insurance and
 a certificate of insurance for each of the Contractor's and each of its subcontractors' policies." No bond is required (FoC §7.13:
 "None required.").
 
@@ -161,9 +164,11 @@ Between notice of award and the start date Brown Bison completes:
 3. Safety Data Sheets for every cleaning, graffiti and ice-control product submitted for RTD Safety approval (SOW §4.D).
 4. Contractor-owned dispensers installed in both driver kiosks and stocked (SOW §4.P).
 5. MapToTrack accounts for every technician and supervisor; checklists loaded (Quality Control Plan, 3.6).
-6. A pre-season walk of all 42 shelters and both transfer centers to photograph baseline conditions, mark proposed snow storage
-   spots, flag any "new concrete" RTD identifies, and submit the final Snow Removal Plan for RTD pre-approval (SOW §7, p.6).
-7. A first-week joint inspection with RTD's Contracted Public Facilities Manager, if RTD wants one.
+6. A mobilization walk of all 42 shelters and both transfer centers, made for Brown Bison by [SUB-C: field supervisor name] with
+   [SUB-YMS: snow supervisor name] for the snow items, to photograph baseline conditions, mark proposed snow storage spots, flag
+   any "new concrete" RTD identifies, and submit the final Snow Removal Plan for RTD pre-approval (SOW §7, p.6).
+7. A first-week joint inspection with RTD's Contracted Public Facilities Manager, if RTD wants one, attended for Brown Bison by
+   [SUB-C: field supervisor name].
 
 **Prompt payment of subcontractors.** FoC §2.7.A.1.a (p.6): pay subcontractors "within seven days of the Contractor's receipt of
 payment from RTD"; SBE subcontractors within 30 days of their invoice, whether or not RTD has paid (SBE-CR §5.i).
@@ -260,7 +265,8 @@ for such services shall be channeled through the Contractor's supervisor."
   §4.C); physical damage to "RTD Facility Maintenance Department by calling 303-299-3075" (§4.H); vandalism or suspicious persons
   to the supervisor and police, then "RTD Dispatch (303-299-3000) as soon as possible" (§4.G).
 - SOW §4.I: supervisors "shall be able to speak English for the purpose of reporting incidents and communicating with RTD Dispatch
-  and other RTD management personnel." Both supervisors meet this.
+  and other RTD management personnel." [SUB-C and SUB-YMS: confirm that the field supervisor, the backup supervisor and both
+  snow supervisors speak English for RTD reporting; then write "Every supervisor on this Contract meets this."]
 - SOW §4.M: "The Contractor shall be able to send and receive e-mail communications with photos to and from designated RTD
   personnel." Supervisors and the Contract Manager carry phones with email and MapToTrack.
 - SOW §4.J: management meets RTD "when requested"; the field supervisor is "available during regular working hours to meet RTD
@@ -574,16 +580,24 @@ camera and data on each person.
 | 3. Management inspection | [SUB-C: owner or operations manager], Luke Adams as alternate, as RTD pre-approves | Unannounced inspection across all three groups and both transfer centers; review of Level 1 and 2 records | Monthly (SOW §9.C) |
 | 4. Record review | Brown Bison Contract Manager | MapToTrack completion against the 210-a-week schedule, GPS stops against the schedule, open corrections, Snow Logs | Weekly, and within 24 hours after each snow event |
 
+Labor: the people named at each level above. Materials: the shelter, kiosk and snow checklists loaded in MapToTrack, and the
+signed kiosk service sheets. Equipment: a phone with camera and MapToTrack for each person; the GPS-tracked supervisor vehicles.
+
 **C. Monthly management inspection.** SOW §9.C: "Monthly quality control inspections shall be completed by a member of the firm's
 management such as a project manager, corporate officer, regional manager, company owner or other person as pre-approved by RTD."
-Brown Bison will ask RTD to pre-approve the inspector at the start.
+Brown Bison will ask RTD to pre-approve the inspector at the start. Labor: [SUB-C: owner or operations manager], Luke Adams as
+alternate, as RTD pre-approves. Materials: the MapToTrack inspection checklist and the month's Level 1 and 2 records. Equipment:
+the GPS-tracked QC / management vehicle and a phone with camera and MapToTrack.
 
 **D. Photos.** SOW §9.D: "Time and date-stamped close up pictures to properly document Contract performance." Close-ups of the
-bench, glass, can, pad and kiosk fixtures, with stop number.
+bench, glass, can, pad and kiosk fixtures, with stop number. Labor: every technician, porter, snow crew lead and supervisor.
+Equipment: a phone camera with time and date stamping on, uploading through MapToTrack.
 
 **E. Local file.** SOW §9.E: "The Contractor must maintain a local file of all quality control inspections conducted by the
 Contractor including the corrective actions taken." Brown Bison keeps the file by month, exported from MapToTrack, for the term of
-the Contract and any longer retention the Contract requires.
+the Contract and any longer retention the Contract requires. Labor: Brown Bison's Contract Manager. Materials: the monthly
+MapToTrack exports, RTD inspection reports and the written responses to them. Equipment: Brown Bison's computer, with a backup
+copy kept off that computer.
 
 **Corrective action.** A failed item at Level 2 or 3 is fixed on the spot, or dispatched to be fixed within one hour (SOW §4.B),
 and re-photographed. A repeat failure at the same site or by the same person triggers retraining, and a pattern triggers a route or
@@ -856,12 +870,15 @@ aware of any information bearing on the existence of any potential organizationa
   Facility Solutions) and Front Range Services are RTD SBEs and can count themselves (sbe-research.md).
 - **GPS:** README (2026-11-14) notes YMS has no RTD-compliant vehicle GPS yet. The plan covers it with Brown Bison's own fleet
   account; the units are a cost to carry in the price (private/), not in this document.
-- **Monthly QC inspection:** default inspector is the custodial sub's owner or manager, with Luke as alternate, so the plan does not
-  commit your weekday time. Change it if you want to be the named inspector.
+- **Monthly QC inspection:** default inspector is the custodial sub's owner or manager. You are named as the alternate (3.4, 3.6.B
+  Level 3 and 3.6.C), so a monthly site inspection falls to you in any month the sub's inspector cannot do it or RTD does not
+  pre-approve that person (SOW §9.C: "a member of the firm's management ... or other person as pre-approved by RTD"). HQ default:
+  keep you as alternate. Overrule by Mon 11/16 10:30 MT and HQ names a second [SUB-C] manager instead. The mobilization walk and
+  any joint RTD inspection are attended by the sub's field supervisor, not you (Part 2 §2 items 6-7).
 - **Page count:** see the measurement line below.
 
-Page count (re-measured 2026-11-14 after the critic fixes): Part 2 is 9,113 words with markers (9,016 without the HQ notes) and
-renders to **22 pages** on 8.5 x 11 at 12-point Liberation Serif (metric twin of Times New Roman), 1-inch margins, tables and
+Page count (re-measured 2026-11-14 after critic fixes 16-25): Part 2 is 9,362 words with markers (9,265 without the HQ notes) and
+renders to **22 pages** without the HQ notes (23 with them) on 8.5 x 11 at 12-point Liberation Serif (metric twin of Times New Roman), 1-inch margins, tables and
 headings also at 12 point (pandoc to Word to LibreOffice PDF). Part 2 plus the Part 3.A project table and the four Part 3.B org
 charts, HQ notes removed, renders to **23 pages**. HQ counts the projects and org charts (FORMS-CHECKLIST §7 #18), so about 7
 pages are left for the [SUB-C] and [SUB-YMS] fill-ins against the 30-page limit. Part 1 renders to 2 pages including the RFP
