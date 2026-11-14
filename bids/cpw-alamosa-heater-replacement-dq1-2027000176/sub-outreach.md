@@ -25,3 +25,7 @@ and breakers, and adds a garage space heater. The sub's person must attend the M
   B-tier manifest ready for HQ: ops/outbox/2026-11-13/outbox-cpw-electrical-btier.json (bcc Pueblo Electrics, Mathews Brothers, Schrock,
   Timme, Redwing; same body, gate PASS, validated, NOT sent). Recommend sending today, not Monday, because the gate is Mon 12:00.
 - 2026-11-13 20:30Z (13:30 MT, HQ): BOUNCES on the 19:40Z electrical bcc: Valley Electric (550 5.7.1, domain mail inactive) and Royal Electrical Services (550 5.4.1); worker found no other published address for either. B tier sent with the same body + DQ + Exhibit A, msg 1a1d699c3400df4e: Pueblo Electrics (info@puebloelectrics.com), Mathews Brothers Electric (Info@mathewsbrotherselectric.com), Schrock Electric (schrockelectric@comcast.net), Timme Electric (timmeelectric@gmail.com), Redwing Electric (redwingele@comcast.net). Mike Reaves Electric skipped (EC license shown valid only to 2026-09-30). Answer asked by Mon 11/16 12:00 MT.
+- 2026-11-14 11:3xZ (worker, DMARC report 1a1d9a95efc143bf for 2026-11-13): 5 copies of a brownbisonco.com message were relayed inside
+  flowrightphi.com's Google Workspace (DKIM flowrightphi-com gappssmtp, SPF flowrightphi.com, arc=pass). Flow Right was only sent the CPW
+  ask on 11/13 (msg 1a1d5a289f443c61), so its dispatch mailbox forwarded that ask to about 5 internal recipients: it is being read and routed.
+  No reply yet.

@@ -2323,3 +2323,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 10:41Z hourly (03:35 MT) scan, HQ
 - Launched 10:35:48Z; fresh login 10:36:03Z attempt 1, no robot check; EXIT 0; pushed 207f424. bidnet 630/81 | samgov 92/92 | coloradovss 67/3.
   New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF.
+
+### 2026-11-14 11:21Z hourly (worker; Sat 04:21 MT)
+- HQ 10:35Z scan clean (bidnet 630/81, samgov 92, coloradovss 67/3; 0 new). DMARC 11/13: our outbound mail clean (22/22 pass); 5 DMARC
+  fails = copies relayed inside flowrightphi.com (arc=pass), so Flow Right's dispatch forwarded our CPW ask internally (logged in CPW
+  sub-outreach.md). No sub replies; no Luke reply on RTD.
+- Dashboard (11:30Z): bids v326 (d0607185ce86051764b3c67a15a524db), events v329 (4986664e460f674f050231139e546198), sources v275
+  (b6d0e25a0534d5d6948854105218f0e8); portal_feed v172, doc_gaps v11 unchanged.
