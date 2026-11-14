@@ -2560,5 +2560,225 @@ check("LAST_SCAN.md: when the cut note is the only error it is not printed twice
       _cut_el2 == "Errors: bidnet 1; detail pass cut after 612 s (budget 600 s): bidnet 23/85 enriched, the rest keep last scan's details; exit code 3",
       _cut_el2)
 
+# ---------------------------------------------------------------- BidNet paid-tier ("interception") notices (2026-11-14)
+# DUS lighting 444230804856 (= RTD IFB-326DM017) links /private/supplier/interception/open-notice/<id>: for a free account the page
+# is BidNet's upsell ("Upgrade to Access"), titled "Supplier Registration | BidNet Direct", with the notice's title as its only fact
+# and no tabs. enrich() parsed it every hour. Now: paywalled flag + note, no tab reads, no stall, not re-opened while the list row
+# stands, "(paid-tier notice)" after the title in REPORT.md / LAST_SCAN.md. Fixture: the real page, trimmed. No network.
+print("BidNet paid-tier notice detector")
+_PW_URL = "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230804856?target=view"
+_PW_TITLE = "IFB-326DM017 - Lighting Upgrades at Denver Union Station and Civic Center Parking Garage"
+_pw_html = (FX / "bidnet_interception_open_notice_444230804856.html").read_text()
+_lit_html = (FX / "bidnet_detail_littleton_2126.html").read_text()
+_lit_url = bidnet.BASE + "/colorado/city-of-littleton/solicitations/On-Call-Commercial-Plumbing-Services-2126/0000438328"
+check("fixture: the upsell page is detected; its title is 'Supplier Registration | BidNet Direct' and the notice title is its only fact",
+      bidnet.is_paywalled(_pw_html, _PW_URL) and bidnet.page_title(_pw_html) == "Supplier Registration | BidNet Direct"
+      and _PW_TITLE in bidnet.visible_text(_pw_html) and "Closing Date" not in bidnet.visible_text(_pw_html), bidnet.page_title(_pw_html))
+check("a real detail page (Littleton) and the plain detail sample are not paywalled",
+      not bidnet.is_paywalled(_lit_html, _lit_url) and not bidnet.is_paywalled(detail_html, "https://www.bidnetdirect.com/x"))
+_sr = "<html><head><title>Supplier Registration | BidNet Direct</title></head><body><h1>Some notice</h1></body></html>"
+check("the 'Supplier Registration' title alone counts on an open-notice URL, not on a /solicitations/ URL; 'Upgrade to Access' without "
+      "'exclusive access' does not count",
+      bidnet.is_paywalled(_sr, _PW_URL) and not bidnet.is_paywalled(_sr, _lit_url)
+      and not bidnet.is_paywalled("<html><body><p>UPGRADE TO ACCESS the premium plan</p></body></html>", _lit_url)
+      and bidnet.is_paywalled("<html><body><p>upgrade to access</p><p>EXCLUSIVE ACCESS</p></body></html>", _lit_url))
+check("the note names the cause and where the documents are",
+      bidnet.PAYWALL_NOTE == "BidNet paid-tier notice: no description or documents for a free account; documents are on the agency's own portal")
+
+
+class _PwPage:
+    """A BidNet detail page served from saved HTML: goto records the URL; every tab lookup (locator / evaluate / wait_for_selector,
+    what _read_tab and dismiss_dialogs call) lands in tab_calls and finds nothing."""
+
+    def __init__(self, html):
+        self.html, self.gotos, self.tab_calls = html, [], []
+
+    def goto(self, url, wait_until=None):
+        self.gotos.append(url)
+
+    def wait_for_timeout(self, ms):
+        pass
+
+    def wait_for_load_state(self, state=None, timeout=None):
+        pass
+
+    def content(self):
+        return self.html
+
+    def locator(self, sel):
+        self.tab_calls.append(sel)
+        return _types.SimpleNamespace(count=lambda: 0, first=None)
+
+    def evaluate(self, js, *args):
+        self.tab_calls.append("evaluate")
+        return []
+
+    def wait_for_selector(self, sel, **kw):
+        self.tab_calls.append(sel)
+
+
+# closings relative to today, so the bids stay open (and in REPORT.md's open-bids table) after the dates in this section have passed
+_PW_DUE, _PW_DUE2, _PW_DUE3 = [(_dt.date.today() + _dt.timedelta(days=n)).isoformat() for n in (21, 28, 17)]
+_pw_bid = {"source": "bidnet", "id": "444230804856", "title": _PW_TITLE, "url": _PW_URL, "closing": _PW_DUE, "list": "aggregate"}
+_pwp = _PwPage(_pw_html)
+_pw_dumps: list[str] = []
+_pw_ses = _types.SimpleNamespace(logged_in=True, page=_pwp, debug_dump=lambda tag: _pw_dumps.append(tag))
+_pw_got = bidnet.enrich(_pw_ses, {**_pw_bid, "watched": True})
+check("enrich on the upsell page (logged in, watched): paywalled flag + note + detail_checked, the row's title and closing kept, no "
+      "detail fields invented",
+      _pw_got.get("paywalled") is True and _pw_got.get("detail_note") == bidnet.PAYWALL_NOTE and _pw_got.get("detail_checked") is True
+      and _pw_got["title"] == _PW_TITLE and _pw_got["closing"] == _PW_DUE and _pw_got["url"] == _PW_URL
+      and not any(f in _pw_got for f in ("documents", "prebid", "agency", "sol", "qa", "communications", "items_text")), _pw_got)
+check("one goto to the bid's URL, no tab read attempted (no locator / dialog / wait), no debug dump, no stall on the session, nothing raised",
+      _pwp.gotos == [_PW_URL] and _pwp.tab_calls == [] and _pw_dumps == [] and not getattr(_pw_ses, "tab_stall", None),
+      (_pwp.gotos, _pwp.tab_calls, _pw_dumps))
+_npp = _PwPage("<html><head><title>On-Call Commercial Plumbing Services | BidNet Direct</title></head>" + detail_html[6:])
+_np_got = bidnet.enrich(_types.SimpleNamespace(logged_in=True, page=_npp, debug_dump=lambda tag: None),
+                        {"source": "bidnet", "id": "0000438328", "title": "On-Call Commercial Plumbing Services", "url": _lit_url})
+check("a normal detail page through the same fake is unaffected: no paywalled key, closing and documents parsed, and the Documents tab "
+      "WAS looked up (so the paywalled case's empty tab_calls means something)",
+      "paywalled" not in _np_got and "detail_note" not in _np_got and _np_got.get("closing") == "2026-10-28"
+      and [x["name"] for x in _np_got.get("documents") or []] == ["Addendum 1.pdf", "RFQ 2126.pdf"] and _npp.tab_calls == [bidnet.DOCS_TAB_SEL],
+      (_np_got, _npp.tab_calls))
+
+# run.py: a paywalled bid is not opened again while its list row stands (closing date and title), watched or not; a changed row re-opens it.
+# Its detail_at is an earlier day, so the once-a-day `recently` skip is out of the picture: only the paywalled skip can hold it back.
+_PWK = "bidnet:444230804856"
+_pw_prev = {_PWK: {**_pw_bid, "paywalled": True, "detail_note": bidnet.PAYWALL_NOTE, "detail_checked": True, "profiles": ["brownbison"],
+                   "detail_at": "2026-11-13T03:35:00+00:00", "last_seen": "2026-11-13T03:35:00+00:00", "first_seen": "2026-11-12T22:35:00+00:00"}}
+_pw_opened: list[str] = []
+_pw_dl: list[str] = []
+
+
+def _pw_enrich(ses, b):
+    _pw_opened.append(b["id"])
+    return {**b, "paywalled": True, "detail_note": bidnet.PAYWALL_NOTE, "detail_checked": True}
+
+
+_pw_mod = _types.SimpleNamespace(enrich=_pw_enrich, download_docs=lambda ses, b: _pw_dl.append(b["id"]) or [])
+_pw_ws = run._WatchSet([{"name": "dus", "source": "bidnet", "match": "326DM017", "folder": "bids/dus-garage-lighting-444230804856"}])
+_pf1 = {_PWK: dict(_pw_bid)}
+_ph1 = {"errors": []}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf1, "bidnet", profiles, run._WatchSet([]), _pw_prev, True, {}, _ph1)
+check("unchanged row: not opened; the bid keeps paywalled, the note and last scan's detail_at; no error line",
+      _pw_opened == [] and _pf1[_PWK].get("paywalled") is True and _pf1[_PWK].get("detail_note") == bidnet.PAYWALL_NOTE
+      and _pf1[_PWK].get("detail_at") == "2026-11-13T03:35:00+00:00" and _pf1[_PWK]["profiles"] == ["brownbison"] and _ph1["errors"] == [],
+      (_pw_opened, _pf1[_PWK], _ph1))
+_pf2 = {_PWK: dict(_pw_bid)}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf2, "bidnet", profiles, _pw_ws, _pw_prev, True, {}, {"errors": []})
+check("watched and unchanged: still not opened and no download attempted (there is nothing to download)",
+      _pw_opened == [] and _pw_dl == [] and _pf2[_PWK].get("paywalled") is True, (_pw_opened, _pw_dl))
+_pf3 = {_PWK: {**_pw_bid, "title": _PW_TITLE.upper()}}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf3, "bidnet", profiles, run._WatchSet([]), _pw_prev, True, {}, {"errors": []})
+check("a title that only changed case is the same row: not opened", _pw_opened == [], _pw_opened)
+_pf4 = {_PWK: {**_pw_bid, "closing": _PW_DUE2}}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf4, "bidnet", profiles, run._WatchSet([]), _pw_prev, True, {}, {"errors": []})
+check("closing date changed: opened again, this scan's detail_at, still paywalled",
+      _pw_opened == ["444230804856"] and _pf4[_PWK].get("paywalled") is True and _pf4[_PWK]["detail_at"] > "2026-11-13T03:35:00+00:00"
+      and _pf4[_PWK]["closing"] == _PW_DUE2, (_pw_opened, _pf4[_PWK]))
+_pf5 = {_PWK: {**_pw_bid, "title": "IFB-326DM017 - Lighting Upgrades at Denver Union Station (REVISED)"}}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf5, "bidnet", profiles, run._WatchSet([]), _pw_prev, True, {}, {"errors": []})
+check("title changed: opened again", _pw_opened == ["444230804856", "444230804856"], _pw_opened)
+_pf6 = {_PWK: dict(_pw_bid)}
+_pw_plain = _types.SimpleNamespace(enrich=lambda ses, b: _pw_opened.append(b["id"]) or {**b, "detail_checked": True})
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_plain, _pf6, "bidnet", profiles, run._WatchSet([]),
+                         {_PWK: {**_pw_prev[_PWK], "closing": _PW_DUE3}}, True, {}, {"errors": []})
+check("re-opened and no longer the upsell (the notice became readable): the paywalled flag and note are dropped",
+      len(_pw_opened) == 3 and "paywalled" not in _pf6[_PWK] and "detail_note" not in _pf6[_PWK], _pf6[_PWK])
+_pf7 = {_PWK: dict(_pw_bid)}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _pw_mod, _pf7, "bidnet", profiles, run._WatchSet([]),
+                         {_PWK: {k: v for k, v in _pw_prev[_PWK].items() if k not in ("paywalled", "detail_note")}}, True, {}, {"errors": []})
+check("a bid that was never paywalled is opened as before (the skip needs the flag)", len(_pw_opened) == 4, _pw_opened)
+
+# REPORT.md / LAST_SCAN.md: "(paid-tier notice)" after the title of such a bid, in the NEW table / line and the changes line; others untouched
+_pw_rec = {**_pw_prev[_PWK], "watched": False}
+_pw_other = {"source": "bidnet", "id": "0000500001", "title": "HVAC Maintenance Services", "url": "u", "closing": _PW_DUE3,
+             "profiles": ["brownbison"], "agency": "Town of Castle Rock"}
+_pw_h = {"bidnet": {"reachable": True, "reach_note": "HTTP 200", "creds": {"BIDNET_USER": True, "BIDNET_PASS": True}, "logged_in": True,
+                    "login_note": "session reused", "count": 580, "matches": 80, "errors": [], "last_success": "2026-11-14T13:35:00+00:00"}}
+_pw_r = {"started": "2026-11-14T13:35:00+00:00", "found": {_PWK: _pw_rec, "bidnet:0000500001": _pw_other},
+         "new": {_PWK: _pw_rec, "bidnet:0000500001": _pw_other},
+         "changed": {_PWK: {**_pw_rec, "diffs": [f"closing date {_PW_DUE3} -> {_PW_DUE}"]},
+                     "bidnet:0000500001": {**_pw_other, "diffs": [f"closing date {_PW_DUE} -> {_PW_DUE3}"]}},
+         "closed": {}, "downloads": {}, "missing_watch": [], "filed": [], "health": _pw_h}
+_pw_rep = run.render(_pw_r)
+_pw_rows = [ln for ln in _pw_rep.splitlines() if ln.startswith("| brownbison |")]
+check("REPORT.md: the NEW row (and the open-bids row) show '(paid-tier notice)' right after the title; the other bid's rows do not",
+      len(_pw_rows) == 4 and all(f"| {_PW_TITLE} (paid-tier notice) | {_PW_DUE} (" in ln for ln in _pw_rows if "326DM017" in ln)
+      and all("paid-tier" not in ln for ln in _pw_rows if "HVAC" in ln) and sum("326DM017" in ln for ln in _pw_rows) == 2, _pw_rows)
+check("REPORT.md: the changes line carries the tag inside the bold title",
+      f"- **{_PW_TITLE} (paid-tier notice)** (bidnet): closing date {_PW_DUE3} -> {_PW_DUE} — {_PW_URL}" in _pw_rep.splitlines()
+      and f"- **HVAC Maintenance Services** (bidnet): closing date {_PW_DUE} -> {_PW_DUE3} — u" in _pw_rep.splitlines(),
+      [ln for ln in _pw_rep.splitlines() if ln.startswith("- **")])
+_pw_ls = run.render_last_scan(_pw_r).splitlines()
+check("LAST_SCAN.md: the new-bid line and the change line carry the tag; the other bid's lines do not",
+      f"  - bidnet 444230804856 | {_PW_TITLE} (paid-tier notice) |  | closes {_PW_DUE} | brownbison | watched no" in _pw_ls
+      and f"  - bidnet 0000500001 | HVAC Maintenance Services | Town of Castle Rock | closes {_PW_DUE3} | brownbison | watched no" in _pw_ls
+      and any(ln.startswith(f"  - **{_PW_TITLE} (paid-tier notice)** (bidnet): closing date") for ln in _pw_ls)
+      and any(ln.startswith("  - **HVAC Maintenance Services** (bidnet): closing date") for ln in _pw_ls), _pw_ls)
+
+# ---------------------------------------------------------------- SAM.gov list fetch: one retry on a gateway / connection error (2026-11-14)
+# one classification code's page answered "HTTP 504 Gateway Time-out" (an HTML body) and the hour's SAM.gov went PARTIAL. Fake _get, no sleep.
+print("SAM.gov list fetch retry on 502/503/504 and connection errors")
+import io as _io  # noqa: E402
+import urllib.error as _uerr  # noqa: E402
+_SAM_ROW = {"noticeId": "n504", "title": "HVAC Maintenance, Fort Carson", "naicsCode": "238220", "postedDate": "2026-11-10",
+            "responseDeadLine": "2026-12-01T14:00:00-07:00", "placeOfPerformance": {"state": {"code": "CO"}}}
+_SAM_PROF = {"brownbison": {"states": ["CO"], "samgov": [{"ncode": "238220"}], "keywords": ["hvac"]}}
+_sam_calls: list[dict] = []
+_sam_slept: list[float] = []
+_sam_plan: list = []
+
+
+def _sam_fake_get(params, key):
+    _sam_calls.append(dict(params))
+    step = _sam_plan.pop(0) if _sam_plan else None
+    if isinstance(step, Exception):
+        raise step
+    return {"opportunitiesData": [_SAM_ROW], "totalRecords": 1}
+
+
+def _h504():
+    return _uerr.HTTPError("https://api.sam.gov/opportunities/v2/search", 504, "Gateway Time-out", {},
+                           _io.BytesIO(b"<html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.</body></html>"))
+
+
+_sam_saved = (samgov._get, samgov._sleep, samgov.RETRY_SLEEP_S, os.environ.pop("SAM_API_KEY", None))
+try:
+    os.environ["SAM_API_KEY"] = "test-key"
+    samgov._get, samgov._sleep, samgov.RETRY_SLEEP_S = _sam_fake_get, lambda s: _sam_slept.append(s), 0
+    check("defaults: 502/503/504 are the transient codes, the sleep between tries is 5 s",
+          _sam_saved[2] == 5.0 and samgov.TRANSIENT_HTTP == {502, 503, 504}, _sam_saved[2])
+    _sam_plan[:] = [_h504()]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("504 then success: the record is in, no error recorded, exactly two requests, one sleep of RETRY_SLEEP_S",
+          list(_sf) == ["n504"] and _sf["n504"]["profiles"] == ["brownbison"] and _se == [] and len(_sam_calls) == 2
+          and _sam_calls[0] == _sam_calls[1] and _sam_slept == [0], (_sf, _se, _sam_calls, _sam_slept))
+    _sam_calls[:], _sam_slept[:], _sam_plan[:] = [], [], [_h504(), _h504()]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("504 twice: the error is recorded once, with the text collect() always used (code, reason, body), after exactly one retry",
+          _sf == {} and _se == ["SAM.gov {'state': 'CO'}: HTTP 504 Gateway Time-out <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't "
+                                "respond in time.</body></html>"] and len(_sam_calls) == 2 and _sam_slept == [0], (_se, len(_sam_calls)))
+    _sam_calls[:], _sam_slept[:], _sam_plan[:] = [], [], [_uerr.URLError("[Errno 111] Connection refused")]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("a connection error (URLError) is retried the same way", list(_sf) == ["n504"] and _se == [] and len(_sam_calls) == 2, (_se, _sam_calls))
+    _sam_calls[:], _sam_slept[:], _sam_plan[:] = [], [], [ConnectionResetError(104, "Connection reset by peer")]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("a reset connection is retried", list(_sf) == ["n504"] and _se == [] and len(_sam_calls) == 2, (_se, _sam_calls))
+    _sam_calls[:], _sam_slept[:] = [], []
+    _sam_plan[:] = [_uerr.HTTPError("u", 400, "Bad Request", {}, _io.BytesIO(b'{"errorCode":"400","errorMessage":"bad ptype"}'))]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("a 400 is not retried: one request, no sleep, the error recorded as before",
+          _sf == {} and _se == ['SAM.gov {\'state\': \'CO\'}: HTTP 400 Bad Request {"errorCode":"400","errorMessage":"bad ptype"}']
+          and len(_sam_calls) == 1 and _sam_slept == [], (_se, _sam_calls))
+    _sam_calls[:], _sam_plan[:] = [], [samgov.BudgetExhausted("SAM.gov daily request budget reached (900/900)")]
+    _sf, _se = samgov.collect(_SAM_PROF)
+    check("the daily budget is not retried", _se == ["SAM.gov daily request budget reached (900/900)"] and len(_sam_calls) == 1, (_se, _sam_calls))
+finally:
+    samgov._get, samgov._sleep, samgov.RETRY_SLEEP_S = _sam_saved[:3]
+    os.environ.pop("SAM_API_KEY", None)
+    if _sam_saved[3] is not None:
+        os.environ["SAM_API_KEY"] = _sam_saved[3]
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

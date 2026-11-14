@@ -649,6 +649,13 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
             if recently:
                 found[k] = _keep_detail(b, old)
                 continue
+            # a BidNet paid-tier notice (bid["paywalled"], bidnet.enrich): a free account sees nothing but the title on that
+            # page, so it is not opened again (watched or not) until its list row changes (closing date or title); before
+            # this it cost a detail slot every hour (DUS lighting 444230804856, 2026-11-14)
+            if old.get("paywalled") and old.get("closing") == b.get("closing") \
+                    and _title_key(old.get("title")) == _title_key(b.get("title")):
+                found[k] = _keep_detail(b, old)
+                continue
             b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
             try:
                 got = mod.enrich(ses, b)
@@ -755,6 +762,13 @@ def _one_line(text, limit: int = 400) -> str:
     return " ".join(str(text).split()).replace("|", "/")[:limit]
 
 
+PAYWALL_TAG = " (paid-tier notice)"  # after the title of a BidNet paid-tier notice (bid["paywalled"]): its page holds nothing else
+
+
+def _title_tag(b: dict) -> str:
+    return PAYWALL_TAG if b.get("paywalled") else ""
+
+
 def _row(b: dict) -> str:
     pb = b.get("prebid") or {}
     walk = ""
@@ -768,7 +782,8 @@ def _row(b: dict) -> str:
     if b.get("source") == "samgov" and not b.get("state") and b.get("office_state"):
         where = f" (place of performance not stated; {b['office_state']} buying office)"
     return (f"| {','.join(b.get('profiles', []))}{' WATCHED' if b.get('watched') else ''} | {b['source']} | "
-            f"{(b.get('agency') or '')[:40]} | {(b.get('title') or '')[:90]}{where} | {due} | {walk} | {b.get('url') or ''} |")
+            f"{(b.get('agency') or '')[:40]} | {(b.get('title') or '')[:90]}{_title_tag(b)}{where} | {due} | {walk} | "
+            f"{b.get('url') or ''} |")
 
 
 HDR = "| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |\n|---|---|---|---|---|---|---|"
@@ -781,7 +796,7 @@ def _brief_sub_line(b: dict) -> str:
 
 def _change_line(b: dict) -> str:
     """One changed bid as REPORT.md's 'Changes on matching / watched bids' prints it (LAST_SCAN.md repeats the same text)."""
-    return f"**{b.get('title', '')[:90]}** ({b['source']}): " + "; ".join(b["diffs"]) + f" — {b.get('url', '')}"
+    return f"**{b.get('title', '')[:90]}{_title_tag(b)}** ({b['source']}): " + "; ".join(b["diffs"]) + f" — {b.get('url', '')}"
 
 
 def run_status(health: dict) -> dict:
@@ -846,7 +861,7 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
     new = list((r.get("new") or {}).values())
     lines.append(f"New matching bids: {len(new)}")
     for b in sorted(new, key=lambda x: x.get("closing") or "9"):
-        lines.append(f"  - {b['source']} {b['id']} | {_one_line(b.get('title') or '', 90)} | {_one_line(b.get('agency') or '', 40)} "
+        lines.append(f"  - {b['source']} {b['id']} | {_one_line(b.get('title') or '', 90)}{_title_tag(b)} | {_one_line(b.get('agency') or '', 40)} "
                      f"| closes {b.get('closing') or '?'} | {','.join(b.get('profiles') or [])} | watched {'yes' if b.get('watched') else 'no'}")
         if b.get("brief_line"):
             lines.append(_brief_sub_line(b))

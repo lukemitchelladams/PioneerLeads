@@ -61,6 +61,18 @@ pushes. Why: on 2026-11-12 20:39Z BidNet's tabs hung on "Loading..." behind a si
 waited `TAB_WAIT_MS` per tab per bid, and the outer `timeout 1500` killed the run before REPORT.md, losing the hour's
 list scan and SAM.gov results. Tests: `tests/test_bidwatch.py`, "detail pass wall-clock budget".
 
+### BidNet paid-tier notices and SAM.gov gateway retries (2026-11-14)
+Some BidNet AGGREGATE rows link `/private/supplier/interception/open-notice/<id>?target=view`. For a free account that
+page is BidNet's upsell ("Upgrade to Access", page title "Supplier Registration | BidNet Direct"): the notice's title and
+nothing else, no description, agency, tabs or documents (DUS lighting 444230804856 = RTD IFB-326DM017). `bidnet.enrich`
+detects it (`is_paywalled`), sets `paywalled: true` and `detail_note` ("BidNet paid-tier notice: no description or
+documents for a free account; documents are on the agency's own portal") on the bid, reads no tabs (not a stall), and
+run.py does not open the page again until the bid's list row changes (closing date or title). REPORT.md and LAST_SCAN.md
+print `(paid-tier notice)` after such a title; the documents are on the agency's own portal. Fixture:
+`tests/fixtures/bidnet_interception_open_notice_444230804856.html`. Same day: a SAM.gov list page that fails with HTTP
+502/503/504 or a connection error is fetched once more after `samgov.RETRY_SLEEP_S` (5 s) before the error is recorded,
+so one gateway time-out no longer marks the hour's SAM.gov PARTIAL; 4xx answers and the daily budget are not retried.
+
 ## Staying logged in
 Sessions (cookies) are saved per portal in `~/.brownbison/sessions/` (outside the repo, mode 600). Every
 scan first checks whether the saved session still works; if it timed out, it logs in again with the env

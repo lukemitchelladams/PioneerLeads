@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -58,6 +59,32 @@ def _get(params: dict, key: str) -> dict:
         return json.load(r)
 
 
+# One retry on a list fetch that failed at the gateway or the connection (2026-11-14: one classification code's page came
+# back "HTTP 504 Gateway Time-out" as an HTML body and the whole source was marked PARTIAL for the hour). A 4xx (bad
+# parameters, rate limit) and the daily budget are not retried. The retry is one more budgeted request, after RETRY_SLEEP_S.
+TRANSIENT_HTTP = {502, 503, 504}
+RETRY_SLEEP_S = 5.0  # tests set 0
+_sleep = time.sleep  # looked up at call time so tests can replace it
+
+
+def _transient(e: Exception) -> bool:
+    if isinstance(e, urllib.error.HTTPError):
+        return e.code in TRANSIENT_HTTP
+    return isinstance(e, (urllib.error.URLError, ConnectionError, TimeoutError))
+
+
+def _get_list(params: dict, key: str) -> dict:
+    """_get with one retry on a transient failure; when the retry fails too, its error is the one raised (collect() records
+    it with the same text as before)."""
+    try:
+        return _get(params, key)
+    except Exception as e:  # noqa: BLE001 - only the transient ones are retried
+        if not _transient(e):
+            raise
+        _sleep(RETRY_SLEEP_S)
+        return _get(params, key)
+
+
 def fetch_open(key: str, extra: dict, max_records: int = 3000) -> list[dict]:
     today = dt.date.today()
     base = {
@@ -68,7 +95,7 @@ def fetch_open(key: str, extra: dict, max_records: int = 3000) -> list[dict]:
     }
     out, offset = [], 0
     while offset < max_records:
-        data = _get({**base, "offset": offset}, key)
+        data = _get_list({**base, "offset": offset}, key)
         batch = data.get("opportunitiesData", []) or []
         out += batch
         total = int(data.get("totalRecords") or 0)

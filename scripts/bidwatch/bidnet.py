@@ -1012,11 +1012,44 @@ def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str, tag
     return html
 
 
+# ---------------- paid-tier ("interception") notices ----------------
+# Some AGGREGATE rows link /private/supplier/interception/open-notice/<id>?target=view. For a free account that page is
+# BidNet's upsell, not the notice (tests/fixtures/bidnet_interception_open_notice_444230804856.html, saved 2026-11-14 03:42Z:
+# DUS lighting 444230804856 = RTD IFB-326DM017): page title "Supplier Registration | BidNet Direct", the notice's title as the
+# only fact, then "Upgrade to Access" / "Get exclusive access to high-value bid opportunities ..." and a $599/year plan card.
+# No description, no agency, no closing date, no tab strip, no documents; the documents are on the agency's own portal. Before
+# this, enrich() parsed the upsell every hour (one detail slot a scan, nothing learned). Now the bid is marked paywalled with
+# the note below, the tab reads are skipped (not a stall: there are no tabs), and run.py does not open the page again until
+# the bid's list row changes (closing date or title).
+PAYWALL_RX = re.compile(r"Upgrade to Access", re.I)
+PAYWALL_RX2 = re.compile(r"exclusive access", re.I)
+PAYWALL_TITLE_RX = re.compile(r"Supplier Registration", re.I)
+PAYWALL_NOTE = ("BidNet paid-tier notice: no description or documents for a free account; documents are on the agency's "
+                "own portal")
+
+
+def page_title(html: str) -> str:
+    """The <title> of a saved page ("" when there is none); the first one, so an inline SVG's <title> never passes for it."""
+    t = BeautifulSoup(html, "lxml").title
+    return " ".join(t.get_text(" ").split()) if t is not None else ""
+
+
+def is_paywalled(html: str, url: str = "") -> bool:
+    """Whether a detail page is BidNet's paid-tier upsell instead of the notice: its text says "Upgrade to Access" and
+    "exclusive access" together (case-insensitive), or the page is titled "Supplier Registration" on an open-notice URL."""
+    text = visible_text(html)
+    if PAYWALL_RX.search(text) and PAYWALL_RX2.search(text):
+        return True
+    return bool(OPEN_NOTICE_HREF.search(url or "") and PAYWALL_TITLE_RX.search(page_title(html)))
+
+
 def enrich(session, bid: dict) -> dict:
     """Detail page. Public visitors see only location + publication/closing date (and closing time);
     issuing org, solicitation #, description, documents and buyer contact are 'Registered members only'.
     Logged in, the documents live on the 'Documents & Items' tab, which loads only when clicked. A WATCHED bid
-    (bid["watched"], set by run.py) also gets its Communication and Q & A tabs read: d["communications"], d["qa"]."""
+    (bid["watched"], set by run.py) also gets its Communication and Q & A tabs read: d["communications"], d["qa"].
+    A paid-tier notice (is_paywalled) returns at once with bid["paywalled"] = True and bid["detail_note"] = PAYWALL_NOTE:
+    nothing on that page is the notice, and there are no tabs to read."""
     page = session.page
     page.goto(bid["url"], wait_until="domcontentloaded")
     page.wait_for_timeout(1200)
@@ -1024,6 +1057,8 @@ def enrich(session, bid: dict) -> dict:
     if BOT_RX.search(html) and not total_count(html):
         start_cooldown()
         raise Challenged("BidNet robot check on a detail page: detail pass stopped, cool-down started")
+    if is_paywalled(html, bid["url"]):
+        return {**bid, "paywalled": True, "detail_note": PAYWALL_NOTE, "detail_checked": True}
     d = parse_detail(html, bid["url"])
     if d.get("login_required_for_docs") and not session.logged_in and (d.get("prebid") or {}).get("source") != "bidnet events":
         d["prebid"] = None  # the description is locked, so any 'pre-bid' hit came from page chrome
