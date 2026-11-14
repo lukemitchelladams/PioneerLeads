@@ -2220,3 +2220,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Launched 01:36:19Z; fresh login 01:36:35Z attempt 1, no robot check, no 403 this time (the 00:4xZ "403 Forbidden" on 0000442975's Documents
   tab did not recur); EXIT 0; pushed f29d350. bidnet 628/81 | samgov 90/90 | coloradovss 67/3. New matches 0, docs 0. Inbox quiet (no
   Luke reply on the RTD CALL BRIEF yet; window Sun 12:00 MT).
+### 2026-11-14 01:22Z hourly (worker; Fri 18:22 MT)
+- HQ 00:25Z: La Plata NO-BID (revives only if a rate lands by Sun 17:00), Weld cabling NO-BID. HQ 00:36Z scan: bidnet 628/81 (Documents tab
+  403 on 0000442975, fail-fast), samgov 90 (7 closed), coloradovss 67/3; Adams 2026.766 Addendum 2 filed.
+- RTD 126DM016: Alex sent revised snow pricing + call request 00:34Z; HQ CALL BRIEF to Luke 00:37Z: "GO RTD" by Sun 12:00 MT or NO-BID.
+  Worker pre-built the no-price RTD package (builder + critic + fix; fixes 16-25 in a second pass). Risks: empty SBE GFE file, no custodial
+  sub, no own past projects.
+- Adams street lights Addendum 2 = Q&A only (35' height limit, stamp only for the two new poles); README updated.

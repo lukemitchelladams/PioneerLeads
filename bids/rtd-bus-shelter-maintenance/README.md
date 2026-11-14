@@ -76,3 +76,11 @@ repo): per-shelter-per-event prices for the three shelter groups, per-month pric
 centers, hourly hauling and extra labor, 3 %/yr escalation, an operations plan, and a flag that YMS has no RTD-compliant vehicle GPS yet.
 He asked for a Saturday call about pre-treatment scope and the $24-a-shelter benchmark. HQ sent Luke a CALL BRIEF (1a1d77d288a03c6f);
 decision window "GO RTD" by Sun 2026-11-15 12:00 MT, else NO-BID stands and nothing is posted for the Mon 2026-11-16 14:00 OpenGov deadline.
+
+## 2026-11-14 02:1xZ (worker): no-price package pre-built for a possible Sun GO
+FORMS-CHECKLIST.md (OpenGov 7.1.1-7.1.14, every SBE enclosure, GFE items mapped), RESPONSE-DRAFT.md (RFP 4.2.B order: experience, ability,
+Custodial, Graffiti, Snow, Staffing, Equipment/GPS table, QC, MUTCD traffic/safety; SBE Plan + GFE narrative; about 21 of 30 pages, sub
+placeholders), SUBMISSION.md (OpenGov rules, WCAG 2.1 AA checklist, hour-by-hour plan Sun 12:00 GO -> Mon 14:00 MT, SBE/SBO email drafts
+gate PASS). No prices. Critic fixes 1-15 applied; fixes 16-25 in a second pass. Biggest risks found: (1) the good-faith-effort file is
+empty (no SBE email ever sent; SBE-CR 3.A.iv.j warns pro forma last-minute mailings are not enough); (2) no custodial/graffiti sub priced;
+(3) Brown Bison has no completed projects, so both required projects must be the subs'. Luke must follow the OpenGov project to submit (RFP 3.5).
