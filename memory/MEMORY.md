@@ -2451,3 +2451,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox quiet 3 h; HQ 22:36Z scan clean (bidnet 630/81, samgov 92, coloradovss 67/3, 0 new).
 - Dashboard (23:30Z): bids v336 (4d8a8b8232adcf0a7de66868434a8b63), events v339 (c2d924905a8c1b41cec4aaff218dafff), sources v285
   (b6051b1df8848acde554b9b49efc8d9b); portal_feed v175 (d13d5e9d0542ed83e44bece56f80bae9), doc_gaps v11 unchanged.
+- 23:25Z: PFA docs for PSD 7.1 cannot be fetched from any cloud session (proxy 403 on poudre-fire.org, lfra.org); worker's two allowlist
+  approval prompts sat unanswered and cost it two ticks. Rule: no settings prompts while Luke is away; Mac heartbeat work order + Luke board
+  line (allowlist www.poudre-fire.org) written to ops/plan_ceo/COORDINATION.md 2026-11-14 section.

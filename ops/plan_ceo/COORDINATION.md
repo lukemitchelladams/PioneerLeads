@@ -192,3 +192,27 @@ brown-bison-gov/data/humanize_gate.py, not the same gate; its docstring lists th
 - Only the repo's copy of hz.py runs.
 - Pre-check: `python3 scripts/humanize_gate.py check BODY [--asks-from INBOUND] [--subject S] [--signature]`.
 - Today's weld-second-walk.txt went out with "Hi," / "Thanks," and a lint FAIL. The gate now refuses that.
+
+## 2026-11-14 (Sat) section, HQ 23:25Z
+
+### Work order for the Mac heartbeat (first run after it wakes)
+PSD IFB 27-701-002 hoods: section 7.1 needs a statement that the vendor and crew meet "the certification and qualification requirements of
+each applicable AHJ". Poudre Fire Authority's site is blocked from every cloud session (proxy policy 403 on www.poudre-fire.org and lfra.org).
+From the Mac, download into bids/poudre-sd-kitchen-hood/docs/pfa/ and commit:
+1. PFA Notice 2026-02 "Minimum Contractor Qualifications for Required ITM of Fire Protection Systems" (Inspection Services Division page).
+2. PFA Minimum Contractor Qualifications Guidebook (Contractors / Plan Reviews and Permits page).
+3. The PFA "Brycer - The Compliance Engine Notices" page (save as PDF or HTML).
+4. Loveland Fire Rescue Authority (lfra.org): any hood-cleaning contractor requirement page, if one exists.
+Then note in bids/poudre-sd-kitchen-hood/README.md whether any of them names IKECA or a registration for hood CLEANERS. Research so far
+(ops/research/2026-11-14-psd-ahj-hood-requirements.md) found none; HOODZ holds NFPA-96-style franchise training only.
+
+### Rule reaffirmed (worker 23:3xZ, HQ agrees)
+No operator raises an environment-settings approval prompt (allowlist, credentials) while Luke is not in the session: two unanswered
+prompts cost the worker its 21Z and 22Z ticks. Network additions go on Luke's board as a one-time settings step instead:
+"add www.poudre-fire.org (and lfra.org) under Network access for the BrownBison environment".
+
+### Standing for Sun 11/15 and Mon 11/16
+- Sun 12:00 MT: RTD "GO RTD" window closes (NO-BID default). Sun 17:00: La Plata revival window closes.
+- Mon 08:30 MT: HQ sends the four chases (CPW, BGNDRF, Pagosa, BVCC) from ops/outbox/2026-11-16/ bodies; skip list per that README plus
+  Alamo Janitorial (closed); Larry (HOODZ) gets the one AHJ-registration question in the same batch.
+- Mon 12:00 MT gates and PSFB send; Mon 14:00 RTD due; Mon 17:00 Exhibit G/ID (BVCC attendee) and Arapahoe Q1 (Luke).
