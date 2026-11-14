@@ -2421,3 +2421,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   results go to ops/research/2026-11-14-psd-ahj-hood-requirements.md.
 - Dashboard (20:40Z): bids v335 (5a4c0eb61fc74353df556c13e6b485a4), events v338 (a0440ca96021087c6a9b983b7ace024a), sources v284
   (897a5631c35d7ab8232c8aa1b4ae6616); portal_feed v175 (d13d5e9d0542ed83e44bece56f80bae9) and doc_gaps v11 unchanged.
+- 20:30Z: PSD IFB 7.1 re-read: the statement is about "each applicable AHJ" requirements; the IFB names no IKECA. HOODZ (19:57Z): NFPA-96-style
+  franchise training by 2027-02-28, IKECA no, AHJ registration unanswered. 7.1 can be signed if the AHJ research (worker, tonight) shows no
+  IKECA/registration gap; Larry gets the one AHJ-registration question Mon 08:30 (not on a Saturday).
