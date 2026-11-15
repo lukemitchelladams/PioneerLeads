@@ -2702,3 +2702,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   (outbox-psfb.json, 22f0e4b) after Luke's overrule window; Mon 08:30 chase batch is 8 entries.
 - Dashboard (22:30Z): bids v359 (d81950cbb906e89b08a909b879e0d929), events v362 (43534943c3cdeb837886e638cc9be327), sources v308
   (772655fd0931630183b8cefaa941324a); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
+
+### 2026-11-15 22:41Z hourly (15:35 MT) scan, HQ
+- Launched 22:36:07Z via launch_scan.sh; saved 20:37Z BidNet session reused (no code, no robot check). EXIT 0, scan commit aa560fc.
+- Counts: bidnet 631/82 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 (Cloudflare on detail) | dibbs 307/189 carried | total 794/180. Docs 0. Inbox last hour: 0.
+- New match 1: BidNet 444235838422 "PERIMETER FENCING -- EIAF-09958", Colorado, published 11/15, closes 2026-12-04, paid-tier interception notice (agency blank). Labeled NO in the watchlist: fencing is not our trade (rule 8), same call as Durango cemetery fencing and the Reclamation security gate.
+- Correction carried into the record: La Plata IFB 26-053-1215 is due Tue 2026-11-17 10:00 MST (IFB pp.1, 3, 8, 10), not Monday; the revival window still closes Sun 17:00 MT (00:00Z). Final NO-BID note pre-written for the 00:35Z tick.

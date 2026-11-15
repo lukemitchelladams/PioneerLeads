@@ -813,6 +813,12 @@
    "name": "BidNet mirror of VA Pikes Peak Janitorial Base plus 4 (NO: SDVOSB set-aside; paid-tier BidNet notice)",
    "source": "bidnet",
    "match": "2722933907|Pikes Peak Janitorial"
+  },
+  {
+   "name": "EIAF-09958 Perimeter Fencing (NO: fencing is not our trade, rule 8; BidNet paid-tier interception notice, agency unreadable from the free tier; due 12/04)",
+   "source": "bidnet",
+   "id": "444235838422",
+   "match": "444235838422|EIAF ?-?09958"
   }
  ]
 }
