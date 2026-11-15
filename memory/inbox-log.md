@@ -590,3 +590,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-15 20:2xZ (hourly, read-only, worker Gmail connector working): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
 - 2026-11-15 21:2xZ (hourly, read-only): 0 new in 2 h. No sub replies, so none of the 8 Mon 08:30 chase sends (d27a2fa) need dropping. Nothing from Luke.
 - 2026-11-15 22:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (Mon 08:30 batch unchanged), nothing from Luke (PSFB overrule window Mon 12:00 MT still open).
+- 2026-11-15 23:2xZ (hourly, read-only): 0 new in 2 h. No sub replies, nothing from Luke; La Plata Durango rate window (00:00Z) still empty.

@@ -2895,6 +2895,12 @@
    "verdict": "NO",
    "why": "Mirror of SAM 0bc3e40e2f7049e6bdd8b64a09143c3b; SDVOSB set-aside, Brown Bison is not SDVOSB (HQ 06:42Z watchlist NO).",
    "at": "2026-11-15T07:30:00Z"
+  },
+  "bidnet:444235838422": {
+   "name": "PERIMETER FENCING -- EIAF-09958 (BidNet paid-tier notice, CO, closes 2026-12-04)",
+   "verdict": "NO",
+   "why": "Fencing is not our trade (rule 8); same call as Durango cemetery fencing (HQ 22:41Z watchlist NO).",
+   "at": "2026-11-15T23:30:00Z"
   }
  },
  "watched": {
@@ -3080,6 +3086,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-15T22:30:00Z",
+ "last_hourly_check": "2026-11-15T23:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
