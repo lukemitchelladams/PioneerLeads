@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-15T22:36:06+00:00
+# Bid watch report — 2026-11-15T23:35:59+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 631 | BUYER 441, AGGREGATE 191 | 82 | 2026-11-15T22:36:06+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-15T22:36:06+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 94 |  | 94 | 2026-11-15T22:36:06+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-15T22:36:06+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused; CHALLENGED on an enrichment page, not the login form: BidNet robot check on a detail page: detail pass stopped, cool-down started | 631 | BUYER 441, AGGREGATE 191 | 82 | 2026-11-15T23:35:59+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-15T23:35:59+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 94 |  | 94 | 2026-11-15T23:35:59+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-15T23:35:59+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -29,12 +29,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (24d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (33d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (51d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet |  | PERIMETER FENCING -- EIAF -09958 | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444235838422?target=view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -227,7 +221,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS | 2026-12-03 (18d) |  | https://sam.gov/workspace/contract/opp/b6794a137e8647cca7072ec299896676/view |
 | brownbison WATCHED | bidnet | Trails Park and Recreation District | Trails Park and Recreation District - Landscape Maintenance Contract Services | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Trails-Park-and-Recreation-District-Landscape-Maintenance-Contract-Services/0000443426?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Centennial | On Call Building Department Services | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Building-Department-Services/0000442569?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | PERIMETER FENCING -- EIAF -09958 | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444235838422?target=view |
+| brownbison WATCHED | bidnet |  | PERIMETER FENCING -- EIAF -09958 | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444235838422?target=view |
 | brownbison WATCHED | bidnet |  | S--BGNDRF CUSTODIAL SERVICES (paid-tier notice) | 2026-12-04 (19d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2722680182?target=view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--BGNDRF CUSTODIAL SERVICES | 2026-12-04 (19d) |  | https://sam.gov/workspace/contract/opp/b2e58c41cb4c4787813fbc1f31ea81f7/view |
 | brownbison WATCHED | bidnet | City of Canon City | Janitorial Services | 2026-12-07 (22d) | 2026-11-30 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Janitorial-Services/0000442347?purchasingGroupId=8409951&origin=1 |
@@ -272,4 +266,5 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Errors
 
+- bidnet: detail pages blocked: BidNet robot check on a detail page: detail pass stopped, cool-down started
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
