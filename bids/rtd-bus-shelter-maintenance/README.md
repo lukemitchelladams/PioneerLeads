@@ -84,3 +84,8 @@ placeholders), SUBMISSION.md (OpenGov rules, WCAG 2.1 AA checklist, hour-by-hour
 gate PASS). No prices. Critic fixes 1-15 applied; fixes 16-25 in a second pass. Biggest risks found: (1) the good-faith-effort file is
 empty (no SBE email ever sent; SBE-CR 3.A.iv.j warns pro forma last-minute mailings are not enough); (2) no custodial/graffiti sub priced;
 (3) Brown Bison has no completed projects, so both required projects must be the subs'. Luke must follow the OpenGov project to submit (RFP 3.5).
+
+## 2026-11-15 19:05Z: window closed, NO-BID stands (HQ)
+The "GO RTD" window (Sun 2026-11-15 12:00 MT) closed with no reply from Luke, so the NO-BID default stands: nothing is built or posted for
+the Mon 2026-11-16 14:00 OpenGov deadline. The worker's no-price package and Alex's revised YMS pricing (private/) are kept for the next
+RTD solicitation. Alex Ditto's Saturday call request was passed to Luke in the 11/14 CALL BRIEF; no operator contacted Alex.

@@ -2653,3 +2653,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-15 18:42Z hourly (11:35 MT) scan, HQ
 - Launched 18:36:06Z; fresh login 18:36:49Z attempt 1, no robot check; EXIT 0, all sources complete; pushed b196221. bidnet 630/81 |
   samgov 94/94 | coloradovss 67/3. New matches 0, docs 0. Inbox quiet; RTD window closes 19:00Z (check-in scheduled 19:05Z).
+
+### 2026-11-15 19:05Z RTD window check, HQ
+- No "GO RTD", no mail from Luke in 3 days. RTD 126DM016 NO-BID default confirmed in pipeline + README; nothing built or posted for Mon 14:00.
+  Package + YMS sheet kept for the next RTD cycle. La Plata's revival window (00:00Z) is checked at the 00:35Z tick.
