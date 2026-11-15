@@ -808,6 +808,11 @@
    "name": "VA National Cemetery Pikes Peak Janitorial Base plus 4 (NO: SDVOSB set-aside, FAR 19.14; Brown Bison is not SDVOSB)",
    "source": "samgov",
    "match": "0bc3e40e2f7049e6bdd8b64a09143c3b|Pikes Peak Janitorial"
+  },
+  {
+   "name": "BidNet mirror of VA Pikes Peak Janitorial Base plus 4 (NO: SDVOSB set-aside; paid-tier BidNet notice)",
+   "source": "bidnet",
+   "match": "2722933907|Pikes Peak Janitorial"
   }
  ]
 }
