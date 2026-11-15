@@ -38,6 +38,7 @@ Credentials: env vars only (see docs/bidwatch.md). Nothing secret is printed or 
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import os
 import subprocess
@@ -56,7 +57,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, session_sync  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, LAST_SCAN_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE,
-    cred_status, days_until, iso, load_env_file, load_json, load_profiles, match_profiles, save_json,
+    cred_status, days_until, iso, load_env_file, load_json, load_profiles, match_profiles, now_utc, save_json,
 )
 
 SCANNED_BY = os.environ.get("BIDWATCH_HOST") or __import__("socket").gethostname()
@@ -337,7 +338,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             found[k] = {**v, "carried_forward": True}
     for s in incomplete:
         health[s]["carried_forward"] = True
-        health[s]["errors"].append(f"{s} list incomplete this scan: previous open bids carried forward, none marked closed")
+        health[s]["errors"].append(f"{s}{INCOMPLETE_NOTE}")
     # a source that was unreachable keeps its previous rows: count them so the report is not misread as empty
     for s in incomplete:
         if health[s]["count"] == 0:
@@ -372,6 +373,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
             health[s]["last_success"] = started
         else:
             health[s]["last_success"] = prev_health.get(s, {}).get("last_success")
+        _track_down(s, health[s], prev_health.get(s, {}), started)
     # health.json keeps the last known state of sources that were not part of this run
     health_all = {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items() if s not in health},
                   **health}
@@ -812,6 +814,98 @@ def run_status(health: dict) -> dict:
     return {"ok": ok, "skipped": skipped, "degraded": degraded, "exit_code": (0 if not degraded else 3) if ok else 2}
 
 
+# ---------------- "down since": a source BLIND or PARTIAL across consecutive runs ----------------
+# Colorado VSS answered HTTP 503 from 2026-11-14T23:36Z on; every hour the reports repeated the same "list incomplete this scan"
+# line and the operator had to diff health.json timestamps to say how long it had been down. health.json now keeps, next to
+# last_success, the first run of the current BLIND/PARTIAL streak (down_since) and its length (down_runs); from the second run
+# on the Counts cell, the health table and the Errors section say "down since <UTC> (N h, R runs)" instead, and
+# down_since_line() is the one line the hourly reply quotes. The first run keeps its earlier wording.
+
+INCOMPLETE_NOTE = " list incomplete this scan: previous open bids carried forward, none marked closed"  # after the source name
+DOWN_MIN_RUNS = 2  # from this many consecutive BLIND/PARTIAL runs on, the reports say "down since" instead of the per-run line
+
+
+def _down_state(s: str, v: dict) -> str | None:
+    """"BLIND" when the source returned nothing fresh this run (blind, unreachable, or an empty list other than DIBBS's),
+    "PARTIAL" when its list came back short (part of the source failed, earlier rows kept), None when it was complete or not
+    part of this run. The one test behind the Counts line's marker and the down-since tracking."""
+    if v.get("not_scanned_this_run"):
+        return None
+    if v.get("blind") or not v.get("reachable", True) or (not v.get("count") and s != "dibbs"):
+        return "BLIND"
+    if v.get("carried_forward"):
+        return "PARTIAL"
+    return None
+
+
+def _track_down(s: str, h: dict, prev_h: dict, started: str) -> None:
+    """Carry the source's down streak from the previous run's health.json entry into this run's: a BLIND or PARTIAL run
+    extends it (down_since = the streak's first run, down_runs = its length, this run included; runs the source was not part
+    of neither extend nor break it), a complete run clears both keys."""
+    if _down_state(s, h):
+        h["down_since"] = (prev_h.get("down_since") if prev_h.get("down_runs") else None) or started
+        h["down_runs"] = int(prev_h.get("down_runs") or 0) + 1
+    else:
+        h.pop("down_since", None)
+        h.pop("down_runs", None)
+
+
+def _since_text(ts: str) -> str:
+    """A health.json timestamp as the reports quote it: UTC to the minute, Z (2026-11-14T23:36:19+00:00 -> 2026-11-14T23:36Z)."""
+    try:
+        t = dt.datetime.fromisoformat(str(ts))
+        if t.tzinfo:
+            t = t.astimezone(dt.timezone.utc)
+        return t.strftime("%Y-%m-%dT%H:%MZ")
+    except (TypeError, ValueError):
+        return str(ts)
+
+
+def _down_hours(since: str, now: str | None = None) -> int | None:
+    """Whole hours from `since` to `now` (the scan's timestamp; default the clock), or None when a timestamp is unreadable."""
+    try:
+        a = dt.datetime.fromisoformat(str(since))
+        b = dt.datetime.fromisoformat(str(now)) if now else now_utc()
+        return max(0, int(round((b - a).total_seconds() / 3600)))
+    except (TypeError, ValueError):
+        return None
+
+
+def down_note(v: dict, now: str | None = None) -> str | None:
+    """'down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward' for a source in its DOWN_MIN_RUNS-th or later
+    consecutive BLIND/PARTIAL run, else None (the first run keeps its own wording). `now` is the scan's timestamp."""
+    if v.get("not_scanned_this_run") or int(v.get("down_runs") or 0) < DOWN_MIN_RUNS or not v.get("down_since"):
+        return None
+    h = _down_hours(v["down_since"], now)
+    note = f"down since {_since_text(v['down_since'])} ({h if h is not None else '?'} h, {int(v['down_runs'])} runs)"
+    return note + (", list carried forward" if v.get("carried_forward") else "")
+
+
+def _source_errors(s: str, v: dict, now: str | None = None) -> list[str]:
+    """v["errors"] as the reports print them: from the second consecutive BLIND/PARTIAL run on, the per-run '<s> list
+    incomplete this scan ...' line reads 'down since <UTC> (N h); previous open bids carried forward' instead (REPORT.md
+    prefixes the source: '- coloradovss: down since ...'). Other lines and the count are untouched."""
+    errs = list(v.get("errors") or [])
+    if not down_note(v, now):
+        return errs
+    h = _down_hours(v["down_since"], now)
+    line = f"down since {_since_text(v['down_since'])} ({h if h is not None else '?'} h); previous open bids carried forward"
+    return [line if e == f"{s}{INCOMPLETE_NOTE}" else e for e in errs]
+
+
+def down_since_line(health: dict, now: str | None = None) -> str | None:
+    """The one line the hourly operator quotes, or None when no source scanned this run is in its second or later
+    consecutive BLIND/PARTIAL run: 'Down: coloradovss BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried
+    forward' (several sources joined by '; '). LAST_SCAN.md carries it under the Counts line, so run.py's stdout does too."""
+    parts = []
+    for s, v in health.items():
+        state = _down_state(s, v)
+        note = down_note(v, now) if state else None
+        if note:
+            parts.append(f"{s} {state}, {note}")
+    return "Down: " + "; ".join(parts) if parts else None
+
+
 LAST_SCAN_SOURCES = ("bidnet", "samgov", "coloradovss", "bonfire")  # the Counts line names these four, always, in this order
 
 
@@ -828,7 +922,7 @@ def _login_line(h: dict) -> str:
     return "no" + (f": {note}" if note else "")
 
 
-def _count_cell(s: str, v: dict | None) -> str:
+def _count_cell(s: str, v: dict | None, now: str | None = None) -> str:
     if v is None:
         return f"{s} -/-"
     cell = f"{s} {v.get('count', 0)}/{v.get('matches', 0)}"
@@ -836,26 +930,31 @@ def _count_cell(s: str, v: dict | None) -> str:
     if v.get("not_scanned_this_run"):
         return f"{cell} (not scanned this run, last good {last})"
     # the same test as REPORT.md's headline: nothing fresh at all this run (blind, unreachable, or an empty list other
-    # than DIBBS's) is BLIND; a list that came back short (part of the source failed, earlier rows kept) is PARTIAL
-    if v.get("blind") or not v.get("reachable", True) or (not v.get("count") and s != "dibbs"):
-        return f"{cell} (BLIND, last good {last})"
-    if v.get("carried_forward"):
-        return f"{cell} (PARTIAL, last good {last})"
+    # than DIBBS's) is BLIND; a list that came back short (part of the source failed, earlier rows kept) is PARTIAL.
+    # From the second consecutive such run on, "down since <UTC> (N h, R runs)" takes the place of "last good".
+    state = _down_state(s, v)
+    if state:
+        return f"{cell} ({state}, {down_note(v, now) or f'last good {last}'})"
     return cell
 
 
 def render_last_scan(r: dict, watched_keys=None) -> str:
     """bids/_watch/LAST_SCAN.md: a heading with the scan's UTC time, then six labelled lines the hourly operator reads
     in one `cat` instead of grepping REPORT.md and diffing open_bids.json. Plain text, no tables; sub-items are indented
-    `  - ` lines under their count; a new SAM.gov notice that was briefed carries a `    brief: ...` line under its own."""
+    `  - ` lines under their count; a new SAM.gov notice that was briefed carries a `    brief: ...` line under its own; a
+    source in its second or later consecutive BLIND/PARTIAL run puts the quotable `  - Down: ...` line under Counts."""
     h = r["health"]
     st = run_status(h)
     found = r.get("found") or {}
+    now = r.get("started")
     lines = [f"# Last scan {r['started']}", f"Logged in: {_login_line(h)}"]
-    cells = [_count_cell(s, h.get(s)) for s in LAST_SCAN_SOURCES]
-    cells += [_count_cell(s, v) for s, v in h.items() if s not in LAST_SCAN_SOURCES]
+    cells = [_count_cell(s, h.get(s), now) for s in LAST_SCAN_SOURCES]
+    cells += [_count_cell(s, v, now) for s, v in h.items() if s not in LAST_SCAN_SOURCES]
     cells.append(f"total {len(found)}/{sum(1 for b in found.values() if b.get('profiles'))}")
     lines.append("Counts: " + " | ".join(cells))
+    down = down_since_line(h, now)
+    if down:
+        lines.append(f"  - {down}")
     # "new" = a matching, still-open bid whose key was not in the previous open_bids.json (what scan() tracks as r["new"]
     # and REPORT.md lists under "NEW matching bids"); its first_seen is this scan's timestamp as a consequence
     new = list((r.get("new") or {}).values())
@@ -875,7 +974,7 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
         w = watched_keys.entry(found[k]) if watched_keys is not None and k in found else None
         label = (w or {}).get("folder") or k  # the bid folder the watchlist names, else source:id
         lines += [f"  - {label}: {Path(f).name}" for f in files]
-    errs = [(s, e) for s, v in h.items() if not v.get("not_scanned_this_run") for e in (v.get("errors") or [])]
+    errs = [(s, e) for s, v in h.items() if not v.get("not_scanned_this_run") for e in _source_errors(s, v, now)]
     # a detail pass the wall-clock budget cut is always named here, whatever else went wrong first: those bids carry
     # last scan's detail, and the operator must not read their unchanged documents / pre-bid as confirmed
     cuts = [(s, v["detail_cut"]) for s, v in h.items() if not v.get("not_scanned_this_run") and v.get("detail_cut")]
@@ -943,10 +1042,16 @@ def render(r: dict) -> str:
     for s, v in h.items():
         creds = ", ".join(f"{k}={'yes' if ok else 'NO'}" for k, ok in v["creds"].items()) or "n/a"
         tot = ", ".join(f"{k.replace('statewide ', '')} {n}" for k, n in (v.get("site_totals") or {}).items() if n is not None)
-        note = ("NOT SCANNED THIS RUN; " if v.get("not_scanned_this_run") else "") \
-            + ((f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; " if v.get("blind")
-                else "PARTIAL this run (part of the source failed): earlier rows kept, none closed; ")
-               if v.get("carried_forward") else "") \
+        down_since = down_note(v, r.get("started"))
+        if not v.get("carried_forward"):
+            down = ""
+        elif down_since:  # the second consecutive BLIND/PARTIAL run on: how long it has been down, not the same sentence again
+            down = f"{'BLIND' if v.get('blind') else 'PARTIAL'} this run, {down_since}; "
+        elif v.get("blind"):
+            down = f"BLIND this run, showing last good data from {v.get('last_success') or 'never'}; "
+        else:
+            down = "PARTIAL this run (part of the source failed): earlier rows kept, none closed; "
+        note = ("NOT SCANNED THIS RUN; " if v.get("not_scanned_this_run") else "") + down \
             + _one_line(v['login_note'] or ('yes' if v['logged_in'] else 'no'))
         lines.append(f"| {s} | {'yes' if v['reachable'] else 'NO (' + v['reach_note'] + ')'} | {creds} | "
                      f"{note} | {v['count']} | {tot} | {v['matches']} | "
@@ -1000,7 +1105,7 @@ def render(r: dict) -> str:
             lines += [f"- {k}: {f}" for f in files]
     if r.get("filed"):
         lines += ["", "## Filed into bid folders", ""] + [f"- {f}" for f in r["filed"]]
-    errs = [(s, e) for s, v in h.items() for e in v["errors"]]
+    errs = [(s, e) for s, v in h.items() for e in _source_errors(s, v, r.get("started"))]
     if errs:
         lines += ["", "## Errors", ""] + [f"- {s}: {_one_line(e, 300)}" for s, e in errs[:60]]
     return "\n".join(lines) + "\n"

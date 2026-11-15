@@ -2780,5 +2780,197 @@ finally:
     if _sam_saved[3] is not None:
         os.environ["SAM_API_KEY"] = _sam_saved[3]
 
+# ---------------------------------------------------------------- "down since": a source BLIND or PARTIAL across consecutive runs (2026-11-15)
+# Colorado VSS answered HTTP 503 from 2026-11-14T23:36Z on and every hour's reports repeated "coloradovss list incomplete this scan";
+# the operator diffed health.json timestamps to say how long. health.json now keeps down_since / down_runs next to last_success, and
+# from the second consecutive run on the Counts cell, the health table and the Errors section say "down since <UTC> (N h, R runs)".
+print("'down since' line for a source BLIND or PARTIAL across consecutive runs")
+import datetime as _dtd  # noqa: E402
+
+# (a) rendering on a fabricated result: the live outage, 14th run
+_vss_err = "coloradovss" + run.INCOMPLETE_NOTE
+check("the per-run line scan() records is the constant the renderers recognise; the wording changes from the second run",
+      run.INCOMPLETE_NOTE == " list incomplete this scan: previous open bids carried forward, none marked closed" and run.DOWN_MIN_RUNS == 2)
+_dn_vss = {"reachable": False, "reach_note": "HTTP 503", "creds": {}, "logged_in": False, "login_note": "", "count": 67, "matches": 3,
+           "blind": True, "carried_forward": True, "last_success": "2026-11-14T23:36:19+00:00", "errors": [_vss_err],
+           "down_since": "2026-11-14T23:36:19+00:00", "down_runs": 14}
+_dn_bon = {"reachable": True, "reach_note": "HTTP 200", "creds": {"BONFIRE_USER": True, "BONFIRE_PASS": True}, "logged_in": True,
+           "login_note": "session reused", "count": 2, "matches": 1, "last_success": "2026-11-15T13:36:43+00:00",
+           "errors": ["detail pages blocked: Cloudflare bot challenge on the opportunity page"]}
+_dn_r = {"started": "2026-11-15T13:36:43+00:00", "found": {}, "new": {}, "changed": {}, "closed": {}, "downloads": {}, "missing_watch": [],
+         "filed": [], "health": {"coloradovss": _dn_vss, "bonfire": _dn_bon}}
+_dn_ls = run.render_last_scan(_dn_r).splitlines()
+_dn_ci = next(i for i, ln in enumerate(_dn_ls) if ln.startswith("Counts:"))
+check("LAST_SCAN.md, 14th blind run: the Counts cell says 'down since <UTC to the minute> (14 h, 14 runs), list carried forward' in place of 'last good'",
+      "coloradovss 67/3 (BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward)" in _dn_ls[_dn_ci]
+      and "last good" not in _dn_ls[_dn_ci], _dn_ls[_dn_ci])
+check("LAST_SCAN.md: the quotable Down line sits right under Counts as a sub-item; the six labelled lines stay the six",
+      _dn_ls[_dn_ci + 1] == "  - Down: coloradovss BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward"
+      and [ln.split(":")[0] for ln in _dn_ls[1:] if not ln.startswith("  - ")]
+      == ["Logged in", "Counts", "New matching bids", "Changes on watched bids", "Documents downloaded", "Errors"], _dn_ls)
+check("LAST_SCAN.md Errors line: the same per-source count, the first error quoted is the down-since line, exit code 3",
+      _dn_ls[-1] == "Errors: coloradovss 1, bonfire 1; first: coloradovss: down since 2026-11-14T23:36Z (14 h); previous open bids carried "
+                    "forward; exit code 3", _dn_ls[-1])
+check("down_since_line(): the one line the hourly reply quotes",
+      run.down_since_line(_dn_r["health"], _dn_r["started"])
+      == "Down: coloradovss BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward")
+_dn_rep = run.render(_dn_r).splitlines()
+_dn_row = next(ln for ln in _dn_rep if ln.startswith("| coloradovss |"))
+check("REPORT.md health table: 'BLIND this run, down since ... (14 h, 14 runs), list carried forward' in place of 'showing last good data'; "
+      "counts, last success and the error count unchanged",
+      "| BLIND this run, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward; no | 67 |" in _dn_row
+      and _dn_row.endswith("| 3 | 2026-11-14T23:36:19+00:00 | 1 |") and "showing last good data" not in _dn_row, _dn_row)
+check("REPORT.md Errors section: one '<src>: down since ... (N h); previous open bids carried forward' line replaces the per-run line; "
+      "the other source's error is untouched and carries no down-since",
+      "- coloradovss: down since 2026-11-14T23:36Z (14 h); previous open bids carried forward" in _dn_rep
+      and f"- coloradovss: {_vss_err}" not in _dn_rep
+      and "- bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page" in _dn_rep
+      and not any("down since" in ln for ln in _dn_rep if ln.startswith("| bonfire") or ln.startswith("- bonfire")),
+      [ln for ln in _dn_rep if ln.startswith("- ")])
+check("REPORT.md headline still names the source BLIND", any(ln.startswith("**Headline:**") and "BLIND: coloradovss" in ln for ln in _dn_rep))
+# the first run keeps the earlier wording exactly
+_dn_r1 = {**_dn_r, "health": {"coloradovss": {**_dn_vss, "down_runs": 1}, "bonfire": _dn_bon}}
+_dn_ls1 = run.render_last_scan(_dn_r1).splitlines()
+_dn_rep1 = run.render(_dn_r1)
+check("first blind run: the Counts cell, the table note and the Errors lines read as before, no Down line, the helper returns None",
+      "coloradovss 67/3 (BLIND, last good 2026-11-14T23:36:19+00:00)" in _dn_ls1[_dn_ci] and not any(ln.startswith("  - Down:") for ln in _dn_ls1)
+      and _dn_ls1[-1] == f"Errors: coloradovss 1, bonfire 1; first: coloradovss: {_vss_err}; exit code 3"
+      and "| BLIND this run, showing last good data from 2026-11-14T23:36:19+00:00; no | 67 |" in _dn_rep1
+      and f"- coloradovss: {_vss_err}" in _dn_rep1 and "down since" not in _dn_rep1
+      and run.down_since_line(_dn_r1["health"], _dn_r1["started"]) is None, (_dn_ls1, _dn_rep1[-500:]))
+# PARTIAL counts the same; two sources share the one line; a source not scanned this run is left out even with a streak on record
+_dn_sam = {"reachable": True, "reach_note": "HTTP 200", "creds": {"SAM_API_KEY": True}, "logged_in": True,
+           "login_note": "API key; +5 from the nightly bulk file", "count": 5, "matches": 5, "carried_forward": True, "complete": False,
+           "last_success": "2026-11-15T13:36:43+00:00", "down_since": "2026-11-15T11:36:43+00:00", "down_runs": 2,
+           "errors": ["SAM.gov {'state': 'CO'}: HTTP 503 Service Unavailable", "samgov" + run.INCOMPLETE_NOTE]}
+_dn_dib = {**_dn_vss, "not_scanned_this_run": True, "count": 307, "matches": 189, "down_since": "2026-10-20T04:40:19+00:00", "down_runs": 600}
+_dn_r2 = {**_dn_r, "health": {"coloradovss": _dn_vss, "samgov": _dn_sam, "bonfire": _dn_bon, "dibbs": _dn_dib}}
+_dn_ls2 = run.render_last_scan(_dn_r2).splitlines()
+check("PARTIAL counts the same: the Counts cell and the Down line carry both sources; a not-scanned source with a streak on record is left out",
+      "samgov 5/5 (PARTIAL, down since 2026-11-15T11:36Z (2 h, 2 runs), list carried forward)" in _dn_ls2[_dn_ci]
+      and "dibbs 307/189 (not scanned this run, last good 2026-11-14T23:36:19+00:00)" in _dn_ls2[_dn_ci]
+      and _dn_ls2[_dn_ci + 1] == "  - Down: coloradovss BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried forward; "
+                                 "samgov PARTIAL, down since 2026-11-15T11:36Z (2 h, 2 runs), list carried forward", _dn_ls2[_dn_ci:_dn_ci + 2])
+_dn_rep2 = run.render(_dn_r2)
+check("REPORT.md on a PARTIAL source: 'PARTIAL this run, down since ...' in the table; its other error stays, its per-run line is the down-since line",
+      "| PARTIAL this run, down since 2026-11-15T11:36Z (2 h, 2 runs), list carried forward; API key; +5 from the nightly bulk file | 5 |" in _dn_rep2
+      and "- samgov: SAM.gov {'state': 'CO'}: HTTP 503 Service Unavailable" in _dn_rep2
+      and "- samgov: down since 2026-11-15T11:36Z (2 h); previous open bids carried forward" in _dn_rep2, _dn_rep2[-900:])
+check("timestamps: any offset is shown in UTC to the minute; hours are whole; an unreadable timestamp gives '?' instead of a crash",
+      run._since_text("2026-11-14T16:36:19-07:00") == "2026-11-14T23:36Z"
+      and run._down_hours("2026-11-14T23:36:19+00:00", "2026-11-15T13:06:00+00:00") == 13 and run._down_hours("garbage", None) is None
+      and run.down_note({"down_since": "garbage", "down_runs": 3}, None) == "down since garbage (? h, 3 runs)")
+
+# (b) a real scan() sequence, offline: SAM.gov API unreachable and no key -> BLIND; the streak lives in health.json between runs
+_dn_now = common.now_utc()
+_dn_saved = (run.reachable, run.samgov.collect, run.samgov_bulk.collect, run.HOSTS["samgov"], os.environ.pop("SAM_API_KEY", None),
+             os.environ.get(run.BRIEF_MAX_ENV))
+os.environ[run.BRIEF_MAX_ENV] = "0"  # a key is set below; the new-match brief would otherwise call the API
+run.HOSTS["samgov"] = "http://127.0.0.1:1/"
+(TMP / "OPEN_BIDS_FILE.json").write_text(json.dumps({"scanned_at": common.iso(), "bids": {
+    "samgov:dn1": {"source": "samgov", "id": "dn1", "title": "HVAC maintenance, Peterson SFB", "closing": "2099-01-01", "profiles": ["brownbison"],
+                   "url": "https://sam.gov/dn1", "first_seen": "2026-11-01T00:00:00+00:00", "last_seen": "2026-11-15T00:00:00+00:00"},
+    "bidnet:dn2": {"source": "bidnet", "id": "dn2", "title": "Plumbing on-call", "closing": "2099-01-01", "profiles": ["brownbison"],
+                   "url": "https://www.bidnetdirect.com/x", "first_seen": "2026-11-01T00:00:00+00:00", "last_seen": "2026-11-15T00:00:00+00:00"}}}))
+_dn_vss_since = common.iso(_dn_now - _dtd.timedelta(hours=14))
+(TMP / "HEALTH_FILE.json").write_text(json.dumps({"checked_at": common.iso(), "sources": {
+    "bidnet": {"reachable": True, "reach_note": "HTTP 200", "creds": {}, "logged_in": True, "login_note": "session reused", "count": 1,
+               "matches": 1, "errors": [], "last_success": common.iso(_dn_now)},
+    "coloradovss": {"reachable": False, "reach_note": "HTTP 503", "creds": {}, "logged_in": False, "login_note": "", "count": 67, "matches": 3,
+                    "blind": True, "carried_forward": True, "errors": [_vss_err], "last_success": _dn_vss_since,
+                    "down_since": _dn_vss_since, "down_runs": 14}}}))
+try:
+    rA = run.scan(["samgov"])
+    _hA = rA["health"]["samgov"]
+    _fileA = json.loads((TMP / "HEALTH_FILE.json").read_text())["sources"]
+    check("first blind run: down_since = this scan, down_runs 1, both in health.json; no Down line yet, the Counts cell and Errors as before",
+          _hA.get("blind") and _hA.get("carried_forward") and _hA["down_since"] == rA["started"] and _hA["down_runs"] == 1
+          and _fileA["samgov"]["down_since"] == rA["started"] and _fileA["samgov"]["down_runs"] == 1
+          and run.down_since_line(rA["health"], rA["started"]) is None and "Down:" not in rA["last_scan"]
+          and "samgov 1/1 (BLIND, last good never)" in rA["last_scan"]
+          and f"- samgov: samgov{run.INCOMPLETE_NOTE}" in (TMP / "REPORT_FILE.json").read_text(), (_hA, rA["last_scan"]))
+    check("a different source is unaffected: bidnet (not in this run) keeps its clean entry; coloradovss keeps its 14-run streak untouched",
+          "down_since" not in _fileA["bidnet"] and "down_runs" not in _fileA["bidnet"] and _fileA["bidnet"].get("not_scanned_this_run")
+          and _fileA["coloradovss"]["down_since"] == _dn_vss_since and _fileA["coloradovss"]["down_runs"] == 14
+          and "samgov:dn1" in rA["found"] and "bidnet:dn2" in rA["found"], _fileA)
+    # the streak's first run was 5 h ago: edit the persisted state, since the clock cannot be moved
+    _dn_since5 = common.iso(_dn_now - _dtd.timedelta(hours=5))
+    _fileA["samgov"]["down_since"] = _dn_since5
+    (TMP / "HEALTH_FILE.json").write_text(json.dumps({"checked_at": common.iso(), "sources": _fileA}))
+    rB = run.scan(["samgov"])
+    _hB = rB["health"]["samgov"]
+    _lsB = rB["last_scan"].splitlines()
+    _repB = (TMP / "REPORT_FILE.json").read_text()
+    _since5 = run._since_text(_dn_since5)
+    check("second consecutive blind run: down_since kept, down_runs 2; the Counts cell says 'down since <5 h ago> (5 h, 2 runs), list carried forward'",
+          _hB["down_since"] == _dn_since5 and _hB["down_runs"] == 2
+          and f"samgov 1/1 (BLIND, down since {_since5} (5 h, 2 runs), list carried forward)" in _lsB[2], (_hB, _lsB))
+    check("second run: the Down line under Counts, the same text from down_since_line(); the health table and the Errors section say so",
+          _lsB[3] == f"  - Down: samgov BLIND, down since {_since5} (5 h, 2 runs), list carried forward"
+          and run.down_since_line(rB["health"], rB["started"]) == _lsB[3].strip()[2:]
+          and f"| BLIND this run, down since {_since5} (5 h, 2 runs), list carried forward; " in _repB
+          and f"- samgov: down since {_since5} (5 h); previous open bids carried forward" in _repB
+          and f"- samgov: samgov{run.INCOMPLETE_NOTE}" not in _repB, (_lsB, _repB[-700:]))
+    check("health.json still records the per-run line (the renderers do the replacing); the run stays degraded, exit code 3",
+          f"samgov{run.INCOMPLETE_NOTE}" in _hB["errors"] and run.run_status(rB["health"])["exit_code"] == 3
+          and _lsB[-1].endswith("; exit code 3"), _hB["errors"])
+    # a complete run clears the streak
+    run.reachable = lambda url, timeout=30: (True, "HTTP 200")
+    os.environ["SAM_API_KEY"] = "test-key"
+    run.samgov.collect = lambda profiles: ({"ok1": {"source": "samgov", "id": "ok1", "title": "HVAC maintenance, Fort Carson", "closing": "2099-01-01",
+                                                   "profiles": ["brownbison"], "url": "https://sam.gov/ok1"}}, [])
+    run.samgov_bulk.collect = lambda profiles: ({}, "nightly bulk file skipped (test)")
+    rC = run.scan(["samgov"])
+    _hC = rC["health"]["samgov"]
+    _fileC = json.loads((TMP / "HEALTH_FILE.json").read_text())["sources"]
+    check("a complete run clears down_since and down_runs, in the run's health and in health.json; no BLIND/PARTIAL, no Down line",
+          "down_since" not in _hC and "down_runs" not in _hC and "down_since" not in _fileC["samgov"] and "down_runs" not in _fileC["samgov"]
+          and not _hC.get("carried_forward") and _hC["last_success"] == rC["started"] and "samgov 1/1 |" in rC["last_scan"]
+          and "Down:" not in rC["last_scan"] and run.down_since_line(rC["health"], rC["started"]) is None, (_hC, rC["last_scan"]))
+    # PARTIAL counts the same as BLIND: the API fails, the nightly file answers
+    run.samgov.collect = lambda profiles: ({}, ["SAM.gov {'state': 'CO'}: HTTP 503 Service Unavailable"])
+    run.samgov_bulk.collect = lambda profiles: ({"samgov:bulk1": {"source": "samgov", "id": "bulk1", "title": "Boiler repair, Fort Carson",
+                                                                 "closing": "2099-01-01", "profiles": ["brownbison"], "url": "https://sam.gov/bulk1",
+                                                                 "via": "bulk"}}, "nightly file: 1 matching")
+    rD = run.scan(["samgov"])
+    _hD = rD["health"]["samgov"]
+    check("first PARTIAL run: carried forward, not blind, down_since = this scan, down_runs 1, the earlier PARTIAL wording, no Down line",
+          _hD.get("carried_forward") and not _hD.get("blind") and _hD["down_since"] == rD["started"] and _hD["down_runs"] == 1
+          and f"samgov {_hD['count']}/{_hD['matches']} (PARTIAL, last good {rD['started']})" in rD["last_scan"]
+          and "PARTIAL this run (part of the source failed)" in (TMP / "REPORT_FILE.json").read_text()
+          and "Down:" not in rD["last_scan"], (_hD, rD["last_scan"]))
+    _fileD = json.loads((TMP / "HEALTH_FILE.json").read_text())["sources"]
+    _dn_since3 = common.iso(_dn_now - _dtd.timedelta(hours=3))
+    _fileD["samgov"]["down_since"] = _dn_since3
+    (TMP / "HEALTH_FILE.json").write_text(json.dumps({"checked_at": common.iso(), "sources": _fileD}))
+    rE = run.scan(["samgov"])
+    _hE = rE["health"]["samgov"]
+    _since3 = run._since_text(_dn_since3)
+    _repE = (TMP / "REPORT_FILE.json").read_text()
+    check("second consecutive PARTIAL run: the same down-since wording as BLIND, marked PARTIAL, in all three places; the API error line stays",
+          _hE["down_runs"] == 2 and _hE["down_since"] == _dn_since3
+          and f"samgov {_hE['count']}/{_hE['matches']} (PARTIAL, down since {_since3} (3 h, 2 runs), list carried forward)" in rE["last_scan"]
+          and f"  - Down: samgov PARTIAL, down since {_since3} (3 h, 2 runs), list carried forward" in rE["last_scan"]
+          and f"| PARTIAL this run, down since {_since3} (3 h, 2 runs), list carried forward; " in _repE
+          and f"- samgov: down since {_since3} (3 h); previous open bids carried forward" in _repE
+          and "- samgov: SAM.gov {'state': 'CO'}: HTTP 503 Service Unavailable" in _repE, (_hE, rE["last_scan"], _repE[-600:]))
+    # BLIND after PARTIAL is the same outage: the streak goes on
+    run.reachable, run.samgov.collect, run.samgov_bulk.collect = _dn_saved[:3]
+    os.environ.pop("SAM_API_KEY", None)
+    rF = run.scan(["samgov"])
+    _hF = rF["health"]["samgov"]
+    check("BLIND after PARTIAL: one streak, down_runs 3, down_since unchanged",
+          _hF.get("blind") and _hF["down_runs"] == 3 and _hF["down_since"] == _dn_since3
+          and f"(BLIND, down since {_since3} (3 h, 3 runs), list carried forward)" in rF["last_scan"], (_hF, rF["last_scan"]))
+finally:
+    run.reachable, run.samgov.collect, run.samgov_bulk.collect, run.HOSTS["samgov"] = _dn_saved[:4]
+    os.environ.pop("SAM_API_KEY", None)
+    if _dn_saved[4] is not None:
+        os.environ["SAM_API_KEY"] = _dn_saved[4]
+    if _dn_saved[5] is None:
+        os.environ.pop(run.BRIEF_MAX_ENV, None)
+    else:
+        os.environ[run.BRIEF_MAX_ENV] = _dn_saved[5]
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

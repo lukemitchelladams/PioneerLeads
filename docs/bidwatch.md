@@ -24,7 +24,12 @@ Each scan writes:
   open_bids.json against a saved copy. A heading with the scan's UTC time, then six labelled lines, plain text, no tables:
   `Logged in:` (BidNet: `yes (attempt 1)`, `yes (session reused ...)`, `no: login deferred ...`, `no: COOL-DOWN ...`);
   `Counts:` open rows/matching per source, `bidnet | samgov | coloradovss | bonfire | total`, with `(BLIND, last good <UTC>)`
-  after a source that returned nothing fresh and `(PARTIAL, ...)` after one whose list came back short; `New matching bids:`
+  after a source that returned nothing fresh and `(PARTIAL, ...)` after one whose list came back short; from the second
+  consecutive BLIND/PARTIAL run on, the cell reads `(BLIND, down since 2026-11-14T23:36Z (14 h, 14 runs), list carried
+  forward)` instead, a quotable `  - Down: <source> BLIND, down since ...` sub-item follows the line, REPORT.md's health
+  table and Errors section say the same (`- coloradovss: down since ... (14 h); previous open bids carried forward` in
+  place of the per-run "list incomplete this scan" line), and `run.down_since_line(health)` returns that one line
+  (health.json keeps `down_since` / `down_runs` next to `last_success`; a complete run clears them); `New matching bids:`
   n, then one `  - <source> <id> | <title> | <agency> | closes <date> | <profiles> | watched yes/no` line per bid (new = a
   matching open bid whose key was not in the previous open_bids.json, exactly REPORT.md's NEW list); `Changes on watched
   bids:` n, then REPORT.md's change lines cut to 200 chars; `Documents downloaded:` n, then `  - <bid folder or source:id>:
