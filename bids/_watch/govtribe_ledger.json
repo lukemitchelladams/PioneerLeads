@@ -2871,6 +2871,12 @@
    "verdict": "NO",
    "why": "SDVOSB set-aside (FAR 19.14); Brown Bison is not SDVOSB (HQ 05:42Z).",
    "at": "2026-11-14T06:30:00Z"
+  },
+  "bidnet:0000440491": {
+   "name": "CSU RFI-2026-029-BC Request for Interest: San Luis Valley Potato Research Facility",
+   "verdict": "NO",
+   "why": "New research-facility construction (CSU construction RFI / request for interest, closes 2026-11-18 12:00 MST); GC/CMGC building work, not our trades. Addendum 2 + RFC log 11/13 seen 00:36Z scan; no action.",
+   "at": "2026-11-15T01:30:00Z"
   }
  },
  "watched": {
@@ -3056,6 +3062,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-15T00:30:00Z",
+ "last_hourly_check": "2026-11-15T01:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
