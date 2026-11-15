@@ -2623,3 +2623,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   errors. Pushed 51ab131. New matches 0, docs 0. Inbox quiet; no Luke reply on RTD.
 - Fix (HQ): run.py clears the stale probe flag when samgov answers in full ("probe <note>; API answered in full this run"); regression check
   added; suite 369 passed, 0 failed. Lesson: the reachability probe is advisory; a completed fetch is the truth.
+
+### 2026-11-15 16:21Z hourly (09:21 MT Sun), worker
+- Inbox quiet 2 h; no sub replies (chase skip list unchanged). HQ 15:36Z scan: VSS BLIND (real outage since last good 2026-11-14T23:36Z;
+  the new down-since line counts from 14:35Z when tracking began); samgov false-BLIND from a probe timeout, API answered 94 (HQ fixed, e5ec777). 0 new.
+- Dashboard (16:30Z): bids v353 (d86ccafa65c244e46d29e6b112b55620), events v356 (289a71cf167694ff483cdaa5a13842cb), portal_feed v179
+  (31b81302970b0de2cfb971ccef5f9d94), sources v302 (694c199e6d0cd240c7a09d976736ba79); doc_gaps v11 unchanged.
