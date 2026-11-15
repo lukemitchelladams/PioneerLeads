@@ -2696,3 +2696,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Counts: bidnet 630/81 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 (Cloudflare on detail) | dibbs 307/189 carried | total 793/179. New matches 0, docs 0. Inbox last hour: 0.
 - PSFB sources-sought send staged for Mon afternoon: ops/outbox/2026-11-16/outbox-psfb.json + psfb-response.txt (gate PASS, entry validated; 22f0e4b). Luke's copy went 11/11 (1a1cb4611365ef40), overrule window Mon 12:00 MT. Due Wed 11/18 09:00 MT by email to the two 21 CONS/PKA addresses.
 - Monday 08:30 MT run = outbox-chases.json (8 entries); Monday ~12:05 MT run = outbox-psfb.json (1 entry) unless Luke says stop.
+
+### 2026-11-15 22:21Z hourly (15:21 MT Sun), worker
+- Inbox quiet 2 h; no sub replies, nothing from Luke. HQ 21:36Z scan EXIT 0; 0 new. HQ staged the PSFB sources-sought send for Mon ~12:05 MT
+  (outbox-psfb.json, 22f0e4b) after Luke's overrule window; Mon 08:30 chase batch is 8 entries.
+- Dashboard (22:30Z): bids v359 (d81950cbb906e89b08a909b879e0d929), events v362 (43534943c3cdeb837886e638cc9be327), sources v308
+  (772655fd0931630183b8cefaa941324a); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
