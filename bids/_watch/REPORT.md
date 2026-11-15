@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-15T07:36:55+00:00
+# Bid watch report — 2026-11-15T08:36:18+00:00
 
 **Headline:** BLIND: coloradovss; not scanned this run (previous results kept): dibbs
 
@@ -7,9 +7,9 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 630 | BUYER 441, AGGREGATE 190 | 81 | 2026-11-15T07:36:55+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-15T07:36:55+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 94 |  | 94 | 2026-11-15T07:36:55+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 630 | BUYER 441, AGGREGATE 190 | 81 | 2026-11-15T08:36:18+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-15T08:36:18+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +36 from the nightly bulk file | 94 |  | 94 | 2026-11-15T08:36:18+00:00 | 0 |
 | coloradovss | NO (HTTP 503) | n/a | BLIND this run, showing last good data from 2026-11-14T23:36:19+00:00; no | 67 |  | 3 | 2026-11-14T23:36:19+00:00 | 1 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
@@ -73,10 +73,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Weld SD6 Coiling Door/Grill, Franklin MS (EVALUATE; MANDATORY walk 11/02) (bidnet)
 - VA 36C248 FY27 Portable RO water purification (NO: sole-source intent to Evoqua, Orlando FL; not our product) (samgov)
 - DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record) (samgov)
-
-## No longer listed (closed/awarded)
-
-- Snowmelt Boiler Plant (bidnet, due 2026-11-15)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
