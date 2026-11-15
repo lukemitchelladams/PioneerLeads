@@ -2671,3 +2671,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Mandatory walks next 7 days: Wed 11/18 10:00 BVCC (CDOC) + CPW Alamosa; sub attendees only.
 - Blocked: poudre-fire.org 403 (PFA docs), Bonfire detail (Cloudflare), BidNet paid-tier notices.
 - Next: 20:35Z tick; 00:35Z Mon tick closes La Plata's 00:00Z revival window (NO-BID final if no rate).
+
+### 2026-11-15 20:21Z hourly (13:21 MT Sun), worker
+- Inbox quiet 2 h (worker Gmail connector works; HQ's is down, it uses inbox_list.py). No sub replies. HQ 19:35Z scan EXIT 0; 0 new.
+  Mandatory walks next 7 days: Wed 11/18 10:00 BVCC (CDOC) and CPW Alamosa, sub attendees only.
+- Dashboard (20:30Z): bids v357 (abc8774dfb99b04c5e9e96301a894ad5), events v360 (6240b43659a77c35df47ec9d66fd8d6c), sources v306
+  (27b8099f912fe40e6ffe8bf6ff200765); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
