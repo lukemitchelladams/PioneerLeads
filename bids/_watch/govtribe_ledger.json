@@ -2889,6 +2889,12 @@
    "verdict": "NO",
    "why": "Same VA NCA Pikes Peak janitorial as 0bc3e40e2f7049e6bdd8b64a09143c3b (SDVOSB set-aside; Brown Bison is not SDVOSB). Amendment re-post seen 05:36Z scan.",
    "at": "2026-11-15T06:30:00Z"
+  },
+  "bidnet:2722933907": {
+   "name": "BidNet mirror: VA NCA Pikes Peak National Cemetery Janitorial (paid-tier notice)",
+   "verdict": "NO",
+   "why": "Mirror of SAM 0bc3e40e2f7049e6bdd8b64a09143c3b; SDVOSB set-aside, Brown Bison is not SDVOSB (HQ 06:42Z watchlist NO).",
+   "at": "2026-11-15T07:30:00Z"
   }
  },
  "watched": {
@@ -3074,6 +3080,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-15T06:30:00Z",
+ "last_hourly_check": "2026-11-15T07:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
