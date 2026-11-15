@@ -2677,3 +2677,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Mandatory walks next 7 days: Wed 11/18 10:00 BVCC (CDOC) and CPW Alamosa, sub attendees only.
 - Dashboard (20:30Z): bids v357 (abc8774dfb99b04c5e9e96301a894ad5), events v360 (6240b43659a77c35df47ec9d66fd8d6c), sources v306
   (27b8099f912fe40e6ffe8bf6ff200765); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
+
+### 2026-11-15 20:43Z hourly (13:35 MT) scan, HQ
+- Launched 20:37:37Z via launch_scan.sh; fresh BidNet login 20:37:57Z passed (attempt 1, no code, no robot check). EXIT 0, scan commit 3930dda.
+- Counts: bidnet 630/81 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 (Cloudflare on detail) | dibbs 307/189 carried | total 793/179. New matches 0, docs 0. Inbox last hour: 0.
+- Monday 08:30 MT batch grown from 4 to 8 sends (ops/outbox/2026-11-16/outbox-chases.json, all bodies gate PASS, entries validated offline): + Canon City Haynes/CMS second touch (RFP attached), + Clean Conscience sign-in confirmation (thread 1a1b38552d6f701a, Natalie is OUR attendee Thu 11/19), + HOODZ Larry AHJ-registration question (thread 1a1a878f8cda76a3), + PSD alternates second touch (Aqua Strong/Elite/Brotherhood).
+- NOT chased Monday (two-touch limit): Lafayette KG/Teebs/CleanPro (11/07+11/09), Canon ACCO/ACP/Rasmussen/Nielsen (11/06+11/09). Tolin: yes 11/13 (support 19:34Z "someone reach out"; Joe Volanti pricing Mon/Tue), chase Wed if nothing lands. Plan 11/15 line "Lafayette KG/Teebs/CleanPro second chases" is superseded by this.
+- Send-time local steps: add Billings Electric's named mailbox to a scratchpad copy of the manifest; drop anyone who replied/declined by 08:30; merge sent.json (ids + bcc_count) back.

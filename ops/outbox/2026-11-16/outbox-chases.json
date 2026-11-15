@@ -59,5 +59,51 @@
   ],
   "body_file": "ops/outbox/2026-11-16/chase-bvcc.txt",
   "files": []
+ },
+ {
+  "key": "chase-canon-hvac-2026-11-16",
+  "subject": "Canon City boiler and chiller maintenance, RFP 129-26: will you price it?",
+  "bcc": [
+   "info@haynesmechanical.com",
+   "contact@coloradomech.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-canon-hvac.txt",
+  "files": [
+   "bids/canon-city-boiler-chiller-maintenance/docs/129-26 Boiler chiller.pdf"
+  ]
+ },
+ {
+  "key": "chase-lafayette-cc-2026-11-16",
+  "subject": "Re: City of Lafayette citywide custodial services, RFP-26-33-FM: pricing request",
+  "to": [
+   "cleanconscience@cleanconscience.com"
+  ],
+  "thread": "1a1b38552d6f701a",
+  "body_file": "ops/outbox/2026-11-16/chase-lafayette-cc.txt",
+  "files": []
+ },
+ {
+  "key": "hoodz-ahj-2026-11-16",
+  "subject": "Re: Kitchen hood cleaning subcontract: Poudre School District site visit Tuesday 1:30 PM",
+  "to": [
+   "larry.moss@hoodz.us.com"
+  ],
+  "cc": [
+   "carlos.ahedo@hoodz.us.com"
+  ],
+  "thread": "1a1a878f8cda76a3",
+  "body_file": "ops/outbox/2026-11-16/hoodz-ahj.txt",
+  "files": []
+ },
+ {
+  "key": "chase-psd-alternates-2026-11-16",
+  "subject": "Poudre School District kitchen hood IFB 27-701-002: will you price it?",
+  "bcc": [
+   "info@aquastronghc.com",
+   "info@elitehoodcleaning.com",
+   "Info@BrotherhoodUSA.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-psd-alternates.txt",
+  "files": []
  }
 ]
