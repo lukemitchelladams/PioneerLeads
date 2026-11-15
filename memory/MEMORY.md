@@ -2458,3 +2458,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-14 23:41Z hourly (16:35 MT) scan, HQ
 - Launched 23:36:21Z; fresh login 23:36:35Z attempt 1, no robot check; EXIT 0; pushed a0937b4. bidnet 630/81 | samgov 92/92 | coloradovss 67/3.
   New matches 0, docs 0. Inbox quiet; no Luke reply on the RTD CALL BRIEF (Sun 12:00 MT window).
+
+### 2026-11-15 00:21Z hourly (17:21 MT Sat), worker
+- Quiet: no mail in 2 h; HQ 23:36Z scan clean (bidnet 630/81, samgov 92, coloradovss 67/3, 0 new). HQ routed the PFA docs (PSD 7.1) to the
+  Mac heartbeat (683680f, COORDINATION.md 2026-11-14); board line for Luke: allowlist www.poudre-fire.org + lfra.org in BrownBison env.
+- Dashboard (00:30Z): bids v337 (b972fadbb79da14083cfdbe5eece334d), events v340 (f5789c83fe98242e9da65fbfd5e56956), sources v286
+  (df047aa6df8fa88124e343752ad94147); portal_feed v175 (d13d5e9d0542ed83e44bece56f80bae9), doc_gaps v11 unchanged.
