@@ -25,3 +25,10 @@ pricing by 12/07; PSD IFB 27-701-002 due Fri 11/20 14:00 MST, 7.1 certification 
 (FORMS-CHECKLIST.md). Not chased: Lafayette KG/Teebs/CleanPro and Canon City ACCO/ACP/Rasmussen/Nielsen (both groups at two unanswered
 touches), Tolin (yes in hand), Kleen-Tech (pricing 12/07). Replies checked 2026-11-15 20:4xZ: none from Haynes, Colorado Mechanical,
 Clean Conscience (since 11/11), Aqua Strong, Elite or Brotherhood.
+
+## Second manifest: `outbox-psfb.json` (HQ, 2026-11-15 21:4xZ, nothing sent)
+Peterson SFB sources sought FA251727SS00 (Smart T Power): `psfb-response.txt` + the two-page response PDF (private/, dated 2026-11-16) to
+William Bailey and Stephen Carr at 21 CONS/PKA, the two addresses the 10 November memo names. Due "no later than 18 November 2026 @ 09:00
+A.M. Mountain Time" by email only (memo p.1). Approval copy went to Luke 2026-11-11 (msg 1a1cb4611365ef40); his overrule window closes Mon
+11/16 12:00 MT; HQ sends that afternoon (`python3 scripts/send_outbox.py ops/outbox/2026-11-16/outbox-psfb.json`). Gate PASS; the email
+body carries no phone, the attachment (a government response document) carries the one the memo's item 6 asks for.

@@ -2690,3 +2690,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Lafayette walk Thu 11/19, HOODZ AHJ question, PSD alternates). HQ 20:37Z scan EXIT 0; 0 new.
 - Dashboard (21:30Z): bids v358 (08a1fec33111d8dc12980d2408e97c09), events v361 (8220de2cadfd00937a721a301f67c320), sources v307
   (52a2a9b7b46dd4aea94af6947ec1e474); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
+
+### 2026-11-15 21:41Z hourly (14:35 MT) scan, HQ
+- Launched 21:36:12Z via launch_scan.sh; saved 20:37Z BidNet session reused (no code, no robot check). EXIT 0, scan commit 10b4419.
+- Counts: bidnet 630/81 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 (Cloudflare on detail) | dibbs 307/189 carried | total 793/179. New matches 0, docs 0. Inbox last hour: 0.
+- PSFB sources-sought send staged for Mon afternoon: ops/outbox/2026-11-16/outbox-psfb.json + psfb-response.txt (gate PASS, entry validated; 22f0e4b). Luke's copy went 11/11 (1a1cb4611365ef40), overrule window Mon 12:00 MT. Due Wed 11/18 09:00 MT by email to the two 21 CONS/PKA addresses.
+- Monday 08:30 MT run = outbox-chases.json (8 entries); Monday ~12:05 MT run = outbox-psfb.json (1 entry) unless Luke says stop.
