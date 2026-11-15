@@ -2590,3 +2590,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   **closing 11/20/2026 14:00 MST** (README + pipeline updated); Boulder 44-2026 streetlights (our NO). HQ 12:36Z scan: VSS BLIND 13th hour; 0 new.
 - Dashboard (13:30Z): bids v350 (2c9473463000e936ea9a6e64400eeba7), events v353 (4a1a76f936e3a2f842731a055ae5b49c), sources v299
   (6fc043ff68ac61795445335857e40652); portal_feed v178 (552f1da4bb677f3896df1da060c26a37), doc_gaps v11 unchanged.
+
+### 2026-11-15 13:42Z hourly (06:35 MT) scan + Sunday plan, HQ
+- Launched 13:36:56Z; fresh login 13:37:24Z attempt 1, no robot check; EXIT 3: coloradovss BLIND 14th hour (503); bidnet 630/81 | samgov 94/94.
+  Pushed 7120d27. New matches 0, docs 0. Inbox quiet; no Luke reply on RTD (window 19:00Z).
+- Sunday CEO plan ops/plan_ceo/2026-11-15.md (5592f99); Monday 08:30 MT chase manifest ops/outbox/2026-11-16/outbox-chases.json built from
+  HQ's sent records (CPW 11, BGNDRF 11, BVCC 5, Pagosa 2; B&K declined and Alamo closed dropped; Billings' named mailbox to add locally);
+  PSD 7.1 statement drafted in two versions in private/. Subagent in a worktree: "down since" health line for blind/partial sources.
