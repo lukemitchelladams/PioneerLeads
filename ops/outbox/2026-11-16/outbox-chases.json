@@ -1,0 +1,63 @@
+[
+ {
+  "key": "chase-cpw-2026-11-16",
+  "subject": "CPW Alamosa heater replacement (DQ1 PMAA 2027*0176): pre-bid is Wednesday, answer needed today",
+  "bcc": [
+   "Info@mathewsbrotherselectric.com",
+   "dispatch@flowrightphi.com",
+   "info@puebloelectrics.com",
+   "office@torrespandh.com",
+   "powerproelectric.co@gmail.com",
+   "redwingele@comcast.net",
+   "sales@vemcoelectric.com",
+   "schrockelectric@comcast.net",
+   "sparky2@bacavalley.com",
+   "surefirehvacr@gmail.com",
+   "timmeelectric@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-cpw.txt",
+  "files": []
+ },
+ {
+  "key": "chase-bgndrf-2026-11-16",
+  "subject": "Reclamation BGNDRF custodial, Alamogordo (RFQ 140RR027Q0001): yes or no today",
+  "bcc": [
+   "BD@tiguainc.org",
+   "chase.n.dirt@gmail.com",
+   "cleaningnewmexico@gmail.com",
+   "info@aonejanitorial.com",
+   "info@trecoservices.com",
+   "lcaajanitorial@hotmail.com",
+   "llsolutionslc@gmail.com",
+   "partners@tiguainc.org",
+   "pristinecleanj@gmail.com",
+   "slcleaningservices23@gmail.com",
+   "teamkcleaningservice@gmail.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-bgndrf.txt",
+  "files": []
+ },
+ {
+  "key": "chase-pagosa-2026-11-16",
+  "subject": "USFS Pagosa Ranger District janitorial (RFQ 1240LP27Q0008): quotes due Thursday",
+  "bcc": [
+   "cleaningevergreen@gmail.com",
+   "rgonzalez@crcjanitorial.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-pagosa.txt",
+  "files": []
+ },
+ {
+  "key": "chase-bvcc-2026-11-16",
+  "subject": "CDOC Buena Vista boiler chemical treatment (DQ 2027000132): technician for Wednesday's mandatory walk",
+  "bcc": [
+   "info@chemaqua.com",
+   "info@h2oeng.com",
+   "info@hydrite.com",
+   "info@isiwater.com",
+   "sales@rkindustries.com"
+  ],
+  "body_file": "ops/outbox/2026-11-16/chase-bvcc.txt",
+  "files": []
+ }
+]
