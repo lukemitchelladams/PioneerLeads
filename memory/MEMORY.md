@@ -2600,3 +2600,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 14:10Z: "down since" health line shipped (2d2361e, cherry-picked from the worktree agent): health.json tracks down_since/down_runs per source;
   from the 2nd blind/partial run REPORT.md, LAST_SCAN.md and the Errors section show one "down since <UTC> (N h, N runs), list carried
   forward" line; run.down_since_line() for the hourly reply. Suite 367 passed, 0 failed.
+
+### 2026-11-15 14:21Z hourly (07:21 MT Sun), worker
+- Inbox quiet (no new since 13:17Z). No sub replies, so the Mon 08:30 chase skip list is unchanged. HQ 13:36Z scan: VSS BLIND 14th hour;
+  0 new. HQ shipped the "down since" health line (2d2361e) and Sunday plan ops/plan_ceo/2026-11-15.md (worker: hourly inbox + skip list).
+- Dashboard (14:30Z): bids v351 (77b6f4dac0d81403ec13e27c93e8a400), events v354 (e7f7fe8ce3aa4571e0de513600c3becf), sources v300
+  (b2b93f04923c1ce68552469d5852242d); portal_feed v178 (552f1da4bb677f3896df1da060c26a37), doc_gaps v11 unchanged.
