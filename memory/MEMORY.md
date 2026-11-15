@@ -2606,3 +2606,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   0 new. HQ shipped the "down since" health line (2d2361e) and Sunday plan ops/plan_ceo/2026-11-15.md (worker: hourly inbox + skip list).
 - Dashboard (14:30Z): bids v351 (77b6f4dac0d81403ec13e27c93e8a400), events v354 (e7f7fe8ce3aa4571e0de513600c3becf), sources v300
   (b2b93f04923c1ce68552469d5852242d); portal_feed v178 (552f1da4bb677f3896df1da060c26a37), doc_gaps v11 unchanged.
+
+### 2026-11-15 14:41Z hourly (07:35 MT) scan, HQ
+- Launched 14:35:52Z; saved 13:37Z session reused, no login; EXIT 3: coloradovss BLIND 15th hour (503); bidnet 630/81 | samgov 94/94. Pushed
+  2b80814. First run with the down-since code: this run starts the tracked streak (down_runs=1), so the wording appears from the next run.
+  New matches 0, docs 0. Inbox quiet; no Luke reply on RTD (window 19:00Z).
