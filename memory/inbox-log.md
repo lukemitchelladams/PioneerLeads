@@ -578,3 +578,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-15 08:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
 - 2026-11-15 09:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
 - 2026-11-15 10:2xZ (hourly, read-only): 0 new in 2 h. No bounces, no replies, nothing from Luke.
+- 2026-11-15 11:2xZ (hourly, read-only): 1 new: Google DMARC aggregate for 11/14 (1a1dece5a0f1c065): 1 message from Google (209.85.220.41), DKIM pass, SPF pass, disposition none. Deliverability clean. Nothing from subs or Luke.
