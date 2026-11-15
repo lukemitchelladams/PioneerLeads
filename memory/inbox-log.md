@@ -584,3 +584,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-15 14:2xZ (hourly, read-only): 0 new (3 threads in window already logged). No sub replies, so the Mon 08:30 chase skip list (ops/outbox/2026-11-16/outbox-chases.json) is unchanged. Nothing from Luke.
 - 2026-11-15 15:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
 - 2026-11-15 16:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
+- 2026-11-15 17:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
