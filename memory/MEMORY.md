@@ -2616,3 +2616,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox quiet 2 h; no sub replies (chase skip list unchanged). HQ 14:35Z scan: VSS BLIND 15th hour; 0 new.
 - Dashboard (15:30Z): bids v352 (28c9c245e771b95408dd57b367ae0198), events v355 (7b2d449e50628798b5d5412926ecc79d), sources v301
   (032c87e11ecb021e4e6721d56f4318f5); portal_feed v178 (552f1da4bb677f3896df1da060c26a37), doc_gaps v11 unchanged.
+
+### 2026-11-15 15:42Z hourly (08:35 MT) scan + fix, HQ
+- Launched 15:36:21Z; fresh login 15:37:09Z attempt 1, no robot check; EXIT 3: coloradovss BLIND (down-since line now live: "down since
+  2026-11-15T14:35Z (1 h, 2 runs)"); samgov FALSE BLIND: the pre-run probe timed out (reachable=False) but the API returned 94 rows, no
+  errors. Pushed 51ab131. New matches 0, docs 0. Inbox quiet; no Luke reply on RTD.
+- Fix (HQ): run.py clears the stale probe flag when samgov answers in full ("probe <note>; API answered in full this run"); regression check
+  added; suite 369 passed, 0 failed. Lesson: the reachability probe is advisory; a completed fetch is the truth.

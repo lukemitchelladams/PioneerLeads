@@ -282,6 +282,11 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["samgov"]["errors"] += errs
         health["samgov"]["count"] = len(rows)
         health["samgov"]["logged_in"] = bool(rows) or not errs
+        if rows and not errs and not health["samgov"].get("reachable", True):
+            # the pre-run probe timed out but the API answered in full: the probe was the transient, not the source
+            # (2026-11-15 15:36Z: 94 rows, no errors, yet BLIND from a probe TimeoutError); keep the note, clear the flag
+            health["samgov"]["reachable"] = True
+            health["samgov"]["reach_note"] = f"probe {health['samgov'].get('reach_note')}; API answered in full this run"
         health["samgov"]["login_note"] = "API key" if health["samgov"]["creds"]["SAM_API_KEY"] else "SAM_API_KEY not set"
         for r in rows.values():
             found[key(r)] = r

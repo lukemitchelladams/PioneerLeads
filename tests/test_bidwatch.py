@@ -2972,5 +2972,29 @@ finally:
     else:
         os.environ[run.BRIEF_MAX_ENV] = _dn_saved[5]
 
+
+# ---------------- SAM.gov probe timeout but a full API answer: the probe was the transient, not the source ----------------
+# 2026-11-15 15:36Z: the pre-run reachability probe timed out, the API then returned 94 rows with no errors, and the run was still
+# reported BLIND for samgov (and the down-since streak started). A full answer must clear the stale probe flag.
+_pt_state = {}
+def _pt_collect(profiles):
+    return ({"samgov:pt1": {"source": "samgov", "id": "pt1", "title": "HVAC maintenance probe test", "closing": "2099-01-01",
+                            "profiles": ["brownbison"], "url": "https://sam.gov/pt1", "first_seen": "2026-01-01", "last_seen": "2026-01-01"}}, [])
+_pt_orig_collect, _pt_orig_host = samgov.collect, run.HOSTS["samgov"]
+try:
+    samgov.collect = _pt_collect
+    run.HOSTS["samgov"] = "http://127.0.0.1:1/"          # the probe fails ...
+    os.environ["SAM_API_KEY"] = "test-key-not-real"      # ... but the key is set, so the API scan runs
+    r_pt = run.scan(["samgov"])
+    hs = r_pt["health"]["samgov"]
+    check("probe timeout + full API answer: reachable flipped to True and the note says so",
+          hs.get("reachable") is True and "API answered in full" in str(hs.get("reach_note")), hs)
+    check("probe timeout + full API answer: not BLIND, no down-since streak, last_success is this run",
+          not hs.get("blind") and not hs.get("down_runs") and hs.get("last_success") == r_pt["started"]
+          and "| samgov | yes |" in run.REPORT_FILE.read_text(), hs)
+finally:
+    samgov.collect, run.HOSTS["samgov"] = _pt_orig_collect, _pt_orig_host
+    os.environ.pop("SAM_API_KEY", None)
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)
