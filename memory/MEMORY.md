@@ -2714,3 +2714,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   (paid-tier notice) -> ledger NO (rule 8). Matches 149. La Plata due Tue 11/17 10:00 MST (HQ correction); revival window closes 00:00Z.
 - Dashboard (23:30Z): bids v360 (5b16bedfd13b2cb5b419978606ea4d9e), events v363 (0dc47a62690db4ebc99505a3313d1d59), portal_feed v181
   (1b5ea30d7e942baafff43843546e89a8), sources v309 (549d6e96aff68b26d5bdb9d369422a94); doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
+
+### 2026-11-15 23:38Z hourly (16:35 MT) scan, HQ
+- Launched 23:36:00Z via launch_scan.sh; saved 20:37Z session reused for the list (bidnet 631/82) but a **BidNet robot check hit a detail page** (#13 since Fri; first since 19:36Z Fri): detail pass stopped, cool-down to 2026-11-16T01:37:24Z. EXIT 0, scan commit 91726ed.
+- Counts: bidnet 631/82 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 794/180. New matches 0, docs 0. Inbox last hour: 0.
+- The 00:35Z launch will not wait (cool-down is >900 s out); the scanner handles the cool-down itself. Expect list-only or skipped BidNet detail at 00:35Z; fresh login attempts resume after 01:37Z.
+- Lakewood RFP 6706 pipeline decision now spells out the README default (NO-BID: payer of last resort, no stated volume; closes after the 11/18 addendum).
