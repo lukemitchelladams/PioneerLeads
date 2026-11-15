@@ -586,3 +586,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-15 16:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
 - 2026-11-15 17:2xZ (hourly, read-only): 0 new in 2 h. No sub replies (chase skip list unchanged), nothing from Luke.
 - 2026-11-15 18:2xZ (hourly, read-only): 0 new in 2 h. No 'GO RTD' from Luke (window closes 19:00Z). No sub replies (chase skip list unchanged).
+- 2026-11-15 19:2xZ (hourly, read-only): 0 new in 2 h. No 'GO RTD' arrived before the 12:00 MT window; HQ confirmed RTD NO-BID (1079af9). No sub replies (chase skip list unchanged).
