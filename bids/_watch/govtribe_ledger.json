@@ -2877,6 +2877,18 @@
    "verdict": "NO",
    "why": "New research-facility construction (CSU construction RFI / request for interest, closes 2026-11-18 12:00 MST); GC/CMGC building work, not our trades. Addendum 2 + RFC log 11/13 seen 00:36Z scan; no action.",
    "at": "2026-11-15T01:30:00Z"
+  },
+  "42ac1dc2135f42c89a2be925fcc27038": {
+   "name": "VA NCA Pikes Peak National Cemetery Janitorial Base plus 4 (amendment re-post, SAM)",
+   "verdict": "NO",
+   "why": "Same VA NCA Pikes Peak janitorial as 0bc3e40e2f7049e6bdd8b64a09143c3b (SDVOSB set-aside; Brown Bison is not SDVOSB). Amendment re-post seen 05:36Z scan.",
+   "at": "2026-11-15T06:30:00Z"
+  },
+  "575090ae0c7a4acc98e8c0aa53e113c1": {
+   "name": "VA NCA Pikes Peak National Cemetery Janitorial Base plus 4 (amendment re-post, SAM)",
+   "verdict": "NO",
+   "why": "Same VA NCA Pikes Peak janitorial as 0bc3e40e2f7049e6bdd8b64a09143c3b (SDVOSB set-aside; Brown Bison is not SDVOSB). Amendment re-post seen 05:36Z scan.",
+   "at": "2026-11-15T06:30:00Z"
   }
  },
  "watched": {
@@ -3062,6 +3074,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-15T05:30:00Z",
+ "last_hourly_check": "2026-11-15T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
