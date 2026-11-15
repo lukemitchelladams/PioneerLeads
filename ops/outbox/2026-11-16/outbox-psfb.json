@@ -1,0 +1,14 @@
+[
+ {
+  "key": "psfb-sources-sought-response-2026-11-16",
+  "subject": "Sources Sought FA251727SS00 Smart T Power Project, Brown Bison Holdings LLC response",
+  "to": [
+   "william.bailey.56@spaceforce.mil",
+   "stephen.carr.12@spaceforce.mil"
+  ],
+  "body_file": "ops/outbox/2026-11-16/psfb-response.txt",
+  "files": [
+   "bids/psfb-smart-t-power-sources-sought/private/Brown-Bison-Sources-Sought-Response-FA251727SS00.pdf"
+  ]
+ }
+]
