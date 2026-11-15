@@ -2684,3 +2684,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Monday 08:30 MT batch grown from 4 to 8 sends (ops/outbox/2026-11-16/outbox-chases.json, all bodies gate PASS, entries validated offline): + Canon City Haynes/CMS second touch (RFP attached), + Clean Conscience sign-in confirmation (thread 1a1b38552d6f701a, Natalie is OUR attendee Thu 11/19), + HOODZ Larry AHJ-registration question (thread 1a1a878f8cda76a3), + PSD alternates second touch (Aqua Strong/Elite/Brotherhood).
 - NOT chased Monday (two-touch limit): Lafayette KG/Teebs/CleanPro (11/07+11/09), Canon ACCO/ACP/Rasmussen/Nielsen (11/06+11/09). Tolin: yes 11/13 (support 19:34Z "someone reach out"; Joe Volanti pricing Mon/Tue), chase Wed if nothing lands. Plan 11/15 line "Lafayette KG/Teebs/CleanPro second chases" is superseded by this.
 - Send-time local steps: add Billings Electric's named mailbox to a scratchpad copy of the manifest; drop anyone who replied/declined by 08:30; merge sent.json (ids + bcc_count) back.
+
+### 2026-11-15 21:21Z hourly (14:21 MT Sun), worker
+- Inbox quiet 2 h; no sub replies, so all 8 Mon 08:30 chase sends stand (HQ d27a2fa: + Canon Haynes/CMS, Clean Conscience sign-in for the
+  Lafayette walk Thu 11/19, HOODZ AHJ question, PSD alternates). HQ 20:37Z scan EXIT 0; 0 new.
+- Dashboard (21:30Z): bids v358 (08a1fec33111d8dc12980d2408e97c09), events v361 (8220de2cadfd00937a721a301f67c320), sources v307
+  (52a2a9b7b46dd4aea94af6947ec1e474); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1), doc_gaps v12 (e999bf7faf577c15427516a3a8388558).
