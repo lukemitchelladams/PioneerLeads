@@ -7,7 +7,7 @@ Decision: **EVALUATE** (2026-10-26). Brown Bison bids; a hood-cleaning sub perfo
 |------|------|
 | **Mandatory site visit** | **Tue 2026-11-10, 1:30 PM**, "front entrance of Traut Elementary School followed by Preston Middle School and Fossil Ridge High School" (all Fort Collins). "Vendors planning to submit bids are required to be represented." RSVP "by sending an email with the site/s listed out to strategicsourcing@psdschools.org". |
 | Questions | Written, via BidNet only, "through and including 2:00 p.m. MT on November 13, 2026". |
-| Closing | BidNet shows 2026-11-20 (Addendum 1.0; was 2026-10-29 2 p.m. MT). Confirm the time on BidNet. |
+| Closing | **2026-11-20 14:00 MST** (BidNet closing reminder 2026-11-15, msg 1a1df31bf415ca76: "Closing Date: 11/20/2026 02:00 PM MST"; Addendum 1.0 moved it from 2026-10-29). |
 | Scope | Annual inspection of every kitchen hood on Attachment C (46 kitchens; hood list in Addendum 1.0); cleaning only after written PSD authorization, mostly after 2 pm on school days or non-school days; 4-hour emergency response (example: fire or suppressant release). Fire-suppression service excluded. Make-up-air inspection excluded. Filters are standard cleanable, cleaned on site. |
 | Pricing | Attachment D: separate per-site inspection and cleaning rates. |
 | Insurance | Attachment E (not yet quoted here). |
