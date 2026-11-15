@@ -2663,3 +2663,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - GO bids 8 (PSD hood 11/20, Pagosa 11/19, Canon City 12/07, BVCC 11/30, Lafayette 12/18, PSFB sources-sought 11/18, AIMS 1/06, Widefield 12/11).
 - Dashboard (19:30Z): bids v356 (39d55b7eccda04f38af6224bc26a8498), events v359 (f0d56fd4179c723503a2388bf1babf02), sources v305
   (aefab868a99d8be7ffe111048c23692b), doc_gaps v12 (e999bf7faf577c15427516a3a8388558); portal_feed v180 (d57cfbd84e5b0b5b1908515d59421fb1).
+
+### 2026-11-15 19:41Z hourly (12:35 MT) scan, HQ
+- Launched 19:35:37Z via launch_scan.sh; saved 18:36Z BidNet session reused, logged in attempt 1, no code marker, no cool-down. EXIT 0, scan commit 35725f2 pushed by the scanner.
+- Counts: bidnet 630/81 | samgov 94/94 (+36 nightly bulk) | coloradovss 67/3 | bonfire 2/1 (Cloudflare challenge on detail) | dibbs 307/189 carried (not from cloud) | total 793/179. New matches 0, docs 0.
+- Inbox (last hour, inbox_list.py): 0 messages. Gmail connector still down for HQ.
+- Mandatory walks next 7 days: Wed 11/18 10:00 BVCC (CDOC) + CPW Alamosa; sub attendees only.
+- Blocked: poudre-fire.org 403 (PFA docs), Bonfire detail (Cloudflare), BidNet paid-tier notices.
+- Next: 20:35Z tick; 00:35Z Mon tick closes La Plata's 00:00Z revival window (NO-BID final if no rate).
