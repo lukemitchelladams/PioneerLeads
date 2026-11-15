@@ -2597,3 +2597,6 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Sunday CEO plan ops/plan_ceo/2026-11-15.md (5592f99); Monday 08:30 MT chase manifest ops/outbox/2026-11-16/outbox-chases.json built from
   HQ's sent records (CPW 11, BGNDRF 11, BVCC 5, Pagosa 2; B&K declined and Alamo closed dropped; Billings' named mailbox to add locally);
   PSD 7.1 statement drafted in two versions in private/. Subagent in a worktree: "down since" health line for blind/partial sources.
+- 14:10Z: "down since" health line shipped (2d2361e, cherry-picked from the worktree agent): health.json tracks down_since/down_runs per source;
+  from the 2nd blind/partial run REPORT.md, LAST_SCAN.md and the Errors section show one "down since <UTC> (N h, N runs), list carried
+  forward" line; run.down_since_line() for the hourly reply. Suite 367 passed, 0 failed.
