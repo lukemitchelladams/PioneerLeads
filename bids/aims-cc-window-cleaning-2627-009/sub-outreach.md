@@ -22,3 +22,4 @@ TSA badge at the airport; bidder walks every campus before pricing; price firm f
 Dropped: Ease Your Panes (Denver metro only, residential focus).
 
 - 2026-11-13 15:59Z (08:59 MT), HQ: bcc Metropolis Window Cleaning (info@metropoliswindowcleaning.com), Sonlight Window (info@sonlightwindow.com) with the RFP, building pictures and campus map, msg 1a1d5a26e0977eb1. Humanize gate PASS; sent via scripts/send_outbox.py (ops/outbox/2026-11-13/outbox-friday-batch.json).
+- 2026-11-16 16:39Z (worker, read-only): **BOUNCE** on HQ's 16:38Z pricing-request bcc (msg 1a1e539e3962c681: SK Building Services, Summit Window Cleaning, Vertical Window Cleaning): Summit hello@summitwc.com blocked by the recipient's Exchange server, "550 5.4.1 Recipient address rejected: Access denied" (bounce 1a1e53a00dd2499d). SK Building Services and Vertical delivered (no bounce in 40 min). Summit needs another published address or its web form (HQ).
