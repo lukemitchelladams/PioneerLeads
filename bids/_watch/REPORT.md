@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-16T11:35:51+00:00
+# Bid watch report — 2026-11-16T12:35:48+00:00
 
-**Headline:** not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 631 | BUYER 441, AGGREGATE 191 | 82 | 2026-11-16T11:35:51+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-16T11:35:51+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 90 |  | 90 | 2026-11-16T11:35:51+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-16T11:35:51+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 633 | BUYER 441, AGGREGATE 193 | 82 | 2026-11-16T12:35:48+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-16T12:35:48+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +32 from the nightly bulk file | 91 |  | 91 | 2026-11-16T12:35:48+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 3 | 2026-11-16T12:35:48+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -28,6 +28,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (32d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (50d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (23d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Bearings | 2026-11-18 (2d) |  | https://sam.gov/workspace/contract/opp/e1e93a622eb04a29a950c73108dfd78f/view |
+    brief: about: Amended to add combined synopsis solicitation to the solicitation and to add days for change. Salient CharacteristicsRequired Product Characteristics, brand-name-or-equal as follows:The contractor sha
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -110,7 +117,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (145)
+## All open matching bids, excluding DIBBS parts RFQs (146)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -131,6 +138,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Morgan County | 2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities | 2026-11-18 (2d) | 2026-10-29 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Colorado State University Construction P | Request for Interest: San Luis Valley Potato Research Facility | 2026-11-18 (2d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Interest-San-Luis-Valley-Potato-Research-Facility/0000440491?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Roof Replacement and Gutter Project - Multiple County Facilities (paid-tier notice) | 2026-11-18 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444206990087?target=view |
+| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Bearings | 2026-11-18 (2d) |  | https://sam.gov/workspace/contract/opp/e1e93a622eb04a29a950c73108dfd78f/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | S--BGNDRF CUSTODIAL SERVICES (place of performance not stated; CO buying office) | 2026-11-18 (2d) |  | https://sam.gov/workspace/contract/opp/26588cc4421447199018d9bbd6789cf4/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | BGNDRF CUSTODIAL SERVICES (place of performance not stated; CO buying office) | 2026-11-18 (2d) |  | https://sam.gov/workspace/contract/opp/514c1b6084c7451fafb3d1de0a923062/view |
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (3d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |

@@ -375,6 +375,21 @@
   "url": "https://sam.gov/workspace/contract/opp/a0425fc603664d05a403cb9d9703551e/view"
  },
  {
+  "key": "samgov:e1e93a622eb04a29a950c73108dfd78f",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+  "title": "Bearings",
+  "sol": "W911S227U0132",
+  "closing": "2026-11-18",
+  "posted": "2026-11-16",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/workspace/contract/opp/e1e93a622eb04a29a950c73108dfd78f/view"
+ },
+ {
   "key": "bidnet:0000437039",
   "source": "bidnet",
   "agency": "City and County of Denver Human Services",
