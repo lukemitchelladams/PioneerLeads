@@ -22,7 +22,8 @@ a domain shared by several addresses is asked once. bounced = `from:mailer-daemo
 search finds the failed address inside the delivery-status report); any hit = bounced. The newest hit's day comes from one
 messages.get (format=metadata). stdout carries ONLY one JSON object, so it can be piped:
     {"days": N, "skip": [addresses, sorted], "reasons": {address: "replied YYYY-MM-DD" | "bounced YYYY-MM-DD" |
-     "replied+bounced YYYY-MM-DD YYYY-MM-DD"}, "checked": <addresses looked at>, "errors": {term: message}}
+     "replied+bounced YYYY-MM-DD YYYY-MM-DD"}, "checked": <addresses looked at>, "errors": {term: message},
+     "exempt_entries": [keys of "reply_thread": true entries, sorted], "exempt_bounced": {key: [bounced addresses on such an entry]}}
 Progress and errors go to stderr. An API error on one term does not end the run: the term lands in "errors" (keyed "from:<term>" or
 "bounce:<address>"), the run goes on, and the exit code is 1 because the skip list may be incomplete (an && chain stops there);
 otherwise 0. No Gmail token at all: message on stderr, nothing on stdout, exit 1.
@@ -33,6 +34,11 @@ The input manifest is never modified. PATH must be OUTSIDE the repo's tracked op
 message on stderr, before any network call): the send-time copy names mailboxes and belongs in the session scratchpad; named
 mailboxes stay out of tracked files. Then run send_outbox.py on PATH from the repo root, so the entries' relative body_file and
 files paths still resolve.
+
+An entry with "reply_thread": true is exempt from that pruning: it is an in-thread answer or follow-up question to someone who wrote
+to us, so inbound mail from their domain is the reason it exists, not a reason to skip them. Its recipients stay even when they are on
+the skip list and it is never dropped (chases of silence never set the flag). A bounced address on an exempt entry is kept as well
+and listed under "exempt_bounced", a judgment call for the operator. Entries without the flag are pruned exactly as before.
 
 This script never sends, drafts, labels, trashes or modifies anything. scripts/gmail_api.py is imported only for --inbox and
 --skip-list; importing it sends nothing (only its send() sends, and nothing here calls it).
@@ -246,14 +252,41 @@ def decide_skips(manifest, days, call, token, log=None):
     return {"days": days, "skip": sorted(skip), "reasons": reasons, "checked": len(addresses), "errors": errors}
 
 
+def is_reply_thread(entry):
+    """True for an entry carrying the JSON flag "reply_thread": true. Set it on an in-thread answer or follow-up question to someone
+    who wrote to us; chases of silence never set it."""
+    return isinstance(entry, dict) and entry.get("reply_thread") is True
+
+
+def exempt_keys(manifest):
+    """Keys of the entries apply_skips leaves untouched ("reply_thread": true), sorted. Pure: no I/O."""
+    return sorted(str(e.get("key") or "?") for e in (manifest if isinstance(manifest, list) else []) if is_reply_thread(e))
+
+
+def exempt_bounced(manifest, reasons):
+    """{key: [addresses, sorted]} for every exempt entry ("reply_thread": true) whose recipients include an address decide_skips marked
+    bounced. apply_skips keeps them (a bounced named mailbox on a reply thread is the operator's call), so --skip-list lists them.
+    Pure: no I/O."""
+    out = {}
+    for e in manifest if isinstance(manifest, list) else []:
+        if not is_reply_thread(e):
+            continue
+        hits = sorted({_address(a) for a in recipients(e) if "bounced" in str((reasons or {}).get(_address(a), ""))})
+        if hits:
+            out[str(e.get("key") or "?")] = hits
+    return out
+
+
 def apply_skips(manifest, skip):
     """A new manifest with the skip addresses (case-insensitive) removed from to/cc/bcc of every entry; a list emptied this way is
-    dropped from the entry, and an entry left with neither to nor bcc is dropped. -> (new_manifest, dropped_keys). The input is not
-    modified (deep copies). Pure: no I/O."""
+    dropped from the entry, and an entry left with neither to nor bcc is dropped. -> (new_manifest, dropped_keys). An entry with
+    "reply_thread": true (an in-thread answer or follow-up question to someone who wrote to us; chases of silence never set it) is
+    exempt: copied through untouched, recipients kept even when on the skip list, never dropped; exempt_keys() names them. The input
+    is not modified (deep copies). Pure: no I/O."""
     skipset = {_address(s) for s in skip}
     out, dropped = [], []
     for e in manifest:
-        if not isinstance(e, dict):
+        if not isinstance(e, dict) or is_reply_thread(e):
             out.append(copy.deepcopy(e))
             continue
         n = copy.deepcopy(e)
@@ -329,13 +362,16 @@ def main(argv=None):
             _err(f"no Gmail token, no skip list: {_short(e)}")
             return 1
         result = decide_skips(manifest, a.days, call, token, log=_err)
+        result["exempt_entries"] = exempt_keys(manifest)                # "reply_thread": true entries: never pruned, never dropped
+        result["exempt_bounced"] = exempt_bounced(manifest, result["reasons"])
         if a.write_send_copy:
             new, dropped = apply_skips(manifest, result["skip"])
             p = Path(a.write_send_copy).expanduser()
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps(new, indent=1) + "\n", encoding="utf-8")
             result["dropped_entries"] = dropped
-            _err(f"send copy written: {p} ({len(new)} entries kept, {len(dropped)} dropped)")
+            _err(f"send copy written: {p} ({len(new)} entries kept, {len(dropped)} dropped, "
+                 f"{len(result['exempt_entries'])} exempt reply-thread entries untouched)")
         print(json.dumps(result, indent=1))
         if result["errors"]:
             _err(f"{len(result['errors'])} search term(s) failed; the skip list may be incomplete (exit 1)")

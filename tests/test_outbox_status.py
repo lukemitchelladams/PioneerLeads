@@ -348,6 +348,45 @@ check("'Name <addr>' entries match by bare address; emptied lists are removed; o
       new3 == [{"key": "k", "to": ["b@x.com"], "cc": ["c@y.com"], "body_file": "f", "thread": "t1", "files": ["p.pdf"]}], new3)
 check("non-dict entries pass through", st.apply_skips([None, "x"], ["a@b.c"]) == ([None, "x"], []))
 
+# reply_thread entries (in-thread answers / follow-up questions to someone who wrote to us) are exempt: never pruned, never dropped
+print("--skip-list apply_skips: reply_thread exempt")
+EXEMPT_REPLY = {"key": "reply-hoodz", "subject": "Re: hood cleaning: one more question", "to": ["Larry Moss <larry.moss@hoodz.us.com>"],
+                "cc": ["carlos.ahedo@hoodz.us.com"], "body_file": "g.txt", "files": [], "thread": "1a1a878f8cda76a3", "reply_thread": True}
+EXEMPT_BOUNCE = {"key": "reply-sparky", "subject": "Re: generator pricing", "to": ["sparky@gmail.com", "redwing@comcast.net"],
+                 "body_file": "h.txt", "files": [], "thread": "t9", "reply_thread": True}
+NOT_EXEMPT = {"key": "chase-hoodz", "subject": "chase of silence, same people", "to": ["larry.moss@hoodz.us.com"],
+              "cc": ["carlos.ahedo@hoodz.us.com"], "body_file": "i.txt", "files": [], "thread": "1a1a878f8cda76a3"}
+FALSE_FLAG = dict(NOT_EXEMPT, key="flag-false", reply_thread=False)
+EXEMPT_MANIFEST = SKIP_MANIFEST + [EXEMPT_REPLY, EXEMPT_BOUNCE, NOT_EXEMPT, FALSE_FLAG]
+before_x = json.dumps(EXEMPT_MANIFEST, sort_keys=True)
+newx, droppedx = st.apply_skips(EXEMPT_MANIFEST, res["skip"] + ["INFO@chemaqua.com"])   # res: hoodz replied, sparky bounced, redwing both
+nbx = {e["key"]: e for e in newx}
+check("exempt entry keeps every skipped recipient and every other field, and is not dropped",
+      nbx["reply-hoodz"] == EXEMPT_REPLY and nbx["reply-sparky"] == EXEMPT_BOUNCE and "reply-hoodz" not in droppedx
+      and "reply-sparky" not in droppedx, (droppedx, nbx.get("reply-hoodz")))
+check("exempt entries are deep copies, input unchanged",
+      nbx["reply-hoodz"] is not EXEMPT_REPLY and nbx["reply-hoodz"]["to"] is not EXEMPT_REPLY["to"]
+      and json.dumps(EXEMPT_MANIFEST, sort_keys=True) == before_x)
+check("a chase to the same people without the flag is still pruned and dropped; 'reply_thread': false counts as no flag",
+      droppedx == ["mixed", "shared", "chase-hoodz", "flag-false"] and "chase-hoodz" not in nbx and "flag-false" not in nbx, droppedx)
+check("non-exempt entries behave exactly as before alongside exempt ones",
+      nbx["bcc-only"]["bcc"] == ["info@h2oeng.com", "sales@rkindustries.com"] and nbx["unsent-one"] == MANIFEST[2]
+      and [e["key"] for e in newx] == ["bcc-only", "unsent-one", "broken", "reply-hoodz", "reply-sparky"], [e["key"] for e in newx])
+check("a partly skipped exempt entry is left whole (no list trimmed)",
+      st.apply_skips([{"key": "k", "to": ["a@x.com", "b@x.com"], "reply_thread": True}], ["a@x.com"])
+      == ([{"key": "k", "to": ["a@x.com", "b@x.com"], "reply_thread": True}], []))
+check("is_reply_thread: only the JSON literal true counts",
+      st.is_reply_thread(EXEMPT_REPLY) and not st.is_reply_thread(NOT_EXEMPT) and not st.is_reply_thread(FALSE_FLAG)
+      and not st.is_reply_thread({"reply_thread": "true"}) and not st.is_reply_thread({"reply_thread": 1}) and not st.is_reply_thread(None))
+check("exempt_keys: sorted keys of flagged entries, [] when none, malformed input ignored",
+      st.exempt_keys(EXEMPT_MANIFEST) == ["reply-hoodz", "reply-sparky"] and st.exempt_keys(SKIP_MANIFEST) == []
+      and st.exempt_keys(None) == [] and st.exempt_keys([None, {"reply_thread": True}]) == ["?"], st.exempt_keys(EXEMPT_MANIFEST))
+check("exempt_bounced: bounced addresses on exempt entries only (replied-only exempt entry absent; non-exempt bounced entry absent)",
+      st.exempt_bounced(EXEMPT_MANIFEST, res["reasons"]) == {"reply-sparky": ["redwing@comcast.net", "sparky@gmail.com"]},
+      st.exempt_bounced(EXEMPT_MANIFEST, res["reasons"]))
+check("exempt_bounced: {} with no exempt entries or no reasons",
+      st.exempt_bounced(SKIP_MANIFEST, res["reasons"]) == {} and st.exempt_bounced(EXEMPT_MANIFEST, {}) == {} and st.exempt_bounced(None, None) == {})
+
 # ---------------------------------------------------------------- --skip-list: the send copy never lands under ops/
 print("--skip-list send copy path")
 check("relative ops/ path refused", "tracked files" in st.send_copy_problem("ops/outbox/2026-11-16/send.json"))
@@ -380,10 +419,12 @@ try:
 finally:
     st._gmail = _orig_gmail
 doc = json.loads(out)                                                                             # the whole of stdout is one JSON object
-check("--skip-list: exit 0, stdout is exactly one JSON object with exactly days/skip/reasons/checked/errors",
-      rc == 0 and set(doc) == {"days", "skip", "reasons", "checked", "errors"}, (rc, list(doc)))
+SKIP_KEYS = {"days", "skip", "reasons", "checked", "errors", "exempt_entries", "exempt_bounced"}
+check("--skip-list: exit 0, stdout is exactly one JSON object with exactly days/skip/reasons/checked/errors/exempt_entries/exempt_bounced",
+      rc == 0 and set(doc) == SKIP_KEYS, (rc, list(doc)))
 check("--skip-list JSON content", doc["days"] == 7 and doc["checked"] == 10 and doc["errors"] == {}
       and doc["skip"] == sorted(doc["skip"]) and doc["reasons"]["sparky@gmail.com"] == "bounced 2026-11-15", doc)
+check("no reply_thread entries -> exempt_entries [] and exempt_bounced {}", doc["exempt_entries"] == [] and doc["exempt_bounced"] == {}, doc)
 check("no ledger table or summary on stdout in --skip-list mode", "rcpts" not in out and "entries," not in out)
 check("progress went to stderr", "skip-list: 10 addresses" in err, err)
 
@@ -395,7 +436,7 @@ finally:
     st._gmail = _orig_gmail
 doc = json.loads(out)
 check("--write-send-copy: JSON adds dropped_entries, exit 1 because one term errored, still parseable",
-      rc == 1 and set(doc) == {"days", "skip", "reasons", "checked", "errors", "dropped_entries"} and doc["days"] == 14
+      rc == 1 and set(doc) == SKIP_KEYS | {"dropped_entries"} and doc["days"] == 14
       and doc["dropped_entries"] == ["mixed", "shared"] and list(doc["errors"]) == ["from:broken.example"], (rc, doc))
 check("exit-1 reason on stderr", "may be incomplete" in err, err)
 copy_doc = json.loads(SEND_COPY.read_text())
@@ -403,6 +444,32 @@ check("send copy written (parent folder created) with the skip addresses gone an
       [e["key"] for e in copy_doc] == ["bcc-only", "unsent-one", "broken"] and not any(a in json.dumps(copy_doc).lower() for a in doc["skip"]), copy_doc)
 check("send copy keeps body_file/files/thread for the sender", all("body_file" in e and "files" in e for e in copy_doc))
 check("input manifest file byte-identical after --write-send-copy", (TMP / "skip.json").read_bytes() == skip_bytes)
+
+# the CLI with reply_thread entries: the live 2026-11-16 case (an in-thread follow-up whose domain had written back was dropped)
+print("--skip-list main: reply_thread exempt")
+(TMP / "exempt.json").write_text(json.dumps(EXEMPT_MANIFEST, indent=1))
+EXEMPT_COPY = TMP / "mon" / "exempt-copy.json"
+st._gmail = lambda: FakeSkipGmail(broken=False)
+try:
+    rc, out, err = run_main2([str(TMP / "exempt.json"), "--skip-list", "--days", "7", "--write-send-copy", str(EXEMPT_COPY)])
+finally:
+    st._gmail = _orig_gmail
+doc = json.loads(out)
+check("exempt_entries lists the reply_thread keys, sorted, in the --skip-list JSON; nothing else changes shape",
+      rc == 0 and doc["exempt_entries"] == ["reply-hoodz", "reply-sparky"] and set(doc) == SKIP_KEYS | {"dropped_entries"}, (rc, doc))
+check("exempt_bounced lists the bounced address(es) on an exempt entry, keyed by entry; replied-only exempt entry absent",
+      doc["exempt_bounced"] == {"reply-sparky": ["redwing@comcast.net", "sparky@gmail.com"]}, doc["exempt_bounced"])
+check("the skip list itself still names those addresses (decide_skips unchanged); exempt entries are not in dropped_entries",
+      {"larry.moss@hoodz.us.com", "sparky@gmail.com", "redwing@comcast.net"} <= set(doc["skip"]) and doc["checked"] == 10
+      and doc["dropped_entries"] == ["mixed", "shared", "chase-hoodz", "flag-false"], doc)
+copy_x = json.loads(EXEMPT_COPY.read_text())
+cbx = {e["key"]: e for e in copy_x}
+check("send copy keeps the exempt entries whole (recipients, thread, flag) while the same addresses are gone from every other entry",
+      [e["key"] for e in copy_x] == ["bcc-only", "unsent-one", "broken", "reply-hoodz", "reply-sparky"]
+      and cbx["reply-hoodz"] == EXEMPT_REPLY and cbx["reply-sparky"] == EXEMPT_BOUNCE
+      and not any("hoodz.us.com" in a or "sparky@" in a for e in copy_x if e["key"] not in ("reply-hoodz", "reply-sparky") for a in st.recipients(e)),
+      copy_x)
+check("stderr counts the exempt entries", "2 exempt reply-thread entries untouched" in err, err)
 
 # refusals happen before any Gmail work
 st._gmail = _NoGmail()
