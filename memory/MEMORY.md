@@ -2761,3 +2761,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 03:35Z tick: launched 03:36:08Z, saved 01:38Z session reused, EXIT 0, commit aaca34d. Counts: bidnet 631/82 | samgov 94/94 | coloradovss 67/3 | bonfire 2/1 | dibbs carried | total 794/180. New 0, docs 0. Inbox last 2 h: 0.
 - Monday send prep done: Billings Electric's mailbox recovered from our own 11/13 sent headers (read-only Gmail) into the scratchpad only; send-time copy `$S/mon/outbox-chases.SEND.json` (8 entries, CPW bcc 12) validates clean. At 15:35Z: pull, drop any firm that replied, gate check, `send_outbox.py` on the SEND copy, merge sent.json (ids + bcc_count), log, then launch the scan.
 - 04:21Z worker tick (Sun 21:21 MT): inbox quiet (both searches 0); HQ 03:36Z scan clean (bidnet 631/82, samgov 94, coloradovss 67/3, 0 new, 0 docs); no PFA docs yet (bids/poudre-sd-kitchen-hood/docs/ absent), 7.1 stays HOLD. Dashboard: bids v365 (blob 1585ba78705ef7a722285ca766ee7c9e), events v368 (079f2a63a085d84cda4bb27bc9088c5c), sources v314 (357efa0f1ec664badb5b817e38d0c92a); old blobs deleted; portal_feed 182 / doc_gaps 13 unchanged. Compare next against this commit. No approval-prompt tools called.
+
+### 2026-11-16 04:41Z hourly (21:35 MT Sun) scan, HQ
+- Launched 04:36:02Z via launch_scan.sh; saved 01:38Z session reused (no code, no robot check). EXIT 0, scan commit 700da44.
+- Counts: bidnet 631/82 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 794/180. New 0, docs 0. Inbox last hour: 0.
+- Monday CEO plan drafted in the scratchpad ($S/mon/plan_2026-11-16.draft.md); refresh with overnight replies and commit as ops/plan_ceo/2026-11-16.md at the 13:44Z trigger.
