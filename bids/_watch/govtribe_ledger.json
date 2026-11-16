@@ -2925,6 +2925,24 @@
    "verdict": "EVALUATE",
    "why": "Agency not identifiable from cloud: GovTribe state/local UPGRADE_REQUIRED, BidNet blocked, web search no match. See ops/research/2026-11-16-bidnet-444234438795-city-janitorial.md; HQ to open the notice in its logged-in session.",
    "at": "2026-11-16T19:30:00Z"
+  },
+  "samgov:167b070bfa8649458bf15e4f20b7ba9e": {
+   "name": "NPS Channel Islands NP janitorial (Ventura CA), due 2026-11-20",
+   "verdict": "NO",
+   "why": "Out of region (California); site visit 11/17 in Ventura. Matches HQ NO (4d01dd2).",
+   "at": "2026-11-16T20:30:00Z"
+  },
+  "bidnet:444234541440": {
+   "name": "Alternatives Analysis and Environmental Planning for New Bus Facility (10% SBE), due 2026-12-15",
+   "verdict": "NO",
+   "why": "Planning/environmental study, not our trade. Matches HQ NO (4d01dd2).",
+   "at": "2026-11-16T20:30:00Z"
+  },
+  "bidnet:0000443673": {
+   "name": "Poudre SD RFQ Flooring Replacement and Installation Services, due 2027-01-07",
+   "verdict": "NO",
+   "why": "Flooring, not our trades. Matches HQ NO (4d01dd2).",
+   "at": "2026-11-16T20:30:00Z"
   }
  },
  "watched": {
@@ -3110,6 +3128,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-16T19:30:00Z",
+ "last_hourly_check": "2026-11-16T20:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
