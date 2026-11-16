@@ -1,4 +1,9 @@
 # 2026-11-16 ~08:55 MT (corrected ~09:20 MT): INSURANCE SIGNED, APPROVAL PENDING; HARD FLOOR = AT LEAST ONE BID SUBMITTED EVERY WEEK (both operators; supersedes "Luke silent since 11/09")
+LUKE 11/16 ~09:30 MT: "lets just move forward as planned and we can plan to add it later". Every bid keeps moving now; the certificate is
+added when it arrives. Proof due AT AWARD (PSD hoods, Pagosa, Widefield, Aims, Canon City, most others): build and submit, no insurance line.
+Proof due WITH the bid: BVCC (COI listed in quote contents), COS janitorial 11/23 (signed Exhibit 1 naming the insurer), Arapahoe 26-64/26-57
+(certificate with bid), Lafayette 12/18 (COI or statement). Build these fully now; where the document accepts a statement, use "certificate of
+insurance will be provided upon award"; attach the real certificate if it lands before the due date; never name a carrier we have no document for.
 CORRECTION, Luke 11/16 ~09:20 MT: "we should get an email to my inbox with the certificate shortly, it has not been approved yet, but has been
 signed and sent off." So: application signed and submitted, carrier approval PENDING, nothing is bound or in force. Never write "insured", "in
 force" or any carrier/limit anywhere until the carrier's certificate email arrives. Worker: flag the certificate email the hour it lands (any
