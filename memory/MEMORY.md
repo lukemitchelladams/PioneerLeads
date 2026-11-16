@@ -2905,3 +2905,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Klay acknowledged (expects attendance update Tue).
 - 23:21Z worker tick (Mon 16:21 MT): inbox: COS R26-082JW snow addendum published (scanner files it next logged-in scan) + Klay ack; no sub replies; no insurance certificate. HQ 22:36Z scan: **coloradovss back** (68/3), bidnet 642/85, samgov 94; 2 new (Pagosa Amendment 0001 record → ledger GO/existing; Metro Water Recovery 0000443738 Transmission Building HVAC Replacement, consultant/PSA titles → ledger EVALUATE-lean-NO). HQ: Pagosa SF-30 to Luke to sign; A2 says subcontracting permitted to a similarly situated small business. Open matches 151.
   Dashboard 23:30Z: bids v384 (45fcea58fe186b6883d711ce6ab11cf9), events v387 (fe1310a09e2c668b116772aef9f92123), sources v333 (1dd692dda3becc3d092f6d76715d95c2), portal_feed v193 (85010d7624865d37d5654dbe948eae60); old blobs deleted; doc_gaps v14 (be60285eec3cd169122d162b6b89d201) unchanged.
+
+### 2026-11-16 23:45Z hourly (16:35 MT) scan, HQ (relaunched after a container restart)
+- 23:36Z scan was killed by a container restart (stale lock left at ~/.brownbison/bidwatch.lock; the relaunch at 23:40:47Z ran fine through it). Scan: session reused, EXIT 0, commit 9af73c3. Counts bidnet 642/84 | samgov 94/94 | coloradovss 69/3 | bonfire 2/1 | dibbs carried | total 807/182. New 0; 13 NO-bid downloads skipped; the killed run's Metro Water download was committed by the relaunch.
+- **COS janitorial R26-080JW CANCELLED by the City** (BidNet 23:30Z). Was next week's floor candidate; courtesy note to the 9 subs staged for Tue 08:30; rate sheet kept in private/ for a reissue. Next-week floor candidates now: BGNDRF (12/04, NM Premier yes), Canon City boiler/chiller (12/07, Tolin pricing), CPW (12/09, from documents).
+- Metro Water PAR 1502: confirmed NO from the RFP ("PROFESSIONAL ENGINEERING SERVICES", consulting engineer, DBB); watch for the construction bid later.
+- COS snow R26-082JW (due Mon 11/23): performer is Alex Ditto per the pipeline; operators never contact Alex, so it stays Luke's.
+- BGNDRF pricing agent resumed after the restart.
