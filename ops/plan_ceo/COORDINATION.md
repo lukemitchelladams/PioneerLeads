@@ -1,3 +1,10 @@
+# 2026-11-16 ~14:45 MT: TWO MANDATORY WALKS NOW UNSTAFFED (HQ act today)
+- Lafayette custodial: Clean Conscience will bid direct and asked off our list (reply 11/16 ~14:30 MT); Natalie no longer signs in Thu 10:00.
+  Honor the removal. Today: open 2-3 new Boulder County custodial sub lines asking one thing, attend Thu 10:00 for Brown Bison; replacement confirmed by Wed 17:00 or log the NO-BID reason.
+- CPW Alamosa: Klay Tolleson says Wed 10:00 is the only pre-bid; call-in allowed but someone must attend in person. Attendee confirmed by Tue 17:00 (already the plan) or NO-BID.
+- Canon City janitorial RFP 151-26: one new sub address bounced; replace it.
+- Luke cannot attend weekday walks (day job). Never put his name on either.
+
 # 2026-11-16 ~08:55 MT (corrected ~09:20 MT): INSURANCE SIGNED, APPROVAL PENDING; HARD FLOOR = AT LEAST ONE BID SUBMITTED EVERY WEEK (both operators; supersedes "Luke silent since 11/09")
 LUKE 11/16 ~09:30 MT: "lets just move forward as planned and we can plan to add it later". Every bid keeps moving now; the certificate is
 added when it arrives. Proof due AT AWARD (PSD hoods, Pagosa, Widefield, Aims, Canon City, most others): build and submit, no insurance line.
