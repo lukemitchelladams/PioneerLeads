@@ -2832,3 +2832,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-16 15:3xZ (08:3x MT) Monday send run, HQ
 - `send_outbox.py` on the scratchpad send file: **8 sent, 0 refused, 0 failed** (skip-list fresh: 3 known replies, 0 errors; gate PASS x8). Ids in ops/outbox/2026-11-16/sent.json (ids/threadId/bcc_count only; Billings' named mailbox stays out of tracked files). CPW 12 bcc, BGNDRF 11, Pagosa 2, BVCC 5, Canon Haynes/CMS 2, Clean Conscience (thread), HOODZ Larry+Carlos (thread), PSD alternates 3. Each logged in its sub-outreach.md.
 - Next: 12:00 MT gates (CPW, BGNDRF, Pagosa: GO with a named sub in writing or NO-BID); ~19:05Z PSFB send (outbox-psfb.json) unless Luke says stop; worker logs replies hourly.
+
+### 2026-11-16 15:43Z hourly (08:35 MT) scan, HQ
+- Launched 15:37:46Z (after the send run) via launch_scan.sh; saved 14:37Z session reused (no code, no robot check). EXIT 0, scan commit 708b1c5.
+- Counts: bidnet 634/82 | samgov 91/91 (+32 bulk) | coloradovss 66/3 | bonfire 2/1 | dibbs 307/189 carried | total 793/177. New 0, docs 0.
