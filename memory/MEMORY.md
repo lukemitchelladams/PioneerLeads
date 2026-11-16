@@ -2727,3 +2727,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   (bidnet 631/82, samgov 94, coloradovss 67/3). Lakewood RFP 6706 default NO-BID spelled out (68c8ef3).
 - Dashboard (00:30Z): bids v361 (ade8e5a7d4133d2da4afcf81d9bf77ca), events v364 (597fc43f0e6b6c803e9e8c0b21c54583), portal_feed v182
   (8f6598b9851734169685299361ba31fc), sources v310 (2f6f11165ecbe290c5a3f68d9ce56bfb), doc_gaps v13 (1807689f5ee024bcd1c29a490b9679ed).
+
+### 2026-11-16 00:37Z hourly (17:35 MT Sun) scan, HQ
+- Launched 00:36:07Z via launch_scan.sh; BidNet skipped under the robot-check cool-down (until 01:37:24Z): list carried forward, BLIND (last good 23:35:59Z). samgov 94/94, coloradovss 67/3, bonfire 2/1, dibbs carried; total 794/180. New matches 0, docs 0. Exit code 3 (degraded), scan commit 5a32676. Inbox last hour: 0.
+- **La Plata IFB 26-053-1215 NO-BID final**: window closed 00:00Z with 0 Durango rates (11 firms) and nothing from Luke; README DECISION row + close-out log, pipeline decision updated; due-date correction Tue 11/17 10:00 MST carried in.
+- 01:35Z tick: cool-down lifts 01:37:24Z; launch_scan.sh will wait ~2 min for it, then a fresh login attempt (watch for the code marker).

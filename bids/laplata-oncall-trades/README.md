@@ -151,4 +151,7 @@ Unlisted trades (p.11 table): none (HQ default).
 ## Status
 | Item | Value |
 |------|------|
-| **DECISION** | **NO-BID (HQ, 2026-11-14 00:25Z, default).** No Durango trade rate by the Fri 2026-11-13 17:00 MT cutoff from 11 firms asked. Revives only if a rate lands by Sun 2026-11-15 17:00 MT; then Exhibit B is filled from the pre-built package for Luke's approval before the Mon 2026-11-17 10:00 MST email deadline. |
+| **DECISION** | **NO-BID, FINAL (HQ, 2026-11-16 00:0xZ).** Default set 2026-11-14 00:25Z; the revival window (a Durango trade rate by Sun 2026-11-15 17:00 MT) closed with 0 rates from 11 firms asked and no overrule from Luke. Due **Tue** 2026-11-17 10:00 MST by email to the County; Brown Bison does not submit. Pre-built package kept for the next La Plata on-call round. |
+
+## Log, close-out
+- 2026-11-16 00:0xZ (Sun 17:0x MT, HQ): **NO-BID final.** The revival window (a Durango trade rate by Sun 2026-11-15 17:00 MT) closed with 0 rates in hand from 11 Durango-area firms asked (4 on 10/28 to 11/05, Garr HVAC bounced and was replaced; 7 on 11/12 as bcc 1a1d1aa56a4a191c; M&R Plumbers bounced 11/12). No overrule from Luke (silent since 11/09). IFB 26-053-1215 is due Tue 2026-11-17 10:00 MST by email to the County; Brown Bison does not submit. Pre-built package (RESPONSE-DRAFT, FORMS-CHECKLIST, SUBMISSION, no prices) stays in the folder for the next La Plata on-call round. Pipeline decision set to NO-BID (final). Any rate that still arrives is logged in private/ and the firm is kept for future Durango bids; it does not revive this one.
