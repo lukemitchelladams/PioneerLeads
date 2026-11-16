@@ -22,7 +22,8 @@ Every cycle:
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
      Q & A tab entries on watched bids), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
-     attachments are public and are downloaded from the detail view's Attachment panel without a login).
+     attachments are public and are downloaded from the detail view's Attachment panel without a login). An entry
+     decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
   6. Write REPORT.md, open_bids.json, health.json and LAST_SCAN.md (a six-line digest for the hourly operator: BidNet
      login, per-source open/matching counts with a BLIND marker, NEW matching bids, changes on watched bids, documents
      downloaded, errors + the exit code; the same lines are printed after the cycle line so a log tail shows them; a scan
@@ -99,6 +100,28 @@ def health_check(sources: list[str]) -> dict:
     return out
 
 
+# A watchlist entry we decided against keeps its id / match so the bid is still recognised, labelled and reported, but its
+# documents are not fetched: bids/_watch/downloads/ is committed to a public repo (2026-11-16 20:35Z, the flooring RFQ
+# bidnet:0000443673 "(NO: flooring is not one of our trades, rule 8; ...)" pulled 5 files). The decision is the word that
+# OPENS a parenthetical in the name, upper case as the entries are written: "(NO: ...", "(NO, rule 9 ...", "(NO 11/09: ...",
+# "(NO-BID ...", "(INFO ONLY ..."; an INFO ONLY clause after a ';' inside one also counts ("(12 NSNs ...; INFO ONLY: ...").
+# A NO further in stays a download: "(EVALUATE, recommend NO ...)", "(EVALUATE-lean-NO)", "(EVALUATE; default NO-BID ...)".
+_NO_NAME_RX = re.compile(r"\(\s*(?:NO(?:-BID)?|INFO[ -]ONLY)\b|\([^()]*;\s*INFO[ -]ONLY\b")
+_NO_DECISION_RX = re.compile(r"\s*(?:NO(?:\s*BID)?|INFO\s*ONLY)\b")
+
+
+def watch_decided_no(entry: dict | None) -> bool:
+    """True when watchlist `entry` is decided NO / NO-BID / INFO ONLY, so run.py does not download its documents. An
+    explicit "decision" field (any case; "NO", "no-bid", "NO_BID", "Info only") decides when it is set, so a revived
+    entry can say "decision": "GO" without a rename; otherwise the name's decision parenthetical (_NO_NAME_RX) does."""
+    if not entry:
+        return False
+    d = entry.get("decision")
+    if isinstance(d, str) and d.strip():
+        return bool(_NO_DECISION_RX.match(d.upper().replace("-", " ").replace("_", " ")))
+    return bool(_NO_NAME_RX.search(entry.get("name") or ""))
+
+
 class _WatchSet:
     """A bid is watched if its source:id is listed, or its title / solicitation # / URL matches an
     entry's `match` regex (we usually know the solicitation number, not the portal's internal id)."""
@@ -109,22 +132,34 @@ class _WatchSet:
         self.rx = [(w, re.compile(w["match"], re.I)) for w in watch if w.get("match")]
         self.hits: dict[str, str] = {}
 
-    def entry(self, b: dict) -> dict | None:
-        """The watchlist entry that covers bid `b` (an id match first), or None. Every pattern entry that matches is
+    def entries(self, b: dict) -> list[dict]:
+        """Every watchlist entry that covers bid `b`, the id match first, each once. Every pattern entry that matches is
         recorded as seen, so a bid listed twice (by id and by pattern) is never reported as 'not seen'."""
         k = f"{b['source']}:{b['id']}"
-        first = self.by_id.get(k)
+        out = [self.by_id[k]] if k in self.by_id else []
         # title + solicitation number only: matching the URL let "18863" (Jeffco 26-18863AP) hit BidNet's id
         # 444188638946 on an unrelated bid (2026-10-20)
         hay = f"{b.get('title', '')} {b.get('sol') or ''}"
         for w, rx in self.rx:
             if (not w.get("source") or w["source"] == b["source"]) and rx.search(hay):
                 self.hits[w.get("name", w["match"])] = k
-                first = first or w
-        return first
+                if not any(w is x for x in out):
+                    out.append(w)
+        return out
+
+    def entry(self, b: dict) -> dict | None:
+        """The watchlist entry that covers bid `b` (an id match first), or None."""
+        es = self.entries(b)
+        return es[0] if es else None
 
     def check(self, b: dict) -> bool:
         return self.entry(b) is not None
+
+    def decided_no(self, b: dict) -> bool:
+        """True when bid `b` is watched and every entry covering it is decided NO (watch_decided_no): its documents are
+        not downloaded. One entry still open (GO / EVALUATE, or a second listing of the same bid) keeps the download."""
+        es = self.entries(b)
+        return bool(es) and all(watch_decided_no(w) for w in es)
 
 
 def _is_open(b: dict) -> bool:
@@ -148,6 +183,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     prev = load_json(OPEN_BIDS_FILE, {"bids": {}})["bids"]
     found: dict[str, dict] = {}
     downloads: dict[str, list[str]] = {}
+    docs_skipped: list[str] = []  # watched bids decided NO / INFO ONLY: documents not downloaded (watch_decided_no)
 
     keywords = sorted({k for p in profiles.values() for k in p.get("bidnet_keywords", [])})
     browser_sources = [s for s in ("bidnet", "bonfire", "coloradovss") if s in sources and health[s]["reachable"]]
@@ -214,7 +250,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         _restore_detail(found, prev, "bidnet")
                     else:
                         _enrich_and_download(ses, bidnet, found, "bidnet", profiles, watched_keys, prev,
-                                             enrich_details, downloads, h, budget=budget)
+                                             enrich_details, downloads, h, budget=budget, skipped=docs_skipped)
                 except Exception as e:  # noqa: BLE001 - one source failing must not cost the others their scan
                     h["errors"].append(f"BidNet scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -239,7 +275,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         for r in rows.values():
                             found[key(r)] = r
                     _enrich_and_download(ses, bonfire, found, "bonfire", profiles, watched_keys, prev,
-                                         enrich_details, downloads, h, budget=budget)
+                                         enrich_details, downloads, h, budget=budget, skipped=docs_skipped)
                 except Exception as e:  # noqa: BLE001
                     h["errors"].append(f"Bonfire scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -266,7 +302,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                         _restore_detail(found, prev, "coloradovss")
                     else:
                         _enrich_and_download(ses, coloradovss, found, "coloradovss", profiles, watched_keys, prev,
-                                             enrich_details, downloads, h, budget=budget)
+                                             enrich_details, downloads, h, budget=budget, skipped=docs_skipped)
                 except Exception as e:  # noqa: BLE001
                     h["errors"].append(f"ColoradoVSS scan stopped: {type(e).__name__}: {str(e)[:150]}")
                     h["complete"] = False
@@ -385,7 +421,8 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     save_json(HEALTH_FILE, {"checked_at": started, "scanned_by": SCANNED_BY, "sources": health_all})
     filed = _file_watched_docs(downloads, found, watched_keys)
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
-              "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed}
+              "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed,
+              "docs_skipped_no": docs_skipped}
     REPORT_FILE.write_text(render(result))
     # the operator's one-`cat` digest, written next to the report and committed with it (PUSH_PATHS)
     result["last_scan"] = render_last_scan(result, watched_keys)
@@ -608,9 +645,11 @@ class _DetailBudget:
         return max(used, key=used.get) if used else ""
 
 
-def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h, budget=None):
+def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, enrich_details, downloads, h, budget=None,
+                         skipped=None):
     """Open the detail page of every matching or watched bid of `source` (watched bids first, then the matches new this
-    scan, then the rest, listing order inside each tier), download watched bids' documents, and give every bid whose page
+    scan, then the rest, listing order inside each tier), download watched bids' documents (not for a bid whose watchlist
+    entry is decided NO / INFO ONLY: its key goes on `skipped` instead, when given), and give every bid whose page
     is not read this scan the detail an earlier scan read. `budget` is the scan's shared _DetailBudget (None: a fresh one
     from the environment): once its wall clock is spent, the remaining bids keep last scan's detail exactly like a bid
     skipped for any other reason, h["detail_cut"] records the cut and one line goes to h["errors"]; nothing is raised, so
@@ -682,7 +721,14 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
             # documents need the portal login, except where the module says they are public (ColoradoVSS attachments:
             # coloradovss.PUBLIC_DOCS; its session never logs in)
-            if is_w and hasattr(mod, "download_docs") and (ses.logged_in or getattr(mod, "PUBLIC_DOCS", False)):
+            wants_docs = is_w and hasattr(mod, "download_docs") and (ses.logged_in or getattr(mod, "PUBLIC_DOCS", False))
+            if wants_docs and watched_keys.decided_no(b):
+                # decided NO / INFO ONLY on the watchlist: still matched, enriched and reported, but no files into the
+                # public downloads folder and no "not downloaded yet" line (2026-11-16 flooring 0000443673)
+                wants_docs = False
+                if skipped is not None:
+                    skipped.append(k)
+            if wants_docs:
                 try:
                     got = mod.download_docs(ses, found[k])  # only files not already on disk
                 except Exception as e:  # noqa: BLE001
@@ -979,6 +1025,9 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
         w = watched_keys.entry(found[k]) if watched_keys is not None and k in found else None
         label = (w or {}).get("folder") or k  # the bid folder the watchlist names, else source:id
         lines += [f"  - {label}: {Path(f).name}" for f in files]
+    skipped = r.get("docs_skipped_no") or []
+    if skipped:  # watched bids decided NO / INFO ONLY whose files were not fetched; no line when there are none
+        lines.append(f"Documents skipped (decided NO): {len(skipped)}")
     errs = [(s, e) for s, v in h.items() if not v.get("not_scanned_this_run") for e in _source_errors(s, v, now)]
     # a detail pass the wall-clock budget cut is always named here, whatever else went wrong first: those bids carry
     # last scan's detail, and the operator must not read their unchanged documents / pre-bid as confirmed

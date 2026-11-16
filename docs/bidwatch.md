@@ -19,7 +19,12 @@ Each scan writes:
   for a watched bid the scanner opens the detail view's Attachment panel (`[aria-label*='Attachment' i]`), clicks each
   file's row (the attachment name from the detail payload) inside a Playwright download wait and saves it under its
   sanitised name; at most 10 files and 90 s a bid, files already on disk skipped, per-file failures recorded as
-  `download <title>: ...` error lines instead of stopping the scan.
+  `download <title>: ...` error lines instead of stopping the scan. A watchlist entry decided against is not downloaded
+  (the folder is committed to a public repo; 2026-11-16, the flooring RFQ 0000443673 pulled 5 files): an explicit
+  `"decision": "NO"` / `"NO-BID"` / `"INFO ONLY"` (any case; it wins over the name when set), else a name parenthetical that
+  opens with `(NO`, `(NO-BID` or `(INFO ONLY` (upper case: `(NO: ...`, `(NO, rule 9 ...`, `(NO 11/09: ...`), or an `INFO ONLY`
+  clause after a `;` inside one. `(EVALUATE, recommend NO ...)`, `(EVALUATE-lean-NO)`, `(EVALUATE; default NO-BID ...)`, `(GO ...)`
+  still download. The bid is still matched, opened and reported; a bid also covered by an undecided entry still downloads.
 - `bids/_watch/LAST_SCAN.md`: the hourly operator's digest, read in one `cat` instead of grepping REPORT.md and diffing
   open_bids.json against a saved copy. A heading with the scan's UTC time, then six labelled lines, plain text, no tables:
   `Logged in:` (BidNet: `yes (attempt 1)`, `yes (session reused ...)`, `no: login deferred ...`, `no: COOL-DOWN ...`);
@@ -33,7 +38,7 @@ Each scan writes:
   n, then one `  - <source> <id> | <title> | <agency> | closes <date> | <profiles> | watched yes/no` line per bid (new = a
   matching open bid whose key was not in the previous open_bids.json, exactly REPORT.md's NEW list); `Changes on watched
   bids:` n, then REPORT.md's change lines cut to 200 chars; `Documents downloaded:` n, then `  - <bid folder or source:id>:
-  <file>`; `Errors:` `none` or per-source counts and the first error, then `exit code 0|2|3` (the code `run.py` returns:
+  <file>`; only when some watched bid's files were skipped as decided NO, `Documents skipped (decided NO):` n; `Errors:` `none` or per-source counts and the first error, then `exit code 0|2|3` (the code `run.py` returns:
   3 = a source was blind or carried forward). The same lines are printed to stdout after the cycle line, so a log tail
   shows them, and the file is in `--push`'s commit (PUSH_PATHS). A scan that crashes still writes it, with the crash in the
   Errors line, so the previous hour's digest is never mistaken for this hour's.

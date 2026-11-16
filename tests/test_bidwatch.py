@@ -1240,6 +1240,173 @@ check("LAST_SCAN.md names the bid folder the watchlist gives for each downloaded
       "Documents downloaded: 2" in _ls8 and "  - bids/littleton-2126: Addendum 1.pdf" in _ls8 and "  - bids/littleton-2126: RFQ.pdf" in _ls8, _ls8)
 r9 = run.scan(["bidnet"])
 check("next scan: nothing downloaded or filed twice", not r9["downloads"] and not r9["filed"], (r9["downloads"], r9["filed"]))
+
+# ---------------------------------------------------------------- decided-NO watchlist entries do not download documents
+# 2026-11-16 20:35Z: the watchlist entry "Poudre School District RFQ Flooring ... (NO: flooring is not one of our trades, rule 8;
+# ...)" (bidnet 0000443673) carried an id so the bid is recognised and labelled, and the scan downloaded its 5 documents into
+# bids/_watch/downloads/ (committed to a public repo). A NO / NO-BID / INFO ONLY decision now skips the download; the bid is
+# still matched, opened and reported. Names below are copied from the real watchlist.json.
+print("decided-NO watchlist entries do not download documents (2026-11-16 flooring case)")
+import types as _dntypes  # noqa: E402
+
+_DN_FLOOR = ("Poudre School District RFQ Flooring Replacement and Installation Services (NO: flooring is not one of our trades, "
+             "rule 8; closes 2027-01-07)")
+_DN_TRUE = [_DN_FLOOR,
+            "Douglas County IFB 042-26 HVAC Filters & Belts (NO, rule 9: no guaranteed quantity)",
+            "Aurora Public Schools IFB B2729 HVAC Air Filters (NO 11/09: rule 9, no quantities in the IFB; closes 2026-12-09)",
+            "City of Aurora IFB B-4799 Ash Tree Treatment (NO-BID 2026-11-10: no sub priced, QS license gate; overrule window closed 17:00 MT)",
+            "CCC RFP 2026-1400-1718713 Stout Street Corridor LED Lighting (NO-BID default: $5M GL + P&P bond + Lutron; mandatory walk 11/17 12:00)",
+            "Some Sources Sought (INFO ONLY: answering needs product facts)",
+            "DLA FY27-3A Foreign Bearings Waiver Package Sources Sought (12 NSNs FSC 3110, domestic sources, due 11/27 17:00 EST; INFO ONLY: "
+            "answering needs Jones Bearing product facts; family off limits per 11/12 rule; logged for Luke, no outreach)"]
+_DN_FALSE = ["Weld County B2600113 Southeast Weld Facility Cabling (EVALUATE, recommend NO; MANDATORY pre-bid 11/19 10:00 Fort Lupton)",
+             "Douglas County Fencing (EVALUATE-lean-NO)",
+             "Lighting Upgrades at Denver Union Station and Civic Center Parking Garage (EVALUATE; default NO-BID Mon 11/16 12:00; due 12/07)",
+             "Jeffco 26-18863AP-FM Dome Glass Replacement (EVALUATE)",
+             "Fort Collins Transfort Overhead Door Replacements (GO)",
+             "Weld County B2600111 Jail 1 East Gym RTU Replacement (GO pending docs; MANDATORY prebid 11/05 09:00)",
+             "Some Bid (REVIVE: sub priced 11/16)",
+             "Morgan County 2026-1119-001 Roof Replacement & Gutter (DECIDE; walk 10/29 recommended)",
+             "Adams County IFB-2026.766 Street Light Repair (CASP)", "Some Bid (NOTE: walk optional)", "Some Bid (no walk; EVALUATE)",
+             "Littleton RFQ 2126 On-Call Commercial Plumbing", ""]
+check("watch_decided_no: '(NO: ...)', '(NO, ...', '(NO 11/09: ...', '(NO-BID ...', '(INFO ONLY: ...' and a '; INFO ONLY:' clause skip",
+      all(run.watch_decided_no({"name": n}) for n in _DN_TRUE), [n for n in _DN_TRUE if not run.watch_decided_no({"name": n})])
+check("watch_decided_no: '(EVALUATE, recommend NO ...)', '(EVALUATE-lean-NO)', '(EVALUATE; default NO-BID ...)', '(EVALUATE)', '(GO ...)', "
+      "REVIVE, DECIDE, '(NOTE', lower-case 'no' and plain names still download",
+      not any(run.watch_decided_no({"name": n}) for n in _DN_FALSE), [n for n in _DN_FALSE if run.watch_decided_no({"name": n})])
+check("watch_decided_no: an explicit decision NO / no-bid / NO_BID / NO BID / Info Only skips (any case), on any name",
+      all(run.watch_decided_no({"name": "Plain Bid", "decision": d}) for d in ("NO", "no", "NO-BID", "no-bid", "NO_BID", "NO BID", "Info Only")))
+check("watch_decided_no: an explicit decision GO / EVALUATE wins over a stale '(NO: ...)' name; a blank decision falls back to the name; "
+      "no entry is False",
+      not run.watch_decided_no({"name": _DN_FLOOR, "decision": "GO"}) and not run.watch_decided_no({"name": _DN_FLOOR, "decision": "evaluate"})
+      and not run.watch_decided_no({"name": "Plain", "decision": "NOT YET"}) and run.watch_decided_no({"name": _DN_FLOOR, "decision": " "})
+      and not run.watch_decided_no(None) and not run.watch_decided_no({}))
+_dn_real = json.loads((ROOT / "bids/_watch/watchlist.json").read_text())["bids"]
+_dn_open = [w["name"] for w in _dn_real if re.search(r"\((EVALUATE|GO\b|REVIVE|DECIDE)", w.get("name") or "")
+            and not re.search(r"\(\s*(NO\b|NO-BID|INFO ONLY)", w.get("name") or "") and run.watch_decided_no(w)]
+check("real watchlist.json: no entry whose name says EVALUATE / GO / REVIVE / DECIDE (and opens no NO parenthetical) is decided NO",
+      _dn_open == [], _dn_open)
+
+# _enrich_and_download with a fake module: NO / NO-BID / INFO ONLY entries get no download_docs call and no "not downloaded yet"
+# line, but are still opened and flagged watched; GO, EVALUATE-recommend-NO and a bid that a second, undecided entry also covers
+# still download; the skipped keys are collected for LAST_SCAN.md
+_dn_calls: list[str] = []
+
+
+def _dn_download(ses, b):
+    _dn_calls.append(b["id"])
+    return [str(TMP / "dn" / b["id"] / "Spec.pdf")]
+
+
+_dn_mod = _dntypes.SimpleNamespace(
+    enrich=lambda ses, b: {**b, "documents": [{"name": "Spec.pdf"}], "detail_checked": True},
+    download_docs=_dn_download, doc_path=lambda b, d: TMP / "dn-not-on-disk" / b["id"] / d["name"])
+_dn_ws = run._WatchSet([
+    {"name": _DN_FLOOR, "source": "bidnet", "id": "0000443673", "match": "0000443673|Flooring Replacement and Installation"},
+    {"name": "Fort Collins Transfort Overhead Door Replacements (GO)", "source": "bidnet", "id": "0000600001"},
+    {"name": "Weld County B2600113 Southeast Weld Facility Cabling (EVALUATE, recommend NO; MANDATORY pre-bid 11/19)", "source": "bidnet",
+     "id": "0000600002"},
+    {"name": "Old listing (NO: superseded)", "source": "bidnet", "id": "0000600003"},
+    {"name": "Same bid, second entry (EVALUATE)", "source": "bidnet", "match": "Mirror 777"},
+    {"name": "Sources sought (INFO ONLY: logged for Luke)", "source": "bidnet", "id": "0000600004"},
+    {"name": "Boiler Plant", "decision": "no-bid", "source": "bidnet", "id": "0000600005"}])
+_dn_found = {f"bidnet:{i}": {"source": "bidnet", "id": i, "title": t, "url": "u"} for i, t in [
+    ("0000443673", "RFQ Flooring Replacement and Installation Services"), ("0000600001", "Transfort Overhead Door Replacements"),
+    ("0000600002", "Southeast Weld Facility Cabling"), ("0000600003", "Mirror 777 Custodial Services"),
+    ("0000600004", "Foreign Bearings Waiver Sources Sought"), ("0000600005", "Snowmelt Boiler Plant")]}
+_dn_dl, _dn_h, _dn_skip = {}, {"errors": []}, []
+run._enrich_and_download(_dntypes.SimpleNamespace(logged_in=True), _dn_mod, _dn_found, "bidnet", profiles, _dn_ws, {}, True,
+                         _dn_dl, _dn_h, skipped=_dn_skip)
+_dn_no = ["bidnet:0000443673", "bidnet:0000600004", "bidnet:0000600005"]
+check("flooring case: a matched bid with a NO entry triggers zero download_docs calls; GO / EVALUATE-recommend-NO / a bid with a second "
+      "undecided entry still download",
+      sorted(_dn_calls) == ["0000600001", "0000600002", "0000600003"] and sorted(_dn_dl) == ["bidnet:0000600001", "bidnet:0000600002",
+                                                                                          "bidnet:0000600003"], (_dn_calls, _dn_dl))
+check("decided-NO bids are still opened, flagged watched and kept in found (only the documents are skipped); their keys are collected",
+      all(_dn_found[k].get("detail_checked") and _dn_found[k].get("watched") is True and _dn_found[k].get("documents") for k in _dn_no)
+      and sorted(_dn_skip) == _dn_no, (_dn_skip, {k: _dn_found[k] for k in _dn_no}))
+check("no 'not downloaded yet' line for a decided-NO bid (it would repeat every scan); the GO bids keep theirs",
+      not any("Flooring" in e or "Sources Sought" in e or "Snowmelt" in e for e in _dn_h["errors"])
+      and sum("documents not downloaded yet" in e for e in _dn_h["errors"]) == 3, _dn_h["errors"])
+check("_WatchSet.entries: id match first, then each pattern entry once; entry() still returns the id entry; decided_no needs every entry NO",
+      [w["name"] for w in _dn_ws.entries(_dn_found["bidnet:0000600003"])] == ["Old listing (NO: superseded)", "Same bid, second entry (EVALUATE)"]
+      and _dn_ws.entry(_dn_found["bidnet:0000600003"])["name"] == "Old listing (NO: superseded)"
+      and [w["name"] for w in _dn_ws.entries(_dn_found["bidnet:0000443673"])] == [_DN_FLOOR]
+      and _dn_ws.decided_no(_dn_found["bidnet:0000443673"]) and not _dn_ws.decided_no(_dn_found["bidnet:0000600003"])
+      and not _dn_ws.decided_no({"source": "bidnet", "id": "9", "title": "unwatched"}))
+# ColoradoVSS (PUBLIC_DOCS, no login) skips the same way; a download that would not have run anyway is not counted as skipped
+_dn_calls.clear()
+_dn_vss = _dntypes.SimpleNamespace(PUBLIC_DOCS=True, download_docs=_dn_download, enrich=lambda ses, b: {**b, "detail_checked": True})
+_dn_skip_v = []
+run._enrich_and_download(_dntypes.SimpleNamespace(logged_in=False), _dn_vss,
+                         {"coloradovss:DQ1-1": {"source": "coloradovss", "id": "DQ1-1", "title": "Flooring", "url": "u"}}, "coloradovss",
+                         profiles, run._WatchSet([{"name": "VSS flooring (NO: rule 8)", "source": "coloradovss", "id": "DQ1-1"}]), {}, True,
+                         {}, {"errors": []}, skipped=_dn_skip_v)
+_dn_skip_off = []
+run._enrich_and_download(_dntypes.SimpleNamespace(logged_in=False), _dntypes.SimpleNamespace(download_docs=_dn_download,
+                         enrich=lambda ses, b: {**b, "detail_checked": True}),
+                         {"bonfire:1": {"source": "bonfire", "id": "1", "title": "Flooring", "url": "u"}}, "bonfire", profiles,
+                         run._WatchSet([{"name": "Bonfire flooring (NO: rule 8)", "source": "bonfire", "id": "1"}]), {}, True, {},
+                         {"errors": []}, skipped=_dn_skip_off)
+check("ColoradoVSS (public documents, no login): a NO entry is not downloaded either and is counted; a logged-out BidNet/Bonfire NO bid "
+      "(no download would run) is not counted",
+      _dn_calls == [] and _dn_skip_v == ["coloradovss:DQ1-1"] and _dn_skip_off == [], (_dn_calls, _dn_skip_v, _dn_skip_off))
+_dn_hl = {"bidnet": {"reachable": True, "reach_note": "HTTP 200", "creds": {"BIDNET_USER": True, "BIDNET_PASS": True}, "logged_in": True,
+                     "login_note": "session reused", "count": 6, "matches": 0, "errors": [], "last_success": "2026-11-16T20:35:00+00:00"}}
+_dn_rr = {"started": "2026-11-16T20:35:00+00:00", "found": _dn_found, "new": {}, "changed": {}, "closed": {}, "downloads": _dn_dl,
+          "missing_watch": [], "filed": [], "health": _dn_hl, "docs_skipped_no": _dn_skip}
+_dn_lsl = run.render_last_scan(_dn_rr, _dn_ws).splitlines()
+_dn_lab = [ln.split(":")[0] for ln in _dn_lsl[1:] if not ln.startswith("  - ")]
+_dn_ls0 = run.render_last_scan({**_dn_rr, "docs_skipped_no": []}, _dn_ws)
+check("LAST_SCAN.md: 'Documents skipped (decided NO): 3' right after the downloaded files, only when there are any",
+      "Documents skipped (decided NO): 3" in _dn_lsl and _dn_lab[-3:] == ["Documents downloaded", "Documents skipped (decided NO)", "Errors"]
+      and "Documents skipped" not in _dn_ls0 and "Documents skipped" not in run.render_last_scan({k: v for k, v in _dn_rr.items()
+                                                                                                 if k != "docs_skipped_no"}),
+      (_dn_lsl, _dn_ls0))
+
+# the same through scan() on the fake BidNet site: the watched Littleton bid 0000500002 renamed "(NO: ...)" with one of its files
+# gone from disk is matched, opened and reported, but bidnet.download_docs is never called; renamed "(EVALUATE, recommend NO; ...)"
+# the next scan fetches the missing file again. The watchlist and the file on disk are as before afterwards.
+_dn_wl_saved = (TMP / "WATCHLIST_FILE.json").read_text()
+_dn_entry = json.loads(_dn_wl_saved)["bids"][0]
+_dn_rfq = next(Path(f) for fs in r8["downloads"].values() for f in fs if f.endswith("RFQ.pdf"))
+_dn_real_dl = run.bidnet.download_docs
+_dn_scan_calls: list[str] = []
+
+
+def _dn_counting_dl(ses, b, *a, **kw):
+    _dn_scan_calls.append(b["id"])
+    return _dn_real_dl(ses, b, *a, **kw)
+
+
+_dn_rfq.unlink()  # a file an undecided watched bid would fetch this scan
+run.bidnet.download_docs = _dn_counting_dl
+try:
+    (TMP / "WATCHLIST_FILE.json").write_text(json.dumps({"bids": [{**_dn_entry, "name": "Littleton 2126 (NO: test, not our trade)"}]}))
+    _dn_s1 = run.scan(["bidnet"])
+    _dn_s1_ls = LAST_SCAN.read_text().splitlines()
+    _dn_s1_calls = list(_dn_scan_calls)
+    _dn_s1_rfq = _dn_rfq.exists()  # read now: the next scan fetches it again
+    (TMP / "WATCHLIST_FILE.json").write_text(json.dumps({"bids": [{**_dn_entry, "name": "Littleton 2126 (EVALUATE, recommend NO; test)"}]}))
+    _dn_s2 = run.scan(["bidnet"])
+    _dn_s2_ls = LAST_SCAN.read_text()
+finally:
+    run.bidnet.download_docs = _dn_real_dl
+    (TMP / "WATCHLIST_FILE.json").write_text(_dn_wl_saved)
+_dn_b1 = _dn_s1["found"].get("bidnet:0000500002") or {}
+check("scan(): a NO-named watched bid gets zero download_docs calls and no download; still watched, matched and enriched; skipped in result",
+      _dn_s1_calls == [] and _dn_s1["downloads"] == {} and not _dn_s1_rfq and _dn_b1.get("watched") is True
+      and _dn_b1.get("profiles") and _dn_b1.get("documents") and _dn_s1["docs_skipped_no"] == ["bidnet:0000500002"]
+      and not any("not downloaded yet" in e for e in _dn_s1["health"]["bidnet"]["errors"]),
+      (_dn_s1_calls, _dn_s1["downloads"], _dn_s1.get("docs_skipped_no"), _dn_s1["health"]["bidnet"]["errors"], _dn_s1_rfq,
+       {f: _dn_b1.get(f) for f in ("watched", "profiles", "documents")}))
+check("scan(): LAST_SCAN.md says 'Documents downloaded: 0' then 'Documents skipped (decided NO): 1'",
+      "Documents downloaded: 0" in _dn_s1_ls
+      and _dn_s1_ls[_dn_s1_ls.index("Documents downloaded: 0") + 1] == "Documents skipped (decided NO): 1", _dn_s1_ls)
+check("scan(): the same bid under an '(EVALUATE, recommend NO; ...)' name downloads the missing file again, with no skip line",
+      _dn_scan_calls == ["0000500002"] and _dn_rfq.exists()
+      and [Path(f).name for fs in _dn_s2["downloads"].values() for f in fs] == ["RFQ.pdf"] and _dn_s2["docs_skipped_no"] == []
+      and "Documents skipped" not in _dn_s2_ls, (_dn_scan_calls, _dn_s2["downloads"], _dn_s2_ls))
 os.environ["FAKE_REV"] = "1"
 [Path(f) for fs in r8["downloads"].values() for f in fs if f.endswith("Addendum 1.pdf")][0].unlink()
 r10 = run.scan(["bidnet"])
