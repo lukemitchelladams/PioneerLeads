@@ -2804,3 +2804,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-16 10:41Z hourly (03:35 MT) scan, HQ
 - Launched 10:35:51Z via launch_scan.sh; saved 01:38Z session reused (no code, no robot check). EXIT 0, scan commit 081c507.
 - Counts: bidnet 631/82 | samgov 90/90 (+32 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 790/176. New 0, docs 0. Inbox last hour: 0.
+- 11:21Z worker tick (Mon 04:21 MT): inbox quiet (2h 0, Luke/bounce 1d 0); HQ 10:35Z scan clean (bidnet 631/82 session reused, samgov 90, coloradovss 67/3, 0 new); open matches 145. No PFA docs, 7.1 HOLD. Dashboard: bids v372 (4c551b6d48ae55c65b6958a9b7f2e591), events v375 (bd69384219ba58e94498611d63e084c9), sources v321 (e4c6a42feaac473e5448a33f84f4b9b8); old blobs deleted; portal_feed v185 / doc_gaps 13 unchanged.
