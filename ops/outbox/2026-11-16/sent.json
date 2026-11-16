@@ -180,5 +180,25 @@
       "S&K Building Services (reply in thread)"
     ],
     "sent_utc": "2026-11-16T19:3xZ"
+  },
+  "firsttouch-lafayette-2026-11-16": {
+    "id": "1a1e64a105c6774d",
+    "companies": [
+      "Midnight Standard Co.",
+      "Better Business Cleaning",
+      "Precision Carpet Cleaning & Janitorial",
+      "Mile High Pro Cleaning Services",
+      "Denver Janitorial Company"
+    ],
+    "bcc_count": 5,
+    "sent_utc": "2026-11-16T21:5xZ"
+  },
+  "cpw-klay-thanks-2026-11-16": {
+    "id": "1a1e6484d566e75d",
+    "threadId": "1a1e612e03064899",
+    "to": [
+      "klay.tolleson@state.co.us"
+    ],
+    "sent_utc": "2026-11-16T21:4xZ"
   }
 }
