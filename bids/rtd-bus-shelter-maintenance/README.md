@@ -74,7 +74,7 @@ NCTD 2016 $14.98.
 Alex (YMS) emailed Luke Fri 2026-11-13 17:34 MT "YMS Updates RTD Snow Pricing.xlsx" (saved in private/, prices never in this public
 repo): per-shelter-per-event prices for the three shelter groups, per-month prices for the Federal & Colfax and Federal & Evans transfer
 centers, hourly hauling and extra labor, 3 %/yr escalation, an operations plan, and a flag that YMS has no RTD-compliant vehicle GPS yet.
-He asked for a Saturday call about pre-treatment scope and the $24-a-shelter benchmark. HQ sent Luke a CALL BRIEF (1a1d77d288a03c6f);
+He asked for a Saturday call about pre-treatment scope and the per-shelter benchmark (figure kept out of tracked files). HQ sent Luke a CALL BRIEF (1a1d77d288a03c6f);
 decision window "GO RTD" by Sun 2026-11-15 12:00 MT, else NO-BID stands and nothing is posted for the Mon 2026-11-16 14:00 OpenGov deadline.
 
 ## 2026-11-14 02:1xZ (worker): no-price package pre-built for a possible Sun GO

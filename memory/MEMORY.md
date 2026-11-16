@@ -2214,7 +2214,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
   Forbidden" in 15 s -> fail-fast, the other tabs skipped. bidnet 628/81 | samgov 90/90 (7 closed) | coloradovss 67/3. Docs 1. Pushed 4f28d16, EXIT 3.
 - RTD 126DM016: Alex Ditto sent Luke revised YMS snow/ice pricing 17:34 MT (xlsx saved in bids/rtd-bus-shelter-maintenance/private/) and
   asked for a Saturday call. HQ emailed Luke a CALL BRIEF 00:37Z (1a1d77d288a03c6f; prices stay in private/, body copy there too): year-1
-  sub cost ~3.7x the $24/shelter benchmark on shelters; "GO RTD" by Sun 12:00 MT or NO-BID stands. Nothing sent to Alex (Luke-only).
+  sub cost ~3.7x the per-shelter benchmark on shelters; "GO RTD" by Sun 12:00 MT or NO-BID stands. Nothing sent to Alex (Luke-only).
 
 ### 2026-11-14 01:42Z hourly (18:35 MT) scan, HQ
 - Launched 01:36:19Z; fresh login 01:36:35Z attempt 1, no robot check, no 403 this time (the 00:4xZ "403 Forbidden" on 0000442975's Documents
@@ -2857,3 +2857,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Tue 08:30 MT staged: HOODZ pricing chase (ops/outbox/2026-11-17/hoodz-pricing-chase.txt).
 - 17:5xZ: **Pagosa signable package emailed to Luke** (msg 1a1e57d754c7d86d; quote PDF, filled Schedule, pre-filled SF-1449 + Attachment 7; private/). Prices in private/ only. Luke signs by Wed 11/18 18:00 MT. Gaps: key personnel names/resume, employee list, biobased brands (hire plan in the quote). SAM amendment check blocked from cloud.
 - 18:3xZ **PRICE LEAK FIXED (HQ)**: today's memory notes put HOODZ's per-school cost and the Pagosa quote totals into tracked memory/MEMORY.md (commits 762896d, 34d7dbb, pushed; public repo); older lines held the PSD/Pagosa markup %. All scrubbed from HEAD (MEMORY.md, Pagosa README, ops/outbox/2026-11-12/psd-draft-copy-luke.txt). The figures remain in git history; purging them needs a history rewrite + force push, which is Luke's call (board line). Rule restated: no dollar figure, total or markup % in any tracked file, ever; write "in private/".
+- 18:21Z worker tick (Mon 11:21 MT): inbox: no new mail since 16:39Z (no replies to HQ's 16:38Z or 17:4xZ COS sends yet, no new bounces); no insurance certificate (1d search). HQ 17:37Z scan clean (bidnet 637/82, samgov 91, coloradovss 66/3, 0 new). **Price-leak follow-up (worker):** HQ's 18:3xZ scrub missed Luke's RTD per-shelter benchmark dollar figure in 4 tracked files (pipeline.json rtd row, bids/rtd-bus-shelter-maintenance/README.md, MEMORY.md, ops/plan_ceo/2026-11-14.md); replaced with "per-shelter benchmark" in HEAD. Still in git history (same history-rewrite question HQ put to Luke). Other $ figures in bids.json checked: solicitation-quoted limits/budgets/award amounts and SCA wage rates only.
