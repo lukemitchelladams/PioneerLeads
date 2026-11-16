@@ -14,6 +14,7 @@ import json
 import re
 import sys
 import tempfile
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -220,6 +221,206 @@ finally:
     st._gmail = _orig_gmail
 check("token failure: table still prints, each entry says inbox: error, no API call made",
       rc == 0 and out.count("inbox: error GMAIL_CLIENT_ID is not set") == 4 and CALLS == [], out)
+
+
+# ---------------------------------------------------------------- --skip-list: pure pieces
+print("--skip-list pure pieces")
+check("bounce_query: mailer-daemon, window, quoted bare lower-case address",
+      st.bounce_query("Sparky <Sparky@Gmail.com>", 7) == 'from:mailer-daemon newer_than:7d "sparky@gmail.com"', st.bounce_query("Sparky <Sparky@Gmail.com>", 7))
+check("bounce_query default window 14d, floor 1d",
+      'newer_than:14d "a@b.com"' in st.bounce_query("a@b.com") and "newer_than:1d" in st.bounce_query("a@b.com", 0))
+SKIP_MANIFEST = MANIFEST + [{"key": "shared", "subject": "same domain as mixed", "to": ["Sales <SALES@hoodz.us.com>"],
+                             "cc": ["Larry.Moss@hoodz.us.com"], "body_file": "e.txt", "files": []}]
+ALL = st.all_recipients(SKIP_MANIFEST)
+check("all_recipients: bare, lower-cased, de-duplicated across entries and to/cc/bcc, sorted",
+      ALL == sorted(ALL) and len(ALL) == 10 and "larry.moss@hoodz.us.com" in ALL and "sales@hoodz.us.com" in ALL
+      and not any("<" in a or a != a.lower() for a in ALL), ALL)
+check("all_recipients ignores malformed input", st.all_recipients(None) == [] and st.all_recipients([None, {"to": "x"}, {"to": ["no-at"]}]) == [])
+check("reply_term: domain for business, address for free-mail, '' for junk",
+      st.reply_term("Larry <larry.moss@hoodz.us.com>") == "hoodz.us.com" and st.reply_term("Redwing@Comcast.net") == "redwing@comcast.net"
+      and st.reply_term("nope") == "")
+
+# ---------------------------------------------------------------- --skip-list: decide_skips with a fake Gmail (no network)
+print("--skip-list decide_skips (faked Gmail)")
+REPLY_MS = int(dt.datetime(2026, 11, 14, 15, 0, tzinfo=dt.timezone.utc).timestamp() * 1000)     # 2026-11-14
+REDWING_MS = int(dt.datetime(2026, 11, 13, 9, 0, tzinfo=dt.timezone.utc).timestamp() * 1000)    # 2026-11-13
+
+
+class FakeSkipGmail:
+    """Stands in for scripts/gmail_api in --skip-list mode: hoodz.us.com replied (2026-11-14); sparky@gmail.com bounced
+    (date only in the Date header: 2026-11-15); redwing@comcast.net replied (2026-11-13) AND bounced; broken.example raises on
+    its reply term (when broken=True); everything else is silent. Records every call, never touches the network."""
+
+    def __init__(self, broken=True):
+        self.broken = broken
+        self.calls = []
+
+    def access_token(self):
+        return "tok-s"
+
+    def call(self, method, path, token, body=None, ctype="application/json"):
+        self.calls.append((method, path, token))
+        assert method == "GET", f"outbox_status must only GET, saw {method}"
+        if path.startswith(st.LIST_PATH):
+            q = urllib.parse.unquote(path[len(st.LIST_PATH):])
+            if q.startswith("from:mailer-daemon"):
+                if '"sparky@gmail.com"' in q:
+                    return {"messages": [{"id": "b-sparky", "threadId": "tb1"}]}
+                if '"redwing@comcast.net"' in q:
+                    return {"messages": [{"id": "b-redwing", "threadId": "tb2"}]}
+                return {"resultSizeEstimate": 0}
+            if self.broken and q.startswith("from:broken.example "):
+                raise SystemExit("Gmail API 403 on GET /gmail/v1/users/me/messages: forbidden")
+            if q.startswith("from:hoodz.us.com "):
+                return {"messages": [{"id": "r-hoodz", "threadId": "tr1"}, {"id": "r-hoodz-old", "threadId": "tr1"}]}
+            if q.startswith("from:redwing@comcast.net "):
+                return {"messages": [{"id": "r-redwing", "threadId": "tr2"}]}
+            return {"resultSizeEstimate": 0}
+        if "/messages/r-hoodz?format=metadata" in path:
+            return {"id": "r-hoodz", "internalDate": str(REPLY_MS),
+                    "payload": {"headers": [{"name": "From", "value": "Larry Moss <larry.moss@hoodz.us.com>"}, {"name": "Subject", "value": "Re: hood"}]}}
+        if "/messages/r-redwing?format=metadata" in path:
+            return {"id": "r-redwing", "internalDate": str(REDWING_MS), "payload": {"headers": []}}
+        if "/messages/b-sparky?format=metadata" in path:                                       # no internalDate: Date header decides
+            return {"id": "b-sparky", "payload": {"headers": [{"name": "From", "value": "Mail Delivery Subsystem <mailer-daemon@googlemail.com>"},
+                                                               {"name": "Date", "value": "Sun, 15 Nov 2026 10:40:00 -0700"}]}}   # 17:40Z, UTC day 11-15
+        if "/messages/b-redwing?format=metadata" in path:
+            return {"id": "b-redwing", "internalDate": str(REPLY_MS + 86400000), "payload": {"headers": []}}       # 2026-11-15
+        raise AssertionError(f"unexpected path {path}")
+
+
+fake = FakeSkipGmail()
+LOG = []
+res = st.decide_skips(SKIP_MANIFEST, 7, fake.call, "tok-s", log=LOG.append)
+check("decide_skips returns exactly days/skip/reasons/checked/errors", set(res) == {"days", "skip", "reasons", "checked", "errors"}, res)
+check("days and checked", res["days"] == 7 and res["checked"] == 10, res)
+check("a reply from a business domain skips every address at that domain, dated from internalDate",
+      {"larry.moss@hoodz.us.com", "carlos.ahedo@hoodz.us.com", "sales@hoodz.us.com"} <= set(res["skip"])
+      and res["reasons"]["larry.moss@hoodz.us.com"] == "replied 2026-11-14" and res["reasons"]["sales@hoodz.us.com"] == "replied 2026-11-14", res)
+check("a mailer-daemon hit skips the gmail address, dated from the Date header when internalDate is missing",
+      "sparky@gmail.com" in res["skip"] and res["reasons"]["sparky@gmail.com"] == "bounced 2026-11-15", res["reasons"])
+check("replied and bounced both: replied+bounced with both dates",
+      res["reasons"]["redwing@comcast.net"] == "replied+bounced 2026-11-13 2026-11-15", res["reasons"])
+check("silent addresses are kept",
+      not ({"info@chemaqua.com", "info@h2oeng.com", "sales@rkindustries.com", "contact@coloradomech.com"} & set(res["skip"])), res["skip"])
+check("skip list is sorted, every skip has a reason, no reason without a skip",
+      res["skip"] == sorted(res["skip"]) and set(res["skip"]) == set(res["reasons"]), res)
+check("the failing term lands in errors and the run goes on; its address is kept (bounce check was clean)",
+      list(res["errors"]) == ["from:broken.example"] and res["errors"]["from:broken.example"].startswith("Gmail API 403")
+      and "ops@broken.example" not in res["skip"], res["errors"])
+lists = [urllib.parse.unquote(p[len(st.LIST_PATH):]) for m, p, _ in fake.calls if p.startswith(st.LIST_PATH)]
+check("one messages.list per distinct term: shared hoodz.us.com asked once for three addresses",
+      sum(1 for q in lists if q.startswith("from:hoodz.us.com ")) == 1, lists)
+check("8 reply terms + 10 bounce terms = 18 lists, no repeats",
+      len(lists) == 18 and len(set(lists)) == 18 and sum(1 for q in lists if q.startswith("from:mailer-daemon")) == 10, lists)
+check("reply searches reuse the reply_query shape (window, -from:luke)",
+      all("newer_than:7d" in q and "-from:luke@brownbisonco.com" in q for q in lists if not q.startswith("from:mailer-daemon")), lists)
+check("bounce searches quote the address and carry the window",
+      all('"' in q and "newer_than:7d" in q and "-from:" not in q for q in lists if q.startswith("from:mailer-daemon")), lists)
+gets = [p for m, p, _ in fake.calls if "format=metadata" in p]
+check("one messages.get per term with a hit (newest only), format=metadata, token passed",
+      len(gets) == 4 and not any("r-hoodz-old" in p for p in gets) and all(t == "tok-s" for _, _, t in fake.calls), gets)
+check("only GET calls with the /gmail/v1 prefix", all(m == "GET" and p.startswith("/gmail/v1/users/me/messages") for m, p, _ in fake.calls))
+check("progress lines go through log", LOG and LOG[0].startswith("skip-list: 10 addresses") and any("error on from:broken.example" in l for l in LOG), LOG)
+clean = FakeSkipGmail(broken=False)
+check("no failing term -> empty errors", st.decide_skips(SKIP_MANIFEST, 7, clean.call, "tok-s")["errors"] == {})
+check("an exception that is not SystemExit is also caught",
+      st.decide_skips([{"key": "k", "to": ["a@b.com"]}], 14, _boom, "t") == {"days": 14, "skip": [], "reasons": {}, "checked": 1,
+                                                                             "errors": {"from:b.com": "connection refused", "bounce:a@b.com": "connection refused"}})
+check("empty manifest -> nothing checked, no call", st.decide_skips([], 14, _boom, "t")["checked"] == 0)
+
+# ---------------------------------------------------------------- --skip-list: apply_skips
+print("--skip-list apply_skips")
+before = json.dumps(SKIP_MANIFEST, sort_keys=True)
+new, dropped = st.apply_skips(SKIP_MANIFEST, res["skip"] + ["INFO@chemaqua.com"])
+check("input manifest unchanged", json.dumps(SKIP_MANIFEST, sort_keys=True) == before)
+check("new entries are copies, not the same objects", all(n is not e for n in new for e in SKIP_MANIFEST))
+nb = {e["key"]: e for e in new}
+check("entry emptied of to and bcc is dropped and listed (mixed: all four skipped); shared (to+cc all skipped) too",
+      dropped == ["mixed", "shared"] and "mixed" not in nb and "shared" not in nb, (dropped, list(nb)))
+check("bcc trimmed case-insensitively, entry kept", nb["bcc-only"]["bcc"] == ["info@h2oeng.com", "sales@rkindustries.com"], nb["bcc-only"])
+check("untouched entries keep every field", nb["unsent-one"] == MANIFEST[2] and nb["broken"] == MANIFEST[3])
+check("manifest order preserved", [e["key"] for e in new] == ["bcc-only", "unsent-one", "broken"])
+new2, dropped2 = st.apply_skips([{"key": "cc-only-left", "to": ["a@x.com"], "cc": ["keep@y.com"], "body_file": "f"}], ["a@x.com"])
+check("an entry left with only cc is dropped (nothing to send to)", new2 == [] and dropped2 == ["cc-only-left"])
+new3, _ = st.apply_skips([{"key": "k", "to": ["Name <A@X.com>", "b@x.com"], "cc": ["c@y.com"], "body_file": "f", "thread": "t1", "files": ["p.pdf"]}], ["a@x.com"])
+check("'Name <addr>' entries match by bare address; emptied lists are removed; other fields survive",
+      new3 == [{"key": "k", "to": ["b@x.com"], "cc": ["c@y.com"], "body_file": "f", "thread": "t1", "files": ["p.pdf"]}], new3)
+check("non-dict entries pass through", st.apply_skips([None, "x"], ["a@b.c"]) == ([None, "x"], []))
+
+# ---------------------------------------------------------------- --skip-list: the send copy never lands under ops/
+print("--skip-list send copy path")
+check("relative ops/ path refused", "tracked files" in st.send_copy_problem("ops/outbox/2026-11-16/send.json"))
+check("absolute path under the repo's ops/ refused", st.send_copy_problem(str(ROOT / "ops" / "outbox" / "x" / "send.json")) != "")
+check("the ops/ folder itself refused", st.send_copy_problem(str(ROOT / "ops")) != "")
+check("scratchpad-style path accepted", st.send_copy_problem(str(TMP / "mon" / "send.json")) == "", st.send_copy_problem(str(TMP / "mon" / "send.json")))
+check("the input manifest itself refused", "overwrite" in st.send_copy_problem(str(TMP / "outbox.json"), TMP / "outbox.json"))
+check("a directory refused", "directory" in st.send_copy_problem(str(TMP)))
+check("a sub-folder merely named ops outside the repo is fine", st.send_copy_problem(str(TMP / "ops" / "send.json")) == "")
+
+
+def run_main2(argv):
+    """Like run_main but also captures stderr and turns a SystemExit into its code."""
+    out, err = io.StringIO(), io.StringIO()
+    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+        try:
+            rc = st.main(argv)
+        except SystemExit as e:
+            rc = e.code
+    return rc, out.getvalue(), err.getvalue()
+
+
+# ---------------------------------------------------------------- --skip-list end to end (faked Gmail)
+print("--skip-list main")
+(TMP / "skip.json").write_text(json.dumps(SKIP_MANIFEST, indent=1))
+skip_bytes = (TMP / "skip.json").read_bytes()
+st._gmail = lambda: FakeSkipGmail(broken=False)
+try:
+    rc, out, err = run_main2([str(TMP / "skip.json"), "--skip-list", "--days", "7"])
+finally:
+    st._gmail = _orig_gmail
+doc = json.loads(out)                                                                             # the whole of stdout is one JSON object
+check("--skip-list: exit 0, stdout is exactly one JSON object with exactly days/skip/reasons/checked/errors",
+      rc == 0 and set(doc) == {"days", "skip", "reasons", "checked", "errors"}, (rc, list(doc)))
+check("--skip-list JSON content", doc["days"] == 7 and doc["checked"] == 10 and doc["errors"] == {}
+      and doc["skip"] == sorted(doc["skip"]) and doc["reasons"]["sparky@gmail.com"] == "bounced 2026-11-15", doc)
+check("no ledger table or summary on stdout in --skip-list mode", "rcpts" not in out and "entries," not in out)
+check("progress went to stderr", "skip-list: 10 addresses" in err, err)
+
+SEND_COPY = TMP / "mon" / "send-copy.json"
+st._gmail = lambda: FakeSkipGmail(broken=True)
+try:
+    rc, out, err = run_main2([str(TMP / "skip.json"), "--skip-list", "--write-send-copy", str(SEND_COPY)])
+finally:
+    st._gmail = _orig_gmail
+doc = json.loads(out)
+check("--write-send-copy: JSON adds dropped_entries, exit 1 because one term errored, still parseable",
+      rc == 1 and set(doc) == {"days", "skip", "reasons", "checked", "errors", "dropped_entries"} and doc["days"] == 14
+      and doc["dropped_entries"] == ["mixed", "shared"] and list(doc["errors"]) == ["from:broken.example"], (rc, doc))
+check("exit-1 reason on stderr", "may be incomplete" in err, err)
+copy_doc = json.loads(SEND_COPY.read_text())
+check("send copy written (parent folder created) with the skip addresses gone and emptied entries dropped",
+      [e["key"] for e in copy_doc] == ["bcc-only", "unsent-one", "broken"] and not any(a in json.dumps(copy_doc).lower() for a in doc["skip"]), copy_doc)
+check("send copy keeps body_file/files/thread for the sender", all("body_file" in e and "files" in e for e in copy_doc))
+check("input manifest file byte-identical after --write-send-copy", (TMP / "skip.json").read_bytes() == skip_bytes)
+
+# refusals happen before any Gmail work
+st._gmail = _NoGmail()
+try:
+    rc, out, err = run_main2([str(TMP / "skip.json"), "--skip-list", "--write-send-copy", "ops/outbox/2026-11-16/send.json"])
+    rc2, out2, err2 = run_main2([str(TMP / "skip.json"), "--write-send-copy", str(TMP / "x.json")])
+finally:
+    st._gmail = _orig_gmail
+check("--write-send-copy under ops/: exit 2, message on stderr, nothing on stdout, Gmail never loaded, nothing written",
+      rc == 2 and out == "" and "tracked files" in err and not (ROOT / "ops" / "outbox" / "2026-11-16" / "send.json").exists(), (rc, out, err))
+check("--write-send-copy without --skip-list: argparse error, exit 2", rc2 == 2 and out2 == "" and "needs --skip-list" in err2, (rc2, err2))
+st._gmail = lambda: NoToken()
+try:
+    rc, out, err = run_main2([str(TMP / "skip.json"), "--skip-list", "--write-send-copy", str(TMP / "mon" / "never.json")])
+finally:
+    st._gmail = _orig_gmail
+check("no Gmail token in --skip-list mode: exit 1, empty stdout (no misleading empty skip list), no send copy written",
+      rc == 1 and out == "" and "no Gmail token" in err and not (TMP / "mon" / "never.json").exists(), (rc, out, err))
 
 # ---------------------------------------------------------------- the source itself never sends
 print("source")
