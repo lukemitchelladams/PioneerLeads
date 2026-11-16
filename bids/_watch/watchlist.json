@@ -843,6 +843,24 @@
    "source": "bidnet",
    "id": "444234438795",
    "match": "444234438795|City Janitorial Services"
+  },
+  {
+   "name": "NPS Channel Islands NP janitorial, Ventura CA (NO: out of region; site visit Tue 11/17 10:00 in Ventura per Amendment 001; closes 11/20)",
+   "source": "samgov",
+   "id": "167b070bfa8649458bf15e4f20b7ba9e",
+   "match": "167b070bfa8649458bf15e4f20b7ba9e|Channel Islands"
+  },
+  {
+   "name": "BidNet 444234541440 Alternatives Analysis and Environmental Planning for New Bus Facility (NO: planning/consulting, not our trade; closes 12/15)",
+   "source": "bidnet",
+   "id": "444234541440",
+   "match": "444234541440|Alternatives Analysis and Environmental Planning"
+  },
+  {
+   "name": "Poudre School District RFQ Flooring Replacement and Installation Services (NO: flooring is not one of our trades, rule 8; closes 2027-01-07)",
+   "source": "bidnet",
+   "id": "0000443673",
+   "match": "0000443673|Flooring Replacement and Installation"
   }
  ]
 }
