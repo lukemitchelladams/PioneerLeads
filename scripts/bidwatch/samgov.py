@@ -129,6 +129,14 @@ def normalize(o: dict) -> dict:
     }
 
 
+def psc_group_ok(rec: dict, prof: dict) -> bool:
+    """A title/keyword-only hit on a product profile (one with PSC ccodes) needs a PSC in one of the profile's 2-digit
+    groups (3110, 3130 -> "31"); 2026-11-16: DLA 1560 airframe part "15--CRANK, IDLER CAM, ELEVAT" matched jones-bearing
+    on "idler". A profile without ccodes, or a record without a PSC, has nothing to judge and passes."""
+    groups = {str(q["ccode"])[:2] for q in prof.get("samgov", []) if "ccode" in q}
+    return not groups or not rec.get("psc") or str(rec["psc"])[:2] in groups
+
+
 def _keep(rec: dict, prof: dict) -> bool:
     naics = {q["ncode"] for q in prof.get("samgov", []) if "ncode" in q}
     psc = {q["ccode"] for q in prof.get("samgov", []) if "ccode" in q}
@@ -136,7 +144,7 @@ def _keep(rec: dict, prof: dict) -> bool:
         return True
     if rec.get("psc") and any(str(rec["psc"]).startswith(p) for p in psc):
         return True
-    return bool(match_profiles(rec["title"], {"x": prof}))
+    return psc_group_ok(rec, prof) and bool(match_profiles(rec["title"], {"x": prof}))
 
 
 def collect(profiles: dict) -> tuple[dict, list[str]]:

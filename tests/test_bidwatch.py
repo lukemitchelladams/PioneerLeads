@@ -2109,6 +2109,7 @@ _rows = [
     _sam_row("i9", "Radiant Panel Replacement", typ="Sources Sought", pop="", naics="238220", deadline="", archive=_fut),
     _sam_row("j10", "Screw Conveyor Replacement", pop="FL", office="FL", psc="3990"),                   # keep JB: title phrase
     _sam_row("k11", "Aircraft Apron Paving", pop="AZ", office="AZ", psc="Y1LB"),                        # drop: 'apron' alone
+    _sam_row("l12", "15--CRANK,IDLER CAM,ELEVAT", pop="", office="VA", naics="336413", psc="15"),       # drop: FSC 15 airframe part, 'idler' alone (2026-11-16)
 ]
 import csv as _csv  # noqa: E402
 import io as _io  # noqa: E402
@@ -2164,6 +2165,8 @@ check("bulk filters: a stated place of performance outside CO drops it, even wit
 check("bulk filters: exclude keywords, award notices and past deadlines drop", not {"d4", "e5", "f6"} & set(_bp), _bp)
 check("bulk filters: nationwide profile takes PSC 3110 and product phrases, not NAICS-only or 'apron' paving",
       _bp.get("g7") == ["jones-bearing"] and _bp.get("j10") == ["jones-bearing"] and not {"h8", "k11"} & set(_bp), _bp)
+check("bulk filters: a title phrase ('idler') with a PSC outside the profile's groups is dropped (FSC 15 airframe part, 2026-11-16)",
+      "l12" not in _bp, _bp)
 check("bulk filters: upcoming notice without a deadline kept until it archives",
       "i9" in _bp and _bulk["i9"]["upcoming"] and _bulk["i9"]["closing"] is None, _bulk.get("i9"))
 check("bulk note says what it did", "matching of" in _bnote, _bnote)
@@ -2995,6 +2998,40 @@ try:
 finally:
     samgov.collect, run.HOSTS["samgov"] = _pt_orig_collect, _pt_orig_host
     os.environ.pop("SAM_API_KEY", None)
+
+# ---------------------------------------------------------------- samgov keyword match is guarded by PSC group (2026-11-16 1560 case)
+# 2026-11-16 05:41Z: DLA notice 88b6b56f969040fb97ad5792a57f67b8 "15--CRANK, IDLER CAM, ELEVAT" (FSC 1560, an airframe part; the bulk
+# file carries psc "15") reached the jones-bearing watch on the word "idler" through the nightly bulk file (via="bulk"). A title or
+# keyword hit on a product profile now needs a PSC in one of the profile's 2-digit groups; the NAICS and PSC-prefix paths are unchanged.
+print("samgov keyword match is guarded by PSC group (2026-11-16 1560 case)")
+_JB = {"states": [], "samgov": [{"ccode": "3110"}, {"ccode": "3020"}, {"ccode": "3910"}, {"title": "idler"}, {"title": "conveyor"}],
+       "bidnet_keywords": ["idler", "elevator", "bearing", "conveyor"], "exclude_keywords": ["bearing wall"]}
+_SVC = {"states": ["CO"], "samgov": [{"ncode": "238220"}], "bidnet_keywords": ["hvac"]}
+
+
+def _jb_rec(psc, title="CRANK, IDLER CAM, ELEVAT"):
+    return {"id": "x", "title": title, "naics": "336413", "psc": psc, "state": None}
+
+
+check("psc_group_ok: groups are the ccodes' first two digits (3110/3020/3910 -> 31/30/39); a 2-char FSC and a 4-char PSC judged alike",
+      samgov.psc_group_ok(_jb_rec("3990"), _JB) and samgov.psc_group_ok(_jb_rec("39"), _JB)
+      and not samgov.psc_group_ok(_jb_rec("1560"), _JB) and not samgov.psc_group_ok(_jb_rec("15"), _JB))
+check("(1) psc 1560 + keyword title 'CRANK, IDLER CAM, ELEVAT' is dropped", not samgov._keep(_jb_rec("1560"), _JB))
+check("(2) same title, psc 3990 (group 39) kept via keywords", samgov._keep(_jb_rec("3990"), _JB))
+check("(3) same title, no psc ('' / None) kept: nothing to judge", samgov._keep(_jb_rec(""), _JB) and samgov._keep(_jb_rec(None), _JB))
+check("(4) psc 3110 with an unrelated title kept via the PSC prefix path, unchanged", samgov._keep(_jb_rec("3110", "WASHER, FLAT"), _JB))
+check("(4b) psc 1560 with an unrelated title stays dropped", not samgov._keep(_jb_rec("1560", "WASHER, FLAT"), _JB))
+check("(5) a service profile without ccodes keeps a keyword match whatever the psc",
+      samgov._keep(_jb_rec("1560", "HVAC repair, Fort Carson"), _SVC) and samgov._keep(_jb_rec("R499", "HVAC repair"), _SVC))
+check("bulk keep: same guard on the 'title' phrase path the record actually took (bulk psc '15'); group-39 conveyor still kept",
+      not samgov_bulk.keep({**_jb_rec("15"), "office_state": "VA"}, _JB) and not samgov_bulk.keep({**_jb_rec("1560"), "office_state": "VA"}, _JB)
+      and samgov_bulk.keep({**_jb_rec("3990", "Screw Conveyor Replacement"), "office_state": "FL"}, _JB))
+_real = samgov.normalize({"noticeId": "88b6b56f969040fb97ad5792a57f67b8", "title": "15--CRANK,IDLER CAM,ELEVAT", "naicsCode": "336413",
+                          "classificationCode": "1560", "type": "Combined Synopsis/Solicitation"})
+_real_groups = {str(q["ccode"])[:2] for q in profiles["jones-bearing"]["samgov"] if "ccode" in q}
+check("real jones-bearing profile: FSC group 15 is not among its ccode groups and the notice is dropped on both paths",
+      "15" not in _real_groups and {"31", "39"} <= _real_groups and not samgov._keep(_real, profiles["jones-bearing"])
+      and not samgov_bulk.keep({**_real, "psc": "15", "office_state": "VA"}, profiles["jones-bearing"]), sorted(_real_groups))
 
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

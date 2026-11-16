@@ -29,6 +29,7 @@ import urllib.request
 from pathlib import Path
 
 from .common import STATE_HOME, iso, load_json, match_profiles, now_utc, save_json
+from .samgov import psc_group_ok
 
 URL = ("https://sam.gov/api/prod/fileextractservices/v1/api/download/Contract%20Opportunities/datagov/"
        "ContractOpportunitiesFullCSV.csv?privacy=Public")
@@ -127,6 +128,8 @@ def keep(rec: dict, prof: dict) -> bool:
     title = rec.get("title", "").lower()
     if any(_word(x).search(title) for x in prof.get("exclude_keywords", [])):
         return False
+    if not psc_group_ok(rec, prof):
+        return False  # a title hit outside the profile's PSC groups (2026-11-16: FSC 15 airframe part kept on 'idler')
     if any(_word(x["title"]).search(title) for x in q if "title" in x):
         return True
     # a state-bound profile also takes its broad keyword list (as the API path does); a nationwide one does
