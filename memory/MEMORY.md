@@ -2881,3 +2881,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Scan 20:35:31Z: session reused, EXIT 3 (coloradovss BLIND this run, list carried from 19:36Z), commit 6d013ae. Counts bidnet 638/85 | samgov 93/93 | coloradovss 66/3 carried | bonfire 2/1 | dibbs carried | total 799/182. New 0.
 - 5 docs downloaded, all for PSD flooring RFQ 0000443673 (our NO): left in the scanner cache, not filed. Side effect noted: a NO watchlist entry with an id still triggers document downloads.
 - CPW: asked the buyer whether a second pre-bid date will be offered (msg 1a1e612e03064899). BVCC questions are BidNet-only.
+- 21:0xZ: Canon City janitorial RFP 151-26 (due 12/07 11:00): first touch to Cornerstone + Alfonso's (msg 1a1e62eed1128cbe). Found and corrected a misstatement: the 11/13 Pike's email claimed we had asked the City about PSA IV.D subcontracting; Q1 was never posted. New body says "we are confirming". **Luke: post Q1 on BidNet by 12/03 14:00.** Ledger now also has the S&K reply and the CPW buyer question.
+- Worktree agent running: decided-NO / INFO ONLY watchlist entries stop downloading documents.

@@ -156,5 +156,29 @@
       "Brown-Bison-Sources-Sought-Response-FA251727SS00.pdf"
     ],
     "asks": 0
+  },
+  "firsttouch-canon-janitorial-2026-11-16": {
+    "id": "1a1e62eed1128cbe",
+    "companies": [
+      "Cornerstone Cleaning Janitorial Services (Pueblo West)",
+      "Alfonso's Janitorial (Pueblo)"
+    ],
+    "bcc_count": 2,
+    "sent_utc": "2026-11-16T21:0xZ"
+  },
+  "cpw-second-prebid-question-2026-11-16": {
+    "id": "1a1e612e03064899",
+    "to": [
+      "klay.tolleson@state.co.us"
+    ],
+    "sent_utc": "2026-11-16T20:4xZ"
+  },
+  "aims-sk-reply-2026-11-16": {
+    "id": "1a1e5dce163a7103",
+    "threadId": "1a1e5caf28a79407",
+    "companies": [
+      "S&K Building Services (reply in thread)"
+    ],
+    "sent_utc": "2026-11-16T19:3xZ"
   }
 }
