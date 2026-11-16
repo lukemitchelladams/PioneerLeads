@@ -2767,3 +2767,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Counts: bidnet 631/82 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 794/180. New 0, docs 0. Inbox last hour: 0.
 - Monday CEO plan drafted in the scratchpad ($S/mon/plan_2026-11-16.draft.md); refresh with overnight replies and commit as ops/plan_ceo/2026-11-16.md at the 13:44Z trigger.
 - 05:21Z worker tick (Sun 22:21 MT): inbox quiet (2h 0, Luke/bounce 1d 0); HQ 04:36Z scan clean (bidnet 631/82 session reused, samgov 94, coloradovss 67/3, 0 new, 0 docs); still no PFA docs, 7.1 HOLD. Dashboard: bids v366 (blob 71bbcc7d05db399733e4eed1498667ce), events v369 (42ddbc69944ef23c6cf0ad4394cad388), sources v315 (96115fd9deb60e611afbf86c69e6fc4e); old blobs deleted; portal_feed 182 / doc_gaps 13 unchanged. Next hash compare: this commit.
+
+### 2026-11-16 05:41Z hourly (22:35 MT Sun) scan, HQ
+- Launched 05:35:59Z via launch_scan.sh; saved 01:38Z session reused (no code, no robot check). EXIT 0, scan commit b88abc6.
+- Counts: bidnet 631/82 | samgov 95/95 (+37 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 795/181. Docs 0. Inbox last hour: 0.
+- New match 1 (jones-bearing profile): SAM.gov 88b6b56f969040fb97ad5792a57f67b8 "15--CRANK, IDLER CAM, ELEVAT", DLA, NSN 1560-00-910-9140, qty 3, no drawings, due 11/23. Aircraft airframe part (FSC 1560); keyword false hit on "idler"/"elevator". Labeled NO in the watchlist. Profile note: consider restricting jones-bearing FSC matches to 3110/3130/3020/3910 (the 1560 hit is noise).
+- Subagent (worktree) building scripts/outbox_status.py + test; cherry-pick between scans when it reports.
