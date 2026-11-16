@@ -2836,3 +2836,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-16 15:43Z hourly (08:35 MT) scan, HQ
 - Launched 15:37:46Z (after the send run) via launch_scan.sh; saved 14:37Z session reused (no code, no robot check). EXIT 0, scan commit 708b1c5.
 - Counts: bidnet 634/82 | samgov 91/91 (+32 bulk) | coloradovss 66/3 | bonfire 2/1 | dibbs 307/189 carried | total 793/177. New 0, docs 0.
+- 15:41Z: Timme Electric declined CPW (reply to the Monday chase, thread 1a1e500ae48ba2a1); CPW 13 asked / 2 declined / 2 bounced / 0 yes. No bounces on the 8 sends after 7 minutes.
