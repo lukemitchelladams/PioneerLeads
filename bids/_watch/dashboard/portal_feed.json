@@ -610,7 +610,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view"
  },
@@ -655,7 +655,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view"
  },
@@ -2440,7 +2440,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234541440?target=view"
  },
@@ -2605,7 +2605,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Flooring-Replacement-and-Installation-Services/0000443673?purchasingGroupId=8409951&origin=1"
  },
