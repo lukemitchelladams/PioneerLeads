@@ -2901,6 +2901,12 @@
    "verdict": "NO",
    "why": "Fencing is not our trade (rule 8); same call as Durango cemetery fencing (HQ 22:41Z watchlist NO).",
    "at": "2026-11-15T23:30:00Z"
+  },
+  "samgov:88b6b56f969040fb97ad5792a57f67b8": {
+   "name": "DLA 15-- CRANK,IDLER CAM,ELEVAT NSN 1560-00-910-9140 qty 3",
+   "verdict": "NO",
+   "why": "FSC 1560 aircraft structural part, keyword noise on 'elevat'; not bearings/pulleys/conveyors; no drawings. Matches HQ watchlist NO (f3f004a).",
+   "at": "2026-11-16T06:30:00Z"
   }
  },
  "watched": {
@@ -3086,6 +3092,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-16T05:30:00Z",
+ "last_hourly_check": "2026-11-16T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
