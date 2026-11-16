@@ -68,5 +68,57 @@
     "attachments": [],
     "to": [],
     "sent_utc": "2026-11-16T15:3xZ"
+  },
+  "firsttouch-cpw-2026-11-16": {
+    "id": "1a1e539ca4b447d6",
+    "companies": [
+      "Lopez Electric LLC (Alamosa) BOUNCED domain not found",
+      "Sangre de Cristo Electric Inc (Monte Vista)",
+      "J.R.B. Electric LLC (Florence)"
+    ],
+    "bcc_count": 3,
+    "sent_utc": "2026-11-16T16:38Z"
+  },
+  "firsttouch-bvcc-2026-11-16": {
+    "id": "1a1e539d0d80e920",
+    "companies": [
+      "Hawkins Inc Water Treatment Group",
+      "Air Conditioning Associates / Denver Boiler (Englewood)"
+    ],
+    "bcc_count": 2,
+    "sent_utc": "2026-11-16T16:38Z"
+  },
+  "firsttouch-pagosa-2026-11-16": {
+    "id": "1a1e539d78068fb0",
+    "companies": [
+      "Maintenance Service Systems Inc (Albuquerque)"
+    ],
+    "bcc_count": 1,
+    "sent_utc": "2026-11-16T16:38Z"
+  },
+  "firsttouch-aims-2026-11-16": {
+    "id": "1a1e539e3962c681",
+    "companies": [
+      "S&K Building Services (Denver)",
+      "Summit Window Cleaning BLOCKED",
+      "Vertical Window Cleaning (Colorado Springs)"
+    ],
+    "bcc_count": 3,
+    "sent_utc": "2026-11-16T16:38Z"
+  },
+  "bgndrf-justin-reply-2026-11-16": {
+    "id": "1a1e539e672f68d3",
+    "threadId": "1a1d708c7a8ea2ad",
+    "companies": [
+      "New Mexico Premier Cleaning (reply in thread)"
+    ],
+    "sent_utc": "2026-11-16T16:38Z"
+  },
+  "bgndrf-walk-request-2026-11-16": {
+    "id": "1a1e539ebb8f2582",
+    "to": [
+      "savanna_manning@ios.doi.gov"
+    ],
+    "sent_utc": "2026-11-16T16:38Z"
   }
 }
