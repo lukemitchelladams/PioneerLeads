@@ -1,21 +1,31 @@
 """pytest setup for tests/.
 
-tests/test_bidwatch.py is a script, not a pytest module: its checks run at import and it ends with sys.exit(), which aborts the
-whole `python3 -m pytest -q tests` run ("no tests ran"). While it keeps that shape, pytest skips collecting it and
-tests/test_bidwatch_script.py runs it as a subprocess instead, so the canonical command runs both suites. If it is ever turned
-into ordinary pytest tests (no module-level sys.exit), pytest collects it directly again.
+tests/test_bidwatch.py and tests/test_outbox_status.py are scripts, not pytest modules: their checks run at import and they end
+with sys.exit(), which aborts the whole `python3 -m pytest -q tests` run ("no tests ran"). While a test file keeps that shape,
+pytest skips collecting it and tests/test_bidwatch_script.py runs it as a subprocess instead, so the canonical command runs every
+suite. A script turned into ordinary pytest tests (no module-level sys.exit) is collected directly again.
 """
 import re
 from pathlib import Path
 
-_BIDWATCH = Path(__file__).with_name("test_bidwatch.py")
+_HERE = Path(__file__).resolve().parent
+_BIDWATCH = _HERE / "test_bidwatch.py"
 
 
-def bidwatch_is_a_script():
+def is_a_script(path):
     try:
-        return re.search(r"(?m)^sys\.exit\(", _BIDWATCH.read_text(encoding="utf-8")) is not None
+        return re.search(r"(?m)^sys\.exit\(", Path(path).read_text(encoding="utf-8")) is not None
     except OSError:
         return False
 
 
-collect_ignore = ["test_bidwatch.py"] if bidwatch_is_a_script() else []
+def script_tests():
+    """tests/test_*.py files that are self-checking scripts (module-level sys.exit), sorted."""
+    return sorted(p for p in _HERE.glob("test_*.py") if is_a_script(p))
+
+
+def bidwatch_is_a_script():
+    return is_a_script(_BIDWATCH)
+
+
+collect_ignore = [p.name for p in script_tests()]
