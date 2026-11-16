@@ -607,3 +607,10 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-16 13:21Z: 2 inbound, both BidNet closing reminders (no action): 1a1e4559f635fe3f Arvada 26-FAC-055 On-Call GC closes 11/17/2026 02:00 PM MST (ours: NO, 5-yr GC licence requirement); 1a1e453befa8d864 Jeffco 26-19289AP-FM Boettcher Mansion Chiller closes 11/17/2026 10:00 AM MST (ours: NO-BID, no sub price by 11/12 cutoff). Both match pipeline due dates. Luke/bounce (1d): 0.
 - 2026-11-16 14:21Z: 0 new inbound since 13:21Z (2h window only shows the 2 BidNet reminders already logged), 0 Luke/bounce (1d).
 - 2026-11-16 15:21Z: 0 new inbound (2h), 0 Luke/bounce (1d).
+- 2026-11-16 16:21Z: 5 new inbound since the 15:35Z send run (no insurance certificate yet; searched insurance/COI/binder/declarations/acord 3d: none):
+  - 1a1e50972fd754bb BGNDRF: New Mexico Premier Cleaning YES, interested, wants a walkthrough this week before quoting → logged in sub-outreach.md + pipeline; flagged to HQ for the 12:00 gate.
+  - 1a1e51071a7592fa CPW: Torres P&H declined (homeowner service) → logged.
+  - 1a1e513de660333b PSD hoods: Larry Moss (HOODZ) on AHJ registration: never asked to register in 10+ yrs, "we are not contractors", will check AHJ sites → logged; 7.1 HOLD for PFA docs.
+  - 1a1e520d49dafeff BidNet addendum, Weld B2600111 Jail 1 East Gym RTU (ours DEAD, missed mandatory walk) → no action.
+  - 1a1e51ca4a8cd894 Govly promo → noise.
+  Luke/bounce (1d): 0.
