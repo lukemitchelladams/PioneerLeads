@@ -618,3 +618,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-16 18:21Z: 0 new inbound since 16:39Z; 0 Luke/bounce new; no insurance certificate.
 - 2026-11-16 19:21Z: 3 new inbound: 1a1e5caf28a79407 **SK Building Services YES on Aims window cleaning** (will bid, price early Dec, offers an attendee for the 11/18 11:00 recommended pre-bid; logged, flagged to HQ; cell in signature not copied); 1a1e5b776cb03a35 + 1a1e5afd3723a8e8 Google Workspace promos (noise). No bounces on HQ's 17:4xZ COS batch. No insurance certificate (1d). Luke/CRM 0.
 - 2026-11-16 20:21Z: 0 new inbound (only HQ's 19:37Z reply to S&K in thread); 0 new bounces; no insurance certificate; Luke/CRM 0.
+- 2026-11-16 21:21Z: 3 new inbound, all logged in sub-outreach.md + pipeline:
+  - 1a1e62cd5e19b2e9 CPW buyer Klay Tolleson: only the 11/18 date; "attending the pre-bid meeting is not mandatory and your organization can still submit a response if unable to attend" (conflicts with DQ 1.4 "Mandatory"). Flagged to HQ: the walk gate no longer kills CPW on the buyer's word.
+  - 1a1e63b2a0773b66 Lafayette: Clean Conscience OUT ("I'm going to bid directly. Please remove me from your list"); Thu 11/19 mandatory pre-proposal now has no attendee.
+  - 1a1e62efa819243b bounce: Canon City janitorial first touch, Alfonso's comcast mailbox not found.
+  No insurance certificate (1d). Luke/CRM 0.
