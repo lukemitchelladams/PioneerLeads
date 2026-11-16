@@ -2907,6 +2907,12 @@
    "verdict": "NO",
    "why": "FSC 1560 aircraft structural part, keyword noise on 'elevat'; not bearings/pulleys/conveyors; no drawings. Matches HQ watchlist NO (f3f004a).",
    "at": "2026-11-16T06:30:00Z"
+  },
+  "samgov:e1e93a622eb04a29a950c73108dfd78f": {
+   "name": "Army MICC-Ft Drum W911S227U0132 Bearings (McAlester AAP, OK), due 2026-11-18",
+   "verdict": "NO",
+   "why": "Rule 9: brand-name-or-equal catalog parts (Kaydon thin-section, QA1 rod ends, Rotor Clip, Diamond Chain, OPW swivel), trivial volume, none a Jones Bearing/American Pulley/ConveyMor product, 2-day turnaround. Matches HQ watchlist NO (a939812).",
+   "at": "2026-11-16T13:30:00Z"
   }
  },
  "watched": {
@@ -3092,6 +3098,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-16T12:30:00Z",
+ "last_hourly_check": "2026-11-16T13:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
