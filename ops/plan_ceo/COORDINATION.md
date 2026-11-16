@@ -1,4 +1,9 @@
-# 2026-11-16 ~08:55 MT: INSURANCE IS PAID; HARD FLOOR = AT LEAST ONE BID SUBMITTED EVERY WEEK (both operators; supersedes "Luke silent since 11/09")
+# 2026-11-16 ~08:55 MT (corrected ~09:20 MT): INSURANCE SIGNED, APPROVAL PENDING; HARD FLOOR = AT LEAST ONE BID SUBMITTED EVERY WEEK (both operators; supersedes "Luke silent since 11/09")
+CORRECTION, Luke 11/16 ~09:20 MT: "we should get an email to my inbox with the certificate shortly, it has not been approved yet, but has been
+signed and sent off." So: application signed and submitted, carrier approval PENDING, nothing is bound or in force. Never write "insured", "in
+force" or any carrier/limit anywhere until the carrier's certificate email arrives. Worker: flag the certificate email the hour it lands (any
+inbox), save the PDF to private/insurance/, log carrier/limits/endorsements/effective date FROM THE DOCUMENT in ops/insurance/, and re-run the
+coverage-by-bid check (COS janitorial, PSD E&O, Widefield). The weekly floor below stands: bids where proof is due at award keep moving now.
 Luke wrote 11/13 ~15:55 MT (Mac session): "i finally got my fucking insurace approved and paid for, now we really need to fucking hit the
 ground running and be bidding on atleast 1 project per week, this is a huge expense at this fucking point". 11/16 08:45 MT: "we are way fricken behind".
 Luke is NOT silent; plans must stop saying so.
