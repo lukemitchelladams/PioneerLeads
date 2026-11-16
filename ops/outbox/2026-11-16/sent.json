@@ -200,5 +200,13 @@
       "klay.tolleson@state.co.us"
     ],
     "sent_utc": "2026-11-16T21:4xZ"
+  },
+  "firsttouch-lafayette-mri-2026-11-16": {
+    "id": "1a1e669896c1714d",
+    "companies": [
+      "Maintenance Resources Inc (Denver)"
+    ],
+    "bcc_count": 1,
+    "sent_utc": "2026-11-16T22:1xZ"
   }
 }
