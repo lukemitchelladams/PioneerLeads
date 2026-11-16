@@ -831,6 +831,18 @@
    "source": "samgov",
    "id": "e1e93a622eb04a29a950c73108dfd78f",
    "match": "e1e93a622eb04a29a950c73108dfd78f|W911S227U0132"
+  },
+  {
+   "name": "DLA FY27-3A Foreign Bearings Waiver Package Sources Sought (12 NSNs FSC 3110, domestic sources, due 11/27 17:00 EST; INFO ONLY: answering needs Jones Bearing product facts; family off limits per 11/12 rule; logged for Luke, no outreach)",
+   "source": "samgov",
+   "id": "c277011495224169bc4765162f8f9c16",
+   "match": "c277011495224169bc4765162f8f9c16|FY27-3A Foreign Bearings"
+  },
+  {
+   "name": "BidNet 444234438795 City Janitorial Services, Colorado (EVALUATE: paid-tier notice hides the agency; published 11/16, closes 12/04; worker to identify city + pre-bid via GovTribe)",
+   "source": "bidnet",
+   "id": "444234438795",
+   "match": "444234438795|City Janitorial Services"
   }
  ]
 }
