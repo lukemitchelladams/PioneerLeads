@@ -225,21 +225,6 @@
   "url": "https://sam.gov/workspace/contract/opp/5b9e3b6504d8415fa62c7f45f7fa15d0/view"
  },
  {
-  "key": "samgov:a73cf5d6b8ae4068b6c5952060e9f3ab",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
-  "title": "15--CONVEYOR,ROLLER ASSEMB",
-  "sol": "SPE4A727T3562",
-  "closing": "2026-11-17",
-  "posted": "2026-11-09",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/a73cf5d6b8ae4068b6c5952060e9f3ab/view"
- },
- {
   "key": "samgov:acef0bc5a3c4410991b7ce08b29b6667",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
@@ -345,21 +330,6 @@
   "url": "https://sam.gov/workspace/contract/opp/177c2aa536d34c5ea6d40aa7b8db7d34/view"
  },
  {
-  "key": "samgov:23506cd1254b4ca7be61626b0d50d8be",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "10--CONVEYOR ELEMENT,AMMUN",
-  "sol": "SPE7L127Q0184",
-  "closing": "2026-11-18",
-  "posted": "2026-11-09",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/23506cd1254b4ca7be61626b0d50d8be/view"
- },
- {
   "key": "samgov:26588cc4421447199018d9bbd6789cf4",
   "source": "samgov",
   "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
@@ -403,21 +373,6 @@
   "watched": false,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/a0425fc603664d05a403cb9d9703551e/view"
- },
- {
-  "key": "samgov:a179d360ed5045138a059666ba34835a",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / 0906 AQ CO     CONTRACTING BAT",
-  "title": "Conveyor Belt Maintenance and Repair Service",
-  "sol": "W90VN827QA001",
-  "closing": "2026-11-18",
-  "posted": "2026-11-04",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/a179d360ed5045138a059666ba34835a/view"
  },
  {
   "key": "bidnet:0000437039",
@@ -508,21 +463,6 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view"
- },
- {
-  "key": "samgov:04b0549983ea4b7687b6280f65b9dc1e",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
-  "title": "15--CONVEYOR,ROLLER ASSEMB",
-  "sol": "SPE4A727T3860",
-  "closing": "2026-11-19",
-  "posted": "2026-11-11",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/04b0549983ea4b7687b6280f65b9dc1e/view"
  },
  {
   "key": "samgov:1d1b8d72c87844289d3efb4990073ded",
@@ -853,21 +793,6 @@
   "watched": true,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/7c57681a0efb4d8f916d6f9e0c3ee3c9/view"
- },
- {
-  "key": "samgov:88b6b56f969040fb97ad5792a57f67b8",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
-  "title": "15--CRANK,IDLER CAM,ELEVAT",
-  "sol": "SPE4A527T3200",
-  "closing": "2026-11-23",
-  "posted": "2026-11-15",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": true,
-  "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/88b6b56f969040fb97ad5792a57f67b8/view"
  },
  {
   "key": "samgov:8ee23fef72864e098371e6c454010831",
