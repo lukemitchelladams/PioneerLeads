@@ -2775,3 +2775,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Subagent (worktree) building scripts/outbox_status.py + test; cherry-pick between scans when it reports.
 - 05:5xZ: scripts/outbox_status.py shipped (cherry-pick 5949357 from the worktree agent): read-only ledger of a manifest (sent id, recipients, bcc_count) with `--inbox` reply check (domain-only senders, never sends); tests/test_outbox_status.py 51 passed; conftest now skips every script-shaped test for pytest. Use at the Monday noon gates: `python3 scripts/outbox_status.py ops/outbox/2026-11-16/outbox-chases.json --inbox --days 7`.
 - 06:21Z worker tick (Sun 23:21 MT): inbox quiet (2h 0, Luke/bounce 1d 0); HQ 05:36Z scan: samgov 95 (+1 new, DLA 15-- idler cam crank NSN 1560-00-910-9140 → ledger NO, matches HQ watchlist NO), open matches 150; no PFA docs, 7.1 HOLD. Dashboard: bids v367 (0162d5f75fcaba7fb6e6e3ac43f6785a), events v370 (79489059c614c859cad150e01ede019f), sources v316 (6de16e82f3e0d6ec46fba3ae410d0082), portal_feed v183 (182b21bc9d9404a08d58532674c670c9); old blobs deleted; doc_gaps 13 unchanged (blob 1807689f5ee024bcd1c29a490b9679ed).
+
+### 2026-11-16 06:41Z hourly (23:35 MT Sun) scan, HQ
+- Launched 06:36:08Z via launch_scan.sh; saved 01:38Z session reused (no code, no robot check). EXIT 0, scan commit 56d40af.
+- Counts: bidnet 631/82 | samgov 95/95 (+37 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 795/181. New 0, docs 0. Inbox last hour: 0.
+- Worktree agent building the samgov PSC-group guard for keyword-only matches (1560 aircraft-part false hit); cherry-pick between scans when it reports with "0 failed".
