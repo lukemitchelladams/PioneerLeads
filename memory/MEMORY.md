@@ -2890,3 +2890,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - **Lafayette:** Clean Conscience will bid direct and asked off our list (21:19Z, honored). Thu 11/19 10:00 pre-proposal is truly MANDATORY → Boulder County sub hunt running; attendee confirmed by Wed 17:00 or NO-BID.
 - Canon City janitorial: Alfonso's comcast address bounced (21:06Z); Cornerstone delivered.
 - 21:5xZ: Lafayette replacement-attendee first touch to 5 Boulder-area firms (msg 1a1e64a105c6774d); gate Wed 11/18 17:00 named attendee or NO-BID; pipeline → GO-IF.
+
+### 2026-11-16 21:44Z hourly (14:35 MT) scan, HQ
+- Scan 21:36:58Z: session reused, EXIT 3 (coloradovss BLIND, down since 20:35Z, 2 runs, list carried), commit caddaa4. Counts bidnet 637/84 | samgov 93/93 | coloradovss 66/3 carried | bonfire 2/1 | dibbs carried | total 798/181. New 0, docs 0. **Documents skipped (decided NO): 13**: the new download skip works on its first live run.
+- Time-stamp correction: the Klay reply and the Lafayette first touch logged as "21:4xZ"/"21:5xZ" actually went ~21:2x-21:3xZ (estimated stamps; ids in sent.json are authoritative).
+- Tue 08:30 MT send file staged ($S/tue/outbox-tue.json): HOODZ pricing + references chase; CPW "no walk needed" to Sangre de Cristo + J.R.B. (bcc) and Timme (thread).
