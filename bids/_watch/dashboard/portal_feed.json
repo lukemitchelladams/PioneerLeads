@@ -165,21 +165,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:0000442237",
-  "source": "bidnet",
-  "agency": "City of Aurora",
-  "title": "POST Certified On-Call Security Officer Services",
-  "sol": "R-2531",
-  "closing": "2026-11-17",
-  "posted": "2026-11-03",
-  "prebid_date": "2026-11-05",
-  "prebid_mandatory": "Optional",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/POST-Certified-On-Call-Security-Officer-Services/0000442237?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:0000443158",
   "source": "bidnet",
   "agency": "Fort Lewis College Project Type NFS - Notice of Final Settlements (Formal) Project Number 27204",
@@ -928,6 +913,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000442237",
+  "source": "bidnet",
+  "agency": "City of Aurora",
+  "title": "POST Certified On-Call Security Officer Services",
+  "sol": "R-2531",
+  "closing": "2026-11-24",
+  "posted": "2026-11-03",
+  "prebid_date": "2026-11-05",
+  "prebid_mandatory": "Optional",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/POST-Certified-On-Call-Security-Officer-Services/0000442237?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000442370",

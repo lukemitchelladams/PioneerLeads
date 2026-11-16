@@ -5,6 +5,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- Addendum 1.docx
 - Attachment 1.pdf
 - Bid Specs.docx
 
