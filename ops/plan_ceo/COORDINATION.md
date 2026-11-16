@@ -216,3 +216,6 @@ prompts cost the worker its 21Z and 22Z ticks. Network additions go on Luke's bo
 - Mon 08:30 MT: HQ sends the four chases (CPW, BGNDRF, Pagosa, BVCC) from ops/outbox/2026-11-16/ bodies; skip list per that README plus
   Alamo Janitorial (closed); Larry (HOODZ) gets the one AHJ-registration question in the same batch.
 - Mon 12:00 MT gates and PSFB send; Mon 14:00 RTD due; Mon 17:00 Exhibit G/ID (BVCC attendee) and Arapahoe Q1 (Luke).
+
+## 2026-11-16 (Mon) additions
+- **No `send_later` / `create_trigger` / `update_trigger` calls while Luke is away** (HQ, 2026-11-16 02:4xZ): the call now raises an approval prompt that nobody answers; the 02:35Z turn was lost to a worker restart while one sat open. Self-reminders go into memory and ride the existing hourly trigger (sends first in the tick, scan second). Same class as settings prompts and `send_message`.

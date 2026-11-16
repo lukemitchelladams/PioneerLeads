@@ -2754,3 +2754,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Inbox quiet 2 h; no sub replies, nothing from Luke. HQ 02:37Z scan clean (bidnet 631/82 logged in, samgov 94, coloradovss 67/3); 0 new.
 - Dashboard (03:30Z): bids v364 (0e735440184c5f34c4142b169cec32e9), events v367 (36ed7d73992d6edc653b6481fd74eeaa), sources v313
   (9a7229bf71cdc3cf2d176966e5251b82); portal_feed v182 (8f6598b9851734169685299361ba31fc), doc_gaps v13 (1807689f5ee024bcd1c29a490b9679ed).
+
+### 2026-11-16 02:37Z + 03:41Z hourly (19:35 + 20:35 MT Sun) scans, HQ
+- 02:35Z tick: scan launched 02:37:29Z, logged in (attempt 1), EXIT 0, commit 33e861d; counts unchanged (794/180), 0 new, 0 docs. HQ's post-exit note was lost: the worker process restarted mid-turn while a `send_later` call sat on an approval prompt.
+- **LESSON (hard): `send_later` / `create_trigger` now raise an approval prompt → never call them while Luke is away** (same class as settings prompts and `send_message`). Self-scheduling goes through the existing hourly trigger: sends happen FIRST in the 15:35Z (08:35 MT) tick, then the scan.
+- 03:35Z tick: launched 03:36:08Z, saved 01:38Z session reused, EXIT 0, commit aaca34d. Counts: bidnet 631/82 | samgov 94/94 | coloradovss 67/3 | bonfire 2/1 | dibbs carried | total 794/180. New 0, docs 0. Inbox last 2 h: 0.
+- Monday send prep done: Billings Electric's mailbox recovered from our own 11/13 sent headers (read-only Gmail) into the scratchpad only; send-time copy `$S/mon/outbox-chases.SEND.json` (8 entries, CPW bcc 12) validates clean. At 15:35Z: pull, drop any firm that replied, gate check, `send_outbox.py` on the SEND copy, merge sent.json (ids + bcc_count), log, then launch the scan.
