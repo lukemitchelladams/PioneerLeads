@@ -1,27 +1,25 @@
 {
-  "checked_at": "2026-11-16T00:36:05+00:00",
+  "checked_at": "2026-11-16T01:37:45+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
+      "complete": true,
       "count": 631,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "down_runs": 1,
-      "down_since": "2026-11-16T00:36:05+00:00",
-      "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
-      ],
-      "last_success": "2026-11-15T23:35:59+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-11-16T01:37:24+00:00",
+      "errors": [],
+      "last_success": "2026-11-16T01:37:45+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
       "matches": 82,
       "reach_note": "HTTP 200",
-      "reachable": true
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 191,
+        "statewide BUYER": 441
+      }
     },
     "bonfire": {
       "count": 2,
@@ -32,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-16T00:36:05+00:00",
+      "last_success": "2026-11-16T01:37:45+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -44,7 +42,7 @@
       "count": 67,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-16T00:36:05+00:00",
+      "last_success": "2026-11-16T01:37:45+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -78,13 +76,13 @@
     },
     "samgov": {
       "bulk_added": 36,
-      "bulk_note": "bulk file cached 2026-11-15T05:41:14+00:00; 94 matching of 14869 open notices",
+      "bulk_note": "bulk file cached 2026-11-15T05:41:14+00:00; 94 matching (parsed earlier)",
       "count": 94,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-16T00:36:05+00:00",
+      "last_success": "2026-11-16T01:37:45+00:00",
       "logged_in": true,
       "login_note": "API key; +36 from the nightly bulk file",
       "matches": 94,
