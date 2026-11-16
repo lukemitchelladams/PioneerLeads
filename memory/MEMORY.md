@@ -2849,3 +2849,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - PSD floor bid (due Fri 11/20 14:00): HOODZ pricing-sheet answers (asked 11/12, due today) not in yet; HOODZ already emailed today, chase Tue 08:30 MT. Cost basis in hand: $695 per school (11/04).
 - **LESSON: GovTribe MCP calls raise an approval prompt here; two attempts were lost to worker restarts. Do not call MCP tools that prompt; use the scanner, SAM API and the worker's GovTribe ledger instead.**
 - 16:36Z scan: session reused, 795/177, 0 new, 1 doc (Weld jail RTU Addendum 1, a dead bid) auto-filed.
+
+### 2026-11-16 17:43Z hourly (10:35 MT) scan + overtime, HQ
+- Scan 17:37Z: session reused, EXIT 0, commit 682b2b7. Counts bidnet 637/82 | samgov 91/91 | coloradovss 66/3 | bonfire 2/1 | dibbs carried | total 796/177. New 0, docs 0.
+- COS janitorial R26-080JW (due Mon 11/23 14:30, T&M, no walk, insurance at award): sub line reopened: 6 first touches (CoPro Clean, FBG, Summit Facility Solutions, Jantize, MAXPRO, JD's) + second touch Crown/CRM/Springs Cleaning, rates by Thu 11/19 12:00. Next week's floor candidate.
+- Pagosa corrected to bid-from-documents (Luke's 11/16 rule 3; COORDINATION item 2): sub price by Wed noon replaces ours, else the documents-based quote goes Thu 10:00 after Luke signs. Agent assembling the signable package in private/.
+- Tue 08:30 MT staged: HOODZ pricing chase (ops/outbox/2026-11-17/hoodz-pricing-chase.txt).

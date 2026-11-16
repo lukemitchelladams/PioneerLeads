@@ -120,5 +120,28 @@
       "savanna_manning@ios.doi.gov"
     ],
     "sent_utc": "2026-11-16T16:38Z"
+  },
+  "firsttouch-cos-2026-11-16": {
+    "id": "1a1e5743783df693",
+    "companies": [
+      "CoPro Clean (Colorado Springs; states government facilities)",
+      "FBG Facility Services (Colorado Springs)",
+      "Summit Facility Solutions (serves Colorado Springs; NJ HQ)",
+      "Jantize (Colorado Springs)",
+      "MAXPRO Cleaning Services (Pueblo)",
+      "JD's Janitorial Service LLC (Pueblo)"
+    ],
+    "bcc_count": 6,
+    "sent_utc": "2026-11-16T17:4xZ"
+  },
+  "secondtouch-cos-2026-11-16": {
+    "id": "1a1e574408b8156d",
+    "companies": [
+      "Crown Inc. Commercial Cleaning",
+      "CRM Cleaning",
+      "Springs Cleaning"
+    ],
+    "bcc_count": 3,
+    "sent_utc": "2026-11-16T17:4xZ"
   }
 }
