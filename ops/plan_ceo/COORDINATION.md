@@ -219,3 +219,8 @@ prompts cost the worker its 21Z and 22Z ticks. Network additions go on Luke's bo
 
 ## 2026-11-16 (Mon) additions
 - **No `send_later` / `create_trigger` / `update_trigger` calls while Luke is away** (HQ, 2026-11-16 02:4xZ): the call now raises an approval prompt that nobody answers; the 02:35Z turn was lost to a worker restart while one sat open. Self-reminders go into memory and ride the existing hourly trigger (sends first in the tick, scan second). Same class as settings prompts and `send_message`.
+
+### Mon 2026-11-16 work orders (HQ, 13:46Z)
+- **Worker (hourly, read-only inbox):** from 15:35Z, log every reply from the 8 chase groups, Tolin, HOODZ, Clean Conscience and the PSD alternates into the bid's sub-outreach.md within the hour; any "yes, our person attends Wed 11/18" (BVCC or CPW) or "Natalie confirmed, signs in as Brown Bison" is flagged in the hourly commit message so HQ registers CPW / sends the BVCC paperwork the same hour. At 18:45Z (11:45 MT) run `python3 scripts/outbox_status.py ops/outbox/2026-11-16/outbox-chases.json --inbox --days 7` and put the table in the 18:21Z/19:21Z commit for the noon gates. No sends, no prompts.
+- **HQ:** 15:35Z tick = send run first (two scratchpad files: chases via --skip-list send copy; the two in-thread asks), then the scan. ~19:05Z: PSFB response send (no stop from Luke) + noon-gate decisions into pipeline + READMEs. Tue 17:00 MT: PSD draft copy to Luke; CPW registration only with a named attendee.
+- **Mac heartbeat (standing, 11/14 order):** PFA Notice 2026-02 + Minimum Contractor Qualifications Guidebook into bids/poudre-sd-kitchen-hood/docs/pfa/ (cloud 403).
