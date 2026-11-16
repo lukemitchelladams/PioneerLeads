@@ -1588,7 +1588,7 @@
    "due": "2026-11-18T09:00:00-07:00",
    "due_source": "Memo p.1: 'no later than 18 November 2026 @ 09:00 A.M. Mountain Time' by email to William Bailey and Stephen Carr (SAM.gov shows 2027-11-18; memo governs)",
    "portal": "SAM.gov; response by email only",
-   "decision": "GO (sources-sought response, no price)",
+   "decision": "SUBMITTED (sources-sought response sent 2026-11-16 19:05Z, msg 1a1e5c0590457e7e; no price; watch SAM.gov for the solicitation)",
    "decision_note": "Market research only (FAR Part 10); small-business set-aside, NAICS 238210. Scope: ~100 ft of feeders from the Room 126 PDU/ATS to panel RP15, 2x20A + 1x30A circuits, single-outage cutover, commissioning test; 105-day estimate (PWS 2.2). Draft response written 2026-11-10 (SOURCES-SOUGHT-RESPONSE-DRAFT.md); copy to Luke for approval; HQ sends Mon 2026-11-16 unless Luke overrules by Mon 12:00 MT. Electrical sub (Colorado Springs) needed only if a solicitation follows.",
    "prebid": null,
    "prebid_mandatory": false,

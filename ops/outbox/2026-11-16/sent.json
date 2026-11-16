@@ -143,5 +143,18 @@
     ],
     "bcc_count": 3,
     "sent_utc": "2026-11-16T17:4xZ"
+  },
+  "psfb-sources-sought-response-2026-11-16": {
+    "id": "1a1e5c0590457e7e",
+    "threadId": "1a1e5c0590457e7e",
+    "to": [
+      "william.bailey.56@spaceforce.mil",
+      "stephen.carr.12@spaceforce.mil"
+    ],
+    "bcc_count": 0,
+    "attachments": [
+      "Brown-Bison-Sources-Sought-Response-FA251727SS00.pdf"
+    ],
+    "asks": 0
   }
 }

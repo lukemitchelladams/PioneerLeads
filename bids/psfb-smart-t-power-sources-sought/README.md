@@ -35,7 +35,7 @@ PWS "Bridge Redundant Power from Generator Supply to Panel RP15 in Building 1470
 Small, defined electrical job 1.5 h from Broomfield, small-business set-aside, federal past-performance builder. Brown Bison primes; a Colorado-licensed electrical contractor performs as our sub. No price is asked for now; sub pricing starts if a solicitation follows.
 
 ## Open items
-- [ ] Luke: approve the response (copy emailed by HQ 2026-11-11, msg 1a1cb4611365ef40; no reply as of 11/15). Overrule window Mon 2026-11-16 12:00 MT; HQ sends it that afternoon otherwise. Send staged 2026-11-15: ops/outbox/2026-11-16/outbox-psfb.json (gate PASS).
+- [x] Luke: approve the response (copy emailed by HQ 2026-11-11, msg 1a1cb4611365ef40; no stop by the Mon 11/16 12:00 MT window). **SENT 2026-11-16 19:05Z (12:05 MT) by HQ, msg 1a1e5c0590457e7e**, to both 21 CONS/PKA addresses named in the memo, response PDF attached, gate PASS. Overrule window Mon 2026-11-16 12:00 MT; HQ sends it that afternoon otherwise. Send staged 2026-11-15: ops/outbox/2026-11-16/outbox-psfb.json (gate PASS).
 - [ ] Luke: confirm the socio-economic line (small business only, no WOSB/SDVOSB/8(a)/HUBZone) before it goes out.
 - [ ] HQ: identify 3-5 Colorado Springs electrical contractors with public emails for sub pricing if a solicitation posts (sub-outreach.md not needed until then).
 - [ ] Watch SAM.gov for an amendment answering questions after 11/18 (watchlist entry added).
