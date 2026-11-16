@@ -2943,6 +2943,18 @@
    "verdict": "NO",
    "why": "Flooring, not our trades. Matches HQ NO (4d01dd2).",
    "at": "2026-11-16T20:30:00Z"
+  },
+  "bidnet:0000443738": {
+   "name": "Metro Water Recovery Transmission Building HVAC Replacement, closes 2026-12-18, pre-bid 2026-12-01 optional",
+   "verdict": "EVALUATE",
+   "why": "Titles read as a consultant/PSA RFP (design), not construction; lean NO until the RFP is read (next logged-in scan downloads). Matches HQ 3ef8d1c.",
+   "at": "2026-11-16T23:30:00Z"
+  },
+  "samgov:f2c0f3bf3abb42579074f7a035f8b624": {
+   "name": "USFS Pagosa Ranger District janitorial 1240LP27Q0008 (Amendment 0001 record), due 2026-11-19",
+   "verdict": "GO",
+   "why": "Already GO as usfs-pagosa-janitorial-1240LP27Q0008 (BACKUP 1 to the weekly floor); amendment record.",
+   "at": "2026-11-16T23:30:00Z"
   }
  },
  "watched": {
@@ -3128,6 +3140,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-16T22:30:00Z",
+ "last_hourly_check": "2026-11-16T23:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

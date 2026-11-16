@@ -624,3 +624,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1e62efa819243b bounce: Canon City janitorial first touch, Alfonso's comcast mailbox not found.
   No insurance certificate (1d). Luke/CRM 0.
 - 2026-11-16 22:21Z: 1 new inbound: 1a1e64a1e3e47e6e bounce, Mile High Pro Cleaning info@ (Lafayette replacement-attendee ask, 'remote server is misconfigured'), already logged by HQ (c6c319b). No sub replies; no insurance certificate; Luke/CRM 0.
+- 2026-11-16 23:21Z: 2 new inbound: 1a1e691bb0a12714 BidNet addendum for COS R26-082JW On-Call Snow Removal (ours REVIVE, due 11/23 14:30; watched with folder, scanner files it) → pipeline note; 1a1e67ecb3e94fac Klay Tolleson (CPW) ack, "will look forward to hearing from you regarding attendance by Tuesday" (HQ has it). No bounces; no insurance certificate; Luke/CRM 0.
