@@ -75,7 +75,7 @@
   "agency": "City of Lakewood",
   "sol": "RFP 6706 (BidNet 0000442961)",
   "due": "2026-12-01T10:00:00-07:00",
-  "decision": "EVALUATE",
+  "decision": "EVALUATE (default NO-BID: City is \"payer of last resort\" on police-initiated board-ups and the RFP states no dispatch count or annual spend; revives only if the 11/18 addendum states real volume and City payment; due 12/01 10:00 MT)",
   "item": "Task order form referenced in Sample Agreement II.B.1 (not posted)",
   "where": "BidNet Q&A before 2026-11-13 17:00 MT, or with the award"
  },

@@ -2720,3 +2720,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Counts: bidnet 631/82 | samgov 94/94 (+36 bulk) | coloradovss 67/3 | bonfire 2/1 | dibbs 307/189 carried | total 794/180. New matches 0, docs 0. Inbox last hour: 0.
 - The 00:35Z launch will not wait (cool-down is >900 s out); the scanner handles the cool-down itself. Expect list-only or skipped BidNet detail at 00:35Z; fresh login attempts resume after 01:37Z.
 - Lakewood RFP 6706 pipeline decision now spells out the README default (NO-BID: payer of last resort, no stated volume; closes after the 11/18 addendum).
+
+### 2026-11-16 00:21Z hourly (17:21 MT Sun), worker
+- Inbox quiet 2 h; no Durango rate before the La Plata 00:00Z window (HQ finalizes NO-BID 00:35Z). No sub replies, nothing from Luke.
+- HQ 23:36Z scan EXIT 0 but BidNet robot check on a detail page (#13 since Fri): detail pass cooling down to 01:37Z; list counts carried
+  (bidnet 631/82, samgov 94, coloradovss 67/3). Lakewood RFP 6706 default NO-BID spelled out (68c8ef3).
+- Dashboard (00:30Z): bids v361 (ade8e5a7d4133d2da4afcf81d9bf77ca), events v364 (597fc43f0e6b6c803e9e8c0b21c54583), portal_feed v182
+  (8f6598b9851734169685299361ba31fc), sources v310 (2f6f11165ecbe290c5a3f68d9ce56bfb), doc_gaps v13 (1807689f5ee024bcd1c29a490b9679ed).
