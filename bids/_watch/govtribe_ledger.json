@@ -2913,6 +2913,18 @@
    "verdict": "NO",
    "why": "Rule 9: brand-name-or-equal catalog parts (Kaydon thin-section, QA1 rod ends, Rotor Clip, Diamond Chain, OPW swivel), trivial volume, none a Jones Bearing/American Pulley/ConveyMor product, 2-day turnaround. Matches HQ watchlist NO (a939812).",
    "at": "2026-11-16T13:30:00Z"
+  },
+  "samgov:c277011495224169bc4765162f8f9c16": {
+   "name": "DLA FY27-3A Foreign Bearings Waiver Package Sources Sought (12 NSNs FSC 3110), due 11/27",
+   "verdict": "NO (info only)",
+   "why": "Sources sought for domestic bearing sources; answering needs Jones Bearing's own product facts; family off limits; HQ logged for Luke (399282a).",
+   "at": "2026-11-16T19:30:00Z"
+  },
+  "bidnet:444234438795": {
+   "name": "BidNet City Janitorial Services, Colorado, closes 12/04 (agency hidden)",
+   "verdict": "EVALUATE",
+   "why": "Agency not identifiable from cloud: GovTribe state/local UPGRADE_REQUIRED, BidNet blocked, web search no match. See ops/research/2026-11-16-bidnet-444234438795-city-janitorial.md; HQ to open the notice in its logged-in session.",
+   "at": "2026-11-16T19:30:00Z"
   }
  },
  "watched": {
@@ -3098,6 +3110,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-16T18:30:00Z",
+ "last_hourly_check": "2026-11-16T19:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
