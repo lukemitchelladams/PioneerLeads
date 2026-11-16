@@ -615,3 +615,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1e51ca4a8cd894 Govly promo → noise.
   Luke/bounce (1d): 0.
 - 2026-11-16 17:21Z: 2 bounces on HQ's 16:38Z sends, logged in sub-outreach.md: Aims window cleaning (Summit WC hello@ blocked, 550 5.4.1) and CPW electrical round 3 (Lopez Electric domain not found). HQ replied to New Mexico Premier (BGNDRF) 16:38Z. No sub replies since 15:57Z. Insurance certificate search (1d): none. Luke/CRM (1d): 0. REPORT changes: POST Certified On-Call Security Officer (not our trade) closing moved 11/17 -> 11/24 + Addendum One; Weld Jail RTU Addendum 1 (ours DEAD).
+- 2026-11-16 18:21Z: 0 new inbound since 16:39Z; 0 Luke/bounce new; no insurance certificate.
