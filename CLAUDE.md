@@ -1,5 +1,7 @@
 # CLAUDE.md — Brown Bison
 
+- **HARD FLOOR (Luke 11/13): at least one bid SUBMITTED every week.** Insurance is paid (policy details not yet on file). Every Monday plan names the floor bid + 2 backups; a zero week is a logged failure. See ops/plan_ceo/COORDINATION.md 2026-11-16.
+
 ## What this repo is
 Brown Bison's government-contracting workspace. Bids, proposals, vendor Q&A, and project memory.
 It also hunts bids for Luke's dad's industrial bearings/conveyor/paper-mill business (profile
@@ -115,7 +117,7 @@ dashboard (https://claude.ai/artifact/XuXDuPxLzdD9ALxsyoWES3); the update links 
     3. WHERE IT STANDS: bid number, due date, their price in hand or not
     4. ANSWERS YOU NEED: the facts and numbers Luke should have ready
     5. GET FROM THEM: the one thing to get on the call
-    6. DON'T COMMIT: no award promise, no start before the insurance bind, no spending before 11/13, plus anything
+    6. DON'T COMMIT: no award promise, no start before the carrier's certificate is on file, plus anything
        bid-specific
     7. IF YOU SKIP IT: what we do by email instead, and the deadline
   Luke decides whether and when to call. Also put it on the board under "4. DECIDE". Plans never route work through Luke

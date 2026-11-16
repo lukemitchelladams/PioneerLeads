@@ -1,3 +1,21 @@
+# 2026-11-16 ~08:55 MT: INSURANCE IS PAID; HARD FLOOR = AT LEAST ONE BID SUBMITTED EVERY WEEK (both operators; supersedes "Luke silent since 11/09")
+Luke wrote 11/13 ~15:55 MT (Mac session): "i finally got my fucking insurace approved and paid for, now we really need to fucking hit the
+ground running and be bidding on atleast 1 project per week, this is a huge expense at this fucking point". 11/16 08:45 MT: "we are way fricken behind".
+Luke is NOT silent; plans must stop saying so.
+1. FLOOR: at least one bid SUBMITTED (not drafted) per Mon-Sun week. A week that ends at zero is a failure logged in the plan's "what failed" section.
+   Every Monday plan names the FLOOR bid plus two BACKUPS, each with due date, price status, and the exact Luke step (sign / portal submit).
+2. Week of 11/16: FLOOR = PSD IFB 27-701-002 hoods (Fri 11/20 14:00; signable copy to Luke Tue 17:00). BACKUP 1 = Pagosa USFS (Thu 11/19 10:00,
+   priced from documents; today's noon gate must not kill it for lack of a sub price if a documents-based price is defensible).
+   BACKUP 2 = BVCC (Fri 11/20, needs Wed walk attendee). If two fail, pull the next-due GO item forward (Widefield, Aims, COS janitorial) and say so.
+3. Bias flips from NO-BID to BID: before any NO-BID default fires, ask "can we submit a compliant bid from documents + our own estimate?" If yes, bid.
+   Estimates may be our own; never attribute a number to a sub who did not give it.
+4. Insurance-ground NO-BIDs are reopened, not assumed: COS janitorial R26-080JW (crime $1M, master key, care-custody-control), PSD E&O, Widefield
+   $2M CGL + cyber. Policy details are NOT on record (no binder/COI in Gmail as of 11/16 08:50 MT). Until the carrier's own declarations or
+   certificate are on file, never state carrier/limits in a bid; the board asks Luke once for the coverage list or a forwarded binder.
+5. Only the carrier/broker's own certificate is used. Never the old Hiscox certificates; never a drafted COI.
+6. Trucordia no-contact rule is UNCHANGED until Luke lifts it in his own words. Certificate requests go through Luke on the board.
+7. Breadth: keep >=3 live GO bids due inside the next 21 days at all times; when below, widen scans and open 2nd/3rd sub lines that day.
+
 # 2026-11-13 ~14:25 MT: MAC MAY GO DARK TODAY; CLOUD HQ COVERS TWO ITEMS (fallback order)
 
 The Mac is on battery (18% at 14:19 MT) and will likely shut down before 17:00 MT. If ops/ramp shows no Mac heartbeat stamp after 16:00 MT, cloud HQ does both of these, once:
