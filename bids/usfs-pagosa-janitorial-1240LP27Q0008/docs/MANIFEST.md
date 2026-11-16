@@ -6,6 +6,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 ## Files in docs/
 
 - C04 1240LP27Q0008.pdf
+- C04a Attachment 1 Janitorial PWS r1.pdf
 - C04a Attachment 1 Janitorial PWS.pdf
 - C04b Attachment 2  Schedule of Items.xlsx
 - C04c Attachment 3  Facility Layout.pdf
@@ -13,6 +14,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - C04e Attachment 5 QASP.pdf
 - C04f Attachment 6 List of Sustainable Products.pdf
 - C04g Attachment 7 Experience Questionnaire.pdf
+- C05 A0001 1240LP27Q0008.pdf
 
 ## Referenced in the solicitation
 

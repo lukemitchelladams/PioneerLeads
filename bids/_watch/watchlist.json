@@ -861,6 +861,12 @@
    "source": "bidnet",
    "id": "0000443673",
    "match": "0000443673|Flooring Replacement and Installation"
+  },
+  {
+   "name": "Metro Water Recovery Transmission Building HVAC Replacement (EVALUATE-lean-NO: document titles 'PAR 1502 Consultant RFP' and 'Professional Services Agreement - DBB' point to engineering design services, not construction; RFP not yet read, public link 404; closes 12/18. If confirmed consultant work: NO, and watch for the construction bid that follows)",
+   "source": "bidnet",
+   "id": "0000443738",
+   "match": "0000443738|Transmission Building HVAC Replacement"
   }
  ]
 }
