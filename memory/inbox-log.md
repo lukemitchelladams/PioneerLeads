@@ -623,3 +623,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1e63b2a0773b66 Lafayette: Clean Conscience OUT ("I'm going to bid directly. Please remove me from your list"); Thu 11/19 mandatory pre-proposal now has no attendee.
   - 1a1e62efa819243b bounce: Canon City janitorial first touch, Alfonso's comcast mailbox not found.
   No insurance certificate (1d). Luke/CRM 0.
+- 2026-11-16 22:21Z: 1 new inbound: 1a1e64a1e3e47e6e bounce, Mile High Pro Cleaning info@ (Lafayette replacement-attendee ask, 'remote server is misconfigured'), already logged by HQ (c6c319b). No sub replies; no insurance certificate; Luke/CRM 0.
