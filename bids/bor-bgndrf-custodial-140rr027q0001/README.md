@@ -24,3 +24,14 @@ past-performance template, SF-1449/SF-30 prefill), SUBMISSION.md (email to the C
 Open items from the build: sub past performance only counts as "Demonstrated Experience" (Sol p.23; no CPARS = neutral); FAR 52.212-3/-5
 cited as attached in block 27a but not in the 30 pages; printed base year starts 2026-11-24, before the due date; WBR 1452.242-80 says the
 contractor's project manager attends a post-award conference (draft assigns the sub's Site Supervisor; nothing under Luke's name).
+
+## 2026-11-17 08:5xZ (HQ): New Mexico gross receipts tax (open item closed; figures in private/)
+- GRT applies to Brown Bison's receipts from Reclamation: services to a government body get no deduction (3.2.212.9 NMAC: "This is a sale of
+  services ... and not a sale of tangible personal property. The deduction cannot be allowed."; TRD D&O 21-13, Holloman AFB: "This deduction
+  does not extend to sales of services to a government agency."). The Alamogordo rate on TRD's schedule effective 2026-07-01 to 2027-06-30 is
+  now in the private price model (re-run; Attachment 2 refilled in private/). Still to confirm: 500 La Velle Rd is inside city limits (TRD
+  rate map), since unincorporated Otero County has a different rate.
+- The sub prices WITHOUT GRT: Brown Bison gives the sub a Type 5 NTTC ("Purchase of services for resale"; 3.2.206.8.A NMAC, NMSA 7-9-48),
+  executed online on TAP only.
+- **Luke (before the first invoice, not before the quote): register Brown Bison Holdings LLC with NM Taxation and Revenue on TAP
+  (tap.state.nm.us, Form ACD-31015; asks for owner SSN or ITIN).** No primary source found for a NM state license for janitorial work.
