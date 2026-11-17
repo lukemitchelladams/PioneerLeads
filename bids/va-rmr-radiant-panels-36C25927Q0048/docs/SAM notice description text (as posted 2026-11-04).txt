@@ -1,0 +1,995 @@
+Request for Quote (RFQ) #: 36C25927Q0048 
+
+ Radiant Heating Panel Replacement RMR VAMC 
+
+ This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in RFO part 12, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotes are being requested and a written solicitation will not be issued. The Government reserves the right to make no award from this solicitation.
+
+ * The deadline for all questions is 4:00pm ET, November 13, 2026. 
+
+ All questions must be submitted in writing no later than the question cut-off date marked above. All questions will be answered officially through an amendment to the solicitation.
+
+ ** Quotes are to be provided to Christopher.Hollingsworth2@va.gov no later than 14:00pm ET, November 20, 2026. 
+
+ Quotes shall not be hand carried. Faxed quotes shall not be accepted. Emailed quotes are the only method of submitted quotes (4MB email limit). The Government reserves the right to make award solely on initial Quotes received. Offerors bear the burden of ensuring that all portions of the offer (and any authorized amendments) reach the designated office before the deadline specified in the solicitation. This RFQ shall be completed in its entirety, and signed and dated, failure shall not be considered for award.
+
+ This is a Request for Quote (RFQ) and the solicitation number is 36C25927Q0048. The government anticipates awarding a firm-fixed price contract resulting from this solicitation.
+
+ This solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular (FAC) 2026-01 effective March 13, 2026..
+
+ The North American Industrial Classification System (NAICS) code for this procurement is 238220 with a small business size standard of $19.0 Million . This solicitation is a 100% set-aside for Small Businesses.
+
+ List of Line Items; 
+
+ Line Item 
+
+ Description 
+
+ Quantity 
+
+ Unit of Measure 
+
+ Unit Price 
+
+ Total Price 
+
+ 0001
+
+ Radiant Heating Panel Replacement in accordance with SOW
+
+ 1
+
+ JB
+
+ $
+
+ $
+
+ Grand Total 
+
+ $
+
+ Description of Requirements for the items to be acquired; 
+
+ DEPARTMENT OF VETERANS AFFAIRS – Eastern Colorado Healthcare 
+
+ Hydronic Radiant Heating Panels at RMR Entrances
+
+ PERFORMANCE WORK STATEMENT
+
+ 1. Background 
+
+ The Rocky Mountain Regional VA Medical Center (RMRVAMC) has hydronic radiant heating panels at all the main entrances that have corroded and failed creating potential slip hazards and not keeping up with the heating of the spaces at our Colfax entrance, South entrance, North entrance and employee breeze way coming from employee garage.
+
+ The contractor shall remove and replace the existing failed radiant panels and shall comply with this Performance Work Statement (PWS), all VA, local, state, and Federal policies, and regulations.
+
+ 2. Objective: 
+
+ Radiant Heating Panels Replacement- One time request
+
+ The objective of this service contract is to have a contractor to furnish all labor, materials, supplies, tools, equipment, and qualified personnel to remove all existing heating panels and replace for new approved like heating panels at all current locations.
+
+ 3. Scope: 
+
+ Remove and dispose of failed heating panels – roughly 238’ of radiators
+
+ Prep existing locations to ensure no failure points that may leak
+
+ Install new heating panels at the same length and pressure as existing and connection points (see pictures below)
+
+ Verify that required pressure is met
+
+ Verify that there are no leaks on the new panels and connections
+
+ Test and ensure full operation is restored
+
+ Locations pictured:
+
+ 4. Site Specific Equipment Information: 
+
+ Model: PRF
+
+ Radiators to be rate for low, medium and high pressure for a working pressure of 74 PSIG
+
+ Radiators should be supplied with all mounting backets for noise free operation
+
+ Radiators to be supplied with standard ½” female tapered NPT female connections and 1/8” female tapered NPT air vent connections
+
+ Radiator expansion not to exceed 0.016 inches at 215°F for Piping allowance for expansion and contraction
+
+ 5. Contractor Qualifications and Responsibilities: 
+
+ Contractors shall be qualified and has skilled employees with previous work experience in removal and installation of all hydronic heating panels
+
+ Contractors must demonstrate having performed labor, start-up and commissioning of these units
+
+ Contractor shall take all precautions necessary to protect people and property from injury or damage during the performance of this contract. Contractor shall be responsible for any injury to himself/herself, his/her employees, or others, as well as for any damage to personal or public property that occurs during the performance of this contract that is caused by him/her or his/her employees’ fault or negligence. Contractors shall maintain personal liability and property damage insurance prescribed by the laws of the Federal Government.
+
+ The Government reserves the right to accept or reject Contractor’s employees for the rendering of services. Complaints concerning Contract Personnel’s performance or conduct will be dealt with by the Contractor and POC with the final decision being made by the Contracting Officer.
+
+ 6. Report Requirements: 
+
+ Furnish report within one week of each space completion in “Microsoft Word” format by email to the FMS POC.
+
+ 7. Resources: 
+
+ The Government will not furnish any resources for the fulfillment of the services required under this contract. The contractor must provide all tools, equipment, materials, transportation, professional expertise, personnel, and supervision for maintenance services required under this contract. The contractor shall remove all debris and trash from facility upon completion of work.
+
+ 8. Hours of Work and Scheduling 
+
+ Scheduling
+
+ The work will be performed Monday through Friday from 7:30am to 4:00pm. The majority of the work will have minimal impact on the operation of the VA Medical Center.
+
+ Any potential disruption to ongoing medical center operations shall be coordinated 2 weeks in advance and shall be subject to review and approval by the CO/POC.
+
+ Any other disruption of operations in any building shall be scheduled at least one week in advance with the CO/POC. Work shall be scheduled to allow continuous operation of all facilities to the greatest extent possible.
+
+ Federal Holidays: 
+
+ New Year’s Day 
+
+ Martin Luther King Jr’s Day 
+
+ Presidents Day 
+
+ Memorial Day 
+
+ Juneteenth 
+
+ Independence Day
+
+ Labor Day 
+
+ Columbus Day 
+
+ Veterans Day 
+
+ Thanksgiving Day
+
+ Christmas Day
+
+ If the holiday falls on a Sunday, the following Monday will be observed as a national holiday. When a holiday falls on a Saturday, the preceding Friday is observed as a National holiday by U.S. Government Agencies, and any day specifically declared by the President of the United States of America.
+
+ Contractor Check-In
+
+ All Contractor personnel working onsite at the VA facility shall check in and out with the POC located in Building L (ENC). Access to work areas, and performance monitoring, will be provided by the POC. In all cases, the CO/POC shall be notified of any changes which may affect the response time of vital equipment.
+
+ 9. Place of Performance 
+
+ All work will be performed at Rocky Mountain Regional VA Medical Center at 1700 N. Wheeling Street, Aurora, Colorado, 80045
+
+ 10 . Invoicing and Payment: 
+
+ Payment of services rendered under this contract shall be made in arrears upon satisfactory completion of each service and receipt of a properly prepared invoice and submitted by the Contractor to the payment address specified by Contracting. Invoices shall reference the Contract Number and Purchase Order Number, Manifest Number(s), provide a complete and accurate description of services/ supplies delivered/ rendered, including dates of performance, amounts, unit prices, extended totals and any other data relevant for payment purposes.
+
+ Payments also must be submitted through Tungsten to be paid
+
+ 11. Records Management Language 
+
+ This clause applies to all contractors whose employees create, work with, or otherwise handle Federal records, as defined below:
+
+ “Federal Record” as defined in 44 U.S.C. 3301, includes all recorded information, regardless of form or characteristics, made or received by a Federal agency under Federal law or in connection with the transaction of public business and preserved or appropriate for preservation by that agency or its legitimate successor as evidence of the organization, functions, policies, decisions, procedures, operations, or other activities of the United States Government or because of the information value of data in them.
+
+ The term Federal Record:
+
+ Includes (Agency) records.
+
+ Does not include personal materials.
+
+ Applies to records created, received, or maintained by Contractors to the (Agency) contract.
+
+ May include deliverables and documentation as associated with deliverables.
+
+ 12. TRAINING: All Contractor employees assigned to this contract who create, work with, or otherwise handle records are required to take VHA provided records management training. The Contractor is responsible for confirming training has been completed according to agency policies, including initial training and any annual or refresher training.
+
+ Delivery and acceptance is to be F.O.B Destination (FAR 52.247-34) at the Veterans Affairs Medical Center, located at 
+
+ Department of Veterans Affairs 
+
+ Rocky Mountain Regional VA Medical Center 
+
+ Aurora, CO 
+
+ 80045 
+
+ 52.212-1, Instructions to Offerors--Commercial Items applies to this acquisition 
+
+ Any award made as a result of this solicitation will be made on an All or Nothing Basis.
+
+ State if quoted items are available and priced through offerors existing Government-wide Acquisition Contract (GWAC), GSA Multiple Award Schedule (MAS) contract, or VA-wide Acquisition Contract.
+
+ If the acquisition is set-aside for SDVOSBs/VOSBs, their socioeconomic status must be verified and visible in the SBA Small Business Certification (SBS): https://search.certifications.sba.gov/ at the time of quote submission AND award, or will be considered non-responsive, and will NOT be considered for award.
+
+ Offerors are warned against contacting any VA personnel other than the Contracting Officer and Contract Specialist prior to placement of any award made resulting from this RFQ. If such contact occurs and found to be prejudicial to competing contactors, the offeror making such contact may be excluded from award considerations.
+
+ All proprietary information shall be clearly and properly marked. If the Offeror submits annexes, documentation, attachments or the like, not specifically required by this solicitation, such will count against the Offeror’s page limitations unless otherwise indicated in the specific volume instructions below.
+
+ All information shall be confined to the appropriate file. The offeror shall confine submissions to essential matters, sufficient to define the quote and provide an adequate basis for evaluation. Offerors are responsible for including sufficient details, in a concise manner, to permit a complete and accurate evaluation of each quote.
+
+ Submission of quote shall include the following volumes: ( I) Technical capability or quality of the item offered to meet the Government requirement; (II) Price; (III) Past Performance; and (IV) Completion of VAAR 852.219-75 VA Notice of Limitations on Subcontracting—Certificate of Compliance for Services and Construction. 
+
+ Volume I - Technical capability or quality to meet the Government requirement. 
+
+ The offeror shall submit its quote demonstrating how it meets the requirements of the performance work statement (PWS) and solicitation.
+
+ Volume II – Price 
+
+ Price - The offeror shall complete the pricing schedule provided in Section (v) above: Price/Cost Schedule.
+
+ Volume III – Past Performance 
+
+ Offerors shall provide a maximum of three (3) recent and relevant past efforts (as defined below) to demonstrate their ability to perform the proposed work. If a completed Contractor Performance Assessment Reporting System (CPARS) evaluation is available, it shall be submitted. If not providing CPARS evaluation past performance references must include contract numbers, amount of contract award, point of contact with email address, telephone numbers and other relevant information, and a description of product/work performed under the contract. To be relevant, the effort must be similar in nature of work, size, magnitude, complexity, and scope of this procurement. To be recent past performance is defined as not more than five years from the RFQ release date of this solicitation.
+
+ Volume IV – VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction. 
+
+ The offeror shall complete the provision VAAR 852-219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction.
+
+ Offeror must list any/all subcontractors (and their size standard IAW NAICS 238220) if they will be utilized for this requirement AND what they will be performing. How is your firm going to comply with Limitations on Subcontracting requirements? If no subcontractors will be used, please state “No Subcontractors will be used for this requirement” in the response.
+
+ (End of Addendum to 52.212-1) 
+
+ 52.212-2, Evaluation--Commercial Items applies to this acquisition 
+
+ ADDENDUM to FAR 52.212-2 EVALUATION—COMMERCIAL ITEMS : 
+
+ The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government considering price and other factors. 
+
+ The following factors shall be used to evaluate quotations:
+
+ Factor I. Technical capability or quality offered to meet the Government requirement 
+
+ Factor II. Price 
+
+ Factor III. Past Performance 
+
+ Factor IV. Completion of VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction. 
+
+ Evaluation Approach . The Government will evaluate proposals using the comparative evaluation process outlined in RFO 12.203(c), where proposals will be compared to one another to determine which provides the best benefit to the Government. The Government reserves the right to consider a proposal other than the lowest price that provides additional benefit(s). Proposals may exceed minimum requirements of the solicitation. The Government reserves the right to select a proposal that provides benefit to the Government that exceeds the minimum requirements of the solicitation but is not required to do so. Each response must meet the minimum requirements of the solicitation. The Government is not requesting or accepting alternate proposals. The evaluation will consider the following: 
+
+ Factor I. Technical capability or quality offered to meet the Government requirement: The quotation will be evaluated to the extent to which it can meet and/or exceed the Government’s requirements as outlined in the solicitation and based on the information requested in the instructions to quoters section of the solicitation.
+
+ Factor II. Price: The Government will evaluate the price by adding the total of all line-item prices, including all options. The Government may use various price analysis techniques and procedures to make a price reasonableness determination. Offers that do not meet or exceed the technical capability or quality of the service offered to the Government requirement, as stated in Factor 1 shall not be selected regardless of price.
+
+ Factor III. Past Performance: The Government will evaluate on how well the offeror identified performance relates to the requirement procured under the PWS for this procurement to determine relevancy. How well the offeror performed on identified contracts shall be used to assess performance confidence.
+
+ In the case of an offeror without a record of relevant past performance or for whom information on past performance is not available, the offeror may not be evaluated favorably or unfavorably on past performance. The Government may use other methods to evaluate past performance, including but not limited to review of Contractor Performance Assessment Reporting System (CPARS), Federal Awardee Performance and Integrity Information System (FAPIIS), Electronic Subcontract Reporting System (eSRS), or other databases; interviews with Program Managers, Contracting Officers, and Fee Determining Officials; and as appropriate, the Defense Contract Management Agency (DCMA) Acquisition Information Repository, accessible through the Defense Technical Information Center website.
+
+ Factor IV. Completion of “Attachment - VAAR 852.219-75 VA Notice of Limitations on Subcontracting - Certificate of Compliance for Services and Construction.”: The Government will evaluate the responses an offeror makes to Attachment - VAAR Clause 852.219-75 VA Notice of Limitations on Subcontracting-Certificate of Compliance for Services and Construction” for completeness. If an offeror fails to complete Attachment - VAAR Clause 852.219-75 VA Notice of Limitations on Subcontracting-Certificate of Compliance for Services and Construction” their quote will be determined ineligible for award.
+
+ If offeror does not provide all volumes as outlined in RFO 52.212-1 Instructions, the offer may be considered non-responsive.
+
+ ( End of Addendum to 52.212-2) 
+
+ 52.212-4, Contract Terms and Conditions--Commercial Items – applies to this acquisition Any inconsistencies in this solicitation or contract shall be resolved by giving precedence IAW 52.212-4(r). By submitting a quote, the offeror understands that quotes will not be referenced in 1449 and clauses incorporated in the solicitation will dictate the contract. All offerors shall comply with all applicable Federal, State and local laws, executive orders, rules and regulations applicable to its performance under the contract IAW RFO 52.212-4(q). The Government reserves the right to deny requests for clause changes that are not included in this solicitation should the request be inconsistent with the RFO or VAAR.
+
+ The following RFO clauses are incorporated by reference:
+
+ Applicable (X) 
+
+ Number 
+
+ Title 
+
+ Source 
+
+ 52.203-6 with Alt I
+
+ Restrictions on Subcontractor Sales to the Government
+
+ Statute
+
+ 52.203-13
+
+ Contractor Code of Business Ethics and Conduct
+
+ Statute
+
+ X
+
+ 52.203-17
+
+ Contractor Employee Whistleblower Rights
+
+ Statute
+
+ X
+
+ 52.203-19
+
+ Prohibition on Requiring Certain Internal Confidentiality Agreements or Statements
+
+ Statute
+
+ 52.204-9
+
+ Personal Identity Verification of Contractor Personnel
+
+ Other
+
+ X
+
+ 52.204-13
+
+ System for Award Management—Maintenance
+
+ Statute
+
+ 52.204-91
+
+ Contractor identification
+
+ Other
+
+ X
+
+ 52.209-6
+
+ Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment
+
+ Statute
+
+ 52.209-9
+
+ Updates of Publicly Available Information Regarding Responsibility Matters
+
+ Statute
+
+ X
+
+ 52.209-10
+
+ Prohibition on Contracting with Inverted Domestic Corporations
+
+ Statute
+
+ 52.219-4
+
+ Notice of Price Evaluation Preference for HUBZone Small Business Concerns
+
+ Statute
+
+ x
+
+ 52.219-6
+
+ Notice of Total Small Business Set-Aside
+
+ Statute
+
+ 52.219-6 with Alt I
+
+ Notice of Total Small Business Set-Aside, with Alternate I
+
+ Statute
+
+ 52.219-8
+
+ Utilization of Small Business Concerns
+
+ Statute
+
+ 52.219-9
+
+ Small Business Subcontracting Plan
+
+ Statute
+
+ 52.219-9 with Alt I
+
+ Small Business Subcontracting Plan, with Alternate I
+
+ Statute
+
+ 52.219-9 with Alt II
+
+ Small Business Subcontracting Plan, with Alternate II
+
+ Statute
+
+ 52.219-9 with Alt III
+
+ Small Business Subcontracting Plan, with Alternate III
+
+ Statute
+
+ 52.219-9 with Alt IV
+
+ Small Business Subcontracting Plan, with Alternate IV
+
+ Statute
+
+ 52.219-14
+
+ Limitations on Subcontracting
+
+ Statute
+
+ 52.219-16
+
+ Liquidated Damages—Subcontracting Plan
+
+ Statute
+
+ 52.219-33
+
+ Nonmanufacturer Rule
+
+ Statute
+
+ X
+
+ 52.222-3
+
+ Convict Labor
+
+ EO
+
+ X
+
+ 52.222-19
+
+ Child Labor—Cooperation with Authorities and Remedies
+
+ EO
+
+ 52.222-35
+
+ Equal Opportunity for Veterans
+
+ Statute
+
+ 52.222-35 with Alt I
+
+ Equal Opportunity for Veterans, with Alternate I
+
+ Statute
+
+ X
+
+ 52.222-36
+
+ Equal Opportunity for Workers with Disabilities
+
+ Statute
+
+ 52.222-36 with Alt I
+
+ Equal Opportunity for Workers with Disabilities, with Alternate I
+
+ Statute
+
+ X
+
+ 52.222-37
+
+ Employment Reports on Veterans
+
+ Statute
+
+ X
+
+ 52.222-40
+
+ Notification of Employee Rights Under the National Labor Relations Act
+
+ EO
+
+ X
+
+ 52.222-41
+
+ Service Contract Labor Standards
+
+ Statute
+
+ X
+
+ 52.222-42
+
+ Statement of Equivalent Rates for Federal Hires
+
+ Employee Class Monetary Wage-Fringe Benefits
+
+ 23410 $34.38 . 
+
+_____________ __________________________
+
+ Statute
+
+ X
+
+ 52.222-43
+
+ Fair Labor Standards Act and Service Contract Labor Standards-Price Adjustment (Multiple Year and Option Contracts)
+
+ Statute
+
+ 52.222-44
+
+ Fair Labor Standards Act and Service Contract Labor Standards-Price Adjustment
+
+ Statute
+
+ X
+
+ 52.222-50
+
+ Combating Trafficking in Persons
+
+ Statute
+
+ 52.222-50 with Alt I
+
+ Combating Trafficking in Persons, with its Alternate I
+
+ Statute
+
+ 52.222-51
+
+ Exemption from Application of the Service Contract Labor Standards to Contracts for Maintenance, Calibration, or Repair of Certain Equipment—Requirements
+
+ Other
+
+ 52.222-53
+
+ Exemption from Application of the Service Contract Labor Standards to Contracts for Certain Services—Requirements
+
+ Other
+
+ 52.222-54
+
+ Employment Eligibility Verification
+
+ EO
+
+ X
+
+ 52.222-62
+
+ Paid Sick Leave Under Executive Order 13706
+
+ EO
+
+ X
+
+ 52.222-90
+
+ Addressing DEI Discrimination by Federal Contractors
+
+ EO
+
+ 52.223-9
+
+ Estimate of Percentage of Recovered Material Content for EPA-Designated Items
+
+ Statute
+
+ 52.223-9 with Alt I
+
+ Estimate of Percentage of Recovered Material Content for EPA-Designated Items, with Alternate I
+
+ Statute
+
+ 52.223-11
+
+ Ozone-Depleting Substances and High Global Warming Potential Hydrofluorocarbons
+
+ Statute
+
+ 52.223-12
+
+ Maintenance
+
+ Statute
+
+ 52.223-20
+
+ Aerosols
+
+ Statute
+
+ 52.223-21
+
+ Foams
+
+ Statute
+
+ X
+
+ 52.223-23
+
+ Sustainable Products and Services
+
+ Statute
+
+ 52.224-3
+
+ Privacy Training
+
+ Statute
+
+ 52.224-3 with Alt I
+
+ Privacy Training, with Alternate I
+
+ Statute
+
+ X
+
+ 52.225-1
+
+ Buy American-Supplies
+
+ Statute
+
+ 52.225-1 with Alt I
+
+ Buy American-Supplies, with Alternate I
+
+ Statute
+
+ 52.225-3
+
+ Buy American-Free Trade Agreements-Israeli Trade Act
+
+ Statute
+
+ 52.225-3 with Alt II
+
+ Buy American-Free Trade Agreements-Israeli Trade Act, with Alternate II
+
+ Statute
+
+ 52.225-3 with Alt III
+
+ Buy American-Free Trade Agreements-Israeli Trade Act, with Alternate III
+
+ Statute
+
+ 52.225-3 with Alt IV
+
+ Buy American-Free Trade Agreements-Israeli Trade Act, with Alternate IV
+
+ Statute
+
+ 52.225-5
+
+ Trade Agreements
+
+ Statute
+
+ 52.225-19
+
+ Contractor Personnel in a Designated Operational Area or Supporting a Diplomatic or Consular Mission outside the United States
+
+ Other
+
+ 52.225-26
+
+ Contractors Performing Private Security Functions Outside the United States
+
+ Statute
+
+ 52.226-4
+
+ Notice of Disaster or Emergency Area Set-Aside
+
+ Statute
+
+ 52.226-5
+
+ Restrictions on Subcontracting Outside Disaster or Emergency Area
+
+ Statute
+
+ X
+
+ 52.226-8
+
+ Encouraging Contractor Policies to Ban Text Messaging While Driving
+
+ EO
+
+ 52.229-12
+
+ Tax on Certain Foreign Procurements
+
+ Statute
+
+ 52.232-29
+
+ Terms for Financing of Commercial Products and Commercial Services
+
+ Statute
+
+ 52.232-30
+
+ Installment Payments of Commercial Products and Commercial Services
+
+ Statute
+
+ X
+
+ 52.232-33
+
+ Payment by Electronic Funds Transfer—System for Award Management
+
+ Statute
+
+ 52.232-34
+
+ Payment by Electronic Funds Transfer—Other than System for Award Management
+
+ Statute
+
+ 52.232-36
+
+ Payment by Third Party
+
+ Statute
+
+ X
+
+ 52.232-40
+
+ Providing Accelerated Payments to Small Business Subcontractors
+
+ Statute
+
+ 52.232-90
+
+ Fast Payment Procedure
+
+ Statute
+
+ X
+
+ 52.233-3
+
+ Protest After Award
+
+ Statute
+
+ X
+
+ 52.233-4
+
+ Applicable Law for Breach of Contract Claim
+
+ Statute
+
+ X
+
+ 52.240-91
+
+ Security Prohibitions and Exclusions
+
+ Statute
+
+ 52.240-91 with Alt I
+
+ Security Prohibitions and Exclusions, with Alternate I
+
+ Statute
+
+ 52.240-92
+
+ Security Requirements
+
+ Other
+
+ 52.240-92 with Alt II
+
+ Security Requirements with Alternate II
+
+ Other
+
+ 52.240-93
+
+ Basic Safeguarding of Covered Contractor Information Systems
+
+ X
+
+ 52.244-6
+
+ Subcontracts for Commercial Products and Commercial Services
+
+ Statute
+
+ 52.247-64
+
+ Preference for Privately Owned U.S.-Flag Commercial Vessels
+
+ Statute
+
+ 52.247-64 with Alt I
+
+ Preference for Privately Owned U.S.-Flag Commercial Vessels, with Alternate I
+
+ Statute
+
+ 52.247-64 with Alt II
+
+ Preference for Privately Owned U.S.-Flag Commercial Vessels, with Alternate II
+
+ Statute
+
+ Additional contract requirements or terms and conditions: 
+
+ 852.212-70, Provisions and Clauses Applicable to VA Acquisition of Commercial Items (Apr 2020) 
+
+ VAAR 852.203-70
+
+ Commercial Advertising (OCT 2026)
+
+ VAAR 852.232-72
+
+ Electronic Submission of Payment Requests (OCT 2026)
+
+ VAAR 852.233-70
+
+ Agency Protests (OCT 2026)
+
+ VAAR 846.370-1
+
+ Rejected Goods (OCT 2026)
+
+ RFO 52.252-1 Solicitation Provisions Incorporated by Reference 
+
+ The following provisions or clauses incorporated by reference in this solicitation must be completed by the offeror or prospective contractor and submitted with the quotation or offer. Copies of these provisions or clauses are available on the Internet at the web sites provided in the provision at RFO 52.252-1, Solicitation Provisions Incorporated by Reference. Copies may also be obtained from the contracting officer.
+
+ https://www.acquisition.gov/far-overhaul
+
+ https://www.acquisition.gov/vaar
+
+ The following RFO provisions are to be incorporated by reference:
+
+ Applicable (X) 
+
+ Number 
+
+ Title 
+
+ Source 
+
+ 52.203-11
+
+ Certification and Disclosure Regarding Payments to Influence Certain Federal Transactions
+
+ Statute
+
+ X
+
+ 52.203-18
+
+ Prohibition on Contracting with Entities that Require Certain Internal Confidentiality Agreements or Statements-Representation
+
+ Statute
+
+ X
+
+ 52.204-7
+
+ System for Award Management—Registration
+
+ Statute
+
+ 52.204-7 with Alt I
+
+ System for Award Management—Registration, with Alternate I
+
+ Statute
+
+ 52.204-90
+
+ Offeror Identification
+
+ Statute
+
+ 52.207-6
+
+ Solicitation of Offers from Small Business Concerns and Small Business Teaming Arrangements or Joint Ventures (Multiple-Award Contracts)
+
+ Statute
+
+ 52.209-12
+
+ Certification Regarding Tax Matters
+
+ Statute
+
+ 52.219-2
+
+ Equal Low Bids
+
+ Statute
+
+ 52.222-18
+
+ Certification Regarding Knowledge of Child Labor for Listed End Products
+
+ E.O.
+
+ 52.222-48
+
+ Exemption from Application of the Service Contract Labor Standards for Maintenance, Calibration, or Repair of Certain Equipment–Certification
+
+ Other
+
+ 52.222-52
+
+ Exemption from Application of the Service Contract Labor Standards for Certain Services-Certification
+
+ Other
+
+ 52.222-56
+
+ Certification Regarding Trafficking in Persons Compliance Plan
+
+ Statute
+
+ 52.223-4
+
+ Recovered Material Certification
+
+ Statute
+
+ 52.225-2
+
+ Buy American Certificate
+
+ Statute
+
+ 52.225-4
+
+ Buy American-Free Trade Agreements-Israeli Trade Act Certificate
+
+ Statute
+
+ 52.225-6
+
+ Trade Agreements-Certificate
+
+ Statute
+
+ 52.225-20
+
+ Prohibition on Conducting Restricted Business Operations in Sudan-Certification
+
+ Statute
+
+ 52.225-25
+
+ Prohibition on Contracting with Entities Engaging in Certain Activities or Transactions Relating to Iran-Representation and Certifications
+
+ Statute
+
+ 52.226-3
+
+ Disaster or Emergency Area Representation
+
+ Statute
+
+ 52.229-11
+
+ Tax on Certain Foreign Procurements—Notice and Representation
+
+ Statute
+
+ X
+
+ 52.240-90
+
+ Security Prohibitions and Exclusions Representations and Certifications
+
+ Statute
+
+ The Defense Priorities and Allocations System (DPAS) does not apply. 
+
+ Date and Time offers are due to Christopher.hollingsworth2@va.gov by 14:00pm ET, November 20 , 2026. 
+
+ Name and email of the individual to contact for information regarding the solicitation: 
+
+ Chris Hollingsworth 
+
+ Christopher.Hollingsworth2@va.gov

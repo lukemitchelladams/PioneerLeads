@@ -1,0 +1,67 @@
+{
+ "active": "Yes",
+ "additionalInfoLink": null,
+ "archiveDate": "2026-12-05",
+ "archiveType": "auto15",
+ "award": null,
+ "baseType": "Combined Synopsis/Solicitation",
+ "classificationCode": "J045",
+ "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=974f9b5eb51f4ade85b43f47c548e773",
+ "fullParentPathCode": "036.3600.36C259",
+ "fullParentPathName": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+ "links": [
+  {
+   "rel": "self",
+   "href": "https://api.sam.gov/prod/opportunities/v2/search?noticeid=974f9b5eb51f4ade85b43f47c548e773&limit=1"
+  }
+ ],
+ "naicsCode": "238220",
+ "naicsCodes": [
+  "238220"
+ ],
+ "noticeId": "974f9b5eb51f4ade85b43f47c548e773",
+ "officeAddress": {
+  "zipcode": "80111",
+  "city": "Greenwood Village",
+  "countryCode": "USA",
+  "state": "CO"
+ },
+ "organizationType": "OFFICE",
+ "placeOfPerformance": {
+  "city": {
+   "code": "4000",
+   "name": "Aurora"
+  },
+  "state": {
+   "code": "CO",
+   "name": "Colorado"
+  },
+  "zip": "80045",
+  "country": {
+   "code": "USA",
+   "name": "UNITED STATES"
+  }
+ },
+ "pointOfContact": [
+  {
+   "fax": "N/A",
+   "type": "primary",
+   "email": "Christopher.Hollingsworth2@va.gov",
+   "phone": "3037125724",
+   "fullName": "Chris Hollingsworth"
+  }
+ ],
+ "postedDate": "2026-11-04",
+ "resourceLinks": [
+  "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f759efe4d3e47ed8a539e2ce92bf5b9/download",
+  "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aebe1eac9d8e41c98373ac8425956866/download",
+  "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3df48983c2d4f0cb97dd997f9e68926/download"
+ ],
+ "responseDeadLine": "2026-11-20T14:00:00-05:00",
+ "solicitationNumber": "36C25927Q0048",
+ "title": "Radiant Heating Panel Replacement",
+ "type": "Combined Synopsis/Solicitation",
+ "typeOfSetAside": "SBA",
+ "typeOfSetAsideDescription": "Small Business Set Aside - Total",
+ "uiLink": "https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view"
+}

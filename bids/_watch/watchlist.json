@@ -263,10 +263,10 @@
    "govtribe_ids": []
   },
   {
-   "name": "VA RMR VAMC hydronic radiant panel replacement 36C25927Q0019 (Aurora CO; EVALUATE; sources sought closed 2026-10-16, watch for the solicitation)",
+   "name": "VA RMR VAMC radiant heating panel replacement 36C25927Q0048 (sources sought was 36C25927Q0019) (NO-BID 2026-11-17: PWS sec.5 'Contractors must demonstrate having performed labor, start-up and commissioning of these units' + technical-capability gate; panel model unspecified, no site visit; revive only if a small-business hydronic sub gives a firm price + 3 references by Wed 11/19 17:00 MT)",
    "source": "samgov",
-   "match": "36C25927Q0019|radiant panel replacement rmr",
-   "folder": null,
+   "match": "36C25927Q0019|36C25927Q0048|974f9b5eb51f4ade85b43f47c548e773|radiant panel replacement rmr|Radiant Heating Panel Replacement",
+   "folder": "bids/va-rmr-radiant-panels-36C25927Q0048",
    "govtribe_ids": []
   },
   {
