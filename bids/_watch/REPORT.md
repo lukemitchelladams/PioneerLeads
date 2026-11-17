@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-17T19:36:16+00:00
+# Bid watch report — 2026-11-17T20:35:43+00:00
 
-**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** 3 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 671 | BUYER 445, AGGREGATE 227 | 86 | 2026-11-17T19:36:16+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T19:36:16+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T19:36:16+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 71 | open 71 | 3 | 2026-11-17T19:36:16+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 674 | BUYER 448, AGGREGATE 227 | 87 | 2026-11-17T20:35:43+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T20:35:43+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T20:35:43+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 3 | 2026-11-17T20:35:43+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,11 +27,11 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (22d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (31d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
+## Changes on matching / watched bids (addenda, dates)
 
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet | Pueblo Urban Renewal Authority | Request for Quotes – PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U | 2026-12-01 (14d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1 |
+- **Request for Quotes – PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U** (bidnet): questions deadline 2026-11-25 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1
+- **ITN – Commercial Lease Opportunity, 125 Riverwalk Place (Riverwalk Building)** (bidnet): pre-bid now 2026-11-13 mandatory=False; questions deadline 2026-11-23 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/ITN-Commercial-Lease-Opportunity-125-Riverwalk-Place-Riverwalk-Building/0000442932?purchasingGroupId=8409951&origin=1
+- **Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026** (bidnet): title changed: Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Laundry-Machines-Maintenance-Services-at-Denver-County-Jail-IFB-1053A-2026/0000442283?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -116,7 +116,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (153)
+## All open matching bids, excluding DIBBS parts RFQs (154)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -151,6 +151,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--SHAFT-GEARBOX,IDLER (place of performance not stated; OH buying office) | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | CUSTOM GEARBOX | 2026-11-22 (5d) |  | https://sam.gov/workspace/contract/opp/030fbc47bac041ddb7216401102fc679/view |
+| brownbison | bidnet | City and County of Denver General Servic | Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026 | 2026-11-23 (6d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Laundry-Machines-Maintenance-Services-at-Denver-County-Jail-IFB-1053A-2026/0000442283?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Snow Removal Services | 2026-11-23 (6d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Janitorial Services (paid-tier notice) | 2026-11-23 (6d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (6d) |  | https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view |
@@ -189,13 +190,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | HVAC Motor & Fan Belts | 2026-11-30 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Motor-Fan-Belts/0000442187?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-30 (13d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Arapahoe County Fairgrounds: South Lawns Irrigation Renovation | 2026-11-30 (13d) | 2026-11-10 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1 |
-| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-30 (13d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (13d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
+| brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-30 (13d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--SACN Replace Fire Alarms and Intrusions Systems | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | BEARING ASSY, SPCL | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BALL,BEARING | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Low Level Cranes- CSO | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/20b6fa9843bd4925b7964e5dfb36f976/view |
-| brownbison | bidnet | Pueblo Urban Renewal Authority | Request for Quotes – PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U | 2026-12-01 (14d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet | Pueblo Urban Renewal Authority | Request for Quotes – PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U | 2026-12-01 (14d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | School District 27J | Baseball/Softball Field Irrigation Connection | 2026-12-01 (14d) | 2026-11-16 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Lakewood | As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services | 2026-12-01 (14d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Emergency-Board-Up-Temporary-Fencing-and-Site-Security-Services/0000442961?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | City of Grand Junction | On-Call Professional Surveying, Mapping, and Related Services | 2026-12-01 (14d) | 2026-11-12 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Surveying-Mapping-and-Related-Services/0000442372?purchasingGroupId=8409951&origin=1 |
@@ -273,6 +274,18 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-24 (249d) |  | https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (254d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (381d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
+
+## Documents downloaded
+
+- bidnet:0000443836: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443836/Request for Quotes _ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U.pdf
+- bidnet:0000442932: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000442932/125 Riverwalk ITN - Public Notice.docx
+
+## Filed into bid folders
+
+- bids/pura-office-hvac-rtu-replacement/docs/Request for Quotes _ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U.pdf
+- bids/pura-office-hvac-rtu-replacement/docs/MANIFEST.md
+- bids/pura-office-hvac-rtu-replacement/docs/125 Riverwalk ITN - Public Notice.docx
+- bids/pura-office-hvac-rtu-replacement/docs/MANIFEST.md
 
 ## Errors
 
