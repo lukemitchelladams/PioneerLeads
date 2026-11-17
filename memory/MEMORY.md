@@ -2914,3 +2914,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - BGNDRF pricing agent resumed after the restart.
 - 00:21Z worker tick (Mon 17:21 MT): CPW Surefire declined (4 declined/3 bounced/0 yes; walk not required per buyer). COS R26-080JW janitorial CANCELLED by the City (HQ d403e29; was next week's floor candidate). Metro Water PAR 1502 → ledger NO (engineering services). HQ 23:40Z scan: all 3 cloud sources live (bidnet 642/84, samgov 94, coloradovss 69/3), 0 new; open matches 150. No insurance certificate.
   Dashboard 00:30Z: bids v385 (4aca8867eb0e4388ffce3a6bf5839f6b), events v388 (0d8553c37ee4c6a35d4b7edd0b6dea74), sources v334 (d16a417590ca7f50982ad4bbf6a8cb16), portal_feed v194 (59f805ec866f112e9f40a215db028b86); old blobs deleted; doc_gaps v14 unchanged.
+
+### 2026-11-17 00:37Z hourly (17:35 MT Mon) scan, HQ
+- Scan 00:35:48Z: session reused for the list (bidnet 639/84), then **BidNet robot check #14 on a detail page** (first since 23:37Z Sun): detail pass stopped, 2 h cool-down. EXIT 0, commit 98d7f32. Counts samgov 90/90 | coloradovss 69/3 | bonfire 2/1 | dibbs carried | total 800/178. New 0; 1 NO-bid download skipped.
+- CPW: Surefire HVAC declined (00:01Z, worker logged). Tue 08:30 "no walk needed" note still goes to Sangre de Cristo, J.R.B., Timme.
