@@ -873,6 +873,13 @@
    "source": "bidnet",
    "id": "0000443738",
    "match": "0000443738|Transmission Building HVAC Replacement"
+  },
+  {
+   "name": "DLA BEARING,ROLLER,AIRFRAME NSN 3110-01-310-2258, qty 1,100, 615 days ARO (NO: aircraft airframe bearing, not a Jones Bearing product line; Dad is family and off limits)",
+   "source": "samgov",
+   "id": "01754c67a9fd4dd99e16171e0bfc4c04",
+   "match": "3110-01-310-2258",
+   "folder": null
   }
  ]
 }
