@@ -593,7 +593,7 @@
    "govtribe_ids": []
   },
   {
-   "name": "CDOC DQ 27-0132 Boiler Chemicals & Treatment Services BVCC",
+   "name": "CDOC DQ 27-0132 Boiler Chemicals & Treatment Services BVCC (NO-BID 2026-11-17: mandatory 11/18 walk had no sub attendee)",
    "source": "bidnet",
    "match": "27-0132|Boiler Chemicals.*BVC",
    "folder": "bids/doc-bvcc-boiler-chemicals-dq27-0132",
