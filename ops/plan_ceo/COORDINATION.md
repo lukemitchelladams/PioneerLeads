@@ -5,8 +5,8 @@ Facts: 4 submitted since 10/5, 0 awards back, ~60 NO/NO-BID. Main killers were (
 3. NO-BID now needs one of: a disqualifying requirement in the documents (license in bidder's name, no-subcontracting clause, bonding we can't get, missed mandatory walk). "No sub replied" is no longer a NO-BID reason.
 4. Next 4 weeks, submit-in-order (HQ owns each; Mac owns the inbox side):
    wk 11/16: PSD hoods 11/20 (floor), Pagosa 11/19 (floor 2). Luke signatures already requested.
-   wk 11/23: BVCC boiler chemicals 11/30, Lakewood board-up/fencing RFP 6706 12/01 (no pre-bid; flip EVALUATE->GO, build now).
-   wk 11/30: BGNDRF custodial 12/04, Canon City boiler/chiller 12/07, Canon City janitorial 151-26 12/07 (walk 11/30 is NON-mandatory; flip to GO).
+   wk 11/23: BVCC boiler chemicals 11/30. (CORRECTION 11/17 ~10:20 MT: Lakewood RFP 6706 stays NO: City is payer of last resort, we would collect from private owners after police board-ups; that is a real disqualifier, not a sub gap. Replace with the next no-walk candidate from the daily sweep.)
+   wk 11/30: BGNDRF custodial 12/04, Canon City boiler/chiller 129-26 12/07, Canon City janitorial 151-26 12/07. BOTH Canon City bids hinge on PSA IV.D 'Consultant agrees not to employ subcontractors': Q1 in each vendor-questions.md is still 'not asked yet'. Luke posts both on BidNet THIS WEEK (paste text on tonight's board); do not wait for the 12/03 deadline. Build both packages in parallel; if the City says no subs, both become NO-BID.
    wk 12/07: Widefield kitchen equipment 12/11, CPW heater 12/09 (Power Pro attending 11/18), Arapahoe 26-64 drywall/paint 12/09 (MANDATORY walk Mon 11/23 10:00: line up a painting sub attendee by Fri 11/20 or drop), DUS lighting 12/07 (read docs, decide by Fri 11/20), landscape bidnet-444226398382 12/16 (identify agency this week).
    wk 12/14: Lafayette 12/18 (if attendee found), Aims windows 01/06 (SK Building Services pricing).
 5. Every bid gets its signable copy to Luke >=48h before due, one email, sign-here pages flagged. Luke's only jobs: sign, upload.
