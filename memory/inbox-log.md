@@ -629,3 +629,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-17 01:21Z: 0 new inbound since 00:01Z; no bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 02:21Z: 0 new inbound (2h); no bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 03:21Z: 0 new inbound (2h); no bounces; no insurance certificate; Luke/CRM 0.
+- 2026-11-17 04:21Z: 1 new inbound: 1a1e7ab4b7c97cb2 **CPW Power Pro Electric YES** ("Yes we can come", Daniel Miller, Monte Vista) → sub-outreach.md + pipeline; flagged to HQ for Tue (attendee name, sign-in as Brown Bison, register with Klay by 17:00, confirm pricing). No bounces; no insurance certificate; Luke/CRM 0.
