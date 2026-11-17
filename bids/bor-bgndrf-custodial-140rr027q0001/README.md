@@ -29,8 +29,9 @@ contractor's project manager attends a post-award conference (draft assigns the 
 - GRT applies to Brown Bison's receipts from Reclamation: services to a government body get no deduction (3.2.212.9 NMAC: "This is a sale of
   services ... and not a sale of tangible personal property. The deduction cannot be allowed."; TRD D&O 21-13, Holloman AFB: "This deduction
   does not extend to sales of services to a government agency."). The Alamogordo rate on TRD's schedule effective 2026-07-01 to 2027-06-30 is
-  now in the private price model (re-run; Attachment 2 refilled in private/). Still to confirm: 500 La Velle Rd is inside city limits (TRD
-  rate map), since unincorporated Otero County has a different rate.
+  now in the private price model (re-run; Attachment 2 refilled in private/). City limits CONFIRMED 09:4xZ: the US Census geocoder matches
+  "500 LAVELLE RD, ALAMOGORDO, NM, 88310" to Incorporated Place "Alamogordo city" (GEOID 3501780), Otero County, so the Alamogordo code
+  (15-116) applies, not unincorporated Otero.
 - The sub prices WITHOUT GRT: Brown Bison gives the sub a Type 5 NTTC ("Purchase of services for resale"; 3.2.206.8.A NMAC, NMSA 7-9-48),
   executed online on TAP only.
 - **Luke (before the first invoice, not before the quote): register Brown Bison Holdings LLC with NM Taxation and Revenue on TAP
