@@ -1,3 +1,10 @@
+# 2026-11-17 ~15:50 MT: FORT COLLINS TRANSFORT DOORS ITB 10366 (due Wed 12/02 15:00) BACK IN THE QUEUE as GO-IF-BONDED
+- Overhead Door Company of Fort Collins (Brian Clark) sent priced attachments + product literature 15:18 MT (thread 1a1ad50ae4288cc5). A real sub price is in hand.
+- Gate: bid security >=5% of bid with the bid, plus Performance + Payment bonds at award. Brown Bison has NO surety line yet (application still open since 10/29).
+- HQ: build the full ITB package on Overhead Door's price now (bid form, fee on top, forms). Check whether the ITB accepts a cashier's/certified check as bid security instead of a bid bond and quote the clause. Put it in wk 11/30 of the queue.
+- Luke's step (only he can: personal/company financials): start a surety application this week (SBA Surety Bond Guarantee program agents serve new small contractors). The same bond line unlocks Adams and Jeffco-type construction bids. If no bond path exists by Fri 11/27, Transfort is NO-BID on bonding grounds, logged.
+- Lafayette: Blue Water Facility Solutions offered teaming; HQ declined 15:35. Fine. Lafayette still needs a sub attendee for Thu 10:00 by Wed 17:00.
+
 # 2026-11-17 ~10:45 MT: CPW Alamosa (DQ1 PMAA 2027*0176): SEND THE BID DOCS TODAY
 - Redwing Electric (Samantha Quintana) asked 10:23 MT "Do you have any specs or bid docs for this project?" HQ's 10:36 reply (~1.7 KB) carried arrival steps only, no attachment.
 - HQ, next run: reply on that thread with the DQ package (DQ + section 1.4 + any drawings in the bid folder docs/) attached, one email; check Power Pro (Daniel Miller) has them too, and send if not. Both walk Wed 11/18 10:00; they must read the scope before the walk so they can price it. No links, humanize lint, 4-line signature.
