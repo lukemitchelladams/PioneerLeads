@@ -636,3 +636,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-17 08:21Z: 1 new inbound: 1a1e873238126fc7 BidNet saved-search alert (07:40Z) "Transmission Building HVAC Replacement", Metro Water Recovery, closes 2026-12-18 = bidnet:0000443738 / 10129004907, already ledger NO (professional engineering services RFP, HQ d403e29). No bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 09:21Z: 0 new inbound (only the 07:40Z BidNet alert, already logged); no new bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 10:21Z: 1 new inbound: 1a1e8d71c05c5eee Comcast DMARC aggregate report for brownbisonco.com (automated, no action). No bounces; no insurance certificate; Luke/CRM 0.
+- 2026-11-17 11:21Z: 1 new inbound: 1a1e9361162bc46e Google DMARC aggregate report for brownbisonco.com (automated, no action). No bounces; no insurance certificate; Luke/CRM 0.
