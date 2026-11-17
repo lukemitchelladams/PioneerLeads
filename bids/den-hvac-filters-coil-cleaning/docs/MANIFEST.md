@@ -7,6 +7,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 - Appendix III of Scope of Work - HVAC Assets_ Locations_ and filter Types.xlsx
 - Attachment 2 Exhibit B - Pricing Form.xlsx
+- DSBO Good Faith Effort Form.pdf
 - RFP_DEN-2026-020-10021.pdf
 
 ## Referenced in the solicitation
