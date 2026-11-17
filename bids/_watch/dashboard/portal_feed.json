@@ -580,7 +580,7 @@
   "prebid_date": "",
   "prebid_mandatory": "",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view"
  },
@@ -1091,7 +1091,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c277011495224169bc4765162f8f9c16/view"
  },
  {
@@ -1931,7 +1931,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234438795?target=view"
  },
  {

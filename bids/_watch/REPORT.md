@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-17T17:35:32+00:00
+# Bid watch report — 2026-11-17T18:35:41+00:00
 
-**Headline:** 1 NEW matching bids; 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 670 | BUYER 444, AGGREGATE 227 | 85 | 2026-11-17T17:35:32+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T17:35:32+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T17:35:32+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 3 | 2026-11-17T17:35:32+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 670 | BUYER 444, AGGREGATE 227 | 85 | 2026-11-17T18:35:41+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T18:35:41+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T18:35:41+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 71 | open 71 | 3 | 2026-11-17T18:35:41+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,16 +27,9 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (22d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (31d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | H--Northern California Area Office (NCAO) Fire Alarm  | 2026-11-25 (8d) |  | https://sam.gov/workspace/contract/opp/7b08515e5fc149828cce5d7674ca2d8c/view |
-    brief: set-aside: service-disabled veteran
-
 ## Changes on matching / watched bids (addenda, dates)
 
-- **HVAC Air Filter Replacement & Coil Cleaning** (bidnet): questions deadline 2026-11-23 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Air-Filter-Replacement-Coil-Cleaning/0000443425?purchasingGroupId=8409951&origin=1
+- **2026-1119-001 Roof Replacement & Gutter Project-Multiple County Facilities** (bidnet): NEW COMMUNICATION No.8 11/17/2026 11:24 AM MST: "Q & A 6 Q&A Document 3.pdf 2 Kb 11/17/2026 11:22 AM MST Q & A #6.pdf 4 Mb 11/17/2026 11:22 AM MST"; NEW Q&A: 1 answered: "Answered in Communication 8" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-1119-001-Roof-Replacement-Gutter-Project-Multiple-County-Facilities/0000440968?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -65,7 +58,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Douglas County Fencing (EVALUATE-lean-NO) (bidnet)
 - DCSD RFP 003-27 Mowing (addendum + pricing schedule) (bidnet)
 - 2027 Landscaping Management Services (EVALUATE; due 10/26; agency unknown) (bidnet)
-- VA RMR VAMC hydronic radiant panel replacement 36C25927Q0019 (Aurora CO; EVALUATE; sources sought closed 2026-10-16, watch for the solicitation) (samgov)
 - DCSD 005-27 RFP High-Speed, Reliable Internet Access Services (EVALUATE; likely E-Rate) (bidnet)
 - Colorado Springs On-Call Janitorial Services (bidnet)
 - Boulder County BID-321-26 Sheriff HQ LED fixtures (NO: materials only, rule 9) (bonfire)
@@ -86,12 +78,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - VA NCO 19 36C25927Q0057 Temporary Boiler Rental & Maintenance, Grand Junction (NO, re-posted 11/14 as e8214c97: intent to sole source to Ware; not a solicitation; rental trade) (samgov)
 - DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record) (samgov)
 - DLA NSN 1560-00-910-9140 Crank, Idler Cam, Elevator (NO: aircraft airframe part, FSC 1560; keyword false hit on 'idler'/'elevator' for jones-bearing; qty 3, no drawings; due 11/23) (samgov)
-
-## No longer listed (closed/awarded)
-
-- CIP25-025 – Public Works Operation Center Decant Facility Expansion (bidnet, due 2026-11-17)
-- Boettcher Mansion Chiller Replacement Project (bidnet, due 2026-11-17)
-- On-Call Services - Various Trades (bidnet, due 2026-11-17)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -159,7 +145,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Cortez | RFQ – City of Cortez On-Call Planning Services | 2026-11-20 (3d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-City-of-Cortez-On-Call-Planning-Services/0000440975?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Radiant Heating Panel Replacement (paid-tier notice) | 2026-11-20 (3d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view |
-| brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Radiant Heating Panel Replacement | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view |
+| brownbison WATCHED | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Radiant Heating Panel Replacement | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--SHAFT-GEARBOX,IDLER (place of performance not stated; OH buying office) | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (3d) |  | https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | CUSTOM GEARBOX | 2026-11-22 (5d) |  | https://sam.gov/workspace/contract/opp/030fbc47bac041ddb7216401102fc679/view |
@@ -201,8 +187,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | HVAC Motor & Fan Belts | 2026-11-30 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Motor-Fan-Belts/0000442187?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Auraria Higher Education Center - AHEC | AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver | 2026-11-30 (13d) | 2026-11-04 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Arapahoe County Fairgrounds: South Lawns Irrigation Renovation | 2026-11-30 (13d) | 2026-11-10 MANDATORY + RSVP required | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1 |
-| brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (13d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | coloradovss | Auraria Higher Education Center | CAVEA Lighting | 2026-11-30 (13d) | 2026-11-04 MANDATORY | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
+| brownbison | coloradovss | DOC - Corrections Administration | Boiler Chemicals & Treatment SRVS BVCF | 2026-11-30 (13d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | Z--SACN Replace Fire Alarms and Intrusions Systems | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | BEARING ASSY, SPCL | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/dacbc6b4e8aa4880930c72ad6a19d7dd/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 31--BALL,BEARING | 2026-11-30 (13d) |  | https://sam.gov/workspace/contract/opp/463e2a5bc1914bc9927e6fc663c61e2a/view |
@@ -284,19 +270,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-24 (249d) |  | https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (254d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (381d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
-
-## Documents downloaded
-
-- bidnet:0000443425: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443425/Attachment 2 Exhibit B - Pricing Form.xlsx
-- bidnet:0000443425: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443425/Appendix III of Scope of Work - HVAC Assets_ Locations_ and filter Types.xlsx
-- bidnet:0000443425: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443425/RFP_DEN-2026-020-10021.pdf
-
-## Filed into bid folders
-
-- bids/den-hvac-filters-coil-cleaning/docs/Attachment 2 Exhibit B - Pricing Form.xlsx
-- bids/den-hvac-filters-coil-cleaning/docs/Appendix III of Scope of Work - HVAC Assets_ Locations_ and filter Types.xlsx
-- bids/den-hvac-filters-coil-cleaning/docs/RFP_DEN-2026-020-10021.pdf
-- bids/den-hvac-filters-coil-cleaning/docs/MANIFEST.md
 
 ## Errors
 
