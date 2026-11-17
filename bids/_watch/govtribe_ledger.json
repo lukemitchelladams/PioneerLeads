@@ -2961,6 +2961,12 @@
    "verdict": "NO",
    "why": "Re-post of 0bc3e40e; open_bids set_aside 'Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)'; Brown Bison is not SDVOSB (worker 06:21Z, agrees with HQ 05:36Z).",
    "at": "2026-11-17T06:30:00Z"
+  },
+  "bidnet:2723145047": {
+   "name": "BidNet mirror of USFS Pagosa Ranger District janitorial 1240LP27Q0008 (listed as 'Pagsoa'), due 2026-11-19",
+   "verdict": "GO",
+   "why": "Same solicitation as samgov:f2c0f3bf / 1d1b8d72 (GO, floor backup 1, folder bids/usfs-pagosa-janitorial-1240LP27Q0008); HQ watchlist entry added 06:35Z; no separate bid (worker 07:21Z).",
+   "at": "2026-11-17T07:30:00Z"
   }
  },
  "watched": {
@@ -3146,6 +3152,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-17T06:30:00Z",
+ "last_hourly_check": "2026-11-17T07:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
