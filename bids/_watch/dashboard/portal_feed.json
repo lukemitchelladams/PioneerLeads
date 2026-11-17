@@ -521,7 +521,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view"
  },
  {
@@ -1393,6 +1393,21 @@
   "watched": false,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Baseball-Softball-Field-Irrigation-Connection/0000442975?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:0000443836",
+  "source": "bidnet",
+  "agency": "Pueblo Urban Renewal Authority",
+  "title": "Request for Quotes \u2013 PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U",
+  "sol": "2026.11.17.1",
+  "closing": "2026-12-01",
+  "posted": "2026-11-17",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:2722933907",
@@ -2411,7 +2426,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234541440?target=view"
  },
  {
@@ -2606,7 +2621,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Flooring-Replacement-and-Installation-Services/0000443673?purchasingGroupId=8409951&origin=1"
  },
  {
