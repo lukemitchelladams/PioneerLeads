@@ -5,6 +5,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
+- Q_A Document 1.pdf
 - RFP 26-27-013 - Kitchen Equipment Maintenance and Repair.pdf
 
 ## Referenced in the solicitation

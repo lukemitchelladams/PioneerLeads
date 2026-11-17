@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-17T20:35:43+00:00
+# Bid watch report — 2026-11-17T21:35:42+00:00
 
-**Headline:** 3 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; 2 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 674 | BUYER 448, AGGREGATE 227 | 87 | 2026-11-17T20:35:43+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T20:35:43+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T20:35:43+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 3 | 2026-11-17T20:35:43+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 664 | BUYER 439, AGGREGATE 226 | 83 | 2026-11-17T21:35:42+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T21:35:42+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-17T21:35:42+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 4 | 2026-11-17T21:35:42+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -27,11 +27,16 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (22d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (31d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
 
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison | coloradovss | Red Rocks Community College | RRCC 27-07-IFB01C BAS Controls Mitigation | 2026-12-15 (28d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
+
 ## Changes on matching / watched bids (addenda, dates)
 
-- **Request for Quotes – PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U** (bidnet): questions deadline 2026-11-25 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Request-for-Quotes-PURA-Office-HVAC-Replacement-and-125-Riverwalk-Pl-Rooftop-U/0000443836?purchasingGroupId=8409951&origin=1
-- **ITN – Commercial Lease Opportunity, 125 Riverwalk Place (Riverwalk Building)** (bidnet): pre-bid now 2026-11-13 mandatory=False; questions deadline 2026-11-23 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/ITN-Commercial-Lease-Opportunity-125-Riverwalk-Place-Riverwalk-Building/0000442932?purchasingGroupId=8409951&origin=1
-- **Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026** (bidnet): title changed: Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026 — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Laundry-Machines-Maintenance-Services-at-Denver-County-Jail-IFB-1053A-2026/0000442283?purchasingGroupId=8409951&origin=1
+- **Kitchen Equipment Maintenance and Repair** (bidnet): NEW DOCUMENTS (addendum?): Q&A Document 1.pdf; NEW Q&A: 3 answered: "Answered in Addendum 1" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Equipment-Maintenance-and-Repair/0000443304?purchasingGroupId=8409951&origin=1
+- **Structured Cabling and Fiber Optic Contractors** (bidnet): NEW DOCUMENTS (addendum?): Q&A Document 1.pdf, RFQ 043-26 Addendum 2.pdf; NEW Q&A: 24 answered: "Answered in Addendum 1" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Structured-Cabling-and-Fiber-Optic-Contractors/0000441695?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -74,12 +79,20 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - DPS Fire Suppression 2027 (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - City of Aurora IFB B-4799 Ash Tree Treatment (NO-BID 2026-11-10: no sub priced, QS license gate; overrule window closed 17:00 MT) (bidnet)
 - Biology Duct Insulation Damage (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
+- Arvada 26-FAC-055 On-Call General Contractor Services (EVALUATE; due 11/17) (bidnet)
 - Weld SD6 Coiling Door/Grill, Franklin MS (EVALUATE; MANDATORY walk 11/02) (bidnet)
 - VA 36C248 FY27 Portable RO water purification (NO: sole-source intent to Evoqua, Orlando FL; not our product) (samgov)
 - La Plata County IFB 26-053-1215 On-Call Services - Various Trades (GO; due Tue 11/17 10:00 MST by email) (bidnet)
 - VA NCO 19 36C25927Q0057 Temporary Boiler Rental & Maintenance, Grand Junction (NO, re-posted 11/14 as e8214c97: intent to sole source to Ware; not a solicitation; rental trade) (samgov)
 - DLA Aviation Multi NSN LTC FSC 3110, Timken OEM sole source CAGE 21335/60038 (NO: Jones Bearing is not a Timken authorized distributor on record) (samgov)
 - DLA NSN 1560-00-910-9140 Crank, Idler Cam, Elevator (NO: aircraft airframe part, FSC 1560; keyword false hit on 'idler'/'elevator' for jones-bearing; qty 3, no drawings; due 11/23) (samgov)
+
+## No longer listed (closed/awarded)
+
+- On-Call Employment Investigations (bidnet, due 2026-11-17)
+- On-Call Traffic Control Services Citywide - REISSUE (bidnet, due 2026-11-17)
+- On-Call General Contractor Services (bidnet, due 2026-11-17)
+- Notice of Settlement - Fire Alarm Replacement (Multiple Buildings) (bidnet, due 2026-11-17)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -116,14 +129,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (154)
+## All open matching bids, excluding DIBBS parts RFQs (151)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet | Fort Lewis College Project Type NFS - No | Notice of Settlement - Fire Alarm Replacement (Multiple Buildings) | 2026-11-17 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Notice-of-Settlement-Fire-Alarm-Replacement-Multiple-Buildings/0000443158?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | City of Arvada | On-Call General Contractor Services | 2026-11-17 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-General-Contractor-Services/0000441833?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | City of Arvada | On-Call Traffic Control Services Citywide - REISSUE | 2026-11-17 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Traffic-Control-Services-Citywide-REISSUE/0000440948?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Adams County | On-Call Employment Investigations | 2026-11-17 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Employment-Investigations/0000440732?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | INSTALL BOILER SYSTEM AND UPGRADE ASSOCIATED BUILDING AUTOMATION SYSTEM, BERG, PH 2 (Windo (paid-tier notice) | 2026-11-17 (0d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444224753209?target=view |
 | brownbison WATCHED | bidnet | City of Longmont | On-Call Specialized Electrical Contractor Services for Treatment Operations | 2026-11-18 (1d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Specialized-Electrical-Contractor-Services-for-Treatment-Operations/0000441987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Douglas County Government | HVAC Filters & Belts | 2026-11-18 (1d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Filters-Belts/0000441328?purchasingGroupId=8409951&origin=1 |
@@ -257,6 +266,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SHELL AY(PRT SIDE) | 2026-12-14 (27d) |  | https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | SHELL AY(PRT SIDE) (place of performance not stated; PA buying office) | 2026-12-14 (27d) |  | https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view |
 | brownbison WATCHED | bidnet |  | Alternatives Analysis and Environmental Planning for New Bus Facility (10% SBE Goal) (paid-tier notice) | 2026-12-15 (28d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234541440?target=view |
+| brownbison | coloradovss | Red Rocks Community College | RRCC 27-07-IFB01C BAS Controls Mitigation | 2026-12-15 (28d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | bidnet |  | Landscape Services (paid-tier notice) | 2026-12-16 (29d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | BEARING,BALL AND RO | 2026-12-16 (29d) |  | https://sam.gov/workspace/contract/opp/3d326babf2eb497eabe64330bb3f5d25/view |
 | jones-bearing WATCHED | samgov | HOMELAND SECURITY, DEPARTMENT OF.US COAS | BEARING ROLLER | 2026-12-16 (29d) |  | https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view |
@@ -277,15 +287,14 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Documents downloaded
 
-- bidnet:0000443836: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443836/Request for Quotes _ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U.pdf
-- bidnet:0000442932: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000442932/125 Riverwalk ITN - Public Notice.docx
+- bidnet:0000443304: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000443304/Q_A Document 1.pdf
+- bidnet:0000441695: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441695/RFQ 043-26 Addendum 2.pdf
+- bidnet:0000441695: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000441695/Q_A Document 1.pdf
 
 ## Filed into bid folders
 
-- bids/pura-office-hvac-rtu-replacement/docs/Request for Quotes _ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U.pdf
-- bids/pura-office-hvac-rtu-replacement/docs/MANIFEST.md
-- bids/pura-office-hvac-rtu-replacement/docs/125 Riverwalk ITN - Public Notice.docx
-- bids/pura-office-hvac-rtu-replacement/docs/MANIFEST.md
+- bids/widefield-sd3-kitchen-equipment-26-27-013/docs/Q_A Document 1.pdf
+- bids/widefield-sd3-kitchen-equipment-26-27-013/docs/MANIFEST.md
 
 ## Errors
 

@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-17T20:35:43+00:00",
+  "checked_at": "2026-11-17T21:35:42+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 674,
+      "count": 664,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
-      "last_success": "2026-11-17T20:35:43+00:00",
+      "last_success": "2026-11-17T21:35:42+00:00",
       "logged_in": true,
       "login_note": "session reused",
-      "matches": 87,
+      "matches": 83,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 227,
-        "statewide BUYER": 448
+        "statewide AGGREGATE": 226,
+        "statewide BUYER": 439
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-17T20:35:43+00:00",
+      "last_success": "2026-11-17T21:35:42+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,10 +42,10 @@
       "count": 70,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-17T20:35:43+00:00",
+      "last_success": "2026-11-17T21:35:42+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
-      "matches": 3,
+      "matches": 4,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
@@ -82,7 +82,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-17T20:35:43+00:00",
+      "last_success": "2026-11-17T21:35:42+00:00",
       "logged_in": true,
       "login_note": "API key; +33 from the nightly bulk file",
       "matches": 93,
