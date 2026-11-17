@@ -555,6 +555,12 @@
    "sam_notice_id": "1d1b8d72c87844289d3efb4990073ded"
   },
   {
+   "name": "BidNet mirror of USFS Pagosa Ranger District janitorial 1240LP27Q0008 (same bid; quote goes by email per the SAM.gov solicitation, not on BidNet)",
+   "source": "bidnet",
+   "match": "2723145047|Pagsoa Ranger District|Pagosa Ranger District",
+   "folder": "bids/usfs-pagosa-janitorial-1240LP27Q0008"
+  },
+  {
    "name": "Pueblo Urban Renewal MSA Landscape Enhancement & Maintenance (EVALUATE, Alex; MANDATORY walk 11/13 09:00 Pueblo)",
    "source": "bidnet",
    "id": "0000442783",
