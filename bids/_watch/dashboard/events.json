@@ -1663,7 +1663,7 @@
   "note": "",
   "critical": true,
   "past": false,
-  "days_left": 0.03
+  "days_left": 0.02
  },
  {
   "key": "psfb-smart-t-power-ss|Submission|2026-11-18T09:00:00-07:00",
@@ -1915,7 +1915,7 @@
   "note": "SAM.gov",
   "critical": true,
   "past": false,
-  "days_left": 12.53
+  "days_left": 12.52
  },
  {
   "key": "canon-city-janitorial|Pre-bid (optional)|2026-11-30T09:00:00-07:00",
@@ -2069,7 +2069,7 @@
   "note": "BidNet (detail behind login; aggregate/interception notice)",
   "critical": true,
   "past": false,
-  "days_left": 19.53
+  "days_left": 19.52
  },
  {
   "key": "canon-city-janitorial|Submission|2026-12-07T11:00:00-07:00",
@@ -2153,7 +2153,7 @@
   "note": "BidNet (questions on BidNet by 11/23 16:00)",
   "critical": true,
   "past": false,
-  "days_left": 22.03
+  "days_left": 22.02
  },
  {
   "key": "cpw-dq1-pmaa-2027000176-heater|Submission|2026-12-09T17:00:00-07:00",
@@ -2195,7 +2195,7 @@
   "note": "BidNet Direct (PDF upload); questions via BidNet by 11/25, answers by addendum",
   "critical": true,
   "past": false,
-  "days_left": 23.53
+  "days_left": 23.52
  },
  {
   "key": "bidnet-444226398382-landscape|Submission|2026-12-16T00:00:00-07:00",
@@ -2209,7 +2209,7 @@
   "note": "BidNet aggregated notice (not RMEPS)",
   "critical": true,
   "past": false,
-  "days_left": 28.53
+  "days_left": 28.52
  },
  {
   "key": "lafayette-citywide-custodial|Submission|2026-12-18T17:00:00-07:00",
