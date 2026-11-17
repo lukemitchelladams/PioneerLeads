@@ -3200,5 +3200,118 @@ check("real jones-bearing profile: FSC group 15 is not among its ccode groups an
       "15" not in _real_groups and {"31", "39"} <= _real_groups and not samgov._keep(_real, profiles["jones-bearing"])
       and not samgov_bulk.keep({**_real, "psc": "15", "office_state": "VA"}, profiles["jones-bearing"]), sorted(_real_groups))
 
+# ---------------------------------------------------------------- SAM.gov document list gaps (2026-11-17 05:36Z / 06:35Z)
+# 05:36Z the API answered HTTP 503 on most queries, every samgov row came from the nightly bulk file (no resourceLinks) and
+# open_bids.json saved them with "documents": [] (f2c0f3bf3abb42579074f7a035f8b624: 9 documents -> 0). The 06:35Z clean scan saw the
+# files again and reported "NEW DOCUMENTS (addendum?)" for 23 notices that had no addendum.
+print("SAM.gov document list gaps: a partial run keeps the last real read's documents; no false NEW DOCUMENTS after it")
+_dg_saved = (run.reachable, run.samgov.collect, run.samgov_bulk.collect, os.environ.get("SAM_API_KEY"), os.environ.get(run.BRIEF_MAX_ENV))
+_DG9 = [f"f{i}" for i in range(1, 10)]
+
+
+def _dg_rec(i, docs=None, via=None):
+    r = {"source": "samgov", "id": i, "title": f"Janitorial services, Pagosa Ranger District {i}", "closing": "2099-01-01",
+         "profiles": ["brownbison"], "url": f"https://sam.gov/opp/{i}/view"}
+    if docs is not None:
+        r["documents"] = [{"name": n, "url": f"https://sam.gov/files/{n}/download"} for n in docs]
+    if via:
+        r["via"] = via
+    return r
+
+
+def _dg_api(rows):  # samgov.collect stand-in: {id: docs}; None = the API failed (HTTP 503)
+    return lambda profiles: (({}, ["SAM.gov {'state': 'CO'}: HTTP 503 Service Unavailable"]) if rows is None
+                             else ({i: _dg_rec(i, d) for i, d in rows.items()}, []))
+
+
+def _dg_bulk(profiles):  # the nightly file: the same notices plus one only it has, never a document list
+    return ({f"samgov:{i}": _dg_rec(i, [], via="bulk") for i in ("dg1", "dg2", "dg3", "dgb")}, "nightly file: 4 matching")
+
+
+def _dg_saved_bids():
+    return json.loads((TMP / "OPEN_BIDS_FILE.json").read_text())["bids"]
+
+
+def _dg_newdocs(r):
+    return {k: [d for d in v["diffs"] if "NEW DOCUMENTS" in d] for k, v in r["changed"].items()
+            if any("NEW DOCUMENTS" in d for d in v["diffs"])}
+
+
+try:
+    run.reachable = lambda url, timeout=30: (True, "HTTP 200")
+    os.environ["SAM_API_KEY"] = "test-key-not-real"
+    os.environ[run.BRIEF_MAX_ENV] = "0"  # new matches would otherwise be briefed over the network
+    (TMP / "WATCHLIST_FILE.json").write_text('{"bids": []}')
+    (TMP / "HEALTH_FILE.json").write_text('{"sources": {}}')
+    (TMP / "OPEN_BIDS_FILE.json").write_text('{"bids": {}}')
+    run.samgov_bulk.collect = _dg_bulk
+    # S1 healthy: dg1 has 9 files, dg2 truly none, dg3 one; dgb is in the bulk file only
+    run.samgov.collect = _dg_api({"dg1": _DG9, "dg2": [], "dg3": ["a1"]})
+    s1 = run.scan(["samgov"])
+    _b1 = _dg_saved_bids()
+    check("gap S1 healthy: API rows saved as read, no marker; the bulk-only row is marked documents_unknown",
+          not s1["health"]["samgov"].get("carried_forward") and len(_b1["samgov:dg1"]["documents"]) == 9
+          and _b1["samgov:dg1"]["via"] == "api+bulk" and _b1["samgov:dg2"]["documents"] == []
+          and not any(run.DOCS_UNKNOWN in _b1[f"samgov:{i}"] for i in ("dg1", "dg2", "dg3"))
+          and _b1["samgov:dgb"].get(run.DOCS_UNKNOWN) is True, {k: v.get(run.DOCS_UNKNOWN) for k, v in _b1.items()})
+    # S2 partial: the API fails, every row comes from the bulk file with "documents": []
+    run.samgov.collect = _dg_api(None)
+    s2 = run.scan(["samgov"])
+    _b2 = _dg_saved_bids()
+    check("(a) gap S2 partial: the run is PARTIAL (carried forward, exit 3) and every row came from the bulk file",
+          s2["health"]["samgov"].get("carried_forward") and not s2["health"]["samgov"].get("blind")
+          and run.run_status(s2["health"])["exit_code"] == 3 and all(_b2[f"samgov:{i}"]["via"] == "bulk" for i in ("dg1", "dg2", "dg3")),
+          s2["health"]["samgov"])
+    check("(a) gap S2 partial: open_bids.json keeps the last real read's documents (dg1 9 files, dg3 a1; dg2 stays a known [])",
+          [d["name"] for d in _b2["samgov:dg1"]["documents"]] == _DG9 and [d["name"] for d in _b2["samgov:dg3"]["documents"]] == ["a1"]
+          and _b2["samgov:dg2"]["documents"] == [] and _b2["samgov:dg2"].get(run.DOCS_UNKNOWN) is False
+          and _b2["samgov:dgb"].get(run.DOCS_UNKNOWN) is True and not _dg_newdocs(s2),
+          {k: (len(v.get("documents") or []), v.get(run.DOCS_UNKNOWN)) for k, v in _b2.items()})
+    # S3 clean again: the same 9 files (and dgb, bulk-only until now, shows up in the API with a file)
+    run.samgov.collect = _dg_api({"dg1": _DG9, "dg2": [], "dg3": ["a1"], "dgb": ["x1"]})
+    s3 = run.scan(["samgov"])
+    _b3 = _dg_saved_bids()
+    check("(a) gap S3 clean after the partial run: no NEW DOCUMENTS anywhere (changed, LAST_SCAN.md, REPORT.md), not for dgb either",
+          not _dg_newdocs(s3) and "NEW DOCUMENTS" not in s3["last_scan"] and "NEW DOCUMENTS" not in run.REPORT_FILE.read_text()
+          and not s3["health"]["samgov"].get("carried_forward"), (_dg_newdocs(s3), s3["last_scan"][-600:]))
+    check("(a) gap S3 clean: the real reads are saved, markers cleared",
+          len(_b3["samgov:dg1"]["documents"]) == 9 and [d["name"] for d in _b3["samgov:dgb"]["documents"]] == ["x1"]
+          and not any(run.DOCS_UNKNOWN in _b3[f"samgov:{i}"] for i in ("dg1", "dg2", "dg3", "dgb")),
+          {k: v.get(run.DOCS_UNKNOWN) for k, v in _b3.items()})
+    # S4 healthy: dg1 gets a real amendment, dg2 its first file (S3, a healthy read, truly had none), dg3's file is withdrawn
+    run.samgov.collect = _dg_api({"dg1": _DG9 + ["amend1"], "dg2": ["sow"], "dg3": [], "dgb": ["x1"]})
+    s4 = run.scan(["samgov"])
+    _b4 = _dg_saved_bids()
+    _nd4 = _dg_newdocs(s4)
+    check("(b) healthy run, a real amendment: NEW DOCUMENTS reported, the new file only, in LAST_SCAN.md too",
+          _nd4.get("samgov:dg1") == ["NEW DOCUMENTS (addendum?): amend1"] and "NEW DOCUMENTS (addendum?): amend1" in s4["last_scan"], _nd4)
+    check("(c) first documents on a healthy record whose previous healthy read truly had none: still reported",
+          _nd4.get("samgov:dg2") == ["NEW DOCUMENTS (addendum?): sow"], _nd4)
+    check("healthy source with a document withdrawn: saved as seen ([]), not filled in from the last scan, no marker",
+          _b4["samgov:dg3"]["documents"] == [] and run.DOCS_UNKNOWN not in _b4["samgov:dg3"] and set(_nd4) == {"samgov:dg1", "samgov:dg2"},
+          (_b4["samgov:dg3"], _nd4))
+finally:
+    run.reachable, run.samgov.collect, run.samgov_bulk.collect = _dg_saved[:3]
+    for _n, _v in (("SAM_API_KEY", _dg_saved[3]), (run.BRIEF_MAX_ENV, _dg_saved[4])):
+        if _v is None:
+            os.environ.pop(_n, None)
+        else:
+            os.environ[_n] = _v
+
+# the same rules on records directly: a known-empty list survives a gap; rows saved before the marker existed; DIBBS untouched
+_g_prev = {"samgov:k": _dg_rec("k", [], via="api+bulk"), "samgov:legacy": _dg_rec("legacy", [], via="bulk"),
+           "dibbs:d": {"source": "dibbs", "id": "d", "title": "BEARING", "closing": "2099-01-01"}}
+_g_found = {"samgov:k": _dg_rec("k", [], via="bulk"), "samgov:legacy": _dg_rec("legacy", [], via="bulk"),
+            "dibbs:d": {"source": "dibbs", "id": "d", "title": "BEARING", "closing": "2099-01-01"}}
+run._carry_documents(_g_found, _g_prev, {"samgov", "dibbs"})
+check("_carry_documents: a known-empty list rides through a bulk-only run (marker False) and its first file later is news",
+      _g_found["samgov:k"].get(run.DOCS_UNKNOWN) is False
+      and run._diff(_g_found["samgov:k"], _dg_rec("k", ["first"], via="api")) == ["NEW DOCUMENTS (addendum?): first"], _g_found["samgov:k"])
+check("_diff: a bulk-file row saved before the marker existed (via=bulk, []) is no baseline, so the API's files are not an addendum",
+      run._diff(_g_prev["samgov:legacy"], _dg_rec("legacy", _DG9, via="api+bulk")) == []
+      and _g_found["samgov:legacy"].get(run.DOCS_UNKNOWN) is True, _g_found["samgov:legacy"])
+check("_carry_documents: a source that keeps no document list (DIBBS) gets no marker and no list, degraded or not",
+      _g_found["dibbs:d"] == {"source": "dibbs", "id": "d", "title": "BEARING", "closing": "2099-01-01"}, _g_found["dibbs:d"])
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

@@ -391,6 +391,9 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     for k, v in prev.items():
         if v.get("source") not in sources and k not in found and (days_until(v.get("closing")) or 0) >= 0:
             found[k] = {**v, "carried_forward": True}
+    # a record that came without its document list (a nightly bulk-file row, or its source partial this run) keeps the last
+    # real read's list, or is marked documents_unknown, so the next clean scan does not report the list as an addendum
+    _carry_documents(found, prev, incomplete)
     scanned_sources = {s for s in sources if health[s]["count"] > 0 and s not in incomplete}
     new = {k: v for k, v in found.items() if k not in prev and v["profiles"] and _is_open(v)}
     if "samgov" in sources:
@@ -575,6 +578,47 @@ def _keep_detail(row: dict, old: dict) -> dict:
         if not row.get(f) and old.get(f):
             out[f] = old[f]
     return out
+
+
+# ---------------- document list gaps (2026-11-17 05:36Z): SAM.gov's API answered HTTP 503 on most queries, every samgov row came from
+# the nightly bulk file (no resourceLinks), open_bids.json saved them with "documents": [], and the 06:35Z clean scan reported
+# "NEW DOCUMENTS (addendum?)" for 23 notices whose files had been there all along (f2c0f3bf3abb42579074f7a035f8b624: 9 -> 0 -> 9).
+DOCS_UNKNOWN = "documents_unknown"  # on a saved record: True = no real read of its document list exists yet
+
+
+def _docs_unknown(b: dict) -> bool:
+    """True when record `b`'s document list comes from no real read, so a list seen later is not news: the DOCS_UNKNOWN marker
+    when the record has one; on a record saved before the marker existed, a bulk-file row (via="bulk") with no documents."""
+    if DOCS_UNKNOWN in b:
+        return bool(b[DOCS_UNKNOWN])
+    return b.get("via") == "bulk" and not b.get("documents")
+
+
+def _carry_documents(found: dict, prev: dict, degraded: set) -> int:
+    """Fresh records whose document list is empty or missing because of a gap (a nightly bulk-file row, via="bulk", which has
+    no attachment links; or any row of a source in `degraded`, the sources whose list is incomplete this run) keep the previous
+    record's list (DOCS_UNKNOWN False: known from an earlier read, [] when that read found none). With no earlier read to
+    carry they get DOCS_UNKNOWN True. A real read (a list with documents, or a healthy source's row) is saved as seen, a list
+    that lost documents included, and clears the marker. Rows carried forward whole, and sources that keep no document list
+    (DIBBS), are left alone. Returns how many non-empty lists were carried."""
+    n = 0
+    for k, b in found.items():
+        if b.get("carried_forward"):
+            continue  # the previous record itself, its list and marker included
+        if b.get("documents") or not (b.get("via") == "bulk" or b.get("source") in degraded):
+            b.pop(DOCS_UNKNOWN, None)
+            continue
+        old = prev.get(k) or {}
+        od = old.get("documents")
+        if b.get("documents") is None and od is None:
+            continue
+        if od or (od is not None and not _docs_unknown(old)):
+            b["documents"] = list(od)
+            b[DOCS_UNKNOWN] = False
+            n += bool(od)
+        else:
+            b[DOCS_UNKNOWN] = True
+    return n
 
 
 def _restore_detail(found: dict, prev: dict, source: str) -> None:
@@ -772,9 +816,10 @@ def _diff(old: dict, new: dict) -> list[str]:
     op, np_ = (old.get("prebid") or {}), (new.get("prebid") or {})
     if np_ and (np_.get("date") != op.get("date") or np_.get("mandatory") != op.get("mandatory")):
         out.append(f"pre-bid now {np_.get('date')} mandatory={np_.get('mandatory')}")
-    od = {d["name"] for d in old.get("documents", [])}
-    nd = {d["name"] for d in new.get("documents", [])}
-    if old.get("documents") is not None and nd - od:
+    od = {d["name"] for d in old.get("documents") or []}
+    nd = {d["name"] for d in new.get("documents") or []}
+    # an old list from no real read (bulk-file row, partial run: _carry_documents) is not a baseline: nothing on it is "new"
+    if old.get("documents") is not None and not _docs_unknown(old) and nd - od:
         out.append("NEW DOCUMENTS (addendum?): " + ", ".join(sorted(nd - od))[:300])
     # BidNet Communication tab (watched bids): a buyer notice carries no document, so it only shows up here. Each
     # entry is reported once, the first scan that sees it (2026-11-05: a walkthrough moved from 9 to 10:30 am this way).
