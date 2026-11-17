@@ -1,3 +1,7 @@
+# 2026-11-17 ~10:45 MT: CPW Alamosa (DQ1 PMAA 2027*0176): SEND THE BID DOCS TODAY
+- Redwing Electric (Samantha Quintana) asked 10:23 MT "Do you have any specs or bid docs for this project?" HQ's 10:36 reply (~1.7 KB) carried arrival steps only, no attachment.
+- HQ, next run: reply on that thread with the DQ package (DQ + section 1.4 + any drawings in the bid folder docs/) attached, one email; check Power Pro (Daniel Miller) has them too, and send if not. Both walk Wed 11/18 10:00; they must read the scope before the walk so they can price it. No links, humanize lint, 4-line signature.
+
 # 2026-11-17 ~09:30 MT: OVERDRIVE ORDER (Luke: "need to be working in overdrive... considering dropping the project"). Supersedes the 1/week floor.
 Facts: 4 submitted since 10/5, 0 awards back, ~60 NO/NO-BID. Main killers were (a) no sub price by our own gate, (b) mandatory weekday walks nobody attended.
 1. FLOOR RAISED: at least TWO bids SUBMITTED every Mon-Sun week. Zero or one = logged failure with the named cause.
