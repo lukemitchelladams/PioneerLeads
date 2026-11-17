@@ -81,3 +81,4 @@ Thanks Team,
   Premier Cleaning (Longmont), Cleaning Colorado, Tiger Cleaning, CRM Cleaning, Stratus, Genesis Floor Care, Larson's, Snow Family,
   Panorama, Xclusive Staffing. Gate still Wed 17:00: named attendee in writing or NO-BID.
 - 2026-11-17 15:36Z (08:36 MT, HQ send run, scripts/send_outbox.py, humanize gate PASS, skip-list checked: 0 dropped, 0 errors): round-3 attendee first touch sent to Angel Touch, Rocky Mountain Janitorial, Accurate Janitorial (bcc, RFP + Appendices A/B/C, msg 1a1ea27469cea38b). Gate Wed 11/18 17:00: named attendee in writing or NO-BID.
+- 2026-11-17 15:48Z: Rocky Mountain Janitorial (reply in thread 1a1ea27469cea38b): the named contact says she is the wrong person and forwarded our ask to their Business Development Specialist (named address in the reply; kept out of this file). No send today (one email per company per day); if no answer by Wed 10:00 MT, HQ writes the BD specialist directly before the 17:00 gate.
