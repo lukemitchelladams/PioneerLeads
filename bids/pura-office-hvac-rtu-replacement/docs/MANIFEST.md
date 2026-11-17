@@ -5,7 +5,6 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 ## Files in docs/
 
-- 125 Riverwalk ITN - Public Notice.docx
 - Request for Quotes _ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop U.pdf
 
 ## Referenced in the solicitation

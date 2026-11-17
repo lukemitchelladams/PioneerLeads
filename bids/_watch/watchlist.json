@@ -892,7 +892,7 @@
    "name": "PURA RFQ Office HVAC Replacement + 125 Riverwalk Pl RTU (EVALUATE; due 2026-12-01 16:00 MST)",
    "source": "bidnet",
    "id": "0000443836",
-   "match": "PURA Office HVAC|125 Riverwalk",
+   "match": "PURA Office HVAC|0000443836",
    "folder": "bids/pura-office-hvac-rtu-replacement"
   }
  ]
