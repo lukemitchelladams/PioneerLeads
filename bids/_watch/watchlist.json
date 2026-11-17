@@ -901,6 +901,20 @@
    "id": "IFB1-GJLA-2027000054",
    "match": "RRCC 27-07|BAS Controls Mitigation",
    "folder": null
+  },
+  {
+   "name": "NAVSUP 30--2-TON CHAIN HOIST NSN 3020-01-713-3760, qty 3, due 2026-12-16 (NO: chain hoist, not a Jones Bearing product line; Dad is family and off limits)",
+   "source": "samgov",
+   "id": "6a6f6468b7b642929a57be41b873b7bf",
+   "match": "3020-01-713-3760|6a6f6468b7b642929a57be41b873b7bf",
+   "folder": null
+  },
+  {
+   "name": "NAVSUP 30--2-TON CHAIN HOIST NSN 3020-01-713-3760, qty 3, due 2026-12-16 (NO: chain hoist, not a Jones Bearing product line; Dad is family and off limits)",
+   "source": "samgov",
+   "id": "49fff837ad1c4b87b96e64679cb00652",
+   "match": "3020-01-713-3760|49fff837ad1c4b87b96e64679cb00652",
+   "folder": null
   }
  ]
 }
