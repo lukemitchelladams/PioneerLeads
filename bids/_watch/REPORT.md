@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-17T06:35:48+00:00
+# Bid watch report — 2026-11-17T07:35:54+00:00
 
-**Headline:** 1 NEW matching bids; 23 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 640 | BUYER 439, AGGREGATE 202 | 85 | 2026-11-17T06:35:48+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T06:35:48+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 91 |  | 91 | 2026-11-17T06:35:48+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-17T06:35:48+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 640 | BUYER 439, AGGREGATE 202 | 85 | 2026-11-17T07:35:54+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-17T07:35:54+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 91 |  | 91 | 2026-11-17T07:35:54+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 3 | 2026-11-17T07:35:54+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -24,38 +24,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City of Lafayette | Citywide Custodial Services | 2026-12-18 (31d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Weld County | Southeast Weld Facility Cabling | 2027-01-05 (49d) | 2026-11-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Southeast-Weld-Facility-Cabling/0000442906?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (22d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet |  | Janitorial services- Pagsoa Ranger District | 2026-11-19 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723145047?target=view |
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **Janitorial services- Pagsoa Ranger District** (samgov): NEW DOCUMENTS (addendum?): 12479035880846c2ba24511c9c2e8e8c, 368fe870108b4457b4fa96c8953070e9, 59b61da7b8ef464393d4b6afefe43693, 8478e7e0ec1346bcbd53c64b6e821172, a977b8d8beeb499ebd850b3920f8a5f8, ac1cb1ac22694cf89cad9d71ffad9ed7, e8bcf4784c6140639840c317a899fd42, fa3a5d30cdf04871980df954d6bfe599, fe6f403810464a8588a1ffcc0cf2 — https://sam.gov/workspace/contract/opp/f2c0f3bf3abb42579074f7a035f8b624/view
-- **S--JANITORIAL SERVICES, Channel Islands NP** (samgov): NEW DOCUMENTS (addendum?): 0c92a5a5b570496eb17fe64bbcce0120, 645b84cbaabf48b391523f7c74032e41, 98094eb694d54088b285d1940dd5ff5d, 9db7d63837e14201bf9f37f2dc1ddfab, b85b5e8ceb50413283aa74ad1563bc79, f52dfe7cff774acea75ebad4d2155d4f — https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view
-- **S--BGNDRF CUSTODIAL SERVICES** (samgov): NEW DOCUMENTS (addendum?): 3517904756bc4be7afc6d187390b0942, 40a0cd9bc2df41dea4b7499573b3f075, 431b62b6726f41e6993d6d2d0a51df82, 54fb1630d78d4c329a34d114313974d0, 62349c256f124e4db9f3be13c8296eeb, 6c9f924debc9406b894e5963f0e4adcc, 79ba66f0530f41ed9f71ed91e844b150, b5b4f02c789c435c9d8ee0c8103605c6, cb9f2a839fda46f9a003cfb0a542 — https://sam.gov/workspace/contract/opp/b2e58c41cb4c4787813fbc1f31ea81f7/view
-- **56--PGMB Security Gate** (samgov): NEW DOCUMENTS (addendum?): 0048f893e23e4d588db490f0254fb52e, 53f42592b3964aeb8548f46539354ce7, 5c35d1c2a0ed46549920faace097acc0, 74d6e47f7ada4f2ca4b51fb29e83162d, a0de56f368394419911139f2978e66d1, b36d7d05b92049e3a2c9e2a1f7a5934f, be2ce4cb631e47aa8e7372f6f2bd0fff, cd17f3e91079489dbda82150ad404992, df1ccfedc57e4e1ca95c61daf05e — https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view
-- **Sources Sought: Smart T Power Project** (samgov): NEW DOCUMENTS (addendum?): 3544540ca73a40b1826a340b8493964f, 604ee97e3c4640d5bbcd10189023eacb — https://sam.gov/workspace/contract/opp/bc4fcb32914347a685b0b332444ceedb/view
-- **National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFOR** (samgov): NEW DOCUMENTS (addendum?): 6cb2c374a6724880b64931e11f6fc19b — https://sam.gov/workspace/contract/opp/98b4ea9e2d2146e382cd6c1b6efe1d70/view
-- **J065--Fort Harrison GE Precision Radiology Preventive Maintenance** (samgov): NEW DOCUMENTS (addendum?): 12561202e47b437f993122b098583aae, 39b2ea641fec4d88a699b0723873e175 — https://sam.gov/workspace/contract/opp/da9ea4b3839a49fab63f9e83dfa4ea17/view
-- **USAFA Rangeland Noxious Weed Control** (samgov): NEW DOCUMENTS (addendum?): 0de20e0221c3459db8ba751180a49392, 5670af17b5864c3290eaeabf8eb8b911, 963cde52dd3c464db88f04047787f543, bbfa5d76d7b9400a86a9a392a1642da3 — https://sam.gov/workspace/contract/opp/a0425fc603664d05a403cb9d9703551e/view
-- **Radiant Heating Panel Replacement** (samgov): NEW DOCUMENTS (addendum?): 4f759efe4d3e47ed8a539e2ce92bf5b9, aebe1eac9d8e41c98373ac8425956866, c3df48983c2d4f0cb97dd997f9e68926 — https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view
-- **BSFB Asbestos Survey Services** (samgov): NEW DOCUMENTS (addendum?): 375ef706e20742d8b07d3e24365c9ac0, 3dc2e05cb033405b9eb94862be5fd94e, d29d670cb38b4cc79f42f1950e7764c0, f92165fbfc6f4392b9b2aeef84e9393b — https://sam.gov/workspace/contract/opp/2aad90d6aa1f4120bfffc544d7899799/view
-- **J--Air Compressor Maintenance and Repair IDIQ at Hoover Dam** (samgov): NEW DOCUMENTS (addendum?): af4bde1bf45d4bca8de234a1dd5f8301 — https://sam.gov/workspace/contract/opp/acef0bc5a3c4410991b7ce08b29b6667/view
-- **Z--SACN Replace Fire Alarms and Intrusions Systems** (samgov): NEW DOCUMENTS (addendum?): 5862074b02a5401ea367916e9374f784, 588f4801ddc74d6589ca69f9ff3fddff, 7eecfc7c55494b97b3450e8792d39b63, 9bc0b40ad10e43db9047284cb8e9d01d, aeb09898df5247238254d64d282c5d58, b68a1dcbc9d040a5ba42ed155b3ef241, c206e1a5793d4632956698d3927e1b78, c27759f36de247a2a12d88176b072987, c49f1e87db984e7baec8261b7b4f — https://sam.gov/workspace/contract/opp/0f9b38e12f184fadbb459e087e00963d/view
-- **HOUSING, BEARING UNI** (samgov): NEW DOCUMENTS (addendum?): 16995876221a4b40ae9a0815464a2e75 — https://sam.gov/workspace/contract/opp/8ccf3c647f414b7ea5cbb513ccfb51c9/view
-- **Multi NSN LTC** (samgov): NEW DOCUMENTS (addendum?): 1f3d94362aff42a9953aaa03f0a445e4, 5af95db17b7149489c844fe55dc01af4 — https://sam.gov/workspace/contract/opp/95a2d27f4a0841b69190a165a262ef7c/view
-- **Noise Tested Bearings IDIQ- Amendment 0001** (samgov): NEW DOCUMENTS (addendum?): 3de4ebea2af94eed96481bc25b8c2a85 — https://sam.gov/workspace/contract/opp/e7220f8924254f4fac1a83a72708bba1/view
-- **BEARING ROLLER** (samgov): NEW DOCUMENTS (addendum?): f71274a92f504e959973a64b8e5995cc — https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view
-- **CUSTOM GEARBOX** (samgov): NEW DOCUMENTS (addendum?): 4af0be9dbe754c038de78a52dfa9e692, 5029001c81d94f2d9a32443429a652be — https://sam.gov/workspace/contract/opp/030fbc47bac041ddb7216401102fc679/view
-- **30--GEAR, PINION** (samgov): NEW DOCUMENTS (addendum?): 70f73e49db79466493b5d3bc69fe0adf — https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view
-- **Low Level Cranes- CSO** (samgov): NEW DOCUMENTS (addendum?): 1e718a900f854706a1345bdf0fe0c389, 316253c06523460b9e40dad8f4ff9a58, 32e57f3ab30a4e3b8c0b5167678fe32e — https://sam.gov/workspace/contract/opp/20b6fa9843bd4925b7964e5dfb36f976/view
-- **FRCSW Hoist Requirement** (samgov): NEW DOCUMENTS (addendum?): 442608aed4a5486a8e023f4ae982549d, bd02834a82944e43aeb5541cdb3dd9d5, df5324c0155c4310bee0bbd2c073e8a0 — https://sam.gov/workspace/contract/opp/edca6c0e45674c149ab966bc1096fe6b/view
-- **Vandenberg Crane Replacement** (samgov): NEW DOCUMENTS (addendum?): 2bdabe58e06a4fa3a73b7afd89faec59, 46e4891a0d1845f38221335a1db7c3e8, 57fe3ddd04604debbfc681dda3ad8720, 5b5c76d8de314eddad63615524992a0a, 61590f07642b4caab792e5e88543cec0, 6c906e06f40d4dff8e62b417f8dc6dac, 79cc826a989843719dd77b074c698cc5, 9d28dcffc6df40009b7c2eea72858a84, a2553426ff1a4fe7853fdff6085a — https://sam.gov/workspace/contract/opp/3a25347065dc4abab033df330d536ef2/view
-- **4610--FY27 Portable Reverse Osmosis (RO) Water Purification System** (samgov): NEW DOCUMENTS (addendum?): 4e926f007caa4a78b7d0ab832d5e3b30 — https://sam.gov/workspace/contract/opp/595a043c43e3421c9ce457df6614d29f/view
-- **Five (5)-Year Indefinite Delivery Indefinite Quantity Contract for Desalinator, Hnd, OP** (samgov): NEW DOCUMENTS (addendum?): c540ba0f2201431da5e3d6a2e518afc3 — https://sam.gov/workspace/contract/opp/5b9e3b6504d8415fa62c7f45f7fa15d0/view
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -164,7 +132,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (2d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (2d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (2d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | Janitorial services- Pagsoa Ranger District | 2026-11-19 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723145047?target=view |
+| brownbison WATCHED | bidnet |  | Janitorial services- Pagsoa Ranger District | 2026-11-19 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723145047?target=view |
 | brownbison | bidnet |  | Baseball Field Fencing Project (paid-tier notice) | 2026-11-19 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view |
 | brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (paid-tier notice) | 2026-11-19 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF.FOREST SERVIC | Janitorial services- Pagsoa Ranger District | 2026-11-19 (2d) |  | https://sam.gov/workspace/contract/opp/f2c0f3bf3abb42579074f7a035f8b624/view |
