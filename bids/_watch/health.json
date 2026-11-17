@@ -1,27 +1,38 @@
 {
-  "checked_at": "2026-11-17T01:36:00+00:00",
+  "checked_at": "2026-11-17T02:37:18+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "blind": true,
-      "carried_forward": true,
-      "complete": false,
-      "count": 637,
+      "complete": true,
+      "count": 638,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "down_runs": 1,
-      "down_since": "2026-11-17T01:36:00+00:00",
       "errors": [
-        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+        "BidNet detail tabs stalled: the Documents tab of 0000442370 never rendered in 15 s (page still shows: 403 Forbidden); the other bids' tabs are skipped this scan and their documents / notices / answers keep last scan's"
       ],
-      "last_success": "2026-11-17T00:35:47+00:00",
-      "logged_in": false,
-      "login_note": "COOL-DOWN after a robot check, until 2026-11-17T02:36:57+00:00",
+      "last_success": "2026-11-17T02:37:18+00:00",
+      "logged_in": true,
+      "login_note": "logged in (attempt 1)",
       "matches": 84,
       "reach_note": "HTTP 200",
-      "reachable": true
+      "reachable": true,
+      "site_totals": {
+        "statewide AGGREGATE": 200,
+        "statewide BUYER": 439
+      },
+      "tab_stall": {
+        "at": "2026-11-17T02:44:16+00:00",
+        "bid": "0000442370",
+        "dialogs_closed": [],
+        "dialogs_shown": [
+          "403 Forbidden"
+        ],
+        "note": "BidNet detail tabs stalled: the Documents tab of 0000442370 never rendered in 15 s (page still shows: 403 Forbidden); the other bids' tabs are skipped this scan and their documents / notices / answers keep last scan's",
+        "tab": "Documents",
+        "tab_id": "docs-items"
+      }
     },
     "bonfire": {
       "count": 2,
@@ -32,7 +43,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-17T01:36:00+00:00",
+      "last_success": "2026-11-17T02:37:18+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -44,7 +55,7 @@
       "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-17T01:36:00+00:00",
+      "last_success": "2026-11-17T02:37:18+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 3,
@@ -84,7 +95,7 @@
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-17T01:36:00+00:00",
+      "last_success": "2026-11-17T02:37:18+00:00",
       "logged_in": true,
       "login_note": "API key; +32 from the nightly bulk file",
       "matches": 90,
