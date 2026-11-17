@@ -1894,8 +1894,8 @@
    "title": "RFQ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop Unit",
    "due": "2026-12-01T16:00:00-07:00",
    "decision": "EVALUATE (gated on licensing answer; asked PURA 2026-11-17)",
-   "decision_note": "Surfaced 2026-11-17 19:36Z scan. Public doc link 404 from the cloud; watchlisted so the logged-in scan downloads the RFQ. Pre-bid: not in hand yet. | 2026-11-17 20:4xZ HQ: RFQ read. Part A office HVAC replacement (115 E Riverwalk Unit 410) + Part B leaking RTU at 125 Riverwalk Pl; optional walks by appointment; questions 11/24 16:00 MT; due 12/01 16:00 MT single PDF on BidNet. Qualification: \"Contractors must be licensed to do mechanical work in Pueblo County and have at least three years of commercial HVAC experience.\" Asked PURA whether a licensed sub satisfies it (msg 1a1eb3f530b9ebf1); yes -> GO, no -> NO-BID.",
-   "prebid": "optional walk-through by appointment (RFQ p.1)",
+   "decision_note": "Surfaced 2026-11-17 19:36Z scan. Public doc link 404 from the cloud; watchlisted so the logged-in scan downloads the RFQ. Pre-bid: not in hand yet. | 2026-11-17 20:4xZ HQ: RFQ read. Part A office HVAC replacement (115 E Riverwalk Unit 410) + Part B leaking RTU at 125 Riverwalk Pl; optional walks by appointment; questions 11/24 16:00 MT; due 12/01 16:00 MT single PDF on BidNet. Qualification: \"Contractors must be licensed to do mechanical work in Pueblo County and have at least three years of commercial HVAC experience.\" Asked PURA whether a licensed sub satisfies it (msg 1a1eb3f530b9ebf1); yes -> GO, no -> NO-BID. | Pre-bid: optional walk-through by appointment (RFQ p.1); no fixed date (worker 21:21Z moved this text out of the 'prebid' date field, which must be ISO or null, after it crashed build_dashboard_data.py).",
+   "prebid": null,
    "folder": "bids/pura-office-hvac-rtu-replacement",
    "sol": "2026.11.17.1 (BidNet 0000443836)",
    "trade": "HVAC",
@@ -1904,7 +1904,8 @@
    "subs": "6 HVAC firms asked 2026-11-17 (3 MWBE; msg 1a1eab143f3e83ba), pricing by 11/30; see sub-outreach.md",
    "contact": "Chris DeLuca, Business and Development Director, cdeluca@puebloura.org",
    "sub_pricing": "none asked yet (RFQ not in hand)",
-   "due_source": "BidNet listing: Closing 12/01/2026 04:00 PM MST"
+   "due_source": "BidNet listing: Closing 12/01/2026 04:00 PM MST",
+   "prebid_mandatory": false
   }
  ],
  "events": [
