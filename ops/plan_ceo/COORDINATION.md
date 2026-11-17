@@ -1,3 +1,18 @@
+# 2026-11-17 ~09:30 MT: OVERDRIVE ORDER (Luke: "need to be working in overdrive... considering dropping the project"). Supersedes the 1/week floor.
+Facts: 4 submitted since 10/5, 0 awards back, ~60 NO/NO-BID. Main killers were (a) no sub price by our own gate, (b) mandatory weekday walks nobody attended.
+1. FLOOR RAISED: at least TWO bids SUBMITTED every Mon-Sun week. Zero or one = logged failure with the named cause.
+2. PRICE FROM DOCUMENTS BY DEFAULT. A sub price is a bonus, never a gate. Our own estimate (wage determination / unit rates / incumbent award from USAspending or the agency's past award) + fee. Line the sub up after submission, before award acceptance. Never attribute a number to a sub who did not give it.
+3. NO-BID now needs one of: a disqualifying requirement in the documents (license in bidder's name, no-subcontracting clause, bonding we can't get, missed mandatory walk). "No sub replied" is no longer a NO-BID reason.
+4. Next 4 weeks, submit-in-order (HQ owns each; Mac owns the inbox side):
+   wk 11/16: PSD hoods 11/20 (floor), Pagosa 11/19 (floor 2). Luke signatures already requested.
+   wk 11/23: BVCC boiler chemicals 11/30, Lakewood board-up/fencing RFP 6706 12/01 (no pre-bid; flip EVALUATE->GO, build now).
+   wk 11/30: BGNDRF custodial 12/04, Canon City boiler/chiller 12/07, Canon City janitorial 151-26 12/07 (walk 11/30 is NON-mandatory; flip to GO).
+   wk 12/07: Widefield kitchen equipment 12/11, CPW heater 12/09 (Power Pro attending 11/18), Arapahoe 26-64 drywall/paint 12/09 (MANDATORY walk Mon 11/23 10:00: line up a painting sub attendee by Fri 11/20 or drop), DUS lighting 12/07 (read docs, decide by Fri 11/20), landscape bidnet-444226398382 12/16 (identify agency this week).
+   wk 12/14: Lafayette 12/18 (if attendee found), Aims windows 01/06 (SK Building Services pricing).
+5. Every bid gets its signable copy to Luke >=48h before due, one email, sign-here pages flagged. Luke's only jobs: sign, upload.
+6. Daily: one new-solicitation sweep (SAM simplified-acquisition RFQs under $250K in our NAICS, CO + NM + WY + UT), add >=3 new candidates a week with no mandatory walk.
+7. Mandatory-walk fix proposed to Luke: a paid local walk rep (flat fee per walk) so weekday walks stop killing bids. Until he says yes, walks are covered only by sub attendees.
+
 # 2026-11-16 ~14:45 MT: TWO MANDATORY WALKS NOW UNSTAFFED (HQ act today)
 - Lafayette custodial: Clean Conscience will bid direct and asked off our list (reply 11/16 ~14:30 MT); Natalie no longer signs in Thu 10:00.
   Honor the removal. Today: open 2-3 new Boulder County custodial sub lines asking one thing, attend Thu 10:00 for Brown Bison; replacement confirmed by Wed 17:00 or log the NO-BID reason.

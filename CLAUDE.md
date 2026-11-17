@@ -1,6 +1,6 @@
 # CLAUDE.md — Brown Bison
 
-- **HARD FLOOR (Luke 11/13): at least one bid SUBMITTED every week.** Insurance application signed 11/16, carrier approval PENDING (not in force; never claim coverage until the carrier's certificate arrives). Every Monday plan names the floor bid + 2 backups; a zero week is a logged failure. See ops/plan_ceo/COORDINATION.md 2026-11-16.
+- **HARD FLOOR (raised 11/17, OVERDRIVE): at least TWO bids SUBMITTED every week; price from documents by default, sub price is never a gate.** Insurance application signed 11/16, carrier approval PENDING (not in force; never claim coverage until the carrier's certificate arrives). Every Monday plan names the floor bid + 2 backups; a zero week is a logged failure. See ops/plan_ceo/COORDINATION.md 2026-11-16.
 
 ## What this repo is
 Brown Bison's government-contracting workspace. Bids, proposals, vendor Q&A, and project memory.
