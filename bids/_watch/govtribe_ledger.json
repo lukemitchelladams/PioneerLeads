@@ -2955,6 +2955,12 @@
    "verdict": "GO",
    "why": "Already GO as usfs-pagosa-janitorial-1240LP27Q0008 (BACKUP 1 to the weekly floor); amendment record.",
    "at": "2026-11-16T23:30:00Z"
+  },
+  "samgov:fa1c9afb6a2d4e3d88010eb28b1aa115": {
+   "name": "VA NCA Pikes Peak Janitorial Base plus 4 (36C78627Q0040, re-post, closes 2026-12-01)",
+   "verdict": "NO",
+   "why": "Re-post of 0bc3e40e; open_bids set_aside 'Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)'; Brown Bison is not SDVOSB (worker 06:21Z, agrees with HQ 05:36Z).",
+   "at": "2026-11-17T06:30:00Z"
   }
  },
  "watched": {
@@ -3140,6 +3146,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-17T05:30:00Z",
+ "last_hourly_check": "2026-11-17T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
