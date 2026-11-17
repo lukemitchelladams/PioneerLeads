@@ -2912,3 +2912,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Metro Water PAR 1502: confirmed NO from the RFP ("PROFESSIONAL ENGINEERING SERVICES", consulting engineer, DBB); watch for the construction bid later.
 - COS snow R26-082JW (due Mon 11/23): performer is Alex Ditto per the pipeline; operators never contact Alex, so it stays Luke's.
 - BGNDRF pricing agent resumed after the restart.
+- 00:21Z worker tick (Mon 17:21 MT): CPW Surefire declined (4 declined/3 bounced/0 yes; walk not required per buyer). COS R26-080JW janitorial CANCELLED by the City (HQ d403e29; was next week's floor candidate). Metro Water PAR 1502 → ledger NO (engineering services). HQ 23:40Z scan: all 3 cloud sources live (bidnet 642/84, samgov 94, coloradovss 69/3), 0 new; open matches 150. No insurance certificate.
+  Dashboard 00:30Z: bids v385 (4aca8867eb0e4388ffce3a6bf5839f6b), events v388 (0d8553c37ee4c6a35d4b7edd0b6dea74), sources v334 (d16a417590ca7f50982ad4bbf6a8cb16), portal_feed v194 (59f805ec866f112e9f40a215db028b86); old blobs deleted; doc_gaps v14 unchanged.
