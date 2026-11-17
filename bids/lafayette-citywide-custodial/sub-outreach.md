@@ -80,3 +80,4 @@ Thanks Team,
   PASS). Rejected (form/phone only, no site, franchise, or out of area): Big M Services, Limitless Cleaning, Aspen Maintenance, CityWide,
   Premier Cleaning (Longmont), Cleaning Colorado, Tiger Cleaning, CRM Cleaning, Stratus, Genesis Floor Care, Larson's, Snow Family,
   Panorama, Xclusive Staffing. Gate still Wed 17:00: named attendee in writing or NO-BID.
+- 2026-11-17 15:36Z (08:36 MT, HQ send run, scripts/send_outbox.py, humanize gate PASS, skip-list checked: 0 dropped, 0 errors): round-3 attendee first touch sent to Angel Touch, Rocky Mountain Janitorial, Accurate Janitorial (bcc, RFP + Appendices A/B/C, msg 1a1ea27469cea38b). Gate Wed 11/18 17:00: named attendee in writing or NO-BID.
