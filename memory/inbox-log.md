@@ -627,3 +627,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-16 23:21Z: 2 new inbound: 1a1e691bb0a12714 BidNet addendum for COS R26-082JW On-Call Snow Removal (ours REVIVE, due 11/23 14:30; watched with folder, scanner files it) → pipeline note; 1a1e67ecb3e94fac Klay Tolleson (CPW) ack, "will look forward to hearing from you regarding attendance by Tuesday" (HQ has it). No bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 00:21Z: 2 new inbound: 1a1e6cf5bbc5d5e7 CPW Surefire Heating and Cooling DECLINED ("unable to participate") → sub-outreach.md + pipeline; 1a1e6b319e344b56 BidNet: COS R26-080JW On-Call Janitorial CANCELLED by the City (HQ logged, courtesy note staged). No bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 01:21Z: 0 new inbound since 00:01Z; no bounces; no insurance certificate; Luke/CRM 0.
+- 2026-11-17 02:21Z: 0 new inbound (2h); no bounces; no insurance certificate; Luke/CRM 0.
