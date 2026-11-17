@@ -35,3 +35,12 @@ and specialty preparation equipment". Excluded: "Steamers, dishwashers, and sani
 ## Sources
 - docs/RFP 26-27-013 - Kitchen Equipment Maintenance and Repair.pdf (11 pp, pulled from BidNet 2026-11-12)
 - ops/research/2026-11-12-widefield-kitchen-subs.md (worker sub sweep)
+
+## 2026-11-17 21:4xZ (HQ): Addendum 1 / Q&A Document 1 (docs/Q_A Document 1.pdf)
+- Q1 pricing format: "Please provide your hourly labor rates and standard pricing structure. Please also include rates for emergency on call
+  times" -> the price form is hourly + emergency rates, not a priced equipment list.
+- Q2: "No equipment list will be provided." "There is no scheduled site visit at this time. There may be one scheduled at a later date if
+  requested by the committee." (Rule 0: no walk now; watch for one.)
+- Q3: "The district does not use oil fryers."
+- Effect: Five Star's regular and emergency hourly rates (private/SUB-PRICING.md) already cover the District's pricing format; PM per-unit
+  pricing and three references due from Five Star Fri 11/20.
