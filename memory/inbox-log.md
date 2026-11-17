@@ -633,3 +633,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-17 05:21Z: 0 new inbound (2h; Power Pro 1a1e7ab4b7c97cb2 already logged 04:21Z); no new bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-17 06:21Z: 0 new inbound (2h); no new bounces (4 in 1d, all logged); no insurance certificate; Luke/CRM 0.
 - 2026-11-17 07:21Z: 0 new inbound (2h); no new bounces (4 in 1d, all logged); no insurance certificate; Luke/CRM 0.
+- 2026-11-17 08:21Z: 1 new inbound: 1a1e873238126fc7 BidNet saved-search alert (07:40Z) "Transmission Building HVAC Replacement", Metro Water Recovery, closes 2026-12-18 = bidnet:0000443738 / 10129004907, already ledger NO (professional engineering services RFP, HQ d403e29). No bounces; no insurance certificate; Luke/CRM 0.
