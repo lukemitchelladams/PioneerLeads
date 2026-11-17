@@ -11,7 +11,7 @@ Facts: 4 submitted since 10/5, 0 awards back, ~60 NO/NO-BID. Main killers were (
    wk 12/14: Lafayette 12/18 (if attendee found), Aims windows 01/06 (SK Building Services pricing).
 5. Every bid gets its signable copy to Luke >=48h before due, one email, sign-here pages flagged. Luke's only jobs: sign, upload.
 6. Daily: one new-solicitation sweep (SAM simplified-acquisition RFQs under $250K in our NAICS, CO + NM + WY + UT), add >=3 new candidates a week with no mandatory walk.
-7. Mandatory-walk fix proposed to Luke: a paid local walk rep (flat fee per walk) so weekday walks stop killing bids. Until he says yes, walks are covered only by sub attendees.
+7. LUKE 11/17: NO paid walk reps. Mandatory walks are covered by someone from the sub company we are bidding with. Ask the sub for an attendee in the FIRST outreach email on any bid with a mandatory walk, not later; confirm the attendee's name >=2 business days before the walk and register them with the buyer as attending for Brown Bison. No sub attendee confirmed = NO-BID on walk grounds, logged.
 
 # 2026-11-16 ~14:45 MT: TWO MANDATORY WALKS NOW UNSTAFFED (HQ act today)
 - Lafayette custodial: Clean Conscience will bid direct and asked off our list (reply 11/16 ~14:30 MT); Natalie no longer signs in Thu 10:00.
