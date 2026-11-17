@@ -115,5 +115,21 @@
     "attachments": [],
     "asks": 0,
     "to_count": 1
+  },
+  "cpw-klay-attendees-2026-11-17": {
+    "id": "1a1ea5e3a3efeb3a",
+    "threadId": "1a1e612e03064899",
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0,
+    "to_count": 1
+  },
+  "cpw-redwing-attendee-2026-11-17": {
+    "id": "1a1ea5e3f451ddf0",
+    "threadId": "1a1e500ae48ba2a1",
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0,
+    "to_count": 1
   }
 }

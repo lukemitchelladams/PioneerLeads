@@ -191,7 +191,7 @@
    "govtribe_ids": []
   },
   {
-   "name": "CU Boulder UCB001622 Irrigation & Landscape (EVALUATE)",
+   "name": "CU Boulder UCB001622 Irrigation & Landscape (NO: A/E design Request for Qualifications, re-issued 11/17 by Addendum 1, submittals 12/04, design start 2027-03-01; not our trade)",
    "source": "bidnet",
    "id": "0000440456",
    "match": "UCB001622",
@@ -880,6 +880,13 @@
    "id": "01754c67a9fd4dd99e16171e0bfc4c04",
    "match": "3110-01-310-2258",
    "folder": null
+  },
+  {
+   "name": "DEN (Denver Aviation) HVAC Air Filter Replacement & Coil Cleaning RFP DEN-2026-020-10021 (EVALUATE; optional Teams pre-bid 11/20 14:00 MST; due 12/04)",
+   "source": "bidnet",
+   "id": "0000443425",
+   "match": "HVAC Air Filter Replacement & Coil Cleaning|DEN-2026-020-10021",
+   "folder": "bids/den-hvac-filters-coil-cleaning"
   }
  ]
 }
