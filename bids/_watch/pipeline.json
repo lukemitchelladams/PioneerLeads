@@ -102,7 +102,7 @@
    "due": "2026-10-28T10:00:00-06:00",
    "portal": "Email emorales@sd27j.net",
    "decision": "NO",
-   "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Questions due 2026-10-23 15:00 (4 drafted in sub-outreach.md). Sub outreach has not gone out; 8 days to submission.",
+   "decision_note": "NO-GO per Luke 2026-10-27: no sub pricing before the 10/28 deadline. Questions due 2026-10-23 15:00 (4 drafted in sub-outreach.md). Sub outreach has not gone out; 8 days to submission. | 2026-11-17 18:19Z: BidNet says the 27J award(s) for 2021B RRHS Speaker Cabling are published (msg 1a1eabbf2ad1dfa2). We did not bid; the award notice on BidNet (logged-in) is pricing intel for future 27J low-voltage work.",
    "prebid": null,
    "prebid_mandatory": false,
    "performer": "Low-voltage sub",
@@ -1878,7 +1878,15 @@
    "decision": "GO (HQ 2026-11-17, Overdrive order; no disqualifier found)",
    "decision_note": "BidNet 0000443425. Optional Teams pre-bid 2026-11-20 14:00 MST; questions 2026-11-23 14:00 MST; due 2026-12-04 14:00 MST on BidNet. 5-yr term; subcontracting allowed (III-13); no bond; 7% MWBE goal; DEN supplies filters; ~1,700 units, 5,774 filter changes + 1,699 coil cleanings/yr (Appendix II). 6 HVAC subs asked 2026-11-17 (msg 1a1eab143f3e83ba), pricing by 11/30. 25 BidNet questions drafted for Luke to post by 11/23.",
    "prebid": "2026-11-20T14:00:00-07:00",
-   "folder": "bids/den-hvac-filters-coil-cleaning"
+   "folder": "bids/den-hvac-filters-coil-cleaning",
+   "sol": "RFP DEN-2026-020-10021 (BidNet 0000443425)",
+   "trade": "HVAC (filter replacement + coil cleaning)",
+   "portal": "BidNet Direct / Rocky Mountain E-Purchasing System; questions and proposals only through BidNet (\"UNDER NO CIRCUMSTANCES WILL E-MAIL OR FACSIMILE RESPONSES BE ACCEPTED\", RFP p.2)",
+   "performer": "Brown Bison (prime) + HVAC service sub (TBD)",
+   "subs": "6 HVAC firms asked 2026-11-17 (3 MWBE; msg 1a1eab143f3e83ba), pricing by 11/30; see sub-outreach.md",
+   "contact": "Contract Administrator Ashley Eitniear, contract.procurement@flydenver.com (RFP p.2); no phone inquiries",
+   "sub_pricing": "None (6 asked 11/17, pricing by 11/30); price from documents per Overdrive",
+   "due_source": "RFP p.2: 'Proposal Due Date December 4, 2026, by 2:00 PM MST'"
   }
  ],
  "events": [

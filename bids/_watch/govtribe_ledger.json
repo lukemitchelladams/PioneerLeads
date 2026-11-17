@@ -2967,6 +2967,12 @@
    "verdict": "GO",
    "why": "Same solicitation as samgov:f2c0f3bf / 1d1b8d72 (GO, floor backup 1, folder bids/usfs-pagosa-janitorial-1240LP27Q0008); HQ watchlist entry added 06:35Z; no separate bid (worker 07:21Z).",
    "at": "2026-11-17T07:30:00Z"
+  },
+  "samgov:7b08515e5fc149828cce5d7674ca2d8c": {
+   "name": "Reclamation NCAO Fire Alarm (140RR027Q0013, Northern California, closes 2026-11-25)",
+   "verdict": "NO",
+   "why": "open_bids set_aside 'Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)'; Brown Bison is not SDVOSB; Northern California Area Office, outside CO/NM/WY/UT (worker 18:21Z).",
+   "at": "2026-11-17T18:30:00Z"
   }
  },
  "watched": {
@@ -3152,6 +3158,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-17T17:30:00Z",
+ "last_hourly_check": "2026-11-17T18:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
