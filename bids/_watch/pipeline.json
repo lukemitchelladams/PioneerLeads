@@ -1887,6 +1887,24 @@
    "contact": "Contract Administrator Ashley Eitniear, contract.procurement@flydenver.com (RFP p.2); no phone inquiries",
    "sub_pricing": "None (6 asked 11/17, pricing by 11/30); price from documents per Overdrive",
    "due_source": "RFP p.2: 'Proposal Due Date December 4, 2026, by 2:00 PM MST'"
+  },
+  {
+   "id": "pura-office-hvac-rtu",
+   "agency": "Pueblo Urban Renewal Authority",
+   "title": "RFQ PURA Office HVAC Replacement and 125 Riverwalk Pl Rooftop Unit",
+   "due": "2026-12-01T16:00:00-07:00",
+   "decision": "EVALUATE (HQ 2026-11-17; RFQ not in hand yet)",
+   "decision_note": "Surfaced 2026-11-17 19:36Z scan. Public doc link 404 from the cloud; watchlisted so the logged-in scan downloads the RFQ. Pre-bid: not in hand yet.",
+   "prebid": null,
+   "folder": "bids/pura-office-hvac-rtu-replacement",
+   "sol": "2026.11.17.1 (BidNet 0000443836)",
+   "trade": "HVAC",
+   "portal": "BidNet Direct (RMEPS)",
+   "performer": "HVAC sub (TBD)",
+   "subs": "6 HVAC firms asked 2026-11-17 (3 MWBE; msg 1a1eab143f3e83ba), pricing by 11/30; see sub-outreach.md",
+   "contact": "not in hand yet",
+   "sub_pricing": "none asked yet (RFQ not in hand)",
+   "due_source": "BidNet listing: Closing 12/01/2026 04:00 PM MST"
   }
  ],
  "events": [
