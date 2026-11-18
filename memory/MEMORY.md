@@ -3079,3 +3079,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-18 16:35Z scan (09:35 MT Wed)
 - Session reused, push da5925e. bidnet 688/85 | samgov 105/105 | coloradovss 67/4 | bonfire 2/1 | total 862/195. 2 new = NO (Weld environmental consulting 0000443937; Estes Park CM/GC public safety facility 0000443925). Grandview roof (NO) Addendum 4 docs auto-downloaded (bid proposal form V4 + Q&A 1); no bid folder. Leak grep 0.
 - Tolin replies: Joe Volanti will send the Canon City 129-26 boiler/chiller quote by end of business today (16:15Z); Tolin Denver (Michael Weiss, 16:31Z) DECLINED DEN: "already aligned on DIA with another partner" = a competitor team. DEN subs left: the 6 asked 11/17.
+- 16:4xZ RMJ BD note sent directly (msg 1a1ef8ae8f70d5e6); domain-match skip again (Jessica's 11/17 forward). Lafayette gate 17:00 MT: named attendee in writing or NO-BID.
