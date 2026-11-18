@@ -1,29 +1,29 @@
 {
-  "checked_at": "2026-11-18T20:36:22+00:00",
+  "checked_at": "2026-11-18T21:37:24+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 688,
+      "count": 676,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
       "errors": [],
       "extra_loads": {
-        "deferred": 2,
+        "deferred": 0,
         "max": 8,
-        "used": 8
+        "used": 6
       },
-      "last_success": "2026-11-18T20:36:22+00:00",
+      "last_success": "2026-11-18T21:37:24+00:00",
       "logged_in": true,
       "login_note": "logged in (attempt 1)",
-      "matches": 86,
+      "matches": 85,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 232,
-        "statewide BUYER": 457
+        "statewide AGGREGATE": 228,
+        "statewide BUYER": 449
       }
     },
     "bonfire": {
@@ -35,7 +35,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-18T20:36:22+00:00",
+      "last_success": "2026-11-18T21:37:24+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -44,17 +44,17 @@
     },
     "coloradovss": {
       "complete": true,
-      "count": 66,
+      "count": 65,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-18T20:36:22+00:00",
+      "last_success": "2026-11-18T21:37:24+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 66
+        "statewide open": 65
       }
     },
     "dibbs": {
@@ -82,15 +82,15 @@
     "samgov": {
       "bulk_added": 45,
       "bulk_note": "bulk file cached 2026-11-18T05:41:22+00:00; 104 matching (parsed earlier)",
-      "count": 106,
+      "count": 107,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-18T20:36:22+00:00",
+      "last_success": "2026-11-18T21:37:24+00:00",
       "logged_in": true,
       "login_note": "API key; +45 from the nightly bulk file",
-      "matches": 106,
+      "matches": 107,
       "reach_note": "HTTP 404",
       "reachable": true
     }
