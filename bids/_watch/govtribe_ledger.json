@@ -3069,6 +3069,18 @@
    "verdict": "NO",
    "why": "HQ 11:35Z watchlist NO: product buy outside our trades (same as the 2-ton hoist N0010426QBJ41); no volume case.",
    "at": "2026-11-18T12:25:00Z"
+  },
+  "bidnet:0000443937": {
+   "name": "Weld County On-Call Environmental Consulting Services, due 2026-12-11 (mandatory 12/02)",
+   "verdict": "NO",
+   "why": "HQ 16:35Z watchlist NO: environmental consulting is professional services, not our trades.",
+   "at": "2026-11-18T17:25:00Z"
+  },
+  "bidnet:0000443925": {
+   "name": "Town of Estes Park CM/GC Public Safety Facility, due 2026-12-22 (mandatory 12/01)",
+   "verdict": "NO",
+   "why": "HQ 16:35Z watchlist NO: CM/GC general construction, not our trades (rule 8 / no GC work).",
+   "at": "2026-11-18T17:25:00Z"
   }
  },
  "watched": {
@@ -3254,6 +3266,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T16:30:00Z",
+ "last_hourly_check": "2026-11-18T17:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
