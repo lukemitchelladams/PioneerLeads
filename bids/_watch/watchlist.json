@@ -966,6 +966,20 @@
    "source": "samgov",
    "match": "N0010427QBC70|1bbbca1e2cd240838a114e008f5dd75d",
    "folder": null
+  },
+  {
+   "name": "Weld County On-Call Environmental Consulting Services (NO: environmental consulting, not our trade; mandatory 12/02)",
+   "source": "bidnet",
+   "id": "0000443937",
+   "match": "0000443937",
+   "folder": null
+  },
+  {
+   "name": "Estes Park CM/GC Public Safety Facility (NO: CM/GC building construction, not our trade; mandatory 12/01)",
+   "source": "bidnet",
+   "id": "0000443925",
+   "match": "0000443925",
+   "folder": null
   }
  ]
 }
