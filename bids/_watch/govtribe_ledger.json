@@ -3057,6 +3057,12 @@
    "verdict": "NO",
    "why": "Same out-of-region California job already NO (samgov:eea997c0..., samgov:167b070b...).",
    "at": "2026-11-18T07:25:00Z"
+  },
+  "samgov:e022e329a81747a4b3119b645b6758de": {
+   "name": "USFS Gila NF RFQ 127EAX27Q0015 GCAFB/tanker base electrical upgrades, Hurley NM, due 2026-12-11 12:00 MT",
+   "verdict": "GO",
+   "why": "HQ 2026-11-18 08:10Z: no bonds, optional 11/24 10:00 site visit (sub attendee only), no license in our name (sub NM license evaluated), 52.219-14 not listed; folder bids/usfs-gila-electrical-127EAX27Q0015.",
+   "at": "2026-11-18T08:25:00Z"
   }
  },
  "watched": {
@@ -3242,6 +3248,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T07:30:00Z",
+ "last_hourly_check": "2026-11-18T08:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
