@@ -79,5 +79,13 @@
     ],
     "asks": 0,
     "to_count": 0
+  },
+  "hoodz-references-ask-2026-11-18": {
+    "id": "1a1eff295257aad6",
+    "threadId": "1a1a878f8cda76a3",
+    "bcc_count": 0,
+    "attachments": [],
+    "asks": 0,
+    "to_count": 1
   }
 }

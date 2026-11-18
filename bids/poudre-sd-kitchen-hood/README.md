@@ -22,3 +22,4 @@ Decision: **EVALUATE** (2026-10-26). Brown Bison bids; a hood-cleaning sub perfo
 - 2026-11-14 20:45Z (HQ): poudre-fire.org is HTTP 403 from the cloud environment (same as the worker's block), so PFA Notice 2026-02, the
   Minimum Contractor Qualifications Guidebook and the Brycer notices page cannot be fetched from here. 7.1 statement stays conditional on them;
   ask Luke to open the three PFA pages or allowlist www.poudre-fire.org. Larry's one open question (AHJ registration) goes Mon 08:30 MT.
+- 2026-11-18 18:4xZ (HQ): references-only ask to HOODZ (Larry Moss) in his thread 1a1a878f8cda76a3, msg 1a1eff295257aad6: three references (customer, contact, email, scope) by Thu 11/19 10:00 MT; the pricing sheet can wait (HQ prices from the per-school figure = fallback Attachment D). References have no fallback (IFB 7.3).
