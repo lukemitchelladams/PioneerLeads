@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-18T17:37:36+00:00
+# Bid watch report — 2026-11-18T18:36:01+00:00
 
-**Headline:** 1 NEW matching bids; 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 688 | BUYER 457, AGGREGATE 232 | 85 | 2026-11-18T17:37:36+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T17:37:36+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +45 from the nightly bulk file | 106 |  | 106 | 2026-11-18T17:37:36+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 4 | 2026-11-18T17:37:36+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 691 | BUYER 459, AGGREGATE 233 | 86 | 2026-11-18T18:36:01+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T18:36:01+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +45 from the nightly bulk file | 106 |  | 106 | 2026-11-18T18:36:01+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 67 | open 67 | 4 | 2026-11-18T18:36:01+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -28,12 +28,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison WATCHED | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Radiant Heating Panel Replacement | 2026-11-26 (8d) |  | https://sam.gov/workspace/contract/opp/b4eaf5ee986947649e09ee2513f6c234/view |
-    brief: set-aside: hubzone
-
-## Changes on matching / watched bids (addenda, dates)
-
-- **As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services** (bidnet): NEW DOCUMENTS (addendum?): RFP 6706a.pdf; NEW ADDENDUM No.1 2026-11-18T10:05-07:00: "Addendum Description: RFP 6706a - Contractor questions and City responses. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: RFP 6706a.pdf | 132 Kb | 11/18/2026 10:05 AM MST" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/As-Needed-Emergency-Board-Up-Temporary-Fencing-and-Site-Security-Services/0000442961?purchasingGroupId=8409951&origin=1
+| brownbison | bidnet |  | BAS Controls Mitigation | 2026-12-15 (27d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444240306205?target=view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -121,7 +116,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (166)
+## All open matching bids, excluding DIBBS parts RFQs (167)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -267,6 +262,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | City of Fort Collins | Communications & Public Relations Services On-Call | 2026-12-11 (23d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Communications-Public-Relations-Services-On-Call/0000441223?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | SHELL AY(PRT SIDE) | 2026-12-14 (26d) |  | https://sam.gov/workspace/contract/opp/b8d42df049264aef86019c9aa4e691c8/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | SHELL AY(PRT SIDE) (place of performance not stated; PA buying office) | 2026-12-14 (26d) |  | https://sam.gov/workspace/contract/opp/c99d773036a64c7d86fbd42c65a1a4d6/view |
+| brownbison | bidnet |  | BAS Controls Mitigation | 2026-12-15 (27d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444240306205?target=view |
 | brownbison WATCHED | bidnet |  | Alternatives Analysis and Environmental Planning for New Bus Facility (10% SBE Goal) (paid-tier notice) | 2026-12-15 (27d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234541440?target=view |
 | brownbison WATCHED | coloradovss | Red Rocks Community College | RRCC 27-07-IFB01C BAS Controls Mitigation | 2026-12-15 (27d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison | bidnet |  | Landscape Services (paid-tier notice) | 2026-12-16 (28d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view |
@@ -291,15 +287,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-24 (248d) |  | https://sam.gov/workspace/contract/opp/62a1e06ab30245fe93fc3e0c4caaf443/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | Noise Tested Bearings IDIQ (place of performance not stated; PA buying office) | 2027-07-29 (253d) |  | https://sam.gov/workspace/contract/opp/d9fd453b9fd045f8b78e1bb9d511d1cd/view |
 | brownbison | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Lowline Area Burned Fence Construction Project | 2027-12-03 (380d) |  | https://sam.gov/workspace/contract/opp/894975db261c48d8b15fdd218957a0aa/view |
-
-## Documents downloaded
-
-- bidnet:0000442961: /home/user/PioneerLeads/bids/_watch/downloads/bidnet/0000442961/RFP 6706a.pdf
-
-## Filed into bid folders
-
-- bids/lakewood-board-up-fencing/docs/RFP 6706a.pdf
-- bids/lakewood-board-up-fencing/docs/MANIFEST.md
 
 ## Errors
 
