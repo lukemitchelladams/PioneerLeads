@@ -1,3 +1,7 @@
+# 2026-11-18 ~10:35 MT: CPW gate problem HANDLED BY THE MAC (do NOT send)
+- Daniel Miller (Power Pro) at the Alamosa hatchery gate 09:46, posted number didn't work. CEO had the Mac send the two replies (Klay: open the gate for Daniel; Daniel: buyer asked). HQ: do not send your URGENT draft (ac4ed623); mark it superseded.
+- DEN filters/coil: Tolin's Mike Weiss declined 09:31 (teamed elsewhere). HQ: open the next HVAC sub line today (due 12/04, no bond, subs allowed).
+
 # 2026-11-17 ~15:50 MT: FORT COLLINS TRANSFORT DOORS ITB 10366 (due Wed 12/02 15:00) BACK IN THE QUEUE as GO-IF-BONDED
 - Overhead Door Company of Fort Collins (Brian Clark) sent priced attachments + product literature 15:18 MT (thread 1a1ad50ae4288cc5). A real sub price is in hand.
 - Gate: bid security >=5% of bid with the bid, plus Performance + Payment bonds at award. Brown Bison has NO surety line yet (application still open since 10/29).
