@@ -1,3 +1,13 @@
+# 2026-11-18 16:15 MT: QUOTE MORE JOBS (Luke: "need to be quoting more jobs"), both operators, effective now
+1. VOLUME TARGET: at least 5 NEW GO bids added to the pipeline every week (on top of the 2-submitted floor). Count by Monday plan.
+2. WIDEN SCANS TODAY: add RFQs/quotes under $50K (informal quotes, purchase-order work, on-call/IDIQ rate sheets), school districts,
+   special districts (water, fire, parks, library), housing authorities, universities, and SAM simplified acquisitions in CO/NM/WY/UT.
+   Rate-sheet and on-call bids are fast to submit and price from documents; take them.
+3. PARALLEL SUB LINES: every GO bid opens 2 sub lines on day one (preferred sub first, 2nd line 48h later if no reply). Never wait on one sub.
+4. NO WALK, NO PROBLEM: prefer bids with no mandatory walk; for mandatory walks the sub-attendee ask goes in the FIRST email (rule 7).
+5. PRICE FROM DOCUMENTS: never hold a bid for a sub price; documents-based price + markup is the default, sub price replaces it if it lands.
+6. Report each evening: new GO bids added today, quotes sent, bids submitted this week.
+
 # 2026-11-18 ~10:35 MT: CPW gate problem HANDLED BY THE MAC (do NOT send)
 - Daniel Miller (Power Pro) at the Alamosa hatchery gate 09:46, posted number didn't work. CEO had the Mac send the two replies (Klay: open the gate for Daniel; Daniel: buyer asked). HQ: do not send your URGENT draft (ac4ed623); mark it superseded.
 - DEN filters/coil: Tolin's Mike Weiss declined 09:31 (teamed elsewhere). HQ: open the next HVAC sub line today (due 12/04, no bond, subs allowed).
