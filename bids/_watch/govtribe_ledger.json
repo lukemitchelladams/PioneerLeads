@@ -2985,6 +2985,12 @@
    "verdict": "NO",
    "why": "Professional plan review / building inspection services (licensed code officials), not a construction or facilities-maintenance trade. Worker 00:21Z 11/18.",
    "at": "2026-11-18T01:30:00Z"
+  },
+  "samgov:eea997c0f31b4b76b2c891c39de4ab49": {
+   "name": "NPS Channel Islands NP janitorial, Amendment 002 re-post (Ventura CA), due 2026-11-23",
+   "verdict": "NO",
+   "why": "Same out-of-region California job already NO (samgov:167b070b..., 5d8aa269...); amendment only adds a 11/18 site visit in Ventura CA.",
+   "at": "2026-11-18T03:25:00Z"
   }
  },
  "watched": {
@@ -3170,6 +3176,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T02:30:00Z",
+ "last_hourly_check": "2026-11-18T03:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

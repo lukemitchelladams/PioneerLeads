@@ -652,3 +652,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-18 00:21Z: 1 new inbound: 1a1ebf08bdd4f7b7 **Lafayette (Liz Messner) explains Addendum 1**: posting change only; mandatory 10:00 pre-bid unchanged; new optional facility walk Thu 12:00 from the Library → screenshot in docs/, sub-outreach + pipeline. No bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-18 01:21Z: 0 new inbound (2h window holds only the Lafayette Addendum 1 explanation, logged 00:21Z). No bounces; no insurance certificate; Luke/CRM 0.
 - 2026-11-18 02:21Z (19:21 MT Tue) worker: 0 new inbound in 2h (6h sanity check: 6 threads, all already seen); no board/bounce mail in 1d; no insurance certificate.
+- 2026-11-18 03:21Z (20:21 MT Tue) worker: 0 new inbound in 2h; no board/bounce mail in 1d; no insurance certificate.
