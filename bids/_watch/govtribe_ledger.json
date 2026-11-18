@@ -3081,6 +3081,12 @@
    "verdict": "NO",
    "why": "HQ 16:35Z watchlist NO: CM/GC general construction, not our trades (rule 8 / no GC work).",
    "at": "2026-11-18T17:25:00Z"
+  },
+  "samgov:b4eaf5ee986947649e09ee2513f6c234": {
+   "name": "VA Radiant Heating Panel Replacement, due 2026-11-26",
+   "verdict": "NO",
+   "why": "HQ 17:35Z: HUBZone set-aside; Brown Bison is not HUBZone-certified.",
+   "at": "2026-11-18T18:25:00Z"
   }
  },
  "watched": {
@@ -3266,6 +3272,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T17:30:00Z",
+ "last_hourly_check": "2026-11-18T18:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
