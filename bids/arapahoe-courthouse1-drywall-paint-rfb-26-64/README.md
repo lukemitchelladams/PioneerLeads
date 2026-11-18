@@ -19,3 +19,9 @@ Decision: **EVALUATE** (2026-11-12). Brown Bison bids; a drywall/paint sub perfo
 2. A sub confirms attendance in writing by Wed 11/18 -> GO; nobody by Fri 11/20 17:00 -> NO-BID (mandatory meeting uncovered).
 3. 2026-11-13: no-price package pre-built: FORMS-CHECKLIST.md (28 rows), RESPONSE-DRAFT.md (Parts 0-11), SUBMISSION.md (gate,
    countdown, BidNet questions Q1-Q15; Q1-Q3 post Mon 11/16).
+
+## 2026-11-18 Addendum 1 (BidNet change page, 13:09 MT): pre-bid ROOM only
+*"Addendum No.1 includes updates to the pre-bid meeting location."* Still **MANDATORY, Mon 2026-11-23 10:00 MST**, now at
+*"Arapahoe County Courthouse 1, Courtroom 401 (7375 S. Potomac St. Centennial 80112)"* and *"Please go to Courtroom 401 for the
+pre-bid meeting."* Any painting-sub attendee who confirms gets the room number in the confirmation email. Source:
+bids/_watch/downloads/bidnet/0000443113/_addendum_1.txt.

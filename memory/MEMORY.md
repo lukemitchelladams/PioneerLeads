@@ -3101,3 +3101,8 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - PSD: HOODZ sent 3 references 19:28Z; form 11.0 v3 (private/forms/Section11-References-v3-2026-11-18.pdf, builder form11_v3.py beside it) emailed to Luke 1a1f02b3c9b88dbb. PSD now only needs Luke approve Thu 12:00 + upload Fri 14:00.
 - CPW: Redwing's Mike attended the pre-bid (no sign-in sheet); docs + contact info re-sent (no phone) 1a1f029923b32d7d.
 - Worker 20:21Z: Tolin's Canon City 129-26 pricing in hand (private/).
+
+### 2026-11-18 20:35Z scan (13:35 MT Wed)
+- Fresh BidNet login (attempt 1), push fbf23e3. bidnet 688/86 | samgov 106/106 | coloradovss 66/4 | bonfire 2/1. 0 new. Leak grep 0.
+- Arapahoe RFB 26-64 Addendum 1 = pre-bid ROOM only: still MANDATORY Mon 11/23 10:00 MST, now Courthouse 1 Courtroom 401 (README updated). Painting-sub attendee gate Thu.
+- Pool O&M RFP 27-014 (0000443963) docs auto-downloaded (RFP, pricing xlsx, insurance).
