@@ -3099,6 +3099,18 @@
    "verdict": "GO",
    "why": "HQ 20:5xZ: no license in our name, subs allowed with consent, no bond, optional 12/03 visit; folder bids/cherrycreek-pool-ops-27-014 (pipeline id ccsd-27-014-pool-operations); sub ask to 6 pool firms, pricing by 12/09.",
    "at": "2026-11-18T21:25:00Z"
+  },
+  "samgov:7dee71a221554a8e84e0fb0724da2948": {
+   "name": "NAVSUP Hoist Blocks, Naval Base San Diego, due 2026-11-27",
+   "verdict": "NO",
+   "why": "HQ 21:35Z watchlist NO: 8(a) set-aside; product buy outside our trades.",
+   "at": "2026-11-18T22:25:00Z"
+  },
+  "bidnet:0000443987": {
+   "name": "CU Boulder As-Needed Materials Testing Professional Services, due 2026-12-17",
+   "verdict": "NO",
+   "why": "HQ 21:35Z watchlist NO: materials testing is professional/engineering services, not our trades.",
+   "at": "2026-11-18T22:25:00Z"
   }
  },
  "watched": {
@@ -3284,6 +3296,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T21:30:00Z",
+ "last_hourly_check": "2026-11-18T22:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
