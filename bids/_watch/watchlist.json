@@ -953,6 +953,13 @@
    "source": "bidnet",
    "match": "2723265662|Channel Islands NP",
    "folder": null
+  },
+  {
+   "name": "USFS Gila NF 127EAX27Q0015 GCAFB electrical upgrades, Hurley NM (GO; due 12/11 12:00 MT; optional visit 11/24)",
+   "source": "samgov",
+   "match": "127EAX27Q0015",
+   "folder": "bids/usfs-gila-electrical-127EAX27Q0015",
+   "govtribe_ids": []
   }
  ]
 }

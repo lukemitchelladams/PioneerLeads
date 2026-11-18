@@ -1964,6 +1964,26 @@
    "contact": "curtis.r.landreth@usda.gov",
    "sub_pricing": "n/a (no price requested)",
    "next": "Copy to Luke Wed; HQ sends Fri 11/20; watch SAM.gov for the solicitation"
+  },
+  {
+   "id": "usfs-gila-127eax27q0015-gcafb-electrical",
+   "agency": "USDA Forest Service, Gila National Forest (CSA Southwest 7, Albuquerque)",
+   "title": "Electrical Upgrades to the GCAFB/Tanker Base/Fire Cache, Grant County Airport, Hurley NM (pump motor-control panel replacement + new service pole and pad receptacles)",
+   "sol": "127EAX27Q0015 (SAM.gov e022e329a81747a4b3119b645b6758de)",
+   "trade": "Electrical (sub performs; NM-licensed electrician near Silver City)",
+   "due": "2026-12-11T12:00:00-07:00",
+   "due_source": "SF-1442 block 13a 'by 1200 (hour) local 12/11/2026'; SAM responseDeadLine 2026-12-11T12:00-07:00",
+   "portal": "SAM.gov; quote by email only to the Contract Specialist (SF-1442 block 8); 5 files in bids/usfs-gila-electrical-127EAX27Q0015/docs/",
+   "decision": "GO (HQ 2026-11-18, Overdrive: no bonds (SF-1442 12a NO), no offer guarantee, optional site visit 11/24, no license in our name, no 52.219-14)",
+   "decision_note": "Opened 2026-11-18 from the 11/17 SAM sweep (#2). Total SB, NAICS 238210 ($19M). Two lump-sum CLINs (panel replacement; outlets/stubs incl. new service pole). 21 calendar days after NTP. Highest technically rated with fair price and acceptable/neutral past performance; State licensing is an evaluated technical item (sub's NM license). Davis-Bacon WD NM20260019. Questions by 12/03 12:00 MT; HQ sends 4 questions by Fri 11/20.",
+   "prebid": "2026-11-24T10:00:00-07:00",
+   "prebid_mandatory": false,
+   "folder": "bids/usfs-gila-electrical-127EAX27Q0015",
+   "performer": "Brown Bison bids; NM electrical sub performs",
+   "subs": "Electrician search under way 2026-11-18 (Silver City / Deming / Las Cruces)",
+   "contact": "melissa.heckenlaible@usda.gov",
+   "sub_pricing": "None yet",
+   "next": "Sub ask at the next send run (ask each sub to attend the optional 11/24 visit for Brown Bison; RSVP by Sun 11/22 10:00 MT only for a named sub attendee); questions by Fri 11/20; sub price by Thu 12/03"
   }
  ],
  "events": [
