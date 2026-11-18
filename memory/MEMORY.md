@@ -3092,3 +3092,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-18 18:35Z scan (11:35 MT Wed)
 - Session reused, push e407da9. bidnet 691/86 | samgov 106/106 | coloradovss 67/4 | bonfire 2/1 | total 866/197. 1 new = BidNet aggregate mirror of RRCC BAS controls 444240306205 -> NO (bonding). Leak grep 0.
 - PSD: HOODZ silent on pricing since 11/16; references are the one item with no fallback (IFB 7.3 "at least three (3) references"). Sent Larry a references-only ask 18:4xZ (msg 1a1eff295257aad6), due Thu 10:00 MT. 12:00 MT gate: fallback Attachment D stands for price.
+- 19:0xZ PSD noon gate: no HOODZ pricing; fallback stands; gate note to Luke 1a1f00db3526d31f (references default: file Fri noting sub references follow, unless Luke says no by Thu 12:00).
