@@ -139,6 +139,16 @@ Source: RFP Table of Contents (p.6) jumps from III-18 to III-23; printed pages 4
 Paste:
 > The Table of Contents goes from Section III-18 to III-23, and RFP pages 4, 8 and 9 are not in the posted PDF. Please confirm that no content is missing.
 
+**Q26. Entity type on the Proposal Data Form** (added 2026-11-18 from the proposal draft)
+Source: Attachment 1 Part 2 Proposal Data Form "Submittal is for" (RFP p.28-30).
+Paste:
+> The Proposal Data Form offers Sole Proprietorship, Partnership or Corporation. How should a Colorado limited liability company complete this item?
+
+**Q27. Dun & Bradstreet number** (added 2026-11-18 from the proposal draft)
+Source: RFP p.17, III-15.E ("shall submit (at time of submittal) its Dun & Bradstreet identification number").
+Paste:
+> III-15.E asks for a Dun & Bradstreet identification number. If a proposer's D-U-N-S number is pending, will DEN accept its SAM.gov Unique Entity ID with the proposal?
+
 ## Answers log
 
 | # | Answer | Source (addendum #, date) |
