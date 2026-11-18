@@ -30,3 +30,5 @@ bidnet-session.json
 
 # pricing and sub quotes stay off the public repo until the bid closes
 bids/*/private/
+# raw BidNet change pages can carry session fields; keep them out of the public repo until the stripper is fixed (2026-11-18)
+bids/_watch/downloads/bidnet/*/_addendum_*.txt
