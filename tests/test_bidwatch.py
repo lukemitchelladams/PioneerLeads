@@ -296,6 +296,85 @@ check("an empty Q & A tab (no items, same deadline) prints nothing; a paged list
       _run_early._diff({"qa": {"questions_deadline": "2026-11-17", "items": [], "total": None}},
                        {"qa": {"questions_deadline": "2026-11-17", "items": [], "total": None}}) == []
       and _run_early._diff({"qa": _qa_a}, {"qa": {**_qa_b, "total": 266}}) == ['NEW Q&A: 1 answered (1 of 266 shown): "Yes."'])
+# 2026-11-17 (Lafayette RFP-26-33-FM, 0000442987): BidNet emailed at 21:30Z that an addendum was published, and two logged-in scans
+# after it still read the 4 original files, no communication, an empty Q & A. No live page with the missing markup exists, so the
+# two fixtures are synthesized: a Documents tab with an "Addenda" section and a second files table, and a detail page whose strip
+# (copied from the 2026-11-12/13 dumps) adds an "Addenda" tab, rendered.
+print("tabs and attachments beyond the three known tabs (2026-11-17 Lafayette addendum)")
+_add_html = (FX / "bidnet_docs_tab_addenda_section.html").read_text()
+_add = bidnet.parse_docs_tab(_add_html, "https://www.bidnetdirect.com/colorado/solicitations/open-bids/x/0000442987")
+check("Documents tab with an 'Addenda' section and a second files table: the tab's own files first, then each file link the attachment "
+      "selector missed (named in its text, or a bare 'Download' named from its row); 'Download All' and the javascript: preview left out",
+      [d["name"] for d in _add["documents"]] == ["RFP-26-33-FM Citywide Custodial Services.docx", "APPENDIX C - PRICE SHEET _ 11.5.xls",
+                                                 "Addendum 2 - Revised Price Sheet.xls", "Addendum 1 - RFP-26-33-FM.pdf",
+                                                 "Addendum 1 Sign-in Sheet.docx"]
+      and _add["documents"][3]["url"] == "https://www.bidnetdirect.com/public/solicitations/10030513722/abstract/docs-items/10077000001/addendum-download"
+      and _add["documents"][4]["url"].endswith("/10077000002/attachment-download") and bidnet.tab_rendered(_add_html, "docs-items"), _add["documents"])
+_soup_l = _BS(_docs_html, "lxml")
+check("known Documents tabs unchanged: the extra reader finds nothing on the real Littleton tab, the inline tab or the dialog page, so "
+      "their lists are exactly the attachment links",
+      bidnet.extra_attachments(_soup_l, "", []) == [] and bidnet.extra_attachments(_BS(_docs, "lxml"), "", []) == []
+      and bidnet.extra_attachments(_BS(_dlg_html, "lxml"), "", []) == []
+      and [d["name"] for d in bidnet.parse_docs_tab(_docs_html)["documents"]] == [d["name"] for d in _dtab["documents"]])
+_xt_html = (FX / "bidnet_detail_extra_tabs.html").read_text()
+_strip = bidnet.parse_tab_strip(_xt_html)
+check("tab strip: every enabled tab in page order, named without its count badge; a link inside the tab's own text and a disabled tab "
+      "are not tabs",
+      [(t["id"], t["name"]) for t in _strip] == [("notice", "Notice"), ("categories", "Categories"), ("docs-items", "Documents"),
+                                                 ("communication", "Communication"), ("questions-answers", "Q & A"),
+                                                 ("docs-request", "Document Request List"), ("history", "Audit"), ("addenda", "Addenda")], _strip)
+_strip_real = bidnet.parse_tab_strip(_dlg_html)
+check("real strip (Arapahoe 0000443113 dump): notice, categories, docs-items, questions-answers; none of them is clicked as an extra tab",
+      [t["id"] for t in _strip_real] == ["notice", "categories", "docs-items", "questions-answers"]
+      and not [t for t in _strip_real if t["id"] not in bidnet.TAB_PROOF and t["id"] not in bidnet.SKIP_TABS], _strip_real)
+_xsoup = _BS(_xt_html, "lxml")
+check("tab_selector names exactly one strip anchor: Addenda by its innerTabId, Q & A behind its target=clear",
+      [a["href"].rsplit("?", 1)[-1] for a in _xsoup.select(bidnet.tab_selector("addenda"))] == ["innerTabId=addenda"]
+      and len(_xsoup.select(bidnet.tab_selector("questions-answers"))) == 1 and _xsoup.select(bidnet.tab_selector("adden")) == [])
+_renamed = _xt_html.replace('value="addenda"', 'value="addendum-list"')
+check("an unknown tab counts as rendered by its own currentTabId, or (lenient) by any new one; not by the Notice tab, the value before "
+      "the click or a known tab's",
+      bidnet.tab_rendered(_xt_html, "addenda") and not bidnet.tab_rendered(_renamed, "addenda")
+      and bidnet.tab_rendered(_renamed, "addenda", before="questions-answers")
+      and not any(bidnet.tab_rendered(_xt_html.replace('value="addenda"', f'value="{v}"'), "addenda", before="questions-answers")
+                  for v in ("notice", "questions-answers", "docs-items", "communication"))
+      and not bidnet.tab_rendered("<div id='innerTabContent'></div>", "addenda", before=""))
+_frag = bidnet.tab_fragment(_xt_html)
+check("the saved tab page is #innerTabContent only: currentTabId and the file link kept; the _csrf token, the header's session_username, "
+      "scripts and the strip gone",
+      _frag.startswith('<div id="innerTabContent">') and 'value="addenda"' in _frag and "attachmentDownloadLnk_10077000001" in _frag
+      and "csrf" not in _frag and "someone@example.com" not in _frag and "<script" not in _frag and "innerTabView" not in _frag
+      and bidnet.tab_fragment("<p>no tab here</p>") == "", _frag[:200])
+_tdocs = bidnet.tab_documents(_frag, "https://www.bidnetdirect.com/x")
+check("the tab's files: its a#attachmentDownloadLnk_* (the Documents tab's selector), once, also when the whole tab is read (an "
+      "addenda tab); the plain link in its text is not a file",
+      _tdocs == [{"name": "Addendum 1 - RFP-26-33-FM.pdf",
+                  "url": "https://www.bidnetdirect.com/public/solicitations/10030513722/abstract/addenda/10077000001/attachment-download"}]
+      and bidnet.tab_documents(_frag, "https://www.bidnetdirect.com/x", whole=True) == _tdocs, _tdocs)
+_xa = bidnet.extra_attachments(_BS("<div><a href='/x/addenda/5/download'>Download</a><a href='/x/a.pdf'>Spec.pdf</a>"
+                                   "<a href='/help'>Help</a></div>", "lxml"), "https://h", [], whole=True)
+check("a whole addenda tab: every file link in it (a bare 'Download' named from its URL), not a help link",
+      [d["name"] for d in _xa] == ["download", "Spec.pdf"], _xa)
+_t_add = {"id": "addenda", "name": "Addenda"}
+check("NEW TAB <name> the first scan that lists the tab, once: not again, not on a thin read, a second new tab only",
+      _run_early._diff({"title": "x"}, {"title": "x", "extra_tabs": [_t_add]}) == ["NEW TAB Addenda"]
+      and _run_early._diff({"extra_tabs": [_t_add]}, {"extra_tabs": [_t_add]}) == []
+      and _run_early._diff({"extra_tabs": [_t_add]}, {"title": "x"}) == []
+      and _run_early._diff({"extra_tabs": [_t_add]}, {"extra_tabs": [_t_add, {"id": "award", "name": "Award"}]}) == ["NEW TAB Award"]
+      and "extra_tabs" in _run_early.DETAIL_FIELDS)
+check("an addendum file from a tab goes through the NEW DOCUMENTS line, its NEW TAB line after it",
+      _run_early._diff({"documents": [{"name": "RFP.docx"}]},
+                       {"documents": [{"name": "RFP.docx"}, {"name": "Addendum 1.pdf", "tab": "addenda"}], "extra_tabs": [_t_add]})
+      == ["NEW DOCUMENTS (addendum?): Addendum 1.pdf", "NEW TAB Addenda"])
+_ktd_old = {"documents": [{"name": "RFP.docx"}, {"name": "Addendum 1.pdf", "tab": "addenda"}]}
+_ktd_a = {"documents": [{"name": "RFP.docx"}]}  # the Addenda tab stalled this scan: not on the read list
+_run_early._keep_tab_documents(_ktd_a, _ktd_old)
+_ktd_b = {"documents": [{"name": "RFP.docx"}], bidnet.TAB_DOCS_READ: ["addenda"]}  # read, and the file is gone from it
+_run_early._keep_tab_documents(_ktd_b, _ktd_old)
+check("a file from the Addenda tab survives a scan that did not read that tab (no NEW DOCUMENTS for it next time); a scan that read the "
+      "tab and no longer found it drops it; the read list is never saved",
+      [d["name"] for d in _ktd_a["documents"]] == ["RFP.docx", "Addendum 1.pdf"] and _run_early._diff(_ktd_a, _ktd_old) == []
+      and _ktd_b == {"documents": [{"name": "RFP.docx"}]}, (_ktd_a, _ktd_b))
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -717,7 +796,8 @@ KW_HITS = {"n": 0}
 LOGIN_POSTS = {"n": 0}  # every POST to the login endpoint, accepted or not (= a password sent)
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
-HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0}
+HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0, "extra": 0, "skip": 0}  # extra: Addenda / Audit, skip: no-file tabs
+EXTRA_TAB_RX = re.compile(r"innerTabId=(addenda|history|categories|docs-request)(?:&|$)")
 DIALOG_HITS = {"close": 0, "do_not_show": 0}  # POSTs to /private/login-message (the lightbox's Close), and how many ticked the box
 ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
 # the Communication tab text as BidNet rendered it on 0000440322 (2026-11-05 15:48 MST): the notice that was missed
@@ -802,6 +882,14 @@ class H(http.server.BaseHTTPRequestHandler):
             tabs = ("<ul class='tabs'><li><a href='?innerTabId=communication'>Communication</a></li>"
                     "<li><a href='?innerTabId=questions-answers'>Q &amp; A</a></li></ul>"
                     "<select hidden><option data-ajax-url='/public/solicitations/9745843859/abstract/communication'>Communication</option></select>")
+            extra = os.environ.get("FAKE_EXTRA_TAB")  # "1" = the strip also has the live site's other tabs plus an Addenda tab
+            if extra:
+                tabs = tabs.replace("</ul>", "<li class='mets-tab enabled'><a href='?innerTabId=categories'>Categories</a></li>"
+                                    "<li class='mets-tab enabled'><a href='?innerTabId=docs-request'>Document Request List"
+                                    "<span class='tabCount'>50</span></a></li><li class='mets-tab enabled'><a href='?innerTabId=history'>"
+                                    "Audit</a></li><li class='mets-tab enabled'><a href='?innerTabId=addenda'>Addenda"
+                                    "<span class='tabCount'>1</span></a></li></ul>")
+            xt = EXTRA_TAB_RX.search(p)
             pane = ""
             dialog = ""
             if os.environ.get("FAKE_DIALOG"):
@@ -834,11 +922,31 @@ class H(http.server.BaseHTTPRequestHandler):
                 if os.environ.get("FAKE_TAB_STALL"):
                     # the tab's XHR failed or never went: the page stays on the Notice tab (#currentTabId = notice), as in the
                     # 2026-11-12/13 dumps, with BidNet's hidden ajax indicator. The click still counts as a tab request.
-                    HITS2["comm" if "innerTabId=communication" in p else "qa"] += 1
+                    HITS2["comm" if "innerTabId=communication" in p else "qa" if "innerTabId=questions-answers" in p
+                          else "extra" if xt and xt.group(1) in ("addenda", "history") else "skip"] += 1
                     return self._send(f"<h1>Bid</h1><div id='ajaxIndicator' class='mets-ajax-indicator' style='display: none;'>Loading...</div>"
                                       f"{dialog}{tabs}<div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>")
+                if xt:
+                    HITS2["extra" if xt.group(1) in ("addenda", "history") else "skip"] += 1
+                    if xt.group(1) == "addenda" and extra == "robot":
+                        return self._send(ROBOT)
+                    if xt.group(1) == "addenda" and extra == "stall":  # only this tab's XHR fails: the page stays on the Notice tab
+                        return self._send(f"<h1>Bid</h1>{dialog}{tabs}<div id='innerTabContent'>"
+                                          "<input id='currentTabId' type='hidden' value='notice'></div>")
             # the tab panes mirror the live markup (tests/fixtures/bidnet_communication_0000440322.html, bidnet_qa_*.html)
-            if "innerTabId=communication" in p:
+            if xt and xt.group(1) == "addenda":
+                # tests/fixtures/bidnet_detail_extra_tabs.html: currentTabId first, one a#attachmentDownloadLnk_* file, a _csrf token
+                pane = ("<div id='innerTabContent'><input id='currentTabId' type='hidden' value='addenda'><div class='fieldset content-block'>"
+                        "<h2 class='content-block-title'>Addenda</h2><table class='mets-table'><tbody><tr class='mets-table-row odd'><td>"
+                        "<a class='mets-command-link' id='attachmentDownloadLnk_9990001' href='/dl/addendum-tab1.pdf'>"
+                        "Addendum 1 - Scope Clarification.pdf</a></td><td>110 Kb</td></tr></tbody></table></div>"
+                        "<input type='hidden' name='_csrf' value='fake-csrf-token'></div>")
+            elif xt and xt.group(1) == "history":
+                pane = ("<div id='innerTabContent'><input id='currentTabId' type='hidden' value='history'><table class='mets-table auditTable'>"
+                        "<tr><td>11/17/2026 02:30 PM MST</td><td>Addendum published</td></tr></table></div>")
+            elif xt:
+                pane = "<div id='innerTabContent'><input id='currentTabId' type='hidden' value='" + xt.group(1) + "'></div>"
+            elif "innerTabId=communication" in p:
                 HITS2["comm"] += 1
                 n = int(os.environ.get("FAKE_COMM") or 0)
                 pane = "<div id='innerTabContent'>" + ("".join(
@@ -1734,6 +1842,72 @@ check("a new session (the next scan) starts without the stall and reads the tabs
       s14.logged_in and not getattr(s14, "tab_stall", None) and HITS2["comm"] == _c0 + 1 and _e.get("communications"), (s14.login_note, _e))
 s14.close()
 bidnet.TAB_WAIT_MS = _wait
+# 2026-11-17 Lafayette 0000442987: an addendum BidNet announced by email that none of the three known tabs showed. The fake strip
+# gains the live site's other tabs (Categories, Document Request List, Audit) and an Addenda tab with one file (FAKE_EXTRA_TAB).
+check("known tabs unchanged: none of the enrich calls and full scans above clicked a tab beyond Documents / Communication / Q & A",
+      HITS2["extra"] == 0 and HITS2["skip"] == 0, HITS2)
+os.environ["FAKE_EXTRA_TAB"] = "1"
+s15 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s15.ensure_login()
+_c0, _q0, _x0, _k0 = HITS2["comm"], HITS2["qa"], HITS2["extra"], HITS2["skip"]
+_t0 = time.time()
+_e = bidnet.enrich(s15, {**_bid, "watched": True})
+_dt = time.time() - _t0
+_xd = [d for d in _e.get("documents") or [] if d.get("tab")]
+check("unknown Addenda tab on a watched bid: clicked after Communication and Q & A (each still read once), its file joins the document "
+      "list tagged with the tab, the tab in extra_tabs; the Audit tab read too but not listed; Categories / Document Request List never clicked",
+      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and HITS2["extra"] == _x0 + 2 and HITS2["skip"] == _k0
+      and [(d["name"], d["tab"], d["url"]) for d in _xd] == [("Addendum 1 - Scope Clarification.pdf", "addenda", BASE + "/dl/addendum-tab1.pdf")]
+      and "RFQ.pdf" in [d["name"] for d in _e["documents"]] and _e.get("extra_tabs") == [{"id": "addenda", "name": "Addenda"}]
+      and _e.get("communications") and (_e.get("qa") or {}).get("items") and not getattr(s15, "tab_stall", None) and _dt < 30,
+      (_e, HITS2, _dt))
+_xdl = TMP / "downloads" / "bidnet" / "0000500002"
+for _f in ("Addendum 1 - Scope Clarification.pdf", "_tab_addenda.html", "_tab_history.html"):
+    (_xdl / _f).unlink(missing_ok=True)
+_xgot = bidnet.download_docs(s15, _e)
+_xtp = _xdl / "_tab_addenda.html"
+check("download_docs: the tab's file lands in the bid's download folder like the others; the Addenda and Audit pages are saved as "
+      "_tab_<innerTabId>.html (not returned as documents), the Addenda page with its file link and currentTabId, without the _csrf token",
+      (_xdl / "Addendum 1 - Scope Clarification.pdf").read_bytes().startswith(b"%PDF") and any(g.endswith("Scope Clarification.pdf") for g in _xgot)
+      and not any("_tab_" in g for g in _xgot) and _xtp.is_file() and "attachmentDownloadLnk_9990001" in _xtp.read_text()
+      and 'value="addenda"' in _xtp.read_text() and "fake-csrf-token" not in _xtp.read_text()
+      and "Addendum published" in (_xdl / "_tab_history.html").read_text(), (_xgot, sorted(x.name for x in _xdl.iterdir())))
+_x0 = HITS2["extra"]
+_e = bidnet.enrich(s15, _bid)
+check("an unwatched match never clicks the other tabs, lists none and adds no tab file",
+      HITS2["extra"] == _x0 and "extra_tabs" not in _e and not [d for d in _e.get("documents") or [] if d.get("tab")], _e)
+os.environ["FAKE_EXTRA_TAB"] = "robot"
+bidnet.TAB_WAIT_MS = 1500  # the robot page has no tab marker: do not wait the full 15 s for it
+try:
+    bidnet.enrich(s15, {**_bid, "watched": True})
+    _rc = None
+except bidnet.Challenged as _ex:
+    _rc = str(_ex)
+check("a robot check served for the Addenda tab stops the detail pass like one on any tab (Challenged, cool-down started)",
+      _rc == "BidNet robot check on the Addenda tab: detail pass stopped, cool-down started" and bidnet.cooldown_until(), _rc)
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+s15.close()
+os.environ["FAKE_EXTRA_TAB"] = "stall"
+s16 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s16.ensure_login()
+_c0, _q0, _x0 = HITS2["comm"], HITS2["qa"], HITS2["extra"]
+_t0 = time.time()
+_e = bidnet.enrich(s16, {**_bid, "watched": True})
+_dt = time.time() - _t0
+_st = getattr(s16, "tab_stall", None) or {}
+check("a stalled Addenda tab is skipped, not waited on: the bid comes back in seconds with Communication / Q & A read and no tab file, the "
+      "tab still listed (NEW TAB), the stall on the session naming it, the Audit tab after it not clicked",
+      _dt < 15 and HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and HITS2["extra"] == _x0 + 1
+      and not [d for d in _e.get("documents") or [] if d.get("tab")] and _e.get("extra_tabs") == [{"id": "addenda", "name": "Addenda"}]
+      and _e.get("communications") and _st.get("tab") == "Addenda" and _st.get("tab_id") == "addenda"
+      and _st.get("note", "").startswith("BidNet detail tabs stalled: the Addenda tab of 0000500002 never rendered in 1 s"), (_dt, _st, _e, HITS2))
+_c0, _q0, _x0 = HITS2["comm"], HITS2["qa"], HITS2["extra"]
+_e = bidnet.enrich(s16, {**_bid, "watched": True})
+check("after that stall the rest of the scan clicks no tab at all, known or not",
+      HITS2["comm"] == _c0 and HITS2["qa"] == _q0 and HITS2["extra"] == _x0 and _e.get("extra_tabs") and _e.get("prebid"), HITS2)
+s16.close()
+bidnet.TAB_WAIT_MS = _wait
+del os.environ["FAKE_EXTRA_TAB"]
 s13.close()
 b4.close()
 # the full scan: the lines reach the report once, stay stored, survive a blind scan and a broken tab
@@ -1800,6 +1974,58 @@ check("REPORT.md: the headline says which tab stalled and that later tab reads w
           for ln in _rep21) and f"- bidnet: {_stall_note}" in _rep21, [ln for ln in _rep21 if "stall" in ln])
 for _k in ("FAKE_COMM", "FAKE_QA"):
     del os.environ[_k]
+# full scans with the Addenda tab: first sight in REPORT.md's change list once (NEW DOCUMENTS + NEW TAB), the file downloaded, the
+# tab pages saved next to the documents; a watchlist entry decided NO gets neither the file nor the tab pages (public folder)
+os.environ["FAKE_EXTRA_TAB"] = "1"
+for _f in ("Addendum 1 - Scope Clarification.pdf", "_tab_addenda.html", "_tab_history.html"):
+    (_xdl / _f).unlink(missing_ok=True)
+r22 = run.scan(["bidnet"])
+_d22 = r22["changed"].get(_W, {}).get("diffs", [])
+_rep22 = (TMP / "REPORT_FILE.json").read_text()
+check("full scan, first sight of the Addenda tab: its file is a NEW DOCUMENTS line and the tab a NEW TAB line on the watched bid, in "
+      "REPORT.md and LAST_SCAN.md; the file is downloaded and the tab pages saved",
+      "NEW DOCUMENTS (addendum?): Addendum 1 - Scope Clarification.pdf" in _d22 and "NEW TAB Addenda" in _d22
+      and not any("Audit" in x for x in _d22)
+      and "NEW DOCUMENTS (addendum?): Addendum 1 - Scope Clarification.pdf; NEW TAB Addenda" in _rep22 and "NEW TAB Addenda" in LAST_SCAN.read_text()
+      and any(f.endswith("Addendum 1 - Scope Clarification.pdf") for f in r22["downloads"].get(_W, []))
+      and (_xdl / "_tab_addenda.html").is_file() and (_xdl / "_tab_history.html").is_file()
+      and bidnet.TAB_DOCS_READ not in r22["found"][_W], (_d22, r22["downloads"]))
+_m22 = (_xdl / "_tab_addenda.html").stat().st_mtime_ns
+r23 = run.scan(["bidnet"])
+_d23 = r23["changed"].get(_W, {}).get("diffs", [])
+check("next scan, same tab: neither line again, nothing downloaded again, the unchanged tab page not rewritten",
+      not any(x.startswith(("NEW TAB", "NEW DOCUMENTS")) for x in _d23) and "NEW TAB" not in (TMP / "REPORT_FILE.json").read_text()
+      and not r23["downloads"].get(_W) and (_xdl / "_tab_addenda.html").stat().st_mtime_ns == _m22
+      and (r23["found"][_W].get("extra_tabs") or [{}])[0].get("id") == "addenda", (_d23, r23["downloads"]))
+_wl_x = (TMP / "WATCHLIST_FILE.json").read_text()
+(TMP / "WATCHLIST_FILE.json").write_text(json.dumps({"bids": [{"name": "Littleton 2126 (NO: test, not our trade)", "source": "bidnet",
+                                                               "match": "\\b2126\\b"}]}))
+for _f in ("Addendum 1 - Scope Clarification.pdf", "_tab_addenda.html", "_tab_history.html"):
+    (_xdl / _f).unlink(missing_ok=True)
+r24 = run.scan(["bidnet"])
+check("decided NO: the tabs are still read for the report, but no tab page and no tab file is written to the public downloads folder",
+      not (_xdl / "_tab_addenda.html").exists() and not (_xdl / "_tab_history.html").exists()
+      and not (_xdl / "Addendum 1 - Scope Clarification.pdf").exists() and not r24["downloads"].get(_W)
+      and any(d.get("tab") == "addenda" for d in r24["found"][_W].get("documents") or []), sorted(x.name for x in _xdl.iterdir()))
+(TMP / "WATCHLIST_FILE.json").write_text(_wl_x)
+os.environ["FAKE_EXTRA_TAB"] = "stall"
+_wait = bidnet.TAB_WAIT_MS
+bidnet.TAB_WAIT_MS = 1500
+_t0 = time.time()
+r25 = run.scan(["bidnet"])
+_dt25 = time.time() - _t0
+bidnet.TAB_WAIT_MS = _wait
+_h25 = r25["health"]["bidnet"]
+os.environ["FAKE_EXTRA_TAB"] = "1"
+r26 = run.scan(["bidnet"])
+_d26 = r26["changed"].get(_W, {}).get("diffs", [])
+check("full scan, the Addenda tab stalls: the scan finishes (stall note once, degraded), the tab's file stays listed; the next good scan "
+      "reports neither the file nor the tab again",
+      (_h25.get("tab_stall") or {}).get("tab") == "Addenda" and sum(e.startswith("BidNet detail tabs stalled: the Addenda tab") for e in _h25["errors"]) == 1
+      and run.run_status(r25["health"])["exit_code"] == 3 and _dt25 < 120
+      and any(d.get("tab") == "addenda" for d in r25["found"][_W].get("documents") or []) and _W not in r25["changed"]
+      and not any(x.startswith(("NEW TAB", "NEW DOCUMENTS")) for x in _d26), (_h25.get("tab_stall"), _h25["errors"], r25["changed"], _d26))
+del os.environ["FAKE_EXTRA_TAB"]
 
 _B = _brmod.Browser
 

@@ -12,6 +12,12 @@ What it collects every run
      Every tab click first takes down the modal BidNet may have opened over the page (dismiss_dialogs: the site-wide
      "login message" lightbox from 2026-11-12 swallowed every click for 45 s), and the first tab of a scan that never
      renders turns the scan's remaining tab reads off (session.tab_stall; the note reaches the report).
+  6. Watchlist bids, logged in: every other tab on the strip (an "Addenda" tab, the "Audit" history; not the Notice,
+     Categories or Document Request List tabs, which hold no files) is clicked the same way, its rendered #innerTabContent
+     is saved next to the documents as _tab_<innerTabId>.html, and its attachment links join the document list (so they
+     download and show as NEW DOCUMENTS); a tab not seen before is listed in d["extra_tabs"] -> NEW TAB <name>. The
+     Documents tab's own list also takes links from extra attachments tables / "Addend..." sections (2026-11-17:
+     Lafayette 0000442987's addendum was announced by email but never reached the 4-file list).
 
 Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
 once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
@@ -24,7 +30,7 @@ When a page parses to nothing, the HTML + screenshot go to bids/_watch/debug/ fo
 from __future__ import annotations
 
 import re
-from urllib.parse import urlencode, urljoin
+from urllib.parse import unquote, urlencode, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -825,9 +831,12 @@ def _click_tab(page, tab_sel: str) -> list[str]:
 def parse_docs_tab(html: str, url: str = "") -> dict:
     """The logged-in 'Documents & Items' tab (verified 2026-10-20 on Littleton 0000438328): one
     a#attachmentDownloadLnk_<id> per file, href .../abstract/docs-items/<id>/attachment-download, and an Items
-    list (the RMEPS pricing lines bidders fill in). Loaded by XHR only after the tab is clicked."""
+    list (the RMEPS pricing lines bidders fill in). Loaded by XHR only after the tab is clicked. Links in a second
+    attachments table or an "Addend..." section that are not a#attachmentDownloadLnk_* follow the tab's own files
+    (extra_attachments)."""
     soup = BeautifulSoup(html, "lxml")
     docs = [{"name": _txt(a), "url": urljoin(url or BASE, a["href"])} for a in soup.select(ATTACH_SEL + "[href]")]
+    docs += extra_attachments(soup.select_one("#innerTabContent") or soup, url, docs)
     text = " ".join(soup.get_text(" ").split())
     i = text.find("Items No Description")
     items = None
@@ -835,6 +844,75 @@ def parse_docs_tab(html: str, url: str = "") -> dict:
         j = min(k for k in (text.find("There are no items", i), text.find("Print Options", i), len(text)) if k > i)
         items = text[i:j].strip()[:3000]
     return {"documents": docs, "items_text": items}
+
+
+# 2026-11-17: BidNet emailed "an addendum has been published for the RFP-26-33-FM - Citywide Custodial Services solicitation"
+# (Lafayette 0000442987, 21:30Z), yet two logged-in scans after it still read the 4 original files from the Documents tab, no
+# communication and an empty Q & A. Earlier addenda did land in the normal files table (Colorado Springs 0000441360 "Addendum
+# #001.pdf", CU 0000440456 "UCB001622-Add 01.docx"); this one did not. No page with the missing markup has been saved, so the
+# readers below are deliberately loose: (a) on the Documents tab, links in any other attachments table (id / class naming
+# documents, attachments, addenda) or under an "Addend..." / "Amendment" heading; (b) every tab on the strip the scanner does not
+# know (read_extra_tabs), its page saved for a selector fix.
+ADDENDA_RX = re.compile(r"addend|amendment", re.I)
+DOC_TABLE_RX = re.compile(r"document|attachment|addend|amendment|\bfiles?\b", re.I)
+DOC_LINK_RX = re.compile(r"download|attachment|/documents?/|\.(?:pdf|docx?|xls[xm]?|zip|dwg|rtf|csv|txt|jpe?g|png|tiff?)(?:[?#]|$)", re.I)
+FILE_NAME_RX = re.compile(r"\.(?:pdf|docx?|xls[xm]?|zip|dwg|rtf|csv|txt|jpe?g|png|tiff?)\b", re.I)
+GENERIC_LINK_RX = re.compile(r"^(?:download(?: file)?|view|open|preview|file|attachment|link|here|click here)?$", re.I)
+NOT_A_DOC_RX = re.compile(r"^(?:download|select|print|export) all\b|^print\b", re.I)
+HEADING_SEL = "h1, h2, h3, h4, h5, h6, caption, legend, .content-block-title, .content-block-sub-title"
+
+
+def _is_section(node) -> bool:
+    cls = node.get("class") or []
+    return node.name in ("section", "fieldset", "table") or "content-block" in cls or "fieldset" in cls
+
+
+def extra_attachments(root, url: str = "", have: list[dict] | None = None, whole: bool = False) -> list[dict]:
+    """File links under `root` (a parsed tab) that a#attachmentDownloadLnk_* did not give: in a table whose id / class names
+    documents, attachments or addenda, in the section (content-block, fieldset, table) around an "Addend..." / "Amendment"
+    heading, or anywhere in `root` when `whole` (a tab named for addenda). A link counts when its href or id says download /
+    attachment or it names a file; a bare "Download" / "View" link takes the file name in its table row. Links already in
+    `have` (by name or URL), "Download all" / "Print" and javascript: links are left out. Returns [{name, url}] in page order."""
+    if whole:
+        boxes = [root]
+    else:
+        boxes = [t for t in root.select("table") if DOC_TABLE_RX.search(" ".join([t.get("id") or "", *(t.get("class") or [])]))]
+        for h in root.select(HEADING_SEL):
+            if not ADDENDA_RX.search(_txt(h)):
+                continue
+            box = None
+            for p in h.parents:
+                if p is root:
+                    break
+                if _is_section(p):
+                    box = p
+                    break
+            boxes.append(box or h.parent or root)
+    names = {d["name"] for d in have or []}
+    urls = {d["url"] for d in have or []}
+    out = []
+    for box in boxes:
+        for a in box.select("a[href]"):
+            href = a["href"].strip()
+            if (a.get("id") or "").startswith("attachmentDownloadLnk_") or not href \
+                    or href.lower().startswith(("#", "javascript:", "mailto:", "tel:")):
+                continue
+            text = _txt(a)
+            if NOT_A_DOC_RX.search(text) or not (DOC_LINK_RX.search(href) or FILE_NAME_RX.search(text)
+                                                 or re.search(r"download|attachment|addend", a.get("id") or "", re.I)):
+                continue
+            name = text
+            if GENERIC_LINK_RX.match(name):
+                tr = a.find_parent("tr")
+                name = next((_txt(td) for td in (tr.select("td") if tr is not None else []) if FILE_NAME_RX.search(_txt(td))), "") \
+                    or unquote(urlparse(href).path.rstrip("/").rsplit("/", 1)[-1])
+            u = urljoin(url or BASE, href)
+            if not name or name in names or u in urls:
+                continue
+            names.add(name)
+            urls.add(u)
+            out.append({"name": name, "url": u})
+    return out
 
 
 # The detail page's other tabs (verified 2026-11-06 on 0000440322 / 0000441328 / 0000437813, logged in; saved as
@@ -871,12 +949,20 @@ NO_RESULTS_RX = re.compile(r"No results match your criteria", re.I)
 STALL_NOTE_PREFIX = "BidNet detail tabs stalled: "
 
 
-def tab_rendered(html: str, tab_id: str) -> bool:
+def tab_rendered(html: str, tab_id: str, before: str | None = None) -> bool:
     """Whether the page holds tab `tab_id` ('docs-items', 'communication', 'questions-answers'): its currentTabId marker, its
-    own markup, or (Communication only) the empty tab's text when no other tab's empty-row text can be mistaken for it."""
+    own markup, or (Communication only) the empty tab's text when no other tab's empty-row text can be mistaken for it.
+    With `before` (a tab the scanner does not know: read_extra_tabs, `before` = the currentTabId value before its click), any
+    currentTabId other than that one, the Notice tab's or a known tab's also counts: its fragment may name itself differently
+    from the strip's innerTabId, and a false stall would turn off every later tab read of the scan."""
     soup = BeautifulSoup(html, "lxml")
     if soup.select_one(f"#currentTabId[value='{tab_id}']") is not None:
         return True
+    if before is not None:
+        m = soup.select_one("#currentTabId")
+        v = (m.get("value") or "").strip() if m is not None else ""
+        if v and v not in {"notice", before, *TAB_PROOF}:
+            return True
     proof = TAB_PROOF.get(tab_id)
     if proof and soup.select_one(proof) is not None:
         return True
@@ -986,13 +1072,19 @@ def _qa_row(tr) -> dict:
             "answer_date": parse_date(_txt(tr.select_one("td.answerDate")))}
 
 
-def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str, tag: str) -> str | None:
+def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str | None, tag: str,
+              lenient: bool = False) -> str | None:
     """Click a detail-page tab and return the page HTML once the tab rendered. None when the page has no such tab, when
     the tab stalled (recorded on the session; tried again next scan) or when an earlier tab of this scan stalled.
-    A robot check served instead of the tab stops the detail pass like one on the page itself."""
+    A robot check served instead of the tab stops the detail pass like one on the page itself. `lenient` (a tab the
+    scanner does not know, ready_sel unused): a new currentTabId of any other name also proves it came (tab_rendered)."""
     page = session.page
     if tab_stalled(session) or not page.locator(tab_sel).count():
         return None
+    before = None
+    if lenient:
+        before = _current_tab(page)
+        ready_sel = "#currentTabId" + "".join(f":not([value='{v}'])" for v in sorted({"notice", *TAB_PROOF, *([before] if before else [])}))
     closed = _click_tab(page, tab_sel)
     ready = True
     try:  # the tab arrives by XHR (~1-5 s): its own markup, or the fragment's currentTabId when it has nothing to list
@@ -1006,10 +1098,166 @@ def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str, tag
     if BOT_RX.search(html) and not total_count(html):
         start_cooldown()
         raise Challenged(f"BidNet robot check on the {tag} tab: detail pass stopped, cool-down started")
-    if not ready and not tab_rendered(html, tab_id):
+    if not ready and not tab_rendered(html, tab_id, before=before):
         _record_stall(session, bid, tag, tab_id, html, closed)
         return None
     return html
+
+
+# ---------------- the other tabs on the strip ----------------
+# The strip on live pages (debug dumps 2026-11-12/13, 0000440322 and 112 others): ul#innerTabView > li.mets-tab > a, the tab id
+# in the href's innerTabId= (and in data-ajax-url .../abstract/<id>): notice (the page as served, no innerTabId), categories,
+# docs-items "Documents <n>", communication, questions-answers, docs-request "Document Request List <n>" (the suppliers that
+# requested the documents) and history "Audit". Read for watched bids after the three tabs above (read_extra_tabs): any tab id
+# but the three read above and SKIP_TABS (no files: the page itself, commodity codes, other suppliers' names) is clicked, at most
+# MAX_EXTRA_TABS a bid, through _read_tab (same dialogs, stall and robot-check handling). A tab id not in EXPECTED_TABS (the Audit
+# tab every bid has) also goes on d["extra_tabs"], so run.py reports NEW TAB <name> the first scan that lists it.
+TAB_STRIP_SEL = "#innerTabView a, li.mets-tab a"
+SKIP_TABS = frozenset({"notice", "categories", "docs-request"})
+EXPECTED_TABS = frozenset({"history"})
+MAX_EXTRA_TABS = 3
+TAB_ID_RX = re.compile(r"^[A-Za-z0-9_-]{1,40}$")  # an id that is safe in a CSS selector and a file name
+TAB_PAGE_PREFIX = "_tab_"  # bids/_watch/downloads/bidnet/<bid id>/_tab_<tab id>.html
+TAB_DOCS_READ = "tab_docs_read"  # enrich's result: the extra tabs whose files were read this scan (run.py pops it, never saved)
+
+
+def _current_tab(page) -> str:
+    """The currentTabId value of the live page ('' when there is none or it is not a plain id)."""
+    try:
+        v = page.evaluate("() => { const e = document.getElementById('currentTabId'); return e ? (e.getAttribute('value') || '') : ''; }")
+    except Exception:  # noqa: BLE001
+        return ""
+    return v if isinstance(v, str) and TAB_ID_RX.match(v) else ""
+
+
+def _tab_id(a) -> str:
+    m = re.search(r"[?&]innerTabId=([^&#]+)", a.get("href") or "") or re.search(r"/abstract/([^/?#]+)", a.get("data-ajax-url") or "")
+    tid = unquote(m.group(1)).strip() if m else ""
+    return tid if TAB_ID_RX.match(tid) else ""
+
+
+def parse_tab_strip(html: str) -> list[dict]:
+    """The detail page's tabs, in strip order: [{id, name}]. The name is the anchor's text without its count badge
+    ("Documents<span class=tabCount>1</span>" -> "Documents"). Anchors inside #innerTabContent (a link in a tab's own text)
+    and disabled tabs are not tabs; ids that are not plain ([A-Za-z0-9_-]) are dropped."""
+    soup = BeautifulSoup(html, "lxml")
+    itc = soup.select_one("#innerTabContent")
+    out, seen = [], set()
+    for a in soup.select(TAB_STRIP_SEL) + soup.select("a[href*='innerTabId=']"):
+        li = a.find_parent("li")
+        if (itc is not None and any(p is itc for p in a.parents)) or (li is not None and "disabled" in (li.get("class") or [])):
+            continue
+        tid = _tab_id(a)
+        if not tid or tid in seen:
+            continue
+        seen.add(tid)
+        for t in a.select(".tabCount, .accessibility-hidden, svg"):
+            t.decompose()
+        out.append({"id": tid, "name": _txt(a) or (a.get("title") or "").strip() or tid})
+    return out
+
+
+def tab_selector(tab_id: str) -> str:
+    """The strip anchor of tab `tab_id` (exact id: 'addenda' does not also match 'addenda-items')."""
+    return (f"a[href$='innerTabId={tab_id}'], a[href*='innerTabId={tab_id}&'], a[href*='innerTabId={tab_id}#'], "
+            f"li.mets-tab a[data-ajax-url$='/abstract/{tab_id}'], li.mets-tab a[data-ajax-url*='/abstract/{tab_id}?']")
+
+
+def tab_fragment(html: str) -> str:
+    """The rendered #innerTabContent of a page, safe to commit: scripts, styles, svg and every hidden input but currentTabId
+    (the _csrf token, session_username) removed. '' when the page has neither #innerTabContent nor a currentTabId."""
+    soup = BeautifulSoup(html, "lxml")
+    node = soup.select_one("#innerTabContent")
+    if node is None:
+        m = soup.select_one("#currentTabId")
+        node = m.parent if m is not None else None
+    if node is None:
+        return ""
+    for t in node.select("script, style, noscript, svg, input[name*='csrf' i], input[name*='session' i]"):
+        t.decompose()
+    for t in node.select("input[type='hidden']"):
+        if t.get("id") != "currentTabId":
+            t.decompose()
+    return str(node)
+
+
+def tab_documents(html: str, url: str = "", whole: bool = False) -> list[dict]:
+    """A tab's files: every a#attachmentDownloadLnk_* (ATTACH_SEL, as on the Documents tab), then extra_attachments (`whole`:
+    every file link in it, for a tab named for addenda)."""
+    soup = BeautifulSoup(html, "lxml")
+    docs = [{"name": _txt(a), "url": urljoin(url or BASE, a["href"])} for a in soup.select(ATTACH_SEL + "[href]")]
+    return docs + extra_attachments(soup.select_one("#innerTabContent") or soup, url, docs, whole=whole)
+
+
+def _stash_tab_page(session, bid: dict, tab_id: str, fragment: str) -> None:
+    """Keep a tab's page on the session (one scan) for download_docs to save: it is written only where documents are, never
+    for a bid whose watchlist entry is decided NO (run.py does not call download_docs for those; the folder is public)."""
+    try:
+        pages = getattr(session, "tab_pages", None)
+        if pages is None:
+            pages = {}
+            session.tab_pages = pages
+        pages.setdefault(bid.get("id") or "", {})[tab_id] = fragment
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: bool) -> None:
+    """Watched bids, logged in, after the Documents / Communication / Q & A tabs: every other tab on the strip of `page_html`
+    (the detail page as served) but SKIP_TABS, unknown ones first, at most MAX_EXTRA_TABS. Each is clicked through _read_tab
+    (a stall skips it and every later tab read of the scan; a robot check raises Challenged), its page kept for download_docs
+    and its files added to d["documents"] (tagged with the tab id; the tab id goes on d[TAB_DOCS_READ]) when `merge_docs` (the
+    Documents tab was read, or the page has none: a list without the tab's own files must not replace last scan's). Tabs
+    outside EXPECTED_TABS go on d["extra_tabs"] whether or not they could be read, for run.py's NEW TAB line."""
+    tabs = [t for t in parse_tab_strip(page_html) if t["id"] not in TAB_PROOF and t["id"] not in SKIP_TABS]
+    unknown = [t for t in tabs if t["id"] not in EXPECTED_TABS]
+    if unknown:
+        d["extra_tabs"] = [{"id": t["id"], "name": t["name"]} for t in unknown]
+    for t in (unknown + [t for t in tabs if t["id"] in EXPECTED_TABS])[:MAX_EXTRA_TABS]:
+        if tab_stalled(session):
+            break
+        try:
+            th = _read_tab(session, bid, t["id"], tab_selector(t["id"]), None, t["name"], lenient=True)
+        except Challenged:
+            raise
+        except Exception:  # noqa: BLE001 - keep what the other tabs gave
+            session.debug_dump(f"{t['id']}-tab")
+            continue
+        frag = tab_fragment(th) if th is not None else ""
+        if not frag:
+            continue
+        _stash_tab_page(session, bid, t["id"], frag)
+        if not merge_docs:
+            continue
+        have = {x["name"] for x in d.get("documents") or []}
+        add = []
+        for x in tab_documents(frag, bid.get("url") or "", whole=bool(ADDENDA_RX.search(f"{t['id']} {t['name']}"))):
+            if x["name"] not in have:
+                have.add(x["name"])
+                add.append({**x, "tab": t["id"]})
+        if add:
+            d["documents"] = list(d.get("documents") or []) + add
+        # this tab's files are known this scan (run.py pops the list): a tagged file missing from it was removed; one from a tab
+        # NOT in it (stalled, past the cap) is kept from last scan, or its next read would call it NEW DOCUMENTS again
+        d.setdefault(TAB_DOCS_READ, []).append(t["id"])
+
+
+def save_tab_pages(session, bid: dict) -> list[str]:
+    """Write the tab pages read_extra_tabs kept for `bid` to <downloads>/bidnet/<id>/_tab_<tab id>.html (a file whose content
+    did not change is left alone). Returns the paths written."""
+    pages = (getattr(session, "tab_pages", None) or {}).pop(bid.get("id") or "", None) or {}
+    out = []
+    for tid, frag in pages.items():
+        p = DOWNLOAD_DIR / "bidnet" / bid["id"] / f"{TAB_PAGE_PREFIX}{tid}.html"
+        try:
+            if p.is_file() and p.read_text(errors="ignore") == frag:
+                continue
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(frag)
+            out.append(str(p))
+        except OSError:
+            continue
+    return out
 
 
 # ---------------- paid-tier ("interception") notices ----------------
@@ -1047,7 +1295,8 @@ def enrich(session, bid: dict) -> dict:
     """Detail page. Public visitors see only location + publication/closing date (and closing time);
     issuing org, solicitation #, description, documents and buyer contact are 'Registered members only'.
     Logged in, the documents live on the 'Documents & Items' tab, which loads only when clicked. A WATCHED bid
-    (bid["watched"], set by run.py) also gets its Communication and Q & A tabs read: d["communications"], d["qa"].
+    (bid["watched"], set by run.py) also gets its Communication and Q & A tabs read: d["communications"], d["qa"], then the
+    strip's other tabs (read_extra_tabs: their files join d["documents"], unknown ones are listed in d["extra_tabs"]).
     A paid-tier notice (is_paywalled) returns at once with bid["paywalled"] = True and bid["detail_note"] = PAYWALL_NOTE:
     nothing on that page is the notice, and there are no tabs to read."""
     page = session.page
@@ -1062,6 +1311,7 @@ def enrich(session, bid: dict) -> dict:
     d = parse_detail(html, bid["url"])
     if d.get("login_required_for_docs") and not session.logged_in and (d.get("prebid") or {}).get("source") != "bidnet events":
         d["prebid"] = None  # the description is locked, so any 'pre-bid' hit came from page chrome
+    docs_ok = False  # the Documents tab was read (or the page has none): other tabs' files may join the list
     if session.logged_in and not tab_stalled(session):
         try:  # a bid with no files never shows an attachment link; the fragment's currentTabId still proves the tab came
             t = _read_tab(session, bid, "docs-items", DOCS_TAB_SEL, ATTACH_SEL, "Documents")
@@ -1071,6 +1321,7 @@ def enrich(session, bid: dict) -> dict:
                     d["documents"] = t["documents"]
                 if t["items_text"]:
                     d["items_text"] = t["items_text"]
+            docs_ok = not tab_stalled(session)
         except Challenged:
             raise
         except Exception:  # noqa: BLE001 - keep the main-tab facts even if the docs tab misbehaves
@@ -1096,6 +1347,9 @@ def enrich(session, bid: dict) -> dict:
             raise
         except Exception:  # noqa: BLE001
             session.debug_dump("qa-tab")
+    if session.logged_in and bid.get("watched"):
+        # the strip is read from the page as served (no click); the tabs on it the scanner does not know are clicked last
+        read_extra_tabs(session, bid, html, d, docs_ok)
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}
 
 
@@ -1108,10 +1362,12 @@ def doc_path(bid: dict, d: dict):
 def download_docs(session, bid: dict, skip_existing: bool = True) -> list[str]:
     """Logged-in only. Saves each document not already on disk; returns the paths saved this call. Checking the
     disk (not the previous scan's document list) also fetches the files of a bid that became watched after its
-    documents were first listed, and any addendum."""
+    documents were first listed, and any addendum. The pages of the bid's other tabs (read_extra_tabs) are saved here too
+    (save_tab_pages), but they are not documents and are not in the returned list."""
     saved = []
     dest = DOWNLOAD_DIR / "bidnet" / bid["id"]
     dest.mkdir(parents=True, exist_ok=True)
+    save_tab_pages(session, bid)
     for d in bid.get("documents", [])[:60]:
         safe = re.sub(r"[^\w.\- ]", "_", d.get("name") or "").strip()
         if skip_existing and safe and (dest / safe).is_file() and (dest / safe).stat().st_size > 0:

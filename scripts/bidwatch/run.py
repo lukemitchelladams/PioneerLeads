@@ -20,7 +20,7 @@ Every cycle:
      to write its files (exit 3, degraded). Before this, 2026-11-12 20:39Z, BidNet's tabs hung on "Loading..." and
      the detail pass outlived the outer `timeout 1500`: no REPORT.md, the hour's list scan lost.
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
-     Q & A tab entries on watched bids), CLOSED.
+     Q & A tab entries on watched bids, a BidNet tab the scanner does not know = NEW TAB), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
      attachments are public and are downloaded from the detail view's Attachment panel without a login). An entry
      decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
@@ -567,7 +567,7 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
 
 
 DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description",
-                 "communications", "qa")
+                 "communications", "qa", "extra_tabs")
 
 
 def _keep_detail(row: dict, old: dict) -> dict:
@@ -619,6 +619,18 @@ def _carry_documents(found: dict, prev: dict, degraded: set) -> int:
         else:
             b[DOCS_UNKNOWN] = True
     return n
+
+
+def _keep_tab_documents(got: dict, old: dict) -> None:
+    """A fresh BidNet read whose list lacks a file an earlier read took from one of the bid's other tabs (bidnet.read_extra_tabs
+    tags it "tab") keeps that file when the tab was not read this time (a stall, the per-bid cap): only a tab on the read's
+    bidnet.TAB_DOCS_READ list (popped here, never saved) says what it holds now. Without this, the next read would report
+    the same addendum as NEW DOCUMENTS again."""
+    read = set(got.pop(bidnet.TAB_DOCS_READ, None) or [])
+    have = {x.get("name") for x in got.get("documents") or []}
+    keep = [x for x in old.get("documents") or [] if x.get("tab") and x["tab"] not in read and x.get("name") not in have]
+    if keep:
+        got["documents"] = list(got.get("documents") or []) + keep
 
 
 def _restore_detail(found: dict, prev: dict, source: str) -> None:
@@ -755,6 +767,7 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 for f in DETAIL_FIELDS:
                     if not got.get(f) and old.get(f):
                         got[f] = old[f]
+                _keep_tab_documents(got, old)
                 found[k] = {**got, "detail_at": iso()}
             except Exception as e:  # noqa: BLE001
                 found[k] = _keep_detail(b, old)
@@ -821,6 +834,12 @@ def _diff(old: dict, new: dict) -> list[str]:
     # an old list from no real read (bulk-file row, partial run: _carry_documents) is not a baseline: nothing on it is "new"
     if old.get("documents") is not None and not _docs_unknown(old) and nd - od:
         out.append("NEW DOCUMENTS (addendum?): " + ", ".join(sorted(nd - od))[:300])
+    # a BidNet tab the scanner does not know (bidnet.read_extra_tabs: d["extra_tabs"], kept through thin reads by DETAIL_FIELDS),
+    # reported once, the first scan that lists it; its files are in the document list above (2026-11-17 Lafayette addendum)
+    ot = {t.get("id") for t in old.get("extra_tabs") or []}
+    for t in new.get("extra_tabs") or []:
+        if t.get("id") not in ot:
+            out.append(f"NEW TAB {t.get('name') or t.get('id')}")
     # BidNet Communication tab (watched bids): a buyer notice carries no document, so it only shows up here. Each
     # entry is reported once, the first scan that sees it (2026-11-05: a walkthrough moved from 9 to 10:30 am this way).
     oc = {(c.get("no"), c.get("date")) for c in old.get("communications") or []}
