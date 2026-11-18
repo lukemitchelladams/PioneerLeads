@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-18T09:35:59+00:00
+# Bid watch report — 2026-11-18T10:35:59+00:00
 
 **Headline:** 2 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 674 | BUYER 446, AGGREGATE 229 | 83 | 2026-11-18T09:35:59+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T09:35:59+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +44 from the nightly bulk file | 104 |  | 104 | 2026-11-18T09:35:59+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T09:35:59+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 674 | BUYER 446, AGGREGATE 229 | 83 | 2026-11-18T10:35:59+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T10:35:59+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +44 from the nightly bulk file | 104 |  | 104 | 2026-11-18T10:35:59+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T10:35:59+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,8 +26,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations** (bidnet): ADDENDUM No.1 2026-11-12T14:44-07:00 change page: "Addendum Description: Westminster Public Schools has issued Addendum No. 1 for RFP 26-002 – Summer 2027 Facility Improvements – Multiple Locations. This addendum includes a revised solicitation schedule, updated pricing requirements, revised construction drawings and specifications for all six Proje" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1
-- **STREET LIGHT REPAIR AND REPLACEMENT AT THE COLORADO AIR AND SPACE PORT** (bidnet): ADDENDUM No.1 2026-11-04T14:49-07:00 change page: "Addendum Description: The purpose of this Addendum is to move the due date for when bids can be submitted for this project from 3:00 P.M. M.D.T. Thursday November 12th, 2026, to 3:00 P.M. M.D.T. Wednesday December 2nd, 2026. / Notice Modifications: Closing Date: 11/12/26 3:00 PM MST/MDT -> 12/2/26 3" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/STREET-LIGHT-REPAIR-AND-REPLACEMENT-AT-THE-COLORADO-AIR-AND-SPACE-PORT/0000439853?purchasingGroupId=8409951&origin=1
+- **Grandview Elementary Roof Project** (bidnet): ADDENDUM No.3 2026-11-06T13:06-07:00 change page: "Addendum Description: Attendance Registration for Site Walk / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: RFP 27-02 GV Roof Site Walk Registration (Responses).pdf | 18 Kb | 11/06/2026 01:06 PM MST" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Grandview-Elementary-Roof-Project/0000441189?purchasingGroupId=8409951&origin=1
+- **STREET LIGHT REPAIR AND REPLACEMENT AT THE COLORADO AIR AND SPACE PORT** (bidnet): ADDENDUM No.2 2026-11-13T17:35-07:00 change page: "Addendum Description: The purpose of this Addendum is to answer questions submitted to Adams County from vendors specific to this project. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: 2026.766 Final Addenda " — https://www.bidnetdirect.com/colorado/solicitations/open-bids/STREET-LIGHT-REPAIR-AND-REPLACEMENT-AT-THE-COLORADO-AIR-AND-SPACE-PORT/0000439853?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
