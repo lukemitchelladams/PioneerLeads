@@ -18,6 +18,11 @@ What it collects every run
      download and show as NEW DOCUMENTS); a tab not seen before is listed in d["extra_tabs"] -> NEW TAB <name>. The
      Documents tab's own list also takes links from extra attachments tables / "Addend..." sections (2026-11-17:
      Lafayette 0000442987's addendum was announced by email but never reached the 4-file list).
+  7. The "Addendums" tab (innerTabId=amendment, on every watched bid) is read first of those, is not a NEW TAB, and its rows
+     go to d["addenda"] = [{no, date, href}] (parse_addenda). Each row links a posting-change page, not a file (Lafayette's
+     Addendum No. 1 added an optional facility walk): run.py hands read_addenda the rows not read yet (new ones first); it
+     opens each in the same logged-in page (at most MAX_ADDENDUM_READS a scan) and saves its text as _addendum_<no>.txt
+     beside the documents -> NEW ADDENDUM No.<n> <date>: "<start of the change page>".
 
 Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
 once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
@@ -32,7 +37,7 @@ from __future__ import annotations
 import re
 from urllib.parse import unquote, urlencode, urljoin, urlparse
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 import datetime as dt
 import hashlib
@@ -976,11 +981,12 @@ def tab_stalled(session) -> bool:
     return bool(getattr(session, "tab_stall", None))
 
 
-def _record_stall(session, bid: dict, tag: str, tab_id: str, html: str, closed: list[str]) -> None:
+def _record_stall(session, bid: dict, tag: str, tab_id: str, html: str, closed: list[str], what: str | None = None) -> None:
+    """`what` names the page in the note when it is not the tab itself (an addendum's change page: read_addenda)."""
     if tab_stalled(session):
         return
     shown = [d["title"] for d in dialogs_in(html)]
-    note = (f"{STALL_NOTE_PREFIX}the {tag} tab of {bid.get('id')} never rendered in {TAB_WAIT_MS // 1000} s"
+    note = (f"{STALL_NOTE_PREFIX}the {what or f'{tag} tab'} of {bid.get('id')} never rendered in {TAB_WAIT_MS // 1000} s"
             + (f" (dialogs closed first: {', '.join(closed)})" if closed else "")
             + (f" (page still shows: {', '.join(shown)})" if shown else "")
             + "; the other bids' tabs are skipped this scan and their documents / notices / answers keep last scan's")
@@ -1111,10 +1117,13 @@ def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str | No
 # requested the documents) and history "Audit". Read for watched bids after the three tabs above (read_extra_tabs): any tab id
 # but the three read above and SKIP_TABS (no files: the page itself, commodity codes, other suppliers' names) is clicked, at most
 # MAX_EXTRA_TABS a bid, through _read_tab (same dialogs, stall and robot-check handling). A tab id not in EXPECTED_TABS (the Audit
-# tab every bid has) also goes on d["extra_tabs"], so run.py reports NEW TAB <name> the first scan that lists it.
+# tab and the Addendums tab every bid has) also goes on d["extra_tabs"], so run.py reports NEW TAB <name> the first scan that
+# lists it. The first live run (2026-11-18 00:35Z) found "Addendums" (innerTabId=amendment) on all 20 watched bids: it is read
+# first, its rows go to d["addenda"] (parse_addenda) and run.py opens each new row's posting-change page (read_addenda).
 TAB_STRIP_SEL = "#innerTabView a, li.mets-tab a"
 SKIP_TABS = frozenset({"notice", "categories", "docs-request"})
-EXPECTED_TABS = frozenset({"history"})
+ADDENDA_TAB = "amendment"
+EXPECTED_TABS = frozenset({"history", ADDENDA_TAB})
 MAX_EXTRA_TABS = 3
 TAB_ID_RX = re.compile(r"^[A-Za-z0-9_-]{1,40}$")  # an id that is safe in a CSS selector and a file name
 TAB_PAGE_PREFIX = "_tab_"  # bids/_watch/downloads/bidnet/<bid id>/_tab_<tab id>.html
@@ -1204,16 +1213,18 @@ def _stash_tab_page(session, bid: dict, tab_id: str, fragment: str) -> None:
 
 def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: bool) -> None:
     """Watched bids, logged in, after the Documents / Communication / Q & A tabs: every other tab on the strip of `page_html`
-    (the detail page as served) but SKIP_TABS, unknown ones first, at most MAX_EXTRA_TABS. Each is clicked through _read_tab
-    (a stall skips it and every later tab read of the scan; a robot check raises Challenged), its page kept for download_docs
-    and its files added to d["documents"] (tagged with the tab id; the tab id goes on d[TAB_DOCS_READ]) when `merge_docs` (the
-    Documents tab was read, or the page has none: a list without the tab's own files must not replace last scan's). Tabs
+    (the detail page as served) but SKIP_TABS, the Addendums tab first, then unknown ones, at most MAX_EXTRA_TABS. Each is
+    clicked through _read_tab (a stall skips it and every later tab read of the scan; a robot check raises Challenged), its page
+    kept for download_docs and its files added to d["documents"] (tagged with the tab id; the tab id goes on d[TAB_DOCS_READ])
+    when `merge_docs` (the Documents tab was read, or the page has none: a list without the tab's own files must not replace
+    last scan's). The Addendums tab's rows (or those of another tab named for addenda) go to d["addenda"] (parse_addenda). Tabs
     outside EXPECTED_TABS go on d["extra_tabs"] whether or not they could be read, for run.py's NEW TAB line."""
     tabs = [t for t in parse_tab_strip(page_html) if t["id"] not in TAB_PROOF and t["id"] not in SKIP_TABS]
     unknown = [t for t in tabs if t["id"] not in EXPECTED_TABS]
     if unknown:
         d["extra_tabs"] = [{"id": t["id"], "name": t["name"]} for t in unknown]
-    for t in (unknown + [t for t in tabs if t["id"] in EXPECTED_TABS])[:MAX_EXTRA_TABS]:
+    # strip order inside each group (sorted is stable): the Addendums tab, the unknown ones, the Audit tab
+    for t in sorted(tabs, key=lambda t: 0 if t["id"] == ADDENDA_TAB else 2 if t["id"] in EXPECTED_TABS else 1)[:MAX_EXTRA_TABS]:
         if tab_stalled(session):
             break
         try:
@@ -1227,6 +1238,10 @@ def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: boo
         if not frag:
             continue
         _stash_tab_page(session, bid, t["id"], frag)
+        if (t["id"] == ADDENDA_TAB or ADDENDA_RX.search(t["name"])) and not d.get("addenda"):
+            rows = parse_addenda(frag, bid.get("url") or "")
+            if rows:  # none (an empty tab, "No entries"): nothing stored, run.py keeps last scan's rows
+                d["addenda"] = rows
         if not merge_docs:
             continue
         have = {x["name"] for x in d.get("documents") or []}
@@ -1258,6 +1273,165 @@ def save_tab_pages(session, bid: dict) -> list[str]:
         except OSError:
             continue
     return out
+
+
+# ---------------- the Addendums tab and each addendum's posting-change page ----------------
+# The live tab (Lafayette 0000442987, 2026-11-18 00:35Z; tests/fixtures/bidnet_tab_amendment_0000442987.html): table
+# #statusHistoryTable "Addendums | Date", one tr.mets-table-row per addendum, a.mets-command-link "Addendum No.  1" (id
+# showLightBox_<n>: the page opens it in a lightbox) to /public/solicitations/<n>/abstract/history/diff?revisionNumber=1, and
+# "11/17/2026 02:19 PM MST"; the hidden tr.mets-table-row-empty "No entries" is there whether or not rows are. The link is not a
+# file: it is the posting's change list (that one added an optional facility walk; such a change can move the walk or the due
+# date and carries no document). read_addenda opens it in the logged-in page and keeps its text, the way the tab pages are kept.
+ADDENDUM_NO_RX = re.compile(r"(?:addend\w*|amendment)\s*(?:no\.?|number|#)?\s*(\d+)\b", re.I)
+STAMP_RX = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})\s+(\d{1,2}):(\d{2})\s*([AP]M)\b(?:\s+([A-Z]{2,4})\b)?", re.I)
+TZ_OFFSET_H = {"MST": -7, "MDT": -6, "CST": -6, "CDT": -5, "EST": -5, "EDT": -4, "PST": -8, "PDT": -7, "UTC": 0, "GMT": 0}
+MAX_ADDENDUM_READS = 3  # change pages opened per scan (a PortalSession lives one scan); run.py hands the new rows first
+ADDENDUM_TRIES = 3  # a change page that failed this often is not opened again (its row was reported all the same)
+ADDENDUM_TEXT_MAX = 2000  # characters of the page's text kept on the row (open_bids.json); the file keeps ADDENDUM_FILE_MAX
+ADDENDUM_FILE_MAX = 100000
+ADDENDUM_FILE_PREFIX = "_addendum_"  # bids/_watch/downloads/bidnet/<bid id>/_addendum_<no>.txt
+# page chrome, the account menu and every form control of a full BidNet page (debug dumps: header#headerContainer with the menu
+# and a hidden session_username, main#content, div#footer); a lightbox fragment has none of it
+ADDENDUM_CHROME_SEL = ("script, style, noscript, svg, iframe, template, input, select, textarea, button, header, footer, nav, "
+                       "#headerContainer, #header, #footer, #footerContainer, #innerTabView, #loginMessageDiv, "
+                       ".login-message-container, .ui-widget-overlay, .accessibility-hidden, #supplier_logout_link")
+ADDENDUM_BLOCK_SEL = "p, div, tr, li, h1, h2, h3, h4, h5, h6, table, section, fieldset, dt, dd, caption, legend"
+
+
+def portal_stamp(text: str) -> str | None:
+    """BidNet's "11/17/2026 02:19 PM MST" as ISO 8601 to the minute ("2026-11-17T14:19-07:00"; no offset for a zone outside
+    TZ_OFFSET_H), a bare date as yyyy-mm-dd, any other text as itself; None when empty."""
+    t = " ".join((text or "").split())
+    m = STAMP_RX.search(t)
+    if m:
+        mo, day, y, hh, mm, ap, tz = m.groups()
+        off = TZ_OFFSET_H.get((tz or "").upper())
+        try:
+            return dt.datetime(int(y), int(mo), int(day), int(hh) % 12 + (12 if ap.upper() == "PM" else 0), int(mm),
+                               tzinfo=dt.timezone(dt.timedelta(hours=off)) if off is not None else None).isoformat(timespec="minutes")
+        except ValueError:
+            pass
+    return parse_date(t) or t or None
+
+
+def parse_addenda(html: str, url: str = "") -> list[dict]:
+    """The rows of the Addendums tab (markup above): [{no, date, href}] in page order, from each table whose first column
+    heading is "Addendums" / "Addenda" / "Amendments" (not the Audit tab's "Solicitation Status", not a files table). `no` is
+    the link's number as an int ("Addendum No.  1" -> 1), else its text; `date` by portal_stamp; `href` absolute (None
+    without a link). The hidden "No entries" row is never a row; [] when the tab lists none."""
+    soup = BeautifulSoup(html, "lxml")
+    out = []
+    for table in soup.select("table"):
+        first = table.select_one("thead th") or table.select_one("tr th")
+        if first is None or not re.match(r"addend|amendment", _txt(first), re.I):
+            continue
+        for tr in table.select("tr"):
+            cells = tr.select("td")
+            if not cells or tr.find_parent("thead") is not None or "mets-table-row-empty" in (tr.get("class") or []):
+                continue
+            label = _txt(cells[0])
+            if not label:
+                continue
+            m = ADDENDUM_NO_RX.search(label)
+            a = cells[0].select_one("a[href]")
+            href = (a["href"] or "").strip() if a is not None else ""
+            out.append({"no": int(m.group(1)) if m else label, "date": portal_stamp(_txt(cells[1])) if len(cells) > 1 else None,
+                        "href": urljoin(url or BASE, href) if href and not href.lower().startswith(("#", "javascript:")) else None})
+    return out
+
+
+def addendum_text(html: str, secrets=()) -> str:
+    """The visible text of an addendum's posting-change page, safe to commit like a saved tab page (tab_fragment): scripts,
+    styles, every form control (the _csrf token, the hidden session_username), the header with the account menu, the footer, the
+    tab strip and BidNet's site-alert lightbox removed; the values of the page's user / session / csrf inputs and `secrets` (the
+    login) masked as *** wherever the text still prints them. The page's main#content (else its body) as one line per block,
+    table cells joined with " | "."""
+    soup = BeautifulSoup(html, "lxml")
+    hidden = [i.get("value") or "" for i in soup.select("input[name*='user' i], input[name*='session' i], input[name*='csrf' i]")]
+    for t in soup.select(ADDENDUM_CHROME_SEL):
+        t.decompose()
+    node = soup.select_one("main") or soup.select_one("#content") or soup.body or soup
+    for s in node.find_all(string=True):  # the source's own line breaks are spaces; only the blocks below end a line
+        if isinstance(s, Comment):
+            s.extract()
+        elif type(s) is NavigableString:
+            s.replace_with(re.sub(r"\s+", " ", str(s)))
+    for br in node.select("br"):
+        br.replace_with("\n")
+    for c in node.select("td, th"):
+        c.insert_after(" | ")
+    for blk in node.select(ADDENDUM_BLOCK_SEL):
+        blk.insert_after("\n")
+    lines = (" ".join(ln.split()).strip(" |") for ln in node.get_text("").splitlines())
+    text = "\n".join(ln for ln in lines if ln)
+    for v in [*hidden, *(secrets or ())]:
+        if v and len(v) >= 4:
+            text = text.replace(v, "***")
+    return text
+
+
+def addendum_path(bid: dict, row: dict):
+    """Where read_addenda saves the text of addendum `row` of `bid`: <downloads>/bidnet/<id>/_addendum_<no>.txt."""
+    safe = re.sub(r"[^\w.-]", "_", str(row.get("no") if row.get("no") is not None else "")).strip("._") or "x"
+    return DOWNLOAD_DIR / "bidnet" / bid["id"] / f"{ADDENDUM_FILE_PREFIX}{safe}.txt"
+
+
+def _login_secrets(session) -> tuple:
+    try:
+        c = session.creds() if hasattr(session, "creds") else None
+    except Exception:  # noqa: BLE001
+        c = None
+    return tuple(v for v in (c or ()) if v)
+
+
+def read_addenda(session, bid: dict, rows: list[dict], stop=None) -> int:
+    """Open the posting-change page of each addendum row in `rows` (rows of bid["addenda"], changed in place) in the scan's
+    logged-in page, in the order given, at most MAX_ADDENDUM_READS a scan (counted on the session), none once `stop()` says the
+    scan's detail budget is spent or a tab read of the scan stalled. A page that renders gives its row "text" (addendum_text, cut
+    to ADDENDUM_TEXT_MAX) and is saved as addendum_path(bid, row) (a file whose content did not change is left alone); one that
+    fails (HTTP error, the login form, nothing to read) only adds a try on the row ("tries"), which run.py reports all the same.
+    A page that does not load in TAB_WAIT_MS is a stall like a tab's (session.tab_stall: the scan's other tab reads are skipped);
+    a robot check raises Challenged. A row without a link, or whose link is a file (read_extra_tabs lists those as documents), is
+    skipped. Returns the pages read."""
+    page = session.page
+    done = 0
+    for a in rows:
+        if tab_stalled(session) or (stop is not None and stop()) or getattr(session, "addenda_reads", 0) >= MAX_ADDENDUM_READS:
+            break
+        href = a.get("href") or ""
+        if not href.startswith(("http://", "https://")) or DOC_LINK_RX.search(href):
+            continue
+        session.addenda_reads = getattr(session, "addenda_reads", 0) + 1
+        a["tries"] = int(a.get("tries") or 0) + 1
+        what = f"Addendum No.{a.get('no')} change page"
+        try:
+            resp = page.goto(href, wait_until="domcontentloaded", timeout=TAB_WAIT_MS)
+            page.wait_for_timeout(800)
+            html = _content(page)
+        except Exception as e:  # noqa: BLE001
+            if type(e).__name__ == "TimeoutError":
+                _record_stall(session, bid, "Addendums", ADDENDA_TAB, "", [], what=what)
+            continue
+        if BOT_RX.search(html) and not total_count(html):
+            start_cooldown()
+            raise Challenged(f"BidNet robot check on the {what}: detail pass stopped, cool-down started")
+        if (resp is not None and not resp.ok) or BeautifulSoup(html, "lxml").select_one(LOGIN_FORM_SEL) is not None:
+            continue
+        text = addendum_text(html, _login_secrets(session))
+        if not text:
+            continue
+        a["text"] = text[:ADDENDUM_TEXT_MAX]
+        a.pop("tries", None)
+        done += 1
+        body = f"Addendum No. {a.get('no')} ({a.get('date') or 'no date'})\n{href}\n\n{text[:ADDENDUM_FILE_MAX]}\n"
+        p = addendum_path(bid, a)
+        try:
+            if not (p.is_file() and p.read_text(errors="ignore") == body):
+                p.parent.mkdir(parents=True, exist_ok=True)
+                p.write_text(body)
+        except OSError:
+            pass
+    return done
 
 
 # ---------------- paid-tier ("interception") notices ----------------

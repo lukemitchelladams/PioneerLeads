@@ -375,6 +375,88 @@ check("a file from the Addenda tab survives a scan that did not read that tab (n
       "tab and no longer found it drops it; the read list is never saved",
       [d["name"] for d in _ktd_a["documents"]] == ["RFP.docx", "Addendum 1.pdf"] and _run_early._diff(_ktd_a, _ktd_old) == []
       and _ktd_b == {"documents": [{"name": "RFP.docx"}]}, (_ktd_a, _ktd_b))
+# 2026-11-18 00:35Z, the first live run of the extra-tab reader: every watched bid has an "Addendums" tab (innerTabId=amendment), so it
+# printed 20 NEW TAB lines. Lafayette's (0000442987, the real fragment in bidnet_tab_amendment_0000442987.html) lists "Addendum No. 1 |
+# 11/17/2026 02:19 PM MST" linking a posting-change page (history/diff), not a file: that change added an optional facility walk.
+print("BidNet Addendums tab rows and their posting-change pages (2026-11-18 Lafayette Addendum No. 1)")
+_LAF = "https://www.bidnetdirect.com/colorado/city-of-lafayette/solicitations/RFP-26-33-FM-Citywide-Custodial-Services/0000442987"
+_DIFF1 = "https://www.bidnetdirect.com/public/solicitations/10030513722/abstract/history/diff?revisionNumber=1"
+_am1_html = (FX / "bidnet_tab_amendment_0000442987.html").read_text()
+_am1 = bidnet.parse_addenda(_am1_html, _LAF)
+check("real Addendums tab: one row, its number, its stamp as ISO with the MST offset and the change page's absolute link; the hidden "
+      "'No entries' row is not a row",
+      _am1 == [{"no": 1, "date": "2026-11-17T14:19-07:00", "href": _DIFF1}], _am1)
+check("the saved tab page (tab_fragment) gives the same row; the change-page link is not a document; the fragment (it names itself "
+      "'amendments') counts as rendered for the lenient read of an extra tab",
+      bidnet.parse_addenda(bidnet.tab_fragment(_am1_html), _LAF) == _am1 and bidnet.tab_documents(_am1_html, _LAF, whole=True) == []
+      and bidnet.tab_rendered(_am1_html, "amendment", before="questions-answers"))
+_am2 = bidnet.parse_addenda((FX / "bidnet_tab_amendment_two_rows.html").read_text(), _LAF)
+check("two rows, in page order",
+      [(a["no"], a["date"], a["href"]) for a in _am2] == [(1, "2026-11-17T14:19-07:00", _DIFF1),
+                                                          (2, "2026-11-19T09:05-07:00", _DIFF1[:-1] + "2")], _am2)
+_am0_html = re.sub(r'<tr class="mets-table-row odd".*?</tr>\s*', "", _am1_html, flags=re.S)
+check("an empty Addendums tab ('No entries' only) yields no rows; nor do an Audit-style table, a heading-less table or plain text",
+      "No entries" in _am0_html and "Addendum No." not in _am0_html and bidnet.parse_addenda(_am0_html, _LAF) == []
+      and bidnet.parse_addenda("<table><thead><tr><th>Solicitation Status</th><th>Date</th></tr></thead><tbody><tr><td>Addendum No. 1"
+                               "</td><td>11/17/2026</td></tr></tbody></table>") == []
+      and bidnet.parse_addenda("<table><tr><td>Addendum No. 1</td><td>11/17/2026</td></tr></table>") == []
+      and bidnet.parse_addenda("<p>Addendum No. 1 11/17/2026 02:19 PM MST</p>") == [])
+check("portal stamps: 12 AM / 12 PM, MDT, a zone without an offset, a bare date, other text kept, empty = None",
+      [bidnet.portal_stamp(s) for s in ("11/17/2026 12:05 AM MST", "11/17/2026 12:30 PM MDT", "11/17/2026 02:19 PM HST", "11/17/2026",
+                                        "pending", "  ")]
+      == ["2026-11-17T00:05-07:00", "2026-11-17T12:30-06:00", "2026-11-17T14:19", "2026-11-17", "pending", None])
+_dsyn = (FX / "bidnet_addendum_diff_synth.html").read_text()
+_dtx = bidnet.addendum_text(_dsyn, ("someone@example.com", "s3cret-test-only"))
+check("the change page as text: one line per block, cells joined by ' | '; the header (account menu, session_username, logout), the site "
+      "alert, the footer, the _csrf tokens, the script and the login gone (the login masked where the text printed it)",
+      _dtx.startswith("Citywide Custodial Services - Addendum No. 1\nChanges published 11/17/2026 02:19 PM MST by City of Lafayette.\n"
+                      "Field | Previous Value | New Value\nSite Visit | None | Optional (Recommended) facility walk, Thursday 11/19/2026 "
+                      "12:00 PM MST, starting at the Lafayette Public Library")
+      and "Attendance is mandatory. The facility walk follows at noon." in _dtx and "sent to *** and to every supplier" in _dtx
+      and not any(x in _dtx for x in ("csrf", "token-value", "pageToken", "5550001234", "someone@example.com", "Logout", "My Profile",
+                                      "Solicitations Search", "Service Alert", "maintenance", "Terms", "<", "\n\n")), _dtx)
+check("a lightbox fragment (no page around it) reads the same way",
+      bidnet.addendum_text("<div class='content-block'><h2>Addendum No. 2</h2><table><tr><td>Closing Date</td><td>12/01/2026 02:00 PM MST"
+                           "</td><td>12/08/2026 02:00 PM MST</td></tr></table></div>")
+      == "Addendum No. 2\nClosing Date | 12/01/2026 02:00 PM MST | 12/08/2026 02:00 PM MST")
+_ar1 = {"no": 1, "date": "2026-11-17T14:19-07:00", "href": _DIFF1}
+_ar1t = {**_ar1, "text": _dtx[:bidnet.ADDENDUM_TEXT_MAX]}
+_ar2 = {"no": 2, "date": "2026-11-19T09:05-07:00", "href": _DIFF1[:-1] + "2"}
+_ad1 = _run_early._diff({"title": "x"}, {"title": "x", "addenda": [_ar1t]})
+_ad_head = 'NEW ADDENDUM No.1 2026-11-17T14:19-07:00: "'
+check("NEW ADDENDUM No.<n> <date> the first scan that lists the row, with the first 300 characters of its change page (lines joined by ' / ')",
+      len(_ad1) == 1 and _ad1[0].startswith(_ad_head + "Citywide Custodial Services - Addendum No. 1 / Changes published 11/17/2026 02:19 PM "
+                                            "MST by City of Lafayette. / Field | Previous Value | New Value / Site Visit | None | Optional")
+      and len(_ad1[0]) == len(_ad_head) + _run_early.ADDENDUM_EXCERPT + 1 and _ad1[0].endswith('"') and "addenda" in _run_early.DETAIL_FIELDS, _ad1)
+check("reported once: the same row (no + date) next scan prints nothing; a second row prints only itself, '(change page not read)' "
+      "when its page could not be opened; its text read on a later scan comes once on its own line",
+      _run_early._diff({"addenda": [_ar1t]}, {"addenda": [dict(_ar1t)]}) == []
+      and _run_early._diff({"addenda": [_ar1t]}, {"addenda": [_ar1t, _ar2]}) == ["NEW ADDENDUM No.2 2026-11-19T09:05-07:00 (change page not read)"]
+      and _run_early._diff({"addenda": [_ar1t, _ar2]}, {"addenda": [_ar1t, {**_ar2, "text": "Addendum No. 2\nClosing Date | 12/01 | 12/08"}]})
+      == ['ADDENDUM No.2 2026-11-19T09:05-07:00 change page: "Addendum No. 2 / Closing Date | 12/01 | 12/08"']
+      and _run_early._diff({"addenda": [_ar1t, _ar2]}, {"addenda": [_ar1t, _ar2]}) == []
+      and _run_early._diff({"addenda": [_ar1t]}, {"addenda": [{**_ar1, "date": "2026-11-18T09:00-07:00"}]})
+      == ["NEW ADDENDUM No.1 2026-11-18T09:00-07:00 (change page not read)"])
+_ast = _run_early._keep_detail({"source": "bidnet", "title": "x"}, {"source": "bidnet", "title": "x", "addenda": [_ar1t]})
+_afr = {"title": "x", "addenda": [dict(_ar1)]}  # the next scan reads the tab again: the row without the page's text
+_run_early._merge_addenda(_afr, _ast)
+check("no repeat after a stall: a scan that did not read the tab carries the rows; the next read keeps the page's text on the same row, "
+      "prints nothing and has nothing left to open",
+      _ast["addenda"] == [_ar1t] and _run_early._diff({"addenda": [_ar1t]}, _ast) == [] and _afr["addenda"] == [_ar1t]
+      and _run_early._diff(_ast, _afr) == [] and _run_early._addenda_to_read(_afr, _ast) == [], (_ast, _afr))
+_amo = {"addenda": [{**_ar1, "tries": 1}, {"no": 0, "date": "2026-11-10", "href": "h0", "tries": bidnet.ADDENDUM_TRIES}, _ar1t]}
+_amo["addenda"][2] = {**_ar1t, "no": 5}
+_amg = {"addenda": _amo["addenda"] + [_ar2]}  # carried whole (DETAIL_FIELDS): the previous record's own dicts, plus a new row
+_run_early._merge_addenda(_amg, _amo)
+check("_merge_addenda copies every row (reading a page never edits the record _diff compares with); _addenda_to_read: the new row first, "
+      "then an older one not read yet; not one with text, nor one that failed ADDENDUM_TRIES times",
+      all(a is not b for a in _amg["addenda"] for b in _amo["addenda"]) and _amg["addenda"][:3] == _amo["addenda"]
+      and [a["no"] for a in _run_early._addenda_to_read(_amg, _amo)] == [2, 1], _amg)
+check("the Addendums and Audit tabs are never a NEW TAB line (on every bid; 20 lines on 2026-11-18 00:35Z), another unknown tab still is",
+      _run_early._diff({"title": "x"}, {"title": "x", "extra_tabs": [{"id": "amendment", "name": "Addendums"}]}) == []
+      and _run_early._diff({"title": "x"}, {"title": "x", "extra_tabs": [{"id": "amendment", "name": "Addendums"}, {"id": "history", "name": "Audit"},
+                                                                         {"id": "award", "name": "Award"}]}) == ["NEW TAB Award"]
+      and {"amendment", "history"} <= bidnet.EXPECTED_TABS)
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -796,8 +878,16 @@ KW_HITS = {"n": 0}
 LOGIN_POSTS = {"n": 0}  # every POST to the login endpoint, accepted or not (= a password sent)
 CODES = {"sent": 0, "last": ""}
 BAD = {"n": 0}
-HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0, "extra": 0, "skip": 0}  # extra: Addenda / Audit, skip: no-file tabs
+HITS2 = {"home": 0, "list": 0, "detail": 0, "comm": 0, "qa": 0, "extra": 0, "skip": 0,  # extra: Addenda / Audit, skip: no-file tabs
+         "amend": 0, "diff": 0}  # the Addendums tab (innerTabId=amendment) and its rows' posting-change pages
 EXTRA_TAB_RX = re.compile(r"innerTabId=(addenda|history|categories|docs-request)(?:&|$)")
+# FAKE_AMENDMENT_TAB "1" / "2" / "0": the strip has the live Addendums tab, as the real Lafayette fragment (one row), the two-row copy or
+# empty ("No entries" only). Each row links /public/solicitations/10030513722/abstract/history/diff?revisionNumber=<n>, served from the
+# synthesized change page with that number and the test login in its text. FAKE_DIFF: "down" (HTTP 503), "robot", "slow" (4 s).
+AMEND_TABS = {"1": (FX / "bidnet_tab_amendment_0000442987.html").read_text(),
+              "2": (FX / "bidnet_tab_amendment_two_rows.html").read_text()}
+AMEND_TABS["0"] = re.sub(r'<tr class="mets-table-row odd".*?</tr>\s*', "", AMEND_TABS["1"], flags=re.S)
+DIFF_PAGE = (FX / "bidnet_addendum_diff_synth.html").read_text()
 DIALOG_HITS = {"close": 0, "do_not_show": 0}  # POSTs to /private/login-message (the lightbox's Close), and how many ticked the box
 ROBOT = "<html><head><title>BidNet Direct</title></head><body><p>Please verify that you're not a robot.</p></body></html>"
 # the Communication tab text as BidNet rendered it on 0000440322 (2026-11-05 15:48 MST): the notice that was missed
@@ -871,6 +961,24 @@ class H(http.server.BaseHTTPRequestHandler):
                               "<table><tr><td><a href='/colorado/town-of-castle-rock/solicitations/HVAC-Maintenance/0000500001'>HVAC Maintenance Services</a>"
                               f"</td><td>Closing {_ahead(21)}</td></tr><tr><td><a href='/colorado/x/solicitations/Road-Paving/0000500003'>Road Paving 2027</a></td>"
                               f"<td>Closing {_ahead(2)}</td></tr></table><a class='next' href='/colorado/solicitations/open-bids/page2'>Next</a>")
+        if "/abstract/history/diff" in p:
+            HITS2["diff"] += 1
+            mode = os.environ.get("FAKE_DIFF") or ""
+            if mode == "robot":
+                return self._send(ROBOT)
+            if mode == "down":
+                return self._send("<h1>Service unavailable</h1>", 503)
+            if not self._authed():
+                return self._send("<form method=post action='/public/authentication/login'><input name='j_username'>"
+                                  "<input name='j_password' type='password'><button type='submit'>Log in</button></form>")
+            if mode == "slow":
+                time.sleep(4)
+            m = re.search(r"revisionNumber=(\d+)", p)
+            n = m.group(1) if m else "1"
+            try:
+                return self._send(DIFF_PAGE.replace("Addendum No. 1", f"Addendum No. {n}").replace("someone@example.com", USER))
+            except (BrokenPipeError, ConnectionResetError):
+                return None
         if "/solicitations/" in p:
             HITS2["detail"] += 1
             if os.environ.get("FAKE_ROBOT_DETAIL"):
@@ -889,6 +997,9 @@ class H(http.server.BaseHTTPRequestHandler):
                                     "<span class='tabCount'>50</span></a></li><li class='mets-tab enabled'><a href='?innerTabId=history'>"
                                     "Audit</a></li><li class='mets-tab enabled'><a href='?innerTabId=addenda'>Addenda"
                                     "<span class='tabCount'>1</span></a></li></ul>")
+            amend = os.environ.get("FAKE_AMENDMENT_TAB")
+            if amend:
+                tabs = tabs.replace("</ul>", "<li class='mets-tab enabled'><a href='?innerTabId=amendment'>Addendums</a></li></ul>")
             xt = EXTRA_TAB_RX.search(p)
             pane = ""
             dialog = ""
@@ -923,6 +1034,7 @@ class H(http.server.BaseHTTPRequestHandler):
                     # the tab's XHR failed or never went: the page stays on the Notice tab (#currentTabId = notice), as in the
                     # 2026-11-12/13 dumps, with BidNet's hidden ajax indicator. The click still counts as a tab request.
                     HITS2["comm" if "innerTabId=communication" in p else "qa" if "innerTabId=questions-answers" in p
+                          else "amend" if "innerTabId=amendment" in p
                           else "extra" if xt and xt.group(1) in ("addenda", "history") else "skip"] += 1
                     return self._send(f"<h1>Bid</h1><div id='ajaxIndicator' class='mets-ajax-indicator' style='display: none;'>Loading...</div>"
                                       f"{dialog}{tabs}<div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>")
@@ -946,6 +1058,9 @@ class H(http.server.BaseHTTPRequestHandler):
                         "<tr><td>11/17/2026 02:30 PM MST</td><td>Addendum published</td></tr></table></div>")
             elif xt:
                 pane = "<div id='innerTabContent'><input id='currentTabId' type='hidden' value='" + xt.group(1) + "'></div>"
+            elif "innerTabId=amendment" in p:
+                HITS2["amend"] += 1
+                pane = AMEND_TABS.get(amend or "1", AMEND_TABS["1"])
             elif "innerTabId=communication" in p:
                 HITS2["comm"] += 1
                 n = int(os.environ.get("FAKE_COMM") or 0)
@@ -1639,6 +1754,66 @@ _hst2 = {"errors": []}
 run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _types.SimpleNamespace(enrich=lambda ses, b: {**b, "detail_checked": True}),
                          dict(_found), "bidnet", profiles, run._WatchSet([]), {}, True, {}, _hst2)
 check("no stall: no record, no note", "tab_stall" not in _hst2 and _hst2["errors"] == [], _hst2)
+# (b3) BidNet Addendums tab rows: _enrich_and_download hands bidnet.read_addenda the rows of a fresh read still to open (new ones first)
+# with the budget's stop; never for an unwatched match, a watchlist entry decided NO, a logged-out session or a read that failed
+_ar_calls = []
+
+
+def _ar_read(ses, b, rows, stop=None):
+    _ar_calls.append((b["id"], [a["no"] for a in rows], stop))
+    if b["id"] == "10":
+        raise bidnet.Challenged("BidNet robot check on the Addendum No.3 change page: detail pass stopped, cool-down started")
+    for a in rows:
+        a["text"] = f"change {a['no']}"
+    return len(rows)
+
+
+_ar_rows = [{"no": 1, "date": "d1", "href": "h1"}, {"no": 2, "date": "d2", "href": "h2"}, {"no": 3, "date": "d3", "href": "h3"}]
+_ar_mod = _types.SimpleNamespace(enrich=lambda ses, b: {**b, "addenda": [dict(a) for a in _ar_rows], "detail_checked": True},
+                                 read_addenda=_ar_read)
+_ar_old = {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77",
+           "addenda": [{"no": 1, "date": "d1", "href": "h1", "text": "seen"}, {"no": 2, "date": "d2", "href": "h2", "tries": 1}]}
+_ar_found = {"bidnet:9": {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77", "url": "u"}}
+_ar_bud = run._DetailBudget(600)
+_ar_h = {"errors": []}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _ar_mod, _ar_found, "bidnet", profiles, _ws2, {"bidnet:9": _ar_old},
+                         True, {}, _ar_h, budget=_ar_bud)
+_ar_new = _ar_found["bidnet:9"]
+check("watched bid, fresh read: read_addenda gets the new row first, then the older one never read, not the one read before, with the "
+      "budget's stop; the earlier text and failed tries stay on their rows; the previous record is not edited; _diff then prints the "
+      "late page once and the new row with its text",
+      _ar_calls == [("9", [3, 2], _ar_bud.exceeded)] and [a.get("text") for a in _ar_new["addenda"]] == ["seen", "change 2", "change 3"]
+      and _ar_new["addenda"][1].get("tries") == 1 and _ar_old["addenda"][1] == {"no": 2, "date": "d2", "href": "h2", "tries": 1}
+      and run._diff(_ar_old, _ar_new) == ['ADDENDUM No.2 d2 change page: "change 2"', 'NEW ADDENDUM No.3 d3: "change 3"']
+      and _ar_h["errors"] == [], (_ar_calls, _ar_new, _ar_h))
+_ar_calls.clear()
+for _ar_ses, _ar_ws, _ar_mod2 in ((_types.SimpleNamespace(logged_in=True), run._WatchSet([{"name": "w (NO: test, not our trade)", "source": "bidnet",
+                                                                                           "match": "26-77"}]), _ar_mod),
+                                  (_types.SimpleNamespace(logged_in=True), run._WatchSet([]), _ar_mod),
+                                  (_types.SimpleNamespace(logged_in=False), _ws2, _ar_mod),
+                                  (_types.SimpleNamespace(logged_in=True), _ws2,
+                                   _types.SimpleNamespace(enrich=lambda ses, b: 1 / 0, read_addenda=_ar_read))):
+    run._enrich_and_download(_ar_ses, _ar_mod2, {"bidnet:9": {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77", "url": "u"}},
+                             "bidnet", profiles, _ar_ws, {"bidnet:9": _ar_old}, True, {}, {"errors": []}, budget=run._DetailBudget(600))
+check("no change page opened for a decided-NO entry (its pages are not fetched, like its documents), an unwatched match, a logged-out "
+      "session or a detail read that failed (the record is last scan's)", _ar_calls == [], _ar_calls)
+_ar_found = {f"bidnet:{i}": {"source": "bidnet", "id": str(i), "title": f"Watched HVAC bid 26-77 lot {i}", "url": "u"} for i in (10, 11)}
+_ar_h = {"errors": []}
+_ar_n = {"enrich": 0}
+
+
+def _ar_enrich(ses, b):
+    _ar_n["enrich"] += 1
+    return {**b, "addenda": [dict(a) for a in _ar_rows], "detail_checked": True}
+
+
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _types.SimpleNamespace(enrich=_ar_enrich, read_addenda=_ar_read), _ar_found,
+                         "bidnet", profiles, _ws2, {}, True, {}, _ar_h, budget=run._DetailBudget(600))
+check("a robot check on a change page stops the detail pass like one on a detail page: the next bid is not opened, one 'detail pages "
+      "blocked' error, the bid keeps its fresh rows",
+      _ar_n["enrich"] == 1 and [c[0] for c in _ar_calls] == ["10"]
+      and _ar_h["errors"] == ["detail pages blocked: BidNet robot check on the Addendum No.3 change page: detail pass stopped, cool-down started"]
+      and len(_ar_found["bidnet:10"].get("addenda") or []) == 3 and "CHALLENGED" in _ar_h.get("login_note", ""), (_ar_n, _ar_calls, _ar_h))
 
 # (c) the detail pass's wall-clock budget, end to end (BIDWATCH_DETAIL_BUDGET_S; 2026-11-12 20:39Z BidNet's tabs hung on
 # "Loading..." and `timeout 1500` killed the run before REPORT.md): a clock already past a 1 s budget when the first detail
@@ -1908,6 +2083,95 @@ check("after that stall the rest of the scan clicks no tab at all, known or not"
 s16.close()
 bidnet.TAB_WAIT_MS = _wait
 del os.environ["FAKE_EXTRA_TAB"]
+# 2026-11-18: the Addendums tab every watched bid has (FAKE_AMENDMENT_TAB: the real Lafayette fragment) and each row's posting-change
+# page, opened by read_addenda in the scan's logged-in page (FAKE_DIFF: how that page answers)
+os.environ["FAKE_AMENDMENT_TAB"] = "1"
+s17 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s17.ensure_login()
+_a0, _df0, _x0, _k0 = HITS2["amend"], HITS2["diff"], HITS2["extra"], HITS2["skip"]
+_e = bidnet.enrich(s17, {**_bid, "watched": True})
+_D = BASE + "/public/solicitations/10030513722/abstract/history/diff?revisionNumber="
+check("watched bid: the Addendums tab is clicked (its fragment names itself 'amendments') and its row stored; it is no extra tab (no "
+      "NEW TAB), adds no file, and enrich opens no change page",
+      HITS2["amend"] == _a0 + 1 and _e.get("addenda") == [{"no": 1, "date": "2026-11-17T14:19-07:00", "href": _D + "1"}]
+      and "extra_tabs" not in _e and not [d for d in _e.get("documents") or [] if d.get("tab")] and HITS2["diff"] == _df0
+      and HITS2["extra"] == _x0 and HITS2["skip"] == _k0 and not getattr(s17, "tab_stall", None), (_e, HITS2))
+for _f in _xdl.glob(bidnet.ADDENDUM_FILE_PREFIX + "*"):
+    _f.unlink()
+_ar = _e["addenda"]
+_n = bidnet.read_addenda(s17, _e, _ar)
+_ap = _xdl / "_addendum_1.txt"
+_at = _ap.read_text() if _ap.is_file() else ""
+check("read_addenda opens the change page once and saves its text as _addendum_1.txt beside the documents, the row gets the text: the "
+      "change rows kept; the _csrf tokens, the script's token, the header (session_username, account menu), the site alert, the footer "
+      "and the login gone",
+      _n == 1 and HITS2["diff"] == _df0 + 1
+      and _at.startswith(f"Addendum No. 1 (2026-11-17T14:19-07:00)\n{_D}1\n\nCitywide Custodial Services - Addendum No. 1\n")
+      and "Site Visit | None | Optional (Recommended) facility walk, Thursday 11/19/2026 12:00 PM MST" in _at and "sent to *** and" in _at
+      and not any(x in _at for x in ("csrf", "token-value", "pageToken", "5550001234", USER, PW, "Logout", "My Profile", "Service Alert",
+                                     "Terms &"))
+      and _ar[0].get("text", "").startswith("Citywide Custodial Services - Addendum No. 1\nChanges published") and "tries" not in _ar[0]
+      and _at.endswith(_ar[0]["text"] + "\n") and len(_ar[0]["text"]) <= bidnet.ADDENDUM_TEXT_MAX, (_n, _at[:300], _ar))
+_m1 = _ap.stat().st_mtime_ns
+_ar5 = [{k: v for k, v in _ar[0].items() if k != "text"}] + [{"no": i, "date": f"2026-11-2{i}", "href": _D + str(i)} for i in range(2, 6)]
+_n = bidnet.read_addenda(s17, _e, _ar5)
+check("at most MAX_ADDENDUM_READS (3) change pages a scan, counted on the session: two more here, the rest untouched (no try counted); "
+      "an unchanged page's file is not rewritten",
+      bidnet.MAX_ADDENDUM_READS == 3 and _n == 2 and HITS2["diff"] == _df0 + 3 and [bool(a.get("text")) for a in _ar5] == [True, True, False, False, False]
+      and not any("tries" in a for a in _ar5) and (_xdl / "_addendum_2.txt").is_file() and not (_xdl / "_addendum_3.txt").exists()
+      and _ap.stat().st_mtime_ns == _m1 and "Addendum No. 2" in (_xdl / "_addendum_2.txt").read_text(), (_n, _ar5, HITS2))
+s17.close()
+s18 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s18.ensure_login()
+_df0 = HITS2["diff"]
+_rs = [{"no": 8, "date": "d8", "href": None}, {"no": 9, "date": "d9", "href": BASE + "/dl/addendum9.pdf"}]
+check("a row without a link, or one whose link is a file (listed as a document instead), is not opened; a spent budget opens nothing",
+      bidnet.read_addenda(s18, _e, _rs) == 0 and bidnet.read_addenda(s18, _e, [dict(_ar5[3])], stop=lambda: True) == 0
+      and HITS2["diff"] == _df0 and not any("tries" in a for a in _rs) and not getattr(s18, "addenda_reads", 0))
+os.environ["FAKE_DIFF"] = "down"
+_r7 = [{"no": 7, "date": "d7", "href": _D + "7"}]
+_n = bidnet.read_addenda(s18, _e, _r7)
+check("a change page that fails (HTTP 503): no text, no file, one try counted on the row (run.py reports the row all the same), no stall",
+      _n == 0 and HITS2["diff"] == _df0 + 1 and _r7[0] == {"no": 7, "date": "d7", "href": _D + "7", "tries": 1}
+      and not (_xdl / "_addendum_7.txt").exists() and not getattr(s18, "tab_stall", None), (_r7, HITS2))
+os.environ["FAKE_DIFF"] = "robot"
+try:
+    bidnet.read_addenda(s18, _e, _r7)
+    _rc = None
+except bidnet.Challenged as _ex:
+    _rc = str(_ex)
+check("a robot check served for a change page stops the detail pass (Challenged, cool-down started)",
+      _rc == "BidNet robot check on the Addendum No.7 change page: detail pass stopped, cool-down started" and bidnet.cooldown_until()
+      and _r7[0]["tries"] == 2, _rc)
+common.BIDNET_COOLDOWN_FILE.unlink(missing_ok=True)
+s18.close()
+os.environ["FAKE_DIFF"] = "slow"
+bidnet.TAB_WAIT_MS = 1500
+s19 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s19.ensure_login()
+_df0, _a0 = HITS2["diff"], HITS2["amend"]
+_t0 = time.time()
+_n = bidnet.read_addenda(s19, _e, [dict(_r7[0], tries=0), {"no": 6, "date": "d6", "href": _D + "6"}])
+_dt = time.time() - _t0
+_st = getattr(s19, "tab_stall", None) or {}
+check("a change page that does not load in TAB_WAIT_MS is a stall like a tab's: recorded on the session naming the page, the next row not "
+      "opened, and every later tab read of the scan skipped",
+      _n == 0 and HITS2["diff"] == _df0 + 1 and _dt < 15 and _st.get("tab_id") == "amendment"
+      and _st.get("note", "").startswith("BidNet detail tabs stalled: the Addendum No.7 change page of 0000500002 never rendered in 1 s")
+      and bidnet.read_addenda(s19, _e, [{"no": 6, "date": "d6", "href": _D + "6"}]) == 0 and HITS2["diff"] == _df0 + 1
+      and "addenda" not in bidnet.enrich(s19, {**_bid, "watched": True}) and HITS2["amend"] == _a0, (_n, _dt, _st, HITS2))
+s19.close()
+bidnet.TAB_WAIT_MS = _wait
+del os.environ["FAKE_DIFF"]
+os.environ["FAKE_AMENDMENT_TAB"] = "0"
+s20 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s20.ensure_login()
+_a0 = HITS2["amend"]
+_e = bidnet.enrich(s20, {**_bid, "watched": True})
+check("an empty Addendums tab ('No entries'): clicked, no rows stored (run.py keeps last scan's), no NEW TAB",
+      HITS2["amend"] == _a0 + 1 and "addenda" not in _e and "extra_tabs" not in _e and not getattr(s20, "tab_stall", None), _e)
+s20.close()
+del os.environ["FAKE_AMENDMENT_TAB"]
 s13.close()
 b4.close()
 # the full scan: the lines reach the report once, stay stored, survive a blind scan and a broken tab
@@ -2026,6 +2290,50 @@ check("full scan, the Addenda tab stalls: the scan finishes (stall note once, de
       and any(d.get("tab") == "addenda" for d in r25["found"][_W].get("documents") or []) and _W not in r25["changed"]
       and not any(x.startswith(("NEW TAB", "NEW DOCUMENTS")) for x in _d26), (_h25.get("tab_stall"), _h25["errors"], r25["changed"], _d26))
 del os.environ["FAKE_EXTRA_TAB"]
+# full scans with the Addendums tab: NEW ADDENDUM once with the start of its change page (saved beside the documents), no NEW TAB; no
+# repeat after a stalled scan; a second row alone, reported although its change page failed, and that page's text once when read later
+for _f in _xdl.glob(bidnet.ADDENDUM_FILE_PREFIX + "*"):
+    _f.unlink()
+os.environ["FAKE_AMENDMENT_TAB"] = "1"
+_df0 = HITS2["diff"]
+r27 = run.scan(["bidnet"])
+_d27 = [x for x in r27["changed"].get(_W, {}).get("diffs", []) if "ADDENDUM" in x or x.startswith("NEW TAB")]
+_rep27 = (TMP / "REPORT_FILE.json").read_text()
+_ob27 = (TMP / "OPEN_BIDS_FILE.json").read_text()
+_l27 = 'NEW ADDENDUM No.1 2026-11-17T14:19-07:00: "Citywide Custodial Services - Addendum No. 1 / Changes published 11/17/2026 02:19 PM MST'
+check("full scan, first sight of the Addendums tab: one NEW ADDENDUM No.1 line with the start of its change page, in REPORT.md and "
+      "LAST_SCAN.md, no NEW TAB line; the page opened once, saved as _addendum_1.txt, its text kept on the row in open_bids.json (login masked)",
+      len(_d27) == 1 and _d27[0].startswith(_l27) and _l27 in _rep27 and "NEW ADDENDUM No.1 2026-11-17T14:19-07:00" in LAST_SCAN.read_text()
+      and HITS2["diff"] == _df0 + 1 and (_xdl / "_addendum_1.txt").is_file()
+      and (r27["found"][_W].get("addenda") or [{}])[0].get("text", "").startswith("Citywide Custodial Services - Addendum No. 1")
+      and "Changes published 11/17/2026" in _ob27 and USER not in _ob27 and "5550001234" not in _ob27, (_d27, HITS2))
+r28 = run.scan(["bidnet"])
+check("next scan, same row: no ADDENDUM line, the change page not opened again, the row keeps its text",
+      not any("ADDENDUM" in x for x in r28["changed"].get(_W, {}).get("diffs", [])) and HITS2["diff"] == _df0 + 1
+      and r28["found"][_W]["addenda"] == r27["found"][_W]["addenda"], (r28["changed"].get(_W), HITS2))
+os.environ["FAKE_TAB_STALL"] = "1"
+bidnet.TAB_WAIT_MS = 1500
+r29 = run.scan(["bidnet"])
+bidnet.TAB_WAIT_MS = _wait
+del os.environ["FAKE_TAB_STALL"]
+os.environ["FAKE_AMENDMENT_TAB"], os.environ["FAKE_DIFF"] = "2", "down"
+r30 = run.scan(["bidnet"])
+_d30 = [x for x in r30["changed"].get(_W, {}).get("diffs", []) if "ADDENDUM" in x]
+check("a scan whose tabs stall carries the rows (no ADDENDUM line); the next lists a second row: only NEW ADDENDUM No.2, reported "
+      "although its change page failed (HTTP 503: one try on the row, no file); No.1 not repeated, its page not opened again",
+      r29["health"]["bidnet"].get("tab_stall") and r29["found"][_W].get("addenda") == r27["found"][_W]["addenda"]
+      and not any("ADDENDUM" in x for x in r29["changed"].get(_W, {}).get("diffs", []))
+      and _d30 == ["NEW ADDENDUM No.2 2026-11-19T09:05-07:00 (change page not read)"] and HITS2["diff"] == _df0 + 2
+      and [a.get("tries") for a in r30["found"][_W]["addenda"]] == [None, 1] and not (_xdl / "_addendum_2.txt").exists(), (_d30, HITS2))
+del os.environ["FAKE_DIFF"]
+r31 = run.scan(["bidnet"])
+_d31 = [x for x in r31["changed"].get(_W, {}).get("diffs", []) if "ADDENDUM" in x]
+r32 = run.scan(["bidnet"])
+check("the next scan opens No.2's page again and prints its text once, on its own line; the scan after it prints nothing and opens nothing",
+      len(_d31) == 1 and _d31[0].startswith('ADDENDUM No.2 2026-11-19T09:05-07:00 change page: "Citywide Custodial Services - Addendum No. 2 /')
+      and (_xdl / "_addendum_2.txt").is_file() and "tries" not in r31["found"][_W]["addenda"][1] and HITS2["diff"] == _df0 + 3
+      and not any("ADDENDUM" in x for x in r32["changed"].get(_W, {}).get("diffs", [])), (_d31, HITS2))
+del os.environ["FAKE_AMENDMENT_TAB"]
 
 _B = _brmod.Browser
 

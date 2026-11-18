@@ -20,7 +20,9 @@ Every cycle:
      to write its files (exit 3, degraded). Before this, 2026-11-12 20:39Z, BidNet's tabs hung on "Loading..." and
      the detail pass outlived the outer `timeout 1500`: no REPORT.md, the hour's list scan lost.
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
-     Q & A tab entries on watched bids, a BidNet tab the scanner does not know = NEW TAB), CLOSED.
+     Q & A tab entries on watched bids, BidNet Addendums tab rows = NEW ADDENDUM No.<n> <date> with the start of the
+     posting-change page each links (opened in the logged-in page, at most 3 a scan, saved as _addendum_<n>.txt beside
+     the documents), a BidNet tab the scanner does not know = NEW TAB), CLOSED.
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
      attachments are public and are downloaded from the detail view's Attachment panel without a login). An entry
      decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
@@ -567,7 +569,7 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
 
 
 DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description",
-                 "communications", "qa", "extra_tabs")
+                 "communications", "qa", "extra_tabs", "addenda")
 
 
 def _keep_detail(row: dict, old: dict) -> dict:
@@ -631,6 +633,46 @@ def _keep_tab_documents(got: dict, old: dict) -> None:
     keep = [x for x in old.get("documents") or [] if x.get("tab") and x["tab"] not in read and x.get("name") not in have]
     if keep:
         got["documents"] = list(got.get("documents") or []) + keep
+
+
+# ---------------- BidNet Addendums tab rows (bidnet.parse_addenda / read_addenda) ----------------
+ADDENDUM_KEPT = ("text", "tries")  # what an earlier scan learned about a row: its change page's text, failed opens
+ADDENDUM_EXCERPT = 300  # characters of the change page on the report line
+
+
+def _addendum_key(a: dict) -> tuple:
+    """An Addendums-tab row's identity across scans: its number and date."""
+    return (str(a.get("no")), a.get("date"))
+
+
+def _merge_addenda(got: dict, old: dict) -> None:
+    """A fresh read's Addendums rows (no, date, href) keep what earlier scans learned about the same row (ADDENDUM_KEPT). Every
+    row becomes a copy, so the change pages read into this scan's record never edit the previous record _diff compares with
+    (rows carried whole through a tab that was not read, by DETAIL_FIELDS, are the previous record's own dicts)."""
+    rows = got.get("addenda")
+    if not rows:
+        return
+    prior = {_addendum_key(a): a for a in old.get("addenda") or []}
+    got["addenda"] = [{**{f: p[f] for f in ADDENDUM_KEPT if f in p}, **a}
+                      for a in rows for p in [prior.get(_addendum_key(a)) or {}]]
+
+
+def _addenda_to_read(rec: dict, old: dict) -> list[dict]:
+    """The rows of `rec` whose change page is still to be opened (no text yet, fewer than bidnet.ADDENDUM_TRIES failed opens):
+    the rows new this scan first, then older ones the per-scan cap, the budget or a failure left unread."""
+    seen = {_addendum_key(a) for a in old.get("addenda") or []}
+    rows = [a for a in rec.get("addenda") or [] if not a.get("text") and int(a.get("tries") or 0) < bidnet.ADDENDUM_TRIES]
+    return sorted(rows, key=lambda a: _addendum_key(a) in seen)
+
+
+def _addendum_line(a: dict) -> str:
+    return f"ADDENDUM No.{a.get('no')} {a.get('date') or '(no date)'}"
+
+
+def _addendum_excerpt(a: dict) -> str:
+    """The start of the row's change-page text on one report line: its lines (one per block, table cells " | ") joined by " / "."""
+    lines = (" ".join(ln.split()) for ln in str(a.get("text") or "").splitlines())
+    return f': "{" / ".join(ln for ln in lines if ln)[:ADDENDUM_EXCERPT]}"'
 
 
 def _restore_detail(found: dict, prev: dict, source: str) -> None:
@@ -759,6 +801,7 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 found[k] = _keep_detail(b, old)
                 continue
             b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
+            fresh = False
             try:
                 got = mod.enrich(ses, b)
                 # a detail page that came back thin (documents tab did not load, members-only fields hidden after a
@@ -768,7 +811,9 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                     if not got.get(f) and old.get(f):
                         got[f] = old[f]
                 _keep_tab_documents(got, old)
+                _merge_addenda(got, old)
                 found[k] = {**got, "detail_at": iso()}
+                fresh = True
             except Exception as e:  # noqa: BLE001
                 found[k] = _keep_detail(b, old)
                 if type(e).__name__ == "Challenged":  # robot check / Cloudflare: every other page will fail the same way
@@ -776,6 +821,21 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                     h["errors"].append(f"detail pages blocked: {e}")
                     continue
                 h["errors"].append(f"detail {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
+            # BidNet Addendums tab: open the posting-change page of each row new this scan (a walk or due date can move there
+            # with no document), then older unread ones; bidnet.read_addenda keeps the per-scan cap and the stall and robot-check
+            # rules, and stops once the budget is spent. A row whose page is not read is reported all the same (_diff). Not for
+            # an entry decided NO: its pages are not fetched, like its documents.
+            if fresh and is_w and ses.logged_in and hasattr(mod, "read_addenda") and not watched_keys.decided_no(b):
+                rows_a = _addenda_to_read(found[k], old)
+                if rows_a:
+                    try:
+                        mod.read_addenda(ses, found[k], rows_a, stop=budget.exceeded)
+                    except Exception as e:  # noqa: BLE001
+                        if type(e).__name__ == "Challenged":
+                            blocked = str(e)
+                            h["errors"].append(f"detail pages blocked: {e}")
+                            continue
+                        h["errors"].append(f"addendum page {b.get('title', '')[:60]}: {type(e).__name__}: {str(e)[:120]}")
             # documents need the portal login, except where the module says they are public (ColoradoVSS attachments:
             # coloradovss.PUBLIC_DOCS; its session never logs in)
             wants_docs = is_w and hasattr(mod, "download_docs") and (ses.logged_in or getattr(mod, "PUBLIC_DOCS", False))
@@ -834,11 +894,22 @@ def _diff(old: dict, new: dict) -> list[str]:
     # an old list from no real read (bulk-file row, partial run: _carry_documents) is not a baseline: nothing on it is "new"
     if old.get("documents") is not None and not _docs_unknown(old) and nd - od:
         out.append("NEW DOCUMENTS (addendum?): " + ", ".join(sorted(nd - od))[:300])
+    # BidNet Addendums tab (watched bids: d["addenda"], kept through a scan that did not read the tab by DETAIL_FIELDS): each row
+    # once, the first scan that lists it (keyed on no + date), with the start of its posting-change page when bidnet.read_addenda
+    # read it; a row whose page is read only on a later scan (per-scan cap, a failed open) gets that text once, on its own line
+    oa = {_addendum_key(a): a for a in old.get("addenda") or []}
+    for a in new.get("addenda") or []:
+        p = oa.get(_addendum_key(a))
+        if p is None:
+            out.append(f"NEW {_addendum_line(a)}" + (_addendum_excerpt(a) if a.get("text") else " (change page not read)"))
+        elif a.get("text") and not p.get("text"):
+            out.append(f"{_addendum_line(a)} change page{_addendum_excerpt(a)}")
     # a BidNet tab the scanner does not know (bidnet.read_extra_tabs: d["extra_tabs"], kept through thin reads by DETAIL_FIELDS),
-    # reported once, the first scan that lists it; its files are in the document list above (2026-11-17 Lafayette addendum)
+    # reported once, the first scan that lists it; its files are in the document list above (2026-11-17 Lafayette addendum). The
+    # Addendums and Audit tabs are on every bid (bidnet.EXPECTED_TABS): never a NEW TAB line (20 of them on 2026-11-18 00:35Z)
     ot = {t.get("id") for t in old.get("extra_tabs") or []}
     for t in new.get("extra_tabs") or []:
-        if t.get("id") not in ot:
+        if t.get("id") not in ot and t.get("id") not in bidnet.EXPECTED_TABS:
             out.append(f"NEW TAB {t.get('name') or t.get('id')}")
     # BidNet Communication tab (watched bids): a buyer notice carries no document, so it only shows up here. Each
     # entry is reported once, the first scan that sees it (2026-11-05: a walkthrough moved from 9 to 10:30 am this way).
