@@ -1,3 +1,14 @@
+# 2026-11-18 ~16:50 MT: MAC SCAN = 5 NEW GO (CRM v419). HQ OWNS ALL FIVE: documents + 2 sub lines each, starting now
+1. URGENT Buckley SFB Hoods & Ducts SOURCES SOUGHT (SAM HoodsDucts12NOV26), due Thu 11/19 17:00 MT, Total SB. Capability
+   response only (no price, no signature): HQ drafts tonight from the Smart T sources-sought template + HOODZ as teamed sub
+   (ask Larry for OK to name HOODZ in the first email, by Thu 12:00). Mac sends Thu by 15:00. Insurance: never state carrier/limits.
+2. IHS Albuquerque fire doors 75H70727Q00003, due Wed 11/25 15:00 MST: GO-IF-BONDED (Amd 0002 payment bond on the DBA portion).
+   Fold into the Evergreen ask (same packet); signable copy to Luke Mon 11/23 15:00. No bond path by Mon 12:00 = NO-BID.
+3. Thornton 337-26 sport court repairs on-call, due 12/09 17:00: triage docs, rate-sheet style, price from documents.
+4. Canon City 167-26 electrical, Low Head Pump Station, due 12/17 11:00: check for a license required in OUR name or a bid bond first.
+5. Lakewood ITB 6716 Holbrook Park playground, due 12/15 10:00: bond-gated; triage after the Evergreen answer.
+BidNet docs need Luke's login; read what's public first, put any login-only pull on the Luke board as ONE line.
+
 # 2026-11-18 16:15 MT: QUOTE MORE JOBS (Luke: "need to be quoting more jobs"), both operators, effective now
 1. VOLUME TARGET: at least 5 NEW GO bids added to the pipeline every week (on top of the 2-submitted floor). Count by Monday plan.
 2. WIDEN SCANS TODAY: add RFQs/quotes under $50K (informal quotes, purchase-order work, on-call/IDIQ rate sheets), school districts,
