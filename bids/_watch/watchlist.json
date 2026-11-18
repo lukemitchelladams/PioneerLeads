@@ -960,6 +960,12 @@
    "match": "127EAX27Q0015",
    "folder": "bids/usfs-gila-electrical-127EAX27Q0015",
    "govtribe_ids": []
+  },
+  {
+   "name": "NAVSUP 5-TON CHAIN HOIST N0010427QBC70, due 2026-12-18 (NO: chain hoist, not a Jones Bearing line; Dad is family and off limits)",
+   "source": "samgov",
+   "match": "N0010427QBC70|1bbbca1e2cd240838a114e008f5dd75d",
+   "folder": null
   }
  ]
 }
