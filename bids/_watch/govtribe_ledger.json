@@ -2973,6 +2973,18 @@
    "verdict": "NO",
    "why": "open_bids set_aside 'Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)'; Brown Bison is not SDVOSB; Northern California Area Office, outside CO/NM/WY/UT (worker 18:21Z).",
    "at": "2026-11-17T18:30:00Z"
+  },
+  "bidnet:0000442237": {
+   "name": "POST Certified On-Call Security Officer Services (BidNet 0000442237; Addendum No. 2 posted 11/17)",
+   "verdict": "NO",
+   "why": "Armed/POST-certified security officer staffing is not one of our trades (HVAC, plumbing, electrical, facilities, grounds/snow, janitorial). Worker 00:21Z 11/18 after the addendum surfaced it.",
+   "at": "2026-11-18T01:30:00Z"
+  },
+  "bidnet:0000442370": {
+   "name": "RFQ 26-024 On-Call Professional Building Plan Review and Inspection Services (BidNet 0000442370; Q&A + Memo of Agreement posted)",
+   "verdict": "NO",
+   "why": "Professional plan review / building inspection services (licensed code officials), not a construction or facilities-maintenance trade. Worker 00:21Z 11/18.",
+   "at": "2026-11-18T01:30:00Z"
   }
  },
  "watched": {
@@ -3158,6 +3170,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T00:30:00Z",
+ "last_hourly_check": "2026-11-18T01:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
