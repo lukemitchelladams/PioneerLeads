@@ -1001,6 +1001,20 @@
    "id": "0000443963",
    "match": "0000443963",
    "folder": "bids/cherrycreek-pool-ops-27-014"
+  },
+  {
+   "name": "NAVSUP Hoist Blocks, Naval Base San Diego (NO: 8(a) set-aside; hoists are not a Jones Bearing line; Dad is family and off limits)",
+   "source": "samgov",
+   "id": "7dee71a221554a8e84e0fb0724da2948",
+   "match": "7dee71a221554a8e84e0fb0724da2948",
+   "folder": null
+  },
+  {
+   "name": "CU Boulder As-Needed Materials Testing Professional Services (NO: materials testing / professional services, not our trade)",
+   "source": "bidnet",
+   "id": "0000443987",
+   "match": "0000443987",
+   "folder": null
   }
  ]
 }
