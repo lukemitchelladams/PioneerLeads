@@ -1924,6 +1924,26 @@
    "contact": "Lynn Beltran, lynn.beltran@rrcc.edu (VSS buyer)",
    "sub_pricing": "none asked yet",
    "due_source": "Colorado VSS listing: 2026-12-15 13:00 MST"
+  },
+  {
+   "id": "blm-140ll027q0009-kanab-janitorial",
+   "agency": "DOI Bureau of Land Management, Utah State Office (UT952), Salt Lake City",
+   "title": "S--BLM Utah - Paria River District HQ Janitorial, 669 S Hwy 89A, Kanab UT (~13,000 sq ft, Mon/Wed/Fri)",
+   "sol": "140LL027Q0009 (SAM.gov 7afe087450dd48268559b2f751b40e4b)",
+   "trade": "Janitorial (sub performs; needs a Kanab-area cleaner)",
+   "due": "2026-12-09T12:00:00-07:00",
+   "due_source": "SF-1449 block 8 '12/09/2026 1200 MS'; Amd 0001 'Quotes Due: 12:00PM MST on Wednesday, December 9, 2026' (date not extended; weekday names and CO email corrected)",
+   "portal": "SAM.gov; quote by email to the Contract Specialist (subject 'RFQ - 140LL027Q0009: PRD Janitorial Services'); 9 files in bids/blm-kanab-janitorial-140LL027Q0009/docs/",
+   "decision": "GO (HQ 2026-11-18, Overdrive: no walk, no bond, no license, no 52.219-14; priced from documents in private/; submit early week of 11/23 as the second floor bid)",
+   "decision_note": "Opened 2026-11-18 from the 11/17 SAM sweep (#1). Total small business, NAICS 561720 (Luke adds 561720 in SAM before submit). Best-value trade-off, technical more important than price; lead factor is recruitment/retention in a small-town labor market. Base 2027 + 4 option years. WD 2015-5495 Rev 30 in the solicitation. No site visit anywhere in the package; Sol p.4 bars contact with government staff other than the contracting office. Weak spot: past performance (3 remote/rural projects in 3 years) must come from the sub. Price vs the incumbent's history: see private/PRICING-WORKSHEET.md (h). Questions due Wed 11/25 12:00 MST.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "folder": "bids/blm-kanab-janitorial-140LL027Q0009",
+   "performer": "Brown Bison bids; local janitorial sub performs",
+   "subs": "5 St. George/Utah firms with public emails found 2026-11-18 (sub-outreach.md); ask goes Wed 11/18 08:30 MT",
+   "contact": "jsanborn@ios.doi.gov",
+   "sub_pricing": "None yet (documents-based price in private/; a written sub price replaces it)",
+   "next": "Wed 11/18 08:30 MT: sub ask to 5 firms + CO questions; sub monthly price by Wed 11/25; signable package to Luke by Mon 11/30 (>=48h before any send); send week of 11/23 if signed"
   }
  ],
  "events": [

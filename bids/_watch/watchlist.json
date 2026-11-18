@@ -915,6 +915,13 @@
    "id": "49fff837ad1c4b87b96e64679cb00652",
    "match": "3020-01-713-3760|49fff837ad1c4b87b96e64679cb00652",
    "folder": null
+  },
+  {
+   "name": "BLM 140LL027Q0009 Paria River District HQ janitorial, Kanab UT (GO; due 12/09 12:00 MST)",
+   "source": "samgov",
+   "match": "140LL027Q0009",
+   "folder": "bids/blm-kanab-janitorial-140LL027Q0009",
+   "govtribe_ids": []
   }
  ]
 }
