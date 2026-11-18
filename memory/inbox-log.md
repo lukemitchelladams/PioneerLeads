@@ -660,3 +660,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-18 08:21Z (01:21 MT Wed) worker: 1 new inbound: BidNet saved-search digest 1a1ed9ddcd35c6e4 (07:45Z) lists only DEN HVAC Air Filter Replacement & Coil Cleaning (already GO, den-hvac-filters-coil-cleaning). No board/bounce mail in 1d; no insurance certificate.
 - 2026-11-18 09:21Z (02:21 MT Wed) worker: 0 new inbound in 2h (only the already-seen BidNet digest); no board/bounce mail in 1d; no insurance certificate.
 - 2026-11-18 10:21Z (03:21 MT Wed) worker: 1 new inbound: Comcast DMARC aggregate report for brownbisonco.com (1a1ee1877b798b17, routine, no action). No board/bounce mail in 1d; no insurance certificate.
+- 2026-11-18 11:21Z (04:21 MT Wed) worker: 1 new inbound: Google DMARC aggregate report for brownbisonco.com (1a1ee546026bc892, routine, no action). No board/bounce mail in 1d; no insurance certificate.
