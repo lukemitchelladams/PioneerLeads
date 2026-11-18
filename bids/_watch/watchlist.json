@@ -980,6 +980,13 @@
    "id": "0000443925",
    "match": "0000443925",
    "folder": null
+  },
+  {
+   "name": "VA Radiant Heating Panel Replacement (new notice b4eaf5ee, due 2026-11-26) (NO: HUBZone set-aside per the notice; Brown Bison is not HUBZone; the earlier 36C25927Q0048 was NO-BID on technical capability)",
+   "source": "samgov",
+   "id": "b4eaf5ee986947649e09ee2513f6c234",
+   "match": "b4eaf5ee986947649e09ee2513f6c234",
+   "folder": null
   }
  ]
 }

@@ -74,3 +74,11 @@ Missing: the task order form "attached hereto" to the Sample Agreement (II.B.1) 
 ## Log
 - 2026-11-06 22:37Z: NEW on BidNet (published 11/06), found by the hourly scan.
 - 2026-11-06 22:5xZ: folder opened; both documents pulled with the saved BidNet session (no login, no robot check); README filled from the RFP. No pre-bid meeting or site visit (Part 1 sec. III). Decision EVALUATE, recommend NO (payer-of-last-resort clause, no volume stated); five subs with public emails and two linted drafts in sub-outreach.md; nothing sent.
+
+## 2026-11-18 Addendum 1 (RFP 6706a, contractor Q&A) read: NO-BID stands
+- Q1: *"This is the first time the City has issued a solicitation for these services."*
+- Q2 (spend): *"accurate totals are not possible."*
+- Q3/Q8 (payment): *"The fact that a property owner was not the subject of police action does not, by itself, establish City payment responsibility"*; *"the City is not automatically responsible for payment solely because an identifiable property owner refuses payment, disputes a charge, or is unable to pay."*
+- Q6: 24-hour availability; *"acknowledgment of a service request within fifteen (15) minutes and arrival at the designated site within sixty (60) minutes"*.
+- Q7: contractors may bid any or all services.
+Decision: **NO-BID** (HQ, 2026-11-18). No stated volume and no City payment, the two conditions the default set. File: `docs/RFP 6706a.pdf`.
