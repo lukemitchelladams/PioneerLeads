@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-18T03:37:59+00:00
+# Bid watch report — 2026-11-18T04:37:29+00:00
 
-**Headline:** 6 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 4 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | logged in (attempt 1) | 668 | BUYER 446, AGGREGATE 223 | 82 | 2026-11-18T03:37:59+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T03:37:59+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 94 |  | 94 | 2026-11-18T03:37:59+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T03:37:59+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 668 | BUYER 446, AGGREGATE 223 | 82 | 2026-11-18T04:37:29+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T04:37:29+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 94 |  | 94 | 2026-11-18T04:37:29+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T04:37:29+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,12 +26,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Changes on matching / watched bids (addenda, dates)
 
-- **Kitchen Equipment Maintenance and Repair** (bidnet): NEW ADDENDUM No.1 2026-11-17T13:51-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Equipment-Maintenance-and-Repair/0000443304?purchasingGroupId=8409951&origin=1
-- **Citywide Custodial Services** (bidnet): NEW ADDENDUM No.1 2026-11-17T14:19-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Citywide-Custodial-Services/0000442987?purchasingGroupId=8409951&origin=1
-- **Alarm Monitoring Services for Douglas County Facilities** (bidnet): NEW ADDENDUM No.1 2026-11-12T14:14-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Alarm-Monitoring-Services-for-Douglas-County-Facilities/0000441803?purchasingGroupId=8409951&origin=1
-- **Grandview Elementary Roof Project** (bidnet): NEW ADDENDUM No.1 2026-11-06T11:23-07:00: "<!DOCTYPE html> <html lang="en" class="SSC private isSupplier javascript-is-loading"> <head> <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> <link rel="shortcut icon" href="/cms-portals/SSC/images/favicon.ico" /> <title>Welcome! | BidNet Direct</title> <!-- Google Analytics stu"; NEW ADDENDUM No.2 2026-11-06T12:56-07:00: "<!DOCTYPE html> <html lang="en" class="SSC private isSupplier javascript-is-loading"> <head> <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /> <link rel="shortcut icon" href="/cms-portals/SSC/images/favicon.ico" /> <title>Welcome! | BidNet Direct</title> <!-- Google Analytics stu"; NEW ADDENDUM No.3 2026-11-06T13:06-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Grandview-Elementary-Roof-Project/0000441189?purchasingGroupId=8409951&origin=1
-- **On-Call Security Access Control Services** (bidnet): NEW ADDENDUM No.1 2026-11-12T17:28-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1
-- **Kitchen Hood Inspection and Cleaning Services** (bidnet): NEW ADDENDUM No.1 2026-10-23T13:07-06:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Hood-Inspection-and-Cleaning-Services/0000439455?purchasingGroupId=8409951&origin=1
+- **Transfort Overhead Door Replacements** (bidnet): NEW ADDENDUM No.1 2026-11-12T13:51-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Transfort-Overhead-Door-Replacements/0000439726?purchasingGroupId=8409951&origin=1
+- **Structured Cabling and Fiber Optic Contractors** (bidnet): NEW ADDENDUM No.1 2026-11-17T13:47-07:00 (change page not read); NEW ADDENDUM No.2 2026-11-17T13:52-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Structured-Cabling-and-Fiber-Optic-Contractors/0000441695?purchasingGroupId=8409951&origin=1
+- **On-Call Snow Removal Services** (bidnet): NEW ADDENDUM No.1 2026-11-16T15:45-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1
+- **Grandview Elementary Roof Project** (bidnet): ADDENDUM No.1 2026-11-06T11:23-07:00 change page: "Addendum Description: Updated Drawings (Exhibit B) and Updated Technical specs (Exhibit A) / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: Rev 1 Exhibit B RFP 27-02 Drawings - Grandview Elementary School Roof R"; ADDENDUM No.2 2026-11-06T12:56-07:00 change page: "Addendum Description: Updated Bid Proposal Form. Use this one only. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: Appendix A RFP 27-02 Bid Proposal Form V3.docx | 403 Kb | 11/06/2026 12:56 PM MST" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Grandview-Elementary-Roof-Project/0000441189?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
