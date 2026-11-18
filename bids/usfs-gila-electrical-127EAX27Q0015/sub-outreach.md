@@ -24,3 +24,12 @@ Bison by Sun 11/22 10:00 (48 h rule). Nobody attends under Luke's name.
 ## Log
 - 2026-11-18 (HQ): 2 firms found; ask staged for the Wed 08:30 MT send run.
 - 2026-11-18 13:5xZ (HQ): second search pass added Switch Electric (3 total). Chamber directories (Silver City, Deming, Las Cruces) list no other electrical firms with an email.
+- 2026-11-18 14:2xZ (worker, read-only web pass for the CEO plan's 'add 3-5 Las Cruces firms'): 1 new firm with a published
+  mailbox: **Longhorn Electrical Services Inc** (El Paso TX, SAM-registered federal contractor, says it serves TX/NM and military
+  bases; named mailbox from El Paso Electric's public contractor list, kept in private/worker-sub-leads-2026-11-18.md; NM license
+  not confirmed, ask for it). Phone/web-only (no public email found): **Impact Electric Services LLC** (Las Cruces, EE98
+  residential/commercial, SAM-registered UEI PATKPSGV5M65 / CAGE 4YQ38: the SAM entity POC may give a mailbox), Gila Valley
+  Electric LLC (Silver City; industrial contractor listing), Southwest Solar & Electric LLC (Silver City/Deming), Terrazas
+  Electric (Hurley, the job's own town; residential/commercial), Exclusive Inc (Las Cruces, NM residential+commercial license),
+  IB Electric Co and OCD Electric LLC (Las Cruces). Net: the published-email pool is still thin (4 incl. Longhorn); HQ's
+  documents-based price stands, and no sub price is a gate (11/17 rule).
