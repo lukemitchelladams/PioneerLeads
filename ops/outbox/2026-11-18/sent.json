@@ -99,5 +99,17 @@
     ],
     "asks": 0,
     "to_count": 1
+  },
+  "cherrycreek-pool-firsttouch-2026-11-18": {
+    "id": "1a1f0727d4878fb8",
+    "threadId": "1a1f0727d4878fb8",
+    "bcc_count": 6,
+    "attachments": [
+      "RFP 27-014 District Pool Operations.pdf",
+      "RFP_27-014_District_Pool_Pricing_Cleaning.xlsx",
+      "Insurance Requirements 06.15.26.pdf"
+    ],
+    "asks": 0,
+    "to_count": 0
   }
 }

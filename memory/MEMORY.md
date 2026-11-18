@@ -3106,3 +3106,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Fresh BidNet login (attempt 1), push fbf23e3. bidnet 688/86 | samgov 106/106 | coloradovss 66/4 | bonfire 2/1. 0 new. Leak grep 0.
 - Arapahoe RFB 26-64 Addendum 1 = pre-bid ROOM only: still MANDATORY Mon 11/23 10:00 MST, now Courthouse 1 Courtroom 401 (README updated). Painting-sub attendee gate Thu.
 - Pool O&M RFP 27-014 (0000443963) docs auto-downloaded (RFP, pricing xlsx, insurance).
+- 20:5xZ Cherry Creek SD RFP 27-014 pool operations (due 12/18 14:00 MST, BidNet EBS) opened GO (agent built folder: no license in our name, subs allowed with consent, no bond, optional 12/03 visit). Sub ask sent bcc 6 pool firms (1a1f0727d4878fb8), pricing by 12/09. Pipeline/watchlist/_pipeline.md rows added. 19 vendor questions drafted for Luke to post by 12/08.
