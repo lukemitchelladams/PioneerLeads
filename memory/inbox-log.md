@@ -676,3 +676,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1f0afb5c45929e Eddie Maxfield, Evergreen Surety: October packet still what they need; bid-bond turnaround "within a week". Transfort bid 12/02 means the packet goes by ~11/25. Logged in Transfort sub-outreach.md.
   - 1a1f0a0f71aecfce BidNet addendum notice, Durango 2026-0050-0133 Animas City Cemetery Fencing: already NO (fencing, rule 8). No action.
   - Insurance certificate search: nothing new (only the Tolin thread matched). Bounce search: only the 19:12Z Core 3 delay, already logged.
+- 2026-11-18 23:21Z tick (worker, read-only). New since 22:21Z:
+  - 1a1f0e1dcdc3875c Jess Kochendoerfer, RMJ, Lafayette: asked Luke for a call (no attendee named). HQ email reply 23:18Z (1a1f0f49489a25c7) + CALL BRIEF to Luke 23:19Z (1a1f0f4e9cf6720f). Number not copied.
+  - 1a1f0c840cebd84f Andrew Lewis, Utah Cleaning, Kanab: "No thanks". HQ already logged it in sub-outreach.md (6dd3790).
+  - No new bounces (Core 3 delay from 19:12Z only). No insurance certificate.

@@ -3111,6 +3111,18 @@
    "verdict": "NO",
    "why": "HQ 21:35Z watchlist NO: materials testing is professional/engineering services, not our trades.",
    "at": "2026-11-18T22:25:00Z"
+  },
+  "samgov:2a2fc3fb24344745a8f721dc0307b197": {
+   "name": "S--Friant Dam Janitorial Services (Interior/Reclamation, sources sought)",
+   "verdict": "NO",
+   "why": "Place of performance Friant Dam, California: outside our Colorado/Front Range service area; sources sought only. Agrees with HQ 22:35Z.",
+   "at": "2026-11-18T23:30:00Z"
+  },
+  "samgov:e287375dd17d4606a579b148fd8be607": {
+   "name": "4th Infantry Division Troop Schools - Fort Carson (Army ACC)",
+   "verdict": "NO",
+   "why": "8(a) set-aside; Brown Bison is not 8(a). Agrees with HQ 22:35Z.",
+   "at": "2026-11-18T23:30:00Z"
   }
  },
  "watched": {
@@ -3296,6 +3308,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T22:30:00Z",
+ "last_hourly_check": "2026-11-18T23:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
