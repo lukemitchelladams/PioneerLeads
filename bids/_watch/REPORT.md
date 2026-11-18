@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-18T01:36:03+00:00
+# Bid watch report — 2026-11-18T02:36:31+00:00
 
-**Headline:** BLIND: bidnet; not scanned this run (previous results kept): dibbs
+**Headline:** 1 NEW matching bids; BLIND: bidnet; not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | NO (TimeoutError: The read operation timed out) | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, showing last good data from 2026-11-18T00:35:44+00:00; no | 666 |  | 82 | 2026-11-18T00:35:44+00:00 | 1 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T01:36:03+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +33 from the nightly bulk file | 93 |  | 93 | 2026-11-18T01:36:03+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T01:36:03+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | BLIND this run, down since 2026-11-18T01:36Z (1 h, 2 runs), list carried forward; COOL-DOWN after a robot check, until 2026-11-18T03:37:39+00:00 | 666 |  | 82 | 2026-11-18T00:35:44+00:00 | 1 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T02:36:31+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +34 from the nightly bulk file | 94 |  | 94 | 2026-11-18T02:36:31+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T02:36:31+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -23,6 +23,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City and County of Denver Department of  | HVAC Air Filter Replacement & Coil Cleaning | 2026-12-04 (16d) | 2026-11-20 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Air-Filter-Replacement-Coil-Cleaning/0000443425?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (21d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (30d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
+
+## NEW matching bids since last scan
+
+| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
+|---|---|---|---|---|---|---|
+| brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/eea997c0f31b4b76b2c891c39de4ab49/view |
+    brief: about: The purpose of Amendment 002 is to include a site visit date of Wednesday, November 18, 2026, at 10 am at the Channel Islands Visitors Center, meeting at 1901 Spinnaker Drive Ventura CA 93001 and to i
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -71,7 +78,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (151)
+## All open matching bids, excluding DIBBS parts RFQs (152)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
@@ -94,13 +101,14 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet |  | Janitorial services- Pagsoa Ranger District (paid-tier notice) | 2026-11-19 (1d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723145047?target=view |
 | brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (paid-tier notice) | 2026-11-19 (1d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view |
 | brownbison | bidnet |  | Baseball Field Fencing Project (paid-tier notice) | 2026-11-19 (1d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view |
-| brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-20 (2d) |  | https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view |
 | brownbison WATCHED | samgov | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | Radiant Heating Panel Replacement | 2026-11-20 (2d) |  | https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view |
+| brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | S--JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (2d) |  | https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--SHAFT-GEARBOX,IDLER (place of performance not stated; OH buying office) | 2026-11-20 (2d) |  | https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (2d) |  | https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view |
 | brownbison | bidnet | City of Cortez | RFQ – City of Cortez On-Call Planning Services | 2026-11-20 (2d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-City-of-Cortez-On-Call-Planning-Services/0000440975?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Radiant Heating Panel Replacement (paid-tier notice) | 2026-11-20 (2d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | CUSTOM GEARBOX | 2026-11-22 (4d) |  | https://sam.gov/workspace/contract/opp/030fbc47bac041ddb7216401102fc679/view |
+| brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/eea997c0f31b4b76b2c891c39de4ab49/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC | Case Magnet | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/fd1db65a9f2d47ef81249208446d82a9/view |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | CRANE,FLOOR,PORTABL | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/da984b4f70fd412d924e9c830a2c3299/view |
@@ -229,5 +237,5 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Errors
 
-- bidnet: bidnet list incomplete this scan: previous open bids carried forward, none marked closed
+- bidnet: down since 2026-11-18T01:36Z (1 h); previous open bids carried forward
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
