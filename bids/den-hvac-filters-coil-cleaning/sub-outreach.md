@@ -89,3 +89,4 @@ badged (Exh A 1(k)); "All rates must include Prevailing Wage Rates where require
 
 ## Log
 - 2026-11-17 18:1xZ (11:1x MT, HQ, gate PASS, send_outbox.py): pricing request (body above) sent bcc to 6 firms: UPM Mechanical (MWBE), Rasmussen Mechanical, Mechanical Solutions Inc, ACCO Engineered Systems, Aether Mechanical (MWBE), Standard Mechanical (MWBE) (msg 1a1eab143f3e83ba); RFP + Appendix III + Pricing Form attached; unit prices by Mon 11/30. Tolin was held back by the skip list (replied 11/13 on Canon City boiler/chiller, pricing still owed): add the DEN ask to Wednesday's Canon chase, one email. Not sent: Integrated Mechanical (weak), Million Air / Solutions Mechanical (no email on own site).
+- 2026-11-18 15:36Z (HQ): Tolin Mechanical asked in the Canon City thread to price DEN too (RFP + Appendix III + Exhibit B attached), msg 1a1ef4d60da8a2c2; unit prices by Mon 11/30.

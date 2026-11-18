@@ -34,3 +34,4 @@ Bison by Sun 11/22 10:00 (48 h rule). Nobody attends under Luke's name.
   Electric (Hurley, the job's own town; residential/commercial), Exclusive Inc (Las Cruces, NM residential+commercial license),
   IB Electric Co and OCD Electric LLC (Las Cruces). Net: the published-email pool is still thin (4 incl. Longhorn); HQ's
   documents-based price stands, and no sub price is a gate (11/17 rule).
+- 2026-11-18 15:36Z (HQ): first-touch pricing ask SENT, bcc 4 (WSI Southwest, Beehive, Switch Electric, Longhorn), msg 1a1ef4d771341840; Sol + SOW + Schedule of Items + WD attached; price per CLIN by Wed 12/02; optional 11/24 visit attendee name by Fri 11/20.

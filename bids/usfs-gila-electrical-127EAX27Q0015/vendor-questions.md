@@ -26,3 +26,5 @@ restrictions on when the retardant system can be shut down for the panel change?
 | # | Answer | Source (amendment #, date) |
 |---|--------|---------------------------|
 | | | |
+
+- 2026-11-18 15:36Z (HQ): Q1-Q4 SENT to the Contract Specialist, msg 1a1ef4d7be844966 (sent from its own manifest: the skip list's usda.gov domain match came from the Pagosa CO's 11/09 reply, a different person).

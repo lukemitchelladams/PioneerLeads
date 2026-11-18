@@ -95,3 +95,4 @@ and rates are in the attached solicitation, not in the email.
 
 ## Log
 - 2026-11-18 (worker): list built; draft gate PASS; nothing sent. HQ sends today (rule 0b) and logs the Gmail message id here.
+- 2026-11-18 15:36Z (HQ): first-touch pricing ask SENT, bcc 5 (St. George firms), msg 1a1ef4d6a52822be; Sol + Amd 0001 + PWS + Bid Schedule + cleaning calendar + photos attached; monthly price + periodic lines by Wed 11/25; asks whether each can staff Kanab.

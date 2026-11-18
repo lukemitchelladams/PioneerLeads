@@ -48,3 +48,5 @@ Subject: RFQ - 140LL027Q0009: PRD Janitorial Services
 The sender appends the four-line signature: Luke Adams / Operations Manager / Brown Bison Holdings LLC /
 luke@brownbisonco.com. Gate command used: `python3 scripts/humanize_gate.py check <body> --subject "RFQ - 140LL027Q0009: PRD
 Janitorial Services"` -> PASS. If HQ trims further, keep Q1 and Q2 (they decide the bid strategy) and re-run the gate.
+
+- 2026-11-18 15:36Z (HQ): Q1-Q6 SENT to the Contract Specialist, subject "RFQ - 140LL027Q0009: PRD Janitorial Services", msg 1a1ef4d6d8b550b6. Answers expected as an amendment.
