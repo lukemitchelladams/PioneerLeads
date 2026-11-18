@@ -3111,3 +3111,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-18 21:35Z scan (14:35 MT Wed)
 - Fresh BidNet login (attempt 1), push 076efa5. bidnet 676/85 | samgov 107/107 | coloradovss 65/4 | bonfire 2/1 | total 850/197. 2 new = NO (NAVSUP hoist blocks San Diego, 8(a); CU Boulder materials testing). Leak grep 0. Patriot Pool declined the CCSD pool ask (no regular maintenance); 5 pool firms left.
+- 22:0xZ Canon City 129-26: Tolin's filled Proposal Schedule + proposal saved to bids/canon-city-boiler-chiller-maintenance/private/ (tolin-*.pdf) with PRICING-WORKSHEET.md (sub x 1.15 per line, hourly/OT + truck; Tolin lines sum checked PASS). Bid is price-ready; the only blocker is PSA IV.D no-subcontracting (Q1, Luke posts on BidNet this week). Fremont County 5 percent local preference noted.
