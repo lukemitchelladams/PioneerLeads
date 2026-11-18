@@ -1029,6 +1029,27 @@
    "id": "e287375dd17d4606a579b148fd8be607",
    "match": "e287375dd17d4606a579b148fd8be607",
    "folder": null
+  },
+  {
+   "name": "Cooling Tower and Air-Cooled Condenser Services (EVALUATE: HVAC service, our trade; agency blank on the list; due 2026-12-31; watched so the next scan downloads the documents; Rule 0 pre-bid check on arrival)",
+   "source": "bidnet",
+   "id": "0000434357",
+   "match": "0000434357",
+   "folder": null
+  },
+  {
+   "name": "CU Boulder As-Needed Site Surveyor Professional Services (NO: surveying, not our trade)",
+   "source": "bidnet",
+   "id": "0000444020",
+   "match": "0000444020",
+   "folder": null
+  },
+  {
+   "name": "2027 Engineering On-Call Services (NO: engineering professional services, not our trade)",
+   "source": "bidnet",
+   "id": "0000444028",
+   "match": "0000444028",
+   "folder": null
   }
  ]
 }
