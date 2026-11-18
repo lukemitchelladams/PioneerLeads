@@ -38,3 +38,11 @@ finish: baked enamel"; "Alternate: Basis of design Clopay 3722, finish: color bl
 - bids/_watch/downloads/bidnet/0000439726/10366 ITB Transfort Overhead Door Replacements .pdf (Invitation to Bid, Instructions to Bidders, General Conditions)
 - bids/_watch/downloads/bidnet/0000439726/Attachment B Specifications.pdf
 - bids/_watch/downloads/bidnet/0000439726/Attachment A Drawings .pdf
+
+## Addendum 1 (posted 2026-11-12, read 2026-11-18)
+- File: docs/10366 Addendum 1 Questions and Answers.pdf. Q&A only; opening date unchanged, 3:00 PM on 2026-12-02.
+- A1: two (2) two-channel remote controls for doors 03 and 16 only; no other doors get transmitters.
+- A2: "Photo Eyes are required" (in addition to the spec's monitored sensor edge).
+- A3: no SDVOSB set-aside or preference points.
+- "RECEIPT OF THIS ADDENDUM MUST BE ACKNOWLEDGED BY A WRITTEN STATEMENT ENCLOSED WITH THE BID."
+- To do: confirm the Overhead Door Co. of Fort Collins quote includes photo eyes and the two remotes.
