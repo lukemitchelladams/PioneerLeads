@@ -3119,3 +3119,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Lafayette: RMJ (Jess Kochendoerfer) asked for details 22:05Z; a reply from Luke's address (22:22Z, Luke or the Mac session) explained the sub model and asked for an attendee name tonight. Gate effectively = tonight; HQ logs NO-BID if no name by Thu 07:00 MT.
 - Kanab: Utah Cleaning declined ("No thanks", 22:30Z); 4 firms left.
 - Evergreen Surety (Eddie Maxfield) replied on the SBA bond guarantee (worker logged).
+- 22:5xZ Kanab: Utah Cleaning declined; Elevate Cleaning Systems (Colorado City AZ, Kanab chamber) asked 1a1f0d4ad99894da. CORRECTION: HQ's 22:4xZ chat line wrongly said Club Janitorial declined; only Utah Cleaning has replied.

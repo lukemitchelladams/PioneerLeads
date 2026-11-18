@@ -96,3 +96,5 @@ and rates are in the attached solicitation, not in the email.
 ## Log
 - 2026-11-18 (worker): list built; draft gate PASS; nothing sent. HQ sends today (rule 0b) and logs the Gmail message id here.
 - 2026-11-18 15:36Z (HQ): first-touch pricing ask SENT, bcc 5 (St. George firms), msg 1a1ef4d6a52822be; Sol + Amd 0001 + PWS + Bid Schedule + cleaning calendar + photos attached; monthly price + periodic lines by Wed 11/25; asks whether each can staff Kanab.
+- 2026-11-18 22:30Z: Utah Cleaning (St. George) DECLINED ("No thanks"). Club Janitorial, All Things Cleaning, SaniClean and Alta: no reply yet.
+- 2026-11-18 22:5xZ (HQ, gate PASS): same pricing ask sent to Elevate Cleaning Systems (Colorado City AZ; Kanab chamber member serving Kanab and Hurricane; carpet/tile/restoration rather than janitorial; email from the Kanab chamber listing and its own site), msg 1a1f0d4ad99894da. Second search pass found no other Kanab/Cedar City/Page cleaner with a published email.
