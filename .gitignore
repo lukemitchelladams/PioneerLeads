@@ -32,3 +32,6 @@ bidnet-session.json
 bids/*/private/
 # raw BidNet change pages can carry session fields; keep them out of the public repo until the stripper is fixed (2026-11-18)
 bids/_watch/downloads/bidnet/*/_addendum_*.txt
+
+# Luke-signed forms carry his signature: never commit
+bids/*/sign/
