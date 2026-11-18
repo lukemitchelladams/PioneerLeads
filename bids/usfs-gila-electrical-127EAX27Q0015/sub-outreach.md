@@ -10,6 +10,7 @@ HQ scratchpad (gila/subs.json), not in this public file.
 | WSI Southwest Inc | Cliff, NM (about 30 mi from Silver City) | wsisouthwest.com | Silver City chamber directory listing and the firm's own site header/footer | Residential, commercial, municipal and industrial; NM contractor license on its site |
 | Beehive Electric, LLC | Las Cruces, NM | beehiveelectric.com | Firm's own site footer | Residential and commercial; BBB lists Grant County in its service area |
 | Switch Electric LLC | Las Cruces, NM | switchelectric.site | Firm's own site contact section and footer | Residential and commercial (BBB lists an NM license); no commercial project list on its site |
+| Longhorn Electrical Services Inc | El Paso, TX | (none found) | El Paso Electric public "Find a Contractor" list (page 8) | Commercial; SAM-registered federal contractor serving TX/NM and military bases; NM license to confirm |
 
 Checked with no public email (web form or phone only): DeMent Electric Inc. (Silver City), Rascals Electric (Silver City),
 Duran Electrical Services (Silver City), Carver Electric Company (Mesilla Park; listing pages blocked), L-E Electric Inc.
