@@ -3037,3 +3037,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-18 08:35Z scan (01:35 MT Wed)
 - Container restarted ~08:36Z (scratchpad manifests survived). Fresh BidNet login (attempt 1, no code needed), EXIT 0, push ea69a58. bidnet 672/83 | samgov 104/104 | coloradovss 66/4 | bonfire 2/1 (Cloudflare) | total 844/192. 0 new, 0 docs, leak grep 0. Addendum rows only on the NO Boulder streetlight bid.
+- 08:46Z Gila: documents-based price in private/ (WD NM20260019 electrician Zone 4 +26% assumed; markup 15%; NM GRT 7.5% PLACEHOLDER, check Grant County rate); filled Schedule of Items draft, arithmetic PASS. 52.228-13 in the clause list implies a Govt estimate over $35K: ours may be low (motor HP unknown). FORMS-CHECKLIST + RESPONSE-DRAFT committed 91854e2. Gila is now quote-ready except sub name/license, Luke's signature and GRT check.
