@@ -1015,6 +1015,20 @@
    "id": "0000443987",
    "match": "0000443987",
    "folder": null
+  },
+  {
+   "name": "Reclamation S--Friant Dam Janitorial Services sources sought (NO: Friant Dam is in Fresno County, California; outside our service area)",
+   "source": "samgov",
+   "id": "2a2fc3fb24344745a8f721dc0307b197",
+   "match": "2a2fc3fb24344745a8f721dc0307b197",
+   "folder": null
+  },
+  {
+   "name": "Army 4th Infantry Division Troop Schools, Fort Carson (NO: 8(a) set-aside; not our trade)",
+   "source": "samgov",
+   "id": "e287375dd17d4606a579b148fd8be607",
+   "match": "e287375dd17d4606a579b148fd8be607",
+   "folder": null
   }
  ]
 }
