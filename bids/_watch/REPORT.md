@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-18T06:35:56+00:00
+# Bid watch report — 2026-11-18T07:35:46+00:00
 
-**Headline:** 1 NEW matching bids; 5 changed (addenda/dates); not scanned this run (previous results kept): dibbs
+**Headline:** 5 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 672 | BUYER 446, AGGREGATE 227 | 83 | 2026-11-18T06:35:56+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T06:35:56+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=yes | API key; +44 from the nightly bulk file | 104 |  | 104 | 2026-11-18T06:35:56+00:00 | 0 |
-| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T06:35:56+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=yes, BIDNET_PASS=yes | session reused | 672 | BUYER 446, AGGREGATE 227 | 83 | 2026-11-18T07:35:46+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-18T07:35:46+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=yes | API key; +44 from the nightly bulk file | 104 |  | 104 | 2026-11-18T07:35:46+00:00 | 0 |
+| coloradovss | yes | n/a | public list (no login) | 66 | open 66 | 4 | 2026-11-18T07:35:46+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -24,19 +24,13 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (21d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (30d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
 
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet |  | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723265662?target=view |
-
 ## Changes on matching / watched bids (addenda, dates)
 
-- **Alarm Monitoring Services for Douglas County Facilities** (bidnet): ADDENDUM No.1 2026-11-12T14:14-07:00 change page: "Addendum Description: This Addendum No. 1 contains the responses to questions received for IFB #044-26. Thank you for your interest in this Douglas County project. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Alarm-Monitoring-Services-for-Douglas-County-Facilities/0000441803?purchasingGroupId=8409951&origin=1
-- **Transfort Overhead Door Replacements** (bidnet): ADDENDUM No.1 2026-11-12T13:51-07:00 change page: "Addendum Description: Addendum 1 / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: 10366 Addendum 1 Questions and Answers.pdf | 229 Kb | 11/12/2026 01:50 PM MST" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Transfort-Overhead-Door-Replacements/0000439726?purchasingGroupId=8409951&origin=1
-- **AHEC-27901-D - CAVEA Lighting for Metropolitan State University of Denver** (bidnet): NEW ADDENDUM No.1 2026-11-11T16:30-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/AHEC-27901-D-CAVEA-Lighting-for-Metropolitan-State-University-of-Denver/0000441764?purchasingGroupId=8409951&origin=1
-- **Arapahoe County Fairgrounds: South Lawns Irrigation Renovation** (bidnet): NEW ADDENDUM No.1 2026-11-17T06:49-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Arapahoe-County-Fairgrounds-South-Lawns-Irrigation-Renovation/0000441680?purchasingGroupId=8409951&origin=1
-- **Security Electronics Maintenance & Support Services** (bidnet): NEW ADDENDUM No.1 2026-11-10T14:17-07:00 (change page not read); NEW ADDENDUM No.2 2026-11-12T10:40-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Security-Electronics-Maintenance-Support-Services/0000441668?purchasingGroupId=8409951&origin=1
+- **Structured Cabling and Fiber Optic Contractors** (bidnet): ADDENDUM No.1 2026-11-17T13:47-07:00 change page: "Addendum Description: Please see the vendor questions and staff responses. Thank you for your continued interest in this Douglas County Project. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: Q&A Document 1.pd"; ADDENDUM No.2 2026-11-17T13:52-07:00 change page: "Addendum Description: Please see Addendum 2 adding Exhibit B ~ Fee Schedule. Please acknowledge both Addendums in your RFQ submission. / Notice Modifications: No entries / Added Categories: No Categories Added / Removed Categories: No Categories Removed / Added Documents: RFQ 043-26 Addendum 2.pdf |" — https://www.bidnetdirect.com/colorado/solicitations/open-bids/Structured-Cabling-and-Fiber-Optic-Contractors/0000441695?purchasingGroupId=8409951&origin=1
+- **HVAC Filters & Belts** (bidnet): NEW ADDENDUM No.1 2026-11-04T08:38-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Filters-Belts/0000441328?purchasingGroupId=8409951&origin=1
+- **ON-CALL GARAGE DOOR REPAIRS** (bidnet): NEW ADDENDUM No.1 2026-11-10T14:58-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-GARAGE-DOOR-REPAIRS/0000440827?purchasingGroupId=8409951&origin=1
+- **ON-CALL COMMERCIAL PEDESTRIAN DOOR REPAIRS** (bidnet): NEW ADDENDUM No.1 2026-11-10T13:32-07:00 (change page not read); NEW ADDENDUM No.2 2026-11-10T13:59-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/ON-CALL-COMMERCIAL-PEDESTRIAN-DOOR-REPAIRS/0000440813?purchasingGroupId=8409951&origin=1
+- **CU Boulder-UCB001622-SITE-NBC-Irrigation System & Landscape Improvements** (bidnet): NEW ADDENDUM No.1 2026-11-17T08:52-07:00 (change page not read) — https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -155,7 +149,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing | samgov | DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY | CUSTOM GEARBOX | 2026-11-22 (4d) |  | https://sam.gov/workspace/contract/opp/030fbc47bac041ddb7216401102fc679/view |
 | brownbison | bidnet | City and County of Denver General Servic | Laundry Machines & Maintenance Services at Denver County Jail - IFB#1053A-2026 | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Laundry-Machines-Maintenance-Services-at-Denver-County-Jail-IFB-1053A-2026/0000442283?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City of Colorado Springs | On-Call Snow Removal Services | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Snow-Removal-Services/0000441360?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet |  | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723265662?target=view |
+| brownbison WATCHED | bidnet |  | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723265662?target=view |
 | brownbison WATCHED | bidnet |  | Janitorial Services (paid-tier notice) | 2026-11-23 (5d) |  | https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | S--JANITORIAL SERVICES, Channel Islands NP | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/eea997c0f31b4b76b2c891c39de4ab49/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL | 56--PGMB Security Gate | 2026-11-23 (5d) |  | https://sam.gov/workspace/contract/opp/5ba7eaeb505c4db79656512be7538248/view |
