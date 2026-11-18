@@ -3067,3 +3067,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-18 14:35Z scan (07:35 MT Wed)
 - Session reused, push feaa537. bidnet 681/83 | samgov 105/105 | coloradovss 67/4 | bonfire 2/1 | total 855/193. 0 new, 0 docs, leak grep 0.
 - Gila bcc now 4 (WSI Southwest, Beehive, Switch Electric, Longhorn Electrical El Paso from El Paso Electric's public contractor list; worker's private lead file lives in the worker's container, not here).
+- 14:5xZ send dry-run: outbox_status --skip-list matches replies by DOMAIN, so a reply from one usda.gov person (Pagosa CO 11/09) dropped the Gila CO questions to a different usda.gov contracting specialist. For buyer questions at big government domains, send the CO entry from its own manifest (scratchpad wed/send-gila-co.json). FIX IDEA: treat .gov/.mil like free-mail domains (match the full address).
