@@ -407,10 +407,11 @@ check("portal stamps: 12 AM / 12 PM, MDT, a zone without an offset, a bare date,
       == ["2026-11-17T00:05-07:00", "2026-11-17T12:30-06:00", "2026-11-17T14:19", "2026-11-17", "pending", None])
 _dsyn = (FX / "bidnet_addendum_diff_synth.html").read_text()
 _dtx = bidnet.addendum_text(_dsyn, ("someone@example.com", "s3cret-test-only"))
-check("the change page as text: one line per block, cells joined by ' | '; the header (account menu, session_username, logout), the site "
-      "alert, the footer, the _csrf tokens, the script and the login gone (the login masked where the text printed it)",
+check("the change page as text: only the block around its diff table, one line per block, each change '<field>: <old> -> <new>' "
+      "(header row dropped); the header (account menu, session_username, logout), the site alert, the footer, the _csrf tokens, the "
+      "script and the login gone (the login masked where the text printed it)",
       _dtx.startswith("Citywide Custodial Services - Addendum No. 1\nChanges published 11/17/2026 02:19 PM MST by City of Lafayette.\n"
-                      "Field | Previous Value | New Value\nSite Visit | None | Optional (Recommended) facility walk, Thursday 11/19/2026 "
+                      "Site Visit: None -> Optional (Recommended) facility walk, Thursday 11/19/2026 "
                       "12:00 PM MST, starting at the Lafayette Public Library")
       and "Attendance is mandatory. The facility walk follows at noon." in _dtx and "sent to *** and to every supplier" in _dtx
       and not any(x in _dtx for x in ("csrf", "token-value", "pageToken", "5550001234", "someone@example.com", "Logout", "My Profile",
@@ -426,7 +427,7 @@ _ad1 = _run_early._diff({"title": "x"}, {"title": "x", "addenda": [_ar1t]})
 _ad_head = 'NEW ADDENDUM No.1 2026-11-17T14:19-07:00: "'
 check("NEW ADDENDUM No.<n> <date> the first scan that lists the row, with the first 300 characters of its change page (lines joined by ' / ')",
       len(_ad1) == 1 and _ad1[0].startswith(_ad_head + "Citywide Custodial Services - Addendum No. 1 / Changes published 11/17/2026 02:19 PM "
-                                            "MST by City of Lafayette. / Field | Previous Value | New Value / Site Visit | None | Optional")
+                                            "MST by City of Lafayette. / Site Visit: None -> Optional")
       and len(_ad1[0]) == len(_ad_head) + _run_early.ADDENDUM_EXCERPT + 1 and _ad1[0].endswith('"') and "addenda" in _run_early.DETAIL_FIELDS, _ad1)
 check("reported once: the same row (no + date) next scan prints nothing; a second row prints only itself, '(change page not read)' "
       "when its page could not be opened; its text read on a later scan comes once on its own line",
@@ -610,6 +611,235 @@ try:
 finally:
     bidnet._read_tab, bidnet.DOWNLOAD_DIR = _r_real_read_tab, _r_real_dl
     os.environ.pop(bidnet.READ_AUDIT_ENV, None)
+
+# 2026-11-18 03:37Z: the scan saved Grandview 0000441189's two change pages as _addendum_1.txt / _addendum_2.txt holding the WHOLE page
+# source (64 KB: the meta _csrf token, the hidden session_username) in the public repo, and the REPORT line printed escaped markup. The
+# real page, sanitized (every csrf / input value and email REDACTED, scripts dropped; tests/fixtures/
+# bidnet_history_diff_0000441189_sanitized.html): the site layout titled "Welcome! | BidNet Direct" whose main#content holds, as TEXT,
+# $("#..").html("<the escaped change dialog>"); Chromium showed that answer as text (page.content() = <pre>the source</pre>).
+# Stubs only (no browser): a fake page object answers goto / content.
+print("BidNet change pages: the real Grandview page, the save guard (2026-11-18 raw page with session fields committed)")
+import html as _ghtml  # noqa: E402
+
+_GV = (FX / "bidnet_history_diff_0000441189_sanitized.html").read_text()
+_GV_TEXT = ("Addendum Description: Updated Drawings (Exhibit B) and Updated Technical specs (Exhibit A)\n"
+            "Notice Modifications: No entries\nAdded Categories: No Categories Added\nRemoved Categories: No Categories Removed\n"
+            "Added Documents: Rev 1 Exhibit B RFP 27-02 Drawings - Grandview Elementary School Roof Replacement V4.pdf | 4 Mb | "
+            "11/06/2026 11:22 AM MST\n"
+            "Added Documents: Rev 1 Exhibit A RFP 27-02 Tech Specifications - Grandview Elementary School Roof Replacement Project "
+            "V3.pdf | 910 Kb | 11/06/2026 11:23 AM MST")
+_GV_HREF = "https://www.bidnetdirect.com/public/solicitations/9887144754/abstract/history/diff?revisionNumber="
+
+
+def _gv_textview(src: str) -> str:
+    """How Chromium shows an answer that is not text/html (page.content()): the source, escaped, in one <pre>."""
+    return ('<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; '
+            f'white-space: pre-wrap;">{_ghtml.escape(src, quote=False)}</pre></body></html>')
+
+
+def _gv_main(inner: str) -> str:
+    """The real layout (title, header, session field, csrf metas) with main#content holding `inner` (HTML)."""
+    return re.sub(r"(<main[^>]*>).*?(</main>)", lambda m: m.group(1) + inner + m.group(2), _GV, count=1, flags=re.S)
+
+
+def _gv_js(dialog: str) -> str:
+    """main#content's text as BidNet serves it: a jQuery .html("...") call with the dialog as an escaped JavaScript string."""
+    lit = json.dumps(dialog).replace("/", "\\/").replace("<", "\\u003C").replace(">", "\\u003E").replace("&", "\\u0026")
+    return _ghtml.escape(f'$("#diffViewDialogContainer").html({lit}); diffViewDialog.show(); ;', quote=False)
+
+
+def _gv_dialog(description: str) -> str:
+    """A change dialog in the real markup (div#diffViewDialog > #diffViewDialogBody > form#solicitationForm, table#diffs.diff) with two
+    changed fields, one blank before, and the hidden 'No entries' row; a _csrf input inside the form."""
+    return ('<div id="diffViewDialog" class="hidden"><div class="diffViewDialog mets-dialog-window-content-wrapper"><div id="diffViewDialogBody" '
+            'class="mets-dialog-window-content"><form id="solicitationForm" class="current-form" action="/public/solicitations/1/abstract/'
+            'history/diff?revisionNumber=3" method="post"><div class="clear content-header"><div class="content-header-actions"><a id="print" '
+            'class="mets-command-link">Print</a></div></div><div class="fieldset content-block"><h3 class="content-block-header">Addendum '
+            f'Description</h3><span id="revisionComment" class="wysiwyg mets-ellipsis">{description}</span><button '
+            'class="mets-command-link read-more">See more</button></div><div class="fieldset diffView content-block"><h3 '
+            'class="content-block-header">Notice Modifications</h3><table id="diffs" class="diff contentBlockTable basic mets-table">'
+            '<caption class="accessibility-hidden">No entries</caption><thead><tr><th class="notice-info">Notice Information</th><th '
+            'class="from">From Value</th><th class="to">To Value</th></tr></thead><tbody><tr class="mets-table-row odd"><td>Closing Date</td>'
+            '<td>12/01/2026 02:00 PM MST</td><td>12/08/2026 02:00 PM MST</td></tr><tr class="mets-table-row even"><td>Pre-Bid Conference</td>'
+            '<td></td><td>11/24/2026 10:00 AM MST, Building A</td></tr><tr class="mets-table-row-empty"><td><span>No entries</span></td></tr>'
+            '</tbody></table></div><div><input name="_csrf" type="hidden" value="dlg-csrf-value-123"/></div></form></div></div></div>')
+
+
+_GV_HOME = _gv_main('<div class="cms-include"><h2>Find bid opportunities</h2><p>Search open solicitations.</p></div>')
+_GV_CHANGED = _gv_main(_gv_js(_gv_dialog("Walk moved &amp; due date extended.")))
+_GV_CHANGED_TEXT = ("Addendum Description: Walk moved & due date extended.\n"
+                    "Notice Modifications: Closing Date: 12/01/2026 02:00 PM MST -> 12/08/2026 02:00 PM MST\n"
+                    "Notice Modifications: Pre-Bid Conference: (blank) -> 11/24/2026 10:00 AM MST, Building A")
+_gvs = _BS(_GV, "lxml")
+check("the sanitized fixture is the page as served: titled 'Welcome! | BidNet Direct', the session_username field and the _csrf meta "
+      "(values REDACTED), a main#content with no element in it, only the text of a jQuery .html(\"...\") call carrying the dialog",
+      bidnet.page_title(_GV) == "Welcome! | BidNet Direct" and _gvs.select_one("input#session_username")["value"] == "REDACTED"
+      and _gvs.select_one("meta[name='_csrf']")["content"] == "REDACTED" and _gvs.select_one("main#content").find(True) is None
+      and '.html("\\u003Cdiv id=\\"diffViewDialogTitle\\"' in _gvs.select_one("main#content").get_text()
+      and "diffViewDialogBody" in _gvs.select_one("main#content").get_text())
+_gvt, _gvw = bidnet.change_page_text(_GV)
+check("the real change page reads as its change dialog only: 'Addendum Description: ...', 'Notice Modifications: No entries', the "
+      "category sections (their hidden empty tables dropped), one 'Added Documents: <file> | <size> | <date>' line per file; no markup, "
+      "no page chrome (Print, the buyer's disclaimer, the account menu), no REDACTED value, no session or csrf field",
+      _gvt == _GV_TEXT and _gvw is None and not bidnet.has_markup(_gvt) and "<" not in _gvt and not bidnet.unsafe_reasons(_gvt)
+      and not any(x in _gvt for x in ("REDACTED", "Print", "Thank you", "Welcome", "Logout", "My Profile", "Skip to main", "$(",
+                                      "diffViewDialog", "See more", "No Files", "( selected)")), _gvt)
+_gv_click = ("<html><head><title>Grandview Roof | BidNet Direct</title></head><body><header id='headerContainer'><input id='session_username' "
+             "type='hidden' value='5550001234'/><a id='supplier_logout_link'>Logout</a></header><main id='content'><div class='content-block'>"
+             "Bid Information</div>" + str(bidnet._change_sources(_GV)[-1].select_one("#diffViewDialog")) + "</main></body></html>")
+check("the same page as Chromium showed it on 2026-11-18 (the source as text in one <pre>) reads the same; so does a page the "
+      "lightbox filled in place (#diffViewDialogBody in the DOM: a click on the Addendums tab's link), its account header left out",
+      bidnet.change_page_text(_gv_textview(_GV)) == (_GV_TEXT, None) and bidnet.change_page_text(_gv_click) == (_GV_TEXT, None),
+      (bidnet.change_page_text(_gv_textview(_GV)), bidnet.change_page_text(_gv_click)))
+check("a change with fields: each row of table#diffs as '<field>: <old> -> <new>' ('(blank)' for an empty side) under its section, the "
+      "hidden 'No entries' row, the caption, the Print bar and the 'See more' button dropped, the dialog's _csrf input gone; the same "
+      "through the text view",
+      bidnet.change_page_text(_GV_CHANGED) == (_GV_CHANGED_TEXT, None)
+      and bidnet.change_page_text(_gv_textview(_GV_CHANGED)) == (_GV_CHANGED_TEXT, None) and "dlg-csrf" not in _GV_CHANGED_TEXT,
+      bidnet.change_page_text(_GV_CHANGED))
+check("the layout with no change dialog in it (the portal home page after a redirect) is not readable: '(change page not readable: "
+      "landed on the portal home page)', also as a text view; another full page without one is just not readable; never its text",
+      bidnet.change_page_text(_GV_HOME) == ("", bidnet.NOT_READABLE_HOME)
+      and bidnet.NOT_READABLE_HOME == "change page not readable: landed on the portal home page"
+      and bidnet.change_page_text(_gv_textview(_GV_HOME)) == ("", bidnet.NOT_READABLE_HOME)
+      and bidnet.change_page_text(_GV_HOME.replace("Welcome!", "Bid Information")) == ("", bidnet.NOT_READABLE)
+      and bidnet.change_page_text(_gv_textview("<!DOCTYPE html><html><body><p>moved</p></body></html>")) == ("", bidnet.NOT_READABLE)
+      and bidnet.addendum_text(_GV_HOME) == "" and bidnet.change_page_text("") == ("", bidnet.NOT_READABLE))
+
+_g_real_dl, _g_user = bidnet.DOWNLOAD_DIR, os.environ.get("BIDNET_USER")
+bidnet.DOWNLOAD_DIR = TMP / "guard-downloads"  # never the repo's downloads folder
+os.environ["BIDNET_USER"] = "Tester.Login@Example.org"
+try:
+    check("unsafe_reasons: each marker name (any case), the BIDNET_USER value (any case), the session's login values, a brownbisonco.com "
+          "address, as labels (never a value); the real change text and the synthesized page's text are safe; has_markup: tags, a doctype",
+          bidnet.unsafe_reasons('<input id="session_username" value="x">') == ["session_username"]
+          and bidnet.unsafe_reasons("meta _CSRF / X-CSRF-TOKEN / csrf_header / ;jsessionid=1") == ["_csrf", "CSRF-TOKEN", "csrf_header", "JSESSIONID"]
+          and bidnet.unsafe_reasons("signed in as tester.login@example.org") == ["the BidNet login name"]
+          and bidnet.unsafe_reasons("pw hunter22x here", ("nobody-here", "hunter22x")) == ["a login value"]
+          and bidnet.unsafe_reasons("reply to Someone@BrownBisonCo.com") == ["a brownbisonco.com address"]
+          and bidnet.unsafe_reasons(_GV_TEXT) == [] and bidnet.unsafe_reasons(_dtx) == [] and bidnet.unsafe_reasons(_GV_CHANGED_TEXT) == []
+          and bidnet.has_markup("<!DOCTYPE html> <html lang='en'>") and bidnet.has_markup("a <br/> b") and bidnet.has_markup("</td>")
+          and not bidnet.has_markup(_GV_TEXT) and not bidnet.has_markup("Closing Date: 12/01 -> 12/08, loads < 5 tons"))
+    _gses = _rty.SimpleNamespace()
+    _gp = bidnet.DOWNLOAD_DIR / "bidnet" / "0000441189" / "_addendum_1.txt"
+    _graw = f"Addendum No. 1 (2026-11-06T11:23-07:00)\n{_GV_HREF}1\n\n{_GV}\n"  # the 03:37Z file: header, link, the page source
+    _gw = bidnet.save_page_file(_gses, _gp, _graw, text_only=True)
+    check("save_page_file refuses the raw page as it was committed (session_username, _csrf, markup): nothing written, the refusal on "
+          "the session for the report, naming the markers only",
+          _gw[0] is False and {"session_username", "_csrf", "page markup"} <= set(_gw[1]) and not _gp.exists()
+          and _gses.unsafe_saves == [f"BidNet _addendum_1.txt of 0000441189 not saved: it held {', '.join(_gw[1])}"], (_gw, vars(_gses)))
+    _gw2 = [bidnet.save_page_file(_gses, _gp, f"Addendum No. 1 (d)\nlink\n\nNotes: {x}\n", text_only=True)[1]
+            for x in ("signed in as TESTER.LOGIN@example.org", "copy to luke@brownbisonco.com", "<b>bold</b>")]
+    check("...the BIDNET_USER value in any case, a brownbisonco.com address, markup in a .txt: each refused, never written, and no note "
+          "prints the login",
+          _gw2 == [["the BidNet login name"], ["a brownbisonco.com address"], ["page markup"]] and not _gp.exists()
+          and not any("tester.login" in n.lower() or "luke@" in n for n in _gses.unsafe_saves), (_gw2, _gses.unsafe_saves))
+    _gtp = bidnet.DOWNLOAD_DIR / "bidnet" / "0000441189" / "_tab_amendment.html"
+    _gfrag = bidnet.tab_fragment("<div id='innerTabContent'><input id='currentTabId' type='hidden' value='amendment'/><form "
+                                 "action='/upload?_csrf=abc123token'><a href='/doc;jsessionid=XYZ123'>Addendum No. 1</a></form></div>")
+    _gsess = _rty.SimpleNamespace(tab_pages={"0000441189": {"amendment": _gfrag, "bad": "<div><meta name='_csrf' content='t0k3n'/></div>"}})
+    _gsaved = bidnet.save_tab_pages(_gsess, {"id": "0000441189"})
+    check("tab pages go through the same writer: tab_fragment drops an attribute carrying _csrf / jsessionid (the link text stays) and "
+          "the page is written; a tab page still holding a _csrf field is refused (no file, a note), markup is fine in a .html",
+          _gsaved == [str(_gtp)] and "Addendum No. 1" in _gtp.read_text() and "abc123token" not in _gtp.read_text()
+          and "XYZ123" not in _gtp.read_text() and 'value="amendment"' in _gtp.read_text()
+          and not (_gtp.parent / "_tab_bad.html").exists() and _gsess.unsafe_saves == ["BidNet _tab_bad.html of 0000441189 not saved: it held _csrf"]
+          and bidnet.save_page_file(_gsess, _gtp, _gtp.read_text()) == (False, []), (_gsaved, vars(_gsess)))
+
+    class _GPage:
+        def __init__(self, html, body=None):
+            self.html, self.body, self.gotos = html, body, []
+
+        def goto(self, url, **kw):
+            self.gotos.append(url)
+            return _rty.SimpleNamespace(ok=True, text=(lambda: self.body) if self.body is not None else None)
+
+        def wait_for_timeout(self, ms):
+            pass
+
+        def wait_for_load_state(self, *a, **kw):
+            pass
+
+        def content(self):
+            return self.html
+
+    _gb = {"id": "0000441189"}
+
+    def _gread(html, no, body=None, bid=None):
+        """read_addenda on one row with a stub page; returns (count, row, page, session, saved file path)."""
+        row = {"no": no, "date": f"2026-11-06T1{no}:00-07:00", "href": _GV_HREF + str(no)}
+        ses = _rty.SimpleNamespace(page=_GPage(html, body))
+        n = bidnet.read_addenda(ses, bid or _gb, [row])
+        return n, row, ses.page, ses, bidnet.addendum_path(bid or _gb, row)
+
+    _gn, _grow, _gpg, _gs, _gf = _gread(_GV, 1)
+    _gft = _gf.read_text() if _gf.is_file() else ""
+    _gline = _run_early._diff({"title": "x"}, {"title": "x", "addenda": [_grow]})
+    check("read_addenda on the real page: the row's text is the dialog's text, _addendum_1.txt holds the header, the link and that text "
+          "only (no markup, no marker, nothing REDACTED), no note; the REPORT line's excerpt is that text's start, never markup",
+          _gn == 1 and _grow.get("text") == _GV_TEXT and "note" not in _grow and "tries" not in _grow
+          and _gft == f"Addendum No. 1 (2026-11-06T11:00-07:00)\n{_GV_HREF}1\n\n{_GV_TEXT}\n"
+          and not bidnet.unsafe_reasons(_gft) and not bidnet.has_markup(_gft) and "REDACTED" not in _gft
+          and _gline == ['NEW ADDENDUM No.1 2026-11-06T11:00-07:00: "' + " / ".join(_GV_TEXT.splitlines())[:_run_early.ADDENDUM_EXCERPT] + '"']
+          and "<" not in _gline[0] and not getattr(_gs, "unsafe_saves", None), (_gn, _grow, _gft[:400], _gline))
+    _gn2, _grow2, _, _, _gf2 = _gread(_gv_textview(_GV), 2)
+    _gn3, _grow3, _, _, _ = _gread(_GV_HOME, 3, body=_GV)
+    check("...the same through Chromium's text view; and when the page as left is the home page, the answer's own body "
+          "(resp.text()) is read", _gn2 == 1 and _grow2.get("text") == _GV_TEXT and _gf2.is_file() and _gn3 == 1 and _grow3.get("text") == _GV_TEXT,
+          (_grow2, _grow3))
+    _gn4, _grow4, _gpg4, _gs4, _gf4 = _gread(_GV_HOME, 4)
+    check("the portal home page (no change dialog): nothing saved, no text, one try, the row's note says why, and the REPORT line says "
+          "'(change page not readable: landed on the portal home page)'",
+          _gn4 == 0 and not _gf4.exists() and "text" not in _grow4 and _grow4.get("tries") == 1 and _grow4.get("note") == bidnet.NOT_READABLE_HOME
+          and _run_early._diff({"title": "x"}, {"title": "x", "addenda": [_grow4]})
+          == ["NEW ADDENDUM No.4 2026-11-06T14:00-07:00 (change page not readable: landed on the portal home page)"], (_grow4,))
+    _gn5, _grow5, _, _gs5, _gf5 = _gread(_gv_main(_gv_js(_gv_dialog("Use the session_username field to sign in."))), 5)
+    check("a change page whose dialog text holds a session field is refused by the guard: no file, no text on the row (open_bids.json), "
+          "the note and the REPORT line say not saved, the scan's errors get the note",
+          _gn5 == 0 and not _gf5.exists() and "text" not in _grow5 and _grow5.get("note") == "change page not saved: it held session_username"
+          and _run_early._diff({"title": "x"}, {"title": "x", "addenda": [_grow5]})
+          == ["NEW ADDENDUM No.5 2026-11-06T15:00-07:00 (change page not saved: it held session_username)"]
+          and _gs5.unsafe_saves == ["BidNet _addendum_5.txt of 0000441189 not saved: it held session_username"], (_grow5, vars(_gs5)))
+    _gb6 = {"id": "0000441190"}
+    _gf6 = bidnet.DOWNLOAD_DIR / "bidnet" / "0000441190" / "_addendum_1.txt"
+    _gf6.parent.mkdir(parents=True, exist_ok=True)
+    _gf6.write_text(_graw)  # what an older scanner left on disk (the Mac's checkout ignores the file now, but it is there)
+    _gn6, _grow6, _gpg6, _, _ = _gread(_GV, 1, bid=_gb6)
+    _grow6b = {"no": 1, "date": "x", "href": _GV_HREF + "1"}
+    check("a raw page an older scan saved is never read back: removed, the page opened again and saved clean",
+          _gn6 == 1 and _gpg6.gotos == [_GV_HREF + "1"] and _grow6.get("text") == _GV_TEXT and _gf6.is_file()
+          and not bidnet.has_markup(_gf6.read_text()) and bidnet.saved_addendum_text(_gb6, _grow6b) == _GV_TEXT, (_gn6, _gpg6.gotos))
+    _gf6.write_text(_graw)
+    check("...read back directly (saved_addendum_text): None and the file removed",
+          bidnet.saved_addendum_text(_gb6, _grow6b) is None and not _gf6.exists())
+finally:
+    bidnet.DOWNLOAD_DIR = _g_real_dl
+    if _g_user is None:
+        os.environ.pop("BIDNET_USER", None)
+    else:
+        os.environ["BIDNET_USER"] = _g_user
+
+# run.py: a row an older scan "read" as raw page source (open_bids.json after 03:37Z: the first 2000 characters of the source)
+_gdirty = {"no": 1, "date": "2026-11-06T11:23-07:00", "href": _GV_HREF + "1", "text": _GV[_GV.index("<!DOCTYPE"):][:bidnet.ADDENDUM_TEXT_MAX]}
+_gold = {"title": "Grandview", "addenda": [_gdirty, {"no": 2, "date": "d2", "href": _GV_HREF + "2", "tries": 1, "note": bidnet.NOT_READABLE_HOME}]}
+_gnew = {"title": "Grandview", "addenda": [{k: v for k, v in _gdirty.items() if k != "text"}, {"no": 2, "date": "d2", "href": _GV_HREF + "2"}]}
+_run_early._merge_addenda(_gnew, _gold)
+_gex = _run_early._addendum_excerpt(_gdirty)
+check("run.py: a kept text that is page source is dropped on the next fresh read (the row is opened again; the note and tries of "
+      "another row stay); the excerpt of such a text is never printed, only why ('page markup'), with no '<'",
+      "text" not in _gnew["addenda"][0] and _gnew["addenda"][1] == {"no": 2, "date": "d2", "href": _GV_HREF + "2", "tries": 1,
+                                                                       "note": bidnet.NOT_READABLE_HOME}
+      and [a["no"] for a in _run_early._addenda_to_read(_gnew, _gold)] == [1, 2] and "page markup" in _gex
+      and _gex.startswith(" (change page not shown: it held ") and "<" not in _gex
+      and [a["no"] for a in _run_early._addenda_to_read(_gold, _gold)] == [1, 2], (_gnew, _gex))
+_gnew["addenda"][0]["text"] = _GV_TEXT
+check("...once read clean, the REPORT gets the text once (the old record held only source), the scan after prints nothing; a record "
+      "carried whole with the source text prints nothing either (never the source)",
+      _run_early._diff(_gold, _gnew) == ['ADDENDUM No.1 2026-11-06T11:23-07:00 change page: "'
+                                         + " / ".join(_GV_TEXT.splitlines())[:_run_early.ADDENDUM_EXCERPT] + '"']
+      and _run_early._diff(_gnew, {"title": "Grandview", "addenda": [dict(a) for a in _gnew["addenda"]]}) == []
+      and _run_early._diff(_gold, {"title": "Grandview", "addenda": [dict(a) for a in _gold["addenda"]]}) == [],
+      _run_early._diff(_gold, _gnew))
 
 # run.py's side: which bids are hot (GO / GO-IF / EVALUATE due within 14 days, or a changed list row), the order the detail pass
 # opens watched bids in (longest-unread first) and the per-scan ceiling across bids, through _enrich_and_download with a stub module
@@ -1215,6 +1445,10 @@ class H(http.server.BaseHTTPRequestHandler):
                                   "<input name='j_password' type='password'><button type='submit'>Log in</button></form>")
             if mode == "slow":
                 time.sleep(4)
+            if mode == "layout":  # as BidNet answered on 2026-11-18: the layout + the dialog in a jQuery string, not text/html
+                return self._send(_GV, ctype="text/javascript;charset=UTF-8")
+            if mode == "home":
+                return self._send(_GV_HOME)
             m = re.search(r"revisionNumber=(\d+)", p)
             n = m.group(1) if m else "1"
             try:
@@ -2056,6 +2290,15 @@ check("a robot check on a change page stops the detail pass like one on a detail
       _ar_n["enrich"] == 1 and [c[0] for c in _ar_calls] == ["10"]
       and _ar_h["errors"] == ["detail pages blocked: BidNet robot check on the Addendum No.3 change page: detail pass stopped, cool-down started"]
       and len(_ar_found["bidnet:10"].get("addenda") or []) == 3 and "CHALLENGED" in _ar_h.get("login_note", ""), (_ar_n, _ar_calls, _ar_h))
+_us_note = "BidNet _addendum_3.txt of 9 not saved: it held session_username"
+_us_mod = _types.SimpleNamespace(enrich=lambda ses, b: {**b, "addenda": [dict(a) for a in _ar_rows], "detail_checked": True},
+                                 read_addenda=lambda ses, b, rows, stop=None: bidnet._note_unsafe(ses, _us_note) or 0)
+_us_h = {"errors": []}
+run._enrich_and_download(_types.SimpleNamespace(logged_in=True), _us_mod,
+                         {"bidnet:9": {"source": "bidnet", "id": "9", "title": "Watched HVAC bid 26-77", "url": "u"}}, "bidnet", profiles,
+                         _ws2, {"bidnet:9": _ar_old}, True, {}, _us_h, budget=run._DetailBudget(600))
+check("a page or text the save guard refused (bidnet.save_page_file: session.unsafe_saves) is one line in the source's errors, labels only",
+      _us_h["errors"] == [_us_note], _us_h)
 
 # (c) the detail pass's wall-clock budget, end to end (BIDWATCH_DETAIL_BUDGET_S; 2026-11-12 20:39Z BidNet's tabs hung on
 # "Loading..." and `timeout 1500` killed the run before REPORT.md): a clock already past a 1 s budget when the first detail
@@ -2351,7 +2594,7 @@ check("read_addenda opens the change page once and saves its text as _addendum_1
       "and the login gone",
       _n == 1 and HITS2["diff"] == _df0 + 1
       and _at.startswith(f"Addendum No. 1 (2026-11-17T14:19-07:00)\n{_D}1\n\nCitywide Custodial Services - Addendum No. 1\n")
-      and "Site Visit | None | Optional (Recommended) facility walk, Thursday 11/19/2026 12:00 PM MST" in _at and "sent to *** and" in _at
+      and "Site Visit: None -> Optional (Recommended) facility walk, Thursday 11/19/2026 12:00 PM MST" in _at and "sent to *** and" in _at
       and not any(x in _at for x in ("csrf", "token-value", "pageToken", "5550001234", USER, PW, "Logout", "My Profile", "Service Alert",
                                      "Terms &"))
       and _ar[0].get("text", "").startswith("Citywide Custodial Services - Addendum No. 1\nChanges published") and "tries" not in _ar[0]
@@ -2407,6 +2650,28 @@ check("a change page that does not load in TAB_WAIT_MS is a stall like a tab's: 
       and "addenda" not in bidnet.enrich(s19, {**_bid, "watched": True}) and HITS2["amend"] == _a0, (_n, _dt, _st, HITS2))
 s19.close()
 bidnet.TAB_WAIT_MS = _wait
+# the real Grandview answer through Chromium: served as text/javascript (the browser shows it as text, as on 2026-11-18 03:37Z), the
+# dialog read out of it and saved clean; the home page saves nothing and says why
+os.environ["FAKE_DIFF"] = "layout"
+s19b = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
+s19b.ensure_login()
+_df0 = HITS2["diff"]
+for _f in _xdl.glob(bidnet.ADDENDUM_FILE_PREFIX + "*"):
+    _f.unlink()
+_rl = [{"no": 11, "date": "d11", "href": _D + "11"}]
+_n = bidnet.read_addenda(s19b, _e, _rl)
+_lf = _xdl / "_addendum_11.txt"
+_lft = _lf.read_text() if _lf.is_file() else ""
+os.environ["FAKE_DIFF"] = "home"
+_rh = [{"no": 12, "date": "d12", "href": _D + "12"}]
+_nh = bidnet.read_addenda(s19b, _e, _rh)
+check("Chromium, the real answer (layout + jQuery dialog, served as text/javascript): the dialog's text on the row and in "
+      "_addendum_11.txt, no markup, no marker, no login; the home page answer: nothing saved, the row's note says it landed there",
+      _n == 1 and HITS2["diff"] == _df0 + 2 and _rl[0].get("text") == _GV_TEXT and _lft == f"Addendum No. 11 (d11)\n{_D}11\n\n{_GV_TEXT}\n"
+      and not bidnet.unsafe_reasons(_lft) and not bidnet.has_markup(_lft) and USER not in _lft
+      and _nh == 0 and _rh[0].get("note") == bidnet.NOT_READABLE_HOME and not (_xdl / "_addendum_12.txt").exists()
+      and not getattr(s19b, "unsafe_saves", None), (_n, _rl, _lft[:300], _rh))
+s19b.close()
 del os.environ["FAKE_DIFF"]
 os.environ["FAKE_AMENDMENT_TAB"] = "0"
 s20 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)

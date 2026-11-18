@@ -684,7 +684,7 @@ def _keep_tab_documents(got: dict, old: dict) -> None:
 
 
 # ---------------- BidNet Addendums tab rows (bidnet.parse_addenda / read_addenda) ----------------
-ADDENDUM_KEPT = ("text", "tries")  # what an earlier scan learned about a row: its change page's text, failed opens
+ADDENDUM_KEPT = ("text", "tries", "note")  # what an earlier scan learned about a row: its change page's text, failed opens, why
 ADDENDUM_EXCERPT = 300  # characters of the change page on the report line
 
 
@@ -693,23 +693,33 @@ def _addendum_key(a: dict) -> tuple:
     return (str(a.get("no")), a.get("date"))
 
 
+def _text_ok(t) -> bool:
+    """Whether a row's change-page text may be kept and printed: there is some, and it holds no session / csrf field, no login, no
+    brownbisonco.com address (bidnet.unsafe_reasons) and no markup (bidnet.has_markup). The 2026-11-18 03:37Z rows of Grandview
+    0000441189 held the start of the raw page source; such a text is dropped and the page read again."""
+    return bool(t) and not bidnet.unsafe_reasons(t) and not bidnet.has_markup(t)
+
+
 def _merge_addenda(got: dict, old: dict) -> None:
-    """A fresh read's Addendums rows (no, date, href) keep what earlier scans learned about the same row (ADDENDUM_KEPT). Every
-    row becomes a copy, so the change pages read into this scan's record never edit the previous record _diff compares with
-    (rows carried whole through a tab that was not read, by DETAIL_FIELDS, are the previous record's own dicts)."""
+    """A fresh read's Addendums rows (no, date, href) keep what earlier scans learned about the same row (ADDENDUM_KEPT; a text
+    that fails _text_ok is not kept, so the page is opened again). Every row becomes a copy, so the change pages read into this
+    scan's record never edit the previous record _diff compares with (rows carried whole through a tab that was not read, by
+    DETAIL_FIELDS, are the previous record's own dicts)."""
     rows = got.get("addenda")
     if not rows:
         return
     prior = {_addendum_key(a): a for a in old.get("addenda") or []}
-    got["addenda"] = [{**{f: p[f] for f in ADDENDUM_KEPT if f in p}, **a}
+    got["addenda"] = [{**{f: p[f] for f in ADDENDUM_KEPT if f in p and (f != "text" or _text_ok(p[f]))},
+                       **{k: v for k, v in a.items() if k != "text" or _text_ok(v)}}
                       for a in rows for p in [prior.get(_addendum_key(a)) or {}]]
 
 
 def _addenda_to_read(rec: dict, old: dict) -> list[dict]:
-    """The rows of `rec` whose change page is still to be opened (no text yet, fewer than bidnet.ADDENDUM_TRIES failed opens):
-    the rows new this scan first, then older ones the per-scan cap, the budget or a failure left unread."""
+    """The rows of `rec` whose change page is still to be opened (no text fit to keep yet, _text_ok; fewer than
+    bidnet.ADDENDUM_TRIES failed opens): the rows new this scan first, then older ones the per-scan cap, the budget or a failure
+    left unread."""
     seen = {_addendum_key(a) for a in old.get("addenda") or []}
-    rows = [a for a in rec.get("addenda") or [] if not a.get("text") and int(a.get("tries") or 0) < bidnet.ADDENDUM_TRIES]
+    rows = [a for a in rec.get("addenda") or [] if not _text_ok(a.get("text")) and int(a.get("tries") or 0) < bidnet.ADDENDUM_TRIES]
     return sorted(rows, key=lambda a: _addendum_key(a) in seen)
 
 
@@ -733,9 +743,21 @@ def _addendum_line(a: dict) -> str:
 
 
 def _addendum_excerpt(a: dict) -> str:
-    """The start of the row's change-page text on one report line: its lines (one per block, table cells " | ") joined by " / "."""
-    lines = (" ".join(ln.split()) for ln in str(a.get("text") or "").splitlines())
+    """The start of the row's change-page text on one report line (REPORT.md, LAST_SCAN.md): its lines (one per block, "<field>:
+    <old> -> <new>" per change, table cells " | ") joined by " / ", the first ADDENDUM_EXCERPT characters. A text that is not
+    plain text, or holds a session / csrf field, the login or a brownbisonco.com address, is never printed: the line says why."""
+    text = str(a.get("text") or "")
+    bad = bidnet.unsafe_reasons(text) + (["page markup"] if bidnet.has_markup(text) else [])
+    if bad:
+        return f" (change page not shown: it held {', '.join(bad)})"
+    lines = (" ".join(ln.split()) for ln in text.splitlines())
     return f': "{" / ".join(ln for ln in lines if ln)[:ADDENDUM_EXCERPT]}"'
+
+
+def _addendum_unread(a: dict) -> str:
+    """Why a row has no change-page text on its report line: the row's note (bidnet.read_addenda: not readable, landed on the
+    portal home page, not saved) or "change page not read"."""
+    return f" ({' '.join(str(a.get('note')).split())[:160]})" if a.get("note") else " (change page not read)"
 
 
 def _restore_detail(found: dict, prev: dict, source: str) -> None:
@@ -951,6 +973,11 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if stall and not h.get("tab_stall"):
             h["tab_stall"] = stall
             h["errors"].append(stall.get("note") or f"detail tabs stalled on {stall.get('bid')}: later tab reads skipped")
+        # a BidNet page or change-page text bidnet.save_page_file refused to write (it held a session / csrf field or the login;
+        # labels only, never the value): one line each, so the report says what was not saved
+        for note in (getattr(ses, "unsafe_saves", None) or [])[:5]:
+            if note not in h["errors"]:
+                h["errors"].append(note)
         # the scan's extra BidNet loads (tab clicks beyond the standard four, change pages) and those put off by the ceiling
         used, put_off = int(getattr(ses, "extra_loads", 0) or 0), int(getattr(ses, "extra_deferred", 0) or 0)
         if rationed and (used or put_off):
@@ -984,8 +1011,9 @@ def _diff(old: dict, new: dict) -> list[str]:
     for a in new.get("addenda") or []:
         p = oa.get(_addendum_key(a))
         if p is None:
-            out.append(f"NEW {_addendum_line(a)}" + (_addendum_excerpt(a) if a.get("text") else " (change page not read)"))
-        elif a.get("text") and not p.get("text"):
+            out.append(f"NEW {_addendum_line(a)}" + (_addendum_excerpt(a) if a.get("text") else _addendum_unread(a)))
+        elif _text_ok(a.get("text")) and not _text_ok(p.get("text")):
+            # first readable text, also for a row an older scan "read" as raw page source (2026-11-18 Grandview 0000441189)
             out.append(f"{_addendum_line(a)} change page{_addendum_excerpt(a)}")
     # a BidNet tab the scanner does not know (bidnet.read_extra_tabs: d["extra_tabs"], kept through thin reads by DETAIL_FIELDS),
     # reported once, the first scan that lists it; its files are in the document list above (2026-11-17 Lafayette addendum). The

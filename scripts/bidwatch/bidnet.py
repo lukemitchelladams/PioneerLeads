@@ -46,6 +46,7 @@ from bs4 import BeautifulSoup, Comment, NavigableString
 import datetime as dt
 import hashlib
 import os
+import sys
 import time
 
 from . import mailcode
@@ -1276,6 +1277,9 @@ def tab_fragment(html: str) -> str:
     for t in node.select("input[type='hidden']"):
         if t.get("id") != "currentTabId":
             t.decompose()
+    for t in node.find_all(True):  # a form action "...?_csrf=<token>" or a link ";jsessionid=<id>" (save_page_file refuses either)
+        for k in [k for k, v in t.attrs.items() if UNSAFE_ATTR_RX.search(" ".join(v) if isinstance(v, list) else str(v))]:
+            del t[k]
     return str(node)
 
 
@@ -1358,21 +1362,86 @@ def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: boo
 
 
 def save_tab_pages(session, bid: dict) -> list[str]:
-    """Write the tab pages read_extra_tabs kept for `bid` to <downloads>/bidnet/<id>/_tab_<tab id>.html (a file whose content
-    did not change is left alone). Returns the paths written."""
+    """Write the tab pages read_extra_tabs kept for `bid` to <downloads>/bidnet/<id>/_tab_<tab id>.html through save_page_file
+    (a file whose content did not change is left alone; one holding a session / csrf field or the login is refused). Returns the
+    paths written."""
     pages = (getattr(session, "tab_pages", None) or {}).pop(bid.get("id") or "", None) or {}
     out = []
     for tid, frag in pages.items():
         p = DOWNLOAD_DIR / "bidnet" / bid["id"] / f"{TAB_PAGE_PREFIX}{tid}.html"
-        try:
-            if p.is_file() and p.read_text(errors="ignore") == frag:
-                continue
-            p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(frag)
+        if save_page_file(session, p, frag)[0]:
             out.append(str(p))
-        except OSError:
-            continue
     return out
+
+
+# ---------------- the one writer of saved BidNet pages, and its guard ----------------
+# 2026-11-18 03:37Z: the scan saved two raw change pages of Grandview 0000441189 (_addendum_1.txt / _addendum_2.txt, 64 KB each:
+# the whole page source with the meta _csrf token and the hidden session_username) into bids/_watch/downloads, which is in the
+# PUBLIC repo, and printed the start of that source on the REPORT line. Every BidNet page or page text the scanner keeps
+# (_tab_<id>.html, _addendum_<n>.txt) is now written by save_page_file only, and it refuses (nothing written, the refusal printed
+# and kept on session.unsafe_saves for run.py's errors) any content holding one of UNSAFE_MARKERS, the BidNet login name
+# (BIDNET_USER, any case) or the session's login values, or a brownbisonco.com address; a .txt also any markup. run.py applies
+# the same test (unsafe_reasons / has_markup) to the change-page text it keeps in open_bids.json and prints on the REPORT line.
+UNSAFE_MARKERS = ("session_username", "_csrf", "CSRF-TOKEN", "csrf_header", "JSESSIONID")
+UNSAFE_ATTR_RX = re.compile(r"_csrf|csrf-token|csrf_header|jsessionid|session_username", re.I)
+OWN_MAIL_RX = re.compile(r"[\w.+-]+@(?:[\w-]+\.)*brownbisonco\.com\b", re.I)
+# a tag (<div ...>, </td>, <br/>), a doctype or a comment: what the text of a page must never hold
+MARKUP_RX = re.compile(r"<\s*(?:!doctype\b|!--|/?\s*[a-z][a-z0-9:-]*(?:\s+[^<>]*)?/?\s*>)", re.I)
+
+
+def unsafe_reasons(text, secrets=()) -> list[str]:
+    """What makes `text` unsafe to save or print, as labels (never a value): each UNSAFE_MARKERS name it holds (any case), "the
+    BidNet login name" (the BIDNET_USER value, any case), "a login value" (one of `secrets`: the session's user / password),
+    "a brownbisonco.com address". [] = safe."""
+    t = str(text or "")
+    low = t.lower()
+    out = [m for m in UNSAFE_MARKERS if m.lower() in low]
+    user = (os.environ.get(CREDS[0]) or "").strip().lower()
+    if len(user) >= 3 and user in low:
+        out.append("the BidNet login name")
+    if any(v and len(str(v)) >= 4 and str(v).lower() in low for v in secrets or ()):
+        out.append("a login value")
+    if OWN_MAIL_RX.search(t):
+        out.append("a brownbisonco.com address")
+    return out
+
+
+def has_markup(text) -> bool:
+    """Whether `text` holds a tag, a doctype or a comment (page source, not page text)."""
+    return bool(MARKUP_RX.search(str(text or "")))
+
+
+def _note_unsafe(session, note: str) -> None:
+    """A refused save: printed (stderr, the scan log) and kept on session.unsafe_saves (run.py adds it to the source's errors)."""
+    print(f"bidwatch: {note}", file=sys.stderr)
+    try:
+        notes = getattr(session, "unsafe_saves", None)
+        if notes is None:
+            notes = []
+            session.unsafe_saves = notes
+        if note not in notes:
+            notes.append(note)
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def save_page_file(session, path, content: str, text_only: bool = False) -> tuple[bool, list[str]]:
+    """THE writer of every saved BidNet page or page text (_tab_<id>.html, _addendum_<n>.txt). Refuses, writing nothing, content
+    that unsafe_reasons flags (with the session's login values), or, `text_only` (a .txt), that holds markup: the refusal is
+    printed and kept on session.unsafe_saves, labels only. A file that already holds exactly `content` is left alone. Returns
+    (written, why refused): (True, []) written, (False, []) unchanged or the write failed, (False, [labels]) refused."""
+    why = unsafe_reasons(content, _login_secrets(session)) + (["page markup"] if text_only and has_markup(content) else [])
+    if why:
+        _note_unsafe(session, f"BidNet {path.name} of {path.parent.name} not saved: it held {', '.join(why)}")
+        return False, why
+    try:
+        if path.is_file() and path.read_text(errors="ignore") == content:
+            return False, []
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content)
+        return True, []
+    except OSError:
+        return False, []
 
 
 # ---------------- the Addendums tab and each addendum's posting-change page ----------------
@@ -1382,6 +1451,26 @@ def save_tab_pages(session, bid: dict) -> list[str]:
 # "11/17/2026 02:19 PM MST"; the hidden tr.mets-table-row-empty "No entries" is there whether or not rows are. The link is not a
 # file: it is the posting's change list (that one added an optional facility walk; such a change can move the walk or the due
 # date and carries no document). read_addenda opens it in the logged-in page and keeps its text, the way the tab pages are kept.
+#
+# What the link answers (Grandview 0000441189, 2026-11-18 03:37Z, opened with page.goto in the logged-in page; sanitized copy in
+# tests/fixtures/bidnet_history_diff_0000441189_sanitized.html). The link is the lightbox's AJAX URL. Loaded directly it returns
+# BidNet's site layout: the layout's default title "Welcome! | BidNet Direct" (it is NOT the home page), the account header with
+# the hidden session_username, meta _csrf / _csrf_header, and a main#content whose only content is the TEXT of the script the
+# lightbox would run: $("#<container>").html("<the dialog, JS-escaped>"); diffViewDialog.show(). Chromium showed that answer as
+# plain text (it is not served as text/html), so page.content() was <pre>the page source</pre>, the old stripper took the
+# source for the text and that scan saved it whole (64 KB, csrf token and session_username included) as _addendum_1.txt and
+# _addendum_2.txt in the public repo. The change list is the dialog inside the escaped string: div#diffViewDialog >
+# div#diffViewDialogBody > form#solicitationForm, one div.content-block per section under an h3: "Addendum Description"
+# (span#revisionComment, a "See more" button), "Notice Modifications" (table#diffs.diff "Notice Information | From Value | To
+# Value"; a tr.mets-table-row-empty.visible "No entries" when nothing changed), "Category Modifications" (h4 "Added Categories"
+# / "Removed Categories", each a table hidden by style="display: none" when empty and a div.noSelection "No Categories Added"),
+# "Added Documents" (table.solicitationDocumentsTable "File | Size | Uploaded Date", a#attachmentDownloadLnk_<id> per file, a
+# hidden "No Files" row). change_page_text looks for that dialog in the page, in the page source a browser showed as text, and
+# in the HTML of any jQuery .html("...") call in either, and keeps only its visible text; a full page without it (the portal
+# home page after a redirect, a page the lightbox never filled) is not readable and nothing is saved. Opening the link with
+# page.goto stays: the answer carries the whole dialog, and clicking a#showLightBox_<n> on the Addendums tab instead would cost
+# a tab click per bid on top of the change page (the 2026-11-18 403 block came after extra loads). Untested live: a click
+# would leave the dialog in the page as #diffViewDialogBody, which change_page_text reads the same way.
 ADDENDUM_NO_RX = re.compile(r"(?:addend\w*|amendment)\s*(?:no\.?|number|#)?\s*(\d+)\b", re.I)
 STAMP_RX = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})\s+(\d{1,2}):(\d{2})\s*([AP]M)\b(?:\s+([A-Z]{2,4})\b)?", re.I)
 TZ_OFFSET_H = {"MST": -7, "MDT": -6, "CST": -6, "CDT": -5, "EST": -5, "EDT": -4, "PST": -8, "PDT": -7, "UTC": 0, "GMT": 0}
@@ -1396,6 +1485,26 @@ ADDENDUM_CHROME_SEL = ("script, style, noscript, svg, iframe, template, input, s
                        "#headerContainer, #header, #footer, #footerContainer, #innerTabView, #loginMessageDiv, "
                        ".login-message-container, .ui-widget-overlay, .accessibility-hidden, #supplier_logout_link")
 ADDENDUM_BLOCK_SEL = "p, div, tr, li, h1, h2, h3, h4, h5, h6, table, section, fieldset, dt, dd, caption, legend"
+# the change dialog (markup above); a form holding a diff table; a table of changes ("diffs", a class with "diff", or From / To
+# columns: "From Value | To Value", "Previous Value | New Value")
+CHANGE_DIALOG_SELS = ("#diffViewDialogBody", "#diffViewDialog")
+CHANGE_FORM_SEL = "form#solicitationForm"
+FROM_COL_RX = re.compile(r"^(?:from|previous|old)\b", re.I)
+TO_COL_RX = re.compile(r"^(?:to|new)\b", re.I)
+# a jQuery .html("...") call and its string; one escape of a JavaScript string literal
+JQ_HTML_RX = re.compile(r'\.html\(\s*"((?:[^"\\]|\\.)*)"\s*\)', re.S)
+JS_ESC_RX = re.compile(r"\\(u[0-9a-fA-F]{4}|x[0-9a-fA-F]{2}|.)", re.S)
+# a page's source shown as text (comments may come first)
+PAGE_SOURCE_RX = re.compile(r"\s*(?:<!--.*?-->\s*)*<(?:!doctype\b|html\b|head\b|body\b)", re.I | re.S)
+FULL_PAGE_SEL = "header, main, #content, #headerContainer, #footer, meta[name*='csrf' i], input#session_username"
+HOME_TITLE_RX = re.compile(r"^\s*Welcome\b", re.I)  # "Welcome! | BidNet Direct": the layout's title, the home page's too
+HIDDEN_STYLE_RX = re.compile(r"display\s*:\s*none|visibility\s*:\s*hidden", re.I)
+# the dialog's own chrome: the Print link bar (div.content-header) and the buyer's logo and standing disclaimer (div.buyer-header)
+DIALOG_CHROME_SEL = "caption, .content-header, .content-header-actions, .buyer-header"
+HEAD_MARK = "\x01"  # marks a section heading (h3 / h4) in the flattened dialog: its lines read "<heading>: <line>"
+MAX_CHANGE_SOURCES = 8
+NOT_READABLE = "change page not readable"
+NOT_READABLE_HOME = "change page not readable: landed on the portal home page"
 
 
 def portal_stamp(text: str) -> str | None:
@@ -1440,34 +1549,169 @@ def parse_addenda(html: str, url: str = "") -> list[dict]:
     return out
 
 
-def addendum_text(html: str, secrets=()) -> str:
-    """The visible text of an addendum's posting-change page, safe to commit like a saved tab page (tab_fragment): scripts,
-    styles, every form control (the _csrf token, the hidden session_username), the header with the account menu, the footer, the
-    tab strip and BidNet's site-alert lightbox removed; the values of the page's user / session / csrf inputs and `secrets` (the
-    login) masked as *** wherever the text still prints them. The page's main#content (else its body) as one line per block,
-    table cells joined with " | "."""
-    soup = BeautifulSoup(html, "lxml")
-    hidden = [i.get("value") or "" for i in soup.select("input[name*='user' i], input[name*='session' i], input[name*='csrf' i]")]
-    for t in soup.select(ADDENDUM_CHROME_SEL):
+def _js_unescape(s: str) -> str:
+    """The string a JavaScript string literal's body denotes (\\u003C, \\x3c, \\n, \\t, \\", \\/ ...); a surrogate pair written as
+    two \\u escapes becomes its one character."""
+    def rep(m):
+        e = m.group(1)
+        if e[0] in "ux" and len(e) > 1:
+            return chr(int(e[1:], 16))
+        return {"n": "\n", "t": "\t", "r": "\r", "b": "\b", "f": "\f", "v": "\v"}.get(e, e)
+    return JS_ESC_RX.sub(rep, s).encode("utf-16", "surrogatepass").decode("utf-16", "replace")
+
+
+def _change_sources(html: str) -> list:
+    """The documents a change page's list can be in, parsed, in this order: the page itself; the page source a browser showed as
+    text (an answer not served as text/html: page.content() is <pre>the source</pre>); the HTML each jQuery .html("...") call in
+    any of them would put into the page (in its text, as on the 2026-11-18 page, or in a script). At most MAX_CHANGE_SOURCES."""
+    soups, seen = [], set()
+
+    def add(h):
+        if h and h not in seen and len(soups) < MAX_CHANGE_SOURCES:
+            seen.add(h)
+            soups.append(BeautifulSoup(h, "lxml"))
+
+    add(html or "")
+    if soups:
+        for shown in [soups[0].get_text("")] + [p.get_text("") for p in soups[0].select("pre")]:
+            if PAGE_SOURCE_RX.match(shown):
+                add(shown)
+    i = 0
+    while i < len(soups):
+        s = soups[i]
+        i += 1
+        for blob in [s.get_text("")] + [sc.get_text("") for sc in s.find_all("script")]:
+            for m in JQ_HTML_RX.finditer(blob):
+                add(_js_unescape(m.group(1)))
+    return soups
+
+
+def _is_diff_table(t) -> bool:
+    """A table of changes: id "diffs", a class naming "diff", or a header row with a From / Previous and a To / New column."""
+    if t.get("id") == "diffs" or any("diff" in c.lower() for c in t.get("class") or []):
+        return True
+    head = t.select_one("thead tr") or t.select_one("tr")
+    cols = [_txt(th) for th in head.select("th")] if head is not None else []
+    return any(FROM_COL_RX.match(c) for c in cols) and any(TO_COL_RX.match(c) for c in cols)
+
+
+def _change_block(soups):
+    """The change list in the first of `soups` that has one: the dialog (CHANGE_DIALOG_SELS), else form#solicitationForm when it
+    holds a diff table, else the closest .content-block / form / section / main around a diff table. None when no source has
+    any of them."""
+    for sel in CHANGE_DIALOG_SELS:
+        for s in soups:
+            b = s.select_one(sel)
+            if b is not None:
+                return b
+    for s in soups:
+        f = s.select_one(CHANGE_FORM_SEL)
+        if f is not None and (f.select_one(".diffView") is not None or any(_is_diff_table(t) for t in f.select("table"))):
+            return f
+    for s in soups:
+        for t in s.select("table"):
+            if _is_diff_table(t):
+                return next((p for p in t.parents if "content-block" in (p.get("class") or []) or p.name in ("form", "section", "main")),
+                            t.parent)
+    return None
+
+
+def _is_full_page(soup) -> bool:
+    """A whole site page (a title, the header, main#content, the footer, a csrf meta, the session field) or a browser's text view
+    of an answer (a body that is one <pre>), not a lightbox fragment."""
+    if (soup.title is not None and _txt(soup.title)) or soup.select_one(FULL_PAGE_SEL) is not None:
+        return True
+    kids = soup.body.find_all(True, recursive=False) if soup.body is not None else []
+    return len(kids) == 1 and kids[0].name == "pre"
+
+
+def _change_lines(block) -> list[str]:
+    """The visible text of a change dialog (or of a lightbox fragment) as lines, one per block: chrome (ADDENDUM_CHROME_SEL:
+    scripts, every form control, buttons, the header; DIALOG_CHROME_SEL: captions, the Print bar, the buyer's disclaimer), hidden
+    elements (style display:none, a mets-table-row-empty row not marked visible) and comments dropped; a diff table's rows as "<field>: <old> -> <new>", any other table's body rows as
+    cells joined by " | " (header rows dropped); under an h3 / h4 section heading every line reads "<heading>: <line>" (a heading
+    with nothing under it before the next one, a title over sub-headings, is dropped)."""
+    for t in block.select(ADDENDUM_CHROME_SEL + ", " + DIALOG_CHROME_SEL):
         t.decompose()
-    node = soup.select_one("main") or soup.select_one("#content") or soup.body or soup
-    for s in node.find_all(string=True):  # the source's own line breaks are spaces; only the blocks below end a line
+    for t in block.find_all(style=HIDDEN_STYLE_RX):
+        t.decompose()
+    for tr in block.select("tr.mets-table-row-empty"):
+        if "visible" not in (tr.get("class") or []):
+            tr.decompose()
+    for s in block.find_all(string=True):  # the source's own line breaks are spaces; only the blocks below end a line
         if isinstance(s, Comment):
             s.extract()
         elif type(s) is NavigableString:
             s.replace_with(re.sub(r"\s+", " ", str(s)))
-    for br in node.select("br"):
+    maker = BeautifulSoup("", "lxml")
+    for table in block.select("table"):
+        if not any(p is block for p in table.parents):
+            continue  # inside a table already flattened
+        diff = _is_diff_table(table)
+        rows = []
+        for tr in table.select("tr"):
+            if tr.find_parent("thead") is not None or not tr.select("td"):
+                continue
+            cells = [_txt(td) for td in tr.find_all("td", recursive=False) or tr.select("td")]
+            if diff and len(cells) >= 3 and cells[0]:
+                rows.append(f"{cells[0]}: {cells[1] or '(blank)'} -> {cells[2] or '(blank)'}")
+            elif " | ".join(c for c in cells if c):
+                rows.append(" | ".join(c for c in cells if c))
+        box = maker.new_tag("div")
+        for r in rows:
+            p = maker.new_tag("p")
+            p.string = r
+            box.append(p)
+        table.replace_with(box)
+    for h in block.select("h3, h4"):
+        t = _txt(h)
+        h.replace_with(f"\n{HEAD_MARK}{t}\n" if t else "")
+    for br in block.select("br"):
         br.replace_with("\n")
-    for c in node.select("td, th"):
+    for c in block.select("td, th"):
         c.insert_after(" | ")
-    for blk in node.select(ADDENDUM_BLOCK_SEL):
+    for blk in block.select(ADDENDUM_BLOCK_SEL):
         blk.insert_after("\n")
-    lines = (" ".join(ln.split()).strip(" |") for ln in node.get_text("").splitlines())
-    text = "\n".join(ln for ln in lines if ln)
+    out, head = [], None
+    for ln in block.get_text("").splitlines():
+        mark = ln.lstrip().startswith(HEAD_MARK)
+        ln = " ".join(ln.replace(HEAD_MARK, " ").split()).strip(" |")
+        if mark:
+            head = ln or None
+        elif ln:
+            out.append(f"{head}: {ln}" if head else ln)
+    return out
+
+
+def change_page_text(html: str, secrets=()) -> tuple[str, str | None]:
+    """An addendum's posting-change page as (text, why not): the change list's visible text (_change_block, flattened by
+    _change_lines) and None, or "" and why it is not readable: NOT_READABLE_HOME when the page is the site layout titled
+    "Welcome!" with no change list in it, else NOT_READABLE. A full page (_is_full_page, or a page source shown as text) without
+    a change list is never read for text; a lightbox fragment without one gives its own text. The values of the pages' user /
+    session / csrf inputs and csrf metas and `secrets` (the login) are masked as *** wherever the text still prints them."""
+    soups = _change_sources(html)
+    if not soups:
+        return "", NOT_READABLE
+    block = _change_block(soups)
+    if block is None:
+        if len(soups) > 1 or _is_full_page(soups[0]):
+            home = any(s.title is not None and HOME_TITLE_RX.match(_txt(s.title)) for s in soups)
+            return "", NOT_READABLE_HOME if home else NOT_READABLE
+        block = soups[0].body or soups[0]
+    hidden = [v for s in soups for v in
+              [i.get("value") or "" for i in s.select("input[name*='user' i], input[name*='session' i], input[name*='csrf' i], "
+                                                      "input[id*='session' i]")]
+              + [m.get("content") or "" for m in s.select("meta[name*='csrf' i]")]]
+    text = "\n".join(_change_lines(block))
     for v in [*hidden, *(secrets or ())]:
         if v and len(v) >= 4:
             text = text.replace(v, "***")
-    return text
+    return text, None if text else NOT_READABLE
+
+
+def addendum_text(html: str, secrets=()) -> str:
+    """The visible text of an addendum's posting-change page ('' when it is not readable): change_page_text's text."""
+    return change_page_text(html, secrets)[0]
 
 
 def addendum_path(bid: dict, row: dict):
@@ -1491,9 +1735,19 @@ def saved_addendum_text(bid: dict, row: dict) -> str | None:
     try:
         if not p.is_file():
             return None
-        head, _, text = p.read_text(errors="ignore").partition("\n\n")  # "Addendum No. <n> (<date>)\n<link>\n\n<text>\n"
+        whole = p.read_text(errors="ignore")
     except OSError:
         return None
+    if unsafe_reasons(whole) or has_markup(whole):
+        # a raw page an older scanner saved (2026-11-18 03:37Z: the page source, csrf token and session_username in it): never
+        # read back, removed so it cannot reach the repo; the page is opened again and saved clean
+        print(f"bidwatch: removed unsafe saved change page {p.name} of {p.parent.name}", file=sys.stderr)
+        try:
+            p.unlink()
+        except OSError:
+            pass
+        return None
+    head, _, text = whole.partition("\n\n")  # "Addendum No. <n> (<date>)\n<link>\n\n<text>\n"
     lines = head.splitlines()
     if len(lines) < 2 or lines[1].strip() != (row.get("href") or "").strip():
         return None
@@ -1505,12 +1759,15 @@ def read_addenda(session, bid: dict, rows: list[dict], stop=None) -> int:
     order given. A page saved by an earlier scan (saved_addendum_text: same link) is read back from its file and never opened
     again. Any other is opened in the scan's logged-in page, at most MAX_ADDENDUM_READS a scan (counted on the session) and
     while the scan's MAX_EXTRA_LOADS last, none once `stop()` says the scan's detail budget is spent or a tab read of the scan
-    stalled (the rows left wait for the next scan). A page that renders gives its row "text" (addendum_text, cut to
-    ADDENDUM_TEXT_MAX) and is saved as addendum_path(bid, row) (a file whose content did not change is left alone); one that
-    fails (HTTP error, the login form, nothing to read) only adds a try on the row ("tries"), which run.py reports all the same.
-    A page that does not load in TAB_WAIT_MS is a stall like a tab's (session.tab_stall: the scan's other tab reads are skipped);
-    a robot check raises Challenged. A row without a link, or whose link is a file (read_extra_tabs lists those as documents), is
-    skipped. Returns the rows that got their text (from the page or its saved file)."""
+    stalled (the rows left wait for the next scan). A page whose change list reads (change_page_text, on the page and else on
+    the response body) is saved as addendum_path(bid, row) through save_page_file (a file whose content did not change is left
+    alone) and gives its row "text" (cut to ADDENDUM_TEXT_MAX). One that fails (HTTP error, the login form) only adds a try on the
+    row ("tries"); one with no change list in it (NOT_READABLE / NOT_READABLE_HOME) or whose text save_page_file refuses (a
+    session / csrf field, the login: nothing written, no text) adds a try and says why in the row's "note"; run.py reports the
+    row all the same, with that note. A page that does not load in TAB_WAIT_MS is a stall like a tab's (session.tab_stall: the
+    scan's other tab reads are skipped); a robot check raises Challenged. A row without a link, or whose link is a file
+    (read_extra_tabs lists those as documents), is skipped. Returns the rows that got their text (from the page or its saved
+    file)."""
     page = session.page
     done = 0
     for a in rows:
@@ -1543,21 +1800,35 @@ def read_addenda(session, bid: dict, rows: list[dict], stop=None) -> int:
             raise Challenged(f"BidNet robot check on the {what}: detail pass stopped, cool-down started")
         if (resp is not None and not resp.ok) or BeautifulSoup(html, "lxml").select_one(LOGIN_FORM_SEL) is not None:
             continue
-        text = addendum_text(html, _login_secrets(session))
+        secrets = _login_secrets(session)
+        text, why = change_page_text(html, secrets)
+        if not text:  # the answer as served (a script the page did not keep, a redirect the browser followed)
+            raw = _response_body(resp)
+            if raw and raw != html:
+                text, why2 = change_page_text(raw, secrets)
+                why = why2 if why2 == NOT_READABLE_HOME else why
         if not text:
+            a["note"] = why or NOT_READABLE
+            continue
+        body = f"Addendum No. {a.get('no')} ({a.get('date') or 'no date'})\n{href}\n\n{text[:ADDENDUM_FILE_MAX]}\n"
+        refused = save_page_file(session, addendum_path(bid, a), body, text_only=True)[1]
+        if refused:
+            a["note"] = f"change page not saved: it held {', '.join(refused)}"
             continue
         a["text"] = text[:ADDENDUM_TEXT_MAX]
         a.pop("tries", None)
+        a.pop("note", None)
         done += 1
-        body = f"Addendum No. {a.get('no')} ({a.get('date') or 'no date'})\n{href}\n\n{text[:ADDENDUM_FILE_MAX]}\n"
-        p = addendum_path(bid, a)
-        try:
-            if not (p.is_file() and p.read_text(errors="ignore") == body):
-                p.parent.mkdir(parents=True, exist_ok=True)
-                p.write_text(body)
-        except OSError:
-            pass
     return done
+
+
+def _response_body(resp) -> str:
+    """The text of a navigation's response ('' when there is none or it cannot be read)."""
+    try:
+        t = resp.text() if resp is not None and callable(getattr(resp, "text", None)) else ""
+    except Exception:  # noqa: BLE001
+        return ""
+    return t if isinstance(t, str) else ""
 
 
 # ---------------- paid-tier ("interception") notices ----------------
