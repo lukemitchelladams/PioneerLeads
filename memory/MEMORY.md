@@ -3058,3 +3058,7 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-18 12:35Z scan (05:35 MT Wed)
 - Container restarted again ~12:35Z. Session reused, push 1fe37d9. bidnet 674/83 | samgov 105/105 | coloradovss 66/4 | bonfire 2/1 | total 847/193. 0 new, 0 docs, leak grep 0.
 - 13:21Z Wed worker (06:21 MT Wed): 12:35Z scan clean, 4/4 live, 163 open, 0 new, no changes. Inbox: 5 automated (Microsoft DMARC preview; BidNet closing-date reminders for COS snow REVIVE due 11/23, Denver access control NO, Loveland carpet NO, Weld jail RTU DEAD). No certificate. Dashboard rc=0: bids v422 b391281eb2b8ce9d3c2e9bde2810e881, events v425 3778013e0de997acb562ec3e9372fe51, portal_feed v217 5a3875a3535cc06d4bd5213cbdf51980, sources v371 27a1ba47d09e491547eec05211d52ebe (doc_gaps v14 unchanged); 4 old blobs deleted.
+
+### 2026-11-18 13:35Z scan (06:35 MT Wed) + CEO plan
+- Fresh BidNet login (attempt 1, no code) after another container restart; push cb4456c. bidnet 676/83 | samgov 105/105 | coloradovss 66/4 | bonfire 2/1 | total 849/193. 0 new, 0 docs, leak grep 0.
+- ops/plan_ceo/2026-11-18.md committed: (1) this week's floor Pagosa Thu + PSD Fri; (2) 08:30 send run + gates (CPW 10:00, Lafayette 17:00, Arapahoe Thu); (3) next week's floor BGNDRF + Kanab both sent Wed 11/25 (signable copies to Luke Mon 11/23 12:00; subs' prices due 11/25 replace documents-based numbers). Scanner next: fold decided-NO bids' addendum lines into one report line.
