@@ -1,0 +1,22 @@
+SAM.gov notice (pulled 2026-11-18 via the Opportunities API v2; base notice, the only record for solnum 140LL027Q0009
+with postedFrom 01/01/2026 to 11/18/2026. Amendment 0001 is a file on this same notice, not a separate notice.)
+
+noticeId: 7afe087450dd48268559b2f751b40e4b
+solicitationNumber: 140LL027Q0009
+title: S--BLM Utah - Paria River District HQ Janitorial
+type: Solicitation (baseType Solicitation)
+postedDate: 2026-11-17
+responseDeadLine: 2026-12-09T12:00:00-07:00
+archiveDate: 2026-12-24
+organization: INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.UTAH STATE OFFICE (014.1422.140L57)
+office: SALT LAKE CITY, UT 84101
+naicsCode: 561720
+classificationCode (PSC): S201
+typeOfSetAside: SBA (Small Business Set Aside - Total)
+placeOfPerformance: (blank in the API record; PWS A.4 gives 669 S Highway 89A, Kanab, Utah 84741, Kane County)
+pointOfContact (primary): Sanborn, Jessilyn, jessilyn_sanborn@ios.doi.gov
+uiLink: https://sam.gov/workspace/contract/opp/7afe087450dd48268559b2f751b40e4b/view
+resourceLinks: 9 files (all downloaded to docs/; see MANIFEST.md)
+
+Description (noticedesc endpoint, full text):
+BLM Utah - Paria River District HQ Janitorial
