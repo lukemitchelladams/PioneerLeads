@@ -90,3 +90,4 @@ Frequency Schedule (xlsx).
 - 2026-11-18 (new-bid session, no sends allowed): 6 firms with a public email on their own site found and verified;
   5 backups held. Body written, gate PASS. Nothing sent, nothing posted, no RSVP.
 - 2026-11-18 20:5xZ (HQ, gate PASS, skip list 0): first-touch pricing ask SENT bcc 6 (Front Range Recreation, CO Pool Doctor, Patriot Pool and Spa, Blue Mind Pool Works, Pyle's Pool & Spa, Puddle Pool Services), msg 1a1f0727d4878fb8; RFP + pricing workbook + insurance attached; pricing by Wed 12/09; optional 12/03 visit attendee name by Tue 12/01.
+- 2026-11-18 21:10Z (worker, read-only): **Patriot Pool and Spa DECLINED** (msg 1a1f0800effaa74e): "Unfortunately we do not provide regular pool maintenance." 1 of 6 declined; 5 still out (pricing asked by Wed 12/09).

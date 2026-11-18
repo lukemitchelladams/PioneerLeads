@@ -3095,10 +3095,10 @@
    "at": "2026-11-18T19:25:00Z"
   },
   "bidnet:0000443963": {
-   "name": "District Pool Operations, Maintenance, and Cleaning Services (agency not shown), published 2026-11-18, due 2026-12-18",
-   "verdict": "EVALUATE",
-   "why": "Facilities-maintenance/cleaning adjacent; could be a pool-service sub job or lifeguard staffing (not our trade). Watchlisted by BidNet id so the next logged-in scan downloads the package; read scope, CPO/licensing, pre-bid (rule 0) before GO/NO.",
-   "at": "2026-11-18T20:25:00Z"
+   "name": "Cherry Creek SD RFP 27-014 District Pool Operations, Maintenance, and Cleaning Services, due 2026-12-18 14:00 MST",
+   "verdict": "GO",
+   "why": "HQ 20:5xZ: no license in our name, subs allowed with consent, no bond, optional 12/03 visit; folder bids/cherrycreek-pool-ops-27-014 (pipeline id ccsd-27-014-pool-operations); sub ask to 6 pool firms, pricing by 12/09.",
+   "at": "2026-11-18T21:25:00Z"
   }
  },
  "watched": {
@@ -3284,6 +3284,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T20:30:00Z",
+ "last_hourly_check": "2026-11-18T21:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
