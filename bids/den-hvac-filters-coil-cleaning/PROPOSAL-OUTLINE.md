@@ -43,8 +43,9 @@ Page header/footer text for every page (HQ sets it at assembly):
 
 Counting the 25 pages: Tabs 1, 3, 4, 5 (less the org chart) and 6 count. The cover letter, TOC, Tab 2 (DEN EDI Plan), org
 chart, Sample Contract comment pages, disclosure pages, tab sheets, City forms and resumes do not. Target: 20 pages or fewer
-so addendum changes fit. RESPONSE-DRAFT counted sections run about 6,500 words today; at roughly 500 words a page in Times New
-Roman 12 that is about 13 pages plus tables (HQ verifies on the rendered PDF).
+so addendum changes fit. RESPONSE-DRAFT counted tabs (1, 3, 4, 5, 6) run about 4,800 words today, much of it in tables; at
+roughly 450-500 words a page in Times New Roman 12 that is about 10-11 pages, or 14-16 with table spacing and the [SUB] and
+[LUKE] text filled in (HQ verifies on the rendered PDF).
 
 ## 3. Package order (one unsecured PDF, bookmarked) plus one Excel file
 
@@ -171,7 +172,7 @@ apply, with the reason stated; **OPEN** = waits on a named input ([LUKE], [SUB],
 | C41 | "Proposals shall be in the order of the Proposal Narrative Content" | p.20 | RESPONSE-DRAFT order 1-6 | ANSWERED |
 | C42 | "Proposals shall include a table of contents." | p.20 | RESPONSE-DRAFT Part 0 | ANSWERED |
 | C43 | "Proposals shall include tabbed or bookmarked sections" | p.20 | PDF bookmarks per section 3 | ANSWERED |
-| C44 | "The proposal narrative shall not exceed 25 pages." | p.20-21 | Estimate about 13 pages plus tables; HQ counts the rendered PDF | OPEN [HQ: page count on the rendered PDF] |
+| C44 | "The proposal narrative shall not exceed 25 pages." | p.20-21 | Estimate 14-16 pages when filled; HQ counts the rendered PDF | OPEN [HQ: page count on the rendered PDF] |
 | C45 | "Resumes shall be limited to one (1) page per individual. Please attach resumes to the end" | p.21 | Package order item 17 | OPEN [LUKE]/[SUB: resumes] |
 | C46 | "un-secured/un-password protected Adobe Acrobat (.pdf) format" | p.21 | Assembly spec | ANSWERED |
 | C47 | Cover letter "not exceeding two (2) pages", "summarizes the key points" | p.21 | RESPONSE-DRAFT Part 0 (about 600 words) | ANSWERED |
@@ -212,10 +213,11 @@ apply, with the reason stated; **OPEN** = waits on a named input ([LUKE], [SUB],
 | C82 | Pricing Form: "Total increase for years 2-5 must not exceed 5% per year" | Pricing Form I8 | Filled Years 2-5, check PASS (private/) | ANSWERED |
 | C83 | Pricing Form: "All rates are fully burdened" and vehicle, fuel, parking, trip charges, mobilization, travel, insurance premiums, administrative costs, equipment and materials "will not be allowed" | Pricing Form I8 | All carried inside unit prices (Part 1.2) | ANSWERED |
 
-**Count: 83 requirements. 47 answered (42 ANSWERED + 5 N/A-ANSWERED). 36 open**: 21 wait on Luke (signatures, FEIN, D&B
-number, carrier document, disclosure facts, uploads, BidNet posts, MWBE percent), 13 wait on the subcontractor (legal name,
-qualifications, resumes, licenses, references, projects, written confirmations), 3 wait on DEN (addenda, Q8) or an HQ step
-(rendered page count). Some rows wait on two parties; each is counted once under its first owner.
+**Count (scripted 2026-11-18): 83 requirements. 45 answered (40 ANSWERED + 5 N/A-ANSWERED). 38 open**: 22 wait on Luke
+(signatures, FEIN, D&B number, carrier document, disclosure facts, owner of record, uploads, BidNet posts, MWBE percent, EDI
+examples), 12 wait on the subcontractor or the MWBE firm (legal names, qualifications, resumes, licenses, references,
+projects, written confirmations), 2 wait on DEN (addenda; Q8 wage class) and 2 on an HQ step (GFE follow-up log; page count
+on the rendered PDF). Rows that wait on two parties are counted once, under the first owner named.
 
 ## 7. After submission (not proposal items; listed so nothing surprises us)
 
