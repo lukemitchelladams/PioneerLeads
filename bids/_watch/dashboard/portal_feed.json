@@ -1931,7 +1931,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -1961,7 +1961,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Air-Filter-Replacement-Coil-Cleaning/0000443425?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2430,6 +2430,21 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Kitchen-Equipment-Maintenance-and-Repair/0000443304?purchasingGroupId=8409951&origin=1"
  },
  {
+  "key": "bidnet:0000443937",
+  "source": "bidnet",
+  "agency": "Weld County",
+  "title": "On-Call Environmental Consulting Services",
+  "sol": "B2600117",
+  "closing": "2026-12-11",
+  "posted": "2026-11-18",
+  "prebid_date": "2026-12-02",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Environmental-Consulting-Services/0000443937?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "samgov:b8d42df049264aef86019c9aa4e691c8",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
@@ -2651,7 +2666,7 @@
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2668,6 +2683,21 @@
   "watched": true,
   "new_24h": true,
   "url": "https://sam.gov/workspace/contract/opp/1bbbca1e2cd240838a114e008f5dd75d/view"
+ },
+ {
+  "key": "bidnet:0000443925",
+  "source": "bidnet",
+  "agency": "Town of Estes Park",
+  "title": "CM/GC - Estes Park Public Safety Facility",
+  "sol": "11182026",
+  "closing": "2026-12-22",
+  "posted": "2026-11-18",
+  "prebid_date": "2026-12-01",
+  "prebid_mandatory": "Mandatory",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/CM-GC-Estes-Park-Public-Safety-Facility/0000443925?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:6fcd8de199f5419ca0fae46dc353a73d",
