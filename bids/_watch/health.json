@@ -1,25 +1,26 @@
 {
-  "checked_at": "2026-11-18T00:35:44+00:00",
+  "checked_at": "2026-11-18T01:36:03+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
+      "blind": true,
+      "carried_forward": true,
       "count": 666,
       "creds": {
         "BIDNET_PASS": true,
         "BIDNET_USER": true
       },
-      "errors": [],
+      "down_runs": 1,
+      "down_since": "2026-11-18T01:36:03+00:00",
+      "errors": [
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
       "last_success": "2026-11-18T00:35:44+00:00",
-      "logged_in": true,
-      "login_note": "session reused",
+      "logged_in": false,
+      "login_note": "",
       "matches": 82,
-      "reach_note": "HTTP 200",
-      "reachable": true,
-      "site_totals": {
-        "statewide AGGREGATE": 223,
-        "statewide BUYER": 444
-      }
+      "reach_note": "TimeoutError: The read operation timed out",
+      "reachable": false
     },
     "bonfire": {
       "count": 2,
@@ -30,7 +31,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-18T00:35:44+00:00",
+      "last_success": "2026-11-18T01:36:03+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +43,7 @@
       "count": 66,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-18T00:35:44+00:00",
+      "last_success": "2026-11-18T01:36:03+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
@@ -76,13 +77,13 @@
     },
     "samgov": {
       "bulk_added": 33,
-      "bulk_note": "bulk file cached 2026-11-17T05:42:22+00:00; 89 matching of 13767 open notices",
+      "bulk_note": "bulk file cached 2026-11-17T05:42:22+00:00; 89 matching (parsed earlier)",
       "count": 93,
       "creds": {
         "SAM_API_KEY": true
       },
       "errors": [],
-      "last_success": "2026-11-18T00:35:44+00:00",
+      "last_success": "2026-11-18T01:36:03+00:00",
       "logged_in": true,
       "login_note": "API key; +33 from the nightly bulk file",
       "matches": 93,
