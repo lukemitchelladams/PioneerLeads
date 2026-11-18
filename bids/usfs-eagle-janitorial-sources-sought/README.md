@@ -24,7 +24,7 @@ of the later solicitation. Draft response: SOURCES-SOUGHT-RESPONSE-DRAFT.md. Cop
 | Contract type / term | Not stated (RFI) |
 | Evaluation method | None (RFI) |
 | Set-aside | SAM: *"No Set aside used"*. Purpose (sec. 1): *"to determine the availability and capability of small businesses and specific socioeconomic categories for a potential set-aside acquisition"*. NAICS 561720 (size standard for 561720 is $22M per the Pagosa RFQ SF-1449; Brown Bison is small) |
-| Status | Drafting the response (2026-11-18) |
+| Status | Response drafted 2026-11-18; 2-page PDF built in private/ (Brown-Bison-RFI-Response-Eagle-Janitorial-DRAFT.pdf, 2 [LUKE:] markers highlighted: experience, employee count). Copy to Luke with the Wed board; HQ sends Fri 11/20 unless Luke overrules by Fri 12:00 MT |
 
 ## Scope (quoted, notice sec. 2)
 *"routine and periodic janitorial services for a federal facility located in Eagle, Colorado. Services may include, but

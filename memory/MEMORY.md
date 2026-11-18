@@ -3043,3 +3043,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 ### 2026-11-18 09:35Z scan (02:35 MT Wed)
 - Container restarted again ~09:35Z (scratchpad survived). Session reused, EXIT 0, push 52fba66. bidnet 674/83 | samgov 104/104 | coloradovss 66/4 | bonfire 2/1 | total 846/192. 0 new, 0 docs, leak grep 0.
 - Gila GRT: Census geocoder puts 188 Airport Rd outside Hurley town limits (Grant County 35017, no incorporated place) -> county remainder rate; aggregator says 6.3125%, confirm on the TRD July 2026 schedule; 7.5% placeholder kept in private/.
+- 09:5xZ Eagle RFI: 2-page PDF built (private/Brown-Bison-RFI-Response-Eagle-Janitorial-DRAFT.pdf via the BGNDRF build_pdf.py; markdown lists need a blank line before them or pandoc runs them together). Two [LUKE:] markers: past commercial janitorial/facilities work, employee count (memory says 1). Attach to the Wed board email to Luke.
