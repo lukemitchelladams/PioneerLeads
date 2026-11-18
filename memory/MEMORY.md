@@ -3027,3 +3027,9 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 ### 2026-11-18 07:35Z scan (00:35 MT Wed)
 - Logged in (session reused), EXIT 0, push 827fd98. bidnet 672/83 | samgov 104/104 | coloradovss 66/4 | bonfire 2/1 (Cloudflare) | total 844/192. 0 new, 0 docs, leak grep 0. New addendum rows only on NO bids (HVAC filters & belts, Littleton doors x2, CU Boulder irrigation).
+
+### 2026-11-18 08:10Z Gila NF electrical opened GO (HQ did it after the agent stalled on a permission prompt 06:11Z)
+- RFQ 127EAX27Q0015 GCAFB/tanker base electrical, Hurley NM: SF-1442 12a bonds NO, 13b offer guarantee not required, site visit Tue 11/24 10:00 OPTIONAL (RSVP 48 h before; sub attendee only), no license in our name (State licensing is an evaluated technical item = sub's NM license), 52.219-14 not listed, 21 days after NTP, due Fri 12/11 12:00 MT by email. Highest-technically-rated, neutral past performance OK. Two lump-sum CLINs. Commits bb1ea87, ca0a234.
+- Staged for Wed 08:30 MT: scratchpad wed/outbox-wed-0830-gila.json = sub ask bcc 2 (WSI Southwest, Beehive Electric; price by 12/02, attendee name by Fri 11/20) + 4 CO questions. Gate PASS.
+- Still to do on Gila: documents-based price in private/, FORMS-CHECKLIST.md, RESPONSE-DRAFT.md (technical approach: schedule, equipment, key personnel, State licensing, safety plan, QC plan); more NM electricians (only 2 with public emails).
+- LESSON: background agents that need Bash can stall overnight on a permission prompt with nobody to answer; check folder mtimes after ~20 min and take the work back.
