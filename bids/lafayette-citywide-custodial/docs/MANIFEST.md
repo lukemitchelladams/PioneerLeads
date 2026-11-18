@@ -11,6 +11,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 - APPENDIX B.extracted.txt
 - APPENDIX C - PRICE SHEET _ 11.5.extracted.txt
 - APPENDIX C - PRICE SHEET _ 11.5.xls
+- Addendum 1 - BidNet posting changes (screenshot from City, 2026-11-17).png
 - RFP-26-33-FM Citywide Custodial Services.docx
 - RFP-26-33-FM Citywide Custodial Services.extracted.txt
 
