@@ -947,6 +947,12 @@
    "match": "1240LP27SSEagleJanitorial|471f6edffb294ecc97ddd4e722e08c92",
    "folder": "bids/usfs-eagle-janitorial-sources-sought",
    "govtribe_ids": []
+  },
+  {
+   "name": "BidNet mirror of S--JANITORIAL SERVICES, Channel Islands NP (NO: Ventura CA, outside our service area; same NO as the SAM.gov notice)",
+   "source": "bidnet",
+   "match": "2723265662|Channel Islands NP",
+   "folder": null
   }
  ]
 }

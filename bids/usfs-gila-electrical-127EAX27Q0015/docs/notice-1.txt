@@ -1,0 +1,33 @@
+SAM.gov Opportunities API v2 record, fetched 2026-11-18 (search solnum=127EAX27Q0015, postedFrom 10/01/2026 to 11/18/2026: totalRecords 1)
+noticeId: e022e329a81747a4b3119b645b6758de
+title: Electrical Upgrades to the GCAFB/Tanker Base/Fire Cache
+solicitationNumber: 127EAX27Q0015
+type: Combined Synopsis/Solicitation
+postedDate: 2026-11-10
+responseDeadLine: 2026-12-11T12:00:00-07:00
+archiveDate: 2026-12-26
+typeOfSetAside: SBA
+typeOfSetAsideDescription: Small Business Set Aside - Total
+naicsCode: 238210
+classificationCode: Z2NZ
+fullParentPathName: AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.Gila National Forest
+active: Yes
+uiLink: https://sam.gov/workspace/contract/opp/e022e329a81747a4b3119b645b6758de/view
+placeOfPerformance: Hurley, NM 88043
+pointOfContact (primary): Melissa Heckenlaible melissa.heckenlaible@usda.gov 
+officeAddress: SILVER CITY, NM 88061
+resourceLinks (downloaded, all HTTP 200):
+  1acb276fd91341b6aba9148fde3fb9ec
+  3a28d327c53b4c289e7c4e38d1d52b10
+  8e6b93d6347c492d9e726a4edde9e51f
+  a544227240714fb8ba9aceacf1cc2b00
+  c446a096fb9c4e3fb81b4018fe50809d
+
+DESCRIPTION (HTML stripped):
+This is a combined synopsis/solicitation for commercial construction items prepared in accordance with the format in FAR Part 12. This announcement constitutes the only solicitation. Quotations are being requested and a separate written solicitation will not be issued.
+
+Solicitation number 127EAX27Q0015 is issued as a Request for Quotation (RFQ) for Electrical Upgrades to the Grant County Aeriel Fire Base and Tanker Cache on the Gila National Forest.
+
+This project consists of furnishing and installing a complete, code-compliant electrical distribution system to support a designated concrete pad area at the tanker base/fire cache, and the upgrade of an existing electrical/motor control panel serving the retardant pumping system. The completed system shall be suitable for continuous outdoor service in a high-use industrial environment and designed for durability, safety, and future expansion.
+
+This acquisition is set-aside for small business concerns. The applicable North American Industry Classification Standard Code is 238210. The small business size standard is $19M. This acquisition is a Total Small Business Set-Aside. All responsible sources may submit a quotation which will be considered by the agency.
