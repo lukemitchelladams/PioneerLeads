@@ -1,13 +1,12 @@
-# Last scan 2026-11-18T16:36:11+00:00
-Logged in: yes (session reused)
-Counts: bidnet 688/85 | samgov 105/105 | coloradovss 67/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 862/195
-New matching bids: 2
-  - bidnet 0000443937 | On-Call Environmental Consulting Services | Weld County | closes 2026-12-11 | brownbison | watched no
-  - bidnet 0000443925 | CM/GC - Estes Park Public Safety Facility | Town of Estes Park | closes 2026-12-22 | brownbison | watched no
+# Last scan 2026-11-18T17:37:36+00:00
+Logged in: yes (attempt 1)
+Counts: bidnet 688/85 | samgov 106/106 | coloradovss 67/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 863/196
+New matching bids: 1
+  - samgov b4eaf5ee986947649e09ee2513f6c234 | Radiant Heating Panel Replacement | VETERANS AFFAIRS, DEPARTMENT OF.VETERANS | closes 2026-11-26 | brownbison | watched yes
+    brief: set-aside: hubzone
 Changes on watched bids: 1
-  - **Grandview Elementary Roof Project** (bidnet): NEW DOCUMENTS (addendum?): Appendix A RFP 27-02 Bid Proposal Form V4.docx, Q&A Document 1.pdf; NEW ADDENDUM No.4 2026-11-18T09:22-07:00: "Addendum Descr
-Documents downloaded: 2
-  - bidnet:0000441189: Appendix A RFP 27-02 Bid Proposal Form V4.docx
-  - bidnet:0000441189: Q_A Document 1.pdf
-Documents skipped (decided NO): 16
+  - **As-Needed Emergency Board Up, Temporary Fencing, and Site Security Services** (bidnet): NEW DOCUMENTS (addendum?): RFP 6706a.pdf; NEW ADDENDUM No.1 2026-11-18T10:05-07:00: "Addendum Description: RFP
+Documents downloaded: 1
+  - bids/lakewood-board-up-fencing: RFP 6706a.pdf
+Documents skipped (decided NO): 18
 Errors: bonfire 1; first: bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network; exit code 0

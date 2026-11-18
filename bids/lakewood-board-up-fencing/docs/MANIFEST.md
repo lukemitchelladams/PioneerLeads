@@ -7,6 +7,7 @@ solicitation references, and whether we hold it. Send ALL in-hand files; name ev
 
 - Insurance Requirements for City of Lakewood.pdf
 - RFP 6706.pdf
+- RFP 6706a.pdf
 
 ## Referenced in the solicitation
 
