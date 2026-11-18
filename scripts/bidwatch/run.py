@@ -21,8 +21,11 @@ Every cycle:
      the detail pass outlived the outer `timeout 1500`: no REPORT.md, the hour's list scan lost.
   4. Diff against the last run: NEW, CHANGED (dates, pre-bid, documents = addenda, BidNet Communication /
      Q & A tab entries on watched bids, BidNet Addendums tab rows = NEW ADDENDUM No.<n> <date> with the start of the
-     posting-change page each links (opened in the logged-in page, at most 3 a scan, saved as _addendum_<n>.txt beside
-     the documents), a BidNet tab the scanner does not know = NEW TAB), CLOSED.
+     posting-change page each links (opened in the logged-in page, at most 2 a scan and once ever, saved as
+     _addendum_<n>.txt beside the documents), a BidNet tab the scanner does not know = NEW TAB), CLOSED. BidNet's extra
+     loads are rationed (bidnet.py "rationing", 2026-11-18 HTTP 403 block): the Addendums tab of a watched bid at most
+     every 6 h, every scan only for a hot bid (GO / GO-IF / EVALUATE due within 14 days, or a changed list row:
+     _WatchSet.addenda_hot), at most 8 extra loads a scan, the watched bids longest-unread first (_extra_rank).
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
      attachments are public and are downloaded from the detail view's Attachment panel without a login). An entry
      decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
@@ -112,6 +115,25 @@ _NO_NAME_RX = re.compile(r"\(\s*(?:NO(?:-BID)?|INFO[ -]ONLY)\b|\([^()]*;\s*INFO[
 _NO_DECISION_RX = re.compile(r"\s*(?:NO(?:\s*BID)?|INFO\s*ONLY)\b")
 
 
+# A bid still being pursued (bidnet.addenda_tab_due: its Addendums tab is read every scan while it is due within ADDENDA_HOT_DAYS):
+# the decision of the pipeline.json row the watchlist entry's folder names when there is one (the hand-kept registry: "GO (HQ
+# default ...)", "GO-IF (...)", "EVALUATE (...)"), else the entry's "decision" field, else a parenthetical in its name opening with
+# the word ("(GO, H2)", "(GO pending docs; ...)", "(EVALUATE; due 11/17)", "(EVALUATE-lean-NO)").
+PIPELINE_FILE = WATCH_DIR / "pipeline.json"
+ADDENDA_HOT_DAYS = 14
+_LIVE_DECISION_RX = re.compile(r"\s*(?:GO(?:[ -]?IF)?|EVALUATE)\b", re.I)
+_LIVE_NAME_RX = re.compile(r"\(\s*(?:GO(?:-IF)?|EVALUATE)\b")
+
+
+def watch_live(entry: dict | None, pipeline_row: dict | None = None) -> bool:
+    """True when watchlist `entry` is GO / GO-IF / EVALUATE: by `pipeline_row`'s decision when it has one, else the entry's
+    "decision" field, else its name's parenthetical (_LIVE_NAME_RX)."""
+    for d in ((pipeline_row or {}).get("decision"), (entry or {}).get("decision")):
+        if isinstance(d, str) and d.strip():
+            return bool(_LIVE_DECISION_RX.match(d))
+    return bool(_LIVE_NAME_RX.search((entry or {}).get("name") or ""))
+
+
 def watch_decided_no(entry: dict | None) -> bool:
     """True when watchlist `entry` is decided NO / NO-BID / INFO ONLY, so run.py does not download its documents. An
     explicit "decision" field (any case; "NO", "no-bid", "NO_BID", "Info only") decides when it is set, so a revived
@@ -128,11 +150,16 @@ class _WatchSet:
     """A bid is watched if its source:id is listed, or its title / solicitation # / URL matches an
     entry's `match` regex (we usually know the solicitation number, not the portal's internal id)."""
 
-    def __init__(self, watch: list[dict]):
+    def __init__(self, watch: list[dict], pipeline: list[dict] | None = None):
         self.by_id = {f"{w['source']}:{w['id']}": w for w in watch if w.get("id") and w.get("source")}
         self.ids = set(self.by_id)
         self.rx = [(w, re.compile(w["match"], re.I)) for w in watch if w.get("match")]
         self.hits: dict[str, str] = {}
+        # pipeline.json rows by bid folder: the decision and due date of a watched bid whose entry names that folder
+        self.pipeline = {str(p["folder"]).rstrip("/"): p for p in pipeline or [] if isinstance(p, dict) and p.get("folder")}
+
+    def _pipeline_row(self, w: dict) -> dict | None:
+        return self.pipeline.get(str(w.get("folder") or "").rstrip("/")) if w.get("folder") else None
 
     def entries(self, b: dict) -> list[dict]:
         """Every watchlist entry that covers bid `b`, the id match first, each once. Every pattern entry that matches is
@@ -163,6 +190,26 @@ class _WatchSet:
         es = self.entries(b)
         return bool(es) and all(watch_decided_no(w) for w in es)
 
+    def addenda_hot(self, b: dict, old: dict | None = None) -> bool:
+        """Whether watched BidNet bid `b` (this scan's list row) gets its Addendums tab read this scan whatever its last read
+        (bidnet.addenda_tab_due): an entry not decided NO that is live (watch_live: GO / GO-IF / EVALUATE) with the bid due within
+        ADDENDA_HOT_DAYS (the list row's closing date, else the pipeline row's due date), or a list row whose closing date or
+        title is not the one of the previous record `old` (the list's only change signal). Never for an entry decided NO."""
+        es = [w for w in self.entries(b) if not watch_decided_no(w)]
+        if not es:
+            return False
+        old = old or {}
+        if (old.get("closing") and b.get("closing") and old["closing"] != b["closing"]) \
+                or (old.get("title") and b.get("title") and _title_key(old["title"]) != _title_key(b["title"])):
+            return True
+        for w in es:
+            row = self._pipeline_row(w)
+            if watch_live(w, row):
+                d = days_until(b.get("closing") or (row or {}).get("due"))
+                if d is not None and 0 <= d <= ADDENDA_HOT_DAYS:
+                    return True
+        return False
+
 
 def _is_open(b: dict) -> bool:
     """BidNet's AGGREGATE tab keeps some long-closed bids listed (a 2021 Pagosa Ranger District notice showed up
@@ -181,7 +228,8 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     started = iso()
     health = health_check(sources)
     watch = load_json(WATCHLIST_FILE, {"bids": []})["bids"]
-    watched_keys = _WatchSet(watch)
+    pipe = load_json(PIPELINE_FILE, {})  # decisions and due dates: which watched BidNet bids are hot (_WatchSet.addenda_hot)
+    watched_keys = _WatchSet(watch, (pipe.get("bids") if isinstance(pipe, dict) else None) or [])
     prev = load_json(OPEN_BIDS_FILE, {"bids": {}})["bids"]
     found: dict[str, dict] = {}
     downloads: dict[str, list[str]] = {}
@@ -569,7 +617,7 @@ def profile_hits(b: dict, profiles: dict) -> list[str]:
 
 
 DETAIL_FIELDS = ("documents", "prebid", "sol", "agency", "closing_text", "items_text", "description",
-                 "communications", "qa", "extra_tabs", "addenda")
+                 "communications", "qa", "extra_tabs", "addenda", bidnet.ADDENDA_READ_AT, bidnet.TABS_READ)
 
 
 def _keep_detail(row: dict, old: dict) -> dict:
@@ -663,6 +711,21 @@ def _addenda_to_read(rec: dict, old: dict) -> list[dict]:
     seen = {_addendum_key(a) for a in old.get("addenda") or []}
     rows = [a for a in rec.get("addenda") or [] if not a.get("text") and int(a.get("tries") or 0) < bidnet.ADDENDUM_TRIES]
     return sorted(rows, key=lambda a: _addendum_key(a) in seen)
+
+
+def _extra_rank(k: str, b: dict, prev: dict, watched_keys, hot: set) -> tuple:
+    """Where watched BidNet bid `b` (key `k`) goes in the detail pass, so the scan's bidnet.MAX_EXTRA_LOADS go to the reads
+    waiting longest: (rank, last Addendums read). Rank 0 = change pages still to open (_addenda_to_read on the previous record,
+    rows with a web link: one without costs no load), 1 = hot (_WatchSet.addenda_hot), 2 = the others, 3 = decided NO; inside a
+    rank, the oldest bidnet.ADDENDA_READ_AT first (never read first), listing order on a tie."""
+    old = prev.get(k) or {}
+    if watched_keys.decided_no(b):
+        rank = 3
+    elif any(str(a.get("href") or "").startswith(("http://", "https://")) for a in _addenda_to_read(old, old)):
+        rank = 0
+    else:
+        rank = 1 if b.get("id") in hot else 2
+    return (rank, str(old.get(bidnet.ADDENDA_READ_AT) or ""))
 
 
 def _addendum_line(a: dict) -> str:
@@ -763,7 +826,19 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
             b["profiles"] = profile_hits(b, profiles)
         # bids that are neither matching nor watched are never opened; the budget goes to what matters first
         todo = [(k, b) for k, b in rows if b["profiles"] or watched_keys.check(b)]
-        todo.sort(key=lambda kb: 0 if watched_keys.check(kb[1]) else 1 if kb[0] not in prev else 2)
+        # BidNet rations the loads beyond the four standard tabs (bidnet "rationing"): the watched bids it must read the
+        # Addendums tab of every scan go on the session, and the watched bids are opened longest-unread first (_extra_rank),
+        # so a load put off by the scan's ceiling comes early next scan
+        rationed = hasattr(mod, "read_addenda")
+        hot: set = set()
+        if rationed:
+            hot = {b["id"] for k, b in todo if watched_keys.check(b) and watched_keys.addenda_hot(b, prev.get(k))}
+            try:
+                ses.addenda_hot = hot
+            except Exception:  # noqa: BLE001 - a session that takes no attributes reads by time only
+                pass
+        todo.sort(key=lambda kb: (0, *(_extra_rank(kb[0], kb[1], prev, watched_keys, hot) if rationed else (0, "")))
+                  if watched_keys.check(kb[1]) else (1 if kb[0] not in prev else 2, 0, ""))
         cut = None
         done = 0
         for k, b in todo:
@@ -801,6 +876,10 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
                 found[k] = _keep_detail(b, old)
                 continue
             b["watched"] = is_w  # BidNet reads the Communication / Q & A tabs for watched bids only
+            if is_w and rationed:
+                for f in (bidnet.ADDENDA_READ_AT, bidnet.TABS_READ):  # what bidnet's rationing decides by (when, which labels)
+                    if old.get(f) and not b.get(f):
+                        b[f] = old[f]
             fresh = False
             try:
                 got = mod.enrich(ses, b)
@@ -872,6 +951,10 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         if stall and not h.get("tab_stall"):
             h["tab_stall"] = stall
             h["errors"].append(stall.get("note") or f"detail tabs stalled on {stall.get('bid')}: later tab reads skipped")
+        # the scan's extra BidNet loads (tab clicks beyond the standard four, change pages) and those put off by the ceiling
+        used, put_off = int(getattr(ses, "extra_loads", 0) or 0), int(getattr(ses, "extra_deferred", 0) or 0)
+        if rationed and (used or put_off):
+            h["extra_loads"] = {"used": used, "max": bidnet.MAX_EXTRA_LOADS, "deferred": put_off}
     finally:
         budget.leave()
     if blocked:

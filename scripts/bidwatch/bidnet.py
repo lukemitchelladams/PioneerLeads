@@ -23,6 +23,10 @@ What it collects every run
      Addendum No. 1 added an optional facility walk): run.py hands read_addenda the rows not read yet (new ones first); it
      opens each in the same logged-in page (at most MAX_ADDENDUM_READS a scan) and saves its text as _addendum_<no>.txt
      beside the documents -> NEW ADDENDUM No.<n> <date>: "<start of the change page>".
+  8. The loads of 6. and 7. are rationed (2026-11-18: the first scan with them was followed by BidNet's load balancer answering
+     HTTP 403 to every request): the Audit tab only with BIDWATCH_BIDNET_READ_AUDIT=1, the Addendums tab at most every
+     ADDENDA_EVERY_H hours a bid (every scan for a bid run.py marks hot), another tab once per label, a change page once ever,
+     and all of them together at most MAX_EXTRA_LOADS a scan (see "rationing" below).
 
 Logins: a saved session that is still logged in is reused at any time. A fresh password login is submitted at most
 once per BIDWATCH_BIDNET_LOGIN_GAP_H hours (default 3), because fresh logins close together trip BidNet's robot
@@ -1115,19 +1119,102 @@ def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str | No
 # in the href's innerTabId= (and in data-ajax-url .../abstract/<id>): notice (the page as served, no innerTabId), categories,
 # docs-items "Documents <n>", communication, questions-answers, docs-request "Document Request List <n>" (the suppliers that
 # requested the documents) and history "Audit". Read for watched bids after the three tabs above (read_extra_tabs): any tab id
-# but the three read above and SKIP_TABS (no files: the page itself, commodity codes, other suppliers' names) is clicked, at most
-# MAX_EXTRA_TABS a bid, through _read_tab (same dialogs, stall and robot-check handling). A tab id not in EXPECTED_TABS (the Audit
+# but the three read above and SKIP_TABS (no files: the page itself, commodity codes, other suppliers' names) is clicked when the
+# rationing below says it is due, at most MAX_EXTRA_TABS a bid, through _read_tab (same dialogs, stall and robot-check handling).
+# A tab id not in EXPECTED_TABS (the Audit
 # tab and the Addendums tab every bid has) also goes on d["extra_tabs"], so run.py reports NEW TAB <name> the first scan that
 # lists it. The first live run (2026-11-18 00:35Z) found "Addendums" (innerTabId=amendment) on all 20 watched bids: it is read
 # first, its rows go to d["addenda"] (parse_addenda) and run.py opens each new row's posting-change page (read_addenda).
 TAB_STRIP_SEL = "#innerTabView a, li.mets-tab a"
 SKIP_TABS = frozenset({"notice", "categories", "docs-request"})
 ADDENDA_TAB = "amendment"
-EXPECTED_TABS = frozenset({"history", ADDENDA_TAB})
+AUDIT_TAB = "history"
+EXPECTED_TABS = frozenset({AUDIT_TAB, ADDENDA_TAB})
 MAX_EXTRA_TABS = 3
 TAB_ID_RX = re.compile(r"^[A-Za-z0-9_-]{1,40}$")  # an id that is safe in a CSS selector and a file name
 TAB_PAGE_PREFIX = "_tab_"  # bids/_watch/downloads/bidnet/<bid id>/_tab_<tab id>.html
 TAB_DOCS_READ = "tab_docs_read"  # enrich's result: the extra tabs whose files were read this scan (run.py pops it, never saved)
+
+# ---------------- rationing the loads beyond the Notice / Documents / Communication / Q & A tabs ----------------
+# The first scan that clicked the other tabs (2026-11-18 00:35Z: Addendums and Audit on ~20 watched bids, then posting-change pages)
+# was followed by BidNet timeouts, and the next hour by HTTP 403 from its AWS load balancer (server: awselb/2.0) on every request
+# from the host: very likely a rate / WAF block (HQ set a 2-hour cool-down). The addenda detection stays; its loads are rationed:
+#   1. the Audit tab (history) is never clicked on a routine scan, only with BIDWATCH_BIDNET_READ_AUDIT=1 (read_audit);
+#   2. the Addendums tab of a bid is clicked at most every ADDENDA_EVERY_H hours (record[ADDENDA_READ_AT]), but every scan for a
+#      bid run.py marks hot (its id in session.addenda_hot: decision GO / GO-IF / EVALUATE and due within 14 days, or a list row
+#      whose closing date or title changed) or whose strip label (name + count badge) is not the one of its last read
+#      (addenda_tab_due); a scan that does not click it keeps last scan's rows (run.py, DETAIL_FIELDS);
+#   3. any other tab is clicked once per label (record[TABS_READ] = {tab id: label when read}): once to save its page and list
+#      its files, again only when its label changes; its files stay on the list meanwhile (run.py _keep_tab_documents);
+#   4. posting-change pages: MAX_ADDENDUM_READS a scan, and one already saved (_addendum_<n>.txt with the same link) is never
+#      opened again, its text is read back from the file (read_addenda);
+#   5. all of the above together: MAX_EXTRA_LOADS a scan, counted on the session (session.extra_loads); a load past it is put
+#      off to the next scan (session.extra_deferred counts them, the record is left as it was), and run.py opens the watched
+#      bids so the ones whose extra reads are oldest go first.
+# Worst case per scan: MAX_EXTRA_LOADS extra page loads (of which at most MAX_ADDENDUM_READS change pages).
+READ_AUDIT_ENV = "BIDWATCH_BIDNET_READ_AUDIT"
+ADDENDA_EVERY_H = 6.0  # hours between two reads of a bid's Addendums tab (unless hot or its label changed)
+ADDENDA_READ_AT = "addenda_read_at"  # record: when its Addendums tab was last read (ISO, UTC)
+TABS_READ = "tabs_read"  # record: {tab id: tab_label} of the extra tabs read, as they were labelled when read
+MAX_EXTRA_LOADS = 8  # extra loads (tab clicks of read_extra_tabs, change pages of read_addenda) a scan, all bids together
+
+
+def read_audit() -> bool:
+    """Whether the Audit (history) tab is clicked: only when BIDWATCH_BIDNET_READ_AUDIT=1 (never on a routine scan)."""
+    return os.environ.get(READ_AUDIT_ENV, "").strip() == "1"
+
+
+def tab_label(t: dict) -> str:
+    """A strip tab's label as the rationing compares it: its name, and its count badge when it has one ("Addenda (1)")."""
+    return f"{t['name']} ({t['count']})" if t.get("count") else t["name"]
+
+
+def extra_loads_left(session) -> int:
+    """How many extra loads the scan (one PortalSession) still has under MAX_EXTRA_LOADS."""
+    return max(0, MAX_EXTRA_LOADS - int(getattr(session, "extra_loads", 0) or 0))
+
+
+def _take_extra_load(session) -> bool:
+    """Count one extra load (an extra tab click, a change page) against the scan's MAX_EXTRA_LOADS. False when the ceiling is
+    spent: nothing may be loaded, session.extra_deferred counts it, the next scan takes it."""
+    if extra_loads_left(session) <= 0:
+        session.extra_deferred = int(getattr(session, "extra_deferred", 0) or 0) + 1
+        return False
+    session.extra_loads = int(getattr(session, "extra_loads", 0) or 0) + 1
+    return True
+
+
+def _hours_since(stamp, now: dt.datetime) -> float | None:
+    """Hours from ISO `stamp` (UTC when it names no zone) to `now`; None when it is missing or not a timestamp."""
+    try:
+        t = dt.datetime.fromisoformat(str(stamp or ""))
+    except ValueError:
+        return None
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=dt.timezone.utc)
+    return (now - t).total_seconds() / 3600
+
+
+def addenda_tab_due(session, bid: dict, label: str | None = None, now: dt.datetime | None = None) -> bool:
+    """Whether the Addendums tab of `bid` is clicked this scan: run.py marked the bid hot (its id in session.addenda_hot), the
+    tab's strip `label` is not the one it had when last read (bid[TABS_READ]), or its last read (bid[ADDENDA_READ_AT]) is missing
+    or ADDENDA_EVERY_H hours old or more."""
+    if (bid.get("id") or "") in (getattr(session, "addenda_hot", None) or ()):
+        return True
+    was = (bid.get(TABS_READ) or {}).get(ADDENDA_TAB)
+    if label is not None and was is not None and was != label:
+        return True
+    h = _hours_since(bid.get(ADDENDA_READ_AT), now or dt.datetime.now(dt.timezone.utc))
+    return h is None or h >= ADDENDA_EVERY_H
+
+
+def _extra_tab_due(session, bid: dict, t: dict) -> bool:
+    """Whether strip tab `t` (not a known one, not in SKIP_TABS) is clicked this scan (rationing rules 1-3 above)."""
+    if t["id"] == ADDENDA_TAB:
+        return addenda_tab_due(session, bid, tab_label(t))
+    if t["id"] == AUDIT_TAB:
+        return read_audit()
+    return (bid.get(TABS_READ) or {}).get(t["id"]) != tab_label(t)
 
 
 def _current_tab(page) -> str:
@@ -1146,9 +1233,10 @@ def _tab_id(a) -> str:
 
 
 def parse_tab_strip(html: str) -> list[dict]:
-    """The detail page's tabs, in strip order: [{id, name}]. The name is the anchor's text without its count badge
-    ("Documents<span class=tabCount>1</span>" -> "Documents"). Anchors inside #innerTabContent (a link in a tab's own text)
-    and disabled tabs are not tabs; ids that are not plain ([A-Za-z0-9_-]) are dropped."""
+    """The detail page's tabs, in strip order: [{id, name}], plus "count" when the tab has a count badge. The name is the
+    anchor's text without that badge ("Documents<span class=tabCount>1</span>" -> "Documents", count "1"). Anchors inside
+    #innerTabContent (a link in a tab's own text) and disabled tabs are not tabs; ids that are not plain ([A-Za-z0-9_-]) are
+    dropped."""
     soup = BeautifulSoup(html, "lxml")
     itc = soup.select_one("#innerTabContent")
     out, seen = [], set()
@@ -1160,9 +1248,10 @@ def parse_tab_strip(html: str) -> list[dict]:
         if not tid or tid in seen:
             continue
         seen.add(tid)
+        count = _txt(a.select_one(".tabCount"))
         for t in a.select(".tabCount, .accessibility-hidden, svg"):
             t.decompose()
-        out.append({"id": tid, "name": _txt(a) or (a.get("title") or "").strip() or tid})
+        out.append({"id": tid, "name": _txt(a) or (a.get("title") or "").strip() or tid, **({"count": count} if count else {})})
     return out
 
 
@@ -1212,21 +1301,28 @@ def _stash_tab_page(session, bid: dict, tab_id: str, fragment: str) -> None:
 
 
 def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: bool) -> None:
-    """Watched bids, logged in, after the Documents / Communication / Q & A tabs: every other tab on the strip of `page_html`
-    (the detail page as served) but SKIP_TABS, the Addendums tab first, then unknown ones, at most MAX_EXTRA_TABS. Each is
-    clicked through _read_tab (a stall skips it and every later tab read of the scan; a robot check raises Challenged), its page
-    kept for download_docs and its files added to d["documents"] (tagged with the tab id; the tab id goes on d[TAB_DOCS_READ])
-    when `merge_docs` (the Documents tab was read, or the page has none: a list without the tab's own files must not replace
-    last scan's). The Addendums tab's rows (or those of another tab named for addenda) go to d["addenda"] (parse_addenda). Tabs
-    outside EXPECTED_TABS go on d["extra_tabs"] whether or not they could be read, for run.py's NEW TAB line."""
+    """Watched bids, logged in, after the Documents / Communication / Q & A tabs: the other tabs on the strip of `page_html`
+    (the detail page as served) but SKIP_TABS that are due this scan (_extra_tab_due: the Addendums tab every ADDENDA_EVERY_H
+    hours or when hot, another tab once per label, the Audit tab only with BIDWATCH_BIDNET_READ_AUDIT=1), the Addendums tab
+    first, then unknown ones, at most MAX_EXTRA_TABS a bid and while the scan's MAX_EXTRA_LOADS last. Each is clicked through
+    _read_tab (a stall skips it and every later tab read of the scan; a robot check raises Challenged), its page kept for
+    download_docs and its files added to d["documents"] (tagged with the tab id; the tab id goes on d[TAB_DOCS_READ]) when
+    `merge_docs` (the Documents tab was read, or the page has none: a list without the tab's own files must not replace last
+    scan's); only then is the tab marked read for its label (d[TABS_READ]). The Addendums tab's rows (or those of another tab
+    named for addenda) go to d["addenda"] (parse_addenda) and its read time to d[ADDENDA_READ_AT]. Tabs outside EXPECTED_TABS
+    go on d["extra_tabs"] whether or not they were clicked, for run.py's NEW TAB line."""
     tabs = [t for t in parse_tab_strip(page_html) if t["id"] not in TAB_PROOF and t["id"] not in SKIP_TABS]
     unknown = [t for t in tabs if t["id"] not in EXPECTED_TABS]
     if unknown:
         d["extra_tabs"] = [{"id": t["id"], "name": t["name"]} for t in unknown]
+    due = [t for t in tabs if _extra_tab_due(session, bid, t)]
+    seen = dict(bid.get(TABS_READ) or {})
     # strip order inside each group (sorted is stable): the Addendums tab, the unknown ones, the Audit tab
-    for t in sorted(tabs, key=lambda t: 0 if t["id"] == ADDENDA_TAB else 2 if t["id"] in EXPECTED_TABS else 1)[:MAX_EXTRA_TABS]:
+    for t in sorted(due, key=lambda t: 0 if t["id"] == ADDENDA_TAB else 2 if t["id"] == AUDIT_TAB else 1)[:MAX_EXTRA_TABS]:
         if tab_stalled(session):
             break
+        if not _take_extra_load(session):
+            continue  # the scan's ceiling is spent: this tab waits for the next scan (nothing marked read)
         try:
             th = _read_tab(session, bid, t["id"], tab_selector(t["id"]), None, t["name"], lenient=True)
         except Challenged:
@@ -1238,12 +1334,14 @@ def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: boo
         if not frag:
             continue
         _stash_tab_page(session, bid, t["id"], frag)
+        if t["id"] == ADDENDA_TAB:
+            d[ADDENDA_READ_AT] = iso()  # its rows are known as of now, whatever happens to the files below
         if (t["id"] == ADDENDA_TAB or ADDENDA_RX.search(t["name"])) and not d.get("addenda"):
             rows = parse_addenda(frag, bid.get("url") or "")
             if rows:  # none (an empty tab, "No entries"): nothing stored, run.py keeps last scan's rows
                 d["addenda"] = rows
         if not merge_docs:
-            continue
+            continue  # its files are not known this scan: the tab stays unread for its label and is clicked again next scan
         have = {x["name"] for x in d.get("documents") or []}
         add = []
         for x in tab_documents(frag, bid.get("url") or "", whole=bool(ADDENDA_RX.search(f"{t['id']} {t['name']}"))):
@@ -1253,8 +1351,10 @@ def read_extra_tabs(session, bid: dict, page_html: str, d: dict, merge_docs: boo
         if add:
             d["documents"] = list(d.get("documents") or []) + add
         # this tab's files are known this scan (run.py pops the list): a tagged file missing from it was removed; one from a tab
-        # NOT in it (stalled, past the cap) is kept from last scan, or its next read would call it NEW DOCUMENTS again
+        # NOT in it (not due, stalled, past a cap) is kept from last scan, or its next read would call it NEW DOCUMENTS again
         d.setdefault(TAB_DOCS_READ, []).append(t["id"])
+        seen[t["id"]] = tab_label(t)
+        d[TABS_READ] = dict(seen)
 
 
 def save_tab_pages(session, bid: dict) -> list[str]:
@@ -1285,7 +1385,7 @@ def save_tab_pages(session, bid: dict) -> list[str]:
 ADDENDUM_NO_RX = re.compile(r"(?:addend\w*|amendment)\s*(?:no\.?|number|#)?\s*(\d+)\b", re.I)
 STAMP_RX = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})\s+(\d{1,2}):(\d{2})\s*([AP]M)\b(?:\s+([A-Z]{2,4})\b)?", re.I)
 TZ_OFFSET_H = {"MST": -7, "MDT": -6, "CST": -6, "CDT": -5, "EST": -5, "EDT": -4, "PST": -8, "PDT": -7, "UTC": 0, "GMT": 0}
-MAX_ADDENDUM_READS = 3  # change pages opened per scan (a PortalSession lives one scan); run.py hands the new rows first
+MAX_ADDENDUM_READS = 2  # change pages opened per scan (a PortalSession lives one scan); run.py hands the new rows first
 ADDENDUM_TRIES = 3  # a change page that failed this often is not opened again (its row was reported all the same)
 ADDENDUM_TEXT_MAX = 2000  # characters of the page's text kept on the row (open_bids.json); the file keeps ADDENDUM_FILE_MAX
 ADDENDUM_FILE_MAX = 100000
@@ -1384,22 +1484,48 @@ def _login_secrets(session) -> tuple:
     return tuple(v for v in (c or ()) if v)
 
 
+def saved_addendum_text(bid: dict, row: dict) -> str | None:
+    """The change-page text an earlier read_addenda saved for `row` (addendum_path, written for the same link), or None. Such a
+    page is never opened again."""
+    p = addendum_path(bid, row)
+    try:
+        if not p.is_file():
+            return None
+        head, _, text = p.read_text(errors="ignore").partition("\n\n")  # "Addendum No. <n> (<date>)\n<link>\n\n<text>\n"
+    except OSError:
+        return None
+    lines = head.splitlines()
+    if len(lines) < 2 or lines[1].strip() != (row.get("href") or "").strip():
+        return None
+    return text.strip("\n") or None
+
+
 def read_addenda(session, bid: dict, rows: list[dict], stop=None) -> int:
-    """Open the posting-change page of each addendum row in `rows` (rows of bid["addenda"], changed in place) in the scan's
-    logged-in page, in the order given, at most MAX_ADDENDUM_READS a scan (counted on the session), none once `stop()` says the
-    scan's detail budget is spent or a tab read of the scan stalled. A page that renders gives its row "text" (addendum_text, cut
-    to ADDENDUM_TEXT_MAX) and is saved as addendum_path(bid, row) (a file whose content did not change is left alone); one that
+    """Give each addendum row in `rows` (rows of bid["addenda"], changed in place) the text of its posting-change page, in the
+    order given. A page saved by an earlier scan (saved_addendum_text: same link) is read back from its file and never opened
+    again. Any other is opened in the scan's logged-in page, at most MAX_ADDENDUM_READS a scan (counted on the session) and
+    while the scan's MAX_EXTRA_LOADS last, none once `stop()` says the scan's detail budget is spent or a tab read of the scan
+    stalled (the rows left wait for the next scan). A page that renders gives its row "text" (addendum_text, cut to
+    ADDENDUM_TEXT_MAX) and is saved as addendum_path(bid, row) (a file whose content did not change is left alone); one that
     fails (HTTP error, the login form, nothing to read) only adds a try on the row ("tries"), which run.py reports all the same.
     A page that does not load in TAB_WAIT_MS is a stall like a tab's (session.tab_stall: the scan's other tab reads are skipped);
     a robot check raises Challenged. A row without a link, or whose link is a file (read_extra_tabs lists those as documents), is
-    skipped. Returns the pages read."""
+    skipped. Returns the rows that got their text (from the page or its saved file)."""
     page = session.page
     done = 0
     for a in rows:
-        if tab_stalled(session) or (stop is not None and stop()) or getattr(session, "addenda_reads", 0) >= MAX_ADDENDUM_READS:
-            break
         href = a.get("href") or ""
         if not href.startswith(("http://", "https://")) or DOC_LINK_RX.search(href):
+            continue
+        saved = saved_addendum_text(bid, a)
+        if saved:  # opened and saved on an earlier scan: no load
+            a["text"] = saved[:ADDENDUM_TEXT_MAX]
+            a.pop("tries", None)
+            done += 1
+            continue
+        if tab_stalled(session) or (stop is not None and stop()) or getattr(session, "addenda_reads", 0) >= MAX_ADDENDUM_READS:
+            continue  # a later row may still have its page saved
+        if not _take_extra_load(session):
             continue
         session.addenda_reads = getattr(session, "addenda_reads", 0) + 1
         a["tries"] = int(a.get("tries") or 0) + 1

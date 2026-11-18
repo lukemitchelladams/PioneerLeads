@@ -457,6 +457,248 @@ check("the Addendums and Audit tabs are never a NEW TAB line (on every bid; 20 l
       and _run_early._diff({"title": "x"}, {"title": "x", "extra_tabs": [{"id": "amendment", "name": "Addendums"}, {"id": "history", "name": "Audit"},
                                                                          {"id": "award", "name": "Award"}]}) == ["NEW TAB Award"]
       and {"amendment", "history"} <= bidnet.EXPECTED_TABS)
+
+# 2026-11-18: the first scan with the extra tabs (Addendums + Audit on ~20 watched bids, then change pages) was followed by BidNet
+# timeouts and HTTP 403 from its load balancer (awselb/2.0) on every request. The extra loads are rationed (bidnet "rationing").
+# Stubs only (no browser, no sleeps): bidnet._read_tab is replaced by a fake that records each click and returns the tab's page.
+print("BidNet extra-load rationing (2026-11-18 HTTP 403 block after the first extra-tab scan)")
+import datetime as _rdt  # noqa: E402
+import types as _rty  # noqa: E402
+
+_rnow = _rdt.datetime.now(_rdt.timezone.utc)
+
+
+def _rago(h: float) -> str:
+    return (_rnow - _rdt.timedelta(hours=h)).isoformat(timespec="seconds")
+
+
+def _rstrip(award: str = "Award") -> str:
+    """A detail page's strip: the four standard tabs, the no-file ones, Audit, Addendums and an unknown "Award" tab."""
+    tabs = [("categories", "Categories"), ("docs-items", "Documents<span class='tabCount'>2</span>"), ("communication", "Communication"),
+            ("questions-answers", "Q &amp; A"), ("docs-request", "Document Request List<span class='tabCount'>9</span>"),
+            ("history", "Audit"), ("amendment", "Addendums"), ("award", award)]
+    return "<ul id='innerTabView'>" + "".join(f"<li class='mets-tab enabled'><a href='?innerTabId={i}'>{n}</a></li>" for i, n in tabs) + "</ul>"
+
+
+_rclicks: list = []
+
+
+def _rfake_read_tab(session, bid, tab_id, tab_sel, ready_sel, tag, lenient=False):
+    _rclicks.append((bid.get("id"), tab_id))
+    if tab_id == "amendment":
+        return _am1_html
+    return f"<div id='innerTabContent'><input id='currentTabId' type='hidden' value='{tab_id}'><p>{tag} tab</p></div>"
+
+
+def _rread(session, bid, strip=None, merge=True) -> dict:
+    d = {}
+    bidnet.read_extra_tabs(session, bid, strip or _rstrip(), d, merge)
+    return d
+
+
+_r_real_read_tab, _r_real_dl = bidnet._read_tab, bidnet.DOWNLOAD_DIR
+bidnet._read_tab = _rfake_read_tab
+bidnet.DOWNLOAD_DIR = TMP / "rationing-downloads"  # read_addenda's saved pages; never the repo's downloads folder
+os.environ.pop(bidnet.READ_AUDIT_ENV, None)
+try:
+    _rs = _rty.SimpleNamespace()
+    _rd = _rread(_rs, {"id": "r1", "url": _LAF})
+    check("rationing 1 + first sight: a watched bid never read clicks the Addendums tab (rows + read time stored) and the unknown Award tab "
+          "(marked read under its label); the Audit tab is never clicked by default; 2 extra loads counted",
+          _rclicks == [("r1", "amendment"), ("r1", "award")] and _rd.get("addenda") == _am1
+          and bidnet._hours_since(_rd.get(bidnet.ADDENDA_READ_AT), _rdt.datetime.now(_rdt.timezone.utc)) < 0.1
+          and _rd.get(bidnet.TABS_READ) == {"amendment": "Addendums", "award": "Award"} and _rs.extra_loads == 2
+          and not bidnet.read_audit() and _rd.get("extra_tabs") == [{"id": "award", "name": "Award"}], (_rclicks, _rd))
+    _rclicks.clear()
+    _rseen = {"amendment": "Addendums", "award": "Award"}
+    _rd = _rread(_rs, {"id": "r1", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(1), bidnet.TABS_READ: _rseen})
+    check("rationing 2 + 3: the next scan inside ADDENDA_EVERY_H (read 1 h ago) clicks nothing: Addendums skipped by time, Award read once "
+          "already under the same label, Audit off; nothing stored (run.py carries the rows and the read time)",
+          _rclicks == [] and "addenda" not in _rd and bidnet.ADDENDA_READ_AT not in _rd and bidnet.TABS_READ not in _rd
+          and _rs.extra_loads == 2 and _rd.get("extra_tabs") == [{"id": "award", "name": "Award"}], (_rclicks, _rd))
+    _rd = _rread(_rs, {"id": "r1", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(6.5), bidnet.TABS_READ: _rseen})
+    _rd2 = _rread(_rs, {"id": "r2", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(1), bidnet.TABS_READ: _rseen}, _rstrip("Award<span class='tabCount'>1</span>"))
+    check("rationing 2 + 3: read 6.5 h ago, the Addendums tab is clicked again (Award still not); the Award tab is clicked again only "
+          "when its label changes (a count badge appears) and is stored under the new label",
+          _rclicks == [("r1", "amendment"), ("r2", "award")] and _rd.get("addenda") == _am1
+          and _rd2.get(bidnet.TABS_READ) == {"amendment": "Addendums", "award": "Award (1)"} and "addenda" not in _rd2, (_rclicks, _rd2))
+    _rclicks.clear()
+    _rs.addenda_hot = {"r3"}
+    _rd = _rread(_rs, {"id": "r3", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(0.5), bidnet.TABS_READ: _rseen})
+    _rd4 = _rread(_rs, {"id": "r4", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(0.5), bidnet.TABS_READ: {**_rseen, "amendment": "Addendums (1)"}})
+    check("rationing 2: a bid run.py marks hot (session.addenda_hot) gets its Addendums tab every scan, read 30 min ago or not; so does one "
+          "whose Addendums label is not the one of its last read",
+          _rclicks == [("r3", "amendment"), ("r4", "amendment")] and _rd.get("addenda") == _am1, _rclicks)
+    _rclicks.clear()
+    os.environ[bidnet.READ_AUDIT_ENV] = "1"
+    _rd = _rread(_rty.SimpleNamespace(), {"id": "r5", "url": _LAF, bidnet.ADDENDA_READ_AT: _rago(1), bidnet.TABS_READ: _rseen})
+    os.environ.pop(bidnet.READ_AUDIT_ENV)
+    check("rationing 1: the Audit tab only with BIDWATCH_BIDNET_READ_AUDIT=1 (then every scan, last of the bid's tabs)",
+          _rclicks == [("r5", "history")] and _rd.get(bidnet.TABS_READ, {}).get("history") == "Audit" and not bidnet.read_audit(), _rclicks)
+    _rclicks.clear()
+    _rd = _rread(_rty.SimpleNamespace(), {"id": "r6", "url": _LAF}, merge=False)
+    check("a tab read while the Documents tab did not load (its files not merged) is not marked read: clicked again next scan; the "
+          "Addendums rows and read time are kept all the same",
+          _rclicks == [("r6", "amendment"), ("r6", "award")] and bidnet.TABS_READ not in _rd and _rd.get("addenda") == _am1
+          and _rd.get(bidnet.ADDENDA_READ_AT), _rd)
+    _rclicks.clear()
+    _rs = _rty.SimpleNamespace(extra_loads=bidnet.MAX_EXTRA_LOADS - 1)
+    _rd = _rread(_rs, {"id": "r7", "url": _LAF})
+    check("rationing 5: one load left under MAX_EXTRA_LOADS (8): the Addendums tab takes it, the Award tab is put off (counted in "
+          "extra_deferred, not marked read: the next scan clicks it); then nothing at all is clicked",
+          bidnet.MAX_EXTRA_LOADS == 8 and _rclicks == [("r7", "amendment")] and _rs.extra_loads == 8 and _rs.extra_deferred == 1
+          and _rd.get(bidnet.TABS_READ) == {"amendment": "Addendums"} and bidnet.extra_loads_left(_rs) == 0
+          and _rread(_rs, {"id": "r8", "url": _LAF}) == {"extra_tabs": [{"id": "award", "name": "Award"}]} and _rclicks == [("r7", "amendment")]
+          and _rs.extra_deferred == 3, (_rclicks, _rd, vars(_rs)))
+    check("addenda_tab_due: never read or a bad stamp = due; 5 h 59 min = not; 6 h = due; a label differing from the stored one = due",
+          bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x"}) and bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x", bidnet.ADDENDA_READ_AT: "soon"})
+          and not bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x", bidnet.ADDENDA_READ_AT: "2026-11-18T06:01:00+00:00"}, "Addendums",
+                                         now=_rdt.datetime(2026, 11, 18, 12, 0, tzinfo=_rdt.timezone.utc))
+          and bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x", bidnet.ADDENDA_READ_AT: "2026-11-18T06:00:00+00:00"}, "Addendums",
+                                     now=_rdt.datetime(2026, 11, 18, 12, 0, tzinfo=_rdt.timezone.utc))
+          and bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x", bidnet.ADDENDA_READ_AT: _rago(1), bidnet.TABS_READ: {"amendment": "Addendums"}},
+                                     "Addendums (2)")
+          and not bidnet.addenda_tab_due(_rty.SimpleNamespace(), {"id": "x", bidnet.ADDENDA_READ_AT: _rago(1), bidnet.TABS_READ: {"amendment": "Addendums"}},
+                                         "Addendums"))
+
+    # rationing 4: posting-change pages, MAX_ADDENDUM_READS (2) a scan, never re-opened once saved (stub page; nothing loads)
+    class _RPage:
+        def __init__(self):
+            self.gotos = []
+
+        def goto(self, url, **kw):
+            self.gotos.append(url)
+            return _rty.SimpleNamespace(ok=True)
+
+        def wait_for_timeout(self, ms):
+            pass
+
+        def wait_for_load_state(self, *a, **kw):
+            pass
+
+        def content(self):
+            return _dsyn
+
+    _rp = _RPage()
+    _rs = _rty.SimpleNamespace(page=_rp)
+    _rb = {"id": "0000999001"}
+    _rrows = [{"no": i, "date": f"d{i}", "href": _DIFF1[:-1] + str(i)} for i in (1, 2, 3)]
+    _rn = bidnet.read_addenda(_rs, _rb, _rrows)
+    check("rationing 4: at most MAX_ADDENDUM_READS (2) change pages a scan: No.1 and No.2 opened and saved, No.3 untouched (no try), each "
+          "a counted extra load",
+          bidnet.MAX_ADDENDUM_READS == 2 and _rn == 2 and _rp.gotos == [_DIFF1, _DIFF1[:-1] + "2"] and _rs.extra_loads == 2
+          and [bool(a.get("text")) for a in _rrows] == [True, True, False] and "tries" not in _rrows[2]
+          and bidnet.addendum_path(_rb, _rrows[0]).is_file() and bidnet.addendum_path(_rb, _rrows[1]).is_file(), (_rn, _rp.gotos, _rrows))
+    _rp2 = _RPage()
+    _rs2 = _rty.SimpleNamespace(page=_rp2)
+    _rrows2 = [{k: v for k, v in a.items() if k != "text"} for a in _rrows[:2]] + [dict(_rrows[2])]
+    _rm = bidnet.addendum_path(_rb, _rrows[0]).stat().st_mtime_ns
+    _rn = bidnet.read_addenda(_rs2, _rb, _rrows2)
+    check("rationing 4: a later scan never re-opens a saved change page (_addendum_<n>.txt with the same link): No.1 and No.2 get their "
+          "text back from the files with no load and no rewrite; only No.3 is opened",
+          _rn == 3 and _rp2.gotos == [_DIFF1[:-1] + "3"] and _rs2.extra_loads == 1 and getattr(_rs2, "addenda_reads", 0) == 1
+          and [a.get("text") for a in _rrows2[:2]] == [a["text"] for a in _rrows[:2]]
+          and bidnet.addendum_path(_rb, _rrows[0]).stat().st_mtime_ns == _rm, (_rn, _rp2.gotos))
+    _rp3 = _RPage()
+    _rr4 = [{"no": 1, "date": "d1-revised", "href": _DIFF1[:-1] + "9"}, {"no": 4, "date": "d4", "href": _DIFF1[:-1] + "4"}]
+    _rs3 = _rty.SimpleNamespace(page=_rp3, extra_loads=bidnet.MAX_EXTRA_LOADS - 1)
+    _rn = bidnet.read_addenda(_rs3, _rb, _rr4)
+    check("a saved No.1 file for another link is not that page (opened); with one load left under the ceiling, No.4 is put off: not "
+          "opened, no try counted, extra_deferred 1",
+          _rn == 1 and _rp3.gotos == [_DIFF1[:-1] + "9"] and _rs3.extra_deferred == 1 and "tries" not in _rr4[1] and not _rr4[1].get("text"),
+          (_rn, _rp3.gotos, vars(_rs3)))
+finally:
+    bidnet._read_tab, bidnet.DOWNLOAD_DIR = _r_real_read_tab, _r_real_dl
+    os.environ.pop(bidnet.READ_AUDIT_ENV, None)
+
+# run.py's side: which bids are hot (GO / GO-IF / EVALUATE due within 14 days, or a changed list row), the order the detail pass
+# opens watched bids in (longest-unread first) and the per-scan ceiling across bids, through _enrich_and_download with a stub module
+_rin = lambda n: (_rdt.date.today() + _rdt.timedelta(days=n)).isoformat()  # noqa: E731
+_rws = _run_early._WatchSet(
+    [{"name": "A (GO; HQ 11/17)", "source": "bidnet", "id": "1"}, {"name": "B (EVALUATE, recommend NO)", "source": "bidnet", "id": "2"},
+     {"name": "C (NO: not our trade)", "source": "bidnet", "id": "3"}, {"name": "D", "source": "bidnet", "id": "4", "folder": "bids/d"},
+     {"name": "E (EVALUATE)", "source": "bidnet", "id": "5", "folder": "bids/e/"}, {"name": "F", "source": "bidnet", "id": "6", "decision": "GO-IF"},
+     {"name": "G", "source": "bidnet", "id": "7"}],
+    [{"folder": "bids/d", "decision": "GO-IF (pre-bid not mandatory)", "due": _rin(5) + "T17:00:00-07:00"},
+     {"folder": "bids/e", "decision": "SUBMITTED (2026-11-16)"}])
+_rhot = lambda i, closing, old=None, title="t": _rws.addenda_hot({"source": "bidnet", "id": i, "title": title, "closing": closing}, old)  # noqa: E731
+check("hot (Addendums tab every scan): GO / EVALUATE in the name, GO-IF in the decision field or in the pipeline row the entry's folder "
+      "names, due within 14 days (the list row's closing, else the pipeline row's due date); not past 14 days or past due; never decided NO; "
+      "a pipeline decision (SUBMITTED) overrules the name's EVALUATE; no decision at all is not hot",
+      _rhot("1", _rin(10)) and _rhot("2", _rin(0)) and _rhot("6", _rin(14)) and _rhot("4", None) and not _rhot("4", _rin(20))
+      and not _rhot("1", _rin(15)) and not _rhot("1", _rin(-1)) and not _rhot("3", _rin(3)) and not _rhot("5", _rin(3))
+      and not _rhot("7", _rin(3)) and _run_early.watch_live({"name": "x (GO pending docs; MANDATORY prebid)"})
+      and not _run_early.watch_live({"name": "x (DECIDE; walk 10/29)"}) and not _run_early.watch_live({"name": "x (CRM-tracked)"}))
+check("hot: the list row's own change signal, a closing date or title not the previous record's, whatever the decision (never decided NO)",
+      _rhot("7", _rin(30), {"closing": _rin(25), "title": "t"}) and _rhot("7", _rin(30), {"closing": _rin(30), "title": "old title"})
+      and not _rhot("7", _rin(30), {"closing": _rin(30), "title": "T "}) and not _rhot("3", _rin(30), {"closing": _rin(25)}))
+_rprev = {f"bidnet:{i}": {"source": "bidnet", "id": str(i), "title": f"Watched HVAC bid 26-77 lot {i}", "closing": _rin(30),
+                          bidnet.ADDENDA_READ_AT: _rago(h), bidnet.TABS_READ: {"award": "Award"}}
+          for i, h in ((31, 7), (32, 30), (33, 9), (34, 12), (35, 8), (36, 20), (37, 10), (38, 11), (39, 6.2))}
+_rprev["bidnet:40"] = {"source": "bidnet", "id": "40", "title": "Watched HVAC bid 26-77 lot 40", "closing": _rin(30),
+                       bidnet.TABS_READ: {"award": "Award"}}  # never read
+_rprev["bidnet:41"] = {**_rprev["bidnet:31"], "id": "41", "title": "Watched HVAC bid 26-77 lot 41", "closing": _rin(9),
+                       bidnet.ADDENDA_READ_AT: _rago(1)}  # hot (GO, due in 9 days), read an hour ago
+_rprev["bidnet:42"] = {**_rprev["bidnet:31"], "id": "42", "title": "Watched HVAC bid 26-77 lot 42", bidnet.ADDENDA_READ_AT: _rago(2)}
+_rprev["bidnet:43"] = {**_rprev["bidnet:31"], "id": "43", "title": "Watched flooring bid lot 43", bidnet.ADDENDA_READ_AT: _rago(40)}
+_rws2 = _run_early._WatchSet([{"name": "w", "source": "bidnet", "match": "26-77"},
+                              {"name": "lot 41 (GO)", "source": "bidnet", "match": "lot 41"},
+                              {"name": "lot 43 (NO: not ours)", "source": "bidnet", "match": "lot 43"}])
+_rreads: list = []
+
+
+def _rmod_read_addenda(ses, b, rows, stop=None):
+    _rreads.append(b["id"])
+    return 0
+
+
+def _rmod_enrich(ses, b):
+    d = {}
+    bidnet.read_extra_tabs(ses, b, _rstrip(), d, True)
+    return {**b, **d, "detail_checked": True}
+
+
+_rmod = _rty.SimpleNamespace(enrich=_rmod_enrich, read_addenda=_rmod_read_addenda)
+bidnet._read_tab = _rfake_read_tab
+try:
+    _rclicks.clear()
+    _rses = _rty.SimpleNamespace(logged_in=True)
+    _rfound = {k: {kk: v[kk] for kk in ("source", "id", "title", "closing")} | {"url": "u"} for k, v in _rprev.items()}
+    _rh = {"errors": []}
+    _run_early._enrich_and_download(_rses, _rmod, _rfound, "bidnet", profiles, _rws2, _rprev, True, {}, _rh, budget=_run_early._DetailBudget(600))
+    _rorder = [i for i, t in _rclicks]
+    check("rationing 5 across bids: 13 watched bids, 12 of them with the Addendums tab due; the scan clicks 8 (MAX_EXTRA_LOADS): the hot "
+          "one first (read 1 h ago), then the longest-unread (never read, 30 h, 20 h, 12 h, 11 h, 10 h, 9 h); the 8 h / 7 h / 6.2 h ones are "
+          "put off (they keep their read time); the bid read 2 h ago is not due; the decided-NO one (40 h) comes last and is put off too",
+          _rorder == ["41", "40", "32", "36", "34", "38", "37", "33"] and all(t == "amendment" for i, t in _rclicks)
+          and _rh.get("extra_loads") == {"used": 8, "max": 8, "deferred": 4} and _rses.addenda_hot == {"41"}
+          and all(_rfound[f"bidnet:{i}"].get(bidnet.ADDENDA_READ_AT) == _rprev[f"bidnet:{i}"][bidnet.ADDENDA_READ_AT] for i in (35, 31, 39, 42, 43))
+          and all(_rfound[f"bidnet:{i}"].get(bidnet.ADDENDA_READ_AT, "") > _rago(0.1) for i in _rorder)
+          and all(_rfound[f"bidnet:{i}"].get(bidnet.TABS_READ, {}).get("award") == "Award" for i in _rorder + ["35", "42"]), (_rorder, _rh))
+    _rclicks.clear()
+    _rprev2 = _rfound  # this scan's records are the next scan's previous ones
+    _rfound2 = {k: {kk: v[kk] for kk in ("source", "id", "title", "closing")} | {"url": "u"} for k, v in _rprev.items()}
+    _rh2 = {"errors": []}
+    _rses2 = _rty.SimpleNamespace(logged_in=True)
+    _run_early._enrich_and_download(_rses2, _rmod, _rfound2, "bidnet", profiles, _rws2, _rprev2, True, {}, _rh2, budget=_run_early._DetailBudget(600))
+    check("the next scan (a new session, a fresh ceiling): the hot bid again, then the bids put off last time, longest-unread first (8 h, "
+          "7 h, 6.2 h), then the decided-NO one; those read last scan are not due",
+          [i for i, t in _rclicks] == ["41", "35", "31", "39", "43"] and _rh2.get("extra_loads") == {"used": 5, "max": 8, "deferred": 0},
+          (_rclicks, _rh2))
+    _rprev3 = {"bidnet:50": {"source": "bidnet", "id": "50", "title": "Watched HVAC bid 26-77 lot 50", bidnet.ADDENDA_READ_AT: _rago(1),
+                             "addenda": [{"no": 1, "date": "d1", "href": _DIFF1}]},
+               "bidnet:51": {"source": "bidnet", "id": "51", "title": "Watched HVAC bid 26-77 lot 51"},
+               "bidnet:52": {"source": "bidnet", "id": "52", "title": "Watched HVAC bid 26-77 lot 52", bidnet.ADDENDA_READ_AT: _rago(1),
+                             "addenda": [{"no": 1, "date": "d1", "href": None}]}}
+    check("_extra_rank: a bid with a change page still to open goes before a never-read one (a row without a link does not count: it "
+          "costs no load); decided NO last; DETAIL_FIELDS carry the read time and the labels through a scan that does not read the bid",
+          sorted(["bidnet:52", "bidnet:51", "bidnet:50"], key=lambda k: _run_early._extra_rank(k, _rprev3[k], _rprev3, _rws2, set()))
+          == ["bidnet:50", "bidnet:51", "bidnet:52"]
+          and _run_early._extra_rank("bidnet:43", _rprev["bidnet:43"], _rprev, _rws2, set())[0] == 3
+          and _run_early._keep_detail({"source": "bidnet", "id": "34"}, _rprev["bidnet:34"]).get(bidnet.ADDENDA_READ_AT) == _rprev["bidnet:34"][bidnet.ADDENDA_READ_AT]
+          and {bidnet.ADDENDA_READ_AT, bidnet.TABS_READ} <= set(_run_early.DETAIL_FIELDS))
+finally:
+    bidnet._read_tab = _r_real_read_tab
 bf = bonfire.parse_list_json(_json.loads((FX / "bonfire_parker_open.json").read_text()), "parkeronline")
 p28 = [r for r in bf if r["sol"] == "26-028"]
 check("real bonfire list: 4 Parker opportunities", len(bf) == 4, len(bf))
@@ -991,12 +1233,12 @@ class H(http.server.BaseHTTPRequestHandler):
                     "<li><a href='?innerTabId=questions-answers'>Q &amp; A</a></li></ul>"
                     "<select hidden><option data-ajax-url='/public/solicitations/9745843859/abstract/communication'>Communication</option></select>")
             extra = os.environ.get("FAKE_EXTRA_TAB")  # "1" = the strip also has the live site's other tabs plus an Addenda tab
-            if extra:
+            if extra:  # "stall": its badge reads 2, a new label, so a bid that read the tab before clicks it again
                 tabs = tabs.replace("</ul>", "<li class='mets-tab enabled'><a href='?innerTabId=categories'>Categories</a></li>"
                                     "<li class='mets-tab enabled'><a href='?innerTabId=docs-request'>Document Request List"
                                     "<span class='tabCount'>50</span></a></li><li class='mets-tab enabled'><a href='?innerTabId=history'>"
                                     "Audit</a></li><li class='mets-tab enabled'><a href='?innerTabId=addenda'>Addenda"
-                                    "<span class='tabCount'>1</span></a></li></ul>")
+                                    f"<span class='tabCount'>{2 if extra == 'stall' else 1}</span></a></li></ul>")
             amend = os.environ.get("FAKE_AMENDMENT_TAB")
             if amend:
                 tabs = tabs.replace("</ul>", "<li class='mets-tab enabled'><a href='?innerTabId=amendment'>Addendums</a></li></ul>")
@@ -1294,7 +1536,7 @@ b.close()
 from scripts.bidwatch import run  # noqa: E402
 
 run.samgov_bulk.URL = "http://127.0.0.1:1/no-bulk-file-in-tests"  # part 5 serves a fake one
-for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE", "LAST_SCAN_FILE"]:
+for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE", "LAST_SCAN_FILE", "PIPELINE_FILE"]:
     setattr(run, name, TMP / f"{name}.json")
 LAST_SCAN = TMP / "LAST_SCAN_FILE.json"
 (TMP / "WATCHLIST_FILE.json").write_text('{"bids":[{"name":"Littleton 2126","source":"bidnet","match":"\\\\b2126\\\\b"}]}')
@@ -2030,10 +2272,12 @@ _e = bidnet.enrich(s15, {**_bid, "watched": True})
 _dt = time.time() - _t0
 _xd = [d for d in _e.get("documents") or [] if d.get("tab")]
 check("unknown Addenda tab on a watched bid: clicked after Communication and Q & A (each still read once), its file joins the document "
-      "list tagged with the tab, the tab in extra_tabs; the Audit tab read too but not listed; Categories / Document Request List never clicked",
-      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and HITS2["extra"] == _x0 + 2 and HITS2["skip"] == _k0
+      "list tagged with the tab, the tab in extra_tabs and marked read under its label; the Audit tab not clicked (no "
+      "BIDWATCH_BIDNET_READ_AUDIT); Categories / Document Request List never clicked",
+      HITS2["comm"] == _c0 + 1 and HITS2["qa"] == _q0 + 1 and HITS2["extra"] == _x0 + 1 and HITS2["skip"] == _k0
       and [(d["name"], d["tab"], d["url"]) for d in _xd] == [("Addendum 1 - Scope Clarification.pdf", "addenda", BASE + "/dl/addendum-tab1.pdf")]
       and "RFQ.pdf" in [d["name"] for d in _e["documents"]] and _e.get("extra_tabs") == [{"id": "addenda", "name": "Addenda"}]
+      and _e.get(bidnet.TABS_READ) == {"addenda": "Addenda (1)"} and getattr(s15, "extra_loads", 0) == 1
       and _e.get("communications") and (_e.get("qa") or {}).get("items") and not getattr(s15, "tab_stall", None) and _dt < 30,
       (_e, HITS2, _dt))
 _xdl = TMP / "downloads" / "bidnet" / "0000500002"
@@ -2041,12 +2285,12 @@ for _f in ("Addendum 1 - Scope Clarification.pdf", "_tab_addenda.html", "_tab_hi
     (_xdl / _f).unlink(missing_ok=True)
 _xgot = bidnet.download_docs(s15, _e)
 _xtp = _xdl / "_tab_addenda.html"
-check("download_docs: the tab's file lands in the bid's download folder like the others; the Addenda and Audit pages are saved as "
-      "_tab_<innerTabId>.html (not returned as documents), the Addenda page with its file link and currentTabId, without the _csrf token",
+check("download_docs: the tab's file lands in the bid's download folder like the others; the Addenda page is saved as "
+      "_tab_<innerTabId>.html (not returned as a document) with its file link and currentTabId, without the _csrf token; no Audit page",
       (_xdl / "Addendum 1 - Scope Clarification.pdf").read_bytes().startswith(b"%PDF") and any(g.endswith("Scope Clarification.pdf") for g in _xgot)
       and not any("_tab_" in g for g in _xgot) and _xtp.is_file() and "attachmentDownloadLnk_9990001" in _xtp.read_text()
       and 'value="addenda"' in _xtp.read_text() and "fake-csrf-token" not in _xtp.read_text()
-      and "Addendum published" in (_xdl / "_tab_history.html").read_text(), (_xgot, sorted(x.name for x in _xdl.iterdir())))
+      and not (_xdl / "_tab_history.html").exists(), (_xgot, sorted(x.name for x in _xdl.iterdir())))
 _x0 = HITS2["extra"]
 _e = bidnet.enrich(s15, _bid)
 check("an unwatched match never clicks the other tabs, lists none and adds no tab file",
@@ -2115,11 +2359,12 @@ check("read_addenda opens the change page once and saves its text as _addendum_1
 _m1 = _ap.stat().st_mtime_ns
 _ar5 = [{k: v for k, v in _ar[0].items() if k != "text"}] + [{"no": i, "date": f"2026-11-2{i}", "href": _D + str(i)} for i in range(2, 6)]
 _n = bidnet.read_addenda(s17, _e, _ar5)
-check("at most MAX_ADDENDUM_READS (3) change pages a scan, counted on the session: two more here, the rest untouched (no try counted); "
-      "an unchanged page's file is not rewritten",
-      bidnet.MAX_ADDENDUM_READS == 3 and _n == 2 and HITS2["diff"] == _df0 + 3 and [bool(a.get("text")) for a in _ar5] == [True, True, False, False, False]
-      and not any("tries" in a for a in _ar5) and (_xdl / "_addendum_2.txt").is_file() and not (_xdl / "_addendum_3.txt").exists()
-      and _ap.stat().st_mtime_ns == _m1 and "Addendum No. 2" in (_xdl / "_addendum_2.txt").read_text(), (_n, _ar5, HITS2))
+check("at most MAX_ADDENDUM_READS (2) change pages a scan, counted on the session: one more here, the rest untouched (no try counted); "
+      "No.1, saved before, gets its text back from _addendum_1.txt without a load and the file is not rewritten",
+      bidnet.MAX_ADDENDUM_READS == 2 and _n == 2 and HITS2["diff"] == _df0 + 2 and [bool(a.get("text")) for a in _ar5] == [True, True, False, False, False]
+      and _ar5[0]["text"] == _ar[0]["text"] and not any("tries" in a for a in _ar5) and (_xdl / "_addendum_2.txt").is_file()
+      and not (_xdl / "_addendum_3.txt").exists() and _ap.stat().st_mtime_ns == _m1
+      and "Addendum No. 2" in (_xdl / "_addendum_2.txt").read_text() and s17.extra_loads == 3, (_n, _ar5, HITS2))
 s17.close()
 s18 = PortalSession(b4, "bidnet", bidnet.login, bidnet.is_logged_in, bidnet.CREDS)
 s18.ensure_login()
@@ -2247,19 +2492,23 @@ r22 = run.scan(["bidnet"])
 _d22 = r22["changed"].get(_W, {}).get("diffs", [])
 _rep22 = (TMP / "REPORT_FILE.json").read_text()
 check("full scan, first sight of the Addenda tab: its file is a NEW DOCUMENTS line and the tab a NEW TAB line on the watched bid, in "
-      "REPORT.md and LAST_SCAN.md; the file is downloaded and the tab pages saved",
+      "REPORT.md and LAST_SCAN.md; the file is downloaded and the tab page saved (the Audit tab is not read: no page)",
       "NEW DOCUMENTS (addendum?): Addendum 1 - Scope Clarification.pdf" in _d22 and "NEW TAB Addenda" in _d22
       and not any("Audit" in x for x in _d22)
       and "NEW DOCUMENTS (addendum?): Addendum 1 - Scope Clarification.pdf; NEW TAB Addenda" in _rep22 and "NEW TAB Addenda" in LAST_SCAN.read_text()
       and any(f.endswith("Addendum 1 - Scope Clarification.pdf") for f in r22["downloads"].get(_W, []))
-      and (_xdl / "_tab_addenda.html").is_file() and (_xdl / "_tab_history.html").is_file()
-      and bidnet.TAB_DOCS_READ not in r22["found"][_W], (_d22, r22["downloads"]))
+      and (_xdl / "_tab_addenda.html").is_file() and not (_xdl / "_tab_history.html").exists()
+      and bidnet.TAB_DOCS_READ not in r22["found"][_W] and r22["found"][_W].get(bidnet.TABS_READ) == {"addenda": "Addenda (1)"},
+      (_d22, r22["downloads"]))
 _m22 = (_xdl / "_tab_addenda.html").stat().st_mtime_ns
+_x22 = HITS2["extra"]
 r23 = run.scan(["bidnet"])
 _d23 = r23["changed"].get(_W, {}).get("diffs", [])
-check("next scan, same tab: neither line again, nothing downloaded again, the unchanged tab page not rewritten",
+check("next scan, same tab: not clicked again (read once per label), neither line again, nothing downloaded again, the tab page not "
+      "rewritten, its file still listed",
       not any(x.startswith(("NEW TAB", "NEW DOCUMENTS")) for x in _d23) and "NEW TAB" not in (TMP / "REPORT_FILE.json").read_text()
-      and not r23["downloads"].get(_W) and (_xdl / "_tab_addenda.html").stat().st_mtime_ns == _m22
+      and not r23["downloads"].get(_W) and (_xdl / "_tab_addenda.html").stat().st_mtime_ns == _m22 and HITS2["extra"] == _x22
+      and any(d.get("tab") == "addenda" for d in r23["found"][_W].get("documents") or [])
       and (r23["found"][_W].get("extra_tabs") or [{}])[0].get("id") == "addenda", (_d23, r23["downloads"]))
 _wl_x = (TMP / "WATCHLIST_FILE.json").read_text()
 (TMP / "WATCHLIST_FILE.json").write_text(json.dumps({"bids": [{"name": "Littleton 2126 (NO: test, not our trade)", "source": "bidnet",
@@ -2267,7 +2516,7 @@ _wl_x = (TMP / "WATCHLIST_FILE.json").read_text()
 for _f in ("Addendum 1 - Scope Clarification.pdf", "_tab_addenda.html", "_tab_history.html"):
     (_xdl / _f).unlink(missing_ok=True)
 r24 = run.scan(["bidnet"])
-check("decided NO: the tabs are still read for the report, but no tab page and no tab file is written to the public downloads folder",
+check("decided NO: the tab's file is still listed for the report, but no tab page and no tab file is written to the public downloads folder",
       not (_xdl / "_tab_addenda.html").exists() and not (_xdl / "_tab_history.html").exists()
       and not (_xdl / "Addendum 1 - Scope Clarification.pdf").exists() and not r24["downloads"].get(_W)
       and any(d.get("tab") == "addenda" for d in r24["found"][_W].get("documents") or []), sorted(x.name for x in _xdl.iterdir()))
@@ -2283,8 +2532,8 @@ _h25 = r25["health"]["bidnet"]
 os.environ["FAKE_EXTRA_TAB"] = "1"
 r26 = run.scan(["bidnet"])
 _d26 = r26["changed"].get(_W, {}).get("diffs", [])
-check("full scan, the Addenda tab stalls: the scan finishes (stall note once, degraded), the tab's file stays listed; the next good scan "
-      "reports neither the file nor the tab again",
+check("full scan, the Addenda tab's label changes (badge 1 -> 2) so it is clicked again, and stalls: the scan finishes (stall note once, "
+      "degraded), the tab's file stays listed; the next good scan reports neither the file nor the tab again",
       (_h25.get("tab_stall") or {}).get("tab") == "Addenda" and sum(e.startswith("BidNet detail tabs stalled: the Addenda tab") for e in _h25["errors"]) == 1
       and run.run_status(r25["health"])["exit_code"] == 3 and _dt25 < 120
       and any(d.get("tab") == "addenda" for d in r25["found"][_W].get("documents") or []) and _W not in r25["changed"]
@@ -2307,15 +2556,21 @@ check("full scan, first sight of the Addendums tab: one NEW ADDENDUM No.1 line w
       and HITS2["diff"] == _df0 + 1 and (_xdl / "_addendum_1.txt").is_file()
       and (r27["found"][_W].get("addenda") or [{}])[0].get("text", "").startswith("Citywide Custodial Services - Addendum No. 1")
       and "Changes published 11/17/2026" in _ob27 and USER not in _ob27 and "5550001234" not in _ob27, (_d27, HITS2))
+_a27 = HITS2["amend"]
 r28 = run.scan(["bidnet"])
-check("next scan, same row: no ADDENDUM line, the change page not opened again, the row keeps its text",
+check("next scan, same row: the Addendums tab not clicked again inside ADDENDA_EVERY_H (bid not hot: due in 21 days, no decision), its "
+      "rows and read time carried; no ADDENDUM line, the change page not opened again, the row keeps its text",
       not any("ADDENDUM" in x for x in r28["changed"].get(_W, {}).get("diffs", [])) and HITS2["diff"] == _df0 + 1
+      and HITS2["amend"] == _a27 and r28["found"][_W].get(bidnet.ADDENDA_READ_AT) == r27["found"][_W].get(bidnet.ADDENDA_READ_AT)
+      and r27["found"][_W].get(bidnet.ADDENDA_READ_AT)
       and r28["found"][_W]["addenda"] == r27["found"][_W]["addenda"], (r28["changed"].get(_W), HITS2))
 os.environ["FAKE_TAB_STALL"] = "1"
 bidnet.TAB_WAIT_MS = 1500
 r29 = run.scan(["bidnet"])
 bidnet.TAB_WAIT_MS = _wait
 del os.environ["FAKE_TAB_STALL"]
+_every_h = bidnet.ADDENDA_EVERY_H
+bidnet.ADDENDA_EVERY_H = 0  # the scans below are minutes apart: read the Addendums tab every scan, as for a hot bid
 os.environ["FAKE_AMENDMENT_TAB"], os.environ["FAKE_DIFF"] = "2", "down"
 r30 = run.scan(["bidnet"])
 _d30 = [x for x in r30["changed"].get(_W, {}).get("diffs", []) if "ADDENDUM" in x]
@@ -2333,6 +2588,7 @@ check("the next scan opens No.2's page again and prints its text once, on its ow
       len(_d31) == 1 and _d31[0].startswith('ADDENDUM No.2 2026-11-19T09:05-07:00 change page: "Citywide Custodial Services - Addendum No. 2 /')
       and (_xdl / "_addendum_2.txt").is_file() and "tries" not in r31["found"][_W]["addenda"][1] and HITS2["diff"] == _df0 + 3
       and not any("ADDENDUM" in x for x in r32["changed"].get(_W, {}).get("diffs", [])), (_d31, HITS2))
+bidnet.ADDENDA_EVERY_H = _every_h
 del os.environ["FAKE_AMENDMENT_TAB"]
 
 _B = _brmod.Browser
