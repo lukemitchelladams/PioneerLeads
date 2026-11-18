@@ -2991,6 +2991,66 @@
    "verdict": "NO",
    "why": "Same out-of-region California job already NO (samgov:167b070b..., 5d8aa269...); amendment only adds a 11/18 site visit in Ventura CA.",
    "at": "2026-11-18T03:25:00Z"
+  },
+  "samgov:471f6edffb294ecc97ddd4e722e08c92": {
+   "name": "USFS Eagle-Holy Cross janitorial Sources Sought 1240LP27SSEagleJanitorial, due 2026-11-23",
+   "verdict": "RESPOND",
+   "why": "HQ 05:35Z: sources-sought response drafted (bids/usfs-eagle-janitorial-sources-sought, gate PASS); HQ sends Fri 11/20 unless Luke overrules by Fri 12:00. No price.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:cfd4d4c711f44c60b66fdaf3661c9f8d": {
+   "name": "VA Pikes Peak Janitorial Base plus 4, due 2026-12-01",
+   "verdict": "NO",
+   "why": "SDVOSB set-aside; already NO (same job as samgov:fa1c9afb...).",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:28287bf2d75d4b988c3926804e5e8665": {
+   "name": "VA Pikes Peak Janitorial Base plus 4, due 2026-12-01",
+   "verdict": "NO",
+   "why": "SDVOSB set-aside; already NO (same job as samgov:fa1c9afb...).",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:2d7674bac656445c87a3c04829772767": {
+   "name": "DLA 30--PULLEY,GROOVE (OH buying office), due 2026-12-02",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: Jones Bearing / dad-company DLA parts are off limits; groove pulley NSN buy.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:c3ce13f118fc4269a492c8727eacdc22": {
+   "name": "DLA 30--PULLEY,GROOVE (OH buying office), due 2026-12-02",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: Jones Bearing / dad-company DLA parts are off limits; groove pulley NSN buy.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:cb80707574f149d2a74b844e2f813441": {
+   "name": "DLA 30--PULLEY,GROOVE (OH buying office), due 2026-12-02",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: Jones Bearing / dad-company DLA parts are off limits; groove pulley NSN buy.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:3928c219880f468f9632ba508ce320ef": {
+   "name": "DLA 30--PULLEY,GROOVE (OH buying office), due 2026-12-02",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: Jones Bearing / dad-company DLA parts are off limits; groove pulley NSN buy.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:67ff8f59f1cb4a5099d76d9c40e03ad3": {
+   "name": "DLA 30--PULLEY,GROOVE (OH buying office), due 2026-12-02",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: Jones Bearing / dad-company DLA parts are off limits; groove pulley NSN buy.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:608f61baec2e4cd1a91f3138dffec13d": {
+   "name": "NAVSUP 30--2-TON CHAIN HOIST N0010426QBJ41, due 2026-12-16",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: product buy outside our trades; no volume case.",
+   "at": "2026-11-18T06:25:00Z"
+  },
+  "samgov:0f1e8554ae134a2db4554e547a2c3f64": {
+   "name": "EAGLE Ft. Carson CO W519TC-27-R-A014, due 2027-01-04",
+   "verdict": "NO",
+   "why": "HQ 05:35Z: 8(a) set-aside; Brown Bison is not 8(a).",
+   "at": "2026-11-18T06:25:00Z"
   }
  },
  "watched": {
@@ -3176,6 +3236,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T05:30:00Z",
+ "last_hourly_check": "2026-11-18T06:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
