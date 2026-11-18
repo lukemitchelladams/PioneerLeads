@@ -1944,6 +1944,26 @@
    "contact": "jsanborn@ios.doi.gov",
    "sub_pricing": "None yet (documents-based price in private/; a written sub price replaces it)",
    "next": "Wed 11/18 08:30 MT: sub ask to 5 firms + CO questions; sub monthly price by Wed 11/25; signable package to Luke by Mon 11/30 (>=48h before any send); send week of 11/23 if signed"
+  },
+  {
+   "id": "usfs-eagle-janitorial-sources-sought",
+   "agency": "USDA Forest Service, CSA Intermountain 4 (Eagle-Holy Cross Ranger District)",
+   "title": "Sources Sought (RFI): Janitorial Services, Eagle CO",
+   "sol": "1240LP27SSEagleJanitorial (SAM.gov 471f6edffb294ecc97ddd4e722e08c92)",
+   "trade": "Janitorial (RFI; no price)",
+   "due": "2026-11-23T17:00:00-07:00",
+   "due_source": "Notice sec. 7 'Responses are due no later than 11/23/2026'; SAM responseDeadLine 2026-11-23T17:00-07:00",
+   "portal": "SAM.gov; response by email to the Contract Specialist, subject 'RFI Response - Janitorial Services - Eagle, CO', 5 pages max",
+   "decision": "RESPOND (HQ 2026-11-18: free RFI; recommend Total Small Business set-aside; HQ sends Fri 11/20 unless Luke overrules by Fri 12:00 MT)",
+   "decision_note": "Surfaced 2026-11-18 05:35Z scan. Market research for a potential set-aside; notice lists WOSB/EDWOSB/SDVOSB/VOSB/HUBZone/SDB/8(a) as categories of interest, none held by Brown Bison, so the response argues for Total SB. NAICS 561720. Draft: bids/usfs-eagle-janitorial-sources-sought/SOURCES-SOUGHT-RESPONSE-DRAFT.md (gate PASS).",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "folder": "bids/usfs-eagle-janitorial-sources-sought",
+   "performer": "Brown Bison prime; Eagle Valley janitorial sub if a solicitation follows",
+   "subs": "None yet (RFI stage)",
+   "contact": "curtis.r.landreth@usda.gov",
+   "sub_pricing": "n/a (no price requested)",
+   "next": "Copy to Luke Wed; HQ sends Fri 11/20; watch SAM.gov for the solicitation"
   }
  ],
  "events": [

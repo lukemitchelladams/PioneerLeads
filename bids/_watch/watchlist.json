@@ -922,6 +922,31 @@
    "match": "140LL027Q0009",
    "folder": "bids/blm-kanab-janitorial-140LL027Q0009",
    "govtribe_ids": []
+  },
+  {
+   "name": "DLA 30--PULLEY,GROOVE x5 (SPE7L327U0071, SPE7LX27U1230, SPE7LX27U1270, SPE7LX27U1310, SPE7LX27U1327; due 2026-12-02) (NO: groove pulleys by NSN, small qty, no drawings; Dad is family and off limits, nothing on record)",
+   "source": "samgov",
+   "match": "SPE7L327U0071|SPE7LX27U1230|SPE7LX27U1270|SPE7LX27U1310|SPE7LX27U1327",
+   "folder": null
+  },
+  {
+   "name": "NAVSUP 30--2-TON CHAIN HOIST N0010426QBJ41, due 2026-12-16 (NO: chain hoist, not a Jones Bearing line; Dad is family and off limits)",
+   "source": "samgov",
+   "match": "N0010426QBJ41|608f61baec2e4cd1a91f3138dffec13d",
+   "folder": null
+  },
+  {
+   "name": "Army EAGLE Ft. Carson W519TC-27-R-A014 (NO: 8(a) set-aside, FAR 19.8; Brown Bison is not 8(a))",
+   "source": "samgov",
+   "match": "W519TC-27-R-A014",
+   "folder": null
+  },
+  {
+   "name": "USFS Eagle-Holy Cross janitorial sources sought 1240LP27SSEagleJanitorial (RESPOND: free RFI, due 2026-11-23 17:00 MT by email; aim = Total Small Business set-aside)",
+   "source": "samgov",
+   "match": "1240LP27SSEagleJanitorial|471f6edffb294ecc97ddd4e722e08c92",
+   "folder": "bids/usfs-eagle-janitorial-sources-sought",
+   "govtribe_ids": []
   }
  ]
 }
