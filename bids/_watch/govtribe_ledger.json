@@ -3087,6 +3087,12 @@
    "verdict": "NO",
    "why": "HQ 17:35Z: HUBZone set-aside; Brown Bison is not HUBZone-certified.",
    "at": "2026-11-18T18:25:00Z"
+  },
+  "bidnet:444240306205": {
+   "name": "BidNet mirror: BAS Controls Mitigation (RRCC), due 2026-12-15",
+   "verdict": "NO",
+   "why": "HQ 18:35Z watchlist NO: mirror of RRCC BAS (already NO-BID on bonding).",
+   "at": "2026-11-18T19:25:00Z"
   }
  },
  "watched": {
@@ -3272,6 +3278,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T18:30:00Z",
+ "last_hourly_check": "2026-11-18T19:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
