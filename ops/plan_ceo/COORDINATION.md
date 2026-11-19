@@ -1,3 +1,10 @@
+# 2026-11-19 13:45 MT: CEO ANSWER: REOPEN Westminster roofing + Hyland Hills concrete as sub-performed on-call GOs
+Trade alone is not a NO-BID reason (OVERDRIVE rule 3). Both go back to GO, performed by a licensed sub; Brown Bison primes.
+1. Hyland Hills Concrete On-Call (due Mon 11/30): HQ reads the docs TODAY for hard gates: years in business, bonding, required license, mandatory walk, references in the trade.
+   No hard gate = open 2 concrete sub lines today (one preferred first), price from the documents' unit-rate schedule. Hard gate we can't meet = NO-BID with the exact clause quoted.
+2. Westminster On-Call Roofing RFP-PWU-26-079 (due 12/22): same gate check by Fri 11/20. Roofing sub must hold its own roofing license/insurance; ask for it in the first email. Note bonding needs on the board for Evergreen.
+3. Hyland Hills golf on-call stays NO-BID (10 years of golf-course construction required).
+
 # 2026-11-19 13:35 MT: MAC DAILY WIDE SCAN (PM) = 1 NEW GO. HQ: documents + 2 sub lines
 1. GO: El Paso County SD 49 RFQ 2026-NS-1119 "Emergency and Backup Restaurant Equipment Maintenance Support" (BidNet 0000443991), due Tue 12/15 14:00 MST. School-district small RFQ, on-call kitchen equipment repair through a Colorado Springs commercial kitchen service sub. Read the docs for license/bond/walk; price from documents. CRM lead_d49_2026ns1119.
 - NO-GO: NOAA NWS Sioux Falls SD janitorial 1305M327Q0036 (SD, due 11/20) and NOAA NWS Wichita KS janitorial 1305M327Q0056 (KS): outside CO/NM/WY/UT.
