@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-19T21:36:12+00:00
+# Bid watch report — 2026-11-19T22:36:08+00:00
 
 **Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); 1 NEW matching bids; not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 674 | BUYER 450, AGGREGATE 225 | 87 | 2026-11-19T21:36:12+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T21:36:12+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (19 h, 20 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T21:36:12+00:00 | 2 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-19T21:36:12+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 673 | BUYER 449, AGGREGATE 225 | 87 | 2026-11-19T22:36:08+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T22:36:08+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (20 h, 21 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T22:36:08+00:00 | 2 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-19T22:36:08+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -26,7 +26,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet |  | Sheriff Patrol Vehicle - 3/4 ton, 4 door, short bed pick up truck. | 2026-12-11 (22d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Sheriff-Patrol-Vehicle-3-4-ton-4-door-short-bed-pick-up-truck/0000444080?purchasingGroupId=8409951&origin=1 |
+| brownbison | bidnet |  | On-Call Electrical Service Support for Water and Sewer | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Electrical-Service-Support-for-Water-and-Sewer/0000444163?purchasingGroupId=8409951&origin=1 |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -46,6 +46,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Jeffco 26-18863AP-FM Dome Glass Replacement (EVALUATE) (bidnet)
 - Elbert County IFB 2026-006 Fencing (EVALUATE) (None)
 - Boettcher Mansion Chiller Replacement (EVALUATE; pre-bid 10/26) (bidnet)
+- On-Call Security Access Control Services (EVALUATE; pre-bid 11/03) (bidnet)
 - CU Boulder UCB001284 RL2 Lighting Upgrades (EVALUATE) (bidnet)
 - Douglas County 036-26 Janitorial Services (EVALUATE) (bidnet)
 - Cherry Creek SD #5 RFP 27-007 District Wide Custodial (NO: 7.5M sq ft, 7-yr custodial history required) (bidnet)
@@ -79,7 +80,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## No longer listed (closed/awarded)
 
-- Mesa County Storage Facility Fire Protection System (bidnet, due 2026-11-19)
+- On-Call Security Access Control Services (bidnet, due 2026-11-19)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -121,7 +122,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (0d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (paid-tier notice) | 2026-11-19 (0d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Janitorial services- Pagsoa Ranger District | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/1d1b8d72c87844289d3efb4990073ded/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view |
@@ -261,6 +261,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--2-TON CHAIN HOIST (place of performance not stated; PA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/49fff837ad1c4b87b96e64679cb00652/view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--2-TON CHAIN HOIST (place of performance not stated; PA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/608f61baec2e4cd1a91f3138dffec13d/view |
 | jones-bearing WATCHED | samgov | HOMELAND SECURITY, DEPARTMENT OF / US CO | BEARING ROLLER (place of performance not stated; VA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view |
+| brownbison | bidnet |  | On-Call Electrical Service Support for Water and Sewer | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Electrical-Service-Support-for-Water-and-Sewer/0000444163?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder - UCB - As-Needed Site Surveyor Professional Services | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB-As-Needed-Site-Surveyor-Professional-Services/0000444020?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder - UCB - As-Needed Materials Testing Professional Services | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB-As-Needed-Materials-Testing-Professional-Services/0000443987?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Speed Cushions | 2026-12-18 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Speed-Cushions/0000444124?purchasingGroupId=8409951&origin=1 |
@@ -291,4 +292,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
 - samgov: SAM_API_KEY not set
-- samgov: down since 2026-11-19T02:35Z (19 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (20 h); previous open bids carried forward
