@@ -238,6 +238,83 @@ check("real page 2026-11-11: a failed tab XHR leaves #ajaxErrorDialog open (blan
 check("a dialog jQuery-UI closed (display: none) is not open; a page without dialogs has none",
       bidnet.dialogs_in("<div class='ui-dialog' role='dialog' style='display: none;'><span class='ui-dialog-title'>Gone</span></div>") == []
       and bidnet.dialogs_in(_docs_html) == [])
+# 2026-11-19 00:35Z/01:35Z: the Documents tab of 0000434357 stopped at a buyer's "Required Acknowledgement" dialog; that set
+# session.tab_stall and skipped every other bid's tabs two scans running. A terms dialog is this bid's gate, not a stall.
+_ack_html = ("<html><body><div class='ui-dialog' role='dialog' aria-describedby='ackDlg'><span class='ui-dialog-title'>Required "
+             "Acknowledgement</span><div id='ackDlg' class='ui-dialog-content'><div class='mets-dialog-window-content'>You must "
+             "acknowledge the following before viewing documents.</div></div></div>"
+             "<div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>"
+             "<a id='docs-items-tab' href='#'>Documents</a></body></html>")
+check("a 'Required Acknowledgement' dialog is a terms gate (by title, or by its text); the login lightbox, the ajax error dialog "
+      "and a page without dialogs are not",
+      bidnet.ack_gate(_ack_html) == "Required Acknowledgement"
+      and bidnet.ack_gate("<div class='ui-dialog' role='dialog'><span class='ui-dialog-title'></span><div class='ui-dialog-content'>"
+                          "Required acknowledgment of terms</div></div>") is not None
+      and bidnet.ack_gate(_dlg_html) is None and bidnet.ack_gate(_err_html) is None and bidnet.ack_gate(_docs_html) is None)
+
+
+class _AckPage:
+    """Just enough of a Playwright page for _read_tab: the tab never renders and the page keeps showing `html`."""
+    def __init__(self, html):
+        self.html = html
+
+    def locator(self, sel):
+        page = self
+
+        class _L:
+            first = None
+
+            def count(self):
+                return 1
+
+            def click(self, timeout=None):
+                return None
+
+            def dispatch_event(self, ev):
+                return None
+        loc = _L()
+        loc.first = loc
+        return loc
+
+    def evaluate(self, js, *a):
+        return []
+
+    def wait_for_selector(self, sel, timeout=None, state=None):
+        raise TimeoutError("tab never came")
+
+    def wait_for_timeout(self, ms):
+        return None
+
+    def wait_for_load_state(self, *a, **k):
+        return None
+
+    def content(self):
+        return self.html
+
+
+class _AckSession:
+    logged_in = True
+
+    def __init__(self, html):
+        self.page = _AckPage(html)
+
+    def debug_dump(self, *a, **k):
+        return None
+
+
+_as = _AckSession(_ack_html)
+_ab = {"id": "0000434357", "title": "Cooling Tower and Air-Cooled Condenser Services"}
+_ar = bidnet._read_tab(_as, _ab, "docs-items", bidnet.DOCS_TAB_SEL, bidnet.ATTACH_SEL, "Documents")
+check("_read_tab on a terms-gated Documents tab: returns None, records the bid on session.ack_required (with the note), and does "
+      "NOT set session.tab_stall, so the next bid's tabs are still read",
+      _ar is None and not bidnet.tab_stalled(_as) and bidnet.ack_gated(_as, _ab) and not bidnet.ack_gated(_as, {"id": "0000999999"})
+      and "Required Acknowledgement" in _as.ack_required["0000434357"] and "does not accept terms" in _as.ack_required["0000434357"],
+      getattr(_as, "ack_required", None))
+_ss = _AckSession("<html><body><div id='innerTabContent'><input id='currentTabId' type='hidden' value='notice'></div>"
+                  "<a id='docs-items-tab' href='#'>Documents</a></body></html>")
+check("_read_tab on a tab that simply never renders (no dialog): still a scan-wide stall, as before",
+      bidnet._read_tab(_ss, _ab, "docs-items", bidnet.DOCS_TAB_SEL, bidnet.ATTACH_SEL, "Documents") is None
+      and bidnet.tab_stalled(_ss) and not getattr(_ss, "ack_required", None))
 _li = ("<table><tr class='mets-table-row'><td><a class='solicitation-link mets-command-link' id='444202844454' "
        "href='/private/supplier/interception/open-notice/444202844454?target=view'>Housing Action Plan</a>"
        "<span class='sol-region-item'>Colorado</span><span class='sol-closing-date'><span class='date-value'>11/10/2026</span></span>"

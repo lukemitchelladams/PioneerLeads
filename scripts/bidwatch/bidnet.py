@@ -794,6 +794,37 @@ def dialogs_in(html: str) -> list[dict]:
     return out
 
 
+# 2026-11-19 00:35Z and 01:35Z: the Documents tab of 0000434357 (Cooling Tower and Air-Cooled Condenser Services) never
+# rendered and the page still showed a "Required Acknowledgement" dialog: that buyer makes each vendor accept terms once before
+# the files show. It is not a BidNet failure, so it must not set session.tab_stall (that skipped every later bid's tabs, two
+# scans running). The scanner never accepts terms for Luke: the bid is marked on session.ack_required and reported.
+ACK_GATE_RX = re.compile(r"\brequired\s+acknowledg", re.I)
+ACK_NOTE = ("documents need a one-time 'Required Acknowledgement' on BidNet (accept it while logged in; the scanner does not "
+            "accept terms for you); this bid's other tabs are skipped until then, the other bids are read as usual")
+
+
+def ack_gate(html: str) -> str | None:
+    """The title of an open dialog asking the vendor to accept terms before the tab shows ("Required Acknowledgement"), else None."""
+    for d in dialogs_in(html):
+        if ACK_GATE_RX.search(d.get("title") or "") or ACK_GATE_RX.search(d.get("text") or ""):
+            return d.get("title") or "Required Acknowledgement"
+    return None
+
+
+def ack_gated(session, bid: dict) -> bool:
+    """True once a tab of `bid` stopped at a terms acknowledgement this scan (ack_gate): its other tabs are not clicked."""
+    return bid.get("id") in (getattr(session, "ack_required", None) or {})
+
+
+def _record_ack(session, bid: dict, tag: str, title: str) -> None:
+    acks = getattr(session, "ack_required", None)
+    if acks is None:
+        acks = {}
+        session.ack_required = acks
+    acks.setdefault(bid.get("id"), f"{(bid.get('title') or bid.get('id') or '')[:60]} ({bid.get('id')}): the {tag} tab "
+                                   f"shows '{title}': {ACK_NOTE}")
+
+
 def dismiss_dialogs(page) -> list[str]:
     """Take down every modal covering the page (names returned, "<title> (removed)" when the page's own close did not work).
     Nothing here raises: a page that is navigating or has no dialogs returns []."""
@@ -1110,6 +1141,10 @@ def _read_tab(session, bid: dict, tab_id: str, tab_sel: str, ready_sel: str | No
         start_cooldown()
         raise Challenged(f"BidNet robot check on the {tag} tab: detail pass stopped, cool-down started")
     if not ready and not tab_rendered(html, tab_id, before=before):
+        gate = ack_gate(html)
+        if gate:  # the buyer's terms dialog, not a BidNet failure: this bid only, no scan-wide stall
+            _record_ack(session, bid, tag, gate)
+            return None
         _record_stall(session, bid, tag, tab_id, html, closed)
         return None
     return html
@@ -1897,7 +1932,7 @@ def enrich(session, bid: dict) -> dict:
             raise
         except Exception:  # noqa: BLE001 - keep the main-tab facts even if the docs tab misbehaves
             session.debug_dump("docs-tab")
-    if session.logged_in and bid.get("watched") and not tab_stalled(session):
+    if session.logged_in and bid.get("watched") and not tab_stalled(session) and not ack_gated(session, bid):
         # only watched bids: two more tab loads per bid would double the detail pass for every match
         try:
             t = _read_tab(session, bid, "communication", COMM_TAB_SEL, COMM_READY_SEL, "Communication")
@@ -1918,7 +1953,7 @@ def enrich(session, bid: dict) -> dict:
             raise
         except Exception:  # noqa: BLE001
             session.debug_dump("qa-tab")
-    if session.logged_in and bid.get("watched"):
+    if session.logged_in and bid.get("watched") and not ack_gated(session, bid):
         # the strip is read from the page as served (no click); the tabs on it the scanner does not know are clicked last
         read_extra_tabs(session, bid, html, d, docs_ok)
     return {**bid, **{k: v for k, v in d.items() if v not in (None, [])}, "detail_checked": True}

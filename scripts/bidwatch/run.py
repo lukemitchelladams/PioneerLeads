@@ -978,6 +978,11 @@ def _enrich_and_download(ses, mod, found, source, profiles, watched_keys, prev, 
         for note in (getattr(ses, "unsafe_saves", None) or [])[:5]:
             if note not in h["errors"]:
                 h["errors"].append(note)
+        # a bid whose tab stopped at the buyer's terms dialog (bidnet.ack_gate): that bid only, not a stall and not degraded;
+        # one line each so the report names the acknowledgement Luke has to accept on BidNet
+        for note in list((getattr(ses, "ack_required", None) or {}).values())[:5]:
+            if note not in h["errors"]:
+                h["errors"].append(note)
         # the scan's extra BidNet loads (tab clicks beyond the standard four, change pages) and those put off by the ceiling
         used, put_off = int(getattr(ses, "extra_loads", 0) or 0), int(getattr(ses, "extra_deferred", 0) or 0)
         if rationed and (used or put_off):

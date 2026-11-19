@@ -1031,12 +1031,11 @@
    "folder": null
   },
   {
-   "name": "Cooling Tower and Air-Cooled Condenser Services (EVALUATE, parked as INFO ONLY 2026-11-19: BidNet shows a 'Required Acknowledgement' gate on its Documents tab, which stalls the scanner's tab reads for every other bid; Luke accepts it once on BidNet, then HQ removes the INFO ONLY decision; due 2026-12-31)",
+   "name": "Cooling Tower and Air-Cooled Condenser Services (EVALUATE: HVAC service, our trade; agency blank on the list; due 2026-12-31; Documents tab is behind a one-time BidNet 'Required Acknowledgement' that Luke accepts; the scanner reports it and reads the other bids)",
    "source": "bidnet",
    "id": "0000434357",
    "match": "0000434357",
-   "folder": null,
-   "decision": "INFO ONLY"
+   "folder": null
   },
   {
    "name": "CU Boulder As-Needed Site Surveyor Professional Services (NO: surveying, not our trade)",
