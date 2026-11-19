@@ -3183,6 +3183,12 @@
    "verdict": "EVALUATE",
    "why": "HQ 9aecb26: janitorial-scope window cleaning (same trade as Aims GO); docs need Luke's BidNet login; watchlisted.",
    "at": "2026-11-19T21:25:00Z"
+  },
+  "bidnet:0000444080": {
+   "name": "Sheriff Patrol Vehicle, 3/4-ton 4-door short-bed pickup (BidNet 0000444080, agency not shown, closes 2026-12-11)",
+   "verdict": "NO",
+   "why": "Vehicle purchase: a new-vehicle sale needs a Colorado motor vehicle dealer license in the seller's name (a disqualifier, OVERDRIVE rule 3), and it is a one-unit commodity buy (rule 9). Not a service Brown Bison can prime.",
+   "at": "2026-11-19T22:25:00Z"
   }
  },
  "watched": {
@@ -3368,6 +3374,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T21:21:00Z",
+ "last_hourly_check": "2026-11-19T22:21:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

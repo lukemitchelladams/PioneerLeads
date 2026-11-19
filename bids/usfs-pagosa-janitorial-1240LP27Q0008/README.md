@@ -22,7 +22,7 @@ under "Go / no-go" below. Brown Bison submits and holds the contract; the sub cl
 | Term / renewals | Base 2027-01-01 to 2027-12-31; Option Years 1-4 through 2031-12-31 (PWS 1.8; Attachment 2). Plus FAR 52.217-8 extension *"for up to six months"*; *"The total duration of this contract shall not exceed five years and six months."* (RFQ p.6-7) |
 | Evaluation method | **LPTA.** *"Award will be made to the responsible offeror whose quotation represents the lowest price technically acceptable offer with acceptable or neutral past performance."* (p.7). *"Only the lowest-priced quotation will be evaluated for technical acceptability and past performance."* (p.10). Factors: 1 Price, 2 Technical Acceptability (acceptable/unacceptable), 3 Past Performance (acceptable/neutral/unacceptable; *"Neutral: The offeror does not have a past performance record."*) |
 | Set-aside | *"SET ASIDE: 100.00 % FOR: SMALL BUSINESS"*, NAICS 561720, size standard $22M (SF-1449 block 10). FAR 52.219-6 Notice of Total Small Business Set-Aside, Nov 2025, incorporated by reference (p.13) |
-| Status | Gathering docs -> **Sub outreach sent 2026-11-05** (see `sub-outreach.md`) |
+| Status | **SUBMITTED 2026-11-19 08:30 MT** by email to the CO (Gmail 1a1f46ebf5d7b7da); **receipt confirmed 2026-11-19 14:46 MT** by Contract Specialist Steve Holly (msg 1a1f5c680105b220). Awaiting award. |
 
 ## Scope summary (quoted)
 
