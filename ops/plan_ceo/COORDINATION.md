@@ -1,3 +1,14 @@
+# 2026-11-19 09:00 MT: CEO DAY PLAN, DOUBLE TIME (Luke: "we need to be on fucking double time here, double productivity")
+- DONE: Pagosa SUBMITTED 08:30 (bid 1 of 2 this week). Buckley Sources Sought drafted by the CEO; the Mac sends it today before 17:00.
+- PSD hoods = bid 2 of 2: the CEO built the final package Mac-side (bids/poudre-sd-kitchen-hood/sign/, gitignored): review pages and every marker removed, form 11.0 v3 in,
+  forms 12.0/13.0 filled, Addendum 1.0 = 10/23/2026. 7.1 HOLD CLEARED: the PFA Minimum Contractor Qualifications Guidebook (read 11/19 via Luke's Chrome) only
+  certifies people who service wet-chemical EXTINGUISHING systems (ANSUL R-102 etc.); IFB Q&A excludes suppression service, so HOODZ's cleaning is not covered.
+  Luke signs with his saved signature on his chat OK; he uploads on BidNet Fri by 14:00.
+- HQ TODAY: (1) build BGNDRF + BLM Kanab to signable-final with ZERO [LUKE]/[HQ] markers left in customer-facing text. Put every question for Luke in the
+  cover email instead; the CEO signs on Luke's OK. (2) Work the 5 new GO from 11/18 (Thornton 337-26, Canon City 167-26, IHS fire doors, Lakewood 6716):
+  documents + 2 sub lines each, today. (3) Week of 11/23 floor = BGNDRF + Kanab, both sent Wed 11/25.
+- RULE (new): signable copies never carry bracketed review notes. Quote PDFs go out exactly as built, so notes belong in the email to Luke, never in the document.
+
 # 2026-11-19 08:30 MT: MAC DAILY WIDE SCAN (06:50-08:20) = 0 NEW GO
 - SAM (CO/NM/WY/UT, 10 NAICS, all set-asides, simplified acquisitions): 30 notices, 0 new since 11/18's sweep.
 - Portals (BidNet statewide, Bonfire/Boulder, CivicPlus x10, Summit, Eagle, FedConnect; PPLD fetch error, Thornton SSL error): 1 new.
