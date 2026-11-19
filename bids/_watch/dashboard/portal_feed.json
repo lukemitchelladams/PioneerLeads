@@ -2642,9 +2642,9 @@
  {
   "key": "bidnet:0000444028",
   "source": "bidnet",
-  "agency": "",
+  "agency": "City of Louisville",
   "title": "2027 Engineering On-Call Services",
-  "sol": "",
+  "sol": "2026-0000444028",
   "closing": "2026-12-18",
   "posted": "2026-11-18",
   "prebid_date": "",
@@ -2680,7 +2680,7 @@
   "prebid_date": "2026-12-02",
   "prebid_mandatory": "Optional",
   "profiles": "brownbison",
-  "watched": false,
+  "watched": true,
   "new_24h": true,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Drake-Water-Reclamation-Facility-Septage-Station/0000443314?purchasingGroupId=8409951&origin=1"
  },
