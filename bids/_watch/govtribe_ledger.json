@@ -3147,6 +3147,18 @@
    "verdict": "NO",
    "why": "Water-reclamation process construction, heavy civil (rule 8). Agrees with HQ.",
    "at": "2026-11-19T01:30:00Z"
+  },
+  "bidnet:2723347772": {
+   "name": "S--Friant Dam Janitorial Services (BidNet paid-tier mirror of SAM 2a2fc3fb...)",
+   "verdict": "NO",
+   "why": "Same Interior/Reclamation sources sought at Friant Dam, California; outside our service area (samgov:2a2fc3fb24344745a8f721dc0307b197 NO).",
+   "at": "2026-11-19T08:30:00Z"
+  },
+  "bidnet:2721870812": {
+   "name": "Radiant Heating Panel Replacement (BidNet paid-tier mirror of VA SAM b4eaf5ee...; closing moved 11/20 -> 11/26)",
+   "verdict": "NO",
+   "why": "Same VA radiant panel job (HUBZone set-aside; Brown Bison is not HUBZone). New 11/26 close matches samgov:b4eaf5ee986947649e09ee2513f6c234.",
+   "at": "2026-11-19T08:30:00Z"
   }
  },
  "watched": {
@@ -3332,6 +3344,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T07:30:00Z",
+ "last_hourly_check": "2026-11-19T08:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
