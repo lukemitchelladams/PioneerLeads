@@ -1,8 +1,4 @@
-# 2026-11-18 20:55 MT: NEW LEAD FOR HQ: Trails Park & Rec District, Spring Creek Park Pavilion Structural Repair (BidNet 0000440811, TPRD SCPRP2026), due 11/30 12:00
-- Inbound sub offer: Christopher Hardman, Granite Property Services LLC (chardman@gpserv.co), emailed Luke's iCloud 11/18 19:46 with itemized lump-sum pricing for the FINISH trades
-  (wood ceiling, pavers, drywall, door, masonry cleaning, gutters/fascia, pressure washing, planting beds). NOT included: shoring, CMU reconstruction, special inspection.
-- HQ triage by Thu 12:00: bid bond / P&P? mandatory walk? license in our name? If bond-gated, fold into the Evergreen ask (with Transfort/IHS).
-- If GO: Granite = finish-trades sub line (reply to his email to request the itemized price); open ONE structural/masonry sub line for shoring + CMU; special inspection is usually the owner's, so check the spec.
+# 2026-11-18 20:58 MT: CORRECTION: Spring Creek Pavilion (0000440811) STAYS NO-BID per bids/_pipeline.md (GC needs 4 yrs continuous operation; mandatory tour 11/04 missed; structural CMU). No HQ work. Log Granite Property Services (Christopher Hardman, chardman@gpserv.co) in the CRM as a finish-trades sub contact for future building-repair bids. Do not reply about this bid.
 
 # 2026-11-18 19:15 MT: PAGOSA IS SIGNED. HQ: STOP asking Luke for Pagosa signatures (your 18:06 email to Luke is superseded)
 - Luke OK'd signing in the CEO chat. SF-1449, Attachment 7 (payroll No, 10+ yrs) and the SF-30 are signed, and the cover letter is signed with his saved signature.
