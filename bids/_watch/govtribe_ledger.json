@@ -3165,6 +3165,12 @@
    "verdict": "NO",
    "why": "Roofing is not a Brown Bison trade (rule 8 trades list); same call as the six earlier roofing NOs (CCC 0000440260, Morgan 0000440968, SMFR x2, Pueblo library, USPS). Agency and walk not readable from the cloud (bidnet blocked); HQ may overrule if the CEO wants on-call roofing as a sub-performed line.",
    "at": "2026-11-19T19:25:00Z"
+  },
+  "bidnet:0000444124": {
+   "name": "On-Call Speed Cushions (BidNet 0000444124, agency not shown, closes 2026-12-18)",
+   "verdict": "NO",
+   "why": "Roadway traffic-calming install (speed cushions) is roadwork/heavy civil, rule 8; not our trades.",
+   "at": "2026-11-19T20:25:00Z"
   }
  },
  "watched": {
@@ -3350,6 +3356,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T19:21:00Z",
+ "last_hourly_check": "2026-11-19T20:21:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

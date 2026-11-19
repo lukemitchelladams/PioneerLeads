@@ -733,3 +733,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - CO Pool Doctor thread 1a1f4f331e31f7a0 still 1 message: HQ/Mac has not replied yet (CEO 3a3e094 says HQ answers today).
 - Sent since 15:36Z: none (nearly 4 h). Mac sub sends queued 09:50-10:30 MT still unsent.
 - No bounces in the last day; no insurance certificate. CEO reply set: nothing new.
+
+## 2026-11-19 20:21Z (13:21 MT) worker hourly
+- Inbound newer_than:2h: nothing new (Weld results + Workspace promo already logged).
+- Sent since 15:36Z: none (~4h45m). Pool Doctor thread 1a1f4f331e31f7a0 still 1 message; HQ wrote the reply body (ops/outbox/2026-11-19/cherrycreek-pooldoctor-reply.txt) for the Mac (849c955). Six other queued Mac sends still out.
+- No bounces; no insurance certificate. CEO reply set: nothing new.
