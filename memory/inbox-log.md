@@ -693,3 +693,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-19 07:21Z tick (worker, read-only): 0 new inbound in 2h; no bounces; no insurance certificate.
 - 2026-11-19 08:21Z tick (worker, read-only): 0 new inbound in 2h; no bounces; no insurance certificate.
 - 2026-11-19 09:21Z tick (worker, read-only): 0 new inbound in 2h; no bounces; no insurance certificate.
+- 2026-11-19 10:21Z tick (worker, read-only): 1 new, automated: 1a1f34e4f0104852 Comcast DMARC aggregate report for brownbisonco.com (no action). No bounces; no insurance certificate.
