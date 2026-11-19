@@ -48,7 +48,9 @@ Paste:
 **Q8. Prevailing wage classification**
 Source: Sample Contract Sec 6.C (contract p.8); Attachment 6 (2026 Building General Wage Decision CO20260020); Pricing Form note "All rates must include Prevailing Wage Rates where required."
 Paste:
-> Which Denver prevailing wage classification will DEN and the Auditor apply to filter replacement and coil cleaning labor (for example Sheet Metal Worker, Pipefitter, Laborer: Common or General, or Building Engineer from Attachment 6)? Or does only the City Minimum Wage apply to this work?
+> Which Denver prevailing wage classification will DEN and the Auditor apply to filter replacement and coil cleaning labor (for example Sheet Metal Worker, Pipefitter, Laborer: Common or General, or Building Engineer from Attachment 6)? Or does only the City Minimum Wage apply to this work? The Auditor's 2026 Clarification Document lists "coils, filters, and plenums" under Sheet Metal Workers (Building Wages 22.a) and "Perform HVAC preventive maintenance and repairs" under Building Engineers (Prevailing Wage Administrator Wages 3.c). Please confirm which governs for this contract, and whether staging filters at the unit may be performed by Laborers.
+
+HQ note 2026-11-19 (not part of the paste): post Q8 FIRST. The pricing model shows this answer is the largest price swing in the bid (figures in private/ only). Citations: Clarification Document (September 2026) p.21 (Sheet Metal Workers 22.a), p.57 (Building Engineers 3), p.17 (Laborers 13.d "Laborers are not helpers").
 
 **Q9. Badging time, fees and escorts**
 Source: Exh A Sec 1(k) (p.2 of 16), Sec 9(1)(a) (p.8 of 16: "all required security escorting, access coordination, and badging"), Sec 12(2) (p.11 of 16).
