@@ -35,3 +35,6 @@ bids/_watch/downloads/bidnet/*/_addendum_*.txt
 
 # Luke-signed forms carry his signature: never commit
 bids/*/sign/
+
+# agent git worktrees (transient)
+.claude/worktrees/
