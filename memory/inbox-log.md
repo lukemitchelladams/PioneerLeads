@@ -715,3 +715,9 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1f46e62147f138 BidNet addendum, Aurora Public Schools B2729 HVAC air filters: ledger NO (rule 9). No action.
   - 1a1f4920391bf519 Yahoo DMARC report.
   - No bounces; no insurance certificate.
+
+## 2026-11-19 17:21Z (10:21 MT) worker hourly
+- Inbound newer_than:2h: 0 new messages. BGNDRF (1a1d708c7a8ea2ad) and Pike's (1a1d5a27ce9f39f5) re-surfaced on label/history changes only; no new messages (counts 3 and 2, unchanged).
+- Sent since 15:36Z: none. The Mac has NOT yet sent the HQ-queued sub emails (Arapahoe second touch + Paint EZ, queued 09:50 MT; IHS sub first touch + CO bond question, 10:10 MT; Thornton/Canon 167-26/Lakewood subs, 10:30 MT).
+- CEO reply set (Arapahoe painters, Kanab subs, BGNDRF sub, HOODZ, Gila electricians, Blue Mind): no replies this hour. No attendee yes.
+- Bounces: none new (Core 3 Drywall delay 1a1f0139cf486fef still the last; final window ~11/20 17:12Z). Insurance certificate: not received.
