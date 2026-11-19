@@ -1059,6 +1059,33 @@
    "folder": null
   },
   {
+   "name": "Hyland Hills 2027 Concrete Removal and Replacement On Call (GO-IF: CEO reopened 11/19; pull the 3 documents; closes 2026-11-30 13:00)",
+   "source": "bidnet",
+   "id": "0000443129",
+   "match": "0000443129|concrete removal and replacement on call",
+   "folder": "bids/hyland-hills-concrete-oncall-2027",
+   "decision": "GO",
+   "govtribe_ids": []
+  },
+  {
+   "name": "City of Westminster RFP-PWU-26-079 On-Call Roofing Services (GO-IF: CEO reopened 11/19; pull the RFP; closes 2026-12-22 16:00)",
+   "source": "bidnet",
+   "id": "0000444110",
+   "match": "0000444110|PWU-26-079",
+   "folder": "bids/westminster-oncall-roofing-pwu-26-079",
+   "decision": "GO",
+   "govtribe_ids": []
+  },
+  {
+   "name": "D49 RFQ 2026-NS-1119 Emergency and Backup Restaurant Equipment Maintenance Support (GO-IF: pull the RFQ; closes 2026-12-15 14:00)",
+   "source": "bidnet",
+   "id": "0000443991",
+   "match": "0000443991|2026-NS-1119",
+   "folder": "bids/d49-restaurant-equipment-2026-ns-1119",
+   "decision": "GO",
+   "govtribe_ids": []
+  },
+  {
    "name": "BidNet 0000444106 Window Cleaning Services (EVALUATE; agency hidden while logged out; due 2026-12-16)",
    "source": "bidnet",
    "id": "0000444106",
