@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-19T22:36:08+00:00
+# Bid watch report — 2026-11-19T23:35:51+00:00
 
-**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 673 | BUYER 449, AGGREGATE 225 | 87 | 2026-11-19T22:36:08+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T22:36:08+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (20 h, 21 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T22:36:08+00:00 | 2 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-19T22:36:08+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 673 | BUYER 451, AGGREGATE 223 | 86 | 2026-11-19T23:35:51+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T23:35:51+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (21 h, 22 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T23:35:51+00:00 | 2 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-19T23:35:51+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -21,12 +21,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | City and County of Denver Department of  | HVAC Air Filter Replacement & Coil Cleaning | 2026-12-04 (15d) | 2026-11-20 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/HVAC-Air-Filter-Replacement-Coil-Cleaning/0000443425?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (20d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (29d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet |  | On-Call Electrical Service Support for Water and Sewer | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Electrical-Service-Support-for-Water-and-Sewer/0000444163?purchasingGroupId=8409951&origin=1 |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -80,7 +74,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## No longer listed (closed/awarded)
 
-- On-Call Security Access Control Services (bidnet, due 2026-11-19)
+- MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (bidnet, due 2026-11-19)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -118,11 +112,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (165)
+## All open matching bids, excluding DIBBS parts RFQs (164)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (paid-tier notice) | 2026-11-19 (0d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Janitorial services- Pagsoa Ranger District | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/1d1b8d72c87844289d3efb4990073ded/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/77f43d75da58449f8d622ac857d2ff4b/view |
@@ -261,7 +254,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--2-TON CHAIN HOIST (place of performance not stated; PA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/49fff837ad1c4b87b96e64679cb00652/view |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--2-TON CHAIN HOIST (place of performance not stated; PA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/608f61baec2e4cd1a91f3138dffec13d/view |
 | jones-bearing WATCHED | samgov | HOMELAND SECURITY, DEPARTMENT OF / US CO | BEARING ROLLER (place of performance not stated; VA buying office) | 2026-12-16 (27d) |  | https://sam.gov/workspace/contract/opp/eea50eb876044089a54c01f641e9c9be/view |
-| brownbison | bidnet |  | On-Call Electrical Service Support for Water and Sewer | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Electrical-Service-Support-for-Water-and-Sewer/0000444163?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet |  | On-Call Electrical Service Support for Water and Sewer | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Electrical-Service-Support-for-Water-and-Sewer/0000444163?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder - UCB - As-Needed Site Surveyor Professional Services | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB-As-Needed-Site-Surveyor-Professional-Services/0000444020?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder - UCB - As-Needed Materials Testing Professional Services | 2026-12-17 (28d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB-As-Needed-Materials-Testing-Professional-Services/0000443987?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | On-Call Speed Cushions | 2026-12-18 (29d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Speed-Cushions/0000444124?purchasingGroupId=8409951&origin=1 |
@@ -292,4 +285,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
 - samgov: SAM_API_KEY not set
-- samgov: down since 2026-11-19T02:35Z (20 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (21 h); previous open bids carried forward
