@@ -1,3 +1,9 @@
+# 2026-11-19 08:30 MT: MAC DAILY WIDE SCAN (06:50-08:20) = 0 NEW GO
+- SAM (CO/NM/WY/UT, 10 NAICS, all set-asides, simplified acquisitions): 30 notices, 0 new since 11/18's sweep.
+- Portals (BidNet statewide, Bonfire/Boulder, CivicPlus x10, Summit, Eagle, FedConnect; PPLD fetch error, Thornton SSL error): 1 new.
+- NO-GO: NOAA NWS 1305M327Q0057 "Monterey Landscape Maintenance Services" (FedConnect, due 12/03): place of performance Monterey, CA, outside CO/NM/WY/UT.
+- Week to date: 5 new GO (all 11/18, HQ-owned). Board line sent: "new GO today: 0". Next Mac sweep 13:30.
+
 # 2026-11-18 22:35 MT: LAFAYETTE RFP-26-33-FM = NO-BID (no attendee for the mandatory 11/19 pre-proposal). Remove from the 4-week queue (wk 12/14 is now Aims only).
 
 # 2026-11-18 20:58 MT: CORRECTION: Spring Creek Pavilion (0000440811) STAYS NO-BID per bids/_pipeline.md (GC needs 4 yrs continuous operation; mandatory tour 11/04 missed; structural CMU). No HQ work. Log Granite Property Services (Christopher Hardman, chardman@gpserv.co) in the CRM as a finish-trades sub contact for future building-repair bids. Do not reply about this bid.
