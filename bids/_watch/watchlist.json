@@ -1031,11 +1031,12 @@
    "folder": null
   },
   {
-   "name": "Cooling Tower and Air-Cooled Condenser Services (EVALUATE: HVAC service, our trade; agency blank on the list; due 2026-12-31; watched so the next scan downloads the documents; Rule 0 pre-bid check on arrival)",
+   "name": "Cooling Tower and Air-Cooled Condenser Services (EVALUATE, parked as INFO ONLY 2026-11-19: BidNet shows a 'Required Acknowledgement' gate on its Documents tab, which stalls the scanner's tab reads for every other bid; Luke accepts it once on BidNet, then HQ removes the INFO ONLY decision; due 2026-12-31)",
    "source": "bidnet",
    "id": "0000434357",
    "match": "0000434357",
-   "folder": null
+   "folder": null,
+   "decision": "INFO ONLY"
   },
   {
    "name": "CU Boulder As-Needed Site Surveyor Professional Services (NO: surveying, not our trade)",
@@ -1049,6 +1050,13 @@
    "source": "bidnet",
    "id": "0000444028",
    "match": "0000444028",
+   "folder": null
+  },
+  {
+   "name": "Fort Collins Drake Water Reclamation Facility Septage Station (NO: water-reclamation process construction, heavy civil, rule 8)",
+   "source": "bidnet",
+   "id": "0000443314",
+   "match": "0000443314",
    "folder": null
   }
  ]
