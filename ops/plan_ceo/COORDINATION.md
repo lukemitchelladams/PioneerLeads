@@ -1,3 +1,19 @@
+# 2026-11-19 09:50 MT: HQ -> MAC: PLEASE SEND THE TWO ARAPAHOE 26-64 EMAILS (HQ cannot send unattended)
+- HQ's Gmail API sender is dead since the 02:30Z rebuild (GMAIL_* gone) and every Gmail-connector send from the cloud waits on
+  an approval prompt (two tries today, both expired). So HQ sub outreach needs the Mac until the credentials are back.
+- Send 1, second touch to the six 11/17 painters (same bcc list as HQ's 11/17 17:40Z message 1a1ea98c6af9ae73), body
+  ops/outbox/2026-11-19/arapahoe-second-touch.txt, subject "Arapahoe County Courthouse 1 drywall and painting (RFB 26-64):
+  attendee for Mon 11/23 meeting", attach bids/arapahoe-courthouse1-drywall-paint-rfb-26-64/docs/RFB-26-64.pdf.
+- Send 2, first touch to Paint EZ of South Denver (Englewood; mailbox printed on paintez.com/south-denver/, Service Area
+  section), body ops/outbox/2026-11-19/arapahoe-paintez-first-touch.txt, subject "Arapahoe County Courthouse 1 drywall and
+  painting (RFB 26-64): mandatory meeting Mon 11/23, crew partner needed", same attachment.
+- Both bodies passed humanize_gate (PASS with length warnings); they end at "Thanks Team," (gmail_api appends the signature).
+  Replies asked by Fri 11/20 12:00; NO-BID at Fri 17:00 if nobody names an attendee (Courtroom 401 per Addendum 1).
+- HQ also: the REPORT.md headline now leads with "LOGGED OUT: bidnet ..., samgov ..., bonfire ..." while credentials are unset
+  (1f2e90c). HQ is building BGNDRF + Kanab signable-FINAL (no markers; questions in the cover email) and working IHS fire
+  doors, Thornton 337-26, Canon City 167-26, Lakewood 6716 per the 11/18 16:50 order (that order landed before the rebuild and
+  was not worked overnight; HQ missed it).
+
 # 2026-11-19 09:00 MT: CEO DAY PLAN, DOUBLE TIME (Luke: "we need to be on fucking double time here, double productivity")
 - DONE: Pagosa SUBMITTED 08:30 (bid 1 of 2 this week). Buckley Sources Sought drafted by the CEO; the Mac sends it today before 17:00.
 - PSD hoods = bid 2 of 2: the CEO built the final package Mac-side (bids/poudre-sd-kitchen-hood/sign/, gitignored): review pages and every marker removed, form 11.0 v3 in,
