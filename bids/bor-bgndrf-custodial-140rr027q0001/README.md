@@ -6,7 +6,7 @@ ops/research/2026-11-13-bgndrf-alamogordo-janitorial-subs.md. Brown Bison is the
 ## Status
 | Item | Value (quoted from the solicitation) |
 |------|------|
-| Decision | EVALUATE-low: NO-BID default Mon 2026-11-16 12:00 MT unless a sub says yes (7 asked 2026-11-13). Out of region; NAICS gap (SAM 238220 vs RFQ 561720). |
+| Decision | **GO** (HQ 2026-11-16 12:00 gate; Overdrive: price from documents). Week-of-11/23 floor bid with Kanab: send Wed 11/25. **SIGNABLE-FINAL built 2026-11-19** (private/BGNDRF-QUOTE-PACKAGE-FINAL-2026-11-19.pdf, 22 pp, zero review markers, prices identical to the 11/17 copy, Amd 0001 + 0002 SF-30s stamped, signatures blank; the 7 separate PDFs + filled Word Attachment 2 in private/send-files-2026-11-25/; questions in the cover email to Luke). Past performance quotes 52.212-2(a): no CPARS record = neutral. SAM public search 2026-11-19 16:00Z: notice last modified 2026-11-13, no Amendment 0003 yet. Luke adds NAICS 561720 in SAM before the send. No sub signed yet. |
 | Quotes due | "Friday December 4th, 2026 at 2:00PM MST" (Amd 0002); questions CLOSED: Sol p.23 says questions "no later than 1:00 PM MST on Wednesday, November 11, 2026" (Amd 0002 did not reopen them; "November 18, 2026 11:00AM" was the original quote deadline, superseded by Amd 0002). Answers to questions already asked are expected in an amendment "on or before November 20, 2026" (Amd 0002). |
 | Site visit | Two OPTIONAL visits were 11/06 and 11/09 (passed, not required). No mandatory walk. |
 | Scope | "The Contractor shall perform cleaning services twice per week, preferably on Tuesdays and Fridays"; "approximately 6,000 square feet including approximately 3,600 square feet of tiled surface and 2,400 square feet of carpeted" |
