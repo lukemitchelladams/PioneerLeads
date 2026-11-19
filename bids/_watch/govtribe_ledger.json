@@ -3123,6 +3123,24 @@
    "verdict": "NO",
    "why": "8(a) set-aside; Brown Bison is not 8(a). Agrees with HQ 22:35Z.",
    "at": "2026-11-18T23:30:00Z"
+  },
+  "bidnet:0000444020": {
+   "name": "CU Boulder - UCB - As-Needed Site Surveyor Professional Services",
+   "verdict": "NO",
+   "why": "Land surveying professional services, not our trade. Agrees with HQ watchlist.",
+   "at": "2026-11-19T00:30:00Z"
+  },
+  "bidnet:0000444028": {
+   "name": "2027 Engineering On-Call Services",
+   "verdict": "NO",
+   "why": "Engineering professional services, not our trade. Agrees with HQ watchlist.",
+   "at": "2026-11-19T00:30:00Z"
+  },
+  "bidnet:0000434357": {
+   "name": "Cooling Tower and Air-Cooled Condenser Services (agency blank on BidNet list; closes 2026-12-31)",
+   "verdict": "EVALUATE",
+   "why": "HVAC service, our trade. Agency, scope and pre-bid not in hand; BidNet says documents need no login; watchlisted by HQ so the next scan files them. Rule 0 check on arrival. Web search 00:2xZ found no copy elsewhere.",
+   "at": "2026-11-19T00:30:00Z"
   }
  },
  "watched": {
@@ -3308,6 +3326,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-18T23:30:00Z",
+ "last_hourly_check": "2026-11-19T00:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
