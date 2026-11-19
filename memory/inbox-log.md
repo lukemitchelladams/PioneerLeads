@@ -726,3 +726,10 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 17:55Z CO Pool Doctor (Chris Lyons VP, cc Jesse Hogue), Cherry Creek pool 27-014, msg 1a1f4f331e31f7a0: IN, wants both at the optional 12/03 09:00 visit, asks for the "guest list". Reply needed (no District RSVP; sign in for Brown Bison; bring own COI). Flagged to MAIN in COORDINATION.md.
 - Sent since 15:36Z: none. Mac sub sends queued 09:50-10:30 MT still unsent.
 - No other inbound; no new bounces; no insurance certificate. CEO reply set (Arapahoe painters, Kanab, BGNDRF, HOODZ, Gila, Blue Mind): nothing new.
+
+## 2026-11-19 19:21Z (12:21 MT) worker hourly
+- 18:43Z BidNet: Weld County B2600111 Jail 1 East Gym RTU bid results published (msg 1a1f51f1352cbf02). We did not bid (DEAD); pricing intel, login to view.
+- 18:47Z Google Workspace promo (1a1f522e7b677029): ignore.
+- CO Pool Doctor thread 1a1f4f331e31f7a0 still 1 message: HQ/Mac has not replied yet (CEO 3a3e094 says HQ answers today).
+- Sent since 15:36Z: none (nearly 4 h). Mac sub sends queued 09:50-10:30 MT still unsent.
+- No bounces in the last day; no insurance certificate. CEO reply set: nothing new.

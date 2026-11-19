@@ -3159,6 +3159,12 @@
    "verdict": "NO",
    "why": "Same VA radiant panel job (HUBZone set-aside; Brown Bison is not HUBZone). New 11/26 close matches samgov:b4eaf5ee986947649e09ee2513f6c234.",
    "at": "2026-11-19T08:30:00Z"
+  },
+  "bidnet:0000444110": {
+   "name": "On-Call Roofing Services (BidNet 0000444110, agency not shown, published 2026-11-19, closes 2026-12-22)",
+   "verdict": "NO",
+   "why": "Roofing is not a Brown Bison trade (rule 8 trades list); same call as the six earlier roofing NOs (CCC 0000440260, Morgan 0000440968, SMFR x2, Pueblo library, USPS). Agency and walk not readable from the cloud (bidnet blocked); HQ may overrule if the CEO wants on-call roofing as a sub-performed line.",
+   "at": "2026-11-19T19:25:00Z"
   }
  },
  "watched": {
@@ -3344,6 +3350,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T18:21:00Z",
+ "last_hourly_check": "2026-11-19T19:21:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
