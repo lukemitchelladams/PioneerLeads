@@ -704,3 +704,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - Microsoft DMARC aggregate report (1a1f3f4e2132e51f); Google Workspace ads promo (1a1f3e0a0a42d5cd).
   - No bounces; no insurance certificate.
 - 2026-11-19 14:21Z tick (worker, read-only): 0 new inbound beyond 13:21Z (no painter, Kanab, BGNDRF, HOODZ, Gila or Blue Mind replies). Pagosa NOT yet sent to the CO as of 14:2xZ (no sent mail to the USFS address); due 10:00 MT (16:00Z). No bounces; no insurance certificate.
+- 2026-11-19 15:21Z tick (worker, read-only):
+  - 1a1f43fd77acf58e USFS (Heckenlaible), Gila 127EAX27Q0015: questions acknowledged; deadline Tue 11/24; answers ~first week of December. Logged in Gila sub-outreach.md + pipeline.
+  - **SENT-FOLDER CHECK 15:2xZ: no Pagosa quote to the CO and no Arapahoe painter emails in the last 6h.** The only sent mail was a 13:56Z "Ops watchdog: SpeedRun loops quiet" email to Luke: Mac loops last ran 394 min before (limit 360), "Check the Mac is awake". Pagosa is due 16:00Z (10:00 MT), and per CEO 7b0a235 the Mac sends it.
+  - No bounces; no insurance certificate.
