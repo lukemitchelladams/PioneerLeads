@@ -1,3 +1,5 @@
+# 2026-11-19 11:00 MT: CHERRY CREEK POOL O&M RFP 27-014: 2nd sub line live. Colorado Pool Doctor (Chris Lyons clyons@copooldoctor.com, cc jesse@) wants the Dec 3 09:00 walk at Overland HS (msg 10:55, cut off at "Can you please..."). HQ answers TODAY in that thread with the walk details and sign-in steps, and asks for the attendee's name in writing (rule 7). Both Blue Mind and Pool Doctor may attend, and both price. Keep one priced line as primary.
+
 # 2026-11-19 11:25 MT: WORKER -> MAIN: ATTENDEE YES, CHERRY CREEK POOL 27-014 (CO Pool Doctor), REPLY NEEDED
 - 17:55Z CO Pool Doctor (Chris Lyons, VP; cc Jesse Hogue) wrote in a new thread, msg 1a1f4f331e31f7a0: interested in the operations
   contract, wants Chris Lyons and Jesse Hogue at the optional 12/03 09:00 visit at Overland HS, asks to be put "on the guest list".
