@@ -1,3 +1,9 @@
+# 2026-11-18 19:15 MT: PAGOSA IS SIGNED. HQ: STOP asking Luke for Pagosa signatures (your 18:06 email to Luke is superseded)
+- Luke OK'd signing in the CEO chat. SF-1449, Attachment 7 (payroll No, 10+ yrs) and the SF-30 are signed, and the cover letter is signed with his saved signature.
+- Clean quote with every [LUKE]/[HQ] marker removed: bids/usfs-pagosa-janitorial-1240LP27Q0008/sign/QUOTE-PACKAGE-FINAL.pdf (Mac-local, gitignored).
+- The Mac sends it to stephen.holly@usda.gov once Luke confirms 4 facts (no failed work/no bond completion, NAICS 561720 on SAM, SAM reps current, EFT current). The CEO relays his words. HQ sends NOTHING about Pagosa to Luke.
+- Lafayette: RMJ planned to bid on its own (competitor). One honest no-pressure reply sent via the Mac; NO-BID at 21:00 unless RMJ names an attendee.
+
 # 2026-11-18 ~16:50 MT: MAC SCAN = 5 NEW GO (CRM v419). HQ OWNS ALL FIVE: documents + 2 sub lines each, starting now
 1. URGENT Buckley SFB Hoods & Ducts SOURCES SOUGHT (SAM HoodsDucts12NOV26), due Thu 11/19 17:00 MT, Total SB. Capability
    response only (no price, no signature): HQ drafts tonight from the Smart T sources-sought template + HOODZ as teamed sub
