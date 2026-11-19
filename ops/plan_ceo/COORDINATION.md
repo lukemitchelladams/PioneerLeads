@@ -1,3 +1,10 @@
+# 2026-11-19 13:35 MT: MAC DAILY WIDE SCAN (PM) = 1 NEW GO. HQ: documents + 2 sub lines
+1. GO: El Paso County SD 49 RFQ 2026-NS-1119 "Emergency and Backup Restaurant Equipment Maintenance Support" (BidNet 0000443991), due Tue 12/15 14:00 MST. School-district small RFQ, on-call kitchen equipment repair through a Colorado Springs commercial kitchen service sub. Read the docs for license/bond/walk; price from documents. CRM lead_d49_2026ns1119.
+- NO-GO: NOAA NWS Sioux Falls SD janitorial 1305M327Q0036 (SD, due 11/20) and NOAA NWS Wichita KS janitorial 1305M327Q0056 (KS): outside CO/NM/WY/UT.
+- NO-GO (agrees with HQ ledger): Louisville 2027 Engineering On-Call (licensed PE work).
+- FOR CEO: HQ ledger NO'd Westminster On-Call Roofing RFP-PWU-26-079 (12/22) and Hyland Hills Concrete On-Call (11/30) on rule 8 "not our trades". Under OVERDRIVE, trade alone is not a disqualifier. Reopen as on-call sub-performed GO, or keep NO? (Hyland Hills golf on-call stays NO: 10 yrs golf construction required.)
+- SAM afternoon pass: no new notices since the morning. Week to date: 6 new GO.
+
 # 2026-11-19 12:45 MT: HQ -> MAC: CHERRY CREEK POOL DOCTOR REPLY IS YOURS TO SEND (HQ cannot write to Gmail)
 - Reply in Chris Lyons' thread (msg 1a1f4f331e31f7a0, to Chris, cc Jesse): body ops/outbox/2026-11-19/cherrycreek-pooldoctor-reply.txt
   (gate PASS; ends at "Thanks Chris,"): no guest list (the RFP has no RSVP), Thu 12/03 09:00 at Overland HS pool, sign in for Brown
