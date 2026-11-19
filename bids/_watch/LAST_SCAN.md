@@ -1,9 +1,11 @@
-# Last scan 2026-11-19T06:36:06+00:00
+# Last scan 2026-11-19T07:35:39+00:00
 Logged in: no: BIDNET_USER/BIDNET_PASS not set
-Counts: bidnet 672/87 | samgov 104/104 (PARTIAL, down since 2026-11-19T02:35Z (4 h, 5 runs), list carried forward) | coloradovss 69/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 847/196
-  - Down: samgov PARTIAL, down since 2026-11-19T02:35Z (4 h, 5 runs), list carried forward
-New matching bids: 0
-Changes on watched bids: 0
+Counts: bidnet 682/87 | samgov 104/104 (PARTIAL, down since 2026-11-19T02:35Z (5 h, 6 runs), list carried forward) | coloradovss 69/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 857/196
+  - Down: samgov PARTIAL, down since 2026-11-19T02:35Z (5 h, 6 runs), list carried forward
+New matching bids: 1
+  - bidnet 2723347772 | S--Friant Dam Janitorial Services |  | closes 2026-12-01 | brownbison | watched no
+Changes on watched bids: 1
+  - **Radiant Heating Panel Replacement (paid-tier notice)** (bidnet): closing date 2026-11-20 -> 2026-11-26 — https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purc
 Documents downloaded: 0
 Documents skipped (decided NO): 1
 Errors: bonfire 1, samgov 2; first: bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network; exit code 3

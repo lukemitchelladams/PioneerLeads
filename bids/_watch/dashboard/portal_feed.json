@@ -90,21 +90,6 @@
   "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:444232280764",
-  "source": "bidnet",
-  "agency": "",
-  "title": "Baseball Field Fencing Project",
-  "sol": "",
-  "closing": "2026-11-19",
-  "posted": "2026-11-11",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444232280764/abstract?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "samgov:1d1b8d72c87844289d3efb4990073ded",
   "source": "samgov",
   "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA FS SAN JUAN NATIONAL FOREST",
@@ -238,21 +223,6 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Streetlight-Materials-Installation/0000441022?purchasingGroupId=8409951&origin=1"
- },
- {
-  "key": "bidnet:2721870812",
-  "source": "bidnet",
-  "agency": "",
-  "title": "Radiant Heating Panel Replacement",
-  "sol": "",
-  "closing": "2026-11-20",
-  "posted": "2026-11-04",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:167b070bfa8649458bf15e4f20b7ba9e",
@@ -840,6 +810,21 @@
   "url": "https://sam.gov/workspace/contract/opp/b11d3623d84843b2899857e45ac20464/view"
  },
  {
+  "key": "bidnet:2721870812",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Radiant Heating Panel Replacement",
+  "sol": "",
+  "closing": "2026-11-26",
+  "posted": "2026-11-04",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "samgov:8ccf3c647f414b7ea5cbb513ccfb51c9",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION AT OKLAHOMA CITY, OK",
@@ -1258,6 +1243,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722933907/abstract?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:2723347772",
+  "source": "bidnet",
+  "agency": "",
+  "title": "S--Friant Dam Janitorial Services",
+  "sol": "",
+  "closing": "2026-12-01",
+  "posted": "2026-11-18",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2723347772/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:01754c67a9fd4dd99e16171e0bfc4c04",
