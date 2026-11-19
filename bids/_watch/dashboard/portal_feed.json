@@ -446,7 +446,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/471f6edffb294ecc97ddd4e722e08c92/view"
  },
  {
@@ -857,7 +857,7 @@
  {
   "key": "samgov:b4eaf5ee986947649e09ee2513f6c234",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
   "title": "Radiant Heating Panel Replacement",
   "sol": "36C25927Q0048",
   "closing": "2026-11-26",
@@ -902,7 +902,7 @@
  {
   "key": "samgov:7dee71a221554a8e84e0fb0724da2948",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SAN DIEGO.NAVSUP FLT LOG CTR  SAN DIEGO",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP FLT LOG CTR  SAN DIEGO",
   "title": "Hoist Blocks, Naval Base San Diego",
   "sol": "N0024427Q0010",
   "closing": "2026-11-27",
@@ -1286,13 +1286,13 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/28287bf2d75d4b988c3926804e5e8665/view"
  },
  {
   "key": "samgov:2a2fc3fb24344745a8f721dc0307b197",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
   "title": "S--Friant Dam Janitorial Services",
   "sol": "140RR027Q0054",
   "closing": "2026-12-01",
@@ -1391,7 +1391,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/cfd4d4c711f44c60b66fdaf3661c9f8d/view"
  },
  {
@@ -1511,7 +1511,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/2d7674bac656445c87a3c04829772767/view"
  },
  {
@@ -1526,7 +1526,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/3928c219880f468f9632ba508ce320ef/view"
  },
  {
@@ -1556,7 +1556,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/67ff8f59f1cb4a5099d76d9c40e03ad3/view"
  },
  {
@@ -1661,7 +1661,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/c3ce13f118fc4269a492c8727eacdc22/view"
  },
  {
@@ -1676,7 +1676,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/cb80707574f149d2a74b844e2f813441/view"
  },
  {
@@ -1937,7 +1937,7 @@
  {
   "key": "samgov:e287375dd17d4606a579b148fd8be607",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT CARSON",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QM MICC-FT CARSON",
   "title": "4th Infantry Division Troop Schools - Fort Carson",
   "sol": "PANMCC27P0000059783",
   "closing": "2026-12-04",
@@ -2501,7 +2501,7 @@
   "prebid_mandatory": "",
   "profiles": "jones-bearing",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/608f61baec2e4cd1a91f3138dffec13d/view"
  },
  {
@@ -2657,7 +2657,7 @@
  {
   "key": "samgov:1bbbca1e2cd240838a114e008f5dd75d",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "5-TON CHAIN HOIST",
   "sol": "N0010427QBC70",
   "closing": "2026-12-18",
@@ -2771,7 +2771,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/0f1e8554ae134a2db4554e547a2c3f64/view"
  },
  {
