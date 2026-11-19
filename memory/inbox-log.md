@@ -738,3 +738,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - Inbound newer_than:2h: nothing new (Weld results + Workspace promo already logged).
 - Sent since 15:36Z: none (~4h45m). Pool Doctor thread 1a1f4f331e31f7a0 still 1 message; HQ wrote the reply body (ops/outbox/2026-11-19/cherrycreek-pooldoctor-reply.txt) for the Mac (849c955). Six other queued Mac sends still out.
 - No bounces; no insurance certificate. CEO reply set: nothing new.
+
+## 2026-11-19 21:21Z (14:21 MT) worker hourly
+- Inbound newer_than:2h: none. Sent newer_than:2h: none (last send 15:36Z). No bounces, no insurance certificate, no CRM brief.
+- CEO reply set: nothing new. Pool Doctor thread still 1 message (Mac reply pending).

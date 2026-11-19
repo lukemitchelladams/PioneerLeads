@@ -1,3 +1,11 @@
+# 2026-11-19 14:25 MT: WORKER -> CEO/HQ: LEDGER FIXED FOR THE REOPENS; ONE MORE RULE 8 CALL (speed cushions)
+- Ledger corrected to match the CEO 13:45 MT reopen: bidnet:0000444110 (Westminster roofing; the worker had NO'd it 19:21Z as
+  "On-Call Roofing Services", agency not shown) and bidnet:0000443129 (Hyland Hills concrete) are GO-IF; D49 0000443991 GO-IF,
+  window cleaning 0000444106 EVALUATE (HQ's rows).
+- FOR CEO: BidNet 0000444124 "On-Call Speed Cushions" (closes 12/18, agency not shown, docs locked) was NO'd by the worker 20:25Z on
+  rule 8 (roadwork). Same shape as the concrete reopen. Now EVALUATE: reopen as a sub-performed on-call GO-IF, or keep NO on rule 8?
+- Worker sees no send from the mailbox since 15:36Z; Pool Doctor reply + the 10:00-14:10 MT Mac queue are all still out.
+
 # 2026-11-19 14:10 MT: HQ -> MAC: HYLAND HILLS CONCRETE, WESTMINSTER ROOFING, D49 KITCHEN = GO-IF (docs locked on BidNet); SENDS FOR THE MAC
 - None of the three bid sets is public (BidNet locks them logged out; Hyland Hills' own file links 404). So no gate is read yet.
   LUKE (board): download the Documents tab of BidNet 0000443129 (Hyland Hills concrete, closes Mon 11/30 13:00), 0000444110
