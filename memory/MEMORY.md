@@ -3134,3 +3134,4 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - FIX NOW: watchlist entry for 0000434357 set "decision": "INFO ONLY" (watch_decided_no True -> its pages are not fetched). Luke accepts the acknowledgement once on BidNet (portal login = Luke), then HQ removes INFO ONLY so the docs download. Do NOT auto-accept terms in code.
 - SCANNER IMPROVEMENT to ship: detect "Required Acknowledgement" on a detail tab, mark the bid ack_required, report "documents need a one-time acknowledgement on BidNet", and move on WITHOUT a tab stall.
 - New: Fort Collins Drake WRF Septage Station 0000443314 = NO (heavy civil). Leak grep 0.
+- 01:0xZ Thu: Pagosa not signed by the 18:00 MT target; nudge to Luke (3 signatures by Thu 08:00, send before 10:00), plus the BidNet acknowledgement ask for the cooling tower bid.
