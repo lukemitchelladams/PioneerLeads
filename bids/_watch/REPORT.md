@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-19T10:36:18+00:00
+# Bid watch report — 2026-11-19T11:36:13+00:00
 
 **Headline:** not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 682 | BUYER 453, AGGREGATE 230 | 87 | 2026-11-19T10:36:18+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T10:36:18+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (8 h, 9 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T10:36:18+00:00 | 2 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-19T10:36:18+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 683 | BUYER 453, AGGREGATE 231 | 87 | 2026-11-19T11:36:13+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T11:36:13+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (9 h, 10 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T11:36:13+00:00 | 2 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-19T11:36:13+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -279,4 +279,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
 - samgov: SAM_API_KEY not set
-- samgov: down since 2026-11-19T02:35Z (8 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (9 h); previous open bids carried forward
