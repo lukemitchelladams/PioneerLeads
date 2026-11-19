@@ -1057,6 +1057,14 @@
    "id": "0000443314",
    "match": "0000443314",
    "folder": null
+  },
+  {
+   "name": "BidNet 0000444106 Window Cleaning Services (EVALUATE; agency hidden while logged out; due 2026-12-16)",
+   "source": "bidnet",
+   "id": "0000444106",
+   "match": "Window Cleaning Services",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

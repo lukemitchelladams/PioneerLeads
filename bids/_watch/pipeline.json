@@ -2144,6 +2144,26 @@
    "decision_note": "REOPENED 2026-11-19 by CEO (COORDINATION top entry): trade alone is not a NO-BID reason; sub-performed on-call. Earlier ledger NO (rule 8) superseded. Gate check by Fri 11/20 (years, bonding, license, walk); roofing sub's license in the first email.",
    "next": "HQ gate check by Fri 11/20; 2 roofing sub lines.",
    "performer": "Brown Bison + licensed roofing sub"
+  },
+  {
+   "due_source": "BidNet list closing date (logged out)",
+   "portal": "BidNet/RMEPS 0000444106",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "contact": null,
+   "sub_pricing": "None",
+   "folder": null,
+   "subs": "Aims candidates (Metropolis Window Cleaning, Sonlight) once the agency and location are known",
+   "id": "bidnet-0000444106-window-cleaning",
+   "agency": "Unknown (BidNet hides the agency while logged out)",
+   "title": "Window Cleaning Services (BidNet/RMEPS 0000444106, published 2026-11-19)",
+   "sol": "not in hand (BidNet listing 0000444106)",
+   "trade": "janitorial (window cleaning)",
+   "due": "2026-12-16",
+   "decision": "EVALUATE (HQ 2026-11-19): window cleaning is janitorial scope (same trade as Aims 2627-009 GO); documents need Luke's BidNet login",
+   "decision_note": null,
+   "next": "Luke downloads the BidNet set (0000444106); HQ opens the folder, checks rule 0 and gates the same day",
+   "performer": "Brown Bison bids; window-cleaning sub performs"
   }
  ],
  "events": [

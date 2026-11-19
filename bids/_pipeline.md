@@ -170,3 +170,4 @@ its sub outreach (it enforces a 2-touch cap per company and an interest-check fi
 
 Not pursued (2026-10-19): USPS Denver P&DC Roof Replacement 089495-27-A-0001, $12M-$13M, 100% P&P bonds,
 due 2026-11-20, optional pre-proposal 2026-11-04 09:00 on site. Out of scale.
+| EVALUATE | Unknown (BidNet hides agency logged out) | Window Cleaning Services, BidNet/RMEPS 0000444106 (published 2026-11-19) | 2026-12-16 | Not known (docs not in hand) | Janitorial scope; Luke downloads the BidNet set, then HQ gates the same day |
