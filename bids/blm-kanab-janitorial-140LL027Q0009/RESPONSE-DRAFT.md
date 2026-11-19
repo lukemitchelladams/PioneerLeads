@@ -303,7 +303,7 @@ A city account in St. George is weaker evidence for "remote or rural".
 Sol p.6: *"Provide a complete Bid Schedule. The total proposed price must include all labor, materials, supplies, equipment,
 mileage, overhead, etc."* Fill column E (Unit Price) of the Government's workbook for all 22 lines in each of the 5 years;
 column F and J formulas compute the totals, the 52.217-8 line (J8 = OY4 x 0.5) and TOTAL PRICE (J9). **Filled copy and
-figures: `private/Attachment-1-Bid-Schedule-FILLED-DRAFT-2026-11-18.xlsx` and `private/PRICING-WORKSHEET.md` (arithmetic check
+figures: `private/Attachment-1-Bid-Schedule-FILLED-DRAFT-2026-11-19.xlsx` and `private/PRICING-WORKSHEET.md` (arithmetic check
 PASS 2026-11-18).** Lines 1-12 carry one per-cleaning price; lines 13-22 carry one price per task. The same prices are used
 every year, so the option years are not unbalanced (Sol p.6). Send the .xlsx itself.
 
