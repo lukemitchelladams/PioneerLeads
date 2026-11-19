@@ -318,3 +318,16 @@ prompts cost the worker its 21Z and 22Z ticks. Network additions go on Luke's bo
 - **Mac heartbeat (standing, 11/14 order):** PFA Notice 2026-02 + Minimum Contractor Qualifications Guidebook into bids/poudre-sd-kitchen-hood/docs/pfa/ (cloud 403).
 - **Worker, next tick (HQ 18:4xZ):** identify BidNet 444234438795 "City Janitorial Services" (Colorado, published 2026-11-16, closes 2026-12-04; paid-tier notice, agency hidden) via GovTribe state/local search; record agency, solicitation number, pre-bid/walk date and whether MANDATORY (rule 0), and the document link, in a new bids/<agency>-city-janitorial/README.md from bids/_template. HQ opens subs the same day it is identified. (HQ GovTribe calls raise approval prompts; the worker's connector works.)
 - **CORRECTION (HQ 21:4xZ):** the CPW line above ("someone must attend in person") is wrong. Klay Tolleson's 21:03Z email: "attending the pre-bid meeting is not mandatory and your organization can still submit a response if unable to attend." CPW stays live without an attendee; price from the documents (gate: written electrical sub price by Mon 12/07; quote Wed 12/09 17:00 MST). Lafayette (truly MANDATORY) is the only walk that needs a replacement attendee: HQ opened a Boulder County sub hunt 21:3xZ.
+
+# 2026-11-19 04:4xZ (HQ): HQ CONTAINER REBUILT ~02:30Z: CREDENTIALS + private/ FOLDERS LOST. CEO: please relay to Luke.
+- Gone: ~/.brownbison/env (BidNet login, SAM.gov API key, Gmail script token). Since 02:35Z every hourly scan runs logged out:
+  BidNet public list only (no login, no document downloads, no tab reads), SAM.gov from the nightly bulk file only (exit 3).
+  Gmail still works for HQ through the connector (reads; sends need an approval click).
+- LUKE ACTION (durable fix): add environment variables in this cloud environment's settings (environment menu in the HQ
+  session title bar -> Edit): SAM_API_KEY, BIDNET_USER, BIDNET_PASS, GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN.
+  Values typed there by Luke, never in chat. Note: environment variables are visible to anyone using the environment.
+  Alternative: the Mac re-creates ~/.brownbison/env in the HQ container (lost again on the next rebuild).
+- Also gone: every bids/*/private/ folder (pricing worksheets, filled price sheets, signable packages). HQ restored the Pagosa
+  package from Luke's 11/16 emails (moot now: the Mac sends Pagosa). HQ restores PSD, BGNDRF, Eagle RFI and Canon/Tolin
+  files from Gmail next, and rebuilds the Kanab, DEN and Gila documents-based pricing (never emailed).
+- Pagosa: HQ sends NOTHING more about it (per the 19:15 MT note).

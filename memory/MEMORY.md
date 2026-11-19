@@ -3148,3 +3148,11 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Dashboard 03:35Z: bids v436 (faf9eb48fa77522b2529e41995a0c353), events v439 (ae175688508cd95aef44619519afc831), portal_feed v229 (9ca5cbfc3fd68bac5bc60ce9b3564224), sources v385 (7c2c270dbecea3462a493e394570eeae); doc_gaps v16 unchanged; old blobs deleted.
 - 2026-11-19 04:21Z hourly (worker, read-only): 03:35Z scan STILL logged out (BIDNET_USER/PASS and SAM_API_KEY not set, 2nd scan in a row). Public BidNet list + SAM bulk only, so no document downloads. 165 open, 0 new. CEO 7b0a235 (19:15 MT): PAGOSA IS SIGNED (SF-1449, Att 7, SF-30, cover letter). The Mac sends to the CO once Luke confirms 4 facts (no failed work/bond completion, NAICS 561720 on SAM, SAM reps current, EFT current). HQ stops signature asks. Lafayette: RMJ silent after the Mac's 03:48Z reply; NO-BID stands. Inbox quiet.
 - Dashboard 04:35Z: bids v437 (1dddd3f0653e3c090b6cc86720a29552), events v440 (d168011ee6c5cb14b2703420d90bcc8e), sources v386 (f2859c23a8166994f73f5710f85b6589); portal_feed v229 and doc_gaps v16 unchanged; old blobs deleted.
+
+### 2026-11-19 02:35Z-04:35Z: CONTAINER REBUILT, credentials + private/ lost
+- ~/.brownbison/env gone (BidNet/SAM/Gmail-script creds); scans since 02:35Z logged out (exit 3; SAM from bulk file). Scratchpad wiped too (send manifests, sub mailbox lists). Every bids/*/private/ gone.
+- Gmail connector works (reads OK; sends hit an approval prompt when nobody is there). gmail_api.py / inbox_list.py dead until creds return.
+- Pagosa package restored to private/ from Luke's 11/16 emails; then CEO note (7b0a235): Pagosa SIGNED, Mac sends it, HQ sends nothing about Pagosa.
+- COORDINATION.md note for the CEO to relay: Luke adds SAM_API_KEY, BIDNET_USER, BIDNET_PASS, GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN as environment variables (durable), values typed by Luke.
+- LESSON: private/ files live only in the container; mirror anything that matters to Luke's Gmail/Drive (emailed copies saved Pagosa).
+- 04:35Z scan: logged out, push 5ac7ca1, bidnet 672/87 (public), samgov 99 partial, coloradovss 69/4, bonfire 2/1. 0 new.
