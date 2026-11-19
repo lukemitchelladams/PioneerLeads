@@ -72,7 +72,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723145047?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2723145047/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444205093628",
@@ -87,7 +87,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444205093628?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444232280764",
@@ -102,7 +102,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444232280764?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444232280764/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:1d1b8d72c87844289d3efb4990073ded",
@@ -122,7 +122,7 @@
  {
   "key": "samgov:2c8270d26d9f4f8995b1c4f5133362ce",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA WEAPONS SUPPORT",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
   "title": "GEAR SET,WORM AND WORM WHEEL,MATCHED",
   "sol": "SPE7L127R0017",
   "closing": "2026-11-19",
@@ -137,7 +137,7 @@
  {
   "key": "samgov:5eab430c39444c279a8cc451a662092d",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--GEAR, PINION",
   "sol": "N0010426QFC50",
   "closing": "2026-11-19",
@@ -152,7 +152,7 @@
  {
   "key": "samgov:769e7021c09444ef942325ad392d8628",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--GEAR, PINION",
   "sol": "N0010426QFC50",
   "closing": "2026-11-19",
@@ -182,7 +182,7 @@
  {
   "key": "samgov:f2c0f3bf3abb42579074f7a035f8b624",
   "source": "samgov",
-  "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA FS SAN JUAN NATIONAL FOREST",
+  "agency": "AGRICULTURE, DEPARTMENT OF / FOREST SERVICE / USDA FS SAN JUAN NATIONAL FOREST",
   "title": "Janitorial services- Pagsoa Ranger District",
   "sol": "1240LP27Q0008",
   "closing": "2026-11-19",
@@ -252,7 +252,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721870812?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721870812/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:167b070bfa8649458bf15e4f20b7ba9e",
@@ -287,7 +287,7 @@
  {
   "key": "samgov:595a043c43e3421c9ce457df6614d29f",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / 248-NETWORK CONTRACT OFFICE 8 (36C248)",
   "title": "4610--FY27 Portable Reverse Osmosis (RO) Water Purification System",
   "sol": "36C24827Q0114",
   "closing": "2026-11-20",
@@ -332,7 +332,7 @@
  {
   "key": "samgov:da9ea4b3839a49fab63f9e83dfa4ea17",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
   "title": "J065--Fort Harrison GE Precision Radiology Preventive Maintenance",
   "sol": "36C25926Q0779",
   "closing": "2026-11-20",
@@ -347,7 +347,7 @@
  {
   "key": "samgov:030fbc47bac041ddb7216401102fc679",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - PUGET SOUND",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA MARITIME - PUGET SOUND",
   "title": "CUSTOM GEARBOX",
   "sol": "SPMYM227Q1115",
   "closing": "2026-11-22",
@@ -402,7 +402,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2723265662?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2723265662/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444225024046",
@@ -417,12 +417,12 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444225024046?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444225024046/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:3a25347065dc4abab033df330d536ef2",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
   "title": "Vandenberg Crane Replacement",
   "sol": "FA8227-27-Q-1000",
   "closing": "2026-11-23",
@@ -452,7 +452,7 @@
  {
   "key": "samgov:5ba7eaeb505c4db79656512be7538248",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
   "title": "56--PGMB Security Gate",
   "sol": "140RR027R0010",
   "closing": "2026-11-23",
@@ -557,7 +557,7 @@
  {
   "key": "samgov:da984b4f70fd412d924e9c830a2c3299",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT",
   "title": "CRANE,FLOOR,PORTABL",
   "sol": "N0038327QPA11",
   "closing": "2026-11-23",
@@ -572,7 +572,7 @@
  {
   "key": "samgov:eea997c0f31b4b76b2c891c39de4ab49",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
   "title": "S--JANITORIAL SERVICES, Channel Islands NP",
   "sol": "140PP027Q0034",
   "closing": "2026-11-23",
@@ -581,13 +581,13 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": true,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://sam.gov/workspace/contract/opp/eea997c0f31b4b76b2c891c39de4ab49/view"
  },
  {
   "key": "samgov:fd1db65a9f2d47ef81249208446d82a9",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC WVA",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC WVA",
   "title": "Case Magnet",
   "sol": "W911PT27QA025",
   "closing": "2026-11-23",
@@ -687,7 +687,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444223472310?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444223472310/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bonfire:parkeronline-259452",
@@ -707,7 +707,7 @@
  {
   "key": "samgov:1080fd91f83e49f595458d569cf6222f",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA LAND WARREN",
   "title": "Traverse Bearing Assembly",
   "sol": "2027-KM001",
   "closing": "2026-11-24",
@@ -722,8 +722,8 @@
  {
   "key": "samgov:414f66eef94f47858c60924be78b20b6",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-  "title": "31-  BEARING, BALL, ANNULAR",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
+  "title": "31- BEARING, BALL, ANNULAR",
   "sol": "SPE4A627RX155",
   "closing": "2026-11-24",
   "posted": "2026-11-03",
@@ -737,7 +737,7 @@
  {
   "key": "samgov:7e9779421f21488c9f6a3384aba26dde",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QM MICC-FT DRUM",
   "title": "Diesel Forklift",
   "sol": "W911S227U0155",
   "closing": "2026-11-24",
@@ -807,13 +807,13 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721090002?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721090002/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:7b08515e5fc149828cce5d7674ca2d8c",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
-  "title": "H--Northern California Area Office (NCAO) Fire Alarm ",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
+  "title": "H--Northern California Area Office (NCAO) Fire Alarm",
   "sol": "140RR027Q0013",
   "closing": "2026-11-25",
   "posted": "2026-11-17",
@@ -842,7 +842,7 @@
  {
   "key": "samgov:8ccf3c647f414b7ea5cbb513ccfb51c9",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION AT OKLAHOMA CITY, OK",
   "title": "HOUSING, BEARING UNI",
   "sol": "SPRTA1-27-Q-0031",
   "closing": "2026-11-26",
@@ -917,7 +917,7 @@
  {
   "key": "samgov:c277011495224169bc4765162f8f9c16",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "FY27-3A Foreign Bearings Waiver Package Sources Sought Notice",
   "sol": "FY27-3AForeignBearingsWaiverPackageSourcesSoughtforDomesticBearings",
   "closing": "2026-11-27",
@@ -932,7 +932,7 @@
  {
   "key": "samgov:95a2d27f4a0841b69190a165a262ef7c",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "Multi NSN LTC",
   "sol": "SPE4A227RX001",
   "closing": "2026-11-28",
@@ -1112,7 +1112,7 @@
  {
   "key": "samgov:0f9b38e12f184fadbb459e087e00963d",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
   "title": "Z--SACN Replace Fire Alarms and Intrusions Systems",
   "sol": "140PP027B0002",
   "closing": "2026-11-30",
@@ -1127,7 +1127,7 @@
  {
   "key": "samgov:20b6fa9843bd4925b7964e5dfb36f976",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
   "title": "Low Level Cranes- CSO",
   "sol": "W911KF25SC002A0018",
   "closing": "2026-11-30",
@@ -1142,7 +1142,7 @@
  {
   "key": "samgov:463e2a5bc1914bc9927e6fc663c61e2a",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BALL,BEARING",
   "sol": "N0010426QYA9P",
   "closing": "2026-11-30",
@@ -1157,7 +1157,7 @@
  {
   "key": "samgov:dacbc6b4e8aa4880930c72ad6a19d7dd",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "BEARING ASSY, SPCL",
   "sol": "N0010427QNA42",
   "closing": "2026-11-30",
@@ -1257,12 +1257,12 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2722933907?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722933907/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:01754c67a9fd4dd99e16171e0bfc4c04",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "BEARING,ROLLER,AIRFRAME, NSN 3110-01-310-2258",
   "sol": "SPE4A627Q0034",
   "closing": "2026-12-01",
@@ -1322,7 +1322,7 @@
  {
   "key": "samgov:44098e7c120b467eaab640f73e9802cc",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYAH7",
   "closing": "2026-12-01",
@@ -1352,7 +1352,7 @@
  {
   "key": "samgov:618732e7b79446fab94fe7286242de02",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX",
   "sol": "N0010426QYA9Y",
   "closing": "2026-12-01",
@@ -1367,7 +1367,7 @@
  {
   "key": "samgov:c29f795658414ef49624fb7d3557091f",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYAH7",
   "closing": "2026-12-01",
@@ -1397,7 +1397,7 @@
  {
   "key": "samgov:e0744ff44d534fe384865ff6a50be7d3",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX",
   "sol": "N0010426QYA9Y",
   "closing": "2026-12-01",
@@ -1532,7 +1532,7 @@
  {
   "key": "samgov:66114240b6ce43ff9ba45be3c2624fe1",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYADN",
   "closing": "2026-12-02",
@@ -1562,7 +1562,7 @@
  {
   "key": "samgov:70d44b9e2c6d4b1bbc71813c6d527de4",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAGF",
   "closing": "2026-12-02",
@@ -1577,7 +1577,7 @@
  {
   "key": "samgov:88fae747c268450babe6750b67aa4350",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAGF",
   "closing": "2026-12-02",
@@ -1592,7 +1592,7 @@
  {
   "key": "samgov:8f1feb2f0f3d47c8bd10b6846dfa459f",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAHA",
   "closing": "2026-12-02",
@@ -1607,7 +1607,7 @@
  {
   "key": "samgov:9cc53143bea54b7a87289a1fed41697e",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAHA",
   "closing": "2026-12-02",
@@ -1622,7 +1622,7 @@
  {
   "key": "samgov:b1d4121b183049bc9e752ac703b1304a",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "2-TON CHAIN HOIST",
   "sol": "N0010426QBC87",
   "closing": "2026-12-02",
@@ -1637,7 +1637,7 @@
  {
   "key": "samgov:b2f8868b8e0442338065f3a5a3d81af1",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYADN",
   "closing": "2026-12-02",
@@ -1757,7 +1757,7 @@
  {
   "key": "samgov:9e7057b68eff46849d6de2cb28834363",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "31- BEARING, ROLLER, NEEDLE",
   "sol": "SPE4A627RX186",
   "closing": "2026-12-03",
@@ -1772,7 +1772,7 @@
  {
   "key": "samgov:9efac20ee41241b4ba84f3c89f59d96d",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAH4",
   "closing": "2026-12-03",
@@ -1787,7 +1787,7 @@
  {
   "key": "samgov:b6794a137e8647cca7072ec299896676",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,DUPLEX- AND SIMILAR REPLACEMENT PARTS",
   "sol": "N0010426QYAH4",
   "closing": "2026-12-03",
@@ -1802,7 +1802,7 @@
  {
   "key": "samgov:d9d578bda92d4dd7a7bf7b5612302637",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "BEARING, ROLLER",
   "sol": "SPE4A627RX158",
   "closing": "2026-12-03",
@@ -1887,7 +1887,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2722680182?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444234438795",
@@ -1902,7 +1902,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234438795?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234438795/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444235838422",
@@ -1917,12 +1917,12 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444235838422?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444235838422/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:b2e58c41cb4c4787813fbc1f31ea81f7",
   "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / RECLAMATION CONTRACTING ACTIVITY",
   "title": "S--BGNDRF CUSTODIAL SERVICES",
   "sol": "140RR027Q0001",
   "closing": "2026-12-04",
@@ -1992,7 +1992,7 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/2721710927?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2721710927/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444230804856",
@@ -2007,12 +2007,12 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230804856?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230804856/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:2aad90d6aa1f4120bfffc544d7899799",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2543  460 CONS",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA2543  460 CONS",
   "title": "BSFB Asbestos Survey Services",
   "sol": "FA254327Q0003",
   "closing": "2026-12-07",
@@ -2147,7 +2147,7 @@
  {
   "key": "samgov:a98c21a17409454a9307a97860826870",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYAHD",
   "closing": "2026-12-08",
@@ -2162,7 +2162,7 @@
  {
   "key": "samgov:cd651e8500eb462ba089ebb18f600686",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING,BALL,ANNULA",
   "sol": "N0010426QYAHD",
   "closing": "2026-12-08",
@@ -2262,7 +2262,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234845265?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234845265/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "coloradovss:DQ1-PMAA-2027000176",
@@ -2307,7 +2307,7 @@
   "profiles": "",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444230872362?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444230872362/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:0000441223",
@@ -2357,7 +2357,7 @@
  {
   "key": "samgov:b8d42df049264aef86019c9aa4e691c8",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / SPRMM1 DLA MECHANICSBURG",
   "title": "SHELL AY(PRT SIDE)",
   "sol": "SPRMM126QGE59",
   "closing": "2026-12-14",
@@ -2387,7 +2387,7 @@
  {
   "key": "samgov:edca6c0e45674c149ab966bc1096fe6b",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.FLEET READINESS CENTER",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / FLEET READINESS CENTER",
   "title": "FRCSW Hoist Requirement",
   "sol": "N68520-27-RFPREQ-KN00000-0154",
   "closing": "2026-12-14",
@@ -2412,7 +2412,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444234541440?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234541440/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444240306205",
@@ -2427,7 +2427,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": true,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444240306205?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444240306205/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "coloradovss:IFB1-GJLA-2027000054",
@@ -2457,12 +2457,12 @@
   "profiles": "brownbison",
   "watched": false,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444226398382?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444226398382/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:3d326babf2eb497eabe64330bb3f5d25",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / SPRMM1 DLA MECHANICSBURG",
   "title": "BEARING,BALL AND RO",
   "sol": "SPRMM126QMJ99",
   "closing": "2026-12-16",
@@ -2477,7 +2477,7 @@
  {
   "key": "samgov:49fff837ad1c4b87b96e64679cb00652",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--2-TON CHAIN HOIST",
   "sol": "N0010426QBJ41",
   "closing": "2026-12-16",
@@ -2507,7 +2507,7 @@
  {
   "key": "samgov:6a6f6468b7b642929a57be41b873b7bf",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--2-TON CHAIN HOIST",
   "sol": "N0010426QBJ41",
   "closing": "2026-12-16",
@@ -2522,7 +2522,7 @@
  {
   "key": "samgov:eea50eb876044089a54c01f641e9c9be",
   "source": "samgov",
-  "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+  "agency": "HOMELAND SECURITY, DEPARTMENT OF / US COAST GUARD / SFLC PROCUREMENT BRANCH 1(00080)",
   "title": "BEARING ROLLER",
   "sol": "70Z08026Q-AK017",
   "closing": "2026-12-16",
@@ -2702,7 +2702,7 @@
  {
   "key": "samgov:6fcd8de199f5419ca0fae46dc353a73d",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING UNIT PLAIN",
   "sol": "N0010425QYG54",
   "closing": "2026-12-30",
@@ -2732,7 +2732,7 @@
  {
   "key": "samgov:e88b2c4bbf9b49c490f20e1bca91bf88",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "31--BEARING UNIT PLAIN",
   "sol": "N0010425QYG54",
   "closing": "2026-12-30",
@@ -2837,8 +2837,8 @@
  {
   "key": "samgov:98b4ea9e2d2146e382cd6c1b6efe1d70",
   "source": "samgov",
-  "agency": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
-  "title": "National Laboratory of the Rockies Energy Systems Integration Facility (ESIF)  HIGH PERFORMANCE COMPUTING  PRE-SOLICITATION NOTICE",
+  "agency": "ENERGY, DEPARTMENT OF / ENERGY, DEPARTMENT OF / ALLIANCE FOR ENERGY INNOVATION, LLC - DOE CONTRACTOR",
+  "title": "National Laboratory of the Rockies Energy Systems Integration Facility (ESIF) HIGH PERFORMANCE COMPUTING PRE-SOLICITATION NOTICE",
   "sol": "PSN-2027032940",
   "closing": "2027-01-31",
   "posted": "2026-11-09",
@@ -2877,12 +2877,12 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://www.bidnetdirect.com/private/supplier/interception/open-notice/444196018422?target=view"
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444196018422/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "samgov:7a6f641b2ccc4be7aa8e283cb9a2e90b",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION OKLAHOMA CITY",
   "title": "FD2030-26-01079",
   "sol": "FD2030-26-01079",
   "closing": "2027-03-03",
@@ -2897,7 +2897,7 @@
  {
   "key": "samgov:7872b54a0d4547a78d839266d5c8fba5",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION OKLAHOMA CITY",
   "title": "FD2030-26-01038",
   "sol": "FD2030-26-01038",
   "closing": "2027-06-15",
@@ -2942,7 +2942,7 @@
  {
   "key": "samgov:e7220f8924254f4fac1a83a72708bba1",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "Noise Tested Bearings IDIQ- Amendment 0001",
   "sol": "",
   "closing": "2027-07-29",
@@ -2972,7 +2972,7 @@
  {
   "key": "samgov:bc4fcb32914347a685b0b332444ceedb",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA2517  21 CONS BLDG 350",
   "title": "Sources Sought: Smart T Power Project",
   "sol": "FA251727SS00",
   "closing": "2027-11-18",
