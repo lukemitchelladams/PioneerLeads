@@ -1986,6 +1986,26 @@
    "next": "Sub ask at the next send run (ask each sub to attend the optional 11/24 visit for Brown Bison; RSVP by Sun 11/22 10:00 MT only for a named sub attendee); questions by Fri 11/20; sub price by Thu 12/03"
   },
   {
+   "id": "ihs-albuquerque-75h70727q00003-fire-doors",
+   "agency": "HHS Indian Health Service, Albuquerque Area IHS (Division of Contracts and Grants Management, for OEHE)",
+   "title": "Fire Door Inspection, Assessment, and Maintenance at 4 Albuquerque Area IHS health centers (Albuquerque, Santa Fe, Taos-Picuris, Mescalero NM; about 64 fire door assemblies; NFPA 80/101 inspection, repair/replacement, final passing inspection)",
+   "sol": "75H70727Q00003 (SAM.gov 7390db3f3afa46d3a8424450ec68c329, Amd 0002)",
+   "trade": "Facilities maintenance: fire door inspection and repair, Division 08 (sub performs; NM commercial door contractor with an IQP or DHI FDAI lead inspector)",
+   "due": "2026-11-25T15:00:00-07:00",
+   "due_source": "Amd 0002 SF-30 block 14 item 6 'To extend the submission date to Wednesday, November 25, 2026, at 3 PM MS'; SAM responseDeadLine 2026-11-25T15:00-07:00",
+   "portal": "SAM.gov; quote by email to the Contracting Officer (notice 'preferably by email'; RFI 5 'Submissions shall be sent by email'); 27 files in bids/ihs-albuquerque-fire-doors-75H70727Q00003/docs/",
+   "decision": "GO-IF-BONDED (CEO 11/18, HQ confirmed from the documents 2026-11-19): payment bond (Amd 0002) / performance bond (RFI 7), amount and timing not stated, no bid bond; no license in our name, no 52.219-14, subs allowed, walk optional",
+   "decision_note": "Opened 2026-11-19 from the 11/17 SAM sweep (#3). Total SB, NAICS 561210. Single FFP award, unit prices per door and work type on the Government Bid Schedule (4 sites x 16 lines; wood and hollow metal replacement lines added per RFI 25). 90 calendar days after NTP. SCA for inspection and minor repair, Davis-Bacon for replacement, certified payroll. Lead inspector IQP or DHI FDAI (PWS 6.10). ACM not to be disturbed (Government abates). Best value: technical and past performance combined more important than price; lack of past performance not negative. Questions closed 11/13; one bond question drafted (not sent). Gate: written Evergreen Surety bond path by Mon 11/23 12:00 MT, else NO-BID; signable copy to Luke Mon 11/23 15:00.",
+   "prebid": "2026-11-19T12:00:00-07:00",
+   "prebid_mandatory": false,
+   "folder": "bids/ihs-albuquerque-fire-doors-75H70727Q00003",
+   "performer": "Brown Bison bids; Albuquerque commercial door sub performs",
+   "subs": "American Door LLC (Albuquerque) and Door Doctor (Albuquerque) as the two lines; Grant's Steel (Albuquerque) for replacement material; first-touch drafted, humanize gate PASS, not sent",
+   "contact": "stephanie.begay3@ihs.gov",
+   "sub_pricing": "None yet (HQ documents-based estimate in private/)",
+   "next": "Evergreen Surety bond answer by Mon 11/23 12:00 MT; send the sub first-touch (price by Mon 11/23 12:00 MT); optional CO bond question; signable copy to Luke Mon 11/23 15:00"
+  },
+  {
    "id": "ccsd-27-014-pool-operations",
    "agency": "Cherry Creek School District No. 5 (Strategic Sourcing)",
    "title": "RFP 27-014 District Pool Operations, Maintenance, and Cleaning Services (6 high school pools, 7 days/week, 3 water tests per pool per day)",

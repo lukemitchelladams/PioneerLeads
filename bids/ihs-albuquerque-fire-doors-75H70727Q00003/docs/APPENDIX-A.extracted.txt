@@ -1,0 +1,27 @@
+APPENDIX A – Fire Door Repair or Replacement Decision Framework
+This appendix provides the required decision framework to be used by the Contractor during performance requirement ‘3.1 Comprehensive Inspection and Verification’. The decision framework is intended to prioritize repair and maintenance over replacement. Replacement shall only be recommended when repair cannot achieve compliance. The purpose of this matrix is to ensure consistent, documented, and auditable determination of whether existing fire doors and components can be upgraded and reused or whether replacement is technically required to achieve compliance with this PWS.
+The Contractor shall complete this matrix for each fire door under Task 1 and submit it as part of the Task 1 deliverables.
+Decision Criteria
+For each door and system evaluated, the Contractor shall assess the criteria below and document findings. Replacement shall be recommended only when upgrade or configuration is not technically feasible or would not achieve required compliance, functionality, or auditability.
+Determination Summary
+Based on the evaluation above, the Contractor shall make one of the following determinations for each door or system:
+New Install – There is no existing system/components to meet the requirements.
+Repair/Upgrade – Existing system/components can be repaired, upgraded or configured to meet all requirements.
+Partial Replacement – Limited components must be replaced while reusing the remaining system.
+Full Replacement – Existing system cannot be feasibly upgraded to meet requirements.
+The determination shall be clearly stated and supported by the documented criteria above.
+Mandatory Replacement Conditions
+The Contractor shall recommend Full Replacement of a fire door assembly or component when any of the following conditions exist:
+The fire door or frame cannot be brought into compliance with NFPA 80 through adjustment or minor repair
+The assembly has unlisted modifications, field alterations, or damage that voids the fire rating
+Required components (e.g., labels, closers, latching hardware, seals) are missing, incompatible, or cannot be verified as listed/labeled
+The door or frame is warped, delaminated, excessively damaged, or deteriorated beyond repair
+The cost of repair or upgrade approaches or exceeds replacement cost, as determined and justified by the Contractor
+The assembly cannot reliably meet operational or functional requirements (self-closing, latching, clearances, etc.) after repair
+Compliance would require extensive modification not permitted under NFPA 80
+Repair or upgrade shall only be recommended where the Contractor can demonstrate that full compliance can be achieved without compromising the listing, labeling, or long-term performance of the fire door assembly.
+All repair determinations shall be justified with documented rationale and are subject to Government review and approval.
+Government Review and Approval 
+All new installations, upgrades, and replacement determinations documented in Appendix A are subject to Government review and approval. Installation, upgrade, or replacement work shall not proceed until determinations have been reviewed and approved by the Government in accordance with Task 1 acceptance requirements.
+The Government will review and respond to documented new installation, upgrade, partial replacement, or full replacement determinations within fifteen (15) business days of receipt. Determinations may be reviewed and approved on a facility-by-facility basis. Approved determinations may proceed independently without requiring completion or approval of all facilities.
+End of Appendix A

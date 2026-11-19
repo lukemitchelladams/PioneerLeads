@@ -1,0 +1,82 @@
+SAM.gov public record (no API key), fetched 2026-11-19 15:40Z: sgs/v1/search q=75H70727Q00003 (1 result), opps/v2/opportunities/<id>, opps/v3/opportunities/<id>/resources (27 files, every download HTTP 200)
+noticeId (latest, Amd 0002): 7390db3f3afa46d3a8424450ec68c329
+earlier versions (SAM bulk CSV): cac01108888146beb1f3655982f8b579 (original, 2026-10-28), 0a1701af19b94aeaa97f48fa917a5018 and b98e0647deb24f84bc061657cea7491c (2026-10-29), c144fd6e73834d7f8acd2f4ecf625328 (Amd 0001, 2026-11-05)
+title: Fire Door Inspection, Assessment, and Maintenance at the Albuquerque Area IHS Healthcare Facilities
+solicitationNumber: 75H70727Q00003
+type: Solicitation (combined synopsis/solicitation, RFQ, FAR Part 12)
+originalPublishDate: 2026-10-28T16:48:29Z; this version posted 2026-11-13T22:06:46Z; modifications count 4
+responseDeadLine: 2026-11-25T15:00:00-07:00 (America/Denver); originalResponseDate 2026-11-23T15:00:00-07:00
+archiveDate: 2026-12-10
+setAside: SBA, Total Small Business Set-Aside (FAR 19.5)
+naics: 561210 Facilities Support Services; psc: J012
+office: HHS / Indian Health Service / Albuquerque Area Indian Health Svc (75H707), 4101 Indian School Rd NE, Suite 225, Albuquerque NM 87110
+placeOfPerformance (SAM field): Albuquerque, NM 87110 (the four facilities are listed in the description)
+pointOfContact (primary): Stephanie Begay, Contracting Officer, Stephanie.Begay3@ihs.gov
+
+DESCRIPTION (HTML stripped, verbatim):
+Amendment 0002 is issued to provide Appendix A for reference, applicable SCA Wage Determinations, additional clarifying questions to the Excel spreadsheet titled "RFI Log...", clarification that certified payroll and payment bond will be required for applicable DBA work, and to extend the submission due date to Wednesday, November 25, 2026 at 3 PM MST.
+***********************************************
+Amendment 0001 is issued to provide:
+1. Responses to questions/clarifications submitted by interested offerors (Excel spreadsheet titled RFI Log...)
+2. A revised bid schedule (Excel spreadsheet titled RFI Log...)
+3. Applicable life-safety plans, floor plans, door schedules, and photos of door assemblies
+4. To update the submission due date to Tuesday, November 24, 2026, at 3 PM MS.
+To schedule site visits please contact the following:
+-For the Albuquerque Indian Health Center & the Mescalero Indian Health Center: Toscha Stanley, Toscha.Stanley@ihs.gov, 678-895-8908.
+-For the Santa Fe Indian Health Center & Taos Picuris Indian Health Center: Daniel Probert, Daniel.Probert@ihs.gov, 505-946-9511.
+**********************************************
+This has been updated to confirm that the submission deadline is 3:00 PM MS, to provide WDs, and to update the pricing table. You may also utilize your own format.
+***************************************************
+The Indian Health Service (IHS), the Albuquerque Area Indian Health Service (AAIHS) has a requirement for fire door inspection and repairs.
+This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued.
+Solicitation # 75H70727Q00003 is issued as a Request for Quotes (RFQ), unless otherwise indicated herein. The solicitation document and incorporated provision and clauses are those in effect through Federal Acquisition Circular 2026-01.
+The associated North American Industrial Classification System (NAICS) code for this procurement is 561210.
+Set-Aside:
+This is a Total Small Business set-aside.
+A SINGLE AWARD WILL RESULT FROM THIS SOLICITATION.
+Destination shall be for the following Albuquerque Area Indian Health Service facilities:
+Albuquerque Indian Health Center (AIHC), 801 Vassar Drive NE, Albuquerque, NM, 87106
+Mescalero Indian Health Center (MIHC), 318 Abalone Loop, Mescalero, NM, 88340
+Santa Fe Indian Health Center (SFIHC), 1700 Cerrillos Road, Santa Fe, NM 87505
+Taos-Picuris Indian Health Center (TPIHC), 1090 Goat Springs Road, Taos, NM, 87571
+Other Details
+SAM Requirement - This solicitation requires registration with the sam.gov prior to award, pursuant to applicable regulations and guidelines. Registration can be found at https://www.sam.gov. Vendor must have an active UEI number.
+Invoicing – Invoices submitted under an award resulting from this solicitation will be required to utilize the Invoice Processing Platform (IPP) in accordance with HHSAR 352.232-71, Electronic Submission and Processing of Payments Requests (APR 2026).
+Payment – All payments by the Government under an award shall be made by electronic funds transfer (EFT), per FAR 52.232.33 (OCT 2018).
+Quote Submission
+All responsible offerors that respond to this solicitation must submit their quotes by November 23, 2026, by 3:00 PM MS. Quotes shall be sent preferably by email to: Stephanie.Begay3@ihs.gov. Failure to comply with the below terms and conditions may result in offer being determined as non-responsive.
+Questions Submission:
+Interested Offerors must submit questions concerning this solicitation by Friday, November 13, 2026, at 12 PM MS to Stephanie.Begay3@ihs.gov.
+Site visits must be completed by Thursday, November 19, 2026, at 12 PM MS.
+Questions and requests for site visits not received within a reasonable time prior to close of the solicitation will not be considered.
+
+(Note: the "November 23" date in the Quote Submission paragraph is the original date; Amd 0002 extends it to Wednesday, November 25, 2026, 3 PM MS.)
+
+RESOURCES (resourceId | file name | bytes | posted):
+4ccfbcd458e04efb94c50f91677fa8ac | SCA WD 2015-5451 Taos County.pdf | 69999 | 2026-11-13
+aeb7cda22d754158867dd8271b0787f3 | SCA WD 2015-5445 Otero County.pdf | 69538 | 2026-11-13
+a41d2131bd1d487cb3abd2258dade7ae | SCA WD 2015-5449 Santa Fe County.pdf | 69878 | 2026-11-13
+168ffe2b2dbe44a99e290e2ad826b43a | SCA WD 2015-5443 Bernalillo County.pdf | 70053 | 2026-11-13
+e30b4c519ccf40c2b4cc5787bd1b8d62 | Sol_75H70727Q00003_Amd_0002.pdf | 551978 | 2026-11-13
+00abf67046be4c57932bbfaccaf93b07 | RFI Log 75H70727Q00003 Fire Door Insp_Assessmnt_Maint.xlsx | 16470 | 2026-11-13
+f151953fb76d4ac5af562ba70400efd6 | APPENDIX A.docx | 22151 | 2026-11-13
+6e5ddf4423514d568dc8d12a79d099d1 | SFSU_Architectural Door Schedule A-19.2.pdf | 2767372 | 2026-11-05
+2b0e95c77e8843cd9256094bb96b5c01 | TPSU A9 2 Door Window Schedule.pdf | 1726906 | 2026-11-05
+dda9016aa1df472096e1dcb46df87416 | TPSU_E4 Special Systems Plan.pdf | 1315854 | 2026-11-05
+6954016d635640a8a59811db7650e496 | SFSU_Architectural Door Schedule Door Types A-20.2.pdf | 2007448 | 2026-11-05
+9b71fa1323694b40b332d8bfb7dbc768 | SFSU_F A Special System Diagram E-13 1.pdf | 1081997 | 2026-11-05
+11193f110e0348779b4800a90fbb7525 | MSU-A4_Door Schedule Types.pdf | 3128031 | 2026-11-05
+2f5c273102464447b154daed08bf52a4 | MES_LS-1_Life Safety_rev 03-01-19.pdf | 913336 | 2026-11-05
+5e4390e29b0743db8ccec92f8e268899 | RFI Log 75H70726Q00003 Fire Door Insp_Assessmnt_Maint.xlsx | 15836 | 2026-11-05
+a89d100e98d5424b812f4c059179a0de | Attachment B-MSU Fire Door Photographs.pdf | 13860061 | 2026-11-05
+59148e73efb4496f9bfd63acbbc668b3 | Attachment C-TPSU Fire Door Photographs.pdf | 3947256 | 2026-11-05
+055d00d1fba9494cb07931cc69db949c | Attachment A- Fire Door Photographs.pdf | 63967844 | 2026-11-05
+6f60634efaa14f8898a3afa82e15a6a9 | AIHC 1st 3rd Floor_AS-BUILTS 7-01-2021.pdf | 20397523 | 2026-11-05
+bfd1a1c743764eb2b7f044ff2c7f24b9 | Sol_75H70727Q00003_Amd_0001.pdf | 82652 | 2026-11-05
+7b90ab7146b14f8c80200d5526269bb8 | Sol_75H70727Q00003.pdf | 565774 | 2026-10-29
+a720f9f19678402eb1c6eaf01dad2760 | Attachment E- WD.pdf | 969749 | 2026-10-29
+278c4b54490e49acb2dd6d9e80284116 | 2025 Firecheck Inspection Report ABQ Indian Health Center.pdf | 2352898 | 2026-10-28
+27c975b750844efc8236783e3a16a8fd | Santa Fe Asbestos Inspection Report.pdf | 7531965 | 2026-10-28
+144907ecf1184931b7a73e072ded3680 | Santa Fe Lead Inspection Report.pdf | 6843798 | 2026-10-28
+118ae4da761b4fbe80ac5d4c3a16b33e | Albuquerque Service Unit Building 21 Lead Report.pdf | 414426 | 2026-10-28
+d67a81cc62c64c768f865e2b06a5c996 | Albuquerque Service Unit Building 21 Asbestos Report.pdf | 536948 | 2026-10-28
