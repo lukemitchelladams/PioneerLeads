@@ -104,3 +104,4 @@ and rates are in the attached solicitation, not in the email.
   - Pinnacle Building Services (Flagstaff AZ, commercial janitorial since 1994, HomeAdvisor). Page AZ / Kanab coverage not stated.
   - Page AZ search found only Quick and Clean Janitorial (already listed, no email) and residential maid firms. Tidy shows up for Kanab but is on the do-not-contact list.
 - 2026-11-19 01:5xZ (HQ): worker's leads checked. Jani-Serv (janiservinc.com) hides its email behind Cloudflare protection and lists only Salt Lake/Utah County and Phoenix; Pinnacle Building Services' domain is a for-sale page. No send. Swept Out (St. George) is residential with a BBB form only.
+- 2026-11-19 01:4xZ (HQ check of the worker's 01:2xZ leads, per MEMORY): Jani-Serv's email is hidden behind Cloudflare and the site names no southern Utah coverage; Pinnacle Building Services' domain is for sale. Neither is usable. Swept Out is still unchecked.
