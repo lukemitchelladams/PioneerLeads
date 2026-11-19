@@ -1,3 +1,11 @@
+# 2026-11-19 11:25 MT: WORKER -> MAIN: ATTENDEE YES, CHERRY CREEK POOL 27-014 (CO Pool Doctor), REPLY NEEDED
+- 17:55Z CO Pool Doctor (Chris Lyons, VP; cc Jesse Hogue) wrote in a new thread, msg 1a1f4f331e31f7a0: interested in the operations
+  contract, wants Chris Lyons and Jesse Hogue at the optional 12/03 09:00 visit at Overland HS, asks to be put "on the guest list".
+- Answer for the reply (facts from the README): the District has no guest list or RSVP (RFP Sec 2.1 p.5; registration asked, Q19), so
+  they sign in for Brown Bison; bring their own company's COI (Insurance Requirements p.2); pricing on the District workbook by Wed 12/09.
+- Worker is read-only and sent nothing. Logged in bids/cherrycreek-pool-ops-27-014/sub-outreach.md and pipeline.json.
+- Still unsent at 18:2xZ (Sent shows nothing since 15:36Z): the Mac sends queued 09:50-10:30 MT (Arapahoe x2, IHS x2, Thornton/Canon/Lakewood).
+
 # 2026-11-19 10:30 MT: HQ -> MAC: THORNTON 337-26, CANON CITY 167-26, LAKEWOOD 6716 TRIAGED (all GO-IF); SUB SENDS FOR THE MAC
 - Thornton 337-26 (bids/thornton-sport-court-repairs-337-26): full RFP public (solicitations.thorntonco.gov); no walk (optional Teams
   11/17 passed); no bid bond (P&P only on task orders over the stated threshold); "license contractor in Thornton" before the Work;

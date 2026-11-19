@@ -3207,3 +3207,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - Dashboard 16:35Z: bids v449 (5c40310feccc5877e366069e5e68ed96), events v452 (26a69713b56aa6631b335a49f1532f7f), sources v398 (4421ceab9aaf4541a5fc5063719a97a7); portal_feed v238 and doc_gaps v23 have only updated.at bumped; old blobs deleted. GO now 14 (IHS, Thornton, Canon 167-26 and Lakewood added; Pagosa SUBMITTED). Sub pricing in hand 3/14 (PSD, Canon 129-26, Widefield partial).
 
 - 2026-11-19 17:21Z worker hourly: scan 16:35Z still logged out (BidNet/SAM/Bonfire creds unset; SAM down 15 runs), 165 open, 0 new matches. Inbox: 0 new inbound. Mac has not sent the six HQ-queued sub emails (Arapahoe x2, IHS x2, Thornton/Canon/Lakewood); Arapahoe replies are asked by Fri 12:00, so every hour unsent eats the painters' window. No insurance certificate.
+
+- 2026-11-19 18:21Z worker hourly: scan 17:36Z logged out (16 runs SAM down), 162 open (3 closed today: Weld RTU, DPS fire alarm, Pagosa mirror). CO Pool Doctor IN on Cherry Creek pool 27-014 with two attendees for the optional 12/03 visit (second sub after Blue Mind); reply needed from HQ/Mac. Mac's queued sub sends still not out.

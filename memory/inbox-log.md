@@ -721,3 +721,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - Sent since 15:36Z: none. The Mac has NOT yet sent the HQ-queued sub emails (Arapahoe second touch + Paint EZ, queued 09:50 MT; IHS sub first touch + CO bond question, 10:10 MT; Thornton/Canon 167-26/Lakewood subs, 10:30 MT).
 - CEO reply set (Arapahoe painters, Kanab subs, BGNDRF sub, HOODZ, Gila electricians, Blue Mind): no replies this hour. No attendee yes.
 - Bounces: none new (Core 3 Drywall delay 1a1f0139cf486fef still the last; final window ~11/20 17:12Z). Insurance certificate: not received.
+
+## 2026-11-19 18:21Z (11:21 MT) worker hourly
+- 17:55Z CO Pool Doctor (Chris Lyons VP, cc Jesse Hogue), Cherry Creek pool 27-014, msg 1a1f4f331e31f7a0: IN, wants both at the optional 12/03 09:00 visit, asks for the "guest list". Reply needed (no District RSVP; sign in for Brown Bison; bring own COI). Flagged to MAIN in COORDINATION.md.
+- Sent since 15:36Z: none. Mac sub sends queued 09:50-10:30 MT still unsent.
+- No other inbound; no new bounces; no insurance certificate. CEO reply set (Arapahoe painters, Kanab, BGNDRF, HOODZ, Gila, Blue Mind): nothing new.
