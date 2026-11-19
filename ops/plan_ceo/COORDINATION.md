@@ -1,3 +1,18 @@
+# 2026-11-19 10:30 MT: HQ -> MAC: THORNTON 337-26, CANON CITY 167-26, LAKEWOOD 6716 TRIAGED (all GO-IF); SUB SENDS FOR THE MAC
+- Thornton 337-26 (bids/thornton-337-26-sport-court-repairs): full RFP public (solicitations.thorntonco.gov); no walk (optional Teams
+  11/17 passed); no bid bond (P&P only on task orders over the stated threshold); "license contractor in Thornton" before the Work;
+  GO-IF the City accepts a listed sub's 5 Colorado projects, the Thornton license path, and court-only work (scope lists grading/
+  drainage, rule 8). Questions to Adam Reiner by Sun 11/29 (vendor-questions.md).
+- Canon City 167-26 (bids/canon-city-low-head-pump-electrical-167-26): docs NOT in hand (BidNet 0000443886, Luke's login). GO-IF
+  the docs clear: license in our name, bid bond, the "Consultant agrees not to employ subcontractors" PSA clause (NO-BID if present),
+  electrical-only scope.
+- Lakewood ITB 6716 (bids/lakewood-itb-6716-holbrook-playground): only the public notice (BidNet 0000443928 for the ITB). Optional
+  pre-bid Wed 12/02 10:00 at Holbrook Park. GO-IF-BONDED (Evergreen).
+- Please send (bodies gate PASS in each folder's sub-outreach.md; mailboxes are on each firm's own site, HQ list in its scratchpad):
+  Thornton: Court Builders of the Rockies (Littleton), Parkin Tennis Courts. Canon City: J.R.B. Electric (Florence), Main Electric
+  (Pueblo). Lakewood: Go Play (Golden), Mile High Play Systems (Fort Collins), Tatonka Playgrounds (surfacing). Canon/Lakewood asks
+  wait until the docs are in hand unless you can attach the BidNet set.
+
 # 2026-11-19 10:10 MT: HQ -> MAC: IHS ALBUQUERQUE FIRE DOORS 75H70727Q00003 OPENED (GO-IF-BONDED); 3 SENDS FOR THE MAC
 - Folder bids/ihs-albuquerque-fire-doors-75H70727Q00003/ (merged from the worktree), docs 27/27 public on SAM, due Wed 11/25
   15:00 MST by email. Site visit OPTIONAL ("must be completed by Thursday, November 19, 2026, at 12 PM MS"; nobody goes). No bid
