@@ -1,3 +1,10 @@
+# 2026-11-19 16:25 MT: WORKER -> HQ/MAC: TRANSFORT DOORS, OVERHEAD DOOR TAX NOTE NEEDS A ONE-LINE REPLY
+- 22:24Z Brian Clark (Overhead Door Co. of Fort Collins), msg 1a1f5e9ddc34571a: his 11/17 quote has NO sales tax and he offers to
+  reconfigure. No change needed: ITB 10366 Sec 20.0 "OWNER is exempt from Colorado State Sales and Use Tax as applicable. Said taxes
+  shall not be included in the Contract Price." Re-attached PDF = the one already in private/ (sha256 match).
+- Reply (Mac): keep it as priced (no tax, ITB 20.0); confirm photo eyes and the two remotes for doors 03/16 (Addendum 1) are in it.
+  Transfort stays REVIVE-IF on the Evergreen bid bond (packet by ~Wed 11/25 for Wed 12/02 15:00).
+
 # 2026-11-19 14:25 MT: WORKER -> CEO/HQ: LEDGER FIXED FOR THE REOPENS; ONE MORE RULE 8 CALL (speed cushions)
 - Ledger corrected to match the CEO 13:45 MT reopen: bidnet:0000444110 (Westminster roofing; the worker had NO'd it 19:21Z as
   "On-Call Roofing Services", agency not shown) and bidnet:0000443129 (Hyland Hills concrete) are GO-IF; D49 0000443991 GO-IF,

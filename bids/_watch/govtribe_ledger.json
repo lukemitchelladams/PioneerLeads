@@ -3189,6 +3189,12 @@
    "verdict": "NO",
    "why": "Vehicle purchase: a new-vehicle sale needs a Colorado motor vehicle dealer license in the seller's name (a disqualifier, OVERDRIVE rule 3), and it is a one-unit commodity buy (rule 9). Not a service Brown Bison can prime.",
    "at": "2026-11-19T22:25:00Z"
+  },
+  "bidnet:0000444163": {
+   "name": "On-Call Electrical Service Support for Water and Sewer (BidNet 0000444163, closes 2026-12-17)",
+   "verdict": "EVALUATE",
+   "why": "HQ 6e4dcba: electrical service is our trade; check the scope for trenching/pipe work (rule 8); docs need Luke's BidNet login; watchlisted.",
+   "at": "2026-11-19T23:25:00Z"
   }
  },
  "watched": {
@@ -3374,6 +3380,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T22:21:00Z",
+ "last_hourly_check": "2026-11-19T23:21:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }

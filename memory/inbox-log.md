@@ -746,3 +746,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-19 22:21Z (15:21 MT) worker hourly
 - 21:46Z USFS Steve Holly (Pagosa RFQ 1240LP27Q0008), msg 1a1f5c680105b220: "The below solicitation response has been received." Receipt confirmed; README status updated to SUBMITTED + receipt.
 - Sent newer_than:2h: none (last send 15:36Z). No bounces, no certificate, no CRM brief. Pool Doctor still unanswered.
+
+## 2026-11-19 23:21Z (16:21 MT) worker hourly
+- 22:24Z Overhead Door Co. of Fort Collins (Transfort ITB 10366), msg 1a1f5e9ddc34571a: quote excludes sales tax, offers to reconfigure. ITB 20.0 says the City is exempt and taxes are not included, so no change; reply owed (flagged to HQ/Mac). PDF identical to private/ copy.
+- 22:55Z BidNet: Carbon Valley Mechanical Service & PM addendum (msg 1a1f6057c989f1e3). Bid is NO-BID (missed mandatory walk 11/10); logged only.
+- Sent newer_than:2h: none (last send 15:36Z). No bounces, no certificate, no CRM brief.
