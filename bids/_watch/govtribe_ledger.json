@@ -3141,6 +3141,12 @@
    "verdict": "EVALUATE",
    "why": "HVAC service, our trade. Agency, scope and pre-bid not in hand; BidNet says documents need no login; watchlisted by HQ so the next scan files them. Rule 0 check on arrival. Web search 00:2xZ found no copy elsewhere.",
    "at": "2026-11-19T00:30:00Z"
+  },
+  "bidnet:0000443314": {
+   "name": "Fort Collins Drake Water Reclamation Facility Septage Station",
+   "verdict": "NO",
+   "why": "Water-reclamation process construction, heavy civil (rule 8). Agrees with HQ.",
+   "at": "2026-11-19T01:30:00Z"
   }
  },
  "watched": {
@@ -3326,6 +3332,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-19T00:30:00Z",
+ "last_hourly_check": "2026-11-19T01:30:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
