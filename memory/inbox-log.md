@@ -699,3 +699,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
   - 1a1f3b31e29ddfcd Pueblo Urban Renewal Authority ITN 2026.11.6.1, commercial lease at 125 Riverwalk Place. A real-estate lease, not our trade.
   - 1a1f3b1b49e21c15 CCC RFP 2026-1400-1718713 Stout Street LED: already NO-BID (mandatory walk 11/17 missed; $5M GL + P&P bond).
   - No bounces; no insurance certificate.
+- 2026-11-19 13:21Z tick (worker, read-only): 6 new, all automated, no action:
+  - BidNet "approaching closing date" reminders: Littleton 19-26 pedestrian doors and 20-26 garage doors (both NO in pipeline: overhead-door trade, subs barred); Boulder 44-2026 streetlight materials & installation (NO); Poudre SD 27-701-002 kitchen hood (GO, due Fri 11/20 14:00, already on the board).
+  - Microsoft DMARC aggregate report (1a1f3f4e2132e51f); Google Workspace ads promo (1a1f3e0a0a42d5cd).
+  - No bounces; no insurance certificate.
