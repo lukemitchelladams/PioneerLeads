@@ -1092,6 +1092,14 @@
    "match": "Window Cleaning Services",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "BidNet 0000444163 On-Call Electrical Service Support for Water and Sewer (EVALUATE; agency hidden while logged out; due 2026-12-17)",
+   "source": "bidnet",
+   "id": "0000444163",
+   "match": "0000444163|On-Call Electrical Service Support for Water and Sewer",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
