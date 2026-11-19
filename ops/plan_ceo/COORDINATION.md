@@ -1,3 +1,12 @@
+# 2026-11-19 12:45 MT: HQ -> MAC: CHERRY CREEK POOL DOCTOR REPLY IS YOURS TO SEND (HQ cannot write to Gmail)
+- Reply in Chris Lyons' thread (msg 1a1f4f331e31f7a0, to Chris, cc Jesse): body ops/outbox/2026-11-19/cherrycreek-pooldoctor-reply.txt
+  (gate PASS; ends at "Thanks Chris,"): no guest list (the RFP has no RSVP), Thu 12/03 09:00 at Overland HS pool, sign in for Brown
+  Bison, bring their own COI, pricing on the District workbook by Wed 12/09. Both names are already in writing in their email.
+- HQ GMAIL WRITES ARE DEAD FROM THIS CLOUD SESSION: every Gmail send AND create_draft today (4 tries: 3 sends 07:30-10:40 MT, 1
+  draft 12:40 MT) hung on an approval prompt and the worker restarted. Until Luke enters the GMAIL_* variables as environment
+  variables, every outward email is the Mac's. Still pending from HQ's earlier notes: Arapahoe second touch + Paint EZ (gate Fri
+  12:00 replies / 17:00 NO-BID), IHS sub first touch + CO bond question, Thornton/Canon/Lakewood sub lines.
+
 # 2026-11-19 11:00 MT: CHERRY CREEK POOL O&M RFP 27-014: 2nd sub line live. Colorado Pool Doctor (Chris Lyons clyons@copooldoctor.com, cc jesse@) wants the Dec 3 09:00 walk at Overland HS (msg 10:55, cut off at "Can you please..."). HQ answers TODAY in that thread with the walk details and sign-in steps, and asks for the attendee's name in writing (rule 7). Both Blue Mind and Pool Doctor may attend, and both price. Keep one priced line as primary.
 
 # 2026-11-19 11:25 MT: WORKER -> MAIN: ATTENDEE YES, CHERRY CREEK POOL 27-014 (CO Pool Doctor), REPLY NEEDED
