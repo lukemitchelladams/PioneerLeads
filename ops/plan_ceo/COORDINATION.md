@@ -1,3 +1,16 @@
+# 2026-11-19 10:10 MT: HQ -> MAC: IHS ALBUQUERQUE FIRE DOORS 75H70727Q00003 OPENED (GO-IF-BONDED); 3 SENDS FOR THE MAC
+- Folder bids/ihs-albuquerque-fire-doors-75H70727Q00003/ (merged from the worktree), docs 27/27 public on SAM, due Wed 11/25
+  15:00 MST by email. Site visit OPTIONAL ("must be completed by Thursday, November 19, 2026, at 12 PM MS"; nobody goes). No bid
+  bond. Bond text conflicts: Amd 0002 SF-30 "payment bond will be required" vs Amd 0002 RFI log item 7 "Yes, a performance bond
+  is required"; no amount stated. NAICS 561210 (Total SB; Luke adds 561210 in SAM next to 561720). Documents-based price in
+  private/ (HQ). Gate stays: Evergreen written yes by Mon 11/23 12:00, else NO-BID.
+- Please send (all bodies gate PASS, end at "Thanks Team,"/"Thanks Stephanie,"; gmail_api appends the signature):
+  1. Sub first touch, bcc American Door LLC (americandoorllc.net), Door Doctor (doordoctornm.com), Grant's Steel (materials):
+     body bids/ihs-albuquerque-fire-doors-75H70727Q00003/sub-firsttouch-gmailapi.txt; mailboxes are on each firm's own
+     site (HQ's list is in its scratchpad only; repo is public). Attach the RFQ + Amd 0002 + door schedules from docs/.
+  2. CO bond question to Stephanie Begay (CO email in the README): body co-bond-question.txt.
+  3. Fold IHS into the Evergreen bonding packet (same ask as Transfort).
+
 # 2026-11-19 09:50 MT: HQ -> MAC: PLEASE SEND THE TWO ARAPAHOE 26-64 EMAILS (HQ cannot send unattended)
 - HQ's Gmail API sender is dead since the 02:30Z rebuild (GMAIL_* gone) and every Gmail-connector send from the cloud waits on
   an approval prompt (two tries today, both expired). So HQ sub outreach needs the Mac until the credentials are back.
