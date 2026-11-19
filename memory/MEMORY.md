@@ -3156,3 +3156,10 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - COORDINATION.md note for the CEO to relay: Luke adds SAM_API_KEY, BIDNET_USER, BIDNET_PASS, GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN as environment variables (durable), values typed by Luke.
 - LESSON: private/ files live only in the container; mirror anything that matters to Luke's Gmail/Drive (emailed copies saved Pagosa).
 - 04:35Z scan: logged out, push 5ac7ca1, bidnet 672/87 (public), samgov 99 partial, coloradovss 69/4, bonfire 2/1. 0 new.
+
+### 2026-11-19 05:00-05:25Z HQ: private/ restore after the container rebuild
+- Restored from Gmail copies (gitignored private/, verified with git check-ignore): PSD signable package + Attachment D fallback + upload checklist + form 11 v3; BGNDRF quote package; Eagle RFI PDF; Tolin's two Canon PDFs (msg 1a1f0313efdeeaa6). Pagosa private/ was restored earlier.
+- Rebuilt from the session log: Gila PRICING-WORKSHEET.md + compute_price.py + filled Attachment B (arithmetic PASS, totals match the 11/18 figures); Canon PRICING-WORKSHEET.md (Tolin x 1.15, Tolin lines sum check PASS).
+- Kanab and DEN worksheets were built by subagents whose transcripts died with the rebuild; two background agents are rebuilding them from docs/ (Kanab against the surviving 11/18 sensitivity table). Figures stay in private/.
+- Arapahoe 26-64: no painter has answered the 11/17 first touch (Core 3 delivery delayed). Second touch drafted (gate PASS, scratchpad arapahoe/second-touch.txt), to send at the morning tick with RFB attached; reply asked by Fri 11/20 noon; NO-BID Fri 11/20 17:00 if nobody names an attendee. Note: the RFB requires a Certificate of Liability Insurance WITH the bid (p.8 III); coverage is not in force yet.
+- Lesson: subagent transcripts under /tmp die with the container; anything a subagent prices must be summarized into the main session (figures in private/ only) before it is relied on.
