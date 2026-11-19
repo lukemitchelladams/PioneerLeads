@@ -4445,5 +4445,43 @@ check("_diff: a bulk-file row saved before the marker existed (via=bulk, []) is 
 check("_carry_documents: a source that keeps no document list (DIBBS) gets no marker and no list, degraded or not",
       _g_found["dibbs:d"] == {"source": "dibbs", "id": "d", "title": "BEARING", "closing": "2099-01-01"}, _g_found["dibbs:d"])
 
+# ---------------------------------------------------------------- REPORT.md headline leads with LOGGED OUT sources (2026-11-19)
+# BIDNET_USER/BIDNET_PASS and SAM_API_KEY unset: the health table said so, the headline only read "not scanned this run ...: dibbs"
+print("REPORT.md headline: LOGGED OUT sources first when their credentials are unset")
+_lo_bid = {"reachable": True, "reach_note": "HTTP 200", "creds": {"BIDNET_USER": False, "BIDNET_PASS": False}, "logged_in": False,
+           "login_note": "BIDNET_USER/BIDNET_PASS not set", "count": 689, "matches": 87, "last_success": "2026-11-19T13:36:29+00:00",
+           "errors": []}
+_lo_sam = {"reachable": True, "reach_note": "HTTP 200", "creds": {"SAM_API_KEY": False}, "logged_in": False,
+           "login_note": "SAM_API_KEY not set; +104 from the nightly bulk file", "count": 104, "matches": 104, "carried_forward": True,
+           "complete": False, "last_success": "2026-11-19T13:36:29+00:00", "down_since": "2026-11-19T02:35:40+00:00", "down_runs": 12,
+           "errors": ["SAM_API_KEY not set", "samgov" + run.INCOMPLETE_NOTE]}
+_lo_bon = {"reachable": True, "reach_note": "HTTP 200", "creds": {"BONFIRE_USER": True, "BONFIRE_PASS": True}, "logged_in": True,
+           "login_note": "session reused", "count": 2, "matches": 1, "last_success": "2026-11-19T13:36:29+00:00", "errors": []}
+_lo_vss = {"reachable": True, "reach_note": "HTTP 200", "creds": {}, "logged_in": False, "login_note": "public list (no login)",
+           "count": 69, "matches": 4, "last_success": "2026-11-19T13:36:29+00:00", "errors": []}
+_lo_dib = {"reachable": True, "reach_note": "HTTP 200", "creds": {}, "logged_in": False, "login_note": "", "count": 307, "matches": 189,
+           "last_success": "2026-10-20T04:40:19+00:00", "errors": [], "not_scanned_this_run": True}
+_lo_r = {"started": "2026-11-19T13:36:29+00:00", "found": {}, "new": {}, "changed": {}, "closed": {}, "downloads": {}, "missing_watch": [],
+         "filed": [], "health": {"dibbs": _lo_dib, "bidnet": _lo_bid, "bonfire": _lo_bon, "samgov": _lo_sam, "coloradovss": _lo_vss}}
+
+
+def _lo_headline(r):
+    return next(ln for ln in run.render(r).splitlines() if ln.startswith("**Headline:**"))
+
+
+_lo_head = _lo_headline(_lo_r)
+print(f"  {_lo_head}")
+check("case 1, bidnet and samgov credentials unset: the headline starts with LOGGED OUT, names both with the unset names and "
+      "samgov's down-since time, and the existing parts follow unchanged",
+      _lo_head.startswith("**Headline:** LOGGED OUT:")
+      and _lo_head == "**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since "
+                      "2026-11-19T02:35Z); not scanned this run (previous results kept): dibbs", _lo_head)
+_lo_set = {"bidnet": {**_lo_bid, "creds": {"BIDNET_USER": True, "BIDNET_PASS": True}, "logged_in": True, "login_note": "session reused"},
+           "samgov": {**_lo_sam, "creds": {"SAM_API_KEY": True}, "logged_in": True, "login_note": "API key; +104 from the nightly bulk file"}}
+_lo_r2 = {**_lo_r, "health": {**_lo_r["health"], **_lo_set}}
+check("case 2, every credential set: no LOGGED OUT, the headline exactly as before",
+      "LOGGED OUT" not in run.render(_lo_r2)
+      and _lo_headline(_lo_r2) == "**Headline:** not scanned this run (previous results kept): dibbs", _lo_headline(_lo_r2))
+
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)

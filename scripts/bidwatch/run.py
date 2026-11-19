@@ -1302,6 +1302,33 @@ def render_last_scan(r: dict, watched_keys=None) -> str:
     return "\n".join(lines) + "\n"
 
 
+# The sources that read in full only when logged in: BidNet's documents are members-only, SAM.gov without its API key is the
+# nightly bulk file only, Bonfire's documents need the vendor account. With the credentials unset (2026-11-19: BIDNET_USER/
+# BIDNET_PASS and SAM_API_KEY) the health table said so, but the headline only read "not scanned this run ...: dibbs".
+LOGIN_SOURCES = ("bidnet", "samgov", "bonfire")
+
+
+def logged_out_phrase(health: dict, now: str | None = None) -> str | None:
+    """'LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z)',
+    REPORT.md's headline opening, or None. A LOGIN_SOURCES source counts when the health table's "Credentials set" column
+    (v["creds"]) has a name unset and its "Logged in" column is not yes (a synced BidNet session logs in without them); a
+    source not scanned this run is left out (its credentials are an earlier run's). "down since" is down_note()'s timestamp,
+    from the second consecutive BLIND/PARTIAL run on, as the health table and the Counts line quote it."""
+    parts = []
+    for s in LOGIN_SOURCES:
+        v = health.get(s)
+        if not v or v.get("not_scanned_this_run") or v.get("logged_in"):
+            continue
+        unset = [k for k, ok in (v.get("creds") or {}).items() if not ok]
+        if not unset:
+            continue
+        why = "/".join(unset) + " not set"
+        if down_note(v, now):
+            why += f", down since {_since_text(v['down_since'])}"
+        parts.append(f"{s} ({why})")
+    return "LOGGED OUT: " + ", ".join(parts) if parts else None
+
+
 def write_last_scan_crash(started: str, error: str) -> str:
     """A scan that died before writing its files still leaves a current LAST_SCAN.md, so the operator never reads the
     previous hour's digest as this hour's. Never raises."""
@@ -1322,6 +1349,9 @@ def render(r: dict) -> str:
              and (not v["reachable"] or v.get("blind") or (not v["count"] and s != "dibbs"))]
     carried = [s for s, v in h.items() if v.get("not_scanned_this_run")]
     head = []
+    logged_out = logged_out_phrase(h, r.get("started"))
+    if logged_out:  # first, before everything else this run did: the main sources are reading without their login
+        head.append(logged_out)
     if r["new"]:
         head.append(f"{len(r['new'])} NEW matching bids")
     if r["changed"]:
