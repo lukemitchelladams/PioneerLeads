@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-19T16:35:53+00:00
+# Bid watch report — 2026-11-19T17:36:19+00:00
 
 **Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 693 | BUYER 455, AGGREGATE 239 | 87 | 2026-11-19T16:35:53+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T16:35:53+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (14 h, 15 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T16:35:53+00:00 | 2 |
-| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 4 | 2026-11-19T16:35:53+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 686 | BUYER 456, AGGREGATE 231 | 84 | 2026-11-19T17:36:19+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-19T17:36:19+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (15 h, 16 runs), list carried forward; SAM_API_KEY not set; +104 from the nightly bulk file | 104 |  | 104 | 2026-11-19T17:36:19+00:00 | 2 |
+| coloradovss | yes | n/a | public list (no login) | 70 | open 70 | 4 | 2026-11-19T17:36:19+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -56,6 +56,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Larimer County Jail Fire Alarm Inspection & Maintenance (EVALUATE) (bidnet)
 - Douglas County 037-26 Generator PM & Repairs (bidnet)
 - Snowmelt Boiler Plant (EVALUATE; federal mirror; closing moved to 11/15; agency/docs TBD) (bidnet)
+- Weld County B2600111 Jail 1 East Gym RTU Replacement (GO pending docs; MANDATORY prebid 11/05 09:00) (bidnet)
 - Morgan County 2026-1119-001 Roof Replacement & Gutter (DECIDE; walk 10/29 recommended) (bidnet)
 - El Paso County RFP 26-074 Water Treatment Chemicals + service (GO, H2) (bidnet)
 - Water Treatment Chemicals (H2 check: service component?) B (bidnet)
@@ -67,7 +68,14 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - Arvada 26-FAC-055 On-Call General Contractor Services (EVALUATE; due 11/17) (bidnet)
 - Longmont RFP-426089 On-Call Specialized Electrical, treatment operations (EVALUATE) (bidnet)
 - Weld SD6 Coiling Door/Grill, Franklin MS (EVALUATE; MANDATORY walk 11/02) (bidnet)
+- BidNet mirror of USFS Pagosa Ranger District janitorial 1240LP27Q0008 (same bid; quote goes by email per the SAM.gov solicitation, not on BidNet) (bidnet)
 - La Plata County IFB 26-053-1215 On-Call Services - Various Trades (GO; due Tue 11/17 10:00 MST by email) (bidnet)
+
+## No longer listed (closed/awarded)
+
+- Fire Alarm Replacement and Renovations 2027 and 2028 (bidnet, due 2026-11-19)
+- Jail 1 East Gym RTU Replacement (bidnet, due 2026-11-19)
+- Janitorial services- Pagsoa Ranger District (bidnet, due 2026-11-19)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -105,15 +113,12 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (165)
+## All open matching bids, excluding DIBBS parts RFQs (162)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
 | brownbison | bidnet | Mesa County | Mesa County Storage Facility Fire Protection System | 2026-11-19 (0d) | 2026-11-03 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Mesa-County-Storage-Facility-Fire-Protection-System/0000441227?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet | Weld County | Jail 1 East Gym RTU Replacement | 2026-11-19 (0d) | 2026-11-05 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Jail-1-East-Gym-RTU-Replacement/0000440763?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet | City and County of Denver Human Services | On-Call Security Access Control Services | 2026-11-19 (0d) | 2026-11-03 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Security-Access-Control-Services/0000437039?purchasingGroupId=8409951&origin=1 |
-| brownbison | bidnet | Denver Public Schools Project Type RFP - | Fire Alarm Replacement and Renovations 2027 and 2028 | 2026-11-19 (0d) | 2026-10-27 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Fire-Alarm-Replacement-and-Renovations-2027-and-2028/0000439940?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet |  | Janitorial services- Pagsoa Ranger District (paid-tier notice) | 2026-11-19 (0d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2723145047/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | MUNICIPAL RESTROOM, SHOWER, OFFICE AND STORAGE FACILITY DESIGN AND CONSTRUCTION (paid-tier notice) | 2026-11-19 (0d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444205093628/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | samgov | AGRICULTURE, DEPARTMENT OF / FOREST SERV | Janitorial services- Pagsoa Ranger District | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/1d1b8d72c87844289d3efb4990073ded/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEPT OF THE NAVY / NAV | 30--GEAR, PINION (place of performance not stated; PA buying office) | 2026-11-19 (0d) |  | https://sam.gov/workspace/contract/opp/769e7021c09444ef942325ad392d8628/view |
@@ -279,4 +284,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
 - samgov: SAM_API_KEY not set
-- samgov: down since 2026-11-19T02:35Z (14 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (15 h); previous open bids carried forward
