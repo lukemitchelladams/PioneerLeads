@@ -2400,6 +2400,21 @@
   "url": "https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4"
  },
  {
+  "key": "bidnet:0000444106",
+  "source": "bidnet",
+  "agency": "",
+  "title": "Window Cleaning Services",
+  "sol": "",
+  "closing": "2026-12-16",
+  "posted": "2026-11-19",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": true,
+  "new_24h": true,
+  "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning-Services/0000444106?purchasingGroupId=8409951&origin=1"
+ },
+ {
   "key": "bidnet:444226398382",
   "source": "bidnet",
   "agency": "",
