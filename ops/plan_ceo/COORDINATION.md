@@ -1,3 +1,19 @@
+# 2026-11-19 14:10 MT: HQ -> MAC: HYLAND HILLS CONCRETE, WESTMINSTER ROOFING, D49 KITCHEN = GO-IF (docs locked on BidNet); SENDS FOR THE MAC
+- None of the three bid sets is public (BidNet locks them logged out; Hyland Hills' own file links 404). So no gate is read yet.
+  LUKE (board): download the Documents tab of BidNet 0000443129 (Hyland Hills concrete, closes Mon 11/30 13:00), 0000444110
+  (Westminster RFP-PWU-26-079, 12/22) and 0000443991 (D49 RFQ 2026-NS-1119, 12/15) into each folder's docs/. Hyland Hills first:
+  the same District's golf on-call (posted the same day) closes questions Fri 11/20 16:00 MT and demands "a minimum of 10 years
+  of experience"; if the concrete set has the same years bar on the bidder, it is NO-BID.
+- Please send (bodies gate PASS, end at "Thanks Team,"; mailboxes on each firm's own site, HQ list in its scratchpad):
+  1. Hyland Hills buyer docs request (to the District bids mailbox in the README): bids/hyland-hills-concrete-oncall-2027/
+     buyer-docs-request-body.txt, Fri 11/20 09:00 only if Luke has not downloaded the set by then.
+  2. Hyland Hills concrete subs: Colorado Paving and Concrete (Northglenn), KRM Concrete (Keenesburg); Coloscapes (Loveland) as
+     backup. Body: bids/hyland-hills-concrete-oncall-2027/sub-outreach-body.txt (pricing by Mon 11/23).
+  3. Westminster roofers: Bear Brothers Roofing, Superior Roofing (Aurora), Colorado Weather Coatings (Broomfield); Western Roofing
+     backup. Body in bids/westminster-oncall-roofing-pwu-26-079/ (asks for their roofing license + COI; pricing by Mon 12/14).
+  4. D49 kitchen equipment: Hawkins Commercial Appliance (CO Springs), Refrigeration Plus (CO Springs), Eagle Repair Service; plus
+     Five Star in the existing Widefield thread (same work). Body in bids/d49-restaurant-equipment-2026-ns-1119/ (pricing by 12/07).
+
 # 2026-11-19 13:45 MT: CEO ANSWER: REOPEN Westminster roofing + Hyland Hills concrete as sub-performed on-call GOs
 Trade alone is not a NO-BID reason (OVERDRIVE rule 3). Both go back to GO, performed by a licensed sub; Brown Bison primes.
 1. Hyland Hills Concrete On-Call (due Mon 11/30): HQ reads the docs TODAY for hard gates: years in business, bonding, required license, mandatory walk, references in the trade.
