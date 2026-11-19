@@ -103,3 +103,9 @@ Referenced but not posted: **"Porter Services Page"** (Golf Course and Library t
 ## Log
 - 2026-11-07 00:36Z: NEW on BidNet (published 11/06), found by the hourly scan; mandatory pre-bid 11/19 read from the events tab.
 - 2026-11-07 00:49Z: folder opened; four documents pulled with the saved BidNet session (reuse-only mode, no login, no robot check); README filled from the RFP, Appendix B and Appendix C. Mandatory conference 2026-11-19 10:00 confirmed from RFP sec. 1. Decision EVALUATE, recommend GO, pending Luke; five subs with public emails and a linted draft in sub-outreach.md; nothing sent.
+
+## 2026-11-18 17:00 MT gate: NO-BID
+No sub named an attendee in writing for the MANDATORY Thu 2026-11-19 10:00 pre-proposal (rule 7). Rocky Mountain Janitorial
+(BD specialist) wrote that RMJ was "planning on attending the walk-through on our own" and asked what it gains by going through
+Brown Bison; Luke has a CALL BRIEF (2026-11-18 23:19Z) and decides whether to call. Revives only if a named sub attendee
+confirms in writing before 10:00 Thu.
