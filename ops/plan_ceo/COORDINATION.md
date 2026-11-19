@@ -1,3 +1,5 @@
+# 2026-11-18 22:35 MT: LAFAYETTE RFP-26-33-FM = NO-BID (no attendee for the mandatory 11/19 pre-proposal). Remove from the 4-week queue (wk 12/14 is now Aims only).
+
 # 2026-11-18 20:58 MT: CORRECTION: Spring Creek Pavilion (0000440811) STAYS NO-BID per bids/_pipeline.md (GC needs 4 yrs continuous operation; mandatory tour 11/04 missed; structural CMU). No HQ work. Log Granite Property Services (Christopher Hardman, chardman@gpserv.co) in the CRM as a finish-trades sub contact for future building-repair bids. Do not reply about this bid.
 
 # 2026-11-18 19:15 MT: PAGOSA IS SIGNED. HQ: STOP asking Luke for Pagosa signatures (your 18:06 email to Luke is superseded)
