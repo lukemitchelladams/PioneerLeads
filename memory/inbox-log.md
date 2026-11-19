@@ -687,3 +687,4 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-19 01:21Z tick (worker, read-only): no new inbound since 00:21Z (all threads already seen). No bounces beyond the Core 3 delay; no insurance certificate.
 - 2026-11-19 02:21Z tick (worker, read-only): 0 new inbound in 2h; no bounces beyond the Core 3 delay; no insurance certificate.
 - 2026-11-19 03:21Z tick (worker, read-only): 0 new inbound in 2h; no new bounces; no insurance certificate.
+- 2026-11-19 04:21Z tick (worker, read-only): 0 new inbound in 2h (RMJ silent since 23:45Z; Mac reply 03:48Z 1a1f1eb6bd9a4b7f); no bounces; no insurance certificate.
