@@ -695,3 +695,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 2026-11-19 09:21Z tick (worker, read-only): 0 new inbound in 2h; no bounces; no insurance certificate.
 - 2026-11-19 10:21Z tick (worker, read-only): 1 new, automated: 1a1f34e4f0104852 Comcast DMARC aggregate report for brownbisonco.com (no action). No bounces; no insurance certificate.
 - 2026-11-19 11:21Z tick (worker, read-only): 1 new, automated: 1a1f36ed4b57eadf Google DMARC aggregate report for brownbisonco.com (no action). No bounces; no insurance certificate.
+- 2026-11-19 12:21Z tick (worker, read-only): 2 new, both BidNet "approaching bid intent deadline" automated notices, no action:
+  - 1a1f3b31e29ddfcd Pueblo Urban Renewal Authority ITN 2026.11.6.1, commercial lease at 125 Riverwalk Place. A real-estate lease, not our trade.
+  - 1a1f3b1b49e21c15 CCC RFP 2026-1400-1718713 Stout Street LED: already NO-BID (mandatory walk 11/17 missed; $5M GL + P&P bond).
+  - No bounces; no insurance certificate.
