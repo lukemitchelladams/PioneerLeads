@@ -178,3 +178,4 @@ Not pursued (2026-10-19): USPS Denver P&DC Roof Replacement 089495-27-A-0001, $1
 due 2026-11-20, optional pre-proposal 2026-11-04 09:00 on site. Out of scale.
 | EVALUATE | Unknown (BidNet hides agency logged out) | Window Cleaning Services, BidNet/RMEPS 0000444106 (published 2026-11-19) | 2026-12-16 | Not known (docs not in hand) | Janitorial scope; Luke downloads the BidNet set, then HQ gates the same day |
 | EVALUATE | Unknown (BidNet hides agency logged out) | On-Call Electrical Service Support for Water and Sewer, BidNet/RMEPS 0000444163 (published 2026-11-19) | 2026-12-17 | Not known (docs not in hand) | Electrical trade; Luke downloads the BidNet set, then HQ gates the same day (rule 8 check on any civil scope) |
+| EVALUATE | Unknown (BidNet hides agency logged out) | Street Sweeping On-Call, BidNet/RMEPS 0000444238 (published 2026-11-20) | 2026-12-16 | Not known (docs not in hand) | On-call service, sub-performed; Luke downloads the BidNet set |

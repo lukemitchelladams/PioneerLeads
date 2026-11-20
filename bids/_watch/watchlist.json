@@ -1118,6 +1118,14 @@
    "folder": "bids/thornton-speed-cushions-335-26",
    "decision": "GO",
    "govtribe_ids": []
+  },
+  {
+   "name": "BidNet 0000444238 Street Sweeping On-Call (EVALUATE; agency hidden while logged out; due 2026-12-16)",
+   "source": "bidnet",
+   "id": "0000444238",
+   "match": "0000444238|Street Sweeping On-Call",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

@@ -2264,6 +2264,26 @@
    "contact": "shawn.borisow@nist.gov",
    "sub_pricing": "None (HOLD); HQ documents-based estimate in private/",
    "next": "Watch SAM for the final RFP (watchlist 1333ND27R0001); the Mac may send the draft comments (vendor-questions.md Q1-Q7) before 2026-12-09; reopen only if Factor 3 and PWS 2 change"
+  },
+  {
+   "due_source": "BidNet list closing date (logged out)",
+   "portal": "BidNet/RMEPS 0000444238",
+   "prebid": null,
+   "prebid_mandatory": null,
+   "contact": null,
+   "sub_pricing": "None",
+   "folder": null,
+   "subs": "Front Range street sweeping firms once agency/location known",
+   "id": "bidnet-0000444238-street-sweeping-oncall",
+   "agency": "Unknown (BidNet hides the agency while logged out)",
+   "title": "Street Sweeping On-Call (BidNet/RMEPS 0000444238, published 2026-11-20)",
+   "sol": "not in hand (BidNet listing 0000444238)",
+   "trade": "grounds/facilities services (street sweeping, sub-performed)",
+   "due": "2026-12-16",
+   "decision": "EVALUATE (HQ 2026-11-20): on-call service, sub-performed (CEO: trade alone is not a NO-BID reason); documents need Luke's BidNet login",
+   "decision_note": null,
+   "next": "Luke downloads the BidNet set (0000444238); HQ gates bonds/years/walk the same day",
+   "performer": "Brown Bison bids; sweeper-truck sub performs"
   }
  ],
  "events": [
