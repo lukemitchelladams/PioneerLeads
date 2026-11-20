@@ -3256,6 +3256,18 @@
    "verdict": "EVALUATE",
    "why": "Arrived via Luke's BidNet profile-match email 07:42Z (msg 1a1f7e8025725d27); scanner keywords did not match it. Building renovation = general-contractor scope (MEP likely inside). Under OVERDRIVE rule 3 trade alone is not a NO. Docs locked on BidNet (Luke's login). HQ gates once in hand: mandatory pre-bid date (rule 0), contractor license in bidder's name (Pikes Peak Regional Building Dept for building permits), bid bond/P&P (Evergreen), no-subcontracting, years/experience bar.",
    "at": "2026-11-20T08:25:00Z"
+  },
+  "samgov:6a9164bce17f48f5827b2edd11476e5c": {
+   "name": "RING,BEARING,OUTER (due 2026-12-21)",
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-20): Jones Bearing profile item; Luke's dad's company is family and off limits.",
+   "at": "2026-11-20T15:05:00Z"
+  },
+  "samgov:c95efa57e8a8451fa471f8bea0bfa6a8": {
+   "name": "1HM 3110 LLH877814 D4, BEARING,ROLLER,NEED (due 2027-01-07)",
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-20): Jones Bearing profile item; Luke's dad's company is family and off limits.",
+   "at": "2026-11-20T15:05:00Z"
   }
  },
  "watched": {

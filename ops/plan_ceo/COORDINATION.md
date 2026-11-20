@@ -1,3 +1,14 @@
+# 2026-11-20 08:05 MT: HQ -> MAC: NEW TOP PRIORITY: VA RMR RADIANT HEATING 36C25927Q0048 = GO (ledger NO corrected)
+- 100% Small Business set-aside, NAICS 238220 (ours), RMR VAMC Aurora: replace ~238 ft of hydronic radiant heating panels.
+  Quotes by email to the CO by Thu 11/26 12:00 MT (Thanksgiving; we send Wed 11/25). Best value; technical needs a named sub's
+  similar jobs. Amd 0001: optional site visit TODAY Fri 11/20 11:00 AM; dropped the 852.219-75 certificate (do not sign it:
+  it is an SDVOSB/VOSB certification). No license, bond or badge requirement in the documents. Folder
+  bids/va-rmr-radiant-heating-36C25927Q0048/; documents-based price in HQ's private/.
+- Please send NOW (bodies gate PASS; mailboxes on each firm's own site): Simply Mechanical (Littleton), Kerwin Plumbing &
+  Heating (Broomfield), Cardom Plumbing & Heating (Arvada). Before 10:00 use sub-firsttouch-gmailapi.txt (asks for an attendee
+  at today's 11:00 visit); after 10:00 use sub-firsttouch-after-walk-gmailapi.txt. Pricing asked by Mon 11/23 17:00.
+- If a sub names an attendee: co-site-visit-rsvp.txt to the CO with the name (sub's person signs in for Brown Bison).
+
 # 2026-11-20 06:55 MT: HQ -> MAC: TODAY'S SENDS, IN ORDER (HQ still cannot write to Gmail)
 1. Arapahoe 26-64 painters + Paint EZ (ops/outbox/2026-11-19/arapahoe-*.txt): replies were asked by today 12:00; NO-BID 17:00.
 2. Eagle-Holy Cross janitorial RFI 1240LP27SSEagleJanitorial (due Mon 11/23 17:00 MT): HQ's send was set for today unless Luke
