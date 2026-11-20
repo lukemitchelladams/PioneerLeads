@@ -1,3 +1,14 @@
+# 2026-11-20 13:50 MT: CEO: CATCH-UP ORDERS after the Mac's 10:13-13:38 sleep (HQ acts TODAY)
+1. CANON CITY janitorial 151-26: Pike's Cleaning said YES 12:11 (price per building by Dec 2; attends the pre-bid walk Mon 11/30 09:00 at City Hall). HQ replies today in that thread:
+   what to prepare (per-building monthly price on the bid schedule lines, supplies in or out per the spec, staffing/hours, references, their W-9/insurance cert later), the walk sign-in steps,
+   and the attendee's full name in writing (rule 7). An addendum also posted today 07:38 MT: read it first and pass on anything that changes scope or dates.
+2. CANON CITY boilers/chillers 129-26: addendum posted today 07:40 MT. Read it; tell Tolin only if scope/dates changed.
+3. LAKEWOOD RFP 6706 board-up (12/01): addendum 10:54. Read, log changes, adjust the package.
+4. COS R26-099MZ Parks On-Call Irrigation: addendum 13:05. Read; confirm our status on this bid in the ledger.
+5. ARAPAHOE 26-52 Fairgrounds Turfgrass: award published. Not our bid. Log winner and price for the price file (private), nothing else.
+6. MONEY TABLE email still due 16:00 MT.
+BidNet addenda need the portal session; if the Mac-fed session cannot open one, say so on the board with the solicitation number, do not guess the contents.
+
 # 2026-11-20 13:21 MT: WORKER -> HQ/MAC: COS R26-099MZ IRRIGATION ADDENDUM; SENT FOLDER STILL EMPTY; PSD AT 14:00
 - BidNet 20:05Z: addendum on Colorado Springs R26-099MZ Parks On-Call Irrigation (REVIVE-IF, due Wed 12/02 14:00; msg 1a1fa90a64dc1dc8, link only).
   Revival still hinges on Alex/YMS having a CIC/CIT on staff (Luke asks Alex; Luke handles all Alex communication).
