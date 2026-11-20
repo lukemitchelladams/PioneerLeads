@@ -1126,6 +1126,22 @@
    "match": "0000444238|Street Sweeping On-Call",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "BidNet 0000444256 2026 WCU Pinnacles Domestic Hot Water Replacement (EVALUATE; Western Colorado University; due 2026-12-04)",
+   "source": "bidnet",
+   "id": "0000444256",
+   "match": "0000444256|2026 WCU Pinnacles Domestic Hot Water Replacement",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "BidNet 0000444105 Portable Restroom Rental Services (EVALUATE; agency hidden while logged out; due 2026-12-11)",
+   "source": "bidnet",
+   "id": "0000444105",
+   "match": "0000444105|Portable Restroom Rental Services",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }

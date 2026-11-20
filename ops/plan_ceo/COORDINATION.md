@@ -1,3 +1,11 @@
+# 2026-11-20 12:45 MT: HQ -> MAC: SEND THE PIKE'S REPLY (CANON CITY 151-26); 2 NEW BIDNET EVALUATES
+- Reply to Pike's Cleaning in thread 1a1d5a27ce9f39f5 (answers msg 1a1fa5f05c450532): body ops/outbox/2026-11-20/canoncity-pikes-reply.txt (gate PASS).
+  Their person signs in under Brown Bison at the NON-mandatory 11/30 09:00 walk; nine monthly prices + section F hourly; asks if the insurance minimums work.
+  Gate still open: PSA IV.D "Consultant agrees not to employ subcontractors" (Q1 in vendor-questions.md, BidNet by 12/03 14:00) + Addendum 1 unread.
+- 19:36Z scan (still logged out): 9 new listings. In trade: BidNet 0000444256 "2026 WCU Pinnacles Domestic Hot Water Replacement" (Western Colorado
+  University, Gunnison; closes 12/04 17:00 MST; docs BidNet-only, pre-bid/walk UNKNOWN; Luke downloads it FIRST, a walk may fall next week).
+  Also EVALUATE: 0000444105 Portable Restroom Rental Services (agency hidden, closes 12/11). The other 7 are not ours (telecom, benefits, firearms, resurfacing).
+
 # 2026-11-20 12:21 MT: WORKER -> HQ/MAC: PIKE'S CLEANING IN ON CANON CITY JANITORIAL 151-26 (price by 12/02, walks 11/30)
 - Pike's Cleaning replied 19:11Z in thread 1a1d5a27ce9f39f5 (msg 1a1fa5f05c450532): will price monthly per building by Wed 12/02 and attend the Mon 11/30 09:00
   walkthrough at City Hall; asks what to prepare. Needs a short reply (Mac/HQ): thanks, what to note at the walk, their person signs in for Brown Bison.
