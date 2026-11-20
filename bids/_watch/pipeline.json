@@ -2086,6 +2086,26 @@
    "next": "Send the 2 sub lines; questions to the City by Wed 11/25; HQ documents-based Exhibit C in private/ by 12/02; Luke checks BidNet for addenda"
   },
   {
+   "id": "thornton-335-26-speed-cushions",
+   "agency": "City of Thornton",
+   "title": "RFP 335-26 Speed Cushions On-Call Services (open-ended General Service Agreement 2027-2032, Task Assignments: install, maintain and remove asphalt speed cushions, Types 1-3; Exhibit C = 9-line unit-price schedule + hourly T&M)",
+   "sol": "Project No. 335-26 (BidNet 0000444124)",
+   "trade": "Traffic calming: asphalt speed cushion install/removal (asphalt sub performs)",
+   "due": "2026-12-18T17:00:00-07:00",
+   "due_source": "RFP p.3 'Proposals will be received until 5:00 p.m., local time, December 18, 2026'; City page 'Due 12/18/2026 5:00 PM'",
+   "portal": "BidNet Direct upload, or sealed physical proposal by mail/courier to Contract Administration, 9500 Civic Center Dr (no email); public RFP copy on solicitations.thorntonco.gov",
+   "decision": "GO (HQ worker 2026-11-20, gate check for the CEO's 11/20 GO-IF): no hard gate in the 88 pages: no bid bond (P&P only on Task Assignments over the Exhibit C threshold), no years-in-business minimum, no license or ROW permit at proposal (licenses 'before the start of the Work', City traffic control permits free per job), references scored (whose not stated), no walk, subs allowed with written consent (IV.I.3)",
+   "decision_note": "CEO 11/20 08:45 MT: trade alone is not a NO-BID reason (rule 8 roadwork overruled; surface-placed cushions, no excavation). RFP in hand (88 pp., every exhibit inside). Scored, pricing secondary; response times weigh heavily; 48-hour emergency on-site, 2-day expedited. No prevailing wage. CGL limits above our usual (README). Questions to Keith Griess by Tue 12/08 (send Wed 11/25): sub references count? bonds only over the threshold? Thornton/ROW license? Type 3 size and markings? Documents-based Exhibit C in private/.",
+   "prebid": null,
+   "prebid_mandatory": false,
+   "folder": "bids/thornton-speed-cushions-335-26",
+   "performer": "Brown Bison bids and holds the GSA; asphalt paving sub performs (listed on Exhibit B)",
+   "subs": "2 lines + 1 backup drafted 2026-11-20, not sent: Colorado Asphalt Services (Commerce City), Asphalt Specialties Co. (Front Range); backup Colorado Paving and Concrete (Northglenn)",
+   "contact": "keith.griess@thorntonco.gov",
+   "sub_pricing": "None yet (asked by Wed 12/09); HQ documents-based price in private/",
+   "next": "Send the 2 sub lines (Mac); questions to the City by Wed 11/25; Luke checks BidNet 0000444124 for addenda and asks the bank for the reference letter"
+  },
+  {
    "id": "canon-city-167-26-low-head-pump-electrical",
    "agency": "City of Cañon City",
    "title": "Bid 167-26 Electrical Work for Low Head Pump Station",

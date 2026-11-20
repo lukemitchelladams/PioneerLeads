@@ -3168,10 +3168,10 @@
    "at": "2026-11-19T21:25:00Z"
   },
   "bidnet:0000444124": {
-   "name": "On-Call Speed Cushions (BidNet 0000444124, agency not shown, closes 2026-12-18)",
-   "verdict": "EVALUATE",
-   "why": "CHANGED 21:25Z from the worker's 20:25Z NO: CLAUDE.md rule 8 lists roadwork, but the CEO's 13:45 MT reopen of Hyland Hills concrete (also a rule 8 NO) says trade alone is not a NO-BID reason under OVERDRIVE. CEO call: sub-performed on-call GO-IF, or keep NO on rule 8. Docs locked on BidNet; agency unknown.",
-   "at": "2026-11-19T21:25:00Z"
+   "name": "City of Thornton RFP 335-26 On-Call Speed Cushions (BidNet 0000444124, closes 2026-12-18 17:00)",
+   "verdict": "GO",
+   "why": "GATE CHECK 2026-11-20 (HQ worker, for the CEO's 08:45 MT GO-IF): RFP read in full from the City's public page (solicitations.thorntonco.gov 335-26, 88 pp.). No hard gate: no bid bond, P&P only on Task Assignments over the Exhibit C threshold; no years minimum; no license or ROW permit at proposal (licenses 'before the start of the Work', City traffic control permits free per job); 3 references scored, whose not stated; no walk; subs allowed with written consent (IV.I.3). Rule 8 roadwork overruled by the CEO (trade alone is not a NO-BID reason). Folder bids/thornton-speed-cushions-335-26.",
+   "at": "2026-11-20T16:30:00Z"
   },
   "bidnet:0000443991": {
    "name": "D49 RFQ 2026-NS-1119 restaurant/kitchen equipment (closes 2026-12-15)",

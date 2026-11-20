@@ -1109,6 +1109,15 @@
    "folder": "bids/nist-boulder-cup-pm-1333ND27R0001",
    "sam_notice_id": "90c1cecf827c45f1b15b4f3860dd09f8",
    "govtribe_ids": []
+  },
+  {
+   "name": "City of Thornton RFP 335-26 Speed Cushions On-Call (GO: no hard gate; closes 2026-12-18 17:00; questions by 12/08)",
+   "source": "bidnet",
+   "id": "0000444124",
+   "match": "0000444124|335-26|On-Call Speed Cushions|Speed Cushion",
+   "folder": "bids/thornton-speed-cushions-335-26",
+   "decision": "GO",
+   "govtribe_ids": []
   }
  ]
 }
