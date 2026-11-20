@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-20T13:36:18+00:00",
+  "checked_at": "2026-11-20T14:35:38+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -10,7 +10,7 @@
         "BIDNET_USER": false
       },
       "errors": [],
-      "last_success": "2026-11-20T13:36:18+00:00",
+      "last_success": "2026-11-20T14:35:38+00:00",
       "logged_in": false,
       "login_note": "BIDNET_USER/BIDNET_PASS not set",
       "matches": 87,
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-20T13:36:18+00:00",
+      "last_success": "2026-11-20T14:35:38+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 68,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-20T13:36:18+00:00",
+      "last_success": "2026-11-20T14:35:38+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
@@ -75,24 +75,43 @@
       }
     },
     "samgov": {
-      "bulk_added": 107,
+      "bulk_added": 98,
       "bulk_note": "bulk file cached 2026-11-20T05:45:38+00:00; 107 matching (parsed earlier)",
       "carried_forward": true,
       "complete": false,
-      "count": 107,
+      "count": 109,
       "creds": {
         "SAM_API_KEY": false
       },
-      "down_runs": 36,
+      "down_runs": 37,
       "down_since": "2026-11-19T02:35:53+00:00",
       "errors": [
         "SAM_API_KEY not set",
+        "SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/8ee23fef72864e098371e6c454010831/view): aa72c94442b444e1897ff47ab697d500",
+        "SPE8EF27T0258: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/994aa9e06162482d9a3c07be9ba67263/view): c2d1d48753b744f78b8506604f4c3a48",
+        "SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9",
         "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
-      "last_success": "2026-11-20T13:36:18+00:00",
+      "last_success": "2026-11-20T14:35:38+00:00",
       "logged_in": false,
-      "login_note": "SAM_API_KEY not set; +107 from the nightly bulk file",
-      "matches": 107,
+      "login_note": "SAM_API_KEY not set; public search fallback (no key): 11 notices; +98 from the nightly bulk file",
+      "matches": 109,
+      "public_added": 11,
+      "public_docs": {
+        "deferred": 0,
+        "downloaded": 0,
+        "in_hand": 16,
+        "links": 3,
+        "listed": 8,
+        "notices": 8
+      },
+      "public_note": "public search fallback (no key): 11 notices",
+      "public_stats": {
+        "kept": 11,
+        "queries": 9,
+        "requests": 9,
+        "results": 18
+      },
       "reach_note": "HTTP 404",
       "reachable": true
     }

@@ -692,7 +692,7 @@
  {
   "key": "samgov:b4eaf5ee986947649e09ee2513f6c234",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
   "title": "Radiant Heating Panel Replacement",
   "sol": "36C25927Q0048",
   "closing": "2026-11-26",
@@ -702,7 +702,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/b4eaf5ee986947649e09ee2513f6c234/view"
+  "url": "https://sam.gov/opp/b4eaf5ee986947649e09ee2513f6c234/view"
  },
  {
   "key": "samgov:131459416a164751a621783eb8d9eb19",
@@ -992,7 +992,7 @@
  {
   "key": "samgov:7546b9637bce4c80a3f3d66020cb0f00",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC ANAD",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC WRN.W6QK ACC ANAD",
   "title": "Low Level Cranes- CSO",
   "sol": "W911KF25SC002A0018",
   "closing": "2026-11-30",
@@ -1002,7 +1002,7 @@
   "profiles": "jones-bearing",
   "watched": false,
   "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/7546b9637bce4c80a3f3d66020cb0f00/view"
+  "url": "https://sam.gov/opp/7546b9637bce4c80a3f3d66020cb0f00/view"
  },
  {
   "key": "samgov:dacbc6b4e8aa4880930c72ad6a19d7dd",
@@ -1127,7 +1127,7 @@
  {
   "key": "samgov:01754c67a9fd4dd99e16171e0bfc4c04",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
+  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
   "title": "BEARING,ROLLER,AIRFRAME, NSN 3110-01-310-2258",
   "sol": "SPE4A627Q0034",
   "closing": "2026-12-01",
@@ -1137,7 +1137,7 @@
   "profiles": "jones-bearing",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/01754c67a9fd4dd99e16171e0bfc4c04/view"
+  "url": "https://sam.gov/opp/01754c67a9fd4dd99e16171e0bfc4c04/view"
  },
  {
   "key": "samgov:28287bf2d75d4b988c3926804e5e8665",
@@ -1232,7 +1232,7 @@
  {
   "key": "samgov:bd5e665d835e480d8bc4b4afb8e6cb61",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8227  AFSC OL H PZIM",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFMC OL H PZIMB",
   "title": "Vandenberg Crane Replacement",
   "sol": "FA8227-27-Q-1000",
   "closing": "2026-12-01",
@@ -1242,7 +1242,7 @@
   "profiles": "jones-bearing",
   "watched": false,
   "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/bd5e665d835e480d8bc4b4afb8e6cb61/view"
+  "url": "https://sam.gov/opp/bd5e665d835e480d8bc4b4afb8e6cb61/view"
  },
  {
   "key": "samgov:c29f795658414ef49624fb7d3557091f",
@@ -1262,7 +1262,7 @@
  {
   "key": "samgov:cfd4d4c711f44c60b66fdaf3661c9f8d",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NATIONAL CEMETERY ADMIN (36C786)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
   "title": "Pikes Peak Janitorial Base plus 4",
   "sol": "36C78627Q0040",
   "closing": "2026-12-01",
@@ -1272,7 +1272,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/cfd4d4c711f44c60b66fdaf3661c9f8d/view"
+  "url": "https://sam.gov/opp/cfd4d4c711f44c60b66fdaf3661c9f8d/view"
  },
  {
   "key": "samgov:e0744ff44d534fe384865ff6a50be7d3",
@@ -2447,7 +2447,7 @@
  {
   "key": "samgov:49fff837ad1c4b87b96e64679cb00652",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--2-TON CHAIN HOIST",
   "sol": "N0010426QBJ41",
   "closing": "2026-12-16",
@@ -2457,7 +2457,7 @@
   "profiles": "jones-bearing",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/49fff837ad1c4b87b96e64679cb00652/view"
+  "url": "https://sam.gov/opp/49fff837ad1c4b87b96e64679cb00652/view"
  },
  {
   "key": "samgov:608f61baec2e4cd1a91f3138dffec13d",
@@ -2657,7 +2657,7 @@
  {
   "key": "samgov:1bbbca1e2cd240838a114e008f5dd75d",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "5-TON CHAIN HOIST",
   "sol": "N0010427QBC70",
   "closing": "2026-12-18",
@@ -2667,7 +2667,7 @@
   "profiles": "jones-bearing",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/1bbbca1e2cd240838a114e008f5dd75d/view"
+  "url": "https://sam.gov/opp/1bbbca1e2cd240838a114e008f5dd75d/view"
  },
  {
   "key": "samgov:23baa41e87174afea593cdc80bae9060",
@@ -2685,9 +2685,24 @@
   "url": "https://sam.gov/workspace/contract/opp/23baa41e87174afea593cdc80bae9060/view"
  },
  {
+  "key": "samgov:6a9164bce17f48f5827b2edd11476e5c",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "RING,BEARING,OUTER",
+  "sol": "N0010427QFA25",
+  "closing": "2026-12-21",
+  "posted": "2026-11-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/opp/6a9164bce17f48f5827b2edd11476e5c/view"
+ },
+ {
   "key": "samgov:bab347fe72d145eca283c108307e56ff",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE AIR FORCE / FA8571  MAINT CONTRACTING AFSC PZIM",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8571  MAINT CONTRACTING AFSC PZIM",
   "title": "AMFF LINE1 CRANE 2 REPLACEMENT",
   "sol": "82115",
   "closing": "2026-12-21",
@@ -2697,7 +2712,7 @@
   "profiles": "jones-bearing",
   "watched": false,
   "new_24h": true,
-  "url": "https://sam.gov/workspace/contract/opp/bab347fe72d145eca283c108307e56ff/view"
+  "url": "https://sam.gov/opp/bab347fe72d145eca283c108307e56ff/view"
  },
  {
   "key": "bidnet:0000439013",
@@ -2822,7 +2837,7 @@
  {
   "key": "samgov:0f1e8554ae134a2db4554e547a2c3f64",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-RI",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
   "title": "EAGLE Ft. Carson CO W519TC-27-R-A014",
   "sol": "W519TC-27-R-A014",
   "closing": "2027-01-04",
@@ -2832,7 +2847,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/0f1e8554ae134a2db4554e547a2c3f64/view"
+  "url": "https://sam.gov/opp/0f1e8554ae134a2db4554e547a2c3f64/view"
  },
  {
   "key": "bidnet:0000442906",
@@ -2878,6 +2893,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Flooring-Replacement-and-Installation-Services/0000443673?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "samgov:c95efa57e8a8451fa471f8bea0bfa6a8",
+  "source": "samgov",
+  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "title": "1HM 3110 LLH877814 D4, BEARING,ROLLER,NEED",
+  "sol": "N00104-26-Q-FD68",
+  "closing": "2027-01-07",
+  "posted": "2026-11-20",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "jones-bearing",
+  "watched": false,
+  "new_24h": true,
+  "url": "https://sam.gov/opp/c95efa57e8a8451fa471f8bea0bfa6a8/view"
  },
  {
   "key": "bidnet:0000442641",
