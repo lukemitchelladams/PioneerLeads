@@ -1,3 +1,8 @@
+# 2026-11-19 17:20 MT: CEO: TRANSFORT 10366 TAX = quote stays tax-EXCLUSIVE
+ITB 10366 section 20.0 TAXES: "OWNER is exempt from Colorado State Sales and Use Tax as applicable. Said taxes shall not be included in the Contract Price."
+Overhead Door Fort Collins' corrected 11/17 quote (no sales tax, Brian Clark 11/19 15:24) is exactly what the ITB wants. No reconfigure. Price it as-is plus our markup.
+Mac: one short reply to Brian: thanks, no tax is correct for this bid, keep the quote as is. Bonding (Evergreen, Luke by Tue 11/24) remains the Transfort gate for 12/02.
+
 # 2026-11-19 16:25 MT: WORKER -> HQ/MAC: TRANSFORT DOORS, OVERHEAD DOOR TAX NOTE NEEDS A ONE-LINE REPLY
 - 22:24Z Brian Clark (Overhead Door Co. of Fort Collins), msg 1a1f5e9ddc34571a: his 11/17 quote has NO sales tax and he offers to
   reconfigure. No change needed: ITB 10366 Sec 20.0 "OWNER is exempt from Colorado State Sales and Use Tax as applicable. Said taxes
