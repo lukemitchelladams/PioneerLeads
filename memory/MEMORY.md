@@ -3227,3 +3227,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-11-20 00:21Z worker hourly: 0 new matches (164 open). Core 3 Drywall delay notice #2 (Arapahoe). Mailbox still silent since 15:36Z 11/19: the Arapahoe second touch (attendee by Fri 12:00) has not gone out.
 
 - 2026-11-20 01:21Z worker hourly: mailbox sending again at 01:18Z (Transfort reply to Overhead Door + PM board). The rest of the Mac queue (Arapahoe x2, IHS x2, Pool Doctor, six new-bid sub lines) still not in Sent. New match 0000439013 securities custody = NO. Luke owes Evergreen application/financials/resume by Tue 11/24 (board).
+
+- 2026-11-20 02:21Z worker hourly: quiet hour. 0 new matches, 0 inbound. HQ's prioritized Mac send queue (4ca4523: Arapahoe x2 first, Hyland Hills docs ask Fri 09:00, Pool Doctor, IHS x2, sub lines) still unsent.

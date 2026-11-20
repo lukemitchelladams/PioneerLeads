@@ -760,3 +760,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - MAILBOX SENDING AGAIN: 01:18Z reply to Overhead Door FC (Transfort, msg 1a1f68900ed9435c, keep quote tax-exclusive per ITB 20.0) and 01:18Z PM board to Luke (msg 1a1f68856668e925). Board: Evergreen application + financial statement + resume back from Luke by Tue 11/24; queue Lakewood 12/01, Transfort 12/02 if bonded, BGNDRF 12/04 + Kanab 12/09 (submit 11/25), DEN 12/04, Canon x2 12/07, CPW + Arapahoe 12/09, Widefield 12/11, Cherry Creek 12/18, Aims 01/06; PFA documents wait on Luke's yes.
 - Still not seen in Sent: Arapahoe second touch + Paint EZ, IHS subs + CO bond question, Thornton/Canon/Lakewood/Hyland/Westminster/D49 sub lines, Pool Doctor reply.
 - No new inbound; no new bounce (Core 3 final due ~11/20 17:37Z); no certificate.
+
+## 2026-11-20 02:21Z (11/19 19:21 MT) worker hourly
+- Inbound newer_than:2h: none. Sent: only the two 01:18Z messages already logged; HQ's 18:40 MT send queue (Arapahoe first) still not in Sent.
+- No new bounces, no certificate, no CRM brief. Scan 01:35Z: 0 new, 161 open.
