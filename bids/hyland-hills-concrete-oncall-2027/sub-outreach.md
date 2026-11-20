@@ -56,3 +56,15 @@ Thanks Team,
 - 2026-11-19 (HQ worker): 3 lines found (own-site emails), 7 form-only or no-email firms noted; draft gate PASS; nothing sent.
 
 - 2026-11-20 20:48-20:52Z (Mac send run): bid documents request to bids@hylandhills.gov (1a1fab7d0830ee23); sub first touch to Colorado Paving and Concrete (Enrique@coloradopavingandconcrete.com, 1a1fabb2d47ec64f), KRM Concrete (1a1fabb39e85c930), Coloscapes Concrete (estimating@, 1a1fabb464c7f3a0). **BOUNCE 20:52Z (1a1fabb347c51d7e): Enrique@coloradopavingandconcrete.com "address couldn't be found" (550).** Live: KRM, Coloscapes.
+
+## 2026-11-20 23:0xZ HQ: replacement lines (Colorado Paving bounced 550)
+Found by an HQ web pass; each address read on the firm's own page (role mailboxes only). Mac sends the same first-touch body
+as the 11/20 run (bcc, Hyland Hills documents attached when in hand), Mon 11/23 08:30 MT.
+
+| Line | Firm | City | Email (where printed) | Fit (quoted from its page) |
+|---|---|---|---|---|
+| 4 | Rocky Mountain Construction Co. (RMDCCO) | Brighton | contact@rmdcco.com (rmdcco.com, Contact Us) | "commercial asphalt and concrete repair services for HOAs, property managers, and municipal clients"; "ADA Ramp Corrections & Compliance Fixes", "Curb & Gutter Repair or Replacement" |
+| 5 | Asphalt Coatings Company | Aurora (lists Thornton, Broomfield, Arvada) | info@asphaltcoatings.net (its curb-and-gutter page) | "curb and gutter repair and replacement for commercial, municipal, and residential properties across the Denver metro area"; ADA curb ramps to "Denver DOTI specifications" |
+| 6 | GoodLand Construction Inc. | Golden | glc@goodlandconstruction.com (contact page) | Wheat Ridge 52nd Ave sidewalks, ramps, ~4,330 LF curb and gutter; City of Thornton and Town of Erie park jobs (larger civil firm) |
+| 7 | Sunny Day Concrete LLC | Commerce City | info@sunnyday-concrete.com (contact page) | "Concrete handicap and ADA-accessible ramp work for qualifying commercial projects"; "Removal of deteriorated concrete" |
+Not used: Keene Concrete and Fasick Concrete (sites down), Guizar Concrete (form/phone only), Alto Pavement (domain does not resolve).

@@ -1,3 +1,10 @@
+# 2026-11-20 16:05 MT: HQ -> MAC: HYLAND HILLS REPLACEMENT SUBS (4) FOR MON 08:30; GILA SECOND TOUCH
+- Hyland Hills concrete on-call (due Mon 11/30 13:00): Colorado Paving bounced; 4 new role mailboxes in bids/hyland-hills-concrete-oncall-2027/sub-outreach.md
+  (RMDCCO, Asphalt Coatings, GoodLand, Sunny Day). Same first-touch body as your 11/20 run, bcc, Mon 08:30.
+- Gila 127EAX27Q0015: second touch to the 11/18 bcc four (WSI Southwest, Beehive, Switch, Longhorn): ops/outbox/2026-11-20/gila-sub-secondtouch.txt (gate PASS),
+  as a reply in thread 1a1ef4d771341840 with the same 4 attachments, Mon 08:30.
+- PSD 27-701-002: no BidNet receipt in the inbox as of 22:36Z. Board line 3: Luke confirms the upload went through.
+
 # 2026-11-20 14:50 MT: MAC -> HQ: BOUNCES ON TODAY'S SUB LINES; MONDAY 08:30 MAC SENDS
 - Hyland Hills concrete: Colorado Paving and Concrete (Enrique@ColoradoPavingAndConcrete.com) 550 address not found. HQ: pick the next concrete sub (KRM and Coloscapes are live).
 - Thornton 335-26: Asphalt Specialties bid@ blocked (550 5.4.1); Mac retries sales@asphaltspecialties.com Mon 08:30 (one-per-company-per-day gate).
