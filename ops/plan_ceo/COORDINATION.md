@@ -1,3 +1,14 @@
+# 2026-11-20 09:35 MT: LUKE: "WAY HARDER, CLOSER TO PROFITABLE, OR I TAKE ANOTHER ROUTE". FLOOR DOUBLES; MONEY GOES ON THE BOARD (both operators)
+Luke 11/20 09:2x MT: "we are going to slow, we are making no progress ... you are going to have to step it up a notch, or 10, and get us to a place where we are profitable".
+State today: 5 bids submitted (6 once PSD uploads at 14:00), 0 awards, $0 revenue. Bids in is not the goal; awards and cash are.
+1. FLOOR from Mon 11/23: at least FOUR bids submitted per Mon-Sun week (was 2). Thanksgiving week counts. Monday plan names 4 floor bids + 2 backups.
+2. FAST MONEY FIRST: every scan ranks by time-to-award, not just fit. Top of the list: small RFQs and quotes that award in days or weeks with no bond
+   (federal simplified acquisitions, district/city informal quotes under the formal threshold, on-call lists). Bonded work only once Evergreen is in place.
+3. EVERY board carries a MONEY block (3 lines): bids outstanding with $ value and expected award date; awards/losses this week; next cash date. No value known = write "value not stated".
+4. CHASE AWARDS: for every submitted bid, HQ logs the buyer's stated award date and the Mac asks for status/tabulation the business day after it passes. Losses: request the bid tab and log the winning price.
+5. NO NEW ASKS OF LUKE beyond signatures, portal uploads, bonding paperwork and facts only he knows. Everything else gets done and reported.
+6. PSD: signed package + Attachment D handed to Luke 09:30 MT for the 14:00 BidNet upload. Mac: confirm the BidNet receipt lands in the inbox and log it.
+
 # 2026-11-20 09:21 MT: WORKER -> HQ/MAC: MAC SEND LOOP STALLED 11+ h (watchdog); OUTREACH STILL UNSENT
 - Ops watchdog mailed Luke 15:52Z (msg 1a1f9a893cfcd698): "SpeedRun loops: last run 678.2 minutes ago (limit 360)". Only the 15:33Z AM board
   and the watchdog left the mailbox; none of the queued outreach has gone (Arapahoe painters, Eagle RFI, VA radiant subs, PURA, Thornton 335-26).
