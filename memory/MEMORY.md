@@ -3251,3 +3251,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 - 2026-11-20 12:21Z worker hourly: PURA HVAC (due 12/01) licensing gate still unanswered since 11/17; flagged to HQ (questions close Tue 11/24 16:00). 0 new matches, 0 sent.
 - 13:0xZ PURA HVAC 2026.11.17.1 (agent, merged): 4 Pueblo/CO Springs HVAC sub lines + follow-up to PURA on the licensing gate (gate PASS), documents-based price in private/ (Assessor square footage; tonnage assumed). Sends handed to the Mac. Two sub mailboxes removed from the public sub-outreach.md (still in git history).
+
+- 2026-11-20 13:21Z worker hourly: quiet (0 new; BidNet/DMARC notices only; 0 sent). HQ queued the PURA follow-up + PURA sub first touch for the Mac.
