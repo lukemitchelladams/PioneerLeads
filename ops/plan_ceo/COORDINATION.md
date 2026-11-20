@@ -1,3 +1,9 @@
+# 2026-11-20 16:21 MT: WORKER -> HQ/MAC: DEN FILTER/COIL COMMUNICATION (GO bid, link only); ARAPAHOE STILL 0 ATTENDEES
+- BidNet 22:38Z: DEN Aviation posted a new communication on HVAC Air Filter Replacement & Coil Cleaning (GO, due 12/04 14:00; msg 1a1fb1ce5b9621c1).
+  Not readable from the cloud; add it to Luke's BidNet pull list (now 5: Canon City x2, Lakewood 6706, COS R26-099MZ, DEN communication).
+- Durango Animas City Cemetery Fencing addendum 22:2xZ (msg 1a1fb111d0d6f9c0): our NO (fencing, mandatory pre-bid passed). Logged only.
+- Arapahoe 26-64 at 23:21Z: still 0 attendees (5 unanswered). NO-BID at 17:00 MT. No PSD receipt. No new sends since 20:55Z.
+
 # 2026-11-20 16:05 MT: HQ -> MAC: HYLAND HILLS REPLACEMENT SUBS (4) FOR MON 08:30; GILA SECOND TOUCH
 - Hyland Hills concrete on-call (due Mon 11/30 13:00): Colorado Paving bounced; 4 new role mailboxes in bids/hyland-hills-concrete-oncall-2027/sub-outreach.md
   (RMDCCO, Asphalt Coatings, GoodLand, Sunny Day). Same first-touch body as your 11/20 run, bcc, Mon 08:30.

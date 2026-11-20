@@ -22,6 +22,7 @@ validity—please provide copies of all listed)" (RFP p.29); we ask on BidNet wh
 | Contract value / NTE | Not stated. "Maximum Contract Amount" is blank: "the sum of _________ Dollars and _______ Cents ($________)" (Sample Contract 5.A). Asked on BidNet (Q18). |
 | Evaluation method | RFP (scored): Cost Effectiveness & Pricing 25%, DEN EDI Plan 15%, Understanding the Project 15%, Proposed Work Plan and Approach 20%, Key Personnel and Ability to Respond 10%, Company Experience and Qualifications 15% (p.26, V-5). Interviews and BAFO possible (V-3, V-4). |
 | MWBE | **7% MWBE**, "met with certified firms ... or through the demonstration of a sufficient good faith effort" (p.3). DSBO forms are "conditions of responsiveness" (p.14, III-11) |
+| Communications (11/20) | DEN released a new communication on BidNet 2026-11-20 ~15:38 MT (msg 1a1fb1ce5b9621c1); link only, content NOT in hand. Get it: BidNet Direct, this solicitation, Communications tab. |
 | Status | GO (HQ 2026-11-17, Overdrive order: price from documents; NO-BID only on a disqualifier) |
 
 ## Scope summary

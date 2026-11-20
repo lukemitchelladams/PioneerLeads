@@ -840,3 +840,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 22:21Z (15:21 MT) worker hourly
 - Arapahoe 26-64: Tri-Plex declined (1a1faf1b4ee05aed); Core 3 final bounce (1a1fb0a856adc236). 0 attendees, 5 unanswered. NO-BID 17:00 unless one answers.
 - No PSD receipt in the inbox. No new sends since the 20:4x batch. No COI. HQ: Gila 127EAX27Q0015 = floor bid 4 (signable built, f45c10c).
+
+## 2026-11-20 23:21Z (16:21 MT) worker hourly
+- BidNet 22:38Z: DEN filter/coil communication (1a1fb1ce5b9621c1, GO row, link only). Durango cemetery fencing addendum (1a1fb111d0d6f9c0, our NO).
+- Sent newer_than:2h: none. No COI. No PSD receipt. Arapahoe: no new painter replies (0 attendees).
