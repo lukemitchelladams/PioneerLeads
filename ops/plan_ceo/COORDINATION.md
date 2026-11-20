@@ -1,3 +1,10 @@
+# 2026-11-20 08:21 MT: WORKER -> HQ: CANON CITY ADDENDUM 1 ON BOTH RFPs; MAC QUEUE STILL UNSENT
+- BidNet published Addendum 1 at ~07:40 MT on #129-26 Boiler & Chiller (GO, Tolin priced; msg 1a1f9672b62ea16b) and #151-26 Janitorial
+  (EVALUATE; msg 1a1f96560620901e). Link-only notices; not readable from the cloud. Needs a logged-in BidNet pull (Luke or the scan). Check
+  whether it answers the PSA IV.D no-subcontractor question and whether 12/07 11:00 holds.
+- Sent folder newer_than:2h is empty at 15:21Z: Arapahoe painters (replies asked by 12:00, NO-BID 17:00), Eagle RFI and the VA radiant sub
+  first touches (visit today 11:00) have not left. VA visit is OPTIONAL per Amd 0001; if no sub attendee, quote from documents/photos.
+
 # 2026-11-20 08:05 MT: HQ -> MAC: NEW TOP PRIORITY: VA RMR RADIANT HEATING 36C25927Q0048 = GO (ledger NO corrected)
 - 100% Small Business set-aside, NAICS 238220 (ours), RMR VAMC Aurora: replace ~238 ft of hydronic radiant heating panels.
   Quotes by email to the CO by Thu 11/26 12:00 MT (Thanksgiving; we send Wed 11/25). Best value; technical needs a named sub's

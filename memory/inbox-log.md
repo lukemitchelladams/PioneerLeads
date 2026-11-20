@@ -805,3 +805,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 14:21Z (07:21 MT) worker hourly
 - Inbound newer_than:2h: nothing new (notices already logged). Sent: none. Scan 13:36Z: 0 new, 165 open.
 - HQ: CEO plan 2026-11-20 (5af9d43); Mac send order for today (483d112: Arapahoe, Eagle RFI first); scanner gained a keyless SAM public-search fallback (61286e9). Monday risk: Kanab + BGNDRF signable PDFs exist only in HQ's container.
+
+## 2026-11-20 15:21Z (08:21 MT) worker hourly
+- BidNet 14:38Z/14:40Z: ADDENDUM 1 on Canon City #151-26 Janitorial (1a1f96560620901e) and #129-26 Boiler & Chiller (1a1f9672b62ea16b, GO, Tolin priced). Link-only notices; content not readable from the cloud. Recorded in both READMEs + pipeline.
+- Sent newer_than:2h: none. Mac queue (Arapahoe painters, Eagle RFI, VA radiant subs) still unsent. No COI/certificate mail. Core 3 final bounce not yet in.
+- Scan 14:35Z: 2 new (both Jones Bearing NAVSUP, NO by HQ). HQ: VA RMR radiant 36C25927Q0048 = GO (a3b97f5), optional visit today 11:00 MT, quotes Thu 11/26 12:00 MT.

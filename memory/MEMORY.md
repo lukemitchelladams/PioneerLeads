@@ -3256,3 +3256,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 
 - 2026-11-20 14:21Z worker hourly: quiet inbox. HQ shipped a keyless SAM.gov public-search fallback (61286e9) and the CEO plan for 11/20 (PSD bid 2 of 2 today 14:00; Kanab + BGNDRF to Luke Mon 12:00, both exist only in HQ's container).
 - 15:0xZ VA RMR radiant heating 36C25927Q0048 opened GO (agent, merged): the 11/18 HUBZone NO was a misread (the x is on 52.219-6, Total SB). NAICS 238220, due Thu 11/26 12:00 MT (send Wed 11/25), optional visit Fri 11/20 11:00, Amd 0001 dropped the 852.219-75 SDVOSB/VOSB certificate (never sign it). 3 sub lines queued for the Mac; price in private/. Found by the new keyless SAM search fallback (61286e9), live from the 14:35Z scan (SAM 109). Two new Jones Bearing items logged NO.
+
+- 2026-11-20 15:21Z worker: Canon City Addendum 1 on #129-26 and #151-26 (link-only; needs BidNet login). Mac queue still unsent at 08:21 MT.
