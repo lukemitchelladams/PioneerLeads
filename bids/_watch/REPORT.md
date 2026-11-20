@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-20T17:37:00+00:00
+# Bid watch report — 2026-11-20T18:36:40+00:00
 
-**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); 1 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 694 | BUYER 454, AGGREGATE 241 | 88 | 2026-11-20T17:37:00+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T17:37:00+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (39 h, 40 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file | 111 |  | 111 | 2026-11-20T17:37:00+00:00 | 5 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-20T17:37:00+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 701 | BUYER 456, AGGREGATE 246 | 87 | 2026-11-20T18:36:40+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T18:36:40+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (40 h, 41 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file | 111 |  | 111 | 2026-11-20T18:36:40+00:00 | 5 |
+| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-20T18:36:40+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -20,12 +20,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 |---|---|---|---|---|---|---|
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (19d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (28d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| brownbison | bidnet |  | Street Sweeping On-Call | 2026-12-16 (26d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Street-Sweeping-On-Call/0000444238?purchasingGroupId=8409951&origin=1 |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -77,6 +71,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - BidNet mirror of USFS Pagosa Ranger District janitorial 1240LP27Q0008 (same bid; quote goes by email per the SAM.gov solicitation, not on BidNet) (bidnet)
 - La Plata County IFB 26-053-1215 On-Call Services - Various Trades (GO; due Tue 11/17 10:00 MST by email) (bidnet)
 
+## No longer listed (closed/awarded)
+
+- RFQ – City of Cortez On-Call Planning Services (bidnet, due 2026-11-20)
+
 ## UPCOMING (presolicitations, sources sought, special notices)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
@@ -116,11 +114,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | samgov | VETERANS AFFAIRS, DEPARTMENT OF / VETERA | 6515--Preventive Maintenance Services for Leica Equipment for Salt Lake City VA Medical Ce (place of performance not stated; CO buying office) | ? |  | https://sam.gov/workspace/contract/opp/5bccbbc922a04630af786e240403e306/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | BEARING, BALL, ANNULA. (place of performance not stated; OK buying office) | ? |  | https://sam.gov/workspace/contract/opp/6ca3b23ebf3b46babe2a7cab9a925893/view |
 
-## All open matching bids, excluding DIBBS parts RFQs (170)
+## All open matching bids, excluding DIBBS parts RFQs (169)
 
 | Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
 |---|---|---|---|---|---|---|
-| brownbison | bidnet | City of Cortez | RFQ – City of Cortez On-Call Planning Services | 2026-11-20 (0d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFQ-City-of-Cortez-On-Call-Planning-Services/0000440975?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | S--JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (0d) |  | https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view |
 | jones-bearing | samgov | DEPT OF DEFENSE / DEFENSE LOGISTICS AGEN | 30--SHAFT-GEARBOX,IDLER (place of performance not stated; OH buying office) | 2026-11-20 (0d) |  | https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | JANITORIAL SERVICES, Channel Islands NP (place of performance not stated; CO buying office) | 2026-11-20 (0d) |  | https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view |
@@ -251,7 +248,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet |  | BAS Controls Mitigation (paid-tier notice) | 2026-12-15 (25d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444240306205/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Alternatives Analysis and Environmental Planning for New Bus Facility (10% SBE Goal) (paid-tier notice) | 2026-12-15 (25d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234541440/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | coloradovss | Red Rocks Community College | RRCC 27-07-IFB01C BAS Controls Mitigation | 2026-12-15 (25d) |  | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
-| brownbison | bidnet |  | Street Sweeping On-Call | 2026-12-16 (26d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Street-Sweeping-On-Call/0000444238?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet |  | Street Sweeping On-Call | 2026-12-16 (26d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Street-Sweeping-On-Call/0000444238?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Window Cleaning Services | 2026-12-16 (26d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Window-Cleaning-Services/0000444106?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet |  | Landscape Services (paid-tier notice) | 2026-12-16 (26d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444226398382/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing WATCHED | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 30--2-TON CHAIN HOIST (place of performance not stated; PA buying office) | 2026-12-16 (26d) |  | https://sam.gov/opp/49fff837ad1c4b87b96e64679cb00652/view |
@@ -298,4 +295,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - samgov: SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/8ee23fef72864e098371e6c454010831/view): aa72c94442b444e1897ff47ab697d500
 - samgov: SPE8EF27T0258: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/994aa9e06162482d9a3c07be9ba67263/view): c2d1d48753b744f78b8506604f4c3a48
 - samgov: SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9
-- samgov: down since 2026-11-19T02:35Z (39 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (40 h); previous open bids carried forward
