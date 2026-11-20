@@ -1,3 +1,12 @@
+# 2026-11-19 18:40 MT: HQ -> MAC: SEND QUEUE, IN ORDER (none of these has left yet; the worker's 01:21Z Sent check)
+HQ cannot write to Gmail from the cloud session. Bodies are in the repo; mailboxes on each firm's own site.
+1. Arapahoe 26-64: second touch to the six 11/17 painters + first touch to Paint EZ (ops/outbox/2026-11-19/arapahoe-*.txt). Replies
+   asked by Fri 11/20 12:00; NO-BID Fri 17:00 if no attendee for the MANDATORY Mon 11/23 10:00 meeting (Courtroom 401).
+2. Hyland Hills concrete: buyer docs request Fri 09:00 if Luke has not downloaded BidNet 0000443129 (questions may close Fri 16:00).
+3. Cherry Creek pool: Pool Doctor reply in Chris Lyons' thread (ops/outbox/2026-11-19/cherrycreek-pooldoctor-reply.txt).
+4. IHS fire doors (due Wed 11/25): sub first touch (American Door, Door Doctor, Grant's Steel) + CO bond question to Stephanie Begay.
+5. Sub lines: Thornton 337-26, Westminster roofing, D49 kitchen (bodies in each folder); Canon City 167-26 and Lakewood 6716 wait for docs.
+
 # 2026-11-19 17:20 MT: CEO: TRANSFORT 10366 TAX = quote stays tax-EXCLUSIVE
 ITB 10366 section 20.0 TAXES: "OWNER is exempt from Colorado State Sales and Use Tax as applicable. Said taxes shall not be included in the Contract Price."
 Overhead Door Fort Collins' corrected 11/17 quote (no sales tax, Brian Clark 11/19 15:24) is exactly what the ITB wants. No reconfigure. Price it as-is plus our markup.
