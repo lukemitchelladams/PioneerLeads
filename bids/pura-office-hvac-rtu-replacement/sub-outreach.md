@@ -36,3 +36,5 @@ Nielsen Mechanical, Pueblo Heating & Air (phone-only).
 - 2026-11-17 21:0xZ: first list built (5 own-site emails), email drafted and gated; NOT SENT (held for PURA's licensing answer).
 - 2026-11-20 ~12:45Z: list re-verified on each firm's own site; 4 lines + 1 backup; new body gated PASS. NOT SENT (agent run with no
   mail access; HQ sends from luke@brownbisonco.com).
+
+- 2026-11-20 20:46Z (Mac send run): follow-up to Chris DeLuca (1a1fab60b5861c28) + licensed-partner asks to Rial Heating (1a1fab65afd7f369) and R Buck Heating (office@callbuck.com, 1a1fab681d106ed5). **21:07Z REPLY from Chris DeLuca (msg 1a1fac93acad0eb8):** "I am sorry you were in my junk folder. We do prefer a local contractor. I am not sure if running it from up north would be cost effective to us. But you are more than welcome to submit" / "We will take a look and get back to you." No direct answer to the license question yet; not a disqualifier. A Pueblo-licensed sub doing the work answers the "local" preference.

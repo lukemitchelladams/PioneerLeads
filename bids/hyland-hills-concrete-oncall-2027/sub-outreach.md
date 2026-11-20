@@ -54,3 +54,5 @@ Thanks Team,
 
 ## Log
 - 2026-11-19 (HQ worker): 3 lines found (own-site emails), 7 form-only or no-email firms noted; draft gate PASS; nothing sent.
+
+- 2026-11-20 20:48-20:52Z (Mac send run): bid documents request to bids@hylandhills.gov (1a1fab7d0830ee23); sub first touch to Colorado Paving and Concrete (Enrique@coloradopavingandconcrete.com, 1a1fabb2d47ec64f), KRM Concrete (1a1fabb39e85c930), Coloscapes Concrete (estimating@, 1a1fabb464c7f3a0). **BOUNCE 20:52Z (1a1fabb347c51d7e): Enrique@coloradopavingandconcrete.com "address couldn't be found" (550).** Live: KRM, Coloscapes.

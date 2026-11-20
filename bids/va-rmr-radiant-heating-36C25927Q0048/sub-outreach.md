@@ -73,3 +73,5 @@ sends photos of every run, the panel nameplate/label, bracket type and connectio
 ## Log
 - 2026-11-20 ~15:0xZ (HQ agent, read-only): folder opened, 4/4 documents in hand, 3 firms found, bodies drafted and gated.
   Nothing sent.
+
+- 2026-11-20 20:45Z (Mac send run, after-walk first touch, docs + photos + WD attached): Simply Mechanical (1a1fab544e908955), Kerwin Plumbing & Heating (1a1fab570bec99a1), Cardom Plumbing & Heating (1a1fab5a2737cccc); lump sum asked by Mon 11/23 17:00 MT. **20:56Z Cardom DECLINED (msg 1a1fabedfd49575b): "At this time we are too busy to take on this job."** Live: Simply Mechanical, Kerwin. Quote still goes from documents if neither prices.

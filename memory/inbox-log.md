@@ -831,3 +831,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 20:21Z (13:21 MT) worker hourly
 - BidNet 20:05Z: addendum on COS R26-099MZ Parks On-Call Irrigation (1a1fa90a64dc1dc8; REVIVE-IF row). Sent newer_than:2h: none (Pike's reply still queued). No COI. No PSD receipt yet (upload due 14:00).
 - Scan 19:36Z: HQ logged WCU Pinnacles DHW (BidNet 0000444256) + portable restroom rental as EVALUATE (edbc96f). 169 open matches.
+
+## 2026-11-20 21:21Z (14:21 MT) worker hourly
+- Mac send run 20:43-20:55Z: 32 sends (Arapahoe painters, VA subs, PURA, IHS, Hyland Hills, Pool Doctor, DCSD/Parker award asks, D49, Westminster, Thornton x2, Eagle RFI, Pike's).
+- Replies: IHS 75H70727Q00003 CANCELLED (1a1fabbb38fd0c7e); PURA "prefer a local contractor ... welcome to submit" (1a1fac93acad0eb8); Cardom declined VA (1a1fabedfd49575b); Five Star Widefield PM needs survey + 1 ref (1a1fac7420287a8a).
+- Bounces: Asphalt Specialties bid@ blocked (1a1fabc051dda2e3); Colorado Paving Enrique@ 550 (1a1fabb347c51d7e). No COI. No PSD receipt yet (14:00 upload).

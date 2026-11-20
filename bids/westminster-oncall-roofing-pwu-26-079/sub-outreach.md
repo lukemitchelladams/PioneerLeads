@@ -55,3 +55,5 @@ Thanks Team,
 
 ## Log
 - 2026-11-19 (HQ worker): 3 lines + 1 backup found (own-site emails), 5 no-email firms noted; draft gate PASS; nothing sent.
+
+- 2026-11-20 20:52Z (Mac send run): first touch to Bear Brothers Roofing (denver@, 1a1fabb53d19e968), Superior Roofing (bids@, 1a1fabb5ed09d694), Colorado Weather Coatings (1a1fabb68a384b8d).

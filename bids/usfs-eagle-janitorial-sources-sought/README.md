@@ -50,3 +50,6 @@ period are not stated.
   [LUKE:] marker for any commercial janitorial or facilities work he can list.
 - No Eagle Valley sub is lined up yet. If a solicitation follows, sub outreach starts that day (rule 0b).
 - NAICS 561720 is not yet on the SAM record (Luke adds it; same item as BGNDRF and Kanab).
+
+
+- 2026-11-20 20:55Z: RFI response SENT to the Contract Specialist (curtisrlandreth@usda.gov), msg 1a1fabdb1a466987, subject "RFI Response - Janitorial Services - Eagle, CO" (Mac send run). Due was Mon 11/23 17:00 MT.

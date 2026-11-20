@@ -58,3 +58,5 @@ answers before the subs reply, send the corrected size in the same thread.
 ## Log
 - 2026-11-20 (HQ worker): 2 lines + 1 backup found (own-site emails), 5 form-only or no-email firms noted; body gate PASS;
   nothing sent. Sends belong to the Mac queue (HQ cloud Gmail writes hang on approval, COORDINATION 11/19 12:45).
+
+- 2026-11-20 20:52Z (Mac send run): first touch to Colorado Asphalt Services (info@coloradoasphalt.com, 1a1fabbcf1c5c372) and Asphalt Specialties Co. (bid@asphaltspecialties.com, 1a1fabbf5eb984e8). **BOUNCE 20:53Z (1a1fabc051dda2e3): Asphalt Specialties "Message blocked"** by the receiving server. Live: Colorado Asphalt only; next: backup Colorado Paving and Concrete (note: its Enrique@ address also bounced today on Hyland Hills) or another mailbox from Asphalt Specialties' site.

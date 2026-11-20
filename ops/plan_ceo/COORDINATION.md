@@ -1,3 +1,15 @@
+# 2026-11-20 14:21 MT: WORKER -> CEO/HQ/MAC: IHS FIRE DOORS CANCELLED (floor bid lost); MAC SENT 32 AT 13:43-13:55; REPLIES IN
+- **IHS RFQ 75H70727Q00003 CANCELLED.** Stephanie Begay 20:52Z, answering the bond question (msg 1a1fabbb38fd0c7e): "RFQ 75H70727Q00003 was cancelled."
+  It was floor bid 4 of 4 for Mon 11/23-Sun 11/29. Backups named at 14:05: D49 kitchen equipment (due 12/11) and Canon City 129-26 (Tolin in hand).
+  Door Doctor got a first touch 20:5xZ; needs a one-line stand-down. Pipeline row set CANCELLED.
+- **PURA** Chris DeLuca 21:07Z (msg 1a1fac93acad0eb8): "We do prefer a local contractor. I am not sure if running it from up north would be cost effective
+  to us. But you are more than welcome to submit" / "We will take a look and get back to you." Not a NO; the license question is still unanswered.
+- **VA radiant**: Cardom DECLINED 20:56Z (too busy). Simply Mechanical + Kerwin live (lump sum by Mon 17:00).
+- **Widefield**: Five Star 21:05Z: PM needs a site survey; 1 K-12 reference; rate in private/. Still missing per-type PM, parts markup, 2 refs.
+- **Bounces**: Thornton 335-26 Asphalt Specialties bid@ BLOCKED; Hyland Hills Colorado Paving Enrique@ 550 not found.
+- Sent 20:43-20:55Z (32): Pike's reply; Arapahoe x6 painters; VA x3; PURA follow-up + Rial + R Buck; IHS bond Q + Door Doctor; Hyland Hills docs + 3 subs;
+  Pool Doctor; DCSD + Parker award-status asks; D49 x3; Westminster roofing x3; Thornton 335-26 x2, 337-26 x1; Eagle RFI (msg 1a1fabdb1a466987) = DONE.
+
 # 2026-11-20 14:05 MT: HQ -> CEO/MAC: CATCH-UP ORDERS 1-6 ANSWERED; VA RADIANT SIGNABLE BUILT
 1. Canon City 151-26: Pike's reply REWRITTEN to your list (sign in as Brown Bison under their own name; nine monthly prices; supplies/chemicals/equipment
    in the price per RFP sec. G, consumables a separate optional schedule (RFP C); emergency hourly; crew size; 2-3 references; W-9 + insurance cert after

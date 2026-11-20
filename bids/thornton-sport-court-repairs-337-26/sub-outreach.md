@@ -54,3 +54,5 @@ luke@brownbisonco.com
 
 ## Log
 - 2026-11-19 (HQ worker): 2 lines found (own-site emails), 3 form-only firms noted; draft gate PASS; nothing sent.
+
+- 2026-11-20 20:53Z (Mac send run): first touch to Court Builders (info@courtbuildersco.com, 1a1fabc196b1e485).

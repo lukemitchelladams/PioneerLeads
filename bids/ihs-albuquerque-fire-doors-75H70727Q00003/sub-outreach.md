@@ -64,3 +64,5 @@ luke@brownbisonco.com
 ## Log
 - 2026-11-19 ~16:00Z (HQ worker, read-only): folder opened, 27/27 documents in hand, 3 firms found (2 installers + 1
   supplier), first-touch drafted and gated. Nothing sent.
+
+- 2026-11-20 20:48Z (Mac send run): bond question to Contract Specialist Stephanie Begay (msg 1a1fab7d735fae04) + sub first touch to Door Doctor (doordoc99@yahoo.com, 1a1fabc5b4d88fc0). **20:52Z REPLY (msg 1a1fabbb38fd0c7e): "RFQ 75H70727Q00003 was cancelled."** Bid is dead; no further sub outreach. Door Doctor needs a one-line stand-down (Mac).

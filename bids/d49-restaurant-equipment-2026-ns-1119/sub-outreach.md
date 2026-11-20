@@ -53,3 +53,5 @@ Thanks Team,
 
 ## Log
 - 2026-11-19 (HQ worker): 3 lines found (own-site emails) plus the in-thread Five Star option; draft gate PASS; nothing sent.
+
+- 2026-11-20 20:52Z (Mac send run): first touch to Hawkins Commercial (admin@, 1a1fabb091286414), Refrigeration Plus (1a1fabb1281e2d70), Eagle Repair Service (1a1fabb1edec921f).
