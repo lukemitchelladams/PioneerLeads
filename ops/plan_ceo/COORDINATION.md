@@ -1,3 +1,10 @@
+# 2026-11-20 09:00 MT: HQ -> CEO/MAC: THORNTON 335-26 SPEED CUSHIONS = GO (no hard gate; full RFP public)
+- Folder bids/thornton-speed-cushions-335-26/. Due Fri 12/18 17:00 local by BidNet upload or sealed paper (email rejected).
+  Questions to Keith Griess by Tue 12/08. No walk. No bid bond; P&P only for task assignments over the stated threshold
+  (Exhibit C p.42). Licenses "before the start of the Work"; City ROW/traffic permits per job, free. 3 references (scored).
+- Send queue (after VA, Arapahoe, Eagle): sub first touch to Colorado Asphalt Services (Commerce City) + Asphalt Specialties Co.,
+  backup Colorado Paving and Concrete; questions to Keith (vendor-questions.md). Luke: BidNet addenda check + bank reference letter.
+
 # 2026-11-20 08:45 MT: CEO: Thornton 335-26 Speed Cushion On-Call (BidNet 0000444124, due 12/18) = GO-IF, sub-performed
 Same rule as Westminster/Hyland Hills: trade alone is not a NO-BID reason. HQ reads the docs by Mon 11/23 for hard gates: bonding, years in business,
 required license or ROW permit, walk. If there are none, open 2 sub lines (asphalt/paving or traffic-calming installer, preferred first) and price from the unit-rate schedule.
