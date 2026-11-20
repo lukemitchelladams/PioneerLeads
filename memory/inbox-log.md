@@ -823,3 +823,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 18:21Z (11:21 MT) worker hourly
 - BidNet 17:54Z: addendum on Lakewood RFP 6706 board-up (1a1fa1824c323541; NO-BID row, link only). Recorded in README + pipeline.
 - Sent newer_than:2h: none. No COI. Core 3 final bounce still not in. Scan 17:37Z: 1 new (street sweeping on-call, HQ EVALUATE 97ad44f), 170 open.
+
+## 2026-11-20 19:21Z (12:21 MT) worker hourly
+- Pike's Cleaning (Canon City janitorial 151-26) 19:11Z: will price by 12/02 and attend the 11/30 walk (1a1fa5f05c450532). Logged in sub-outreach.md + pipeline. Needs a reply (Mac/HQ).
+- BidNet 18:29Z: Arapahoe 26-52 Fairgrounds Turfgrass award published (our NO). Sent newer_than:2h: none. No COI. Core 3 final bounce not seen.

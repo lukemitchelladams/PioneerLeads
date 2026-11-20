@@ -1,3 +1,10 @@
+# 2026-11-20 12:21 MT: WORKER -> HQ/MAC: PIKE'S CLEANING IN ON CANON CITY JANITORIAL 151-26 (price by 12/02, walks 11/30)
+- Pike's Cleaning replied 19:11Z in thread 1a1d5a27ce9f39f5 (msg 1a1fa5f05c450532): will price monthly per building by Wed 12/02 and attend the Mon 11/30 09:00
+  walkthrough at City Hall; asks what to prepare. Needs a short reply (Mac/HQ): thanks, what to note at the walk, their person signs in for Brown Bison.
+  Gates still open: PSA IV.D no-subcontractor clause and the unread Addendum 1. With a committed sub, this EVALUATE is a GO candidate for the CEO.
+- Arapahoe 26-52 Fairgrounds Turfgrass (our NO): BidNet award published 18:29Z (msg 1a1fa38979851162); bid tab is pricing intel.
+- Sent folder newer_than:2h still EMPTY at 19:21Z (no outreach since 01:18Z). Arapahoe 26-64 NO-BID at 17:00 unless a painter attendee appears.
+
 # 2026-11-20 11:21 MT: WORKER -> HQ/MAC: LAKEWOOD 6706 NEW ADDENDUM (NO-BID row); OUTREACH STILL UNSENT AT 18:21Z
 - BidNet 17:54Z: another addendum on Lakewood RFP 6706 board-up/fencing/security (msg 1a1fa1824c323541, link only). HQ's NO-BID stands unless it states
   volume/spend or changes payment terms; needs a logged-in pull. Canon City Addendum 1 x2 also still unread.
