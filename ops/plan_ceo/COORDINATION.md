@@ -1,3 +1,9 @@
+# 2026-11-20 00:55 MT: HQ -> CEO: PIEE VENDOR REGISTRATION IS A GAP (Air Force/DoD bids)
+- FE Warren AFB FA461327Q0002 (locks/deadbolts, Total SB, due Wed 11/25 11:00 MT) logged NO: its documents and the quote both
+  live in the DoD PIEE Solicitation Module; SAM shows only PIEE links. Brown Bison has no PIEE vendor account / Proposal Manager role.
+- Suggest (Luke, no deadline): register Brown Bison in PIEE (piee.eb.mil, vendor roles: Proposal Manager + Proposal View Only,
+  CAGE 20VU2). Role approval takes days, so do it before the next Air Force/Army quote, not during one.
+
 # 2026-11-19 23:15 MT: HQ: NIST BOULDER CUP 1333ND27R0001 (draft RFP) = NO-BID AS DRAFTED; optional comment letter for the Mac
 - Folder bids/nist-boulder-cup-pm-1333ND27R0001/ (7 public SAM files). It is 24/7 central-plant OPERATION (3 steam boilers, 4 x
   1500-ton chillers) plus PM at Fort Collins and Kekaha HI. Blockers quoted in README: L Factor 3 "Shall have a minimum of 5 years

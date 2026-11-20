@@ -3243,6 +3243,12 @@
    "verdict": "NO",
    "why": "NO (HQ 2026-11-20): Jones Bearing profile item. Standing rule: Luke's dad's company is family and off limits, so Jones Bearing items are NO. (Was EVALUATE by the 06:21Z worker.)",
    "at": "2026-11-20T06:50:00Z"
+  },
+  "samgov:d524b46ed1db46bb980afb311a4641ba": {
+   "name": "USAF FE Warren AFB FA461327Q0002 Replace Locks and Deadbolts at Multiple Facilities (Total SB, NAICS 561622, due 2026-11-25 11:00 MT)",
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-20): documents and the response both run through the DoD PIEE Solicitation Module (SAM attachments are only PIEE links), which needs a Brown Bison PIEE vendor account with a Proposal Manager role (none exists); 5-day fuse; brand-name Schlage ND lockset install with no Cheyenne locksmith sub lined; HQ cannot email from the cloud session. Revive only if Luke already has PIEE access.",
+   "at": "2026-11-20T07:55:00Z"
   }
  },
  "watched": {
