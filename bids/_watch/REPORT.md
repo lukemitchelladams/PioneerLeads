@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-20T02:36:03+00:00
+# Bid watch report — 2026-11-20T03:36:21+00:00
 
 **Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 672 | BUYER 450, AGGREGATE 223 | 87 | 2026-11-20T02:36:03+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T02:36:03+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (24 h, 25 runs), list carried forward; SAM_API_KEY not set; +98 from the nightly bulk file | 98 |  | 98 | 2026-11-20T02:36:03+00:00 | 2 |
-| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-20T02:36:03+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 672 | BUYER 450, AGGREGATE 223 | 87 | 2026-11-20T03:36:21+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T03:36:21+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (25 h, 26 runs), list carried forward; SAM_API_KEY not set; +98 from the nightly bulk file | 98 |  | 98 | 2026-11-20T03:36:21+00:00 | 2 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-20T03:36:21+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -275,4 +275,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 - bonfire: detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network
 - samgov: SAM_API_KEY not set
-- samgov: down since 2026-11-19T02:35Z (24 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (25 h); previous open bids carried forward
