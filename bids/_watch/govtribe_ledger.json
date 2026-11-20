@@ -3201,6 +3201,48 @@
    "verdict": "NO",
    "why": "Financial securities custody (bank/trust safekeeping), not janitorial; 'custodial' keyword false positive. Needs a chartered bank or trust company as the custodian (disqualifier).",
    "at": "2026-11-20T01:25:00Z"
+  },
+  "samgov:53398cb59b8f4b0687efd4e3fa6241dc": {
+   "name": "NPS 140PP027B0004 PUHO Fire Protection at Dorm (sources sought)",
+   "verdict": "NO",
+   "why": "NO: NPS 140PP027B0004 'Z--13976 PUHO Fire Protection at Dorm' (sources sought + special notice, NAICS 238220, due 11/25). PUHO is the NPS code for Pu'uhonua o Honaunau NHP, Hawaii (place of performance not stated in the bulk record; inferred from the park code). Outside the CO/NM/WY/UT service area the daily sweep uses (same call as NOAA Monterey). HQ overrules if the notice text shows a mainland site.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:25d401430bb14f02860ba51da2850621": {
+   "name": "NPS 140PP027B0004 PUHO Fire Protection at Dorm (special notice)",
+   "verdict": "NO",
+   "why": "NO: NPS 140PP027B0004 'Z--13976 PUHO Fire Protection at Dorm' (sources sought + special notice, NAICS 238220, due 11/25). PUHO is the NPS code for Pu'uhonua o Honaunau NHP, Hawaii (place of performance not stated in the bulk record; inferred from the park code). Outside the CO/NM/WY/UT service area the daily sweep uses (same call as NOAA Monterey). HQ overrules if the notice text shows a mainland site.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:7546b9637bce4c80a3f3d66020cb0f00": {
+   "name": "Army ANAD W911KF25SC002A0018 Low Level Cranes CSO (Anniston AL, due 11/30)",
+   "verdict": "NO",
+   "why": "NO (Jones Bearing profile): overhead/bridge crane replacement or rehabilitation (NAICS 333923, PSC 3950) is crane manufacturing/installation, not Jones Bearing's line (bearings, take-ups, pulleys, bucket elevators, lime handling); Jones Bearing has no SAM registration either.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:bd5e665d835e480d8bc4b4afb8e6cb61": {
+   "name": "USAF FA8227-27-Q-1000 Vandenberg Crane Replacement (Lompoc CA, SB set-aside, due 12/01)",
+   "verdict": "NO",
+   "why": "NO (Jones Bearing profile): overhead/bridge crane replacement or rehabilitation (NAICS 333923, PSC 3950) is crane manufacturing/installation, not Jones Bearing's line (bearings, take-ups, pulleys, bucket elevators, lime handling); Jones Bearing has no SAM registration either.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:9dd28dc222ea4d64ac1f6baed66dc3c9": {
+   "name": "USACE Nashville W912P527RAXXX Wolf Creek Powerhouse Bridge Crane Rehabilitation (Jamestown KY, sources sought, due 12/04)",
+   "verdict": "NO",
+   "why": "NO (Jones Bearing profile): overhead/bridge crane replacement or rehabilitation (NAICS 333923, PSC 3950) is crane manufacturing/installation, not Jones Bearing's line (bearings, take-ups, pulleys, bucket elevators, lime handling); Jones Bearing has no SAM registration either.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:bab347fe72d145eca283c108307e56ff": {
+   "name": "USAF FA8571 82115 AMFF Line1 Crane 2 Replacement (Warner Robins GA, due 12/21)",
+   "verdict": "NO",
+   "why": "NO (Jones Bearing profile): overhead/bridge crane replacement or rehabilitation (NAICS 333923, PSC 3950) is crane manufacturing/installation, not Jones Bearing's line (bearings, take-ups, pulleys, bucket elevators, lime handling); Jones Bearing has no SAM registration either.",
+   "at": "2026-11-20T06:30:00Z"
+  },
+  "samgov:23baa41e87174afea593cdc80bae9060": {
+   "name": "NAVSUP WSS Mechanicsburg N0010427QFA25 RING,BEARING,OUTER (PSC 3110, NAICS 332991, due 12/21)",
+   "verdict": "EVALUATE",
+   "why": "Jones Bearing FSC 3110 bearing part. Documents not in the bulk record (SAM blocked from the cloud). HQ/Mac reads the RFQ: NSN/part number, quantity (rule 9), approved-source or source-approval clause (NAVSUP parts often require an approved CAGE/OEM part, which would disqualify), and whether Brown Bison can quote as dealer with Jones Bearing as the maker (Jones has no SAM registration). NO if approved-source-only.",
+   "at": "2026-11-20T06:30:00Z"
   }
  },
  "watched": {
@@ -3386,6 +3428,6 @@
    "pipeline": "parker-generator"
   }
  },
- "last_hourly_check": "2026-11-20T05:21:00Z",
+ "last_hourly_check": "2026-11-20T06:21:00Z",
  "blocked": "subscription inactive since 2026-10-27T04:23Z (API: ACCOUNT_CANCELLED / UPGRADE_REQUIRED); Luke must restart it at govtribe.com/account"
 }
