@@ -1,24 +1,31 @@
 {
-  "checked_at": "2026-11-20T15:36:31+00:00",
+  "checked_at": "2026-11-20T16:36:10+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
-      "complete": true,
-      "count": 693,
+      "carried_forward": true,
+      "complete": false,
+      "count": 416,
       "creds": {
         "BIDNET_PASS": false,
         "BIDNET_USER": false
       },
-      "errors": [],
-      "last_success": "2026-11-20T15:36:31+00:00",
+      "down_runs": 1,
+      "down_since": "2026-11-20T16:36:10+00:00",
+      "errors": [
+        "BidNet list https://www.bidnetdirect.com/colorado/solicitations/open-bids/page8?selectedContent=BUYER: TimeoutError: Page.wait_for_load_state: Timeout 20000ms exceeded.",
+        "BidNet statewide tab failed; keyword searches skipped, previous results carried forward",
+        "bidnet list incomplete this scan: previous open bids carried forward, none marked closed"
+      ],
+      "last_success": "2026-11-20T16:36:10+00:00",
       "logged_in": false,
       "login_note": "BIDNET_USER/BIDNET_PASS not set",
-      "matches": 87,
+      "matches": 46,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide AGGREGATE": 241,
-        "statewide BUYER": 453
+        "statewide AGGREGATE": 242,
+        "statewide BUYER": 454
       }
     },
     "bonfire": {
@@ -30,7 +37,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-20T15:36:31+00:00",
+      "last_success": "2026-11-20T16:36:10+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -39,17 +46,17 @@
     },
     "coloradovss": {
       "complete": true,
-      "count": 68,
+      "count": 69,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-20T15:36:31+00:00",
+      "last_success": "2026-11-20T16:36:10+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
-        "statewide open": 68
+        "statewide open": 69
       }
     },
     "dibbs": {
@@ -75,15 +82,15 @@
       }
     },
     "samgov": {
-      "bulk_added": 98,
+      "bulk_added": 99,
       "bulk_note": "bulk file cached 2026-11-20T05:45:38+00:00; 107 matching (parsed earlier)",
       "carried_forward": true,
       "complete": false,
-      "count": 109,
+      "count": 111,
       "creds": {
         "SAM_API_KEY": false
       },
-      "down_runs": 38,
+      "down_runs": 39,
       "down_since": "2026-11-19T02:35:53+00:00",
       "errors": [
         "SAM_API_KEY not set",
@@ -92,11 +99,11 @@
         "SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9",
         "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
-      "last_success": "2026-11-20T15:36:31+00:00",
+      "last_success": "2026-11-20T16:36:10+00:00",
       "logged_in": false,
-      "login_note": "SAM_API_KEY not set; public search fallback (no key): 11 notices; +98 from the nightly bulk file",
-      "matches": 109,
-      "public_added": 11,
+      "login_note": "SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file",
+      "matches": 111,
+      "public_added": 12,
       "public_docs": {
         "deferred": 0,
         "downloaded": 0,
@@ -105,12 +112,12 @@
         "listed": 9,
         "notices": 9
       },
-      "public_note": "public search fallback (no key): 11 notices",
+      "public_note": "public search fallback (no key): 12 notices",
       "public_stats": {
-        "kept": 11,
+        "kept": 12,
         "queries": 9,
         "requests": 9,
-        "results": 18
+        "results": 19
       },
       "reach_note": "HTTP 404",
       "reachable": true
