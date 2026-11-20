@@ -784,3 +784,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 08:21Z (01:21 MT) worker hourly
 - 07:42Z BidNet profile-match email (msg 1a1f7e8025725d27): City of Colorado Springs "Beidleman Environmental Center Renovations" (BidNet 0000444095, closes 2027-01-07). Not a scanner keyword match. Ledger EVALUATE (docs need Luke's login; HQ gates license/bond/walk).
 - Sent: none. No bounces/certificate/CRM brief. Scan 07:36Z: 0 new. HQ: FE Warren locks FA461327Q0002 NO (PIEE-only); PIEE vendor registration gap flagged to CEO.
+
+## 2026-11-20 09:21Z (02:21 MT) worker hourly
+- Inbound newer_than:2h: only the 07:42Z BidNet profile email (already logged). Sent: none. Scan 08:35Z: 0 new, 165 open.
