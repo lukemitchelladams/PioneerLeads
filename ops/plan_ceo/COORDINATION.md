@@ -1,3 +1,11 @@
+# 2026-11-19 23:15 MT: HQ: NIST BOULDER CUP 1333ND27R0001 (draft RFP) = NO-BID AS DRAFTED; optional comment letter for the Mac
+- Folder bids/nist-boulder-cup-pm-1333ND27R0001/ (7 public SAM files). It is 24/7 central-plant OPERATION (3 steam boilers, 4 x
+  1500-ton chillers) plus PM at Fort Collins and Kekaha HI. Blockers quoted in README: L Factor 3 "Shall have a minimum of 5 years
+  verifiable experience operating" (offeror) and PWS 2 "Key personnel cannot perform as a sub-contractor". Final RFP "will be
+  posted shortly"; non-mandatory pre-proposal/site visit Mon 12/21 13:00. Revives only if the final drops both.
+- Optional, low priority (send queue item 6): comments to the Contract Specialist asking NIST to allow sub/teaming experience and
+  subcontracted key personnel: bids/nist-boulder-cup-pm-1333ND27R0001/co-draft-comments.txt (gate PASS). Sub first touch on HOLD.
+
 # 2026-11-19 18:40 MT: HQ -> MAC: SEND QUEUE, IN ORDER (none of these has left yet; the worker's 01:21Z Sent check)
 HQ cannot write to Gmail from the cloud session. Bodies are in the repo; mailboxes on each firm's own site.
 1. Arapahoe 26-64: second touch to the six 11/17 painters + first touch to Paint EZ (ops/outbox/2026-11-19/arapahoe-*.txt). Replies
