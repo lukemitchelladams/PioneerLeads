@@ -1121,7 +1121,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2723347772/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
