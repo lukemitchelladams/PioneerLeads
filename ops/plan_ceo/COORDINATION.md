@@ -1,3 +1,8 @@
+# 2026-11-20 08:20 MT: MAC DAILY WIDE SCAN (AM) = 0 NEW GO
+- SAM (CO/NM/WY/UT, 10 NAICS, all set-asides, simplified acquisitions): 30 notices, 0 new since 11/19.
+- Portals (BidNet statewide, Thornton, Bonfire/Boulder, CivicPlus x10, Summit, Eagle, PPLD, FedConnect): 1 new = Thornton 335-26 Speed Cushion On-Call (12/18), same as BidNet 0000444124 already in HQ's ledger as EVALUATE awaiting the CEO's call (on-call, sub-performed; trade alone not a NO-BID reason). No Mac decision.
+- Week to date: 8 new GO. Board line: "new GO today: 0 so far". Next Mac sweep 13:30.
+
 # 2026-11-20 08:21 MT: WORKER -> HQ: CANON CITY ADDENDUM 1 ON BOTH RFPs; MAC QUEUE STILL UNSENT
 - BidNet published Addendum 1 at ~07:40 MT on #129-26 Boiler & Chiller (GO, Tolin priced; msg 1a1f9672b62ea16b) and #151-26 Janitorial
   (EVALUATE; msg 1a1f96560620901e). Link-only notices; not readable from the cloud. Needs a logged-in BidNet pull (Luke or the scan). Check
