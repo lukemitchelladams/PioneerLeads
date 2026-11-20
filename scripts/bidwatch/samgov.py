@@ -147,23 +147,36 @@ def _keep(rec: dict, prof: dict) -> bool:
     return psc_group_ok(rec, prof) and bool(match_profiles(rec["title"], {"x": prof}))
 
 
+def profile_queries(prof: dict) -> list[dict]:
+    """The queries one profile needs: one per profile state ({"state": "CO"}, place of performance); a nationwide product
+    profile (no states) one per PSC code ({"ccode": "3110"}). The matching itself is local (accept). Shared with the keyless
+    public search (samgov_public.collect), which maps the same queries onto its own parameters."""
+    if prof.get("states"):
+        return [{"state": s} for s in prof["states"]]
+    return [{"ccode": q["ccode"]} for q in prof.get("samgov", []) if "ccode" in q]
+
+
+def accept(rec: dict, prof: dict, q: dict) -> bool:
+    """Whether normalized record `rec`, returned for query `q` of profile `prof`, is a match: an id, the profile's NAICS / PSC /
+    keyword rules (_keep), and for a state query the stated place of performance in that state."""
+    if not rec.get("id") or not _keep(rec, prof):
+        return False
+    # the API's state filter is loose; a profile state query keeps only that state
+    return not (q.get("state") and rec.get("state") and rec["state"] != q["state"])
+
+
 def collect(profiles: dict) -> tuple[dict, list[str]]:
     key = os.environ.get("SAM_API_KEY")
     if not key:
         return {}, ["SAM_API_KEY not set"]
     found, errors = {}, []
     for name, prof in profiles.items():
-        queries = [{"state": s} for s in (prof.get("states") or [])]
-        if not prof.get("states"):  # nationwide product profile: query by PSC
-            queries = [{"ccode": q["ccode"]} for q in prof.get("samgov", []) if "ccode" in q]
-        for q in queries:
+        for q in profile_queries(prof):
             try:
                 for o in fetch_open(key, q):
                     rec = normalize(o)
-                    if not rec["id"] or not _keep(rec, prof):
+                    if not accept(rec, prof, q):
                         continue
-                    if q.get("state") and rec.get("state") and rec["state"] != q["state"]:
-                        continue  # the API's state filter is loose; a profile state query keeps only that state
                     cur = found.setdefault(rec["id"], {**rec, "profiles": []})
                     if name not in cur["profiles"]:
                         cur["profiles"].append(name)

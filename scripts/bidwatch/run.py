@@ -11,7 +11,8 @@
 Every cycle:
   1. Source health: is each host reachable, are credentials set, did login work.
   2. Pull ALL open bids from every reachable source (BidNet Colorado statewide + keyword searches,
-     Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing, ColoradoVSS public list).
+     Euna/Bonfire portals, SAM.gov open + upcoming, DLA DIBBS for Jones Bearing, ColoradoVSS public list). Without
+     SAM_API_KEY, SAM.gov is the nightly bulk file plus the keyless public search for the last few days (samgov_public.py).
   3. Match each against the company profiles; open the detail page of every match and every
      watched bid to read closing date, questions deadline, pre-bid/site walk (mandatory or not). Watched bids
      first, then the matches new this scan, then the rest, inside one wall-clock budget for the whole detail pass
@@ -27,7 +28,8 @@ Every cycle:
      every 6 h, every scan only for a hot bid (GO / GO-IF / EVALUATE due within 14 days, or a changed list row:
      _WatchSet.addenda_hot), at most 8 extra loads a scan, the watched bids longest-unread first (_extra_rank).
   5. Re-check every bid in bids/_watch/watchlist.json; download its documents when logged in (ColoradoVSS
-     attachments are public and are downloaded from the detail view's Attachment panel without a login). An entry
+     attachments are public and are downloaded from the detail view's Attachment panel without a login; so are a
+     watched SAM.gov notice's, through sam.gov's public attachment endpoints, _sam_watched_docs). An entry
      decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
   6. Write REPORT.md, open_bids.json, health.json and LAST_SCAN.md (a six-line digest for the hourly operator: BidNet
      login, per-source open/matching counts with a BLIND marker, NEW matching bids, changes on watched bids, documents
@@ -60,7 +62,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, session_sync  # noqa: E402
+from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, samgov_public, session_sync  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, LAST_SCAN_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE,
     cred_status, days_until, iso, load_env_file, load_json, load_profiles, match_profiles, now_utc, save_json,
@@ -376,8 +378,14 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         health["samgov"]["login_note"] = "API key" if health["samgov"]["creds"]["SAM_API_KEY"] else "SAM_API_KEY not set"
         for r in rows.values():
             found[key(r)] = r
+    sam_budget = samgov_public.Budget()  # every keyless sam.gov request this scan: search, look-ups, attachments
+    sam_folders: dict[str, str] = {}  # downloads key -> bid folder, for watched notices that are not a row this scan
+    if "samgov" in sources and not health["samgov"]["creds"].get("SAM_API_KEY"):
+        _merge_sam_public(found, health["samgov"], profiles, sam_budget)  # today's notices; the bulk file is last night's
     if "samgov" in sources:
         _merge_sam_bulk(found, prev, health["samgov"], profiles)
+        if enrich_details:
+            _sam_watched_docs(found, watch, watched_keys, downloads, health["samgov"], sam_budget, docs_skipped, sam_folders)
     if "samgov" in sources and health["samgov"]["count"] == 0:
         # never a silent zero: say why (no key, probe/API down) so a reader does not mistake it for 'no bids'
         h = health["samgov"]
@@ -472,7 +480,7 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
     health_all = {**{s: {**v, "not_scanned_this_run": True} for s, v in prev_health.items() if s not in health},
                   **health}
     save_json(HEALTH_FILE, {"checked_at": started, "scanned_by": SCANNED_BY, "sources": health_all})
-    filed = _file_watched_docs(downloads, found, watched_keys)
+    filed = _file_watched_docs(downloads, found, watched_keys, sam_folders)
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed,
               "docs_skipped_no": docs_skipped}
@@ -487,15 +495,16 @@ def _sha1(p: Path) -> str:
     return hashlib.sha1(p.read_bytes()).hexdigest()
 
 
-def _file_watched_docs(downloads: dict, found: dict, watched_keys) -> list[str]:
+def _file_watched_docs(downloads: dict, found: dict, watched_keys, folders: dict | None = None) -> list[str]:
     """Copy each watched bid's newly downloaded documents into its bid folder's docs/ (the watchlist entry's
-    `folder`), skipping files whose content is already there under any name, then refresh that folder's
+    `folder`; `folders` names it for a download whose bid is not a row this scan, a watched SAM.gov notice found by its
+    solicitation number), skipping files whose content is already there under any name, then refresh that folder's
     MANIFEST.md (CLAUDE.md rule 0c: complete packages). Returns repo-relative paths written, for the push."""
     out: list[str] = []
     for k, paths in downloads.items():
         b = found.get(k)
         w = watched_keys.entry(b) if b else None
-        folder = (w or {}).get("folder")
+        folder = (w or {}).get("folder") or (folders or {}).get(k)
         if not folder or not (REPO / folder).is_dir():
             continue  # no bid folder yet: the files stay in bids/_watch/downloads/<source>/<id>/
         dest = REPO / folder / "docs"
@@ -528,10 +537,178 @@ def _file_watched_docs(downloads: dict, found: dict, watched_keys) -> list[str]:
     return out
 
 
+def _merge_sam_public(found: dict, h: dict, profiles: dict, budget=None) -> int:
+    """SAM_API_KEY unset: the keyless public search (samgov_public.collect, the profiles' queries as samgov.py builds them, notices
+    modified in the last samgov_public.MODIFIED_DAYS days) adds the notices and amendments posted since the nightly bulk file
+    was built. Its rows (via="public") go in before the file's, so a notice in both is counted once (_merge_sam_bulk marks it
+    "public+bulk"); the health note says "public search fallback (no key): N notices". It reads a window, not every open
+    notice, so SAM.gov stays PARTIAL without the API (complete False: nothing is marked closed on its word, as before). An HTTP
+    error or a timeout is a line in h["errors"] and the scan goes on. Returns the rows added."""
+    try:
+        rows, errs, stats = samgov_public.collect(profiles, budget=budget)
+    except Exception as e:  # noqa: BLE001 - samgov_public.collect does not raise; this keeps it that way for the scan
+        rows, errs, stats = {}, [f"SAM.gov public search: {type(e).__name__}: {str(e)[:150]}"], {}
+    added = 0
+    for r in rows.values():
+        k = key(r)
+        if k not in found:  # an API row would stay first (there is none without the key)
+            found[k] = r
+            added += 1
+    h["errors"] += errs
+    h["count"] += added
+    h["complete"] = False
+    h["public_added"] = added
+    h["public_stats"] = stats
+    h["public_note"] = f"public search fallback (no key): {added} notices" \
+        + (f", {len(errs)} error{'s' if len(errs) != 1 else ''}" if errs else "")
+    h["login_note"] = "; ".join(x for x in (h.get("login_note") or "SAM_API_KEY not set", h["public_note"]) if x)
+    return added
+
+
+NO_DOC_LIST_VIA = ("bulk", "public", "public+bulk")  # SAM.gov rows that come without a document list (no resourceLinks)
+DOCS_READ_NOW = "documents_read_now"  # on a fresh record only (popped in _carry_documents): its list was read this scan
+_HEX_ID_RX = re.compile(r"[0-9a-f]{32}")
+_SOL_TERM_RX = re.compile(r"[A-Za-z0-9][A-Za-z0-9-]{5,40}")
+SAM_LOOKUPS_PER_ENTRY = 3
+
+
+def _sam_entry_terms(w: dict) -> tuple[list[str], list[str]]:
+    """(solicitation numbers, notice ids) a SAM.gov watchlist entry names: its id and the alternatives of its match pattern that
+    are a 32-hex notice id, or one plain word with letters and digits (a solicitation number; not a title phrase, a regex
+    fragment or an NSN)."""
+    sols: list[str] = []
+    ids: list[str] = []
+    for t in [str(w.get("id") or "")] + str(w.get("match") or "").split("|"):
+        t = t.strip()
+        if _HEX_ID_RX.fullmatch(t):
+            ids += [t] if t not in ids else []
+        elif _SOL_TERM_RX.fullmatch(t) and re.search(r"\d", t) and re.search(r"[A-Za-z]", t) and t not in sols:
+            sols.append(t)
+    return sols[:SAM_LOOKUPS_PER_ENTRY], ids
+
+
+def _sam_doc_targets(found: dict, watch: list, watched_keys, h: dict, budget, skipped, fetch=None) -> list[dict]:
+    """The watched SAM.gov notices whose attachments _sam_watched_docs reads, soonest due first: {key, id, entry, row (this scan's
+    record, or None), closing, label}. A row of this scan counts when a samgov entry with a folder covers it, the bid is not
+    decided NO (its key goes on `skipped` instead) and it is still open. An entry with a folder and no row (a notice outside the
+    profiles) is looked up by the solicitation numbers it names (samgov_public.find_notices, one request each; its notice ids
+    when it names none)."""
+    out, seen_w, seen_ids = [], set(), set()
+
+    def add(k, nid, w, row, closing, label):
+        seen_ids.add(nid)
+        out.append({"key": k, "id": nid, "entry": w, "row": row, "closing": closing, "label": label or nid})
+
+    for k, b in found.items():
+        if b.get("source") != "samgov" or not b.get("id") or b.get("carried_forward"):
+            continue
+        es = [w for w in watched_keys.entries(b) if w.get("source") == "samgov" and w.get("folder")]
+        if not es:
+            continue
+        seen_w |= {id(w) for w in es}
+        if watched_keys.decided_no(b):
+            if skipped is not None and k not in skipped:
+                skipped.append(k)
+            continue
+        d = days_until(b.get("closing"))
+        if (d is None or d >= 0) and b["id"] not in seen_ids:
+            add(k, b["id"], next((w for w in es if not watch_decided_no(w)), es[0]), b, b.get("closing"), b.get("sol"))
+    for w in watch:
+        if w.get("source") != "samgov" or not w.get("folder") or id(w) in seen_w or watch_decided_no(w):
+            continue
+        sols, ids = _sam_entry_terms(w)
+        try:
+            rx = re.compile(w["match"], re.I) if w.get("match") else None
+        except re.error:
+            rx = None
+        hits = [{"id": i} for i in ids] if not sols else []
+        for term in sols:
+            try:
+                rows = samgov_public.find_notices(term, budget, fetch=fetch)
+            except samgov_public.CapReached:
+                break  # _sam_watched_docs says the cap was reached
+            except Exception as e:  # noqa: BLE001
+                h["errors"].append(f"SAM.gov public look-up {term}: {samgov._err_text(e)}")
+                continue
+            hits += [r for r in rows if (rx.search(f"{r.get('title') or ''} {r.get('sol') or ''}") if rx
+                                         else term.lower() in (r.get("sol") or "").lower())]
+        for r in hits:
+            d = days_until(r.get("closing"))
+            if r.get("id") and r["id"] not in seen_ids and (d is None or d >= 0):
+                add(f"samgov:{r['id']}", r["id"], w, None, r.get("closing"), r.get("sol"))
+    return sorted(out, key=lambda t: t["closing"] or "9")
+
+
+def _sam_watched_docs(found: dict, watch: list, watched_keys, downloads: dict, h: dict, budget, skipped=None, folders=None,
+                      fetch=None) -> int:
+    """Download the attachments of watched SAM.gov notices through the keyless public endpoints (samgov_public.fetch_notice_files),
+    key or no key: into bids/_watch/downloads/samgov/<notice id>/, listed in `downloads` under the notice's key, so
+    _file_watched_docs copies them into the bid folder's docs/ and refreshes its MANIFEST.md (`folders` gets the folder of a
+    notice that is not a row this scan). Which notices: _sam_doc_targets. Only files not in hand are fetched (not in the
+    downloads folder or the bid folder's docs/ under that name and size, samgov_public.in_hand); "link" attachments (nothing
+    to fetch) and non-public files are named in one line per notice; at most samgov_public.MAX_DOCS files a notice, every
+    request out of the scan's shared `budget`. A row without a document list (bulk / public) gets the one read (resource ids,
+    the API's names) so the next scan's _diff sees an amendment. Per-file failures are lines in h["errors"]. Returns files saved."""
+    folders = folders if folders is not None else {}
+    stats = {"notices": 0, "listed": 0, "downloaded": 0, "in_hand": 0, "links": 0, "deferred": 0}
+    try:
+        targets = _sam_doc_targets(found, watch, watched_keys, h, budget, skipped, fetch)
+    except Exception as e:  # noqa: BLE001 - never into the scan
+        h["errors"].append(f"SAM.gov attachments: {type(e).__name__}: {str(e)[:150]}")
+        targets = []
+    stop = None
+    for i, t in enumerate(targets):
+        if budget.down or budget.used >= budget.max:
+            stop = (budget.why(), len(targets) - i)
+            break
+        k, nid, b, label, folder = t["key"], t["id"], t["row"], t["label"], t["entry"].get("folder")
+        stats["notices"] += 1
+        res = samgov_public.fetch_notice_files(nid, budget, extra_dirs=[REPO / folder / "docs"] if folder else [], fetch=fetch)
+        if not res["listed"]:
+            if res["stopped"]:
+                stop = (res["stopped"], len(targets) - i)
+                break
+            h["errors"] += [f"SAM.gov attachments {label}: {e}" for e in res["errors"][:1]]
+            continue
+        stats["listed"] += 1
+        stats["downloaded"] += len(res["saved"])
+        stats["in_hand"] += len(res["in_hand"])
+        stats["links"] += len(res["links"])
+        stats["deferred"] += len(res["deferred"])
+        if res["saved"]:
+            downloads[k] = downloads.get(k, []) + res["saved"]
+            if folder:
+                folders[k] = folder
+        if b is not None and (not b.get("documents") or b.get("via") in NO_DOC_LIST_VIA):
+            b["documents"] = res["documents"]
+            b[DOCS_READ_NOW] = True
+        if b is not None and res["links"]:
+            b["doc_links"] = res["links"]
+        h["errors"] += [f"download {label}: {e}" for e in res["errors"][:3]]
+        if res["links"]:
+            h["errors"].append(f"{label}: {len(res['links'])} link attachment(s) not downloaded (a web link, not a file; open it "
+                               f"from {samgov_public.VIEW_URL.format(nid=nid)}): " + ", ".join(res["links"])[:200])
+        if res["restricted"]:
+            h["errors"].append(f"{label}: {len(res['restricted'])} attachment(s) not public on SAM.gov (request access on the "
+                               "notice page): " + ", ".join(res["restricted"])[:200])
+        if res["deferred"]:
+            h["errors"].append(f"{label}: {len(res['deferred'])} of {len(res['documents'])} attachments not downloaded yet "
+                               f"({res['stopped'] or f'at most {samgov_public.MAX_DOCS} files a notice a scan'}; "
+                               "tried again next scan)")
+        if res["stopped"]:
+            stop = (res["stopped"], len(targets) - i - 1)
+            break
+    if stop and stop[1]:
+        h["errors"].append(f"SAM.gov attachments: {stop[0]}; {stop[1]} watched notice(s) wait for the next scan")
+    h["public_docs"] = stats
+    return stats["downloaded"]
+
+
 def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
-    """Add the nightly SAM.gov bulk file's matches (no API key needed; samgov_bulk.py) under the API's rows.
-    The API stays first: it has attachments and today's postings. The file adds notices the API's state query
-    cannot see (blank place of performance, Colorado buying office) and keeps SAM.gov alive without the API."""
+    """Add the nightly SAM.gov bulk file's matches (no API key needed; samgov_bulk.py) under the API's rows (or, without the
+    key, the public search's: _merge_sam_public). The API stays first: it has attachments and today's postings. The file adds
+    notices the API's state query cannot see (blank place of performance, Colorado buying office) and keeps SAM.gov alive
+    without the API. A notice already in `found` is counted once, marked "api+bulk" / "public+bulk"."""
     api_rows = [b for b in found.values() if b["source"] == "samgov"]
     api_ok = bool(api_rows) and not h["errors"]
     for b in api_rows:
@@ -542,7 +719,7 @@ def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
     for r in bulk.values():
         k = key(r)
         if k in found:
-            found[k]["via"] = "api+bulk"
+            found[k]["via"] = f"{found[k].get('via') or 'api'}+bulk"
         else:
             found[k] = r
             added += 1
@@ -555,7 +732,7 @@ def _merge_sam_bulk(found: dict, prev: dict, h: dict, profiles: dict) -> None:
         return
     h["errors"].append(note)
     for k, v in prev.items():  # file unavailable: keep the rows only it had found instead of reading them as closed
-        if v.get("source") == "samgov" and v.get("via") == "bulk" and k not in found \
+        if v.get("source") == "samgov" and v.get("via") in ("bulk", "public+bulk") and k not in found \
                 and (days_until(v.get("closing")) or 0) >= 0:
             found[k] = {**v, "carried_forward": True}
 
@@ -638,24 +815,29 @@ DOCS_UNKNOWN = "documents_unknown"  # on a saved record: True = no real read of 
 
 def _docs_unknown(b: dict) -> bool:
     """True when record `b`'s document list comes from no real read, so a list seen later is not news: the DOCS_UNKNOWN marker
-    when the record has one; on a record saved before the marker existed, a bulk-file row (via="bulk") with no documents."""
+    when the record has one; on a record saved without it, a row that comes without a list (via="bulk" / "public" /
+    "public+bulk", NO_DOC_LIST_VIA) with no documents."""
     if DOCS_UNKNOWN in b:
         return bool(b[DOCS_UNKNOWN])
-    return b.get("via") == "bulk" and not b.get("documents")
+    return b.get("via") in NO_DOC_LIST_VIA and not b.get("documents")
 
 
 def _carry_documents(found: dict, prev: dict, degraded: set) -> int:
-    """Fresh records whose document list is empty or missing because of a gap (a nightly bulk-file row, via="bulk", which has
-    no attachment links; or any row of a source in `degraded`, the sources whose list is incomplete this run) keep the previous
-    record's list (DOCS_UNKNOWN False: known from an earlier read, [] when that read found none). With no earlier read to
-    carry they get DOCS_UNKNOWN True. A real read (a list with documents, or a healthy source's row) is saved as seen, a list
-    that lost documents included, and clears the marker. Rows carried forward whole, and sources that keep no document list
-    (DIBBS), are left alone. Returns how many non-empty lists were carried."""
+    """Fresh records whose document list is empty or missing because of a gap (a nightly bulk-file or public-search row,
+    NO_DOC_LIST_VIA, which has no attachment links; or any row of a source in `degraded`, the sources whose list is incomplete
+    this run) keep the previous record's list (DOCS_UNKNOWN False: known from an earlier read, [] when that read found none).
+    With no earlier read to carry they get DOCS_UNKNOWN True. A real read (a list with documents, a healthy source's row, or a
+    list read this scan, DOCS_READ_NOW: a watched notice's public attachment list, even an empty one, DOCS_UNKNOWN False) is
+    saved as seen, a list that lost documents included, and clears the marker. Rows carried forward whole, and sources that
+    keep no document list (DIBBS), are left alone. Returns how many non-empty lists were carried."""
     n = 0
     for k, b in found.items():
+        if b.pop(DOCS_READ_NOW, None) and not b.get("carried_forward"):
+            b[DOCS_UNKNOWN] = False  # a record saved with no marker and an empty public/bulk list would read as unknown
+            continue
         if b.get("carried_forward"):
             continue  # the previous record itself, its list and marker included
-        if b.get("documents") or not (b.get("via") == "bulk" or b.get("source") in degraded):
+        if b.get("documents") or not (b.get("via") in NO_DOC_LIST_VIA or b.get("source") in degraded):
             b.pop(DOCS_UNKNOWN, None)
             continue
         old = prev.get(k) or {}

@@ -1847,6 +1847,12 @@ b.close()
 from scripts.bidwatch import run  # noqa: E402
 
 run.samgov_bulk.URL = "http://127.0.0.1:1/no-bulk-file-in-tests"  # part 5 serves a fake one
+# the keyless public search runs in every scan without SAM_API_KEY: never sam.gov from the tests (the last part fakes it)
+run.samgov_public.SEARCH_API = "http://127.0.0.1:1/no-public-search-in-tests/"
+run.samgov_public.RESOURCES_API = "http://127.0.0.1:1/no-resources-in-tests/{nid}/resources"
+run.samgov_public.DOWNLOAD_API = "http://127.0.0.1:1/no-downloads-in-tests/{rid}/download"
+run.samgov_public.SLEEP_S = 0
+run.samgov_public.DOWNLOAD_DIR = TMP / "downloads"
 for name in ["OPEN_BIDS_FILE", "HEALTH_FILE", "REPORT_FILE", "WATCHLIST_FILE", "LAST_SCAN_FILE", "PIPELINE_FILE"]:
     setattr(run, name, TMP / f"{name}.json")
 LAST_SCAN = TMP / "LAST_SCAN_FILE.json"
@@ -4482,6 +4488,354 @@ _lo_r2 = {**_lo_r, "health": {**_lo_r["health"], **_lo_set}}
 check("case 2, every credential set: no LOGGED OUT, the headline exactly as before",
       "LOGGED OUT" not in run.render(_lo_r2)
       and _lo_headline(_lo_r2) == "**Headline:** not scanned this run (previous results kept): dibbs", _lo_headline(_lo_r2))
+
+# ---------------------------------------------------------------- SAM.gov keyless public search fallback (2026-11-20)
+# SAM_API_KEY unset since 2026-11-19: SAM.gov was the nightly bulk file alone (no notice or amendment since the rebuild, no
+# attachments). samgov_public.py reads sam.gov's public search and attachment endpoints; every request here is a fake.
+print("SAM.gov keyless public search: rows, bulk de-duplication, HTTP errors, attachments (files yes, links no), request cap")
+from scripts.bidwatch import samgov_public  # noqa: E402
+import urllib.error as _pub_ue  # noqa: E402
+from urllib.parse import urlparse as _pub_urlparse  # noqa: E402
+
+_pub_saved = (samgov_public.SEARCH_API, samgov_public.RESOURCES_API, samgov_public.DOWNLOAD_API, samgov_public.SLEEP_S,
+              samgov_public._sleep, samgov_public._http_get, samgov_public.DOWNLOAD_DIR, run.samgov_bulk.collect, run.reachable,
+              run.REPO, os.environ.pop("SAM_API_KEY", None), os.environ.get(samgov_public.MAX_REQUESTS_ENV))
+samgov_public.SEARCH_API = "https://sam.gov/api/prod/sgs/v1/search/"  # the real addresses: the fakes route on their paths
+samgov_public.RESOURCES_API = "https://sam.gov/api/prod/opps/v3/opportunities/{nid}/resources?excludeDeleted=false&withScanResult=false"
+samgov_public.DOWNLOAD_API = "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/{rid}/download"
+samgov_public.SLEEP_S = 0
+_PUB_NOW = common.now_utc().replace(microsecond=0)
+_PUB_MT = _dtm.timezone(_dtm.timedelta(hours=-7))
+
+
+def _pub_hit(nid, title, code="o", value="Solicitation", state="CO", naics="238220", psc="J041", days=12.0, active=True,
+             canceled=False, office_state="CO", sol=None):
+    """One search result as sam.gov returns it (fields trimmed); `days` = response date from now (negative: passed)."""
+    resp = _PUB_NOW + _dtm.timedelta(days=days)
+    return {"_id": nid, "title": title, "solicitationNumber": sol or f"SOL-{nid}", "type": {"code": code, "value": value},
+            "isActive": active, "isCanceled": canceled, "modifiedDate": _PUB_NOW.isoformat(),
+            "publishDate": "2026-11-19T20:42:57+00:00", "responseDate": resp.isoformat(),
+            "responseDateActual": resp.astimezone(_PUB_MT).isoformat(), "responseTimeZone": "America/Denver",
+            "naics": [{"code": naics, "value": "x"}] if naics else [],
+            "psc": [{"code": psc, "value": "x"}, {"code": "J0 - MAINT, REPAIR, REBUILD OF EQUIPMENT", "id": None}] if psc else [],
+            "placeOfPerformance": [{"state": state, "city": "16000", "zip": None, "country": "USA"}],
+            "solicitation": {"setAside": {"code": "SBA", "value": "Total Small Business Set-Aside (FAR 19.5)"}},
+            "organizationHierarchy": [
+                {"level": 2, "name": "VETERANS AFFAIRS", "type": "AGENCY", "address": {"state": None}},
+                {"level": 1, "name": "VETERANS AFFAIRS, DEPARTMENT OF", "type": "DEPARTMENT", "address": {"state": None}},
+                {"level": 3, "name": "NETWORK CONTRACT OFFICE 19", "type": "OFFICE", "address": {"state": office_state}}]}
+
+
+_PUB_SEARCH = {  # (parameter, value) the query filters on -> results, or an exception to raise
+    ("pop_state", "CO"): [
+        _pub_hit("p1", "HVAC Preventive Maintenance, Building 2", code="k", value="Combined Synopsis/Solicitation"),
+        _pub_hit("p2", "Janitorial services, Pikes Peak", naics="561720", psc="S201", days=20),
+        _pub_hit("x1", "Conveyor bearing replacement, central plant", psc="3110", days=8),
+        _pub_hit("p3", "HVAC service award", code="a", value="Award Notice"),                     # not a bid
+        _pub_hit("p4", "HVAC repair", canceled=True),                                             # cancelled
+        _pub_hit("p5", "HVAC sources sought", code="r", value="Sources Sought"),                  # not a solicitation
+        _pub_hit("p6", "HVAC repair, due an hour ago", days=-1 / 24),                             # response date passed
+        _pub_hit("p7", "HVAC preventive maintenance, Cheyenne", state="WY"),                     # the filter is loose
+        _pub_hit("p8", "Actuarial services", naics="524298", psc="R499"),                         # no profile rule
+        _pub_hit("p9", "Boiler replacement", active=False)],                                      # inactive
+    ("psc", "3110"): [_pub_hit("b1", "BEARING,BALL", naics="332991", psc="3110", state=None, office_state="PA", days=30),
+                      _pub_hit("x1", "Conveyor bearing replacement, central plant", psc="3110", days=8)],
+    ("psc", "3130"): [],
+}
+_PUB_ATTS: dict = {}  # notice id -> attachment records, or an exception
+_PUB_FILES: dict = {}  # resource id -> bytes, or an exception
+_PUB_CALLS: list = []
+
+
+def _pub_fetch(url):
+    """The fake sam.gov: search by the filter parameter, attachment lists and downloads by id; every URL recorded."""
+    _PUB_CALLS.append(url)
+    u = _pub_urlparse(url)
+    qs = {k: v[0] for k, v in parse_qs(u.query).items()}
+    m = re.search(r"/opportunities/(\w+)/resources$", u.path)
+    if m:
+        atts = _PUB_ATTS.get(m.group(1), [])
+        if isinstance(atts, Exception):
+            raise atts
+        return json.dumps({"_embedded": {"opportunityAttachmentList": [{"opportunityId": m.group(1), "attachments": atts}]}}
+                          if atts else {"_links": {}}).encode()
+    m = re.search(r"/resources/files/(\w+)/download$", u.path)
+    if m:
+        body = _PUB_FILES[m.group(1)]
+        if isinstance(body, Exception):
+            raise body
+        return body
+    k = next(((p, qs[p]) for p in ("pop_state", "psc", "q") if p in qs), None)
+    res = _PUB_SEARCH.get(k, [])
+    if isinstance(res, Exception):
+        raise res
+    return json.dumps({"_embedded": {"results": res}, "page": {"size": len(res), "totalElements": len(res), "totalPages": 1,
+                                                               "number": 0}}).encode()
+
+
+_PUB_PROF = {"brownbison": {"states": ["CO"], "samgov": [{"ncode": "238220"}, {"title": "janitorial"}],
+                            "bidnet_keywords": ["hvac", "janitorial", "boiler"], "exclude_keywords": ["paving"]},
+             "jones-bearing": {"states": [], "samgov": [{"ccode": "3110"}, {"ccode": "3130"}, {"title": "conveyor"}],
+                               "bidnet_keywords": ["bearing", "conveyor"]}}
+try:
+    # 1. search results -> rows: samgov.normalize's shape, the profiles' own queries, only open solicitations kept
+    _PUB_CALLS.clear()
+    _pr, _pe, _ps = samgov_public.collect(_PUB_PROF, budget=samgov_public.Budget(40), fetch=_pub_fetch, now=_PUB_NOW)
+    _p1 = _pr.get("p1") or {}
+    _p1_close = (_PUB_NOW + _dtm.timedelta(days=12)).astimezone(_PUB_MT).date().isoformat()
+    check("public search: one request per samgov.profile_queries query (CO by pop_state, each PSC by psc), only active o,k "
+          "solicitations modified in the last 3 days with a response date ahead",
+          len(_PUB_CALLS) == 3 == _ps["requests"] and _ps["queries"] == 3 and not _pe
+          and all("is_active=true" in u and "notice_type=o,k" in u and "sort=-modifiedDate" in u
+                  and f"modified_date.from={(_PUB_NOW - _dtm.timedelta(days=3)).date()}%2B00:00" in u
+                  and f"response_date.from={_PUB_NOW.date()}%2B00:00" in u for u in _PUB_CALLS)
+          and "pop_state=CO" in _PUB_CALLS[0] and "psc=3110" in _PUB_CALLS[1] and "psc=3130" in _PUB_CALLS[2],
+          (_PUB_CALLS, _pe, _ps))
+    check("public search: award / cancelled / sources sought / passed / inactive / out-of-state / unrelated notices dropped",
+          set(_pr) == {"p1", "p2", "x1", "b1"}, sorted(_pr))
+    check("public search: a row has samgov.normalize's fields (id, title, sol, agency path, type, closing in the notice's zone, "
+          "NAICS, PSC, set-aside, state, office state, view URL), no FIPS code as a city, via=public, no document list",
+          _p1.get("source") == "samgov" and _p1.get("id") == "p1" and _p1.get("title") == "HVAC Preventive Maintenance, Building 2"
+          and _p1.get("sol") == "SOL-p1"
+          and _p1.get("agency") == "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS.NETWORK CONTRACT OFFICE 19"
+          and _p1.get("type") == "Combined Synopsis/Solicitation" and _p1.get("upcoming") is False
+          and _p1.get("closing") == _p1_close and _p1.get("naics") == "238220" and _p1.get("psc") == "J041"
+          and _p1.get("set_aside") == "Total Small Business Set-Aside (FAR 19.5)" and _p1.get("state") == "CO"
+          and _p1.get("city") is None and _p1.get("office_state") == "CO" and _p1.get("url") == "https://sam.gov/opp/p1/view"
+          and _p1.get("via") == "public" and _p1.get("documents") == [] and _p1.get("profiles") == ["brownbison"]
+          and set(_p1) >= set(samgov.normalize({"noticeId": "p1"})), _p1)
+    check("public search: profiles as the API path gives them (NAICS, title keyword, PSC nationwide with a blank place of "
+          "performance); a notice two queries return is one row with both profiles",
+          _pr["p2"]["profiles"] == ["brownbison"] and _pr["b1"]["profiles"] == ["jones-bearing"] and _pr["b1"]["state"] is None
+          and _pr["b1"]["office_state"] == "PA" and _pr["x1"]["profiles"] == ["brownbison", "jones-bearing"],
+          {k: v["profiles"] for k, v in _pr.items()})
+    _PUB_CALLS.clear()
+    _pr_real, _, _ps_real = samgov_public.collect(profiles, budget=samgov_public.Budget(40), fetch=lambda u: _PUB_CALLS.append(u)
+                                                  or b'{"page": {"totalPages": 0}}', now=_PUB_NOW)
+    _real_q = [q for p in profiles.values() for q in samgov.profile_queries(p)]
+    check("public search with the real watch profiles: exactly the API path's queries (samgov.profile_queries), one request each",
+          len(_PUB_CALLS) == len(_real_q) == _ps_real["requests"] and len(_real_q) >= 2
+          and all(any((f"pop_state={q['state']}" if "state" in q else f"psc={q['ccode']}") in u for u in _PUB_CALLS) for q in _real_q),
+          (_PUB_CALLS, _real_q))
+
+    # 2. de-duplication: the public rows go in first; the bulk file's copy of the same notice is not counted twice
+    samgov_public._http_get = _pub_fetch
+    _bulk_p1 = {**_p1, "title": "HVAC PREVENTIVE MAINTENANCE, BUILDING 2", "via": "bulk", "profiles": ["brownbison"]}
+    _bulk_only = {"source": "samgov", "id": "bk", "title": "Boiler service, Pueblo", "closing": "2099-01-01", "via": "bulk",
+                  "documents": [], "profiles": ["brownbison"]}
+    run.samgov_bulk.collect = lambda profiles: ({"samgov:p1": _bulk_p1, "samgov:bk": _bulk_only}, "bulk file cached; 2 matching")
+    _dd_found: dict = {}
+    _dd_h = {"errors": ["SAM_API_KEY not set"], "count": 0, "login_note": "SAM_API_KEY not set", "creds": {"SAM_API_KEY": False}}
+    run._merge_sam_public(_dd_found, _dd_h, _PUB_PROF, samgov_public.Budget(40))
+    run._merge_sam_bulk(_dd_found, {}, _dd_h, _PUB_PROF)
+    check("de-duplication: a notice in the public search and the bulk file is one row (the public one, via public+bulk), "
+          "counted once; the bulk-only notice is added",
+          sorted(_dd_found) == ["samgov:b1", "samgov:bk", "samgov:p1", "samgov:p2", "samgov:x1"]
+          and _dd_found["samgov:p1"]["via"] == "public+bulk" and _dd_found["samgov:p1"]["title"] == _p1["title"]
+          and _dd_found["samgov:bk"]["via"] == "bulk" and _dd_h["count"] == 5 == len(_dd_found)
+          and _dd_h["public_added"] == 4 and _dd_h["bulk_added"] == 1, (sorted(_dd_found), _dd_h))
+    check("de-duplication: the health note reads 'public search fallback (no key): 4 notices' before the bulk file's count; "
+          "the source stays PARTIAL (complete False) without the API",
+          _dd_h["login_note"] == "SAM_API_KEY not set; public search fallback (no key): 4 notices; +1 from the nightly bulk file"
+          and _dd_h["complete"] is False, _dd_h)
+    _dd_prev = {"samgov:p2": {**_dd_found["samgov:p2"], "documents": [{"name": "r9"}], run.DOCS_UNKNOWN: False}}
+    run._carry_documents(_dd_found, _dd_prev, set())
+    check("a public row has no document list, like a bulk row: the last real read's list is kept, else documents_unknown",
+          [d["name"] for d in _dd_found["samgov:p2"]["documents"]] == ["r9"] and _dd_found["samgov:p2"][run.DOCS_UNKNOWN] is False
+          and _dd_found["samgov:b1"][run.DOCS_UNKNOWN] is True and run._docs_unknown({"via": "public", "documents": []})
+          and run._docs_unknown({"via": "public+bulk", "documents": []}), {k: v.get(run.DOCS_UNKNOWN) for k, v in _dd_found.items()})
+
+    # 3. an HTTP error or a timeout is a line in the errors and the scan goes on
+    _PUB_SEARCH[("pop_state", "CO")] = _pub_ue.HTTPError("https://sam.gov/api/prod/sgs/v1/search/", 503, "Service Unavailable",
+                                                         {}, None)
+    _PUB_CALLS.clear()
+    _er, _ee, _ = samgov_public.collect(_PUB_PROF, budget=samgov_public.Budget(40), fetch=_pub_fetch, now=_PUB_NOW)
+    check("HTTP 503 on one query: one error line naming the query, the next queries still run and return their rows",
+          len(_PUB_CALLS) == 3 and _ee == ["SAM.gov public search {'state': 'CO'}: HTTP 503 Service Unavailable"]
+          and set(_er) == {"b1", "x1"}, (_ee, sorted(_er)))
+
+    def _pub_timeout(url):
+        _PUB_CALLS.append(url)
+        raise TimeoutError("timed out")
+
+    _PUB_CALLS.clear()
+    _tr, _te, _ = samgov_public.collect({**_PUB_PROF, "third": {"states": ["NM"], "samgov": []}}, budget=samgov_public.Budget(40),
+                                        fetch=_pub_timeout, now=_PUB_NOW)
+    check("timeouts: one line each, and after 2 in a row the pass stops instead of waiting out every query (sam.gov down)",
+          len(_PUB_CALLS) == 2 and _tr == {} and len(_te) == 3 and _te[0] == "SAM.gov public search {'state': 'CO'}: TimeoutError: timed out"
+          and _te[2] == "SAM.gov public search: sam.gov did not answer 2 requests in a row after 2 requests; 2 of 4 queries wait "
+                        "for the next scan", _te)
+
+    class _PubSearch503(http.server.BaseHTTPRequestHandler):
+        def do_GET(self):
+            qs = {k: v[0] for k, v in parse_qs(self.path.split("?", 1)[-1]).items()}
+            if qs.get("pop_state") == "CO":
+                self.send_response(503)
+                self.send_header("Content-Type", "text/html")
+                self.end_headers()
+                self.wfile.write(b"<html><title>503 Service Temporarily Unavailable</title></html>")
+                return
+            body = _pub_fetch("https://sam.gov/api/prod/sgs/v1/search/?" + self.path.split("?", 1)[-1])
+            self.send_response(200)
+            self.send_header("Content-Type", "application/hal+json")
+            self.end_headers()
+            self.wfile.write(body)
+
+        def log_message(self, *a):
+            pass
+
+    _psrv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _PubSearch503)
+    threading.Thread(target=_psrv.serve_forever, daemon=True).start()
+    samgov_public._http_get = _pub_saved[5]  # the real GET, against the local server
+    samgov_public.SEARCH_API = f"http://127.0.0.1:{_psrv.server_address[1]}/api/prod/sgs/v1/search/"
+    run.reachable = lambda url, timeout=30: (True, "HTTP 404")  # api.sam.gov answers; no key to use it with
+    run.samgov_bulk.collect = lambda profiles: ({"samgov:bk": dict(_bulk_only)}, "bulk file cached; 1 matching")
+    (TMP / "WATCHLIST_FILE.json").write_text('{"bids": []}')
+    (TMP / "HEALTH_FILE.json").write_text('{"sources": {}}')
+    (TMP / "OPEN_BIDS_FILE.json").write_text('{"bids": {}}')
+    _sr = run.scan(["samgov"])
+    _sh = _sr["health"]["samgov"]
+    _srep = run.REPORT_FILE.read_text()
+    check("scan with the public search answering HTTP 503 on one query: the scan completes (REPORT.md, LAST_SCAN.md written), "
+          "the error is one line, the other queries' rows and the bulk file's are in",
+          any(e.startswith("SAM.gov public search {'state': 'CO'}: HTTP 503") for e in _sh["errors"])
+          and {"samgov:b1", "samgov:x1", "samgov:bk"} <= set(_sr["found"]) and _sh["count"] == 3 and _sh["public_added"] == 2
+          and "## Source health" in _srep and _sr["last_scan"].startswith("# Last scan "), (_sh["errors"], sorted(_sr["found"])))
+    check("scan without the key: the samgov health row says 'public search fallback (no key): 2 notices, 1 error'; still PARTIAL "
+          "(exit 3 as before, not BLIND) and the headline still opens LOGGED OUT: samgov (SAM_API_KEY not set",
+          "public search fallback (no key): 2 notices, 1 error; +1 from the nightly bulk file" in _sh["login_note"]
+          and "public search fallback (no key): 2 notices" in _srep and _sh.get("carried_forward") and not _sh.get("blind")
+          and run.run_status(_sr["health"])["exit_code"] == 3
+          and "**Headline:** LOGGED OUT: samgov (SAM_API_KEY not set" in _srep, (_sh["login_note"], _srep[:400]))
+    _psrv.shutdown()
+    samgov_public.SEARCH_API = "https://sam.gov/api/prod/sgs/v1/search/"
+    samgov_public._http_get = _pub_fetch
+    _PUB_SEARCH[("pop_state", "CO")] = [_pub_hit("p1", "HVAC Preventive Maintenance, Building 2", code="k",
+                                                 value="Combined Synopsis/Solicitation"),
+                                        _pub_hit("p2", "Janitorial services, Pikes Peak", naics="561720", psc="S201", days=20)]
+
+    # 4. attachments of watched notices: "file" ones not in hand are fetched, "link" ones skipped and named
+    _pub_dl = TMP / "pub-downloads"
+    samgov_public.DOWNLOAD_DIR = _pub_dl
+    run.REPO = TMP / "pubrepo"  # bid folders (and _file_watched_docs' manifest refresh) in a scratch repo, never the real one
+    _fd_va, _fd_blm = "bids/zz-samgov-public-test-va", "bids/zz-samgov-public-test-blm"
+    _wf_va, _wf_blm = run.REPO / _fd_va, run.REPO / _fd_blm
+    (_wf_va / "docs").mkdir(parents=True)
+    (_wf_blm / "docs").mkdir(parents=True)
+    (_wf_va / "docs" / "C04a Attachment 1 PWS.pdf").write_bytes(b"P" * 30)  # a person's copy under a prefixed name
+    _pub_watch = [
+        {"name": "VA HVAC PM (GO)", "source": "samgov", "match": "SOL-p1", "folder": _fd_va},
+        {"name": "VA janitorial (NO-BID 2026-11-17: SDVOSB set-aside)", "source": "samgov", "match": "SOL-p2", "folder": _fd_va},
+        {"name": "BLM Kanab janitorial (GO; due 12/09)", "source": "samgov", "match": "140LL027Q0009", "folder": _fd_blm},
+        {"name": "Littleton 2126", "source": "bidnet", "match": "\\b2126\\b", "folder": _fd_va}]
+    _PUB_SEARCH[("q", "140LL027Q0009")] = [_pub_hit("k1", "S--BLM Utah - Paria River District HQ Janitorial", sol="140LL027Q0009",
+                                                    state="UT", naics="561720", psc="S201", days=5)]
+    _PUB_ATTS.update({
+        "p1": [{"resourceId": "r1", "name": "Attachment 1 PWS.pdf", "type": "file", "accessLevel": "public", "deletedFlag": "0", "size": 30},
+               {"resourceId": "r2", "name": "Sol SOL-p1.pdf", "type": "file", "accessLevel": "public", "deletedFlag": "0", "size": 9},
+               {"resourceId": "r3", "name": "Wage Determination (link)", "type": "link", "accessLevel": "public", "deletedFlag": "0"},
+               {"resourceId": "r4", "name": "Sol SOL-p1 superseded.pdf", "type": "file", "accessLevel": "public", "deletedFlag": "1",
+                "size": 9},
+               {"resourceId": "r5", "name": "Attachment 2 Drawings.pdf", "type": "file", "accessLevel": "private", "deletedFlag": "0",
+                "size": 99}],
+        "k1": [{"resourceId": "r7", "name": "Sol_140LL027Q0009_Amd_0001.pdf", "type": "file", "accessLevel": "public", "size": 5},
+               {"resourceId": "r6", "name": "B08 - Attachment 1 - Bid Schedule.xlsx", "type": "file", "accessLevel": "public", "size": 4},
+               {"resourceId": "r8", "name": "B08 - Attachment 7 - Photos.pdf", "type": "file", "accessLevel": "public", "size": 3}],
+        "p2": RuntimeError("the attachments of a bid decided NO must not be requested")})
+    _PUB_FILES.update({"r1": AssertionError("in hand"), "r2": b"%PDF-1.4\n", "r6": b"XLSX", "r8": b"JPG",
+                       "r7": _pub_ue.HTTPError("https://sam.gov/x", 500, "Internal Server Error", {}, None)})
+    _wfound = {"samgov:p1": {**_p1, "documents": []}, "samgov:p2": {**_pr["p2"], "documents": []}}
+    _wks = run._WatchSet(_pub_watch)
+
+    def _pub_docs(budget):
+        dl, sk, fo, hh = {}, [], {}, {"errors": []}
+        _PUB_CALLS.clear()
+        n = run._sam_watched_docs(_wfound, _pub_watch, _wks, dl, hh, budget, sk, fo)
+        return n, dl, sk, fo, hh
+
+    # 4a. the request cap reaches the attachment pass too: a 2-request budget is the look-up and one attachment list
+    _cn, _cdl, _csk, _cfo, _ch = _pub_docs(samgov_public.Budget(2))
+    check("request cap on the attachment pass: 2 requests (the Kanab look-up, its attachment list), nothing downloaded, the "
+          "files and the other notice named as waiting for the next scan",
+          _cn == 0 and len(_PUB_CALLS) == 2 and not _cdl
+          and "140LL027Q0009: 3 of 3 attachments not downloaded yet (request cap 2 reached; tried again next scan)" in _ch["errors"]
+          and "SAM.gov attachments: request cap 2 reached; 1 watched notice(s) wait for the next scan" in _ch["errors"],
+          (_PUB_CALLS, _ch["errors"]))
+    # 4b. a full budget: files fetched, links / deleted / non-public / in-hand ones not requested
+    _wfound["samgov:p1"]["documents"] = []
+    _n4, _dl4, _sk4, _fo4, _h4 = _pub_docs(samgov_public.Budget(40))
+    _dl_urls = [u for u in _PUB_CALLS if u.endswith("/download")]
+    check("attachments: the 'file' attachments not in hand are fetched into downloads/samgov/<notice id>/ (the watched row's "
+          "notice and the Kanab notice found by its solicitation number), listed under their keys for the bid folders",
+          _n4 == 3 and _dl4.get("samgov:p1") == [str(_pub_dl / "samgov" / "p1" / "Sol SOL-p1.pdf")]
+          and sorted(Path(p).name for p in _dl4.get("samgov:k1", [])) == ["B08 - Attachment 1 - Bid Schedule.xlsx",
+                                                                           "B08 - Attachment 7 - Photos.pdf"]
+          and (_pub_dl / "samgov" / "p1" / "Sol SOL-p1.pdf").read_bytes() == b"%PDF-1.4\n"
+          and _fo4 == {"samgov:p1": _fd_va, "samgov:k1": _fd_blm}, (_dl4, _fo4, _h4["errors"]))
+    check("attachments: a 'link' attachment is not requested and is named in one line; a deleted one is ignored, a non-public "
+          "one named, one already in the bid folder (prefixed name, same size) not fetched again",
+          not any(f"/files/{r}/download" in u for u in _PUB_CALLS for r in ("r1", "r3", "r4", "r5"))
+          and any("SOL-p1: 1 link attachment(s) not downloaded" in e and "Wage Determination (link)" in e for e in _h4["errors"])
+          and any("SOL-p1: 1 attachment(s) not public on SAM.gov" in e and "Attachment 2 Drawings.pdf" in e for e in _h4["errors"])
+          and _h4["public_docs"]["in_hand"] == 1 and _h4["public_docs"]["links"] == 1, (_PUB_CALLS, _h4["errors"]))
+    check("attachments: a failed download is one line, the next file still comes; a bid decided NO is skipped (no request), "
+          "its key on the 'skipped (decided NO)' list",
+          "download 140LL027Q0009: Sol_140LL027Q0009_Amd_0001.pdf: HTTP 500 Internal Server Error" in _h4["errors"]
+          and _sk4 == ["samgov:p2"] and not any("/p2/" in u for u in _PUB_CALLS), (_h4["errors"], _sk4))
+    check("attachments: the watched row gets the list read (live public files by resource id, as the API names them) and its "
+          "links; saved as a real read, so a later addition is reported as NEW DOCUMENTS",
+          [d["name"] for d in _wfound["samgov:p1"]["documents"]] == ["r1", "r2"] and _wfound["samgov:p1"].get("doc_links")
+          == ["Wage Determination (link)"] and _wfound["samgov:p1"].get(run.DOCS_READ_NOW) is True,
+          _wfound["samgov:p1"])
+    _saved_p1 = dict(_wfound["samgov:p1"])
+    run._carry_documents({"samgov:p1": _saved_p1}, {}, {"samgov"})
+    check("attachments: after _carry_documents the read list is known (documents_unknown False, the transient flag gone) and an "
+          "amendment's file is news",
+          _saved_p1.get(run.DOCS_UNKNOWN) is False and run.DOCS_READ_NOW not in _saved_p1
+          and run._diff(_saved_p1, {**_saved_p1, "documents": _saved_p1["documents"] + [{"name": "r9"}]})
+          == ["NEW DOCUMENTS (addendum?): r9"], _saved_p1)
+    _filed = run._file_watched_docs(_dl4, _wfound, _wks, _fo4)
+    check("attachments: _file_watched_docs files them into each bid folder's docs/, the looked-up notice's through `folders`",
+          (_wf_va / "docs" / "Sol SOL-p1.pdf").is_file() and (_wf_blm / "docs" / "B08 - Attachment 7 - Photos.pdf").is_file()
+          and sorted(f for f in _filed if not f.endswith("MANIFEST.md"))
+          == [f"{_fd_blm}/docs/B08 - Attachment 1 - Bid Schedule.xlsx", f"{_fd_blm}/docs/B08 - Attachment 7 - Photos.pdf",
+              f"{_fd_va}/docs/Sol SOL-p1.pdf"], _filed)
+    _n5, _dl5, _, _, _h5 = _pub_docs(samgov_public.Budget(40))
+    check("attachments next scan: the files in hand are not fetched again; only the one that failed is tried again",
+          _n5 == 0 and [u for u in _PUB_CALLS if u.endswith("/download")] == [samgov_public.DOWNLOAD_API.format(rid="r7")]
+          and len(_PUB_CALLS) == 4 and not _dl5, _PUB_CALLS)
+
+    # 5. the request cap: never more requests than the budget, SLEEP_S apart, the env var sets it
+    _slept: list = []
+    samgov_public.SLEEP_S, samgov_public._sleep = 0.5, _slept.append
+    _PUB_CALLS.clear()
+    _five = {"jb": {"states": [], "samgov": [{"ccode": c} for c in ("3110", "3130", "3020", "3030", "3910")], "bidnet_keywords": []}}
+    _cr, _ce, _cs = samgov_public.collect(_five, budget=samgov_public.Budget(3), fetch=_pub_fetch, now=_PUB_NOW)
+    check("request cap: 5 queries, budget 3 -> exactly 3 requests, 0.5 s between them (none before the first), one line saying "
+          "which queries wait",
+          len(_PUB_CALLS) == 3 == _cs["requests"] and _slept == [0.5, 0.5]
+          and _ce == ["SAM.gov public search: request cap 3 reached after 3 requests; 2 of 5 queries wait for the next scan"],
+          (_PUB_CALLS, _slept, _ce))
+    _shared = samgov_public.Budget(4)
+    samgov_public.collect(_five, budget=_shared, fetch=_pub_fetch, now=_PUB_NOW)
+    check("request cap: one budget is shared by the search and the attachment pass (nothing left after the search used it)",
+          _shared.used == 4 and not _shared.take() and _shared.refused >= 2, (_shared.used, _shared.refused))
+    os.environ[samgov_public.MAX_REQUESTS_ENV] = "7"
+    _b7 = samgov_public.Budget().max
+    os.environ[samgov_public.MAX_REQUESTS_ENV] = "junk"
+    _bj = samgov_public.Budget().max
+    os.environ.pop(samgov_public.MAX_REQUESTS_ENV)
+    check("request cap: BIDWATCH_SAM_PUBLIC_MAX sets it; unset or not a number = 40",
+          _b7 == 7 and _bj == 40 == samgov_public.Budget().max == samgov_public.MAX_REQUESTS, (_b7, _bj))
+finally:
+    (samgov_public.SEARCH_API, samgov_public.RESOURCES_API, samgov_public.DOWNLOAD_API, samgov_public.SLEEP_S,
+     samgov_public._sleep, samgov_public._http_get, samgov_public.DOWNLOAD_DIR, run.samgov_bulk.collect, run.reachable,
+     run.REPO) = _pub_saved[:10]
+    for _n, _v in (("SAM_API_KEY", _pub_saved[10]), (samgov_public.MAX_REQUESTS_ENV, _pub_saved[11])):
+        if _v is None:
+            os.environ.pop(_n, None)
+        else:
+            os.environ[_n] = _v
 
 print(f"\n{PASS} passed, {FAIL} failed")
 sys.exit(1 if FAIL else 0)
