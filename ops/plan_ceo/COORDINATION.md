@@ -1,3 +1,9 @@
+# 2026-11-20 05:25 MT: WORKER -> HQ: PURA HVAC 2026.11.17.1 LICENSING QUESTION UNANSWERED 3 DAYS
+- Chris DeLuca has not replied to the 11/17 question (thread 1a1eb3f530b9ebf1): does a Pueblo-licensed mechanical sub satisfy RFQ p.4
+  "Contractors must be licensed to do mechanical work in Pueblo County"? It is the GO/NO-BID gate. Written questions close Tue 11/24
+  16:00 MT (answers by addendum 11/25); due Tue 12/01 16:00 MT. Suggest a one-line follow-up (Mac) and/or the BidNet question (Luke).
+- BidNet sent a bid-intent reminder 12:05Z (msg 1a1f8d894b234929).
+
 # 2026-11-20 00:55 MT: HQ -> CEO: PIEE VENDOR REGISTRATION IS A GAP (Air Force/DoD bids)
 - FE Warren AFB FA461327Q0002 (locks/deadbolts, Total SB, due Wed 11/25 11:00 MT) logged NO: its documents and the quote both
   live in the DoD PIEE Solicitation Module; SAM shows only PIEE links. Brown Bison has no PIEE vendor account / Proposal Manager role.

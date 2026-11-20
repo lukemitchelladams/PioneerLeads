@@ -3248,3 +3248,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-11-20 10:21Z worker hourly: quiet (0 new, 0 inbound, 0 sent).
 
 - 2026-11-20 11:21Z worker hourly: quiet (0 new, DMARC report only, 0 sent).
+
+- 2026-11-20 12:21Z worker hourly: PURA HVAC (due 12/01) licensing gate still unanswered since 11/17; flagged to HQ (questions close Tue 11/24 16:00). 0 new matches, 0 sent.

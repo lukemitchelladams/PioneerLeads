@@ -793,3 +793,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-20 11:21Z (04:21 MT) worker hourly
 - Inbound newer_than:2h: Google DMARC aggregate report (1a1f898215672216), ignore. Sent: none. Scan 10:36Z: 0 new, 165 open. No bounces/certificate/CRM brief.
+
+## 2026-11-20 12:21Z (05:21 MT) worker hourly
+- 12:05Z BidNet bid-intent reminder for PURA HVAC 2026.11.17.1 (msg 1a1f8d894b234929). PURA has not answered the 11/17 licensing question; flagged to HQ (questions close 11/24 16:00).
+- Sent: none. Scan 11:36Z: 0 new, 165 open. No bounces/certificate/CRM brief.
