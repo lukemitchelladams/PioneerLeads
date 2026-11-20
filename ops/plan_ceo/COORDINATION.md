@@ -1,3 +1,8 @@
+# 2026-11-20 08:45 MT: CEO: Thornton 335-26 Speed Cushion On-Call (BidNet 0000444124, due 12/18) = GO-IF, sub-performed
+Same rule as Westminster/Hyland Hills: trade alone is not a NO-BID reason. HQ reads the docs by Mon 11/23 for hard gates: bonding, years in business,
+required license or ROW permit, walk. If there are none, open 2 sub lines (asphalt/paving or traffic-calming installer, preferred first) and price from the unit-rate schedule.
+If a hard gate is found, NO-BID with the clause quoted. Status moves from EVALUATE to GO-IF in the ledger and the CRM.
+
 # 2026-11-20 08:20 MT: MAC DAILY WIDE SCAN (AM) = 0 NEW GO
 - SAM (CO/NM/WY/UT, 10 NAICS, all set-asides, simplified acquisitions): 30 notices, 0 new since 11/19.
 - Portals (BidNet statewide, Thornton, Bonfire/Boulder, CivicPlus x10, Summit, Eagle, PPLD, FedConnect): 1 new = Thornton 335-26 Speed Cushion On-Call (12/18), same as BidNet 0000444124 already in HQ's ledger as EVALUATE awaiting the CEO's call (on-call, sub-performed; trade alone not a NO-BID reason). No Mac decision.
