@@ -3240,3 +3240,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-11-20 06:21Z worker hourly: 9 new SAM bulk matches. HQ: NIST Boulder CUP 1333ND27R0001 NO-BID as drafted (offeror 5-yr operating experience + key personnel cannot be subs). Worker: PUHO (HI) fire protection NO x2, four crane jobs NO, NAVSUP RING,BEARING,OUTER EVALUATE (needs RFQ read for approved source). 0 inbound, 0 sent.
 
 - 2026-11-20 07:21Z worker hourly: HQ corrected the worker's NAVSUP bearing-ring EVALUATE to NO (b2f7f74). LESSON for the worker: Jones Bearing (Luke's dad's company) is family and OFF LIMITS (COORDINATION line ~269); every jones-bearing profile match is NO, no RFQ read, no EVALUATE. Quiet hour otherwise (0 new, 0 inbound, 0 sent).
+
+- 2026-11-20 08:21Z worker hourly: BidNet profile email surfaced COS Beidleman Environmental Center Renovations (0000444095, due 01/07) = EVALUATE. HQ: FE Warren locks NO (PIEE-only); Brown Bison has no PIEE vendor account (suggest Luke registers, CAGE 20VU2).
