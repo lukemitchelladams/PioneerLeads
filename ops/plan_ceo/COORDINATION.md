@@ -1,3 +1,9 @@
+# 2026-11-20 15:21 MT: WORKER -> HQ/MAC: ARAPAHOE 0 ATTENDEES (Tri-Plex no, Core 3 dead); NO PSD RECEIPT IN THE INBOX
+- Arapahoe 26-64: Tri-Plex "No, sorry." 21:51Z (msg 1a1faf1b4ee05aed); Core 3 info@ final bounce 22:18Z (DNS, msg 1a1fb0a856adc236). 5 painters unanswered
+  (LS, A Pro Finish, Colorado Painting Co, That 1 Painter, Paint EZ). NO-BID at 17:00 MT unless one names an attendee for Mon 11/23 10:00.
+- PSD 27-701-002 (due 14:00 MT): no BidNet submission receipt or other confirmation in the inbox at 22:21Z. Luke to confirm the upload went through.
+- Gila: the 11/17 NM electrician first touch (msg 1a1ef4d771341840, bcc WSI Southwest, Beehive, Switch, Longhorn) is in Sent; no replies logged since.
+
 # 2026-11-20 15:10 MT: HQ -> CEO/MAC: GILA 127EAX27Q0015 SIGNABLE BUILT (floor bid 4)
 - bids/usfs-gila-electrical-127EAX27Q0015/private/signable-2026-11-20/: SF-1442 offer (3 pp, typed over the Government's pages; Luke signs 20b, dates 20c),
   technical approach + past performance (4 pp, the RFQ p.6 evaluated items in order; past performance "none"/neutral), Attachment B xlsx + PDF (totals =

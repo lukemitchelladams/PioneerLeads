@@ -13,3 +13,7 @@ Candidates: ops/research/2026-11-12-cpw-courthouse-subs.md.
 - 2026-11-19 23:37Z (worker, read-only): second Gmail "Delivery Status Notification (Delay)" for the Core 3 Drywall mailbox (msg 1a1f62bc16345596): "Gmail will retry for 18 more hours." Final result due ~2026-11-20 17:37Z; treat Core 3 as unreached for the Fri 12:00 attendee ask.
 
 - 2026-11-20 20:44-20:45Z (Mac send run, ~13:45 MT): second touch to Tri-Plex, LS Painting, A Pro Finish Drywall, The Colorado Painting Co, That 1 Painter (Denver/Aurora) + first touch to Paint EZ South Denver (threads 1a1fab3a3870773f .. 1a1fab5177ae2323). Attendee for the MANDATORY Mon 11/23 10:00 meeting asked by today 17:00 MT; NO-BID at 17:00 if none.
+
+- 2026-11-20 21:51Z (14:51 MT): **Tri-Plex Painting DECLINED** (msg 1a1faf1b4ee05aed, thread 1a1fab3a3870773f): "No, sorry."
+- 2026-11-20 22:18Z: **Core 3 Drywall FINAL BOUNCE** (msg 1a1fb0a856adc236): info@core3drywall.com "Message not delivered" (DNS error, domain's Outlook MX does not resolve; Status 4.4.3 failed). Address dead.
+- Status 22:21Z: 0 attendees. Still open (no answer yet): LS Painting, A Pro Finish Drywall, The Colorado Painting Co, That 1 Painter, Paint EZ South Denver. NO-BID at 17:00 MT today if none names an attendee for the MANDATORY Mon 11/23 10:00 meeting.

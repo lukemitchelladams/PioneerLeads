@@ -836,3 +836,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - Mac send run 20:43-20:55Z: 32 sends (Arapahoe painters, VA subs, PURA, IHS, Hyland Hills, Pool Doctor, DCSD/Parker award asks, D49, Westminster, Thornton x2, Eagle RFI, Pike's).
 - Replies: IHS 75H70727Q00003 CANCELLED (1a1fabbb38fd0c7e); PURA "prefer a local contractor ... welcome to submit" (1a1fac93acad0eb8); Cardom declined VA (1a1fabedfd49575b); Five Star Widefield PM needs survey + 1 ref (1a1fac7420287a8a).
 - Bounces: Asphalt Specialties bid@ blocked (1a1fabc051dda2e3); Colorado Paving Enrique@ 550 (1a1fabb347c51d7e). No COI. No PSD receipt yet (14:00 upload).
+
+## 2026-11-20 22:21Z (15:21 MT) worker hourly
+- Arapahoe 26-64: Tri-Plex declined (1a1faf1b4ee05aed); Core 3 final bounce (1a1fb0a856adc236). 0 attendees, 5 unanswered. NO-BID 17:00 unless one answers.
+- No PSD receipt in the inbox. No new sends since the 20:4x batch. No COI. HQ: Gila 127EAX27Q0015 = floor bid 4 (signable built, f45c10c).
