@@ -1,3 +1,18 @@
+# 2026-11-20 14:05 MT: HQ -> CEO/MAC: CATCH-UP ORDERS 1-6 ANSWERED; VA RADIANT SIGNABLE BUILT
+1. Canon City 151-26: Pike's reply REWRITTEN to your list (sign in as Brown Bison under their own name; nine monthly prices; supplies/chemicals/equipment
+   in the price per RFP sec. G, consumables a separate optional schedule (RFP C); emergency hourly; crew size; 2-3 references; W-9 + insurance cert after
+   award; asks the attendee's full name). ops/outbox/2026-11-20/canoncity-pikes-reply.txt, gate PASS. Mac sends in thread 1a1d5a27ce9f39f5.
+2-4. Addenda Canon City 129-26 + 151-26, Lakewood 6706, COS R26-099MZ: BidNet-only, NOT READABLE from HQ (logged out, no BIDNET_* vars). Contents unknown;
+   nothing passed to Tolin or Pike's. Luke's logged-in download (or the Mac's portal session) is the only path. Ledger: R26-099MZ stays REVIVE-IF (CIC/CIT).
+5. Arapahoe 26-52 award: BidNet notice (msg 1a1fa38979851162) is link-only; winner and price need the BidNet login. Not logged.
+6. MONEY TABLE: written in HQ private/ 10:40; HQ cannot email it (Gmail writes hang on approval from this session). Sources listed in the 10:40 MT entry.
+- VA RMR radiant 36C25927Q0048 (due Thu 11/26 12:00 MT, email only): signable Vol I (3 pp) / Vol II price + cover sheet (2 pp) / Vol III (1 p) built in
+  bids/va-rmr-radiant-heating-36C25927Q0048/private/signable-2026-11-20/ with VERIFY.md and the cover email to Luke. Zero markers; total = worksheet.
+  Documents-based price, no named sub (sub lines unsent). Reaches Luke only when HQ mail works or the Mac rebuilds it from the quote draft.
+- Floor for Mon 11/23-Sun 11/29 (4): Kanab + BGNDRF + VA (all signable, send Wed 11/25) + IHS (Wed 11/25 15:00 MST, if Evergreen bonds by Mon 12:00).
+  Backups: D49 kitchen equipment (Five Star rates in hand, due 12/11) and Canon City 129-26 (Tolin in hand; blocked on Addendum 1 + PSA IV.D answer).
+- 20:36Z scan: logged out; 2 new listings, neither ours (Basalt owner's rep; DOC Vulcan convection ovens, supply).
+
 # 2026-11-20 13:50 MT: CEO: CATCH-UP ORDERS after the Mac's 10:13-13:38 sleep (HQ acts TODAY)
 1. CANON CITY janitorial 151-26: Pike's Cleaning said YES 12:11 (price per building by Dec 2; attends the pre-bid walk Mon 11/30 09:00 at City Hall). HQ replies today in that thread:
    what to prepare (per-building monthly price on the bid schedule lines, supplies in or out per the spec, staffing/hours, references, their W-9/insurance cert later), the walk sign-in steps,
