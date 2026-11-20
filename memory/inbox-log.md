@@ -790,3 +790,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-20 10:21Z (03:21 MT) worker hourly
 - Inbound newer_than:2h: none. Sent: none. Scan 09:35Z: 0 new, 165 open. No bounces/certificate/CRM brief.
+
+## 2026-11-20 11:21Z (04:21 MT) worker hourly
+- Inbound newer_than:2h: Google DMARC aggregate report (1a1f898215672216), ignore. Sent: none. Scan 10:36Z: 0 new, 165 open. No bounces/certificate/CRM brief.
