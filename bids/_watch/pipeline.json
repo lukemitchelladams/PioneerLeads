@@ -2204,6 +2204,26 @@
    "decision_note": null,
    "next": "Luke downloads the BidNet set (0000444163); HQ opens the folder, checks rule 0 (walk), license in our name, bonds the same day",
    "performer": "Brown Bison bids; licensed electrical sub performs"
+  },
+  {
+   "id": "nist-boulder-1333nd27r0001-cup-pm",
+   "agency": "Dept of Commerce, NIST Boulder (Acquisition Management Division, Boulder; for the Office of Facilities and Property Management, Facilities Maintenance Division)",
+   "title": "CUP Preventative Maintenance and Repair: 24/7/365 operation and maintenance of the NIST Boulder Central Utility Plant (steam, chilled water, lab-grade compressed air), plus PM at the WWV/WWVB Fort Collins CO and WWVH Kekaha HI field sites (DRAFT RFP 2026-11-19)",
+   "sol": "1333ND27R0001 (draft; SAM.gov presolicitation 90c1cecf827c45f1b15b4f3860dd09f8, parent bb1373be92d643798f65aae817d7aba0; sources sought NB194000-26-00176)",
+   "trade": "HVAC / central plant O&M (stationary engineers, HVAC mechanics; steam boilers, York YZ chillers, cooling towers, air compressors); PSC Z1JZ, NAICS 811310",
+   "due": "2026-12-09T15:00:00-07:00",
+   "due_source": "SAM presolicitation responseDeadLine 2026-12-09T15:00-07:00 (draft-review window; SF-1449 block 8 offer due date is blank in the draft and the final RFP date is not stated)",
+   "portal": "SAM.gov; offers by email to the Contract Specialist cc the Contracting Officer (Addendum to 52.212-1, 25 MB per email); 7 files in bids/nist-boulder-cup-pm-1333ND27R0001/docs/",
+   "decision": "NO-BID (HQ 2026-11-20, draft as written): Section L Factor 3 'Shall have a minimum of 5 years verifiable experience operating' a high-pressure steam plant and a multi-chiller plant, verified by the company's documents; PWS 2 'Key personnel cannot perform as a sub-contractor'",
+   "decision_note": "Opened 2026-11-20 from the SAM draft (posted 11/19). Total SB set-aside (52.219-6), NAICS 811310. Draft only: 'The actual solicitation will be posted shortly', NIST expects 'very few substantive changes'. One FFP contract with T&M repair CLINs (X004 amount Government-set, rates evaluated per hour); base 2027-02-25 to 2028-02-24 + 4 option years + 52.217-8 six months. Tradeoff: Technical, Staffing/Key Personnel, Experience, Past Performance together about equal to Price. SCA (52.222-41/-43); WD is a placeholder (IUOE Local 1 CBA). No bonds stated; insurance per CAR 1352.228-70; no license in the offeror's name (Denver stationary engineer certificates and EPA 608 for personnel). 52.219-14 not in the draft (52.212-5 'attached' but absent); L asks how the prime completes 51% of tasks. Optional conference/site visit 2026-12-21 13:00 MT, Bldg 42. Revive only if the final RFP lets key personnel or a first-tier sub carry the Factor 3 experience and lets subs staff the mechanic seats; draft comments drafted (not sent).",
+   "prebid": "2026-12-21T13:00:00-07:00",
+   "prebid_mandatory": false,
+   "folder": "bids/nist-boulder-cup-pm-1333ND27R0001",
+   "performer": "Brown Bison bids; draft PWS 2 requires the 24/7 plant crew (PM, project engineer, stationary engineers, HVAC mechanics) to be Brown Bison employees; subs only for specialty PM, Fort Collins, Kekaha and repairs",
+   "subs": "Rasmussen Mechanical Services (Rocky Mountain office) and Mechanical Solutions Inc (Englewood) as the two lines; UPM Mechanical and Tolin Mechanical as backups; first touch drafted, humanize gate PASS, HOLD (NO-BID), not sent",
+   "contact": "shawn.borisow@nist.gov",
+   "sub_pricing": "None (HOLD); HQ documents-based estimate in private/",
+   "next": "Watch SAM for the final RFP (watchlist 1333ND27R0001); the Mac may send the draft comments (vendor-questions.md Q1-Q7) before 2026-12-09; reopen only if Factor 3 and PWS 2 change"
   }
  ],
  "events": [

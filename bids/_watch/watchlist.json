@@ -1100,6 +1100,15 @@
    "match": "0000444163|On-Call Electrical Service Support for Water and Sewer",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "NIST Boulder 1333ND27R0001 CUP Preventative Maintenance and Repair, 24/7 central plant O&M + Fort Collins/Kekaha PM (NO-BID on the 11/19 draft: L Factor 3 offeror experience, PWS 2 key personnel; watch for the final RFP; SAM date 2026-12-09 15:00 MT; optional conference 12/21 13:00)",
+   "source": "samgov",
+   "id": "1333ND27R0001",
+   "match": "1333ND27R0001|CUP Preventative Maintenance",
+   "folder": "bids/nist-boulder-cup-pm-1333ND27R0001",
+   "sam_notice_id": "90c1cecf827c45f1b15b4f3860dd09f8",
+   "govtribe_ids": []
   }
  ]
 }
