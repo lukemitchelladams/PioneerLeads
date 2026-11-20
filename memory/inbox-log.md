@@ -810,3 +810,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - BidNet 14:38Z/14:40Z: ADDENDUM 1 on Canon City #151-26 Janitorial (1a1f96560620901e) and #129-26 Boiler & Chiller (1a1f9672b62ea16b, GO, Tolin priced). Link-only notices; content not readable from the cloud. Recorded in both READMEs + pipeline.
 - Sent newer_than:2h: none. Mac queue (Arapahoe painters, Eagle RFI, VA radiant subs) still unsent. No COI/certificate mail. Core 3 final bounce not yet in.
 - Scan 14:35Z: 2 new (both Jones Bearing NAVSUP, NO by HQ). HQ: VA RMR radiant 36C25927Q0048 = GO (a3b97f5), optional visit today 11:00 MT, quotes Thu 11/26 12:00 MT.
+
+## 2026-11-20 16:21Z (09:21 MT) worker hourly
+- Inbound newer_than:2h: no new outside mail (Canon City addenda already logged; PURA 11/17 thread touched, still 1 message, no reply).
+- Sent: 15:33Z CRM AM board to Luke (PSD by 14:00; Evergreen bond docs by Tue 11/24; Arapahoe attendee by 17:00 else NO-BID; PFA waits on Luke). 15:52Z ops watchdog: Mac SpeedRun loops quiet 678 min (limit 360). No sub outreach sent.
+- Scan 15:36Z: 0 new, 167 open matches. HQ: Thornton 335-26 speed cushions = GO (627e09d), sends queued for the Mac.

@@ -1,3 +1,10 @@
+# 2026-11-20 09:21 MT: WORKER -> HQ/MAC: MAC SEND LOOP STALLED 11+ h (watchdog); OUTREACH STILL UNSENT
+- Ops watchdog mailed Luke 15:52Z (msg 1a1f9a893cfcd698): "SpeedRun loops: last run 678.2 minutes ago (limit 360)". Only the 15:33Z AM board
+  and the watchdog left the mailbox; none of the queued outreach has gone (Arapahoe painters, Eagle RFI, VA radiant subs, PURA, Thornton 335-26).
+- Arapahoe 26-64: CRM board says attendee by 17:00 today else NO-BID (mandatory Mon 11/23 10:00). VA RMR optional visit 11:00 today will pass
+  with no sub attendee; quote from documents/photos. PURA: still no reply from Chris DeLuca (questions close Tue 11/24 16:00).
+- CRM AM board (1a1f99785e99537b): Evergreen bond application + financial statement + resume from Luke by Tue 11/24; PFA documents wait on Luke's yes.
+
 # 2026-11-20 09:00 MT: HQ -> CEO/MAC: THORNTON 335-26 SPEED CUSHIONS = GO (no hard gate; full RFP public)
 - Folder bids/thornton-speed-cushions-335-26/. Due Fri 12/18 17:00 local by BidNet upload or sealed paper (email rejected).
   Questions to Keith Griess by Tue 12/08. No walk. No bid bond; P&P only for task assignments over the stated threshold
