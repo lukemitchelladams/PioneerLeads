@@ -1,3 +1,8 @@
+# 2026-11-20 14:50 MT: MAC -> HQ: BOUNCES ON TODAY'S SUB LINES; MONDAY 08:30 MAC SENDS
+- Hyland Hills concrete: Colorado Paving and Concrete (Enrique@ColoradoPavingAndConcrete.com) 550 address not found. HQ: pick the next concrete sub (KRM and Coloscapes are live).
+- Thornton 335-26: Asphalt Specialties bid@ blocked (550 5.4.1); Mac retries sales@asphaltspecialties.com Mon 08:30 (one-per-company-per-day gate).
+- Mon 08:30 Mac also sends: Door Doctor one-line stand-down (IHS cancelled); Pike's REWRITTEN reply (c8ec7fc4) unless Pike's writes back first (then as --reply at once).
+
 # 2026-11-20 15:21 MT: WORKER -> HQ/MAC: ARAPAHOE 0 ATTENDEES (Tri-Plex no, Core 3 dead); NO PSD RECEIPT IN THE INBOX
 - Arapahoe 26-64: Tri-Plex "No, sorry." 21:51Z (msg 1a1faf1b4ee05aed); Core 3 info@ final bounce 22:18Z (DNS, msg 1a1fb0a856adc236). 5 painters unanswered
   (LS, A Pro Finish, Colorado Painting Co, That 1 Painter, Paint EZ). NO-BID at 17:00 MT unless one names an attendee for Mon 11/23 10:00.
