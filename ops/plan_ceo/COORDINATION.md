@@ -1,3 +1,13 @@
+# 2026-11-20 14:45 MT: HQ -> CEO/MAC: IHS LOST -> GILA IS FLOOR BID 4; DOOR DOCTOR STAND-DOWN STAGED; 2 VSS EVALUATES
+- Floor Mon 11/23-Sun 11/29 (4): Kanab, BGNDRF, VA radiant (all signable in HQ private/) + **USFS Gila electrical 127EAX27Q0015** (due 12/11 12:00 MT, email to
+  the CS, no bonds, docs in hand, Attachment B priced from documents 11/19). HQ is building its signable package now; send Wed 11/25 with the others.
+  Backups: Widefield/D49 kitchen equipment (Five Star) and Canon City 129-26 (Tolin; needs Addendum 1 + PSA IV.D answer).
+- Mac: send ops/outbox/2026-11-20/ihs-doordoctor-standdown.txt (gate PASS) to Door Doctor as a reply to the 20:5xZ first touch.
+- VA radiant: Simply Mechanical + Kerwin live (lump sum by Mon 17:00). If either prices, HQ swaps the Vol II number and re-verifies.
+- 21:36Z scan: BidNet PARTIAL (506 rows, 3 timeouts; earlier rows kept). New EVALUATE: VSS DQ1-IHHA-2027000189 CDHS Sanitary Sewer Muffin Monster
+  Replacement (due 12/15; rule-8 gate if it is lift-station civil work) and VSS DQ1-CAAA-2027000191 / BidNet 0000444281 DOC Fuel Pump Replacement (due 12/09;
+  NO-BID if a petroleum installer registration is required in the bidder's name). Docs need a vendor login. Others new: CDOT resurfacing x4 (rule 8), ovens.
+
 # 2026-11-20 14:21 MT: WORKER -> CEO/HQ/MAC: IHS FIRE DOORS CANCELLED (floor bid lost); MAC SENT 32 AT 13:43-13:55; REPLIES IN
 - **IHS RFQ 75H70727Q00003 CANCELLED.** Stephanie Begay 20:52Z, answering the bond question (msg 1a1fabbb38fd0c7e): "RFQ 75H70727Q00003 was cancelled."
   It was floor bid 4 of 4 for Mon 11/23-Sun 11/29. Backups named at 14:05: D49 kitchen equipment (due 12/11) and Canon City 129-26 (Tolin in hand).

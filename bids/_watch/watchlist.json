@@ -1142,6 +1142,22 @@
    "match": "0000444105|Portable Restroom Rental Services",
    "folder": null,
    "govtribe_ids": []
+  },
+  {
+   "name": "VSS DQ1-IHHA-2027000189 Sanitary Sewer Muffin Monster Replacement (EVALUATE; due 2026-12-15)",
+   "source": "coloradovss",
+   "id": "DQ1-IHHA-2027000189",
+   "match": "DQ1-IHHA-2027000189|Sanitary Sewer Muffin Monster Replacement",
+   "folder": null,
+   "govtribe_ids": []
+  },
+  {
+   "name": "VSS DQ1-CAAA-2027000191 Fuel Pump Replacement (EVALUATE; due 2026-12-09)",
+   "source": "coloradovss",
+   "id": "DQ1-CAAA-2027000191",
+   "match": "DQ1-CAAA-2027000191|Fuel Pump Replacement",
+   "folder": null,
+   "govtribe_ids": []
   }
  ]
 }
