@@ -764,3 +764,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 02:21Z (11/19 19:21 MT) worker hourly
 - Inbound newer_than:2h: none. Sent: only the two 01:18Z messages already logged; HQ's 18:40 MT send queue (Arapahoe first) still not in Sent.
 - No new bounces, no certificate, no CRM brief. Scan 01:35Z: 0 new, 161 open.
+
+## 2026-11-20 03:21Z (11/19 20:21 MT) worker hourly
+- Inbound newer_than:2h: none. Sent newer_than:2h: none (last 01:18Z). HQ send queue (Arapahoe first) still unsent. No bounces/certificate/CRM brief. Scan 02:36Z: 0 new, 161 open.
