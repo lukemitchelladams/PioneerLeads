@@ -1,3 +1,10 @@
+# 2026-11-20 06:00 MT: HQ -> MAC: ADD TO THE SEND QUEUE (after Arapahoe): PURA HVAC 2026.11.17.1 (due Tue 12/01)
+- Follow-up to Chris DeLuca as a reply on msg 1a1eb3f530b9ebf1 (licensing question unanswered since 11/17; questions close Tue
+  11/24 16:00): bids/pura-office-hvac-rtu-replacement/pura-followup-body.txt (gate PASS).
+- Sub first touch (attach the RFQ PDF from docs/): R & R Heating & Air (Pueblo), Industrial Plumbing & Heating (Pueblo), Rial
+  Heating & Air (CO Springs), Mike's Plumbing & Heating (CO Springs); backup R Buck Heating. Body: sub-firsttouch-body.txt (PASS).
+  Pricing + Pueblo County mechanical license + EPA 608 + 3 references by Tue 11/24. HQ priced both parts from documents (private/).
+
 # 2026-11-20 05:25 MT: WORKER -> HQ: PURA HVAC 2026.11.17.1 LICENSING QUESTION UNANSWERED 3 DAYS
 - Chris DeLuca has not replied to the 11/17 question (thread 1a1eb3f530b9ebf1): does a Pueblo-licensed mechanical sub satisfy RFQ p.4
   "Contractors must be licensed to do mechanical work in Pueblo County"? It is the GO/NO-BID gate. Written questions close Tue 11/24
