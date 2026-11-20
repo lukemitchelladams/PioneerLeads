@@ -3240,9 +3240,9 @@
   },
   "samgov:23baa41e87174afea593cdc80bae9060": {
    "name": "NAVSUP WSS Mechanicsburg N0010427QFA25 RING,BEARING,OUTER (PSC 3110, NAICS 332991, due 12/21)",
-   "verdict": "EVALUATE",
-   "why": "Jones Bearing FSC 3110 bearing part. Documents not in the bulk record (SAM blocked from the cloud). HQ/Mac reads the RFQ: NSN/part number, quantity (rule 9), approved-source or source-approval clause (NAVSUP parts often require an approved CAGE/OEM part, which would disqualify), and whether Brown Bison can quote as dealer with Jones Bearing as the maker (Jones has no SAM registration). NO if approved-source-only.",
-   "at": "2026-11-20T06:30:00Z"
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-20): Jones Bearing profile item. Standing rule: Luke's dad's company is family and off limits, so Jones Bearing items are NO. (Was EVALUATE by the 06:21Z worker.)",
+   "at": "2026-11-20T06:50:00Z"
   }
  },
  "watched": {
