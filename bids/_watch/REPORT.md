@@ -1,4 +1,4 @@
-# Bid watch report — 2026-11-20T22:36:05+00:00
+# Bid watch report — 2026-11-20T23:36:10+00:00
 
 **Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
@@ -7,10 +7,10 @@
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 698 | BUYER 452, AGGREGATE 247 | 87 | 2026-11-20T22:36:05+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T22:36:05+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (44 h, 45 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file | 111 |  | 111 | 2026-11-20T22:36:05+00:00 | 5 |
-| coloradovss | yes | n/a | public list (no login) | 72 | open 72 | 4 | 2026-11-20T22:36:05+00:00 | 4 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 697 | BUYER 452, AGGREGATE 246 | 87 | 2026-11-20T23:36:10+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T23:36:10+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (45 h, 46 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file | 111 |  | 111 | 2026-11-20T23:36:10+00:00 | 5 |
+| coloradovss | yes | n/a | public list (no login) | 71 | open 71 | 4 | 2026-11-20T23:36:10+00:00 | 1 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -65,6 +65,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - RFP 27-07 Fire Sprinkler & Portable Extinguisher Services (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - DPS Fire Suppression 2027 (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - City of Aurora IFB B-4799 Ash Tree Treatment (NO-BID 2026-11-10: no sub priced, QS license gate; overrule window closed 17:00 MT) (bidnet)
+- Boulder 44-2026 Streetlight Materials & Installation (NO: trenching/boring/pole foundations = civil, rule 8; 5% bid bond + P&P; addendum 11/12 noted) (bidnet)
 - Biology Duct Insulation Damage (EVALUATE, sweep 10/28; docs+walk needed) (bidnet)
 - Arvada 26-FAC-055 On-Call General Contractor Services (EVALUATE; due 11/17) (bidnet)
 - Longmont RFP-426089 On-Call Specialized Electrical, treatment operations (EVALUATE) (bidnet)
@@ -74,7 +75,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## No longer listed (closed/awarded)
 
-- Kitchen Hood Inspection and Cleaning Services (bidnet, due 2026-11-20)
+- Streetlight Materials & Installation (bidnet, due 2026-11-20)
 
 ## UPCOMING (presolicitations, sources sought, special notices)
 
@@ -291,17 +292,8 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 
 ## Documents downloaded
 
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/0. DQ 27-0191 Fuel Pump Replacement.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/1. Exhibit A - SOW_ Specifications_ Bidder Response.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/2. Exhibit B - Required Vendor Information - Services.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/3. Exhibit C - W-9 Request for Taxpayer ID Number.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/4. Exhibit D - Price Quote.xlsx
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/5. Exhibit E - Contract Performance Outside of the US.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/6. Exhibit F - Non-Conflict of Interest.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/10. Attachment 1 - PO Terms and Conditions 090926.pdf
-- coloradovss:DQ1-CAAA-2027000191: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-CAAA-2027000191/10. Attachment 2 - Insurance Information.pdf
-- coloradovss:DQ1-IHHA-2027000189: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-IHHA-2027000189/EXHIBIT_A.DOCX_-_CDHSCP_Solicitation_Request_Documents_-_11-13-2026_-_71795587_-__-_150000.00.docx
-- coloradovss:DQ1-IHHA-2027000189: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-IHHA-2027000189/DQ-SPRING_CREEK_SEWAGE_GRINDER.DOCX_-_CDHSCP_Solicitation_Request_Documents_-_11-13-2026_-_71795587_ _1_.docx
+- coloradovss:DQ1-IHHA-2027000189: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-IHHA-2027000189/LOCATION MAP.PDF - CDHSCP Solicitation Request Documents - 11_13_2026 - 71795587 - - 150000.00.pdf
+- coloradovss:DQ1-IHHA-2027000189: /home/user/PioneerLeads/bids/_watch/downloads/coloradovss/DQ1-IHHA-2027000189/SITE MAP.PDF - CDHSCP Solicitation Request Documents - 11_13_2026 - 71795587 - - 150000.00.pdf
 
 ## Errors
 
@@ -310,8 +302,5 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - samgov: SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/8ee23fef72864e098371e6c454010831/view): aa72c94442b444e1897ff47ab697d500
 - samgov: SPE8EF27T0258: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/994aa9e06162482d9a3c07be9ba67263/view): c2d1d48753b744f78b8506604f4c3a48
 - samgov: SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9
-- samgov: down since 2026-11-19T02:35Z (44 h); previous open bids carried forward
-- coloradovss: download Sanitary Sewer Muffin Monster Replacement: LOCATION MAP.PDF - CDHSCP Solicitation Request Documents - 11_13_2026 - 71795587 - - 150000.00.pdf: no row in the Attachment panel
-- coloradovss: download Sanitary Sewer Muffin Monster Replacement: SITE MAP.PDF - CDHSCP Solicitation Request Documents - 11_13_2026 - 71795587 - - 150000.00.pdf: no row in the Attachment panel
-- coloradovss: download Sanitary Sewer Muffin Monster Replacement: PO TERMSCONDITIONS.PDF - CDHSCP Solicitation Request Documents - 10_7_2026 - 69896531 - - 10000000.00.pdf: no row in the Attachment panel
-- coloradovss: Sanitary Sewer Muffin Monster Replacement: 3 of 5 documents not downloaded yet (tried again next scan)
+- samgov: down since 2026-11-19T02:35Z (45 h); previous open bids carried forward
+- coloradovss: Sanitary Sewer Muffin Monster Replacement: 1 of 5 documents not downloaded yet (tried again next scan)
