@@ -3225,3 +3225,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-11-19 23:21Z worker hourly: Transfort doors sub (Overhead Door FC) clarified its quote has no sales tax; ITB 10366 Sec 20.0 says the City is tax-exempt and taxes are excluded, so the price stands (reply owed, flagged). Carbon Valley mech PM addendum (bid is NO-BID). New scan match 0000444163 on-call electrical water/sewer = EVALUATE (HQ). No sends since 15:36Z.
 
 - 2026-11-20 00:21Z worker hourly: 0 new matches (164 open). Core 3 Drywall delay notice #2 (Arapahoe). Mailbox still silent since 15:36Z 11/19: the Arapahoe second touch (attendee by Fri 12:00) has not gone out.
+
+- 2026-11-20 01:21Z worker hourly: mailbox sending again at 01:18Z (Transfort reply to Overhead Door + PM board). The rest of the Mac queue (Arapahoe x2, IHS x2, Pool Doctor, six new-bid sub lines) still not in Sent. New match 0000439013 securities custody = NO. Luke owes Evergreen application/financials/resume by Tue 11/24 (board).

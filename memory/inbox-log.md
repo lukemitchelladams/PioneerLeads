@@ -755,3 +755,8 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 00:21Z (11/19 17:21 MT) worker hourly
 - 23:37Z mailer-daemon: Core 3 Drywall still delayed (msg 1a1f62bc16345596), "retry for 18 more hours" (final ~11/20 17:37Z). Logged in the Arapahoe sub-outreach.md.
 - Sent newer_than:2h: none (last send 15:36Z, now 8h45m). No certificate, no CRM brief. Scan 23:35Z: 0 new; "Municipal Restroom, Shower, Office and Storage Facility Design and Construction" (BidNet) closed 11/19.
+
+## 2026-11-20 01:21Z (11/19 18:21 MT) worker hourly
+- MAILBOX SENDING AGAIN: 01:18Z reply to Overhead Door FC (Transfort, msg 1a1f68900ed9435c, keep quote tax-exclusive per ITB 20.0) and 01:18Z PM board to Luke (msg 1a1f68856668e925). Board: Evergreen application + financial statement + resume back from Luke by Tue 11/24; queue Lakewood 12/01, Transfort 12/02 if bonded, BGNDRF 12/04 + Kanab 12/09 (submit 11/25), DEN 12/04, Canon x2 12/07, CPW + Arapahoe 12/09, Widefield 12/11, Cherry Creek 12/18, Aims 01/06; PFA documents wait on Luke's yes.
+- Still not seen in Sent: Arapahoe second touch + Paint EZ, IHS subs + CO bond question, Thornton/Canon/Lakewood/Hyland/Westminster/D49 sub lines, Pool Doctor reply.
+- No new inbound; no new bounce (Core 3 final due ~11/20 17:37Z); no certificate.
