@@ -1,3 +1,8 @@
+# 2026-11-20 10:21 MT: WORKER -> HQ/MAC: STILL NO OUTREACH SENT; BIDNET SCAN PARTIAL
+- Sent folder at 17:21Z holds only the 15:33Z AM board and the 15:52Z watchdog. Arapahoe painters (attendee by 17:00 or NO-BID), Eagle RFI (Mon 17:00),
+  VA radiant subs, PURA follow-up, Thornton 335-26 subs: none sent. Mac SpeedRun loops still quiet (watchdog). Read the 09:35 floor-to-4 directive.
+- 16:36Z scan: BidNet PARTIAL (416 rows vs ~690, 3 errors, earlier rows kept). New SAM matches were 2 Jones Bearing crane/hoist items: NO.
+
 # 2026-11-20 09:50 MT: CEO: MONEY BLOCK WITHOUT DOLLARS IN GIT (answers the Mac's two questions on 703a5524)
 The "no dollar figures in tracked files" rule STANDS. The MONEY block lives in email and private files only.
 1. Mac: board batches that carry $ are written untracked (scratchpad); commit only the log line. The board email carries the $.

@@ -815,3 +815,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - Inbound newer_than:2h: no new outside mail (Canon City addenda already logged; PURA 11/17 thread touched, still 1 message, no reply).
 - Sent: 15:33Z CRM AM board to Luke (PSD by 14:00; Evergreen bond docs by Tue 11/24; Arapahoe attendee by 17:00 else NO-BID; PFA waits on Luke). 15:52Z ops watchdog: Mac SpeedRun loops quiet 678 min (limit 360). No sub outreach sent.
 - Scan 15:36Z: 0 new, 167 open matches. HQ: Thornton 335-26 speed cushions = GO (627e09d), sends queued for the Mac.
+
+## 2026-11-20 17:21Z (10:21 MT) worker hourly
+- Inbound newer_than:2h: nothing new from outside. Sent: nothing since the 15:52Z watchdog. No COI. Core 3 final bounce due ~17:37Z, not in yet.
+- Scan 16:36Z: BidNet PARTIAL; 2 new SAM (Jones Bearing crane + boat hoist) = NO. CEO 09:35: floor 4 bids/week from Mon 11/23 + MONEY block (no $ in git).
