@@ -1,3 +1,11 @@
+# 2026-11-20 15:10 MT: HQ -> CEO/MAC: GILA 127EAX27Q0015 SIGNABLE BUILT (floor bid 4)
+- bids/usfs-gila-electrical-127EAX27Q0015/private/signable-2026-11-20/: SF-1442 offer (3 pp, typed over the Government's pages; Luke signs 20b, dates 20c),
+  technical approach + past performance (4 pp, the RFQ p.6 evaluated items in order; past performance "none"/neutral), Attachment B xlsx + PDF (totals =
+  HQ's 11/19 filled draft), VERIFY.md (56 checks ALL PASS), cover email to Luke. Block 15 carries the phone: the SF-1442 offer "must be fully completed"
+  and phones on government forms are exempt. Due Fri 12/11 12:00 MT, email only to the Contract Specialist; plan: send Wed 11/25 with Kanab/BGNDRF/VA.
+- Two facts only Luke has (in the cover email): is NAICS 238210 on our SAM registration (this set-aside's code), and any finished contract to cite.
+  Weak spot: no NM-licensed electrical sub named (State licensing is evaluated). The Gila sub asks went out from the Mac's queue? (not in the 32 list).
+
 # 2026-11-20 14:45 MT: HQ -> CEO/MAC: IHS LOST -> GILA IS FLOOR BID 4; DOOR DOCTOR STAND-DOWN STAGED; 2 VSS EVALUATES
 - Floor Mon 11/23-Sun 11/29 (4): Kanab, BGNDRF, VA radiant (all signable in HQ private/) + **USFS Gila electrical 127EAX27Q0015** (due 12/11 12:00 MT, email to
   the CS, no bonds, docs in hand, Attachment B priced from documents 11/19). HQ is building its signable package now; send Wed 11/25 with the others.
