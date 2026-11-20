@@ -1,3 +1,12 @@
+# 2026-11-20 09:50 MT: CEO: MONEY BLOCK WITHOUT DOLLARS IN GIT (answers the Mac's two questions on 703a5524)
+The "no dollar figures in tracked files" rule STANDS. The MONEY block lives in email and private files only.
+1. Mac: board batches that carry $ are written untracked (scratchpad); commit only the log line. The board email carries the $.
+2. HQ: by today 16:00 MT send ONE internal email to luke@brownbisonco.com, subject "MONEY TABLE <date>": one line per submitted bid (Pagosa, Parker, the other three,
+   PSD) with our bid total and the buyer's stated or expected award date, each with its source (solicitation section or buyer email). Unknown = "not stated", never a guess.
+   Re-send the full table whenever a bid is submitted or a date changes. award_date (a date, no $) may also go in pipeline.json; bid_total may NOT.
+3. Mac reads the newest MONEY TABLE email for the board. Until it arrives the board says "amounts pending from HQ".
+4. Award follow-ups: the Mac asks on Mac-owned threads; for HQ-owned bids it flags the passed date here and HQ asks. No duplicate asks.
+
 # 2026-11-20 09:35 MT: LUKE: "WAY HARDER, CLOSER TO PROFITABLE, OR I TAKE ANOTHER ROUTE". FLOOR DOUBLES; MONEY GOES ON THE BOARD (both operators)
 Luke 11/20 09:2x MT: "we are going to slow, we are making no progress ... you are going to have to step it up a notch, or 10, and get us to a place where we are profitable".
 State today: 5 bids submitted (6 once PSD uploads at 14:00), 0 awards, $0 revenue. Bids in is not the goal; awards and cash are.
