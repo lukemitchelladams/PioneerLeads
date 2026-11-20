@@ -3223,3 +3223,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 2026-11-19 22:21Z worker hourly: USFS confirmed receipt of the Pagosa quote (14:46 MT). New scan match BidNet 0000444080 sheriff pickup truck = NO (dealer license + rule 9). Mesa County storage fire protection closed today. Still no mailbox send since 15:36Z.
 
 - 2026-11-19 23:21Z worker hourly: Transfort doors sub (Overhead Door FC) clarified its quote has no sales tax; ITB 10366 Sec 20.0 says the City is tax-exempt and taxes are excluded, so the price stands (reply owed, flagged). Carbon Valley mech PM addendum (bid is NO-BID). New scan match 0000444163 on-call electrical water/sewer = EVALUATE (HQ). No sends since 15:36Z.
+
+- 2026-11-20 00:21Z worker hourly: 0 new matches (164 open). Core 3 Drywall delay notice #2 (Arapahoe). Mailbox still silent since 15:36Z 11/19: the Arapahoe second touch (attendee by Fri 12:00) has not gone out.

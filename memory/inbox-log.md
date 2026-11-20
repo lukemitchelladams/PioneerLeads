@@ -751,3 +751,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 - 22:24Z Overhead Door Co. of Fort Collins (Transfort ITB 10366), msg 1a1f5e9ddc34571a: quote excludes sales tax, offers to reconfigure. ITB 20.0 says the City is exempt and taxes are not included, so no change; reply owed (flagged to HQ/Mac). PDF identical to private/ copy.
 - 22:55Z BidNet: Carbon Valley Mechanical Service & PM addendum (msg 1a1f6057c989f1e3). Bid is NO-BID (missed mandatory walk 11/10); logged only.
 - Sent newer_than:2h: none (last send 15:36Z). No bounces, no certificate, no CRM brief.
+
+## 2026-11-20 00:21Z (11/19 17:21 MT) worker hourly
+- 23:37Z mailer-daemon: Core 3 Drywall still delayed (msg 1a1f62bc16345596), "retry for 18 more hours" (final ~11/20 17:37Z). Logged in the Arapahoe sub-outreach.md.
+- Sent newer_than:2h: none (last send 15:36Z, now 8h45m). No certificate, no CRM brief. Scan 23:35Z: 0 new; "Municipal Restroom, Shower, Office and Storage Facility Design and Construction" (BidNet) closed 11/19.
