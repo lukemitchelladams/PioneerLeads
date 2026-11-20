@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-19T23:35:51+00:00",
+  "checked_at": "2026-11-20T00:36:12+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
       "complete": true,
-      "count": 673,
+      "count": 670,
       "creds": {
         "BIDNET_PASS": false,
         "BIDNET_USER": false
       },
       "errors": [],
-      "last_success": "2026-11-19T23:35:51+00:00",
+      "last_success": "2026-11-20T00:36:12+00:00",
       "logged_in": false,
       "login_note": "BIDNET_USER/BIDNET_PASS not set",
-      "matches": 86,
+      "matches": 87,
       "reach_note": "HTTP 200",
       "reachable": true,
       "site_totals": {
         "statewide AGGREGATE": 223,
-        "statewide BUYER": 451
+        "statewide BUYER": 448
       }
     },
     "bonfire": {
@@ -30,7 +30,7 @@
       "errors": [
         "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
       ],
-      "last_success": "2026-11-19T23:35:51+00:00",
+      "last_success": "2026-11-20T00:36:12+00:00",
       "logged_in": false,
       "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
       "matches": 1,
@@ -42,7 +42,7 @@
       "count": 68,
       "creds": {},
       "errors": [],
-      "last_success": "2026-11-19T23:35:51+00:00",
+      "last_success": "2026-11-20T00:36:12+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
@@ -75,24 +75,24 @@
       }
     },
     "samgov": {
-      "bulk_added": 104,
-      "bulk_note": "bulk file cached 2026-11-19T05:44:57+00:00; 104 matching (parsed earlier)",
+      "bulk_added": 98,
+      "bulk_note": "bulk file cached 2026-11-19T05:44:57+00:00; 98 matching of 14847 open notices",
       "carried_forward": true,
       "complete": false,
-      "count": 104,
+      "count": 98,
       "creds": {
         "SAM_API_KEY": false
       },
-      "down_runs": 22,
+      "down_runs": 23,
       "down_since": "2026-11-19T02:35:53+00:00",
       "errors": [
         "SAM_API_KEY not set",
         "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
-      "last_success": "2026-11-19T23:35:51+00:00",
+      "last_success": "2026-11-20T00:36:12+00:00",
       "logged_in": false,
-      "login_note": "SAM_API_KEY not set; +104 from the nightly bulk file",
-      "matches": 104,
+      "login_note": "SAM_API_KEY not set; +98 from the nightly bulk file",
+      "matches": 98,
       "reach_note": "HTTP 404",
       "reachable": true
     }
