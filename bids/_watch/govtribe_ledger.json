@@ -3083,10 +3083,11 @@
    "at": "2026-11-18T17:25:00Z"
   },
   "samgov:b4eaf5ee986947649e09ee2513f6c234": {
-   "name": "VA Radiant Heating Panel Replacement, due 2026-11-26",
-   "verdict": "NO",
-   "why": "HQ 17:35Z: HUBZone set-aside; Brown Bison is not HUBZone-certified.",
-   "at": "2026-11-18T18:25:00Z"
+   "name": "VA RFQ 36C25927Q0048 Radiant Heating Panel Replacement, RMR VAMC Aurora, due Thu 2026-11-26 12:00 MT (Amd 0001)",
+   "verdict": "GO",
+   "why": "HQ 2026-11-20: corrected; the notice is a 100% Small Business set-aside (the 11/18 HUBZone NO was a misread of the unchecked 52.219-4 clause). Amd 0001: optional site visit Fri 11/20 11:00 AM, due moved to Thu 11/26 12:00 PM MT, VAAR 852.219-75 certificate no longer required. No bond, no license in our name, 52.219-14 not marked, subs allowed (52.244-6). Folder bids/va-rmr-radiant-heating-36C25927Q0048; supersedes the 11/17 NO-BID folder bids/va-rmr-radiant-panels-36C25927Q0048.",
+   "folder": "bids/va-rmr-radiant-heating-36C25927Q0048",
+   "at": "2026-11-20T15:10:00Z"
   },
   "bidnet:444240306205": {
    "name": "BidNet mirror: BAS Controls Mitigation (RRCC), due 2026-12-15",
@@ -3157,7 +3158,7 @@
   "bidnet:2721870812": {
    "name": "Radiant Heating Panel Replacement (BidNet paid-tier mirror of VA SAM b4eaf5ee...; closing moved 11/20 -> 11/26)",
    "verdict": "NO",
-   "why": "Same VA radiant panel job (HUBZone set-aside; Brown Bison is not HUBZone). New 11/26 close matches samgov:b4eaf5ee986947649e09ee2513f6c234.",
+   "why": "Mirror only; tracked under samgov:b4eaf5ee986947649e09ee2513f6c234, which HQ moved to GO 2026-11-20 (the HUBZone reading was a misread; the notice is a 100% Small Business set-aside). New 11/26 close matches the SAM notice.",
    "at": "2026-11-19T08:30:00Z"
   },
   "bidnet:0000444110": {

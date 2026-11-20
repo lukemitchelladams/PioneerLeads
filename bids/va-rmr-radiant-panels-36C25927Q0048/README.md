@@ -1,5 +1,9 @@
 # VA NCO 19, Rocky Mountain Regional VAMC, Radiant Heating Panel Replacement (RFQ 36C25927Q0048)
 
+**SUPERSEDED 2026-11-20: Amendment 0001 (notice b4eaf5ee...) moved the due date to Thu 11/26, added an optional 11/20 site
+visit and dropped the VAAR certificate. The bid is GO and lives in `bids/va-rmr-radiant-heating-36C25927Q0048/`. The NO-BID
+below is kept as the 11/17 record only.**
+
 Read 2026-11-17 11:10 MST (18:10Z) from the three SAM.gov attachments, filed in `docs/`. Page cites "Desc p.N" refer to
 `docs/36C25927Q0048 - Description.pdf` (LibreOffice render of the posted .docx, 16 pages; Word paginates it as 18).
 Brown Bison would be the bidder; an HVAC/hydronic sub would do the field work.

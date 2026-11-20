@@ -263,7 +263,7 @@
    "govtribe_ids": []
   },
   {
-   "name": "VA RMR VAMC radiant heating panel replacement 36C25927Q0048 (sources sought was 36C25927Q0019) (NO-BID 2026-11-17: PWS sec.5 'Contractors must demonstrate having performed labor, start-up and commissioning of these units' + technical-capability gate; panel model unspecified, no site visit; revive only if a small-business hydronic sub gives a firm price + 3 references by Wed 11/19 17:00 MT)",
+   "name": "SUPERSEDED 2026-11-20 by the b4eaf5ee entry (GO, folder bids/va-rmr-radiant-heating-36C25927Q0048): VA RMR VAMC radiant heating panel replacement 36C25927Q0048 (sources sought was 36C25927Q0019) (NO-BID 2026-11-17: PWS sec.5 'Contractors must demonstrate having performed labor, start-up and commissioning of these units' + technical-capability gate; panel model unspecified, no site visit; revive only if a small-business hydronic sub gives a firm price + 3 references by Wed 11/19 17:00 MT)",
    "source": "samgov",
    "match": "36C25927Q0019|36C25927Q0048|974f9b5eb51f4ade85b43f47c548e773|radiant panel replacement rmr|Radiant Heating Panel Replacement",
    "folder": "bids/va-rmr-radiant-panels-36C25927Q0048",
@@ -982,11 +982,11 @@
    "folder": null
   },
   {
-   "name": "VA Radiant Heating Panel Replacement (new notice b4eaf5ee, due 2026-11-26) (NO: HUBZone set-aside per the notice; Brown Bison is not HUBZone; the earlier 36C25927Q0048 was NO-BID on technical capability)",
+   "name": "VA RFQ 36C25927Q0048 Radiant Heating Panel Replacement, RMR VAMC Aurora, notice b4eaf5ee (GO 2026-11-20: 100% Small Business set-aside, the HUBZone NO was a misread; Amd 0001 due Thu 11/26 12:00 MT, optional visit Fri 11/20 11:00; no bond)",
    "source": "samgov",
    "id": "b4eaf5ee986947649e09ee2513f6c234",
    "match": "b4eaf5ee986947649e09ee2513f6c234",
-   "folder": null
+   "folder": "bids/va-rmr-radiant-heating-36C25927Q0048"
   },
   {
    "name": "BidNet aggregate mirror of RRCC 27-07-IFB01C BAS Controls Mitigation (NO-BID: bid bond + P&P bonds + bonding capability; mandatory 12/01)",
