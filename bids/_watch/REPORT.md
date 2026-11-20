@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-20T14:35:38+00:00
+# Bid watch report — 2026-11-20T15:36:31+00:00
 
-**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); 2 NEW matching bids; not scanned this run (previous results kept): dibbs
+**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 689 | BUYER 450, AGGREGATE 240 | 87 | 2026-11-20T14:35:38+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T14:35:38+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (36 h, 37 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 11 notices; +98 from the nightly bulk file | 109 |  | 109 | 2026-11-20T14:35:38+00:00 | 5 |
-| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-20T14:35:38+00:00 | 0 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 693 | BUYER 453, AGGREGATE 241 | 87 | 2026-11-20T15:36:31+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-20T15:36:31+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (37 h, 38 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 11 notices; +98 from the nightly bulk file | 109 |  | 109 | 2026-11-20T15:36:31+00:00 | 5 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-20T15:36:31+00:00 | 0 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -20,13 +20,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 |---|---|---|---|---|---|---|
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (19d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (28d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
-
-## NEW matching bids since last scan
-
-| Profile | Source | Agency | Title | Due | Pre-bid / walk | Link |
-|---|---|---|---|---|---|---|
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | RING,BEARING,OUTER (place of performance not stated; PA buying office) | 2026-12-21 (31d) |  | https://sam.gov/opp/6a9164bce17f48f5827b2edd11476e5c/view |
-| jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP. | 1HM 3110 LLH877814 D4, BEARING,ROLLER,NEED | 2027-01-07 (48d) |  | https://sam.gov/opp/c95efa57e8a8451fa471f8bea0bfa6a8/view |
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -296,4 +289,4 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - samgov: SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/8ee23fef72864e098371e6c454010831/view): aa72c94442b444e1897ff47ab697d500
 - samgov: SPE8EF27T0258: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/994aa9e06162482d9a3c07be9ba67263/view): c2d1d48753b744f78b8506604f4c3a48
 - samgov: SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9
-- samgov: down since 2026-11-19T02:35Z (36 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (37 h); previous open bids carried forward
