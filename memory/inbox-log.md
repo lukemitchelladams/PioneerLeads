@@ -819,3 +819,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 17:21Z (10:21 MT) worker hourly
 - Inbound newer_than:2h: nothing new from outside. Sent: nothing since the 15:52Z watchdog. No COI. Core 3 final bounce due ~17:37Z, not in yet.
 - Scan 16:36Z: BidNet PARTIAL; 2 new SAM (Jones Bearing crane + boat hoist) = NO. CEO 09:35: floor 4 bids/week from Mon 11/23 + MONEY block (no $ in git).
+
+## 2026-11-20 18:21Z (11:21 MT) worker hourly
+- BidNet 17:54Z: addendum on Lakewood RFP 6706 board-up (1a1fa1824c323541; NO-BID row, link only). Recorded in README + pipeline.
+- Sent newer_than:2h: none. No COI. Core 3 final bounce still not in. Scan 17:37Z: 1 new (street sweeping on-call, HQ EVALUATE 97ad44f), 170 open.
