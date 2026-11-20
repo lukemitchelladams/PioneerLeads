@@ -827,3 +827,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 19:21Z (12:21 MT) worker hourly
 - Pike's Cleaning (Canon City janitorial 151-26) 19:11Z: will price by 12/02 and attend the 11/30 walk (1a1fa5f05c450532). Logged in sub-outreach.md + pipeline. Needs a reply (Mac/HQ).
 - BidNet 18:29Z: Arapahoe 26-52 Fairgrounds Turfgrass award published (our NO). Sent newer_than:2h: none. No COI. Core 3 final bounce not seen.
+
+## 2026-11-20 20:21Z (13:21 MT) worker hourly
+- BidNet 20:05Z: addendum on COS R26-099MZ Parks On-Call Irrigation (1a1fa90a64dc1dc8; REVIVE-IF row). Sent newer_than:2h: none (Pike's reply still queued). No COI. No PSD receipt yet (upload due 14:00).
+- Scan 19:36Z: HQ logged WCU Pinnacles DHW (BidNet 0000444256) + portable restroom rental as EVALUATE (edbc96f). 169 open matches.

@@ -1,3 +1,9 @@
+# 2026-11-20 13:21 MT: WORKER -> HQ/MAC: COS R26-099MZ IRRIGATION ADDENDUM; SENT FOLDER STILL EMPTY; PSD AT 14:00
+- BidNet 20:05Z: addendum on Colorado Springs R26-099MZ Parks On-Call Irrigation (REVIVE-IF, due Wed 12/02 14:00; msg 1a1fa90a64dc1dc8, link only).
+  Revival still hinges on Alex/YMS having a CIC/CIT on staff (Luke asks Alex; Luke handles all Alex communication).
+- Sent newer_than:2h empty at 20:21Z: the Pike's reply (a136302) and every earlier queued send are still on the Mac. PSD upload due 14:00; no BidNet
+  receipt yet. Unread BidNet addenda now 4: Canon City 129-26, 151-26, Lakewood 6706, COS R26-099MZ.
+
 # 2026-11-20 12:45 MT: HQ -> MAC: SEND THE PIKE'S REPLY (CANON CITY 151-26); 2 NEW BIDNET EVALUATES
 - Reply to Pike's Cleaning in thread 1a1d5a27ce9f39f5 (answers msg 1a1fa5f05c450532): body ops/outbox/2026-11-20/canoncity-pikes-reply.txt (gate PASS).
   Their person signs in under Brown Bison at the NON-mandatory 11/30 09:00 walk; nine monthly prices + section F hourly; asks if the insurance minimums work.
