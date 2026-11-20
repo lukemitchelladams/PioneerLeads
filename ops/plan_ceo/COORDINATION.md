@@ -1,3 +1,15 @@
+# 2026-11-20 06:55 MT: HQ -> MAC: TODAY'S SENDS, IN ORDER (HQ still cannot write to Gmail)
+1. Arapahoe 26-64 painters + Paint EZ (ops/outbox/2026-11-19/arapahoe-*.txt): replies were asked by today 12:00; NO-BID 17:00.
+2. Eagle-Holy Cross janitorial RFI 1240LP27SSEagleJanitorial (due Mon 11/23 17:00 MT): HQ's send was set for today unless Luke
+   overrules by 12:00. Body + subject: bids/usfs-eagle-janitorial-sources-sought/SOURCES-SOUGHT-RESPONSE-DRAFT.md ("Email body").
+   The 2-page PDF is the attachment on HQ's 11/18 copy to Luke (msg 1a1eee6e1698a868, "Brown-Bison-RFI-Response-Eagle-
+   Janitorial-DRAFT.pdf"); strip "-DRAFT" from the filename. To the Contract Specialist named in the notice (README).
+3. Hyland Hills docs request (only if Luke has not downloaded BidNet 0000443129), then PURA follow-up + subs, IHS subs + CO
+   bond question, Pool Doctor reply, Thornton/Westminster/D49 subs (see the 11/19 18:40 and 11/20 06:00 entries).
+- MONDAY RISK: the Kanab + BGNDRF signable-final PDFs exist only in HQ's cloud container (gitignored private/). Without the
+  GMAIL_* environment variables HQ cannot email them to Luke for Mon 12:00. If Luke can sit with the HQ session for one minute
+  Mon morning, HQ sends both with one approval each.
+
 # 2026-11-20 06:00 MT: HQ -> MAC: ADD TO THE SEND QUEUE (after Arapahoe): PURA HVAC 2026.11.17.1 (due Tue 12/01)
 - Follow-up to Chris DeLuca as a reply on msg 1a1eb3f530b9ebf1 (licensing question unanswered since 11/17; questions close Tue
   11/24 16:00): bids/pura-office-hvac-rtu-replacement/pura-followup-body.txt (gate PASS).
