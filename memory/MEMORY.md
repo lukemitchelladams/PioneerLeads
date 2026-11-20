@@ -3253,3 +3253,5 @@ mandatory Teams pre-bid 10/19 13:30; dead unless Luke attended.
 - 13:0xZ PURA HVAC 2026.11.17.1 (agent, merged): 4 Pueblo/CO Springs HVAC sub lines + follow-up to PURA on the licensing gate (gate PASS), documents-based price in private/ (Assessor square footage; tonnage assumed). Sends handed to the Mac. Two sub mailboxes removed from the public sub-outreach.md (still in git history).
 
 - 2026-11-20 13:21Z worker hourly: quiet (0 new; BidNet/DMARC notices only; 0 sent). HQ queued the PURA follow-up + PURA sub first touch for the Mac.
+
+- 2026-11-20 14:21Z worker hourly: quiet inbox. HQ shipped a keyless SAM.gov public-search fallback (61286e9) and the CEO plan for 11/20 (PSD bid 2 of 2 today 14:00; Kanab + BGNDRF to Luke Mon 12:00, both exist only in HQ's container).

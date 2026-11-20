@@ -801,3 +801,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-20 13:21Z (06:21 MT) worker hourly
 - 12:28Z BidNet closing reminder, Arapahoe 26-53 Security Electronics (msg 1a1f8edc065ec547): already NO (missed MANDATORY 11/03 visit; outside trades). 13:19Z Microsoft DMARC report: ignore.
 - Sent: none. HQ 1ebad0e/b68a861: PURA sub lines + follow-up queued for the Mac. Scan 12:36Z: 0 new, 165 open.
+
+## 2026-11-20 14:21Z (07:21 MT) worker hourly
+- Inbound newer_than:2h: nothing new (notices already logged). Sent: none. Scan 13:36Z: 0 new, 165 open.
+- HQ: CEO plan 2026-11-20 (5af9d43); Mac send order for today (483d112: Arapahoe, Eagle RFI first); scanner gained a keyless SAM public-search fallback (61286e9). Monday risk: Kanab + BGNDRF signable PDFs exist only in HQ's container.
