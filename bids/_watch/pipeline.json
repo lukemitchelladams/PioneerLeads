@@ -1801,7 +1801,7 @@
    "due": "2026-12-09T12:00:00-07:00",
    "due_source": "worker read of RFB-26-64.pdf 11/09 (confirm on BidNet)",
    "portal": "BidNet (questions on BidNet by 11/23 16:00)",
-   "decision": "EVALUATE (GO if a sub confirms in writing it attends the MANDATORY 11/23 10:00 meeting for Brown Bison; NO-BID Fri 11/20 17:00 otherwise)",
+   "decision": "NO-BID (HQ 2026-11-20 17:00 MT): no sub attendee confirmed in writing for the MANDATORY 11/23 10:00 meeting (Tri-Plex declined, Core 3 bounced, 5+ painters silent)",
    "decision_note": "RFB: 'Pre-Solicitation Meeting: Mandatory, 11/23/26, 10 AM MST' at 7375 S. Potomac St, Centennial; wallpaper removal, drywall repair, paint; after-hours shifts; mandatory Sheriff background checks, rosters 10 business days ahead. Ceres Construction (all trades, rates on file) is the primary ask Fri 11/13 08:30 MT; Wild Fox Painting asked 11/12 (1a1d21aa164e43dc). | 11/13 11:xxZ worker pre-build in bids/arapahoe-courthouse1-drywall-paint-rfb-26-64 (FORMS-CHECKLIST, RESPONSE-DRAFT, SUBMISSION + BidNet Q1-Q15; no prices). p.1: 'Pre-Solicitation Meeting: Mandatory, 11/23/26, 10 AM MST', questions 'November 23, 2026, 4 pm', due 'December 9, 2026, 12 pm' on BidNet, one PDF with the contractor name first in the file name. A Certificate of Liability Insurance goes WITH the bid (p.8); limits are not stated (in the awarded agreement, not posted). Award on lowest unit rate per sq ft, NTE $55,000. Q1 (can a sub's employee sign in for the bidder) should post by Mon 11/16. South Valley Commercial and Drywall Partitions are not asked yet. | 2026-11-13 15:59Z (08:59 MT) HQ Friday batch sent: Ceres Construction (ceresconstruction@gmail.com) attend-and-price ask with RFB-26-64.pdf, msg 1a1d5a23ad50d6b9 (Wild Fox asked 11/12). | 2026-11-20 22:21Z: Tri-Plex declined; Core 3 address dead (final bounce). 0 attendees; 5 painters unanswered; NO-BID 17:00 MT if none.",
    "prebid": "2026-11-23T10:00:00-07:00",
    "prebid_mandatory": true,
@@ -1810,7 +1810,7 @@
    "sub_pricing": "None",
    "folder": "bids/arapahoe-courthouse1-drywall-paint-rfb-26-64",
    "contact": "Sophia Morlan, SMorlan@arapahoegov.com (administrative questions)",
-   "next": "Fri 11/13: Ceres asked to attend 11/23 10:00 and price; Wild Fox asked 11/12. LUKE (portal post) by Mon 11/16 17:00: BidNet question Q1 (may a subcontractor's employee attend the mandatory meeting and sign in for Brown Bison; which insurance limits apply, since p.8 wants a COI with the bid and no limits are posted). Questions close Mon 11/23 16:00; NO-BID Fri 11/20 17:00 if no sub confirms attendance."
+   "next": "None. Closed. Watch the award for the bid tab (pricing intel)."
   },
   {
    "id": "bidnet-0000443426-trails-rec-landscape",

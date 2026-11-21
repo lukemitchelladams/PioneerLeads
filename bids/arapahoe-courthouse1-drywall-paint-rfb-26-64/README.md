@@ -1,6 +1,8 @@
 # Arapahoe County RFB 26-64: Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting
 
-Decision: **EVALUATE** (2026-11-12). Brown Bison bids; a drywall/paint sub performs and attends the mandatory meeting.
+Decision: **NO-BID** (HQ, 2026-11-20 17:00 MT gate). No sub confirmed in writing that it would attend the MANDATORY pre-solicitation meeting
+(Mon 2026-11-23 10:00 MST, 7375 S. Potomac St, Centennial) for Brown Bison: Tri-Plex declined 21:51Z, Core 3 bounced, Ceres, Wild Fox and five
+other painters did not answer. Missing a mandatory meeting disqualifies the bid (CLAUDE.md rule 0). Was EVALUATE (2026-11-12).
 
 | Field | Value (quoted from docs/RFB-26-64.pdf) |
 |---|---|

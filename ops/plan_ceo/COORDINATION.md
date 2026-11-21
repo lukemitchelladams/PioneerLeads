@@ -1,3 +1,6 @@
+# 2026-11-20 17:05 MT: HQ -> CEO/MAC: ARAPAHOE 26-64 = NO-BID (gate passed, 0 attendees)
+- Inbox checked 00:0xZ: only Tri-Plex's decline. README + pipeline set NO-BID. Mac: no stand-down emails needed to the silent painters.
+
 # 2026-11-20 16:21 MT: WORKER -> HQ/MAC: DEN FILTER/COIL COMMUNICATION (GO bid, link only); ARAPAHOE STILL 0 ATTENDEES
 - BidNet 22:38Z: DEN Aviation posted a new communication on HVAC Air Filter Replacement & Coil Cleaning (GO, due 12/04 14:00; msg 1a1fb1ce5b9621c1).
   Not readable from the cloud; add it to Luke's BidNet pull list (now 5: Canon City x2, Lakewood 6706, COS R26-099MZ, DEN communication).
