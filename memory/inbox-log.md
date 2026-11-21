@@ -881,3 +881,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-21 10:21Z (03:21 MT Sat) worker hourly
 - Inbound newer_than:2h: none. Sent: none. No COI. Scan 09:35Z: 0 new, 166 open.
+
+## 2026-11-21 11:21Z (04:21 MT Sat) worker hourly
+- Inbound: Google DMARC aggregate report for brownbisonco.com (1a1fdb5318ce9f07), routine. Sent: none. No COI. Scan 10:35Z: 0 new, 166 open.
