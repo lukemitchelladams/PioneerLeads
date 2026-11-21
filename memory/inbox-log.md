@@ -868,3 +868,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-21 06:21Z (11/20 23:21 MT) worker hourly
 - Inbound newer_than:2h: none. Sent: none. No COI. Scan 05:35Z: 2 new SAM (Link River Dam hoist = Jones Bearing NO by HQ; BGNDRF Amd 0003, due now 12/09 11:00 MST, HQ rebuilt the signable 656c67a). Bonfire BLIND (HTTP 503). 166 open.
+
+## 2026-11-21 07:21Z (00:21 MT Sat) worker hourly
+- Inbound newer_than:2h: none. Sent: none. No COI. Scan 06:35Z: 0 new, 166 open; Bonfire reachable again (logged out). HQ b6ca8d5: floor-bid amendment check, all current except BGNDRF (handled).
