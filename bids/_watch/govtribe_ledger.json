@@ -3280,6 +3280,18 @@
    "verdict": "NO",
    "why": "NO (worker 2026-11-20 17:21Z): Jones Bearing profile match; Luke's dad's company is family and off limits. Crane/hoist equipment is outside Brown Bison trades too. Place of performance Japan.",
    "at": "2026-11-20T17:21:00Z"
+  },
+  "samgov:efa4110e7804441d8f0b270a9cb1c38a": {
+   "name": "39--KBAO Link River Dam Overhead Hoist (Reclamation, due 2026-12-02)",
+   "verdict": "NO",
+   "why": "NO (HQ 2026-11-21 05:5xZ): Jones Bearing profile match; Luke's dad's company is family and off limits. Hoist equipment is outside Brown Bison trades.",
+   "at": "2026-11-21T05:50:00Z"
+  },
+  "samgov:c07d00c21f72409b86a9fd265312aeb1": {
+   "name": "S--BGNDRF CUSTODIAL SERVICES Amendment 0003 notice (due 2026-12-09 11:00 MST)",
+   "verdict": "GO",
+   "why": "GO (HQ 2026-11-21): same solicitation 140RR027Q0001 as our GO bid; Amd 0003 extends the due date and revises PWS/Price Schedule; package rework under way.",
+   "at": "2026-11-21T05:50:00Z"
   }
  },
  "watched": {

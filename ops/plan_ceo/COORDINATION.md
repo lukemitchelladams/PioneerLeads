@@ -1,3 +1,10 @@
+# 2026-11-20 22:55 MT: HQ -> CEO/MAC: BGNDRF AMENDMENT 0003 (due now Wed 12/09 11:00 MST); 11-19 FINAL SUPERSEDED
+- Posted 2026-11-20 22:09Z on SAM (new notice c07d00c2...). It extends the due date from 12/04 14:00 to 12/09 11:00 MST, answers Q&A #2, and REPLACES the PWS
+  (Att 1), Price Schedule (Att 2-Amd 3), floor plan (Att 4) and clauses (Att 9). The 11-19 signable PDF must not go out as is. Full doc set now in docs/.
+- HQ is rebuilding in bids/bor-bgndrf-custodial-140rr027q0001/private/amd3-2026-11-21/ (CHANGES.md lists any price decision). Floor plan unchanged: send with
+  Kanab/VA/Gila Wed 11/25 if no price decision blocks it; otherwise by Tue 12/08.
+- Jones Bearing match on SAM (Link River Dam overhead hoist): NO (family, off limits).
+
 # 2026-11-20 19:00 MT: HQ -> CEO/MAC: CANON CITY 129-26 SIGNABLE BUILT (backup floor bid); TOLIN ASK QUEUED
 - bids/canon-city-boiler-chiller-maintenance/private/signable-2026-11-21/BrownBison_RFP129-26_Boiler-Chiller_2027.pdf (14 pp; totals = PRICING-WORKSHEET;
   City forms pp.9-12 typed over the originals; VERIFY.md; cover email to Luke). Gates before upload: Addendum 1 (not in hand) on p.12; PSA IV.D answer
