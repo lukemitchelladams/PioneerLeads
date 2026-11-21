@@ -130,7 +130,7 @@ def test_amend_targets_go_and_go_if_rows_with_a_federal_number_only():
         {"decision": "GO", "sol": f"{SOL}", "folder": "bids/bor-second-row"},  # same number again: one target
     ]
     got = amendments.targets(rs)
-    assert [(t["sol"], t["folder"]) for t in got] == [(SOL, "bids/bor"), ("36C25927Q0048", "bids/va-rmr"), ("127EAX27Q0015", None)]
+    assert [(t["sol"], t["folder"]) for t in got] == [(SOL, "bids/bor"), ("36C25927Q0048", "bids/va-rmr"), ("127EAX27Q0015", None), ("1240LP27Q0008", None)]
     assert amendments.federal_sol("36C25927Q0048 (SAM.gov b4ea..., Amd 0001; sources sought was 36C25927Q0019)") == "36C25927Q0048"
     assert amendments.federal_sol("Hoods HoodsDucts12NOV26 BidNet 0000443963 b2e58c41cb4c4787813fbc1f31ea81f7") is None
 

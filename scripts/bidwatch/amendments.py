@@ -33,7 +33,7 @@ from . import samgov, samgov_public
 from .common import REPO, WATCH_DIR, load_json, save_json
 
 STATE_FILE = WATCH_DIR / "amendment_state.json"
-GO_DECISION_RX = re.compile(r"\s*GO(?:[ -]?IF)?\b", re.I)  # "GO", "GO (HQ ...)", "GO-IF (...)", "GO-IF BONDED"; not "EVALUATE"
+GO_DECISION_RX = re.compile(r"\s*(?:GO(?:[ -]?IF)?|SUBMITTED)\b", re.I)  # "GO", "GO (HQ ...)", "GO-IF (...)", "GO-IF BONDED", "SUBMITTED" (an amendment after submission must still be acknowledged); not "EVALUATE"
 # A federal solicitation number written whole: 10-17 upper-case letters and digits, both present, not part of a longer word or
 # of a hyphenated number (a Colorado VSS "DQ1-PMAA-2027000176-1", a BidNet "0000443963" or a 32-hex notice id never match).
 FEDERAL_SOL_RX = re.compile(r"(?<![A-Za-z0-9-])(?=[A-Z0-9]*[A-Z])(?=[A-Z0-9]*\d)[A-Z0-9]{10,17}(?![A-Za-z0-9-])")
