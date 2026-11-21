@@ -855,3 +855,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-21 02:21Z (11/20 19:21 MT) worker hourly
 - Sent 02:16Z: CRM PM board to Luke (1a1fbe415ce0e2d2; carries the MONEY block, figures not copied here). Asks: Luke opens the HQ cloud session and approves one Gmail send (VA radiant, Kanab, BGNDRF stuck behind it); PSD upload "not confirmed"; BidNet pulls incl. WCU Gunnison DHW 0000444256; Gila NAICS 238210 + finished contract. New GO today 1, this week 9.
 - Inbound newer_than:2h: none. No COI. HQ 4a55577: Canon City 129-26 signable built (private); Tolin refs + tax-exempt price ask queued for Mon 08:30.
+
+## 2026-11-21 03:21Z (11/20 20:21 MT) worker hourly
+- Inbound newer_than:2h: none. Sent: only the 02:16Z CRM PM board (already logged). No COI. No PSD receipt. Scan 02:36Z: 0 new, 165 open.
