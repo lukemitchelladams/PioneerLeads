@@ -6,6 +6,7 @@ Every MISSING item below lives only on the agency portal, which this cloud sessi
 
 | Bid | Due | In hand | MISSING (download from) |
 |---|---|---|---|
+| BGNDRF 140RR027Q0001 custodial (Reclamation) | 2026-12-09 11:00 MST (Amd 0003) | COMPLETE 2026-11-21 from SAM.gov public download: Sol + Att 1-5, Amd 0001 + Q&A #1, Amd 0002 + C&P deadline update, Amd 0003 SF-30 + 'Amendment 3 All Attachments' (Att 1/2/4 Amd 3, Q&A #2, Att 9) | none |
 | PSFB FA251727SS00 Smart T Power sources sought | 2026-11-18 09:00 (email response) | Sources Sought memo (2 pp); Attachment 1 PWS (7 pp); both from SAM.gov 2026-11-10 | none: the notice lists only these two files |
 | Littleton RFQ 2126 (BidNet sol 21-26) on-call plumbing | 2026-10-28 14:00 | RFQ (12 pp); **Attachment A Contract Certification Form; Attachment B Sample Contract (18 pp); Attachment C RMEPS Bid Question Response Guide — all downloaded logged in 2026-10-20**; pricing = 6 RMEPS line items (Pricing-Items-RMEPS.md; there is no separate template file) | Q&A posting 10/21 (BidNet Q & A tab; the scanner re-checks it hourly) |
 | Town of Parker RFP 26-028 HVAC PM | 2026-10-22 15:00 | RFP; Price Sheet workbook; Appendix A asset inventory; sample PSA incl. Exhibits A Scope, B Rate Sheet, C Insurance Requirements, D COI | Nothing listed is missing. Check the Euna portal for a Q&A addendum (questions closed 10/16). |
