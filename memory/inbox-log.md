@@ -848,3 +848,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 ## 2026-11-21 00:21Z (11/20 17:21 MT) worker hourly
 - Inbound newer_than:2h: nothing new (DEN communication + Durango addendum already logged). Sent: none. No COI. No PSD receipt yet.
 - HQ f6874b7: Arapahoe RFB 26-64 = NO-BID at the 17:00 gate (no attendee for the mandatory 11/23 meeting). Scan 23:36Z: 0 new, 169 open.
+
+## 2026-11-21 01:21Z (11/20 18:21 MT) worker hourly
+- Inbound newer_than:2h: none. Sent: none. No COI. No PSD receipt. Scan 00:35Z: 0 new, 165 open matches (SAM fallback 8 notices).
