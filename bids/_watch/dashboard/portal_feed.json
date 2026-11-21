@@ -1,95 +1,5 @@
 [
  {
-  "key": "samgov:167b070bfa8649458bf15e4f20b7ba9e",
-  "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
-  "title": "S--JANITORIAL SERVICES, Channel Islands NP",
-  "sol": "140PP027Q0034",
-  "closing": "2026-11-20",
-  "posted": "2026-11-16",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/167b070bfa8649458bf15e4f20b7ba9e/view"
- },
- {
-  "key": "samgov:23974a460bd74e2faaa14870565075d7",
-  "source": "samgov",
-  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA WEAPONS SUPPORT",
-  "title": "30--SHAFT-GEARBOX,IDLER",
-  "sol": "SPE7L127T4509",
-  "closing": "2026-11-20",
-  "posted": "2026-11-09",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/23974a460bd74e2faaa14870565075d7/view"
- },
- {
-  "key": "samgov:595a043c43e3421c9ce457df6614d29f",
-  "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / 248-NETWORK CONTRACT OFFICE 8 (36C248)",
-  "title": "4610--FY27 Portable Reverse Osmosis (RO) Water Purification System",
-  "sol": "36C24827Q0114",
-  "closing": "2026-11-20",
-  "posted": "2026-11-12",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "jones-bearing",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/595a043c43e3421c9ce457df6614d29f/view"
- },
- {
-  "key": "samgov:5d8aa2693f7c4dd7adf3f6494c77eb5d",
-  "source": "samgov",
-  "agency": "INTERIOR, DEPARTMENT OF THE / DEPARTMENTAL OFFICES / NATIONAL PARK SERVICE CONTRACTING ACTIVITY",
-  "title": "JANITORIAL SERVICES, Channel Islands NP",
-  "sol": "140PP027Q0034",
-  "closing": "2026-11-20",
-  "posted": "2026-11-10",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/5d8aa2693f7c4dd7adf3f6494c77eb5d/view"
- },
- {
-  "key": "samgov:974f9b5eb51f4ade85b43f47c548e773",
-  "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
-  "title": "Radiant Heating Panel Replacement",
-  "sol": "36C25927Q0048",
-  "closing": "2026-11-20",
-  "posted": "2026-11-04",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/974f9b5eb51f4ade85b43f47c548e773/view"
- },
- {
-  "key": "samgov:da9ea4b3839a49fab63f9e83dfa4ea17",
-  "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NETWORK CONTRACT OFFICE 19 (36C259)",
-  "title": "J065--Fort Harrison GE Precision Radiology Preventive Maintenance",
-  "sol": "36C25926Q0779",
-  "closing": "2026-11-20",
-  "posted": "2026-11-05",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": false,
-  "new_24h": false,
-  "url": "https://sam.gov/workspace/contract/opp/da9ea4b3839a49fab63f9e83dfa4ea17/view"
- },
- {
   "key": "samgov:030fbc47bac041ddb7216401102fc679",
   "source": "samgov",
   "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA MARITIME - PUGET SOUND",
@@ -1082,7 +992,7 @@
  {
   "key": "samgov:01754c67a9fd4dd99e16171e0bfc4c04",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "agency": "DEPT OF DEFENSE / DEFENSE LOGISTICS AGENCY / DLA AVIATION",
   "title": "BEARING,ROLLER,AIRFRAME, NSN 3110-01-310-2258",
   "sol": "SPE4A627Q0034",
   "closing": "2026-12-01",
@@ -1092,7 +1002,7 @@
   "profiles": "jones-bearing",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/opp/01754c67a9fd4dd99e16171e0bfc4c04/view"
+  "url": "https://sam.gov/workspace/contract/opp/01754c67a9fd4dd99e16171e0bfc4c04/view"
  },
  {
   "key": "samgov:28287bf2d75d4b988c3926804e5e8665",
@@ -1217,7 +1127,7 @@
  {
   "key": "samgov:cfd4d4c711f44c60b66fdaf3661c9f8d",
   "source": "samgov",
-  "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+  "agency": "VETERANS AFFAIRS, DEPARTMENT OF / VETERANS AFFAIRS, DEPARTMENT OF / NATIONAL CEMETERY ADMIN (36C786)",
   "title": "Pikes Peak Janitorial Base plus 4",
   "sol": "36C78627Q0040",
   "closing": "2026-12-01",
@@ -1227,7 +1137,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/opp/cfd4d4c711f44c60b66fdaf3661c9f8d/view"
+  "url": "https://sam.gov/workspace/contract/opp/cfd4d4c711f44c60b66fdaf3661c9f8d/view"
  },
  {
   "key": "samgov:e0744ff44d534fe384865ff6a50be7d3",
@@ -2492,7 +2402,7 @@
  {
   "key": "samgov:49fff837ad1c4b87b96e64679cb00652",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE NAVY / NAVSUP WEAPON SYSTEMS SUPPORT MECH",
   "title": "30--2-TON CHAIN HOIST",
   "sol": "N0010426QBJ41",
   "closing": "2026-12-16",
@@ -2502,7 +2412,7 @@
   "profiles": "jones-bearing",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/opp/49fff837ad1c4b87b96e64679cb00652/view"
+  "url": "https://sam.gov/workspace/contract/opp/49fff837ad1c4b87b96e64679cb00652/view"
  },
  {
   "key": "samgov:608f61baec2e4cd1a91f3138dffec13d",
@@ -2771,7 +2681,7 @@
   "prebid_mandatory": "",
   "profiles": "brownbison",
   "watched": false,
-  "new_24h": true,
+  "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Securities-Safekeeping-Custodial-Services/0000439013?purchasingGroupId=8409951&origin=1"
  },
  {
@@ -2882,7 +2792,7 @@
  {
   "key": "samgov:0f1e8554ae134a2db4554e547a2c3f64",
   "source": "samgov",
-  "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "agency": "DEPT OF DEFENSE / DEPT OF THE ARMY / W6QK ACC-RI",
   "title": "EAGLE Ft. Carson CO W519TC-27-R-A014",
   "sol": "W519TC-27-R-A014",
   "closing": "2027-01-04",
@@ -2892,7 +2802,7 @@
   "profiles": "brownbison",
   "watched": true,
   "new_24h": false,
-  "url": "https://sam.gov/opp/0f1e8554ae134a2db4554e547a2c3f64/view"
+  "url": "https://sam.gov/workspace/contract/opp/0f1e8554ae134a2db4554e547a2c3f64/view"
  },
  {
   "key": "bidnet:0000442906",

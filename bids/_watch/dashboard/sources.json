@@ -3,9 +3,9 @@
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Live (public, not logged in)",
   "detail": "BIDNET_USER/BIDNET_PASS not set",
-  "open_count": 697,
+  "open_count": 691,
   "matches": 87,
-  "last_success": "2026-11-20T23:36:10+00:00"
+  "last_success": "2026-11-21T00:35:48+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
@@ -13,15 +13,15 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network; detail pages blocked: Cloudflare bot challenge on the opportun",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-20T23:36:10+00:00"
+  "last_success": "2026-11-21T00:35:48+00:00"
  },
  {
   "source": "SAM.gov",
   "status": "Blind this run (last good data shown)",
-  "detail": "HTTP 404; showing 111 rows from the last good read; SAM_API_KEY not set; public search fallback (no key): 12 notices; +99 from the nightly bulk file; SAM_API_KEY not set; SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a",
-  "open_count": 111,
-  "matches": 111,
-  "last_success": "2026-11-20T23:36:10+00:00"
+  "detail": "HTTP 404; showing 105 rows from the last good read; SAM_API_KEY not set; public search fallback (no key): 8 notices; +97 from the nightly bulk file; SAM_API_KEY not set; SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a ",
+  "open_count": 105,
+  "matches": 105,
+  "last_success": "2026-11-21T00:35:48+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -34,10 +34,10 @@
  {
   "source": "ColoradoVSS (State of Colorado)",
   "status": "Live (public, not logged in)",
-  "detail": "public list (no login); Sanitary Sewer Muffin Monster Replacement: 1 of 5 documents not downloaded yet (tried again next scan)",
-  "open_count": 71,
+  "detail": "public list (no login); download Sanitary Sewer Muffin Monster Replacement: 1 attachment name(s) not found in the Attachment panel: PO TERMSCONDITIONS.PDF - CDHSCP Solicitation Request Documents - 10_7_2026 - 69896531 - - 10000000.00.pdf; S",
+  "open_count": 69,
   "matches": 4,
-  "last_success": "2026-11-20T23:36:10+00:00"
+  "last_success": "2026-11-21T00:35:48+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",
