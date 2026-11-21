@@ -31,6 +31,10 @@ Every cycle:
      attachments are public and are downloaded from the detail view's Attachment panel without a login; so are a
      watched SAM.gov notice's, through sam.gov's public attachment endpoints, _sam_watched_docs). An entry
      decided NO / NO-BID / INFO ONLY (watch_decided_no) is still matched and reported, but its documents are not fetched.
+  5b. Amendment watch (amendments.py): every GO / GO-IF pipeline.json row with a federal solicitation number is looked up on
+     SAM.gov's public search; a new notice version, a moved due date or new attachments is an AMENDMENT line that opens
+     REPORT.md's headline, and the new files go into the bid folder's docs/ (2026-11-21: 140RR027Q0001 Amendment 0003 sat 7.5 h
+     as one more "new" notice row).
   6. Write REPORT.md, open_bids.json, health.json and LAST_SCAN.md (a six-line digest for the hourly operator: BidNet
      login, per-source open/matching counts with a BLIND marker, NEW matching bids, changes on watched bids, documents
      downloaded, errors + the exit code; the same lines are printed after the cycle line so a log tail shows them; a scan
@@ -62,7 +66,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from scripts.bidwatch import bidnet, bonfire, coloradovss, samgov, samgov_bulk, samgov_public, session_sync  # noqa: E402
+from scripts.bidwatch import amendments, bidnet, bonfire, coloradovss, samgov, samgov_bulk, samgov_public, session_sync  # noqa: E402
 from scripts.bidwatch.common import (  # noqa: E402
     DEBUG_DIR, HEALTH_FILE, LAST_SCAN_FILE, RUN_LOCK, OPEN_BIDS_FILE, REPO, REPORT_FILE, WATCH_DIR, WATCHLIST_FILE,
     cred_status, days_until, iso, load_env_file, load_json, load_profiles, match_profiles, now_utc, save_json,
@@ -379,6 +383,8 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         for r in rows.values():
             found[key(r)] = r
     sam_budget = samgov_public.Budget()  # every keyless sam.gov request this scan: search, look-ups, attachments
+    # GO bids first out of the shared budget: an amendment on a bid we are pricing outranks today's new notices
+    amend = _amendment_watch(pipe, sam_budget) if "samgov" in sources else _no_amendments()
     sam_folders: dict[str, str] = {}  # downloads key -> bid folder, for watched notices that are not a row this scan
     if "samgov" in sources and not health["samgov"]["creds"].get("SAM_API_KEY"):
         _merge_sam_public(found, health["samgov"], profiles, sam_budget)  # today's notices; the bulk file is last night's
@@ -393,6 +399,11 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
         if not h["errors"]:
             h["errors"].append(f"SAM.gov returned no rows: reachability {h['reach_note']}; "
                                f"key {'set' if h['creds'].get('SAM_API_KEY') else 'NOT set'}")
+    if "samgov" in sources:
+        # after the source's own checks (_merge_sam_bulk reads h["errors"] as "the API failed"), so an amendment-watch failure
+        # is a line in the report and never makes SAM.gov PARTIAL
+        health["samgov"]["errors"] += amend["errors"]
+        health["samgov"]["amendment_watch"] = amend.get("stats") or {}
 
     if "dibbs" in sources and health["dibbs"]["reachable"]:
         try:
@@ -481,9 +492,10 @@ def scan(sources: list[str], enrich_details: bool = True) -> dict:
                   **health}
     save_json(HEALTH_FILE, {"checked_at": started, "scanned_by": SCANNED_BY, "sources": health_all})
     filed = _file_watched_docs(downloads, found, watched_keys, sam_folders)
+    filed += [f for f in _amendment_files(amend) if f not in filed]
     result = {"started": started, "health": health_all, "found": found, "new": new, "changed": changed,
               "closed": closed, "downloads": downloads, "missing_watch": missing_watch, "filed": filed,
-              "docs_skipped_no": docs_skipped}
+              "docs_skipped_no": docs_skipped, "amendments": amend["alerts"]}
     REPORT_FILE.write_text(render(result))
     # the operator's one-`cat` digest, written next to the report and committed with it (PUSH_PATHS)
     result["last_scan"] = render_last_scan(result, watched_keys)
@@ -527,13 +539,52 @@ def _file_watched_docs(downloads: dict, found: dict, watched_keys, folders: dict
             out.append(str(tgt.relative_to(REPO)))
             wrote = True
         if wrote:
-            try:
-                subprocess.run([sys.executable, str(REPO / "scripts/doc_manifest.py"), Path(folder).name], cwd=REPO,
-                               capture_output=True, text=True, timeout=300)
-                if (dest / "MANIFEST.md").exists():
-                    out.append(str((dest / "MANIFEST.md").relative_to(REPO)))
-            except Exception:  # noqa: BLE001 - a manifest refresh never fails the scan
-                pass
+            out += _refresh_manifest(folder)
+    return out
+
+
+def _refresh_manifest(folder: str) -> list[str]:
+    """Refresh bid folder `folder`'s docs/MANIFEST.md (scripts/doc_manifest.py; CLAUDE.md rule 0c). Returns its repo-relative path
+    when it exists, for the push. Never raises."""
+    try:
+        subprocess.run([sys.executable, str(REPO / "scripts/doc_manifest.py"), Path(folder).name], cwd=REPO,
+                       capture_output=True, text=True, timeout=300)
+        m = REPO / folder / "docs" / "MANIFEST.md"
+        return [str(m.relative_to(REPO))] if m.exists() else []
+    except Exception:  # noqa: BLE001 - a manifest refresh never fails the scan
+        return []
+
+
+def _no_amendments() -> dict:
+    return {"alerts": [], "errors": [], "saved": [], "folders": [], "stats": {}, "state_written": False}
+
+
+def amendment_state_file() -> Path:
+    """bids/_watch/amendment_state.json, beside PIPELINE_FILE (so a test that moves the pipeline moves the state with it)."""
+    return PIPELINE_FILE.with_name(amendments.STATE_FILE.name)
+
+
+def _amendment_watch(pipe, budget, fetch=None) -> dict:
+    """amendments.watch over pipeline.json's rows (`pipe`, as scan() loaded it) with the scan's shared SAM.gov `budget`: the
+    AMENDMENT alerts on GO / GO-IF federal solicitations, their new files saved into the bid folders' docs/, the error lines.
+    Never raises."""
+    rows = (pipe.get("bids") if isinstance(pipe, dict) else None) or []
+    try:
+        return {**_no_amendments(), **amendments.watch(rows, budget, state_file=amendment_state_file(), repo=REPO, fetch=fetch,
+                                                       now=iso())}
+    except Exception as e:  # noqa: BLE001 - amendments.watch does not raise; this keeps it that way for the scan
+        return {**_no_amendments(), "errors": [f"amendment watch: {type(e).__name__}: {str(e)[:150]}"]}
+
+
+def _amendment_files(amend: dict) -> list[str]:
+    """The repo-relative paths the amendment watch wrote, for the push (the same extra paths _file_watched_docs hands it): the
+    files saved into bid folders, their refreshed MANIFEST.md, and amendment_state.json when it changed."""
+    out = list(amend.get("saved") or [])
+    for folder in amend.get("folders") or []:
+        out += _refresh_manifest(folder)
+    sf = amendment_state_file()
+    if amend.get("state_written") and sf.is_relative_to(REPO):
+        out.append(str(sf.relative_to(REPO)))
     return out
 
 
@@ -1524,15 +1575,29 @@ def write_last_scan_crash(started: str, error: str) -> str:
     return text
 
 
+def _amendment_lines(a: dict) -> list[str]:
+    """One AMENDMENT alert as REPORT.md's "## Amendments on GO bids" lists it: the alert line, title, bid folder and notice page,
+    then the new / replaced attachments, the files saved into the bid folder and the ones still to fetch."""
+    out = [f"- **{a['line']}** | {_one_line(a.get('title') or '', 90)} | {a.get('folder') or 'no bid folder'} | {a.get('url')}"]
+    for label, k in (("new attachments", "new_attachments"), ("replaced under the same name", "replaced"),
+                     ("downloaded into the bid folder", "saved"), ("not downloaded yet (tried again next scan)", "pending")):
+        if a.get(k):
+            out.append(f"  - {label}: " + ", ".join(Path(x).name if k == "saved" else str(x) for x in a[k]))
+    if a.get("new_attachments") and not a.get("folder"):
+        out.append("  - no bid folder on the pipeline row: nothing downloaded")
+    return out
+
+
 def render(r: dict) -> str:
     h = r["health"]
     lines = [f"# Bid watch report — {r['started']}", ""]
     blind = [s for s, v in h.items() if not v.get("not_scanned_this_run")
              and (not v["reachable"] or v.get("blind") or (not v["count"] and s != "dibbs"))]
     carried = [s for s, v in h.items() if v.get("not_scanned_this_run")]
-    head = []
+    amend = r.get("amendments") or []
+    head = [a["line"] for a in amend]  # an amendment on a GO bid opens the headline, ahead of everything else
     logged_out = logged_out_phrase(h, r.get("started"))
-    if logged_out:  # first, before everything else this run did: the main sources are reading without their login
+    if logged_out:  # right after any AMENDMENT line, before everything else: the main sources are reading without their login
         head.append(logged_out)
     if r["new"]:
         head.append(f"{len(r['new'])} NEW matching bids")
@@ -1552,6 +1617,8 @@ def render(r: dict) -> str:
         head.append("detail tabs stalled: " + ", ".join(f"{s} ({t.get('tab')} tab of {t.get('bid')})" for s, t in stalls)
                     + "; later tab reads skipped, those bids' documents / notices / answers keep last scan's")
     lines.append("**Headline:** " + ("; ".join(head) if head else "all sources scanned, no changes") + "\n")
+    if amend:  # above the health table, so main()'s stdout (the report up to "## Source health") carries it too
+        lines += ["## Amendments on GO bids", ""] + [ln for a in amend for ln in _amendment_lines(a)] + [""]
 
     lines.append("## Source health\n")
     lines.append("| Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |")
