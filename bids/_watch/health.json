@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T04:36:14+00:00",
+  "checked_at": "2026-11-21T05:35:26+00:00",
   "scanned_by": "vm",
   "sources": {
     "bidnet": {
@@ -10,7 +10,7 @@
         "BIDNET_USER": false
       },
       "errors": [],
-      "last_success": "2026-11-21T04:36:14+00:00",
+      "last_success": "2026-11-21T05:35:26+00:00",
       "logged_in": false,
       "login_note": "BIDNET_USER/BIDNET_PASS not set",
       "matches": 87,
@@ -22,20 +22,24 @@
       }
     },
     "bonfire": {
+      "blind": true,
+      "carried_forward": true,
       "count": 2,
       "creds": {
         "BONFIRE_PASS": false,
         "BONFIRE_USER": false
       },
+      "down_runs": 1,
+      "down_since": "2026-11-21T05:35:26+00:00",
       "errors": [
-        "detail pages blocked: Cloudflare bot challenge on the opportunity page; detail not readable from this network"
+        "bonfire list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
       "last_success": "2026-11-21T04:36:14+00:00",
       "logged_in": false,
-      "login_note": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network",
+      "login_note": "",
       "matches": 1,
-      "reach_note": "HTTP 200",
-      "reachable": true
+      "reach_note": "HTTP 503",
+      "reachable": false
     },
     "coloradovss": {
       "complete": true,
@@ -45,7 +49,7 @@
         "download Sanitary Sewer Muffin Monster Replacement: 1 attachment name(s) not found in the Attachment panel: PO TERMSCONDITIONS.PDF - CDHSCP Solicitation Request Documents - 10_7_2026 - 69896531 - - 10000000.00.pdf",
         "Sanitary Sewer Muffin Monster Replacement: 1 of 5 documents not downloaded yet (tried again next scan)"
       ],
-      "last_success": "2026-11-21T04:36:14+00:00",
+      "last_success": "2026-11-21T05:35:26+00:00",
       "logged_in": false,
       "login_note": "public list (no login)",
       "matches": 4,
@@ -78,15 +82,15 @@
       }
     },
     "samgov": {
-      "bulk_added": 97,
-      "bulk_note": "bulk file cached 2026-11-20T05:45:38+00:00; 101 matching (parsed earlier)",
+      "bulk_added": 99,
+      "bulk_note": "bulk file downloaded 232 MB; 107 matching of 15914 open notices",
       "carried_forward": true,
       "complete": false,
-      "count": 105,
+      "count": 107,
       "creds": {
         "SAM_API_KEY": false
       },
-      "down_runs": 51,
+      "down_runs": 52,
       "down_since": "2026-11-19T02:35:53+00:00",
       "errors": [
         "SAM_API_KEY not set",
@@ -95,10 +99,10 @@
         "SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9",
         "samgov list incomplete this scan: previous open bids carried forward, none marked closed"
       ],
-      "last_success": "2026-11-21T04:36:14+00:00",
+      "last_success": "2026-11-21T05:35:26+00:00",
       "logged_in": false,
-      "login_note": "SAM_API_KEY not set; public search fallback (no key): 8 notices; +97 from the nightly bulk file",
-      "matches": 105,
+      "login_note": "SAM_API_KEY not set; public search fallback (no key): 8 notices; +99 from the nightly bulk file",
+      "matches": 107,
       "public_added": 8,
       "public_docs": {
         "deferred": 0,
