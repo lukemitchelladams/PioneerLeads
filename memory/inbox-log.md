@@ -884,3 +884,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-21 11:21Z (04:21 MT Sat) worker hourly
 - Inbound: Google DMARC aggregate report for brownbisonco.com (1a1fdb5318ce9f07), routine. Sent: none. No COI. Scan 10:35Z: 0 new, 166 open.
+
+## 2026-11-21 12:21Z (05:21 MT Sat) worker hourly
+- Inbound: Yahoo DMARC aggregate report (1a1fdeb6e74518f6), routine. Sent: none. No COI. Scan 11:35Z: 0 new, 166 open.
