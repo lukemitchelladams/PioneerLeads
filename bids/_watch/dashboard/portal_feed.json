@@ -1650,21 +1650,6 @@
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/2026-WCU-Pinnacles-Domestic-Hot-Water-Replacement/0000444256?purchasingGroupId=8409951&origin=1"
  },
  {
-  "key": "bidnet:2722680182",
-  "source": "bidnet",
-  "agency": "",
-  "title": "S--BGNDRF CUSTODIAL SERVICES",
-  "sol": "",
-  "closing": "2026-12-04",
-  "posted": "2026-11-12",
-  "prebid_date": "",
-  "prebid_mandatory": "",
-  "profiles": "brownbison",
-  "watched": true,
-  "new_24h": false,
-  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1"
- },
- {
   "key": "bidnet:444234438795",
   "source": "bidnet",
   "agency": "",
@@ -2053,6 +2038,21 @@
   "watched": true,
   "new_24h": false,
   "url": "https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1"
+ },
+ {
+  "key": "bidnet:2722680182",
+  "source": "bidnet",
+  "agency": "",
+  "title": "S--BGNDRF CUSTODIAL SERVICES",
+  "sol": "",
+  "closing": "2026-12-09",
+  "posted": "2026-11-12",
+  "prebid_date": "",
+  "prebid_mandatory": "",
+  "profiles": "brownbison",
+  "watched": true,
+  "new_24h": false,
+  "url": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1"
  },
  {
   "key": "bidnet:444234845265",

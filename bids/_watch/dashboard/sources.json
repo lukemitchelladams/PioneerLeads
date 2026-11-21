@@ -3,9 +3,9 @@
   "source": "BidNet / RMEPS (Colorado)",
   "status": "Live (public, not logged in)",
   "detail": "BIDNET_USER/BIDNET_PASS not set",
-  "open_count": 694,
+  "open_count": 698,
   "matches": 87,
-  "last_success": "2026-11-21T06:35:41+00:00"
+  "last_success": "2026-11-21T07:35:31+00:00"
  },
  {
   "source": "Euna / Bonfire (Town of Parker)",
@@ -13,7 +13,7 @@
   "detail": "BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network; detail pages blocked: Cloudflare bot challenge on the opportun",
   "open_count": 2,
   "matches": 1,
-  "last_success": "2026-11-21T06:35:41+00:00"
+  "last_success": "2026-11-21T07:35:31+00:00"
  },
  {
   "source": "SAM.gov",
@@ -21,7 +21,7 @@
   "detail": "HTTP 404; showing 107 rows from the last good read; SAM_API_KEY not set; public search fallback (no key): 8 notices; +99 from the nightly bulk file; SAM_API_KEY not set; SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a ",
   "open_count": 107,
   "matches": 107,
-  "last_success": "2026-11-21T06:35:41+00:00"
+  "last_success": "2026-11-21T07:35:31+00:00"
  },
  {
   "source": "DLA DIBBS (Jones Bearing)",
@@ -35,9 +35,9 @@
   "source": "ColoradoVSS (State of Colorado)",
   "status": "Live (public, not logged in)",
   "detail": "public list (no login); download Sanitary Sewer Muffin Monster Replacement: 1 attachment name(s) not found in the Attachment panel: PO TERMSCONDITIONS.PDF - CDHSCP Solicitation Request Documents - 10_7_2026 - 69896531 - - 10000000.00.pdf; S",
-  "open_count": 69,
+  "open_count": 68,
   "matches": 4,
-  "last_success": "2026-11-21T06:35:41+00:00"
+  "last_success": "2026-11-21T07:35:31+00:00"
  },
  {
   "source": "GovTribe (BidNet/Bonfire/OpenGov/SAM index)",

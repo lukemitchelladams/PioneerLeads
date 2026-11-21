@@ -1,16 +1,16 @@
-# Bid watch report — 2026-11-21T06:35:41+00:00
+# Bid watch report — 2026-11-21T07:35:31+00:00
 
-**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); not scanned this run (previous results kept): dibbs
+**Headline:** LOGGED OUT: bidnet (BIDNET_USER/BIDNET_PASS not set), samgov (SAM_API_KEY not set, down since 2026-11-19T02:35Z), bonfire (BONFIRE_USER/BONFIRE_PASS not set); 1 changed (addenda/dates); not scanned this run (previous results kept): dibbs
 
 ## Source health
 
 | Source | Reachable | Credentials set | Logged in | Open bids seen | Site says | Matches | Last success | Errors |
 |---|---|---|---|---|---|---|---|---|
 | dibbs | yes | n/a | NOT SCANNED THIS RUN; no | 307 | 3020 1242, 3030 309, 3110 2668, 3130 338, 3910 24, 3920 40, 3950 322, 4610 234 | 189 | 2026-10-20T04:40:19+00:00 | 0 |
-| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 694 | BUYER 449, AGGREGATE 246 | 87 | 2026-11-21T06:35:41+00:00 | 0 |
-| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-21T06:35:41+00:00 | 1 |
-| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (52 h, 53 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 8 notices; +99 from the nightly bulk file | 107 |  | 107 | 2026-11-21T06:35:41+00:00 | 5 |
-| coloradovss | yes | n/a | public list (no login) | 69 | open 69 | 4 | 2026-11-21T06:35:41+00:00 | 2 |
+| bidnet | yes | BIDNET_USER=NO, BIDNET_PASS=NO | BIDNET_USER/BIDNET_PASS not set | 698 | BUYER 448, AGGREGATE 251 | 87 | 2026-11-21T07:35:31+00:00 | 0 |
+| bonfire | yes | BONFIRE_USER=NO, BONFIRE_PASS=NO | BONFIRE_USER/BONFIRE_PASS not set; CHALLENGED on an enrichment page, not the login form: Cloudflare bot challenge on the opportunity page; detail not readable from this network | 2 |  | 1 | 2026-11-21T07:35:31+00:00 | 1 |
+| samgov | yes | SAM_API_KEY=NO | PARTIAL this run, down since 2026-11-19T02:35Z (53 h, 54 runs), list carried forward; SAM_API_KEY not set; public search fallback (no key): 8 notices; +99 from the nightly bulk file | 107 |  | 107 | 2026-11-21T07:35:31+00:00 | 5 |
+| coloradovss | yes | n/a | public list (no login) | 68 | open 68 | 4 | 2026-11-21T07:35:31+00:00 | 2 |
 
 DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled history; 'Open bids seen' = RFQs with a return-by date today or later.
 
@@ -20,6 +20,10 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 |---|---|---|---|---|---|---|
 | brownbison WATCHED | bidnet | Arapahoe County | Courthouse 1 Interior Wall Removal, Drywall Patch & Repair, and Painting | 2026-12-09 (18d) | 2026-11-23 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Courthouse-1-Interior-Wall-Removal-Drywall-Patch-Repair-and-Painting/0000443113?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | Town of Firestone | Water Treatment Plant Fencing | 2026-12-18 (27d) | 2026-11-24 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Water-Treatment-Plant-Fencing/0000443793?purchasingGroupId=8409951&origin=1 |
+
+## Changes on matching / watched bids (addenda, dates)
+
+- **S--BGNDRF CUSTODIAL SERVICES** (bidnet): closing date 2026-12-04 -> 2026-12-09 — https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1
 
 ## Watched bids NOT seen this scan (closed, moved, or source blind)
 
@@ -208,7 +212,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison WATCHED | bidnet | University of Colorado Design and Constr | CU Boulder-UCB001622-SITE-NBC-Irrigation System & Landscape Improvements | 2026-12-04 (13d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/CU-Boulder-UCB001622-SITE-NBC-Irrigation-System-Landscape-Improvements/0000440456?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | City Janitorial Services (paid-tier notice) | 2026-12-04 (13d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234438795/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | PERIMETER FENCING -- EIAF -09958 (paid-tier notice) | 2026-12-04 (13d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444235838422/abstract?purchasingGroupId=8409951&origin=1 |
-| brownbison WATCHED | bidnet |  | S--BGNDRF CUSTODIAL SERVICES (paid-tier notice) | 2026-12-04 (13d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1 |
 | jones-bearing | samgov | DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AI | AMFF LINE1 CRANE 2 REPLACEMENT | 2026-12-04 (13d) |  | https://sam.gov/opp/ef93cb126800433a84a35bbe03fdb0b0/view |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | S--BGNDRF CUSTODIAL SERVICES (place of performance not stated; CO buying office) | 2026-12-04 (13d) |  | https://sam.gov/workspace/contract/opp/b2e58c41cb4c4787813fbc1f31ea81f7/view |
 | brownbison WATCHED | bidnet | City of Canon City | Janitorial Services | 2026-12-07 (16d) | 2026-11-30 optional | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Janitorial-Services/0000442347?purchasingGroupId=8409951&origin=1 |
@@ -231,6 +234,7 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 | brownbison | bidnet | Weld County | Right-Of-Way On-Call Acquisition and Appraisal Services | 2026-12-09 (18d) | 2026-11-18 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/Right-Of-Way-On-Call-Acquisition-and-Appraisal-Services/0000442547?purchasingGroupId=8409951&origin=1 |
 | brownbison | bidnet | El Paso County | On-Call Professional Services Program | 2026-12-09 (18d) |  | https://www.bidnetdirect.com/colorado/solicitations/open-bids/On-Call-Professional-Services-Program/0000440926?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | bidnet |  | Native Aquatic Species Facility Heater Replacement & Install (paid-tier notice) | 2026-12-09 (18d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/444234845265/abstract?purchasingGroupId=8409951&origin=1 |
+| brownbison WATCHED | bidnet |  | S--BGNDRF CUSTODIAL SERVICES | 2026-12-09 (18d) |  | https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2722680182/abstract?purchasingGroupId=8409951&origin=1 |
 | brownbison WATCHED | coloradovss | DNR - Division of Parks & Wildlife | Native Aquatic Species Facility Heater Replacement & Install | 2026-12-09 (18d) | ? check | https://prd.co.cgiadvantage.com/PRDVSS1X1/Advantage4 |
 | brownbison WATCHED | samgov | INTERIOR, DEPARTMENT OF THE / DEPARTMENT | S--BGNDRF CUSTODIAL SERVICES (place of performance not stated; CO buying office) | 2026-12-09 (18d) |  | https://sam.gov/workspace/contract/opp/c07d00c21f72409b86a9fd265312aeb1/view |
 | brownbison WATCHED | bidnet | Westminster Public Schools Project Type  | RFP 26-002 Summer 2027 Facility Improvements - Multiple Locations | 2026-12-10 (19d) | 2026-10-19 MANDATORY | https://www.bidnetdirect.com/colorado/solicitations/open-bids/RFP-26-002-Summer-2027-Facility-Improvements-Multiple-Locations/0000440039?purchasingGroupId=8409951&origin=1 |
@@ -289,6 +293,6 @@ DIBBS 'Site says' = all RFQ records listed per FSC, including awarded/cancelled 
 - samgov: SPE8EF27T0307: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/8ee23fef72864e098371e6c454010831/view): aa72c94442b444e1897ff47ab697d500
 - samgov: SPE8EF27T0258: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/994aa9e06162482d9a3c07be9ba67263/view): c2d1d48753b744f78b8506604f4c3a48
 - samgov: SPRMM126QMJ99: 1 link attachment(s) not downloaded (a web link, not a file; open it from https://sam.gov/opp/3d326babf2eb497eabe64330bb3f5d25/view): 45169dd7686c497ba931dc72c14764c9
-- samgov: down since 2026-11-19T02:35Z (52 h); previous open bids carried forward
+- samgov: down since 2026-11-19T02:35Z (53 h); previous open bids carried forward
 - coloradovss: download Sanitary Sewer Muffin Monster Replacement: 1 attachment name(s) not found in the Attachment panel: PO TERMSCONDITIONS.PDF - CDHSCP Solicitation Request Documents - 10_7_2026 - 69896531 - - 10000000.00.pdf
 - coloradovss: Sanitary Sewer Muffin Monster Replacement: 1 of 5 documents not downloaded yet (tried again next scan)
