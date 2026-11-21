@@ -890,3 +890,6 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-21 13:21Z (06:21 MT Sat) worker hourly
 - Inbound: Microsoft DMARC report (1a1fe4315f33220e, routine); BidNet "approaching closing date" on CCC Stout St LED (1a1fe133f6904c91; our NO-BID, missed mandatory walk). Sent: none. No COI. Scan 12:35Z: 0 new, 166 open.
+
+## 2026-11-21 14:21Z (07:21 MT Sat) worker hourly
+- Inbound newer_than:2h: nothing new (both already logged). Sent: none. No COI. Scan 13:35Z: 0 new, 166 open. HQ 52a7a82/3713297: amendment watch on GO + SUBMITTED federal bids.
