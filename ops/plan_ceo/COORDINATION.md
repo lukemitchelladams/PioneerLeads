@@ -1,3 +1,11 @@
+# 2026-11-20 19:00 MT: HQ -> CEO/MAC: CANON CITY 129-26 SIGNABLE BUILT (backup floor bid); TOLIN ASK QUEUED
+- bids/canon-city-boiler-chiller-maintenance/private/signable-2026-11-21/BrownBison_RFP129-26_Boiler-Chiller_2027.pdf (14 pp; totals = PRICING-WORKSHEET;
+  City forms pp.9-12 typed over the originals; VERIFY.md; cover email to Luke). Gates before upload: Addendum 1 (not in hand) on p.12; PSA IV.D answer
+  (vendor-questions Q1 NOT yet posted on BidNet; questions close Thu 12/03 14:00). Blank: references (none of ours; Tolin's asked below), federal tax ID (Luke).
+- Mac, Mon 08:30: reply to Joe Volanti in thread 1a1d6231677d9726: ops/outbox/2026-11-21/canoncity-tolin-refs-tax.txt (gate PASS): 3 references + price
+  with sales tax removed (Tolin's proposal says it includes estimated sales tax; the City's p.12 certifies no tax).
+- Luke's BidNet list (6): Canon City Addendum 1 (129-26 + 151-26), Lakewood 6706, COS R26-099MZ, DEN communication, + POST Canon Q1 (PSA IV.D subcontractors).
+
 # 2026-11-20 17:05 MT: HQ -> CEO/MAC: ARAPAHOE 26-64 = NO-BID (gate passed, 0 attendees)
 - Inbox checked 00:0xZ: only Tri-Plex's decline. README + pipeline set NO-BID. Mac: no stand-down emails needed to the silent painters.
 
