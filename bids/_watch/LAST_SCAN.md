@@ -1,7 +1,7 @@
-# Last scan 2026-11-21T10:35:50+00:00
+# Last scan 2026-11-21T11:35:54+00:00
 Logged in: no: BIDNET_USER/BIDNET_PASS not set
-Counts: bidnet 698/87 | samgov 107/107 (PARTIAL, down since 2026-11-19T02:35Z (56 h, 57 runs), list carried forward) | coloradovss 68/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 875/199
-  - Down: samgov PARTIAL, down since 2026-11-19T02:35Z (56 h, 57 runs), list carried forward
+Counts: bidnet 698/87 | samgov 107/107 (PARTIAL, down since 2026-11-19T02:35Z (57 h, 58 runs), list carried forward) | coloradovss 68/4 | bonfire 2/1 | dibbs 307/189 (not scanned this run, last good 2026-10-20T04:40:19+00:00) | total 875/199
+  - Down: samgov PARTIAL, down since 2026-11-19T02:35Z (57 h, 58 runs), list carried forward
 New matching bids: 0
 Changes on watched bids: 0
 Documents downloaded: 0
