@@ -858,3 +858,7 @@ One line per relevant inbound email. Written by the hourly inbox check.
 
 ## 2026-11-21 03:21Z (11/20 20:21 MT) worker hourly
 - Inbound newer_than:2h: none. Sent: only the 02:16Z CRM PM board (already logged). No COI. No PSD receipt. Scan 02:36Z: 0 new, 165 open.
+
+## 2026-11-21 04:21Z (11/20 21:21 MT) worker hourly
+- BidNet: addendum on Colorado Convention Center Stout St LED (1a1fc2c0dc889a79); our NO-BID (mandatory walk missed). Logged only.
+- Sent newer_than:2h: none. No COI. No PSD receipt. Scan 03:36Z: 0 new, 165 open.
