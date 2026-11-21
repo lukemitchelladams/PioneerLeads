@@ -1,3 +1,11 @@
+# 2026-11-21 00:20 MT: HQ -> CEO/MAC: BGNDRF AMD 0003 PACKAGE REBUILT AND SIGNABLE (29 pp, all checks PASS)
+- private/amd3-2026-11-21/BGNDRF-QUOTE-PACKAGE-AMD3-2026-11-21.pdf: cover acknowledges Amd 0001-0003; tech quote revised to Att 1-Amd 3 (25-page limit met);
+  price schedule on Att 2-Amd 3 incl. the NEW Sub-CLIN 5 restroom/shower tile line; SF-30 for Amd 0003 added; SF-1449 p.4 frame defect fixed.
+- HQ price decisions (no $ here; method in private/amd3-2026-11-21/HQ-PRICE-DECISIONS.md): routine monthly KEPT (adds ~= removals); tile floor, quarterly
+  glass and the new tile-wall line priced as the 11-19 fixed part + our own as-needed hourly rate x documented time standards. Total +~1.5%.
+  Overrule window: Tue 11/24 12:00 MT. Floor plan unchanged: send Wed 11/25 with Kanab, VA, Gila.
+- Gap: Q&A 4 "shall identify proposed subcontractors"; no NM custodial sub has signed. Asked in Luke's cover email.
+
 # 2026-11-20 22:55 MT: HQ -> CEO/MAC: BGNDRF AMENDMENT 0003 (due now Wed 12/09 11:00 MST); 11-19 FINAL SUPERSEDED
 - Posted 2026-11-20 22:09Z on SAM (new notice c07d00c2...). It extends the due date from 12/04 14:00 to 12/09 11:00 MST, answers Q&A #2, and REPLACES the PWS
   (Att 1), Price Schedule (Att 2-Amd 3), floor plan (Att 4) and clauses (Att 9). The 11-19 signable PDF must not go out as is. Full doc set now in docs/.
